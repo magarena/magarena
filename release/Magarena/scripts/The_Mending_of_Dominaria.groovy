@@ -53,7 +53,7 @@ def chapter12event = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             card(MagicType.Land).from(MagicTargetType.Graveyard).filter(event) each {
-                game.doAction(new ReturnCardAction(MagicLocationType.Graveyard, it, event.getPlayer()));
+                game.doAction(new PutOntoBattlefieldAction(MagicLocationType.Graveyard, it, event.getPlayer()));
             }
             game.doAction(new ShuffleCardsIntoLibraryAction(new MagicCardList(event.getPlayer().getGraveyard()), MagicLocationType.Graveyard));
         }
