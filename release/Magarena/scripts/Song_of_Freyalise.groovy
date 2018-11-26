@@ -8,7 +8,11 @@ def c12Action = {
 
         final AtUpkeepTrigger cleanup = new AtUpkeepTrigger() {
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+                return permanent.isController(upkeepPlayer);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
                 if (upkeepPlayer.getId() == player.getId()) {
                     game.addDelayedAction(new LoseAbilityAction(permanent, mana));
                     game.addDelayedAction(new RemoveTriggerAction(permanent, this));
