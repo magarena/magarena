@@ -10,7 +10,7 @@ def mainEvent = {
 def putlands = {
     final MagicGame game, final MagicEvent event ->
     event.processChosenCards(game, {
-        game.doAction(new ReturnCardAction(
+        game.doAction(new PutOntoBattlefieldAction(
             MagicLocationType.Graveyard,
             it,
             event.getPlayer()
