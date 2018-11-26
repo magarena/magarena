@@ -55,7 +55,7 @@ def chapter12event = {
             card(MagicType.Land).from(MagicTargetType.Graveyard).filter(event) each {
                 game.doAction(new ReturnCardAction(MagicLocationType.Graveyard, it, event.getPlayer()));
             }
-            game.doAction(new ShuffleCardsIntoLibraryAction(event.getPlayer().getGraveyard(), MagicLocationType.Graveyard));
+            game.doAction(new ShuffleCardsIntoLibraryAction(new MagicCardList(event.getPlayer().getGraveyard()), MagicLocationType.Graveyard));
         }
     }
 ]
