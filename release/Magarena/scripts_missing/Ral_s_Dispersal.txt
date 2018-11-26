@@ -1,0 +1,9 @@
+name=Ral's Dispersal
+image=https://img.scryfall.com/cards/normal/front/a/2/a2660fae-6459-446d-85dc-3c9126c81cb3.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{U}{U}
+effect=Return target creature to its owner's hand. You may search your library and/or graveyard for a card named Ral, Caller of Storms, reveal it, and put it into your hand. If you search your library this way, shuffle it.
+timing=removal
+oracle=Return target creature to its owner's hand. You may search your library and/or graveyard for a card named Ral, Caller of Storms, reveal it, and put it into your hand. If you search your library this way, shuffle it.

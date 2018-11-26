@@ -1,0 +1,9 @@
+name=Gruesome Menagerie
+image=https://img.scryfall.com/cards/normal/front/7/3/73c0e4d9-bf0d-4e28-a647-9010701a915e.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{B}{B}
+effect=Choose a creature card with converted mana cost 1 in your graveyard, then do the same for creature cards with converted mana costs 2 and 3. Return those cards to the battlefield.
+timing=main
+oracle=Choose a creature card with converted mana cost 1 in your graveyard, then do the same for creature cards with converted mana costs 2 and 3. Return those cards to the battlefield.

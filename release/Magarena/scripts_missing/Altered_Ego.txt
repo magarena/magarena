@@ -6,8 +6,8 @@ type=Creature
 subtype=Shapeshifter
 cost={X}{2}{G}{U}
 pt=0/0
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         You may have SN enter the battlefield as a copy of any creature on the battlefield, except it enters with X additional +1/+1 counters on it.
 timing=main
-oracle=Altered Ego can't be countered.\nYou may have Altered Ego enter the battlefield as a copy of any creature on the battlefield, except it enters with X additional +1/+1 counters on it.
+oracle=This spell can't be countered.\nYou may have Altered Ego enter the battlefield as a copy of any creature on the battlefield, except it enters with X additional +1/+1 counters on it.
 status=needs groovy

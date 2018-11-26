@@ -1,0 +1,11 @@
+name=Havoc Devils
+image=https://magiccards.info/scans/en/m19/146.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Devil
+cost={2}{R}{R}
+pt=4/3
+ability=Trample
+timing=main
+oracle=Trample

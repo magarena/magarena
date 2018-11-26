@@ -376,7 +376,7 @@ public enum MagicRuleEventAction {
                         it,
                         MagicLocationType.Exile
                     ));
-                    game.doAction(new ReturnCardAction(
+                    game.doAction(new PutOntoBattlefieldAction(
                         MagicLocationType.Exile,
                         it.getCard(),
                         event.getPlayer()
@@ -402,7 +402,7 @@ public enum MagicRuleEventAction {
                         it,
                         MagicLocationType.Exile
                     ));
-                    game.doAction(new ReturnCardAction(
+                    game.doAction(new PutOntoBattlefieldAction(
                         MagicLocationType.Exile,
                         it.getCard(),
                         it.getOwner(),
@@ -1056,7 +1056,7 @@ public enum MagicRuleEventAction {
         }
     },
     DiscardHand(
-        ARG.PLAYERS + "( )?discard(s)? (your|his or her) hand",
+        ARG.PLAYERS + "( )?discard(s)? (your|his or her|their) hand",
         MagicTargetHint.Negative,
         MagicTiming.Draw,
         "Discard"
@@ -2097,6 +2097,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    MillUntil(
+        ARG.PLAYERS + "( )?reveal(s)? cards from the top of (your|his or her) library until (you|he or she) reveal(s) "
+                + ARG.AMOUNT + "?( )?" + ARG.CARDTYPE + " card(s)?, then puts those cards into (your|his or her) graveyard",
+        MagicTiming.Draw,
+        "MillUntil"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAmount count = ARG.amountObj(matcher);
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            final MagicType cardType = ARG.cardType(matcher);
+            return (game, event) -> {
+                final int amount = count.getAmount(event);
+                for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                    game.doAction(new MillLibraryUntilAction(it, cardType, amount));
+                }
+            };
+        }
+    },
     CantCastSpells(
         ARG.PLAYERS + " can't cast spells this turn",
         MagicTargetHint.Negative,
@@ -2202,6 +2221,16 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             return (game, event) -> game.addEvent(new MagicScryEvent(event));
+        }
+    },
+    Surveil1(
+        "(pn )?surveil 1",
+        MagicTiming.Draw,
+        "Surveil"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return (game, event) -> game.addEvent(new MagicSurveilEvent(event));
         }
     },
     PseudoScry(

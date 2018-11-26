@@ -10,3 +10,4 @@ ability=Menace;\
         {1}, Discard a card: SN explores.
 timing=main
 oracle=Menace\n{1}, Discard a card: Tomb Robber explores.
+status=not supported: blocking-restriction

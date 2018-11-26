@@ -1,0 +1,9 @@
+name=Fearsome Awakening
+image=https://magiccards.info/scans/en/frf/69.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{B}
+timing=main
+requires_groovy_code
+oracle=Return target creature card from your graveyard to the battlefield. If it's a Dragon, put two +1/+1 counters on it.

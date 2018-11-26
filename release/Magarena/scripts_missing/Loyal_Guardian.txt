@@ -1,0 +1,12 @@
+name=Loyal Guardian
+image=https://img.scryfall.com/cards/normal/en/c18/31.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Rhino
+cost={4}{G}
+pt=4/4
+ability=Trample;\
+        At the beginning of combat on your turn, if you control your commander, put a +1/+1 counter on each creature you control.
+timing=main
+oracle=Trample\nLieutenant — At the beginning of combat on your turn, if you control your commander, put a +1/+1 counter on each creature you control.

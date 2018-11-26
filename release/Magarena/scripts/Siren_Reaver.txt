@@ -6,7 +6,7 @@ type=Creature
 subtype=Siren,Pirate
 cost={3}{U}
 pt=3/2
-ability=SN costs {1} less to cast if you attacked with a creature this turn.;\
+ability=This spell costs {1} less to cast if you attacked with a creature this turn.;\
         Flying
 timing=main
-oracle=Raid — Siren Reaver costs {1} less to cast if you attacked with a creature this turn.\nFlying
+oracle=Raid — This spell costs {1} less to cast if you attacked with a creature this turn.\nFlying

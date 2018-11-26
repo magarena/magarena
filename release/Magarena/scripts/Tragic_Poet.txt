@@ -1,5 +1,6 @@
 name=Tragic Poet
-image=https://magiccards.info/scans/en/ul/24.jpg
+image=https://magiccards.info/scans/en/dom/37.jpg
+image_updated=2018-08-07
 value=3.574
 rarity=C
 type=Creature

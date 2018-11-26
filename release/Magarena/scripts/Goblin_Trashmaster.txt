@@ -1,0 +1,12 @@
+name=Goblin Trashmaster
+image=https://magiccards.info/scans/en/m19/144.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Goblin,Warrior
+cost={2}{R}{R}
+pt=3/3
+ability=Other Goblins you control get +1/+1.;\
+        Sacrifice a Goblin: Destroy target artifact.
+timing=main
+oracle=Other Goblins you control get +1/+1.\nSacrifice a Goblin: Destroy target artifact.

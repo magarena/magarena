@@ -1,0 +1,13 @@
+name=Blood Operative
+image=https://img.scryfall.com/cards/normal/front/0/0/000ac9e5-3c95-4e87-9424-109e2eea6b45.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Assassin
+cost={1}{B}{B}
+pt=3/1
+ability=Lifelink;\
+        When SN enters the battlefield, you may exile target card from a graveyard.;\
+        Whenever you surveil, if SN is in your graveyard, you may pay 3 life. If you do, return SN to your hand.
+timing=main
+oracle=Lifelink\nWhen Blood Operative enters the battlefield, you may exile target card from a graveyard.\nWhenever you surveil, if Blood Operative is in your graveyard, you may pay 3 life. If you do, return Blood Operative to your hand.

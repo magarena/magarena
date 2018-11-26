@@ -1,6 +1,6 @@
 name=8/8 green and white Elemental creature token with vigilance
 token=Elemental
-image=https://magiccards.info/extras/token/return-to-ravnica/elemental.jpg
+image=https://img.scryfall.com/cards/border_crop/en/trtr/12.jpg?1517813031
 value=3
 type=Creature
 subtype=Elemental

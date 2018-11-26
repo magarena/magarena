@@ -4,7 +4,7 @@ value=4.058
 rarity=R
 type=Legendary,Land
 ability=SN enters the battlefield tapped.;\
-        {T}, Pay 2 life: Add {C}. If that mana is spent on an instant or sorcery spell, that spell can't be countered by spells or abilities.
+        {T}, Pay 2 life: Add {C}. If that mana is spent on an instant or sorcery spell, that spell can't be countered.
 timing=land
-oracle=Boseiju, Who Shelters All enters the battlefield tapped.\n{T}, Pay 2 life: Add {C}. If that mana is spent on an instant or sorcery spell, that spell can't be countered by spells or abilities.
+oracle=Boseiju, Who Shelters All enters the battlefield tapped.\n{T}, Pay 2 life: Add {C}. If that mana is spent on an instant or sorcery spell, that spell can't be countered.
 status=not supported: mana-spent

@@ -23,7 +23,7 @@
                 game.doAction(new RevealAction(topCard));
                 amount++;
                 if (predicate(topCard)) {
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, topCard, player));
+                    game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary, topCard, player));
                     break;
                 } else {
                     revealed.add(topCard);

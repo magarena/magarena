@@ -11,7 +11,7 @@ def endOfCombatTrigger = new AtEndOfCombatTrigger() {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPermanent sourcePermanent = event.getPermanent();
         game.doAction(new RemoveFromPlayAction(sourcePermanent, MagicLocationType.Exile));
-        game.doAction(new ReturnCardAction(
+        game.doAction(new PutOntoBattlefieldAction(
             MagicLocationType.Exile,
             sourcePermanent.getCard(),
             event.getPlayer(),

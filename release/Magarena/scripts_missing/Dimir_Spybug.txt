@@ -1,0 +1,13 @@
+name=Dimir Spybug
+image=https://img.scryfall.com/cards/normal/front/7/c/7c18c450-0bfb-4ba6-9212-b5833fce63a2.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Insect
+cost={U}{B}
+pt=1/1
+ability=Flying;\
+        Menace;\
+        Whenever you surveil, put a +1/+1 counter on SN.
+timing=main
+oracle=Flying\nMenace\nWhenever you surveil, put a +1/+1 counter on Dimir Spybug.

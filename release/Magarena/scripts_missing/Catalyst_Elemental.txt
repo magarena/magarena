@@ -1,0 +1,11 @@
+name=Catalyst Elemental
+image=https://magiccards.info/scans/en/m19/132.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={2}{R}
+pt=2/2
+ability=Sacrifice SN: Add {R}{R}.
+timing=main
+oracle=Sacrifice Catalyst Elemental: Add {R}{R}.

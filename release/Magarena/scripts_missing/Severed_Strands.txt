@@ -1,0 +1,10 @@
+name=Severed Strands
+image=https://img.scryfall.com/cards/normal/front/b/c/bce654d6-fcf1-40a8-8bdb-5c37e561f7dc.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{B}
+ability=As an additional cost to cast this spell, sacrifice a creature.
+effect=You gain life equal to the sacrificed creature's toughness. Destroy target creature an opponent controls.
+timing=main
+oracle=As an additional cost to cast this spell, sacrifice a creature.\nYou gain life equal to the sacrificed creature's toughness. Destroy target creature an opponent controls.

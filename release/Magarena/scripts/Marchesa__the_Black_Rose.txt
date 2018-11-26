@@ -1,0 +1,13 @@
+name=Marchesa, the Black Rose
+image=https://magiccards.info/scans/en/cns/49.jpg
+value=4.212
+rarity=M
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={1}{U}{B}{R}
+pt=3/3
+ability=Dethrone;\
+        Other creatures you control have dethrone.
+timing=main
+oracle=Dethrone\nOther creatures you control have dethrone.\nWhenever a creature you control with a +1/+1 counter on it dies, return that card to the battlefield under your control at the beginning of the next end step.
+requires_groovy_code

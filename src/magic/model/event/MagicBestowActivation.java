@@ -1,6 +1,6 @@
 package magic.model.event;
 
-import java.util.Arrays;
+import java.util.Collections;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
@@ -53,7 +53,7 @@ public class MagicBestowActivation extends MagicHandCastActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-        return Arrays.asList(MagicPayManaCostEvent.Cast(source, cost));
+        return Collections.singletonList(MagicPayManaCostEvent.Cast(source, cost));
     }
 
     @Override

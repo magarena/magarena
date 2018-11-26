@@ -1,0 +1,11 @@
+name=Vampire Neonate
+image=https://magiccards.info/scans/en/m19/124.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire
+cost={B}
+pt=0/3
+ability={2}, {T}: Each opponent loses 1 life and you gain 1 life.
+timing=main
+oracle={2}, {T}: Each opponent loses 1 life and you gain 1 life.

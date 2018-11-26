@@ -1,0 +1,9 @@
+name=Undercity Uprising
+image=https://img.scryfall.com/cards/normal/front/7/e/7e1e08bf-a5d6-48bb-9f7f-4711f9ec88d7.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{B}{G}
+effect=Creatures you control gain deathtouch until end of turn. Then target creature you control fights target creature you don't control.
+timing=main
+oracle=Creatures you control gain deathtouch until end of turn. Then target creature you control fights target creature you don't control.

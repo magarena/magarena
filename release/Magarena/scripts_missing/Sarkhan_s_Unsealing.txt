@@ -1,0 +1,10 @@
+name=Sarkhan's Unsealing
+image=https://magiccards.info/scans/en/m19/155.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{R}
+ability=Whenever you cast a creature spell with power 4, 5, or 6, SN deals 4 damage to any target.;\
+        Whenever you cast a creature spell with power 7 or greater, SN deals 4 damage to each opponent and each creature and planeswalker they control.
+timing=enchantment
+oracle=Whenever you cast a creature spell with power 4, 5, or 6, Sarkhan's Unsealing deals 4 damage to any target.\nWhenever you cast a creature spell with power 7 or greater, Sarkhan's Unsealing deals 4 damage to each opponent and each creature and planeswalker they control.

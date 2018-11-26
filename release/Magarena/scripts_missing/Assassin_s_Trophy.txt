@@ -1,0 +1,9 @@
+name=Assassin's Trophy
+image=https://img.scryfall.com/cards/normal/front/9/0/906b6e99-128f-4c11-8daf-16099d35b0d4.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={B}{G}
+effect=Destroy target permanent an opponent controls. Its controller may search their library for a basic land card, put it onto the battlefield, then shuffle their library.
+timing=removal
+oracle=Destroy target permanent an opponent controls. Its controller may search their library for a basic land card, put it onto the battlefield, then shuffle their library.

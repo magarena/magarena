@@ -1,0 +1,9 @@
+name=Fury Storm
+image=https://img.scryfall.com/cards/normal/en/c18/22.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{R}{R}
+effect=When you cast this spell, copy it for each time you've cast your commander from the command zone this game. You may choose new targets for the copies.~Copy target instant or sorcery spell. You may choose new targets for the copy.
+timing=removal
+oracle=When you cast this spell, copy it for each time you've cast your commander from the command zone this game. You may choose new targets for the copies.\nCopy target instant or sorcery spell. You may choose new targets for the copy.

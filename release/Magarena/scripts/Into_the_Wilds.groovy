@@ -3,7 +3,7 @@ def action = {
     if (event.isYes()) {
         final MagicCard card = event.getRefCard();
         final MagicPlayer player = event.getPlayer();
-        game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, card, event.getPlayer()));
+        game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary, card, event.getPlayer()));
         game.logAppendMessage(player, "${player} puts (${card}) it onto the battlefield.")
     }
 }

@@ -4,8 +4,8 @@ value=4.107
 rarity=U
 type=Instant
 cost={3}{W}
-ability=Cast SN only during combat.;\
-        If you control a Plains, you may tap an untapped creature you control rather than pay SN's mana cost.
+ability=Cast this spell only during combat.;\
+        If you control a Plains, you may tap an untapped creature you control rather than pay this spell's mana cost.
 effect=Create a 4/4 white Angel creature token with flying. Exile it at the beginning of the next end step.
 timing=token
-oracle=If you control a Plains, you may tap an untapped creature you control rather than pay Angelic Favor's mana cost.\nCast Angelic Favor only during combat.\nCreate a 4/4 white Angel creature token with flying. Exile it at the beginning of the next end step.
+oracle=If you control a Plains, you may tap an untapped creature you control rather than pay this spell's mana cost.\nCast this spell only during combat.\nCreate a 4/4 white Angel creature token with flying. Exile it at the beginning of the next end step.

@@ -20,7 +20,7 @@ import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
 import magic.model.action.PlayCardFromStackAction;
 
-import java.util.Arrays;
+import java.util.Collections;
 
 public class MagicMorphCastActivation extends MagicHandCastActivation {
 
@@ -44,7 +44,7 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
             MagicCard.createTokenCard(morphSpell, morphSpell.getController()),
             MagicManaCost.create("{3}")
         );
-        return Arrays.asList(
+        return Collections.singletonList(
             new MagicPayManaCostEvent(
                 morphSpell,
                 modCost

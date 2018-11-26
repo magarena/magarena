@@ -1,0 +1,13 @@
+name=Loyal Cathar
+image=https://magiccards.info/scans/en/dka/13a.jpg
+value=3.595
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={W}{W}
+pt=2/2
+ability=Vigilance
+transform=Unhallowed Cathar
+timing=main
+oracle=Vigilance\nWhen Loyal Cathar dies, return it to the battlefield transformed under your control at the beginning of the next end step.
+requires_groovy_code

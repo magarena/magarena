@@ -8,5 +8,5 @@ cost={6}{G}{G}
 pt=8/8
 ability=Trample
 timing=main
+oracle=If an opponent controls at least four more creatures than you, this spell costs {6} less to cast.\nTrample
 requires_groovy_code
-oracle=If an opponent controls at least four more creatures than you, Avatar of Might costs {6} less to cast.\nTrample

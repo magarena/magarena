@@ -1,0 +1,9 @@
+name=Aminatou's Augury
+image=https://img.scryfall.com/cards/normal/en/c18/6.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={6}{U}{U}
+effect=Exile the top eight cards of your library. You may put a land card from among them onto the battlefield. Until end of turn, for each nonland card type, you may cast a card of that type from among the exiled cards without paying its mana cost.
+timing=main
+oracle=Exile the top eight cards of your library. You may put a land card from among them onto the battlefield. Until end of turn, for each nonland card type, you may cast a card of that type from among the exiled cards without paying its mana cost.

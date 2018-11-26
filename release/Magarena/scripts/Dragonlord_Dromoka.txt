@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Elder,Dragon
 cost={4}{G}{W}
 pt=5/7
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Flying, lifelink
 timing=main
 requires_groovy_code
-oracle=Dragonlord Dromoka can't be countered.\nFlying, lifelink\nYour opponents can't cast spells during your turn.
+oracle=This spell can't be countered.\nFlying, lifelink\nYour opponents can't cast spells during your turn.

@@ -1,0 +1,12 @@
+name=House Guildmage
+image=https://img.scryfall.com/cards/normal/front/4/5/45ee7bc8-d5cf-47b1-93c2-7e1d5f536c85.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={U}{B}
+pt=2/2
+ability={1}{U}, {T}: Target creature doesn't untap during its controller's next untap step.;\
+        {2}{B}, {T}: Surveil 2.
+timing=main
+oracle={1}{U}, {T}: Target creature doesn't untap during its controller's next untap step.\n{2}{B}, {T}: Surveil 2.

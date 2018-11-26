@@ -10,6 +10,7 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.io.IOException;
+import java.io.InputStream;
 import magic.ui.helpers.ImageHelper;
 
 public class ImageHandler {
@@ -95,8 +96,8 @@ public class ImageHandler {
 
     private BufferedImage loadImage(final String filename) {
         BufferedImage img = null;
-        try {
-            img = ImageIO.read(getClass().getClassLoader().getResource(filename));
+        try (final InputStream is = getClass().getClassLoader().getResourceAsStream(filename)) {
+            img = ImageIO.read(is);
         } catch (IOException e) {
             System.err.println("ImageHandler.loadImage() : " + e);
         }

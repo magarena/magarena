@@ -8,6 +8,8 @@ import java.util.Map;
 import java.util.Set;
 
 import magic.exception.GameException;
+import magic.exception.InvalidDeckException;
+import magic.exception.ScriptParseException;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
@@ -99,7 +101,12 @@ public class MagicCard
     }
 
     private MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId, final boolean aToken) {
-        aCardDefinition.loadAbilities();
+        try {
+            aCardDefinition.loadAbilities();
+        } catch (ScriptParseException e) {
+            throw new InvalidDeckException(
+                    "Error parsing " + aCardDefinition.getDistinctName() + ": " + e.getMessage(), e);
+        }
         cardDefinition = aCardDefinition;
         counters = new EnumMap<>(MagicCounterType.class);
         owner = aOwner;

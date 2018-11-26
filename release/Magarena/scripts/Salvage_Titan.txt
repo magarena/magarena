@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={4}{B}{B}
 pt=6/4
-ability=You may sacrifice three artifacts rather than pay SN's mana cost.;\
+ability=You may sacrifice three artifacts rather than pay this spell's mana cost.;\
         Exile three artifact cards from your graveyard: Return SN from your graveyard to your hand.
 timing=main
-oracle=You may sacrifice three artifacts rather than pay Salvage Titan's mana cost.\nExile three artifact cards from your graveyard: Return Salvage Titan from your graveyard to your hand.
+oracle=You may sacrifice three artifacts rather than pay this spell's mana cost.\nExile three artifact cards from your graveyard: Return Salvage Titan from your graveyard to your hand.

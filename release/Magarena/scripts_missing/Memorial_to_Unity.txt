@@ -3,6 +3,7 @@ image=https://magiccards.info/scans/en/dom/245.jpg
 value=2.500
 rarity=U
 type=Land
+mana=g3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G}.;\
         {2}{G}, {T}, Sacrifice SN: Look at the top five cards of your library. You may reveal a creature card from among them and put it into your hand. Then put the rest on the bottom of your library in a random order.

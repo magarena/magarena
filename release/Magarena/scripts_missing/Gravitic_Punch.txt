@@ -1,0 +1,9 @@
+name=Gravitic Punch
+image=https://img.scryfall.com/cards/normal/front/0/5/05fe0428-6e7d-49d4-9a29-80a3589f565a.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{R}
+effect=Target creature you control deals damage equal to its power to target player.~Jump-start
+timing=main
+oracle=Target creature you control deals damage equal to its power to target player.\nJump-start

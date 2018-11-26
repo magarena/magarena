@@ -1,0 +1,12 @@
+name=Demon of Catastrophes
+image=https://magiccards.info/scans/en/m19/91.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Demon
+cost={2}{B}{B}
+pt=6/6
+ability=As an additional cost to cast this spell, sacrifice a creature.;\
+        Flying, trample
+timing=main
+oracle=As an additional cost to cast this spell, sacrifice a creature.\nFlying, trample

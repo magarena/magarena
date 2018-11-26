@@ -1,6 +1,6 @@
 name=Opt
-image=https://magiccards.info/scans/en/xln/65.jpg
-image_updated=2017-10-30
+image=https://magiccards.info/scans/en/dom/60.jpg
+image_updated=2018-08-07
 value=4.164
 rarity=C
 type=Instant

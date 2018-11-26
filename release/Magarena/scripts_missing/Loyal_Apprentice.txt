@@ -1,0 +1,12 @@
+name=Loyal Apprentice
+image=https://img.scryfall.com/cards/normal/en/c18/23.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={1}{R}
+pt=2/1
+ability=Haste;\
+        At the beginning of combat on your turn, if you control your commander, create a 1/1 colorless Thopter artifact creature token with flying. That token gains haste until end of turn.
+timing=fmain
+oracle=Haste\nLieutenant — At the beginning of combat on your turn, if you control your commander, create a 1/1 colorless Thopter artifact creature token with flying. That token gains haste until end of turn.

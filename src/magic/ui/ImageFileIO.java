@@ -2,7 +2,6 @@ package magic.ui;
 
 import magic.ui.helpers.ImageHelper;
 import java.awt.image.BufferedImage;
-import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -72,32 +71,13 @@ public final class ImageFileIO {
 
     public static BufferedImage toImg(final InputStream input, final BufferedImage def) {
         BufferedImage img = def;
-        try {
-            img = javax.imageio.ImageIO.read(input);
+        try (final InputStream is = input) {
+            img = javax.imageio.ImageIO.read(is);
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to read from input stream");
         } catch (final IllegalArgumentException ex) {
             System.err.println("ERROR! Unable to read from null");
-        } finally {
-            close(input);
         }
         return img;
     }
-
-    private static void close(final Closeable resource) {
-        if (resource == null) {
-            return;
-        }
-        boolean closed = false;
-        while (!closed) {
-            try {
-                resource.close();
-                closed = true;
-            } catch (final Exception ex) {
-                System.err.println(ex.getMessage());
-                ex.printStackTrace();
-            }
-        }
-    }
-
 }

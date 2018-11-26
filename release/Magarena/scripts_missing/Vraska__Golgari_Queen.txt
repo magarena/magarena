@@ -1,0 +1,13 @@
+name=Vraska, Golgari Queen
+image=https://img.scryfall.com/cards/normal/front/9/6/963f641d-aabe-4432-87c5-d8cddf95d8d5.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Vraska
+cost={2}{B}{G}
+loyalty=4
+ability=+2: You may sacrifice another permanent. If you do, you gain 1 life and draw a card.;\
+        −3: Destroy target nonland permanent with converted mana cost 3 or less.;\
+        −9: You get an emblem with "Whenever a creature you control deals combat damage to a player, that player loses the game."
+timing=main
+oracle=+2: You may sacrifice another permanent. If you do, you gain 1 life and draw a card.\n−3: Destroy target nonland permanent with converted mana cost 3 or less.\n−9: You get an emblem with "Whenever a creature you control deals combat damage to a player, that player loses the game."

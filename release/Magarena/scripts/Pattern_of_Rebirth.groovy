@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game,{
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, it, event.getPlayer()));
+                    game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary, it, event.getPlayer()));
                     game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 });
             }

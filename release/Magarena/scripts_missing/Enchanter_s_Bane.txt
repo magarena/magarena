@@ -1,0 +1,9 @@
+name=Enchanter's Bane
+image=https://img.scryfall.com/cards/normal/en/c18/21.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{R}
+ability=At the beginning of your end step, target enchantment deals damage equal to its converted mana cost to its controller unless that player sacrifices it.
+timing=enchantment
+oracle=At the beginning of your end step, target enchantment deals damage equal to its converted mana cost to its controller unless that player sacrifices it.

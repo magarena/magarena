@@ -1,4 +1,6 @@
 /build/
+/buildtest/
+/test/lib
 /.project
 /nbproject/
 /manifest.mf

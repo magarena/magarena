@@ -1,0 +1,12 @@
+name=Ghastbark Twins
+image=https://magiccards.info/scans/en/m19/181.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Treefolk
+cost={5}{G}{G}
+pt=7/7
+ability=Trample;\
+        SN can block an additional creature each combat.
+timing=main
+oracle=Trample\nGhastbark Twins can block an additional creature each combat.

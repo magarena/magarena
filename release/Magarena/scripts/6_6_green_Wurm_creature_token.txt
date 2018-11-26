@@ -1,6 +1,6 @@
 name=6/6 green Wurm creature token
 token=Wurm
-image=https://magiccards.info/extras/token/magic-2013/wurm.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tdds/7.jpg?1517813031
 value=4
 type=Creature
 subtype=Wurm

@@ -1,0 +1,14 @@
+name=Lord Windgrace
+image=https://img.scryfall.com/cards/normal/en/c18/43.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Windgrace
+cost={2}{B}{R}{G}
+loyalty=5
+ability=+2: Discard a card, then draw a card. If a land card is discarded this way, draw an additional card.;\
+        −3: Return up to two target land cards from your graveyard to the battlefield.;\
+        −11: Destroy up to six target nonland permanents, then create six 2/2 green Cat Warrior creature tokens with forestwalk.;\
+        SN can be your commander.
+timing=main
+oracle=+2: Discard a card, then draw a card. If a land card is discarded this way, draw an additional card.\n−3: Return up to two target land cards from your graveyard to the battlefield.\n−11: Destroy up to six target nonland permanents, then create six 2/2 green Cat Warrior creature tokens with forestwalk.\nLord Windgrace can be your commander.

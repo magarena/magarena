@@ -1,0 +1,11 @@
+name=Blade Instructor
+image=https://img.scryfall.com/cards/normal/front/9/b/9b1c7f07-8d39-425b-8ae9-b3ab317cc0fe.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=3/1
+ability=Mentor
+timing=main
+oracle=Mentor

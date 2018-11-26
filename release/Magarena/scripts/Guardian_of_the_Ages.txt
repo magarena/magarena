@@ -1,0 +1,12 @@
+name=Guardian of the Ages
+image=https://magiccards.info/scans/en/m14/211.jpg
+value=2.750
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={7}
+pt=7/7
+ability=Defender
+timing=smain
+oracle=Defender\nWhen a creature attacks you or a planeswalker you control, if Guardian of the Ages has defender, it loses defender and gains trample.
+requires_groovy_code

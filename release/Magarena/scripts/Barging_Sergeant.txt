@@ -1,0 +1,12 @@
+name=Barging Sergeant
+image=https://img.scryfall.com/cards/normal/front/5/2/52a54ebc-008a-4180-a023-2e1d5318780c.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Minotaur,Soldier
+cost={4}{R}
+pt=4/2
+ability=Haste;\
+        Mentor
+timing=fmain
+oracle=Haste\nMentor

@@ -1,0 +1,12 @@
+name=League Guildmage
+image=https://img.scryfall.com/cards/normal/front/7/4/7439118d-4869-486e-8930-6e00db2634b2.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={U}{R}
+pt=2/2
+ability={3}{U}, {T}: Draw a card.;\
+        {X}{R}, {T}: Copy target instant or sorcery spell you control with converted mana cost X. You may choose new targets for the copy.
+timing=main
+oracle={3}{U}, {T}: Draw a card.\n{X}{R}, {T}: Copy target instant or sorcery spell you control with converted mana cost X. You may choose new targets for the copy.

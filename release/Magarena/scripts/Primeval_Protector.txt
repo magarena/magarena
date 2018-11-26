@@ -7,7 +7,7 @@ type=Creature
 subtype=Avatar
 cost={10}{G}
 pt=10/10
-ability=SN costs {1} less to cast for each creature your opponents control.;\
+ability=This spell costs {1} less to cast for each creature your opponents control.;\
         When SN enters the battlefield, put a +1/+1 counter on each other creature you control.
 timing=main
-oracle=Primeval Protector costs {1} less to cast for each creature your opponents control.\nWhen Primeval Protector enters the battlefield, put a +1/+1 counter on each other creature you control.
+oracle=This spell costs {1} less to cast for each creature your opponents control.\nWhen Primeval Protector enters the battlefield, put a +1/+1 counter on each other creature you control.

@@ -1,0 +1,9 @@
+name=Camaraderie
+image=https://img.scryfall.com/cards/normal/front/8/9/890a2fa9-1141-4a4c-85af-05723aba5e39.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{G}{W}
+effect=You gain X life and draw X cards, where X is the number of creatures you control. Creatures you control get +1/+1 until end of turn.
+timing=main
+oracle=You gain X life and draw X cards, where X is the number of creatures you control. Creatures you control get +1/+1 until end of turn.

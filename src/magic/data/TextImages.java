@@ -110,6 +110,7 @@ public class TextImages {
         add(MagicCounterType.Devotion, MagicIcon.DEVOTIONCOUNTER);
         add(MagicCounterType.Divinity, MagicIcon.DIVINITYCOUNTER);
         add(MagicCounterType.Fade, MagicIcon.FADECOUNTER);
+        add(MagicCounterType.Feather, MagicIcon.FEATHER);
         add(MagicCounterType.Fuse, MagicIcon.FUSECOUNTER);
         add(MagicCounterType.Gem, MagicIcon.GEMCOUNTER);
         add(MagicCounterType.Gold, MagicIcon.GOLDCOUNTER);
@@ -122,6 +123,7 @@ public class TextImages {
         add(MagicCounterType.Ice, MagicIcon.ICECOUNTER);
         add(MagicCounterType.Infection, MagicIcon.INFECTIONCOUNTER);
         add(MagicCounterType.Ki, MagicIcon.KICOUNTER);
+        add(MagicCounterType.Landmark, MagicIcon.DEPLETIONCOUNTER);
         add(MagicCounterType.Level, MagicIcon.LEVELCOUNTER);
         add(MagicCounterType.Lore, MagicIcon.STUDYCOUNTER);
         add(MagicCounterType.Loyalty, MagicIcon.LOYALTYCOUNTER);
@@ -150,7 +152,6 @@ public class TextImages {
         add(MagicCounterType.Wage, MagicIcon.BRIBECOUNTER);
         add(MagicCounterType.Wind, MagicIcon.WINDCOUNTER);
         add(MagicCounterType.Wish, MagicIcon.WISHCOUNTER);
-        add(MagicCounterType.Feather, MagicIcon.FEATHER);
     }
 
     private static void add(final MagicCounterType key, final MagicIcon icon) {

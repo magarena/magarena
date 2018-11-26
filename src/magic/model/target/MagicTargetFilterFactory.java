@@ -1891,6 +1891,20 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicTargetFilterImpl PLAYER_OR_PLANESWALKER = new MagicTargetFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicTarget target) {
+            return target.isPlayer() ||
+                target.isPlaneswalkerPermanent();
+        }
+
+        @Override
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Permanent ||
+                targetType == MagicTargetType.Player;
+        }
+    };
+
     public static final MagicPermanentFilterImpl UNTAPPED_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
@@ -2267,6 +2281,16 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl MENTOR = new MagicPermanentFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            final MagicPermanent mentor = (MagicPermanent)source;
+            return target.isCreature() &&
+                target.isAttacking() &&
+                target.getPower() < mentor.getPower();
+        }
+    };
+
     /**
      * Single texts completely specifying the targeting condition.
      */
@@ -2370,6 +2394,7 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> card from an opponent's graveyard
         add("card from an opponent's graveyard", CARD_FROM_OPPONENTS_GRAVEYARD);
+        add("card in an opponent's graveyard", CARD_FROM_OPPONENTS_GRAVEYARD);
         add("creature card in an opponent's graveyard", CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD);
 
         // <color|type|subtype> card from your hand
@@ -2575,6 +2600,7 @@ public class MagicTargetFilterFactory {
         add("creature or nonbasic land", CREATURE_OR_NONBASIC_LAND);
         add("creature or planeswalker", CREATURE_OR_PLANESWALKER);
         add("creature or player", CREATURE_OR_PLAYER);
+        add("player or planeswalker", PLAYER_OR_PLANESWALKER);
         add("creature or vehicle", CREATURE_OR_VEHICLE);
         add("Sliver creature or player", SLIVER_CREATURE_OR_PLAYER);
         add("nontoken Elf", NONTOKEN_ELF);

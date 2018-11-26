@@ -7,8 +7,8 @@ type=Creature
 subtype=Elemental
 cost={5}{G}{G}
 pt=8/5
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Haste;\
         SN can't be the target of nongreen spells or abilities from nongreen sources.
 timing=fmain
-oracle=Gaea's Revenge can't be countered.\nHaste\nGaea's Revenge can't be the target of nongreen spells or abilities from nongreen sources.
+oracle=This spell can't be countered.\nHaste\nGaea's Revenge can't be the target of nongreen spells or abilities from nongreen sources.

@@ -1,0 +1,11 @@
+name=Coveted Jewel
+image=https://img.scryfall.com/cards/normal/en/c18/54.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={6}
+ability=When SN enters the battlefield, draw three cards.;\
+        {T}: Add three mana of any one color.;\
+        Whenever one or more creatures an opponent controls attack you and aren't blocked, that player draws three cards and gains control of SN. Untap it.
+timing=artifact
+oracle=When Coveted Jewel enters the battlefield, draw three cards.\n{T}: Add three mana of any one color.\nWhenever one or more creatures an opponent controls attack you and aren't blocked, that player draws three cards and gains control of Coveted Jewel. Untap it.

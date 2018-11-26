@@ -1,8 +1,8 @@
 name=Sift
-image=https://magiccards.info/scans/en/a25/73.jpg
-image_updated=2018-04-27
+image=https://magiccards.info/scans/en/m19/72.jpg
+image_updated=2018-08-07
 value=3.170
-rarity=C
+rarity=U
 type=Sorcery
 cost={3}{U}
 effect=Draw three cards, then discard a card.

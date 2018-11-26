@@ -1,0 +1,11 @@
+name=Goblin Motivator
+image=https://magiccards.info/scans/en/m19/143.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={R}
+pt=1/1
+ability={T}: Target creature gains haste until end of turn.
+timing=main
+oracle={T}: Target creature gains haste until end of turn.

@@ -1,0 +1,11 @@
+name=Vedalken Humiliator
+image=https://img.scryfall.com/cards/normal/en/c18/13.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vedalken,Wizard
+cost={3}{U}
+pt=3/4
+ability=Metalcraft — Whenever SN attacks, if you control three or more artifacts, creatures your opponents control lose all abilities and have base power and toughness 1/1 until end of turn.
+timing=main
+oracle=Metalcraft — Whenever Vedalken Humiliator attacks, if you control three or more artifacts, creatures your opponents control lose all abilities and have base power and toughness 1/1 until end of turn.

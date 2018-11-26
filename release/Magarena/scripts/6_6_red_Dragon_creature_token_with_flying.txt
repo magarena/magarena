@@ -1,6 +1,6 @@
 name=6/6 red Dragon creature token with flying
 token=Dragon
-image=https://magiccards.info/extras/token/return-to-ravnica/dragon.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tc17/7.jpg?1517813031
 value=5
 type=Creature
 subtype=Dragon

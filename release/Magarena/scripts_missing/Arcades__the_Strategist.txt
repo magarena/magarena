@@ -1,0 +1,13 @@
+name=Arcades, the Strategist
+image=https://magiccards.info/scans/en/m19/212.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Dragon
+cost={1}{G}{W}{U}
+pt=3/5
+ability=Flying, vigilance;\
+        Whenever a creature with defender enters the battlefield under your control, draw a card.;\
+        Each creature you control with defender assigns combat damage equal to its toughness rather than its power and can attack as though it didn't have defender.
+timing=main
+oracle=Flying, vigilance\nWhenever a creature with defender enters the battlefield under your control, draw a card.\nEach creature you control with defender assigns combat damage equal to its toughness rather than its power and can attack as though it didn't have defender.

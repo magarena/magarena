@@ -1,0 +1,9 @@
+name=Wash Out
+image=https://magiccards.info/scans/en/in/87.jpg
+value=4.294
+rarity=U
+type=Sorcery
+cost={3}{U}
+timing=main
+oracle=Return all permanents of the color of your choice to their owners' hands.
+requires_groovy_code

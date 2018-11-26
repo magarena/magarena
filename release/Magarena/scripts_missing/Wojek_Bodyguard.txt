@@ -1,0 +1,12 @@
+name=Wojek Bodyguard
+image=https://img.scryfall.com/cards/normal/front/e/b/ebff5313-e325-47c3-814b-38fdb4c6c8d2.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{R}
+pt=3/3
+ability=Mentor;\
+        SN can't attack or block alone.
+timing=main
+oracle=Mentor\nWojek Bodyguard can't attack or block alone.

@@ -6,8 +6,8 @@ type=Creature
 subtype=Sliver
 cost={3}{G}
 pt=2/2
-ability=SN can't be countered.;\
-        Sliver spells can't be countered by spells or abilities.
+ability=This spell can't be countered.;\
+        Sliver spells can't be countered.
 timing=main
-oracle=Root Sliver can't be countered.\nSliver spells can't be countered by spells or abilities.
+oracle=This spell can't be countered.\nSliver spells can't be countered.
 status=not supported: spell-modification

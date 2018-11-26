@@ -1,6 +1,6 @@
 name=2/2 black Zombie creature token
 token=Zombie
-image=https://magiccards.info/extras/token/magic-origins/zombie.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tc18/9.jpg?1535501361
 image_updated=2015-11-12
 value=2
 type=Creature

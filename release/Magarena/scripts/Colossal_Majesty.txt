@@ -1,0 +1,9 @@
+name=Colossal Majesty
+image=https://magiccards.info/scans/en/m19/173.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=At the beginning of your upkeep, if you control a creature with power 4 or greater, draw a card.
+timing=enchantment
+oracle=At the beginning of your upkeep, if you control a creature with power 4 or greater, draw a card.

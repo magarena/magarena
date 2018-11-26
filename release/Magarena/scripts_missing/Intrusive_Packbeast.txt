@@ -1,0 +1,12 @@
+name=Intrusive Packbeast
+image=https://img.scryfall.com/cards/normal/front/4/9/49266f3c-4b43-4175-8bac-16789ba6f4b9.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{W}
+pt=3/3
+ability=Vigilance;\
+        When SN enters the battlefield, tap up to two target creatures your opponents control.
+timing=main
+oracle=Vigilance\nWhen Intrusive Packbeast enters the battlefield, tap up to two target creatures your opponents control.

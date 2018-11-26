@@ -1,0 +1,12 @@
+name=Boreas Charger
+image=https://img.scryfall.com/cards/normal/en/c18/1.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Pegasus
+cost={2}{W}
+pt=2/1
+ability=Flying;\
+        When SN leaves the battlefield, choose an opponent who controls more lands than you. Search your library for a number of Plains cards equal to the difference and reveal them. Put one of them onto the battlefield tapped and the rest into your hand. Then shuffle your library.
+timing=main
+oracle=Flying\nWhen Boreas Charger leaves the battlefield, choose an opponent who controls more lands than you. Search your library for a number of Plains cards equal to the difference and reveal them. Put one of them onto the battlefield tapped and the rest into your hand. Then shuffle your library.

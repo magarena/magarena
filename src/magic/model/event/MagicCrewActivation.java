@@ -8,7 +8,7 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 import magic.model.action.AddStaticAction;
 
-import java.util.Arrays;
+import java.util.Collections;
 
 public class MagicCrewActivation extends MagicPermanentActivation {
 
@@ -34,7 +34,7 @@ public class MagicCrewActivation extends MagicPermanentActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-        return Arrays.asList(new MagicCrewCostEvent(source,crew));
+        return Collections.singletonList(new MagicCrewCostEvent(source, crew));
     }
 
     @Override

@@ -1,0 +1,9 @@
+name=Apex of Power
+image=https://magiccards.info/scans/en/m19/129.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={7}{R}{R}{R}
+effect=Exile the top seven cards of your library. Until end of turn, you may cast nonland cards exiled this way.~If this spell was cast from your hand, add ten mana of any one color.
+timing=main
+oracle=Exile the top seven cards of your library. Until end of turn, you may cast nonland cards exiled this way.\nIf this spell was cast from your hand, add ten mana of any one color.

@@ -1,5 +1,6 @@
 name=Horizon Scholar
-image=https://magiccards.info/scans/en/ths/51.jpg
+image=https://magiccards.info/scans/en/m19/59.jpg
+image_updated=2018-08-07
 value=3.156
 rarity=U
 type=Creature

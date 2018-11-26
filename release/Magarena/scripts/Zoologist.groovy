@@ -25,7 +25,7 @@
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
                 game.doAction(new RevealAction(card));
                 if (card.hasType(MagicType.Creature)) {
-                    game.doAction(new ReturnCardAction(
+                    game.doAction(new PutOntoBattlefieldAction(
                         MagicLocationType.OwnersLibrary,
                         card,
                         event.getPlayer()

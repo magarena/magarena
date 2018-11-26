@@ -1,7 +1,8 @@
 name=Windreader Sphinx
-image=https://magiccards.info/scans/en/m14/81.jpg
+image=https://magiccards.info/scans/en/m19/84.jpg
+image_updated=2018-08-07
 value=3.590
-rarity=M
+rarity=R
 type=Creature
 subtype=Sphinx
 cost={5}{U}{U}

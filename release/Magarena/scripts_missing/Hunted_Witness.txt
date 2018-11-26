@@ -1,0 +1,11 @@
+name=Hunted Witness
+image=https://img.scryfall.com/cards/normal/front/8/c/8c31b8e5-2349-4119-9dc2-3e41c5364a78.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human
+cost={W}
+pt=1/1
+ability=When SN dies, create a 1/1 white Soldier creature token with lifelink.
+timing=main
+oracle=When Hunted Witness dies, create a 1/1 white Soldier creature token with lifelink.

@@ -1,6 +1,6 @@
 name=Essence Scatter
-image=https://magiccards.info/scans/en/akh/52.jpg
-image_updated=2017-09-29
+image=https://magiccards.info/scans/en/m19/54.jpg
+image_updated=2018-08-07
 value=3.527
 rarity=C
 type=Instant

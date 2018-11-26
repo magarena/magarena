@@ -1,0 +1,12 @@
+name=Angel of the Dawn
+image=https://magiccards.info/scans/en/m19/7.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Angel
+cost={4}{W}
+pt=3/3
+ability=Flying;\
+        When SN enters the battlefield, creatures you control get +1/+1 and gain vigilance until end of turn.
+timing=main
+oracle=Flying\nWhen Angel of the Dawn enters the battlefield, creatures you control get +1/+1 and gain vigilance until end of turn.

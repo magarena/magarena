@@ -15,11 +15,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                game.doAction(new ReturnCardAction(MagicLocationType.Graveyard,it,event.getPlayer(), {
+                game.doAction(new PutOntoBattlefieldAction(MagicLocationType.Graveyard,it,event.getPlayer(), {
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();
                     if (perm.hasSubType(MagicSubType.Angel)) {
-                        G.doAction(new ChangeCountersAction(event.getPlayer(),perm,MagicCounterType.PlusOne,2));
+                        G.doAction(new ChangeCountersAction(event.getPlayer().map(G), perm, MagicCounterType.PlusOne, 2));
                     }
                 }));
             });

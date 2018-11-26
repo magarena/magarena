@@ -1,0 +1,10 @@
+name=Onakke Ogre
+image=https://magiccards.info/scans/en/m19/153.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ogre,Warrior
+cost={2}{R}
+pt=4/2
+timing=main
+oracle=NONE

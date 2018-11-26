@@ -1,0 +1,11 @@
+name=Lotleth Giant
+image=https://img.scryfall.com/cards/normal/front/b/1/b1dc38b7-52f7-4394-b095-5442429ab291.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Giant
+cost={6}{B}
+pt=6/5
+ability=Undergrowth — When SN enters the battlefield, it deals 1 damage to target opponent for each creature card in your graveyard.
+timing=main
+oracle=Undergrowth — When Lotleth Giant enters the battlefield, it deals 1 damage to target opponent for each creature card in your graveyard.

@@ -1,10 +1,12 @@
-
 package magic.model.action;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 
+/**
+ * This action corresponds to "scry 1" action.
+ */
 public class ScryAction extends MagicAction {
 
     private final MagicPlayer player;

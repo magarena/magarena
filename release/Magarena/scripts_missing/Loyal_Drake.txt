@@ -1,0 +1,12 @@
+name=Loyal Drake
+image=https://img.scryfall.com/cards/normal/en/c18/10.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Drake
+cost={2}{U}
+pt=2/2
+ability=Flying;\
+        At the beginning of combat on your turn, if you control your commander, draw a card.
+timing=main
+oracle=Flying\nLieutenant — At the beginning of combat on your turn, if you control your commander, draw a card.

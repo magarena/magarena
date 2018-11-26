@@ -1,0 +1,12 @@
+name=Sai, Master Thopterist
+image=https://magiccards.info/scans/en/m19/69.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={2}{U}
+pt=1/4
+ability=Whenever you cast an artifact spell, create a 1/1 colorless Thopter artifact creature token with flying.;\
+        {1}{U}, Sacrifice two artifacts: Draw a card.
+timing=main
+oracle=Whenever you cast an artifact spell, create a 1/1 colorless Thopter artifact creature token with flying.\n{1}{U}, Sacrifice two artifacts: Draw a card.

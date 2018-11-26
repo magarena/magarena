@@ -1,0 +1,12 @@
+name=Legion Warboss
+image=https://img.scryfall.com/cards/normal/front/5/e/5e84cb9c-9876-47a4-aea4-78574321bc36.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Goblin,Soldier
+cost={2}{R}
+pt=2/2
+ability=Mentor;\
+        At the beginning of combat on your turn, create a 1/1 red Goblin creature token. That token gains haste until end of turn and attacks this combat if able.
+timing=main
+oracle=Mentor\nAt the beginning of combat on your turn, create a 1/1 red Goblin creature token. That token gains haste until end of turn and attacks this combat if able.

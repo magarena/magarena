@@ -1,0 +1,11 @@
+name=Melira's Keepers
+image=https://magiccards.info/scans/en/mbs/83.jpg
+value=3.147
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={4}{G}
+pt=4/4
+timing=main
+requires_groovy_code=Tatterkite
+oracle=Melira's Keepers can't have counters put on it.

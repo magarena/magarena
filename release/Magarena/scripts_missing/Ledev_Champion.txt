@@ -1,0 +1,12 @@
+name=Ledev Champion
+image=https://img.scryfall.com/cards/normal/front/b/c/bc4f508b-a48d-4462-9d89-ee2ead3a0847.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Knight
+cost={1}{G}{W}
+pt=2/2
+ability=Whenever SN attacks, you may tap any number of untapped creatures you control. SN gets +1/+1 until end of turn for each creature tapped this way.;\
+        {3}{G}{W}: Create a 1/1 white Soldier creature token with lifelink.
+timing=main
+oracle=Whenever Ledev Champion attacks, you may tap any number of untapped creatures you control. Ledev Champion gets +1/+1 until end of turn for each creature tapped this way.\n{3}{G}{W}: Create a 1/1 white Soldier creature token with lifelink.

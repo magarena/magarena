@@ -1,0 +1,10 @@
+name=Conclave Tribunal
+image=https://img.scryfall.com/cards/normal/front/9/d/9d9fda5d-df8f-45d6-b8f0-33f903c4bf83.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=Convoke;\
+        When SN enters the battlefield, exile target nonland permanent an opponent controls until SN leaves the battlefield.
+timing=enchantment
+oracle=Convoke\nWhen Conclave Tribunal enters the battlefield, exile target nonland permanent an opponent controls until Conclave Tribunal leaves the battlefield.

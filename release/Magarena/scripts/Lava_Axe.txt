@@ -1,9 +1,10 @@
 name=Lava Axe
-image=https://magiccards.info/scans/en/m15/154.jpg
+image=https://magiccards.info/scans/en/m19/150.jpg
+image_updated=2018-08-07
 value=1.750
 rarity=C
 type=Sorcery
 cost={4}{R}
-effect=SN deals 5 damage to target player.
+effect=SN deals 5 damage to target player or planeswalker.
 timing=removal
-oracle=Lava Axe deals 5 damage to target player.
+oracle=Lava Axe deals 5 damage to target player or planeswalker.

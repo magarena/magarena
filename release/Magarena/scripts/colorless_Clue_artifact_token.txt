@@ -1,5 +1,5 @@
 name=colorless Clue artifact token
-image=https://magiccards.info/extras/token/shadows-over-innistrad/clue-1.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tc18/19.jpg?1535501538
 token=Clue
 type=Artifact
 subtype=Clue

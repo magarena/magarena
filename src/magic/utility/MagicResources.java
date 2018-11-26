@@ -4,6 +4,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.BufferedInputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import magic.data.MagicIcon;
@@ -37,20 +38,20 @@ public final class MagicResources {
         }
     }
 
-    public static URL getManaImageUrl(MagicIcon manaIcon) {
-        return instance.getClass().getResource("/magic/data/icons/mana/" + manaIcon.getFilename());
+    public static InputStream getManaImageUrl(MagicIcon manaIcon) {
+        return instance.getClass().getResourceAsStream("/magic/data/icons/mana/" + manaIcon.getFilename());
     }
 
-    public static URL getImageUrl(final String imageFilename) {
-        return instance.getClass().getResource("/magic/data/icons/" + imageFilename);
+    public static InputStream getImageStream(final String imageFilename) {
+        return instance.getClass().getResourceAsStream("/magic/data/icons/" + imageFilename);
     }
 
-    public static URL getTextureImageUrl(final String imageFilename) {
-        return instance.getClass().getResource("/magic/data/textures/" + imageFilename);
+    public static InputStream getTextureImageStream(final String imageFilename) {
+        return instance.getClass().getResourceAsStream("/magic/data/textures/" + imageFilename);
     }
 
-    public static URL getSoundUrl(final String filename) {
-        return instance.getClass().getResource("/soundfx/" + filename);
+    public static BufferedInputStream getSoundStream(final String filename) {
+        return new BufferedInputStream(instance.getClass().getResourceAsStream("/soundfx/" + filename));
     }
 
     public static InputStreamReader getH2ScriptFile(String filename) {

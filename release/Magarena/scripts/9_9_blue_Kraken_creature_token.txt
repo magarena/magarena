@@ -1,6 +1,6 @@
 name=9/9 blue Kraken creature token
 token=Kraken
-image=https://magiccards.info/extras/token/commander-2014/kraken.jpg
+image=https://img.scryfall.com/cards/border_crop/en/ta25/6.jpg?1529174788
 value=6
 type=Creature
 subtype=Kraken

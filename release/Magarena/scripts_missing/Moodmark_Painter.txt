@@ -1,0 +1,11 @@
+name=Moodmark Painter
+image=https://img.scryfall.com/cards/normal/front/8/2/82903e5f-c10f-4767-a2c0-6f8cc7280fa0.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={2}{B}{B}
+pt=2/3
+ability=Undergrowth — When SN enters the battlefield, target creature gains menace and gets +X/+0 until end of turn, where X is the number of creature cards in your graveyard.
+timing=main
+oracle=Undergrowth — When Moodmark Painter enters the battlefield, target creature gains menace and gets +X/+0 until end of turn, where X is the number of creature cards in your graveyard.

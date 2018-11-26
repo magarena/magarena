@@ -1,0 +1,12 @@
+name=Underrealm Lich
+image=https://img.scryfall.com/cards/normal/front/0/7/0782e090-209c-428f-966a-17f3ceab2903.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Zombie,Elf,Shaman
+cost={3}{B}{G}
+pt=4/3
+ability=If you would draw a card, instead look at the top three cards of your library, then put one into your hand and the rest into your graveyard.;\
+        Pay 4 life: SN gains indestructible until end of turn. Tap it.
+timing=main
+oracle=If you would draw a card, instead look at the top three cards of your library, then put one into your hand and the rest into your graveyard.\nPay 4 life: Underrealm Lich gains indestructible until end of turn. Tap it.

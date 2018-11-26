@@ -1,0 +1,9 @@
+name=Thought Erasure
+image=https://img.scryfall.com/cards/normal/front/7/c/7ce226ad-cb1d-47f5-90fc-27704e181884.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={U}{B}
+effect=Target opponent reveals their hand. You choose a nonland card from it. That player discards that card.~Surveil 1.
+timing=main
+oracle=Target opponent reveals their hand. You choose a nonland card from it. That player discards that card.\nSurveil 1.

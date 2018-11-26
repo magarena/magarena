@@ -1,0 +1,12 @@
+name=Loyal Unicorn
+image=https://img.scryfall.com/cards/normal/en/c18/4.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Unicorn
+cost={3}{W}
+pt=3/4
+ability=Vigilance;\
+        At the beginning of combat on your turn, if you control your commander, prevent all combat damage that would be dealt to creatures you control this turn. Other creatures you control gain vigilance until end of turn.
+timing=main
+oracle=Vigilance\nLieutenant — At the beginning of combat on your turn, if you control your commander, prevent all combat damage that would be dealt to creatures you control this turn. Other creatures you control gain vigilance until end of turn.

@@ -1,12 +1,16 @@
 package magic.model.trigger;
 
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicExertEvent;
 import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.action.EnqueueTriggerAction;
+import magic.model.action.ChangeCountersAction;
+import magic.model.target.MagicTargetFilterFactory;
 
 public abstract class ThisAttacksTrigger extends AttacksTrigger {
     public ThisAttacksTrigger(final int priority) {
@@ -51,4 +55,26 @@ public abstract class ThisAttacksTrigger extends AttacksTrigger {
             }
         };
     }
+
+    public static ThisAttacksTrigger Mentor = new ThisAttacksTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
+            return new MagicEvent(
+                permanent,
+                new MagicTargetChoice(
+                    MagicTargetFilterFactory.MENTOR,
+                    "an attacking creature you control with lesser power than " + permanent
+                ),
+                this,
+                "PN puts a +1/+1 counter on target attacking creature with less power than SN.$"
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPermanent(game, permanent -> {
+                game.doAction(new ChangeCountersAction(event.getPlayer(), permanent, MagicCounterType.PlusOne, 1));
+            });
+        }
+    };
+
 }

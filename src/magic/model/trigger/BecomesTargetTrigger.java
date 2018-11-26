@@ -34,6 +34,20 @@ public abstract class BecomesTargetTrigger extends MagicTrigger<MagicItemOnStack
         };
     }
 
+    public static BecomesTargetTrigger createYou(final MagicTargetFilter<MagicItemOnStack> ifilter, final MagicSourceEvent sourceEvent) {
+        return new BecomesTargetTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
+                return itemOnStack.getTarget() == permanent.getController() &&
+                       ifilter.accept(permanent, permanent.getController(), itemOnStack);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
+                return sourceEvent.getTriggerEvent(permanent, itemOnStack);
+            }
+        };
+    }
+
     public static BecomesTargetTrigger create(final MagicTargetFilter<MagicPermanent> pfilter, final MagicTargetFilter<MagicItemOnStack> ifilter, final MagicSourceEvent sourceEvent) {
         return new BecomesTargetTrigger() {
             @Override

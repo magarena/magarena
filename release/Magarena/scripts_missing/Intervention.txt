@@ -1,0 +1,11 @@
+name=Intervention
+image=https://img.scryfall.com/cards/normal/front/4/a/4a82084e-b178-442b-8007-7b2a70f3fbba.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}{W}
+split=Integrity
+effect=SN deals 3 damage to any target and you gain 3 life.
+timing=removal
+oracle=Intervention deals 3 damage to any target and you gain 3 life.
+status=not supported: split-card

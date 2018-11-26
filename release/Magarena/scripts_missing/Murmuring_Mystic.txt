@@ -1,0 +1,11 @@
+name=Murmuring Mystic
+image=https://img.scryfall.com/cards/normal/front/5/f/5fc6adff-dcb3-456d-a8c2-0e77b784ff89.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=1/5
+ability=Whenever you cast an instant or sorcery spell, create a 1/1 blue Bird Illusion creature token with flying.
+timing=main
+oracle=Whenever you cast an instant or sorcery spell, create a 1/1 blue Bird Illusion creature token with flying.

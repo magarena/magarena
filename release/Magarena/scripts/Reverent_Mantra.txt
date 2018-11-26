@@ -4,8 +4,8 @@ value=3.750
 rarity=R
 type=Instant
 cost={3}{W}
-ability=You may exile a white card from your hand rather than pay SN's mana cost.;\
-        Cast SN with AI only if you control a creature.
+ability=Cast SN with AI only if you control a creature.;\
+        You may exile a white card from your hand rather than pay this spell's mana cost.
 timing=pump
+oracle=You may exile a white card from your hand rather than pay this spell's mana cost.\nChoose a color. All creatures gain protection from the chosen color until end of turn.
 requires_groovy_code
-oracle=You may exile a white card from your hand rather than pay Reverent Mantra's mana cost.\nChoose a color. All creatures gain protection from the chosen color until end of turn.

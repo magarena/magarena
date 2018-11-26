@@ -1,0 +1,13 @@
+name=Octopus Umbra
+image=https://img.scryfall.com/cards/normal/en/c18/11.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={3}{U}{U}
+ability=Enchant creature;\
+        Enchanted creature has base power and toughness 8/8 and has "Whenever this creature attacks, you may tap target creature with power 8 or less.";\
+        Totem armor
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature has base power and toughness 8/8 and has "Whenever this creature attacks, you may tap target creature with power 8 or less."\nTotem armor

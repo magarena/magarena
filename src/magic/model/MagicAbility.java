@@ -26,7 +26,7 @@ public enum MagicAbility {
     CannotAttack("(SN )?can't attack",-50),
     CannotAttackOrBlock("(SN )?can't attack or block",-200),
     CannotBlockWithoutFlying("(SN )?can block only creatures with flying\\.",-40),
-    CannotBeCountered("(SN )?can't be countered( by spells or abilities)?\\.",0),
+    CannotBeCountered("this spell can't be countered\\.",0),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTargetOfNonGreen("(SN )?can't be the target of nongreen spells or abilities from nongreen sources\\.",10),
@@ -497,14 +497,14 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.affinity(cardDef, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))));
         }
     },
-    SelfLessToCastEach("SN costs \\{1\\} less to cast for each " + ARG.ANY + "\\.", 10) {
+    SelfLessToCastEach("(this spell|SN) costs \\{1\\} less to cast for each " + ARG.ANY + "\\.", 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
             card.add(MagicHandCastActivation.reduction(cardDef, MagicAmountParser.build(ARG.any(arg))));
         }
     },
-    SelfLessToCastCond("SN costs \\{" + ARG.NUMBER + "\\} less to cast if " + ARG.COND + "\\.", 10) {
+    SelfLessToCastCond("(this spell|SN) costs \\{" + ARG.NUMBER + "\\} less to cast if " + ARG.COND + "\\.", 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
@@ -512,11 +512,11 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.reduction(cardDef, ARG.number(arg), cond));
         }
     },
-    YourCardLessToCast(ARG.WORDRUN + " you cast cost \\{" + ARG.NUMBER + "\\} less to cast\\.", 10) {
+    YourCardLessToCast(ARG.WORDRUN + " you cast cost " + ARG.MANACOST + " less to cast\\.", 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String cards = ARG.wordrun(arg).replaceAll("[Ss]pells", "cards") + " from your hand";
-            card.add(MagicStatic.YourCostReduction(MagicTargetFilterFactory.Card(cards), ARG.number(arg)));
+            card.add(MagicStatic.YourCostReduction(MagicTargetFilterFactory.Card(cards), MagicManaCost.create(ARG.manacost(arg))));
         }
     },
     YourCardMoreToCast(ARG.WORDRUN + " you cast cost " + ARG.MANACOST + " more to cast\\.", 10) {
@@ -647,6 +647,12 @@ public enum MagicAbility {
             for (int chapter : chapters) {
                 card.add(SagaChapterTrigger.create(chapter, sourceEvent));
             }
+        }
+    },
+    Mentor("mentor", 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(ThisAttacksTrigger.Mentor);
         }
     },
 
@@ -865,7 +871,7 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.create(cardDef, tokens[0], tokens[1]));
         }
     },
-    AlternateCost2("You may " + ARG.ANY + " rather than pay SN's mana cost\\.", 10) {
+    AlternateCost2("You may " + ARG.ANY + " rather than pay (SN's|this spell's) mana cost\\.", 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
             final String arg = matcher.group("any").replace(" and ",", ");
@@ -873,7 +879,7 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.create(cardDef, arg, "Alt"));
         }
     },
-    AlternateCostIf("If " + ARG.COND + ", you may " + ARG.ANY + " rather than pay SN's mana cost\\.", 10) {
+    AlternateCostIf("If " + ARG.COND + ", you may " + ARG.ANY + " rather than pay (SN's|this spell's) mana cost\\.", 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
             final MagicCondition condition = MagicConditionParser.build(ARG.cond(matcher));
@@ -889,7 +895,7 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.awaken(cardDef, ARG.number(arg), ARG.cost(arg)));
         }
     },
-    CastRestriction("Cast SN " + ARG.ANY, 0) {
+    CastRestriction("Cast (SN|this spell) " + ARG.ANY, 0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             for (final MagicMatchedCostEvent mce : MagicConditionParser.buildCost(ARG.any(arg))) {
@@ -897,7 +903,7 @@ public enum MagicAbility {
             }
         }
     },
-    AdditionalCost("As an additional cost to cast SN, " + ARG.COST, 10) {
+    AdditionalCost("As an additional cost to cast (SN|this spell), " + ARG.COST, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAdditionalCost.create(new MagicRegularCostEvent(ARG.cost(arg))));
@@ -1416,6 +1422,15 @@ public enum MagicAbility {
             ));
         }
     },
+    WhenYouTargeted("When(ever)? you become the target of (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(BecomesTargetTrigger.createYou(
+                MagicTargetFilterFactory.ItemOnStack(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     WhenTargeted("When(ever)? " + ARG.WORDRUN2 + " becomes the target of (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
@@ -1479,6 +1494,14 @@ public enum MagicAbility {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(YouScryTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    WhenYouSurveil("Whenever you surveil, " + ARG.EFFECT, 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(YouSurveilTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

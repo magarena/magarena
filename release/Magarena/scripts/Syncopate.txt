@@ -1,7 +1,8 @@
 name=Syncopate
-image=https://magiccards.info/scans/en/rtr/54.jpg
+image=https://magiccards.info/scans/en/dom/67.jpg
+image_updated=2018-08-07
 value=3.883
-rarity=U
+rarity=C
 type=Instant
 cost={X}{U}
 timing=counter

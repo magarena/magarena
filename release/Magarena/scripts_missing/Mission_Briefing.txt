@@ -1,0 +1,9 @@
+name=Mission Briefing
+image=https://img.scryfall.com/cards/normal/front/0/2/02bed34d-67d9-4ae9-b351-dc9a89daeabf.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={U}{U}
+effect=Surveil 2, then choose an instant or sorcery card in your graveyard. You may cast that card this turn. If that card would be put into your graveyard this turn, exile it instead.(To surveil 2, look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+timing=removal
+oracle=Surveil 2, then choose an instant or sorcery card in your graveyard. You may cast that card this turn. If that card would be put into your graveyard this turn, exile it instead.(To surveil 2, look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)

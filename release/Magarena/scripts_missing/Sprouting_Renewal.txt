@@ -1,0 +1,10 @@
+name=Sprouting Renewal
+image=https://img.scryfall.com/cards/normal/front/6/6/668232ab-5e58-49f3-804a-c938252ff177.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{G}
+ability=Convoke
+effect=Choose one — (1) Create a 2/2 green and white Elf Knight creature token with vigilance. (2) Destroy target artifact or enchantment.
+timing=main
+oracle=Convoke\nChoose one —\n• Create a 2/2 green and white Elf Knight creature token with vigilance.\n• Destroy target artifact or enchantment.

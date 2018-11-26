@@ -1,0 +1,12 @@
+name=Shield Mare
+image=https://magiccards.info/scans/en/m19/37.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Horse
+cost={1}{W}{W}
+pt=2/3
+ability=SN can't be blocked by red creatures.;\
+        When SN enters the battlefield or becomes the target of a spell or ability an opponent controls, you gain 3 life.
+timing=main
+oracle=Shield Mare can't be blocked by red creatures.\nWhen Shield Mare enters the battlefield or becomes the target of a spell or ability an opponent controls, you gain 3 life.

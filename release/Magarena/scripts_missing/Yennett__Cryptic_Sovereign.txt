@@ -1,0 +1,12 @@
+name=Yennett, Cryptic Sovereign
+image=https://img.scryfall.com/cards/normal/en/c18/51.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Sphinx
+cost={2}{W}{U}{B}
+pt=3/5
+ability=Flying, vigilance, menace;\
+        Whenever SN attacks, reveal the top card of your library. If that card's converted mana cost is odd, you may cast it without paying its mana cost. Otherwise, draw a card.
+timing=main
+oracle=Flying, vigilance, menace\nWhenever Yennett, Cryptic Sovereign attacks, reveal the top card of your library. If that card's converted mana cost is odd, you may cast it without paying its mana cost. Otherwise, draw a card.

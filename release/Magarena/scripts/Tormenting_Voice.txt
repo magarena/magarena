@@ -1,11 +1,11 @@
 name=Tormenting Voice
-image=https://magiccards.info/scans/en/ima/150.jpg
-image_updated=2017-04-12
+image=https://magiccards.info/scans/en/m19/164.jpg
+image_updated=2018-08-07
 value=3.500
 rarity=C
 type=Sorcery
 cost={1}{R}
-ability=As an additional cost to cast SN, discard a card.
+ability=As an additional cost to cast this spell, discard a card.
 effect=Draw two cards.
 timing=main
-oracle=As an additional cost to cast Tormenting Voice, discard a card.\nDraw two cards.
+oracle=As an additional cost to cast this spell, discard a card.\nDraw two cards.

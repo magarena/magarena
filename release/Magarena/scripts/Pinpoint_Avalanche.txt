@@ -1,0 +1,9 @@
+name=Pinpoint Avalanche
+image=https://magiccards.info/scans/en/on/221.jpg
+value=2.121
+rarity=C
+type=Instant
+cost={3}{R}{R}
+timing=removal
+oracle=Pinpoint Avalanche deals 4 damage to target creature. The damage can't be prevented.
+requires_groovy_code

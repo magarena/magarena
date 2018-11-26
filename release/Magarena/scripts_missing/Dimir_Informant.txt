@@ -1,0 +1,11 @@
+name=Dimir Informant
+image=https://img.scryfall.com/cards/normal/front/0/2/0230afeb-5ce8-436e-9afc-73cdd7baf424.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={2}{U}
+pt=1/4
+ability=When SN enters the battlefield, surveil 2.
+timing=main
+oracle=When Dimir Informant enters the battlefield, surveil 2.

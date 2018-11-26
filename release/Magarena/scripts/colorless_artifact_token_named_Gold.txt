@@ -1,6 +1,6 @@
 name=colorless artifact token named Gold
 token=Gold
-image=https://magiccards.info/extras/token/born-of-the-gods/gold.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tc17/10.jpg?1523997640
 value=1
 color=
 type=Artifact

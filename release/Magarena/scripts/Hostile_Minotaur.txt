@@ -1,0 +1,11 @@
+name=Hostile Minotaur
+image=https://magiccards.info/scans/en/m19/147.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Minotaur
+cost={3}{R}
+pt=3/3
+ability=Haste
+timing=fmain
+oracle=Haste

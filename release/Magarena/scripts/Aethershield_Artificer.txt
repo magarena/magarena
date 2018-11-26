@@ -1,0 +1,11 @@
+name=Aethershield Artificer
+image=https://magiccards.info/scans/en/m19/2.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf,Artificer
+cost={3}{W}
+pt=3/3
+ability=At the beginning of combat on your turn, target artifact creature you control gets +2/+2 and gains indestructible until end of turn.
+timing=main
+oracle=At the beginning of combat on your turn, target artifact creature you control gets +2/+2 and gains indestructible until end of turn.

@@ -1,0 +1,12 @@
+name=Swathcutter Giant
+image=https://img.scryfall.com/cards/normal/front/7/0/700b38c5-3fd2-4566-8d27-9a09d5ab02b2.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Giant,Soldier
+cost={4}{R}{W}
+pt=5/5
+ability=Vigilance;\
+        Whenever SN attacks, it deals 1 damage to each creature defending player controls.
+timing=main
+oracle=Vigilance\nWhenever Swathcutter Giant attacks, it deals 1 damage to each creature defending player controls.

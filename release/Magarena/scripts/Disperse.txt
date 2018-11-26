@@ -1,6 +1,6 @@
 name=Disperse
-image=https://magiccards.info/scans/en/ori/54.jpg
-image_updated=2015-11-05
+image=https://magiccards.info/scans/en/m19/50.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=C
 type=Instant

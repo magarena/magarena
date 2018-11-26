@@ -1,0 +1,9 @@
+name=Precision Bolt
+image=https://img.scryfall.com/cards/normal/front/a/5/a59b4e5b-e9e0-4507-b9e7-8fba7e3a54f9.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{R}
+effect=SN deals 3 damage to any target.
+timing=main
+oracle=Precision Bolt deals 3 damage to any target.

@@ -1,0 +1,12 @@
+name=Skyscanner
+image=https://magiccards.info/scans/en/m19/245.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Thopter
+cost={3}
+pt=1/1
+ability=Flying;\
+        When SN enters the battlefield, draw a card.
+timing=main
+oracle=Flying\nWhen Skyscanner enters the battlefield, draw a card.

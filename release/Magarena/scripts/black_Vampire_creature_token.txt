@@ -1,6 +1,6 @@
 name=black Vampire creature token
 token=Vampire
-image=https://magiccards.info/extras/token/zendikar/vampire.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tzen/6.jpg?1517813031
 value=1
 type=Creature
 subtype=Vampire

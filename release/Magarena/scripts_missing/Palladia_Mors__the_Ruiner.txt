@@ -1,0 +1,12 @@
+name=Palladia-Mors, the Ruiner
+image=https://magiccards.info/scans/en/m19/219.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Dragon
+cost={3}{R}{G}{W}
+pt=6/6
+ability=Flying, vigilance, trample;\
+        SN has hexproof if it hasn't dealt damage yet.
+timing=main
+oracle=Flying, vigilance, trample\nPalladia-Mors, the Ruiner has hexproof if it hasn't dealt damage yet.

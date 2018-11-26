@@ -11,7 +11,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         event.processTargetCard(game, {
-            game.doAction(new ReturnCardAction(
+            game.doAction(new PutOntoBattlefieldAction(
                 MagicLocationType.OwnersHand,
                 it,
                 event.getPlayer(),

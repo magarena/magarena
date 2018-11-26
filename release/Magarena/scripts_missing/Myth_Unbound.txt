@@ -1,0 +1,10 @@
+name=Myth Unbound
+image=https://img.scryfall.com/cards/normal/en/c18/32.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{G}
+ability=Your commander costs {1} less to cast for each time it's been cast from the command zone this game.;\
+        Whenever your commander is put into the command zone from anywhere, draw a card.
+timing=enchantment
+oracle=Your commander costs {1} less to cast for each time it's been cast from the command zone this game.\nWhenever your commander is put into the command zone from anywhere, draw a card.

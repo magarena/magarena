@@ -1,0 +1,14 @@
+name=Tajic, Legion's Edge
+image=https://img.scryfall.com/cards/normal/front/5/e/5e669a01-84d3-4fcc-8396-9e987bd89b4f.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={1}{R}{W}
+pt=3/2
+ability=Haste;\
+        Mentor;\
+        Prevent all noncombat damage that would be dealt to other creatures you control.;\
+        {R}{W}: SN gains first strike until end of turn.
+timing=fmain
+oracle=Haste\nMentor\nPrevent all noncombat damage that would be dealt to other creatures you control.\n{R}{W}: Tajic, Legion's Edge gains first strike until end of turn.

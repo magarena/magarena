@@ -1,5 +1,6 @@
 name=Gilded Lotus
-image=https://magiccards.info/scans/en/m13/206.jpg
+image=https://magiccards.info/scans/en/dom/215.jpg
+image_updated=2018-08-07
 value=4.541
 rarity=R
 type=Artifact

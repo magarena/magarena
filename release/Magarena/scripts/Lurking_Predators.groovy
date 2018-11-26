@@ -27,7 +27,7 @@ def action = {
             for (final MagicCard card : cards) {
                 game.doAction(new RevealAction(card));
                 if (card.hasType(MagicType.Creature) == true) {
-                game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, card, event.getPlayer()));
+                game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary, card, event.getPlayer()));
                } else {
                     game.addEvent(new MagicEvent(
                         event.getSource(),

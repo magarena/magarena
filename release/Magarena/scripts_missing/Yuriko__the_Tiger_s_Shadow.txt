@@ -1,0 +1,12 @@
+name=Yuriko, the Tiger's Shadow
+image=https://img.scryfall.com/cards/normal/en/c18/52.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Ninja
+cost={1}{U}{B}
+pt=1/3
+ability=Commander ninjutsu {U}{B};\
+        Whenever a Ninja you control deals combat damage to a player, reveal the top card of your library and put that card into your hand. Each opponent loses life equal to that card's converted mana cost.
+timing=main
+oracle=Commander ninjutsu {U}{B}\nWhenever a Ninja you control deals combat damage to a player, reveal the top card of your library and put that card into your hand. Each opponent loses life equal to that card's converted mana cost.

@@ -1,0 +1,9 @@
+name=Hypothesizzle
+image=https://img.scryfall.com/cards/normal/front/d/5/d5690329-feb8-49c0-8f59-ee13782e8d3b.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{U}{R}
+effect=Draw two cards. Then you may discard a nonland card. When you do, SN deals 4 damage to target creature.
+timing=removal
+oracle=Draw two cards. Then you may discard a nonland card. When you do, Hypothesizzle deals 4 damage to target creature.

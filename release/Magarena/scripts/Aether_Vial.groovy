@@ -33,7 +33,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,it,event.getPlayer()));
+                game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersHand,it,event.getPlayer()));
             });
         }
     }

@@ -1,0 +1,10 @@
+name=Reality Scramble
+image=https://img.scryfall.com/cards/normal/en/c18/25.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{R}{R}
+ability=Retrace
+effect=Put target permanent you own on the bottom of your library. Reveal cards from the top of your library until you reveal a card that shares a card type with that permanent. Put that card onto the battlefield and the rest on the bottom of your library in a random order.
+timing=main
+oracle=Put target permanent you own on the bottom of your library. Reveal cards from the top of your library until you reveal a card that shares a card type with that permanent. Put that card onto the battlefield and the rest on the bottom of your library in a random order.\nRetrace

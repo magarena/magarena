@@ -1,0 +1,11 @@
+name=Dryad Greenseeker
+image=https://magiccards.info/scans/en/m19/178.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dryad
+cost={1}{G}
+pt=1/3
+ability={T}: Look at the top card of your library. If it's a land card, you may reveal it and put it into your hand.
+timing=main
+oracle={T}: Look at the top card of your library. If it's a land card, you may reveal it and put it into your hand.

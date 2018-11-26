@@ -1,0 +1,12 @@
+name=Corpse Augur
+image=https://magiccards.info/scans/en/c17/106.jpg
+image_updated=2017-10-03
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Wizard
+cost={3}{B}
+pt=4/2
+timing=main
+requires_groovy_code
+oracle=When Corpse Augur dies, you draw X cards and you lose X life, where X is the number of creature cards in target player's graveyard.

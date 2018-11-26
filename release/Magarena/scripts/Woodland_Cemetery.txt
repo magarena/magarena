@@ -1,5 +1,6 @@
 name=Woodland Cemetery
-image=https://magiccards.info/scans/en/isd/249.jpg
+image=https://magiccards.info/scans/en/dom/248.jpg
+image_updated=2018-08-07
 value=3.888
 rarity=R
 type=Land

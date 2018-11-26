@@ -18,7 +18,7 @@ def trigger = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ReturnCardAction(
+            game.doAction(new PutOntoBattlefieldAction(
                 MagicLocationType.Exile,
                 event.getCard(),
                 event.getPlayer(),

@@ -4,8 +4,8 @@ value=3.018
 rarity=U
 type=Instant
 cost={1}{W}
-ability=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
-        Cast SN with AI only if you control a creature.
+ability=Cast SN with AI only if you control a creature.;\
+        Cast this spell only during the declare attackers step and only if you've been attacked this step.
 effect=Creatures you control get +2/+2 until end of turn.
 timing=attack
-oracle=Cast Warrior's Stand only during the declare attackers step and only if you've been attacked this step.\nCreatures you control get +2/+2 until end of turn.
+oracle=Cast this spell only during the declare attackers step and only if you've been attacked this step.\nCreatures you control get +2/+2 until end of turn.

@@ -1,8 +1,8 @@
 name=Rupture Spire
-image=https://magiccards.info/scans/en/c16/319.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/m19/255.jpg
+image_updated=2018-08-07
 value=3.538
-rarity=C
+rarity=U
 type=Land
 mana=b3g3r3u3w3
 ability=SN enters the battlefield tapped.;\

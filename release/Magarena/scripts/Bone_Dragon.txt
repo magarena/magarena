@@ -1,0 +1,12 @@
+name=Bone Dragon
+image=https://magiccards.info/scans/en/m19/88.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Dragon,Skeleton
+cost={3}{B}{B}
+pt=5/4
+ability=Flying;\
+        {3}{B}{B}, Exile seven other cards from your graveyard: Return SN from your graveyard to the battlefield tapped.
+timing=main
+oracle=Flying\n{3}{B}{B}, Exile seven other cards from your graveyard: Return Bone Dragon from your graveyard to the battlefield tapped.

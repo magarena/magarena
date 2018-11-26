@@ -1,7 +1,6 @@
 package magic.model.event;
 
 import java.util.Collections;
-import java.util.Arrays;
 import java.util.List;
 import java.util.LinkedList;
 
@@ -23,7 +22,7 @@ public class MagicMorphActivation extends MagicPermanentActivation {
     public static final MagicMorphActivation Manifest = new MagicMorphActivation(Collections.emptyList()) {
         @Override
         public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-            return Arrays.asList(
+            return Collections.singletonList(
                 new MagicPayManaCostEvent(
                     source,
                     source.getRealCardDefinition().getCost()

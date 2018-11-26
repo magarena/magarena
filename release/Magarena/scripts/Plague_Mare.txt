@@ -1,0 +1,12 @@
+name=Plague Mare
+image=https://magiccards.info/scans/en/m19/114.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Nightmare,Horse
+cost={1}{B}{B}
+pt=2/2
+ability=SN can't be blocked by white creatures.;\
+        When SN enters the battlefield, creatures your opponents control get -1/-1 until end of turn.
+timing=main
+oracle=Plague Mare can't be blocked by white creatures.\nWhen Plague Mare enters the battlefield, creatures your opponents control get -1/-1 until end of turn.

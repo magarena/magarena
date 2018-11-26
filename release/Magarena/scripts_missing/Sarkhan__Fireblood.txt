@@ -1,0 +1,13 @@
+name=Sarkhan, Fireblood
+image=https://magiccards.info/scans/en/m19/154.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Sarkhan
+cost={1}{R}{R}
+loyalty=3
+ability=+1: You may discard a card. If you do, draw a card.;\
+        +1: Add two mana in any combination of colors. Spend this mana only to cast Dragon spells.;\
+        −7: Create four 5/5 red Dragon creature tokens with flying.
+timing=main
+oracle=+1: You may discard a card. If you do, draw a card.\n+1: Add two mana in any combination of colors. Spend this mana only to cast Dragon spells.\n−7: Create four 5/5 red Dragon creature tokens with flying.

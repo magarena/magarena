@@ -118,11 +118,12 @@ class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
     }
 
     private String getVerboseColors(final String colorCodes) {
-        String colors = "";
-        for (char ch: colorCodes.toCharArray()) {
-            colors += MagicColor.getColor(ch).getDisplayName() + ", ";
+        StringBuilder colors = new StringBuilder();
+        for (char ch : colorCodes.toCharArray()) {
+            colors.append(MagicColor.getColor(ch).getDisplayName()).append(", ");
         }
-        return colors.trim().substring(0, colors.trim().length() - 1);
+        String trimmed = colors.toString().trim();
+        return trimmed.substring(0, trimmed.length() - 1);
     }
 
     private MouseAdapter getMouseAdapter() {

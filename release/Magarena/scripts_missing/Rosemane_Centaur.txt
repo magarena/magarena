@@ -1,0 +1,12 @@
+name=Rosemane Centaur
+image=https://img.scryfall.com/cards/normal/front/c/e/cee30585-f7b1-4ca4-8171-dc5a837f2b93.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Centaur,Soldier
+cost={3}{G}{W}
+pt=4/4
+ability=Convoke;\
+        Vigilance
+timing=main
+oracle=Convoke\nVigilance

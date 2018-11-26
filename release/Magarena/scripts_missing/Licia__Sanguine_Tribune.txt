@@ -7,9 +7,9 @@ type=Legendary,Creature
 subtype=Vampire,Soldier
 cost={5}{R}{W}{B}
 pt=4/4
-ability=SN costs {1} less to cast for each 1 life you gained this turn.;\
+ability=This spell costs {1} less to cast for each 1 life you gained this turn.;\
         First strike, lifelink;\
-        Pay 5 life: Put three +1/+1 counters on Licia. Activate this ability only during your turn and only once each turn.
+        Pay 5 life: Put three +1/+1 counters on SN. Activate this ability only during your turn and only once each turn.
 timing=main
-oracle=Licia, Sanguine Tribune costs {1} less to cast for each 1 life you gained this turn.\nFirst strike, lifelink\nPay 5 life: Put three +1/+1 counters on Licia. Activate this ability only during your turn and only once each turn.
+oracle=This spell costs {1} less to cast for each 1 life you gained this turn.\nFirst strike, lifelink\nPay 5 life: Put three +1/+1 counters on Licia, Sanguine Tribune. Activate this ability only during your turn and only once each turn.
 status=needs groovy

@@ -5,7 +5,7 @@ rarity=U
 type=Enchantment
 subtype=Saga
 cost={3}{B}
-ability=SN deals 2 damage to each opponent and you gain 2 life.;\
-        Create an X/X black Nightmare Horror creature token, where X is half your life total, rounded up. It deals X damage to you.
+ability=I, II — SN deals 2 damage to each opponent and you gain 2 life.;\
+        III — Create an X/X black Nightmare Horror creature token, where X is half your life total, rounded up. It deals X damage to you.
 timing=enchantment
 oracle=I, II — Chainer's Torment deals 2 damage to each opponent and you gain 2 life.\nIII — Create an X/X black Nightmare Horror creature token, where X is half your life total, rounded up. It deals X damage to you.

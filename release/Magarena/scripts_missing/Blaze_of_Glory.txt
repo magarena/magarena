@@ -1,11 +1,11 @@
 name=Blaze of Glory
 image=https://magiccards.info/scans/en/un/190.jpg
 value=3.422
-rarity=U
+rarity=R
 type=Instant
 cost={W}
-ability=Cast SN only during combat before blockers are declared.
+ability=Cast this spell only during combat before blockers are declared.
 effect=Target creature defending player controls can block any number of creatures this turn. It blocks each attacking creature this turn if able.
 timing=removal
-oracle=Cast Blaze of Glory only during combat before blockers are declared.\nTarget creature defending player controls can block any number of creatures this turn. It blocks each attacking creature this turn if able.
+oracle=Cast this spell only during combat before blockers are declared.\nTarget creature defending player controls can block any number of creatures this turn. It blocks each attacking creature this turn if able.
 status=not supported: blocking-restriction

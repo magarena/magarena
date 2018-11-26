@@ -1,0 +1,12 @@
+name=Psychic Symbiont
+image=https://magiccards.info/scans/en/m19/221.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Nightmare,Horror
+cost={4}{U}{B}
+pt=3/3
+ability=Flying;\
+        When SN enters the battlefield, target opponent discards a card and you draw a card.
+timing=main
+oracle=Flying\nWhen Psychic Symbiont enters the battlefield, target opponent discards a card and you draw a card.

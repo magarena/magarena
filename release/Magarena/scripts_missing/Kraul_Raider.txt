@@ -1,0 +1,11 @@
+name=Kraul Raider
+image=https://img.scryfall.com/cards/normal/front/1/3/133d9d56-d906-4252-9954-e34cc8564ced.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect,Warrior
+cost={2}{B}
+pt=2/3
+ability=Menace
+timing=main
+oracle=Menace

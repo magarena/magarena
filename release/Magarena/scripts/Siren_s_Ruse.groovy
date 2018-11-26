@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new RemoveFromPlayAction(it, MagicLocationType.Exile));
-                game.doAction(new ReturnCardAction(MagicLocationType.Exile, it.getCard(), it.getOwner()));
+                game.doAction(new PutOntoBattlefieldAction(MagicLocationType.Exile, it.getCard(), it.getOwner()));
                 if (it.hasSubType(MagicSubType.Pirate)) {
                     game.doAction(new DrawAction(event.getPlayer()));
                 }

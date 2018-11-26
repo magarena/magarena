@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={4}{G}
 pt=3/4
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Protection from blue
 timing=main
-oracle=Scragnoth can't be countered.\nProtection from blue
+oracle=This spell can't be countered.\nProtection from blue

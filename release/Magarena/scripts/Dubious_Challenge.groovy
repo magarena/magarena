@@ -5,10 +5,10 @@ def putOntoBattlefieldAction = {
     final MagicCardList rest = new MagicCardList(event.getRefCardList());
     event.processChosenCards(game, {
         rest.remove(it);
-        game.doAction(new ReturnCardAction(MagicLocationType.Exile, it, opponent));
+        game.doAction(new PutOntoBattlefieldAction(MagicLocationType.Exile, it, opponent));
     });
     rest.each {
-        game.doAction(new ReturnCardAction(MagicLocationType.Exile, it, controller));
+        game.doAction(new PutOntoBattlefieldAction(MagicLocationType.Exile, it, controller));
     }
 }
 

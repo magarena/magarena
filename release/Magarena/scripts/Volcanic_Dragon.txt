@@ -1,5 +1,6 @@
 name=Volcanic Dragon
-image=https://magiccards.info/scans/en/m12/158.jpg
+image=https://magiccards.info/scans/en/m19/167.jpg
+image_updated=2018-08-07
 value=3.656
 rarity=U
 type=Creature

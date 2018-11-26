@@ -1,0 +1,9 @@
+name=Patient Rebuilding
+image=https://magiccards.info/scans/en/m19/67.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{U}{U}
+ability=At the beginning of your upkeep, target opponent puts the top three cards of their library into their graveyard, then you draw a card for each land card put into that graveyard this way.
+timing=enchantment
+oracle=At the beginning of your upkeep, target opponent puts the top three cards of their library into their graveyard, then you draw a card for each land card put into that graveyard this way.

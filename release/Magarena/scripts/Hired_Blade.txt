@@ -1,0 +1,11 @@
+name=Hired Blade
+image=https://magiccards.info/scans/en/m19/100.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Assassin
+cost={2}{B}
+pt=3/2
+ability=Flash
+timing=flash
+oracle=Flash

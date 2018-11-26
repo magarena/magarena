@@ -1,0 +1,11 @@
+name=Flower
+image=https://img.scryfall.com/cards/normal/front/f/e/feb4b39f-d309-49ba-b427-240b7fdc1099.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={G/W}
+split=Flourish
+effect=Search your library for a basic Forest or Plains card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=Search your library for a basic Forest or Plains card, reveal it, put it into your hand, then shuffle your library.
+status=not supported: split-card

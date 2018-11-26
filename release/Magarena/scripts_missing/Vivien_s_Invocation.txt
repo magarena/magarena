@@ -1,0 +1,9 @@
+name=Vivien's Invocation
+image=https://magiccards.info/scans/en/m19/209.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={5}{G}{G}
+effect=Look at the top seven cards of your library. You may put a creature card from among them onto the battlefield. Put the rest on the bottom of your library in a random order. When a creature is put onto the battlefield this way, it deals damage equal to its power to target creature an opponent controls.
+timing=main
+oracle=Look at the top seven cards of your library. You may put a creature card from among them onto the battlefield. Put the rest on the bottom of your library in a random order. When a creature is put onto the battlefield this way, it deals damage equal to its power to target creature an opponent controls.

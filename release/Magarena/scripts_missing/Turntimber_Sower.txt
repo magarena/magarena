@@ -1,0 +1,12 @@
+name=Turntimber Sower
+image=https://img.scryfall.com/cards/normal/en/c18/35.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elf,Druid
+cost={2}{G}
+pt=3/3
+ability=Whenever one or more land cards are put into your graveyard from anywhere, create a 0/1 green Plant creature token.;\
+        {G}, Sacrifice three creatures: Return target land card from your graveyard to your hand.
+timing=main
+oracle=Whenever one or more land cards are put into your graveyard from anywhere, create a 0/1 green Plant creature token.\n{G}, Sacrifice three creatures: Return target land card from your graveyard to your hand.

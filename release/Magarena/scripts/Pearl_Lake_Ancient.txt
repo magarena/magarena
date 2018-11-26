@@ -7,8 +7,8 @@ subtype=Leviathan
 cost={5}{U}{U}
 pt=6/7
 ability=Flash;\
-        SN can't be countered.;\
+        This spell can't be countered.;\
         Prowess;\
         Return three lands you control to their owner's hand: Return SN to its owner's hand.
 timing=flash
-oracle=Flash\nPearl Lake Ancient can't be countered.\nProwess\nReturn three lands you control to their owner's hand: Return Pearl Lake Ancient to its owner's hand.
+oracle=Flash\nThis spell can't be countered.\nProwess\nReturn three lands you control to their owner's hand: Return Pearl Lake Ancient to its owner's hand.

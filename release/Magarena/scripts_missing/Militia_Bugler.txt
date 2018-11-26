@@ -1,0 +1,12 @@
+name=Militia Bugler
+image=https://magiccards.info/scans/en/m19/29.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=2/3
+ability=Vigilance;\
+        When SN enters the battlefield, look at the top four cards of your library. You may reveal a creature card with power 2 or less from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+timing=main
+oracle=Vigilance\nWhen Militia Bugler enters the battlefield, look at the top four cards of your library. You may reveal a creature card with power 2 or less from among them and put it into your hand. Put the rest on the bottom of your library in a random order.

@@ -1,0 +1,9 @@
+name=Deafening Clarion
+image=https://img.scryfall.com/cards/normal/front/1/e/1e115a81-001d-4e17-98af-6a63f2b0967f.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{R}{W}
+effect=Choose one or both — (1) SN deals 3 damage to each creature. (2) Creatures you control gain lifelink until end of turn.
+timing=main
+oracle=Choose one or both —\n• Deafening Clarion deals 3 damage to each creature.\n• Creatures you control gain lifelink until end of turn.

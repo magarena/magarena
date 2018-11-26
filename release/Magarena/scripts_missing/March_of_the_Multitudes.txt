@@ -1,0 +1,10 @@
+name=March of the Multitudes
+image=https://img.scryfall.com/cards/normal/front/2/c/2cc2b646-0181-4f0a-a141-00ca56069a06.jpg
+value=2.500
+rarity=M
+type=Instant
+cost={X}{G}{W}{W}
+ability=Convoke
+effect=Create X 1/1 white Soldier creature tokens with lifelink.
+timing=removal
+oracle=Convoke\nCreate X 1/1 white Soldier creature tokens with lifelink.

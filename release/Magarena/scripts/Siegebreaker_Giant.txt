@@ -1,0 +1,12 @@
+name=Siegebreaker Giant
+image=https://magiccards.info/scans/en/m19/157.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Giant,Warrior
+cost={3}{R}{R}
+pt=6/3
+ability=Trample;\
+        {3}{R}: Target creature can't block this turn.
+timing=main
+oracle=Trample\n{3}{R}: Target creature can't block this turn.

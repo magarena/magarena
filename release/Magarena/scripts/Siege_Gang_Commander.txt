@@ -1,5 +1,6 @@
 name=Siege-Gang Commander
-image=https://magiccards.info/scans/en/ema/147.jpg
+image=https://magiccards.info/scans/en/dom/143.jpg
+image_updated=2018-08-07
 value=4.565
 rarity=R
 type=Creature

@@ -1,0 +1,12 @@
+name=Hatchery Spider
+image=https://img.scryfall.com/cards/normal/front/0/b/0b841904-202c-4b42-869a-e345112ab1c8.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spider
+cost={5}{G}{G}
+pt=5/7
+ability=Reach;\
+        When you cast this spell, reveal the top X cards of your library, where X is the number of creature cards in your graveyard. You may put a green permanent card with converted mana cost X or less from among them onto the battlefield. Put the rest on the bottom of your library in a random order.
+timing=main
+oracle=Reach\nUndergrowth — When you cast this spell, reveal the top X cards of your library, where X is the number of creature cards in your graveyard. You may put a green permanent card with converted mana cost X or less from among them onto the battlefield. Put the rest on the bottom of your library in a random order.

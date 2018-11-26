@@ -1,0 +1,11 @@
+name=Rustwing Falcon
+image=https://magiccards.info/scans/en/m19/36.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={W}
+pt=1/2
+ability=Flying
+timing=main
+oracle=Flying

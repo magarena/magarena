@@ -1,0 +1,12 @@
+name=Parhelion Patrol
+image=https://img.scryfall.com/cards/normal/front/e/e/eef126f2-7e72-4338-8021-3ad95e4ab982.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={3}{W}
+pt=2/3
+ability=Flying, vigilance;\
+        Mentor
+timing=main
+oracle=Flying, vigilance\nMentor

@@ -1,0 +1,9 @@
+name=Endless Atlas
+image=https://img.scryfall.com/cards/normal/en/c18/55.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+ability={2}, {T}: Draw a card. Activate this ability only if you control three or more lands with the same name.
+timing=artifact
+oracle={2}, {T}: Draw a card. Activate this ability only if you control three or more lands with the same name.

@@ -1,0 +1,12 @@
+name=Thief of Sanity
+image=https://img.scryfall.com/cards/normal/front/3/0/307543ca-8e17-433f-9758-4c77da6c0870.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Specter
+cost={1}{U}{B}
+pt=2/2
+ability=Flying;\
+        Whenever SN deals combat damage to a player, look at the top three cards of that player's library, exile one of them face down, then put the rest into their graveyard. You may look at and cast that card for as long as it remains exiled, and you may spend mana as though it were mana of any type to cast that spell.
+timing=main
+oracle=Flying\nWhenever Thief of Sanity deals combat damage to a player, look at the top three cards of that player's library, exile one of them face down, then put the rest into their graveyard. You may look at and cast that card for as long as it remains exiled, and you may spend mana as though it were mana of any type to cast that spell.

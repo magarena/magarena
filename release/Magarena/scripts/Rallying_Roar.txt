@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={2}{W}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +1/+1 until end of turn.~Untap creatures you control.
 timing=pump
 oracle=Creatures you control get +1/+1 until end of turn. Untap them.

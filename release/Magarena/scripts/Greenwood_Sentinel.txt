@@ -1,0 +1,11 @@
+name=Greenwood Sentinel
+image=https://magiccards.info/scans/en/m19/187.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={1}{G}
+pt=2/2
+ability=Vigilance
+timing=main
+oracle=Vigilance

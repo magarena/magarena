@@ -1,0 +1,10 @@
+name=Blood Divination
+image=https://magiccards.info/scans/en/m19/86.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{B}
+ability=As an additional cost to cast SN, sacrifice a creature.
+effect=Draw three cards.
+timing=main
+oracle=As an additional cost to cast this spell, sacrifice a creature.\nDraw three cards.

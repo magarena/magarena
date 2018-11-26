@@ -1,0 +1,11 @@
+name=Dwarven Priest
+image=https://magiccards.info/scans/en/m19/11.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dwarf,Cleric
+cost={3}{W}
+pt=2/4
+ability=When SN enters the battlefield, you gain 1 life for each creature you control.
+timing=main
+oracle=When Dwarven Priest enters the battlefield, you gain 1 life for each creature you control.

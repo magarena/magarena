@@ -1,0 +1,9 @@
+name=Sworn Companions
+image=https://img.scryfall.com/cards/normal/front/2/c/2ccfa5c1-69f9-4351-aba3-883fe92c9b98.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{W}
+effect=Create two 1/1 white Soldier creature tokens with lifelink.
+timing=main
+oracle=Create two 1/1 white Soldier creature tokens with lifelink.

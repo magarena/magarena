@@ -1,0 +1,11 @@
+name=Whispering Snitch
+image=https://img.scryfall.com/cards/normal/front/f/a/fa4ca97e-b402-4a73-9c70-79ec4565a39c.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Rogue
+cost={1}{B}
+pt=1/3
+ability=Whenever you surveil for the first time each turn, SN deals 1 damage to each opponent and you gain 1 life.
+timing=main
+oracle=Whenever you surveil for the first time each turn, Whispering Snitch deals 1 damage to each opponent and you gain 1 life.

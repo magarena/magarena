@@ -1,0 +1,9 @@
+name=Mephitic Vapors
+image=https://img.scryfall.com/cards/normal/front/6/7/675640ba-37e7-4231-8524-87e8b87ea46f.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=All creatures get -1/-1 until end of turn.~Surveil 2.
+timing=main
+oracle=All creatures get -1/-1 until end of turn.\nSurveil 2.

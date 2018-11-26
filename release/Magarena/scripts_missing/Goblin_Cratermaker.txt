@@ -1,0 +1,13 @@
+name=Goblin Cratermaker
+image=https://img.scryfall.com/cards/normal/front/8/6/86ecaedc-08f1-4de7-aae8-056df57940e0.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Goblin,Warrior
+cost={1}{R}
+pt=2/2
+ability={1}, Sacrifice SN: Choose one — \
+        (1) SN deals 2 damage to target creature. \
+        (2) Destroy target colorless nonland permanent.
+timing=main
+oracle={1}, Sacrifice Goblin Cratermaker: Choose one —\n• Goblin Cratermaker deals 2 damage to target creature.\n• Destroy target colorless nonland permanent.

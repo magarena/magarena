@@ -2,7 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class MagicSacrificeManaActivation extends MagicManaActivation {
@@ -13,6 +13,6 @@ public class MagicSacrificeManaActivation extends MagicManaActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent perm) {
-        return Arrays.asList(new MagicSacrificeEvent(perm));
+        return Collections.singletonList(new MagicSacrificeEvent(perm));
     }
 }

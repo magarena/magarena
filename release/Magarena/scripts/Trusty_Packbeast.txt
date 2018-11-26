@@ -1,0 +1,11 @@
+name=Trusty Packbeast
+image=https://magiccards.info/scans/en/m19/41.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={2}{W}
+pt=2/3
+ability=When SN enters the battlefield, return target artifact card from your graveyard to your hand.
+timing=main
+oracle=When Trusty Packbeast enters the battlefield, return target artifact card from your graveyard to your hand.

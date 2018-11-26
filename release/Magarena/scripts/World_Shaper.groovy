@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             card(MagicType.Land).from(MagicTargetType.Graveyard).filter(event.getPlayer()) each {
-                game.doAction(new ReturnCardAction(
+                game.doAction(new PutOntoBattlefieldAction(
                     MagicLocationType.Graveyard,
                     it,
                     event.getPlayer(),

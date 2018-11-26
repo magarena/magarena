@@ -1,0 +1,12 @@
+name=Swarm Guildmage
+image=https://img.scryfall.com/cards/normal/front/7/5/7599adc7-72b2-4079-ac0a-1a821f9de925.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={B}{G}
+pt=2/2
+ability={4}{B}, {T}: Creatures you control get +1/+0 and gain menace until end of turn.;\
+        {1}{G}, {T}: You gain 2 life.
+timing=main
+oracle={4}{B}, {T}: Creatures you control get +1/+0 and gain menace until end of turn.\n{1}{G}, {T}: You gain 2 life.

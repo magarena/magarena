@@ -4,8 +4,8 @@ value=1.889
 rarity=R
 type=Enchantment
 cost={G}{G}
-ability=Cast SN only if you control a snow land.;\
+ability=Cast this spell only if you control a snow land.;\
         Cumulative upkeep {2};\
         Creatures with flying don't untap during their controllers' untap steps.
 timing=enchantment
-oracle=Cast Blizzard only if you control a snow land.\nCumulative upkeep {2}\nCreatures with flying don't untap during their controllers' untap steps.
+oracle=Cast this spell only if you control a snow land.\nCumulative upkeep {2}\nCreatures with flying don't untap during their controllers' untap steps.

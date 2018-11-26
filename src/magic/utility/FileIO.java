@@ -1,7 +1,6 @@
 package magic.utility;
 
 import java.io.BufferedReader;
-import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -26,7 +25,7 @@ public class FileIO {
 
     private static String toStr(final BufferedReader input) throws IOException {
         final StringBuilder contents = new StringBuilder();
-        try {
+        try (final BufferedReader br = input) {
             String line = null; //not declared within while loop
             /*
              * readLine is a bit quirky :
@@ -34,12 +33,10 @@ public class FileIO {
              * it returns null only for the END of the stream.
              * it returns an empty String if two newlines appear in a row.
              */
-            while (input != null && (line = input.readLine()) != null) {
+            while (br != null && (line = br.readLine()) != null) {
                 contents.append(line);
                 contents.append(System.getProperty("line.separator"));
             }
-        } finally {
-            close(input);
         }
         return contents.toString();
     }
@@ -68,23 +65,17 @@ public class FileIO {
 
     public static Properties toProp(final InputStream ins) {
         final Properties properties = new SortedProperties();
-        try {
-            properties.load(new BufferedReader(new InputStreamReader(ins, UTF8)));
+        try (final InputStream is = ins) {
+            properties.load(new BufferedReader(new InputStreamReader(is, UTF8)));
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load from input stream, " + ex.getMessage());
-        } finally {
-            close(ins);
         }
         return properties;
     }
 
     public static void toFile(final File aFile, final String aContents, final boolean append) throws IOException {
-        Writer output = null;
-        try {
-            output = Files.newBufferedWriter(aFile.toPath(), UTF_8, append ? new StandardOpenOption[] {CREATE, APPEND} : new StandardOpenOption[] {CREATE});
+        try (final Writer output = Files.newBufferedWriter(aFile.toPath(), UTF_8, append ? new StandardOpenOption[] {CREATE, APPEND} : new StandardOpenOption[] {CREATE})) {
             output.write(aContents);
-        } finally {
-            close(output);
         }
     }
 
@@ -94,22 +85,6 @@ public class FileIO {
     public static void toFile(File aFile, Properties properties, String comments) throws IOException {
         try (PrintWriter writer = new PrintWriter(aFile, "UTF-8")) {
             properties.store(writer, comments);
-        }    
-    }
-
-    static void close(final Closeable resource) {
-        if (resource == null) {
-            return;
-        }
-        boolean closed = false;
-        while (!closed) {
-            try {
-                resource.close();
-                closed = true;
-            } catch (final Exception ex) {
-                System.err.println(ex.getMessage());
-                ex.printStackTrace();
-            }
         }
     }
 
@@ -117,33 +92,16 @@ public class FileIO {
         if (!destFile.exists()) {
             destFile.createNewFile();
         }
-        FileInputStream fIn = null;
-        FileOutputStream fOut = null;
-        FileChannel source = null;
-        FileChannel destination = null;
-        try {
-            fIn = new FileInputStream(sourceFile);
-            source = fIn.getChannel();
-            fOut = new FileOutputStream(destFile);
-            destination = fOut.getChannel();
+        try (final FileInputStream fIn = new FileInputStream(sourceFile);
+             final FileOutputStream fOut = new FileOutputStream(destFile)) {
+            final FileChannel source = fIn.getChannel();
+            final FileChannel destination = fOut.getChannel();
             long transfered = 0;
             final long bytes = source.size();
             while (transfered < bytes) {
                 transfered += destination.transferFrom(source, 0, source.size());
                 destination.position(transfered);
             }
-        } finally {
-            if (source != null) {
-                close(source);
-            } else if (fIn != null) {
-                close(fIn);
-            }
-            if (destination != null) {
-                close(destination);
-            } else if (fOut != null) {
-                close(fOut);
-            }
         }
     }
-
 }

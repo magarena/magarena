@@ -1,6 +1,6 @@
 name=Reliquary Tower
-image=https://magiccards.info/scans/en/c16/316.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/m19/254.jpg
+image_updated=2018-08-07
 value=3.475
 rarity=U
 type=Land

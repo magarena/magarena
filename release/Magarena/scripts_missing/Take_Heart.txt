@@ -1,0 +1,9 @@
+name=Take Heart
+image=https://img.scryfall.com/cards/normal/front/b/2/b26f10d5-b826-45b0-abed-80d86e1335c9.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+effect=Target creature gets +2/+2 until end of turn. You gain 1 life for each attacking creature you control.
+timing=removal
+oracle=Target creature gets +2/+2 until end of turn. You gain 1 life for each attacking creature you control.

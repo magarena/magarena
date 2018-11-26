@@ -1,0 +1,12 @@
+name=Sigiled Sword of Valeron
+image=https://magiccards.info/scans/en/m19/244.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Equipped creature gets +2/+0, has vigilance, and is a Knight in addition to its other types.;\
+        Whenever equipped creature attacks, create a 2/2 white Knight creature token with vigilance that's attacking.;\
+        Equip {3}
+timing=equipment
+oracle=Equipped creature gets +2/+0, has vigilance, and is a Knight in addition to its other types.\nWhenever equipped creature attacks, create a 2/2 white Knight creature token with vigilance that's attacking.\nEquip {3}

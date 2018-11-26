@@ -63,7 +63,7 @@ def AN_EQUIPMENT_YOU_CONTROL = new MagicTargetChoice("an Equipment you control")
             if (event.isYes()) {
                 event.processTargetCard(game, {
                     final MagicLocationType from = it.isInHand() ? MagicLocationType.OwnersHand : MagicLocationType.Graveyard;
-                    game.doAction(new ReturnCardAction(from,it,event.getPlayer()));
+                    game.doAction(new PutOntoBattlefieldAction(from,it,event.getPlayer()));
                 });
             }
         }

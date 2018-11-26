@@ -1,6 +1,6 @@
 name=Lightning Strike
-image=https://magiccards.info/scans/en/xln/149.jpg
-image_updated=2017-10-30
+image=https://magiccards.info/scans/en/m19/152.jpg
+image_updated=2018-08-07
 value=3.750
 rarity=U
 type=Instant

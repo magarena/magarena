@@ -1,0 +1,10 @@
+name=Guild Summit
+image=https://img.scryfall.com/cards/normal/front/d/9/d952259f-9e0a-49af-9dfb-3cad1a1bb3a8.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=When SN enters the battlefield, you may tap any number of untapped Gates you control. Draw a card for each Gate tapped this way.;\
+        Whenever a Gate enters the battlefield under your control, draw a card.
+timing=enchantment
+oracle=When Guild Summit enters the battlefield, you may tap any number of untapped Gates you control. Draw a card for each Gate tapped this way.\nWhenever a Gate enters the battlefield under your control, draw a card.

@@ -1,0 +1,11 @@
+name=Phytotitan
+image=https://magiccards.info/scans/en/m15/191.jpg
+value=3.444
+rarity=R
+type=Creature
+subtype=Plant,Elemental
+cost={4}{G}{G}
+pt=7/2
+timing=main
+requires_groovy_code
+oracle=When Phytotitan dies, return it to the battlefield tapped under its owner's control at the beginning of his or her next upkeep.

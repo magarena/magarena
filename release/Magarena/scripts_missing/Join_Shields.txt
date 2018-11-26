@@ -1,0 +1,9 @@
+name=Join Shields
+image=https://img.scryfall.com/cards/normal/front/9/1/91898d8a-589d-43db-8dc4-0ec6a3bd6d49.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{G}{W}
+effect=Untap all creatures you control. They gain hexproof and indestructible until end of turn.
+timing=removal
+oracle=Untap all creatures you control. They gain hexproof and indestructible until end of turn.

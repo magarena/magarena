@@ -38,9 +38,8 @@ def choice = new MagicTargetChoice("a nonland permanent to sacrifice");
                     game.addEvent(discard);
                 } else {
                     game.doAction(new ChangeLifeAction(event.getPlayer(), -3));
-                }  
+                }
             }
         }
     }
 ]
-

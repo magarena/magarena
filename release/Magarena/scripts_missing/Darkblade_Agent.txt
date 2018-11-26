@@ -1,0 +1,11 @@
+name=Darkblade Agent
+image=https://img.scryfall.com/cards/normal/front/f/0/f0b610c5-61e5-43df-a87b-3eaaa915402b.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Assassin
+cost={1}{U}{B}
+pt=2/3
+ability=As long as you've surveilled this turn, SN has deathtouch and "Whenever this creature deals combat damage to a player, you draw a card."
+timing=main
+oracle=As long as you've surveilled this turn, Darkblade Agent has deathtouch and "Whenever this creature deals combat damage to a player, you draw a card."

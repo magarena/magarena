@@ -1,0 +1,11 @@
+name=Gearsmith Prodigy
+image=https://magiccards.info/scans/en/m19/57.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={U}
+pt=1/2
+ability=SN gets +1/+0 as long as you control an artifact.
+timing=main
+oracle=Gearsmith Prodigy gets +1/+0 as long as you control an artifact.

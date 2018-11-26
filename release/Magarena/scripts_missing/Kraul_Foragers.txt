@@ -1,0 +1,11 @@
+name=Kraul Foragers
+image=https://img.scryfall.com/cards/normal/front/b/5/b5ed4b08-8583-4ad4-b0ba-0463d367efc8.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect,Scout
+cost={4}{G}
+pt=4/4
+ability=Undergrowth — When SN enters the battlefield, you gain 1 life for each creature card in your graveyard.
+timing=main
+oracle=Undergrowth — When Kraul Foragers enters the battlefield, you gain 1 life for each creature card in your graveyard.

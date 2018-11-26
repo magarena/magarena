@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={6}{B}
 pt=6/6
-ability=Trample;\
-        You may sacrifice three black creatures rather than pay SN's mana cost.
+ability=You may sacrifice three black creatures rather than pay this spell's mana cost.;\
+        Trample
 timing=main
-oracle=Trample\nYou may sacrifice three black creatures rather than pay Delraich's mana cost.
+oracle=You may sacrifice three black creatures rather than pay this spell's mana cost.\nTrample

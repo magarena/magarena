@@ -1,0 +1,11 @@
+name=Epicure of Blood
+image=https://magiccards.info/scans/en/m19/95.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire
+cost={4}{B}
+pt=4/4
+ability=Whenever you gain life, each opponent loses 1 life.
+timing=main
+oracle=Whenever you gain life, each opponent loses 1 life.

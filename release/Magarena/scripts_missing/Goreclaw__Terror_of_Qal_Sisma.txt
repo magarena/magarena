@@ -1,0 +1,12 @@
+name=Goreclaw, Terror of Qal Sisma
+image=https://magiccards.info/scans/en/m19/186.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Bear
+cost={3}{G}
+pt=4/3
+ability=Creature spells you cast with power 4 or greater cost {2} less to cast.;\
+        Whenever SN attacks, each creature you control with power 4 or greater gets +1/+1 and gains trample until end of turn.
+timing=main
+oracle=Creature spells you cast with power 4 or greater cost {2} less to cast.\nWhenever Goreclaw, Terror of Qal Sisma attacks, each creature you control with power 4 or greater gets +1/+1 and gains trample until end of turn.

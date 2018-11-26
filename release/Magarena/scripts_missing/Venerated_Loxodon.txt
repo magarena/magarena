@@ -1,0 +1,12 @@
+name=Venerated Loxodon
+image=https://img.scryfall.com/cards/normal/front/9/3/93599fba-7c53-4621-85b5-6434be077bf6.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elephant,Cleric
+cost={4}{W}
+pt=4/4
+ability=Convoke;\
+        When SN enters the battlefield, put a +1/+1 counter on each creature that convoked it.
+timing=main
+oracle=Convoke\nWhen Venerated Loxodon enters the battlefield, put a +1/+1 counter on each creature that convoked it.

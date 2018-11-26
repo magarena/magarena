@@ -1,0 +1,10 @@
+name=Inescapable Blaze
+image=https://img.scryfall.com/cards/normal/front/4/6/46651efd-0906-4350-a1b8-52e3f8aff45d.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{R}{R}
+ability=This spell can't be countered.
+effect=SN deals 6 damage to any target.
+timing=removal
+oracle=This spell can't be countered.\nInescapable Blaze deals 6 damage to any target.

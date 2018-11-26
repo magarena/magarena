@@ -1,6 +1,6 @@
 name=9/9 colorless Golem artifact creature token
 token=Golem
-image=https://magiccards.info/extras/token/mirrodin-besieged/golem.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tmbs/3.jpg?1517813031
 value=4
 pt=9/9
 type=Artifact,Creature

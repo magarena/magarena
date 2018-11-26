@@ -17,16 +17,16 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER_OR_PLANESWALKER,
                 payedCost.getTarget(),
                 this,
-                "SN deals damage equal to RN's power to target player\$."
+                "SN deals damage equal to RN's power to target player or planeswalker\$."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game, {
+            event.processTarget(game, {
                 final MagicPermanent sacrificed=event.getRefPermanent();
                 game.doAction(new DealDamageAction(event.getSource(),it,sacrificed.getPower()));
             });

@@ -1,0 +1,9 @@
+name=Desecrated Tomb
+image=https://magiccards.info/scans/en/m19/230.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+ability=Whenever one or more creature cards leave your graveyard, create a 1/1 black Bat creature token with flying.
+timing=artifact
+oracle=Whenever one or more creature cards leave your graveyard, create a 1/1 black Bat creature token with flying.

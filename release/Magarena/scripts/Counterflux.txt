@@ -6,7 +6,7 @@ rarity=R
 type=Instant
 cost={U}{U}{R}
 timing=counter
-ability=SN can't be countered by spells or abilities.
+ability=This spell can't be countered.
 effect=Counter target spell you don't control.
 requires_groovy_code
-oracle=Counterflux can't be countered by spells or abilities.\nCounter target spell you don't control.\nOverload {1}{U}{U}{R}
+oracle=This spell can't be countered.\nCounter target spell you don't control.\nOverload {1}{U}{U}{R}

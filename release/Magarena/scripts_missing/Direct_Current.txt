@@ -1,0 +1,9 @@
+name=Direct Current
+image=https://img.scryfall.com/cards/normal/front/1/6/166b0d75-824c-4c04-833b-7f7c69569a18.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{R}{R}
+effect=SN deals 2 damage to any target.~Jump-start
+timing=main
+oracle=Direct Current deals 2 damage to any target.\nJump-start

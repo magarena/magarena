@@ -1,0 +1,9 @@
+name=Creeping Chill
+image=https://img.scryfall.com/cards/normal/front/f/5/f5456173-7a08-4b5c-8450-7123375f4a86.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{B}
+effect=SN deals 3 damage to each opponent and you gain 3 life.~When SN is put into your graveyard from your library, you may exile it. If you do, SN deals 3 damage to each opponent and you gain 3 life.
+timing=main
+oracle=Creeping Chill deals 3 damage to each opponent and you gain 3 life.\nWhen Creeping Chill is put into your graveyard from your library, you may exile it. If you do, Creeping Chill deals 3 damage to each opponent and you gain 3 life.

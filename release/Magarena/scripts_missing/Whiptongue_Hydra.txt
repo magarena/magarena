@@ -1,0 +1,12 @@
+name=Whiptongue Hydra
+image=https://img.scryfall.com/cards/normal/en/c18/36.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Lizard,Hydra
+cost={5}{G}
+pt=4/4
+ability=Reach;\
+        When SN enters the battlefield, destroy all creatures with flying. Put a +1/+1 counter on SN for each creature destroyed this way.
+timing=main
+oracle=Reach\nWhen Whiptongue Hydra enters the battlefield, destroy all creatures with flying. Put a +1/+1 counter on Whiptongue Hydra for each creature destroyed this way.

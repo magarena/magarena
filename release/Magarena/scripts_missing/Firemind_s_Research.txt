@@ -1,0 +1,11 @@
+name=Firemind's Research
+image=https://img.scryfall.com/cards/normal/front/8/7/87c63615-5e84-409d-bb85-47af89b13714.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={U}{R}
+ability=Whenever you cast an instant or sorcery spell, put a charge counter on SN.;\
+        {1}{U}, Remove two charge counters from SN: Draw a card.;\
+        {1}{R}, Remove five charge counters from SN: It deals 5 damage to any target.
+timing=enchantment
+oracle=Whenever you cast an instant or sorcery spell, put a charge counter on Firemind's Research.\n{1}{U}, Remove two charge counters from Firemind's Research: Draw a card.\n{1}{R}, Remove five charge counters from Firemind's Research: It deals 5 damage to any target.

@@ -1,0 +1,11 @@
+name=Hammer Dropper
+image=https://img.scryfall.com/cards/normal/front/9/e/9efac789-587b-45c1-b16e-616e9486b59b.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Giant,Soldier
+cost={2}{R}{W}
+pt=5/2
+ability=Mentor
+timing=main
+oracle=Mentor

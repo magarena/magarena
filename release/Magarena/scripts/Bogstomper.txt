@@ -1,0 +1,10 @@
+name=Bogstomper
+image=https://magiccards.info/scans/en/m19/87.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{B}{B}
+pt=6/5
+timing=main
+oracle=NONE

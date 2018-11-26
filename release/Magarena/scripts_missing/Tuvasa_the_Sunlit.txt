@@ -1,0 +1,12 @@
+name=Tuvasa the Sunlit
+image=https://img.scryfall.com/cards/normal/en/c18/47.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Merfolk,Shaman
+cost={G}{W}{U}
+pt=1/1
+ability=SN gets +1/+1 for each enchantment you control.;\
+        Whenever you cast your first enchantment spell each turn, draw a card.
+timing=main
+oracle=Tuvasa the Sunlit gets +1/+1 for each enchantment you control.\nWhenever you cast your first enchantment spell each turn, draw a card.

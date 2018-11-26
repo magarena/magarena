@@ -1,0 +1,11 @@
+name=Aerial Engineer
+image=https://magiccards.info/scans/en/m19/211.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={2}{W}{U}
+pt=2/4
+ability=As long as you control an artifact, SN gets +2/+0 and has flying.
+timing=main
+oracle=As long as you control an artifact, Aerial Engineer gets +2/+0 and has flying.

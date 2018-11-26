@@ -1,6 +1,6 @@
 name=Blanchwood Armor
-image=https://magiccards.info/scans/en/10e/253.jpg
-image_updated=2016-11-20
+image=https://magiccards.info/scans/en/m19/169.jpg
+image_updated=2018-08-07
 value=4.335
 rarity=U
 type=Enchantment

@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={6}{B}{B}{B}
 pt=9/9
-ability=You may pay 6 life and sacrifice three black creatures rather than pay SN's mana cost.;\
+ability=You may pay 6 life and sacrifice three black creatures rather than pay this spell's mana cost.;\
         Flying, trample
 timing=main
-oracle=You may pay 6 life and sacrifice three black creatures rather than pay Demon of Death's Gate's mana cost.\nFlying, trample
+oracle=You may pay 6 life and sacrifice three black creatures rather than pay this spell's mana cost.\nFlying, trample

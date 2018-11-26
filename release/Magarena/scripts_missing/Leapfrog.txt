@@ -1,0 +1,11 @@
+name=Leapfrog
+image=https://img.scryfall.com/cards/normal/front/2/e/2e415a03-f7f8-4fca-954a-ef21b4a2c60f.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Frog
+cost={2}{U}
+pt=3/1
+ability=SN has flying as long as you've cast an instant or sorcery spell this turn.
+timing=main
+oracle=Leapfrog has flying as long as you've cast an instant or sorcery spell this turn.

@@ -1,0 +1,10 @@
+name=Awaken the Sky Tyrant
+image=https://magiccards.info/scans/en/c15/24.jpg
+image_updated=2016-02-29
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{R}
+timing=enchantment
+oracle=When a source an opponent controls deals damage to you, sacrifice Awaken the Sky Tyrant. If you do, create a 5/5 red Dragon creature token with flying.
+requires_groovy_code

@@ -1,5 +1,6 @@
 name=Recollect
-image=https://magiccards.info/scans/en/10e/289.jpg
+image=https://magiccards.info/scans/en/m19/197.jpg
+image_updated=2018-08-07
 value=3.779
 rarity=U
 type=Sorcery

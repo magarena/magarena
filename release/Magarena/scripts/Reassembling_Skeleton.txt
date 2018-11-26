@@ -1,5 +1,6 @@
 name=Reassembling Skeleton
-image=https://magiccards.info/scans/en/mm2/92.jpg
+image=https://magiccards.info/scans/en/m19/116.jpg
+image_updated=2018-08-07
 value=3.576
 rarity=U
 type=Creature

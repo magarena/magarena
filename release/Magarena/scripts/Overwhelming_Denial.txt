@@ -6,7 +6,7 @@ rarity=R
 type=Instant
 cost={2}{U}{U}
 ability=Surge {U}{U};\
-        SN can't be countered by spells or abilities.
+        This spell can't be countered.
 effect=Counter target spell.
 timing=counter
-oracle=Surge {U}{U}\nOverwhelming Denial can't be countered by spells or abilities.\nCounter target spell.
+oracle=Surge {U}{U}\nThis spell can't be countered.\nCounter target spell.

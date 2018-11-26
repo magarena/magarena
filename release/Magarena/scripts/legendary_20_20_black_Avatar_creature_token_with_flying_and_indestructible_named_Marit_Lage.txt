@@ -1,6 +1,6 @@
 name=legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage
 token=Marit Lage
-image=https://magiccards.info/extras/token/coldsnap/marit-lage.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tcsp/1.jpg?1535423404
 value=1
 type=Legendary,Creature
 subtype=Avatar

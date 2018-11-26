@@ -45,10 +45,10 @@ public enum MagicSound {
         }
     };
 
-    private final URL soundUrl;
+    private final String soundFile;
 
     private MagicSound(final String aFilename) {
-        this.soundUrl = MagicResources.getSoundUrl(aFilename);
+        this.soundFile = aFilename;
     }
 
     private boolean isUISound() {
@@ -80,7 +80,7 @@ public enum MagicSound {
      */
     public void play(int volPercent) {
         if (volPercent > 0 && volPercent <= 100) {
-            executor.execute(() -> playSound(soundUrl, volPercent));
+            executor.execute(() -> playSound(soundFile, volPercent));
         }
     }
 
@@ -117,11 +117,11 @@ public enum MagicSound {
         clip.start();
     }
 
-    private static void playSound(URL url, int volPercent) {
-        try (final AudioInputStream ins = AudioSystem.getAudioInputStream(url)) {
+    private static void playSound(final String soundFile, final int volPercent) {
+        try (final AudioInputStream ins = AudioSystem.getAudioInputStream(MagicResources.getSoundStream(soundFile))) {
             playClip(ins, volPercent);
         } catch (Exception ex) {
-            System.err.println("WARNING. Unable to play clip " + url.toExternalForm() + ", " + ex.getMessage());
+            System.err.println("WARNING. Unable to play clip " + soundFile + ", " + ex.getMessage());
             // turn off all sound permanently.
             GeneralConfig.set(IntegerSetting.GAME_VOLUME, 0);
             GeneralConfig.set(IntegerSetting.UI_VOLUME, 0);

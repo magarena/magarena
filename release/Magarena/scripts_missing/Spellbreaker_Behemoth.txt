@@ -6,8 +6,8 @@ type=Creature
 subtype=Beast
 cost={1}{R}{G}{G}
 pt=5/5
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Creature spells you control with power 5 or greater can't be countered.
 timing=main
-oracle=Spellbreaker Behemoth can't be countered.\nCreature spells you control with power 5 or greater can't be countered.
+oracle=This spell can't be countered.\nCreature spells you control with power 5 or greater can't be countered.
 status=not supported: spell-modification

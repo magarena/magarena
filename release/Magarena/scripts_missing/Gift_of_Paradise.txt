@@ -1,7 +1,8 @@
 name=Gift of Paradise
-image=https://magiccards.info/scans/en/akh/167.jpg
+image=https://magiccards.info/scans/en/m19/184.jpg
+image_updated=2018-08-07
 value=2.500
-rarity=C
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{G}

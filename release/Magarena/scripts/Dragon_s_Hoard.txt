@@ -1,0 +1,11 @@
+name=Dragon's Hoard
+image=https://magiccards.info/scans/en/m19/232.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+ability=Whenever a Dragon enters the battlefield under your control, put a gold counter on SN.;\
+        {T}, Remove a gold counter from SN: Draw a card.;\
+        {T}: Add one mana of any color.
+timing=artifact
+oracle=Whenever a Dragon enters the battlefield under your control, put a gold counter on Dragon's Hoard.\n{T}, Remove a gold counter from Dragon's Hoard: Draw a card.\n{T}: Add one mana of any color.

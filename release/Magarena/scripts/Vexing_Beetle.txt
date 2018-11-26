@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={4}{G}
 pt=3/3
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         SN gets +3/+3 as long as no opponent controls a creature.
 timing=main
-oracle=Vexing Beetle can't be countered.\nVexing Beetle gets +3/+3 as long as no opponent controls a creature.
+oracle=This spell can't be countered.\nVexing Beetle gets +3/+3 as long as no opponent controls a creature.

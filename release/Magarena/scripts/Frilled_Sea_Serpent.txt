@@ -1,0 +1,11 @@
+name=Frilled Sea Serpent
+image=https://magiccards.info/scans/en/m19/56.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Serpent
+cost={4}{U}{U}
+pt=4/6
+ability={5}{U}{U}: SN can't be blocked this turn.
+timing=main
+oracle={5}{U}{U}: Frilled Sea Serpent can't be blocked this turn.

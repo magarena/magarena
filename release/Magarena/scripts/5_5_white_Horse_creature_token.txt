@@ -1,6 +1,6 @@
 name=5/5 white Horse creature token
 token=Horse
-image=https://magiccards.info/extras/token/hour-of-devastation/horse.jpg
+image=https://img.scryfall.com/cards/border_crop/en/thou/10.jpg?1517813031
 value=5
 pt=5/5
 color=w

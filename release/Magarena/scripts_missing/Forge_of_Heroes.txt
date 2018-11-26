@@ -1,0 +1,9 @@
+name=Forge of Heroes
+image=https://img.scryfall.com/cards/normal/en/c18/58.jpg
+value=2.500
+rarity=C
+type=Land
+ability={T}: Add {C}.;\
+        {T}: Choose target commander that entered the battlefield this turn. Put a +1/+1 counter on it if it's a creature and a loyalty counter on it if it's a planeswalker.
+timing=land
+oracle={T}: Add {C}.\n{T}: Choose target commander that entered the battlefield this turn. Put a +1/+1 counter on it if it's a creature and a loyalty counter on it if it's a planeswalker.

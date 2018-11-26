@@ -1,0 +1,9 @@
+name=Morbid Bloom
+image=https://magiccards.info/scans/en/arb/94.jpg
+value=2.894
+rarity=U
+type=Sorcery
+cost={4}{B}{G}
+timing=main
+requires_groovy_code
+oracle=Exile target creature card from a graveyard, then create X 1/1 green Saproling creature tokens, where X is the exiled card's toughness.

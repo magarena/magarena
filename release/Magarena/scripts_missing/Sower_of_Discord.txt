@@ -1,0 +1,13 @@
+name=Sower of Discord
+image=https://img.scryfall.com/cards/normal/en/c18/19.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Demon
+cost={4}{B}{B}
+pt=6/6
+ability=Flying;\
+        As SN enters the battlefield, choose two players.;\
+        Whenever damage is dealt to one of the chosen players, the other chosen player also loses that much life.
+timing=main
+oracle=Flying\nAs Sower of Discord enters the battlefield, choose two players.\nWhenever damage is dealt to one of the chosen players, the other chosen player also loses that much life.

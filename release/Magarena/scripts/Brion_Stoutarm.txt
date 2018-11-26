@@ -9,5 +9,5 @@ cost={2}{R}{W}
 pt=4/4
 ability=Lifelink
 timing=main
-oracle=Lifelink\n{R}, {T}, Sacrifice a creature other than Brion Stoutarm: Brion Stoutarm deals damage equal to the sacrificed creature's power to target player.
+oracle=Lifelink\n{R}, {T}, Sacrifice another creature: Brion Stoutarm deals damage equal to the sacrificed creature's power to target player or planeswalker.
 requires_groovy_code

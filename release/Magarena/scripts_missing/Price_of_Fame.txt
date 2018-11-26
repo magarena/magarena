@@ -1,0 +1,10 @@
+name=Price of Fame
+image=https://img.scryfall.com/cards/normal/front/6/1/61b52152-0f7c-4466-9e49-033477028f67.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{B}
+ability=This spell costs {2} less to cast if it targets a legendary creature.
+effect=Destroy target creature.~Surveil 2.
+timing=removal
+oracle=This spell costs {2} less to cast if it targets a legendary creature.\nDestroy target creature.\nSurveil 2.

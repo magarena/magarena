@@ -1,0 +1,9 @@
+name=Gird for Battle
+image=https://img.scryfall.com/cards/normal/front/f/9/f9f731df-eb40-44c8-a72d-f377c824584d.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={W}
+effect=Put a +1/+1 counter on each of up to two target creatures.
+timing=main
+oracle=Put a +1/+1 counter on each of up to two target creatures.

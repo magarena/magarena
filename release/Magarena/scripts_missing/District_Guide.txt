@@ -1,0 +1,11 @@
+name=District Guide
+image=https://img.scryfall.com/cards/normal/front/c/1/c150deec-3287-40ef-9b9c-c22bf5d70b02.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Scout
+cost={2}{G}
+pt=2/2
+ability=When SN enters the battlefield, you may search your library for a basic land card or Gate card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=When District Guide enters the battlefield, you may search your library for a basic land card or Gate card, reveal it, put it into your hand, then shuffle your library.

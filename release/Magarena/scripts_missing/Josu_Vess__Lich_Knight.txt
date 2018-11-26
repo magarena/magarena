@@ -11,3 +11,4 @@ ability=Kicker {5}{B};\
         When SN enters the battlefield, if it was kicked, create eight 2/2 black Zombie Knight creature tokens with menace.
 timing=main
 oracle=Kicker {5}{B}\nMenace\nWhen Josu Vess, Lich Knight enters the battlefield, if it was kicked, create eight 2/2 black Zombie Knight creature tokens with menace.
+status=not supported: blocking-restriction

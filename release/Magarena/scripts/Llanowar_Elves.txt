@@ -1,5 +1,6 @@
 name=Llanowar Elves
-image=https://magiccards.info/scans/en/ema/175.jpg
+image=https://magiccards.info/scans/en/m19/314.jpg
+image_updated=2018-08-07
 value=4.381
 rarity=C
 type=Creature

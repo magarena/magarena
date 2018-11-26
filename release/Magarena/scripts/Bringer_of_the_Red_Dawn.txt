@@ -6,8 +6,8 @@ type=Creature
 subtype=Bringer
 cost={7}{R}{R}
 pt=5/5
-ability=You may pay {W}{U}{B}{R}{G} rather than pay SN's mana cost.;\
+ability=You may pay {W}{U}{B}{R}{G} rather than pay this spell's mana cost.;\
         Trample;\
         At the beginning of your upkeep, you may untap target creature.~Gain control of *it* until end of turn.~*That creature* gains haste until end of turn.
 timing=main
-oracle=You may pay {W}{U}{B}{R}{G} rather than pay Bringer of the Red Dawn's mana cost.\nTrample\nAt the beginning of your upkeep, you may untap target creature and gain control of it until end of turn. That creature gains haste until end of turn.
+oracle=You may pay {W}{U}{B}{R}{G} rather than pay this spell's mana cost.\nTrample\nAt the beginning of your upkeep, you may untap target creature and gain control of it until end of turn. That creature gains haste until end of turn.

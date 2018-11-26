@@ -1,0 +1,12 @@
+name=Diamond Mare
+image=https://magiccards.info/scans/en/m19/231.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Horse
+cost={2}
+pt=1/3
+ability=As SN enters the battlefield, choose a color.;\
+        Whenever you cast a spell of the chosen color, you gain 1 life.
+timing=main
+oracle=As Diamond Mare enters the battlefield, choose a color.\nWhenever you cast a spell of the chosen color, you gain 1 life.

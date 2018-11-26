@@ -1,5 +1,6 @@
 name=Smelt
-image=https://magiccards.info/scans/en/m13/149.jpg
+image=https://magiccards.info/scans/en/m19/158.jpg
+image_updated=2018-08-07
 value=4.255
 removal=1
 rarity=C

@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Human,Samurai
 cost={2}{G}
 pt=2/1
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Bushido 2;\
         {2}: Regenerate target Samurai.
 timing=main
-oracle=Isao, Enlightened Bushi can't be countered.\nBushido 2\n{2}: Regenerate target Samurai.
+oracle=This spell can't be countered.\nBushido 2\n{2}: Regenerate target Samurai.

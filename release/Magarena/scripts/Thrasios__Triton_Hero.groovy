@@ -4,7 +4,7 @@ def action = {
     for (final MagicCard card : player.getLibrary().getCardsFromTop(1)) {
                 game.doAction(new RevealAction(card));
                 if (card.hasType(MagicType.Land)) {
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary,card,event.getPlayer(),MagicPlayMod.TAPPED));
+                    game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary,card,event.getPlayer(),MagicPlayMod.TAPPED));
                 } else {
                     game.doAction(new DrawAction(event.getPlayer()));
         }

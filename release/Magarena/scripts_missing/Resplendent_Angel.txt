@@ -1,0 +1,13 @@
+name=Resplendent Angel
+image=https://magiccards.info/scans/en/m19/34.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Angel
+cost={1}{W}{W}
+pt=3/3
+ability=Flying;\
+        At the beginning of each end step, if you gained 5 or more life this turn, create a 4/4 white Angel creature token with flying and vigilance.;\
+        {3}{W}{W}{W}: Until end of turn, SN gets +2/+2 and gains lifelink.
+timing=main
+oracle=Flying\nAt the beginning of each end step, if you gained 5 or more life this turn, create a 4/4 white Angel creature token with flying and vigilance.\n{3}{W}{W}{W}: Until end of turn, Resplendent Angel gets +2/+2 and gains lifelink.

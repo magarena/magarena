@@ -69,6 +69,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_PLAYER =
         MagicTargetChoice.Negative("target player");
 
+    public static final MagicTargetChoice NEG_TARGET_PLAYER_OR_PLANESWALKER =
+        MagicTargetChoice.Negative("target player or planeswalker");
+
     public static final MagicTargetChoice NEG_TARGET_SPELL_OR_PERMANENT =
         MagicTargetChoice.Negative("target spell or permanent");
 

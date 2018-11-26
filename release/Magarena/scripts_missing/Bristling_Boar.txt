@@ -1,0 +1,11 @@
+name=Bristling Boar
+image=https://magiccards.info/scans/en/m19/170.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Boar
+cost={3}{G}
+pt=4/3
+ability=SN can't be blocked by more than one creature.
+timing=main
+oracle=Bristling Boar can't be blocked by more than one creature.

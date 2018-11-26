@@ -1,10 +1,11 @@
 name=Gaea's Blessing
-image=https://magiccards.info/scans/en/ema/168.jpg
+image=https://magiccards.info/scans/en/dom/161.jpg
+image_updated=2018-08-07
 value=4.469
 rarity=U
 type=Sorcery
 cost={1}{G}
-effect=Target player shuffles up to three target cards from his or her graveyard into his or her library.~Draw a card.~When SN is put into your graveyard from your library, shuffle your graveyard into your library.
+effect=Target player shuffles up to three target cards from their graveyard into their library.~Draw a card.~When SN is put into your graveyard from your library, shuffle your graveyard into your library.
 timing=main
-oracle=Target player shuffles up to three target cards from his or her graveyard into his or her library.\nDraw a card.\nWhen Gaea's Blessing is put into your graveyard from your library, shuffle your graveyard into your library.
+oracle=Target player shuffles up to three target cards from their graveyard into their library.\nDraw a card.\nWhen Gaea's Blessing is put into your graveyard from your library, shuffle your graveyard into your library.
 status=not supported: multiple-targets

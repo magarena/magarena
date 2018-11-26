@@ -1,0 +1,9 @@
+name=Vicious Rumors
+image=https://img.scryfall.com/cards/normal/front/b/1/b1939952-608e-4786-beeb-a6ff0fa36624.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={B}
+effect=SN deals 1 damage to each opponent. Each opponent discards a card, then puts the top card of their library into their graveyard. You gain 1 life.
+timing=main
+oracle=Vicious Rumors deals 1 damage to each opponent. Each opponent discards a card, then puts the top card of their library into their graveyard. You gain 1 life.

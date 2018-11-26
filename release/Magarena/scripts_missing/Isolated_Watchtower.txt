@@ -1,0 +1,9 @@
+name=Isolated Watchtower
+image=https://img.scryfall.com/cards/normal/en/c18/59.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add {C}.;\
+        {2}, {T}: Scry 1, then you may reveal the top card of your library. If a basic land card is revealed this way, put it onto the battlefield tapped. Activate this ability only if an opponent controls at least two more lands than you.
+timing=land
+oracle={T}: Add {C}.\n{2}, {T}: Scry 1, then you may reveal the top card of your library. If a basic land card is revealed this way, put it onto the battlefield tapped. Activate this ability only if an opponent controls at least two more lands than you.

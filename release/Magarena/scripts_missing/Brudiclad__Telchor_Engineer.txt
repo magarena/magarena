@@ -1,0 +1,12 @@
+name=Brudiclad, Telchor Engineer
+image=https://img.scryfall.com/cards/normal/en/c18/39.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact,Creature
+subtype=Artificer
+cost={4}{U}{R}
+pt=4/4
+ability=Creature tokens you control have haste.;\
+        At the beginning of combat on your turn, create a 2/1 blue Myr artifact creature token. Then you may choose a token you control. If you do, each other token you control becomes a copy of that token.
+timing=main
+oracle=Creature tokens you control have haste.\nAt the beginning of combat on your turn, create a 2/1 blue Myr artifact creature token. Then you may choose a token you control. If you do, each other token you control becomes a copy of that token.

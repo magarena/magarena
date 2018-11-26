@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
+
 import magic.model.action.LoseGameAction;
 import magic.model.choice.MagicBuilderManaCost;
 import magic.model.event.MagicActivationPriority;
@@ -483,7 +484,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
             final MagicCardDefinition cardDefinition = deck.get(i);
             if (cardDefinition.isValid()) {
                 final long id = currGame.getUniqueId();
-                library.add(new MagicCard(cardDefinition,this,id));
+                library.add(new MagicCard(cardDefinition, this, id));
             }
         }
 

@@ -1,0 +1,12 @@
+name=Geode Golem
+image=https://img.scryfall.com/cards/normal/en/c18/56.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=5/3
+ability=Trample;\
+        Whenever SN deals combat damage to a player, you may cast your commander from the command zone without paying its mana cost.
+timing=main
+oracle=Trample\nWhenever Geode Golem deals combat damage to a player, you may cast your commander from the command zone without paying its mana cost.

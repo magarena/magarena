@@ -1,0 +1,12 @@
+name=Molderhulk
+image=https://img.scryfall.com/cards/normal/front/b/a/ba88e031-b194-4621-9e97-2f33ee46f6d0.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Fungus,Zombie
+cost={7}{B}{G}
+pt=6/6
+ability=Undergrowth — This spell costs {1} less to cast for each creature card in your graveyard.;\
+        When SN enters the battlefield, return target land card from your graveyard to the battlefield.
+timing=main
+oracle=Undergrowth — This spell costs {1} less to cast for each creature card in your graveyard.\nWhen Molderhulk enters the battlefield, return target land card from your graveyard to the battlefield.

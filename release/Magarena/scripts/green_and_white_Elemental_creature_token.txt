@@ -1,6 +1,6 @@
 name=green and white Elemental creature token
 token=Elemental
-image=https://magiccards.info/extras/token/dragons-maze/elemental.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tmm3/16.jpg?1517813031
 value=3
 type=Creature
 subtype=Elemental

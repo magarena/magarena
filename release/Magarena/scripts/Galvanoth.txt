@@ -1,0 +1,11 @@
+name=Galvanoth
+image=https://magiccards.info/scans/en/mbs/62.jpg
+value=3.156
+rarity=R
+type=Creature
+subtype=Beast
+cost={3}{R}{R}
+pt=3/3
+timing=main
+oracle=At the beginning of your upkeep, you may look at the top card of your library. If it's an instant or sorcery card, you may cast it without paying its mana cost.
+requires_groovy_code

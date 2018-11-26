@@ -29,7 +29,7 @@
                     game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
                     game.logAppendMessage(player, "${player.getName()} puts ${card.getName()} into the graveyard.");
                 } else {
-                    game.doAction(new ReturnCardAction(
+                    game.doAction(new PutOntoBattlefieldAction(
                         MagicLocationType.OwnersLibrary,
                         card,
                         player,

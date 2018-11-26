@@ -1,0 +1,11 @@
+name=Runic Armasaur
+image=https://magiccards.info/scans/en/m19/200.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={1}{G}{G}
+pt=2/5
+ability=Whenever an opponent activates an ability of a creature or land that isn't a mana ability, you may draw a card.
+timing=main
+oracle=Whenever an opponent activates an ability of a creature or land that isn't a mana ability, you may draw a card.

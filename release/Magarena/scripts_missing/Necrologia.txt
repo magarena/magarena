@@ -4,9 +4,9 @@ value=2.500
 rarity=U
 type=Instant
 cost={3}{B}{B}
-ability=As an additional cost to cast SN, pay X life.;\
-        Cast SN only during your end step.     
+ability=Cast this spell only during your end step.;\
+        As an additional cost to cast this spell, pay X life.
 effect=Draw X cards.
 timing=removal
-oracle=Cast Necrologia only during your end step.\nAs an additional cost to cast Necrologia, pay X life.\nDraw X cards.
+oracle=Cast this spell only during your end step.\nAs an additional cost to cast this spell, pay X life.\nDraw X cards.
 status=not supported: non-mana-x-cost

@@ -16,7 +16,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicAbilityOnStack;
 
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition {
@@ -157,7 +157,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         ) {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-                return Arrays.asList(new MagicPayManaCostEvent(source,cost));
+                return Collections.singletonList(new MagicPayManaCostEvent(source, cost));
             }
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

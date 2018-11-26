@@ -1,5 +1,6 @@
 name=Druid of the Cowl
-image=https://magiccards.info/scans/en/aer/106.jpg
+image=https://magiccards.info/scans/en/m19/177.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=C
 type=Creature

@@ -4,9 +4,9 @@ value=3.971
 rarity=R
 type=Instant
 cost={G}{U}
-effect=Other spells you control can't be countered by spells or abilities this turn.~Draw a card.
+effect=Other spells you control can't be countered this turn.~Draw a card.
 split=Bound
 timing=pump
 second_half
-oracle=Other spells you control can't be countered by spells or abilities this turn.\nDraw a card.
+oracle=Other spells you control can't be countered this turn.\nDraw a card.
 status=not supported: split-card

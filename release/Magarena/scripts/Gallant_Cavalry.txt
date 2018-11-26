@@ -1,0 +1,12 @@
+name=Gallant Cavalry
+image=https://magiccards.info/scans/en/m19/12.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={3}{W}
+pt=2/2
+ability=Vigilance;\
+        When SN enters the battlefield, create a 2/2 white Knight creature token with vigilance.
+timing=main
+oracle=Vigilance\nWhen Gallant Cavalry enters the battlefield, create a 2/2 white Knight creature token with vigilance.

@@ -1,5 +1,6 @@
 name=Diregraf Ghoul
-image=https://magiccards.info/scans/en/isd/97.jpg
+image=https://magiccards.info/scans/en/m19/92.jpg
+image_updated=2018-08-07
 value=3.842
 rarity=U
 type=Creature

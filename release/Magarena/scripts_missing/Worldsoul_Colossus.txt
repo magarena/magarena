@@ -1,0 +1,12 @@
+name=Worldsoul Colossus
+image=https://img.scryfall.com/cards/normal/front/b/5/b5186304-b0fb-44a6-ba61-0265b7f42da4.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={X}{G}{W}
+pt=0/0
+ability=Convoke;\
+        SN enters the battlefield with X +1/+1 counters on it.
+timing=main
+oracle=Convoke\nWorldsoul Colossus enters the battlefield with X +1/+1 counters on it.

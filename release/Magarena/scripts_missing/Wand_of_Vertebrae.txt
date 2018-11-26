@@ -1,0 +1,10 @@
+name=Wand of Vertebrae
+image=https://img.scryfall.com/cards/normal/front/8/7/87f208bc-e4dc-4d3a-8906-dccde3cc251b.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={1}
+ability={T}: Put the top card of your library into your graveyard.;\
+        {2}, {T}, Exile SN: Shuffle up to five target cards from your graveyard into your library.
+timing=artifact
+oracle={T}: Put the top card of your library into your graveyard.\n{2}, {T}, Exile Wand of Vertebrae: Shuffle up to five target cards from your graveyard into your library.

@@ -23,6 +23,7 @@ public class ARG {
     public static final String THING = "(permanent|creature|artifact|land|spell or ability|spell|ability)";
     public static final String PLAYER = "(player|opponent)";
     public static final String EVENQUOTES = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
+    public static final String CARDTYPE   = "(?<cardtype>(creature|artifact|land|enchantment|conspiracy|instant|phenomenon|plane|planeswalker|scheme|sorcery|tribal|vanguard))";
 
     public static final String ENERGY = "(?<energy>(\\{E\\})+)";
     public static int energy(final Matcher m) {
@@ -53,6 +54,10 @@ public class ARG {
     }
     public static MagicAmount amountObj(final Matcher m) {
         return MagicAmountParser.build(m.group("amount"));
+    }
+
+    public static MagicType cardType(final Matcher m) {
+        return MagicType.getType(m.group("cardtype"));
     }
 
     public static final String AMOUNT2 = "(?<amount2>[^ ]+?)";

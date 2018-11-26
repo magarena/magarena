@@ -1,0 +1,12 @@
+name=Angel of Fury
+image=https://magiccards.info/scans/en/po2/127.jpg
+value=2.629
+rarity=R
+type=Creature
+subtype=Angel
+cost={4}{W}{W}
+pt=3/5
+ability=Flying
+timing=main
+oracle=Flying\nWhen Angel of Fury dies, you may shuffle it into its owner's library.
+requires_groovy_code=Guan Yu, Sainted Warrior

@@ -10,3 +10,4 @@ ability={T}: Add {G}.;\
         {T}: Add {G}{G}. Spend this mana only to cast kicked spells.
 timing=main
 oracle={T}: Add {G}.\n{T}: Add {G}{G}. Spend this mana only to cast kicked spells.
+status=not supported: add-multiple-mana
