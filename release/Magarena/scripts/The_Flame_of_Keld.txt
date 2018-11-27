@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Saga
 cost={1}{R}
 ability=I — Discard your hand.;\
-        II — Draw two cards.;\
-        III — If a red source you control would deal damage to a permanent or player this turn, it deals that much damage plus 2 to that permanent or player instead.
+        II — Draw two cards.
 timing=enchantment
+requires_groovy_code
 oracle=I — Discard your hand.\nII — Draw two cards.\nIII — If a red source you control would deal damage to a permanent or player this turn, it deals that much damage plus 2 to that permanent or player instead.

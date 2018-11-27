@@ -1,0 +1,11 @@
+name=6/6 black Demon creature token
+token=Demon
+image=https://img.scryfall.com/cards/large/en/tdom/7.jpg
+value=4
+type=Creature
+subtype=Demon
+color=b
+pt=6/6
+ability=Flying, Trample
+requires_groovy_code
+oracle=Flying, Trample\nAt the beginning of your upkeep, sacrifice another creature. If you can't, this creature deals 6 damage to you.
