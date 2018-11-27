@@ -38,7 +38,7 @@ public class MagicExploreEvent extends MagicEvent {
                 game.doAction(new ShiftCardAction(top, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
             } else {
                 game.doAction(new ChangeCountersAction(player, perm, MagicCounterType.PlusOne, 1));
-                game.addEvent(new MagicEvent(
+                game.addFirstEvent(new MagicEvent(
                     perm,
                     player,
                     new MagicMayChoice("Put " + top + " into your graveyard?"),
