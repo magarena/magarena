@@ -10,8 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicExploreEvent(event.getPermanent()));
-            game.addEvent(new MagicExploreEvent(event.getPermanent()));
+            2.times {
+                game.addEvent(new MagicExploreEvent(event.getPermanent()));
+            }
         }
     }
 ]
