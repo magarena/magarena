@@ -73,8 +73,32 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.95 (November 24, 2018)
+Release 1.95 (December 31, 2018)
 ============
+Ada Joule
+Martin Petricek
+melvin
+
+    Follow symlinks when loading decks (#1618)
+    Add parser for MillLibraryUntilAction, so it can be used without need for groovy.
+    Add support for "surveil 1" action and "Whenever you surveil" triggers
+    If a card could not be parsed due to missing abilities, report name of the card in the exception.
+    Fix weird crash with bogus reason if deckfile does not exists (now it shows that deck is invalid).
+    Fix name (and image) of Insect token. Fixes #1567
+    Fix image URL for Shivan Raptor. Fixes #1493
+    Fix urban utopia (enchants land, not creature)
+    Add "when you become targeted" ability
+    Add Mentor mechanic
+    Add Jump-start to MagicAbility.java
+    Add GRN to sets list and update standard.fmt
+    Fix Jadelight Ranger bug
+      Jadelight Ranger adds the same explore event into the event queue twice.
+      Getting a land or sending the first card explored to the graveyard will not explore the next card.
+    Add ability to run all unit tests with the ant build via "ant test".
+    Implement cost reduction to apply for most cases of reducing hybrid/split/phyrexian cost.
+    Cost increasing abilities were put into wrong layer.
+    Fix YourCostIncrease and CostIncrease ignoring reduction cost/amount.
+    Enhance cost reduction to support colored-mana-cost reduction.
 
 Release 1.94 (August 31, 2018)
 ============
