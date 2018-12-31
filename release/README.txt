@@ -79,26 +79,90 @@ Ada Joule
 Martin Petricek
 melvin
 
-    Follow symlinks when loading decks (#1618)
-    Add parser for MillLibraryUntilAction, so it can be used without need for groovy.
-    Add support for "surveil 1" action and "Whenever you surveil" triggers
-    If a card could not be parsed due to missing abilities, report name of the card in the exception.
-    Fix weird crash with bogus reason if deckfile does not exists (now it shows that deck is invalid).
-    Fix name (and image) of Insect token. Fixes #1567
-    Fix image URL for Shivan Raptor. Fixes #1493
-    Fix urban utopia (enchants land, not creature)
-    Add "when you become targeted" ability
-    Add Mentor mechanic
-    Add Jump-start to MagicAbility.java
-    Add GRN to sets list and update standard.fmt
-    Fix Jadelight Ranger bug
-      Jadelight Ranger adds the same explore event into the event queue twice.
-      Getting a land or sending the first card explored to the graveyard will not explore the next card.
-    Add ability to run all unit tests with the ant build via "ant test".
-    Implement cost reduction to apply for most cases of reducing hybrid/split/phyrexian cost.
-    Cost increasing abilities were put into wrong layer.
-    Fix YourCostIncrease and CostIncrease ignoring reduction cost/amount.
-    Enhance cost reduction to support colored-mana-cost reduction.
+- follow symlinks when loading decks
+
+- run all unit tests with the ant build via "ant test"
+
+- when a card could not be parsed due to missing abilities, report name of the
+  card in the exception
+
+- add GRN to sets list and standard format
+
+- enhance cost reduction to support colored-mana-cost reduction and most cases
+  of reducing hybrid/split/phyrexian cost
+
+- added the following to the card script:
+  * effect: surveil 1
+  * effect: <player> reveals cards from the top of his or her library until
+    he or she  reveals <amount> <cardtype> cards, then put those cards into
+    his or her graveyard
+  * trigger: Whenever you become the target of <spell>, <effect>
+  * trigger: Whenever you surveil, <effect>
+  * ability: jump-start
+  * ability: mentor
+
+- fixed the following bugs:
+  * crash with bogus reason if deckfile does not exists
+  * incorrect name and image of Insect token (issue #1567)
+  * incorrect image URL for Shivan Raptor (issue #1493)
+  * incorrect enchant property for Urban Utopia (enchants land, not creature)
+  * cost increase effect ignoring reduction cost/amount
+  * cost increasing abilities put into wrong layer
+  * incorrect sequence of action when player explore twice in a row
+
+- added the following cards:
+Abnormal Endurance, Amulet of Safekeeping, Ancient Stone Idol,
+Angel of Fury, Angrath, the Flame-Chained, Aurelia, Exemplar of Justice,
+Awaken the Sky Tyrant, Balustrade Spy, Barging Sergeant, Barrier of Bones,
+Bartizan Bats, Beast Whisperer, Blackblade Reforged, Blade Instructor,
+Blood Divination, Bloodspore Thrinax, Bloodtracker, Bone Dragon,
+Boros Challenger, Boros Locket, Burglar Rat, Candlelight Vigil,
+Capture Sphere, Centaur Peacemaker, Chemister's Insight, Citywide Bust,
+Collar the Culprit, Command the Storm, Consuming Aberration,
+Corpse Augur, Crash of Rhino Beetles, Daybreak Chaplain,
+Demonic Vigor, Demon of Catastrophes, Demotion, Destroy the Evidence,
+Devkarin Dissident, Dimir Locket, Direct Current, Disinformation Campaign,
+Dismissive Pyromancer, Douser of Lights, Druidic Satchel, Druid of Horns,
+Edgewalker, Electrostatic Field, Elvish Rejuvenator, Enshrouding Mist,
+Erayo's Essence, Erayo, Soratami Ascendant, Erstwhile Trooper,
+Ezuri, Claw of Progress, Fall of the Thran, Fearless Halberdier,
+Fearsome Awakening, Felhide Spiritbinder, Fire Urchin,
+Fraying Omnipotence, Fresh-Faced Recruit, Frostwielder, Fungal Infection,
+Galvanoth, Garrison Sergeant, Gatekeeper Gargoyle, Gateway Plaza,
+Generous Stray, Gift of Growth, Goblin Banneret, Goblin Kaboomist,
+Goblin Locksmith, Goblin Spymaster, Golgari Findbroker, Golgari Locket,
+Golgari Raiders, Grappling Sundew, Graveyard Marshal, Grief Tyrant,
+Grunn, the Lonely King, Guardian of the Ages, Hadana's Climb,
+Hammer Dropper, Healer's Hawk, Hellion Eruption, Herald of Faith,
+Heroes' Podium, Heroic Reinforcements, Hired Poisoner, Inspiring Unicorn,
+Invoke the Divine, Isareth the Awakener, Isolate, Izzet Locket,
+Kalemne, Disciple of Iroas, Kestia, the Cultivator, Knight of Autumn,
+Kraul Swarm, Kumano, Master Yamabushi, Lathliss, Dragon Queen,
+Lava Coil, Legion Guildmage, Lena, Selfless Champion,
+Leonin Vanguard, Leonin Warleader, Lich's Caress, Lightning Coils,
+Light of the Legion, Liliana's Contract, Living Artifact, Loyal Cathar,
+Marchesa, the Black Rose, Maximize Altitude, Maximize Velocity,
+Michiko Konda, Truth Seeker, Mind Funeral, Mizzix of the Izmagnus,
+Morbid Bloom, Muse Drake, Myr Servitor, Nezumi Shortfang,
+Night Incarnate, Nightveil Predator, Nightveil Sprite, Omnispell Adept,
+Ornery Goblin, Parhelion Patrol, Passwall Adept, Phyrexian Scriptures,
+Phytotitan, Pinpoint Avalanche, Pitiless Gorgon, Portcullis Vine,
+Pyromancer's Assault, Quasiduplicate, Queen Marchesa, Radical Idea,
+Ragemonger, Rampaging Monument, Risk Factor, Rite of Belzenlok,
+Ritual of Soot, Roc Charger, Rubblebelt Boar, Sage-Eye Avengers, Sea Legs,
+Selesnya Locket, Sentinel of the Eternal Watch, Settle the Score,
+Sinister Sabotage, Skyline Scout, Smelt-Ward Minotaur, Song of Freyalise,
+Sonic Assault, Spinal Centipede, Stabwhisker the Odious, Street Riot,
+Subterranean Tremors, Sunhome Stalwart, Swiftblade Vindicator,
+Tajic, Legion's Edge, Talons of Wildwood, Tempt with Vengeance,
+Tenth District Guard, Thantis, the Warweaver, The Flame of Keld,
+The Immortal Sun, The Mending of Dominaria, Thoughtbound Phantasm,
+Time of Ice, Torch Courier, Truefire Captain, Undercity Informer,
+Unexplained Disappearance, Unhallowed Cathar, Urban Utopia,
+Urgoros, the Empty One, Vedalken Mesmerist, Veiled Shade,
+Verix Bladewing, Vernadi Shieldmate, Wary Okapi, Wash Out, Whisper Agent,
+Whisper, Blood Liturgist, Wild Ceratok, Winged Temple of Orazca,
+Wishcoin Crab, Zahid, Djinn of the Lamp
 
 Release 1.94 (August 31, 2018)
 ============
