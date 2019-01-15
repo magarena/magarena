@@ -37,6 +37,29 @@ public abstract class ThisDiesTrigger extends OtherDiesTrigger {
         };
     }
 
+    public static ThisDiesTrigger Afterlife(final int n) {
+        return new ThisDiesTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
+                return new MagicEvent(
+                    permanent,
+                    n,
+                    this,
+                    "PN creates RN 1/1 white and black Spirit creature tokens with flying."
+                );
+            }
+
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new PlayTokensAction(
+                    event.getPlayer(),
+                    CardDefinitions.getToken("1/1 white and black Spirit creature token with flying"),
+                    event.getRefInt()
+                ));
+            }
+        };
+    }
+
     public ThisDiesTrigger(final int priority) {
         super(priority);
     }
