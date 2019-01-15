@@ -1,6 +1,7 @@
 package magic.model.trigger;
 
 import magic.data.CardDefinitions;
+import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
@@ -10,9 +11,12 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangeStateAction;
+import magic.model.action.GainAbilityAction;
 import magic.model.action.PlayTokensAction;
 import magic.model.action.SacrificeAction;
+import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicOrChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
@@ -194,4 +198,38 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
             }
         };
     }
+
+    public static final EntersBattlefieldTrigger Riot = new EntersBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
+
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                permanent,
+                new MagicOrChoice(
+                    MagicChoice.NONE,
+                    MagicChoice.NONE
+                ),
+                this,
+                "Choose one$ — " +
+                "(1) SN enters the battlefield with a +1/+1 counter on it.; or " +
+                "(2) SN gains haste."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicPermanent permanent = event.getPermanent();
+            if (event.isMode(1)) {
+                game.doAction(new ChangeCountersAction(
+                    event.getPlayer(),
+                    permanent,
+                    MagicCounterType.PlusOne,
+                    1
+                ));
+            } else if (event.isMode(2)) {
+                game.doAction(new GainAbilityAction(permanent, MagicAbility.Haste));
+            }
+        }
+    };
+
 }
