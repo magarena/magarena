@@ -675,6 +675,14 @@ public enum MagicAbility {
             card.add(ThisDiesTrigger.Afterlife(n));
         }
     },
+    Spectacle("spectacle( |—)" + ARG.COST, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.buildCast(ARG.cost(arg));
+            card.add(new MagicSpectacleActivation(cardDef, matchedCostEvents));
+        }
+    },
 
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may " + ARG.COST + "\\. If you don't, SN enters the battlefield tapped\\.", -10) {

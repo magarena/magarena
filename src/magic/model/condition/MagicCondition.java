@@ -950,4 +950,12 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             return player.controlsPermanent(MagicTargetFilterFactory.LEGENDARY_CREATURE_OR_PLANESWALKER);
         }
     };
+
+    public static MagicCondition SPECTACLE = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicPlayer opponent = source.getOpponent();
+            return opponent.getLifeLossThisTurn() > 0;
+        }
+    };
 }
