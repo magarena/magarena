@@ -662,6 +662,12 @@ public enum MagicAbility {
             card.add(new MagicJumpStartActivation(cardDef));
         }
     },
+    Riot("riot", 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(EntersBattlefieldTrigger.Riot);
+        }
+    },
 
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may " + ARG.COST + "\\. If you don't, SN enters the battlefield tapped\\.", -10) {
