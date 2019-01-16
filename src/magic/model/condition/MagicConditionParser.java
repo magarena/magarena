@@ -799,6 +799,12 @@ public enum MagicConditionParser {
             return MagicCondition.HAS_THE_CITYS_BLESSING;
         }
     },
+    Addendum("you cast this spell during your main phase") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.ADDENDUM;
+        }
+    },
     ;
 
     private final Pattern pattern;

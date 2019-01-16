@@ -950,4 +950,14 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             return player.controlsPermanent(MagicTargetFilterFactory.LEGENDARY_CREATURE_OR_PLANESWALKER);
         }
     };
+
+    public static MagicCondition ADDENDUM = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicCardOnStack spell = (MagicCardOnStack)source;
+            final MagicGame game = source.getGame();
+            final MagicPhaseType phaseType = game.getPhase().getType();
+            return spell.isCast() && spell.isController(game.getTurnPlayer()) && (phaseType == MagicPhaseType.FirstMain || phaseType == MagicPhaseType.SecondMain);
+        }
+    };
 }
