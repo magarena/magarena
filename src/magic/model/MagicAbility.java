@@ -675,12 +675,12 @@ public enum MagicAbility {
             card.add(ThisDiesTrigger.Afterlife(n));
         }
     },
-    Spectacle("spectacle( |—)" + ARG.COST, 10) {
+    Spectacle("spectacle( |—)" + ARG.MANACOST, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
-            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.buildCast(ARG.cost(arg));
-            card.add(new MagicSpectacleActivation(cardDef, matchedCostEvents));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
+            card.add(new MagicSpectacleActivation(cardDef, manaCost));
         }
     },
 
