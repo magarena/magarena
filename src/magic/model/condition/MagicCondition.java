@@ -962,4 +962,12 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
                 (phaseType == MagicPhaseType.FirstMain || phaseType == MagicPhaseType.SecondMain);
         }
     };
+
+    public static MagicCondition SPECTACLE = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicPlayer opponent = source.getOpponent();
+            return opponent.getLifeLossThisTurn() > 0;
+        }
+    };
 }

@@ -675,6 +675,14 @@ public enum MagicAbility {
             card.add(ThisDiesTrigger.Afterlife(n));
         }
     },
+    Spectacle("spectacle( |—)" + ARG.MANACOST, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
+            card.add(new MagicSpectacleActivation(cardDef, manaCost));
+        }
+    },
 
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may " + ARG.COST + "\\. If you don't, SN enters the battlefield tapped\\.", -10) {
@@ -719,6 +727,12 @@ public enum MagicAbility {
         }
     },
     EntersSurgeEffect("When SN enters the battlefield, if its surge cost was paid, " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            EntersKickedEffect.addAbilityImpl(card, arg);
+        }
+    },
+    EntersSpectacleEffect("When SN enters the battlefield, if its spectacle cost was paid, " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             EntersKickedEffect.addAbilityImpl(card, arg);
