@@ -3290,6 +3290,20 @@ public enum MagicRuleEventAction {
         }
 
     },
+    Adapt(
+        "adapt " + ARG.NUMBER
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return (game, event) -> {
+                final int n = ARG.number(matcher);
+                final MagicPermanent permanent = event.getPermanent();
+                if (permanent.getCounters(MagicCounterType.PlusOne) == 0) {
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), permanent, MagicCounterType.PlusOne, n));
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
