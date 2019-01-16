@@ -957,8 +957,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             final MagicCardOnStack spell = (MagicCardOnStack)source;
             final MagicGame game = source.getGame();
             final MagicPhaseType phaseType = game.getPhase().getType();
-            return spell.isCast() &&
-                spell.getController().getId() == game.getTurnPlayer().getId() &&
+            return spell.isCast() && spell.isFriend(game.getTurnPlayer()) &&
                 (phaseType == MagicPhaseType.FirstMain || phaseType == MagicPhaseType.SecondMain);
         }
     };
