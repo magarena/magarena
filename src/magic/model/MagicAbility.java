@@ -732,6 +732,12 @@ public enum MagicAbility {
             EntersKickedEffect.addAbilityImpl(card, arg);
         }
     },
+    EntersSpectacleEffect("When SN enters the battlefield, if its spectacle cost was paid, " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            EntersKickedEffect.addAbilityImpl(card, arg);
+        }
+    },
     EntersEffect("When SN enters the battlefield, " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
