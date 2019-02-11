@@ -18,6 +18,7 @@ import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicOrChoice;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.mstatic.MagicStatic;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicSacrificePermanentEvent;
@@ -227,7 +228,7 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
                     1
                 ));
             } else if (event.isMode(2)) {
-                game.doAction(new GainAbilityAction(permanent, MagicAbility.Haste));
+                game.doAction(new GainAbilityAction(permanent, MagicAbility.Haste, MagicStatic.Forever));
             }
         }
     };
