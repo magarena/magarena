@@ -1,12 +1,14 @@
 package magic.ui.helpers;
 
 import java.awt.Desktop;
+import java.awt.HeadlessException;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import javax.swing.JOptionPane;
 import magic.data.DownloadableFile;
 import magic.ui.CardTextLanguage;
 
@@ -20,7 +22,13 @@ public final class UrlHelper {
     public static final String URL_FIREMIND_SCRIPTS = "http://www.firemind.ch/card_script_submissions/new";
     public static final String URL_HOMEPAGE = "http://magarena.github.io/";
 
-    public static void openURL(final String url) {
+    /**
+     * Try to open URL in browser.
+     *
+     * @param url URl to open
+     * @return true if successful, false if operation failed or is not supported
+     */
+    public static boolean tryOpenURL(final String url) {
         try {
             Desktop desktop = null;
             if (Desktop.isDesktopSupported()) {
@@ -29,15 +37,28 @@ public final class UrlHelper {
             if (desktop != null) {
                 final URI uri = new URI(url);
                 desktop.browse(uri);
+                return true;
             }
-        } catch (IOException ioe) {
-            System.err.println("ERROR! Unable to launch browser");
+        } catch (IOException | UnsupportedOperationException ioe) {
+            System.err.println("ERROR! Unable to launch browser url " + url);
             System.err.println(ioe.getMessage());
             ioe.printStackTrace();
         } catch (URISyntaxException use) {
             System.err.println("ERROR! Invalid URI");
             System.err.println(use.getMessage());
             use.printStackTrace();
+        }
+        return false;
+    }
+
+    public static void openURL(final String url) {
+        if (!tryOpenURL(url)) {
+            try {
+                JOptionPane.showMessageDialog(null, "Unable to launch browser for url " + url,
+                    "Error launching browser", JOptionPane.ERROR_MESSAGE);
+            } catch (HeadlessException e) {
+                System.err.println("Unable to launch browser for url " + url);
+            }
         }
     }
 
@@ -57,7 +78,7 @@ public final class UrlHelper {
      * Quickly checks to see whether URL is reachable.
      */
     public static boolean isUrlValid(final URL url) {
-        final int timeout= 2000; // time, in milliseconds, used for open a  link  referenced by this URLConnection. 
+        final int timeout = 2000; // time, in milliseconds, used for open a  link  referenced by this URLConnection.
 
         if (url == null)
             return false;
@@ -74,5 +95,6 @@ public final class UrlHelper {
         }
     }
 
-    private UrlHelper() { }
+    private UrlHelper() {
+    }
 }
