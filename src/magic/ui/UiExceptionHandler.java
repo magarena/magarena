@@ -1,6 +1,7 @@
 package magic.ui;
 
 import magic.translate.MText;
+import magic.ui.helpers.DesktopHelper;
 import magic.ui.helpers.ImageHelper;
 import java.awt.Component;
 import java.awt.Desktop;
@@ -48,7 +49,7 @@ public class UiExceptionHandler extends FileExceptionHandler {
                 prompt += String.format("\n\n%s\n%s", MText.get(_S3), MText.get(_S4));
                 final int action = JOptionPane.showConfirmDialog(frame, prompt, MText.get(_S1), JOptionPane.OK_OPTION, JOptionPane.ERROR_MESSAGE, null);
                 if (action == JOptionPane.YES_OPTION) {
-                    Desktop.getDesktop().open(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).toFile());
+                    DesktopHelper.tryOpen(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).toFile());
                 }
             } else {
                 JOptionPane.showMessageDialog(frame, prompt, MText.get(_S1), JOptionPane.ERROR_MESSAGE);

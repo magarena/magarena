@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Scanner;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSetDefinition;
+import magic.ui.helpers.DesktopHelper;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicResources;
@@ -89,7 +90,7 @@ public class MagicSetDefinitions {
                 );
             }
         }
-        Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
+        DesktopHelper.tryOpen(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
     }
 
 }

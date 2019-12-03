@@ -18,6 +18,7 @@ import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
 import magic.ui.ScreenController;
 import magic.ui.dialog.GameStateRunner;
+import magic.ui.helpers.DesktopHelper;
 import magic.ui.screen.menu.NewMenuScreenContentPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
@@ -103,7 +104,7 @@ class DevMenuContentPanel extends NewMenuScreenContentPanel {
         try (final PrintWriter writer = new PrintWriter(savePath.toFile(), UTF_8.name())) {
             missingCards.forEach(writer::println);
         }
-        Desktop.getDesktop().open(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).toFile());
+        DesktopHelper.tryOpen(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).toFile());
     }
 
     private void doSaveMissingCardsFile() {
