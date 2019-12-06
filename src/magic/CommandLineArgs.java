@@ -22,6 +22,7 @@ class CommandLineArgs {
     private String deck2 = "";
     private boolean showFps = false;
     private boolean headless = false;
+    private boolean cardTest = false;
     private int fps;
     private int duels = 1;
 
@@ -73,6 +74,9 @@ class CommandLineArgs {
             //
             case "--headless":
                 headless = true;
+                break;
+            case "--cardtest":
+                cardTest = true;
                 break;
             case "--duels": // the number of duels to play [--duels 1].
                 duels = Integer.parseInt(args[i + 1].trim());
@@ -207,6 +211,10 @@ class CommandLineArgs {
 
     boolean isHeadless() {
         return headless;
+    }
+
+    boolean isCardTest() {
+        return cardTest;
     }
 
     int getFPS() {

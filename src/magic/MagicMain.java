@@ -49,6 +49,12 @@ public class MagicMain {
             return;
         }
 
+        // transfer control to automatic card test
+        if (cmdline.isCardTest()) {
+            CardTest.main(cmdline);
+            return;
+        }
+
         parseCommandLine(cmdline);
 
         Thread.setDefaultUncaughtExceptionHandler(new UiExceptionHandler());

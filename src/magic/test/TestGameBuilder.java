@@ -55,8 +55,13 @@ public abstract class TestGameBuilder {
     }
 
     public static MagicPermanent createPermanent(final MagicPlayer player, final String name, final boolean tapped, final int count) {
+        final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
+        return createPermanent(player, cardDefinition, tapped, count);
+    }
+
+
+    public static MagicPermanent createPermanent(final MagicPlayer player, final MagicCardDefinition cardDefinition, final boolean tapped, final int count) {
         final MagicGame game = player.getGame();
-        final MagicCardDefinition cardDefinition=CardDefinitions.getCard(name);
         MagicPermanent lastPermanent= MagicPermanent.NONE;
         for (int c=count;c>0;c--) {
 

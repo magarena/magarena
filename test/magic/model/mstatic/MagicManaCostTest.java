@@ -52,7 +52,5 @@ public class MagicManaCostTest {
 
         MagicManaCost phy = MagicManaCost.create("{R/P}{G/P}{W/P}");
         assertEquals("{W/P}", phy.reducedBy(MagicManaCost.create("{R}{G}{U}")).toString());
-
-
     }
 }
