@@ -1,8 +1,16 @@
 package magic;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.CardDefinitions;
@@ -42,6 +50,17 @@ public class CardTest {
 
         Collection<MagicCardDefinition> allC = CardDefinitions.getAllPlayableCardDefs();
 
+        Set<String> skip = new HashSet<>();
+        String skipList = cmdline.getSkipList();
+        if (skipList != null) {
+            try (Stream<String> lines = Files.lines(Paths.get(skipList))) {
+                skip = lines.collect(Collectors.toSet());
+                System.out.println("Skipping " + skip.size() + " cards from file: " + skipList);
+            } catch (IOException e) {
+                throw new IllegalArgumentException("Unable to load skiplist from file " + skipList, e);
+            }
+        }
+
         List<String> cards = new ArrayList<>();
         List<MagicCardDefinition> tokens = new ArrayList<>();
 
@@ -52,9 +71,11 @@ public class CardTest {
                 System.out.println("Def without name: " + def.getDistinctName());
                 continue;
             }
+            if (skip.contains(name)) continue;
             if (def.isToken()) tokens.add(def);
             else cards.add(name);
         }
+
         System.out.println("Cards: " + cards.size());
         System.out.println("Tokens: " + tokens.size());
 
@@ -63,16 +84,7 @@ public class CardTest {
             System.out.println("Testing token #" + t + ": " + token.getName());
             t++;
             MagicGame game = new TokenScenario(token).getGame();
-            game.setArtificial(true);
-
-            //5 seconds max for a quick match
-            final HeadlessGameController controller = new HeadlessGameController(
-                game, 5 * 1000
-            );
-
-            final long start_time = System.currentTimeMillis();
-            controller.runGame();
-            final double duration = (double) (System.currentTimeMillis() - start_time) / 1000;
+            final double duration = runGame(game);
 
             System.out.printf("Token time: %.2fs : %s\n", duration, token);
         }
@@ -83,20 +95,24 @@ public class CardTest {
             System.out.println("Testing card #" + n + ": " + name);
             n++;
             MagicGame game = new CardScenario(name).getGame();
-            game.setArtificial(true);
-
-            //5 seconds max for a quick match
-            final HeadlessGameController controller = new HeadlessGameController(
-                game, 5 * 1000
-            );
-
-            final long start_time = System.currentTimeMillis();
-            controller.runGame();
-            final double duration = (double) (System.currentTimeMillis() - start_time) / 1000;
+            final double duration = runGame(game);
 
             System.out.printf("Time: %.2fs : %s\n", duration, name);
         }
+        System.out.println("All cards/tokens tested.");
+    }
 
+    private static double runGame(MagicGame game) {
+        game.setArtificial(true);
+
+        //5 seconds max for a quick match
+        final HeadlessGameController controller = new HeadlessGameController(
+            game, 5 * 1000
+        );
+
+        final long start_time = System.currentTimeMillis();
+        controller.runGame();
+        return (double) (System.currentTimeMillis() - start_time) / 1000;
     }
 
     /**
@@ -136,7 +152,7 @@ public class CardTest {
      * Base scenario - player has most likely enough mana to cast anything,
      * opponent has at least one permanent of every type, so there would likely be some targets
      * for variety of possible spells and effects.
-     *
+     * <p>
      * Libraries have only two cards (basic lands) in them, so the game is likely to end quickly.
      */
     private static abstract class BaseScenario extends TestGameBuilder {

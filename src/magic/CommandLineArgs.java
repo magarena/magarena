@@ -89,6 +89,9 @@ class CommandLineArgs {
     // the number of duels to play [--duels 1].
     private Arg<Integer> duels = new Arg<>("--duels", 1, x -> Integer.parseInt(x));
 
+    // Skiplist for card test
+    private Arg<String> skipList = new Arg<>("--skip", null, x -> x);
+
     /**
      * Commandline argument requiring a value
      *
@@ -220,4 +223,7 @@ class CommandLineArgs {
         return duels.value;
     }
 
+    String getSkipList() {
+        return skipList.value;
+    }
 }
