@@ -1,228 +1,223 @@
 package magic;
 
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
+import java.util.function.Function;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DuelConfig;
 import magic.utility.MagicSystem;
 
 class CommandLineArgs {
+    private static Map<String, Arg<?>> argMap = new HashMap<>();
+    private static Map<String, Flag> flagMap = new HashMap<>();
 
-    private MagicAIImpl ai1 = MagicAIImpl.MMABFast;
-    private MagicAIImpl ai2 = MagicAIImpl.MMABFast;
-    private int ai1Level = 6;
-    private int ai2Level = 6;
-    private boolean isAnimationsEnabled = true;
-    private int maxAiThreads = MagicAI.getMaxThreads();
-    private boolean isDevMode = MagicSystem.isDevMode();
-    private int games = DuelConfig.DEFAULT_GAMES;
-    private int startLife = DuelConfig.DEFAULT_LIFE;
-    private boolean showHelp = false;
-    private String deck1 = "";
-    private String deck2 = "";
-    private boolean showFps = false;
-    private boolean headless = false;
-    private boolean cardTest = false;
-    private int fps;
-    private int duels = 1;
+    // set player 1 deck (see wiki page for value syntax)
+    private Arg<String> deck1 = new Arg<>("--deck1", "", x -> {
+        MagicSystem.setAiVersusAi(true);
+        return x;
+    });
+
+    // set player 2 deck (see wiki page for value syntax)
+    private Arg<String> deck2 = new Arg<>("--deck2", "", x -> {
+        MagicSystem.setAiVersusAi(true);
+        return x;
+    });
+
+    // HeadlessAiGame-only settings
+    private Flag headless = new Flag("--headless");
+    private Flag cardTest = new Flag("--cardtest");
+
+    // displays refresh rate in hertz for each screen device.
+    private Flag showFps = new Flag("--showfps");
+
+    // turns off gameplay animations for session (does not change preferences).
+    private Flag isAnimationsDisabled = new Flag("--nofx");
+
+    // enables access to additional functionality.
+    private Flag isDevMode = new Flag("--devmode");
+
+    // shows wiki help page in browser.
+    private Flag showHelp = new Flag("--help");
+
+    // sets the desired frames-per-second for the Trident animation library.
+    private Arg<Integer> fps = new Arg<>("--fps", 0, x -> Integer.parseInt(x));
+
+    // limits the number of threads AI uses. (eg. --threads 2)
+    private Arg<Integer> maxAiThreads = new Arg<>("--threads", MagicAI.getMaxThreads(), x -> Integer.parseInt(x));
+
+    // Runs specified test game, equivalent to -DtestGame VM arg. (eg. --test TestAura)
+    private Arg<String> testGame = new Arg<>("--test", "", x -> {
+        System.setProperty("testGame", x);
+        return x;
+    });
+
+    // Setting any of the following arguments will automatically run an AI vs AI game.
+
+    // MagicAIImpl class to load as player 1. (eg. --ai1 MMABFast)
+    private Arg<MagicAIImpl> ai1 = new Arg<>("--ai1", MagicAIImpl.MMABFast, x -> {
+        MagicSystem.setAiVersusAi(true);
+        return MagicAIImpl.valueOf(x);
+    });
+    // MagicAIImpl class to load as player 2. (eg. --ai2 MMABFast)
+    private Arg<MagicAIImpl> ai2 = new Arg<>("--ai2", MagicAIImpl.MMABFast, x -> {
+        MagicSystem.setAiVersusAi(true);
+        return MagicAIImpl.valueOf(x);
+    });
+    // level of AI player #1. (eg. --str1 8)
+    private Arg<Integer> ai1Level = new Arg<>("--str1", 6, x -> {
+        MagicSystem.setAiVersusAi(true);
+        return Integer.parseInt(x);
+    });
+    // level of AI player #2. (eg. --str2 8)
+    private Arg<Integer> ai2Level = new Arg<>("--str2", 6, x -> {
+        MagicSystem.setAiVersusAi(true);
+        return Integer.parseInt(x);
+    });
+    // "best of..." games total in AI v AI game. (eg. --games 3 = best of 3 games)
+    private Arg<Integer> games = new Arg<>("--games", DuelConfig.DEFAULT_GAMES, x -> {
+        MagicSystem.setAiVersusAi(true);
+        return Integer.parseInt(x);
+    });
+    // initial life for each AI player. (eg. --life 10)
+    private Arg<Integer> startLife = new Arg<>("--life", DuelConfig.DEFAULT_LIFE, x -> {
+        MagicSystem.setAiVersusAi(true);
+        return Integer.parseInt(x);
+    });
+
+    // the number of duels to play [--duels 1].
+    private Arg<Integer> duels = new Arg<>("--duels", 1, x -> Integer.parseInt(x));
+
+    /**
+     * Commandline argument requiring a value
+     *
+     * @param <V> type of internally stored value
+     */
+    private static class Arg<V> {
+        private String argName;
+        public V value;
+        private Function<String, V> setter;
+
+        public Arg(String argName, V defaultValue, Function<String, V> setter) {
+            this.argName = argName;
+            this.value = defaultValue;
+            this.setter = setter;
+            argMap.put(argName, this);
+        }
+
+        public void set(String arg) {
+            value = setter.apply(arg);
+        }
+    }
+
+    /**
+     * Commandline argument that is a flag that enables something.
+     */
+    private static class Flag {
+        public boolean value = false;
+
+        public Flag(String argName) {
+            flagMap.put(argName, this);
+        }
+    }
 
     CommandLineArgs(final String[] args) {
-
+        isDevMode.value = MagicSystem.isDevMode();
         for (int i = 0; i < args.length; i++) {
-
-            final String arg = args[i];
-            switch (arg.toLowerCase(Locale.ENGLISH)) {
-
-            //
-            // setting any of the following arguments will
-            // automatically run an AI vs AI game.
-            //
-            case "--ai1": // MagicAIImpl class to load as player 1. (eg. --ai1 MMABFast)
-                setAi1(MagicAIImpl.valueOf(args[i + 1].trim()));
-                break;
-
-            case "--ai2": // MagicAIImpl class to load as player 2. (eg. --ai2 MMABFast)
-                setAi2(MagicAIImpl.valueOf(args[i + 1].trim()));
-                break;
-
-            case "--str1": // level of AI player #1. (eg. --str1 8)
-                setAi1Level(Integer.parseInt(args[i + 1].trim()));
-                break;
-
-            case "--str2": // level of AI player #2. (eg. --str2 8)
-                setAi2Level(Integer.parseInt(args[i + 1].trim()));
-                break;
-
-            case "--games": // "best of..." games total in AI v AI game. (eg. --games 3 = best of 3 games)
-                setGames(Integer.parseInt(args[i + 1].trim()));
-                break;
-
-            case "--life": // initial life for each AI player. (eg. --life 10)
-                setStartLife(Integer.parseInt(args[i + 1].trim()));
-                break;
-
-            case "--deck1": // set player 1 deck (see wiki page for value syntax)
-                setDeck1(args[i + 1].trim());
-                break;
-
-            case "--deck2": // set player 2 deck (see wiki page for value syntax)
-                setDeck2(args[i + 1].trim());
-                break;
-
-            //
-            // HeadlessAiGame-only settings
-            //
-            case "--headless":
-                headless = true;
-                break;
-            case "--cardtest":
-                cardTest = true;
-                break;
-            case "--duels": // the number of duels to play [--duels 1].
-                duels = Integer.parseInt(args[i + 1].trim());
-                break;
-
-            //
-            // other settings.
-            //
-            case "--fps": // sets the desired frames-per-second for the Trident animation library.
-                fps = Integer.parseInt(args[i + 1].trim());
-                break;
-
-            case "--showfps": // displays refresh rate in hertz for each screen device.
-                showFps = true;
-                break;
-
-            case "--nofx": // turns off gameplay animations for session (does not change preferences).
-                isAnimationsEnabled = false;
-                break;
-
-            case "--threads": // limits the number of threads AI uses. (eg. --threads 2)
-                maxAiThreads = Integer.parseInt(args[i + 1].trim());
-                break;
-
-            case "--devmode": // enables access to additional functionality.
-                isDevMode = true;
-                break;
-
-            case "--test": // Runs specified test game, equivalent to -DtestGame VM arg. (eg. --test TestAura)
-                System.setProperty("testGame", args[i + 1].trim());
-                break;
-
-            case "--help": // shows wiki help page in browser.
-                showHelp = true;
-                break;
-
+            final String arg = args[i].toLowerCase(Locale.ENGLISH);
+            Arg<?> argValue = argMap.get(arg);
+            if (argValue != null) {
+                String arg0 = nextArg(args, i);
+                if (arg0 == null) {
+                    throw new IllegalArgumentException("Argument " + argValue.argName + " requires a value");
+                } else {
+                    argValue.set(arg0);
+                }
+                i++;
+            }
+            Flag flagValue = flagMap.get(arg);
+            if (flagValue != null) {
+                flagValue.value = true;
             }
         }
     }
 
-    private void setDeck2(String deck) {
-        this.deck2 = deck;
-        MagicSystem.setAiVersusAi(true);
+    private String nextArg(String[] args, int i) {
+        if (i + 1 >= args.length) {
+            return null;
+        }
+        return args[i + 1].trim();
     }
 
-    private void setDeck1(String deck) {
-        this.deck1 = deck;
-        MagicSystem.setAiVersusAi(true);
-    }
-
-    private void setStartLife(int life) {
-        this.startLife = life;
-        MagicSystem.setAiVersusAi(true);
-    }
-
-    private void setGames(int games) {
-        this.games = games;
-        MagicSystem.setAiVersusAi(true);
-    }
-
-    private void setAi1(MagicAIImpl ai1) {
-        this.ai1 = ai1;
-        MagicSystem.setAiVersusAi(true);
-    }
 
     MagicAIImpl getAi1() {
-        return ai1;
+        return ai1.value;
     }
 
-    private void setAi2(MagicAIImpl ai2) {
-        this.ai2 = ai2;
-        MagicSystem.setAiVersusAi(true);
-    }
 
     MagicAIImpl getAi2() {
-        return ai2;
-    }
-
-    private void setAi1Level(int ai1Level) {
-        this.ai1Level = ai1Level;
-        MagicSystem.setAiVersusAi(true);
+        return ai2.value;
     }
 
     int getAi1Level() {
-        return ai1Level;
-    }
-
-    private void setAi2Level(int ai2Level) {
-        this.ai2Level = ai2Level;
-        MagicSystem.setAiVersusAi(true);
+        return ai1Level.value;
     }
 
     int getAi2Level() {
-        return ai2Level;
+        return ai2Level.value;
     }
 
     boolean isAnimationsEnabled() {
-        return isAnimationsEnabled;
+        return !isAnimationsDisabled.value;
     }
 
     int getMaxThreads() {
-        return maxAiThreads;
+        return maxAiThreads.value;
     }
 
     boolean isDevMode() {
-        return isDevMode;
+        return isDevMode.value;
     }
 
     int getGames() {
-        return games;
+        return games.value;
     }
 
     int getLife() {
-        return startLife;
+        return startLife.value;
     }
 
     boolean showHelp() {
-        return showHelp;
+        return showHelp.value;
     }
 
     String getDeck1() {
-        return deck1;
+        return deck1.value;
     }
 
     String getDeck2() {
-        return deck2;
+        return deck2.value;
     }
 
     boolean showFPS() {
-        return showFps;
+        return showFps.value;
     }
 
     boolean isHeadless() {
-        return headless;
+        return headless.value;
     }
 
     boolean isCardTest() {
-        return cardTest;
+        return cardTest.value;
     }
 
     int getFPS() {
-        return fps;
+        return fps.value;
     }
 
     int getDuels() {
-        return duels;
+        return duels.value;
     }
 
 }
