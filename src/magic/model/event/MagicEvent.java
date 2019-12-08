@@ -52,7 +52,9 @@ public class MagicEvent implements MagicCopyable {
     private final MagicChoice choice;
     private final MagicTargetPicker<?> targetPicker;
     private final MagicEventAction action;
-    private final String description;
+
+    private String generatedDescription;
+    private final String sourceDescription;
     private final MagicCopyable ref;
     private boolean isCost = false;
 
@@ -81,7 +83,7 @@ public class MagicEvent implements MagicCopyable {
         this.targetPicker=targetPicker;
         this.ref=ref;
         this.action=action;
-        this.description=MagicMessage.replaceName(description,source,player,ref);
+        this.sourceDescription=description;
     }
 
     public MagicEvent(
@@ -266,7 +268,8 @@ public class MagicEvent implements MagicCopyable {
         targetPicker = sourceEvent.targetPicker;
         ref = copyMap.copy(sourceEvent.ref);
         action = sourceEvent.action;
-        description = sourceEvent.description;
+        sourceDescription = sourceEvent.sourceDescription;
+        generatedDescription = sourceEvent.generatedDescription;
         isCost = sourceEvent.isCost;
     }
 
@@ -405,7 +408,7 @@ public class MagicEvent implements MagicCopyable {
         final List<Object[]> choices = choice.getArtificialChoiceResults(game,this);
         final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
-            System.err.println("WARNING. ACR:  " + choice.getDescription() + description + " time: " + time);
+            System.err.println("WARNING. ACR:  " + choice.getDescription() + getDescription() + " time: " + time);
             /*
             if (getClass().desiredAssertionStatus()) {
                 throw new GameException("ACR:  " + choice.getDescription() + description + " time: " + time, game);
@@ -420,7 +423,7 @@ public class MagicEvent implements MagicCopyable {
         final Object[] res = choice.getSimulationChoiceResult(game,this);
         final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
-            System.err.println("WARNING. RCR:  " + choice.getDescription() + description + " time: " + time);
+            System.err.println("WARNING. RCR:  " + choice.getDescription() + getDescription() + " time: " + time);
             /*
             if (getClass().desiredAssertionStatus()) {
                 throw new GameException("RCR:  " + choice.getDescription() + description + " time: " + time, game);
@@ -451,7 +454,7 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public final String getDescription(final Object[] choiceResults) {
-        return MagicMessage.replaceChoices(description, choiceResults);
+        return MagicMessage.replaceChoices(getDescription(), choiceResults);
     }
 
     public final String getChoiceDescription() {
@@ -750,7 +753,7 @@ public class MagicEvent implements MagicCopyable {
 
     @Override
     public String toString() {
-        return "EVENT: " + source + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
+        return "EVENT: " + source + " " + getDescription() + " " + (hasChoice() ? choice.getDescription() : "");
     }
 
     public long getStateId() {
@@ -761,7 +764,9 @@ public class MagicEvent implements MagicCopyable {
             choice.getStateId(),
             targetPicker.hashCode(),
             action.hashCode(),
-            description.hashCode(),
+            // Generated description depends on source, player and ref (all those are input to the hash)
+            // and sourceDescription. We can just use sourceDescription directly
+            sourceDescription.hashCode(),
             MagicObjectImpl.getStateId(ref),
             isCost ? 1L : -1L,
         });
@@ -772,7 +777,10 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public String getDescription() {
-        return description;
+        if (generatedDescription == null) {
+            generatedDescription = MagicMessage.replaceName(sourceDescription, source, player, ref);
+        }
+        return generatedDescription;
     }
 
     public void setCost() {

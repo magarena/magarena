@@ -3,6 +3,8 @@ package magic.model;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.phase.MagicPhaseType;
@@ -19,13 +21,13 @@ public class MagicMessage {
     private final MagicPhaseType phaseType;
     private final String text;
 
-    MagicMessage(final MagicGame game,final MagicPlayer player,final String text) {
-        this.playerIndex=player.getIndex();
-        this.playerConfig=player.getConfig();
-        this.life=player.getLife();
-        this.turn=game.getTurn();
-        this.phaseType=game.getPhase().getType();
-        this.text=text;
+    MagicMessage(final MagicGame game, final MagicPlayer player, final String text) {
+        this.playerIndex = player.getIndex();
+        this.playerConfig = player.getConfig();
+        this.life = player.getLife();
+        this.turn = game.getTurn();
+        this.phaseType = game.getPhase().getType();
+        this.text = text;
     }
 
     public int getPlayerIndex() {
@@ -52,16 +54,16 @@ public class MagicMessage {
         return text;
     }
 
-    static void addNames(final StringBuilder builder,final Collection<String> names) {
+    static void addNames(final StringBuilder builder, final Collection<String> names) {
         if (!names.isEmpty()) {
-            boolean first=true;
+            boolean first = true;
             boolean next;
-            final Iterator<String> iterator=names.iterator();
+            final Iterator<String> iterator = names.iterator();
             do {
-                final String name=iterator.next();
-                next=iterator.hasNext();
+                final String name = iterator.next();
+                next = iterator.hasNext();
                 if (first) {
-                    first=false;
+                    first = false;
                 } else if (next) {
                     builder.append(", ");
                 } else {
@@ -72,12 +74,37 @@ public class MagicMessage {
         }
     }
 
-    public static String replaceName(final String sourceText,final Object source, final Object player, final Object ref) {
-        return sourceText
-            .replaceAll("PN", player.toString())
-            .replaceAll("SN", getCardToken(source))
-            .replaceAll("RN", getCardToken(ref))
-            .replaceAll("\\bX\\b" + ARG.EVENQUOTES, getXCost(sourceText, ref));
+    private static Pattern replaceNameRegex = Pattern.compile("PN|SN|RN|\\bX\\b" + ARG.EVENQUOTES);
+
+    public static String replaceName(final String sourceText, final Object source, final Object player, final Object ref) {
+        StringBuffer result = null;
+        Matcher matcher = replaceNameRegex.matcher(sourceText);
+        while (matcher.find()) {
+            if (result == null) result = new StringBuffer(sourceText.length() + 128);
+            String replacement;
+            switch (matcher.group().charAt(0)) {
+                // This relies on the first letter of what could pass through the regex
+                // uniquely identifying the replacement.
+                case 'P': // "PN"
+                    replacement = player.toString();
+                    break;
+                case 'S': // "SN"
+                    replacement = getCardToken(source);
+                    break;
+                case 'R': // "RN"
+                    replacement = getCardToken(ref);
+                    break;
+                case 'X': // "\\bX\\b" + ARG.EVENQUOTES
+                    replacement = getXCost(sourceText, ref);
+                    break;
+                default:
+                    throw new IllegalArgumentException("No replacement for " + matcher.group());
+            }
+            matcher.appendReplacement(result, replacement);
+        }
+        if (result == null) return sourceText;
+        matcher.appendTail(result);
+        return result.toString();
     }
 
     public static String replaceChoices(final String sourceText, final Object[] choices) {
@@ -96,11 +123,9 @@ public class MagicMessage {
         return result;
     }
 
-    private static final String CARD_TOKEN = "<%s" + CARD_ID_DELIMITER + "%d>";
-
     private static String getXCost(final String sourceText, final Object obj) {
-        if (obj != null && obj instanceof MagicPayedCost && !sourceText.contains("where X")) {
-            return "X (" + ((MagicPayedCost)obj).getX() + ")";
+        if (obj instanceof MagicPayedCost && !sourceText.contains("where X")) {
+            return "X (" + ((MagicPayedCost) obj).getX() + ")";
         } else {
             return "X";
         }
@@ -119,17 +144,17 @@ public class MagicMessage {
 
         if (obj instanceof MagicCard) {
             final MagicCard card = (MagicCard) obj;
-            return String.format(CARD_TOKEN, card.getName(), card.getId());
+            return "<" + card.getName() + CARD_ID_DELIMITER + card.getId() + ">";
         }
 
         if (obj instanceof MagicPermanent) {
             final MagicPermanent card = (MagicPermanent) obj;
-            return String.format(CARD_TOKEN, card.getName(), card.getCard().getId());
+            return "<" + card.getName() + CARD_ID_DELIMITER + card.getCard().getId() + ">";
         }
 
         if (obj instanceof MagicCardOnStack) {
             final MagicCardOnStack card = (MagicCardOnStack) obj;
-            return String.format(CARD_TOKEN, card.getName(), card.getCard().getId());
+            return "<" + card.getName() + CARD_ID_DELIMITER + card.getCard().getId() + ">";
         }
 
         if (obj instanceof MagicCardChoiceResult) {
@@ -145,7 +170,7 @@ public class MagicMessage {
     }
 
     public static String getCardToken(final String name, final MagicCard card) {
-        return String.format(CARD_TOKEN, name, card.getId());
+        return "<" + name + CARD_ID_DELIMITER + card.getId() + ">";
     }
 
     public static String getTokenizedCardNames(final Collection<MagicCard> cards) {

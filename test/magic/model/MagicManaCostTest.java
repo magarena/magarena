@@ -1,6 +1,5 @@
-package magic.model.mstatic;
+package magic.model;
 
-import magic.model.MagicManaCost;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -31,7 +30,7 @@ public class MagicManaCostTest {
         assertEquals("{X}{X}{U}", uxx.reducedBy(MagicManaCost.create("{2}")).toString());
 
         assertEquals("{X}{R}", rx.increasedBy(MagicManaCost.create("{2}")).reducedBy(
-                MagicManaCost.create("{2}")).toString());
+            MagicManaCost.create("{2}")).toString());
     }
 
     @Test
