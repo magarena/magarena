@@ -50,6 +50,9 @@ public class CardTest {
 
         Collection<MagicCardDefinition> allC = CardDefinitions.getAllPlayableCardDefs();
 
+        double totalTime = 0;
+        int totalCards = 0;
+
         Set<String> skip = new HashSet<>();
         String skipList = cmdline.getSkipList();
         if (skipList != null) {
@@ -83,8 +86,10 @@ public class CardTest {
         for (MagicCardDefinition token : tokens) {
             System.out.println("Testing token #" + t + ": " + token.getName());
             t++;
+            totalCards++;
             MagicGame game = new TokenScenario(token).getGame();
             final double duration = runGame(game);
+            totalTime += duration;
 
             System.out.printf("Token time: %.2fs : %s\n", duration, token);
         }
@@ -94,12 +99,16 @@ public class CardTest {
         for (String name : cards) {
             System.out.println("Testing card #" + n + ": " + name);
             n++;
+            totalCards++;
             MagicGame game = new CardScenario(name).getGame();
             final double duration = runGame(game);
+            totalTime += duration;
 
             System.out.printf("Time: %.2fs : %s\n", duration, name);
         }
-        System.out.println("All cards/tokens tested.");
+        System.out.println("Tested " + totalCards + " cards/tokens.");
+        System.out.println("Total time: " + totalTime);
+        System.out.println("Time per card: " + totalTime / totalCards);
     }
 
     private static double runGame(MagicGame game) {
