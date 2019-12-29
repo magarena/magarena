@@ -96,6 +96,9 @@ melvin
     (mostly log directory, crash logs, etc ...) with default application on a system where this is not supported.
     If opening fails, show a messagebox that also shows the file/directory name.
 
+- added the following cards:
+Attendant of Vraska, Dormant Gomazoa
+
 Release 1.95 (December 31, 2018)
 ============
 Ada Joule
