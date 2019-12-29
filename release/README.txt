@@ -73,6 +73,29 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.96 (December 31, 2019)
+============
+Ada Joule
+Martin Petricek
+melvin
+    
+    Add "card test" mode that tests all cards in a predefined scenario.
+    Optimize mesage generation.
+    
+    Add Riot ability to script
+    Add Afterlife [number] to ability script
+    Add Adapt to effect script
+    Add Addendum condition
+    Add Spectacle mechanic
+    Add EntersSpectacleEffect to MagicAbility
+    
+    fix cost of ability for Slith Bloodletter as reported on forum
+    Fix exception when attempting to open URL on a system where this is not supported.
+    If opening URL fails, show a messagebox that also shows the URL.
+    Fix exception when attempting to open file or directory
+    (mostly log directory, crash logs, etc ...) with default application on a system where this is not supported.
+    If opening fails, show a messagebox that also shows the file/directory name.
+
 Release 1.95 (December 31, 2018)
 ============
 Ada Joule
