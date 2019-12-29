@@ -78,23 +78,23 @@ Release 1.96 (December 31, 2019)
 Ada Joule
 Martin Petricek
 melvin
+
+- new "card test" mode that tests all cards in a predefined scenario
+
+- optimize message generation
     
-    Add "card test" mode that tests all cards in a predefined scenario.
-    Optimize mesage generation.
-    
-    Add Riot ability to script
-    Add Afterlife [number] to ability script
-    Add Adapt to effect script
-    Add Addendum condition
-    Add Spectacle mechanic
-    Add EntersSpectacleEffect to MagicAbility
-    
-    fix cost of ability for Slith Bloodletter as reported on forum
-    Fix exception when attempting to open URL on a system where this is not supported.
-    If opening URL fails, show a messagebox that also shows the URL.
-    Fix exception when attempting to open file or directory
-    (mostly log directory, crash logs, etc ...) with default application on a system where this is not supported.
-    If opening fails, show a messagebox that also shows the file/directory name.
+- added the following to the card script:
+  * condition: you cast this spell during your main phase
+  * ability: riot
+  * ability: afterlife <n>
+  * ability: adapt <n>
+  * ability: spectacle <mana cost>
+  * ability: When SN enters the battlefield, if its spectacle cost was paid, <effect>
+
+- fixed the following bugs:
+  * Slith Bloodletter has the wrong cost for its ability
+  * exception when attempting to open URL on a system where this is not supported
+  * exception when attempting to open file or directory with default application where this is not supported
 
 - added the following cards:
 Attendant of Vraska, Dormant Gomazoa
