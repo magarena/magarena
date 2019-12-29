@@ -206,6 +206,9 @@ tags: $(SRC)
 Test%.run: $(MAG)
 	$(DEBUG) -DtestGame=Test$* -Dmagarena.dir=`pwd`/release -jar $^ 2>&1 | tee Test$*.log
 
+AllCardsTest.log: $(MAG)
+	$(DEBUG) -Dmagarena.dir=`pwd`/release -jar $^ --cardtest 2>&1 | tee $@
+
 $(EXE): $(MAG)
 	cd launch4j; ./launch4j ../release/magarena.xml
 
