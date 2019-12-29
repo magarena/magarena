@@ -9,3 +9,4 @@ pt=5/4
 ability=Whenever you cast a historic spell, you may pay {B}. If you do, return SN from your graveyard to your hand.
 timing=main
 oracle=Whenever you cast a historic spell, you may pay {B}. If you do, return Lingering Phantom from your graveyard to your hand.
+status=not supported: trigger-from-graveyard
