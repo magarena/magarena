@@ -93,7 +93,7 @@
 2758030115 = Aucun duel enregistré n'a été trouvé.
 0607592645 = Le deck de %s est illégal.
 2119658154 = Êtes-vous sûr de vouloir quitter Magarena ?
-0615792264 = Confirmez pour quitter et retourner sur vôtre bureau
+0615792264 = Confirmez pour quitter et retourner sur votre bureau
 0394178960 = Action invalide !
 2951059284 = Information
 2415109466 = Attention
@@ -238,7 +238,7 @@
 2999666700 = Toujours passer pendant le tirage et commencer l'étape de combat
 3211592766 = Limiter les options pour les joueurs humains à ceux disponibles pour l'IA
 3988450823 = Les effets positifs, tels que la pompe et l'antipatinage, ne peuvent être appliqués qu'à vos permanents. Les effets négatifs, tels que la destruction et l'exil, ne peuvent être appliqués qu'aux permanents de l'adversaire.
-0762611188 = Message:
+0762611188 = Message :
 1296221841 = La durée en millisecondes (1000 = 1 seconde) que le jeu s'arrête lorsqu'un élément est ajouté à la pile. Cela n'a d'effet que si l'option "Priorité de passer automatiquement" est activée.
 3740169252 = Les paramètres de proxy ne sont pas valides!
 3887315804 = Images
@@ -404,10 +404,10 @@
 0279786682 = Affiche le fichier journal complet avec un aperçu de la façon dont l'IA pense.
 1582279068 = Le journal du jeu
 0861139228 = Vous jouez %s
-4215887867 = Premier.
-0973874351 = Second.
+4215887867 = premier.
+0973874351 = second.
 1455924259 = Vancouver Mulligan
-3775034151 = Jouez cette main
+3775034151 = Jouer cette main
 3936605750 = Retourne cette main vers votre bibliothèque puis tire une nouvelle main avec une carte de moins. <br> Vous pouvez en sacrifier 1 si votre main d'ouverture a moins de cartes que la taille de votre main de départ.
 # 1529602839 eg. this is the AI level.
 1529602839 = Niveau
@@ -501,8 +501,8 @@
 2557255279 = Reprendre le duel
 3265930652 = Explorateur de cartes
 1614380220 = Éditeur de deck
-1086464600 = Paramètres d'importation?
-4023198582 = Importez les paramètres à partir d'une version antérieure de Magarena.
+1086464600 = Importer les paramètres ?
+4023198582 = Importez les paramètres depuis une version antérieure de Magarena.
 0639716368 = Aide [F1]
 2258392056 = Ouvre la page wiki associée dans votre navigateur Internet.
 2224295428 = Importation...
