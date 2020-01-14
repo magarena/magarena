@@ -90,6 +90,10 @@
       <get src="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_ant/${error-prone-version}/error_prone_ant-${error-prone-version}.jar"
          dest="lib/error_prone_ant-${error-prone-version}.jar"
          skipexisting="true" />
+  	  <echo message="downloading jakarta activation to ${lib}"/>
+  	  <get src="https://repo1.maven.org/maven2/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar"
+  	     dest="${lib}/jakarta.activation-api-1.2.1.jar"
+  	     skipexisting="true" />
   </target>
 
   <!-- init - Create temporary directory to build the program -->
