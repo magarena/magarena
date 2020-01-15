@@ -1,7 +1,9 @@
 package magic.ui.screen;
 
 import java.awt.Component;
+
 import javax.swing.JComponent;
+
 import magic.ui.screen.interfaces.IThemeStyle;
 
 final class MScreenHelper {

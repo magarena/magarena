@@ -5,15 +5,17 @@ import java.awt.event.KeyEvent;
 import java.nio.file.Path;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.helpers.KeyEventAction;
+import magic.ui.mwidgets.MTextFileViewer;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.widget.PlainMenuButton;
-import magic.ui.mwidgets.MTextFileViewer;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")

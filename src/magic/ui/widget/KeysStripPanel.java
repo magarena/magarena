@@ -2,8 +2,10 @@ package magic.ui.widget;
 
 import java.awt.Color;
 import java.awt.Dimension;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 

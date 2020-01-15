@@ -1,9 +1,9 @@
 package magic.model.event;
 
+import magic.model.MagicCard;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCard;
 import magic.model.choice.MagicPayManaCostChoice;
 
 public class MagicPayManaCostEvent extends MagicEvent {

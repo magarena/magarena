@@ -1,7 +1,14 @@
 package magic.ui.dialog.prefs;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.LayoutManager;
+import java.awt.Rectangle;
+
+import javax.swing.JPanel;
+import javax.swing.JViewport;
+import javax.swing.Scrollable;
+import javax.swing.SwingConstants;
 
 /**
  * https://tips4java.wordpress.com/2009/12/20/scrollable-panel/

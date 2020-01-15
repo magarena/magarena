@@ -1,10 +1,10 @@
 package magic.model.event;
 
 import magic.model.MagicCard;
+import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCopyMap;
 import magic.model.action.DiscardCardAction;
 import magic.model.choice.MagicCardChoice;
 import magic.model.choice.MagicRandomCardChoice;

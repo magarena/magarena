@@ -6,12 +6,14 @@ import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
+
 import magic.model.MagicCardDefinition;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.widget.card.filter.ClickPreventer;

@@ -1,14 +1,16 @@
 package magic.ui.widget.about;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import magic.translate.StringContext;
+
 import magic.translate.MText;
+import magic.translate.StringContext;
 import magic.ui.MagicImages;
-import magic.ui.helpers.MouseHelper;
 import magic.ui.ScreenController;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.helpers.WidgetHelper;
 
 @SuppressWarnings("serial")

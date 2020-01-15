@@ -2,17 +2,17 @@ package magic.model.trigger;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicLocationType;
-import magic.model.choice.MagicMayChoice;
-import magic.model.event.MagicPayManaCostEvent;
-import magic.model.event.MagicEvent;
 import magic.model.action.AIRevealAction;
 import magic.model.action.CastCardAction;
 import magic.model.action.EnqueueTriggerAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicPayManaCostEvent;
 
 public class MiracleTrigger extends ThisDrawnTrigger {
 

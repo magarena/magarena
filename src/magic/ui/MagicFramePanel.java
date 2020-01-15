@@ -5,8 +5,10 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
 import magic.ui.helpers.ImageHelper;

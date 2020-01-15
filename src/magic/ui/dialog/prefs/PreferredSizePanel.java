@@ -1,10 +1,12 @@
 package magic.ui.dialog.prefs;
 
 import java.awt.event.MouseListener;
+
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.data.GeneralConfig;
 import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;

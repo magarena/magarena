@@ -1,9 +1,10 @@
 package magic.model.player;
 
 import java.util.Properties;
+
 import magic.ai.MagicAIImpl;
-import magic.translate.StringContext;
 import magic.translate.MText;
+import magic.translate.StringContext;
 import magic.utility.SortedProperties;
 
 public class AiProfile extends PlayerProfile {

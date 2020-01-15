@@ -8,7 +8,9 @@ import java.awt.Polygon;
 import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
 import javax.swing.JButton;
+
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")

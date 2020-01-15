@@ -2,10 +2,12 @@ package magic.ui.screen.about;
 
 import java.awt.Color;
 import java.awt.Font;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.Timer;
+
 import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 

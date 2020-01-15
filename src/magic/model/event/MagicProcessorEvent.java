@@ -2,10 +2,10 @@ package magic.model.event;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicSource;
 import magic.model.MagicLocationType;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.MagicSource;
 import magic.model.action.ShiftCardAction;
+import magic.model.choice.MagicTargetChoice;
 
 public class MagicProcessorEvent extends MagicEvent {
 

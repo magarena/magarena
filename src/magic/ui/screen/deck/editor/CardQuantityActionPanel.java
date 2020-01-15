@@ -2,10 +2,12 @@ package magic.ui.screen.deck.editor;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;

@@ -8,7 +8,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.SwingUtilities;
+
+import org.pushingpixels.trident.TridentConfig;
+
 import magic.ai.MagicAI;
 import magic.data.DeckGenerators;
 import magic.data.DuelConfig;
@@ -30,7 +34,6 @@ import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
 import magic.utility.ProgressReporter;
-import org.pushingpixels.trident.TridentConfig;
 
 public class MagicMain {
 

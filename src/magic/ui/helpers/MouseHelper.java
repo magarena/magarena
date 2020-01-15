@@ -2,6 +2,7 @@ package magic.ui.helpers;
 
 import java.awt.Component;
 import java.awt.Cursor;
+
 import magic.ui.ScreenController;
 import magic.ui.mwidgets.MWidget;
 

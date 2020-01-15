@@ -1,14 +1,15 @@
 package magic.ui;
 
-import magic.ui.utility.MagicStyle;
 import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.SplashScreen;
-import magic.utility.ProgressReporter;
+
+import magic.ui.utility.MagicStyle;
 import magic.utility.MagicSystem;
+import magic.utility.ProgressReporter;
 
 public class SplashProgressReporter extends ProgressReporter {
 

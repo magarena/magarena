@@ -3,9 +3,11 @@ package magic.ui.screen.menu.language;
 import java.awt.event.ActionEvent;
 import java.io.FileNotFoundException;
 import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
 import magic.data.GeneralConfig;
 import magic.translate.MText;
 import magic.ui.ScreenController;

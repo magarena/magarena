@@ -4,8 +4,10 @@ package magic.ui.utility;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
+
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.IntegerSetting;
 import magic.model.MagicCardDefinition;

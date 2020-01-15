@@ -1,7 +1,9 @@
 package magic.ui.screen.menu;
 
 import java.awt.Font;
+
 import javax.swing.AbstractAction;
+
 import magic.awt.MagicFont;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;

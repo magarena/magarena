@@ -5,8 +5,10 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

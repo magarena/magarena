@@ -2,6 +2,7 @@ package magic.ui.dialog;
 
 import java.awt.Color;
 import java.awt.Dimension;
+
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
@@ -12,10 +13,11 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-import magic.ui.utility.MagicStyle;
-import magic.ui.theme.Theme;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.ScreenController;
+import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

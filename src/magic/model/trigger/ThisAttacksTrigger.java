@@ -3,13 +3,13 @@ package magic.model.trigger;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSourceEvent;
-import magic.model.event.MagicExertEvent;
+import magic.model.action.ChangeCountersAction;
+import magic.model.action.EnqueueTriggerAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.action.EnqueueTriggerAction;
-import magic.model.action.ChangeCountersAction;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicExertEvent;
+import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilterFactory;
 
 public abstract class ThisAttacksTrigger extends AttacksTrigger {

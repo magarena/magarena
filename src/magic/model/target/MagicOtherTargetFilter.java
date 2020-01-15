@@ -1,7 +1,7 @@
 package magic.model.target;
 
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 
 // reference can not be used because game is copied.

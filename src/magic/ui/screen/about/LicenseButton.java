@@ -1,7 +1,9 @@
 package magic.ui.screen.about;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
+
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.MagicImages;

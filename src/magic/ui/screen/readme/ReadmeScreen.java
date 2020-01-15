@@ -1,8 +1,9 @@
 package magic.ui.screen.readme;
 
 import java.nio.file.Paths;
-import magic.ui.screen.HeaderFooterScreen;
+
 import magic.ui.mwidgets.MTextFileViewer;
+import magic.ui.screen.HeaderFooterScreen;
 
 @SuppressWarnings("serial")
 public class ReadmeScreen extends HeaderFooterScreen {

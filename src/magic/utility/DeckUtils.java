@@ -1,5 +1,8 @@
 package magic.utility;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+import static java.nio.file.FileVisitOption.FOLLOW_LINKS;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -22,6 +25,9 @@ import java.util.TreeMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.CRC32;
+
+import org.apache.commons.io.FilenameUtils;
+
 import magic.data.CardDefinitions;
 import magic.data.DeckType;
 import magic.exception.InvalidDeckException;
@@ -32,9 +38,6 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicRandom;
 import magic.utility.MagicFileSystem.DataPath;
-import org.apache.commons.io.FilenameUtils;
-import static java.nio.charset.StandardCharsets.UTF_8;
-import static java.nio.file.FileVisitOption.FOLLOW_LINKS;
 
 public class DeckUtils {
 

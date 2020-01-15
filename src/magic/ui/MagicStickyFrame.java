@@ -7,7 +7,9 @@ import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+
 import javax.swing.JFrame;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
 import magic.data.settings.IntegerSetting;

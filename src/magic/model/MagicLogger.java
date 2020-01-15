@@ -1,14 +1,16 @@
 package magic.model;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
-import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class MagicLogger {
 

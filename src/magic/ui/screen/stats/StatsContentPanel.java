@@ -3,11 +3,13 @@ package magic.ui.screen.stats;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.File;
+
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JSpinner;
+
 import magic.data.stats.h2.H2Database;
 import magic.ui.FontsAndBorders;
 import magic.ui.mwidgets.MFileLink;

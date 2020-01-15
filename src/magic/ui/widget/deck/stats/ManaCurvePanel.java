@@ -1,9 +1,11 @@
 package magic.ui.widget.deck.stats;
 
 import java.awt.Color;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.data.CardStatistics;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;

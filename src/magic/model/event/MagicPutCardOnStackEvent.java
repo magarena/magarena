@@ -2,15 +2,15 @@ package magic.model.event;
 
 import java.util.Collections;
 
-import magic.model.MagicGame;
 import magic.model.MagicCard;
-import magic.model.MagicPlayer;
+import magic.model.MagicGame;
 import magic.model.MagicLocationType;
+import magic.model.MagicPlayer;
 import magic.model.MagicTuple;
-import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
-import magic.model.action.MagicPermanentAction;
+import magic.model.stack.MagicCardOnStack;
 
 public class MagicPutCardOnStackEvent extends MagicEvent {
     public MagicPutCardOnStackEvent(final MagicCard source, final MagicPlayer player, final MagicLocationType fromLocation, final MagicLocationType toLocation, final MagicPermanentAction mod) {

@@ -2,6 +2,7 @@ package magic.ui.screen.keywords;
 
 import java.awt.Color;
 import java.io.IOException;
+
 import javax.swing.JList;
 import javax.swing.JScrollPane;
 

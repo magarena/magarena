@@ -1,8 +1,10 @@
 package magic.ui.screen.stats;
 
-import magic.data.stats.GameStatsInfo;
 import java.util.List;
+
 import javax.swing.table.AbstractTableModel;
+
+import magic.data.stats.GameStatsInfo;
 import magic.data.stats.MagicStats;
 
 @SuppressWarnings("serial")

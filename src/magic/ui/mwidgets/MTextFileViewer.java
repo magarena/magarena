@@ -7,8 +7,10 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 import java.nio.file.Path;
 import java.util.function.Function;
+
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TexturedPanel;

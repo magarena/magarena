@@ -1,9 +1,9 @@
 package magic.ui.widget.deck;
 
-import magic.ui.widget.deck.stats.DeckStatisticsViewer;
 import magic.model.MagicDeck;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.deck.stats.DeckStatisticsViewer;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

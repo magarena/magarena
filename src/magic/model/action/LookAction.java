@@ -1,16 +1,16 @@
 package magic.model.action;
 
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicSource;
-import magic.model.MagicPlayer;
-import magic.model.choice.MagicFromCardListChoice;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicEventAction;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import magic.model.MagicCard;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.choice.MagicFromCardListChoice;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 
 public class LookAction extends MagicAction {
 

@@ -1,6 +1,7 @@
 package magic;
 
 import java.io.File;
+
 import magic.ai.MagicAIImpl;
 import magic.data.DeckGenerators;
 import magic.data.DuelConfig;

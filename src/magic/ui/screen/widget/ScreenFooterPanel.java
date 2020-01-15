@@ -2,10 +2,12 @@ package magic.ui.screen.widget;
 
 import java.awt.Color;
 import java.awt.Dimension;
+
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.screen.interfaces.IThemeStyle;

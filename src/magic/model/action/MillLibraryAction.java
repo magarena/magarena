@@ -1,9 +1,9 @@
 package magic.model.action;
 
+import java.util.List;
+
 import magic.model.MagicCard;
 import magic.model.MagicPlayer;
-
-import java.util.List;
 
 /**
  * Action that removes fixed amount of cards from players library and moves them to that player's graveyard.

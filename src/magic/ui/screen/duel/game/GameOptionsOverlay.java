@@ -1,7 +1,9 @@
 package magic.ui.screen.duel.game;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
+
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;

@@ -1,14 +1,16 @@
 package magic.ui.widget.deck.stats;
 
 import java.awt.Color;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.data.CardStatistics;
 import magic.translate.MText;
-import magic.ui.MagicImages;
 import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

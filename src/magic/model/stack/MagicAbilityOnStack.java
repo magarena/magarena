@@ -3,8 +3,8 @@ package magic.model.stack;
 import magic.model.MagicCopyMap;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.event.MagicHandCastActivation;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicHandCastActivation;
 import magic.model.event.MagicPermanentActivation;
 
 

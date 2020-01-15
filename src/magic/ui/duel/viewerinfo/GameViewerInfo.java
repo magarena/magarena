@@ -3,6 +3,7 @@ package magic.ui.duel.viewerinfo;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;

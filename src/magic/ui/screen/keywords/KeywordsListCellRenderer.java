@@ -2,8 +2,10 @@ package magic.ui.screen.keywords;
 
 import java.awt.Color;
 import java.awt.Component;
+
 import javax.swing.DefaultListCellRenderer;
 import javax.swing.JList;
+
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")

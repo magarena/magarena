@@ -8,8 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
+
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;

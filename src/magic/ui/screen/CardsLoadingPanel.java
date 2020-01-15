@@ -2,8 +2,10 @@ package magic.ui.screen;
 
 import java.awt.Color;
 import java.awt.event.HierarchyEvent;
+
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+
 import magic.awt.MagicFont;
 import magic.ui.MagicImages;
 import magic.ui.theme.Theme;

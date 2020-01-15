@@ -2,7 +2,9 @@ package magic.ui.screen.menu;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;

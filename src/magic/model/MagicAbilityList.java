@@ -1,16 +1,16 @@
 package magic.model;
 
-import magic.model.event.MagicActivation;
-import magic.model.event.MagicManaActivation;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.trigger.MagicTrigger;
-import magic.model.mstatic.MagicStatic;
-import magic.model.action.AddTriggerAction;
-import magic.model.action.AddStaticAction;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+
+import magic.model.action.AddStaticAction;
+import magic.model.action.AddTriggerAction;
+import magic.model.event.MagicActivation;
+import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.mstatic.MagicStatic;
+import magic.model.trigger.MagicTrigger;
 
 public class MagicAbilityList implements MagicAbilityStore {
 

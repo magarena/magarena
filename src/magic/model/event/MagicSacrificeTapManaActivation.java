@@ -1,10 +1,10 @@
 package magic.model.event;
 
-import magic.model.MagicManaType;
-import magic.model.MagicPermanent;
-
 import java.util.Arrays;
 import java.util.List;
+
+import magic.model.MagicManaType;
+import magic.model.MagicPermanent;
 
 public class MagicSacrificeTapManaActivation extends MagicManaActivation {
 

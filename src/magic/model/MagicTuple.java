@@ -1,11 +1,11 @@
 package magic.model;
 
-import magic.model.stack.MagicItemOnStack;
-import magic.model.event.MagicChainEventFactory;
-import magic.model.action.MagicPermanentAction;
-
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+
+import magic.model.action.MagicPermanentAction;
+import magic.model.event.MagicChainEventFactory;
+import magic.model.stack.MagicItemOnStack;
 
 public class MagicTuple implements MagicCopyable {
 

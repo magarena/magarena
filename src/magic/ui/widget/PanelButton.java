@@ -2,9 +2,11 @@ package magic.ui.widget;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
 import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 

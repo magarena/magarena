@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
+
 import magic.generator.RandomDeckGenerator;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;

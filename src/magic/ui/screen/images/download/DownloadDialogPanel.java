@@ -5,10 +5,12 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;

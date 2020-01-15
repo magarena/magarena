@@ -2,18 +2,20 @@ package magic.ui.widget.duel.sidebar;
 
 import java.awt.Color;
 import java.awt.Insets;
+
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.CompoundBorder;
+
 import magic.data.MagicIcon;
 import magic.model.MagicMessage;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.message.TextLabel;
-import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

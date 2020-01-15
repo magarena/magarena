@@ -4,15 +4,16 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
+
 import magic.data.EnglishToInt;
 import magic.data.RomanToInt;
 import magic.model.action.MagicPlayMod;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
+import magic.model.target.MagicTargetHint;
 
 public class ARG {
     public static final String COLON = "\\s*:\\s*";

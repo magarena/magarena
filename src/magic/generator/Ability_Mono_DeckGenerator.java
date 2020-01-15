@@ -1,14 +1,14 @@
 package magic.generator;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import magic.data.CardDefinitions;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicRandom;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
 

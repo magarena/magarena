@@ -1,5 +1,7 @@
 package magic.ai;
 
+import java.util.Set;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -8,8 +10,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.choice.MagicCombatCreature;
-
-import java.util.Set;
 
 public class ArtificialScoringSystem {
 

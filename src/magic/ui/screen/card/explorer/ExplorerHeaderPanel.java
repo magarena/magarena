@@ -4,11 +4,13 @@ import java.awt.Color;
 import java.awt.Font;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-import magic.translate.StringContext;
+
 import magic.translate.MText;
+import magic.translate.StringContext;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

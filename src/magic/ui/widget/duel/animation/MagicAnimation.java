@@ -2,6 +2,7 @@ package magic.ui.widget.duel.animation;
 
 import java.awt.Graphics;
 import java.util.concurrent.atomic.AtomicBoolean;
+
 import javax.swing.JComponent;
 
 public abstract class MagicAnimation {

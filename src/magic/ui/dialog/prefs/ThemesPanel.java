@@ -4,10 +4,12 @@ import java.awt.Cursor;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.MouseListener;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
 import magic.data.settings.IntegerSetting;

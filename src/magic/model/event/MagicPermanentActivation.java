@@ -1,5 +1,9 @@
 package magic.model.event;
 
+import java.util.Collections;
+import java.util.List;
+
+import magic.model.ARG;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
@@ -8,16 +12,12 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.ARG;
 import magic.model.action.AddStaticAction;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicAbilityOnStack;
-
-import java.util.Collections;
-import java.util.List;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition {
 

@@ -1,16 +1,16 @@
 package magic.model.trigger;
 
+import magic.data.CardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.RemoveFromPlayAction;
-import magic.model.action.SacrificeAction;
 import magic.model.action.DestroyAction;
 import magic.model.action.DrawAction;
+import magic.model.action.RemoveFromPlayAction;
+import magic.model.action.SacrificeAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
-import magic.data.CardDefinitions;
 
 public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
     public AtEndOfTurnTrigger(final int priority) {

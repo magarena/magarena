@@ -1,13 +1,13 @@
 package magic.model.action;
 
+import java.util.List;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
-
-import java.util.List;
 
 /**
  * Ancestor of various library-milling actions

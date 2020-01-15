@@ -5,13 +5,15 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Stroke;
+
+import org.pushingpixels.trident.Timeline;
+import org.pushingpixels.trident.ease.Spline;
+
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
-import org.pushingpixels.trident.Timeline;
-import org.pushingpixels.trident.ease.Spline;
 
 @SuppressWarnings("serial")
 public abstract class ChoiceBorderPanelButton extends ChoicePanelButton {

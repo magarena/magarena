@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import java.util.Arrays;
+
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;

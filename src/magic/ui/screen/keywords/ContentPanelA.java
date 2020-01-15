@@ -1,6 +1,7 @@
 package magic.ui.screen.keywords;
 
 import java.io.IOException;
+
 import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 

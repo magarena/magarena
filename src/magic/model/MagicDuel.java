@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Properties;
+
 import magic.data.DeckGenerators;
 import magic.data.DuelConfig;
 import magic.data.stats.MagicStats;

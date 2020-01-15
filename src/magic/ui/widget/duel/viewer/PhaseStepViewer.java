@@ -4,9 +4,11 @@ import java.awt.Color;
 import java.awt.Font;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.model.phase.MagicPhaseType;
 import magic.translate.MText;
 import magic.ui.utility.MagicStyle;

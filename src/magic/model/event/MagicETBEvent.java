@@ -1,21 +1,21 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicGame;
 import magic.model.MagicMessage;
+import magic.model.MagicPayedCost;
+import magic.model.action.EnterAsCopyAction;
+import magic.model.action.MagicPlayMod;
+import magic.model.action.PlayCardFromStackAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicCopyPermanentPicker;
 import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.target.MagicTargetType;
 import magic.model.target.MagicTargetPicker;
-import magic.model.condition.MagicCondition;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.choice.MagicMayChoice;
-import magic.model.action.EnterAsCopyAction;
-import magic.model.action.PlayCardFromStackAction;
-import magic.model.action.MagicPlayMod;
+import magic.model.target.MagicTargetType;
 
 public abstract class MagicETBEvent implements MagicCardEvent,MagicEventAction,MagicChangeCardDefinition {
 

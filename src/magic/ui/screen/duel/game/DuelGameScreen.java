@@ -1,6 +1,7 @@
 package magic.ui.screen.duel.game;
 
 import javax.swing.SwingUtilities;
+
 import magic.data.GeneralConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;

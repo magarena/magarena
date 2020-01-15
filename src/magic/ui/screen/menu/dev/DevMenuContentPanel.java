@@ -2,15 +2,16 @@ package magic.ui.screen.menu.dev;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.util.Collections;
 import java.util.List;
+
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
+
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.data.MagicSetDefinitions;

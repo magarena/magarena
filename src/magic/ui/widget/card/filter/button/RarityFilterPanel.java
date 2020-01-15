@@ -1,6 +1,7 @@
 package magic.ui.widget.card.filter.button;
 
 import java.awt.Dimension;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRarity;
 import magic.translate.MText;

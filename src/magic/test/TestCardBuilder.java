@@ -5,7 +5,9 @@ import java.awt.image.DataBufferInt;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
+
 import javax.imageio.ImageIO;
+
 import magic.ai.MagicAIImpl;
 import magic.cardBuilder.renderers.CardBuilder;
 import magic.data.CardDefinitions;

@@ -3,11 +3,13 @@ package magic.ui.mwidgets;
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemListener;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import javax.swing.event.ChangeListener;
+
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.helpers.ImageHelper;

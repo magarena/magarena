@@ -4,8 +4,10 @@ import java.awt.Component;
 import java.awt.event.MouseListener;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.translate.MText;
 import magic.ui.mwidgets.MCheckBox;
 import magic.ui.widget.duel.animation.AnimationFx;

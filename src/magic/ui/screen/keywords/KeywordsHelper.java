@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 import magic.data.GeneralConfig;
 import magic.translate.MText;
 import magic.utility.MagicFileSystem;

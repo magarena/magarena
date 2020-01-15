@@ -1,10 +1,10 @@
 package magic.model.event;
 
 import magic.model.MagicCostManaType;
-import magic.model.MagicType;
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
+import magic.model.MagicType;
 
 /** Each source can only be activated once for mana. Each mana type must come from at most one activation. */
 public class MagicSourceManaActivation {

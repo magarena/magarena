@@ -7,9 +7,9 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
-import magic.model.stack.MagicItemOnStack;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.stack.MagicItemOnStack;
 
 public abstract class MagicActivation<T extends MagicSource> implements MagicEventAction, Comparable<MagicActivation<?>> {
 

@@ -5,9 +5,11 @@ import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.SwingUtilities;
+
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.MagicSound;

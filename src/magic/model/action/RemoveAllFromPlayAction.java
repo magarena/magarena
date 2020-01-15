@@ -1,12 +1,12 @@
 package magic.model.action;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-
-import java.util.Collection;
-import java.util.ArrayList;
 
 public class RemoveAllFromPlayAction extends MagicAction {
 

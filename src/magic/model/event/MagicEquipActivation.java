@@ -12,9 +12,9 @@ import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
 import magic.model.target.MagicEquipTargetPicker;
 import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
-import magic.model.target.MagicTargetFilter;
 
 public class MagicEquipActivation extends MagicPermanentActivation {
 

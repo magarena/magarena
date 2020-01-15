@@ -6,14 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import javax.swing.JTextField;
 import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+
 import magic.translate.MText;
-import magic.ui.widget.card.filter.button.FilterPanel;
-import magic.ui.widget.*;
+import magic.ui.widget.TextPrompt;
 import magic.ui.widget.TextPrompt.Show;
+import magic.ui.widget.card.filter.button.FilterPanel;
 
 @SuppressWarnings("serial")
 public class CardFilterTextField extends JTextField

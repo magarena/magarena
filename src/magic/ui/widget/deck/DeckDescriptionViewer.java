@@ -2,9 +2,11 @@ package magic.ui.widget.deck;
 
 import java.awt.Color;
 import java.awt.Dimension;
+
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
 import magic.translate.MText;

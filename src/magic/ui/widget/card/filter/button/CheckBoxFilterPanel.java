@@ -2,6 +2,7 @@ package magic.ui.widget.card.filter.button;
 
 import java.awt.LayoutManager;
 import java.util.List;
+
 import magic.model.MagicCardDefinition;
 import magic.ui.widget.card.filter.IFilterListener;
 import magic.ui.widget.card.filter.dialog.CheckboxFilterDialog;

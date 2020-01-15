@@ -1,5 +1,7 @@
 package magic.model.event;
 
+import java.util.List;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
@@ -8,8 +10,6 @@ import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayerState;
 import magic.model.condition.MagicCondition;
-
-import java.util.List;
 
 public abstract class MagicManaActivation implements MagicChangeCardDefinition {
 

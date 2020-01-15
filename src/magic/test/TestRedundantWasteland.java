@@ -4,7 +4,7 @@ import magic.ai.MagicAIImpl;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.phase.*;
+import magic.model.phase.MagicUpkeepPhase;
 
 /*
  * AI should attack with Bears and kill player in two turns.

@@ -1,9 +1,10 @@
 package magic.ui.widget.deck;
 
-import magic.data.DeckGenerators;
-import magic.ui.MagicImages;
-import magic.model.MagicColor;
-import magic.ui.FontsAndBorders;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.util.Vector;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
@@ -13,13 +14,12 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.util.Vector;
+import magic.data.DeckGenerators;
 import magic.data.MagicIcon;
+import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
+import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

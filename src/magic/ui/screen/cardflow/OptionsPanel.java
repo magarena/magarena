@@ -1,8 +1,10 @@
 package magic.ui.screen.cardflow;
 
 import java.awt.Color;
+
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.dialog.prefs.ImageSizePresets;

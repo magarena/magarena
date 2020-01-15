@@ -1,11 +1,12 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
-import magic.model.MagicCounterType;
-import magic.model.action.TurnFaceUpAction;
-import magic.model.action.ChangeCountersAction;
 import java.util.List;
+
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
 import magic.model.MagicMessage;
+import magic.model.action.ChangeCountersAction;
+import magic.model.action.TurnFaceUpAction;
 
 public class MagicMegamorphActivation extends MagicMorphActivation {
 

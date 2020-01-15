@@ -6,16 +6,19 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.Rectangle;
+
 import javax.swing.SwingUtilities;
-import magic.data.GeneralConfig;
-import magic.ui.MagicImages;
-import magic.ui.duel.viewerinfo.CardViewerInfo;
-import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.Timeline.TimelineState;
 import org.pushingpixels.trident.TimelineScenario;
 import org.pushingpixels.trident.callback.TimelineCallbackAdapter;
 import org.pushingpixels.trident.ease.Spline;
+
+import magic.data.GeneralConfig;
+import magic.ui.MagicImages;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 
 abstract class CardAnimation extends MagicAnimation {
 

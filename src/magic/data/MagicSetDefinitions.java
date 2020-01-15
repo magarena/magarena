@@ -2,13 +2,13 @@ package magic.data;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-import java.awt.Desktop;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSetDefinition;
 import magic.ui.helpers.DesktopHelper;

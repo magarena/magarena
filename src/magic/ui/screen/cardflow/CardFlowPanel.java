@@ -16,13 +16,16 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
-import magic.ui.dialog.prefs.ImageSizePresets;
-import magic.ui.helpers.ImageHelper;
+
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.callback.TimelineCallback;
+
+import magic.ui.dialog.prefs.ImageSizePresets;
+import magic.ui.helpers.ImageHelper;
 
 @SuppressWarnings("serial")
 class CardFlowPanel extends JPanel implements TimelineCallback {

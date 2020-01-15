@@ -1,16 +1,18 @@
 package magic.ui;
 
-import magic.translate.MText;
-import magic.ui.helpers.DesktopHelper;
-import magic.ui.helpers.ImageHelper;
 import java.awt.Component;
 import java.awt.Desktop;
 import java.nio.file.Path;
+
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
-import magic.exception.handler.FileExceptionHandler;
+
 import magic.exception.handler.ExceptionReport;
+import magic.exception.handler.FileExceptionHandler;
+import magic.translate.MText;
+import magic.ui.helpers.DesktopHelper;
+import magic.ui.helpers.ImageHelper;
 import magic.utility.MagicFileSystem;
 
 public class UiExceptionHandler extends FileExceptionHandler {

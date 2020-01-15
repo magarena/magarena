@@ -2,6 +2,7 @@ package magic.ui.widget.duel;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.widget.TexturedPanel;

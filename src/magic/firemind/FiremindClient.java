@@ -22,14 +22,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
-import magic.data.CardDefinitions;
-import magic.data.GeneralConfig;
-import magic.utility.MagicFileSystem;
-import magic.utility.MagicFileSystem.DataPath;
+
 import org.apache.commons.io.FileUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import magic.data.CardDefinitions;
+import magic.data.GeneralConfig;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class FiremindClient {
 

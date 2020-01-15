@@ -14,6 +14,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
+
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerators;
 import magic.data.GeneralConfig;

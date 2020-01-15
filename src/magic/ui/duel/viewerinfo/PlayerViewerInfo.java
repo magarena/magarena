@@ -2,7 +2,9 @@ package magic.ui.duel.viewerinfo;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.ImageIcon;
+
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicCardList;
 import magic.model.MagicCounterType;

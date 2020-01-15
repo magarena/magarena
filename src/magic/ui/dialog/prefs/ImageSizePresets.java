@@ -1,6 +1,7 @@
 package magic.ui.dialog.prefs;
 
 import java.awt.Dimension;
+
 import magic.data.GeneralConfig;
 import magic.translate.MText;
 

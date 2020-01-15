@@ -5,7 +5,9 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Rectangle;
 import java.util.Set;
+
 import javax.swing.JLabel;
+
 import magic.model.MagicPlayerZone;
 import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;

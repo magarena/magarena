@@ -6,8 +6,10 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.stream.Stream;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewerinfo.CardViewerInfo;

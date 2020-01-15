@@ -3,6 +3,7 @@ package magic.ui.theme;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+
 import javax.swing.ImageIcon;
 
 public interface Theme {

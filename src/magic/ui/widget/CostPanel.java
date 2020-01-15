@@ -1,15 +1,15 @@
 package magic.ui.widget;
 
-import magic.model.MagicManaCost;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.util.List;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.util.List;
 import magic.data.MagicIcon;
+import magic.model.MagicManaCost;
 import magic.ui.MagicImages;
 
 @SuppressWarnings("serial")

@@ -8,8 +8,10 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
+
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
+
 import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;

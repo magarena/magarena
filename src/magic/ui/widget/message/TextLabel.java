@@ -16,8 +16,10 @@ import java.awt.event.MouseMotionAdapter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.Theme;

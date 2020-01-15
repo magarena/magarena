@@ -2,6 +2,7 @@ package magic.ui.screen.images.download;
 
 import java.util.Date;
 import java.util.stream.Stream;
+
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;

@@ -1,9 +1,11 @@
 package magic.ui.widget.card.filter.dialog;
 
 import java.awt.LayoutManager2;
+
 import javax.swing.JDialog;
-import magic.ui.ScreenController;
+
 import magic.ui.FontsAndBorders;
+import magic.ui.ScreenController;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

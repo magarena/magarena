@@ -5,14 +5,16 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
 import javax.swing.ImageIcon;
+
 import magic.data.MagicIcon;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.ui.MagicImages;
-import magic.ui.widget.card.CardIcon;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.card.CardIcon;
 
 /**
  * Used to assign an ability with an icon which is displayed

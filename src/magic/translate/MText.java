@@ -1,6 +1,5 @@
 package magic.translate;
 
-import groovy.json.StringEscapeUtils;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,6 +23,8 @@ import java.util.jar.JarInputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.CRC32;
+
+import groovy.json.StringEscapeUtils;
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
 import magic.utility.MagicFileSystem;

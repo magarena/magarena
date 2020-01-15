@@ -3,8 +3,10 @@ package magic.ui.screen;
 import java.awt.Dimension;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
+
 import magic.ui.screen.cardflow.FlashTextOverlay;
 
 @SuppressWarnings("serial")

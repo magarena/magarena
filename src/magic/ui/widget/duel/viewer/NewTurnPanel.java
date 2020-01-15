@@ -2,6 +2,7 @@ package magic.ui.widget.duel.viewer;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.translate.MText;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.theme.Theme;

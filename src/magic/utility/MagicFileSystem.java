@@ -18,12 +18,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
+
 import magic.data.GeneralConfig;
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGameLog;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 
 /**
  * Utility class for useful or common file-system related tasks.

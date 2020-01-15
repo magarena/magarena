@@ -3,9 +3,11 @@ package magic.ui.screen.stats;
 import java.awt.Color;
 import java.awt.Font;
 import java.text.NumberFormat;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 

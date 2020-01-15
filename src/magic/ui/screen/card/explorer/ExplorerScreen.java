@@ -2,8 +2,10 @@ package magic.ui.screen.card.explorer;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+
 import javax.swing.ImageIcon;
 import javax.swing.SwingUtilities;
+
 import magic.data.MagicIcon;
 import magic.data.MagicSetDefinitions;
 import magic.translate.MText;

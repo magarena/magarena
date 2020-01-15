@@ -2,6 +2,7 @@ package magic.ui.widget.card.filter;
 
 import java.util.EnumSet;
 import java.util.Set;
+
 import magic.translate.MText;
 
 public enum SearchOperand {

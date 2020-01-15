@@ -2,9 +2,11 @@ package magic.ui.screen.decks;
 
 import java.awt.Component;
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
+
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;

@@ -4,8 +4,10 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;

@@ -2,9 +2,11 @@ package magic.ui.screen;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+
 import magic.data.MagicIcon;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.widget.ActionBarButton;

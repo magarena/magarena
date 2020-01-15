@@ -1,7 +1,8 @@
 package magic.ui.widget.card.filter;
 
-import magic.ui.widget.card.filter.button.FilterPanel;
 import javax.swing.JPanel;
+
+import magic.ui.widget.card.filter.button.FilterPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

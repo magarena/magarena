@@ -1,9 +1,9 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
-import magic.model.MagicSource;
-import magic.model.MagicPlayer;
 import magic.model.MagicCopyMap;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.MagicTuple;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;

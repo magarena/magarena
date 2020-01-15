@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import java.util.Set;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;

@@ -10,8 +10,10 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
 import javax.swing.BorderFactory;
 import javax.swing.Timer;
+
 import magic.awt.MagicFont;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;

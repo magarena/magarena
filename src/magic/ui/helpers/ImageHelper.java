@@ -22,11 +22,13 @@ import java.awt.image.FilteredImageSource;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
+
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
+
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.image.filter.ColorSwapImageFilter;

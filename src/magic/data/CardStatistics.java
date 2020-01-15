@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;

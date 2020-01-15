@@ -1,6 +1,7 @@
 package magic.ui.screen.keywords;
 
 import javax.swing.JLabel;
+
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

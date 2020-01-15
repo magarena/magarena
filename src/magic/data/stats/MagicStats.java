@@ -3,6 +3,9 @@ package magic.data.stats;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.h2.api.ErrorCode;
+
 import magic.data.DeckType;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
@@ -13,7 +16,6 @@ import magic.model.MagicGame;
 import magic.ui.ScreenController;
 import magic.utility.DeckUtils;
 import magic.utility.MagicSystem;
-import org.h2.api.ErrorCode;
 
 public final class MagicStats {
     private MagicStats() {}

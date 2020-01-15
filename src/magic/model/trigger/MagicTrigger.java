@@ -1,12 +1,12 @@
 package magic.model.trigger;
 
+import magic.exception.GameException;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
-import magic.exception.GameException;
 
 /** Lower priority values trigger before higher priority values. */
 public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCardDefinition {

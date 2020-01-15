@@ -1,10 +1,10 @@
 package magic.model.event;
 
+import magic.model.MagicCopyMap;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCounterType;
-import magic.model.MagicCopyMap;
 import magic.model.action.ChangeCountersAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;

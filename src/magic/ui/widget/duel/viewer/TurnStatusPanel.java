@@ -1,6 +1,7 @@
 package magic.ui.widget.duel.viewer;
 
 import javax.swing.JPanel;
+
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.Theme;

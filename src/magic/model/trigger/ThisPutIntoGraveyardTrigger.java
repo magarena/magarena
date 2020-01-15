@@ -8,9 +8,9 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MoveCardAction;
-import magic.model.action.ShuffleCardsIntoLibraryAction;
 import magic.model.action.PlayCardAction;
 import magic.model.action.RevealAction;
+import magic.model.action.ShuffleCardsIntoLibraryAction;
 import magic.model.event.MagicEvent;
 
 public abstract class ThisPutIntoGraveyardTrigger extends MagicTrigger<MoveCardAction> {

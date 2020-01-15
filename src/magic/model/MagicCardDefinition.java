@@ -1,14 +1,34 @@
 package magic.model;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.EnumSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.data.CardDefinitions;
 import magic.data.CardProperty;
-import magic.model.event.*;
+import magic.model.condition.MagicCondition;
+import magic.model.event.MagicActivation;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicAdditionalCost;
+import magic.model.event.MagicCardEvent;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventSource;
+import magic.model.event.MagicHandCastActivation;
+import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicPayManaCostEvent;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayCardEvent;
+import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
-import magic.model.condition.MagicCondition;
 import magic.model.trigger.AtBeginOfFirstMainPhaseTrigger;
 import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.EntersWithCounterTrigger;

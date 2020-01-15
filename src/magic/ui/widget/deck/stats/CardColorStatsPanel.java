@@ -4,9 +4,11 @@ import java.awt.Color;
 import java.awt.Font;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.data.CardStatistics;
 import magic.model.MagicColor;
 import magic.translate.MText;

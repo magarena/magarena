@@ -2,8 +2,10 @@ package magic.ui.screen.deck.editor;
 
 import java.text.NumberFormat;
 import java.util.List;
+
 import javax.swing.JPanel;
 import javax.swing.JTable;
+
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;
 import magic.translate.StringContext;

@@ -8,12 +8,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.nio.file.Path;
+
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.ScreenController;

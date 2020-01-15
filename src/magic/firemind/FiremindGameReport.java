@@ -1,23 +1,23 @@
 package magic.firemind;
 
-import magic.utility.FileIO;
-import magic.model.action.MagicAction;
-import magic.model.stack.MagicItemOnStack;
-import magic.utility.MagicFileSystem;
-import magic.utility.MagicFileSystem.DataPath;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
+import magic.model.action.MagicAction;
+import magic.model.stack.MagicItemOnStack;
+import magic.utility.FileIO;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
 
 public class FiremindGameReport implements Thread.UncaughtExceptionHandler {

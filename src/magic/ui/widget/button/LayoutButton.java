@@ -1,7 +1,9 @@
 package magic.ui.widget.button;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
+
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.screen.widget.ActionBarButton;

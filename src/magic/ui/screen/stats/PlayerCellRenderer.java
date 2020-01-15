@@ -8,10 +8,12 @@ import java.awt.Point;
 import java.awt.font.TextAttribute;
 import java.util.HashMap;
 import java.util.Map;
+
 import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableCellRenderer;
+
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 

@@ -5,10 +5,11 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.nio.file.Path;
 import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -18,6 +19,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
+
 import magic.FiremindQueueWorker;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;

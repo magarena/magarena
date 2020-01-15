@@ -4,11 +4,11 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.action.PreventDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
-import magic.model.action.PreventDamageAction;
 
 public abstract class PreventDamageTrigger extends IfDamageWouldBeDealtTrigger {
     public PreventDamageTrigger() {

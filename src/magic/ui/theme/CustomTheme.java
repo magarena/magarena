@@ -12,7 +12,9 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
+
 import javax.swing.ImageIcon;
+
 import magic.ui.ImageFileIO;
 import magic.ui.MagicImages;
 import magic.utility.FileIO;

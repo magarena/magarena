@@ -14,13 +14,14 @@ import java.awt.geom.Ellipse2D;
 import java.awt.image.BufferedImage;
 import java.text.AttributedString;
 import java.util.List;
-import javax.swing.ImageIcon;
-import magic.awt.MagicFont;
 
+import javax.swing.ImageIcon;
+
+import magic.awt.MagicFont;
 import magic.data.MagicIcon;
+import magic.model.IRenderableCard;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
-import magic.model.IRenderableCard;
 
 public class TitleFrame {
 

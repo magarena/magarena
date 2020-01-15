@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import magic.data.MagicIcon;
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;

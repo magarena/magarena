@@ -6,8 +6,10 @@ import java.awt.event.ComponentEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
 import magic.ui.helpers.KeyEventAction;
 
 @SuppressWarnings("serial")

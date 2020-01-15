@@ -2,6 +2,7 @@ package magic.data;
 
 import java.io.File;
 import java.util.Properties;
+
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;

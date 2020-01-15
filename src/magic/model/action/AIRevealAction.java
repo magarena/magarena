@@ -1,11 +1,12 @@
 package magic.model.action;
 
-import magic.model.MagicCard;
-import magic.model.MagicGame;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
-import java.util.Arrays;
+
+import magic.model.MagicCard;
+import magic.model.MagicGame;
 
 public class AIRevealAction extends MagicAction {
 

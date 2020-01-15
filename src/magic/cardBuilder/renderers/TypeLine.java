@@ -7,12 +7,12 @@ import java.awt.FontMetrics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
-import magic.awt.MagicFont;
 
-import magic.model.MagicType;
-import magic.model.IRenderableCard;
-import magic.cardBuilder.ResourceManager;
+import magic.awt.MagicFont;
 import magic.cardBuilder.CardResource;
+import magic.cardBuilder.ResourceManager;
+import magic.model.IRenderableCard;
+import magic.model.MagicType;
 
 public class TypeLine {
     private static final Font cardTypeFont = MagicFont.JaceBelerenBold.get().deriveFont(Font.PLAIN, 16);

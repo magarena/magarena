@@ -7,13 +7,13 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import magic.cardBuilder.CardResource;
+import magic.cardBuilder.ResourceManager;
+import magic.model.IRenderableCard;
 import magic.model.MagicColor;
 import magic.model.MagicType;
 import magic.ui.ImageFileIO;
 import magic.ui.MagicImages;
-import magic.model.IRenderableCard;
-import magic.cardBuilder.ResourceManager;
-import magic.cardBuilder.CardResource;
 import magic.ui.helpers.ImageHelper;
 import magic.utility.MagicFileSystem;
 

@@ -1,8 +1,10 @@
 package magic.ui;
 
-import magic.translate.MText;
 import java.nio.file.Path;
+
 import javax.swing.JFileChooser;
+
+import magic.translate.MText;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")

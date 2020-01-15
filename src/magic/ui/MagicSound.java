@@ -1,11 +1,11 @@
 package magic.ui;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.EnumSet;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -13,6 +13,7 @@ import javax.sound.sampled.FloatControl;
 import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineUnavailableException;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.IntegerSetting;
 import magic.utility.MagicResources;

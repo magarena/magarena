@@ -1,9 +1,9 @@
 package magic.ui.widget.card.filter.dialog;
 
-import magic.ui.widget.card.filter.button.CheckBoxFilterPanel;
 import magic.model.MagicCardDefinition;
 import magic.ui.widget.card.filter.FilterOptionsPanel;
 import magic.ui.widget.card.filter.ScrollableFilterPane;
+import magic.ui.widget.card.filter.button.CheckBoxFilterPanel;
 
 @SuppressWarnings("serial")
 public class CheckboxFilterDialog extends MultiSelectFilterDialog {

@@ -5,6 +5,7 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -12,9 +13,10 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+
 import magic.translate.MText;
-import magic.ui.ScreenController;
 import magic.ui.FontsAndBorders;
+import magic.ui.ScreenController;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

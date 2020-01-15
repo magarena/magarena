@@ -1,6 +1,7 @@
 package magic.ui.screen.decks;
 
 import javax.swing.JPanel;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.widget.cards.table.DeckViewTablePanel;

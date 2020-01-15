@@ -1,6 +1,7 @@
 package magic.ui.screen.duel.decks;
 
 import javax.swing.AbstractAction;
+
 import magic.translate.MText;
 import magic.ui.screen.widget.PlainMenuButton;
 

@@ -2,6 +2,7 @@ package magic.exception.handler;
 
 import java.io.IOException;
 import java.nio.file.Path;
+
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;

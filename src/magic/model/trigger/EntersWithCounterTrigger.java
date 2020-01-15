@@ -1,13 +1,13 @@
 package magic.model.trigger;
 
+import magic.model.MagicAmount;
+import magic.model.MagicAmountFactory;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicAmount;
-import magic.model.MagicAmountFactory;
-import magic.model.condition.MagicCondition;
 import magic.model.action.ChangeCountersAction;
+import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 
 public class EntersWithCounterTrigger extends EntersBattlefieldTrigger {

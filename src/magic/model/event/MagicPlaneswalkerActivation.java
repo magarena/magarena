@@ -1,12 +1,12 @@
 package magic.model.event;
 
-import magic.model.MagicCounterType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPayedCost;
-import magic.model.condition.MagicCondition;
-import magic.model.ARG;
-
 import java.util.Arrays;
+
+import magic.model.ARG;
+import magic.model.MagicCounterType;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.condition.MagicCondition;
 
 public abstract class MagicPlaneswalkerActivation extends MagicPermanentActivation {
 

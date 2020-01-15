@@ -4,8 +4,10 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.JPanel;
 import javax.swing.JTable;
+
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicSound;
 import magic.ui.screen.widget.ActionBarButton;

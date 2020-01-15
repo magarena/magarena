@@ -8,8 +8,10 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
+
 import magic.model.MagicCardDefinition;
 
 

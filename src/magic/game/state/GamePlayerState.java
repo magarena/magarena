@@ -2,6 +2,7 @@ package magic.game.state;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import magic.model.DuelPlayerConfig;
 
 public class GamePlayerState {

@@ -3,6 +3,7 @@ package magic.data;
 import java.nio.file.Path;
 import java.util.EnumSet;
 import java.util.Set;
+
 import magic.translate.MText;
 import magic.utility.DeckUtils;
 

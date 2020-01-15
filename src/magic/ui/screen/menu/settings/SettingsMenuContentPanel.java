@@ -2,6 +2,7 @@ package magic.ui.screen.menu.settings;
 
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.StringSetting;
 import magic.translate.MText;

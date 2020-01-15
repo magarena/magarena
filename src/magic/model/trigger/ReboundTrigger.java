@@ -2,13 +2,13 @@ package magic.model.trigger;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicPermanent;
 import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.action.CastCardAction;
+import magic.model.action.RemoveTriggerAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.action.RemoveTriggerAction;
-import magic.model.action.CastCardAction;
 
 public class ReboundTrigger extends AtUpkeepTrigger {
 

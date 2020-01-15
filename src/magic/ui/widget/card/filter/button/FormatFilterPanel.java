@@ -1,6 +1,7 @@
 package magic.ui.widget.card.filter.button;
 
 import java.util.stream.Collectors;
+
 import magic.data.MagicFormat;
 import magic.data.MagicPredefinedFormat;
 import magic.model.MagicCardDefinition;

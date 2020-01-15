@@ -3,10 +3,12 @@ package magic.ui.widget.duel.player;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.helpers.ImageHelper;

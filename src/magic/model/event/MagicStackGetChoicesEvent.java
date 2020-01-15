@@ -1,9 +1,9 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
 import magic.model.MagicCopyMap;
-import magic.model.stack.MagicItemOnStack;
+import magic.model.MagicGame;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicStackGetChoicesEvent extends MagicEvent {

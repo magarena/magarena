@@ -1,8 +1,10 @@
 package magic.ui.widget.alerter;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.SwingUtilities;
+
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.translate.MText;

@@ -1,11 +1,11 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
-import magic.model.MagicSource;
 import magic.model.MagicPermanent;
-import magic.model.choice.MagicMayChoice;
+import magic.model.MagicSource;
 import magic.model.action.TapAction;
 import magic.model.action.UntapAction;
+import magic.model.choice.MagicMayChoice;
 
 public class MagicTapOrUntapEvent extends MagicEvent {
 

@@ -1,13 +1,13 @@
 package magic.model.target;
 
+import java.util.Set;
+
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicStatic;
-
-import java.util.Set;
 
 public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
 

@@ -1,8 +1,10 @@
 package magic.ui.screen.duel.setup;
 
 import java.awt.Dimension;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.model.player.PlayerProfile;
 import magic.ui.MagicImages;
 import magic.ui.widget.player.PlayerDetailsPanel;

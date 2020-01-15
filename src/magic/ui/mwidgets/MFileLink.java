@@ -7,10 +7,12 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
+
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 import javax.swing.border.Border;
+
 import magic.exception.DesktopNotSupportedException;
 import magic.translate.MText;
 import magic.ui.MagicSound;

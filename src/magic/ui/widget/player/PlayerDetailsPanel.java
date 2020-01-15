@@ -1,9 +1,11 @@
 package magic.ui.widget.player;
 
 import java.awt.Color;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.model.player.PlayerProfile;
 import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;

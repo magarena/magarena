@@ -2,7 +2,9 @@ package magic.ui.screen.duel.decks;
 
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
+
 import javax.swing.SwingWorker;
+
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.utility.MagicSystem;

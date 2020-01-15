@@ -1,8 +1,10 @@
 package magic.ui.screen.menu;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.KeysStripPanel;
 import net.miginfocom.swing.MigLayout;

@@ -1,12 +1,12 @@
 package magic.model.trigger;
 
+import java.util.Collection;
+
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilterFactory;
-
-import java.util.Collection;
 
 public class BattleCryTrigger extends ThisAttacksTrigger {
 

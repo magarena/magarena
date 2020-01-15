@@ -2,6 +2,7 @@ package magic.ui.widget.card.filter.button;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSubType;
 import magic.translate.MText;

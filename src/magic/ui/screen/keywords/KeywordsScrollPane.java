@@ -1,6 +1,7 @@
 package magic.ui.screen.keywords;
 
 import java.io.IOException;
+
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;

@@ -1,9 +1,9 @@
 package magic.model.event;
 
+import magic.model.MagicCopyMap;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicCopyMap;
 import magic.model.MagicTuple;
 import magic.model.action.ChangeCountersAction;
 import magic.model.condition.MagicCondition;

@@ -2,6 +2,7 @@ package magic.ui.screen.keywords;
 
 import java.awt.Color;
 import java.io.IOException;
+
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;

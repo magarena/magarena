@@ -13,7 +13,11 @@ import java.awt.Stroke;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import java.util.Set;
+
 import javax.swing.JToggleButton;
+
+import org.pushingpixels.trident.Timeline;
+
 import magic.data.MagicIcon;
 import magic.model.MagicCardList;
 import magic.model.MagicPlayerZone;
@@ -23,7 +27,6 @@ import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
-import org.pushingpixels.trident.Timeline;
 
 
 @SuppressWarnings("serial")

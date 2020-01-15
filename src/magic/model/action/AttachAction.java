@@ -1,13 +1,13 @@
 package magic.model.action;
 
+import java.util.Collection;
+import java.util.Collections;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.mstatic.MagicPermanentStatic;
-
-import java.util.Collection;
-import java.util.Collections;
 
 /**
  * Unattaches attachable from currently attached creature.

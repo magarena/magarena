@@ -11,6 +11,7 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
@@ -23,6 +24,7 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumnModel;
+
 import magic.data.MagicFormat;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
@@ -31,8 +33,8 @@ import magic.translate.MText;
 import magic.translate.StringContext;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
-import magic.ui.screen.decks.ICardsTableListener;
 import magic.ui.mwidgets.MScrollPane;
+import magic.ui.screen.decks.ICardsTableListener;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

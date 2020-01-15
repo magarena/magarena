@@ -4,15 +4,18 @@ import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Stroke;
+
 import javax.swing.JPanel;
+
+import org.pushingpixels.trident.Timeline;
+import org.pushingpixels.trident.Timeline.TimelineState;
+import org.pushingpixels.trident.ease.Spline;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
-import org.pushingpixels.trident.Timeline;
-import org.pushingpixels.trident.Timeline.TimelineState;
-import org.pushingpixels.trident.ease.Spline;
 
 @SuppressWarnings("serial")
 public class AnimationPanel extends JPanel {

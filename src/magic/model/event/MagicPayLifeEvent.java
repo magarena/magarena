@@ -1,9 +1,9 @@
 package magic.model.event;
 
+import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCopyMap;
 import magic.model.action.ChangeLifeAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;

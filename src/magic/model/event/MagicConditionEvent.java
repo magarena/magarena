@@ -1,7 +1,7 @@
 package magic.model.event;
 
-import magic.model.MagicSource;
 import magic.model.MagicCopyMap;
+import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
 
 public class MagicConditionEvent extends MagicEvent {

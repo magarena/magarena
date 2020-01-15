@@ -1,16 +1,16 @@
 package magic.model.event;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+import java.util.regex.Matcher;
+
+import magic.model.MagicAbility;
+import magic.model.MagicAbilityList;
 import magic.model.MagicColor;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.MagicAbility;
-import magic.model.MagicAbilityList;
-
-import java.util.Arrays;
-import java.util.regex.Matcher;
-import java.util.Set;
-import java.util.List;
-import java.util.LinkedList;
 
 public class PermanentSpecParser {
     public final int[] pt;

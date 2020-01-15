@@ -1,15 +1,28 @@
 package magic.model.target;
 
+import static magic.model.target.MagicTargetFilterFactory.ARTIFACT_OR_ENCHANTMENT;
+import static magic.model.target.MagicTargetFilterFactory.COLORLESS_SPELL;
+import static magic.model.target.MagicTargetFilterFactory.CREATURE;
+import static magic.model.target.MagicTargetFilterFactory.PERMANENT;
+import static magic.model.target.MagicTargetFilterFactory.SPELL;
+import static magic.model.target.MagicTargetFilterFactory.card;
+import static magic.model.target.MagicTargetFilterFactory.creature;
+import static magic.model.target.MagicTargetFilterFactory.creatureNon;
+import static magic.model.target.MagicTargetFilterFactory.permanent;
+import static magic.model.target.MagicTargetFilterFactory.permanentCardEqualCMC;
+import static magic.model.target.MagicTargetFilterFactory.permanentCardMaxCMC;
+import static magic.model.target.MagicTargetFilterFactory.permanentCardMinCMC;
+import static magic.model.target.MagicTargetFilterFactory.spell;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import magic.exception.ScriptParseException;
 import magic.model.ARG;
 import magic.model.MagicPermanentState;
-import magic.model.MagicType;
 import magic.model.MagicSubType;
-import magic.exception.ScriptParseException;
-
-import static magic.model.target.MagicTargetFilterFactory.*;
+import magic.model.MagicType;
+import magic.model.target.MagicTargetFilterFactory.Control;
 
 public enum MagicTargetFilterParser {
     CARD1("artifact card with converted mana cost " + ARG.NUMBER + " or less from your graveyard") {

@@ -2,6 +2,7 @@ package magic.ui.duel.resolution;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
+
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 

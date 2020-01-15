@@ -3,6 +3,7 @@ package magic.ui.widget.deck.stats;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -11,6 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
 import magic.data.CardStatistics;
 import magic.data.MagicIcon;
 import magic.model.DuelPlayerConfig;

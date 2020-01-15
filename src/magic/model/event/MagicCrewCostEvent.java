@@ -1,9 +1,9 @@
 package magic.model.event;
 
+import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
-import magic.model.MagicCopyMap;
 import magic.model.action.TapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTapTargetPicker;

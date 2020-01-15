@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.SwingWorker;
+
 import magic.ai.MagicAIImpl;
 import magic.data.DeckGenerators;
 import magic.data.DuelConfig;

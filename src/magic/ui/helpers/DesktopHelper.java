@@ -4,7 +4,9 @@ import java.awt.Desktop;
 import java.awt.HeadlessException;
 import java.io.File;
 import java.io.IOException;
+
 import javax.swing.JOptionPane;
+
 import magic.exception.DesktopNotSupportedException;
 import magic.translate.MText;
 import magic.utility.MagicFileSystem;

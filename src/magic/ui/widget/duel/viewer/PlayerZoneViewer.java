@@ -1,10 +1,12 @@
 package magic.ui.widget.duel.viewer;
 
 import java.awt.BorderLayout;
+
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
 import magic.model.MagicCardList;
 import magic.model.MagicPlayerZone;
 import magic.translate.MText;

@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
 import magic.exception.GameException;
@@ -46,6 +47,7 @@ import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.trigger.AtEndOfTurnTrigger;
+import magic.model.trigger.AtUpkeepTrigger;
 import magic.model.trigger.DamageIsDealtTrigger;
 import magic.model.trigger.MagicPermanentTrigger;
 import magic.model.trigger.MagicPermanentTriggerMap;
@@ -53,7 +55,6 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.OtherEntersBattlefieldTrigger;
 import magic.model.trigger.PreventDamageTrigger;
-import magic.model.trigger.AtUpkeepTrigger;
 import magic.ui.MagicSound;
 
 public class MagicGame {

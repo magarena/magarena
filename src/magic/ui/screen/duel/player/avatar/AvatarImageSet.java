@@ -1,10 +1,5 @@
 package magic.ui.screen.duel.player.avatar;
 
-import magic.ui.MagicImages;
-import magic.ui.theme.PlayerAvatar;
-
-import javax.swing.ImageIcon;
-
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,9 +11,14 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import javax.swing.ImageIcon;
+
 import magic.data.MagicIcon;
 import magic.ui.ImageFileIO;
+import magic.ui.MagicImages;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.theme.PlayerAvatar;
 
 class AvatarImageSet {
 

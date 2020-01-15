@@ -1,12 +1,13 @@
 package magic.ui;
 
-import magic.ui.helpers.ImageHelper;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.function.Supplier;
+
+import magic.ui.helpers.ImageHelper;
 
 public final class ImageFileIO {
     private ImageFileIO() { }

@@ -1,6 +1,7 @@
 package magic.ui.widget.duel.animation;
 
 import java.awt.Rectangle;
+
 import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 

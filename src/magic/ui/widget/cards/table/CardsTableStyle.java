@@ -1,6 +1,7 @@
 package magic.ui.widget.cards.table;
 
 import java.awt.Color;
+
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 

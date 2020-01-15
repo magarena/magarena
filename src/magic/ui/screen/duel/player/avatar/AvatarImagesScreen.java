@@ -2,17 +2,19 @@ package magic.ui.screen.duel.player.avatar;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
-import magic.ui.helpers.UrlHelper;
+
+import magic.translate.MText;
 import magic.ui.ScreenController;
+import magic.ui.helpers.ImageHelper;
+import magic.ui.helpers.UrlHelper;
+import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.widget.PlainMenuButton;
-import magic.ui.helpers.ImageHelper;
-import magic.translate.MText;
-import magic.ui.screen.HeaderFooterScreen;
 
 @SuppressWarnings("serial")
 public class AvatarImagesScreen extends HeaderFooterScreen {

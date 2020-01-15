@@ -3,9 +3,11 @@ package magic.ui.screen.deck.tiled;
 import java.awt.Color;
 import java.awt.Font;
 import java.util.List;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;

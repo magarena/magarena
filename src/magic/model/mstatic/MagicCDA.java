@@ -1,6 +1,7 @@
 package magic.model.mstatic;
 
 import java.util.Set;
+
 import magic.model.MagicAmount;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;

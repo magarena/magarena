@@ -1,8 +1,10 @@
 package magic.ui.dialog.prefs;
 
 import java.awt.event.MouseListener;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.IntegerSetting;
 import magic.translate.MText;

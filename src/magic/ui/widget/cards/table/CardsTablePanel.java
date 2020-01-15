@@ -6,10 +6,12 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.JViewport;
 import javax.swing.event.TableModelEvent;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
+
 import magic.awt.MagicClipboard;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;

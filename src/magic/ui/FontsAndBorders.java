@@ -1,10 +1,10 @@
 package magic.ui;
 
-import javax.swing.BorderFactory;
-import javax.swing.border.Border;
-
 import java.awt.Color;
 import java.awt.Font;
+
+import javax.swing.BorderFactory;
+import javax.swing.border.Border;
 
 public class FontsAndBorders {
 

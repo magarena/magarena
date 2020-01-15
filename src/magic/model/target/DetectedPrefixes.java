@@ -1,12 +1,12 @@
 package magic.model.target;
 
-import magic.model.MagicColor;
-import magic.model.MagicSubType;
-import magic.model.MagicType;
-
 import java.util.StringJoiner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import magic.model.MagicColor;
+import magic.model.MagicSubType;
+import magic.model.MagicType;
 
 /**
  * Parsed restriction on color, type and subtype.

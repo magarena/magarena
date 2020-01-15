@@ -1,26 +1,26 @@
 package magic.model.event;
 
+import java.util.Collections;
+
 import magic.data.CardDefinitions;
+import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicGame;
-import magic.model.MagicAbility;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
+import magic.model.MagicMessage;
+import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.MagicPayedCost;
-import magic.model.MagicMessage;
-import magic.model.condition.MagicCondition;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayMod;
+import magic.model.action.PlayCardFromStackAction;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
-import magic.model.action.PlayCardFromStackAction;
-
-import java.util.Collections;
+import magic.model.condition.MagicCondition;
+import magic.model.stack.MagicCardOnStack;
 
 public class MagicMorphCastActivation extends MagicHandCastActivation {
 

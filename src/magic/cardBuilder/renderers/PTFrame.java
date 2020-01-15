@@ -11,15 +11,15 @@ import java.awt.font.TextLayout;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import magic.awt.MagicFont;
 
+import magic.awt.MagicFont;
+import magic.cardBuilder.CardResource;
+import magic.cardBuilder.ResourceManager;
+import magic.model.IRenderableCard;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.IRenderableCard;
-import magic.cardBuilder.ResourceManager;
-import magic.cardBuilder.CardResource;
 
 public class PTFrame {
 

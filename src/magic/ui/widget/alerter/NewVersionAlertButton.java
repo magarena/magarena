@@ -1,14 +1,16 @@
 package magic.ui.widget.alerter;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
+
 import magic.data.GeneralConfig;
-import magic.ui.helpers.UrlHelper;
 import magic.data.json.NewVersionJsonParser;
-import magic.ui.ScreenController;
 import magic.translate.MText;
+import magic.ui.ScreenController;
+import magic.ui.helpers.UrlHelper;
 
 @SuppressWarnings("serial")
 public class NewVersionAlertButton extends AlertButton {
