@@ -1,8 +1,8 @@
 package magic.model.trigger;
 
+import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicDamage;
 import magic.model.event.MagicEvent;
 
 public abstract class IfDamageWouldBeDealtTrigger extends MagicTrigger<MagicDamage> {

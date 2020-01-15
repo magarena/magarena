@@ -2,8 +2,8 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.action.PlayCardFromStackAction;
+import magic.model.stack.MagicCardOnStack;
 
 public class MagicPlayCardEvent {
     private MagicPlayCardEvent() {}

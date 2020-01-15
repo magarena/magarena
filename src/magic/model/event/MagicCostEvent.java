@@ -1,20 +1,20 @@
 package magic.model.event;
 
-import magic.model.MagicCounterType;
-import magic.model.MagicManaCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicCard;
-import magic.model.MagicSource;
-import magic.model.MagicLocationType;
-import magic.model.ARG;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.target.MagicOtherPermanentTargetFilter;
-import magic.model.target.MagicOtherCardTargetFilter;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTargetFilterFactory;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import magic.model.ARG;
+import magic.model.MagicCard;
+import magic.model.MagicCounterType;
+import magic.model.MagicLocationType;
+import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.target.MagicOtherCardTargetFilter;
+import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 
 public enum MagicCostEvent {
 

@@ -1,21 +1,23 @@
 package magic.ui;
 
-import magic.ui.helpers.UrlHelper;
-import magic.translate.MText;
-import magic.ui.utility.MagicStyle;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseMotionAdapter;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
+
+import magic.translate.MText;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.screen.interfaces.IThemeStyle;
-import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.screen.widget.MenuPanel;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

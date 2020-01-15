@@ -3,11 +3,13 @@ package magic.ui.widget.message;
 import java.awt.Color;
 import java.awt.Font;
 import java.util.List;
+
 import javax.swing.JComponent;
+
 import magic.data.TextImages;
 import magic.model.MagicMessage;
-import magic.ui.MagicImages;
 import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
 import magic.utility.MagicSystem;
 
 class TComponentBuilder {

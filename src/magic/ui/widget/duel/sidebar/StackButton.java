@@ -5,8 +5,10 @@ import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Set;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewerinfo.StackItemViewerInfo;

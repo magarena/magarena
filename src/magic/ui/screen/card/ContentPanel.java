@@ -2,6 +2,7 @@ package magic.ui.screen.card;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.model.MagicCardDefinition;
 import net.miginfocom.swing.MigLayout;
 

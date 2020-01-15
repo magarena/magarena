@@ -12,6 +12,7 @@ import java.awt.event.WindowListener;
 import java.io.FileNotFoundException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
+
 import javax.swing.AbstractButton;
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
@@ -34,6 +35,7 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
 import javax.swing.text.NumberFormatter;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
 import magic.translate.MText;

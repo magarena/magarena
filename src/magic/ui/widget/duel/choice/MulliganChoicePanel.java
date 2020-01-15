@@ -1,11 +1,11 @@
 package magic.ui.widget.duel.choice;
 
-import magic.model.MagicCardList;
-import magic.model.MagicSource;
+import java.util.Collections;
 
 import javax.swing.SwingUtilities;
 
-import java.util.Collections;
+import magic.model.MagicCardList;
+import magic.model.MagicSource;
 import magic.ui.ScreenController;
 import magic.ui.screen.duel.game.SwingGameController;
 

@@ -1,10 +1,12 @@
 package magic.ui.deck.games;
 
 import java.awt.Component;
+
 import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
+
 import magic.translate.MText;
 
 @SuppressWarnings("serial")

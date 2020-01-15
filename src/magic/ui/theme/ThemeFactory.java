@@ -5,6 +5,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.StringSetting;
 import magic.ui.MagicImages;

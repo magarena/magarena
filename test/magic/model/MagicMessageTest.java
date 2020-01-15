@@ -1,11 +1,12 @@
 package magic.model;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 import magic.ai.MagicAIImpl;
 import magic.model.player.AiProfile;
 import magic.model.player.HumanProfile;
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class MagicMessageTest {
     private DuelPlayerConfig cfgAi = new DuelPlayerConfig(AiProfile.create(MagicAIImpl.MMAB, 12), new MagicDeckProfile("r"));

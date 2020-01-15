@@ -2,9 +2,11 @@ package magic.ui.mwidgets;
 
 import java.awt.Color;
 import java.awt.event.MouseListener;
+
 import javax.swing.JComponent;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
+
 import magic.ui.FontsAndBorders;
 
 /**

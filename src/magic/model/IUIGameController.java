@@ -2,6 +2,7 @@ package magic.model;
 
 import java.util.List;
 import java.util.Set;
+
 import magic.exception.UndoClickedException;
 import magic.model.choice.MagicPlayChoiceResult;
 

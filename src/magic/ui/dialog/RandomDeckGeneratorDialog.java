@@ -3,6 +3,7 @@ package magic.ui.dialog;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -10,11 +11,12 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
 import magic.data.DeckGenerator;
 import magic.translate.MText;
+import magic.ui.FontsAndBorders;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
-import magic.ui.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 

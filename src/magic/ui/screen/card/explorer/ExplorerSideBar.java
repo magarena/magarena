@@ -3,8 +3,10 @@ package magic.ui.screen.card.explorer;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
+
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;
 import magic.ui.dialog.prefs.ImageSizePresets;

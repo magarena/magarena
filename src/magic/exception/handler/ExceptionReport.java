@@ -2,8 +2,11 @@ package magic.exception.handler;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+
+import magic.exception.GameException;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicLogger;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
@@ -11,8 +14,6 @@ import magic.model.MagicPowerToughness;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.utility.MagicSystem;
-import magic.exception.GameException;
-import magic.model.MagicLogger;
 
 
 public class ExceptionReport {

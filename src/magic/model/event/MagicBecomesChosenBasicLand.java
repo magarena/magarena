@@ -1,20 +1,20 @@
 package magic.model.event;
 
-import java.util.Set;
 import java.util.Collections;
+import java.util.Set;
 
+import magic.model.MagicAbility;
+import magic.model.MagicColor;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
-import magic.model.MagicColor;
-import magic.model.MagicSource;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.MagicSubType;
-import magic.model.MagicAbility;
+import magic.model.action.AddStaticAction;
 import magic.model.choice.MagicColorChoice;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.action.AddStaticAction;
 
 public class MagicBecomesChosenBasicLand extends MagicEvent {
 

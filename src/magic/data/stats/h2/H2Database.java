@@ -11,6 +11,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import org.h2.jdbcx.JdbcConnectionPool;
+
 import magic.data.stats.DeckStatsInfo;
 import magic.data.stats.GameStatsInfo;
 import magic.model.MagicDeck;
@@ -21,7 +24,6 @@ import magic.model.player.PlayerProfile;
 import magic.utility.DeckUtils;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
-import org.h2.jdbcx.JdbcConnectionPool;
 
 public class H2Database {
 

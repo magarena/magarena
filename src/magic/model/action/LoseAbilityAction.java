@@ -1,15 +1,15 @@
 package magic.model.action;
 
+import java.util.EnumSet;
+import java.util.List;
+import java.util.Set;
+
 import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-
-import java.util.EnumSet;
-import java.util.List;
-import java.util.Set;
 
 // Set an ability until end of turn.
 public class LoseAbilityAction extends MagicAction {

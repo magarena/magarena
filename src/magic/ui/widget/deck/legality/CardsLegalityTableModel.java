@@ -3,8 +3,10 @@ package magic.ui.widget.deck.legality;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
+
 import magic.data.CardLegality;
 import magic.data.MagicFormat;
 import magic.model.MagicCardDefinition;

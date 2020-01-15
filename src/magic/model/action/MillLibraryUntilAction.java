@@ -1,11 +1,11 @@
 package magic.model.action;
 
+import java.util.List;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
-
-import java.util.List;
 
 /**
  * Action that removes cards from players library and moves them to that player's graveyard,

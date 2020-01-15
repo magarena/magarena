@@ -7,7 +7,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
+
 import javax.swing.BorderFactory;
+
 import magic.data.CardDefinitions;
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;

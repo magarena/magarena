@@ -1,6 +1,7 @@
 package magic;
 
 import java.util.Collections;
+
 import magic.ai.MagicAI;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;

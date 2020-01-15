@@ -2,6 +2,7 @@ package magic.model.choice;
 
 import java.util.Collection;
 import java.util.List;
+
 import magic.data.GeneralConfig;
 import magic.exception.UndoClickedException;
 import magic.model.IUIGameController;

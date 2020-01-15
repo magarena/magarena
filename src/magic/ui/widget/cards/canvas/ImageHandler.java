@@ -1,7 +1,5 @@
 package magic.ui.widget.cards.canvas;
 
-import javax.imageio.ImageIO;
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -11,6 +9,9 @@ import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.io.IOException;
 import java.io.InputStream;
+
+import javax.imageio.ImageIO;
+
 import magic.ui.helpers.ImageHelper;
 
 public class ImageHandler {

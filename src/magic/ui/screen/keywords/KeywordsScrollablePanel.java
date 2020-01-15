@@ -3,8 +3,10 @@ package magic.ui.screen.keywords;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.io.IOException;
+
 import javax.swing.JPanel;
 import javax.swing.Scrollable;
+
 import net.miginfocom.swing.MigLayout;
 
 /**

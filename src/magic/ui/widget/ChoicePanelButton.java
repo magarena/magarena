@@ -1,6 +1,7 @@
 package magic.ui.widget;
 
 import javax.swing.JComponent;
+
 import magic.ui.helpers.MouseHelper;
 
 @SuppressWarnings("serial")

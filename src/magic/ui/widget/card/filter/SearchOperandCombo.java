@@ -1,13 +1,15 @@
 package magic.ui.widget.card.filter;
 
-import magic.ui.widget.card.filter.button.FilterPanel;
 import java.awt.event.ItemEvent;
+
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
+
 import magic.ui.helpers.MouseHelper;
+import magic.ui.widget.card.filter.button.FilterPanel;
 
 @SuppressWarnings("serial")
 class SearchOperandCombo extends JComboBox<SearchOperand> {

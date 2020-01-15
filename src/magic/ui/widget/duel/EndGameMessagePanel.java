@@ -1,10 +1,12 @@
 package magic.ui.widget.duel;
 
 import java.awt.Dimension;
+
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.duel.viewerinfo.GameViewerInfo;

@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.phase.MagicPhaseType;
 import magic.model.stack.MagicCardOnStack;

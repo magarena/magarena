@@ -1,17 +1,17 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
+import java.util.List;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
+import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.action.ShiftCardAction;
+import magic.model.MagicPlayer;
 import magic.model.action.RevealAction;
+import magic.model.action.ShiftCardAction;
 import magic.model.choice.MagicFromCardListChoice;
-
-import java.util.List;
+import magic.model.target.MagicGraveyardTargetPicker;
+import magic.model.target.MagicTargetFilter;
 
 public class MagicTutorTopEvent {
 

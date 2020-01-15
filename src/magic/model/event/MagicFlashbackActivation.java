@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import java.util.List;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;

@@ -1,13 +1,13 @@
 package magic.model.trigger;
 
-import magic.model.MagicDamage;
-import magic.model.MagicMessage;
-import magic.model.MagicPermanent;
 import magic.model.MagicCard;
+import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.event.MagicEvent;
+import magic.model.MagicMessage;
+import magic.model.MagicPermanent;
 import magic.model.action.ShiftCardAction;
+import magic.model.event.MagicEvent;
 
 public abstract class ThisCombatDamagePlayerTrigger extends DamageIsDealtTrigger {
     public ThisCombatDamagePlayerTrigger() {}

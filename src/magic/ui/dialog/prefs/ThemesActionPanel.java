@@ -6,18 +6,20 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.MagicSound;
-import magic.ui.helpers.UrlHelper;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.helpers.DesktopHelper;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.helpers.UrlHelper;
+import magic.ui.theme.ThemeFactory;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 

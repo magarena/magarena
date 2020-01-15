@@ -2,6 +2,7 @@ package magic.ui.screen.images.download;
 
 import javax.swing.JPanel;
 import javax.swing.ToolTipManager;
+
 import magic.ui.screen.MScreen;
 import net.miginfocom.swing.MigLayout;
 

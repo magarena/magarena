@@ -1,7 +1,9 @@
 package magic.ui.deck.games;
 
 import java.awt.Dimension;
+
 import javax.swing.JLabel;
+
 import magic.data.CardStatistics;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;

@@ -2,8 +2,8 @@ package magic.ui.screen.duel.player;
 
 import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
-import magic.translate.StringContext;
 import magic.translate.MText;
+import magic.translate.StringContext;
 
 @SuppressWarnings("serial")
 class AiPlayerJList extends PlayersJList {

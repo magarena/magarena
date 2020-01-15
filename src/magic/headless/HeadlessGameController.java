@@ -1,10 +1,10 @@
 package magic.headless;
 
 import magic.ai.MagicAI;
+import magic.model.IGameController;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
-import magic.model.IGameController;
 
 public class HeadlessGameController implements IGameController {
 

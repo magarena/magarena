@@ -1,10 +1,12 @@
 package magic.ui.screen.stats;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.ui.helpers.MouseHelper;
 import net.miginfocom.swing.MigLayout;
 

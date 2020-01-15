@@ -3,8 +3,9 @@ package magic.ui.widget.card.filter;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
-import magic.ui.widget.card.filter.button.FilterPanel;
+
 import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.card.filter.button.FilterPanel;
 
 @SuppressWarnings("serial")
 abstract class CheckBoxFilterValuesPanel extends TexturedPanel

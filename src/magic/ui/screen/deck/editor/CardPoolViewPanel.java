@@ -6,9 +6,11 @@ import java.awt.event.FocusListener;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.JTable;
+
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;

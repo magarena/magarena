@@ -8,7 +8,11 @@ import java.io.File;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+
 import javax.swing.ImageIcon;
+
+import org.apache.commons.io.FileUtils;
+
 import magic.data.GeneralConfig;
 import magic.data.LRUCache;
 import magic.data.MagicIcon;
@@ -25,7 +29,6 @@ import magic.ui.helpers.ImageHelper;
 import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicResources;
-import org.apache.commons.io.FileUtils;
 
 public final class MagicImages {
 

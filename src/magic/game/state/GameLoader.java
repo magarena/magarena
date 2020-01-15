@@ -2,6 +2,7 @@ package magic.game.state;
 
 import java.io.File;
 import java.util.List;
+
 import magic.ai.MagicAIImpl;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeckProfile;

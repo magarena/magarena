@@ -3,7 +3,9 @@ package magic.ui.widget.duel.animation;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.SwingUtilities;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
 import magic.model.MagicCard;

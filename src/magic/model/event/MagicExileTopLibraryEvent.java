@@ -2,11 +2,11 @@ package magic.model.event;
 
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
+import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCopyMap;
 import magic.model.action.ShiftCardAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;

@@ -2,7 +2,9 @@ package magic.ui.deck.games;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
 import javax.swing.table.AbstractTableModel;
+
 import magic.data.stats.GameStatsInfo;
 import magic.data.stats.MagicStats;
 import magic.model.MagicDeck;

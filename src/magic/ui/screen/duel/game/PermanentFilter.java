@@ -3,6 +3,7 @@ package magic.ui.screen.duel.game;
 import java.util.Comparator;
 import java.util.SortedSet;
 import java.util.TreeSet;
+
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.duel.viewerinfo.PermanentViewerInfo;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;

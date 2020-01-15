@@ -1,8 +1,10 @@
 package magic.ui.screen.card;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

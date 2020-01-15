@@ -3,12 +3,14 @@ package magic.ui.screen.duel.player.avatar;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;

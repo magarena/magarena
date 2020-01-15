@@ -1,5 +1,8 @@
 package magic.model.action;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
@@ -8,9 +11,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class DrawAction extends MagicAction {
 

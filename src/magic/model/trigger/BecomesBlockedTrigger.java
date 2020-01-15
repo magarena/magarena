@@ -3,10 +3,10 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.event.MagicSourceEvent;
-import magic.model.event.MagicEvent;
-import magic.model.target.MagicTargetFilter;
 import magic.model.action.ChangeStateAction;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
+import magic.model.target.MagicTargetFilter;
 
 public abstract class BecomesBlockedTrigger extends BecomesStateTrigger {
     public BecomesBlockedTrigger(final int priority) {

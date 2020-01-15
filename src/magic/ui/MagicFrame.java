@@ -8,9 +8,13 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Locale;
+
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.ToolTipManager;
+
+import org.apache.commons.io.FileUtils;
+
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.data.OSXAdapter;
@@ -29,7 +33,6 @@ import magic.ui.theme.ThemeFactory;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
-import org.apache.commons.io.FileUtils;
 
 @SuppressWarnings("serial")
 public class MagicFrame extends MagicStickyFrame implements IDragDropListener {

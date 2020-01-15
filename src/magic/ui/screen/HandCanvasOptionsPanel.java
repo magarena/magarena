@@ -1,8 +1,10 @@
 package magic.ui.screen;
 
 import java.awt.Color;
+
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.screen.widget.BigDialButton;

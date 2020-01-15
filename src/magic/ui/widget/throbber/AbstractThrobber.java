@@ -7,11 +7,14 @@ import java.awt.RenderingHints;
 import java.awt.Transparency;
 import java.awt.event.HierarchyEvent;
 import java.awt.image.BufferedImage;
+
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
-import magic.ui.helpers.ImageHelper;
+
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.Timeline.RepeatBehavior;
+
+import magic.ui.helpers.ImageHelper;
 
 /**
  * TODO

@@ -2,6 +2,7 @@ package magic.ui.screen.cardflow;
 
 import java.awt.Color;
 import java.text.MessageFormat;
+
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.ScreenController;

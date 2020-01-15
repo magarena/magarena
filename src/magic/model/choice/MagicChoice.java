@@ -1,20 +1,20 @@
 package magic.model.choice;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+import magic.exception.GameException;
+import magic.exception.UndoClickedException;
+import magic.model.IUIGameController;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetNone;
-import magic.exception.UndoClickedException;
-import magic.exception.GameException;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Arrays;
-import magic.model.IUIGameController;
 
 public abstract class MagicChoice {
 

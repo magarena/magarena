@@ -1,14 +1,14 @@
 package magic.model.choice;
 
+import java.util.Collection;
+import java.util.Collections;
+
+import magic.model.IUIGameController;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-
-import java.util.Collection;
-import java.util.Collections;
-import magic.model.IUIGameController;
 
 public class MagicRandomCardChoice extends MagicChoice {
 

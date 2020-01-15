@@ -2,6 +2,7 @@ package magic.model.event;
 
 import java.util.Collections;
 import java.util.List;
+
 import magic.model.MagicAmount;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;

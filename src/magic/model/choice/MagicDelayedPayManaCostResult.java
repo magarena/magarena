@@ -1,9 +1,9 @@
 package magic.model.choice;
 
+import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
-import magic.model.MagicCopyMap;
 import magic.model.action.PayDelayedCostAction;
 
 /**

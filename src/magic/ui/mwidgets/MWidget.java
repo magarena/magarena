@@ -1,6 +1,7 @@
 package magic.ui.mwidgets;
 
 import java.awt.event.MouseListener;
+
 import javax.swing.JComponent;
 
 /**

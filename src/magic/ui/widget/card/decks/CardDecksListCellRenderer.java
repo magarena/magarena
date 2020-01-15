@@ -2,8 +2,10 @@ package magic.ui.widget.card.decks;
 
 import java.awt.Component;
 import java.io.File;
+
 import javax.swing.DefaultListCellRenderer;
 import javax.swing.JList;
+
 import org.apache.commons.io.FilenameUtils;
 
 @SuppressWarnings("serial")

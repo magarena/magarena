@@ -1,19 +1,19 @@
 package magic.ui.widget.duel.viewer;
 
-import magic.ui.screen.duel.game.PermanentFilter;
-import magic.ui.IUpdatable;
-import magic.ui.IChoiceViewer;
-import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.theme.Theme;
-import magic.ui.FontsAndBorders;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.util.Set;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.util.Set;
+import magic.ui.FontsAndBorders;
+import magic.ui.IChoiceViewer;
+import magic.ui.IUpdatable;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
+import magic.ui.screen.duel.game.PermanentFilter;
+import magic.ui.screen.duel.game.SwingGameController;
+import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")

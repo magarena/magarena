@@ -4,10 +4,10 @@ import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
+import magic.model.IRenderableCard;
 import magic.model.MagicAbility;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.IRenderableCard;
 
 public class CardBuilder {
 

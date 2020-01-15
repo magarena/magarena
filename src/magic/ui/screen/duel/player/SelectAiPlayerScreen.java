@@ -3,6 +3,7 @@ package magic.ui.screen.duel.player;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+
 import magic.model.player.AiProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;

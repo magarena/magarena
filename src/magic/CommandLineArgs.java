@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.function.Function;
+
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DuelConfig;

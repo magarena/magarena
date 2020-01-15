@@ -8,8 +8,10 @@ import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+
 import magic.data.DeckType;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;

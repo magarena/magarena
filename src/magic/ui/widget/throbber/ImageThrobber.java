@@ -8,6 +8,7 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.HierarchyEvent;
 import java.awt.image.BufferedImage;
+
 import magic.ui.helpers.ImageHelper;
 
 @SuppressWarnings("serial")

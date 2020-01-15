@@ -3,16 +3,18 @@ package magic.ui.screen.duel.player;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
+
 import magic.model.player.PlayerProfile;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.utility.MagicStyle;
-import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

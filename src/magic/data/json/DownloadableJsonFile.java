@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+
 import magic.data.DownloadableFile;
 
 public class DownloadableJsonFile extends DownloadableFile {

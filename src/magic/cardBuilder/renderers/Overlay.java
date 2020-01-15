@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import magic.cardBuilder.ResourceManager;
 import magic.cardBuilder.CardResource;
+import magic.cardBuilder.ResourceManager;
 import magic.model.IRenderableCard;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;

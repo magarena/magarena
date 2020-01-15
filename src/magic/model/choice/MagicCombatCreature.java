@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;

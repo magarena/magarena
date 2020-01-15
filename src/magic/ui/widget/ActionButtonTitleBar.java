@@ -2,8 +2,10 @@ package magic.ui.widget;
 
 import java.awt.Dimension;
 import java.util.List;
+
 import javax.swing.JButton;
 import javax.swing.JPanel;
+
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

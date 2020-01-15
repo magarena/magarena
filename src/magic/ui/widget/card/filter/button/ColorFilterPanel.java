@@ -3,6 +3,7 @@ package magic.ui.widget.card.filter.button;
 import java.awt.Dimension;
 import java.awt.LayoutManager;
 import java.util.List;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.translate.MText;

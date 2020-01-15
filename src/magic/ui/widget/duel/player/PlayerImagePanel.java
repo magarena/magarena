@@ -7,7 +7,12 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
+
 import javax.swing.JPanel;
+
+import org.pushingpixels.trident.Timeline;
+import org.pushingpixels.trident.ease.Spline;
+
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.data.settings.BooleanSetting;
@@ -15,8 +20,6 @@ import magic.ui.MagicImages;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
-import org.pushingpixels.trident.Timeline;
-import org.pushingpixels.trident.ease.Spline;
 
 @SuppressWarnings("serial")
 public class PlayerImagePanel extends JPanel {

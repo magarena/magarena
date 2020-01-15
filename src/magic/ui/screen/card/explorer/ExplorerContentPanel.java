@@ -7,9 +7,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.util.List;
+
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.ICardFilterPanelListener;

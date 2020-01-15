@@ -1,6 +1,7 @@
 package magic.ui.widget.scrollbar;
 
 import java.awt.Dimension;
+
 import javax.swing.JButton;
 
 @SuppressWarnings("serial")

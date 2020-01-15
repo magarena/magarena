@@ -6,12 +6,14 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+
 import magic.data.json.DownloadableJsonFile;
 import magic.model.MagicDeck;
 import magic.utility.DeckUtils;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import org.apache.commons.io.FileUtils;
 
 public final class FiremindJsonReader {
     private FiremindJsonReader() {}

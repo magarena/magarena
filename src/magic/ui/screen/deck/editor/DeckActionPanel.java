@@ -2,8 +2,10 @@ package magic.ui.screen.deck.editor;
 
 import java.awt.Color;
 import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TexturedPanel;

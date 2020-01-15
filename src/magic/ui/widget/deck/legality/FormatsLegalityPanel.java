@@ -6,6 +6,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.BorderFactory;
 import javax.swing.DefaultListCellRenderer;
 import javax.swing.ImageIcon;
@@ -14,12 +15,13 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.event.ListSelectionListener;
+
 import magic.data.MagicFormat;
-import magic.data.MagicPredefinedFormat;
 import magic.data.MagicIcon;
+import magic.data.MagicPredefinedFormat;
 import magic.model.MagicDeck;
-import magic.ui.MagicImages;
 import magic.translate.MText;
+import magic.ui.MagicImages;
 import magic.ui.mwidgets.MScrollPane;
 import net.miginfocom.swing.MigLayout;
 

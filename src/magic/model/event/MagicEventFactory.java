@@ -1,8 +1,8 @@
 package magic.model.event;
 
-import magic.model.MagicSource;
-import magic.model.MagicPlayer;
 import magic.model.MagicCopyable;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 
 public interface MagicEventFactory {
 

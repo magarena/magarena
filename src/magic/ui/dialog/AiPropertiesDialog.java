@@ -3,6 +3,7 @@ package magic.ui.dialog;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -10,6 +11,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
 import magic.ai.MagicAIImpl;
 import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;

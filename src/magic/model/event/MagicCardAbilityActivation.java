@@ -1,18 +1,18 @@
 package magic.model.event;
 
+import java.util.List;
+
+import magic.model.ARG;
 import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicLocationType;
-import magic.model.ARG;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
-
-import java.util.List;
 
 public abstract class MagicCardAbilityActivation extends MagicHandCastActivation {
 

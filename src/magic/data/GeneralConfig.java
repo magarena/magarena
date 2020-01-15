@@ -10,6 +10,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+
 import magic.data.settings.BooleanSetting;
 import magic.data.settings.IntegerSetting;
 import magic.data.settings.StringSetting;

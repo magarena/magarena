@@ -3,6 +3,7 @@ package magic.ui.screen.cardflow;
 import java.awt.Dimension;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+
 import javax.swing.JLayeredPane;
 
 @SuppressWarnings("serial")

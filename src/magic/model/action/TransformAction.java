@@ -1,13 +1,13 @@
 package magic.model.action;
 
+import java.util.Collection;
+import java.util.Collections;
+
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTriggerType;
-
-import java.util.Collections;
-import java.util.Collection;
 
 public class TransformAction extends MagicAction {
 

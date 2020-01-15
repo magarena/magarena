@@ -3,18 +3,20 @@ package magic.ui.deck.games;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.BorderFactory;
+
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.FontsAndBorders;
 import magic.ui.ScreenController;
+import magic.ui.mwidgets.MScrollPane;
 import magic.ui.screen.deck.editor.IDeckEditorView;
 import magic.ui.screen.decks.IDeckView;
 import magic.ui.screen.stats.IPagination;
 import magic.ui.screen.stats.PaginationPanel;
 import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.mwidgets.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

@@ -2,7 +2,9 @@ package magic.ui.widget.alerter;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.JPanel;
+
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

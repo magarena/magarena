@@ -2,10 +2,11 @@ package magic.ui.widget.card.filter.button;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicType;
-import magic.translate.StringContext;
 import magic.translate.MText;
+import magic.translate.StringContext;
 import magic.ui.widget.card.filter.IFilterListener;
 import magic.utility.MagicSystem;
 

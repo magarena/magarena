@@ -1,7 +1,7 @@
 package magic.model.event;
 
-import magic.model.MagicSource;
 import magic.model.MagicCopyable;
+import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
 
 public abstract class MagicChainEventFactory implements MagicCopyable {

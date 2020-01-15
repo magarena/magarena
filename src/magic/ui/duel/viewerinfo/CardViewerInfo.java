@@ -1,6 +1,7 @@
 package magic.ui.duel.viewerinfo;
 
 import java.awt.image.BufferedImage;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicLocationType;

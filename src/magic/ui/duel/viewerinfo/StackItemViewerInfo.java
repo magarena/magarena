@@ -1,6 +1,7 @@
 package magic.ui.duel.viewerinfo;
 
 import javax.swing.ImageIcon;
+
 import magic.data.MagicIcon;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;

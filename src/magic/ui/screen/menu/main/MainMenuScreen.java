@@ -3,6 +3,7 @@ package magic.ui.screen.menu.main;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyEvent;
+
 import magic.data.GeneralConfig;
 import magic.translate.MText;
 import magic.ui.ScreenController;

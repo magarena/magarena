@@ -1,7 +1,9 @@
 package magic.ui.screen.duel.setup;
 
 import java.awt.Color;
+
 import javax.swing.BorderFactory;
+
 import magic.model.player.PlayerProfile;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;

@@ -1,14 +1,14 @@
 package magic.model.target;
 
 import magic.ai.ArtificialScoringSystem;
+import magic.exception.GameException;
 import magic.model.MagicAbility;
+import magic.model.MagicAmount;
+import magic.model.MagicAmountFactory;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicAmount;
-import magic.model.MagicAmountFactory;
 import magic.model.event.MagicEvent;
-import magic.exception.GameException;
 
 /** Creature permanent or player. Can be your own creatures. */
 public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {

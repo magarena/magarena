@@ -1,6 +1,7 @@
 package magic.ui.screen.interfaces;
 
 import java.nio.file.Path;
+
 import magic.data.DeckType;
 import magic.model.MagicDeck;
 

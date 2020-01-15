@@ -2,6 +2,7 @@ package magic.ui.screen.duel.player.zone;
 
 import java.awt.image.BufferedImage;
 import java.util.Collections;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.MagicImages;

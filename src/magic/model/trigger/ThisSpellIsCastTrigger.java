@@ -1,12 +1,12 @@
 package magic.model.trigger;
 
+import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicCardDefinition;
-import magic.model.event.MagicSourceEvent;
-import magic.model.event.MagicEvent;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.action.CopyCardOnStackAction;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
+import magic.model.stack.MagicCardOnStack;
 
 public abstract class ThisSpellIsCastTrigger extends MagicTrigger<MagicCardOnStack> {
     public ThisSpellIsCastTrigger(final int priority) {

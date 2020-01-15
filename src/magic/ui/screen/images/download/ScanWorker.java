@@ -2,7 +2,9 @@ package magic.ui.screen.images.download;
 
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
+
 import javax.swing.SwingWorker;
+
 import magic.data.ImagesDownloadList;
 
 class ScanWorker extends SwingWorker<ImagesDownloadList, Void> {

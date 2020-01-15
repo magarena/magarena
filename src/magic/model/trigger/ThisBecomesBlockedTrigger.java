@@ -3,9 +3,9 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
-import magic.model.target.MagicTargetFilter;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
+import magic.model.target.MagicTargetFilter;
 
 public abstract class ThisBecomesBlockedTrigger extends BecomesBlockedTrigger {
     @Override

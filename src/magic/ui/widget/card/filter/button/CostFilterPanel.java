@@ -2,6 +2,7 @@ package magic.ui.widget.card.filter.button;
 
 import java.awt.Dimension;
 import java.awt.LayoutManager;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.translate.MText;

@@ -5,8 +5,8 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicItemOnStack;
-import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
 
 public abstract class BecomesTargetTrigger extends MagicTrigger<MagicItemOnStack> {
     public BecomesTargetTrigger(final int priority) {

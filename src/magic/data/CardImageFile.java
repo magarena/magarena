@@ -2,6 +2,7 @@ package magic.data;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;

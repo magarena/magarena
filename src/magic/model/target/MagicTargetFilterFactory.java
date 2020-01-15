@@ -8,6 +8,7 @@ import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import magic.exception.ScriptParseException;
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicColor;
@@ -22,7 +23,6 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.stack.MagicItemOnStack;
-import magic.exception.ScriptParseException;
 
 public class MagicTargetFilterFactory {
 

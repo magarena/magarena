@@ -1,11 +1,11 @@
 package magic.model.target;
 
+import java.util.Collection;
+
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
-
-import java.util.Collection;
 
 public class MagicDefaultPermanentPicker extends MagicTargetPicker<MagicPermanent> {
 

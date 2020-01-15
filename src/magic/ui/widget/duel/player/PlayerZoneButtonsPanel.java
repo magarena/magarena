@@ -12,9 +12,11 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+
 import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
 import magic.model.MagicCardList;
 import magic.model.MagicPlayerZone;
 import magic.translate.MText;

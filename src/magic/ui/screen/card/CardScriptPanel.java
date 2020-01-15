@@ -2,8 +2,10 @@ package magic.ui.screen.card;
 
 import java.io.File;
 import java.nio.file.Path;
+
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
+
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.ui.mwidgets.MTextFileViewer;

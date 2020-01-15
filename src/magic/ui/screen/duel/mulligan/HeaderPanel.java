@@ -2,9 +2,11 @@ package magic.ui.screen.duel.mulligan;
 
 import java.awt.Color;
 import java.awt.Font;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.translate.MText;

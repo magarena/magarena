@@ -1,11 +1,13 @@
 package magic.model;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class MagicGameLog {
     private MagicGameLog() {}

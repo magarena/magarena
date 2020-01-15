@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;

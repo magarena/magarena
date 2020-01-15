@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.nio.file.Path;
 import java.util.Arrays;
+
 import magic.cardBuilder.renderers.CardBuilder;
 import magic.data.GeneralConfig;
 import magic.exception.DownloadException;

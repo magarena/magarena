@@ -1,11 +1,11 @@
 package magic.model.event;
 
-import magic.model.MagicSource;
-import magic.model.ARG;
-
-import java.util.regex.Matcher;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.regex.Matcher;
+
+import magic.model.ARG;
+import magic.model.MagicSource;
 
 public class MagicRegularCostEvent implements MagicMatchedCostEvent {
 

@@ -3,8 +3,10 @@ package magic.ui;
 import java.awt.GraphicsEnvironment;
 import java.util.Stack;
 import java.util.concurrent.Callable;
+
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
+
 import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
 import magic.model.MagicCardDefinition;

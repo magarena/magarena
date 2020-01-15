@@ -1,19 +1,19 @@
 package magic.model.trigger;
 
+import magic.model.MagicAbility;
+import magic.model.MagicCard;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCard;
-import magic.model.MagicCounterType;
-import magic.model.MagicLocationType;
-import magic.model.MagicAbility;
-import magic.model.action.MagicPlayMod;
-import magic.model.action.DrawAction;
-import magic.model.action.RemoveTriggerAction;
-import magic.model.action.ChangeCountersAction;
 import magic.model.action.CastCardAction;
+import magic.model.action.ChangeCountersAction;
+import magic.model.action.DrawAction;
 import magic.model.action.EnqueueTriggerAction;
+import magic.model.action.MagicPlayMod;
+import magic.model.action.RemoveTriggerAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 

@@ -2,7 +2,9 @@ package magic.ui.screen.widget;
 
 import java.awt.Color;
 import java.awt.Dimension;
+
 import javax.swing.BorderFactory;
+
 import magic.model.MagicCardDefinition;
 import magic.ui.mwidgets.MScrollPane;
 import magic.ui.widget.TexturedPanel;

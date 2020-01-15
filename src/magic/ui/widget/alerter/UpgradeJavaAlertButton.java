@@ -1,12 +1,14 @@
 package magic.ui.widget.alerter;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
+
 import magic.data.json.NewVersionJsonParser;
-import magic.ui.ScreenController;
 import magic.translate.MText;
+import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
 public class UpgradeJavaAlertButton extends AlertButton {

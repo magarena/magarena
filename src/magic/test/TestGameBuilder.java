@@ -4,7 +4,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import magic.ai.MagicAIImpl;
 import magic.data.CardDefinitions;
-import magic.model.*;
+import magic.model.DuelPlayerConfig;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicDeckProfile;
+import magic.model.MagicDuel;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
 import magic.model.action.PlayCardFromStackAction;
 import magic.model.player.AiProfile;
 import magic.model.player.HumanProfile;

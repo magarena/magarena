@@ -1,17 +1,17 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicPermanent;
 import magic.model.MagicCard;
 import magic.model.MagicCounterType;
+import magic.model.MagicGame;
 import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.choice.MagicMayChoice;
-import magic.model.action.RevealAction;
-import magic.model.action.ShiftCardAction;
+import magic.model.MagicPlayer;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangeStateAction;
+import magic.model.action.RevealAction;
+import magic.model.action.ShiftCardAction;
+import magic.model.choice.MagicMayChoice;
 
 public class MagicExploreEvent extends MagicEvent {
 

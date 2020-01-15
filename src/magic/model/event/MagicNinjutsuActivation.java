@@ -1,5 +1,7 @@
 package magic.model.event;
 
+import java.util.Arrays;
+
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
@@ -9,8 +11,6 @@ import magic.model.action.MagicPlayMod;
 import magic.model.action.PutOntoBattlefieldAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-
-import java.util.Arrays;
 
 public class MagicNinjutsuActivation extends MagicCardAbilityActivation {
 

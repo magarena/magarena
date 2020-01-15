@@ -7,11 +7,11 @@ import java.util.regex.Pattern;
 
 import magic.model.ARG;
 import magic.model.MagicAbility;
+import magic.model.MagicCard;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicPermanent;
 import magic.model.MagicSubType;
-import magic.model.MagicCard;
 import magic.model.event.MagicMatchedCostEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;

@@ -1,7 +1,9 @@
 package magic.ui.screen;
 
 import java.util.List;
+
 import javax.swing.SwingWorker;
+
 import magic.translate.MText;
 import magic.utility.MagicSystem;
 

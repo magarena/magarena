@@ -9,18 +9,18 @@ import java.util.Collections;
 import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.Locale;
+import java.util.Set;
 import java.util.stream.Collectors;
 
+import magic.cardBuilder.CardResource;
+import magic.cardBuilder.ResourceManager;
+import magic.model.IRenderableCard;
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.event.MagicManaActivation;
-import magic.model.IRenderableCard;
-import magic.cardBuilder.ResourceManager;
-import magic.cardBuilder.CardResource;
 
 public class Frame {
 

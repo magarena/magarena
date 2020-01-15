@@ -2,11 +2,13 @@ package magic.ui.mwidgets;
 
 import java.awt.Color;
 import java.awt.Component;
+
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.border.Border;
+
 import magic.ui.widget.scrollbar.MScrollBarUI;
 
 public class MScrollPane extends MWidget {

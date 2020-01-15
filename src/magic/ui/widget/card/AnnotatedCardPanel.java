@@ -22,10 +22,15 @@ import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
+
+import org.pushingpixels.trident.Timeline;
+import org.pushingpixels.trident.ease.Spline;
+
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
@@ -41,8 +46,6 @@ import magic.ui.theme.AbilityIcon;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.utility.MagicSystem;
-import org.pushingpixels.trident.Timeline;
-import org.pushingpixels.trident.ease.Spline;
 
 @SuppressWarnings("serial")
 public class AnnotatedCardPanel extends JPanel {

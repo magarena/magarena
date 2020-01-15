@@ -1,10 +1,10 @@
 package magic.model.event;
 
+import java.util.Arrays;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.choice.MagicTargetChoice;
-
-import java.util.Arrays;
 
 public class MagicRetraceActivation extends MagicGraveyardCastActivation {
 

@@ -1,6 +1,7 @@
 package magic.model;
 
 import java.util.EnumSet;
+
 import magic.translate.MText;
 
 public enum MagicRarity {

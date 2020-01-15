@@ -1,8 +1,8 @@
 package magic.model.event;
 
+import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicCopyMap;
 import magic.model.action.SacrificeAction;
 
 public class MagicSacrificeEvent extends MagicEvent {

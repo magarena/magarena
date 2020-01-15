@@ -5,7 +5,9 @@ import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+
 import javax.swing.ImageIcon;
+
 import magic.data.MagicIcon;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;

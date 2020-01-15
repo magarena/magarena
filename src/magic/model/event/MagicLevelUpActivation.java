@@ -1,5 +1,7 @@
 package magic.model.event;
 
+import java.util.Collections;
+
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
@@ -9,8 +11,6 @@ import magic.model.MagicSource;
 import magic.model.action.ChangeCountersAction;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
-
-import java.util.Collections;
 
 public class MagicLevelUpActivation extends MagicPermanentActivation {
 

@@ -1,8 +1,10 @@
 package magic.ui.screen.duel.mulligan;
 
 import java.awt.event.KeyEvent;
+
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;

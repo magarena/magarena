@@ -3,9 +3,11 @@ package magic.ui.widget.duel.viewer;
 import java.awt.Component;
 import java.awt.Point;
 import java.awt.Rectangle;
+
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
 import magic.ui.FontsAndBorders;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.screen.duel.game.SwingGameController;

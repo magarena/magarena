@@ -4,8 +4,10 @@ import java.awt.Color;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.helpers.ColorHelper;

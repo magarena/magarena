@@ -2,10 +2,12 @@ package magic.data.json;
 
 import java.io.File;
 import java.io.IOException;
+
+import org.json.JSONObject;
+
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
-import org.json.JSONObject;
 
 public final class NewVersionJsonParser {
     private NewVersionJsonParser() {}

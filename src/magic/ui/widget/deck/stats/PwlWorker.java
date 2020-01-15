@@ -6,8 +6,10 @@ import java.util.List;
 import java.util.concurrent.CancellationException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
+
 import magic.data.stats.MagicStats;
 import magic.model.MagicDeck;
 

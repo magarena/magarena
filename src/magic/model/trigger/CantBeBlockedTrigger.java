@@ -1,10 +1,10 @@
 package magic.model.trigger;
 
+import magic.exception.GameException;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilter;
-import magic.exception.GameException;
 
 public abstract class CantBeBlockedTrigger extends MagicTrigger<MagicPermanent> {
     public CantBeBlockedTrigger(final int priority) {

@@ -5,7 +5,9 @@ import java.awt.event.MouseEvent;
 import java.nio.file.Path;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.JPanel;
+
 import magic.data.DeckType;
 import magic.data.DuelConfig;
 import magic.data.MagicFormat;

@@ -1,11 +1,13 @@
 package magic.ui.screen.duel.player;
 
 import java.awt.Color;
+
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
+
 import magic.model.player.PlayerStatistics;
 import magic.translate.MText;
 import magic.translate.StringContext;

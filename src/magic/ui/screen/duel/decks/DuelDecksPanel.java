@@ -7,9 +7,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.JTabbedPane;
 import javax.swing.event.ChangeEvent;
+
 import magic.data.DeckType;
 import magic.data.DuelConfig;
 import magic.data.MagicIcon;

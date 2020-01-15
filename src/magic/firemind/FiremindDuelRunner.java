@@ -1,5 +1,7 @@
 package magic.firemind;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
@@ -10,6 +12,7 @@ import java.nio.file.Files;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import magic.ai.MagicAIImpl;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
@@ -25,7 +28,6 @@ import magic.model.MagicRandom;
 import magic.model.player.AiProfile;
 import magic.utility.DeckUtils;
 import magic.utility.MagicSystem;
-import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class FiremindDuelRunner {
     private static int games;

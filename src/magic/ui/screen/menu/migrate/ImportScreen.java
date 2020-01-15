@@ -2,28 +2,30 @@ package magic.ui.screen.menu.migrate;
 
 import java.awt.Color;
 import java.awt.GradientPaint;
-import java.awt.Graphics2D;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.File;
+
 import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
+
+import magic.translate.MText;
+import magic.ui.FontsAndBorders;
 import magic.ui.ImportWorker;
 import magic.ui.MagarenaDirectoryChooser;
 import magic.ui.ScreenController;
-import magic.translate.MText;
-import magic.ui.screen.widget.PlainMenuButton;
-import magic.ui.screen.widget.MenuPanel;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.FontsAndBorders;
 import magic.ui.WikiPage;
 import magic.ui.screen.MScreen;
+import magic.ui.screen.widget.MenuPanel;
+import magic.ui.screen.widget.PlainMenuButton;
+import magic.ui.theme.ThemeFactory;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

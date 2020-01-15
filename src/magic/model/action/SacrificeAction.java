@@ -1,8 +1,8 @@
 package magic.model.action;
 
+import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicGame;
 import magic.model.trigger.MagicTriggerType;
 
 public class SacrificeAction extends RemoveFromPlayAction {

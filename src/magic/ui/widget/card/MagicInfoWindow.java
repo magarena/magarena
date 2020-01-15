@@ -7,12 +7,15 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
 import javax.swing.JLabel;
 import javax.swing.JWindow;
-import magic.ui.helpers.ImageHelper;
-import net.miginfocom.swing.MigLayout;
+
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
+
+import magic.ui.helpers.ImageHelper;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class MagicInfoWindow extends JWindow {

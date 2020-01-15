@@ -2,8 +2,10 @@ package magic.ui.widget.card.filter;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.model.MagicColor;
 import magic.ui.MagicImages;
 import magic.ui.helpers.MouseHelper;

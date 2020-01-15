@@ -2,11 +2,11 @@ package magic.utility;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
+import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.BufferedInputStream;
 import java.io.InputStreamReader;
-import java.net.URL;
+
 import magic.data.MagicIcon;
 import magic.data.MagicPredefinedFormat;
 import magic.data.MagicSets;

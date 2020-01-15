@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
+
 import magic.ui.helpers.ImageHelper;
 
 class ImageScaler {

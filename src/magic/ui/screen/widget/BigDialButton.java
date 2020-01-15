@@ -9,8 +9,10 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
+
 import javax.swing.ImageIcon;
 import javax.swing.SwingUtilities;
+
 import magic.ui.MagicSound;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.helpers.MouseHelper;

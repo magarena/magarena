@@ -7,6 +7,9 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
+
+import org.apache.commons.io.FileUtils;
+
 import magic.game.state.GameState;
 import magic.game.state.GameStateFileWriter;
 import magic.game.state.GameStateSnapshot;
@@ -16,7 +19,6 @@ import magic.ui.ScreenController;
 import magic.ui.helpers.DesktopHelper;
 import magic.ui.helpers.ImageHelper;
 import magic.utility.MagicFileSystem;
-import org.apache.commons.io.FileUtils;
 
 final class GameplayReport {
     private GameplayReport() {}

@@ -1,15 +1,15 @@
 package magic.model.mstatic;
 
+import java.util.Set;
+
 import magic.model.MagicAbility;
+import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicCard;
-import magic.model.MagicManaCost;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
-
-import java.util.Set;
 
 public class MagicDummyModifier implements MagicModifier {
 

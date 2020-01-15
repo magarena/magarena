@@ -4,9 +4,11 @@ import java.awt.Color;
 import java.awt.Font;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
 import javax.swing.AbstractAction;
 import javax.swing.ButtonGroup;
 import javax.swing.JToggleButton;
+
 import magic.ui.screen.deck.editor.ViewToggleButton;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TexturedPanel;

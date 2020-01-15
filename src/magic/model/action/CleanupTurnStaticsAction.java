@@ -1,9 +1,9 @@
 package magic.model.action;
 
+import java.util.Collection;
+
 import magic.model.MagicGame;
 import magic.model.mstatic.MagicPermanentStatic;
-
-import java.util.Collection;
 
 public class CleanupTurnStaticsAction extends MagicAction {
 

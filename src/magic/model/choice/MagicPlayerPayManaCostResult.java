@@ -1,8 +1,8 @@
 package magic.model.choice;
 
+import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicCopyMap;
 
 public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
 

@@ -1,18 +1,18 @@
 package magic.model.event;
 
+import java.util.Arrays;
+
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicSource;
-import magic.model.MagicManaCost;
-import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
+import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.target.MagicCardFilterImpl;
 import magic.model.target.MagicTargetType;
-
-import java.util.Arrays;
 
 public class MagicTransmuteActivation extends MagicCardAbilityActivation {
 

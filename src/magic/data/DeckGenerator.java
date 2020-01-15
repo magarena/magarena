@@ -1,6 +1,7 @@
 package magic.data;
 
 import java.util.Collection;
+
 import magic.generator.RandomDeckGenerator;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;

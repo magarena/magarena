@@ -2,10 +2,12 @@ package magic.ui.widget.card.filter.button;
 
 import java.awt.Dimension;
 import java.awt.Font;
+
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import magic.ui.utility.MagicStyle;
+
 import magic.ui.FontsAndBorders;
+import magic.ui.utility.MagicStyle;
 
 
 @SuppressWarnings("serial")

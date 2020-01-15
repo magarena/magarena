@@ -1,11 +1,12 @@
 package magic.ui.widget.card.filter.button;
 
 import java.util.stream.Stream;
+
 import magic.data.MagicSetDefinitions;
 import magic.data.MagicSets;
 import magic.model.MagicCardDefinition;
-import magic.translate.StringContext;
 import magic.translate.MText;
+import magic.translate.StringContext;
 import magic.ui.widget.card.filter.IFilterListener;
 
 @SuppressWarnings("serial")

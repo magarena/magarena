@@ -1,9 +1,11 @@
 package magic.ui.widget.cards.table;
 
 import java.awt.Color;
+
 import javax.swing.BorderFactory;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionListener;
+
 import magic.model.MagicCardDefinition;
 import magic.ui.FontsAndBorders;
 import magic.ui.mwidgets.MScrollPane;

@@ -1,9 +1,9 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTriggerType;
 
 public class ChangeStateAction extends MagicAction {

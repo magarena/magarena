@@ -2,7 +2,9 @@ package magic.ui.screen.decks;
 
 import java.awt.Color;
 import java.awt.Dimension;
+
 import javax.swing.BorderFactory;
+
 import magic.model.MagicDeck;
 import magic.ui.FontsAndBorders;
 import magic.ui.screen.interfaces.IDeckConsumer;

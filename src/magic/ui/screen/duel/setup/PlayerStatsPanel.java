@@ -1,8 +1,10 @@
 package magic.ui.screen.duel.setup;
 
 import java.awt.Color;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.model.player.PlayerStatistics;
 import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;

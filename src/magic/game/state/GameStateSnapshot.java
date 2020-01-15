@@ -3,13 +3,14 @@ package magic.game.state;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import magic.model.DuelPlayerConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.DuelPlayerConfig;
 
 public final class GameStateSnapshot {
     private GameStateSnapshot() {}

@@ -1,6 +1,7 @@
 package magic.ui.widget.duel.player;
 
 import javax.swing.JPanel;
+
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;

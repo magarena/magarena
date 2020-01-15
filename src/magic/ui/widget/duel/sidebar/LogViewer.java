@@ -2,17 +2,19 @@ package magic.ui.widget.duel.sidebar;
 
 import java.awt.Component;
 import java.util.List;
+
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
+
 import magic.data.GeneralConfig;
 import magic.model.MagicMessage;
+import magic.ui.FontsAndBorders;
 import magic.ui.screen.duel.game.SwingGameController;
+import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.message.MessageStyle;
 import magic.ui.widget.message.TextComponent;
-import magic.ui.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

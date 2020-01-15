@@ -2,9 +2,11 @@ package magic.ui.screen.widget;
 
 import java.awt.Point;
 import java.awt.event.MouseEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+
 import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 

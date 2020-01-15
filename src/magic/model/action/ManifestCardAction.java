@@ -3,8 +3,8 @@ package magic.model.action;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
+import magic.model.MagicPlayer;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.stack.MagicCardOnStack;
 

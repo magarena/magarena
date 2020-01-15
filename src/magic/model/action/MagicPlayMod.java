@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import magic.model.ARG;
 import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
 import magic.model.MagicCounterType;
@@ -11,7 +12,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
-import magic.model.ARG;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicMorphActivation;
 import magic.model.mstatic.MagicStatic;

@@ -2,8 +2,10 @@ package magic.ui.screen.decks;
 
 import java.awt.Dimension;
 import java.nio.file.Path;
+
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
+
 import magic.data.DeckType;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;

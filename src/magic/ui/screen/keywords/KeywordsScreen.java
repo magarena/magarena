@@ -1,6 +1,7 @@
 package magic.ui.screen.keywords;
 
 import java.awt.event.KeyEvent;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.StringSetting;
 import magic.translate.MText;

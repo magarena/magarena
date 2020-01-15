@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
 import magic.model.IUIGameController;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;

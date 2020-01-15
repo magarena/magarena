@@ -1,6 +1,7 @@
 package magic.ui.widget.card.filter.dialog;
 
 import java.util.List;
+
 import magic.model.MagicCardDefinition;
 import magic.ui.widget.card.filter.FilterOptionsPanel;
 import magic.ui.widget.card.filter.IMultiSelectFilter;

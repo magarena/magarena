@@ -7,10 +7,12 @@ import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+
 import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+
 import magic.utility.FileIO;
 
 @SuppressWarnings("serial")

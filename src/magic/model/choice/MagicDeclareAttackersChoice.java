@@ -3,6 +3,7 @@ package magic.model.choice;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+
 import magic.exception.UndoClickedException;
 import magic.model.IUIGameController;
 import magic.model.MagicAbility;

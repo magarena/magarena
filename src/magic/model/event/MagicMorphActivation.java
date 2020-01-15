@@ -1,17 +1,17 @@
 package magic.model.event;
 
 import java.util.Collections;
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
 
-import magic.model.MagicGame;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicSource;
+import magic.model.MagicGame;
+import magic.model.MagicMessage;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.action.TurnFaceUpAction;
 import magic.model.condition.MagicCondition;
-import magic.model.MagicMessage;
 
 public class MagicMorphActivation extends MagicPermanentActivation {
 

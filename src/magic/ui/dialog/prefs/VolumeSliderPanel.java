@@ -1,9 +1,11 @@
 package magic.ui.dialog.prefs;
 
 import java.awt.event.MouseListener;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
+
 import magic.ui.MagicSound;
 import net.miginfocom.swing.MigLayout;
 

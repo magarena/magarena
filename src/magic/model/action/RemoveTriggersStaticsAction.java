@@ -1,11 +1,11 @@
 package magic.model.action;
 
+import java.util.Collection;
+
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.trigger.MagicPermanentTrigger;
-
-import java.util.Collection;
 
 public class RemoveTriggersStaticsAction extends MagicAction {
 

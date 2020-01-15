@@ -3,7 +3,9 @@ package magic.ui.screen.deck.tiled;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import javax.swing.SwingUtilities;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;

@@ -9,6 +9,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.NumberFormat;
 import java.util.List;
+
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -16,18 +17,19 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
+
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicRandom;
+import magic.ui.FontsAndBorders;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
+import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.widget.cards.table.CardTablePanelB;
 import magic.ui.widget.cards.table.ICardSelectionListener;
-import magic.ui.widget.card.filter.CardFilterPanel;
-import magic.ui.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 

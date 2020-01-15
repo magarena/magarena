@@ -1,6 +1,7 @@
 package magic.model.target;
 
 import java.util.List;
+
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;

@@ -1,13 +1,15 @@
 package magic.ui.widget.card.filter;
 
-import magic.ui.widget.card.filter.button.FilterPanel;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
+
 import magic.translate.MText;
 import magic.ui.helpers.MouseHelper;
+import magic.ui.widget.card.filter.button.FilterPanel;
 
 @SuppressWarnings("serial")
 class FilterResetButton extends JButton {

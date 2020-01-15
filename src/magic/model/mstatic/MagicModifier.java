@@ -1,15 +1,15 @@
 package magic.model.mstatic;
 
+import java.util.Set;
+
 import magic.model.MagicAbility;
+import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicCard;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
-import magic.model.MagicManaCost;
-
-import java.util.Set;
 
 // Determines variable power, toughness, abilities, sub types and colors for a single creature permanent.
 public interface MagicModifier {

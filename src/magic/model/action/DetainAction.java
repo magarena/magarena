@@ -1,5 +1,7 @@
 package magic.model.action;
 
+import java.util.Set;
+
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -8,8 +10,6 @@ import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.AtUpkeepTrigger;
-
-import java.util.Set;
 
 public class DetainAction extends MagicAction {
 

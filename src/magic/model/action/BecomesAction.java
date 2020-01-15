@@ -2,6 +2,7 @@ package magic.model.action;
 
 import java.util.Collections;
 import java.util.Set;
+
 import magic.model.MagicAbilityList;
 import magic.model.MagicColor;
 import magic.model.MagicGame;

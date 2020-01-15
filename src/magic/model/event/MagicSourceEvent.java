@@ -1,14 +1,14 @@
 package magic.model.event;
 
-import magic.model.MagicSource;
-import magic.model.MagicPlayer;
-import magic.model.MagicCopyable;
-import magic.model.condition.MagicCondition;
-import magic.model.choice.MagicChoiceFactory;
-import magic.model.choice.MagicChoice;
-import magic.model.target.MagicTargetPicker;
-
 import java.util.regex.Matcher;
+
+import magic.model.MagicCopyable;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.choice.MagicChoice;
+import magic.model.choice.MagicChoiceFactory;
+import magic.model.condition.MagicCondition;
+import magic.model.target.MagicTargetPicker;
 
 public class MagicSourceEvent implements MagicCopyable, MagicEventFactory {
     private final MagicRuleEventAction rule;

@@ -2,13 +2,16 @@ package magic.ui.screen.about;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
+
 import javax.swing.JPanel;
+
+import org.pushingpixels.trident.Timeline;
+import org.pushingpixels.trident.callback.TimelineCallback;
+
 import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.helpers.ImageHelper;
 import net.miginfocom.swing.MigLayout;
-import org.pushingpixels.trident.Timeline;
-import org.pushingpixels.trident.callback.TimelineCallback;
 
 @SuppressWarnings("serial")
 public class AboutContentPanel extends JPanel

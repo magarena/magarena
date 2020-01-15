@@ -3,6 +3,7 @@ package magic.model.action;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicObject;

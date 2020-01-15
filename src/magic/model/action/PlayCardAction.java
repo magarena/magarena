@@ -3,6 +3,7 @@ package magic.model.action;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;

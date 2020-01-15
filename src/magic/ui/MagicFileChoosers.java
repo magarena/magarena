@@ -1,13 +1,16 @@
 package magic.ui;
 
+import static magic.utility.DeckUtils.DECK_EXTENSION;
+
 import java.awt.Component;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
+
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileFilter;
-import static magic.utility.DeckUtils.DECK_EXTENSION;
+
 import magic.utility.MagicFileSystem;
 
 public class MagicFileChoosers {

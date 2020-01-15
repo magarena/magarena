@@ -6,15 +6,17 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+
 import magic.model.MagicSource;
 import magic.model.choice.MagicPlayChoiceResult;
-import magic.ui.screen.duel.game.SwingGameController;
 import magic.translate.MText;
-import magic.ui.widget.duel.viewer.UserActionPanel;
 import magic.ui.FontsAndBorders;
+import magic.ui.screen.duel.game.SwingGameController;
+import magic.ui.widget.duel.viewer.UserActionPanel;
 import magic.ui.widget.message.TextLabel;
 
 @SuppressWarnings("serial")

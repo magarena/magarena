@@ -1,10 +1,10 @@
 package magic.model.event;
 
+import java.util.Arrays;
+
 import magic.model.MagicCard;
 import magic.model.MagicManaCost;
 import magic.model.condition.MagicCondition;
-
-import java.util.Arrays;
 
 public class MagicEvokeActivation extends MagicHandCastActivation {
 

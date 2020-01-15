@@ -4,8 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import magic.utility.MagicResources;
+
 import org.h2.tools.RunScript;
+
+import magic.utility.MagicResources;
 
 enum H2Schema {
 

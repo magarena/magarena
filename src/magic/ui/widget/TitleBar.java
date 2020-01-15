@@ -1,9 +1,11 @@
 package magic.ui.widget;
 
 import java.awt.Dimension;
+
 import javax.swing.Icon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;

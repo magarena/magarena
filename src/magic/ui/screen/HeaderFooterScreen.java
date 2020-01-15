@@ -2,6 +2,7 @@ package magic.ui.screen;
 
 import javax.swing.JComponent;
 import javax.swing.JPanel;
+
 import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.screen.widget.ScreenFooterPanel;
 import magic.ui.screen.widget.ScreenHeaderPanel;

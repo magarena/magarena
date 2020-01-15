@@ -1,12 +1,13 @@
 package magic.model.trigger;
 
-import java.util.Collection;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.EnumMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
+
 import magic.exception.GameException;
 import magic.model.MagicCopyMap;
 import magic.model.MagicPermanent;

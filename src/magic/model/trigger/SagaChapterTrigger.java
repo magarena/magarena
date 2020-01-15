@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
-import magic.model.target.MagicTargetFilter;
 
 public abstract class SagaChapterTrigger extends OneOrMoreCountersArePutTrigger {
 

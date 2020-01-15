@@ -4,9 +4,11 @@ import java.awt.Color;
 import java.awt.Image;
 import java.util.HashMap;
 import java.util.Map;
+
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import magic.data.CardStatistics;
 import magic.data.MagicIcon;
 import magic.model.MagicColor;

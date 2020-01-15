@@ -1,6 +1,7 @@
 package magic.data.settings;
 
 import java.awt.Color;
+
 import magic.ui.MagicStickyFrame;
 
 public enum IntegerSetting {

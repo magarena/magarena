@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+
 import magic.exception.GameException;
 import magic.exception.UndoClickedException;
 import magic.model.IUIGameController;

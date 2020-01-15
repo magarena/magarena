@@ -4,9 +4,11 @@ import java.awt.event.ActionEvent;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
+
 import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+
 import magic.data.DeckType;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;

@@ -3,6 +3,7 @@ package magic.model;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+
 import magic.data.DeckType;
 import magic.model.player.PlayerProfile;
 import magic.utility.DeckParser;

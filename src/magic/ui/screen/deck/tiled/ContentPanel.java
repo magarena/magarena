@@ -2,14 +2,16 @@ package magic.ui.screen.deck.tiled;
 
 import java.awt.image.BufferedImage;
 import java.util.List;
+
 import javax.swing.JPanel;
+
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.screen.deck.editor.DeckSideBar;
 import magic.ui.screen.cardflow.ICardFlowProvider;
+import magic.ui.screen.deck.editor.DeckSideBar;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.ICardsCanvasListener;
 import net.miginfocom.swing.MigLayout;

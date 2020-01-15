@@ -2,8 +2,10 @@ package magic.ui.helpers;
 
 import java.awt.Color;
 import java.awt.Dimension;
+
 import javax.swing.UIDefaults;
 import javax.swing.UIManager;
+
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
 import magic.ui.theme.Theme;

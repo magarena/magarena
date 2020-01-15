@@ -1,12 +1,12 @@
 package magic.model.target;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
     @Override
