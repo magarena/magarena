@@ -1,8 +1,6 @@
-/build/
+# From the old .gitignore (to be verified)
 /buildtest/
 /test/lib
-/.project
-/nbproject/
 /manifest.mf
 release/duels/
 release/Magarena/decks/firemind/
@@ -10,4 +8,59 @@ release/Magarena/decks/*.dec
 release/Magarena/reports
 doc/doxygen/
 doc/doxygen*.tmp
+/build/
 /bin/
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+# Ignore Eclipse project files (they are auto-regenerated when importing the project)
+/.classpath
+/.project
+/.settings/
+
+# Ignore NetBeans project files
+/nbproject/
+
+# Ignore Meghanada temp files
+/.meghanada
+
+# Ignore Gradle config
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+gradle/wrapper/gradle-wrapper.properties
+
