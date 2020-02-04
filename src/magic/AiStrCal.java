@@ -1,6 +1,14 @@
 package magic;
 
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import magic.ai.MagicAIImpl;
 import magic.data.DeckGenerators;
@@ -16,15 +24,6 @@ import magic.model.player.AiProfile;
 import magic.utility.DeckUtils;
 import magic.utility.MagicSystem;
 import magic.utility.ProgressReporter;
-
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.Collections;
-import java.util.ArrayList;
 
 public class AiStrCal {
 
