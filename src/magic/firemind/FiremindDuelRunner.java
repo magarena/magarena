@@ -145,7 +145,7 @@ public class FiremindDuelRunner {
 
     private static String saveDeckFile(String name, String content) {
         try {
-            File deckFile = DeckUtils.getDecksFolder().resolve(name + ".dec").toFile();
+            File deckFile = DeckUtils.getDecksFolder().resolve(name + DeckUtils.DECK_EXTENSION).toFile();
             deckFile.createNewFile();
             Writer fw = Files.newBufferedWriter(deckFile.getAbsoluteFile().toPath(), UTF_8);
             BufferedWriter bw = new BufferedWriter(fw);
