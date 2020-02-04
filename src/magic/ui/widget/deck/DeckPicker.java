@@ -271,11 +271,11 @@ public class DeckPicker extends JPanel {
             private Path getDeckPath(final String deckName, final DeckType deckType) {
                 switch (deckType) {
                     case Preconstructed:
-                        return DeckUtils.getPrebuiltDecksFolder().resolve(deckName + ".dec");
+                        return DeckUtils.getPrebuiltDecksFolder().resolve(deckName + DeckUtils.DECK_EXTENSION);
                     case Custom:
-                        return DeckUtils.getDecksFolder().resolve(deckName + ".dec");
+                        return DeckUtils.getDecksFolder().resolve(deckName + DeckUtils.DECK_EXTENSION);
                     case Firemind:
-                        return DeckUtils.getDecksFolder().resolve("firemind").resolve(deckName + ".dec");
+                        return DeckUtils.getDecksFolder().resolve("firemind").resolve(deckName + DeckUtils.DECK_EXTENSION);
                     default:
                         throw new RuntimeException("getDeckPath() not implemented for decktype: " + deckType);
                 }

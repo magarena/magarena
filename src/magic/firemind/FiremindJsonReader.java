@@ -92,7 +92,7 @@ public final class FiremindJsonReader {
 
         for (MagicDeck deck : decks) {
             String validFilename = deck.getFilename().replaceAll("[^A-Za-z0-9' \\.\\-]", "_");
-            String decFilename = firemindDecksPath.resolve(validFilename + ".dec").toString();
+            String decFilename = firemindDecksPath.resolve(validFilename + DeckUtils.DECK_EXTENSION).toString();
             try {
                 DeckUtils.saveDeck(decFilename, deck);
             } catch (Exception ex) {

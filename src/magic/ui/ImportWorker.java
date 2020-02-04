@@ -27,6 +27,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicLogger;
 import magic.model.player.PlayerProfiles;
 import magic.translate.MText;
+import magic.utility.DeckUtils;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 
@@ -285,7 +286,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         final Path sourcePath = importDataPath.resolve(directoryName);
         if (sourcePath.toFile().exists()) {
             final Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
-            final IOFileFilter deckSuffixFilter = FileFilterUtils.suffixFileFilter(".dec");
+            final IOFileFilter deckSuffixFilter = FileFilterUtils.suffixFileFilter(DeckUtils.DECK_EXTENSION);
             FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile(), deckSuffixFilter);
         }
         setProgressNote(OK_STRING);

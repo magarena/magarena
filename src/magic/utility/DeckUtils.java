@@ -156,7 +156,7 @@ public class DeckUtils {
 
     public static long getDeckFileChecksum(String name, DeckType deckType) {
         Path deckPath = DeckType.getDeckFolder(deckType);
-        Path deckFile = deckPath.resolve(name + ".dec");
+        Path deckFile = deckPath.resolve(name + DECK_EXTENSION);
         return deckFile.toFile().exists() ? getDeckFileChecksum(deckFile) : -1;
     }
 
@@ -207,7 +207,7 @@ public class DeckUtils {
 
     public static MagicDeck loadDeckFromFile(String name, DeckType deckType) {
         Path deckPath = DeckType.getDeckFolder(deckType);
-        return loadDeckFromFile(deckPath.resolve(name + ".dec"));
+        return loadDeckFromFile(deckPath.resolve(name + DECK_EXTENSION));
     }
 
     public static void loadAndSetPlayerDeck(final String filename, final DuelPlayerConfig player) {
@@ -360,7 +360,7 @@ public class DeckUtils {
 
     public static Path getDeckPath(MagicDeck deck) {
         Path deckPath = DeckType.getDeckFolder(deck.getDeckType());
-        return deckPath.resolve(deck.getName() + ".dec");
+        return deckPath.resolve(deck.getName() + DECK_EXTENSION);
     }
 
     static Path getPlayerDecksFolder() {
@@ -377,7 +377,7 @@ public class DeckUtils {
      * Returns string as {@code filename}.dec
      */
     public static String getNormalizedFilename(String filename) {
-        return filename.endsWith(".dec") ? filename : filename + ".dec";
+        return filename.endsWith(DECK_EXTENSION) ? filename : filename + DECK_EXTENSION;
     }
 
     /**
