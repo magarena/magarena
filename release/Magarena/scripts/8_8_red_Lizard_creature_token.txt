@@ -1,6 +1,6 @@
 name=8/8 red Lizard creature token
 token=Lizard
-image=https://img.scryfall.com/cards/border_crop/en/tcn2/9.jpg
+image=https://api.scryfall.com/cards/tcn2/9/en?format=image&version=border_crop
 value=1
 type=Creature
 subtype=Lizard

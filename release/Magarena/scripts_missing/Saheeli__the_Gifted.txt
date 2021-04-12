@@ -1,5 +1,5 @@
 name=Saheeli, the Gifted
-image=https://img.scryfall.com/cards/normal/en/c18/44.jpg
+image=https://api.scryfall.com/cards/c18/44/en?format=image&version=border_crop
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

@@ -1,6 +1,6 @@
 name=white Avatar creature token
 token=Avatar
-image=https://img.scryfall.com/cards/border_crop/en/tm11/1.jpg?1517813031
+image=https://api.scryfall.com/cards/tm11/1/en?format=image&version=border_crop
 value=4
 type=Creature
 subtype=Avatar

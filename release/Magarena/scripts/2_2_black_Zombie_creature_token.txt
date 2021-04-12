@@ -1,6 +1,6 @@
 name=2/2 black Zombie creature token
 token=Zombie
-image=https://img.scryfall.com/cards/border_crop/en/tc18/9.jpg?1535501361
+image=https://api.scryfall.com/cards/tc18/9/en?format=image&version=border_crop
 image_updated=2015-11-12
 value=2
 type=Creature

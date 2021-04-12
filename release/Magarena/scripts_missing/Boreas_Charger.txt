@@ -1,5 +1,5 @@
 name=Boreas Charger
-image=https://img.scryfall.com/cards/normal/en/c18/1.jpg
+image=https://api.scryfall.com/cards/c18/1/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Creature

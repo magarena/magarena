@@ -1,5 +1,5 @@
 name=Shahrazad
-image=https://img.scryfall.com/cards/normal/en/arn/10.jpg
+image=https://api.scryfall.com/cards/arn/10/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Sorcery

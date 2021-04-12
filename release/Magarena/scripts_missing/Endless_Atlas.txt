@@ -1,5 +1,5 @@
 name=Endless Atlas
-image=https://img.scryfall.com/cards/normal/en/c18/55.jpg
+image=https://api.scryfall.com/cards/c18/55/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Artifact

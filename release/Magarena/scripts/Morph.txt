@@ -1,5 +1,5 @@
 name=;Morph
-image=https://magiccards.info/extras/token/khans-of-tarkir/morph.jpg
+image=https://api.scryfall.com/cards/tktk/11/en?format=image&version=border_crop
 value=1
 type=Creature
 rarity=C

@@ -1,5 +1,5 @@
 name=Entreat the Dead
-image=https://img.scryfall.com/cards/normal/en/c18/15.jpg
+image=https://api.scryfall.com/cards/c18/15/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Sorcery

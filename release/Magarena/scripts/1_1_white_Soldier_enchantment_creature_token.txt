@@ -1,6 +1,6 @@
 name=1/1 white Soldier enchantment creature token
 token=Soldier
-image=https://img.scryfall.com/cards/border_crop/en/tbng/3.jpg?1517813031
+image=https://api.scryfall.com/cards/tbng/3/en?format=image&version=border_crop
 value=1
 type=Enchantment,Creature
 subtype=Soldier

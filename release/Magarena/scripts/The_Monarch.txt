@@ -1,5 +1,5 @@
 name=The Monarch
-image=https://magiccards.info/extras/token/conspiracy-take-the-crown/the-monarch.jpg
+image=https://api.scryfall.com/cards/tcn2/1/en?format=image&version=border_crop
 image_updated=2017-09-04
 type=Enchantment
 rarity=C

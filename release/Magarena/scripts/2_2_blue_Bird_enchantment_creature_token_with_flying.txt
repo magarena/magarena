@@ -1,6 +1,6 @@
 name=2/2 blue Bird enchantment creature token with flying
 token=Bird
-image=https://img.scryfall.com/cards/border_crop/en/tbng/4.jpg?1517813031
+image=https://api.scryfall.com/cards/tbng/4/en?format=image&version=border_crop
 value=2
 type=Enchantment,Creature
 subtype=Bird

@@ -1,6 +1,6 @@
 name=colorless artifact token named Gold
 token=Gold
-image=https://img.scryfall.com/cards/border_crop/en/tc17/10.jpg?1523997640
+image=https://api.scryfall.com/cards/tc17/10/en?format=image&version=border_crop
 value=1
 color=
 type=Artifact

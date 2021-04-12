@@ -1,5 +1,5 @@
 name=Timmerian Fiends
-image=https://img.scryfall.com/cards/normal/en/hml/58.jpg
+image=https://api.scryfall.com/cards/hml/58/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Creature

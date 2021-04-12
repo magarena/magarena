@@ -1,5 +1,5 @@
 name=Amulet of Quoz
-image=https://img.scryfall.com/cards/normal/en/ice/308.jpg
+image=https://api.scryfall.com/cards/ice/308/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Artifact

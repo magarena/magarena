@@ -1,5 +1,5 @@
 name=Jeweled Bird
-image=https://img.scryfall.com/cards/normal/en/arn/66.jpg
+image=https://api.scryfall.com/cards/arn/66/en?format=image&version=border_crop
 value=2.500
 rarity=U
 type=Artifact

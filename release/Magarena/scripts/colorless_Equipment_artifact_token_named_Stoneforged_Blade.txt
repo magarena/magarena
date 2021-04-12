@@ -1,6 +1,6 @@
 name=colorless Equipment artifact token named Stoneforged Blade
 token=Stoneforged Blade
-image=https://img.scryfall.com/cards/border_crop/en/tc14/30.jpg?1530676841
+image=https://api.scryfall.com/cards/tc14/30/en?format=image&version=border_crop
 value=4
 type=Artifact
 subtype=Equipment

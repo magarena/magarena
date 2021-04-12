@@ -1,5 +1,5 @@
 name=Chaos Orb
-image=https://img.scryfall.com/cards/normal/en/lea/235.jpg
+image=https://api.scryfall.com/cards/lea/235/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Artifact

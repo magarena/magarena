@@ -1,6 +1,6 @@
 name=1/1 white Kor Ally creature token
 token=Kor Ally
-image=https://img.scryfall.com/cards/border_crop/en/tbfz/6.jpg?1517813031
+image=https://api.scryfall.com/cards/tbfz/6/en?format=image&version=border_crop
 value=1
 type=Creature
 subtype=Kor,Ally

@@ -1,6 +1,6 @@
 name=1/1 white Pegasus creature token with flying
 token=Pegasus
-image=https://img.scryfall.com/cards/border_crop/en/tc14/5.jpg?1530676677
+image=https://api.scryfall.com/cards/tc14/5/en?format=image&version=border_crop
 value=2
 type=Creature
 subtype=Pegasus

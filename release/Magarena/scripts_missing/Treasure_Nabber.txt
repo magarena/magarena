@@ -1,5 +1,5 @@
 name=Treasure Nabber
-image=https://img.scryfall.com/cards/normal/en/c18/27.jpg
+image=https://api.scryfall.com/cards/c18/27/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Creature

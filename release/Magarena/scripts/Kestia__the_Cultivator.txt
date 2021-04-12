@@ -1,5 +1,5 @@
 name=Kestia, the Cultivator
-image=https://img.scryfall.com/cards/border_crop/en/c18/42.jpg
+image=https://api.scryfall.com/cards/c18/42/en?format=image&version=border_crop
 value=2.500
 rarity=M
 type=Legendary,Enchantment,Creature
