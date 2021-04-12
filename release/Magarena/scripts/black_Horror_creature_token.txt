@@ -1,6 +1,6 @@
 name=black Horror creature token
 token=Horror
-image=https://img.scryfall.com/cards/border_crop/en/tc14/15.jpg?1530676739
+image=https://api.scryfall.com/cards/tc14/15/en?format=image&version=border_crop
 value=1
 type=Creature
 subtype=Horror

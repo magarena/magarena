@@ -1,6 +1,6 @@
 name=6/12 colorless Construct artifact creature token with trample
 token=Construct
-image=https://img.scryfall.com/cards/border_crop/en/tc18/21.jpg?1535501572
+image=https://api.scryfall.com/cards/tc18/21/en?format=image&version=border_crop
 value=5
 pt=6/12
 color=

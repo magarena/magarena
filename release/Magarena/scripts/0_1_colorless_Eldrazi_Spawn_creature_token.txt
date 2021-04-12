@@ -1,6 +1,6 @@
 name=0/1 colorless Eldrazi Spawn creature token
 token=Eldrazi Spawn
-image=https://magiccards.info/extras/token/rise-of-the-eldrazi/eldrazi-spawn-1.jpg
+image=https://api.scryfall.com/cards/troe/1a/en?format=image&version=border_crop
 value=1
 type=Creature
 subtype=Eldrazi,Spawn

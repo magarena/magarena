@@ -1,6 +1,6 @@
 name=1/1 green Elf Druid creature token
 token=Elf Warrior
-image=https://img.scryfall.com/cards/border_crop/en/tcma/11.jpg?1523997681
+image=https://api.scryfall.com/cards/tcma/11/en?format=image&version=border_crop
 value=1
 type=Creature
 subtype=Elf,Druid

@@ -1,6 +1,6 @@
 name=3/3 green Dinosaur creature token with trample
 token=Dinosaur
-image=https://img.scryfall.com/cards/border_crop/en/txln/5.jpg?1505311019
+image=https://api.scryfall.com/cards/txln/5/en?format=image&version=border_crop
 value=3
 pt=3/3
 color=g

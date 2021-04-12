@@ -1,6 +1,6 @@
 name=1/1 black Insect creature token
 token=Insect
-image=https://img.scryfall.com/cards/border_crop/en/takh/19.jpg
+image=https://api.scryfall.com/cards/takh/19/en?format=image&version=border_crop
 value=1
 type=Creature
 subtype=Insect

@@ -1,6 +1,6 @@
 name=9/9 colorless Golem artifact creature token
 token=Golem
-image=https://img.scryfall.com/cards/border_crop/en/tmbs/3.jpg?1517813031
+image=https://api.scryfall.com/cards/tmbs/3/en?format=image&version=border_crop
 value=4
 pt=9/9
 type=Artifact,Creature

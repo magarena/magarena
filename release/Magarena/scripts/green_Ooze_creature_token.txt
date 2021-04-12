@@ -1,6 +1,6 @@
 name=green Ooze creature token
 token=Ooze
-image=https://img.scryfall.com/cards/border_crop/en/tmm3/13.jpg?1517813031
+image=https://api.scryfall.com/cards/tmm3/13/en?format=image&version=border_crop
 value=2
 type=Creature
 subtype=Ooze

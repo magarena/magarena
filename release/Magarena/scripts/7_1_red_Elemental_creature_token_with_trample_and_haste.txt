@@ -1,6 +1,6 @@
 name=7/1 red Elemental creature token with trample and haste
 token=Elemental
-image=https://img.scryfall.com/cards/border_crop/en/tzen/8.jpg?1517813031
+image=https://api.scryfall.com/cards/tzen/8/en?format=image&version=border_crop
 value=3
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=0/1 black Cleric creature token
 token=Cleric
-image=https://img.scryfall.com/cards/large/en/tdom/4.jpg
+image=https://api.scryfall.com/cards/tdom/4/en?format=image&version=border_crop
 value=1
 type=Creature
 subtype=Cleric

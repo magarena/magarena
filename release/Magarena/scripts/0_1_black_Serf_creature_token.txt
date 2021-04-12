@@ -1,6 +1,6 @@
 name=0/1 black Serf creature token
 token=Serf
-image=https://magiccards.info/extras/token/eternal-masters/serf.jpg
+image=https://api.scryfall.com/cards/tema/5/en?format=image&version=border_crop
 value=1
 type=Creature
 subtype=Serf

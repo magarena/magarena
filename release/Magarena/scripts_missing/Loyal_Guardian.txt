@@ -1,5 +1,5 @@
 name=Loyal Guardian
-image=https://img.scryfall.com/cards/normal/en/c18/31.jpg
+image=https://api.scryfall.com/cards/c18/31/en?format=image&version=border_crop
 value=2.500
 rarity=U
 type=Creature

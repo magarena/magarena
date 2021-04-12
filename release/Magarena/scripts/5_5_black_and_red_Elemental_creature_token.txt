@@ -1,6 +1,6 @@
 name=5/5 black and red Elemental creature token
 token=Elemental
-image=https://img.scryfall.com/cards/border_crop/en/tshm/9.jpg
+image=https://api.scryfall.com/cards/tshm/9/en?format=image&version=border_crop
 value=5
 type=Creature
 subtype=Elemental

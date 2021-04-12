@@ -1,5 +1,5 @@
 name=Estrid's Invocation
-image=https://img.scryfall.com/cards/normal/en/c18/8.jpg
+image=https://api.scryfall.com/cards/c18/8/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Enchantment

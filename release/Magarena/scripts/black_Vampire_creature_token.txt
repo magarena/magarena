@@ -1,6 +1,6 @@
 name=black Vampire creature token
 token=Vampire
-image=https://img.scryfall.com/cards/border_crop/en/tzen/6.jpg?1517813031
+image=https://api.scryfall.com/cards/tzen/6/en?format=image&version=border_crop
 value=1
 type=Creature
 subtype=Vampire

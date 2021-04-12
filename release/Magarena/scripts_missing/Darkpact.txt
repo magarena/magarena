@@ -1,5 +1,5 @@
 name=Darkpact
-image=https://img.scryfall.com/cards/normal/en/lea/99.jpg
+image=https://api.scryfall.com/cards/lea/99/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Sorcery

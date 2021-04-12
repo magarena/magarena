@@ -1,5 +1,5 @@
 name=Night Incarnate
-image=https://img.scryfall.com/cards/border_crop/en/c18/17.jpg
+image=https://api.scryfall.com/cards/c18/17/en?format=image&version=border_crop
 value=2.500
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=black Demon creature token with flying
 token=Demon
-image=https://img.scryfall.com/cards/border_crop/en/tdvd/6.jpg?1520566391
+image=https://api.scryfall.com/cards/tdvd/6/en?format=image&version=border_crop
 image_updated=2015-11-12
 value=2
 type=Creature

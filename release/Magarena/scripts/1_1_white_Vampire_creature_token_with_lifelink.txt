@@ -1,6 +1,6 @@
 name=1/1 white Vampire creature token with lifelink
 token=Vampire
-image=https://img.scryfall.com/cards/border_crop/en/txln/1.jpg?1505310802
+image=https://api.scryfall.com/cards/txln/1/en?format=image&version=border_crop
 value=1
 pt=1/1
 color=w

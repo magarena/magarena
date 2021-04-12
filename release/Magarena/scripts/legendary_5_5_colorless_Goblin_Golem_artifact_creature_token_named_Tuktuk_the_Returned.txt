@@ -1,6 +1,6 @@
 name=legendary 5/5 colorless Goblin Golem artifact creature token named Tuktuk the Returned
 token=Tuktuk the Returned
-image=https://img.scryfall.com/cards/border_crop/en/tcm2/15.jpg?1534121899
+image=https://api.scryfall.com/cards/tcm2/15/en?format=image&version=border_crop
 image_updated=2015-11-12
 value=4
 type=Legendary,Artifact,Creature
