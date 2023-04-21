@@ -4,10 +4,31 @@
 /.project
 /nbproject/
 /manifest.mf
+/tags
+
+# Eclipse-related files
+.settings/
+.classpath
+.project
+launch4j/.settings/
+launch4j/.classpath
+launch4j/.project
+
+# Release-related files
 release/duels/
 release/Magarena/decks/firemind/
 release/Magarena/decks/*.dec
 release/Magarena/reports
+release/Magarena/players/
+release/Magarena/logs/
+release/Magarena/duels/
+release/Magarena/general.cfg
+release/Magarena/snapshot.dat
+release/Magarena/firemind/
+release/lib
+release/Magarena.jar
+release/Magarena.exe
+
 doc/doxygen/
 doc/doxygen*.tmp
-/bin/
+bin/
