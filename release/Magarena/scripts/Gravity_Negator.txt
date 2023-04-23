@@ -1,5 +1,5 @@
 name=Gravity Negator
-image=https://magiccards.info/scans/en/ogw/45.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85f9b63e-6ecc-4d85-9724-87b8176ae6a6.jpg?1562922080
 image_updated=2016-02-29
 value=2.500
 rarity=C

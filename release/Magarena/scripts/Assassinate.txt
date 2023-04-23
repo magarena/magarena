@@ -1,5 +1,5 @@
 name=Assassinate
-image=https://magiccards.info/scans/en/cns/113.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac0a1dc6-215f-4738-8ae4-7b6aa1c7d80b.jpg?1620236215
 value=2.625
 removal=3
 rarity=C

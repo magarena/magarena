@@ -1,5 +1,5 @@
 name=Strangling Soot
-image=https://magiccards.info/scans/en/ts/132.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/872d8f4d-6ee5-4494-9900-db62d3e4cedd.jpg?1619396206
 image_updated=2016-01-09
 value=3.050
 rarity=C

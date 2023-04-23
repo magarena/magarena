@@ -1,5 +1,5 @@
 name=Cremate
-image=https://magiccards.info/scans/en/rtr/59.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/013d5260-f906-4f6a-97ed-725197743b60.jpg?1562781792
 value=3.782
 rarity=C
 type=Instant

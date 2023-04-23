@@ -1,5 +1,5 @@
 name=Alpha Myr
-image=https://magiccards.info/scans/en/mi/142.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3f792d7-75be-429e-8f62-0b563b103642.jpg?1562163038
 value=1.975
 rarity=C
 type=Artifact,Creature

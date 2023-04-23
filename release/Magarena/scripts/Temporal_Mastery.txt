@@ -1,5 +1,5 @@
 name=Temporal Mastery
-image=https://magiccards.info/scans/en/mm3/54.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/729cdea3-59ca-4b32-9a8a-9b0cdb4b3aaf.jpg?1593813165
 image_updated=2017-08-08
 value=4.087
 rarity=M

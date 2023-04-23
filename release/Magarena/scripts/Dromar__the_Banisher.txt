@@ -1,5 +1,5 @@
 name=Dromar, the Banisher
-image=https://magiccards.info/scans/en/in/244.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfcc3c72-fff5-454c-814c-eb952fd23ba9.jpg?1562936774
 value=3.971
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Sandstone Deadfall
-image=https://magiccards.info/scans/en/od/307.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/241ebc17-b8ae-4ca4-8413-f53501d86244.jpg?1562901720
 value=0.949
 rarity=U
 type=Artifact

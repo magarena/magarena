@@ -1,5 +1,5 @@
 name=Titan's Revenge
-image=https://magiccards.info/scans/en/mt/110.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1b0f9ca-b752-4dd6-982b-06bb3a27ddbc.jpg?1562880793
 value=3.444
 rarity=R
 type=Sorcery

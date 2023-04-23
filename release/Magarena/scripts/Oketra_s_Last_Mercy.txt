@@ -1,5 +1,5 @@
 name=Oketra's Last Mercy
-image=https://magiccards.info/scans/en/hou/18.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4d3bf26-6003-4699-a26e-b3b5bcd3e8dc.jpg?1562813953
 value=2.500
 rarity=R
 type=Sorcery

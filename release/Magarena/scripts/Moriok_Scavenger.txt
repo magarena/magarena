@@ -1,5 +1,5 @@
 name=Moriok Scavenger
-image=https://magiccards.info/scans/en/mi/68.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f27426b-3679-44e4-9249-f57b92baa3f3.jpg?1562135665
 value=3.297
 rarity=C
 type=Creature

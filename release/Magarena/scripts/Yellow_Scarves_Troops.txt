@@ -1,5 +1,5 @@
 name=Yellow Scarves Troops
-image=https://magiccards.info/scans/en/p3k/127.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3ca36a8d-ca44-485e-a219-85814f160c4d.jpg?1562256071
 value=2.420
 rarity=C
 type=Creature

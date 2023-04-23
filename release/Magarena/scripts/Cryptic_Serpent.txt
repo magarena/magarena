@@ -1,5 +1,5 @@
 name=Cryptic Serpent
-image=https://magiccards.info/scans/en/akh/48.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a636f74-3bac-4b88-a24f-32a66a94e340.jpg?1600697735
 value=2.500
 rarity=U
 type=Creature

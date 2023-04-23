@@ -1,5 +1,5 @@
 name=Crush of Wurms
-image=https://magiccards.info/scans/en/ju/110.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32a924b3-3bd6-43ad-acbd-1303dd670db4.jpg?1562629260
 value=4.188
 rarity=R
 type=Sorcery

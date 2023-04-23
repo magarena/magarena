@@ -1,5 +1,5 @@
 name=Festering Goblin
-image=https://magiccards.info/scans/en/mma/87.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/978a9e84-2cce-41ec-b311-745a8ea6c238.jpg?1561967857
 value=3.812
 rarity=C
 type=Creature

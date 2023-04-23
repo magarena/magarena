@@ -1,5 +1,5 @@
 name=Paragon of the Amesha
-image=https://magiccards.info/scans/en/cfx/14.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d21c4772-fa03-4b71-a95e-1ad8466d25da.jpg?1562803948
 value=2.973
 rarity=U
 type=Creature

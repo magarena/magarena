@@ -1,5 +1,5 @@
 name=Stave Off
-image=https://magiccards.info/scans/en/cns/83.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8257cc36-4886-449a-bb45-51f6abf09e82.jpg?1592754932
 image_updated=2016-01-09
 value=2.000
 rarity=C

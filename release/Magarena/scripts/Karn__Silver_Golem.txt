@@ -1,5 +1,5 @@
 name=Karn, Silver Golem
-image=https://magiccards.info/scans/en/us/298.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/055a00a2-0df2-4f49-ac51-e33dfaf7ee85.jpg?1562896049
 value=4.500
 rarity=R
 type=Legendary,Artifact,Creature

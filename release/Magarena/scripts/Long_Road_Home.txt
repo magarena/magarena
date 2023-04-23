@@ -1,5 +1,5 @@
 name=Long Road Home
-image=https://magiccards.info/scans/en/emn/34.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/504698a9-1512-4288-b5ef-392d41ebcd05.jpg?1600696905
 image_updated=2016-09-05
 value=2.500
 rarity=U

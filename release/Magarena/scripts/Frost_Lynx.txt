@@ -1,5 +1,5 @@
 name=Frost Lynx
-image=https://magiccards.info/scans/en/ima/57.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfcaeccc-fc8c-4a9e-80d5-b48da71d7ff1.jpg?1591226326
 image_updated=2017-04-12
 value=3.286
 rarity=C

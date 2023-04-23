@@ -1,5 +1,5 @@
 name=Sidisi, Undead Vizier
-image=https://magiccards.info/scans/en/dtk/120.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ea5dbba-6114-4d97-9363-817ab9e896d3.jpg?1562788006
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Seal Away
-image=https://magiccards.info/scans/en/dom/31.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f8d6588-671d-4eb3-874f-f7139da2e05a.jpg?1562739448
 value=2.500
 rarity=U
 type=Enchantment

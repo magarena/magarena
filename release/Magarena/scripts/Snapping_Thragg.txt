@@ -1,5 +1,5 @@
 name=Snapping Thragg
-image=https://magiccards.info/scans/en/on/233.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8a47d41-b893-46b9-90c9-ccd8f9f78855.jpg?1562942401
 value=3.000
 rarity=U
 type=Creature

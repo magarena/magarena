@@ -1,5 +1,5 @@
 name=Niv-Mizzet, the Firemind
-image=https://magiccards.info/scans/en/a25/210.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/395465b8-f5ed-4668-9e6a-82257150c52c.jpg?1591321423
 image_updated=2018-04-27
 value=3.960
 rarity=R

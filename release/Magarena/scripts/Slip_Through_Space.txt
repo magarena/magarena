@@ -1,5 +1,5 @@
 name=Slip Through Space
-image=https://magiccards.info/scans/en/ogw/47.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fc0a593-580c-405c-803e-2f13aa74ab5e.jpg?1645328819
 image_updated=2016-02-29
 value=2.500
 rarity=C

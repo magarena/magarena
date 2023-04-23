@@ -1,5 +1,5 @@
 name=Canopy Cover
-image=https://magiccards.info/scans/en/wwk/98.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fcc34db-60be-4017-adfa-6bdfacec793f.jpg?1562286848
 value=3.747
 rarity=U
 type=Enchantment

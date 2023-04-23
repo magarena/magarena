@@ -1,5 +1,5 @@
 name=Scorching Spear
-image=https://magiccards.info/scans/en/st/116.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f8933af-afab-4c81-94a6-eee8da146231.jpg?1562873616
 value=0.921
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Snow-Covered Mountain
-image=https://magiccards.info/scans/en/cs/154.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5474e67c-628f-41b0-aa31-3d85a267265a.jpg?1631053480
 value=4.561
 rarity=B
 type=Basic,Snow,Land

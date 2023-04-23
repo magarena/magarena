@@ -1,5 +1,5 @@
 name=Nature's Revolt
-image=https://magiccards.info/scans/en/7e/260.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0c9b948-63f9-458d-82ae-69ebe2ac9fe0.jpg?1562249823
 value=3.983
 rarity=R
 type=Enchantment

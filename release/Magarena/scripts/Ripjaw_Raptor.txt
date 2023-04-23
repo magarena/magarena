@@ -1,5 +1,5 @@
 name=Ripjaw Raptor
-image=https://magiccards.info/scans/en/xln/203.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f678f9df-45fc-45ce-9c1b-69f70b632fb8.jpg?1576267422
 value=2.500
 rarity=R
 type=Creature

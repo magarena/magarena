@@ -1,5 +1,5 @@
 name=Greater Auramancy
-image=https://magiccards.info/scans/en/shm/7.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1177787f-bf1e-438b-9615-97d03b04128c.jpg?1562826899
 value=4.027
 rarity=R
 type=Enchantment

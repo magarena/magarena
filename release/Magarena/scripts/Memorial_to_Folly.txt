@@ -1,5 +1,5 @@
 name=Memorial to Folly
-image=https://magiccards.info/scans/en/dom/242.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df6d131e-785c-4609-af11-bdc535641a7b.jpg?1591322176
 value=2.500
 rarity=U
 type=Land

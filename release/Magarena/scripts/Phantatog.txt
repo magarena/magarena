@@ -1,5 +1,5 @@
 name=Phantatog
-image=https://magiccards.info/scans/en/od/291.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/6967608d-141d-426f-a129-6f1a6a58273c.jpg?1562914492
 value=3.288
 rarity=U
 type=Creature

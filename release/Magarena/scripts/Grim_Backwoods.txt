@@ -1,5 +1,5 @@
 name=Grim Backwoods
-image=https://magiccards.info/scans/en/dka/156.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b4517f7-1479-4cdb-8b7e-c27eef6c4659.jpg?1591322039
 image_updated=2016-02-29
 value=3.607
 rarity=R

@@ -1,5 +1,5 @@
 name=Fen Stalker
-image=https://magiccards.info/scans/en/pr/64.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e7d1125-7eb0-4065-bc2c-764689380fa8.jpg?1562921419
 value=2.174
 rarity=C
 type=Creature

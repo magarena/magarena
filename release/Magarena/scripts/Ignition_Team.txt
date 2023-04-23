@@ -1,5 +1,5 @@
 name=Ignition Team
-image=https://magiccards.info/scans/en/cns/34.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dc89eb3-4497-4f05-8fed-d378b6e425ca.jpg?1562866381
 value=3.700
 rarity=R
 type=Creature

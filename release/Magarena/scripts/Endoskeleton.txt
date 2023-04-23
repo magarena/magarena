@@ -1,5 +1,5 @@
 name=Endoskeleton
-image=https://magiccards.info/scans/en/us/294.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce4630c3-bf8e-46ac-be68-f454c4ca1047.jpg?1562938613
 value=2.595
 rarity=U
 type=Artifact

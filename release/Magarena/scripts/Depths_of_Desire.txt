@@ -1,5 +1,5 @@
 name=Depths of Desire
-image=https://magiccards.info/scans/en/xln/52.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63420437-76a9-40cf-aedc-0ca1e73fcc0b.jpg?1562556492
 value=2.500
 rarity=C
 type=Instant

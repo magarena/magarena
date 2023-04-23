@@ -1,5 +1,5 @@
 name=Dark Hatchling
-image=https://magiccards.info/scans/en/pc2/32.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/133e9654-74a3-4997-b371-7f36b5d9c4f1.jpg?1674141565
 value=4.000
 rarity=R
 type=Creature

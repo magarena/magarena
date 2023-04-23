@@ -1,5 +1,5 @@
 name=Abbey Gargoyles
-image=https://magiccards.info/scans/en/5e/277.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d80663b-ea3f-4f7a-bff1-8fde04c05bce.jpg?1562869525
 value=2.760
 rarity=U
 type=Creature

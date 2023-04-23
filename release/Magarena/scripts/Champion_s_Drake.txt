@@ -1,5 +1,5 @@
 name=Champion's Drake
-image=https://magiccards.info/scans/en/roe/56.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/7585316f-ba3d-4472-9a7e-7db6f6dd9d15.jpg?1562705205
 value=3.231
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shambling Ghoul
-image=https://magiccards.info/scans/en/ori/119.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95a52cb8-e02f-477a-adb6-2bfb7836c704.jpg?1562925150
 image_updated=2015-11-05
 value=2.500
 rarity=C

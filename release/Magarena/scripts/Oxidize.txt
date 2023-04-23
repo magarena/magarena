@@ -1,5 +1,5 @@
 name=Oxidize
-image=https://magiccards.info/scans/en/ds/79.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/1349969e-1cbe-4541-b3ed-154f5a39f1f0.jpg?1562635480
 value=4.310
 removal=1
 rarity=U

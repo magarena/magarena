@@ -1,5 +1,5 @@
 name=Solar Blast
-image=https://magiccards.info/scans/en/on/234.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/811fd183-70c0-49c2-ba75-4994c5c4b355.jpg?1562921004
 value=2.500
 rarity=C
 type=Instant

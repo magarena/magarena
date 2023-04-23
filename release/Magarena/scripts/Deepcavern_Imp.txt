@@ -1,5 +1,5 @@
 name=Deepcavern Imp
-image=https://magiccards.info/scans/en/mma/79.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13cfa5f3-495f-457b-ad44-bd2cf3414ce4.jpg?1619395323
 value=3.119
 rarity=C
 type=Creature

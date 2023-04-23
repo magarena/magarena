@@ -1,5 +1,5 @@
 name=Searing Flesh
-image=https://magiccards.info/scans/en/on/225.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d83db110-42e7-4823-a686-b83205faf503.jpg?1562946564
 value=1.472
 rarity=U
 type=Sorcery

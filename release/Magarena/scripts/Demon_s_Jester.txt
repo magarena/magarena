@@ -1,5 +1,5 @@
 name=Demon's Jester
-image=https://magiccards.info/scans/en/di/42.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4213f45-e8b6-4d90-a3b0-e3d37f745c97.jpg?1561771992
 image_updated=2016-11-30
 value=2.152
 rarity=C

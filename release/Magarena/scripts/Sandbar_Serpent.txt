@@ -1,5 +1,5 @@
 name=Sandbar Serpent
-image=https://magiccards.info/scans/en/us/95.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3b430ec-28e1-4b2c-bea8-3bfd3a0e8cf8.jpg?1562932911
 value=2.867
 rarity=U
 type=Creature

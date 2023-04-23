@@ -1,5 +1,5 @@
 name=Blasting Station
-image=https://magiccards.info/scans/en/5dn/107.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71e2f832-6601-4232-b250-fd1c88538fbd.jpg?1562877667
 value=3.756
 rarity=U
 type=Artifact

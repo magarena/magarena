@@ -1,5 +1,5 @@
 name=Charisma
-image=https://magiccards.info/scans/en/mm/66.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63565b03-28e9-4534-b085-d5803e2623bb.jpg?1562380893
 value=4.214
 rarity=R
 type=Enchantment

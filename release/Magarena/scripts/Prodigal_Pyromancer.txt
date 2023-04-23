@@ -1,5 +1,5 @@
 name=Prodigal Pyromancer
-image=https://magiccards.info/scans/en/ima/142.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf16600a-c2a5-49e4-89e2-260cfaf58b52.jpg?1619397370
 image_updated=2017-04-12
 value=3.428
 rarity=U

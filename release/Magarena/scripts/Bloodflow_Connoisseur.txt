@@ -1,5 +1,5 @@
 name=Bloodflow Connoisseur
-image=https://magiccards.info/scans/en/avr/87.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f198b57-8bfe-4d13-9a16-10990707b455.jpg?1673147474
 value=2.971
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=King Suleiman
-image=https://magiccards.info/scans/en/an/61.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d3dce0f-2168-4f63-b2f9-156a11beeea7.jpg?1592364322
 value=3.089
 rarity=R
 type=Creature

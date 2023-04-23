@@ -1,5 +1,5 @@
 name=Heartwood Dryad
-image=https://magiccards.info/scans/en/tp/125.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edeb7cc6-68a5-4825-ad1f-6afd6b0c0b87.jpg?1562431783
 value=2.357
 rarity=C
 type=Creature

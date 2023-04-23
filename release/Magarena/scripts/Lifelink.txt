@@ -1,5 +1,5 @@
 name=Lifelink
-image=https://magiccards.info/scans/en/m12/24.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8e207d4-9930-4aff-a7c8-b53bd1b5d566.jpg?1562654524
 value=2.762
 rarity=C
 type=Enchantment

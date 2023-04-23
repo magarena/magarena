@@ -1,5 +1,5 @@
 name=Echoing Calm
-image=https://magiccards.info/scans/en/ds/2.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/060e278c-dc34-4a94-9b15-6e9ffb2a1aee.jpg?1562635250
 value=3.180
 removal=3
 rarity=C

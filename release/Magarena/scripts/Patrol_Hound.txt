@@ -1,5 +1,5 @@
 name=Patrol Hound
-image=https://magiccards.info/scans/en/od/38.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e216a539-152b-4a83-98ef-1996182a5714.jpg?1562937268
 value=2.817
 rarity=C
 type=Creature

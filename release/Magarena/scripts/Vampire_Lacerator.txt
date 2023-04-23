@@ -1,5 +1,5 @@
 name=Vampire Lacerator
-image=https://magiccards.info/scans/en/a25/114.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c947c96-b4a5-4c3b-aacb-85ee0bf3afda.jpg?1562432558
 image_updated=2018-04-27
 value=2.500
 rarity=C

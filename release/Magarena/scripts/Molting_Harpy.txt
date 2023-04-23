@@ -1,5 +1,5 @@
 name=Molting Harpy
-image=https://magiccards.info/scans/en/mm/148.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddfe33fb-71d5-4552-bcd3-f07e4e3847e1.jpg?1562383497
 value=2.092
 rarity=U
 type=Creature

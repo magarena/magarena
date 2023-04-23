@@ -1,5 +1,5 @@
 name=Righteousness
-image=https://magiccards.info/scans/en/m10/27.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2910df2-e288-4fa0-9859-c5ca35da2d55.jpg?1572489762
 image_updated=2016-09-12
 value=4.062
 rarity=U

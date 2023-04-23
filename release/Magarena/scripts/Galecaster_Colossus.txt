@@ -1,5 +1,5 @@
 name=Galecaster Colossus
-image=https://magiccards.info/scans/en/c17/10.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e57f6be-44d0-4823-a130-b79dbd025994.jpg?1562618073
 image_updated=2017-10-03
 value=2.500
 rarity=R

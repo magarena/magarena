@@ -1,5 +1,5 @@
 name=Yamabushi's Flame
-image=https://magiccards.info/scans/en/chk/198.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a9bacba-55c4-4b92-bdd9-01b6035ed1b2.jpg?1562757952
 value=3.088
 rarity=C
 type=Instant

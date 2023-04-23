@@ -1,5 +1,5 @@
 name=Glintwing Invoker
-image=https://magiccards.info/scans/en/le/40.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16184709-f370-40cc-91f2-849a44ac451a.jpg?1562899418
 value=1.196
 rarity=C
 type=Creature

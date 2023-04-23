@@ -1,5 +1,5 @@
 name=Cradle Guard
-image=https://magiccards.info/scans/en/us/245.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b659c1c-cc0b-40f0-87b4-aeddb44dfac5.jpg?1562924481
 value=4.148
 rarity=U
 type=Creature

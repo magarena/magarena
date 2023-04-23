@@ -1,5 +1,5 @@
 name=Recollect
-image=https://magiccards.info/scans/en/m19/197.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f127214f-3e91-4988-b593-1568d0ae1718.jpg?1562304900
 image_updated=2018-08-07
 value=3.779
 rarity=U

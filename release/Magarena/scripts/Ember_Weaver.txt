@@ -1,5 +1,5 @@
 name=Ember Weaver
-image=https://magiccards.info/scans/en/a25/169.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3215b51-01df-4670-994d-b4d7a57b80f8.jpg?1562439787
 image_updated=2018-04-27
 value=3.161
 rarity=C

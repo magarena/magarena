@@ -1,5 +1,5 @@
 name=Faerie Invaders
-image=https://magiccards.info/scans/en/m13/51.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5546fbd6-908d-46be-8d17-9470842f78a7.jpg?1592754909
 image_updated=2016-12-02
 value=2.962
 rarity=C

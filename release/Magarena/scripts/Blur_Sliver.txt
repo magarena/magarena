@@ -1,5 +1,5 @@
 name=Blur Sliver
-image=https://magiccards.info/scans/en/m14/129.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63227937-86cc-45e0-9e9e-8c7ab80cbaef.jpg?1562830112
 value=3.211
 rarity=C
 type=Creature

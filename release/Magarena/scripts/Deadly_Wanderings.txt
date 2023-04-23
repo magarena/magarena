@@ -1,5 +1,5 @@
 name=Deadly Wanderings
-image=https://magiccards.info/scans/en/dtk/94.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23bb5d9f-9b12-482a-91b4-6786e8310805.jpg?1562783663
 value=2.500
 rarity=U
 type=Enchantment

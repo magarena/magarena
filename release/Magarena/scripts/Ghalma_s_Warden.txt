@@ -1,5 +1,5 @@
 name=Ghalma's Warden
-image=https://magiccards.info/scans/en/som/8.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efbf5ff1-6539-4116-ad4f-ce412ae20640.jpg?1562824923
 value=2.664
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Resuscitate
-image=https://magiccards.info/scans/en/ex/121.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5707560-fcc6-4aca-adce-d41de45f37e8.jpg?1562089268
 value=2.562
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Thresher Lizard
-image=https://magiccards.info/scans/en/a25/153.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bff0d9ba-100a-4f4a-b04b-1382ed912eaa.jpg?1562440640
 image_updated=2018-04-27
 value=2.500
 rarity=C

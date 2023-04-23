@@ -1,5 +1,5 @@
 name=Jace's Archivist
-image=https://magiccards.info/scans/en/m12/59.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c21df8e-a24f-4ce1-aa8a-1467f9f9423a.jpg?1562703323
 image_updated=2016-02-29
 value=3.731
 rarity=R

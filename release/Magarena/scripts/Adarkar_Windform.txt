@@ -1,5 +1,5 @@
 name=Adarkar Windform
-image=https://magiccards.info/scans/en/cs/26.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c18bce4a-9afb-4b91-bc9a-d62634b0f8dd.jpg?1593274877
 value=2.176
 rarity=U
 type=Snow,Creature

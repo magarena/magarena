@@ -1,5 +1,5 @@
 name=Wall of Swords
-image=https://magiccards.info/scans/en/10e/57.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c733fef-8372-4a40-b340-7aa32922799e.jpg?1562831422
 value=3.500
 rarity=U
 type=Creature

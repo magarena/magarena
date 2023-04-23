@@ -1,5 +1,5 @@
 name=Dimir House Guard
-image=https://magiccards.info/scans/en/rav/83.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a021caf-d9e7-470b-85be-3af42a3adfd3.jpg?1598914751
 value=3.570
 rarity=C
 type=Creature

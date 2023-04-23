@@ -1,5 +1,5 @@
 name=Strategic Planning
-image=https://magiccards.info/scans/en/hou/47.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29306305-cb71-4fef-bf86-f5deb4e7e561.jpg?1631047604
 image_updated=2017-09-29
 value=4.500
 rarity=C

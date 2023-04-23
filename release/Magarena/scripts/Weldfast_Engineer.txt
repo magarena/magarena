@@ -1,5 +1,5 @@
 name=Weldfast Engineer
-image=https://magiccards.info/scans/en/aer/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51464df6-557f-47e5-838e-2a30145511f0.jpg?1576382174
 value=2.500
 rarity=U
 type=Creature

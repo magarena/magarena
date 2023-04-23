@@ -1,5 +1,5 @@
 name=Selesnya Cluestone
-image=https://magiccards.info/scans/en/dgm/144.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34ad5631-439a-43e2-b00a-04f78d66b8e6.jpg?1562904784
 value=2.727
 rarity=C
 type=Artifact

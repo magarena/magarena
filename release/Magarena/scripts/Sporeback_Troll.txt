@@ -1,5 +1,5 @@
 name=Sporeback Troll
-image=https://magiccards.info/scans/en/di/94.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18bdca24-3beb-4d0d-b3bc-b98c23316fe7.jpg?1593273476
 value=3.054
 rarity=C
 type=Creature

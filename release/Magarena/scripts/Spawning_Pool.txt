@@ -1,5 +1,5 @@
 name=Spawning Pool
-image=https://magiccards.info/scans/en/10e/358.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/907b49ff-2020-4203-b93e-4b3306afc337.jpg?1562551627
 value=4.044
 rarity=U
 type=Land

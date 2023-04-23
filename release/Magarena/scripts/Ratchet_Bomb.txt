@@ -1,5 +1,5 @@
 name=Ratchet Bomb
-image=https://magiccards.info/scans/en/som/196.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5bd85da-9aba-46ea-9c10-617bec99a2f5.jpg?1599709788
 value=4.425
 rarity=R
 type=Artifact

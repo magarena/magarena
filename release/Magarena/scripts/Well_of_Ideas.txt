@@ -1,5 +1,5 @@
 name=Well of Ideas
-image=https://magiccards.info/scans/en/c14/20.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7796b82-5a7c-406e-be71-1f37abdbc44f.jpg?1598304433
 value=2.500
 rarity=R
 type=Enchantment

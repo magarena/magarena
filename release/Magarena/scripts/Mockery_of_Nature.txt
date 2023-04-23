@@ -1,5 +1,5 @@
 name=Mockery of Nature
-image=https://magiccards.info/scans/en/emn/10.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/3118737f-2fd9-4fe5-bd0f-43c9ef2166e2.jpg?1576383753
 image_updated=2016-09-05
 value=2.500
 rarity=U

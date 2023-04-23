@@ -1,5 +1,5 @@
 name=Snapping Drake
-image=https://magiccards.info/scans/en/m19/75.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef46580c-a204-4b0b-8526-2310b1ca32b4.jpg?1592518308
 image_updated=2018-08-07
 value=2.811
 rarity=C

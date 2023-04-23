@@ -1,5 +1,5 @@
 name=Chainer, Dementia Master
-image=https://magiccards.info/scans/en/tr/56.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40342b11-1005-4ccc-bef4-9ea4c640b048.jpg?1562629465
 value=4.023
 rarity=R
 type=Legendary,Creature

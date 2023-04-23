@@ -1,5 +1,5 @@
 name=Watchwolf
-image=https://magiccards.info/scans/en/a25/220.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/682af5e9-26b5-4f88-99e1-ab2aa34fba86.jpg?1562436199
 image_updated=2018-04-27
 value=4.016
 rarity=U

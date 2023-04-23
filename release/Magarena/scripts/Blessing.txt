@@ -1,5 +1,5 @@
 name=Blessing
-image=https://magiccards.info/scans/en/4e/259.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4273cf50-db65-4b1f-95e1-f24ba6582c8b.jpg?1562828433
 value=3.153
 rarity=U
 type=Enchantment

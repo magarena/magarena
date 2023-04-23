@@ -1,5 +1,5 @@
 name=Penumbra Kavu
-image=https://magiccards.info/scans/en/ap/83.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee334211-4109-46ff-8676-856048221a1c.jpg?1562951576
 value=3.750
 rarity=U
 type=Creature

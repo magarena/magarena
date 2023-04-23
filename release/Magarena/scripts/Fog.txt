@@ -1,5 +1,5 @@
 name=Fog
-image=https://magiccards.info/scans/en/ema/167.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbc3152e-7b3b-4ac6-8b33-abfebde216aa.jpg?1580014786
 value=3.917
 rarity=C
 type=Instant

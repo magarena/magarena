@@ -1,5 +1,5 @@
 name=Fencer Clique
-image=https://magiccards.info/scans/en/mt/33.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77c0929f-bee6-416d-8571-6540ae4f6e4f.jpg?1562879392
 value=2.950
 rarity=C
 type=Creature

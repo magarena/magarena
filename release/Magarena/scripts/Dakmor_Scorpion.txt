@@ -1,5 +1,5 @@
 name=Dakmor Scorpion
-image=https://magiccards.info/scans/en/st/73.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ed84268-92f7-4790-99b2-f2982b6e0893.jpg?1562874546
 value=2.442
 rarity=C
 type=Creature

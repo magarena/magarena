@@ -1,5 +1,5 @@
 name=Soulcatcher
-image=https://magiccards.info/scans/en/ema/30.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3333fa0e-32d5-4c3f-a89a-637ab982d61a.jpg?1580013816
 value=4.214
 rarity=U
 type=Creature

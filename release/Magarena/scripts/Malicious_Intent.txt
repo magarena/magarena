@@ -1,5 +1,5 @@
 name=Malicious Intent
-image=https://magiccards.info/scans/en/avr/147.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1dda42d-55eb-46fc-89da-17cc5bfaa823.jpg?1592709154
 value=1.211
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Equilibrium
-image=https://magiccards.info/scans/en/7e/71.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfbe8836-88c3-4f5d-88a0-73e54673960e.jpg?1562249425
 value=4.467
 rarity=R
 type=Enchantment

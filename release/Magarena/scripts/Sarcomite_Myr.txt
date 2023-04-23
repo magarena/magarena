@@ -1,5 +1,5 @@
 name=Sarcomite Myr
-image=https://magiccards.info/scans/en/fut/56.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8636ba4f-07ef-4327-8e4a-6c2d8f90b264.jpg?1619394620
 image_updated=2017-01-07
 value=2.707
 rarity=C

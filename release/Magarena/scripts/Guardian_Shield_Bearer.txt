@@ -1,5 +1,5 @@
 name=Guardian Shield-Bearer
-image=https://magiccards.info/scans/en/dtk/189.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcbd7958-29a0-4f59-9648-eabe0fbfb4f9.jpg?1562794106
 value=2.500
 rarity=C
 type=Creature

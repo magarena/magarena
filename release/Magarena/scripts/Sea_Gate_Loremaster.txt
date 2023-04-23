@@ -1,5 +1,5 @@
 name=Sea Gate Loremaster
-image=https://magiccards.info/scans/en/zen/63.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cd723c8-4b3d-4fbb-a825-79934279382d.jpg?1562612583
 value=3.865
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Lunk Errant
-image=https://magiccards.info/scans/en/mt/94.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f459acfa-a9db-43c6-b0e9-ed66d772a335.jpg?1562882420
 value=1.074
 rarity=C
 type=Creature

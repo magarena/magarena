@@ -1,5 +1,5 @@
 name=Bone Dragon
-image=https://magiccards.info/scans/en/m19/88.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08a0de62-6e9f-4ee9-9d8d-ee6f6a115307.jpg?1562300295
 value=2.500
 rarity=M
 type=Creature

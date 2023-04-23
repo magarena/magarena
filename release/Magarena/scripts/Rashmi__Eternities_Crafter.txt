@@ -1,5 +1,5 @@
 name=Rashmi, Eternities Crafter
-image=https://magiccards.info/scans/en/kld/184.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70288968-7bfd-44e2-a2b3-0b6639ef7e0a.jpg?1591321462
 image_updated=2016-10-05
 value=2.500
 rarity=M

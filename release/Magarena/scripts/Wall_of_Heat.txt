@@ -1,5 +1,5 @@
 name=Wall of Heat
-image=https://magiccards.info/scans/en/lg/167.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff6b2307-2c56-4f63-900e-88a3ac6f0b32.jpg?1562946597
 image_updated=2011-01-11
 value=3.227
 rarity=C

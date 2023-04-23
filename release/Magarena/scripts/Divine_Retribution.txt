@@ -1,5 +1,5 @@
 name=Divine Retribution
-image=https://magiccards.info/scans/en/mr/216.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75629aa3-426e-4e25-a7ab-71e03436e061.jpg?1562720225
 value=2.538
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Bubbling Beebles
-image=https://magiccards.info/scans/en/ud/29.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/002cf7d8-3fc2-48eb-a727-a1ce5a049665.jpg?1562443310
 value=3.453
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sentinel of the Eternal Watch
-image=https://magiccards.info/scans/en/ori/30.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a7b01ce-2729-4b70-ae0a-b9a1007be78f.jpg?1562006549
 image_updated=2015-11-05
 value=2.500
 rarity=U

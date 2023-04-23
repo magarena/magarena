@@ -1,5 +1,5 @@
 name=Early Harvest
-image=https://magiccards.info/scans/en/9e/235.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22113d08-ecc9-4efd-90f1-00d699582ec3.jpg?1594065124
 value=4.000
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Rakdos Ragemutt
-image=https://magiccards.info/scans/en/rtr/185.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb36840a-3f85-4fca-87ab-379dfce8e542.jpg?1562792289
 value=2.815
 rarity=U
 type=Creature

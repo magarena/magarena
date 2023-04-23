@@ -1,5 +1,5 @@
 name=Dominator Drone
-image=https://magiccards.info/scans/en/bfz/92.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12e7e2b5-3141-4a19-aa49-91ab7e5c211c.jpg?1562899471
 image_updated=2015-11-08
 value=2.500
 rarity=C

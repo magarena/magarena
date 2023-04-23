@@ -1,5 +1,5 @@
 name=Nacre Talisman
-image=https://magiccards.info/scans/en/ia/304.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06912236-8225-4eb0-8086-c6a163c69892.jpg?1562896306
 value=2.029
 rarity=U
 type=Artifact

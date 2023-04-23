@@ -1,5 +1,5 @@
 name=Forge Devil
-image=https://magiccards.info/scans/en/m15/140.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd7308e6-4303-4f01-928b-f154b376e1a5.jpg?1601077720
 value=2.600
 rarity=C
 type=Creature

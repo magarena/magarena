@@ -1,5 +1,5 @@
 name=Surge of Righteousness
-image=https://magiccards.info/scans/en/dtk/42.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/114366f3-237f-4f96-b644-5bd82d97b18b.jpg?1562782657
 value=2.500
 rarity=U
 type=Instant

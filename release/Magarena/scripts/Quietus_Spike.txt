@@ -1,5 +1,5 @@
 name=Quietus Spike
-image=https://magiccards.info/scans/en/c17/220.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7dc8e9cc-1aac-4709-9629-9f4318c86cb0.jpg?1673485449
 image_updated=2017-10-03
 value=3.059
 rarity=R

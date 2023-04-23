@@ -1,5 +1,5 @@
 name=Oboro, Palace in the Clouds
-image=https://magiccards.info/scans/en/sok/164.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffc2d68e-6543-43ec-b67a-afff1325a32f.jpg?1562497052
 value=4.211
 rarity=R
 type=Legendary,Land

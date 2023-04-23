@@ -1,5 +1,5 @@
 name=Sunseed Nurturer
-image=https://magiccards.info/scans/en/ala/29.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d44447e-09d1-450f-907f-42f79b004fe7.jpg?1562707122
 value=2.133
 rarity=U
 type=Creature

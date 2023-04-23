@@ -1,5 +1,5 @@
 name=Dark Confidant
-image=https://magiccards.info/scans/en/mm2/75.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0d88239-43dc-46b8-8d46-626e2f8f1070.jpg?1598304507
 image_updated=2015-11-05
 value=4.609
 rarity=M

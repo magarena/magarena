@@ -1,5 +1,5 @@
 name=Aven Mimeomancer
-image=https://magiccards.info/scans/en/arb/2.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c50162a7-a791-4afc-a129-d259cd4419f2.jpg?1673484964
 value=3.479
 rarity=R
 type=Creature

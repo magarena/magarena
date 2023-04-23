@@ -1,5 +1,5 @@
 name=Pious Interdiction
-image=https://magiccards.info/scans/en/xln/26.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/670b9645-ce34-41eb-a527-4af3e13c3a54.jpg?1562556833
 value=2.500
 rarity=C
 type=Enchantment

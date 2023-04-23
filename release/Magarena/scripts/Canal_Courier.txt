@@ -1,5 +1,5 @@
 name=Canal Courier
-image=https://magiccards.info/scans/en/cn2/28.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3af3351-9457-443c-b31f-a57a2fc9be46.jpg?1576381699
 image_updated=2016-09-05
 value=2.500
 rarity=C

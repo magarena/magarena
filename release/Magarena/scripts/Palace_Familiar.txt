@@ -1,5 +1,5 @@
 name=Palace Familiar
-image=https://magiccards.info/scans/en/dtk/69.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc0c17c9-54af-4dd4-8d4a-fd5a7b8c3c77.jpg?1562796108
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Thunder Spirit
-image=https://magiccards.info/scans/en/lg/208.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8508542-53ea-4c1b-ae6f-b446c42149ca.jpg?1559592402
 value=4.183
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Flowstone Surge
-image=https://magiccards.info/scans/en/ne/85.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc450922-0bbf-46c4-9955-79f4d41ee488.jpg?1562631737
 value=3.472
 rarity=U
 type=Enchantment

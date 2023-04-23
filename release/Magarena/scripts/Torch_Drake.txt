@@ -1,5 +1,5 @@
 name=Torch Drake
-image=https://magiccards.info/scans/en/gp/38.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0beff896-df7a-42b3-aaca-0b9ca1b8cf0c.jpg?1593272107
 value=1.838
 rarity=C
 type=Creature

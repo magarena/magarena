@@ -1,5 +1,5 @@
 name=Traitor's Clutch
-image=https://magiccards.info/scans/en/ts/137.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/6313a601-5d26-487b-a70c-2c7184b7cc91.jpg?1562915705
 value=3.303
 rarity=C
 type=Instant

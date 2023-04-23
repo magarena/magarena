@@ -1,5 +1,5 @@
 name=Aven Envoy
-image=https://magiccards.info/scans/en/le/30.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40ead30e-9f96-4fca-b619-fdc8d1b5e2e0.jpg?1562907998
 value=2.200
 rarity=C
 type=Creature

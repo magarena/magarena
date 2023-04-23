@@ -1,5 +1,5 @@
 name=Nezumi Shadow-Watcher
-image=https://magiccards.info/scans/en/bok/74.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04bdcdce-68fb-460b-874d-40df7afd99ca.jpg?1562875244
 value=2.000
 rarity=U
 type=Creature

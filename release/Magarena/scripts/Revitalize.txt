@@ -1,5 +1,5 @@
 name=Revitalize
-image=https://magiccards.info/scans/en/m19/35.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a9fb75e-c8e5-417b-83d4-5105af9c66c1.jpg?1631046075
 value=2.500
 rarity=C
 type=Instant

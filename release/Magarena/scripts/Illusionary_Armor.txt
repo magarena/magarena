@@ -1,5 +1,5 @@
 name=Illusionary Armor
-image=https://magiccards.info/scans/en/m14/59.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d09346ff-6e63-499b-9265-c15a7b2cdece.jpg?1562835342
 value=1.329
 rarity=U
 type=Enchantment

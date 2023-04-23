@@ -1,5 +1,5 @@
 name=Raging Ravine
-image=https://magiccards.info/scans/en/wwk/141.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1c981c0-3e40-4339-a4c8-ad96c7fb68d2.jpg?1674143039
 value=3.877
 rarity=R
 type=Land

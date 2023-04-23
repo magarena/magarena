@@ -1,5 +1,5 @@
 name=Rage Thrower
-image=https://magiccards.info/scans/en/isd/157.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f16db004-3e0c-491b-b8b6-0ae046d11761.jpg?1562839517
 value=3.323
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Viscerid Drone
-image=https://magiccards.info/scans/en/cstd/18.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a8871a9-6dc2-487a-83d0-9f08f7ca806a.jpg?1562869977
 value=3.175
 rarity=U
 type=Creature

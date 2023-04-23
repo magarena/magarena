@@ -1,5 +1,5 @@
 name=Aven Skirmisher
-image=https://magiccards.info/scans/en/frf/6.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05f7a3b1-4d92-4d32-a823-2e774c6e7e73.jpg?1562822095
 value=2.500
 rarity=C
 type=Creature

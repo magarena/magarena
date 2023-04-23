@@ -1,5 +1,5 @@
 name=Norin the Wary
-image=https://magiccards.info/scans/en/ts/171.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f61ea59a-1db0-4e6b-bcde-19787c76a49b.jpg?1562946915
 value=4.127
 rarity=R
 type=Legendary,Creature

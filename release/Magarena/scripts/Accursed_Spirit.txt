@@ -1,5 +1,5 @@
 name=Accursed Spirit
-image=https://magiccards.info/scans/en/m15/85.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2513fe72-4e20-49e6-9970-839f1c635792.jpg?1562784005
 value=3.071
 rarity=C
 type=Creature

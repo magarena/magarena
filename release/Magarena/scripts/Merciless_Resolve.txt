@@ -1,5 +1,5 @@
 name=Merciless Resolve
-image=https://magiccards.info/scans/en/soi/123.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/356af156-a059-416c-b78b-d9058b742818.jpg?1576384515
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Nighthowler
-image=https://magiccards.info/scans/en/c15/129.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b76dab3d-1788-4ab7-8d2b-70f7787cf935.jpg?1681729115
 image_updated=2016-02-29
 value=3.627
 rarity=R

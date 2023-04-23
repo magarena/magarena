@@ -1,5 +1,5 @@
 name=Cleaver Riot
-image=https://magiccards.info/scans/en/m13/125.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93930452-af89-42b3-b668-5d4f0a607d4f.jpg?1592764762
 value=2.679
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Karn's Touch
-image=https://magiccards.info/scans/en/mm/86.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07845861-f974-43b7-829c-79a4a41ac3e3.jpg?1562378954
 value=3.911
 rarity=R
 type=Instant

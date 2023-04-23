@@ -1,5 +1,5 @@
 name=Concussive Bolt
-image=https://magiccards.info/scans/en/mbs/60.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41b68e85-a381-441d-aa18-491f9e202a10.jpg?1562610848
 value=2.944
 rarity=C
 type=Sorcery

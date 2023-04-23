@@ -1,5 +1,5 @@
 name=Abzan Kin-Guard
-image=https://magiccards.info/scans/en/frf/120.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cec0ef55-57fd-404f-b9f6-b5d41e77b58c.jpg?1562830002
 value=2.500
 rarity=U
 type=Creature

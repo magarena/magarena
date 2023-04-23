@@ -1,5 +1,5 @@
 name=Veteran Armorsmith
-image=https://magiccards.info/scans/en/m10/38.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/565c750e-47f9-4878-abff-ec973ec6d8a4.jpg?1562840230
 image_updated=2017-01-11
 value=4.101
 rarity=C

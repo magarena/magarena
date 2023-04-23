@@ -1,5 +1,5 @@
 name=Salt Road Patrol
-image=https://magiccards.info/scans/en/ktk/21.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c5ee84d-e5b9-4103-8ba7-ccd79a272c0f.jpg?1562784258
 value=2.500
 rarity=C
 type=Creature

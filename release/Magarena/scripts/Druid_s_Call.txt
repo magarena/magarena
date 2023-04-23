@@ -1,5 +1,5 @@
 name=Druid's Call
-image=https://magiccards.info/scans/en/od/239.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e22318a5-80c8-4fa3-ad05-8d3035caf336.jpg?1562937280
 value=3.990
 rarity=U
 type=Enchantment

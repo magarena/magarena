@@ -1,5 +1,5 @@
 name=Taste of Paradise
-image=https://magiccards.info/scans/en/ai/84.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9248694-88fa-4fe1-9902-f03a41100cd6.jpg?1562770158
 value=2.720
 rarity=C
 type=Sorcery

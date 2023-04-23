@@ -1,5 +1,5 @@
 name=Master of Pearls
-image=https://magiccards.info/scans/en/ktk/18.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8455229-6fec-4843-b888-e701c09620af.jpg?1562795295
 value=4.000
 rarity=R
 type=Creature

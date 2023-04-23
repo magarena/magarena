@@ -1,5 +1,5 @@
 name=Mesa Enchantress
-image=https://magiccards.info/scans/en/ema/19.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d7550ac-c8cd-4e10-8099-c5a42ab093fc.jpg?1580013738
 value=3.871
 rarity=U
 type=Creature

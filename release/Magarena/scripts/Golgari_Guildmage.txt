@@ -1,5 +1,5 @@
 name=Golgari Guildmage
-image=https://magiccards.info/scans/en/cmd/201.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/890faae2-cf6a-400a-9f17-8772991b0eef.jpg?1562923945
 value=3.500
 rarity=U
 type=Creature

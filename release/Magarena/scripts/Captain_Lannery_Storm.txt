@@ -1,5 +1,5 @@
 name=Captain Lannery Storm
-image=https://magiccards.info/scans/en/xln/136.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98a2cd4c-f02e-4a5e-a5f5-1aad52132b90.jpg?1673305264
 value=2.500
 rarity=R
 type=Legendary,Creature

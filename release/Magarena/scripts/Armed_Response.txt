@@ -1,5 +1,5 @@
 name=Armed Response
-image=https://magiccards.info/scans/en/5dn/2.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7029fac9-ef8a-499f-aa42-c145b6b528ae.jpg?1562877643
 value=1.588
 rarity=C
 type=Instant

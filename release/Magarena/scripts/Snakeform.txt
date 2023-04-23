@@ -1,5 +1,5 @@
 name=Snakeform
-image=https://magiccards.info/scans/en/eve/161.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e5a1330-b227-4480-aae7-c8cf350c4898.jpg?1562704081
 image_updated=2016-02-29
 value=4.287
 rarity=C

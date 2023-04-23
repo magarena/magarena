@@ -1,5 +1,5 @@
 name=Bile Urchin
-image=https://magiccards.info/scans/en/bok/61.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/801c2b46-c7a7-44d6-ae38-5d34bf00c404.jpg?1562878102
 value=2.716
 rarity=C
 type=Creature

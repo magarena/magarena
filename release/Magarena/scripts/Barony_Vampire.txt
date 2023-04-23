@@ -1,5 +1,5 @@
 name=Barony Vampire
-image=https://magiccards.info/scans/en/m11/82.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0130d04-05f2-44f5-bd6c-8b11f798b69e.jpg?1592516571
 value=2.368
 rarity=C
 type=Creature

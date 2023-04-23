@@ -1,5 +1,5 @@
 name=Wellwisher
-image=https://magiccards.info/scans/en/c14/223.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19dbbecb-b4d0-49d2-b36e-58279e051c5c.jpg?1592673305
 value=4.452
 rarity=C
 type=Creature

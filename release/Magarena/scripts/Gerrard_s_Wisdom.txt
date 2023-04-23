@@ -1,5 +1,5 @@
 name=Gerrard's Wisdom
-image=https://magiccards.info/scans/en/7e/16.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e43378f0-b518-499e-9950-c583bc2f11f8.jpg?1562249904
 value=3.167
 rarity=U
 type=Sorcery

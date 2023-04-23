@@ -1,5 +1,5 @@
 name=Sky-Eel School
-image=https://magiccards.info/scans/en/som/44.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cfc4db7-13b5-4c88-91f2-581c9792f1ff.jpg?1562818038
 value=2.175
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Might of Old Krosa
-image=https://magiccards.info/scans/en/mm3/130.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed0c7c36-2b15-463b-a023-683972303a0a.jpg?1673148146
 image_updated=2017-08-08
 value=4.134
 rarity=U

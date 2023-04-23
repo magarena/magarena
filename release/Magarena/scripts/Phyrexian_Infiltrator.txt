@@ -1,5 +1,5 @@
 name=Phyrexian Infiltrator
-image=https://magiccards.info/scans/en/in/116.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/224b8254-553d-4d88-8163-1f15e1244bd2.jpg?1562901847
 value=3.913
 rarity=R
 type=Creature

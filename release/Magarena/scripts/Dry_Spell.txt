@@ -1,5 +1,5 @@
 name=Dry Spell
-image=https://magiccards.info/scans/en/6e/124.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54558c35-89fd-4733-8419-81fd7a619319.jpg?1562868560
 value=3.135
 rarity=C
 type=Sorcery

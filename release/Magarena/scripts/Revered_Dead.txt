@@ -1,5 +1,5 @@
 name=Revered Dead
-image=https://magiccards.info/scans/en/pc/29.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9a78d5c-27f8-4061-be89-0246fb69e752.jpg?1562586159
 value=3.255
 rarity=C
 type=Creature

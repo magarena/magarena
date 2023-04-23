@@ -1,5 +1,5 @@
 name=Dawnbringer Charioteers
-image=https://magiccards.info/scans/en/jou/6.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/eca7b7d9-8b69-411a-8a1d-9b7d0492e7d0.jpg?1593095201
 value=3.763
 rarity=R
 type=Creature

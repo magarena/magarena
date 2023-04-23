@@ -1,5 +1,5 @@
 name=Aven Farseer
-image=https://magiccards.info/scans/en/sc/3.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47854e89-4d22-4eb6-a77d-6f04407bd2e5.jpg?1562528498
 value=2.318
 rarity=C
 type=Creature

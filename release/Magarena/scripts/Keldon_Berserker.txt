@@ -1,5 +1,5 @@
 name=Keldon Berserker
-image=https://magiccards.info/scans/en/pr/93.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daa3f9c0-66ff-4b94-b0c3-e1c65d2040b9.jpg?1562935850
 value=2.712
 rarity=C
 type=Creature

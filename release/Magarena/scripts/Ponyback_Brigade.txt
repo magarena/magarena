@@ -1,5 +1,5 @@
 name=Ponyback Brigade
-image=https://magiccards.info/scans/en/ktk/191.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/192d77ef-e8b5-44e2-842b-2c1f342c1e69.jpg?1562783191
 value=3.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shade's Form
-image=https://magiccards.info/scans/en/tr/81.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/449baad3-9a4a-4f5f-9e9f-02cc97ab71e6.jpg?1562629561
 value=4.139
 rarity=C
 type=Enchantment

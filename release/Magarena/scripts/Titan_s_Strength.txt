@@ -1,5 +1,5 @@
 name=Titan's Strength
-image=https://magiccards.info/scans/en/ori/166.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30f1bfbe-7cfd-4b11-be95-0df327a83c12.jpg?1673147938
 image_updated=2015-11-05
 value=2.500
 rarity=C

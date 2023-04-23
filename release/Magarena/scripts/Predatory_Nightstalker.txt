@@ -1,5 +1,5 @@
 name=Predatory Nightstalker
-image=https://magiccards.info/scans/en/po2/22.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/017fdca2-ea9f-4fa7-8bd3-bbcf600f116d.jpg?1562895245
 value=2.500
 rarity=U
 type=Creature

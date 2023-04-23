@@ -1,5 +1,5 @@
 name=Sudden Impact
-image=https://magiccards.info/scans/en/10e/241.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6560bb7-28d4-4b5c-bdfa-986a5c114349.jpg?1562552923
 value=3.470
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Loxodon Punisher
-image=https://magiccards.info/scans/en/mi/14.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df2b90b8-8306-4543-b9f4-3cfd033f5ca5.jpg?1562160367
 value=3.092
 rarity=R
 type=Creature

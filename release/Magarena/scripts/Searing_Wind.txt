@@ -1,5 +1,5 @@
 name=Searing Wind
-image=https://magiccards.info/scans/en/8e/218.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61afd3c5-7103-4247-8bb9-747532ae4265.jpg?1562914785
 value=3.807
 rarity=R
 type=Instant

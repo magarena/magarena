@@ -1,5 +1,5 @@
 name=Serene Heart
-image=https://magiccards.info/scans/en/mr/140.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/aff19d9d-8069-4f8d-a81b-e2fcd94c13b3.jpg?1562720976
 value=3.109
 rarity=C
 type=Instant

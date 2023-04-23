@@ -1,5 +1,5 @@
 name=Borderland Ranger
-image=https://magiccards.info/scans/en/avr/169.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f067c26-c51d-44d0-a0af-106b5778f06a.jpg?1592709289
 value=3.557
 rarity=C
 type=Creature

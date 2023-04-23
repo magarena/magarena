@@ -1,5 +1,5 @@
 name=Carrion
-image=https://magiccards.info/scans/en/mr/9.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e6c7750-bc3b-4790-bc9d-88e2cf16881e.jpg?1562720939
 value=3.679
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=All Is Dust
-image=https://magiccards.info/scans/en/mm2/1.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cf632ef-70e3-46f2-af21-14ea7ef30237.jpg?1612809614
 image_updated=2015-11-05
 value=4.397
 rarity=R

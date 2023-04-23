@@ -1,5 +1,5 @@
 name=Demonic Tutor
-image=https://magiccards.info/scans/en/dvd/49.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bdbc231-5316-4abd-9d8d-d87cff2c9847.jpg?1618695728
 value=5.000
 rarity=U
 type=Sorcery

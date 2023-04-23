@@ -1,5 +1,5 @@
 name=Mardu Skullhunter
-image=https://magiccards.info/scans/en/ktk/78.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd3ca5e7-96f3-4326-9315-34bb396a054c.jpg?1562794625
 value=3.250
 rarity=C
 type=Creature

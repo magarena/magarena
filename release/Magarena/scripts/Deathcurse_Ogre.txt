@@ -1,5 +1,5 @@
 name=Deathcurse Ogre
-image=https://magiccards.info/scans/en/chk/109.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62bd3c73-fff4-40e8-b9db-80a010a4dd37.jpg?1562760616
 value=1.292
 rarity=C
 type=Creature

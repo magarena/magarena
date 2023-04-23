@@ -1,5 +1,5 @@
 name=Heroes' Reunion
-image=https://magiccards.info/scans/en/rtr/168.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99b56515-f688-495c-b721-2b9abc6628c2.jpg?1562790407
 value=3.715
 rarity=U
 type=Instant

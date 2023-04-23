@@ -1,5 +1,5 @@
 name=Armorer Guildmage
-image=https://magiccards.info/scans/en/mr/156.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e999fdc3-9269-44d7-9015-e16f5e5b73eb.jpg?1562722392
 value=2.353
 rarity=C
 type=Creature

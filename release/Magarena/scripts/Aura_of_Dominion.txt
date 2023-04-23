@@ -1,5 +1,5 @@
 name=Aura of Dominion
-image=https://magiccards.info/scans/en/chk/51.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26913c27-5794-42c7-a2a2-af565ce84fd1.jpg?1562758453
 value=2.833
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Alarum
-image=https://magiccards.info/scans/en/mr/206.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/155f2aa6-6c47-4a06-b0ef-2d9205cd133e.jpg?1562717856
 value=2.859
 rarity=C
 type=Instant

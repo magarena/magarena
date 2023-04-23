@@ -1,5 +1,5 @@
 name=Vithian Renegades
-image=https://magiccards.info/scans/en/arb/64.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/7459a075-1a5d-4053-ab49-21bb696b6400.jpg?1562642132
 value=4.101
 removal=1
 rarity=U

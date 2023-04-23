@@ -1,5 +1,5 @@
 name=Sacred Wolf
-image=https://magiccards.info/scans/en/m12/194.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff4661dd-2075-48c3-b19b-fc7f8aaba1b8.jpg?1562667998
 value=3.718
 rarity=C
 type=Creature

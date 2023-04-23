@@ -1,5 +1,5 @@
 name=Danitha Capashen, Paragon
-image=https://magiccards.info/scans/en/dom/12.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce5391bc-6b50-49b0-96a1-df944a55d62e.jpg?1610074990
 value=2.500
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Off Balance
-image=https://magiccards.info/scans/en/ne/15.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adafe5c4-8de0-4d38-919f-de96bc70c21b.jpg?1562631476
 value=1.611
 rarity=C
 type=Instant

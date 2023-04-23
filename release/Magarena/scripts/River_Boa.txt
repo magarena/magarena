@@ -1,5 +1,5 @@
 name=River Boa
-image=https://magiccards.info/scans/en/zen/180.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edfbf056-c3b7-40e9-8e2b-333585978ac9.jpg?1592754684
 value=4.278
 rarity=U
 type=Creature

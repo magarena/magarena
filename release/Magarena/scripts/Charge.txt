@@ -1,5 +1,5 @@
 name=Charge
-image=https://magiccards.info/scans/en/dom/10.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/000eded9-854c-408a-aadf-c26209e27432.jpg?1562730460
 value=2.500
 rarity=C
 type=Instant

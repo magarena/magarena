@@ -1,5 +1,5 @@
 name=Bant Charm
-image=https://magiccards.info/scans/en/ala/155.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7906b1e8-3049-4f4e-b1fd-b2547e7079f0.jpg?1673148361
 value=3.775
 rarity=U
 type=Instant

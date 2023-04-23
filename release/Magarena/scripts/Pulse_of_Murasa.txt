@@ -1,5 +1,5 @@
 name=Pulse of Murasa
-image=https://magiccards.info/scans/en/ogw/141.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4b9f8f4-d704-4f16-8495-cf8185285859.jpg?1625977175
 image_updated=2016-02-29
 value=2.500
 rarity=C

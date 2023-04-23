@@ -1,5 +1,5 @@
 name=Crocanura
-image=https://magiccards.info/scans/en/gtc/116.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b459a988-97b0-4370-b89a-2565f8721b60.jpg?1561842564
 value=3.176
 rarity=C
 type=Creature

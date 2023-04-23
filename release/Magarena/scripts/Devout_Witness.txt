@@ -1,5 +1,5 @@
 name=Devout Witness
-image=https://magiccards.info/scans/en/mm/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdafbdbd-002d-4a4d-a9f9-f6d365b9cf0b.jpg?1562946204
 value=4.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Arc Blade
-image=https://magiccards.info/scans/en/fut/94.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92b8fe7c-fe36-4f6d-9c7f-85286b745865.jpg?1619396675
 value=3.403
 rarity=U
 type=Sorcery

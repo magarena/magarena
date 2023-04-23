@@ -1,5 +1,5 @@
 name=Avarice Totem
-image=https://magiccards.info/scans/en/5dn/104.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53a5cfa8-4091-445c-8641-64402cca7d2d.jpg?1562877041
 value=3.667
 rarity=U
 type=Artifact

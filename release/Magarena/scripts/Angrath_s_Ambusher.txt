@@ -1,5 +1,5 @@
 name=Angrath's Ambusher
-image=https://magiccards.info/scans/en/rix/202.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48181263-11fd-444e-9fef-02ccfe016c8c.jpg?1555041198
 value=2.500
 rarity=U
 type=Creature

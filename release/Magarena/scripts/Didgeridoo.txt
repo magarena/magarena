@@ -1,5 +1,5 @@
 name=Didgeridoo
-image=https://magiccards.info/scans/en/hl/130.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d2ff269-ee43-4684-84a4-ecb4aed3d960.jpg?1562924800
 value=4.086
 rarity=R
 type=Artifact

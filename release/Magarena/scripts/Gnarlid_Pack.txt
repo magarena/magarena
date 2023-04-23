@@ -1,5 +1,5 @@
 name=Gnarlid Pack
-image=https://magiccards.info/scans/en/mm2/144.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2716f3a-97ce-419c-9a0f-930cbb660308.jpg?1562266945
 value=3.333
 rarity=C
 type=Creature

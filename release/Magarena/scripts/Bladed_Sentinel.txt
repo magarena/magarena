@@ -1,5 +1,5 @@
 name=Bladed Sentinel
-image=https://magiccards.info/scans/en/mbs/98.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69959c54-1350-4c64-8e5a-fc8447bb979c.jpg?1562611963
 value=2.037
 rarity=C
 type=Artifact,Creature

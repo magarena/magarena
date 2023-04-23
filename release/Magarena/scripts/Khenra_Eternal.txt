@@ -1,5 +1,5 @@
 name=Khenra Eternal
-image=https://magiccards.info/scans/en/hou/66.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abbdc277-4a76-44a9-aeda-edabab1f579e.jpg?1562810349
 value=2.500
 rarity=C
 type=Creature

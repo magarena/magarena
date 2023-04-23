@@ -1,5 +1,5 @@
 name=Thriving Ibex
-image=https://magiccards.info/scans/en/kld/31.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8edc7c57-9298-4fad-a0c2-4b75b944e2ce.jpg?1576381025
 image_updated=2016-10-05
 value=2.500
 rarity=C

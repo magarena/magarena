@@ -1,5 +1,5 @@
 name=Segmented Krotiq
-image=https://magiccards.info/scans/en/dtk/202.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcdbe824-f9c7-4f4d-af92-438b16057d99.jpg?1562794113
 value=2.500
 rarity=C
 type=Creature

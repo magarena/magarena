@@ -1,5 +1,5 @@
 name=Azami, Lady of Scrolls
-image=https://magiccards.info/scans/en/c17/82.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0ad06ad7-0545-4c6f-9b10-4a27fa2e827c.jpg?1562599546
 image_updated=2017-10-03
 value=3.773
 rarity=R

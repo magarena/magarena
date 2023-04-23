@@ -1,5 +1,5 @@
 name=Screaming Fury
-image=https://magiccards.info/scans/en/5dn/78.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e8488b6-3785-4346-a81b-c28d355f9d25.jpg?1562878019
 value=2.731
 rarity=C
 type=Sorcery

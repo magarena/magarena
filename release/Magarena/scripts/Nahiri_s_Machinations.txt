@@ -1,5 +1,5 @@
 name=Nahiri's Machinations
-image=https://magiccards.info/scans/en/soi/28.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9ba0f1c-8641-4f5a-8f2e-f969fc7a058a.jpg?1576383826
 value=2.500
 rarity=U
 type=Enchantment

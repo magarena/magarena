@@ -1,5 +1,5 @@
 name=Escaped Null
-image=https://magiccards.info/scans/en/roe/109.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/7364dbe9-ee9a-4dcc-b058-4e669c75f060.jpg?1562705077
 value=3.633
 rarity=U
 type=Creature

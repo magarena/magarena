@@ -1,5 +1,5 @@
 name=Hematite Golem
-image=https://magiccards.info/scans/en/mi/185.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cf8d47d-6ecb-424a-a908-a6501f308c8e.jpg?1562141353
 value=2.629
 rarity=C
 type=Artifact,Creature

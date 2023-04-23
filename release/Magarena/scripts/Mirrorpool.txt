@@ -1,5 +1,5 @@
 name=Mirrorpool
-image=https://magiccards.info/scans/en/ogw/174.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edbea2b5-eed3-464b-9d5c-9591f309f298.jpg?1562942751
 image_updated=2016-02-29
 value=2.500
 rarity=M

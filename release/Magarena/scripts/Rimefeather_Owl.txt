@@ -1,5 +1,5 @@
 name=Rimefeather Owl
-image=https://magiccards.info/scans/en/cs/42.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e8e3552-a251-4a80-b0bb-a96a9f8a4c56.jpg?1593274984
 value=3.595
 rarity=R
 type=Snow,Creature

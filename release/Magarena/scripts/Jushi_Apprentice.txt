@@ -1,5 +1,5 @@
 name=Jushi Apprentice
-image=https://magiccards.info/scans/en/chk/70a.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33a8e5b9-6bfb-4ff2-a16d-3168a5412807.jpg?1562758927
 value=3.809
 rarity=R
 type=Creature

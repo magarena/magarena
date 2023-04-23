@@ -1,5 +1,5 @@
 name=Brushwagg
-image=https://magiccards.info/scans/en/mr/106.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c20edc3-5ad0-42c1-a5ec-3e680fb03297.jpg?1587912656
 value=4.211
 rarity=R
 type=Creature

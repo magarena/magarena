@@ -1,5 +1,5 @@
 name=Evangel of Heliod
-image=https://magiccards.info/scans/en/ths/11.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccc00c82-7c2a-4699-8058-e57f690ece96.jpg?1631233984
 value=3.431
 rarity=U
 type=Creature

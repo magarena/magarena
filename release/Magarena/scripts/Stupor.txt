@@ -1,5 +1,5 @@
 name=Stupor
-image=https://magiccards.info/scans/en/tsts/48.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd0b4aea-1e01-4afe-8054-77c5cc7935d6.jpg?1562786789
 value=4.267
 rarity=U
 type=Sorcery

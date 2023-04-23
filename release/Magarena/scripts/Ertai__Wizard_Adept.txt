@@ -1,5 +1,5 @@
 name=Ertai, Wizard Adept
-image=https://magiccards.info/scans/en/ex/33.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91971e19-61ce-45ac-b700-9ffca5091a27.jpg?1562088320
 value=4.195
 rarity=R
 type=Legendary,Creature

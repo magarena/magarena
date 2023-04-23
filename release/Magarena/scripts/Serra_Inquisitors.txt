@@ -1,5 +1,5 @@
 name=Serra Inquisitors
-image=https://magiccards.info/scans/en/hl/120.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1fbe3c8-92fb-41b9-b778-726d22c63054.jpg?1562588719
 value=1.632
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Pyre Hound
-image=https://magiccards.info/scans/en/a25/145.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd970484-49b3-442a-806a-cabc56526ee1.jpg?1562441175
 image_updated=2018-04-27
 value=2.500
 rarity=C

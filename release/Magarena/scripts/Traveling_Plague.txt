@@ -1,5 +1,5 @@
 name=Traveling Plague
-image=https://magiccards.info/scans/en/od/166.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4b6413d-68d3-4097-9bb3-873df4900e4c.jpg?1562934722
 value=2.375
 rarity=R
 type=Enchantment

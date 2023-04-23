@@ -1,5 +1,5 @@
 name=Emmara Tandris
-image=https://magiccards.info/scans/en/dgm/68.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d415858-5f7d-406c-bb30-b4c48ebaad08.jpg?1568004745
 value=1.520
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Willow Priestess
-image=https://magiccards.info/scans/en/hl/75.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31479296-5ea7-470c-9d3f-257e67844fbc.jpg?1562905349
 value=3.419
 rarity=R
 type=Creature

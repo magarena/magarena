@@ -1,5 +1,5 @@
 name=Ishkanah, Grafwidow
-image=https://magiccards.info/scans/en/emn/162.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a6c5a98-2fe5-4671-a6a8-98a47c09c5a7.jpg?1576384813
 image_updated=2016-09-05
 value=2.500
 rarity=M

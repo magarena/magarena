@@ -1,5 +1,5 @@
 name=Legacy's Allure
-image=https://magiccards.info/scans/en/tp/71.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2639c3c1-c631-4b2d-a311-a01bbea4753d.jpg?1562428656
 value=3.912
 rarity=U
 type=Enchantment

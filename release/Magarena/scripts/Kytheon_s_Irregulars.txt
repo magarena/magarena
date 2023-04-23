@@ -1,5 +1,5 @@
 name=Kytheon's Irregulars
-image=https://magiccards.info/scans/en/ori/24.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b861a011-ec5a-471f-b2a3-d8af52af07b4.jpg?1576267169
 image_updated=2015-11-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Merrow Harbinger
-image=https://magiccards.info/scans/en/lw/73.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b47af11c-1090-4f0a-8eea-64a3b639e535.jpg?1562364093
 value=3.194
 rarity=U
 type=Creature

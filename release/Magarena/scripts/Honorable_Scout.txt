@@ -1,5 +1,5 @@
 name=Honorable Scout
-image=https://magiccards.info/scans/en/ps/8.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd311758-0352-4b7d-a24f-7f3f2b5d7b0f.jpg?1562934946
 value=3.638
 rarity=C
 type=Creature

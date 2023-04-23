@@ -1,5 +1,5 @@
 name=Mephidross Vampire
-image=https://magiccards.info/scans/en/5dn/53.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/754f202f-4f08-4c39-9219-1114d8508788.jpg?1562877792
 value=4.269
 rarity=R
 type=Creature

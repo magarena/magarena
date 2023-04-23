@@ -1,5 +1,5 @@
 name=Hissing Iguanar
-image=https://magiccards.info/scans/en/pc2/46.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/2268cf4b-de6d-4447-86e8-f8298728a3bd.jpg?1673147821
 value=2.717
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Atzocan Seer
-image=https://magiccards.info/scans/en/rix/153.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe84b3c0-bca2-42d3-a82c-540644e59625.jpg?1555040788
 value=2.500
 rarity=U
 type=Creature

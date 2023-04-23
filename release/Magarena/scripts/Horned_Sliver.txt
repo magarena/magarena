@@ -1,5 +1,5 @@
 name=Horned Sliver
-image=https://magiccards.info/scans/en/tp/128.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8c36ddb-286f-47be-9a8b-aa3161e4186a.jpg?1562431277
 value=3.979
 rarity=U
 type=Creature

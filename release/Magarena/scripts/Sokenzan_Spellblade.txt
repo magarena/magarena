@@ -1,5 +1,5 @@
 name=Sokenzan Spellblade
-image=https://magiccards.info/scans/en/sok/115.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/500eeccb-aee2-48d4-8a43-bb9668f1c1ab.jpg?1562493709
 value=2.865
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lava Storm
-image=https://magiccards.info/scans/en/wl/110.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61fcd58e-e5e2-45f4-9edd-300a871ae5f5.jpg?1562801146
 value=3.266
 rarity=C
 type=Instant

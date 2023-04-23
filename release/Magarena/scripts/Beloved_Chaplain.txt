@@ -1,5 +1,5 @@
 name=Beloved Chaplain
-image=https://magiccards.info/scans/en/od/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/decec62b-7ac4-4097-9215-5db18db2dec6.jpg?1562936605
 value=4.073
 rarity=U
 type=Creature

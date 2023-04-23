@@ -1,5 +1,5 @@
 name=Realm Razer
-image=https://magiccards.info/scans/en/ala/187.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da3ecfc6-1f9e-443e-a445-51df518025a5.jpg?1562709702
 value=3.566
 rarity=R
 type=Creature

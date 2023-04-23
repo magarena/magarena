@@ -1,5 +1,5 @@
 name=Pacifism
-image=https://magiccards.info/scans/en/a25/28.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0da7c6dc-9325-4866-8c09-78c7021f8f17.jpg?1600713540
 image_updated=2018-04-27
 value=4.032
 removal=3

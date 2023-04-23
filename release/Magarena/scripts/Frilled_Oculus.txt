@@ -1,5 +1,5 @@
 name=Frilled Oculus
-image=https://magiccards.info/scans/en/gtc/35.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9f3a08f-403e-4d6c-87c7-add8170bde8b.jpg?1561849038
 value=2.971
 rarity=C
 type=Creature

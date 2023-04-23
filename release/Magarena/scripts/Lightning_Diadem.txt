@@ -1,5 +1,5 @@
 name=Lightning Diadem
-image=https://magiccards.info/scans/en/jou/102.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9223ac16-e6fc-4ba6-91d9-7ff27cc17271.jpg?1601078293
 value=1.129
 rarity=C
 type=Enchantment

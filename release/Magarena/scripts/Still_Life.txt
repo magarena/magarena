@@ -1,5 +1,5 @@
 name=Still Life
-image=https://magiccards.info/scans/en/od/275.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12be33d7-f25e-4dbf-9706-74403103b127.jpg?1562898621
 value=2.804
 rarity=U
 type=Enchantment

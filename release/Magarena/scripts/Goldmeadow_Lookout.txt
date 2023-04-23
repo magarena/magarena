@@ -1,5 +1,5 @@
 name=Goldmeadow Lookout
-image=https://magiccards.info/scans/en/fut/22.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99c0eb4c-c8f1-40cf-ae0a-a413432b4c5f.jpg?1562926029
 value=2.738
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Refocus
-image=https://magiccards.info/scans/en/frf/47.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35c78973-f2ae-4c76-802f-793d1022fcbd.jpg?1562824155
 value=2.500
 rarity=C
 type=Instant

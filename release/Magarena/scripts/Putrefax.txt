@@ -1,5 +1,5 @@
 name=Putrefax
-image=https://magiccards.info/scans/en/som/126.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2b2c3f9-a831-4fd2-80e8-b67b0df3e98b.jpg?1562821947
 value=4.014
 rarity=R
 type=Creature

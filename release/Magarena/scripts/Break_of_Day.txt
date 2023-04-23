@@ -1,5 +1,5 @@
 name=Break of Day
-image=https://magiccards.info/scans/en/dka/3.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e39da2a-814a-46bb-a1ca-fc5532ece842.jpg?1562932418
 value=3.070
 rarity=C
 type=Instant

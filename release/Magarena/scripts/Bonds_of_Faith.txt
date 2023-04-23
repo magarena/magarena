@@ -1,5 +1,5 @@
 name=Bonds of Faith
-image=https://magiccards.info/scans/en/isd/5.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc5dbb93-63a2-478e-b874-1fdf3a03cbff.jpg?1592762504
 image_updated=2016-09-12
 value=3.357
 rarity=C

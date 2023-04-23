@@ -1,5 +1,5 @@
 name=Need for Speed
-image=https://magiccards.info/scans/en/od/209.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/8407b02f-66b3-4cfa-a3c4-105f314fd037.jpg?1562919495
 value=2.500
 rarity=R
 type=Enchantment

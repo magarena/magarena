@@ -1,5 +1,5 @@
 name=Radiant Kavu
-image=https://magiccards.info/scans/en/ps/120.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/153077a8-38c0-44aa-9b84-cdd9ade50ad6.jpg?1562899445
 value=3.926
 rarity=R
 type=Creature

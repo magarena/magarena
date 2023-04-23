@@ -1,5 +1,5 @@
 name=Salt Flats
-image=https://magiccards.info/scans/en/tp/330.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93e98e1f-5a51-41b4-b636-86a58e712849.jpg?1562430780
 value=2.838
 rarity=R
 type=Land

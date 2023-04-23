@@ -1,5 +1,5 @@
 name=Pegasus Refuge
-image=https://magiccards.info/scans/en/tp/247.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2bce334-0ae6-4a7d-85db-99ee205ce546.jpg?1562055896
 value=2.203
 rarity=R
 type=Enchantment

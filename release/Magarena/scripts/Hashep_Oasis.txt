@@ -1,5 +1,5 @@
 name=Hashep Oasis
-image=https://magiccards.info/scans/en/hou/177.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bba75d2-3f1b-4828-be11-2da695f7bde7.jpg?1562795864
 value=2.500
 rarity=U
 type=Land

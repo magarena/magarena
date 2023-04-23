@@ -1,5 +1,5 @@
 name=Hijack
-image=https://magiccards.info/scans/en/xln/148.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/519c5660-4daf-4404-b808-66d1c840ab70.jpg?1562555301
 image_updated=2017-10-30
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Seeds of Innocence
-image=https://magiccards.info/scans/en/mr/139.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9c868f5-0f90-4f7e-bafb-c45d2372fe06.jpg?1614021484
 value=3.024
 rarity=R
 type=Sorcery

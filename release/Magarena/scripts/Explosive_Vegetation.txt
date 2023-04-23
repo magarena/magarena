@@ -1,5 +1,5 @@
 name=Explosive Vegetation
-image=https://magiccards.info/scans/en/cn2/180.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/015d9a5b-03a2-4341-90cc-e5be5b5fbc34.jpg?1673305366
 image_updated=2017-08-29
 value=3.804
 rarity=U

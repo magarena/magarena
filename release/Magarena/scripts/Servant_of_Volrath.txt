@@ -1,5 +1,5 @@
 name=Servant of Volrath
-image=https://magiccards.info/scans/en/tp/50.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/691afabb-f266-45fd-b5a3-577be4f10f86.jpg?1562054458
 value=1.737
 rarity=C
 type=Creature

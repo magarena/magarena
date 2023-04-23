@@ -1,5 +1,5 @@
 name=Vraska's Contempt
-image=https://magiccards.info/scans/en/xln/129.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd7550dd-dfc5-43cd-a117-1244ee3086a8.jpg?1562563183
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Simic Basilisk
-image=https://magiccards.info/scans/en/di/91.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59e7af53-62d8-45b8-829f-c575dda53e25.jpg?1593273442
 value=2.286
 rarity=U
 type=Creature

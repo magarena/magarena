@@ -1,5 +1,5 @@
 name=Nightfire Giant
-image=https://magiccards.info/scans/en/m15/109.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11da48a7-903d-43f5-8085-1b3790ed079a.jpg?1562782828
 value=3.500
 rarity=U
 type=Creature

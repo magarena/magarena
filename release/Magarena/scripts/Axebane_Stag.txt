@@ -1,5 +1,5 @@
 name=Axebane Stag
-image=https://magiccards.info/scans/en/rtr/116.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfce7c02-ccc3-44cd-8087-627eaa6a072e.jpg?1562792542
 value=2.080
 rarity=C
 type=Creature

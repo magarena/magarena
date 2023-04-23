@@ -1,5 +1,5 @@
 name=Chained Throatseeker
-image=https://magiccards.info/scans/en/nph/30.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a7bb447-c2b0-429e-bf82-02d6a966fe73.jpg?1562876738
 value=3.180
 rarity=C
 type=Creature

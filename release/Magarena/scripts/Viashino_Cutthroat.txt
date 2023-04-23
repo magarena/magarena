@@ -1,5 +1,5 @@
 name=Viashino Cutthroat
-image=https://magiccards.info/scans/en/ul/94.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcbab69d-3259-40f4-a588-ab550858a178.jpg?1562864215
 value=3.803
 rarity=U
 type=Creature

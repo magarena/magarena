@@ -1,5 +1,5 @@
 name=Pulsating Illusion
-image=https://magiccards.info/scans/en/od/96.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3297f28-a15d-43dd-a96e-09701d5f9aed.jpg?1562934456
 value=1.155
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Godless Shrine
-image=https://magiccards.info/scans/en/gtc/242.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ced4c824-2dfc-42ae-84e6-09f8e3f51b5b.jpg?1584832255
 value=4.101
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Survival of the Fittest
-image=https://magiccards.info/scans/en/ex/129.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4ef0d7f9-ddb9-4e83-a9bf-09bec22fc80d.jpg?1562429365
 value=4.500
 rarity=R
 type=Enchantment

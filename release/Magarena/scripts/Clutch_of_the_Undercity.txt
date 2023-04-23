@@ -1,5 +1,5 @@
 name=Clutch of the Undercity
-image=https://magiccards.info/scans/en/rav/197.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24437641-85a1-4fcd-93dc-bd19a7abf969.jpg?1598916837
 value=3.680
 rarity=U
 type=Instant

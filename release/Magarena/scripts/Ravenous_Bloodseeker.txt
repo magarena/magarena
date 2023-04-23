@@ -1,5 +1,5 @@
 name=Ravenous Bloodseeker
-image=https://magiccards.info/scans/en/soi/175.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc4d04bc-6263-43b0-9b01-894a532cd3ed.jpg?1576384867
 value=2.500
 rarity=U
 type=Creature

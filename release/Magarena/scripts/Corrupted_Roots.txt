@@ -1,5 +1,5 @@
 name=Corrupted Roots
-image=https://magiccards.info/scans/en/cfx/41.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8a7fe66-db40-4eca-8953-0eb2cf98e4e8.jpg?1562803730
 value=2.262
 rarity=U
 type=Enchantment

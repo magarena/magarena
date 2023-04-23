@@ -1,5 +1,5 @@
 name=Mortal's Ardor
-image=https://magiccards.info/scans/en/bng/20.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75743f66-fd2d-47e7-b56f-1c95311d09c2.jpg?1562840242
 image_updated=2016-12-23
 value=3.043
 rarity=C

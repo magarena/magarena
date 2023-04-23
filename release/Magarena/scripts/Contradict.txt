@@ -1,5 +1,5 @@
 name=Contradict
-image=https://magiccards.info/scans/en/dtk/49.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0b3d4ff-09d1-4d9f-8c83-cdfbd7bb1079.jpg?1562790758
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Inventors' Fair
-image=https://magiccards.info/scans/en/kld/247.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f917de1f-76f1-4859-a9f3-bcda6a9ca130.jpg?1661583450
 image_updated=2016-10-05
 value=2.500
 rarity=R

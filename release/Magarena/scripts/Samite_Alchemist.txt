@@ -1,5 +1,5 @@
 name=Samite Alchemist
-image=https://magiccards.info/scans/en/hl/116.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68224871-d4c2-4b43-9ab8-c0685588b035.jpg?1562587293
 value=1.170
 rarity=C
 type=Creature

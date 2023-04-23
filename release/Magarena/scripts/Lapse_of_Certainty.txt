@@ -1,5 +1,5 @@
 name=Lapse of Certainty
-image=https://magiccards.info/scans/en/cfx/9.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec609036-dfbf-47de-9a3a-762aea4196d4.jpg?1562804498
 value=3.155
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Leaping Lizard
-image=https://magiccards.info/scans/en/hl/63.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81665785-88f2-43e4-aebc-1086c5d908ca.jpg?1562869512
 value=3.019
 rarity=C
 type=Creature

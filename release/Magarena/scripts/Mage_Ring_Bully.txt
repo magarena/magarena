@@ -1,5 +1,5 @@
 name=Mage-Ring Bully
-image=https://magiccards.info/scans/en/ori/154.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a129f22-dd7e-4b2c-a514-a2ac55bb5661.jpg?1562009166
 image_updated=2015-11-05
 value=2.500
 rarity=C

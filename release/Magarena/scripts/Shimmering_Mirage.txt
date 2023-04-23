@@ -1,5 +1,5 @@
 name=Shimmering Mirage
-image=https://magiccards.info/scans/en/ap/30.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7263e20e-5473-42e9-90c3-3bcd848644ca.jpg?1562922005
 value=2.962
 rarity=C
 type=Instant

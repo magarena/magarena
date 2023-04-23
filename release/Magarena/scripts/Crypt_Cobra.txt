@@ -1,5 +1,5 @@
 name=Crypt Cobra
-image=https://magiccards.info/scans/en/mr/12.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f7bcd36-13e2-4ac7-a449-246cecb3fc0f.jpg?1562719264
 value=3.219
 rarity=U
 type=Creature

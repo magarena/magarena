@@ -1,5 +1,5 @@
 name=Gearsmith Prodigy
-image=https://magiccards.info/scans/en/m19/57.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77d9e666-d9c9-4ccd-89a5-83de79677fa6.jpg?1562302738
 value=2.500
 rarity=C
 type=Creature

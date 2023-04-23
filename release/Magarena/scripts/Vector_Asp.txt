@@ -1,5 +1,5 @@
 name=Vector Asp
-image=https://magiccards.info/scans/en/som/219.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7ffe86e1-ad47-4ccb-aa55-119dc681d370.jpg?1562819575
 value=2.980
 rarity=C
 type=Artifact,Creature

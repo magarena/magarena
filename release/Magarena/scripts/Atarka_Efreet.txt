@@ -1,5 +1,5 @@
 name=Atarka Efreet
-image=https://magiccards.info/scans/en/dtk/128.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b192067c-7cdb-4d3c-95b7-819733e44678.jpg?1562791696
 value=2.500
 rarity=C
 type=Creature

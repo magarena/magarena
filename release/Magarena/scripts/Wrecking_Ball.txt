@@ -1,5 +1,5 @@
 name=Wrecking Ball
-image=https://magiccards.info/scans/en/mm2/189.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a8fafff-e9b1-49e1-9bba-5f3c82cac894.jpg?1592673497
 image_updated=2015-11-05
 value=3.304
 removal=4

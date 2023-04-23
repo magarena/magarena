@@ -1,5 +1,5 @@
 name=Hydroform
-image=https://magiccards.info/scans/en/gtc/172.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c4e1f41-4aed-451b-bbaa-6cc6780cd6c9.jpg?1561820973
 value=2.592
 rarity=C
 type=Instant

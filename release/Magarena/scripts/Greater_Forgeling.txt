@@ -1,5 +1,5 @@
 name=Greater Forgeling
-image=https://magiccards.info/scans/en/rav/129.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eef8ad11-4ffa-4878-9354-737be6f9e90c.jpg?1598915629
 value=1.771
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Rude Awakening
-image=https://magiccards.info/scans/en/mma/160.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/019897e4-d3ba-43b1-9bd9-2ebba6e3b349.jpg?1562895417
 value=2.500
 rarity=R
 type=Sorcery

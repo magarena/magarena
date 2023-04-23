@@ -1,5 +1,5 @@
 name=Jagged-Scar Archers
-image=https://magiccards.info/scans/en/lw/222.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71c4346a-a330-49ca-909e-08fd8aec7b3f.jpg?1631234975
 image_updated=2016-12-20
 value=4.050
 rarity=U

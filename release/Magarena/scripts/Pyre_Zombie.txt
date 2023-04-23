@@ -1,5 +1,5 @@
 name=Pyre Zombie
-image=https://magiccards.info/scans/en/in/261.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c030108-2995-4fb0-9b80-efdfdd0f11e0.jpg?1562916671
 value=3.151
 rarity=R
 type=Creature

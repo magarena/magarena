@@ -1,5 +1,5 @@
 name=Angel of Invention
-image=https://magiccards.info/scans/en/kld/4.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3920f7d-8559-40f8-95be-860c16bf7700.jpg?1576380724
 image_updated=2016-10-05
 value=2.500
 rarity=M

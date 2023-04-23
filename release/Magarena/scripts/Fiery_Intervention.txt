@@ -1,5 +1,5 @@
 name=Fiery Intervention
-image=https://magiccards.info/scans/en/dom/118.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67f36a25-3692-4f2e-a25e-84b90656e6a4.jpg?1562737027
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Spiteful Shadows
-image=https://magiccards.info/scans/en/dka/75.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea0a94fe-11d6-48a7-9195-2cb5eff4b962.jpg?1562950756
 value=2.125
 rarity=C
 type=Enchantment

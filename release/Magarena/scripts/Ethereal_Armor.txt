@@ -1,5 +1,5 @@
 name=Ethereal Armor
-image=https://magiccards.info/scans/en/rtr/9.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76960e65-e5c7-4414-b9a5-37d7b2ded4a0.jpg?1562788397
 value=3.977
 rarity=C
 type=Enchantment

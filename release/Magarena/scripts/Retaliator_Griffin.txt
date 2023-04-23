@@ -1,5 +1,5 @@
 name=Retaliator Griffin
-image=https://magiccards.info/scans/en/arb/123.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/289adeb9-952d-437e-aa66-358a780dc083.jpg?1562640239
 value=3.382
 rarity=R
 type=Creature

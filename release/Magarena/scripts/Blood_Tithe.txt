@@ -1,5 +1,5 @@
 name=Blood Tithe
-image=https://magiccards.info/scans/en/m11/84.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf166294-3359-4da4-84d0-006c75c183fd.jpg?1562476174
 value=3.060
 rarity=C
 type=Sorcery

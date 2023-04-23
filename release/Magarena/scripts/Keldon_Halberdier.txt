@@ -1,5 +1,5 @@
 name=Keldon Halberdier
-image=https://magiccards.info/scans/en/ima/135.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55e0caef-215a-4433-8a85-322e62e3590d.jpg?1619397229
 image_updated=2017-04-12
 value=3.705
 rarity=C

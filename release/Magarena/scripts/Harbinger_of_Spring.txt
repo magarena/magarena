@@ -1,5 +1,5 @@
 name=Harbinger of Spring
-image=https://magiccards.info/scans/en/bok/128.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19fd23b5-5e57-44dc-8248-c4b9eb71c4f3.jpg?1562875743
 value=2.689
 rarity=C
 type=Creature

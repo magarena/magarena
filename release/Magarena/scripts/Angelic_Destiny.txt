@@ -1,5 +1,5 @@
 name=Angelic Destiny
-image=https://magiccards.info/scans/en/m12/3.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0cd7438-fde2-4e26-9c34-52c476a971e9.jpg?1562653509
 value=4.172
 rarity=M
 type=Enchantment

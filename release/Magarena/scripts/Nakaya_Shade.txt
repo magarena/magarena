@@ -1,5 +1,5 @@
 name=Nakaya Shade
-image=https://magiccards.info/scans/en/pr/69.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eefd9315-9b7c-4c6b-8a15-a6af873dab6f.jpg?1562939900
 value=3.605
 rarity=U
 type=Creature

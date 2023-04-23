@@ -1,5 +1,5 @@
 name=Shifting Wall
-image=https://magiccards.info/scans/en/sh/134.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49b7a950-bf79-46fa-8b29-b7856b38e0fd.jpg?1587857370
 value=3.571
 rarity=U
 type=Artifact,Creature

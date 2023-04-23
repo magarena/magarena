@@ -1,5 +1,5 @@
 name=Entreat the Angels
-image=https://magiccards.info/scans/en/mm3/4.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09aa3482-a068-4018-bbbf-8097a8d1482b.jpg?1592710437
 image_updated=2017-08-08
 value=3.950
 rarity=M

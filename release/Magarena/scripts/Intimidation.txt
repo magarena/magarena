@@ -1,5 +1,5 @@
 name=Intimidation
-image=https://magiccards.info/scans/en/mm/142.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b9e1724-91cf-422e-909b-ddb69a6f9f76.jpg?1562379443
 value=3.576
 rarity=U
 type=Enchantment

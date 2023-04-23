@@ -1,5 +1,5 @@
 name=Geist-Fueled Scarecrow
-image=https://magiccards.info/scans/en/emn/196.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89c9cafb-4543-409f-a98a-df0e7a0f2749.jpg?1576385070
 image_updated=2016-09-05
 value=2.500
 rarity=U

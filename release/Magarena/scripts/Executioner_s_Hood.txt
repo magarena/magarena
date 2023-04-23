@@ -1,5 +1,5 @@
 name=Executioner's Hood
-image=https://magiccards.info/scans/en/dka/148.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/7447d115-9b29-4086-8435-40c7c957f242.jpg?1562922463
 value=2.287
 rarity=C
 type=Artifact

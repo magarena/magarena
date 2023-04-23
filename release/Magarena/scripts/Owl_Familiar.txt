@@ -1,5 +1,5 @@
 name=Owl Familiar
-image=https://magiccards.info/scans/en/st/43.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8e6d260-231d-4874-9ef4-d24ea9673ff8.jpg?1562945175
 value=3.233
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Defiant Greatmaw
-image=https://magiccards.info/scans/en/akh/163.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b74cb0ba-c691-4823-aa94-399b1aaeaf0b.jpg?1543675805
 value=2.500
 rarity=U
 type=Creature

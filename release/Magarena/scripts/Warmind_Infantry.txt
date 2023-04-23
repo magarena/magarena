@@ -1,5 +1,5 @@
 name=Warmind Infantry
-image=https://magiccards.info/scans/en/gtc/111.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8a5f801-9e55-4e14-85b0-5719521cd9d6.jpg?1561848628
 value=2.730
 rarity=C
 type=Creature

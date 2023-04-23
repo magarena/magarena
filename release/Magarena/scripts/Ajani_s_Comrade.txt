@@ -1,5 +1,5 @@
 name=Ajani's Comrade
-image=https://magiccards.info/scans/en/aer/187.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bebef1c-2f03-4e0a-b3ba-861546ebf8a6.jpg?1562916660
 value=2.500
 rarity=U
 type=Creature

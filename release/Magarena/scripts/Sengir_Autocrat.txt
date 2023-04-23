@@ -1,5 +1,5 @@
 name=Sengir Autocrat
-image=https://magiccards.info/scans/en/ema/105.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83fa8a17-ff86-465e-9092-0968081f4e28.jpg?1580014357
 value=3.763
 rarity=U
 type=Creature

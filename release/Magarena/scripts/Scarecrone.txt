@@ -1,5 +1,5 @@
 name=Scarecrone
-image=https://magiccards.info/scans/en/eve/172.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8c9d86a-54a3-457c-b9b4-61f914de6e14.jpg?1601080952
 value=4.488
 rarity=R
 type=Artifact,Creature

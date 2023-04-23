@@ -1,5 +1,5 @@
 name=Call to the Netherworld
-image=https://magiccards.info/scans/en/ts/97.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/caccee1e-971d-4b92-9f9a-624865c508d9.jpg?1620236228
 value=3.500
 rarity=C
 type=Sorcery

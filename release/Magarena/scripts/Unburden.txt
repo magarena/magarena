@@ -1,5 +1,5 @@
 name=Unburden
-image=https://magiccards.info/scans/en/akh/114.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30d81da3-dc88-4cf7-ab9a-c8ade2cfa0e1.jpg?1543675450
 image_updated=2017-09-29
 value=3.233
 rarity=C

@@ -1,5 +1,5 @@
 name=Diregraf Captain
-image=https://magiccards.info/scans/en/dka/135.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/158407ad-35a9-40e1-9762-1c0572b56ecb.jpg?1637631384
 value=3.861
 rarity=U
 type=Creature

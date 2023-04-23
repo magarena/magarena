@@ -1,5 +1,5 @@
 name=Tajuru Warcaller
-image=https://magiccards.info/scans/en/bfz/195.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/762501fe-5102-4c21-8ad5-430590a59830.jpg?1562922940
 image_updated=2015-11-08
 value=2.500
 rarity=U

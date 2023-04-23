@@ -1,5 +1,5 @@
 name=Volrath's Gardens
-image=https://magiccards.info/scans/en/sh/74.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d74f7d8-10eb-4082-9b07-41de13359b8c.jpg?1562596868
 value=2.282
 rarity=R
 type=Enchantment

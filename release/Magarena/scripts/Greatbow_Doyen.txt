@@ -1,5 +1,5 @@
 name=Greatbow Doyen
-image=https://magiccards.info/scans/en/mt/125.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0f64e8a-2775-4f64-8728-36e7d613f54c.jpg?1562880433
 value=3.695
 rarity=R
 type=Creature

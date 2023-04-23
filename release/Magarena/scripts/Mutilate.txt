@@ -1,5 +1,5 @@
 name=Mutilate
-image=https://magiccards.info/scans/en/c14/150.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04587192-e5a6-46f6-98b5-3b349d618880.jpg?1562896094
 value=4.154
 removal=3
 rarity=R

@@ -1,5 +1,5 @@
 name=Nightwind Glider
-image=https://magiccards.info/scans/en/mm/31.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/0968401d-522f-4def-92a1-d504471ac54e.jpg?1562378960
 value=3.040
 rarity=C
 type=Creature

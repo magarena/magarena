@@ -1,5 +1,5 @@
 name=Diabolic Edict
-image=https://magiccards.info/scans/en/a25/85.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eabbed2-1399-4cf1-9eba-b53c56caced4.jpg?1591104828
 image_updated=2018-04-27
 value=4.574
 removal=3

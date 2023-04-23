@@ -1,5 +1,5 @@
 name=Book of Rass
-image=https://magiccards.info/scans/en/dk/95.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/7522bae1-f57e-4863-8c62-e335b1a7c747.jpg?1562922667
 image_updated=2016-11-20
 value=2.571
 rarity=U

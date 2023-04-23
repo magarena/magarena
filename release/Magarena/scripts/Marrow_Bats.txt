@@ -1,5 +1,5 @@
 name=Marrow Bats
-image=https://magiccards.info/scans/en/avr/113.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a469e9a9-2498-4651-89fb-a86729d8c978.jpg?1562929658
 value=1.528
 rarity=U
 type=Creature

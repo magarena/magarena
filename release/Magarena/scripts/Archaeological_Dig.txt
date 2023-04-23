@@ -1,5 +1,5 @@
 name=Archaeological Dig
-image=https://magiccards.info/scans/en/in/320.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35f55af0-5a46-4900-b3d0-ca796b710e07.jpg?1562905889
 value=3.405
 rarity=U
 type=Land

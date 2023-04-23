@@ -1,5 +1,5 @@
 name=Cave-In
-image=https://magiccards.info/scans/en/mm/180.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/440d9d26-f304-467d-af79-914cc65f082e.jpg?1562380418
 value=3.737
 rarity=R
 type=Sorcery

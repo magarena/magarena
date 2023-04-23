@@ -1,5 +1,5 @@
 name=Inspirit
-image=https://magiccards.info/scans/en/9e/22.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d30356b-ab7b-4366-9f90-15703d5c3d10.jpg?1562735851
 value=2.817
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Razing Snidd
-image=https://magiccards.info/scans/en/ps/121.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2090b80-2ce2-4c9a-87fe-d221f3c677b4.jpg?1562939456
 value=1.649
 rarity=U
 type=Creature

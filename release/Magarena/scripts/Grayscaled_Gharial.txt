@@ -1,5 +1,5 @@
 name=Grayscaled Gharial
-image=https://magiccards.info/scans/en/rav/52.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89c2c94a-31df-4789-a309-4cdfe7f6a719.jpg?1598914242
 value=2.594
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Raven's Crime
-image=https://magiccards.info/scans/en/mma/95.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7271436b-897a-4b24-a5d2-d29dbea8c1bf.jpg?1561967380
 value=4.260
 rarity=C
 type=Sorcery

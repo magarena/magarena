@@ -1,5 +1,5 @@
 name=Stone Haven Outfitter
-image=https://magiccards.info/scans/en/ogw/37.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1b98e63-f23d-432a-86ae-f88bdad2f648.jpg?1626162180
 image_updated=2016-02-29
 value=2.500
 rarity=R

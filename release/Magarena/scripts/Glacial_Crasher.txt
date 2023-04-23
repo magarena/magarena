@@ -1,5 +1,5 @@
 name=Glacial Crasher
-image=https://magiccards.info/scans/en/m15/57.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8bf55bf-ee38-4e68-81ca-0fdb8af779ef.jpg?1562796231
 value=2.429
 rarity=C
 type=Creature

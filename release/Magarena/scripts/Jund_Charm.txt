@@ -1,5 +1,5 @@
 name=Jund Charm
-image=https://magiccards.info/scans/en/ala/175.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df91979c-fb60-433b-8780-366ce1effd9c.jpg?1562942155
 value=3.600
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Crimson Manticore
-image=https://magiccards.info/scans/en/5e/217.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9de6ffe8-70af-4505-bc2d-b0113cd6db99.jpg?1562928287
 value=2.375
 rarity=R
 type=Creature

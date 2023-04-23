@@ -1,5 +1,5 @@
 name=Naya Battlemage
-image=https://magiccards.info/scans/en/ala/142.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fe73f62-2e80-4d5f-b7b5-c54c895a3e4d.jpg?1562703809
 value=3.111
 rarity=U
 type=Creature

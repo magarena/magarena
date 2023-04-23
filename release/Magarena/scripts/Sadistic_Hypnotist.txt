@@ -1,5 +1,5 @@
 name=Sadistic Hypnotist
-image=https://magiccards.info/scans/en/od/159.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e14e994d-ed2e-451b-a165-93da7e9c3579.jpg?1592713717
 value=4.000
 rarity=U
 type=Creature

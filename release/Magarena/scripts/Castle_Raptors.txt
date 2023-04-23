@@ -1,5 +1,5 @@
 name=Castle Raptors
-image=https://magiccards.info/scans/en/ts/5.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b980a75-8d2d-4d56-be76-48159ef33631.jpg?1619392740
 value=2.161
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shield of the Oversoul
-image=https://magiccards.info/scans/en/shm/242.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54040bc6-dd7c-4933-bfac-d0d6d2c78157.jpg?1562830242
 value=4.073
 rarity=C
 type=Enchantment

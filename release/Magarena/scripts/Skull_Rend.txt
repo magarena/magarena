@@ -1,5 +1,5 @@
 name=Skull Rend
-image=https://magiccards.info/scans/en/rtr/195.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c8efb23-bac0-41d2-b4ee-27a6b1fe3134.jpg?1562783397
 value=2.777
 rarity=C
 type=Sorcery

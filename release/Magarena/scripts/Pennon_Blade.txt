@@ -1,5 +1,5 @@
 name=Pennon Blade
-image=https://magiccards.info/scans/en/roe/221.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afc89a7c-cdb9-45cd-a9e7-d66dd2066d1d.jpg?1608911598
 value=3.264
 rarity=U
 type=Artifact

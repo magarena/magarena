@@ -1,5 +1,5 @@
 name=Vampire Sovereign
-image=https://magiccards.info/scans/en/m19/125.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f7f0f05-fe4e-4827-bedf-a54352f95967.jpg?1673147691
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Hexplate Golem
-image=https://magiccards.info/scans/en/cn2/210.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98534255-d8cd-4f42-8b90-f5672fb879a2.jpg?1562925747
 image_updated=2017-08-29
 value=2.039
 rarity=C

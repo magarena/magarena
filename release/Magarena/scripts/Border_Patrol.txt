@@ -1,5 +1,5 @@
 name=Border Patrol
-image=https://magiccards.info/scans/en/ju/6.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a49a85c8-3516-4dda-b16b-bf1bf890becb.jpg?1562631319
 value=2.156
 rarity=C
 type=Creature

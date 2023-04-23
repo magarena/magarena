@@ -1,5 +1,5 @@
 name=Natural Spring
-image=https://magiccards.info/scans/en/10e/281.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/983874b1-3179-4ac6-a4f3-efa133331c6f.jpg?1562552072
 image_updated=2017-01-01
 value=2.239
 rarity=C

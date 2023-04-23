@@ -1,5 +1,5 @@
 name=Burden of Guilt
-image=https://magiccards.info/scans/en/dka/4.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7440288-6c55-4502-bf20-3c5b50a2de5a.jpg?1562946355
 value=2.969
 removal=2
 rarity=C

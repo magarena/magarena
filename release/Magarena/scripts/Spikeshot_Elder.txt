@@ -1,5 +1,5 @@
 name=Spikeshot Elder
-image=https://magiccards.info/scans/en/mm2/127.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14c14e44-20ff-4128-b07d-4b751fc82d4e.jpg?1562259454
 value=3.858
 rarity=R
 type=Creature

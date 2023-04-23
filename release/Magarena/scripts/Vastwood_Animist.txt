@@ -1,5 +1,5 @@
 name=Vastwood Animist
-image=https://magiccards.info/scans/en/wwk/116.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5cc40e7-fb31-4540-81a1-d0c0f514c8a8.jpg?1562297097
 value=2.823
 rarity=U
 type=Creature

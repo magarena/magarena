@@ -1,5 +1,5 @@
 name=Harrier Naga
-image=https://magiccards.info/scans/en/hou/118.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcdc68c9-f5f3-4c5b-80df-85508cf15f84.jpg?1562812890
 value=2.500
 rarity=C
 type=Creature

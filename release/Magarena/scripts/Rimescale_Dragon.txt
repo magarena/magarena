@@ -1,5 +1,5 @@
 name=Rimescale Dragon
-image=https://magiccards.info/scans/en/cs/95.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/113d0342-0ba2-46b0-bda5-6a9fe4dcad3e.jpg?1593275312
 value=4.184
 rarity=R
 type=Snow,Creature

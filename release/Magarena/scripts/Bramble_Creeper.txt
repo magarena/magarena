@@ -1,5 +1,5 @@
 name=Bramble Creeper
-image=https://magiccards.info/scans/en/m10/171.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74148e2e-ac21-414a-9b6c-410988d7fdd0.jpg?1561984879
 value=2.138
 rarity=C
 type=Creature

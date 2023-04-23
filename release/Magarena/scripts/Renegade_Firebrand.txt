@@ -1,5 +1,5 @@
 name=Renegade Firebrand
-image=https://magiccards.info/scans/en/kld/268.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b633884-867c-4b51-bd5b-5f246d0ecd4e.jpg?1562735197
 image_updated=2016-10-05
 value=2.500
 rarity=U

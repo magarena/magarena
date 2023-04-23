@@ -1,5 +1,5 @@
 name=Undercity Troll
-image=https://magiccards.info/scans/en/ima/188.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fe1ebf9-8378-444b-870a-5be12aa1f5fa.jpg?1562847053
 image_updated=2017-04-12
 value=2.500
 rarity=U

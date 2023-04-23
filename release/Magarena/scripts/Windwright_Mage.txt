@@ -1,5 +1,5 @@
 name=Windwright Mage
-image=https://magiccards.info/scans/en/ala/208.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9aba0e7d-9146-402f-898e-16a0ff08d368.jpg?1562706980
 value=2.971
 rarity=C
 type=Artifact,Creature

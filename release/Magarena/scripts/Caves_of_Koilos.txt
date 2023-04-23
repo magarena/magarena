@@ -1,5 +1,5 @@
 name=Caves of Koilos
-image=https://magiccards.info/scans/en/c16/285.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99264beb-2149-4cd4-9880-f0dc5c570c1b.jpg?1673308286
 image_updated=2017-08-17
 value=2.500
 rarity=R

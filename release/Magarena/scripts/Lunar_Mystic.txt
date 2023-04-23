@@ -1,5 +1,5 @@
 name=Lunar Mystic
-image=https://magiccards.info/scans/en/avr/65.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8a32b4b-4b8d-40e0-9166-06a678fd6e06.jpg?1591320277
 value=3.570
 rarity=R
 type=Creature

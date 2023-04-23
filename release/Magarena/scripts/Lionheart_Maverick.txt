@@ -1,5 +1,5 @@
 name=Lionheart Maverick
-image=https://magiccards.info/scans/en/gp/11.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a818fdf-2cbc-451a-9893-36da510d63e4.jpg?1562897189
 value=3.204
 rarity=C
 type=Creature

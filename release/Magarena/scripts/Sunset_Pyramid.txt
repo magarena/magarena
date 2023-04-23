@@ -1,5 +1,5 @@
 name=Sunset Pyramid
-image=https://magiccards.info/scans/en/hou/166.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d346c67-744c-4605-be62-18d794e83049.jpg?1608911747
 value=2.500
 rarity=U
 type=Artifact

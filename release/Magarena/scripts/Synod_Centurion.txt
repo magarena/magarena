@@ -1,5 +1,5 @@
 name=Synod Centurion
-image=https://magiccards.info/scans/en/5dn/161.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e2c0a63-5128-408a-bf95-2489b92817a9.jpg?1562270235
 image_updated=2016-01-09
 value=3.741
 rarity=U

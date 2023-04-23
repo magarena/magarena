@@ -1,5 +1,5 @@
 name=Back to Basics
-image=https://magiccards.info/scans/en/us/62.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/0600d6c2-0f72-4e79-a55d-1f06dffa48c2.jpg?1654805483
 value=4.585
 rarity=R
 type=Enchantment

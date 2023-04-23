@@ -1,5 +1,5 @@
 name=Balduvian Bears
-image=https://magiccards.info/scans/en/ia/114.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef5297cb-e763-4871-9cd3-0e2dbcc52095.jpg?1587911972
 value=3.118
 rarity=C
 type=Creature

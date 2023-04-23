@@ -1,5 +1,5 @@
 name=Woodborn Behemoth
-image=https://magiccards.info/scans/en/m14/203.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2e49925-a4ab-4960-ad83-20583dcd2c2c.jpg?1601080339
 value=3.629
 rarity=U
 type=Creature

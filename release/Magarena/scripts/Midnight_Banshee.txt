@@ -1,5 +1,5 @@
 name=Midnight Banshee
-image=https://magiccards.info/scans/en/mm2/86.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7da8f15-ea21-46fd-b24f-f8af4d5d5f1d.jpg?1562267341
 value=3.948
 rarity=R
 type=Creature

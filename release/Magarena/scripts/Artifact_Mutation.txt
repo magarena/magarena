@@ -1,5 +1,5 @@
 name=Artifact Mutation
-image=https://magiccards.info/scans/en/c16/179.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fed09083-a259-4ab5-bb85-aeab9d0b1f7c.jpg?1673484935
 image_updated=2017-08-17
 value=4.532
 removal=1

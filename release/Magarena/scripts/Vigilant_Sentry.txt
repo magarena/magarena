@@ -1,5 +1,5 @@
 name=Vigilant Sentry
-image=https://magiccards.info/scans/en/ju/33.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3790282-ea04-4600-8912-dac541ffd081.jpg?1562631851
 value=2.841
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sai of the Shinobi
-image=https://magiccards.info/scans/en/a25/230.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b77812f-fe6c-4d26-9c34-c51cb05fd43a.jpg?1562436550
 image_updated=2018-04-27
 value=3.357
 rarity=U

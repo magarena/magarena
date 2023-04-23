@@ -1,5 +1,5 @@
 name=Hammerfist Giant
-image=https://magiccards.info/scans/en/rav/130.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fc5a36a-b572-4689-84b9-c5fb87d954c2.jpg?1562273886
 image_updated=2016-02-29
 value=3.485
 rarity=R

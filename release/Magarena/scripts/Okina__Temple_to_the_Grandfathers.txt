@@ -1,5 +1,5 @@
 name=Okina, Temple to the Grandfathers
-image=https://magiccards.info/scans/en/chk/280.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee8cf7aa-388c-47ec-be59-6ba98f3853cb.jpg?1562765617
 value=4.029
 rarity=R
 type=Legendary,Land

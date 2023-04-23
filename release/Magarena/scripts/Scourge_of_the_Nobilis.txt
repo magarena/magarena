@@ -1,5 +1,5 @@
 name=Scourge of the Nobilis
-image=https://magiccards.info/scans/en/eve/146.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6adccc97-3774-4c57-aa78-dcb9fbbe9324.jpg?1562917352
 value=4.068
 rarity=C
 type=Enchantment

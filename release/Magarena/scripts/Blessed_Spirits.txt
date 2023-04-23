@@ -1,5 +1,5 @@
 name=Blessed Spirits
-image=https://magiccards.info/scans/en/ori/7.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f060a74-dd75-4625-8842-27cb13a279e6.jpg?1600716749
 image_updated=2015-11-05
 value=2.500
 rarity=U

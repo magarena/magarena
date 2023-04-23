@@ -1,5 +1,5 @@
 name=Eladamri's Call
-image=https://magiccards.info/scans/en/a25/203.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea751fe2-b64a-4265-8885-a9016b29b5b3.jpg?1562202300
 image_updated=2018-04-27
 value=4.284
 rarity=R

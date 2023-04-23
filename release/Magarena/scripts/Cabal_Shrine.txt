@@ -1,5 +1,5 @@
 name=Cabal Shrine
-image=https://magiccards.info/scans/en/od/121.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd376a52-5dfd-49f3-a520-537cd4527439.jpg?1562936233
 value=1.732
 rarity=R
 type=Enchantment

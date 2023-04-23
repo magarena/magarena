@@ -1,5 +1,5 @@
 name=Albino Troll
-image=https://magiccards.info/scans/en/us/231.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/114fefca-8472-4c09-ae61-75d300d6e681.jpg?1562899162
 image_updated=2016-11-20
 value=3.902
 rarity=U

@@ -1,5 +1,5 @@
 name=Warped Landscape
-image=https://magiccards.info/scans/en/soi/280.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d313741-af67-47fd-9beb-8abc7d554715.jpg?1592711754
 value=2.500
 rarity=C
 type=Land

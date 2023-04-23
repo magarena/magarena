@@ -1,5 +1,5 @@
 name=Burning Oil
-image=https://magiccards.info/scans/en/dka/84.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47773da8-afe4-43e1-8355-6ab51451ee00.jpg?1562911725
 value=3.122
 rarity=U
 type=Instant

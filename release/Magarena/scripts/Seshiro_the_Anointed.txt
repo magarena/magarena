@@ -1,5 +1,5 @@
 name=Seshiro the Anointed
-image=https://magiccards.info/scans/en/chk/241.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3823e561-5a0a-4020-9322-a2b481499807.jpg?1562759347
 value=4.045
 rarity=R
 type=Legendary,Creature

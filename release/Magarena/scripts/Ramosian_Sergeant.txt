@@ -1,5 +1,5 @@
 name=Ramosian Sergeant
-image=https://magiccards.info/scans/en/mm/39.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef2b036d-5721-4a6e-bf43-69148b90da10.jpg?1562383981
 value=4.244
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spike Soldier
-image=https://magiccards.info/scans/en/sh/69.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa45664c-ac39-40f8-9f56-cf25ed60a84a.jpg?1562597344
 value=3.532
 rarity=U
 type=Creature

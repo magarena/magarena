@@ -1,5 +1,5 @@
 name=Thalia, Heretic Cathar
-image=https://magiccards.info/scans/en/emn/46.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab0cee38-5e24-49d0-870c-22843ed4e101.jpg?1576384009
 image_updated=2016-09-05
 value=2.500
 rarity=R

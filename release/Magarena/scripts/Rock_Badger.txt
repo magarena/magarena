@@ -1,5 +1,5 @@
 name=Rock Badger
-image=https://magiccards.info/scans/en/10e/226.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49dc08b0-491f-470c-b920-2ca961d0d569.jpg?1562547199
 value=1.818
 rarity=C
 type=Creature

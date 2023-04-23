@@ -1,5 +1,5 @@
 name=Belltoll Dragon
-image=https://magiccards.info/scans/en/dtk/46.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97e8fba0-fcb4-440c-9442-92278e21c5e9.jpg?1562790321
 value=2.500
 rarity=U
 type=Creature

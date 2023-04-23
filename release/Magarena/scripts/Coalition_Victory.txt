@@ -1,5 +1,5 @@
 name=Coalition Victory
-image=https://magiccards.info/scans/en/tsts/91.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/446824f7-dc42-42da-8bd5-6c37f3358d65.jpg?1562775464
 value=4.080
 rarity=R
 type=Sorcery

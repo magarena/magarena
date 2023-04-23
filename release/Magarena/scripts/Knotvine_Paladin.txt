@@ -1,5 +1,5 @@
 name=Knotvine Paladin
-image=https://magiccards.info/scans/en/arb/71.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4ed9e062-f9aa-4f89-bfb4-cfecae426b27.jpg?1562911519
 value=3.430
 rarity=R
 type=Creature

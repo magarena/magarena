@@ -1,5 +1,5 @@
 name=Elite Scaleguard
-image=https://magiccards.info/scans/en/c16/65.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af5b1e9e-8342-442d-8305-d9a2c5845ed5.jpg?1682208379
 image_updated=2017-08-17
 value=2.500
 rarity=U

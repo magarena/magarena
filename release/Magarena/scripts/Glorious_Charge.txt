@@ -1,5 +1,5 @@
 name=Glorious Charge
-image=https://magiccards.info/scans/en/m13/15.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8672cfd-e34b-4587-9e24-015e03c7574d.jpg?1562562109
 value=2.088
 rarity=C
 type=Instant

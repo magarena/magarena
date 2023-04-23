@@ -1,5 +1,5 @@
 name=Dazzling Beauty
-image=https://magiccards.info/scans/en/mr/212.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad0ece98-5506-4a18-b900-8d1a6cd87385.jpg?1562720971
 value=2.611
 rarity=C
 type=Instant

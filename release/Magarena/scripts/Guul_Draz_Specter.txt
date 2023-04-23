@@ -1,5 +1,5 @@
 name=Guul Draz Specter
-image=https://magiccards.info/scans/en/cn2/137.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edb0546f-f893-460c-8af4-79b24c373ebe.jpg?1576382660
 image_updated=2017-08-29
 value=3.867
 rarity=R

@@ -1,5 +1,5 @@
 name=Ogre Battledriver
-image=https://magiccards.info/scans/en/m14/148.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/180f4220-bd76-4a2f-b9e1-414729cd1db2.jpg?1592754671
 image_updated=2017-01-03
 value=3.636
 rarity=R

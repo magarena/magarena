@@ -1,5 +1,5 @@
 name=Strength of Lunacy
-image=https://magiccards.info/scans/en/tr/86.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afda26e7-4fdd-45e1-bcd1-f0abf91979aa.jpg?1562631561
 value=3.783
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Goblin Assault
-image=https://magiccards.info/scans/en/mm3/95.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/473fb06e-5c71-4370-a5d7-7753d84d0fd6.jpg?1593813462
 image_updated=2017-08-08
 value=2.976
 rarity=U

@@ -1,5 +1,5 @@
 name=Meltdown
-image=https://magiccards.info/scans/en/us/203.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e7a967a-35a0-4e5c-a32b-123a9cfdb79e.jpg?1562928443
 value=3.771
 rarity=U
 type=Sorcery

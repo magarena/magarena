@@ -1,5 +1,5 @@
 name=Fencing Ace
-image=https://magiccards.info/scans/en/a25/13.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86d8754c-816f-4d07-8dcd-9611bf0beb87.jpg?1608908768
 image_updated=2018-04-27
 value=3.967
 rarity=C

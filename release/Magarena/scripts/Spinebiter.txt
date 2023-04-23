@@ -1,5 +1,5 @@
 name=Spinebiter
-image=https://magiccards.info/scans/en/nph/121.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfc79ac6-ffc6-4506-9dea-e20176f960ea.jpg?1562881679
 value=3.331
 rarity=U
 type=Creature

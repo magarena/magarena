@@ -1,5 +1,5 @@
 name=Fallen Ferromancer
-image=https://magiccards.info/scans/en/nph/82.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b200986-f553-4156-8f5e-37678db09687.jpg?1562878979
 value=3.099
 rarity=U
 type=Creature

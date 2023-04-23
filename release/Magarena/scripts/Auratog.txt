@@ -1,5 +1,5 @@
 name=Auratog
-image=https://magiccards.info/scans/en/tsts/2.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a63fab4-8e9d-4972-9e3d-51ce8575535b.jpg?1562779594
 value=3.553
 rarity=R
 type=Creature

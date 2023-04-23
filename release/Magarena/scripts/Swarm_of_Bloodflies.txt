@@ -1,5 +1,5 @@
 name=Swarm of Bloodflies
-image=https://magiccards.info/scans/en/ktk/92.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9fb56fc-47a4-44ba-8b55-4d0ceb8ce62f.jpg?1600701631
 value=3.000
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Fireslinger
-image=https://magiccards.info/scans/en/tp/173.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87f8a822-5f41-4742-81e1-c78dc437b3d0.jpg?1562378455
 image_updated=2016-12-02
 value=3.457
 rarity=C

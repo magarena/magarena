@@ -1,5 +1,5 @@
 name=Pharika's Mender
-image=https://magiccards.info/scans/en/cn2/205.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5deaa491-d95b-481f-aa47-8e7219174cc5.jpg?1576383214
 image_updated=2017-01-03
 value=3.526
 rarity=U

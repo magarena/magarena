@@ -1,5 +1,5 @@
 name=Ghitu Encampment
-image=https://magiccards.info/scans/en/10e/353.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6af3085-a24c-4a76-b4c0-a27a50993f1c.jpg?1592754773
 image_updated=2016-12-03
 value=3.649
 rarity=U

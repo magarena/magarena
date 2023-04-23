@@ -1,5 +1,5 @@
 name=Security Detail
-image=https://magiccards.info/scans/en/mm/47.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b89d34b-1a67-4f5c-a731-54b56c5233ff.jpg?1562380880
 value=0.917
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Norwood Warrior
-image=https://magiccards.info/scans/en/po2/80.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f7ddf0a-1081-4ae0-ab91-b052153bab4c.jpg?1562921273
 value=2.692
 rarity=C
 type=Creature

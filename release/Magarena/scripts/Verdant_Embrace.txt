@@ -1,5 +1,5 @@
 name=Verdant Embrace
-image=https://magiccards.info/scans/en/ts/232.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57233676-f03f-4739-a1fb-8fed7e6c649f.jpg?1631588232
 value=3.738
 rarity=R
 type=Enchantment

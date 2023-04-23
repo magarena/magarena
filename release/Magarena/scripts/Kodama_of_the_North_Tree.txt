@@ -1,5 +1,5 @@
 name=Kodama of the North Tree
-image=https://magiccards.info/scans/en/chk/222.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d9b5c33-63c4-4ddd-9f04-37bb36970b43.jpg?1562758876
 value=3.959
 rarity=R
 type=Legendary,Creature

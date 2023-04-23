@@ -1,5 +1,5 @@
 name=Vampiric Rites
-image=https://magiccards.info/scans/en/bfz/124.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df9947ed-de58-4172-91df-82a93584e6fe.jpg?1673147700
 image_updated=2015-11-08
 value=2.500
 rarity=U

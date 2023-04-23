@@ -1,5 +1,5 @@
 name=Rimewind Taskmage
-image=https://magiccards.info/scans/en/cs/44.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9cdc06e-1458-4b19-a272-28a3d0453643.jpg?1593274996
 value=3.197
 rarity=C
 type=Creature

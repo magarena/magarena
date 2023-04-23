@@ -1,5 +1,5 @@
 name=Jovial Evil
-image=https://magiccards.info/scans/en/lg/23.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c993c74c-a574-423b-81c8-96b0a7a6e529.jpg?1562860875
 value=3.295
 rarity=R
 type=Sorcery

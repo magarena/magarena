@@ -1,5 +1,5 @@
 name=Bog Wreckage
-image=https://magiccards.info/scans/en/od/314.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/189b4925-b34b-43bd-869e-1b1db99450e6.jpg?1562899643
 value=2.229
 rarity=C
 type=Land

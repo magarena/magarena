@@ -1,5 +1,5 @@
 name=Leafdrake Roost
-image=https://magiccards.info/scans/en/di/116.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f74cf11-8deb-4623-9c1e-1e86e98bd831.jpg?1592673400
 value=3.625
 rarity=U
 type=Enchantment

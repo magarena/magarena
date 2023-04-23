@@ -1,5 +1,5 @@
 name=Skyhunter Skirmisher
-image=https://magiccards.info/scans/en/mm2/32.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adbf772f-ebdf-4c04-996f-0dbf1826049b.jpg?1562266176
 image_updated=2015-11-05
 value=3.931
 rarity=C

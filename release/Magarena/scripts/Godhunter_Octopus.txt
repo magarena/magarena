@@ -1,5 +1,5 @@
 name=Godhunter Octopus
-image=https://magiccards.info/scans/en/jou/39.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da106c23-fd1c-461b-9301-159f93ef489b.jpg?1593095444
 value=1.841
 rarity=C
 type=Creature

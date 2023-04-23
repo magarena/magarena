@@ -1,5 +1,5 @@
 name=Voice of Resurgence
-image=https://magiccards.info/scans/en/mm3/200.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99d1e843-71c9-4a65-bc36-d23858ef5ead.jpg?1599708569
 image_updated=2017-08-08
 value=4.312
 rarity=M

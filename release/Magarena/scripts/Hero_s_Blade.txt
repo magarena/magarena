@@ -1,5 +1,5 @@
 name=Hero's Blade
-image=https://magiccards.info/scans/en/frf/160.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/792600fb-7e8b-4a0f-8a59-93b00d4509ce.jpg?1673305816
 value=2.500
 rarity=U
 type=Artifact

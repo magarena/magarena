@@ -1,5 +1,5 @@
 name=Regal Caracal
-image=https://magiccards.info/scans/en/akh/24.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd349f95-3eae-4ef2-abf8-e911bb8e93e5.jpg?1543674734
 value=2.500
 rarity=R
 type=Creature

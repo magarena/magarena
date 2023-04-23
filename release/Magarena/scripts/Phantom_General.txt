@@ -1,5 +1,5 @@
 name=Phantom General
-image=https://magiccards.info/scans/en/rtr/16.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bd4af62-ed1e-47be-991b-0ce984a7b321.jpg?1592714264
 image_updated=2017-01-03
 value=3.385
 rarity=U

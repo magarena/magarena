@@ -1,5 +1,5 @@
 name=Marchesa's Decree
-image=https://magiccards.info/scans/en/cn2/44.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/413bec4e-e2ce-46f1-b038-6e359cd78b53.jpg?1576381842
 image_updated=2016-09-05
 value=2.500
 rarity=U

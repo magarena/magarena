@@ -1,5 +1,5 @@
 name=Copper Tablet
-image=https://magiccards.info/scans/en/un/239.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f953fa1a-14ea-46db-9a28-7375f0528335.jpg?1559592485
 value=2.324
 rarity=U
 type=Artifact

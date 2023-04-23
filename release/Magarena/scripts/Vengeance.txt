@@ -1,5 +1,5 @@
 name=Vengeance
-image=https://magiccards.info/scans/en/9eb/2.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/314e7a88-d721-490f-8b62-23ce58092be8.jpg?1562733333
 image_updated=2015-05-22
 value=2.662
 removal=3

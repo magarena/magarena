@@ -1,5 +1,5 @@
 name=Maro
-image=https://magiccards.info/scans/en/9e/254.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/9159e250-4eec-4ec4-80e1-42259331b3b9.jpg?1562738549
 value=3.664
 rarity=R
 type=Creature

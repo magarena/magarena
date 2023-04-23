@@ -1,5 +1,5 @@
 name=Rise of Eagles
-image=https://magiccards.info/scans/en/jou/49.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3b5b278-b883-4703-9bfa-bab5a6da4660.jpg?1593095526
 value=2.738
 rarity=C
 type=Sorcery

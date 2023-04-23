@@ -1,5 +1,5 @@
 name=Blighted Fen
-image=https://magiccards.info/scans/en/bfz/230.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29d02950-cd50-4662-97af-3106598dc3c4.jpg?1562904893
 image_updated=2015-11-08
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Stone Rain
-image=https://magiccards.info/scans/en/9e/221.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2334c10-fa96-4f8e-8187-c7ecc00cbac8.jpg?1562742139
 value=4.060
 removal=3
 rarity=C

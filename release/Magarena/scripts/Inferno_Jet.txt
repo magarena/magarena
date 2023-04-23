@@ -1,5 +1,5 @@
 name=Inferno Jet
-image=https://magiccards.info/scans/en/hou/99.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c6a43fe-369d-4943-a825-570eb3cceba4.jpg?1562788752
 value=2.500
 rarity=U
 type=Sorcery

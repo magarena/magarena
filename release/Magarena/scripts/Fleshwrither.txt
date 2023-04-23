@@ -1,5 +1,5 @@
 name=Fleshwrither
-image=https://magiccards.info/scans/en/fut/84.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08e1a646-6925-4a53-a99c-8951af016a7a.jpg?1562896768
 value=3.520
 rarity=U
 type=Creature

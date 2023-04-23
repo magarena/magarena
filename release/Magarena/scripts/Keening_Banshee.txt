@@ -1,5 +1,5 @@
 name=Keening Banshee
-image=https://magiccards.info/scans/en/rav/92.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80031bc4-28a8-4f57-916f-fcf01dc252f9.jpg?1562925176
 image_updated=2016-12-21
 value=3.212
 rarity=U

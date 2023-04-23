@@ -1,5 +1,5 @@
 name=Feral Invocation
-image=https://magiccards.info/scans/en/ths/158.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/190ad379-1a0f-4598-b5b1-453955846597.jpg?1601082585
 value=3.370
 rarity=C
 type=Enchantment

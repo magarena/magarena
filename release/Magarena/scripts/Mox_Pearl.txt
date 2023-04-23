@@ -1,5 +1,5 @@
 name=Mox Pearl
-image=https://magiccards.info/scans/en/un/264.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed0216a0-c5c9-4a99-b869-53e4d0256326.jpg?1614638847
 value=4.875
 rarity=R
 type=Artifact

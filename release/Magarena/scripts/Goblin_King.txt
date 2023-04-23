@@ -1,5 +1,5 @@
 name=Goblin King
-image=https://magiccards.info/scans/en/10e/207.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b266935-25ea-49c5-a1da-57c22a4362fd.jpg?1562547272
 value=4.177
 rarity=R
 type=Creature

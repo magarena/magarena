@@ -1,5 +1,5 @@
 name=Hunted Horror
-image=https://magiccards.info/scans/en/rav/90.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02f74866-d0ea-42ce-bc44-500219fb73d4.jpg?1674141672
 value=4.070
 rarity=R
 type=Creature

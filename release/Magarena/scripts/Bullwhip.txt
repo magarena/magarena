@@ -1,5 +1,5 @@
 name=Bullwhip
-image=https://magiccards.info/scans/en/sh/126.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff312dd7-456c-4ce5-9614-e2cbe3c2219c.jpg?1562597857
 value=3.323
 rarity=U
 type=Artifact

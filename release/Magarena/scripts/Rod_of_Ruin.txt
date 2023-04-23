@@ -1,5 +1,5 @@
 name=Rod of Ruin
-image=https://magiccards.info/scans/en/m10/219.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a0e90b8-bc38-4e1c-92ca-ac562cc57e31.jpg?1562832749
 value=1.406
 rarity=U
 type=Artifact

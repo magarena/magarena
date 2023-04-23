@@ -1,5 +1,5 @@
 name=Dwarven Patrol
-image=https://magiccards.info/scans/en/ap/61.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03c08df5-f5e7-4498-ac80-25ccbe304b26.jpg?1562895948
 value=2.735
 rarity=U
 type=Creature

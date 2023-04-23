@@ -1,5 +1,5 @@
 name=Temple of Malice
-image=https://magiccards.info/scans/en/bng/164.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b5d626b-c04e-4573-ab07-cf0143baa8b7.jpg?1673306249
 value=3.774
 rarity=R
 type=Land

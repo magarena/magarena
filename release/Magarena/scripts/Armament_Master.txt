@@ -1,5 +1,5 @@
 name=Armament Master
-image=https://magiccards.info/scans/en/zen/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/975f7752-e981-4046-ae9b-90b20db6b23a.jpg?1562614596
 value=3.898
 rarity=R
 type=Creature

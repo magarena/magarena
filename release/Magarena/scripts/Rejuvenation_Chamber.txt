@@ -1,5 +1,5 @@
 name=Rejuvenation Chamber
-image=https://magiccards.info/scans/en/ne/137.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b97f86ce-4758-4ae3-af29-b08a4d771652.jpg?1562631696
 value=1.672
 rarity=U
 type=Artifact

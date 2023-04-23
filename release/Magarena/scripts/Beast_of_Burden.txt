@@ -1,5 +1,5 @@
 name=Beast of Burden
-image=https://magiccards.info/scans/en/9e/288.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1a19f6d-4fab-4be6-af9e-c66acc16e4f8.jpg?1562742971
 value=3.517
 rarity=R
 type=Artifact,Creature

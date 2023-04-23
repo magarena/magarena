@@ -1,5 +1,5 @@
 name=Bandage
-image=https://magiccards.info/scans/en/10e/9.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89dbe086-4c03-448f-a346-49bc08d02705.jpg?1562430336
 value=2.268
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Pulmonic Sliver
-image=https://magiccards.info/scans/en/ts/36.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc4eb560-97a7-4f5f-bf12-1f9e1be63095.jpg?1619393310
 value=4.100
 rarity=R
 type=Creature

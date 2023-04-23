@@ -1,5 +1,5 @@
 name=Boggart Birth Rite
-image=https://magiccards.info/scans/en/lw/101.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bb4916d-ab50-45c9-bf7e-e7a7e761aef4.jpg?1562339943
 value=3.067
 rarity=C
 type=Tribal,Sorcery

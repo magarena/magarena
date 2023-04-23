@@ -1,5 +1,5 @@
 name=Sovereign's Bite
-image=https://magiccards.info/scans/en/m19/120.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5326d251-bb91-4653-b1fa-44f14c4e0b88.jpg?1562302173
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Vitu-Ghazi, the City-Tree
-image=https://magiccards.info/scans/en/pc2/130.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33145080-077e-4231-96ca-e8b1852b6380.jpg?1631590569
 value=3.812
 rarity=U
 type=Land

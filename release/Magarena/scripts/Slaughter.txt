@@ -1,5 +1,5 @@
 name=Slaughter
-image=https://magiccards.info/scans/en/ex/74.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8ff06c7d-5e78-4bcf-864b-34487f6555b2.jpg?1562088317
 value=3.593
 rarity=U
 type=Instant

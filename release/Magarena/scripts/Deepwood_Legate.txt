@@ -1,5 +1,5 @@
 name=Deepwood Legate
-image=https://magiccards.info/scans/en/mm/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54f01925-7fd0-472d-91a4-3309e615f22f.jpg?1562380866
 value=3.784
 rarity=U
 type=Creature

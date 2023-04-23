@@ -1,5 +1,5 @@
 name=Rootborn Defenses
-image=https://magiccards.info/scans/en/mm3/21.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecfcf55c-44d8-4585-9722-e91993e41888.jpg?1673996344
 image_updated=2017-08-08
 value=3.822
 rarity=C

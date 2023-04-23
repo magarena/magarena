@@ -1,5 +1,5 @@
 name=Tidings
-image=https://magiccards.info/scans/en/10e/116.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a123f44-0a72-46d0-a73d-b4ab01b6c2df.jpg?1592710676
 value=4.177
 rarity=U
 type=Sorcery

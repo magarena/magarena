@@ -1,5 +1,5 @@
 name=Impale
-image=https://magiccards.info/scans/en/rix/76.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfa0c4f7-3497-467d-9453-104fb4b5a0f3.jpg?1555040252
 value=2.500
 rarity=C
 type=Sorcery

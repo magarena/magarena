@@ -1,5 +1,5 @@
 name=Heirs of Stromkirk
-image=https://magiccards.info/scans/en/avr/140.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff89ad3b-b154-49e2-a0fd-135279512250.jpg?1592709108
 value=2.947
 rarity=C
 type=Creature

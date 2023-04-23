@@ -1,5 +1,5 @@
 name=Jade Guardian
-image=https://magiccards.info/scans/en/xln/194.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/aca83e48-6e32-477f-8714-6103e77c06df.jpg?1562561992
 value=2.500
 rarity=C
 type=Creature

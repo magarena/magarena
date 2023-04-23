@@ -1,5 +1,5 @@
 name=Root Out
-image=https://magiccards.info/scans/en/soi/224.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/228a08f0-6664-407a-a74c-2c32badc0d37.jpg?1682209612
 value=2.500
 rarity=C
 type=Sorcery

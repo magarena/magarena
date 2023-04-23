@@ -1,5 +1,5 @@
 name=Throne of the God-Pharaoh
-image=https://magiccards.info/scans/en/akh/237.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe402b8e-f966-4971-90a5-950d8cff5025.jpg?1543676336
 value=2.500
 rarity=R
 type=Legendary,Artifact

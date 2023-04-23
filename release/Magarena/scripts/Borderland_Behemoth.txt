@@ -1,5 +1,5 @@
 name=Borderland Behemoth
-image=https://magiccards.info/scans/en/mt/87.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4cbde6a-fbc8-403a-98ad-769d25aa4732.jpg?1562276469
 image_updated=2016-02-29
 value=3.691
 rarity=R

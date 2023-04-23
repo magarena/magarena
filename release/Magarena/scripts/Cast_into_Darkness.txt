@@ -1,5 +1,5 @@
 name=Cast into Darkness
-image=https://magiccards.info/scans/en/jou/63.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c1880d4-90c7-46a2-bbc9-d2b52971d11c.jpg?1593095651
 value=1.950
 rarity=C
 type=Enchantment

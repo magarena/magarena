@@ -1,5 +1,5 @@
 name=Infernal Contract
-image=https://magiccards.info/scans/en/7e/143.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f451a70f-1f1c-4fd6-ab0c-4b77a043c324.jpg?1562251306
 value=3.551
 rarity=R
 type=Sorcery

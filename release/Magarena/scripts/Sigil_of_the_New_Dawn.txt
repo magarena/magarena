@@ -1,5 +1,5 @@
 name=Sigil of the New Dawn
-image=https://magiccards.info/scans/en/on/55.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64393586-42c6-4874-9473-85c63c7ed2ad.jpg?1547515867
 value=4.160
 rarity=R
 type=Enchantment

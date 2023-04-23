@@ -1,5 +1,5 @@
 name=Deception
-image=https://magiccards.info/scans/en/p3k/73.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdb63768-2d8a-4a74-a312-b981dd462cdc.jpg?1562257524
 value=2.783
 rarity=C
 type=Sorcery

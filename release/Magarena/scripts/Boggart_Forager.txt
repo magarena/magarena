@@ -1,5 +1,5 @@
 name=Boggart Forager
-image=https://magiccards.info/scans/en/lw/154.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbc26374-d8de-4740-b1ec-ac92cfedbebc.jpg?1562375843
 value=2.054
 rarity=C
 type=Creature

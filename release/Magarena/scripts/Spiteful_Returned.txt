@@ -1,5 +1,5 @@
 name=Spiteful Returned
-image=https://magiccards.info/scans/en/bng/84.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/017e8cfb-7cb0-403c-b8be-abee22369661.jpg?1593092115
 value=3.812
 rarity=U
 type=Enchantment,Creature

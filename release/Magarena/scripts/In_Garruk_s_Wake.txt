@@ -1,5 +1,5 @@
 name=In Garruk's Wake
-image=https://magiccards.info/scans/en/c16/113.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57a6f727-8239-45e6-9dbb-67d2d3c9239d.jpg?1674141682
 image_updated=2017-08-17
 value=3.071
 rarity=R

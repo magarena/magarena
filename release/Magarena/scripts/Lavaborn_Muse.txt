@@ -1,5 +1,5 @@
 name=Lavaborn Muse
-image=https://magiccards.info/scans/en/10e/216.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9ac12fe-f895-4450-8516-1feb6a48f1bc.jpg?1592714515
 image_updated=2016-12-21
 value=3.400
 rarity=R

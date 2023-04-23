@@ -1,5 +1,5 @@
 name=Agent of Masks
-image=https://magiccards.info/scans/en/mm3/149.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d6ace1f-c056-494d-a41f-75efa54312a5.jpg?1598135337
 image_updated=2017-08-08
 value=3.036
 rarity=U

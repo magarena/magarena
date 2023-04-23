@@ -1,5 +1,5 @@
 name=Canyon Lurkers
-image=https://magiccards.info/scans/en/ktk/105.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef6c56d1-6eca-43be-9834-0478bea67b48.jpg?1562795756
 value=1.875
 rarity=C
 type=Creature

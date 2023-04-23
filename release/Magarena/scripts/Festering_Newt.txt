@@ -1,5 +1,5 @@
 name=Festering Newt
-image=https://magiccards.info/scans/en/ima/90.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9d7d31e-eaa7-4edf-8e98-5a191ec3b91d.jpg?1600700327
 image_updated=2017-04-12
 value=3.573
 rarity=C

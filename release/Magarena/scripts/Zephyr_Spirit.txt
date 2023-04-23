@@ -1,5 +1,5 @@
 name=Zephyr Spirit
-image=https://magiccards.info/scans/en/rav/76.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6cbe78f-4325-416b-bf23-282efed5b407.jpg?1598914641
 value=0.858
 rarity=C
 type=Creature

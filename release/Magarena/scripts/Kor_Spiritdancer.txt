@@ -1,5 +1,5 @@
 name=Kor Spiritdancer
-image=https://magiccards.info/scans/en/pc2/9.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59813c47-e779-404d-8a1c-70ea29bc7023.jpg?1600718299
 value=4.100
 rarity=R
 type=Creature

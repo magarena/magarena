@@ -1,5 +1,5 @@
 name=Llanowar Behemoth
-image=https://magiccards.info/scans/en/9e/252.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f47054d9-ab6c-4d66-8744-b458721a6c98.jpg?1562743992
 value=3.732
 rarity=U
 type=Creature

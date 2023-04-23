@@ -1,5 +1,5 @@
 name=Dragonlair Spider
-image=https://magiccards.info/scans/en/cn2/201.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9e2bb08-9be0-4046-9c22-7b132ce5f506.jpg?1562926727
 image_updated=2017-08-29
 value=3.812
 rarity=R

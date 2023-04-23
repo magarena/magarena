@@ -1,5 +1,5 @@
 name=Samite Pilgrim
-image=https://magiccards.info/scans/en/ps/15.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c12529e4-f4b1-45be-8252-28783badbec5.jpg?1562935844
 value=3.261
 rarity=C
 type=Creature

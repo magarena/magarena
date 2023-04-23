@@ -1,5 +1,5 @@
 name=Nectar Faerie
-image=https://magiccards.info/scans/en/lw/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d943b877-805d-4bc8-a3ae-abec00fa51a6.jpg?1562370535
 value=3.114
 rarity=U
 type=Creature

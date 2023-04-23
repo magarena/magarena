@@ -1,5 +1,5 @@
 name=Rout
-image=https://magiccards.info/scans/en/cns/80.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15ce585a-67fc-4e7a-92ff-a27292179dfa.jpg?1625975558
 value=4.421
 rarity=R
 type=Sorcery

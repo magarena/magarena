@@ -1,5 +1,5 @@
 name=Extra Arms
-image=https://magiccards.info/scans/en/sc/92.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28efa11c-6aeb-4c22-bbb3-b41f26d65c65.jpg?1562526643
 value=2.833
 rarity=U
 type=Enchantment

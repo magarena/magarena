@@ -1,5 +1,5 @@
 name=Wasteland
-image=https://magiccards.info/scans/en/ema/248.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aaafb9bc-7cea-4624-a227-595544fa42b0.jpg?1590511888
 value=4.585
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Somberwald Spider
-image=https://magiccards.info/scans/en/isd/202.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43003ad7-2f42-4c85-8b00-77cbf3f50a7b.jpg?1562829185
 value=2.605
 rarity=C
 type=Creature

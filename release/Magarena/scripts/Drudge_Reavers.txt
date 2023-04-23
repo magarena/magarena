@@ -1,5 +1,5 @@
 name=Drudge Reavers
-image=https://magiccards.info/scans/en/ts/105.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03c07d9a-afed-4028-9fa1-ec439b60f08f.jpg?1562895748
 value=2.760
 rarity=C
 type=Creature

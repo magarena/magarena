@@ -1,5 +1,5 @@
 name=Monsoon
-image=https://magiccards.info/scans/en/ia/376.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/254fcc50-79a5-40cd-b028-e78dde3f8480.jpg?1587912111
 value=3.044
 rarity=R
 type=Enchantment

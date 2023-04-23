@@ -1,5 +1,5 @@
 name=Jwar Isle Refuge
-image=https://magiccards.info/scans/en/c17/258.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d103181-25a1-4928-ac37-adf11038d5b5.jpg?1604196304
 image_updated=2017-10-03
 value=3.312
 rarity=U

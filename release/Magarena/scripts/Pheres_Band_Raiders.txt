@@ -1,5 +1,5 @@
 name=Pheres-Band Raiders
-image=https://magiccards.info/scans/en/bng/133.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80856020-f569-4d73-8c44-7b48535a69e8.jpg?1593092589
 value=3.636
 rarity=U
 type=Creature

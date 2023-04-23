@@ -1,5 +1,5 @@
 name=Time Stretch
-image=https://magiccards.info/scans/en/10e/118.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c878780-f666-44ab-a60e-c9985f628fc3.jpg?1562546496
 value=4.257
 rarity=R
 type=Sorcery

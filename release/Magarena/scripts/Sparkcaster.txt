@@ -1,5 +1,5 @@
 name=Sparkcaster
-image=https://magiccards.info/scans/en/ps/126.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daf442b3-fa39-4f6a-90a0-22dcd9df649c.jpg?1562941246
 value=3.817
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wave of Reckoning
-image=https://magiccards.info/scans/en/c16/79.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27d6655d-f55c-4bfc-a9c6-10232ebc707b.jpg?1562392689
 image_updated=2017-08-17
 value=3.844
 rarity=R

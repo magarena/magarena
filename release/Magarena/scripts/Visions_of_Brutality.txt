@@ -1,5 +1,5 @@
 name=Visions of Brutality
-image=https://magiccards.info/scans/en/ogw/81.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec9ed374-54ad-4b81-b071-0b4668feb282.jpg?1562942529
 image_updated=2016-02-29
 value=2.500
 rarity=U

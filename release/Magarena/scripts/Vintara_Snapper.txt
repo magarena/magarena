@@ -1,5 +1,5 @@
 name=Vintara Snapper
-image=https://magiccards.info/scans/en/pr/132.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/897edf01-fc6f-4835-b025-c137d921ce09.jpg?1562920508
 value=3.107
 rarity=U
 type=Creature

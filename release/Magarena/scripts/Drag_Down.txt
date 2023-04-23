@@ -1,5 +1,5 @@
 name=Drag Down
-image=https://magiccards.info/scans/en/mma/80.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b2f3899-2e2e-418f-b3e7-74426d6255f4.jpg?1561966894
 value=2.200
 rarity=C
 type=Instant

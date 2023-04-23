@@ -1,5 +1,5 @@
 name=Selfless Spirit
-image=https://magiccards.info/scans/en/emn/40.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef8d8d0c-cb0e-4745-a0fb-d556c9324428.jpg?1674141209
 image_updated=2016-09-05
 value=2.500
 rarity=R

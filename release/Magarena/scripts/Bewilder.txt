@@ -1,5 +1,5 @@
 name=Bewilder
-image=https://magiccards.info/scans/en/ima/43.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9aa1ab5-0085-4043-8272-64e10f3dcf2a.jpg?1619393786
 image_updated=2017-04-12
 value=1.288
 rarity=C

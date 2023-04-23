@@ -1,5 +1,5 @@
 name=Aven Smokeweaver
-image=https://magiccards.info/scans/en/od/64.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57f5d024-f137-4ea8-be02-7de46dee95fd.jpg?1562911193
 value=3.091
 rarity=U
 type=Creature

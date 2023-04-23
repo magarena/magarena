@@ -1,5 +1,5 @@
 name=Shaleskin Bruiser
-image=https://magiccards.info/scans/en/on/226.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc2de8a4-0d84-4f7c-bbe4-3a31172186ab.jpg?1562954767
 value=3.088
 rarity=U
 type=Creature

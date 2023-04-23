@@ -1,5 +1,5 @@
 name=Goblin Swine-Rider
-image=https://magiccards.info/scans/en/vi/81.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49980982-d534-4204-bc15-3e6c4ffa1a53.jpg?1562277459
 value=3.172
 rarity=C
 type=Creature

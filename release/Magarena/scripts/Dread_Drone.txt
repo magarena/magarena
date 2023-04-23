@@ -1,5 +1,5 @@
 name=Dread Drone
-image=https://magiccards.info/scans/en/mm2/80.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a3894e7-5740-4455-8093-57579b1549a7.jpg?1562261678
 value=2.580
 rarity=C
 type=Creature

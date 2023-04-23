@@ -1,5 +1,5 @@
 name=Roots
-image=https://magiccards.info/scans/en/ema/183.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e10e40f1-2212-402b-a1b6-31c75a2aa816.jpg?1580014898
 value=3.096
 rarity=C
 type=Enchantment

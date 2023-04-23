@@ -1,5 +1,5 @@
 name=Deranged Assistant
-image=https://magiccards.info/scans/en/isd/52.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2784c1e-1066-411f-96ea-287d60e0c115.jpg?1673147259
 value=3.774
 rarity=C
 type=Creature

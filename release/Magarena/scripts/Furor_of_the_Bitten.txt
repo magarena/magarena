@@ -1,5 +1,5 @@
 name=Furor of the Bitten
-image=https://magiccards.info/scans/en/isd/143.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb0e6279-8a66-4124-9def-fa0c83c26db9.jpg?1594736626
 value=3.205
 rarity=C
 type=Enchantment

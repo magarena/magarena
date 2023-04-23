@@ -1,5 +1,5 @@
 name=Backlash
-image=https://magiccards.info/scans/en/in/234.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dadf030d-5451-43fc-bf0c-c1629fdf88ec.jpg?1562938984
 value=4.187
 rarity=U
 type=Instant

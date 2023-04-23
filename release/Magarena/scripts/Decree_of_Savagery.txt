@@ -1,5 +1,5 @@
 name=Decree of Savagery
-image=https://magiccards.info/scans/en/sc/115.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec6d7db1-eeb2-4e9e-9a4f-488595bbcf1c.jpg?1631587861
 value=4.128
 rarity=R
 type=Instant

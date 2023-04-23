@@ -1,5 +1,5 @@
 name=Defiler of Souls
-image=https://magiccards.info/scans/en/arb/37.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16e8b418-04af-4b99-b8fd-deb1fe21a61c.jpg?1562639860
 value=3.617
 rarity=M
 type=Creature

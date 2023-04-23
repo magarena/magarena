@@ -1,5 +1,5 @@
 name=Blossoming Sands
-image=https://magiccards.info/scans/en/ema/237.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e34684d6-2935-4776-9a86-b603ad8cf624.jpg?1682205840
 value=3.250
 rarity=C
 type=Land

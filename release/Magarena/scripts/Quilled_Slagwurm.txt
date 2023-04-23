@@ -1,5 +1,5 @@
 name=Quilled Slagwurm
-image=https://magiccards.info/scans/en/mbs/89.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12c597b9-5024-42bd-b500-5ef6a3accda6.jpg?1562609734
 value=2.427
 rarity=U
 type=Creature

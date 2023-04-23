@@ -1,5 +1,5 @@
 name=Forerunner of the Coalition
-image=https://magiccards.info/scans/en/rix/72.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b499fc26-26b0-4b0f-9c62-5ed599baf41d.jpg?1555040225
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Zap
-image=https://magiccards.info/scans/en/in/180.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/7502ce01-b762-40fe-a064-c7b20b08a722.jpg?1562918451
 value=1.693
 rarity=C
 type=Instant

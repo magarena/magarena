@@ -1,5 +1,5 @@
 name=Mageta's Boon
-image=https://magiccards.info/scans/en/pr/14.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22db8a3b-413d-4f4d-b103-f50fc0415e9b.jpg?1562901450
 value=2.963
 rarity=C
 type=Enchantment

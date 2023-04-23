@@ -1,5 +1,5 @@
 name=Spirit Link
-image=https://magiccards.info/scans/en/10e/45.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22d0e011-b0e3-461d-bbf2-bb1ca77b94bd.jpg?1562544992
 value=4.023
 rarity=U
 type=Enchantment

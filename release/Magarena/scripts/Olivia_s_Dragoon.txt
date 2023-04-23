@@ -1,5 +1,5 @@
 name=Olivia's Dragoon
-image=https://magiccards.info/scans/en/emn/100.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/145d0f7a-8418-455a-aa0c-02e8c9ad7820.jpg?1547516986
 image_updated=2016-09-05
 value=2.500
 rarity=C

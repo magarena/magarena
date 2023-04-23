@@ -1,5 +1,5 @@
 name=Reservoir Walker
-image=https://magiccards.info/scans/en/aer/174.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8afe3be3-b0bc-4617-b4de-f60d14f1b91d.jpg?1576382413
 value=2.500
 rarity=C
 type=Artifact,Creature

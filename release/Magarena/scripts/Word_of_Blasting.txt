@@ -1,5 +1,5 @@
 name=Word of Blasting
-image=https://magiccards.info/scans/en/mm/228.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5362ead-9162-4160-bfa9-432f7d0e222d.jpg?1562383027
 value=2.231
 rarity=U
 type=Instant

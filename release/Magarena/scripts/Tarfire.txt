@@ -1,5 +1,5 @@
 name=Tarfire
-image=https://magiccards.info/scans/en/lw/194.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5841e5dd-2a4a-42b9-a04f-d7c5c4840d74.jpg?1592764877
 image_updated=2017-01-10
 value=4.250
 rarity=C

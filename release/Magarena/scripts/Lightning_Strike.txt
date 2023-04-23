@@ -1,5 +1,5 @@
 name=Lightning Strike
-image=https://magiccards.info/scans/en/m19/152.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d541125-bfb8-4f88-8bf3-ad7b6af7ad1d.jpg?1673307449
 image_updated=2018-08-07
 value=3.750
 rarity=U

@@ -1,5 +1,5 @@
 name=Solar Tide
-image=https://magiccards.info/scans/en/mi/24.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57ce33b6-267f-4ee8-a3f7-f41c619d0cfa.jpg?1562144484
 value=3.440
 rarity=R
 type=Sorcery

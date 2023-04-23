@@ -1,5 +1,5 @@
 name=Amphin Pathmage
-image=https://magiccards.info/scans/en/m15/45.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eafd2e27-01d0-4894-886e-2b8776904ab9.jpg?1593860830
 value=3.071
 rarity=C
 type=Creature

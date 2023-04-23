@@ -1,5 +1,5 @@
 name=Lagonna-Band Trailblazer
-image=https://magiccards.info/scans/en/jou/14.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38a6f533-6acb-4c24-ae9d-fe4977230156.jpg?1593095258
 value=3.823
 rarity=C
 type=Creature

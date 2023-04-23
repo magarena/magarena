@@ -1,5 +1,5 @@
 name=Kasimir the Lone Wolf
-image=https://magiccards.info/scans/en/lg/277.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45b1e60d-54dd-41cd-b9a2-00890725a3df.jpg?1562858715
 value=1.018
 rarity=U
 type=Legendary,Creature

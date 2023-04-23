@@ -1,5 +1,5 @@
 name=Ornitharch
-image=https://magiccards.info/scans/en/bng/23.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f95a0bf4-10c7-4afa-8cf6-e31196cc2bd5.jpg?1593091541
 value=3.888
 rarity=U
 type=Creature

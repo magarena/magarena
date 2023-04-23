@@ -1,5 +1,5 @@
 name=Coastal Breach
-image=https://magiccards.info/scans/en/c16/6.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf8b550a-c86f-4684-a4f6-14e75172324f.jpg?1562417848
 image_updated=2016-11-28
 value=2.500
 rarity=R

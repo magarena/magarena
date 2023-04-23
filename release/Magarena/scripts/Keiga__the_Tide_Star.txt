@@ -1,5 +1,5 @@
 name=Keiga, the Tide Star
-image=https://magiccards.info/scans/en/ima/63.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44d544dc-1d2a-4b33-ae62-d0e0217db0a2.jpg?1674141374
 image_updated=2017-04-12
 value=4.408
 rarity=R

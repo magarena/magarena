@@ -1,5 +1,5 @@
 name=Resupply
-image=https://magiccards.info/scans/en/dtk/32.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecf47c52-4065-4b81-acdc-878e74767bba.jpg?1562795182
 value=2.500
 rarity=C
 type=Instant

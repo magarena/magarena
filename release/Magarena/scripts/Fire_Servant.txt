@@ -1,5 +1,5 @@
 name=Fire Servant
-image=https://magiccards.info/scans/en/m11/137.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3af0acc-258e-4979-bab7-7792006ec7bc.jpg?1562480814
 value=3.562
 rarity=U
 type=Creature

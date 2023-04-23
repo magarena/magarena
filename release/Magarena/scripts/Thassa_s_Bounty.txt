@@ -1,5 +1,5 @@
 name=Thassa's Bounty
-image=https://magiccards.info/scans/en/ths/67.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ac987ac-3f81-4704-b42c-651f44670641.jpg?1562816844
 value=2.292
 rarity=C
 type=Sorcery

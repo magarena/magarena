@@ -1,5 +1,5 @@
 name=Frontier Mastodon
-image=https://magiccards.info/scans/en/frf/130.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46c09fe7-d55f-49b4-95c9-a3bb36baa3aa.jpg?1562824754
 value=2.500
 rarity=C
 type=Creature

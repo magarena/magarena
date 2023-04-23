@@ -1,5 +1,5 @@
 name=Expendable Troops
-image=https://magiccards.info/scans/en/ul/8.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f31d7d1b-a219-4653-be99-a885bc9b2e2f.jpg?1562864246
 value=3.069
 rarity=C
 type=Creature

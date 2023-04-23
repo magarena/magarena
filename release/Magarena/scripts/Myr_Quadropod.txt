@@ -1,5 +1,5 @@
 name=Myr Quadropod
-image=https://magiccards.info/scans/en/5dn/138.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5576fe4d-cf12-460b-af15-996baeca5065.jpg?1562877095
 value=2.222
 rarity=C
 type=Artifact,Creature

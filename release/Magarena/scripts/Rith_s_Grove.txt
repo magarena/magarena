@@ -1,5 +1,5 @@
 name=Rith's Grove
-image=https://magiccards.info/scans/en/ps/141.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/740fa25d-9c1f-44eb-9eb4-0dd514cb315a.jpg?1562919410
 value=3.953
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Windfall
-image=https://magiccards.info/scans/en/ima/77.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0846f753-0d53-4bdd-be0e-19d989db5d5f.jpg?1631234551
 image_updated=2017-04-12
 value=4.432
 rarity=U

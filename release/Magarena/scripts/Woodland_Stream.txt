@@ -1,5 +1,5 @@
 name=Woodland Stream
-image=https://magiccards.info/scans/en/m19/260.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77619840-963f-4ff7-9a42-b36e3d53646d.jpg?1608918190
 image_updated=2018-08-07
 value=2.500
 rarity=C

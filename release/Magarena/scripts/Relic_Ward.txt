@@ -1,5 +1,5 @@
 name=Relic Ward
-image=https://magiccards.info/scans/en/vi/116.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0459667-b7da-43bd-b981-0e515432d147.jpg?1562279110
 value=3.115
 rarity=U
 type=Enchantment

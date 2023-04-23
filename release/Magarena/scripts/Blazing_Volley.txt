@@ -1,5 +1,5 @@
 name=Blazing Volley
-image=https://magiccards.info/scans/en/akh/119.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3adc0288-acdf-4a99-9bfb-919cae1aeb69.jpg?1591227065
 value=2.500
 rarity=C
 type=Sorcery

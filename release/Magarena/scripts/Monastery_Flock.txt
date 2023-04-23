@@ -1,5 +1,5 @@
 name=Monastery Flock
-image=https://magiccards.info/scans/en/ktk/47.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e53c0e50-4b0b-43d8-80c0-2c216722c87a.jpg?1562795087
 value=1.750
 rarity=C
 type=Creature

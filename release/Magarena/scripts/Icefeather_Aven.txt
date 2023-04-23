@@ -1,5 +1,5 @@
 name=Icefeather Aven
-image=https://magiccards.info/scans/en/ktk/178.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc8b7dc7-b7a2-40fe-823c-642d8867973c.jpg?1568004764
 value=4.375
 rarity=U
 type=Creature

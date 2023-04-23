@@ -1,5 +1,5 @@
 name=Dukhara Peafowl
-image=https://magiccards.info/scans/en/kld/207.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5c54795-d555-4972-b72d-b2d2374bed9b.jpg?1576383103
 image_updated=2016-10-05
 value=2.500
 rarity=C

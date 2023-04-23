@@ -1,5 +1,5 @@
 name=Reckless One
-image=https://magiccards.info/scans/en/on/222.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1d31dd2-7b09-487a-b869-eb10dfcc6dcc.jpg?1562940360
 image_updated=2017-01-06
 value=3.840
 rarity=U

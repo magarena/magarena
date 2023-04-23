@@ -1,5 +1,5 @@
 name=Moldgraf Scavenger
-image=https://magiccards.info/scans/en/soi/218.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76755763-7c02-451f-b799-2106a3a4973b.jpg?1576385167
 value=2.500
 rarity=C
 type=Creature

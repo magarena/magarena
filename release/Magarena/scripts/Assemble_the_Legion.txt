@@ -1,5 +1,5 @@
 name=Assemble the Legion
-image=https://magiccards.info/scans/en/gtc/142.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7a760c9-eeb5-4b83-b68b-f6738915f534.jpg?1673484945
 value=3.825
 rarity=R
 type=Enchantment

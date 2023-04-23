@@ -1,5 +1,5 @@
 name=Cleansing Beam
-image=https://magiccards.info/scans/en/cmd/116.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8ad0c91e-2765-4516-ae7a-3500f856eb31.jpg?1592672776
 value=2.113
 rarity=U
 type=Instant

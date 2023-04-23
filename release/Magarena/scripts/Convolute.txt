@@ -1,5 +1,5 @@
 name=Convolute
-image=https://magiccards.info/scans/en/emn/53.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fd8e607-8179-4ae8-ba7f-f5f22649dc18.jpg?1591230479
 image_updated=2016-09-09
 value=2.451
 rarity=C

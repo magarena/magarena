@@ -1,5 +1,5 @@
 name=Behemoth Sledge
-image=https://magiccards.info/scans/en/c17/162.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/179461b8-0a6b-48c5-9d1f-db8bcfecc6f9.jpg?1631588382
 image_updated=2017-10-03
 value=3.441
 rarity=U

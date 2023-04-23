@@ -1,5 +1,5 @@
 name=Esper Cormorants
-image=https://magiccards.info/scans/en/cfx/105.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c5068ed-8477-4d8d-9e37-c72474208e2d.jpg?1562800154
 value=2.444
 rarity=C
 type=Artifact,Creature

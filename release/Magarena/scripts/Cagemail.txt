@@ -1,5 +1,5 @@
 name=Cagemail
-image=https://magiccards.info/scans/en/ju/7.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72ab91ab-2bcf-4617-bec3-2bf040d4997c.jpg?1562630427
 value=2.870
 rarity=C
 type=Enchantment

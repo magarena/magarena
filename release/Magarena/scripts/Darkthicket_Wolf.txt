@@ -1,5 +1,5 @@
 name=Darkthicket Wolf
-image=https://magiccards.info/scans/en/isd/175.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fec37c5a-8223-441c-a8a6-8da1a2dfc3fb.jpg?1562840294
 value=3.135
 rarity=C
 type=Creature

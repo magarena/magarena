@@ -1,5 +1,5 @@
 name=Algae Gharial
-image=https://magiccards.info/scans/en/mm2/137.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7d30720-5baa-4779-a435-14fab778bad6.jpg?1562266675
 value=3.019
 rarity=U
 type=Creature

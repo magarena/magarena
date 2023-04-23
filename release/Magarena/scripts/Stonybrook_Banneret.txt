@@ -1,5 +1,5 @@
 name=Stonybrook Banneret
-image=https://magiccards.info/scans/en/mt/51.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e3e9c6c-e11a-4771-ae1a-3c13cc97e92e.jpg?1562878041
 value=4.282
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Renowned Weaver
-image=https://magiccards.info/scans/en/jou/137.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/240830be-53f8-4f46-a0fb-6ecc439d1349.jpg?1593096296
 value=3.375
 rarity=C
 type=Creature

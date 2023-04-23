@@ -1,5 +1,5 @@
 name=Slice in Twain
-image=https://magiccards.info/scans/en/xln/207.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/244831cc-6383-4daf-aeee-ea4893fdb4c2.jpg?1591321030
 image_updated=2017-10-30
 value=3.462
 rarity=U

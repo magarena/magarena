@@ -1,5 +1,5 @@
 name=Huatli's Snubhorn
-image=https://magiccards.info/scans/en/xln/286.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2d88e6c-4aa8-4175-9f5d-a4c0182cdf74.jpg?1562565551
 value=2.500
 rarity=C
 type=Creature

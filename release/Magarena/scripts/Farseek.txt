@@ -1,5 +1,5 @@
 name=Farseek
-image=https://magiccards.info/scans/en/c16/149.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3dbd7f11-01d2-4bb1-9f49-dd72d1afb3e5.jpg?1673305375
 image_updated=2017-08-17
 value=3.958
 rarity=C

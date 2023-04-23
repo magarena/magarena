@@ -1,5 +1,5 @@
 name=Dusk Imp
-image=https://magiccards.info/scans/en/10e/140.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7590768-1286-4b85-8b31-80e577e6d733.jpg?1561771528
 image_updated=2016-12-01
 value=2.484
 rarity=C

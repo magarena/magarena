@@ -1,5 +1,5 @@
 name=Roaring Primadox
-image=https://magiccards.info/scans/en/m15/196.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49f985df-177f-4535-b681-f9bc74045b39.jpg?1562786487
 value=3.375
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Thorn of the Black Rose
-image=https://magiccards.info/scans/en/cn2/48.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b7538ad-cc41-4229-8a39-c1db21f2899a.jpg?1669010258
 image_updated=2016-09-05
 value=2.500
 rarity=C

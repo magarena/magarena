@@ -1,5 +1,5 @@
 name=Erayo's Essence
-image=https://magiccards.info/scans/en/sok/35b.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b61d772-2d8b-4acf-9dd2-b2e8b03538c8.jpg?1610664131
 value=4.211
 rarity=R
 type=Legendary,Enchantment

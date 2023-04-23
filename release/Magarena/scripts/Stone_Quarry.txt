@@ -1,5 +1,5 @@
 name=Stone Quarry
-image=https://magiccards.info/scans/en/m19/256.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa3575e1-7d2c-4777-b469-16f7483bb8e7.jpg?1608918111
 image_updated=2018-08-07
 value=2.500
 rarity=C

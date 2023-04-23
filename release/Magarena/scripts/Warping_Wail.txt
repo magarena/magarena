@@ -1,5 +1,5 @@
 name=Warping Wail
-image=https://magiccards.info/scans/en/ogw/12.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2ef4db8-b51c-4f52-84f1-6fee31c4a14c.jpg?1562943843
 image_updated=2016-02-29
 value=2.500
 rarity=U

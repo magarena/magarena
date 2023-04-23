@@ -1,5 +1,5 @@
 name=Pendelhaven Elder
-image=https://magiccards.info/scans/en/ts/209.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aafc1724-af33-491e-b834-9a3cf30039ca.jpg?1619398479
 value=3.692
 rarity=U
 type=Creature

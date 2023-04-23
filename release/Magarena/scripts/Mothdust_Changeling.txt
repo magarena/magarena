@@ -1,5 +1,5 @@
 name=Mothdust Changeling
-image=https://magiccards.info/scans/en/mma/53.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18acffb1-c1e8-4729-a350-64823b2f9d29.jpg?1561966398
 value=2.955
 rarity=C
 type=Creature

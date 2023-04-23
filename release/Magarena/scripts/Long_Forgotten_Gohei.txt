@@ -1,5 +1,5 @@
 name=Long-Forgotten Gohei
-image=https://magiccards.info/scans/en/mm2/221.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67ced123-3eb4-405e-b26d-30644f35a5b0.jpg?1562263272
 value=2.500
 rarity=R
 type=Artifact

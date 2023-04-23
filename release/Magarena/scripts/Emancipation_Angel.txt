@@ -1,5 +1,5 @@
 name=Emancipation Angel
-image=https://magiccards.info/scans/en/avr/19.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b2a972a-a953-485d-920d-8f4f978ef758.jpg?1600696371
 value=3.898
 removal=2
 rarity=U

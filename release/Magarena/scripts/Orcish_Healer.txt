@@ -1,5 +1,5 @@
 name=Orcish Healer
-image=https://magiccards.info/scans/en/cstd/35.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7ff511f3-416e-4919-acd6-fd8183bf5c60.jpg?1562918724
 value=2.132
 rarity=U
 type=Creature

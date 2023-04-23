@@ -1,5 +1,5 @@
 name=Agent of Shauku
-image=https://magiccards.info/scans/en/pr/55.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8316804-6f8b-423e-a2c3-fa476c095544.jpg?1562935446
 value=2.230
 rarity=C
 type=Creature

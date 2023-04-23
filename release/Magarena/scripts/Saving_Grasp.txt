@@ -1,5 +1,5 @@
 name=Saving Grasp
-image=https://magiccards.info/scans/en/dka/46.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/914837df-c255-4cea-9255-b05f218fd9f8.jpg?1562929232
 value=3.327
 rarity=C
 type=Instant

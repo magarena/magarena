@@ -1,5 +1,5 @@
 name=Black Scarab
-image=https://magiccards.info/scans/en/ia/230.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bfd4ee1-05f9-45ae-a31d-1225b271dbe6.jpg?1562911988
 value=2.294
 rarity=U
 type=Enchantment

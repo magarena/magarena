@@ -1,5 +1,5 @@
 name=Rampant Growth
-image=https://magiccards.info/scans/en/c16/161.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89572b1f-f65a-4bd4-b52a-4e84eb373e90.jpg?1673148161
 image_updated=2017-08-17
 value=4.011
 rarity=C

@@ -1,5 +1,5 @@
 name=Razortooth Rats
-image=https://magiccards.info/scans/en/9e/158.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92750247-eba4-4810-a758-f943cd8a16b1.jpg?1562738607
 value=2.862
 rarity=C
 type=Creature

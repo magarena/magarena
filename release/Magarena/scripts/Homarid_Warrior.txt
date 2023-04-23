@@ -1,5 +1,5 @@
 name=Homarid Warrior
-image=https://magiccards.info/scans/en/5e/92.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80f20d8e-bbdf-4af8-9505-d5604b04ad72.jpg?1562591855
 value=1.864
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ranger's Path
-image=https://magiccards.info/scans/en/m13/186.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26858a53-1054-407a-b2a2-34a7c4ae0f10.jpg?1562551599
 value=2.882
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Veteran's Voice
-image=https://magiccards.info/scans/en/ai/123.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93babf85-eb13-4e06-b45b-8927791bcde5.jpg?1562769662
 value=2.132
 rarity=C
 type=Enchantment

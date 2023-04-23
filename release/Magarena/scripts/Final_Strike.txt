@@ -1,5 +1,5 @@
 name=Final Strike
-image=https://magiccards.info/scans/en/po/16.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecdfcb03-2f77-4f54-af62-3012cd3efd4f.jpg?1562448327
 value=1.707
 rarity=R
 type=Sorcery

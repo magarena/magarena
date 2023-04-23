@@ -1,5 +1,5 @@
 name=Temple of Epiphany
-image=https://magiccards.info/scans/en/jou/164.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11a9a808-4ad1-45ab-9ef6-b6eb39414e25.jpg?1682210716
 value=3.750
 rarity=R
 type=Land

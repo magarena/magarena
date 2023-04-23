@@ -1,5 +1,5 @@
 name=Hyalopterous Lemure
-image=https://magiccards.info/scans/en/ia/21.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69a6e757-fd8a-489b-9e64-590ae5a09d4a.jpg?1565456938
 value=3.423
 rarity=U
 type=Creature

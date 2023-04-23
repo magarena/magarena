@@ -1,5 +1,5 @@
 name=Woodwraith Strangler
-image=https://magiccards.info/scans/en/rav/241.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be72ff91-f810-46c3-884f-6e65827824bc.jpg?1598917660
 value=1.886
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Gallowbraid
-image=https://magiccards.info/scans/en/wl/12.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8df86192-6374-42ac-94bc-95e2e8284bd6.jpg?1562802094
 value=2.337
 rarity=R
 type=Legendary,Creature

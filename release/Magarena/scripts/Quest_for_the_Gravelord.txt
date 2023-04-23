@@ -1,5 +1,5 @@
 name=Quest for the Gravelord
-image=https://magiccards.info/scans/en/zen/108.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5972edbd-ffe8-46e8-9c3e-5399c7d6879b.jpg?1562913176
 value=3.869
 rarity=U
 type=Enchantment

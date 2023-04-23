@@ -1,5 +1,5 @@
 name=Crackleburr
-image=https://magiccards.info/scans/en/eve/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2be19f23-5db4-4d50-a9d7-622e247ff0ab.jpg?1562904231
 value=3.901
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Overtaker
-image=https://magiccards.info/scans/en/mm/89.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/145903cb-9eaa-4f3c-a376-88dcd474ffda.jpg?1562379423
 value=3.841
 rarity=R
 type=Creature

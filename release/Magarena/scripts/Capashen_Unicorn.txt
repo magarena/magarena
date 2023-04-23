@@ -1,5 +1,5 @@
 name=Capashen Unicorn
-image=https://magiccards.info/scans/en/in/10.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec3e5741-88d7-4837-9b43-ba8304d9ee74.jpg?1562942469
 value=2.957
 rarity=C
 type=Creature

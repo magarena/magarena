@@ -1,5 +1,5 @@
 name=Tempt with Vengeance
-image=https://magiccards.info/scans/en/c13/125.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48ad7c26-edb5-4354-9872-87c667183be7.jpg?1562910147
 value=3.781
 rarity=R
 type=Sorcery

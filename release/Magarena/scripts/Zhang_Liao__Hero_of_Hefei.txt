@@ -1,5 +1,5 @@
 name=Zhang Liao, Hero of Hefei
-image=https://magiccards.info/scans/en/p3k/96.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f42a953-3073-4e74-9bb8-c8c5a45d1dfa.jpg?1562257047
 value=2.450
 rarity=R
 type=Legendary,Creature

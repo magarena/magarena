@@ -1,5 +1,5 @@
 name=Ajani's Chosen
-image=https://magiccards.info/scans/en/c15/57.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ea009c1-505e-4307-b8f3-2d37e36507a6.jpg?1600695778
 image_updated=2016-02-29
 value=3.615
 rarity=R

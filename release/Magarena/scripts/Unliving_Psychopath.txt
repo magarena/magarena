@@ -1,5 +1,5 @@
 name=Unliving Psychopath
-image=https://magiccards.info/scans/en/di/56.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/694bbf39-fd66-4ff4-9cc3-ec75b1fb3a51.jpg?1593273065
 value=2.894
 rarity=R
 type=Creature

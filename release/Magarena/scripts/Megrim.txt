@@ -1,5 +1,5 @@
 name=Megrim
-image=https://magiccards.info/scans/en/m10/104.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b04fca4-b4de-4343-ba58-d8aea39edc19.jpg?1561976802
 image_updated=2016-12-23
 value=3.925
 rarity=U

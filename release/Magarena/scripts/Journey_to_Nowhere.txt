@@ -1,5 +1,5 @@
 name=Journey to Nowhere
-image=https://magiccards.info/scans/en/cmd/17.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4686b51c-e02b-48c1-bafe-e8d08a5407b9.jpg?1592712799
 value=3.871
 removal=2
 rarity=C

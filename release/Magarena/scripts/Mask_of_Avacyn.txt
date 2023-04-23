@@ -1,5 +1,5 @@
 name=Mask of Avacyn
-image=https://magiccards.info/scans/en/isd/229.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0aa1b193-c80e-4026-bd82-f16314e14431.jpg?1608917838
 value=3.701
 rarity=U
 type=Artifact

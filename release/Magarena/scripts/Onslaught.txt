@@ -1,5 +1,5 @@
 name=Onslaught
-image=https://magiccards.info/scans/en/ex/92.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0afaf142-dbca-45bf-aea2-01c53bda635a.jpg?1562086899
 value=3.935
 rarity=C
 type=Enchantment

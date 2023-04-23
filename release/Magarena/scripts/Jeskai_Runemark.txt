@@ -1,5 +1,5 @@
 name=Jeskai Runemark
-image=https://magiccards.info/scans/en/frf/37.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ada6302-326b-4ab1-a9a3-ae4fa6a9001c.jpg?1562823632
 value=2.500
 rarity=C
 type=Enchantment

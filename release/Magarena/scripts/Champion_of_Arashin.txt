@@ -1,5 +1,5 @@
 name=Champion of Arashin
-image=https://magiccards.info/scans/en/dtk/9.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f7e5122-89ff-4a25-96a5-fee5f96da7f2.jpg?1562904697
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Isperia's Skywatch
-image=https://magiccards.info/scans/en/rtr/43.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/019ba84d-d236-45c5-a8ad-75def7736d0c.jpg?1562781821
 value=1.904
 rarity=C
 type=Creature

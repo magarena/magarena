@@ -1,5 +1,5 @@
 name=Haru-Onna
-image=https://magiccards.info/scans/en/sok/132.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ceaacab4-f13b-4189-ac78-89fc4cdbaa55.jpg?1562496093
 value=2.891
 rarity=U
 type=Creature

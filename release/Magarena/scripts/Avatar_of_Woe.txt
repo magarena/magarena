@@ -1,5 +1,5 @@
 name=Avatar of Woe
-image=https://magiccards.info/scans/en/cn2/128.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e8e34de-4b0a-48fe-bb13-c7e181d37e6c.jpg?1562274562
 image_updated=2017-08-29
 value=4.158
 rarity=M

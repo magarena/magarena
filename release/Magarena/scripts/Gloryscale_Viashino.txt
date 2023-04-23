@@ -1,5 +1,5 @@
 name=Gloryscale Viashino
-image=https://magiccards.info/scans/en/arb/120.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63c0e48e-e0a4-4a45-8d82-2ab56fee7246.jpg?1673148678
 value=2.994
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Baleful Strix
-image=https://magiccards.info/scans/en/c16/181.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b451783a-8824-4eeb-8fd6-c9290ce7ccdb.jpg?1673305459
 image_updated=2017-08-17
 value=4.333
 rarity=U

@@ -1,5 +1,5 @@
 name=Implement of Examination
-image=https://magiccards.info/scans/en/aer/156.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a791aa71-00db-422d-a78a-53b121c24db5.jpg?1576382282
 value=2.500
 rarity=C
 type=Artifact

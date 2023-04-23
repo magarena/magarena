@@ -1,5 +1,5 @@
 name=Goblin Goon
-image=https://magiccards.info/scans/en/le/99.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b629eb0-0e84-4eaf-bbc3-ec85ae17a8a7.jpg?1601077790
 value=2.500
 rarity=R
 type=Creature

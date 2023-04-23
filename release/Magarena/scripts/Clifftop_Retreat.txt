@@ -1,5 +1,5 @@
 name=Clifftop Retreat
-image=https://magiccards.info/scans/en/dom/239.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0b52b9c-7278-46b4-9f3c-3a7fc0c7e526.jpg?1562744267
 image_updated=2018-08-07
 value=3.866
 rarity=R

@@ -1,5 +1,5 @@
 name=Abzan Falconer
-image=https://magiccards.info/scans/en/ima/3.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7e2b0e1-c9ea-4f91-b19e-73b1bd6a0884.jpg?1682208232
 image_updated=2017-04-12
 value=3.643
 rarity=U

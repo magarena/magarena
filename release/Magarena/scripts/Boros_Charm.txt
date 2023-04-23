@@ -1,5 +1,5 @@
 name=Boros Charm
-image=https://magiccards.info/scans/en/a25/199.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/437b0685-ed50-40b9-ae0d-ec2f75026474.jpg?1673484993
 image_updated=2018-04-27
 value=3.979
 rarity=U

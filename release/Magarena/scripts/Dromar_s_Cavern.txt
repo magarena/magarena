@@ -1,5 +1,5 @@
 name=Dromar's Cavern
-image=https://magiccards.info/scans/en/ps/138.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85f10cee-6a63-438e-a9df-6b902dd025b8.jpg?1562923260
 value=3.571
 rarity=U
 type=Land

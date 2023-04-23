@@ -1,5 +1,5 @@
 name=Maalfeld Twins
-image=https://magiccards.info/scans/en/avr/112.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa715fde-8339-447b-8ac8-3126830bece8.jpg?1608933885
 value=3.267
 rarity=U
 type=Creature

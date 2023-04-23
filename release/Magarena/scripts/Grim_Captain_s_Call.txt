@@ -1,5 +1,5 @@
 name=Grim Captain's Call
-image=https://magiccards.info/scans/en/xln/108.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0055934f-1567-4207-aaad-d32d0fe1cdba.jpg?1562549649
 value=2.500
 rarity=U
 type=Sorcery

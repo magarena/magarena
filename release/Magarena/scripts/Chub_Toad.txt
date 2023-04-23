@@ -1,5 +1,5 @@
 name=Chub Toad
-image=https://magiccards.info/scans/en/5e/145.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fb0c8a5-ea67-4c18-94b6-757e290ee34e.jpg?1559592467
 value=2.686
 rarity=C
 type=Creature

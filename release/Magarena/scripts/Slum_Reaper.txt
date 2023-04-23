@@ -1,5 +1,5 @@
 name=Slum Reaper
-image=https://magiccards.info/scans/en/rtr/77.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/475690db-4934-4c2e-b869-a6499d86a9c5.jpg?1547517048
 value=2.837
 rarity=U
 type=Creature

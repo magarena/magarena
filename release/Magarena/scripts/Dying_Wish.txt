@@ -1,5 +1,5 @@
 name=Dying Wish
-image=https://magiccards.info/scans/en/gtc/64.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b46e83d3-c66d-42fb-8435-b6c448db01ae.jpg?1561842566
 value=2.815
 rarity=U
 type=Enchantment

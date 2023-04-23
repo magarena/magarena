@@ -1,5 +1,5 @@
 name=Goblin Commando
-image=https://magiccards.info/scans/en/st/100.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c742d940-1a8d-487a-a787-2ad96a96ef1f.jpg?1601077766
 value=2.229
 rarity=U
 type=Creature

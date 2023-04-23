@@ -1,5 +1,5 @@
 name=Staunch-Hearted Warrior
-image=https://magiccards.info/scans/en/ths/179.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c754202d-adc9-4d02-b1b3-ec253f7e637a.jpg?1547517851
 value=3.288
 rarity=C
 type=Creature

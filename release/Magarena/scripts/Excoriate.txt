@@ -1,5 +1,5 @@
 name=Excoriate
-image=https://magiccards.info/scans/en/bng/10.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba8db734-1923-40e9-821b-17b534ba5995.jpg?1592765263
 value=2.767
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Talisman of Unity
-image=https://magiccards.info/scans/en/mi/257.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67c83c7b-d785-4700-8075-6ffb5c3922d6.jpg?1637631880
 value=3.136
 rarity=U
 type=Artifact

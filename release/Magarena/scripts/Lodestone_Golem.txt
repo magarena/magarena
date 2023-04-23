@@ -1,5 +1,5 @@
 name=Lodestone Golem
-image=https://magiccards.info/scans/en/mm2/219.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/683a5707-cddb-494d-9b41-51b4584ded69.jpg?1562263274
 value=2.500
 rarity=R
 type=Artifact,Creature

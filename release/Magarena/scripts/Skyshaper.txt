@@ -1,5 +1,5 @@
 name=Skyshaper
-image=https://magiccards.info/scans/en/ex/137.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfebe9f6-9915-47d2-8565-ca9132ee29ff.jpg?1562431290
 value=3.053
 rarity=U
 type=Artifact

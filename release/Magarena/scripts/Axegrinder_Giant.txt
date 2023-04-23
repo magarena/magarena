@@ -1,5 +1,5 @@
 name=Axegrinder Giant
-image=https://magiccards.info/scans/en/lw/151.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/8595e9a1-010e-48a7-91e4-3d2722c8dbc0.jpg?1562356613
 value=1.852
 rarity=C
 type=Creature

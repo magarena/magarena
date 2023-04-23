@@ -1,5 +1,5 @@
 name=Horror of the Dim
-image=https://magiccards.info/scans/en/gtc/68.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5d36c9d-967e-42dc-890c-0485b12f704f.jpg?1561852685
 value=2.260
 rarity=C
 type=Creature

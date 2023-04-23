@@ -1,5 +1,5 @@
 name=Gallows Warden
-image=https://magiccards.info/scans/en/isd/16.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15947b20-8c8e-42ed-9599-8b180a382d21.jpg?1562826652
 value=2.852
 rarity=U
 type=Creature

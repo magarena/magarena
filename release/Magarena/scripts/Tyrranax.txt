@@ -1,5 +1,5 @@
 name=Tyrranax
-image=https://magiccards.info/scans/en/5dn/98.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cb0cc0e-f71f-456f-a6ec-6a70cf838c35.jpg?1562877248
 value=2.940
 rarity=C
 type=Creature

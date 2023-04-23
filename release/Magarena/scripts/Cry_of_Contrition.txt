@@ -1,5 +1,5 @@
 name=Cry of Contrition
-image=https://magiccards.info/scans/en/gp/46.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62016f24-3f40-406b-8e29-30a6545d0fc1.jpg?1593272165
 value=3.553
 rarity=C
 type=Sorcery

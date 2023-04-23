@@ -1,5 +1,5 @@
 name=Brand
-image=https://magiccards.info/scans/en/us/176.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/bafbd034-c8a0-4798-a680-555c13bdd251.jpg?1562934550
 value=3.802
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Longbow Archer
-image=https://magiccards.info/scans/en/7e/26.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8ac3672e-ebab-4bb1-bf4d-5020047296d8.jpg?1562242235
 value=4.380
 rarity=U
 type=Creature

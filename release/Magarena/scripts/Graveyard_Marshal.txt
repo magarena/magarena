@@ -1,5 +1,5 @@
 name=Graveyard Marshal
-image=https://magiccards.info/scans/en/m19/99.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dc5f62c-2d29-4a94-8501-13dc6a93c5a1.jpg?1562302147
 value=2.500
 rarity=R
 type=Creature

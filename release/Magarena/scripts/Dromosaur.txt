@@ -1,5 +1,5 @@
 name=Dromosaur
-image=https://magiccards.info/scans/en/us/182.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65de0b43-64df-44dc-850c-25f48d6ab53b.jpg?1562916303
 value=2.558
 rarity=C
 type=Creature

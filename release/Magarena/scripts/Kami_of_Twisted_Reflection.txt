@@ -1,5 +1,5 @@
 name=Kami of Twisted Reflection
-image=https://magiccards.info/scans/en/chk/71.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8aaf1b2f-933f-4ad3-a816-2797d96ff37f.jpg?1562762473
 value=1.444
 rarity=C
 type=Creature

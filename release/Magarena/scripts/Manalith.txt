@@ -1,5 +1,5 @@
 name=Manalith
-image=https://magiccards.info/scans/en/m19/239.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0d7d904-f29b-4524-9223-27910d748bdb.jpg?1592765238
 image_updated=2018-08-07
 value=3.489
 rarity=C

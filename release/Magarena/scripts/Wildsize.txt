@@ -1,5 +1,5 @@
 name=Wildsize
-image=https://magiccards.info/scans/en/ima/191.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb0e640d-9a24-471e-8092-0177ec8d824e.jpg?1608910995
 image_updated=2017-04-12
 value=2.845
 rarity=C

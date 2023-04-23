@@ -1,5 +1,5 @@
 name=Dark Prophecy
-image=https://magiccards.info/scans/en/m14/93.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecf82c3b-7a35-43dd-8bf3-ebc68dc1b8fc.jpg?1562836864
 value=3.590
 rarity=R
 type=Enchantment

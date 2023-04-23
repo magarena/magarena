@@ -1,5 +1,5 @@
 name=Slith Ascendant
-image=https://magiccards.info/scans/en/mi/23.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b90157f8-ba3c-479e-80d8-8f9e042c540c.jpg?1608909027
 value=3.635
 rarity=U
 type=Creature

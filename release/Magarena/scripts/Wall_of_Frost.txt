@@ -1,5 +1,5 @@
 name=Wall of Frost
-image=https://magiccards.info/scans/en/mm3/56.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5ab28ee-f70d-441b-bb4e-8e781f26e2bc.jpg?1593813182
 image_updated=2017-08-08
 value=3.214
 rarity=U

@@ -1,5 +1,5 @@
 name=Spawning Breath
-image=https://magiccards.info/scans/en/roe/164.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90ec1540-e8cb-4edc-a3b3-f71423cb46fc.jpg?1562706335
 value=3.655
 rarity=C
 type=Instant

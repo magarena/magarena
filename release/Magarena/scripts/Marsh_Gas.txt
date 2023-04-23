@@ -1,5 +1,5 @@
 name=Marsh Gas
-image=https://magiccards.info/scans/en/4e/30.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8c65bf9-cbab-45ee-9c6e-f8ee832dbe61.jpg?1587911112
 value=2.133
 rarity=C
 type=Instant

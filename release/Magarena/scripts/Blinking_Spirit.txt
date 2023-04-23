@@ -1,5 +1,5 @@
 name=Blinking Spirit
-image=https://magiccards.info/scans/en/9e/8.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/692ac387-be1f-48e0-945e-cbb1254d395c.jpg?1562736517
 value=4.051
 rarity=R
 type=Creature

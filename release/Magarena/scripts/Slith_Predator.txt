@@ -1,5 +1,5 @@
 name=Slith Predator
-image=https://magiccards.info/scans/en/mi/129.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14bae45c-eaa8-4c6d-8042-df5cf26e294f.jpg?1562136624
 value=3.756
 rarity=U
 type=Creature

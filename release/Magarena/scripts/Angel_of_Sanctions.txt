@@ -1,5 +1,5 @@
 name=Angel of Sanctions
-image=https://magiccards.info/scans/en/akh/1.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3f7f258-7ac0-4149-9d8c-712b5ea7f0a8.jpg?1568003815
 value=2.500
 rarity=M
 type=Creature

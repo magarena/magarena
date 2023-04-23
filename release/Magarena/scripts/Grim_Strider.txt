@@ -1,5 +1,5 @@
 name=Grim Strider
-image=https://magiccards.info/scans/en/akh/94.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97ae6769-2b2b-48e3-9503-e9744984743a.jpg?1543675305
 value=2.500
 rarity=U
 type=Creature

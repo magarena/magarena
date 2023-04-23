@@ -1,5 +1,5 @@
 name=Sluggishness
-image=https://magiccards.info/scans/en/ul/92.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2ba91431-3fcd-4b44-ae7b-a69eb18efd5f.jpg?1562862784
 value=2.685
 rarity=C
 type=Enchantment

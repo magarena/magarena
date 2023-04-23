@@ -1,5 +1,5 @@
 name=Sun-Blessed Mount
-image=https://magiccards.info/scans/en/xln/288.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f06ac1f-0bae-4aaa-9ff4-28c806828c40.jpg?1562557291
 value=2.500
 rarity=R
 type=Creature

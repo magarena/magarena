@@ -1,5 +1,5 @@
 name=Gustcloak Savior
-image=https://magiccards.info/scans/en/on/36.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5303ce82-e82a-498e-af4f-16a56d8188ff.jpg?1562840226
 image_updated=2016-12-04
 value=3.903
 rarity=R

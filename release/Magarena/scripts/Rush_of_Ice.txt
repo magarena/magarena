@@ -1,5 +1,5 @@
 name=Rush of Ice
-image=https://magiccards.info/scans/en/bfz/84.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9ae6f63-d1b2-4bf9-a423-ed6fbb540d4b.jpg?1562954197
 image_updated=2015-11-08
 value=2.500
 rarity=C

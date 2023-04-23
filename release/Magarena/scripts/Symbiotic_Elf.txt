@@ -1,5 +1,5 @@
 name=Symbiotic Elf
-image=https://magiccards.info/scans/en/on/288.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e552d26-d203-4040-ba11-d01d65f038a4.jpg?1562923735
 value=2.796
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Smokespew Invoker
-image=https://magiccards.info/scans/en/le/81.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fea393a4-58c8-4a42-bd95-a3312504f2e2.jpg?1562946410
 value=2.145
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Incendiary
-image=https://magiccards.info/scans/en/ud/89.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/854f4775-29b1-4ed1-94d9-db5930a35157.jpg?1562444255
 value=3.212
 rarity=U
 type=Enchantment

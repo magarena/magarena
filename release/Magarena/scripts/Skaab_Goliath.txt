@@ -1,5 +1,5 @@
 name=Skaab Goliath
-image=https://magiccards.info/scans/en/ori/74.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d151fe63-3b3a-4cd4-9a2d-d80e7434e63c.jpg?1608909468
 image_updated=2015-11-05
 value=2.500
 rarity=U

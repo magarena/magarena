@@ -1,5 +1,5 @@
 name=Canopy Dragon
-image=https://magiccards.info/scans/en/mr/107.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20c5e4d6-b716-4994-b226-b1eb799bec25.jpg?1562718315
 value=3.148
 rarity=R
 type=Creature

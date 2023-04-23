@@ -1,5 +1,5 @@
 name=Disperse
-image=https://magiccards.info/scans/en/m19/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg?1562301229
 image_updated=2018-08-07
 value=2.500
 rarity=C

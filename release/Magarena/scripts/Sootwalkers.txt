@@ -1,5 +1,5 @@
 name=Sootwalkers
-image=https://magiccards.info/scans/en/shm/196.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f36c7932-cc1e-4b1f-ae39-2f04b84bcddb.jpg?1562838114
 value=2.323
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Aethersquall Ancient
-image=https://magiccards.info/scans/en/kld/39.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55127a25-dc64-4f26-ae50-ed7247c22ae6.jpg?1576381113
 image_updated=2016-10-05
 value=2.500
 rarity=R

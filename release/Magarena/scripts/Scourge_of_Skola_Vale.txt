@@ -1,5 +1,5 @@
 name=Scourge of Skola Vale
-image=https://magiccards.info/scans/en/bng/137.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baef76dc-7cef-449b-b8a7-e038887129d9.jpg?1593092636
 value=3.760
 rarity=R
 type=Creature

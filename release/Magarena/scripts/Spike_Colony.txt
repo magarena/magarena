@@ -1,5 +1,5 @@
 name=Spike Colony
-image=https://magiccards.info/scans/en/sh/67.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a45a1cbd-329b-4a76-92b4-1f0f60fc06e6.jpg?1562430807
 value=2.984
 rarity=C
 type=Creature

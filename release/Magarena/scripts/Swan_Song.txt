@@ -1,5 +1,5 @@
 name=Swan Song
-image=https://magiccards.info/scans/en/c16/98.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d968dde-c406-48ef-a1ab-373aebc24693.jpg?1562412350
 image_updated=2016-01-09
 value=4.079
 rarity=R

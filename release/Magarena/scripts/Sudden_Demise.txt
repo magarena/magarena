@@ -1,5 +1,5 @@
 name=Sudden Demise
-image=https://magiccards.info/scans/en/c13/124.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9336cb8a-13d4-4d97-9111-1326a9028df8.jpg?1592765753
 value=3.647
 rarity=R
 type=Sorcery

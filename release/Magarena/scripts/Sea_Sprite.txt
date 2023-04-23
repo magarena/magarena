@@ -1,5 +1,5 @@
 name=Sea Sprite
-image=https://magiccards.info/scans/en/5e/120.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c8b47b2-be16-4f65-814c-5c392cbfebec.jpg?1559592376
 value=3.303
 rarity=U
 type=Creature

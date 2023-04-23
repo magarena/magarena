@@ -1,5 +1,5 @@
 name=Guiltfeeder
-image=https://magiccards.info/scans/en/c16/112.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8276b064-60ba-4079-b790-e2eea831e35e.jpg?1674141649
 image_updated=2017-08-17
 value=4.186
 rarity=R

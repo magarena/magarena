@@ -1,5 +1,5 @@
 name=Kavu Mauler
-image=https://magiccards.info/scans/en/ap/80.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79adc3af-5fa3-4cb6-9bbc-52ede0c69263.jpg?1562923697
 value=3.727
 rarity=R
 type=Creature

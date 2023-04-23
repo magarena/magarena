@@ -1,5 +1,5 @@
 name=Celestial Mantle
-image=https://magiccards.info/scans/en/zen/6.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/136dfcf5-130a-4d75-9785-a090215a29b1.jpg?1600696200
 value=3.860
 rarity=R
 type=Enchantment

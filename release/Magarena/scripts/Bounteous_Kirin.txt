@@ -1,5 +1,5 @@
 name=Bounteous Kirin
-image=https://magiccards.info/scans/en/sok/123.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d7fe65e-81b1-4e69-913a-25fc99d96d81.jpg?1562492549
 value=3.211
 rarity=R
 type=Legendary,Creature

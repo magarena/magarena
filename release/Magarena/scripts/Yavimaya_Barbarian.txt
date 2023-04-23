@@ -1,5 +1,5 @@
 name=Yavimaya Barbarian
-image=https://magiccards.info/scans/en/in/290.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e17377d-4dad-4144-b0ce-c849636096a2.jpg?1562923706
 value=3.570
 rarity=C
 type=Creature

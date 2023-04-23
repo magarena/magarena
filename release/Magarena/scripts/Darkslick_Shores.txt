@@ -1,5 +1,5 @@
 name=Darkslick Shores
-image=https://magiccards.info/scans/en/som/226.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcbda15b-e49a-4445-a0e1-f221aa82c1e8.jpg?1675957267
 value=4.256
 rarity=R
 type=Land

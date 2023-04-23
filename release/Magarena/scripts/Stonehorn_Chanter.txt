@@ -1,5 +1,5 @@
 name=Stonehorn Chanter
-image=https://magiccards.info/scans/en/m14/39.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd6ec61b-c039-4526-a359-a7947eeba5c3.jpg?1562835189
 value=1.357
 rarity=U
 type=Creature

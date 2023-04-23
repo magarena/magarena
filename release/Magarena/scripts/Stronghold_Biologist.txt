@@ -1,5 +1,5 @@
 name=Stronghold Biologist
-image=https://magiccards.info/scans/en/ne/45.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6215a5d9-d6d2-4f9f-8a0c-a65d1afd956a.jpg?1562630235
 value=3.776
 rarity=U
 type=Creature

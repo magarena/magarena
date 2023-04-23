@@ -1,5 +1,5 @@
 name=Awakening Zone
-image=https://magiccards.info/scans/en/pc2/56.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/245246ae-207b-451e-8b73-97535e9bc885.jpg?1673484469
 value=3.721
 rarity=R
 type=Enchantment

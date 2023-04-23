@@ -1,5 +1,5 @@
 name=Phyrexian Broodlings
-image=https://magiccards.info/scans/en/ul/58.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edf4c9e1-eff6-4abc-ad4e-ffd7f1895d8d.jpg?1600714610
 image_updated=2017-01-03
 value=3.414
 rarity=C

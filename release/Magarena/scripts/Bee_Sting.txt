@@ -1,5 +1,5 @@
 name=Bee Sting
-image=https://magiccards.info/scans/en/po2/64.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee668507-a903-47ed-834f-fe6247db0542.jpg?1562951613
 value=2.087
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Viscid Lemures
-image=https://magiccards.info/scans/en/ts/141.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/863f04d7-da34-41e3-9153-97891a428889.jpg?1562923311
 value=1.959
 rarity=C
 type=Creature

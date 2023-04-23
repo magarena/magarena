@@ -1,5 +1,5 @@
 name=Emperor's Vanguard
-image=https://magiccards.info/scans/en/xln/189.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f10c22b9-bdb7-4933-a58a-c53d040ae3bb.jpg?1562566456
 value=2.500
 rarity=R
 type=Creature

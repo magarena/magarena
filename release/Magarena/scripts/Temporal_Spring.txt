@@ -1,5 +1,5 @@
 name=Temporal Spring
-image=https://magiccards.info/scans/en/ap/125.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b584dfd1-a56c-406e-8504-47ea136dc102.jpg?1562937762
 value=4.037
 rarity=C
 type=Sorcery

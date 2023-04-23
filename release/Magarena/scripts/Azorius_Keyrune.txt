@@ -1,5 +1,5 @@
 name=Azorius Keyrune
-image=https://magiccards.info/scans/en/rtr/225.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8755662-b329-4c5b-8bf7-c9e1702e5979.jpg?1592673561
 value=3.500
 rarity=U
 type=Artifact

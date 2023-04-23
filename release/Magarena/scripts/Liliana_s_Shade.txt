@@ -1,5 +1,5 @@
 name=Liliana's Shade
-image=https://magiccards.info/scans/en/m13/98.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cf0c01d-a4a0-43fb-970d-e428e9ac63d7.jpg?1562551134
 value=3.174
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Escape Routes
-image=https://magiccards.info/scans/en/ps/25.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbc9062e-ddd9-41ac-a88a-33f5a7b22103.jpg?1562941413
 value=2.885
 rarity=C
 type=Enchantment

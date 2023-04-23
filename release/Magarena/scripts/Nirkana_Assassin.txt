@@ -1,5 +1,5 @@
 name=Nirkana Assassin
-image=https://magiccards.info/scans/en/bfz/118.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2ca43ea1-ba7b-4dc7-b6f6-a0c92321ebe1.jpg?1562905471
 image_updated=2015-11-08
 value=2.500
 rarity=C

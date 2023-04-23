@@ -1,5 +1,5 @@
 name=Breakthrough
-image=https://magiccards.info/scans/en/cns/92.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22075f41-3aeb-406d-99b6-88ddae992d0b.jpg?1673147224
 value=4.500
 rarity=U
 type=Sorcery

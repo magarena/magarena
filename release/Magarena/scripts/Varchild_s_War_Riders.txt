@@ -1,5 +1,5 @@
 name=Varchild's War-Riders
-image=https://magiccards.info/scans/en/ai/122.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e879b457-dffa-4b3b-a3cd-717a60c1e586.jpg?1559592474
 value=4.125
 rarity=R
 type=Creature

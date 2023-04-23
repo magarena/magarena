@@ -1,5 +1,5 @@
 name=Prizefighter Construct
-image=https://magiccards.info/scans/en/aer/172.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e389c92-b54b-46b3-a7ab-b8a5a2a7d380.jpg?1576382396
 value=2.500
 rarity=C
 type=Artifact,Creature

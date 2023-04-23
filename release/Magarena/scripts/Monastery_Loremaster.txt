@@ -1,5 +1,5 @@
 name=Monastery Loremaster
-image=https://magiccards.info/scans/en/dtk/63.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19b9d8de-5746-4af0-9353-a19fa977df41.jpg?1562783165
 value=2.500
 rarity=C
 type=Creature

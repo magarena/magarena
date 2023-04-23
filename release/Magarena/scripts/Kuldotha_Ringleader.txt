@@ -1,5 +1,5 @@
 name=Kuldotha Ringleader
-image=https://magiccards.info/scans/en/mbs/70.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cda5434-c0a5-4551-8e30-b1923f0001b8.jpg?1562610727
 value=2.844
 rarity=C
 type=Creature

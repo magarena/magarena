@@ -1,5 +1,5 @@
 name=Looming Altisaur
-image=https://magiccards.info/scans/en/xln/23.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfcff1c6-0db6-4ff6-b4af-d7048b426368.jpg?1562564237
 value=2.500
 rarity=C
 type=Creature

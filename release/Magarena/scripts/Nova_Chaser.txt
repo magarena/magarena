@@ -1,5 +1,5 @@
 name=Nova Chaser
-image=https://magiccards.info/scans/en/lw/187.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07f97507-abbe-4c8b-9683-f044e38f8d4b.jpg?1562337265
 value=4.106
 removal=2
 rarity=R

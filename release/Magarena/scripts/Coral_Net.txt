@@ -1,5 +1,5 @@
 name=Coral Net
-image=https://magiccards.info/scans/en/tr/35.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abe9cf1e-d398-41e0-8b11-afe1015e4fd9.jpg?1562631469
 value=2.348
 rarity=C
 type=Enchantment

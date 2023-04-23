@@ -1,5 +1,5 @@
 name=Onyx Talisman
-image=https://magiccards.info/scans/en/ia/306.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a89b2368-1180-4821-bcb8-8161c18e5538.jpg?1562926494
 value=2.367
 rarity=U
 type=Artifact

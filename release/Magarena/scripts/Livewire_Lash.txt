@@ -1,5 +1,5 @@
 name=Livewire Lash
-image=https://magiccards.info/scans/en/som/172.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4ac4633-066b-4897-b484-2ec654c7eaa1.jpg?1673149376
 value=3.932
 rarity=R
 type=Artifact

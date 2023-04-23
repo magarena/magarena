@@ -1,5 +1,5 @@
 name=Invigorating Boon
-image=https://magiccards.info/scans/en/on/267.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c46f324b-63c6-4fb5-a80a-e9da51c3eb77.jpg?1562941431
 value=2.857
 rarity=U
 type=Enchantment

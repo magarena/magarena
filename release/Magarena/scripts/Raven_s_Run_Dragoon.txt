@@ -1,5 +1,5 @@
 name=Raven's Run Dragoon
-image=https://magiccards.info/scans/en/shm/235.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b868da85-9d19-4407-a0c3-fc3b2b237cda.jpg?1562835106
 value=2.475
 rarity=C
 type=Creature

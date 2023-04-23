@@ -1,5 +1,5 @@
 name=Enlightened Ascetic
-image=https://magiccards.info/scans/en/ori/12.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76549fc3-5798-4c70-bb70-802b6f597eb7.jpg?1562026215
 image_updated=2015-11-05
 value=2.500
 rarity=C

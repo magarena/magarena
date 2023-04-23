@@ -1,5 +1,5 @@
 name=Brazen Buccaneers
-image=https://magiccards.info/scans/en/xln/134.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9ca29a73-9606-4422-9187-67e00dcd52aa.jpg?1562560844
 value=2.500
 rarity=C
 type=Creature

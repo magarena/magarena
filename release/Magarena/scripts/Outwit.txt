@@ -1,5 +1,5 @@
 name=Outwit
-image=https://magiccards.info/scans/en/avr/70.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/429f7cf0-579a-4003-b5cf-4baf5d420796.jpg?1592708662
 value=2.709
 rarity=C
 type=Instant

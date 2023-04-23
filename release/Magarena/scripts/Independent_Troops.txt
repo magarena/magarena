@@ -1,5 +1,5 @@
 name=Independent Troops
-image=https://magiccards.info/scans/en/p3k/114.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff7a4769-7a64-4016-8db0-b56c6b98aff3.jpg?1562258015
 value=1.645
 rarity=C
 type=Creature

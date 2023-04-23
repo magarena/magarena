@@ -1,5 +1,5 @@
 name=Roughshod Mentor
-image=https://magiccards.info/scans/en/shm/128.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abe77862-516f-4eb2-9a41-0c6401d02843.jpg?1562834499
 image_updated=2017-01-06
 value=3.173
 rarity=U

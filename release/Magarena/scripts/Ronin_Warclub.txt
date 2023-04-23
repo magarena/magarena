@@ -1,5 +1,5 @@
 name=Ronin Warclub
-image=https://magiccards.info/scans/en/bok/158.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46ad31cd-38dc-4fd3-b9e4-8988f4898719.jpg?1562876770
 value=3.144
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Duplicant
-image=https://magiccards.info/scans/en/ema/220.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18723171-b9bb-434f-a4db-e751249c3af1.jpg?1682210006
 value=4.545
 rarity=R
 type=Artifact,Creature

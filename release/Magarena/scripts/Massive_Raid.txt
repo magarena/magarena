@@ -1,5 +1,5 @@
 name=Massive Raid
-image=https://magiccards.info/scans/en/gtc/100.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b16fbd8-fb62-4f75-92b3-a6295d95b327.jpg?1561835836
 value=3.170
 removal=3
 rarity=C

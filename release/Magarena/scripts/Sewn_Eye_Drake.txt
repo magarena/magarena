@@ -1,5 +1,5 @@
 name=Sewn-Eye Drake
-image=https://magiccards.info/scans/en/arb/135.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbf97c08-e074-4353-b9fa-c79793622585.jpg?1562644576
 value=2.929
 rarity=C
 type=Creature

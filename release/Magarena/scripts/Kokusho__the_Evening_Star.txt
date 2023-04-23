@@ -1,5 +1,5 @@
 name=Kokusho, the Evening Star
-image=https://magiccards.info/scans/en/ima/95.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab56cedb-1bcd-48a5-8503-a8e324e236ad.jpg?1562852933
 image_updated=2017-04-12
 value=4.136
 rarity=R

@@ -1,5 +1,5 @@
 name=Sapphire Drake
-image=https://magiccards.info/scans/en/gtc/47.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0fe14cf-5d34-47d1-9071-4a532819719b.jpg?1561847160
 value=3.148
 rarity=U
 type=Creature

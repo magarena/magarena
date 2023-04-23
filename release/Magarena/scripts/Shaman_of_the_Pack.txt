@@ -1,5 +1,5 @@
 name=Shaman of the Pack
-image=https://magiccards.info/scans/en/ema/205.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da9705e2-40e5-4ec9-8aef-2eab28d5a66f.jpg?1631235549
 value=2.500
 rarity=U
 type=Creature

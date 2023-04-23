@@ -1,5 +1,5 @@
 name=Split-Tail Miko
-image=https://magiccards.info/scans/en/bok/23.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/0528fe29-f3c1-4d10-9030-053c3de57b7b.jpg?1562875245
 value=2.141
 rarity=C
 type=Creature

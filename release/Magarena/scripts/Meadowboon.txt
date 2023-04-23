@@ -1,5 +1,5 @@
 name=Meadowboon
-image=https://magiccards.info/scans/en/mma/22.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4dc0113-f03c-47c2-9424-4c546793d25d.jpg?1561968571
 value=3.750
 rarity=U
 type=Creature

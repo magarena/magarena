@@ -1,5 +1,5 @@
 name=Serendib Efreet
-image=https://magiccards.info/scans/en/ema/70.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30032a0b-dece-42a4-9309-fa9e9e277603.jpg?1600714001
 value=4.000
 rarity=R
 type=Creature

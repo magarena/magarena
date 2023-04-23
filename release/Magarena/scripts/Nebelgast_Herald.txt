@@ -1,5 +1,5 @@
 name=Nebelgast Herald
-image=https://magiccards.info/scans/en/emn/71.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b972aca-b24b-4628-aef9-95dec6546b0a.jpg?1641601987
 image_updated=2016-09-05
 value=2.500
 rarity=U

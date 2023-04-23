@@ -1,5 +1,5 @@
 name=Murderous Redcap
-image=https://magiccards.info/scans/en/mma/192.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acadf575-2076-4f0c-b66e-994898adf375.jpg?1547518234
 value=3.865
 removal=2
 rarity=U

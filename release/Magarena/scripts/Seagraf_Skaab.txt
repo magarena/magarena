@@ -1,5 +1,5 @@
 name=Seagraf Skaab
-image=https://magiccards.info/scans/en/soi/84.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/065d497d-5cfd-43c9-8c86-9a1da3d7e17e.jpg?1576384218
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Screeching Drake
-image=https://magiccards.info/scans/en/po2/44.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8ddae21e-20d8-4fd5-ae44-45bf31ddd1d1.jpg?1562869527
 value=2.727
 rarity=C
 type=Creature

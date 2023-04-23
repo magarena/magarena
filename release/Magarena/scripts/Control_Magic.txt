@@ -1,5 +1,5 @@
 name=Control Magic
-image=https://magiccards.info/scans/en/ema/42.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84992800-9bad-4598-afd4-f1e59d2e0956.jpg?1592672507
 value=4.500
 rarity=R
 type=Enchantment

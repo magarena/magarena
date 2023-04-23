@@ -1,5 +1,5 @@
 name=Argothian Wurm
-image=https://magiccards.info/scans/en/us/236.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93294349-75ae-4a6b-896d-b403a5d69e98.jpg?1562926099
 value=3.890
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Dwarven Nomad
-image=https://magiccards.info/scans/en/mr/170.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30b09e65-5e69-48f8-be9b-a1e9706f18bf.jpg?1562718333
 value=2.972
 rarity=C
 type=Creature

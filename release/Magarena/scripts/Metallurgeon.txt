@@ -1,5 +1,5 @@
 name=Metallurgeon
-image=https://magiccards.info/scans/en/ala/19.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8667b405-b871-4d66-936a-55569ac7d682.jpg?1562923347
 image_updated=2016-12-23
 value=3.125
 rarity=U

@@ -1,5 +1,5 @@
 name=Crook of Condemnation
-image=https://magiccards.info/scans/en/hou/159.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78f6d7c2-ee4f-4cd0-a9a2-d8469ff89291.jpg?1562804264
 value=2.500
 rarity=U
 type=Artifact

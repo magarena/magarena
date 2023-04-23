@@ -1,5 +1,5 @@
 name=High Market
-image=https://magiccards.info/scans/en/mm/320.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d56844f-ee3b-4161-85d2-18b872a9b465.jpg?1631589833
 image_updated=2016-02-29
 value=3.819
 rarity=R

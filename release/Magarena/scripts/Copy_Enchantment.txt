@@ -1,5 +1,5 @@
 name=Copy Enchantment
-image=https://magiccards.info/scans/en/rav/42.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac22117d-bd58-439f-b199-da72bc7160b2.jpg?1598914089
 value=3.917
 rarity=R
 type=Enchantment

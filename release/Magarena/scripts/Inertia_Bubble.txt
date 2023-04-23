@@ -1,5 +1,5 @@
 name=Inertia Bubble
-image=https://magiccards.info/scans/en/mi/37.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72b2d227-68b3-40e8-bef7-45ea43e17318.jpg?1562147856
 value=2.167
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Blanchwood Armor
-image=https://magiccards.info/scans/en/m19/169.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e41c0a68-53be-4905-8ed3-79b4782dfd6e.jpg?1674421424
 image_updated=2018-08-07
 value=4.335
 rarity=U

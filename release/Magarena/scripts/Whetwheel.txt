@@ -1,5 +1,5 @@
 name=Whetwheel
-image=https://magiccards.info/scans/en/fut/168.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc6040b6-cf02-4f7e-a275-177c3a6415aa.jpg?1562939302
 value=3.048
 rarity=R
 type=Artifact

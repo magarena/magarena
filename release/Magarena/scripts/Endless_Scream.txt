@@ -1,5 +1,5 @@
 name=Endless Scream
-image=https://magiccards.info/scans/en/tp/26.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9474231-34c5-4563-8a61-fd1bc2693f86.jpg?1562057346
 value=4.233
 rarity=C
 type=Enchantment

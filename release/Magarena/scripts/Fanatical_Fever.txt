@@ -1,5 +1,5 @@
 name=Fanatical Fever
-image=https://magiccards.info/scans/en/ia/122.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2abba7f1-5d07-4137-88a2-5967396a3e42.jpg?1587912003
 value=1.300
 rarity=U
 type=Instant

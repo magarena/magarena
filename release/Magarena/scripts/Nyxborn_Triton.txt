@@ -1,5 +1,5 @@
 name=Nyxborn Triton
-image=https://magiccards.info/scans/en/bng/46.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65371de6-13a2-401f-9334-ae9e19619487.jpg?1593091723
 value=3.114
 rarity=C
 type=Enchantment,Creature

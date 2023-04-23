@@ -1,5 +1,5 @@
 name=Accelerated Mutation
-image=https://magiccards.info/scans/en/sc/109.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/282f808c-0b58-4b98-aeda-f606a10d1a4b.jpg?1562526627
 value=2.641
 rarity=C
 type=Instant

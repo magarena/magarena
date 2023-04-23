@@ -1,5 +1,5 @@
 name=Endless Wurm
-image=https://magiccards.info/scans/en/us/249.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53772435-e20e-4b9e-a2f1-c1c6a4dcac79.jpg?1562912403
 value=4.250
 rarity=R
 type=Creature

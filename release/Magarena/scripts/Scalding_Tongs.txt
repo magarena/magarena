@@ -1,5 +1,5 @@
 name=Scalding Tongs
-image=https://magiccards.info/scans/en/tp/297.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34136f2c-3edd-4ca3-b1ef-1fdcaa4518a0.jpg?1562053288
 value=3.731
 rarity=R
 type=Artifact

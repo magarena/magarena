@@ -1,5 +1,5 @@
 name=Zombie Outlander
-image=https://magiccards.info/scans/en/cfx/133.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f27c2690-5121-452b-b82a-72acb8be6878.jpg?1562804630
 value=2.952
 rarity=C
 type=Creature

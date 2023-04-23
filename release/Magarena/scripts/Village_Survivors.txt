@@ -1,5 +1,5 @@
 name=Village Survivors
-image=https://magiccards.info/scans/en/dka/130.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13c0e852-9966-4145-b7c3-ac957f729376.jpg?1562899728
 value=3.205
 rarity=U
 type=Creature

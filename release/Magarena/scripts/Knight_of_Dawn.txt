@@ -1,5 +1,5 @@
 name=Knight of Dawn
-image=https://magiccards.info/scans/en/tp/238.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf0e5034-a134-4eb6-af8e-b2419b92b3a6.jpg?1562056390
 value=3.745
 rarity=U
 type=Creature

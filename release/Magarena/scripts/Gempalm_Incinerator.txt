@@ -1,5 +1,5 @@
 name=Gempalm Incinerator
-image=https://magiccards.info/scans/en/le/94.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/909ac95c-ee41-482c-8b4d-196fe0d5b3c1.jpg?1592764780
 image_updated=2016-12-03
 value=4.196
 rarity=U

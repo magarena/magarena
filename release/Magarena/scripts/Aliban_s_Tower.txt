@@ -1,5 +1,5 @@
 name=Aliban's Tower
-image=https://magiccards.info/scans/en/hl/76.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f711ea8-a73a-42da-8bf7-101ba588f203.jpg?1562587743
 value=2.115
 rarity=C
 type=Instant

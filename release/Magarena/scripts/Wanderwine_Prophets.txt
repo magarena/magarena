@@ -1,5 +1,5 @@
 name=Wanderwine Prophets
-image=https://magiccards.info/scans/en/lw/95.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cdbb6ff-c945-4dd6-aba6-4fd4b77824c0.jpg?1562352550
 value=3.841
 removal=2
 rarity=R

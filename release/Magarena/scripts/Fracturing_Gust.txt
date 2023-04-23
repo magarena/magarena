@@ -1,5 +1,5 @@
 name=Fracturing Gust
-image=https://magiccards.info/scans/en/shm/227.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffd726ce-85f8-4570-96e8-e0cfbd05045a.jpg?1562838667
 value=4.000
 rarity=R
 type=Instant

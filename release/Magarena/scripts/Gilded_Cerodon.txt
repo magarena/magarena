@@ -1,5 +1,5 @@
 name=Gilded Cerodon
-image=https://magiccards.info/scans/en/hou/94.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f68c8fbd-9223-447d-a85c-fa6222c75277.jpg?1562820187
 value=2.500
 rarity=C
 type=Creature

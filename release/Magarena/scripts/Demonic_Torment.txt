@@ -1,5 +1,5 @@
 name=Demonic Torment
-image=https://magiccards.info/scans/en/lg/9.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac439803-71cc-4139-9314-2c0fff2ef876.jpg?1562931337
 value=2.857
 rarity=U
 type=Enchantment

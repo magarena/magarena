@@ -1,5 +1,5 @@
 name=Snow-Covered Swamp
-image=https://magiccards.info/scans/en/cs/153.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6aa85af8-15f5-4620-8aea-0b45c28372ed.jpg?1631053431
 value=4.571
 rarity=B
 type=Basic,Snow,Land

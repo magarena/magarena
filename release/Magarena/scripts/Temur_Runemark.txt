@@ -1,5 +1,5 @@
 name=Temur Runemark
-image=https://magiccards.info/scans/en/frf/140.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddd76874-842e-4f4c-b18e-0e441dae59d7.jpg?1562830608
 value=2.500
 rarity=C
 type=Enchantment

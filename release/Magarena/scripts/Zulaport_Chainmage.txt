@@ -1,5 +1,5 @@
 name=Zulaport Chainmage
-image=https://magiccards.info/scans/en/ogw/93.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92461f3c-21dc-48a8-b532-9c4e2e1e80b5.jpg?1562924529
 image_updated=2016-02-29
 value=2.500
 rarity=C

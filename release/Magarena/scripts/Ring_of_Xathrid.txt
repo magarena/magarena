@@ -1,5 +1,5 @@
 name=Ring of Xathrid
-image=https://magiccards.info/scans/en/m13/215.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47e2aa59-63dc-4e28-8cdc-2ca868ff8f59.jpg?1562553242
 value=3.756
 rarity=U
 type=Artifact

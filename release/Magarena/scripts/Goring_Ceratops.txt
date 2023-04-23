@@ -1,5 +1,5 @@
 name=Goring Ceratops
-image=https://magiccards.info/scans/en/xln/13.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/8309f684-5912-4191-9f64-d573f1cc84c9.jpg?1562559115
 value=2.500
 rarity=R
 type=Creature

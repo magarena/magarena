@@ -1,5 +1,5 @@
 name=Blind Creeper
-image=https://magiccards.info/scans/en/5dn/42.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86d5440a-7460-4b4f-a167-a6c4fb2d855e.jpg?1562878236
 value=2.949
 rarity=C
 type=Creature

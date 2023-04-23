@@ -1,5 +1,5 @@
 name=Gaea's Revenge
-image=https://magiccards.info/scans/en/ori/177.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50fad73f-c6eb-46d7-8971-9be4d7d7b75f.jpg?1562019551
 image_updated=2015-11-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Burning Shield Askari
-image=https://magiccards.info/scans/en/mr/162.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/486547cd-d2e7-4c46-9f7b-81c4267d65cc.jpg?1562718810
 value=3.731
 rarity=C
 type=Creature

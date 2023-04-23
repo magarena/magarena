@@ -1,5 +1,5 @@
 name=Gift of Estates
-image=https://magiccards.info/scans/en/c14/73.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/561e1994-0b8d-436c-9934-41c486dc8ff8.jpg?1561942870
 value=2.500
 rarity=U
 type=Sorcery

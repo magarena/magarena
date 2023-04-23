@@ -1,5 +1,5 @@
 name=Grixis Panorama
-image=https://magiccards.info/scans/en/c17/254.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e49dd5f0-1afa-4301-acdb-28424e2553b9.jpg?1673485758
 image_updated=2017-10-03
 value=3.300
 rarity=C

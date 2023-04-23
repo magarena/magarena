@@ -1,5 +1,5 @@
 name=Viridian Longbow
-image=https://magiccards.info/scans/en/mi/270.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4607634-6206-4c6c-b389-abcbfe969b65.jpg?1631589299
 value=3.978
 rarity=C
 type=Artifact

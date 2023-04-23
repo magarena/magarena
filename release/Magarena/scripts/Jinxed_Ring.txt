@@ -1,5 +1,5 @@
 name=Jinxed Ring
-image=https://magiccards.info/scans/en/sh/131.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c675814-094c-45d4-93ee-0f50b4755e79.jpg?1562595926
 value=3.000
 rarity=R
 type=Artifact

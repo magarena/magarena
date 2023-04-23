@@ -1,5 +1,5 @@
 name=Tectonic Break
-image=https://magiccards.info/scans/en/mm/216.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9de0ee5d-10f6-4152-8416-1f2b749b439d.jpg?1562382077
 value=3.852
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Simic Ragworm
-image=https://magiccards.info/scans/en/di/93.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa1f4b84-dd5d-4f5f-808e-26ef9414b38a.jpg?1593273467
 value=2.955
 rarity=C
 type=Creature

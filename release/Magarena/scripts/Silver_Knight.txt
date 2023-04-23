@@ -1,5 +1,5 @@
 name=Silver Knight
-image=https://magiccards.info/scans/en/sc/23.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/297316bd-e91b-4b18-9d13-31dd51c92cce.jpg?1562903790
 value=4.288
 rarity=U
 type=Creature

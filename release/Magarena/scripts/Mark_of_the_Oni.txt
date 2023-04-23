@@ -1,5 +1,5 @@
 name=Mark of the Oni
-image=https://magiccards.info/scans/en/bok/73.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/632679e5-7368-4660-a765-07be196c3c35.jpg?1593860744
 value=3.683
 rarity=U
 type=Enchantment

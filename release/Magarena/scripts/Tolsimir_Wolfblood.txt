@@ -1,5 +1,5 @@
 name=Tolsimir Wolfblood
-image=https://magiccards.info/scans/en/rav/236.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/069ac859-e0ef-4685-bad3-5c741102b5b9.jpg?1598917578
 value=4.012
 rarity=R
 type=Legendary,Creature

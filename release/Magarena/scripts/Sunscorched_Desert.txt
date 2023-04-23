@@ -1,5 +1,5 @@
 name=Sunscorched Desert
-image=https://magiccards.info/scans/en/akh/249.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/405434c7-9206-45b7-af0f-d59aae294d39.jpg?1543676421
 value=2.500
 rarity=C
 type=Land

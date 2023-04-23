@@ -1,5 +1,5 @@
 name=Shriek Raptor
-image=https://magiccards.info/scans/en/nph/24.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73071a3b-9329-418e-9285-fa4765463d1f.jpg?1562878708
 value=2.670
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kiri-Onna
-image=https://magiccards.info/scans/en/sok/43.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dafb963c-18a5-4770-afb9-0121c614de40.jpg?1562496118
 value=1.688
 rarity=U
 type=Creature

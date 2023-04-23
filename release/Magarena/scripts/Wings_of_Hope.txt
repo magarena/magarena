@@ -1,5 +1,5 @@
 name=Wings of Hope
-image=https://magiccards.info/scans/en/in/289.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be0d2402-f1ef-4a71-ac01-c7099c4ce54c.jpg?1562933234
 value=3.346
 rarity=C
 type=Enchantment

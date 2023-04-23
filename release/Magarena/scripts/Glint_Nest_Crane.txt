@@ -1,5 +1,5 @@
 name=Glint-Nest Crane
-image=https://magiccards.info/scans/en/kld/50.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fa5b030-23a6-4fca-b318-c580e3ea2bad.jpg?1576381237
 image_updated=2016-10-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Illness in the Ranks
-image=https://magiccards.info/scans/en/gtc/69.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/989a68c1-3b76-4c2d-9db3-23c45be3f9ff.jpg?1561838259
 value=3.381
 rarity=U
 type=Enchantment

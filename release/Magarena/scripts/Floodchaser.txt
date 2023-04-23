@@ -1,5 +1,5 @@
 name=Floodchaser
-image=https://magiccards.info/scans/en/mt/34.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71265bb0-bf51-4d9d-b94c-c90adf65c55b.jpg?1562879216
 value=1.962
 rarity=C
 type=Creature

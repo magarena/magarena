@@ -1,5 +1,5 @@
 name=Mage il-Vec
-image=https://magiccards.info/scans/en/ex/86.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/672b4f9a-84e4-4a27-8d03-11a63a701fec.jpg?1562429833
 value=1.478
 rarity=C
 type=Creature

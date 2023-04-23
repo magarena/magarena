@@ -1,5 +1,5 @@
 name=Mox Diamond
-image=https://magiccards.info/scans/en/sh/132.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf9fecfd-d122-422f-bd0a-5bf69b434dfe.jpg?1562431287
 value=2.500
 rarity=R
 type=Artifact

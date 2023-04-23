@@ -1,5 +1,5 @@
 name=Emissary of Hope
-image=https://magiccards.info/scans/en/ds/3.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4c47553-4209-4634-a49c-25714cd3967b.jpg?1562640483
 value=2.481
 rarity=U
 type=Creature

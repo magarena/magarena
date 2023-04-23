@@ -1,5 +1,5 @@
 name=Marsh Boa
-image=https://magiccards.info/scans/en/pr/118.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87c99bb6-a483-4beb-b98c-eb641fe3d50a.jpg?1562920176
 value=3.083
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Unraveling Mummy
-image=https://magiccards.info/scans/en/hou/147.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe3802f3-feb3-4dcd-a5ba-f493baf3d447.jpg?1562821263
 value=2.500
 rarity=U
 type=Creature

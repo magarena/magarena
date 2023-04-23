@@ -1,5 +1,5 @@
 name=Aura Extraction
-image=https://magiccards.info/scans/en/on/5.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55d16883-5e98-4dd2-92dd-0ba92f1099cb.jpg?1562915090
 value=2.389
 rarity=U
 type=Instant

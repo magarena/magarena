@@ -1,5 +1,5 @@
 name=Null Champion
-image=https://magiccards.info/scans/en/roe/121.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bf39e84-a554-49e3-8f65-e304e1720818.jpg?1562706105
 value=3.344
 rarity=C
 type=Creature

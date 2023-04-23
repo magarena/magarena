@@ -1,5 +1,5 @@
 name=The Brute
-image=https://magiccards.info/scans/en/5e/272.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3ded8fa-facf-4196-8964-56ebc6424be1.jpg?1562594457
 value=1.712
 rarity=C
 type=Enchantment

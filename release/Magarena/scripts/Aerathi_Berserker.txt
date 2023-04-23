@@ -1,5 +1,5 @@
 name=Aerathi Berserker
-image=https://magiccards.info/scans/en/lg/131.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06673800-22a7-4ee3-92fa-7c7cd4865d30.jpg?1562857301
 image_updated=2016-09-27
 value=2.344
 rarity=U

@@ -1,5 +1,5 @@
 name=Cursebreak
-image=https://magiccards.info/scans/en/avr/14.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c71a0883-316c-4870-a029-25f16952fbc0.jpg?1592708254
 value=2.716
 removal=1
 rarity=C

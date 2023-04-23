@@ -1,5 +1,5 @@
 name=Rakshasa Gravecaller
-image=https://magiccards.info/scans/en/dtk/114.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bf584fd-b13b-4f86-9c9a-fa6514255aba.jpg?1562782434
 value=2.500
 rarity=U
 type=Creature

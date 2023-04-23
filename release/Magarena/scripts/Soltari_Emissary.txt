@@ -1,5 +1,5 @@
 name=Soltari Emissary
-image=https://magiccards.info/scans/en/tp/254.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f719b546-e6f8-4b6b-ada9-7050538f2186.jpg?1562944762
 value=3.758
 rarity=R
 type=Creature

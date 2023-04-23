@@ -1,5 +1,5 @@
 name=Floodgate
-image=https://magiccards.info/scans/en/mr/67.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb2f594d-e608-444b-b81f-836de2452868.jpg?1562722865
 value=4.377
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Teysa, Envoy of Ghosts
-image=https://magiccards.info/scans/en/dgm/108.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abb21cf7-c5e6-4be5-8da5-9d29e95e2208.jpg?1625978098
 image_updated=2016-02-29
 value=3.835
 rarity=R

@@ -1,5 +1,5 @@
 name=Astral Slide
-image=https://magiccards.info/scans/en/on/4.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba089228-135a-421b-b932-26b86e555b78.jpg?1562932445
 value=4.000
 rarity=U
 type=Enchantment

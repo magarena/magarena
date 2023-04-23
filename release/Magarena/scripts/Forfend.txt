@@ -1,5 +1,5 @@
 name=Forfend
-image=https://magiccards.info/scans/en/mt/10.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a410e333-60f2-4e19-ad0f-5259d4feab37.jpg?1562880520
 value=2.028
 rarity=C
 type=Instant

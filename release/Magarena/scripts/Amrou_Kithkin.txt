@@ -1,5 +1,5 @@
 name=Amrou Kithkin
-image=https://magiccards.info/scans/en/4e/252.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/278d86b4-8d62-4932-a66d-062971295631.jpg?1562903373
 value=3.044
 rarity=C
 type=Creature

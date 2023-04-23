@@ -1,5 +1,5 @@
 name=Urbis Protector
-image=https://magiccards.info/scans/en/a25/37.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86f41db0-335d-4745-8759-0129baf72992.jpg?1562437979
 image_updated=2018-04-27
 value=2.798
 rarity=U

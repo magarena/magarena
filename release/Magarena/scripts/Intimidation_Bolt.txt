@@ -1,5 +1,5 @@
 name=Intimidation Bolt
-image=https://magiccards.info/scans/en/arb/99.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17e4fb54-9f31-4d75-b4ab-7b11f745b807.jpg?1562639881
 value=3.430
 rarity=U
 type=Instant

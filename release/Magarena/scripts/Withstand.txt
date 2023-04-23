@@ -1,5 +1,5 @@
 name=Withstand
-image=https://magiccards.info/scans/en/gp/21.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb458f79-13dd-4446-be75-463f19548867.jpg?1593271961
 value=1.952
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Temple of Triumph
-image=https://magiccards.info/scans/en/ths/228.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f7eb4fa-8950-42e5-8695-b9c3bba91f7d.jpg?1682210760
 value=3.518
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Scatter Arc
-image=https://magiccards.info/scans/en/gtc/48.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32ed969f-2c8e-4421-9448-dc5a2afdc81d.jpg?1561821983
 value=2.420
 rarity=C
 type=Instant

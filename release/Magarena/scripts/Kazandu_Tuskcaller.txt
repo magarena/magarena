@@ -1,5 +1,5 @@
 name=Kazandu Tuskcaller
-image=https://magiccards.info/scans/en/roe/191.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5453591-6377-40de-892c-e8dd46687d11.jpg?1652016207
 value=3.706
 rarity=R
 type=Creature

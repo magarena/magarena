@@ -1,5 +1,5 @@
 name=Wasitora, Nekoru Queen
-image=https://magiccards.info/scans/en/c17/49.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07790bd5-0d27-490e-b1ae-3b866882461e.jpg?1673149269
 image_updated=2017-10-03
 value=2.500
 rarity=R

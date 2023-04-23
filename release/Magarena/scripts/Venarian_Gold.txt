@@ -1,5 +1,5 @@
 name=Venarian Gold
-image=https://magiccards.info/scans/en/lg/83.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11fb92c0-bb1e-463a-a6b6-887a5d0cb873.jpg?1579814183
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Otherworld Atlas
-image=https://magiccards.info/scans/en/avr/219.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46e4aa67-4643-42ff-8172-200498686494.jpg?1592709590
 value=2.975
 rarity=R
 type=Artifact

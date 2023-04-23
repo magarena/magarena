@@ -1,5 +1,5 @@
 name=Nim Grotesque
-image=https://magiccards.info/scans/en/5dn/56.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11ae8bc7-8bf1-4fce-afaa-76acfb261419.jpg?1562875526
 value=1.812
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Daring Leap
-image=https://magiccards.info/scans/en/ps/101.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37ec6c4b-2de0-4759-a25d-007706cb18cc.jpg?1562906760
 value=2.345
 rarity=C
 type=Instant

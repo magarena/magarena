@@ -1,5 +1,5 @@
 name=Caldera Kavu
-image=https://magiccards.info/scans/en/ps/58.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcad32aa-2ce1-402d-a9d8-ad5c81fe4c5b.jpg?1562948518
 value=3.000
 rarity=C
 type=Creature

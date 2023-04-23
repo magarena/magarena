@@ -1,5 +1,5 @@
 name=Drift of Phantasms
-image=https://magiccards.info/scans/en/rav/46.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1096ce5-f776-4028-b231-e6eaee35014b.jpg?1598914152
 value=3.946
 rarity=C
 type=Creature

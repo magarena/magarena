@@ -1,5 +1,5 @@
 name=Metamorphic Wurm
-image=https://magiccards.info/scans/en/od/250.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f47e020a-ed73-465a-b7eb-a4eeccd096cc.jpg?1562940941
 value=3.750
 rarity=U
 type=Creature

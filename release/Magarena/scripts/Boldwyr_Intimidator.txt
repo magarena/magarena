@@ -1,5 +1,5 @@
 name=Boldwyr Intimidator
-image=https://magiccards.info/scans/en/cns/137.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/aba9a42c-6bb8-4f77-9d3a-e749713b2431.jpg?1562929621
 value=3.500
 rarity=U
 type=Creature

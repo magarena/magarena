@@ -1,5 +1,5 @@
 name=Pilfered Plans
-image=https://magiccards.info/scans/en/mm3/178.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4628454-65f0-4cf7-82b5-3c33e0b3a705.jpg?1593814520
 image_updated=2017-08-08
 value=3.745
 rarity=C

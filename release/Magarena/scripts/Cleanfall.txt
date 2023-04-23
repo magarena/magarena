@@ -1,5 +1,5 @@
 name=Cleanfall
-image=https://magiccards.info/scans/en/chk/6.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9897707f-9669-4d44-8607-cba569da73e0.jpg?1562762953
 value=2.775
 rarity=U
 type=Sorcery

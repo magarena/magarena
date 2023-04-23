@@ -1,5 +1,5 @@
 name=Courier's Capsule
-image=https://magiccards.info/scans/en/ala/37.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39ae12ff-8039-4aac-aa50-f879376888a1.jpg?1562702873
 value=3.940
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Krenko's Command
-image=https://magiccards.info/scans/en/m13/139.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1a6efce-e970-4ec3-80b4-c639d0e98186.jpg?1592764866
 image_updated=2016-12-21
 value=3.618
 rarity=C

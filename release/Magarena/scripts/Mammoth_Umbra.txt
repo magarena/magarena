@@ -1,5 +1,5 @@
 name=Mammoth Umbra
-image=https://magiccards.info/scans/en/pc2/10.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9f9195c-cd12-47b7-8ebc-5c4a77a9002a.jpg?1547515665
 value=2.841
 rarity=U
 type=Enchantment

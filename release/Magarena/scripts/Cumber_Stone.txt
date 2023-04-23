@@ -1,5 +1,5 @@
 name=Cumber Stone
-image=https://magiccards.info/scans/en/cfx/24.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7963ff52-1897-4f62-a91d-b0eaf155fce9.jpg?1562801887
 value=3.000
 removal=1
 rarity=U

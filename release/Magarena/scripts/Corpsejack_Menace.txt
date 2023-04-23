@@ -1,5 +1,5 @@
 name=Corpsejack Menace
-image=https://magiccards.info/scans/en/ima/197.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29538ff4-e28f-44d9-af23-6796edd56268.jpg?1562272935
 image_updated=2017-04-12
 value=4.051
 rarity=U

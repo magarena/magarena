@@ -1,5 +1,5 @@
 name=Elspeth Tirel
-image=https://magiccards.info/scans/en/som/6.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebe9116e-7b04-4f2a-aa67-89a42c6e1801.jpg?1562824693
 value=3.998
 rarity=M
 type=Legendary,Planeswalker

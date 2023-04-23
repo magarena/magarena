@@ -1,5 +1,5 @@
 name=Embargo
-image=https://magiccards.info/scans/en/mm/77.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fca3c65-f20e-4978-bfbb-ee7f9e1d829f.jpg?1562380390
 value=3.870
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Burning Sands
-image=https://magiccards.info/scans/en/od/180.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a5d5eef-6e3c-4907-a277-a13de2916e2b.jpg?1562923711
 value=3.986
 rarity=R
 type=Enchantment

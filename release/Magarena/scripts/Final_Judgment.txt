@@ -1,5 +1,5 @@
 name=Final Judgment
-image=https://magiccards.info/scans/en/bok/4.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2503e136-031f-498a-b042-4077baebe8f8.jpg?1562876056
 value=4.187
 rarity=R
 type=Sorcery

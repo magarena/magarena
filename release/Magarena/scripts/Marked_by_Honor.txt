@@ -1,5 +1,5 @@
 name=Marked by Honor
-image=https://magiccards.info/scans/en/m15/17.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e944e39b-5268-47c0-8b09-2e666315e209.jpg?1562944185
 value=2.000
 rarity=C
 type=Enchantment

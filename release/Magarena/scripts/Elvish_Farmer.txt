@@ -1,5 +1,5 @@
 name=Elvish Farmer
-image=https://magiccards.info/scans/en/fe/71.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e37a5d9-2b6f-4412-aec2-0d6161e2a7d2.jpg?1562869985
 value=3.234
 rarity=R
 type=Creature

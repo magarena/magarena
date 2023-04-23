@@ -1,5 +1,5 @@
 name=Dragon Mantle
-image=https://magiccards.info/scans/en/ths/119.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca32fd66-f7f1-4e50-817f-bb259f690f00.jpg?1608910171
 value=3.603
 rarity=C
 type=Enchantment

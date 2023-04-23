@@ -1,5 +1,5 @@
 name=Consuming Fervor
-image=https://magiccards.info/scans/en/akh/126.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d529d230-89b0-453b-987b-a47e15bc3830.jpg?1543675535
 value=2.500
 rarity=U
 type=Enchantment

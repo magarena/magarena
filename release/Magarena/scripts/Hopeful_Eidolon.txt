@@ -1,5 +1,5 @@
 name=Hopeful Eidolon
-image=https://magiccards.info/scans/en/ths/19.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c69995b-ef31-4635-8d5a-b31f73993364.jpg?1562817802
 value=3.612
 rarity=C
 type=Enchantment,Creature

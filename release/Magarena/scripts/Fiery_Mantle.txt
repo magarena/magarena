@@ -1,5 +1,5 @@
 name=Fiery Mantle
-image=https://magiccards.info/scans/en/us/186.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c41deea2-c12f-40cd-8fc4-47227c762f42.jpg?1562936465
 value=3.426
 rarity=C
 type=Enchantment

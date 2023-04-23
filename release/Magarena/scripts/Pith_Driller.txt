@@ -1,5 +1,5 @@
 name=Pith Driller
-image=https://magiccards.info/scans/en/nph/69.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28e960c6-6da0-4679-87eb-55bac890e0c6.jpg?1562876210
 value=3.021
 rarity=C
 type=Artifact,Creature

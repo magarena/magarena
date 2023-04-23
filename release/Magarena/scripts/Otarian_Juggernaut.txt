@@ -1,5 +1,5 @@
 name=Otarian Juggernaut
-image=https://magiccards.info/scans/en/od/305.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/752420dc-d69a-4c9d-b563-f8928a4a0920.jpg?1562916698
 value=1.720
 rarity=R
 type=Artifact,Creature

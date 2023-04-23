@@ -1,5 +1,5 @@
 name=Desperate Ravings
-image=https://magiccards.info/scans/en/ema/125.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2e59ba7-e4e1-4c51-a34c-17a48850a0f5.jpg?1576636340
 value=4.007
 rarity=C
 type=Instant

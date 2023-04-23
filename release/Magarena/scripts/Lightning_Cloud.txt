@@ -1,5 +1,5 @@
 name=Lightning Cloud
-image=https://magiccards.info/scans/en/vi/87.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fcfc2ad-a1a4-4f65-a239-f11383aaafe1.jpg?1562278141
 value=3.065
 rarity=R
 type=Enchantment

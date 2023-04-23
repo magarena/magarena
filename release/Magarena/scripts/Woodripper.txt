@@ -1,5 +1,5 @@
 name=Woodripper
-image=https://magiccards.info/scans/en/ne/125.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5126b782-d74c-40ca-a9b2-a6c78f94d138.jpg?1562629900
 value=3.731
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Cold-Water Snapper
-image=https://magiccards.info/scans/en/dom/48.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf339549-4325-40c6-adde-0cd31bb738e0.jpg?1562743213
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shrapnel Blast
-image=https://magiccards.info/scans/en/m15/161.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae1c5afc-81b4-438a-928e-0b0aefae191a.jpg?1561759352
 value=3.667
 rarity=U
 type=Instant

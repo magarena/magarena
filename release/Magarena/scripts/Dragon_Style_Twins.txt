@@ -1,5 +1,5 @@
 name=Dragon-Style Twins
-image=https://magiccards.info/scans/en/ktk/108.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/646edf58-4bc5-4d87-af68-b8b006ccb806.jpg?1562787685
 value=3.833
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Swift Warden
-image=https://magiccards.info/scans/en/rix/146.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1531cb47-b0ff-4d66-acf2-ef5bb5f690fc.jpg?1555040741
 value=2.500
 rarity=U
 type=Creature

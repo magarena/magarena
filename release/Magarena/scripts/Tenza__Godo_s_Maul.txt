@@ -1,5 +1,5 @@
 name=Tenza, Godo's Maul
-image=https://magiccards.info/scans/en/chk/271.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f918d2a-5769-43ce-a8e8-41db6c8f251d.jpg?1676318255
 value=3.620
 rarity=U
 type=Legendary,Artifact

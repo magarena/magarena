@@ -1,5 +1,5 @@
 name=Plunder
-image=https://magiccards.info/scans/en/ts/174.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79cff220-b1a6-4da6-b765-25a583b33de2.jpg?1562920606
 value=2.052
 rarity=C
 type=Sorcery

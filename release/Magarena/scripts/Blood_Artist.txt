@@ -1,5 +1,5 @@
 name=Blood Artist
-image=https://magiccards.info/scans/en/ema/81.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/693dd112-d04a-4404-8fce-74f7e5497312.jpg?1673147465
 value=3.955
 rarity=U
 type=Creature

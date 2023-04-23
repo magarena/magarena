@@ -1,5 +1,5 @@
 name=Circle of Flame
-image=https://magiccards.info/scans/en/m15/135.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96cbfd4a-ac95-4191-84f9-199a9e1807c4.jpg?1562791260
 value=2.300
 rarity=U
 type=Enchantment

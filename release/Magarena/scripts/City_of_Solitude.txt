@@ -1,5 +1,5 @@
 name=City of Solitude
-image=https://magiccards.info/scans/en/vi/52.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be499b81-bb2d-4f1d-9deb-c8bfcdca8e13.jpg?1562278627
 value=4.435
 rarity=R
 type=Enchantment

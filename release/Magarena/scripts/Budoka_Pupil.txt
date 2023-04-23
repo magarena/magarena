@@ -1,5 +1,5 @@
 name=Budoka Pupil
-image=https://magiccards.info/scans/en/bok/122a.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73636ca0-2309-4bb3-9300-8bd0c0bb5b31.jpg?1562877808
 value=3.019
 rarity=U
 type=Creature

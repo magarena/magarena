@@ -1,5 +1,5 @@
 name=Moonlit Strider
-image=https://magiccards.info/scans/en/mm2/27.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04fe00af-1634-45bd-bf1b-42997c4c3359.jpg?1562258525
 value=2.278
 rarity=C
 type=Creature

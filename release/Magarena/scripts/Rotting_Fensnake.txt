@@ -1,5 +1,5 @@
 name=Rotting Fensnake
-image=https://magiccards.info/scans/en/isd/113.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c21cbb10-9157-4887-a752-29b9e94fc77a.jpg?1562836560
 value=2.412
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Angelic Protector
-image=https://magiccards.info/scans/en/tp/214.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21c85b48-9603-4db3-95d2-b5ce794e4634.jpg?1562428649
 value=2.979
 rarity=U
 type=Creature

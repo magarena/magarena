@@ -1,5 +1,5 @@
 name=Gloomlance
-image=https://magiccards.info/scans/en/shm/67.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b45bfb2-7c48-4da5-a0fd-29d353221814.jpg?1562832072
 value=2.216
 rarity=C
 type=Sorcery

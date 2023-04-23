@@ -1,5 +1,5 @@
 name=Jokulmorder
-image=https://magiccards.info/scans/en/cs/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8bd1c2f-dab8-4f22-9400-a0e45618757a.jpg?1593274954
 value=2.783
 rarity=R
 type=Creature

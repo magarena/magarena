@@ -1,5 +1,5 @@
 name=Kitsune Riftwalker
-image=https://magiccards.info/scans/en/chk/29.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f545d9d0-52d8-4b90-a8bb-178f4ba3c4b7.jpg?1562765672
 value=1.833
 rarity=C
 type=Creature

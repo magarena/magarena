@@ -1,5 +1,5 @@
 name=Manor Skeleton
-image=https://magiccards.info/scans/en/isd/106.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7b45197-d5c2-48c8-b72e-00236552e338.jpg?1562838953
 value=3.008
 rarity=C
 type=Creature

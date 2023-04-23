@@ -1,5 +1,5 @@
 name=Ordeal of Nylea
-image=https://magiccards.info/scans/en/ths/170.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdbbbe4a-976c-4eb3-b32c-eef892b7699d.jpg?1651656014
 value=3.562
 rarity=U
 type=Enchantment

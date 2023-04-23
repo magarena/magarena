@@ -1,5 +1,5 @@
 name=Colossal Dreadmaw
-image=https://magiccards.info/scans/en/m19/172.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8059c52b-5d25-4052-b48a-e9e219a7a546.jpg?1594736914
 image_updated=2018-08-07
 value=2.500
 rarity=C

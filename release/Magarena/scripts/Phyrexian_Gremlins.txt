@@ -1,5 +1,5 @@
 name=Phyrexian Gremlins
-image=https://magiccards.info/scans/en/aq/48.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21a985a9-5612-4844-982e-fd1aa6249770.jpg?1562902131
 value=3.542
 rarity=C
 type=Creature

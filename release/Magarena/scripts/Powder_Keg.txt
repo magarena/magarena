@@ -1,5 +1,5 @@
 name=Powder Keg
-image=https://magiccards.info/scans/en/ud/136.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d9715c2-9036-4ae2-a5b4-1b190d50c963.jpg?1562443764
 value=4.411
 rarity=R
 type=Artifact

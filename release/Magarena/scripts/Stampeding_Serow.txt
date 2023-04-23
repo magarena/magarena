@@ -1,5 +1,5 @@
 name=Stampeding Serow
-image=https://magiccards.info/scans/en/sok/150.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47c63065-6051-4193-8457-713a8a800393.jpg?1562493496
 value=3.632
 rarity=U
 type=Creature

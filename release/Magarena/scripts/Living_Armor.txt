@@ -1,5 +1,5 @@
 name=Living Armor
-image=https://magiccards.info/scans/en/dk/101.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9da41f7-c1d2-4d5c-b6a5-09f6cc05cd4a.jpg?1562932409
 image_updated=2016-12-21
 value=3.033
 rarity=U

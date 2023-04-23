@@ -1,5 +1,5 @@
 name=Skyshroud Blessing
-image=https://magiccards.info/scans/en/ps/92.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0c10b16-97b1-4a36-b2b4-f0c28ead3eb4.jpg?1562935752
 value=3.204
 rarity=U
 type=Instant

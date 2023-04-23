@@ -1,5 +1,5 @@
 name=Great Hart
-image=https://magiccards.info/scans/en/bng/15.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70cd7d2b-e9c4-4900-89a0-f6eb0c6cb22b.jpg?1593860910
 value=1.727
 rarity=C
 type=Creature

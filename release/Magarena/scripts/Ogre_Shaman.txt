@@ -1,5 +1,5 @@
 name=Ogre Shaman
-image=https://magiccards.info/scans/en/ex/91.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5e11a62-7885-4494-b128-938485dea8a5.jpg?1562431777
 value=2.922
 rarity=R
 type=Creature

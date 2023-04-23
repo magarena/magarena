@@ -1,5 +1,5 @@
 name=Shivan Dragon
-image=https://magiccards.info/scans/en/ori/285.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/227cf1b5-f85b-41fe-be98-66e383652039.jpg?1592518393
 value=3.214
 rarity=R
 type=Creature

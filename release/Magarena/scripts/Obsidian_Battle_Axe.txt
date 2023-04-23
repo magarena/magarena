@@ -1,5 +1,5 @@
 name=Obsidian Battle-Axe
-image=https://magiccards.info/scans/en/mt/144.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7978371-9ea8-4264-9a2f-38226ea25018.jpg?1562881317
 value=3.602
 rarity=U
 type=Tribal,Artifact

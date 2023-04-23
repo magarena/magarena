@@ -1,5 +1,5 @@
 name=Lightkeeper of Emeria
-image=https://magiccards.info/scans/en/cmd/18.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2744bacb-78c4-4d6c-8278-264a775a3773.jpg?1592672387
 value=2.512
 rarity=U
 type=Creature

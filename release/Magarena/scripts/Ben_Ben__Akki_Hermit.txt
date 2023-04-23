@@ -1,5 +1,5 @@
 name=Ben-Ben, Akki Hermit
-image=https://magiccards.info/scans/en/chk/157.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7c015a6-4d7d-421b-84fa-30bf070cff83.jpg?1562764687
 value=2.685
 rarity=R
 type=Legendary,Creature

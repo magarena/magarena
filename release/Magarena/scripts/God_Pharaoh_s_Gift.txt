@@ -1,5 +1,5 @@
 name=God-Pharaoh's Gift
-image=https://magiccards.info/scans/en/hou/161.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2e85a9e-4c37-4721-b7ea-de3413ec39df.jpg?1562811437
 value=2.500
 rarity=R
 type=Artifact

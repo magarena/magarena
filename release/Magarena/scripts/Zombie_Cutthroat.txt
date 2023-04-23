@@ -1,5 +1,5 @@
 name=Zombie Cutthroat
-image=https://magiccards.info/scans/en/sc/81.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe491cba-6ec7-4c44-ad1e-832d936986a0.jpg?1562537392
 value=1.653
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Obscuring Aether
-image=https://magiccards.info/scans/en/dtk/194.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bff71e3-b309-4659-9d43-7a0d8ada1efc.jpg?1562782435
 image_updated=2016-09-27
 value=2.500
 rarity=R

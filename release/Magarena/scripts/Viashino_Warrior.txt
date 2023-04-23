@@ -1,5 +1,5 @@
 name=Viashino Warrior
-image=https://magiccards.info/scans/en/6e/213.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb467271-898f-4bcd-8533-e8165b318b43.jpg?1562822151
 value=2.436
 rarity=C
 type=Creature

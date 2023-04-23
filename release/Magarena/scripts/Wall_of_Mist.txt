@@ -1,5 +1,5 @@
 name=Wall of Mist
-image=https://magiccards.info/scans/en/m19/83.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62a37646-8f7c-40fc-851d-e3fdd205b012.jpg?1615126311
 value=2.500
 rarity=C
 type=Creature

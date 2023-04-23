@@ -1,5 +1,5 @@
 name=Shaman of Spring
-image=https://magiccards.info/scans/en/m15/199.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e974df6-d78a-43ea-ada5-17c53fcca97b.jpg?1562790755
 value=3.083
 rarity=C
 type=Creature

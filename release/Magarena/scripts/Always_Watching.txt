@@ -1,5 +1,5 @@
 name=Always Watching
-image=https://magiccards.info/scans/en/soi/1.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf65bfa0-9c05-4e9e-b4c7-d705e1a822c1.jpg?1592764645
 value=2.500
 rarity=R
 type=Enchantment

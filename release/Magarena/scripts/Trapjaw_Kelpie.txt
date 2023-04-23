@@ -1,5 +1,5 @@
 name=Trapjaw Kelpie
-image=https://magiccards.info/scans/en/eve/164.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62615f86-0431-4709-b41c-af43f7793fdb.jpg?1562915541
 value=2.056
 rarity=C
 type=Creature

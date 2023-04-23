@@ -1,5 +1,5 @@
 name=Resilient Wanderer
-image=https://magiccards.info/scans/en/od/43.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e5a61de-ee4e-4097-b342-b5f2c976e16e.jpg?1562912391
 value=2.888
 rarity=U
 type=Creature

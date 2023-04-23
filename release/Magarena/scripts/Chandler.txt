@@ -1,5 +1,5 @@
 name=Chandler
-image=https://magiccards.info/scans/en/hl/88.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dd3a8e3-9a90-44f4-996c-57242d3c47a5.jpg?1562587277
 value=2.836
 rarity=C
 type=Legendary,Creature

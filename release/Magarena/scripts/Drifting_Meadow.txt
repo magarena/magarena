@@ -1,5 +1,5 @@
 name=Drifting Meadow
-image=https://magiccards.info/scans/en/c14/292.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64dde056-f16f-495b-bba6-2e6edc8cb63a.jpg?1591321972
 image_updated=2016-02-29
 value=3.438
 rarity=C

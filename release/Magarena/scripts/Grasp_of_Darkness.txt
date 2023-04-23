@@ -1,5 +1,5 @@
 name=Grasp of Darkness
-image=https://magiccards.info/scans/en/ogw/85.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/7737b578-8ae3-4846-b508-93ef40f25244.jpg?1594736166
 image_updated=2016-02-29
 value=4.029
 removal=3

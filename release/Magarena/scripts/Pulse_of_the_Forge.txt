@@ -1,5 +1,5 @@
 name=Pulse of the Forge
-image=https://magiccards.info/scans/en/ds/66.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea3ed9c8-b552-4a9a-b77a-8b148638b4f0.jpg?1562640294
 value=4.245
 removal=4
 rarity=R

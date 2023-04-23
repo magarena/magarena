@@ -1,5 +1,5 @@
 name=Crosis's Charm
-image=https://magiccards.info/scans/en/c17/169.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5e1e94d-6876-4351-9c6e-98882e277ccc.jpg?1562621140
 image_updated=2017-10-03
 value=4.029
 rarity=U

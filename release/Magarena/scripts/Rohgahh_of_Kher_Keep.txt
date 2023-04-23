@@ -1,5 +1,5 @@
 name=Rohgahh of Kher Keep
-image=https://magiccards.info/scans/en/lg/295.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/1429cc3d-f6a2-4011-b716-5c3e0cf251d0.jpg?1562899257
 value=3.090
 rarity=R
 type=Legendary,Creature

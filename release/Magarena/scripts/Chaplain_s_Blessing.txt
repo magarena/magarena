@@ -1,5 +1,5 @@
 name=Chaplain's Blessing
-image=https://magiccards.info/scans/en/soi/10.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f70ea481-1751-4097-af41-2d13fe79e788.jpg?1576383706
 value=2.500
 rarity=C
 type=Sorcery

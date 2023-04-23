@@ -1,5 +1,5 @@
 name=Gustcloak Sentinel
-image=https://magiccards.info/scans/en/on/37.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6aba9c7-7f91-4f06-915b-70ed7db8f95f.jpg?1562840725
 image_updated=2016-12-04
 value=3.389
 rarity=U

@@ -1,5 +1,5 @@
 name=Malevolent Whispers
-image=https://magiccards.info/scans/en/soi/173.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4b0da4b-88b0-4f9a-b16f-3ad383493d1f.jpg?1568004451
 value=2.500
 rarity=U
 type=Sorcery

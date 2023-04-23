@@ -1,5 +1,5 @@
 name=Elephant Ambush
-image=https://magiccards.info/scans/en/od/240.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4abdf1c-a0a9-4e1d-b448-58742830f767.jpg?1562928672
 value=3.333
 rarity=C
 type=Instant

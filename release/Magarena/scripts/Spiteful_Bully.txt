@@ -1,5 +1,5 @@
 name=Spiteful Bully
-image=https://magiccards.info/scans/en/ne/72.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5535d14a-7126-4a94-96a0-e17ad5c72070.jpg?1562629981
 value=2.561
 rarity=C
 type=Creature

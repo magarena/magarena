@@ -1,5 +1,5 @@
 name=Snow-Covered Forest
-image=https://magiccards.info/scans/en/cs/155.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca17acea-f079-4e53-8176-a2f5c5c408a1.jpg?1631053531
 value=4.538
 rarity=B
 type=Basic,Snow,Land

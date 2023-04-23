@@ -1,5 +1,5 @@
 name=Gigantiform
-image=https://magiccards.info/scans/en/zen/162.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa476306-9d6b-45ed-9e6c-fd4aee6592e7.jpg?1562615338
 value=3.844
 rarity=R
 type=Enchantment

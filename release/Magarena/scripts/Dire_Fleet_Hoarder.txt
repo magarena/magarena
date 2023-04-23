@@ -1,5 +1,5 @@
 name=Dire Fleet Hoarder
-image=https://magiccards.info/scans/en/xln/102.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6f86b94-2a86-4120-97cd-ec2c89d106cb.jpg?1598306532
 value=2.500
 rarity=C
 type=Creature

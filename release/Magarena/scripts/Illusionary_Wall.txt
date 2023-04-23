@@ -1,5 +1,5 @@
 name=Illusionary Wall
-image=https://magiccards.info/scans/en/ia/78.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1800174-b6dd-49c3-865a-5292c8563441.jpg?1559592377
 value=3.750
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Meteor Storm
-image=https://magiccards.info/scans/en/in/256.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36489b24-f8a8-46b6-b879-0a5ce400a6dc.jpg?1562905963
 value=1.929
 rarity=R
 type=Enchantment

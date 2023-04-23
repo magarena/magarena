@@ -1,5 +1,5 @@
 name=Kjeldoran Dead
-image=https://magiccards.info/scans/en/cstd/28.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/581c6102-99cd-4768-a5d3-3e724490db17.jpg?1562868572
 value=3.688
 rarity=C
 type=Creature

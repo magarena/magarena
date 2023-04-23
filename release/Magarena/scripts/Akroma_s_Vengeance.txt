@@ -1,5 +1,5 @@
 name=Akroma's Vengeance
-image=https://magiccards.info/scans/en/a25/3.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e45b4cba-cd60-4491-a334-30976d0990b7.jpg?1591319847
 image_updated=2018-04-26
 value=4.000
 rarity=R

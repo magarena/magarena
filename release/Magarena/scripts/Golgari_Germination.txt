@@ -1,5 +1,5 @@
 name=Golgari Germination
-image=https://magiccards.info/scans/en/mm3/167.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d03f6eb-a146-45e8-a8e0-a46ec0c20c1d.jpg?1593814383
 image_updated=2017-08-08
 value=4.188
 rarity=U

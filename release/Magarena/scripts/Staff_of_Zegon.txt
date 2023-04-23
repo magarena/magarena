@@ -1,5 +1,5 @@
 name=Staff of Zegon
-image=https://magiccards.info/scans/en/aq/30.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/397a16db-dcba-4fca-a58b-438e43d7d574.jpg?1562908530
 value=2.455
 rarity=C
 type=Artifact

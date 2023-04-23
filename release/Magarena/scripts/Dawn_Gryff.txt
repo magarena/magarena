@@ -1,5 +1,5 @@
 name=Dawn Gryff
-image=https://magiccards.info/scans/en/emn/19.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42d30894-82b9-4af8-b0bb-48a78acbc4bd.jpg?1576383815
 image_updated=2016-09-05
 value=2.500
 rarity=C

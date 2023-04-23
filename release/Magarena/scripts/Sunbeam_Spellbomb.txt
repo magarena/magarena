@@ -1,5 +1,5 @@
 name=Sunbeam Spellbomb
-image=https://magiccards.info/scans/en/mi/250.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d23ffdb7-9f8e-4376-9431-cf1c1814f2c4.jpg?1562158729
 value=3.403
 rarity=C
 type=Artifact

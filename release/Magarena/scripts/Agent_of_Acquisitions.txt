@@ -1,5 +1,5 @@
 name=Agent of Acquisitions
-image=https://magiccards.info/scans/en/cns/54.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c57def6f-cc2a-4aec-927b-6a561d9fa7a1.jpg?1562866868
 value=3.909
 rarity=U
 type=Artifact,Creature

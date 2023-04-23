@@ -1,5 +1,5 @@
 name=Kavu Runner
-image=https://magiccards.info/scans/en/in/150.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bc1b462-4e3c-47cc-87c5-f6e29dd70c01.jpg?1562903915
 value=2.516
 rarity=U
 type=Creature

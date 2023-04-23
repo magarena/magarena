@@ -1,5 +1,5 @@
 name=Orzhova, the Church of Deals
-image=https://magiccards.info/scans/en/gp/162.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9015cc09-56c9-4d8f-b241-a0cfaec7e1f1.jpg?1593273004
 value=2.919
 rarity=U
 type=Land

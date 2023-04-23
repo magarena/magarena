@@ -1,5 +1,5 @@
 name=Mistcutter Hydra
-image=https://magiccards.info/scans/en/ths/162.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c844ed7-8ed2-4a39-9134-e14e476ab0c4.jpg?1562816923
 value=3.610
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Vedalken Anatomist
-image=https://magiccards.info/scans/en/mbs/36.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c13bb9b-c4e9-4b82-852a-dbd5602b1aa9.jpg?1562609537
 value=3.349
 rarity=U
 type=Creature

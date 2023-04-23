@@ -1,5 +1,5 @@
 name=Ghoultree
-image=https://magiccards.info/scans/en/dka/115.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a413c65e-5965-429b-8c25-11f8b73cba03.jpg?1562933717
 value=3.889
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Celestial Purge
-image=https://magiccards.info/scans/en/mm2/11.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd38afd4-d7a4-493d-bdea-72be9a1d9a07.jpg?1562267422
 value=3.645
 removal=4
 rarity=U

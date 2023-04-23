@@ -1,5 +1,5 @@
 name=Riftwing Cloudskate
-image=https://magiccards.info/scans/en/mma/62.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a2b228d-db4d-44a3-b208-6cf7a9f57da6.jpg?1619394565
 value=2.500
 rarity=U
 type=Creature

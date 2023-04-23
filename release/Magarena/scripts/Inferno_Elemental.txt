@@ -1,5 +1,5 @@
 name=Inferno Elemental
-image=https://magiccards.info/scans/en/m10/142.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53f05a58-a801-483a-8648-8685a4eaa773.jpg?1561980313
 value=3.130
 rarity=U
 type=Creature

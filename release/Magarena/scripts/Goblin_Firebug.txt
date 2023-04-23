@@ -1,5 +1,5 @@
 name=Goblin Firebug
-image=https://magiccards.info/scans/en/le/98.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2370d319-d1d2-4bca-9275-ff72fb400709.jpg?1562902107
 value=0.926
 rarity=C
 type=Creature

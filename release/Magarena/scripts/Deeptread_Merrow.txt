@@ -1,5 +1,5 @@
 name=Deeptread Merrow
-image=https://magiccards.info/scans/en/lw/57.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42ebd6ff-2b1c-4e93-81cc-81998459c5c7.jpg?1562345921
 value=2.233
 rarity=C
 type=Creature

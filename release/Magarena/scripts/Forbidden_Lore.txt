@@ -1,5 +1,5 @@
 name=Forbidden Lore
-image=https://magiccards.info/scans/en/ia/124.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/366069fb-3322-4992-aa1e-858951a8c492.jpg?1562868076
 value=2.775
 rarity=R
 type=Enchantment

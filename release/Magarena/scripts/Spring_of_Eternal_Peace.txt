@@ -1,5 +1,5 @@
 name=Spring of Eternal Peace
-image=https://magiccards.info/scans/en/p3k/148.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6862d7a-04ee-48ac-a5b3-46a4e8694d5b.jpg?1562258007
 value=1.559
 rarity=C
 type=Sorcery

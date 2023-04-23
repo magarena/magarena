@@ -1,5 +1,5 @@
 name=Brushland
-image=https://magiccards.info/scans/en/10e/349.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18d236ce-3b78-403a-b5f9-4fb44123d85b.jpg?1674422171
 value=4.255
 rarity=R
 type=Land

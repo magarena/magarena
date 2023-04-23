@@ -1,5 +1,5 @@
 name=Raise Dead
-image=https://magiccards.info/scans/en/cn2/146.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/4950c3c2-80c1-4447-ac38-cf40f76b9545.jpg?1562198355
 image_updated=2017-08-29
 value=3.804
 rarity=C

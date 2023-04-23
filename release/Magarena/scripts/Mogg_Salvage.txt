@@ -1,5 +1,5 @@
 name=Mogg Salvage
-image=https://magiccards.info/scans/en/ne/94.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b93e65e-8a10-444f-8b0a-9327dd30cce2.jpg?1626100553
 value=3.981
 rarity=U
 type=Instant

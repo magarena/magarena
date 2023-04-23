@@ -1,5 +1,5 @@
 name=Beacon of Tomorrows
-image=https://magiccards.info/scans/en/5dn/24.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bf05e3d-601a-481b-8880-24058a3442e9.jpg?1592761510
 value=4.134
 rarity=R
 type=Sorcery

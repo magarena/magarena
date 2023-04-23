@@ -1,5 +1,5 @@
 name=Eiganjo Free-Riders
-image=https://magiccards.info/scans/en/sok/8.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe47bbc5-6f7f-4135-9e83-9e2a428c97f5.jpg?1562497050
 value=2.605
 rarity=U
 type=Creature

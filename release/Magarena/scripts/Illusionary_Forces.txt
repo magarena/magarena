@@ -1,5 +1,5 @@
 name=Illusionary Forces
-image=https://magiccards.info/scans/en/ia/75.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f011ad5-0ff1-4538-942e-b72e93d87e3c.jpg?1559592502
 value=2.703
 rarity=C
 type=Creature

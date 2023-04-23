@@ -1,5 +1,5 @@
 name=Mindeye Drake
-image=https://magiccards.info/scans/en/gtc/43.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/947f44b0-91be-4115-b499-57893f0f69a9.jpg?1561837307
 value=2.067
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Deal Broker
-image=https://magiccards.info/scans/en/cns/61.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42dc14d0-60e2-419a-a6cf-ba155c51c310.jpg?1562864965
 value=3.944
 rarity=R
 type=Artifact,Creature

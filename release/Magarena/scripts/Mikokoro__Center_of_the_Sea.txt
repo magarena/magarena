@@ -1,5 +1,5 @@
 name=Mikokoro, Center of the Sea
-image=https://magiccards.info/scans/en/a25/241.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d80eb098-5433-4b1e-aad5-0fd31bf598dd.jpg?1673306092
 image_updated=2018-04-27
 value=3.873
 rarity=R

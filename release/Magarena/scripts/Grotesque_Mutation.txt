@@ -1,5 +1,5 @@
 name=Grotesque Mutation
-image=https://magiccards.info/scans/en/soi/115.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83684009-f91d-4503-bdbb-181c53f394de.jpg?1562921614
 value=2.500
 rarity=C
 type=Instant

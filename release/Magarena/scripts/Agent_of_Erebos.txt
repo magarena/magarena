@@ -1,5 +1,5 @@
 name=Agent of Erebos
-image=https://magiccards.info/scans/en/jou/59.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e07a595-5579-4d5a-b07c-84239d690459.jpg?1593095620
 value=3.204
 rarity=U
 type=Enchantment,Creature

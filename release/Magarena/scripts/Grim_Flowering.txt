@@ -1,5 +1,5 @@
 name=Grim Flowering
-image=https://magiccards.info/scans/en/c14/198.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65222b42-8375-4c7a-b0fc-d6fb81876202.jpg?1592672997
 value=3.318
 rarity=U
 type=Sorcery

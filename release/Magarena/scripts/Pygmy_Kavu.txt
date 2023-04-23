@@ -1,5 +1,5 @@
 name=Pygmy Kavu
-image=https://magiccards.info/scans/en/ps/88.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b31c69ec-feb5-430a-a3e9-3a6f3fb8ee1c.jpg?1562932748
 value=3.074
 rarity=C
 type=Creature

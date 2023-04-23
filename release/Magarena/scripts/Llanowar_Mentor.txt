@@ -1,5 +1,5 @@
 name=Llanowar Mentor
-image=https://magiccards.info/scans/en/fut/131.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0f894e7-adf7-4fe5-811a-8e2d8c8a88d6.jpg?1619398329
 value=3.193
 rarity=U
 type=Creature

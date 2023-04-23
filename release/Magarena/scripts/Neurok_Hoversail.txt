@@ -1,5 +1,5 @@
 name=Neurok Hoversail
-image=https://magiccards.info/scans/en/mi/218.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fa5790b-5388-4bf9-9caa-44d8cbb64708.jpg?1562135694
 value=2.983
 rarity=C
 type=Artifact

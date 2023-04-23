@@ -1,5 +1,5 @@
 name=Mana Tithe
-image=https://magiccards.info/scans/en/pc/25.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9ae707d5-d81d-4320-b947-6016dc188898.jpg?1619393111
 value=4.255
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Phantom Wurm
-image=https://magiccards.info/scans/en/ts/211.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68f48a57-5005-46c7-8b52-97e2f9112b85.jpg?1619398529
 value=3.243
 rarity=U
 type=Creature

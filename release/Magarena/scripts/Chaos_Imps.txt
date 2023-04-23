@@ -1,5 +1,5 @@
 name=Chaos Imps
-image=https://magiccards.info/scans/en/rtr/90.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c70a702a-c9be-4bee-9087-22b5905f783a.jpg?1562793016
 value=3.566
 rarity=R
 type=Creature

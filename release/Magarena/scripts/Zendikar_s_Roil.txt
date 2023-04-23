@@ -1,5 +1,5 @@
 name=Zendikar's Roil
-image=https://magiccards.info/scans/en/ori/209.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60297593-2438-48d7-9414-48af114a93d2.jpg?1616041698
 image_updated=2015-11-05
 value=2.500
 rarity=U

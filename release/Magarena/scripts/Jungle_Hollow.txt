@@ -1,5 +1,5 @@
 name=Jungle Hollow
-image=https://magiccards.info/scans/en/c16/303.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6ed20a4-bc8a-44b1-b9b7-c82518c287b8.jpg?1682205862
 image_updated=2017-08-17
 value=3.250
 rarity=C

@@ -1,5 +1,5 @@
 name=Okina Nightwatch
-image=https://magiccards.info/scans/en/sok/140.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2eea50b1-ba6e-4c57-9b49-488b883be638.jpg?1562493032
 value=2.036
 rarity=C
 type=Creature

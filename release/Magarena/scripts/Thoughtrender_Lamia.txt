@@ -1,5 +1,5 @@
 name=Thoughtrender Lamia
-image=https://magiccards.info/scans/en/jou/85.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69799971-6e24-4b90-ba72-44c6393fc3c4.jpg?1593095866
 value=3.167
 rarity=U
 type=Enchantment,Creature

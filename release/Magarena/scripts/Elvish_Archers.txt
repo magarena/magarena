@@ -1,5 +1,5 @@
 name=Elvish Archers
-image=https://magiccards.info/scans/en/7e/239.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e8411c9-4f6f-4301-ac36-386016a32852.jpg?1562232411
 value=3.750
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Vassal Soul
-image=https://magiccards.info/scans/en/rtr/224.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfc61748-029f-4bae-a7ec-e08b7059226d.jpg?1562794387
 value=2.739
 rarity=C
 type=Creature

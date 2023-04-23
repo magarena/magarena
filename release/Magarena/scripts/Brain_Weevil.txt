@@ -1,5 +1,5 @@
 name=Brain Weevil
-image=https://magiccards.info/scans/en/isd/91.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c24bd479-c8ac-4141-a40e-956c90ee29f8.jpg?1592713691
 value=2.147
 rarity=C
 type=Creature

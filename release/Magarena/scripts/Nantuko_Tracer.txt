@@ -1,5 +1,5 @@
 name=Nantuko Tracer
-image=https://magiccards.info/scans/en/ju/125.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16b93c93-5944-4289-bc5a-30b6e73b0dfd.jpg?1562628799
 value=2.812
 rarity=C
 type=Creature

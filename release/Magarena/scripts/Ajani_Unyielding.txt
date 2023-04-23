@@ -1,5 +1,5 @@
 name=Ajani Unyielding
-image=https://magiccards.info/scans/en/aer/127.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41000308-144d-4d3b-afec-e3928d20edfc.jpg?1673484913
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

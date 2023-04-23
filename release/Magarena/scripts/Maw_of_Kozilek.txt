@@ -1,5 +1,5 @@
 name=Maw of Kozilek
-image=https://magiccards.info/scans/en/ogw/99.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48669993-ad68-499e-8f2e-bc5c651b4b28.jpg?1562909743
 image_updated=2016-02-29
 value=2.500
 rarity=C

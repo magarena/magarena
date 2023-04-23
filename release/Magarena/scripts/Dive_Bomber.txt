@@ -1,5 +1,5 @@
 name=Dive Bomber
-image=https://magiccards.info/scans/en/on/26.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65162b24-8a3b-4b92-a831-6f23f809c76f.jpg?1562918845
 value=2.633
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Canyon Wildcat
-image=https://magiccards.info/scans/en/8e/181.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bd2baa7-1264-4139-881d-e8169391c48b.jpg?1562429362
 value=3.289
 rarity=C
 type=Creature

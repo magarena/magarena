@@ -1,5 +1,5 @@
 name=Magnify
-image=https://magiccards.info/scans/en/ud/111.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b9bb2c6-f1a6-42c3-a7cb-3a1a46854c9b.jpg?1562444245
 value=2.758
 rarity=C
 type=Instant

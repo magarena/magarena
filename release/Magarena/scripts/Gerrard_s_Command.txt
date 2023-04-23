@@ -1,5 +1,5 @@
 name=Gerrard's Command
-image=https://magiccards.info/scans/en/ps/109.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdb56601-35dd-4b79-80d1-1dff785e32cd.jpg?1595076335
 image_updated=2016-12-03
 value=4.229
 rarity=C

@@ -1,5 +1,5 @@
 name=Cyclops of One-Eyed Pass
-image=https://magiccards.info/scans/en/bng/90.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71a25c69-8e57-4a44-955a-da1541bbe0fe.jpg?1593860905
 value=3.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Crux of Fate
-image=https://magiccards.info/scans/en/frf/65.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11721b88-2654-482c-b9d4-80e54efdbf63.jpg?1562600485
 value=2.500
 rarity=R
 type=Sorcery

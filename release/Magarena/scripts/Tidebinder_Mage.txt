@@ -1,5 +1,5 @@
 name=Tidebinder Mage
-image=https://magiccards.info/scans/en/m14/73.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6ed9fb1-de68-46ae-88d0-b3b4cd0e381e.jpg?1592764679
 value=3.736
 rarity=R
 type=Creature

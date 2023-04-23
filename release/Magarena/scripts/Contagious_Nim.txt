@@ -1,5 +1,5 @@
 name=Contagious Nim
-image=https://magiccards.info/scans/en/som/58.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e83a9dea-2aa1-48cd-afe2-f98057b95f6e.jpg?1562824519
 value=3.051
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Tidewater Minion
-image=https://magiccards.info/scans/en/rav/71.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67ffa68f-cc21-41c8-ad3d-d6b60a4ccd36.jpg?1598914564
 value=3.262
 rarity=C
 type=Creature

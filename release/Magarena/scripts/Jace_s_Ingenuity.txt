@@ -1,5 +1,5 @@
 name=Jace's Ingenuity
-image=https://magiccards.info/scans/en/m15/63.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad4932ba-e272-4f22-89f5-a6153ca570b5.jpg?1562792658
 value=2.929
 rarity=U
 type=Instant

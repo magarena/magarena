@@ -1,5 +1,5 @@
 name=Spitting Spider
-image=https://magiccards.info/scans/en/8e/280.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfeeb515-7d3d-4678-a480-32485b197afb.jpg?1562933585
 value=3.375
 rarity=U
 type=Creature

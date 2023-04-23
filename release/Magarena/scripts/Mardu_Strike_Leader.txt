@@ -1,5 +1,5 @@
 name=Mardu Strike Leader
-image=https://magiccards.info/scans/en/frf/75.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/626ed059-9bd1-4a18-ac85-7b00b8057426.jpg?1674141704
 value=2.500
 rarity=R
 type=Creature

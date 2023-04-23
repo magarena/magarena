@@ -1,5 +1,5 @@
 name=Talrand, Sky Summoner
-image=https://magiccards.info/scans/en/m13/72.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9ca9530f-ecec-4f12-bc5a-9e211b97be70.jpg?1673648526
 image_updated=2016-02-29
 value=4.173
 rarity=R

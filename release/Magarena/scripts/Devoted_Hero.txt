@@ -1,5 +1,5 @@
 name=Devoted Hero
-image=https://magiccards.info/scans/en/st/13.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0cdbd28-958a-4955-badd-4848eef3f0fa.jpg?1562875264
 value=3.013
 rarity=C
 type=Creature

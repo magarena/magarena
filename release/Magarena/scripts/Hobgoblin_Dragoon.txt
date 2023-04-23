@@ -1,5 +1,5 @@
 name=Hobgoblin Dragoon
-image=https://magiccards.info/scans/en/eve/142.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/090223a1-2644-4b81-a9f5-d15ca6df5229.jpg?1562896916
 value=2.259
 rarity=C
 type=Creature

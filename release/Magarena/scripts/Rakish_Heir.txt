@@ -1,5 +1,5 @@
 name=Rakish Heir
-image=https://magiccards.info/scans/en/c17/140.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0da15652-8207-4be1-b821-3fb3dad66e37.jpg?1641603262
 image_updated=2017-10-03
 value=3.806
 rarity=U

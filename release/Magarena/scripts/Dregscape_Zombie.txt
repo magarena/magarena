@@ -1,5 +1,5 @@
 name=Dregscape Zombie
-image=https://magiccards.info/scans/en/mm3/67.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db87a2be-4490-45af-89d7-540549d1d6af.jpg?1593813261
 image_updated=2017-08-08
 value=3.000
 rarity=C

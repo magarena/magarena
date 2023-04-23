@@ -1,5 +1,5 @@
 name=Briber's Purse
-image=https://magiccards.info/scans/en/ktk/217.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f9951f1-ca51-44a2-8480-602df466f0ab.jpg?1562789249
 value=2.000
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Anaba Ancestor
-image=https://magiccards.info/scans/en/hl/81.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0076327-30e6-45dd-adf2-3e125f0bcdef.jpg?1562935621
 value=2.549
 rarity=R
 type=Creature

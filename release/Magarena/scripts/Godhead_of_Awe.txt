@@ -1,5 +1,5 @@
 name=Godhead of Awe
-image=https://magiccards.info/scans/en/shm/142.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e34d294-c0ec-4e3c-a731-31b7a29c59b4.jpg?1562832207
 value=4.080
 removal=3
 rarity=R

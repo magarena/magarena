@@ -1,5 +1,5 @@
 name=Icatian Crier
-image=https://magiccards.info/scans/en/ts/23.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5ba6543-ede7-45a5-8e8d-e17d3f545d3f.jpg?1547515627
 value=3.062
 rarity=C
 type=Creature

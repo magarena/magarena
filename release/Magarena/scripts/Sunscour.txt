@@ -1,5 +1,5 @@
 name=Sunscour
-image=https://magiccards.info/scans/en/cs/19.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44c726db-a30a-4e76-9fbf-ec6d5cd7a1ba.jpg?1593274832
 value=4.114
 rarity=R
 type=Sorcery

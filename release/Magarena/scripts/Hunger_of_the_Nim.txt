@@ -1,5 +1,5 @@
 name=Hunger of the Nim
-image=https://magiccards.info/scans/en/ds/46.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bba50e47-2417-447f-b334-50ef0faecfae.jpg?1562639241
 value=2.056
 rarity=C
 type=Sorcery

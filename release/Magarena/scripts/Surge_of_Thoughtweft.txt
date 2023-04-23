@@ -1,5 +1,5 @@
 name=Surge of Thoughtweft
-image=https://magiccards.info/scans/en/lw/43.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0b61fb2-11e5-45ae-873d-85f79f161950.jpg?1562371337
 value=3.085
 rarity=C
 type=Tribal,Instant

@@ -1,5 +1,5 @@
 name=Absorb
-image=https://magiccards.info/scans/en/in/226.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e8a43c1-42d1-45ef-8a63-4b87775a6e88.jpg?1584831352
 value=4.124
 rarity=R
 type=Instant

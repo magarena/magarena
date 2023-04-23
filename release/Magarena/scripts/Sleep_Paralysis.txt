@@ -1,5 +1,5 @@
 name=Sleep Paralysis
-image=https://magiccards.info/scans/en/soi/87.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2babef35-27ab-45aa-88cd-f21dccae5125.jpg?1592516504
 value=2.500
 rarity=C
 type=Enchantment

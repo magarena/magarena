@@ -1,5 +1,5 @@
 name=Mutagenic Growth
-image=https://magiccards.info/scans/en/mm2/149.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e0861a2-1858-47af-8154-20a977c2b298.jpg?1562260231
 image_updated=2015-11-05
 value=3.789
 rarity=U

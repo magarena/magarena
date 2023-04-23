@@ -1,5 +1,5 @@
 name=Watertrap Weaver
-image=https://magiccards.info/scans/en/xln/87.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d973568-d7b0-443f-a09d-44f6b02da5d4.jpg?1562550617
 value=2.500
 rarity=C
 type=Creature

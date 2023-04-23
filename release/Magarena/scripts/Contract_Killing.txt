@@ -1,5 +1,5 @@
 name=Contract Killing
-image=https://magiccards.info/scans/en/xln/95.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1f20feb-b1ed-4d80-bef9-f3cc44ffb7b0.jpg?1562564388
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Seething Pathblazer
-image=https://magiccards.info/scans/en/mt/101.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/4971a447-29c8-47b6-863c-f13a69b4148b.jpg?1562878284
 value=2.414
 rarity=C
 type=Creature

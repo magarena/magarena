@@ -1,5 +1,5 @@
 name=Starlight
-image=https://magiccards.info/scans/en/7e/49.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f9ef338-1a74-433c-a7d9-f667246e6622.jpg?1562244158
 value=2.192
 rarity=U
 type=Sorcery

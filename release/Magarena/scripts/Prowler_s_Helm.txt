@@ -1,5 +1,5 @@
 name=Prowler's Helm
-image=https://magiccards.info/scans/en/ths/219.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c100a22c-bf34-42b7-9339-4733698c0935.jpg?1562829057
 value=3.371
 rarity=U
 type=Artifact

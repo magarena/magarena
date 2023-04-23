@@ -1,5 +1,5 @@
 name=Greel's Caress
-image=https://magiccards.info/scans/en/pr/67.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b25ce3f-fab3-40f8-8a16-fe580f3d97a5.jpg?1562911852
 value=2.300
 rarity=C
 type=Enchantment

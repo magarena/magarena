@@ -1,5 +1,5 @@
 name=Tainted Aether
-image=https://magiccards.info/scans/en/7e/167.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/838cffb6-8099-44d7-a127-b2ab3b53ea44.jpg?1562241710
 image_updated=2016-09-27
 value=4.132
 rarity=R

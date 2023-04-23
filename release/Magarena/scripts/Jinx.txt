@@ -1,5 +1,5 @@
 name=Jinx
-image=https://magiccards.info/scans/en/hl/36.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f81fca41-2315-4d12-b05c-d921a4c3c19e.jpg?1562588727
 value=2.588
 rarity=C
 type=Instant

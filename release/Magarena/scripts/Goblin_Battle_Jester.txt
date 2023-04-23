@@ -1,5 +1,5 @@
 name=Goblin Battle Jester
-image=https://magiccards.info/scans/en/m13/135.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c13e56b0-becc-4bc2-9ba3-23b3ca8bfe58.jpg?1562559606
 value=2.359
 rarity=C
 type=Creature

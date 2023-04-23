@@ -1,5 +1,5 @@
 name=Festergloom
-image=https://magiccards.info/scans/en/cn2/135.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5da1371f-8888-4428-b3f4-d8f07e12f91b.jpg?1576382645
 image_updated=2017-08-17
 value=2.300
 rarity=C

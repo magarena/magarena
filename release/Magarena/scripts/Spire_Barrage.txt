@@ -1,5 +1,5 @@
 name=Spire Barrage
-image=https://magiccards.info/scans/en/zen/150.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a8006d8-bcdb-4e1c-bdfa-1e7f46fe425b.jpg?1581708617
 image_updated=2016-01-09
 value=2.447
 rarity=C

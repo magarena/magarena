@@ -1,5 +1,5 @@
 name=Cogwork Tracker
-image=https://magiccards.info/scans/en/cns/60.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ad996e5-f3b4-4aca-8b37-d20632245b4e.jpg?1562864936
 value=3.100
 rarity=U
 type=Artifact,Creature

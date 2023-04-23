@@ -1,5 +1,5 @@
 name=The Hive
-image=https://magiccards.info/scans/en/10e/324.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4141e02a-d42c-4272-833d-98e2614ab371.jpg?1562546771
 value=1.735
 rarity=R
 type=Artifact

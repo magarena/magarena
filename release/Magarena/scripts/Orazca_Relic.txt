@@ -1,5 +1,5 @@
 name=Orazca Relic
-image=https://magiccards.info/scans/en/rix/181.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd9e5b05-11b5-46fc-a1c8-484f41a0cee6.jpg?1631589120
 value=2.500
 rarity=C
 type=Artifact

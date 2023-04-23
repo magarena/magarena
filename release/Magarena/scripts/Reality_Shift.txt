@@ -1,5 +1,5 @@
 name=Reality Shift
-image=https://magiccards.info/scans/en/frf/46.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac67ab8e-dbc0-40d8-9bbf-7b92728341fe.jpg?1682208846
 value=2.500
 rarity=U
 type=Instant

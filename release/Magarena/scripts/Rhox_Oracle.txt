@@ -1,5 +1,5 @@
 name=Rhox Oracle
-image=https://magiccards.info/scans/en/m19/198.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/281f04d5-af45-4494-ac11-a605d3a06643.jpg?1562300827
 value=2.500
 rarity=C
 type=Creature

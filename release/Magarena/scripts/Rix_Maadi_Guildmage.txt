@@ -1,5 +1,5 @@
 name=Rix Maadi Guildmage
-image=https://magiccards.info/scans/en/rtr/192.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb737465-5de8-4015-befe-2bf386da2a89.jpg?1562795008
 value=3.403
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Multani, Maro-Sorcerer
-image=https://magiccards.info/scans/en/ul/107.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d6cc98b-b376-40af-8308-198bab00b2b1.jpg?1562862316
 value=4.147
 rarity=R
 type=Legendary,Creature

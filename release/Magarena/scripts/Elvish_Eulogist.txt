@@ -1,5 +1,5 @@
 name=Elvish Eulogist
-image=https://magiccards.info/scans/en/lw/205.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df88baac-0d92-4b67-a417-aac79c74aa64.jpg?1562939905
 image_updated=2016-12-02
 value=2.712
 rarity=C

@@ -1,5 +1,5 @@
 name=Captain's Call
-image=https://magiccards.info/scans/en/m13/9.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c7ed7e0-0e80-44d3-a7af-b4c321239df8.jpg?1673306360
 value=3.041
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Psychic Spiral
-image=https://magiccards.info/scans/en/rtr/47.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59b09c16-f611-4c90-a990-e22bf46bd0e2.jpg?1562786761
 value=3.597
 rarity=U
 type=Instant

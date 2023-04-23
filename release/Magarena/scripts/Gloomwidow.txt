@@ -1,5 +1,5 @@
 name=Gloomwidow
-image=https://magiccards.info/scans/en/soi/206.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee04dfd8-e704-46d7-bdf8-b0b2ee747a49.jpg?1576385082
 image_updated=2010-09-10
 value=2.667
 rarity=U

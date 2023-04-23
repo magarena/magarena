@@ -1,5 +1,5 @@
 name=Ivy Elemental
-image=https://magiccards.info/scans/en/ima/170.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e8aea71-02aa-4799-86fb-efd2a36efc22.jpg?1591227721
 image_updated=2017-04-12
 value=3.377
 rarity=C

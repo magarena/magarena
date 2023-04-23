@@ -1,5 +1,5 @@
 name=Sakura-Tribe Elder
-image=https://magiccards.info/scans/en/c16/164.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec23f98d-1bfd-4957-92b6-0a1da823db0f.jpg?1674142344
 image_updated=2017-08-17
 value=4.500
 rarity=C

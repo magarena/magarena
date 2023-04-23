@@ -1,5 +1,5 @@
 name=Scrap
-image=https://magiccards.info/scans/en/us/213.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f070430-59d6-462f-9f04-306ffc2ae01b.jpg?1562908085
 value=2.862
 rarity=C
 type=Instant

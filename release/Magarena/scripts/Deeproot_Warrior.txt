@@ -1,5 +1,5 @@
 name=Deeproot Warrior
-image=https://magiccards.info/scans/en/xln/186.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c1a1963-ec46-4ed3-9be1-e4cc09687922.jpg?1562558614
 value=2.500
 rarity=C
 type=Creature

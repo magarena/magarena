@@ -1,5 +1,5 @@
 name=Void Snare
-image=https://magiccards.info/scans/en/m15/82.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94efe426-0fb2-4a24-9b50-914e48105b57.jpg?1562791143
 value=3.722
 rarity=C
 type=Sorcery

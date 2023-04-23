@@ -1,5 +1,5 @@
 name=Wall of Earth
-image=https://magiccards.info/scans/en/lg/166.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c12e97c1-ca28-432a-8140-3f08bb4485a3.jpg?1562860872
 value=3.069
 rarity=C
 type=Creature

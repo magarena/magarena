@@ -1,5 +1,5 @@
 name=Treespring Lorian
-image=https://magiccards.info/scans/en/on/293.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f525d7ce-37d3-4989-beb4-173447cb5294.jpg?1562953129
 value=2.033
 rarity=C
 type=Creature

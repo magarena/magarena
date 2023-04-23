@@ -1,5 +1,5 @@
 name=Vedalken Ghoul
-image=https://magiccards.info/scans/en/arb/32.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01072149-fe5e-4139-b3b2-3810fd220c8e.jpg?1562639369
 value=3.000
 rarity=C
 type=Creature

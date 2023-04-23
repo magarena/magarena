@@ -1,5 +1,5 @@
 name=Act of Aggression
-image=https://magiccards.info/scans/en/nph/78.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d34c3aa-7d74-4a8b-898c-cb62b1f05989.jpg?1562706934
 image_updated=2016-02-29
 value=3.567
 removal=5

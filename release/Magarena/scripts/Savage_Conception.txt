@@ -1,5 +1,5 @@
 name=Savage Conception
-image=https://magiccards.info/scans/en/eve/75.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b88ab58b-918b-478a-8c6b-a213e2bc87ab.jpg?1562933986
 value=2.212
 rarity=U
 type=Sorcery

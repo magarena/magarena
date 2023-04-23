@@ -1,5 +1,5 @@
 name=Lost Soul
-image=https://magiccards.info/scans/en/6e/142.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/401896ac-6234-468a-a9af-cf11c7a11cd0.jpg?1562816765
 value=2.016
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Renounce the Guilds
-image=https://magiccards.info/scans/en/dgm/5.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc9acc14-24e0-4c03-a09a-2afee351f2cc.jpg?1562930225
 value=3.127
 removal=3
 rarity=R

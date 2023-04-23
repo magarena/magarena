@@ -1,5 +1,5 @@
 name=Thraben Heretic
-image=https://magiccards.info/scans/en/dka/26.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20eb4f21-2f20-4e4b-998c-a72527585549.jpg?1592762748
 value=3.337
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Saprazzan Legate
-image=https://magiccards.info/scans/en/mm/100.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db9adf84-ee7e-472b-bd96-9abf853afa83.jpg?1562383495
 value=4.035
 rarity=U
 type=Creature

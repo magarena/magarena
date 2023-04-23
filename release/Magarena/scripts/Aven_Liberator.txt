@@ -1,5 +1,5 @@
 name=Aven Liberator
-image=https://magiccards.info/scans/en/sc/4.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2804006-2a60-400c-be0b-8aa042469372.jpg?1562533361
 value=2.674
 rarity=C
 type=Creature

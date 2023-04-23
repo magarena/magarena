@@ -1,5 +1,5 @@
 name=Overgrown Tomb
-image=https://magiccards.info/scans/en/rtr/243.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/eff1f52c-5c43-4260-aaa0-6920846a191c.jpg?1572894177
 value=4.303
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Calming Verse
-image=https://magiccards.info/scans/en/pr/110.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec38c856-dc21-450d-9aa6-da16c91a489a.jpg?1562939297
 value=3.761
 rarity=C
 type=Sorcery

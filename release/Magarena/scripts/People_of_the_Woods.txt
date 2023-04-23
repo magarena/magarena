@@ -1,5 +1,5 @@
 name=People of the Woods
-image=https://magiccards.info/scans/en/dk/46.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fb5926f-9988-4bc0-b2b7-e286db208310.jpg?1587856157
 value=3.311
 rarity=U
 type=Creature

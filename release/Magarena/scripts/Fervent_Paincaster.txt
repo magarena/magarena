@@ -1,5 +1,5 @@
 name=Fervent Paincaster
-image=https://magiccards.info/scans/en/hou/91.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3c78708-254c-446f-b6eb-8839faf08790.jpg?1562818175
 value=2.500
 rarity=U
 type=Creature

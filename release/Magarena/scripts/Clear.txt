@@ -1,5 +1,5 @@
 name=Clear
-image=https://magiccards.info/scans/en/us/7.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7cdb977-7d5b-4050-bb01-181f6b363de7.jpg?1562937199
 value=3.452
 rarity=U
 type=Instant

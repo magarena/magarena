@@ -1,5 +1,5 @@
 name=Weapon Surge
-image=https://magiccards.info/scans/en/dgm/40.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19330317-0c5e-44fc-bb87-89b3f6dd3704.jpg?1599706838
 value=3.780
 rarity=C
 type=Instant

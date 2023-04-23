@@ -1,5 +1,5 @@
 name=Void Squall
-image=https://magiccards.info/scans/en/dtk/83.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d8a7aee-6403-44ce-a119-66147aa311fd.jpg?1562785106
 value=2.500
 rarity=U
 type=Sorcery

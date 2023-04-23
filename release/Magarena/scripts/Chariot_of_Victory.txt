@@ -1,5 +1,5 @@
 name=Chariot of Victory
-image=https://magiccards.info/scans/en/jou/159.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2dd03d2-05ef-4929-b973-3dbe49fc7592.jpg?1593096494
 value=3.515
 rarity=U
 type=Artifact

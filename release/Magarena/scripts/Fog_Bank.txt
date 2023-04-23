@@ -1,5 +1,5 @@
 name=Fog Bank
-image=https://magiccards.info/scans/en/ima/56.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8efa098b-9e52-4a5e-9554-007c5b1efdca.jpg?1562923855
 image_updated=2017-04-12
 value=4.208
 rarity=U

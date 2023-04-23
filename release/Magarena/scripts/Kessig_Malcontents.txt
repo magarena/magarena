@@ -1,5 +1,5 @@
 name=Kessig Malcontents
-image=https://magiccards.info/scans/en/avr/142.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dce9a30f-a850-4826-a255-ce511d567b60.jpg?1592709121
 value=3.477
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Seismic Shudder
-image=https://magiccards.info/scans/en/zen/147.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20365082-6102-4e3b-8791-c9b66846270d.jpg?1562610483
 value=2.745
 rarity=C
 type=Instant

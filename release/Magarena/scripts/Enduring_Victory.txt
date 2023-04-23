@@ -1,5 +1,5 @@
 name=Enduring Victory
-image=https://magiccards.info/scans/en/dtk/16.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54fef763-7ee2-4341-9c67-546e4b6710b7.jpg?1562786446
 value=2.500
 rarity=C
 type=Instant

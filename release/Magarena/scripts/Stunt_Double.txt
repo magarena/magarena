@@ -1,5 +1,5 @@
 name=Stunt Double
-image=https://magiccards.info/scans/en/cn2/38.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3344c1ea-e8b2-481e-b9eb-604c87e34925.jpg?1576381790
 image_updated=2016-09-05
 value=2.500
 rarity=R

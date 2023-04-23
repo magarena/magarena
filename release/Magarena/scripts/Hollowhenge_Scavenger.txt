@@ -1,5 +1,5 @@
 name=Hollowhenge Scavenger
-image=https://magiccards.info/scans/en/isd/188.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c9ff632-0e27-4521-9e9d-5725e618f5dd.jpg?1562831745
 value=3.116
 rarity=U
 type=Creature

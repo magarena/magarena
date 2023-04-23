@@ -1,5 +1,5 @@
 name=Phantasmal Image
-image=https://magiccards.info/scans/en/mm3/46.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1c080cf-a5e8-4d9d-af49-f78588971e87.jpg?1631586379
 image_updated=2017-08-08
 value=4.315
 rarity=R

@@ -1,5 +1,5 @@
 name=Battlegrace Angel
-image=https://magiccards.info/scans/en/mm2/10.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cf72b23-a951-4e88-a52b-b3abe8f16bf4.jpg?1562259656
 value=3.898
 rarity=R
 type=Creature

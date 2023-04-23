@@ -1,5 +1,5 @@
 name=Koth's Courier
-image=https://magiccards.info/scans/en/mbs/68.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/978cc53c-c038-4442-bd46-e0b9e8cdd924.jpg?1562613232
 value=2.971
 rarity=C
 type=Creature

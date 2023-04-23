@@ -1,5 +1,5 @@
 name=Blockade Runner
-image=https://magiccards.info/scans/en/mm/60.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59e483df-b58a-401e-85bc-0afda4bf7cac.jpg?1562380875
 value=2.216
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Temur Battle Rage
-image=https://magiccards.info/scans/en/frf/116.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c850548-400e-41a5-8acd-77ff67541d54.jpg?1645329196
 value=2.500
 rarity=C
 type=Instant

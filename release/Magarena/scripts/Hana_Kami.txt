@@ -1,5 +1,5 @@
 name=Hana Kami
-image=https://magiccards.info/scans/en/mma/147.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5afa824d-ad9b-44c1-9509-f9ecd34bde08.jpg?1561967358
 value=3.176
 rarity=C
 type=Creature

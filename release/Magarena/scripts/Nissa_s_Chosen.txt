@@ -1,5 +1,5 @@
 name=Nissa's Chosen
-image=https://magiccards.info/scans/en/zen/171.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f370eff-3980-4c19-808b-c1099279ef20.jpg?1562229694
 value=3.855
 rarity=C
 type=Creature

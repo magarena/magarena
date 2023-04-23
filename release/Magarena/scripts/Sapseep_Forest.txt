@@ -1,5 +1,5 @@
 name=Sapseep Forest
-image=https://magiccards.info/scans/en/shm/279.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81d3099d-4f22-425c-8955-903b6cfb88d3.jpg?1625980885
 value=2.625
 rarity=U
 type=Land

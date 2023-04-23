@@ -1,5 +1,5 @@
 name=Winnower Patrol
-image=https://magiccards.info/scans/en/mt/139.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a47bed84-5a4a-4f16-af6c-789c542ce3a7.jpg?1562880532
 value=3.522
 rarity=C
 type=Creature

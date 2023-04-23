@@ -1,5 +1,5 @@
 name=Warren Weirding
-image=https://magiccards.info/scans/en/mma/104.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/524aa84d-7838-4664-b30c-3c242b46fc6b.jpg?1561967343
 value=4.324
 removal=2
 rarity=C

@@ -1,5 +1,5 @@
 name=Elite Skirmisher
-image=https://magiccards.info/scans/en/bng/8.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/982eed00-e9fe-4d0f-a2b7-9606aa7926a1.jpg?1593091397
 value=3.065
 rarity=C
 type=Creature

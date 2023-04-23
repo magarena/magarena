@@ -1,5 +1,5 @@
 name=Steel Leaf Champion
-image=https://magiccards.info/scans/en/dom/182.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24d8a688-79d4-49b9-ab0c-c7f5c9b551f4.jpg?1562732792
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Tectonic Fiend
-image=https://magiccards.info/scans/en/ts/181.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c8aaf09-312f-4c82-9e0a-bd797e7f26c3.jpg?1562928015
 value=0.955
 rarity=U
 type=Creature

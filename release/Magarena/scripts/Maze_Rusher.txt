@@ -1,5 +1,5 @@
 name=Maze Rusher
-image=https://magiccards.info/scans/en/dgm/33.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/864d2eb8-e27f-4f84-9725-d2ae6446e217.jpg?1562919903
 value=2.833
 rarity=C
 type=Creature

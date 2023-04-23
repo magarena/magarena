@@ -1,5 +1,5 @@
 name=Heat Shimmer
-image=https://magiccards.info/scans/en/lw/175.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86956f26-3761-4841-a9b5-f8205bf01f19.jpg?1599706466
 value=3.000
 rarity=R
 type=Sorcery

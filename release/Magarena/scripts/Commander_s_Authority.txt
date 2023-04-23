@@ -1,5 +1,5 @@
 name=Commander's Authority
-image=https://magiccards.info/scans/en/avr/13.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08ef4383-11e7-4426-a04a-058570f46e47.jpg?1592708248
 value=2.048
 rarity=U
 type=Enchantment

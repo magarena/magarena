@@ -1,5 +1,5 @@
 name=Ancestral Vision
-image=https://magiccards.info/scans/en/ima/42.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9079c93e-3da8-442a-89d2-609a3eac83b0.jpg?1619393761
 image_updated=2017-04-12
 value=2.500
 rarity=R

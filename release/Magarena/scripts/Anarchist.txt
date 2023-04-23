@@ -1,5 +1,5 @@
 name=Anarchist
-image=https://magiccards.info/scans/en/9e/173.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/966d56fd-4df8-4532-860c-371641630a70.jpg?1562430783
 value=3.367
 rarity=U
 type=Creature

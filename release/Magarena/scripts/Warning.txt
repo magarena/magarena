@@ -1,5 +1,5 @@
 name=Warning
-image=https://magiccards.info/scans/en/ia/279.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cfbcb49-a640-4c0d-800f-482b813369a3.jpg?1562869014
 value=2.696
 rarity=C
 type=Instant

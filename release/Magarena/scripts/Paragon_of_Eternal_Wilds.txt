@@ -1,5 +1,5 @@
 name=Paragon of Eternal Wilds
-image=https://magiccards.info/scans/en/m15/190.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97c3fcca-480f-4acf-b74f-0f37b46fa799.jpg?1562791315
 value=3.333
 rarity=U
 type=Creature

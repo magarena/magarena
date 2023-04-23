@@ -1,5 +1,5 @@
 name=Orgg
-image=https://magiccards.info/scans/en/tsts/67.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8961e50-dc20-40f9-86ca-968ba28ad0cc.jpg?1562785772
 value=3.371
 rarity=R
 type=Creature

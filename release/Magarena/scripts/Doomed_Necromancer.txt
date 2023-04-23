@@ -1,5 +1,5 @@
 name=Doomed Necromancer
-image=https://magiccards.info/scans/en/10e/137.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d3225e8-9902-4826-9cb3-68ecfaebb1e9.jpg?1631586569
 value=4.229
 rarity=R
 type=Creature

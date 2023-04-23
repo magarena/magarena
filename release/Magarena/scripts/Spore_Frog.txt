@@ -1,5 +1,5 @@
 name=Spore Frog
-image=https://magiccards.info/scans/en/pr/126.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d42fd52-34ea-4d1b-80dc-58fb0593bb5b.jpg?1562202192
 value=4.066
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Holy Justiciar
-image=https://magiccards.info/scans/en/avr/25.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/640cad49-1db3-4611-a80d-7ce95f000fad.jpg?1592708332
 value=1.562
 rarity=U
 type=Creature

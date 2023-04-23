@@ -1,5 +1,5 @@
 name=Abrupt Decay
-image=https://magiccards.info/scans/en/mm3/146.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8e328c6-3a84-49cf-a1a3-1d1e5373d274.jpg?1593814035
 image_updated=2017-08-08
 value=4.394
 rarity=R

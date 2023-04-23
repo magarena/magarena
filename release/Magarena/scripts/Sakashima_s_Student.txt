@@ -1,5 +1,5 @@
 name=Sakashima's Student
-image=https://magiccards.info/scans/en/pc2/24.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91b0a6cb-1c2e-4122-8874-a48e69e1c464.jpg?1562922048
 value=4.466
 rarity=R
 type=Creature

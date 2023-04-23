@@ -1,5 +1,5 @@
 name=Essence Backlash
-image=https://magiccards.info/scans/en/rtr/160.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a98609dc-ea90-4c7e-a191-5e5d0ba16847.jpg?1562791298
 value=3.000
 rarity=C
 type=Instant

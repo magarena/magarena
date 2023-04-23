@@ -1,5 +1,5 @@
 name=Vampire Envoy
-image=https://magiccards.info/scans/en/ogw/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3ba8e7aa-9a87-410e-b846-5f5c910585cf.jpg?1562907043
 image_updated=2016-02-29
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Liliana's Specter
-image=https://magiccards.info/scans/en/cns/116.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/549089f4-1359-49c3-9560-6fe49d1598d0.jpg?1562910526
 value=4.125
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Giant Growth
-image=https://magiccards.info/scans/en/a25/172.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aeece336-e5e8-4455-a297-c3739198d011.jpg?1674421574
 image_updated=2018-04-27
 value=4.311
 rarity=C

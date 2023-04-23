@@ -1,5 +1,5 @@
 name=Ogre Leadfoot
-image=https://magiccards.info/scans/en/mi/102.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3c77744-3a86-46cf-9e0f-5a217a1c08b9.jpg?1562161269
 value=2.729
 rarity=C
 type=Creature

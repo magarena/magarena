@@ -1,5 +1,5 @@
 name=Vampiric Spirit
-image=https://magiccards.info/scans/en/8e/170.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e5235e5-deb7-49eb-82a8-858d3ee7c91b.jpg?1562917063
 value=2.729
 rarity=R
 type=Creature

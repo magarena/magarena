@@ -1,5 +1,5 @@
 name=Nagging Thoughts
-image=https://magiccards.info/scans/en/soi/74.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8a6d6e4-e91f-444f-9eed-88fceaf1a4b8.jpg?1576384147
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Assembly-Worker
-image=https://magiccards.info/scans/en/a25/221.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89a288d2-de94-4c49-a17e-5b0ed0281a5b.jpg?1562438044
 image_updated=2018-04-26
 value=2.851
 rarity=C

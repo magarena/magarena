@@ -1,5 +1,5 @@
 name=Fangren Hunter
-image=https://magiccards.info/scans/en/mi/119.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dbc8eef-f032-490a-b487-da1af71b7ff2.jpg?1562139685
 value=2.900
 rarity=C
 type=Creature

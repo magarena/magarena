@@ -1,5 +1,5 @@
 name=Rune-Scarred Demon
-image=https://magiccards.info/scans/en/ima/106.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78ed184c-bb2a-47cc-a8e3-ba46b2fc4f64.jpg?1562850574
 image_updated=2017-04-12
 value=4.376
 rarity=R

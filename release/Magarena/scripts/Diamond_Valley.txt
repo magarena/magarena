@@ -1,5 +1,5 @@
 name=Diamond Valley
-image=https://magiccards.info/scans/en/an/87.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37ccc3ab-9875-4bd2-bdbd-e3af5e01d682.jpg?1559592435
 value=4.500
 rarity=U
 type=Land

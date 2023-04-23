@@ -1,5 +1,5 @@
 name=Planar Bridge
-image=https://magiccards.info/scans/en/aer/171.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30879758-841c-46a9-a0b6-179ac163f0ac.jpg?1673149422
 value=2.500
 rarity=M
 type=Legendary,Artifact

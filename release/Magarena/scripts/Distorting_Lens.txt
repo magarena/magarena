@@ -1,5 +1,5 @@
 name=Distorting Lens
-image=https://magiccards.info/scans/en/8e/299.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d82d9b7-4b1c-447c-8044-9e114604017e.jpg?1562916925
 value=3.852
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Cobalt Golem
-image=https://magiccards.info/scans/en/mi/157.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec5e72f6-f573-4e37-9daa-abe6561ab086.jpg?1562162295
 value=1.895
 rarity=C
 type=Artifact,Creature

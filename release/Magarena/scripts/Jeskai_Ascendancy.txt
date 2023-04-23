@@ -1,5 +1,5 @@
 name=Jeskai Ascendancy
-image=https://magiccards.info/scans/en/ktk/180.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a8399fc-4cba-44c5-888e-2cfc0f6739f6.jpg?1673148783
 value=3.667
 rarity=R
 type=Enchantment

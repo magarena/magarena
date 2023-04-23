@@ -1,5 +1,5 @@
 name=Radiant Fountain
-image=https://magiccards.info/scans/en/ima/244.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ee5e77f-ca43-480d-ac37-48336d3bf044.jpg?1625980789
 image_updated=2017-04-12
 value=3.450
 rarity=C

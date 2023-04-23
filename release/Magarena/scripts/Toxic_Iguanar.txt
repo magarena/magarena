@@ -1,5 +1,5 @@
 name=Toxic Iguanar
-image=https://magiccards.info/scans/en/cfx/72.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28fd2dce-b91f-441f-a3ea-af87cc925713.jpg?1562800112
 value=2.967
 rarity=C
 type=Creature

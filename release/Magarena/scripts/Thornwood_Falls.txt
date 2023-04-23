@@ -1,5 +1,5 @@
 name=Thornwood Falls
-image=https://magiccards.info/scans/en/c16/333.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1b753e2-6e53-4ed1-9be4-66f8eb005a11.jpg?1682205902
 image_updated=2017-08-17
 value=3.333
 rarity=C

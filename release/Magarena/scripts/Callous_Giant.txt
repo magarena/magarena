@@ -1,5 +1,5 @@
 name=Callous Giant
-image=https://magiccards.info/scans/en/in/139.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/330028c4-8e91-4fe3-a87d-1660dfd2507e.jpg?1562905295
 value=3.394
 rarity=R
 type=Creature

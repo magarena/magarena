@@ -1,5 +1,5 @@
 name=Elite Cat Warrior
-image=https://magiccards.info/scans/en/po/87.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fc7edbd-a819-4cee-8053-3e36a3ac9197.jpg?1562921313
 value=3.315
 rarity=C
 type=Creature

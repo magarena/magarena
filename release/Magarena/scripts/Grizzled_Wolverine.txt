@@ -1,5 +1,5 @@
 name=Grizzled Wolverine
-image=https://magiccards.info/scans/en/ia/192.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95bb17b9-55c4-4cc1-83f6-75490b9a97d0.jpg?1587911913
 value=3.000
 rarity=C
 type=Creature

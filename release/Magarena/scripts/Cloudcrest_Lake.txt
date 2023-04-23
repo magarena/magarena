@@ -1,5 +1,5 @@
 name=Cloudcrest Lake
-image=https://magiccards.info/scans/en/chk/274.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bcbd030-762e-4754-ae95-685d59ccdfb9.jpg?1562762971
 value=2.614
 rarity=U
 type=Land

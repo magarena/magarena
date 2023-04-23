@@ -1,5 +1,5 @@
 name=Tainted Peak
-image=https://magiccards.info/scans/en/tr/142.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d05068d7-6290-439f-91d4-e820ad1483dd.jpg?1641604426
 value=4.130
 rarity=U
 type=Land

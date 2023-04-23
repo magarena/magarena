@@ -1,5 +1,5 @@
 name=Mist Leopard
-image=https://magiccards.info/scans/en/m10/193.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f3a26c7-e028-4741-803d-6384925b8500.jpg?1561977658
 value=2.534
 rarity=C
 type=Creature

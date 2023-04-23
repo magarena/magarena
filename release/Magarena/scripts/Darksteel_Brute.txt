@@ -1,5 +1,5 @@
 name=Darksteel Brute
-image=https://magiccards.info/scans/en/ds/108.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06125c05-a345-481d-bc7f-bf234b946b5b.jpg?1562635252
 value=3.088
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Cloaked Siren
-image=https://magiccards.info/scans/en/cn2/104.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f2f76f9-b883-42e1-bd74-71934e15b973.jpg?1576382375
 image_updated=2017-08-29
 value=3.365
 rarity=C

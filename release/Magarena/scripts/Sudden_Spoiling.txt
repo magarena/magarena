@@ -1,5 +1,5 @@
 name=Sudden Spoiling
-image=https://magiccards.info/scans/en/c14/164.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73514b51-6c19-4b3c-9cf9-2cf5028d7708.jpg?1619396405
 value=2.500
 rarity=R
 type=Instant

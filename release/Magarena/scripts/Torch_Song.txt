@@ -1,5 +1,5 @@
 name=Torch Song
-image=https://magiccards.info/scans/en/us/222.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6ba8cdf0-492a-4e64-9143-4ccb29ba1d56.jpg?1562917549
 value=2.646
 rarity=U
 type=Enchantment

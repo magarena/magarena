@@ -1,5 +1,5 @@
 name=Magnetic Mine
-image=https://magiccards.info/scans/en/mbs/113.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ed2f7dc-3ada-4490-8c1f-1d03bd4840f5.jpg?1562611638
 value=2.298
 rarity=R
 type=Artifact

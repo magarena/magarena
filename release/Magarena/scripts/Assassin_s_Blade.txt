@@ -1,5 +1,5 @@
 name=Assassin's Blade
-image=https://magiccards.info/scans/en/po/2.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b80e8fe0-eccb-4268-a6ce-1365c68e6b13.jpg?1562447376
 value=3.093
 rarity=U
 type=Instant

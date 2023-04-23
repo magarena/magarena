@@ -1,5 +1,5 @@
 name=Thermal Glider
-image=https://magiccards.info/scans/en/mm/53.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd909c26-930d-4af0-b19a-c899847338b4.jpg?1562384007
 value=3.220
 rarity=C
 type=Creature

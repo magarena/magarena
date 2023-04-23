@@ -1,5 +1,5 @@
 name=Parapet Watchers
-image=https://magiccards.info/scans/en/shm/45.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/499f9987-87d8-4cd3-98c4-b6976c70739e.jpg?1562829734
 value=2.276
 rarity=C
 type=Creature

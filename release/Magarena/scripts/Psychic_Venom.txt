@@ -1,5 +1,5 @@
 name=Psychic Venom
-image=https://magiccards.info/scans/en/6e/91.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/984ae881-9b43-42ce-885e-2eb5e683eed7.jpg?1559592351
 value=3.717
 rarity=C
 type=Enchantment

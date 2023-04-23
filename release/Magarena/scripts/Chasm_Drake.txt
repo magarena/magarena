@@ -1,5 +1,5 @@
 name=Chasm Drake
-image=https://magiccards.info/scans/en/m12/48.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e7e246d-92f8-4e6e-89fc-991b888fc1e8.jpg?1562644250
 value=3.088
 rarity=C
 type=Creature

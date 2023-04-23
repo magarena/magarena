@@ -1,5 +1,5 @@
 name=Battering Sliver
-image=https://magiccards.info/scans/en/pc/95.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f65a72b-d24c-4016-befc-91018a1b62e1.jpg?1619396727
 value=2.856
 rarity=C
 type=Creature

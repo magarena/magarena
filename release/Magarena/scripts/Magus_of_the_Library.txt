@@ -1,5 +1,5 @@
 name=Magus of the Library
-image=https://magiccards.info/scans/en/pc/134.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/899db99b-df27-4848-a23d-5c645deae450.jpg?1562576294
 value=4.031
 rarity=R
 type=Creature

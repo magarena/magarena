@@ -1,5 +1,5 @@
 name=Lord of the Pit
-image=https://magiccards.info/scans/en/ima/96.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b626ab2-4cf6-42e8-a7e2-9c9f310d2f00.jpg?1562849371
 image_updated=2017-04-12
 value=3.725
 rarity=R

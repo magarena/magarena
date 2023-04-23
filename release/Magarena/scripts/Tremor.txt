@@ -1,5 +1,5 @@
 name=Tremor
-image=https://magiccards.info/scans/en/8e/228.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d47f27d-5a25-4d2a-b2a2-027b579b881b.jpg?1562920284
 value=2.769
 rarity=C
 type=Sorcery

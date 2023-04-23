@@ -1,5 +1,5 @@
 name=Coat of Arms
-image=https://magiccards.info/scans/en/m10/207.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/513d4c36-6ad4-4ee9-b161-3136eb59504f.jpg?1592761864
 value=2.500
 rarity=R
 type=Artifact

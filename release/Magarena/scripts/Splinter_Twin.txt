@@ -1,5 +1,5 @@
 name=Splinter Twin
-image=https://magiccards.info/scans/en/mm2/129.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/580fbbf8-ba7e-4889-a5ea-d066f3ea8cea.jpg?1562262611
 value=4.270
 rarity=R
 type=Enchantment

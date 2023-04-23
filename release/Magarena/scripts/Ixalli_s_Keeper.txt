@@ -1,5 +1,5 @@
 name=Ixalli's Keeper
-image=https://magiccards.info/scans/en/xln/193.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5b98537-abf4-46cb-853f-9561811ab439.jpg?1562565766
 value=2.500
 rarity=C
 type=Creature

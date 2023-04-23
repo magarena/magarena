@@ -1,5 +1,5 @@
 name=Voidslime
-image=https://magiccards.info/scans/en/di/137.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97121d5a-18ab-47cd-808f-562cd865955a.jpg?1593273821
 value=4.262
 rarity=R
 type=Instant

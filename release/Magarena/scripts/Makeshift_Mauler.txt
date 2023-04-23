@@ -1,5 +1,5 @@
 name=Makeshift Mauler
-image=https://magiccards.info/scans/en/isd/65.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5e74b52-1137-4da5-bf2d-294daa8e65f2.jpg?1673147345
 value=3.160
 rarity=C
 type=Creature

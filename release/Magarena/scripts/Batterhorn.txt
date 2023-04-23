@@ -1,5 +1,5 @@
 name=Batterhorn
-image=https://magiccards.info/scans/en/rtr/87.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7b40f74-893f-4bfc-87b2-7f8df4c912d8.jpg?1562791147
 value=2.188
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dwarven Driller
-image=https://magiccards.info/scans/en/ju/85.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69d815d3-7e33-4de9-aa36-ff5ffb893d73.jpg?1562630274
 value=3.829
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Hero of Oxid Ridge
-image=https://magiccards.info/scans/en/mbs/66.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a516bce-3d2d-4e0f-afc7-27be3d88848c.jpg?1562609920
 value=3.868
 rarity=M
 type=Creature

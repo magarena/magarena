@@ -1,5 +1,5 @@
 name=Starlit Sanctum
-image=https://magiccards.info/scans/en/on/325.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5774836-0140-420a-9a0f-8ba291cc5ca8.jpg?1674143097
 value=4.198
 rarity=U
 type=Land

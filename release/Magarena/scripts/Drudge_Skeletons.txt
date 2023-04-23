@@ -1,5 +1,5 @@
 name=Drudge Skeletons
-image=https://magiccards.info/scans/en/m10/95.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd6f73bc-3181-40fa-9156-b73e4280e747.jpg?1562939714
 image_updated=2016-12-01
 value=4.014
 rarity=C

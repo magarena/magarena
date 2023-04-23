@@ -1,5 +1,5 @@
 name=Timberpack Wolf
-image=https://magiccards.info/scans/en/a25/190.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f3d1b54-ceef-425d-a349-80a49ac5d879.jpg?1562436074
 image_updated=2018-04-27
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Demonmail Hauberk
-image=https://magiccards.info/scans/en/isd/221.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa33caa8-2a07-4f6c-a6c2-d21cf2d61193.jpg?1562835242
 value=3.198
 rarity=U
 type=Artifact

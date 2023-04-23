@@ -1,5 +1,5 @@
 name=Taste of Blood
-image=https://magiccards.info/scans/en/m12/113.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29268cef-da18-4c1d-9066-e0d513a61bf9.jpg?1562636582
 value=1.946
 rarity=C
 type=Sorcery

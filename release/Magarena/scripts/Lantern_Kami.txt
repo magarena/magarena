@@ -1,5 +1,5 @@
 name=Lantern Kami
-image=https://magiccards.info/scans/en/chk/32.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99625787-f184-48a5-a678-e30b7024c7bb.jpg?1562762958
 value=3.404
 rarity=C
 type=Creature

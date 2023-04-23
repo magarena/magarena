@@ -1,5 +1,5 @@
 name=Override
-image=https://magiccards.info/scans/en/mi/45.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35964fa6-800d-41d6-9f82-fb9c87deee56.jpg?1562140248
 value=2.938
 rarity=C
 type=Instant

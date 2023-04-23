@@ -1,5 +1,5 @@
 name=Pull Under
-image=https://magiccards.info/scans/en/chk/137.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/016afdaa-29bf-4690-bdfe-9074087a191c.jpg?1593860620
 value=1.222
 rarity=C
 type=Instant

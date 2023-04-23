@@ -1,5 +1,5 @@
 name=Glory
-image=https://magiccards.info/scans/en/ju/11.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a414f0e-b157-4570-8213-1c58a96bf7a5.jpg?1562630559
 value=4.234
 rarity=R
 type=Creature

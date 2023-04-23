@@ -1,5 +1,5 @@
 name=Sporesower Thallid
-image=https://magiccards.info/scans/en/mma/162.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/babc8043-bfed-45e3-9d04-1967534f77b2.jpg?1619398694
 value=3.981
 rarity=U
 type=Creature

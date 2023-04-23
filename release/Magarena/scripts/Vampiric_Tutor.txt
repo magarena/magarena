@@ -1,5 +1,5 @@
 name=Vampiric Tutor
-image=https://magiccards.info/scans/en/ema/112.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18bd50f2-c3ba-4217-a2d5-bb771e199706.jpg?1608910005
 value=5.000
 rarity=M
 type=Instant

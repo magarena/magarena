@@ -1,5 +1,5 @@
 name=Thoughts of Ruin
-image=https://magiccards.info/scans/en/sok/118.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a0f2db3-41a6-4283-9812-46b6ae6d1df6.jpg?1562493005
 value=2.629
 rarity=R
 type=Sorcery

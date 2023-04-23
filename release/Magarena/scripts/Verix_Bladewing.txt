@@ -1,5 +1,5 @@
 name=Verix Bladewing
-image=https://magiccards.info/scans/en/dom/149.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16db785c-cf82-4caa-aef6-8c61d9bec7c6.jpg?1562731856
 value=2.500
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Mulch
-image=https://magiccards.info/scans/en/isd/196.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/950dd57e-b2e1-4a27-a212-86fbfdbf914d.jpg?1643593087
 value=4.087
 rarity=C
 type=Sorcery

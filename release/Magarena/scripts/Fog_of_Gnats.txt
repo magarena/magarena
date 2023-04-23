@@ -1,5 +1,5 @@
 name=Fog of Gnats
-image=https://magiccards.info/scans/en/ul/53.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f1e9c54-134b-41da-8c3d-ec699d96778a.jpg?1562862796
 value=4.292
 rarity=C
 type=Creature

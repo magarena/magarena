@@ -1,5 +1,5 @@
 name=Highway Robber
-image=https://magiccards.info/scans/en/10e/150.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2126c83b-75ce-4526-8f91-5cd8b6ec74a5.jpg?1618252861
 value=3.278
 rarity=C
 type=Creature

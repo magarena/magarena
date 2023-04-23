@@ -1,5 +1,5 @@
 name=Goblinslide
-image=https://magiccards.info/scans/en/ktk/109.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9d80e96-3956-4408-84fb-5f94a364eb41.jpg?1562791695
 value=2.667
 rarity=U
 type=Enchantment

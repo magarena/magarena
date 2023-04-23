@@ -1,5 +1,5 @@
 name=Titania's Boon
-image=https://magiccards.info/scans/en/us/276.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8d64591-8552-4e94-b932-7a23922513a1.jpg?1562934045
 value=3.741
 rarity=U
 type=Sorcery

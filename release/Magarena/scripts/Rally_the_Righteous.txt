@@ -1,5 +1,5 @@
 name=Rally the Righteous
-image=https://magiccards.info/scans/en/rav/222.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9da51b6c-2e27-4b41-8fb0-bd9f6ad47b19.jpg?1598917317
 value=3.420
 rarity=C
 type=Instant

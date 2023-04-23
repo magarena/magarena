@@ -1,5 +1,5 @@
 name=Barrin, Master Wizard
-image=https://magiccards.info/scans/en/us/63.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec79e35f-9e78-462d-8b71-4f044e2eff90.jpg?1562944897
 value=3.144
 rarity=R
 type=Legendary,Creature

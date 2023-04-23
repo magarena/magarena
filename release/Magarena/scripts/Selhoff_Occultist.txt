@@ -1,5 +1,5 @@
 name=Selhoff Occultist
-image=https://magiccards.info/scans/en/isd/73.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94975b02-f678-4442-9d1a-cf586aee8789.jpg?1600698559
 value=2.875
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Foxfire Oak
-image=https://magiccards.info/scans/en/shm/115.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46e23eae-7630-40db-b265-2fa00715878e.jpg?1562829586
 value=2.100
 rarity=C
 type=Creature

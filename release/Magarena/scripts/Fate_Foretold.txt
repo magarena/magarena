@@ -1,5 +1,5 @@
 name=Fate Foretold
-image=https://magiccards.info/scans/en/ths/48.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90d3ef99-6c86-4d70-a9a4-9c3cd4eb9538.jpg?1562821444
 value=3.424
 rarity=C
 type=Enchantment

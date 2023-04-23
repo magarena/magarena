@@ -1,5 +1,5 @@
 name=Abzan Guide
-image=https://magiccards.info/scans/en/ktk/162.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b7f7158-4a31-4a1c-bf3b-574c0b09276a.jpg?1562783275
 value=3.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Severed Legion
-image=https://magiccards.info/scans/en/10e/177.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82633f38-5af1-429e-8c9d-db536af85309.jpg?1562550727
 image_updated=2017-01-07
 value=3.596
 rarity=C

@@ -1,5 +1,5 @@
 name=Jolt
-image=https://magiccards.info/scans/en/mr/70.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e0c085a-e17d-4003-bb58-f97555365fcf.jpg?1562718789
 value=2.900
 rarity=C
 type=Instant

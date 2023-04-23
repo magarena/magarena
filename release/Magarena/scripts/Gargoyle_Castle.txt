@@ -1,5 +1,5 @@
 name=Gargoyle Castle
-image=https://magiccards.info/scans/en/c14/297.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9834b4e1-7e9f-4f93-a2aa-13a52e8a11fc.jpg?1568005135
 value=3.732
 rarity=R
 type=Land

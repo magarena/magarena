@@ -1,5 +1,5 @@
 name=Embodiment of Spring
-image=https://magiccards.info/scans/en/ktk/39.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88e07226-f180-4972-b7f8-90c743d45fb8.jpg?1562789879
 value=2.750
 rarity=C
 type=Creature

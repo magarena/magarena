@@ -1,5 +1,5 @@
 name=Chain Reaction
-image=https://magiccards.info/scans/en/cmd/113.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92ca793e-a54a-4e8f-a87d-f0dc4f178412.jpg?1674141900
 image_updated=2016-02-29
 value=3.521
 removal=2

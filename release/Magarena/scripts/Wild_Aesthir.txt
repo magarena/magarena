@@ -1,5 +1,5 @@
 name=Wild Aesthir
-image=https://magiccards.info/scans/en/ai/154.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/feffa722-fe05-4e70-ba4c-1cf110b3662f.jpg?1562955380
 value=3.317
 rarity=C
 type=Creature

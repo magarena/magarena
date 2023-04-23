@@ -1,5 +1,5 @@
 name=Control of the Court
-image=https://magiccards.info/scans/en/p3k/105.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e4f0005-4f19-4352-9cd2-3993ae6db879.jpg?1562256073
 value=3.000
 rarity=U
 type=Sorcery

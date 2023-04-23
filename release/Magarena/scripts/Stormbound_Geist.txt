@@ -1,5 +1,5 @@
 name=Stormbound Geist
-image=https://magiccards.info/scans/en/dka/51.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/040eddb0-fca2-41eb-ab07-c48d49385973.jpg?1562896034
 value=3.650
 rarity=C
 type=Creature

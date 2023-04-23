@@ -1,5 +1,5 @@
 name=Iron Myr
-image=https://magiccards.info/scans/en/som/168.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bd0a588-b695-4060-b5d5-c6a74710ff0f.jpg?1562817986
 value=3.186
 rarity=C
 type=Artifact,Creature

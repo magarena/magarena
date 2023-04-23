@@ -1,5 +1,5 @@
 name=Polymorphist's Jest
-image=https://magiccards.info/scans/en/m15/75.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5f935cb-4ec2-4131-878b-f8e557d848b9.jpg?1562629300
 value=3.773
 rarity=R
 type=Instant

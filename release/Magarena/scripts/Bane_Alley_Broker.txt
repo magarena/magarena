@@ -1,5 +1,5 @@
 name=Bane Alley Broker
-image=https://magiccards.info/scans/en/gtc/145.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7996df7f-70f5-412c-9573-9512e4e131ac.jpg?1561832348
 value=3.500
 rarity=U
 type=Creature

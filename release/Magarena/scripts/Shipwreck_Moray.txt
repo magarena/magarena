@@ -1,5 +1,5 @@
 name=Shipwreck Moray
-image=https://magiccards.info/scans/en/aer/45.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/284c6de3-4e09-40d9-afdb-89ff08e1844b.jpg?1576381563
 value=2.500
 rarity=C
 type=Creature

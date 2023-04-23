@@ -1,5 +1,5 @@
 name=Bloodletter Quill
-image=https://magiccards.info/scans/en/rav/254.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8fbdf87-2424-4fc2-904e-b1e5fef2a335.jpg?1598917879
 value=3.386
 rarity=R
 type=Artifact

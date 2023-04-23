@@ -1,5 +1,5 @@
 name=Amulet of Unmaking
-image=https://magiccards.info/scans/en/mr/258.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdbd94c8-611c-4b20-99ca-dd2d7661d644.jpg?1562722878
 value=2.557
 rarity=R
 type=Artifact

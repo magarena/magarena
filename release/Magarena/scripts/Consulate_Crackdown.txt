@@ -1,5 +1,5 @@
 name=Consulate Crackdown
-image=https://magiccards.info/scans/en/aer/11.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02fb7a26-fbf0-4b91-847b-cfc46e01a342.jpg?1576381336
 value=2.500
 rarity=R
 type=Enchantment

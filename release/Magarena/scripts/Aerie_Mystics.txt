@@ -1,5 +1,5 @@
 name=Aerie Mystics
-image=https://magiccards.info/scans/en/cfx/1.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac774ed1-75f0-4c22-adf7-73a64183981a.jpg?1592672301
 value=2.571
 rarity=U
 type=Creature

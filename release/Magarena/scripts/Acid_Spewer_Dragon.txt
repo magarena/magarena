@@ -1,5 +1,5 @@
 name=Acid-Spewer Dragon
-image=https://magiccards.info/scans/en/dtk/86.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa8f58f1-4843-4926-b3c4-98898201c216.jpg?1562791329
 value=2.500
 rarity=U
 type=Creature

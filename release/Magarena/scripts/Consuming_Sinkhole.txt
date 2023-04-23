@@ -1,5 +1,5 @@
 name=Consuming Sinkhole
-image=https://magiccards.info/scans/en/ogw/94.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82a42b28-3d1b-4432-b8c9-2d42e4d0e1c5.jpg?1562921426
 image_updated=2016-02-29
 value=2.500
 rarity=C

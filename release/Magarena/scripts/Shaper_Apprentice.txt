@@ -1,5 +1,5 @@
 name=Shaper Apprentice
-image=https://magiccards.info/scans/en/xln/75.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02955471-5ffc-4c7b-83fe-a69816415ca1.jpg?1562549837
 value=2.500
 rarity=C
 type=Creature

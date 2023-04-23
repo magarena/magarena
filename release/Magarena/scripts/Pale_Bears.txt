@@ -1,5 +1,5 @@
 name=Pale Bears
-image=https://magiccards.info/scans/en/ia/144.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f19c2a3-6403-4a78-bf45-6e339578d673.jpg?1587912053
 value=2.713
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Embermage Goblin
-image=https://magiccards.info/scans/en/on/200.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f50f60a8-e99a-4891-b474-a21abee38970.jpg?1643753588
 value=3.122
 rarity=U
 type=Creature

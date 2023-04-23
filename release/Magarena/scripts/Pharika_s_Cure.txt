@@ -1,5 +1,5 @@
 name=Pharika's Cure
-image=https://magiccards.info/scans/en/ths/100.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0efc963-5848-44eb-a654-c08b5bd4501d.jpg?1562829047
 value=3.306
 rarity=C
 type=Instant

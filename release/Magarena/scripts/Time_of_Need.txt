@@ -1,5 +1,5 @@
 name=Time of Need
-image=https://magiccards.info/scans/en/chk/247.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/514577a5-c7ae-4cfc-872a-e3786d78a6c3.jpg?1562760066
 value=3.971
 rarity=U
 type=Sorcery

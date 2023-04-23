@@ -1,5 +1,5 @@
 name=Abolish
-image=https://magiccards.info/scans/en/pr/1.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/842e7e6a-c89a-463d-a6e8-743a953c827c.jpg?1562270242
 image_updated=2016-11-20
 value=4.279
 rarity=U

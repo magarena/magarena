@@ -1,5 +1,5 @@
 name=Ambush Commander
-image=https://magiccards.info/scans/en/sc/111.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ecbf790-619b-4b55-ae4c-29f1459b0031.jpg?1562914181
 image_updated=2016-11-20
 value=4.316
 rarity=R

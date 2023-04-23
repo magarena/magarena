@@ -1,5 +1,5 @@
 name=New Prahv Guildmage
-image=https://magiccards.info/scans/en/rtr/181.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/698b47d1-c72e-4dc3-b28b-7421e0163f22.jpg?1562787593
 value=3.430
 rarity=U
 type=Creature

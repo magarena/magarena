@@ -1,5 +1,5 @@
 name=Lightbringer
-image=https://magiccards.info/scans/en/ne/11.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19451993-7a53-4a50-bfca-ddc9cdfbe168.jpg?1562628823
 value=3.238
 rarity=C
 type=Creature

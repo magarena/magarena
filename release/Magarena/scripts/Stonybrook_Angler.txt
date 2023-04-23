@@ -1,5 +1,5 @@
 name=Stonybrook Angler
-image=https://magiccards.info/scans/en/lw/90.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/047709e7-c44f-47e4-a9cc-1d941264e454.jpg?1562336736
 value=2.885
 rarity=C
 type=Creature

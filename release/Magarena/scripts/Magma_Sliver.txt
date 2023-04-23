@@ -1,5 +1,5 @@
 name=Magma Sliver
-image=https://magiccards.info/scans/en/le/107.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9091d908-456f-4127-857d-b22fdb4f2fd9.jpg?1562924149
 value=3.972
 rarity=R
 type=Creature

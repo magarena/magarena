@@ -1,5 +1,5 @@
 name=Dauthi Mindripper
-image=https://magiccards.info/scans/en/tp/19.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fb990ee-f027-4c74-a67e-98ada6aa21e4.jpg?1562054472
 value=3.756
 rarity=U
 type=Creature

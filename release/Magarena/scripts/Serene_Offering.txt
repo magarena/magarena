@@ -1,5 +1,5 @@
 name=Serene Offering
-image=https://magiccards.info/scans/en/tp/252.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c0b3795-7f30-4c61-b5d8-f238055d6be1.jpg?1562054463
 value=3.304
 rarity=U
 type=Instant

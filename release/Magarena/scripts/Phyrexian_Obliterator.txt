@@ -1,5 +1,5 @@
 name=Phyrexian Obliterator
-image=https://magiccards.info/scans/en/a25/101.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67a9c38b-6b3a-4056-a87c-fc48446f854f.jpg?1675957044
 image_updated=2018-04-27
 value=4.354
 rarity=M

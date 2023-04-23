@@ -1,5 +1,5 @@
 name=Viridescent Wisps
-image=https://magiccards.info/scans/en/shm/132.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c33871f-0e6a-4616-b484-e79b1945255f.jpg?1562831309
 value=2.329
 rarity=C
 type=Instant

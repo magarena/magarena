@@ -1,5 +1,5 @@
 name=Skyfire Kirin
-image=https://magiccards.info/scans/en/sok/113.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d425562-3f0f-4aa3-a761-48ba445b8380.jpg?1562493019
 value=3.465
 rarity=R
 type=Legendary,Creature

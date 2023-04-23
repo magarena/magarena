@@ -1,5 +1,5 @@
 name=Leaf-Crowned Elder
-image=https://magiccards.info/scans/en/mt/128.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c666dc97-8780-4982-b9e7-7d4a358f922c.jpg?1562881291
 value=3.770
 rarity=R
 type=Creature

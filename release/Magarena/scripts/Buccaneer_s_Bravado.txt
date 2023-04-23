@@ -1,5 +1,5 @@
 name=Buccaneer's Bravado
-image=https://magiccards.info/scans/en/rix/96.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d82c583f-3d2b-4c7f-a6f4-97da150423b4.jpg?1555040386
 value=2.500
 rarity=C
 type=Instant

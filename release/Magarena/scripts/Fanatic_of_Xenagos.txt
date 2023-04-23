@@ -1,5 +1,5 @@
 name=Fanatic of Xenagos
-image=https://magiccards.info/scans/en/bng/147.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3687799c-81bd-4c49-902a-2a96863629c3.jpg?1593092739
 value=3.823
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Reverent Hunter
-image=https://magiccards.info/scans/en/ths/173.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97b4e736-d19a-42ac-8bcb-b8e6b7b7b539.jpg?1562821743
 value=3.490
 rarity=R
 type=Creature

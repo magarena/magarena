@@ -1,5 +1,5 @@
 name=Foundry Inspector
-image=https://magiccards.info/scans/en/kld/215.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/412d8300-926a-4f94-9edf-e45f07349fb9.jpg?1651656292
 image_updated=2016-10-05
 value=2.500
 rarity=U

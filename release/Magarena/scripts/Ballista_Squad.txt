@@ -1,5 +1,5 @@
 name=Ballista Squad
-image=https://magiccards.info/scans/en/10e/8.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4d17394-b9c4-43f6-9a6d-2c7c7ecb1d74.jpg?1562552811
 value=3.934
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Talas Scout
-image=https://magiccards.info/scans/en/po2/52.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48e12f17-855e-47e0-b7e3-df5c388b01bb.jpg?1562912052
 value=3.037
 rarity=C
 type=Creature

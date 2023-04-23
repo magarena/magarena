@@ -1,5 +1,5 @@
 name=Stillmoon Cavalier
-image=https://magiccards.info/scans/en/eve/95.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/400dc91e-96c0-49bf-b307-677d6f80f3ed.jpg?1562908283
 value=4.298
 rarity=R
 type=Creature

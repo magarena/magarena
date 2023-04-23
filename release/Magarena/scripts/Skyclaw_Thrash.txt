@@ -1,5 +1,5 @@
 name=Skyclaw Thrash
-image=https://magiccards.info/scans/en/arb/89.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fafde9c4-57c0-4ae5-a4db-38aae434ddcd.jpg?1562645234
 value=2.754
 rarity=U
 type=Artifact,Creature

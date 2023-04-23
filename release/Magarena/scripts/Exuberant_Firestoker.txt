@@ -1,5 +1,5 @@
 name=Exuberant Firestoker
-image=https://magiccards.info/scans/en/ala/99.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5c08845-d195-447e-9e4d-020dcab5f80f.jpg?1562708783
 value=3.022
 rarity=U
 type=Creature

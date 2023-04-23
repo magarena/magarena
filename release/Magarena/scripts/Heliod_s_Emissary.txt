@@ -1,5 +1,5 @@
 name=Heliod's Emissary
-image=https://magiccards.info/scans/en/ths/18.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49663acb-582e-495a-b45e-5fc5f4949f22.jpg?1562817630
 value=3.412
 rarity=U
 type=Enchantment,Creature

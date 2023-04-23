@@ -1,5 +1,5 @@
 name=Underworld Coinsmith
-image=https://magiccards.info/scans/en/jou/157.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f0f1e80-405a-413a-bed1-ea276040eea4.jpg?1562703435
 image_updated=2016-02-29
 value=3.677
 rarity=U

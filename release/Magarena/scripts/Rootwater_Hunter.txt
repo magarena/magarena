@@ -1,5 +1,5 @@
 name=Rootwater Hunter
-image=https://magiccards.info/scans/en/tp/82.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5858c71-0877-480c-9c46-a3fe006bf9db.jpg?1592764644
 value=3.569
 rarity=C
 type=Creature

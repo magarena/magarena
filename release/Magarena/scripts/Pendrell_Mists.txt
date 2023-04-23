@@ -1,5 +1,5 @@
 name=Pendrell Mists
-image=https://magiccards.info/scans/en/wl/47.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b902b972-3a93-4e4e-aa77-02ada81e6b95.jpg?1562802967
 value=4.214
 rarity=R
 type=Enchantment

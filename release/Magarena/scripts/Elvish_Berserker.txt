@@ -1,5 +1,5 @@
 name=Elvish Berserker
-image=https://magiccards.info/scans/en/10e/260.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/777633d7-e31c-4ea3-a085-2858d6ee6040.jpg?1562550007
 value=3.585
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fate Forgotten
-image=https://magiccards.info/scans/en/dtk/17.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b2161d9-ad52-45a6-9be9-e7ff09ec8f5a.jpg?1562790464
 value=2.500
 rarity=C
 type=Instant

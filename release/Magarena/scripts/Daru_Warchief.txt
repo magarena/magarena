@@ -1,5 +1,5 @@
 name=Daru Warchief
-image=https://magiccards.info/scans/en/sc/6.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2630d3b5-8f3a-4aad-a45e-22a7979429f3.jpg?1562526606
 value=4.428
 rarity=U
 type=Creature

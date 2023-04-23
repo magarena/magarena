@@ -1,5 +1,5 @@
 name=Druid of the Anima
-image=https://magiccards.info/scans/en/ala/128.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de32bf78-73c2-4cd4-b3b3-ef8be53e1e5e.jpg?1562709851
 value=3.020
 rarity=C
 type=Creature

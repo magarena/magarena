@@ -1,5 +1,5 @@
 name=Krenko, Mob Boss
-image=https://magiccards.info/scans/en/m13/138.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd9fec9d-23c8-4d35-97c1-9499527198fb.jpg?1601078209
 image_updated=2016-12-21
 value=4.000
 rarity=R

@@ -1,5 +1,5 @@
 name=Thriving Rhino
-image=https://magiccards.info/scans/en/kld/171.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5acf10ec-f2dd-4569-909b-ac52a9ed6adf.jpg?1576382702
 image_updated=2016-10-05
 value=2.500
 rarity=C

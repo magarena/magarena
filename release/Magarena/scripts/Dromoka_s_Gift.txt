@@ -1,5 +1,5 @@
 name=Dromoka's Gift
-image=https://magiccards.info/scans/en/dtk/184.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a356afb6-19d7-459a-84ca-090924d45387.jpg?1562790928
 value=2.500
 rarity=U
 type=Instant

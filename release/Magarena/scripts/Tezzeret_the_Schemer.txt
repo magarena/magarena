@@ -1,5 +1,5 @@
 name=Tezzeret the Schemer
-image=https://magiccards.info/scans/en/aer/137.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58265203-bc16-41d2-875c-2ff3b4870824.jpg?1576382161
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

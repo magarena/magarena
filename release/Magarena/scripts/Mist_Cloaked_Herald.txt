@@ -1,5 +1,5 @@
 name=Mist-Cloaked Herald
-image=https://magiccards.info/scans/en/rix/43.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/574f73a7-9ff7-4ce3-9f56-002af968d35a.jpg?1562302202
 value=2.500
 rarity=C
 type=Creature

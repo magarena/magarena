@@ -1,5 +1,5 @@
 name=Goretusk Firebeast
-image=https://magiccards.info/scans/en/ju/91.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9919d2dd-d6a1-4d45-b6aa-227ed05d7051.jpg?1562631090
 value=1.828
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Stormcrag Elemental
-image=https://magiccards.info/scans/en/dtk/158.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a906f718-635b-4d51-8896-530c52b260f7.jpg?1562791246
 value=2.500
 rarity=U
 type=Creature

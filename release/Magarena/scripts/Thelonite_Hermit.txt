@@ -1,5 +1,5 @@
 name=Thelonite Hermit
-image=https://magiccards.info/scans/en/c16/171.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f803ebda-2f6b-41e4-9ffe-b1f2888996b6.jpg?1619403569
 image_updated=2017-08-17
 value=4.167
 rarity=R

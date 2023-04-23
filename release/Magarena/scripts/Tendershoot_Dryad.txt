@@ -1,5 +1,5 @@
 name=Tendershoot Dryad
-image=https://magiccards.info/scans/en/rix/147.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a159830a-698f-423c-9da0-a734b210ecab.jpg?1555040748
 value=2.500
 rarity=R
 type=Creature

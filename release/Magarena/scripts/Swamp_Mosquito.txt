@@ -1,5 +1,5 @@
 name=Swamp Mosquito
-image=https://magiccards.info/scans/en/tsts/49.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/450800c5-28e0-4eeb-9164-db9fdebc595f.jpg?1562775466
 value=3.605
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Pristine Skywise
-image=https://magiccards.info/scans/en/dtk/228.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/516512f5-b4ce-46d3-bdda-c88b357192ca.jpg?1568004777
 value=2.500
 rarity=R
 type=Creature

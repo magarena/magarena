@@ -1,5 +1,5 @@
 name=Slagwurm Armor
-image=https://magiccards.info/scans/en/mi/243.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a4a4d2d-7080-404c-83ca-90a584aa02c8.jpg?1562922994
 value=4.375
 rarity=C
 type=Artifact

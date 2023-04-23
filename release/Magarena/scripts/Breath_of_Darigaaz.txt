@@ -1,5 +1,5 @@
 name=Breath of Darigaaz
-image=https://magiccards.info/scans/en/cmd/112.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbb60f03-7bcf-46a3-9310-c2067d9c5396.jpg?1562276034
 image_updated=2016-02-29
 value=4.091
 removal=3

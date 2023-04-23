@@ -1,5 +1,5 @@
 name=Scavenged Weaponry
-image=https://magiccards.info/scans/en/in/123.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e8072a9-2699-4c6c-9556-67d91bd67a4b.jpg?1562910890
 value=2.621
 rarity=C
 type=Enchantment

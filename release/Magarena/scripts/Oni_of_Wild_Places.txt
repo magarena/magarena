@@ -1,5 +1,5 @@
 name=Oni of Wild Places
-image=https://magiccards.info/scans/en/cmd/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddd1e712-826a-47ee-9578-ca61f2d65221.jpg?1592672817
 image_updated=2017-01-03
 value=2.919
 rarity=U

@@ -1,5 +1,5 @@
 name=Citadel Castellan
-image=https://magiccards.info/scans/en/ori/213.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9aa11f30-f2b7-4279-9176-c336c74538bf.jpg?1562032872
 image_updated=2015-11-05
 value=2.500
 rarity=U

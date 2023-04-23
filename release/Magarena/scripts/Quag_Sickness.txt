@@ -1,5 +1,5 @@
 name=Quag Sickness
-image=https://magiccards.info/scans/en/m11/111.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a759dcd2-ca07-4428-a3ea-b2e829b1fcb4.jpg?1562833441
 value=3.520
 rarity=C
 type=Enchantment

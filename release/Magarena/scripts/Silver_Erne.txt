@@ -1,5 +1,5 @@
 name=Silver Erne
-image=https://magiccards.info/scans/en/ia/98.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/685076cc-098c-4f98-918c-0ad825eda10f.jpg?1587911666
 value=2.580
 rarity=U
 type=Creature

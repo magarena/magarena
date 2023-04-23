@@ -1,5 +1,5 @@
 name=Isareth the Awakener
-image=https://magiccards.info/scans/en/m19/104.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74e49567-8ad6-4ce9-a55d-4db5e0fd9532.jpg?1562302712
 value=2.500
 rarity=R
 type=Legendary,Creature

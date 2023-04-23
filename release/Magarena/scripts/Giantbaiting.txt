@@ -1,5 +1,5 @@
 name=Giantbaiting
-image=https://magiccards.info/scans/en/mm3/208.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/509d27ed-f9cf-4130-8807-38a4ae857323.jpg?1593814798
 image_updated=2017-08-08
 value=3.608
 rarity=C

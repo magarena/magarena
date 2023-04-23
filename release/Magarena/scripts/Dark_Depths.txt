@@ -1,5 +1,5 @@
 name=Dark Depths
-image=https://magiccards.info/scans/en/cs/145.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5.jpg?1599710396
 value=4.555
 rarity=R
 type=Legendary,Snow,Land

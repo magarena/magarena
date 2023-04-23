@@ -1,5 +1,5 @@
 name=Cloudseeder
-image=https://magiccards.info/scans/en/fut/33.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9adcc82-0754-4cb7-ac28-e5624f563b7f.jpg?1619393893
 value=2.635
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dingus Staff
-image=https://magiccards.info/scans/en/wl/149.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/065b4358-5dee-4f13-bff9-8254bdb92069.jpg?1562799171
 value=3.473
 rarity=U
 type=Artifact

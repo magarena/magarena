@@ -1,5 +1,5 @@
 name=Gorger Wurm
-image=https://magiccards.info/scans/en/arb/56.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00e5a9be-bfb2-466b-b0fe-3b24694e9f84.jpg?1562639363
 value=3.124
 rarity=C
 type=Creature

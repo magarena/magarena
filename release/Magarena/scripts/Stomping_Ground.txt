@@ -1,5 +1,5 @@
 name=Stomping Ground
-image=https://magiccards.info/scans/en/gtc/247.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcaa1ff6-304e-4660-9df3-36de8e89592e.jpg?1584832363
 value=4.095
 rarity=R
 type=Land

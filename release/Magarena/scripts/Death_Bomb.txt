@@ -1,5 +1,5 @@
 name=Death Bomb
-image=https://magiccards.info/scans/en/ps/41.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8a84715-c5dc-4a19-af6a-796c6ee912c2.jpg?1562947604
 value=1.820
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Loam Lion
-image=https://magiccards.info/scans/en/wwk/13.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d810da8b-298e-41a4-a962-33b1da5a1866.jpg?1562946543
 value=4.318
 rarity=U
 type=Creature

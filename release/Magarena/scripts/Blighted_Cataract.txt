@@ -1,5 +1,5 @@
 name=Blighted Cataract
-image=https://magiccards.info/scans/en/bfz/229.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6d03a79-4219-492f-bf9a-0b810e97e5f5.jpg?1625979790
 image_updated=2015-11-08
 value=2.500
 rarity=U

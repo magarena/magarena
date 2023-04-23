@@ -1,5 +1,5 @@
 name=Stitcher's Supplier
-image=https://magiccards.info/scans/en/m19/121.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b737126-50b5-4678-91bf-197b64086fe4.jpg?1562301182
 value=2.500
 rarity=U
 type=Creature

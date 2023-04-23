@@ -1,5 +1,5 @@
 name=Titan Forge
-image=https://magiccards.info/scans/en/mbs/141.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a3bb4ab-6fe7-4926-a929-3e37691f287a.jpg?1562612435
 value=3.485
 rarity=R
 type=Artifact

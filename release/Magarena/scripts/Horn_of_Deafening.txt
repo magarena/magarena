@@ -1,5 +1,5 @@
 name=Horn of Deafening
-image=https://magiccards.info/scans/en/lg/224.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfbd36dd-3e6f-40c7-a166-0e8ecaabe7fa.jpg?1562940221
 image_updated=2016-12-10
 value=3.265
 rarity=R

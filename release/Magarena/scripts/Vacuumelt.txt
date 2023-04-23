@@ -1,5 +1,5 @@
 name=Vacuumelt
-image=https://magiccards.info/scans/en/gp/40.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32dfe9aa-8303-460b-a4c3-e5533af2e1fd.jpg?1592713441
 value=1.821
 removal=2
 rarity=U

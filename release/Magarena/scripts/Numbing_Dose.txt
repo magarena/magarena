@@ -1,5 +1,5 @@
 name=Numbing Dose
-image=https://magiccards.info/scans/en/nph/40.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f28a0f4-43e1-46df-8b6a-d588c5cceb88.jpg?1562879688
 value=2.538
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wispmare
-image=https://magiccards.info/scans/en/lw/48.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56389c91-a470-4c43-9368-98df4d38f7fd.jpg?1562349014
 value=4.102
 rarity=C
 type=Creature

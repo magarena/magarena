@@ -1,5 +1,5 @@
 name=Lavamancer's Skill
-image=https://magiccards.info/scans/en/on/215.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d4dd156-a2c1-4fab-b9f4-3302a4e8835a.jpg?1562898074
 value=3.171
 rarity=C
 type=Enchantment

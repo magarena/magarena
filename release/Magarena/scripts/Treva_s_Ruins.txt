@@ -1,5 +1,5 @@
 name=Treva's Ruins
-image=https://magiccards.info/scans/en/ps/143.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bae2458-b54f-426a-ad40-13529a73c423.jpg?1562924537
 value=4.176
 rarity=U
 type=Land

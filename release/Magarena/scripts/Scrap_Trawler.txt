@@ -1,5 +1,5 @@
 name=Scrap Trawler
-image=https://magiccards.info/scans/en/aer/175.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/614be454-3829-4c3b-9485-930755dfa16d.jpg?1682210173
 value=2.500
 rarity=R
 type=Artifact,Creature

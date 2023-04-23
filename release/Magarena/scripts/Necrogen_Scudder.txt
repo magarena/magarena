@@ -1,5 +1,5 @@
 name=Necrogen Scudder
-image=https://magiccards.info/scans/en/m15/106.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2045ddd-fa05-4769-aa7a-17b9ab8d6fc0.jpg?1562793804
 value=3.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Polluted Dead
-image=https://magiccards.info/scans/en/avr/116.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/036c1954-37d3-4787-8df8-f2d0dd39058a.jpg?1592708951
 value=2.859
 removal=1
 rarity=C

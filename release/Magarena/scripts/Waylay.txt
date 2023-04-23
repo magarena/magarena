@@ -1,5 +1,5 @@
 name=Waylay
-image=https://magiccards.info/scans/en/us/56.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/867a33ee-0340-413a-8243-9d6bc2d944e2.jpg?1562923385
 value=3.990
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Nim Shrieker
-image=https://magiccards.info/scans/en/mi/73.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3a2c39b-b302-4cc3-b507-e4fe00614036.jpg?1562157213
 value=3.221
 rarity=C
 type=Creature

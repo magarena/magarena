@@ -1,5 +1,5 @@
 name=Guided Strike
-image=https://magiccards.info/scans/en/ima/23.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9696feed-e8e3-434d-b155-1f5734966b49.jpg?1562851607
 image_updated=2017-04-12
 value=3.589
 rarity=C

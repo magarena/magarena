@@ -1,5 +1,5 @@
 name=Slaughter Drone
-image=https://magiccards.info/scans/en/ogw/79.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/275b1185-49aa-45ae-8e2d-12aa469a7d77.jpg?1562903035
 image_updated=2016-02-29
 value=2.500
 rarity=C

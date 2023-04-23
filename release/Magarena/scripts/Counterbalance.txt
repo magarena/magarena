@@ -1,5 +1,5 @@
 name=Counterbalance
-image=https://magiccards.info/scans/en/cs/31.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c329ff2b-0331-4934-a8df-870dd7bf402b.jpg?1593274911
 value=4.517
 rarity=U
 type=Enchantment

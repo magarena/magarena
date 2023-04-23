@@ -1,5 +1,5 @@
 name=Cruel Ultimatum
-image=https://magiccards.info/scans/en/mm3/158.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d71a8ea5-199e-473e-a2b1-e2f7cc804ffc.jpg?1592765938
 image_updated=2017-08-08
 value=3.975
 rarity=R

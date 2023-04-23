@@ -1,5 +1,5 @@
 name=Chill
-image=https://magiccards.info/scans/en/6e/60.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24846eba-e085-4d1d-8c7a-d4faf11034a6.jpg?1562815618
 value=4.180
 rarity=U
 type=Enchantment

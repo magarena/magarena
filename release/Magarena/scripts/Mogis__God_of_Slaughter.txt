@@ -1,5 +1,5 @@
 name=Mogis, God of Slaughter
-image=https://magiccards.info/scans/en/bng/151.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a0417bf-b735-46d7-9985-2d991051020f.jpg?1593092789
 value=3.834
 rarity=M
 type=Legendary,Enchantment,Creature

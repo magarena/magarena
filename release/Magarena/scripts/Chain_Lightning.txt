@@ -1,5 +1,5 @@
 name=Chain Lightning
-image=https://magiccards.info/scans/en/ema/123.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7cef88c-0ad6-47c4-b6c8-f989586aa635.jpg?1601077393
 value=4.000
 rarity=U
 type=Sorcery

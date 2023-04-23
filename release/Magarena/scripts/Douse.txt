@@ -1,5 +1,5 @@
 name=Douse
-image=https://magiccards.info/scans/en/us/70.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93a8d857-184d-4339-88f4-261378e5bd3c.jpg?1562926224
 value=3.864
 rarity=U
 type=Enchantment

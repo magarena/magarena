@@ -1,5 +1,5 @@
 name=Eternal Flame
-image=https://magiccards.info/scans/en/dk/60.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d646feea-3c20-4737-8d20-ffad42258ced.jpg?1562946085
 value=2.736
 rarity=R
 type=Sorcery

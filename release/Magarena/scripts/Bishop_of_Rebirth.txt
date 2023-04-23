@@ -1,5 +1,5 @@
 name=Bishop of Rebirth
-image=https://magiccards.info/scans/en/xln/5.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d654bec-4eb2-4df6-b71e-ce59a718f903.jpg?1562553920
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Kor Bladewhirl
-image=https://magiccards.info/scans/en/bfz/34.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e31b12c7-df11-4450-95e1-b9a5aa97af0e.jpg?1562949080
 image_updated=2015-11-08
 value=2.500
 rarity=U

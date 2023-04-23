@@ -1,5 +1,5 @@
 name=Sudden Death
-image=https://magiccards.info/scans/en/ts/134.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d724faa-a988-4c08-875d-d18f48926a0a.jpg?1619396356
 value=4.248
 rarity=U
 type=Instant

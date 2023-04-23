@@ -1,5 +1,5 @@
 name=Tusked Colossodon
-image=https://magiccards.info/scans/en/ktk/155.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d511407-0c1e-4342-a578-ca557c6886fd.jpg?1562784330
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Blood Pet
-image=https://magiccards.info/scans/en/7e/121.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9ff08225-82a5-4636-be6a-d38d32f5663f.jpg?1562244165
 value=3.774
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Words of Wisdom
-image=https://magiccards.info/scans/en/od/114.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0199cfb-5e44-40f0-b9cf-71473155eb94.jpg?1562930864
 value=3.431
 rarity=C
 type=Instant

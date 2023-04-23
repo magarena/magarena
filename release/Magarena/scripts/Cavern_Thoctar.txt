@@ -1,5 +1,5 @@
 name=Cavern Thoctar
-image=https://magiccards.info/scans/en/ala/125.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34748acb-7045-42b6-a93f-a3f11a1bc839.jpg?1562702691
 value=2.033
 rarity=C
 type=Creature

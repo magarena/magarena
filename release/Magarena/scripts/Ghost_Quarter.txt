@@ -1,5 +1,5 @@
 name=Ghost Quarter
-image=https://magiccards.info/scans/en/c14/298.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12f8071c-8955-4aa2-889c-6043df047223.jpg?1562272439
 image_updated=2016-02-29
 value=4.438
 rarity=U

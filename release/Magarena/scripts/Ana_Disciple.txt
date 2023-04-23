@@ -1,5 +1,5 @@
 name=Ana Disciple
-image=https://magiccards.info/scans/en/ap/73.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7efe00f9-bf42-4d6f-9a22-b357b1c1e092.jpg?1562924945
 value=3.258
 rarity=C
 type=Creature

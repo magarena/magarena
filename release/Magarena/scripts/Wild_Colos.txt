@@ -1,5 +1,5 @@
 name=Wild Colos
-image=https://magiccards.info/scans/en/ud/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d39f746-7b82-476a-9774-3375debb47bd.jpg?1562443743
 value=2.970
 rarity=C
 type=Creature

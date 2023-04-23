@@ -1,5 +1,5 @@
 name=Green Scarab
-image=https://magiccards.info/scans/en/ia/252.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fbf9266-c97e-4666-b0fa-1802a69a62cc.jpg?1562898062
 value=2.190
 rarity=U
 type=Enchantment

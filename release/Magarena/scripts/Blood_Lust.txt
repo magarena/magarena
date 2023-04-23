@@ -1,5 +1,5 @@
 name=Blood Lust
-image=https://magiccards.info/scans/en/5e/212.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51d30379-bf83-4334-8556-bc23a81dbcd1.jpg?1562912057
 value=3.695
 rarity=C
 type=Instant

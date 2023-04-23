@@ -1,5 +1,5 @@
 name=Bright Reprisal
-image=https://magiccards.info/scans/en/xln/7.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f3044c9-865b-4869-a2c0-ed11a5841bf5.jpg?1592764675
 value=2.500
 rarity=U
 type=Instant

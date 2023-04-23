@@ -1,5 +1,5 @@
 name=Fists of Ironwood
-image=https://magiccards.info/scans/en/mm3/126.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d114268-7768-4a7c-a6fb-78fec7d4495a.jpg?1593813795
 image_updated=2017-08-08
 value=3.568
 rarity=C

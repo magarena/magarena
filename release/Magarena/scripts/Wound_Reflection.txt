@@ -1,5 +1,5 @@
 name=Wound Reflection
-image=https://magiccards.info/scans/en/shm/81.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b14a82c-877a-445f-8910-33aaa6fe3d15.jpg?1599706125
 value=3.764
 rarity=R
 type=Enchantment

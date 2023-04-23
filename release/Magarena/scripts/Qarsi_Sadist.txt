@@ -1,5 +1,5 @@
 name=Qarsi Sadist
-image=https://magiccards.info/scans/en/dtk/113.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/068c44b9-0ba8-4275-b73d-18ad366f4b45.jpg?1562782046
 value=2.500
 rarity=C
 type=Creature

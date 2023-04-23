@@ -1,5 +1,5 @@
 name=Desecration Demon
-image=https://magiccards.info/scans/en/mm3/66.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89936685-8647-4a65-b764-62fc4b49293a.jpg?1593813255
 image_updated=2017-08-08
 value=4.025
 rarity=R

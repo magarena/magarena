@@ -1,5 +1,5 @@
 name=Feeding Frenzy
-image=https://magiccards.info/scans/en/on/147.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6d74c30-ebca-4684-ad84-3ca19193ad88.jpg?1562934515
 value=2.875
 rarity=U
 type=Instant

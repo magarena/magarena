@@ -1,5 +1,5 @@
 name=Bitterblossom
-image=https://magiccards.info/scans/en/mm2/71.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9640cbf-b016-410e-9eff-e8924883517b.jpg?1673147456
 image_updated=2015-11-05
 value=4.392
 rarity=M

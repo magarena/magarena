@@ -1,5 +1,5 @@
 name=Gleaming Barrier
-image=https://magiccards.info/scans/en/rix/178.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/410c7922-5d99-4b94-bcdb-4f02ca175e65.jpg?1599709231
 value=2.500
 rarity=C
 type=Artifact,Creature

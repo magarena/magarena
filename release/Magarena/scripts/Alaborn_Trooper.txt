@@ -1,5 +1,5 @@
 name=Alaborn Trooper
-image=https://magiccards.info/scans/en/po2/124.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3bc4e43-1935-402b-a309-c575c83e849f.jpg?1562933653
 value=2.040
 rarity=C
 type=Creature

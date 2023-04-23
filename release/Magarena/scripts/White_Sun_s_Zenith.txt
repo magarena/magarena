@@ -1,5 +1,5 @@
 name=White Sun's Zenith
-image=https://magiccards.info/scans/en/c14/95.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/029e0450-ceb1-484d-8a18-e769defac428.jpg?1608912050
 value=3.602
 rarity=R
 type=Instant

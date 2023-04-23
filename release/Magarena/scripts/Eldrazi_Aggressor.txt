@@ -1,5 +1,5 @@
 name=Eldrazi Aggressor
-image=https://magiccards.info/scans/en/ogw/95.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62f3ec85-552d-4e28-939e-ab2c39e3e9c5.jpg?1562915027
 image_updated=2016-02-29
 value=2.500
 rarity=C

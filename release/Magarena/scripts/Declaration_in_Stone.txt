@@ -1,5 +1,5 @@
 name=Declaration in Stone
-image=https://magiccards.info/scans/en/soi/12.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f5513a2-e63d-44df-b8a5-37c298e38e3c.jpg?1673483643
 value=2.500
 rarity=R
 type=Sorcery

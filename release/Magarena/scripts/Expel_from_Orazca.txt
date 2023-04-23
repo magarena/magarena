@@ -1,5 +1,5 @@
 name=Expel from Orazca
-image=https://magiccards.info/scans/en/rix/37.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64f5119f-3921-48a5-a8fb-0cb1bbabde30.jpg?1555039894
 value=2.500
 rarity=U
 type=Instant

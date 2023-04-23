@@ -1,5 +1,5 @@
 name=Wojek Siren
-image=https://magiccards.info/scans/en/rav/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a55c0d7d-2325-4d7e-b449-c8fdcf988ec0.jpg?1598914014
 value=1.881
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Fanning the Flames
-image=https://magiccards.info/scans/en/sh/80.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/198b8ff9-f49a-45e2-bd33-c8b805f7ac42.jpg?1562428638
 value=3.764
 removal=3
 rarity=U

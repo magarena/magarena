@@ -1,5 +1,5 @@
 name=Crossbow Ambush
-image=https://magiccards.info/scans/en/sh/55.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/283146fd-2307-4019-b23d-7fb1893dc46c.jpg?1562596377
 value=3.147
 rarity=C
 type=Instant

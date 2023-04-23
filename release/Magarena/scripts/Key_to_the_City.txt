@@ -1,5 +1,5 @@
 name=Key to the City
-image=https://magiccards.info/scans/en/kld/220.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2103bba-f367-45ed-9b2c-bf31bb2926a5.jpg?1625978785
 image_updated=2016-10-05
 value=2.500
 rarity=R

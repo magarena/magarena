@@ -1,5 +1,5 @@
 name=Skinbrand Goblin
-image=https://magiccards.info/scans/en/gtc/105.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9535cdfe-d505-4ee5-bec0-cfd7aa4b2a23.jpg?1599706707
 value=2.818
 rarity=C
 type=Creature

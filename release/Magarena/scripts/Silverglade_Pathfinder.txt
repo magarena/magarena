@@ -1,5 +1,5 @@
 name=Silverglade Pathfinder
-image=https://magiccards.info/scans/en/mm/270.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bc99b33-ce06-4a44-8b23-300b41b2b2fe.jpg?1562382074
 value=3.773
 rarity=U
 type=Creature

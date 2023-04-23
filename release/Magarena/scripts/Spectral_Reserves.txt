@@ -1,5 +1,5 @@
 name=Spectral Reserves
-image=https://magiccards.info/scans/en/emn/43.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7618aa2d-d5b3-41e6-978f-2c8292f7f896.jpg?1576383989
 image_updated=2016-09-05
 value=2.500
 rarity=C

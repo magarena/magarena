@@ -1,5 +1,5 @@
 name=Seashell Cameo
-image=https://magiccards.info/scans/en/in/311.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9efdbcad-e2e4-4f54-ade5-920b1853109e.jpg?1562927074
 value=2.676
 rarity=U
 type=Artifact

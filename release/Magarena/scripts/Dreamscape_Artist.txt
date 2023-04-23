@@ -1,5 +1,5 @@
 name=Dreamscape Artist
-image=https://magiccards.info/scans/en/pc/40.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f244985e-7487-44db-bd69-47c781753f2e.jpg?1619394086
 value=3.912
 rarity=C
 type=Creature

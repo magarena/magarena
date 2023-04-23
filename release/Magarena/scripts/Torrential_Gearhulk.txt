@@ -1,5 +1,5 @@
 name=Torrential Gearhulk
-image=https://magiccards.info/scans/en/kld/67.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d52868cb-087e-4f91-91bc-455f2e2e7cd7.jpg?1576381464
 image_updated=2016-10-05
 value=2.500
 rarity=M

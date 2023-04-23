@@ -1,5 +1,5 @@
 name=Piety Charm
-image=https://magiccards.info/scans/en/on/49.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bc2da43-c0e1-4fbf-b309-a75e105c29c1.jpg?1562901548
 value=3.161
 rarity=C
 type=Instant

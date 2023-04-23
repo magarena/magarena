@@ -1,5 +1,5 @@
 name=Copper Myr
-image=https://magiccards.info/scans/en/som/146.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/323efe27-da58-4207-9c0c-dba5031bfa04.jpg?1562816148
 value=2.919
 rarity=C
 type=Artifact,Creature

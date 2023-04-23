@@ -1,5 +1,5 @@
 name=Treva, the Renewer
-image=https://magiccards.info/scans/en/in/280.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74ee66b2-5b69-461b-9590-1143adc692af.jpg?1562916678
 image_updated=2017-01-11
 value=4.061
 rarity=R

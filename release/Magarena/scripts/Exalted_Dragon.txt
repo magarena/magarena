@@ -1,5 +1,5 @@
 name=Exalted Dragon
-image=https://magiccards.info/scans/en/ex/6.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cf0866d-4544-4074-bf55-fcac0799c764.jpg?1562428613
 value=2.500
 rarity=R
 type=Creature

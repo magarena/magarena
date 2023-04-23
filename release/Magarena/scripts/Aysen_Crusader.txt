@@ -1,5 +1,5 @@
 name=Aysen Crusader
-image=https://magiccards.info/scans/en/hl/106.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b865abb2-6bfe-4368-920b-a2c327fa6e43.jpg?1562870460
 value=3.345
 rarity=R
 type=Creature

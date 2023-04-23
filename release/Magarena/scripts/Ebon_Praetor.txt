@@ -1,5 +1,5 @@
 name=Ebon Praetor
-image=https://magiccards.info/scans/en/fe/11.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/6438dc8e-eb21-4db7-aeab-bb062acd6029.jpg?1562869024
 value=3.330
 rarity=R
 type=Creature

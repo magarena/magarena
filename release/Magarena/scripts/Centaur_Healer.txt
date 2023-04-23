@@ -1,5 +1,5 @@
 name=Centaur Healer
-image=https://magiccards.info/scans/en/mm3/156.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e92b32f0-01bd-4501-b0ad-90d2c296077a.jpg?1562941764
 image_updated=2017-08-08
 value=3.827
 rarity=C

@@ -1,5 +1,5 @@
 name=Invader Parasite
-image=https://magiccards.info/scans/en/nph/87.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89a8c53f-2cb0-41ea-8391-c32667f17c30.jpg?1562879440
 value=3.331
 rarity=R
 type=Creature

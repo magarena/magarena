@@ -1,5 +1,5 @@
 name=Kefnet the Mindful
-image=https://magiccards.info/scans/en/akh/59.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbda3b24-f2a6-4bcf-9a0a-bab69ffa8069.jpg?1543675019
 value=2.500
 rarity=M
 type=Legendary,Creature

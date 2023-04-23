@@ -1,5 +1,5 @@
 name=Armored Warhorse
-image=https://magiccards.info/scans/en/m12/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52daf505-d436-4ea6-a157-4268af2ff7a8.jpg?1562642737
 value=3.106
 rarity=C
 type=Creature

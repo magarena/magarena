@@ -1,5 +1,5 @@
 name=Noggle Bridgebreaker
-image=https://magiccards.info/scans/en/eve/107.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/545a52ed-b4d4-4972-940d-9daf07a488b1.jpg?1562912617
 value=2.224
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Meteorite
-image=https://magiccards.info/scans/en/ori/233.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33eb2032-50af-4fd6-bdc7-7cae2211956c.jpg?1677542216
 image_updated=2015-11-05
 value=2.500
 rarity=U

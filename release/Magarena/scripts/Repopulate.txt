@@ -1,5 +1,5 @@
 name=Repopulate
-image=https://magiccards.info/scans/en/ul/111.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aac77869-97bc-4976-9ee0-3d60e162b78a.jpg?1562863782
 value=4.174
 rarity=C
 type=Instant

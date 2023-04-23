@@ -1,5 +1,5 @@
 name=Goblin Gaveleer
-image=https://magiccards.info/scans/en/som/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f44f3ea-504e-4745-9716-cbe28ed7873d.jpg?1599706339
 value=3.852
 rarity=C
 type=Creature

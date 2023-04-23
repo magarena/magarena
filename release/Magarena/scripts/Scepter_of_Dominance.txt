@@ -1,5 +1,5 @@
 name=Scepter of Dominance
-image=https://magiccards.info/scans/en/cfx/17.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/888bc7ca-f9fa-4da4-b466-b9dc273d5319.jpg?1562802277
 value=3.394
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Talas Warrior
-image=https://magiccards.info/scans/en/po2/53.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de3d8cc5-5889-4e52-a32c-d15556fd2166.jpg?1562947867
 value=3.976
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Skizzik
-image=https://magiccards.info/scans/en/dom/145.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77af9d28-1639-47bd-b925-7f3d2eefd352.jpg?1615334491
 image_updated=2018-08-07
 value=4.215
 rarity=U

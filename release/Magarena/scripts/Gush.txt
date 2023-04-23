@@ -1,5 +1,5 @@
 name=Gush
-image=https://magiccards.info/scans/en/mm/82.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4a3a921-3b7f-474c-b8c3-67a1a6ba5cc1.jpg?1562378488
 value=4.500
 rarity=C
 type=Instant

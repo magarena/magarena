@@ -1,5 +1,5 @@
 name=Sparring Golem
-image=https://magiccards.info/scans/en/in/312.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d829d9de-83fa-4feb-8efc-0075315163c6.jpg?1562938416
 value=3.122
 rarity=U
 type=Artifact,Creature

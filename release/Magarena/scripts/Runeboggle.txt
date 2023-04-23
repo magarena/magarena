@@ -1,5 +1,5 @@
 name=Runeboggle
-image=https://magiccards.info/scans/en/gp/33.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37b2fb23-f8b5-4f83-9b29-b18507acaa1a.jpg?1593272065
 value=2.083
 rarity=C
 type=Instant

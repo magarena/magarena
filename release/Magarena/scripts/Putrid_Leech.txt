@@ -1,5 +1,5 @@
 name=Putrid Leech
-image=https://magiccards.info/scans/en/arb/95.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c901a8d7-e230-4a08-afe5-00e9d1c85544.jpg?1592754697
 value=4.235
 rarity=C
 type=Creature

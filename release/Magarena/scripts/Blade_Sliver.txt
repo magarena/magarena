@@ -1,5 +1,5 @@
 name=Blade Sliver
-image=https://magiccards.info/scans/en/le/88.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8d6f7a6-7b6a-44f4-be04-7c02806b9f09.jpg?1562929059
 value=3.586
 rarity=U
 type=Creature

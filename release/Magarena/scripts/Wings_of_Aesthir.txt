@@ -1,5 +1,5 @@
 name=Wings of Aesthir
-image=https://magiccards.info/scans/en/cstd/43.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00341664-d848-44d2-ba06-21a6ae8e6788.jpg?1562867376
 value=3.432
 rarity=U
 type=Enchantment

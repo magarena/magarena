@@ -1,5 +1,5 @@
 name=Rain of Filth
-image=https://magiccards.info/scans/en/us/151.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cf07d5a-6618-48e2-a9f0-669b75bb6e85.jpg?1562901092
 value=3.955
 rarity=U
 type=Instant

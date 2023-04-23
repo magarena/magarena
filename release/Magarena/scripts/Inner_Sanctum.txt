@@ -1,5 +1,5 @@
 name=Inner Sanctum
-image=https://magiccards.info/scans/en/wl/134.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/2298faae-370e-4b87-bf32-d20c2282a928.jpg?1562799822
 value=2.983
 rarity=R
 type=Enchantment

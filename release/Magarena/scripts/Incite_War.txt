@@ -1,5 +1,5 @@
 name=Incite War
-image=https://magiccards.info/scans/en/mi/96.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee30527c-0eb1-4b66-9028-1607a960019a.jpg?1562162473
 value=3.740
 rarity=C
 type=Instant

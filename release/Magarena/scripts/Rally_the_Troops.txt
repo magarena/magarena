@@ -1,5 +1,5 @@
 name=Rally the Troops
-image=https://magiccards.info/scans/en/p3k/16.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04ee74d6-bd06-48e5-89de-f926e0c9413f.jpg?1562255820
 value=2.712
 rarity=U
 type=Instant

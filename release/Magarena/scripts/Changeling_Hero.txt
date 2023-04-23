@@ -1,5 +1,5 @@
 name=Changeling Hero
-image=https://magiccards.info/scans/en/lw/9.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24f0c586-a1a5-4907-801a-7815c4dceb39.jpg?1562341767
 value=3.011
 removal=2
 rarity=U

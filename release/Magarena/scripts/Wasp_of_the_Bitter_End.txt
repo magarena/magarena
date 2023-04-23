@@ -1,5 +1,5 @@
 name=Wasp of the Bitter End
-image=https://magiccards.info/scans/en/hou/206.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46d348eb-7db0-4209-8960-c6adc473417d.jpg?1562797607
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Thornwind Faeries
-image=https://magiccards.info/scans/en/ul/44.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2f6a604-1a00-41c4-afe1-e80371c7596a.jpg?1592672555
 value=3.955
 rarity=C
 type=Creature

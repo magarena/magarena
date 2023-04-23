@@ -1,5 +1,5 @@
 name=Giant Strength
-image=https://magiccards.info/scans/en/6e/181.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eaa8fde3-d887-4b52-85ec-0100e7ccdb03.jpg?1562942158
 value=2.906
 rarity=C
 type=Enchantment

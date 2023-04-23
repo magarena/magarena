@@ -1,5 +1,5 @@
 name=Soul Channeling
-image=https://magiccards.info/scans/en/mm/163.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55cd09ef-1655-4a62-b6c5-6eda33d2607a.jpg?1562380871
 value=2.650
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Deathmark Prelate
-image=https://magiccards.info/scans/en/le/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b54fb4b2-ecce-4a6c-8d76-4b5879ba836f.jpg?1562931487
 value=3.344
 rarity=U
 type=Creature

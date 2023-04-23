@@ -1,5 +1,5 @@
 name=Fulminator Mage
-image=https://magiccards.info/scans/en/mm2/193.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/420d1ea2-23f9-4650-993e-de99eedaa587.jpg?1599707921
 value=4.019
 rarity=R
 type=Creature

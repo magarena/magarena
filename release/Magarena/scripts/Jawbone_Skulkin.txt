@@ -1,5 +1,5 @@
 name=Jawbone Skulkin
-image=https://magiccards.info/scans/en/eve/170.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a88f807-96ce-432f-aaf5-d0097d234a4b.jpg?1562907194
 value=2.026
 rarity=C
 type=Artifact,Creature

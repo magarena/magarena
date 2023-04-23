@@ -1,5 +1,5 @@
 name=Strength from the Fallen
-image=https://magiccards.info/scans/en/jou/143.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c76b3a8e-3cbb-47c4-9535-dfdeece7ee02.jpg?1593096354
 value=3.000
 rarity=U
 type=Enchantment

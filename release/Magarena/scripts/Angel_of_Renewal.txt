@@ -1,5 +1,5 @@
 name=Angel of Renewal
-image=https://magiccards.info/scans/en/bfz/18.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f882ac2-3cbc-4548-8c83-d2a7443991df.jpg?1562898637
 image_updated=2015-11-08
 value=2.500
 rarity=U

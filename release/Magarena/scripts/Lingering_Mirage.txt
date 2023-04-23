@@ -1,5 +1,5 @@
 name=Lingering Mirage
-image=https://magiccards.info/scans/en/us/84.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/050b4a82-a1d5-4dcc-9264-96005fdf53f5.jpg?1562896042
 value=2.630
 rarity=U
 type=Enchantment

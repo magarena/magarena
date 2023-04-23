@@ -1,5 +1,5 @@
 name=Arachnogenesis
-image=https://magiccards.info/scans/en/c15/32.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7967cb69-1868-45c0-92d1-39dabe30f2a2.jpg?1562706128
 image_updated=2016-02-29
 value=2.500
 rarity=R

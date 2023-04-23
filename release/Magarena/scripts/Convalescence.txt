@@ -1,5 +1,5 @@
 name=Convalescence
-image=https://magiccards.info/scans/en/ex/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fd49a61-42ba-400a-8ca9-9f6058bf85ca.jpg?1562087334
 value=1.780
 rarity=R
 type=Enchantment

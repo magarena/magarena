@@ -1,5 +1,5 @@
 name=Granite Shard
-image=https://magiccards.info/scans/en/mi/182.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e197af6a-24ac-4f3b-ab3c-736f4057748b.jpg?1562160817
 value=3.013
 rarity=U
 type=Artifact

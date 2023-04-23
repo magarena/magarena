@@ -1,5 +1,5 @@
 name=Palladia-Mors
-image=https://magiccards.info/scans/en/lg/287.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ede0ce7a-0799-40b9-b725-665dc9c1cede.jpg?1562945097
 value=3.904
 rarity=R
 type=Legendary,Creature

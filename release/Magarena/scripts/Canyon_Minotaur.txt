@@ -1,5 +1,5 @@
 name=Canyon Minotaur
-image=https://magiccards.info/scans/en/m13/122.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3469d73e-6de1-4b91-83e3-b1714ac29268.jpg?1595438052
 value=2.210
 rarity=C
 type=Creature

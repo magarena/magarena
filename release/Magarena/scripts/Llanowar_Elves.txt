@@ -1,5 +1,5 @@
 name=Llanowar Elves
-image=https://magiccards.info/scans/en/m19/314.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bbcfb77-daa1-4ce5-b5f9-48d0a8edbba9.jpg?1592765148
 image_updated=2018-08-07
 value=4.381
 rarity=C

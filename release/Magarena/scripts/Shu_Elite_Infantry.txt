@@ -1,5 +1,5 @@
 name=Shu Elite Infantry
-image=https://magiccards.info/scans/en/p3k/22.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36bcd751-1142-4e72-9d87-7a25c74c038b.jpg?1562256067
 value=2.136
 rarity=C
 type=Creature

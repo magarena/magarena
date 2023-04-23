@@ -1,5 +1,5 @@
 name=Nemesis of Mortals
-image=https://magiccards.info/scans/en/ths/163.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4010889-1d7a-4db3-a27c-c39baa024765.jpg?1562829927
 value=3.561
 rarity=U
 type=Creature

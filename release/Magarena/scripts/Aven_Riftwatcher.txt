@@ -1,5 +1,5 @@
 name=Aven Riftwatcher
-image=https://magiccards.info/scans/en/ema/1.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/261691c8-371d-49b6-9c9b-50ece5984aa2.jpg?1619392584
 value=3.809
 rarity=C
 type=Creature

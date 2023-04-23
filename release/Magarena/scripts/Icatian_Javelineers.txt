@@ -1,5 +1,5 @@
 name=Icatian Javelineers
-image=https://magiccards.info/scans/en/tsts/10.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ae589f5-a513-4d3c-b3fa-66eead66faf3.jpg?1562839815
 image_updated=2016-12-13
 value=4.326
 rarity=C

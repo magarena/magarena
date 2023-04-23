@@ -1,5 +1,5 @@
 name=Gravebane Zombie
-image=https://magiccards.info/scans/en/6e/133.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df21b384-6073-477e-bd95-fc94ca2f2f2c.jpg?1562823635
 value=2.783
 rarity=U
 type=Creature

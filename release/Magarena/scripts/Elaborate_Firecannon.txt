@@ -1,5 +1,5 @@
 name=Elaborate Firecannon
-image=https://magiccards.info/scans/en/xln/237.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b9170f0-d332-42ba-98c7-7e99922fa3fb.jpg?1562554825
 value=2.500
 rarity=U
 type=Artifact

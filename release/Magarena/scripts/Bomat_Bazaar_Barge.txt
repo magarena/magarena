@@ -1,5 +1,5 @@
 name=Bomat Bazaar Barge
-image=https://magiccards.info/scans/en/kld/198.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f32be75-979d-43a9-9132-2cf013ddaf3b.jpg?1576383003
 image_updated=2016-10-05
 value=2.500
 rarity=U

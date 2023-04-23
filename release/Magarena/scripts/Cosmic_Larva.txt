@@ -1,5 +1,5 @@
 name=Cosmic Larva
-image=https://magiccards.info/scans/en/5dn/63.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/deaa0b9b-258e-4daf-8fec-ce64864d6bbf.jpg?1562880234
 value=3.724
 rarity=R
 type=Creature

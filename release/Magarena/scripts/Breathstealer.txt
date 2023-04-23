@@ -1,5 +1,5 @@
 name=Breathstealer
-image=https://magiccards.info/scans/en/mr/7.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cd9da69-5e57-4719-a712-630c9464fada.jpg?1562717835
 value=2.608
 rarity=C
 type=Creature

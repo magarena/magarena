@@ -1,5 +1,5 @@
 name=Grave Bramble
-image=https://magiccards.info/scans/en/isd/184.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/084446ca-fec5-446f-b6f8-edf32ecb57e3.jpg?1601079636
 value=3.362
 rarity=C
 type=Creature

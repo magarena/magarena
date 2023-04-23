@@ -1,5 +1,5 @@
 name=Gruul Ragebeast
-image=https://magiccards.info/scans/en/gtc/170.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/080ef367-7904-4e5c-a8b4-1fb62f951f3e.jpg?1561814762
 value=3.380
 rarity=R
 type=Creature

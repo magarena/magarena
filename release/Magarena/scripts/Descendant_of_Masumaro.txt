@@ -1,5 +1,5 @@
 name=Descendant of Masumaro
-image=https://magiccards.info/scans/en/sok/126.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7512d74-4330-4de7-9c0c-4bb7f37f6066.jpg?1562495600
 value=3.038
 rarity=U
 type=Creature

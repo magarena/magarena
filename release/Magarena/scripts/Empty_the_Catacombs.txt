@@ -1,5 +1,5 @@
 name=Empty the Catacombs
-image=https://magiccards.info/scans/en/rav/86.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e41cbd0b-9f54-4e8f-9a4b-fed8e435a2e0.jpg?1598914820
 value=2.879
 rarity=R
 type=Sorcery

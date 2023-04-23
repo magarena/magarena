@@ -1,5 +1,5 @@
 name=Recoil
-image=https://magiccards.info/scans/en/in/264.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/225f700c-fdf6-41ea-a091-36b0f75f0211.jpg?1562903083
 value=4.283
 rarity=C
 type=Instant

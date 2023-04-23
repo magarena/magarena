@@ -1,5 +1,5 @@
 name=Escape Artist
-image=https://magiccards.info/scans/en/od/84.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f5d0e3f-b8f1-472a-857b-5464174d243b.jpg?1562918602
 value=3.057
 rarity=C
 type=Creature

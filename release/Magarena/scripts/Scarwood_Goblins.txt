@@ -1,5 +1,5 @@
 name=Scarwood Goblins
-image=https://magiccards.info/scans/en/dk/119.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5542d236-af43-43b8-b30f-8980d74bbdd0.jpg?1562914979
 value=2.060
 rarity=C
 type=Creature

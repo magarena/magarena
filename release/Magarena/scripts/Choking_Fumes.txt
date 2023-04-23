@@ -1,5 +1,5 @@
 name=Choking Fumes
-image=https://magiccards.info/scans/en/mbs/4.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b9af543-5273-4754-ab7d-75d0b632240f.jpg?1562609946
 value=3.295
 rarity=U
 type=Instant

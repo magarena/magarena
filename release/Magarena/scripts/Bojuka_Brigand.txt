@@ -1,5 +1,5 @@
 name=Bojuka Brigand
-image=https://magiccards.info/scans/en/wwk/51.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33e0aa67-0ea9-4c50-8297-369ab486fd0f.jpg?1562284874
 value=2.741
 rarity=C
 type=Creature

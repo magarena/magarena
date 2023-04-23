@@ -1,5 +1,5 @@
 name=Sliptide Serpent
-image=https://magiccards.info/scans/en/ne/43.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8647649-5669-46c4-8840-9ff967fabd99.jpg?1562632850
 value=2.633
 rarity=R
 type=Creature

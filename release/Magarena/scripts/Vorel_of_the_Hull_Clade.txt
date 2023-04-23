@@ -1,5 +1,5 @@
 name=Vorel of the Hull Clade
-image=https://magiccards.info/scans/en/c16/227.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e7053ff-c825-41bc-9dad-eaf7a37447e5.jpg?1673485236
 image_updated=2017-08-17
 value=3.833
 rarity=R

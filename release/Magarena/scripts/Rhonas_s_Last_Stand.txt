@@ -1,5 +1,5 @@
 name=Rhonas's Last Stand
-image=https://magiccards.info/scans/en/hou/132.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e991d1eb-70ab-4e2c-862d-fb8bfcefc542.jpg?1562818709
 value=2.500
 rarity=R
 type=Sorcery

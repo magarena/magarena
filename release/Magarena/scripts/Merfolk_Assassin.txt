@@ -1,5 +1,5 @@
 name=Merfolk Assassin
-image=https://magiccards.info/scans/en/tsts/25.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a906b9b-5e7c-4300-98e4-5eec242c1306.jpg?1562777888
 value=3.024
 rarity=U
 type=Creature

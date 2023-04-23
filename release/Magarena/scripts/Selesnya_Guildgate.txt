@@ -1,5 +1,5 @@
 name=Selesnya Guildgate
-image=https://magiccards.info/scans/en/mm3/246.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9b50917-6b95-41b8-86c7-1f4c8204d099.jpg?1604196473
 image_updated=2017-08-08
 value=3.688
 rarity=C

@@ -1,5 +1,5 @@
 name=Kinsbaile Cavalier
-image=https://magiccards.info/scans/en/mt/15.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcda21e6-f423-4dd9-a4a3-bacfa83612d0.jpg?1562934883
 value=3.787
 rarity=R
 type=Creature

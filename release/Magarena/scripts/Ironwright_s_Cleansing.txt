@@ -1,5 +1,5 @@
 name=Ironwright's Cleansing
-image=https://magiccards.info/scans/en/emn/32.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/916d8aa5-158f-46f4-babe-981a391fd88b.jpg?1576383906
 image_updated=2016-09-05
 value=2.500
 rarity=C

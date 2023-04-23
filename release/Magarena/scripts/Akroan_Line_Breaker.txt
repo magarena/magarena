@@ -1,5 +1,5 @@
 name=Akroan Line Breaker
-image=https://magiccards.info/scans/en/jou/88.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5114db5-b545-43dc-85a3-c0e68ab22a95.jpg?1593095900
 value=2.261
 rarity=U
 type=Creature

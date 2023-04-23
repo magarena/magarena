@@ -1,5 +1,5 @@
 name=Repercussion
-image=https://magiccards.info/scans/en/ud/95.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0f3c78e-16c0-4fbc-8ef4-fbf610f9d464.jpg?1562445214
 value=4.294
 rarity=R
 type=Enchantment

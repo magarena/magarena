@@ -1,5 +1,5 @@
 name=Selenia, Dark Angel
-image=https://magiccards.info/scans/en/tp/345.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/664b57e3-9476-4d6a-8301-5a2f96bcfbf7.jpg?1562429830
 value=3.900
 rarity=R
 type=Legendary,Creature

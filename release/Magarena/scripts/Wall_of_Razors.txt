@@ -1,5 +1,5 @@
 name=Wall of Razors
-image=https://magiccards.info/scans/en/sh/100.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bb37bcd-0bbd-4f3f-9623-803885750344.jpg?1562595909
 value=4.000
 rarity=U
 type=Creature

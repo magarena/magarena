@@ -1,5 +1,5 @@
 name=Squelching Leeches
-image=https://magiccards.info/scans/en/jou/84.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/694a0e92-8e5c-404e-a8bb-52139884e41a.jpg?1562229681
 value=3.673
 rarity=U
 type=Creature

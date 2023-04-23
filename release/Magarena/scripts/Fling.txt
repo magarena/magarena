@@ -1,5 +1,5 @@
 name=Fling
-image=https://magiccards.info/scans/en/akh/132.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f42d773-c742-4465-b6d5-31feaba49146.jpg?1601077681
 image_updated=2017-09-29
 value=4.523
 rarity=C

@@ -1,5 +1,5 @@
 name=Nature's Resurgence
-image=https://magiccards.info/scans/en/7e/259.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/287f9f55-829d-4b29-b1d2-34d20d23b3d5.jpg?1562234559
 value=3.420
 rarity=R
 type=Sorcery

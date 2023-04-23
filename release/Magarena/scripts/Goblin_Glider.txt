@@ -1,5 +1,5 @@
 name=Goblin Glider
-image=https://magiccards.info/scans/en/8e/189.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82db30ff-5f50-41b1-acdf-0a0e1a364410.jpg?1562921490
 value=1.912
 rarity=U
 type=Creature

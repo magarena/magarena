@@ -1,5 +1,5 @@
 name=Diversionary Tactics
-image=https://magiccards.info/scans/en/ap/7.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e5061e4-a76d-4a7c-b196-96c81f94e0e5.jpg?1562902151
 value=2.964
 rarity=U
 type=Enchantment

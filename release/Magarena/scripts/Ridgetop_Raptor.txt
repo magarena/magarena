@@ -1,5 +1,5 @@
 name=Ridgetop Raptor
-image=https://magiccards.info/scans/en/le/108.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/1013cbc4-09f4-484f-b328-9f7403225149.jpg?1562898258
 value=2.516
 rarity=U
 type=Creature

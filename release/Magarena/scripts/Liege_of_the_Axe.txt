@@ -1,5 +1,5 @@
 name=Liege of the Axe
-image=https://magiccards.info/scans/en/le/16.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb518bf0-17ad-4bbf-b922-42ee76ffcbea.jpg?1562942251
 value=2.625
 rarity=U
 type=Creature

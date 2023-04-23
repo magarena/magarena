@@ -1,5 +1,5 @@
 name=Hornet Cobra
-image=https://magiccards.info/scans/en/lg/104.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27180bad-9bbc-462b-8832-626dc403a3fd.jpg?1587910625
 value=1.303
 rarity=C
 type=Creature

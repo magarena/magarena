@@ -1,5 +1,5 @@
 name=Treacherous Link
-image=https://magiccards.info/scans/en/ul/71.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e5f8581-411b-4403-9c3a-3cf2156f6779.jpg?1562862785
 value=3.843
 rarity=U
 type=Enchantment

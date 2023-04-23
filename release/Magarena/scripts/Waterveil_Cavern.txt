@@ -1,5 +1,5 @@
 name=Waterveil Cavern
-image=https://magiccards.info/scans/en/chk/286.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/405805e0-07f6-420f-86f9-5bde822caa5c.jpg?1562759377
 value=2.196
 rarity=U
 type=Land

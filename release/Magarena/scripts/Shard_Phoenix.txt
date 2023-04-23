@@ -1,5 +1,5 @@
 name=Shard Phoenix
-image=https://magiccards.info/scans/en/9e/217.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/611445e9-5dfc-4fc8-b936-02f81de65012.jpg?1562429821
 value=2.500
 rarity=R
 type=Creature

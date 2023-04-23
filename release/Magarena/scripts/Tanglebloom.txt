@@ -1,5 +1,5 @@
 name=Tanglebloom
-image=https://magiccards.info/scans/en/9e/311.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb8ff237-dac6-4c79-9d8c-b047d60083e8.jpg?1562743556
 value=1.970
 rarity=U
 type=Artifact

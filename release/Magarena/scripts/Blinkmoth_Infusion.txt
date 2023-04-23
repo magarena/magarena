@@ -1,5 +1,5 @@
 name=Blinkmoth Infusion
-image=https://magiccards.info/scans/en/5dn/25.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccb4d9a3-e7f6-41e2-9545-4682efd71f46.jpg?1562879773
 value=3.587
 rarity=R
 type=Instant

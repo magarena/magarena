@@ -1,5 +1,5 @@
 name=Vizzerdrix
-image=https://magiccards.info/scans/en/9eb/7.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a82ffff-e02a-4ecb-a92d-8ed571beac46.jpg?1562739088
 image_updated=2015-05-22
 value=2.175
 rarity=R

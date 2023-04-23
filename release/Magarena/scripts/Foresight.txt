@@ -1,5 +1,5 @@
 name=Foresight
-image=https://magiccards.info/scans/en/ai/43.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a12e624c-8879-4e60-a1be-286abc5e0106.jpg?1562769683
 value=3.507
 rarity=C
 type=Sorcery

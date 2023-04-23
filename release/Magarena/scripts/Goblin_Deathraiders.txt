@@ -1,5 +1,5 @@
 name=Goblin Deathraiders
-image=https://magiccards.info/scans/en/ala/169.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c0b85d3-ce46-4f12-8315-4cbf338eb8f0.jpg?1592754611
 image_updated=2016-12-04
 value=3.150
 rarity=C

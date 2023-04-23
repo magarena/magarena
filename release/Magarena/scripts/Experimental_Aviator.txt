@@ -1,5 +1,5 @@
 name=Experimental Aviator
-image=https://magiccards.info/scans/en/kld/46.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/962dc573-612d-434b-82fb-af9c3e3c9aca.jpg?1576381190
 image_updated=2016-10-05
 value=2.500
 rarity=U

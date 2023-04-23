@@ -1,5 +1,5 @@
 name=Lord of the Unreal
-image=https://magiccards.info/scans/en/m12/62.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b09140f6-fa75-4bee-9ca0-3a71cd2b5a7b.jpg?1562655677
 value=4.171
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Esper Battlemage
-image=https://magiccards.info/scans/en/ala/40.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cac0076-8bd5-4fe2-bac8-fd102688fdcb.jpg?1562702316
 value=3.051
 rarity=U
 type=Artifact,Creature

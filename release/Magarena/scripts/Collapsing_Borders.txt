@@ -1,5 +1,5 @@
 name=Collapsing Borders
-image=https://magiccards.info/scans/en/in/141.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc019633-788e-4095-9610-6c0a432f7656.jpg?1562936001
 value=3.250
 rarity=R
 type=Enchantment

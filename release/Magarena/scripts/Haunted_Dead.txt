@@ -1,5 +1,5 @@
 name=Haunted Dead
-image=https://magiccards.info/scans/en/emn/92.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14a7c8b7-ca77-47a0-8965-949723ec902d.jpg?1576384338
 image_updated=2016-09-05
 value=2.500
 rarity=U

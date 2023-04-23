@@ -1,5 +1,5 @@
 name=Sublime Exhalation
-image=https://magiccards.info/scans/en/c16/5.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31bc725b-91d8-4f81-b228-d28759e88c00.jpg?1562273343
 image_updated=2016-12-28
 value=2.500
 rarity=R

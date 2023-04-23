@@ -1,5 +1,5 @@
 name=Shock
-image=https://magiccards.info/scans/en/m19/156.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59fa8e8d-bcb8-47bf-b71a-df11c8d0f2c9.jpg?1641847379
 image_updated=2018-08-07
 value=2.000
 rarity=C

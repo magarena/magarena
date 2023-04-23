@@ -1,5 +1,5 @@
 name=Dolmen Gate
-image=https://magiccards.info/scans/en/lw/256.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdcbf10e-32f2-41c5-a7a2-5f24662892d2.jpg?1562375938
 value=4.087
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Banewhip Punisher
-image=https://magiccards.info/scans/en/hou/59.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/005a19e2-c334-4b87-bc8b-55f62fc9abd9.jpg?1562787211
 value=2.500
 rarity=U
 type=Creature

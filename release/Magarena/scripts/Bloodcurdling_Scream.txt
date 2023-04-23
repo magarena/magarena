@@ -1,5 +1,5 @@
 name=Bloodcurdling Scream
-image=https://magiccards.info/scans/en/po2/3.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcb0ec62-6d6f-4d10-bc2d-37f25495f884.jpg?1562947538
 value=3.079
 rarity=U
 type=Sorcery

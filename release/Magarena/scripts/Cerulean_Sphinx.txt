@@ -1,5 +1,5 @@
 name=Cerulean Sphinx
-image=https://magiccards.info/scans/en/rav/39.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc95d4a6-ad4b-46c5-8a75-e70102363844.jpg?1598914051
 value=3.094
 rarity=R
 type=Creature

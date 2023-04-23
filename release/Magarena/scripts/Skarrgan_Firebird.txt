@@ -1,5 +1,5 @@
 name=Skarrgan Firebird
-image=https://magiccards.info/scans/en/mm2/123.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9d52c11-f955-489e-b3c9-5a7e1a7933e8.jpg?1592765736
 image_updated=2015-11-05
 value=3.929
 rarity=U

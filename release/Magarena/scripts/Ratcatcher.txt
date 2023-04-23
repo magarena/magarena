@@ -1,5 +1,5 @@
 name=Ratcatcher
-image=https://magiccards.info/scans/en/a25/103.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9cb08a7-cfcf-49ee-948b-4be859c1d256.jpg?1562442594
 image_updated=2018-04-27
 value=3.946
 rarity=R

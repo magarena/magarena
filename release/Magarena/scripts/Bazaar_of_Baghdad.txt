@@ -1,5 +1,5 @@
 name=Bazaar of Baghdad
-image=https://magiccards.info/scans/en/an/84.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c88acaa8-ad4d-4321-a6f6-9361916e5b5e.jpg?1653966861
 value=4.000
 rarity=M
 type=Land

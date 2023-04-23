@@ -1,5 +1,5 @@
 name=Rendclaw Trow
-image=https://magiccards.info/scans/en/eve/127.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc293a4b-abd6-47b6-99d1-578bc22580de.jpg?1562934776
 value=3.286
 rarity=C
 type=Creature

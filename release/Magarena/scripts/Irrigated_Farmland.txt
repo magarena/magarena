@@ -1,5 +1,5 @@
 name=Irrigated Farmland
-image=https://magiccards.info/scans/en/akh/245.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54065d26-39ae-412c-b60e-d22d7f3e78be.jpg?1591322082
 value=2.500
 rarity=R
 type=Land

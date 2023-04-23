@@ -1,5 +1,5 @@
 name=Viridian Revel
-image=https://magiccards.info/scans/en/som/132.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d7f565e-0fb8-40c8-9540-213d35af846a.jpg?1562815979
 value=2.721
 rarity=U
 type=Enchantment

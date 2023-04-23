@@ -1,5 +1,5 @@
 name=Razortip Whip
-image=https://magiccards.info/scans/en/gtc/235.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24619d3f-1051-4d8e-9c8d-70a12621b282.jpg?1561819836
 value=1.915
 rarity=C
 type=Artifact

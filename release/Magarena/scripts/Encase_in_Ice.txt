@@ -1,5 +1,5 @@
 name=Encase in Ice
-image=https://magiccards.info/scans/en/dtk/54.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcad5bd9-3236-48d4-920f-c3ed12d5f329.jpg?1562792321
 value=2.500
 rarity=U
 type=Enchantment

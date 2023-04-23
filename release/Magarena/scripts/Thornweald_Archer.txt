@@ -1,5 +1,5 @@
 name=Thornweald Archer
-image=https://magiccards.info/scans/en/ema/189.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f61b7811-ff6c-4767-921d-e8e88913e820.jpg?1619403587
 value=4.197
 rarity=C
 type=Creature

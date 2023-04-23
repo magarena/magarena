@@ -1,5 +1,5 @@
 name=Llanowar Scout
-image=https://magiccards.info/scans/en/dom/170.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8026d80-2e91-46f9-ae97-1f137848236c.jpg?1562742734
 value=2.500
 rarity=C
 type=Creature

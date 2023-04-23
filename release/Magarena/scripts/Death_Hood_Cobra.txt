@@ -1,5 +1,5 @@
 name=Death-Hood Cobra
-image=https://magiccards.info/scans/en/mm3/123.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/def88ab5-1b82-46f5-a136-ee1addff4214.jpg?1599707127
 image_updated=2017-08-08
 value=3.708
 rarity=C

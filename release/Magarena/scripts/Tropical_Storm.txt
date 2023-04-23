@@ -1,5 +1,5 @@
 name=Tropical Storm
-image=https://magiccards.info/scans/en/mr/144.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd5f473c-e11e-4047-91f9-81b80f0a3562.jpg?1587912688
 value=3.442
 rarity=U
 type=Sorcery

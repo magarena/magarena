@@ -1,5 +1,5 @@
 name=Gaze of Granite
-image=https://magiccards.info/scans/en/dgm/72.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8eaa45a5-7652-4e99-a756-509e458a801a.jpg?1625977652
 value=3.812
 removal=2
 rarity=R

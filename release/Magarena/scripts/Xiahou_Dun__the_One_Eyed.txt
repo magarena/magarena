@@ -1,5 +1,5 @@
 name=Xiahou Dun, the One-Eyed
-image=https://magiccards.info/scans/en/p3k/92.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4aeaaeff-fb23-4f63-8d5f-8ccea6e58d3a.jpg?1562910698
 value=4.122
 rarity=R
 type=Legendary,Creature

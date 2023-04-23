@@ -1,5 +1,5 @@
 name=Gleam of Resistance
-image=https://magiccards.info/scans/en/cn2/87.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4db35e37-3634-4238-aa64-a826f41d8ee6.jpg?1576382240
 image_updated=2017-08-29
 value=2.147
 rarity=C

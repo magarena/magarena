@@ -1,5 +1,5 @@
 name=Leonin Bladetrap
-image=https://magiccards.info/scans/en/mi/192.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de829013-dd6a-47a7-afd4-a2bda0da6ac5.jpg?1592673621
 value=3.579
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Jace's Phantasm
-image=https://magiccards.info/scans/en/ima/60.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/640a1803-552e-4eb4-b48c-04b359acb14a.jpg?1562849851
 image_updated=2017-04-12
 value=3.868
 rarity=C

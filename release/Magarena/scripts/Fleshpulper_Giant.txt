@@ -1,5 +1,5 @@
 name=Fleshpulper Giant
-image=https://magiccards.info/scans/en/m14/140.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2726d3c-c182-4d8a-a723-0de2c5c4b152.jpg?1562837152
 value=1.514
 rarity=U
 type=Creature

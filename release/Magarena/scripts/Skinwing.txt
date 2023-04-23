@@ -1,5 +1,5 @@
 name=Skinwing
-image=https://magiccards.info/scans/en/mbs/133.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c65e0ff-7dab-4090-8a99-f42d486728c9.jpg?1599709854
 value=2.446
 rarity=U
 type=Artifact

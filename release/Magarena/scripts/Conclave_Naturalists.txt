@@ -1,5 +1,5 @@
 name=Conclave Naturalists
-image=https://magiccards.info/scans/en/ori/171.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/082a5372-b25a-4559-96b8-2d8d54199a38.jpg?1599707057
 image_updated=2015-11-05
 value=2.500
 rarity=U

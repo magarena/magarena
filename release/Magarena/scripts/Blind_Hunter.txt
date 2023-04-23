@@ -1,5 +1,5 @@
 name=Blind Hunter
-image=https://magiccards.info/scans/en/gp/102.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be1c8995-be36-43f6-9bd7-7b8712894331.jpg?1593272585
 value=3.936
 rarity=C
 type=Creature

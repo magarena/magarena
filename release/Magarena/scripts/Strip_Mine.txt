@@ -1,5 +1,5 @@
 name=Strip Mine
-image=https://magiccards.info/scans/en/4e/189.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f57fd4c9-0004-4f71-a30f-2720943f57ca.jpg?1562944463
 value=4.500
 rarity=U
 type=Land

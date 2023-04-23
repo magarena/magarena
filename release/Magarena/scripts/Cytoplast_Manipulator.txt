@@ -1,5 +1,5 @@
 name=Cytoplast Manipulator
-image=https://magiccards.info/scans/en/di/23.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfb6b06d-b132-44e9-a743-61187afb6152.jpg?1593272651
 value=4.071
 rarity=R
 type=Creature

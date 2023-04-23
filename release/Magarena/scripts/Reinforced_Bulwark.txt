@@ -1,5 +1,5 @@
 name=Reinforced Bulwark
-image=https://magiccards.info/scans/en/roe/223.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/437a91e7-f98e-4ed8-9ab7-f4db62979f5b.jpg?1562703233
 value=2.372
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Mythic Proportions
-image=https://magiccards.info/scans/en/on/274.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/829069cf-7e63-4443-b679-65ad15d6ca5e.jpg?1562925823
 value=3.644
 rarity=R
 type=Enchantment

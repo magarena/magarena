@@ -1,5 +1,5 @@
 name=Geist Trappers
-image=https://magiccards.info/scans/en/avr/179.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26f00a18-0ff7-42e4-be16-aa34fe27093b.jpg?1592709355
 value=1.938
 rarity=C
 type=Creature

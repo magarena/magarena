@@ -1,5 +1,5 @@
 name=Render Silent
-image=https://magiccards.info/scans/en/dgm/96.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3f3d6e4-0abe-4042-a7f6-0395683e8582.jpg?1562937631
 value=3.863
 rarity=R
 type=Instant

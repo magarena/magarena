@@ -1,5 +1,5 @@
 name=Heliod's Pilgrim
-image=https://magiccards.info/scans/en/m15/14.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cafce2f5-f4f4-465b-96dc-bcdd29d4e4bb.jpg?1581479102
 value=3.583
 rarity=C
 type=Creature

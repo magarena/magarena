@@ -1,5 +1,5 @@
 name=Phantom Warrior
-image=https://magiccards.info/scans/en/m10/66.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11cbdf06-f6b5-4bd8-80bf-6d7e57649684.jpg?1592518292
 value=3.767
 rarity=U
 type=Creature

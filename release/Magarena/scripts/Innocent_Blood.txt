@@ -1,5 +1,5 @@
 name=Innocent Blood
-image=https://magiccards.info/scans/en/ema/94.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29184c64-03f3-4a50-ac18-e34b6c89635e.jpg?1600700558
 value=4.537
 removal=2
 rarity=C

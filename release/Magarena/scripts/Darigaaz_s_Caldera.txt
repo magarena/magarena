@@ -1,5 +1,5 @@
 name=Darigaaz's Caldera
-image=https://magiccards.info/scans/en/ps/137.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/752f6f0c-af30-4937-b4a7-48f493e007a0.jpg?1562919659
 value=4.056
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Kalonian Behemoth
-image=https://magiccards.info/scans/en/m10/188.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77064471-d0c1-4988-8c47-f767bf9635f3.jpg?1561984952
 value=4.142
 rarity=R
 type=Creature

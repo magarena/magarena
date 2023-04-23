@@ -1,5 +1,5 @@
 name=Scuzzback Scrapper
-image=https://magiccards.info/scans/en/shm/217.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e2ed66f-75bd-43d8-90c4-cb0a5827b2f0.jpg?1562832996
 value=3.302
 rarity=C
 type=Creature

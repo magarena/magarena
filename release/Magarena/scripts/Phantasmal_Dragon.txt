@@ -1,5 +1,5 @@
 name=Phantasmal Dragon
-image=https://magiccards.info/scans/en/m12/71.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4ed5909d-b54c-44d5-9f3f-7e9a2c6a25c7.jpg?1592754430
 value=3.900
 rarity=U
 type=Creature

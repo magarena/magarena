@@ -1,5 +1,5 @@
 name=Elite Inquisitor
-image=https://magiccards.info/scans/en/isd/13.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9411c44-92a8-4f5d-b3de-d80046649c8c.jpg?1562836951
 value=3.905
 rarity=R
 type=Creature

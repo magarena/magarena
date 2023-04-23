@@ -1,5 +1,5 @@
 name=Ghost Tactician
-image=https://magiccards.info/scans/en/pc/6.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56ab366c-085b-4b13-b5ad-918965c34d22.jpg?1562571772
 value=1.190
 rarity=C
 type=Creature

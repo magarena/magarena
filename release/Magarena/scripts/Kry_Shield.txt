@@ -1,5 +1,5 @@
 name=Kry Shield
-image=https://magiccards.info/scans/en/lg/227.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a558f23c-c2ce-40d0-b894-f8ccbff8f622.jpg?1562860621
 value=2.222
 rarity=U
 type=Artifact

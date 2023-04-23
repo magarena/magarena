@@ -1,5 +1,5 @@
 name=Indebted Samurai
-image=https://magiccards.info/scans/en/bok/9.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb03bc2b-6d39-4315-964c-ca7db2db054a.jpg?1562879393
 value=3.185
 rarity=U
 type=Creature

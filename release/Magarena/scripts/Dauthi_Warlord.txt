@@ -1,5 +1,5 @@
 name=Dauthi Warlord
-image=https://magiccards.info/scans/en/ex/59.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7679a92-52a1-4b8f-99e6-564ac14b0cce.jpg?1562431752
 value=4.053
 rarity=U
 type=Creature

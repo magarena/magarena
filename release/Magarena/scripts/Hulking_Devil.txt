@@ -1,5 +1,5 @@
 name=Hulking Devil
-image=https://magiccards.info/scans/en/soi/165.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/031ecfc4-cc84-4f74-8eb1-3eaa234d8093.jpg?1576384796
 value=2.500
 rarity=C
 type=Creature

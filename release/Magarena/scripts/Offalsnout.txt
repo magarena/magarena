@@ -1,5 +1,5 @@
 name=Offalsnout
-image=https://magiccards.info/scans/en/mt/71.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/737679bd-b38f-402e-a6b2-7964da0f8d2f.jpg?1547516978
 value=3.842
 rarity=U
 type=Creature

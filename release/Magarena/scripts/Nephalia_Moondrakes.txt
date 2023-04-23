@@ -1,5 +1,5 @@
 name=Nephalia Moondrakes
-image=https://magiccards.info/scans/en/soi/75.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f714d6c4-b1e1-40dd-806f-a3d87020292e.jpg?1576384153
 value=2.500
 rarity=R
 type=Creature

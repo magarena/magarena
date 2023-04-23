@@ -1,5 +1,5 @@
 name=Fusion Elemental
-image=https://magiccards.info/scans/en/pc2/93.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8ab1550-0cd3-4dc9-82c2-121615f2ceee.jpg?1673305519
 value=3.041
 rarity=U
 type=Creature

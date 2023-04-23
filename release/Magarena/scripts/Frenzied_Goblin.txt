@@ -1,5 +1,5 @@
 name=Frenzied Goblin
-image=https://magiccards.info/scans/en/a25/131.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50b95c20-552a-41b9-8e65-bee9019d987f.jpg?1562435475
 image_updated=2018-04-27
 value=3.667
 rarity=C

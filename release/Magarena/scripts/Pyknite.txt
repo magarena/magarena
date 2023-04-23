@@ -1,5 +1,5 @@
 name=Pyknite
-image=https://magiccards.info/scans/en/ia/146.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6ffc64e4-ae3c-49f9-8ed6-518dd497bfe6.jpg?1587912062
 value=2.694
 rarity=C
 type=Creature

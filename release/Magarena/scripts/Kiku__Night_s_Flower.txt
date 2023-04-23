@@ -1,5 +1,5 @@
 name=Kiku, Night's Flower
-image=https://magiccards.info/scans/en/chk/121.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07e18994-d08b-4a8e-abfb-b5531fd6f816.jpg?1562757455
 value=3.910
 rarity=R
 type=Legendary,Creature

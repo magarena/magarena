@@ -1,5 +1,5 @@
 name=Eye of Ugin
-image=https://magiccards.info/scans/en/mm2/242.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2d5124b-4d73-4aa9-9331-88e03779ffad.jpg?1562267867
 image_updated=2015-11-05
 value=2.500
 rarity=R

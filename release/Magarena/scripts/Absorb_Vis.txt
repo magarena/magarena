@@ -1,5 +1,5 @@
 name=Absorb Vis
-image=https://magiccards.info/scans/en/cn2/126.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e319956e-982b-4bba-829a-67bf4ef79d74.jpg?1576382565
 image_updated=2017-08-29
 value=2.635
 rarity=C

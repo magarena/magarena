@@ -1,5 +1,5 @@
 name=Lead-Belly Chimera
-image=https://magiccards.info/scans/en/vi/148.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d89b377-80d2-42a0-b84e-a455a72ed9fe.jpg?1562277671
 value=3.406
 rarity=U
 type=Artifact,Creature

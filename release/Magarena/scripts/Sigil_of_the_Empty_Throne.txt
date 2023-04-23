@@ -1,5 +1,5 @@
 name=Sigil of the Empty Throne
-image=https://magiccards.info/scans/en/ori/31.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fce23fc9-3135-4537-a4b7-58f1334323b3.jpg?1592710479
 image_updated=2016-02-29
 value=2.500
 rarity=R

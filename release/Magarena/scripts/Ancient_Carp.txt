@@ -1,5 +1,5 @@
 name=Ancient Carp
-image=https://magiccards.info/scans/en/dtk/44.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fef6e95-e7f1-4646-be5e-130c8b5a3ca6.jpg?1562783481
 value=2.500
 rarity=C
 type=Creature

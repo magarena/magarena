@@ -1,5 +1,5 @@
 name=Relentless Hunter
-image=https://magiccards.info/scans/en/ogw/158.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5601725f-d733-4052-86eb-5d11baad8c34.jpg?1562912512
 image_updated=2016-02-29
 value=2.500
 rarity=U

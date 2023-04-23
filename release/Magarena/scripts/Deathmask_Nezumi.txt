@@ -1,5 +1,5 @@
 name=Deathmask Nezumi
-image=https://magiccards.info/scans/en/sok/66.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/743e38d1-b1cd-4828-ad3d-529a9f882115.jpg?1562494629
 value=2.457
 rarity=C
 type=Creature

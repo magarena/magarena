@@ -1,5 +1,5 @@
 name=Molten Ravager
-image=https://magiccards.info/scans/en/zen/138.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5664b7d-b553-4e0a-93ec-3d70e8e4f63b.jpg?1601078406
 value=3.057
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spike Drone
-image=https://magiccards.info/scans/en/tp/152.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d45a3d3-a114-496e-b575-504179a297cc.jpg?1562054234
 value=3.089
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Noble Panther
-image=https://magiccards.info/scans/en/in/257.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f327818-8222-4295-8cef-118757b34d17.jpg?1562907700
 value=3.484
 rarity=R
 type=Creature

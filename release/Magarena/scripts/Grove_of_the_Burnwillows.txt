@@ -1,5 +1,5 @@
 name=Grove of the Burnwillows
-image=https://magiccards.info/scans/en/ima/238.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de4b75ad-7539-4184-a940-6014a0327b3a.jpg?1562854707
 image_updated=2017-04-12
 value=3.949
 rarity=R

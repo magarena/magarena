@@ -1,5 +1,5 @@
 name=Prison Term
-image=https://magiccards.info/scans/en/cmd/27.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9effd90-c774-4bcd-87b4-6536aff4f825.jpg?1592712872
 value=3.789
 rarity=U
 type=Enchantment

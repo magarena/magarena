@@ -1,5 +1,5 @@
 name=Misshapen Fiend
-image=https://magiccards.info/scans/en/mm/147.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a43cf59e-7583-4651-968a-2a7201c69b6b.jpg?1562382087
 value=1.817
 rarity=C
 type=Creature

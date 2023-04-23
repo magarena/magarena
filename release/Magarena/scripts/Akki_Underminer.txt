@@ -1,5 +1,5 @@
 name=Akki Underminer
-image=https://magiccards.info/scans/en/chk/155.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efdd1e22-d68d-4858-b253-80071d26d50e.jpg?1593860490
 value=2.151
 rarity=U
 type=Creature

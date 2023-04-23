@@ -1,5 +1,5 @@
 name=Glistening Oil
-image=https://magiccards.info/scans/en/nph/62.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/483e99fd-7e48-400d-9817-451089089e0c.jpg?1562877253
 value=3.051
 rarity=R
 type=Enchantment

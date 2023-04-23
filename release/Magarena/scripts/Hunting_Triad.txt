@@ -1,5 +1,5 @@
 name=Hunting Triad
-image=https://magiccards.info/scans/en/c14/200.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c24930f3-34e8-40e1-a798-3df5d2d12ef1.jpg?1592673010
 value=3.533
 rarity=U
 type=Tribal,Sorcery

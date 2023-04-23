@@ -1,5 +1,5 @@
 name=Whispering Madness
-image=https://magiccards.info/scans/en/c16/229.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a62cda0-34b2-42f0-83bd-c08eecf02fa4.jpg?1562401514
 image_updated=2017-08-17
 value=3.578
 rarity=R

@@ -1,5 +1,5 @@
 name=Enraged Revolutionary
-image=https://magiccards.info/scans/en/cns/31.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dffcd035-e7e7-4763-813c-5e4193cdb893.jpg?1562867338
 value=2.714
 rarity=C
 type=Creature

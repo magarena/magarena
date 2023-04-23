@@ -1,5 +1,5 @@
 name=Benalish Marshal
-image=https://magiccards.info/scans/en/dom/6.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc395215-a2ec-49e1-9b1b-f8fcfe73e361.jpg?1592764661
 value=2.500
 rarity=R
 type=Creature

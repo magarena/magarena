@@ -1,5 +1,5 @@
 name=Jelenn Sphinx
-image=https://magiccards.info/scans/en/dgm/77.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e868618-c1b0-4ab9-96b2-6435e52b8b07.jpg?1562914130
 value=3.678
 rarity=U
 type=Creature

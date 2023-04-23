@@ -1,5 +1,5 @@
 name=Infernal Medusa
-image=https://magiccards.info/scans/en/lg/22.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26a5333f-2761-42b8-ae8b-1d360b109daf.jpg?1562858225
 value=3.391
 rarity=U
 type=Creature

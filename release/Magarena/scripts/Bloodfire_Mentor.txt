@@ -1,5 +1,5 @@
 name=Bloodfire Mentor
-image=https://magiccards.info/scans/en/ktk/102.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/4836fb70-a8f3-44ed-bae4-890ef7d07f88.jpg?1562786023
 value=2.200
 rarity=C
 type=Creature

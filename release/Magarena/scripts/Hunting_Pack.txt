@@ -1,5 +1,5 @@
 name=Hunting Pack
-image=https://magiccards.info/scans/en/ima/168.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c9eb595-e8fa-4a5e-abca-d30613c0e28f.jpg?1633679448
 image_updated=2017-04-12
 value=3.640
 rarity=U

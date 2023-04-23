@@ -1,5 +1,5 @@
 name=Uncaged Fury
-image=https://magiccards.info/scans/en/a25/155.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/837557f2-6151-489c-a997-00862173cd15.jpg?1592517138
 image_updated=2018-04-27
 value=2.500
 rarity=C

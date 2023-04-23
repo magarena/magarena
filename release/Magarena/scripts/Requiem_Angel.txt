@@ -1,5 +1,5 @@
 name=Requiem Angel
-image=https://magiccards.info/scans/en/c14/84.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad135475-d1f6-4e78-a536-6bf61204c739.jpg?1561954203
 value=3.631
 rarity=R
 type=Creature

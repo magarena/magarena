@@ -1,5 +1,5 @@
 name=Quilled Sliver
-image=https://magiccards.info/scans/en/ts/37.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72486240-eabb-4b37-99cc-ab13413683fa.jpg?1562918991
 value=2.860
 rarity=U
 type=Creature

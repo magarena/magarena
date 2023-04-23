@@ -1,5 +1,5 @@
 name=Kemba's Skyguard
-image=https://magiccards.info/scans/en/som/13.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9f20a74-7614-4bd9-ac08-0e098f98df0c.jpg?1562822313
 value=3.009
 rarity=C
 type=Creature

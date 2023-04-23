@@ -1,5 +1,5 @@
 name=Thorncaster Sliver
-image=https://magiccards.info/scans/en/m14/158.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3655d837-945f-4ff5-8952-cff5f7b2d18f.jpg?1562827909
 value=3.170
 rarity=R
 type=Creature

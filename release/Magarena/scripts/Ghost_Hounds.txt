@@ -1,5 +1,5 @@
 name=Ghost Hounds
-image=https://magiccards.info/scans/en/hl/12.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1298b43-0b10-4b7c-9d33-786d4d7bd80e.jpg?1562588248
 value=2.807
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dune Beetle
-image=https://magiccards.info/scans/en/akh/89.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/923cb904-c725-4d57-bc17-7aa87a7cd8e0.jpg?1543675266
 value=2.500
 rarity=C
 type=Creature

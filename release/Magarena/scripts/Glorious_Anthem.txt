@@ -1,5 +1,5 @@
 name=Glorious Anthem
-image=https://magiccards.info/scans/en/10e/17.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17d154d3-7ae5-43ff-9978-d974285e2c89.jpg?1594734982
 value=4.304
 rarity=R
 type=Enchantment

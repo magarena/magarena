@@ -1,5 +1,5 @@
 name=Gust-Skimmer
-image=https://magiccards.info/scans/en/mm2/217.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddac7b40-f98e-497b-8075-4695ed3ee490.jpg?1562268363
 value=2.155
 rarity=C
 type=Artifact,Creature

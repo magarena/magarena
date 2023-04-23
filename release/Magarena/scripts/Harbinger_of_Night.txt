@@ -1,5 +1,5 @@
 name=Harbinger of Night
-image=https://magiccards.info/scans/en/mr/26.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33124133-ed2c-4b86-a135-ac76f4fe4da5.jpg?1562718774
 value=4.174
 rarity=R
 type=Creature

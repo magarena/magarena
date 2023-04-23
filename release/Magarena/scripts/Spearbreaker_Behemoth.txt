@@ -1,5 +1,5 @@
 name=Spearbreaker Behemoth
-image=https://magiccards.info/scans/en/ala/150.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7f5cae6-5f1d-4537-9cc5-46d727d1beb1.jpg?1651656114
 value=3.464
 rarity=R
 type=Creature

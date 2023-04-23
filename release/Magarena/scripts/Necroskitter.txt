@@ -1,5 +1,5 @@
 name=Necroskitter
-image=https://magiccards.info/scans/en/mm2/88.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/128d1e8a-b80e-4963-aeff-4b364a02a246.jpg?1562259423
 value=4.162
 rarity=R
 type=Creature

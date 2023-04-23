@@ -1,5 +1,5 @@
 name=Cephalid Aristocrat
-image=https://magiccards.info/scans/en/tr/27.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd9ca63d-7e77-48f3-abdc-2d2f9cb3a0d9.jpg?1562631800
 value=1.152
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dross Golem
-image=https://magiccards.info/scans/en/ds/119.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1df2f4fd-b96a-4537-93a4-38141b0fa577.jpg?1562635714
 value=3.774
 rarity=C
 type=Artifact,Creature

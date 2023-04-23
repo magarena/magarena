@@ -1,5 +1,5 @@
 name=Marionette Master
-image=https://magiccards.info/scans/en/kld/90.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd21a925-c76f-4c1d-b5b8-8d3352730e5f.jpg?1631586656
 image_updated=2016-10-05
 value=2.500
 rarity=R

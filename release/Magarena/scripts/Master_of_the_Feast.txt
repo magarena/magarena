@@ -1,5 +1,5 @@
 name=Master of the Feast
-image=https://magiccards.info/scans/en/jou/75.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d528f7a3-0a7b-42e3-8e4f-f1eeab02e23a.jpg?1593095770
 value=3.798
 rarity=R
 type=Enchantment,Creature

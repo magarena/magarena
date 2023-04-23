@@ -1,5 +1,5 @@
 name=Breath of Dreams
-image=https://magiccards.info/scans/en/ia/62.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e40c9657-fab4-489d-8eb0-960ba2605add.jpg?1587911799
 value=2.700
 rarity=U
 type=Enchantment

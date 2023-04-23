@@ -1,5 +1,5 @@
 name=Serpent of the Endless Sea
-image=https://magiccards.info/scans/en/m10/70.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f525d734-7e19-4c1e-a5c2-097b718df7c4.jpg?1562001531
 value=2.781
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sylvan Advocate
-image=https://magiccards.info/scans/en/ogw/144.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f5ac7ee-52e0-4c30-83cd-d27c29c19dbc.jpg?1604194601
 image_updated=2016-02-29
 value=2.500
 rarity=R

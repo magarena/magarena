@@ -1,5 +1,5 @@
 name=Roar of the Kha
-image=https://magiccards.info/scans/en/mi/18.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc697a4c-f219-46fd-90f2-63c638cd5ef7.jpg?1562160304
 value=3.613
 rarity=U
 type=Instant

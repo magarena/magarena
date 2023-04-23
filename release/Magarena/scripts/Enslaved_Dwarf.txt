@@ -1,5 +1,5 @@
 name=Enslaved Dwarf
-image=https://magiccards.info/scans/en/tr/96.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da5003a6-211e-43d3-9a3c-756496357163.jpg?1562632302
 value=1.672
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Acidic Soil
-image=https://magiccards.info/scans/en/us/172.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/790157c9-b1ed-4da5-9d50-e99e0dd807b7.jpg?1562920405
 value=3.338
 rarity=U
 type=Sorcery

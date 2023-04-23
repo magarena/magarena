@@ -1,5 +1,5 @@
 name=Toxic Stench
-image=https://magiccards.info/scans/en/ju/74.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c4d1f59-0dba-4b83-8386-ae564fb4b771.jpg?1562630854
 value=2.707
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Ramosian Revivalist
-image=https://magiccards.info/scans/en/fut/30.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/250ee8d2-6f03-44a5-8f4c-ced4eaa4cdea.jpg?1562902474
 value=2.547
 rarity=U
 type=Creature

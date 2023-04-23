@@ -1,5 +1,5 @@
 name=Dunes of the Dead
-image=https://magiccards.info/scans/en/hou/175.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/326c7483-2c45-4804-85c4-d40ecdba4fc7.jpg?1562794879
 value=2.500
 rarity=U
 type=Land

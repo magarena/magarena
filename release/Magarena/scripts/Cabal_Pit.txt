@@ -1,5 +1,5 @@
 name=Cabal Pit
-image=https://magiccards.info/scans/en/od/315.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/848d686a-e2f7-488d-947f-a555099b74b1.jpg?1562919598
 value=3.533
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Steam Vines
-image=https://magiccards.info/scans/en/od/223.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3936053-b2ed-49b8-ab69-fe47a972cfe4.jpg?1562934538
 value=2.068
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Sejiri Refuge
-image=https://magiccards.info/scans/en/zen/224.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b474bfdd-e0b2-4b96-b8eb-84ced9ac5a06.jpg?1631236113
 value=3.650
 rarity=U
 type=Land

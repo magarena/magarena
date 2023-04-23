@@ -1,5 +1,5 @@
 name=Needle Storm
-image=https://magiccards.info/scans/en/9e/259.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcc1fcaa-6498-40cb-985f-cc1f3fbf9edd.jpg?1562431764
 value=3.613
 rarity=U
 type=Sorcery

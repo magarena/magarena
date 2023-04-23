@@ -1,5 +1,5 @@
 name=Air Elemental
-image=https://magiccards.info/scans/en/xln/45.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a27efec0-40c4-48bc-a21a-3af28a6529b5.jpg?1592516263
 image_updated=2017-10-30
 value=3.342
 rarity=U

@@ -1,5 +1,5 @@
 name=Vampirism
-image=https://magiccards.info/scans/en/vi/23.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dff2817-1813-410f-aca7-96e8f9f4ce81.jpg?1562277423
 value=3.075
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Peregrine Mask
-image=https://magiccards.info/scans/en/rav/268.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/9196f43e-f905-4e83-8e47-9d8fd53a4c9f.jpg?1598918134
 value=2.644
 rarity=U
 type=Artifact

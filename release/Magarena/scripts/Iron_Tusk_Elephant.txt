@@ -1,5 +1,5 @@
 name=Iron Tusk Elephant
-image=https://magiccards.info/scans/en/mr/226.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7c8e952-f040-4e5b-88f3-f80ad4b3f2f1.jpg?1587912370
 value=1.865
 rarity=U
 type=Creature

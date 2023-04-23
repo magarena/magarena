@@ -1,5 +1,5 @@
 name=Aerial Guide
-image=https://magiccards.info/scans/en/hou/29.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b744c138-9b9e-47f6-9d56-feb6a78ce377.jpg?1562812010
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Demolish
-image=https://magiccards.info/scans/en/xln/139.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b00211dd-6dd7-40d9-80f3-f909f6d112db.jpg?1557576665
 image_updated=2017-10-30
 value=2.500
 rarity=C

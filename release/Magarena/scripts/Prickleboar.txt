@@ -1,5 +1,5 @@
 name=Prickleboar
-image=https://magiccards.info/scans/en/ori/158.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/3191a8fd-2c54-4e47-9d5a-692bb38c811f.jpg?1562013675
 image_updated=2015-11-05
 value=2.500
 rarity=C

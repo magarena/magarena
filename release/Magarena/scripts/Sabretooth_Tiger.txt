@@ -1,5 +1,5 @@
 name=Sabretooth Tiger
-image=https://magiccards.info/scans/en/8e/217.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c85964eb-c586-4e62-9a19-6a665e6ad98d.jpg?1562935192
 value=2.397
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Claustrophobia
-image=https://magiccards.info/scans/en/ima/45.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05846389-4ee3-4e41-a6dd-0809bfc299f8.jpg?1611940472
 image_updated=2017-04-12
 value=2.500
 rarity=C

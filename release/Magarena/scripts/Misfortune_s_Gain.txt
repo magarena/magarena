@@ -1,5 +1,5 @@
 name=Misfortune's Gain
-image=https://magiccards.info/scans/en/p3k/13.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f93d6da-ee3c-4823-a20b-75db832f1f9d.jpg?1562918463
 value=2.600
 rarity=C
 type=Sorcery

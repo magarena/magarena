@@ -1,5 +1,5 @@
 name=Cosi's Ravager
-image=https://magiccards.info/scans/en/wwk/77.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cab3f6db-862f-4d85-9879-6f1b74e67a6a.jpg?1581708515
 image_updated=2016-11-28
 value=2.385
 rarity=C

@@ -1,5 +1,5 @@
 name=Kird Ape
-image=https://magiccards.info/scans/en/ema/137.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e14a5c79-29a3-4415-9b70-b287a474a0e0.jpg?1580014582
 value=4.484
 rarity=C
 type=Creature

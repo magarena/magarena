@@ -1,5 +1,5 @@
 name=Jwar Isle Avenger
-image=https://magiccards.info/scans/en/ogw/58.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a5b059f-2fa3-474f-9c74-6d4021703add.jpg?1562897010
 image_updated=2016-02-29
 value=2.500
 rarity=C

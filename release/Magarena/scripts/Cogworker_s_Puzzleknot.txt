@@ -1,5 +1,5 @@
 name=Cogworker's Puzzleknot
-image=https://magiccards.info/scans/en/kld/201.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00d594df-c51b-4936-9af1-536dab1792ae.jpg?1576383045
 image_updated=2016-10-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Thought Scour
-image=https://magiccards.info/scans/en/ima/76.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4afee6b3-55a4-44e5-b08c-85e0c813cd09.jpg?1673147420
 image_updated=2017-04-12
 value=4.250
 rarity=C

@@ -1,5 +1,5 @@
 name=Shard of Broken Glass
-image=https://magiccards.info/scans/en/soi/262.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a4924d7-f787-474b-beca-3b369903485c.jpg?1576385465
 value=2.500
 rarity=C
 type=Artifact

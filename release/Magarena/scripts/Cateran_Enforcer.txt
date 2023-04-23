@@ -1,5 +1,5 @@
 name=Cateran Enforcer
-image=https://magiccards.info/scans/en/mm/121.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e9b6da8-39da-4fce-89cf-ea972f981331.jpg?1562382078
 value=4.140
 rarity=U
 type=Creature

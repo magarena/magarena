@@ -1,5 +1,5 @@
 name=Breeding Pit
-image=https://magiccards.info/scans/en/5e/10.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39abb31a-15af-4182-a33b-ecdb63e09e3e.jpg?1561771096
 image_updated=2016-11-20
 value=3.344
 rarity=U

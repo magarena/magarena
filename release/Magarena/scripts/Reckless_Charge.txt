@@ -1,5 +1,5 @@
 name=Reckless Charge
-image=https://magiccards.info/scans/en/ema/144.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1754a8db-060e-470f-94c0-37f12d82978a.jpg?1562201950
 value=4.016
 rarity=C
 type=Sorcery

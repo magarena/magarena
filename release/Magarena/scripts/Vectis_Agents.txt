@@ -1,5 +1,5 @@
 name=Vectis Agents
-image=https://magiccards.info/scans/en/cfx/131.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e5ac1be-43e4-4535-8633-730f306c0d00.jpg?1562799855
 value=2.172
 rarity=C
 type=Artifact,Creature

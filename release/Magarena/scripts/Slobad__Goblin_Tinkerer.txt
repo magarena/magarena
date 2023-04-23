@@ -1,5 +1,5 @@
 name=Slobad, Goblin Tinkerer
-image=https://magiccards.info/scans/en/c16/133.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4256dcc1-0eee-4385-9a5c-70abb212bf49.jpg?1562397424
 image_updated=2017-08-17
 value=3.988
 rarity=R

@@ -1,5 +1,5 @@
 name=Glare of Heresy
-image=https://magiccards.info/scans/en/ths/15.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ed3d16f-f0c6-4080-8913-758208b08234.jpg?1562821357
 value=3.238
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Hobble
-image=https://magiccards.info/scans/en/ps/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54c76a22-f9e3-408b-a5bd-403add57e31a.jpg?1562912681
 value=3.397
 rarity=C
 type=Enchantment

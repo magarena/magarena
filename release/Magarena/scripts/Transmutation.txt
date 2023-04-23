@@ -1,5 +1,5 @@
 name=Transmutation
-image=https://magiccards.info/scans/en/lg/37.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2d90519-68f8-43ab-902a-0fed0f526488.jpg?1587912506
 image_updated=2017-01-11
 value=2.283
 rarity=C

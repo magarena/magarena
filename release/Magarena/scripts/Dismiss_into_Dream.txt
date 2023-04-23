@@ -1,5 +1,5 @@
 name=Dismiss into Dream
-image=https://magiccards.info/scans/en/m14/50.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af4cd7fe-639c-45a5-97af-9529904e3975.jpg?1562833847
 value=3.642
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Gonti's Machinations
-image=https://magiccards.info/scans/en/aer/63.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c97f5a9-6e04-45c3-aa8d-dcf0fd81d5b9.jpg?1576381678
 value=2.500
 rarity=U
 type=Enchantment

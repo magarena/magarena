@@ -1,5 +1,5 @@
 name=Rise of the Hobgoblins
-image=https://magiccards.info/scans/en/eve/145.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53c5d47d-0c5c-4932-aaf1-df21b8b8daeb.jpg?1562912467
 value=3.944
 rarity=R
 type=Enchantment

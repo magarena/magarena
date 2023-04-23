@@ -1,5 +1,5 @@
 name=Kolaghan Stormsinger
-image=https://magiccards.info/scans/en/dtk/145.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b6723f5-a7a9-425d-b4b0-f380da578ef8.jpg?1562789571
 value=2.500
 rarity=C
 type=Creature

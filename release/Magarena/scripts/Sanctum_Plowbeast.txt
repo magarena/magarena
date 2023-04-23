@@ -1,5 +1,5 @@
 name=Sanctum Plowbeast
-image=https://magiccards.info/scans/en/arb/10.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73887514-7644-4b2b-8c67-4b7e64150478.jpg?1562642111
 value=2.039
 rarity=C
 type=Artifact,Creature

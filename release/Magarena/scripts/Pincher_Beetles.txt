@@ -1,5 +1,5 @@
 name=Pincher Beetles
-image=https://magiccards.info/scans/en/10e/285.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48484372-325a-4bef-ae86-a7f61816fd65.jpg?1562547117
 value=3.132
 rarity=C
 type=Creature

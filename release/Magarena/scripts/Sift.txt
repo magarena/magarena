@@ -1,5 +1,5 @@
 name=Sift
-image=https://magiccards.info/scans/en/m19/72.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f9fb948-86fb-497b-98bf-1f69eac9901e.jpg?1598304307
 image_updated=2018-08-07
 value=3.170
 rarity=U

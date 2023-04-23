@@ -1,5 +1,5 @@
 name=Angel of Light
-image=https://magiccards.info/scans/en/st/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d8a0375-2b73-4514-9b82-9803eeae69c9.jpg?1562869982
 value=2.362
 rarity=U
 type=Creature

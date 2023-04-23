@@ -1,5 +1,5 @@
 name=Ravaging Riftwurm
-image=https://magiccards.info/scans/en/fut/135.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e09949e-c8cd-4bb4-9ed4-699abbc7ad3c.jpg?1562914054
 value=2.720
 rarity=U
 type=Creature

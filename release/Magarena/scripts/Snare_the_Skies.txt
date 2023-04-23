@@ -1,5 +1,5 @@
 name=Snare the Skies
-image=https://magiccards.info/scans/en/avr/193.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28f75827-a144-4fe2-a713-4439ae7567eb.jpg?1592709438
 value=1.757
 rarity=C
 type=Instant

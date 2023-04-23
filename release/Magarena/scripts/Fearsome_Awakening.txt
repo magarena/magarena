@@ -1,5 +1,5 @@
 name=Fearsome Awakening
-image=https://magiccards.info/scans/en/frf/69.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a672979-024a-4f69-91ae-a2cf4055e0a8.jpg?1562825516
 value=2.500
 rarity=U
 type=Sorcery

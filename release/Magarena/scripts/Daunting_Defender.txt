@@ -1,5 +1,5 @@
 name=Daunting Defender
-image=https://magiccards.info/scans/en/on/21.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38737f38-26bd-417c-b6b4-53f26e4e8044.jpg?1562908285
 value=3.089
 rarity=C
 type=Creature

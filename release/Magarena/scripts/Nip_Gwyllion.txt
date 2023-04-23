@@ -1,5 +1,5 @@
 name=Nip Gwyllion
-image=https://magiccards.info/scans/en/eve/92.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/019ad92d-8803-4569-98c8-4a7416799cfc.jpg?1562895313
 value=3.922
 rarity=C
 type=Creature

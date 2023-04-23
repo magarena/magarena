@@ -1,5 +1,5 @@
 name=Goblin Mountaineer
-image=https://magiccards.info/scans/en/ala/102.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1afa1475-797d-4cdc-93d6-e186c25e0bf5.jpg?1562701612
 value=2.524
 rarity=C
 type=Creature

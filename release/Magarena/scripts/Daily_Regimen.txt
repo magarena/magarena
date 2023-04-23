@@ -1,5 +1,5 @@
 name=Daily Regimen
-image=https://magiccards.info/scans/en/mt/8.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10c77d2d-ca35-4021-9e29-95be41385fd4.jpg?1592751839
 image_updated=2016-09-12
 value=2.773
 rarity=U

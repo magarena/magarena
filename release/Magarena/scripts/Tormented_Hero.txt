@@ -1,5 +1,5 @@
 name=Tormented Hero
-image=https://magiccards.info/scans/en/ths/108.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c101cf1b-cedf-4b74-9e3c-35f9a8695a8f.jpg?1562829062
 value=3.627
 rarity=U
 type=Creature

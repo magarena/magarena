@@ -1,5 +1,5 @@
 name=Soratami Mindsweeper
-image=https://magiccards.info/scans/en/bok/52.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c71d1c3-7a8f-404f-a448-cd5cf97ec7de.jpg?1562876894
 value=2.773
 rarity=U
 type=Creature

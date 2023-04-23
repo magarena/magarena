@@ -1,5 +1,5 @@
 name=Grave Titan
-image=https://magiccards.info/scans/en/c14/145.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68ce4c64-9f82-4be1-aa3b-ba885b2d4307.jpg?1561945357
 value=4.377
 rarity=M
 type=Creature

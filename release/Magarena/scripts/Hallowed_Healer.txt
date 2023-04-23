@@ -1,5 +1,5 @@
 name=Hallowed Healer
-image=https://magiccards.info/scans/en/od/25.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/254d5bf0-f985-4919-a142-d4578ae9a38e.jpg?1562901960
 value=2.919
 rarity=C
 type=Creature

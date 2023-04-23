@@ -1,5 +1,5 @@
 name=Lifegift
-image=https://magiccards.info/scans/en/bok/132.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27eaba1c-3137-4419-bf90-eb287a7c736e.jpg?1562876107
 value=3.711
 rarity=R
 type=Enchantment

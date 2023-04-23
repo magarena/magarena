@@ -1,5 +1,5 @@
 name=Infectious Host
-image=https://magiccards.info/scans/en/rav/91.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11858b4f-3a90-4990-9984-d888c000ec73.jpg?1598914916
 value=1.738
 rarity=C
 type=Creature

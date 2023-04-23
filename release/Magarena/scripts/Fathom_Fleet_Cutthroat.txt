@@ -1,5 +1,5 @@
 name=Fathom Fleet Cutthroat
-image=https://magiccards.info/scans/en/xln/107.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65a7004c-1952-41df-b645-b34bcbc3e401.jpg?1592516680
 value=2.500
 rarity=C
 type=Creature

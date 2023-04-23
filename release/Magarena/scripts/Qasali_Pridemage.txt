@@ -1,5 +1,5 @@
 name=Qasali Pridemage
-image=https://magiccards.info/scans/en/c17/189.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a103646d-b363-4896-a48f-0527d746587e.jpg?1673149069
 image_updated=2017-10-03
 value=4.580
 rarity=C

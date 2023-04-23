@@ -1,5 +1,5 @@
 name=Strength of Isolation
-image=https://magiccards.info/scans/en/tr/17.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7676e6fb-030d-40aa-a914-27ab6d7d5fc5.jpg?1574250438
 value=3.234
 rarity=U
 type=Enchantment

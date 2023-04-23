@@ -1,5 +1,5 @@
 name=Kor Sky Climber
-image=https://magiccards.info/scans/en/ogw/24.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54938334-ebad-4dde-82e6-8c854aef4a91.jpg?1562912220
 image_updated=2016-02-29
 value=2.500
 rarity=C

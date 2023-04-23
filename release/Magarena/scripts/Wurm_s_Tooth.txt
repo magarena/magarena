@@ -1,5 +1,5 @@
 name=Wurm's Tooth
-image=https://magiccards.info/scans/en/m12/223.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da965767-a8b1-4725-ae20-65c18e37ad27.jpg?1562662211
 value=1.882
 rarity=U
 type=Artifact

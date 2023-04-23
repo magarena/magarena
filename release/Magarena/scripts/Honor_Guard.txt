@@ -1,5 +1,5 @@
 name=Honor Guard
-image=https://magiccards.info/scans/en/10e/23.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c8a5add-87af-447d-9fd7-c4aeec3685fb.jpg?1562552335
 value=2.768
 rarity=C
 type=Creature

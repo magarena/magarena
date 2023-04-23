@@ -1,5 +1,5 @@
 name=Wizard Replica
-image=https://magiccards.info/scans/en/mi/275.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed9b6a66-2ec4-44e6-b29b-f08768dca9cc.jpg?1562843360
 image_updated=2017-01-11
 value=3.800
 rarity=C

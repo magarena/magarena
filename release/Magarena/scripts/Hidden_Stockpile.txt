@@ -1,5 +1,5 @@
 name=Hidden Stockpile
-image=https://magiccards.info/scans/en/aer/129.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9119c90-716b-4884-9b1e-471f262c2639.jpg?1599708052
 value=2.500
 rarity=U
 type=Enchantment

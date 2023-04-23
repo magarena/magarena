@@ -1,5 +1,5 @@
 name=Body Double
-image=https://magiccards.info/scans/en/c17/83.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7497f2c-62a9-45c4-b2dc-c95818fa2fa6.jpg?1673147215
 image_updated=2017-10-03
 value=4.500
 rarity=R

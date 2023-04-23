@@ -1,5 +1,5 @@
 name=The Scorpion God
-image=https://magiccards.info/scans/en/hou/146.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/def0d0ac-6422-486e-b42b-e1813dd0a23e.jpg?1562817532
 value=2.500
 rarity=M
 type=Legendary,Creature

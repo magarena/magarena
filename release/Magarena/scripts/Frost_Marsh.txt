@@ -1,5 +1,5 @@
 name=Frost Marsh
-image=https://magiccards.info/scans/en/cs/146.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9320033-d8d7-4a01-80db-60de222040e6.jpg?1593860372
 value=3.659
 rarity=U
 type=Snow,Land

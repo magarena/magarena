@@ -1,5 +1,5 @@
 name=Slice and Dice
-image=https://magiccards.info/scans/en/on/232.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e8c87a8-b527-4d76-8516-d1147e21773f.jpg?1591320692
 value=3.722
 rarity=U
 type=Sorcery

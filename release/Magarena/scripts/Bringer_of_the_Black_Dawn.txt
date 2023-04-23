@@ -1,5 +1,5 @@
 name=Bringer of the Black Dawn
-image=https://magiccards.info/scans/en/5dn/43.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54e5e882-02d4-4d69-aabf-ae9bf31f2923.jpg?1562877079
 value=4.255
 rarity=R
 type=Creature

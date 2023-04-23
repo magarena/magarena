@@ -1,5 +1,5 @@
 name=Archangel's Light
-image=https://magiccards.info/scans/en/dka/1.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f99837b3-b487-43bb-846b-7a0e8afb6eef.jpg?1562954172
 value=1.224
 rarity=M
 type=Sorcery

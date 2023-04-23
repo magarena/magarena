@@ -1,5 +1,5 @@
 name=Kruin Striker
-image=https://magiccards.info/scans/en/avr/143.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24da0851-c349-4b2c-bedf-21e3c2d35922.jpg?1673147829
 value=3.058
 rarity=C
 type=Creature

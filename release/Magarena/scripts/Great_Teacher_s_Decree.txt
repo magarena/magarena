@@ -1,5 +1,5 @@
 name=Great Teacher's Decree
-image=https://magiccards.info/scans/en/ima/21.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fc449dc-60c7-4b78-9a73-afa1de64a41e.jpg?1562850625
 image_updated=2017-04-12
 value=2.500
 rarity=U

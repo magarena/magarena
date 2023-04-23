@@ -1,5 +1,5 @@
 name=Akoum Battlesinger
-image=https://magiccards.info/scans/en/wwk/71.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/031950b6-110f-4e20-b31b-afe5ffdd6086.jpg?1562281088
 value=2.975
 rarity=C
 type=Creature

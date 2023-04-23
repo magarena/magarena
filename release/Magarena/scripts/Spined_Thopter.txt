@@ -1,5 +1,5 @@
 name=Spined Thopter
-image=https://magiccards.info/scans/en/nph/45.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd27f71a-cd22-4b5e-9536-3e160111875a.jpg?1562881127
 value=3.000
 rarity=C
 type=Artifact,Creature

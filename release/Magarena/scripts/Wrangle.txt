@@ -1,5 +1,5 @@
 name=Wrangle
-image=https://magiccards.info/scans/en/aer/101.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ea93a49-5a7c-4d15-8548-a57c9460e0f0.jpg?1576381928
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Tolarian Scholar
-image=https://magiccards.info/scans/en/m19/80.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2eda67da-02b5-4ecb-9038-10e026d454ec.jpg?1562301207
 image_updated=2018-08-07
 value=2.500
 rarity=C

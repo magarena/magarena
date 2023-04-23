@@ -1,5 +1,5 @@
 name=Belltower Sphinx
-image=https://magiccards.info/scans/en/m12/46.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef04340d-284c-4e7b-afd7-444d21a6b382.jpg?1600724884
 value=3.662
 rarity=U
 type=Creature

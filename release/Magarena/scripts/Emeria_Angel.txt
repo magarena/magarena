@@ -1,5 +1,5 @@
 name=Emeria Angel
-image=https://magiccards.info/scans/en/ima/20.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/563bf277-5bb1-4df7-bebb-d6d7dbec1cf6.jpg?1682208397
 image_updated=2017-04-12
 value=4.037
 rarity=R

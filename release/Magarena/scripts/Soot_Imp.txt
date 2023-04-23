@@ -1,5 +1,5 @@
 name=Soot Imp
-image=https://magiccards.info/scans/en/eve/43.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7df777c3-281b-4a2d-b852-4e2663672c06.jpg?1561771514
 image_updated=2017-01-08
 value=3.273
 rarity=U

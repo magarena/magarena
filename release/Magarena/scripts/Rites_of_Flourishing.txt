@@ -1,5 +1,5 @@
 name=Rites of Flourishing
-image=https://magiccards.info/scans/en/c16/163.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab014d5a-aec5-4ea8-bfb4-1392f43c1b30.jpg?1604194471
 image_updated=2017-08-17
 value=3.680
 rarity=R

@@ -1,5 +1,5 @@
 name=Boundless Realms
-image=https://magiccards.info/scans/en/m13/162.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3c3cf16-ba81-4558-b1a6-79942a02f629.jpg?1562561174
 value=3.638
 rarity=R
 type=Sorcery

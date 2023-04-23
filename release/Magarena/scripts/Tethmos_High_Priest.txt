@@ -1,5 +1,5 @@
 name=Tethmos High Priest
-image=https://magiccards.info/scans/en/jou/29.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51baeea2-a922-4e98-8253-f395546c30c8.jpg?1547515983
 value=3.743
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Force Away
-image=https://magiccards.info/scans/en/ktk/40.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dda70b3e-4b70-404e-a579-41dd126be084.jpg?1562794644
 value=3.167
 rarity=C
 type=Instant

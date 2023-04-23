@@ -1,5 +1,5 @@
 name=Etherium-Horn Sorcerer
-image=https://magiccards.info/scans/en/c16/197.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/732d0770-fc8a-4319-8219-8d68b1a39af0.jpg?1562612504
 image_updated=2017-08-17
 value=4.036
 rarity=R

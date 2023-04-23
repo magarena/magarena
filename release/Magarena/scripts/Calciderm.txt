@@ -1,5 +1,5 @@
 name=Calciderm
-image=https://magiccards.info/scans/en/ema/5.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5ae9641c-5792-4f72-b40c-f029af28dab9.jpg?1619392714
 value=3.977
 rarity=U
 type=Creature

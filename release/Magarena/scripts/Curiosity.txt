@@ -1,5 +1,5 @@
 name=Curiosity
-image=https://magiccards.info/scans/en/a25/52.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5a0be10-c20f-4ac0-89a5-1770ecf48aad.jpg?1600697752
 image_updated=2018-04-27
 value=4.083
 rarity=U

@@ -1,5 +1,5 @@
 name=Thundermaw Hellkite
-image=https://magiccards.info/scans/en/ima/149.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a75f6bb4-ab06-42ca-a0df-326d9a098a26.jpg?1562852516
 image_updated=2017-04-12
 value=4.103
 rarity=M

@@ -1,5 +1,5 @@
 name=Vanquish
-image=https://magiccards.info/scans/en/5dn/20.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27bae717-56c0-4028-b1e7-a445d6a57176.jpg?1562875950
 value=2.250
 rarity=U
 type=Instant

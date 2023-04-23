@@ -1,5 +1,5 @@
 name=Astral Steel
-image=https://magiccards.info/scans/en/sc/2.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64f836d3-52c8-4628-b18a-8c8fb67969c9.jpg?1562529748
 value=2.210
 rarity=C
 type=Instant

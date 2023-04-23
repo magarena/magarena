@@ -1,5 +1,5 @@
 name=Darkheart Sliver
-image=https://magiccards.info/scans/en/pc/155.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78b0b1a4-5372-424f-99b0-8abf500d5ece.jpg?1619403835
 value=3.843
 rarity=U
 type=Creature

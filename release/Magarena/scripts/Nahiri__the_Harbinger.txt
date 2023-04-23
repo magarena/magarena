@@ -1,5 +1,5 @@
 name=Nahiri, the Harbinger
-image=https://magiccards.info/scans/en/soi/247.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddbecd25-250e-4a49-b007-698b36551254.jpg?1591321401
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

@@ -1,5 +1,5 @@
 name=Demonic Vigor
-image=https://magiccards.info/scans/en/dom/85.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09950456-09d6-4675-9995-0dc540ddb6e4.jpg?1562731072
 value=2.500
 rarity=C
 type=Enchantment

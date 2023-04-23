@@ -1,5 +1,5 @@
 name=Hovermyr
-image=https://magiccards.info/scans/en/nph/138.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95e4e445-8333-4cb4-b4fb-80957fae0b97.jpg?1562879915
 value=3.739
 rarity=C
 type=Artifact,Creature

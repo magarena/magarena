@@ -1,5 +1,5 @@
 name=Academy Drake
-image=https://magiccards.info/scans/en/dom/40.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8bacb12-da46-4b00-804f-9ff6bff452bc.jpg?1562745962
 value=2.500
 rarity=C
 type=Creature

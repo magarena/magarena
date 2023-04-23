@@ -1,5 +1,5 @@
 name=Screeching Harpy
-image=https://magiccards.info/scans/en/tp/49.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c2e2364-9181-4745-9267-3fa1b775331e.jpg?1673818519
 value=2.732
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sun-Collared Raptor
-image=https://magiccards.info/scans/en/rix/118.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62fbd1bc-3e57-43d5-ad54-443ca740fcc4.jpg?1555040553
 value=2.500
 rarity=C
 type=Creature

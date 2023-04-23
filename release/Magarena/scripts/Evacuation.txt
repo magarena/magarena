@@ -1,5 +1,5 @@
 name=Evacuation
-image=https://magiccards.info/scans/en/c16/91.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbf5e27b-b1ab-470c-8204-146032e26b5b.jpg?1562417378
 image_updated=2017-08-17
 value=4.365
 removal=1

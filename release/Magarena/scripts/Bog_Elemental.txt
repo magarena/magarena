@@ -1,5 +1,5 @@
 name=Bog Elemental
-image=https://magiccards.info/scans/en/pr/57.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75191915-352e-4de7-b216-63f0ff588ba5.jpg?1562916692
 value=1.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Thundering Wurm
-image=https://magiccards.info/scans/en/po/115.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b0ba623-d17f-4f0e-b914-da139a3971df.jpg?1562446893
 value=3.227
 rarity=R
 type=Creature

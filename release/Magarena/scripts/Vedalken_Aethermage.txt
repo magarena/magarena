@@ -1,5 +1,5 @@
 name=Vedalken Aethermage
-image=https://magiccards.info/scans/en/fut/61.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/496eb37d-5c8f-4dd7-a0a7-3ed1bd2210d6.jpg?1562909881
 image_updated=2016-09-27
 value=3.779
 rarity=C

@@ -1,5 +1,5 @@
 name=Leering Emblem
-image=https://magiccards.info/scans/en/eve/171.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d81bcabd-7bbe-463c-a35a-992c12c4e4bf.jpg?1562940698
 value=3.119
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Vigil for the Lost
-image=https://magiccards.info/scans/en/som/26.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a87b48b-2ae9-4753-8719-62411f94ca87.jpg?1562817241
 value=1.845
 rarity=U
 type=Enchantment

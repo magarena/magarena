@@ -1,5 +1,5 @@
 name=Ifnir Deadlands
-image=https://magiccards.info/scans/en/hou/179.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b88728b-9b18-40c6-b634-f87f8da83665.jpg?1562788706
 value=2.500
 rarity=U
 type=Land

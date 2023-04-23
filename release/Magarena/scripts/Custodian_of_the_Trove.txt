@@ -1,5 +1,5 @@
 name=Custodian of the Trove
-image=https://magiccards.info/scans/en/dtk/236.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb14f061-9506-40fb-b10d-4bada38ca0f7.jpg?1562795066
 value=2.500
 rarity=C
 type=Artifact,Creature

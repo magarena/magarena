@@ -1,5 +1,5 @@
 name=Protection of the Hekma
-image=https://magiccards.info/scans/en/akh/23.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15d01e04-7c40-4af0-b5bd-5fa267d10378.jpg?1543674727
 value=2.500
 rarity=U
 type=Enchantment

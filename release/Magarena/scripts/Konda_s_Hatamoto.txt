@@ -1,5 +1,5 @@
 name=Konda's Hatamoto
-image=https://magiccards.info/scans/en/chk/31.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83425cf6-f6ad-4302-8f07-099eabdd4b40.jpg?1562762050
 value=3.450
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Consume the Meek
-image=https://magiccards.info/scans/en/roe/100.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c94dcaed-55da-41f4-a61f-2a79ef6c1459.jpg?1593095734
 value=4.222
 rarity=R
 type=Instant

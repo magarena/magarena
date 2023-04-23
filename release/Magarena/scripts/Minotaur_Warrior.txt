@@ -1,5 +1,5 @@
 name=Minotaur Warrior
-image=https://magiccards.info/scans/en/po/145.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c694f5db-a4ad-4abd-acff-d6b340d2387c.jpg?1562447827
 value=2.474
 rarity=C
 type=Creature

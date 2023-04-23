@@ -1,5 +1,5 @@
 name=Quillspike
-image=https://magiccards.info/scans/en/eve/126.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14cb4054-d5d6-4015-ae86-6f99280afe0a.jpg?1562899380
 value=4.295
 rarity=U
 type=Creature

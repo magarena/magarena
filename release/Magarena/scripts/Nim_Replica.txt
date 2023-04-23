@@ -1,5 +1,5 @@
 name=Nim Replica
-image=https://magiccards.info/scans/en/mi/220.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d11a56e7-30a4-44da-a58b-336f4c0c4882.jpg?1562158690
 value=1.667
 rarity=C
 type=Artifact,Creature

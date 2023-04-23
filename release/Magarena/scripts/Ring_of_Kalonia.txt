@@ -1,5 +1,5 @@
 name=Ring of Kalonia
-image=https://magiccards.info/scans/en/m13/212.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2082e04f-f972-424e-a724-7a5975215538.jpg?1562551310
 value=3.777
 rarity=U
 type=Artifact

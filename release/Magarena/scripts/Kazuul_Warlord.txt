@@ -1,5 +1,5 @@
 name=Kazuul Warlord
-image=https://magiccards.info/scans/en/zen/134.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da42df13-eded-48e2-ad1a-ff74d718ce3c.jpg?1562617294
 value=3.843
 rarity=R
 type=Creature

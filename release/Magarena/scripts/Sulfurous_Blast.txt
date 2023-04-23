@@ -1,5 +1,5 @@
 name=Sulfurous Blast
-image=https://magiccards.info/scans/en/cn2/170.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0ac3f6bd-f303-4765-871f-dfa7acf1ad78.jpg?1592672837
 image_updated=2017-08-29
 value=3.362
 rarity=U

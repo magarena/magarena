@@ -1,5 +1,5 @@
 name=Aven Wind Guide
-image=https://magiccards.info/scans/en/akh/195.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/414bc716-2b1b-4731-bd0c-f4a5caf26e40.jpg?1543676028
 value=2.500
 rarity=U
 type=Creature

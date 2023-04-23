@@ -1,5 +1,5 @@
 name=Elvish Visionary
-image=https://magiccards.info/scans/en/ori/175.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2f174e6-9532-4fc3-815b-2dc3966c6523.jpg?1608910606
 image_updated=2016-02-29
 value=2.500
 rarity=C

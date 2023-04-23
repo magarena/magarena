@@ -1,5 +1,5 @@
 name=Soulsworn Spirit
-image=https://magiccards.info/scans/en/rtr/51.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32602ed9-c0a7-4498-a333-235eaae628df.jpg?1562784580
 value=2.606
 rarity=U
 type=Creature

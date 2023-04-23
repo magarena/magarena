@@ -1,5 +1,5 @@
 name=Carnage Wurm
-image=https://magiccards.info/scans/en/m12/168.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c086eb41-3524-4815-97c9-761ba86a30b2.jpg?1562658159
 value=3.833
 rarity=U
 type=Creature

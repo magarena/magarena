@@ -1,5 +1,5 @@
 name=Kinsbaile Borderguard
-image=https://magiccards.info/scans/en/mt/14.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82a2e219-9e84-4f54-88e2-3925e48c4827.jpg?1562879675
 value=3.548
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Angelic Renewal
-image=https://magiccards.info/scans/en/wl/120.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a03fc1f1-31f6-4e52-87d0-e3d18ea60d3b.jpg?1651387506
 value=4.292
 rarity=C
 type=Enchantment

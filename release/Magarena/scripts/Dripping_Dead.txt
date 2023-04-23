@@ -1,5 +1,5 @@
 name=Dripping Dead
-image=https://magiccards.info/scans/en/le/67.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdb3b483-01a8-4f54-9a3a-0d3f5aa3cd8b.jpg?1562936359
 value=1.104
 rarity=C
 type=Creature

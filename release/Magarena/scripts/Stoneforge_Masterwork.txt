@@ -1,5 +1,5 @@
 name=Stoneforge Masterwork
-image=https://magiccards.info/scans/en/ogw/166.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae5b78f5-6a49-4433-a42b-5abf5ea60919.jpg?1562930089
 image_updated=2016-02-29
 value=2.500
 rarity=R

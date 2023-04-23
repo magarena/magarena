@@ -1,5 +1,5 @@
 name=Hangarback Walker
-image=https://magiccards.info/scans/en/ori/229.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/791c21fb-fc78-4106-9a42-abc73f41ab8b.jpg?1562026741
 image_updated=2015-11-05
 value=2.500
 rarity=R

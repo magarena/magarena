@@ -1,5 +1,5 @@
 name=Shadowed Caravel
-image=https://magiccards.info/scans/en/xln/246.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b28ab3ed-32cd-4168-9763-96884491aaa1.jpg?1562562453
 value=2.500
 rarity=R
 type=Artifact

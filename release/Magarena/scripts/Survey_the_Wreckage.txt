@@ -1,5 +1,5 @@
 name=Survey the Wreckage
-image=https://magiccards.info/scans/en/rtr/107.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6e750f9-ad86-4d60-98a3-78d11cd52cd1.jpg?1562791087
 value=1.398
 rarity=C
 type=Sorcery

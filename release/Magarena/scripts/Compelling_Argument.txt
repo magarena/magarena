@@ -1,5 +1,5 @@
 name=Compelling Argument
-image=https://magiccards.info/scans/en/akh/47.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c35f4d5-2337-4ea0-a571-5a73e2d0d54a.jpg?1543674916
 value=2.500
 rarity=C
 type=Sorcery

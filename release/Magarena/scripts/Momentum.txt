@@ -1,5 +1,5 @@
 name=Momentum
-image=https://magiccards.info/scans/en/ud/113.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10bd11a2-7cab-4d3f-b52b-f5bb66fbbec6.jpg?1562443324
 value=2.819
 rarity=U
 type=Enchantment

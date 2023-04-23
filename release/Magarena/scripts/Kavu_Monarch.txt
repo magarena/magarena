@@ -1,5 +1,5 @@
 name=Kavu Monarch
-image=https://magiccards.info/scans/en/in/149.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea63dfd5-d8d7-45b8-8219-1cc2b3de5666.jpg?1562942087
 value=4.240
 rarity=R
 type=Creature

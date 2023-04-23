@@ -1,5 +1,5 @@
 name=Winged Coatl
-image=https://magiccards.info/scans/en/arb/105.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/400862ac-f229-4f73-949c-779f6bfa868b.jpg?1673149285
 value=3.833
 removal=2
 rarity=C

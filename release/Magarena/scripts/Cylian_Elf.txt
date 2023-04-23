@@ -1,5 +1,5 @@
 name=Cylian Elf
-image=https://magiccards.info/scans/en/ala/127.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3afaab6-4768-4852-a0b6-4e6a0295bde7.jpg?1562708032
 value=2.129
 rarity=C
 type=Creature

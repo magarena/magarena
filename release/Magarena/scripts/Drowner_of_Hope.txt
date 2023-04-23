@@ -1,5 +1,5 @@
 name=Drowner of Hope
-image=https://magiccards.info/scans/en/bfz/57.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fd5b48c-6850-47d4-8106-297be6c8f708.jpg?1562898751
 image_updated=2015-11-08
 value=2.500
 rarity=R

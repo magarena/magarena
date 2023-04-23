@@ -1,5 +1,5 @@
 name=Hero of Bladehold
-image=https://magiccards.info/scans/en/mbs/8.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/8536e50d-81b3-4b1d-9469-22fad35fe145.jpg?1682208444
 value=4.270
 rarity=M
 type=Creature

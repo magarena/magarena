@@ -1,5 +1,5 @@
 name=Dissipation Field
-image=https://magiccards.info/scans/en/som/32.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd2d9f47-2bd2-4a97-90c7-beca18a8e7fa.jpg?1674141313
 value=3.585
 rarity=R
 type=Enchantment

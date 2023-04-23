@@ -1,5 +1,5 @@
 name=Minotaur Aggressor
-image=https://magiccards.info/scans/en/rtr/100.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e22959dc-8759-454e-80b9-623a799af354.jpg?1562794511
 value=2.395
 rarity=U
 type=Creature

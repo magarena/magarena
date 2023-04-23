@@ -1,5 +1,5 @@
 name=Ghirapur Orrery
-image=https://magiccards.info/scans/en/kld/216.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9bff744-873b-4fa1-8088-5f28bbcdc7b8.jpg?1576383215
 image_updated=2016-10-05
 value=2.500
 rarity=R

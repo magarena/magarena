@@ -1,5 +1,5 @@
 name=Magnigoth Treefolk
-image=https://magiccards.info/scans/en/ps/82.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90c2869b-43cf-4d5e-8a54-9ae200f5bff9.jpg?1562925506
 value=3.657
 rarity=R
 type=Creature

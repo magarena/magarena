@@ -1,5 +1,5 @@
 name=Joiner Adept
-image=https://magiccards.info/scans/en/10e/271.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61751365-3acf-4eb8-b1f9-358ebccccf94.jpg?1562548729
 value=4.331
 rarity=R
 type=Creature

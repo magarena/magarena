@@ -1,5 +1,5 @@
 name=Tornado Elemental
-image=https://magiccards.info/scans/en/c14/222.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9859d07b-d7df-4fc3-895a-6b2749c562ad.jpg?1592673263
 value=4.421
 rarity=R
 type=Creature

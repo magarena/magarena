@@ -1,5 +1,5 @@
 name=Satyr Rambler
-image=https://magiccards.info/scans/en/ths/139.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fabccddd-c0ea-45a5-bebc-d8f858242a2a.jpg?1562839071
 value=3.094
 rarity=C
 type=Creature

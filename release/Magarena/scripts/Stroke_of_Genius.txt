@@ -1,5 +1,5 @@
 name=Stroke of Genius
-image=https://magiccards.info/scans/en/c14/129.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c77deaac-7e13-45b4-921d-8116bddf3bb6.jpg?1682208912
 image_updated=2016-02-29
 value=4.500
 rarity=R

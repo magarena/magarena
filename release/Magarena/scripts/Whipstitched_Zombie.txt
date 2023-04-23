@@ -1,5 +1,5 @@
 name=Whipstitched Zombie
-image=https://magiccards.info/scans/en/pr/81.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cd00b0b-2ac1-4926-a735-215f402ba1c4.jpg?1562924207
 value=1.537
 rarity=C
 type=Creature

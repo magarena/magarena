@@ -1,5 +1,5 @@
 name=Resounding Thunder
-image=https://magiccards.info/scans/en/ala/110.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/680b7955-d939-4195-aba8-b46a8c925616.jpg?1562704894
 value=2.373
 rarity=C
 type=Instant

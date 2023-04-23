@@ -1,5 +1,5 @@
 name=Soulshriek
-image=https://magiccards.info/scans/en/mr/43.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c3bf717-2b88-4704-a7e9-f62dbb3d3d3d.jpg?1562719287
 value=3.977
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Myr Sire
-image=https://magiccards.info/scans/en/c14/256.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3f2e2e5-5ed2-4040-92ba-ad1ac13f03f6.jpg?1601080826
 value=3.441
 rarity=C
 type=Artifact,Creature

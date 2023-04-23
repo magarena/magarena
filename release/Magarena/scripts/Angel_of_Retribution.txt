@@ -1,5 +1,5 @@
 name=Angel of Retribution
-image=https://magiccards.info/scans/en/tr/1.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/807f4edf-a961-4f52-a44e-abde0fd35722.jpg?1562920871
 value=2.204
 rarity=R
 type=Creature

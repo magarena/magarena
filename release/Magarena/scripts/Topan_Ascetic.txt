@@ -1,5 +1,5 @@
 name=Topan Ascetic
-image=https://magiccards.info/scans/en/ala/151.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d0952ed-efc7-4ff5-a233-e64c0f11119b.jpg?1562705102
 value=2.684
 rarity=U
 type=Creature

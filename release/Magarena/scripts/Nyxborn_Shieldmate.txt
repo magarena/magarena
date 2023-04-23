@@ -1,5 +1,5 @@
 name=Nyxborn Shieldmate
-image=https://magiccards.info/scans/en/bng/21.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64204816-6e1d-4bf8-acd0-8f83ca7eb8c7.jpg?1593091524
 value=3.878
 rarity=C
 type=Enchantment,Creature

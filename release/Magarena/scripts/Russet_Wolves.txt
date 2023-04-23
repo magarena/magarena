@@ -1,5 +1,5 @@
 name=Russet Wolves
-image=https://magiccards.info/scans/en/dka/102.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3c7c972-5a11-4709-b3ef-e2acb3b51dd9.jpg?1562937441
 value=1.652
 rarity=C
 type=Creature

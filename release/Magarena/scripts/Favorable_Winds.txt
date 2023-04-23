@@ -1,5 +1,5 @@
 name=Favorable Winds
-image=https://magiccards.info/scans/en/xln/56.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1de89026-13a6-4ae3-9059-460bdd657285.jpg?1592764842
 image_updated=2017-10-30
 value=4.000
 rarity=U

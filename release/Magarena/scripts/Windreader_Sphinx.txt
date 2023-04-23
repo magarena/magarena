@@ -1,5 +1,5 @@
 name=Windreader Sphinx
-image=https://magiccards.info/scans/en/m19/84.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0346326-6bdf-4385-ab41-7b06e9f66ffd.jpg?1600699154
 image_updated=2018-08-07
 value=3.590
 rarity=R

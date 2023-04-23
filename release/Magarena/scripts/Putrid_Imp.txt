@@ -1,5 +1,5 @@
 name=Putrid Imp
-image=https://magiccards.info/scans/en/tr/77.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47a929a4-b861-432c-a2f3-3125f8a2665b.jpg?1562909596
 value=4.000
 rarity=C
 type=Creature

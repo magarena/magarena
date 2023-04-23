@@ -1,5 +1,5 @@
 name=Desert of the Indomitable
-image=https://magiccards.info/scans/en/hou/172.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d42aa0c-0408-4b0d-bec5-9861dbcf9ee1.jpg?1562804804
 value=2.500
 rarity=C
 type=Land

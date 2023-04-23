@@ -1,5 +1,5 @@
 name=Millikin
-image=https://magiccards.info/scans/en/ema/226.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/513ba8b6-9583-405f-84a5-9d2ca42f9597.jpg?1626100911
 value=2.936
 rarity=U
 type=Artifact,Creature

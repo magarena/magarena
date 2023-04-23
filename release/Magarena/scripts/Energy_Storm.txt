@@ -1,5 +1,5 @@
 name=Energy Storm
-image=https://magiccards.info/scans/en/ia/248.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8628e29-3d20-4601-8693-70524dac3f98.jpg?1562870005
 value=3.926
 rarity=R
 type=Enchantment

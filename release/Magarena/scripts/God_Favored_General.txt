@@ -1,5 +1,5 @@
 name=God-Favored General
-image=https://magiccards.info/scans/en/bng/14.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/984c2db0-5a79-47b8-8a42-5674c6d9d0fd.jpg?1593091464
 value=3.520
 rarity=U
 type=Creature

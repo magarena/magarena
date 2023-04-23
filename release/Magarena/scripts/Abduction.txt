@@ -1,5 +1,5 @@
 name=Abduction
-image=https://magiccards.info/scans/en/6e/55.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63c82bef-50d6-4d25-bc3f-dda2826fc99c.jpg?1562818344
 value=3.511
 rarity=U
 type=Enchantment

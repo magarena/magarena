@@ -1,5 +1,5 @@
 name=Shu Farmer
-image=https://magiccards.info/scans/en/p3k/23.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc6d6524-d8bd-4eb9-9222-747443492b8c.jpg?1562258014
 value=1.658
 rarity=C
 type=Creature

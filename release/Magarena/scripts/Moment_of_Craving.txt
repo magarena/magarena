@@ -1,5 +1,5 @@
 name=Moment of Craving
-image=https://magiccards.info/scans/en/rix/79.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0e3ea55-162d-4466-ba4e-b938a0845fb5.jpg?1555040271
 value=2.500
 rarity=C
 type=Instant

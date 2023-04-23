@@ -1,5 +1,5 @@
 name=Wolf-Skull Shaman
-image=https://magiccards.info/scans/en/mt/140.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/804ef999-0d44-420e-ad0c-a6dcf8e9c392.jpg?1562879586
 value=3.667
 rarity=U
 type=Creature

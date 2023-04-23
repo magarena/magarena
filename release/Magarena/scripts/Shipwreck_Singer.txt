@@ -1,5 +1,5 @@
 name=Shipwreck Singer
-image=https://magiccards.info/scans/en/cn2/206.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e38de33-b2f1-40f4-bf3c-2ebc738cf8ad.jpg?1576383222
 image_updated=2017-01-08
 value=3.516
 rarity=U

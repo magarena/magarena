@@ -1,5 +1,5 @@
 name=Rakshasa Deathdealer
-image=https://magiccards.info/scans/en/ktk/192.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab4e0b33-dad1-4443-a7c7-a7bab067d04a.jpg?1562791782
 value=4.000
 rarity=R
 type=Creature

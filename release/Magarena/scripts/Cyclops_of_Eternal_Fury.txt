@@ -1,5 +1,5 @@
 name=Cyclops of Eternal Fury
-image=https://magiccards.info/scans/en/jou/92.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44a92b7a-7119-45b3-b9ed-5dbf5abca818.jpg?1593095933
 value=2.833
 rarity=U
 type=Enchantment,Creature

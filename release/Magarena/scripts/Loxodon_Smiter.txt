@@ -1,5 +1,5 @@
 name=Loxodon Smiter
-image=https://magiccards.info/scans/en/rtr/178.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69247168-2bfb-4cce-a2a6-61459a0fbce4.jpg?1562787559
 value=4.071
 rarity=R
 type=Creature

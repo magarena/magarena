@@ -1,5 +1,5 @@
 name=Soul of Zendikar
-image=https://magiccards.info/scans/en/m15/201.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/108a4330-d9dd-429d-a2f8-c355ff914883.jpg?1568004676
 value=3.786
 rarity=M
 type=Creature

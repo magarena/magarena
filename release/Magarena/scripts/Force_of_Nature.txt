@@ -1,5 +1,5 @@
 name=Force of Nature
-image=https://magiccards.info/scans/en/9e/242.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fa16a96-8e70-4ab5-926c-edafaf5f5a63.jpg?1562906140
 value=3.548
 rarity=R
 type=Creature

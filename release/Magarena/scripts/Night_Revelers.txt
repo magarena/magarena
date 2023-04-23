@@ -1,5 +1,5 @@
 name=Night Revelers
-image=https://magiccards.info/scans/en/isd/153.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3f82c5c-77fa-45f3-a91e-4c2489444855.jpg?1562838628
 value=2.106
 rarity=C
 type=Creature

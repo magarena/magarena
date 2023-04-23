@@ -1,5 +1,5 @@
 name=Lifespark Spellbomb
-image=https://magiccards.info/scans/en/mi/197.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0adde668-67af-4a08-a36a-2a49893ab20d.jpg?1562135173
 value=3.317
 rarity=C
 type=Artifact

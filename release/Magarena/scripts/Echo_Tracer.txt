@@ -1,5 +1,5 @@
 name=Echo Tracer
-image=https://magiccards.info/scans/en/le/37.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e856fbd5-0e8b-4f28-bfea-0ad73418d140.jpg?1592754875
 image_updated=2016-12-02
 value=2.500
 rarity=C

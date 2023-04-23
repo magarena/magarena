@@ -1,5 +1,5 @@
 name=Nim Devourer
-image=https://magiccards.info/scans/en/mi/70.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a037ef49-8849-41aa-aa6e-3ac6ee34cdad.jpg?1562152678
 value=3.408
 rarity=R
 type=Creature

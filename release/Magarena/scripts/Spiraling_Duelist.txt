@@ -1,5 +1,5 @@
 name=Spiraling Duelist
-image=https://magiccards.info/scans/en/mbs/76.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81ac77ab-e51a-4c5c-ab6b-3fb610a5fa27.jpg?1562612638
 value=2.316
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Resplendent Mentor
-image=https://magiccards.info/scans/en/shm/19.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be87e59d-422c-4dd7-8867-423e784830a2.jpg?1562835468
 value=2.569
 rarity=U
 type=Creature

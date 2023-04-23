@@ -1,5 +1,5 @@
 name=Frightcrawler
-image=https://magiccards.info/scans/en/od/138.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d79129e7-6cc4-4060-8b76-3afbd2e0d456.jpg?1562935312
 value=3.058
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Darksteel Myr
-image=https://magiccards.info/scans/en/som/151.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f5712cf-c6a9-4a2e-90db-8ca17c621724.jpg?1562814630
 value=3.005
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Nessian Asp
-image=https://magiccards.info/scans/en/cn2/187.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf6eae62-5a42-42e9-ba65-84500cdff95a.jpg?1576383070
 image_updated=2017-01-01
 value=3.588
 rarity=U

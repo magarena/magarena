@@ -1,5 +1,5 @@
 name=Eager Cadet
-image=https://magiccards.info/scans/en/9eb/1.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0732d372-1000-435e-905b-4a6c852ba427.jpg?1562730884
 image_updated=2015-05-17
 value=1.724
 rarity=C

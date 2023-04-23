@@ -1,5 +1,5 @@
 name=Cephalid Scout
-image=https://magiccards.info/scans/en/od/74.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6efdf190-970d-4751-b214-cd962f7f2ca8.jpg?1562915571
 value=1.554
 rarity=C
 type=Creature

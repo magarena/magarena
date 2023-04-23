@@ -1,5 +1,5 @@
 name=Cunning Lethemancer
-image=https://magiccards.info/scans/en/ala/69.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/972891e6-6a23-40df-af22-adf8cd7ea582.jpg?1562706849
 value=2.914
 rarity=R
 type=Creature

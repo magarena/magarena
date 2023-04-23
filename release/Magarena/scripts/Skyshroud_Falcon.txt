@@ -1,5 +1,5 @@
 name=Skyshroud Falcon
-image=https://magiccards.info/scans/en/7e/45.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a41aec1d-d86f-4a52-a446-5cef71d1ebd4.jpg?1562244627
 value=2.893
 rarity=C
 type=Creature

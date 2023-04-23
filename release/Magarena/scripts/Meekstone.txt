@@ -1,5 +1,5 @@
 name=Meekstone
-image=https://magiccards.info/scans/en/7e/307.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a691664-9275-4b89-a8e3-b99c88717ffb.jpg?1562231937
 value=4.299
 rarity=R
 type=Artifact

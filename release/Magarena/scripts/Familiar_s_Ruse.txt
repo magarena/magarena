@@ -1,5 +1,5 @@
 name=Familiar's Ruse
-image=https://magiccards.info/scans/en/mm3/37.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6179d2a5-4694-4dcc-9261-9f5201c53a67.jpg?1593813035
 image_updated=2017-08-08
 value=3.791
 rarity=U

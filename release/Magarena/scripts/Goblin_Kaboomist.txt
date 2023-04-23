@@ -1,5 +1,5 @@
 name=Goblin Kaboomist
-image=https://magiccards.info/scans/en/m15/144.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3768c769-0b8d-46df-847b-0cf4df45decc.jpg?1661583574
 value=2.875
 rarity=R
 type=Creature

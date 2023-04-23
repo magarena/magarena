@@ -1,5 +1,5 @@
 name=Wall of Blood
-image=https://magiccards.info/scans/en/mi/82.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17320043-f81c-4e14-b9ba-c1309972c22b.jpg?1562137060
 value=3.444
 rarity=U
 type=Creature

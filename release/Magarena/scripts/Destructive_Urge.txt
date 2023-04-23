@@ -1,5 +1,5 @@
 name=Destructive Urge
-image=https://magiccards.info/scans/en/us/180.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/479645b3-54af-4fbf-928e-2224540fe892.jpg?1562909898
 value=3.986
 rarity=U
 type=Enchantment

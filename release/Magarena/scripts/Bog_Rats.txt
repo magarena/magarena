@@ -1,5 +1,5 @@
 name=Bog Rats
-image=https://magiccards.info/scans/en/6e/117.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0da038c4-73ff-4d82-8440-9bca2f051fd5.jpg?1562814562
 value=2.141
 rarity=C
 type=Creature

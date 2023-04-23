@@ -1,5 +1,5 @@
 name=Proper Burial
-image=https://magiccards.info/scans/en/di/16.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae8a4756-d82b-4c6d-b652-5c3722d3edec.jpg?1593272557
 value=3.888
 rarity=R
 type=Enchantment

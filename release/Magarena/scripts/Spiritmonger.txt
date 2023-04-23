@@ -1,5 +1,5 @@
 name=Spiritmonger
-image=https://magiccards.info/scans/en/ima/209.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19c2ce16-840b-4971-b4cc-89c8cdc5b093.jpg?1562846288
 image_updated=2017-04-12
 value=4.455
 rarity=R

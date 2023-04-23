@@ -1,5 +1,5 @@
 name=Sorin's Thirst
-image=https://magiccards.info/scans/en/m12/110.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0dacbb2-21e1-4220-bf43-75a0729cdc60.jpg?1592518350
 image_updated=2017-01-08
 value=3.024
 removal=2

@@ -1,5 +1,5 @@
 name=Ruination Wurm
-image=https://magiccards.info/scans/en/gtc/192.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce04d1ee-2605-472d-b3ee-24800342e9af.jpg?1561846645
 value=2.976
 rarity=C
 type=Creature

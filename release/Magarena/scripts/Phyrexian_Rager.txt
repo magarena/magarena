@@ -1,5 +1,5 @@
 name=Phyrexian Rager
-image=https://magiccards.info/scans/en/ima/102.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9861fb3-6722-43b8-bf0a-af6dd166e59d.jpg?1682209203
 image_updated=2017-04-12
 value=3.884
 rarity=C

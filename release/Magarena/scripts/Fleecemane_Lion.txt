@@ -1,5 +1,5 @@
 name=Fleecemane Lion
-image=https://magiccards.info/scans/en/c17/172.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef4e1c37-d520-4025-bd56-15ec452f6842.jpg?1631588501
 image_updated=2017-10-03
 value=3.873
 rarity=R

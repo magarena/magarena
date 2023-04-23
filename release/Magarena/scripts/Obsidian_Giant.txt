@@ -1,5 +1,5 @@
 name=Obsidian Giant
-image=https://magiccards.info/scans/en/po2/109.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aad8a194-cee7-4671-8310-19357fc1a450.jpg?1562935353
 value=2.042
 rarity=U
 type=Creature

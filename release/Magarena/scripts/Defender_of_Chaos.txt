@@ -1,5 +1,5 @@
 name=Defender of Chaos
-image=https://magiccards.info/scans/en/ul/75.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/717ae26a-e5a0-4478-9995-00ea6bd84c03.jpg?1562863282
 value=4.047
 rarity=C
 type=Creature

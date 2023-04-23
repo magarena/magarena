@@ -1,5 +1,5 @@
 name=Elvish Pathcutter
-image=https://magiccards.info/scans/en/on/256.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7d810b8-1a15-46cc-9d9d-871ac43b7036.jpg?1562942208
 value=0.963
 rarity=C
 type=Creature

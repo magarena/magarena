@@ -1,5 +1,5 @@
 name=Drag Under
-image=https://magiccards.info/scans/en/emn/57.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75eacac3-cba4-4c30-b1df-19fcc5f96076.jpg?1562199038
 image_updated=2016-09-05
 value=2.500
 rarity=C

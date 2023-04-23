@@ -1,5 +1,5 @@
 name=Duskmantle, House of Shadow
-image=https://magiccards.info/scans/en/rav/277.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d3c85e2-58a5-4469-85ea-7e89268f310c.jpg?1598920416
 value=3.045
 rarity=U
 type=Land

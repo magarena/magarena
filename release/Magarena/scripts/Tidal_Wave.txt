@@ -1,5 +1,5 @@
 name=Tidal Wave
-image=https://magiccards.info/scans/en/ema/75.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9898c19f-7341-4be9-b592-bac884e55c84.jpg?1592764673
 value=3.329
 rarity=C
 type=Instant

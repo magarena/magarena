@@ -1,5 +1,5 @@
 name=Quag Vampires
-image=https://magiccards.info/scans/en/cns/122.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5744beb-ac91-4c3a-91f7-b2e310f7aba8.jpg?1562866390
 value=3.200
 rarity=C
 type=Creature

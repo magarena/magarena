@@ -1,5 +1,5 @@
 name=Indestructibility
-image=https://magiccards.info/scans/en/m10/17.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e086a062-d39b-4e2a-bde0-f4d6d1797a5f.jpg?1562836168
 value=3.643
 rarity=R
 type=Enchantment

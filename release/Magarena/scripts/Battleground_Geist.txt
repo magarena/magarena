@@ -1,5 +1,5 @@
 name=Battleground Geist
-image=https://magiccards.info/scans/en/isd/45.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52b2d108-16f2-4d9b-abc8-83ee3d2e8baf.jpg?1600697525
 value=2.877
 rarity=U
 type=Creature

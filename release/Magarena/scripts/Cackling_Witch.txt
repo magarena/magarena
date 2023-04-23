@@ -1,5 +1,5 @@
 name=Cackling Witch
-image=https://magiccards.info/scans/en/mm/119.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cec755ee-b4c0-47fd-9e61-9a3161766de6.jpg?1562383035
 value=3.018
 rarity=U
 type=Creature

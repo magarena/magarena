@@ -1,5 +1,5 @@
 name=Krosan Warchief
-image=https://magiccards.info/scans/en/sc/123.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bfc9b24-6dbe-42df-a2c7-cb4845afb50f.jpg?1562897481
 value=3.923
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Alaborn Cavalier
-image=https://magiccards.info/scans/en/po2/121.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8877b120-55ee-4e5a-9f51-e72a110f638e.jpg?1562923777
 value=3.250
 rarity=U
 type=Creature

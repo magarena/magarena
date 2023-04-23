@@ -1,5 +1,5 @@
 name=Dauthi Trapper
-image=https://magiccards.info/scans/en/sh/6.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d83770e-16ff-49c6-b4e7-eb7fc566eef8.jpg?1562596858
 value=3.690
 rarity=U
 type=Creature

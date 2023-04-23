@@ -1,5 +1,5 @@
 name=Raka Disciple
-image=https://magiccards.info/scans/en/ap/66.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41462d43-4f9f-46ba-b79d-434597e74b6b.jpg?1562910379
 value=2.983
 rarity=C
 type=Creature

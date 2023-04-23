@@ -1,5 +1,5 @@
 name=Numai Outcast
-image=https://magiccards.info/scans/en/chk/134.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b878d1c2-34ce-4cb4-9ea3-8d7cd2028484.jpg?1562763742
 value=0.852
 rarity=U
 type=Creature

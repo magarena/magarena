@@ -1,5 +1,5 @@
 name=Kjeldoran Javelineer
-image=https://magiccards.info/scans/en/cs/11.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48b0776b-d1ed-4b0d-9684-99978e3e3b46.jpg?1593274773
 value=2.682
 rarity=C
 type=Creature

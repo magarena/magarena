@@ -1,5 +1,5 @@
 name=Favored Hoplite
-image=https://magiccards.info/scans/en/ths/13.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/251015ed-9408-4941-894a-158551ed2613.jpg?1562815791
 value=3.628
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sage of the Inward Eye
-image=https://magiccards.info/scans/en/ktk/195.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/297c336b-3f70-4518-b1f1-7b773774895d.jpg?1562784071
 value=3.750
 rarity=R
 type=Creature

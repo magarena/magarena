@@ -1,5 +1,5 @@
 name=Serra Zealot
-image=https://magiccards.info/scans/en/us/46.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b311542-599f-4d2f-a871-18d5b0b7bbe5.jpg?1562897333
 value=3.325
 rarity=C
 type=Creature

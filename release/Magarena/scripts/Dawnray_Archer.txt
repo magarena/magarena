@@ -1,5 +1,5 @@
 name=Dawnray Archer
-image=https://magiccards.info/scans/en/ala/39.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86c1ff65-8ad5-42e0-9e4c-1caf83ab86e0.jpg?1562706236
 value=2.074
 rarity=U
 type=Creature

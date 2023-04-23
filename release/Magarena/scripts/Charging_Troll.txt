@@ -1,5 +1,5 @@
 name=Charging Troll
-image=https://magiccards.info/scans/en/in/239.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3d4b427-7fef-4a56-91a4-89cfbd881c89.jpg?1562925557
 image_updated=2016-11-28
 value=4.156
 rarity=U

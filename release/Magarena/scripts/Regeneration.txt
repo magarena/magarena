@@ -1,5 +1,5 @@
 name=Regeneration
-image=https://magiccards.info/scans/en/10e/290.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b848c69-0f64-4631-84b9-6597c359f3ba.jpg?1562547290
 value=3.041
 rarity=U
 type=Enchantment

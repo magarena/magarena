@@ -1,5 +1,5 @@
 name=Frilled Sandwalla
-image=https://magiccards.info/scans/en/hou/116.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73c755ff-3fbb-4128-9357-0874eb61ff4c.jpg?1592518424
 value=2.500
 rarity=C
 type=Creature

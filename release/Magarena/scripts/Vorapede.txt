@@ -1,5 +1,5 @@
 name=Vorapede
-image=https://magiccards.info/scans/en/dka/131.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f20ad28c-80a0-47c4-a5b6-685569d6a718.jpg?1591321080
 value=3.927
 rarity=M
 type=Creature

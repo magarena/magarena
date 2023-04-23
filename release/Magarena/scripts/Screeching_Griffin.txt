@@ -1,5 +1,5 @@
 name=Screeching Griffin
-image=https://magiccards.info/scans/en/rav/29.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e2fa710-4615-42de-8716-41b009b56d32.jpg?1598913883
 value=2.045
 rarity=C
 type=Creature

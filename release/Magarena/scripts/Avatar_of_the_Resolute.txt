@@ -1,5 +1,5 @@
 name=Avatar of the Resolute
-image=https://magiccards.info/scans/en/dtk/175.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bf18a2f-f93e-4a18-92d5-c9d2cca276d7.jpg?1562788757
 value=2.500
 rarity=R
 type=Creature

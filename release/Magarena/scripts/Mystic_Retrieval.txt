@@ -1,5 +1,5 @@
 name=Mystic Retrieval
-image=https://magiccards.info/scans/en/dka/42.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cea3484-889b-492d-a6d3-d4b95ed5df6e.jpg?1568004029
 image_updated=2016-02-29
 value=3.521
 rarity=U

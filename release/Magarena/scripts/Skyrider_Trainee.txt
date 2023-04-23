@@ -1,5 +1,5 @@
 name=Skyrider Trainee
-image=https://magiccards.info/scans/en/gp/17.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d760a01-d6c4-462b-b66c-cfd0f594e13a.jpg?1593271931
 value=1.085
 rarity=C
 type=Creature

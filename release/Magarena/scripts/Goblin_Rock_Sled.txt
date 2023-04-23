@@ -1,5 +1,5 @@
 name=Goblin Rock Sled
-image=https://magiccards.info/scans/en/4e/217.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25f4f0c1-a43e-4282-b20e-91c711c57521.jpg?1559601325
 value=2.119
 rarity=C
 type=Creature

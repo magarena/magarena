@@ -1,5 +1,5 @@
 name=Crashing Tide
-image=https://magiccards.info/scans/en/rix/34.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e312980a-7b3c-43f8-81cf-53ff818cea30.jpg?1555039872
 value=2.500
 rarity=C
 type=Sorcery

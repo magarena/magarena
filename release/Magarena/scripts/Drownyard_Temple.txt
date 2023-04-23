@@ -1,5 +1,5 @@
 name=Drownyard Temple
-image=https://magiccards.info/scans/en/soi/271.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06c61b1b-d8fa-4c8b-9ddb-ca2682a3f5ef.jpg?1674142893
 value=2.500
 rarity=R
 type=Land

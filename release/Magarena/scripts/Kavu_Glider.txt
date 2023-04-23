@@ -1,5 +1,5 @@
 name=Kavu Glider
-image=https://magiccards.info/scans/en/ap/64.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/158aa5a8-2769-4a8a-b457-001abc862b35.jpg?1562900142
 value=1.703
 rarity=C
 type=Creature

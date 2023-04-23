@@ -1,5 +1,5 @@
 name=Mine Excavation
-image=https://magiccards.info/scans/en/shm/13.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eee9dce2-3d2c-4ac4-a61e-3e352b6d4557.jpg?1562837909
 value=2.879
 rarity=C
 type=Sorcery

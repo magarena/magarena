@@ -1,5 +1,5 @@
 name=Sprouting Thrinax
-image=https://magiccards.info/scans/en/mm3/189.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41b05cf1-1bc2-43e1-b383-9cbb69517389.jpg?1673149152
 image_updated=2017-08-08
 value=3.781
 rarity=U

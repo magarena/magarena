@@ -1,5 +1,5 @@
 name=Tolarian Serpent
-image=https://magiccards.info/scans/en/wl/57.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9236a857-c4ca-4de2-a4a2-e0914d16b54b.jpg?1562802201
 value=2.625
 rarity=R
 type=Creature

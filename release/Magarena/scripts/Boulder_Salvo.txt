@@ -1,5 +1,5 @@
 name=Boulder Salvo
-image=https://magiccards.info/scans/en/ogw/102.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e269989-bb22-4da4-a374-434a572e8e8f.jpg?1562910801
 image_updated=2016-02-29
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Yawgmoth's Edict
-image=https://magiccards.info/scans/en/7e/171.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f72ed0e5-37a0-4909-a37e-ba4745bfae3b.jpg?1562251734
 value=3.550
 rarity=U
 type=Enchantment

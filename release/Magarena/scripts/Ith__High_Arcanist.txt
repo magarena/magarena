@@ -1,5 +1,5 @@
 name=Ith, High Arcanist
-image=https://magiccards.info/scans/en/ts/241.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54c32735-e8e7-46a1-84ea-92806f459e84.jpg?1619404006
 value=3.773
 rarity=R
 type=Legendary,Creature

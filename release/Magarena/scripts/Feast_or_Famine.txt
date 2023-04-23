@@ -1,5 +1,5 @@
 name=Feast or Famine
-image=https://magiccards.info/scans/en/ai/8.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92105bc6-b64a-4bdc-99fe-7a2ccdbd4486.jpg?1592713797
 value=3.794
 rarity=C
 type=Instant

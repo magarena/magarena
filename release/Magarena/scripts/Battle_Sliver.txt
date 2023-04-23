@@ -1,5 +1,5 @@
 name=Battle Sliver
-image=https://magiccards.info/scans/en/m14/128.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68490b8c-e9d1-4f5c-9001-750be0e0569f.jpg?1562830342
 value=2.490
 rarity=U
 type=Creature

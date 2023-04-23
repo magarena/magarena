@@ -1,5 +1,5 @@
 name=Kambal, Consul of Allocation
-image=https://magiccards.info/scans/en/kld/183.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3e47d49-e5b5-487b-a1ec-373dbf89b2ec.jpg?1673148829
 image_updated=2016-10-05
 value=2.500
 rarity=R

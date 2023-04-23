@@ -1,5 +1,5 @@
 name=Kami of Fire's Roar
-image=https://magiccards.info/scans/en/chk/174.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/4380118d-f209-446d-829b-3564796e0219.jpg?1562759387
 value=1.794
 rarity=C
 type=Creature

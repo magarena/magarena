@@ -1,5 +1,5 @@
 name=Seedling Charm
-image=https://magiccards.info/scans/en/mr/138.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e42746e1-f422-4453-a860-3993d5796479.jpg?1562722379
 value=3.917
 rarity=C
 type=Instant

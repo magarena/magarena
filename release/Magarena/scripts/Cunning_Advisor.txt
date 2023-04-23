@@ -1,5 +1,5 @@
 name=Cunning Advisor
-image=https://magiccards.info/scans/en/p3k/72.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e31ede4-b0bb-4f63-b8df-1330152611a4.jpg?1562256547
 value=2.364
 rarity=U
 type=Creature

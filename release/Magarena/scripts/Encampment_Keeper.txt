@@ -1,5 +1,5 @@
 name=Encampment Keeper
-image=https://magiccards.info/scans/en/xln/11.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fe64569-c1b6-4bd4-a742-6ee46ea5181c.jpg?1562557382
 value=2.500
 rarity=C
 type=Creature

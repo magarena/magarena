@@ -1,5 +1,5 @@
 name=Iname as One
-image=https://magiccards.info/scans/en/sok/151.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e13f122-0dfe-42f3-9815-9ae1a29fca99.jpg?1562493699
 value=2.549
 rarity=R
 type=Legendary,Creature

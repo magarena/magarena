@@ -1,5 +1,5 @@
 name=Crash of Rhinos
-image=https://magiccards.info/scans/en/mr/108.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d74e0337-d9ac-4bf2-b2b5-aadc97433030.jpg?1562721929
 value=3.551
 rarity=C
 type=Creature

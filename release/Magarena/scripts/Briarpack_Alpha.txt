@@ -1,5 +1,5 @@
 name=Briarpack Alpha
-image=https://magiccards.info/scans/en/dka/108.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/585c11e2-4c30-436c-9dbd-354b154f6def.jpg?1562829524
 value=3.588
 rarity=U
 type=Creature

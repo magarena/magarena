@@ -1,5 +1,5 @@
 name=Edgar Markov
-image=https://magiccards.info/scans/en/c17/36.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d94b8ec-ecda-43c8-a60e-1ba33e6a54a4.jpg?1562616128
 image_updated=2017-10-03
 value=2.500
 rarity=M

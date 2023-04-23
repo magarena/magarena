@@ -1,5 +1,5 @@
 name=Arctic Nishoba
-image=https://magiccards.info/scans/en/cs/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8da62ada-b7cd-4110-a213-281f00fca3e7.jpg?1593275351
 value=3.448
 rarity=U
 type=Creature

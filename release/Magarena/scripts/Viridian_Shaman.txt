@@ -1,5 +1,5 @@
 name=Viridian Shaman
-image=https://magiccards.info/scans/en/10e/308.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bed8b8aa-2c1f-4a5b-af6e-16802b3b9453.jpg?1561759733
 image_updated=2016-02-29
 value=3.989
 rarity=U

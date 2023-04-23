@@ -1,5 +1,5 @@
 name=Admiral's Order
-image=https://magiccards.info/scans/en/rix/31.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80dc0310-afd9-49b4-b58f-a0e91120c38c.jpg?1555039852
 value=2.500
 rarity=R
 type=Instant

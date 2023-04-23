@@ -1,5 +1,5 @@
 name=Gravespawn Sovereign
-image=https://magiccards.info/scans/en/on/152.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58d36326-882e-46bb-a00c-5ea0f6515f65.jpg?1637633090
 value=3.920
 rarity=R
 type=Creature

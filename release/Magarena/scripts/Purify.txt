@@ -1,5 +1,5 @@
 name=Purify
-image=https://magiccards.info/scans/en/7e/31.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cfb77ea-6776-4bb4-886d-9a60f56e1fa7.jpg?1562232377
 value=3.545
 rarity=R
 type=Sorcery

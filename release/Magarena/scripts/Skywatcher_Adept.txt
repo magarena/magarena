@@ -1,5 +1,5 @@
 name=Skywatcher Adept
-image=https://magiccards.info/scans/en/roe/88.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be61e893-4bf5-4550-83f4-42ebe7f1e3b0.jpg?1562708153
 value=3.140
 rarity=C
 type=Creature

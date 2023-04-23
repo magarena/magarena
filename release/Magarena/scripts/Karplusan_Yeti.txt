@@ -1,5 +1,5 @@
 name=Karplusan Yeti
-image=https://magiccards.info/scans/en/9e/198.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6ad95118-104c-41d4-a393-941e7b97fd8e.jpg?1562736625
 value=3.468
 rarity=R
 type=Creature

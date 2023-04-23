@@ -1,5 +1,5 @@
 name=Sylvan Might
-image=https://magiccards.info/scans/en/ema/188.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4e1ecf4-bf72-4ae9-9993-9b9a6ca80da7.jpg?1599707550
 value=3.531
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Shefet Monitor
-image=https://magiccards.info/scans/en/akh/186.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2688ef62-875a-4735-9a63-6f3152d10d61.jpg?1543675971
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Colfenor's Urn
-image=https://magiccards.info/scans/en/lw/254.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/419fea28-3813-4e65-8b90-6d335fdf0a0b.jpg?1562345860
 value=3.081
 rarity=R
 type=Artifact

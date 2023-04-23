@@ -1,5 +1,5 @@
 name=Opalescence
-image=https://magiccards.info/scans/en/ud/13.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c0071fb-afa5-47b5-b266-2b10a4f5a98a.jpg?1562443752
 value=4.283
 rarity=R
 type=Enchantment

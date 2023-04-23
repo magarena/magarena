@@ -1,5 +1,5 @@
 name=Seer's Sundial
-image=https://magiccards.info/scans/en/c14/267.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/491b8613-d5cd-4749-9c1b-d27a388c616a.jpg?1608917875
 image_updated=2016-02-29
 value=3.000
 rarity=R

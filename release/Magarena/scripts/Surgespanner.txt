@@ -1,5 +1,5 @@
 name=Surgespanner
-image=https://magiccards.info/scans/en/lw/92.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d5b00cb-ebc3-44e8-970d-724150eb7876.jpg?1562340357
 value=3.650
 rarity=R
 type=Creature

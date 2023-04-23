@@ -1,5 +1,5 @@
 name=Plagued Rusalka
-image=https://magiccards.info/scans/en/mm2/89.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72bcfb24-1649-4c8f-ba76-346914d11572.jpg?1600714641
 image_updated=2015-11-05
 value=3.300
 rarity=C

@@ -1,5 +1,5 @@
 name=Incendiary Sabotage
-image=https://magiccards.info/scans/en/kld/119.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0ee44ca0-1989-42fa-8024-b6b3e5c3883c.jpg?1576382098
 image_updated=2016-10-05
 value=2.500
 rarity=U

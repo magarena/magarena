@@ -1,5 +1,5 @@
 name=Kami of Tattered Shoji
-image=https://magiccards.info/scans/en/bok/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc6deb57-4ee3-4716-8644-28283704f994.jpg?1562880219
 value=1.319
 rarity=C
 type=Creature

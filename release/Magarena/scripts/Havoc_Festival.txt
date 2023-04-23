@@ -1,5 +1,5 @@
 name=Havoc Festival
-image=https://magiccards.info/scans/en/rtr/166.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04560623-c768-4273-a40d-7e3f39e832cf.jpg?1562781987
 value=3.362
 rarity=R
 type=Enchantment

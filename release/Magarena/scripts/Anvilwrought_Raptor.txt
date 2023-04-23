@@ -1,5 +1,5 @@
 name=Anvilwrought Raptor
-image=https://magiccards.info/scans/en/ths/211.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa6d7bbe-0418-4a58-a97b-13b50eb0b642.jpg?1592517598
 value=2.044
 rarity=U
 type=Artifact,Creature

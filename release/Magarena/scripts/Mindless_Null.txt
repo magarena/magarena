@@ -1,5 +1,5 @@
 name=Mindless Null
-image=https://magiccards.info/scans/en/zen/103.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5d43b60-5bbc-4f9d-a96b-8d886b0c6dbd.jpg?1562615761
 value=0.851
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Unyaro Bee Sting
-image=https://magiccards.info/scans/en/mr/148.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71bdd944-e86c-4e5e-b75c-9bbf4fb27ccd.jpg?1562720215
 value=3.019
 rarity=U
 type=Sorcery

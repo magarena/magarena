@@ -1,5 +1,5 @@
 name=Melancholy
-image=https://magiccards.info/scans/en/pc/88.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/faa6fe9a-27ba-480f-84ce-b8d3306f0339.jpg?1562586555
 value=2.210
 rarity=C
 type=Enchantment

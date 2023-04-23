@@ -1,5 +1,5 @@
 name=Griffin Dreamfinder
-image=https://magiccards.info/scans/en/bng/16.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b569fadd-d9ca-4b0d-bee2-9d45574e56f0.jpg?1593091479
 value=2.652
 rarity=C
 type=Creature

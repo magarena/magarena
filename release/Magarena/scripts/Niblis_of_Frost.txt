@@ -1,5 +1,5 @@
 name=Niblis of Frost
-image=https://magiccards.info/scans/en/emn/72.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4a3d06c-8059-4f73-8f7e-29aa004cd3d5.jpg?1591320321
 image_updated=2016-09-05
 value=2.500
 rarity=R

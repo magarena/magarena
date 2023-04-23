@@ -1,5 +1,5 @@
 name=Essence Vortex
-image=https://magiccards.info/scans/en/ia/365.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe07e496-5070-4116-a91a-a3bbe19c12af.jpg?1562942896
 value=3.361
 rarity=U
 type=Instant

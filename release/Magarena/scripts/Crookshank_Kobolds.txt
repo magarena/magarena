@@ -1,5 +1,5 @@
 name=Crookshank Kobolds
-image=https://magiccards.info/scans/en/lg/220.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f51d9dde-536b-4314-8de1-2c05a9bf3dbc.jpg?1559592379
 value=3.852
 rarity=C
 type=Creature

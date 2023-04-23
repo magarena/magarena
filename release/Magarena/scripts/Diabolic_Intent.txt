@@ -1,5 +1,5 @@
 name=Diabolic Intent
-image=https://magiccards.info/scans/en/ps/42.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d72ab698-de67-4ca8-8e42-b05346bf52fa.jpg?1674420800
 value=4.299
 rarity=R
 type=Sorcery

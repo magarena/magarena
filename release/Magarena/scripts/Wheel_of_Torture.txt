@@ -1,5 +1,5 @@
 name=Wheel of Torture
-image=https://magiccards.info/scans/en/ul/138.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87edc873-169a-4cd3-8a94-84b5810b5ed8.jpg?1562863297
 value=3.612
 rarity=R
 type=Artifact

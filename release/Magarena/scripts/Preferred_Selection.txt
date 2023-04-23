@@ -1,5 +1,5 @@
 name=Preferred Selection
-image=https://magiccards.info/scans/en/mr/131.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59ce9668-78ef-44a5-ba9c-49fa740b8cb5.jpg?1562719281
 value=3.594
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Carapace
-image=https://magiccards.info/scans/en/5e/143.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/271c08b3-bb57-4626-8e2f-e09826018080.jpg?1562868054
 value=3.283
 rarity=C
 type=Enchantment

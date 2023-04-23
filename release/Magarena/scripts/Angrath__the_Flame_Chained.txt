@@ -1,5 +1,5 @@
 name=Angrath, the Flame-Chained
-image=https://magiccards.info/scans/en/rix/152.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4d76d03-4fcf-42f8-8c2e-ad6b03d58677.jpg?1555040781
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

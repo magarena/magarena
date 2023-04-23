@@ -1,5 +1,5 @@
 name=Quicksilver Behemoth
-image=https://magiccards.info/scans/en/ds/30.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/645bfe2d-845b-4cf3-88b6-b2b62b8531e4.jpg?1562637248
 value=2.288
 rarity=C
 type=Creature

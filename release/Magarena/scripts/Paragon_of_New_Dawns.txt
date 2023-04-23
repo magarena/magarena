@@ -1,5 +1,5 @@
 name=Paragon of New Dawns
-image=https://magiccards.info/scans/en/m15/23.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/361c66c3-b4eb-48aa-a967-255a8db60977.jpg?1562785094
 value=3.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Champion's Helm
-image=https://magiccards.info/scans/en/cmd/244.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcad6846-0b35-4193-b647-16e597357f9b.jpg?1592714398
 value=3.690
 rarity=R
 type=Artifact

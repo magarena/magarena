@@ -1,5 +1,5 @@
 name=Voice of All
-image=https://magiccards.info/scans/en/cmd/35.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/220feab0-b799-464e-b9bd-a47949067418.jpg?1592672472
 value=4.155
 rarity=R
 type=Creature

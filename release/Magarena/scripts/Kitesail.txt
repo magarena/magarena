@@ -1,5 +1,5 @@
 name=Kitesail
-image=https://magiccards.info/scans/en/cn2/212.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdc3bf6e-e011-4334-a142-c09941c6f213.jpg?1682205766
 image_updated=2017-08-29
 value=2.329
 rarity=C

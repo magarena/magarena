@@ -1,5 +1,5 @@
 name=Seal of Doom
-image=https://magiccards.info/scans/en/mm3/83.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3647ef4a-fbf3-4f64-8376-72c9247bbc22.jpg?1593813379
 image_updated=2017-08-08
 value=4.000
 removal=3

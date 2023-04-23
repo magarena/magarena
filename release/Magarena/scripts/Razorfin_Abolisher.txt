@@ -1,5 +1,5 @@
 name=Razorfin Abolisher
-image=https://magiccards.info/scans/en/eve/28.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed978036-c473-46d8-8302-3707d222aff5.jpg?1562945040
 value=2.959
 rarity=U
 type=Creature

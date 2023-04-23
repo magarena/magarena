@@ -1,5 +1,5 @@
 name=Guan Yu's 1,000-Li March
-image=https://magiccards.info/scans/en/p3k/7.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdb63900-b600-47ab-9f53-cd1441df31d2.jpg?1562938494
 value=3.000
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Tezzeret, Master of Metal
-image=https://magiccards.info/scans/en/aer/190.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7c6614c-cc2b-4e5b-9c0d-ce8e4b2d8ea7.jpg?1562946467
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

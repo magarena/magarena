@@ -1,5 +1,5 @@
 name=Nimble Obstructionist
-image=https://magiccards.info/scans/en/hou/40.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/832426d7-be22-4092-b614-7fa417af03bd.jpg?1591320329
 value=2.500
 rarity=R
 type=Creature

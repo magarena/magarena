@@ -1,5 +1,5 @@
 name=Observant Alseid
-image=https://magiccards.info/scans/en/ths/24.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1410d10-476a-4ed2-ae44-75383ed0e359.jpg?1562834593
 value=3.500
 rarity=C
 type=Enchantment,Creature

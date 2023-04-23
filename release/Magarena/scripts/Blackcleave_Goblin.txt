@@ -1,5 +1,5 @@
 name=Blackcleave Goblin
-image=https://magiccards.info/scans/en/som/54.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95986875-59f5-414f-867f-94f30cefa5d6.jpg?1562820574
 value=2.483
 rarity=C
 type=Creature

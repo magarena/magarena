@@ -1,5 +1,5 @@
 name=Flailing Drake
-image=https://magiccards.info/scans/en/tp/121.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43d246ac-1ca5-4c55-856c-4a83a4d638ab.jpg?1562053764
 value=1.259
 rarity=U
 type=Creature

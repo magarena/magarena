@@ -1,5 +1,5 @@
 name=Scalebane's Elite
-image=https://magiccards.info/scans/en/vi/135.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3bff610-783a-46b7-bd15-061da41027bb.jpg?1562278617
 value=3.042
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Three Visits
-image=https://magiccards.info/scans/en/p3k/153.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cad698c3-687e-4b73-88d2-fd0ac7d755c5.jpg?1674142387
 value=4.250
 rarity=C
 type=Sorcery

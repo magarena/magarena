@@ -1,5 +1,5 @@
 name=Thrashing Mudspawn
-image=https://magiccards.info/scans/en/on/177.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da84de0e-a4cd-4dff-8ee3-87c9debf0969.jpg?1562947056
 value=1.118
 rarity=U
 type=Creature

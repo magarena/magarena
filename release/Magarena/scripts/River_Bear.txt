@@ -1,5 +1,5 @@
 name=River Bear
-image=https://magiccards.info/scans/en/9e/266.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/518bf281-80bc-4e85-9b8e-15577dfcdec7.jpg?1562735181
 value=3.386
 rarity=U
 type=Creature

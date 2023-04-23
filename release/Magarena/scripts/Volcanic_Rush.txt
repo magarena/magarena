@@ -1,5 +1,5 @@
 name=Volcanic Rush
-image=https://magiccards.info/scans/en/dtk/166.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b808883-f630-4070-ab7e-d347e26a9564.jpg?1562788739
 value=2.500
 rarity=C
 type=Instant

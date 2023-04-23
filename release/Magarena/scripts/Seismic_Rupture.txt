@@ -1,5 +1,5 @@
 name=Seismic Rupture
-image=https://magiccards.info/scans/en/dtk/156.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b952e4e-c1ed-4455-90d5-46b56478e6b0.jpg?1562790481
 value=2.500
 rarity=U
 type=Sorcery

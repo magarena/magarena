@@ -1,5 +1,5 @@
 name=Revive the Fallen
-image=https://magiccards.info/scans/en/mt/76.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b0aa3c8-9e11-4917-956b-35b77a100761.jpg?1562879898
 value=3.044
 rarity=U
 type=Sorcery

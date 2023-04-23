@@ -1,5 +1,5 @@
 name=Heroes' Podium
-image=https://magiccards.info/scans/en/bng/159.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b2bee5c-7ea0-4713-a60b-dccaf89c5d48.jpg?1673305808
 value=2.829
 rarity=R
 type=Legendary,Artifact

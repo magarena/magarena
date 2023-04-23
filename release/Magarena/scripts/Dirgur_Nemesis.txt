@@ -1,5 +1,5 @@
 name=Dirgur Nemesis
-image=https://magiccards.info/scans/en/dtk/51.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54c388de-c2c9-4975-9eac-86a8030a9884.jpg?1562786421
 value=2.500
 rarity=C
 type=Creature

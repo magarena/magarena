@@ -1,5 +1,5 @@
 name=Volcanic Fallout
-image=https://magiccards.info/scans/en/cns/157.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6109c345-ce73-44b6-9228-5c4882764fab.jpg?1608912304
 value=4.500
 removal=2
 rarity=U

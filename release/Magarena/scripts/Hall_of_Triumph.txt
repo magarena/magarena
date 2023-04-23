@@ -1,5 +1,5 @@
 name=Hall of Triumph
-image=https://magiccards.info/scans/en/jou/162.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/634fd988-5d5c-4637-b7fd-05a41798ead8.jpg?1593096527
 value=3.778
 rarity=R
 type=Legendary,Artifact

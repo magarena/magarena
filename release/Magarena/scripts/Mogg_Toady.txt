@@ -1,5 +1,5 @@
 name=Mogg Toady
-image=https://magiccards.info/scans/en/ne/95.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee8edaf6-d46e-4efb-8bc0-ec11e06eb499.jpg?1562632723
 value=1.860
 rarity=C
 type=Creature

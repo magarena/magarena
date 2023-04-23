@@ -1,5 +1,5 @@
 name=Boiling Seas
-image=https://magiccards.info/scans/en/9e/178.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d08ff26e-c561-4b55-9745-50f896689d0d.jpg?1562742033
 value=3.816
 rarity=U
 type=Sorcery

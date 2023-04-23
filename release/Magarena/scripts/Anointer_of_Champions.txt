@@ -1,5 +1,5 @@
 name=Anointer of Champions
-image=https://magiccards.info/scans/en/ori/3.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3379dc97-abdf-43d7-8625-f8ac04b5687e.jpg?1592765240
 image_updated=2015-11-05
 value=2.500
 rarity=U

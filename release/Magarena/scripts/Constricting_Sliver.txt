@@ -1,5 +1,5 @@
 name=Constricting Sliver
-image=https://magiccards.info/scans/en/m15/7.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae9b4111-ca9f-435b-81c4-0abf65d1384b.jpg?1562792737
 value=3.688
 rarity=U
 type=Creature

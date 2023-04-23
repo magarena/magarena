@@ -1,5 +1,5 @@
 name=Tectonic Rift
-image=https://magiccards.info/scans/en/m19/162.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abf90bd1-fa00-4af6-aa76-bd6fca7b0ac4.jpg?1592517123
 image_updated=2018-08-07
 value=3.062
 rarity=U

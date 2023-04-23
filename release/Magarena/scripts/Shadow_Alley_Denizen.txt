@@ -1,5 +1,5 @@
 name=Shadow Alley Denizen
-image=https://magiccards.info/scans/en/gtc/76.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e90dd639-be14-41e1-918c-4ce6af2d84f8.jpg?1592754640
 value=3.654
 rarity=C
 type=Creature

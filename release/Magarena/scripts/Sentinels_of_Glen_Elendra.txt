@@ -1,5 +1,5 @@
 name=Sentinels of Glen Elendra
-image=https://magiccards.info/scans/en/lw/84.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f48daf7e-2f8e-4179-a145-a6b36dd11d44.jpg?1562374648
 value=2.817
 rarity=C
 type=Creature

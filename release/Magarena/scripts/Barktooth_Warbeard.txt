@@ -1,5 +1,5 @@
 name=Barktooth Warbeard
-image=https://magiccards.info/scans/en/lg/261.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bffbda3c-61c0-421d-a724-6bb9a7005c0f.jpg?1562935606
 value=2.149
 rarity=U
 type=Legendary,Creature

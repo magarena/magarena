@@ -1,5 +1,5 @@
 name=Millstone
-image=https://magiccards.info/scans/en/m19/242.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2051fd0-99cf-4e11-a625-8294e6767e5b.jpg?1562304298
 image_updated=2018-08-07
 value=3.635
 rarity=U

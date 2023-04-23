@@ -1,5 +1,5 @@
 name=Otherworldly Journey
-image=https://magiccards.info/scans/en/mm2/30.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cd220e4-2e2a-437e-aa4e-1007247c8e4d.jpg?1562263023
 value=2.500
 rarity=C
 type=Instant

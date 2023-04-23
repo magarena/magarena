@@ -1,5 +1,5 @@
 name=Helm of Kaldra
-image=https://magiccards.info/scans/en/5dn/131.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f76514aa-3cc1-4d5f-ba33-d933a36920a4.jpg?1562880773
 value=4.018
 rarity=R
 type=Legendary,Artifact

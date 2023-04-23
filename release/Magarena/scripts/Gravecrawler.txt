@@ -1,5 +1,5 @@
 name=Gravecrawler
-image=https://magiccards.info/scans/en/dka/64.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/951ff2ed-9af0-4551-929a-ba6679fc2e15.jpg?1673147536
 value=4.318
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Nightsoil Kami
-image=https://magiccards.info/scans/en/sok/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5902f863-171e-4bb2-9d48-2c679d41f1a9.jpg?1562494137
 value=2.481
 rarity=C
 type=Creature

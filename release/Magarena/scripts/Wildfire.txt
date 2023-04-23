@@ -1,5 +1,5 @@
 name=Wildfire
-image=https://magiccards.info/scans/en/mm2/134.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5924430-1904-47b9-bcf0-3379babd395c.jpg?1562266957
 value=4.029
 rarity=R
 type=Sorcery

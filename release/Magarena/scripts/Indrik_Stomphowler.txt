@@ -1,5 +1,5 @@
 name=Indrik Stomphowler
-image=https://magiccards.info/scans/en/di/86.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fa77af1-96e1-445b-a935-a5eb4c23e954.jpg?1673484648
 image_updated=2016-02-29
 value=3.930
 rarity=U

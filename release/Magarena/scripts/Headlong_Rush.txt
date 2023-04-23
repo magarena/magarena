@@ -1,5 +1,5 @@
 name=Headlong Rush
-image=https://magiccards.info/scans/en/us/198.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f0db04c-5101-4a43-9109-3964ac66bdab.jpg?1562928609
 value=3.226
 rarity=C
 type=Instant

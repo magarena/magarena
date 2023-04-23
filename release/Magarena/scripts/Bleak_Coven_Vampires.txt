@@ -1,5 +1,5 @@
 name=Bleak Coven Vampires
-image=https://magiccards.info/scans/en/som/55.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d3386e4-bbd6-4756-b29d-f55619e98d0d.jpg?1562820948
 value=2.692
 rarity=C
 type=Creature

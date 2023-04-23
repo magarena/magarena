@@ -1,5 +1,5 @@
 name=Steadfast Sentinel
-image=https://magiccards.info/scans/en/hou/24.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/707a30d2-0fca-4b39-91fb-9b03152705ba.jpg?1562803154
 value=2.500
 rarity=C
 type=Creature

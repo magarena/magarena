@@ -1,5 +1,5 @@
 name=Karakas
-image=https://magiccards.info/scans/en/ema/240.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e52214e1-404a-405a-b08e-20e13c087338.jpg?1559959289
 value=4.570
 rarity=M
 type=Legendary,Land

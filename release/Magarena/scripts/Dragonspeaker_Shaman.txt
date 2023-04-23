@@ -1,5 +1,5 @@
 name=Dragonspeaker Shaman
-image=https://magiccards.info/scans/en/c17/136.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b0a2799-197e-4d61-ab23-67d974458a05.jpg?1631590611
 image_updated=2017-10-03
 value=4.218
 rarity=U

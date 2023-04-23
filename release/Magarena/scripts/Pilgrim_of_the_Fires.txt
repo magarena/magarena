@@ -1,5 +1,5 @@
 name=Pilgrim of the Fires
-image=https://magiccards.info/scans/en/frf/162.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45a60623-d523-4b43-89b0-8e89568546c7.jpg?1562824716
 value=2.500
 rarity=U
 type=Artifact,Creature

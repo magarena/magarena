@@ -1,5 +1,5 @@
 name=King Crab
-image=https://magiccards.info/scans/en/ul/34.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aedea953-b5f1-4ec7-bd9f-b7827f9d40fe.jpg?1562863786
 value=3.719
 rarity=U
 type=Creature

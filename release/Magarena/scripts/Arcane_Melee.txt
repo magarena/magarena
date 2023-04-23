@@ -1,5 +1,5 @@
 name=Arcane Melee
-image=https://magiccards.info/scans/en/avr/44.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ea8fd24-311a-4745-804e-46b2abbe217a.jpg?1562928493
 value=3.733
 rarity=R
 type=Enchantment

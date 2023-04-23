@@ -1,5 +1,5 @@
 name=Canopy Claws
-image=https://magiccards.info/scans/en/ju/108.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4530da2-fd04-40d9-ad69-5c2847921509.jpg?1562631882
 value=2.367
 rarity=C
 type=Instant

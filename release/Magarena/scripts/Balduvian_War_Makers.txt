@@ -1,5 +1,5 @@
 name=Balduvian War-Makers
-image=https://magiccards.info/scans/en/ai/97.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12fd561e-6a26-4140-a033-1204f5dda5f3.jpg?1562767778
 value=2.438
 rarity=C
 type=Creature

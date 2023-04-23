@@ -1,5 +1,5 @@
 name=Ghave, Guru of Spores
-image=https://magiccards.info/scans/en/c16/200.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2be0e99-cf43-423f-974f-02e3313b3aa9.jpg?1673148645
 image_updated=2017-08-17
 value=4.004
 rarity=M

@@ -1,5 +1,5 @@
 name=Crushing Vines
-image=https://magiccards.info/scans/en/dka/110.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7adf3cb-2834-49fc-bdd0-9b939a20915c.jpg?1613437218
 value=3.516
 rarity=C
 type=Instant

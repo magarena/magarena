@@ -1,5 +1,5 @@
 name=Highspire Infusion
-image=https://magiccards.info/scans/en/aer/111.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08325c39-0eeb-4bd0-9adc-2892c1c6637e.jpg?1576381996
 value=2.500
 rarity=C
 type=Instant

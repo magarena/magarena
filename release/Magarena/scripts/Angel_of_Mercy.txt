@@ -1,5 +1,5 @@
 name=Angel of Mercy
-image=https://magiccards.info/scans/en/ima/6.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d22fdde-5590-4a4c-af2e-09711f4b5ffd.jpg?1600695833
 image_updated=2017-04-12
 value=2.833
 rarity=C

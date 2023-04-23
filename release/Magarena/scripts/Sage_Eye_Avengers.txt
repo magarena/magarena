@@ -1,5 +1,5 @@
 name=Sage-Eye Avengers
-image=https://magiccards.info/scans/en/frf/50.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/026e33ed-2f2d-4345-8a89-58c9f2f6c727.jpg?1592761549
 value=2.500
 rarity=R
 type=Creature

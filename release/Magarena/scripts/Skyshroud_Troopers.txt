@@ -1,5 +1,5 @@
 name=Skyshroud Troopers
-image=https://magiccards.info/scans/en/sh/65.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5197937-023c-412c-bf2c-b8e811ca04e1.jpg?1562597379
 value=2.338
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Herald of the Pantheon
-image=https://magiccards.info/scans/en/ori/180.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c344783-63ca-42d0-9cba-aaaa1bc3b622.jpg?1592710930
 image_updated=2015-11-05
 value=2.500
 rarity=R

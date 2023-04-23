@@ -1,5 +1,5 @@
 name=Vitu-Ghazi Guildmage
-image=https://magiccards.info/scans/en/rtr/207.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/275a3199-1297-4281-a95c-374bcdc198ce.jpg?1568004846
 value=3.757
 rarity=U
 type=Creature

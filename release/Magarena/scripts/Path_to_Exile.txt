@@ -1,5 +1,5 @@
 name=Path to Exile
-image=https://magiccards.info/scans/en/mm3/17.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c3a6ce7-1ec7-414f-b6bb-cc604c6d529c.jpg?1682208534
 image_updated=2017-08-08
 value=4.300
 removal=5

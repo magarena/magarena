@@ -1,5 +1,5 @@
 name=Yuan Shao's Infantry
-image=https://magiccards.info/scans/en/p3k/129.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2623481-cee3-4a9d-933b-235fcde9a27b.jpg?1562257508
 value=2.688
 rarity=U
 type=Creature

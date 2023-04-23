@@ -1,5 +1,5 @@
 name=Elite Vanguard
-image=https://magiccards.info/scans/en/ema/8.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28a5c350-2ed1-4a25-9626-0f8da5d1aef7.jpg?1580013650
 value=4.030
 rarity=C
 type=Creature

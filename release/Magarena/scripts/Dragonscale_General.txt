@@ -1,5 +1,5 @@
 name=Dragonscale General
-image=https://magiccards.info/scans/en/frf/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df904cc6-3ee0-4326-a854-818695aa2890.jpg?1562830676
 value=2.500
 rarity=R
 type=Creature

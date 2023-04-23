@@ -1,5 +1,5 @@
 name=Oran-Rief Recluse
-image=https://magiccards.info/scans/en/zen/173.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50032356-0eb1-4044-9843-d9b5d664b20e.jpg?1592754716
 value=2.917
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Weirded Vampire
-image=https://magiccards.info/scans/en/emn/113.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb5234ac-e308-417d-96b0-d860f3186e6b.jpg?1576384483
 image_updated=2016-09-05
 value=2.500
 rarity=C

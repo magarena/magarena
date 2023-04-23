@@ -1,5 +1,5 @@
 name=Hostile Realm
-image=https://magiccards.info/scans/en/mt/91.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e172b353-7a16-4831-b735-206230b22e59.jpg?1562882006
 value=2.111
 rarity=C
 type=Enchantment

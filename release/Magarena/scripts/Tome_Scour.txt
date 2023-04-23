@@ -1,5 +1,5 @@
 name=Tome Scour
-image=https://magiccards.info/scans/en/m11/76.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aed4cfec-5cea-4987-890e-825b2802e9f9.jpg?1562833832
 value=3.312
 rarity=C
 type=Sorcery

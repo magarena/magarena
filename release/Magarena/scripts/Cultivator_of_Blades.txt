@@ -1,5 +1,5 @@
 name=Cultivator of Blades
-image=https://magiccards.info/scans/en/kld/151.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2e6e8a1-2e69-43de-964d-72f722439d4a.jpg?1631234753
 image_updated=2016-10-05
 value=2.500
 rarity=R

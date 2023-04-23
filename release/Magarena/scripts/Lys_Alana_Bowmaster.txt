@@ -1,5 +1,5 @@
 name=Lys Alana Bowmaster
-image=https://magiccards.info/scans/en/mt/130.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3888e2f0-223b-4509-8071-fe1b87a65b72.jpg?1608910787
 value=2.917
 rarity=C
 type=Creature

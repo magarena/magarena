@@ -1,5 +1,5 @@
 name=Stratadon
-image=https://magiccards.info/scans/en/ps/135.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/324bc757-9942-4862-b691-5af42e07f682.jpg?1562905516
 value=3.250
 rarity=U
 type=Artifact,Creature

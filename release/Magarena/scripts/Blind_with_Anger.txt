@@ -1,5 +1,5 @@
 name=Blind with Anger
-image=https://magiccards.info/scans/en/chk/158.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a50a0fe0-249d-4a88-a538-cdf622388ce2.jpg?1562763435
 value=3.300
 rarity=U
 type=Instant

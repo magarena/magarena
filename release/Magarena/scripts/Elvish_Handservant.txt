@@ -1,5 +1,5 @@
 name=Elvish Handservant
-image=https://magiccards.info/scans/en/lw/206.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9854f9a9-160c-4c96-b871-0f85914597d0.jpg?1562359329
 value=2.364
 rarity=C
 type=Creature

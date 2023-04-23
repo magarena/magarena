@@ -1,5 +1,5 @@
 name=Kitesail Corsair
-image=https://magiccards.info/scans/en/rix/41.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/4534ffdd-9965-4e55-9c25-04123720cbba.jpg?1608909275
 value=2.500
 rarity=C
 type=Creature

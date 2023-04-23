@@ -1,5 +1,5 @@
 name=Delusions of Mediocrity
-image=https://magiccards.info/scans/en/7e/70.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab43fba7-699e-4bb5-ab3e-b5b1c290340c.jpg?1562245351
 value=3.712
 rarity=R
 type=Enchantment

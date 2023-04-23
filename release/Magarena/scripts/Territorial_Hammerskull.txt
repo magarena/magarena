@@ -1,5 +1,5 @@
 name=Territorial Hammerskull
-image=https://magiccards.info/scans/en/xln/41.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af5a237a-31e7-43ee-8d47-3eb12dd1a60c.jpg?1562562190
 value=2.500
 rarity=C
 type=Creature

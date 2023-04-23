@@ -1,5 +1,5 @@
 name=Mind's Eye
-image=https://magiccards.info/scans/en/mi/205.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a0e1ef4-fdb1-42bd-8e46-ba84cf850939.jpg?1562913300
 image_updated=2016-12-23
 value=4.109
 rarity=R

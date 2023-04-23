@@ -1,5 +1,5 @@
 name=Mystic Veil
-image=https://magiccards.info/scans/en/vi/38.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7ddb640d-5c54-4d0a-b8c2-e22fe04f96c2.jpg?1562278135
 value=3.485
 rarity=C
 type=Enchantment

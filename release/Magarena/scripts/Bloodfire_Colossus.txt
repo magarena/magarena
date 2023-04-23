@@ -1,5 +1,5 @@
 name=Bloodfire Colossus
-image=https://magiccards.info/scans/en/10e/191.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/088f00a5-95b5-4892-9572-9e022b0eb01f.jpg?1581708568
 image_updated=2016-11-20
 value=3.975
 rarity=R

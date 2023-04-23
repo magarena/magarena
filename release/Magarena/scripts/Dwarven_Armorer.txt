@@ -1,5 +1,5 @@
 name=Dwarven Armorer
-image=https://magiccards.info/scans/en/fe/104.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d50bf06-97ab-4874-a484-9289f41dc98e.jpg?1587910946
 value=2.671
 rarity=R
 type=Creature

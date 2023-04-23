@@ -1,5 +1,5 @@
 name=Iron Star
-image=https://magiccards.info/scans/en/8e/304.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec6d1e6b-80af-4eb1-be3c-62ab74315777.jpg?1562942496
 value=1.330
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Winds of Change
-image=https://magiccards.info/scans/en/po/162.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f09e393-7318-43eb-95f8-0f2797a771d7.jpg?1559592469
 value=3.809
 rarity=R
 type=Sorcery

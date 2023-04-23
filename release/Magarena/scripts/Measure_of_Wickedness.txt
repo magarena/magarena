@@ -1,5 +1,5 @@
 name=Measure of Wickedness
-image=https://magiccards.info/scans/en/sok/82.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34d6776c-f286-4b43-8f5f-d70b5585e635.jpg?1562493445
 value=3.852
 rarity=U
 type=Enchantment

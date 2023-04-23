@@ -1,5 +1,5 @@
 name=Dismiss
-image=https://magiccards.info/scans/en/cn2/108.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95b57eec-ecb3-408c-b938-7d3a34602cc5.jpg?1576382408
 image_updated=2017-08-29
 value=4.361
 rarity=U

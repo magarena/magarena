@@ -1,5 +1,5 @@
 name=Ember Hauler
-image=https://magiccards.info/scans/en/m11/135.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/159d476e-2f20-4f9b-adfd-9c541dc3e199.jpg?1592516919
 value=3.972
 rarity=U
 type=Creature

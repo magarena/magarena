@@ -1,5 +1,5 @@
 name=Fan Bearer
-image=https://magiccards.info/scans/en/akh/12.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f587d8d-1bef-4e4b-9b94-94c0ae11bc8f.jpg?1592764716
 value=2.500
 rarity=C
 type=Creature

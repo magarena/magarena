@@ -1,5 +1,5 @@
 name=Psychic Vortex
-image=https://magiccards.info/scans/en/wl/50.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bc2a419-7122-4eeb-bb64-738a647cfd82.jpg?1562800323
 value=3.767
 rarity=R
 type=Enchantment

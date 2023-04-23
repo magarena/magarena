@@ -1,5 +1,5 @@
 name=Frost Giant
-image=https://magiccards.info/scans/en/lg/146.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a742bfa4-3730-4bfd-865c-92fb4b40f2f2.jpg?1562930228
 value=2.640
 rarity=U
 type=Creature

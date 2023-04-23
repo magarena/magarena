@@ -1,5 +1,5 @@
 name=Mindless Automaton
-image=https://magiccards.info/scans/en/ema/227.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db51ea5c-762f-4c60-9cf5-9c9fe5270f65.jpg?1682210098
 value=3.691
 rarity=U
 type=Artifact,Creature

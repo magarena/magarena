@@ -1,5 +1,5 @@
 name=Consuming Aberration
-image=https://magiccards.info/scans/en/c16/189.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/464dbaf6-8430-45af-b982-9099e6c6e8a7.jpg?1674142416
 image_updated=2017-08-17
 value=4.050
 rarity=R

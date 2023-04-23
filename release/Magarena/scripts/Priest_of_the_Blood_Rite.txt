@@ -1,5 +1,5 @@
 name=Priest of the Blood Rite
-image=https://magiccards.info/scans/en/ori/112.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a0df50f-59b8-46b6-8bac-6e3f93b9c979.jpg?1562229653
 image_updated=2015-11-05
 value=2.500
 rarity=R

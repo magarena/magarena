@@ -1,5 +1,5 @@
 name=Nantuko Mentor
-image=https://magiccards.info/scans/en/od/255.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48cb5283-d384-490e-a0a5-2d10c1acc8cc.jpg?1562908287
 value=3.371
 rarity=R
 type=Creature

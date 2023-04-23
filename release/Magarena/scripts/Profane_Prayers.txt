@@ -1,5 +1,5 @@
 name=Profane Prayers
-image=https://magiccards.info/scans/en/on/162.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc8320ef-af97-4cf6-9aaf-17818174d842.jpg?1562939500
 value=2.820
 rarity=C
 type=Sorcery

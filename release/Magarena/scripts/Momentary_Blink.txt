@@ -1,5 +1,5 @@
 name=Momentary Blink
-image=https://magiccards.info/scans/en/mm3/16.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fa0d1c6-9110-4956-97eb-e18c457bb130.jpg?1673147048
 image_updated=2017-08-08
 value=4.189
 rarity=C

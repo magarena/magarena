@@ -1,5 +1,5 @@
 name=Kamahl, Fist of Krosa
-image=https://magiccards.info/scans/en/on/268.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97ab4974-d0a4-4033-b150-8928b46dc626.jpg?1562927121
 image_updated=2016-12-21
 value=4.317
 rarity=R

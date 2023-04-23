@@ -1,5 +1,5 @@
 name=Tobita, Master of Winds
-image=https://magiccards.info/scans/en/chk/93b.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9de1eebf-5725-438c-bcf0-f3a4d8a89fb0.jpg?1562762993
 value=3.390
 rarity=U
 type=Legendary,Creature

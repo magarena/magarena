@@ -1,5 +1,5 @@
 name=Temporal Adept
-image=https://magiccards.info/scans/en/9e/102.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0ff2dfe6-dbc0-46c3-9d5c-9f0ba6f511ec.jpg?1562731471
 value=4.100
 rarity=R
 type=Creature

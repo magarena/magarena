@@ -1,5 +1,5 @@
 name=Reduce to Ashes
-image=https://magiccards.info/scans/en/soi/176.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe580883-cdb1-4783-9feb-1e3bea83d209.jpg?1592517056
 value=2.500
 rarity=C
 type=Sorcery

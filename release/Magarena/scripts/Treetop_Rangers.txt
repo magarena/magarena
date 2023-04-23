@@ -1,5 +1,5 @@
 name=Treetop Rangers
-image=https://magiccards.info/scans/en/us/279.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33f1a343-250b-4a30-a3b5-296282a70446.jpg?1562905946
 value=3.580
 rarity=C
 type=Creature

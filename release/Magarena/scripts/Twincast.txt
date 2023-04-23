@@ -1,5 +1,5 @@
 name=Twincast
-image=https://magiccards.info/scans/en/m10/78.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f38eec33-a40e-4739-ad2c-2f57008cef4e.jpg?1562001453
 value=4.210
 rarity=R
 type=Instant

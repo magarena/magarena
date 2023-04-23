@@ -1,5 +1,5 @@
 name=Shinka, the Bloodsoaked Keep
-image=https://magiccards.info/scans/en/chk/282.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2d5f30e-cc3a-46c1-82a9-2cd73705b2f5.jpg?1562764666
 value=4.009
 rarity=R
 type=Legendary,Land

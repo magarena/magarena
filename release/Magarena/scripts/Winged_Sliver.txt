@@ -1,5 +1,5 @@
 name=Winged Sliver
-image=https://magiccards.info/scans/en/tp/106.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/044fcfb2-14ad-44c8-8ce6-8f939c3a5063.jpg?1562428166
 value=4.410
 rarity=C
 type=Creature

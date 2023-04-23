@@ -1,5 +1,5 @@
 name=Sea Eagle
-image=https://magiccards.info/scans/en/8eb/4.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e8cacd1-51e7-48af-a7ae-48832dc34a92.jpg?1562920543
 image_updated=2015-05-22
 value=1.179
 rarity=C

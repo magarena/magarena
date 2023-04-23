@@ -1,5 +1,5 @@
 name=Goblin Sharpshooter
-image=https://magiccards.info/scans/en/on/207.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f72e9e2-ed47-40ff-bc2e-8446ef545022.jpg?1562911635
 value=4.417
 rarity=R
 type=Creature

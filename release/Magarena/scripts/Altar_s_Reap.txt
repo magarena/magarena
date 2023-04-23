@@ -1,5 +1,5 @@
 name=Altar's Reap
-image=https://magiccards.info/scans/en/cn2/127.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1db55625-25a5-46eb-9d9c-9b3ed219359f.jpg?1592672573
 image_updated=2017-08-29
 value=3.917
 rarity=C

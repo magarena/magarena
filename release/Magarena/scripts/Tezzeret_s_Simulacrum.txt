@@ -1,5 +1,5 @@
 name=Tezzeret's Simulacrum
-image=https://magiccards.info/scans/en/aer/193.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7eacfeec-a341-45bc-bf95-e3df0094505a.jpg?1562924865
 value=2.500
 rarity=U
 type=Artifact,Creature

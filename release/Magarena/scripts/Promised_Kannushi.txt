@@ -1,5 +1,5 @@
 name=Promised Kannushi
-image=https://magiccards.info/scans/en/sok/141.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7aac4236-9573-4cff-88d9-711a56da4346.jpg?1562494665
 value=3.531
 rarity=C
 type=Creature

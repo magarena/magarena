@@ -1,5 +1,5 @@
 name=Gate to Phyrexia
-image=https://magiccards.info/scans/en/aq/46.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eb41639-b96b-4789-b488-24da503ef1e2.jpg?1562913465
 value=3.905
 rarity=U
 type=Enchantment

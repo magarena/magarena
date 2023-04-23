@@ -1,5 +1,5 @@
 name=Stallion of Ashmouth
-image=https://magiccards.info/scans/en/soi/136.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b465a5d-3ce4-4c96-a3f3-4ad9716946c4.jpg?1576384594
 value=2.500
 rarity=C
 type=Creature

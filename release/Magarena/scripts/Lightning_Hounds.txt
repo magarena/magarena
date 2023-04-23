@@ -1,5 +1,5 @@
 name=Lightning Hounds
-image=https://magiccards.info/scans/en/mm/201.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38c82a1d-5db1-4090-b446-cc5bc6dc811d.jpg?1562379929
 value=3.160
 rarity=C
 type=Creature

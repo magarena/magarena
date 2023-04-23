@@ -1,5 +1,5 @@
 name=Cavalry Pegasus
-image=https://magiccards.info/scans/en/ths/2.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c552cb9e-41f2-4006-8ff4-5e214b91652e.jpg?1591319945
 value=3.342
 rarity=C
 type=Creature

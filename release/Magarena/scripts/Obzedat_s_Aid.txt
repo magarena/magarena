@@ -1,5 +1,5 @@
 name=Obzedat's Aid
-image=https://magiccards.info/scans/en/dgm/89.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b846ba99-81ba-424a-98eb-f9f69c40f984.jpg?1562929296
 value=3.812
 rarity=R
 type=Sorcery

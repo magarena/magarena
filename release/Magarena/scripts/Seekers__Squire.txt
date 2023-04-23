@@ -1,5 +1,5 @@
 name=Seekers' Squire
-image=https://magiccards.info/scans/en/xln/121.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30573211-ba4d-41c7-a3cd-283aaf04dffb.jpg?1673147612
 value=2.500
 rarity=U
 type=Creature

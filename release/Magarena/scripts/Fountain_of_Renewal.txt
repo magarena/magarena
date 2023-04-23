@@ -1,5 +1,5 @@
 name=Fountain of Renewal
-image=https://magiccards.info/scans/en/m19/235.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26894980-8961-4479-85dd-5f01c899718b.jpg?1562300814
 value=2.500
 rarity=U
 type=Artifact

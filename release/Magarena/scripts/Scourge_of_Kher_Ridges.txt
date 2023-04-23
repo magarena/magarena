@@ -1,5 +1,5 @@
 name=Scourge of Kher Ridges
-image=https://magiccards.info/scans/en/fut/107.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bede410a-8b5c-48c0-8f5d-d8bd17e0b86b.jpg?1562933389
 value=4.190
 rarity=R
 type=Creature

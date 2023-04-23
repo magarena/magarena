@@ -1,5 +1,5 @@
 name=Emberstrike Duo
-image=https://magiccards.info/scans/en/shm/185.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9ccd4374-5339-4529-99f3-f7dcc939e874.jpg?1562833767
 value=2.667
 rarity=C
 type=Creature

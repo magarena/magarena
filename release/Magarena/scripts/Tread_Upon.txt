@@ -1,5 +1,5 @@
 name=Tread Upon
-image=https://magiccards.info/scans/en/dtk/211.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87f04d27-f38a-4be2-8eb6-7dd0d3a1ac6d.jpg?1562789408
 value=2.500
 rarity=C
 type=Instant

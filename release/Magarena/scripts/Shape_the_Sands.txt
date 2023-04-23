@@ -1,5 +1,5 @@
 name=Shape the Sands
-image=https://magiccards.info/scans/en/dtk/205.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0243dde4-29c9-4e47-9129-8e01296851cc.jpg?1562781846
 value=2.500
 rarity=C
 type=Instant

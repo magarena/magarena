@@ -1,5 +1,5 @@
 name=Myr Galvanizer
-image=https://magiccards.info/scans/en/som/181.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e55ca835-b7f3-497c-b0bc-50a182cabecf.jpg?1562824350
 value=4.173
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Goblin Replica
-image=https://magiccards.info/scans/en/mi/178.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63282976-e08d-4b8c-bbfc-f6739fdaeaf9.jpg?1562145936
 value=2.488
 rarity=C
 type=Artifact,Creature

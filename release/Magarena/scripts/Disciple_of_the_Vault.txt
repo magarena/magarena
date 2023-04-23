@@ -1,5 +1,5 @@
 name=Disciple of the Vault
-image=https://magiccards.info/scans/en/mi/62.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c539843-4e3f-47a7-92e1-412eaaa2d9c5.jpg?1646666263
 value=4.570
 rarity=C
 type=Creature

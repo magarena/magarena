@@ -1,5 +1,5 @@
 name=Falkenrath Marauders
-image=https://magiccards.info/scans/en/isd/141.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9c09887-6d2b-48b4-a483-16b8a45babd0.jpg?1562836114
 value=3.856
 rarity=R
 type=Creature

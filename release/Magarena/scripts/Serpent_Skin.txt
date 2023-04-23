@@ -1,5 +1,5 @@
 name=Serpent Skin
-image=https://magiccards.info/scans/en/chk/240.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c5722d9-d1a4-4ad2-bf85-db666d4a30d9.jpg?1562762476
 value=3.014
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Restore Balance
-image=https://magiccards.info/scans/en/ts/38.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0febc7fe-4172-4285-9804-a62ce4506c39.jpg?1619393357
 value=2.890
 rarity=R
 type=Sorcery

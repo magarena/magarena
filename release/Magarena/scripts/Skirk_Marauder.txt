@@ -1,5 +1,5 @@
 name=Skirk Marauder
-image=https://magiccards.info/scans/en/le/113.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0a0cc70-ac86-4e52-a785-6209cbec29dc.jpg?1562932279
 image_updated=2017-01-08
 value=3.500
 rarity=C

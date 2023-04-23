@@ -1,5 +1,5 @@
 name=Arcbound Fiend
-image=https://magiccards.info/scans/en/ds/96.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/408f42ae-fb83-4c8a-8638-38c719dec197.jpg?1562636481
 value=3.756
 rarity=U
 type=Artifact,Creature

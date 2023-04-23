@@ -1,5 +1,5 @@
 name=Harsh Sustenance
-image=https://magiccards.info/scans/en/frf/154.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/770d60a0-23fc-4224-873c-2e5549b3a816.jpg?1562826633
 value=2.500
 rarity=C
 type=Instant

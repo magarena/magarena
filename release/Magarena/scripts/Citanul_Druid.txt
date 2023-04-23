@@ -1,5 +1,5 @@
 name=Citanul Druid
-image=https://magiccards.info/scans/en/aq/61.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d6c1b0a-3fb9-426e-b3ed-f5d8d1096a51.jpg?1562905615
 value=3.435
 rarity=U
 type=Creature

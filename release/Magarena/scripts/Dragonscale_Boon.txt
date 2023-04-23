@@ -1,5 +1,5 @@
 name=Dragonscale Boon
-image=https://magiccards.info/scans/en/ktk/131.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aadb382-f912-4ccb-98bc-1abdef733126.jpg?1562787056
 value=3.000
 rarity=C
 type=Instant

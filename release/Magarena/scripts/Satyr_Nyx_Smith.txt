@@ -1,5 +1,5 @@
 name=Satyr Nyx-Smith
-image=https://magiccards.info/scans/en/bng/109.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bc2c65e-3cba-4813-9949-87e15f592247.jpg?1593092351
 value=3.659
 rarity=U
 type=Creature

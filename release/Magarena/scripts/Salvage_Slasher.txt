@@ -1,5 +1,5 @@
 name=Salvage Slasher
-image=https://magiccards.info/scans/en/cfx/52.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/095b0fd1-7445-4dba-bb90-ddd5f5ee8573.jpg?1562799273
 value=2.950
 rarity=C
 type=Artifact,Creature

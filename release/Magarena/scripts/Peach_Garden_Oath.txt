@@ -1,5 +1,5 @@
 name=Peach Garden Oath
-image=https://magiccards.info/scans/en/8e/34.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66525fe9-8a84-474f-84ec-eb64f2f7bf11.jpg?1562916397
 value=3.591
 rarity=U
 type=Sorcery

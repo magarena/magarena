@@ -1,5 +1,5 @@
 name=Thopter Squadron
-image=https://magiccards.info/scans/en/ex/140.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fd13ac2-9642-4d59-a5c6-cc13c86991f0.jpg?1562429819
 value=2.500
 rarity=R
 type=Artifact,Creature

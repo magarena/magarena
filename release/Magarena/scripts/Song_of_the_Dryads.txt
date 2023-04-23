@@ -1,5 +1,5 @@
 name=Song of the Dryads
-image=https://magiccards.info/scans/en/c14/47.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0ccb4579-b090-45f6-a967-cec2c195f565.jpg?1592673193
 value=2.500
 rarity=R
 type=Enchantment

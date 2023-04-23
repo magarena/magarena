@@ -1,5 +1,5 @@
 name=Intimidator Initiate
-image=https://magiccards.info/scans/en/shm/96.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c19dd557-dd49-450d-8446-71ce351d4f52.jpg?1562835543
 value=3.048
 rarity=C
 type=Creature

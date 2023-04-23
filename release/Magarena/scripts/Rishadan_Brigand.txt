@@ -1,5 +1,5 @@
 name=Rishadan Brigand
-image=https://magiccards.info/scans/en/mm/92.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6efb653-97d8-4bc7-af8f-0b09fda655ff.jpg?1562382092
 value=3.750
 rarity=R
 type=Creature

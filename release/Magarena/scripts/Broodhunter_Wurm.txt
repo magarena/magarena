@@ -1,5 +1,5 @@
 name=Broodhunter Wurm
-image=https://magiccards.info/scans/en/bfz/171.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c11c852d-9c7c-4d9b-8e79-70ea5ac865df.jpg?1562940574
 image_updated=2015-11-08
 value=2.500
 rarity=C

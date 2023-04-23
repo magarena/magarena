@@ -1,5 +1,5 @@
 name=Silverclad Ferocidons
-image=https://magiccards.info/scans/en/rix/115.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f0d0c8d-c057-4a44-bd1e-38e1dd175778.jpg?1555040533
 value=2.500
 rarity=R
 type=Creature

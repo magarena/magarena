@@ -1,5 +1,5 @@
 name=Titan of Eternal Fire
-image=https://magiccards.info/scans/en/ths/144.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa82067a-21af-4f2b-b5e6-9bf3c452d0a9.jpg?1591320731
 value=3.388
 rarity=R
 type=Creature

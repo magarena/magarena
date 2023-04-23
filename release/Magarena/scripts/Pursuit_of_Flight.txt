@@ -1,5 +1,5 @@
 name=Pursuit of Flight
-image=https://magiccards.info/scans/en/rtr/102.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37a6290c-a0a8-4032-972b-84a7eef04dae.jpg?1562784875
 value=2.500
 rarity=C
 type=Enchantment

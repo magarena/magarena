@@ -1,5 +1,5 @@
 name=Dross Harvester
-image=https://magiccards.info/scans/en/mi/63.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35f77a00-1880-416c-813b-c6a870dd5f58.jpg?1674141590
 value=3.769
 rarity=R
 type=Creature

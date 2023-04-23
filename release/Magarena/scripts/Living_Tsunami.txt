@@ -1,5 +1,5 @@
 name=Living Tsunami
-image=https://magiccards.info/scans/en/zen/52.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/107a4e2b-e463-46f3-a431-66ea954ef487.jpg?1562609904
 value=3.742
 rarity=U
 type=Creature

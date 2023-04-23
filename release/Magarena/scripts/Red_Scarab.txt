@@ -1,5 +1,5 @@
 name=Red Scarab
-image=https://magiccards.info/scans/en/ia/273.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a734154-5944-42f4-a02e-c426a45847f3.jpg?1562923718
 value=2.375
 rarity=U
 type=Enchantment

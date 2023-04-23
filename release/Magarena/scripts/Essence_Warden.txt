@@ -1,5 +1,5 @@
 name=Essence Warden
-image=https://magiccards.info/scans/en/c14/194.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31ca84d1-30a6-432b-966c-089fb6652a89.jpg?1592672942
 value=4.233
 rarity=C
 type=Creature

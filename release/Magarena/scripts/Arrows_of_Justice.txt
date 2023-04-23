@@ -1,5 +1,5 @@
 name=Arrows of Justice
-image=https://magiccards.info/scans/en/gtc/211.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c64a15f4-6e2f-4479-95da-8805ce2091fa.jpg?1561845443
 value=2.853
 rarity=U
 type=Instant

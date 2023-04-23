@@ -1,5 +1,5 @@
 name=Bassara Tower Archer
-image=https://magiccards.info/scans/en/jou/117.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95a1e5c2-7f5b-4ae4-83d9-06e334ba57ea.jpg?1593096148
 value=3.443
 rarity=U
 type=Creature

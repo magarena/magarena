@@ -1,5 +1,5 @@
 name=Fodder Cannon
-image=https://magiccards.info/scans/en/8e/302.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bde003e6-d674-42cd-9537-91928730e7dd.jpg?1562933198
 value=4.170
 rarity=U
 type=Artifact

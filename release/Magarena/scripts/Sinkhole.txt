@@ -1,5 +1,5 @@
 name=Sinkhole
-image=https://magiccards.info/scans/en/ema/106.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a084d0fb-8db2-4873-a2f9-e6e5fecdd38c.jpg?1580014366
 value=4.606
 removal=3
 rarity=R

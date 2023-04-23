@@ -1,5 +1,5 @@
 name=Encroaching Wastes
-image=https://magiccards.info/scans/en/m14/227.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a591bffd-2f03-48f4-a719-04f2142abd77.jpg?1608917982
 value=2.922
 rarity=U
 type=Land

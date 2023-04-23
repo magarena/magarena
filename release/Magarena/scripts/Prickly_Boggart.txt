@@ -1,5 +1,5 @@
 name=Prickly Boggart
-image=https://magiccards.info/scans/en/mt/74.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55121b63-22a6-4923-82e9-c55f66742980.jpg?1562878564
 value=3.659
 rarity=C
 type=Creature

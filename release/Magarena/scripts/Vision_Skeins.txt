@@ -1,5 +1,5 @@
 name=Vision Skeins
-image=https://magiccards.info/scans/en/cmd/67.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76999d96-f3fe-421e-9190-e682259e3cdb.jpg?1592765524
 value=3.278
 rarity=C
 type=Instant

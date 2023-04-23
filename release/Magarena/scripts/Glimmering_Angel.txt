@@ -1,5 +1,5 @@
 name=Glimmering Angel
-image=https://magiccards.info/scans/en/in/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f14f55e4-eded-4a86-87f4-b8fa6f30bc0f.jpg?1562943497
 value=2.750
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Trial of Knowledge
-image=https://magiccards.info/scans/en/akh/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89020c72-4cda-4634-8475-6d16a02236f1.jpg?1543675143
 value=2.500
 rarity=U
 type=Enchantment

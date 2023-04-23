@@ -1,5 +1,5 @@
 name=Spore Burst
-image=https://magiccards.info/scans/en/cfx/93.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92fab6e3-29a5-42e0-872e-5c2f4f72bfc5.jpg?1562802474
 value=2.461
 rarity=U
 type=Sorcery

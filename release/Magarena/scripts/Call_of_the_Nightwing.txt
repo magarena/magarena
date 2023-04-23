@@ -1,5 +1,5 @@
 name=Call of the Nightwing
-image=https://magiccards.info/scans/en/gtc/149.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef30a570-b988-42e8-8910-41fe39ffa260.jpg?1561851289
 value=2.952
 rarity=U
 type=Sorcery

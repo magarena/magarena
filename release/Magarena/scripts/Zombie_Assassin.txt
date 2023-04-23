@@ -1,5 +1,5 @@
 name=Zombie Assassin
-image=https://magiccards.info/scans/en/od/168.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4649311-1300-42fb-ac10-90490756c7aa.jpg?1562931761
 value=1.188
 rarity=C
 type=Creature

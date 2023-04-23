@@ -1,5 +1,5 @@
 name=Power Armor
-image=https://magiccards.info/scans/en/in/309.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20bc8710-3d56-45fb-81e7-383a274a2374.jpg?1562901076
 image_updated=2017-01-03
 value=2.788
 rarity=U

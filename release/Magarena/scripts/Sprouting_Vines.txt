@@ -1,5 +1,5 @@
 name=Sprouting Vines
-image=https://magiccards.info/scans/en/sc/128.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b16ba7be-47e6-4c64-918d-bec60abccaa3.jpg?1562932421
 value=2.950
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Alabaster Dragon
-image=https://magiccards.info/scans/en/wl/118.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a2fcc23-ac09-4ada-b194-424739c9c734.jpg?1562800274
 value=3.269
 rarity=R
 type=Creature

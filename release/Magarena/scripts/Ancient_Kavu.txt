@@ -1,5 +1,5 @@
 name=Ancient Kavu
-image=https://magiccards.info/scans/en/in/136.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8ccb5d0-735b-443f-addd-8b70f5f2c60d.jpg?1562935287
 value=2.969
 rarity=C
 type=Creature

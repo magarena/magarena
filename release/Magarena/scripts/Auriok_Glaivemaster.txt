@@ -1,5 +1,5 @@
 name=Auriok Glaivemaster
-image=https://magiccards.info/scans/en/ds/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97cce4d4-bff2-4dbb-bc12-1a726ad82dd4.jpg?1562638298
 value=3.262
 rarity=C
 type=Creature

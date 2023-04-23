@@ -1,5 +1,5 @@
 name=Cryptbreaker
-image=https://magiccards.info/scans/en/emn/86.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/629e37d1-c0f3-44f2-926e-41eb3687c1d9.jpg?1576384293
 image_updated=2016-09-05
 value=2.500
 rarity=R

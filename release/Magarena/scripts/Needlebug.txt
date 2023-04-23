@@ -1,5 +1,5 @@
 name=Needlebug
-image=https://magiccards.info/scans/en/mi/217.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d54fbd8a-1e2a-450e-98f2-26bbc9e9ac79.jpg?1562158966
 value=3.037
 rarity=U
 type=Artifact,Creature

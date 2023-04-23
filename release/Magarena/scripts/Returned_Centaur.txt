@@ -1,5 +1,5 @@
 name=Returned Centaur
-image=https://magiccards.info/scans/en/ori/116.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/103b369c-da58-40e7-98aa-5a5471434bca.jpg?1562007496
 image_updated=2015-11-05
 value=2.500
 rarity=C

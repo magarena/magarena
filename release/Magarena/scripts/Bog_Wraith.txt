@@ -1,5 +1,5 @@
 name=Bog Wraith
-image=https://magiccards.info/scans/en/m10/86.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d17210c-be39-4abc-9d4d-4f2eca9573bd.jpg?1561981761
 value=2.821
 rarity=U
 type=Creature

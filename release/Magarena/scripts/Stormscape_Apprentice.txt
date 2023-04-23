@@ -1,5 +1,5 @@
 name=Stormscape Apprentice
-image=https://magiccards.info/scans/en/in/75.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1eb42f39-9187-44e4-aa34-14ab31977199.jpg?1562901059
 value=4.220
 rarity=C
 type=Creature

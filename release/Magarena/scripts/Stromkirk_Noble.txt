@@ -1,5 +1,5 @@
 name=Stromkirk Noble
-image=https://magiccards.info/scans/en/isd/164.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c16cf74-f9e0-4d80-9a29-b91dec0b6b38.jpg?1562834502
 value=3.845
 rarity=R
 type=Creature

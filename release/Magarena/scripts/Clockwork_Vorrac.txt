@@ -1,5 +1,5 @@
 name=Clockwork Vorrac
-image=https://magiccards.info/scans/en/mi/156.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e876938-1b8e-44cf-ade2-a42f8acdf24c.jpg?1562148654
 value=3.147
 rarity=U
 type=Artifact,Creature

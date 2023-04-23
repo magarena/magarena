@@ -1,5 +1,5 @@
 name=Sandskin
-image=https://magiccards.info/scans/en/on/52.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80b59844-c9d4-4bc1-86e6-4cc596d9165d.jpg?1562925378
 value=3.381
 rarity=C
 type=Enchantment

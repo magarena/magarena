@@ -1,5 +1,5 @@
 name=Squirrel Nest
-image=https://magiccards.info/scans/en/cns/180.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/6914d43c-bc5a-47c5-a01c-59ddb1ee8eca.jpg?1562202205
 value=4.350
 rarity=U
 type=Enchantment

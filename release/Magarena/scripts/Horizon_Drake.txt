@@ -1,5 +1,5 @@
 name=Horizon Drake
-image=https://magiccards.info/scans/en/wwk/30.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/022f07c5-c644-41cd-9434-a57068f73ab2.jpg?1562281081
 value=3.065
 rarity=U
 type=Creature

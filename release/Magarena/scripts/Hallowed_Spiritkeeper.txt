@@ -1,5 +1,5 @@
 name=Hallowed Spiritkeeper
-image=https://magiccards.info/scans/en/c14/8.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc8037d5-79fa-47e3-9d3b-eb29643ecae7.jpg?1641601322
 value=2.500
 rarity=R
 type=Creature

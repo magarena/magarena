@@ -1,5 +1,5 @@
 name=Vitalize
-image=https://magiccards.info/scans/en/6e/265.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/435a4569-fa62-4e1a-b837-f68159cb270d.jpg?1562816929
 value=4.476
 rarity=C
 type=Instant

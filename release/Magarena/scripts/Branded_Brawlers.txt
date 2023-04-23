@@ -1,5 +1,5 @@
 name=Branded Brawlers
-image=https://magiccards.info/scans/en/pr/84.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90a48065-fbf1-4f2a-993e-7061057a4c45.jpg?1562921861
 value=1.605
 rarity=C
 type=Creature

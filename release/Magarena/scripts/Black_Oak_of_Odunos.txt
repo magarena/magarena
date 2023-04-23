@@ -1,5 +1,5 @@
 name=Black Oak of Odunos
-image=https://magiccards.info/scans/en/bng/62.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f1e9195-a711-4f4d-9d53-d5d230c092ef.jpg?1593091882
 value=2.727
 rarity=U
 type=Creature

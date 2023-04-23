@@ -1,5 +1,5 @@
 name=Fool's Demise
-image=https://magiccards.info/scans/en/c14/111.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ed39bd7-d059-4a44-9f03-0f628dcdb119.jpg?1561939373
 value=4.123
 rarity=U
 type=Enchantment

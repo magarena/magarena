@@ -1,5 +1,5 @@
 name=Shifting Sky
-image=https://magiccards.info/scans/en/8e/100.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fed441d0-b8c8-4d63-80ff-cc4fb47d0b26.jpg?1587857626
 value=4.141
 rarity=R
 type=Enchantment

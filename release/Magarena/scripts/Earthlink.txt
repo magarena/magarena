@@ -1,5 +1,5 @@
 name=Earthlink
-image=https://magiccards.info/scans/en/ia/363.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d33739b-c47a-431c-b0df-e09f27b38a9e.jpg?1562869498
 value=3.354
 rarity=R
 type=Enchantment

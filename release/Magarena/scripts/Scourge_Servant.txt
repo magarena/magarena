@@ -1,5 +1,5 @@
 name=Scourge Servant
-image=https://magiccards.info/scans/en/mbs/54.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45ded51b-2ced-46d6-a1d4-0f49d4b1ed2d.jpg?1562610956
 value=2.263
 rarity=C
 type=Creature

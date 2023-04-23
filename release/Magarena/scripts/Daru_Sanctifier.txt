@@ -1,5 +1,5 @@
 name=Daru Sanctifier
-image=https://magiccards.info/scans/en/le/9.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38b14a24-c74a-4465-9b36-8f5309e0a333.jpg?1562906416
 value=1.940
 rarity=C
 type=Creature

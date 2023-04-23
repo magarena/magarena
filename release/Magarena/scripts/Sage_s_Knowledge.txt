@@ -1,5 +1,5 @@
 name=Sage's Knowledge
-image=https://magiccards.info/scans/en/p3k/52.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/156d7c70-6c6d-4052-9d44-029ba1bb66e4.jpg?1562255841
 value=2.842
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Whiptongue Frog
-image=https://magiccards.info/scans/en/ex/52.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fc17186-e786-46a3-9812-4a6e367e78b9.jpg?1562087853
 value=1.809
 rarity=C
 type=Creature

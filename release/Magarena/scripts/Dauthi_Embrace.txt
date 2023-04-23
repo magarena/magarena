@@ -1,5 +1,5 @@
 name=Dauthi Embrace
-image=https://magiccards.info/scans/en/tp/14.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e84bb94-d654-4d69-89d9-0a398a940125.jpg?1562054961
 value=4.439
 rarity=U
 type=Enchantment

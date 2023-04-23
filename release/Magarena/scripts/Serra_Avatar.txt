@@ -1,5 +1,5 @@
 name=Serra Avatar
-image=https://magiccards.info/scans/en/c14/87.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6ff6cd2f-3cef-408d-82a9-45338469f390.jpg?1592710473
 value=4.361
 rarity=M
 type=Creature

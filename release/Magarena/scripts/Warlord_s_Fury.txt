@@ -1,5 +1,5 @@
 name=Warlord's Fury
-image=https://magiccards.info/scans/en/dom/151.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0ebd63cf-7e8c-4c8d-844d-98535d5f3039.jpg?1562731381
 value=2.500
 rarity=C
 type=Sorcery

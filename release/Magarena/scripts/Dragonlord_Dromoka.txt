@@ -1,5 +1,5 @@
 name=Dragonlord Dromoka
-image=https://magiccards.info/scans/en/dtk/217.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4262e71a-b1fa-4b54-b623-34f4a7ccd500.jpg?1673148523
 value=2.500
 rarity=M
 type=Legendary,Creature

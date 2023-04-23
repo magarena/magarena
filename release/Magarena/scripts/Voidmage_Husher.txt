@@ -1,5 +1,5 @@
 name=Voidmage Husher
-image=https://magiccards.info/scans/en/ts/92.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9765c83-fe52-43c5-9466-7318809bbfe0.jpg?1562937541
 value=3.851
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Samite Elder
-image=https://magiccards.info/scans/en/ps/14.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3c5dccc-2a48-4dcc-a796-fa6fdc11a14e.jpg?1562932938
 value=3.761
 rarity=R
 type=Creature

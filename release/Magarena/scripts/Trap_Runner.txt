@@ -1,5 +1,5 @@
 name=Trap Runner
-image=https://magiccards.info/scans/en/mm/55.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eba97681-1d1f-4ab6-a21b-fbbbe63a1c74.jpg?1562383534
 value=3.891
 rarity=U
 type=Creature

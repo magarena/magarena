@@ -1,5 +1,5 @@
 name=Refreshing Rain
-image=https://magiccards.info/scans/en/ne/110.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5e24850-bd9b-40ab-878f-b8a554da1956.jpg?1562631914
 value=3.290
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Bontu's Monument
-image=https://magiccards.info/scans/en/akh/225.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/171a9a3f-6278-4921-9848-2b8459869d6c.jpg?1676318123
 value=2.500
 rarity=U
 type=Legendary,Artifact

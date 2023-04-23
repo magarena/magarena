@@ -1,5 +1,5 @@
 name=Bog Down
-image=https://magiccards.info/scans/en/ps/39.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8752a605-38f8-4d75-b122-063a788dff6e.jpg?1562923562
 value=3.269
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Chaos Warp
-image=https://magiccards.info/scans/en/c16/122.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9d0cb7f-2c84-4984-b6d6-d6067dd028f5.jpg?1682209276
 image_updated=2017-08-17
 value=2.500
 rarity=R

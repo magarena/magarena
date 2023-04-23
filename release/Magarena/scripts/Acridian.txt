@@ -1,5 +1,5 @@
 name=Acridian
-image=https://magiccards.info/scans/en/us/230.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05d5a38f-5a60-46da-af1c-440e4bf7fe9e.jpg?1562896226
 value=3.286
 rarity=C
 type=Creature

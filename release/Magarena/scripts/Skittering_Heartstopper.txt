@@ -1,5 +1,5 @@
 name=Skittering Heartstopper
-image=https://magiccards.info/scans/en/xln/122.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0722fbdf-c092-4e80-913f-29390177cdcb.jpg?1562550153
 value=2.500
 rarity=C
 type=Creature

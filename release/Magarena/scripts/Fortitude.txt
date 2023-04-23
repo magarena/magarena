@@ -1,5 +1,5 @@
 name=Fortitude
-image=https://magiccards.info/scans/en/us/253.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d54d5240-8afc-4c61-aaf6-a78d2b92e5c9.jpg?1562940139
 value=1.936
 rarity=C
 type=Enchantment

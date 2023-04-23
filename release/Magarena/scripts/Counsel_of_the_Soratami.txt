@@ -1,5 +1,5 @@
 name=Counsel of the Soratami
-image=https://magiccards.info/scans/en/10e/76.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/1224718a-e1a7-473d-ac9d-497e624376cd.jpg?1562543972
 value=3.176
 rarity=C
 type=Sorcery

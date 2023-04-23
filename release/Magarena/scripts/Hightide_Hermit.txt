@@ -1,5 +1,5 @@
 name=Hightide Hermit
-image=https://magiccards.info/scans/en/kld/51.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69c871fa-d333-4c73-9d5c-f5cfec5954da.jpg?1576381250
 image_updated=2016-10-05
 value=2.500
 rarity=C

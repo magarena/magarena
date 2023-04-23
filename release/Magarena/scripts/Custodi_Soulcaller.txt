@@ -1,5 +1,5 @@
 name=Custodi Soulcaller
-image=https://magiccards.info/scans/en/cn2/15.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e29212c9-04e3-4678-be73-f7405a85dadb.jpg?1576381568
 image_updated=2016-09-05
 value=2.500
 rarity=U

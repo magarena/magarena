@@ -1,5 +1,5 @@
 name=Harbor Bandit
-image=https://magiccards.info/scans/en/m13/95.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/8422e109-de8d-46ea-a7f8-d5ccb6340497.jpg?1562556368
 value=3.258
 rarity=U
 type=Creature

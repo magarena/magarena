@@ -1,5 +1,5 @@
 name=Arena of the Ancients
-image=https://magiccards.info/scans/en/lg/215.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68ebdcc2-4449-4b10-82fb-51f5e14eab37.jpg?1562916958
 value=3.019
 rarity=R
 type=Artifact

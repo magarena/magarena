@@ -1,5 +1,5 @@
 name=Sigil of Valor
-image=https://magiccards.info/scans/en/ori/239.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f134f242-cbb5-4a3d-bfd4-46e8b8669b4b.jpg?1562049228
 image_updated=2015-11-05
 value=2.500
 rarity=U

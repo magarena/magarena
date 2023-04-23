@@ -1,5 +1,5 @@
 name=Slavering Nulls
-image=https://magiccards.info/scans/en/wwk/92.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8ead2b6-3bf7-4881-a154-06ab2558052b.jpg?1562934950
 value=3.359
 rarity=U
 type=Creature

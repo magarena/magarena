@@ -1,5 +1,5 @@
 name=Virulent Sliver
-image=https://magiccards.info/scans/en/fut/155.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5082a2a-e8b1-4799-ad29-a632d95ae1da.jpg?1619403749
 value=4.459
 rarity=C
 type=Creature

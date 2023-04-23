@@ -1,5 +1,5 @@
 name=Oak Street Innkeeper
-image=https://magiccards.info/scans/en/rtr/131.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08274d1b-52b7-46c1-8f93-7631d2e21def.jpg?1562782203
 value=3.054
 rarity=U
 type=Creature

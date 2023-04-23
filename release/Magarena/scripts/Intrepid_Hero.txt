@@ -1,5 +1,5 @@
 name=Intrepid Hero
-image=https://magiccards.info/scans/en/m13/20.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43ec71e9-0024-4f8f-b499-541fb7607fcd.jpg?1562553060
 value=4.210
 rarity=R
 type=Creature

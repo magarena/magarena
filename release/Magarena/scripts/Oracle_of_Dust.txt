@@ -1,5 +1,5 @@
 name=Oracle of Dust
-image=https://magiccards.info/scans/en/bfz/63.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c121d73-0c87-4a3f-b013-4f9314e22606.jpg?1562905311
 image_updated=2015-11-08
 value=2.500
 rarity=C

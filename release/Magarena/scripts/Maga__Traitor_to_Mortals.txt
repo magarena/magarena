@@ -1,5 +1,5 @@
 name=Maga, Traitor to Mortals
-image=https://magiccards.info/scans/en/sok/81.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2563fd68-afdd-466f-8137-0769565674bf.jpg?1562492983
 value=3.402
 rarity=R
 type=Legendary,Creature

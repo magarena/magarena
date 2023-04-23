@@ -1,5 +1,5 @@
 name=Gwafa Hazid, Profiteer
-image=https://magiccards.info/scans/en/c16/202.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da097d1a-6e51-41d7-8dfe-f26acfb0038f.jpg?1562938863
 image_updated=2017-08-17
 value=3.308
 rarity=R

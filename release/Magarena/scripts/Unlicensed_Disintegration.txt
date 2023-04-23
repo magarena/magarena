@@ -1,5 +1,5 @@
 name=Unlicensed Disintegration
-image=https://magiccards.info/scans/en/kld/187.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/402c2c37-9439-4393-b9d7-d7abe8045d4d.jpg?1599708529
 image_updated=2016-10-05
 value=2.500
 rarity=U

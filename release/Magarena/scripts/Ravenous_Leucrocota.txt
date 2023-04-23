@@ -1,5 +1,5 @@
 name=Ravenous Leucrocota
-image=https://magiccards.info/scans/en/cn2/192.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc504eb1-4684-47a1-b241-01c7bb5cc496.jpg?1576383110
 image_updated=2017-08-29
 value=2.870
 rarity=C

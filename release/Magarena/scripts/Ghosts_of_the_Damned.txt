@@ -1,5 +1,5 @@
 name=Ghosts of the Damned
-image=https://magiccards.info/scans/en/lg/12.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d15e5505-74ad-4540-8b23-ab5e5add9227.jpg?1562939303
 value=2.058
 rarity=C
 type=Creature

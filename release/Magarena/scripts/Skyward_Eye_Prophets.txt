@@ -1,5 +1,5 @@
 name=Skyward Eye Prophets
-image=https://magiccards.info/scans/en/cfx/125.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/056f9887-3ab0-486a-b859-5999d39f9ec2.jpg?1592673467
 value=3.192
 rarity=U
 type=Creature

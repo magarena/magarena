@@ -1,5 +1,5 @@
 name=Chime of Night
-image=https://magiccards.info/scans/en/ud/56.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1ec7c917-b254-4643-afc2-b6387f267469.jpg?1562443336
 value=3.016
 rarity=C
 type=Enchantment

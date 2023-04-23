@@ -1,5 +1,5 @@
 name=City of Brass
-image=https://magiccards.info/scans/en/mma/221.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bed4a63d-632a-4a3a-b35f-f8e155237d27.jpg?1673149483
 value=4.562
 rarity=R
 type=Land

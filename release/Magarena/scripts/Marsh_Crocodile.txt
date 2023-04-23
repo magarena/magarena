@@ -1,5 +1,5 @@
 name=Marsh Crocodile
-image=https://magiccards.info/scans/en/ps/115.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/813279d1-d7bd-4d49-bd9d-fc9a6595dd39.jpg?1562922244
 value=3.649
 rarity=U
 type=Creature

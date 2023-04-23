@@ -1,5 +1,5 @@
 name=Trial of Zeal
-image=https://magiccards.info/scans/en/akh/152.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/543539ce-af50-4bbe-82aa-f35fd2c2a256.jpg?1543675724
 value=2.500
 rarity=U
 type=Enchantment

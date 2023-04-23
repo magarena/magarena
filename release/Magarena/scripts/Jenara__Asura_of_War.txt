@@ -1,5 +1,5 @@
 name=Jenara, Asura of War
-image=https://magiccards.info/scans/en/arb/128.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bcf5b5f-b908-4975-91f7-c4c6f819e0a6.jpg?1673485098
 value=4.005
 rarity=M
 type=Legendary,Creature

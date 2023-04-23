@@ -1,5 +1,5 @@
 name=Hellrider
-image=https://magiccards.info/scans/en/mm3/98.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bbfd905-8c71-4389-9174-6e84bcbcf05c.jpg?1601078085
 image_updated=2017-08-08
 value=3.712
 rarity=R

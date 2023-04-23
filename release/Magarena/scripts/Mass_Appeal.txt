@@ -1,5 +1,5 @@
 name=Mass Appeal
-image=https://magiccards.info/scans/en/avr/66.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfe9ae51-fd2b-45ca-a780-725f51f897b2.jpg?1592708636
 value=3.489
 rarity=U
 type=Sorcery

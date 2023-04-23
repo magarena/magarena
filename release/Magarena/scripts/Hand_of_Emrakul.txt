@@ -1,5 +1,5 @@
 name=Hand of Emrakul
-image=https://magiccards.info/scans/en/roe/5.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84d602f4-5876-416a-95e5-821a285358bf.jpg?1562705822
 value=4.004
 rarity=C
 type=Creature

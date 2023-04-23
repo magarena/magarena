@@ -1,5 +1,5 @@
 name=Wall of Hope
-image=https://magiccards.info/scans/en/le/24.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b463b3e1-e314-4a65-a89e-0712f630b016.jpg?1562931313
 value=3.663
 rarity=C
 type=Creature

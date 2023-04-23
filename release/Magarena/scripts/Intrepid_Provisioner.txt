@@ -1,5 +1,5 @@
 name=Intrepid Provisioner
-image=https://magiccards.info/scans/en/soi/213.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da3ac63b-8386-4175-9555-84c54566f5b4.jpg?1576385134
 value=2.500
 rarity=C
 type=Creature

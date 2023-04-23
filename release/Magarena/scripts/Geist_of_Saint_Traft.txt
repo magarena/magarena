@@ -1,5 +1,5 @@
 name=Geist of Saint Traft
-image=https://magiccards.info/scans/en/isd/213.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/541b9d55-f237-4ff2-9e47-c58a381f0633.jpg?1641603441
 value=4.342
 rarity=M
 type=Legendary,Creature

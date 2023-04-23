@@ -1,5 +1,5 @@
 name=Banisher Priest
-image=https://magiccards.info/scans/en/m14/7.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e518f9e-d74d-4a6f-8fde-5e3ec5834e63.jpg?1682208306
 image_updated=2016-11-20
 value=3.623
 rarity=U

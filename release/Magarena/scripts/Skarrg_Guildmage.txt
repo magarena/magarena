@@ -1,5 +1,5 @@
 name=Skarrg Guildmage
-image=https://magiccards.info/scans/en/gtc/196.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00f206c0-a8a7-4ca0-b88f-4736c3dac588.jpg?1561813759
 value=3.900
 rarity=U
 type=Creature

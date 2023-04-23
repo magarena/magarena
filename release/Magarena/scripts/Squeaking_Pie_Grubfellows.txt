@@ -1,5 +1,5 @@
 name=Squeaking Pie Grubfellows
-image=https://magiccards.info/scans/en/mt/78.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81290ae9-9217-482a-ae1a-be1a0ef47b5d.jpg?1562879624
 value=2.403
 rarity=C
 type=Creature

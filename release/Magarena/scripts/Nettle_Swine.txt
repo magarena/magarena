@@ -1,5 +1,5 @@
 name=Nettle Swine
-image=https://magiccards.info/scans/en/avr/186.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75935f0e-9086-485b-b3e6-1a958fd0f2af.jpg?1592709397
 value=2.065
 rarity=C
 type=Creature

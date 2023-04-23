@@ -1,5 +1,5 @@
 name=Battleflight Eagle
-image=https://magiccards.info/scans/en/m13/7.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4182dbd5-8eae-4f4b-86aa-2bfc24481800.jpg?1562552913
 value=1.784
 rarity=C
 type=Creature

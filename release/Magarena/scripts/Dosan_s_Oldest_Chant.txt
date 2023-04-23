@@ -1,5 +1,5 @@
 name=Dosan's Oldest Chant
-image=https://magiccards.info/scans/en/sok/127.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b525f824-fcce-48cc-887d-98d4058b1d31.jpg?1562495598
 value=2.111
 rarity=C
 type=Sorcery

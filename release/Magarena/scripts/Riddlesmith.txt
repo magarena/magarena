@@ -1,5 +1,5 @@
 name=Riddlesmith
-image=https://magiccards.info/scans/en/som/40.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/640ff8a9-9dff-4fc7-bafa-6afaa3d9c153.jpg?1651655745
 value=3.690
 rarity=U
 type=Creature

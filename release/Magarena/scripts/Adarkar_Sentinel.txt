@@ -1,5 +1,5 @@
 name=Adarkar Sentinel
-image=https://magiccards.info/scans/en/ia/281.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3802c412-6c85-46aa-b21e-52edc0536f6c.jpg?1562868086
 value=2.616
 rarity=U
 type=Artifact,Creature

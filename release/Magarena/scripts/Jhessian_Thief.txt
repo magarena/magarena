@@ -1,5 +1,5 @@
 name=Jhessian Thief
-image=https://magiccards.info/scans/en/ima/61.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/1227fb31-2780-48e2-9790-4a7e9a413f75.jpg?1562845861
 image_updated=2017-04-12
 value=2.500
 rarity=C

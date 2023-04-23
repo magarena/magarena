@@ -1,5 +1,5 @@
 name=Leafcrown Dryad
-image=https://magiccards.info/scans/en/ths/161.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8202e426-ad91-4d2e-9373-7a829b58fff5.jpg?1562820665
 value=3.474
 rarity=C
 type=Enchantment,Creature

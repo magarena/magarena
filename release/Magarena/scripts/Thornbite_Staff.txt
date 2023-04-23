@@ -1,5 +1,5 @@
 name=Thornbite Staff
-image=https://magiccards.info/scans/en/mt/145.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1ab3225-64a9-411e-b22b-1869e958b8e5.jpg?1562881171
 value=3.662
 rarity=U
 type=Tribal,Artifact

@@ -1,5 +1,5 @@
 name=Crawling Filth
-image=https://magiccards.info/scans/en/bok/64.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c735bda-5454-4177-a23a-f9f00b7480d2.jpg?1562878661
 value=1.026
 rarity=C
 type=Creature

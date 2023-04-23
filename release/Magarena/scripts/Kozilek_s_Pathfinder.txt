@@ -1,5 +1,5 @@
 name=Kozilek's Pathfinder
-image=https://magiccards.info/scans/en/ogw/5.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b75585bd-fdd8-44d1-8c7c-b96df5fc473e.jpg?1562931898
 image_updated=2016-02-29
 value=2.500
 rarity=C

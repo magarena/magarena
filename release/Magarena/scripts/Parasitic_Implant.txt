@@ -1,5 +1,5 @@
 name=Parasitic Implant
-image=https://magiccards.info/scans/en/nph/67.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43296ce8-f055-4778-a187-363a642001e4.jpg?1600701038
 value=3.043
 rarity=C
 type=Enchantment

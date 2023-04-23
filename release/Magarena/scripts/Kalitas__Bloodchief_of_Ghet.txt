@@ -1,5 +1,5 @@
 name=Kalitas, Bloodchief of Ghet
-image=https://magiccards.info/scans/en/zen/99.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/859aab70-8192-414c-839b-dd0fbcbd8bf1.jpg?1562614015
 value=3.849
 rarity=M
 type=Legendary,Creature

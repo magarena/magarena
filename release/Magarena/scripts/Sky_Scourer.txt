@@ -1,5 +1,5 @@
 name=Sky Scourer
-image=https://magiccards.info/scans/en/ogw/78.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb00fa72-bcda-4081-9048-e13752da8d46.jpg?1562942219
 image_updated=2016-02-29
 value=2.500
 rarity=C

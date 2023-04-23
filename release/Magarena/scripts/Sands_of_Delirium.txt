@@ -1,5 +1,5 @@
 name=Sands of Delirium
-image=https://magiccards.info/scans/en/m13/216.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78c9d3bf-c858-42f4-bb61-3292f9a7141b.jpg?1562555799
 value=3.831
 rarity=R
 type=Artifact

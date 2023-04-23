@@ -1,5 +1,5 @@
 name=Artful Maneuver
-image=https://magiccards.info/scans/en/dtk/4.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fcaf67e-ba97-4af9-8c47-dbca703cba35.jpg?1562788984
 value=2.500
 rarity=C
 type=Instant

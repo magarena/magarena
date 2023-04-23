@@ -1,5 +1,5 @@
 name=Trolls of Tel-Jilad
-image=https://magiccards.info/scans/en/mi/136.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/6535f2ad-6cda-4be9-8e4f-6f062b63be31.jpg?1562145982
 value=2.914
 rarity=U
 type=Creature

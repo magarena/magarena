@@ -1,5 +1,5 @@
 name=Sage-Eye Harrier
-image=https://magiccards.info/scans/en/ktk/20.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cc7b4c3-647e-48da-86f8-f55e3e990ac1.jpg?1562785176
 value=2.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Guilty Conscience
-image=https://magiccards.info/scans/en/sc/17.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67b8701c-0f03-4ad0-9097-3caf885abd59.jpg?1562529779
 value=4.053
 rarity=C
 type=Enchantment

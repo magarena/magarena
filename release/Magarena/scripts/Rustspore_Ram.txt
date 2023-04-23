@@ -1,5 +1,5 @@
 name=Rustspore Ram
-image=https://magiccards.info/scans/en/mi/235.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d23449c-4439-4425-ad53-84168a94b1ce.jpg?1562145012
 value=2.081
 rarity=U
 type=Artifact,Creature

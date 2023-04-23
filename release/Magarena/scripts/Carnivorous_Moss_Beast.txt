@@ -1,5 +1,5 @@
 name=Carnivorous Moss-Beast
-image=https://magiccards.info/scans/en/m15/170.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd814ce3-9555-4e9d-a212-e40717f4e546.jpg?1562793539
 value=2.143
 rarity=C
 type=Creature

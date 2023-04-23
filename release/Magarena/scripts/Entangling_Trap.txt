@@ -1,5 +1,5 @@
 name=Entangling Trap
-image=https://magiccards.info/scans/en/lw/13.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d1cec6f-5308-4bff-b19a-df9e3325bb06.jpg?1562338165
 value=2.068
 rarity=U
 type=Enchantment

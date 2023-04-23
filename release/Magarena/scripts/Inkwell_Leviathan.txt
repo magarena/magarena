@@ -1,5 +1,5 @@
 name=Inkwell Leviathan
-image=https://magiccards.info/scans/en/ema/56.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f7a6dfb-a8f8-4899-b2db-c48d542dfd55.jpg?1598304010
 value=4.579
 rarity=R
 type=Artifact,Creature

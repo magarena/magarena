@@ -1,5 +1,5 @@
 name=Glitterfang
-image=https://magiccards.info/scans/en/sok/100.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1519521-7f53-4f13-a104-daf52e8c7234.jpg?1562495142
 value=3.750
 rarity=C
 type=Creature

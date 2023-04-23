@@ -1,5 +1,5 @@
 name=Cerulean Wyvern
-image=https://magiccards.info/scans/en/mr/57.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c599f95-c0dd-4dd8-a8d7-9481df0cf649.jpg?1587912415
 value=2.941
 rarity=U
 type=Creature

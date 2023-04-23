@@ -1,5 +1,5 @@
 name=Confound
-image=https://magiccards.info/scans/en/ps/22.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f3b7d39-ce98-48e2-b2bf-0d55b4d3102b.jpg?1562911605
 value=4.070
 rarity=C
 type=Instant

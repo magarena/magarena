@@ -1,5 +1,5 @@
 name=Riptide Crab
-image=https://magiccards.info/scans/en/in/266.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdf9f3fb-40f5-4833-8638-5ddc2ba591f3.jpg?1562936432
 value=3.878
 rarity=U
 type=Creature

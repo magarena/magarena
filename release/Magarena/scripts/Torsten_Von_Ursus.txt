@@ -1,5 +1,5 @@
 name=Torsten Von Ursus
-image=https://magiccards.info/scans/en/lg/306.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6687f36-dccf-499b-938d-0da3f442f635.jpg?1562943592
 value=2.091
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Carrion Ants
-image=https://magiccards.info/scans/en/5e/12.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d1b1f70-2f64-4ced-a183-53c6b564b193.jpg?1562917861
 value=3.152
 rarity=U
 type=Creature

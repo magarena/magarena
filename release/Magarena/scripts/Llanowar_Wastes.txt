@@ -1,5 +1,5 @@
 name=Llanowar Wastes
-image=https://magiccards.info/scans/en/ori/248.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10716909-1254-4b2b-997e-23a18994a98d.jpg?1674422216
 image_updated=2015-11-05
 value=2.500
 rarity=R

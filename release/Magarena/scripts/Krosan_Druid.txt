@@ -1,5 +1,5 @@
 name=Krosan Druid
-image=https://magiccards.info/scans/en/dom/167.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c332dc82-7664-44d0-b92a-a3d867399884.jpg?1562742431
 value=2.500
 rarity=C
 type=Creature

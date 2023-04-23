@@ -1,5 +1,5 @@
 name=Inexorable Blob
-image=https://magiccards.info/scans/en/soi/212.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0210ff44-19d9-4d24-9d32-f1f9f219d9e0.jpg?1576385128
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Spidery Grasp
-image=https://magiccards.info/scans/en/akh/188.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1dc24c93-2670-47c0-bb15-d1fff0fd19eb.jpg?1576267428
 image_updated=2017-09-29
 value=2.730
 rarity=C

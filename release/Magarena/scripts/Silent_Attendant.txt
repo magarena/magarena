@@ -1,5 +1,5 @@
 name=Silent Attendant
-image=https://magiccards.info/scans/en/us/51.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56e90087-3738-40df-929b-d2f880264b55.jpg?1562913144
 value=2.515
 rarity=C
 type=Creature

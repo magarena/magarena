@@ -1,5 +1,5 @@
 name=Angelic Wall
-image=https://magiccards.info/scans/en/avr/4.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fe8f88e-8a51-494b-a008-fbfe624f97f7.jpg?1562831574
 value=3.054
 rarity=C
 type=Creature

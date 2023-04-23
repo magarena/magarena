@@ -1,5 +1,5 @@
 name=Burden of Greed
-image=https://magiccards.info/scans/en/ds/38.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d37abcf5-f009-4258-bf32-b93b47cb71dc.jpg?1562639763
 value=2.191
 rarity=C
 type=Instant

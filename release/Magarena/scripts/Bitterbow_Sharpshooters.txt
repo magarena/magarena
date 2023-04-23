@@ -1,5 +1,5 @@
 name=Bitterbow Sharpshooters
-image=https://magiccards.info/scans/en/hou/112.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ecfcf99-be2b-4e5f-adef-1977ee5c6a0f.jpg?1595438035
 value=2.500
 rarity=C
 type=Creature

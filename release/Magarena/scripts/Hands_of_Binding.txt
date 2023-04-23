@@ -1,5 +1,5 @@
 name=Hands of Binding
-image=https://magiccards.info/scans/en/gtc/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afeef50a-f5c9-47ab-ad04-645f49bbae6b.jpg?1561841936
 value=3.518
 rarity=C
 type=Sorcery

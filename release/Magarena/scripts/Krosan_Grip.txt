@@ -1,5 +1,5 @@
 name=Krosan Grip
-image=https://magiccards.info/scans/en/mma/152.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3571dee-7b90-4c0c-abc7-59b515ffa129.jpg?1625194563
 image_updated=2016-02-29
 value=4.550
 rarity=U

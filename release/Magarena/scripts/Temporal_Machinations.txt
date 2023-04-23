@@ -1,5 +1,5 @@
 name=Temporal Machinations
-image=https://magiccards.info/scans/en/dom/271.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9ba8df17-ab81-4e28-b274-ad38aa2899b3.jpg?1562740175
 value=2.500
 rarity=C
 type=Sorcery

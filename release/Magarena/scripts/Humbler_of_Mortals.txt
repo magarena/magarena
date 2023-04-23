@@ -1,5 +1,5 @@
 name=Humbler of Mortals
-image=https://magiccards.info/scans/en/jou/127.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f12149b9-b450-4ad6-ab5d-9a0eeb36997e.jpg?1593096217
 value=3.143
 rarity=C
 type=Enchantment,Creature

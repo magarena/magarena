@@ -1,5 +1,5 @@
 name=Phyrexian Delver
-image=https://magiccards.info/scans/en/in/115.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86f6f3e9-b594-49da-b0af-75a672590da1.jpg?1682209185
 value=4.237
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Leatherback Baloth
-image=https://magiccards.info/scans/en/wwk/107.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55f97b4c-42c7-4986-a150-0b8de11f0537.jpg?1562287740
 value=4.319
 rarity=U
 type=Creature

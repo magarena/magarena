@@ -1,5 +1,5 @@
 name=Phyrexian Scuta
-image=https://magiccards.info/scans/en/ps/51.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb57e656-c94e-4cc2-ae8d-9300f51f941f.jpg?1562944641
 value=3.845
 rarity=R
 type=Creature

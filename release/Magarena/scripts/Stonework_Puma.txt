@@ -1,5 +1,5 @@
 name=Stonework Puma
-image=https://magiccards.info/scans/en/zen/207.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35155ed9-35f4-4b20-8885-c72b8372fa1d.jpg?1593095570
 value=2.523
 rarity=C
 type=Artifact,Creature

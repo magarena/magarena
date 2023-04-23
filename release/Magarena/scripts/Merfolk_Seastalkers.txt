@@ -1,5 +1,5 @@
 name=Merfolk Seastalkers
-image=https://magiccards.info/scans/en/zen/55.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fe5d069-45a0-46ea-b3ec-4e75f0531382.jpg?1562612127
 value=3.000
 rarity=U
 type=Creature

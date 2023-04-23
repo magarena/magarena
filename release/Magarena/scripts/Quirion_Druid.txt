@@ -1,5 +1,5 @@
 name=Quirion Druid
-image=https://magiccards.info/scans/en/vi/66.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8ca5319a-5c26-487f-ba87-d317633122ba.jpg?1562278148
 value=3.161
 rarity=R
 type=Creature

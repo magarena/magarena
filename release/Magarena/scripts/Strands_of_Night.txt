@@ -1,5 +1,5 @@
 name=Strands of Night
-image=https://magiccards.info/scans/en/7e/165.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8f6685d-eb5d-403f-b89a-b8b67900b602.jpg?1562248932
 value=4.170
 rarity=U
 type=Enchantment

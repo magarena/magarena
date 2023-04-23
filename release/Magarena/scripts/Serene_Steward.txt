@@ -1,5 +1,5 @@
 name=Serene Steward
-image=https://magiccards.info/scans/en/bfz/46.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/702f5dd4-4dc7-4e2c-a30b-9286499433d8.jpg?1562921415
 image_updated=2015-11-08
 value=2.500
 rarity=U

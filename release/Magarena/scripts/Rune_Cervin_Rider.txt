@@ -1,5 +1,5 @@
 name=Rune-Cervin Rider
-image=https://magiccards.info/scans/en/shm/20.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d9574f6-40b3-4fe2-950c-234bc358ecf6.jpg?1562833784
 value=2.262
 rarity=C
 type=Creature

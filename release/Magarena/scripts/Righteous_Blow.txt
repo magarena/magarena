@@ -1,5 +1,5 @@
 name=Righteous Blow
-image=https://magiccards.info/scans/en/avr/34.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4501520-acf4-438f-9e96-4a649875ffdd.jpg?1636491639
 value=3.027
 removal=1
 rarity=C

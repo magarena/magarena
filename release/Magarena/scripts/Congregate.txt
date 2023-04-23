@@ -1,5 +1,5 @@
 name=Congregate
-image=https://magiccards.info/scans/en/a25/8.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8690166f-be52-48c4-9877-630b3f3dc614.jpg?1562437633
 image_updated=2018-04-27
 value=2.800
 rarity=U

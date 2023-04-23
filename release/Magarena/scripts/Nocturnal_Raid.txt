@@ -1,5 +1,5 @@
 name=Nocturnal Raid
-image=https://magiccards.info/scans/en/7e/151.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77419949-7e62-48fe-b952-56d943ddd39f.jpg?1562240973
 value=2.788
 rarity=U
 type=Instant

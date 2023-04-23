@@ -1,5 +1,5 @@
 name=Skyreaping
-image=https://magiccards.info/scans/en/bng/140.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40eb76b3-b527-4ed8-8ce3-d3de48562b6e.jpg?1593092666
 value=3.522
 rarity=U
 type=Sorcery

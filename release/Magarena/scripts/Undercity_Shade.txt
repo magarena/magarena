@@ -1,5 +1,5 @@
 name=Undercity Shade
-image=https://magiccards.info/scans/en/rav/110.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/6609aa2e-6832-4c20-beda-e5f2506bf9b2.jpg?1619741479
 value=2.111
 rarity=U
 type=Creature

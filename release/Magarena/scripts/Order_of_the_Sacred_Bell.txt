@@ -1,5 +1,5 @@
 name=Order of the Sacred Bell
-image=https://magiccards.info/scans/en/9e/261.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/310500b2-8539-441e-af89-81ddfa8ef080.jpg?1562733297
 value=2.351
 rarity=C
 type=Creature

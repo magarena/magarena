@@ -1,5 +1,5 @@
 name=Kalonian Tusker
-image=https://magiccards.info/scans/en/m14/182.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/135946fc-fe67-401f-821d-d7145c63f030.jpg?1562826250
 value=3.709
 rarity=U
 type=Creature

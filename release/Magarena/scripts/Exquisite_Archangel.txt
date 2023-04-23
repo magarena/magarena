@@ -1,5 +1,5 @@
 name=Exquisite Archangel
-image=https://magiccards.info/scans/en/aer/18.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d04018c9-510c-4610-9daa-677434628805.jpg?1576381389
 value=2.500
 rarity=M
 type=Creature

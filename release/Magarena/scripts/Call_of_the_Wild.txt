@@ -1,5 +1,5 @@
 name=Call of the Wild
-image=https://magiccards.info/scans/en/8e/235.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3332b35c-fd4f-4195-baee-e759dee6a682.jpg?1562905319
 value=4.282
 rarity=R
 type=Enchantment

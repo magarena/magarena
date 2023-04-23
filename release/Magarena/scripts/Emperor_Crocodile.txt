@@ -1,5 +1,5 @@
 name=Emperor Crocodile
-image=https://magiccards.info/scans/en/ema/165.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c8c30e2-e751-4481-9a46-413c52bbff90.jpg?1580014774
 value=3.721
 rarity=C
 type=Creature

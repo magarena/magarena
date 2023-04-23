@@ -1,5 +1,5 @@
 name=Soliton
-image=https://magiccards.info/scans/en/som/204.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b608c28-18cc-47d6-861e-2fd783aa3ade.jpg?1562819341
 value=3.007
 rarity=C
 type=Artifact,Creature

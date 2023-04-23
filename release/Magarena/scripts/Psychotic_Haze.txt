@@ -1,5 +1,5 @@
 name=Psychotic Haze
-image=https://magiccards.info/scans/en/tr/76.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d3f6cd2-0138-40e7-a975-3f7c68db0d93.jpg?1562630817
 value=2.016
 rarity=C
 type=Instant

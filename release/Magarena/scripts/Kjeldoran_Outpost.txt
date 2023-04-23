@@ -1,5 +1,5 @@
 name=Kjeldoran Outpost
-image=https://magiccards.info/scans/en/ai/184.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db90c357-26e3-4ab2-a280-0d8d74b95048.jpg?1562939136
 value=4.000
 rarity=R
 type=Land

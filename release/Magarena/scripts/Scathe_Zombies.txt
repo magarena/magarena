@@ -1,5 +1,5 @@
 name=Scathe Zombies
-image=https://magiccards.info/scans/en/10e/175.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/037cbf71-1199-4457-9b09-f66e7cb294d5.jpg?1562543060
 value=1.815
 rarity=C
 type=Creature

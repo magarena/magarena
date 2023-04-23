@@ -1,5 +1,5 @@
 name=Reiterate
-image=https://magiccards.info/scans/en/ts/175.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99302c41-434f-41ff-a61a-2c3681a0c135.jpg?1619397418
 value=4.066
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Midnight Covenant
-image=https://magiccards.info/scans/en/chk/125.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d797e91-3fc7-4f62-8cd8-dbd5f445e69c.jpg?1593860748
 value=2.721
 rarity=C
 type=Enchantment

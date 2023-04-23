@@ -1,5 +1,5 @@
 name=Glaciers
-image=https://magiccards.info/scans/en/ia/372.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b86e159b-ecf1-4b4a-9041-4e97fdf935e5.jpg?1587912102
 value=2.943
 rarity=R
 type=Enchantment

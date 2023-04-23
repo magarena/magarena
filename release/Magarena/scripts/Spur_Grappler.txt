@@ -1,5 +1,5 @@
 name=Spur Grappler
-image=https://magiccards.info/scans/en/pr/104.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50bf91a7-4d04-437c-a290-6adb52f25312.jpg?1562909787
 value=3.027
 rarity=C
 type=Creature

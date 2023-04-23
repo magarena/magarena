@@ -1,5 +1,5 @@
 name=Reaper of the Wilds
-image=https://magiccards.info/scans/en/ths/201.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/016d333a-6a04-42ff-ba65-b3a5d251893e.jpg?1592754781
 image_updated=2017-01-06
 value=3.906
 rarity=R

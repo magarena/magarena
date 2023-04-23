@@ -1,5 +1,5 @@
 name=Sylvok Lifestaff
-image=https://magiccards.info/scans/en/som/209.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abbc5ae5-8e8b-4106-844f-2d49d2a51ed9.jpg?1562821604
 value=3.589
 rarity=C
 type=Artifact

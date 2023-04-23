@@ -1,5 +1,5 @@
 name=Sewerdreg
-image=https://magiccards.info/scans/en/rav/104.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b216ad4e-29b4-4e03-8c16-5796277bd05f.jpg?1598915160
 value=1.117
 rarity=C
 type=Creature

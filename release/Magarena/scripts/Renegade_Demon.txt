@@ -1,5 +1,5 @@
 name=Renegade Demon
-image=https://magiccards.info/scans/en/avr/118.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbd61cbe-92b8-4141-b11c-04046e35578a.jpg?1562230153
 value=2.138
 rarity=C
 type=Creature

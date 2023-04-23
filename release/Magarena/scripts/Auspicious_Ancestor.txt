@@ -1,5 +1,5 @@
 name=Auspicious Ancestor
-image=https://magiccards.info/scans/en/mr/207.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f6f9ec3-6033-4cd4-a52e-31a559559a93.jpg?1562720248
 value=2.708
 rarity=R
 type=Creature

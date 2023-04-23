@@ -1,5 +1,5 @@
 name=Sphere of Purity
-image=https://magiccards.info/scans/en/mi/26.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/392944d5-bff1-4125-86db-68d05682a430.jpg?1562140904
 value=2.364
 rarity=C
 type=Enchantment

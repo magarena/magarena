@@ -1,5 +1,5 @@
 name=Predatory Sliver
-image=https://magiccards.info/scans/en/m14/189.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2e37de8-66a1-4afa-aa6f-1151f849dfa8.jpg?1562833161
 value=3.606
 rarity=C
 type=Creature

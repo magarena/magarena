@@ -1,5 +1,5 @@
 name=Impromptu Raid
-image=https://magiccards.info/scans/en/shm/209.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2171e1c-fd36-43a6-ade3-c3aba8915139.jpg?1562838060
 value=2.814
 rarity=R
 type=Enchantment

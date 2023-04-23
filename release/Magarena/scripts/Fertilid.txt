@@ -1,5 +1,5 @@
 name=Fertilid
-image=https://magiccards.info/scans/en/cmd/154.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d73ea23-52ab-4b92-b263-dc8b9e5a1010.jpg?1682209480
 value=3.317
 rarity=C
 type=Creature

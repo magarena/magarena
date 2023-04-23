@@ -1,5 +1,5 @@
 name=Crimson Honor Guard
-image=https://magiccards.info/scans/en/c17/23.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7ac7b366-a967-4efb-9254-a4ec423d63a7.jpg?1641603147
 image_updated=2017-10-03
 value=2.500
 rarity=R

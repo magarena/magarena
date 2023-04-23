@@ -1,5 +1,5 @@
 name=Puncturing Blow
-image=https://magiccards.info/scans/en/hou/106.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7d88da5-d9a3-49b3-a091-458b058c9114.jpg?1562816551
 value=2.500
 rarity=C
 type=Sorcery

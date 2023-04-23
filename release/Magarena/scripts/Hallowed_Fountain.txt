@@ -1,5 +1,5 @@
 name=Hallowed Fountain
-image=https://magiccards.info/scans/en/rtr/241.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f97a6d34-03ab-49f1-b02e-405b733f8843.jpg?1584832278
 value=4.278
 rarity=R
 type=Land

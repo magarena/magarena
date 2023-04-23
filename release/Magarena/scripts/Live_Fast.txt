@@ -1,5 +1,5 @@
 name=Live Fast
-image=https://magiccards.info/scans/en/kld/87.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad0bb8da-ad05-43d9-aba3-d917744168fe.jpg?1576381709
 image_updated=2016-10-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Aether Herder
-image=https://magiccards.info/scans/en/aer/102.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8744a31-451b-4349-8f62-e2392a72a154.jpg?1576381934
 value=2.500
 rarity=C
 type=Creature

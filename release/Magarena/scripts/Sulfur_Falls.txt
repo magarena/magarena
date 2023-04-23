@@ -1,5 +1,5 @@
 name=Sulfur Falls
-image=https://magiccards.info/scans/en/dom/247.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf1b1e48-6315-476a-a27a-3f02dbf3ad9f.jpg?1661583443
 image_updated=2018-08-07
 value=3.859
 rarity=R

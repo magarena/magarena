@@ -1,5 +1,5 @@
 name=Pallimud
-image=https://magiccards.info/scans/en/tp/195.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61adc314-cfb2-4fdd-925c-cc1dc4692992.jpg?1562054248
 value=3.768
 rarity=R
 type=Creature

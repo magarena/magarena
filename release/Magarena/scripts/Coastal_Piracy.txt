@@ -1,5 +1,5 @@
 name=Coastal Piracy
-image=https://magiccards.info/scans/en/8e/67.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f2c4e43-71b2-4483-ba54-4be1dcffcd5f.jpg?1600713707
 value=4.320
 rarity=R
 type=Enchantment

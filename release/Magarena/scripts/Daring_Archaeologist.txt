@@ -1,5 +1,5 @@
 name=Daring Archaeologist
-image=https://magiccards.info/scans/en/dom/13.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/306ebfe1-428d-4f38-950e-b72a44262c25.jpg?1562733552
 value=2.500
 rarity=R
 type=Creature

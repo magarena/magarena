@@ -1,5 +1,5 @@
 name=Daring Skyjek
-image=https://magiccards.info/scans/en/gtc/9.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c28412d-9add-4911-8487-c84559006fb0.jpg?1561830643
 value=3.354
 rarity=C
 type=Creature

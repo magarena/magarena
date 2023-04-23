@@ -1,5 +1,5 @@
 name=Noble Hierarch
-image=https://magiccards.info/scans/en/mm2/151.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/400382a4-aea2-4827-b06a-1b0b3745908b.jpg?1599707413
 value=4.600
 rarity=R
 type=Creature

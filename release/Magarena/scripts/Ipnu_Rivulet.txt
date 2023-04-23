@@ -1,5 +1,5 @@
 name=Ipnu Rivulet
-image=https://magiccards.info/scans/en/hou/180.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/203011ef-3737-4fd1-bd23-0e531b5a7c32.jpg?1562791814
 value=2.500
 rarity=U
 type=Land

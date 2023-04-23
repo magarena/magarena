@@ -1,5 +1,5 @@
 name=Rocky Tar Pit
-image=https://magiccards.info/scans/en/mr/310.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41c99349-2181-4eee-bf71-717e1dc94f7f.jpg?1673306185
 value=3.448
 rarity=U
 type=Land

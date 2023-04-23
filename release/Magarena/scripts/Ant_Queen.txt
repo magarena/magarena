@@ -1,5 +1,5 @@
 name=Ant Queen
-image=https://magiccards.info/scans/en/mm2/139.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/499cc16c-9ead-45b9-b56c-7512cd54cf7c.jpg?1562261658
 value=4.097
 rarity=R
 type=Creature

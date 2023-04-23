@@ -1,5 +1,5 @@
 name=Dance with Devils
-image=https://magiccards.info/scans/en/soi/150.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/9189fafa-f30f-49a1-b07d-e432640d2bc5.jpg?1601077457
 value=2.500
 rarity=U
 type=Instant

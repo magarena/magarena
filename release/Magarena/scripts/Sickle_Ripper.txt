@@ -1,5 +1,5 @@
 name=Sickle Ripper
-image=https://magiccards.info/scans/en/mm2/96.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/831462c0-476b-4106-8381-e4177626b570.jpg?1562264315
 value=3.370
 rarity=C
 type=Creature

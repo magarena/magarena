@@ -1,5 +1,5 @@
 name=Setessan Battle Priest
-image=https://magiccards.info/scans/en/ths/29.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c9cfa33-dcec-4b34-9218-c08ad932d27b.jpg?1562822261
 value=3.030
 rarity=C
 type=Creature

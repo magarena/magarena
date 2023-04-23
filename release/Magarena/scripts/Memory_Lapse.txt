@@ -1,5 +1,5 @@
 name=Memory Lapse
-image=https://magiccards.info/scans/en/ema/60.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30202613-d05f-4f47-af97-d0b75ccac293.jpg?1634131658
 value=4.554
 rarity=C
 type=Instant

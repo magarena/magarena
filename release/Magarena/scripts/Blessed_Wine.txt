@@ -1,5 +1,5 @@
 name=Blessed Wine
-image=https://magiccards.info/scans/en/5e/287.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aee815d6-ce79-42ff-9d18-b2f92671d1c4.jpg?1562593278
 value=1.287
 rarity=C
 type=Instant

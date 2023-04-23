@@ -1,5 +1,5 @@
 name=Pestilence Rats
-image=https://magiccards.info/scans/en/ia/45.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bff7f6a6-0e90-4eb4-b76e-d98454975fb6.jpg?1562930850
 value=2.865
 rarity=C
 type=Creature

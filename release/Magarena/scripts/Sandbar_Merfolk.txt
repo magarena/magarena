@@ -1,5 +1,5 @@
 name=Sandbar Merfolk
-image=https://magiccards.info/scans/en/us/94.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65ce3960-abf1-4f28-8434-ab3b27d3b7cb.jpg?1562916285
 value=2.823
 rarity=C
 type=Creature

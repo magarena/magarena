@@ -1,5 +1,5 @@
 name=Vexing Scuttler
-image=https://magiccards.info/scans/en/emn/11.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c3dd0aa-f6e9-435c-af64-20e9de67efe9.jpg?1576383758
 image_updated=2016-09-05
 value=2.500
 rarity=U

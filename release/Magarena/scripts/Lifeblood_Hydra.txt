@@ -1,5 +1,5 @@
 name=Lifeblood Hydra
-image=https://magiccards.info/scans/en/c14/45.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d01469a-d085-4797-95ba-b2877c039469.jpg?1592673058
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Spinneret Sliver
-image=https://magiccards.info/scans/en/ts/219.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f86e30d-d9e8-48f7-8bd1-f2645f0ab3f4.jpg?1619398674
 value=3.085
 rarity=C
 type=Creature

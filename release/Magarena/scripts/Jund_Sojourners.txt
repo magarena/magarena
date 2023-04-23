@@ -1,5 +1,5 @@
 name=Jund Sojourners
-image=https://magiccards.info/scans/en/arb/116.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/893c08b2-1391-4aaf-b79c-d1125b232f73.jpg?1562642683
 value=2.614
 rarity=C
 type=Creature

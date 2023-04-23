@@ -1,5 +1,5 @@
 name=Serrated Arrows
-image=https://magiccards.info/scans/en/tsts/114.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1519b17c-9003-43e0-958f-1fcd20ab2d70.jpg?1562900072
 image_updated=2017-01-07
 value=4.173
 removal=2

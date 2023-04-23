@@ -1,5 +1,5 @@
 name=Icatian Scout
-image=https://magiccards.info/scans/en/5e/313.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08982a91-f194-4df7-a9b2-bcaeff5d44bf.jpg?1562867824
 value=3.056
 rarity=C
 type=Creature

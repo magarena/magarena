@@ -1,5 +1,5 @@
 name=Retraction Helix
-image=https://magiccards.info/scans/en/a25/71.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7aa3fdd0-34d8-47b3-9753-d2929838732e.jpg?1562437109
 image_updated=2018-04-27
 value=3.603
 rarity=C

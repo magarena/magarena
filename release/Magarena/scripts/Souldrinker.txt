@@ -1,5 +1,5 @@
 name=Souldrinker
-image=https://magiccards.info/scans/en/tp/52.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48c03fa5-c8cc-4b39-a673-c23e41a5802a.jpg?1561771100
 image_updated=2017-01-08
 value=2.210
 rarity=U

@@ -1,5 +1,5 @@
 name=Demon's Grasp
-image=https://magiccards.info/scans/en/bfz/108.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ee78a0d-8a76-4d21-b65c-03f27f1a96c5.jpg?1562229693
 image_updated=2015-11-08
 value=2.500
 rarity=C

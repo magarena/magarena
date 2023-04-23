@@ -1,5 +1,5 @@
 name=Farbog Explorer
-image=https://magiccards.info/scans/en/avr/21.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/489c6a2f-38b4-4ff9-95f7-431384480ed9.jpg?1592708304
 value=2.554
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Strafe
-image=https://magiccards.info/scans/en/ps/73.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec8b77cf-9c1e-4c8f-b452-295cc1570d0e.jpg?1595076315
 value=3.052
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Kami of the Tended Garden
-image=https://magiccards.info/scans/en/sok/134.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdedd830-9200-4e8b-84b4-00dc58cace35.jpg?1562495624
 value=2.250
 rarity=U
 type=Creature

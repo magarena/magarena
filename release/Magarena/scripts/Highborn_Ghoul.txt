@@ -1,5 +1,5 @@
 name=Highborn Ghoul
-image=https://magiccards.info/scans/en/dka/68.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbe999ed-b419-440c-9189-1046f43d7b87.jpg?1562954699
 value=3.281
 rarity=C
 type=Creature

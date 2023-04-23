@@ -1,5 +1,5 @@
 name=Sworn Defender
-image=https://magiccards.info/scans/en/ai/152.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/328e6ceb-30f7-415e-93b4-7075af0fed89.jpg?1562768240
 value=3.716
 rarity=R
 type=Creature

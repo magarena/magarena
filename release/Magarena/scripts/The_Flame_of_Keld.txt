@@ -1,5 +1,5 @@
 name=The Flame of Keld
-image=https://magiccards.info/scans/en/dom/123.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/324399ed-3d6e-4b4c-8f3d-b7802e2ecadf.jpg?1562733690
 value=2.500
 rarity=U
 type=Enchantment

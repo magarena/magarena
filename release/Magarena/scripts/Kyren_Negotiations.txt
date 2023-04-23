@@ -1,5 +1,5 @@
 name=Kyren Negotiations
-image=https://magiccards.info/scans/en/mm/198.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c263a17-bbc2-433e-93f8-72e57b818322.jpg?1562378967
 value=3.917
 rarity=U
 type=Enchantment

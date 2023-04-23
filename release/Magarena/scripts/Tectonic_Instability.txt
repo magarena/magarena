@@ -1,5 +1,5 @@
 name=Tectonic Instability
-image=https://magiccards.info/scans/en/in/173.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0476cc6b-ecc6-44d6-9f44-a90d4ee85daa.jpg?1618485193
 value=3.024
 rarity=R
 type=Enchantment

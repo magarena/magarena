@@ -1,5 +1,5 @@
 name=Fervor
-image=https://magiccards.info/scans/en/m13/129.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a88515c2-4b4f-4d16-9f50-149ef012e961.jpg?1562558336
 value=4.169
 rarity=R
 type=Enchantment

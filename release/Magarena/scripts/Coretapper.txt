@@ -1,5 +1,5 @@
 name=Coretapper
-image=https://magiccards.info/scans/en/ds/107.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/572083a6-e105-43d8-ae72-e1701611f729.jpg?1599708922
 value=4.424
 rarity=U
 type=Artifact,Creature

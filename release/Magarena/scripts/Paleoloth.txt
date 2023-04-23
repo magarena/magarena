@@ -1,5 +1,5 @@
 name=Paleoloth
-image=https://magiccards.info/scans/en/cfx/88.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b83ad801-44e7-48d0-9f34-0d10536bb4dc.jpg?1562803341
 value=3.066
 rarity=R
 type=Creature

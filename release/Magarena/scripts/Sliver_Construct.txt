@@ -1,5 +1,5 @@
 name=Sliver Construct
-image=https://magiccards.info/scans/en/m14/218.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/3129645a-221c-4eb5-88fd-12cc742a1dfe.jpg?1562827665
 value=1.648
 rarity=C
 type=Artifact,Creature

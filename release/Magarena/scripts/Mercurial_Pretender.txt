@@ -1,5 +1,5 @@
 name=Mercurial Pretender
-image=https://magiccards.info/scans/en/m15/68.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3160d28-230d-4bce-9050-6ab5895302ee.jpg?1562792926
 value=2.583
 rarity=R
 type=Creature

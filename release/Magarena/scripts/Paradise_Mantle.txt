@@ -1,5 +1,5 @@
 name=Paradise Mantle
-image=https://magiccards.info/scans/en/mma/211.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19cd6bcc-ca47-47cc-9fe4-c29e9c176485.jpg?1561966400
 value=4.316
 rarity=U
 type=Artifact

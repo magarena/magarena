@@ -1,5 +1,5 @@
 name=Phyrexian Crusader
-image=https://magiccards.info/scans/en/mbs/50.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32aaa8b9-987b-4809-8a54-aa29bdc18805.jpg?1562610492
 value=3.960
 rarity=R
 type=Creature

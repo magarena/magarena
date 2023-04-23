@@ -1,5 +1,5 @@
 name=Spined Wurm
-image=https://magiccards.info/scans/en/m11/197.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0de97b4e-42c7-47e5-a523-a47eadd068f7.jpg?1562428617
 value=2.720
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Horrifying Revelation
-image=https://magiccards.info/scans/en/mbs/45.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27ff5fbd-7ce8-4188-8228-0eab0d69a7a1.jpg?1562610248
 value=2.961
 rarity=C
 type=Sorcery

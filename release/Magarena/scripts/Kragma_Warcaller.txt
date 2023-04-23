@@ -1,5 +1,5 @@
 name=Kragma Warcaller
-image=https://magiccards.info/scans/en/ths/195.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78791fc6-054f-45eb-b8b0-28f2512d72b6.jpg?1562820128
 value=3.550
 rarity=U
 type=Creature

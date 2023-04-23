@@ -1,5 +1,5 @@
 name=Great-Horn Krushok
-image=https://magiccards.info/scans/en/frf/13.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/122e08cb-407b-4b3d-8af0-077ff96bf160.jpg?1562822577
 value=2.500
 rarity=C
 type=Creature

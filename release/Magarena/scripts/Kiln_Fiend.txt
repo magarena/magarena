@@ -1,5 +1,5 @@
 name=Kiln Fiend
-image=https://magiccards.info/scans/en/ima/137.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c957c94-3d2d-4b98-8990-cd8909462081.jpg?1601078178
 image_updated=2017-04-12
 value=4.366
 rarity=C

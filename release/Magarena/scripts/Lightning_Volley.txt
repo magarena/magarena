@@ -1,5 +1,5 @@
 name=Lightning Volley
-image=https://magiccards.info/scans/en/bng/101.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2af8746-033d-4a8a-b62d-ab5addb33d4d.jpg?1593092270
 value=3.365
 rarity=U
 type=Instant

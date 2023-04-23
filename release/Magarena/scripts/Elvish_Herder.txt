@@ -1,5 +1,5 @@
 name=Elvish Herder
-image=https://magiccards.info/scans/en/us/247.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cb2b07e-3d50-4b85-be2a-c99e9c8ebf25.jpg?1562907601
 value=4.075
 rarity=C
 type=Creature

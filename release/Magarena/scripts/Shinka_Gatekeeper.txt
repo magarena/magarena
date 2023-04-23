@@ -1,5 +1,5 @@
 name=Shinka Gatekeeper
-image=https://magiccards.info/scans/en/bok/117.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8fdaf49b-9524-4824-807e-c40fcb381742.jpg?1562878384
 value=0.891
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Strength of Arms
-image=https://magiccards.info/scans/en/soi/40.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/6843952d-e633-4992-99d5-4ef8b87494c8.jpg?1599710714
 value=2.500
 rarity=C
 type=Instant

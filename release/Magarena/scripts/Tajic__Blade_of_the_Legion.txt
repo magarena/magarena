@@ -1,5 +1,5 @@
 name=Tajic, Blade of the Legion
-image=https://magiccards.info/scans/en/dgm/107.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eea2cdad-529a-499f-8be7-53f939153b7e.jpg?1673305688
 value=3.811
 rarity=R
 type=Legendary,Creature

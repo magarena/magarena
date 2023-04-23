@@ -1,5 +1,5 @@
 name=Natural Obsolescence
-image=https://magiccards.info/scans/en/aer/118.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff693e03-4cc6-4903-8fc4-388d23c2f92f.jpg?1576382042
 value=2.500
 rarity=C
 type=Instant

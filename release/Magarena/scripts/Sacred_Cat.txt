@@ -1,5 +1,5 @@
 name=Sacred Cat
-image=https://magiccards.info/scans/en/akh/27.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08891c78-13c1-4d84-aa9c-78346b3b7d18.jpg?1543674760
 value=2.500
 rarity=C
 type=Creature

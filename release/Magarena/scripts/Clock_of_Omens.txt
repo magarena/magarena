@@ -1,5 +1,5 @@
 name=Clock of Omens
-image=https://magiccards.info/scans/en/m13/202.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b087992-9c30-4434-acb3-a12ee6f207b3.jpg?1562554222
 value=4.234
 rarity=U
 type=Artifact

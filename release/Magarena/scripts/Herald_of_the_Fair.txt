@@ -1,5 +1,5 @@
 name=Herald of the Fair
-image=https://magiccards.info/scans/en/kld/18.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce9ed217-8378-4a58-a00d-fa4e4cb27c9d.jpg?1576380894
 image_updated=2016-10-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Dingus Egg
-image=https://magiccards.info/scans/en/8e/297.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30d893a2-400c-459d-a26d-31f1f3b0642e.jpg?1562904939
 value=3.562
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Kitchen Finks
-image=https://magiccards.info/scans/en/mma/190.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a844d537-df73-422d-a154-f1c6b92d0469.jpg?1547518222
 value=4.198
 rarity=U
 type=Creature

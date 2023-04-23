@@ -1,5 +1,5 @@
 name=Crossway Vampire
-image=https://magiccards.info/scans/en/isd/135.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e7a137f-e19e-43a6-aab8-02b175c9d626.jpg?1562828966
 value=3.322
 rarity=C
 type=Creature

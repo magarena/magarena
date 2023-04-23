@@ -1,5 +1,5 @@
 name=Squee's Toy
-image=https://magiccards.info/scans/en/tp/299.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b524ae7-cb24-41af-b41b-3cb3ee8cf3b0.jpg?1562053269
 value=3.460
 rarity=C
 type=Artifact

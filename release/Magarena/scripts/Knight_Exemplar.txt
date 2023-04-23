@@ -1,5 +1,5 @@
 name=Knight Exemplar
-image=https://magiccards.info/scans/en/m11/20.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/8400f1a7-ebf0-49b2-a51d-3b2056c05b61.jpg?1682208479
 value=4.059
 rarity=R
 type=Creature

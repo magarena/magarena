@@ -1,5 +1,5 @@
 name=Runes of the Deus
-image=https://magiccards.info/scans/en/shm/215.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a5a84c7-c27f-49a2-8ae8-cb8e34ce0766.jpg?1562826573
 value=3.725
 rarity=C
 type=Enchantment

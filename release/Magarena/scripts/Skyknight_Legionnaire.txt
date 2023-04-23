@@ -1,5 +1,5 @@
 name=Skyknight Legionnaire
-image=https://magiccards.info/scans/en/mm3/184.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c27f2ce-702a-4ec2-a470-982171a9ec73.jpg?1572893806
 image_updated=2017-08-08
 value=3.821
 rarity=C

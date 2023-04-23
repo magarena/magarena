@@ -1,5 +1,5 @@
 name=Dwarven Vigilantes
-image=https://magiccards.info/scans/en/vi/77.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/077d33bb-41bf-440d-939b-67ab5aacb092.jpg?1562276955
 value=3.529
 rarity=C
 type=Creature

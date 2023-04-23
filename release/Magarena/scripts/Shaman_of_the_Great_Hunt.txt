@@ -1,5 +1,5 @@
 name=Shaman of the Great Hunt
-image=https://magiccards.info/scans/en/frf/113.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfbd8cd1-465c-4501-94ba-5a3402f30ded.jpg?1562829430
 value=2.500
 rarity=M
 type=Creature

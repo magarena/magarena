@@ -1,5 +1,5 @@
 name=Battlefield Scavenger
-image=https://magiccards.info/scans/en/akh/118.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0eb1a40-8239-4544-96a1-a4acaf7e2054.jpg?1543675479
 value=2.500
 rarity=U
 type=Creature

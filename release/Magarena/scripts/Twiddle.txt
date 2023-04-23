@@ -1,5 +1,5 @@
 name=Twiddle
-image=https://magiccards.info/scans/en/8e/111.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b25858a-ab2d-441a-a3fe-6d5ecd7f05be.jpg?1562900371
 value=3.675
 rarity=C
 type=Instant

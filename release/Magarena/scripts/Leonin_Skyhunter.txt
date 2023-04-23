@@ -1,5 +1,5 @@
 name=Leonin Skyhunter
-image=https://magiccards.info/scans/en/mbs/11.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15d6476c-1944-48e8-9af6-6db78edd58e5.jpg?1562899585
 value=3.304
 rarity=C
 type=Creature

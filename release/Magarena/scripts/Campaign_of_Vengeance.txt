@@ -1,5 +1,5 @@
 name=Campaign of Vengeance
-image=https://magiccards.info/scans/en/emn/182.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c284997a-cfc3-4ffc-bc25-00c130fb1eb0.jpg?1576384975
 image_updated=2016-09-05
 value=2.500
 rarity=U

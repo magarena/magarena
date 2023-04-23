@@ -1,5 +1,5 @@
 name=Fyndhorn Bow
-image=https://magiccards.info/scans/en/ia/293.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65dd0a41-cc51-4728-b597-fdb2510accd8.jpg?1587912147
 value=1.750
 rarity=U
 type=Artifact

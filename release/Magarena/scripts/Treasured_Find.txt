@@ -1,5 +1,5 @@
 name=Treasured Find
-image=https://magiccards.info/scans/en/rtr/204.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9317b616-eabe-461a-bd60-6dd8620becb4.jpg?1592754833
 value=3.812
 rarity=U
 type=Sorcery

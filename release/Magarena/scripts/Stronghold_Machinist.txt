@@ -1,5 +1,5 @@
 name=Stronghold Machinist
-image=https://magiccards.info/scans/en/ne/46.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3567b4e-6e31-40b0-83ea-4a2a58bd637c.jpg?1562632174
 value=3.985
 rarity=U
 type=Creature

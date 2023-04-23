@@ -1,5 +1,5 @@
 name=Dega Sanctuary
-image=https://magiccards.info/scans/en/ap/5.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7ddfdb5-3981-4954-af5f-2459d22ec575.jpg?1562938384
 value=3.707
 rarity=U
 type=Enchantment

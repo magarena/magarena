@@ -1,5 +1,5 @@
 name=Hold the Line
-image=https://magiccards.info/scans/en/chk/13.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d20ee9c8-6d58-42fc-8b27-bfd0ea6d4374.jpg?1592754960
 image_updated=2016-12-10
 value=3.500
 rarity=R

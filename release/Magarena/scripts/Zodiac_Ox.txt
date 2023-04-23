@@ -1,5 +1,5 @@
 name=Zodiac Ox
-image=https://magiccards.info/scans/en/p3k/161.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a731b3a-0065-448d-841c-28700d78a4fd.jpg?1562255850
 value=3.190
 rarity=U
 type=Creature

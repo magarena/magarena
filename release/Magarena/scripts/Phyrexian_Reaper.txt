@@ -1,5 +1,5 @@
 name=Phyrexian Reaper
-image=https://magiccards.info/scans/en/in/117.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccdd498b-1081-43fe-8193-518337a5a3ea.jpg?1562936179
 value=2.797
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Gateway Shade
-image=https://magiccards.info/scans/en/gtc/65.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa33fc15-3a4f-48bc-be7c-fdec1cb49c10.jpg?1561841354
 value=2.868
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Bloodshot Trainee
-image=https://magiccards.info/scans/en/mm2/107.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/779a130b-1d23-4a20-9914-dbdc2268ae3b.jpg?1599706228
 value=2.909
 rarity=U
 type=Creature

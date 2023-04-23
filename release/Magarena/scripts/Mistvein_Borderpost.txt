@@ -1,5 +1,5 @@
 name=Mistvein Borderpost
-image=https://magiccards.info/scans/en/arb/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d0588a8-6039-42d6-98ee-8fea16f63e88.jpg?1562914450
 image_updated=2016-12-23
 value=2.913
 rarity=C

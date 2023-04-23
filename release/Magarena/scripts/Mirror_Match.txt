@@ -1,5 +1,5 @@
 name=Mirror Match
-image=https://magiccards.info/scans/en/c15/13.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e0b8b4c-75ce-4b1d-8943-c54555e9f015.jpg?1562701272
 image_updated=2016-02-29
 value=2.500
 rarity=U

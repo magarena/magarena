@@ -1,5 +1,5 @@
 name=Champion of Lambholt
-image=https://magiccards.info/scans/en/c16/144.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46eff31d-f460-48f2-aab7-8b9b89cd87fe.jpg?1682209453
 image_updated=2017-08-17
 value=3.922
 rarity=R

@@ -1,5 +1,5 @@
 name=Molten Primordial
-image=https://magiccards.info/scans/en/gtc/101.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8f5c7e2-f4da-4cee-a7d0-80b29bb73acd.jpg?1561840928
 value=3.222
 rarity=R
 type=Creature

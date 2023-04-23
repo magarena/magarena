@@ -1,5 +1,5 @@
 name=Flameblast Dragon
-image=https://magiccards.info/scans/en/m12/133.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c66293df-a50e-4c64-9482-a2af68288d76.jpg?1592710764
 value=3.677
 rarity=R
 type=Creature

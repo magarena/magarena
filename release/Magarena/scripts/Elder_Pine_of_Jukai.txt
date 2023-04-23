@@ -1,5 +1,5 @@
 name=Elder Pine of Jukai
-image=https://magiccards.info/scans/en/sok/128.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51c3e47b-a788-46b7-bf15-1216692e637a.jpg?1562493721
 value=3.295
 rarity=C
 type=Creature

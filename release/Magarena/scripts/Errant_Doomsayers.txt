@@ -1,5 +1,5 @@
 name=Errant Doomsayers
-image=https://magiccards.info/scans/en/ts/15.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0eb5c6e6-7251-4b80-9561-742442d8a497.jpg?1619392875
 value=2.023
 rarity=C
 type=Creature

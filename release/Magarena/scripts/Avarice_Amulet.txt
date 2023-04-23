@@ -1,5 +1,5 @@
 name=Avarice Amulet
-image=https://magiccards.info/scans/en/m15/212.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec56727f-6280-4625-96b9-9b599af0dada.jpg?1562796482
 value=3.000
 rarity=R
 type=Artifact

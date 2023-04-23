@@ -1,5 +1,5 @@
 name=Glowrider
-image=https://magiccards.info/scans/en/le/15.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9ad94e39-0aac-46bb-a7f2-bd88c537cb9c.jpg?1562926255
 value=4.147
 rarity=R
 type=Creature

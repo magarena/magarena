@@ -1,5 +1,5 @@
 name=Neurok Commando
-image=https://magiccards.info/scans/en/mbs/28.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa7084f3-9335-401f-9a62-6f131351338d.jpg?1562613766
 value=3.133
 rarity=U
 type=Creature

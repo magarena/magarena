@@ -1,5 +1,5 @@
 name=Grisly Spectacle
-image=https://magiccards.info/scans/en/ima/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3ce3816e-0f81-40b6-a592-ba2c65243c6d.jpg?1562847932
 image_updated=2017-04-12
 value=3.812
 rarity=C

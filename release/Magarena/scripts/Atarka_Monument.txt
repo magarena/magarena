@@ -1,5 +1,5 @@
 name=Atarka Monument
-image=https://magiccards.info/scans/en/dtk/235.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63d52217-a340-4567-9b07-28092a7dc561.jpg?1562787370
 value=2.500
 rarity=U
 type=Artifact

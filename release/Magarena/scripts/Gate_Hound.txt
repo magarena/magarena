@@ -1,5 +1,5 @@
 name=Gate Hound
-image=https://magiccards.info/scans/en/rav/19.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06732c6f-c3b5-4c68-82a0-655cffff79db.jpg?1598913702
 value=1.575
 rarity=C
 type=Creature

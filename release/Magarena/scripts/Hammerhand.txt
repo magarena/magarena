@@ -1,5 +1,5 @@
 name=Hammerhand
-image=https://magiccards.info/scans/en/ima/132.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d858e9e-452b-4281-9379-641ef6ebef39.jpg?1673307382
 image_updated=2017-04-12
 value=2.750
 rarity=C

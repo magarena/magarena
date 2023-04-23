@@ -1,5 +1,5 @@
 name=Murasa Pyromancer
-image=https://magiccards.info/scans/en/zen/139.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60daf59f-ffba-403b-8028-787ff33f2d6c.jpg?1562612706
 value=3.000
 rarity=U
 type=Creature

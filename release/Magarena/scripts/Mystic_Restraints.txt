@@ -1,5 +1,5 @@
 name=Mystic Restraints
-image=https://magiccards.info/scans/en/chk/76.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96cc4428-3f86-4359-927d-4009ada52c5d.jpg?1562762947
 value=2.649
 rarity=C
 type=Enchantment

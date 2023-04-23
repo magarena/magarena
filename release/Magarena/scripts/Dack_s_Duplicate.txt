@@ -1,5 +1,5 @@
 name=Dack's Duplicate
-image=https://magiccards.info/scans/en/cns/43.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/439ad8e0-575b-43cc-95fd-53ddd14e65c2.jpg?1673148492
 value=4.042
 rarity=R
 type=Creature

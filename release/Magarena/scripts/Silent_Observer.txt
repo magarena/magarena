@@ -1,5 +1,5 @@
 name=Silent Observer
-image=https://magiccards.info/scans/en/soi/86.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/535e3d1b-b71b-406a-bec6-73b2cb45f6c8.jpg?1576384231
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Overbeing of Myth
-image=https://magiccards.info/scans/en/eve/157.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11bbc404-a456-4a4b-af88-23921d80d671.jpg?1576673027
 value=4.043
 rarity=R
 type=Creature

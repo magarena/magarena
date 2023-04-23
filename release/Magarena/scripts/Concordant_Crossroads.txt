@@ -1,5 +1,5 @@
 name=Concordant Crossroads
-image=https://magiccards.info/scans/en/lg/93.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9a26f51-5bff-4f06-abaa-6fbb56a8b5b6.jpg?1673148053
 value=4.575
 rarity=R
 type=World,Enchantment

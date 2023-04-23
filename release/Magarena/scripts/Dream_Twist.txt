@@ -1,5 +1,5 @@
 name=Dream Twist
-image=https://magiccards.info/scans/en/ema/47.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9fa20df-b8d5-4de7-a2fa-6ced4bfcf979.jpg?1580013938
 value=3.562
 rarity=C
 type=Instant

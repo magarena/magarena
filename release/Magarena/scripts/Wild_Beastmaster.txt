@@ -1,5 +1,5 @@
 name=Wild Beastmaster
-image=https://magiccards.info/scans/en/c16/176.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc52bf91-a8fc-43de-9e28-3b40cd08445a.jpg?1637631320
 image_updated=2017-08-17
 value=3.551
 rarity=R

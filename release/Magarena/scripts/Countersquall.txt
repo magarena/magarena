@@ -1,5 +1,5 @@
 name=Countersquall
-image=https://magiccards.info/scans/en/cfx/103.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f99f864e-a10f-47f4-94c5-4571b5c11b3b.jpg?1547518010
 value=3.975
 rarity=U
 type=Instant

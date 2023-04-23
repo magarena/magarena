@@ -1,5 +1,5 @@
 name=Merrow Bonegnawer
-image=https://magiccards.info/scans/en/eve/37.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09e49aa4-ac23-49b1-b9b7-49d45b56b21d.jpg?1562897079
 value=2.542
 rarity=C
 type=Creature

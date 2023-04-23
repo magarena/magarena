@@ -1,5 +1,5 @@
 name=Vicious Kavu
-image=https://magiccards.info/scans/en/in/284.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31e9e629-7c25-4d45-aa35-9ba5f95b43cb.jpg?1562905117
 value=3.345
 rarity=U
 type=Creature

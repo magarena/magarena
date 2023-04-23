@@ -1,5 +1,5 @@
 name=Hill Giant
-image=https://magiccards.info/scans/en/10e/212.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14c2be6a-9ca6-4d3a-8dd0-db4ea40799f8.jpg?1562544130
 image_updated=2016-12-10
 value=1.988
 rarity=C

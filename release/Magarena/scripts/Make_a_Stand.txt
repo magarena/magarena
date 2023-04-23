@@ -1,5 +1,5 @@
 name=Make a Stand
-image=https://magiccards.info/scans/en/m19/26.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a948ef4-145f-4bea-b4af-5daa951b338c.jpg?1608908877
 image_updated=2018-08-07
 value=2.500
 rarity=U

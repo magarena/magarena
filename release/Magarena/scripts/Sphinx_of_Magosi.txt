@@ -1,5 +1,5 @@
 name=Sphinx of Magosi
-image=https://magiccards.info/scans/en/cn2/122.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2b4f70d-e922-4ecb-9d5a-6253f7a7716c.jpg?1562199986
 image_updated=2017-08-29
 value=4.269
 rarity=R

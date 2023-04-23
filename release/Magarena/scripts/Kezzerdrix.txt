@@ -1,5 +1,5 @@
 name=Kezzerdrix
-image=https://magiccards.info/scans/en/tp/33.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2744639b-f7fa-435b-9275-026eae1dd0b7.jpg?1562428661
 value=2.875
 rarity=R
 type=Creature

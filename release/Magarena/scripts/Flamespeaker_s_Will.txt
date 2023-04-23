@@ -1,5 +1,5 @@
 name=Flamespeaker's Will
-image=https://magiccards.info/scans/en/jou/95.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32b5e3bb-f9e8-4a74-9798-41d8f8515e12.jpg?1593095961
 value=2.425
 rarity=C
 type=Enchantment

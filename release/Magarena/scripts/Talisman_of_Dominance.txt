@@ -1,5 +1,5 @@
 name=Talisman of Dominance
-image=https://magiccards.info/scans/en/mi/253.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1ca2a0f9-b403-4d1e-961c-32b64bab81d0.jpg?1674142759
 value=3.743
 rarity=U
 type=Artifact

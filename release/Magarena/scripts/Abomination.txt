@@ -1,5 +1,5 @@
 name=Abomination
-image=https://magiccards.info/scans/en/4e/1.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a363bc91-8278-448e-9d5c-564e4b51eb62.jpg?1559603880
 value=2.867
 rarity=U
 type=Creature

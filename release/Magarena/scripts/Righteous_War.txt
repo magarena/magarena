@@ -1,5 +1,5 @@
 name=Righteous War
-image=https://magiccards.info/scans/en/vi/134.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbcacb8e-1aff-4807-b70c-a17d6703d279.jpg?1562278624
 value=3.602
 rarity=R
 type=Enchantment

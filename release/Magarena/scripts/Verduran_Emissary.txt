@@ -1,5 +1,5 @@
 name=Verduran Emissary
-image=https://magiccards.info/scans/en/in/221.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf0a1951-4482-4ba0-b29e-2091adde0628.jpg?1562933708
 image_updated=2017-01-11
 value=2.700
 rarity=U

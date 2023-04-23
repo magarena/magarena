@@ -1,5 +1,5 @@
 name=Needlebite Trap
-image=https://magiccards.info/scans/en/zen/105.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8dee4c4e-9505-43e5-88af-db5f9e56a749.jpg?1562614287
 value=3.809
 rarity=U
 type=Instant

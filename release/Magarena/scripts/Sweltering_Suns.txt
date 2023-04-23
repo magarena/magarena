@@ -1,5 +1,5 @@
 name=Sweltering Suns
-image=https://magiccards.info/scans/en/akh/149.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f11cd406-c6ae-4018-ae45-4e5577aa82ae.jpg?1543675701
 value=2.500
 rarity=R
 type=Sorcery

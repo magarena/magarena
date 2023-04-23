@@ -1,5 +1,5 @@
 name=Wispweaver Angel
-image=https://magiccards.info/scans/en/kld/35.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57300d02-faad-43b2-afa9-023d1c3a0901.jpg?1576381068
 image_updated=2016-10-05
 value=2.500
 rarity=U

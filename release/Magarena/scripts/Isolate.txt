@@ -1,5 +1,5 @@
 name=Isolate
-image=https://magiccards.info/scans/en/m19/17.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d9ce5eb-eaeb-4c93-8d31-4aeb8fcc4cce.jpg?1562301710
 value=2.500
 rarity=R
 type=Instant

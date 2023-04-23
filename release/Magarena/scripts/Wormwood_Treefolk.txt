@@ -1,5 +1,5 @@
 name=Wormwood Treefolk
-image=https://magiccards.info/scans/en/dk/55.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d4468de-2452-47b6-9417-b92055e496eb.jpg?1562907723
 value=2.694
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Liliana's Elite
-image=https://magiccards.info/scans/en/emn/94.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3da81fa-0bd1-4415-b112-3fa4438efe4b.jpg?1673147571
 image_updated=2016-09-05
 value=2.500
 rarity=U

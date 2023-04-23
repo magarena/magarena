@@ -1,5 +1,5 @@
 name=Thrun, the Last Troll
-image=https://magiccards.info/scans/en/mbs/92.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d393da0-4cb6-4ae8-b747-8e6d0fa7f55a.jpg?1562611602
 value=4.174
 rarity=M
 type=Legendary,Creature

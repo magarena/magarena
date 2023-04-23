@@ -1,5 +1,5 @@
 name=Llanowar Druid
-image=https://magiccards.info/scans/en/wl/75.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffad279c-762a-42cf-ac20-f4e48734c194.jpg?1562804426
 value=4.110
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Aggravate
-image=https://magiccards.info/scans/en/avr/125.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/999f40a7-b723-42e1-83c1-f45a72a26dd4.jpg?1592709004
 value=2.250
 removal=2
 rarity=U

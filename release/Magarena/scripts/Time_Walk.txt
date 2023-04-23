@@ -1,5 +1,5 @@
 name=Time Walk
-image=https://magiccards.info/scans/en/un/84.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70901356-3266-4bd9-aacc-f06c27271de5.jpg?1614638832
 value=5.000
 rarity=R
 type=Sorcery

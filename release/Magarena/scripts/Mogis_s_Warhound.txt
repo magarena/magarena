@@ -1,5 +1,5 @@
 name=Mogis's Warhound
-image=https://magiccards.info/scans/en/jou/104.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2e73e06-d708-41dc-b20c-1f71651230e1.jpg?1593096042
 value=3.261
 rarity=U
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Balthor the Defiled
-image=https://magiccards.info/scans/en/ju/61.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed4cc273-adc3-4f46-9743-134b552d1d56.jpg?1562632510
 value=3.974
 rarity=R
 type=Legendary,Creature

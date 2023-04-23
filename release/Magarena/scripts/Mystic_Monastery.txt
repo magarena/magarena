@@ -1,5 +1,5 @@
 name=Mystic Monastery
-image=https://magiccards.info/scans/en/c16/310.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70462786-afed-4277-93c7-3aa150a90060.jpg?1682210574
 image_updated=2017-08-17
 value=3.750
 rarity=U

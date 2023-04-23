@@ -1,5 +1,5 @@
 name=Femeref Knight
-image=https://magiccards.info/scans/en/mr/222.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/915a2e07-b449-4d94-93e3-e756e891c542.jpg?1562720484
 value=3.259
 rarity=C
 type=Creature

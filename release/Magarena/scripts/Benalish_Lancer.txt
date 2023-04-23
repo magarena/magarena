@@ -1,5 +1,5 @@
 name=Benalish Lancer
-image=https://magiccards.info/scans/en/in/7.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/8453b08f-34cb-491d-be7d-dc4022f7c131.jpg?1562922912
 value=3.132
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vicious Hunger
-image=https://magiccards.info/scans/en/8e/171.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a232093a-f136-428d-9a6d-c03b1a20126a.jpg?1562933282
 image_updated=2017-01-11
 value=3.659
 rarity=C

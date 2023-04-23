@@ -1,5 +1,5 @@
 name=Wakestone Gargoyle
-image=https://magiccards.info/scans/en/cns/88.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6198d0c3-bf08-445a-8fd7-7d79b745d9a8.jpg?1562865445
 value=3.786
 rarity=U
 type=Creature

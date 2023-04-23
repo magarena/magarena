@@ -1,5 +1,5 @@
 name=Phyrexian Lens
-image=https://magiccards.info/scans/en/in/307.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ec9a91d-7af0-44a8-839f-fb9960be0ddd.jpg?1562917154
 value=1.593
 rarity=R
 type=Artifact

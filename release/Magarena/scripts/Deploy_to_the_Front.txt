@@ -1,5 +1,5 @@
 name=Deploy to the Front
-image=https://magiccards.info/scans/en/c14/6.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10744088-b028-43aa-8a77-cd2a430fbfb6.jpg?1561932619
 value=2.500
 rarity=R
 type=Sorcery

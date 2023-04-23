@@ -1,5 +1,5 @@
 name=Rugged Highlands
-image=https://magiccards.info/scans/en/c16/318.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3aeef1b1-a351-47ce-a686-a0eb0a35a894.jpg?1682205872
 image_updated=2017-08-17
 value=3.333
 rarity=C

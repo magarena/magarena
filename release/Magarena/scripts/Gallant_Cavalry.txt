@@ -1,5 +1,5 @@
 name=Gallant Cavalry
-image=https://magiccards.info/scans/en/m19/12.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e388c433-3a37-45f6-825a-d13d2223b6f7.jpg?1562304821
 value=2.500
 rarity=C
 type=Creature

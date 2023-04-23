@@ -1,5 +1,5 @@
 name=Cogwork Librarian
-image=https://magiccards.info/scans/en/cns/58.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/453de664-0f09-4772-a626-51d58d1173f3.jpg?1562864968
 value=3.938
 rarity=C
 type=Artifact,Creature

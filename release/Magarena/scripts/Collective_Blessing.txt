@@ -1,5 +1,5 @@
 name=Collective Blessing
-image=https://magiccards.info/scans/en/rtr/150.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53c84c4d-e6d6-4eac-9d14-5b6cba914c3d.jpg?1562786432
 value=3.643
 rarity=R
 type=Enchantment

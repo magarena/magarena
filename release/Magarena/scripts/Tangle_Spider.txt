@@ -1,5 +1,5 @@
 name=Tangle Spider
-image=https://magiccards.info/scans/en/10e/303.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f1e75e1-a827-46c1-896f-cd8fbdf79fa8.jpg?1562551529
 value=2.260
 rarity=U
 type=Creature

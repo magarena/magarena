@@ -1,5 +1,5 @@
 name=Opposition
-image=https://magiccards.info/scans/en/7e/92.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8980e292-1384-4662-aa72-bc4f6ca30d51.jpg?1562242218
 value=4.462
 rarity=R
 type=Enchantment

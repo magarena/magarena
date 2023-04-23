@@ -1,5 +1,5 @@
 name=Giant Caterpillar
-image=https://magiccards.info/scans/en/mm/249.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdc5eb8a-4531-4408-90fe-9b352d71a052.jpg?1562382571
 value=2.744
 rarity=C
 type=Creature

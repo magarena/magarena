@@ -1,5 +1,5 @@
 name=Dwarven Pony
-image=https://magiccards.info/scans/en/hl/89.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53a3019f-0b27-4ba3-be4c-73ed50eb9514.jpg?1562587286
 value=2.271
 rarity=R
 type=Creature

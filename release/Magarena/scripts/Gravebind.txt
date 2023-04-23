@@ -1,5 +1,5 @@
 name=Gravebind
-image=https://magiccards.info/scans/en/ia/17.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2949265-bfd4-4cc8-8d50-3f0f0b1a46dd.jpg?1562933383
 value=2.429
 rarity=R
 type=Instant

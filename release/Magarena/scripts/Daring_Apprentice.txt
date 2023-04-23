@@ -1,5 +1,5 @@
 name=Daring Apprentice
-image=https://magiccards.info/scans/en/9e/72.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c5becbf-77ac-4bd2-912d-7f7c944c2a0b.jpg?1562736713
 value=3.228
 rarity=R
 type=Creature

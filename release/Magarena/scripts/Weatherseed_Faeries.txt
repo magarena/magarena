@@ -1,5 +1,5 @@
 name=Weatherseed Faeries
-image=https://magiccards.info/scans/en/ul/48.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c7ebec7-7375-4362-9489-437ff9305f19.jpg?1562863738
 value=3.586
 rarity=C
 type=Creature

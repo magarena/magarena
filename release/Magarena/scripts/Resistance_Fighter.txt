@@ -1,5 +1,5 @@
 name=Resistance Fighter
-image=https://magiccards.info/scans/en/6e/38.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1abf09d8-f972-4b81-80e9-70fb4a33ed56.jpg?1562815210
 value=3.154
 rarity=C
 type=Creature

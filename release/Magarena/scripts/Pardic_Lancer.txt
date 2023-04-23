@@ -1,5 +1,5 @@
 name=Pardic Lancer
-image=https://magiccards.info/scans/en/tr/107.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f487a6a7-066a-49bb-ab76-d79fc4300c29.jpg?1562632719
 value=1.667
 rarity=C
 type=Creature

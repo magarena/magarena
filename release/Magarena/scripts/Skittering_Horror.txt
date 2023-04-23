@@ -1,5 +1,5 @@
 name=Skittering Horror
-image=https://magiccards.info/scans/en/ud/70.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80cd2771-9681-4b4a-8c2c-a2ffd7361c35.jpg?1562444253
 value=3.772
 rarity=C
 type=Creature

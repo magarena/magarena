@@ -1,5 +1,5 @@
 name=Primal Rage
-image=https://magiccards.info/scans/en/10e/286.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebe3b738-703d-465c-bc76-2b66f1e0aff2.jpg?1562557248
 value=4.196
 rarity=U
 type=Enchantment

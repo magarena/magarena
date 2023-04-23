@@ -1,5 +1,5 @@
 name=Ancestral Vengeance
-image=https://magiccards.info/scans/en/frf/61.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0d0094e-07ff-4b47-8c6e-500adabf12e4.jpg?1562830736
 value=2.500
 rarity=C
 type=Enchantment

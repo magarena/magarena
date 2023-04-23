@@ -1,5 +1,5 @@
 name=Might of Alara
-image=https://magiccards.info/scans/en/cfx/85.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9514c013-bc11-4cc5-af8c-f82fd4098bcf.jpg?1562802491
 value=2.667
 rarity=C
 type=Instant

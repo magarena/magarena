@@ -1,5 +1,5 @@
 name=Sliver Legion
-image=https://magiccards.info/scans/en/fut/158.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87545415-2e27-4841-a3af-7653af2ba6d3.jpg?1619404140
 value=4.203
 rarity=R
 type=Legendary,Creature

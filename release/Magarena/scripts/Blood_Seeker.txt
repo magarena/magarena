@@ -1,5 +1,5 @@
 name=Blood Seeker
-image=https://magiccards.info/scans/en/m12/81.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8033de8d-a396-4097-aedd-f9facb800b33.jpg?1562649032
 value=3.386
 rarity=C
 type=Creature

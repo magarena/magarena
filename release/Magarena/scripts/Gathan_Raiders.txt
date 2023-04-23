@@ -1,5 +1,5 @@
 name=Gathan Raiders
-image=https://magiccards.info/scans/en/fut/99.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58c232e5-54e2-44b7-85b1-ed039a8e5a73.jpg?1619397006
 image_updated=2016-12-13
 value=3.934
 rarity=C

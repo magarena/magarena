@@ -1,5 +1,5 @@
 name=Goblin Gardener
-image=https://magiccards.info/scans/en/7e/188.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f5b02af-140e-404d-bf8a-6a706b323a13.jpg?1562244157
 value=3.012
 rarity=C
 type=Creature

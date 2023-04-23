@@ -1,5 +1,5 @@
 name=Diligent Farmhand
-image=https://magiccards.info/scans/en/od/237.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bb40e09-6855-46d5-9bc9-bc6b2b0d7653.jpg?1562917834
 value=3.684
 rarity=C
 type=Creature

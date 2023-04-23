@@ -1,5 +1,5 @@
 name=Craw Wurm
-image=https://magiccards.info/scans/en/m10/173.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3875f73d-6108-488b-bd34-4cf2c23ce6b3.jpg?1561976333
 value=2.336
 rarity=C
 type=Creature

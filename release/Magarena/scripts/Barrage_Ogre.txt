@@ -1,5 +1,5 @@
 name=Barrage Ogre
-image=https://magiccards.info/scans/en/som/83.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98e67a2f-7556-47aa-a953-89dcfe57a6ee.jpg?1561759327
 value=2.685
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Tranquil Grove
-image=https://magiccards.info/scans/en/6e/258.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1177118a-6455-4177-8a6d-a43a03160ab3.jpg?1562814734
 value=4.250
 rarity=R
 type=Enchantment

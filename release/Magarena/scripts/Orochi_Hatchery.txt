@@ -1,5 +1,5 @@
 name=Orochi Hatchery
-image=https://magiccards.info/scans/en/chk/266.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d3804ed-192d-47a1-ae7e-60b6827e2a72.jpg?1562704805
 image_updated=2016-02-29
 value=3.894
 rarity=R

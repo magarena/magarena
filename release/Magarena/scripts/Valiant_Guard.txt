@@ -1,5 +1,5 @@
 name=Valiant Guard
-image=https://magiccards.info/scans/en/cfx/19.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83ec1486-900b-4763-9b5b-390cb00aff02.jpg?1562802159
 value=2.386
 rarity=C
 type=Creature

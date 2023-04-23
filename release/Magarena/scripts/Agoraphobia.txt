@@ -1,5 +1,5 @@
 name=Agoraphobia
-image=https://magiccards.info/scans/en/gtc/30.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b450de6b-4b2f-4004-be7c-484434f28faf.jpg?1592754485
 value=3.500
 rarity=U
 type=Enchantment

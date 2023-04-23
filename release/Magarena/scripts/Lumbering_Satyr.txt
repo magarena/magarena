@@ -1,5 +1,5 @@
 name=Lumbering Satyr
-image=https://magiccards.info/scans/en/mm/257.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d897088-0667-4864-91c3-5f0ac7f9b220.jpg?1562380887
 value=2.221
 rarity=U
 type=Creature

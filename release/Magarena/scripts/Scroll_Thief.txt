@@ -1,5 +1,5 @@
 name=Scroll Thief
-image=https://magiccards.info/scans/en/m13/66.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7caae7e-9b88-4428-b9e3-86cb8c84bd65.jpg?1592764650
 value=3.340
 rarity=C
 type=Creature

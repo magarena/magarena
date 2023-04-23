@@ -1,5 +1,5 @@
 name=Goblin Festival
-image=https://magiccards.info/scans/en/ud/83.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac067eb8-427f-4bfa-b392-0bb41ac8370e.jpg?1562444742
 value=3.217
 rarity=R
 type=Enchantment

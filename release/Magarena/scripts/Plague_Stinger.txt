@@ -1,5 +1,5 @@
 name=Plague Stinger
-image=https://magiccards.info/scans/en/som/75.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aae856bc-f65f-42ba-9344-1a30b356c041.jpg?1562821570
 value=3.975
 rarity=C
 type=Creature

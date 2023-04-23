@@ -1,5 +1,5 @@
 name=Eidolon of Countless Battles
-image=https://magiccards.info/scans/en/bng/7.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d16283b-b5bb-48e8-8c97-db5ad74fd544.jpg?1593091389
 value=3.846
 rarity=R
 type=Enchantment,Creature

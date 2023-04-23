@@ -1,5 +1,5 @@
 name=Dungeon Shade
-image=https://magiccards.info/scans/en/sh/8.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e2f317a-578c-4f7d-a185-b22bf7c32624.jpg?1562428902
 value=3.534
 rarity=C
 type=Creature

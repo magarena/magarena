@@ -1,5 +1,5 @@
 name=Goliath Beetle
-image=https://magiccards.info/scans/en/ud/107.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f83d8765-f654-4837-9b06-739610188415.jpg?1562445658
 value=3.054
 rarity=C
 type=Creature

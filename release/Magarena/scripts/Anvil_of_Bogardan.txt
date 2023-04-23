@@ -1,5 +1,5 @@
 name=Anvil of Bogardan
-image=https://magiccards.info/scans/en/vi/141.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7ff965dd-54b4-4f21-a52f-81c0dd1e691e.jpg?1562278142
 value=3.938
 rarity=R
 type=Artifact

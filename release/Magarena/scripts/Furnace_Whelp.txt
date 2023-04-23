@@ -1,5 +1,5 @@
 name=Furnace Whelp
-image=https://magiccards.info/scans/en/ima/129.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2ce76e86-39f3-4ebf-b550-88ea7f23a91f.jpg?1601077737
 image_updated=2017-04-12
 value=2.700
 rarity=C

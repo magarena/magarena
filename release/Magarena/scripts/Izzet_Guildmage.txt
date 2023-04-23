@@ -1,5 +1,5 @@
 name=Izzet Guildmage
-image=https://magiccards.info/scans/en/gp/145.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0eaf3018-ae27-4e2e-b6da-dbdebd58fc2b.jpg?1592713293
 value=4.274
 rarity=U
 type=Creature

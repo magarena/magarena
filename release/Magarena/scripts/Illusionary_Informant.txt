@@ -1,5 +1,5 @@
 name=Illusionary Informant
-image=https://magiccards.info/scans/en/cn2/32.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/766150d9-c795-4675-a849-a388e8ae148d.jpg?1576381736
 image_updated=2016-09-05
 value=2.500
 rarity=C

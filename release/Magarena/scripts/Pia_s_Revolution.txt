@@ -1,5 +1,5 @@
 name=Pia's Revolution
-image=https://magiccards.info/scans/en/aer/91.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51da6ff6-4d81-488e-83ff-8758f6c7bb9f.jpg?1576381857
 value=2.500
 rarity=R
 type=Enchantment

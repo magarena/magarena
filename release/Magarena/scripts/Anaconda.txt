@@ -1,5 +1,5 @@
 name=Anaconda
-image=https://magiccards.info/scans/en/9e/229.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f57f8bf-228b-4da2-823c-67bce8b574cd.jpg?1562739314
 value=3.273
 rarity=U
 type=Creature

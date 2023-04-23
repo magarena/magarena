@@ -1,5 +1,5 @@
 name=Snapping Sailback
-image=https://magiccards.info/scans/en/xln/208.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0af1eadf-f7ea-40be-a0cc-b79e4161db34.jpg?1562550413
 value=2.500
 rarity=U
 type=Creature

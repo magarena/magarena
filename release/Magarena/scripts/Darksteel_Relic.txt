@@ -1,5 +1,5 @@
 name=Darksteel Relic
-image=https://magiccards.info/scans/en/nph/134.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fd8c918-62d9-41be-a3e1-32ddac71b7e7.jpg?1562875578
 value=3.302
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Surge Mare
-image=https://magiccards.info/scans/en/m19/77.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9002d0f1-ff2c-4d1c-a7db-3252ef6bebbd.jpg?1562302966
 value=2.500
 rarity=U
 type=Creature

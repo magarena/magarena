@@ -1,5 +1,5 @@
 name=Show of Valor
-image=https://magiccards.info/scans/en/m13/34.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ab07387-a9f2-4325-804e-6383408644fd.jpg?1592518267
 value=2.607
 rarity=C
 type=Instant

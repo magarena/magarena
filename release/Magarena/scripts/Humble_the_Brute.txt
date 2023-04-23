@@ -1,5 +1,5 @@
 name=Humble the Brute
-image=https://magiccards.info/scans/en/soi/23.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c105686-8b45-494a-b9ef-8aa267bb1b5a.jpg?1656286373
 value=2.500
 rarity=U
 type=Instant

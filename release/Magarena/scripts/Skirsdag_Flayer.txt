@@ -1,5 +1,5 @@
 name=Skirsdag Flayer
-image=https://magiccards.info/scans/en/dka/74.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/274976b0-2bb5-46e6-b62e-b50d80a77e28.jpg?1562904312
 value=2.917
 rarity=U
 type=Creature

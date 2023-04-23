@@ -1,5 +1,5 @@
 name=Biorhythm
-image=https://magiccards.info/scans/en/9e/231.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17d1a10f-ce21-4914-9984-c7c559161230.jpg?1593017425
 value=4.007
 rarity=R
 type=Sorcery

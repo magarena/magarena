@@ -1,5 +1,5 @@
 name=Air Servant
-image=https://magiccards.info/scans/en/mm2/40.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01007d7f-e29b-49d5-bc60-44b2fb77ed3d.jpg?1562895202
 value=3.600
 rarity=U
 type=Creature

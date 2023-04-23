@@ -1,5 +1,5 @@
 name=Shepherd of Rot
-image=https://magiccards.info/scans/en/on/168.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ee5a529-3223-4982-83d1-eb517c2a258c.jpg?1562842181
 image_updated=2017-01-08
 value=3.990
 rarity=C

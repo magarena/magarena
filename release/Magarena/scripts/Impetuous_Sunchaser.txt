@@ -1,5 +1,5 @@
 name=Impetuous Sunchaser
-image=https://magiccards.info/scans/en/bng/99.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6d4c13b-95ef-49df-b349-26e0fec109ad.jpg?1593092255
 value=3.628
 rarity=C
 type=Creature

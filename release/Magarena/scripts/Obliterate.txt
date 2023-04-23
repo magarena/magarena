@@ -1,5 +1,5 @@
 name=Obliterate
-image=https://magiccards.info/scans/en/8e/204.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c85f9623-5900-473c-a3b1-f98473b9a545.jpg?1562935194
 value=4.253
 rarity=R
 type=Sorcery

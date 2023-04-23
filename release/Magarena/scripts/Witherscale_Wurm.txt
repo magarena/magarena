@@ -1,5 +1,5 @@
 name=Witherscale Wurm
-image=https://magiccards.info/scans/en/shm/134.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5187fc71-e4d3-4071-9ea1-d4513f30c529.jpg?1562830152
 value=3.570
 rarity=R
 type=Creature

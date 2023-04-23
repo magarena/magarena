@@ -1,5 +1,5 @@
 name=Charging Paladin
-image=https://magiccards.info/scans/en/st/12.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0166403-a801-4ee9-9e04-54455f69e658.jpg?1562430801
 value=2.927
 rarity=U
 type=Creature

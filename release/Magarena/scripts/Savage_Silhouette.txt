@@ -1,5 +1,5 @@
 name=Savage Silhouette
-image=https://magiccards.info/scans/en/zen/181.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b8547e0-2928-4edc-a15a-a613cb4d1eac.jpg?1562614205
 value=3.167
 rarity=C
 type=Enchantment

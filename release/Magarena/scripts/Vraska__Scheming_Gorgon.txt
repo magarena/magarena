@@ -1,5 +1,5 @@
 name=Vraska, Scheming Gorgon
-image=https://magiccards.info/scans/en/rix/197.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91685732-c118-4f52-ac77-f96866a687a3.jpg?1555041155
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

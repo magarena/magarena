@@ -1,5 +1,5 @@
 name=Ojutai's Summons
-image=https://magiccards.info/scans/en/dtk/68.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/6769341a-1331-456d-a2bb-cd7fffe7b51d.jpg?1562787551
 value=2.500
 rarity=C
 type=Sorcery

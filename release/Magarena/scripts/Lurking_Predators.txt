@@ -1,5 +1,5 @@
 name=Lurking Predators
-image=https://magiccards.info/scans/en/c16/156.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9952da7c-3cfc-413f-8849-0f10e9c8dceb.jpg?1601079751
 image_updated=2017-08-17
 value=4.177
 rarity=R

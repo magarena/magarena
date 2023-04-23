@@ -1,5 +1,5 @@
 name=Stormcloud Djinn
-image=https://magiccards.info/scans/en/ts/82.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25283518-cabb-4fa6-ab92-c989190ec9f3.jpg?1619394776
 value=1.600
 rarity=U
 type=Creature

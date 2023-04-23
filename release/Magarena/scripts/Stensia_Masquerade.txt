@@ -1,5 +1,5 @@
 name=Stensia Masquerade
-image=https://magiccards.info/scans/en/soi/184.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12ea7e21-b500-47cb-807a-a0849038fd56.jpg?1641603296
 value=2.500
 rarity=U
 type=Enchantment

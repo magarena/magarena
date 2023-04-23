@@ -1,5 +1,5 @@
 name=Goblin Chieftain
-image=https://magiccards.info/scans/en/m12/138.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89fcc35b-76fa-4408-8620-a1e11b2caf1f.jpg?1601077753
 value=3.984
 rarity=R
 type=Creature

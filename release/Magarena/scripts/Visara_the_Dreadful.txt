@@ -1,5 +1,5 @@
 name=Visara the Dreadful
-image=https://magiccards.info/scans/en/ema/114.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03f66946-ff52-4ce4-af25-b81196fa451b.jpg?1580014423
 value=4.000
 rarity=R
 type=Legendary,Creature

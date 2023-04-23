@@ -1,5 +1,5 @@
 name=Souls of the Faultless
-image=https://magiccards.info/scans/en/gp/131.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24f02a09-e959-438c-ab48-abd34b10d07c.jpg?1593272793
 value=4.140
 rarity=U
 type=Creature

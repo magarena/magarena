@@ -1,5 +1,5 @@
 name=Horn of Ramos
-image=https://magiccards.info/scans/en/mm/299.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b17f541-8e9d-43b0-b688-e3f2e7fa55c8.jpg?1562381354
 value=3.393
 rarity=R
 type=Artifact

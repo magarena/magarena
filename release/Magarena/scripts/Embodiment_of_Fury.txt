@@ -1,5 +1,5 @@
 name=Embodiment of Fury
-image=https://magiccards.info/scans/en/ogw/107.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92f385d1-a6c5-40b7-bc90-6f71b6f815e7.jpg?1562924666
 image_updated=2016-02-29
 value=2.500
 rarity=U

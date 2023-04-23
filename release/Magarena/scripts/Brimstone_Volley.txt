@@ -1,5 +1,5 @@
 name=Brimstone Volley
-image=https://magiccards.info/scans/en/cns/138.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94fa0577-f02a-4d24-835b-fef8d849b37a.jpg?1599706255
 value=4.125
 rarity=C
 type=Instant

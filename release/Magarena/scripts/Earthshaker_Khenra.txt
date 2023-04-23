@@ -1,5 +1,5 @@
 name=Earthshaker Khenra
-image=https://magiccards.info/scans/en/hou/90.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d60eabe-b281-4eba-9c26-287364ed2067.jpg?1562789387
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Reborn Hope
-image=https://magiccards.info/scans/en/arb/76.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59038868-6278-4d8c-a107-35aa85b5648f.jpg?1562641427
 value=3.183
 rarity=U
 type=Sorcery

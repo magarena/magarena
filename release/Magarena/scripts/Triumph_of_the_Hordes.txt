@@ -1,5 +1,5 @@
 name=Triumph of the Hordes
-image=https://magiccards.info/scans/en/nph/123.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a0f64d3-187c-41ff-a771-3a65da995341.jpg?1562896954
 value=3.660
 rarity=U
 type=Sorcery

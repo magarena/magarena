@@ -1,5 +1,5 @@
 name=Jor Kadeen, the Prevailer
-image=https://magiccards.info/scans/en/c16/206.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/576d86b5-2541-4ebc-8992-73248af7c805.jpg?1625977761
 image_updated=2017-08-17
 value=3.781
 rarity=R

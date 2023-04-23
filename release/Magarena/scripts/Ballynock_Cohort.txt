@@ -1,5 +1,5 @@
 name=Ballynock Cohort
-image=https://magiccards.info/scans/en/ema/3.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d191b8f7-40e0-47f3-8395-659f26a12851.jpg?1580013613
 value=3.430
 rarity=C
 type=Creature

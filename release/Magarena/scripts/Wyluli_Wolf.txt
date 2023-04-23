@@ -1,5 +1,5 @@
 name=Wyluli Wolf
-image=https://magiccards.info/scans/en/6e/270.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c97d419-6fee-4a32-9e64-8a827da59934.jpg?1559592454
 value=2.359
 rarity=R
 type=Creature

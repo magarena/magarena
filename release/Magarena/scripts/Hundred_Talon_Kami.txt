@@ -1,5 +1,5 @@
 name=Hundred-Talon Kami
-image=https://magiccards.info/scans/en/chk/16.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7b2892a-5c16-4624-9a47-6a47f10e2466.jpg?1562763454
 value=1.589
 rarity=C
 type=Creature

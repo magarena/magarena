@@ -1,5 +1,5 @@
 name=Prescient Chimera
-image=https://magiccards.info/scans/en/ths/59.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4bb655d-8d62-4a79-9a9d-7384d1cb2cc0.jpg?1600726245
 value=3.487
 rarity=C
 type=Creature

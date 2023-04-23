@@ -1,5 +1,5 @@
 name=Wild Cantor
-image=https://magiccards.info/scans/en/gp/149.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/242dc29e-d8f5-4207-abbf-cf5425f08551.jpg?1593272918
 value=4.180
 rarity=C
 type=Creature

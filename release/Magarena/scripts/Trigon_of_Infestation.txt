@@ -1,5 +1,5 @@
 name=Trigon of Infestation
-image=https://magiccards.info/scans/en/som/214.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be409a80-846c-4883-8aee-c2e3f973fc0f.jpg?1562822540
 value=3.000
 rarity=U
 type=Artifact

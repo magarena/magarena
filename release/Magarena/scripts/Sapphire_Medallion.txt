@@ -1,5 +1,5 @@
 name=Sapphire Medallion
-image=https://magiccards.info/scans/en/c14/266.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afdbb860-2bea-4cf6-8959-6a19ba1de56c.jpg?1561954652
 value=2.500
 rarity=R
 type=Artifact

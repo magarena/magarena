@@ -1,5 +1,5 @@
 name=Fungal Sprouting
-image=https://magiccards.info/scans/en/m13/173.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97413ae3-037e-4786-85a3-e92604acd771.jpg?1562557425
 value=3.977
 rarity=U
 type=Sorcery

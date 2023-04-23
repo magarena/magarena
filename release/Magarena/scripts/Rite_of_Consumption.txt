@@ -1,5 +1,5 @@
 name=Rite of Consumption
-image=https://magiccards.info/scans/en/shm/76.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f62d999c-c81e-4bea-aefd-0d12251dcdd1.jpg?1562838219
 value=3.976
 rarity=C
 type=Sorcery

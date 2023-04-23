@@ -1,5 +1,5 @@
 name=Abnormal Endurance
-image=https://magiccards.info/scans/en/m19/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de2de2bd-9ba7-4b6f-94c2-dafb2011a48e.jpg?1562304790
 value=2.500
 rarity=C
 type=Instant

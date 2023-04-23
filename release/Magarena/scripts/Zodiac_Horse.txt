@@ -1,5 +1,5 @@
 name=Zodiac Horse
-image=https://magiccards.info/scans/en/p3k/159.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb24cb19-3409-45f7-b0e0-7c652064d2dd.jpg?1562258011
 value=3.125
 rarity=U
 type=Creature

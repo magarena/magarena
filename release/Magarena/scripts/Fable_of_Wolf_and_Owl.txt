@@ -1,5 +1,5 @@
 name=Fable of Wolf and Owl
-image=https://magiccards.info/scans/en/eve/150.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be364b69-aa59-420c-a613-b1d0b303a4e5.jpg?1562935196
 value=3.922
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Eyeblight Massacre
-image=https://magiccards.info/scans/en/ori/96.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00652c09-c50c-40da-8f0f-86b5cc3f6c26.jpg?1631234621
 image_updated=2015-11-05
 value=2.500
 rarity=U

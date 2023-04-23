@@ -1,5 +1,5 @@
 name=Pharika's Chosen
-image=https://magiccards.info/scans/en/jou/78.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8119ce0c-d709-463c-9abc-f7025673ea72.jpg?1593095796
 value=3.765
 rarity=C
 type=Creature

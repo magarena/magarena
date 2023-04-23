@@ -1,5 +1,5 @@
 name=Stalking Yeti
-image=https://magiccards.info/scans/en/cs/98.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4af53d0b-ac60-4519-a6f4-c67899bcfdd6.jpg?1593275329
 value=2.919
 rarity=U
 type=Snow,Creature

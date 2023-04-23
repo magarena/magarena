@@ -1,5 +1,5 @@
 name=Freyalise, Llanowar's Fury
-image=https://magiccards.info/scans/en/c14/43.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/869118c9-1ebb-42a5-8020-d043ec653241.jpg?1610161577
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

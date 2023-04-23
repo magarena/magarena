@@ -1,5 +1,5 @@
 name=Diregraf Colossus
-image=https://magiccards.info/scans/en/soi/107.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02351d67-2d73-43e3-82f7-5277c532d7ac.jpg?1637630049
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Rotting Legion
-image=https://magiccards.info/scans/en/m11/115.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfe5e62c-83ce-4c2b-a745-acd7670e115d.jpg?1562474073
 value=1.873
 rarity=C
 type=Creature

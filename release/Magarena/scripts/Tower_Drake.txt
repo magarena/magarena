@@ -1,5 +1,5 @@
 name=Tower Drake
-image=https://magiccards.info/scans/en/rtr/55.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d759d6f-daf0-47f4-8a35-81c9d6437495.jpg?1562786969
 value=3.116
 rarity=C
 type=Creature

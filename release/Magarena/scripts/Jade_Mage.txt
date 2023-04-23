@@ -1,5 +1,5 @@
 name=Jade Mage
-image=https://magiccards.info/scans/en/m12/181.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d57bc86-7625-4669-9d33-b662263bd5bf.jpg?1562907737
 value=3.750
 rarity=U
 type=Creature

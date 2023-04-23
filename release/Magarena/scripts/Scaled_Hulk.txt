@@ -1,5 +1,5 @@
 name=Scaled Hulk
-image=https://magiccards.info/scans/en/bok/143.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b27457e-2c40-4983-9680-b7292db4c668.jpg?1562876521
 value=2.391
 rarity=C
 type=Creature

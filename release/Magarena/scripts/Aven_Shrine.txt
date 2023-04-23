@@ -1,5 +1,5 @@
 name=Aven Shrine
-image=https://magiccards.info/scans/en/od/9.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9890be7f-35af-43b7-b255-25be4ff20dc0.jpg?1562923310
 value=1.696
 rarity=R
 type=Enchantment

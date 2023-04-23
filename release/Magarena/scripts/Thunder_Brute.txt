@@ -1,5 +1,5 @@
 name=Thunder Brute
-image=https://magiccards.info/scans/en/bng/113.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c28fa4f8-4b87-41dc-802d-dfd160ccf1a8.jpg?1593092387
 value=3.661
 rarity=U
 type=Creature

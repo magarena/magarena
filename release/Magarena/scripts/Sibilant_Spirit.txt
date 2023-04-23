@@ -1,5 +1,5 @@
 name=Sibilant Spirit
-image=https://magiccards.info/scans/en/6e/98.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae32232f-3b75-45a2-bb25-1ff2e0f05bdc.jpg?1562870020
 value=2.318
 rarity=R
 type=Creature

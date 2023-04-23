@@ -1,5 +1,5 @@
 name=Vexing Devil
-image=https://magiccards.info/scans/en/avr/164.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5ebb551-6b0d-45fa-88c8-3746214094f6.jpg?1547517462
 value=4.083
 rarity=R
 type=Creature

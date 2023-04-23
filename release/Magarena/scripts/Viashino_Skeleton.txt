@@ -1,5 +1,5 @@
 name=Viashino Skeleton
-image=https://magiccards.info/scans/en/ala/118.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9451a62-31a4-4aaf-beef-2bf149f25ae3.jpg?1562708259
 value=0.831
 rarity=C
 type=Creature

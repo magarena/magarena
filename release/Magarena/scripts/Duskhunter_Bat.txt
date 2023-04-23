@@ -1,5 +1,5 @@
 name=Duskhunter Bat
-image=https://magiccards.info/scans/en/mm2/81.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/6723d783-e2c5-4c01-8adc-fade22e4936e.jpg?1562263264
 value=3.062
 rarity=C
 type=Creature

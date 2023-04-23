@@ -1,5 +1,5 @@
 name=Child of Gaea
-image=https://magiccards.info/scans/en/us/242.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a836d9bd-a4cb-4676-935c-5fb7b793a42f.jpg?1562930438
 value=4.255
 rarity=R
 type=Creature

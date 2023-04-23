@@ -1,5 +1,5 @@
 name=Spontaneous Generation
-image=https://magiccards.info/scans/en/mm/274.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce5765cb-00cd-4920-9fe8-68791048ec4a.jpg?1562383033
 value=3.875
 rarity=R
 type=Sorcery

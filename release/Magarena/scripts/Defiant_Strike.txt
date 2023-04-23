@@ -1,5 +1,5 @@
 name=Defiant Strike
-image=https://magiccards.info/scans/en/ktk/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c23869b-c99a-49dd-9e29-fcc0eb63fad1.jpg?1594734879
 value=1.750
 rarity=C
 type=Instant

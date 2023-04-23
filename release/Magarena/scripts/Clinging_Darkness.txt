@@ -1,5 +1,5 @@
 name=Clinging Darkness
-image=https://magiccards.info/scans/en/rav/80.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a939a4e-5a9e-454f-8716-cee7470f05e2.jpg?1598914701
 value=3.065
 rarity=C
 type=Enchantment

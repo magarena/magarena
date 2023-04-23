@@ -1,5 +1,5 @@
 name=Healing Leaves
-image=https://magiccards.info/scans/en/pc/150.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6f58258-a1bd-4364-954e-c39938f7dab2.jpg?1562583435
 value=2.305
 rarity=C
 type=Instant

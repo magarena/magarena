@@ -1,5 +1,5 @@
 name=Squall Drifter
-image=https://magiccards.info/scans/en/cs/17.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3ecb728-4b54-47d0-bbef-d39e5f7d172f.jpg?1593274818
 value=3.513
 rarity=C
 type=Snow,Creature

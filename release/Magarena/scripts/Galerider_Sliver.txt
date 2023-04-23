@@ -1,5 +1,5 @@
 name=Galerider Sliver
-image=https://magiccards.info/scans/en/m14/57.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/425f5d1b-9989-4fd1-88e2-6c3108aefa0b.jpg?1562828431
 value=3.566
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Aerie Ouphes
-image=https://magiccards.info/scans/en/eve/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2e4cb09-c99f-4a17-a6fd-55c9a169a808.jpg?1562932733
 value=2.779
 rarity=C
 type=Creature

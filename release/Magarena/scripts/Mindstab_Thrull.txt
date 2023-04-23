@@ -1,5 +1,5 @@
 name=Mindstab Thrull
-image=https://magiccards.info/scans/en/5e/40.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55ef78dd-7336-4f4e-969f-95a7bc604ded.jpg?1559592419
 value=3.800
 rarity=C
 type=Creature

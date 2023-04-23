@@ -1,5 +1,5 @@
 name=Goblin Wardriver
-image=https://magiccards.info/scans/en/mbs/64.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fb10750-4037-4630-82d3-bb068c335e48.jpg?1592764848
 value=3.848
 rarity=U
 type=Creature

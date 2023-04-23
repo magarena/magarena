@@ -1,5 +1,5 @@
 name=Lost in a Labyrinth
-image=https://magiccards.info/scans/en/ths/52.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09aa7744-680f-4c2a-8fa0-9cb0c176ae8f.jpg?1562814444
 value=2.118
 rarity=C
 type=Instant

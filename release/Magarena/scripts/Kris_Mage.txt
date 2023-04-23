@@ -1,5 +1,5 @@
 name=Kris Mage
-image=https://magiccards.info/scans/en/mm/195.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/4389fbcd-182a-4cac-b14f-aa971948cf8e.jpg?1562380413
 value=2.950
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sun Clasp
-image=https://magiccards.info/scans/en/vi/121.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3f1fb74-bc08-4c3b-9fbe-da6973aaeaa2.jpg?1562279095
 image_updated=2016-01-09
 value=2.870
 rarity=C

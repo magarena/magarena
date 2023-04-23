@@ -1,5 +1,5 @@
 name=Reveka, Wizard Savant
-image=https://magiccards.info/scans/en/hl/47.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27c32cc5-b4da-4345-9118-1fe46a5049cb.jpg?1562903439
 value=2.656
 rarity=R
 type=Legendary,Creature

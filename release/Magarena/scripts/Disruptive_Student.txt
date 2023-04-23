@@ -1,5 +1,5 @@
 name=Disruptive Student
-image=https://magiccards.info/scans/en/us/69.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee43681d-e0f7-422b-a363-0d630f68d363.jpg?1562945196
 image_updated=2016-12-01
 value=4.117
 rarity=C

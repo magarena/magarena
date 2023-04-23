@@ -1,5 +1,5 @@
 name=Nantuko Shade
-image=https://magiccards.info/scans/en/c14/151.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8032dd8b-bd4f-4d44-8d7a-daac5497c8e8.jpg?1561948013
 value=4.307
 rarity=R
 type=Creature

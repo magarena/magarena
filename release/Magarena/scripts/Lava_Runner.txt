@@ -1,5 +1,5 @@
 name=Lava Runner
-image=https://magiccards.info/scans/en/mm/200.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09d0fbe6-6ce1-4b95-afb7-a7386b5033cf.jpg?1562378961
 value=4.140
 rarity=R
 type=Creature

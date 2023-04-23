@@ -1,5 +1,5 @@
 name=Mystic Crusader
-image=https://magiccards.info/scans/en/od/33.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27ce1baf-8a89-4884-b0f7-19311bfc8c4c.jpg?1562902376
 value=3.556
 rarity=R
 type=Creature

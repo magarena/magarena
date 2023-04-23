@@ -1,5 +1,5 @@
 name=Conifer Strider
-image=https://magiccards.info/scans/en/dtk/179.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72f07879-7893-46d9-9239-8d2625355881.jpg?1562788273
 value=2.500
 rarity=C
 type=Creature

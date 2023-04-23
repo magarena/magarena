@@ -1,5 +1,5 @@
 name=Cloudshift
-image=https://magiccards.info/scans/en/a25/7.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bc7fdf0-3e1e-487c-833d-7c74aa02c0c1.jpg?1600716960
 image_updated=2018-04-27
 value=3.955
 rarity=C

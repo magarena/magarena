@@ -1,5 +1,5 @@
 name=Ego Erasure
-image=https://magiccards.info/scans/en/lw/59.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f577831b-2aa2-44a1-bd6b-ef111bc2e211.jpg?1562374685
 value=2.762
 rarity=U
 type=Tribal,Instant

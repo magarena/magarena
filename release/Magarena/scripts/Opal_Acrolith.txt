@@ -1,5 +1,5 @@
 name=Opal Acrolith
-image=https://magiccards.info/scans/en/us/22.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/839b4c10-f68f-4321-82ee-5ec257f63866.jpg?1562922747
 value=3.733
 rarity=U
 type=Enchantment

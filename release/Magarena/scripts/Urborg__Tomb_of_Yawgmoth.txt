@@ -1,5 +1,5 @@
 name=Urborg, Tomb of Yawgmoth
-image=https://magiccards.info/scans/en/m15/248.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e1a9e38-6ffc-490f-b0be-23ba4e8204c6.jpg?1619399578
 value=4.462
 rarity=R
 type=Legendary,Land

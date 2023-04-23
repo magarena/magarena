@@ -1,5 +1,5 @@
 name=Ankle Shanker
-image=https://magiccards.info/scans/en/c16/178.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/544a06f8-75fe-41b6-81dc-c9a0358f03c5.jpg?1562400164
 image_updated=2017-08-17
 value=3.857
 rarity=R

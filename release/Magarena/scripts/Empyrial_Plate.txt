@@ -1,5 +1,5 @@
 name=Empyrial Plate
-image=https://magiccards.info/scans/en/c16/251.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9086f9e-2c29-48ee-b0af-889351e86152.jpg?1562421732
 image_updated=2017-08-17
 value=3.917
 rarity=R

@@ -1,5 +1,5 @@
 name=Ultimate Price
-image=https://magiccards.info/scans/en/dtk/124.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b41f7cf3-bd76-4184-b694-f565aa5cf3a4.jpg?1562791851
 value=3.310
 removal=3
 rarity=U

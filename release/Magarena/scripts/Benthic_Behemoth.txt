@@ -1,5 +1,5 @@
 name=Benthic Behemoth
-image=https://magiccards.info/scans/en/7e/63.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19577bda-2728-40c8-a262-26051e6c226b.jpg?1562233741
 value=2.875
 rarity=R
 type=Creature

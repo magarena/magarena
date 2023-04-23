@@ -1,5 +1,5 @@
 name=Gudul Lurker
-image=https://magiccards.info/scans/en/dtk/56.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c84d5344-2d15-43da-b536-27e0d308606b.jpg?1562793006
 value=2.500
 rarity=U
 type=Creature

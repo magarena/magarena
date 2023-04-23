@@ -1,5 +1,5 @@
 name=Rotted Hulk
-image=https://magiccards.info/scans/en/jou/81.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/1066644a-ac62-4809-805c-607c645613c5.jpg?1593860941
 value=1.891
 rarity=C
 type=Creature

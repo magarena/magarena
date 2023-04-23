@@ -1,5 +1,5 @@
 name=Burning-Fist Minotaur
-image=https://magiccards.info/scans/en/hou/85.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52f191fb-eaf6-432f-a668-37ad48ffabaf.jpg?1562799434
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Cephalid Vandal
-image=https://magiccards.info/scans/en/tr/31.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2500976f-a329-4a51-bcc1-cafe39bc3ccf.jpg?1562628965
 value=2.362
 rarity=R
 type=Creature

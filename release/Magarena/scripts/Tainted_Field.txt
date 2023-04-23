@@ -1,5 +1,5 @@
 name=Tainted Field
-image=https://magiccards.info/scans/en/tr/140.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d79ff850-3a0a-432b-9296-ca709df3d4c0.jpg?1682210682
 image_updated=2016-02-29
 value=3.714
 rarity=U

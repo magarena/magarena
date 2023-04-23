@@ -1,5 +1,5 @@
 name=Pelakka Wurm
-image=https://magiccards.info/scans/en/m19/192.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00906b47-6316-4e00-bbf5-b801ab583f4f.jpg?1562300248
 image_updated=2018-08-07
 value=3.750
 rarity=R

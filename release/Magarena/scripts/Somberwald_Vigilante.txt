@@ -1,5 +1,5 @@
 name=Somberwald Vigilante
-image=https://magiccards.info/scans/en/avr/156.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45acf61c-0cc6-4f74-8c81-5ea4b8282e2a.jpg?1592751724
 image_updated=2016-09-12
 value=3.083
 rarity=C

@@ -1,5 +1,5 @@
 name=Rank and File
-image=https://magiccards.info/scans/en/ul/65.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59481cb5-2cb0-4b8c-84ee-519399862d46.jpg?1562863258
 value=2.904
 rarity=U
 type=Creature

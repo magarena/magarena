@@ -1,5 +1,5 @@
 name=Beastmaster's Magemark
-image=https://magiccards.info/scans/en/gp/80.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b5eea61-373a-4bca-a793-d6be7f6214e2.jpg?1593272405
 value=2.833
 rarity=C
 type=Enchantment

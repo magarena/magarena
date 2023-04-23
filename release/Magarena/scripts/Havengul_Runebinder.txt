@@ -1,5 +1,5 @@
 name=Havengul Runebinder
-image=https://magiccards.info/scans/en/dka/39.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbd27e6f-24e5-4e90-9612-27d8dcd29325.jpg?1637629705
 value=3.400
 rarity=R
 type=Creature

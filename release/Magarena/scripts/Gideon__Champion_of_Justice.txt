@@ -1,5 +1,5 @@
 name=Gideon, Champion of Justice
-image=https://magiccards.info/scans/en/gtc/13.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf6d8ac0-4dd2-4a34-bb12-7cfede95e14b.jpg?1625193106
 value=3.525
 rarity=M
 type=Legendary,Planeswalker

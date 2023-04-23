@@ -1,5 +1,5 @@
 name=Steadfastness
-image=https://magiccards.info/scans/en/st/27.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1fafcb8-f1ee-4e76-bcfb-6aea4d49efc5.jpg?1562875266
 value=1.250
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Shrieking Mogg
-image=https://magiccards.info/scans/en/ne/99.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0ce46919-d312-490c-8942-39fbb2d375bf.jpg?1562628622
 value=3.557
 rarity=R
 type=Creature

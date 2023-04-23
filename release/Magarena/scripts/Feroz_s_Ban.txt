@@ -1,5 +1,5 @@
 name=Feroz's Ban
-image=https://magiccards.info/scans/en/7e/295.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/188b3863-fa7d-4fbb-b061-97580d394017.jpg?1562233358
 value=2.717
 rarity=R
 type=Artifact

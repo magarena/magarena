@@ -1,5 +1,5 @@
 name=Marauding Maulhorn
-image=https://magiccards.info/scans/en/m14/145.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7d5e3dc-f307-4f91-a5ee-e7c5d03d8102.jpg?1562834221
 value=3.143
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Galvanic Alchemist
-image=https://magiccards.info/scans/en/avr/54.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0e24d65-0e6f-4978-8de1-c5e4acac12fb.jpg?1592708546
 value=2.889
 rarity=C
 type=Creature

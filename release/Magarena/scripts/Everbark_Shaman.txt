@@ -1,5 +1,5 @@
 name=Everbark Shaman
-image=https://magiccards.info/scans/en/mt/121.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/077ae521-a176-4d93-92b1-89ba674f86e4.jpg?1562876679
 value=3.160
 rarity=C
 type=Creature

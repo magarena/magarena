@@ -1,5 +1,5 @@
 name=Tragic Slip
-image=https://magiccards.info/scans/en/ema/109.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3140bf5-9846-47ae-8142-b013aac14609.jpg?1580014388
 value=3.750
 removal=2
 rarity=C

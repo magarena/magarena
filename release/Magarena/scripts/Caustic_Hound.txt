@@ -1,5 +1,5 @@
 name=Caustic Hound
-image=https://magiccards.info/scans/en/mbs/40.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a54115f-150a-4ae2-a5c7-20e2ba884dd1.jpg?1562610279
 value=1.951
 rarity=C
 type=Creature

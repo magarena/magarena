@@ -1,5 +1,5 @@
 name=Mirrodin's Core
-image=https://magiccards.info/scans/en/cns/208.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0a9fbb3-9fe4-4ec6-82f0-3bb101524e1e.jpg?1601083527
 value=3.500
 rarity=U
 type=Land

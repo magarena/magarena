@@ -1,5 +1,5 @@
 name=Lavafume Invoker
-image=https://magiccards.info/scans/en/roe/155.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e773b3f-37ef-4e37-8b1e-99b7b6314877.jpg?1562706230
 value=2.833
 rarity=C
 type=Creature

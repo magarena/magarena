@@ -1,5 +1,5 @@
 name=Irontread Crusher
-image=https://magiccards.info/scans/en/aer/161.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81873223-29c7-466b-b922-6717ec84afff.jpg?1576382319
 value=2.500
 rarity=C
 type=Artifact

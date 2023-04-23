@@ -1,5 +1,5 @@
 name=Werebear
-image=https://magiccards.info/scans/en/ema/191.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/224ea635-b95b-4803-8716-edd4cb655923.jpg?1580014964
 value=4.563
 rarity=C
 type=Creature

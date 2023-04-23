@@ -1,5 +1,5 @@
 name=Research the Deep
-image=https://magiccards.info/scans/en/mt/46.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/927bab71-a208-4ff2-b6c9-51b63468db38.jpg?1562880060
 value=2.438
 rarity=U
 type=Sorcery

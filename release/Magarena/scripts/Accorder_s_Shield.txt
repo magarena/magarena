@@ -1,5 +1,5 @@
 name=Accorder's Shield
-image=https://magiccards.info/scans/en/som/136.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5a4c2ab-c5bc-4e07-8671-a688ebd5471c.jpg?1562834862
 value=3.375
 rarity=C
 type=Artifact

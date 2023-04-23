@@ -1,5 +1,5 @@
 name=Jhessian Lookout
-image=https://magiccards.info/scans/en/ala/46.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f55b1b92-575e-4b6f-9179-21d0bc1acd11.jpg?1562710807
 value=1.581
 rarity=C
 type=Creature

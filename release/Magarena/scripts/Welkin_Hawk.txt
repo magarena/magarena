@@ -1,5 +1,5 @@
 name=Welkin Hawk
-image=https://magiccards.info/scans/en/ex/25.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8166253c-c6ac-4b5e-9746-09ce3774c66b.jpg?1562088301
 value=3.542
 rarity=C
 type=Creature

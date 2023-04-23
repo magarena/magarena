@@ -1,5 +1,5 @@
 name=Fangren Firstborn
-image=https://magiccards.info/scans/en/ds/75.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97d5fc3c-7f6b-42a5-a482-d789a2a421c7.jpg?1562638300
 value=4.398
 rarity=R
 type=Creature

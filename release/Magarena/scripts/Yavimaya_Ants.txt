@@ -1,5 +1,5 @@
 name=Yavimaya Ants
-image=https://magiccards.info/scans/en/ai/93.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41fba6db-fc52-43f2-a5d6-72001be126af.jpg?1559592459
 value=3.872
 rarity=U
 type=Creature

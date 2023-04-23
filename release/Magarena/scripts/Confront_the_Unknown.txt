@@ -1,5 +1,5 @@
 name=Confront the Unknown
-image=https://magiccards.info/scans/en/soi/198.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c59557c3-aba2-4f80-8f37-accb7b991cb9.jpg?1576385022
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Extinguish
-image=https://magiccards.info/scans/en/st/37.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21140417-09f5-4d05-b94c-355fde9b4719.jpg?1562255853
 value=1.307
 rarity=C
 type=Instant

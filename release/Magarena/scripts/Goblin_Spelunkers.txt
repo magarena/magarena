@@ -1,5 +1,5 @@
 name=Goblin Spelunkers
-image=https://magiccards.info/scans/en/rav/128.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c3889c5-3321-486c-b03c-8607f2393a75.jpg?1598915607
 value=2.790
 rarity=C
 type=Creature

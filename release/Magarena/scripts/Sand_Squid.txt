@@ -1,5 +1,5 @@
 name=Sand Squid
-image=https://magiccards.info/scans/en/mm/96.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4efd7ce9-b920-409d-a4d2-a07fff280712.jpg?1562380860
 value=3.625
 rarity=R
 type=Creature

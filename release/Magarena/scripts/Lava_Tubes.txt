@@ -1,5 +1,5 @@
 name=Lava Tubes
-image=https://magiccards.info/scans/en/ia/339.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e7c2cf6-f36f-451b-bba5-19a82c659c4c.jpg?1562912415
 value=2.300
 rarity=R
 type=Land

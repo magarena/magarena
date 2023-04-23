@@ -1,5 +1,5 @@
 name=Aven Reedstalker
-image=https://magiccards.info/scans/en/hou/30.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0c2d70a-d646-44eb-9f65-ddf6e329ab43.jpg?1562819676
 value=2.500
 rarity=C
 type=Creature

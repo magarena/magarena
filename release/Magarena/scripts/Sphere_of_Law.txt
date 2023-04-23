@@ -1,5 +1,5 @@
 name=Sphere of Law
-image=https://magiccards.info/scans/en/od/50.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3451ddf-efec-474b-884c-64288e5552d2.jpg?1562940708
 value=3.312
 rarity=U
 type=Enchantment

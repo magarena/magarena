@@ -1,5 +1,5 @@
 name=Tresserhorn Sinks
-image=https://magiccards.info/scans/en/cs/150.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bd8fe2c-2297-4e19-8a87-01eb99b8c6dc.jpg?1593860376
 value=3.476
 rarity=U
 type=Snow,Land

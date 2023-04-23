@@ -1,5 +1,5 @@
 name=Primordial Hydra
-image=https://magiccards.info/scans/en/m13/183.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/937deb52-8888-4298-9ae5-0361c6fdbba2.jpg?1562557233
 value=4.227
 rarity=M
 type=Creature

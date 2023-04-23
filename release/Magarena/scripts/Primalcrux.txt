@@ -1,5 +1,5 @@
 name=Primalcrux
-image=https://magiccards.info/scans/en/eve/73.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f805f7b-bb7e-436b-abd3-20a35e7ef71e.jpg?1562901612
 value=4.346
 rarity=R
 type=Creature

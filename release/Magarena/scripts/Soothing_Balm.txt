@@ -1,5 +1,5 @@
 name=Soothing Balm
-image=https://magiccards.info/scans/en/mm/48.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96b8f4be-9f4d-4373-8141-a03518ecd38a.jpg?1562382063
 value=2.472
 rarity=C
 type=Instant

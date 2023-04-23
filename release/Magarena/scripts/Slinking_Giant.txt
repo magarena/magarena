@@ -1,5 +1,5 @@
 name=Slinking Giant
-image=https://magiccards.info/scans/en/shm/106.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b259c6cd-43c8-415e-baca-b31e2374631f.jpg?1562834824
 value=2.112
 rarity=U
 type=Creature

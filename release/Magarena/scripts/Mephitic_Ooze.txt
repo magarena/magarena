@@ -1,5 +1,5 @@
 name=Mephitic Ooze
-image=https://magiccards.info/scans/en/ds/47.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5465de95-1249-4f14-a2e3-2b2861dfe058.jpg?1562636919
 value=3.733
 rarity=R
 type=Creature

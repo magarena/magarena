@@ -1,5 +1,5 @@
 name=Humble Budoka
-image=https://magiccards.info/scans/en/chk/214.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f31bbc89-d5ee-4813-9ebe-ac5b998b076b.jpg?1562765666
 value=3.480
 rarity=C
 type=Creature

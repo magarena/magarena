@@ -1,5 +1,5 @@
 name=Final Reward
-image=https://magiccards.info/scans/en/akh/92.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f202f6b-710f-4376-a49c-e5f135b26eaf.jpg?1543675290
 value=2.500
 rarity=C
 type=Instant

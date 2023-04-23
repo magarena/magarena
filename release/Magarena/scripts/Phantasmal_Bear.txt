@@ -1,5 +1,5 @@
 name=Phantasmal Bear
-image=https://magiccards.info/scans/en/a25/69.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2a5e968-6ba4-44e9-9587-6ef456721b97.jpg?1562441613
 image_updated=2018-04-27
 value=4.179
 rarity=C

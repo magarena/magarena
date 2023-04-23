@@ -1,5 +1,5 @@
 name=Teller of Tales
-image=https://magiccards.info/scans/en/chk/95.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c914db7d-c907-4d25-a180-f68b274a5cb7.jpg?1562764619
 value=2.571
 rarity=C
 type=Creature

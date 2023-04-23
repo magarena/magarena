@@ -1,5 +1,5 @@
 name=Belfry Spirit
-image=https://magiccards.info/scans/en/gp/2.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/556e4e71-b149-49c8-8a22-83660bef57bb.jpg?1593271819
 value=3.050
 rarity=U
 type=Creature

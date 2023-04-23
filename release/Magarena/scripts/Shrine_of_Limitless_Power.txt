@@ -1,5 +1,5 @@
 name=Shrine of Limitless Power
-image=https://magiccards.info/scans/en/nph/154.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61873223-f378-4478-9cf3-f1326eb76834.jpg?1562878168
 value=2.087
 rarity=U
 type=Artifact

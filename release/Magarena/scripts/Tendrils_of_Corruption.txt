@@ -1,5 +1,5 @@
 name=Tendrils of Corruption
-image=https://magiccards.info/scans/en/c14/166.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c338b459-6bb8-4bc7-a6b5-945a09589c05.jpg?1619396480
 value=4.191
 rarity=C
 type=Instant

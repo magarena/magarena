@@ -1,5 +1,5 @@
 name=Rancor
-image=https://magiccards.info/scans/en/a25/186.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86d6b411-4a31-4bfc-8dd6-e19f553bb29b.jpg?1673148169
 image_updated=2018-04-27
 value=4.407
 rarity=U

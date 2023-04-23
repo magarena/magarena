@@ -1,5 +1,5 @@
 name=Disallow
-image=https://magiccards.info/scans/en/aer/31.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25f05814-a5a5-460f-9d29-0ab03efecf4c.jpg?1576381471
 value=2.500
 rarity=R
 type=Instant

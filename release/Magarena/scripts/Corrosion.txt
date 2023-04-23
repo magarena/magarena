@@ -1,5 +1,5 @@
 name=Corrosion
-image=https://magiccards.info/scans/en/vi/128.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/176122b2-f60f-4150-8c0c-757c8f8914d2.jpg?1562276973
 value=3.833
 rarity=R
 type=Enchantment

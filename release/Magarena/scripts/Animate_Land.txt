@@ -1,5 +1,5 @@
 name=Animate Land
-image=https://magiccards.info/scans/en/ne/101.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20ff4e7d-fa50-48d2-8ab6-6b86e3a05e86.jpg?1562628961
 value=3.975
 rarity=U
 type=Instant

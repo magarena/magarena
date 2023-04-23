@@ -1,5 +1,5 @@
 name=Seller of Songbirds
-image=https://magiccards.info/scans/en/rtr/22.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a41edbe-4c5a-4535-a082-235dc3ffe60a.jpg?1562784103
 value=2.862
 rarity=C
 type=Creature

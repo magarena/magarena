@@ -1,5 +1,5 @@
 name=Jungle Troll
-image=https://magiccards.info/scans/en/mr/329.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59fb9591-399a-4196-a52d-f2954d287a10.jpg?1562719282
 value=3.176
 rarity=U
 type=Creature

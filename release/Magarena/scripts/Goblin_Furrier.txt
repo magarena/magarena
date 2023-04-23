@@ -1,5 +1,5 @@
 name=Goblin Furrier
-image=https://magiccards.info/scans/en/cs/82.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f8ec9c1-da73-44fb-9e30-5279a7ed4e7e.jpg?1593275238
 value=2.770
 rarity=C
 type=Creature

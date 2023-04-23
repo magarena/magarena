@@ -1,5 +1,5 @@
 name=Three Tragedies
-image=https://magiccards.info/scans/en/bok/87.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42acaa44-15d5-4760-9aa8-b44eda9ed98a.jpg?1593860625
 value=1.662
 rarity=U
 type=Sorcery

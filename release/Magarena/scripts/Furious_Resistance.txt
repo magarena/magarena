@@ -1,5 +1,5 @@
 name=Furious Resistance
-image=https://magiccards.info/scans/en/gtc/93.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eeea013-1cf8-4c77-a097-aa69e141e3f4.jpg?1561826502
 value=2.580
 rarity=C
 type=Instant

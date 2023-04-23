@@ -1,5 +1,5 @@
 name=Spirit Mantle
-image=https://magiccards.info/scans/en/pc2/12.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee5fdaa3-7879-4fa3-a157-60c7890a660a.jpg?1608911993
 value=3.949
 rarity=U
 type=Enchantment

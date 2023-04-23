@@ -1,5 +1,5 @@
 name=Braidwood Cup
-image=https://magiccards.info/scans/en/ud/126.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2e783b7-9bd1-4f82-bf20-5d201413f5e8.jpg?1562445194
 value=2.842
 rarity=U
 type=Artifact

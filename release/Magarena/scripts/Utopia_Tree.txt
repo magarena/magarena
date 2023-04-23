@@ -1,5 +1,5 @@
 name=Utopia Tree
-image=https://magiccards.info/scans/en/9e/277.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49bed540-da8d-4148-8794-8e8d01ed5387.jpg?1562734732
 value=4.105
 rarity=R
 type=Creature

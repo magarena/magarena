@@ -1,5 +1,5 @@
 name=Nephalia Seakite
-image=https://magiccards.info/scans/en/dka/43.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39714ec8-b43c-4d61-9e53-46ac62da2c9f.jpg?1562828050
 value=3.100
 rarity=C
 type=Creature

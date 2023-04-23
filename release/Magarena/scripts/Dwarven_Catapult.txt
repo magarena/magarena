@@ -1,5 +1,5 @@
 name=Dwarven Catapult
-image=https://magiccards.info/scans/en/5e/220.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d6310cd-95e2-4e8c-952f-f7c572726a01.jpg?1559592518
 value=2.296
 rarity=U
 type=Instant

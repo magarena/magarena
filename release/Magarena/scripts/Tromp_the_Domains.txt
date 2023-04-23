@@ -1,5 +1,5 @@
 name=Tromp the Domains
-image=https://magiccards.info/scans/en/mma/171.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef40007b-47eb-4881-9467-30ce5b9a0fa3.jpg?1619403637
 value=3.588
 rarity=U
 type=Sorcery

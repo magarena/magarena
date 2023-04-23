@@ -1,5 +1,5 @@
 name=Bloodwater Entity
-image=https://magiccards.info/scans/en/hou/138.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdddab31-1455-4b31-ba81-c346e608c34e.jpg?1673148393
 value=2.500
 rarity=U
 type=Creature

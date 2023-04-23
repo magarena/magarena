@@ -1,5 +1,5 @@
 name=Wing Splicer
-image=https://magiccards.info/scans/en/mm3/57.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/6694873a-0b0c-4e9e-b9fc-249e80a09cca.jpg?1593813191
 image_updated=2017-08-08
 value=3.653
 rarity=U

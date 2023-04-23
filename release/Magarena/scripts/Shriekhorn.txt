@@ -1,5 +1,5 @@
 name=Shriekhorn
-image=https://magiccards.info/scans/en/mbs/130.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb41269f-007d-43ba-a682-d3929cc69696.jpg?1562614251
 value=2.896
 rarity=C
 type=Artifact

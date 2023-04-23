@@ -1,5 +1,5 @@
 name=Goblin Turncoat
-image=https://magiccards.info/scans/en/le/72.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ac74e64-8831-4af2-9c6d-22c533389144.jpg?1562903706
 value=2.625
 rarity=C
 type=Creature

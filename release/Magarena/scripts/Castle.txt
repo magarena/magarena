@@ -1,5 +1,5 @@
 name=Castle
-image=https://magiccards.info/scans/en/7e/5.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffe82e29-e781-48bf-8673-7954553f7cf0.jpg?1562252291
 value=3.267
 rarity=U
 type=Enchantment

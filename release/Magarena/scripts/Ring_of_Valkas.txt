@@ -1,5 +1,5 @@
 name=Ring of Valkas
-image=https://magiccards.info/scans/en/m13/214.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb3c0bc4-6f89-48e2-b525-5efcb091bc5e.jpg?1608917867
 value=3.720
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Briarberry Cohort
-image=https://magiccards.info/scans/en/shm/30.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/caf9d87a-533c-4641-9738-e7b98d92b015.jpg?1562835967
 value=2.608
 rarity=C
 type=Creature

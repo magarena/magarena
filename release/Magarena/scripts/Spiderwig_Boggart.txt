@@ -1,5 +1,5 @@
 name=Spiderwig Boggart
-image=https://magiccards.info/scans/en/lw/141.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88e77c10-b569-485f-ba3e-16ef0c57dd81.jpg?1562356881
 value=2.208
 rarity=C
 type=Creature

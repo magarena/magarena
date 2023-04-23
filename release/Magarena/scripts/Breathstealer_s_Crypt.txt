@@ -1,5 +1,5 @@
 name=Breathstealer's Crypt
-image=https://magiccards.info/scans/en/vi/127.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f87ace53-d77c-4df5-b200-4be2ac2b7fdb.jpg?1562279118
 value=3.387
 rarity=R
 type=Enchantment

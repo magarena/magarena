@@ -1,5 +1,5 @@
 name=Alaborn Zealot
-image=https://magiccards.info/scans/en/po2/126.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5eba273-0b83-42a7-b8b0-9e0cd6a7aa6f.jpg?1562934231
 value=4.000
 rarity=U
 type=Creature

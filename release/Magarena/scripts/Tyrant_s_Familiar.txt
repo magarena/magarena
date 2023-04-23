@@ -1,5 +1,5 @@
 name=Tyrant's Familiar
-image=https://magiccards.info/scans/en/c14/39.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08076c82-edb6-4c3c-abda-3d3ad7bdd78f.jpg?1562272386
 value=2.500
 rarity=R
 type=Creature

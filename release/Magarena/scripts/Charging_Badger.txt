@@ -1,5 +1,5 @@
 name=Charging Badger
-image=https://magiccards.info/scans/en/bng/118.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d88ad54-43fc-45e0-8e00-db6be0c021ea.jpg?1593092429
 value=3.846
 rarity=C
 type=Creature

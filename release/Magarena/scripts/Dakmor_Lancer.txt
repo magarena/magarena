@@ -1,5 +1,5 @@
 name=Dakmor Lancer
-image=https://magiccards.info/scans/en/7e/126.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/660cc594-63f5-4819-a556-7a9484145f72.jpg?1562239129
 value=2.288
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Vengeful Dead
-image=https://magiccards.info/scans/en/sc/80.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c11c11d-9809-4031-8cbc-21aef07d7f1f.jpg?1562531178
 value=3.833
 rarity=C
 type=Creature

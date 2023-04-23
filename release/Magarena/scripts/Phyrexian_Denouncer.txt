@@ -1,5 +1,5 @@
 name=Phyrexian Denouncer
-image=https://magiccards.info/scans/en/ul/61.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/1444786c-fb9f-4398-b442-c7cfd6f1df40.jpg?1562898848
 image_updated=2017-01-03
 value=2.444
 rarity=C

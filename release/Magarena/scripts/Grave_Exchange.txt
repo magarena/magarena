@@ -1,5 +1,5 @@
 name=Grave Exchange
-image=https://magiccards.info/scans/en/avr/105.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14f420c4-801b-48e7-a10b-de44a2417265.jpg?1592708884
 value=1.906
 rarity=C
 type=Sorcery

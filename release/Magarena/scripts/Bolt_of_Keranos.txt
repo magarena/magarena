@@ -1,5 +1,5 @@
 name=Bolt of Keranos
-image=https://magiccards.info/scans/en/bng/89.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4df70b14-5d67-4a92-aaba-72480c621d10.jpg?1593092169
 value=2.516
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Eldrazi Displacer
-image=https://magiccards.info/scans/en/ogw/13.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0bb1a5c-0f59-4951-827f-fe9df968232d.jpg?1562943353
 image_updated=2016-02-29
 value=2.500
 rarity=R

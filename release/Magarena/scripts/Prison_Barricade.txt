@@ -1,5 +1,5 @@
 name=Prison Barricade
-image=https://magiccards.info/scans/en/in/25.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/449c4800-8718-4593-a61e-03ad7f348c6d.jpg?1562908879
 value=2.661
 rarity=C
 type=Creature

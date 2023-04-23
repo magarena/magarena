@@ -1,5 +1,5 @@
 name=Armorcraft Judge
-image=https://magiccards.info/scans/en/kld/144.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb0698bd-03fa-4de8-a98c-87c45b83c254.jpg?1682209434
 image_updated=2016-10-05
 value=2.500
 rarity=U

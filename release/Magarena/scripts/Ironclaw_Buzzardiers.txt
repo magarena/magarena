@@ -1,5 +1,5 @@
 name=Ironclaw Buzzardiers
-image=https://magiccards.info/scans/en/ts/165.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b07e37ea-aa8d-4443-9af6-4351994bc00c.jpg?1562932237
 value=2.274
 rarity=C
 type=Creature

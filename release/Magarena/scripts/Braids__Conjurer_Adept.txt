@@ -1,5 +1,5 @@
 name=Braids, Conjurer Adept
-image=https://magiccards.info/scans/en/pc/36.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/593dfb2f-ede0-413a-b037-46ae5c3769e4.jpg?1598303769
 value=4.093
 rarity=R
 type=Legendary,Creature

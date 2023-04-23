@@ -1,5 +1,5 @@
 name=Thunderfoot Baloth
-image=https://magiccards.info/scans/en/c16/172.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e376a953-2075-4595-a3ef-85d0f68aa8b2.jpg?1673484850
 image_updated=2017-08-17
 value=2.500
 rarity=R

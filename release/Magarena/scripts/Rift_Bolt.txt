@@ -1,5 +1,5 @@
 name=Rift Bolt
-image=https://magiccards.info/scans/en/ima/143.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4ccd0ada-92b2-48f3-b5ae-96346fc138b6.jpg?1673147890
 image_updated=2017-04-12
 value=3.982
 rarity=U

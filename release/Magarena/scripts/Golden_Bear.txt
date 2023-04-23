@@ -1,5 +1,5 @@
 name=Golden Bear
-image=https://magiccards.info/scans/en/po2/67.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7dfc789-7ea0-4eb8-8c3b-2c50fd52cbab.jpg?1562946489
 value=3.333
 rarity=C
 type=Creature

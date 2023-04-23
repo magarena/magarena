@@ -1,5 +1,5 @@
 name=Gorgon Recluse
-image=https://magiccards.info/scans/en/ts/111.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0bf2a33-0eb6-4898-a0fb-f5afb47ea1aa.jpg?1619395524
 value=3.500
 rarity=C
 type=Creature

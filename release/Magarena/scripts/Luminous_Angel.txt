@@ -1,5 +1,5 @@
 name=Luminous Angel
-image=https://magiccards.info/scans/en/mi/15.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3ac419f-7630-48c7-9039-88ce28898b6d.jpg?1561771537
 image_updated=2016-12-21
 value=3.373
 rarity=R

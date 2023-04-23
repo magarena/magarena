@@ -1,5 +1,5 @@
 name=Hunting Moa
-image=https://magiccards.info/scans/en/ud/109.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1cc7076-500c-4502-9344-266532c0de7f.jpg?1562939402
 image_updated=2016-12-13
 value=4.018
 rarity=U

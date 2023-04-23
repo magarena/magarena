@@ -1,5 +1,5 @@
 name=Deadly Recluse
-image=https://magiccards.info/scans/en/m13/165.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02191caa-60f9-4604-8c90-ecfc6aee8c09.jpg?1673148062
 image_updated=2016-09-12
 value=3.375
 rarity=C

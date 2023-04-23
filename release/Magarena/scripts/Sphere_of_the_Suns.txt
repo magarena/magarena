@@ -1,5 +1,5 @@
 name=Sphere of the Suns
-image=https://magiccards.info/scans/en/mm2/231.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/971f7dd0-290f-4ba4-aa2d-29ff148e7778.jpg?1562265256
 image_updated=2015-11-05
 value=3.575
 rarity=C

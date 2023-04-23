@@ -1,5 +1,5 @@
 name=Electropotence
-image=https://magiccards.info/scans/en/zen/122.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9830b9e9-950c-4763-9396-8194d08bf8df.jpg?1562614612
 value=3.200
 rarity=R
 type=Enchantment

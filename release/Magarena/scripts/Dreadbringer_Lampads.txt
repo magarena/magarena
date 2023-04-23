@@ -1,5 +1,5 @@
 name=Dreadbringer Lampads
-image=https://magiccards.info/scans/en/jou/67.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd0c7359-355b-4808-8959-7155d96c4e86.jpg?1562711887
 image_updated=2016-02-29
 value=3.119
 rarity=C

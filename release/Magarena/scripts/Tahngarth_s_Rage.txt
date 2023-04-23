@@ -1,5 +1,5 @@
 name=Tahngarth's Rage
-image=https://magiccards.info/scans/en/tp/209.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36658368-88c8-4c55-8147-f6e581f6af36.jpg?1562053738
 value=2.527
 rarity=U
 type=Enchantment

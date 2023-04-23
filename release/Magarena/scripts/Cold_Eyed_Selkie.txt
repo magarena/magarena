@@ -1,5 +1,5 @@
 name=Cold-Eyed Selkie
-image=https://magiccards.info/scans/en/mma/186.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b85d0834-065b-45e1-b739-08d5a5a4db2a.jpg?1631588457
 image_updated=2016-02-29
 value=4.270
 rarity=R

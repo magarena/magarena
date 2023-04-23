@@ -1,5 +1,5 @@
 name=Ancient Grudge
-image=https://magiccards.info/scans/en/mm3/88.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f28d4a2-6c75-44c2-93ac-e7159c1c623f.jpg?1619396653
 image_updated=2017-08-08
 value=4.207
 removal=1

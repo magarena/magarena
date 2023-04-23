@@ -1,5 +1,5 @@
 name=Glimmerpost
-image=https://magiccards.info/scans/en/som/227.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b63efb6-249c-4f57-9af1-baffe938520c.jpg?1562820112
 value=3.654
 rarity=C
 type=Land

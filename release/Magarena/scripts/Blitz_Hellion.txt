@@ -1,5 +1,5 @@
 name=Blitz Hellion
-image=https://magiccards.info/scans/en/arb/49.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b4a16be-ab3b-4020-9f26-631c0ee6730a.jpg?1562639575
 value=3.302
 rarity=R
 type=Creature

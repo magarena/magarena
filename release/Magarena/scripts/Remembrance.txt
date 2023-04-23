@@ -1,5 +1,5 @@
 name=Remembrance
-image=https://magiccards.info/scans/en/us/34.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/556d334e-3ac9-45b0-98d2-aff49ada0f75.jpg?1562912810
 value=3.990
 rarity=R
 type=Enchantment

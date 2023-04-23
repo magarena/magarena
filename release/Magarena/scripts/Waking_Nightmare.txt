@@ -1,5 +1,5 @@
 name=Waking Nightmare
-image=https://magiccards.info/scans/en/mm2/103.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cc87c53-0612-42a7-9c32-f7d1adf246af.jpg?1593860635
 value=3.306
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=River Delta
-image=https://magiccards.info/scans/en/ia/346.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea335fc0-0591-4acd-9ae8-7858222770da.jpg?1562938830
 value=2.111
 rarity=R
 type=Land

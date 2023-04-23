@@ -1,5 +1,5 @@
 name=Assembled Alphas
-image=https://magiccards.info/scans/en/emn/117.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8603c493-afb0-47a1-b4e3-9848b3824840.jpg?1576384509
 image_updated=2016-09-05
 value=2.500
 rarity=R

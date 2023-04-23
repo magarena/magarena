@@ -1,5 +1,5 @@
 name=Witch Hunter
-image=https://magiccards.info/scans/en/tsts/17.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/980ada04-1fb2-4aa8-b342-8934767587e0.jpg?1562780590
 value=3.675
 rarity=R
 type=Creature

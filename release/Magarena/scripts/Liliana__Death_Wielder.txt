@@ -1,5 +1,5 @@
 name=Liliana, Death Wielder
-image=https://magiccards.info/scans/en/akh/275.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac79d8f6-7c36-4eb9-8bda-3b813c634399.jpg?1561799334
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

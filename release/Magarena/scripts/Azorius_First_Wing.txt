@@ -1,5 +1,5 @@
 name=Azorius First-Wing
-image=https://magiccards.info/scans/en/di/105.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b675c1e6-add5-4959-a5be-f2571ccebcb4.jpg?1593273561
 value=3.922
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Molten Frame
-image=https://magiccards.info/scans/en/cfx/69.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58356504-e28e-456c-b1d3-e6232f4d78a6.jpg?1562801105
 value=2.010
 rarity=C
 type=Instant

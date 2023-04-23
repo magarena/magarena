@@ -1,5 +1,5 @@
 name=Shimmering Barrier
-image=https://magiccards.info/scans/en/us/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2aa7158a-5c00-4969-a116-c40cefdf4591.jpg?1562904043
 value=3.016
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Lys Alana Scarblade
-image=https://magiccards.info/scans/en/ema/95.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58b3b63d-fabb-46ad-aabe-1e9fb34b4f8c.jpg?1631234641
 value=3.131
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Broodbirth Viper
-image=https://magiccards.info/scans/en/c15/10.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebf51c44-aa06-476e-b081-b71c11b1e8ba.jpg?1562711094
 image_updated=2016-02-29
 value=2.500
 rarity=U

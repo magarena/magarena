@@ -1,5 +1,5 @@
 name=Altar's Light
-image=https://magiccards.info/scans/en/mi/1.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd037f62-7cef-4737-b575-942c5959f1ea.jpg?1562160313
 value=2.351
 rarity=U
 type=Instant

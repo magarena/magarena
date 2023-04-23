@@ -1,5 +1,5 @@
 name=Timber Gorge
-image=https://magiccards.info/scans/en/m19/258.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07076412-18fe-4e15-bdb5-17111b4a66db.jpg?1562300278
 image_updated=2018-08-07
 value=2.500
 rarity=C

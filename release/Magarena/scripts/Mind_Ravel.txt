@@ -1,5 +1,5 @@
 name=Mind Ravel
-image=https://magiccards.info/scans/en/5e/38.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a9a0296-3690-45c7-98af-d546296ad9fe.jpg?1562589675
 value=2.846
 rarity=C
 type=Sorcery

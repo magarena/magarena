@@ -1,5 +1,5 @@
 name=Soldier of Fortune
-image=https://magiccards.info/scans/en/ai/117.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37c05f46-2081-4ebb-a758-894ac040ea2a.jpg?1562768246
 value=3.758
 rarity=U
 type=Creature

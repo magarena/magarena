@@ -1,5 +1,5 @@
 name=Slinking Serpent
-image=https://magiccards.info/scans/en/in/274.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/070a7004-5a28-4ccb-8640-ad6b07b51ece.jpg?1562896404
 value=1.791
 rarity=U
 type=Creature

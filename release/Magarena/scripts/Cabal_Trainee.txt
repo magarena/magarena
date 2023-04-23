@@ -1,5 +1,5 @@
 name=Cabal Trainee
-image=https://magiccards.info/scans/en/ju/63.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d345d702-b205-4391-985a-6201e707f0ba.jpg?1595095765
 value=3.417
 rarity=C
 type=Creature

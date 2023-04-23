@@ -1,5 +1,5 @@
 name=Sanguine Sacrament
-image=https://magiccards.info/scans/en/xln/33.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9fae153-d86a-42b5-9c1c-6dbd56118ecb.jpg?1562567047
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Mystic Familiar
-image=https://magiccards.info/scans/en/tr/11.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b235567a-424e-48da-a94b-c6674a73b3fa.jpg?1574250420
 value=3.438
 rarity=C
 type=Creature

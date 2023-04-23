@@ -1,5 +1,5 @@
 name=Stormcaller of Keranos
-image=https://magiccards.info/scans/en/bng/112.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d397bdc3-a866-45be-8740-185d9ccf29c4.jpg?1593092376
 value=3.766
 rarity=U
 type=Creature

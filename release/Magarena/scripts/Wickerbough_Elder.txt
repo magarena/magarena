@@ -1,5 +1,5 @@
 name=Wickerbough Elder
-image=https://magiccards.info/scans/en/eve/80.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a5832cc-f9f6-4881-99dd-c0728a52cabe.jpg?1673484877
 image_updated=2017-01-11
 value=4.174
 rarity=C

@@ -1,5 +1,5 @@
 name=Lu Bu, Master-at-Arms
-image=https://magiccards.info/scans/en/p3k/115.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91bf3a4f-f004-459e-a6fd-122d4cce7d17.jpg?1562925792
 value=3.531
 rarity=R
 type=Legendary,Creature

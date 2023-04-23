@@ -1,5 +1,5 @@
 name=Terminate
-image=https://magiccards.info/scans/en/mm3/194.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0476ea45-ee6d-41c6-93b8-50f92cb37b78.jpg?1673305697
 image_updated=2017-08-08
 value=4.272
 removal=5

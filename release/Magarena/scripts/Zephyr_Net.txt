@@ -1,5 +1,5 @@
 name=Zephyr Net
-image=https://magiccards.info/scans/en/lw/98.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/817b8996-388f-4704-a4c8-ef99d4701805.jpg?1562355706
 value=2.211
 rarity=C
 type=Enchantment

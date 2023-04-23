@@ -1,5 +1,5 @@
 name=Ashen Powder
-image=https://magiccards.info/scans/en/6e/112.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6fa11f5-546b-4a14-afd0-80866d4968ab.jpg?1562823311
 value=4.125
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Disrupt
-image=https://magiccards.info/scans/en/in/51.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c000a02f-6b7e-4925-a938-59e645e980d7.jpg?1562933600
 value=4.475
 rarity=U
 type=Instant

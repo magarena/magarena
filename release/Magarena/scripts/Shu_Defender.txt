@@ -1,5 +1,5 @@
 name=Shu Defender
-image=https://magiccards.info/scans/en/p3k/20.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee57a9ab-c385-4a51-aff7-6a654f5d7611.jpg?1562258001
 value=2.333
 rarity=C
 type=Creature

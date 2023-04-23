@@ -1,5 +1,5 @@
 name=Crackling Triton
-image=https://magiccards.info/scans/en/ths/45.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d6bb19c-3610-4609-b23c-21d4d80e4582.jpg?1562821246
 value=2.893
 rarity=C
 type=Creature

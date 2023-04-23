@@ -1,5 +1,5 @@
 name=Ark of Blight
-image=https://magiccards.info/scans/en/sc/140.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3b09956-cc34-4472-8b9f-ae355522bd5a.jpg?1562536903
 value=1.929
 rarity=U
 type=Artifact

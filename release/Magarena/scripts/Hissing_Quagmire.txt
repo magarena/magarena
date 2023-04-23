@@ -1,5 +1,5 @@
 name=Hissing Quagmire
-image=https://magiccards.info/scans/en/ogw/171.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ef11b54-205a-48e9-92d0-5d416be869ef.jpg?1562917171
 image_updated=2016-02-29
 value=2.500
 rarity=R

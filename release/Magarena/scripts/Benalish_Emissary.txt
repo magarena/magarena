@@ -1,5 +1,5 @@
 name=Benalish Emissary
-image=https://magiccards.info/scans/en/in/5.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b82d56e-80d7-4be9-ac22-de3257efc458.jpg?1562916610
 value=3.600
 rarity=U
 type=Creature

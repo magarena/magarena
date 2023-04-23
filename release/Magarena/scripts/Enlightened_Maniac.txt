@@ -1,5 +1,5 @@
 name=Enlightened Maniac
-image=https://magiccards.info/scans/en/emn/58.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6e692b8-f71d-485b-b37b-71259dc6c48e.jpg?1576384103
 image_updated=2016-09-05
 value=2.500
 rarity=C

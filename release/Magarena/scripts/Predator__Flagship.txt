@@ -1,5 +1,5 @@
 name=Predator, Flagship
-image=https://magiccards.info/scans/en/c14/263.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/4910ee8b-ec00-4a5e-859e-b865b23117da.jpg?1592673658
 value=4.000
 rarity=R
 type=Legendary,Artifact

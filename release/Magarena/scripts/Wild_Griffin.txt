@@ -1,5 +1,5 @@
 name=Wild Griffin
-image=https://magiccards.info/scans/en/cn2/99.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0494fcd-ec49-43fd-b83f-60aba735bd69.jpg?1576382337
 image_updated=2017-08-29
 value=2.703
 rarity=C

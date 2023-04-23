@@ -1,5 +1,5 @@
 name=Ichor Wellspring
-image=https://magiccards.info/scans/en/c16/258.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1ccdb407-ac8f-4736-89d3-ab0d086096ea.jpg?1625978684
 image_updated=2017-08-17
 value=3.837
 rarity=C

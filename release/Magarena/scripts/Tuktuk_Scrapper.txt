@@ -1,5 +1,5 @@
 name=Tuktuk Scrapper
-image=https://magiccards.info/scans/en/wwk/94.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3a84a2a-6384-497a-8ee2-de0fa74fcc80.jpg?1562296696
 value=3.549
 rarity=U
 type=Creature

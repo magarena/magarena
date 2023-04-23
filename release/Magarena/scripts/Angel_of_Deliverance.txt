@@ -1,5 +1,5 @@
 name=Angel of Deliverance
-image=https://magiccards.info/scans/en/soi/2.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4e12f83-eab8-4113-ab63-3f7a830861d4.jpg?1576383639
 value=2.500
 rarity=R
 type=Creature

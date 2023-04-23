@@ -1,5 +1,5 @@
 name=Wellspring
-image=https://magiccards.info/scans/en/mr/348.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c69ba095-dd78-4999-87a9-63f7165846e4.jpg?1562721895
 value=2.212
 rarity=R
 type=Enchantment

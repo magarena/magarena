@@ -1,5 +1,5 @@
 name=Urza's Filter
-image=https://magiccards.info/scans/en/in/318.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/680c75b1-e766-40be-84d7-2332047bb3de.jpg?1562915969
 value=3.632
 rarity=R
 type=Artifact

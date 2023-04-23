@@ -1,5 +1,5 @@
 name=Bile Blight
-image=https://magiccards.info/scans/en/bng/61.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3ca11057-e50a-4817-924a-5bb504d0780f.jpg?1593091873
 value=3.823
 rarity=U
 type=Instant

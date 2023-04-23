@@ -1,5 +1,5 @@
 name=Coral Merfolk
-image=https://magiccards.info/scans/en/m12/49.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97a74ccf-8165-4db1-a87c-52c2d8ea0058.jpg?1592518286
 value=1.744
 rarity=C
 type=Creature

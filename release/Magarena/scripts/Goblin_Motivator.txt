@@ -1,5 +1,5 @@
 name=Goblin Motivator
-image=https://magiccards.info/scans/en/m19/143.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94b3a4fb-9024-45ef-a54b-cf3a9fa5b9c2.jpg?1562303343
 value=2.500
 rarity=C
 type=Creature

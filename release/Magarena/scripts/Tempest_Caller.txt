@@ -1,5 +1,5 @@
 name=Tempest Caller
-image=https://magiccards.info/scans/en/xln/86.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64d0f22d-0448-4039-b6f3-75d12e10f48c.jpg?1562556586
 value=2.500
 rarity=U
 type=Creature

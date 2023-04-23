@@ -1,5 +1,5 @@
 name=Natural State
-image=https://magiccards.info/scans/en/ogw/136.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdd4bdd5-1673-4f22-b593-41df8ce95a97.jpg?1562946233
 image_updated=2016-02-29
 value=2.500
 rarity=C

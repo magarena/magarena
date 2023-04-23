@@ -1,5 +1,5 @@
 name=Plummet
-image=https://magiccards.info/scans/en/m19/193.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5469e696-bbf1-43e3-9c25-fe089b36caed.jpg?1636224615
 image_updated=2018-08-07
 value=2.500
 rarity=C

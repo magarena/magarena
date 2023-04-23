@@ -1,5 +1,5 @@
 name=Shanodin Dryads
-image=https://magiccards.info/scans/en/7e/269.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90e8ff87-22e8-4c04-84bc-f0ea2c12a86c.jpg?1562243108
 value=2.537
 rarity=C
 type=Creature

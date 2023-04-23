@@ -1,5 +1,5 @@
 name=Abu Ja'far
-image=https://magiccards.info/scans/en/ch/57.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/023b5e6f-10de-422d-8431-11f1fdeca246.jpg?1562895407
 value=3.797
 rarity=U
 type=Creature

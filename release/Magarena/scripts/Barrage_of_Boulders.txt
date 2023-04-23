@@ -1,5 +1,5 @@
 name=Barrage of Boulders
-image=https://magiccards.info/scans/en/ktk/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2eb1a9f7-32ba-48fd-a7f7-788b0ec052c6.jpg?1562784418
 value=2.125
 rarity=C
 type=Sorcery

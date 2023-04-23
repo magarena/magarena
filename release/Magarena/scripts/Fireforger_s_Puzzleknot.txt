@@ -1,5 +1,5 @@
 name=Fireforger's Puzzleknot
-image=https://magiccards.info/scans/en/kld/213.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a1c11ca-c81b-451e-a767-68865827e06d.jpg?1576383184
 image_updated=2016-10-05
 value=2.500
 rarity=C

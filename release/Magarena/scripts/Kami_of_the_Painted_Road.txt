@@ -1,5 +1,5 @@
 name=Kami of the Painted Road
-image=https://magiccards.info/scans/en/chk/23.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7068739c-0a6a-49a1-88c3-68d7abc58ee2.jpg?1562761493
 value=1.630
 rarity=C
 type=Creature

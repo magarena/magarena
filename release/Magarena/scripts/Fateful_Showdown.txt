@@ -1,5 +1,5 @@
 name=Fateful Showdown
-image=https://magiccards.info/scans/en/kld/114.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a19d5bdd-7f45-4ff1-bd1a-ac4e87572bcb.jpg?1576382046
 image_updated=2016-10-05
 value=2.500
 rarity=R

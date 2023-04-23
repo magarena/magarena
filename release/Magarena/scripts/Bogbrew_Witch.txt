@@ -1,5 +1,5 @@
 name=Bogbrew Witch
-image=https://magiccards.info/scans/en/ima/83.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6ce1aa49-fe00-4390-8c4b-d1203cc337cd.jpg?1600714297
 image_updated=2017-04-12
 value=3.148
 rarity=U

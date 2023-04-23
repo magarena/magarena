@@ -1,5 +1,5 @@
 name=Altar of the Brood
-image=https://magiccards.info/scans/en/ktk/216.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d59d264-87ee-4305-bffb-110549331a82.jpg?1562790137
 value=2.100
 rarity=R
 type=Artifact

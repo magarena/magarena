@@ -1,5 +1,5 @@
 name=Sword of Kaldra
-image=https://magiccards.info/scans/en/mi/251.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a665bff-b57a-450c-9310-932b0686a03e.jpg?1562140950
 value=4.267
 rarity=R
 type=Legendary,Artifact

@@ -1,5 +1,5 @@
 name=Rootwater Depths
-image=https://magiccards.info/scans/en/tp/329.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/7186d86c-679b-4520-9cf0-5b25f6d98312.jpg?1562429862
 value=2.946
 rarity=U
 type=Land

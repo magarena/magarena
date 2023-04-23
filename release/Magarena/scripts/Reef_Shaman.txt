@@ -1,5 +1,5 @@
 name=Reef Shaman
-image=https://magiccards.info/scans/en/ap/29.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6f56714-0baa-48f9-8da1-50d9279e759c.jpg?1562942004
 value=4.049
 rarity=C
 type=Creature

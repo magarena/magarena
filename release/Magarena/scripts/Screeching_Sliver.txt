@@ -1,5 +1,5 @@
 name=Screeching Sliver
-image=https://magiccards.info/scans/en/ts/75.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/313e71da-ce72-4976-8286-f4495ea56485.jpg?1562905348
 value=3.265
 rarity=C
 type=Creature

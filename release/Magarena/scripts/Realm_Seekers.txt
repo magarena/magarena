@@ -1,5 +1,5 @@
 name=Realm Seekers
-image=https://magiccards.info/scans/en/c16/162.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93167de6-cbce-4bd6-bc41-c35f54f28544.jpg?1562410679
 image_updated=2017-08-17
 value=3.929
 rarity=R

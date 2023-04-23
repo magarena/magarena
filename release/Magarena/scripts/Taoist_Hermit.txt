@@ -1,5 +1,5 @@
 name=Taoist Hermit
-image=https://magiccards.info/scans/en/p3k/150.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d818c231-8d66-4024-91de-fe29f8622902.jpg?1562257985
 value=3.378
 rarity=U
 type=Creature

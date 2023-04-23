@@ -1,5 +1,5 @@
 name=Healer's Headdress
-image=https://magiccards.info/scans/en/5dn/129.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9565f076-54a6-43d6-bcf0-dcb932f6c116.jpg?1562878628
 value=2.726
 rarity=C
 type=Artifact

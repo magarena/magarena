@@ -1,5 +1,5 @@
 name=Urban Burgeoning
-image=https://magiccards.info/scans/en/rtr/138.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/393c230f-5bc3-4b71-b5ac-81d5ce227df5.jpg?1562784951
 value=2.868
 rarity=C
 type=Enchantment

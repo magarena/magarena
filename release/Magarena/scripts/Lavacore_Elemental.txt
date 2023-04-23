@@ -1,5 +1,5 @@
 name=Lavacore Elemental
-image=https://magiccards.info/scans/en/pc/103.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6b2f4de-fc41-4e68-8655-577616b10c7e.jpg?1562583423
 value=2.871
 rarity=U
 type=Creature

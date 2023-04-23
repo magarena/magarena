@@ -1,5 +1,5 @@
 name=Retaliation
-image=https://magiccards.info/scans/en/us/272.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a6e3814-5b9f-40da-8205-263fc49294da.jpg?1562920716
 value=3.040
 rarity=U
 type=Enchantment

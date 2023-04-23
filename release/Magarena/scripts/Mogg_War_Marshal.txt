@@ -1,5 +1,5 @@
 name=Mogg War Marshal
-image=https://magiccards.info/scans/en/ema/139.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fb6d241-f68b-45c8-a79a-f6c274bd8512.jpg?1619400762
 value=4.300
 rarity=C
 type=Creature

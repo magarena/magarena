@@ -1,5 +1,5 @@
 name=Viashino Racketeer
-image=https://magiccards.info/scans/en/rtr/112.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf4c2d22-9c36-42cc-854d-f96410bb5cf1.jpg?1562792494
 value=1.760
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Great Defender
-image=https://magiccards.info/scans/en/lg/185.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/879a8653-1538-4f78-a3d3-a900a4d9499b.jpg?1562859683
 value=2.057
 rarity=U
 type=Instant

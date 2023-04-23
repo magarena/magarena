@@ -1,5 +1,5 @@
 name=Goblin Pyromancer
-image=https://magiccards.info/scans/en/on/206.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb4815b7-fc20-44a4-ad1c-66d92993557f.jpg?1562939185
 value=3.551
 rarity=R
 type=Creature

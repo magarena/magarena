@@ -1,5 +1,5 @@
 name=Ebony Horse
-image=https://magiccards.info/scans/en/4e/336.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/441ac6f6-c233-4fd4-8005-2ecf0579a538.jpg?1562910978
 value=2.294
 rarity=R
 type=Artifact

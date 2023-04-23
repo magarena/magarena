@@ -1,5 +1,5 @@
 name=Cloudskate
-image=https://magiccards.info/scans/en/ne/29.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7f97e50-3aeb-4c79-81b1-505a2f32d8ac.jpg?1562632620
 value=3.184
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Nobilis of War
-image=https://magiccards.info/scans/en/mm2/195.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f002636-1971-468d-b171-7b8147829972.jpg?1562259034
 value=4.182
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Cathartic Reunion
-image=https://magiccards.info/scans/en/kld/109.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b36fa6f3-29e8-4788-bfcd-59576187c399.jpg?1599706266
 image_updated=2016-10-05
 value=2.500
 rarity=C

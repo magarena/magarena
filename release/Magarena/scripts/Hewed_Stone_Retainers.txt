@@ -1,5 +1,5 @@
 name=Hewed Stone Retainers
-image=https://magiccards.info/scans/en/frf/161.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/250bc19c-b882-42ae-b516-fe876d0d047d.jpg?1562823393
 value=2.500
 rarity=U
 type=Artifact,Creature

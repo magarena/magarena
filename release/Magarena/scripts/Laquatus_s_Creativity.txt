@@ -1,5 +1,5 @@
 name=Laquatus's Creativity
-image=https://magiccards.info/scans/en/od/88.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcd48c28-bfa3-4eca-8e1a-f72d785b2ab9.jpg?1562936171
 value=2.533
 rarity=U
 type=Sorcery

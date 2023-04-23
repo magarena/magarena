@@ -1,5 +1,5 @@
 name=Shield of Duty and Reason
-image=https://magiccards.info/scans/en/ap/16.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4ddf4ee0-75d6-48a5-955c-97faf73b899f.jpg?1562913230
 value=3.015
 rarity=C
 type=Enchantment

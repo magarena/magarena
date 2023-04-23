@@ -1,5 +1,5 @@
 name=Sliver Queen
-image=https://magiccards.info/scans/en/sh/141.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/096cff82-28eb-4096-be1d-a02b9a56e682.jpg?1562428176
 value=4.460
 rarity=R
 type=Legendary,Creature

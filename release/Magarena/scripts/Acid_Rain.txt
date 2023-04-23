@@ -1,5 +1,5 @@
 name=Acid Rain
-image=https://magiccards.info/scans/en/lg/44.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13281377-6d16-4ed3-8aa6-c47d6eb783df.jpg?1562899536
 value=3.927
 removal=2
 rarity=R

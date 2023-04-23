@@ -1,5 +1,5 @@
 name=Arashin Foremost
-image=https://magiccards.info/scans/en/dtk/3.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f88ecc5-df1d-47e6-8cf3-1d708e2389e4.jpg?1562783457
 value=2.500
 rarity=R
 type=Creature

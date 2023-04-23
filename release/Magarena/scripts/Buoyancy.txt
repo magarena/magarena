@@ -1,5 +1,5 @@
 name=Buoyancy
-image=https://magiccards.info/scans/en/mm/63.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b208dad2-a412-45fd-b19a-d370426ef5b8.jpg?1562382548
 value=2.778
 rarity=C
 type=Enchantment

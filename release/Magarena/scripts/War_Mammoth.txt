@@ -1,5 +1,5 @@
 name=War Mammoth
-image=https://magiccards.info/scans/en/5e/202.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e892859-81cc-461a-a79f-39af43dbfb4f.jpg?1562924812
 value=3.370
 rarity=C
 type=Creature

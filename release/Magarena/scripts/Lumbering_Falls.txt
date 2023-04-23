@@ -1,5 +1,5 @@
 name=Lumbering Falls
-image=https://magiccards.info/scans/en/bfz/239.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7e9db98-3a2d-46d8-a07f-99d66a4d9f2f.jpg?1631589871
 image_updated=2015-11-08
 value=2.500
 rarity=R

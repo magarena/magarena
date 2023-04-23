@@ -1,5 +1,5 @@
 name=Treasure Mage
-image=https://magiccards.info/scans/en/mbs/34.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0ea2fcd-f090-4545-a055-30d7980ad66f.jpg?1658650104
 value=3.594
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Scout the Borders
-image=https://magiccards.info/scans/en/ktk/148.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb15c6c7-8fe6-496c-9977-3e7942b920c4.jpg?1562795470
 value=2.750
 rarity=C
 type=Sorcery

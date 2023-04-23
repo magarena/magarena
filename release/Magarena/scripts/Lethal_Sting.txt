@@ -1,5 +1,5 @@
 name=Lethal Sting
-image=https://magiccards.info/scans/en/hou/67.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eaded6bf-2db7-4b1d-93cc-4b7b571cd2de.jpg?1562819094
 value=2.500
 rarity=C
 type=Sorcery

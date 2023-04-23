@@ -1,5 +1,5 @@
 name=Lagonna-Band Elder
-image=https://magiccards.info/scans/en/ths/21.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68b9df54-e78e-4a86-a8b1-b735ec08a812.jpg?1562819312
 value=3.065
 rarity=C
 type=Creature

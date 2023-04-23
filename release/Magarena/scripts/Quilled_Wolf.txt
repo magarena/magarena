@@ -1,5 +1,5 @@
 name=Quilled Wolf
-image=https://magiccards.info/scans/en/soi/222.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa1569b5-94ef-4ba5-98c6-f1bd4f73c7d5.jpg?1576385189
 value=2.500
 rarity=C
 type=Creature

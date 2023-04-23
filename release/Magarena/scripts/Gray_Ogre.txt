@@ -1,5 +1,5 @@
 name=Gray Ogre
-image=https://magiccards.info/scans/en/4e/218.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11bf2cc0-799f-4eb8-b338-ed7543f469e7.jpg?1559604196
 value=1.352
 rarity=C
 type=Creature

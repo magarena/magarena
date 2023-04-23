@@ -1,5 +1,5 @@
 name=Raven Guild Master
-image=https://magiccards.info/scans/en/sc/47.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9843f847-6a8f-4042-86b6-f7fe5a47cc57.jpg?1562532562
 value=4.377
 rarity=R
 type=Creature

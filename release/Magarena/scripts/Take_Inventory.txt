@@ -1,5 +1,5 @@
 name=Take Inventory
-image=https://magiccards.info/scans/en/emn/76.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3584150-4f09-4c15-b13e-707bd91b3004.jpg?1576384228
 image_updated=2016-09-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Commando Raid
-image=https://magiccards.info/scans/en/on/195.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb237330-ac2e-411d-836c-6628f96f3262.jpg?1562939151
 value=2.875
 rarity=U
 type=Instant

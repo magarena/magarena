@@ -1,5 +1,5 @@
 name=Crude Rampart
-image=https://magiccards.info/scans/en/on/17.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af5d1be2-d6ae-4820-aa01-62f261b0f110.jpg?1562936464
 value=3.048
 rarity=U
 type=Creature

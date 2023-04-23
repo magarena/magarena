@@ -1,5 +1,5 @@
 name=Child of Thorns
-image=https://magiccards.info/scans/en/bok/123.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b32c342f-ee1a-461c-9082-d2f6d9412f54.jpg?1562879219
 value=3.112
 rarity=C
 type=Creature

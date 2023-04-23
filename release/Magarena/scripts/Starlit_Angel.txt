@@ -1,5 +1,5 @@
 name=Starlit Angel
-image=https://magiccards.info/scans/en/po/192.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36691cd0-c709-4452-a61a-d6e2049fdfcf.jpg?1562446168
 value=2.300
 rarity=U
 type=Creature

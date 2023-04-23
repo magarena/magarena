@@ -1,5 +1,5 @@
 name=Scrounger of Souls
-image=https://magiccards.info/scans/en/hou/76.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d66f3c4-5a11-4e28-a4ae-673b3b36d3ec.jpg?1562795965
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wall of Opposition
-image=https://magiccards.info/scans/en/lg/168.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23243752-25c5-407e-9ce4-4bc1f02d01c1.jpg?1562902035
 image_updated=2011-01-11
 value=2.735
 rarity=R

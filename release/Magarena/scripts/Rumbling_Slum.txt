@@ -1,5 +1,5 @@
 name=Rumbling Slum
-image=https://magiccards.info/scans/en/gp/126.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d8fd566-0460-4f2f-99c2-8999ce6f2c61.jpg?1562842646
 image_updated=2017-01-06
 value=4.181
 rarity=R

@@ -1,5 +1,5 @@
 name=Bituminous Blast
-image=https://magiccards.info/scans/en/c16/182.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af8613ee-4b67-49b8-920b-3b5a25897f64.jpg?1631588410
 image_updated=2017-08-17
 value=3.750
 rarity=U

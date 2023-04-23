@@ -1,5 +1,5 @@
 name=Invisible Stalker
-image=https://magiccards.info/scans/en/isd/60.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14d265aa-c1d8-4faa-b282-5c273ab725fd.jpg?1604192456
 value=3.960
 rarity=U
 type=Creature

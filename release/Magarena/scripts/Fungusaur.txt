@@ -1,5 +1,5 @@
 name=Fungusaur
-image=https://magiccards.info/scans/en/8e/250.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79324f73-25cd-477a-b4f0-fd3e1319e451.jpg?1562919329
 value=3.755
 rarity=R
 type=Creature

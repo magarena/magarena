@@ -1,5 +1,5 @@
 name=Disciple of Griselbrand
-image=https://magiccards.info/scans/en/isd/98.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30c9c0f0-2668-4163-8158-fada2d953cb3.jpg?1562905280
 value=3.750
 rarity=U
 type=Creature

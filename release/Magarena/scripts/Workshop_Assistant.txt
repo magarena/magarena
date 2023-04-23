@@ -1,5 +1,5 @@
 name=Workshop Assistant
-image=https://magiccards.info/scans/en/kld/241.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9387e8f-0e72-4212-81c8-e64050700c52.jpg?1608911774
 image_updated=2016-10-05
 value=2.500
 rarity=C

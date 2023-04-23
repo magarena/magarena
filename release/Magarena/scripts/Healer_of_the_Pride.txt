@@ -1,5 +1,5 @@
 name=Healer of the Pride
-image=https://magiccards.info/scans/en/m13/19.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35716e37-1bb2-41e2-bb55-e65126b01ce3.jpg?1562552327
 value=3.609
 rarity=U
 type=Creature

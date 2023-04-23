@@ -1,5 +1,5 @@
 name=Temple of Deceit
-image=https://magiccards.info/scans/en/ths/225.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8ccbf8d-7f37-4811-bf7b-adc32ed735f3.jpg?1682210699
 value=3.576
 rarity=R
 type=Land

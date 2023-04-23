@@ -1,5 +1,5 @@
 name=Tattered Haunter
-image=https://magiccards.info/scans/en/emn/77.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd8ac8da-7497-4b07-af86-29bac1361c8e.jpg?1576384234
 image_updated=2016-09-05
 value=2.500
 rarity=C

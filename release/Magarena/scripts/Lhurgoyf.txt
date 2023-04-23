@@ -1,5 +1,5 @@
 name=Lhurgoyf
-image=https://magiccards.info/scans/en/cmd/165.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea5d550a-bd8b-4f9e-ac7d-c35ebbe313e6.jpg?1562276490
 value=4.329
 rarity=R
 type=Creature

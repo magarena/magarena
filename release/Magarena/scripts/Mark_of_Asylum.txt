@@ -1,5 +1,5 @@
 name=Mark of Asylum
-image=https://magiccards.info/scans/en/cfx/10.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9801e68-9a03-491f-be23-f0b830c4a0c5.jpg?1562804126
 value=3.236
 rarity=R
 type=Enchantment

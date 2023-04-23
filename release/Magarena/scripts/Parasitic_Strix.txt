@@ -1,5 +1,5 @@
 name=Parasitic Strix
-image=https://magiccards.info/scans/en/cfx/32.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70017989-aaf1-4a70-98aa-e447d6ce793a.jpg?1598304123
 value=3.056
 rarity=C
 type=Artifact,Creature

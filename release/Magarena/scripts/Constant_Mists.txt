@@ -1,5 +1,5 @@
 name=Constant Mists
-image=https://magiccards.info/scans/en/sh/54.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97a8a5fe-0391-489b-9556-0a1bf7e1900d.jpg?1562596895
 value=4.281
 rarity=U
 type=Instant

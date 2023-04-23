@@ -1,5 +1,5 @@
 name=Triton Fortune Hunter
-image=https://magiccards.info/scans/en/ths/69.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1173ff96-998c-4fe7-9b28-602d990e0339.jpg?1562814843
 value=3.421
 rarity=U
 type=Creature

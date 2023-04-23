@@ -1,5 +1,5 @@
 name=Oros, the Avenger
-image=https://magiccards.info/scans/en/cmd/216.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc4d7aa2-ee1b-435c-8876-44111fafc97a.jpg?1592673434
 value=4.026
 rarity=R
 type=Legendary,Creature

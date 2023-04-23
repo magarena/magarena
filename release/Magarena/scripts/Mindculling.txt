@@ -1,5 +1,5 @@
 name=Mindculling
-image=https://magiccards.info/scans/en/nph/39.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6faf4372-6fb5-48aa-9b94-b0e77c867116.jpg?1562878573
 value=2.724
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Icatian Moneychanger
-image=https://magiccards.info/scans/en/fe/152.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3d502d4-4a96-47b3-ae26-8b2c9f36623d.jpg?1562928496
 value=2.512
 rarity=C
 type=Creature

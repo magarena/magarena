@@ -1,5 +1,5 @@
 name=Riot Control
-image=https://magiccards.info/scans/en/dgm/6.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7886607-86db-4221-8752-296104aaaef2.jpg?1562935300
 value=3.638
 rarity=C
 type=Instant

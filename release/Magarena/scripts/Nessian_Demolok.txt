@@ -1,5 +1,5 @@
 name=Nessian Demolok
-image=https://magiccards.info/scans/en/bng/128.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee0683b2-8bc2-4c6a-964e-b909693b68c1.jpg?1593092523
 value=2.966
 rarity=U
 type=Creature

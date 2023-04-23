@@ -1,5 +1,5 @@
 name=Emerald Charm
-image=https://magiccards.info/scans/en/vi/56.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9c9199b-61b3-4794-878b-f065058f50f3.jpg?1562279108
 value=4.390
 rarity=C
 type=Instant

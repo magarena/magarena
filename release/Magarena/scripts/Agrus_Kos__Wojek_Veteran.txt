@@ -1,5 +1,5 @@
 name=Agrus Kos, Wojek Veteran
-image=https://magiccards.info/scans/en/rav/190.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2521942-0ecd-45a9-bac6-04267a2c29ed.jpg?1598916720
 value=3.735
 rarity=R
 type=Legendary,Creature

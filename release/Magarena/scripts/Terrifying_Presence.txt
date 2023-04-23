@@ -1,5 +1,5 @@
 name=Terrifying Presence
-image=https://magiccards.info/scans/en/avr/196.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/070408ff-5f23-4972-a9cc-d5351fd995f7.jpg?1592752235
 image_updated=2016-09-12
 value=3.955
 rarity=C

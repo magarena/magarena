@@ -1,5 +1,5 @@
 name=Spiketail Drakeling
-image=https://magiccards.info/scans/en/ts/80.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e43a696a-11fb-4573-bf95-1fec643bf418.jpg?1619394746
 value=4.114
 rarity=C
 type=Creature

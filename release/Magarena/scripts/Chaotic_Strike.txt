@@ -1,5 +1,5 @@
 name=Chaotic Strike
-image=https://magiccards.info/scans/en/in/140.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/061df8e4-6947-4bbb-9fe7-52ca4fd95d65.jpg?1562896191
 value=1.324
 rarity=U
 type=Instant

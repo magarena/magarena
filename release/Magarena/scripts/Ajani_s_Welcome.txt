@@ -1,5 +1,5 @@
 name=Ajani's Welcome
-image=https://magiccards.info/scans/en/m19/6.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9045fcb-b633-4c35-8058-6234311551ae.jpg?1562304330
 value=2.500
 rarity=U
 type=Enchantment

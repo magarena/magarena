@@ -1,5 +1,5 @@
 name=Smoldering Spires
-image=https://magiccards.info/scans/en/wwk/143.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6741f53-f02e-4f1b-9620-e49ad00e7e1d.jpg?1592766121
 value=3.022
 rarity=C
 type=Land

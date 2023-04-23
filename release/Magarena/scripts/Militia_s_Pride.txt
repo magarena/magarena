@@ -1,5 +1,5 @@
 name=Militia's Pride
-image=https://magiccards.info/scans/en/lw/30.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53c8cde1-e447-422e-aed0-2571a77d3d29.jpg?1562348541
 value=3.948
 rarity=R
 type=Tribal,Enchantment

@@ -1,5 +1,5 @@
 name=Filigree Fracture
-image=https://magiccards.info/scans/en/cfx/82.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65075828-d685-4107-866e-75a53cbc6414.jpg?1562801393
 value=2.671
 rarity=U
 type=Instant

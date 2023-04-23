@@ -1,5 +1,5 @@
 name=Rally the Peasants
-image=https://magiccards.info/scans/en/ema/25.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b300df0-c867-41e6-a1fd-fe547ed3dc51.jpg?1547515738
 value=3.588
 rarity=C
 type=Instant

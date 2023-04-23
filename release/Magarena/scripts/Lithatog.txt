@@ -1,5 +1,5 @@
 name=Lithatog
-image=https://magiccards.info/scans/en/od/289.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c69742a8-cc6d-457b-8d99-81d05ab1bf0b.jpg?1562932177
 value=2.629
 rarity=U
 type=Creature

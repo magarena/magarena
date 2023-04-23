@@ -1,5 +1,5 @@
 name=Emblem of the Warmind
-image=https://magiccards.info/scans/en/fut/112.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03ab2a41-315b-439c-b02c-f12335fc903a.jpg?1562895724
 value=3.208
 rarity=U
 type=Enchantment

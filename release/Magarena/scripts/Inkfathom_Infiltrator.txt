@@ -1,5 +1,5 @@
 name=Inkfathom Infiltrator
-image=https://magiccards.info/scans/en/shm/167.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28854f0f-48d3-4a54-8811-c6329ad2e88e.jpg?1562828074
 value=3.989
 rarity=U
 type=Creature

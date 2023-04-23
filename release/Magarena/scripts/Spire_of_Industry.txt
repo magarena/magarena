@@ -1,5 +1,5 @@
 name=Spire of Industry
-image=https://magiccards.info/scans/en/aer/184.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a92516e8-9e52-4fa8-8c22-9191ec5b155e.jpg?1682210655
 value=2.500
 rarity=R
 type=Land

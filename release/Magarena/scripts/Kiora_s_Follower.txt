@@ -1,5 +1,5 @@
 name=Kiora's Follower
-image=https://magiccards.info/scans/en/bng/150.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9704f4f-eb5b-4862-8efd-ff1d8fd4177a.jpg?1562840713
 image_updated=2016-12-21
 value=2.500
 rarity=U

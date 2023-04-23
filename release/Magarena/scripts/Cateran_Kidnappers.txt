@@ -1,5 +1,5 @@
 name=Cateran Kidnappers
-image=https://magiccards.info/scans/en/mm/122.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3768bdc1-4055-423a-a1cc-69b4c620e3e6.jpg?1562379927
 value=3.397
 rarity=U
 type=Creature

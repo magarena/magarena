@@ -1,5 +1,5 @@
 name=Skirk Alarmist
-image=https://magiccards.info/scans/en/le/111.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd1c1d41-8666-4c1d-9498-0e259472958d.jpg?1562946070
 value=3.275
 rarity=R
 type=Creature

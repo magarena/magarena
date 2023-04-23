@@ -1,5 +1,5 @@
 name=Soul Snare
-image=https://magiccards.info/scans/en/cmd/32.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5da64eec-d8a9-4156-9d26-56f81e1ffc44.jpg?1626100131
 value=4.011
 rarity=U
 type=Enchantment

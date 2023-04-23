@@ -1,5 +1,5 @@
 name=Devilthorn Fox
-image=https://magiccards.info/scans/en/soi/14.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57bea4c2-7a15-4f31-938d-c4c906e4ebe7.jpg?1576383733
 value=2.500
 rarity=C
 type=Creature

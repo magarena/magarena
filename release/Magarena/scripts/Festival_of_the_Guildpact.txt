@@ -1,5 +1,5 @@
 name=Festival of the Guildpact
-image=https://magiccards.info/scans/en/rav/17.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d15fc49c-07a9-4e55-a977-24f7b7c2df1a.jpg?1598913670
 value=3.317
 rarity=U
 type=Instant

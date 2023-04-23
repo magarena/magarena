@@ -1,5 +1,5 @@
 name=Voyage's End
-image=https://magiccards.info/scans/en/ths/73.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c55c60dc-40ed-4a36-9daa-702f79ffe818.jpg?1600714139
 value=3.489
 rarity=C
 type=Instant

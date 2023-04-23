@@ -1,5 +1,5 @@
 name=Cradle of Vitality
-image=https://magiccards.info/scans/en/ala/7.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4caae1f4-dfb0-466f-9fa6-eb014767e3c8.jpg?1600716975
 value=3.632
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Hymn to Tourach
-image=https://magiccards.info/scans/en/ema/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3faa8c5e-9e1b-4cee-b322-a033bf33dcbc.jpg?1580014264
 value=4.500
 rarity=U
 type=Sorcery

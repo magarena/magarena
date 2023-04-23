@@ -1,5 +1,5 @@
 name=Intangible Virtue
-image=https://magiccards.info/scans/en/mm3/9.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a1572f1-7333-4526-b311-5b0bfe37c053.jpg?1673483726
 image_updated=2017-08-08
 value=4.214
 rarity=U

@@ -1,5 +1,5 @@
 name=Wall of Torches
-image=https://magiccards.info/scans/en/m12/159.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76f69b92-7435-4aa8-9d90-89ea078befb1.jpg?1562647854
 value=2.182
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Pegasus Charger
-image=https://magiccards.info/scans/en/9e/34.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d0dee73-4df3-4b2f-9420-b23e6ced65c0.jpg?1562731258
 value=3.314
 rarity=C
 type=Creature

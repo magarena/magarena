@@ -1,5 +1,5 @@
 name=Manta Riders
-image=https://magiccards.info/scans/en/tp/74.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdff306c-1c7e-49ae-b10f-99e1927bbef1.jpg?1562056858
 image_updated=2016-12-23
 value=2.576
 rarity=C

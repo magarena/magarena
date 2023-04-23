@@ -1,5 +1,5 @@
 name=Crusade
-image=https://magiccards.info/scans/en/6e/13.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b99452c0-5d1c-4a73-90b6-0ec3ac0af893.jpg?1644608214
 image_updated=2016-11-28
 value=4.179
 rarity=R

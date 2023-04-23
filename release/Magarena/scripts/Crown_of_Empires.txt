@@ -1,5 +1,5 @@
 name=Crown of Empires
-image=https://magiccards.info/scans/en/m12/203.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4e36991-7b9f-4cc7-8da2-55b8baf19d70.jpg?1562661242
 value=3.230
 rarity=U
 type=Artifact

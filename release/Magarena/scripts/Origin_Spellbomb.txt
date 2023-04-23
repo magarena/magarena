@@ -1,5 +1,5 @@
 name=Origin Spellbomb
-image=https://magiccards.info/scans/en/som/189.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91e7faa4-160e-47d9-a9a1-5928d9d2b5e4.jpg?1562820385
 value=3.586
 rarity=C
 type=Artifact

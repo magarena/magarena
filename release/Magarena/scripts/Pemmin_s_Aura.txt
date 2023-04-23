@@ -1,5 +1,5 @@
 name=Pemmin's Aura
-image=https://magiccards.info/scans/en/sc/45.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fb3e38b-086e-4fbc-b7b1-8564c18276d7.jpg?1562532667
 value=4.426
 rarity=U
 type=Enchantment

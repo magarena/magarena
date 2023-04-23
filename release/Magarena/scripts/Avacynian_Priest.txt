@@ -1,5 +1,5 @@
 name=Avacynian Priest
-image=https://magiccards.info/scans/en/isd/4.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08a47828-a79a-4189-9eef-2a5fc5125b61.jpg?1562825813
 value=2.774
 rarity=C
 type=Creature

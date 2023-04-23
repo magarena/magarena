@@ -1,5 +1,5 @@
 name=Mindscour Dragon
-image=https://magiccards.info/scans/en/frf/41.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5708290-60ae-400c-b149-2a63153c2890.jpg?1562829671
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Fauna Shaman
-image=https://magiccards.info/scans/en/m11/172.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8b906eb-3223-474c-9b74-eda2c280f9c5.jpg?1675567470
 value=4.360
 rarity=R
 type=Creature

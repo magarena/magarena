@@ -1,5 +1,5 @@
 name=Trial of Strength
-image=https://magiccards.info/scans/en/akh/191.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acadb754-4a3b-4633-b784-252c0e1ab650.jpg?1543676004
 value=2.500
 rarity=U
 type=Enchantment

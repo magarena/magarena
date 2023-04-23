@@ -1,5 +1,5 @@
 name=Imperial Hellkite
-image=https://magiccards.info/scans/en/le/103.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d46470eb-fe6f-4ea0-b89c-261e9dc524dd.jpg?1562939919
 image_updated=2016-12-13
 value=3.870
 rarity=R

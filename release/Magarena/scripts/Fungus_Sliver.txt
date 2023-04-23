@@ -1,5 +1,5 @@
 name=Fungus Sliver
-image=https://magiccards.info/scans/en/ts/195.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/864a67e4-5deb-45d5-bd42-3078716e142b.jpg?1619397986
 value=3.744
 rarity=R
 type=Creature

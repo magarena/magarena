@@ -1,5 +1,5 @@
 name=Shadow Glider
-image=https://magiccards.info/scans/en/bfz/47.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4ffaf62-2e12-4b1d-a590-f63aacb4a30b.jpg?1562937667
 image_updated=2015-11-08
 value=2.500
 rarity=C

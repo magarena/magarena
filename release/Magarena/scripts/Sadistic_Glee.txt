@@ -1,5 +1,5 @@
 name=Sadistic Glee
-image=https://magiccards.info/scans/en/tp/47.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9e1959c-b87b-4e17-a0d2-0489ea79220b.jpg?1562056879
 image_updated=2017-01-07
 value=4.041
 rarity=C

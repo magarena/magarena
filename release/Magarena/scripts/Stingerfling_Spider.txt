@@ -1,5 +1,5 @@
 name=Stingerfling Spider
-image=https://magiccards.info/scans/en/m12/197.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18f45424-2c26-43fa-9afe-eeb22ce772e1.jpg?1608910941
 image_updated=2016-02-29
 value=3.733
 rarity=U

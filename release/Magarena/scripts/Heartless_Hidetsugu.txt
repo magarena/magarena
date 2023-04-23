@@ -1,5 +1,5 @@
 name=Heartless Hidetsugu
-image=https://magiccards.info/scans/en/cns/144.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46f9aa1d-7ed1-498e-9cdd-45ed4c9e6f43.jpg?1562864972
 value=3.750
 rarity=R
 type=Legendary,Creature

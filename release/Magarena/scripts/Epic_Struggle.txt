@@ -1,5 +1,5 @@
 name=Epic Struggle
-image=https://magiccards.info/scans/en/ju/112.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dc71f6f-f831-409e-aafd-3fa82a318e72.jpg?1562628637
 value=3.525
 rarity=R
 type=Enchantment

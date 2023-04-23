@@ -1,5 +1,5 @@
 name=Elusive Spellfist
-image=https://magiccards.info/scans/en/ima/54.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aac94901-f4ec-4888-82ef-87fd2b20cf11.jpg?1562852551
 image_updated=2017-04-12
 value=2.500
 rarity=C

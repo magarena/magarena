@@ -1,5 +1,5 @@
 name=Obelisk of Grixis
-image=https://magiccards.info/scans/en/ala/214.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bf29333-2fe4-4bd3-855b-8eef8d14c5d6.jpg?1592765988
 value=2.700
 rarity=C
 type=Artifact

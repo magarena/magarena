@@ -1,5 +1,5 @@
 name=Mishra's Groundbreaker
-image=https://magiccards.info/scans/en/ai/165.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e98cf559-b9f5-4287-9e05-137d84d27ce1.jpg?1562870952
 value=2.258
 rarity=U
 type=Artifact

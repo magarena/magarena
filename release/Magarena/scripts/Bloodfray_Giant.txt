@@ -1,5 +1,5 @@
 name=Bloodfray Giant
-image=https://magiccards.info/scans/en/rtr/89.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8c468cd-1255-4257-9a69-c6b40a27c427.jpg?1562791246
 value=3.527
 rarity=U
 type=Creature

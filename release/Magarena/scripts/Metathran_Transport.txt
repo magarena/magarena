@@ -1,5 +1,5 @@
 name=Metathran Transport
-image=https://magiccards.info/scans/en/in/62.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fa9048d-1599-44a5-b4b2-45382c5b238d.jpg?1562911137
 value=3.241
 rarity=U
 type=Creature

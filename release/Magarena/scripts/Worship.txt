@@ -1,5 +1,5 @@
 name=Worship
-image=https://magiccards.info/scans/en/9e/55.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4ad20044-8ed8-49ae-9a07-d4cb18527cc7.jpg?1593966400
 value=4.517
 rarity=R
 type=Enchantment

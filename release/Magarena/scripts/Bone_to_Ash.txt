@@ -1,5 +1,5 @@
 name=Bone to Ash
-image=https://magiccards.info/scans/en/m19/47.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df5dd873-af44-45eb-9b82-a3622cc58b35.jpg?1592516293
 image_updated=2018-08-07
 value=2.500
 rarity=U

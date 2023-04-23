@@ -1,5 +1,5 @@
 name=Bloodied Ghost
-image=https://magiccards.info/scans/en/eve/83.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c68b6fc7-e565-4f7d-8efb-c4d29e41c689.jpg?1562936967
 value=2.696
 rarity=U
 type=Creature

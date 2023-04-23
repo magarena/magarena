@@ -1,5 +1,5 @@
 name=Winter Sky
-image=https://magiccards.info/scans/en/hl/100.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af1035f3-3027-4a41-834c-55222b13c2bc.jpg?1562588224
 value=2.098
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Psionic Gift
-image=https://magiccards.info/scans/en/od/95.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/862fc18f-90d2-430d-aff2-47c1483dee9d.jpg?1562919881
 value=3.838
 rarity=C
 type=Enchantment

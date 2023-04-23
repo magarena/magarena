@@ -1,5 +1,5 @@
 name=Eidolon of the Great Revel
-image=https://magiccards.info/scans/en/a25/128.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/183ef738-0559-49ca-85b4-e6836521f203.jpg?1562433053
 image_updated=2018-04-27
 value=4.205
 rarity=R

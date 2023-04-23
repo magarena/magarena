@@ -1,5 +1,5 @@
 name=Power of Fire
-image=https://magiccards.info/scans/en/cns/150.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/094553a7-9513-4be5-aa24-4dbd939412c2.jpg?1562864457
 value=2.500
 rarity=C
 type=Enchantment

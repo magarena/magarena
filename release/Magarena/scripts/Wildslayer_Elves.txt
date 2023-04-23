@@ -1,5 +1,5 @@
 name=Wildslayer Elves
-image=https://magiccards.info/scans/en/shm/133.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3323467c-132f-469a-90fc-9d3b0fb004aa.jpg?1562828544
 value=2.971
 rarity=C
 type=Creature

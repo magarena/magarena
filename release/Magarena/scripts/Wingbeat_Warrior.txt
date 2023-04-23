@@ -1,5 +1,5 @@
 name=Wingbeat Warrior
-image=https://magiccards.info/scans/en/le/29.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd58d164-861d-4c80-ad2f-6283ed82faa1.jpg?1562936257
 value=2.706
 rarity=C
 type=Creature

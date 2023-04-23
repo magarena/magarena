@@ -1,5 +1,5 @@
 name=False Prophet
-image=https://magiccards.info/scans/en/cmd/13.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f41a43ba-1867-4ce3-97fe-5ae67d3f36c3.jpg?1592712765
 value=4.236
 rarity=R
 type=Creature

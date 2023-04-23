@@ -1,5 +1,5 @@
 name=Locust Swarm
-image=https://magiccards.info/scans/en/mr/124.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd269842-4c31-4398-9451-be0d941397ac.jpg?1562721435
 value=2.711
 rarity=U
 type=Creature

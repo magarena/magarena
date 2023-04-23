@@ -1,5 +1,5 @@
 name=Ramroller
-image=https://magiccards.info/scans/en/ori/237.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07f7ba4d-26bb-4631-a135-f27d94f376d1.jpg?1562006029
 image_updated=2015-11-05
 value=2.500
 rarity=U

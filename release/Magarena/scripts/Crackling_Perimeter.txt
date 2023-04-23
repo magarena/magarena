@@ -1,5 +1,5 @@
 name=Crackling Perimeter
-image=https://magiccards.info/scans/en/gtc/88.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3323c86c-73bd-4e23-9f80-54bf5c1dd0bc.jpg?1561821989
 value=2.407
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Spike Tiller
-image=https://magiccards.info/scans/en/ts/218.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/caf3643a-502f-4736-8063-5b567bdfbcc4.jpg?1562937886
 value=3.118
 rarity=R
 type=Creature

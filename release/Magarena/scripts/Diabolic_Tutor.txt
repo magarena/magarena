@@ -1,5 +1,5 @@
 name=Diabolic Tutor
-image=https://magiccards.info/scans/en/kld/75.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d650dd8c-edd8-44e4-ae95-aaaf84557a72.jpg?1592672628
 image_updated=2017-08-29
 value=3.719
 rarity=U

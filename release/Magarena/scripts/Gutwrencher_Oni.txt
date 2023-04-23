@@ -1,5 +1,5 @@
 name=Gutwrencher Oni
-image=https://magiccards.info/scans/en/chk/113.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7698a5da-5c70-4818-927b-3a923314e537.jpg?1562761553
 value=3.048
 rarity=U
 type=Creature

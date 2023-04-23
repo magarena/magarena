@@ -1,5 +1,5 @@
 name=Crookclaw Transmuter
-image=https://magiccards.info/scans/en/cns/94.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/aba5f411-668b-4344-be2f-c8f6cc3255e8.jpg?1619393948
 value=3.833
 rarity=C
 type=Creature

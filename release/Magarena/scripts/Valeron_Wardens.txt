@@ -1,5 +1,5 @@
 name=Valeron Wardens
-image=https://magiccards.info/scans/en/ori/203.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e693a7e7-d95e-4cd8-9524-ca5fc517189a.jpg?1562047279
 image_updated=2015-11-05
 value=2.500
 rarity=U

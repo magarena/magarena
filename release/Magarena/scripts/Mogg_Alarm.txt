@@ -1,5 +1,5 @@
 name=Mogg Alarm
-image=https://magiccards.info/scans/en/ne/93.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f246e128-0a43-478a-a232-51020fab76d5.jpg?1562632791
 value=3.013
 rarity=U
 type=Sorcery

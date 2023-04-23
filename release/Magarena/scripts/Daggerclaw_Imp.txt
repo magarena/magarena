@@ -1,5 +1,5 @@
 name=Daggerclaw Imp
-image=https://magiccards.info/scans/en/mm2/74.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8afa8918-86b7-4244-813f-ef7b51d77809.jpg?1562264762
 value=2.698
 rarity=U
 type=Creature

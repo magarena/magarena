@@ -1,5 +1,5 @@
 name=Honor's Reward
-image=https://magiccards.info/scans/en/frf/14.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/084c8b16-7aae-4d1f-87c2-6a150f11bb15.jpg?1562822193
 value=2.5
 rarity=U
 type=Instant

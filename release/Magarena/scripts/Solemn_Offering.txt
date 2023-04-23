@@ -1,5 +1,5 @@
 name=Solemn Offering
-image=https://magiccards.info/scans/en/m15/33.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e30d14b8-b431-4764-9b30-f511bd40fd08.jpg?1595438246
 value=2.833
 removal=1
 rarity=C

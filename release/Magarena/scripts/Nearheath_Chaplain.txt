@@ -1,5 +1,5 @@
 name=Nearheath Chaplain
-image=https://magiccards.info/scans/en/soi/29.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/362ec364-39c1-4a4b-8dfa-268fad2effdd.jpg?1576383833
 value=2.500
 rarity=U
 type=Creature

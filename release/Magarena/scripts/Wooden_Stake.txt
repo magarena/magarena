@@ -1,5 +1,5 @@
 name=Wooden Stake
-image=https://magiccards.info/scans/en/isd/237.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e2825f5-8112-4108-910a-4303b2d57356.jpg?1562832821
 value=2.793
 rarity=C
 type=Artifact

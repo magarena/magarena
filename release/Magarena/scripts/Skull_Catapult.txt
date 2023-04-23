@@ -1,5 +1,5 @@
 name=Skull Catapult
-image=https://magiccards.info/scans/en/cstd/46.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bce5e36-99f3-415f-9064-ea83c96eb8ef.jpg?1562868549
 value=2.795
 rarity=U
 type=Artifact

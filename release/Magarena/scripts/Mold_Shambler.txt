@@ -1,5 +1,5 @@
 name=Mold Shambler
-image=https://magiccards.info/scans/en/zen/169.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b14ea9c-5bad-499d-8c3d-da72b748769b.jpg?1592754759
 value=3.654
 rarity=C
 type=Creature

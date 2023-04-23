@@ -1,5 +1,5 @@
 name=Architect of the Untamed
-image=https://magiccards.info/scans/en/kld/143.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bc540f5-96a1-44d8-910d-914b9e61b2a5.jpg?1665822386
 image_updated=2016-10-05
 value=2.500
 rarity=R

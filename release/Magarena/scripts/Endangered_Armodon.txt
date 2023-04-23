@@ -1,5 +1,5 @@
 name=Endangered Armodon
-image=https://magiccards.info/scans/en/sh/57.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a31f4c6-c0c2-4cbd-ade9-941625b51c78.jpg?1562428895
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ashenmoor Cohort
-image=https://magiccards.info/scans/en/shm/56.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebdef552-17d0-4b48-868e-058af02101be.jpg?1562837756
 value=1.113
 rarity=C
 type=Creature

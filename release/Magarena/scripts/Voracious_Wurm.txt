@@ -1,5 +1,5 @@
 name=Voracious Wurm
-image=https://magiccards.info/scans/en/m14/200.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da15100b-2934-438c-9917-84ad8bdc4181.jpg?1562835789
 value=3.632
 rarity=U
 type=Creature

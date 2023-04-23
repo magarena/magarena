@@ -1,5 +1,5 @@
 name=Nezumi Cutthroat
-image=https://magiccards.info/scans/en/a25/99.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a9c29bf-a177-40d5-9ade-129221222900.jpg?1562438068
 image_updated=2018-04-27
 value=3.344
 rarity=C

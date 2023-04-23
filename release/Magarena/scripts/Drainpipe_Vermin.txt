@@ -1,5 +1,5 @@
 name=Drainpipe Vermin
-image=https://magiccards.info/scans/en/rtr/66.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/761f2f66-a43b-422e-94b7-3c068314b7ec.jpg?1600700050
 value=2.808
 rarity=C
 type=Creature

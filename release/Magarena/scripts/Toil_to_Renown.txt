@@ -1,5 +1,5 @@
 name=Toil to Renown
-image=https://magiccards.info/scans/en/shm/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d54fd436-35eb-4207-9439-de652234dd50.jpg?1562836520
 value=2.802
 rarity=C
 type=Sorcery

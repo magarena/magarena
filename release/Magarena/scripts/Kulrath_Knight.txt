@@ -1,5 +1,5 @@
 name=Kulrath Knight
-image=https://magiccards.info/scans/en/shm/190.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/2408b0bb-37d6-48a3-b140-c826de74c3a0.jpg?1562827912
 value=4.081
 rarity=U
 type=Creature

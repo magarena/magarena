@@ -1,5 +1,5 @@
 name=Nevinyrral's Disk
-image=https://magiccards.info/scans/en/c16/265.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c9e6af4-522c-4dfa-895a-6946fe983e3c.jpg?1626100951
 image_updated=2017-08-17
 value=4.500
 rarity=R

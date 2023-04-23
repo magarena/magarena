@@ -1,5 +1,5 @@
 name=Heartstabber Mosquito
-image=https://magiccards.info/scans/en/zen/97.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2ce0a6f-4990-41ae-a37d-b89da2b9e4de.jpg?1593095763
 value=2.631
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Piston Sledge
-image=https://magiccards.info/scans/en/mbs/124.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf6a88da-0b51-42d1-aa63-8c4b5e5c03c3.jpg?1562614942
 value=3.440
 rarity=U
 type=Artifact

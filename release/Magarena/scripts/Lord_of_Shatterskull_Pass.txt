@@ -1,5 +1,5 @@
 name=Lord of Shatterskull Pass
-image=https://magiccards.info/scans/en/roe/156.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2159a7d-e37a-4c43-a7b9-1e7179a7e43b.jpg?1562707504
 value=4.147
 rarity=R
 type=Creature

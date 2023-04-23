@@ -1,5 +1,5 @@
 name=Profane Memento
-image=https://magiccards.info/scans/en/m15/226.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2c97632-3cf1-4b79-9d18-d8991654dcca.jpg?1562796910
 value=2.667
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=False Mourning
-image=https://magiccards.info/scans/en/p3k/134.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61bdfefb-f2e2-409c-b5e1-66d24ab3ee5d.jpg?1562256559
 value=3.769
 rarity=U
 type=Sorcery

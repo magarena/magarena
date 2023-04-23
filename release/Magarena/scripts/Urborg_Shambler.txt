@@ -1,5 +1,5 @@
 name=Urborg Shambler
-image=https://magiccards.info/scans/en/in/133.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eaedd5c8-03c6-4bbb-bf83-632551830bd4.jpg?1562942218
 value=2.774
 rarity=U
 type=Creature

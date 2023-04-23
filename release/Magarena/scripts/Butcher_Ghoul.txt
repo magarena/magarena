@@ -1,5 +1,5 @@
 name=Butcher Ghoul
-image=https://magiccards.info/scans/en/avr/89.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37117234-76eb-4a94-8230-a0a8c9b92e47.jpg?1592763162
 value=3.038
 rarity=C
 type=Creature

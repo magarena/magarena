@@ -1,5 +1,5 @@
 name=Heroic Reinforcements
-image=https://magiccards.info/scans/en/m19/217.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca5817ce-a8ba-4007-b8ca-6d39a421a9bc.jpg?1673148743
 value=2.500
 rarity=U
 type=Sorcery

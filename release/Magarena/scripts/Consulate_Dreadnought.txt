@@ -1,5 +1,5 @@
 name=Consulate Dreadnought
-image=https://magiccards.info/scans/en/aer/146.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11eff338-1940-4684-94c7-ef90e56dea99.jpg?1576382219
 value=2.500
 rarity=U
 type=Artifact

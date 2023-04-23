@@ -1,5 +1,5 @@
 name=Mtenda Lion
-image=https://magiccards.info/scans/en/mr/128.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb05cf5b-2a0d-432a-b8e7-10335c2a18e8.jpg?1587912668
 value=4.076
 rarity=C
 type=Creature

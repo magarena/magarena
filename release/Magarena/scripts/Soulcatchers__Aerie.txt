@@ -1,5 +1,5 @@
 name=Soulcatchers' Aerie
-image=https://magiccards.info/scans/en/ju/25.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b30df994-bb09-4d16-8443-223c6ce342dc.jpg?1562631545
 value=4.187
 rarity=U
 type=Enchantment

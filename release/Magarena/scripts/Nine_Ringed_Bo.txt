@@ -1,5 +1,5 @@
 name=Nine-Ringed Bo
-image=https://magiccards.info/scans/en/chk/263.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/445e60aa-1a0a-499e-9887-7d17a1f80a02.jpg?1562759405
 value=1.028
 rarity=U
 type=Artifact

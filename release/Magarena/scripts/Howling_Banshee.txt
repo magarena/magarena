@@ -1,5 +1,5 @@
 name=Howling Banshee
-image=https://magiccards.info/scans/en/m11/100.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce096d78-e8b0-4ba2-a734-aa1e96d2dabe.jpg?1562943661
 value=2.890
 rarity=U
 type=Creature

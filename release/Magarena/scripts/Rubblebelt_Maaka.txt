@@ -1,5 +1,5 @@
 name=Rubblebelt Maaka
-image=https://magiccards.info/scans/en/mm3/109.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef60e595-c1fc-4d03-a4f0-e3ae24dd6556.jpg?1593813560
 image_updated=2017-08-08
 value=3.798
 rarity=C

@@ -1,5 +1,5 @@
 name=Armistice
-image=https://magiccards.info/scans/en/c14/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b09148ec-cb92-4240-b446-135036174abc.jpg?1561954701
 value=1.483
 rarity=R
 type=Enchantment

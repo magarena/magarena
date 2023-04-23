@@ -1,5 +1,5 @@
 name=River's Rebuke
-image=https://magiccards.info/scans/en/xln/71.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc2a70b1-bce6-43c3-94e1-ab9a7bb2638a.jpg?1673483988
 value=2.500
 rarity=R
 type=Sorcery

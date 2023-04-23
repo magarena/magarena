@@ -1,5 +1,5 @@
 name=Hymn of Rebirth
-image=https://magiccards.info/scans/en/ia/373.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be69ba4b-934f-4ee8-849a-0df5a61ee804.jpg?1559592548
 value=4.263
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Veteran's Armaments
-image=https://magiccards.info/scans/en/mt/146.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6d0beb9-3381-423f-b54e-5490b892630a.jpg?1562880573
 value=3.500
 rarity=U
 type=Tribal,Artifact

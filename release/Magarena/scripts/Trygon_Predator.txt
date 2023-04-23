@@ -1,5 +1,5 @@
 name=Trygon Predator
-image=https://magiccards.info/scans/en/ema/209.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c03836e-a7a8-4a3e-8d93-6cce89c2fed1.jpg?1625978140
 value=4.577
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Aven Fisher
-image=https://magiccards.info/scans/en/10e/68.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bba2cd91-84a7-4d05-9a0c-55440491be1e.jpg?1562554259
 value=2.714
 rarity=C
 type=Creature

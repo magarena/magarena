@@ -1,5 +1,5 @@
 name=Gruesome Encore
-image=https://magiccards.info/scans/en/mbs/44.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f7f31fb-af96-4c8c-80fa-219ebd7c3d4d.jpg?1562610787
 value=3.363
 rarity=U
 type=Sorcery

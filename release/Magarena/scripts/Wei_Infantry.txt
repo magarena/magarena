@@ -1,5 +1,5 @@
 name=Wei Infantry
-image=https://magiccards.info/scans/en/p3k/88.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30a227a1-625d-443a-bc6b-d0e51ddece60.jpg?1562905243
 value=2.368
 rarity=C
 type=Creature

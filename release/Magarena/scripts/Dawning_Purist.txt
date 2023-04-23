@@ -1,5 +1,5 @@
 name=Dawning Purist
-image=https://magiccards.info/scans/en/on/22.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8cb25b0-e4c3-4a4e-b722-ea30e695f917.jpg?1562938552
 value=2.826
 rarity=U
 type=Creature

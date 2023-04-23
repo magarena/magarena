@@ -1,5 +1,5 @@
 name=Pharika's Disciple
-image=https://magiccards.info/scans/en/ori/194.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0b3d8f7-6a41-49ba-b111-d34a345394c0.jpg?1562049206
 image_updated=2015-11-05
 value=2.500
 rarity=C

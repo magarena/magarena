@@ -1,5 +1,5 @@
 name=Herald of Faith
-image=https://magiccards.info/scans/en/m19/13.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/452591ca-7273-4e47-820b-3ff89697a036.jpg?1562301748
 value=2.500
 rarity=U
 type=Creature

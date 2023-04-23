@@ -1,5 +1,5 @@
 name=Strength of Cedars
-image=https://magiccards.info/scans/en/chk/245.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85ab46f5-d3e1-403f-92e7-f40de51a3d4d.jpg?1593860225
 value=1.949
 rarity=U
 type=Instant

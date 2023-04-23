@@ -1,5 +1,5 @@
 name=Latch Seeker
-image=https://magiccards.info/scans/en/avr/63.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e4e7589-9cee-4d57-8648-ce733781bfb2.jpg?1592708614
 value=3.871
 rarity=U
 type=Creature

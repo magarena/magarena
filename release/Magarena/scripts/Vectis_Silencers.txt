@@ -1,5 +1,5 @@
 name=Vectis Silencers
-image=https://magiccards.info/scans/en/ala/62.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0198220-073f-4479-a1c4-1bd626891e28.jpg?1562708547
 value=1.437
 rarity=C
 type=Artifact,Creature

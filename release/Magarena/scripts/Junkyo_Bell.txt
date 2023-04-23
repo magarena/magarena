@@ -1,5 +1,5 @@
 name=Junkyo Bell
-image=https://magiccards.info/scans/en/chk/258.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bd002c7-21ec-4f77-81be-2788fa267f21.jpg?1562761978
 value=3.487
 rarity=R
 type=Artifact

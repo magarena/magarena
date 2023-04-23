@@ -1,5 +1,5 @@
 name=Flamewright
-image=https://magiccards.info/scans/en/cns/46.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc0f2b5a-f9fd-4f58-bc98-201b4c0e8252.jpg?1562867370
 value=4.042
 rarity=U
 type=Creature

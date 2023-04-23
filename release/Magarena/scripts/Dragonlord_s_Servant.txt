@@ -1,5 +1,5 @@
 name=Dragonlord's Servant
-image=https://magiccards.info/scans/en/ima/126.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03a4e477-22d4-49b4-8e36-160bb4810e2b.jpg?1631587129
 image_updated=2017-04-12
 value=2.500
 rarity=C

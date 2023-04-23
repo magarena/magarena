@@ -1,5 +1,5 @@
 name=Genju of the Realm
-image=https://magiccards.info/scans/en/bok/151.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9eb7b9b-5189-4d20-8dec-e9d3df63e26e.jpg?1562880496
 value=4.047
 rarity=R
 type=Legendary,Enchantment

@@ -1,5 +1,5 @@
 name=Rakdos the Defiler
-image=https://magiccards.info/scans/en/di/129.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a4c4be4-06ae-4737-a3b0-818edadaf2e0.jpg?1593273761
 value=3.799
 rarity=R
 type=Legendary,Creature

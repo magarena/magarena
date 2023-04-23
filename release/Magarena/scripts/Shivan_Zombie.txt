@@ -1,5 +1,5 @@
 name=Shivan Zombie
-image=https://magiccards.info/scans/en/in/271.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4c99269-f730-4d33-bbce-9e855e9ad0fc.jpg?1562944260
 value=3.900
 rarity=C
 type=Creature

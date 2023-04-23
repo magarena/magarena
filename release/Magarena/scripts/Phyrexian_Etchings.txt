@@ -1,5 +1,5 @@
 name=Phyrexian Etchings
-image=https://magiccards.info/scans/en/cs/67.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/978dbf63-0842-4abd-9950-a33aa080971c.jpg?1593275148
 value=3.095
 rarity=R
 type=Enchantment

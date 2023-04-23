@@ -1,5 +1,5 @@
 name=Maelstrom Archangel
-image=https://magiccards.info/scans/en/cfx/115.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95ea2a05-207d-4330-bcbe-bcaacd6657f4.jpg?1673305576
 value=4.091
 rarity=M
 type=Creature

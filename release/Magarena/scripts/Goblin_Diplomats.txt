@@ -1,5 +1,5 @@
 name=Goblin Diplomats
-image=https://magiccards.info/scans/en/m14/141.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4ad346cb-c3e5-4aea-8de6-bb62827e25a9.jpg?1592764797
 value=3.636
 rarity=R
 type=Creature

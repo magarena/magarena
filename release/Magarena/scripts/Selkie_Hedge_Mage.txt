@@ -1,5 +1,5 @@
 name=Selkie Hedge-Mage
-image=https://magiccards.info/scans/en/eve/158.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f66b0b4-44fc-444d-9181-0b717c9642fa.jpg?1562914934
 value=3.079
 rarity=U
 type=Creature

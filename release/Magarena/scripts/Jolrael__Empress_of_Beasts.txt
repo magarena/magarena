@@ -1,5 +1,5 @@
 name=Jolrael, Empress of Beasts
-image=https://magiccards.info/scans/en/tsts/81.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01084157-60e5-4693-bbec-be60b0b4e04f.jpg?1562770883
 value=4.022
 rarity=R
 type=Legendary,Creature

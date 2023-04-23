@@ -1,5 +1,5 @@
 name=Mesmeric Trance
-image=https://magiccards.info/scans/en/ia/83.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91129aeb-eed5-4b98-896f-fb3bab48b25d.jpg?1562869535
 value=3.140
 rarity=R
 type=Enchantment

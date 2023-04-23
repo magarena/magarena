@@ -1,5 +1,5 @@
 name=Hypervolt Grasp
-image=https://magiccards.info/scans/en/gp/67.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdaa3c6e-1f8a-4580-8e03-e670f50ab958.jpg?1593272318
 value=2.909
 rarity=U
 type=Enchantment

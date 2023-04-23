@@ -1,5 +1,5 @@
 name=Guardians of Meletis
-image=https://magiccards.info/scans/en/ori/228.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2ff39de2-d071-4568-baac-25b505a2da56.jpg?1562013207
 image_updated=2015-11-05
 value=2.500
 rarity=C

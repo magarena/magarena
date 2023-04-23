@@ -1,5 +1,5 @@
 name=Abomination of Gudul
-image=https://magiccards.info/scans/en/ktk/159.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7df9759e-1072-4a6a-be57-f73b15bf3847.jpg?1562789157
 value=2.286
 rarity=C
 type=Creature

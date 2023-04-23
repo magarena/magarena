@@ -1,5 +1,5 @@
 name=Wildheart Invoker
-image=https://magiccards.info/scans/en/a25/194.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/143231b3-23c4-4c6d-8b58-e401e1ac6e29.jpg?1608910986
 image_updated=2018-04-27
 value=3.551
 rarity=C

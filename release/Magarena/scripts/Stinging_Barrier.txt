@@ -1,5 +1,5 @@
 name=Stinging Barrier
-image=https://magiccards.info/scans/en/mm/107.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca7f7cd5-4e91-474a-9f60-a66f3f462b1c.jpg?1562383032
 value=3.333
 rarity=C
 type=Creature

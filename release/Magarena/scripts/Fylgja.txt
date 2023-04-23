@@ -1,5 +1,5 @@
 name=Fylgja
-image=https://magiccards.info/scans/en/ia/250.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c6358a1-37f0-4b40-93d4-4f1652c38404.jpg?1562906121
 value=2.729
 rarity=C
 type=Enchantment

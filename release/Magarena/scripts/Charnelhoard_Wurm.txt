@@ -1,5 +1,5 @@
 name=Charnelhoard Wurm
-image=https://magiccards.info/scans/en/cfx/100.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10b936dd-fbec-4d03-8f6f-71e5e21029cb.jpg?1592711045
 value=3.594
 rarity=R
 type=Creature

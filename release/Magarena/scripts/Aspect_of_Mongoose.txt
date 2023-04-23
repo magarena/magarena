@@ -1,5 +1,5 @@
 name=Aspect of Mongoose
-image=https://magiccards.info/scans/en/ts/191.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3eb61f4-627b-4f42-85aa-eb676a035fbd.jpg?1562932977
 value=3.862
 rarity=U
 type=Enchantment

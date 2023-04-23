@@ -1,5 +1,5 @@
 name=Delirium Skeins
-image=https://magiccards.info/scans/en/mm3/65.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64b0d9e7-4a0f-4f07-99ae-31c3c9f0037a.jpg?1593813247
 image_updated=2017-08-08
 value=3.269
 rarity=C

@@ -1,5 +1,5 @@
 name=Sigil Tracer
-image=https://magiccards.info/scans/en/mt/49.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c9341e6-b899-418d-916f-550775af419f.jpg?1562879487
 value=3.554
 rarity=R
 type=Creature

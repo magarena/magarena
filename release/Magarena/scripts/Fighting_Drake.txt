@@ -1,5 +1,5 @@
 name=Fighting Drake
-image=https://magiccards.info/scans/en/8e/77.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8545377-421b-4d28-b2cc-ca18a170fee0.jpg?1562431302
 value=2.636
 rarity=U
 type=Creature

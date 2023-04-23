@@ -1,5 +1,5 @@
 name=Soulmender
-image=https://magiccards.info/scans/en/m15/35.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31b83ffd-bd08-48c6-98a3-811abc203f60.jpg?1592516212
 value=2.200
 rarity=C
 type=Creature

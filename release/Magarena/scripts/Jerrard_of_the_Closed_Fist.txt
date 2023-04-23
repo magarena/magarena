@@ -1,5 +1,5 @@
 name=Jerrard of the Closed Fist
-image=https://magiccards.info/scans/en/lg/275.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/621d4d0b-bcff-4855-bbaf-7aeeabeafe99.jpg?1562915470
 value=2.500
 rarity=U
 type=Legendary,Creature

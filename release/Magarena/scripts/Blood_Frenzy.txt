@@ -1,5 +1,5 @@
 name=Blood Frenzy
-image=https://magiccards.info/scans/en/tp/164.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06f39d83-e1ea-45c9-8181-2a2b6e5148da.jpg?1562052331
 value=3.833
 rarity=C
 type=Instant

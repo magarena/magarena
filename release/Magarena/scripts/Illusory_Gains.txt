@@ -1,5 +1,5 @@
 name=Illusory Gains
-image=https://magiccards.info/scans/en/dtk/59.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/747dfb21-a00c-46ba-9da3-739f570e1246.jpg?1562788372
 value=2.500
 rarity=R
 type=Enchantment

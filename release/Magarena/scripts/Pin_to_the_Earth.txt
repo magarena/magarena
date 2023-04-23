@@ -1,5 +1,5 @@
 name=Pin to the Earth
-image=https://magiccards.info/scans/en/jou/45.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c04e6915-39b0-4fbc-9114-2ecf371b6f72.jpg?1593095491
 value=2.500
 rarity=C
 type=Enchantment

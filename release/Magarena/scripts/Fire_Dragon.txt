@@ -1,5 +1,5 @@
 name=Fire Dragon
-image=https://magiccards.info/scans/en/po/130.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72c6eb99-759d-4baa-8ce9-f20583671e82.jpg?1562869055
 value=3.538
 rarity=R
 type=Creature

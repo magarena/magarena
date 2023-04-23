@@ -1,5 +1,5 @@
 name=Witches' Eye
-image=https://magiccards.info/scans/en/ths/222.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d989daa-78eb-4120-81b5-7866a7b04590.jpg?1562819570
 value=2.645
 rarity=U
 type=Artifact

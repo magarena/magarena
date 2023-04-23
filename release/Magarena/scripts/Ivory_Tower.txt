@@ -1,5 +1,5 @@
 name=Ivory Tower
-image=https://magiccards.info/scans/en/4e/346.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aaf91af0-0243-4dca-90de-d7580f4f9d38.jpg?1562929467
 value=4.000
 rarity=R
 type=Artifact

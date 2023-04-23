@@ -1,5 +1,5 @@
 name=Pterodon Knight
-image=https://magiccards.info/scans/en/xln/28.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41f00a04-1336-4830-a6c2-514848afefd2.jpg?1562554195
 value=2.500
 rarity=C
 type=Creature

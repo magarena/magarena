@@ -1,5 +1,5 @@
 name=Bloodhusk Ritualist
-image=https://magiccards.info/scans/en/c17/101.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31ae4ee7-c540-4e32-95a4-6a2e7def094f.jpg?1562604175
 image_updated=2017-10-03
 value=3.541
 rarity=U

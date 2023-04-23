@@ -1,5 +1,5 @@
 name=Uril, the Miststalker
-image=https://magiccards.info/scans/en/arb/124.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca984fdb-aaca-4d8f-af2f-72387122607b.jpg?1673149243
 value=4.009
 rarity=M
 type=Legendary,Creature

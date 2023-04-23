@@ -1,5 +1,5 @@
 name=Snake Cult Initiation
-image=https://magiccards.info/scans/en/fut/89.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93b47606-82d1-402c-b1c6-591457b10d86.jpg?1562924805
 value=3.724
 rarity=U
 type=Enchantment

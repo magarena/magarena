@@ -1,5 +1,5 @@
 name=Kuro, Pitlord
-image=https://magiccards.info/scans/en/chk/123.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1f9531a-7201-4dfc-beb1-4128ec41728c.jpg?1561771988
 image_updated=2016-12-21
 value=3.614
 rarity=R

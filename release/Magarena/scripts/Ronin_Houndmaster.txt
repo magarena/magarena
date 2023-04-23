@@ -1,5 +1,5 @@
 name=Ronin Houndmaster
-image=https://magiccards.info/scans/en/chk/184.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/614ead7b-1975-4a99-bdc2-f8afc6cf92d7.jpg?1562760608
 value=2.736
 rarity=C
 type=Creature

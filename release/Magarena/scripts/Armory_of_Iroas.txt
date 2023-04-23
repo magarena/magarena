@@ -1,5 +1,5 @@
 name=Armory of Iroas
-image=https://magiccards.info/scans/en/jou/158.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/703a03ac-5bb5-4e36-ab9b-a5c007ffc03d.jpg?1608911321
 value=2.870
 rarity=U
 type=Artifact

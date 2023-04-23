@@ -1,5 +1,5 @@
 name=Druid's Deliverance
-image=https://magiccards.info/scans/en/mm3/124.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eabb6ba4-4256-401c-96eb-6e2a14c50602.jpg?1568004535
 image_updated=2017-08-08
 value=3.716
 rarity=C

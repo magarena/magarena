@@ -1,5 +1,5 @@
 name=Airborne Aid
-image=https://magiccards.info/scans/en/on/62.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0aaa43b0-601f-4b99-a328-541b04d5696d.jpg?1593017362
 value=2.905
 rarity=C
 type=Sorcery

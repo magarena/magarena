@@ -1,5 +1,5 @@
 name=Lapis Lazuli Talisman
-image=https://magiccards.info/scans/en/ia/302.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce00bb19-983e-427d-be54-ae6daf0ccdde.jpg?1562933546
 value=1.333
 rarity=U
 type=Artifact

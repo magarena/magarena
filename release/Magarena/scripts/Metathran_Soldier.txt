@@ -1,5 +1,5 @@
 name=Metathran Soldier
-image=https://magiccards.info/scans/en/ud/39.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/650d40d0-78ec-4b6e-8ea0-28d43ce175d5.jpg?1562444224
 value=3.647
 rarity=C
 type=Creature

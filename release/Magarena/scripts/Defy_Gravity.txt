@@ -1,5 +1,5 @@
 name=Defy Gravity
-image=https://magiccards.info/scans/en/ju/38.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c31e6c69-e5c4-47b0-b226-4e1d84fabfa7.jpg?1547516153
 value=2.340
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Amrou Scout
-image=https://magiccards.info/scans/en/mma/2.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da2b6d3a-15e7-4305-9384-3635159cb421.jpg?1619392457
 value=3.550
 rarity=C
 type=Creature

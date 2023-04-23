@@ -1,5 +1,5 @@
 name=Reef Worm
-image=https://magiccards.info/scans/en/a25/70.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e715bb21-db06-475a-b71e-4f2313817b8d.jpg?1625976383
 image_updated=2018-04-27
 value=2.500
 rarity=R

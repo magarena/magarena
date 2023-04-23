@@ -1,5 +1,5 @@
 name=Treasury Thrull
-image=https://magiccards.info/scans/en/gtc/201.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98a943d6-e79d-4956-82f1-8dfbe5abd643.jpg?1562707396
 image_updated=2016-02-29
 value=3.432
 rarity=R

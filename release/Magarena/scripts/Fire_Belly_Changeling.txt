@@ -1,5 +1,5 @@
 name=Fire-Belly Changeling
-image=https://magiccards.info/scans/en/lw/164.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/803f388a-0f92-4984-ace5-02fbeaa0cf28.jpg?1562922067
 value=2.700
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Thalakos Dreamsower
-image=https://magiccards.info/scans/en/tp/92.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d725cdc0-3a85-4722-bb13-40c336f511b6.jpg?1562056872
 value=3.219
 rarity=U
 type=Creature

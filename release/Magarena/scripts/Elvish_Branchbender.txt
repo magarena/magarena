@@ -1,5 +1,5 @@
 name=Elvish Branchbender
-image=https://magiccards.info/scans/en/lw/204.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3731491-097c-4915-acab-1da2d5176b37.jpg?1561759783
 value=3.453
 rarity=C
 type=Creature

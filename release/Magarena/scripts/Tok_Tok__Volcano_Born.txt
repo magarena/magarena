@@ -1,5 +1,5 @@
 name=Tok-Tok, Volcano Born
-image=https://magiccards.info/scans/en/chk/153b.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ee6cd34-c117-4d7e-97d1-8f8464bfaac8.jpg?1562761096
 value=2.963
 rarity=R
 type=Legendary,Creature

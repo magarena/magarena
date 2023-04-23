@@ -1,5 +1,5 @@
 name=Toshiro Umezawa
-image=https://magiccards.info/scans/en/bok/89.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e767e07-febd-4025-bf03-d4d816bc1d3d.jpg?1562875477
 value=4.016
 rarity=R
 type=Legendary,Creature

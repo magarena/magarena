@@ -1,5 +1,5 @@
 name=Wei Scout
-image=https://magiccards.info/scans/en/p3k/90.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a11d58fb-fb70-4e8f-8f64-232ad2c1f59b.jpg?1562257504
 value=2.481
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Noggle Ransacker
-image=https://magiccards.info/scans/en/pc2/102.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa7514c5-27cd-46eb-ac85-4b1468a8064e.jpg?1562926836
 value=2.833
 rarity=U
 type=Creature

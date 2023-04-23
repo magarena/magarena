@@ -1,5 +1,5 @@
 name=Ertai, the Corrupted
-image=https://magiccards.info/scans/en/ps/107a.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66b950d9-8fef-4deb-b51b-26edb90abc56.jpg?1586450720
 value=3.953
 rarity=R
 type=Legendary,Creature

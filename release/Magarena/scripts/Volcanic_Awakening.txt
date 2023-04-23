@@ -1,5 +1,5 @@
 name=Volcanic Awakening
-image=https://magiccards.info/scans/en/ts/186.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aebd5c57-cfc8-4a3c-b4a2-0cd64a5e3575.jpg?1562931896
 value=2.878
 rarity=U
 type=Sorcery

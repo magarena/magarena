@@ -1,5 +1,5 @@
 name=Alms of the Vein
-image=https://magiccards.info/scans/en/soi/98.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79b80948-a3cd-4962-8fce-d58f2db7e68e.jpg?1576384334
 value=2.500
 rarity=C
 type=Sorcery

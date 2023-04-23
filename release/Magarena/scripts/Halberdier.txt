@@ -1,5 +1,5 @@
 name=Halberdier
-image=https://magiccards.info/scans/en/od/196.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b69dfc05-51ba-4798-ac00-1e9b8bbbf280.jpg?1562929001
 value=2.686
 rarity=C
 type=Creature

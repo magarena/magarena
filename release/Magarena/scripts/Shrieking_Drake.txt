@@ -1,5 +1,5 @@
 name=Shrieking Drake
-image=https://magiccards.info/scans/en/vi/43.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63971a64-c5f3-4d1f-ae0d-489d7d5b18f0.jpg?1562277676
 value=3.735
 rarity=C
 type=Creature

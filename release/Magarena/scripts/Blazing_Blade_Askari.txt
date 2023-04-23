@@ -1,5 +1,5 @@
 name=Blazing Blade Askari
-image=https://magiccards.info/scans/en/ts/146.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cabf35d5-de8a-4d9d-be59-7ad7039873c6.jpg?1562937828
 value=2.686
 rarity=C
 type=Creature

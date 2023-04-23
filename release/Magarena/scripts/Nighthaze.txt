@@ -1,5 +1,5 @@
 name=Nighthaze
-image=https://magiccards.info/scans/en/roe/118.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/290b215b-13cb-493a-83f9-f89edfa6b314.jpg?1562702200
 value=2.250
 rarity=C
 type=Sorcery

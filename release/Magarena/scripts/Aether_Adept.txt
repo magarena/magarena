@@ -1,5 +1,5 @@
 name=Aether Adept
-image=https://magiccards.info/scans/en/m12/41.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1640b76d-15d6-4b08-a34b-c5432259d570.jpg?1592754417
 image_updated=2016-09-27
 value=3.700
 removal=2

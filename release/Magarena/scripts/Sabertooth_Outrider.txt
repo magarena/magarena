@@ -1,5 +1,5 @@
 name=Sabertooth Outrider
-image=https://magiccards.info/scans/en/dtk/152.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64ddda91-3ccb-4c87-82e6-d4e60f4afc24.jpg?1562787395
 value=2.500
 rarity=C
 type=Creature

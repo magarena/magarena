@@ -1,5 +1,5 @@
 name=Infernal Scarring
-image=https://magiccards.info/scans/en/m19/103.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/975e4b8e-add9-439c-9463-e2facee96c10.jpg?1594736195
 image_updated=2018-08-07
 value=2.500
 rarity=C

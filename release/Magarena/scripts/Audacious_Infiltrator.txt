@@ -1,5 +1,5 @@
 name=Audacious Infiltrator
-image=https://magiccards.info/scans/en/aer/7.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36a348bb-cdc5-4e2a-933f-21f91faab891.jpg?1576381301
 value=2.500
 rarity=C
 type=Creature

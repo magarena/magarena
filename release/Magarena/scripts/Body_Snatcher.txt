@@ -1,5 +1,5 @@
 name=Body Snatcher
-image=https://magiccards.info/scans/en/ud/53.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7d4c858-5a11-485d-a514-12a6d80459f0.jpg?1562445201
 value=4.534
 rarity=R
 type=Creature

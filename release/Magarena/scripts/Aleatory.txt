@@ -1,5 +1,5 @@
 name=Aleatory
-image=https://magiccards.info/scans/en/mr/155.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/7380af0a-8a8f-44fd-9456-14a68a2830d3.jpg?1562720221
 value=1.157
 rarity=U
 type=Instant

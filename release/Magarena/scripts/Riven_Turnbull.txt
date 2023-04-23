@@ -1,5 +1,5 @@
 name=Riven Turnbull
-image=https://magiccards.info/scans/en/lg/294.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed665227-02ba-4977-a8e7-ea4e46a626e6.jpg?1562945004
 value=1.440
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Guardian Lions
-image=https://magiccards.info/scans/en/m13/17.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3defc506-537e-4659-815d-5dab15fbf199.jpg?1562552748
 value=1.844
 rarity=C
 type=Creature

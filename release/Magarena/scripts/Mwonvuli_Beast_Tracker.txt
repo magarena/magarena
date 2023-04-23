@@ -1,5 +1,5 @@
 name=Mwonvuli Beast Tracker
-image=https://magiccards.info/scans/en/m13/177.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0034d32c-cc82-48d7-a913-d58cc3d3afeb.jpg?1591694417
 value=3.724
 rarity=U
 type=Creature

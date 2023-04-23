@@ -1,5 +1,5 @@
 name=Funeral Charm
-image=https://magiccards.info/scans/en/tsts/44.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fc44e66-7ff8-4fcd-9f98-e53707590d67.jpg?1562778053
 value=4.284
 rarity=C
 type=Instant

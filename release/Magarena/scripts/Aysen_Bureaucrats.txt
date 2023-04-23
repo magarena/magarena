@@ -1,5 +1,5 @@
 name=Aysen Bureaucrats
-image=https://magiccards.info/scans/en/5e/285.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/194a17ad-8393-44d4-a5d1-a61f9a875573.jpg?1562867840
 value=2.167
 rarity=C
 type=Creature

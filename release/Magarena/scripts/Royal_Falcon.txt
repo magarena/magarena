@@ -1,5 +1,5 @@
 name=Royal Falcon
-image=https://magiccards.info/scans/en/st2k/14.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10dfc217-ae94-4ff0-bf30-7131f97aa3c9.jpg?1562133659
 value=1.417
 rarity=C
 type=Creature

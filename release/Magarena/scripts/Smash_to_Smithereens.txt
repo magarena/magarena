@@ -1,5 +1,5 @@
 name=Smash to Smithereens
-image=https://magiccards.info/scans/en/ori/163.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/655c489f-bffb-45a4-8e7c-2d1a35220197.jpg?1562023107
 image_updated=2015-11-05
 value=2.500
 rarity=C

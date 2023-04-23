@@ -1,5 +1,5 @@
 name=Goldenglow Moth
-image=https://magiccards.info/scans/en/m11/15.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d6e31cb-98c5-4145-bdef-666f3cea7eab.jpg?1562467775
 value=3.323
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Day of the Dragons
-image=https://magiccards.info/scans/en/ima/49.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76e4dd1d-b0bd-4fcf-b5c5-fe203af2fe8e.jpg?1631234309
 image_updated=2017-04-12
 value=4.340
 rarity=R

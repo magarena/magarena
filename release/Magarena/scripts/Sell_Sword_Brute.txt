@@ -1,5 +1,5 @@
 name=Sell-Sword Brute
-image=https://magiccards.info/scans/en/rav/142.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db513835-af5a-4ff3-8cf8-31936732a4db.jpg?1598915863
 value=1.293
 rarity=C
 type=Creature

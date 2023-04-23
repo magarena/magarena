@@ -1,5 +1,5 @@
 name=Rotfeaster Maggot
-image=https://magiccards.info/scans/en/ima/105.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41b5e1d4-2a7e-4d34-8ca7-ba8ccbf8f775.jpg?1562908191
 image_updated=2017-04-12
 value=3.000
 rarity=C

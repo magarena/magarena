@@ -1,5 +1,5 @@
 name=Repentance
-image=https://magiccards.info/scans/en/tp/249.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d02c74a-8bc7-4a4d-830b-e59a7aed5722.jpg?1562430309
 value=3.905
 rarity=U
 type=Sorcery

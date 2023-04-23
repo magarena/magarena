@@ -1,5 +1,5 @@
 name=Holy Light
-image=https://magiccards.info/scans/en/dk/83.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34fbb723-2507-489a-acf1-22ac0dcbcd9c.jpg?1559592449
 value=3.417
 rarity=C
 type=Instant

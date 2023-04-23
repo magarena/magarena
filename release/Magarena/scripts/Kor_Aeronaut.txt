@@ -1,5 +1,5 @@
 name=Kor Aeronaut
-image=https://magiccards.info/scans/en/zen/17.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd9dc5af-0fc9-4e2a-9980-180459eeba07.jpg?1562270473
 image_updated=2016-12-21
 value=3.935
 rarity=U

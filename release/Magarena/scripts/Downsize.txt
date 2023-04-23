@@ -1,5 +1,5 @@
 name=Downsize
-image=https://magiccards.info/scans/en/rtr/38.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8408a52-d34a-4e03-9312-700dec75d844.jpg?1562794824
 value=2.709
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Rebuff the Wicked
-image=https://magiccards.info/scans/en/pc/12.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6ea5111-5a5c-4c40-8686-8123c822843a.jpg?1619393332
 value=4.110
 rarity=U
 type=Instant

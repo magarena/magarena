@@ -1,5 +1,5 @@
 name=Sphere of Duty
-image=https://magiccards.info/scans/en/od/48.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bdcd0de-6466-488c-a882-bad80c86504d.jpg?1562908869
 value=2.204
 rarity=U
 type=Enchantment

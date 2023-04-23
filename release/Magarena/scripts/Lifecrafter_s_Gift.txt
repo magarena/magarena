@@ -1,5 +1,5 @@
 name=Lifecrafter's Gift
-image=https://magiccards.info/scans/en/aer/114.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa000086-e4aa-4bb6-8e66-f4c96e875749.jpg?1608910778
 value=2.500
 rarity=U
 type=Instant

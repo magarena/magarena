@@ -1,5 +1,5 @@
 name=Cliff Threader
-image=https://magiccards.info/scans/en/zen/7.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1743b625-e937-4cac-8701-9e2dd709a9a4.jpg?1562610118
 value=2.500
 rarity=C
 type=Creature

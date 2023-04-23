@@ -1,5 +1,5 @@
 name=Feral Lightning
-image=https://magiccards.info/scans/en/sok/97.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2391265f-ef0c-463f-9371-5a0b71dbbb49.jpg?1562492971
 value=2.781
 rarity=U
 type=Sorcery

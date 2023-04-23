@@ -1,5 +1,5 @@
 name=Ballyrush Banneret
-image=https://magiccards.info/scans/en/mt/1.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a029814e-d84d-43e5-b483-e918871b3333.jpg?1562880417
 value=3.648
 rarity=C
 type=Creature

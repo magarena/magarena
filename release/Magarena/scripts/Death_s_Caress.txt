@@ -1,5 +1,5 @@
 name=Death's Caress
-image=https://magiccards.info/scans/en/dka/59.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/0643fb9a-8284-4dfc-836a-c2c69ef09f32.jpg?1562896472
 value=1.370
 removal=3
 rarity=C

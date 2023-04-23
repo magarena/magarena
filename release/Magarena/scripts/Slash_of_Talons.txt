@@ -1,5 +1,5 @@
 name=Slash of Talons
-image=https://magiccards.info/scans/en/xln/38.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a97d474e-83b6-4969-81b4-51f5315057d7.jpg?1562561780
 value=2.500
 rarity=C
 type=Instant

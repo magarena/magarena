@@ -1,5 +1,5 @@
 name=Falkenrath Exterminator
-image=https://magiccards.info/scans/en/avr/134.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75cb8891-90bc-41d9-96ff-e24564d3970e.jpg?1682209303
 value=3.426
 rarity=U
 type=Creature

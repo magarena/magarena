@@ -1,5 +1,5 @@
 name=Dutiful Attendant
-image=https://magiccards.info/scans/en/dtk/99.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f35fd9cd-795f-4a8b-b2e9-648f6273927e.jpg?1600700106
 value=2.500
 rarity=C
 type=Creature

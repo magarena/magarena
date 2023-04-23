@@ -1,5 +1,5 @@
 name=Corpse Augur
-image=https://magiccards.info/scans/en/c17/106.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/600eaa36-5497-42dc-8d21-a5fcdd01fa79.jpg?1674141538
 image_updated=2017-10-03
 value=2.500
 rarity=U

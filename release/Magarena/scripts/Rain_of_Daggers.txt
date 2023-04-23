@@ -1,5 +1,5 @@
 name=Rain of Daggers
-image=https://magiccards.info/scans/en/po2/25.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f48b345f-c814-4f89-9bff-078d0ec5acfc.jpg?1562953012
 value=3.477
 rarity=R
 type=Sorcery

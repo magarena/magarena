@@ -1,5 +1,5 @@
 name=Hurr Jackal
-image=https://magiccards.info/scans/en/4e/221.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1c0ab2b-04bf-4cba-8efa-3d1d0ab4f50d.jpg?1559604188
 value=3.179
 rarity=R
 type=Creature

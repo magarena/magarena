@@ -1,5 +1,5 @@
 name=Serra Angel
-image=https://magiccards.info/scans/en/dom/33.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9067f035-3437-4c5c-bae9-d3c9001a3411.jpg?1600718440
 image_updated=2018-08-07
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Wind-Scarred Crag
-image=https://magiccards.info/scans/en/ema/249.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f2642cd-e3cc-4aab-8c00-4987284509b3.jpg?1682205924
 value=3.000
 rarity=C
 type=Land

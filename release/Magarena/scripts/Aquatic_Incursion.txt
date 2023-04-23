@@ -1,5 +1,5 @@
 name=Aquatic Incursion
-image=https://magiccards.info/scans/en/rix/32.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56cb8fa2-337b-4596-9c31-01f0c0b171b7.jpg?1555039859
 value=2.500
 rarity=U
 type=Enchantment

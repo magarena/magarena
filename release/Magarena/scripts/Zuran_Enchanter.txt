@@ -1,5 +1,5 @@
 name=Zuran Enchanter
-image=https://magiccards.info/scans/en/ia/110.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/721edcef-f40a-4d43-9d80-26161dc425cb.jpg?1664078926
 value=2.581
 rarity=C
 type=Creature

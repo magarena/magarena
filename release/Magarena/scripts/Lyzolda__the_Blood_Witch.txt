@@ -1,5 +1,5 @@
 name=Lyzolda, the Blood Witch
-image=https://magiccards.info/scans/en/di/117.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18df285f-4cb9-4998-bd26-eefbe28f80c7.jpg?1593273653
 value=3.854
 rarity=R
 type=Legendary,Creature

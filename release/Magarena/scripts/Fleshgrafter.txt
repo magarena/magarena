@@ -1,5 +1,5 @@
 name=Fleshgrafter
-image=https://magiccards.info/scans/en/5dn/51.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01095217-bc33-4d71-bf10-2ead9f8ebd25.jpg?1562875113
 value=2.658
 rarity=C
 type=Creature

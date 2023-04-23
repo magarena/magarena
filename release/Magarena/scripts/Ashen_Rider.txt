@@ -1,5 +1,5 @@
 name=Ashen Rider
-image=https://magiccards.info/scans/en/ths/187.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f2054d9-d10f-4127-aece-71c3f0ef547c.jpg?1673148296
 value=3.992
 rarity=M
 type=Creature

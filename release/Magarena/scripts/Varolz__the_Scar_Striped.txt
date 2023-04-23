@@ -1,5 +1,5 @@
 name=Varolz, the Scar-Striped
-image=https://magiccards.info/scans/en/dgm/112.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c3ae3db-c14a-4ffc-805c-a3a51da9370d.jpg?1562908954
 value=3.908
 rarity=R
 type=Legendary,Creature

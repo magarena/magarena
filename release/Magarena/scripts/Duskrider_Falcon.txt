@@ -1,5 +1,5 @@
 name=Duskrider Falcon
-image=https://magiccards.info/scans/en/wl/128.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bee3a23a-6ecf-439c-8637-e096fa8c1a80.jpg?1562803106
 value=3.012
 rarity=C
 type=Creature

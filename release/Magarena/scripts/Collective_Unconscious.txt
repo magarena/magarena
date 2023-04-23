@@ -1,5 +1,5 @@
 name=Collective Unconscious
-image=https://magiccards.info/scans/en/c14/187.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b64755f-1381-4537-a12d-48da274993e6.jpg?1592672890
 value=3.512
 rarity=R
 type=Sorcery

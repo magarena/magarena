@@ -1,5 +1,5 @@
 name=Puppeteer
-image=https://magiccards.info/scans/en/10e/98.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0814958-2fec-443e-b27e-cd2416ccbf95.jpg?1562553643
 value=3.250
 rarity=U
 type=Creature

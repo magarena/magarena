@@ -1,5 +1,5 @@
 name=Oran-Rief Survivalist
-image=https://magiccards.info/scans/en/zen/174.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d598220-bddd-48a4-8c80-eb149c6292a3.jpg?1562609812
 value=3.820
 rarity=C
 type=Creature

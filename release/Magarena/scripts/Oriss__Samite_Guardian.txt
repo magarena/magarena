@@ -1,5 +1,5 @@
 name=Oriss, Samite Guardian
-image=https://magiccards.info/scans/en/fut/28.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a9a3aeb-a316-4b1e-927b-36c3f999f2c3.jpg?1562919683
 value=3.754
 rarity=R
 type=Legendary,Creature

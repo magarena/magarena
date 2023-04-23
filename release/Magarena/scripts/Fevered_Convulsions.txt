@@ -1,5 +1,5 @@
 name=Fevered Convulsions
-image=https://magiccards.info/scans/en/tp/30.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a790769-e76e-49e9-9d6d-05ce8e858243.jpg?1562053750
 value=3.103
 rarity=R
 type=Enchantment

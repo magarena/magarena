@@ -1,5 +1,5 @@
 name=Take Up Arms
-image=https://magiccards.info/scans/en/ktk/26.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e707c745-0bb1-4a85-83c1-be97131bf488.jpg?1562941397
 value=2.750
 rarity=U
 type=Instant

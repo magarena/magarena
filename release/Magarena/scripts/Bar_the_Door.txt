@@ -1,5 +1,5 @@
 name=Bar the Door
-image=https://magiccards.info/scans/en/dka/2.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b593f544-2d82-4237-b9a9-88503b5036cc.jpg?1562937788
 value=2.164
 rarity=C
 type=Instant

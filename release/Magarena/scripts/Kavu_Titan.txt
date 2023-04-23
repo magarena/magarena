@@ -1,5 +1,5 @@
 name=Kavu Titan
-image=https://magiccards.info/scans/en/in/194.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c5fb86d-1d9a-4da2-bb5b-4266faa20197.jpg?1562904050
 value=4.279
 rarity=R
 type=Creature

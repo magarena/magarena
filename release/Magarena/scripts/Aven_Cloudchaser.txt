@@ -1,5 +1,5 @@
 name=Aven Cloudchaser
-image=https://magiccards.info/scans/en/10e/7.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/407110e9-19af-4ff5-97b2-c03225031a73.jpg?1562546729
 value=3.074
 rarity=C
 type=Creature

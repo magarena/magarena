@@ -1,5 +1,5 @@
 name=Orbweaver Kumo
-image=https://magiccards.info/scans/en/chk/231.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d8f0459-a839-4820-8f99-58da5851ff36.jpg?1562759363
 value=0.923
 rarity=U
 type=Creature

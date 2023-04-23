@@ -1,5 +1,5 @@
 name=Venom Sliver
-image=https://magiccards.info/scans/en/m15/205.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8db38bd9-bf58-41ca-84b9-f3582670143e.jpg?1562790708
 value=3.778
 rarity=U
 type=Creature

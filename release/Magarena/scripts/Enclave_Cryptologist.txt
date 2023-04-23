@@ -1,5 +1,5 @@
 name=Enclave Cryptologist
-image=https://magiccards.info/scans/en/roe/66.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20d3b541-40aa-469e-be97-20496a7632d4.jpg?1562701875
 value=3.944
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Basilica Screecher
-image=https://magiccards.info/scans/en/gtc/58.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d233c6bc-c4dd-482d-b0f4-87359acab7cb.jpg?1561847589
 value=3.153
 rarity=C
 type=Creature

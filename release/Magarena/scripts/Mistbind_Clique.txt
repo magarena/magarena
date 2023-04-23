@@ -1,5 +1,5 @@
 name=Mistbind Clique
-image=https://magiccards.info/scans/en/lw/75.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfc421e2-0dd4-4bdf-b5f5-a60c4b0df63b.jpg?1562369103
 value=4.039
 removal=2
 rarity=R

@@ -1,5 +1,5 @@
 name=Devour Flesh
-image=https://magiccards.info/scans/en/gtc/63.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88c42ebd-114a-430d-b3a4-ff2fb3093bf5.jpg?1561835353
 value=3.529
 removal=3
 rarity=C

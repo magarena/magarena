@@ -1,5 +1,5 @@
 name=Sunhome, Fortress of the Legion
-image=https://magiccards.info/scans/en/rav/282.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15e9f92d-638d-46c2-9f8e-f741db1a4a40.jpg?1625981077
 image_updated=2016-01-09
 value=3.488
 rarity=U

@@ -1,5 +1,5 @@
 name=Kami of Ancient Law
-image=https://magiccards.info/scans/en/mm2/21.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76c92c0b-232b-4786-8cd6-6eb207eed8d5.jpg?1562263804
 value=4.317
 rarity=C
 type=Creature

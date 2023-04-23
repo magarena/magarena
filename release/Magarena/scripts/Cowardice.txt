@@ -1,5 +1,5 @@
 name=Cowardice
-image=https://magiccards.info/scans/en/9e/70.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67c3cf8f-c2f6-4ad0-83f9-960e5d74fc3e.jpg?1562736426
 value=3.645
 rarity=R
 type=Enchantment

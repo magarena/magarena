@@ -1,5 +1,5 @@
 name=Ogre Slumlord
-image=https://magiccards.info/scans/en/gtc/74.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/729f662d-e6b3-41ae-aed8-ef1c27b793d9.jpg?1631586703
 value=3.621
 rarity=R
 type=Creature

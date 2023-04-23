@@ -1,5 +1,5 @@
 name=Dauthi Mercenary
-image=https://magiccards.info/scans/en/tp/18.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f4d6a3b-5880-447f-9095-84ea9e28e5a9.jpg?1624326782
 value=4.000
 rarity=U
 type=Creature

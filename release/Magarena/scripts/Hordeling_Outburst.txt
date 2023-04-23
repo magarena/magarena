@@ -1,5 +1,5 @@
 name=Hordeling Outburst
-image=https://magiccards.info/scans/en/a25/134.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4138531-ef42-4c56-864e-d3525a4f2082.jpg?1562442178
 image_updated=2018-04-27
 value=3.000
 rarity=C

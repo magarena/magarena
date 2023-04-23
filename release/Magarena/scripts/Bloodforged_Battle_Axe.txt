@@ -1,5 +1,5 @@
 name=Bloodforged Battle-Axe
-image=https://magiccards.info/scans/en/c17/50.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14f12690-377e-46ae-bbae-f17c27b6acb4.jpg?1682209950
 image_updated=2017-10-03
 value=2.500
 rarity=R

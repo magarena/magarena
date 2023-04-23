@@ -1,5 +1,5 @@
 name=Kingpin's Pet
-image=https://magiccards.info/scans/en/gtc/173.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3465cf63-4f10-4b53-9703-69746364dbc7.jpg?1561822414
 value=3.507
 rarity=C
 type=Creature

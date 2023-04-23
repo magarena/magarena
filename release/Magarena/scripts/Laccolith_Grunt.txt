@@ -1,5 +1,5 @@
 name=Laccolith Grunt
-image=https://magiccards.info/scans/en/ne/87.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f27fd65a-5631-491f-b158-45012832ccf1.jpg?1562632792
 value=3.182
 rarity=C
 type=Creature

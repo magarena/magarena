@@ -1,5 +1,5 @@
 name=Sunstrike Legionnaire
-image=https://magiccards.info/scans/en/le/22.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f5d519a-9f11-4b10-97ad-edccfda639bb.jpg?1562898137
 value=2.984
 rarity=R
 type=Creature

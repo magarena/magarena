@@ -1,5 +1,5 @@
 name=Bringer of the Red Dawn
-image=https://magiccards.info/scans/en/5dn/62.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16a58bb1-4c4d-41f2-9c69-d3c3a8a8ab09.jpg?1562875616
 value=4.196
 rarity=R
 type=Creature

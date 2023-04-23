@@ -1,5 +1,5 @@
 name=Rubbleback Rhino
-image=https://magiccards.info/scans/en/rtr/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51daaf9b-d8a8-49a6-94e1-0c8be2c6188b.jpg?1562786300
 value=2.239
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Tragic Lesson
-image=https://magiccards.info/scans/en/hou/51.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0f0353c-f1e0-49db-9edc-eea9090de872.jpg?1562808896
 value=2.500
 rarity=C
 type=Instant

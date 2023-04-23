@@ -1,5 +1,5 @@
 name=Ostiary Thrull
-image=https://magiccards.info/scans/en/gp/55.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26407330-d7a1-4915-b7c6-e08e166cf638.jpg?1593272233
 value=1.486
 rarity=C
 type=Creature

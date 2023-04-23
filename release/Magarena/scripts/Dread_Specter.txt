@@ -1,5 +1,5 @@
 name=Dread Specter
-image=https://magiccards.info/scans/en/mr/17.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00c48e08-9a77-4ba2-8041-90998f7e3812.jpg?1562717468
 value=2.595
 rarity=U
 type=Creature

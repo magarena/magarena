@@ -1,5 +1,5 @@
 name=Catalog
-image=https://magiccards.info/scans/en/soi/51.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b069516-1465-4acf-b4b9-ca7f1238b4fe.jpg?1576383994
 image_updated=2010-09-10
 value=2.971
 rarity=C

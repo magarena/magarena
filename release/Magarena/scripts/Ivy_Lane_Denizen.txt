@@ -1,5 +1,5 @@
 name=Ivy Lane Denizen
-image=https://magiccards.info/scans/en/gtc/125.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78bea375-8af3-4425-a418-bb5503e2dfb7.jpg?1608910737
 value=3.197
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Craw Giant
-image=https://magiccards.info/scans/en/tsts/76.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81c5ee8f-a060-486c-a7f1-7bd600f6911a.jpg?1562779082
 value=3.593
 rarity=U
 type=Creature

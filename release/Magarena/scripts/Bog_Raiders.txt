@@ -1,5 +1,5 @@
 name=Bog Raiders
-image=https://magiccards.info/scans/en/m11/86.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a493521-810e-4932-bb44-16c80c3066c9.jpg?1562454167
 value=3.130
 rarity=C
 type=Creature

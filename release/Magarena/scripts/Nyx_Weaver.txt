@@ -1,5 +1,5 @@
 name=Nyx Weaver
-image=https://magiccards.info/scans/en/jou/153.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de71b145-6db9-490c-9e86-b441fcb107c8.jpg?1591321436
 value=3.716
 rarity=U
 type=Enchantment,Creature

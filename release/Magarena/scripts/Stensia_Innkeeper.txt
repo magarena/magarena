@@ -1,5 +1,5 @@
 name=Stensia Innkeeper
-image=https://magiccards.info/scans/en/emn/145.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee40c471-70c8-4171-a214-ce932c4c7e2e.jpg?1576384695
 image_updated=2016-09-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Soaring Hope
-image=https://magiccards.info/scans/en/lw/40.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f6c24b1-af9d-4a9c-9167-faa8a397a361.jpg?1562355228
 value=1.475
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Maelstrom Djinn
-image=https://magiccards.info/scans/en/fut/39.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c102f29-6f3f-4f97-8177-4307586bd1b2.jpg?1562926474
 value=2.783
 rarity=R
 type=Creature

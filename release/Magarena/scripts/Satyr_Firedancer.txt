@@ -1,5 +1,5 @@
 name=Satyr Firedancer
-image=https://magiccards.info/scans/en/bng/108.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fc6a735-cbf5-4af2-b15c-7ced82f0d9da.jpg?1593092344
 value=3.825
 rarity=R
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Narwhal
-image=https://magiccards.info/scans/en/hl/44.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64505a8b-4f7f-484c-ac6d-d64070c6d6e1.jpg?1562869027
 value=3.820
 rarity=R
 type=Creature

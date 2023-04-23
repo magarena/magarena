@@ -1,5 +1,5 @@
 name=Monk Idealist
-image=https://magiccards.info/scans/en/ema/21.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31c729e2-4e55-4a14-a288-9c3473e58b88.jpg?1580013751
 value=3.829
 rarity=C
 type=Creature

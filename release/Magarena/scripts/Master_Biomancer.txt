@@ -1,5 +1,5 @@
 name=Master Biomancer
-image=https://magiccards.info/scans/en/c16/210.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a57b0e38-8931-4715-ac13-b3af30b27895.jpg?1673148936
 image_updated=2017-08-17
 value=4.028
 rarity=M

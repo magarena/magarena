@@ -1,5 +1,5 @@
 name=Harvest Gwyllion
-image=https://magiccards.info/scans/en/eve/90.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a0491d1-343d-453e-aa52-a3d3daa1478e.jpg?1562900455
 value=2.564
 rarity=C
 type=Creature

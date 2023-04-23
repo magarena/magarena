@@ -1,5 +1,5 @@
 name=Megantic Sliver
-image=https://magiccards.info/scans/en/m14/185.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/7745f6a9-400c-4200-9732-86c54247de46.jpg?1562831148
 value=3.534
 rarity=R
 type=Creature

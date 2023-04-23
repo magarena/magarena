@@ -1,5 +1,5 @@
 name=Graypelt Hunter
-image=https://magiccards.info/scans/en/wwk/103.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b93b6f18-87f1-4b7c-bfdd-1b2a6384b00d.jpg?1593095439
 value=3.198
 rarity=C
 type=Creature

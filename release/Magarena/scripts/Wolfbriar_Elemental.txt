@@ -1,5 +1,5 @@
 name=Wolfbriar Elemental
-image=https://magiccards.info/scans/en/mm2/169.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60da801e-c47c-4aac-928c-2e7eab2d24c6.jpg?1592673317
 value=4.143
 rarity=R
 type=Creature

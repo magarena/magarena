@@ -1,5 +1,5 @@
 name=Woebearer
-image=https://magiccards.info/scans/en/mi/83.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5a6e960-169d-431a-9ebd-c4413aa67377.jpg?1562157274
 value=3.829
 rarity=U
 type=Creature

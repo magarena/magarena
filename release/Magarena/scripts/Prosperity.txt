@@ -1,5 +1,5 @@
 name=Prosperity
-image=https://magiccards.info/scans/en/6e/89.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69ebc3a4-94b8-45aa-a3bf-21cd435ff5cf.jpg?1562917143
 value=4.318
 rarity=U
 type=Sorcery

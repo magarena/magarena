@@ -1,5 +1,5 @@
 name=No-Dachi
-image=https://magiccards.info/scans/en/chk/264.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c6061a8-d27f-4258-9e95-cd12365c4248.jpg?1562761086
 value=3.137
 rarity=U
 type=Artifact

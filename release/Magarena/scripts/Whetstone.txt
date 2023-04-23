@@ -1,5 +1,5 @@
 name=Whetstone
-image=https://magiccards.info/scans/en/us/316.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/627805a0-535f-4cba-8176-a4de290b9c15.jpg?1562915574
 value=3.742
 rarity=R
 type=Artifact

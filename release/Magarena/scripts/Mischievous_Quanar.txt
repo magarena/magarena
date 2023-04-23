@@ -1,5 +1,5 @@
 name=Mischievous Quanar
-image=https://magiccards.info/scans/en/sc/42.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc48c2db-f5b4-4c24-a5fa-00750b7ff56f.jpg?1562535674
 value=4.068
 rarity=R
 type=Creature

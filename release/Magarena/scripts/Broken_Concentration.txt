@@ -1,5 +1,5 @@
 name=Broken Concentration
-image=https://magiccards.info/scans/en/soi/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/252eef1f-0a62-420d-aad8-e3d7f1e07c1b.jpg?1576383988
 value=2.500
 rarity=U
 type=Instant

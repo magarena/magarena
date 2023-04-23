@@ -1,5 +1,5 @@
 name=Locust Miser
-image=https://magiccards.info/scans/en/sok/80.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55bf4dda-0ce8-4e35-88d9-18a22400e6cb.jpg?1562493740
 value=3.162
 rarity=U
 type=Creature

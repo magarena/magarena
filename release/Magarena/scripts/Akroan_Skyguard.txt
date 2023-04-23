@@ -1,5 +1,5 @@
 name=Akroan Skyguard
-image=https://magiccards.info/scans/en/bng/3.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d55e85c3-234e-49c4-a307-96fb4497eea8.jpg?1593091357
 value=3.764
 rarity=C
 type=Creature

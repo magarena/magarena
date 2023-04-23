@@ -1,5 +1,5 @@
 name=Entrancing Melody
-image=https://magiccards.info/scans/en/xln/55.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15732049-7e56-432f-881f-215e45b7a70e.jpg?1562551124
 value=2.500
 rarity=R
 type=Sorcery

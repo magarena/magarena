@@ -1,5 +1,5 @@
 name=Dawnstrider
-image=https://magiccards.info/scans/en/mm/237.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d193a35-8950-4a77-ace3-c4d4085727f4.jpg?1562379905
 value=4.105
 rarity=R
 type=Creature

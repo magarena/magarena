@@ -1,5 +1,5 @@
 name=Niblis of Dusk
-image=https://magiccards.info/scans/en/soi/76.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/394dd931-e34e-4314-88c9-774a2f3c8c1b.jpg?1576384160
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Hydroblast
-image=https://magiccards.info/scans/en/ema/55.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c9c9b16-5567-4473-95e6-622292f77336.jpg?1580013995
 value=4.236
 rarity=U
 type=Instant

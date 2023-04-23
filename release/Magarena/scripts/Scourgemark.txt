@@ -1,5 +1,5 @@
 name=Scourgemark
-image=https://magiccards.info/scans/en/ths/105.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed36a150-a686-4fa6-8364-8be262ad7d98.jpg?1562836723
 value=2.565
 rarity=C
 type=Enchantment

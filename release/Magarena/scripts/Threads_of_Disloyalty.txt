@@ -1,5 +1,5 @@
 name=Threads of Disloyalty
-image=https://magiccards.info/scans/en/bok/56.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/999440a5-9659-4218-8594-1950f1155975.jpg?1593860777
 value=4.378
 rarity=R
 type=Enchantment

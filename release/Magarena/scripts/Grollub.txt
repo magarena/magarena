@@ -1,5 +1,5 @@
 name=Grollub
-image=https://magiccards.info/scans/en/ex/63.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47f6301a-d581-4aaf-9993-3013323074aa.jpg?1562087828
 value=1.640
 rarity=C
 type=Creature

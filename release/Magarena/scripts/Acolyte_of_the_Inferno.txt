@@ -1,5 +1,5 @@
 name=Acolyte of the Inferno
-image=https://magiccards.info/scans/en/ori/128.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/186581c7-81a6-4c27-b8a9-ff7f7a4b1d40.jpg?1562008741
 image_updated=2015-11-05
 value=2.500
 rarity=U

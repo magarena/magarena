@@ -1,5 +1,5 @@
 name=Wildgrowth Walker
-image=https://magiccards.info/scans/en/xln/216.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52e4c0f8-d5f0-4224-9974-190606911480.jpg?1562555416
 value=2.500
 rarity=U
 type=Creature

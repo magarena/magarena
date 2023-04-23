@@ -1,5 +1,5 @@
 name=Manticore Eternal
-image=https://magiccards.info/scans/en/hou/103.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b03a9686-d30b-4048-8b0a-23fd2f0aed4b.jpg?1562811013
 value=2.500
 rarity=U
 type=Creature

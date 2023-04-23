@@ -1,5 +1,5 @@
 name=Olivia, Mobilized for War
-image=https://magiccards.info/scans/en/soi/248.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7297dd81-8367-42e9-abf9-9227e202e7ae.jpg?1576385369
 value=2.500
 rarity=M
 type=Legendary,Creature

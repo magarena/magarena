@@ -1,5 +1,5 @@
 name=Kessig Wolf
-image=https://magiccards.info/scans/en/isd/151.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3255480b-c1cf-43d9-a40e-43e38112bb18.jpg?1562828278
 value=2.405
 rarity=C
 type=Creature

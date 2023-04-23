@@ -1,5 +1,5 @@
 name=Hollowhenge Beast
-image=https://magiccards.info/scans/en/dka/118.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/052ab91f-ac01-43f4-9276-9af35dbfbf71.jpg?1562896231
 value=2.694
 rarity=C
 type=Creature

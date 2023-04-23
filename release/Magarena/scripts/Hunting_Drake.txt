@@ -1,5 +1,5 @@
 name=Hunting Drake
-image=https://magiccards.info/scans/en/ps/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b0293a9-48fe-4018-bd25-3e02c227a3dd.jpg?1562913988
 value=2.948
 rarity=C
 type=Creature

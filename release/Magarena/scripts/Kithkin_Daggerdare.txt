@@ -1,5 +1,5 @@
 name=Kithkin Daggerdare
-image=https://magiccards.info/scans/en/lw/223.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90d0d7fd-a580-41af-8e9d-fee74094ec47.jpg?1562358304
 value=2.441
 rarity=C
 type=Creature

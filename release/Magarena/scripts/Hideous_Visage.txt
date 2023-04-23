@@ -1,5 +1,5 @@
 name=Hideous Visage
-image=https://magiccards.info/scans/en/m12/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25925751-b6cb-45a3-915f-d5ec3edcda78.jpg?1562636061
 value=2.703
 rarity=C
 type=Sorcery

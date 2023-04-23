@@ -1,5 +1,5 @@
 name=Flensermite
-image=https://magiccards.info/scans/en/mbs/41.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0017de60-ee1c-4675-b04e-cdfa2c2a596e.jpg?1562609238
 value=3.023
 rarity=C
 type=Creature

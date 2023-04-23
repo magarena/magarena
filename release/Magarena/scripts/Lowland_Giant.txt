@@ -1,5 +1,5 @@
 name=Lowland Giant
-image=https://magiccards.info/scans/en/tp/187.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d8ce76f-8ced-4ee9-a450-1bcc27d36e7d.jpg?1562429848
 value=2.871
 rarity=C
 type=Creature

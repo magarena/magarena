@@ -1,5 +1,5 @@
 name=Rime Transfusion
-image=https://magiccards.info/scans/en/cs/68.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e18318fe-b429-459f-9b70-d444b48b8dc7.jpg?1593275154
 value=3.538
 rarity=U
 type=Snow,Enchantment

@@ -1,5 +1,5 @@
 name=Apes of Rath
-image=https://magiccards.info/scans/en/tp/108.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25eff287-6b53-4e6d-9da2-d80d05bb8c51.jpg?1562053254
 value=2.764
 rarity=U
 type=Creature

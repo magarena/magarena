@@ -1,5 +1,5 @@
 name=Lawbringer
-image=https://magiccards.info/scans/en/ne/10.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d76b7e3-6890-4120-8575-732909c8bdff.jpg?1562629226
 value=2.629
 rarity=C
 type=Creature

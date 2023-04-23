@@ -1,5 +1,5 @@
 name=Sigil of the Nayan Gods
-image=https://magiccards.info/scans/en/arb/78.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a856dec4-fe4f-477c-9300-e9de86d3cc95.jpg?1562643439
 value=3.066
 rarity=C
 type=Enchantment

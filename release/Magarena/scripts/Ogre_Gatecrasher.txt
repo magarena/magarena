@@ -1,5 +1,5 @@
 name=Ogre Gatecrasher
-image=https://magiccards.info/scans/en/di/67.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffddd4e2-e98c-4535-bac2-0af73f1535c5.jpg?1593273189
 value=2.621
 rarity=C
 type=Creature

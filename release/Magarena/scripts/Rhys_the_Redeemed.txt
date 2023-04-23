@@ -1,5 +1,5 @@
 name=Rhys the Redeemed
-image=https://magiccards.info/scans/en/shm/237.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b91dadcb-31e9-43b0-b425-c9311af3e9d7.jpg?1599708272
 value=4.116
 rarity=R
 type=Legendary,Creature

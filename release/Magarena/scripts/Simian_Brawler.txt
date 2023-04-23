@@ -1,5 +1,5 @@
 name=Simian Brawler
-image=https://magiccards.info/scans/en/cs/122.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df2ed9f3-50b1-493b-9c14-0f8ddb4d8c57.jpg?1593275477
 value=1.756
 rarity=C
 type=Creature

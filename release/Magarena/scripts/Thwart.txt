@@ -1,5 +1,5 @@
 name=Thwart
-image=https://magiccards.info/scans/en/mm/108.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c12a0717-e9ea-4be3-a29f-179671ed4489.jpg?1562383015
 value=3.857
 rarity=U
 type=Instant

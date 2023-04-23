@@ -1,5 +1,5 @@
 name=Barl's Cage
-image=https://magiccards.info/scans/en/5e/352.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c51825dc-9854-4a45-80e9-91924e406586.jpg?1562936661
 value=2.920
 rarity=R
 type=Artifact

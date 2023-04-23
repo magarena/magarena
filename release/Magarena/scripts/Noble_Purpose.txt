@@ -1,5 +1,5 @@
 name=Noble Purpose
-image=https://magiccards.info/scans/en/8e/31.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd35c327-1998-4331-9280-1617638c1031.jpg?1562933049
 value=4.245
 rarity=R
 type=Enchantment

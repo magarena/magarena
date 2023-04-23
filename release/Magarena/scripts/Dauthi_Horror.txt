@@ -1,5 +1,5 @@
 name=Dauthi Horror
-image=https://magiccards.info/scans/en/tp/16.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c41afe6-7eed-4cf5-9bbb-ccc9f82cb4fa.jpg?1674141573
 value=4.083
 rarity=C
 type=Creature

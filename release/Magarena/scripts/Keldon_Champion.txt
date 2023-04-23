@@ -1,5 +1,5 @@
 name=Keldon Champion
-image=https://magiccards.info/scans/en/ema/135.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2ca0987e-7dff-410a-8328-45ba1c53e974.jpg?1580014570
 value=3.571
 rarity=U
 type=Creature

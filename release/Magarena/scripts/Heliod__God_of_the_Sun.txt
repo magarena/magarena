@@ -1,5 +1,5 @@
 name=Heliod, God of the Sun
-image=https://magiccards.info/scans/en/ths/17.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e90d01c9-e76e-42ff-b0fa-8b6786242aae.jpg?1562836166
 value=3.453
 rarity=M
 type=Legendary,Enchantment,Creature

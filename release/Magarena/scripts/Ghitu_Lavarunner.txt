@@ -1,5 +1,5 @@
 name=Ghitu Lavarunner
-image=https://magiccards.info/scans/en/dom/127.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c448ba82-a502-459f-9ebc-fc9e85674e6c.jpg?1562742489
 value=2.500
 rarity=C
 type=Creature

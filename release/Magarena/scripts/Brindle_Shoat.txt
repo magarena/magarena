@@ -1,5 +1,5 @@
 name=Brindle Shoat
-image=https://magiccards.info/scans/en/pc2/60.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a005933-e206-4b14-9a0f-755fae6c5a2a.jpg?1673148035
 value=3.438
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Pulse of the Tangle
-image=https://magiccards.info/scans/en/ds/80.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88cf1c67-9edc-42dd-ba7f-96baab25813a.jpg?1562637935
 value=4.340
 rarity=R
 type=Sorcery

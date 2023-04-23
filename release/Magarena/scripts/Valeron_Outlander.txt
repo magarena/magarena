@@ -1,5 +1,5 @@
 name=Valeron Outlander
-image=https://magiccards.info/scans/en/cfx/130.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e73cd46-0dec-441b-bb91-ec6defb3355e.jpg?1562802044
 value=2.906
 rarity=C
 type=Creature

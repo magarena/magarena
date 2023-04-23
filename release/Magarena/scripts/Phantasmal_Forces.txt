@@ -1,5 +1,5 @@
 name=Phantasmal Forces
-image=https://magiccards.info/scans/en/5e/106.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/996fa830-7c09-4077-818d-24201617cf19.jpg?1562931154
 value=2.795
 rarity=U
 type=Creature

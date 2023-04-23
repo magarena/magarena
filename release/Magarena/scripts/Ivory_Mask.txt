@@ -1,5 +1,5 @@
 name=Ivory Mask
-image=https://magiccards.info/scans/en/9e/23.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b02422f7-728b-481b-9eb1-34d17c696ce6.jpg?1562740262
 value=4.111
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Containment Membrane
-image=https://magiccards.info/scans/en/ogw/52.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49dd3963-a4d7-4992-b6f8-753996390bbf.jpg?1562909951
 image_updated=2016-02-29
 value=2.500
 rarity=C

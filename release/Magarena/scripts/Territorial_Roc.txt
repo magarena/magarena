@@ -1,5 +1,5 @@
 name=Territorial Roc
-image=https://magiccards.info/scans/en/dtk/43.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c83aa5e-b607-4c4f-a5f6-db61c93a1152.jpg?1562782456
 value=2.500
 rarity=C
 type=Creature

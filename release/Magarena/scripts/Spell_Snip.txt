@@ -1,5 +1,5 @@
 name=Spell Snip
-image=https://magiccards.info/scans/en/ala/57.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6870203-ece9-4fe0-912b-2dcf685f3eb0.jpg?1562709543
 value=1.200
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Elvish Mystic
-image=https://magiccards.info/scans/en/c14/191.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed7a0227-ac70-40fb-8198-a55eacf913fa.jpg?1631234818
 value=3.875
 rarity=C
 type=Creature

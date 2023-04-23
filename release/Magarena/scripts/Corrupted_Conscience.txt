@@ -1,5 +1,5 @@
 name=Corrupted Conscience
-image=https://magiccards.info/scans/en/mbs/22.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7276c584-76ed-4c20-a5ea-627c8f7751e6.jpg?1562612217
 value=3.730
 rarity=U
 type=Enchantment

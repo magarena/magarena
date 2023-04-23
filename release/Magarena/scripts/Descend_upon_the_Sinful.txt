@@ -1,5 +1,5 @@
 name=Descend upon the Sinful
-image=https://magiccards.info/scans/en/soi/13.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98e42eb8-b556-4ea6-aded-d0087d243b75.jpg?1591320017
 value=2.500
 rarity=M
 type=Sorcery

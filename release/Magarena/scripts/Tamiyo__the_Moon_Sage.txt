@@ -1,5 +1,5 @@
 name=Tamiyo, the Moon Sage
-image=https://magiccards.info/scans/en/avr/79.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9398926-13b9-47b8-b66b-1ab9d06bb704.jpg?1592708716
 value=3.952
 rarity=M
 type=Legendary,Planeswalker

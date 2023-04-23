@@ -1,5 +1,5 @@
 name=The Locust God
-image=https://magiccards.info/scans/en/hou/139.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e599847-8ab0-4fd6-b2c0-cb44a7669aa5.jpg?1682209825
 value=2.500
 rarity=M
 type=Legendary,Creature

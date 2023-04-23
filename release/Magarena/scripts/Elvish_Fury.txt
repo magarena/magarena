@@ -1,5 +1,5 @@
 name=Elvish Fury
-image=https://magiccards.info/scans/en/tp/120.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5a24943-0121-4c64-9624-2e4cff37e6ca.jpg?1562202061
 value=2.868
 rarity=C
 type=Instant

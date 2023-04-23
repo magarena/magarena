@@ -1,5 +1,5 @@
 name=Grixis Illusionist
-image=https://magiccards.info/scans/en/cns/99.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec7bd811-a49d-4d5d-9a58-2c35465ed606.jpg?1562867354
 value=2.500
 rarity=C
 type=Creature

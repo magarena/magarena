@@ -1,5 +1,5 @@
 name=Deserted Temple
-image=https://magiccards.info/scans/en/od/320.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1fa74b2-f9bd-4617-8b65-878781f3a2fd.jpg?1562934208
 value=4.062
 rarity=R
 type=Land

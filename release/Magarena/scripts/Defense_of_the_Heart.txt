@@ -1,5 +1,5 @@
 name=Defense of the Heart
-image=https://magiccards.info/scans/en/ul/100.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e93381f-627f-41b6-b1b6-45d712a44d8e.jpg?1562863769
 value=4.572
 rarity=R
 type=Enchantment

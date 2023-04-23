@@ -1,5 +1,5 @@
 name=Kitsune Blademaster
-image=https://magiccards.info/scans/en/chk/25.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb9d108d-ee19-4b1d-9d4b-b4c4d9b8ad0d.jpg?1562766095
 value=3.725
 rarity=C
 type=Creature

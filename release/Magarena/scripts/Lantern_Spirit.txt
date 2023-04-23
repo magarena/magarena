@@ -1,5 +1,5 @@
 name=Lantern Spirit
-image=https://magiccards.info/scans/en/isd/62.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b50a5772-f411-458a-97f9-9f3967bb79c5.jpg?1562835877
 value=3.259
 rarity=U
 type=Creature

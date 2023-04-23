@@ -1,5 +1,5 @@
 name=Rakka Mar
-image=https://magiccards.info/scans/en/cfx/71.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d569b01-af52-41a6-9ce4-02ed2e057038.jpg?1562801242
 value=3.482
 rarity=R
 type=Legendary,Creature

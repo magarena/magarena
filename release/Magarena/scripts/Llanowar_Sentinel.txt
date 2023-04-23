@@ -1,5 +1,5 @@
 name=Llanowar Sentinel
-image=https://magiccards.info/scans/en/10e/275.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bda18561-4767-4f8e-bc6d-9117d1a480b1.jpg?1562554376
 value=3.905
 rarity=C
 type=Creature

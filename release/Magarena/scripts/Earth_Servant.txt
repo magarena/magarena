@@ -1,5 +1,5 @@
 name=Earth Servant
-image=https://magiccards.info/scans/en/m11/134.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85f04ca1-0199-41d7-a150-93b32a9795f7.jpg?1581708557
 image_updated=2016-12-02
 value=2.562
 rarity=U

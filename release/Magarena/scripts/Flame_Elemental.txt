@@ -1,5 +1,5 @@
 name=Flame Elemental
-image=https://magiccards.info/scans/en/mr/175.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/498e813d-b0b3-4040-b87a-4fa2be681ec5.jpg?1562718815
 value=2.569
 rarity=U
 type=Creature

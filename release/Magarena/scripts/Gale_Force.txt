@@ -1,5 +1,5 @@
 name=Gale Force
-image=https://magiccards.info/scans/en/chk/209.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26c5c233-a373-4ac4-9b99-81ed97df1f9b.jpg?1562758454
 value=2.370
 rarity=U
 type=Sorcery

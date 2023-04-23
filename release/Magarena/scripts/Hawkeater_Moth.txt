@@ -1,5 +1,5 @@
 name=Hawkeater Moth
-image=https://magiccards.info/scans/en/us/259.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/842e8c4c-32f3-4ec3-b636-1d7dc9f0023e.jpg?1562922894
 value=2.486
 rarity=U
 type=Creature

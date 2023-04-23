@@ -1,5 +1,5 @@
 name=Frost Ogre
-image=https://magiccards.info/scans/en/bok/102.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a91e5f1-9179-4763-b7c9-b7ad5451f6d0.jpg?1562875749
 value=2.197
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Marshdrinker Giant
-image=https://magiccards.info/scans/en/eve/69.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04d1fbb7-aa02-4f56-8be7-88a3ba55f7d2.jpg?1562896003
 value=2.729
 rarity=U
 type=Creature

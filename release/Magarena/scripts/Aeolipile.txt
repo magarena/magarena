@@ -1,5 +1,5 @@
 name=Aeolipile
-image=https://magiccards.info/scans/en/fe/166.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/533dc518-125b-4286-b0d3-32cb67c4c13b.jpg?1562868557
 value=3.433
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Thieving Magpie
-image=https://magiccards.info/scans/en/10e/115.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96395d53-5eaa-4d17-a473-f685ad925eaf.jpg?1562551939
 image_updated=2017-01-10
 value=4.280
 rarity=U

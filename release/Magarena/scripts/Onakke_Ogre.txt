@@ -1,5 +1,5 @@
 name=Onakke Ogre
-image=https://magiccards.info/scans/en/m19/153.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76e42d07-57d9-4de4-8d41-eb42dd1573ed.jpg?1594736725
 value=2.500
 rarity=C
 type=Creature

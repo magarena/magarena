@@ -1,5 +1,5 @@
 name=Juniper Order Druid
-image=https://magiccards.info/scans/en/ia/139.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb211704-ff8e-498b-b7bb-f8384f198ffd.jpg?1587912031
 value=3.161
 rarity=C
 type=Creature

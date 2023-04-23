@@ -1,5 +1,5 @@
 name=Kashi-Tribe Warriors
-image=https://magiccards.info/scans/en/chk/221.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cd4df4a-fbab-4598-ad8e-b24ed0bb4497.jpg?1562761991
 value=2.224
 rarity=C
 type=Creature

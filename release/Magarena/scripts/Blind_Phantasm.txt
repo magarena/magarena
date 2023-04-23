@@ -1,5 +1,5 @@
 name=Blind Phantasm
-image=https://magiccards.info/scans/en/fut/49.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b26ee7b-de1a-4a39-9580-89941c3d0f21.jpg?1562916536
 value=3.271
 rarity=C
 type=Creature

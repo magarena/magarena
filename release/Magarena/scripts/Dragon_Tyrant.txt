@@ -1,5 +1,5 @@
 name=Dragon Tyrant
-image=https://magiccards.info/scans/en/sc/88.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04d1a29b-af80-4f9a-881b-ef7374ecbce1.jpg?1562524951
 value=4.338
 rarity=R
 type=Creature

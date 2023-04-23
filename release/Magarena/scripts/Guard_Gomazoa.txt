@@ -1,5 +1,5 @@
 name=Guard Gomazoa
-image=https://magiccards.info/scans/en/pc2/17.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/505969a2-0869-461e-a69a-3b380579e00a.jpg?1562909728
 value=3.833
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Svyelunite Priest
-image=https://magiccards.info/scans/en/fe/53.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/316d25ae-7ac6-4f5b-93ab-0e0e28ec104b.jpg?1587910878
 value=1.729
 rarity=U
 type=Creature

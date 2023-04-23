@@ -1,5 +1,5 @@
 name=Aquastrand Spider
-image=https://magiccards.info/scans/en/mm2/140.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af9dd8d6-013a-4018-9186-988f5e8d0ab9.jpg?1562266205
 value=2.741
 rarity=C
 type=Creature

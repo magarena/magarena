@@ -1,5 +1,5 @@
 name=Viscera Dragger
-image=https://magiccards.info/scans/en/ala/92.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d6d2d84-7141-4485-8379-b3c71af47cd1.jpg?1562705126
 value=3.519
 rarity=C
 type=Creature

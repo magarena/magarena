@@ -1,5 +1,5 @@
 name=Kaseto, Orochi Archmage
-image=https://magiccards.info/scans/en/c15/47.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cae9bae-bcea-4b4b-965f-8b14339e724b.jpg?1625977790
 image_updated=2016-02-29
 value=2.500
 rarity=M

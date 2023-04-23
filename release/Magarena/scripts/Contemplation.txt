@@ -1,5 +1,5 @@
 name=Contemplation
-image=https://magiccards.info/scans/en/sh/104.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/848672be-b1cd-40ef-a7ed-ce1620aebd2e.jpg?1562596875
 value=3.266
 rarity=U
 type=Enchantment

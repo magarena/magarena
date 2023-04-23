@@ -1,5 +1,5 @@
 name=Skullcrack
-image=https://magiccards.info/scans/en/gtc/106.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8068a146-f6fe-46f3-a42e-822fbc3502e6.jpg?1561833692
 value=3.978
 rarity=U
 type=Instant

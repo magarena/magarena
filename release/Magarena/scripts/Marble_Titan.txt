@@ -1,5 +1,5 @@
 name=Marble Titan
-image=https://magiccards.info/scans/en/9e/26.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4816f18-9f66-4539-9764-2f65f2826812.jpg?1562743150
 value=3.705
 rarity=R
 type=Creature

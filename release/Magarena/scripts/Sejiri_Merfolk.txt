@@ -1,5 +1,5 @@
 name=Sejiri Merfolk
-image=https://magiccards.info/scans/en/wwk/36.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6ae04d82-56f5-4c72-b1c1-40c7d9640b7c.jpg?1562288982
 value=4.131
 rarity=U
 type=Creature

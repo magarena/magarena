@@ -1,5 +1,5 @@
 name=Angelic Favor
-image=https://magiccards.info/scans/en/ne/1.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/871ad2f3-1dd2-45ea-881d-529aad3b76ec.jpg?1562630884
 value=4.107
 rarity=U
 type=Instant

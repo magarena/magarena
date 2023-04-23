@@ -1,5 +1,5 @@
 name=River Merfolk
-image=https://magiccards.info/scans/en/fe/51.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e61b64e7-2516-4132-b9a8-06da93ff6ac7.jpg?1559592298
 value=3.094
 rarity=R
 type=Creature

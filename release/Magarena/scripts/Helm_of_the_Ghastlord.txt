@@ -1,5 +1,5 @@
 name=Helm of the Ghastlord
-image=https://magiccards.info/scans/en/shm/166.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/653dd5b7-1ad3-4df1-bd2a-4e6ae362a8a2.jpg?1562830982
 value=3.645
 rarity=C
 type=Enchantment

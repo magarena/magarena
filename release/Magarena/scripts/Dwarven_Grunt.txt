@@ -1,5 +1,5 @@
 name=Dwarven Grunt
-image=https://magiccards.info/scans/en/od/185.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f00d726-4289-48ff-8c14-6a5080a00fda.jpg?1562915573
 value=2.518
 rarity=C
 type=Creature

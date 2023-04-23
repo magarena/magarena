@@ -1,5 +1,5 @@
 name=Gnathosaur
-image=https://magiccards.info/scans/en/mbs/63.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27dcb0c8-e6d5-4f6b-a74f-e495b5e42606.jpg?1562610247
 value=2.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Just the Wind
-image=https://magiccards.info/scans/en/soi/71.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59e40878-358d-48ec-a35f-3d9867728143.jpg?1547516348
 value=2.500
 rarity=C
 type=Instant

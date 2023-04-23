@@ -1,5 +1,5 @@
 name=Hyperion Blacksmith
-image=https://magiccards.info/scans/en/lg/150.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44d499a9-fe7c-4a1a-9eb3-a7fd9f85ae08.jpg?1592364504
 value=2.783
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Rottenheart Ghoul
-image=https://magiccards.info/scans/en/soi/132.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/933f0504-c611-4557-b1e6-f5be72154805.jpg?1576384569
 value=2.500
 rarity=C
 type=Creature

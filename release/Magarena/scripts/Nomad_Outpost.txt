@@ -1,5 +1,5 @@
 name=Nomad Outpost
-image=https://magiccards.info/scans/en/c16/311.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c003287-993d-4cc2-8b91-47919dbaa1ec.jpg?1673306136
 image_updated=2017-08-17
 value=3.750
 rarity=U

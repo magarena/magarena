@@ -1,5 +1,5 @@
 name=Assassin's Strike
-image=https://magiccards.info/scans/en/rtr/57.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9aacb3ae-c889-4912-bc2d-2aa0adfd20bd.jpg?1600732614
 value=1.622
 rarity=U
 type=Sorcery

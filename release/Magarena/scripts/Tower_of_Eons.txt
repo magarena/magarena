@@ -1,5 +1,5 @@
 name=Tower of Eons
-image=https://magiccards.info/scans/en/mi/266.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0eb67150-53e4-4164-bea5-dd3659469b8e.jpg?1562135649
 value=3.026
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Eternal Thirst
-image=https://magiccards.info/scans/en/ima/89.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bbc405d-0cfb-45c6-baa1-75845d82e713.jpg?1600714433
 image_updated=2017-04-12
 value=2.750
 rarity=C

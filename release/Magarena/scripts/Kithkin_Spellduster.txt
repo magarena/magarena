@@ -1,5 +1,5 @@
 name=Kithkin Spellduster
-image=https://magiccards.info/scans/en/eve/8.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71547cb8-b275-4ff2-a7fa-327cb493ce04.jpg?1562918839
 value=2.244
 rarity=C
 type=Creature

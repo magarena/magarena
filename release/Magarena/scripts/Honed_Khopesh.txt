@@ -1,5 +1,5 @@
 name=Honed Khopesh
-image=https://magiccards.info/scans/en/akh/230.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7d80b98-baa2-48ea-9611-96e64d7cb950.jpg?1543676284
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Peak Eruption
-image=https://magiccards.info/scans/en/ths/132.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed0a00f7-aee0-4ab2-bab6-bc0949176a7a.jpg?1562836713
 value=3.250
 rarity=U
 type=Sorcery

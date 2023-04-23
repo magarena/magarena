@@ -1,5 +1,5 @@
 name=Fractured Powerstone
-image=https://magiccards.info/scans/en/pc2/111.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aeaa7115-bebe-4650-9575-f7855c0055cd.jpg?1682210024
 value=3.333
 rarity=C
 type=Artifact

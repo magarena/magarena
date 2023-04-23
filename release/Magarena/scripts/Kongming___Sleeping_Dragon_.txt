@@ -1,5 +1,5 @@
 name=Kongming, "Sleeping Dragon"
-image=https://magiccards.info/scans/en/a25/20.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70c9e4fd-e987-4653-abb1-e32971745db2.jpg?1562436627
 image_updated=2018-04-27
 value=3.789
 rarity=U

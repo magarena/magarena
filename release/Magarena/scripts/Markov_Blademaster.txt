@@ -1,5 +1,5 @@
 name=Markov Blademaster
-image=https://magiccards.info/scans/en/dka/96.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/122163dd-e070-48af-8036-e9850541d138.jpg?1562899348
 value=3.646
 rarity=R
 type=Creature

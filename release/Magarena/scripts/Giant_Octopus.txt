@@ -1,5 +1,5 @@
 name=Giant Octopus
-image=https://magiccards.info/scans/en/9eb/4.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a391d681-3530-4f6a-b421-12025e7c3b89.jpg?1562739527
 image_updated=2015-05-22
 value=2.192
 rarity=C

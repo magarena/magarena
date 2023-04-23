@@ -1,5 +1,5 @@
 name=Quarry Beetle
-image=https://magiccards.info/scans/en/hou/127.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69e11478-bfc7-4bcc-b65c-dc2d4449e99f.jpg?1562802187
 value=2.500
 rarity=U
 type=Creature

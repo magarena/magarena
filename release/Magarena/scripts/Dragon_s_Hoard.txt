@@ -1,5 +1,5 @@
 name=Dragon's Hoard
-image=https://magiccards.info/scans/en/m19/232.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36b6f0a8-b6c2-49fc-880c-01ad63213271.jpg?1674142580
 value=2.500
 rarity=R
 type=Artifact

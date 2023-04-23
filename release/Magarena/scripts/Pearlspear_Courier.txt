@@ -1,5 +1,5 @@
 name=Pearlspear Courier
-image=https://magiccards.info/scans/en/on/48.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1ea7219-6ab6-471a-afe7-d7da1df434c7.jpg?1562933222
 value=2.087
 rarity=U
 type=Creature

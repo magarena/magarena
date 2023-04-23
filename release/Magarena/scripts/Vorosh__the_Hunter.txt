@@ -1,5 +1,5 @@
 name=Vorosh, the Hunter
-image=https://magiccards.info/scans/en/cmd/235.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35943c5a-24ea-48dc-8ba3-956e0ec93cc6.jpg?1562273396
 value=4.187
 rarity=R
 type=Legendary,Creature

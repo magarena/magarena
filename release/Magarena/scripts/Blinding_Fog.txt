@@ -1,5 +1,5 @@
 name=Blinding Fog
-image=https://magiccards.info/scans/en/xln/177.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/bae7d501-72a1-43c2-9f72-d768ac5e9320.jpg?1562563001
 value=2.500
 rarity=C
 type=Instant

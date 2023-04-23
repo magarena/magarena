@@ -1,5 +1,5 @@
 name=Dire Fleet Neckbreaker
-image=https://magiccards.info/scans/en/rix/156.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5146dd15-f696-42c3-b0e5-6a1b1d7be6b4.jpg?1555040809
 value=2.500
 rarity=U
 type=Creature

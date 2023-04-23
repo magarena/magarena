@@ -1,5 +1,5 @@
 name=Horned Helm
-image=https://magiccards.info/scans/en/5dn/132.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/749c408a-0a19-44a3-a436-295380573f91.jpg?1562877772
 value=3.449
 rarity=C
 type=Artifact

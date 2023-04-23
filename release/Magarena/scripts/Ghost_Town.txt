@@ -1,5 +1,5 @@
 name=Ghost Town
-image=https://magiccards.info/scans/en/tp/312.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4218cdda-3a62-43fb-aaf7-7ac836392796.jpg?1562053761
 value=3.819
 rarity=U
 type=Land

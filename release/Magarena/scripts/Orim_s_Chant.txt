@@ -1,5 +1,5 @@
 name=Orim's Chant
-image=https://magiccards.info/scans/en/ps/11.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/055afa78-b969-498f-a3ad-c792426e5ee6.jpg?1562896113
 value=4.602
 rarity=R
 type=Instant

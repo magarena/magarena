@@ -1,5 +1,5 @@
 name=Lurking Jackals
-image=https://magiccards.info/scans/en/ud/62.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97d082d8-f401-47ad-845c-77776ee647ba.jpg?1562444712
 value=3.620
 rarity=U
 type=Enchantment

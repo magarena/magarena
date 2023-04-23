@@ -1,5 +1,5 @@
 name=Lash of the Whip
-image=https://magiccards.info/scans/en/ths/94.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba32cf1f-375c-4cc5-9963-c4f9510e3b39.jpg?1562827751
 value=2.073
 rarity=C
 type=Instant

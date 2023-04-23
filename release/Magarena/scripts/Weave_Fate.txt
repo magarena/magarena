@@ -1,5 +1,5 @@
 name=Weave Fate
-image=https://magiccards.info/scans/en/ori/279.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04e57fc1-1633-447f-ae32-ad7da25a4177.jpg?1562005520
 image_updated=2010-09-10
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Scorching Winds
-image=https://magiccards.info/scans/en/po/155.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fec371e-d4ba-439f-b1b8-2aac3f5b36bf.jpg?1562446655
 value=3.139
 rarity=U
 type=Instant

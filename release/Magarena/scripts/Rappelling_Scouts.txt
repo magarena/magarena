@@ -1,5 +1,5 @@
 name=Rappelling Scouts
-image=https://magiccards.info/scans/en/mm/41.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/113b8366-e6d0-423e-af4b-52c1e08ed446.jpg?1562379414
 value=3.174
 rarity=R
 type=Creature

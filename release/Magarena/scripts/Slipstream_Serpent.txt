@@ -1,5 +1,5 @@
 name=Slipstream Serpent
-image=https://magiccards.info/scans/en/ts/77.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f16dac30-52d2-4b87-90b4-4bc7f8f729ee.jpg?1619394674
 value=1.000
 rarity=C
 type=Creature

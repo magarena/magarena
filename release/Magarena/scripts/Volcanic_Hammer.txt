@@ -1,5 +1,5 @@
 name=Volcanic Hammer
-image=https://magiccards.info/scans/en/9e/226.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9db3f454-4aeb-4e48-b961-bea760ea8ddf.jpg?1562739230
 value=2.774
 removal=3
 rarity=C

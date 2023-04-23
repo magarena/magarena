@@ -1,5 +1,5 @@
 name=Foil
-image=https://magiccards.info/scans/en/pr/34.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8b39fd6-9240-4f76-b12c-e7d9aa88f061.jpg?1547516254
 image_updated=2016-12-02
 value=3.969
 rarity=U

@@ -1,5 +1,5 @@
 name=Chartooth Cougar
-image=https://magiccards.info/scans/en/a25/125.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03a32ab2-cc55-43fb-82d8-c51a3849b344.jpg?1562432453
 image_updated=2018-04-27
 value=3.625
 rarity=C

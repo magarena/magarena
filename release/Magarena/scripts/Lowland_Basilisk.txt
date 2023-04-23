@@ -1,5 +1,5 @@
 name=Lowland Basilisk
-image=https://magiccards.info/scans/en/sh/59.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c3cce7a-637f-4c68-af30-6f89f6c9f096.jpg?1562428862
 value=3.145
 rarity=C
 type=Creature

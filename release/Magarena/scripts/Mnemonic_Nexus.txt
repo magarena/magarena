@@ -1,5 +1,5 @@
 name=Mnemonic Nexus
-image=https://magiccards.info/scans/en/rav/59.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/200edda9-7ad9-47fc-837e-37ec9e5b4b51.jpg?1598914363
 value=2.405
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Panic
-image=https://magiccards.info/scans/en/5e/260.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3e48eae-7cae-44f0-b009-71f37e698756.jpg?1562870475
 value=3.121
 rarity=C
 type=Instant

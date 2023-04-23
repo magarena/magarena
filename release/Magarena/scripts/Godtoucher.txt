@@ -1,5 +1,5 @@
 name=Godtoucher
-image=https://magiccards.info/scans/en/ala/133.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/032059cb-c1ad-4cc9-a89d-d68289800312.jpg?1562700656
 value=2.402
 rarity=C
 type=Creature

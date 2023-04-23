@@ -1,5 +1,5 @@
 name=Militant Monk
-image=https://magiccards.info/scans/en/tr/9.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/886a3cfd-7f83-480a-bb22-eec67ad35e4f.jpg?1574250413
 value=2.812
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=White Scarab
-image=https://magiccards.info/scans/en/ia/280.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c57726b5-dfdd-4e47-bc52-ebf6eedbf3bd.jpg?1562931950
 value=1.985
 rarity=U
 type=Enchantment

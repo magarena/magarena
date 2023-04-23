@@ -1,5 +1,5 @@
 name=Torment of Venom
-image=https://magiccards.info/scans/en/hou/79.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f66410b-67a3-4f6a-b3ae-dcad9858a5da.jpg?1562794405
 value=2.500
 rarity=C
 type=Instant

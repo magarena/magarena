@@ -1,5 +1,5 @@
 name=Invigorating Falls
-image=https://magiccards.info/scans/en/tr/128.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec74e797-390e-4ebd-a53b-098ef3edd7d1.jpg?1562632557
 value=2.577
 rarity=C
 type=Sorcery

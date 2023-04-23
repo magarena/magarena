@@ -1,5 +1,5 @@
 name=Plague Boiler
-image=https://magiccards.info/scans/en/rav/269.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/869e27e3-1707-4e1d-b04a-8309da2e41b4.jpg?1562923392
 value=3.647
 rarity=R
 type=Artifact

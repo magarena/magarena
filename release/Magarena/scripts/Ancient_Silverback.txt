@@ -1,5 +1,5 @@
 name=Ancient Silverback
-image=https://magiccards.info/scans/en/m15/168.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b24ea58-0690-45d7-a84b-265b6277b59a.jpg?1562789630
 value=3.125
 rarity=U
 type=Creature

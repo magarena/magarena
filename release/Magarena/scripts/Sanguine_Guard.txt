@@ -1,5 +1,5 @@
 name=Sanguine Guard
-image=https://magiccards.info/scans/en/us/155.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c1fa0c5-8eef-484e-9d5f-38e87d99ed73.jpg?1562903161
 image_updated=2017-01-07
 value=3.897
 rarity=U

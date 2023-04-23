@@ -1,5 +1,5 @@
 name=Thallid Shell-Dweller
-image=https://magiccards.info/scans/en/mma/169.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e1fd5ff-79a2-43d9-bd69-94be175d19b4.jpg?1619398849
 value=3.947
 rarity=C
 type=Creature

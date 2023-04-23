@@ -1,5 +1,5 @@
 name=Triclopean Sight
-image=https://magiccards.info/scans/en/lw/45.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/444b5d72-ac5b-43d2-b5dc-0cc4bf63e43d.jpg?1562346125
 value=3.071
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Kemba, Kha Regent
-image=https://magiccards.info/scans/en/c14/75.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8e92cf6-8382-44b5-9f14-c91e572685b9.jpg?1599707777
 value=3.943
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Bloodhall Priest
-image=https://magiccards.info/scans/en/emn/181.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dde7ad2c-21fb-4f2c-96a6-59f8b0eafd19.jpg?1568004724
 image_updated=2016-09-05
 value=2.500
 rarity=R

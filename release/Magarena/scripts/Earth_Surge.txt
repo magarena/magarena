@@ -1,5 +1,5 @@
 name=Earth Surge
-image=https://magiccards.info/scans/en/gp/84.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/325503ee-ea62-459b-a58a-53fb3c1ef027.jpg?1593272432
 value=3.096
 rarity=R
 type=Enchantment

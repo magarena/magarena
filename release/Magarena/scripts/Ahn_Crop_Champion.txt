@@ -1,5 +1,5 @@
 name=Ahn-Crop Champion
-image=https://magiccards.info/scans/en/akh/194.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2ddda94a-4b2d-47b0-8d2c-3ad70a0d5584.jpg?1543676022
 value=2.500
 rarity=U
 type=Creature

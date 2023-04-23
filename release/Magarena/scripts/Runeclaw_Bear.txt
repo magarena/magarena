@@ -1,5 +1,5 @@
 name=Runeclaw Bear
-image=https://magiccards.info/scans/en/m15/197.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1995238-79cc-4381-9595-71ef11ea1e36.jpg?1562794697
 value=1.917
 rarity=C
 type=Creature

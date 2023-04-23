@@ -1,5 +1,5 @@
 name=Bulwark
-image=https://magiccards.info/scans/en/us/178.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2041b95-ec5b-4512-b012-f875ca686669.jpg?1562929180
 value=2.589
 rarity=R
 type=Enchantment

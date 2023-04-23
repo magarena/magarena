@@ -1,5 +1,5 @@
 name=Splatter Thug
-image=https://magiccards.info/scans/en/ima/146.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80656711-0e36-4bf6-9ba2-ef4fbdfa433a.jpg?1562850632
 image_updated=2017-04-12
 value=3.074
 rarity=C

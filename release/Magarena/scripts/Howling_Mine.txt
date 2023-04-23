@@ -1,5 +1,5 @@
 name=Howling Mine
-image=https://magiccards.info/scans/en/c16/257.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdae9939-03a4-4561-92cd-01f498d29a7a.jpg?1562420035
 image_updated=2017-08-17
 value=4.292
 rarity=R

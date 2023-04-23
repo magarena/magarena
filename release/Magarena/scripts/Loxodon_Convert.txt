@@ -1,5 +1,5 @@
 name=Loxodon Convert
-image=https://magiccards.info/scans/en/nph/14.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00c050c3-4f50-4bb6-8477-6737887ca10d.jpg?1562875113
 value=2.015
 rarity=C
 type=Creature

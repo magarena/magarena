@@ -1,5 +1,5 @@
 name=Goblin Boom Keg
-image=https://magiccards.info/scans/en/frf/159.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14343e23-83fb-4d2e-a272-20d7787ef2ca.jpg?1562822661
 value=2.500
 rarity=U
 type=Artifact

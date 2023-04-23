@@ -1,5 +1,5 @@
 name=Hussar Patrol
-image=https://magiccards.info/scans/en/rtr/169.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/faaf07b2-57b0-4437-a8d7-51ff8894a7db.jpg?1592754898
 image_updated=2016-12-10
 value=3.219
 rarity=C

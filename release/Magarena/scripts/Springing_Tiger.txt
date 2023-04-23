@@ -1,5 +1,5 @@
 name=Springing Tiger
-image=https://magiccards.info/scans/en/od/272.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04462629-fb03-40e8-84e6-4a66e4d5392b.jpg?1562895859
 value=3.656
 rarity=C
 type=Creature

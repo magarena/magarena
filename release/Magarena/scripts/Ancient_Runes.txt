@@ -1,5 +1,5 @@
 name=Ancient Runes
-image=https://magiccards.info/scans/en/tp/161.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e315c1c2-436e-48ff-9214-938697178393.jpg?1562057335
 value=3.500
 rarity=U
 type=Enchantment

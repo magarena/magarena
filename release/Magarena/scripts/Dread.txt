@@ -1,5 +1,5 @@
 name=Dread
-image=https://magiccards.info/scans/en/lw/107.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b608658-9150-439b-b0a0-4a994722b95c.jpg?1562359846
 value=4.246
 rarity=R
 type=Creature

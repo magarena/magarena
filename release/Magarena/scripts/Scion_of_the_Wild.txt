@@ -1,5 +1,5 @@
 name=Scion of the Wild
-image=https://magiccards.info/scans/en/mm2/160.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a8860f5-64ad-4e2d-bab9-b7d416e4ddb9.jpg?1562265271
 image_updated=2015-11-05
 value=4.105
 rarity=C

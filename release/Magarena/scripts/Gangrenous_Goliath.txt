@@ -1,5 +1,5 @@
 name=Gangrenous Goliath
-image=https://magiccards.info/scans/en/on/150.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69b58b6b-24cd-4440-b99c-d88d44b3c41c.jpg?1562919881
 value=3.180
 rarity=R
 type=Creature

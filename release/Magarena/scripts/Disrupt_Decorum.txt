@@ -1,5 +1,5 @@
 name=Disrupt Decorum
-image=https://magiccards.info/scans/en/c17/25.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1cfc692-f994-4975-acae-4440e9e5857c.jpg?1674141956
 image_updated=2017-10-03
 value=2.500
 rarity=R

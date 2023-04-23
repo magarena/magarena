@@ -1,5 +1,5 @@
 name=Darksteel Sentinel
-image=https://magiccards.info/scans/en/som/152.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9bd80ce-e36a-47ff-a009-17a05afce187.jpg?1562945378
 value=3.192
 rarity=U
 type=Artifact,Creature

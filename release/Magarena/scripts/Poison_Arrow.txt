@@ -1,5 +1,5 @@
 name=Poison Arrow
-image=https://magiccards.info/scans/en/p3k/80.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b7b5f34-c250-484e-9bae-94789b2a87fb.jpg?1562256571
 value=1.794
 rarity=U
 type=Sorcery

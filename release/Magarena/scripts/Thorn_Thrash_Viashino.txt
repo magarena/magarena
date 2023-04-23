@@ -1,5 +1,5 @@
 name=Thorn-Thrash Viashino
-image=https://magiccards.info/scans/en/pc2/52.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ade3218d-f429-47dc-b282-6413f1ffb4c9.jpg?1562927372
 value=2.455
 rarity=C
 type=Creature

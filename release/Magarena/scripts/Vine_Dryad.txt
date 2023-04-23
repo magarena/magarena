@@ -1,5 +1,5 @@
 name=Vine Dryad
-image=https://magiccards.info/scans/en/mm/284.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc9c9158-faed-42ae-9f6b-71dee49ff79f.jpg?1562384004
 value=4.287
 rarity=R
 type=Creature

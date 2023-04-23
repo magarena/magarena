@@ -1,5 +1,5 @@
 name=Wretched Anurid
-image=https://magiccards.info/scans/en/on/183.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aab525ad-1f62-4d9c-9b74-c7b0048da452.jpg?1562935315
 value=3.188
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Giant Warthog
-image=https://magiccards.info/scans/en/ju/118.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c402ef0e-51e7-4da6-a434-b99c5d435698.jpg?1562631879
 value=3.203
 rarity=C
 type=Creature

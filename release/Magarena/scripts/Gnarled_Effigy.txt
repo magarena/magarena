@@ -1,5 +1,5 @@
 name=Gnarled Effigy
-image=https://magiccards.info/scans/en/shm/251.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6aee954-2a04-425d-8d05-09dad58af656.jpg?1562837513
 value=2.096
 rarity=U
 type=Artifact

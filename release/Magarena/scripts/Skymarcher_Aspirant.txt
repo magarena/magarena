@@ -1,5 +1,5 @@
 name=Skymarcher Aspirant
-image=https://magiccards.info/scans/en/rix/21.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/9473190f-5e96-4cf7-a0fa-a77d916acc2e.jpg?1555039784
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Reanimate
-image=https://magiccards.info/scans/en/tp/45.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d27c6aaa-289e-451e-8fde-97a044c53fc4.jpg?1651951796
 image_updated=2017-01-06
 value=4.667
 rarity=U

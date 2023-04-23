@@ -1,5 +1,5 @@
 name=Grandmother Sengir
-image=https://magiccards.info/scans/en/hl/13.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b43b2370-fe1b-491b-9dd0-b49a30bb2b93.jpg?1562870453
 value=2.694
 rarity=R
 type=Legendary,Creature

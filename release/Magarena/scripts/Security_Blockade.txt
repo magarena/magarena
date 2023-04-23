@@ -1,5 +1,5 @@
 name=Security Blockade
-image=https://magiccards.info/scans/en/rtr/20.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6250b31-8592-48b2-a877-3637c9ee7d49.jpg?1562794711
 value=2.721
 rarity=U
 type=Enchantment

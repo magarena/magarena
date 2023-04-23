@@ -1,5 +1,5 @@
 name=Blood Rites
-image=https://magiccards.info/scans/en/chk/159.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89d77b63-eeee-4d8a-9622-b1ea36dc70de.jpg?1562924121
 value=2.346
 rarity=U
 type=Enchantment

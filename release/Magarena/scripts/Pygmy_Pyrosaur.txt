@@ -1,5 +1,5 @@
 name=Pygmy Pyrosaur
-image=https://magiccards.info/scans/en/7e/208.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/750d62f6-8fc4-4e61-b9d2-b85a4eb7cc61.jpg?1581708483
 image_updated=2017-01-03
 value=3.154
 rarity=C

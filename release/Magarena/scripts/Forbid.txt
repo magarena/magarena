@@ -1,5 +1,5 @@
 name=Forbid
-image=https://magiccards.info/scans/en/ex/35.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fc2a6c5-9904-47e0-adec-e9e6e79cd11d.jpg?1562428622
 value=4.425
 rarity=U
 type=Instant

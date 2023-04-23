@@ -1,5 +1,5 @@
 name=Balustrade Spy
-image=https://magiccards.info/scans/en/ima/80.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9b4ce37-f102-4f2b-9651-9d0a9d231d6d.jpg?1673147448
 image_updated=2017-04-12
 value=3.958
 rarity=C

@@ -1,5 +1,5 @@
 name=Pulse of the Grid
-image=https://magiccards.info/scans/en/ds/29.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6805341-fa4f-4d89-8003-b27280fadfbd.jpg?1562639131
 value=3.462
 rarity=R
 type=Instant

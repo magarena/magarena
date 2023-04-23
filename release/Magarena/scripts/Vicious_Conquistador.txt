@@ -1,5 +1,5 @@
 name=Vicious Conquistador
-image=https://magiccards.info/scans/en/xln/128.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a4b6ced-e8d3-47e9-bd27-3e0cb644afe4.jpg?1592652364
 value=2.500
 rarity=U
 type=Creature

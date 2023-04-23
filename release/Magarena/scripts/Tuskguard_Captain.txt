@@ -1,5 +1,5 @@
 name=Tuskguard Captain
-image=https://magiccards.info/scans/en/c16/173.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4a4eab4-a2e6-4cb0-b32a-700aac59fc40.jpg?1673148220
 image_updated=2017-08-17
 value=3.250
 rarity=U

@@ -1,5 +1,5 @@
 name=Hulking Ogre
-image=https://magiccards.info/scans/en/st/108.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7acfffab-0532-438d-978c-9fd986420ee6.jpg?1562874557
 value=2.466
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Cleansing Ray
-image=https://magiccards.info/scans/en/rix/4.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bf94184-e745-469a-9d55-af0ddacbb9cf.jpg?1555039666
 value=2.500
 rarity=C
 type=Sorcery

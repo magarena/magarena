@@ -1,5 +1,5 @@
 name=Cloud Djinn
-image=https://magiccards.info/scans/en/wl/36.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba6f25f7-9db6-4c55-bbe0-f373941fa0c3.jpg?1562932535
 value=2.500
 rarity=U
 type=Creature

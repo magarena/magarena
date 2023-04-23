@@ -1,5 +1,5 @@
 name=Thunderblust
-image=https://magiccards.info/scans/en/mm2/131.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/249ec37d-c4ed-4af6-8c30-bcec13c108fd.jpg?1562259748
 value=3.973
 rarity=R
 type=Creature

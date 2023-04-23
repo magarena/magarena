@@ -1,5 +1,5 @@
 name=Isperia, Supreme Judge
-image=https://magiccards.info/scans/en/rtr/171.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e3b82a7-ebef-4190-9f50-40b992ba89c9.jpg?1591321318
 value=3.883
 rarity=M
 type=Legendary,Creature

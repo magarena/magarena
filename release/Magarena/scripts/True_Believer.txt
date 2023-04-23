@@ -1,5 +1,5 @@
 name=True Believer
-image=https://magiccards.info/scans/en/10e/53.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85a9c5c4-47d1-4b87-8cbd-2212ee6c5887.jpg?1562550933
 value=4.321
 rarity=R
 type=Creature

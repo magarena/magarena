@@ -1,5 +1,5 @@
 name=Marsh Flitter
-image=https://magiccards.info/scans/en/mma/91.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64da2ec1-fca9-4488-8ac7-78d645a8bf62.jpg?1604193244
 value=3.367
 rarity=U
 type=Creature

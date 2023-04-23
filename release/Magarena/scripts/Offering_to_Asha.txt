@@ -1,5 +1,5 @@
 name=Offering to Asha
-image=https://magiccards.info/scans/en/arb/9.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/260fe443-ca03-42b1-bcee-86e5173c1aaf.jpg?1562640177
 value=2.986
 rarity=C
 type=Instant

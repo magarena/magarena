@@ -1,5 +1,5 @@
 name=Ornithopter
-image=https://magiccards.info/scans/en/aer/167.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddb96645-44d2-426c-90cb-3186297a8728.jpg?1576382362
 image_updated=2017-08-17
 value=3.438
 rarity=U

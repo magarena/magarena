@@ -1,5 +1,5 @@
 name=Sun Droplet
-image=https://magiccards.info/scans/en/mi/249.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/466e2a5d-f230-4e32-a92c-15df9d220966.jpg?1625979440
 image_updated=2016-01-09
 value=3.633
 rarity=U

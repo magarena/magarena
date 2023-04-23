@@ -1,5 +1,5 @@
 name=Exsanguinate
-image=https://magiccards.info/scans/en/som/61.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0878b541-a730-49db-b062-5a01656e269d.jpg?1562814332
 value=4.048
 rarity=U
 type=Sorcery

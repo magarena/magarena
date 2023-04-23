@@ -1,5 +1,5 @@
 name=Birthing Pod
-image=https://magiccards.info/scans/en/nph/104.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b768efa2-e56b-4a7e-ace8-d673f10e0714.jpg?1562880960
 value=3.801
 rarity=R
 type=Artifact

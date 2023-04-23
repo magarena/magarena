@@ -1,5 +1,5 @@
 name=Stronghold Taskmaster
-image=https://magiccards.info/scans/en/sh/22.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6171c210-01b5-45a9-9dd3-dbf96a33a750.jpg?1562596418
 value=2.597
 rarity=U
 type=Creature

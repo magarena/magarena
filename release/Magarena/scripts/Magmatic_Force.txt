@@ -1,5 +1,5 @@
 name=Magmatic Force
-image=https://magiccards.info/scans/en/cmd/128.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e98eb29b-af03-4a96-b84c-a0bd51f80f03.jpg?1562941873
 value=4.029
 rarity=R
 type=Creature

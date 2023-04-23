@@ -1,5 +1,5 @@
 name=Goblin Lookout
-image=https://magiccards.info/scans/en/le/101.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23bbe84a-8857-467a-a4a1-e57086cc9501.jpg?1562902159
 value=3.845
 rarity=C
 type=Creature

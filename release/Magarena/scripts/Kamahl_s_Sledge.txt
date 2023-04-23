@@ -1,5 +1,5 @@
 name=Kamahl's Sledge
-image=https://magiccards.info/scans/en/tr/102.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38c55518-7bdf-4a42-ae30-cd6525557a59.jpg?1562629270
 value=0.867
 rarity=C
 type=Sorcery

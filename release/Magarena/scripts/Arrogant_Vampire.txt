@@ -1,5 +1,5 @@
 name=Arrogant Vampire
-image=https://magiccards.info/scans/en/po/1.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7342875-d49b-4fa7-a2fb-8dfc5e3d6e4f.jpg?1562448307
 value=2.221
 rarity=U
 type=Creature

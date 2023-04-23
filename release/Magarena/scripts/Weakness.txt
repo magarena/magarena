@@ -1,5 +1,5 @@
 name=Weakness
-image=https://magiccards.info/scans/en/m10/121.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cffbac05-7e36-4c6b-a572-04706d5d2799.jpg?1562944525
 image_updated=2015-11-13
 value=3.167
 rarity=C

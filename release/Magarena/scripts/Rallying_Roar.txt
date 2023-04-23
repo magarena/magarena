@@ -1,5 +1,5 @@
 name=Rallying Roar
-image=https://magiccards.info/scans/en/xln/30.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d03a5efb-fde9-4bba-be80-d073eba2ad8d.jpg?1562564264
 value=2.500
 rarity=U
 type=Instant

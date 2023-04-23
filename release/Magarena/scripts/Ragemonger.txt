@@ -1,5 +1,5 @@
 name=Ragemonger
-image=https://magiccards.info/scans/en/bng/153.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1eb6eda2-e3df-440a-8900-8310f11db6e9.jpg?1593092810
 value=3.811
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sound the Call
-image=https://magiccards.info/scans/en/cs/123.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae586221-c13c-4f4e-83ae-9b1ab0aeae61.jpg?1593275486
 value=2.667
 rarity=C
 type=Sorcery

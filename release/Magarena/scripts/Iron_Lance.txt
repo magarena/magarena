@@ -1,5 +1,5 @@
 name=Iron Lance
-image=https://magiccards.info/scans/en/mm/300.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41f7d212-faf2-4a6f-a338-d9e5014b56d5.jpg?1562380407
 value=1.690
 rarity=U
 type=Artifact

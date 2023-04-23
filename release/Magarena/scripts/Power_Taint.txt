@@ -1,5 +1,5 @@
 name=Power Taint
-image=https://magiccards.info/scans/en/us/90.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13d0296c-c0f5-491e-9e61-be8f5af2e631.jpg?1562899183
 value=3.485
 rarity=C
 type=Enchantment

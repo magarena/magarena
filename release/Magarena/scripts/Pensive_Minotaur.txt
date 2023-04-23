@@ -1,5 +1,5 @@
 name=Pensive Minotaur
-image=https://magiccards.info/scans/en/jou/105.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/902b462a-a552-42d4-91f0-bd33cd9cb719.jpg?1593860935
 value=2.827
 rarity=C
 type=Creature

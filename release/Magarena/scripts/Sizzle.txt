@@ -1,5 +1,5 @@
 name=Sizzle
-image=https://magiccards.info/scans/en/8e/224.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfdfe2a9-1323-4f15-b2ce-d8dd404b914d.jpg?1587913602
 value=3.174
 rarity=C
 type=Sorcery

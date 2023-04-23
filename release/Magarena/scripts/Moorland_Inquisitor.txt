@@ -1,5 +1,5 @@
 name=Moorland Inquisitor
-image=https://magiccards.info/scans/en/avr/30.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d7b1446-7c9f-4b62-9877-e3d1060948aa.jpg?1592516154
 value=2.450
 rarity=C
 type=Creature

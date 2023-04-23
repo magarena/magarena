@@ -1,5 +1,5 @@
 name=Ravenous Baloth
-image=https://magiccards.info/scans/en/on/278.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f48df6c-8d5d-4d8a-b98a-793f6a56184d.jpg?1601079998
 value=4.000
 rarity=R
 type=Creature

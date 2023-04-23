@@ -1,5 +1,5 @@
 name=Sydri, Galvanic Genius
-image=https://magiccards.info/scans/en/c16/224.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7207c416-dc16-40ab-94a0-836ee0710e24.jpg?1562405248
 image_updated=2016-01-09
 value=3.830
 rarity=M

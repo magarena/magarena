@@ -1,5 +1,5 @@
 name=Gemhide Sliver
-image=https://magiccards.info/scans/en/ts/196.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/110887a5-cbfd-431f-9208-06acc4ed2602.jpg?1619398035
 value=4.398
 rarity=C
 type=Creature

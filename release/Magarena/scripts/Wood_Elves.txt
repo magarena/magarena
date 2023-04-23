@@ -1,5 +1,5 @@
 name=Wood Elves
-image=https://magiccards.info/scans/en/c14/226.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/527cf39d-29d1-4c19-9c49-ebf611ca15d5.jpg?1682209656
 image_updated=2016-02-29
 value=4.137
 rarity=C

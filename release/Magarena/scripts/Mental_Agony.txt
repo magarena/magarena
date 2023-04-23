@@ -1,5 +1,5 @@
 name=Mental Agony
-image=https://magiccards.info/scans/en/avr/114.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f8a1d51-aa7f-41fd-b97d-56bc48221615.jpg?1592708936
 value=2.288
 rarity=C
 type=Sorcery

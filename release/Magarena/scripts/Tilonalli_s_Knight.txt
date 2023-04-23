@@ -1,5 +1,5 @@
 name=Tilonalli's Knight
-image=https://magiccards.info/scans/en/xln/169.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b25c2f33-1707-4ff3-a22e-58f51936b733.jpg?1562562437
 value=2.500
 rarity=C
 type=Creature

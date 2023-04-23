@@ -1,5 +1,5 @@
 name=Efreet Weaponmaster
-image=https://magiccards.info/scans/en/ktk/175.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8986cb2e-76e0-41f3-8810-3d11c39a527a.jpg?1562789935
 value=3.000
 rarity=C
 type=Creature

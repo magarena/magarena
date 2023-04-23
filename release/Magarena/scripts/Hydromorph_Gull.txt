@@ -1,5 +1,5 @@
 name=Hydromorph Gull
-image=https://magiccards.info/scans/en/tr/40.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06b1c8fc-e09b-479b-ac15-f659acb2f50f.jpg?1562628481
 value=2.500
 rarity=U
 type=Creature

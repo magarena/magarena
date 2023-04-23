@@ -1,5 +1,5 @@
 name=Ravos, Soultender
-image=https://magiccards.info/scans/en/c16/39.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2725635-8f90-4d17-9568-51218ba663c1.jpg?1562425381
 image_updated=2016-12-28
 value=2.500
 rarity=M

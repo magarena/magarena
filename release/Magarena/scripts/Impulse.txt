@@ -1,5 +1,5 @@
 name=Impulse
-image=https://magiccards.info/scans/en/vi/34.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aec2b2c-0764-4869-814d-aad921122af9.jpg?1673306762
 image_updated=2016-12-13
 value=2.500
 rarity=C

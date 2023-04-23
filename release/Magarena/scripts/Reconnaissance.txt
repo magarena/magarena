@@ -1,5 +1,5 @@
 name=Reconnaissance
-image=https://magiccards.info/scans/en/ex/17.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a16012d8-703c-4385-8769-13e3caba3fc6.jpg?1562088333
 value=4.476
 rarity=U
 type=Enchantment

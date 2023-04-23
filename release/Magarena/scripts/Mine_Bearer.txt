@@ -1,5 +1,5 @@
 name=Mine Bearer
-image=https://magiccards.info/scans/en/pr/16.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8151510-2445-4244-b851-ab332b908170.jpg?1562926404
 value=3.548
 rarity=C
 type=Creature

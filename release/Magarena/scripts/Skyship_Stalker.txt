@@ -1,5 +1,5 @@
 name=Skyship Stalker
-image=https://magiccards.info/scans/en/kld/130.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ea1dbf2-f3fb-40c4-86df-cd2511d27088.jpg?1631587517
 image_updated=2016-10-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Bull Rush
-image=https://magiccards.info/scans/en/wwk/73.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ed55a4d-d99c-44ae-a5b9-fd9d1b8477f9.jpg?1562292654
 value=0.998
 rarity=C
 type=Instant

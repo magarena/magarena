@@ -1,5 +1,5 @@
 name=Urza's Factory
-image=https://magiccards.info/scans/en/ts/280.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d03f17f1-b0fd-4b84-82ea-085c2f87eeda.jpg?1619399610
 value=3.000
 rarity=U
 type=Land

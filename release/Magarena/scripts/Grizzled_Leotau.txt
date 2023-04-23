@@ -1,5 +1,5 @@
 name=Grizzled Leotau
-image=https://magiccards.info/scans/en/arb/69.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b388381-9e13-4ce7-b5b3-56a74cc23d93.jpg?1562640292
 value=3.195
 rarity=C
 type=Creature

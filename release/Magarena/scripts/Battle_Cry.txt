@@ -1,5 +1,5 @@
 name=Battle Cry
-image=https://magiccards.info/scans/en/ia/229.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c558a8c4-035c-464e-9ff8-c188c1bb619e.jpg?1587911495
 value=2.643
 rarity=U
 type=Instant

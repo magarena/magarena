@@ -1,5 +1,5 @@
 name=Shoreline Raider
-image=https://magiccards.info/scans/en/in/73.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d895b3b8-2acc-4c9f-8341-f651c1255b7c.jpg?1562938535
 value=2.653
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblin Shortcutter
-image=https://magiccards.info/scans/en/zen/128.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f70a98be-e7d9-4cb7-a7ed-de2bf593170d.jpg?1601081737
 value=3.444
 rarity=C
 type=Creature

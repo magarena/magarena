@@ -1,5 +1,5 @@
 name=Stratus Dancer
-image=https://magiccards.info/scans/en/dtk/80.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82fb8b0c-b86e-4915-b72d-9a6b5c1368c7.jpg?1568004073
 value=2.500
 rarity=R
 type=Creature

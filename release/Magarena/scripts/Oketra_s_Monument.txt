@@ -1,5 +1,5 @@
 name=Oketra's Monument
-image=https://magiccards.info/scans/en/akh/233.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7f1d5a6-bdf2-4b12-b11e-70f58b59dd80.jpg?1676318142
 value=2.500
 rarity=U
 type=Legendary,Artifact

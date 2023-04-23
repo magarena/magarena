@@ -1,5 +1,5 @@
 name=Ordruun Commando
-image=https://magiccards.info/scans/en/rav/137.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa726c0e-3a7e-4299-8842-4ce1f9f26567.jpg?1598915788
 value=1.961
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spike Rogue
-image=https://magiccards.info/scans/en/ex/127.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0d9b671-344b-460d-8f65-d65129db91c3.jpg?1562089260
 value=3.203
 rarity=U
 type=Creature

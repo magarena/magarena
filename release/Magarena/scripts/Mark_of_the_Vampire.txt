@@ -1,5 +1,5 @@
 name=Mark of the Vampire
-image=https://magiccards.info/scans/en/xln/113.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d908bf00-86ba-4911-b15b-1af2a79dff85.jpg?1600700835
 image_updated=2017-10-30
 value=3.300
 rarity=C

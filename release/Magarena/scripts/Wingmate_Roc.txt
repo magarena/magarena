@@ -1,5 +1,5 @@
 name=Wingmate Roc
-image=https://magiccards.info/scans/en/ktk/31.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16930385-796e-4e11-b439-d0dbda63d72d.jpg?1568003938
 value=4.167
 rarity=M
 type=Creature

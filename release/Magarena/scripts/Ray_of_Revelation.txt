@@ -1,5 +1,5 @@
 name=Ray of Revelation
-image=https://magiccards.info/scans/en/dka/17.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7e2c5a4-cf92-46bd-9033-8036436488cb.jpg?1562946496
 value=4.114
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Madblind Mountain
-image=https://magiccards.info/scans/en/shm/274.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/513adae2-6436-4284-9f23-87ef627e81b7.jpg?1562830130
 value=1.926
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Elephant Resurgence
-image=https://magiccards.info/scans/en/pr/113.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22147f72-7ff8-40c4-9bdd-df41dce17dad.jpg?1562901295
 value=3.438
 rarity=R
 type=Sorcery

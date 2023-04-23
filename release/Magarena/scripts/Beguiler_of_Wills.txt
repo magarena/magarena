@@ -1,5 +1,5 @@
 name=Beguiler of Wills
-image=https://magiccards.info/scans/en/dka/28.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e21ae024-d565-48a1-8004-5aa320a5d24d.jpg?1562948843
 value=3.580
 rarity=M
 type=Creature

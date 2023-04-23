@@ -1,5 +1,5 @@
 name=Destructive Tampering
-image=https://magiccards.info/scans/en/aer/78.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfe6a3a9-8d62-47c4-a78b-9baa9133a540.jpg?1594736589
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Growing Ranks
-image=https://magiccards.info/scans/en/rtr/217.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ea45414-4047-4921-b77d-dfcba2fe7694.jpg?1568004758
 value=3.818
 rarity=R
 type=Enchantment

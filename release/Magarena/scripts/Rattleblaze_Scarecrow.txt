@@ -1,5 +1,5 @@
 name=Rattleblaze Scarecrow
-image=https://magiccards.info/scans/en/shm/259.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b46425f-516c-42f5-8df1-79af17d02a4a.jpg?1562829782
 value=2.364
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Scorch the Fields
-image=https://magiccards.info/scans/en/dka/103.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05c4338d-e5c0-46b4-ab16-1f9aa97b4026.jpg?1562896337
 value=1.090
 removal=3
 rarity=C

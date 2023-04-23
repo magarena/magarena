@@ -1,5 +1,5 @@
 name=Maulfist Revolutionary
-image=https://magiccards.info/scans/en/aer/115.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a83dcdba-419b-41e1-8c9d-8bca6fe2752b.jpg?1576382022
 value=2.500
 rarity=U
 type=Creature

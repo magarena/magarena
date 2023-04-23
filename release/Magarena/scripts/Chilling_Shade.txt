@@ -1,5 +1,5 @@
 name=Chilling Shade
-image=https://magiccards.info/scans/en/cs/53.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d050c8b9-2b5a-4025-9886-73c418f4e22f.jpg?1593275055
 value=3.839
 rarity=C
 type=Snow,Creature

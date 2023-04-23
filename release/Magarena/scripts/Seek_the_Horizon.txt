@@ -1,5 +1,5 @@
 name=Seek the Horizon
-image=https://magiccards.info/scans/en/ktk/150.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6244cbd8-8cc4-44a7-b11d-2ab159e92c02.jpg?1562229677
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Loxodon Wayfarer
-image=https://magiccards.info/scans/en/som/15.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/356c5e6a-c0bd-43f7-bc84-a6ae8718a7a2.jpg?1562816333
 value=2.377
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Oath of Ajani
-image=https://magiccards.info/scans/en/aer/131.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/968c7d5a-b037-4ff7-b6d2-df00adf5691b.jpg?1576382123
 value=2.500
 rarity=R
 type=Legendary,Enchantment

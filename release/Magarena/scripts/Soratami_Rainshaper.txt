@@ -1,5 +1,5 @@
 name=Soratami Rainshaper
-image=https://magiccards.info/scans/en/chk/89.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b942ee46-c78b-414a-9de7-4376370532fa.jpg?1562763746
 value=2.043
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Trade Routes
-image=https://magiccards.info/scans/en/9e/108.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57e5d7c9-36f7-4312-ada0-b6c2757487c8.jpg?1562735601
 value=4.375
 rarity=R
 type=Enchantment

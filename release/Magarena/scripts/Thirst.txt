@@ -1,5 +1,5 @@
 name=Thirst
-image=https://magiccards.info/scans/en/mr/99.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12630ac5-a6c4-4852-abd9-5a0bc71bbf83.jpg?1562717850
 value=3.045
 rarity=C
 type=Enchantment

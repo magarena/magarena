@@ -1,5 +1,5 @@
 name=Kami of the Waning Moon
-image=https://magiccards.info/scans/en/chk/120.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23a395a6-b1f5-4b7f-87cc-c77b4d497e9a.jpg?1587857631
 value=2.086
 rarity=C
 type=Creature

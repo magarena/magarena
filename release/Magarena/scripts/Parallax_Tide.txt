@@ -1,5 +1,5 @@
 name=Parallax Tide
-image=https://magiccards.info/scans/en/ne/37.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fe593eb-df3c-43e5-97a6-418f91e87cb3.jpg?1562630755
 value=4.043
 rarity=R
 type=Enchantment

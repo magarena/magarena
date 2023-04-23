@@ -1,5 +1,5 @@
 name=Sight of the Scalelords
-image=https://magiccards.info/scans/en/dtk/207.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5921758-4e21-4d34-8cf7-b0205d4b0912.jpg?1591605220
 value=2.500
 rarity=U
 type=Enchantment

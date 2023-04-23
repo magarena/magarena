@@ -1,5 +1,5 @@
 name=Forsaken Sanctuary
-image=https://magiccards.info/scans/en/m19/250.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3e0b983-62e7-43fb-b5d5-402ea60a64d7.jpg?1592711483
 image_updated=2018-08-07
 value=2.500
 rarity=C

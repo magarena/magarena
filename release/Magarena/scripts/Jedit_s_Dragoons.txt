@@ -1,5 +1,5 @@
 name=Jedit's Dragoons
-image=https://magiccards.info/scans/en/ts/25.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f190c65-f939-4453-95d7-9acb36cf97c2.jpg?1581708339
 image_updated=2016-12-20
 value=1.543
 rarity=C

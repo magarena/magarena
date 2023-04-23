@@ -1,5 +1,5 @@
 name=Minotaur Illusionist
-image=https://magiccards.info/scans/en/ap/111.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8a49d29-6d01-4b1d-80c8-9e5378a76878.jpg?1562946638
 value=3.184
 rarity=U
 type=Creature

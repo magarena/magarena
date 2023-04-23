@@ -1,5 +1,5 @@
 name=Carnage Altar
-image=https://magiccards.info/scans/en/zen/198.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c08486d3-3d94-49c7-b8c9-61eb8a3e6428.jpg?1562935729
 value=3.083
 rarity=U
 type=Artifact

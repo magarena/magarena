@@ -1,5 +1,5 @@
 name=Primal Druid
-image=https://magiccards.info/scans/en/emn/167.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e928f694-c53b-46c5-8390-fa24b53f559c.jpg?1576384851
 image_updated=2016-09-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Shadowborn Demon
-image=https://magiccards.info/scans/en/m14/115.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3884c05b-c10e-4f1d-a8bd-8b5118657972.jpg?1562828005
 value=3.651
 rarity=M
 type=Creature

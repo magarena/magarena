@@ -1,5 +1,5 @@
 name=Scourge Wolf
-image=https://magiccards.info/scans/en/soi/179.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/072f47ad-3055-4bd2-b7fd-cfbd22720d58.jpg?1576384889
 value=2.500
 rarity=R
 type=Creature

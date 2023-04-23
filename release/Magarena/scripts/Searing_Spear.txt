@@ -1,5 +1,5 @@
 name=Searing Spear
-image=https://magiccards.info/scans/en/m13/147.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44c5f884-d071-40c2-bb2c-925dc2197ea3.jpg?1592765729
 value=3.282
 removal=3
 rarity=C

@@ -1,5 +1,5 @@
 name=Towering Thunderfist
-image=https://magiccards.info/scans/en/gtc/109.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d68e9280-cb1a-48e1-a91e-217e101f19c5.jpg?1561848533
 value=2.775
 rarity=C
 type=Creature

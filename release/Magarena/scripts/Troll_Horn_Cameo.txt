@@ -1,5 +1,5 @@
 name=Troll-Horn Cameo
-image=https://magiccards.info/scans/en/in/316.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42b1ca6c-6ca0-4b02-885a-58cee3fa2aa8.jpg?1562908389
 value=2.571
 rarity=U
 type=Artifact

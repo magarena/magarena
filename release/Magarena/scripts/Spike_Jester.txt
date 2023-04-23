@@ -1,5 +1,5 @@
 name=Spike Jester
-image=https://magiccards.info/scans/en/mm3/188.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f82ff29-2b2c-4e4f-a6ac-e307e2921da0.jpg?1593814618
 image_updated=2017-08-08
 value=3.796
 rarity=C

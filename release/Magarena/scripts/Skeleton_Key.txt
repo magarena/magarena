@@ -1,5 +1,5 @@
 name=Skeleton Key
-image=https://magiccards.info/scans/en/soi/263.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/3168317b-b166-483e-9d9a-20cdfcdc255c.jpg?1576385471
 value=2.500
 rarity=U
 type=Artifact

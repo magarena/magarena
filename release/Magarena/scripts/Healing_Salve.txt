@@ -1,5 +1,5 @@
 name=Healing Salve
-image=https://magiccards.info/scans/en/8e/22.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0ff82aba-9022-4eff-a6dc-67365360d646.jpg?1561771079
 value=2.500
 rarity=C
 type=Instant

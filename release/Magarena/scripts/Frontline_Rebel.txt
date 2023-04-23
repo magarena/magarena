@@ -1,5 +1,5 @@
 name=Frontline Rebel
-image=https://magiccards.info/scans/en/aer/82.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b742738a-2663-474d-b75a-28f1f67dc335.jpg?1576381795
 value=2.500
 rarity=C
 type=Creature

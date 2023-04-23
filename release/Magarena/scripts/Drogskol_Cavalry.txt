@@ -1,5 +1,5 @@
 name=Drogskol Cavalry
-image=https://magiccards.info/scans/en/soi/15.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46c262c8-9daa-4ed8-b519-11b5895de89f.jpg?1576383739
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Beast Attack
-image=https://magiccards.info/scans/en/od/230.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/011f805f-3ebb-4748-a5de-8a10b5f47dcd.jpg?1592761768
 image_updated=2016-11-20
 value=3.961
 rarity=U

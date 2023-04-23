@@ -1,5 +1,5 @@
 name=Altar Golem
-image=https://magiccards.info/scans/en/eve/166.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fed81c72-743d-4d2a-97a6-22f5651e15d5.jpg?1562948984
 value=2.694
 rarity=R
 type=Artifact,Creature

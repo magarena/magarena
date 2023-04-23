@@ -1,5 +1,5 @@
 name=Retract
-image=https://magiccards.info/scans/en/ds/32.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e09a443-0a00-458a-b351-8cb188e9218c.jpg?1562636784
 value=2.878
 rarity=R
 type=Instant

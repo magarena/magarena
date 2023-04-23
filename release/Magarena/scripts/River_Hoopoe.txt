@@ -1,5 +1,5 @@
 name=River Hoopoe
-image=https://magiccards.info/scans/en/hou/143.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2aff9aa6-bc5e-476d-9dd1-1318ed521b6f.jpg?1673149084
 value=2.500
 rarity=U
 type=Creature

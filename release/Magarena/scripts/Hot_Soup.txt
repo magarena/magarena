@@ -1,5 +1,5 @@
 name=Hot Soup
-image=https://magiccards.info/scans/en/m15/219.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc46f4b0-1992-4060-8f21-643698d476f7.jpg?1562794396
 value=3.286
 rarity=U
 type=Artifact

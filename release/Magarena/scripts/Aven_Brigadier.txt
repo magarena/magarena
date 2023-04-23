@@ -1,5 +1,5 @@
 name=Aven Brigadier
-image=https://magiccards.info/scans/en/on/7.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da24ef56-8d54-4146-97e9-4abded807545.jpg?1562946977
 value=3.942
 rarity=R
 type=Creature

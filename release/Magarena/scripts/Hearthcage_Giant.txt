@@ -1,5 +1,5 @@
 name=Hearthcage Giant
-image=https://magiccards.info/scans/en/lw/174.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb0d4d3f-d3ad-4c70-b9af-9bfcdd9efd1f.jpg?1562375435
 value=3.081
 rarity=U
 type=Creature

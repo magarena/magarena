@@ -1,5 +1,5 @@
 name=Heavy Arbalest
-image=https://magiccards.info/scans/en/a25/225.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/813fae24-ff38-45e8-8ab9-d539d4494435.jpg?1562437533
 image_updated=2018-04-27
 value=2.369
 rarity=U

@@ -1,5 +1,5 @@
 name=Undergrowth
-image=https://magiccards.info/scans/en/ai/88.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9ade0829-8b90-4ed2-99f3-dd748e7706b8.jpg?1562769673
 value=4.421
 rarity=C
 type=Instant

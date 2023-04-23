@@ -1,5 +1,5 @@
 name=Notorious Assassin
-image=https://magiccards.info/scans/en/mm/150.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/239e48d8-e2ba-4e25-88ef-301420c796b4.jpg?1562379453
 value=3.081
 rarity=R
 type=Creature

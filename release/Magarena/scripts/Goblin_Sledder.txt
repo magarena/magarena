@@ -1,5 +1,5 @@
 name=Goblin Sledder
-image=https://magiccards.info/scans/en/on/209.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12af10e9-19b7-4177-b556-a446f2788da7.jpg?1562898747
 image_updated=2016-12-04
 value=3.948
 rarity=C

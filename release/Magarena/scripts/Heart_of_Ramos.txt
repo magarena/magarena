@@ -1,5 +1,5 @@
 name=Heart of Ramos
-image=https://magiccards.info/scans/en/mm/296.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0046226-7563-4345-aa4b-a2c732c2780a.jpg?1562382084
 value=3.280
 rarity=R
 type=Artifact

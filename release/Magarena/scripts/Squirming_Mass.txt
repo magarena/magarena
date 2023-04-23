@@ -1,5 +1,5 @@
 name=Squirming Mass
-image=https://magiccards.info/scans/en/ud/73.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e47793a3-9a98-4733-8d6a-2fb1a67b15c9.jpg?1562445227
 value=2.258
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Seal of Removal
-image=https://magiccards.info/scans/en/ne/42.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6dfc7060-e374-486f-8029-d3fdfe4b61e7.jpg?1626100248
 value=4.167
 rarity=C
 type=Enchantment

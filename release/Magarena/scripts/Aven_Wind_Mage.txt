@@ -1,5 +1,5 @@
 name=Aven Wind Mage
-image=https://magiccards.info/scans/en/m19/45.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28911e7b-0435-4393-a651-dc6eb53c7d98.jpg?1576267217
 value=2.500
 rarity=C
 type=Creature

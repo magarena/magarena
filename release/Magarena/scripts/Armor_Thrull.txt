@@ -1,5 +1,5 @@
 name=Armor Thrull
-image=https://magiccards.info/scans/en/fe/1.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcd8c672-85f7-4bec-9297-7d253419eaa9.jpg?1562870982
 value=3.065
 rarity=C
 type=Creature

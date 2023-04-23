@@ -1,5 +1,5 @@
 name=Vedalken Archmage
-image=https://magiccards.info/scans/en/mi/55.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/508b3cb7-b434-4524-8ef0-7db7f7f22edd.jpg?1600714104
 value=4.255
 rarity=R
 type=Creature

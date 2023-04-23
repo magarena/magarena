@@ -1,5 +1,5 @@
 name=Scoria Wurm
-image=https://magiccards.info/scans/en/10e/227.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/406f7fef-00f0-4ca5-ada4-c4a760e68467.jpg?1562546728
 value=2.280
 rarity=R
 type=Creature

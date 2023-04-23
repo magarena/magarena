@@ -1,5 +1,5 @@
 name=Scion of Darkness
-image=https://magiccards.info/scans/en/le/79.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/416845ec-7efd-464a-a0cb-7e9170ccdd38.jpg?1673147604
 image_updated=2017-01-07
 value=4.090
 rarity=R

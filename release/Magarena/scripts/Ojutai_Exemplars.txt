@@ -1,5 +1,5 @@
 name=Ojutai Exemplars
-image=https://magiccards.info/scans/en/dtk/27.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1205482-2f9d-463e-893f-18998aaf09c6.jpg?1562793397
 value=2.500
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Warped Physique
-image=https://magiccards.info/scans/en/dgm/117.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/134802b2-7c5c-4eda-a879-b29bc06faaed.jpg?1562898703
 value=3.513
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Desert Cerodon
-image=https://magiccards.info/scans/en/akh/128.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2047c2e5-8b3b-4c6b-91cf-3484f21e52f0.jpg?1543675549
 value=2.500
 rarity=C
 type=Creature

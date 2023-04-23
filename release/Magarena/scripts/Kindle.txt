@@ -1,5 +1,5 @@
 name=Kindle
-image=https://magiccards.info/scans/en/a25/140.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f687518f-73ff-4813-a56f-5b5cc4f36e7a.jpg?1562443087
 image_updated=2018-04-27
 value=3.500
 rarity=C

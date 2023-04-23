@@ -1,5 +1,5 @@
 name=Knucklebone Witch
-image=https://magiccards.info/scans/en/lw/120.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d66b355-9aff-4cce-ae4a-42b233475dcf.jpg?1562354777
 value=3.708
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Sentinel Totem
-image=https://magiccards.info/scans/en/xln/245.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d8097eb-518a-4b8e-8d6a-a139d4ddcc8f.jpg?1562550594
 value=2.500
 rarity=U
 type=Artifact

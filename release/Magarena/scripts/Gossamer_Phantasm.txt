@@ -1,5 +1,5 @@
 name=Gossamer Phantasm
-image=https://magiccards.info/scans/en/pc/55.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf05ed80-8abf-4c2c-97d7-a96961c35f35.jpg?1619394252
 value=2.398
 rarity=C
 type=Creature

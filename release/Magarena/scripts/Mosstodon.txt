@@ -1,5 +1,5 @@
 name=Mosstodon
-image=https://magiccards.info/scans/en/ala/139.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05afd921-ef3b-40fe-a1a8-582ee94ed3f0.jpg?1562700764
 value=3.087
 rarity=C
 type=Creature

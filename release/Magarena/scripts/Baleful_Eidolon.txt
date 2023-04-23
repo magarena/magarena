@@ -1,5 +1,5 @@
 name=Baleful Eidolon
-image=https://magiccards.info/scans/en/ths/78.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/853a89c6-63f9-4b12-8a5b-2c382e22b226.jpg?1562820831
 value=3.047
 rarity=C
 type=Enchantment,Creature

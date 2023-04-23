@@ -1,5 +1,5 @@
 name=Shinen of Fear's Chill
-image=https://magiccards.info/scans/en/sok/88.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/762499b4-4b4f-456e-8a03-2de300b2db5e.jpg?1562494641
 value=0.982
 rarity=C
 type=Creature

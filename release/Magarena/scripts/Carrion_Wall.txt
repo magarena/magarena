@@ -1,5 +1,5 @@
 name=Carrion Wall
-image=https://magiccards.info/scans/en/8e/121.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77ea9d0e-9188-4447-a9c9-8ed209121b43.jpg?1562919029
 value=3.242
 rarity=U
 type=Creature

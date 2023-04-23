@@ -1,5 +1,5 @@
 name=Avarax
-image=https://magiccards.info/scans/en/ema/117.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/421ee1c4-a105-41bf-83e9-edf3c49d057c.jpg?1580014447
 value=3.111
 rarity=C
 type=Creature

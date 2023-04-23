@@ -1,5 +1,5 @@
 name=Skeletal Wurm
-image=https://magiccards.info/scans/en/roe/127.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2feedcf2-c443-4363-80cf-a90579a64342.jpg?1562702512
 value=3.494
 rarity=U
 type=Creature

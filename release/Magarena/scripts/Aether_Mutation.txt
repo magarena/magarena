@@ -1,5 +1,5 @@
 name=Aether Mutation
-image=https://magiccards.info/scans/en/ap/91.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5386a61c-4928-4bd1-babe-5b089ab8b2d9.jpg?1562911996
 image_updated=2016-09-27
 value=3.500
 rarity=U

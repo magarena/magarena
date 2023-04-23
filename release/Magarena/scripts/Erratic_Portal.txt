@@ -1,5 +1,5 @@
 name=Erratic Portal
-image=https://magiccards.info/scans/en/ex/132.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6a72bdb-102b-40a6-82ff-caa4dbfe1175.jpg?1562431750
 value=4.212
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Miracle Worker
-image=https://magiccards.info/scans/en/dk/86.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35d29bda-096c-44d4-b45e-c2c507f8efbe.jpg?1587910671
 value=2.847
 rarity=C
 type=Creature

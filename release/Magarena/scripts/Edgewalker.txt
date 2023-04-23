@@ -1,5 +1,5 @@
 name=Edgewalker
-image=https://magiccards.info/scans/en/sc/137.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8b477c2-2cd5-41f2-8754-d4d5000df58d.jpg?1562534693
 value=4.213
 rarity=U
 type=Creature

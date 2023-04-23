@@ -1,5 +1,5 @@
 name=Thoughtflare
-image=https://magiccards.info/scans/en/rtr/203.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d90514aa-e356-4502-9e0e-76ab7644a07a.jpg?1562793976
 value=3.008
 rarity=U
 type=Instant

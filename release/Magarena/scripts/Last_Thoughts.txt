@@ -1,5 +1,5 @@
 name=Last Thoughts
-image=https://magiccards.info/scans/en/gtc/40.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6033d07-124c-4001-81e1-c6eb99e07fdd.jpg?1561845434
 value=2.585
 rarity=C
 type=Sorcery

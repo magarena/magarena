@@ -1,5 +1,5 @@
 name=Decimator of the Provinces
-image=https://magiccards.info/scans/en/emn/2.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/587cb384-db24-4e3d-a338-230e50305d31.jpg?1576383703
 image_updated=2016-09-05
 value=2.500
 rarity=M

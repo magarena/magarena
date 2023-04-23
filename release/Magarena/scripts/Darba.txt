@@ -1,5 +1,5 @@
 name=Darba
-image=https://magiccards.info/scans/en/pr/111.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d82636dc-4b3e-44a8-bc72-dab1275dfb6d.jpg?1562935433
 value=2.742
 rarity=U
 type=Creature

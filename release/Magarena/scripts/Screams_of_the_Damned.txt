@@ -1,5 +1,5 @@
 name=Screams of the Damned
-image=https://magiccards.info/scans/en/od/160.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66cc53cf-13eb-4028-944d-a670ad30dbca.jpg?1562913991
 value=1.500
 rarity=U
 type=Enchantment

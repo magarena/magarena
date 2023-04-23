@@ -1,5 +1,5 @@
 name=Zebra Unicorn
-image=https://magiccards.info/scans/en/mr/350.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a663ee9d-78f1-4c89-af9e-c788e165fa91.jpg?1562720961
 value=3.277
 rarity=U
 type=Creature

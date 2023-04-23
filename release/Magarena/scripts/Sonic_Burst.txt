@@ -1,5 +1,5 @@
 name=Sonic Burst
-image=https://magiccards.info/scans/en/ex/103.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05530d5a-dcb6-403e-9e35-224c7b5cf615.jpg?1562086889
 value=2.533
 rarity=C
 type=Instant

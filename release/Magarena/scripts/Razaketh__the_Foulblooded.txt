@@ -1,5 +1,5 @@
 name=Razaketh, the Foulblooded
-image=https://magiccards.info/scans/en/hou/73.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e14adff9-33cc-467e-b782-068854c5e7b7.jpg?1562817745
 value=2.500
 rarity=M
 type=Legendary,Creature

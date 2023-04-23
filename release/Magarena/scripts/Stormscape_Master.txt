@@ -1,5 +1,5 @@
 name=Stormscape Master
-image=https://magiccards.info/scans/en/in/76.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b704165-4587-48f1-8830-c5a07ec666cc.jpg?1562926376
 value=3.789
 rarity=R
 type=Creature

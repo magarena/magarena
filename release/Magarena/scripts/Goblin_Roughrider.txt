@@ -1,5 +1,5 @@
 name=Goblin Roughrider
-image=https://magiccards.info/scans/en/m15/146.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9097ec4a-6c0e-4c27-8910-29ac47612031.jpg?1562790880
 value=2.000
 rarity=C
 type=Creature

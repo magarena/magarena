@@ -1,5 +1,5 @@
 name=Stomper Cub
-image=https://magiccards.info/scans/en/roe/210.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89be64a8-dd78-48c3-bb47-4f2a5ad9ec10.jpg?1562706034
 value=2.698
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mausoleum Harpy
-image=https://magiccards.info/scans/en/rix/78.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54b40f3c-d75e-483f-b978-8b3bf30cc7ce.jpg?1555040265
 value=2.500
 rarity=U
 type=Creature

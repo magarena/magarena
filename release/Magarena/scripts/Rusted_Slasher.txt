@@ -1,5 +1,5 @@
 name=Rusted Slasher
-image=https://magiccards.info/scans/en/mbs/128.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2228ee5-507a-46ba-82ae-72ba3088a568.jpg?1562615859
 value=2.115
 rarity=C
 type=Artifact,Creature

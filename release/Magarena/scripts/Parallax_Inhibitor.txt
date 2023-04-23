@@ -1,5 +1,5 @@
 name=Parallax Inhibitor
-image=https://magiccards.info/scans/en/ne/134.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f758617c-f0e4-43d5-8fb4-e33eb2c5b99f.jpg?1562632833
 value=2.548
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Lair Delve
-image=https://magiccards.info/scans/en/avr/184.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/604948d8-6224-45ca-9ebb-d716644bbfd0.jpg?1592709385
 value=1.743
 rarity=C
 type=Sorcery

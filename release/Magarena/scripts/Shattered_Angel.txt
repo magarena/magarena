@@ -1,5 +1,5 @@
 name=Shattered Angel
-image=https://magiccards.info/scans/en/cmd/31.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58e4fb9b-76bc-4daf-b0a3-4bf62757902d.jpg?1682208607
 value=2.911
 rarity=U
 type=Creature

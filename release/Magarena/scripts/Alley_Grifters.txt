@@ -1,5 +1,5 @@
 name=Alley Grifters
-image=https://magiccards.info/scans/en/mm/115.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfb648e3-f5ad-4b33-afa3-d4cda0d369a1.jpg?1562383036
 value=3.175
 rarity=C
 type=Creature

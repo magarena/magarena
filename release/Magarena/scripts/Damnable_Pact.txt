@@ -1,5 +1,5 @@
 name=Damnable Pact
-image=https://magiccards.info/scans/en/dtk/93.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17fa6dc2-5a2e-4758-9ca4-e020eb032d74.jpg?1673484130
 value=2.500
 rarity=R
 type=Sorcery

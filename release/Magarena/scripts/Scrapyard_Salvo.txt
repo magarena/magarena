@@ -1,5 +1,5 @@
 name=Scrapyard Salvo
-image=https://magiccards.info/scans/en/nph/94.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a4874eb-635b-47f0-bbee-6bd8b26e2f10.jpg?1562876726
 value=2.635
 rarity=C
 type=Sorcery

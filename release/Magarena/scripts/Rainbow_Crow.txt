@@ -1,5 +1,5 @@
 name=Rainbow Crow
-image=https://magiccards.info/scans/en/in/69.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e622ad2-473f-489e-b4cf-bbdcc44d0cde.jpg?1562920499
 value=2.583
 rarity=U
 type=Creature

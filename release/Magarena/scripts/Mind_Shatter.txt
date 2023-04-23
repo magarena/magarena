@@ -1,5 +1,5 @@
 name=Mind Shatter
-image=https://magiccards.info/scans/en/mm3/77.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28c44782-a12f-4ecc-a6e8-d569e2942a9a.jpg?1593813333
 image_updated=2017-08-08
 value=3.731
 rarity=R

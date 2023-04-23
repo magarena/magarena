@@ -1,5 +1,5 @@
 name=Armor Sliver
-image=https://magiccards.info/scans/en/tp/216.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fc72398-e594-4849-9dea-fc0eed82f26a.jpg?1602610265
 value=2.462
 rarity=U
 type=Creature

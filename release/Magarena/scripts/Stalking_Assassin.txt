@@ -1,5 +1,5 @@
 name=Stalking Assassin
-image=https://magiccards.info/scans/en/in/277.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff8cc71f-3070-497f-908f-35aa13a8a857.jpg?1562946631
 value=1.873
 rarity=R
 type=Creature

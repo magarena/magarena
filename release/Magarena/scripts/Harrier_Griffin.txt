@@ -1,5 +1,5 @@
 name=Harrier Griffin
-image=https://magiccards.info/scans/en/gp/9.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2781696e-e70c-4c96-b3aa-75be51cdc68e.jpg?1593271871
 value=2.750
 rarity=U
 type=Creature

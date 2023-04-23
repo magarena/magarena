@@ -1,5 +1,5 @@
 name=Hover Barrier
-image=https://magiccards.info/scans/en/rtr/40.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/884afdb3-0d5f-45a1-b57e-6c3760aa0031.jpg?1562789441
 value=3.028
 rarity=U
 type=Creature

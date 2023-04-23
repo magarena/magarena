@@ -1,5 +1,5 @@
 name=Sleeping Potion
-image=https://magiccards.info/scans/en/ps/34.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f79f4b2-71cd-4f78-a161-d75b162c745e.jpg?1562918450
 value=3.188
 rarity=C
 type=Enchantment

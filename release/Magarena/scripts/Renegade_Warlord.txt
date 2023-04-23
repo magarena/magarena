@@ -1,5 +1,5 @@
 name=Renegade Warlord
-image=https://magiccards.info/scans/en/tp/197.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f9db6c9-b84d-43de-88b1-fe60ba8dcfd4.jpg?1562430314
 value=2.500
 rarity=U
 type=Creature

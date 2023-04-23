@@ -1,5 +1,5 @@
 name=Dreamwinder
-image=https://magiccards.info/scans/en/od/83.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ae3a000-478c-4185-a8c0-82f29942497b.jpg?1562902942
 value=1.720
 rarity=C
 type=Creature

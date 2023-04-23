@@ -1,5 +1,5 @@
 name=Corrupt Court Official
-image=https://magiccards.info/scans/en/p3k/71.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/505c6215-4006-4c4f-897a-be051cb73fa7.jpg?1664410765
 value=3.621
 rarity=U
 type=Creature

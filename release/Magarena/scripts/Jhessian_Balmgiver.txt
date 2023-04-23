@@ -1,5 +1,5 @@
 name=Jhessian Balmgiver
-image=https://magiccards.info/scans/en/cfx/112.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e638e38-15b9-4081-8340-985d4646e3d7.jpg?1562801264
 value=3.118
 rarity=U
 type=Creature

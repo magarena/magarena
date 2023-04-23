@@ -1,5 +1,5 @@
 name=Skirk Outrider
-image=https://magiccards.info/scans/en/le/114.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/416de0f4-1540-4286-a1ac-4f57301c54e9.jpg?1562908122
 value=2.304
 rarity=C
 type=Creature

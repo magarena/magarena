@@ -1,5 +1,5 @@
 name=Desert Drake
-image=https://magiccards.info/scans/en/po/127.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24673b35-aed2-40c0-a4ae-93bc4d392562.jpg?1562446137
 value=2.129
 rarity=U
 type=Creature

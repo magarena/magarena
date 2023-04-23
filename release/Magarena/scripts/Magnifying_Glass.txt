@@ -1,5 +1,5 @@
 name=Magnifying Glass
-image=https://magiccards.info/scans/en/soi/258.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a0c879b-c566-431e-a8fa-6104c39b6d7c.jpg?1599709480
 value=2.500
 rarity=U
 type=Artifact

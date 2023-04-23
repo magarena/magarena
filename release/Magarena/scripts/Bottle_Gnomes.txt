@@ -1,5 +1,5 @@
 name=Bottle Gnomes
-image=https://magiccards.info/scans/en/c14/231.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa29a4ce-a8fa-499d-9994-f294c38b2ce5.jpg?1562276551
 value=4.077
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Lunar Force
-image=https://magiccards.info/scans/en/emn/68.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76614db3-480f-41f6-91ad-66301fc8e394.jpg?1576384174
 image_updated=2016-09-05
 value=2.500
 rarity=U

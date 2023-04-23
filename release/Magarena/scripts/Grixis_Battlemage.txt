@@ -1,5 +1,5 @@
 name=Grixis Battlemage
-image=https://magiccards.info/scans/en/ala/78.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dbd260c-a625-42a4-8192-27e42e18ac0f.jpg?1562703682
 value=2.964
 rarity=U
 type=Creature

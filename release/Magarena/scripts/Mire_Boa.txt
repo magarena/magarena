@@ -1,5 +1,5 @@
 name=Mire Boa
-image=https://magiccards.info/scans/en/pc/135.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4ab20019-d4b7-4bbb-b258-c9cc14bf2b3a.jpg?1619398408
 value=4.214
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Nettletooth Djinn
-image=https://magiccards.info/scans/en/mr/130.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b5aa60d-91aa-4eee-9d13-55a357c8eced.jpg?1562720240
 value=2.381
 rarity=U
 type=Creature

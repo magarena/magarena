@@ -1,5 +1,5 @@
 name=Street Spasm
-image=https://magiccards.info/scans/en/rtr/106.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92bc9bb0-e38f-48fb-8431-5e534fd0bba4.jpg?1562926021
 value=3.250
 rarity=U
 type=Instant

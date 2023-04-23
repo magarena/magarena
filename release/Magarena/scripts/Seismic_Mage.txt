@@ -1,5 +1,5 @@
 name=Seismic Mage
-image=https://magiccards.info/scans/en/mm/211.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9524432a-3186-4c7b-a780-28bdbe36053f.jpg?1562382061
 value=3.694
 rarity=R
 type=Creature

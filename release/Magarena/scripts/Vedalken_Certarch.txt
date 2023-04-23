@@ -1,5 +1,5 @@
 name=Vedalken Certarch
-image=https://magiccards.info/scans/en/som/52.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fed33cda-aab2-49cf-b353-411320e8fd14.jpg?1562946465
 value=3.873
 rarity=C
 type=Creature

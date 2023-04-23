@@ -1,5 +1,5 @@
 name=Hyena Umbra
-image=https://magiccards.info/scans/en/pc2/8.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6cc0f1f-191a-4141-965f-8d159bf54732.jpg?1673146991
 value=3.857
 rarity=C
 type=Enchantment

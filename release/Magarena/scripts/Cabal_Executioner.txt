@@ -1,5 +1,5 @@
 name=Cabal Executioner
-image=https://magiccards.info/scans/en/on/130.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd7727a7-0cdf-4fd5-82b4-e6587c10ca80.jpg?1562943489
 value=3.110
 rarity=U
 type=Creature

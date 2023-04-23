@@ -1,5 +1,5 @@
 name=Zanam Djinn
-image=https://magiccards.info/scans/en/in/90.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57a3c1d5-0ca8-443b-ae7a-66e0363e377b.jpg?1562912806
 value=2.359
 rarity=U
 type=Creature

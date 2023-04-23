@@ -1,5 +1,5 @@
 name=Warclamp Mastiff
-image=https://magiccards.info/scans/en/m13/40.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/102e48e0-8a5f-499d-ac62-005d3c075ef3.jpg?1562550450
 value=2.943
 rarity=C
 type=Creature

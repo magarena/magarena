@@ -1,5 +1,5 @@
 name=Emrakul, the Aeons Torn
-image=https://magiccards.info/scans/en/mm2/3.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/249db4d4-2542-47ee-a216-e13ffbc2319c.jpg?1673146896
 value=4.406
 rarity=M
 type=Legendary,Creature

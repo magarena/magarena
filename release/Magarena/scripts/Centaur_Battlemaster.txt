@@ -1,5 +1,5 @@
 name=Centaur Battlemaster
-image=https://magiccards.info/scans/en/ths/154.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d190aac9-9ac8-4b54-9f51-d7d1561dc743.jpg?1673148045
 value=3.542
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Gutter Skulk
-image=https://magiccards.info/scans/en/gtc/67.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/830c7c77-20c4-429f-88c7-b85ab7a0e38b.jpg?1561834160
 value=2.708
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vitality Charm
-image=https://magiccards.info/scans/en/on/296.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1abae21-ed8f-4e21-b227-f721b840c11f.jpg?1562948695
 value=3.777
 rarity=C
 type=Instant

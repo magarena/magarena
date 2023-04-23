@@ -1,5 +1,5 @@
 name=Shifting Sliver
-image=https://magiccards.info/scans/en/le/52.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f68c4c2-91b5-4ffe-9dff-a6834038aa94.jpg?1562901214
 value=3.989
 rarity=U
 type=Creature

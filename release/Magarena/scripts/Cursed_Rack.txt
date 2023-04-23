@@ -1,5 +1,5 @@
 name=Cursed Rack
-image=https://magiccards.info/scans/en/4e/330.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26aa48e6-f23b-4fe1-8cf7-65a430ffba61.jpg?1562349912
 value=3.914
 rarity=U
 type=Artifact

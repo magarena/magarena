@@ -1,5 +1,5 @@
 name=Synchronous Sliver
-image=https://magiccards.info/scans/en/pc/48.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c02fa57b-4b7f-46e1-b2b5-6b1a9e9d1643.jpg?1562581045
 value=3.220
 rarity=C
 type=Creature

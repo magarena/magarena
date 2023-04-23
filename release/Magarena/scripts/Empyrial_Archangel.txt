@@ -1,5 +1,5 @@
 name=Empyrial Archangel
-image=https://magiccards.info/scans/en/ala/166.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d908d523-1911-4a49-9e3f-ea1b719a8f0b.jpg?1673148579
 value=4.014
 rarity=M
 type=Creature

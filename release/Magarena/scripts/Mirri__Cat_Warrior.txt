@@ -1,5 +1,5 @@
 name=Mirri, Cat Warrior
-image=https://magiccards.info/scans/en/10e/279.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a1d9876-4588-4591-af53-cb4e83c2b6c6.jpg?1562428179
 value=4.226
 rarity=R
 type=Legendary,Creature

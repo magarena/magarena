@@ -1,5 +1,5 @@
 name=Sinister Possession
-image=https://magiccards.info/scans/en/dgm/29.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f54c15b-fec0-49a6-8a49-d1af4eeee40e.jpg?1562918600
 value=2.528
 rarity=C
 type=Enchantment

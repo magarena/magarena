@@ -1,5 +1,5 @@
 name=Stern Proctor
-image=https://magiccards.info/scans/en/us/99.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7042fdc8-e2dd-4f9a-97b9-00d95c9eae74.jpg?1562918631
 value=3.589
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Caught in the Brights
-image=https://magiccards.info/scans/en/aer/10.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d5bea27-d825-4691-8ae0-c4831574ec53.jpg?1576381329
 value=2.500
 rarity=C
 type=Enchantment

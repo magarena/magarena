@@ -1,5 +1,5 @@
 name=Compulsive Research
-image=https://magiccards.info/scans/en/mm3/33.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27bc62c8-c795-4e4a-a57c-a5f34121b5d1.jpg?1674141286
 image_updated=2017-08-08
 value=2.500
 rarity=U

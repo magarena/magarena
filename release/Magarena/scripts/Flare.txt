@@ -1,5 +1,5 @@
 name=Flare
-image=https://magiccards.info/scans/en/5e/230.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abc046c2-be9b-4f93-ac7d-e7dea6c4df9a.jpg?1562593271
 value=1.520
 rarity=C
 type=Instant

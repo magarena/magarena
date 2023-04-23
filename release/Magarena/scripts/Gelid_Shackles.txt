@@ -1,5 +1,5 @@
 name=Gelid Shackles
-image=https://magiccards.info/scans/en/cs/6.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d372bb70-2d2a-4c44-8f69-4abff8ba7c2a.jpg?1593274736
 value=3.280
 rarity=C
 type=Snow,Enchantment

@@ -1,5 +1,5 @@
 name=Weirding Shaman
-image=https://magiccards.info/scans/en/mt/84.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe1d40cc-2871-4a33-bc58-5250fd3d4f0e.jpg?1562882673
 value=3.089
 rarity=R
 type=Creature

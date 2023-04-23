@@ -1,5 +1,5 @@
 name=Viridian Betrayers
-image=https://magiccards.info/scans/en/nph/124.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc6ea52f-4b24-45ff-99e1-4d0e1bd42875.jpg?1562881572
 value=2.545
 rarity=C
 type=Creature

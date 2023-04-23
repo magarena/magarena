@@ -1,5 +1,5 @@
 name=Ambush Krotiq
-image=https://magiccards.info/scans/en/frf/122.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd3068c6-d403-46d5-b3d7-1c3b00b9a9b1.jpg?1562831925
 value=2.500
 rarity=C
 type=Creature

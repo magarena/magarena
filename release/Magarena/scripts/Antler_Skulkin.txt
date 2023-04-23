@@ -1,5 +1,5 @@
 name=Antler Skulkin
-image=https://magiccards.info/scans/en/eve/167.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca66c361-3cea-4f9c-836d-3513f05d6b22.jpg?1562937757
 value=2.111
 rarity=C
 type=Artifact,Creature

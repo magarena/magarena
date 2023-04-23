@@ -1,5 +1,5 @@
 name=Pearl Lake Ancient
-image=https://magiccards.info/scans/en/ktk/49.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbee4d2f-6b41-4717-a1c6-831034452bec.jpg?1562796500
 value=4.000
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Delraich
-image=https://magiccards.info/scans/en/mm/133.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da64094f-df6e-4c43-b4ae-03aab6b92816.jpg?1562383054
 value=4.259
 rarity=R
 type=Creature

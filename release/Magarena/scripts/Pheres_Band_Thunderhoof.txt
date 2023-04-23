@@ -1,5 +1,5 @@
 name=Pheres-Band Thunderhoof
-image=https://magiccards.info/scans/en/jou/134.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a19a2e8e-9d8f-4537-838c-ac60e09d78bf.jpg?1593096267
 value=3.175
 rarity=C
 type=Creature

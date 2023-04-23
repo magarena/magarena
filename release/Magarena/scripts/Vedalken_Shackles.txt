@@ -1,5 +1,5 @@
 name=Vedalken Shackles
-image=https://magiccards.info/scans/en/mma/218.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3257833-b237-49ef-856a-3c1d1c752cf8.jpg?1561969029
 value=4.458
 rarity=M
 type=Artifact

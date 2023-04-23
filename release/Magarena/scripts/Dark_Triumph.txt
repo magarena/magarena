@@ -1,5 +1,5 @@
 name=Dark Triumph
-image=https://magiccards.info/scans/en/ne/55.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/794657cd-b292-41d7-a4a6-3f3dd20dc07a.jpg?1562630622
 value=4.100
 rarity=U
 type=Instant

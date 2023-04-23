@@ -1,5 +1,5 @@
 name=Wing Storm
-image=https://magiccards.info/scans/en/pr/135.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59e66be1-f18a-433f-8504-aa1e85e22023.jpg?1562911599
 value=2.800
 rarity=U
 type=Sorcery

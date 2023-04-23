@@ -1,5 +1,5 @@
 name=Kyoki, Sanity's Eclipse
-image=https://magiccards.info/scans/en/bok/72.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc0969e6-f667-4e29-a038-8569022cce32.jpg?1562880188
 value=3.542
 rarity=R
 type=Legendary,Creature

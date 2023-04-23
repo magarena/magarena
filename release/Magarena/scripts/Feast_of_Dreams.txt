@@ -1,5 +1,5 @@
 name=Feast of Dreams
-image=https://magiccards.info/scans/en/jou/69.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de07e21e-c12a-47a6-ad2c-ef6fed343407.jpg?1593095705
 value=3.283
 rarity=C
 type=Instant

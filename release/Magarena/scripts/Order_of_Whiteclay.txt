@@ -1,5 +1,5 @@
 name=Order of Whiteclay
-image=https://magiccards.info/scans/en/shm/16.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0caaa62f-4959-4321-a2d5-dc255f1e5eaf.jpg?1674141184
 value=3.604
 rarity=R
 type=Creature

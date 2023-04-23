@@ -1,5 +1,5 @@
 name=Unlikely Alliance
-image=https://magiccards.info/scans/en/ai/153.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c14d2c73-1934-4504-bbfb-62ba82e0a0e3.jpg?1562770168
 value=2.028
 rarity=U
 type=Enchantment

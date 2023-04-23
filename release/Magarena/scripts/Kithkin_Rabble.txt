@@ -1,5 +1,5 @@
 name=Kithkin Rabble
-image=https://magiccards.info/scans/en/shm/9.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f9a0afa-50e6-4bce-b261-4559fd31295e.jpg?1562832303
 value=3.357
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Arcbound Worker
-image=https://magiccards.info/scans/en/mma/201.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdfc2453-5a2b-4104-bf82-84f935de7b99.jpg?1561969500
 value=3.913
 rarity=C
 type=Artifact,Creature

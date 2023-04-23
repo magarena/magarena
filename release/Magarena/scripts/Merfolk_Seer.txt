@@ -1,5 +1,5 @@
 name=Merfolk Seer
-image=https://magiccards.info/scans/en/mr/76.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63139890-e860-4791-9bb6-b79bb361ef8b.jpg?1562719746
 value=2.269
 rarity=C
 type=Creature

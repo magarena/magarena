@@ -1,5 +1,5 @@
 name=Glimpse the Future
-image=https://magiccards.info/scans/en/m14/58.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4d875e9-713d-4ddb-ae0a-db8483366319.jpg?1562837264
 value=1.315
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Glimmervoid
-image=https://magiccards.info/scans/en/mma/223.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a639687-d9e3-46a8-bc9f-6ca3912c46ab.jpg?1599710492
 value=4.500
 rarity=R
 type=Land

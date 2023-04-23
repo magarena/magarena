@@ -1,5 +1,5 @@
 name=Sharuum the Hegemon
-image=https://magiccards.info/scans/en/c16/221.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af80ef38-ab95-476f-b0dd-b5ef3e9bceab.jpg?1599708380
 image_updated=2017-08-17
 value=4.167
 rarity=M

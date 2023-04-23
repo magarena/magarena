@@ -1,5 +1,5 @@
 name=Wild Nacatl
-image=https://magiccards.info/scans/en/ala/152.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a3bb291-11d1-45e0-a60a-e75c7dc94b94.jpg?1562916230
 value=4.185
 rarity=C
 type=Creature

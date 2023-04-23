@@ -1,5 +1,5 @@
 name=Lashweed Lurker
-image=https://magiccards.info/scans/en/emn/9.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a13f9a76-3370-4809-88ff-c300bca31c9e.jpg?1576383747
 image_updated=2016-09-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Launch Party
-image=https://magiccards.info/scans/en/rtr/69.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a49b95d9-2b64-4f33-97b1-db350026aa95.jpg?1681725421
 value=2.016
 rarity=C
 type=Instant

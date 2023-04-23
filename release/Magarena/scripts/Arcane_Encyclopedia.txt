@@ -1,5 +1,5 @@
 name=Arcane Encyclopedia
-image=https://magiccards.info/scans/en/m19/227.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00ff4cb8-a0e0-4527-a77d-03394065ffe0.jpg?1674137703
 value=2.500
 rarity=U
 type=Artifact

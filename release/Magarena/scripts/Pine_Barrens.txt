@@ -1,5 +1,5 @@
 name=Pine Barrens
-image=https://magiccards.info/scans/en/tp/323.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0f794f0-3588-4fe2-8792-64a58482ff8b.jpg?1562431262
 value=2.456
 rarity=R
 type=Land

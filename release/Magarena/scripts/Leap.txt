@@ -1,5 +1,5 @@
 name=Leap
-image=https://magiccards.info/scans/en/sh/35.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0841423d-7a27-4bc5-9ac2-0ba47648c6f1.jpg?1562595906
 value=4.053
 rarity=C
 type=Instant

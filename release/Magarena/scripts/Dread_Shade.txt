@@ -1,5 +1,5 @@
 name=Dread Shade
-image=https://magiccards.info/scans/en/dom/88.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46b8b1d7-9d2b-4943-bb3b-238a6333ce93.jpg?1562734973
 value=2.500
 rarity=R
 type=Creature

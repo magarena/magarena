@@ -1,5 +1,5 @@
 name=Mole Worms
-image=https://magiccards.info/scans/en/5e/41.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/700f43c9-1e71-4e5f-a6ce-eca94993558f.jpg?1562591821
 value=2.528
 rarity=U
 type=Creature

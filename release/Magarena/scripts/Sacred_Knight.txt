@@ -1,5 +1,5 @@
 name=Sacred Knight
-image=https://magiccards.info/scans/en/po/186.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57b19990-c4a2-433d-a9ce-005216e9e4ac.jpg?1562446643
 value=2.914
 rarity=C
 type=Creature

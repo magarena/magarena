@@ -1,5 +1,5 @@
 name=Mox Ruby
-image=https://magiccards.info/scans/en/un/265.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45fd6e91-df76-497f-b642-33dc3d5f6a5a.jpg?1614638852
 value=4.875
 rarity=R
 type=Artifact

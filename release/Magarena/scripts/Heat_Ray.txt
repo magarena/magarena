@@ -1,5 +1,5 @@
 name=Heat Ray
-image=https://magiccards.info/scans/en/ima/133.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d59a9859-c50a-4dc5-aae2-56fcafb1792d.jpg?1562854620
 image_updated=2017-04-12
 value=3.200
 rarity=C

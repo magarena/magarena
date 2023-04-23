@@ -1,5 +1,5 @@
 name=Vodalian Soldiers
-image=https://magiccards.info/scans/en/6e/104.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8fae146-a0dd-4622-ab11-f00b372f8221.jpg?1562824818
 value=1.750
 rarity=C
 type=Creature

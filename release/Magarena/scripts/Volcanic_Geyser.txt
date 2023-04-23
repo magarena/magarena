@@ -1,5 +1,5 @@
 name=Volcanic Geyser
-image=https://magiccards.info/scans/en/m13/154.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e22c791-6ef9-4f13-a14d-4f795f48bb1c.jpg?1594736870
 value=4.045
 rarity=U
 type=Instant

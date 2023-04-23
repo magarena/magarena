@@ -1,5 +1,5 @@
 name=Loam Larva
-image=https://magiccards.info/scans/en/ogw/135.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/affa9314-0021-445e-9496-349254b16bf8.jpg?1562930420
 image_updated=2016-02-29
 value=2.500
 rarity=C

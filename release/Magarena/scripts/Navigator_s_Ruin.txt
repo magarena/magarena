@@ -1,5 +1,5 @@
 name=Navigator's Ruin
-image=https://magiccards.info/scans/en/xln/63.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb082e5e-770a-4c5a-8976-ee394ab73c86.jpg?1562566039
 value=2.500
 rarity=U
 type=Enchantment

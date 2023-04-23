@@ -1,5 +1,5 @@
 name=Yeva's Forcemage
-image=https://magiccards.info/scans/en/ori/208.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50b9fdbf-d7c3-43f7-ad4c-54a6d37440c1.jpg?1562019544
 image_updated=2015-11-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Havoc Demon
-image=https://magiccards.info/scans/en/ema/90.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5ad8ecef-bc09-4d30-bff1-4d21c239b2fb.jpg?1580014248
 value=3.895
 rarity=U
 type=Creature

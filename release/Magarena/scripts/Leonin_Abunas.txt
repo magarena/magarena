@@ -1,5 +1,5 @@
 name=Leonin Abunas
-image=https://magiccards.info/scans/en/mi/8.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14397b59-ff0d-4838-92c3-9728bf6b0af5.jpg?1599824768
 image_updated=2016-12-21
 value=4.000
 rarity=R

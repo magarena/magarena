@@ -1,5 +1,5 @@
 name=Woolly Thoctar
-image=https://magiccards.info/scans/en/mm3/203.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf7188d8-d37f-49ec-ab52-8ea080725ca7.jpg?1593814757
 image_updated=2017-08-08
 value=4.111
 rarity=U

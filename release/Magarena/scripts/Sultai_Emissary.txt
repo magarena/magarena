@@ -1,5 +1,5 @@
 name=Sultai Emissary
-image=https://magiccards.info/scans/en/frf/85.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12421e1c-5144-4391-abf2-a2fb864920e9.jpg?1562822584
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shadow Rider
-image=https://magiccards.info/scans/en/wl/21.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bfdec24-e689-4cca-a546-a8f5d0929f8d.jpg?1562801014
 value=3.485
 rarity=C
 type=Creature

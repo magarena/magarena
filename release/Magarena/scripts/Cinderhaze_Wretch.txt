@@ -1,5 +1,5 @@
 name=Cinderhaze Wretch
-image=https://magiccards.info/scans/en/shm/60.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/644319c2-f122-4369-b1f8-56ad7d8ce861.jpg?1562830939
 value=2.432
 rarity=C
 type=Creature

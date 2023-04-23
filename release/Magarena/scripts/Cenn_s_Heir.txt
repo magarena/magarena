@@ -1,5 +1,5 @@
 name=Cenn's Heir
-image=https://magiccards.info/scans/en/lw/8.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7610d2f-e35f-42fa-a3fb-fcae54bf5a1d.jpg?1562361940
 value=3.373
 rarity=C
 type=Creature

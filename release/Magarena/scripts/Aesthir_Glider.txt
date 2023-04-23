@@ -1,5 +1,5 @@
 name=Aesthir Glider
-image=https://magiccards.info/scans/en/dom/209.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25afd4a7-4253-4a4e-a105-e92f64460faa.jpg?1562732855
 image_updated=2018-08-07
 value=2.650
 rarity=C

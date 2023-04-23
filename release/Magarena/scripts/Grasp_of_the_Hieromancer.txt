@@ -1,5 +1,5 @@
 name=Grasp of the Hieromancer
-image=https://magiccards.info/scans/en/ori/15.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1df9aa51-dfd7-4e8a-a9f4-113b728b45de.jpg?1592765343
 image_updated=2015-11-05
 value=2.500
 rarity=C

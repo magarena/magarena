@@ -1,5 +1,5 @@
 name=Boggart Arsonists
-image=https://magiccards.info/scans/en/shm/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6a837b6-c8b0-4971-ae95-0b49d38bc830.jpg?1562836588
 value=2.363
 rarity=C
 type=Creature

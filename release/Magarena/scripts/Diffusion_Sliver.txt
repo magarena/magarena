@@ -1,5 +1,5 @@
 name=Diffusion Sliver
-image=https://magiccards.info/scans/en/m15/50.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb110a55-c8f9-4627-82c2-edb10db4f380.jpg?1562797421
 value=3.167
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Metallic Sliver
-image=https://magiccards.info/scans/en/tp/287.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f302984-9bf6-4583-865a-5545711e7a27.jpg?1562428620
 value=4.083
 rarity=C
 type=Artifact,Creature

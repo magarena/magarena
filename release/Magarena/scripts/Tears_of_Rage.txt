@@ -1,5 +1,5 @@
 name=Tears of Rage
-image=https://magiccards.info/scans/en/ds/70.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/070fa2d9-6238-49f6-9d63-75ae88ced8e5.jpg?1562635253
 value=2.625
 rarity=U
 type=Instant

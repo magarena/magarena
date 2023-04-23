@@ -1,5 +1,5 @@
 name=Venser, the Sojourner
-image=https://magiccards.info/scans/en/som/135.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f61a0ea-c2e8-4571-9669-19abd8bbc874.jpg?1581708232
 image_updated=2017-01-11
 value=3.946
 rarity=M

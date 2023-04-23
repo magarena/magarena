@@ -1,5 +1,5 @@
 name=Soulquake
-image=https://magiccards.info/scans/en/arb/30.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b3a7470-b93e-4c3a-ab1c-0a4dd401e95a.jpg?1562641103
 value=2.293
 rarity=R
 type=Sorcery

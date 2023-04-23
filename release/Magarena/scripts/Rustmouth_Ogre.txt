@@ -1,5 +1,5 @@
 name=Rustmouth Ogre
-image=https://magiccards.info/scans/en/mi/103.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f8bd0c9-6b3a-489e-bf4d-b2062d530b55.jpg?1562141455
 value=2.444
 rarity=U
 type=Creature

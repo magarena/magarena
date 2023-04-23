@@ -1,5 +1,5 @@
 name=Pestermite
-image=https://magiccards.info/scans/en/mma/59.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b58a6a63-c7d8-4f2f-acaf-b0a871eb5a7c.jpg?1561968098
 value=4.096
 rarity=C
 type=Creature

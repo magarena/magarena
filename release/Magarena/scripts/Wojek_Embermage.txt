@@ -1,5 +1,5 @@
 name=Wojek Embermage
-image=https://magiccards.info/scans/en/rav/152.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1614866-fb0b-47bd-ab26-5c20ff175d10.jpg?1598916034
 value=2.986
 rarity=U
 type=Creature

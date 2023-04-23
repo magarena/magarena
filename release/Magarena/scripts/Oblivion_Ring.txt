@@ -1,5 +1,5 @@
 name=Oblivion Ring
-image=https://magiccards.info/scans/en/mm2/29.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bff31eba-8ab3-403e-8d82-37a18b279bec.jpg?1562266919
 image_updated=2015-11-05
 value=4.400
 removal=2

@@ -1,5 +1,5 @@
 name=Maze Glider
-image=https://magiccards.info/scans/en/dgm/13.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1d20281-49c0-4fd0-91f2-390506ac33f6.jpg?1562934182
 value=2.776
 rarity=C
 type=Creature

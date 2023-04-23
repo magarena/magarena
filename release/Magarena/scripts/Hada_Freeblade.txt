@@ -1,5 +1,5 @@
 name=Hada Freeblade
-image=https://magiccards.info/scans/en/wwk/7.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22700453-e1aa-43d1-9b51-cda8a37fc00d.jpg?1612139485
 value=3.970
 rarity=U
 type=Creature

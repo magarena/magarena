@@ -1,5 +1,5 @@
 name=Viashino Weaponsmith
-image=https://magiccards.info/scans/en/us/226.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/def316ed-b080-4d1d-b946-d7a86ebb8ad9.jpg?1562942014
 value=2.750
 rarity=C
 type=Creature

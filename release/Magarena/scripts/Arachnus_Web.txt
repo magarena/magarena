@@ -1,5 +1,5 @@
 name=Arachnus Web
-image=https://magiccards.info/scans/en/mm3/118.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec348d8d-6b49-4a40-a668-fc6dd2af4f0d.jpg?1673148009
 image_updated=2017-08-08
 value=3.556
 rarity=C

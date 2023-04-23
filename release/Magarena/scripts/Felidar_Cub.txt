@@ -1,5 +1,5 @@
 name=Felidar Cub
-image=https://magiccards.info/scans/en/bfz/25.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea76a183-e15c-4968-b29d-91c074aa8681.jpg?1562950859
 image_updated=2015-11-08
 value=2.500
 rarity=C

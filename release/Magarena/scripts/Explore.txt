@@ -1,5 +1,5 @@
 name=Explore
-image=https://magiccards.info/scans/en/mm3/125.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f55b5e21-decb-4b77-99d8-83cb7b433fda.jpg?1673305357
 image_updated=2017-08-08
 value=3.801
 rarity=C

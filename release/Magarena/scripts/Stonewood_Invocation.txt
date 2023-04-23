@@ -1,5 +1,5 @@
 name=Stonewood Invocation
-image=https://magiccards.info/scans/en/ts/223.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b300e67-04d2-4c69-b516-c5cc0a6ff2e7.jpg?1562900700
 value=3.679
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Hammer of Bogardan
-image=https://magiccards.info/scans/en/8e/193.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abf6e6c0-ddea-4d15-ab1a-5c7d9fa69d51.jpg?1562929667
 value=3.649
 rarity=R
 type=Sorcery

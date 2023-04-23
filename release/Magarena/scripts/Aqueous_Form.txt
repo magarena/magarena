@@ -1,5 +1,5 @@
 name=Aqueous Form
-image=https://magiccards.info/scans/en/ths/39.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c859f7cb-ac12-490e-b769-6f019791f2a5.jpg?1608909093
 value=3.654
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Alesha's Vanguard
-image=https://magiccards.info/scans/en/frf/60.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69bb135f-1c58-42ed-bbf2-4a2e842f99d7.jpg?1562826127
 value=2.500
 rarity=C
 type=Creature

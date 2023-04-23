@@ -1,5 +1,5 @@
 name=Trash for Treasure
-image=https://magiccards.info/scans/en/c16/136.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75993427-fb8d-41cc-9016-323e804a5eb7.jpg?1599706790
 image_updated=2017-08-17
 value=4.025
 rarity=R

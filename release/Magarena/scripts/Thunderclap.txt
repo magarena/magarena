@@ -1,5 +1,5 @@
 name=Thunderclap
-image=https://magiccards.info/scans/en/mm/219.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3f8c5ee-2179-4c05-adc9-0b66d02b59ad.jpg?1562382554
 value=3.500
 rarity=C
 type=Instant

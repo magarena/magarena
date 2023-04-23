@@ -1,5 +1,5 @@
 name=Rootwater Diver
-image=https://magiccards.info/scans/en/tp/81.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6315323-cf82-46c0-b164-e6ea1bf809f4.jpg?1562055902
 value=3.833
 rarity=U
 type=Creature

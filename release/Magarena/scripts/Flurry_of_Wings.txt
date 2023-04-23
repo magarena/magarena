@@ -1,5 +1,5 @@
 name=Flurry of Wings
-image=https://magiccards.info/scans/en/arb/127.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbabaf1d-0220-438d-8263-e23d8010fe24.jpg?1562644569
 value=3.259
 rarity=U
 type=Instant

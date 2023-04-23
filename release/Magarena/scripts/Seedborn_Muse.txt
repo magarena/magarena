@@ -1,5 +1,5 @@
 name=Seedborn Muse
-image=https://magiccards.info/scans/en/10e/296.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f5bee0f-ebc8-4f41-91ee-4eed104ad980.jpg?1610161744
 value=4.325
 rarity=R
 type=Creature

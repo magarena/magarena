@@ -1,5 +1,5 @@
 name=Homing Lightning
-image=https://magiccards.info/scans/en/gtc/96.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d212e27a-d2e1-430d-86ff-1f7abaad46d4.jpg?1601078112
 value=3.180
 rarity=U
 type=Instant

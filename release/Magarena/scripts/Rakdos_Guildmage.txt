@@ -1,5 +1,5 @@
 name=Rakdos Guildmage
-image=https://magiccards.info/scans/en/di/145.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7663815e-9fd8-4021-ad91-07d3d7ee508e.jpg?1562919896
 image_updated=2017-01-06
 value=3.392
 rarity=U

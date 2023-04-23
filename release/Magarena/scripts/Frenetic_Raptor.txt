@@ -1,5 +1,5 @@
 name=Frenetic Raptor
-image=https://magiccards.info/scans/en/le/93.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f6bc3c0-2d6e-4a09-84c4-b26a352186bb.jpg?1562923949
 value=1.887
 rarity=U
 type=Creature

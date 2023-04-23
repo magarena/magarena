@@ -1,5 +1,5 @@
 name=Infected Vermin
-image=https://magiccards.info/scans/en/od/144.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00615487-3526-4b4c-bb06-8f2af1f101d0.jpg?1562895063
 value=2.609
 rarity=U
 type=Creature

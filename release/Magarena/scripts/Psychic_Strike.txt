@@ -1,5 +1,5 @@
 name=Psychic Strike
-image=https://magiccards.info/scans/en/gtc/189.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d87927c-80a6-4146-92a5-58c510ce7958.jpg?1561815780
 value=3.704
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Griptide
-image=https://magiccards.info/scans/en/dka/38.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77480b11-2470-401a-be19-710ea32b719d.jpg?1592754529
 value=3.389
 removal=3
 rarity=C

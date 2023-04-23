@@ -1,5 +1,5 @@
 name=Howling Gale
-image=https://magiccards.info/scans/en/od/244.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9917cf32-0236-4463-9b1d-e8193754ff97.jpg?1562923428
 value=2.471
 rarity=U
 type=Instant

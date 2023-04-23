@@ -1,5 +1,5 @@
 name=Insurrection
-image=https://magiccards.info/scans/en/cmd/126.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e7df217-8622-45f7-90e3-2230ac9d30f3.jpg?1592713572
 value=4.183
 rarity=R
 type=Sorcery

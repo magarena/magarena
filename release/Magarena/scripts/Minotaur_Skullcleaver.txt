@@ -1,5 +1,5 @@
 name=Minotaur Skullcleaver
-image=https://magiccards.info/scans/en/ths/130.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6fef9f8-ff3e-4a3f-a3ff-4534ff0c3946.jpg?1601078382
 value=3.500
 rarity=C
 type=Creature

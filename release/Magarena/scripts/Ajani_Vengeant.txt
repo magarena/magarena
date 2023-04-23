@@ -1,5 +1,5 @@
 name=Ajani Vengeant
-image=https://magiccards.info/scans/en/ala/154.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3bf1867-aab4-4935-b891-45489ebeb231.jpg?1562952828
 value=4.042
 rarity=M
 type=Legendary,Planeswalker

@@ -1,5 +1,5 @@
 name=Whirlermaker
-image=https://magiccards.info/scans/en/kld/239.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff1a1246-d5a0-43dc-825a-062a3bb4def9.jpg?1576383465
 image_updated=2016-10-05
 value=2.500
 rarity=U

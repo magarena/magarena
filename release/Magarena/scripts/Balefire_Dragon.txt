@@ -1,5 +1,5 @@
 name=Balefire Dragon
-image=https://magiccards.info/scans/en/isd/129.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/468d5308-2a6c-440e-a8d0-1c5e084afb82.jpg?1547517180
 value=3.884
 rarity=M
 type=Creature

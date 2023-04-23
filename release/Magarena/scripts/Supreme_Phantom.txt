@@ -1,5 +1,5 @@
 name=Supreme Phantom
-image=https://magiccards.info/scans/en/m19/76.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbf4ca25-73cc-45ba-bed5-dbaa517e8bb8.jpg?1641602182
 value=2.500
 rarity=R
 type=Creature

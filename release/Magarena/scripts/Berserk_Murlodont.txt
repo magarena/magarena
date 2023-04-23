@@ -1,5 +1,5 @@
 name=Berserk Murlodont
-image=https://magiccards.info/scans/en/le/117.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/499c4674-dd9f-4848-8447-721f842a0213.jpg?1562909903
 value=2.625
 rarity=C
 type=Creature

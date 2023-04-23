@@ -1,5 +1,5 @@
 name=Rage Nimbus
-image=https://magiccards.info/scans/en/roe/160.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c213b45-d86b-4ced-9ab9-44cd84ad94a4.jpg?1562705451
 value=3.959
 rarity=R
 type=Creature

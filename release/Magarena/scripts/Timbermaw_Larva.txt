@@ -1,5 +1,5 @@
 name=Timbermaw Larva
-image=https://magiccards.info/scans/en/zen/189.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d68fc3bc-eb3b-4504-93a3-8943d07b23f8.jpg?1562617126
 value=3.859
 rarity=C
 type=Creature

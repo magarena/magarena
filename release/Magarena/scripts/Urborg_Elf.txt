@@ -1,5 +1,5 @@
 name=Urborg Elf
-image=https://magiccards.info/scans/en/ap/90.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d8521bf-d026-4d26-831e-a2f253307c93.jpg?1562901924
 value=3.984
 rarity=C
 type=Creature

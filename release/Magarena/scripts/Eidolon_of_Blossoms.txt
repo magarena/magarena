@@ -1,5 +1,5 @@
 name=Eidolon of Blossoms
-image=https://magiccards.info/scans/en/jou/122.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d82f171-b1f6-4e80-996a-c579a1be252c.jpg?1592710863
 value=3.905
 rarity=R
 type=Enchantment,Creature

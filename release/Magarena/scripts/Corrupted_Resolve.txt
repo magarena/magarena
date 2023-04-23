@@ -1,5 +1,5 @@
 name=Corrupted Resolve
-image=https://magiccards.info/scans/en/nph/32.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28432161-023b-4a98-b92a-55dc6d936cd1.jpg?1562876198
 value=3.742
 rarity=U
 type=Instant

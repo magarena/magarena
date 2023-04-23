@@ -1,5 +1,5 @@
 name=Spreading Rot
-image=https://magiccards.info/scans/en/xln/125.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca8a160c-5e89-4347-8e88-3541b6d221e0.jpg?1562563945
 value=2.500
 rarity=C
 type=Sorcery

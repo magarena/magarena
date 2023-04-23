@@ -1,5 +1,5 @@
 name=Prized Elephant
-image=https://magiccards.info/scans/en/m13/27.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01597ede-94e7-44a4-93c2-7fd1db11e92a.jpg?1562549697
 value=3.122
 rarity=U
 type=Creature

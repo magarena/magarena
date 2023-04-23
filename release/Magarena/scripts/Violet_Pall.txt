@@ -1,5 +1,5 @@
 name=Violet Pall
-image=https://magiccards.info/scans/en/mt/81.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdfd0fa3-37d2-403e-99fe-8c9e57515e9d.jpg?1562881062
 value=2.795
 rarity=C
 type=Tribal,Instant

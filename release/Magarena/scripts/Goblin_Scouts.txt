@@ -1,5 +1,5 @@
 name=Goblin Scouts
-image=https://magiccards.info/scans/en/mr/178.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4b87068-aaa6-41de-9b9a-76ca4210a485.jpg?1562720959
 value=3.032
 rarity=U
 type=Sorcery

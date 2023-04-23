@@ -1,5 +1,5 @@
 name=Warchanter of Mogis
-image=https://magiccards.info/scans/en/bng/85.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/757948b3-8cb2-4709-9bbf-031c2bf6d4c5.jpg?1593092126
 value=2.595
 rarity=C
 type=Creature

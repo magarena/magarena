@@ -1,5 +1,5 @@
 name=Kagemaro's Clutch
-image=https://magiccards.info/scans/en/sok/74.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fe4bb8d-bed8-4373-af9d-9332de910e06.jpg?1562493707
 value=1.839
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Ryusei, the Falling Star
-image=https://magiccards.info/scans/en/ima/144.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68d57ab8-fbe0-4f01-b7f7-2a5cccd2d13a.jpg?1674142106
 image_updated=2017-04-12
 value=3.650
 rarity=R

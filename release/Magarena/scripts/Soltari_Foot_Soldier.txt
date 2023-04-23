@@ -1,5 +1,5 @@
 name=Soltari Foot Soldier
-image=https://magiccards.info/scans/en/tp/255.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdf295dc-72df-4097-b767-d89ab807bf2e.jpg?1562056384
 image_updated=2017-01-08
 value=4.043
 rarity=C

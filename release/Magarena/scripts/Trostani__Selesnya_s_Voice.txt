@@ -1,5 +1,5 @@
 name=Trostani, Selesnya's Voice
-image=https://magiccards.info/scans/en/rtr/206.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34ea44f2-cb2f-4b86-83fc-fe507f05bb9d.jpg?1568004834
 value=4.009
 rarity=M
 type=Legendary,Creature

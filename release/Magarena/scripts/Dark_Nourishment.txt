@@ -1,5 +1,5 @@
 name=Dark Nourishment
-image=https://magiccards.info/scans/en/xln/97.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/053c4cf0-992b-4f76-b8d1-cd67f894172c.jpg?1562550007
 value=2.500
 rarity=U
 type=Instant

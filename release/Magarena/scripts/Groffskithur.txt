@@ -1,5 +1,5 @@
 name=Groffskithur
-image=https://magiccards.info/scans/en/mi/121.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75e84098-c15c-40f4-9d8a-3fa5da26a268.jpg?1562148057
 value=1.081
 rarity=C
 type=Creature

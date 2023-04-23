@@ -1,5 +1,5 @@
 name=Centaur Rootcaster
-image=https://magiccards.info/scans/en/ju/109.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f10dfd9-9889-4d9e-872a-07623dee6b6b.jpg?1562629502
 value=3.370
 rarity=C
 type=Creature

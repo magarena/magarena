@@ -1,5 +1,5 @@
 name=Throne of Empires
-image=https://magiccards.info/scans/en/m12/221.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87352716-4cf6-4b2f-bb0a-b7aafae64478.jpg?1562650023
 value=3.735
 rarity=R
 type=Artifact

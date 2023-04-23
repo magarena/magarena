@@ -1,5 +1,5 @@
 name=Sunbird's Invocation
-image=https://magiccards.info/scans/en/xln/165.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75c1eb6a-2183-4f60-b075-f7289df35be7.jpg?1625194085
 value=2.500
 rarity=R
 type=Enchantment

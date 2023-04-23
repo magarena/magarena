@@ -1,5 +1,5 @@
 name=Breaching Leviathan
-image=https://magiccards.info/scans/en/c14/12.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e02e3d91-7723-46b8-a393-855b6e89d877.jpg?1561961880
 value=2.500
 rarity=R
 type=Creature

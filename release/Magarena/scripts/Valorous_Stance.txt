@@ -1,5 +1,5 @@
 name=Valorous Stance
-image=https://magiccards.info/scans/en/frf/28.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e6b9a3b-8a19-4094-8dbb-08a0a9ca04a0.jpg?1643587276
 value=5.000
 rarity=U
 type=Instant

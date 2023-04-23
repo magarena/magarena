@@ -1,5 +1,5 @@
 name=Shiv's Embrace
-image=https://magiccards.info/scans/en/m11/156.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a42fcd6-32ce-4a20-af4d-83bd32a7ed3e.jpg?1562832028
 value=3.617
 rarity=U
 type=Enchantment

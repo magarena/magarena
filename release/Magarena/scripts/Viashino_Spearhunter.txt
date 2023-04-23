@@ -1,5 +1,5 @@
 name=Viashino Spearhunter
-image=https://magiccards.info/scans/en/m10/161.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/232226ab-918c-49b6-9f5b-fa0e0a1ba1d3.jpg?1561973629
 value=2.000
 rarity=C
 type=Creature

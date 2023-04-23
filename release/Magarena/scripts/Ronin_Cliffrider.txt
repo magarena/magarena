@@ -1,5 +1,5 @@
 name=Ronin Cliffrider
-image=https://magiccards.info/scans/en/bok/116.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9f12b75-af29-49ea-a23d-915052db9fef.jpg?1562880819
 value=3.691
 rarity=U
 type=Creature

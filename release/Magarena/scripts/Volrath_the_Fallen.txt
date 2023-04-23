@@ -1,5 +1,5 @@
 name=Volrath the Fallen
-image=https://magiccards.info/scans/en/ne/75.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08bdd66e-9ca1-456e-a61c-7c96cf6f7c56.jpg?1562628549
 value=4.125
 rarity=R
 type=Legendary,Creature

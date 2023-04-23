@@ -1,5 +1,5 @@
 name=Soul of Magma
-image=https://magiccards.info/scans/en/chk/189.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40b20126-da96-4d79-8d3f-8d7da8e94f4a.jpg?1593860228
 value=1.823
 rarity=C
 type=Creature

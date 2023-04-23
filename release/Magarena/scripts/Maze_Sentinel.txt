@@ -1,5 +1,5 @@
 name=Maze Sentinel
-image=https://magiccards.info/scans/en/dgm/4.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a977e2d-a2bc-42d1-be7d-36a822c6a66e.jpg?1562917657
 value=2.636
 rarity=C
 type=Creature

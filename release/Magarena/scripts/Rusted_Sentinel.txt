@@ -1,5 +1,5 @@
 name=Rusted Sentinel
-image=https://magiccards.info/scans/en/m12/215.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cba5fc44-4b9a-418b-a4e0-26d2c3a1eca4.jpg?1562659788
 value=1.709
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Lich's Mirror
-image=https://magiccards.info/scans/en/ala/210.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78aa9a89-b7bf-49bc-a6e8-793d52120a22.jpg?1562705615
 value=3.290
 rarity=M
 type=Artifact

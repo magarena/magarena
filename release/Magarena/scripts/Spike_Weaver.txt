@@ -1,5 +1,5 @@
 name=Spike Weaver
-image=https://magiccards.info/scans/en/ex/128.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c561a2a-91c6-4d4b-9f96-bffd43a00478.jpg?1562088329
 image_updated=2016-01-09
 value=4.298
 rarity=R

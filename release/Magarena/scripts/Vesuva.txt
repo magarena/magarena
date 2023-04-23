@@ -1,5 +1,5 @@
 name=Vesuva
-image=https://magiccards.info/scans/en/ts/281.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0726f70a-c1c4-4edb-86fb-9be280d9ea73.jpg?1619399642
 value=4.274
 rarity=R
 type=Land

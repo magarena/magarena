@@ -1,5 +1,5 @@
 name=Carrion Feeder
-image=https://magiccards.info/scans/en/ema/84.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a19da90-880e-4eca-8cf7-6d7baf090d53.jpg?1562201576
 value=4.348
 rarity=C
 type=Creature

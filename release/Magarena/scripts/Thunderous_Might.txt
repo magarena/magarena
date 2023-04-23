@@ -1,5 +1,5 @@
 name=Thunderous Might
-image=https://magiccards.info/scans/en/bng/114.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d361851d-e2d4-4912-ba08-81913f6b6e08.jpg?1593092394
 value=3.660
 rarity=U
 type=Enchantment

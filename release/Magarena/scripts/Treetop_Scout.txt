@@ -1,5 +1,5 @@
 name=Treetop Scout
-image=https://magiccards.info/scans/en/sc/130.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fa39646-a609-4b37-b8de-97893ae43c49.jpg?1562527114
 value=3.806
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Maze Abomination
-image=https://magiccards.info/scans/en/dgm/26.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd84659f-4209-42a2-800a-61706470ce54.jpg?1562936314
 value=3.139
 rarity=C
 type=Creature

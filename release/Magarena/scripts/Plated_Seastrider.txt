@@ -1,5 +1,5 @@
 name=Plated Seastrider
-image=https://magiccards.info/scans/en/cns/103.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e83a74c4-026e-4419-9dde-3b044ef507a0.jpg?1562867347
 value=3.083
 rarity=C
 type=Creature

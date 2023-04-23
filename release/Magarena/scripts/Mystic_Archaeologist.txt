@@ -1,5 +1,5 @@
 name=Mystic Archaeologist
-image=https://magiccards.info/scans/en/m19/63.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de19d2db-604b-4d5f-8184-9bb0a31c7405.jpg?1600698074
 value=2.500
 rarity=R
 type=Creature

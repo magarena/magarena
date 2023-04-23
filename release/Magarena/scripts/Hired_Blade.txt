@@ -1,5 +1,5 @@
 name=Hired Blade
-image=https://magiccards.info/scans/en/m19/100.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7624c9aa-2f47-4fcc-a9fe-cc843e8de053.jpg?1562302725
 value=2.500
 rarity=C
 type=Creature

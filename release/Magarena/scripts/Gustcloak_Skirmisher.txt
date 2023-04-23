@@ -1,5 +1,5 @@
 name=Gustcloak Skirmisher
-image=https://magiccards.info/scans/en/on/38.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2ef15f8-4d37-4ea1-a8a2-6383f6be088f.jpg?1562840707
 image_updated=2016-12-04
 value=3.262
 rarity=U

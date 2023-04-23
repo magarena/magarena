@@ -1,5 +1,5 @@
 name=Blackblade Reforged
-image=https://magiccards.info/scans/en/dom/211.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/240448cd-c308-49ae-9e4b-0c35adc59fba.jpg?1673305744
 value=2.500
 rarity=R
 type=Legendary,Artifact

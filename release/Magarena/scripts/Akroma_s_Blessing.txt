@@ -1,5 +1,5 @@
 name=Akroma's Blessing
-image=https://magiccards.info/scans/en/on/1.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be43fdd6-917e-4a49-a9b8-d1673b421dce.jpg?1562933263
 value=3.500
 rarity=U
 type=Instant

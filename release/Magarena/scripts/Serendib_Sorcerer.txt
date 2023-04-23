@@ -1,5 +1,5 @@
 name=Serendib Sorcerer
-image=https://magiccards.info/scans/en/c17/93.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/5270c9cb-f322-4a21-b985-be8670c317cb.jpg?1562608281
 image_updated=2017-10-03
 value=3.892
 rarity=R

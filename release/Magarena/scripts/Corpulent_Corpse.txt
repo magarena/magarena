@@ -1,5 +1,5 @@
 name=Corpulent Corpse
-image=https://magiccards.info/scans/en/ts/98.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8680e7c-f180-45b9-9af6-a8e93037b851.jpg?1619395119
 value=2.473
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bow of Nylea
-image=https://magiccards.info/scans/en/ths/153.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89a2c408-e953-4386-abaf-4af85aba9620.jpg?1562821066
 value=3.759
 rarity=R
 type=Legendary,Enchantment,Artifact

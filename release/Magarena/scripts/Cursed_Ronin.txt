@@ -1,5 +1,5 @@
 name=Cursed Ronin
-image=https://magiccards.info/scans/en/chk/107.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8f24fe9-22c4-4e53-9d7a-3cbf5533ac9b.jpg?1562763743
 value=2.750
 rarity=C
 type=Creature

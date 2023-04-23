@@ -1,5 +1,5 @@
 name=Stormsurge Kraken
-image=https://magiccards.info/scans/en/c14/18.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed1c1121-593d-4780-a1d0-5fbd2c09a9f2.jpg?1561963771
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Skirk Shaman
-image=https://magiccards.info/scans/en/pc/123.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59b675da-f709-4aa3-8967-c9771234f9d8.jpg?1619397644
 image_updated=2017-01-08
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Skygames
-image=https://magiccards.info/scans/en/gtc/51.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7ab5bf75-762f-46ef-8304-aacdb248bc5b.jpg?1561832752
 value=2.019
 rarity=C
 type=Enchantment

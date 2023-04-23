@@ -1,5 +1,5 @@
 name=Spore Cloud
-image=https://magiccards.info/scans/en/fe/83.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a2cd32d-dea1-4d58-b8d6-5d7176c967f2.jpg?1581799343
 value=3.774
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Kavu Climber
-image=https://magiccards.info/scans/en/a25/175.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da95f41d-ad5a-4861-94e2-a564dbf4f3c9.jpg?1562441700
 image_updated=2018-04-27
 value=3.118
 rarity=C

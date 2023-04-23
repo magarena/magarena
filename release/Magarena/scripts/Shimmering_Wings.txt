@@ -1,5 +1,5 @@
 name=Shimmering Wings
-image=https://magiccards.info/scans/en/10e/107.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66c9aa9f-acd5-4908-9e11-1a152363ef42.jpg?1562548979
 value=3.842
 rarity=C
 type=Enchantment

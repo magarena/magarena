@@ -1,5 +1,5 @@
 name=Kirtar's Wrath
-image=https://magiccards.info/scans/en/od/28.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f9a11d2-e422-430d-af2a-525fc4a2e2cc.jpg?1641601410
 value=3.767
 rarity=R
 type=Sorcery

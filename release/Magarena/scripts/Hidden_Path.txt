@@ -1,5 +1,5 @@
 name=Hidden Path
-image=https://magiccards.info/scans/en/dk/41.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbc93c0b-0ac8-4b8f-b2f6-96887d1acd77.jpg?1587910729
 value=1.297
 rarity=R
 type=Enchantment

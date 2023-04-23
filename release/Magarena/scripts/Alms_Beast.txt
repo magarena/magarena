@@ -1,5 +1,5 @@
 name=Alms Beast
-image=https://magiccards.info/scans/en/gtc/141.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce441759-cd4c-4bcc-925e-08e8b60853c0.jpg?1561846666
 value=3.266
 rarity=R
 type=Creature

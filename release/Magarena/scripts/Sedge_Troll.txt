@@ -1,5 +1,5 @@
 name=Sedge Troll
-image=https://magiccards.info/scans/en/rv/173.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78de6044-1ed8-4fd9-822c-69658e3f3fba.jpg?1562923517
 value=4.190
 rarity=R
 type=Creature

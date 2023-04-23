@@ -1,5 +1,5 @@
 name=Riot Devils
-image=https://magiccards.info/scans/en/isd/160.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd35107b-6aaf-4fd8-bf1c-12b724d1482e.jpg?1562837220
 value=2.158
 rarity=C
 type=Creature

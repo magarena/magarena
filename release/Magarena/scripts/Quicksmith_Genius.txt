@@ -1,5 +1,5 @@
 name=Quicksmith Genius
-image=https://magiccards.info/scans/en/kld/125.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fed8df9-600c-4502-83a3-883724f2f7c6.jpg?1625194031
 image_updated=2016-10-05
 value=2.500
 rarity=U

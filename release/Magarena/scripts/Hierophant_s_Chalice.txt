@@ -1,5 +1,5 @@
 name=Hierophant's Chalice
-image=https://magiccards.info/scans/en/xln/240.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e8be52c-25ce-49da-8435-58797550f058.jpg?1562557259
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Boggart Sprite-Chaser
-image=https://magiccards.info/scans/en/lw/156.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/6341b73b-a035-45a2-908d-879c8eed4bbd.jpg?1562350753
 value=2.439
 rarity=C
 type=Creature

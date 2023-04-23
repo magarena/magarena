@@ -1,5 +1,5 @@
 name=Orazca Frillback
-image=https://magiccards.info/scans/en/rix/140.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20471a3b-90f9-4463-9b43-fc7b9b28f5d1.jpg?1601079853
 value=2.500
 rarity=C
 type=Creature

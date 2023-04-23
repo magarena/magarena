@@ -1,5 +1,5 @@
 name=Stormrider Spirit
-image=https://magiccards.info/scans/en/soi/91.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81a95edb-9f5b-4e42-8b27-0b3d978dcefe.jpg?1675567504
 value=2.500
 rarity=C
 type=Creature

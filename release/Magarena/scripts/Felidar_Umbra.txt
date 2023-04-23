@@ -1,5 +1,5 @@
 name=Felidar Umbra
-image=https://magiccards.info/scans/en/pc2/6.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4986689-def4-4c8f-836b-4f89a25790ae.jpg?1562925766
 value=3.471
 rarity=U
 type=Enchantment

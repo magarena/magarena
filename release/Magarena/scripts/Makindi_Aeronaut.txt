@@ -1,5 +1,5 @@
 name=Makindi Aeronaut
-image=https://magiccards.info/scans/en/ogw/27.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a35d3113-6cb7-4b74-94a3-8160d9ac1b89.jpg?1562928020
 image_updated=2016-02-29
 value=2.500
 rarity=C

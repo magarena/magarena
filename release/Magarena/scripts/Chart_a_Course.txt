@@ -1,5 +1,5 @@
 name=Chart a Course
-image=https://magiccards.info/scans/en/xln/48.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a6f256b-943e-4cfb-9fc9-d1ded68b5f97.jpg?1600713688
 value=2.500
 rarity=U
 type=Sorcery

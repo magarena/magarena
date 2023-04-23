@@ -1,5 +1,5 @@
 name=Knight of Valor
-image=https://magiccards.info/scans/en/vi/111.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25aa80ae-bb17-4e52-a269-efe75cf4c041.jpg?1562277415
 value=3.662
 rarity=C
 type=Creature

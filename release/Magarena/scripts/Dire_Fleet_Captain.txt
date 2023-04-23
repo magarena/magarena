@@ -1,5 +1,5 @@
 name=Dire Fleet Captain
-image=https://magiccards.info/scans/en/xln/221.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8200f8a3-d60b-470a-a558-0c3555d1f10b.jpg?1562559016
 value=2.500
 rarity=U
 type=Creature

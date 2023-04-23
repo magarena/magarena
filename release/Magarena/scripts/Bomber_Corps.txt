@@ -1,5 +1,5 @@
 name=Bomber Corps
-image=https://magiccards.info/scans/en/gtc/86.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b1675f2-e950-4f3c-9dd3-29ead615ff23.jpg?1561838551
 value=2.786
 rarity=C
 type=Creature

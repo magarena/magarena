@@ -1,5 +1,5 @@
 name=Acidic Slime
-image=https://magiccards.info/scans/en/m13/159.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c672b34d-066e-40e6-a499-3ab68ea6514c.jpg?1651655915
 image_updated=2016-02-29
 value=3.636
 removal=2

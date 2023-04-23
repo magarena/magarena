@@ -1,5 +1,5 @@
 name=Kitsune Dawnblade
-image=https://magiccards.info/scans/en/sok/16.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b09ab22e-aa22-4d6b-87c6-970563486f21.jpg?1562495584
 value=1.743
 rarity=C
 type=Creature

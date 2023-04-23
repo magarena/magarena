@@ -1,5 +1,5 @@
 name=Voice of the Woods
-image=https://magiccards.info/scans/en/on/297.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7a6315c-aa6f-4be1-a002-d7824bfad622.jpg?1631235256
 image_updated=2017-01-11
 value=3.868
 rarity=R

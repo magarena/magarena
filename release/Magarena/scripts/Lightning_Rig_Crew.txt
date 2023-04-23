@@ -1,5 +1,5 @@
 name=Lightning-Rig Crew
-image=https://magiccards.info/scans/en/xln/150.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8fa676ef-3f26-43bb-98f9-9b0b9681a7fe.jpg?1608910315
 value=2.500
 rarity=U
 type=Creature

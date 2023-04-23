@@ -1,5 +1,5 @@
 name=Riptide Pilferer
-image=https://magiccards.info/scans/en/pc/60.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5fb9744-79cc-48d6-9e3b-f16073dde1e4.jpg?1619394589
 value=3.434
 rarity=U
 type=Creature

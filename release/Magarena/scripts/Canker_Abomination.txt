@@ -1,5 +1,5 @@
 name=Canker Abomination
-image=https://magiccards.info/scans/en/eve/115.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7158f78-daf3-46ff-aa5f-f8cff3a24ed5.jpg?1547518163
 value=3.283
 rarity=U
 type=Creature

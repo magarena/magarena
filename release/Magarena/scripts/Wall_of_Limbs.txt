@@ -1,5 +1,5 @@
 name=Wall of Limbs
-image=https://magiccards.info/scans/en/m15/121.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66d46b81-3131-4561-beca-ccf4a0973610.jpg?1562788211
 value=2.583
 rarity=U
 type=Creature

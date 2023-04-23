@@ -1,5 +1,5 @@
 name=Lay Waste
-image=https://magiccards.info/scans/en/on/216.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22061b5e-81d3-4c7f-ab39-7ee719c13cef.jpg?1562903003
 value=2.783
 removal=2
 rarity=C

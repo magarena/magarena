@@ -1,5 +1,5 @@
 name=Gaea's Bounty
-image=https://magiccards.info/scans/en/us/254.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66b55e37-fcad-4d50-89d4-5d88269fee66.jpg?1562916474
 value=3.030
 rarity=C
 type=Sorcery

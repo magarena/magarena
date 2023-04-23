@@ -1,5 +1,5 @@
 name=Marchesa, the Black Rose
-image=https://magiccards.info/scans/en/cns/49.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3242a9f0-2ba3-4852-ac8f-366772ac1c62.jpg?1673148917
 value=4.212
 rarity=M
 type=Legendary,Creature

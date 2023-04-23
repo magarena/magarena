@@ -1,5 +1,5 @@
 name=Grave Strength
-image=https://magiccards.info/scans/en/frf/71.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b51b6c19-d8f8-4249-83c8-f3c4fa12291e.jpg?1547516919
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Brass Gnat
-image=https://magiccards.info/scans/en/ts/249.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/386ae7c6-347c-4b29-b7a9-3ca3bb050396.jpg?1562906844
 value=1.683
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Tracker
-image=https://magiccards.info/scans/en/dk/52.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74f0400c-35dd-4ba5-97d1-2e57689c9d53.jpg?1562919612
 value=3.848
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Soltari Champion
-image=https://magiccards.info/scans/en/sh/118.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b160fb40-daa7-4269-9d9d-93a47ebf9999.jpg?1562431265
 value=4.408
 rarity=R
 type=Creature

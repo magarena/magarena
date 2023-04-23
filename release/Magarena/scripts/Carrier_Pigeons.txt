@@ -1,5 +1,5 @@
 name=Carrier Pigeons
-image=https://magiccards.info/scans/en/ai/125.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5543b08d-d470-435e-83d9-a3a84c1cc2e6.jpg?1562768711
 value=1.798
 rarity=C
 type=Creature

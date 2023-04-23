@@ -1,5 +1,5 @@
 name=Reckless Assault
-image=https://magiccards.info/scans/en/in/263.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff0f568e-4d3a-40a5-b72a-63040ec5402d.jpg?1562946506
 value=2.645
 rarity=R
 type=Enchantment

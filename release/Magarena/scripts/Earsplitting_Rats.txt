@@ -1,5 +1,5 @@
 name=Earsplitting Rats
-image=https://magiccards.info/scans/en/ju/65.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5dad63b5-ced3-4150-ad84-1ca05a892840.jpg?1562630041
 value=1.776
 rarity=C
 type=Creature

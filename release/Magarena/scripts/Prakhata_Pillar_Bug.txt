@@ -1,5 +1,5 @@
 name=Prakhata Pillar-Bug
-image=https://magiccards.info/scans/en/kld/228.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c91b356-b5d8-4239-bb45-dec7f673868d.jpg?1576383343
 image_updated=2016-10-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Quiet Contemplation
-image=https://magiccards.info/scans/en/ktk/50.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5dc7c9d5-904e-4ab6-9773-5c4f1c6d34c4.jpg?1562787233
 value=2.750
 rarity=U
 type=Enchantment

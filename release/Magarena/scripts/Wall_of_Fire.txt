@@ -1,5 +1,5 @@
 name=Wall of Fire
-image=https://magiccards.info/scans/en/m15/167.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f8ac968-3d00-40d8-80b5-e6fe08025de2.jpg?1562788853
 value=1.900
 rarity=C
 type=Creature

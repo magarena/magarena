@@ -1,5 +1,5 @@
 name=Triskelion
-image=https://magiccards.info/scans/en/m11/218.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63349fa3-4462-413c-bd96-bbc1049165a0.jpg?1682210302
 image_updated=2017-01-11
 value=4.093
 rarity=R

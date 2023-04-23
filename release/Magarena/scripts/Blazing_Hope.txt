@@ -1,5 +1,5 @@
 name=Blazing Hope
-image=https://magiccards.info/scans/en/rix/3.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6beac36-e12f-408d-a37b-a70e0e6c52d8.jpg?1555039660
 value=2.500
 rarity=U
 type=Instant

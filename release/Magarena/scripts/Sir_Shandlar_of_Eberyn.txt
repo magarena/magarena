@@ -1,5 +1,5 @@
 name=Sir Shandlar of Eberyn
-image=https://magiccards.info/scans/en/lg/297.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a92c419-8f1e-4604-824d-28b086b54216.jpg?1562904030
 value=2.013
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Frog Tongue
-image=https://magiccards.info/scans/en/tp/122.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/3941e799-a254-423e-90bb-091dbe56ca6a.jpg?1562053745
 value=3.738
 rarity=C
 type=Enchantment

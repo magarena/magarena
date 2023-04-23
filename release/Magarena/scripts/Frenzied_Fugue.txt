@@ -1,5 +1,5 @@
 name=Frenzied Fugue
-image=https://magiccards.info/scans/en/c16/18.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d095412d-874b-4d5d-9672-6074bbc4fcf5.jpg?1562420532
 image_updated=2016-12-02
 value=2.500
 rarity=U

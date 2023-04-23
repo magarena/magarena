@@ -1,5 +1,5 @@
 name=Augur il-Vec
-image=https://magiccards.info/scans/en/fut/2.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c1fdf86-22aa-4c18-a971-8ff1fd8b3de1.jpg?1562900568
 value=2.811
 rarity=C
 type=Creature

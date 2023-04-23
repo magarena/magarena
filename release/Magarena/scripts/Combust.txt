@@ -1,5 +1,5 @@
 name=Combust
-image=https://magiccards.info/scans/en/mm2/110.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0acedb1-874c-48ea-820d-f1b1f8cb2553.jpg?1562265677
 value=3.188
 removal=4
 rarity=U

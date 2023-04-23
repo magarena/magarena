@@ -1,5 +1,5 @@
 name=Deep-Slumber Titan
-image=https://magiccards.info/scans/en/shm/89.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbe3a68e-c29e-48a8-a2d7-49c8bff3dd8a.jpg?1562836028
 value=3.089
 rarity=R
 type=Creature

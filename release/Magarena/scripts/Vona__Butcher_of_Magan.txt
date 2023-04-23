@@ -1,5 +1,5 @@
 name=Vona, Butcher of Magan
-image=https://magiccards.info/scans/en/xln/231.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1dea34d8-c68f-41b5-8476-fd6128d69576.jpg?1682209887
 value=2.500
 rarity=M
 type=Legendary,Creature

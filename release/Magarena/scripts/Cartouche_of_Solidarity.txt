@@ -1,5 +1,5 @@
 name=Cartouche of Solidarity
-image=https://magiccards.info/scans/en/akh/7.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90eaf94e-85a7-4958-aa58-8e2fe44db58d.jpg?1543674599
 value=2.500
 rarity=C
 type=Enchantment

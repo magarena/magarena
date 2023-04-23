@@ -1,5 +1,5 @@
 name=Martyrs' Tomb
-image=https://magiccards.info/scans/en/ap/110.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a906a775-7c2d-47b7-a20e-a325dd28d0bd.jpg?1562934981
 value=1.378
 rarity=U
 type=Enchantment

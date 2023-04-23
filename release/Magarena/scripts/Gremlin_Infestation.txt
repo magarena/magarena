@@ -1,5 +1,5 @@
 name=Gremlin Infestation
-image=https://magiccards.info/scans/en/aer/83.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b51438f5-c4d4-434a-b7ea-dee0b60303e4.jpg?1576381801
 value=2.500
 rarity=U
 type=Enchantment

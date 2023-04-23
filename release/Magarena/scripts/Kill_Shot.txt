@@ -1,5 +1,5 @@
 name=Kill Shot
-image=https://magiccards.info/scans/en/cn2/94.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61b0b9a3-8f50-4fba-9978-409f3369afa6.jpg?1664409768
 image_updated=2017-08-29
 value=2.833
 rarity=C

@@ -1,5 +1,5 @@
 name=Mortal Wound
-image=https://magiccards.info/scans/en/vi/63.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/808830ff-496a-41dc-8b64-334ddaca9435.jpg?1587913094
 value=3.062
 rarity=C
 type=Enchantment

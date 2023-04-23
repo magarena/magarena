@@ -1,5 +1,5 @@
 name=Thalakos Sentry
-image=https://magiccards.info/scans/en/tp/95.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/739a13d6-5f73-4166-b923-9db8ee3f2cf7.jpg?1562054488
 value=2.514
 rarity=C
 type=Creature

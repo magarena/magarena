@@ -1,5 +1,5 @@
 name=Shaleskin Plower
-image=https://magiccards.info/scans/en/le/110.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42658b33-9a12-403b-bc7d-807fbe1f1a36.jpg?1562908348
 value=1.820
 rarity=C
 type=Creature

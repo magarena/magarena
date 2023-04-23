@@ -1,5 +1,5 @@
 name=Ironclad Slayer
-image=https://magiccards.info/scans/en/emn/31.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/2841f538-9686-423f-ac30-0580665112e5.jpg?1608911916
 image_updated=2016-09-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Ruthless Sniper
-image=https://magiccards.info/scans/en/akh/105.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d916306a-5cb3-4a38-9038-a433525c5b7b.jpg?1543675382
 value=2.500
 rarity=U
 type=Creature

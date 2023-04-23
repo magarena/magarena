@@ -1,5 +1,5 @@
 name=Skyswirl Harrier
-image=https://magiccards.info/scans/en/kld/28.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b951bc89-be0b-4330-8a13-e196e084d53c.jpg?1576380997
 image_updated=2016-10-05
 value=2.500
 rarity=C

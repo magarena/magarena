@@ -1,5 +1,5 @@
 name=Flinthoof Boar
-image=https://magiccards.info/scans/en/ema/166.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/873be98f-e263-4e84-afa0-1e329aa47550.jpg?1580014780
 value=3.992
 rarity=U
 type=Creature

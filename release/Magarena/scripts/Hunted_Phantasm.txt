@@ -1,5 +1,5 @@
 name=Hunted Phantasm
-image=https://magiccards.info/scans/en/rav/55.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/faec8ab3-80c6-4b8f-a60d-50cc683e66b4.jpg?1598914292
 value=3.920
 rarity=R
 type=Creature

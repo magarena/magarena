@@ -1,5 +1,5 @@
 name=Rhystic Shield
-image=https://magiccards.info/scans/en/pr/20.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49af7b3f-f56a-4102-b398-5c215dd4fa11.jpg?1562908445
 value=2.093
 rarity=C
 type=Instant

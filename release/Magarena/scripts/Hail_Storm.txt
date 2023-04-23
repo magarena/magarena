@@ -1,5 +1,5 @@
 name=Hail Storm
-image=https://magiccards.info/scans/en/tsts/79.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8627bdbb-0ee3-4f4e-9016-ca0d33d27d40.jpg?1562779504
 value=3.221
 rarity=U
 type=Instant

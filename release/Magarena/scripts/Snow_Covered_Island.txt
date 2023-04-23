@@ -1,5 +1,5 @@
 name=Snow-Covered Island
-image=https://magiccards.info/scans/en/cs/152.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bfa5ebc-5623-4eec-89ea-dc187489ee4a.jpg?1631053379
 value=4.535
 rarity=B
 type=Basic,Snow,Land

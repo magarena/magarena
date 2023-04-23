@@ -1,5 +1,5 @@
 name=Captivating Crew
-image=https://magiccards.info/scans/en/xln/137.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f0ba1fb-30b1-413e-9b7c-790055e2d911.jpg?1591320543
 value=2.500
 rarity=R
 type=Creature

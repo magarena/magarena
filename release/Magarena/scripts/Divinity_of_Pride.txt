@@ -1,5 +1,5 @@
 name=Divinity of Pride
-image=https://magiccards.info/scans/en/mma/188.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e40c246-276b-45f1-ac86-f15c0df62a08.jpg?1562904711
 value=3.946
 rarity=R
 type=Creature

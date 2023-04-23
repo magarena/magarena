@@ -1,5 +1,5 @@
 name=Oblation
-image=https://magiccards.info/scans/en/c16/71.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcfdea72-4736-4442-987b-173f6885528a.jpg?1625193187
 image_updated=2017-08-17
 value=4.118
 rarity=R

@@ -1,5 +1,5 @@
 name=Benediction of Moons
-image=https://magiccards.info/scans/en/gp/3.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8ea99d1-9e88-4b14-b0b3-39bcd8191eab.jpg?1593271827
 value=2.026
 rarity=C
 type=Sorcery

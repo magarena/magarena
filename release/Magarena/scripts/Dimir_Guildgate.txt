@@ -1,5 +1,5 @@
 name=Dimir Guildgate
-image=https://magiccards.info/scans/en/mm3/234.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b7faa71-72f3-4b64-b6e2-d05ebd9c705d.jpg?1604196105
 image_updated=2017-08-08
 value=3.050
 rarity=C

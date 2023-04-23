@@ -1,5 +1,5 @@
 name=Blasphemous Act
-image=https://magiccards.info/scans/en/c16/120.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba975f60-ca29-4fc8-b2f0-416be395f200.jpg?1674141874
 image_updated=2017-08-17
 value=2.500
 rarity=R

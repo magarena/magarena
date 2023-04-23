@@ -1,5 +1,5 @@
 name=Whiptail Wurm
-image=https://magiccards.info/scans/en/st/149.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34a420d8-7e03-40a3-8132-10a566e12eb0.jpg?1562907365
 value=3.019
 rarity=U
 type=Creature

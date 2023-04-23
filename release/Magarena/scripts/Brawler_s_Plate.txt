@@ -1,5 +1,5 @@
 name=Brawler's Plate
-image=https://magiccards.info/scans/en/ori/224.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da0a017e-eb8e-4f92-91f7-7d980461e284.jpg?1562044708
 image_updated=2015-11-05
 value=2.500
 rarity=U

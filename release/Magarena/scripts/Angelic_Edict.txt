@@ -1,5 +1,5 @@
 name=Angelic Edict
-image=https://magiccards.info/scans/en/gtc/2.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f14ed7f7-83c4-425b-a2b7-5bd76558ce76.jpg?1600695922
 value=2.782
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Timberwatch Elf
-image=https://magiccards.info/scans/en/ema/190.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38807f17-1cf2-4736-ad10-df6c8b1a9f55.jpg?1631235210
 value=4.324
 rarity=U
 type=Creature

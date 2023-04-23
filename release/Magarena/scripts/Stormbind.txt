@@ -1,5 +1,5 @@
 name=Stormbind
-image=https://magiccards.info/scans/en/tsts/102.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45f03556-cef5-438d-a1d8-66c297502622.jpg?1562775467
 value=3.776
 rarity=R
 type=Enchantment

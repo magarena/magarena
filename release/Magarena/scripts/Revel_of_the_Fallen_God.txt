@@ -1,5 +1,5 @@
 name=Revel of the Fallen God
-image=https://magiccards.info/scans/en/jou/155.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1d2c774-aab9-4747-af91-da792ed7cfe1.jpg?1593096451
 value=3.045
 rarity=R
 type=Sorcery

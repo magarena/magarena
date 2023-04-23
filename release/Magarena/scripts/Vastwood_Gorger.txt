@@ -1,5 +1,5 @@
 name=Vastwood Gorger
-image=https://magiccards.info/scans/en/ori/204.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72f53dc9-5397-49e1-97d4-3b0b6858f2b2.jpg?1562025719
 image_updated=2015-11-05
 value=2.500
 rarity=C

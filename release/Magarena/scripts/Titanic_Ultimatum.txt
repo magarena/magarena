@@ -1,5 +1,5 @@
 name=Titanic Ultimatum
-image=https://magiccards.info/scans/en/ala/204.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9b86d97-3cfa-4510-a3da-1a85cd8d2ba9.jpg?1562935111
 value=3.190
 rarity=R
 type=Sorcery

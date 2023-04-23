@@ -1,5 +1,5 @@
 name=Slate of Ancestry
-image=https://magiccards.info/scans/en/9e/308.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87809c72-055f-4055-85a7-86d41bd655f1.jpg?1562922385
 image_updated=2017-01-08
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Covert Operative
-image=https://magiccards.info/scans/en/le/33.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbda6799-3b55-4714-8305-713e1e198a15.jpg?1562939217
 value=2.694
 rarity=C
 type=Creature

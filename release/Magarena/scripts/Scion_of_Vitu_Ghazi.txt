@@ -1,5 +1,5 @@
 name=Scion of Vitu-Ghazi
-image=https://magiccards.info/scans/en/dgm/7.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cd20865-0a9a-4a72-92f9-77c8d6384b46.jpg?1562906193
 value=3.784
 rarity=R
 type=Creature

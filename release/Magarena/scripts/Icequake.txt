@@ -1,5 +1,5 @@
 name=Icequake
-image=https://magiccards.info/scans/en/ia/22.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/550880ba-26a0-463d-9da2-0160d224cda1.jpg?1562868563
 value=4.080
 rarity=U
 type=Sorcery

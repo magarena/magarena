@@ -1,5 +1,5 @@
 name=Lightning Greaves
-image=https://magiccards.info/scans/en/c16/260.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d9f47af-5929-44f4-bc6b-3ac7e521177d.jpg?1674142641
 image_updated=2017-08-17
 value=4.438
 rarity=U

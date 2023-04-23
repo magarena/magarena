@@ -1,5 +1,5 @@
 name=Rhet-Crop Spearmaster
-image=https://magiccards.info/scans/en/akh/26.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fcfc2d3-8719-4ba1-b4c5-b2f8f6bab634.jpg?1543674752
 value=2.500
 rarity=C
 type=Creature

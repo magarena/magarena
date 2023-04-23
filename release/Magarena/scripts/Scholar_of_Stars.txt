@@ -1,5 +1,5 @@
 name=Scholar of Stars
-image=https://magiccards.info/scans/en/m19/71.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fc4498e-24e6-40e9-8cd5-f42220366664.jpg?1608909425
 value=2.500
 rarity=C
 type=Creature

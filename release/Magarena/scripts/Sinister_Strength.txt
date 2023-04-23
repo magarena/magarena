@@ -1,5 +1,5 @@
 name=Sinister Strength
-image=https://magiccards.info/scans/en/ps/54.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afe487b8-c1ae-483d-bcd5-62c62b66a22e.jpg?1562932134
 value=3.888
 rarity=C
 type=Enchantment

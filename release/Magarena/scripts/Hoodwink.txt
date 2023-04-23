@@ -1,5 +1,5 @@
 name=Hoodwink
-image=https://magiccards.info/scans/en/mm/84.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d505fbb-ec85-475b-a0e1-6670627ec017.jpg?1562381852
 value=3.475
 rarity=C
 type=Instant

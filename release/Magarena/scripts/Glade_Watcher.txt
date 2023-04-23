@@ -1,5 +1,5 @@
 name=Glade Watcher
-image=https://magiccards.info/scans/en/dtk/188.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02c9c6d9-e715-4b70-a10e-8bc5a4e9e938.jpg?1562781880
 value=2.500
 rarity=C
 type=Creature

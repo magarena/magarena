@@ -1,5 +1,5 @@
 name=Scuttling Death
-image=https://magiccards.info/scans/en/mm2/94.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f68a90c-1afb-43d3-aed2-4704f4599e75.jpg?1562264271
 value=1.141
 rarity=C
 type=Creature

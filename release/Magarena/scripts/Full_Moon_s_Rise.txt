@@ -1,5 +1,5 @@
 name=Full Moon's Rise
-image=https://magiccards.info/scans/en/isd/180.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02a35eac-b962-466e-a4da-a4010c68ef16.jpg?1562825453
 value=3.840
 rarity=U
 type=Enchantment

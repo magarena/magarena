@@ -1,5 +1,5 @@
 name=Steam Catapult
-image=https://magiccards.info/scans/en/po2/142.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11fa8831-6a17-4ac4-8ea0-5599fbfb8e20.jpg?1562899332
 value=3.395
 rarity=R
 type=Creature

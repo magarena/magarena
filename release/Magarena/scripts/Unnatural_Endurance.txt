@@ -1,5 +1,5 @@
 name=Unnatural Endurance
-image=https://magiccards.info/scans/en/ogw/80.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac497133-a44a-4acc-ba7e-8fc1fae7e226.jpg?1562929741
 image_updated=2016-02-29
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Esperzoa
-image=https://magiccards.info/scans/en/mma/43.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7269b26a-058c-4a5c-aadf-733ea60f3de0.jpg?1598303863
 value=4.075
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Mundungu
-image=https://magiccards.info/scans/en/vi/132.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6e320ca-848b-4743-93f1-ec04ef1ce402.jpg?1562278648
 value=4.221
 rarity=U
 type=Creature

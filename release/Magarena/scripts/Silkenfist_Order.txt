@@ -1,5 +1,5 @@
 name=Silkenfist Order
-image=https://magiccards.info/scans/en/ne/20.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93741517-90ed-46fe-a505-fe6299f188bf.jpg?1562631069
 value=2.750
 rarity=U
 type=Creature

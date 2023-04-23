@@ -1,5 +1,5 @@
 name=Seasoned Marshal
-image=https://magiccards.info/scans/en/9e/42.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11fafc94-543b-4e9d-83aa-ac510aed87ea.jpg?1562269787
 image_updated=2017-01-07
 value=3.296
 rarity=U

@@ -1,5 +1,5 @@
 name=Spectral Lynx
-image=https://magiccards.info/scans/en/ap/17.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13099abe-721e-42b4-9666-9e6b5f1d75c9.jpg?1562899518
 value=4.147
 rarity=R
 type=Creature

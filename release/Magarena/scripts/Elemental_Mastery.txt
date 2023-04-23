@@ -1,5 +1,5 @@
 name=Elemental Mastery
-image=https://magiccards.info/scans/en/shm/90.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77dd1c84-0c67-41a2-aa19-ca448520ac54.jpg?1651655836
 value=3.724
 rarity=R
 type=Enchantment

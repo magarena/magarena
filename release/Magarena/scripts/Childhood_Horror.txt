@@ -1,5 +1,5 @@
 name=Childhood Horror
-image=https://magiccards.info/scans/en/od/123.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10c180ea-2d1e-458e-b5d4-e87975eba968.jpg?1562898263
 value=2.525
 rarity=U
 type=Creature

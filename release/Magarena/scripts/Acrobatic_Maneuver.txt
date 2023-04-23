@@ -1,5 +1,5 @@
 name=Acrobatic Maneuver
-image=https://magiccards.info/scans/en/kld/1.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74f92174-f38f-4623-a5f7-f5be7f7dcc9d.jpg?1576380687
 image_updated=2016-10-05
 value=2.500
 rarity=C

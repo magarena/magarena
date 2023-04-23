@@ -1,5 +1,5 @@
 name=Swarmyard
-image=https://magiccards.info/scans/en/ts/278.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b89329f2-d386-40a7-9098-6d80beeb8843.jpg?1619399479
 value=4.129
 rarity=R
 type=Land

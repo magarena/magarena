@@ -1,5 +1,5 @@
 name=Ixidor, Reality Sculptor
-image=https://magiccards.info/scans/en/on/89.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/314d5e89-55f7-42b4-af19-d4d0f499a265.jpg?1562906514
 value=3.968
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Lightning Elemental
-image=https://magiccards.info/scans/en/m12/149.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f2a959e-7c17-4226-afcb-bc0bb5a4492b.jpg?1601078310
 value=3.125
 rarity=C
 type=Creature

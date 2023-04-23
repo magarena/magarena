@@ -1,5 +1,5 @@
 name=Confirm Suspicions
-image=https://magiccards.info/scans/en/soi/53.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf7fcbc2-1034-442d-9f2a-7d79ea40ac3d.jpg?1576384007
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Mogg Maniac
-image=https://magiccards.info/scans/en/sh/94.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df726d89-5246-4ece-89ff-f059e06e4460.jpg?1562431771
 value=4.436
 rarity=U
 type=Creature

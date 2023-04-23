@@ -1,5 +1,5 @@
 name=Striped Bears
-image=https://magiccards.info/scans/en/wl/82.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bf54365-56ae-485d-b931-784a4cf9d8f2.jpg?1562799312
 value=3.059
 rarity=C
 type=Creature

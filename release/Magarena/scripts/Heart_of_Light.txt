@@ -1,5 +1,5 @@
 name=Heart of Light
-image=https://magiccards.info/scans/en/10e/19.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45aa4b29-ce6b-4579-bee6-06a9ccfda55c.jpg?1562546998
 value=2.878
 rarity=C
 type=Enchantment

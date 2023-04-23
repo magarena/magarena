@@ -1,5 +1,5 @@
 name=Duct Crawler
-image=https://magiccards.info/scans/en/10e/198.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d913e4d2-3502-41f3-871e-59b3b13df58a.jpg?1562556067
 value=2.847
 rarity=C
 type=Creature

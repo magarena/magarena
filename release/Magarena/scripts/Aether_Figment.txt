@@ -1,5 +1,5 @@
 name=Aether Figment
-image=https://magiccards.info/scans/en/zen/40.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15fd5ce4-335f-409c-a09e-e17a41c2da71.jpg?1592754370
 image_updated=2016-09-27
 value=3.833
 rarity=U

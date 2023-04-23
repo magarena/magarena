@@ -1,5 +1,5 @@
 name=Lord of Tresserhorn
-image=https://magiccards.info/scans/en/ai/193.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d9d8732-9ff2-42e4-bdfc-723cb6a76969.jpg?1559592370
 value=4.029
 rarity=R
 type=Legendary,Creature

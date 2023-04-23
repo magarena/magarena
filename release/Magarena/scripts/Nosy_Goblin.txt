@@ -1,5 +1,5 @@
 name=Nosy Goblin
-image=https://magiccards.info/scans/en/on/220.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70ea023e-e66d-4049-b7bc-5e660804f088.jpg?1562921618
 value=2.103
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Angel of Fury
-image=https://magiccards.info/scans/en/po2/127.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f230e857-9d47-4fc4-a6de-7a8c0b6c594a.jpg?1562870966
 value=2.629
 rarity=R
 type=Creature

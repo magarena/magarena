@@ -1,5 +1,5 @@
 name=Belligerent Hatchling
-image=https://magiccards.info/scans/en/eve/134.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72cdf36c-d8a2-4629-8f2a-d4ac86ac9320.jpg?1562919099
 value=3.440
 rarity=U
 type=Creature

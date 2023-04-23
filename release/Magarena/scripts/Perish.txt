@@ -1,5 +1,5 @@
 name=Perish
-image=https://magiccards.info/scans/en/6e/148.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77192bdf-d89f-45a1-a30b-20107e990031.jpg?1562819189
 value=4.464
 rarity=U
 type=Sorcery

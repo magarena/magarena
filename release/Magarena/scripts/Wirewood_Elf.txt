@@ -1,5 +1,5 @@
 name=Wirewood Elf
-image=https://magiccards.info/scans/en/on/301.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10a34e31-97f1-40e8-9d91-a8139af7f096.jpg?1562898990
 value=2.167
 rarity=C
 type=Creature

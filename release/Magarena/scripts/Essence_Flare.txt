@@ -1,5 +1,5 @@
 name=Essence Flare
-image=https://magiccards.info/scans/en/cstd/11.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/388ab202-e044-4059-84c9-a995c66f053c.jpg?1562868088
 value=2.613
 rarity=C
 type=Enchantment

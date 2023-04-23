@@ -1,5 +1,5 @@
 name=Maddening Wind
-image=https://magiccards.info/scans/en/ia/142.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/5277656c-70f5-4660-bd58-7d9261d53fb5.jpg?1587912036
 value=2.583
 rarity=U
 type=Enchantment

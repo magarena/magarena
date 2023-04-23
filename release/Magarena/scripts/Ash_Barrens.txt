@@ -1,5 +1,5 @@
 name=Ash Barrens
-image=https://magiccards.info/scans/en/a25/236.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb71aebf-f5d3-45ee-91a4-51088f7141ec.jpg?1674142786
 image_updated=2018-04-26
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Trailblazer
-image=https://magiccards.info/scans/en/ia/160.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/9194c69d-c849-4c4a-976c-d1382bd5cf32.jpg?1587912076
 value=1.857
 rarity=R
 type=Instant

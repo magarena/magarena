@@ -1,5 +1,5 @@
 name=Shu Grain Caravan
-image=https://magiccards.info/scans/en/p3k/26.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bf26eb7-8a31-4022-87bb-67394653f06a.jpg?1562257025
 value=2.688
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Horned Cheetah
-image=https://magiccards.info/scans/en/in/251.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a28ad983-ce91-40b6-a1ce-fe36ec7fbce8.jpg?1562927850
 value=2.309
 rarity=U
 type=Creature

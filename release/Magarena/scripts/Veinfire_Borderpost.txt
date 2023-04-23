@@ -1,5 +1,5 @@
 name=Veinfire Borderpost
-image=https://magiccards.info/scans/en/arb/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75ad0cc1-66bd-43c3-a296-c36cf9a64e85.jpg?1562642156
 value=3.014
 rarity=C
 type=Artifact

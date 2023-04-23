@@ -1,5 +1,5 @@
 name=Shardless Agent
-image=https://magiccards.info/scans/en/ema/206.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0824e77-c84b-464a-aa0c-44af5f6faa50.jpg?1626100788
 value=4.316
 rarity=R
 type=Artifact,Creature

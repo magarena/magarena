@@ -1,5 +1,5 @@
 name=Obelisk of Alara
-image=https://magiccards.info/scans/en/cfx/140.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cc12ebe-54d8-4b91-8c68-3cde5690e26a.jpg?1562801225
 value=3.426
 rarity=R
 type=Artifact

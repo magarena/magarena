@@ -1,5 +1,5 @@
 name=Walking Archive
-image=https://magiccards.info/scans/en/di/169.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c390e074-bd30-4564-a39a-176af7df79f4.jpg?1593274060
 value=3.370
 rarity=R
 type=Artifact,Creature

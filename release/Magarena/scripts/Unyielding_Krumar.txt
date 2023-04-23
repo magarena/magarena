@@ -1,5 +1,5 @@
 name=Unyielding Krumar
-image=https://magiccards.info/scans/en/ktk/94.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a232d196-490d-4712-b2a2-466751b28d11.jpg?1562791316
 value=2.750
 rarity=C
 type=Creature

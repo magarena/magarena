@@ -1,5 +1,5 @@
 name=Razorclaw Bear
-image=https://magiccards.info/scans/en/po2/82.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08c0cdbe-ca74-4edc-96ea-6db8eefe99d8.jpg?1562897011
 value=3.548
 rarity=R
 type=Creature

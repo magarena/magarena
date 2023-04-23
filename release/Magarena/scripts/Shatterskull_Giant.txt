@@ -1,5 +1,5 @@
 name=Shatterskull Giant
-image=https://magiccards.info/scans/en/zen/148.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cfbb4dd-56a2-4a94-9b15-b3ef8b2f1d0b.jpg?1562614789
 value=2.811
 rarity=C
 type=Creature

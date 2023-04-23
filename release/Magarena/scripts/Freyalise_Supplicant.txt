@@ -1,5 +1,5 @@
 name=Freyalise Supplicant
-image=https://magiccards.info/scans/en/ia/127.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b1e718a-882a-4bdc-9d62-4dda88da0ba0.jpg?1562911851
 value=3.103
 rarity=U
 type=Creature

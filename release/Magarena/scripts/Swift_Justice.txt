@@ -1,5 +1,5 @@
 name=Swift Justice
-image=https://magiccards.info/scans/en/rtr/26.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df2cc327-715b-4fb6-8218-9d01711d1022.jpg?1592754938
 image_updated=2016-01-09
 value=4.000
 rarity=C

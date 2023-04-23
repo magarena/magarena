@@ -1,5 +1,5 @@
 name=Paralyzing Grasp
-image=https://magiccards.info/scans/en/rtr/46.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3dfd97b3-d83e-406f-af45-40eec6347462.jpg?1562785255
 value=2.523
 rarity=C
 type=Enchantment

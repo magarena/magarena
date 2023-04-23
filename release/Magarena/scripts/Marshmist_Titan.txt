@@ -1,5 +1,5 @@
 name=Marshmist Titan
-image=https://magiccards.info/scans/en/bng/76.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/093d2e4c-f2c4-4d4e-a1b7-200327ce23b0.jpg?1593092035
 value=3.702
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fleshformer
-image=https://magiccards.info/scans/en/cfx/45.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00c57090-c1fe-4100-a03c-95607074280e.jpg?1562799064
 value=2.189
 rarity=U
 type=Creature

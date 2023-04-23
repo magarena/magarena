@@ -1,5 +1,5 @@
 name=Mortus Strider
-image=https://magiccards.info/scans/en/gtc/179.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d644eb6e-cc49-4834-bc2c-53f6a4ceb451.jpg?1561848168
 value=3.104
 rarity=C
 type=Creature

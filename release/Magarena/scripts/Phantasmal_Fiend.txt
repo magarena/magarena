@@ -1,5 +1,5 @@
 name=Phantasmal Fiend
-image=https://magiccards.info/scans/en/cstd/30.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98394059-4d87-4583-b1c2-9f74334e1567.jpg?1562869976
 value=2.887
 rarity=C
 type=Creature

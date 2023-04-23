@@ -1,5 +1,5 @@
 name=Festering Wound
-image=https://magiccards.info/scans/en/ud/61.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/927eed13-510b-4b06-811d-91a6a069cb8c.jpg?1562444703
 value=3.481
 rarity=U
 type=Enchantment

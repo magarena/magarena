@@ -1,5 +1,5 @@
 name=Disenchant
-image=https://magiccards.info/scans/en/a25/12.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/658c5caa-d739-4d30-a512-43ac4de900cb.jpg?1674420161
 image_updated=2018-04-27
 value=4.515
 removal=1

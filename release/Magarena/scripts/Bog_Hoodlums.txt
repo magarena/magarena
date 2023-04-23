@@ -1,5 +1,5 @@
 name=Bog Hoodlums
-image=https://magiccards.info/scans/en/lw/100.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2459953-a4b5-4a9c-85ed-928b684d7240.jpg?1562374181
 value=0.814
 rarity=C
 type=Creature

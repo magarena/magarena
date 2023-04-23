@@ -1,5 +1,5 @@
 name=Presence of the Master
-image=https://magiccards.info/scans/en/us/32.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/849adb29-61ad-4307-98b9-61e33aec6500.jpg?1587857394
 value=3.696
 rarity=U
 type=Enchantment

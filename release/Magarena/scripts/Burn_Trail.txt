@@ -1,5 +1,5 @@
 name=Burn Trail
-image=https://magiccards.info/scans/en/shm/86.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f01f9a0-f1d0-4241-a270-df4ed673d1fd.jpg?1562832261
 value=2.797
 rarity=C
 type=Sorcery

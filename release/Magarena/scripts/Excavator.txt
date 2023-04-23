@@ -1,5 +1,5 @@
 name=Excavator
-image=https://magiccards.info/scans/en/tp/277.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6dc3d5b4-b04f-4b34-afd2-72fb3de0a33b.jpg?1562054469
 value=1.769
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Steamflogger Boss
-image=https://magiccards.info/scans/en/fut/121.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/007ce039-def1-4039-a0a0-ba72e8872dc5.jpg?1611976597
 value=3.750
 rarity=R
 type=Creature

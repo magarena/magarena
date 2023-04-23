@@ -1,5 +1,5 @@
 name=Daru Healer
-image=https://magiccards.info/scans/en/on/19.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e4f3eff-ac99-41e2-9003-9630cdb3ae23.jpg?1562898282
 value=1.562
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Hunting Kavu
-image=https://magiccards.info/scans/en/in/252.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8943304a-89c9-48b0-97b4-3e1aa690ca4d.jpg?1562922751
 value=3.294
 rarity=U
 type=Creature

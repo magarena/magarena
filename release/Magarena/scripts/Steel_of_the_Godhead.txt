@@ -1,5 +1,5 @@
 name=Steel of the Godhead
-image=https://magiccards.info/scans/en/shm/150.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d3c9145-14d0-4731-bc07-eb4c3f71d7e4.jpg?1581708395
 image_updated=2016-01-09
 value=3.526
 rarity=C

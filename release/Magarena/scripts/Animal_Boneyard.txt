@@ -1,5 +1,5 @@
 name=Animal Boneyard
-image=https://magiccards.info/scans/en/od/4.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3379317-be18-4252-84ad-b7ebb6e557ff.jpg?1562937487
 value=2.732
 rarity=U
 type=Enchantment

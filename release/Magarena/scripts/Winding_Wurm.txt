@@ -1,5 +1,5 @@
 name=Winding Wurm
-image=https://magiccards.info/scans/en/us/285.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed75dc43-172c-4302-8807-23bfdd65baf4.jpg?1562945019
 value=2.784
 rarity=C
 type=Creature

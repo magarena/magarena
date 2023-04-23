@@ -1,5 +1,5 @@
 name=Warrior's Stand
-image=https://magiccards.info/scans/en/p3k/31.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53bffc2e-67b6-4eb0-9742-e2a5918cc8d8.jpg?1562256535
 value=3.018
 rarity=U
 type=Instant

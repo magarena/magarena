@@ -1,5 +1,5 @@
 name=Skyspear Cavalry
-image=https://magiccards.info/scans/en/jou/26.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c41a35c6-14d9-4b8f-88f1-f1442e4ef222.jpg?1547515891
 value=3.405
 rarity=U
 type=Creature

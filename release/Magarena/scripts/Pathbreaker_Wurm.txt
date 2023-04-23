@@ -1,5 +1,5 @@
 name=Pathbreaker Wurm
-image=https://magiccards.info/scans/en/avr/188.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe65eded-37ef-4cf0-b55c-390d34aab7b8.jpg?1592709409
 value=3.210
 rarity=C
 type=Creature

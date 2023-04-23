@@ -1,5 +1,5 @@
 name=Elephant Guide
-image=https://magiccards.info/scans/en/ema/163.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c997fe6c-cb57-4e0e-9267-42bd12cc3b03.jpg?1580014760
 value=4.400
 rarity=C
 type=Enchantment

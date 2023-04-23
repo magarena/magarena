@@ -1,5 +1,5 @@
 name=Ramosian Lieutenant
-image=https://magiccards.info/scans/en/mm/37.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/debe840a-ebc9-43c4-9bf7-7eb292b65bf9.jpg?1562383499
 value=3.783
 rarity=C
 type=Creature

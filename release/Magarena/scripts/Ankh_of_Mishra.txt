@@ -1,5 +1,5 @@
 name=Ankh of Mishra
-image=https://magiccards.info/scans/en/6e/273.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6f86a32-8863-45da-99be-ef886c89f2c5.jpg?1562928739
 value=4.000
 rarity=R
 type=Artifact

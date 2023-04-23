@@ -1,5 +1,5 @@
 name=Zealous Strike
-image=https://magiccards.info/scans/en/cn2/101.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0b97681-4483-462b-ae9e-47ccb7900f3c.jpg?1576382352
 image_updated=2017-08-29
 value=2.690
 rarity=C

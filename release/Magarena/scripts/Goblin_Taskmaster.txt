@@ -1,5 +1,5 @@
 name=Goblin Taskmaster
-image=https://magiccards.info/scans/en/on/210.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/feff65ca-aedf-4434-b701-590d600d1a0b.jpg?1562955378
 value=3.033
 rarity=C
 type=Creature

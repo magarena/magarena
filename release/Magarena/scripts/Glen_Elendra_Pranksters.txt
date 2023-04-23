@@ -1,5 +1,5 @@
 name=Glen Elendra Pranksters
-image=https://magiccards.info/scans/en/lw/67.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a71800f-3e67-4cfb-a3b1-8c073a91b909.jpg?1562342470
 value=2.638
 rarity=U
 type=Creature

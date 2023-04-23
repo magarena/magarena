@@ -1,5 +1,5 @@
 name=Badlands
-image=https://magiccards.info/scans/en/rv/282.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.jpg?1562918068
 value=4.500
 rarity=R
 type=Land

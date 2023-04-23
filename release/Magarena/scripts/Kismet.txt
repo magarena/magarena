@@ -1,5 +1,5 @@
 name=Kismet
-image=https://magiccards.info/scans/en/6e/27.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f38cdfb1-0437-4afe-a777-60228b8eba69.jpg?1562952795
 value=4.338
 rarity=U
 type=Enchantment

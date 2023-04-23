@@ -1,5 +1,5 @@
 name=Noxious Hatchling
-image=https://magiccards.info/scans/en/eve/124.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/898fd93f-05f2-4523-a3f5-18b48a7365a2.jpg?1562924078
 value=3.524
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Call to Mind
-image=https://magiccards.info/scans/en/c14/101.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9218f8f4-89fd-46a1-928b-2e0e8e2b4458.jpg?1561950545
 value=3.681
 rarity=U
 type=Sorcery

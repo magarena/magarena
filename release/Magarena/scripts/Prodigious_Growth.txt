@@ -1,5 +1,5 @@
 name=Prodigious Growth
-image=https://magiccards.info/scans/en/m19/194.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba2b0966-4e9e-44dc-9145-3c1e644578bc.jpg?1615331237
 value=2.500
 rarity=R
 type=Enchantment

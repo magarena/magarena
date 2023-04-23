@@ -1,5 +1,5 @@
 name=Cave People
-image=https://magiccards.info/scans/en/5e/215.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb29b6b9-1674-483f-9912-0892e39ab106.jpg?1562595424
 value=2.926
 rarity=U
 type=Creature

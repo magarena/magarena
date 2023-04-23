@@ -1,5 +1,5 @@
 name=Honored Hierarch
-image=https://magiccards.info/scans/en/ori/182.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/769d0447-2c8f-41ef-a950-3a3022161c7f.jpg?1562026227
 image_updated=2015-11-05
 value=2.500
 rarity=R

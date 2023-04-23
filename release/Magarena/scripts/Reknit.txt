@@ -1,5 +1,5 @@
 name=Reknit
-image=https://magiccards.info/scans/en/shm/236.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10bde9be-0ad8-4f42-a9a9-838bc476c7a6.jpg?1562826860
 value=3.167
 rarity=U
 type=Instant

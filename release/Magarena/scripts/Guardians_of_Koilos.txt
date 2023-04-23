@@ -1,5 +1,5 @@
 name=Guardians of Koilos
-image=https://magiccards.info/scans/en/dom/216.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbbc615a-708a-444b-acab-871cce22694d.jpg?1636491669
 value=2.500
 rarity=C
 type=Artifact,Creature

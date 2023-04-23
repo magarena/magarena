@@ -1,5 +1,5 @@
 name=Aerial Maneuver
-image=https://magiccards.info/scans/en/gtc/1.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c63e9c49-3fa4-41ad-9eed-19801df103c6.jpg?1561845442
 value=2.598
 rarity=C
 type=Instant

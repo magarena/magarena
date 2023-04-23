@@ -1,5 +1,5 @@
 name=Goblin Striker
-image=https://magiccards.info/scans/en/mi/94.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7654d8a-7013-4311-b29e-b55aaa1bf502.jpg?1562163499
 value=3.067
 rarity=C
 type=Creature

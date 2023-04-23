@@ -1,5 +1,5 @@
 name=Hollowborn Barghest
-image=https://magiccards.info/scans/en/shm/68.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/544fba3c-0db4-4ac3-ac70-ae9a5468ab5d.jpg?1562830258
 value=3.713
 rarity=R
 type=Creature

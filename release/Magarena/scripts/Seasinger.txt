@@ -1,5 +1,5 @@
 name=Seasinger
-image=https://magiccards.info/scans/en/5e/121.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/473c8a26-4971-4b17-bdef-4c8f8120360d.jpg?1559592499
 value=4.043
 rarity=U
 type=Creature

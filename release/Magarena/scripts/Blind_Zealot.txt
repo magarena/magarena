@@ -1,5 +1,5 @@
 name=Blind Zealot
-image=https://magiccards.info/scans/en/nph/52.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bd04df1-5131-455d-b497-fcce4f9af552.jpg?1562880110
 value=3.560
 rarity=C
 type=Creature

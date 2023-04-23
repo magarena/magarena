@@ -1,5 +1,5 @@
 name=Millennial Gargoyle
-image=https://magiccards.info/scans/en/gtc/232.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/068e7803-7c9f-43d7-b6dc-8e1390d902d0.jpg?1562896305
 value=1.803
 rarity=C
 type=Artifact,Creature

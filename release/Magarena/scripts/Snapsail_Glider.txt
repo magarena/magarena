@@ -1,5 +1,5 @@
 name=Snapsail Glider
-image=https://magiccards.info/scans/en/som/203.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc98e0af-b18e-4172-bc56-19952ebd0303.jpg?1562825528
 value=2.375
 rarity=C
 type=Artifact,Creature

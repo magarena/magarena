@@ -1,5 +1,5 @@
 name=Leonin Sun Standard
-image=https://magiccards.info/scans/en/mi/194.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/395f719d-1f55-4f1a-a9fb-a178cd589f70.jpg?1562140910
 value=4.127
 rarity=R
 type=Artifact

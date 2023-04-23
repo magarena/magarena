@@ -1,5 +1,5 @@
 name=Sidisi's Pet
-image=https://magiccards.info/scans/en/ktk/90.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6e02a99-da37-4cea-9182-39ccb1e35ee9.jpg?1562795181
 value=2.250
 rarity=C
 type=Creature

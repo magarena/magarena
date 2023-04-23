@@ -1,5 +1,5 @@
 name=Flamekin Harbinger
-image=https://magiccards.info/scans/en/lw/167.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2796424c-f6c5-4851-87fb-145a58fe1f60.jpg?1562841672
 image_updated=2016-12-13
 value=4.190
 rarity=U

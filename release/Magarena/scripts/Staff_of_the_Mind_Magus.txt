@@ -1,5 +1,5 @@
 name=Staff of the Mind Magus
-image=https://magiccards.info/scans/en/m15/234.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf76bee3-2b69-4c7b-9b7c-1a9f4bbcfde0.jpg?1562794585
 value=1.400
 rarity=U
 type=Artifact

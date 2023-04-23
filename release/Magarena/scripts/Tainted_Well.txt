@@ -1,5 +1,5 @@
 name=Tainted Well
-image=https://magiccards.info/scans/en/in/126.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2eec00a1-7e12-42d2-8f46-de8ab7323c2c.jpg?1562904562
 value=3.111
 rarity=C
 type=Enchantment

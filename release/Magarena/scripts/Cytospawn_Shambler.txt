@@ -1,5 +1,5 @@
 name=Cytospawn Shambler
-image=https://magiccards.info/scans/en/di/82.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17c87c15-742b-47fb-9d4c-0a985cc1e15a.jpg?1593273365
 value=2.543
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Clot Sliver
-image=https://magiccards.info/scans/en/tp/6.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cfcd459-23e8-4207-b896-55062ef30a23.jpg?1562429381
 value=3.812
 rarity=C
 type=Creature

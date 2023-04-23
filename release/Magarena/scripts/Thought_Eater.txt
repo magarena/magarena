@@ -1,5 +1,5 @@
 name=Thought Eater
-image=https://magiccards.info/scans/en/od/106.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e05f63c-f93d-44b9-98e9-c5e3e3aad6b9.jpg?1562909299
 value=2.515
 rarity=U
 type=Creature

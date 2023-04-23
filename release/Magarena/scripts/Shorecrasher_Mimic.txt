@@ -1,5 +1,5 @@
 name=Shorecrasher Mimic
-image=https://magiccards.info/scans/en/eve/159.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24babb9e-edc8-484b-9db4-18abbafdf096.jpg?1562902764
 value=3.571
 rarity=C
 type=Creature

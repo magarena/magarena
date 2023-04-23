@@ -1,5 +1,5 @@
 name=Young Pyromancer
-image=https://magiccards.info/scans/en/ema/155.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/219577e6-758a-4135-9a8d-f95df964137a.jpg?1673147968
 value=4.406
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Opaline Sliver
-image=https://magiccards.info/scans/en/ts/244.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75af1cc6-cb40-48c8-818b-91e64bdbe691.jpg?1562919767
 value=3.541
 rarity=U
 type=Creature

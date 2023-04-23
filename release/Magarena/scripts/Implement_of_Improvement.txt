@@ -1,5 +1,5 @@
 name=Implement of Improvement
-image=https://magiccards.info/scans/en/aer/158.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cb8eb0c-d7fa-4229-ae65-1890c77b2c7c.jpg?1576382296
 value=2.500
 rarity=C
 type=Artifact

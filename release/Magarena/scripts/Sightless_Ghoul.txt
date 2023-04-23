@@ -1,5 +1,5 @@
 name=Sightless Ghoul
-image=https://magiccards.info/scans/en/dka/73.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/018bd4ae-cdea-410d-9ce6-6a70f12de966.jpg?1562895388
 value=2.037
 rarity=C
 type=Creature

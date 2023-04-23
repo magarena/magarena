@@ -1,5 +1,5 @@
 name=Salvage Scuttler
-image=https://magiccards.info/scans/en/aer/43.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/480be626-cf37-410d-a9c7-e5464345085f.jpg?1576381551
 value=2.500
 rarity=U
 type=Creature

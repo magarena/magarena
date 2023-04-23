@@ -1,5 +1,5 @@
 name=Deathless Behemoth
-image=https://magiccards.info/scans/en/bfz/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d98f1df-f99a-43c5-81cd-9d333226857a.jpg?1562898134
 image_updated=2015-11-08
 value=2.500
 rarity=U

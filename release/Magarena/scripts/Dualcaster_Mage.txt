@@ -1,5 +1,5 @@
 name=Dualcaster Mage
-image=https://magiccards.info/scans/en/ema/127.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/defcc4a3-40e0-4f5d-b23c-6cd6a614abc1.jpg?1625193684
 value=2.500
 rarity=R
 type=Creature

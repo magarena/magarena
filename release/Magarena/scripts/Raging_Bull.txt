@@ -1,5 +1,5 @@
 name=Raging Bull
-image=https://magiccards.info/scans/en/lg/160.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec10a51c-d2c3-4d14-9a71-9e59155bf980.jpg?1677285287
 value=1.510
 rarity=C
 type=Creature

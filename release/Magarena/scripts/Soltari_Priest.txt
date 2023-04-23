@@ -1,5 +1,5 @@
 name=Soltari Priest
-image=https://magiccards.info/scans/en/tsts/14.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45a3854c-147e-4644-8438-d973648c974d.jpg?1562429342
 value=4.329
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dauthi Marauder
-image=https://magiccards.info/scans/en/tp/17.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01963759-c47e-408a-8de8-924224031c8a.jpg?1562428160
 value=3.889
 rarity=C
 type=Creature

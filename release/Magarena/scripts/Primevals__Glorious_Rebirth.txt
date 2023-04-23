@@ -1,5 +1,5 @@
 name=Primevals' Glorious Rebirth
-image=https://magiccards.info/scans/en/dom/201.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e11471f9-6bf4-4b31-8eb6-f5f9e8abd797.jpg?1673305636
 value=2.500
 rarity=R
 type=Legendary,Sorcery

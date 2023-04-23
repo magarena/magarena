@@ -1,5 +1,5 @@
 name=Engineered Might
-image=https://magiccards.info/scans/en/kld/181.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/675b5fc7-51b2-4425-b053-a5d19c1595e0.jpg?1576382826
 image_updated=2016-10-05
 value=2.500
 rarity=U

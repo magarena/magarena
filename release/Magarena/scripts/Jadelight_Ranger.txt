@@ -1,5 +1,5 @@
 name=Jadelight Ranger
-image=https://magiccards.info/scans/en/rix/136.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fe5c719-f20d-4469-9750-fb689d5f3fc8.jpg?1555040676
 value=2.500
 rarity=R
 type=Creature

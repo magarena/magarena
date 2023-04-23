@@ -1,5 +1,5 @@
 name=Martial Coup
-image=https://magiccards.info/scans/en/c14/78.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85a09100-e438-4ac0-b6c7-2dfbdf934c8d.jpg?1673483748
 value=4.049
 removal=4
 rarity=R

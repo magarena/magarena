@@ -1,5 +1,5 @@
 name=Ink-Eyes, Servant of Oni
-image=https://magiccards.info/scans/en/pc2/33.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55ed38fc-dc1f-4a03-8869-147f7eb8646b.jpg?1562910780
 value=3.920
 rarity=R
 type=Legendary,Creature

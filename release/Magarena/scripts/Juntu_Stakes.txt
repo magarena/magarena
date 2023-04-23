@@ -1,5 +1,5 @@
 name=Juntu Stakes
-image=https://magiccards.info/scans/en/in/304.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ab7cf53-f62d-47e1-af70-ab12be0d22e2.jpg?1562906885
 value=3.786
 rarity=R
 type=Artifact

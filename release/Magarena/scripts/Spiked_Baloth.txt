@@ -1,5 +1,5 @@
 name=Spiked Baloth
-image=https://magiccards.info/scans/en/m13/192.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/522777b1-a89f-4969-a962-0137018ec86c.jpg?1562553788
 value=2.533
 rarity=C
 type=Creature

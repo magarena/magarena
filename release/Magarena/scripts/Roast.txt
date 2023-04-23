@@ -1,5 +1,5 @@
 name=Roast
-image=https://magiccards.info/scans/en/dtk/151.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1ba2e9a8-fcbb-4328-b475-36730182b765.jpg?1562783262
 value=2.500
 rarity=U
 type=Sorcery

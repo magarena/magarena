@@ -1,5 +1,5 @@
 name=Aven Fleetwing
-image=https://magiccards.info/scans/en/m12/44.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57626fd2-d101-4e23-946f-8309c9676fe5.jpg?1562643217
 value=3.382
 rarity=C
 type=Creature

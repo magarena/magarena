@@ -1,5 +1,5 @@
 name=Rotting Mastodon
-image=https://magiccards.info/scans/en/ktk/87.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1564a20a-0e57-4ced-9eda-7acff74274e7.jpg?1562782961
 value=2.500
 rarity=C
 type=Creature

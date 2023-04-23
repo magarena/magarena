@@ -1,5 +1,5 @@
 name=Skillful Lunge
-image=https://magiccards.info/scans/en/dka/22.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a28abc1-3e75-4db4-baa1-b47abdb7453b.jpg?1562904971
 value=2.467
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Kithkin Shielddare
-image=https://magiccards.info/scans/en/shm/10.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e5102a7-2147-4e22-b683-c08b4a725617.jpg?1562832218
 value=2.210
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ageless Entity
-image=https://magiccards.info/scans/en/ds/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8fefd7d1-8c70-4d54-be0a-f45833340670.jpg?1625194203
 value=4.273
 rarity=R
 type=Creature

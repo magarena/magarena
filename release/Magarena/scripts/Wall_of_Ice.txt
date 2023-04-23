@@ -1,5 +1,5 @@
 name=Wall of Ice
-image=https://magiccards.info/scans/en/4e/167.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d702bd22-6079-4f4c-9540-42cf2a29f4a3.jpg?1587911466
 value=3.060
 rarity=U
 type=Creature

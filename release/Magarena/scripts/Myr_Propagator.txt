@@ -1,5 +1,5 @@
 name=Myr Propagator
-image=https://magiccards.info/scans/en/som/182.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/837e4b25-d70b-48d8-aaad-9622ad93e154.jpg?1562819729
 value=3.302
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Sage's Dousing
-image=https://magiccards.info/scans/en/mt/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75ccd5f6-b363-433f-9e98-f65e10b10bc9.jpg?1562879335
 value=3.533
 rarity=U
 type=Tribal,Instant

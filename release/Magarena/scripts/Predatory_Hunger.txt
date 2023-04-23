@@ -1,5 +1,5 @@
 name=Predatory Hunger
-image=https://magiccards.info/scans/en/ex/117.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db6d9d28-3a05-4dfa-a322-36b4cc2697d4.jpg?1562089253
 value=3.800
 rarity=C
 type=Enchantment

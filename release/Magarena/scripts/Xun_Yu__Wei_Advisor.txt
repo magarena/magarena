@@ -1,5 +1,5 @@
 name=Xun Yu, Wei Advisor
-image=https://magiccards.info/scans/en/p3k/93.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f0a25ea-b414-423c-94a6-8a4795d60b46.jpg?1562257045
 value=2.208
 rarity=R
 type=Legendary,Creature

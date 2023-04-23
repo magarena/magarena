@@ -1,5 +1,5 @@
 name=Zulaport Cutthroat
-image=https://magiccards.info/scans/en/a25/117.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52ef00c1-613a-4cbd-8972-77c41f649431.jpg?1674141830
 image_updated=2018-04-27
 value=2.500
 rarity=U

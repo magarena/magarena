@@ -1,5 +1,5 @@
 name=Goblin Bushwhacker
-image=https://magiccards.info/scans/en/zen/125.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/4085a5bf-a71b-4c73-9b39-0dcc328fe11b.jpg?1562611583
 value=4.068
 rarity=C
 type=Creature

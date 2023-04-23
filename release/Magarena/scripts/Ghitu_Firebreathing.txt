@@ -1,5 +1,5 @@
 name=Ghitu Firebreathing
-image=https://magiccards.info/scans/en/ts/158.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9098b989-072a-4e5b-8972-22c61645c5bb.jpg?1562925466
 value=2.988
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Vaporkin
-image=https://magiccards.info/scans/en/cn2/124.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c074399-36e9-41f7-918e-5fae267e9da2.jpg?1576382548
 image_updated=2017-01-11
 value=3.382
 rarity=C

@@ -1,5 +1,5 @@
 name=Wild-Field Scarecrow
-image=https://magiccards.info/scans/en/soi/269.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/1285b444-1668-4a3d-9fcd-8ce4e95c6d2f.jpg?1576385512
 value=2.500
 rarity=U
 type=Artifact,Creature

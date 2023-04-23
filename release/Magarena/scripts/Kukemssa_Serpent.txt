@@ -1,5 +1,5 @@
 name=Kukemssa Serpent
-image=https://magiccards.info/scans/en/mr/72.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9099eacf-1898-493c-ae87-d5ff4a3646a2.jpg?1562720480
 value=2.065
 rarity=C
 type=Creature

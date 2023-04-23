@@ -1,5 +1,5 @@
 name=Rivalry
-image=https://magiccards.info/scans/en/ul/90.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b79677b-d5b9-47c7-a5f5-45446d5cddff.jpg?1562862794
 value=3.480
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Caustic Crawler
-image=https://magiccards.info/scans/en/wwk/54.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80076580-23f1-4008-ab91-9dad8c806cfa.jpg?1562290500
 value=2.873
 rarity=U
 type=Creature

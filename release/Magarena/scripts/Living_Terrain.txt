@@ -1,5 +1,5 @@
 name=Living Terrain
-image=https://magiccards.info/scans/en/8e/260.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93a22646-0e36-491e-9b90-39fad60d64bf.jpg?1562924790
 value=3.539
 rarity=U
 type=Enchantment

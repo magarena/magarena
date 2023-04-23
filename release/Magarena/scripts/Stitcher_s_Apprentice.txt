@@ -1,5 +1,5 @@
 name=Stitcher's Apprentice
-image=https://magiccards.info/scans/en/isd/81.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/717e34b9-161e-4b11-afb1-f41ee8027433.jpg?1681725056
 value=3.216
 rarity=C
 type=Creature

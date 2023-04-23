@@ -1,5 +1,5 @@
 name=Golden Hind
-image=https://magiccards.info/scans/en/jou/124.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ae883ea-191e-4571-be3d-1e3149e6965e.jpg?1593096196
 value=3.389
 rarity=C
 type=Creature

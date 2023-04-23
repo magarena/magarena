@@ -1,5 +1,5 @@
 name=Colossus of Sardia
-image=https://magiccards.info/scans/en/10e/317.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0926087-73cf-4aa4-80f9-6f2c54e230ec.jpg?1562944743
 image_updated=2015-11-13
 value=3.120
 rarity=R

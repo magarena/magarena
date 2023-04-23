@@ -1,5 +1,5 @@
 name=Hand of Justice
-image=https://magiccards.info/scans/en/fe/142.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f371a5d-0e79-46d9-ae6c-a9eada48cd55.jpg?1559592479
 value=3.598
 rarity=R
 type=Creature

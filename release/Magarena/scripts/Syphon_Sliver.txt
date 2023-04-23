@@ -1,5 +1,5 @@
 name=Syphon Sliver
-image=https://magiccards.info/scans/en/m14/117.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85cb40e3-c3ed-4b3f-88ad-6f1305297c6f.jpg?1562831810
 value=2.968
 rarity=R
 type=Creature

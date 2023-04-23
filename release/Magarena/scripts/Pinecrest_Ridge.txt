@@ -1,5 +1,5 @@
 name=Pinecrest Ridge
-image=https://magiccards.info/scans/en/chk/281.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7900552f-6147-49ec-8c02-f253e4896c4d.jpg?1562761566
 value=2.134
 rarity=U
 type=Land

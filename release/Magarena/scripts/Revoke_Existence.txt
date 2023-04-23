@@ -1,5 +1,5 @@
 name=Revoke Existence
-image=https://magiccards.info/scans/en/som/18.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bd4fc26-8351-4371-948b-f43346c3e771.jpg?1599709680
 value=4.354
 rarity=C
 type=Sorcery

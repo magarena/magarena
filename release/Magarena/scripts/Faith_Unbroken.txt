@@ -1,5 +1,5 @@
 name=Faith Unbroken
-image=https://magiccards.info/scans/en/emn/24.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1eaee28-b7c6-4d5f-b181-61e0c68988aa.jpg?1610075049
 image_updated=2016-09-05
 value=2.500
 rarity=U

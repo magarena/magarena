@@ -1,5 +1,5 @@
 name=Queen's Bay Soldier
-image=https://magiccards.info/scans/en/xln/115.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce2ca2e6-f920-4529-88d2-d984bdb7490a.jpg?1562564130
 value=2.500
 rarity=C
 type=Creature

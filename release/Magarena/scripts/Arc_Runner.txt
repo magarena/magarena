@@ -1,5 +1,5 @@
 name=Arc Runner
-image=https://magiccards.info/scans/en/m11/123.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32014715-7faa-412a-b8b4-751102e6b8a3.jpg?1562455498
 value=3.006
 rarity=C
 type=Creature

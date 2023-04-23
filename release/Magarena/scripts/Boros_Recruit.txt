@@ -1,5 +1,5 @@
 name=Boros Recruit
-image=https://magiccards.info/scans/en/rav/243.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5af01330-05c2-4c5b-9830-2886711b2b5d.jpg?1598917696
 value=3.915
 rarity=C
 type=Creature

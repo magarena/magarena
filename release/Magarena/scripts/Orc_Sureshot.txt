@@ -1,5 +1,5 @@
 name=Orc Sureshot
-image=https://magiccards.info/scans/en/frf/78.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/292326cd-4b90-40c6-88b1-f8560fde236c.jpg?1562823555
 value=2.500
 rarity=U
 type=Creature

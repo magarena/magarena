@@ -1,5 +1,5 @@
 name=Bound in Silence
-image=https://magiccards.info/scans/en/mma/8.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41a0a78e-08cc-4eb0-8891-6c3eec5b595b.jpg?1619392690
 value=3.417
 removal=3
 rarity=C

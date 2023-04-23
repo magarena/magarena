@@ -1,5 +1,5 @@
 name=Mox Sapphire
-image=https://magiccards.info/scans/en/un/266.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea1feac0-d3a7-45eb-9719-1cdaf51ea0b6.jpg?1614638862
 value=5.000
 rarity=R
 type=Artifact

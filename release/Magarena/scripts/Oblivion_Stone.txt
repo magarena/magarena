@@ -1,5 +1,5 @@
 name=Oblivion Stone
-image=https://magiccards.info/scans/en/ima/223.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0cd5548-ce7b-493a-8119-62f000839e4d.jpg?1673485409
 image_updated=2017-04-12
 value=4.183
 rarity=R

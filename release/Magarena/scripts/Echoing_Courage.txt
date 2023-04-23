@@ -1,5 +1,5 @@
 name=Echoing Courage
-image=https://magiccards.info/scans/en/a25/166.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04367e72-3f8c-4cba-8bdf-5a1ba9c9f01f.jpg?1562432457
 image_updated=2018-04-27
 value=3.667
 rarity=C

@@ -1,5 +1,5 @@
 name=Phyrexia's Core
-image=https://magiccards.info/scans/en/c14/306.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d8df09f-d22f-4f29-b920-358433f81b76.jpg?1625980750
 value=2.982
 rarity=U
 type=Land

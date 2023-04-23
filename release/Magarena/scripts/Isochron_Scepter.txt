@@ -1,5 +1,5 @@
 name=Isochron Scepter
-image=https://magiccards.info/scans/en/ema/223.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2aa24fe0-e275-4307-b26c-2a656068a451.jpg?1623543821
 value=4.491
 rarity=R
 type=Artifact

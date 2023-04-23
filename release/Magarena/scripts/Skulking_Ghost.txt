@@ -1,5 +1,5 @@
 name=Skulking Ghost
-image=https://magiccards.info/scans/en/ema/107.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/285f37a0-88ad-4cd6-8a8f-60c2d9805437.jpg?1580014374
 value=3.245
 rarity=C
 type=Creature

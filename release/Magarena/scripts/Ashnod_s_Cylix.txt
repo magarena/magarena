@@ -1,5 +1,5 @@
 name=Ashnod's Cylix
-image=https://magiccards.info/scans/en/ai/158.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b625b911-8b3c-4a31-a9cf-7403355c5551.jpg?1562870457
 value=3.345
 rarity=R
 type=Artifact

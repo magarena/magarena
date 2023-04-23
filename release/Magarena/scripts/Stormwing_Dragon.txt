@@ -1,5 +1,5 @@
 name=Stormwing Dragon
-image=https://magiccards.info/scans/en/dtk/159.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6da2b004-97e5-41ab-98b0-3637cb32a35a.jpg?1562787989
 value=2.500
 rarity=U
 type=Creature

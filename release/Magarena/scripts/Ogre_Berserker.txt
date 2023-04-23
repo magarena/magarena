@@ -1,5 +1,5 @@
 name=Ogre Berserker
-image=https://magiccards.info/scans/en/po2/111.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6969d4d-c311-4663-bcd6-77a4d6458335.jpg?1562938017
 value=2.326
 rarity=C
 type=Creature

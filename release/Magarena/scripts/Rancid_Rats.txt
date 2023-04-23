@@ -1,5 +1,5 @@
 name=Rancid Rats
-image=https://magiccards.info/scans/en/soi/130.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/336e0a75-8104-4e88-aad0-af7ac3efc115.jpg?1576384558
 value=2.500
 rarity=C
 type=Creature

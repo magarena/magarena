@@ -1,5 +1,5 @@
 name=Explosive Growth
-image=https://magiccards.info/scans/en/in/187.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eabc1e77-404c-436b-bde1-be1b21d00584.jpg?1562942177
 value=2.618
 rarity=C
 type=Instant

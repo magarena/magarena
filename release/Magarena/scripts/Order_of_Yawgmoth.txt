@@ -1,5 +1,5 @@
 name=Order of Yawgmoth
-image=https://magiccards.info/scans/en/us/144.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49e5ff9f-9ec9-4c96-b28f-938a2abd15bf.jpg?1562908507
 image_updated=2017-01-03
 value=4.114
 rarity=U

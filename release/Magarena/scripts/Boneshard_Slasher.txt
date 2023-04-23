@@ -1,5 +1,5 @@
 name=Boneshard Slasher
-image=https://magiccards.info/scans/en/tr/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27201370-32cc-4b90-890d-8c3f5362ad70.jpg?1562628979
 value=2.900
 rarity=U
 type=Creature

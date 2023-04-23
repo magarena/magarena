@@ -1,5 +1,5 @@
 name=Kiss of the Amesha
-image=https://magiccards.info/scans/en/ala/177.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82843400-2705-4ec3-b677-1027df6db62e.jpg?1562921395
 value=3.021
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Helm of Possession
-image=https://magiccards.info/scans/en/tp/281.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79e16191-8dca-491b-b892-17696023d581.jpg?1562054950
 value=4.145
 rarity=R
 type=Artifact

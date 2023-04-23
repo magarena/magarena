@@ -1,5 +1,5 @@
 name=Goblin War Buggy
-image=https://magiccards.info/scans/en/us/196.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2d0fc9e-fb6b-4a00-b422-32565f7ce454.jpg?1562939639
 value=3.782
 rarity=C
 type=Creature

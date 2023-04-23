@@ -1,5 +1,5 @@
 name=Squire
-image=https://magiccards.info/scans/en/tsts/15.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96c9c4d1-dd43-4156-b25f-0e707b6c4b23.jpg?1616400037
 value=1.608
 rarity=C
 type=Creature

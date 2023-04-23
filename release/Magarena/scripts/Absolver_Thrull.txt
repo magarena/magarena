@@ -1,5 +1,5 @@
 name=Absolver Thrull
-image=https://magiccards.info/scans/en/gp/1.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/711979c3-e70b-4973-a4f1-020db534fc73.jpg?1593271812
 value=2.963
 rarity=C
 type=Creature

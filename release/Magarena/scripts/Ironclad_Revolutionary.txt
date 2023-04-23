@@ -1,5 +1,5 @@
 name=Ironclad Revolutionary
-image=https://magiccards.info/scans/en/aer/65.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43a5535b-b1d1-4648-aa72-4f64e9fcd95d.jpg?1576381694
 value=2.500
 rarity=U
 type=Creature

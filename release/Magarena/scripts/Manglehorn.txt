@@ -1,5 +1,5 @@
 name=Manglehorn
-image=https://magiccards.info/scans/en/akh/175.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0aa3a844-97e6-4f5d-a36f-56fea4e06932.jpg?1543675886
 value=2.500
 rarity=U
 type=Creature

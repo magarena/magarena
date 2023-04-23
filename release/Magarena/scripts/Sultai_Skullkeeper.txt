@@ -1,5 +1,5 @@
 name=Sultai Skullkeeper
-image=https://magiccards.info/scans/en/frf/53.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f83c3936-1d30-4b1b-85ae-64c2be7d37c0.jpg?1547516592
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sulfuric Vortex
-image=https://magiccards.info/scans/en/ema/150.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0463e989-ba32-4a46-a82f-e0d6daf3cd51.jpg?1582753037
 value=3.800
 rarity=R
 type=Enchantment

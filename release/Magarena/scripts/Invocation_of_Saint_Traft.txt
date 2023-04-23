@@ -1,5 +1,5 @@
 name=Invocation of Saint Traft
-image=https://magiccards.info/scans/en/soi/246.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c64077da-9e55-4ced-91f7-db478383172f.jpg?1576385358
 value=2.500
 rarity=R
 type=Enchantment

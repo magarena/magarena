@@ -1,5 +1,5 @@
 name=Spectral Sliver
-image=https://magiccards.info/scans/en/le/83.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bec97e3c-7b75-4abb-a50e-86bc8cc3bf06.jpg?1562933371
 value=3.661
 rarity=U
 type=Creature

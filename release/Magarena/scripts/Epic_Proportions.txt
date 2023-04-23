@@ -1,5 +1,5 @@
 name=Epic Proportions
-image=https://magiccards.info/scans/en/lw/209.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/7412373a-da0f-4bec-866c-5e1087f49914.jpg?1592710875
 value=3.686
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Harmless Assault
-image=https://magiccards.info/scans/en/roe/24.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a77fef2c-227e-474e-896e-c0ebe227f494.jpg?1562707101
 value=2.556
 rarity=C
 type=Instant

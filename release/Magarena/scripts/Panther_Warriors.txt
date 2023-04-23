@@ -1,5 +1,5 @@
 name=Panther Warriors
-image=https://magiccards.info/scans/en/6e/243.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba165e25-5328-40f4-b87c-9d02590f9d38.jpg?1562822119
 value=3.150
 rarity=C
 type=Creature

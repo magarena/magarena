@@ -1,5 +1,5 @@
 name=Caltrops
-image=https://magiccards.info/scans/en/7e/288.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8769b55a-a0a1-4b6f-8c80-669385a34425.jpg?1562242172
 value=3.869
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Teetering Peaks
-image=https://magiccards.info/scans/en/zen/226.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e56aca36-bb51-45e3-9ef9-9f9f2aa1e088.jpg?1562617727
 value=2.926
 rarity=C
 type=Land

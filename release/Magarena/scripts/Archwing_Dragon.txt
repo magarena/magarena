@@ -1,5 +1,5 @@
 name=Archwing Dragon
-image=https://magiccards.info/scans/en/avr/126.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c6f1a8b-329e-4094-8141-6bc88311a08c.jpg?1592709011
 value=3.832
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Rising Waters
-image=https://magiccards.info/scans/en/ne/38.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec9c84db-cf45-43e1-b38f-8bbf53cf088b.jpg?1562632693
 value=4.120
 rarity=R
 type=Enchantment

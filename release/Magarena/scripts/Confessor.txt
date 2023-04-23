@@ -1,5 +1,5 @@
 name=Confessor
-image=https://magiccards.info/scans/en/od/15.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/984c0bdb-e9e2-435e-aa68-2dbad52c3dbd.jpg?1562923263
 value=2.694
 rarity=C
 type=Creature

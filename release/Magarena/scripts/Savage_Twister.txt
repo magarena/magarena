@@ -1,5 +1,5 @@
 name=Savage Twister
-image=https://magiccards.info/scans/en/mm2/185.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06ec1b2d-06dd-4364-a913-c34889b70fa1.jpg?1592711158
 value=4.200
 removal=3
 rarity=U

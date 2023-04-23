@@ -1,5 +1,5 @@
 name=Intervene
-image=https://magiccards.info/scans/en/ul/33.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b0e3894-5dfe-4d03-9996-eebf96c58168.jpg?1562862808
 value=3.842
 rarity=C
 type=Instant

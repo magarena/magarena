@@ -1,5 +1,5 @@
 name=Slay
-image=https://magiccards.info/scans/en/9e/163.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94dcbf68-faa7-4fa1-be17-2f71a0f9ad5e.jpg?1562922654
 image_updated=2017-01-08
 value=3.350
 rarity=U

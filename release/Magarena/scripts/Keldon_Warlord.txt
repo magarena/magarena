@@ -1,5 +1,5 @@
 name=Keldon Warlord
-image=https://magiccards.info/scans/en/5e/247.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e67a472-3058-47a7-90f5-1d26c4287cab.jpg?1559592493
 value=3.702
 rarity=U
 type=Creature

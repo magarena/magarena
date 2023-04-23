@@ -1,5 +1,5 @@
 name=Frenzied Raptor
-image=https://magiccards.info/scans/en/xln/146.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fb22ac0-3863-4165-8c93-f2ec1775474f.jpg?1591227229
 value=2.500
 rarity=C
 type=Creature

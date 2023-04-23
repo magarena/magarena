@@ -1,5 +1,5 @@
 name=Turntimber Ranger
-image=https://magiccards.info/scans/en/zen/191.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a24bba56-3256-489b-82a2-22748388e110.jpg?1562615013
 value=3.861
 rarity=R
 type=Creature

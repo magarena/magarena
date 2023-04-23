@@ -1,5 +1,5 @@
 name=Sky Diamond
-image=https://magiccards.info/scans/en/c14/269.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d47abfb2-9bcf-485c-9bd4-2c09b714eb32.jpg?1674138040
 value=2.897
 rarity=U
 type=Artifact

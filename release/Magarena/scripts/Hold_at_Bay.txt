@@ -1,5 +1,5 @@
 name=Hold at Bay
-image=https://magiccards.info/scans/en/bng/18.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffeb407d-6a42-488a-9869-83da3047e45d.jpg?1593091497
 value=1.855
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Universal Solvent
-image=https://magiccards.info/scans/en/aer/178.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e142122f-3a04-436e-a958-dc2224b4fc6d.jpg?1674138086
 value=2.500
 rarity=C
 type=Artifact

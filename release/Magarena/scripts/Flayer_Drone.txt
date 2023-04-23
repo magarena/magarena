@@ -1,5 +1,5 @@
 name=Flayer Drone
-image=https://magiccards.info/scans/en/ogw/148.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/3931db42-3773-4aae-b6eb-2209e7312f8c.jpg?1562906527
 image_updated=2016-02-29
 value=2.500
 rarity=U

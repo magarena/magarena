@@ -1,5 +1,5 @@
 name=Phyrexian Vault
-image=https://magiccards.info/scans/en/10e/337.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e184c465-4f19-4054-b853-dbf8c2efb4aa.jpg?1562937147
 image_updated=2017-01-03
 value=2.919
 rarity=U

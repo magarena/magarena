@@ -1,5 +1,5 @@
 name=Blisterstick Shaman
-image=https://magiccards.info/scans/en/mbs/58.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8187e90-6a60-4ed0-9b3a-3a679743b7d0.jpg?1562616029
 value=2.686
 rarity=C
 type=Creature

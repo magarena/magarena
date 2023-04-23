@@ -1,5 +1,5 @@
 name=Oversoul of Dusk
-image=https://magiccards.info/scans/en/shm/234.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8893842f-aa3f-45f6-8139-ca775d33792b.jpg?1562832737
 value=4.093
 rarity=R
 type=Creature

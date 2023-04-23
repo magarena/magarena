@@ -1,5 +1,5 @@
 name=Taste for Mayhem
-image=https://magiccards.info/scans/en/di/75.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20fbb2eb-5738-46e5-a0a6-8ee98c7c8cfb.jpg?1593273283
 value=3.333
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Molder Slug
-image=https://magiccards.info/scans/en/mi/125.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee355d1b-5d64-4328-94d6-7a58889b99bc.jpg?1562162474
 value=4.263
 rarity=R
 type=Creature

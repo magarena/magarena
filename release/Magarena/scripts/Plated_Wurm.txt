@@ -1,5 +1,5 @@
 name=Plated Wurm
-image=https://magiccards.info/scans/en/po2/81.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b51f8724-8f26-4a9d-b586-4223354ae7fc.jpg?1562937683
 value=2.981
 rarity=C
 type=Creature

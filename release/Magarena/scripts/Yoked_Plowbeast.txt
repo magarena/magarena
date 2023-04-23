@@ -1,5 +1,5 @@
 name=Yoked Plowbeast
-image=https://magiccards.info/scans/en/ala/31.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddbbc7dc-efdf-46e8-bf19-0daa4034f6ec.jpg?1562709823
 value=2.032
 rarity=C
 type=Creature

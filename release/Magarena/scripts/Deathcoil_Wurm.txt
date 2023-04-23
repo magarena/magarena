@@ -1,5 +1,5 @@
 name=Deathcoil Wurm
-image=https://magiccards.info/scans/en/po2/65.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97cafdf4-e912-4855-8ff5-c3270eb876d8.jpg?1562930754
 value=3.208
 rarity=R
 type=Creature

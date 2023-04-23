@@ -1,5 +1,5 @@
 name=Torrent of Fire
-image=https://magiccards.info/scans/en/sc/107.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/feeee859-f64a-4cd8-be0b-ad60cff8812e.jpg?1562537400
 value=2.957
 rarity=C
 type=Sorcery

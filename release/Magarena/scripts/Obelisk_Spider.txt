@@ -1,5 +1,5 @@
 name=Obelisk Spider
-image=https://magiccards.info/scans/en/hou/141.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae054604-0d77-45d0-b17b-55a83fb18e39.jpg?1562810572
 value=2.500
 rarity=U
 type=Creature

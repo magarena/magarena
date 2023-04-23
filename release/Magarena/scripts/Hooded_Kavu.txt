@@ -1,5 +1,5 @@
 name=Hooded Kavu
-image=https://magiccards.info/scans/en/in/147.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5464b80a-22fe-42c7-a839-31667712fb2d.jpg?1562912199
 value=2.605
 rarity=C
 type=Creature

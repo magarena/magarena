@@ -1,5 +1,5 @@
 name=Hazoret's Favor
-image=https://magiccards.info/scans/en/akh/137.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b467412-c06b-4cd9-a877-7722051fb758.jpg?1543675616
 value=2.500
 rarity=R
 type=Enchantment

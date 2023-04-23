@@ -1,5 +1,5 @@
 name=Sculpting Steel
-image=https://magiccards.info/scans/en/10e/342.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1958f01-77e9-4976-b7f8-f9b62aa78edc.jpg?1682210182
 value=4.449
 rarity=R
 type=Artifact

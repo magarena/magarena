@@ -1,5 +1,5 @@
 name=Sentinel Sliver
-image=https://magiccards.info/scans/en/m14/30.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74c28560-e6ac-4be9-a253-22c4613b0d90.jpg?1562831008
 value=3.556
 rarity=C
 type=Creature

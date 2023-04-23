@@ -1,5 +1,5 @@
 name=Glissa's Courier
-image=https://magiccards.info/scans/en/mbs/80.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45da44df-a83a-4974-bc22-5243dcda7cbd.jpg?1562610954
 value=2.554
 rarity=C
 type=Creature

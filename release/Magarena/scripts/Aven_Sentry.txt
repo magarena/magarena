@@ -1,5 +1,5 @@
 name=Aven Sentry
-image=https://magiccards.info/scans/en/dom/3.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf49e5bf-07fb-44b0-8e74-092088d9019f.jpg?1562742173
 value=2.500
 rarity=C
 type=Creature

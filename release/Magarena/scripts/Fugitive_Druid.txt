@@ -1,5 +1,5 @@
 name=Fugitive Druid
-image=https://magiccards.info/scans/en/tp/123.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afe165cd-8ef7-408e-ae56-3c6a0cc4e409.jpg?1562055931
 value=3.015
 rarity=R
 type=Creature

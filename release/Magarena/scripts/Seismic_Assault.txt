@@ -1,5 +1,5 @@
 name=Seismic Assault
-image=https://magiccards.info/scans/en/10e/228.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b2eb4e6-4ce1-4f72-9b3d-b6a44b22bd2e.jpg?1547517387
 value=4.338
 rarity=R
 type=Enchantment

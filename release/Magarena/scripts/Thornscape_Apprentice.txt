@@ -1,5 +1,5 @@
 name=Thornscape Apprentice
-image=https://magiccards.info/scans/en/in/215.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef276e2e-7e4d-48a0-af51-70cd843c6561.jpg?1562939921
 image_updated=2017-01-11
 value=3.964
 rarity=C

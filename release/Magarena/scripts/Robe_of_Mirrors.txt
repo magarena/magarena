@@ -1,5 +1,5 @@
 name=Robe of Mirrors
-image=https://magiccards.info/scans/en/10e/101.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9948fcc3-6e95-4b39-accd-a4083fff1244.jpg?1562552122
 value=3.771
 rarity=C
 type=Enchantment

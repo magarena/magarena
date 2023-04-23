@@ -1,5 +1,5 @@
 name=Silkbind Faerie
-image=https://magiccards.info/scans/en/shm/148.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12d06328-a124-40e4-a9d8-2342a881970e.jpg?1562826974
 value=2.989
 rarity=C
 type=Creature

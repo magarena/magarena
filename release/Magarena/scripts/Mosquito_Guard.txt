@@ -1,5 +1,5 @@
 name=Mosquito Guard
-image=https://magiccards.info/scans/en/mt/18.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/626040ca-adb0-49c8-82cd-d1e27926cb79.jpg?1562270232
 image_updated=2016-12-23
 value=3.103
 rarity=C

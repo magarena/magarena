@@ -1,5 +1,5 @@
 name=Undead Servant
-image=https://magiccards.info/scans/en/ori/124.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfbc0f7c-546f-4525-bb58-c99ab9b017d5.jpg?1592516795
 image_updated=2015-11-05
 value=2.500
 rarity=C

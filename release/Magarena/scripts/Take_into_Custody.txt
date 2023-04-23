@@ -1,5 +1,5 @@
 name=Take into Custody
-image=https://magiccards.info/scans/en/aer/47.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b412718a-7bc7-4b16-af60-1b955c820b0f.jpg?1576381577
 value=2.500
 rarity=C
 type=Instant

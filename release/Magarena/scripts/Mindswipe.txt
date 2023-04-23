@@ -1,5 +1,5 @@
 name=Mindswipe
-image=https://magiccards.info/scans/en/ktk/189.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/557e8303-a021-4257-b41a-7d25f04618c8.jpg?1562786781
 value=3.500
 rarity=R
 type=Instant

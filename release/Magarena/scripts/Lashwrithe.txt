@@ -1,5 +1,5 @@
 name=Lashwrithe
-image=https://magiccards.info/scans/en/c14/245.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de21d433-5c2c-49c0-80d1-bf6e8471f9d4.jpg?1561961382
 value=2.500
 rarity=R
 type=Artifact

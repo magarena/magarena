@@ -1,5 +1,5 @@
 name=Nimbus Swimmer
-image=https://magiccards.info/scans/en/gtc/181.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1efbf7be-bc11-4285-a37d-83790b292b3a.jpg?1562839818
 image_updated=2017-01-01
 value=3.070
 rarity=U

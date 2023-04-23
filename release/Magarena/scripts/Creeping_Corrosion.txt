@@ -1,5 +1,5 @@
 name=Creeping Corrosion
-image=https://magiccards.info/scans/en/mbs/78.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05d5a7b3-18b6-4b1d-85cc-2253e605390c.jpg?1562609373
 value=3.654
 removal=2
 rarity=R

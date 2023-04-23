@@ -1,5 +1,5 @@
 name=Mirror Sheen
-image=https://magiccards.info/scans/en/eve/105.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e26b31ce-416f-4309-b591-798cf12175af.jpg?1562942743
 value=3.217
 rarity=R
 type=Enchantment

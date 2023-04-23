@@ -1,5 +1,5 @@
 name=Pale Wayfarer
-image=https://magiccards.info/scans/en/shm/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f852508e-7087-42e1-ad9b-c84708e92de7.jpg?1562838347
 value=1.768
 rarity=U
 type=Creature

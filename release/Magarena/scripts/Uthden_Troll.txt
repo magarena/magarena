@@ -1,5 +1,5 @@
 name=Uthden Troll
-image=https://magiccards.info/scans/en/tsts/71.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18bd9ec1-4784-4b8d-bdeb-8df4b91c954f.jpg?1562772358
 value=3.975
 rarity=U
 type=Creature

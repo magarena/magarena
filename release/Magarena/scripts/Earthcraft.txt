@@ -1,5 +1,5 @@
 name=Earthcraft
-image=https://magiccards.info/scans/en/tp/116.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dda7531-82a1-4f49-8858-601ddbc6e2bc.jpg?1587857352
 value=4.543
 rarity=R
 type=Enchantment

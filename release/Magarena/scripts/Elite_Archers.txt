@@ -1,5 +1,5 @@
 name=Elite Archers
-image=https://magiccards.info/scans/en/8e/18.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2341478-2a91-4ce8-881a-21e826b55c34.jpg?1562930865
 value=2.068
 rarity=R
 type=Creature

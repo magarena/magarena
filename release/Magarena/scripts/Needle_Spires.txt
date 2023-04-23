@@ -1,5 +1,5 @@
 name=Needle Spires
-image=https://magiccards.info/scans/en/ogw/175.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e1903c2-6b22-4e2c-99fa-8e259fff29c5.jpg?1604196420
 image_updated=2016-02-29
 value=2.500
 rarity=R

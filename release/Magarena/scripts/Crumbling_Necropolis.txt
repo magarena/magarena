@@ -1,5 +1,5 @@
 name=Crumbling Necropolis
-image=https://magiccards.info/scans/en/mm3/233.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e9a9525-762a-4efd-82fe-184814543aef.jpg?1673305984
 image_updated=2017-08-08
 value=3.893
 rarity=U

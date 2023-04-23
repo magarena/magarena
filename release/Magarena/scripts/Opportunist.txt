@@ -1,5 +1,5 @@
 name=Opportunist
-image=https://magiccards.info/scans/en/tp/194.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae0026c0-8f61-4485-8909-6a44c2ca9169.jpg?1562055923
 value=2.641
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Scourge Devil
-image=https://magiccards.info/scans/en/mm3/111.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/565033d2-7cb9-4ee2-b952-45745b9a2ecc.jpg?1593813576
 image_updated=2017-08-08
 value=2.650
 rarity=C

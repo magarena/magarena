@@ -1,5 +1,5 @@
 name=Moldgraf Monstrosity
-image=https://magiccards.info/scans/en/isd/194.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b20a1d49-699d-413e-985b-7890f3e7115e.jpg?1592710957
 value=3.888
 rarity=R
 type=Creature

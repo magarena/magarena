@@ -1,5 +1,5 @@
 name=Puncturing Light
-image=https://magiccards.info/scans/en/soi/35.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b101264-4994-43b7-9156-228f7d10d2bd.jpg?1576383877
 image_updated=2010-09-10
 value=2.765
 rarity=C

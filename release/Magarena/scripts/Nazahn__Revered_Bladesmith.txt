@@ -1,5 +1,5 @@
 name=Nazahn, Revered Bladesmith
-image=https://magiccards.info/scans/en/c17/44.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f21a5b4-1cfa-466b-8a16-a8b11f20b818.jpg?1562616538
 image_updated=2017-10-03
 value=2.500
 rarity=M

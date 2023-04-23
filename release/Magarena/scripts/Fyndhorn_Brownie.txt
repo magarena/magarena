@@ -1,5 +1,5 @@
 name=Fyndhorn Brownie
-image=https://magiccards.info/scans/en/6e/231.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc2a2d39-92dd-4123-8a3f-5c756d22b6ee.jpg?1562822172
 value=1.764
 rarity=C
 type=Creature

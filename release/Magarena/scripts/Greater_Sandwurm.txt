@@ -1,5 +1,5 @@
 name=Greater Sandwurm
-image=https://magiccards.info/scans/en/akh/168.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d90c5650-7eb2-480a-856e-a04406096830.jpg?1591227678
 value=2.500
 rarity=C
 type=Creature

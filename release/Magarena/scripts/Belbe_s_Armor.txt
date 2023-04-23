@@ -1,5 +1,5 @@
 name=Belbe's Armor
-image=https://magiccards.info/scans/en/ne/126.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0052158b-58d1-4416-a7ce-7c6a7595263c.jpg?1562628387
 value=3.750
 rarity=U
 type=Artifact

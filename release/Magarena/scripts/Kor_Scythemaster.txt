@@ -1,5 +1,5 @@
 name=Kor Scythemaster
-image=https://magiccards.info/scans/en/ogw/23.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5ce587ba-f23a-4548-a5b8-fca54984d4b4.jpg?1562913827
 image_updated=2016-02-29
 value=2.500
 rarity=C

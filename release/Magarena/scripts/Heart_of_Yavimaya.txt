@@ -1,5 +1,5 @@
 name=Heart of Yavimaya
-image=https://magiccards.info/scans/en/ai/183.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c05b097f-5b76-49b7-88fb-aef56431df39.jpg?1562870472
 value=2.171
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Blind-Spot Giant
-image=https://magiccards.info/scans/en/mma/105.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87d76ed9-7a2c-466f-be39-1f7880744c33.jpg?1561967842
 value=3.031
 rarity=C
 type=Creature

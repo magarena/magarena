@@ -1,5 +1,5 @@
 name=Embraal Gear-Smasher
-image=https://magiccards.info/scans/en/aer/79.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ad5c175-581c-4fdd-b008-e7d10b0928c7.jpg?1576381778
 value=2.500
 rarity=C
 type=Creature

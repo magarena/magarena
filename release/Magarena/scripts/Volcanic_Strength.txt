@@ -1,5 +1,5 @@
 name=Volcanic Strength
-image=https://magiccards.info/scans/en/m13/155.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1963f08-1765-4f3e-92be-479773de47a0.jpg?1562561783
 value=3.329
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Sibsig Icebreakers
-image=https://magiccards.info/scans/en/dtk/119.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3835752e-11a6-406c-8bff-b7d4f2f31d85.jpg?1562784752
 value=2.500
 rarity=C
 type=Creature

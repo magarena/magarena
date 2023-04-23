@@ -1,5 +1,5 @@
 name=Tel-Jilad Wolf
-image=https://magiccards.info/scans/en/ds/88.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac40a1c6-88df-4f01-aa59-4ef3c6b57e75.jpg?1562638822
 value=2.431
 rarity=C
 type=Creature

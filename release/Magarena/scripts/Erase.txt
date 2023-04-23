@@ -1,5 +1,5 @@
 name=Erase
-image=https://magiccards.info/scans/en/ktk/9.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1dd0e10-2ad7-467f-8d4b-c70b95bf2e9c.jpg?1562793960
 value=3.500
 rarity=C
 type=Instant

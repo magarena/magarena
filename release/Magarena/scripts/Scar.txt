@@ -1,5 +1,5 @@
 name=Scar
-image=https://magiccards.info/scans/en/shm/194.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b34e3f7c-468a-456c-8ed0-0cb88f6d86fc.jpg?1562834862
 value=3.045
 removal=1
 rarity=C

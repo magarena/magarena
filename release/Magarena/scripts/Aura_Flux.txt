@@ -1,5 +1,5 @@
 name=Aura Flux
-image=https://magiccards.info/scans/en/ul/27.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6be1542-70b8-4e97-a951-100966dc46ce.jpg?1562863780
 value=3.946
 rarity=C
 type=Enchantment

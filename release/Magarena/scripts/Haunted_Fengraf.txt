@@ -1,5 +1,5 @@
 name=Haunted Fengraf
-image=https://magiccards.info/scans/en/a25/240.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97a1d55a-39a8-4bf4-91b7-5565146c9c40.jpg?1592711522
 image_updated=2018-04-27
 value=3.076
 rarity=C

@@ -1,5 +1,5 @@
 name=Champion of Wits
-image=https://magiccards.info/scans/en/hou/31.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/489e339b-3bc6-4221-9734-d796b65910d2.jpg?1673483823
 value=2.500
 rarity=R
 type=Creature

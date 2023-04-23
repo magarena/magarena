@@ -1,5 +1,5 @@
 name=Imperial Mask
-image=https://magiccards.info/scans/en/fut/23.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb02f692-80a9-4740-afde-cb4792d24774.jpg?1562932635
 value=4.031
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Segovian Leviathan
-image=https://magiccards.info/scans/en/6e/97.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f796dd2-9ecf-490a-86c0-acb46130518b.jpg?1562820246
 value=2.344
 rarity=U
 type=Creature

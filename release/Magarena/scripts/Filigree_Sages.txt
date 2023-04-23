@@ -1,5 +1,5 @@
 name=Filigree Sages
-image=https://magiccards.info/scans/en/ala/44.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08790aaf-0142-4b20-89cf-cdaffeea4582.jpg?1562700900
 value=2.991
 rarity=U
 type=Artifact,Creature

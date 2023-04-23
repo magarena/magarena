@@ -1,5 +1,5 @@
 name=Valakut, the Molten Pinnacle
-image=https://magiccards.info/scans/en/zen/228.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37bce60d-2cb0-4772-9f5c-122a7ed426a0.jpg?1562611305
 value=4.073
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Restrain
-image=https://magiccards.info/scans/en/in/30.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6b5c765-619c-4db9-b509-91892fb65e8f.jpg?1562944692
 value=2.560
 rarity=C
 type=Instant

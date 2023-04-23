@@ -1,5 +1,5 @@
 name=Rewards of Diversity
-image=https://magiccards.info/scans/en/in/32.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04116b38-8fb1-47c6-b68d-060d0fc4a60d.jpg?1562895781
 value=2.729
 rarity=U
 type=Enchantment

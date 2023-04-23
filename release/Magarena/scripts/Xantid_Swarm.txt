@@ -1,5 +1,5 @@
 name=Xantid Swarm
-image=https://magiccards.info/scans/en/ema/193.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/022ab408-3292-40b6-b35e-ac1b7f06dffa.jpg?1580014984
 value=4.569
 rarity=R
 type=Creature

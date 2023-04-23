@@ -1,5 +1,5 @@
 name=Thundercloud Elemental
-image=https://magiccards.info/scans/en/sc/54.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/597aea42-43e0-41ed-bfe7-fc92b6b8e680.jpg?1562529487
 value=2.339
 rarity=U
 type=Creature

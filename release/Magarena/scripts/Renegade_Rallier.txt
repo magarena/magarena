@@ -1,5 +1,5 @@
 name=Renegade Rallier
-image=https://magiccards.info/scans/en/aer/133.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90bad312-80e3-45b0-9556-60ce06808a47.jpg?1576382138
 value=2.500
 rarity=U
 type=Creature

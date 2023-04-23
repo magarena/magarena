@@ -1,5 +1,5 @@
 name=Auriok Transfixer
-image=https://magiccards.info/scans/en/mi/5.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f5c3f22-f228-4503-9d35-ee1b36a46ef0.jpg?1562152665
 value=2.750
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kolaghan Forerunners
-image=https://magiccards.info/scans/en/dtk/144.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c56a8de-8ae8-4672-8119-9e6a1f4cf5cd.jpg?1562784173
 value=2.500
 rarity=U
 type=Creature

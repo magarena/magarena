@@ -1,5 +1,5 @@
 name=Embersmith
-image=https://magiccards.info/scans/en/som/87.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee86cfc8-9faa-474c-90a9-5405f3f6037c.jpg?1562824849
 value=3.018
 rarity=U
 type=Creature

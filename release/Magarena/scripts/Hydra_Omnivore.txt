@@ -1,5 +1,5 @@
 name=Hydra Omnivore
-image=https://magiccards.info/scans/en/cns/169.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15f046d7-092c-4cac-8f9f-b284457620b8.jpg?1592710941
 value=4.083
 rarity=M
 type=Creature

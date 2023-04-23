@@ -1,5 +1,5 @@
 name=Shriek of Dread
-image=https://magiccards.info/scans/en/ps/53.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54a7fb3b-8e81-4763-b2a1-7c2108a00afe.jpg?1562912669
 value=2.017
 rarity=C
 type=Instant

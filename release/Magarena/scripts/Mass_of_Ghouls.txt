@@ -1,5 +1,5 @@
 name=Mass of Ghouls
-image=https://magiccards.info/scans/en/10e/156.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd816d37-7a9e-485e-9ed9-20c1c15a26dd.jpg?1619395649
 value=1.791
 rarity=C
 type=Creature

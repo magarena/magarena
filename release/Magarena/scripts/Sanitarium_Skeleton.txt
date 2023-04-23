@@ -1,5 +1,5 @@
 name=Sanitarium Skeleton
-image=https://magiccards.info/scans/en/soi/133.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c33d20d-8d1c-4cf7-a7ad-3dab9758fafe.jpg?1608909938
 value=2.500
 rarity=C
 type=Creature

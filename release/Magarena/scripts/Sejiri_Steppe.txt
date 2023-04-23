@@ -1,5 +1,5 @@
 name=Sejiri Steppe
-image=https://magiccards.info/scans/en/wwk/142.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d45b0ed8-8692-4fa7-b32c-30d29028da3d.jpg?1562939913
 value=3.676
 rarity=C
 type=Land

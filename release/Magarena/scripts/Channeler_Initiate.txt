@@ -1,5 +1,5 @@
 name=Channeler Initiate
-image=https://magiccards.info/scans/en/akh/160.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bef38c5a-07fc-477f-a1c0-70cc3ad64f96.jpg?1543675782
 value=2.500
 rarity=R
 type=Creature

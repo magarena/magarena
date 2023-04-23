@@ -1,5 +1,5 @@
 name=Illusory Demon
-image=https://magiccards.info/scans/en/arb/21.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4d69f7f-ac70-477b-9246-8d81fef7d335.jpg?1562645094
 value=2.413
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sustaining Spirit
-image=https://magiccards.info/scans/en/ai/151.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fe9e2e6-c430-4806-b833-dc6d91f7ed80.jpg?1562869989
 value=3.069
 rarity=R
 type=Creature

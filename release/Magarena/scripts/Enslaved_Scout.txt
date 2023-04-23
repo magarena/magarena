@@ -1,5 +1,5 @@
 name=Enslaved Scout
-image=https://magiccards.info/scans/en/ai/105.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea21414e-65f7-4d65-b0dc-7fec7b9b416d.jpg?1562770652
 value=1.738
 rarity=C
 type=Creature

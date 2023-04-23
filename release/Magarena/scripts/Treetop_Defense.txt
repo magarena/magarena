@@ -1,5 +1,5 @@
 name=Treetop Defense
-image=https://magiccards.info/scans/en/po/116.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5e134b3-e8af-41e9-928d-c217ea7b2b13.jpg?1562448340
 value=2.000
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Mistfire Adept
-image=https://magiccards.info/scans/en/frf/42.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8a2dd0d-8034-47f7-801d-c893f32f0708.jpg?1673147369
 value=2.500
 rarity=U
 type=Creature

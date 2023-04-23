@@ -1,5 +1,5 @@
 name=Mogg Sentry
-image=https://magiccards.info/scans/en/9e/204.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56100dd7-250d-4a3a-b719-b25fc73873dc.jpg?1562735465
 value=4.138
 rarity=R
 type=Creature

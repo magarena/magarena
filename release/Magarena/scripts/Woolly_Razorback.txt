@@ -1,5 +1,5 @@
 name=Woolly Razorback
-image=https://magiccards.info/scans/en/cs/25.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95ed6354-161e-496e-9ac7-74432f9b0818.jpg?1593274871
 value=3.694
 rarity=R
 type=Creature

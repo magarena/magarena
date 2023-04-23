@@ -1,5 +1,5 @@
 name=Norwood Archers
-image=https://magiccards.info/scans/en/st/137.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f5ed974-396a-4b93-8e15-90e180efd17e.jpg?1562874074
 value=3.135
 rarity=C
 type=Creature

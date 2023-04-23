@@ -1,5 +1,5 @@
 name=Domesticated Hydra
-image=https://magiccards.info/scans/en/cn2/63.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23be85ac-2d9c-4261-aa55-4421e4a35d8b.jpg?1576382027
 image_updated=2016-09-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Spiteflame Witch
-image=https://magiccards.info/scans/en/shm/197.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41d1a332-f950-4f56-9b1e-37c0954e72f6.jpg?1562829271
 value=3.108
 rarity=U
 type=Creature

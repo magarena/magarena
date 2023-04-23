@@ -1,5 +1,5 @@
 name=Kazandu Blademaster
-image=https://magiccards.info/scans/en/zen/16.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9642bdbf-c03f-4c48-a5c8-c9201a08b834.jpg?1562614556
 value=4.119
 rarity=U
 type=Creature

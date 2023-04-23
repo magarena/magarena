@@ -1,5 +1,5 @@
 name=Amulet of Vigor
-image=https://magiccards.info/scans/en/wwk/121.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/997bc933-ac30-477b-a4e1-5333b796a99d.jpg?1562292191
 value=4.120
 rarity=R
 type=Artifact

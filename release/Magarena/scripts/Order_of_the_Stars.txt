@@ -1,5 +1,5 @@
 name=Order of the Stars
-image=https://magiccards.info/scans/en/gp/13.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41981edd-df29-4ded-85d6-0d1a2a3a7a59.jpg?1593271901
 value=3.746
 rarity=U
 type=Creature

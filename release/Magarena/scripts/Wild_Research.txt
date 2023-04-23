@@ -1,5 +1,5 @@
 name=Wild Research
-image=https://magiccards.info/scans/en/ap/72.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f00e6f1-e854-40b0-855d-7e0d7d233850.jpg?1562928707
 value=3.839
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Trigon of Rage
-image=https://magiccards.info/scans/en/som/216.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1135f3b7-8c6b-47ff-b895-b7127836b0bf.jpg?1562814712
 value=3.000
 rarity=U
 type=Artifact

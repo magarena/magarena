@@ -1,5 +1,5 @@
 name=Fleeting Aven
-image=https://magiccards.info/scans/en/on/83.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/246a2758-0096-43b9-8193-d6ae5b41b6e6.jpg?1562903616
 value=2.341
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Holy Day
-image=https://magiccards.info/scans/en/10e/21.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3895c0c-0db8-4962-b386-57887fb60701.jpg?1562557717
 value=4.133
 rarity=C
 type=Instant

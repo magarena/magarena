@@ -1,5 +1,5 @@
 name=Sanctum Custodian
-image=https://magiccards.info/scans/en/us/42.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27a64b98-9002-48fe-a3e5-4449050c87e1.jpg?1562903421
 image_updated=2017-01-07
 value=3.138
 rarity=C

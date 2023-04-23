@@ -1,5 +1,5 @@
 name=Dispersal Technician
-image=https://magiccards.info/scans/en/aer/32.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d93a915-ffea-4f50-88ac-2b3253f7dfdf.jpg?1576381476
 value=2.500
 rarity=C
 type=Creature

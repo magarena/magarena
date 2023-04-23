@@ -1,5 +1,5 @@
 name=Death's-Head Buzzard
-image=https://magiccards.info/scans/en/a25/84.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/426aeebc-3ff5-411d-b123-49a42e57e9de.jpg?1562434970
 image_updated=2018-04-27
 value=4.000
 rarity=C

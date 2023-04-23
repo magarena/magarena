@@ -1,5 +1,5 @@
 name=Simian Grunts
-image=https://magiccards.info/scans/en/ul/113.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15104b03-b122-40ba-ad9f-51289f627a19.jpg?1562899241
 value=3.784
 rarity=C
 type=Creature

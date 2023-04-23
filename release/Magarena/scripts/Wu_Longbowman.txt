@@ -1,5 +1,5 @@
 name=Wu Longbowman
-image=https://magiccards.info/scans/en/p3k/61.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87134379-273b-48dd-9f05-3d35f5659fb7.jpg?1562923499
 value=2.160
 rarity=U
 type=Creature

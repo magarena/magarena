@@ -1,5 +1,5 @@
 name=Bosk Banneret
-image=https://magiccards.info/scans/en/mt/114.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/203f41a7-ecf5-4757-9162-01ffd2a42ee9.jpg?1562877309
 value=3.708
 rarity=C
 type=Creature

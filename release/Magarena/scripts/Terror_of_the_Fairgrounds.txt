@@ -1,5 +1,5 @@
 name=Terror of the Fairgrounds
-image=https://magiccards.info/scans/en/kld/137.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04623df9-8fa9-44cc-b528-c2c484626d1f.jpg?1576382287
 image_updated=2016-10-05
 value=2.500
 rarity=C

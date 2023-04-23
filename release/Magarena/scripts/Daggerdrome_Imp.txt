@@ -1,5 +1,5 @@
 name=Daggerdrome Imp
-image=https://magiccards.info/scans/en/rtr/60.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d9417ab-e2af-436b-9677-6e0120770d80.jpg?1562916948
 value=3.105
 rarity=C
 type=Creature

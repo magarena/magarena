@@ -1,5 +1,5 @@
 name=Atarka Beastbreaker
-image=https://magiccards.info/scans/en/dtk/174.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8ef9a03-3044-4e90-9409-c330972fcafb.jpg?1562793019
 value=2.500
 rarity=C
 type=Creature

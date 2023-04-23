@@ -1,5 +1,5 @@
 name=Dubious Challenge
-image=https://magiccards.info/scans/en/kld/152.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92965a78-277d-4a27-8174-fc2564bd1ee3.jpg?1576382453
 image_updated=2016-10-05
 value=2.500
 rarity=R

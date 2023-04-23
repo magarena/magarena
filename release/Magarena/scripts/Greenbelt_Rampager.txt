@@ -1,5 +1,5 @@
 name=Greenbelt Rampager
-image=https://magiccards.info/scans/en/aer/107.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3f06124-bcc4-48c0-a7a6-a461c7485ecd.jpg?1576381971
 value=2.500
 rarity=R
 type=Creature

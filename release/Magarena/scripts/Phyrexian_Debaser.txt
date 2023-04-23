@@ -1,5 +1,5 @@
 name=Phyrexian Debaser
-image=https://magiccards.info/scans/en/ul/59.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66e19435-59e5-44d4-b26f-f140f8bcaeb0.jpg?1600701097
 image_updated=2017-01-03
 value=3.423
 rarity=C

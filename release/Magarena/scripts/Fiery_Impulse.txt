@@ -1,5 +1,5 @@
 name=Fiery Impulse
-image=https://magiccards.info/scans/en/ori/145.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b81a589-44bf-4441-9079-1ae66d067519.jpg?1562021477
 image_updated=2015-11-05
 value=2.500
 rarity=C

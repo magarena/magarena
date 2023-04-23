@@ -1,5 +1,5 @@
 name=Master of Etherium
-image=https://magiccards.info/scans/en/c16/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3efa70d4-d58c-4a43-bc4e-ffa9a91b0e5e.jpg?1682208797
 image_updated=2017-08-17
 value=4.489
 rarity=R

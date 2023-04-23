@@ -1,5 +1,5 @@
 name=Thunder Strike
-image=https://magiccards.info/scans/en/m11/157.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abdc38f3-194a-4f43-8ada-9cfc17094d20.jpg?1562929648
 value=3.060
 rarity=C
 type=Instant

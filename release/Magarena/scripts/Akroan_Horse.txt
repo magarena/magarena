@@ -1,5 +1,5 @@
 name=Akroan Horse
-image=https://magiccards.info/scans/en/c16/241.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31a8954f-467d-4eb9-8a48-d25bae9529b8.jpg?1562394382
 image_updated=2016-11-20
 value=3.424
 rarity=R

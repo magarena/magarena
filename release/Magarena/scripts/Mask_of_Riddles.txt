@@ -1,5 +1,5 @@
 name=Mask of Riddles
-image=https://magiccards.info/scans/en/arb/25.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf483e4c-4a6e-4b78-8e5d-c8b17f7bb433.jpg?1673485139
 value=3.480
 rarity=U
 type=Artifact

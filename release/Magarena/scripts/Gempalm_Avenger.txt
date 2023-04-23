@@ -1,5 +1,5 @@
 name=Gempalm Avenger
-image=https://magiccards.info/scans/en/le/14.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3267bf08-7585-4e2e-b472-97a357d264dc.jpg?1562839828
 image_updated=2016-12-03
 value=2.875
 rarity=C

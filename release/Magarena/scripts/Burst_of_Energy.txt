@@ -1,5 +1,5 @@
 name=Burst of Energy
-image=https://magiccards.info/scans/en/ul/3.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43d590d2-cfa3-43d1-9e65-bc68b5a2a3ee.jpg?1562862800
 value=2.151
 rarity=C
 type=Instant

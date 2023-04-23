@@ -1,5 +1,5 @@
 name=Sylvan Ranger
-image=https://magiccards.info/scans/en/mm3/140.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e36a5be0-a730-4cb7-9d1e-6ae84b5bc872.jpg?1601080165
 image_updated=2017-08-08
 value=3.525
 rarity=C

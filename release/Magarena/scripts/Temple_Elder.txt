@@ -1,5 +1,5 @@
 name=Temple Elder
-image=https://magiccards.info/scans/en/po2/144.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db4d4b14-d774-430c-a483-be04a238718d.jpg?1562947200
 value=1.052
 rarity=U
 type=Creature

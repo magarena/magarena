@@ -1,5 +1,5 @@
 name=Stronghold Rats
-image=https://magiccards.info/scans/en/fut/79.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87761f00-bfbc-42dc-b96d-9f4258b43a8b.jpg?1619396314
 value=3.217
 rarity=U
 type=Creature

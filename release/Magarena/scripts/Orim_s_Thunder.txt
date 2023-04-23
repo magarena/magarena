@@ -1,5 +1,5 @@
 name=Orim's Thunder
-image=https://magiccards.info/scans/en/cmd/24.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24854d5f-2711-49ba-9e0d-f9bbe04b34a9.jpg?1562272906
 image_updated=2016-02-29
 value=3.885
 removal=2

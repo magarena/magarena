@@ -1,5 +1,5 @@
 name=Groundskeeper
-image=https://magiccards.info/scans/en/soi/208.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9625498e-82e5-49e2-a7fa-f4ea0bb838db.jpg?1547517604
 image_updated=2010-09-10
 value=3.454
 rarity=U

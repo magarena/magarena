@@ -1,5 +1,5 @@
 name=Fault Line
-image=https://magiccards.info/scans/en/us/185.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cab4fd0e-9f84-4628-92a7-858ad8064531.jpg?1562937807
 value=3.932
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Felhide Minotaur
-image=https://magiccards.info/scans/en/ths/87.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4e424de-81be-4f90-a7a2-4102c8ba8989.jpg?1593860908
 value=2.091
 rarity=C
 type=Creature

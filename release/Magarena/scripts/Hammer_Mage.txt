@@ -1,5 +1,5 @@
 name=Hammer Mage
-image=https://magiccards.info/scans/en/mm/193.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b959d7ad-a78e-439f-9225-4dbb89f490d7.jpg?1562382561
 value=3.486
 rarity=U
 type=Creature

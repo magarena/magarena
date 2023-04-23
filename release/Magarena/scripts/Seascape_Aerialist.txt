@@ -1,5 +1,5 @@
 name=Seascape Aerialist
-image=https://magiccards.info/scans/en/zen/64.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3690efc8-de2b-4476-87da-d8ed9572dc84.jpg?1562611246
 value=2.570
 rarity=U
 type=Creature

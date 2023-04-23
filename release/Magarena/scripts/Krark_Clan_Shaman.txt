@@ -1,5 +1,5 @@
 name=Krark-Clan Shaman
-image=https://magiccards.info/scans/en/mi/98.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/975f9ea8-af2c-456f-acd0-ffa9ea0d98c1.jpg?1562151699
 value=2.839
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bonethorn Valesk
-image=https://magiccards.info/scans/en/sc/82.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/297d7326-ad03-464d-97e2-443042d48f92.jpg?1562526649
 value=2.129
 rarity=C
 type=Creature

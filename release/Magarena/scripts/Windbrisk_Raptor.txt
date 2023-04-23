@@ -1,5 +1,5 @@
 name=Windbrisk Raptor
-image=https://magiccards.info/scans/en/shm/26.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5df7b710-d44c-4ebc-be5b-f81d697086c4.jpg?1562830667
 value=3.795
 rarity=R
 type=Creature

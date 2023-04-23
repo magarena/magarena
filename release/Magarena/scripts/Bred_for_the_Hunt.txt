@@ -1,5 +1,5 @@
 name=Bred for the Hunt
-image=https://magiccards.info/scans/en/c16/186.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d11dffef-98c8-400d-98a2-d4fa506f18c7.jpg?1562276050
 image_updated=2017-08-17
 value=3.755
 rarity=U

@@ -1,5 +1,5 @@
 name=Tishana's Wayfinder
-image=https://magiccards.info/scans/en/xln/211.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af52383b-545e-4b64-93f9-317ba6dcf5a8.jpg?1562562186
 value=2.500
 rarity=C
 type=Creature

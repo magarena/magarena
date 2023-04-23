@@ -1,5 +1,5 @@
 name=Molimo, Maro-Sorcerer
-image=https://magiccards.info/scans/en/10e/280.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/321f68b5-42ad-4f71-8df4-78075bf68ce5.jpg?1608917482
 image_updated=2016-12-23
 value=4.043
 rarity=R

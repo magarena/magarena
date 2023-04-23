@@ -1,5 +1,5 @@
 name=Scaled Behemoth
-image=https://magiccards.info/scans/en/akh/184.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/017ef6eb-7a2b-4730-bf21-a2289d4c07ad.jpg?1608910878
 value=2.500
 rarity=U
 type=Creature

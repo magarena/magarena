@@ -1,5 +1,5 @@
 name=Monkey Cage
-image=https://magiccards.info/scans/en/mm/307.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07f6be53-7a20-4e6b-a6ce-11cba06af8cb.jpg?1562378956
 value=4.015
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Hazoret the Fervent
-image=https://magiccards.info/scans/en/akh/136.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36ed9f9d-99a7-49f4-b0ad-d71355809d32.jpg?1543675610
 value=2.500
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Viashino Slasher
-image=https://magiccards.info/scans/en/rav/149.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fa18f23-c995-4fcc-8e95-bbf76426e703.jpg?1598915982
 value=1.462
 rarity=C
 type=Creature

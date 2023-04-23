@@ -1,5 +1,5 @@
 name=Hellion Crucible
-image=https://magiccards.info/scans/en/m13/226.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad8274ef-a46a-4f5f-8ad1-6ce828f24210.jpg?1562558623
 value=3.071
 rarity=R
 type=Land

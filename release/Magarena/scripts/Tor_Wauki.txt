@@ -1,5 +1,5 @@
 name=Tor Wauki
-image=https://magiccards.info/scans/en/lg/305.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b37c8bc5-5b9e-431f-afee-09f961e4a7d0.jpg?1562932853
 value=3.077
 rarity=U
 type=Legendary,Creature

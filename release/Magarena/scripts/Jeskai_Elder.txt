@@ -1,5 +1,5 @@
 name=Jeskai Elder
-image=https://magiccards.info/scans/en/ktk/43.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38fd9091-2d22-411f-955a-24c32293cdca.jpg?1673147323
 value=3.167
 rarity=U
 type=Creature

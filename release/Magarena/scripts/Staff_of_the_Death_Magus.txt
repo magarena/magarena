@@ -1,5 +1,5 @@
 name=Staff of the Death Magus
-image=https://magiccards.info/scans/en/m15/232.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84a341a4-8177-41cd-a3bc-eff5dee48c94.jpg?1562790167
 value=1.700
 rarity=U
 type=Artifact

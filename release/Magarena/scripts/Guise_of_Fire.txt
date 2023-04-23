@@ -1,5 +1,5 @@
 name=Guise of Fire
-image=https://magiccards.info/scans/en/avr/137.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/beb10d42-fa19-400c-bad8-ec3827f077bc.jpg?1592709089
 value=1.500
 rarity=C
 type=Enchantment

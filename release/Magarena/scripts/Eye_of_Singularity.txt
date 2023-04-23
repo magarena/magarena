@@ -1,5 +1,5 @@
 name=Eye of Singularity
-image=https://magiccards.info/scans/en/vi/104.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa84e4ad-738a-4d23-a84c-06c39ff4200b.jpg?1562279120
 value=4.186
 rarity=R
 type=World,Enchantment

@@ -1,5 +1,5 @@
 name=Balshan Griffin
-image=https://magiccards.info/scans/en/od/67.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/529c5440-e31f-40be-9e66-699d17049fb4.jpg?1562910152
 value=1.379
 rarity=U
 type=Creature

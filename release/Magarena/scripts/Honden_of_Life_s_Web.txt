@@ -1,5 +1,5 @@
 name=Honden of Life's Web
-image=https://magiccards.info/scans/en/ema/172.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/766562f1-63b2-41d3-b76d-a31bac70fa89.jpg?1580014818
 value=3.647
 rarity=U
 type=Legendary,Enchantment

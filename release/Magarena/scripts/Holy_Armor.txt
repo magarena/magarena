@@ -1,5 +1,5 @@
 name=Holy Armor
-image=https://magiccards.info/scans/en/4e/279.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a0b9dba-f621-4700-8a36-bf326e04cbac.jpg?1559603633
 value=2.282
 rarity=C
 type=Enchantment

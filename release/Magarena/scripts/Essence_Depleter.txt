@@ -1,5 +1,5 @@
 name=Essence Depleter
-image=https://magiccards.info/scans/en/ogw/69.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/996da623-1c34-4545-a800-648238ea91ae.jpg?1562925962
 image_updated=2016-02-29
 value=2.500
 rarity=U

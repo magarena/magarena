@@ -1,5 +1,5 @@
 name=Birds of Paradise
-image=https://magiccards.info/scans/en/cn2/176.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/feefe9f0-24a6-461c-9ef1-86c5a6f33b83.jpg?1594681430
 image_updated=2017-08-29
 value=4.424
 rarity=R

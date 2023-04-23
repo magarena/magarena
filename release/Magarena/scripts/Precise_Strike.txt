@@ -1,5 +1,5 @@
 name=Precise Strike
-image=https://magiccards.info/scans/en/aer/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cd2e7ab-b63e-48e8-a32a-6ff8673241d9.jpg?1576381864
 value=2.500
 rarity=C
 type=Instant

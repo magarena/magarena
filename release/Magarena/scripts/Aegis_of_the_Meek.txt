@@ -1,5 +1,5 @@
 name=Aegis of the Meek
-image=https://magiccards.info/scans/en/ia/282.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d272051-f442-4f6e-8c64-df28b398d2e8.jpg?1587856745
 value=1.641
 rarity=R
 type=Artifact

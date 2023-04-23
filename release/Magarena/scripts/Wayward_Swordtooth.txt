@@ -1,5 +1,5 @@
 name=Wayward Swordtooth
-image=https://magiccards.info/scans/en/rix/150.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/351e8b1b-4e4e-4ffc-a134-3cf0e2a1dd6d.jpg?1555040769
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Boiling Earth
-image=https://magiccards.info/scans/en/bfz/142.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdaab44c-4ce1-43fb-915c-c687fe8559ce.jpg?1562943558
 image_updated=2015-11-08
 value=2.500
 rarity=C

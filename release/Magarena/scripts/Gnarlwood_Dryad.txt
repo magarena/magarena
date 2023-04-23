@@ -1,5 +1,5 @@
 name=Gnarlwood Dryad
-image=https://magiccards.info/scans/en/emn/159.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa506387-e538-4b2c-94df-29866eb74a71.jpg?1576384795
 image_updated=2016-09-05
 value=2.500
 rarity=U

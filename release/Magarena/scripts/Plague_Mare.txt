@@ -1,5 +1,5 @@
 name=Plague Mare
-image=https://magiccards.info/scans/en/m19/114.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/995596a3-343d-4272-86bf-d76fd32ab78e.jpg?1562303360
 value=2.500
 rarity=U
 type=Creature

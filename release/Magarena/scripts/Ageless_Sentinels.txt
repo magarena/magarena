@@ -1,5 +1,5 @@
 name=Ageless Sentinels
-image=https://magiccards.info/scans/en/sc/1.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccaa4a19-8eba-4c43-8a9a-636e234df751.jpg?1562534734
 value=3.847
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Druid Lyrist
-image=https://magiccards.info/scans/en/od/238.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9923532-bc4f-44de-b963-d6914321c49a.jpg?1562938699
 value=3.196
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Aven Warcraft
-image=https://magiccards.info/scans/en/ju/2.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fd5d21a-b151-4fea-ac0d-6659af131bf9.jpg?1562628941
 value=2.620
 rarity=U
 type=Instant

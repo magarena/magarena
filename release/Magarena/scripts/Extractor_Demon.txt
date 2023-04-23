@@ -1,5 +1,5 @@
 name=Extractor Demon
-image=https://magiccards.info/scans/en/mm3/69.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8d09723-3729-44b7-8f3d-3de47c135849.jpg?1562276018
 image_updated=2017-08-08
 value=3.178
 rarity=R

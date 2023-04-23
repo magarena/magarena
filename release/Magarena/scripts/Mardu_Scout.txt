@@ -1,5 +1,5 @@
 name=Mardu Scout
-image=https://magiccards.info/scans/en/frf/108.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e7891b8-ba69-4c5b-a29f-ee7bcf2374f0.jpg?1562822450
 value=2.500
 rarity=C
 type=Creature

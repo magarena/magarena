@@ -1,5 +1,5 @@
 name=Scourge of Numai
-image=https://magiccards.info/scans/en/bok/80.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7692ef1-bfae-411d-a589-f493128ef44b.jpg?1593860769
 value=2.038
 rarity=U
 type=Creature

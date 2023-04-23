@@ -1,5 +1,5 @@
 name=Bladewing the Risen
-image=https://magiccards.info/scans/en/ima/193.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27ce43cb-44f4-4d94-8700-d9f3cc043989.jpg?1584897843
 image_updated=2017-04-12
 value=4.090
 rarity=U

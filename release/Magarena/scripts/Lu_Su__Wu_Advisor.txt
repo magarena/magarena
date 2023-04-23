@@ -1,5 +1,5 @@
 name=Lu Su, Wu Advisor
-image=https://magiccards.info/scans/en/p3k/47.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d361823-31ce-42c4-997d-3d3b52c0599a.jpg?1562257496
 value=2.697
 rarity=R
 type=Legendary,Creature

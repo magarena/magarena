@@ -1,5 +1,5 @@
 name=Crypt Incursion
-image=https://magiccards.info/scans/en/dgm/23.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3b71cc5-0a81-4cab-bae3-49335c04aaaa.jpg?1562931583
 value=3.800
 rarity=C
 type=Instant

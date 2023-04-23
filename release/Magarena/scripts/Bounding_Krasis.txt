@@ -1,5 +1,5 @@
 name=Bounding Krasis
-image=https://magiccards.info/scans/en/ori/212.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/660befe5-9c98-4aa3-9ca7-e643eaf91490.jpg?1562023146
 image_updated=2015-11-05
 value=2.500
 rarity=U

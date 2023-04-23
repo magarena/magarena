@@ -1,5 +1,5 @@
 name=Pillar of Light
-image=https://magiccards.info/scans/en/m15/24.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/018ff99e-a23d-4440-8c5c-cfb4942f1906.jpg?1562781789
 value=2.900
 rarity=C
 type=Instant

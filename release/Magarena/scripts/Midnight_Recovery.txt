@@ -1,5 +1,5 @@
 name=Midnight Recovery
-image=https://magiccards.info/scans/en/gtc/73.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4df40471-1118-4429-83bf-8225ea50b69f.jpg?1561826453
 value=2.739
 rarity=C
 type=Sorcery

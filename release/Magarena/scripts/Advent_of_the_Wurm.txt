@@ -1,5 +1,5 @@
 name=Advent of the Wurm
-image=https://magiccards.info/scans/en/mm3/147.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba3b5e35-5448-4115-a9c5-6ac14013c904.jpg?1593814046
 image_updated=2017-08-08
 value=3.887
 rarity=R

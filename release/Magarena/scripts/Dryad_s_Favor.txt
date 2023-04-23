@@ -1,5 +1,5 @@
 name=Dryad's Favor
-image=https://magiccards.info/scans/en/m11/169.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c259509e-9f95-4566-b78a-ba34107539f7.jpg?1562474519
 value=1.240
 rarity=C
 type=Enchantment

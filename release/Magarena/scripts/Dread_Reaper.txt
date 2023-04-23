@@ -1,5 +1,5 @@
 name=Dread Reaper
-image=https://magiccards.info/scans/en/st/76.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/379c70c0-5e1a-4670-8f13-0e68db05b54b.jpg?1562908073
 value=2.375
 rarity=R
 type=Creature

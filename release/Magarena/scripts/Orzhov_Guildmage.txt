@@ -1,5 +1,5 @@
 name=Orzhov Guildmage
-image=https://magiccards.info/scans/en/cmd/217.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d898743b-7e0f-4339-963e-aa4232c681ec.jpg?1592673538
 value=3.686
 rarity=U
 type=Creature

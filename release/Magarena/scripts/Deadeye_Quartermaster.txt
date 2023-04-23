@@ -1,5 +1,5 @@
 name=Deadeye Quartermaster
-image=https://magiccards.info/scans/en/xln/50.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5ba70d58-69fd-4675-85d2-90bc2595c01c.jpg?1562556037
 value=2.500
 rarity=U
 type=Creature

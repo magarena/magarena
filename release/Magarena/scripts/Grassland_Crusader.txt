@@ -1,5 +1,5 @@
 name=Grassland Crusader
-image=https://magiccards.info/scans/en/on/32.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c129f361-8769-4f9a-9745-eb5d0c085b88.jpg?1562940580
 value=1.071
 rarity=C
 type=Creature

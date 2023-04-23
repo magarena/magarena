@@ -1,5 +1,5 @@
 name=Ley Druid
-image=https://magiccards.info/scans/en/9e/251.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dac78d2-dd1b-412a-b1b4-4fef1a4fd583.jpg?1562734968
 value=2.650
 rarity=U
 type=Creature

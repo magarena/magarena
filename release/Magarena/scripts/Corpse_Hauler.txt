@@ -1,5 +1,5 @@
 name=Corpse Hauler
-image=https://magiccards.info/scans/en/m14/90.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11f7bdf8-505e-4ed2-8a3b-aba263afd196.jpg?1600714362
 value=2.946
 rarity=C
 type=Creature

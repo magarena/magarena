@@ -1,5 +1,5 @@
 name=Syphon Soul
-image=https://magiccards.info/scans/en/cns/127.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc308882-1c12-4da0-8eae-caf4cc3d43e1.jpg?1562866895
 value=3.667
 rarity=C
 type=Sorcery

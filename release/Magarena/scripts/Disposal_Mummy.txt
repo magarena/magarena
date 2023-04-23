@@ -1,5 +1,5 @@
 name=Disposal Mummy
-image=https://magiccards.info/scans/en/hou/9.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad806d67-4c98-438b-859f-b1358281e09d.jpg?1562810537
 value=2.500
 rarity=C
 type=Creature

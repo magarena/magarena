@@ -1,5 +1,5 @@
 name=Goblin Vandal
-image=https://magiccards.info/scans/en/wl/105.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7ad3b81-f706-4b33-b1ec-7600182a5232.jpg?1562802930
 value=2.942
 rarity=C
 type=Creature

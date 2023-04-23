@@ -1,5 +1,5 @@
 name=Masticore
-image=https://magiccards.info/scans/en/ud/134.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42663ac9-6b77-44f5-be76-c2c52d8465fc.jpg?1562908350
 value=4.000
 rarity=R
 type=Artifact,Creature

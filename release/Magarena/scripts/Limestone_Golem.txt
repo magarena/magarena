@@ -1,5 +1,5 @@
 name=Limestone Golem
-image=https://magiccards.info/scans/en/od/301.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b522518c-1846-4e95-b77d-2aadac78684d.jpg?1562928734
 value=1.706
 rarity=U
 type=Artifact,Creature

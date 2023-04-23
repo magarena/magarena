@@ -1,5 +1,5 @@
 name=Zhao Zilong, Tiger General
-image=https://magiccards.info/scans/en/p3k/33.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d16cf1d-a7c3-4038-a648-299c1bedae99.jpg?1562256056
 value=3.100
 rarity=R
 type=Legendary,Creature

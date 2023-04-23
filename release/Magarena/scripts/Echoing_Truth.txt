@@ -1,5 +1,5 @@
 name=Echoing Truth
-image=https://magiccards.info/scans/en/mma/40.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d987d26-c8e8-4edf-8ac0-6a2980265710.jpg?1673305149
 image_updated=2016-02-29
 value=4.524
 removal=3

@@ -1,5 +1,5 @@
 name=Kher Keep
-image=https://magiccards.info/scans/en/ts/275.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e75a8b5-45c5-4586-aad8-19370477cbc3.jpg?1682210519
 value=3.833
 rarity=R
 type=Legendary,Land

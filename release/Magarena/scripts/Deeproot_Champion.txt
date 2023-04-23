@@ -1,5 +1,5 @@
 name=Deeproot Champion
-image=https://magiccards.info/scans/en/xln/185.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea1e7fed-e6f3-4445-8d01-dca3971f726f.jpg?1562565986
 value=2.500
 rarity=R
 type=Creature

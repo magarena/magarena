@@ -1,5 +1,5 @@
 name=Avatar of Will
-image=https://magiccards.info/scans/en/pr/30.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf65efc7-6ab5-4116-b003-1f028af80939.jpg?1562930759
 value=3.830
 rarity=R
 type=Creature

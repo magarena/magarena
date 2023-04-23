@@ -1,5 +1,5 @@
 name=Kin-Tree Invocation
-image=https://magiccards.info/scans/en/ktk/183.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/926b49a1-f220-41ab-8c67-8354a91a15e8.jpg?1562790454
 value=3.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Cleansing Nova
-image=https://magiccards.info/scans/en/m19/9.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e75658ef-9ae4-4f4b-ab5d-a7d4b31a9fce.jpg?1637629079
 value=2.500
 rarity=R
 type=Sorcery

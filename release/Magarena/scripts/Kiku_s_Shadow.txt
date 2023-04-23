@@ -1,5 +1,5 @@
 name=Kiku's Shadow
-image=https://magiccards.info/scans/en/sok/77.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38700c7d-2f24-47e4-a899-d294daed5549.jpg?1562493460
 value=3.902
 rarity=U
 type=Sorcery

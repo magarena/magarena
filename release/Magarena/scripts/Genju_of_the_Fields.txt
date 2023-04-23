@@ -1,5 +1,5 @@
 name=Genju of the Fields
-image=https://magiccards.info/scans/en/bok/5.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0cf9142-be8e-48d8-a1b4-9a7fb71718d0.jpg?1562880345
 value=3.922
 rarity=U
 type=Enchantment

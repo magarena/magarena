@@ -1,5 +1,5 @@
 name=Field Marshal
-image=https://magiccards.info/scans/en/10e/15.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e22d287-274e-4222-9ed7-3e609a84ac07.jpg?1562544688
 value=4.330
 rarity=R
 type=Creature

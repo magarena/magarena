@@ -1,5 +1,5 @@
 name=Seal of Primordium
-image=https://magiccards.info/scans/en/mm3/135.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd5592ab-6883-4c5a-8d50-d9530d905b19.jpg?1619398626
 image_updated=2017-08-08
 value=4.408
 rarity=C

@@ -1,5 +1,5 @@
 name=Hematite Talisman
-image=https://magiccards.info/scans/en/ia/295.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83585337-56a9-44d2-9ed1-8a959bcfb010.jpg?1562919378
 value=1.724
 rarity=U
 type=Artifact

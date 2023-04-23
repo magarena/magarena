@@ -1,5 +1,5 @@
 name=Spellheart Chimera
-image=https://magiccards.info/scans/en/c16/222.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8782a7b7-79ca-4e5c-845b-d662222574c0.jpg?1592761657
 image_updated=2016-01-09
 value=3.730
 rarity=U

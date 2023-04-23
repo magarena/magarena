@@ -1,5 +1,5 @@
 name=Bloodhunter Bat
-image=https://magiccards.info/scans/en/a25/80.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99a14228-3716-4448-a8c3-93928b9b85d6.jpg?1600699624
 image_updated=2018-04-27
 value=2.840
 rarity=C

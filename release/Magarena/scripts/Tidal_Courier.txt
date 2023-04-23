@@ -1,5 +1,5 @@
 name=Tidal Courier
-image=https://magiccards.info/scans/en/ap/31.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39692846-0819-42a3-af25-d9e3a4233b52.jpg?1592764662
 value=2.788
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Hammer of Purphoros
-image=https://magiccards.info/scans/en/ths/124.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f867f61-676e-40b3-8e22-e60d0606c733.jpg?1562817145
 value=3.592
 rarity=R
 type=Legendary,Enchantment,Artifact

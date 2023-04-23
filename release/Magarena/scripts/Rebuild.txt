@@ -1,5 +1,5 @@
 name=Rebuild
-image=https://magiccards.info/scans/en/ul/40.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd683b0b-1ac1-4fa7-9657-d3b29db2ae51.jpg?1562201476
 value=3.973
 rarity=U
 type=Instant

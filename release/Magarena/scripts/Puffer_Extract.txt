@@ -1,5 +1,5 @@
 name=Puffer Extract
-image=https://magiccards.info/scans/en/mm/310.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83093cdf-0b12-419c-a748-21acf166e195.jpg?1562381830
 value=2.674
 rarity=U
 type=Artifact

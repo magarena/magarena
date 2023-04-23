@@ -1,5 +1,5 @@
 name=Banners Raised
-image=https://magiccards.info/scans/en/avr/127.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7792df3-e2ab-4e60-abee-f24b72807107.jpg?1592709017
 value=1.880
 rarity=C
 type=Instant

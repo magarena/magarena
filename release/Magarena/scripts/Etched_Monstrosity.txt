@@ -1,5 +1,5 @@
 name=Etched Monstrosity
-image=https://magiccards.info/scans/en/mm2/210.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6be7947-b929-408d-ad67-3b07b93dd36e.jpg?1562269329
 image_updated=2015-11-05
 value=3.660
 rarity=R

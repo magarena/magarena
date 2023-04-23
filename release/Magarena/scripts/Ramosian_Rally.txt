@@ -1,5 +1,5 @@
 name=Ramosian Rally
-image=https://magiccards.info/scans/en/mm/38.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fc0ff04-43e7-4a0d-b7e2-8bab72cc6cc0.jpg?1562381822
 value=3.150
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Coral Eel
-image=https://magiccards.info/scans/en/9eb/3.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00223901-d462-41b0-9749-b093058f682f.jpg?1562730475
 image_updated=2015-05-17
 value=2.241
 rarity=C

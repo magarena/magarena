@@ -1,5 +1,5 @@
 name=Temple Altisaur
-image=https://magiccards.info/scans/en/rix/28.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa8f8d61-51d6-479b-a812-6cbacc7ea1fc.jpg?1555039829
 value=2.500
 rarity=R
 type=Creature

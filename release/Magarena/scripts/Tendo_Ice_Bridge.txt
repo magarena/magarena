@@ -1,5 +1,5 @@
 name=Tendo Ice Bridge
-image=https://magiccards.info/scans/en/bok/165.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d246f521-b9a0-4b4f-b38c-0e4eb4066212.jpg?1562879966
 value=4.282
 rarity=R
 type=Land

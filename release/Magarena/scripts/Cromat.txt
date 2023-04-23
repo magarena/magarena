@@ -1,5 +1,5 @@
 name=Cromat
-image=https://magiccards.info/scans/en/ap/94.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d9e0a23-d2a8-40a6-9076-ed6fb539141b.jpg?1562924606
 value=4.118
 rarity=R
 type=Legendary,Creature

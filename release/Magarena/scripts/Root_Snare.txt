@@ -1,5 +1,5 @@
 name=Root Snare
-image=https://magiccards.info/scans/en/m19/199.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f38b1a2-3f85-4dcd-b90d-bb049651b8b7.jpg?1584831239
 value=2.500
 rarity=C
 type=Instant

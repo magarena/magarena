@@ -1,5 +1,5 @@
 name=Quickling
-image=https://magiccards.info/scans/en/m15/76.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/278fbdb9-51e3-4ed6-bcc5-c5b86f06c216.jpg?1562784199
 value=3.625
 rarity=U
 type=Creature

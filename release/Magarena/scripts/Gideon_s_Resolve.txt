@@ -1,5 +1,5 @@
 name=Gideon's Resolve
-image=https://magiccards.info/scans/en/akh/272.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a30b8c40-39ac-423f-b7da-845a16cd1b63.jpg?1561797764
 value=2.500
 rarity=R
 type=Enchantment

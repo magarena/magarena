@@ -1,5 +1,5 @@
 name=Baneslayer Angel
-image=https://magiccards.info/scans/en/m11/7.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bd3014b-94bb-4a9f-92cf-239a2dcc7e97.jpg?1594734758
 value=4.152
 rarity=M
 type=Creature

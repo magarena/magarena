@@ -1,5 +1,5 @@
 name=Trinket Mage
-image=https://magiccards.info/scans/en/c16/102.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a7800f7-95cd-4f5c-b054-4afad8924367.jpg?1658650117
 image_updated=2017-08-17
 value=4.455
 rarity=C

@@ -1,5 +1,5 @@
 name=Senseless Rage
-image=https://magiccards.info/scans/en/soi/180.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c779cb6-3454-4d5a-85a1-bea5cf8005b1.jpg?1576384895
 value=2.500
 rarity=C
 type=Enchantment

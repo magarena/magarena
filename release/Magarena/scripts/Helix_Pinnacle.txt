@@ -1,5 +1,5 @@
 name=Helix Pinnacle
-image=https://magiccards.info/scans/en/eve/68.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c1121df-b03e-4ad9-8c45-c3b4066e4a39.jpg?1562927938
 value=3.636
 rarity=R
 type=Enchantment

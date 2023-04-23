@@ -1,5 +1,5 @@
 name=Guardian's Magemark
-image=https://magiccards.info/scans/en/gp/8.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86a688e9-28ec-4604-8705-46549402a6f8.jpg?1593271862
 value=2.405
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Fevered Strength
-image=https://magiccards.info/scans/en/ai/10.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5c531fc-4e4e-44c9-a2ee-4f7fe41bb3f0.jpg?1562940235
 value=2.733
 rarity=C
 type=Instant

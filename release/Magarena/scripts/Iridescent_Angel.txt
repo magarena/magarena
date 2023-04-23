@@ -1,5 +1,5 @@
 name=Iridescent Angel
-image=https://magiccards.info/scans/en/od/288.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3bce4f8-3a3f-4ec2-9b37-10bb12713afc.jpg?1562940788
 value=4.028
 rarity=R
 type=Creature

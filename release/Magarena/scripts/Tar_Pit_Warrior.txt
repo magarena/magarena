@@ -1,5 +1,5 @@
 name=Tar Pit Warrior
-image=https://magiccards.info/scans/en/vi/20.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1283190-094e-4a9f-bf67-f9fd05778744.jpg?1587913245
 value=3.633
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Cho-Arrim Legate
-image=https://magiccards.info/scans/en/mm/10.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/1427a3a1-24e1-4697-b5eb-1c0a24f89e75.jpg?1562379420
 value=3.847
 rarity=U
 type=Creature

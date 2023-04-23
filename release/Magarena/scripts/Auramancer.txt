@@ -1,5 +1,5 @@
 name=Auramancer
-image=https://magiccards.info/scans/en/a25/6.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f05fde4-a866-459c-9a24-2884116ab647.jpg?1562434949
 image_updated=2018-04-26
 value=2.500
 rarity=C

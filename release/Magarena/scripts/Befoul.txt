@@ -1,5 +1,5 @@
 name=Befoul
-image=https://magiccards.info/scans/en/chk/102.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dfff5d3-1433-4a24-83e6-6361a446b974.jpg?1562758881
 value=3.500
 rarity=C
 type=Sorcery

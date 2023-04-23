@@ -1,5 +1,5 @@
 name=Zurgo Bellstriker
-image=https://magiccards.info/scans/en/dtk/169.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbac6d75-59ab-4d7d-87ae-46875abf8cc7.jpg?1562792246
 value=2.500
 rarity=R
 type=Legendary,Creature

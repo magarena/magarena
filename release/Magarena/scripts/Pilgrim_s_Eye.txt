@@ -1,5 +1,5 @@
 name=Pilgrim's Eye
-image=https://magiccards.info/scans/en/ema/229.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32161267-e12b-454f-a7e1-94e078566ffa.jpg?1674138005
 value=3.111
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Yore-Tiller Nephilim
-image=https://magiccards.info/scans/en/gp/140.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0247d76c-dee4-4d1b-9c25-faa56171541e.jpg?1593272858
 value=3.681
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Adamant Will
-image=https://magiccards.info/scans/en/dom/2.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd091f3e-5fcc-4d12-b0c3-3b6340ab01d8.jpg?1643585797
 value=2.500
 rarity=C
 type=Instant

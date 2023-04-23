@@ -1,5 +1,5 @@
 name=Giant Harbinger
-image=https://magiccards.info/scans/en/lw/169.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f72f461-98d7-45e0-9968-9afb240fbf1e.jpg?1562340791
 value=2.853
 rarity=U
 type=Creature

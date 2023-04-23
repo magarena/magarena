@@ -1,5 +1,5 @@
 name=Bringer of the Blue Dawn
-image=https://magiccards.info/scans/en/5dn/26.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45dc82a0-f054-4614-a7b9-4c5a7c9d2a77.jpg?1562876707
 value=4.280
 rarity=R
 type=Creature

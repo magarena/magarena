@@ -1,5 +1,5 @@
 name=Hypnox
-image=https://magiccards.info/scans/en/tr/64.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e0e53a1-11d5-4975-b698-8b5d72d241f0.jpg?1562628577
 value=3.812
 rarity=R
 type=Creature

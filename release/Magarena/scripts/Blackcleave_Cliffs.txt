@@ -1,5 +1,5 @@
 name=Blackcleave Cliffs
-image=https://magiccards.info/scans/en/som/224.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/1441fba4-fe06-4b5f-a103-aa6cf59a3859.jpg?1675957263
 value=4.257
 rarity=R
 type=Land

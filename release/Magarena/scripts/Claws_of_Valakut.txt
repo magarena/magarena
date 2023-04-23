@@ -1,5 +1,5 @@
 name=Claws of Valakut
-image=https://magiccards.info/scans/en/wwk/75.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bd90bc0-93b6-427f-96ad-b303dcc0383f.jpg?1562900831
 value=3.464
 rarity=C
 type=Enchantment

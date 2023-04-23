@@ -1,5 +1,5 @@
 name=Drowned Rusalka
-image=https://magiccards.info/scans/en/gp/24.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68864836-799e-467d-97cc-38c89f71afcf.jpg?1593271985
 value=3.205
 rarity=U
 type=Creature

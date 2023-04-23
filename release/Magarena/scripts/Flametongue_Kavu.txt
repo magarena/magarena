@@ -1,5 +1,5 @@
 name=Flametongue Kavu
-image=https://magiccards.info/scans/en/c14/176.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21a3f8d6-80ff-4292-871e-e19907841448.jpg?1601077671
 value=4.500
 removal=2
 rarity=U

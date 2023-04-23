@@ -1,5 +1,5 @@
 name=Obelisk of Naya
-image=https://magiccards.info/scans/en/ala/216.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df6317b0-15fd-4924-9302-41bed2354546.jpg?1562709895
 value=2.385
 rarity=C
 type=Artifact

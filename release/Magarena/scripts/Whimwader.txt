@@ -1,5 +1,5 @@
 name=Whimwader
-image=https://magiccards.info/scans/en/shm/54.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b10e1d8b-edae-4b5e-b897-2c0a307e650c.jpg?1562834782
 value=1.892
 rarity=C
 type=Creature

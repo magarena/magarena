@@ -1,5 +1,5 @@
 name=Recurring Insight
-image=https://magiccards.info/scans/en/roe/82.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db92d00c-e5eb-4e69-9ebc-fec6d9c0f71e.jpg?1562709316
 value=3.107
 rarity=R
 type=Sorcery

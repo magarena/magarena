@@ -1,5 +1,5 @@
 name=Llanowar Vanguard
-image=https://magiccards.info/scans/en/in/197.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72e6ed79-bdfd-49f9-bfa4-be4196880487.jpg?1562917999
 value=1.595
 rarity=C
 type=Creature

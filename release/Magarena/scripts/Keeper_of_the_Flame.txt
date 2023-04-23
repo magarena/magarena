@@ -1,5 +1,5 @@
 name=Keeper of the Flame
-image=https://magiccards.info/scans/en/ex/85.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bf246ca-9dfc-400f-8883-acc80ac016e1.jpg?1562088327
 value=3.138
 rarity=U
 type=Creature

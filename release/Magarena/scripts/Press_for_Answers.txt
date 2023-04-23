@@ -1,5 +1,5 @@
 name=Press for Answers
-image=https://magiccards.info/scans/en/soi/80.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ec8b8bf-7b02-4f5e-bbd3-9560f9888192.jpg?1576384189
 value=2.500
 rarity=C
 type=Sorcery

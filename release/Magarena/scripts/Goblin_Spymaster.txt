@@ -1,5 +1,5 @@
 name=Goblin Spymaster
-image=https://magiccards.info/scans/en/c16/19.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1687ea64-fcc0-4bd8-aa7e-3c893d4ef2a8.jpg?1674142009
 image_updated=2016-12-04
 value=2.500
 rarity=R

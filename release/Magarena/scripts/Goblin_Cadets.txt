@@ -1,5 +1,5 @@
 name=Goblin Cadets
-image=https://magiccards.info/scans/en/cmd/125.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78f93873-5053-40c6-b79a-3c54a8005b75.jpg?1592713565
 value=2.683
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Jeskai Banner
-image=https://magiccards.info/scans/en/ktk/222.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/684dc050-a66b-4364-9880-56f383db6c0a.jpg?1562787889
 value=2.667
 rarity=C
 type=Artifact

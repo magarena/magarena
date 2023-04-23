@@ -1,5 +1,5 @@
 name=Tablet of Epityr
-image=https://magiccards.info/scans/en/aq/32.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/4534c401-a144-41de-b4ee-f3b389d21316.jpg?1562911220
 value=1.724
 rarity=C
 type=Artifact

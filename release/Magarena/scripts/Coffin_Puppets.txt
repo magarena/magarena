@@ -1,5 +1,5 @@
 name=Coffin Puppets
-image=https://magiccards.info/scans/en/pr/60.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afcda8e4-d3dc-44f8-b277-b61fa261666b.jpg?1562927708
 value=2.250
 rarity=R
 type=Creature

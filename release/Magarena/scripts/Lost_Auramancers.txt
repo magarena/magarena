@@ -1,5 +1,5 @@
 name=Lost Auramancers
-image=https://magiccards.info/scans/en/fut/11.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0595c72-5b32-4d7b-8efc-7ce5c83504dd.jpg?1619393058
 value=3.561
 rarity=U
 type=Creature

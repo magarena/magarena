@@ -1,5 +1,5 @@
 name=Mana Vapors
-image=https://magiccards.info/scans/en/pr/38.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b6dfe49-9fd6-4fa0-b73e-e6470d8e7ca7.jpg?1562897186
 value=3.938
 rarity=U
 type=Sorcery

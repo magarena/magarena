@@ -1,5 +1,5 @@
 name=Thrill-Kill Assassin
-image=https://magiccards.info/scans/en/ima/111.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23915972-2009-4363-a791-24be90a4fbe0.jpg?1562846522
 image_updated=2017-04-12
 value=3.403
 rarity=C

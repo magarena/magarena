@@ -1,5 +1,5 @@
 name=Eye of Ramos
-image=https://magiccards.info/scans/en/mm/294.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78d22400-39f6-444d-b508-783a7df7e945.jpg?1562381375
 value=3.481
 rarity=R
 type=Artifact

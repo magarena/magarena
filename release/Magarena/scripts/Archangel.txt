@@ -1,5 +1,5 @@
 name=Archangel
-image=https://magiccards.info/scans/en/avr/5.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85160859-9a2d-470b-a924-4b1b4caba860.jpg?1562923102
 value=3.206
 rarity=U
 type=Creature

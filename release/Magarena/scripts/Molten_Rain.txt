@@ -1,5 +1,5 @@
 name=Molten Rain
-image=https://magiccards.info/scans/en/mm3/103.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecdd414b-3d9d-4347-acce-289209d09fc4.jpg?1593813519
 image_updated=2017-08-08
 value=4.295
 removal=3

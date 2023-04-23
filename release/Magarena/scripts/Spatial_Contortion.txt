@@ -1,5 +1,5 @@
 name=Spatial Contortion
-image=https://magiccards.info/scans/en/ogw/8.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e2acf70-7625-4b77-83c1-0e08436da31f.jpg?1562910812
 image_updated=2016-02-29
 value=2.500
 rarity=U

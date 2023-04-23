@@ -1,5 +1,5 @@
 name=Thopter Foundry
-image=https://magiccards.info/scans/en/c16/237.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d8dcd5e-d4d0-49ae-a591-78d80322105d.jpg?1599708468
 image_updated=2017-08-17
 value=3.933
 rarity=U

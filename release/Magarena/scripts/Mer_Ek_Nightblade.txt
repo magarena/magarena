@@ -1,5 +1,5 @@
 name=Mer-Ek Nightblade
-image=https://magiccards.info/scans/en/ima/97.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ade8f32c-d188-4a36-98a4-584b6ef95902.jpg?1562852963
 image_updated=2017-04-12
 value=3.750
 rarity=U

@@ -1,5 +1,5 @@
 name=Lightwalker
-image=https://magiccards.info/scans/en/dtk/24.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64cfd373-148d-4073-8867-3d9ccae20fd1.jpg?1600717839
 value=2.500
 rarity=C
 type=Creature

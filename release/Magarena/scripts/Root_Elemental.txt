@@ -1,5 +1,5 @@
 name=Root Elemental
-image=https://magiccards.info/scans/en/sc/127.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5161968e-b757-45b8-826f-98415291024d.jpg?1562529053
 value=3.722
 rarity=R
 type=Creature

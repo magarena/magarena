@@ -1,5 +1,5 @@
 name=Deathcap Cultivator
-image=https://magiccards.info/scans/en/soi/202.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc4aee46-ac42-4ede-ad06-906e2955a9d3.jpg?1576385047
 value=2.500
 rarity=R
 type=Creature

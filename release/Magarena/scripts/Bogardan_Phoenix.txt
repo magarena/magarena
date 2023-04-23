@@ -1,5 +1,5 @@
 name=Bogardan Phoenix
-image=https://magiccards.info/scans/en/vi/76.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/253db28a-3873-4364-80d7-a8164000ea9e.jpg?1562277413
 value=3.806
 rarity=R
 type=Creature

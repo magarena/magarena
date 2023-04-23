@@ -1,5 +1,5 @@
 name=Electric Eel
-image=https://magiccards.info/scans/en/dk/24.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8834c18-0e4e-4785-9d15-b33345e3789b.jpg?1562938484
 value=2.652
 rarity=U
 type=Creature

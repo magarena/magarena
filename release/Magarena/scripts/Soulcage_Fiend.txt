@@ -1,5 +1,5 @@
 name=Soulcage Fiend
-image=https://magiccards.info/scans/en/avr/120.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dce1b1d3-9602-42bf-b341-d96976ff1e60.jpg?1592708974
 value=3.064
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Cached Defenses
-image=https://magiccards.info/scans/en/frf/126.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41ad36cf-5f29-41c4-b2a3-6b8e8c0c493f.jpg?1562824585
 value=2.500
 rarity=U
 type=Sorcery

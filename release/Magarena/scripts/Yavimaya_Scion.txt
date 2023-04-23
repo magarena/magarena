@@ -1,5 +1,5 @@
 name=Yavimaya Scion
-image=https://magiccards.info/scans/en/ul/119.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2f80036-1058-4513-8549-0557df9b5d61.jpg?1562863776
 value=3.080
 rarity=C
 type=Creature

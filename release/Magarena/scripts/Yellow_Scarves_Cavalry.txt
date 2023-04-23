@@ -1,5 +1,5 @@
 name=Yellow Scarves Cavalry
-image=https://magiccards.info/scans/en/p3k/125.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84460666-4f6b-422c-b20e-dc1651c66e15.jpg?1562257035
 value=2.266
 rarity=C
 type=Creature

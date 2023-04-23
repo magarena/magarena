@@ -1,5 +1,5 @@
 name=Agonizing Demise
-image=https://magiccards.info/scans/en/in/92.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7621aab-4839-45ef-bfa2-9aa2417bbec0.jpg?1562938261
 value=3.524
 rarity=C
 type=Instant

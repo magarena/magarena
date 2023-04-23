@@ -1,5 +1,5 @@
 name=Fangren Marauder
-image=https://magiccards.info/scans/en/mbs/79.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5cf62a2-d03a-495d-924a-bf79524175fa.jpg?1562615957
 value=3.331
 rarity=C
 type=Creature

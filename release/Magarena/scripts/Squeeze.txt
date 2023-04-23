@@ -1,5 +1,5 @@
 name=Squeeze
-image=https://magiccards.info/scans/en/mm/105.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbe63220-992b-459c-81ca-d4e2de273ce1.jpg?1562382565
 value=3.308
 rarity=R
 type=Enchantment

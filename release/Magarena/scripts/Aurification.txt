@@ -1,5 +1,5 @@
 name=Aurification
-image=https://magiccards.info/scans/en/on/6.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93d9e9ea-9f88-4206-8960-b5ebe839ee16.jpg?1562929867
 value=3.573
 rarity=R
 type=Enchantment

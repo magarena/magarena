@@ -1,5 +1,5 @@
 name=Hanabi Blast
-image=https://magiccards.info/scans/en/chk/170.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/881fecf4-8c14-4614-84bd-c1a3dcdbb5ff.jpg?1562762458
 value=2.557
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Farmstead
-image=https://magiccards.info/scans/en/rv/203.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cd5732c-cd54-48d8-8b32-f33782ec69da.jpg?1559593026
 value=1.190
 rarity=R
 type=Enchantment

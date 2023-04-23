@@ -1,5 +1,5 @@
 name=Solemn Recruit
-image=https://magiccards.info/scans/en/aer/22.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b93ee66-bc1d-42ad-8839-d77ab5992f14.jpg?1674141226
 value=2.500
 rarity=R
 type=Creature

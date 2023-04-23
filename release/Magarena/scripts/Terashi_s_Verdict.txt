@@ -1,5 +1,5 @@
 name=Terashi's Verdict
-image=https://magiccards.info/scans/en/bok/27.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc5fa34b-95c6-4e02-9e15-3f595f744741.jpg?1562879427
 value=2.456
 rarity=U
 type=Instant

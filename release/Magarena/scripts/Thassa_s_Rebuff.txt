@@ -1,5 +1,5 @@
 name=Thassa's Rebuff
-image=https://magiccards.info/scans/en/bng/54.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/816a6ff7-cede-4346-b3e6-aee33aefac3a.jpg?1593091807
 value=3.667
 rarity=U
 type=Instant

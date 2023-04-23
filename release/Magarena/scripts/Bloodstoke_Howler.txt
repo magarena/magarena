@@ -1,5 +1,5 @@
 name=Bloodstoke Howler
-image=https://magiccards.info/scans/en/le/89.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/743779d4-fee8-4b8d-a5ac-27f355e006e5.jpg?1562918274
 value=1.685
 rarity=C
 type=Creature

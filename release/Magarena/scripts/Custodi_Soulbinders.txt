@@ -1,5 +1,5 @@
 name=Custodi Soulbinders
-image=https://magiccards.info/scans/en/c16/63.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a0dd7ba-673e-4f69-8cd3-806784501dc2.jpg?1641601147
 image_updated=2017-08-17
 value=3.636
 rarity=R

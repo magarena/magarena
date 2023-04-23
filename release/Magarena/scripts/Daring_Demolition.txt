@@ -1,5 +1,5 @@
 name=Daring Demolition
-image=https://magiccards.info/scans/en/aer/55.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6378898-50b7-47c9-8c25-dc660606be9f.jpg?1576381626
 value=2.500
 rarity=C
 type=Sorcery

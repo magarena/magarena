@@ -1,5 +1,5 @@
 name=Reduce to Dreams
-image=https://magiccards.info/scans/en/bok/49.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10962b1b-4039-4d8a-88e0-fc67537920a9.jpg?1562875508
 value=3.317
 rarity=R
 type=Sorcery

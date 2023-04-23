@@ -1,5 +1,5 @@
 name=Shoving Match
-image=https://magiccards.info/scans/en/mm/103.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa9f4787-9b29-4f57-b105-1f9eb4bb8861.jpg?1562382533
 value=3.837
 rarity=U
 type=Instant

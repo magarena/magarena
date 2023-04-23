@@ -1,5 +1,5 @@
 name=Aether Inspector
-image=https://magiccards.info/scans/en/aer/3.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5dcbe97-d582-464e-98e7-dd06d8652606.jpg?1576381273
 value=2.500
 rarity=C
 type=Creature

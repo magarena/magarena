@@ -1,5 +1,5 @@
 name=Stonehands
-image=https://magiccards.info/scans/en/ia/219.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/888746d8-6322-4554-8acb-ce88eba55c51.jpg?1562869520
 value=2.714
 rarity=C
 type=Enchantment

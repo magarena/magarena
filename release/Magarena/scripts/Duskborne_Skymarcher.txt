@@ -1,5 +1,5 @@
 name=Duskborne Skymarcher
-image=https://magiccards.info/scans/en/xln/9.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baa524bb-0ce7-4c30-93c3-ae15c3b05e92.jpg?1562562991
 value=2.500
 rarity=U
 type=Creature

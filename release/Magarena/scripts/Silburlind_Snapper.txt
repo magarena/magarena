@@ -1,5 +1,5 @@
 name=Silburlind Snapper
-image=https://magiccards.info/scans/en/soi/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7347f4c-a4b3-4c71-91e5-699475e5926e.jpg?1576384224
 value=2.500
 rarity=C
 type=Creature

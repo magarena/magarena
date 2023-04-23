@@ -1,5 +1,5 @@
 name=Battlewand Oak
-image=https://magiccards.info/scans/en/lw/197.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a128ea6-cd00-4410-8dc4-cf66ce6f0fa1.jpg?1562356952
 value=3.378
 rarity=C
 type=Creature

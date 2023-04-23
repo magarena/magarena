@@ -1,5 +1,5 @@
 name=Voiceless Spirit
-image=https://magiccards.info/scans/en/isd/42.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d24d9bd7-5721-4436-a86f-35e376727f46.jpg?1562837534
 value=3.210
 rarity=C
 type=Creature

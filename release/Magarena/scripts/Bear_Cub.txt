@@ -1,5 +1,5 @@
 name=Bear Cub
-image=https://magiccards.info/scans/en/po2/63.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d71abb70-bee5-4823-83dc-db0707023b37.jpg?1562946312
 value=4.072
 rarity=C
 type=Creature

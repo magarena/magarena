@@ -1,5 +1,5 @@
 name=Malakir Soothsayer
-image=https://magiccards.info/scans/en/ogw/87.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72cb3c2c-5d5a-4c9b-a381-ab4dd477d84d.jpg?1562917971
 image_updated=2016-02-29
 value=2.500
 rarity=U

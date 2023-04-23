@@ -1,5 +1,5 @@
 name=Jackalope Herd
-image=https://magiccards.info/scans/en/ex/111.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb80105c-d2c0-4f8c-9302-5e6152a60f54.jpg?1562088801
 value=2.415
 rarity=C
 type=Creature

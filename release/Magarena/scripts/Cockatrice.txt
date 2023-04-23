@@ -1,5 +1,5 @@
 name=Cockatrice
-image=https://magiccards.info/scans/en/tsts/75.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4efcc6db-66bd-42c1-9a74-fd474f784232.jpg?1562775970
 value=3.780
 rarity=R
 type=Creature

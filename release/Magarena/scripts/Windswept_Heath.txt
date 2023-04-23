@@ -1,5 +1,5 @@
 name=Windswept Heath
-image=https://magiccards.info/scans/en/ktk/248.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7b28650-cddc-4878-b1d1-b5a764f4df49.jpg?1571667973
 value=4.300
 rarity=R
 type=Land

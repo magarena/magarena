@@ -1,5 +1,5 @@
 name=Kazandu Refuge
-image=https://magiccards.info/scans/en/pc2/121.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6ca097f1-eef0-4e18-ab5d-49bb4aeb74e2.jpg?1568005222
 value=3.750
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Guardian of the Ages
-image=https://magiccards.info/scans/en/m14/211.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c825c138-97de-44b9-8aec-70608ae035b6.jpg?1562834973
 value=2.750
 rarity=R
 type=Artifact,Creature

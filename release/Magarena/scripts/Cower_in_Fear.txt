@@ -1,5 +1,5 @@
 name=Cower in Fear
-image=https://magiccards.info/scans/en/mm3/62.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08e3cc81-2c08-4281-aa16-4c22f141f31d.jpg?1593813225
 image_updated=2017-08-08
 value=2.676
 rarity=C

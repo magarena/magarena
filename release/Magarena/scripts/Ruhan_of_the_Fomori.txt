@@ -1,5 +1,5 @@
 name=Ruhan of the Fomori
-image=https://magiccards.info/scans/en/cmd/221.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fa40fde-2c11-4dec-b788-01f8d90198df.jpg?1592714235
 value=3.878
 rarity=M
 type=Legendary,Creature

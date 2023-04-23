@@ -1,5 +1,5 @@
 name=Goblin Outlander
-image=https://magiccards.info/scans/en/cfx/109.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e33683b-8bda-4bb9-beb4-fc0cd5ed79ae.jpg?1562801258
 value=2.970
 rarity=C
 type=Creature

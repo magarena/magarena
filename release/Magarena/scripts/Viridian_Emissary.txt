@@ -1,5 +1,5 @@
 name=Viridian Emissary
-image=https://magiccards.info/scans/en/pc2/80.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e488ed05-d63a-4852-b5e9-d7357c60c3e6.jpg?1592673281
 image_updated=2016-02-29
 value=3.643
 rarity=C

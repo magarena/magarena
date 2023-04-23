@@ -1,5 +1,5 @@
 name=Quest for the Nihil Stone
-image=https://magiccards.info/scans/en/wwk/64.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c604a567-71dd-47d9-ae5d-b87b4db98df4.jpg?1562295671
 value=3.748
 rarity=R
 type=Enchantment

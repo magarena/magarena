@@ -1,5 +1,5 @@
 name=Dread Warlock
-image=https://magiccards.info/scans/en/m10/94.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f964660-c2db-4995-bb16-65383362cf19.jpg?1569645513
 value=3.609
 rarity=C
 type=Creature

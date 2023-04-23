@@ -1,5 +1,5 @@
 name=Alchemist's Apprentice
-image=https://magiccards.info/scans/en/avr/42.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31abba67-1241-4fb3-88b5-4c4668ec5f25.jpg?1592708448
 value=2.697
 rarity=C
 type=Creature

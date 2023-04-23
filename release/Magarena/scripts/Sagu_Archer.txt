@@ -1,5 +1,5 @@
 name=Sagu Archer
-image=https://magiccards.info/scans/en/ktk/146.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a26baca-467e-4d94-873e-f266bebd5fd8.jpg?1562785028
 value=2.500
 rarity=C
 type=Creature

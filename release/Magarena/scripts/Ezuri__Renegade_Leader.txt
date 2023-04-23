@@ -1,5 +1,5 @@
 name=Ezuri, Renegade Leader
-image=https://magiccards.info/scans/en/c14/195.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a448dbf-08a1-4145-a4b2-0265cc9f2e53.jpg?1561759289
 value=4.000
 rarity=R
 type=Legendary,Creature

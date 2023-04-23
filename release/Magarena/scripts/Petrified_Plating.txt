@@ -1,5 +1,5 @@
 name=Petrified Plating
-image=https://magiccards.info/scans/en/fut/133.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1195c459-5e06-4f4e-aa6e-58fefa712684.jpg?1562898533
 value=1.969
 rarity=C
 type=Enchantment

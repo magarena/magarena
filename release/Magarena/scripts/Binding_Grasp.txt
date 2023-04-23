@@ -1,5 +1,5 @@
 name=Binding Grasp
-image=https://magiccards.info/scans/en/cstd/8.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27cf6b51-6e77-490d-9b1a-02c1ba3109d1.jpg?1562868056
 value=3.779
 rarity=U
 type=Enchantment

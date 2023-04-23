@@ -1,5 +1,5 @@
 name=Lotus Guardian
-image=https://magiccards.info/scans/en/in/305.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddfc6396-5377-4ab3-9c10-8abcdeae2aa1.jpg?1562939672
 value=2.199
 rarity=R
 type=Artifact,Creature

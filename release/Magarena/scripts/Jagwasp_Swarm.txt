@@ -1,5 +1,5 @@
 name=Jagwasp Swarm
-image=https://magiccards.info/scans/en/wwk/58.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd4e933b-de65-4089-877f-c598004b8e7e.jpg?1562295050
 value=2.333
 rarity=C
 type=Creature

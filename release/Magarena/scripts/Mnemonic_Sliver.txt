@@ -1,5 +1,5 @@
 name=Mnemonic Sliver
-image=https://magiccards.info/scans/en/tp/77.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3457f86f-422c-483d-9d3f-b8e99fdab6c8.jpg?1562428884
 value=3.208
 rarity=U
 type=Creature

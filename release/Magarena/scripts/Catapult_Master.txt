@@ -1,5 +1,5 @@
 name=Catapult Master
-image=https://magiccards.info/scans/en/on/10.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/544df614-277e-43dd-8611-3ec1e1747f57.jpg?1562270223
 image_updated=2016-11-28
 value=4.202
 rarity=R

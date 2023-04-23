@@ -1,5 +1,5 @@
 name=Goliath Sphinx
-image=https://magiccards.info/scans/en/wwk/28.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/864a792b-ad04-4892-92d9-0f6abe3759e8.jpg?1562290986
 value=3.639
 rarity=R
 type=Creature

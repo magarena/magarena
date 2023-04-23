@@ -1,5 +1,5 @@
 name=Detainment Spell
-image=https://magiccards.info/scans/en/ts/12.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c467446b-0168-4c7d-9ab6-57ad8b664877.jpg?1562936528
 value=2.708
 rarity=C
 type=Enchantment

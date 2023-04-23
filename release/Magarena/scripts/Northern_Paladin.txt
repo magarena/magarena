@@ -1,5 +1,5 @@
 name=Northern Paladin
-image=https://magiccards.info/scans/en/7e/28.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ed1fb50-b7c3-43e9-a0ef-a33135a12300.jpg?1562238577
 value=3.962
 rarity=R
 type=Creature

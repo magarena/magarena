@@ -1,5 +1,5 @@
 name=Gisa's Bidding
-image=https://magiccards.info/scans/en/soi/114.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e01e904c-7d8e-447b-90cb-1f4ae3fb304d.jpg?1576384444
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Rhys the Exiled
-image=https://magiccards.info/scans/en/mt/135.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85004079-f9fa-4a05-904d-a77782c4165c.jpg?1631235143
 value=3.588
 rarity=R
 type=Legendary,Creature

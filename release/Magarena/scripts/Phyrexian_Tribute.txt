@@ -1,5 +1,5 @@
 name=Phyrexian Tribute
-image=https://magiccards.info/scans/en/mr/32.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfc55d48-6d6f-429d-8281-e66a9996d574.jpg?1587912628
 value=1.638
 rarity=R
 type=Sorcery

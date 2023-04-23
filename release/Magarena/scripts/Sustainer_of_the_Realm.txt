@@ -1,5 +1,5 @@
 name=Sustainer of the Realm
-image=https://magiccards.info/scans/en/ima/35.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9f7e21e-d4d8-4d6c-9530-b17d5204e9e7.jpg?1562855188
 image_updated=2017-04-12
 value=3.367
 rarity=C

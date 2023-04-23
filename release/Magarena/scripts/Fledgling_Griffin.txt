@@ -1,5 +1,5 @@
 name=Fledgling Griffin
-image=https://magiccards.info/scans/en/wwk/5.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1739550d-3bd8-421b-b2a9-95dd3bff2ce2.jpg?1562282693
 value=2.825
 rarity=C
 type=Creature

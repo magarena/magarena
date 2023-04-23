@@ -1,5 +1,5 @@
 name=Trail of Mystery
-image=https://magiccards.info/scans/en/ktk/154.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/396ba16d-4d8f-4610-a946-394d1e88a62e.jpg?1568004705
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Nightwing Shade
-image=https://magiccards.info/scans/en/m11/109.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3112a8a-dc80-4099-966c-8fa1807a189b.jpg?1562833179
 value=1.710
 rarity=C
 type=Creature

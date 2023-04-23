@@ -1,5 +1,5 @@
 name=Artificer's Epiphany
-image=https://magiccards.info/scans/en/ori/45.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4e6f89d-c73b-4105-9743-95504f0fd866.jpg?1561759787
 image_updated=2015-11-05
 value=2.500
 rarity=C

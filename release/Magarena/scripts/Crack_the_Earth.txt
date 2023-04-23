@@ -1,5 +1,5 @@
 name=Crack the Earth
-image=https://magiccards.info/scans/en/bok/98.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8ab16152-4617-4deb-b995-195e21f8f485.jpg?1593860605
 value=3.491
 rarity=C
 type=Sorcery

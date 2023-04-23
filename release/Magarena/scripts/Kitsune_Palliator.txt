@@ -1,5 +1,5 @@
 name=Kitsune Palliator
-image=https://magiccards.info/scans/en/bok/14.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb981f8b-4f03-4fd2-a255-b10635958bfd.jpg?1562880539
 value=2.125
 rarity=U
 type=Creature

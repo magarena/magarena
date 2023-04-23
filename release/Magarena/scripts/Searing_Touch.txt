@@ -1,5 +1,5 @@
 name=Searing Touch
-image=https://magiccards.info/scans/en/tp/201.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34406508-da49-4b63-b123-55f0924a0675.jpg?1562428882
 value=2.703
 removal=1
 rarity=U

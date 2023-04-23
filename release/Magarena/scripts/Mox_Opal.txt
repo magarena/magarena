@@ -1,5 +1,5 @@
 name=Mox Opal
-image=https://magiccards.info/scans/en/mm2/223.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56001a36-126b-4c08-af98-a6cc4d84210e.jpg?1599709600
 value=4.206
 rarity=M
 type=Legendary,Artifact

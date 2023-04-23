@@ -1,5 +1,5 @@
 name=Skull of Orm
-image=https://magiccards.info/scans/en/8e/313.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccc3a7b4-ff44-4909-ab8d-35ba5d187815.jpg?1562936151
 value=2.513
 rarity=R
 type=Artifact

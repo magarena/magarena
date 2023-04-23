@@ -1,5 +1,5 @@
 name=Leap of Flame
-image=https://magiccards.info/scans/en/gp/121.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c011b432-ec39-44c8-bf2a-1c3fec32a576.jpg?1593272722
 value=2.942
 rarity=C
 type=Instant

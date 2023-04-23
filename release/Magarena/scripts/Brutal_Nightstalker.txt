@@ -1,5 +1,5 @@
 name=Brutal Nightstalker
-image=https://magiccards.info/scans/en/po2/4.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b471102b-a66e-4cdc-b20f-7ae1f9bd0e8a.jpg?1562937575
 value=1.780
 rarity=U
 type=Creature

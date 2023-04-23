@@ -1,5 +1,5 @@
 name=Gempalm Polluter
-image=https://magiccards.info/scans/en/le/70.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e9943ac-9e3f-4ee0-b5fd-3b0fb17097d8.jpg?1562923789
 value=3.959
 rarity=C
 type=Creature

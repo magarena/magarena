@@ -1,5 +1,5 @@
 name=Idle Thoughts
-image=https://magiccards.info/scans/en/eve/23.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/797f80be-019d-4e44-a48d-43c6e52d2ab5.jpg?1562920538
 value=2.600
 rarity=U
 type=Enchantment

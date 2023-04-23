@@ -1,5 +1,5 @@
 name=Wooded Foothills
-image=https://magiccards.info/scans/en/ktk/249.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8503cca-7e7d-44c4-8587-81376b396398.jpg?1571667977
 value=4.200
 rarity=R
 type=Land

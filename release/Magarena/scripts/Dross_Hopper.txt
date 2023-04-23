@@ -1,5 +1,5 @@
 name=Dross Hopper
-image=https://magiccards.info/scans/en/som/60.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a0656f6-a016-479a-a003-72e106e986b0.jpg?1562815117
 value=2.022
 rarity=C
 type=Creature

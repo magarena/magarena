@@ -1,5 +1,5 @@
 name=Shrine of Burning Rage
-image=https://magiccards.info/scans/en/nph/153.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1a8afef-fa50-4aeb-94de-a4d90b1e5631.jpg?1562881740
 value=3.742
 rarity=U
 type=Artifact

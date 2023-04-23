@@ -1,5 +1,5 @@
 name=Unspeakable Symbol
-image=https://magiccards.info/scans/en/sc/79.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cc4601b-5f34-4733-8c32-9779de4c502c.jpg?1562527057
 value=3.203
 rarity=U
 type=Enchantment

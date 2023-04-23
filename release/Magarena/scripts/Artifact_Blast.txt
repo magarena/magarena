@@ -1,5 +1,5 @@
 name=Artifact Blast
-image=https://magiccards.info/scans/en/aq/87.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9ccecb44-a697-44dd-afd2-3d2546c4595f.jpg?1562932009
 value=3.880
 rarity=C
 type=Instant

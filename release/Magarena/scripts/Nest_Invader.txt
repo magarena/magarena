@@ -1,5 +1,5 @@
 name=Nest Invader
-image=https://magiccards.info/scans/en/mm2/150.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/3085f5b1-d2e3-4dd4-8263-024b2b5da4b4.jpg?1562903981
 value=3.891
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Necrogen Spellbomb
-image=https://magiccards.info/scans/en/mi/216.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/0950bfe7-2600-4e01-8f54-f03a5c023520.jpg?1562135129
 value=4.177
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Bloodfire Kavu
-image=https://magiccards.info/scans/en/ap/58.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b215c35-9d76-4a0e-8d01-fdc080d46b5a.jpg?1581708525
 image_updated=2016-11-20
 value=3.469
 rarity=U

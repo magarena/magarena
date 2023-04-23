@@ -1,5 +1,5 @@
 name=Oakenform
-image=https://magiccards.info/scans/en/m19/191.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1ca08a0-c58d-4c13-bf63-0401d89839b4.jpg?1592518431
 image_updated=2018-08-07
 value=2.846
 rarity=C

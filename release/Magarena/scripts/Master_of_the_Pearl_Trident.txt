@@ -1,5 +1,5 @@
 name=Master of the Pearl Trident
-image=https://magiccards.info/scans/en/m13/59.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7f3069f-7754-4c4d-9b62-40e3d49eba05.jpg?1592764600
 value=4.300
 rarity=R
 type=Creature

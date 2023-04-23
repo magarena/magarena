@@ -1,5 +1,5 @@
 name=Dictate of the Twin Gods
-image=https://magiccards.info/scans/en/jou/93.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69cc93f2-8198-45b1-9193-7cfd1cf7ced4.jpg?1593095943
 value=3.531
 rarity=R
 type=Enchantment

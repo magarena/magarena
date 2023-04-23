@@ -1,5 +1,5 @@
 name=Yavimaya's Embrace
-image=https://magiccards.info/scans/en/ap/127.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ac29eb6-2770-4723-942b-b393c2abc02b.jpg?1599708623
 value=3.140
 rarity=R
 type=Enchantment

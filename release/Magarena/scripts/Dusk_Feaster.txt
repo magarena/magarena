@@ -1,5 +1,5 @@
 name=Dusk Feaster
-image=https://magiccards.info/scans/en/emn/88.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d34a6fdc-5be9-4cb4-97cc-de63e8a0dde1.jpg?1576384307
 image_updated=2016-09-05
 value=2.500
 rarity=U

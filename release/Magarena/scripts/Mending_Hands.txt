@@ -1,5 +1,5 @@
 name=Mending Hands
-image=https://magiccards.info/scans/en/9e/29.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53709642-9d61-425f-9bcf-0c579404b521.jpg?1562735302
 value=2.757
 rarity=C
 type=Instant

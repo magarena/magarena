@@ -1,5 +1,5 @@
 name=Valley Rannet
-image=https://magiccards.info/scans/en/cmd/232.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf92a04d-279a-4843-949f-6a191fff559e.jpg?1562938892
 value=3.333
 rarity=C
 type=Creature

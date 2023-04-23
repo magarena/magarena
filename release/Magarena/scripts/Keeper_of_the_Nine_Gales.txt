@@ -1,5 +1,5 @@
 name=Keeper of the Nine Gales
-image=https://magiccards.info/scans/en/le/42.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f75eef50-b474-44bb-8222-3e473928304a.jpg?1562944856
 value=3.632
 rarity=R
 type=Creature

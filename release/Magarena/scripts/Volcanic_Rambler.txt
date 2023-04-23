@@ -1,5 +1,5 @@
 name=Volcanic Rambler
-image=https://magiccards.info/scans/en/ori/167.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fc075ee-16e9-4cf5-bbb0-7b3b4b9eb3f4.jpg?1562028185
 image_updated=2015-11-05
 value=2.500
 rarity=C

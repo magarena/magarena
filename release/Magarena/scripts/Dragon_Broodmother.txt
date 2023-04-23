@@ -1,5 +1,5 @@
 name=Dragon Broodmother
-image=https://magiccards.info/scans/en/arb/53.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7f99431-ae43-4b68-82f0-faf940216c91.jpg?1562645170
 value=4.093
 rarity=M
 type=Creature

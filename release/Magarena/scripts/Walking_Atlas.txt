@@ -1,5 +1,5 @@
 name=Walking Atlas
-image=https://magiccards.info/scans/en/wwk/131.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53515042-e729-4a7c-ac3b-36ef70dbbe8d.jpg?1562287285
 value=3.623
 rarity=C
 type=Artifact,Creature

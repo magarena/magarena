@@ -1,5 +1,5 @@
 name=Apathy
-image=https://magiccards.info/scans/en/wl/33.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adf3a6fe-e234-4c3f-96fc-3eb5eb22c0b8.jpg?1562802714
 value=3.524
 rarity=C
 type=Enchantment

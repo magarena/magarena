@@ -1,5 +1,5 @@
 name=Thornscape Master
-image=https://magiccards.info/scans/en/in/216.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e8f164d-3782-4eaa-a4db-ab7082d45ee7.jpg?1562920549
 value=3.403
 rarity=R
 type=Creature

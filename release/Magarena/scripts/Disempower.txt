@@ -1,5 +1,5 @@
 name=Disempower
-image=https://magiccards.info/scans/en/mr/213.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a86a2ae-aaf3-4d4d-ae06-ec3d4a539550.jpg?1562718786
 value=3.356
 rarity=C
 type=Instant

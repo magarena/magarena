@@ -1,5 +1,5 @@
 name=Debtor's Pulpit
-image=https://magiccards.info/scans/en/gtc/10.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fafb0372-6860-4b0b-b92e-873735489006.jpg?1561853416
 value=1.791
 rarity=U
 type=Enchantment

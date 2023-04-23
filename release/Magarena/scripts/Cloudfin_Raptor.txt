@@ -1,5 +1,5 @@
 name=Cloudfin Raptor
-image=https://magiccards.info/scans/en/gtc/32.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2931f27-43f9-4e52-aab3-967c26739e43.jpg?1561849779
 value=3.926
 rarity=C
 type=Creature

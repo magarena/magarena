@@ -1,5 +1,5 @@
 name=Dragonloft Idol
-image=https://magiccards.info/scans/en/ima/215.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e9fa21a-a92e-4bcd-84fe-a7aa159fd0eb.jpg?1601080625
 image_updated=2017-04-12
 value=2.500
 rarity=U

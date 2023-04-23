@@ -1,5 +1,5 @@
 name=Jangling Automaton
-image=https://magiccards.info/scans/en/wl/151.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e2a427b-9869-4059-aeeb-d9b97b324e4e.jpg?1562800044
 value=2.862
 rarity=C
 type=Artifact,Creature

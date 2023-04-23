@@ -1,5 +1,5 @@
 name=Pyromancer's Swath
-image=https://magiccards.info/scans/en/mma/125.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2ee7137-dbc4-4fe5-802a-42dada4445db.jpg?1561968095
 value=3.656
 rarity=R
 type=Enchantment

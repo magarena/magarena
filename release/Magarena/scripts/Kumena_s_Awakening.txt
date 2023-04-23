@@ -1,5 +1,5 @@
 name=Kumena's Awakening
-image=https://magiccards.info/scans/en/rix/42.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a86f499-a2d4-47f1-9fc1-b543e5ad5c82.jpg?1555039926
 value=2.500
 rarity=R
 type=Enchantment

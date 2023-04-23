@@ -1,5 +1,5 @@
 name=Corpse Churn
-image=https://magiccards.info/scans/en/ogw/83.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fedb37f-4f3c-477c-84c0-aa864e87c111.jpg?1608909610
 image_updated=2016-02-29
 value=2.500
 rarity=C

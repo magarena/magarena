@@ -1,5 +1,5 @@
 name=Labyrinth Guardian
-image=https://magiccards.info/scans/en/akh/60.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17921573-e3d1-45a7-b7e5-a27ae1fa3c2c.jpg?1543675032
 value=2.500
 rarity=U
 type=Creature

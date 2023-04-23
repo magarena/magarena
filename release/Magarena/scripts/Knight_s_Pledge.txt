@@ -1,5 +1,5 @@
 name=Knight's Pledge
-image=https://magiccards.info/scans/en/m19/19.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e786d0e-d6bf-4c6b-b989-28ca1ed53e2e.jpg?1605206477
 value=2.500
 rarity=C
 type=Enchantment

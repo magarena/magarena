@@ -1,5 +1,5 @@
 name=Tooth and Claw
-image=https://magiccards.info/scans/en/ema/151.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8c77d9f-22bd-4676-b594-8499369c449c.jpg?1580014679
 value=3.400
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Savage Knuckleblade
-image=https://magiccards.info/scans/en/ktk/197.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c9dddd3-7c8d-4669-8298-58149b142b8a.jpg?1562786291
 value=4.167
 rarity=R
 type=Creature

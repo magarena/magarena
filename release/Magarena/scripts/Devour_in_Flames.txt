@@ -1,5 +1,5 @@
 name=Devour in Flames
-image=https://magiccards.info/scans/en/ogw/106.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/432dd78b-9520-4c28-8699-d7ff9c477070.jpg?1562908543
 image_updated=2016-02-29
 value=2.500
 rarity=U

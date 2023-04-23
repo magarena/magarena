@@ -1,5 +1,5 @@
 name=Smallpox
-image=https://magiccards.info/scans/en/cns/125.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c28db9a4-6696-460b-a9d3-98f4a31abe75.jpg?1636283762
 value=4.214
 removal=4
 rarity=U

@@ -1,5 +1,5 @@
 name=Armored Guardian
-image=https://magiccards.info/scans/en/in/230.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6de5e1bd-1d31-4f9f-b18d-d6f49bc7ef10.jpg?1562917002
 value=3.098
 rarity=R
 type=Creature

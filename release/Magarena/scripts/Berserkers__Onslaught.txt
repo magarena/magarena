@@ -1,5 +1,5 @@
 name=Berserkers' Onslaught
-image=https://magiccards.info/scans/en/dtk/130.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee571a78-16b2-40ba-92b2-87c1bf4b39bc.jpg?1562795277
 value=2.500
 rarity=R
 type=Enchantment

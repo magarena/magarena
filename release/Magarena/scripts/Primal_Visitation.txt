@@ -1,5 +1,5 @@
 name=Primal Visitation
-image=https://magiccards.info/scans/en/gtc/187.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dd518e8-047a-4df0-a0b8-ba116d048fa8.jpg?1561821056
 value=0.907
 rarity=C
 type=Enchantment

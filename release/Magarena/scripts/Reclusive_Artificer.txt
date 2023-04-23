@@ -1,5 +1,5 @@
 name=Reclusive Artificer
-image=https://magiccards.info/scans/en/ori/216.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e6cda07-c6b0-4138-9b83-bff1802fe138.jpg?1561759344
 image_updated=2015-11-05
 value=2.500
 rarity=U

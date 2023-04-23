@@ -1,5 +1,5 @@
 name=Orcish Bloodpainter
-image=https://magiccards.info/scans/en/cs/94.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/746eaf30-3ded-4a9f-a4ec-1925edcc8e94.jpg?1593275306
 value=1.146
 rarity=C
 type=Creature

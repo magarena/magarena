@@ -1,5 +1,5 @@
 name=Kei Takahashi
-image=https://magiccards.info/scans/en/lg/278.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82703d7c-0759-46ac-b41e-12deeffa10e0.jpg?1562922484
 value=1.761
 rarity=R
 type=Legendary,Creature

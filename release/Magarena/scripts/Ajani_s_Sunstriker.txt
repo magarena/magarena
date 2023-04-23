@@ -1,5 +1,5 @@
 name=Ajani's Sunstriker
-image=https://magiccards.info/scans/en/cns/66.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/373d6799-e031-4043-8437-ed4880be0de9.jpg?1562864954
 value=3.375
 rarity=C
 type=Creature

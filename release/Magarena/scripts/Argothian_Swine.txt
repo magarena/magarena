@@ -1,5 +1,5 @@
 name=Argothian Swine
-image=https://magiccards.info/scans/en/us/235.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afe5e4ec-9c0e-4b1a-b3c6-e9631cf214eb.jpg?1562932136
 value=3.540
 rarity=C
 type=Creature

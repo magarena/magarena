@@ -1,5 +1,5 @@
 name=Blade Splicer
-image=https://magiccards.info/scans/en/mm3/3.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3dac9526-388d-487e-a790-066f83050794.jpg?1682208324
 image_updated=2017-08-08
 value=3.802
 rarity=R

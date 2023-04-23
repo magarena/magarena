@@ -1,5 +1,5 @@
 name=Beacon of Creation
-image=https://magiccards.info/scans/en/5dn/82.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bc629de-18a3-4780-9df6-28ee54a34b81.jpg?1562877209
 value=4.446
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Razor Hippogriff
-image=https://magiccards.info/scans/en/som/17.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ed71d2e-dbf4-42e0-a70c-ab82b59bc048.jpg?1562908046
 value=3.767
 rarity=U
 type=Creature

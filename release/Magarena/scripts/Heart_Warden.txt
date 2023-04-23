@@ -1,5 +1,5 @@
 name=Heart Warden
-image=https://magiccards.info/scans/en/ud/108.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96e42dbe-3eeb-4367-bb6d-0f5c71f5da80.jpg?1562444709
 value=4.107
 rarity=C
 type=Creature

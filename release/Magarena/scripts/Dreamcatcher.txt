@@ -1,5 +1,5 @@
 name=Dreamcatcher
-image=https://magiccards.info/scans/en/sok/34.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b90ab82e-84d7-462a-b3c2-abaccfb46dd3.jpg?1562495607
 value=2.197
 rarity=C
 type=Creature

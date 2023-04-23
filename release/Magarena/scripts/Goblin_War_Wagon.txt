@@ -1,5 +1,5 @@
 name=Goblin War Wagon
-image=https://magiccards.info/scans/en/mi/179.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/229e8124-54ed-4c29-8c44-4962bd60f145.jpg?1562138261
 value=0.897
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Lymph Sliver
-image=https://magiccards.info/scans/en/fut/26.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48b8b4d4-4400-46cc-bd3c-e8a781cfc6f2.jpg?1619393087
 value=3.481
 rarity=C
 type=Creature

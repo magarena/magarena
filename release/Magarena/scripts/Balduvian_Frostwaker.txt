@@ -1,5 +1,5 @@
 name=Balduvian Frostwaker
-image=https://magiccards.info/scans/en/cs/28.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18096cdb-0ba9-41e0-b597-c5ed819e7497.jpg?1593274889
 value=3.370
 rarity=U
 type=Creature

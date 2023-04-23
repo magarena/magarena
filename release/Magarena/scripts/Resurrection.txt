@@ -1,5 +1,5 @@
 name=Resurrection
-image=https://magiccards.info/scans/en/tsts/12.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a176b295-9406-4d6b-b15c-e81a72e66874.jpg?1629745911
 value=4.063
 rarity=U
 type=Sorcery

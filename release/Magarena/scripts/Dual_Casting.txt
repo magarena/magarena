@@ -1,5 +1,5 @@
 name=Dual Casting
-image=https://magiccards.info/scans/en/avr/133.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7aa45bfd-7075-470d-8aaa-16e34109eb5a.jpg?1592709060
 value=3.729
 rarity=R
 type=Enchantment

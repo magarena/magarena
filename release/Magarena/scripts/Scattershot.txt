@@ -1,5 +1,5 @@
 name=Scattershot
-image=https://magiccards.info/scans/en/sc/102.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf22f3e7-1626-4bab-9f62-7d4774704395.jpg?1562534789
 value=2.097
 rarity=C
 type=Instant

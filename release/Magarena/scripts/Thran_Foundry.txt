@@ -1,5 +1,5 @@
 name=Thran Foundry
-image=https://magiccards.info/scans/en/ud/140.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cdc0d42-d96f-490f-87cb-3577dfdce807.jpg?1562444716
 value=3.707
 rarity=U
 type=Artifact

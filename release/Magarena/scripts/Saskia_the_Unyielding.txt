@@ -1,5 +1,5 @@
 name=Saskia the Unyielding
-image=https://magiccards.info/scans/en/c16/41.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b483db6-b614-4af1-820a-42a4ee0c8707.jpg?1562401580
 image_updated=2016-12-28
 value=2.500
 rarity=M

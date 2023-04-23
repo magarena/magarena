@@ -1,5 +1,5 @@
 name=Encrust
-image=https://magiccards.info/scans/en/m15/53.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f531a657-9e60-453a-b72c-2ba04913698f.jpg?1562797054
 value=2.700
 rarity=C
 type=Enchantment

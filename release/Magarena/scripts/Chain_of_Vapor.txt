@@ -1,5 +1,5 @@
 name=Chain of Vapor
-image=https://magiccards.info/scans/en/c16/84.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38f741bf-13ee-4384-98ab-27833ebb9f6d.jpg?1562395835
 image_updated=2017-08-17
 value=4.456
 rarity=U

@@ -1,5 +1,5 @@
 name=Crown of Doom
-image=https://magiccards.info/scans/en/c14/55.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/201a7054-e4e8-4e5a-a002-319fcd210994.jpg?1561935688
 value=2.500
 rarity=R
 type=Artifact

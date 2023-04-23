@@ -1,5 +1,5 @@
 name=Plasma Elemental
-image=https://magiccards.info/scans/en/5dn/34.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/035a8a69-1e48-4c44-b407-cc8acc8ba94c.jpg?1562875173
 value=3.000
 rarity=U
 type=Creature

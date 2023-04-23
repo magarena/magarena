@@ -1,5 +1,5 @@
 name=Verdant Touch
-image=https://magiccards.info/scans/en/sh/73.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c19849f9-cb47-42c9-aaf8-e2e90e157f6e.jpg?1562431294
 value=3.311
 rarity=R
 type=Sorcery

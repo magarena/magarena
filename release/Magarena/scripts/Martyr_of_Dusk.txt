@@ -1,5 +1,5 @@
 name=Martyr of Dusk
-image=https://magiccards.info/scans/en/rix/14.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04134be2-5e40-4732-832c-f616009eceff.jpg?1555039732
 value=2.500
 rarity=C
 type=Creature

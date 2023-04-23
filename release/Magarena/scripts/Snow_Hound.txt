@@ -1,5 +1,5 @@
 name=Snow Hound
-image=https://magiccards.info/scans/en/ia/277.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/084437ba-26d4-4af6-ab00-dcb145dd2cd0.jpg?1587911779
 value=2.924
 rarity=U
 type=Creature

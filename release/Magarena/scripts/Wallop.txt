@@ -1,5 +1,5 @@
 name=Wallop
-image=https://magiccards.info/scans/en/in/223.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45ce5126-e7b1-41ab-9e56-1e12927c4d27.jpg?1562909144
 value=1.855
 rarity=U
 type=Sorcery

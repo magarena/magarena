@@ -1,5 +1,5 @@
 name=Roiling Terrain
-image=https://magiccards.info/scans/en/wwk/88.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87d3a425-01d1-4001-92f9-8e297dd862b7.jpg?1562291349
 value=3.515
 rarity=C
 type=Sorcery

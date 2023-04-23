@@ -1,5 +1,5 @@
 name=Artful Dodge
-image=https://magiccards.info/scans/en/dka/27.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de6ce6aa-e19f-4299-9807-e68920e63c73.jpg?1562947925
 value=3.675
 rarity=C
 type=Sorcery

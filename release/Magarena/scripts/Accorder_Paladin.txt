@@ -1,5 +1,5 @@
 name=Accorder Paladin
-image=https://magiccards.info/scans/en/mbs/1.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df0a4370-729d-40e7-b68b-21902648492d.jpg?1562615434
 value=3.876
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Oni Possession
-image=https://magiccards.info/scans/en/chk/135.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65404e7b-acce-4e5b-82b7-3d7ce9572eec.jpg?1561771497
 image_updated=2017-01-03
 value=2.500
 rarity=U

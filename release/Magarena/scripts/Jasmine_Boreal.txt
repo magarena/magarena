@@ -1,5 +1,5 @@
 name=Jasmine Boreal
-image=https://magiccards.info/scans/en/tsts/93.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/004af467-815a-47c0-a974-1ae49ca3a1a8.jpg?1562770875
 value=1.795
 rarity=U
 type=Legendary,Creature

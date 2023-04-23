@@ -1,5 +1,5 @@
 name=Sword of Light and Shadow
-image=https://magiccards.info/scans/en/mma/217.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b378c8bf-85ed-4d28-aec9-4925d12bca4a.jpg?1599710077
 value=4.500
 rarity=M
 type=Artifact

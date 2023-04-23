@@ -1,5 +1,5 @@
 name=Totem-Guide Hartebeest
-image=https://magiccards.info/scans/en/ori/37.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/589346d3-b32b-40f2-8513-741ceb88bf7b.jpg?1562020994
 image_updated=2015-11-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Restless Bones
-image=https://magiccards.info/scans/en/gp/58.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d11a4f2-376e-42ae-9693-9dc754bd2282.jpg?1593272255
 value=1.645
 rarity=C
 type=Creature

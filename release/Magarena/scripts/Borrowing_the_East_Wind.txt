@@ -1,5 +1,5 @@
 name=Borrowing the East Wind
-image=https://magiccards.info/scans/en/p3k/133.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96ba9014-d750-4924-aa6f-8b9f421807f9.jpg?1562257056
 value=1.463
 rarity=R
 type=Sorcery

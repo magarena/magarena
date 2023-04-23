@@ -1,5 +1,5 @@
 name=Mawcor
-image=https://magiccards.info/scans/en/7e/87.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5baada74-d91e-4081-8d42-d165550b8373.jpg?1562429376
 value=2.896
 rarity=R
 type=Creature

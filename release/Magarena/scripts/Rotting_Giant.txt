@@ -1,5 +1,5 @@
 name=Rotting Giant
-image=https://magiccards.info/scans/en/od/158.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a2db4b2-6209-4a49-b868-e5d229ffcbc1.jpg?1562896951
 value=3.935
 rarity=U
 type=Creature

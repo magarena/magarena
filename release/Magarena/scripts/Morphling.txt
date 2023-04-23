@@ -1,5 +1,5 @@
 name=Morphling
-image=https://magiccards.info/scans/en/us/85.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0d09164-f53f-4f80-8166-8faeacaff418.jpg?1562927497
 value=4.500
 rarity=R
 type=Creature

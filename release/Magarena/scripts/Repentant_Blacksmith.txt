@@ -1,5 +1,5 @@
 name=Repentant Blacksmith
-image=https://magiccards.info/scans/en/5e/330.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0bd3587-301e-49ea-a589-1091c880145b.jpg?1562593292
 value=2.982
 rarity=C
 type=Creature

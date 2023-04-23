@@ -1,5 +1,5 @@
 name=Razorfield Thresher
-image=https://magiccards.info/scans/en/som/197.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0a74203-d342-489d-a584-bca78ef3331d.jpg?1562821857
 value=1.739
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Tobias Andrion
-image=https://magiccards.info/scans/en/lg/304.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/9469a9b3-430c-43b1-bede-80e6949fd895.jpg?1562926416
 value=1.282
 rarity=U
 type=Legendary,Creature

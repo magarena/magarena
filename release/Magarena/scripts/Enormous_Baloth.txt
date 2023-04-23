@@ -1,5 +1,5 @@
 name=Enormous Baloth
-image=https://magiccards.info/scans/en/m10/180.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54069e65-eef4-4fb8-bb0d-932a4c9889b3.jpg?1561980315
 value=2.939
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sword of Fire and Ice
-image=https://magiccards.info/scans/en/mma/216.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2626d4c9-fcef-4057-a154-7d987a4a4b84.jpg?1599710057
 value=4.563
 rarity=M
 type=Artifact

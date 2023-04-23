@@ -1,5 +1,5 @@
 name=Toxic Nim
-image=https://magiccards.info/scans/en/nph/75.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5823990c-8d40-4352-8d34-74332934adb2.jpg?1562877774
 value=2.915
 rarity=C
 type=Creature

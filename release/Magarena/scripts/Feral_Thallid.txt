@@ -1,5 +1,5 @@
 name=Feral Thallid
-image=https://magiccards.info/scans/en/fe/78.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72f77884-6cec-4ccc-b619-3492b04bc3f7.jpg?1562869056
 value=2.773
 rarity=U
 type=Creature

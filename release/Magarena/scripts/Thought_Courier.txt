@@ -1,5 +1,5 @@
 name=Thought Courier
-image=https://magiccards.info/scans/en/9e/104.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c9d2542-501d-4dfe-8642-962d0299ca45.jpg?1562732191
 value=3.650
 rarity=U
 type=Creature

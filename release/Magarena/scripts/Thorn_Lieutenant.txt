@@ -1,5 +1,5 @@
 name=Thorn Lieutenant
-image=https://magiccards.info/scans/en/m19/203.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0812e942-eb78-48c8-857e-5f0ff1bd777b.jpg?1562300286
 value=2.500
 rarity=R
 type=Creature

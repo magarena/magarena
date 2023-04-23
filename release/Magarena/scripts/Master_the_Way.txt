@@ -1,5 +1,5 @@
 name=Master the Way
-image=https://magiccards.info/scans/en/ktk/188.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/704743a8-27d6-4db9-8fe1-f65f5f3a955f.jpg?1562788383
 value=3.500
 rarity=U
 type=Sorcery

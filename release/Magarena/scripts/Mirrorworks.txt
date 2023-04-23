@@ -1,5 +1,5 @@
 name=Mirrorworks
-image=https://magiccards.info/scans/en/mbs/114.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99fff4f2-1a12-4bb5-9904-6c058e5ed595.jpg?1592711279
 value=3.634
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Vedalken Entrancer
-image=https://magiccards.info/scans/en/m13/76.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/559bdfd6-8baf-430d-a4c4-5acf81e58b62.jpg?1600714123
 value=1.895
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Squall Line
-image=https://magiccards.info/scans/en/ts/222.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f368729-a6f2-4bf7-8b06-39c551f0b24a.jpg?1562908127
 value=3.924
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Goblin War Strike
-image=https://magiccards.info/scans/en/sc/96.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dce59945-37a2-4f09-8831-9d44b4a59ea7.jpg?1562535675
 value=4.140
 removal=3
 rarity=C

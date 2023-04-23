@@ -1,5 +1,5 @@
 name=Alabaster Leech
-image=https://magiccards.info/scans/en/in/1.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c86b45d9-aba6-4c09-8605-037754ba7fd4.jpg?1562935200
 value=0.943
 rarity=R
 type=Creature

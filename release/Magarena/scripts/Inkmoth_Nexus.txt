@@ -1,5 +1,5 @@
 name=Inkmoth Nexus
-image=https://magiccards.info/scans/en/mbs/145.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec50c1c3-885e-47d3-ada7-cc0edbf09df1.jpg?1623098818
 value=4.348
 rarity=R
 type=Land

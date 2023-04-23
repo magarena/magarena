@@ -1,5 +1,5 @@
 name=Goblin Skycutter
-image=https://magiccards.info/scans/en/ts/159.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c45406cd-a036-45d5-a0fb-3c195d40d746.jpg?1562936514
 value=2.971
 rarity=C
 type=Creature

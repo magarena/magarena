@@ -1,5 +1,5 @@
 name=Silver Drake
-image=https://magiccards.info/scans/en/ps/125.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac35ee86-96b2-47aa-a1ba-2988737f11ee.jpg?1562931331
 value=4.035
 rarity=C
 type=Creature

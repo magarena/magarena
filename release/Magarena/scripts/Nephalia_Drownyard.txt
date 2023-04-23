@@ -1,5 +1,5 @@
 name=Nephalia Drownyard
-image=https://magiccards.info/scans/en/isd/245.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e332d52-7533-4d71-a4ba-36874f5ea3fa.jpg?1674143001
 value=3.649
 rarity=R
 type=Land

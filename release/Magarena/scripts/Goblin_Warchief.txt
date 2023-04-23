@@ -1,5 +1,5 @@
 name=Goblin Warchief
-image=https://magiccards.info/scans/en/dom/130.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bac033c-dc4e-40a0-b103-4892e4b50249.jpg?1562736294
 image_updated=2018-08-07
 value=2.500
 rarity=U

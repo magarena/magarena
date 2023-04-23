@@ -1,5 +1,5 @@
 name=Ridged Kusite
-image=https://magiccards.info/scans/en/pc/78.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a51ea7d3-a9d7-4b1d-bf3b-3fcfb6a49624.jpg?1619395982
 value=2.292
 rarity=C
 type=Creature

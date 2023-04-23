@@ -1,5 +1,5 @@
 name=Adanto Vanguard
-image=https://magiccards.info/scans/en/xln/1.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21c950d7-b4f6-4902-8c9a-98f2933f9fa5.jpg?1562552020
 value=2.500
 rarity=U
 type=Creature

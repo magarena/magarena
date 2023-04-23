@@ -1,5 +1,5 @@
 name=Echoes of the Kin Tree
-image=https://magiccards.info/scans/en/dtk/15.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/531414e6-ea72-4934-b05e-e1782249fd1f.jpg?1562786293
 value=2.500
 rarity=U
 type=Enchantment

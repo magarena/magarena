@@ -1,5 +1,5 @@
 name=Strongarm Thug
-image=https://magiccards.info/scans/en/mm/165.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20aa9108-470c-484d-908a-c31cf6935765.jpg?1562379450
 value=3.000
 rarity=U
 type=Creature

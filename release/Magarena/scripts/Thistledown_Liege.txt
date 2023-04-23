@@ -1,5 +1,5 @@
 name=Thistledown Liege
-image=https://magiccards.info/scans/en/shm/153.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41a21a0c-fe3d-456b-a905-8d962c0b1e3c.jpg?1673149204
 value=3.268
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Dream Thrush
-image=https://magiccards.info/scans/en/in/53.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/258217df-ae88-4d93-895a-3fd242baacd1.jpg?1562902554
 value=3.895
 rarity=C
 type=Creature

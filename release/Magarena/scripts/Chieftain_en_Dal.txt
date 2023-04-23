@@ -1,5 +1,5 @@
 name=Chieftain en-Dal
-image=https://magiccards.info/scans/en/ne/4.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c1f49bc-d144-466f-8795-c0dae7afdc10.jpg?1562628611
 value=3.621
 rarity=U
 type=Creature

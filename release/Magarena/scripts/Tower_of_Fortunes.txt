@@ -1,5 +1,5 @@
 name=Tower of Fortunes
-image=https://magiccards.info/scans/en/mi/267.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7622d6fe-73f2-417c-806c-8ca13192d271.jpg?1562919854
 value=3.133
 rarity=R
 type=Artifact

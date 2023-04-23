@@ -1,5 +1,5 @@
 name=Dromoka Dunecaster
-image=https://magiccards.info/scans/en/dtk/13.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc98e542-4bcc-43e1-9616-64ce40348a34.jpg?1562796149
 value=2.500
 rarity=C
 type=Creature

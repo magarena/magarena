@@ -1,5 +1,5 @@
 name=Giant Badger
-image=https://magiccards.info/scans/en/8e/253.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10e9dd66-8580-4c96-9ab9-cc392dc6ee74.jpg?1562898449
 value=3.306
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Flowstone Salamander
-image=https://magiccards.info/scans/en/tp/175.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf5b6749-42a6-498b-8908-b28d1749dea6.jpg?1562056392
 value=3.268
 rarity=U
 type=Creature

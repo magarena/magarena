@@ -1,5 +1,5 @@
 name=Ancient Ooze
-image=https://magiccards.info/scans/en/sc/112.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b57b41c-f99c-4525-8541-f025b7e31974.jpg?1562527613
 value=3.736
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Stasis Cell
-image=https://magiccards.info/scans/en/cns/107.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49304692-1e8c-46ed-ba51-e5ba3b70e2f4.jpg?1562865413
 value=1.900
 rarity=C
 type=Enchantment

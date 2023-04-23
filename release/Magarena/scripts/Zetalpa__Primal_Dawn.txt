@@ -1,5 +1,5 @@
 name=Zetalpa, Primal Dawn
-image=https://magiccards.info/scans/en/rix/30.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77bcb902-70c0-4406-bbcf-49d23fd71a68.jpg?1673305138
 value=2.500
 rarity=R
 type=Legendary,Creature

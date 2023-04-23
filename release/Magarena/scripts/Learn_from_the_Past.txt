@@ -1,5 +1,5 @@
 name=Learn from the Past
-image=https://magiccards.info/scans/en/dtk/60.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/347c6e76-dba4-4448-a4f4-d9591d4539c7.jpg?1562784558
 value=2.500
 rarity=U
 type=Instant

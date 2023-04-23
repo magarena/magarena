@@ -1,5 +1,5 @@
 name=Canal Dredger
-image=https://magiccards.info/scans/en/cns/55.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5365f0d-5e51-4e5d-9385-c4d08882c24f.jpg?1562866388
 value=3.458
 rarity=R
 type=Artifact,Creature

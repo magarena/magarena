@@ -1,5 +1,5 @@
 name=Woodland Patrol
-image=https://magiccards.info/scans/en/emn/180.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a134bd1-3c5a-467e-bad1-65548b33faa5.jpg?1576384959
 image_updated=2016-09-05
 value=2.500
 rarity=C

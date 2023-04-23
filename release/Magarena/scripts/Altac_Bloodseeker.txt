@@ -1,5 +1,5 @@
 name=Altac Bloodseeker
-image=https://magiccards.info/scans/en/m15/128.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5dacedc-f532-43b3-a783-e1dc7ccea53b.jpg?1562797087
 value=3.200
 rarity=U
 type=Creature

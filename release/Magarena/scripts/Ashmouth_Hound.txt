@@ -1,5 +1,5 @@
 name=Ashmouth Hound
-image=https://magiccards.info/scans/en/isd/128.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2b4cbb7-c9ad-4320-9322-a6a3afbc4a50.jpg?1600701830
 image_updated=2016-11-20
 value=3.375
 rarity=C

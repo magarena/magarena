@@ -1,5 +1,5 @@
 name=Hero's Downfall
-image=https://magiccards.info/scans/en/ths/90.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33c5f81a-395d-41bf-9563-6cf0e406ee18.jpg?1673305182
 value=3.829
 removal=5
 rarity=R

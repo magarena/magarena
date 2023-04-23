@@ -1,5 +1,5 @@
 name=Indigo Faerie
-image=https://magiccards.info/scans/en/eve/24.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62e6e481-a050-4515-a557-d59ba6136ff6.jpg?1562915652
 value=2.256
 rarity=U
 type=Creature

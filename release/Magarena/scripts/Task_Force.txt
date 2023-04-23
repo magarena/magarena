@@ -1,5 +1,5 @@
 name=Task Force
-image=https://magiccards.info/scans/en/mm/52.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17a58c5b-28c2-4261-992c-2ecadb721880.jpg?1562379430
 value=3.426
 rarity=C
 type=Creature

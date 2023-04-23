@@ -1,5 +1,5 @@
 name=Celestial Kirin
-image=https://magiccards.info/scans/en/sok/3.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/003e99a0-2caa-407b-be40-92ec17836eb3.jpg?1562492050
 value=3.859
 rarity=R
 type=Legendary,Creature

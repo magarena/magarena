@@ -1,5 +1,5 @@
 name=Shore Snapper
-image=https://magiccards.info/scans/en/ala/87.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/157e5763-4892-47e4-8fd5-f576844c0a0d.jpg?1562701373
 value=1.957
 rarity=C
 type=Creature

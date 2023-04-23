@@ -1,5 +1,5 @@
 name=Commune with Dinosaurs
-image=https://magiccards.info/scans/en/xln/181.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f66d2ddc-b4d4-4387-bde0-16d81ef2b1a7.jpg?1601079137
 value=2.500
 rarity=C
 type=Sorcery

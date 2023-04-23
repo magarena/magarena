@@ -1,5 +1,5 @@
 name=Visage of Bolas
-image=https://magiccards.info/scans/en/hou/208.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f29bbfe2-d59f-4361-8ea4-6a8d1b909769.jpg?1562820069
 value=2.500
 rarity=R
 type=Artifact

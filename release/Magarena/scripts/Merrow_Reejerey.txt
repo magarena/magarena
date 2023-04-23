@@ -1,5 +1,5 @@
 name=Merrow Reejerey
-image=https://magiccards.info/scans/en/lw/74.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc3ad105-40eb-440b-b4ef-57f8de707f7b.jpg?1592764624
 value=4.452
 rarity=U
 type=Creature

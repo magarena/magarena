@@ -1,5 +1,5 @@
 name=Atarka, World Render
-image=https://magiccards.info/scans/en/frf/149.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35ad1ce5-6054-4f0c-8fbe-636be576d408.jpg?1631588294
 value=2.500
 rarity=R
 type=Legendary,Creature

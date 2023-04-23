@@ -1,5 +1,5 @@
 name=Nightguard Patrol
-image=https://magiccards.info/scans/en/rav/26.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20377fbf-70c0-441b-b2e3-62ed26aaab4a.jpg?1598913824
 value=2.854
 rarity=C
 type=Creature

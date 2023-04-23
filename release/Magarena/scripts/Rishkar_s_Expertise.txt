@@ -1,5 +1,5 @@
 name=Rishkar's Expertise
-image=https://magiccards.info/scans/en/aer/123.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74201f17-37f5-4e1c-93e6-2762c472b3b3.jpg?1673484746
 value=2.500
 rarity=R
 type=Sorcery

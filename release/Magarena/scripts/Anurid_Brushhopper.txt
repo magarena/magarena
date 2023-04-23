@@ -1,5 +1,5 @@
 name=Anurid Brushhopper
-image=https://magiccards.info/scans/en/ju/137.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b09204c7-3e3d-484a-a4f7-da1b818e3884.jpg?1562631503
 value=4.122
 rarity=R
 type=Creature

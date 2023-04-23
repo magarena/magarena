@@ -1,5 +1,5 @@
 name=Thought Nibbler
-image=https://magiccards.info/scans/en/od/107.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7284a7fd-cda8-43ac-b119-ad47b33c2ec4.jpg?1562916262
 value=2.303
 rarity=C
 type=Creature

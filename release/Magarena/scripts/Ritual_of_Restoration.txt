@@ -1,5 +1,5 @@
 name=Ritual of Restoration
-image=https://magiccards.info/scans/en/ds/13.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73142844-de7c-4427-8183-c2281bde6449.jpg?1562637551
 value=2.625
 rarity=C
 type=Sorcery

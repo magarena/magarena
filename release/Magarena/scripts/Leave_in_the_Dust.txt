@@ -1,5 +1,5 @@
 name=Leave in the Dust
-image=https://magiccards.info/scans/en/aer/37.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/049955c6-63f5-4f80-8c60-34c890f3c71a.jpg?1600713784
 value=2.500
 rarity=C
 type=Instant

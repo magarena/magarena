@@ -1,5 +1,5 @@
 name=Necrotic Sliver
-image=https://magiccards.info/scans/en/pc/159.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0bf9c79-3a66-4c81-b7c7-9b31b4a67e32.jpg?1631588575
 value=4.439
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Curse of Marit Lage
-image=https://magiccards.info/scans/en/ia/181.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69b381c1-aa71-4d40-a320-70f58a440d51.jpg?1587911900
 value=3.605
 rarity=R
 type=Enchantment

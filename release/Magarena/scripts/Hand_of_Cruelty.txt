@@ -1,5 +1,5 @@
 name=Hand of Cruelty
-image=https://magiccards.info/scans/en/sok/71.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee194055-579a-4977-900e-e976259552ab.jpg?1562496589
 value=3.933
 rarity=U
 type=Creature

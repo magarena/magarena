@@ -1,5 +1,5 @@
 name=Sword of Feast and Famine
-image=https://magiccards.info/scans/en/mbs/138.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7710eb5-c56a-437b-8847-2a829c404d47.jpg?1599710042
 value=3.769
 rarity=M
 type=Artifact

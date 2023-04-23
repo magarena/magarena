@@ -1,5 +1,5 @@
 name=Kithkin Zephyrnaut
-image=https://magiccards.info/scans/en/mt/16.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8671abe8-4333-4b23-a87e-58bcc65deef2.jpg?1562879790
 value=2.875
 rarity=C
 type=Creature

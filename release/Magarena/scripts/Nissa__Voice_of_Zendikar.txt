@@ -1,5 +1,5 @@
 name=Nissa, Voice of Zendikar
-image=https://magiccards.info/scans/en/ogw/138.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6de97cf1-49b6-40b2-ab7f-1c8eb98f92af.jpg?1562229687
 image_updated=2016-02-29
 value=2.500
 rarity=M

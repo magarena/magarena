@@ -1,5 +1,5 @@
 name=God-Pharaoh's Faithful
-image=https://magiccards.info/scans/en/hou/14.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cb8a25b-2ad0-4ffe-b41a-6b3f8b48c1e9.jpg?1562808372
 value=2.500
 rarity=C
 type=Creature

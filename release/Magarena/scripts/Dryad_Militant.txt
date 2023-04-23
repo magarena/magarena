@@ -1,5 +1,5 @@
 name=Dryad Militant
-image=https://magiccards.info/scans/en/rtr/214.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bb8cb8c-0d03-4cbf-b7f2-a97324817698.jpg?1562784181
 value=4.361
 rarity=U
 type=Creature

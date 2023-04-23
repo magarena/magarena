@@ -1,5 +1,5 @@
 name=Citanul Woodreaders
-image=https://magiccards.info/scans/en/mma/140.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0cd9af6-3729-4c9c-9669-a2800a693b39.jpg?1619397870
 value=3.333
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fleeting Distraction
-image=https://magiccards.info/scans/en/cn2/110.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/4309c38b-5e88-4bd2-8b8a-5193e607fecf.jpg?1576382423
 image_updated=2017-08-29
 value=1.698
 rarity=C

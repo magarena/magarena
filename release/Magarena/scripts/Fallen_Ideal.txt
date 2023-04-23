@@ -1,5 +1,5 @@
 name=Fallen Ideal
-image=https://magiccards.info/scans/en/ts/109.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/7504f857-29e5-4c8e-944d-1b02fe7792c2.jpg?1562705925
 image_updated=2016-02-29
 value=3.735
 rarity=U

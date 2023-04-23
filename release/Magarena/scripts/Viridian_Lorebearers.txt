@@ -1,5 +1,5 @@
 name=Viridian Lorebearers
-image=https://magiccards.info/scans/en/5dn/99.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85673b93-39b7-44e1-b27d-b716bde42f0b.jpg?1562878201
 value=2.338
 rarity=U
 type=Creature

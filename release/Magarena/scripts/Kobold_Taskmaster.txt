@@ -1,5 +1,5 @@
 name=Kobold Taskmaster
-image=https://magiccards.info/scans/en/tsts/65.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8619e6be-ae9c-4045-aa19-419be35ab6f6.jpg?1562923298
 value=3.500
 rarity=U
 type=Creature

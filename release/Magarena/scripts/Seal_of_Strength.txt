@@ -1,5 +1,5 @@
 name=Seal of Strength
-image=https://magiccards.info/scans/en/ema/184.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/559c3909-51e3-4a3e-8570-107ffe69e30d.jpg?1580014904
 value=4.140
 rarity=C
 type=Enchantment

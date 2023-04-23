@@ -1,5 +1,5 @@
 name=Dreampod Druid
-image=https://magiccards.info/scans/en/pc2/64.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94ccb098-f016-454b-a8ba-8f429eb77632.jpg?1562922647
 value=4.000
 rarity=U
 type=Creature

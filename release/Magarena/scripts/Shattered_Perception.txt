@@ -1,5 +1,5 @@
 name=Shattered Perception
-image=https://magiccards.info/scans/en/dka/104.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f5223b4-e0d1-4fc6-a363-ebcdfeee56d1.jpg?1562898555
 value=3.013
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Psychotic Fury
-image=https://magiccards.info/scans/en/di/68.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f626c70-1ede-4b00-bd95-d6ee26371131.jpg?1593273207
 value=4.017
 rarity=C
 type=Instant

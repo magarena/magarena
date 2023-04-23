@@ -1,5 +1,5 @@
 name=Simplify
-image=https://magiccards.info/scans/en/od/269.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a43fd3e-1e08-400c-b22b-e22da82bcdee.jpg?1562917594
 value=2.448
 rarity=C
 type=Sorcery

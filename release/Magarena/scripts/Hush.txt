@@ -1,5 +1,5 @@
 name=Hush
-image=https://magiccards.info/scans/en/us/266.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35f01c95-ce9e-4b45-9d15-a5d37100a5d8.jpg?1562906391
 value=3.450
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Stonefare Crocodile
-image=https://magiccards.info/scans/en/rtr/136.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/028b8d50-b858-4c64-8eb9-b7699b2134df.jpg?1592754732
 value=2.889
 rarity=C
 type=Creature

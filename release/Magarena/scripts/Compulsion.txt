@@ -1,5 +1,5 @@
 name=Compulsion
-image=https://magiccards.info/scans/en/tr/34.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d1f56e8-55cb-4b81-9946-9f0f813e3d4a.jpg?1562629067
 value=4.144
 rarity=U
 type=Enchantment

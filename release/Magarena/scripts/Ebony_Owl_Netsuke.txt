@@ -1,5 +1,5 @@
 name=Ebony Owl Netsuke
-image=https://magiccards.info/scans/en/sok/154.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39e0c24f-2312-4b40-9cd1-2b83d501e485.jpg?1593860733
 value=3.159
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Netherborn Phalanx
-image=https://magiccards.info/scans/en/rav/99.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b665e905-cb06-48b7-9f50-5916277e237d.jpg?1598915069
 value=3.328
 rarity=U
 type=Creature

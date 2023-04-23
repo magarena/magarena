@@ -1,5 +1,5 @@
 name=Crippling Fatigue
-image=https://magiccards.info/scans/en/tr/58.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bb53a87-ba48-4c77-b284-3be321c8836e.jpg?1562628542
 value=2.625
 rarity=C
 type=Sorcery

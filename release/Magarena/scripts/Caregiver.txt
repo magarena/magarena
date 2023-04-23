@@ -1,5 +1,5 @@
 name=Caregiver
-image=https://magiccards.info/scans/en/rav/6.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c33d3fe-cdd3-4829-8f10-6611f063983b.jpg?1598913485
 value=1.173
 rarity=C
 type=Creature

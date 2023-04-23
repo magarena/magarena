@@ -1,5 +1,5 @@
 name=Culling Sun
-image=https://magiccards.info/scans/en/gp/109.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ec5a956-c846-46b6-91bd-37e4db542280.jpg?1593272635
 value=3.358
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Retreat to Valakut
-image=https://magiccards.info/scans/en/bfz/153.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7a9ce97-ef6d-468c-b389-8d19c76174c2.jpg?1562953703
 image_updated=2015-11-08
 value=2.500
 rarity=U

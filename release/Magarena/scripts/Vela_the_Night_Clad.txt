@@ -1,5 +1,5 @@
 name=Vela the Night-Clad
-image=https://magiccards.info/scans/en/c17/201.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/610737cd-d1ef-49c0-8010-988320ed64d5.jpg?1562610304
 image_updated=2017-10-03
 value=3.614
 rarity=M

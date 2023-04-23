@@ -1,5 +1,5 @@
 name=Goblin Piker
-image=https://magiccards.info/scans/en/m12/141.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/083ec3e7-950c-4e9d-aba5-02ed13d723f0.jpg?1562631492
 value=1.526
 rarity=C
 type=Creature

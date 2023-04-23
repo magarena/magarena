@@ -1,5 +1,5 @@
 name=Sigiled Paladin
-image=https://magiccards.info/scans/en/ala/27.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b22520d-c495-4528-9b24-4aa19e046a9e.jpg?1562703599
 value=3.722
 rarity=U
 type=Creature

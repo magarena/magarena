@@ -1,5 +1,5 @@
 name=Faultgrinder
-image=https://magiccards.info/scans/en/cmd/122.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b66ca1a0-d638-48df-8474-143228c23382.jpg?1592713546
 value=1.938
 rarity=C
 type=Creature

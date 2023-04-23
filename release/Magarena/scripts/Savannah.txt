@@ -1,5 +1,5 @@
 name=Savannah
-image=https://magiccards.info/scans/en/rv/297.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0d161fc-4a2a-4f1d-82b4-a746552552df.jpg?1562930574
 value=4.500
 rarity=R
 type=Land

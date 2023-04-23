@@ -1,5 +1,5 @@
 name=Aether Membrane
-image=https://magiccards.info/scans/en/pc/93.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8be64d5d-779e-4c63-baf4-00a07f73fc9f.jpg?1581708493
 image_updated=2016-11-20
 value=3.712
 rarity=U

@@ -1,5 +1,5 @@
 name=Vedalken Heretic
-image=https://magiccards.info/scans/en/arb/104.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5ab2ba75-e52e-46f5-8a34-3fe1e07446fd.jpg?1562641484
 value=2.954
 rarity=R
 type=Creature

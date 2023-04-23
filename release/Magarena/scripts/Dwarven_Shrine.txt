@@ -1,5 +1,5 @@
 name=Dwarven Shrine
-image=https://magiccards.info/scans/en/od/187.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85197997-5e1a-46ce-8f0d-6da5ce297baf.jpg?1562919664
 value=1.841
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wojek Halberdiers
-image=https://magiccards.info/scans/en/gtc/208.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/423f0870-dc1c-4cd8-b92c-6d5f92abbaec.jpg?1561824172
 value=4.016
 rarity=C
 type=Creature

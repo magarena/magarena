@@ -1,5 +1,5 @@
 name=Deadly Grub
-image=https://magiccards.info/scans/en/pc/69.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44e872ae-2e41-49f5-9015-e8f9fa7da987.jpg?1619395221
 value=3.103
 rarity=C
 type=Creature

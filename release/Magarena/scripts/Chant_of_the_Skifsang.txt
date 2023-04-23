@@ -1,5 +1,5 @@
 name=Chant of the Skifsang
-image=https://magiccards.info/scans/en/dka/31.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e604b2e-f257-465d-9342-6eb55b2334c5.jpg?1562920985
 value=2.696
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Resounding Scream
-image=https://magiccards.info/scans/en/ala/83.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64d27eb7-2d3b-4daf-9cf6-c254fdacceb0.jpg?1562704747
 value=1.106
 rarity=C
 type=Sorcery

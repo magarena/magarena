@@ -1,5 +1,5 @@
 name=Exquisite Blood
-image=https://magiccards.info/scans/en/avr/102.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1653811-1c2c-4e6c-bf1c-287d1b496d51.jpg?1600700252
 value=3.839
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Molder Beast
-image=https://magiccards.info/scans/en/som/125.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1636f571-43ed-4b60-b5d9-129ff94dd0fa.jpg?1608910805
 value=2.953
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Capture of Jingzhou
-image=https://magiccards.info/scans/en/p3k/38.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f87d0298-f76b-4ea8-82c4-5861c4539d8b.jpg?1676994962
 value=4.038
 rarity=R
 type=Sorcery

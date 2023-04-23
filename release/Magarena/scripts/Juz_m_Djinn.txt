@@ -1,5 +1,5 @@
 name=Juzám Djinn
-image=https://magiccards.info/scans/en/an/9.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b03bc922-782b-4254-897c-90d202b4cda4.jpg?1559592285
 value=4.324
 rarity=R
 type=Creature

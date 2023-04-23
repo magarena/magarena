@@ -1,5 +1,5 @@
 name=Druid of Horns
-image=https://magiccards.info/scans/en/m19/176.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19ca91ea-dffd-44a9-a54a-c664d83c357b.jpg?1562300729
 value=2.500
 rarity=U
 type=Creature

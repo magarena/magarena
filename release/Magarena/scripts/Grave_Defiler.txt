@@ -1,5 +1,5 @@
 name=Grave Defiler
-image=https://magiccards.info/scans/en/ap/40.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8f76edc-6067-43bd-9582-1d59caf91597.jpg?1562954007
 value=4.026
 rarity=U
 type=Creature

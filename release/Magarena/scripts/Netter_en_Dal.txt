@@ -1,5 +1,5 @@
 name=Netter en-Dal
-image=https://magiccards.info/scans/en/ne/13.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2190649d-f898-4693-8ccf-80e6709d8496.jpg?1562628973
 value=2.395
 rarity=C
 type=Creature

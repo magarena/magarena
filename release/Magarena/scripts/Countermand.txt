@@ -1,5 +1,5 @@
 name=Countermand
-image=https://magiccards.info/scans/en/jou/33.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07815e32-0b64-4c2b-84e6-a72336c45cf5.jpg?1593095401
 value=2.143
 rarity=C
 type=Instant

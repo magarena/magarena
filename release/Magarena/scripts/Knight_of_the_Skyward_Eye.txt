@@ -1,5 +1,5 @@
 name=Knight of the Skyward Eye
-image=https://magiccards.info/scans/en/a25/19.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c908f812-a7ee-411e-89f1-1f84793d095d.jpg?1562441128
 image_updated=2018-04-27
 value=3.016
 rarity=C

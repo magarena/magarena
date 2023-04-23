@@ -1,5 +1,5 @@
 name=Khalni Garden
-image=https://magiccards.info/scans/en/pc2/122.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e0f6ae6-b303-405a-8efa-91de9692768e.jpg?1592711564
 value=3.925
 rarity=C
 type=Land

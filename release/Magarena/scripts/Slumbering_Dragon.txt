@@ -1,5 +1,5 @@
 name=Slumbering Dragon
-image=https://magiccards.info/scans/en/m13/148.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/277cbd0d-c8da-4a37-965c-6a60771df2f7.jpg?1562551640
 value=3.980
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Uncomfortable Chill
-image=https://magiccards.info/scans/en/m19/82.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f12d70b-fff7-4d0c-982e-2fea70018a78.jpg?1562302957
 value=2.500
 rarity=C
 type=Instant

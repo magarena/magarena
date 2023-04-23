@@ -1,5 +1,5 @@
 name=Fledgling Dragon
-image=https://magiccards.info/scans/en/ju/90.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/315e5b4e-ae58-412a-be27-c4ef4899fbbd.jpg?1562629232
 value=4.057
 rarity=R
 type=Creature

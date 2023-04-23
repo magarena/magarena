@@ -1,5 +1,5 @@
 name=Hidden Guerrillas
-image=https://magiccards.info/scans/en/us/261.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ab16fbb-1542-4ba6-9a06-30806176572c.jpg?1562900587
 value=4.041
 rarity=U
 type=Enchantment

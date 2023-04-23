@@ -1,5 +1,5 @@
 name=Chameleon Spirit
-image=https://magiccards.info/scans/en/mm/65.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05972ea2-b0bc-40fd-bce4-07eebdb150d5.jpg?1562378949
 value=3.700
 rarity=U
 type=Creature

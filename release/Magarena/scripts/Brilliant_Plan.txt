@@ -1,5 +1,5 @@
 name=Brilliant Plan
-image=https://magiccards.info/scans/en/p3k/36.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/115a5d53-8638-44a9-a889-f2d73a02e672.jpg?1562131069
 value=2.278
 rarity=U
 type=Sorcery

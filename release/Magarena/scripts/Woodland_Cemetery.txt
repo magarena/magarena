@@ -1,5 +1,5 @@
 name=Woodland Cemetery
-image=https://magiccards.info/scans/en/dom/248.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba05cf47-9823-41f9-b893-321ea89e473e.jpg?1562741876
 image_updated=2018-08-07
 value=3.888
 rarity=R

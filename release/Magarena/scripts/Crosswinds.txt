@@ -1,5 +1,5 @@
 name=Crosswinds
-image=https://magiccards.info/scans/en/us/246.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f182a85b-a119-46e2-8b8b-48b6758d9c39.jpg?1562945974
 value=3.340
 rarity=U
 type=Enchantment

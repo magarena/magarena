@@ -1,5 +1,5 @@
 name=Favor of the Woods
-image=https://magiccards.info/scans/en/dka/113.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da0e760a-241b-40c5-b201-bfc03effed2e.jpg?1562946959
 value=0.994
 rarity=C
 type=Enchantment

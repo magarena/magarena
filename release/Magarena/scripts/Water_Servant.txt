@@ -1,5 +1,5 @@
 name=Water Servant
-image=https://magiccards.info/scans/en/mm2/69.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0ba4e555-7528-46fd-9cf8-aa1a70e2cc6a.jpg?1562258994
 value=3.483
 rarity=U
 type=Creature

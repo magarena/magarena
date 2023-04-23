@@ -1,5 +1,5 @@
 name=Grotag Siege-Runner
-image=https://magiccards.info/scans/en/roe/149.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01c1a241-38ad-453e-b6c2-a79006031e2d.jpg?1562700613
 value=2.906
 rarity=C
 type=Creature

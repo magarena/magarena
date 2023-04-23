@@ -1,5 +1,5 @@
 name=Dreadbore
-image=https://magiccards.info/scans/en/rtr/157.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2aa5f358-6d21-48b2-ad28-6e787e464b0e.jpg?1592765945
 value=3.953
 rarity=R
 type=Sorcery

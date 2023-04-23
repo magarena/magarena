@@ -1,5 +1,5 @@
 name=Crested Herdcaller
-image=https://magiccards.info/scans/en/rix/126.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44c7792e-39e4-486e-827b-b0d01cd15bc3.jpg?1576267399
 value=2.500
 rarity=U
 type=Creature

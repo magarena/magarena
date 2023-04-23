@@ -1,5 +1,5 @@
 name=Duskrider Peregrine
-image=https://magiccards.info/scans/en/ts/14.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/321ff631-54f0-4501-852a-569790d05cf1.jpg?1619392843
 value=2.700
 rarity=U
 type=Creature

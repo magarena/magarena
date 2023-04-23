@@ -1,5 +1,5 @@
 name=Cytoplast Root-Kin
-image=https://magiccards.info/scans/en/mm2/143.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22e149b2-6bac-4749-ab06-edde21dc408e.jpg?1562259735
 image_updated=2015-11-05
 value=2.500
 rarity=U

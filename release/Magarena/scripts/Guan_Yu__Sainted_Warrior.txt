@@ -1,5 +1,5 @@
 name=Guan Yu, Sainted Warrior
-image=https://magiccards.info/scans/en/p3k/6.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/287bd99b-6539-4e54-9166-12d3e2c9b8de.jpg?1562903569
 value=3.667
 rarity=R
 type=Legendary,Creature

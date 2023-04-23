@@ -1,5 +1,5 @@
 name=Sun Ce, Young Conquerer
-image=https://magiccards.info/scans/en/p3k/55.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f5f375f-38b0-413e-8099-64044cad98a3.jpg?1562918412
 value=3.441
 rarity=R
 type=Legendary,Creature

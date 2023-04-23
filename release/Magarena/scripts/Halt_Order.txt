@@ -1,5 +1,5 @@
 name=Halt Order
-image=https://magiccards.info/scans/en/som/34.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fed18af-7301-4d03-ba7c-e94f07f078b3.jpg?1562819574
 value=2.692
 rarity=U
 type=Instant

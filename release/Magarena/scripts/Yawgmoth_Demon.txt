@@ -1,5 +1,5 @@
 name=Yawgmoth Demon
-image=https://magiccards.info/scans/en/9e/170.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/696a9fe1-ce63-4638-8793-5187fc726731.jpg?1562736532
 value=3.353
 rarity=R
 type=Creature

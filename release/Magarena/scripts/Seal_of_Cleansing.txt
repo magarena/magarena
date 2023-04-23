@@ -1,5 +1,5 @@
 name=Seal of Cleansing
-image=https://magiccards.info/scans/en/ema/26.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27885a9a-3bcd-476d-97a9-acaec0553a60.jpg?1626100082
 value=4.000
 rarity=C
 type=Enchantment

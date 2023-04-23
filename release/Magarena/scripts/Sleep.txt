@@ -1,5 +1,5 @@
 name=Sleep
-image=https://magiccards.info/scans/en/m19/74.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0c53e64-69cf-4296-8a1e-f8817f25c0b4.jpg?1562304807
 image_updated=2018-08-07
 value=3.912
 removal=1

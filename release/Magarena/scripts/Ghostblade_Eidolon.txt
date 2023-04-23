@@ -1,5 +1,5 @@
 name=Ghostblade Eidolon
-image=https://magiccards.info/scans/en/c15/70.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0795101e-07d9-419a-adca-3eb57536fd5f.jpg?1562700919
 image_updated=2016-02-29
 value=3.640
 rarity=U

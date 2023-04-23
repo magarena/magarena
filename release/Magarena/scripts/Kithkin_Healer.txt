@@ -1,5 +1,5 @@
 name=Kithkin Healer
-image=https://magiccards.info/scans/en/lw/27.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44032574-a5bc-4366-af65-9824fd4302a2.jpg?1562346113
 value=2.179
 rarity=C
 type=Creature

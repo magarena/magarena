@@ -1,5 +1,5 @@
 name=Gift of Orzhova
-image=https://magiccards.info/scans/en/mm3/209.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da824204-a7ed-46f1-b890-f21fcc39ce7e.jpg?1593814807
 image_updated=2017-08-08
 value=3.803
 rarity=C

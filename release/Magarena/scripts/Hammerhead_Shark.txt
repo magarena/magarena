@@ -1,5 +1,5 @@
 name=Hammerhead Shark
-image=https://magiccards.info/scans/en/sh/32.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48c1a040-9045-4977-84e4-695de0f886a9.jpg?1562429353
 value=3.245
 rarity=C
 type=Creature

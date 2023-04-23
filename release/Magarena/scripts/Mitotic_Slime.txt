@@ -1,5 +1,5 @@
 name=Mitotic Slime
-image=https://magiccards.info/scans/en/pc2/67.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8aacf055-e36f-4428-8a3c-f73fa4b4307c.jpg?1673484707
 value=3.862
 rarity=R
 type=Creature

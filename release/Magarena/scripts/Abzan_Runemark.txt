@@ -1,5 +1,5 @@
 name=Abzan Runemark
-image=https://magiccards.info/scans/en/frf/3.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe356261-3126-41f1-ae71-b69ca5641f84.jpg?1562831932
 value=2.500
 rarity=C
 type=Enchantment

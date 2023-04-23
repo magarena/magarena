@@ -1,5 +1,5 @@
 name=Lichenthrope
-image=https://magiccards.info/scans/en/vi/62.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76f0c356-a81d-41d4-a8b7-8c159146a8b8.jpg?1562277692
 value=2.543
 rarity=R
 type=Creature

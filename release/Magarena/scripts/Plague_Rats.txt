@@ -1,5 +1,5 @@
 name=Plague Rats
-image=https://magiccards.info/scans/en/5e/50.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c99fd75c-4b41-411f-92b0-ca3b220946b5.jpg?1562594232
 value=1.740
 rarity=C
 type=Creature

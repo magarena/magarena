@@ -1,5 +1,5 @@
 name=Legion Loyalist
-image=https://magiccards.info/scans/en/gtc/97.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b47f639e-4635-4c26-bb2a-4925f0582c21.jpg?1561842572
 value=4.054
 rarity=R
 type=Creature

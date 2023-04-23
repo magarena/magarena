@@ -1,5 +1,5 @@
 name=Baku Altar
-image=https://magiccards.info/scans/en/bok/152.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81e1dbb8-3df8-4e7e-b74b-baab7d6f97c1.jpg?1562878138
 value=2.792
 rarity=R
 type=Artifact

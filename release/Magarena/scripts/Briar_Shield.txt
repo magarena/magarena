@@ -1,5 +1,5 @@
 name=Briar Shield
-image=https://magiccards.info/scans/en/wl/63.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68100ac2-9677-4eb5-93dc-54e49b15985d.jpg?1562801257
 value=3.333
 rarity=C
 type=Enchantment

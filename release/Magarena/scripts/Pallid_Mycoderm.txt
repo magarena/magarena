@@ -1,5 +1,5 @@
 name=Pallid Mycoderm
-image=https://magiccards.info/scans/en/mma/24.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29a2a28e-c241-4228-9ece-2e49d4d3733a.jpg?1619393235
 value=3.929
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Guardian of Pilgrims
-image=https://magiccards.info/scans/en/emn/30.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a41b6ca9-1d6f-46ce-aba0-952871a10a4b.jpg?1576383891
 image_updated=2016-09-05
 value=2.500
 rarity=C

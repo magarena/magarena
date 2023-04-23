@@ -1,5 +1,5 @@
 name=Llanowar Dead
-image=https://magiccards.info/scans/en/ap/109.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f271969e-1529-42d1-878b-011f80ab0f05.jpg?1562952546
 value=3.789
 rarity=C
 type=Creature

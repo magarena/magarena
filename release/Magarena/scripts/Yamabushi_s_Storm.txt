@@ -1,5 +1,5 @@
 name=Yamabushi's Storm
-image=https://magiccards.info/scans/en/chk/199.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a5a930d-ae59-47e2-9b98-f703e308b5c0.jpg?1562757474
 value=2.639
 rarity=C
 type=Sorcery

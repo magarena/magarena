@@ -1,5 +1,5 @@
 name=Augur of Bolas
-image=https://magiccards.info/scans/en/mm3/30.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d19fbfe6-69bb-452a-be3c-b9c625e23193.jpg?1557576145
 image_updated=2017-08-08
 value=3.971
 rarity=C

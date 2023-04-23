@@ -1,5 +1,5 @@
 name=Adriana, Captain of the Guard
-image=https://magiccards.info/scans/en/cn2/73.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01c2337d-1c3c-4c5e-8b06-dc8a8c56164e.jpg?1673305427
 image_updated=2016-09-05
 value=2.500
 rarity=R

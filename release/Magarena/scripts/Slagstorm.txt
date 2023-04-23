@@ -1,5 +1,5 @@
 name=Slagstorm
-image=https://magiccards.info/scans/en/mbs/75.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e318b03-2aad-462b-a2a9-8b6bdf0e93d6.jpg?1562613393
 value=3.957
 rarity=R
 type=Sorcery

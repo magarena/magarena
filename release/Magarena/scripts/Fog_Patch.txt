@@ -1,5 +1,5 @@
 name=Fog Patch
-image=https://magiccards.info/scans/en/ne/104.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/133f9e4f-2b1b-4a24-ad19-285a2c5845b5.jpg?1562628735
 value=3.712
 rarity=C
 type=Instant

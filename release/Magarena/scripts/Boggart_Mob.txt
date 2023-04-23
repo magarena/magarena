@@ -1,5 +1,5 @@
 name=Boggart Mob
-image=https://magiccards.info/scans/en/lw/104.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a61990de-0daf-4340-8e6b-c49852d46980.jpg?1562361535
 value=3.798
 removal=2
 rarity=R

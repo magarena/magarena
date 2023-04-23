@@ -1,5 +1,5 @@
 name=Deviant Glee
-image=https://magiccards.info/scans/en/rtr/65.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e150896e-8745-42ac-894b-8f42a92bd7a7.jpg?1562794464
 value=3.380
 rarity=C
 type=Enchantment

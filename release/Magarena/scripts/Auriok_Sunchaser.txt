@@ -1,5 +1,5 @@
 name=Auriok Sunchaser
-image=https://magiccards.info/scans/en/som/4.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e274a8b3-2d92-43d9-a436-d3f6f619ca95.jpg?1562824234
 value=3.000
 rarity=C
 type=Creature

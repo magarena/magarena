@@ -1,5 +1,5 @@
 name=Kurgadon
-image=https://magiccards.info/scans/en/sc/124.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52a1758c-849a-4de3-b674-857c3c9bf399.jpg?1562529070
 value=3.788
 rarity=U
 type=Creature

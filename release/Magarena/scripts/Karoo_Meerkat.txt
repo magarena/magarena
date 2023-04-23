@@ -1,5 +1,5 @@
 name=Karoo Meerkat
-image=https://magiccards.info/scans/en/mr/123.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16396594-4f59-4600-8e39-d99544062265.jpg?1562718293
 value=3.575
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Bird Maiden
-image=https://magiccards.info/scans/en/5e/211.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/182c1345-a184-4e01-915e-841821007897.jpg?1562900804
 value=2.679
 rarity=C
 type=Creature

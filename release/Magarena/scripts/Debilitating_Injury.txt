@@ -1,5 +1,5 @@
 name=Debilitating Injury
-image=https://magiccards.info/scans/en/ktk/68.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09b2b263-34db-4961-bf41-1eaaba3701da.jpg?1562782284
 value=3.167
 rarity=C
 type=Enchantment

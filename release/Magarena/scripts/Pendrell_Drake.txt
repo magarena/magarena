@@ -1,5 +1,5 @@
 name=Pendrell Drake
-image=https://magiccards.info/scans/en/us/86.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/986b6708-5ed4-4085-b9b7-d359b2d5b26f.jpg?1562927258
 value=3.044
 rarity=C
 type=Creature

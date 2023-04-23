@@ -1,5 +1,5 @@
 name=Treasure Trove
-image=https://magiccards.info/scans/en/9e/110.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f145a7d4-151b-41dd-94f9-eda406080222.jpg?1562743826
 value=3.100
 rarity=U
 type=Enchantment

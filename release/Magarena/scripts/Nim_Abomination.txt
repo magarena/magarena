@@ -1,5 +1,5 @@
 name=Nim Abomination
-image=https://magiccards.info/scans/en/ds/49.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/1072fef6-3a58-41bb-8d34-0aaedf827aa5.jpg?1562635418
 value=2.548
 rarity=U
 type=Creature

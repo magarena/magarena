@@ -1,5 +1,5 @@
 name=Shu General
-image=https://magiccards.info/scans/en/p3k/25.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/167c1d3f-e013-48b7-a961-590136bda297.jpg?1562899735
 value=3.724
 rarity=U
 type=Creature

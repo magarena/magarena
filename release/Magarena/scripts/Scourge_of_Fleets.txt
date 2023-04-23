@@ -1,5 +1,5 @@
 name=Scourge of Fleets
-image=https://magiccards.info/scans/en/jou/51.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a79471f9-5cc0-48f5-9fa4-1f1374993825.jpg?1608912161
 image_updated=2017-01-07
 value=2.500
 rarity=R

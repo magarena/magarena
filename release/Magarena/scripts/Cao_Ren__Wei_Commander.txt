@@ -1,5 +1,5 @@
 name=Cao Ren, Wei Commander
-image=https://magiccards.info/scans/en/p3k/69.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f7e8366-82ba-4df0-b9df-7d0aa9b972eb.jpg?1562256092
 value=2.080
 rarity=R
 type=Legendary,Creature

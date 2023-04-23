@@ -1,5 +1,5 @@
 name=Imposing Sovereign
-image=https://magiccards.info/scans/en/m14/22.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f672328-3361-498e-a9f4-2d8e69a8b072.jpg?1562826053
 value=3.669
 rarity=R
 type=Creature

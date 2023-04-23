@@ -1,5 +1,5 @@
 name=Kor Skyfisher
-image=https://magiccards.info/scans/en/mm3/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7501662-1216-4e08-bd2b-e0a459057942.jpg?1593812836
 image_updated=2017-08-08
 value=3.828
 rarity=C

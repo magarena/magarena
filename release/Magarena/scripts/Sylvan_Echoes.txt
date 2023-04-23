@@ -1,5 +1,5 @@
 name=Sylvan Echoes
-image=https://magiccards.info/scans/en/lw/237.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5b55fa6-4c94-4ab4-bc30-4fb8b1d3e38f.jpg?1562374701
 value=2.109
 rarity=U
 type=Enchantment

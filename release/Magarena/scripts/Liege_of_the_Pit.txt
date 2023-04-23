@@ -1,5 +1,5 @@
 name=Liege of the Pit
-image=https://magiccards.info/scans/en/ts/113.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52e7c608-d224-472b-8736-273874211f24.jpg?1562912268
 value=3.830
 rarity=R
 type=Creature

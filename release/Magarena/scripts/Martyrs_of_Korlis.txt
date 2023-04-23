@@ -1,5 +1,5 @@
 name=Martyrs of Korlis
-image=https://magiccards.info/scans/en/aq/99.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41c0b6a9-8d1b-42b6-862d-7b21023df3a7.jpg?1562910463
 value=2.963
 rarity=U
 type=Creature

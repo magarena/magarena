@@ -1,5 +1,5 @@
 name=Cruel Tutor
-image=https://magiccards.info/scans/en/po/9.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c05bfb5-dd36-44c5-a60d-43f7f8c68a6b.jpg?1562446860
 value=3.043
 rarity=R
 type=Sorcery

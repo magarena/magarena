@@ -1,5 +1,5 @@
 name=Master Decoy
-image=https://magiccards.info/scans/en/9e/27.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88bd93e9-4fc8-4c10-8183-c87363601033.jpg?1562430334
 value=2.000
 rarity=C
 type=Creature

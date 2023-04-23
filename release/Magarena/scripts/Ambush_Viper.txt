@@ -1,5 +1,5 @@
 name=Ambush Viper
-image=https://magiccards.info/scans/en/isd/169.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e386888-57f5-4eb6-88e8-5679bb8eb290.jpg?1608910517
 value=3.963
 removal=2
 rarity=C

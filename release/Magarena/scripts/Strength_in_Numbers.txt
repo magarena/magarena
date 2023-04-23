@@ -1,5 +1,5 @@
 name=Strength in Numbers
-image=https://magiccards.info/scans/en/mm3/138.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51d900d0-3f3a-4716-bcc7-b27a0cbbc339.jpg?1619398752
 image_updated=2017-08-08
 value=3.230
 rarity=C

@@ -1,5 +1,5 @@
 name=Treefolk Mystic
-image=https://magiccards.info/scans/en/ul/114.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9697acf5-9bc5-411d-8574-fe6185f18672.jpg?1562863757
 value=2.862
 rarity=C
 type=Creature

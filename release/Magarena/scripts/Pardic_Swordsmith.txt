@@ -1,5 +1,5 @@
 name=Pardic Swordsmith
-image=https://magiccards.info/scans/en/od/213.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44ac622c-db04-41bf-817e-4698843e6346.jpg?1562907512
 value=1.441
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fluxcharger
-image=https://magiccards.info/scans/en/dgm/71.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c58f6ed-2544-4b58-8dc0-a0a37b9547e6.jpg?1562917975
 value=3.791
 rarity=U
 type=Creature

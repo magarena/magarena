@@ -1,5 +1,5 @@
 name=Fever Charm
-image=https://magiccards.info/scans/en/on/202.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/830d1980-f460-4be2-9379-c3f74c8318f3.jpg?1562925918
 value=2.864
 rarity=C
 type=Instant

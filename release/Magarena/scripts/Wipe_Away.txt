@@ -1,5 +1,5 @@
 name=Wipe Away
-image=https://magiccards.info/scans/en/ts/94.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ece0707-72f7-4a0a-8c37-9fbe0c694f9b.jpg?1619395021
 value=3.959
 rarity=U
 type=Instant

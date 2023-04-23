@@ -1,5 +1,5 @@
 name=Orzhov Pontiff
-image=https://magiccards.info/scans/en/gp/124.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e36323c-75d0-475e-a5a7-9a1567ff2b62.jpg?1673149022
 value=3.440
 rarity=R
 type=Creature

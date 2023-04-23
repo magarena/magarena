@@ -1,5 +1,5 @@
 name=Visionary Augmenter
-image=https://magiccards.info/scans/en/kld/34.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/918691b1-f927-4027-a444-adc418f3ab16.jpg?1576381058
 image_updated=2016-10-05
 value=2.500
 rarity=U

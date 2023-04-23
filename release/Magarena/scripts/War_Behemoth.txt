@@ -1,5 +1,5 @@
 name=War Behemoth
-image=https://magiccards.info/scans/en/ktk/29.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/652109b9-d607-42b6-945d-0c0dd5bba89c.jpg?1562787724
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Psychic Drain
-image=https://magiccards.info/scans/en/rav/220.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d00fd2d8-76ce-4334-b772-a5dc64fc2989.jpg?1598917261
 value=3.470
 rarity=U
 type=Sorcery

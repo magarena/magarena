@@ -1,5 +1,5 @@
 name=Scarwood Bandits
-image=https://magiccards.info/scans/en/dk/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7ca0e682-22c1-4cd9-9283-fb91ef29a752.jpg?1562924394
 value=3.361
 rarity=R
 type=Creature

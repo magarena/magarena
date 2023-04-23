@@ -1,5 +1,5 @@
 name=Phyrexian Rebirth
-image=https://magiccards.info/scans/en/c16/73.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5516854d-ace3-4e02-a2d1-f780c3b15e37.jpg?1682208543
 image_updated=2017-08-17
 value=3.773
 rarity=R

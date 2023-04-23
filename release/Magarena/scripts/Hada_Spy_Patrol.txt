@@ -1,5 +1,5 @@
 name=Hada Spy Patrol
-image=https://magiccards.info/scans/en/roe/71.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/905f1b28-8d53-4163-9118-414dad789509.jpg?1592672543
 value=3.318
 rarity=U
 type=Creature

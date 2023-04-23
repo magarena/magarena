@@ -1,5 +1,5 @@
 name=Armageddon
-image=https://magiccards.info/scans/en/a25/5.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77f1f6ac-983f-4f3e-8906-47f774e8367b.jpg?1582021719
 image_updated=2018-04-26
 value=4.367
 rarity=M

@@ -1,5 +1,5 @@
 name=Raze
-image=https://magiccards.info/scans/en/us/207.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56d51b3c-24e9-41b6-b7cd-c70329e498ca.jpg?1562913128
 value=3.929
 removal=3
 rarity=C

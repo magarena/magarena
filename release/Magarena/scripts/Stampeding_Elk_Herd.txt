@@ -1,5 +1,5 @@
 name=Stampeding Elk Herd
-image=https://magiccards.info/scans/en/dtk/208.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e55e213-6eab-4086-96cd-024de6150fbe.jpg?1562788873
 value=2.500
 rarity=C
 type=Creature

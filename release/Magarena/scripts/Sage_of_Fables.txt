@@ -1,5 +1,5 @@
 name=Sage of Fables
-image=https://magiccards.info/scans/en/mt/47.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37b3e46e-7a65-4c2a-989b-b626b20e1b14.jpg?1562877908
 value=3.700
 rarity=U
 type=Creature

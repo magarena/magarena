@@ -1,5 +1,5 @@
 name=Spectral Shepherd
-image=https://magiccards.info/scans/en/soi/38.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6eb29718-0bdf-4a8e-9d5c-9e3f486762cc.jpg?1641601645
 value=2.500
 rarity=U
 type=Creature

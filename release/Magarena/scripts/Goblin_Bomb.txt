@@ -1,5 +1,5 @@
 name=Goblin Bomb
-image=https://magiccards.info/scans/en/wl/103.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97e8a436-9fd0-409f-a020-0f9f41602d50.jpg?1562802268
 value=4.176
 rarity=R
 type=Enchantment

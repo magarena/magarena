@@ -1,5 +1,5 @@
 name=Sure Strike
-image=https://magiccards.info/scans/en/m19/161.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d872736-fafb-44e8-a809-48c5436c665a.jpg?1643592006
 image_updated=2018-08-07
 value=2.500
 rarity=C

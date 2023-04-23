@@ -1,5 +1,5 @@
 name=Phytohydra
-image=https://magiccards.info/scans/en/rav/218.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86c336d2-cc14-4b74-a6f9-aab7a084d0de.jpg?1598917218
 value=4.051
 rarity=R
 type=Creature

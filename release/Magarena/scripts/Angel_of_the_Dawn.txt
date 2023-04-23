@@ -1,5 +1,5 @@
 name=Angel of the Dawn
-image=https://magiccards.info/scans/en/m19/7.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d00ffeb5-195c-45ad-a791-ec67f463d552.jpg?1612228551
 value=2.500
 rarity=C
 type=Creature

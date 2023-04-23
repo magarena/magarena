@@ -1,5 +1,5 @@
 name=Boros Mastiff
-image=https://magiccards.info/scans/en/dgm/1.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27a3bfb6-3843-4bda-bbcb-905e4b351dea.jpg?1562902342
 value=2.724
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wild Dogs
-image=https://magiccards.info/scans/en/us/284.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c7811e2-8bff-44a9-96bf-8e302c3cade9.jpg?1562921233
 value=3.603
 rarity=C
 type=Creature

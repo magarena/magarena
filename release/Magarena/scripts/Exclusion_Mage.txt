@@ -1,5 +1,5 @@
 name=Exclusion Mage
-image=https://magiccards.info/scans/en/m19/55.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6344ecd-ca57-4104-a77a-d7d14264776d.jpg?1600697914
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Pale Recluse
-image=https://magiccards.info/scans/en/arb/74.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb045233-af6c-4d1e-b17b-ff779aeb7d5f.jpg?1562948203
 image_updated=2017-01-03
 value=3.042
 rarity=C

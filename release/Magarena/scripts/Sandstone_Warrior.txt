@@ -1,5 +1,5 @@
 name=Sandstone Warrior
-image=https://magiccards.info/scans/en/9e/215.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c8a607b-b79a-4dc5-bbf5-f6de556f1c7d.jpg?1562428181
 value=3.355
 rarity=C
 type=Creature

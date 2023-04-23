@@ -1,5 +1,5 @@
 name=Bloodcrazed Goblin
-image=https://magiccards.info/scans/en/m11/125.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4ec6fc4-efbf-4071-860e-ba244e27e2d3.jpg?1562481215
 value=2.199
 rarity=C
 type=Creature

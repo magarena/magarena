@@ -1,5 +1,5 @@
 name=Shamanic Revelation
-image=https://magiccards.info/scans/en/c16/167.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3784eff-ab7b-4fd4-9a07-fbc852d116bf.jpg?1673484792
 image_updated=2017-08-17
 value=2.500
 rarity=R

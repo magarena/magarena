@@ -1,5 +1,5 @@
 name=Recuperate
-image=https://magiccards.info/scans/en/sc/21.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5945397-0906-48dd-80d1-c65bfa2b31a6.jpg?1562533088
 value=1.321
 rarity=C
 type=Instant

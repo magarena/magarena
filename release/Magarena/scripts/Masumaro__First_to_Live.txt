@@ -1,5 +1,5 @@
 name=Masumaro, First to Live
-image=https://magiccards.info/scans/en/sok/136.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c4625b7-c8b1-4fdf-af9f-935313436b35.jpg?1562493012
 value=3.227
 rarity=R
 type=Legendary,Creature

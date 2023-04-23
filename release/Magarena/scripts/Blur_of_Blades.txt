@@ -1,5 +1,5 @@
 name=Blur of Blades
-image=https://magiccards.info/scans/en/hou/84.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b53f5b9b-d24b-4e9a-bc90-7ed198cd1132.jpg?1562811539
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Thrasios, Triton Hero
-image=https://magiccards.info/scans/en/c16/46.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176
 image_updated=2016-12-28
 value=2.500
 rarity=R

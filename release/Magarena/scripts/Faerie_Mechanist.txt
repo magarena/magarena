@@ -1,5 +1,5 @@
 name=Faerie Mechanist
-image=https://magiccards.info/scans/en/mm2/44.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3b14d57-a856-49d4-931f-ff5a0407b135.jpg?1598303878
 value=2.500
 rarity=C
 type=Artifact,Creature

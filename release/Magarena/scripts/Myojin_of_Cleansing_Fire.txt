@@ -1,5 +1,5 @@
 name=Myojin of Cleansing Fire
-image=https://magiccards.info/scans/en/chk/35.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0570ba0-2877-46f6-acea-6913f8915d6d.jpg?1562763011
 value=4.019
 rarity=R
 type=Legendary,Creature

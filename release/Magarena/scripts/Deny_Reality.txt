@@ -1,5 +1,5 @@
 name=Deny Reality
-image=https://magiccards.info/scans/en/pc2/85.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9baa387-5855-4e13-b99f-7ce0af9895bc.jpg?1562941959
 value=3.111
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Brutalizer Exarch
-image=https://magiccards.info/scans/en/pc2/61.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/466a79bb-d268-4616-bd25-9a13bc0bc76a.jpg?1562907856
 value=3.047
 rarity=U
 type=Creature

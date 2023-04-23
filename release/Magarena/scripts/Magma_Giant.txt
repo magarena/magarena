@@ -1,5 +1,5 @@
 name=Magma Giant
-image=https://magiccards.info/scans/en/5dn/72.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55ebd81a-4711-459d-9d97-d9ea12892184.jpg?1562273914
 image_updated=2016-02-29
 value=3.904
 rarity=R

@@ -1,5 +1,5 @@
 name=Shapers' Sanctuary
-image=https://magiccards.info/scans/en/xln/206.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/930240dc-9c8c-4857-b6ce-85f1689c60e5.jpg?1562560126
 value=2.500
 rarity=R
 type=Enchantment

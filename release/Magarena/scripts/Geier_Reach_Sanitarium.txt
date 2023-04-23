@@ -1,5 +1,5 @@
 name=Geier Reach Sanitarium
-image=https://magiccards.info/scans/en/emn/203.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b9fa570-770d-45a7-9b87-2def6992a22b.jpg?1673306052
 image_updated=2016-09-05
 value=2.500
 rarity=R

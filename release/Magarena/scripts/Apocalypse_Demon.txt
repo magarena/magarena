@@ -1,5 +1,5 @@
 name=Apocalypse Demon
-image=https://magiccards.info/scans/en/hou/58.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39dfbf99-55e8-468b-bcd9-9179cad7cab6.jpg?1562795456
 value=2.500
 rarity=R
 type=Creature

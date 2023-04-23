@@ -1,5 +1,5 @@
 name=Tranquil Cove
-image=https://magiccards.info/scans/en/ema/247.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3799dcb2-7cd7-4d28-b9af-249e3ebe3d3b.jpg?1682205913
 value=3.000
 rarity=C
 type=Land

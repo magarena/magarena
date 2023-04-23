@@ -1,5 +1,5 @@
 name=Searing Meditation
-image=https://magiccards.info/scans/en/rav/226.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f5e0200-21c9-4926-b238-3f9b1f5fc6ed.jpg?1562921246
 value=3.645
 rarity=R
 type=Enchantment

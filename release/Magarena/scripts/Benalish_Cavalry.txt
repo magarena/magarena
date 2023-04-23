@@ -1,5 +1,5 @@
 name=Benalish Cavalry
-image=https://magiccards.info/scans/en/ts/4.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0fd40fa-4144-41b4-b441-a71d09a11305.jpg?1619392605
 value=3.725
 rarity=C
 type=Creature

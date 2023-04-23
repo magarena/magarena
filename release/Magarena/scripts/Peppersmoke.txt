@@ -1,5 +1,5 @@
 name=Peppersmoke
-image=https://magiccards.info/scans/en/mma/92.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57f45251-e71e-4601-9b51-dbc08ab036c2.jpg?1561967349
 value=3.200
 rarity=C
 type=Tribal,Instant

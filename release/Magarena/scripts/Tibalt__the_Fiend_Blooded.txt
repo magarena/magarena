@@ -1,5 +1,5 @@
 name=Tibalt, the Fiend-Blooded
-image=https://magiccards.info/scans/en/avr/161.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa56d53c-836c-483d-988d-a288d0ad91bb.jpg?1592714451
 image_updated=2017-01-11
 value=2.962
 rarity=M

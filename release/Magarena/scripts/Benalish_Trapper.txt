@@ -1,5 +1,5 @@
 name=Benalish Trapper
-image=https://magiccards.info/scans/en/in/8.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ec50bd8-cc23-41b9-9a42-03e28801a4a6.jpg?1562904516
 value=3.500
 rarity=C
 type=Creature

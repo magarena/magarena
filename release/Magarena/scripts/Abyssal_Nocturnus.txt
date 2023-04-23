@@ -1,5 +1,5 @@
 name=Abyssal Nocturnus
-image=https://magiccards.info/scans/en/gp/43.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe094903-45a6-4b11-b80e-aabe915c4b7c.jpg?1593272142
 value=3.604
 rarity=R
 type=Creature

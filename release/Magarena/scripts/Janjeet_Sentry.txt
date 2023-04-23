@@ -1,5 +1,5 @@
 name=Janjeet Sentry
-image=https://magiccards.info/scans/en/kld/53.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/826b9080-2b6d-4f4e-93a6-cf977d40654f.jpg?1576381276
 image_updated=2016-10-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Bitterblade Warrior
-image=https://magiccards.info/scans/en/akh/157.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd54edbb-c35d-4f7f-b5ce-d39b0f766ab8.jpg?1543675759
 value=2.500
 rarity=C
 type=Creature

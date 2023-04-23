@@ -1,5 +1,5 @@
 name=Magus of the Tabernacle
-image=https://magiccards.info/scans/en/pc/8.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd520f8c-93fb-4cf3-8dd5-d05abbd86c74.jpg?1562583749
 value=4.027
 rarity=R
 type=Creature

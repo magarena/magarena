@@ -1,5 +1,5 @@
 name=Boon Satyr
-image=https://magiccards.info/scans/en/ths/152.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/477a30f3-3cbe-42a5-9fae-fe5885a8cf25.jpg?1592710816
 value=3.535
 rarity=R
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Cunning Survivor
-image=https://magiccards.info/scans/en/hou/33.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f9093e7-c129-4efa-9f25-a2366f92e15a.jpg?1562794420
 value=2.500
 rarity=C
 type=Creature

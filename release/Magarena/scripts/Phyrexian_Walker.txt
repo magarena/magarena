@@ -1,5 +1,5 @@
 name=Phyrexian Walker
-image=https://magiccards.info/scans/en/vi/152.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f8a3979-2947-4692-8b2f-d4c07c534777.jpg?1562278159
 value=4.398
 rarity=C
 type=Artifact,Creature

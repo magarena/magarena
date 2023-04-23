@@ -1,5 +1,5 @@
 name=Honden of Seeing Winds
-image=https://magiccards.info/scans/en/ema/54.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97ffdaad-7b35-4256-9da1-0befc6bd86f4.jpg?1580013988
 value=4.018
 rarity=U
 type=Legendary,Enchantment

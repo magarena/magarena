@@ -1,5 +1,5 @@
 name=Marsh Threader
-image=https://magiccards.info/scans/en/wwk/14.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b0c439a-25e4-4ff7-8080-b3be59d5dbe6.jpg?1562281763
 value=2.616
 rarity=C
 type=Creature

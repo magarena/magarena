@@ -1,5 +1,5 @@
 name=Avaricious Dragon
-image=https://magiccards.info/scans/en/ori/131.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/354255d7-dc29-403b-aa90-9044cde669d0.jpg?1562014284
 image_updated=2015-11-05
 value=2.500
 rarity=M

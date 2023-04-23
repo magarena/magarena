@@ -1,5 +1,5 @@
 name=Kindercatch
-image=https://magiccards.info/scans/en/isd/190.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/4954e8a3-e72b-4f28-8762-2b1c658c31b6.jpg?1562829628
 value=2.674
 rarity=C
 type=Creature

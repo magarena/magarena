@@ -1,5 +1,5 @@
 name=Magma Rift
-image=https://magiccards.info/scans/en/zen/136.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee526306-6959-421c-9969-3c19b666d6da.jpg?1562618072
 value=1.859
 rarity=C
 type=Sorcery

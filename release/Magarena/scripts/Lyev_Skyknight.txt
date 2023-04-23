@@ -1,5 +1,5 @@
 name=Lyev Skyknight
-image=https://magiccards.info/scans/en/rtr/179.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f3e1033-428a-4263-8813-fdb8bb4b6425.jpg?1673148901
 value=3.897
 rarity=U
 type=Creature

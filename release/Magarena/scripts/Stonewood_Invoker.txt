@@ -1,5 +1,5 @@
 name=Stonewood Invoker
-image=https://magiccards.info/scans/en/le/139.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4680a8da-69bd-4dc9-b7b0-e15d9488a8d5.jpg?1562909295
 image_updated=2016-01-09
 value=3.188
 rarity=C

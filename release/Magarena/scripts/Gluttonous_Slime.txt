@@ -1,5 +1,5 @@
 name=Gluttonous Slime
-image=https://magiccards.info/scans/en/pc2/65.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a77f0a5f-b350-4baf-a71a-861fb1f5f976.jpg?1562926274
 value=2.833
 rarity=U
 type=Creature

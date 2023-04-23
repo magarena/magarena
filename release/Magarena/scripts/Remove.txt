@@ -1,5 +1,5 @@
 name=Remove
-image=https://magiccards.info/scans/en/po2/43.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adb08549-8ff8-410f-b817-0255abaf8b1e.jpg?1562936011
 value=2.375
 rarity=U
 type=Instant

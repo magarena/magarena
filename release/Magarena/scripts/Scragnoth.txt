@@ -1,5 +1,5 @@
 name=Scragnoth
-image=https://magiccards.info/scans/en/tsts/83.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/352c45b0-a20a-427c-8f2e-f461983ce968.jpg?1562774474
 value=3.769
 rarity=U
 type=Creature

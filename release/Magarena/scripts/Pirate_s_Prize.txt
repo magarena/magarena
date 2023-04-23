@@ -1,5 +1,5 @@
 name=Pirate's Prize
-image=https://magiccards.info/scans/en/xln/68.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48d97373-9b55-4eb7-99b6-8912f09bd0bb.jpg?1562554686
 value=2.500
 rarity=C
 type=Sorcery

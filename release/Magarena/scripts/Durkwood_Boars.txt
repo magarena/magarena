@@ -1,5 +1,5 @@
 name=Durkwood Boars
-image=https://magiccards.info/scans/en/st2k/3.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3741510d-a210-432c-a95b-a147689df995.jpg?1562133663
 image_updated=2017-08-29
 value=2.136
 rarity=C

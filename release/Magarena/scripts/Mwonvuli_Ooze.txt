@@ -1,5 +1,5 @@
 name=Mwonvuli Ooze
-image=https://magiccards.info/scans/en/wl/77.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa9c6f65-93a1-4913-87e7-a17ebfcc7780.jpg?1562802636
 value=2.397
 rarity=R
 type=Creature

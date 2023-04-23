@@ -1,5 +1,5 @@
 name=Cyclops Gladiator
-image=https://magiccards.info/scans/en/m11/131.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6f2eddc-b296-40d0-bf59-44899f1570e8.jpg?1562472664
 value=3.947
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Murkfiend Liege
-image=https://magiccards.info/scans/en/eve/156.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16677645-f635-4183-8afc-056520b94122.jpg?1673149008
 value=4.000
 rarity=R
 type=Creature

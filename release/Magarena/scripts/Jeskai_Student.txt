@@ -1,5 +1,5 @@
 name=Jeskai Student
-image=https://magiccards.info/scans/en/ktk/14.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9007c528-0107-40fd-a97e-e5576f297eb2.jpg?1562790315
 value=2.667
 rarity=C
 type=Creature

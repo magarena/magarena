@@ -1,5 +1,5 @@
 name=Valor in Akros
-image=https://magiccards.info/scans/en/a25/38.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e7428ad-4bd4-401d-a45c-3900bb05a3f7.jpg?1598303659
 image_updated=2018-04-27
 value=2.500
 rarity=U

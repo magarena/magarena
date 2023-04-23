@@ -1,5 +1,5 @@
 name=Wild Ox
-image=https://magiccards.info/scans/en/st/151.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2c2a31a-4432-45ff-80fc-8bad90719736.jpg?1562937159
 value=2.974
 rarity=U
 type=Creature

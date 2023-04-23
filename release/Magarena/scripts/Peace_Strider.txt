@@ -1,5 +1,5 @@
 name=Peace Strider
-image=https://magiccards.info/scans/en/cns/201.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bc9bd97-f256-4dcd-b2a7-3239d443a0af.jpg?1599709711
 value=3.125
 rarity=U
 type=Artifact,Creature

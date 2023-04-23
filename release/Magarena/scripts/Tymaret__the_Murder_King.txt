@@ -1,5 +1,5 @@
 name=Tymaret, the Murder King
-image=https://magiccards.info/scans/en/ths/207.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c4ce848-a57d-4e88-8093-9fb1408523bc.jpg?1562817787
 value=3.452
 rarity=R
 type=Legendary,Creature

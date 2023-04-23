@@ -1,5 +1,5 @@
 name=Nested Ghoul
-image=https://magiccards.info/scans/en/mbs/48.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c035ff58-9df3-4db4-b9d0-97d58080ecfe.jpg?1562614451
 value=3.179
 rarity=U
 type=Creature

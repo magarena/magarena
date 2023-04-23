@@ -1,5 +1,5 @@
 name=Worldly Tutor
-image=https://magiccards.info/scans/en/6e/269.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb6b6fbe-cb6f-4d0d-b3eb-f9629d6784b3.jpg?1610161852
 value=4.514
 rarity=U
 type=Instant

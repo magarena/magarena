@@ -1,5 +1,5 @@
 name=Zhuge Jin, Wu Strategist
-image=https://magiccards.info/scans/en/p3k/66.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60790b07-53da-41fa-b9e0-e7ce22fdcb11.jpg?1562256554
 value=3.390
 rarity=R
 type=Legendary,Creature

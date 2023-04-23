@@ -1,5 +1,5 @@
 name=Leonin Squire
-image=https://magiccards.info/scans/en/5dn/9.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a5320ff-1fe6-492a-b27f-86a84a1768ed.jpg?1562877173
 value=4.027
 rarity=C
 type=Creature

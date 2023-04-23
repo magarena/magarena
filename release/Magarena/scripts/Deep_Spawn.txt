@@ -1,5 +1,5 @@
 name=Deep Spawn
-image=https://magiccards.info/scans/en/fe/34.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e70373b7-ced5-4d88-9ff3-04b6f59c69c9.jpg?1562870949
 value=3.088
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Spidersilk Armor
-image=https://magiccards.info/scans/en/mm/273.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e55202a1-c246-4b5b-94d6-43c86a69d61a.jpg?1562943415
 value=4.156
 rarity=C
 type=Enchantment

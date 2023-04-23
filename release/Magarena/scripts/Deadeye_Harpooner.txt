@@ -1,5 +1,5 @@
 name=Deadeye Harpooner
-image=https://magiccards.info/scans/en/aer/15.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a018decf-25e1-45fc-be7d-2523dcfb7a4c.jpg?1576381367
 value=2.500
 rarity=U
 type=Creature

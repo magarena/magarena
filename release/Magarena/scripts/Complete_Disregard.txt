@@ -1,5 +1,5 @@
 name=Complete Disregard
-image=https://magiccards.info/scans/en/bfz/90.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d94e878-6c49-4420-9d34-f9ee64e811ba.jpg?1562924604
 image_updated=2015-11-08
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Colossal Might
-image=https://magiccards.info/scans/en/cmd/190.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f5d699f-5c15-4a38-8e83-c84f762d9fe9.jpg?1592713995
 value=2.837
 rarity=C
 type=Instant

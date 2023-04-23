@@ -1,5 +1,5 @@
 name=Silklash Spider
-image=https://magiccards.info/scans/en/c14/214.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0edd614b-f85f-476c-bf55-ad2db5c30cd7.jpg?1592673182
 value=2.500
 rarity=R
 type=Creature

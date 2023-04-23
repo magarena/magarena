@@ -1,5 +1,5 @@
 name=Feed the Clan
-image=https://magiccards.info/scans/en/ktk/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52f7c53d-0b53-400f-aa67-967547f3e394.jpg?1562786646
 value=2.500
 rarity=C
 type=Instant

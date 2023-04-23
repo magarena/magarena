@@ -1,5 +1,5 @@
 name=Teysa, Orzhov Scion
-image=https://magiccards.info/scans/en/gp/134.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9eb856e6-8f63-4048-9818-cc3e65748855.jpg?1593272816
 value=4.004
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Armored Cancrix
-image=https://magiccards.info/scans/en/m11/44.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b455b0f-a69c-43b4-bbf5-605ed41f10e0.jpg?1562828120
 value=1.287
 rarity=C
 type=Creature

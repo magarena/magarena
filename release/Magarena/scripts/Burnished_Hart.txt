@@ -1,5 +1,5 @@
 name=Burnished Hart
-image=https://magiccards.info/scans/en/c14/232.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81346d8b-8bdb-4c48-9889-865b23bd001e.jpg?1682209969
 image_updated=2016-02-29
 value=3.523
 rarity=U

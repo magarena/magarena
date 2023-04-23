@@ -1,5 +1,5 @@
 name=Lurching Rotbeast
-image=https://magiccards.info/scans/en/hou/69.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f06be97-71c8-46c8-a1c2-5da3af25e6de.jpg?1562808809
 value=2.500
 rarity=C
 type=Creature

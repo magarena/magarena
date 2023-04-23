@@ -1,5 +1,5 @@
 name=Mausoleum Guard
-image=https://magiccards.info/scans/en/isd/20.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/996ac78f-ad5f-44d5-8567-3d88934c5a71.jpg?1592714257
 image_updated=2016-12-23
 value=3.333
 rarity=U

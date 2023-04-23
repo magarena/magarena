@@ -1,5 +1,5 @@
 name=Clout of the Dominus
-image=https://magiccards.info/scans/en/eve/99.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c8ce6d6-014f-46c2-baf3-f250e9dc3085.jpg?1562921254
 value=4.091
 rarity=C
 type=Enchantment

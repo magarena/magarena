@@ -1,5 +1,5 @@
 name=Farrel's Mantle
-image=https://magiccards.info/scans/en/fe/138.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd5182d9-fc52-4309-a622-41c0b5ae58b8.jpg?1562870485
 value=3.380
 rarity=U
 type=Enchantment

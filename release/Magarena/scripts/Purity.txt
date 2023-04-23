@@ -1,5 +1,5 @@
 name=Purity
-image=https://magiccards.info/scans/en/lw/37.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/154a335d-188d-49c3-af6d-c8e702b4b3ba.jpg?1562338956
 value=4.011
 rarity=R
 type=Creature

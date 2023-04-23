@@ -1,5 +1,5 @@
 name=Victim of Night
-image=https://magiccards.info/scans/en/isd/124.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c128272d-4611-477c-84b9-081bddcc7188.jpg?1592763354
 value=3.863
 removal=4
 rarity=C

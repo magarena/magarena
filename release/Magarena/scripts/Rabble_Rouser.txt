@@ -1,5 +1,5 @@
 name=Rabble-Rouser
-image=https://magiccards.info/scans/en/gp/73.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6877862-f7c5-493d-baaf-41a91d4c7982.jpg?1593272357
 value=2.441
 rarity=U
 type=Creature

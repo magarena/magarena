@@ -1,5 +1,5 @@
 name=Glistener Elf
-image=https://magiccards.info/scans/en/nph/111.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b94f4c6-b518-43b3-be52-e889d1f3ea38.jpg?1562879525
 value=3.784
 rarity=C
 type=Creature

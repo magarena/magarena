@@ -1,5 +1,5 @@
 name=Fugitive Wizard
-image=https://magiccards.info/scans/en/m15/56.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/520ad9d0-5f41-4183-a04e-58a61ad7202b.jpg?1562786978
 value=0.591
 rarity=C
 type=Creature

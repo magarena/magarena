@@ -1,5 +1,5 @@
 name=Markov Dreadknight
-image=https://magiccards.info/scans/en/soi/122.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa3ed9d2-9053-4583-a226-0ab49bbdab6e.jpg?1576384508
 value=2.500
 rarity=R
 type=Creature

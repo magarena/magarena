@@ -1,5 +1,5 @@
 name=Serra Advocate
-image=https://magiccards.info/scans/en/7e/41.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7d48d56-c79e-4c7c-a9a0-92b7fb980e5c.jpg?1561771983
 image_updated=2017-01-07
 value=3.691
 rarity=U

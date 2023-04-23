@@ -1,5 +1,5 @@
 name=Undermine
-image=https://magiccards.info/scans/en/in/282.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a23735a3-8ec8-48ae-8bd0-3b6b782690c8.jpg?1562933284
 value=4.296
 rarity=R
 type=Instant

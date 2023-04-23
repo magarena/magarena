@@ -1,5 +1,5 @@
 name=Stenchskipper
-image=https://magiccards.info/scans/en/mt/79.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c376fd5f-596a-4208-b173-0b2e5165f2e9.jpg?1562881228
 value=3.534
 rarity=R
 type=Creature

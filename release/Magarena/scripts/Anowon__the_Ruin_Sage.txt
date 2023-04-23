@@ -1,5 +1,5 @@
 name=Anowon, the Ruin Sage
-image=https://magiccards.info/scans/en/c17/96.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8630ae1-8fe9-4d6e-899b-a28d86d4d729.jpg?1641602275
 image_updated=2017-10-03
 value=3.743
 rarity=R

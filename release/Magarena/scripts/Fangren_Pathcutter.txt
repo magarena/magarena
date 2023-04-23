@@ -1,5 +1,5 @@
 name=Fangren Pathcutter
-image=https://magiccards.info/scans/en/5dn/87.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59679bcf-4436-48f8-bc6a-d7e0ec6b04c9.jpg?1562877169
 value=3.583
 rarity=U
 type=Creature

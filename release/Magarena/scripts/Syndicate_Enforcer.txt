@@ -1,5 +1,5 @@
 name=Syndicate Enforcer
-image=https://magiccards.info/scans/en/gtc/80.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cde6ee2e-a114-4935-8345-d3e264f9fc26.jpg?1561846634
 value=2.443
 rarity=C
 type=Creature

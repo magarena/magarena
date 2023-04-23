@@ -1,5 +1,5 @@
 name=Swift Maneuver
-image=https://magiccards.info/scans/en/cs/21.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f97ef40-9d07-47fa-ad4b-45f26f7351c9.jpg?1593274843
 value=1.594
 rarity=C
 type=Instant

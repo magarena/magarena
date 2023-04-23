@@ -1,5 +1,5 @@
 name=Scarscale Ritual
-image=https://magiccards.info/scans/en/shm/175.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71d3f64a-ffb9-4f66-91c0-463b5d2d381b.jpg?1562831612
 value=3.242
 rarity=C
 type=Sorcery

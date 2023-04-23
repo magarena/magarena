@@ -1,5 +1,5 @@
 name=Nether Horror
-image=https://magiccards.info/scans/en/m11/108.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c217b672-c724-4fc2-936c-b3f0feaf6ea0.jpg?1562474513
 value=1.894
 rarity=C
 type=Creature

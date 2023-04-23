@@ -1,5 +1,5 @@
 name=Downdraft
-image=https://magiccards.info/scans/en/wl/67.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab4ced80-926a-4e4d-8ebd-d4fe7374a6ad.jpg?1562802648
 value=3.327
 rarity=U
 type=Enchantment

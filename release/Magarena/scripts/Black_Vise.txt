@@ -1,5 +1,5 @@
 name=Black Vise
-image=https://magiccards.info/scans/en/4e/317.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bce2259a-f4cb-4130-9c7e-130980a8df38.jpg?1562934884
 value=4.583
 rarity=R
 type=Artifact

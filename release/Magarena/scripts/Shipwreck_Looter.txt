@@ -1,5 +1,5 @@
 name=Shipwreck Looter
-image=https://magiccards.info/scans/en/xln/76.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/891cbde7-0dff-4877-b373-03f9f4332002.jpg?1562559506
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Aerial Predation
-image=https://magiccards.info/scans/en/ima/154.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b405858-83eb-4939-b86d-4ba190fca048.jpg?1562847918
 image_updated=2017-04-12
 value=2.086
 rarity=C

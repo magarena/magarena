@@ -1,5 +1,5 @@
 name=Wall of Resurgence
-image=https://magiccards.info/scans/en/ogw/39.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c99f0dc1-c8cf-4733-a874-5ae57b38258e.jpg?1562935492
 image_updated=2016-02-29
 value=2.500
 rarity=U

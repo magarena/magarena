@@ -1,5 +1,5 @@
 name=Rakdos Drake
-image=https://magiccards.info/scans/en/ima/103.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75f619f3-37aa-4f37-9df6-f455c0800f87.jpg?1562850538
 image_updated=2017-04-12
 value=3.051
 rarity=C

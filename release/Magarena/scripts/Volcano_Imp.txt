@@ -1,5 +1,5 @@
 name=Volcano Imp
-image=https://magiccards.info/scans/en/ps/56.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8281cc6-2132-4f76-841e-d1ade9cafb84.jpg?1562930426
 value=1.783
 rarity=C
 type=Creature

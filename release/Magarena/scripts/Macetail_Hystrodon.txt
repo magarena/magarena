@@ -1,5 +1,5 @@
 name=Macetail Hystrodon
-image=https://magiccards.info/scans/en/le/106.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/8451ab3f-5d61-4f35-ab70-5a5060caf53d.jpg?1562921768
 value=2.696
 rarity=C
 type=Creature

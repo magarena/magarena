@@ -1,5 +1,5 @@
 name=Greenside Watcher
-image=https://magiccards.info/scans/en/gtc/122.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e825cb2d-98d7-423d-9ba1-b4d04027027e.jpg?1561850708
 value=2.500
 rarity=C
 type=Creature

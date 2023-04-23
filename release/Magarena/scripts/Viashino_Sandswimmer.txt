@@ -1,5 +1,5 @@
 name=Viashino Sandswimmer
-image=https://magiccards.info/scans/en/us/225.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0790607f-51b7-40ff-80f9-4f7f5cd2d63c.jpg?1562896605
 value=2.348
 rarity=R
 type=Creature

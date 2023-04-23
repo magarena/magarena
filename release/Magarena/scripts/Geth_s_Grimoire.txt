@@ -1,5 +1,5 @@
 name=Geth's Grimoire
-image=https://magiccards.info/scans/en/ds/123.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a21d76d-d86c-4348-be45-f65167d2b5a9.jpg?1562635283
 value=3.970
 rarity=U
 type=Artifact

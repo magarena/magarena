@@ -1,5 +1,5 @@
 name=Edge of the Divinity
-image=https://magiccards.info/scans/en/eve/87.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffd079d8-b191-4f54-bb04-427b3736f745.jpg?1562949161
 value=4.060
 rarity=C
 type=Enchantment

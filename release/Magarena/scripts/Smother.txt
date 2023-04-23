@@ -1,5 +1,5 @@
 name=Smother
-image=https://magiccards.info/scans/en/wwk/68.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf605c8e-e59f-4f49-bb55-1824e7eadec0.jpg?1593095813
 value=4.431
 removal=2
 rarity=U

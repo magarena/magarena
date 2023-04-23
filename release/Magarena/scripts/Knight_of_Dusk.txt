@@ -1,5 +1,5 @@
 name=Knight of Dusk
-image=https://magiccards.info/scans/en/10e/152.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d665187f-a8d3-40b6-bfaf-cf25d84484b4.jpg?1562555901
 value=4.046
 rarity=U
 type=Creature

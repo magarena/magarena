@@ -1,5 +1,5 @@
 name=Tana, the Bloodsower
-image=https://magiccards.info/scans/en/c16/45.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3d8d64f-a403-42a7-881b-4f70e9fe15a2.jpg?1562413758
 image_updated=2016-12-28
 value=2.500
 rarity=M

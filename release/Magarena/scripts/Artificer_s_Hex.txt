@@ -1,5 +1,5 @@
 name=Artificer's Hex
-image=https://magiccards.info/scans/en/m14/85.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a5cd9a1-da2e-44ef-9f2e-352dc9f92c50.jpg?1562828076
 value=3.096
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Voice of Duty
-image=https://magiccards.info/scans/en/ud/23.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c648e59-c872-4e04-b45f-2729b42410af.jpg?1562443333
 value=3.429
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Blind Obedience
-image=https://magiccards.info/scans/en/c16/59.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77fccacf-a9b3-4290-9b83-24188e7c885b.jpg?1622528737
 image_updated=2017-08-17
 value=4.123
 rarity=R

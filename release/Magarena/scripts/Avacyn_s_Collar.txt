@@ -1,5 +1,5 @@
 name=Avacyn's Collar
-image=https://magiccards.info/scans/en/dka/145.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/972e9a78-204b-4012-b394-b40fd0edac4c.jpg?1562930603
 value=3.371
 rarity=U
 type=Artifact

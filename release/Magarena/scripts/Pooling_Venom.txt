@@ -1,5 +1,5 @@
 name=Pooling Venom
-image=https://magiccards.info/scans/en/fut/74.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/0911fb8b-d27a-4afc-9114-212f3e090393.jpg?1562896803
 value=3.013
 rarity=U
 type=Enchantment

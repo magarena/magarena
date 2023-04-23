@@ -1,5 +1,5 @@
 name=Conquering Manticore
-image=https://magiccards.info/scans/en/roe/139.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95f5bf3f-3fa7-47db-981b-933cdb505398.jpg?1592752163
 image_updated=2016-09-12
 value=4.000
 rarity=R

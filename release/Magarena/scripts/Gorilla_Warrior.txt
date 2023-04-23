@@ -1,5 +1,5 @@
 name=Gorilla Warrior
-image=https://magiccards.info/scans/en/us/256.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6997a75-42c9-4706-ac34-69fa34011eca.jpg?1562875285
 image_updated=2016-12-04
 value=2.700
 rarity=C

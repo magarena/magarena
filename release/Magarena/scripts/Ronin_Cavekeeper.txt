@@ -1,5 +1,5 @@
 name=Ronin Cavekeeper
-image=https://magiccards.info/scans/en/sok/111.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c532e5a-01f4-4258-ba48-99257cc577d4.jpg?1562493474
 value=2.156
 rarity=C
 type=Creature

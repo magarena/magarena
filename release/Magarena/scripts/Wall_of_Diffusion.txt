@@ -1,5 +1,5 @@
 name=Wall of Diffusion
-image=https://magiccards.info/scans/en/tp/211.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c8cb08b-e820-4054-b5c3-7b737c97c9a5.jpg?1562429363
 value=3.184
 rarity=C
 type=Creature

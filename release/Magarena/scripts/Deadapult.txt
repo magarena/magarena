@@ -1,5 +1,5 @@
 name=Deadapult
-image=https://magiccards.info/scans/en/ps/59.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdc93b3d-bde4-422f-9edc-e337719be7b4.jpg?1562935088
 value=4.139
 rarity=R
 type=Enchantment

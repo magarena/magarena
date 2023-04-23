@@ -1,5 +1,5 @@
 name=Undertaker
-image=https://magiccards.info/scans/en/tsts/53.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e99bb258-7b05-4c70-8a67-d7a5709a60ff.jpg?1562785774
 value=4.023
 rarity=C
 type=Creature

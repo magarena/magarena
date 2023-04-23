@@ -1,5 +1,5 @@
 name=Herald of Torment
-image=https://magiccards.info/scans/en/bng/75.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bb7e5ab-57d7-4a86-b7c2-262932ac3344.jpg?1593092027
 value=3.807
 rarity=R
 type=Enchantment,Creature

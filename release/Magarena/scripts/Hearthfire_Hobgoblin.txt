@@ -1,5 +1,5 @@
 name=Hearthfire Hobgoblin
-image=https://magiccards.info/scans/en/mm2/194.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06ee5eda-41a9-4cae-bb2a-b63fd450d02d.jpg?1562258957
 value=3.804
 rarity=U
 type=Creature

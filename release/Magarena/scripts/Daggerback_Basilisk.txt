@@ -1,5 +1,5 @@
 name=Daggerback Basilisk
-image=https://magiccards.info/scans/en/m19/174.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bc8325b-c7a8-49a5-8a54-a419800ffb93.jpg?1562302881
 image_updated=2018-08-07
 value=3.083
 rarity=C

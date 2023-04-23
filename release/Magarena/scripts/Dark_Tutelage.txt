@@ -1,5 +1,5 @@
 name=Dark Tutelage
-image=https://magiccards.info/scans/en/m11/90.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ec3dd9f-3969-4fd7-97f7-e9868eb19a64.jpg?1562469514
 value=3.508
 rarity=R
 type=Enchantment

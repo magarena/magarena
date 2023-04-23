@@ -1,5 +1,5 @@
 name=Swarm Intelligence
-image=https://magiccards.info/scans/en/hou/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c573d12-4c69-4a54-b1b9-236c003ba98a.jpg?1625976479
 value=2.500
 rarity=R
 type=Enchantment

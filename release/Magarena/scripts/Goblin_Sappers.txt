@@ -1,5 +1,5 @@
 name=Goblin Sappers
-image=https://magiccards.info/scans/en/ia/189.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de839540-a7b9-4f91-91df-3fd4f5c0bc4e.jpg?1562936521
 value=1.983
 rarity=C
 type=Creature

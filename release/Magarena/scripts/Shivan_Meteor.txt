@@ -1,5 +1,5 @@
 name=Shivan Meteor
-image=https://magiccards.info/scans/en/pc/106.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb5a98f0-ceb4-4e23-b2ec-1c4f4e4e22aa.jpg?1619397571
 value=4.256
 rarity=U
 type=Sorcery

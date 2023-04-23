@@ -1,5 +1,5 @@
 name=Cateran Overlord
-image=https://magiccards.info/scans/en/mm/123.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8a1ffcb-40a7-423f-b28a-b5b4c1c9ffd0.jpg?1562383526
 value=3.553
 rarity=R
 type=Creature

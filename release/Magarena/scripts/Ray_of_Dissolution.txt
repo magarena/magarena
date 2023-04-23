@@ -1,5 +1,5 @@
 name=Ray of Dissolution
-image=https://magiccards.info/scans/en/ths/27.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b55c31d1-6b05-4ea1-a444-51ad57ebcfa0.jpg?1562826808
 value=2.887
 rarity=C
 type=Instant

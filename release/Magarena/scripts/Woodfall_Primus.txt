@@ -1,5 +1,5 @@
 name=Woodfall Primus
-image=https://magiccards.info/scans/en/mma/174.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97914abe-71d5-4bd6-87d7-8e7379abf1aa.jpg?1673484894
 value=4.074
 rarity=R
 type=Creature

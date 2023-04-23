@@ -1,5 +1,5 @@
 name=Ravaging Blaze
-image=https://magiccards.info/scans/en/ori/159.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d9404b2-f0ea-4a31-bc7b-6748574c57d3.jpg?1562021972
 image_updated=2015-11-05
 value=2.500
 rarity=U

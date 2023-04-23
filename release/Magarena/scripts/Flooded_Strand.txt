@@ -1,5 +1,5 @@
 name=Flooded Strand
-image=https://magiccards.info/scans/en/ktk/233.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c2996d9-3287-4480-8c04-7a378e37e3cf.jpg?1571667973
 value=4.600
 rarity=R
 type=Land

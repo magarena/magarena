@@ -1,5 +1,5 @@
 name=Sinking Feeling
-image=https://magiccards.info/scans/en/shm/51.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1aac9a8a-7594-4270-a8b6-57b4f8f2a390.jpg?1562827395
 value=2.578
 rarity=C
 type=Enchantment

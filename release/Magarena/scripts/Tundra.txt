@@ -1,5 +1,5 @@
 name=Tundra
-image=https://magiccards.info/scans/en/rv/304.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efd35cb4-862d-4699-a197-b744989b3ceb.jpg?1562943174
 value=4.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Jace Beleren
-image=https://magiccards.info/scans/en/m11/58.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464
 value=3.811
 rarity=M
 type=Legendary,Planeswalker

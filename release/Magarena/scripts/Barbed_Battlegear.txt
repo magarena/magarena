@@ -1,5 +1,5 @@
 name=Barbed Battlegear
-image=https://magiccards.info/scans/en/som/139.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03b80b2f-8d07-4ad3-9b20-4ba0fe9f37a2.jpg?1562814130
 value=2.913
 rarity=U
 type=Artifact

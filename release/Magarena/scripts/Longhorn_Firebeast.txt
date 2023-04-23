@@ -1,5 +1,5 @@
 name=Longhorn Firebeast
-image=https://magiccards.info/scans/en/tr/103.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf0dcf33-8d3f-429c-8ad8-a65d07d7c790.jpg?1562631821
 value=2.683
 rarity=C
 type=Creature

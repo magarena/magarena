@@ -1,5 +1,5 @@
 name=Auger Spree
-image=https://magiccards.info/scans/en/mm3/151.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0d7413b-2ad3-4e8f-8728-5649f938d06e.jpg?1673148338
 image_updated=2017-08-08
 value=3.149
 rarity=C

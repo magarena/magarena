@@ -1,5 +1,5 @@
 name=Sagu Mauler
-image=https://magiccards.info/scans/en/ktk/196.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23de1159-4466-432d-917c-0f77d0610b4e.jpg?1568004808
 value=4.500
 rarity=R
 type=Creature

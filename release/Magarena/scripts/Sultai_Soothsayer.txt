@@ -1,5 +1,5 @@
 name=Sultai Soothsayer
-image=https://magiccards.info/scans/en/ktk/205.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6dcc4f4b-a1bd-4581-858f-bbd3ff6a9d7a.jpg?1673149159
 value=3.833
 rarity=U
 type=Creature

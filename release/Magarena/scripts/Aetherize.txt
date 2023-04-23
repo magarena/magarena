@@ -1,5 +1,5 @@
 name=Aetherize
-image=https://magiccards.info/scans/en/ima/40.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a022eacd-1cdd-42d7-8a4c-88e8a6527144.jpg?1604197364
 image_updated=2017-04-12
 value=3.752
 rarity=U

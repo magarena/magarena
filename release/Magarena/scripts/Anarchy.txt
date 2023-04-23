@@ -1,5 +1,5 @@
 name=Anarchy
-image=https://magiccards.info/scans/en/ia/170.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f5dfbff-683e-4444-a50b-54f7266f6892.jpg?1562869509
 value=4.390
 rarity=U
 type=Sorcery

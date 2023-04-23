@@ -1,5 +1,5 @@
 name=Fledgling Djinn
-image=https://magiccards.info/scans/en/wl/11.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0863567a-13d6-4876-99eb-c592c3ea49a3.jpg?1562896660
 value=3.060
 rarity=C
 type=Creature

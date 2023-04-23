@@ -1,5 +1,5 @@
 name=Aven Fogbringer
-image=https://magiccards.info/scans/en/ju/34.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0ee9e09-c4b1-4133-90a3-350677f0b72a.jpg?1562631789
 value=2.764
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Chorus of the Tides
-image=https://magiccards.info/scans/en/bng/33.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e576f7a-0390-4514-aaed-20406fe6acdf.jpg?1593091617
 value=3.000
 rarity=C
 type=Creature

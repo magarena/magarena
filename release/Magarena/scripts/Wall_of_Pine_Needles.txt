@@ -1,5 +1,5 @@
 name=Wall of Pine Needles
-image=https://magiccards.info/scans/en/ia/162.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d879923-55fc-46ab-9306-5e1f10441c89.jpg?1562912254
 value=3.100
 rarity=U
 type=Creature

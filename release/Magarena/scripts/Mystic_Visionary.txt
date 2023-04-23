@@ -1,5 +1,5 @@
 name=Mystic Visionary
-image=https://magiccards.info/scans/en/od/35.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48ed1b3d-0f7e-46ff-ada7-ebbd416ecf5b.jpg?1562908321
 value=1.643
 rarity=C
 type=Creature

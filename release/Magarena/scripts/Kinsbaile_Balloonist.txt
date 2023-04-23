@@ -1,5 +1,5 @@
 name=Kinsbaile Balloonist
-image=https://magiccards.info/scans/en/lw/23.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6053c20-3632-43e2-8560-259d0c12f235.jpg?1562364182
 value=2.736
 rarity=C
 type=Creature

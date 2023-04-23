@@ -1,5 +1,5 @@
 name=Luminous Bonds
-image=https://magiccards.info/scans/en/m19/25.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d471de4-a7b2-4e13-9492-3fa94f5867ac.jpg?1615068632
 image_updated=2018-08-07
 value=2.500
 rarity=C

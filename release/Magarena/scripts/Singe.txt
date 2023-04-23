@@ -1,5 +1,5 @@
 name=Singe
-image=https://magiccards.info/scans/en/ps/71.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32323277-db9a-48a7-b9a4-8e6914386e26.jpg?1562905494
 value=3.438
 rarity=C
 type=Instant

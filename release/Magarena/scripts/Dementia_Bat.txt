@@ -1,5 +1,5 @@
 name=Dementia Bat
-image=https://magiccards.info/scans/en/nph/55.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72ae22c3-2dea-463e-894a-188657849909.jpg?1562878697
 value=1.697
 rarity=C
 type=Creature

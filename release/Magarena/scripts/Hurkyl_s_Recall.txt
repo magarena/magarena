@@ -1,5 +1,5 @@
 name=Hurkyl's Recall
-image=https://magiccards.info/scans/en/mm2/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73edeaaa-6a87-4cf1-b013-bab9a7bb94d9.jpg?1562263763
 value=4.547
 rarity=R
 type=Instant

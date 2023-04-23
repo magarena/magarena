@@ -1,5 +1,5 @@
 name=Lightning Rift
-image=https://magiccards.info/scans/en/on/217.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6d8746d-3a8c-48a9-91ad-354b69a402c6.jpg?1644254604
 value=4.500
 rarity=U
 type=Enchantment

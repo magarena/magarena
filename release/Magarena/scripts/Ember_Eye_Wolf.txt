@@ -1,5 +1,5 @@
 name=Ember-Eye Wolf
-image=https://magiccards.info/scans/en/soi/154.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98fe1e1e-b14a-4efe-894b-b9da635f007f.jpg?1576384719
 value=2.500
 rarity=C
 type=Creature

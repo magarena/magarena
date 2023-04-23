@@ -1,5 +1,5 @@
 name=Bounty Hunter
-image=https://magiccards.info/scans/en/tp/4.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98319fd3-0aad-4fc3-bb83-3c027d0ed652.jpg?1562055446
 value=3.500
 rarity=R
 type=Creature

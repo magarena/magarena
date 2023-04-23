@@ -1,5 +1,5 @@
 name=Scepter of Insight
-image=https://magiccards.info/scans/en/cfx/33.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8ac51021-e66c-4cd1-b54f-031b69d9699f.jpg?1562802324
 value=2.542
 rarity=R
 type=Artifact

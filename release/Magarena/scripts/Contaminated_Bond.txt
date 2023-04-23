@@ -1,5 +1,5 @@
 name=Contaminated Bond
-image=https://magiccards.info/scans/en/10e/132.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a56b6552-367e-4b0b-9095-42322843b1b2.jpg?1562552857
 value=3.000
 rarity=C
 type=Enchantment

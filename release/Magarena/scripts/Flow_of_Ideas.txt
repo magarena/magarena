@@ -1,5 +1,5 @@
 name=Flow of Ideas
-image=https://magiccards.info/scans/en/shm/38.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/3194d88d-6f2c-47ed-ad9c-d55bb1858e79.jpg?1562828489
 value=2.912
 rarity=U
 type=Sorcery

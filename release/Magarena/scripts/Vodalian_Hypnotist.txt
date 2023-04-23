@@ -1,5 +1,5 @@
 name=Vodalian Hypnotist
-image=https://magiccards.info/scans/en/in/84.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/721fd877-0a28-4002-8b47-058bac4ac44d.jpg?1562917815
 value=2.980
 rarity=U
 type=Creature

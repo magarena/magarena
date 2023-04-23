@@ -1,5 +1,5 @@
 name=Pious Warrior
-image=https://magiccards.info/scans/en/mm/34.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc20c1f0-9883-484c-88d8-1cab08d0b210.jpg?1562382567
 value=2.788
 rarity=C
 type=Creature

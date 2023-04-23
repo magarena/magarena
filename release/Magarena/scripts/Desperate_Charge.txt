@@ -1,5 +1,5 @@
 name=Desperate Charge
-image=https://magiccards.info/scans/en/p3k/74.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/304cc153-36ac-4527-a6e2-91d994bcc35c.jpg?1562905188
 value=3.306
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Thran Forge
-image=https://magiccards.info/scans/en/wl/159.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9c9691b-bee8-4251-8275-5f6ba14a8ecd.jpg?1562802974
 value=3.333
 rarity=U
 type=Artifact

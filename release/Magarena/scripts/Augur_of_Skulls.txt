@@ -1,5 +1,5 @@
 name=Augur of Skulls
-image=https://magiccards.info/scans/en/fut/63.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/945404d5-9e44-45e7-84fd-5f8c893e7d27.jpg?1562924919
 value=4.097
 rarity=C
 type=Creature

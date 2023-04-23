@@ -1,5 +1,5 @@
 name=Hair-Strung Koto
-image=https://magiccards.info/scans/en/chk/252.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5354475-6a0b-4b1f-b94c-7c103d99e88b.jpg?1593860736
 value=2.726
 rarity=R
 type=Artifact

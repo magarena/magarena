@@ -1,5 +1,5 @@
 name=Jace's Sentinel
-image=https://magiccards.info/scans/en/xln/283.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/9131361b-ec1e-4390-82c9-b9b9f77792a8.jpg?1562559963
 value=2.500
 rarity=U
 type=Creature

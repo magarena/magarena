@@ -1,5 +1,5 @@
 name=Ali Baba
-image=https://magiccards.info/scans/en/4e/193.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92191f72-e3d7-4679-97a2-f0c2d19d7738.jpg?1587911197
 value=2.383
 rarity=U
 type=Creature

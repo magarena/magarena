@@ -1,5 +1,5 @@
 name=Ivory Guardians
-image=https://magiccards.info/scans/en/5e/316.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8142471-0ded-410b-bdd5-ac241735b0ce.jpg?1562943974
 value=1.622
 rarity=U
 type=Creature

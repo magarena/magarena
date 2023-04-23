@@ -1,5 +1,5 @@
 name=Deadshot Minotaur
-image=https://magiccards.info/scans/en/arb/52.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aacb131b-74c9-4e6c-9466-27710bc9441f.jpg?1562643506
 value=2.923
 rarity=C
 type=Creature

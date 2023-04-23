@@ -1,5 +1,5 @@
 name=Sidisi's Faithful
-image=https://magiccards.info/scans/en/dtk/74.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d02daad9-701f-40d4-ad0b-44a3cbd32c3f.jpg?1562793352
 value=2.500
 rarity=C
 type=Creature

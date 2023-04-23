@@ -1,5 +1,5 @@
 name=Yomiji, Who Bars the Way
-image=https://magiccards.info/scans/en/bok/30.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f611af49-3c59-4365-a398-93f7e05ff0d0.jpg?1562880727
 value=3.131
 rarity=R
 type=Legendary,Creature

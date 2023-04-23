@@ -1,5 +1,5 @@
 name=Deglamer
-image=https://magiccards.info/scans/en/mt/118.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/985b43aa-58f0-42fc-9ef0-a7925727d58f.jpg?1562880209
 value=4.357
 rarity=C
 type=Instant

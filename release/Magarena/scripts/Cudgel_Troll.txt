@@ -1,5 +1,5 @@
 name=Cudgel Troll
-image=https://magiccards.info/scans/en/m12/169.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e156b8d8-5309-494e-9709-44f98826a69f.jpg?1562662955
 value=3.910
 rarity=U
 type=Creature

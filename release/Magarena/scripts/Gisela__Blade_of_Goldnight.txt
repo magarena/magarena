@@ -1,5 +1,5 @@
 name=Gisela, Blade of Goldnight
-image=https://magiccards.info/scans/en/a25/204.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/365c43c2-1a65-4f6a-860d-39dcb15255c3.jpg?1562273405
 image_updated=2018-04-27
 value=4.159
 rarity=M

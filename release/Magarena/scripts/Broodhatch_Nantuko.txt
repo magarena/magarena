@@ -1,5 +1,5 @@
 name=Broodhatch Nantuko
-image=https://magiccards.info/scans/en/a25/162.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4b795f9-ee23-490b-af3d-de394ec07161.jpg?1562440164
 image_updated=2018-04-27
 value=3.633
 rarity=U

@@ -1,5 +1,5 @@
 name=Abyssal Hunter
-image=https://magiccards.info/scans/en/6e/109.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c3f6ad7-4782-40db-8eb3-e71d71ec3388.jpg?1562816627
 value=2.958
 rarity=R
 type=Creature

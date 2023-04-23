@@ -1,5 +1,5 @@
 name=Lifecrafter's Bestiary
-image=https://magiccards.info/scans/en/aer/162.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/457d1102-9ba7-47d1-bced-cc8a28e38ad9.jpg?1673485379
 value=2.500
 rarity=R
 type=Artifact

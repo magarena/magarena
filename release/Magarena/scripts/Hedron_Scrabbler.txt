@@ -1,5 +1,5 @@
 name=Hedron Scrabbler
-image=https://magiccards.info/scans/en/zen/204.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/6422e062-0ce1-4239-8c2d-06449627a55a.jpg?1562612819
 value=1.906
 rarity=C
 type=Artifact,Creature

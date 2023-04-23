@@ -1,5 +1,5 @@
 name=Desert
-image=https://magiccards.info/scans/en/tsts/118.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c74e13eb-6f82-4db1-9d0d-8310f48d9f6d.jpg?1631589551
 value=3.943
 rarity=C
 type=Land

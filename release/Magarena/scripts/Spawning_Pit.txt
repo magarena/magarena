@@ -1,5 +1,5 @@
 name=Spawning Pit
-image=https://magiccards.info/scans/en/ds/141.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9a8ca49-fc8f-49c1-a7c6-c8326b2deb52.jpg?1562941896
 value=4.079
 rarity=U
 type=Artifact

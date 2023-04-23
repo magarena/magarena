@@ -1,5 +1,5 @@
 name=Drake-Skull Cameo
-image=https://magiccards.info/scans/en/in/302.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a3ce135-9c2f-45bd-b2db-c0e00c50c964.jpg?1562909996
 value=2.515
 rarity=U
 type=Artifact

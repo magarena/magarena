@@ -1,5 +1,5 @@
 name=Dream Fracture
-image=https://magiccards.info/scans/en/cns/95.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daca6a57-38b7-4547-9174-a7f548ea1258.jpg?1674135492
 value=3.800
 rarity=C
 type=Instant

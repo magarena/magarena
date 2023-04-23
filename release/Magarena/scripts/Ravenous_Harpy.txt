@@ -1,5 +1,5 @@
 name=Ravenous Harpy
-image=https://magiccards.info/scans/en/m19/115.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/676ec702-75c4-4733-b500-eb15406778bb.jpg?1562302650
 value=2.500
 rarity=U
 type=Creature

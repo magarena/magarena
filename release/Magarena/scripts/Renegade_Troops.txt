@@ -1,5 +1,5 @@
 name=Renegade Troops
-image=https://magiccards.info/scans/en/p3k/120.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a75095f4-a77f-4237-ae25-2e6f2f8788c1.jpg?1562257512
 value=1.891
 rarity=U
 type=Creature

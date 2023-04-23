@@ -1,5 +1,5 @@
 name=Gossamer Chains
-image=https://magiccards.info/scans/en/vi/106.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9917a29-c6b4-4e0a-a301-21868bd27e17.jpg?1562279106
 value=3.987
 rarity=C
 type=Enchantment

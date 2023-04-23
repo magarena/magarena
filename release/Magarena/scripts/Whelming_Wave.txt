@@ -1,5 +1,5 @@
 name=Whelming Wave
-image=https://magiccards.info/scans/en/bng/57.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddb863a0-3ff8-42a3-a151-4ea9aa433336.jpg?1608912215
 image_updated=2017-01-11
 value=3.800
 rarity=R

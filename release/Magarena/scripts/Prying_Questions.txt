@@ -1,5 +1,5 @@
 name=Prying Questions
-image=https://magiccards.info/scans/en/emn/101.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac9fcf7c-8785-4285-b583-7060edabc3c6.jpg?1576384394
 image_updated=2016-09-05
 value=2.500
 rarity=U

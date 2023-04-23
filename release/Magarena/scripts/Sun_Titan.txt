@@ -1,5 +1,5 @@
 name=Sun Titan
-image=https://magiccards.info/scans/en/c14/91.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/332280f7-03af-4ef8-b1ff-5ac5e4d3b3ce.jpg?1673483792
 image_updated=2016-02-29
 value=4.349
 rarity=M

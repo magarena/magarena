@@ -1,5 +1,5 @@
 name=Cemetery Gate
-image=https://magiccards.info/scans/en/hl/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c6f0614-06dc-4bd2-b8b9-d951ae27db21.jpg?1575874678
 value=3.048
 rarity=C
 type=Creature

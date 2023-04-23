@@ -1,5 +1,5 @@
 name=Highland Berserker
-image=https://magiccards.info/scans/en/zen/132.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3c22bf3-2ba6-4d8f-a2b8-a5d5e26f1316.jpg?1562617649
 value=3.115
 rarity=C
 type=Creature

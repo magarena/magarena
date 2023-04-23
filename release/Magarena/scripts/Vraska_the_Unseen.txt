@@ -1,5 +1,5 @@
 name=Vraska the Unseen
-image=https://magiccards.info/scans/en/rtr/208.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6ab9d2b-6cb3-4477-8d0e-712c530383bd.jpg?1568004856
 value=3.872
 rarity=M
 type=Legendary,Planeswalker

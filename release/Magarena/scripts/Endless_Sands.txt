@@ -1,5 +1,5 @@
 name=Endless Sands
-image=https://magiccards.info/scans/en/hou/176.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f436df63-41b9-416d-8e41-035261d4d0cc.jpg?1591321988
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Vertigo Spawn
-image=https://magiccards.info/scans/en/cn2/125.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e50384b-7b06-4e59-8d70-c03a61ff64aa.jpg?1576382558
 image_updated=2017-08-29
 value=2.500
 rarity=U

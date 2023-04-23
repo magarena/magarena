@@ -1,5 +1,5 @@
 name=Merfolk Looter
-image=https://magiccards.info/scans/en/a25/65.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d740928-bf61-4420-a403-63097538b97d.jpg?1631586315
 image_updated=2018-04-27
 value=4.000
 rarity=U

@@ -1,5 +1,5 @@
 name=Militant Inquisitor
-image=https://magiccards.info/scans/en/soi/26.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68d99f1f-80d6-4b5e-aeae-83fb8ae62cdc.jpg?1576383815
 value=2.500
 rarity=C
 type=Creature

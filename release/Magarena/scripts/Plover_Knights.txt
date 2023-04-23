@@ -1,5 +1,5 @@
 name=Plover Knights
-image=https://magiccards.info/scans/en/lw/35.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d84fdc31-43f8-4cb9-b9a8-4ad3d1e90edb.jpg?1562940723
 value=2.781
 rarity=C
 type=Creature

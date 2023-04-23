@@ -1,5 +1,5 @@
 name=Myr Mindservant
-image=https://magiccards.info/scans/en/mi/213.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f98ce711-8f68-4487-b67b-be35796ffcff.jpg?1562163913
 value=3.250
 rarity=U
 type=Artifact,Creature

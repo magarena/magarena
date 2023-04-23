@@ -1,5 +1,5 @@
 name=Shivan Wumpus
-image=https://magiccards.info/scans/en/pc/121.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7958a1e5-b671-4ecb-95de-240ffaf5021e.jpg?1562574880
 value=4.000
 rarity=R
 type=Creature

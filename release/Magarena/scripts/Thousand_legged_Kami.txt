@@ -1,5 +1,5 @@
 name=Thousand-legged Kami
-image=https://magiccards.info/scans/en/chk/246.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c88355e-dff0-4d51-a33c-08e14d6217d4.jpg?1562760550
 value=2.191
 rarity=U
 type=Creature

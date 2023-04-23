@@ -1,5 +1,5 @@
 name=Wall of Wonder
-image=https://magiccards.info/scans/en/7e/112.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8c73e58-e906-4c67-9f84-b20456629cb0.jpg?1562250348
 value=2.712
 rarity=R
 type=Creature

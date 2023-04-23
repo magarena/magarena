@@ -1,5 +1,5 @@
 name=Stormtide Leviathan
-image=https://magiccards.info/scans/en/m15/80.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/996bb4c0-dc72-4233-9f44-2e25aef71ad7.jpg?1608912195
 value=4.100
 rarity=R
 type=Creature

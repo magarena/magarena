@@ -1,5 +1,5 @@
 name=Kjeldoran Gargoyle
-image=https://magiccards.info/scans/en/cs/10.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/484a4892-fba0-459d-9e72-e82f7e079d78.jpg?1593274765
 value=2.667
 rarity=U
 type=Creature

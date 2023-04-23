@@ -1,5 +1,5 @@
 name=Mage-Ring Responder
-image=https://magiccards.info/scans/en/ori/232.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c60473d-5065-4e63-bfc2-a041a8ca48ed.jpg?1562027575
 image_updated=2015-11-05
 value=2.500
 rarity=R

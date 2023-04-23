@@ -1,5 +1,5 @@
 name=Mogg Cannon
-image=https://magiccards.info/scans/en/tp/288.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ee64a77-5308-45c7-b865-400820968c74.jpg?1562054239
 value=3.015
 rarity=U
 type=Artifact

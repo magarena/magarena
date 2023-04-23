@@ -1,5 +1,5 @@
 name=Raging Kavu
-image=https://magiccards.info/scans/en/in/262.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27573679-e9e5-4bfc-b5d5-85d4648b01b6.jpg?1562903028
 value=3.692
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Sublime Archangel
-image=https://magiccards.info/scans/en/m13/36.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95e53129-c49b-4bb8-a816-629fc87e58bb.jpg?1547515934
 value=4.167
 rarity=M
 type=Creature

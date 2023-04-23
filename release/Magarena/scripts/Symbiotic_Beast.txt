@@ -1,5 +1,5 @@
 name=Symbiotic Beast
-image=https://magiccards.info/scans/en/on/287.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb61443d-e47a-4fe1-b777-67a3670a5a56.jpg?1562939214
 value=3.786
 rarity=U
 type=Creature

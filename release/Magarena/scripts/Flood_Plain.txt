@@ -1,5 +1,5 @@
 name=Flood Plain
-image=https://magiccards.info/scans/en/ddi/34.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83ccb446-3e8a-436e-99b5-a1b2d57ab72f.jpg?1673306027
 value=3.000
 rarity=U
 type=Land

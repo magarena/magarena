@@ -1,5 +1,5 @@
 name=Ominous Sphinx
-image=https://magiccards.info/scans/en/hou/41.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2361bd3b-9ae0-4198-9296-6d278feff042.jpg?1562792294
 value=2.500
 rarity=U
 type=Creature

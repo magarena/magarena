@@ -1,5 +1,5 @@
 name=Tarox Bladewing
-image=https://magiccards.info/scans/en/fut/123.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b06bd73-c45a-4560-bd8d-413608c5f89e.jpg?1562897154
 value=3.877
 rarity=R
 type=Legendary,Creature

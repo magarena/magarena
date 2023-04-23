@@ -1,5 +1,5 @@
 name=Twitch
-image=https://magiccards.info/scans/en/wwk/43.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c47db5b-7cc4-446f-b96c-e0c69ed9f0b0.jpg?1562429842
 value=2.643
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Stormscape Familiar
-image=https://magiccards.info/scans/en/tsts/32.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/865e5cdd-566c-4bed-a392-583b71ec2718.jpg?1562779513
 value=4.358
 rarity=C
 type=Creature

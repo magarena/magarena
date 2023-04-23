@@ -1,5 +1,5 @@
 name=Pheres-Band Tromper
-image=https://magiccards.info/scans/en/bng/134.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2d7e7d1-70ee-450b-8018-ff373cc91c68.jpg?1593092598
 value=3.788
 rarity=C
 type=Creature

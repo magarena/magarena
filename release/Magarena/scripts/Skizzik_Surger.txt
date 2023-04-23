@@ -1,5 +1,5 @@
 name=Skizzik Surger
-image=https://magiccards.info/scans/en/fut/120.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b232c36-bff1-4f5e-98a6-ce6a98591aa6.jpg?1562910233
 value=2.000
 rarity=U
 type=Creature

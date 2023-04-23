@@ -1,5 +1,5 @@
 name=Cloven Casting
-image=https://magiccards.info/scans/en/arb/86.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c62ee3ea-8b85-4b14-87ae-7fca1d98b98b.jpg?1562644154
 value=2.847
 rarity=R
 type=Enchantment

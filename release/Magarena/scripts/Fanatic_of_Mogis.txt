@@ -1,5 +1,5 @@
 name=Fanatic of Mogis
-image=https://magiccards.info/scans/en/ths/121.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/581eaadb-442b-40c9-b8f9-9e19d5eba824.jpg?1562818407
 value=3.610
 rarity=U
 type=Creature

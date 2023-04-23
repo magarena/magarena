@@ -1,5 +1,5 @@
 name=Contempt
-image=https://magiccards.info/scans/en/sh/27.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1fa8e60-c32f-4586-b133-224f0aec3355.jpg?1562597374
 value=3.370
 rarity=C
 type=Enchantment

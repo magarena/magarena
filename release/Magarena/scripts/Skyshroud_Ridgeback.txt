@@ -1,5 +1,5 @@
 name=Skyshroud Ridgeback
-image=https://magiccards.info/scans/en/ne/120.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/410896ab-d3dc-478c-bfd1-c0cad5b1180a.jpg?1562629551
 value=3.944
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Coastal Hornclaw
-image=https://magiccards.info/scans/en/8e/66.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b152c0d-ba43-49c6-9bb5-1d20a9f411f6.jpg?1562926293
 value=1.274
 rarity=C
 type=Creature

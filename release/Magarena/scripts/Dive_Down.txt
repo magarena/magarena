@@ -1,5 +1,5 @@
 name=Dive Down
-image=https://magiccards.info/scans/en/xln/53.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b33e493e-1aef-43b3-9716-52158b002430.jpg?1562562509
 value=2.500
 rarity=C
 type=Instant

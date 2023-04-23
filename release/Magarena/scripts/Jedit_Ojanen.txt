@@ -1,5 +1,5 @@
 name=Jedit Ojanen
-image=https://magiccards.info/scans/en/lg/274.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/701d1f89-1a4b-41a8-bdb0-972af01f78d4.jpg?1562918599
 value=1.194
 rarity=U
 type=Legendary,Creature

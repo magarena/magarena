@@ -1,5 +1,5 @@
 name=Summoner's Bane
-image=https://magiccards.info/scans/en/zen/71.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54a9a782-3479-41cd-9c4f-fa38bfad98c8.jpg?1592754551
 value=3.650
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Carrion Crow
-image=https://magiccards.info/scans/en/m15/88.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97d80cc4-f3be-4306-8126-e60f7b00d384.jpg?1562791322
 value=2.071
 rarity=C
 type=Creature

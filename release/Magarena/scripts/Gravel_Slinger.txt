@@ -1,5 +1,5 @@
 name=Gravel Slinger
-image=https://magiccards.info/scans/en/on/33.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87551307-6b5f-4f12-aa1f-4beebefad3b3.jpg?1562926972
 value=1.720
 rarity=C
 type=Creature

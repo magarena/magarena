@@ -1,5 +1,5 @@
 name=Sarkhan, the Dragonspeaker
-image=https://magiccards.info/scans/en/ktk/119.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c58064fd-4d8b-4f54-812f-0bb1d7e2ddc2.jpg?1562793263
 value=4.786
 rarity=M
 type=Legendary,Planeswalker

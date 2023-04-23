@@ -1,5 +1,5 @@
 name=Crystallization
-image=https://magiccards.info/scans/en/arb/144.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd0e9e1b-bd37-43a7-abd3-4582315a268d.jpg?1562644250
 value=3.442
 rarity=C
 type=Enchantment

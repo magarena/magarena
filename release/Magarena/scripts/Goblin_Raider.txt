@@ -1,5 +1,5 @@
 name=Goblin Raider
-image=https://magiccards.info/scans/en/9eb/8.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f026d65f-c365-475b-9454-e9935af00ec4.jpg?1562743793
 image_updated=2015-05-17
 value=2.071
 rarity=C

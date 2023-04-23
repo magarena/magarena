@@ -1,5 +1,5 @@
 name=Jayemdae Tome
-image=https://magiccards.info/scans/en/ori/231.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/518af905-f518-4269-89b4-781085be8dd2.jpg?1562019933
 image_updated=2015-11-05
 value=2.500
 rarity=U

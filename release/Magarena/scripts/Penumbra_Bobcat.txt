@@ -1,5 +1,5 @@
 name=Penumbra Bobcat
-image=https://magiccards.info/scans/en/ap/82.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/496cce86-ff61-4d24-8d37-8c27acaff21c.jpg?1601079888
 value=3.596
 rarity=C
 type=Creature

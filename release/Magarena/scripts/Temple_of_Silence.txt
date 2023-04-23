@@ -1,5 +1,5 @@
 name=Temple of Silence
-image=https://magiccards.info/scans/en/ths/227.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd7e702f-c834-487d-b61b-7987ec2ee988.jpg?1682210742
 value=3.561
 rarity=R
 type=Land

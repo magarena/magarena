@@ -1,5 +1,5 @@
 name=Dark Deal
-image=https://magiccards.info/scans/en/frf/66.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69dfaafe-2fbd-4f2f-913d-ea64e4ce44cd.jpg?1562826140
 value=2.500
 rarity=U
 type=Sorcery

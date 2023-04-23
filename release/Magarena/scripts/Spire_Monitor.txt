@@ -1,5 +1,5 @@
 name=Spire Monitor
-image=https://magiccards.info/scans/en/mm3/52.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f30ed6e1-d713-40ae-81f6-d2d66914bbb9.jpg?1593813152
 image_updated=2017-08-08
 value=2.885
 rarity=C

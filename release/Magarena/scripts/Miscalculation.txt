@@ -1,5 +1,5 @@
 name=Miscalculation
-image=https://magiccards.info/scans/en/ul/36.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b4956a2-9a39-4152-9c98-70e4b2acfa26.jpg?1562862809
 value=4.081
 rarity=C
 type=Instant

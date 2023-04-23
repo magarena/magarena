@@ -1,5 +1,5 @@
 name=Ambassador Laquatus
-image=https://magiccards.info/scans/en/10e/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b261067f-b5de-41cc-ba9e-6ef4c061e170.jpg?1562553771
 value=4.022
 rarity=R
 type=Legendary,Creature

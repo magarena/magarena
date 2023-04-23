@@ -1,5 +1,5 @@
 name=Veilstone Amulet
-image=https://magiccards.info/scans/en/fut/166.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3705d3e4-317e-460d-b16e-e57238a19070.jpg?1562906098
 value=3.808
 rarity=R
 type=Artifact

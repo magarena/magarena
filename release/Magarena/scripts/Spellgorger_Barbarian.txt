@@ -1,5 +1,5 @@
 name=Spellgorger Barbarian
-image=https://magiccards.info/scans/en/ju/100.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/043fcf80-dd20-4cc2-a0d5-4bb22b8b0789.jpg?1562628458
 value=1.388
 rarity=C
 type=Creature

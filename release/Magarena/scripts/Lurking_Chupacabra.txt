@@ -1,5 +1,5 @@
 name=Lurking Chupacabra
-image=https://magiccards.info/scans/en/xln/111.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abdbaa34-1ee5-4a2a-bdb3-2f04809a5b42.jpg?1562561935
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Naya Sojourners
-image=https://magiccards.info/scans/en/arb/122.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e2de336-8c61-45b1-affd-6322530b91ca.jpg?1562642400
 value=2.889
 rarity=C
 type=Creature

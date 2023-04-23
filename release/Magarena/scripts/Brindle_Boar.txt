@@ -1,5 +1,5 @@
 name=Brindle Boar
-image=https://magiccards.info/scans/en/m12/167.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a30b4a78-afdd-4067-810e-1fa0ddf8fb0e.jpg?1562833173
 value=3.188
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Double Cleave
-image=https://magiccards.info/scans/en/eve/135.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82505754-a22f-4ae9-8efd-75eff17cbed6.jpg?1547518194
 image_updated=2016-12-13
 value=3.915
 rarity=C

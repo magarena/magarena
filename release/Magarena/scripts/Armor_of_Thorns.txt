@@ -1,5 +1,5 @@
 name=Armor of Thorns
-image=https://magiccards.info/scans/en/mr/104.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c32d3e47-8c7c-4bfd-8b3a-b0751d68dc42.jpg?1562934186
 value=2.500
 rarity=C
 type=Enchantment

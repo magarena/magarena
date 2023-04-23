@@ -1,5 +1,5 @@
 name=Improvised Armor
-image=https://magiccards.info/scans/en/on/40.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d7d5d79-73d8-4f1a-9dda-4de5f41539d9.jpg?1562928336
 value=3.014
 rarity=U
 type=Enchantment

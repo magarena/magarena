@@ -1,5 +1,5 @@
 name=Foundry Street Denizen
-image=https://magiccards.info/scans/en/m15/141.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a328c8d8-a404-43b5-8c79-2e79d639fb40.jpg?1592764775
 value=3.250
 rarity=C
 type=Creature

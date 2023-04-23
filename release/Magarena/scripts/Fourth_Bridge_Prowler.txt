@@ -1,5 +1,5 @@
 name=Fourth Bridge Prowler
-image=https://magiccards.info/scans/en/aer/60.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73aaaa09-c985-42f8-b426-06fd3b8de66d.jpg?1576381661
 value=2.500
 rarity=C
 type=Creature

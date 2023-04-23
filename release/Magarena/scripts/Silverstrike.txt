@@ -1,5 +1,5 @@
 name=Silverstrike
-image=https://magiccards.info/scans/en/soi/37.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f27b92a-cde9-41bc-9b23-d83b74b167d4.jpg?1576383889
 value=2.500
 rarity=U
 type=Instant

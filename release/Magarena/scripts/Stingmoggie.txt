@@ -1,5 +1,5 @@
 name=Stingmoggie
-image=https://magiccards.info/scans/en/mt/106.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27e0fdb4-187a-4178-a702-884bef9e029d.jpg?1562877504
 value=2.202
 rarity=C
 type=Creature

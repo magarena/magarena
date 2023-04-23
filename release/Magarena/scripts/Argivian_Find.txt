@@ -1,5 +1,5 @@
 name=Argivian Find
-image=https://magiccards.info/scans/en/wl/122.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89f23295-ad0a-4e2d-ae04-1a9c065e575d.jpg?1562802015
 value=3.967
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Summer Bloom
-image=https://magiccards.info/scans/en/9e/273.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/7383f71d-3f51-4632-9ea0-27d47fa2fa50.jpg?1673148198
 value=3.891
 rarity=U
 type=Sorcery

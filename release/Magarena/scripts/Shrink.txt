@@ -1,5 +1,5 @@
 name=Shrink
-image=https://magiccards.info/scans/en/5e/188.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4e319d7-53f3-40e8-9a75-fe1fd8716733.jpg?1562870478
 value=3.050
 rarity=C
 type=Instant

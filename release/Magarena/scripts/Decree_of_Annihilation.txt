@@ -1,5 +1,5 @@
 name=Decree of Annihilation
-image=https://magiccards.info/scans/en/sc/85.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73744717-518c-478e-9da9-201c49124f37.jpg?1562530626
 value=2.500
 rarity=R
 type=Sorcery

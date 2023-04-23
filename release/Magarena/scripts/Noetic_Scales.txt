@@ -1,5 +1,5 @@
 name=Noetic Scales
-image=https://magiccards.info/scans/en/us/304.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18506777-cd69-42f6-99c9-cde9b0958868.jpg?1562900134
 value=4.449
 rarity=R
 type=Artifact

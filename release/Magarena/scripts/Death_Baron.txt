@@ -1,5 +1,5 @@
 name=Death Baron
-image=https://magiccards.info/scans/en/m19/90.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11641a17-e979-4edb-adba-789f21fd017d.jpg?1637630011
 image_updated=2018-08-07
 value=4.147
 rarity=R

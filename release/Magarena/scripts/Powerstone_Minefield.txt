@@ -1,5 +1,5 @@
 name=Powerstone Minefield
-image=https://magiccards.info/scans/en/ap/115.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b17807b9-8feb-48ac-813a-829577f5b9e8.jpg?1562936913
 value=4.225
 rarity=R
 type=Enchantment

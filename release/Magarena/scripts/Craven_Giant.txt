@@ -1,5 +1,5 @@
 name=Craven Giant
-image=https://magiccards.info/scans/en/sh/78.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64e9caf7-b835-42a6-8f84-e35162fe25d7.jpg?1562429828
 value=2.886
 rarity=C
 type=Creature

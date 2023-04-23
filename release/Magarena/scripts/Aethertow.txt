@@ -1,5 +1,5 @@
 name=Aethertow
-image=https://magiccards.info/scans/en/mm3/205.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0b34ecd-6dd4-49b0-ab49-3c11f70e0c4a.jpg?1593814774
 image_updated=2017-08-08
 value=2.884
 rarity=C

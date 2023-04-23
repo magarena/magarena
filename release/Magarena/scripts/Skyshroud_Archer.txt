@@ -1,5 +1,5 @@
 name=Skyshroud Archer
-image=https://magiccards.info/scans/en/sh/64.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/485aeabb-4a9b-4d88-80ad-83e31da6804b.jpg?1562596400
 value=3.250
 rarity=C
 type=Creature

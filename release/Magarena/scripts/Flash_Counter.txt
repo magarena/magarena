@@ -1,5 +1,5 @@
 name=Flash Counter
-image=https://magiccards.info/scans/en/8e/78.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc14e61f-481a-4bfa-aca0-fb63dc952be6.jpg?1562939250
 value=2.324
 rarity=C
 type=Instant

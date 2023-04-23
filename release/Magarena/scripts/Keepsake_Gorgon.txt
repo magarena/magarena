@@ -1,5 +1,5 @@
 name=Keepsake Gorgon
-image=https://magiccards.info/scans/en/cn2/141.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa8d2ece-9639-4384-8284-27a1b0475228.jpg?1576382692
 image_updated=2016-12-21
 value=3.446
 rarity=U

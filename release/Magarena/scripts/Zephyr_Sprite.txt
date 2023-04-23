@@ -1,5 +1,5 @@
 name=Zephyr Sprite
-image=https://magiccards.info/scans/en/m10/82.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b256f91a-e797-41d7-82a6-3dcd691bbeed.jpg?1561992567
 value=4.030
 rarity=C
 type=Creature

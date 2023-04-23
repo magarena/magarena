@@ -1,5 +1,5 @@
 name=Reverence
-image=https://magiccards.info/scans/en/sok/26.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d5e65e1-be52-4023-81cc-ee4948444195.jpg?1562493687
 value=3.659
 rarity=R
 type=Enchantment

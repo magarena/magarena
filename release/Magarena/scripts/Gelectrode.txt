@@ -1,5 +1,5 @@
 name=Gelectrode
-image=https://magiccards.info/scans/en/gp/113.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2ad045c-fb4f-45aa-9559-785285c6be19.jpg?1592713299
 value=4.032
 rarity=U
 type=Creature

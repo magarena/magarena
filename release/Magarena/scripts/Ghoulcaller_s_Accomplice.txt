@@ -1,5 +1,5 @@
 name=Ghoulcaller's Accomplice
-image=https://magiccards.info/scans/en/soi/112.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63b62aaf-cc36-4235-b802-828b2c4d6341.jpg?1600700389
 value=2.500
 rarity=C
 type=Creature

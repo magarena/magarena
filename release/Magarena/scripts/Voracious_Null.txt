@@ -1,5 +1,5 @@
 name=Voracious Null
-image=https://magiccards.info/scans/en/bfz/125.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74364056-f4ee-46d3-834d-a5157ec312b9.jpg?1562922452
 image_updated=2015-11-08
 value=2.500
 rarity=C

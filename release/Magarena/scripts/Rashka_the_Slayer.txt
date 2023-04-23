@@ -1,5 +1,5 @@
 name=Rashka the Slayer
-image=https://magiccards.info/scans/en/hl/115.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddf30363-9db2-44c5-8c13-dbf1aaa8c86b.jpg?1562588257
 value=2.694
 rarity=U
 type=Legendary,Creature

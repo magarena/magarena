@@ -1,5 +1,5 @@
 name=Carnage Gladiator
-image=https://magiccards.info/scans/en/mm3/155.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cb4d0dd-3363-45f0-9081-7b9c8c39d63f.jpg?1593814183
 image_updated=2017-08-08
 value=3.830
 rarity=U

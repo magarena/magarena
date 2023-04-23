@@ -1,5 +1,5 @@
 name=Temple of Malady
-image=https://magiccards.info/scans/en/jou/165.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1d76b74-0d9b-412f-9fd7-af9099bad7c4.jpg?1673486093
 value=3.839
 rarity=R
 type=Land

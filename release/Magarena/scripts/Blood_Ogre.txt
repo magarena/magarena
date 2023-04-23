@@ -1,5 +1,5 @@
 name=Blood Ogre
-image=https://magiccards.info/scans/en/mm2/106.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f249a72-7568-4603-94f4-01a605fc1771.jpg?1592765614
 value=3.700
 rarity=C
 type=Creature

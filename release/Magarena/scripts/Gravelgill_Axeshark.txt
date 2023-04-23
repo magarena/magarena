@@ -1,5 +1,5 @@
 name=Gravelgill Axeshark
-image=https://magiccards.info/scans/en/shm/164.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5efc174a-f710-4602-aace-c2165473f6c2.jpg?1562830735
 value=2.579
 rarity=C
 type=Creature

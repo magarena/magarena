@@ -1,5 +1,5 @@
 name=Languish
-image=https://magiccards.info/scans/en/c16/114.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b53ce1b-9353-42ad-89a0-36e907ba576a.jpg?1600714531
 image_updated=2017-08-17
 value=2.500
 rarity=R

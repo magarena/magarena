@@ -1,5 +1,5 @@
 name=Soul Summons
-image=https://magiccards.info/scans/en/frf/26.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb884ac2-c990-4ab0-8610-e07d93da2f13.jpg?1562831836
 value=2.500
 rarity=C
 type=Sorcery

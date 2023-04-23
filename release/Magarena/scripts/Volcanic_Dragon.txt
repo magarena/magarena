@@ -1,5 +1,5 @@
 name=Volcanic Dragon
-image=https://magiccards.info/scans/en/m19/167.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46419d29-21a1-4753-a2f0-1d0d996ec54e.jpg?1608910463
 image_updated=2018-08-07
 value=3.656
 rarity=U

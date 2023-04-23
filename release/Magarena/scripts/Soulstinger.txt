@@ -1,5 +1,5 @@
 name=Soulstinger
-image=https://magiccards.info/scans/en/akh/108.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/0504be31-eaab-4b3e-8cfb-274e46d3d67a.jpg?1543675404
 value=2.500
 rarity=C
 type=Creature

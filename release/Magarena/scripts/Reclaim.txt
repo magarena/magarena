@@ -1,5 +1,5 @@
 name=Reclaim
-image=https://magiccards.info/scans/en/ori/195.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88f3c600-66f1-4a5e-ba4f-61e9f7f7a1d9.jpg?1562029780
 image_updated=2015-11-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Capsize
-image=https://magiccards.info/scans/en/tp/55.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f36f6545-e4e0-4dc8-acea-e527e43f3e14.jpg?1562432216
 value=4.549
 rarity=C
 type=Instant

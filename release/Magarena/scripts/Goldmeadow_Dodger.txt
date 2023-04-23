@@ -1,5 +1,5 @@
 name=Goldmeadow Dodger
-image=https://magiccards.info/scans/en/lw/16.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5305b5c6-2af6-4b5c-9a57-0a2d2628e2f4.jpg?1562348499
 value=2.671
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Elven Lyre
-image=https://magiccards.info/scans/en/fe/172.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ed92578-7e25-4079-aa29-f269606f149c.jpg?1562868065
 value=1.661
 rarity=R
 type=Artifact

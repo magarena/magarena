@@ -1,5 +1,5 @@
 name=Viashino Bladescout
-image=https://magiccards.info/scans/en/ts/185.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41fce1b3-0961-4672-845f-e1c6ce101c1b.jpg?1562908629
 value=2.793
 rarity=C
 type=Creature

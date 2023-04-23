@@ -1,5 +1,5 @@
 name=Heroes Remembered
-image=https://magiccards.info/scans/en/pc/7.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9902b260-82cf-4b10-a353-321231824a3b.jpg?1562577041
 value=3.620
 rarity=R
 type=Sorcery

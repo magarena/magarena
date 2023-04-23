@@ -1,5 +1,5 @@
 name=Mouth of Ronom
-image=https://magiccards.info/scans/en/cs/148.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d8f7396-23d3-48e2-8686-2b59ccbfc7e5.jpg?1593275662
 value=3.894
 rarity=U
 type=Snow,Land

@@ -1,5 +1,5 @@
 name=Seraph of the Suns
-image=https://magiccards.info/scans/en/akh/28.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85dc4ed8-4674-44a1-8a06-ecce72c85e60.jpg?1543674769
 value=2.500
 rarity=U
 type=Creature

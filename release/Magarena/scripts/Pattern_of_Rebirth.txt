@@ -1,5 +1,5 @@
 name=Pattern of Rebirth
-image=https://magiccards.info/scans/en/ud/115.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0e34219-9fd9-4f11-a244-670fb75ef938.jpg?1547517704
 value=4.305
 rarity=R
 type=Enchantment

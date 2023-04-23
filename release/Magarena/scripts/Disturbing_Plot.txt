@@ -1,5 +1,5 @@
 name=Disturbing Plot
-image=https://magiccards.info/scans/en/shm/64.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7796925-fe69-4019-82ab-7cb75760b045.jpg?1562835077
 value=2.800
 rarity=C
 type=Sorcery

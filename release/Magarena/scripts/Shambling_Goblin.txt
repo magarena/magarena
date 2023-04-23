@@ -1,5 +1,5 @@
 name=Shambling Goblin
-image=https://magiccards.info/scans/en/cn2/148.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3ab1d6c-09a6-4f6a-9549-94b439a46680.jpg?1600701487
 image_updated=2017-08-29
 value=2.500
 rarity=C

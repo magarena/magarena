@@ -1,5 +1,5 @@
 name=Revered Unicorn
-image=https://magiccards.info/scans/en/wl/139.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c642dd2-1a3e-4b08-917e-6e8aed358b72.jpg?1562802059
 value=3.463
 rarity=U
 type=Creature

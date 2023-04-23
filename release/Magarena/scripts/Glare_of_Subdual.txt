@@ -1,5 +1,5 @@
 name=Glare of Subdual
-image=https://magiccards.info/scans/en/ema/202.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1b6e40f-02d6-498f-bb3b-6a9e19ed46f6.jpg?1580015047
 value=4.052
 rarity=R
 type=Enchantment

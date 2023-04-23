@@ -1,5 +1,5 @@
 name=Faceless Butcher
-image=https://magiccards.info/scans/en/tsts/43.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3284411-fefa-4614-9c49-f3d6189f1c4f.jpg?1562785296
 value=4.069
 removal=2
 rarity=C

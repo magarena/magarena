@@ -1,5 +1,5 @@
 name=Marrow Chomper
-image=https://magiccards.info/scans/en/arb/93.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d31a32e7-e709-4524-8752-ad0ec8c77fde.jpg?1562644395
 value=3.024
 rarity=U
 type=Creature

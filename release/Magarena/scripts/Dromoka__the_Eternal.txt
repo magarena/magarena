@@ -1,5 +1,5 @@
 name=Dromoka, the Eternal
-image=https://magiccards.info/scans/en/frf/151.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8db6ab8-cd12-431a-bf18-28464cf03509.jpg?1562621631
 value=2.500
 rarity=R
 type=Legendary,Creature

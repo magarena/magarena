@@ -1,5 +1,5 @@
 name=Psychosis Crawler
-image=https://magiccards.info/scans/en/c16/267.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/783a4620-3054-4f31-b2ac-e3272197c291.jpg?1682210154
 image_updated=2017-08-17
 value=3.792
 rarity=R

@@ -1,5 +1,5 @@
 name=Seraph of Dawn
-image=https://magiccards.info/scans/en/avr/35.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64bf33ea-2d2d-476d-ab1d-fba204fd034b.jpg?1608908984
 value=3.878
 rarity=C
 type=Creature

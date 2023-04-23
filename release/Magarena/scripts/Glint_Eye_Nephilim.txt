@@ -1,5 +1,5 @@
 name=Glint-Eye Nephilim
-image=https://magiccards.info/scans/en/c16/201.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4f00d2b-d616-455a-bf9b-5bd82b690121.jpg?1673305536
 image_updated=2017-08-17
 value=3.782
 rarity=R

@@ -1,5 +1,5 @@
 name=Sanguine Glorifier
-image=https://magiccards.info/scans/en/rix/20.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12993e53-8790-4d6f-9da1-a259f67aa5bf.jpg?1555039777
 value=2.500
 rarity=C
 type=Creature

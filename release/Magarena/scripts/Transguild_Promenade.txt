@@ -1,5 +1,5 @@
 name=Transguild Promenade
-image=https://magiccards.info/scans/en/c16/334.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0baaa39-7fce-4feb-9118-b1d6bc24f548.jpg?1608918152
 image_updated=2017-08-17
 value=3.350
 rarity=C

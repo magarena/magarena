@@ -1,5 +1,5 @@
 name=Ovinize
-image=https://magiccards.info/scans/en/pc/57.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a985cfb0-6bae-4b1c-902e-d9d7a1aeec61.jpg?1562578932
 value=4.148
 rarity=U
 type=Instant

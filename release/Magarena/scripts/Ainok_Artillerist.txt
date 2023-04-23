@@ -1,5 +1,5 @@
 name=Ainok Artillerist
-image=https://magiccards.info/scans/en/dtk/171.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a4c8964-06e4-4a24-9a7e-9cac0fb8518e.jpg?1562784890
 value=2.500
 rarity=C
 type=Creature

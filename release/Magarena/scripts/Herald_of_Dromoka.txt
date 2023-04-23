@@ -1,5 +1,5 @@
 name=Herald of Dromoka
-image=https://magiccards.info/scans/en/dtk/22.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8987b2af-66d6-4271-a139-37e544cdec62.jpg?1562789509
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lux Cannon
-image=https://magiccards.info/scans/en/som/173.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a13b7fee-100b-444e-9f13-45b36fd10295.jpg?1599709465
 value=3.858
 rarity=M
 type=Artifact

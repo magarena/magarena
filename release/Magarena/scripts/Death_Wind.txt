@@ -1,5 +1,5 @@
 name=Death Wind
-image=https://magiccards.info/scans/en/cn2/131.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94f60752-783e-4bec-b18e-ba7f87e36521.jpg?1576382608
 image_updated=2017-08-29
 value=2.806
 removal=2

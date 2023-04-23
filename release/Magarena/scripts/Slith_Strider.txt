@@ -1,5 +1,5 @@
 name=Slith Strider
-image=https://magiccards.info/scans/en/mi/50.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce9ae86a-3a1c-44bc-83bd-ab9422133548.jpg?1581708278
 image_updated=2017-01-08
 value=3.529
 rarity=U

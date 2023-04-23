@@ -1,5 +1,5 @@
 name=Phantom Centaur
-image=https://magiccards.info/scans/en/ju/127.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c421c2f1-2137-41bd-9a89-74d8a76fb5c5.jpg?1562631881
 value=4.226
 rarity=U
 type=Creature

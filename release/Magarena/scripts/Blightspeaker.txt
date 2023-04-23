@@ -1,5 +1,5 @@
 name=Blightspeaker
-image=https://magiccards.info/scans/en/mma/73.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17ab3455-f464-41b0-ac63-d40d27abbfb1.jpg?1619395094
 value=3.824
 rarity=C
 type=Creature

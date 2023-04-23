@@ -1,5 +1,5 @@
 name=Stonybrook Schoolmaster
-image=https://magiccards.info/scans/en/mt/25.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69fa2293-f398-4ad8-895e-c739ddea56d0.jpg?1562879054
 value=3.518
 rarity=C
 type=Creature

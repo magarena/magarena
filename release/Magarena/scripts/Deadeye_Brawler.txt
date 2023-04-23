@@ -1,5 +1,5 @@
 name=Deadeye Brawler
-image=https://magiccards.info/scans/en/rix/155.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acb1ab66-f2ce-4094-b2dd-1fc63d78eea2.jpg?1555040801
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Devouring Swarm
-image=https://magiccards.info/scans/en/m12/91.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/735c2c79-9b4f-4f86-9dec-0749237fe9ce.jpg?1562647340
 value=2.750
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mark of Mutiny
-image=https://magiccards.info/scans/en/ima/139.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8882153-ad51-4bef-91bd-275a46688320.jpg?1562852519
 image_updated=2017-04-12
 value=3.150
 removal=5

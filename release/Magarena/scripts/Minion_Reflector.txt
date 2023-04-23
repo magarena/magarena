@@ -1,5 +1,5 @@
 name=Minion Reflector
-image=https://magiccards.info/scans/en/ala/211.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d2a48f9-4f14-4d19-b3dc-3bf3fafac32d.jpg?1562704408
 value=2.966
 rarity=R
 type=Artifact

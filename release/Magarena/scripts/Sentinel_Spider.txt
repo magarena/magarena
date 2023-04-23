@@ -1,5 +1,5 @@
 name=Sentinel Spider
-image=https://magiccards.info/scans/en/ema/185.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01e7af76-e505-49ca-a91e-8167027560ff.jpg?1608910895
 value=3.831
 rarity=C
 type=Creature

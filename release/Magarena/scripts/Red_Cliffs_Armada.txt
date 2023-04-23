@@ -1,5 +1,5 @@
 name=Red Cliffs Armada
-image=https://magiccards.info/scans/en/p3k/51.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0391b4f-e819-409a-9e81-1bff932808e7.jpg?1562870490
 value=2.452
 rarity=U
 type=Creature

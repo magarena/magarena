@@ -1,5 +1,5 @@
 name=Necrogen Censer
-image=https://magiccards.info/scans/en/som/184.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f707119-ede9-4697-b723-d6cea96e6f2b.jpg?1562817456
 value=2.957
 rarity=C
 type=Artifact

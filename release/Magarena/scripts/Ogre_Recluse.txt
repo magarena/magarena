@@ -1,5 +1,5 @@
 name=Ogre Recluse
-image=https://magiccards.info/scans/en/bok/113.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa425203-71fc-4d19-8014-871d16b11bfd.jpg?1593860756
 value=1.443
 rarity=U
 type=Creature

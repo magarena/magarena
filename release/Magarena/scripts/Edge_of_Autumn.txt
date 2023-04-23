@@ -1,5 +1,5 @@
 name=Edge of Autumn
-image=https://magiccards.info/scans/en/fut/144.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c72229c-f3da-4e35-af79-14452efe581b.jpg?1619397925
 value=3.078
 rarity=C
 type=Sorcery

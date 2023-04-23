@@ -1,5 +1,5 @@
 name=Screeching Silcaw
-image=https://magiccards.info/scans/en/som/42.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1767355d-82a2-495e-ae95-d91984a9c62a.jpg?1562814995
 value=3.196
 rarity=C
 type=Creature

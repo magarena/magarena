@@ -1,5 +1,5 @@
 name=Incinerate
-image=https://magiccards.info/scans/en/m12/146.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f23dff46-e040-4cba-890a-97c2899701f2.jpg?1562378497
 value=4.267
 removal=3
 rarity=C

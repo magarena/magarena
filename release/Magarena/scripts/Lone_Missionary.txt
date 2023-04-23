@@ -1,5 +1,5 @@
 name=Lone Missionary
-image=https://magiccards.info/scans/en/mm3/14.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d31d5b6-0973-43d2-aae0-a3f3e7a61800.jpg?1593812858
 image_updated=2017-08-08
 value=4.000
 rarity=C

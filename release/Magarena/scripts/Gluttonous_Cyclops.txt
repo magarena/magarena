@@ -1,5 +1,5 @@
 name=Gluttonous Cyclops
-image=https://magiccards.info/scans/en/jou/99.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e583f6be-3d78-4085-9059-c3c989a4977f.jpg?1593095999
 value=2.205
 rarity=C
 type=Creature

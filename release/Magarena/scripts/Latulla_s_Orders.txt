@@ -1,5 +1,5 @@
 name=Latulla's Orders
-image=https://magiccards.info/scans/en/pr/96.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a56cd728-5c3c-4fd6-bb01-0bf0875508c7.jpg?1562925895
 value=3.029
 rarity=C
 type=Enchantment

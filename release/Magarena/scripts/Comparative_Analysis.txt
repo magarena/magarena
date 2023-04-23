@@ -1,5 +1,5 @@
 name=Comparative Analysis
-image=https://magiccards.info/scans/en/ogw/51.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd83129b-7e8c-4cc5-a7b3-e0ae221d7ad4.jpg?1562939549
 image_updated=2016-02-29
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Hammerheim
-image=https://magiccards.info/scans/en/lg/247.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/773acde9-504c-4065-95e0-f96428f05a7d.jpg?1562920071
 value=4.219
 rarity=U
 type=Legendary,Land

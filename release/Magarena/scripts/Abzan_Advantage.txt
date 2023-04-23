@@ -1,5 +1,5 @@
 name=Abzan Advantage
-image=https://magiccards.info/scans/en/frf/2.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3ffd46f5-afd1-4130-b019-d8822e61fdfa.jpg?1562824524
 value=2.500
 rarity=C
 type=Instant

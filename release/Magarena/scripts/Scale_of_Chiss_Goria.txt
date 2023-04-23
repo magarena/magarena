@@ -1,5 +1,5 @@
 name=Scale of Chiss-Goria
-image=https://magiccards.info/scans/en/mi/236.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/133b367c-b1a1-46f7-a539-a33ee655affb.jpg?1562136566
 value=2.250
 rarity=C
 type=Artifact

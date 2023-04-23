@@ -1,5 +1,5 @@
 name=Kookus
-image=https://magiccards.info/scans/en/vi/86.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8fb90922-99d2-4b36-9039-bb806fd01756.jpg?1562278151
 value=3.185
 rarity=R
 type=Creature

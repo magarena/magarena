@@ -1,5 +1,5 @@
 name=Izzet Chronarch
-image=https://magiccards.info/scans/en/c17/175.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2f8fe93-8d20-41d4-8205-597a9c9b8bbe.jpg?1562624723
 image_updated=2017-10-03
 value=3.433
 rarity=C

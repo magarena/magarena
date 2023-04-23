@@ -1,5 +1,5 @@
 name=Feral Ridgewolf
-image=https://magiccards.info/scans/en/isd/142.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78c66cc0-cb0f-4daf-8141-0923ad46a834.jpg?1562832487
 value=2.947
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Leaf Gilder
-image=https://magiccards.info/scans/en/ori/184.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58b3bd44-3b01-4507-b9be-ab94601ea736.jpg?1601079730
 image_updated=2015-11-05
 value=2.500
 rarity=C

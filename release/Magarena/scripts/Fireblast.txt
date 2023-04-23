@@ -1,5 +1,5 @@
 name=Fireblast
-image=https://magiccards.info/scans/en/ddajvc/55.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51e839d8-2c62-46df-a6ca-3964f43b7e54.jpg?1611933944
 value=4.443
 rarity=C
 type=Instant

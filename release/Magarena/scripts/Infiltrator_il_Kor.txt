@@ -1,5 +1,5 @@
 name=Infiltrator il-Kor
-image=https://magiccards.info/scans/en/fut/37.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3ab190b-c96f-4b00-8e97-33a11bb2ed08.jpg?1619394279
 value=3.364
 rarity=C
 type=Creature

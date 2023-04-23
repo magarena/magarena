@@ -1,5 +1,5 @@
 name=Wolf Pack
-image=https://magiccards.info/scans/en/p3k/158.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33018e52-1de5-4185-bceb-882163cce577.jpg?1562868071
 value=3.909
 rarity=R
 type=Creature

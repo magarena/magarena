@@ -1,5 +1,5 @@
 name=Battlefield Medic
-image=https://magiccards.info/scans/en/on/9.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c444503-42a8-4952-819b-bbca89b06abc.jpg?1562931867
 value=3.129
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Cursed Flesh
-image=https://magiccards.info/scans/en/in/98.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88179748-5491-489d-a074-7885bb47e099.jpg?1562430326
 value=2.971
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Leviathan
-image=https://magiccards.info/scans/en/tsts/23.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc482c8f-5645-4cf9-8e90-090c77f9dc64.jpg?1562783165
 value=2.314
 rarity=R
 type=Creature

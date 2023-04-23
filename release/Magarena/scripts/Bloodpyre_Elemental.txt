@@ -1,5 +1,5 @@
 name=Bloodpyre Elemental
-image=https://magiccards.info/scans/en/ala/93.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89e39677-5e04-45af-8f4c-1d4b6e737213.jpg?1562706346
 value=2.032
 rarity=C
 type=Creature

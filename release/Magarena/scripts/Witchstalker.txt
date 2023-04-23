@@ -1,5 +1,5 @@
 name=Witchstalker
-image=https://magiccards.info/scans/en/m14/202.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a5ce47d-ea4f-4e15-adb6-5bb66981ed24.jpg?1562829658
 value=3.690
 rarity=R
 type=Creature

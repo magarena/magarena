@@ -1,5 +1,5 @@
 name=Skywing Aven
-image=https://magiccards.info/scans/en/tr/47.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/712408f9-4bc2-447d-8efe-59c5d53ae364.jpg?1547516501
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shield Sphere
-image=https://magiccards.info/scans/en/ai/172.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a76a97e-a857-4593-ae7c-e393d8a868ac.jpg?1559592340
 value=4.380
 rarity=U
 type=Artifact,Creature

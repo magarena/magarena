@@ -1,5 +1,5 @@
 name=Leonin Snarecaster
-image=https://magiccards.info/scans/en/ths/23.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9745cc70-d6a0-43c5-b8d7-a930d95e94c7.jpg?1592754600
 image_updated=2016-12-21
 value=2.000
 rarity=C

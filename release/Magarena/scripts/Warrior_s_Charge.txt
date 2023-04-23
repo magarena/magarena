@@ -1,5 +1,5 @@
 name=Warrior's Charge
-image=https://magiccards.info/scans/en/po/201.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8668e4af-ae89-4fab-8015-8dc643c6cd36.jpg?1546740562
 value=2.136
 rarity=C
 type=Sorcery

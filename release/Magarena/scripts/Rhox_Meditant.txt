@@ -1,5 +1,5 @@
 name=Rhox Meditant
-image=https://magiccards.info/scans/en/cfx/16.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b74f4f8d-2191-4743-aac6-cdcb4a68379c.jpg?1562803325
 value=2.934
 rarity=C
 type=Creature

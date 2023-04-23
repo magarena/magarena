@@ -1,5 +1,5 @@
 name=Beneath the Sands
-image=https://magiccards.info/scans/en/hou/111.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e92c0cf0-df4a-4e50-8396-53713f925b53.jpg?1562818700
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Wrack with Madness
-image=https://magiccards.info/scans/en/dka/107.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f27ee20-b5c5-4867-b832-9cdade0eda03.jpg?1562913565
 value=2.713
 removal=3
 rarity=C

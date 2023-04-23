@@ -1,5 +1,5 @@
 name=Muzzle
-image=https://magiccards.info/scans/en/mm/30.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b3048ec-bcbf-4a69-b56f-83bbe82b68e5.jpg?1562381847
 value=3.268
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Misstep
-image=https://magiccards.info/scans/en/mm/88.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e23f5a1-bf3e-41e0-875f-fc2f8508e69f.jpg?1562381855
 value=3.344
 rarity=C
 type=Sorcery

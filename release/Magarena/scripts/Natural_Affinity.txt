@@ -1,5 +1,5 @@
 name=Natural Affinity
-image=https://magiccards.info/scans/en/9e/256.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/4847f8e8-9979-427e-999a-26711e542f82.jpg?1562734655
 value=3.654
 rarity=R
 type=Instant

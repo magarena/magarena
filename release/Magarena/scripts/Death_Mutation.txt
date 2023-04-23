@@ -1,5 +1,5 @@
 name=Death Mutation
-image=https://magiccards.info/scans/en/cmd/192.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01f33e98-e024-422f-9f18-a938ba1f76af.jpg?1592714007
 value=3.029
 rarity=U
 type=Sorcery

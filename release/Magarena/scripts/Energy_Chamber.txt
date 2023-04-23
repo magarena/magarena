@@ -1,5 +1,5 @@
 name=Energy Chamber
-image=https://magiccards.info/scans/en/5dn/117.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4e2f775-75dd-4c18-a378-b503b29a6388.jpg?1562270486
 image_updated=2016-12-02
 value=4.102
 rarity=U

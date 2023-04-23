@@ -1,5 +1,5 @@
 name=Ayumi, the Last Visitor
-image=https://magiccards.info/scans/en/sok/122.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f037520e-2a44-4650-b7cb-c81d93d1418d.jpg?1562496599
 value=3.678
 rarity=R
 type=Legendary,Creature

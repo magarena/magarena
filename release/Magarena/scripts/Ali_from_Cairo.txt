@@ -1,5 +1,5 @@
 name=Ali from Cairo
-image=https://magiccards.info/scans/en/an/44.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2719516a-7a47-413e-b1a3-15543d229e08.jpg?1562904277
 value=4.150
 rarity=R
 type=Creature

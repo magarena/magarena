@@ -1,5 +1,5 @@
 name=Vile Rebirth
-image=https://magiccards.info/scans/en/m13/115.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fd46f2b-1458-44b1-9c65-960b261b81a5.jpg?1562828327
 value=3.569
 rarity=C
 type=Instant

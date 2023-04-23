@@ -1,5 +1,5 @@
 name=One-Eyed Scarecrow
-image=https://magiccards.info/scans/en/isd/230.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d495d85-6458-44d5-b3b4-5e09569057e3.jpg?1562830897
 value=2.831
 removal=1
 rarity=C

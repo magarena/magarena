@@ -1,5 +1,5 @@
 name=Fleeting Image
-image=https://magiccards.info/scans/en/9e/78.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/564b8cc4-3392-4307-a5e4-5f04e52da3ab.jpg?1562735489
 value=3.139
 rarity=R
 type=Creature

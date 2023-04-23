@@ -1,5 +1,5 @@
 name=Kami of False Hope
-image=https://magiccards.info/scans/en/bok/10.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44e4f5e6-935e-429f-89b4-4571376f442e.jpg?1562876719
 value=3.934
 rarity=C
 type=Creature

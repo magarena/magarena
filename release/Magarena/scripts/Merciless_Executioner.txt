@@ -1,5 +1,5 @@
 name=Merciless Executioner
-image=https://magiccards.info/scans/en/frf/76.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c588d7a-e352-40a0-9fc7-55c7b4bfd013.jpg?1562826841
 value=2.500
 rarity=U
 type=Creature

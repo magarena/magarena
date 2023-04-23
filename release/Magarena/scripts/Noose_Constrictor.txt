@@ -1,5 +1,5 @@
 name=Noose Constrictor
-image=https://magiccards.info/scans/en/emn/164.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/307329cd-a69b-4acf-bcba-83d8306fe7ee.jpg?1576384830
 image_updated=2016-09-05
 value=2.500
 rarity=U

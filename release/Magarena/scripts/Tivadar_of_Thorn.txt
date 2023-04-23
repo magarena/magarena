@@ -1,5 +1,5 @@
 name=Tivadar of Thorn
-image=https://magiccards.info/scans/en/ts/44.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f34d3a74-496e-462d-afa6-370dc2b8347d.jpg?1562946389
 value=3.563
 rarity=R
 type=Legendary,Creature

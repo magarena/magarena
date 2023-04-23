@@ -1,5 +1,5 @@
 name=Chilling Apparition
-image=https://magiccards.info/scans/en/pr/59.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c20edb71-aa1d-437b-bcfb-953efbe45150.jpg?1562931276
 value=3.653
 rarity=U
 type=Creature

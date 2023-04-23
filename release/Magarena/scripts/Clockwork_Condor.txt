@@ -1,5 +1,5 @@
 name=Clockwork Condor
-image=https://magiccards.info/scans/en/mi/154.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84f68c98-7260-43e0-aad4-f3523dff1d8f.jpg?1562270243
 image_updated=2016-11-28
 value=1.636
 rarity=C

@@ -1,5 +1,5 @@
 name=Student of Warfare
-image=https://magiccards.info/scans/en/roe/47.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f4df9be-324b-458a-9379-ab4aa437a6d2.jpg?1562706802
 value=4.414
 rarity=R
 type=Creature

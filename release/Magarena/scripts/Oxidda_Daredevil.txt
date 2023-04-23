@@ -1,5 +1,5 @@
 name=Oxidda Daredevil
-image=https://magiccards.info/scans/en/som/100.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b0bde7b-dc2d-45d2-b124-69b4b51ef3d9.jpg?1562817248
 value=1.829
 rarity=C
 type=Creature

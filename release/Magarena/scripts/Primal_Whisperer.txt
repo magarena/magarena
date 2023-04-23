@@ -1,5 +1,5 @@
 name=Primal Whisperer
-image=https://magiccards.info/scans/en/le/135.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c777432f-7965-4ad8-8d53-93919ae767d4.jpg?1562935034
 value=2.500
 rarity=R
 type=Creature

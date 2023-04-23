@@ -1,5 +1,5 @@
 name=Gilt-Leaf Archdruid
-image=https://magiccards.info/scans/en/mt/124.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a913f9b3-abbd-424b-8dea-061e15364fb0.jpg?1562880598
 value=3.758
 rarity=R
 type=Creature

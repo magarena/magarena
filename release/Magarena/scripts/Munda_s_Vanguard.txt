@@ -1,5 +1,5 @@
 name=Munda's Vanguard
-image=https://magiccards.info/scans/en/ogw/29.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dfb21b1-95a5-446d-afc6-aede81ee5a0d.jpg?1562897873
 image_updated=2016-02-29
 value=2.500
 rarity=R

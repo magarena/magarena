@@ -1,5 +1,5 @@
 name=Subterranean Shambler
-image=https://magiccards.info/scans/en/ts/178.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9429ec0-ff23-494d-ab1c-b88f3a0dee1b.jpg?1618940463
 value=2.106
 removal=1
 rarity=C

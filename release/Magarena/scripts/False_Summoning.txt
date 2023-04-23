@@ -1,5 +1,5 @@
 name=False Summoning
-image=https://magiccards.info/scans/en/po2/40.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4b4aff4-c04b-4801-920a-b3ad1998b2cd.jpg?1562937626
 value=3.688
 rarity=C
 type=Instant

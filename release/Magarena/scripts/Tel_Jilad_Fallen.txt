@@ -1,5 +1,5 @@
 name=Tel-Jilad Fallen
-image=https://magiccards.info/scans/en/som/130.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/643891b6-23d0-4734-81e0-b315d2d58f50.jpg?1562818366
 value=3.009
 rarity=C
 type=Creature

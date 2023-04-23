@@ -1,5 +1,5 @@
 name=Hero's Resolve
-image=https://magiccards.info/scans/en/6e/24.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71a0f233-895e-4072-8339-c9448110d3e8.jpg?1562818984
 image_updated=2016-12-10
 value=3.410
 rarity=C

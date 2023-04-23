@@ -1,5 +1,5 @@
 name=Tidespout Tyrant
-image=https://magiccards.info/scans/en/di/34.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a7c2716-35ab-411d-8456-267e09833358.jpg?1562926191
 value=4.361
 rarity=R
 type=Creature

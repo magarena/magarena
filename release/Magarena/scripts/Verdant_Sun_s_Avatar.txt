@@ -1,5 +1,5 @@
 name=Verdant Sun's Avatar
-image=https://magiccards.info/scans/en/xln/213.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8fd0e28-2bb4-4529-bbfb-1d70a419a91b.jpg?1625977356
 value=2.500
 rarity=R
 type=Creature

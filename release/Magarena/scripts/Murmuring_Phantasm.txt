@@ -1,5 +1,5 @@
 name=Murmuring Phantasm
-image=https://magiccards.info/scans/en/dgm/15.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87c1aaff-ab26-437e-a88a-494683aec831.jpg?1600726117
 value=2.756
 rarity=C
 type=Creature

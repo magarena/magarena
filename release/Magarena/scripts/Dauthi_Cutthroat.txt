@@ -1,5 +1,5 @@
 name=Dauthi Cutthroat
-image=https://magiccards.info/scans/en/ex/57.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/127b8994-fff8-4500-8ab4-244eeb3ed110.jpg?1562087338
 value=3.371
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ghost-Lit Nourisher
-image=https://magiccards.info/scans/en/sok/131.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4becdbb-9089-4c54-a681-6510d90cc99e.jpg?1562496621
 value=2.241
 rarity=U
 type=Creature

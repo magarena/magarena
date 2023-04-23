@@ -1,5 +1,5 @@
 name=Lantern-Lit Graveyard
-image=https://magiccards.info/scans/en/chk/278.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/484a7675-787f-49be-9b44-edd0a7d73812.jpg?1562759839
 value=2.235
 rarity=U
 type=Land

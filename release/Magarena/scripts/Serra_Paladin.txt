@@ -1,5 +1,5 @@
 name=Serra Paladin
-image=https://magiccards.info/scans/en/5e/337.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a48d282d-a777-4587-ab23-c30a4dba0494.jpg?1562592817
 value=2.314
 rarity=U
 type=Creature

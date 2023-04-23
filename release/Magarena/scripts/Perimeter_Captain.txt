@@ -1,5 +1,5 @@
 name=Perimeter Captain
-image=https://magiccards.info/scans/en/wwk/16.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e532309-5cf9-4d12-b673-f9baad30b800.jpg?1562286827
 value=3.863
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Skysnare Spider
-image=https://magiccards.info/scans/en/ori/197.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1743227-94fd-44c0-884d-fa269bcfd67d.jpg?1562049264
 image_updated=2015-11-05
 value=2.500
 rarity=U

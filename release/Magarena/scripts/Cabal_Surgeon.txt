@@ -1,5 +1,5 @@
 name=Cabal Surgeon
-image=https://magiccards.info/scans/en/tr/52.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29ce55a2-d838-48ab-862e-d419b0cda3c9.jpg?1562629020
 value=1.783
 rarity=C
 type=Creature

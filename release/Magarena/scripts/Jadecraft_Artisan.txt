@@ -1,5 +1,5 @@
 name=Jadecraft Artisan
-image=https://magiccards.info/scans/en/rix/135.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b745934-c1fe-49f5-bda4-b0eafa1408e1.jpg?1555040670
 value=2.500
 rarity=C
 type=Creature

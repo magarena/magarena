@@ -1,5 +1,5 @@
 name=Shatterstorm
-image=https://magiccards.info/scans/en/10e/229.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7a1aa93-26d1-40b0-82d8-414f56a36337.jpg?1562557964
 value=4.339
 removal=2
 rarity=U

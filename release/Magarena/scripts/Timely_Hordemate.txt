@@ -1,5 +1,5 @@
 name=Timely Hordemate
-image=https://magiccards.info/scans/en/ktk/27.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcb3c08e-b591-421a-898a-533021cbabd2.jpg?1562794596
 value=3.500
 rarity=U
 type=Creature

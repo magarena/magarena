@@ -1,5 +1,5 @@
 name=Keen-Eyed Archers
-image=https://magiccards.info/scans/en/po/181.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/594de429-58ed-4a0c-9631-464cde7a48c3.jpg?1562446646
 value=3.048
 rarity=C
 type=Creature

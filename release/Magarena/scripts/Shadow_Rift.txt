@@ -1,5 +1,5 @@
 name=Shadow Rift
-image=https://magiccards.info/scans/en/tp/86.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06f6d0bd-19b9-45d0-8768-691a6a593d81.jpg?1562428169
 value=4.458
 rarity=C
 type=Instant

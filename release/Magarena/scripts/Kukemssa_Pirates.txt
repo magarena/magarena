@@ -1,5 +1,5 @@
 name=Kukemssa Pirates
-image=https://magiccards.info/scans/en/mr/71.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d10b5ce7-16c9-48f3-a1da-8a91092d053a.jpg?1562721923
 value=3.312
 rarity=R
 type=Creature

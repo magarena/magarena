@@ -1,5 +1,5 @@
 name=Warmonger Hellkite
-image=https://magiccards.info/scans/en/c14/41.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbedbf64-cd51-4f40-9735-272bd86fdf84.jpg?1674142175
 value=2.500
 rarity=R
 type=Creature

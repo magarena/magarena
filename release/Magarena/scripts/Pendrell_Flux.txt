@@ -1,5 +1,5 @@
 name=Pendrell Flux
-image=https://magiccards.info/scans/en/us/87.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34847e03-c529-415e-9d49-fd4647ca8892.jpg?1562906066
 value=4.122
 rarity=C
 type=Enchantment

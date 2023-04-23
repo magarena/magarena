@@ -1,5 +1,5 @@
 name=Island
-image=https://magiccards.info/scans/en/bfz/259b.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/988bfa94-0c83-4057-a0c7-0ad885b8919c.jpg?1682205945
 image_updated=2016-02-29
 value=3.500
 rarity=B

@@ -1,5 +1,5 @@
 name=Death Grasp
-image=https://magiccards.info/scans/en/ap/95.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cd6f616-2b22-42ed-818d-02d4a474ca8f.jpg?1562706282
 image_updated=2016-02-29
 value=4.000
 removal=4

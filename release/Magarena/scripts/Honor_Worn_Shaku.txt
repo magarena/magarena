@@ -1,5 +1,5 @@
 name=Honor-Worn Shaku
-image=https://magiccards.info/scans/en/chk/254.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c308e5c-40f1-4100-8f7b-8529bbbfcfb4.jpg?1673305825
 value=2.108
 rarity=U
 type=Artifact

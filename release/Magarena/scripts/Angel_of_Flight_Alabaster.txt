@@ -1,5 +1,5 @@
 name=Angel of Flight Alabaster
-image=https://magiccards.info/scans/en/isd/2.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3ff8fbcd-5db9-4cde-9f56-243b1f4924f8.jpg?1649691387
 value=3.799
 rarity=R
 type=Creature

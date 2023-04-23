@@ -1,5 +1,5 @@
 name=Defiant Stand
-image=https://magiccards.info/scans/en/po/174.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cc37fd2-5c34-4522-8113-e6dd2181550b.jpg?1562447349
 value=2.217
 rarity=U
 type=Instant

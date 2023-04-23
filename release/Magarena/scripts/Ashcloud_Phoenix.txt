@@ -1,5 +1,5 @@
 name=Ashcloud Phoenix
-image=https://magiccards.info/scans/en/ktk/99.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a53752c-5689-4939-9a8b-bf59d88d7c6b.jpg?1562786146
 value=3.500
 rarity=M
 type=Creature

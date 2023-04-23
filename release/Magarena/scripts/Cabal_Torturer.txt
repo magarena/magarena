@@ -1,5 +1,5 @@
 name=Cabal Torturer
-image=https://magiccards.info/scans/en/tr/53.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebcf8dd7-f45c-4ac2-9507-fa175fe89887.jpg?1562632540
 value=2.015
 rarity=C
 type=Creature

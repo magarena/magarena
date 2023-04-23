@@ -1,5 +1,5 @@
 name=Storm Herd
-image=https://magiccards.info/scans/en/cmd/34.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2345331c-a14f-4b4b-a9a4-88c5beb48242.jpg?1631234196
 value=3.522
 rarity=R
 type=Sorcery

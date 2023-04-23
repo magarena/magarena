@@ -1,5 +1,5 @@
 name=Righteous Authority
-image=https://magiccards.info/scans/en/rtr/189.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8fd3341d-38e4-4dc0-9e95-34cb1f796e7e.jpg?1592711147
 value=3.379
 rarity=R
 type=Enchantment

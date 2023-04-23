@@ -1,5 +1,5 @@
 name=Undead Executioner
-image=https://magiccards.info/scans/en/avr/123.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d330058-16af-4486-aa89-b6be759e35d4.jpg?1592708991
 value=2.328
 rarity=C
 type=Creature

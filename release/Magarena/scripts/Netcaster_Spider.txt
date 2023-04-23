@@ -1,5 +1,5 @@
 name=Netcaster Spider
-image=https://magiccards.info/scans/en/ima/178.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07c95074-32c8-426e-b615-8ad5427c6c1c.jpg?1592517303
 image_updated=2017-04-12
 value=3.250
 rarity=C

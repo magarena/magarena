@@ -1,5 +1,5 @@
 name=Woodland Sleuth
-image=https://magiccards.info/scans/en/isd/210.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/3088a924-58c6-4ab7-baf0-842d6688fcec.jpg?1562828167
 value=2.531
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vial of Dragonfire
-image=https://magiccards.info/scans/en/dtk/247.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57db6ba8-f6c1-41be-8bee-93e573d052d7.jpg?1592517762
 value=2.500
 rarity=C
 type=Artifact

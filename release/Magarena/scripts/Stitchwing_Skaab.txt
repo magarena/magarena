@@ -1,5 +1,5 @@
 name=Stitchwing Skaab
-image=https://magiccards.info/scans/en/soi/90.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f84bb1ce-a8a0-4a29-9129-b1d7041fd01a.jpg?1576384264
 value=2.500
 rarity=U
 type=Creature

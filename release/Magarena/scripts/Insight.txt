@@ -1,5 +1,5 @@
 name=Insight
-image=https://magiccards.info/scans/en/6e/75.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b44a4bbf-2afd-48c5-b6b0-73c32bc3561b.jpg?1562821834
 value=3.297
 rarity=U
 type=Enchantment

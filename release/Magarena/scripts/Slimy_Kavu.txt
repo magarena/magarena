@@ -1,5 +1,5 @@
 name=Slimy Kavu
-image=https://magiccards.info/scans/en/in/170.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e82044d-88cd-4ee4-8ec9-e71a0a85ed46.jpg?1562923768
 value=2.636
 rarity=C
 type=Creature

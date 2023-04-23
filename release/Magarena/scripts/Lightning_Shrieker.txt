@@ -1,5 +1,5 @@
 name=Lightning Shrieker
-image=https://magiccards.info/scans/en/frf/106.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/017f94bc-f7f0-4eed-9ca0-392872405f32.jpg?1601078324
 value=2.500
 rarity=C
 type=Creature

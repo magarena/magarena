@@ -1,5 +1,5 @@
 name=Surrakar Spellblade
-image=https://magiccards.info/scans/en/mm2/60.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0c26b28-b542-41d4-bfe0-222400653ae9.jpg?1562265679
 value=2.500
 rarity=R
 type=Creature

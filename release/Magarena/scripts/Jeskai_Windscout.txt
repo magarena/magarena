@@ -1,5 +1,5 @@
 name=Jeskai Windscout
-image=https://magiccards.info/scans/en/ktk/44.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66356e38-38e1-4b09-80c2-be26007ff99c.jpg?1562787785
 value=3.167
 rarity=C
 type=Creature

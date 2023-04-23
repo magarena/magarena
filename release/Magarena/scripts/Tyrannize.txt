@@ -1,5 +1,5 @@
 name=Tyrannize
-image=https://magiccards.info/scans/en/shm/201.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69b7428b-8fff-4839-8b59-b268af0699c2.jpg?1562831222
 value=3.074
 rarity=R
 type=Sorcery

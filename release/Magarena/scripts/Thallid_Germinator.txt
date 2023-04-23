@@ -1,5 +1,5 @@
 name=Thallid Germinator
-image=https://magiccards.info/scans/en/mma/168.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/799e835b-98ad-41b2-a8a9-a7c661efd86f.jpg?1619398826
 value=3.462
 rarity=C
 type=Creature

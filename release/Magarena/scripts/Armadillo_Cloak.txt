@@ -1,5 +1,5 @@
 name=Armadillo Cloak
-image=https://magiccards.info/scans/en/ema/195.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa232c65-dbb4-4414-bd95-b3bbd321c653.jpg?1580014998
 value=4.250
 rarity=U
 type=Enchantment

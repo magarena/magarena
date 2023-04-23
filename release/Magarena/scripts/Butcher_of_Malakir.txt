@@ -1,5 +1,5 @@
 name=Butcher of Malakir
-image=https://magiccards.info/scans/en/c14/138.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b23c18f8-a19f-406a-ad60-491087f9d660.jpg?1674141513
 image_updated=2016-02-29
 value=3.414
 rarity=R

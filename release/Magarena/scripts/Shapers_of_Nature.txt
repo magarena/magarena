@@ -1,5 +1,5 @@
 name=Shapers of Nature
-image=https://magiccards.info/scans/en/xln/228.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7aa682fb-f5b6-41c1-9428-6043b0b76744.jpg?1562558548
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Bloodcrazed Neonate
-image=https://magiccards.info/scans/en/isd/131.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68d2452e-309d-44ae-9360-9d6e22a15e2b.jpg?1677073525
 value=3.267
 rarity=C
 type=Creature

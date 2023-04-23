@@ -1,5 +1,5 @@
 name=Breath of Malfegor
-image=https://magiccards.info/scans/en/arb/35.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a12e4d0-8471-46ac-85e4-a2ea5be8bf8f.jpg?1562642287
 value=3.022
 rarity=C
 type=Instant

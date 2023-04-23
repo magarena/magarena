@@ -1,5 +1,5 @@
 name=Silver-Inlaid Dagger
-image=https://magiccards.info/scans/en/isd/233.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8b8162a-68f0-45df-bb25-8fd4487257a4.jpg?1562839962
 value=3.778
 rarity=U
 type=Artifact

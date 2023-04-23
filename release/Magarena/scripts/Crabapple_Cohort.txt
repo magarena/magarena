@@ -1,5 +1,5 @@
 name=Crabapple Cohort
-image=https://magiccards.info/scans/en/shm/109.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c17b102-a25d-4fff-8718-3bdd53092552.jpg?1562832909
 value=2.045
 rarity=C
 type=Creature

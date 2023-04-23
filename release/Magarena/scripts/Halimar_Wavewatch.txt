@@ -1,5 +1,5 @@
 name=Halimar Wavewatch
-image=https://magiccards.info/scans/en/roe/72.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0ff68d2f-6758-45ee-8109-4e8909f49de8.jpg?1562701219
 value=3.262
 rarity=C
 type=Creature

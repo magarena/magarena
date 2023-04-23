@@ -1,5 +1,5 @@
 name=Wall of Souls
-image=https://magiccards.info/scans/en/sh/25.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5b8d9a2-91d7-4172-b778-b5dc3ac28abe.jpg?1562430809
 value=4.255
 rarity=U
 type=Creature

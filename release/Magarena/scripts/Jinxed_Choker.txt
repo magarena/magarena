@@ -1,5 +1,5 @@
 name=Jinxed Choker
-image=https://magiccards.info/scans/en/mi/189.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/987910b0-0419-45ff-bda6-c6683fd00e49.jpg?1562151732
 value=3.596
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Polis Crusher
-image=https://magiccards.info/scans/en/ths/198.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80874006-d057-49b8-981c-1d685ad1474b.jpg?1562820592
 value=3.529
 rarity=R
 type=Creature

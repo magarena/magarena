@@ -1,5 +1,5 @@
 name=Soul Rend
-image=https://magiccards.info/scans/en/mr/42.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fa084e1-05c2-4691-b9fe-3e3c717e5c9d.jpg?1562720249
 value=3.297
 rarity=U
 type=Instant

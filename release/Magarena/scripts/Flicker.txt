@@ -1,5 +1,5 @@
 name=Flicker
-image=https://magiccards.info/scans/en/ud/9.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f55e7ec5-6488-483f-8020-b48e1a951f09.jpg?1562445656
 value=3.943
 rarity=R
 type=Sorcery

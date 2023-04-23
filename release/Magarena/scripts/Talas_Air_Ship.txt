@@ -1,5 +1,5 @@
 name=Talas Air Ship
-image=https://magiccards.info/scans/en/po2/48.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80bc3159-f585-45cd-8578-f3bf2fa9b2d1.jpg?1562925386
 value=2.976
 rarity=C
 type=Creature

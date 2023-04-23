@@ -1,5 +1,5 @@
 name=Lathliss, Dragon Queen
-image=https://magiccards.info/scans/en/m19/149.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/9460e3c6-e745-41d3-8e17-0b92fb126a16.jpg?1601078219
 value=2.500
 rarity=R
 type=Legendary,Creature

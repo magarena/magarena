@@ -1,5 +1,5 @@
 name=Flaring Pain
-image=https://magiccards.info/scans/en/ju/89.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eeb5c96a-1d16-459d-9968-ced9a8f1c520.jpg?1562632546
 value=2.864
 rarity=C
 type=Instant

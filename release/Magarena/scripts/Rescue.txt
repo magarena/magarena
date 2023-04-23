@@ -1,5 +1,5 @@
 name=Rescue
-image=https://magiccards.info/scans/en/dom/63.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08050607-b558-4f99-b716-bbbab54e9b68.jpg?1562730962
 image_updated=2018-08-07
 value=3.959
 rarity=C

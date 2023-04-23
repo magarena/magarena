@@ -1,5 +1,5 @@
 name=Argivian Restoration
-image=https://magiccards.info/scans/en/wl/34.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f14b3a6-5490-4a50-9449-542e23f1d6b1.jpg?1598303751
 image_updated=2016-11-20
 value=4.317
 rarity=U

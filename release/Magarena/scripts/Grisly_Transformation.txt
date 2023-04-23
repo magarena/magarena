@@ -1,5 +1,5 @@
 name=Grisly Transformation
-image=https://magiccards.info/scans/en/bng/74.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eb0ce84-560f-4e39-a0ab-7bd710d541cc.jpg?1593092015
 value=2.568
 rarity=C
 type=Enchantment

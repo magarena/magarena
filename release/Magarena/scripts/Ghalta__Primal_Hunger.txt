@@ -1,5 +1,5 @@
 name=Ghalta, Primal Hunger
-image=https://magiccards.info/scans/en/rix/130.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c342309-aef7-4733-ac1c-ff0b704539a7.jpg?1601079606
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Esper Stormblade
-image=https://magiccards.info/scans/en/arb/132.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e60ac6f0-fdec-4e2c-86c6-02d36c7bbaf5.jpg?1562644772
 value=3.515
 rarity=C
 type=Artifact,Creature

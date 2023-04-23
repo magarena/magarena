@@ -1,5 +1,5 @@
 name=Veteran Swordsmith
-image=https://magiccards.info/scans/en/m10/39.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6ac8dd2-f7af-44b6-841a-f0b6a4961e26.jpg?1562840718
 image_updated=2017-01-11
 value=4.130
 rarity=C

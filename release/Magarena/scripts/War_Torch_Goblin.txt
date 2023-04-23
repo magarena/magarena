@@ -1,5 +1,5 @@
 name=War-Torch Goblin
-image=https://magiccards.info/scans/en/rav/151.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/259469b3-1212-4030-97ae-a84f132798d4.jpg?1598916019
 value=2.717
 rarity=C
 type=Creature

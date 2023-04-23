@@ -1,5 +1,5 @@
 name=Abbey Griffin
-image=https://magiccards.info/scans/en/isd/1.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf87803b-e7c6-4122-add4-72e596167b7e.jpg?1562836433
 value=2.165
 rarity=C
 type=Creature

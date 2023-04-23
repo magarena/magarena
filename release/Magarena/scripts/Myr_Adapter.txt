@@ -1,5 +1,5 @@
 name=Myr Adapter
-image=https://magiccards.info/scans/en/mi/210.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d6ddde9-4427-4a0f-b05c-9cfd886aad2d.jpg?1562135624
 value=2.527
 rarity=C
 type=Artifact,Creature

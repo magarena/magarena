@@ -1,5 +1,5 @@
 name=Manaweft Sliver
-image=https://magiccards.info/scans/en/m14/184.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe45433b-e124-44d7-9463-dada39310148.jpg?1562837768
 value=3.662
 rarity=U
 type=Creature

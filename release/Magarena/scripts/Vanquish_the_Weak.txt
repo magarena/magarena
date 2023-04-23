@@ -1,5 +1,5 @@
 name=Vanquish the Weak
-image=https://magiccards.info/scans/en/xln/127.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/935cb9a2-11ba-45d9-ab38-dea23cecf521.jpg?1682204039
 value=2.500
 rarity=C
 type=Instant

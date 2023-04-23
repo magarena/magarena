@@ -1,5 +1,5 @@
 name=Fissure
-image=https://magiccards.info/scans/en/4e/212.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0478aeca-98e9-41eb-a120-7575fc4e12ab.jpg?1559592337
 value=3.777
 rarity=C
 type=Instant

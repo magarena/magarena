@@ -1,5 +1,5 @@
 name=Mahamoti Djinn
-image=https://magiccards.info/scans/en/ima/64.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/855de173-6bec-457b-828e-28678b7d396e.jpg?1547516401
 image_updated=2017-04-12
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Tainted Strike
-image=https://magiccards.info/scans/en/som/80.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0f82007-99f6-4c6c-8182-ee631c33531f.jpg?1562823401
 value=3.742
 rarity=C
 type=Instant

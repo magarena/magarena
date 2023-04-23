@@ -1,5 +1,5 @@
 name=Defender en-Vec
-image=https://magiccards.info/scans/en/ne/5.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7b224b7-d5f7-4515-beca-523f305ee3b8.jpg?1562632613
 value=2.540
 rarity=C
 type=Creature

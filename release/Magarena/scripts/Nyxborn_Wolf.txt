@@ -1,5 +1,5 @@
 name=Nyxborn Wolf
-image=https://magiccards.info/scans/en/bng/131.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91a78895-5e09-46a5-8a74-a07f0befc4e5.jpg?1593092568
 value=2.633
 rarity=C
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Undergrowth Scavenger
-image=https://magiccards.info/scans/en/m15/204.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f8dc77e-f003-4c25-8394-cda22e3ea039.jpg?1562786819
 value=2.833
 rarity=C
 type=Creature

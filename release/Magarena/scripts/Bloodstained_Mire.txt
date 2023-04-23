@@ -1,5 +1,5 @@
 name=Bloodstained Mire
-image=https://magiccards.info/scans/en/ktk/230.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f430794-0d86-4f6a-97e0-4bbb6716d613.jpg?1571667959
 value=4.333
 rarity=R
 type=Land

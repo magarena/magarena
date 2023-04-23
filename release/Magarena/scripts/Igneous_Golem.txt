@@ -1,5 +1,5 @@
 name=Igneous Golem
-image=https://magiccards.info/scans/en/mr/270.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f44c5e24-98f9-4a4d-9ecc-c862363eb66d.jpg?1587913210
 value=2.226
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Spectral Cloak
-image=https://magiccards.info/scans/en/lg/78.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/7524fd0d-a675-41d6-bc99-bd3ba336893b.jpg?1562859661
 value=2.092
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Nylea's Disciple
-image=https://magiccards.info/scans/en/ths/167.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/365d716a-1435-48ac-b85f-2cceca1056dd.jpg?1562816609
 value=3.472
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Steam Vents
-image=https://magiccards.info/scans/en/rtr/247.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8ebe3cf-7143-453a-b0ef-2f5bdaac3185.jpg?1572894204
 value=4.280
 rarity=R
 type=Land

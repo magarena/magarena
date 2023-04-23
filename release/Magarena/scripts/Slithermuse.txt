@@ -1,5 +1,5 @@
 name=Slithermuse
-image=https://magiccards.info/scans/en/mt/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ec9df4e-2ee7-4c77-91b0-ad6e624340cd.jpg?1562877699
 value=3.419
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Suq'Ata Lancer
-image=https://magiccards.info/scans/en/tsts/69.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a78fd825-1c68-4f6e-9d8d-31ab470f634a.jpg?1562781695
 value=3.909
 rarity=C
 type=Creature

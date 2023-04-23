@@ -1,5 +1,5 @@
 name=Flitterstep Eidolon
-image=https://magiccards.info/scans/en/bng/40.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a79cee0-6023-42bc-a934-69b99fd5fb02.jpg?1593091670
 value=3.056
 rarity=U
 type=Enchantment,Creature

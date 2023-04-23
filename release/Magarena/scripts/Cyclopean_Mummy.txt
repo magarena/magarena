@@ -1,5 +1,5 @@
 name=Cyclopean Mummy
-image=https://magiccards.info/scans/en/4e/12.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8de50323-7ce8-4ca6-a90b-b4be9d639752.jpg?1562928408
 value=1.764
 rarity=C
 type=Creature

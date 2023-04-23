@@ -1,5 +1,5 @@
 name=Angelic Overseer
-image=https://magiccards.info/scans/en/isd/3.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/221d999c-dde1-4a0f-87cf-9e9f44969f94.jpg?1562827383
 value=3.846
 rarity=M
 type=Creature

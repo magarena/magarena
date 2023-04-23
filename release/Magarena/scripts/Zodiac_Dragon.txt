@@ -1,5 +1,5 @@
 name=Zodiac Dragon
-image=https://magiccards.info/scans/en/p3k/131.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1dfb3f91-5ecd-405d-9d67-655f2734a147.jpg?1562901279
 value=3.682
 rarity=R
 type=Creature

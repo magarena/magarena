@@ -1,5 +1,5 @@
 name=Reflex Sliver
-image=https://magiccards.info/scans/en/pc/138.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e14da2f-0e35-4586-8435-de0859aad060.jpg?1619398577
 value=3.062
 rarity=C
 type=Creature

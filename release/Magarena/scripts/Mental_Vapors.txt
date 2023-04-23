@@ -1,5 +1,5 @@
 name=Mental Vapors
-image=https://magiccards.info/scans/en/gtc/72.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/076e7c58-a6fe-4882-8f8d-698be9a7f22d.jpg?1561814738
 value=2.427
 rarity=U
 type=Sorcery

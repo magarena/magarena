@@ -1,5 +1,5 @@
 name=Flaming Sword
-image=https://magiccards.info/scans/en/mm/190.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17ecd9ff-8c30-4e17-8cff-dd40d653c4af.jpg?1562379432
 value=3.537
 rarity=C
 type=Enchantment

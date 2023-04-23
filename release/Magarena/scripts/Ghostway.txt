@@ -1,5 +1,5 @@
 name=Ghostway
-image=https://magiccards.info/scans/en/gp/6.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b83d750-16d9-41e4-b823-3295c5f6b319.jpg?1593271846
 value=4.097
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Fearsome Temper
-image=https://magiccards.info/scans/en/bng/95.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6e7884c-2d66-42d1-87d1-1341a6fa52d8.jpg?1593092219
 value=2.595
 rarity=C
 type=Enchantment

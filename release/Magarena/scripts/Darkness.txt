@@ -1,5 +1,5 @@
 name=Darkness
-image=https://magiccards.info/scans/en/tsts/40.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/584834fb-b7b6-40eb-9fec-8df17172ce5f.jpg?1562776481
 value=4.323
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Field of Reality
-image=https://magiccards.info/scans/en/chk/60.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2ff7c6fc-324b-4cff-9109-6d817767865f.jpg?1593860605
 value=1.543
 rarity=C
 type=Enchantment

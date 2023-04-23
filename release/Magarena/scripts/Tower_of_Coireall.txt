@@ -1,5 +1,5 @@
 name=Tower of Coireall
-image=https://magiccards.info/scans/en/dk/110.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64c19977-ac7d-4ce7-925c-33a7503420f5.jpg?1562918738
 value=1.625
 rarity=U
 type=Artifact

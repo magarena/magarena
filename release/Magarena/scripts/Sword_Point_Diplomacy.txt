@@ -1,5 +1,5 @@
 name=Sword-Point Diplomacy
-image=https://magiccards.info/scans/en/xln/126.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25750098-02a1-48e4-917d-187c41e111b6.jpg?1562552215
 value=2.500
 rarity=R
 type=Sorcery

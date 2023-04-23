@@ -1,5 +1,5 @@
 name=Elesh Norn, Grand Cenobite
-image=https://magiccards.info/scans/en/ima/18.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78c2bfef-06a5-4c7f-8283-ea3fb673b7a1.jpg?1562850573
 image_updated=2017-04-12
 value=4.451
 rarity=M

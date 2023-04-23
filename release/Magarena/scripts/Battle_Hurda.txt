@@ -1,5 +1,5 @@
 name=Battle Hurda
-image=https://magiccards.info/scans/en/wwk/4.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f540b83-67fd-4630-a461-69bc84b88ed3.jpg?1562284670
 value=1.647
 rarity=C
 type=Creature

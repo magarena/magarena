@@ -1,5 +1,5 @@
 name=Vapor Snag
-image=https://magiccards.info/scans/en/mm2/66.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59f26d0a-e9f3-442f-b5c6-8016cf736432.jpg?1562262639
 value=3.881
 removal=2
 rarity=C

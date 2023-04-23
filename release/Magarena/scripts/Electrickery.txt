@@ -1,5 +1,5 @@
 name=Electrickery
-image=https://magiccards.info/scans/en/rtr/93.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ed81ee8-d5e4-4127-876e-9bff81f9c726.jpg?1562787062
 value=3.604
 rarity=C
 type=Instant

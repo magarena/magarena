@@ -1,5 +1,5 @@
 name=Dakmor Plague
-image=https://magiccards.info/scans/en/st/72.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff06d0d5-d3ad-4f4a-8c4c-d06990d8654d.jpg?1562955381
 value=3.176
 rarity=U
 type=Sorcery

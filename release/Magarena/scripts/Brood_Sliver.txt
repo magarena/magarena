@@ -1,5 +1,5 @@
 name=Brood Sliver
-image=https://magiccards.info/scans/en/le/120.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33803c12-1d78-49fe-a3a3-7f47c60a96b6.jpg?1562905370
 value=4.203
 rarity=R
 type=Creature

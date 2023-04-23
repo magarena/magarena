@@ -1,5 +1,5 @@
 name=Primal Frenzy
-image=https://magiccards.info/scans/en/od/262.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5e2d822-09d0-42e5-ad91-67c66e947b3d.jpg?1562941159
 value=2.016
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Divine Favor
-image=https://magiccards.info/scans/en/m15/10.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43c1ddf8-e38a-44df-9195-40e2b0d4cd5f.jpg?1562786030
 value=2.167
 rarity=C
 type=Enchantment

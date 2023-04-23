@@ -1,5 +1,5 @@
 name=Moroii
-image=https://magiccards.info/scans/en/mm3/173.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2ac1c79-4dff-4518-8a9e-8d381a046605.jpg?1593814464
 image_updated=2017-08-08
 value=3.141
 rarity=U

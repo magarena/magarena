@@ -1,5 +1,5 @@
 name=Rath's Edge
-image=https://magiccards.info/scans/en/ne/142.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42681dce-5c63-4e56-955e-39f085ea6ae9.jpg?1562629557
 value=2.590
 rarity=R
 type=Legendary,Land

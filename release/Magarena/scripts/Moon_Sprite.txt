@@ -1,5 +1,5 @@
 name=Moon Sprite
-image=https://magiccards.info/scans/en/st2k/11.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49d0acb1-bc07-42d5-a327-1617f0ed2c60.jpg?1562133665
 value=1.889
 rarity=U
 type=Creature

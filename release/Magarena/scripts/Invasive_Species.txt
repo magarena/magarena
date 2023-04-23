@@ -1,5 +1,5 @@
 name=Invasive Species
-image=https://magiccards.info/scans/en/m15/181.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1fb5a98-94f4-419f-850b-e3a01f17080f.jpg?1562793803
 value=2.750
 rarity=C
 type=Creature

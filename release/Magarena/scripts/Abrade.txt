@@ -1,5 +1,5 @@
 name=Abrade
-image=https://magiccards.info/scans/en/hou/83.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0e47d11-cb21-402b-a39e-588a94cc57b4.jpg?1643590610
 value=2.500
 rarity=U
 type=Instant

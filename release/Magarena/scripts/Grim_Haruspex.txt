@@ -1,5 +1,5 @@
 name=Grim Haruspex
-image=https://magiccards.info/scans/en/ktk/73.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5c19b87-e114-46d4-9f6c-c02e838a08dd.jpg?1674141627
 value=4.333
 rarity=R
 type=Creature

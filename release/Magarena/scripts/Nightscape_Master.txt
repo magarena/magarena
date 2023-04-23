@@ -1,5 +1,5 @@
 name=Nightscape Master
-image=https://magiccards.info/scans/en/in/113.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d86174b8-dd9e-4ece-bc23-4f9ac50bccd3.jpg?1562938505
 value=3.804
 rarity=R
 type=Creature

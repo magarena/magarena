@@ -1,5 +1,5 @@
 name=Briar Patch
-image=https://magiccards.info/scans/en/mm/232.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5913fc6-eeb0-411b-9264-1e75bea8489b.jpg?1562382557
 value=2.865
 rarity=U
 type=Enchantment

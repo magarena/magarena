@@ -1,5 +1,5 @@
 name=Aethertide Whale
-image=https://magiccards.info/scans/en/aer/27.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38722c25-13a7-47af-a4cd-90722f289499.jpg?1576381449
 value=2.500
 rarity=R
 type=Creature

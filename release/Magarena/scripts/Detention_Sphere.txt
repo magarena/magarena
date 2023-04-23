@@ -1,5 +1,5 @@
 name=Detention Sphere
-image=https://magiccards.info/scans/en/rtr/155.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afee5464-83b7-4d7a-b407-9ee7de21535b.jpg?1562791607
 value=4.072
 rarity=R
 type=Enchantment

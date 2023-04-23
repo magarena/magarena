@@ -1,5 +1,5 @@
 name=Tower of Calamities
-image=https://magiccards.info/scans/en/som/212.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a77391b-5727-4408-bb50-970f7a13a83c.jpg?1562820043
 value=2.730
 rarity=R
 type=Artifact

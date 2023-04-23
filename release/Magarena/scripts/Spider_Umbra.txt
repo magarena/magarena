@@ -1,5 +1,5 @@
 name=Spider Umbra
-image=https://magiccards.info/scans/en/roe/208.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/762b8d61-53c9-41e1-aaa7-098b91d9b938.jpg?1547517840
 image_updated=2016-01-09
 value=3.791
 rarity=C

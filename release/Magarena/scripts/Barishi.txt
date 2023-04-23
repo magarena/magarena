@@ -1,5 +1,5 @@
 name=Barishi
-image=https://magiccards.info/scans/en/wl/61.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f263eb80-f8f2-4b32-8e8b-a297de9f3666.jpg?1562804203
 value=3.878
 rarity=U
 type=Creature

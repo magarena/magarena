@@ -1,5 +1,5 @@
 name=Wasteland Viper
-image=https://magiccards.info/scans/en/gtc/139.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4a5b2b8-3890-485f-8731-8f178a2da3d7.jpg?1561850218
 value=4.015
 rarity=U
 type=Creature

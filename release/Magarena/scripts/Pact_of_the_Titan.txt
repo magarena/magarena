@@ -1,5 +1,5 @@
 name=Pact of the Titan
-image=https://magiccards.info/scans/en/fut/103.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4612effe-8ca2-4c27-90d2-d9255acc80d9.jpg?1619397348
 value=3.667
 rarity=R
 type=Instant

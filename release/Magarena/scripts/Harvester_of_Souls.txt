@@ -1,5 +1,5 @@
 name=Harvester of Souls
-image=https://magiccards.info/scans/en/cn2/138.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/870ebc0b-b748-4a21-b939-a48811451bba.jpg?1600700538
 image_updated=2017-08-29
 value=3.884
 rarity=R

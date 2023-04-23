@@ -1,5 +1,5 @@
 name=Ranger en-Vec
-image=https://magiccards.info/scans/en/tp/343.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a89e82c-7206-4d74-95c6-ad3627e5a9ce.jpg?1562053775
 value=4.031
 rarity=U
 type=Creature

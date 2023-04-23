@@ -1,5 +1,5 @@
 name=Swiftwater Cliffs
-image=https://magiccards.info/scans/en/c16/330.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/957efc4e-c2a9-46a2-b9e3-20dc419ffd05.jpg?1682205892
 image_updated=2017-08-17
 value=3.333
 rarity=C

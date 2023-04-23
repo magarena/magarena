@@ -1,5 +1,5 @@
 name=Ubul Sar Gatekeepers
-image=https://magiccards.info/scans/en/dgm/30.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5b2e327-adfd-459b-8d18-faa39d88b5de.jpg?1562941133
 value=3.183
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblin Chariot
-image=https://magiccards.info/scans/en/9e/191.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/136a15cb-9591-4521-a142-af766dd7eeef.jpg?1562731634
 value=2.635
 rarity=C
 type=Creature

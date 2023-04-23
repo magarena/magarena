@@ -1,5 +1,5 @@
 name=Grim Lavamancer
-image=https://magiccards.info/scans/en/m12/145.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee2a0d71-15a2-4061-b5f2-434755094aa4.jpg?1599706437
 value=4.416
 rarity=R
 type=Creature

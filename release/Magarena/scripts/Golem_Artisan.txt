@@ -1,5 +1,5 @@
 name=Golem Artisan
-image=https://magiccards.info/scans/en/som/159.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/441a3345-2507-46ed-bdb3-c5c45d17da51.jpg?1608911433
 value=3.426
 rarity=U
 type=Artifact,Creature

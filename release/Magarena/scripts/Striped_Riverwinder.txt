@@ -1,5 +1,5 @@
 name=Striped Riverwinder
-image=https://magiccards.info/scans/en/hou/48.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbeef9ef-487c-400b-bcee-1c0e8ec94b6a.jpg?1562812506
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Iron Maiden
-image=https://magiccards.info/scans/en/ul/127.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad925fb0-1d5c-44a0-8347-202a38c23107.jpg?1562863783
 value=3.714
 rarity=R
 type=Artifact

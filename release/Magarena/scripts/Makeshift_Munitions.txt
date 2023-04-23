@@ -1,5 +1,5 @@
 name=Makeshift Munitions
-image=https://magiccards.info/scans/en/xln/151.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19d1ad9f-e217-49fb-8b27-025ca133b6c9.jpg?1608910325
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Reckless Ogre
-image=https://magiccards.info/scans/en/ex/98.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90d27b79-a22d-48d9-86b2-7ad02cab8697.jpg?1562088319
 value=3.250
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Massacre Wurm
-image=https://magiccards.info/scans/en/mbs/46.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fce002dc-5fb5-465b-935e-042121f1119d.jpg?1682209105
 value=4.152
 removal=2
 rarity=M

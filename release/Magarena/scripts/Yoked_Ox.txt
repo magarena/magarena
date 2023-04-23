@@ -1,5 +1,5 @@
 name=Yoked Ox
-image=https://magiccards.info/scans/en/ori/42.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a73f186b-c897-4a98-bc25-8e4aa348d8c9.jpg?1592516244
 image_updated=2015-11-05
 value=2.500
 rarity=C

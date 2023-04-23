@@ -1,5 +1,5 @@
 name=Avatar of Might
-image=https://magiccards.info/scans/en/10e/251.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca570876-23b2-4915-a5b9-20f1fa976fab.jpg?1562555122
 value=4.114
 rarity=R
 type=Creature

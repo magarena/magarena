@@ -1,5 +1,5 @@
 name=Covetous Dragon
-image=https://magiccards.info/scans/en/ud/80.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5f37e36-c004-4b89-a668-5cd984c59019.jpg?1562445199
 value=4.259
 rarity=R
 type=Creature

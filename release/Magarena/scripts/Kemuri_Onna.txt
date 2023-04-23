@@ -1,5 +1,5 @@
 name=Kemuri-Onna
-image=https://magiccards.info/scans/en/sok/76.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eed13fd-68be-4bc3-af6a-d88baaf9c98d.jpg?1562493706
 value=2.200
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Spincrusher
-image=https://magiccards.info/scans/en/ds/144.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1269a34-cec6-4978-a109-592723cd80dc.jpg?1562638989
 value=3.457
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Even the Odds
-image=https://magiccards.info/scans/en/fut/6.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f704cd76-dca8-4526-b03f-7e3753d8fbb5.jpg?1562944743
 value=3.170
 rarity=U
 type=Instant

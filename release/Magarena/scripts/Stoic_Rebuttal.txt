@@ -1,5 +1,5 @@
 name=Stoic Rebuttal
-image=https://magiccards.info/scans/en/mm2/59.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9f8146e-ca33-4fa2-8f39-5a44b0db4bd6.jpg?1562268835
 value=3.803
 rarity=C
 type=Instant

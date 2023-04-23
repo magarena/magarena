@@ -1,5 +1,5 @@
 name=Steal Enchantment
-image=https://magiccards.info/scans/en/tp/90.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/734be7fa-0998-4771-9b97-4989b3fc1471.jpg?1562054484
 value=3.927
 rarity=U
 type=Enchantment

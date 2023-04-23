@@ -1,5 +1,5 @@
 name=Disdainful Stroke
-image=https://magiccards.info/scans/en/c16/88.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/492aa24c-61c4-48bc-b7b7-f423be2662da.jpg?1664410153
 image_updated=2017-08-17
 value=3.200
 rarity=C

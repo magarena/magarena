@@ -1,5 +1,5 @@
 name=Favor of the Overbeing
-image=https://magiccards.info/scans/en/eve/151.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bf061f8-3aec-429a-bde7-7c110f872416.jpg?1562927911
 value=3.602
 rarity=C
 type=Enchantment

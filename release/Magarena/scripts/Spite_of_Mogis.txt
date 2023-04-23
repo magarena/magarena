@@ -1,5 +1,5 @@
 name=Spite of Mogis
-image=https://magiccards.info/scans/en/jou/113.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5676d255-707e-4621-a0df-3305f999f124.jpg?1593096115
 value=3.577
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Woodland Druid
-image=https://magiccards.info/scans/en/od/284.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34e501e6-38da-44ad-abe2-53ea7f0eb4ae.jpg?1562904796
 value=2.675
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Evanescent Intellect
-image=https://magiccards.info/scans/en/bng/38.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d38cfe97-77b3-4423-95ac-88eb850cf854.jpg?1593091654
 value=2.192
 rarity=C
 type=Enchantment

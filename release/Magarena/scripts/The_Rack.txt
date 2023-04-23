@@ -1,5 +1,5 @@
 name=The Rack
-image=https://magiccards.info/scans/en/tsts/113.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/696d1e25-5c25-4522-b085-90d49fe23a18.jpg?1562777875
 image_updated=2017-01-10
 value=4.368
 rarity=U

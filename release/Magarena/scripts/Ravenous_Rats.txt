@@ -1,5 +1,5 @@
 name=Ravenous Rats
-image=https://magiccards.info/scans/en/m13/106.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f87e5072-525e-4b0b-a5c3-ee5e89a81e1d.jpg?1562953894
 value=4.340
 rarity=C
 type=Creature

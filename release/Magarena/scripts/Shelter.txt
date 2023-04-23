@@ -1,5 +1,5 @@
 name=Shelter
-image=https://magiccards.info/scans/en/ema/29.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a50984b-5bf5-4432-a149-96492d1683de.jpg?1562201221
 value=4.000
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Mighty Emergence
-image=https://magiccards.info/scans/en/ala/137.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ee66318-4dbb-49a3-a3c8-ee0e1a9f02b7.jpg?1562706495
 value=3.030
 rarity=U
 type=Enchantment

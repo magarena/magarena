@@ -1,5 +1,5 @@
 name=Geth's Verdict
-image=https://magiccards.info/scans/en/nph/61.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a20b5a2-8613-49ed-b5cc-7cae9d0e0850.jpg?1562878949
 value=3.815
 removal=1
 rarity=C

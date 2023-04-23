@@ -1,5 +1,5 @@
 name=Dark Privilege
-image=https://magiccards.info/scans/en/vi/6.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10d2cf44-cc20-4a37-81ae-930f8c6d0896.jpg?1562276966
 value=2.581
 rarity=C
 type=Enchantment

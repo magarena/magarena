@@ -1,5 +1,5 @@
 name=Forced Worship
-image=https://magiccards.info/scans/en/nph/11.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa4004b7-89b6-43f5-8d6e-13db1b08f3b8.jpg?1600716947
 value=2.936
 rarity=C
 type=Enchantment

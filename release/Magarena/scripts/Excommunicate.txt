@@ -1,5 +1,5 @@
 name=Excommunicate
-image=https://magiccards.info/scans/en/m11/14.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8aec6e3f-bc90-4e21-a087-330f7e072fc6.jpg?1562467314
 value=2.719
 rarity=C
 type=Sorcery

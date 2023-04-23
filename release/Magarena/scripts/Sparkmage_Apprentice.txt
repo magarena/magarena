@@ -1,5 +1,5 @@
 name=Sparkmage Apprentice
-image=https://magiccards.info/scans/en/m10/158.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22331eb5-c791-4d38-a6f7-cc5f4ef815ef.jpg?1592754858
 image_updated=2017-01-09
 value=3.386
 rarity=C

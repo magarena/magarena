@@ -1,5 +1,5 @@
 name=Lava Flow
-image=https://magiccards.info/scans/en/po/143.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99bb95f4-5dbc-4b69-b848-fc7e1059282a.jpg?1562931241
 value=3.025
 removal=3
 rarity=U

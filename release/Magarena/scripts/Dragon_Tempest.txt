@@ -1,5 +1,5 @@
 name=Dragon Tempest
-image=https://magiccards.info/scans/en/ima/125.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1933d08-07fe-45ea-9b60-d9afb98d5753.jpg?1562855620
 image_updated=2017-04-12
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Magus of the Bazaar
-image=https://magiccards.info/scans/en/pc/43.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d117ed81-7b5c-4e29-b958-6126d48ac5a6.jpg?1547516386
 value=3.877
 rarity=R
 type=Creature

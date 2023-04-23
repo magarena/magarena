@@ -1,5 +1,5 @@
 name=Goldnight Commander
-image=https://magiccards.info/scans/en/avr/22.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80be2fea-3fe6-477e-bcb8-63f441d6cfc1.jpg?1631234068
 value=3.771
 rarity=U
 type=Creature

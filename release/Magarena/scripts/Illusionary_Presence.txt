@@ -1,5 +1,5 @@
 name=Illusionary Presence
-image=https://magiccards.info/scans/en/ia/76.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa31efed-4a11-4f59-a623-bac45d20091d.jpg?1587911810
 value=2.212
 rarity=R
 type=Creature

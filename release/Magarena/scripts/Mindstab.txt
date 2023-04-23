@@ -1,5 +1,5 @@
 name=Mindstab
-image=https://magiccards.info/scans/en/ts/119.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/542f97fa-6295-4c87-86a8-7ff2bc8b5e81.jpg?1619395679
 value=2.625
 rarity=C
 type=Sorcery

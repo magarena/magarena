@@ -1,5 +1,5 @@
 name=Coiled Tinviper
-image=https://magiccards.info/scans/en/tp/269.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c62c2f66-6419-49ca-82d7-a5e8789a665f.jpg?1562431297
 value=2.432
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Marsh Lurker
-image=https://magiccards.info/scans/en/tp/38.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90c4b759-f53d-4977-8d97-a93762622e75.jpg?1562055419
 value=1.449
 rarity=C
 type=Creature

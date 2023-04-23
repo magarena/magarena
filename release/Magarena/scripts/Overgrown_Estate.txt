@@ -1,5 +1,5 @@
 name=Overgrown Estate
-image=https://magiccards.info/scans/en/ap/113.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1c48c58-3532-4022-9eec-1a870385cbf3.jpg?1562940749
 value=3.317
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Nivix Cyclops
-image=https://magiccards.info/scans/en/dgm/87.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6abe6ca-9345-41bc-9acd-b17ac887cb9d.jpg?1592761651
 value=3.805
 rarity=C
 type=Creature

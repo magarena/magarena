@@ -1,5 +1,5 @@
 name=Resourceful Return
-image=https://magiccards.info/scans/en/aer/70.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32f57d0b-ab6a-4074-885d-678659729b8a.jpg?1576381722
 value=2.500
 rarity=C
 type=Sorcery

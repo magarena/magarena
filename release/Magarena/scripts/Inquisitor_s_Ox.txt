@@ -1,5 +1,5 @@
 name=Inquisitor's Ox
-image=https://magiccards.info/scans/en/soi/24.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd1401fe-9e88-401b-96f0-5f58808a519f.jpg?1576383802
 value=2.500
 rarity=C
 type=Creature

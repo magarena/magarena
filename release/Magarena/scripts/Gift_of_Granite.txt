@@ -1,5 +1,5 @@
 name=Gift of Granite
-image=https://magiccards.info/scans/en/fut/7.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7b5231b-aed9-4b88-aba5-43e57a705dc5.jpg?1562938328
 value=2.087
 rarity=C
 type=Enchantment

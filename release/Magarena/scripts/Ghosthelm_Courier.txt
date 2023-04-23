@@ -1,5 +1,5 @@
 name=Ghosthelm Courier
-image=https://magiccards.info/scans/en/on/85.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd6cc30a-9ed4-4f36-95cb-6f0a2b8dce02.jpg?1562943472
 value=3.028
 rarity=U
 type=Creature

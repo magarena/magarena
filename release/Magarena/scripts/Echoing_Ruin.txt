@@ -1,5 +1,5 @@
 name=Echoing Ruin
-image=https://magiccards.info/scans/en/ds/59.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01f842c8-cd6c-4f4d-9aa8-417a92b37867.jpg?1562635146
 value=3.776
 removal=3
 rarity=C

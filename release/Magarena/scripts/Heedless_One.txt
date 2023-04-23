@@ -1,5 +1,5 @@
 name=Heedless One
-image=https://magiccards.info/scans/en/on/265.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e19879a4-7c77-4bfd-a7fa-5fe5cc82a193.jpg?1562940298
 image_updated=2016-12-10
 value=4.264
 rarity=U

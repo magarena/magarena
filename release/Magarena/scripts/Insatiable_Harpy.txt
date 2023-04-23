@@ -1,5 +1,5 @@
 name=Insatiable Harpy
-image=https://magiccards.info/scans/en/ths/92.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/1439ed8d-ae11-4159-9420-5d98c6cc93b3.jpg?1562814974
 value=2.875
 rarity=U
 type=Creature

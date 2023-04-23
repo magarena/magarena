@@ -1,5 +1,5 @@
 name=Desert of the Fervent
-image=https://magiccards.info/scans/en/hou/170.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/873ed0cd-60ea-4869-b794-e626f0058871.jpg?1625979983
 value=2.500
 rarity=C
 type=Land

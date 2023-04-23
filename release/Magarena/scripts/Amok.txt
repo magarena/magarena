@@ -1,5 +1,5 @@
 name=Amok
-image=https://magiccards.info/scans/en/sh/76.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c5bdb8c-2a2e-47cf-a502-2d62f9ada3fa.jpg?1562596415
 value=2.467
 rarity=R
 type=Enchantment

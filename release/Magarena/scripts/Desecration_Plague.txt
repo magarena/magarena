@@ -1,5 +1,5 @@
 name=Desecration Plague
-image=https://magiccards.info/scans/en/jou/120.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42dbc5e5-5d46-47f7-a700-b65781a13c7a.jpg?1593096170
 value=2.676
 rarity=C
 type=Sorcery

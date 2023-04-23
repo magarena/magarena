@@ -1,5 +1,5 @@
 name=Auriok Edgewright
-image=https://magiccards.info/scans/en/som/3.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f76b18a-396b-41f5-b34b-ac232b7f316b.jpg?1562814636
 value=3.384
 rarity=U
 type=Creature

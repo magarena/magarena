@@ -1,5 +1,5 @@
 name=Besmirch
-image=https://magiccards.info/scans/en/cn2/49.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/534c652a-2345-48d5-bd78-33f91ed914b4.jpg?1576381885
 image_updated=2016-09-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Sign in Blood
-image=https://magiccards.info/scans/en/mm2/97.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61388c28-9428-473c-973a-0a82b6b83d62.jpg?1562274085
 value=3.500
 rarity=C
 type=Sorcery

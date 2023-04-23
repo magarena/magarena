@@ -1,5 +1,5 @@
 name=Festering Evil
-image=https://magiccards.info/scans/en/wl/10.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d688bda-fee2-496d-9793-794c2568b54e.jpg?1562800032
 value=3.300
 rarity=U
 type=Enchantment

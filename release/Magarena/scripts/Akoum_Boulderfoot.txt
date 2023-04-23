@@ -1,5 +1,5 @@
 name=Akoum Boulderfoot
-image=https://magiccards.info/scans/en/roe/134.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88e8f7b6-1214-447b-8665-ff3c85845564.jpg?1562706000
 value=1.562
 rarity=U
 type=Creature

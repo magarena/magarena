@@ -1,5 +1,5 @@
 name=Chambered Nautilus
-image=https://magiccards.info/scans/en/mm/64.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/860c613d-d031-4c2a-922b-39f4eec04e18.jpg?1562381838
 value=3.483
 rarity=U
 type=Creature

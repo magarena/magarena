@@ -1,5 +1,5 @@
 name=Prime Speaker Zegana
-image=https://magiccards.info/scans/en/gtc/188.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b844055-7581-4fbf-a0c9-6c4e9328a83e.jpg?1562706210
 image_updated=2016-02-29
 value=4.035
 rarity=M

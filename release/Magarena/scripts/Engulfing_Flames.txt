@@ -1,5 +1,5 @@
 name=Engulfing Flames
-image=https://magiccards.info/scans/en/od/191.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/164a92ac-0788-4238-a2ed-1ebd3dd0dd88.jpg?1562899242
 value=3.281
 removal=2
 rarity=U

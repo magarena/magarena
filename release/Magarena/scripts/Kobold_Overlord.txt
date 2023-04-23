@@ -1,5 +1,5 @@
 name=Kobold Overlord
-image=https://magiccards.info/scans/en/lg/153.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0861cb0a-277f-49fe-b263-b044f0117cdd.jpg?1562896807
 value=3.731
 rarity=R
 type=Creature

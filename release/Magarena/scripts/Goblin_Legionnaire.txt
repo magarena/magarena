@@ -1,5 +1,5 @@
 name=Goblin Legionnaire
-image=https://magiccards.info/scans/en/ap/103.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c684407e-277a-4e32-a978-cdac9548acce.jpg?1562941861
 value=4.153
 rarity=C
 type=Creature

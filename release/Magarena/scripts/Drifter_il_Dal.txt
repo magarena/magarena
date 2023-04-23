@@ -1,5 +1,5 @@
 name=Drifter il-Dal
-image=https://magiccards.info/scans/en/ts/59.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d40c45e7-f157-4b3f-a627-09b5c27473ae.jpg?1619394115
 value=3.117
 rarity=C
 type=Creature

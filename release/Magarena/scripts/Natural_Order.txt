@@ -1,5 +1,5 @@
 name=Natural Order
-image=https://magiccards.info/scans/en/ema/177.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfe3329c-7faa-4925-b9d2-075a1ab27e80.jpg?1619461603
 value=4.183
 rarity=M
 type=Sorcery

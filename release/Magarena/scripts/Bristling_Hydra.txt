@@ -1,5 +1,5 @@
 name=Bristling Hydra
-image=https://magiccards.info/scans/en/kld/147.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bf38096-05bc-4734-b33c-eb1e8f2986de.jpg?1576382395
 image_updated=2016-10-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Threaten
-image=https://magiccards.info/scans/en/10e/242.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57d467d4-f7d2-403c-9b70-1b054b2c82bc.jpg?1562548050
 value=4.039
 removal=5
 rarity=U

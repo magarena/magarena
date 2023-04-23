@@ -1,5 +1,5 @@
 name=Trench Wurm
-image=https://magiccards.info/scans/en/in/127.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b076f85-d1bf-491a-af9d-f35b8e1bd163.jpg?1562900334
 value=3.586
 rarity=U
 type=Creature

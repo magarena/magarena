@@ -1,5 +1,5 @@
 name=Mistveil Plains
-image=https://magiccards.info/scans/en/shm/275.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/724acbe2-4c82-4360-a738-38cc6aa0c4a4.jpg?1547518720
 value=3.044
 rarity=U
 type=Land

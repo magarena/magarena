@@ -1,5 +1,5 @@
 name=Crusader of Odric
-image=https://magiccards.info/scans/en/m13/10.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b81e6aaa-aea4-4187-a4ca-fbbea0d10c7d.jpg?1599706450
 value=3.924
 rarity=U
 type=Creature

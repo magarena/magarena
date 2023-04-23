@@ -1,5 +1,5 @@
 name=Storm Shaman
-image=https://magiccards.info/scans/en/7e/222.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae941462-9086-47e5-8c04-01e53195584f.jpg?1562245781
 value=3.143
 rarity=U
 type=Creature

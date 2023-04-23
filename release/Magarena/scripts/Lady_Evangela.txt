@@ -1,5 +1,5 @@
 name=Lady Evangela
-image=https://magiccards.info/scans/en/lg/280.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a01adcbd-0ebd-4f18-9942-4638fa0de358.jpg?1562928791
 value=3.136
 rarity=R
 type=Legendary,Creature

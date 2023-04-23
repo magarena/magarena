@@ -1,5 +1,5 @@
 name=Spitting Image
-image=https://magiccards.info/scans/en/c16/236.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5f68c73-4794-4659-b494-edf89105beab.jpg?1625978069
 image_updated=2017-08-17
 value=3.675
 rarity=R

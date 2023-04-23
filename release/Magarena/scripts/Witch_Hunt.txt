@@ -1,5 +1,5 @@
 name=Witch Hunt
-image=https://magiccards.info/scans/en/c13/133.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1db6d2a4-183e-47ff-bebe-efefd4bcc4be.jpg?1562901219
 value=3.705
 rarity=R
 type=Enchantment

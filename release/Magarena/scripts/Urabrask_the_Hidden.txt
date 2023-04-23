@@ -1,5 +1,5 @@
 name=Urabrask the Hidden
-image=https://magiccards.info/scans/en/ima/152.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93970fae-19f7-41dd-9750-ca428ae1de7a.jpg?1674142149
 image_updated=2017-04-12
 value=4.042
 rarity=M

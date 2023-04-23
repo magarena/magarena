@@ -1,5 +1,5 @@
 name=Storm Fleet Pyromancer
-image=https://magiccards.info/scans/en/xln/163.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/189836c8-3ffb-4734-8d3e-6a21a28335be.jpg?1673147923
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Balduvian Conjurer
-image=https://magiccards.info/scans/en/ia/58.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd2f6eb8-eb90-4cee-b409-fb365149031d.jpg?1562870467
 value=2.904
 rarity=U
 type=Creature

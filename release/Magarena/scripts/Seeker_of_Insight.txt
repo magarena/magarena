@@ -1,5 +1,5 @@
 name=Seeker of Insight
-image=https://magiccards.info/scans/en/akh/69.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f0b7bfc-f126-4885-a663-6f8dcc52e663.jpg?1543675109
 value=2.500
 rarity=C
 type=Creature

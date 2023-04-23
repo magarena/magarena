@@ -1,5 +1,5 @@
 name=Ardent Militia
-image=https://magiccards.info/scans/en/8e/3.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c78d392-9f2f-4241-9a10-6ac9b1e86154.jpg?1562923373
 value=2.471
 rarity=U
 type=Creature

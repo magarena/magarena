@@ -1,5 +1,5 @@
 name=Wirewood Herald
-image=https://magiccards.info/scans/en/on/302.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcc492f5-d86d-473c-a316-855588a979bd.jpg?1562932946
 image_updated=2017-01-11
 value=4.000
 rarity=C

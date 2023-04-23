@@ -1,5 +1,5 @@
 name=Squall
-image=https://magiccards.info/scans/en/7e/271.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fab5336-a020-4d08-87fd-d2534d98bee1.jpg?1562906143
 value=2.957
 rarity=C
 type=Sorcery

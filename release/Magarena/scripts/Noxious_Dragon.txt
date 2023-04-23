@@ -1,5 +1,5 @@
 name=Noxious Dragon
-image=https://magiccards.info/scans/en/ima/100.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01afdb32-d9a8-42d4-9ad2-4608ffd661f0.jpg?1608909857
 image_updated=2017-04-12
 value=2.500
 rarity=U

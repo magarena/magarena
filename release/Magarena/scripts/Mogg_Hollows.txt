@@ -1,5 +1,5 @@
 name=Mogg Hollows
-image=https://magiccards.info/scans/en/tp/318.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee7f2031-1a91-4f9d-aae9-e4b1b3206211.jpg?1562432213
 value=2.419
 rarity=U
 type=Land

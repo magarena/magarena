@@ -1,5 +1,5 @@
 name=Thunder Wall
-image=https://magiccards.info/scans/en/ia/104.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfabe410-ff54-48ba-8d1a-b7248976e967.jpg?1562870489
 value=2.938
 rarity=U
 type=Creature

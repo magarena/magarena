@@ -1,5 +1,5 @@
 name=Jabari's Banner
-image=https://magiccards.info/scans/en/wl/150.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d51a496-1ca6-4286-bdbe-990d43196a25.jpg?1562800356
 value=3.028
 rarity=U
 type=Artifact

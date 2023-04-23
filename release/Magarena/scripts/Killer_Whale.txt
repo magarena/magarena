@@ -1,5 +1,5 @@
 name=Killer Whale
-image=https://magiccards.info/scans/en/ex/37.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1644296d-37db-4180-b9ce-20e96048d513.jpg?1562428631
 value=3.364
 rarity=U
 type=Creature

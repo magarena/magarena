@@ -1,5 +1,5 @@
 name=Smoldering Tar
-image=https://magiccards.info/scans/en/in/275.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcdc55c0-c8ac-49d5-969b-9bf0ee8e696c.jpg?1562946036
 value=3.283
 rarity=U
 type=Enchantment

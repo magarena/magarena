@@ -1,5 +1,5 @@
 name=Rakdos Ickspitter
-image=https://magiccards.info/scans/en/di/128.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c007b10b-2701-4bac-8b95-8fc7dcfb9e21.jpg?1593273752
 value=3.552
 rarity=C
 type=Creature

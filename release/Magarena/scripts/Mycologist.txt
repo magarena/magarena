@@ -1,5 +1,5 @@
 name=Mycologist
-image=https://magiccards.info/scans/en/pc/27.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cca60d13-137f-4438-bc51-7ea02ec3c515.jpg?1619393189
 value=2.961
 rarity=U
 type=Creature

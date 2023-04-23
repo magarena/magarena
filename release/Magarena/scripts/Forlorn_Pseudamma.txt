@@ -1,5 +1,5 @@
 name=Forlorn Pseudamma
-image=https://magiccards.info/scans/en/bng/71.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c236a33-fb20-41f4-8946-beb65d1cf684.jpg?1593091974
 value=3.212
 rarity=U
 type=Creature

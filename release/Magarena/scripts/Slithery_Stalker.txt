@@ -1,5 +1,5 @@
 name=Slithery Stalker
-image=https://magiccards.info/scans/en/tr/84.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c875bb6-55bb-41cc-8825-8011581ff001.jpg?1562628558
 value=2.045
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Laccolith Whelp
-image=https://magiccards.info/scans/en/ne/91.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86eb5b9e-320f-40de-8668-ee0c08f63ec1.jpg?1562630877
 value=4.000
 rarity=C
 type=Creature

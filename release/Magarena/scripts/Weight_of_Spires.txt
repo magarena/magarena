@@ -1,5 +1,5 @@
 name=Weight of Spires
-image=https://magiccards.info/scans/en/di/78.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5f26a87-4562-450c-800b-7d4acc1ae17b.jpg?1593273313
 value=2.431
 rarity=U
 type=Instant

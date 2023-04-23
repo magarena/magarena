@@ -1,5 +1,5 @@
 name=Jungle Delver
-image=https://magiccards.info/scans/en/xln/195.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae4328fc-20d2-487b-9a74-57c39b0810c0.jpg?1592765136
 value=2.500
 rarity=C
 type=Creature

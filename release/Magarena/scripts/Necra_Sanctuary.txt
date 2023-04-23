@@ -1,5 +1,5 @@
 name=Necra Sanctuary
-image=https://magiccards.info/scans/en/ap/45.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a0bf165-d7eb-4ae6-b30a-4e9fd55f401d.jpg?1562916168
 value=3.474
 rarity=U
 type=Enchantment

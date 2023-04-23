@@ -1,5 +1,5 @@
 name=Crop Rotation
-image=https://magiccards.info/scans/en/ul/98.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4249cc64-f75b-4c76-a41a-5b25873c74bc.jpg?1599707090
 value=4.586
 rarity=C
 type=Instant

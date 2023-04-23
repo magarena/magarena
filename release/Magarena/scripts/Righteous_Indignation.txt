@@ -1,5 +1,5 @@
 name=Righteous Indignation
-image=https://magiccards.info/scans/en/mm/46.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1fb6335-cfd8-438c-b936-09b850d61b28.jpg?1562383018
 value=1.804
 rarity=U
 type=Enchantment

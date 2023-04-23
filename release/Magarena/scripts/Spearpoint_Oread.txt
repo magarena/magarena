@@ -1,5 +1,5 @@
 name=Spearpoint Oread
-image=https://magiccards.info/scans/en/ths/141.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22d9d241-74b8-4b40-b4b7-b8584012d482.jpg?1562815684
 value=3.161
 rarity=C
 type=Enchantment,Creature

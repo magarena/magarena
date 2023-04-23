@@ -1,5 +1,5 @@
 name=Stern Judge
-image=https://magiccards.info/scans/en/tr/16.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/436044d7-981c-4273-a0b4-6dd455608c47.jpg?1574250435
 value=3.354
 rarity=U
 type=Creature

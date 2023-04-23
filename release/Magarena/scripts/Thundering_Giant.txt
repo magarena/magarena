@@ -1,5 +1,5 @@
 name=Thundering Giant
-image=https://magiccards.info/scans/en/m15/165.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddbcc6e9-b5f4-4f20-9c15-b690b4f64304.jpg?1562201403
 value=2.333
 rarity=C
 type=Creature

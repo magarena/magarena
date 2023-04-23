@@ -1,5 +1,5 @@
 name=Arbalest Elite
-image=https://magiccards.info/scans/en/m12/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/094c839e-0aea-4754-af37-edf6292623e1.jpg?1562631533
 value=1.788
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Promise of Bunrei
-image=https://magiccards.info/scans/en/a25/30.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a40e9071-7b27-4070-bc3a-c095c2128953.jpg?1641601562
 image_updated=2018-04-27
 value=3.945
 rarity=U

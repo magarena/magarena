@@ -1,5 +1,5 @@
 name=Terravore
-image=https://magiccards.info/scans/en/od/278.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c39c412b-2f21-483a-b744-5d55bc007c0d.jpg?1562931563
 value=4.139
 rarity=R
 type=Creature

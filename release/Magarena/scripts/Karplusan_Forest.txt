@@ -1,5 +1,5 @@
 name=Karplusan Forest
-image=https://magiccards.info/scans/en/c16/305.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b89b2c79-e3d3-4ef9-bfc8-f9c090975011.jpg?1673308330
 image_updated=2017-08-17
 value=4.346
 rarity=R

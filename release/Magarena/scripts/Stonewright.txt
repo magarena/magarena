@@ -1,5 +1,5 @@
 name=Stonewright
-image=https://magiccards.info/scans/en/avr/157.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9564d79d-5f4d-4192-94ee-5e5998011266.jpg?1592709212
 value=3.473
 rarity=U
 type=Creature

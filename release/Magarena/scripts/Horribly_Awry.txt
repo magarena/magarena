@@ -1,5 +1,5 @@
 name=Horribly Awry
-image=https://magiccards.info/scans/en/bfz/59.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4cd05532-686e-40dc-858b-8a77a3628c99.jpg?1562912968
 image_updated=2015-11-08
 value=2.500
 rarity=U

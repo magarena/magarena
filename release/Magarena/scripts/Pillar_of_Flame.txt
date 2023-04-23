@@ -1,5 +1,5 @@
 name=Pillar of Flame
-image=https://magiccards.info/scans/en/ima/141.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffdb47a8-130b-4ca9-ad29-9484b5c0c582.jpg?1601078461
 image_updated=2017-04-12
 value=3.825
 removal=2

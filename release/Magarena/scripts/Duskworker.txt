@@ -1,5 +1,5 @@
 name=Duskworker
-image=https://magiccards.info/scans/en/mi/166.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d18dd3b-980b-4833-93fd-79dc3a260da4.jpg?1562148618
 value=2.306
 rarity=U
 type=Artifact,Creature

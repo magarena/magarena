@@ -1,5 +1,5 @@
 name=Ardent Recruit
-image=https://magiccards.info/scans/en/mbs/2.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a7f9bd7-7232-4956-873d-52ff82eabfb3.jpg?1562906851
 value=3.408
 rarity=C
 type=Creature

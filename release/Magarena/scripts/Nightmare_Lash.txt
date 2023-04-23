@@ -1,5 +1,5 @@
 name=Nightmare Lash
-image=https://magiccards.info/scans/en/mi/219.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f8e3fa6-494c-412f-90cc-36d45cd2b175.jpg?1562149033
 value=4.208
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Wurmcalling
-image=https://magiccards.info/scans/en/ts/234.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85402aef-3fb1-4e78-9103-e2e47e5f3c65.jpg?1562923140
 value=3.910
 rarity=R
 type=Sorcery

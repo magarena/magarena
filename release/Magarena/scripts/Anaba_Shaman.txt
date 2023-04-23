@@ -1,5 +1,5 @@
 name=Anaba Shaman
-image=https://magiccards.info/scans/en/9e/172.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cae202e-63f1-4d8b-bf85-2bf1a03c054c.jpg?1562737483
 value=2.122
 rarity=C
 type=Creature

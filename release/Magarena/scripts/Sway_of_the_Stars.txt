@@ -1,5 +1,5 @@
 name=Sway of the Stars
-image=https://magiccards.info/scans/en/bok/54.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5eb58d9e-d181-4167-8b80-64b238183bdb.jpg?1562877344
 value=3.325
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Minion of Tevesh Szat
-image=https://magiccards.info/scans/en/ia/39.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c234a73c-4257-47af-a710-29ab765a7b2d.jpg?1562940863
 value=2.560
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Rathi Trapper
-image=https://magiccards.info/scans/en/mma/94.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e30c08c7-ff2b-40cb-93d0-18e48bf0cf4d.jpg?1619395957
 value=3.656
 rarity=C
 type=Creature

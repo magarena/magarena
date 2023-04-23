@@ -1,5 +1,5 @@
 name=Neutralizing Blast
-image=https://magiccards.info/scans/en/frf/44.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e549a8fc-6001-43db-88b1-ce8ed42a3443.jpg?1562830917
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Crusading Knight
-image=https://magiccards.info/scans/en/in/12.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4ab4640-1871-41dd-bd21-64741e21ba37.jpg?1562928291
 value=3.744
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Regisaur Alpha
-image=https://magiccards.info/scans/en/xln/227.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6a322c5-aa4c-4a99-a3ca-48c1353104f0.jpg?1562564727
 value=2.500
 rarity=R
 type=Creature

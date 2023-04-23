@@ -1,5 +1,5 @@
 name=Banishment Decree
-image=https://magiccards.info/scans/en/mbs/3.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c5f605c-9d16-493e-bc44-0e15bdf8c0bf.jpg?1562610340
 value=1.953
 rarity=C
 type=Instant

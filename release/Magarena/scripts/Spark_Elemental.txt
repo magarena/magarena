@@ -1,5 +1,5 @@
 name=Spark Elemental
-image=https://magiccards.info/scans/en/10e/237.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09e7dfad-aca9-498d-bd1c-5503b411ca5f.jpg?1562543469
 value=3.141
 rarity=U
 type=Creature

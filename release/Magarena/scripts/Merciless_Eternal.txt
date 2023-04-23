@@ -1,5 +1,5 @@
 name=Merciless Eternal
-image=https://magiccards.info/scans/en/hou/71.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11a6becd-15be-4f2d-8fda-35b1b289b28f.jpg?1562789909
 value=2.500
 rarity=U
 type=Creature

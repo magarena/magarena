@@ -1,5 +1,5 @@
 name=Brass's Bounty
-image=https://magiccards.info/scans/en/rix/94.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cfe5398-88e1-4106-9223-80bda0cd2e9a.jpg?1682209267
 value=2.500
 rarity=R
 type=Sorcery

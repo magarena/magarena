@@ -1,5 +1,5 @@
 name=Angelic Curator
-image=https://magiccards.info/scans/en/ul/1.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/332352c2-98f2-4eb8-b49a-026a39df227b.jpg?1626100036
 value=3.033
 rarity=C
 type=Creature

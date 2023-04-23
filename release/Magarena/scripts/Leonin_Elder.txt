@@ -1,5 +1,5 @@
 name=Leonin Elder
-image=https://magiccards.info/scans/en/mi/10.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9b766e7-fe4a-47fb-949b-e046b5a38d91.jpg?1562161847
 value=3.500
 rarity=C
 type=Creature

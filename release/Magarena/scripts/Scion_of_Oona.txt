@@ -1,5 +1,5 @@
 name=Scion of Oona
-image=https://magiccards.info/scans/en/mma/63.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a29f95fe-2efa-4788-84d8-2bd88d8650b4.jpg?1561968067
 value=4.433
 rarity=R
 type=Creature

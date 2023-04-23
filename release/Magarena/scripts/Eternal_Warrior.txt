@@ -1,5 +1,5 @@
 name=Eternal Warrior
-image=https://magiccards.info/scans/en/5e/225.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a1a36ca-2467-4c23-ba03-744c76b0be51.jpg?1562590144
 value=2.649
 rarity=C
 type=Enchantment

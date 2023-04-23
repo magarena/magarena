@@ -1,5 +1,5 @@
 name=Mercurial Chemister
-image=https://magiccards.info/scans/en/rtr/180.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24bf4eac-784d-4d9e-b7b3-92da98215376.jpg?1591321377
 value=3.968
 rarity=R
 type=Creature

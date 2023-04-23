@@ -1,5 +1,5 @@
 name=Ethereal Haze
-image=https://magiccards.info/scans/en/chk/9.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f1996af-5f15-447f-9b1d-98a7e97df53a.jpg?1562762002
 value=3.897
 rarity=C
 type=Instant

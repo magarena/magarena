@@ -1,5 +1,5 @@
 name=Destroy the Evidence
-image=https://magiccards.info/scans/en/rtr/64.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bca53097-108d-457e-831c-e3d6cb499a41.jpg?1562792382
 value=2.180
 rarity=C
 type=Sorcery

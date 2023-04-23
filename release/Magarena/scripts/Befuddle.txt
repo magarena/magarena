@@ -1,5 +1,5 @@
 name=Befuddle
-image=https://magiccards.info/scans/en/m19/309.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94c1f80e-65b7-4534-bfd4-1ae88274945b.jpg?1600718515
 image_updated=2018-08-07
 value=2.500
 rarity=C

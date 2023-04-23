@@ -1,5 +1,5 @@
 name=Thirst for Knowledge
-image=https://magiccards.info/scans/en/mma/67.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b927837-8252-4ea7-b2d0-ab624de65bd7.jpg?1654567024
 value=4.554
 rarity=U
 type=Instant

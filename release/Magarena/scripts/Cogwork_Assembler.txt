@@ -1,5 +1,5 @@
 name=Cogwork Assembler
-image=https://magiccards.info/scans/en/aer/145.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4bfde3f-f7d3-4902-b3cd-23f3fa53eff4.jpg?1599708878
 value=2.500
 rarity=U
 type=Artifact,Creature

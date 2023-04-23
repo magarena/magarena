@@ -1,5 +1,5 @@
 name=Haunted Angel
-image=https://magiccards.info/scans/en/ap/12.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78d2d11b-12e4-4810-a32d-8f1cdda3ec49.jpg?1562923513
 value=2.194
 rarity=U
 type=Creature

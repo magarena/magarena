@@ -1,5 +1,5 @@
 name=Riptide Chimera
-image=https://magiccards.info/scans/en/jou/48.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9f88da5-b013-478a-8a0b-da9d1e8eb2c9.jpg?1593095518
 value=3.750
 rarity=U
 type=Enchantment,Creature

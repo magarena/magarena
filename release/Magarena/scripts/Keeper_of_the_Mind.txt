@@ -1,5 +1,5 @@
 name=Keeper of the Mind
-image=https://magiccards.info/scans/en/ex/36.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bc232d4-ab4f-4d88-a9ec-72403d05ec04.jpg?1562088296
 value=3.886
 rarity=U
 type=Creature

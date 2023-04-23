@@ -1,5 +1,5 @@
 name=Sphinx Sovereign
-image=https://magiccards.info/scans/en/ala/196.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0fc130e-57ed-40a7-a9ba-d689e7dc3698.jpg?1562709247
 value=3.026
 rarity=M
 type=Artifact,Creature

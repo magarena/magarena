@@ -1,5 +1,5 @@
 name=Nettling Curse
-image=https://magiccards.info/scans/en/di/48.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69bf458c-9e2c-4d36-90c5-d9b772f99d3c.jpg?1593272944
 value=3.141
 rarity=C
 type=Enchantment

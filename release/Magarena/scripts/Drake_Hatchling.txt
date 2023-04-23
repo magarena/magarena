@@ -1,5 +1,5 @@
 name=Drake Hatchling
-image=https://magiccards.info/scans/en/mm/76.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64ee32f9-6120-4f15-a692-89a4cd8167c6.jpg?1562380897
 value=2.731
 rarity=C
 type=Creature

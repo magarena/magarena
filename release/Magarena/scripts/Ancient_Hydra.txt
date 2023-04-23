@@ -1,5 +1,5 @@
 name=Ancient Hydra
-image=https://magiccards.info/scans/en/ne/76.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5de57c84-38b9-4606-b934-0ab270496582.jpg?1562630146
 value=3.219
 rarity=U
 type=Creature

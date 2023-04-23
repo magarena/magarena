@@ -1,5 +1,5 @@
 name=Noyan Dar, Roil Shaper
-image=https://magiccards.info/scans/en/bfz/216.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/018a66fc-e7aa-42df-a622-50743cb20183.jpg?1562895386
 image_updated=2015-11-08
 value=2.500
 rarity=R

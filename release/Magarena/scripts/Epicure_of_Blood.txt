@@ -1,5 +1,5 @@
 name=Epicure of Blood
-image=https://magiccards.info/scans/en/m19/95.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac79386b-91eb-4813-8f3c-3b74b45be188.jpg?1625976930
 value=2.500
 rarity=C
 type=Creature

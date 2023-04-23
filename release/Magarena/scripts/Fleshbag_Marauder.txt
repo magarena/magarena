@@ -1,5 +1,5 @@
 name=Fleshbag Marauder
-image=https://magiccards.info/scans/en/cn2/136.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a03c738c-88d9-4cf6-a650-20ce6e5565bc.jpg?1637630249
 image_updated=2017-08-29
 value=2.500
 rarity=U

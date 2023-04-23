@@ -1,5 +1,5 @@
 name=Ramosian Sky Marshal
-image=https://magiccards.info/scans/en/mm/40.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16638976-8a78-4233-8ebc-42ea9bb49e0a.jpg?1562379425
 value=3.463
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Act of Authority
-image=https://magiccards.info/scans/en/c13/1.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e107bd35-eddd-40f7-aea8-3a1eec3363c0.jpg?1562942444
 value=3.750
 rarity=R
 type=Enchantment

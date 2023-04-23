@@ -1,5 +1,5 @@
 name=Tahngarth, Talruum Hero
-image=https://magiccards.info/scans/en/ps/74a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1778f37-af01-4f8c-ab9d-a4c60abf7e78.jpg?1586450735
 value=4.071
 rarity=R
 type=Legendary,Creature

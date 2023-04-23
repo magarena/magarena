@@ -1,5 +1,5 @@
 name=Ring of Immortals
-image=https://magiccards.info/scans/en/lg/238.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61706102-67fd-4167-bd7d-ec6da41db362.jpg?1562859194
 value=2.897
 rarity=R
 type=Artifact

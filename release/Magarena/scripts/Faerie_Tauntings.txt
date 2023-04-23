@@ -1,5 +1,5 @@
 name=Faerie Tauntings
-image=https://magiccards.info/scans/en/lw/112.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33727782-dafd-4a7c-96dd-6ffaf667cc6b.jpg?1562343937
 value=2.892
 rarity=U
 type=Tribal,Enchantment

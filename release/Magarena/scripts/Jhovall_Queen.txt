@@ -1,5 +1,5 @@
 name=Jhovall Queen
-image=https://magiccards.info/scans/en/mm/25.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8eb55cc-ddde-4f15-9262-b9aee28059d3.jpg?1562382560
 value=3.486
 rarity=R
 type=Creature

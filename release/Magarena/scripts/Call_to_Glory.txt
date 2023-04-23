@@ -1,5 +1,5 @@
 name=Call to Glory
-image=https://magiccards.info/scans/en/chk/4.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/758fcfe4-0347-4ac6-8e29-f945cb1d7295.jpg?1611369533
 value=3.174
 rarity=C
 type=Instant

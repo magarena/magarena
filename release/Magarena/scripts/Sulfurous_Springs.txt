@@ -1,5 +1,5 @@
 name=Sulfurous Springs
-image=https://magiccards.info/scans/en/10e/359.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfd5450a-6490-417f-9aea-b6fca6f380d7.jpg?1673308373
 value=4.352
 rarity=R
 type=Land

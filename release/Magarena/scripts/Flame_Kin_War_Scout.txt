@@ -1,5 +1,5 @@
 name=Flame-Kin War Scout
-image=https://magiccards.info/scans/en/di/61.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8092518-99ba-43b8-b5e9-8b46f1679696.jpg?1593273121
 value=2.207
 rarity=U
 type=Creature

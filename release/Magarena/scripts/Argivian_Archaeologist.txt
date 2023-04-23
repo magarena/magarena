@@ -1,5 +1,5 @@
 name=Argivian Archaeologist
-image=https://magiccards.info/scans/en/aq/94.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e765567-4f45-4571-aa20-0d127fc522e0.jpg?1559592400
 value=4.092
 rarity=R
 type=Creature

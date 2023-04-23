@@ -1,5 +1,5 @@
 name=Mightstone
-image=https://magiccards.info/scans/en/aq/20.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39310639-643d-42d0-9e92-7bc0da9abd21.jpg?1562908450
 value=2.333
 rarity=U
 type=Artifact

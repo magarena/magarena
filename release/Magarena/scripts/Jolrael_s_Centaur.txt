@@ -1,5 +1,5 @@
 name=Jolrael's Centaur
-image=https://magiccards.info/scans/en/mr/120.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31588ea3-31d2-4118-9b9f-4ce820c16a15.jpg?1562718336
 value=4.170
 rarity=C
 type=Creature

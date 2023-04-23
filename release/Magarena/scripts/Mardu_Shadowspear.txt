@@ -1,5 +1,5 @@
 name=Mardu Shadowspear
-image=https://magiccards.info/scans/en/frf/74.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1f55b50-b3b1-4336-914c-1cc2669b8fac.jpg?1562829538
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Darkling Stalker
-image=https://magiccards.info/scans/en/tp/13.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eb883b7-da6a-45c3-9dde-61334a0ddcae.jpg?1562054216
 value=3.307
 rarity=C
 type=Creature

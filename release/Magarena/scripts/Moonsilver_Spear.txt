@@ -1,5 +1,5 @@
 name=Moonsilver Spear
-image=https://magiccards.info/scans/en/c14/251.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4ace878-6d15-4276-9bfb-2f23667c6d7e.jpg?1631589097
 value=3.891
 rarity=R
 type=Artifact

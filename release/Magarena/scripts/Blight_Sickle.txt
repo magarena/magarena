@@ -1,5 +1,5 @@
 name=Blight Sickle
-image=https://magiccards.info/scans/en/shm/247.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0f828c7-aedc-462b-8455-46e8a90feb85.jpg?1562835517
 value=2.973
 rarity=C
 type=Artifact

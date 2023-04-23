@@ -1,5 +1,5 @@
 name=Summit Prowler
-image=https://magiccards.info/scans/en/dtk/160.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eec9005d-eca8-45a6-b221-9d5a2cfb1e91.jpg?1562795310
 value=2.500
 rarity=C
 type=Creature

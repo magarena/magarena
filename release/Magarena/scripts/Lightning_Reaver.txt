@@ -1,5 +1,5 @@
 name=Lightning Reaver
-image=https://magiccards.info/scans/en/arb/42.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24a0860d-d3b9-4a00-a8cb-617bc317b93d.jpg?1562640145
 value=3.796
 rarity=R
 type=Creature

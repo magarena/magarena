@@ -1,5 +1,5 @@
 name=Solidarity
-image=https://magiccards.info/scans/en/8e/46.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/7810eec1-9bb4-480f-9074-712ad9eb8fba.jpg?1562919057
 value=2.848
 rarity=C
 type=Instant

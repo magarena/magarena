@@ -1,5 +1,5 @@
 name=Fire Juggler
-image=https://magiccards.info/scans/en/mt/90.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f04d5eef-da88-496b-a902-b87b0b386f96.jpg?1562882327
 value=2.597
 rarity=C
 type=Creature

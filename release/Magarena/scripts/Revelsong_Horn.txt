@@ -1,5 +1,5 @@
 name=Revelsong Horn
-image=https://magiccards.info/scans/en/shm/261.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10a4801c-fa69-47a0-bdfa-f5f110fd0976.jpg?1562826859
 value=1.567
 rarity=U
 type=Artifact

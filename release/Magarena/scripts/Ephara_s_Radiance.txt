@@ -1,5 +1,5 @@
 name=Ephara's Radiance
-image=https://magiccards.info/scans/en/bng/9.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0741582-0c7b-4d5b-83a9-dd8862de1f24.jpg?1593091407
 value=2.050
 rarity=C
 type=Enchantment

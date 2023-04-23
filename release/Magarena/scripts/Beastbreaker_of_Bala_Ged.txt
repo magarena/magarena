@@ -1,5 +1,5 @@
 name=Beastbreaker of Bala Ged
-image=https://magiccards.info/scans/en/roe/178.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/9499b38f-5030-4348-a0ff-9002b0e46f2a.jpg?1593095420
 value=3.409
 rarity=U
 type=Creature

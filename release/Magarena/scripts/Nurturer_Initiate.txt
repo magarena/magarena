@@ -1,5 +1,5 @@
 name=Nurturer Initiate
-image=https://magiccards.info/scans/en/shm/124.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2330c78d-1655-4074-a650-27740be4cee1.jpg?1562827868
 value=2.635
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Willow Dryad
-image=https://magiccards.info/scans/en/po/119.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1def835b-aabb-4a9d-8fb9-460452de0d79.jpg?1562445686
 value=2.481
 rarity=C
 type=Creature

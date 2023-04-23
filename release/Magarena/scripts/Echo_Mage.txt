@@ -1,5 +1,5 @@
 name=Echo Mage
-image=https://magiccards.info/scans/en/roe/64.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b76ba96-9630-44fb-849e-3c3848c03876.jpg?1562924499
 value=4.000
 rarity=R
 type=Creature

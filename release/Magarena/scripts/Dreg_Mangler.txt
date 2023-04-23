@@ -1,5 +1,5 @@
 name=Dreg Mangler
-image=https://magiccards.info/scans/en/rtr/158.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/162a865b-617d-40bf-900f-4aeca3602600.jpg?1673148540
 value=4.012
 rarity=U
 type=Creature

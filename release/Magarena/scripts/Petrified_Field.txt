@@ -1,5 +1,5 @@
 name=Petrified Field
-image=https://magiccards.info/scans/en/od/323.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eaeaf9f2-d196-4607-a704-06f2315d8cc5.jpg?1562938986
 value=3.276
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Rhox
-image=https://magiccards.info/scans/en/10e/291.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6aa50126-f6ec-4917-ac45-4b1f8f23ca09.jpg?1562549251
 value=4.295
 rarity=R
 type=Creature

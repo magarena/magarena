@@ -1,5 +1,5 @@
 name=Darkwatch Elves
-image=https://magiccards.info/scans/en/ul/99.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/212a807f-d5d0-4787-b390-3351783a1ae4.jpg?1562862333
 value=3.389
 rarity=U
 type=Creature

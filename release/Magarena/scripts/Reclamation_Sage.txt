@@ -1,5 +1,5 @@
 name=Reclamation Sage
-image=https://magiccards.info/scans/en/m19/196.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c4a25f0-2929-4404-9ce5-bcd4715f90a5.jpg?1631235123
 image_updated=2018-08-07
 value=3.929
 rarity=U

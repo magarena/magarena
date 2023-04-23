@@ -1,5 +1,5 @@
 name=Gruul Charm
-image=https://magiccards.info/scans/en/gtc/169.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9235afe5-0a6b-43c2-921c-18524cf032f1.jpg?1561836885
 value=3.121
 rarity=U
 type=Instant

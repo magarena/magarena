@@ -1,5 +1,5 @@
 name=Amass the Components
-image=https://magiccards.info/scans/en/ima/41.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f36521a7-8997-45da-aaa6-dd70d5c4e7f4.jpg?1562855642
 image_updated=2017-04-12
 value=2.653
 rarity=C

@@ -1,5 +1,5 @@
 name=Blistering Barrier
-image=https://magiccards.info/scans/en/mr/159.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56d000d8-24e1-4cf3-bed9-e68a89c8f569.jpg?1562719277
 value=2.738
 rarity=C
 type=Creature

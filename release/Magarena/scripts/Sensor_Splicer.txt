@@ -1,5 +1,5 @@
 name=Sensor Splicer
-image=https://magiccards.info/scans/en/mm3/23.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d308c11-cc8d-4fa6-bbe1-357b164733ad.jpg?1673147124
 image_updated=2017-08-08
 value=2.625
 rarity=C

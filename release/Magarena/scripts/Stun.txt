@@ -1,5 +1,5 @@
 name=Stun
-image=https://magiccards.info/scans/en/10e/240.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b3231af-f1cc-4f3c-8f97-60e5d639d1ad.jpg?1562429360
 value=2.806
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Polar Kraken
-image=https://magiccards.info/scans/en/ia/89.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4643512-6071-45c4-bffc-8feec5bb094f.jpg?1559592314
 value=3.136
 rarity=R
 type=Creature

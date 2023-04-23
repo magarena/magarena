@@ -1,5 +1,5 @@
 name=Razorverge Thicket
-image=https://magiccards.info/scans/en/som/228.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65b26f68-3a25-4c4e-bc76-a199ab479a50.jpg?1675957278
 value=4.275
 rarity=R
 type=Land

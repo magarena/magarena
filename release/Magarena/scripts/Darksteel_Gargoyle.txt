@@ -1,5 +1,5 @@
 name=Darksteel Gargoyle
-image=https://magiccards.info/scans/en/ds/111.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc3218ae-376e-4f46-ad3b-b71bce0b73b1.jpg?1562936048
 value=3.025
 rarity=U
 type=Artifact,Creature

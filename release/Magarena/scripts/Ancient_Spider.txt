@@ -1,5 +1,5 @@
 name=Ancient Spider
-image=https://magiccards.info/scans/en/ps/96.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75ca99de-57e7-47c4-b40a-6e41e3b18069.jpg?1562919780
 value=3.841
 rarity=R
 type=Creature

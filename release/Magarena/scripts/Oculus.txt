@@ -1,5 +1,5 @@
 name=Oculus
-image=https://magiccards.info/scans/en/mbs/29.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/673bebb4-9c82-40ca-8552-b9030e961005.jpg?1562611906
 value=2.771
 rarity=C
 type=Creature

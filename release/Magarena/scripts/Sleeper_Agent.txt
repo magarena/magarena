@@ -1,5 +1,5 @@
 name=Sleeper Agent
-image=https://magiccards.info/scans/en/10e/178.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60096938-d520-424a-afe4-0c5ee8b90aa1.jpg?1562548619
 value=3.449
 rarity=R
 type=Creature

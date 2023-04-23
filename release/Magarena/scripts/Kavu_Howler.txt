@@ -1,5 +1,5 @@
 name=Kavu Howler
-image=https://magiccards.info/scans/en/ap/79.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fdf502f-445d-4724-b7d0-8fdd5bf557a8.jpg?1562917607
 value=3.186
 rarity=U
 type=Creature

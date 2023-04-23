@@ -1,5 +1,5 @@
 name=Dragon Egg
-image=https://magiccards.info/scans/en/m19/138.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/300761b6-9943-4251-9b1a-96a940f3334b.jpg?1608910163
 image_updated=2018-08-07
 value=3.591
 rarity=U

@@ -1,5 +1,5 @@
 name=Olivia Voldaren
-image=https://magiccards.info/scans/en/mm3/177.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6411d49-b108-423c-825f-67fe8dbe1f58.jpg?1593814508
 image_updated=2017-08-08
 value=3.939
 rarity=M

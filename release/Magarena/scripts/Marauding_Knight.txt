@@ -1,5 +1,5 @@
 name=Marauding Knight
-image=https://magiccards.info/scans/en/in/110.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cea2a7de-c67e-4541-be8c-e5ef7b64d94a.jpg?1562936560
 value=4.132
 rarity=R
 type=Creature

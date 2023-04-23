@@ -1,5 +1,5 @@
 name=Lifeblood
-image=https://magiccards.info/scans/en/lg/196.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4ecb1362-9a67-4d4c-8d69-9ac2ebf4d0b0.jpg?1587857954
 value=1.838
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Snow Devil
-image=https://magiccards.info/scans/en/cstd/16.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2be3a9a5-2ac5-4ea4-915d-8cff35c0e72f.jpg?1587911671
 value=2.839
 rarity=C
 type=Enchantment

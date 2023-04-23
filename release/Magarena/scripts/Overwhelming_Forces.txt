@@ -1,5 +1,5 @@
 name=Overwhelming Forces
-image=https://magiccards.info/scans/en/p3k/79.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb53ccdd-150b-41a5-b515-08f65961313d.jpg?1562954577
 value=4.151
 rarity=R
 type=Sorcery

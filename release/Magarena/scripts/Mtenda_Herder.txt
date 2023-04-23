@@ -1,5 +1,5 @@
 name=Mtenda Herder
-image=https://magiccards.info/scans/en/mr/233.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51f30a3d-1421-4706-b17f-39a9ec7a0d8b.jpg?1562719270
 value=3.833
 rarity=C
 type=Creature

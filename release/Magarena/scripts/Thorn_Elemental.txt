@@ -1,5 +1,5 @@
 name=Thorn Elemental
-image=https://magiccards.info/scans/en/dom/185.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da901037-20e6-4445-8e7e-1ccd2e8b13ae.jpg?1562743950
 image_updated=2018-08-07
 value=4.361
 rarity=U

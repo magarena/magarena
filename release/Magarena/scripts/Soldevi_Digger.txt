@@ -1,5 +1,5 @@
 name=Soldevi Digger
-image=https://magiccards.info/scans/en/ai/174.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/473d6e22-1184-4d29-a7d1-f6773666ff29.jpg?1562868542
 value=3.339
 rarity=R
 type=Artifact

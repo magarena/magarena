@@ -1,5 +1,5 @@
 name=Vault Skyward
-image=https://magiccards.info/scans/en/som/51.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e934192-2ea3-48fe-a2a9-42c2ee9b22f7.jpg?1562817414
 value=2.945
 rarity=C
 type=Instant

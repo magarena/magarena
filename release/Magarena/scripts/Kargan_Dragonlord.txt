@@ -1,5 +1,5 @@
 name=Kargan Dragonlord
-image=https://magiccards.info/scans/en/roe/152.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b669d2d9-649b-4941-9a76-9833bdf77ca4.jpg?1562707735
 value=4.388
 rarity=M
 type=Creature

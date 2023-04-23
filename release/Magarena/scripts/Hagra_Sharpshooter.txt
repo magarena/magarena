@@ -1,5 +1,5 @@
 name=Hagra Sharpshooter
-image=https://magiccards.info/scans/en/bfz/113.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a706b2e3-bd0e-4111-8b68-976869c7d707.jpg?1562934581
 image_updated=2015-11-08
 value=2.500
 rarity=U

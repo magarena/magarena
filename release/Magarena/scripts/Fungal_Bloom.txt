@@ -1,5 +1,5 @@
 name=Fungal Bloom
-image=https://magiccards.info/scans/en/fe/79.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8047df4-ff0a-4177-9426-74644b97b2a5.jpg?1562870950
 value=3.861
 rarity=R
 type=Enchantment

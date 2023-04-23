@@ -1,5 +1,5 @@
 name=Corrosive Gale
-image=https://magiccards.info/scans/en/nph/107.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04a13825-ab9b-4ffd-9b59-6198181891b9.jpg?1562875245
 value=3.014
 rarity=U
 type=Sorcery

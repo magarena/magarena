@@ -1,5 +1,5 @@
 name=Reliquary Tower
-image=https://magiccards.info/scans/en/m19/254.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bdb402f-b3a9-499c-8b00-31a36c3cba89.jpg?1673306178
 image_updated=2018-08-07
 value=3.475
 rarity=U

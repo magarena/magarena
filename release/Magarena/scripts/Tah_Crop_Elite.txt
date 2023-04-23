@@ -1,5 +1,5 @@
 name=Tah-Crop Elite
-image=https://magiccards.info/scans/en/akh/31.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce8dda75-a196-47bc-98d8-522eb35e7d1a.jpg?1543674791
 value=2.500
 rarity=C
 type=Creature

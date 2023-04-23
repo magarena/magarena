@@ -1,5 +1,5 @@
 name=Thalakos Deceiver
-image=https://magiccards.info/scans/en/sh/45.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae4cc2f5-3a50-40c8-87ea-6b92f081f55c.jpg?1562597352
 value=3.978
 rarity=R
 type=Creature

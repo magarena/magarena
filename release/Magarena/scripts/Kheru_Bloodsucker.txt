@@ -1,5 +1,5 @@
 name=Kheru Bloodsucker
-image=https://magiccards.info/scans/en/ktk/75.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baf15cd4-13be-48e7-b3f5-a5106eb02c45.jpg?1562792642
 value=3.000
 rarity=U
 type=Creature

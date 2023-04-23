@@ -1,5 +1,5 @@
 name=Graceblade Artisan
-image=https://magiccards.info/scans/en/dtk/20.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9eedcf6c-5796-4843-b6b8-df78e11e72c2.jpg?1562790664
 value=2.500
 rarity=U
 type=Creature

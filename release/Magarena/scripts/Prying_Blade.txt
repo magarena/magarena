@@ -1,5 +1,5 @@
 name=Prying Blade
-image=https://magiccards.info/scans/en/xln/244.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad45720e-2870-414d-8119-8e48c5600d3b.jpg?1562562057
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Urza's Blueprints
-image=https://magiccards.info/scans/en/ul/137.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/026f0d4b-c13e-48a6-915f-b0edd2ac0ae8.jpg?1562862299
 value=2.823
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Primeval Light
-image=https://magiccards.info/scans/en/gp/93.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/293ce819-c228-4ff1-827c-3d0cbed703ea.jpg?1593272496
 value=3.605
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=High Priest of Penance
-image=https://magiccards.info/scans/en/gtc/171.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc264fad-c541-4cc6-8b56-44abf3f1e8a0.jpg?1674142485
 value=3.928
 rarity=R
 type=Creature

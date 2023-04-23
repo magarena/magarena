@@ -1,5 +1,5 @@
 name=Exiled Boggart
-image=https://magiccards.info/scans/en/lw/109.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fe41509-02db-415c-964e-971ea1d5485c.jpg?1562350241
 value=2.256
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Twilight Drover
-image=https://magiccards.info/scans/en/rav/33.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef2bb440-87b7-4d3d-9b37-2f1ebaca4b3f.jpg?1641601715
 image_updated=2017-01-11
 value=3.529
 rarity=R

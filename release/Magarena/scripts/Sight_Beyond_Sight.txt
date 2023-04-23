@@ -1,5 +1,5 @@
 name=Sight Beyond Sight
-image=https://magiccards.info/scans/en/dtk/75.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/def0df83-fe20-497f-b372-1d2e4d7c8df9.jpg?1562794255
 value=2.500
 rarity=U
 type=Sorcery

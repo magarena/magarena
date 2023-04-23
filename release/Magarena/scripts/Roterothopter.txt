@@ -1,5 +1,5 @@
 name=Roterothopter
-image=https://magiccards.info/scans/en/hl/134.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87504dd5-3f2f-411a-b966-c523b0ea1f9c.jpg?1562869517
 value=2.855
 rarity=C
 type=Artifact,Creature

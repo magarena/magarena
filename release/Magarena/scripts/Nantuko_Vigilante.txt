@@ -1,5 +1,5 @@
 name=Nantuko Vigilante
-image=https://magiccards.info/scans/en/le/132.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1d83ff7-ed79-4334-a396-28f140d43012.jpg?1568004621
 value=3.667
 rarity=C
 type=Creature

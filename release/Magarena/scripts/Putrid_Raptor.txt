@@ -1,5 +1,5 @@
 name=Putrid Raptor
-image=https://magiccards.info/scans/en/sc/71.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/9127942b-d73d-42a9-9f97-6a39fa798a8b.jpg?1562532123
 value=3.577
 rarity=U
 type=Creature

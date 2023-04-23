@@ -1,5 +1,5 @@
 name=Leonin Scimitar
-image=https://magiccards.info/scans/en/10e/331.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8cceb7b-7166-491f-b471-8e0bc42f611e.jpg?1562553096
 value=2.938
 rarity=U
 type=Artifact

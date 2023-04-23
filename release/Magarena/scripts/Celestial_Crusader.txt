@@ -1,5 +1,5 @@
 name=Celestial Crusader
-image=https://magiccards.info/scans/en/c14/68.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56f371f5-9c2a-4a00-a4d2-e4f97ac0f3e0.jpg?1619392769
 value=2.500
 rarity=U
 type=Creature

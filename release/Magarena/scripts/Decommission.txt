@@ -1,5 +1,5 @@
 name=Decommission
-image=https://magiccards.info/scans/en/aer/16.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cca66e9-be21-4fc7-8951-cd99e9b213dc.jpg?1576381374
 value=2.500
 rarity=C
 type=Instant

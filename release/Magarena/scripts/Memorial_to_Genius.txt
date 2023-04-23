@@ -1,5 +1,5 @@
 name=Memorial to Genius
-image=https://magiccards.info/scans/en/dom/243.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d96dd97-ce88-4576-8261-c7866a06275d.jpg?1625980495
 value=2.500
 rarity=U
 type=Land

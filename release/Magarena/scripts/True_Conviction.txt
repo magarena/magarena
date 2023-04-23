@@ -1,5 +1,5 @@
 name=True Conviction
-image=https://magiccards.info/scans/en/c14/93.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e5dc58b-f486-4b9f-9138-33efa31a05e4.jpg?1561952479
 value=4.038
 rarity=R
 type=Enchantment

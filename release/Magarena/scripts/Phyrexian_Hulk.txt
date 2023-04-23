@@ -1,5 +1,5 @@
 name=Phyrexian Hulk
-image=https://magiccards.info/scans/en/m13/209.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/304bc0a2-0cf4-4609-a0fc-de933402c64a.jpg?1562428872
 value=1.844
 rarity=U
 type=Artifact,Creature

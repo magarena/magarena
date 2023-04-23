@@ -1,5 +1,5 @@
 name=Skyshroud Forest
-image=https://magiccards.info/scans/en/tp/332.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba561609-406d-47c8-9d5b-1fb20ecac916.jpg?1562431280
 value=2.500
 rarity=R
 type=Land

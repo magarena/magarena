@@ -1,5 +1,5 @@
 name=Relentless Skaabs
-image=https://magiccards.info/scans/en/dka/45.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cf48c1a-5709-4e24-8a85-8292a4457150.jpg?1592763076
 value=3.227
 rarity=U
 type=Creature

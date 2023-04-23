@@ -1,5 +1,5 @@
 name=Vampire Bats
-image=https://magiccards.info/scans/en/10e/186.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/573c35a4-543b-47fe-80b4-d6462abfb82f.jpg?1562915468
 image_updated=2017-01-11
 value=3.348
 rarity=C

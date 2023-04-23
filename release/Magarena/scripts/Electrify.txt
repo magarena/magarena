@@ -1,5 +1,5 @@
 name=Electrify
-image=https://magiccards.info/scans/en/m19/139.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60bee89d-d916-4095-830f-6270f8c4f0d8.jpg?1562302617
 image_updated=2018-08-07
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Pious Kitsune
-image=https://magiccards.info/scans/en/chk/38.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb4124b9-5169-471e-b805-ceeffeec9184.jpg?1562764144
 value=2.308
 rarity=C
 type=Creature

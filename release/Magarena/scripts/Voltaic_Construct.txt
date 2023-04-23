@@ -1,5 +1,5 @@
 name=Voltaic Construct
-image=https://magiccards.info/scans/en/ds/156.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1ca55ec-d262-40d8-b654-40e177bcfd6e.jpg?1562638504
 value=4.156
 rarity=U
 type=Artifact,Creature

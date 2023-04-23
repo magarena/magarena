@@ -1,5 +1,5 @@
 name=Sacred Prey
-image=https://magiccards.info/scans/en/mm/268.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e965d32c-3151-48e8-b256-0b7fa8a8a211.jpg?1562383528
 value=2.477
 rarity=C
 type=Creature

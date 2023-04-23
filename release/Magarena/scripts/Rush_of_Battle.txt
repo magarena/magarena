@@ -1,5 +1,5 @@
 name=Rush of Battle
-image=https://magiccards.info/scans/en/ktk/19.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d47d8aa-59c8-4e2c-bb48-328ae924dbb3.jpg?1562782475
 value=2.500
 rarity=C
 type=Sorcery

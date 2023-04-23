@@ -1,5 +1,5 @@
 name=Demigod of Revenge
-image=https://magiccards.info/scans/en/mma/187.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a62b9ea-18ea-4fbc-8e4d-0bacb4e4c47e.jpg?1561967830
 value=4.054
 rarity=R
 type=Creature

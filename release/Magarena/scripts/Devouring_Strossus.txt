@@ -1,5 +1,5 @@
 name=Devouring Strossus
-image=https://magiccards.info/scans/en/in/101.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/064f013f-e74f-419d-8d17-7748bd91885e.jpg?1562896253
 value=4.167
 rarity=R
 type=Creature

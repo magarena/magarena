@@ -1,5 +1,5 @@
 name=School of Piranha
-image=https://magiccards.info/scans/en/ex/45.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71217af5-3538-4e42-9343-3949b5306671.jpg?1562087855
 value=1.872
 rarity=C
 type=Creature

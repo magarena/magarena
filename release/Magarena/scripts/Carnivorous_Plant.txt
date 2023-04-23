@@ -1,5 +1,5 @@
 name=Carnivorous Plant
-image=https://magiccards.info/scans/en/4e/119.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afa8023b-1afc-4c05-864e-96f65b0aa140.jpg?1559592434
 value=2.903
 rarity=C
 type=Creature

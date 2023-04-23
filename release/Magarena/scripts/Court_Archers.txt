@@ -1,5 +1,5 @@
 name=Court Archers
-image=https://magiccards.info/scans/en/ala/126.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3776b1c-4a3f-43b9-962e-64010f286ba5.jpg?1562707331
 value=2.512
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bonesplitter
-image=https://magiccards.info/scans/en/mma/202.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/690972a8-72df-4050-a353-16e45589167c.jpg?1608917758
 value=3.986
 rarity=C
 type=Artifact

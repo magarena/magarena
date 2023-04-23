@@ -1,5 +1,5 @@
 name=Wakedancer
-image=https://magiccards.info/scans/en/ema/116.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e85a5833-042b-4b13-8151-f9e4bcf8e810.jpg?1580014439
 value=3.750
 rarity=C
 type=Creature

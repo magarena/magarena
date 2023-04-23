@@ -1,5 +1,5 @@
 name=Inferno Fist
-image=https://magiccards.info/scans/en/m15/150.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/721a42f4-5884-418f-b1f9-7cb651559ad0.jpg?1562788995
 value=3.300
 rarity=C
 type=Enchantment

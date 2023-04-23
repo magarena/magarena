@@ -1,5 +1,5 @@
 name=Gideon, Martial Paragon
-image=https://magiccards.info/scans/en/akh/270.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c057ca8-9811-4dc3-9b0e-f9f69f752d1d.jpg?1561778768
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

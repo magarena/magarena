@@ -1,5 +1,5 @@
 name=Aethersnipe
-image=https://magiccards.info/scans/en/mm2/39.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cc9b5ee-4d6d-42ea-8b13-b8a7059781c9.jpg?1673147191
 image_updated=2016-09-27
 value=3.643
 rarity=C

@@ -1,5 +1,5 @@
 name=Everdawn Champion
-image=https://magiccards.info/scans/en/rix/6.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46c38e2a-3a82-402f-a436-f9ebb2ba2ea4.jpg?1592764701
 value=2.500
 rarity=U
 type=Creature

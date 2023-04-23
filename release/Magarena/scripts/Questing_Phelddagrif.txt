@@ -1,5 +1,5 @@
 name=Questing Phelddagrif
-image=https://magiccards.info/scans/en/ps/119.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cea4cfef-6736-42a5-9f3e-10de8d0cd8d3.jpg?1562938708
 value=4.243
 rarity=R
 type=Creature

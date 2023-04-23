@@ -1,5 +1,5 @@
 name=Mirko Vosk, Mind Drinker
-image=https://magiccards.info/scans/en/dgm/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d37cdd3e-4303-4391-aff4-4a543e65a836.jpg?1562934530
 value=3.525
 rarity=R
 type=Legendary,Creature

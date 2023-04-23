@@ -1,5 +1,5 @@
 name=Izzet Keyrune
-image=https://magiccards.info/scans/en/rtr/230.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83e4e83b-cbb8-4efd-b6c4-4459a29177ac.jpg?1562789181
 value=2.905
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Updraft
-image=https://magiccards.info/scans/en/5e/133.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b4c1316-d6df-4bc4-9bfe-0458ff7c2908.jpg?1587857211
 value=2.261
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Illuminated Wings
-image=https://magiccards.info/scans/en/ud/34.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f98e703-a0d3-497f-840a-aa026b02d47f.jpg?1562444250
 value=2.433
 rarity=C
 type=Enchantment

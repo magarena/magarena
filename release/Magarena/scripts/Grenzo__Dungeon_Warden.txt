@@ -1,5 +1,5 @@
 name=Grenzo, Dungeon Warden
-image=https://magiccards.info/scans/en/a25/205.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e19c383-88bd-4bde-ac81-c0eb6d5b5bd4.jpg?1562436569
 image_updated=2018-04-27
 value=4.059
 rarity=R

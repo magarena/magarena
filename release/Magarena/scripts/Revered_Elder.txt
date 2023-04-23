@@ -1,5 +1,5 @@
 name=Revered Elder
-image=https://magiccards.info/scans/en/mm/43.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0793175-e56b-4ff8-9e22-3a96a698068c.jpg?1562382546
 value=2.117
 rarity=C
 type=Creature

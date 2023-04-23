@@ -1,5 +1,5 @@
 name=Boggart Ram-Gang
-image=https://magiccards.info/scans/en/shm/203.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63e25b70-fa21-4663-aabd-34b7e0b75c34.jpg?1562830927
 value=3.573
 rarity=U
 type=Creature

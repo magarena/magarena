@@ -1,5 +1,5 @@
 name=Black Knight
-image=https://magiccards.info/scans/en/m11/83.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db593d4f-d3c1-48ae-a55d-4b61d2cb5cc2.jpg?1562947216
 image_updated=2015-11-13
 value=4.276
 rarity=U

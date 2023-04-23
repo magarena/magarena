@@ -1,5 +1,5 @@
 name=Vulturous Aven
-image=https://magiccards.info/scans/en/dtk/126.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2fb0cc9-aebd-4bbf-8735-add3b753c118.jpg?1562791790
 value=2.500
 rarity=C
 type=Creature

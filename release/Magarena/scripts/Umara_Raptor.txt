@@ -1,5 +1,5 @@
 name=Umara Raptor
-image=https://magiccards.info/scans/en/zen/75.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/6049cc80-1faa-48bf-897e-fefe5a8e7ab2.jpg?1562612698
 value=3.820
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Blizzard Elemental
-image=https://magiccards.info/scans/en/ud/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5949c5a7-9656-466a-add8-1800973fefee.jpg?1562443773
 value=2.857
 rarity=R
 type=Creature

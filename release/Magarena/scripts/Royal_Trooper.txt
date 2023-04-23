@@ -1,5 +1,5 @@
 name=Royal Trooper
-image=https://magiccards.info/scans/en/st/25.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2ef5a76-e91c-4687-8323-7436ced35153.jpg?1562937337
 value=3.021
 rarity=U
 type=Creature

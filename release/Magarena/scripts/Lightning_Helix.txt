@@ -1,5 +1,5 @@
 name=Lightning Helix
-image=https://magiccards.info/scans/en/ima/204.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58f25737-a195-4763-bc23-b3c4d38b9e58.jpg?1673148879
 image_updated=2017-04-12
 value=4.000
 removal=3

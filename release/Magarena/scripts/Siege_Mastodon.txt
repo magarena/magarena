@@ -1,5 +1,5 @@
 name=Siege Mastodon
-image=https://magiccards.info/scans/en/m12/34.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71fd27a8-2de6-454f-8174-a60918bfe60e.jpg?1592518274
 value=1.529
 rarity=C
 type=Creature

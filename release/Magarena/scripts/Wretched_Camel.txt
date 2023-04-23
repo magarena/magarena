@@ -1,5 +1,5 @@
 name=Wretched Camel
-image=https://magiccards.info/scans/en/hou/82.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdd729df-8a02-4d5e-8432-bc0d006b0d3d.jpg?1562815080
 value=2.500
 rarity=C
 type=Creature

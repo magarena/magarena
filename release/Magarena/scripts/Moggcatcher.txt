@@ -1,5 +1,5 @@
 name=Moggcatcher
-image=https://magiccards.info/scans/en/ne/96.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9ba582d7-1dce-4664-8bd9-6b419596788c.jpg?1562631228
 value=4.036
 rarity=R
 type=Creature

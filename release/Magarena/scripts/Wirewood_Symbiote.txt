@@ -1,5 +1,5 @@
 name=Wirewood Symbiote
-image=https://magiccards.info/scans/en/ema/192.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/854f1d22-1416-4012-979c-35152ff520bd.jpg?1580014975
 value=4.163
 rarity=U
 type=Creature

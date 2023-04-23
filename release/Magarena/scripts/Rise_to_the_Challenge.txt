@@ -1,5 +1,5 @@
 name=Rise to the Challenge
-image=https://magiccards.info/scans/en/bng/107.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c656ad1b-e85b-4b0c-b538-506afe4a9da5.jpg?1593092334
 value=2.804
 rarity=C
 type=Instant

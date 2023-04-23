@@ -1,5 +1,5 @@
 name=Seeker
-image=https://magiccards.info/scans/en/4e/299.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7052825f-d9fc-4820-b8c4-dbc204730b7c.jpg?1559604162
 value=1.649
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Mountain Valley
-image=https://magiccards.info/scans/en/mr/305.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1acef291-70ad-4196-9276-de7b4d31016d.jpg?1673306110
 value=3.548
 rarity=U
 type=Land

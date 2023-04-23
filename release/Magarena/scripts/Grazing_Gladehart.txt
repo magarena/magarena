@@ -1,5 +1,5 @@
 name=Grazing Gladehart
-image=https://magiccards.info/scans/en/zen/163.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06dda49d-25a2-4fa3-80f2-0d784e1ad30f.jpg?1593095445
 image_updated=2016-12-04
 value=3.553
 rarity=C

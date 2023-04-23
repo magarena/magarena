@@ -1,5 +1,5 @@
 name=Sterling Grove
-image=https://magiccards.info/scans/en/in/278.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba03e105-a76c-4769-a35a-d780448890ec.jpg?1626100813
 value=4.360
 rarity=U
 type=Enchantment

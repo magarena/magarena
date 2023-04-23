@@ -1,5 +1,5 @@
 name=Drelnoch
-image=https://magiccards.info/scans/en/cs/32.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/954a1e9c-ed2f-4774-b2b7-166052a5c59a.jpg?1593274916
 value=3.689
 rarity=C
 type=Creature

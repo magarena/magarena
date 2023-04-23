@@ -1,5 +1,5 @@
 name=Jhovall Rider
-image=https://magiccards.info/scans/en/mm/26.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e1f7c51-0011-4ea5-b123-3c26293f5dab.jpg?1562381819
 value=2.300
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Clear a Path
-image=https://magiccards.info/scans/en/m15/136.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3738b0d1-06c0-4d6d-a307-478d994ff36e.jpg?1562785137
 value=1.750
 rarity=C
 type=Sorcery

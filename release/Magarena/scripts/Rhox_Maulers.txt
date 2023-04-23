@@ -1,5 +1,5 @@
 name=Rhox Maulers
-image=https://magiccards.info/scans/en/ori/196.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64c3c972-82f6-46ea-8f9f-090c65c22e44.jpg?1562023088
 image_updated=2015-11-05
 value=2.500
 rarity=C

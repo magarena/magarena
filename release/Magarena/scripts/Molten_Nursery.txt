@@ -1,5 +1,5 @@
 name=Molten Nursery
-image=https://magiccards.info/scans/en/bfz/130.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3db8aaf5-e2bf-40ea-bd5d-663017cfd4a6.jpg?1562909490
 image_updated=2015-11-08
 value=2.500
 rarity=U

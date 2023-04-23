@@ -1,5 +1,5 @@
 name=Song of Freyalise
-image=https://magiccards.info/scans/en/dom/179.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a45b534b-8442-4074-a8d2-f38e83f24868.jpg?1562740656
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Splinterfright
-image=https://magiccards.info/scans/en/isd/205.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/032ac9fc-b8b3-43f1-8579-62171ca976cf.jpg?1673148190
 value=3.892
 rarity=R
 type=Creature

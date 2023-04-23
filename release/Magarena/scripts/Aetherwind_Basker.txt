@@ -1,5 +1,5 @@
 name=Aetherwind Basker
-image=https://magiccards.info/scans/en/aer/104.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa04d5fa-6ba2-4833-8ea0-1941a03bd3e9.jpg?1576381949
 value=2.500
 rarity=M
 type=Creature

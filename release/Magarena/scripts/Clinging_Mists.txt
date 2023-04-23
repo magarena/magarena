@@ -1,5 +1,5 @@
 name=Clinging Mists
-image=https://magiccards.info/scans/en/dka/109.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0152975-790a-40e4-993e-a970676a2d32.jpg?1562948376
 value=2.500
 rarity=C
 type=Instant

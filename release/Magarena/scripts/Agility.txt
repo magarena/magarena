@@ -1,5 +1,5 @@
 name=Agility
-image=https://magiccards.info/scans/en/mr/154.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5694cb42-7489-40c5-b21a-aeb36636015f.jpg?1562719275
 value=3.586
 rarity=C
 type=Enchantment

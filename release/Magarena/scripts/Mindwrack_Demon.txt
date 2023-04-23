@@ -1,5 +1,5 @@
 name=Mindwrack Demon
-image=https://magiccards.info/scans/en/soi/124.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b804cb9c-349e-4143-a372-cf65470d5b46.jpg?1576384521
 image_updated=2016-06-04
 value=2.500
 rarity=M

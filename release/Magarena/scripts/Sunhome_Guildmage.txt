@@ -1,5 +1,5 @@
 name=Sunhome Guildmage
-image=https://magiccards.info/scans/en/mm3/191.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62e5ee3d-3db2-45fc-adc0-9903231f16db.jpg?1593814646
 image_updated=2017-08-08
 value=3.411
 rarity=U

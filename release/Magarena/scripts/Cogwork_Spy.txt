@@ -1,5 +1,5 @@
 name=Cogwork Spy
-image=https://magiccards.info/scans/en/cns/59.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/661a7927-73ad-4230-a754-ba43b35be149.jpg?1562865450
 value=2.600
 rarity=C
 type=Artifact,Creature

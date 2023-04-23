@@ -1,5 +1,5 @@
 name=Fall of the Thran
-image=https://magiccards.info/scans/en/dom/18.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a613a01-6145-4e34-987c-c9bdcb068370.jpg?1562734219
 value=2.500
 rarity=R
 type=Enchantment

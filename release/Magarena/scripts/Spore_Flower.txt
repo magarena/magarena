@@ -1,5 +1,5 @@
 name=Spore Flower
-image=https://magiccards.info/scans/en/fe/86.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c8adf5d-db30-433a-a0f0-89566d8bef28.jpg?1562867829
 value=3.772
 rarity=U
 type=Creature

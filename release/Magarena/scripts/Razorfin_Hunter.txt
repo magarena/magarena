@@ -1,5 +1,5 @@
 name=Razorfin Hunter
-image=https://magiccards.info/scans/en/ap/119.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99829552-917a-4373-9772-4255dff542d6.jpg?1562931160
 value=4.446
 rarity=C
 type=Creature

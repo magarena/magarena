@@ -1,5 +1,5 @@
 name=Warped Devotion
-image=https://magiccards.info/scans/en/8e/172.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffd41ebd-91a8-4972-8f93-3306e68519f9.jpg?1562946660
 value=3.731
 rarity=R
 type=Enchantment

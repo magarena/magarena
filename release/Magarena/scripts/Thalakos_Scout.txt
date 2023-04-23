@@ -1,5 +1,5 @@
 name=Thalakos Scout
-image=https://magiccards.info/scans/en/ex/48.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1594d0e2-0d98-4cd5-bcd2-cddbe7bc6a78.jpg?1600967647
 value=3.455
 rarity=C
 type=Creature

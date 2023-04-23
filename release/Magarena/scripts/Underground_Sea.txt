@@ -1,5 +1,5 @@
 name=Underground Sea
-image=https://magiccards.info/scans/en/rv/305.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26cee543-6eab-494e-a803-33a5d48d7d74.jpg?1562902883
 value=4.500
 rarity=R
 type=Land

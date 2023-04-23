@@ -1,5 +1,5 @@
 name=Anurid Murkdiver
-image=https://magiccards.info/scans/en/on/124.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e43d62c-488a-4c8d-b193-bacbf8037761.jpg?1562932427
 value=1.719
 rarity=C
 type=Creature

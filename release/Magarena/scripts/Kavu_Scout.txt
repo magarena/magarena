@@ -1,5 +1,5 @@
 name=Kavu Scout
-image=https://magiccards.info/scans/en/in/151.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbc2670d-a3f4-47c2-b424-01fd379ff186.jpg?1562935954
 value=2.846
 rarity=C
 type=Creature

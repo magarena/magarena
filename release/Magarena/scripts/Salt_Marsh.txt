@@ -1,5 +1,5 @@
 name=Salt Marsh
-image=https://magiccards.info/scans/en/8e/325.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ac23896-d4c9-4543-9edc-1d1bb5c74611.jpg?1562906896
 value=3.854
 rarity=U
 type=Land

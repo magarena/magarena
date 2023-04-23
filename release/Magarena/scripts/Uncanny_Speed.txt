@@ -1,5 +1,5 @@
 name=Uncanny Speed
-image=https://magiccards.info/scans/en/avr/163.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d7b747e-446a-4c25-9834-0be8476dc22d.jpg?1592709247
 value=2.173
 rarity=C
 type=Instant

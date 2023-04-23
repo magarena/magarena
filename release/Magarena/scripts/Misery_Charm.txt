@@ -1,5 +1,5 @@
 name=Misery Charm
-image=https://magiccards.info/scans/en/on/158.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2be66eaf-222b-4c40-a9fa-aad56b9218e0.jpg?1562905282
 value=3.412
 rarity=C
 type=Instant

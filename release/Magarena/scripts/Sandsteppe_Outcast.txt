@@ -1,5 +1,5 @@
 name=Sandsteppe Outcast
-image=https://magiccards.info/scans/en/frf/25.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f29943bb-aa89-443b-96b7-8f6f24672a9d.jpg?1562831506
 value=2.500
 rarity=C
 type=Creature

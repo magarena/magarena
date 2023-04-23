@@ -1,5 +1,5 @@
 name=Abundant Maw
-image=https://magiccards.info/scans/en/emn/1.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a4e7ef7-7958-4d7c-b319-4d3db7955002.jpg?1576383697
 image_updated=2016-09-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Herdchaser Dragon
-image=https://magiccards.info/scans/en/dtk/190.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fb84323-b6f7-43ea-baf1-3e29b33b680d.jpg?1562787123
 value=2.500
 rarity=U
 type=Creature

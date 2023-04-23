@@ -1,5 +1,5 @@
 name=Flamerush Rider
-image=https://magiccards.info/scans/en/frf/99.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0de4181f-652e-4eab-8de0-57a346c51994.jpg?1682209328
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Consign to Dream
-image=https://magiccards.info/scans/en/shm/32.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e866d86-5bfa-473d-be17-d8f4aea70ddb.jpg?1562830719
 value=2.807
 rarity=C
 type=Instant

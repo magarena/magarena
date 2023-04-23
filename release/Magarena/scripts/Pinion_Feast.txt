@@ -1,5 +1,5 @@
 name=Pinion Feast
-image=https://magiccards.info/scans/en/dtk/195.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45d6df03-c3c3-42c3-85a4-6fccb0741592.jpg?1562785514
 value=2.500
 rarity=C
 type=Instant

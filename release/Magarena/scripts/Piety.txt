@@ -1,5 +1,5 @@
 name=Piety
-image=https://magiccards.info/scans/en/4e/291.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4942a9f-6b8f-438b-a2ea-366228038ed8.jpg?1587911080
 value=1.452
 rarity=C
 type=Instant

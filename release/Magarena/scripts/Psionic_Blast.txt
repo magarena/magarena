@@ -1,5 +1,5 @@
 name=Psionic Blast
-image=https://magiccards.info/scans/en/tsts/30.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/befb1728-4af3-420a-a51e-7fa95d2e7a00.jpg?1562783220
 value=4.265
 rarity=U
 type=Instant

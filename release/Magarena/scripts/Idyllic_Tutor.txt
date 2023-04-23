@@ -1,5 +1,5 @@
 name=Idyllic Tutor
-image=https://magiccards.info/scans/en/mt/12.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f06edd53-f3ac-44b0-a087-5670ba8f0fa5.jpg?1582021156
 value=3.621
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Sanctifier of Souls
-image=https://magiccards.info/scans/en/emn/39.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d839c5a-dc35-4eaa-9cf0-b6e002815726.jpg?1576383963
 image_updated=2016-09-05
 value=2.500
 rarity=R

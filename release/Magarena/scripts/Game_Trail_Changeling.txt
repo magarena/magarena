@@ -1,5 +1,5 @@
 name=Game-Trail Changeling
-image=https://magiccards.info/scans/en/mt/123.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bc76a7f-516f-4d0b-b024-39d5c8096a9f.jpg?1562879466
 value=3.033
 rarity=C
 type=Creature

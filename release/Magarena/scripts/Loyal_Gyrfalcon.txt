@@ -1,5 +1,5 @@
 name=Loyal Gyrfalcon
-image=https://magiccards.info/scans/en/eve/11.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/547f9f53-0a54-4097-9bb5-8a39732c7016.jpg?1562912638
 value=1.973
 rarity=U
 type=Creature

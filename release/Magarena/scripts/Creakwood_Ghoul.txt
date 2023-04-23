@@ -1,5 +1,5 @@
 name=Creakwood Ghoul
-image=https://magiccards.info/scans/en/eve/34.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d4e94d3-0df5-4d2b-a5d9-178fe1350ceb.jpg?1562907726
 value=2.284
 rarity=U
 type=Creature

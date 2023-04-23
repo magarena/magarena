@@ -1,5 +1,5 @@
 name=Femeref Healer
-image=https://magiccards.info/scans/en/mr/221.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90dedd5e-e2ee-46ec-8541-27f1548b2a2a.jpg?1562720481
 value=2.500
 rarity=C
 type=Creature

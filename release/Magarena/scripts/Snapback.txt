@@ -1,5 +1,5 @@
 name=Snapback
-image=https://magiccards.info/scans/en/ts/78.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/367d46d1-fa7a-403d-8949-b478a1f83f46.jpg?1619394695
 value=3.924
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Boar Umbra
-image=https://magiccards.info/scans/en/pc2/58.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a8ce72b-605c-4a05-93d2-64fa65308d96.jpg?1547517504
 value=3.042
 rarity=U
 type=Enchantment

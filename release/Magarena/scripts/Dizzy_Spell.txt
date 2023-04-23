@@ -1,5 +1,5 @@
 name=Dizzy Spell
-image=https://magiccards.info/scans/en/rav/43.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e0db10d-fb6d-44df-9ff2-6f1e0e8f8209.jpg?1598914105
 value=3.107
 rarity=C
 type=Instant

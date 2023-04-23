@@ -1,5 +1,5 @@
 name=Pierce Strider
-image=https://magiccards.info/scans/en/mbs/123.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1dd4c278-4215-4582-8725-bc4b0b664d13.jpg?1562900874
 value=3.462
 rarity=U
 type=Artifact,Creature

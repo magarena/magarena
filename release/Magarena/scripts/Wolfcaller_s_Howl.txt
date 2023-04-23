@@ -1,5 +1,5 @@
 name=Wolfcaller's Howl
-image=https://magiccards.info/scans/en/c14/52.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47f3f7bc-1dea-4c84-88b6-a36b23af82ff.jpg?1592673323
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Leovold's Operative
-image=https://magiccards.info/scans/en/cn2/66.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d41deffe-766f-4a46-8552-73483adc0cfb.jpg?1576382056
 image_updated=2016-09-05
 value=2.500
 rarity=C

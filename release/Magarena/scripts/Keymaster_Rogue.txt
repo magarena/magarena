@@ -1,5 +1,5 @@
 name=Keymaster Rogue
-image=https://magiccards.info/scans/en/gtc/39.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/970ee9a3-a862-46a7-9aa5-7b6fc4ffa1ab.jpg?1561837825
 value=3.000
 rarity=C
 type=Creature

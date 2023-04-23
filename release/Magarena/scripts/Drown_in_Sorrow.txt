@@ -1,5 +1,5 @@
 name=Drown in Sorrow
-image=https://magiccards.info/scans/en/bng/65.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe1e8a62-5b8c-432a-bb8f-c09048c51e0b.jpg?1598304687
 value=3.927
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Debt to the Deathless
-image=https://magiccards.info/scans/en/dgm/64.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/610e5a91-857b-4121-8b75-dbbea27aa0aa.jpg?1562912950
 value=3.784
 rarity=U
 type=Sorcery

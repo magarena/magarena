@@ -1,5 +1,5 @@
 name=Frostwind Invoker
-image=https://magiccards.info/scans/en/roe/68.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66ec9a28-3b36-4b6a-b420-7b4266b64f69.jpg?1562704572
 value=2.289
 rarity=C
 type=Creature

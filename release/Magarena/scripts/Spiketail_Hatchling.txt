@@ -1,5 +1,5 @@
 name=Spiketail Hatchling
-image=https://magiccards.info/scans/en/10e/111.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d0586e0-5e93-4742-a5ae-893edd49117d.jpg?1562551420
 value=4.438
 rarity=U
 type=Creature

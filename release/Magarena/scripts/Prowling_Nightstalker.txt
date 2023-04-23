@@ -1,5 +1,5 @@
 name=Prowling Nightstalker
-image=https://magiccards.info/scans/en/po2/23.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c17d83ad-d078-4c72-9ff2-d068fc6fcdd3.jpg?1562940646
 value=3.087
 rarity=C
 type=Creature

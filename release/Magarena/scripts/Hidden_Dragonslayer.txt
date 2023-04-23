@@ -1,5 +1,5 @@
 name=Hidden Dragonslayer
-image=https://magiccards.info/scans/en/dtk/23.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87c760a8-e051-4584-ae1b-178164b84427.jpg?1562789399
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Setessan Starbreaker
-image=https://magiccards.info/scans/en/bng/139.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03af8b3b-a897-43e2-a87d-833da93edc41.jpg?1593092657
 value=2.327
 rarity=C
 type=Creature

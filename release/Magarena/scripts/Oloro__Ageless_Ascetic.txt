@@ -1,5 +1,5 @@
 name=Oloro, Ageless Ascetic
-image=https://magiccards.info/scans/en/c13/203.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abf8df47-405c-42d8-be9e-0f0d0a49589b.jpg?1562931285
 value=3.851
 rarity=M
 type=Legendary,Creature

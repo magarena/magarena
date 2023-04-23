@@ -1,5 +1,5 @@
 name=Frostwielder
-image=https://magiccards.info/scans/en/chk/167.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a54df527-6949-4b74-821b-b051f493f3c5.jpg?1562763444
 value=2.867
 rarity=C
 type=Creature

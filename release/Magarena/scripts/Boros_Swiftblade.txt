@@ -1,5 +1,5 @@
 name=Boros Swiftblade
-image=https://magiccards.info/scans/en/mm2/172.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6135a9f2-e86d-4a34-857e-adea3c722fea.jpg?1562263060
 value=4.084
 rarity=U
 type=Creature

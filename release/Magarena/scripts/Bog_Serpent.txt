@@ -1,5 +1,5 @@
 name=Bog Serpent
-image=https://magiccards.info/scans/en/pc/84.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2958de76-a5ec-4e14-a025-4fe0e84c8b4b.jpg?1562568183
 value=1.123
 rarity=C
 type=Creature

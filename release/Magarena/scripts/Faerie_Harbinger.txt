@@ -1,5 +1,5 @@
 name=Faerie Harbinger
-image=https://magiccards.info/scans/en/lw/61.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9bdc319-4e06-420b-ba54-6cb994d4e279.jpg?1562375354
 value=3.128
 rarity=U
 type=Creature

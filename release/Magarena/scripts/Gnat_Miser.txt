@@ -1,5 +1,5 @@
 name=Gnat Miser
-image=https://magiccards.info/scans/en/sok/70.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1c51ee1-d6f6-42d7-9be6-fe3f982984ba.jpg?1562496618
 value=3.617
 rarity=C
 type=Creature

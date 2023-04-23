@@ -1,5 +1,5 @@
 name=Magus of the Moat
-image=https://magiccards.info/scans/en/fut/12.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20dcdda9-66a2-401f-9e1b-5603f771f56f.jpg?1562901530
 value=4.212
 rarity=R
 type=Creature

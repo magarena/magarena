@@ -1,5 +1,5 @@
 name=Risen Executioner
-image=https://magiccards.info/scans/en/dtk/116.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95ff5e62-b73e-4b85-b65f-5226e75c7f97.jpg?1562790182
 value=2.500
 rarity=M
 type=Creature

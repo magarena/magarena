@@ -1,5 +1,5 @@
 name=Processor Assault
-image=https://magiccards.info/scans/en/bfz/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a689975-d27b-4b8f-8d46-6e97c754ae81.jpg?1562916285
 image_updated=2015-11-08
 value=2.500
 rarity=U

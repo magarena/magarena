@@ -1,5 +1,5 @@
 name=Feedback
-image=https://magiccards.info/scans/en/5e/85.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d452de7-3f44-4594-bb24-2178812da9d6.jpg?1562589680
 value=1.892
 rarity=U
 type=Enchantment

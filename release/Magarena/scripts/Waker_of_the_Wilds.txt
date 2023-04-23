@@ -1,5 +1,5 @@
 name=Waker of the Wilds
-image=https://magiccards.info/scans/en/xln/215.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4124807b-15f9-46d7-8b0b-d4f1b3587d99.jpg?1604194712
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Tel-Jilad Lifebreather
-image=https://magiccards.info/scans/en/5dn/96.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee58a5ef-68ec-48cf-bb7e-73bcbe86cc3c.jpg?1562880550
 value=1.250
 rarity=C
 type=Creature

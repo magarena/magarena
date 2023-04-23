@@ -1,5 +1,5 @@
 name=Mutavault
-image=https://magiccards.info/scans/en/mt/148.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52cc2f10-142d-4e6a-984e-b25f566cc960.jpg?1674142985
 value=4.378
 rarity=R
 type=Land

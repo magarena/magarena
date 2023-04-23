@@ -1,5 +1,5 @@
 name=Dark Banishing
-image=https://magiccards.info/scans/en/9e/122.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/141dbd31-b813-46da-849e-e13d97dd2e17.jpg?1562428628
 value=3.911
 rarity=C
 type=Instant

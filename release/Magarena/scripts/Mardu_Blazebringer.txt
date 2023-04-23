@@ -1,5 +1,5 @@
 name=Mardu Blazebringer
-image=https://magiccards.info/scans/en/ktk/115.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbf7a797-f32a-4ed2-b835-a356120f5817.jpg?1562793597
 value=1.500
 rarity=U
 type=Creature

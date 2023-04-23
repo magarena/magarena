@@ -1,5 +1,5 @@
 name=Gatekeeper of Malakir
-image=https://magiccards.info/scans/en/zen/89.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8417510-3e4b-4093-8980-ce6a9625eb14.jpg?1592714225
 image_updated=2016-12-03
 value=3.841
 rarity=U

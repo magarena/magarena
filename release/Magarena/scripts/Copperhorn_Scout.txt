@@ -1,5 +1,5 @@
 name=Copperhorn Scout
-image=https://magiccards.info/scans/en/cn2/179.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd900b70-0957-4d81-ae25-dfa9343bd174.jpg?1576383005
 image_updated=2017-08-29
 value=3.400
 rarity=C

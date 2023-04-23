@@ -1,5 +1,5 @@
 name=Coat with Venom
-image=https://magiccards.info/scans/en/dtk/91.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cc8e012-7043-405c-b6cd-b3b38f8a8d54.jpg?1562789651
 value=2.500
 rarity=C
 type=Instant

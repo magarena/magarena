@@ -1,5 +1,5 @@
 name=Avian Changeling
-image=https://magiccards.info/scans/en/mma/6.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fe4fba9-5ff4-4e4b-be28-2849fa3c7003.jpg?1561966406
 value=3.278
 rarity=C
 type=Creature

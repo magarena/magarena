@@ -1,5 +1,5 @@
 name=Tarnished Citadel
-image=https://magiccards.info/scans/en/od/329.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30375d24-ccfe-47a2-babd-1bda0a6298fe.jpg?1562903894
 value=2.317
 rarity=R
 type=Land

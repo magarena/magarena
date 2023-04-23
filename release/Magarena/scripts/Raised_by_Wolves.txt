@@ -1,5 +1,5 @@
 name=Raised by Wolves
-image=https://magiccards.info/scans/en/bng/135.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcfaace7-86e2-427e-97b1-b09dfdd30fee.jpg?1593092609
 value=3.726
 rarity=U
 type=Enchantment

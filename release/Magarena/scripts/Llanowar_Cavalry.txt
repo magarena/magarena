@@ -1,5 +1,5 @@
 name=Llanowar Cavalry
-image=https://magiccards.info/scans/en/in/195.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21d92191-a743-4916-bbe4-5e207e964d9b.jpg?1562901760
 value=2.400
 rarity=C
 type=Creature

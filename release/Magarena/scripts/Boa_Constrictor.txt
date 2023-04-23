@@ -1,5 +1,5 @@
 name=Boa Constrictor
-image=https://magiccards.info/scans/en/mm/231.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7369cbf-6986-4a39-b07c-a283b40aee40.jpg?1562383995
 value=2.647
 rarity=U
 type=Creature

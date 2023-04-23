@@ -1,5 +1,5 @@
 name=Tears of Valakut
-image=https://magiccards.info/scans/en/ogw/118.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db858823-ae8b-4da1-be6f-aee541e008ae.jpg?1562939113
 image_updated=2016-02-29
 value=2.500
 rarity=U

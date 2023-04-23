@@ -1,5 +1,5 @@
 name=Vagrant Plowbeasts
-image=https://magiccards.info/scans/en/cfx/129.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/546b0a74-ebef-4596-b730-2190e20b2e66.jpg?1562801037
 value=3.028
 rarity=U
 type=Creature

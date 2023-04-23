@@ -1,5 +1,5 @@
 name=Aegis of the Heavens
-image=https://magiccards.info/scans/en/m19/1.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a94f356d-4714-4500-8fb0-1ac68ec5c1cf.jpg?1600715302
 value=2.500
 rarity=U
 type=Instant

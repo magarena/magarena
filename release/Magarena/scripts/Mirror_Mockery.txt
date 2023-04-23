@@ -1,5 +1,5 @@
 name=Mirror Mockery
-image=https://magiccards.info/scans/en/dtk/62.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f837b050-70a6-46f0-963d-4badb37a42a1.jpg?1562795876
 value=2.500
 rarity=R
 type=Enchantment

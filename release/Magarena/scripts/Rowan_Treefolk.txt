@@ -1,5 +1,5 @@
 name=Rowan Treefolk
-image=https://magiccards.info/scans/en/po/110.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/852a0956-8558-4754-ab57-6f1cc4de740e.jpg?1562446880
 value=2.590
 rarity=C
 type=Creature

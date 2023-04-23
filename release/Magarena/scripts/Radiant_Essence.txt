@@ -1,5 +1,5 @@
 name=Radiant Essence
-image=https://magiccards.info/scans/en/mr/336.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9b1853c-d5b9-4361-8a2f-36946a62847b.jpg?1587912747
 value=3.606
 rarity=U
 type=Creature

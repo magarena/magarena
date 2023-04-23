@@ -1,5 +1,5 @@
 name=Wilderness Hypnotist
-image=https://magiccards.info/scans/en/eve/32.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1947000d-bc0f-4f8b-a9a6-09bf29f846ea.jpg?1562900308
 value=1.021
 rarity=C
 type=Creature

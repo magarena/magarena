@@ -1,5 +1,5 @@
 name=Blood Moon
-image=https://magiccards.info/scans/en/a25/122.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d072e9ca-aae7-45dc-8025-3ce590bae63f.jpg?1599706217
 image_updated=2018-04-27
 value=4.483
 rarity=R

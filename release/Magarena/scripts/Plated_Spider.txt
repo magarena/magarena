@@ -1,5 +1,5 @@
 name=Plated Spider
-image=https://magiccards.info/scans/en/ud/116.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/3529f49b-7e5e-4fa8-a03d-a94877761525.jpg?1562443751
 value=3.611
 rarity=C
 type=Creature

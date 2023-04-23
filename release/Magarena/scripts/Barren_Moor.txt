@@ -1,5 +1,5 @@
 name=Barren Moor
-image=https://magiccards.info/scans/en/c14/284.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b38d7666-0791-44b4-877e-8fd33ce008aa.jpg?1625979730
 image_updated=2016-02-29
 value=3.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Joyous Respite
-image=https://magiccards.info/scans/en/chk/216.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e33847f-fa55-4b2e-9d88-9a9e118b5cc8.jpg?1562758374
 value=1.671
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Knight Watch
-image=https://magiccards.info/scans/en/gtc/19.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd492072-9a8c-4d55-ac71-3c8efaa3fc87.jpg?1561846618
 value=2.845
 rarity=C
 type=Sorcery

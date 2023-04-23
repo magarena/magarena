@@ -1,5 +1,5 @@
 name=Elgaud Inquisitor
-image=https://magiccards.info/scans/en/dka/6.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c342e1da-7ab9-4e29-96e6-77d820a45ede.jpg?1562941111
 value=2.592
 rarity=C
 type=Creature

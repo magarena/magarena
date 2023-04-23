@@ -1,5 +1,5 @@
 name=Touch of the Eternal
-image=https://magiccards.info/scans/en/m13/37.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55c5f0c2-99e6-42b7-aa16-61d5815d060d.jpg?1562553942
 value=1.983
 rarity=R
 type=Enchantment

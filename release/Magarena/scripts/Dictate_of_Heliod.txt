@@ -1,5 +1,5 @@
 name=Dictate of Heliod
-image=https://magiccards.info/scans/en/jou/8.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f964c561-96ac-4558-b46e-ba2c472d5807.jpg?1562711717
 image_updated=2016-02-29
 value=3.800
 rarity=R

@@ -1,5 +1,5 @@
 name=Ruinous Path
-image=https://magiccards.info/scans/en/bfz/123.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/771305ca-f33d-4498-8e21-152ced7317ef.jpg?1592710729
 image_updated=2015-11-08
 value=2.500
 rarity=R

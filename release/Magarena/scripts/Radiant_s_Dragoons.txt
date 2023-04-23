@@ -1,5 +1,5 @@
 name=Radiant's Dragoons
-image=https://magiccards.info/scans/en/ul/21.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a0f39de-6ad2-410c-bc6c-75fd3c8d159b.jpg?1562863736
 value=3.300
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wall of Mulch
-image=https://magiccards.info/scans/en/m15/208.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a76ec859-59a6-45b2-bbd8-6f89453fe3ec.jpg?1562792296
 value=3.000
 rarity=U
 type=Creature

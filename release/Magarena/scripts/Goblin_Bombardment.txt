@@ -1,5 +1,5 @@
 name=Goblin Bombardment
-image=https://magiccards.info/scans/en/tp/179.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e262f55e-9239-4a97-a19e-9b08fb34502e.jpg?1626100483
 value=4.000
 rarity=U
 type=Enchantment

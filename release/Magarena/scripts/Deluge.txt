@@ -1,5 +1,5 @@
 name=Deluge
-image=https://magiccards.info/scans/en/10e/79.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baf37153-ec4c-4c2f-89f7-450f0a157311.jpg?1562554238
 image_updated=2016-11-30
 value=3.868
 removal=1

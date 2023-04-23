@@ -1,5 +1,5 @@
 name=Mana Chains
-image=https://magiccards.info/scans/en/wl/41.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77802038-0d86-4911-97ed-e6bd2ed55e23.jpg?1562801584
 value=3.980
 rarity=C
 type=Enchantment

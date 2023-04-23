@@ -1,5 +1,5 @@
 name=Ondu Greathorn
-image=https://magiccards.info/scans/en/bfz/40.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95d9668e-05dc-41c4-9326-ef4c0e15dd80.jpg?1562930312
 image_updated=2015-11-08
 value=2.500
 rarity=C

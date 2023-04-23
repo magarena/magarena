@@ -1,5 +1,5 @@
 name=Reiver Demon
-image=https://magiccards.info/scans/en/cmd/95.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e0de032-a107-4095-b475-28f3f13b2c6e.jpg?1592672692
 value=2.500
 rarity=R
 type=Creature

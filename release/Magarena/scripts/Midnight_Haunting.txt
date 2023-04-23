@@ -1,5 +1,5 @@
 name=Midnight Haunting
-image=https://magiccards.info/scans/en/c14/80.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/4399dcc7-7684-4345-9f74-318c3ec9af82.jpg?1561940249
 value=3.831
 rarity=U
 type=Instant

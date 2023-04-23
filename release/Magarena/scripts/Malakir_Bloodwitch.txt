@@ -1,5 +1,5 @@
 name=Malakir Bloodwitch
-image=https://magiccards.info/scans/en/c17/116.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b91ceead-5071-43e8-bf90-f379d683acdf.jpg?1641602675
 image_updated=2017-10-03
 value=4.061
 rarity=R

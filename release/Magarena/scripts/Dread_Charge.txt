@@ -1,5 +1,5 @@
 name=Dread Charge
-image=https://magiccards.info/scans/en/po/10.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed0ca934-6989-415b-8816-7c66d22b4707.jpg?1562448330
 value=2.204
 rarity=R
 type=Sorcery

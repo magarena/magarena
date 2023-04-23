@@ -1,5 +1,5 @@
 name=Stoneforge Mystic
-image=https://magiccards.info/scans/en/wwk/20.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d3473d0-b46f-41f5-ac1e-ba217f7747d4.jpg?1599710314
 value=4.433
 rarity=R
 type=Creature

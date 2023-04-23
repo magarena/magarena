@@ -1,5 +1,5 @@
 name=Karstoderm
-image=https://magiccards.info/scans/en/ds/77.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/028c52f2-c45b-42da-89bd-cdd5cd7850f3.jpg?1562635162
 value=3.571
 rarity=U
 type=Creature

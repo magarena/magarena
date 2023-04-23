@@ -1,5 +1,5 @@
 name=Battering Wurm
-image=https://magiccards.info/scans/en/gp/79.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a0fb683-2e9b-465c-9fb5-2eb334c2739a.jpg?1593272399
 value=2.609
 rarity=U
 type=Creature

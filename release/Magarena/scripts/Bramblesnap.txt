@@ -1,5 +1,5 @@
 name=Bramblesnap
-image=https://magiccards.info/scans/en/roe/180.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcddd71f-bb8d-4153-854f-af87189babe7.jpg?1562709369
 value=3.828
 rarity=U
 type=Creature

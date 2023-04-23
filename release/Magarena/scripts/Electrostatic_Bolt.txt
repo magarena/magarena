@@ -1,5 +1,5 @@
 name=Electrostatic Bolt
-image=https://magiccards.info/scans/en/mi/89.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c455c8d4-6f20-4dcb-8e82-c2bb70d6bc3e.jpg?1562157233
 value=3.655
 rarity=C
 type=Instant

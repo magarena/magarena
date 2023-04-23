@@ -1,5 +1,5 @@
 name=About Face
-image=https://magiccards.info/scans/en/ul/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85e71828-095b-4729-ab11-c6c39ba29aab.jpg?1562863291
 value=3.398
 rarity=C
 type=Instant

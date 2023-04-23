@@ -1,5 +1,5 @@
 name=Aphetto Exterminator
-image=https://magiccards.info/scans/en/le/59.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06be8f63-daf2-4dbe-bb07-2b246145cdab.jpg?1562896334
 value=3.000
 rarity=U
 type=Creature

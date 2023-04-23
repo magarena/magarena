@@ -1,5 +1,5 @@
 name=Iona's Judgment
-image=https://magiccards.info/scans/en/ima/25.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e792e689-0cf8-4bd0-b2f1-4edff9972e18.jpg?1608908809
 image_updated=2017-04-12
 value=2.382
 rarity=C

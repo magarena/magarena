@@ -1,5 +1,5 @@
 name=Grimclaw Bats
-image=https://magiccards.info/scans/en/ds/45.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/132d6ed5-0bbc-465e-bc30-3174c910b435.jpg?1562635479
 value=2.944
 rarity=C
 type=Creature

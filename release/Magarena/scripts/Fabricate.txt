@@ -1,5 +1,5 @@
 name=Fabricate
-image=https://magiccards.info/scans/en/m10/52.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f6fe03c-91b5-4555-a93f-39935f5fe881.jpg?1645327724
 image_updated=2016-12-13
 value=4.423
 rarity=U

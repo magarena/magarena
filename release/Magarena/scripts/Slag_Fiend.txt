@@ -1,5 +1,5 @@
 name=Slag Fiend
-image=https://magiccards.info/scans/en/nph/95.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0d1ee33-e247-4ada-bb01-518611cd7d00.jpg?1562881259
 value=3.689
 rarity=R
 type=Creature

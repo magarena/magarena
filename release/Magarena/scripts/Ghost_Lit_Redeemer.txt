@@ -1,5 +1,5 @@
 name=Ghost-Lit Redeemer
-image=https://magiccards.info/scans/en/sok/10.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa90c02d-3090-402e-b74b-fc0358953263.jpg?1562495574
 value=3.688
 rarity=U
 type=Creature

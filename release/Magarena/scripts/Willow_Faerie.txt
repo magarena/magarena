@@ -1,5 +1,5 @@
 name=Willow Faerie
-image=https://magiccards.info/scans/en/hl/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83ce80dc-86d9-4613-af98-c385ca5d1cf4.jpg?1562587749
 value=2.933
 rarity=C
 type=Creature

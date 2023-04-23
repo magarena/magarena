@@ -1,5 +1,5 @@
 name=Vizier of Remedies
-image=https://magiccards.info/scans/en/akh/38.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36ab760e-93e0-4dbc-aaa1-02316f62ed3f.jpg?1543674853
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Torii Watchward
-image=https://magiccards.info/scans/en/sok/30.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8ec0916-f320-4fad-9ec5-99aeecfda0e3.jpg?1562495601
 value=2.129
 rarity=C
 type=Creature

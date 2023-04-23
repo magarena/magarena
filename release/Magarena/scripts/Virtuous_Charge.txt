@@ -1,5 +1,5 @@
 name=Virtuous Charge
-image=https://magiccards.info/scans/en/p3k/29.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72ad4c79-a85d-4fc6-95ab-5a6d6d667579.jpg?1562257014
 value=1.893
 rarity=C
 type=Sorcery

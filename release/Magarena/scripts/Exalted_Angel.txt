@@ -1,5 +1,5 @@
 name=Exalted Angel
-image=https://magiccards.info/scans/en/on/28.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2213eac-cea4-4dfd-90c4-c1f466967e2e.jpg?1562940841
 value=4.413
 rarity=R
 type=Creature

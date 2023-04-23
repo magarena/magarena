@@ -1,5 +1,5 @@
 name=Venomous Dragonfly
-image=https://magiccards.info/scans/en/mm/282.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/479fc902-ce94-4a6b-af87-4645387a46c6.jpg?1562380429
 value=2.691
 rarity=C
 type=Creature

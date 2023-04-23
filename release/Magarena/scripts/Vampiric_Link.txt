@@ -1,5 +1,5 @@
 name=Vampiric Link
-image=https://magiccards.info/scans/en/pc/92.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9be1058-0668-4938-8801-e9a98464651c.jpg?1562578939
 value=4.012
 rarity=C
 type=Enchantment

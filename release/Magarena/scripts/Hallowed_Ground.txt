@@ -1,5 +1,5 @@
 name=Hallowed Ground
-image=https://magiccards.info/scans/en/ia/253.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9b65d56-7e8c-4864-8ccf-ee2e2190acda.jpg?1559592325
 value=3.733
 rarity=U
 type=Enchantment

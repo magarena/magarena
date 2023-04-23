@@ -1,5 +1,5 @@
 name=Earnest Fellowship
-image=https://magiccards.info/scans/en/od/21.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66392169-5c6f-46bf-b0df-5670e40aecd9.jpg?1562913900
 value=3.765
 rarity=R
 type=Enchantment

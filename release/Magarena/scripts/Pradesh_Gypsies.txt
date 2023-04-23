@@ -1,5 +1,5 @@
 name=Pradesh Gypsies
-image=https://magiccards.info/scans/en/6e/244.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4c9b18c-4993-4ce1-b2bd-ab14c9f3aad7.jpg?1644608181
 value=1.500
 rarity=C
 type=Creature

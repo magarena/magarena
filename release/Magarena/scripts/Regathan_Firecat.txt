@@ -1,5 +1,5 @@
 name=Regathan Firecat
-image=https://magiccards.info/scans/en/m14/150.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b4df1dd-886d-4fe7-b3f7-2dca044de41c.jpg?1562828862
 value=3.192
 rarity=C
 type=Creature

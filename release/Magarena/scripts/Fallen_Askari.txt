@@ -1,5 +1,5 @@
 name=Fallen Askari
-image=https://magiccards.info/scans/en/vi/9.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a99c4859-038b-4dd0-80d0-28a881f4a564.jpg?1562929189
 value=3.500
 rarity=C
 type=Creature

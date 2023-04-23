@@ -1,5 +1,5 @@
 name=Grixis Grimblade
-image=https://magiccards.info/scans/en/arb/134.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dbcb812-15ad-4878-9968-cfa65a352703.jpg?1562643209
 value=3.333
 rarity=C
 type=Creature

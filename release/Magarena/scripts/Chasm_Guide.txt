@@ -1,5 +1,5 @@
 name=Chasm Guide
-image=https://magiccards.info/scans/en/bfz/143.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbd0fad7-264d-40fc-a616-a88dc94fa4d7.jpg?1562954662
 image_updated=2015-11-08
 value=2.500
 rarity=U

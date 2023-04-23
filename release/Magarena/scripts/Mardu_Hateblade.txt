@@ -1,5 +1,5 @@
 name=Mardu Hateblade
-image=https://magiccards.info/scans/en/ktk/16.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1d1cdfa-834c-4028-8036-c4bfb7da071b.jpg?1562795845
 value=2.750
 rarity=C
 type=Creature

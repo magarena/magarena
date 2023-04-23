@@ -1,5 +1,5 @@
 name=Backwoods Survivalists
-image=https://magiccards.info/scans/en/emn/150.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a3a65be-0ca1-437f-aafe-d96e8fe428ad.jpg?1576384734
 image_updated=2016-09-05
 value=2.500
 rarity=C

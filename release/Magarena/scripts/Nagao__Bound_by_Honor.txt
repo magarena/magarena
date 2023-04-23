@@ -1,5 +1,5 @@
 name=Nagao, Bound by Honor
-image=https://magiccards.info/scans/en/chk/36.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a45258f4-c36d-46cc-80e8-cc458351e003.jpg?1562763425
 value=3.704
 rarity=U
 type=Legendary,Creature

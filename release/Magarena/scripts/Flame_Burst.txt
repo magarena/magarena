@@ -1,5 +1,5 @@
 name=Flame Burst
-image=https://magiccards.info/scans/en/od/194.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64bbd438-7df2-4d7b-88ad-4531ebaf3931.jpg?1562913643
 value=3.629
 rarity=C
 type=Instant

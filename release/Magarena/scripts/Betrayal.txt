@@ -1,5 +1,5 @@
 name=Betrayal
-image=https://magiccards.info/scans/en/vi/26.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f9b5c75-882e-4fe4-827f-584080e91485.jpg?1562278139
 value=3.861
 rarity=C
 type=Enchantment

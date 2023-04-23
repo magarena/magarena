@@ -1,5 +1,5 @@
 name=Knight of Obligation
-image=https://magiccards.info/scans/en/gtc/18.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c2a1100-a2e6-4ef5-a8e3-2aca552d6b66.jpg?1561815686
 value=3.105
 rarity=U
 type=Creature

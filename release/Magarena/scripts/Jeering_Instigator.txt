@@ -1,5 +1,5 @@
 name=Jeering Instigator
-image=https://magiccards.info/scans/en/ktk/113.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72777ccf-1cd8-45e8-8dfb-0a42550b5607.jpg?1562788522
 value=2.500
 rarity=R
 type=Creature

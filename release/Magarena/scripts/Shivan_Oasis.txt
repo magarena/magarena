@@ -1,5 +1,5 @@
 name=Shivan Oasis
-image=https://magiccards.info/scans/en/8e/326.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d11de19-fb40-4dc6-ad61-3b7e95163c0b.jpg?1562915258
 image_updated=2017-01-08
 value=3.350
 rarity=U

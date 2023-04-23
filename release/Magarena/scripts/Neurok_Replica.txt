@@ -1,5 +1,5 @@
 name=Neurok Replica
-image=https://magiccards.info/scans/en/som/186.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76114dda-811c-41b2-995b-9e80115cc8c8.jpg?1561759254
 value=2.733
 rarity=C
 type=Artifact,Creature

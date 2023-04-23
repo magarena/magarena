@@ -1,5 +1,5 @@
 name=Lotus Petal
-image=https://magiccards.info/scans/en/tp/284.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f85ab5f9-508e-45de-8fa1-ce1f16552ffc.jpg?1562432227
 value=4.595
 rarity=C
 type=Artifact

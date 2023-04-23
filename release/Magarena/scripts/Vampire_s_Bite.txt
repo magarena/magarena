@@ -1,5 +1,5 @@
 name=Vampire's Bite
-image=https://magiccards.info/scans/en/zen/117.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57003079-3d0f-48fe-8fc1-94d38a94d1a8.jpg?1592714298
 image_updated=2017-01-11
 value=3.077
 rarity=C

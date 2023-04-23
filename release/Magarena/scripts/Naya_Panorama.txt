@@ -1,5 +1,5 @@
 name=Naya Panorama
-image=https://magiccards.info/scans/en/ala/227.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a546a28-8df5-4080-9f50-af86d84a066f.jpg?1673485911
 value=3.200
 rarity=C
 type=Land

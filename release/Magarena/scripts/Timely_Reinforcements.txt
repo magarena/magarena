@@ -1,5 +1,5 @@
 name=Timely Reinforcements
-image=https://magiccards.info/scans/en/m12/40.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6ae4669c-e526-4c24-9c25-38cb5c5ef59b.jpg?1562645941
 value=4.154
 rarity=U
 type=Sorcery

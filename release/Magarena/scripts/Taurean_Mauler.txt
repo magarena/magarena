@@ -1,5 +1,5 @@
 name=Taurean Mauler
-image=https://magiccards.info/scans/en/c16/135.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4ee4648-dd6e-4ba9-b643-a7e4c430d51f.jpg?1651655895
 image_updated=2017-08-17
 value=4.264
 rarity=R

@@ -1,5 +1,5 @@
 name=Soldier of the Pantheon
-image=https://magiccards.info/scans/en/ths/32.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cfc0f46-4df4-4ae3-bfe6-391916eb590f.jpg?1562818721
 value=3.743
 rarity=R
 type=Creature

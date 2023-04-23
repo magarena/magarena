@@ -1,5 +1,5 @@
 name=Entrapment Maneuver
-image=https://magiccards.info/scans/en/c16/2.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4dcebe1-bfc7-4f7d-ad8c-91a4b9f23eef.jpg?1562425828
 image_updated=2016-12-02
 value=2.500
 rarity=R

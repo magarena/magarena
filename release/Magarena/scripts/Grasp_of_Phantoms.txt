@@ -1,5 +1,5 @@
 name=Grasp of Phantoms
-image=https://magiccards.info/scans/en/mm3/41.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86f4b833-0352-4dba-a3e7-6570cbeaad4f.jpg?1593813073
 image_updated=2017-08-08
 value=3.189
 rarity=C

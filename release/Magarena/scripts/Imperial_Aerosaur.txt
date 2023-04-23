@@ -1,5 +1,5 @@
 name=Imperial Aerosaur
-image=https://magiccards.info/scans/en/xln/14.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d08f90b-9b98-4237-9826-578fb812d412.jpg?1562558686
 value=2.500
 rarity=U
 type=Creature

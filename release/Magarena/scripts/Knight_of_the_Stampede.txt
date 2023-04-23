@@ -1,5 +1,5 @@
 name=Knight of the Stampede
-image=https://magiccards.info/scans/en/rix/138.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e81565a4-cbbe-4820-8473-15ceda42d553.jpg?1555040690
 value=2.500
 rarity=C
 type=Creature

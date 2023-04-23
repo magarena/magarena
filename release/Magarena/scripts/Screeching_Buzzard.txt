@@ -1,5 +1,5 @@
 name=Screeching Buzzard
-image=https://magiccards.info/scans/en/on/165.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab285e6a-b937-4b34-ba20-662d36b9f3dc.jpg?1562929509
 value=2.239
 rarity=C
 type=Creature

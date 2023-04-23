@@ -1,5 +1,5 @@
 name=Ojutai Interceptor
-image=https://magiccards.info/scans/en/dtk/66.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59a84666-ad2b-494c-b52b-ecee14788ef2.jpg?1562786726
 value=2.500
 rarity=C
 type=Creature

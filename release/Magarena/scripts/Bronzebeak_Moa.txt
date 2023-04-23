@@ -1,5 +1,5 @@
 name=Bronzebeak Moa
-image=https://magiccards.info/scans/en/mm3/152.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c94079dd-023a-41b2-9004-95bbb0e41267.jpg?1593814137
 image_updated=2017-08-08
 value=3.785
 rarity=U

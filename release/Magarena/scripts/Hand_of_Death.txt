@@ -1,5 +1,5 @@
 name=Hand of Death
-image=https://magiccards.info/scans/en/st2k/6.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d17d9a95-5586-4d16-9700-215b9af63f6f.jpg?1562133687
 value=2.014
 removal=4
 rarity=C

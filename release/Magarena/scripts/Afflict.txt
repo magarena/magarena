@@ -1,5 +1,5 @@
 name=Afflict
-image=https://magiccards.info/scans/en/10e/125.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20f18447-2853-469b-b3b3-20d6bcafa6e7.jpg?1562544882
 value=2.318
 removal=1
 rarity=C

@@ -1,5 +1,5 @@
 name=Dreamborn Muse
-image=https://magiccards.info/scans/en/cmd/44.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83ad2ba9-ab54-4abc-805d-dc9fe31bac7f.jpg?1562274594
 value=3.867
 rarity=R
 type=Creature

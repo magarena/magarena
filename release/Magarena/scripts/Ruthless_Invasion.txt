@@ -1,5 +1,5 @@
 name=Ruthless Invasion
-image=https://magiccards.info/scans/en/nph/93.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc2bbff9-af57-4858-9351-d148b8c4bc3a.jpg?1562881096
 value=2.954
 rarity=C
 type=Sorcery

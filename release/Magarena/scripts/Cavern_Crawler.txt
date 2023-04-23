@@ -1,5 +1,5 @@
 name=Cavern Crawler
-image=https://magiccards.info/scans/en/mm/181.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd0a8af9-2e86-4639-a6c9-209f115e95f8.jpg?1562382570
 value=1.471
 rarity=C
 type=Creature

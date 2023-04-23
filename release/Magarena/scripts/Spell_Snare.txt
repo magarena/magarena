@@ -1,5 +1,5 @@
 name=Spell Snare
-image=https://magiccards.info/scans/en/mma/64.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72122836-a2f3-4001-9f08-93a7bf011ab1.jpg?1562917785
 value=4.537
 rarity=U
 type=Instant

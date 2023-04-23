@@ -1,5 +1,5 @@
 name=Companion of the Trials
-image=https://magiccards.info/scans/en/akh/271.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/637ac220-058f-4212-ba8b-a389bb0528bd.jpg?1561787476
 value=2.500
 rarity=U
 type=Creature

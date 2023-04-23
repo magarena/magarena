@@ -1,5 +1,5 @@
 name=Part the Waterveil
-image=https://magiccards.info/scans/en/bfz/80.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83fe992f-0441-42be-89f9-2387b4bc24ce.jpg?1562926087
 image_updated=2015-11-08
 value=2.500
 rarity=M

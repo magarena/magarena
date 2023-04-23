@@ -1,5 +1,5 @@
 name=Bloodshot Cyclops
-image=https://magiccards.info/scans/en/8e/179.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b021f1ea-4db1-40fb-a5dc-af13be53ad15.jpg?1562930442
 value=3.878
 rarity=R
 type=Creature

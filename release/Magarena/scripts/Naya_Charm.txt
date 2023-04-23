@@ -1,5 +1,5 @@
 name=Naya Charm
-image=https://magiccards.info/scans/en/c16/214.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce1d6f9b-2ca8-48b8-b4a6-46a61c7c3905.jpg?1673305611
 image_updated=2017-08-17
 value=3.769
 rarity=U

@@ -1,5 +1,5 @@
 name=Magma Mine
-image=https://magiccards.info/scans/en/vi/149.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1aecc3df-7ce6-419c-b3d6-60fc28bfe941.jpg?1562276975
 value=3.058
 rarity=U
 type=Artifact

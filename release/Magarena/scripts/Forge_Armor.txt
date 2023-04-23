@@ -1,5 +1,5 @@
 name=Forge Armor
-image=https://magiccards.info/scans/en/mi/92.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/2873b6d5-af76-498c-bc2d-a26c36be3cbd.jpg?1562138783
 value=2.167
 rarity=U
 type=Instant

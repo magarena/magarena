@@ -1,5 +1,5 @@
 name=Elder Spawn
-image=https://magiccards.info/scans/en/lg/52.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99cc045e-01a8-4f14-a86d-0a67ec35d6b7.jpg?1562860152
 value=1.370
 rarity=R
 type=Creature

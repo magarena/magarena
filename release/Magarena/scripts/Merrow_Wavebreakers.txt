@@ -1,5 +1,5 @@
 name=Merrow Wavebreakers
-image=https://magiccards.info/scans/en/shm/44.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9919382e-3dcd-4f83-8135-be71345e57c0.jpg?1562833578
 value=1.974
 rarity=C
 type=Creature

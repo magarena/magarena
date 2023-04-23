@@ -1,5 +1,5 @@
 name=Sphinx of Lost Truths
-image=https://magiccards.info/scans/en/zen/69.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d97b61b6-bf80-4326-a646-a1985e0b50d7.jpg?1562617273
 value=3.907
 rarity=R
 type=Creature

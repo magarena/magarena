@@ -1,5 +1,5 @@
 name=Kami of Empty Graves
-image=https://magiccards.info/scans/en/sok/75.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30502f07-760c-46d1-8b4a-d4bd4a23201f.jpg?1562493417
 value=1.557
 rarity=C
 type=Creature

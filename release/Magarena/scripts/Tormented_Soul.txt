@@ -1,5 +1,5 @@
 name=Tormented Soul
-image=https://magiccards.info/scans/en/m13/111.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63492d71-c891-4c70-b050-ceb361e0844d.jpg?1562913369
 value=3.877
 rarity=C
 type=Creature

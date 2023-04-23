@@ -1,5 +1,5 @@
 name=Siege of Towers
-image=https://magiccards.info/scans/en/gp/76.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4db24da9-8901-4e2d-9565-39ce1b7639c9.jpg?1593272380
 value=2.821
 rarity=R
 type=Sorcery

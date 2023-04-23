@@ -1,5 +1,5 @@
 name=Lightwielder Paladin
-image=https://magiccards.info/scans/en/m10/19.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b61a3ca4-f311-412a-927f-148e614846f6.jpg?1592765356
 value=3.662
 rarity=R
 type=Creature

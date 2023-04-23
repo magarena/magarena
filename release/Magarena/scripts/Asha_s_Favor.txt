@@ -1,5 +1,5 @@
 name=Asha's Favor
-image=https://magiccards.info/scans/en/cfx/2.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28b817f7-ae05-4d31-8a2c-29d8082b4132.jpg?1562800106
 value=3.000
 rarity=C
 type=Enchantment

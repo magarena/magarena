@@ -1,5 +1,5 @@
 name=Myr Turbine
-image=https://magiccards.info/scans/en/mbs/117.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71a76840-47f7-4e1e-b68b-00cb7da98cdf.jpg?1562612196
 value=3.524
 rarity=R
 type=Artifact

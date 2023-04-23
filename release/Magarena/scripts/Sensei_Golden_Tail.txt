@@ -1,5 +1,5 @@
 name=Sensei Golden-Tail
-image=https://magiccards.info/scans/en/chk/44.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b93dd897-3fb5-48b1-bdff-9383ce1feb21.jpg?1562763745
 value=3.909
 rarity=R
 type=Legendary,Creature

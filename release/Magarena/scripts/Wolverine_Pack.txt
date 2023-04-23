@@ -1,5 +1,5 @@
 name=Wolverine Pack
-image=https://magiccards.info/scans/en/5e/206.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fab6d1e8-0985-4560-aea2-7ad1925a2f5a.jpg?1562595418
 value=3.172
 rarity=U
 type=Creature

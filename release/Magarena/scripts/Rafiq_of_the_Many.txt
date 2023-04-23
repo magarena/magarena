@@ -1,5 +1,5 @@
 name=Rafiq of the Many
-image=https://magiccards.info/scans/en/ala/185.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12259d86-f610-47c7-bb81-0da9bb6a2795.jpg?1673149077
 value=3.778
 rarity=M
 type=Legendary,Creature

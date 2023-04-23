@@ -1,5 +1,5 @@
 name=Rubblehulk
-image=https://magiccards.info/scans/en/c16/219.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3bfd66f-8269-4765-87f3-38fcc25435be.jpg?1592711153
 image_updated=2017-08-17
 value=3.421
 rarity=R

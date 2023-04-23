@@ -1,5 +1,5 @@
 name=Bog Imp
-image=https://magiccards.info/scans/en/9e/116.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/846f5cda-3d93-4dfd-b1c3-1dff7b814d98.jpg?1562737863
 value=2.060
 rarity=C
 type=Creature

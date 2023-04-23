@@ -1,5 +1,5 @@
 name=Aboroth
-image=https://magiccards.info/scans/en/wl/59.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c72ac67-e4fb-49a1-b1e5-cd2e414bec28.jpg?1562802060
 value=3.258
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Undercity Plague
-image=https://magiccards.info/scans/en/gtc/83.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b25d3bc-33e9-4d1a-855d-38580e67b6cc.jpg?1561832772
 value=3.127
 rarity=R
 type=Sorcery

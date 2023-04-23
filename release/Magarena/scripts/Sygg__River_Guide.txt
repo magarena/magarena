@@ -1,5 +1,5 @@
 name=Sygg, River Guide
-image=https://magiccards.info/scans/en/lw/251.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb1aefaf-1b96-4c08-a73e-98e401655965.jpg?1562375441
 value=3.918
 rarity=R
 type=Legendary,Creature

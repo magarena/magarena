@@ -1,5 +1,5 @@
 name=Repeating Barrage
-image=https://magiccards.info/scans/en/xln/156.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba90a2d6-8292-4ff1-91d0-b30ae9775f12.jpg?1562562987
 value=2.500
 rarity=R
 type=Sorcery

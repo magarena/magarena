@@ -1,5 +1,5 @@
 name=Dream Leash
-image=https://magiccards.info/scans/en/rav/45.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0de4fa3d-a144-4918-b032-7495ab2e1c8c.jpg?1598914135
 value=3.321
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Energy Bolt
-image=https://magiccards.info/scans/en/mr/323.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/711f4cff-0256-44b2-a2fe-1cae6e9edb2b.jpg?1562719783
 value=3.205
 rarity=R
 type=Sorcery

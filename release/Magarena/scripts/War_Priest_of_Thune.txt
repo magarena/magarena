@@ -1,5 +1,5 @@
 name=War Priest of Thune
-image=https://magiccards.info/scans/en/ema/35.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b222a639-dd46-40f9-835d-3c68b74c295e.jpg?1580013852
 value=4.234
 removal=1
 rarity=U

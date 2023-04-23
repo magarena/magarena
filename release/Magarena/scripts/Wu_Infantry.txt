@@ -1,5 +1,5 @@
 name=Wu Infantry
-image=https://magiccards.info/scans/en/p3k/59.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebe4115e-7ca3-4996-a390-133c2e6d09b7.jpg?1562257996
 value=1.938
 rarity=C
 type=Creature

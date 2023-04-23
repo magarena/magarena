@@ -1,5 +1,5 @@
 name=Lobber Crew
-image=https://magiccards.info/scans/en/rtr/99.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9d4aa15-a3c2-42a3-a87a-443e7dd20c04.jpg?1562792189
 value=3.080
 rarity=C
 type=Creature

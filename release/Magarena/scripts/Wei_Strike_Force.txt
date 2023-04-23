@@ -1,5 +1,5 @@
 name=Wei Strike Force
-image=https://magiccards.info/scans/en/p3k/91.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b4cc234-f6b7-4801-a6d0-c98b72f446cf.jpg?1562897354
 value=2.935
 rarity=C
 type=Creature

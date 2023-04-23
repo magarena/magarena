@@ -1,5 +1,5 @@
 name=Akiri, Line-Slinger
-image=https://magiccards.info/scans/en/c16/26.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b951e0c-a4dd-4a20-87c6-eaa947e33aa4.jpg?1606762145
 image_updated=2016-11-20
 value=2.500
 rarity=R

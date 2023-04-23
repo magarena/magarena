@@ -1,5 +1,5 @@
 name=Tigereye Cameo
-image=https://magiccards.info/scans/en/in/314.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25976da8-338d-4f46-b8ea-78a0aa3daa35.jpg?1562902582
 value=2.517
 rarity=U
 type=Artifact

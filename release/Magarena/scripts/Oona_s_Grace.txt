@@ -1,5 +1,5 @@
 name=Oona's Grace
-image=https://magiccards.info/scans/en/ema/63.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2128105-de04-4f51-81c7-37f30cf324d4.jpg?1568004037
 value=2.863
 rarity=C
 type=Instant

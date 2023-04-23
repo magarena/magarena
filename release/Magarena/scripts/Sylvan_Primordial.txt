@@ -1,5 +1,5 @@
 name=Sylvan Primordial
-image=https://magiccards.info/scans/en/gtc/136.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0483c869-38dc-4b0b-82f3-dd08a1ab985f.jpg?1561814269
 value=3.763
 rarity=R
 type=Creature

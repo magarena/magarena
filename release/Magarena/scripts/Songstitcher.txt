@@ -1,5 +1,5 @@
 name=Songstitcher
-image=https://magiccards.info/scans/en/us/52.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa8d306f-3f4e-4c21-9461-caa3daf4fc50.jpg?1562948054
 image_updated=2017-01-08
 value=3.278
 rarity=U

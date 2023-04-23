@@ -1,5 +1,5 @@
 name=Coral Reef
-image=https://magiccards.info/scans/en/hl/29.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42fe2280-a996-4072-b5bf-f4fd56607a51.jpg?1562587267
 value=1.440
 rarity=C
 type=Enchantment

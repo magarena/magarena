@@ -1,5 +1,5 @@
 name=Ethereal Ambush
-image=https://magiccards.info/scans/en/frf/152.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/825d3f4d-eba3-4c45-8846-03b246e93f6c.jpg?1562827126
 value=2.500
 rarity=C
 type=Instant

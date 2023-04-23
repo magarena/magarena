@@ -1,5 +1,5 @@
 name=Storm Spirit
-image=https://magiccards.info/scans/en/ia/381.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25f50a42-be59-4899-b193-88a84929018e.jpg?1562867859
 value=2.917
 rarity=R
 type=Creature

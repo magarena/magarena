@@ -1,5 +1,5 @@
 name=Rathi Fiend
-image=https://magiccards.info/scans/en/ne/68.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07ca1184-ade0-4d6d-87f9-ad17f37679b3.jpg?1562628537
 value=3.348
 rarity=U
 type=Creature

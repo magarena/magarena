@@ -1,5 +1,5 @@
 name=Grixis Sojourners
-image=https://magiccards.info/scans/en/arb/112.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cde5f43-0b91-45c9-9382-20ea6328266f.jpg?1562639621
 value=2.510
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Voice of Reason
-image=https://magiccards.info/scans/en/ud/24.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed3d5a10-6d4b-4383-b400-7323f2b4670e.jpg?1562445230
 value=3.352
 rarity=U
 type=Creature

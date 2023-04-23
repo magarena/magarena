@@ -1,5 +1,5 @@
 name=Bedlam Reveler
-image=https://magiccards.info/scans/en/emn/118.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9333564-2792-470e-be73-61f2445e018f.jpg?1673147749
 image_updated=2016-09-05
 value=2.500
 rarity=R

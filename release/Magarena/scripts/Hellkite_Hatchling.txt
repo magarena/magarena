@@ -1,5 +1,5 @@
 name=Hellkite Hatchling
-image=https://magiccards.info/scans/en/pc2/95.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08902c09-a1d9-4a63-9b6d-93a9878ec060.jpg?1562896642
 value=2.905
 rarity=U
 type=Creature

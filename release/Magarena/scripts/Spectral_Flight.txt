@@ -1,5 +1,5 @@
 name=Spectral Flight
-image=https://magiccards.info/scans/en/isd/79.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7149f2a-6917-4ad7-8035-c7a1babd4d4b.jpg?1562839858
 value=3.700
 rarity=C
 type=Enchantment

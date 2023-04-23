@@ -1,5 +1,5 @@
 name=Dimir Cutpurse
-image=https://magiccards.info/scans/en/rav/201.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b50f7d5f-8b4d-46d4-86ce-92fbc475c039.jpg?1562937668
 value=4.562
 rarity=R
 type=Creature

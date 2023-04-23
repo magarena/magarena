@@ -1,5 +1,5 @@
 name=Dwarven Lieutenant
-image=https://magiccards.info/scans/en/fe/106.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea9a38b1-4676-425a-b40d-4fb478966024.jpg?1587910956
 value=2.703
 rarity=U
 type=Creature

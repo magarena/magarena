@@ -1,5 +1,5 @@
 name=Blazing Torch
-image=https://magiccards.info/scans/en/isd/216.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e14fc60-f300-40f0-b712-4e339dc27929.jpg?1562829946
 value=3.289
 rarity=C
 type=Artifact

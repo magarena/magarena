@@ -1,5 +1,5 @@
 name=Murder
-image=https://magiccards.info/scans/en/m19/110.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdef7fea-2bd0-42a2-96f6-6def18bd7f0c.jpg?1674136158
 image_updated=2018-08-07
 value=3.684
 removal=5

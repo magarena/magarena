@@ -1,5 +1,5 @@
 name=Life Chisel
-image=https://magiccards.info/scans/en/lg/228.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d06edbe-2278-4818-b476-75bc02958418.jpg?1562917839
 value=3.560
 rarity=U
 type=Artifact

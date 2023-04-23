@@ -1,5 +1,5 @@
 name=Cyclopean Giant
-image=https://magiccards.info/scans/en/ts/100.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fab6bc89-492a-46a4-90dc-95ae2e2bc483.jpg?1562948107
 value=2.988
 rarity=C
 type=Creature

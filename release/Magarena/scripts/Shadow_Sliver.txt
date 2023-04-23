@@ -1,5 +1,5 @@
 name=Shadow Sliver
-image=https://magiccards.info/scans/en/ts/76.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb725914-1b0f-4efc-808b-9fe2eaa7f17d.jpg?1562948266
 value=3.110
 rarity=C
 type=Creature

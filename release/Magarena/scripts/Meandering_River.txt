@@ -1,5 +1,5 @@
 name=Meandering River
-image=https://magiccards.info/scans/en/m19/253.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e283db9e-6a51-4b28-9f6c-0c040a9d6d8c.jpg?1631236026
 image_updated=2018-08-07
 value=2.500
 rarity=C

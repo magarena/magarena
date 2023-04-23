@@ -1,5 +1,5 @@
 name=Rishadan Pawnshop
-image=https://magiccards.info/scans/en/mm/311.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c5fc9fc-a0f9-4f56-8368-2d7e1fec5ba0.jpg?1562379899
 value=3.167
 rarity=R
 type=Artifact

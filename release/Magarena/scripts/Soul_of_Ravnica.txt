@@ -1,5 +1,5 @@
 name=Soul of Ravnica
-image=https://magiccards.info/scans/en/m15/78.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7332471-c052-4a24-abf1-a5805d685658.jpg?1562792279
 value=3.455
 rarity=M
 type=Creature

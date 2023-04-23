@@ -1,5 +1,5 @@
 name=Drogskol Reaver
-image=https://magiccards.info/scans/en/dka/137.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76f0ae1f-75cf-4bb0-8651-fbf14fa59f81.jpg?1673148546
 value=3.859
 rarity=M
 type=Creature

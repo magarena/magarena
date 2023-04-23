@@ -1,5 +1,5 @@
 name=Remand
-image=https://magiccards.info/scans/en/mm2/55.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc595c63-af05-4c05-80e8-e1a90df26b0f.jpg?1562268359
 value=4.653
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Marsh Casualties
-image=https://magiccards.info/scans/en/zen/101.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9861ea61-d635-4f1c-b5eb-d608e12713ec.jpg?1593095782
 value=3.571
 removal=2
 rarity=U

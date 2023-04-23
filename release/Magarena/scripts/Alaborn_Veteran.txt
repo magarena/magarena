@@ -1,5 +1,5 @@
 name=Alaborn Veteran
-image=https://magiccards.info/scans/en/po2/125.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79d7992d-9acd-4eaa-b6e0-a47acb880548.jpg?1562923725
 value=2.621
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Platinum Angel
-image=https://magiccards.info/scans/en/cn2/214.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca7f4fd6-e268-4d15-bfbf-d9f0f95864fc.jpg?1576383285
 image_updated=2017-08-29
 value=4.409
 rarity=M

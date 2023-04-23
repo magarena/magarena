@@ -1,5 +1,5 @@
 name=Sleek Schooner
-image=https://magiccards.info/scans/en/xln/247.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/767e2bfb-bcf5-442c-b092-bdb1f4f13561.jpg?1562558283
 value=2.500
 rarity=U
 type=Artifact

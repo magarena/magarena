@@ -1,5 +1,5 @@
 name=Blighted Agent
-image=https://magiccards.info/scans/en/nph/29.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cddaebde-a060-4510-8c97-68432d931987.jpg?1562881631
 value=3.785
 rarity=C
 type=Creature

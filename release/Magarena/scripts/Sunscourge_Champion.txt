@@ -1,5 +1,5 @@
 name=Sunscourge Champion
-image=https://magiccards.info/scans/en/hou/26.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0bb41cc-6edb-4a31-92cb-b17850b49432.jpg?1562819672
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Warden of the Eye
-image=https://magiccards.info/scans/en/ktk/212.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04135bf7-2bcf-4a92-80f0-6d5eefca551b.jpg?1562781945
 value=3.250
 rarity=U
 type=Creature

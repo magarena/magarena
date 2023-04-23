@@ -1,5 +1,5 @@
 name=White Knight
-image=https://magiccards.info/scans/en/m11/39.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/660f69ef-c04f-4f53-80e6-8190549ab12a.jpg?1562916342
 value=4.277
 rarity=U
 type=Creature

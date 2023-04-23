@@ -1,5 +1,5 @@
 name=Ajani, Caller of the Pride
-image=https://magiccards.info/scans/en/m13/1.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33e44e04-8330-49ca-906c-bb9bf0bc84ce.jpg?1562827754
 value=3.717
 rarity=M
 type=Legendary,Planeswalker

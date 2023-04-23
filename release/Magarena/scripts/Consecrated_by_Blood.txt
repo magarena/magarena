@@ -1,5 +1,5 @@
 name=Consecrated by Blood
-image=https://magiccards.info/scans/en/ori/87.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d896df9-f897-4786-b1a1-d2375e81c9ef.jpg?1562015873
 image_updated=2015-11-05
 value=2.500
 rarity=U

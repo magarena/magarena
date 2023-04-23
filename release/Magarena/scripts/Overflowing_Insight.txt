@@ -1,5 +1,5 @@
 name=Overflowing Insight
-image=https://magiccards.info/scans/en/xln/66.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6b3dd8f-902e-45b8-a422-370705621294.jpg?1562566847
 value=2.500
 rarity=M
 type=Sorcery

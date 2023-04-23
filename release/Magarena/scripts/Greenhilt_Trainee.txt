@@ -1,5 +1,5 @@
 name=Greenhilt Trainee
-image=https://magiccards.info/scans/en/nph/112.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/370f8ef5-c809-43cc-903a-077fad33cd30.jpg?1562876639
 value=2.804
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Shield of the Avatar
-image=https://magiccards.info/scans/en/m15/230.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97c2cc25-f3cd-4bfb-b9cc-53d1f42cd69a.jpg?1562791312
 value=3.214
 rarity=R
 type=Artifact

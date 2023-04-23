@@ -1,5 +1,5 @@
 name=Flash of Defiance
-image=https://magiccards.info/scans/en/tr/99.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e550776-b806-4f66-8aab-e6a5dac6d5cc.jpg?1562629429
 value=1.796
 rarity=C
 type=Sorcery

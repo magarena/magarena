@@ -1,5 +1,5 @@
 name=Flood of Recollection
-image=https://magiccards.info/scans/en/rix/38.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c14a5b69-ce04-40fc-9933-20b16537de24.jpg?1608909140
 value=2.500
 rarity=U
 type=Sorcery

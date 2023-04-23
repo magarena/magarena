@@ -1,5 +1,5 @@
 name=Magister Sphinx
-image=https://magiccards.info/scans/en/cfx/116.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be662808-e452-407d-b142-bf6f30990b5a.jpg?1673148909
 image_updated=2016-12-23
 value=3.883
 rarity=R

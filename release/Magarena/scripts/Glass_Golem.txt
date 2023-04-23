@@ -1,5 +1,5 @@
 name=Glass Golem
-image=https://magiccards.info/scans/en/rav/261.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b87dc27-3cea-4101-aec5-ca0b96978476.jpg?1598917983
 value=2.585
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Fade into Antiquity
-image=https://magiccards.info/scans/en/cn2/181.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55174ab7-9f2e-42e5-a61b-57458cfd33f3.jpg?1654568069
 image_updated=2016-12-02
 value=3.440
 rarity=C

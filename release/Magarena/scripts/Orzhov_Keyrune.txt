@@ -1,5 +1,5 @@
 name=Orzhov Keyrune
-image=https://magiccards.info/scans/en/gtc/233.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd5c0f38-916a-4f6c-b678-7447cb0709e0.jpg?1561853900
 value=3.011
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Putrid Warrior
-image=https://magiccards.info/scans/en/ap/117.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17fce298-3338-4f41-8156-ab6322951a76.jpg?1562900768
 value=3.308
 rarity=C
 type=Creature

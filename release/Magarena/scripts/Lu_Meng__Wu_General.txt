@@ -1,5 +1,5 @@
 name=Lu Meng, Wu General
-image=https://magiccards.info/scans/en/p3k/46.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25621ccf-fa2d-4990-a908-01373fbe587f.jpg?1562902836
 value=3.966
 rarity=R
 type=Legendary,Creature

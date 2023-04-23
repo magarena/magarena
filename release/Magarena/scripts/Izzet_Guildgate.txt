@@ -1,5 +1,5 @@
 name=Izzet Guildgate
-image=https://magiccards.info/scans/en/mm3/237.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c60c576b-a1ea-41d2-a1d8-4417c11ed48e.jpg?1568005192
 image_updated=2017-08-08
 value=3.000
 rarity=C

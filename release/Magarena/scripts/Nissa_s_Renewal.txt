@@ -1,5 +1,5 @@
 name=Nissa's Renewal
-image=https://magiccards.info/scans/en/bfz/180.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/9474a32d-d846-41c9-9ef4-b4caf981cf12.jpg?1625977146
 image_updated=2015-11-08
 value=2.500
 rarity=R

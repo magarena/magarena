@@ -1,5 +1,5 @@
 name=Demon of Wailing Agonies
-image=https://magiccards.info/scans/en/c14/21.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ace249fc-0d05-4132-8c0c-4abdc3b42119.jpg?1561954194
 value=2.500
 rarity=R
 type=Creature

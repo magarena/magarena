@@ -1,5 +1,5 @@
 name=Ramunap Ruins
-image=https://magiccards.info/scans/en/hou/181.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af11d41a-0d29-45e9-9d27-a41282b9e292.jpg?1562810961
 value=2.500
 rarity=U
 type=Land

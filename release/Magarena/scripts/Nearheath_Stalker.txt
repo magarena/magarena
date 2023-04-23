@@ -1,5 +1,5 @@
 name=Nearheath Stalker
-image=https://magiccards.info/scans/en/dka/100.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d4cdf4a-2d55-4769-8c51-bc86c13000ef.jpg?1562924524
 value=1.954
 rarity=C
 type=Creature

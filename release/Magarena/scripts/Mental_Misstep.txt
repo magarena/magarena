@@ -1,5 +1,5 @@
 name=Mental Misstep
-image=https://magiccards.info/scans/en/nph/38.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61e9c6df-1c84-4eab-9076-a4feb6347c10.jpg?1566819829
 value=4.441
 rarity=U
 type=Instant

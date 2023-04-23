@@ -1,5 +1,5 @@
 name=Shieldmate's Blessing
-image=https://magiccards.info/scans/en/zen/35.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f58a26f8-a2c9-48e5-8662-7cbd43c00411.jpg?1562618385
 value=1.324
 rarity=C
 type=Instant

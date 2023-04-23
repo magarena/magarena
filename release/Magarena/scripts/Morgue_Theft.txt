@@ -1,5 +1,5 @@
 name=Morgue Theft
-image=https://magiccards.info/scans/en/od/151.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/937465ca-4cf7-4412-86eb-264efb0fdddd.jpg?1562922327
 value=2.750
 rarity=C
 type=Sorcery

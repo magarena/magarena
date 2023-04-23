@@ -1,5 +1,5 @@
 name=Flamebreak
-image=https://magiccards.info/scans/en/ds/61.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87e1f06f-7c87-4da8-b339-e571e391cab1.jpg?1562637920
 value=4.260
 rarity=R
 type=Sorcery

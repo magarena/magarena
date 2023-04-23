@@ -1,5 +1,5 @@
 name=Centaur Glade
-image=https://magiccards.info/scans/en/on/251.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c75f9c8-9640-4f64-b32a-916436e461fc.jpg?1562901689
 value=4.145
 rarity=U
 type=Enchantment

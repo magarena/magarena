@@ -1,5 +1,5 @@
 name=Everglove Courier
-image=https://magiccards.info/scans/en/on/262.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13bf5786-e41a-4839-b8a0-5c7a413b23d0.jpg?1562899727
 value=2.788
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Harpoon Sniper
-image=https://magiccards.info/scans/en/lw/19.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c10ccaef-2a75-43d6-95f2-c3690ae5c87a.jpg?1562366467
 value=3.064
 rarity=U
 type=Creature

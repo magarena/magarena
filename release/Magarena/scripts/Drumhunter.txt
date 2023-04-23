@@ -1,5 +1,5 @@
 name=Drumhunter
-image=https://magiccards.info/scans/en/ala/129.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/343ef398-576a-43b6-a32b-f916ccd63579.jpg?1562906015
 value=3.800
 rarity=U
 type=Creature

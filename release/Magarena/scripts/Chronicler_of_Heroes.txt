@@ -1,5 +1,5 @@
 name=Chronicler of Heroes
-image=https://magiccards.info/scans/en/ima/196.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76a60ba3-208c-41c9-a40a-46d3586acdfd.jpg?1673148454
 image_updated=2017-04-12
 value=3.438
 rarity=U

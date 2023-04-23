@@ -1,5 +1,5 @@
 name=Tethered Griffin
-image=https://magiccards.info/scans/en/ud/21.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bed19fa-e497-48de-8459-030e60fdc9a8.jpg?1562443742
 value=3.840
 rarity=R
 type=Creature

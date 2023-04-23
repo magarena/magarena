@@ -1,5 +1,5 @@
 name=Ramirez DePietro
-image=https://magiccards.info/scans/en/lg/291.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9890742-f1cb-41fd-bf14-297b3ca88b93.jpg?1562937569
 value=3.323
 rarity=U
 type=Legendary,Creature

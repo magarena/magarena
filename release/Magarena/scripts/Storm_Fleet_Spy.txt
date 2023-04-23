@@ -1,5 +1,5 @@
 name=Storm Fleet Spy
-image=https://magiccards.info/scans/en/xln/84.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7c33ef4-60bb-4f95-92a5-7abedaac6767.jpg?1562566906
 value=2.500
 rarity=U
 type=Creature

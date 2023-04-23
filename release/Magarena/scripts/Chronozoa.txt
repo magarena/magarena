@@ -1,5 +1,5 @@
 name=Chronozoa
-image=https://magiccards.info/scans/en/pc/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a77c1ac0-5548-42b0-aa46-d532b3518632.jpg?1562578875
 value=4.233
 rarity=R
 type=Creature

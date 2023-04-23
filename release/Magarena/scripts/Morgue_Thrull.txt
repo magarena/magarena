@@ -1,5 +1,5 @@
 name=Morgue Thrull
-image=https://magiccards.info/scans/en/sh/15.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/270a26ce-3435-4fef-bc34-abbc6f1cf3f4.jpg?1562595935
 value=2.234
 rarity=C
 type=Creature

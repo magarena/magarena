@@ -1,5 +1,5 @@
 name=Favorable Destiny
-image=https://magiccards.info/scans/en/mr/220.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5657403-7c86-4eb6-84b0-75eedb04a5a2.jpg?1562722380
 value=3.032
 rarity=U
 type=Enchantment

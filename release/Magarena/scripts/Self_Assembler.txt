@@ -1,5 +1,5 @@
 name=Self-Assembler
-image=https://magiccards.info/scans/en/a25/231.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d86ba613-29bd-45d8-b5ed-f8fe8323fe75.jpg?1562441696
 image_updated=2018-04-27
 value=2.500
 rarity=C

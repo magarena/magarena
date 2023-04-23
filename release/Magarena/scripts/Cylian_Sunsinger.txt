@@ -1,5 +1,5 @@
 name=Cylian Sunsinger
-image=https://magiccards.info/scans/en/cfx/80.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90665426-118e-4f0b-8222-1b516678a2f5.jpg?1562802434
 value=2.893
 rarity=R
 type=Creature

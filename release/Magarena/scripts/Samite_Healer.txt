@@ -1,5 +1,5 @@
 name=Samite Healer
-image=https://magiccards.info/scans/en/10e/38.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/621f9a58-0bc8-40dd-aef1-43618274d6fe.jpg?1562548759
 value=2.500
 rarity=C
 type=Creature

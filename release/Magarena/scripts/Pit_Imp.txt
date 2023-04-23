@@ -1,5 +1,5 @@
 name=Pit Imp
-image=https://magiccards.info/scans/en/tp/42.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24c7acfe-b5b2-426f-a5a1-1ff8ef7ebf72.jpg?1562052816
 value=3.138
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sanctum Seeker
-image=https://magiccards.info/scans/en/xln/120.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28da9211-13f4-4500-98f9-58c260c01e18.jpg?1641602842
 value=2.500
 rarity=R
 type=Creature

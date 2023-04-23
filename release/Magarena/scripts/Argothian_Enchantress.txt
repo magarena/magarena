@@ -1,5 +1,5 @@
 name=Argothian Enchantress
-image=https://magiccards.info/scans/en/ema/158.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b99ff81f-08d9-4b4a-a879-de5e5e402802.jpg?1580014727
 value=4.579
 rarity=M
 type=Creature

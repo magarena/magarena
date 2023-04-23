@@ -1,5 +1,5 @@
 name=Haze of Rage
-image=https://magiccards.info/scans/en/fut/100.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c344b885-68c6-43d2-b6c1-6c89b3c94983.jpg?1619397115
 value=3.231
 rarity=U
 type=Sorcery

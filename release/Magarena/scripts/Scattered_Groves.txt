@@ -1,5 +1,5 @@
 name=Scattered Groves
-image=https://magiccards.info/scans/en/akh/247.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccb541aa-3bf6-41f3-89e5-9c6c56ea210a.jpg?1543676407
 value=2.500
 rarity=R
 type=Land

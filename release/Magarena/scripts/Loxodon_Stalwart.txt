@@ -1,5 +1,5 @@
 name=Loxodon Stalwart
-image=https://magiccards.info/scans/en/5dn/11.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e58f4fb-5b4e-45bc-99b3-d09cd79132df.jpg?1562875444
 value=3.000
 rarity=U
 type=Creature

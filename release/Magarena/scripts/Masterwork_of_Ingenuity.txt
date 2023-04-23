@@ -1,5 +1,5 @@
 name=Masterwork of Ingenuity
-image=https://magiccards.info/scans/en/c14/57.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80b38b13-fc19-4ffc-8100-249f9eb8cca6.jpg?1631589028
 value=2.500
 rarity=R
 type=Artifact

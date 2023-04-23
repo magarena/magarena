@@ -1,5 +1,5 @@
 name=Liquify
-image=https://magiccards.info/scans/en/tr/41.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12fadf25-0995-440d-a3e6-7964ed86cff6.jpg?1562628664
 value=2.864
 rarity=C
 type=Instant

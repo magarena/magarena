@@ -1,5 +1,5 @@
 name=Tricks of the Trade
-image=https://magiccards.info/scans/en/m13/74.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7860cf3-c3ea-4055-8c95-6d1c8d50e69d.jpg?1562201921
 value=3.100
 rarity=C
 type=Enchantment

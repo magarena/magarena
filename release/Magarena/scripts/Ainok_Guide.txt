@@ -1,5 +1,5 @@
 name=Ainok Guide
-image=https://magiccards.info/scans/en/frf/121.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c361ea9c-a989-4ded-8b2c-f565aa9d8a1d.jpg?1562829598
 value=2.500
 rarity=C
 type=Creature

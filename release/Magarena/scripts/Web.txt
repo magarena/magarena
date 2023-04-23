@@ -1,5 +1,5 @@
 name=Web
-image=https://magiccards.info/scans/en/9e/281.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91173ce1-62a9-4d0e-8b2a-9bc33858c4fc.jpg?1562738531
 value=2.727
 rarity=U
 type=Enchantment

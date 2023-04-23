@@ -1,5 +1,5 @@
 name=Cartographer
-image=https://magiccards.info/scans/en/od/232.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8241680d-6453-44ac-ab0f-3e7ebdd31e89.jpg?1562919171
 value=3.456
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Battle Screech
-image=https://magiccards.info/scans/en/ju/3.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/4782545f-8f3e-473c-bc54-0c237b733797.jpg?1682208315
 value=3.500
 rarity=U
 type=Sorcery

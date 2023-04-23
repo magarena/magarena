@@ -1,5 +1,5 @@
 name=Fountain Watch
-image=https://magiccards.info/scans/en/mm/19.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/690daa19-1842-4605-9bda-bf67e4ede3c4.jpg?1562381345
 value=3.910
 rarity=R
 type=Creature

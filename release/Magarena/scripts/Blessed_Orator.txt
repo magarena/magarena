@@ -1,5 +1,5 @@
 name=Blessed Orator
-image=https://magiccards.info/scans/en/9e/6.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c044857-2124-44f4-aafb-495511f26b3b.jpg?1562736688
 value=2.768
 rarity=U
 type=Creature

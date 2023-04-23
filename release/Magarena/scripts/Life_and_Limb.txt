@@ -1,5 +1,5 @@
 name=Life and Limb
-image=https://magiccards.info/scans/en/pc/133.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2721724d-92ae-4c0c-88dd-628888c468bf.jpg?1619398301
 value=4.127
 rarity=R
 type=Enchantment

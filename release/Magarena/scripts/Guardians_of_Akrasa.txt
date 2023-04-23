@@ -1,5 +1,5 @@
 name=Guardians of Akrasa
-image=https://magiccards.info/scans/en/m13/18.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/383c9aa5-30ad-4a2a-8b64-65d4b333c613.jpg?1562552464
 value=2.875
 rarity=C
 type=Creature

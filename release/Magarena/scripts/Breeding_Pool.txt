@@ -1,5 +1,5 @@
 name=Breeding Pool
-image=https://magiccards.info/scans/en/gtc/240.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb54233c-0844-4965-9cde-e8a4ef3e11b8.jpg?1584832238
 value=4.126
 rarity=R
 type=Land

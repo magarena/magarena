@@ -1,5 +1,5 @@
 name=Kyren Sniper
-image=https://magiccards.info/scans/en/mm/199.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4df99e19-0b1e-48ec-a146-38cf147eab61.jpg?1562380858
 value=2.365
 rarity=C
 type=Creature

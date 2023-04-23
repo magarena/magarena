@@ -1,5 +1,5 @@
 name=Blaster Mage
-image=https://magiccards.info/scans/en/mm/175.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/801b0fd1-bbb2-47c0-a4c3-4129a67473b9.jpg?1562381823
 value=2.547
 rarity=C
 type=Creature

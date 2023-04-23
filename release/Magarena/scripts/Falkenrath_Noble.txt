@@ -1,5 +1,5 @@
 name=Falkenrath Noble
-image=https://magiccards.info/scans/en/mm3/70.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89420882-5833-46f0-9a3f-3c8e694074df.jpg?1641602590
 image_updated=2017-08-08
 value=3.818
 rarity=C

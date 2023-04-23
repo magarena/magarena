@@ -1,5 +1,5 @@
 name=Spirit Loop
-image=https://magiccards.info/scans/en/ts/42.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31ffb2e6-b1bc-41c5-9e52-294c060b1d45.jpg?1562905454
 value=3.940
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wing Snare
-image=https://magiccards.info/scans/en/8e/288.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a58e1c71-b0e1-4c03-97cc-330e3ef94e52.jpg?1562199999
 value=2.500
 removal=3
 rarity=U

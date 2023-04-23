@@ -1,5 +1,5 @@
 name=Argothian Treefolk
-image=https://magiccards.info/scans/en/aq/60.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36b0d5b3-84d7-4888-90e9-2d0eb16c11d6.jpg?1562907798
 value=2.825
 rarity=C
 type=Creature

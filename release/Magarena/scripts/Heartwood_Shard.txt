@@ -1,5 +1,5 @@
 name=Heartwood Shard
-image=https://magiccards.info/scans/en/mi/184.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b13328a9-fc03-4c1b-b1b7-61cd41766300.jpg?1562155015
 value=1.732
 rarity=U
 type=Artifact

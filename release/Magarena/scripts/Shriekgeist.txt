@@ -1,5 +1,5 @@
 name=Shriekgeist
-image=https://magiccards.info/scans/en/ima/72.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/424b08b1-d9a3-4f18-a5ef-0f46698ac7ed.jpg?1562848395
 image_updated=2017-04-12
 value=3.213
 rarity=C

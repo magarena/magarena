@@ -1,5 +1,5 @@
 name=Drakestown Forgotten
-image=https://magiccards.info/scans/en/cns/27.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b718304a-2cbd-4870-9281-f82cdc08ce20.jpg?1562931834
 value=3.812
 rarity=R
 type=Creature

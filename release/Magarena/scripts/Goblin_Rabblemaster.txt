@@ -1,5 +1,5 @@
 name=Goblin Rabblemaster
-image=https://magiccards.info/scans/en/m15/145.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bce84a87-093a-42de-9696-8c3250e0f33b.jpg?1592764823
 value=4.000
 rarity=R
 type=Creature

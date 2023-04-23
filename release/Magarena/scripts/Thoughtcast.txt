@@ -1,5 +1,5 @@
 name=Thoughtcast
-image=https://magiccards.info/scans/en/mm2/64.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/466a0be8-31b9-4ea0-9a96-b09a76f4ec69.jpg?1682208952
 value=4.483
 rarity=C
 type=Sorcery

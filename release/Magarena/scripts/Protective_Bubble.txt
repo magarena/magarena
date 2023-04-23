@@ -1,5 +1,5 @@
 name=Protective Bubble
-image=https://magiccards.info/scans/en/lw/80.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7ab1db58-66b6-4b92-9dcd-e044fa383469.jpg?1562354294
 value=3.360
 rarity=C
 type=Enchantment

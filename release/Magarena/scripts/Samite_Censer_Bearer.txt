@@ -1,5 +1,5 @@
 name=Samite Censer-Bearer
-image=https://magiccards.info/scans/en/fut/15.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7de6aeea-0144-4148-b7a6-47b703f64af9.jpg?1562920419
 value=2.419
 rarity=C
 type=Creature

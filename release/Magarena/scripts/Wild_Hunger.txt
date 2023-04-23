@@ -1,5 +1,5 @@
 name=Wild Hunger
-image=https://magiccards.info/scans/en/dka/132.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bacc50a-71d7-4660-be1d-4db10c9b8fa8.jpg?1547517957
 value=3.091
 rarity=C
 type=Instant

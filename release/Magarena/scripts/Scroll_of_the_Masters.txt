@@ -1,5 +1,5 @@
 name=Scroll of the Masters
-image=https://magiccards.info/scans/en/frf/163.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6c7f24e-5ead-4b32-a804-4c89929508f6.jpg?1562830324
 value=2.500
 rarity=R
 type=Artifact

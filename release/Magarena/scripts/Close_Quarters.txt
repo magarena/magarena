@@ -1,5 +1,5 @@
 name=Close Quarters
-image=https://magiccards.info/scans/en/mm/184.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b9131c7-4e46-4c01-80b3-a6b055439346.jpg?1562379442
 value=4.019
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Akroan Conscriptor
-image=https://magiccards.info/scans/en/bng/87.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/decb529f-44fd-409d-932f-be9c403f12f6.jpg?1593092147
 value=3.461
 rarity=U
 type=Creature

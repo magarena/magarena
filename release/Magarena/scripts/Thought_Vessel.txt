@@ -1,5 +1,5 @@
 name=Thought Vessel
-image=https://magiccards.info/scans/en/c15/55.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10e9cbf2-99ed-4f70-8744-b9a08a5f5f42.jpg?1674142776
 image_updated=2016-02-29
 value=2.500
 rarity=C

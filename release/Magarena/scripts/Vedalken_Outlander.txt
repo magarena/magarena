@@ -1,5 +1,5 @@
 name=Vedalken Outlander
-image=https://magiccards.info/scans/en/cfx/132.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d75a7314-39f2-4e32-a5b0-ac1761b6d238.jpg?1562804068
 value=2.991
 rarity=C
 type=Artifact,Creature

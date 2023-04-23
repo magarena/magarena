@@ -1,5 +1,5 @@
 name=Centaur Safeguard
-image=https://magiccards.info/scans/en/rav/244.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/647d3e06-93e6-4948-a3ec-6a00bdfc0f99.jpg?1598917708
 value=2.700
 rarity=C
 type=Creature

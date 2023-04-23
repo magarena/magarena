@@ -1,5 +1,5 @@
 name=Paradigm Shift
-image=https://magiccards.info/scans/en/wl/46.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e64a17a8-091d-4029-908e-31d6a050b479.jpg?1587857235
 value=4.071
 rarity=R
 type=Sorcery

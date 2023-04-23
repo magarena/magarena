@@ -1,5 +1,5 @@
 name=Eyes in the Skies
-image=https://magiccards.info/scans/en/mm3/5.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1a1d9ad-a434-43de-bcb3-143d07dbd775.jpg?1593812791
 image_updated=2017-08-08
 value=2.735
 rarity=C

@@ -1,5 +1,5 @@
 name=Soltari Lancer
-image=https://magiccards.info/scans/en/tp/256.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9c67950-121b-4881-979e-c9488212aa8e.jpg?1562432231
 value=3.453
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Pitiless Horde
-image=https://magiccards.info/scans/en/dtk/112.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86263073-b585-4744-829d-5725e6a06cf2.jpg?1562789293
 value=2.500
 rarity=R
 type=Creature

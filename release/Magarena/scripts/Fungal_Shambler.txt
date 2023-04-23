@@ -1,5 +1,5 @@
 name=Fungal Shambler
-image=https://magiccards.info/scans/en/ap/100.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b65f96b-019b-40a9-9b4d-acd4abf4a0f9.jpg?1562901457
 value=4.155
 rarity=R
 type=Creature

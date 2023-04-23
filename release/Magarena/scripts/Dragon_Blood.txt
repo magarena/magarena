@@ -1,5 +1,5 @@
 name=Dragon Blood
-image=https://magiccards.info/scans/en/mi/163.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0712389-bc0c-4654-90e6-741387d84213.jpg?1592752254
 image_updated=2016-09-12
 value=2.750
 rarity=U

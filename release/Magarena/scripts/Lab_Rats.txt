@@ -1,5 +1,5 @@
 name=Lab Rats
-image=https://magiccards.info/scans/en/sh/11.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fd5d79e-cfd8-484b-bbc8-785177922e30.jpg?1562429857
 value=3.130
 rarity=C
 type=Sorcery

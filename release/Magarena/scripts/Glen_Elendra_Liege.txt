@@ -1,5 +1,5 @@
 name=Glen Elendra Liege
-image=https://magiccards.info/scans/en/pc2/94.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/374d2d74-1209-4822-b370-ab8b049d4ce0.jpg?1673148654
 value=3.519
 rarity=R
 type=Creature

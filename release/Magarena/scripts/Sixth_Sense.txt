@@ -1,5 +1,5 @@
 name=Sixth Sense
-image=https://magiccards.info/scans/en/akh/187.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e564db6b-0b8b-4c67-9135-5da76d2225fe.jpg?1543675978
 value=2.500
 rarity=U
 type=Enchantment

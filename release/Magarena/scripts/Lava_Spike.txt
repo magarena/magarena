@@ -1,5 +1,5 @@
 name=Lava Spike
-image=https://magiccards.info/scans/en/mma/121.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79c21c1f-eaa4-454d-a1c7-b41466d0a428.jpg?1547517298
 value=4.141
 rarity=C
 type=Sorcery

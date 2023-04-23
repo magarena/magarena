@@ -1,5 +1,5 @@
 name=Torpid Moloch
-image=https://magiccards.info/scans/en/rav/147.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7900ff91-0e47-4903-a680-9031f4a23cb4.jpg?1598915932
 value=3.613
 rarity=C
 type=Creature

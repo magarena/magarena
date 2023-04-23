@@ -1,5 +1,5 @@
 name=Eternal Dragon
-image=https://magiccards.info/scans/en/sc/12.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f57fc0c-cab1-4eb0-a58a-0c7a762f1572.jpg?1631585882
 value=4.000
 rarity=R
 type=Creature

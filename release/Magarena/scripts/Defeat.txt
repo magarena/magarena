@@ -1,5 +1,5 @@
 name=Defeat
-image=https://magiccards.info/scans/en/dtk/97.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60473300-0bdc-4e89-87d9-28c8d7b4d83d.jpg?1562787158
 value=2.500
 rarity=C
 type=Sorcery

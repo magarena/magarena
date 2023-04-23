@@ -1,5 +1,5 @@
 name=Day of Destiny
-image=https://magiccards.info/scans/en/bok/1.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56b27e0c-bf8e-43d6-b99d-3e25d4954d34.jpg?1673305062
 value=3.478
 rarity=R
 type=Legendary,Enchantment

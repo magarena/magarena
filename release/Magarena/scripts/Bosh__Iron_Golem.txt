@@ -1,5 +1,5 @@
 name=Bosh, Iron Golem
-image=https://magiccards.info/scans/en/c14/230.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09fb3b1f-c3a0-4da4-9b29-eff81fc1d562.jpg?1625978355
 value=4.228
 rarity=R
 type=Legendary,Artifact,Creature

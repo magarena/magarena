@@ -1,5 +1,5 @@
 name=Marhault Elsdragon
-image=https://magiccards.info/scans/en/lg/284.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e805883-081b-478a-aa58-172b659571c2.jpg?1562904797
 value=2.455
 rarity=U
 type=Legendary,Creature

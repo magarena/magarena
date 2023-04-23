@@ -1,5 +1,5 @@
 name=Homeward Path
-image=https://magiccards.info/scans/en/c16/301.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54734347-eee7-4c52-b514-7342afeccabd.jpg?1562400178
 image_updated=2017-08-17
 value=3.806
 rarity=R

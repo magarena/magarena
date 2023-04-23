@@ -1,5 +1,5 @@
 name=Tangle Asp
-image=https://magiccards.info/scans/en/5dn/94.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e13ac56-72a9-4605-b389-24d1cb712b3c.jpg?1562877274
 value=3.880
 rarity=C
 type=Creature

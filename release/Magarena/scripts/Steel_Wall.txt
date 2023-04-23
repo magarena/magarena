@@ -1,5 +1,5 @@
 name=Steel Wall
-image=https://magiccards.info/scans/en/mi/248.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43dc4ff6-c26c-4dba-ac7f-6dee7c9e5345.jpg?1562908682
 image_updated=2016-01-09
 value=4.104
 rarity=C

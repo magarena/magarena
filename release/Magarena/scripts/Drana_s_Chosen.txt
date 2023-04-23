@@ -1,5 +1,5 @@
 name=Drana's Chosen
-image=https://magiccards.info/scans/en/ogw/84.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/189abe2f-5899-438b-9f54-3c98e50f037a.jpg?1562899914
 image_updated=2016-02-29
 value=2.500
 rarity=R

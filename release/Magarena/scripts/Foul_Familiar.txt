@@ -1,5 +1,5 @@
 name=Foul Familiar
-image=https://magiccards.info/scans/en/ia/14.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61b54f73-0a7b-4aa4-8792-24b6f8ae35c5.jpg?1562869022
 value=3.069
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Defiant Salvager
-image=https://magiccards.info/scans/en/aer/56.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfd1c30e-e539-4382-b0fd-724a502a4b7e.jpg?1608909648
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Yahenni's Expertise
-image=https://magiccards.info/scans/en/aer/75.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2f28735-122c-45ba-bde5-decfd9b11b32.jpg?1576381752
 value=2.500
 rarity=R
 type=Sorcery

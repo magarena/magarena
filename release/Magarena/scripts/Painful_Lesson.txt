@@ -1,5 +1,5 @@
 name=Painful Lesson
-image=https://magiccards.info/scans/en/akh/102.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e16fa034-f89e-497a-8fd0-533b1932bff5.jpg?1562940239
 value=2.500
 rarity=C
 type=Sorcery

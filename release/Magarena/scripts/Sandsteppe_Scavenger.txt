@@ -1,5 +1,5 @@
 name=Sandsteppe Scavenger
-image=https://magiccards.info/scans/en/dtk/200.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/861f215b-4f3b-4aca-9664-3ef9a0ddea1a.jpg?1562789292
 value=2.500
 rarity=C
 type=Creature

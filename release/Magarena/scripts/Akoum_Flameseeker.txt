@@ -1,5 +1,5 @@
 name=Akoum Flameseeker
-image=https://magiccards.info/scans/en/ogw/101.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ef4e1e2-7961-47d2-bb55-9168ea201214.jpg?1562917172
 image_updated=2016-02-29
 value=2.500
 rarity=C

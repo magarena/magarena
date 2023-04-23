@@ -1,5 +1,5 @@
 name=Pawn of Ulamog
-image=https://magiccards.info/scans/en/c17/120.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9b9e2c6-7af7-42ae-91b2-0d17312b3624.jpg?1562625737
 image_updated=2017-10-03
 value=4.007
 rarity=U

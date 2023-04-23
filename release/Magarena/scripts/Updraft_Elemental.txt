@@ -1,5 +1,5 @@
 name=Updraft Elemental
-image=https://magiccards.info/scans/en/dtk/82.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9621c700-569d-4d07-847e-68b97113415f.jpg?1562790189
 value=2.500
 rarity=C
 type=Creature

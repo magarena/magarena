@@ -1,5 +1,5 @@
 name=Wren's Run Packmaster
-image=https://magiccards.info/scans/en/c14/227.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a44a2d69-df93-475b-8233-f73d8402594a.jpg?1592673334
 value=4.214
 removal=2
 rarity=R

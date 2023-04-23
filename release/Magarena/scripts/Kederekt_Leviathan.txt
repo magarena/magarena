@@ -1,5 +1,5 @@
 name=Kederekt Leviathan
-image=https://magiccards.info/scans/en/ala/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73cdb22d-90e6-49c4-9ad7-3249d9196ca9.jpg?1673147338
 value=3.289
 rarity=R
 type=Creature

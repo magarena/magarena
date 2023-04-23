@@ -1,5 +1,5 @@
 name=Truefire Paladin
-image=https://magiccards.info/scans/en/gtc/202.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a42906c1-cf32-4c14-b08a-d800d1858d8f.jpg?1592751769
 image_updated=2016-09-12
 value=3.917
 rarity=U

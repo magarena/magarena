@@ -1,5 +1,5 @@
 name=Soul Charmer
-image=https://magiccards.info/scans/en/pr/24.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1656bd2a-e7ce-48b1-8fa1-5f470fe6058e.jpg?1562899243
 value=2.407
 rarity=C
 type=Creature

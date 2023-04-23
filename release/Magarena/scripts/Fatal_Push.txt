@@ -1,5 +1,5 @@
 name=Fatal Push
-image=https://magiccards.info/scans/en/aer/57.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e9d8fe4-fd9b-4923-92bf-7dd6b8fa02e7.jpg?1598304715
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Pardic Arsonist
-image=https://magiccards.info/scans/en/tr/105.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c2538fa-2eb7-47ca-a1cf-e5546e26e584.jpg?1562628804
 value=3.320
 rarity=U
 type=Creature

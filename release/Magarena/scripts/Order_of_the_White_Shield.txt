@@ -1,5 +1,5 @@
 name=Order of the White Shield
-image=https://magiccards.info/scans/en/5e/325.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/335867c0-375d-4914-b9ff-032c59079775.jpg?1562868072
 value=4.029
 rarity=U
 type=Creature

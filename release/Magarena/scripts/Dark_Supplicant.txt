@@ -1,5 +1,5 @@
 name=Dark Supplicant
-image=https://magiccards.info/scans/en/le/64.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb685932-5df5-4f26-9633-b1daa8925359.jpg?1562942279
 value=3.375
 rarity=U
 type=Creature

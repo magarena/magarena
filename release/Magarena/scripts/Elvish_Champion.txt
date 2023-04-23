@@ -1,5 +1,5 @@
 name=Elvish Champion
-image=https://magiccards.info/scans/en/10e/261.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad42a3fd-21ae-49cf-b11d-3700835f2f96.jpg?1562553436
 image_updated=2016-12-02
 value=4.299
 rarity=R

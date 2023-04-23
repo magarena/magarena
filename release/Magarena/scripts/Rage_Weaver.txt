@@ -1,5 +1,5 @@
 name=Rage Weaver
-image=https://magiccards.info/scans/en/10e/223.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57cec628-5f6a-4b42-9044-3f9a80cac3e6.jpg?1562548048
 value=2.607
 rarity=U
 type=Creature

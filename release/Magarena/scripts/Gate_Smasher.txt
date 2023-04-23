@@ -1,5 +1,5 @@
 name=Gate Smasher
-image=https://magiccards.info/scans/en/dtk/239.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/001e8222-8dea-4767-8c13-21fb7ba556d7.jpg?1562781756
 value=2.500
 rarity=U
 type=Artifact

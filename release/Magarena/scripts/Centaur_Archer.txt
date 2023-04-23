@@ -1,5 +1,5 @@
 name=Centaur Archer
-image=https://magiccards.info/scans/en/ia/360.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/887243ef-51fd-4eb7-8828-a81a32edf8c0.jpg?1559592540
 value=3.283
 rarity=U
 type=Creature

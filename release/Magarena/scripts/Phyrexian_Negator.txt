@@ -1,5 +1,5 @@
 name=Phyrexian Negator
-image=https://magiccards.info/scans/en/ud/65.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b3543e0-c15f-4fed-9a68-8f590b40ab16.jpg?1562917757
 image_updated=2017-01-03
 value=3.908
 rarity=R

@@ -1,5 +1,5 @@
 name=Soul of New Phyrexia
-image=https://magiccards.info/scans/en/c16/274.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a52b55b5-72d9-4364-9fd4-96f05367aece.jpg?1682210256
 image_updated=2017-08-17
 value=4.000
 rarity=M

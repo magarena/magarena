@@ -1,5 +1,5 @@
 name=Rumbling Baloth
-image=https://magiccards.info/scans/en/m14/193.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93a56610-482b-4ddf-88e1-e4a2edf4fa0f.jpg?1601080029
 value=3.194
 rarity=C
 type=Creature

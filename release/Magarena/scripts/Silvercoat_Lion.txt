@@ -1,5 +1,5 @@
 name=Silvercoat Lion
-image=https://magiccards.info/scans/en/m13/35.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d33e866-cfd8-44e6-8070-df8df1ce965d.jpg?1562557734
 value=2.153
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Omnibian
-image=https://magiccards.info/scans/en/di/119.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12a5a212-395c-427e-81b8-893745274068.jpg?1593273669
 value=4.114
 rarity=R
 type=Creature

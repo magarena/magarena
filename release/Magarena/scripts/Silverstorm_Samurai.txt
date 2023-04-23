@@ -1,5 +1,5 @@
 name=Silverstorm Samurai
-image=https://magiccards.info/scans/en/bok/22.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10d2a6d9-5848-4481-a0f9-42320ff2c230.jpg?1562875514
 value=1.755
 rarity=C
 type=Creature

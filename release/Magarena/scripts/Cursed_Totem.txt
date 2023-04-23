@@ -1,5 +1,5 @@
 name=Cursed Totem
-image=https://magiccards.info/scans/en/6e/278.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5dde91a9-7d2d-4a7b-861a-3d1c16ec79d9.jpg?1626100864
 value=4.307
 rarity=R
 type=Artifact

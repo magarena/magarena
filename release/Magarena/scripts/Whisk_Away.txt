@@ -1,5 +1,5 @@
 name=Whisk Away
-image=https://magiccards.info/scans/en/frf/57.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b5d96a9-11dd-44cc-baf1-bab298ae03f0.jpg?1562825556
 value=2.500
 rarity=C
 type=Instant

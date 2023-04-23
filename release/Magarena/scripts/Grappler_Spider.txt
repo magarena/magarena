@@ -1,5 +1,5 @@
 name=Grappler Spider
-image=https://magiccards.info/scans/en/wwk/102.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2324d0b-ac63-45e5-ba27-a643c61538c7.jpg?1562298093
 value=1.652
 rarity=C
 type=Creature

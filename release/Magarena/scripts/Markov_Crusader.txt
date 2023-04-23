@@ -1,5 +1,5 @@
 name=Markov Crusader
-image=https://magiccards.info/scans/en/emn/95.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87d8354b-df56-4294-9f8a-b7c92e31b88e.jpg?1576384356
 image_updated=2016-09-05
 value=2.500
 rarity=U

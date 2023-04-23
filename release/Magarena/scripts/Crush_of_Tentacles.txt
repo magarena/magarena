@@ -1,5 +1,5 @@
 name=Crush of Tentacles
-image=https://magiccards.info/scans/en/ogw/53.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be1434e1-a0d6-4028-918b-1e2d17d3a227.jpg?1562933235
 image_updated=2016-02-29
 value=2.500
 removal=2

@@ -1,5 +1,5 @@
 name=An-Havva Inn
-image=https://magiccards.info/scans/en/hl/52.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/eff4531f-d19d-44af-861a-33087197d21c.jpg?1562588715
 value=2.736
 rarity=U
 type=Sorcery

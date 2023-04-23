@@ -1,5 +1,5 @@
 name=Crenellated Wall
-image=https://magiccards.info/scans/en/mm/290.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d85ad08d-1120-411a-8bbe-ac93a56476bd.jpg?1562383051
 value=3.586
 rarity=U
 type=Artifact,Creature

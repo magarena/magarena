@@ -1,5 +1,5 @@
 name=Craterize
-image=https://magiccards.info/scans/en/m13/126.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5459409-5103-4a97-a6fb-3e3ab896eb66.jpg?1562561226
 value=1.181
 removal=3
 rarity=C

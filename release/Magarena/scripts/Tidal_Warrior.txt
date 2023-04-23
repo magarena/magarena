@@ -1,5 +1,5 @@
 name=Tidal Warrior
-image=https://magiccards.info/scans/en/sh/47.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24a16bf4-de91-49b0-bc6e-ab1d38a484e9.jpg?1592764668
 value=3.433
 rarity=C
 type=Creature

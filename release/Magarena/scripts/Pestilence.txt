@@ -1,5 +1,5 @@
 name=Pestilence
-image=https://magiccards.info/scans/en/6e/149.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29d852c4-bd53-4a3b-b1e2-896917cbc27f.jpg?1562815864
 image_updated=2017-01-03
 value=4.378
 rarity=U

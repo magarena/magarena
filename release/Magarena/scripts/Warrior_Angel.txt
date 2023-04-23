@@ -1,5 +1,5 @@
 name=Warrior Angel
-image=https://magiccards.info/scans/en/sh/123.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81d2c6e3-e556-4cc6-94b6-fdbc62d6853e.jpg?1562596873
 value=3.144
 rarity=R
 type=Creature

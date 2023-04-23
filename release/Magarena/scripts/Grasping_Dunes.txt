@@ -1,5 +1,5 @@
 name=Grasping Dunes
-image=https://magiccards.info/scans/en/akh/244.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8fcc939-6a31-4fb3-abe7-7663b85868dd.jpg?1543676386
 value=2.500
 rarity=U
 type=Land

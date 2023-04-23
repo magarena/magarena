@@ -1,5 +1,5 @@
 name=Rekindling Phoenix
-image=https://magiccards.info/scans/en/rix/111.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a9945ec-0996-434e-b177-97203eabaf24.jpg?1673484390
 value=2.500
 rarity=M
 type=Creature

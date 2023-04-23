@@ -1,5 +1,5 @@
 name=Devout Monk
-image=https://magiccards.info/scans/en/st/14.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd1101f5-0bc1-47fa-891b-206b9c1c7f79.jpg?1562875276
 value=1.971
 rarity=C
 type=Creature

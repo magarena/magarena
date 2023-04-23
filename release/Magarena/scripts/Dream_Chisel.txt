@@ -1,5 +1,5 @@
 name=Dream Chisel
-image=https://magiccards.info/scans/en/on/308.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e89610e9-f1d3-4332-901a-2598bf01d61d.jpg?1562950378
 value=3.464
 rarity=R
 type=Artifact

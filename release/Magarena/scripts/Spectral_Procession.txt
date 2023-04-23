@@ -1,5 +1,5 @@
 name=Spectral Procession
-image=https://magiccards.info/scans/en/mm2/33.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9964629e-d79e-46e4-b3fd-e7d1759cbc60.jpg?1562265268
 value=3.611
 rarity=U
 type=Sorcery

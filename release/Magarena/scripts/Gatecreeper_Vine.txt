@@ -1,5 +1,5 @@
 name=Gatecreeper Vine
-image=https://magiccards.info/scans/en/rtr/124.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1ebaed7-b3d5-4eb8-93f7-3a65fd7b89b6.jpg?1592754674
 value=3.591
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vizier of Tumbling Sands
-image=https://magiccards.info/scans/en/akh/75.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1514f3d-7444-4c6c-8f7c-bf3565603429.jpg?1591320374
 value=2.500
 rarity=U
 type=Creature

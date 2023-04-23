@@ -1,5 +1,5 @@
 name=Imaginary Pet
-image=https://magiccards.info/scans/en/9e/82.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/432d8827-e46d-4c0d-bde3-305594f20f19.jpg?1562734388
 value=3.719
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Mothrider Samurai
-image=https://magiccards.info/scans/en/chk/34.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35a236f7-f008-4eb8-91d9-31ea8589cf0c.jpg?1562758929
 value=2.906
 rarity=C
 type=Creature

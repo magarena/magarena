@@ -1,5 +1,5 @@
 name=Horde of Notions
-image=https://magiccards.info/scans/en/mm2/178.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5137c28-632f-40f4-bf9d-877f5f070987.jpg?1562265721
 value=2.500
 rarity=R
 type=Legendary,Creature

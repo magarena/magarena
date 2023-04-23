@@ -1,5 +1,5 @@
 name=Mtenda Griffin
-image=https://magiccards.info/scans/en/mr/232.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/162dd988-0beb-48e4-9eaa-a08ddb835648.jpg?1562717857
 value=3.486
 rarity=U
 type=Creature

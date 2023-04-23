@@ -1,5 +1,5 @@
 name=Farhaven Elf
-image=https://magiccards.info/scans/en/c14/196.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/320d0a4c-c556-4468-b934-bfdf17961a53.jpg?1631234906
 value=3.346
 rarity=C
 type=Creature

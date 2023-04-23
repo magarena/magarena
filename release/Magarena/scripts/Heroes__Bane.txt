@@ -1,5 +1,5 @@
 name=Heroes' Bane
-image=https://magiccards.info/scans/en/ima/166.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/247e2b05-b1bb-4ee0-bbac-21e903e51a38.jpg?1591320872
 image_updated=2017-04-12
 value=3.750
 rarity=U

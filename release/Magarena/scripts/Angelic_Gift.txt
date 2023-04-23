@@ -1,5 +1,5 @@
 name=Angelic Gift
-image=https://magiccards.info/scans/en/bfz/19.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a2122c0-5fb4-4767-b969-c61bd959d604.jpg?1631585837
 image_updated=2015-11-08
 value=2.500
 rarity=C

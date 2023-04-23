@@ -1,5 +1,5 @@
 name=Shadowcloak Vampire
-image=https://magiccards.info/scans/en/m15/113.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b4911e9-01e6-4c41-9f2a-dfc25bedb2f7.jpg?1562786576
 value=2.143
 rarity=C
 type=Creature

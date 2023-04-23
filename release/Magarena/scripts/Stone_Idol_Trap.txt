@@ -1,5 +1,5 @@
 name=Stone Idol Trap
-image=https://magiccards.info/scans/en/wwk/93.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44dee4b3-f3c1-4ef5-8dfa-fa10c860be1e.jpg?1562285986
 value=3.538
 rarity=R
 type=Instant

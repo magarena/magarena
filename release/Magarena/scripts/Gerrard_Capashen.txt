@@ -1,5 +1,5 @@
 name=Gerrard Capashen
-image=https://magiccards.info/scans/en/ap/11.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/447c8c98-ac0e-4a12-a99e-f75d82b7a51f.jpg?1562907491
 image_updated=2016-12-03
 value=3.866
 rarity=R

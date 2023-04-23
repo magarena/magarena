@@ -1,5 +1,5 @@
 name=Indentured Oaf
-image=https://magiccards.info/scans/en/rav/133.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af6e976c-3c0b-4ba5-b614-e1b576b57e86.jpg?1598915699
 value=1.703
 rarity=U
 type=Creature

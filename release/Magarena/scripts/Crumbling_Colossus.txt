@@ -1,5 +1,5 @@
 name=Crumbling Colossus
-image=https://magiccards.info/scans/en/m12/204.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b09afa3b-c172-4cd7-b605-bacbfbd07c24.jpg?1562655683
 value=2.700
 rarity=U
 type=Artifact,Creature

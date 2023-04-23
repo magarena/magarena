@@ -1,5 +1,5 @@
 name=Manic Vandal
-image=https://magiccards.info/scans/en/m12/151.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/985a5866-8c62-46af-a0c0-e69d01d87f4f.jpg?1562652129
 value=3.873
 removal=1
 rarity=C

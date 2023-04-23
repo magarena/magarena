@@ -1,5 +1,5 @@
 name=Flowstone Shambler
-image=https://magiccards.info/scans/en/9e/185.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65669460-54e6-4358-83de-d7a576f9eea3.jpg?1562736295
 value=2.281
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Nesting Wurm
-image=https://magiccards.info/scans/en/ne/107.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5da697da-7026-4dea-b494-8314d789160f.jpg?1562630129
 value=3.446
 rarity=U
 type=Creature

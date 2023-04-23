@@ -1,5 +1,5 @@
 name=Daru Spiritualist
-image=https://magiccards.info/scans/en/sc/5.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18f26b88-cffc-47ed-a70a-7d704a32c8bb.jpg?1562526069
 value=3.722
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Conjurer's Closet
-image=https://magiccards.info/scans/en/avr/214.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3435fd09-a7a2-475e-a690-3c2011b70024.jpg?1599708903
 value=3.826
 rarity=R
 type=Artifact

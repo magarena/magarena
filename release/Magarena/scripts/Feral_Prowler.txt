@@ -1,5 +1,5 @@
 name=Feral Prowler
-image=https://magiccards.info/scans/en/hou/115.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a59d92b0-5ad1-42a7-9c06-1cb31a63bd64.jpg?1601082605
 value=2.500
 rarity=C
 type=Creature

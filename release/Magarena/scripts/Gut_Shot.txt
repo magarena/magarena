@@ -1,5 +1,5 @@
 name=Gut Shot
-image=https://magiccards.info/scans/en/mm2/117.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/461987da-8860-4a04-8f93-d182523ca311.jpg?1562261607
 image_updated=2015-11-05
 value=3.901
 removal=1

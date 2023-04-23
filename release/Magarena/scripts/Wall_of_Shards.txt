@@ -1,5 +1,5 @@
 name=Wall of Shards
-image=https://magiccards.info/scans/en/cs/23.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/884ee8d8-4c0d-4e44-8321-bccd18195693.jpg?1593274857
 value=3.500
 rarity=U
 type=Snow,Creature

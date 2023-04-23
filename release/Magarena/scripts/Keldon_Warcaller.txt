@@ -1,5 +1,5 @@
 name=Keldon Warcaller
-image=https://magiccards.info/scans/en/dom/136.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22d2e230-2d60-402d-98e4-0f33d2f27c56.jpg?1636491681
 value=2.500
 rarity=C
 type=Creature

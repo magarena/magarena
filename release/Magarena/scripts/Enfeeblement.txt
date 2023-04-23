@@ -1,5 +1,5 @@
 name=Enfeeblement
-image=https://magiccards.info/scans/en/9e/127.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4adaf0bf-b26d-4166-8809-431283690de7.jpg?1562734783
 value=2.741
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Overseer of the Damned
-image=https://magiccards.info/scans/en/c14/28.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/908e0ae3-6ef2-4110-9674-eb6c7eef0fa8.jpg?1637630730
 value=2.500
 rarity=R
 type=Creature

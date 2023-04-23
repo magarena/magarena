@@ -1,5 +1,5 @@
 name=Deep-Sea Terror
-image=https://magiccards.info/scans/en/ori/52.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/007b526c-5387-4ed4-a320-b826d507e014.jpg?1562004585
 image_updated=2015-11-05
 value=2.500
 rarity=C

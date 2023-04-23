@@ -1,5 +1,5 @@
 name=Bant Sureblade
-image=https://magiccards.info/scans/en/arb/143.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/162feb2b-e641-4338-bcf1-1f7e7a11bb9d.jpg?1562639838
 value=3.616
 rarity=C
 type=Creature

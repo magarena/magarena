@@ -1,5 +1,5 @@
 name=Gore-House Chainwalker
-image=https://magiccards.info/scans/en/rtr/96.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56ba132f-95fc-4b99-a1dc-ebe6f622bb41.jpg?1562786612
 value=3.270
 rarity=C
 type=Creature

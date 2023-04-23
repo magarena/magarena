@@ -1,5 +1,5 @@
 name=Evil Presence
-image=https://magiccards.info/scans/en/nph/60.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dd00bc5-234c-4ded-b0b7-1181bc16cb28.jpg?1562877415
 value=2.870
 rarity=C
 type=Enchantment

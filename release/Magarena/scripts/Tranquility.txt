@@ -1,5 +1,5 @@
 name=Tranquility
-image=https://magiccards.info/scans/en/7e/276.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdf5c7f6-1b7f-49e2-ac01-040e529383a3.jpg?1562431739
 value=3.417
 rarity=C
 type=Sorcery

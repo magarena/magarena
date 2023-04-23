@@ -1,5 +1,5 @@
 name=First Volley
-image=https://magiccards.info/scans/en/bok/100.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6e5e360-ed47-40c1-8ad7-57645c2854ca.jpg?1562880074
 value=1.765
 rarity=C
 type=Instant

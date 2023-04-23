@@ -1,5 +1,5 @@
 name=Dwarven Blastminer
-image=https://magiccards.info/scans/en/on/199.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2970831a-738b-476f-9d46-39f10a1f91e7.jpg?1562904808
 value=3.653
 rarity=U
 type=Creature

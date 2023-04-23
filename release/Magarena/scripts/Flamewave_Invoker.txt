@@ -1,5 +1,5 @@
 name=Flamewave Invoker
-image=https://magiccards.info/scans/en/10e/202.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d14eb0c1-7709-44da-ba7a-1aa033efb4f8.jpg?1562937061
 image_updated=2016-12-02
 value=3.061
 rarity=U

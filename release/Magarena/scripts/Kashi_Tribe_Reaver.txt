@@ -1,5 +1,5 @@
 name=Kashi-Tribe Reaver
-image=https://magiccards.info/scans/en/chk/220.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d417f90-10e9-4c41-ac3b-1a861147d69e.jpg?1562759361
 value=3.310
 rarity=U
 type=Creature

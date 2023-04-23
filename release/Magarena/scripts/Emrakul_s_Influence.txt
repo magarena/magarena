@@ -1,5 +1,5 @@
 name=Emrakul's Influence
-image=https://magiccards.info/scans/en/emn/157.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/112476e7-72ab-4ebc-9e6e-e96fbf5109c0.jpg?1576384782
 image_updated=2016-09-05
 value=2.500
 rarity=U

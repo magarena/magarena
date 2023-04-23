@@ -1,5 +1,5 @@
 name=Wayfaring Temple
-image=https://magiccards.info/scans/en/mm3/202.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77d4920f-94f7-4780-9c5f-f0df6f6d3d6e.jpg?1568004866
 image_updated=2017-08-08
 value=3.892
 rarity=U

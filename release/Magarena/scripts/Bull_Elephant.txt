@@ -1,5 +1,5 @@
 name=Bull Elephant
-image=https://magiccards.info/scans/en/vi/51.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa7f5f41-ed30-412b-b51e-37d26e9e6455.jpg?1562279119
 value=1.868
 rarity=C
 type=Creature

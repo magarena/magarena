@@ -1,5 +1,5 @@
 name=Aura Gnarlid
-image=https://magiccards.info/scans/en/pc2/55.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/808d06bb-1467-4c91-965e-bf8874ffa5e6.jpg?1592710792
 value=3.817
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Umezawa's Jitte
-image=https://magiccards.info/scans/en/bok/163.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b6e5956-f795-451b-bb24-56462d1ced27.jpg?1562876528
 value=4.594
 rarity=R
 type=Legendary,Artifact

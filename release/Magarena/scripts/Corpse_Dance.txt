@@ -1,5 +1,5 @@
 name=Corpse Dance
-image=https://magiccards.info/scans/en/tp/10.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aaed9b00-f6a1-4023-b9b9-22d904fe5271.jpg?1562430817
 value=4.087
 rarity=R
 type=Instant

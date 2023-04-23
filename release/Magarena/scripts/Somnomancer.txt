@@ -1,5 +1,5 @@
 name=Somnomancer
-image=https://magiccards.info/scans/en/shm/149.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eaf51122-fd7c-40b5-b759-65e21c28e3d6.jpg?1562837730
 value=2.545
 rarity=C
 type=Creature

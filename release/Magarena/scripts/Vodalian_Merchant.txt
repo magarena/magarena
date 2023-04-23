@@ -1,5 +1,5 @@
 name=Vodalian Merchant
-image=https://magiccards.info/scans/en/in/85.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1c0effa-a4b8-4166-a66a-90cf01c6ea0d.jpg?1562933932
 value=3.061
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shoreline Ranger
-image=https://magiccards.info/scans/en/a25/72.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9957cbe-da88-41fe-a4aa-e32ec9e7aa38.jpg?1562439552
 image_updated=2018-04-27
 value=3.900
 rarity=C

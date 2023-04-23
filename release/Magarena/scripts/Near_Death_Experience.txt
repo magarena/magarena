@@ -1,5 +1,5 @@
 name=Near-Death Experience
-image=https://magiccards.info/scans/en/roe/38.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77d61706-f9c1-4590-8057-7aa7fa199e6d.jpg?1562705300
 value=3.863
 rarity=R
 type=Enchantment

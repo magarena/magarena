@@ -1,5 +1,5 @@
 name=Harmattan Efreet
-image=https://magiccards.info/scans/en/6e/73.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8fc0ba3-6ffa-4fd4-b332-88da41b8778a.jpg?1562823386
 value=2.210
 rarity=U
 type=Creature

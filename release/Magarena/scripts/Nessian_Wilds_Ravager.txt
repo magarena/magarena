@@ -1,5 +1,5 @@
 name=Nessian Wilds Ravager
-image=https://magiccards.info/scans/en/bng/129.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65368cf0-7d92-4248-b930-633fd023065b.jpg?1593092537
 value=3.682
 rarity=R
 type=Creature

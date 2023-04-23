@@ -1,5 +1,5 @@
 name=Conversion Chamber
-image=https://magiccards.info/scans/en/nph/133.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14d5a8f3-05b6-4bb7-bbe1-e753e22cbb50.jpg?1562875648
 value=2.950
 rarity=U
 type=Artifact

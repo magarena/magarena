@@ -1,5 +1,5 @@
 name=Bojuka Bog
-image=https://magiccards.info/scans/en/c14/285.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9884a11f-11ad-4836-8a59-d2f6f381b151.jpg?1682210337
 value=4.578
 rarity=C
 type=Land

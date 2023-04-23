@@ -1,5 +1,5 @@
 name=Sicken
-image=https://magiccards.info/scans/en/us/156.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa1beb5d-0ef2-4013-932b-5e4a5d0af559.jpg?1562930880
 value=2.852
 rarity=C
 type=Enchantment

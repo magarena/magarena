@@ -1,5 +1,5 @@
 name=Hikari, Twilight Guardian
-image=https://magiccards.info/scans/en/mm2/18.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb3e29ea-c907-4185-986c-f0dabd3b3855.jpg?1562266874
 image_updated=2015-11-05
 value=3.042
 rarity=U

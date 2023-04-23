@@ -1,5 +1,5 @@
 name=Wastes
-image=https://magiccards.info/scans/en/ogw/183b.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cc070d3-4b83-4684-9caf-063e5c473a77.jpg?1657725364
 image_updated=2017-09-01
 value=2.500
 rarity=B

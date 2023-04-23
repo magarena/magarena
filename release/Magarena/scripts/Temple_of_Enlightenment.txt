@@ -1,5 +1,5 @@
 name=Temple of Enlightenment
-image=https://magiccards.info/scans/en/bng/163.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4cb2ae7-da72-4396-9ffc-686d6cd16803.jpg?1682210708
 value=3.811
 rarity=R
 type=Land

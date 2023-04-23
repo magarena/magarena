@@ -1,5 +1,5 @@
 name=Diminishing Returns
-image=https://magiccards.info/scans/en/ema/46.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9ed455f-95cd-48ca-8b0d-4db259347bb6.jpg?1580013930
 value=4.555
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Elfhame Palace
-image=https://magiccards.info/scans/en/c17/247.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1ddd0084-349d-4d5f-86af-a3a65dcce73a.jpg?1562601695
 image_updated=2017-10-03
 value=3.315
 rarity=U

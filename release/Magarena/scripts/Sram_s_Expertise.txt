@@ -1,5 +1,5 @@
 name=Sram's Expertise
-image=https://magiccards.info/scans/en/aer/24.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c6d47b0-4c19-4c19-9e21-54cd87a5e34d.jpg?1576381430
 value=2.500
 rarity=R
 type=Sorcery

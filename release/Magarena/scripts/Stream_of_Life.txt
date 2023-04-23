@@ -1,5 +1,5 @@
 name=Stream of Life
-image=https://magiccards.info/scans/en/9e/272.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/341aa1b2-e600-4580-b0cd-e1582b75dc81.jpg?1562733506
 value=2.457
 rarity=U
 type=Sorcery

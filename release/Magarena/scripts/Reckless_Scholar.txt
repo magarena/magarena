@@ -1,5 +1,5 @@
 name=Reckless Scholar
-image=https://magiccards.info/scans/en/soi/82.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/bad3313a-61ef-42c8-a092-390adb51e17e.jpg?1600713962
 image_updated=2010-09-10
 value=3.375
 rarity=U

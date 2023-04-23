@@ -1,5 +1,5 @@
 name=Tendrils of Agony
-image=https://magiccards.info/scans/en/sc/75.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f26faca-f338-4ce5-a218-6a61d40fc50a.jpg?1562917207
 value=4.500
 rarity=U
 type=Sorcery

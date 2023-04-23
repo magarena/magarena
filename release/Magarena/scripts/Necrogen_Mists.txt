@@ -1,5 +1,5 @@
 name=Necrogen Mists
-image=https://magiccards.info/scans/en/mi/69.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18291514-9ffb-4032-9c77-cec0200bf1b6.jpg?1562137104
 value=3.641
 rarity=R
 type=Enchantment

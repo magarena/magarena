@@ -1,5 +1,5 @@
 name=Storm Fleet Swashbuckler
-image=https://magiccards.info/scans/en/rix/117.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7093bd0e-3b98-4f46-9717-202ddd277bf5.jpg?1555040547
 value=2.500
 rarity=U
 type=Creature

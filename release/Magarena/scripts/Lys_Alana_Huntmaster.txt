@@ -1,5 +1,5 @@
 name=Lys Alana Huntmaster
-image=https://magiccards.info/scans/en/ema/176.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0849f67b-da5d-49f7-840f-f87f48518156.jpg?1631235019
 value=4.085
 rarity=C
 type=Creature

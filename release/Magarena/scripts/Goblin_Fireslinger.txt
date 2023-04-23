@@ -1,5 +1,5 @@
 name=Goblin Fireslinger
-image=https://magiccards.info/scans/en/mm2/114.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6c043b7-1eec-4d11-986c-8fb3823fc3b1.jpg?1562268807
 value=3.955
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Silvergill Douser
-image=https://magiccards.info/scans/en/lw/87.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8875c883-8d56-406b-bd89-42199a6e79f5.jpg?1562356858
 value=3.520
 rarity=C
 type=Creature

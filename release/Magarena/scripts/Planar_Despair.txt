@@ -1,5 +1,5 @@
 name=Planar Despair
-image=https://magiccards.info/scans/en/ap/50.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a92d454-3f23-45bf-921f-25b0da4ce138.jpg?1562908776
 value=3.069
 rarity=R
 type=Sorcery

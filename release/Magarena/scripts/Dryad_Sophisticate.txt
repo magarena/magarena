@@ -1,5 +1,5 @@
 name=Dryad Sophisticate
-image=https://magiccards.info/scans/en/gp/83.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b5bf5ce-f7f8-47cb-abb8-f14ce5f1af67.jpg?1593272425
 value=4.082
 rarity=U
 type=Creature

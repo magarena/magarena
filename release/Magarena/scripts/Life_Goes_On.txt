@@ -1,5 +1,5 @@
 name=Life Goes On
-image=https://magiccards.info/scans/en/hou/121.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3888197f-5da4-4413-9cad-b37a12ba1e60.jpg?1594737084
 value=2.500
 rarity=C
 type=Instant

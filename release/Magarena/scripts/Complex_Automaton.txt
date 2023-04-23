@@ -1,5 +1,5 @@
 name=Complex Automaton
-image=https://magiccards.info/scans/en/ne/128.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fb3c7af-74e1-4072-953b-b3e9ccd8aa03.jpg?1562630191
 value=2.061
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Hostile Desert
-image=https://magiccards.info/scans/en/hou/178.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90b7872c-0702-43f8-841c-22ff7923ca29.jpg?1591322066
 value=2.500
 rarity=R
 type=Land

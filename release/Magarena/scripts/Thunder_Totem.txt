@@ -1,5 +1,5 @@
 name=Thunder Totem
-image=https://magiccards.info/scans/en/ts/265.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fc332da-e93f-45b1-912c-06af41b412e9.jpg?1562915014
 value=3.021
 rarity=U
 type=Artifact

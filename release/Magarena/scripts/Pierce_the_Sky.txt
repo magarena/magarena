@@ -1,5 +1,5 @@
 name=Pierce the Sky
-image=https://magiccards.info/scans/en/dom/176.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df491512-ba8a-4ba5-ad42-338190201170.jpg?1562744164
 value=2.500
 rarity=C
 type=Instant

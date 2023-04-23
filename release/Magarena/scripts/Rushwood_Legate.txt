@@ -1,5 +1,5 @@
 name=Rushwood Legate
-image=https://magiccards.info/scans/en/mm/266.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/827b9c99-87d7-493c-9dc3-0c6aa4a61b49.jpg?1562381827
 value=4.067
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Heartwood Giant
-image=https://magiccards.info/scans/en/tp/126.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7ba2884-128b-4bfb-9a6e-cb81ff4ac00d.jpg?1562431755
 value=2.845
 rarity=R
 type=Creature

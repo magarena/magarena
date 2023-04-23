@@ -1,5 +1,5 @@
 name=Elvish Vanguard
-image=https://magiccards.info/scans/en/ema/164.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/838a8d40-5268-467e-8d14-d9fd72253df6.jpg?1561759271
 value=4.273
 rarity=C
 type=Creature

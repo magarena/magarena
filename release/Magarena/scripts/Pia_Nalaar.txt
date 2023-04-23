@@ -1,5 +1,5 @@
 name=Pia Nalaar
-image=https://magiccards.info/scans/en/kld/124.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d2502c8-bf80-404c-9a9a-b843d355fcaa.jpg?1625194002
 image_updated=2016-10-05
 value=2.500
 rarity=R

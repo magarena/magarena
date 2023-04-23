@@ -1,5 +1,5 @@
 name=Daru Encampment
-image=https://magiccards.info/scans/en/on/315.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12306750-86d6-4f70-820a-365894884e56.jpg?1562269788
 image_updated=2016-11-30
 value=3.347
 rarity=U

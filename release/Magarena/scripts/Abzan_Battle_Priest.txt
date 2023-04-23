@@ -1,5 +1,5 @@
 name=Abzan Battle Priest
-image=https://magiccards.info/scans/en/ima/2.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0fb53e6-441f-4faa-bf0e-0847cf83279d.jpg?1682208222
 image_updated=2017-04-12
 value=3.500
 rarity=U

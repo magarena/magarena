@@ -1,5 +1,5 @@
 name=Rhox Pikemaster
-image=https://magiccards.info/scans/en/m10/26.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3684a28-e819-4909-912e-dec4a9cf1b11.jpg?1561992610
 value=3.797
 rarity=U
 type=Creature

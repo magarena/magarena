@@ -1,5 +1,5 @@
 name=Pack Rat
-image=https://magiccards.info/scans/en/rtr/73.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/170693f5-13db-4191-99b1-e527ffb5b88e.jpg?1562783180
 value=4.020
 rarity=R
 type=Creature

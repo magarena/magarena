@@ -1,5 +1,5 @@
 name=Ghirapur Guide
-image=https://magiccards.info/scans/en/m19/182.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23680a1a-7c8d-4ea0-a62c-a302f07b6ed5.jpg?1601079617
 image_updated=2018-08-07
 value=2.500
 rarity=U

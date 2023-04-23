@@ -1,5 +1,5 @@
 name=Skeletal Vampire
-image=https://magiccards.info/scans/en/mma/96.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/327096bb-78d3-444f-a017-4c504d18203a.jpg?1562604199
 value=3.625
 rarity=R
 type=Creature

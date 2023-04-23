@@ -1,5 +1,5 @@
 name=Scrapper Champion
-image=https://magiccards.info/scans/en/aer/97.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/117ef25c-e9cf-4801-a753-2c329c2a8bdb.jpg?1576381903
 value=2.500
 rarity=U
 type=Creature

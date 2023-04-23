@@ -1,5 +1,5 @@
 name=Boiling Blood
-image=https://magiccards.info/scans/en/wl/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fcb85b6-ab5a-40db-aaae-555315f32877.jpg?1562800433
 value=2.379
 rarity=C
 type=Instant

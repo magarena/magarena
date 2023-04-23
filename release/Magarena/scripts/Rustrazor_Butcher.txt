@@ -1,5 +1,5 @@
 name=Rustrazor Butcher
-image=https://magiccards.info/scans/en/shm/105.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daa0dd3e-51d1-4d75-b0f4-835992f420d6.jpg?1562836814
 value=3.400
 rarity=C
 type=Creature

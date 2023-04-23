@@ -1,5 +1,5 @@
 name=Oblivion Strike
-image=https://magiccards.info/scans/en/ogw/75.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24e30acf-b30f-4bb3-b80e-dc7e9559da51.jpg?1562902424
 image_updated=2016-02-29
 value=2.500
 rarity=C

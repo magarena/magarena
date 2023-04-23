@@ -1,5 +1,5 @@
 name=Pardic Wanderer
-image=https://magiccards.info/scans/en/dom/226.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fffe967-3a99-4f00-af46-f4e5567598df.jpg?1562733512
 value=2.500
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Polluted Delta
-image=https://magiccards.info/scans/en/ktk/239.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff2f5f58-9a95-4ca6-93a0-813738f0072f.jpg?1571667978
 value=4.600
 rarity=R
 type=Land

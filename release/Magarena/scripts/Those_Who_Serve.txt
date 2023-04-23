@@ -1,5 +1,5 @@
 name=Those Who Serve
-image=https://magiccards.info/scans/en/akh/32.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4f27dd9-7ee4-4cdc-8f65-a4349b6aa47f.jpg?1543674807
 value=2.500
 rarity=C
 type=Creature

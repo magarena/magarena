@@ -1,5 +1,5 @@
 name=Paladin en-Vec
-image=https://magiccards.info/scans/en/10e/32.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ebea0dd-7d31-4688-a6c4-0e57d08de100.jpg?1562429854
 value=4.280
 rarity=R
 type=Creature

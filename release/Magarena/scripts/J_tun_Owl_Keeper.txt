@@ -1,5 +1,5 @@
 name=Jötun Owl Keeper
-image=https://magiccards.info/scans/en/cs/9.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1566c8a2-aaca-4ce0-a36b-620ea6f135cb.jpg?1593274758
 value=3.783
 rarity=U
 type=Creature

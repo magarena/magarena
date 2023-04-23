@@ -1,5 +1,5 @@
 name=Archweaver
-image=https://magiccards.info/scans/en/rtr/114.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f99dc8ff-932c-4d56-9253-99ce9e145306.jpg?1562795706
 value=2.279
 rarity=U
 type=Creature

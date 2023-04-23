@@ -1,5 +1,5 @@
 name=Distortion Strike
-image=https://magiccards.info/scans/en/ima/52.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57556595-8ede-4a35-b3a4-0e6f8bfc4d9d.jpg?1562848971
 image_updated=2017-04-12
 value=4.225
 rarity=U

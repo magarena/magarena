@@ -1,5 +1,5 @@
 name=Yawning Fissure
-image=https://magiccards.info/scans/en/m10/164.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa364a1c-14e4-4dda-aa1f-edb879a64a2d.jpg?1562002456
 value=1.037
 rarity=C
 type=Sorcery

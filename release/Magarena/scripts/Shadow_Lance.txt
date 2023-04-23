@@ -1,5 +1,5 @@
 name=Shadow Lance
-image=https://magiccards.info/scans/en/gp/14.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02b5590f-d964-49cb-8e2e-94b067112c8e.jpg?1593271908
 value=3.575
 rarity=U
 type=Enchantment

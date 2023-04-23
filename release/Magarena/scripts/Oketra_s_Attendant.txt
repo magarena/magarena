@@ -1,5 +1,5 @@
 name=Oketra's Attendant
-image=https://magiccards.info/scans/en/akh/22.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/6074fe64-8a2d-411e-8d33-97b1c60633e4.jpg?1543674719
 value=2.500
 rarity=U
 type=Creature

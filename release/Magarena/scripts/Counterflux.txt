@@ -1,5 +1,5 @@
 name=Counterflux
-image=https://magiccards.info/scans/en/rtr/153.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5178d975-88b8-4bd3-a5f5-b84f05172683.jpg?1562704256
 image_updated=2016-02-29
 value=3.695
 rarity=R

@@ -1,5 +1,5 @@
 name=Geistcatcher's Rig
-image=https://magiccards.info/scans/en/isd/223.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfb8ecf0-8c12-4a14-9a75-4cc5bf9e47f1.jpg?1562837394
 value=2.646
 rarity=U
 type=Artifact,Creature

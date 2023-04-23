@@ -1,5 +1,5 @@
 name=Mystic Zealot
-image=https://magiccards.info/scans/en/od/36.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23afba2e-54cc-4fab-9684-5e27cb5c855c.jpg?1562902147
 value=3.380
 rarity=C
 type=Creature

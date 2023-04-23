@@ -1,5 +1,5 @@
 name=Landbind Ritual
-image=https://magiccards.info/scans/en/zen/24.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/245357c6-b4cd-40f3-b7c2-413eee767239.jpg?1562610628
 value=2.864
 rarity=U
 type=Sorcery

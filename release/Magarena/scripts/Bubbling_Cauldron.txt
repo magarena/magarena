@@ -1,5 +1,5 @@
 name=Bubbling Cauldron
-image=https://magiccards.info/scans/en/ima/213.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/955aa79b-448e-4752-8e36-0fe80c18280c.jpg?1601080592
 image_updated=2017-04-12
 value=3.553
 rarity=U

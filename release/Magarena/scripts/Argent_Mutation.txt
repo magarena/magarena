@@ -1,5 +1,5 @@
 name=Argent Mutation
-image=https://magiccards.info/scans/en/nph/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/507fa5fd-2aa5-4721-a059-2c8c3056a4ca.jpg?1572636966
 value=1.765
 rarity=U
 type=Instant

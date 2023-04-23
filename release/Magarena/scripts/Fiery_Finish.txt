@@ -1,5 +1,5 @@
 name=Fiery Finish
-image=https://magiccards.info/scans/en/m19/140.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e38127d-63af-4d26-9ff5-358c8a61f39c.jpg?1562301715
 value=2.500
 rarity=U
 type=Sorcery

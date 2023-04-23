@@ -1,5 +1,5 @@
 name=Steelshaper's Gift
-image=https://magiccards.info/scans/en/5dn/19.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca7123ec-5a29-4734-bc8c-6173c3da2f51.jpg?1562935656
 value=4.176
 rarity=U
 type=Sorcery

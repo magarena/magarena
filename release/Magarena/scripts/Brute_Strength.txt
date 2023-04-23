@@ -1,5 +1,5 @@
 name=Brute Strength
-image=https://magiccards.info/scans/en/akh/122.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f40427d-231c-4baa-b1ed-4a2200dd5186.jpg?1576267346
 image_updated=2017-09-29
 value=2.500
 rarity=C

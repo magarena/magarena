@@ -1,5 +1,5 @@
 name=Death Speakers
-image=https://magiccards.info/scans/en/5e/300.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd4e2d4c-7674-416e-9111-e4fbdd9240f6.jpg?1559592537
 value=3.122
 rarity=C
 type=Creature

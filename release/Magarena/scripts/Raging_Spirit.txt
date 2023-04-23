@@ -1,5 +1,5 @@
 name=Raging Spirit
-image=https://magiccards.info/scans/en/mr/188.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a196c21b-e9f5-4ae8-8a1e-668685ef4cf0.jpg?1562720950
 value=2.722
 rarity=C
 type=Creature

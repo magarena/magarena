@@ -1,5 +1,5 @@
 name=Ampryn Tactician
-image=https://magiccards.info/scans/en/ori/2.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82a2e1d9-6763-4024-a18b-982d96395553.jpg?1562028672
 image_updated=2015-11-05
 value=2.500
 rarity=C

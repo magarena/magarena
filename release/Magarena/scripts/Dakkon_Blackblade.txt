@@ -1,5 +1,5 @@
 name=Dakkon Blackblade
-image=https://magiccards.info/scans/en/lg/265.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/235bbf86-02ad-497b-b698-e60930bbde9c.jpg?1559592413
 value=3.908
 rarity=R
 type=Legendary,Creature

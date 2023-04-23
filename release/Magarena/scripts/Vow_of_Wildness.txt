@@ -1,5 +1,5 @@
 name=Vow of Wildness
-image=https://magiccards.info/scans/en/cmd/178.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/764fa7f1-b92b-42cc-983e-e0b5457369a7.jpg?1608910977
 value=3.606
 rarity=U
 type=Enchantment

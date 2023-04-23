@@ -1,5 +1,5 @@
 name=Simic Keyrune
-image=https://magiccards.info/scans/en/gtc/237.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc0906ce-223b-4bb2-b614-6e2e13dbb18c.jpg?1562708971
 image_updated=2016-02-29
 value=3.128
 rarity=U

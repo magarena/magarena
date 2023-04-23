@@ -1,5 +1,5 @@
 name=Walking Dead
-image=https://magiccards.info/scans/en/lg/40.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7533a72-77d1-40cd-b3a1-7597d566c428.jpg?1562861349
 value=3.895
 rarity=C
 type=Creature

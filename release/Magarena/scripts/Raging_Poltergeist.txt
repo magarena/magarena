@@ -1,5 +1,5 @@
 name=Raging Poltergeist
-image=https://magiccards.info/scans/en/avr/150.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78833788-ffb2-43fc-9345-975f1cd46f38.jpg?1592709171
 value=1.042
 rarity=C
 type=Creature

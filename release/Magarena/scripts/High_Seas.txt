@@ -1,5 +1,5 @@
 name=High Seas
-image=https://magiccards.info/scans/en/mm/83.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f12eb6a6-14cc-4ad6-9684-ff33a39ba09f.jpg?1562383984
 value=3.020
 rarity=U
 type=Enchantment

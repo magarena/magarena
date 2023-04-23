@@ -1,5 +1,5 @@
 name=Unholy Hunger
-image=https://magiccards.info/scans/en/ori/125.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6883e3c-265e-408a-b733-35b89b66dabd.jpg?1547517125
 image_updated=2015-11-05
 value=2.500
 rarity=C

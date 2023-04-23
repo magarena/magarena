@@ -1,5 +1,5 @@
 name=Guardian of the Guildpact
-image=https://magiccards.info/scans/en/di/10.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8dd004b-01e4-4fe1-a164-9f2ea8d7d88e.jpg?1593272499
 value=3.890
 rarity=C
 type=Creature

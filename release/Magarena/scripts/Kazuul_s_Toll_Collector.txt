@@ -1,5 +1,5 @@
 name=Kazuul's Toll Collector
-image=https://magiccards.info/scans/en/ogw/112.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/7377e5a7-b479-48cc-8fbb-01af87c62566.jpg?1599706517
 image_updated=2016-02-29
 value=2.500
 rarity=U

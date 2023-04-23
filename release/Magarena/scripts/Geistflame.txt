@@ -1,5 +1,5 @@
 name=Geistflame
-image=https://magiccards.info/scans/en/isd/144.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c671b096-17a4-4cdb-b954-7b04981e7aef.jpg?1592714591
 image_updated=2016-12-03
 value=3.625
 rarity=C

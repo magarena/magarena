@@ -1,5 +1,5 @@
 name=Capashen Standard
-image=https://magiccards.info/scans/en/ud/4.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16665386-405e-48c9-8c69-c21b03931c2f.jpg?1562443328
 value=2.667
 rarity=C
 type=Enchantment

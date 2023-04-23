@@ -1,5 +1,5 @@
 name=Misfortune
-image=https://magiccards.info/scans/en/ai/194.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b14cc32a-eb4f-4690-aceb-160780743ebe.jpg?1562770145
 value=3.700
 rarity=R
 type=Sorcery

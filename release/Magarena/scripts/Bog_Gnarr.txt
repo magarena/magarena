@@ -1,5 +1,5 @@
 name=Bog Gnarr
-image=https://magiccards.info/scans/en/ap/76.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f230831-023c-41aa-832e-16ac81e68588.jpg?1562909815
 value=2.424
 rarity=C
 type=Creature

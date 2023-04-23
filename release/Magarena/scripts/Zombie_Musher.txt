@@ -1,5 +1,5 @@
 name=Zombie Musher
-image=https://magiccards.info/scans/en/cs/75.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51cf9ade-1c3d-4104-98fa-3c6a8cccc088.jpg?1593275198
 value=3.152
 rarity=C
 type=Snow,Creature

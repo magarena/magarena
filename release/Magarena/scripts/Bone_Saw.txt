@@ -1,5 +1,5 @@
 name=Bone Saw
-image=https://magiccards.info/scans/en/ogw/161.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc3d19ff-b618-4b07-99a8-ea6e7ee72459.jpg?1562939274
 image_updated=2016-02-29
 value=2.933
 rarity=C

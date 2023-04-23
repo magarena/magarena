@@ -1,5 +1,5 @@
 name=Vindictive Mob
-image=https://magiccards.info/scans/en/rav/112.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23c5c72c-982c-4cfd-b576-089200b4cc04.jpg?1598915312
 value=1.708
 rarity=U
 type=Creature

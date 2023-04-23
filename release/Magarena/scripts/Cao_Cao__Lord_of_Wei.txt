@@ -1,5 +1,5 @@
 name=Cao Cao, Lord of Wei
-image=https://magiccards.info/scans/en/p3k/68.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7e5a530-c954-4696-85ce-6afaf7de1808.jpg?1562257983
 value=3.794
 rarity=R
 type=Legendary,Creature

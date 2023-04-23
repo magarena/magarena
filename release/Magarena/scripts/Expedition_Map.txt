@@ -1,5 +1,5 @@
 name=Expedition Map
-image=https://magiccards.info/scans/en/mm2/213.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/551c0a45-9515-4e51-84e5-79703832a661.jpg?1646666270
 image_updated=2015-11-05
 value=3.895
 rarity=U

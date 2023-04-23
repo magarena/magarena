@@ -1,5 +1,5 @@
 name=Cursed Land
-image=https://magiccards.info/scans/en/5e/14.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39d9801b-9707-4868-bde1-39960b761992.jpg?1562590617
 value=2.317
 rarity=U
 type=Enchantment

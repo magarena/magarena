@@ -1,5 +1,5 @@
 name=Phyrexian Reclamation
-image=https://magiccards.info/scans/en/ul/63.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb0271e4-8ad1-4ad9-9b3e-7abf911f3059.jpg?1600701185
 image_updated=2016-02-29
 value=4.286
 rarity=U

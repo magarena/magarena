@@ -1,5 +1,5 @@
 name=Halam Djinn
-image=https://magiccards.info/scans/en/in/146.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/369ade1f-e909-47ae-bb01-19588269ad8f.jpg?1562906010
 value=2.889
 rarity=U
 type=Creature

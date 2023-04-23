@@ -1,5 +1,5 @@
 name=Scorching Lava
-image=https://magiccards.info/scans/en/in/164.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a85437f-052e-494c-a9ee-265c4624a409.jpg?1562903659
 value=3.143
 rarity=C
 type=Instant

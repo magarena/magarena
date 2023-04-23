@@ -1,5 +1,5 @@
 name=Mighty Leap
-image=https://magiccards.info/scans/en/m19/28.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0f53a0a-8d12-4271-afaf-7445573a4296.jpg?1576267175
 image_updated=2018-08-07
 value=2.500
 rarity=C

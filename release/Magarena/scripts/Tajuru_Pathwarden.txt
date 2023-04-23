@@ -1,5 +1,5 @@
 name=Tajuru Pathwarden
-image=https://magiccards.info/scans/en/ogw/145.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b073e75b-b432-41a5-a71e-d169fecf774f.jpg?1562930499
 image_updated=2016-02-29
 value=2.500
 rarity=C

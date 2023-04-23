@@ -1,5 +1,5 @@
 name=Big Game Hunter
-image=https://magiccards.info/scans/en/pc/63.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cec1014-375c-4877-95e3-093d24c02bc8.jpg?1619395072
 value=4.333
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ivory Giant
-image=https://magiccards.info/scans/en/mma/19.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1b1b580-4a2c-41a4-a1e0-85b659b3a30e.jpg?1619392953
 value=3.417
 rarity=C
 type=Creature

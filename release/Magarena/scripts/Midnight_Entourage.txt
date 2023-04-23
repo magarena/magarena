@@ -1,5 +1,5 @@
 name=Midnight Entourage
-image=https://magiccards.info/scans/en/aer/66.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/2838c6dd-d816-4363-a861-f2f8052d1430.jpg?1576381699
 value=2.500
 rarity=R
 type=Creature

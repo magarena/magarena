@@ -1,5 +1,5 @@
 name=Darksteel Ingot
-image=https://magiccards.info/scans/en/c16/250.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fb4c2b7-8714-496e-a981-844e8e5b81ea.jpg?1562274077
 image_updated=2017-08-17
 value=4.457
 rarity=U

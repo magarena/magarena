@@ -1,5 +1,5 @@
 name=Savra, Queen of the Golgari
-image=https://magiccards.info/scans/en/rav/225.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15accf35-a174-4ba5-a633-cc46da848dbe.jpg?1598917363
 value=4.015
 rarity=R
 type=Legendary,Creature

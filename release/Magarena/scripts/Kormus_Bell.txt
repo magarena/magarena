@@ -1,5 +1,5 @@
 name=Kormus Bell
-image=https://magiccards.info/scans/en/4e/350.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40f826b8-9e92-4e0e-aa2f-c3f5e3061432.jpg?1562910324
 value=3.868
 rarity=R
 type=Artifact

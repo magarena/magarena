@@ -1,5 +1,5 @@
 name=Wall of Stone
-image=https://magiccards.info/scans/en/8e/232.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/718da336-ad97-41a6-86bd-4f124e2cc716.jpg?1562917687
 value=3.616
 rarity=U
 type=Creature

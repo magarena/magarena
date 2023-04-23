@@ -1,5 +1,5 @@
 name=Ulvenwald Mysteries
-image=https://magiccards.info/scans/en/soi/236.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1614bad6-07db-4a7c-8336-3ac3db393689.jpg?1599707631
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Shivan Phoenix
-image=https://magiccards.info/scans/en/ul/91.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/112aa0e2-7e4a-4ae8-bedb-d84b4116df5e.jpg?1562862317
 value=3.647
 rarity=R
 type=Creature

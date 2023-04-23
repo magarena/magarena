@@ -1,5 +1,5 @@
 name=Goblin Trenches
-image=https://magiccards.info/scans/en/ema/203.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06625dee-d2e6-4efa-a385-5113d0fe78ac.jpg?1580015054
 value=4.337
 rarity=R
 type=Enchantment

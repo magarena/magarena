@@ -1,5 +1,5 @@
 name=Illusory Wrappings
-image=https://magiccards.info/scans/en/akh/58.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a67aefde-2c91-4974-b89d-84333a2874eb.jpg?1543675010
 value=2.500
 rarity=C
 type=Enchantment

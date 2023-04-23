@@ -1,5 +1,5 @@
 name=Biomass Mutation
-image=https://magiccards.info/scans/en/gtc/213.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80fc2879-c73d-41c7-987c-cbeaca02cc45.jpg?1625977389
 value=3.487
 rarity=R
 type=Instant

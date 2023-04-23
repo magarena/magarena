@@ -1,5 +1,5 @@
 name=Engulf the Shore
-image=https://magiccards.info/scans/en/soi/58.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdbcb537-86fb-4649-859d-c9da12327f85.jpg?1576267247
 value=2.500
 rarity=R
 type=Instant

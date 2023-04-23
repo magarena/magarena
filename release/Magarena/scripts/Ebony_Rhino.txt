@@ -1,5 +1,5 @@
 name=Ebony Rhino
-image=https://magiccards.info/scans/en/hl/131.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cc3d3c7-f76c-4d54-83b8-ccc04c8f2241.jpg?1562897943
 value=2.058
 rarity=C
 type=Artifact,Creature

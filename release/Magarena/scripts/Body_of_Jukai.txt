@@ -1,5 +1,5 @@
 name=Body of Jukai
-image=https://magiccards.info/scans/en/bok/121.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f43fe8e0-23ab-4fe7-8a48-1902be142c6a.jpg?1562880691
 value=2.615
 rarity=U
 type=Creature

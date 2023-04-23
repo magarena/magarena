@@ -1,5 +1,5 @@
 name=Goblin Offensive
-image=https://magiccards.info/scans/en/us/192.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4c4d642-c3fb-47d1-b57a-266eb269d5ea.jpg?1562842863
 image_updated=2016-12-13
 value=3.062
 rarity=U

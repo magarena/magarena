@@ -1,5 +1,5 @@
 name=Thraben Inspector
-image=https://magiccards.info/scans/en/soi/44.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2be39749-ad6f-4160-99eb-c677eee7f1b2.jpg?1599711120
 value=2.500
 rarity=C
 type=Creature

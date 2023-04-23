@@ -1,5 +1,5 @@
 name=Kuldotha Phoenix
-image=https://magiccards.info/scans/en/som/95.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bb79b56-81f1-417f-b5ad-030ad29f904b.jpg?1562818704
 value=3.897
 rarity=R
 type=Creature

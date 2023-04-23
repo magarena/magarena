@@ -1,5 +1,5 @@
 name=Manaforce Mace
-image=https://magiccards.info/scans/en/cfx/139.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab60e11f-ea7c-4d87-bc82-9e7f4eaeef5a.jpg?1562803020
 value=2.277
 rarity=U
 type=Artifact

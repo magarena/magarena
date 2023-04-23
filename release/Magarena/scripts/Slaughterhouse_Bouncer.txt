@@ -1,5 +1,5 @@
 name=Slaughterhouse Bouncer
-image=https://magiccards.info/scans/en/di/54.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b70e71c1-5d95-44f3-99f1-b3b6eda8b26c.jpg?1593273038
 value=1.538
 rarity=C
 type=Creature

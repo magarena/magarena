@@ -1,5 +1,5 @@
 name=Renewal
-image=https://magiccards.info/scans/en/hl/66.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab998cd1-2f49-42e7-b889-c6717b0ce884.jpg?1562588220
 value=2.882
 rarity=C
 type=Sorcery

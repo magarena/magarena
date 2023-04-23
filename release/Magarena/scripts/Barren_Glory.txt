@@ -1,5 +1,5 @@
 name=Barren Glory
-image=https://magiccards.info/scans/en/fut/3.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12220d53-3356-4541-aa43-a0de6ed3f7d0.jpg?1562898649
 value=3.522
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Phyrexian Battleflies
-image=https://magiccards.info/scans/en/in/114.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6aceeffd-f6d9-46ff-97f8-8accad49ff8d.jpg?1562914815
 image_updated=2017-01-03
 value=2.423
 rarity=C

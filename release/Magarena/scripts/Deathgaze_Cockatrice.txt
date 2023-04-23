@@ -1,5 +1,5 @@
 name=Deathgaze Cockatrice
-image=https://magiccards.info/scans/en/m14/94.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f17b58c-9738-4cdb-a408-e1595c384b92.jpg?1562832965
 value=3.286
 rarity=C
 type=Creature

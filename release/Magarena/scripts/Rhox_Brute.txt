@@ -1,5 +1,5 @@
 name=Rhox Brute
-image=https://magiccards.info/scans/en/arb/59.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/382fba19-78d3-4aa3-9508-c7c1f13e0b33.jpg?1562906332
 value=2.774
 rarity=C
 type=Creature

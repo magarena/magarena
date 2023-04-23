@@ -1,5 +1,5 @@
 name=Birthing Hulk
-image=https://magiccards.info/scans/en/ogw/121.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1a644e0-96e5-4b73-873f-1132948cb21f.jpg?1562927677
 image_updated=2016-02-29
 value=2.500
 rarity=U

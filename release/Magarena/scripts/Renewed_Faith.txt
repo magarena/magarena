@@ -1,5 +1,5 @@
 name=Renewed Faith
-image=https://magiccards.info/scans/en/a25/31.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/4849b907-9d80-484d-bdfa-6d287f5bc2d6.jpg?1562435369
 image_updated=2018-04-27
 value=2.000
 rarity=C

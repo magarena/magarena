@@ -1,5 +1,5 @@
 name=Charging Bandits
-image=https://magiccards.info/scans/en/po/6.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1721ee11-c7ee-4878-b2ab-4f090e0c5def.jpg?1562445674
 value=2.180
 rarity=U
 type=Creature

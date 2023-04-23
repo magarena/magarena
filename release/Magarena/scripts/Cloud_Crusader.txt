@@ -1,5 +1,5 @@
 name=Cloud Crusader
-image=https://magiccards.info/scans/en/m11/10.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83ce09da-6c1d-46ac-870e-ff58ceaba116.jpg?1562466336
 value=2.895
 rarity=C
 type=Creature

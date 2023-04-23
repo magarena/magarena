@@ -1,5 +1,5 @@
 name=Azamuki, Treachery Incarnate
-image=https://magiccards.info/scans/en/bok/99b.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fe2b76f-ddb7-49d5-933b-ccb06be5d46f.jpg?1562875903
 value=3.241
 rarity=U
 type=Legendary,Creature

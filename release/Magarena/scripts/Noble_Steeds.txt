@@ -1,5 +1,5 @@
 name=Noble Steeds
-image=https://magiccards.info/scans/en/ai/140.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45a35751-a232-40ba-a73b-d3ca7a44867d.jpg?1562768695
 value=1.661
 rarity=C
 type=Enchantment

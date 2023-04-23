@@ -1,5 +1,5 @@
 name=Sibsig Host
-image=https://magiccards.info/scans/en/frf/82.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2791f1a5-bf29-48ac-8a41-88b7f97ede41.jpg?1562823489
 value=2.500
 rarity=C
 type=Creature

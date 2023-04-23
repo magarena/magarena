@@ -1,5 +1,5 @@
 name=Thunder-Thrash Elder
-image=https://magiccards.info/scans/en/pc2/53.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92ecd6d2-f052-4dc6-823b-a1997a911cf9.jpg?1562922232
 value=2.744
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Alaborn Musketeer
-image=https://magiccards.info/scans/en/po2/123.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a40c1ed-acdf-464a-8625-5cd35e7533d5.jpg?1562901210
 value=2.548
 rarity=C
 type=Creature

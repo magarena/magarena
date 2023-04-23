@@ -1,5 +1,5 @@
 name=Wayfarer's Bauble
-image=https://magiccards.info/scans/en/mm2/234.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/2498c2d5-c7b8-47ad-8a13-b92d36b5db10.jpg?1682210319
 image_updated=2016-02-29
 value=3.909
 rarity=C

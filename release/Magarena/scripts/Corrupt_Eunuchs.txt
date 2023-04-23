@@ -1,5 +1,5 @@
 name=Corrupt Eunuchs
-image=https://magiccards.info/scans/en/p3k/106.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9875f1c7-f818-40d6-a559-1b8835bc340f.jpg?1562927259
 value=2.963
 rarity=U
 type=Creature

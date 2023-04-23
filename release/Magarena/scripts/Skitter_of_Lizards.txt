@@ -1,5 +1,5 @@
 name=Skitter of Lizards
-image=https://magiccards.info/scans/en/cns/151.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbbf2caf-9c5f-48a7-8874-161da9de6c97.jpg?1562866877
 value=3.667
 rarity=C
 type=Creature

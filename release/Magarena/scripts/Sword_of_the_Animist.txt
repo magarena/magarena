@@ -1,5 +1,5 @@
 name=Sword of the Animist
-image=https://magiccards.info/scans/en/ori/240.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bfa6b8c-6e4b-42fa-9f6c-40c95e162b9a.jpg?1631589231
 image_updated=2015-11-05
 value=2.500
 rarity=R

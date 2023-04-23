@@ -1,5 +1,5 @@
 name=Spotted Griffin
-image=https://magiccards.info/scans/en/po/190.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fbba1f3-53c6-4c74-850b-dde17bde0021.jpg?1562917571
 value=2.600
 rarity=C
 type=Creature

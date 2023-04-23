@@ -1,5 +1,5 @@
 name=Bloodthrone Vampire
-image=https://magiccards.info/scans/en/mm2/72.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee7354fe-fb76-4196-a69b-0916af73bf45.jpg?1593095696
 value=2.963
 rarity=C
 type=Creature

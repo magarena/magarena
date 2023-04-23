@@ -1,5 +1,5 @@
 name=Crash the Ramparts
-image=https://magiccards.info/scans/en/xln/182.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20b52d17-7efb-4c6e-9e6a-4763d1ef1daa.jpg?1562551952
 value=2.500
 rarity=C
 type=Instant

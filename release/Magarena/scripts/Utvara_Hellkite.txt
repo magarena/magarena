@@ -1,5 +1,5 @@
 name=Utvara Hellkite
-image=https://magiccards.info/scans/en/rtr/110.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33f6914d-808f-4502-a87a-70912d7ae6e8.jpg?1562604627
 value=3.933
 rarity=M
 type=Creature

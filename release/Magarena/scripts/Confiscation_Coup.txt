@@ -1,5 +1,5 @@
 name=Confiscation Coup
-image=https://magiccards.info/scans/en/kld/41.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6daf453f-54be-4346-831d-a0434aa086fe.jpg?1576381139
 image_updated=2016-10-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Rakalite
-image=https://magiccards.info/scans/en/ch/85.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90633271-f4dc-45a5-ab5f-84321145b0fe.jpg?1562929032
 value=1.029
 rarity=U
 type=Artifact

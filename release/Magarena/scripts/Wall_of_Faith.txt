@@ -1,5 +1,5 @@
 name=Wall of Faith
-image=https://magiccards.info/scans/en/m10/40.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05f30f77-75ea-4145-a4a1-106cc547f482.jpg?1561970090
 value=1.936
 rarity=C
 type=Creature

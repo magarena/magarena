@@ -1,5 +1,5 @@
 name=Pouncing Cheetah
-image=https://magiccards.info/scans/en/akh/179.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73f5156b-b200-41f7-8b93-557c4cdc2bf7.jpg?1601079910
 value=2.500
 rarity=C
 type=Creature

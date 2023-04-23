@@ -1,5 +1,5 @@
 name=Tower Defense
-image=https://magiccards.info/scans/en/gtc/137.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/195e94a4-a698-4c66-9428-5cc8a40d42c6.jpg?1584831318
 value=2.824
 rarity=U
 type=Instant

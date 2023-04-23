@@ -1,5 +1,5 @@
 name=Tree of Tales
-image=https://magiccards.info/scans/en/mi/285.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8f69425-c530-4752-95b5-06e99b74c8b7.jpg?1667005070
 image_updated=2017-01-11
 value=4.128
 rarity=C

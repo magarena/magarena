@@ -1,5 +1,5 @@
 name=Duergar Hedge-Mage
-image=https://magiccards.info/scans/en/cmd/195.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a55e7048-4532-443b-9480-a139069ecf0a.jpg?1682209727
 value=3.883
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Etched Champion
-image=https://magiccards.info/scans/en/mm2/209.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30fe653b-956a-4e0e-981b-37e1a6b08c2c.jpg?1562260261
 value=4.136
 rarity=R
 type=Artifact,Creature

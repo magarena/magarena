@@ -1,5 +1,5 @@
 name=Darksteel Pendant
-image=https://magiccards.info/scans/en/ds/113.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c1bac5f-c41a-49f0-94b0-79653b6fa67a.jpg?1562638388
 value=3.726
 rarity=C
 type=Artifact

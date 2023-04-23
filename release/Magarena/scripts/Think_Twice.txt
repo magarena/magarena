@@ -1,5 +1,5 @@
 name=Think Twice
-image=https://magiccards.info/scans/en/isd/83.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50e1d85b-f094-40e2-8811-640076d7d546.jpg?1619394830
 value=3.677
 rarity=C
 type=Instant

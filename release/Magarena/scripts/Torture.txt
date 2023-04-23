@@ -1,5 +1,5 @@
 name=Torture
-image=https://magiccards.info/scans/en/shm/80.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1fed16d-c800-4c0f-be88-9fddde2c018e.jpg?1562836357
 value=2.958
 rarity=C
 type=Enchantment

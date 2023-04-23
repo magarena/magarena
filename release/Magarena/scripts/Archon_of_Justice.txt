@@ -1,5 +1,5 @@
 name=Archon of Justice
-image=https://magiccards.info/scans/en/m12/6.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/042b0148-5821-4105-9cda-a0e405eb8bee.jpg?1600716696
 value=3.872
 rarity=R
 type=Creature

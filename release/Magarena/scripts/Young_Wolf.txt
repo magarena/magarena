@@ -1,5 +1,5 @@
 name=Young Wolf
-image=https://magiccards.info/scans/en/dka/134.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c39aa40-ef5f-40f1-a6dd-fbce91172c50.jpg?1562897786
 value=4.056
 rarity=C
 type=Creature

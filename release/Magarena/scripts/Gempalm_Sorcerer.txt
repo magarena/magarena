@@ -1,5 +1,5 @@
 name=Gempalm Sorcerer
-image=https://magiccards.info/scans/en/le/39.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67bda65b-2e26-4531-9f6a-952df314c8f7.jpg?1562915932
 value=1.900
 rarity=U
 type=Creature

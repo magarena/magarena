@@ -1,5 +1,5 @@
 name=War Dance
-image=https://magiccards.info/scans/en/us/282.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/392b4acf-4548-47dd-be58-bdf4ca4ece7e.jpg?1562906948
 value=2.788
 rarity=U
 type=Enchantment

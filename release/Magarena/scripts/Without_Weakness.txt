@@ -1,5 +1,5 @@
 name=Without Weakness
-image=https://magiccards.info/scans/en/hou/81.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6695fa8-881c-407c-91d9-3ac770372d35.jpg?1562816474
 value=2.500
 rarity=C
 type=Instant

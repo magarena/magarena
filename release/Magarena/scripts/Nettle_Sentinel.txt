@@ -1,5 +1,5 @@
 name=Nettle Sentinel
-image=https://magiccards.info/scans/en/a25/182.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f290ed2-d1a8-4a90-a3a7-8240652dc109.jpg?1562434953
 image_updated=2018-04-27
 value=4.505
 rarity=C

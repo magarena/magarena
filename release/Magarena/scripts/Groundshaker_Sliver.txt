@@ -1,5 +1,5 @@
 name=Groundshaker Sliver
-image=https://magiccards.info/scans/en/m14/177.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/712f0ce4-9189-4c75-9c2b-d370bce89052.jpg?1562830846
 value=2.129
 rarity=C
 type=Creature

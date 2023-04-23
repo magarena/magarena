@@ -1,5 +1,5 @@
 name=Kami of the Hunt
-image=https://magiccards.info/scans/en/chk/219.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5ace3c4e-3287-4975-b4d0-91f009c0cf5b.jpg?1562760534
 value=2.118
 rarity=C
 type=Creature

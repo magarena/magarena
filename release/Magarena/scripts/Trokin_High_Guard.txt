@@ -1,5 +1,5 @@
 name=Trokin High Guard
-image=https://magiccards.info/scans/en/po2/146.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c2b9302-fca6-43ca-a01c-03aec51acd0d.jpg?1562931830
 value=3.086
 rarity=C
 type=Creature

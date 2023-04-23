@@ -1,5 +1,5 @@
 name=Chainer's Edict
-image=https://magiccards.info/scans/en/tr/57.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a36a583a-d4be-4589-a43c-a2854de062c6.jpg?1547516797
 value=4.000
 removal=3
 rarity=U

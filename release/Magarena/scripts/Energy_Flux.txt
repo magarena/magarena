@@ -1,5 +1,5 @@
 name=Energy Flux
-image=https://magiccards.info/scans/en/mm/78.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78ae772e-cd54-4860-b8a8-94c934853772.jpg?1562923487
 value=4.468
 rarity=U
 type=Enchantment

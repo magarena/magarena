@@ -1,5 +1,5 @@
 name=Suntail Hawk
-image=https://magiccards.info/scans/en/10e/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28a1f83c-a9ef-463e-97b5-2ca3b7232f82.jpg?1562827264
 value=3.408
 rarity=C
 type=Creature

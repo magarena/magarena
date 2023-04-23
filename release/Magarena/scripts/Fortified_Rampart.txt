@@ -1,5 +1,5 @@
 name=Fortified Rampart
-image=https://magiccards.info/scans/en/bfz/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/5095e2ab-a7f5-45bc-8b2f-31198ea27bba.jpg?1562913875
 image_updated=2015-11-08
 value=2.500
 rarity=C

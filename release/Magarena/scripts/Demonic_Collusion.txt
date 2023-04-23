@@ -1,5 +1,5 @@
 name=Demonic Collusion
-image=https://magiccards.info/scans/en/ts/103.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1a68a28-05fa-4c6e-896d-ddb9aea3a38d.jpg?1562946007
 value=3.404
 rarity=R
 type=Sorcery

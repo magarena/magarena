@@ -1,5 +1,5 @@
 name=Instigator
-image=https://magiccards.info/scans/en/mm/140.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e3f57af-17d4-4a4c-ae46-fe37f97466fa.jpg?1562379912
 value=2.455
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Sleeper's Guile
-image=https://magiccards.info/scans/en/ul/67.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a001ca83-35b5-48e5-8337-92258d5affc2.jpg?1562863771
 value=3.600
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Triton Shorestalker
-image=https://magiccards.info/scans/en/jou/56.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d86d8c25-016b-4607-a3f7-01f7b3158a24.jpg?1604192945
 value=3.850
 rarity=C
 type=Creature

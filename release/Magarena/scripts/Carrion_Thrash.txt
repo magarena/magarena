@@ -1,5 +1,5 @@
 name=Carrion Thrash
-image=https://magiccards.info/scans/en/ala/162.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f14c7b9e-eb80-4842-8aa3-1d0c46d9677e.jpg?1562710597
 value=2.233
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fylamarid
-image=https://magiccards.info/scans/en/tp/64.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8dd4f686-79e3-4067-81f9-7fae0c25dc8f.jpg?1562055416
 value=3.064
 rarity=U
 type=Creature

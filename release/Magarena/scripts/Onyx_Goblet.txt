@@ -1,5 +1,5 @@
 name=Onyx Goblet
-image=https://magiccards.info/scans/en/ala/81.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3686eb57-e9c8-480f-8ab4-2894e1b5fe20.jpg?1562702765
 value=2.475
 rarity=C
 type=Artifact

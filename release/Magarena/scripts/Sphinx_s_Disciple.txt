@@ -1,5 +1,5 @@
 name=Sphinx's Disciple
-image=https://magiccards.info/scans/en/bng/51.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba33f00d-dbed-4bfb-a295-90f729be98de.jpg?1593091779
 value=3.161
 rarity=C
 type=Creature

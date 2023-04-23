@@ -1,5 +1,5 @@
 name=Goblin Berserker
-image=https://magiccards.info/scans/en/ud/82.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3c7635d-98b2-4505-9153-d7e9e53ea16d.jpg?1562444724
 value=2.882
 rarity=U
 type=Creature

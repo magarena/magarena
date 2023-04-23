@@ -1,5 +1,5 @@
 name=Heroic Intervention
-image=https://magiccards.info/scans/en/aer/109.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5e72882-dbf8-42d2-9a98-31f2f71e2ed9.jpg?1631587974
 value=2.500
 rarity=R
 type=Instant

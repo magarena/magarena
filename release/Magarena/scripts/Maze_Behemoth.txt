@@ -1,5 +1,5 @@
 name=Maze Behemoth
-image=https://magiccards.info/scans/en/dgm/43.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a7c9678-dea7-4219-bac0-9e1cef531f54.jpg?1562897009
 value=2.857
 rarity=C
 type=Creature

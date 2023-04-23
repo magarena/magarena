@@ -1,5 +1,5 @@
 name=Town Sentry
-image=https://magiccards.info/scans/en/po2/145.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5e9db36-0592-4e59-951a-d9d6c1522b99.jpg?1595438263
 value=2.283
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mercadia's Downfall
-image=https://magiccards.info/scans/en/mm/205.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14507fe6-80a9-4ed4-bf3e-4656f3d377c0.jpg?1562379422
 value=2.395
 rarity=U
 type=Instant

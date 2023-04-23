@@ -1,5 +1,5 @@
 name=Saltskitter
-image=https://magiccards.info/scans/en/fut/14.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/823bdf79-998f-4d7c-834d-7a474cfa895e.jpg?1562921339
 value=2.937
 rarity=C
 type=Creature

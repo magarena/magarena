@@ -1,5 +1,5 @@
 name=Highland Weald
-image=https://magiccards.info/scans/en/cs/147.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38bcd111-0830-4fc0-a113-37eb306fb1a0.jpg?1593860374
 value=3.885
 rarity=U
 type=Snow,Land

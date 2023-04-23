@@ -1,5 +1,5 @@
 name=Mystic Enforcer
-image=https://magiccards.info/scans/en/tsts/96.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec2a7910-61b5-42a0-900c-b06e520e20c4.jpg?1562785816
 value=4.258
 rarity=R
 type=Creature

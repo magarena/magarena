@@ -1,5 +1,5 @@
 name=Pollenbright Wings
-image=https://magiccards.info/scans/en/pc2/103.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcea15a8-c150-4e84-a919-6c9b3cf4e178.jpg?1562936187
 value=2.696
 rarity=U
 type=Enchantment

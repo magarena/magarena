@@ -1,5 +1,5 @@
 name=Neurok Transmuter
-image=https://magiccards.info/scans/en/ds/27.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e604172f-e9b8-41bc-aee4-691f9fa4ce42.jpg?1562640211
 value=3.303
 rarity=U
 type=Creature

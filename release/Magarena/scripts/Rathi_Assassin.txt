@@ -1,5 +1,5 @@
 name=Rathi Assassin
-image=https://magiccards.info/scans/en/ne/67.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e3597c3-3053-49f8-ab7e-a774e2fb082f.jpg?1562629520
 value=3.359
 rarity=R
 type=Creature

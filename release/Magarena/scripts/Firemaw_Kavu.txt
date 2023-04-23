@@ -1,5 +1,5 @@
 name=Firemaw Kavu
-image=https://magiccards.info/scans/en/ts/153.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2376735d-7812-4fab-baba-0d331f6e2211.jpg?1619396952
 value=2.338
 removal=1
 rarity=U

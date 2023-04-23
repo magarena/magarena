@@ -1,5 +1,5 @@
 name=Teroh's Vanguard
-image=https://magiccards.info/scans/en/tr/19.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a39f909-7114-4482-8302-b2a56ca9f556.jpg?1574250444
 value=2.452
 rarity=U
 type=Creature

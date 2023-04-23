@@ -1,5 +1,5 @@
 name=Virulent Plague
-image=https://magiccards.info/scans/en/dtk/125.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c5f82b6-53d9-43ce-8a17-c680c443e586.jpg?1562785036
 value=2.500
 rarity=U
 type=Enchantment

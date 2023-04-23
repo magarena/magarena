@@ -1,5 +1,5 @@
 name=Bloodcrazed Hoplite
-image=https://magiccards.info/scans/en/jou/61.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2a6556b-a4f1-4ff5-8e6e-a47618c8c66e.jpg?1593095634
 value=3.571
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shields of Velis Vel
-image=https://magiccards.info/scans/en/lw/39.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f550f44f-8b8f-4c1d-a583-9fd986d3061c.jpg?1562374684
 value=2.887
 rarity=C
 type=Tribal,Instant

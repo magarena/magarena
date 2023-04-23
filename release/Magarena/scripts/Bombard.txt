@@ -1,5 +1,5 @@
 name=Bombard
-image=https://magiccards.info/scans/en/rix/93.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f391555-4697-4492-9854-32393f473104.jpg?1592765034
 value=2.500
 rarity=C
 type=Instant

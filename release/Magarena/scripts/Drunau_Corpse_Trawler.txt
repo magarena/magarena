@@ -1,5 +1,5 @@
 name=Drunau Corpse Trawler
-image=https://magiccards.info/scans/en/soi/57.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1997e6a0-9e66-486d-921d-d64137c3221d.jpg?1576384037
 value=2.500
 rarity=U
 type=Creature

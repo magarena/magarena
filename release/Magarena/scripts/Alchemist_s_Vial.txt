@@ -1,5 +1,5 @@
 name=Alchemist's Vial
-image=https://magiccards.info/scans/en/ori/220.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/251f89c5-d4da-4754-83fa-218c8864ef41.jpg?1562011304
 image_updated=2015-11-05
 value=2.500
 rarity=C

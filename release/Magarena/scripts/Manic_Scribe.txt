@@ -1,5 +1,5 @@
 name=Manic Scribe
-image=https://magiccards.info/scans/en/soi/73.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb0fadba-4205-47ce-b4cf-e0ff7308749b.jpg?1576384140
 value=2.500
 rarity=U
 type=Creature

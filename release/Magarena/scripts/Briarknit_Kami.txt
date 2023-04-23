@@ -1,5 +1,5 @@
 name=Briarknit Kami
-image=https://magiccards.info/scans/en/sok/124.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c042f8b-df20-48c1-a291-4d7e1bc5b384.jpg?1562494761
 value=3.044
 rarity=U
 type=Creature

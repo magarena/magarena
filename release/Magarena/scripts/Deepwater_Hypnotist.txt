@@ -1,5 +1,5 @@
 name=Deepwater Hypnotist
-image=https://magiccards.info/scans/en/bng/35.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4ab7c6a7-8214-4644-8f2e-ec74d2aff27e.jpg?1593091631
 value=3.500
 rarity=C
 type=Creature

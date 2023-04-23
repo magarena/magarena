@@ -1,5 +1,5 @@
 name=Leonin Warleader
-image=https://magiccards.info/scans/en/m19/23.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b31b2e5e-6572-462a-9fa0-1b2e660099e3.jpg?1562303835
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Welding Jar
-image=https://magiccards.info/scans/en/mi/274.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/275ec0c4-1c59-4818-9999-b2389d17c2e7.jpg?1599710266
 value=4.132
 rarity=C
 type=Artifact

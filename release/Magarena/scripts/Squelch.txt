@@ -1,5 +1,5 @@
 name=Squelch
-image=https://magiccards.info/scans/en/chk/92.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29421dd2-70a7-4623-afe0-ca4cb415ec87.jpg?1562758853
 value=3.982
 rarity=U
 type=Instant

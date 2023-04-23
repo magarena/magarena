@@ -1,5 +1,5 @@
 name=Timberland Ruins
-image=https://magiccards.info/scans/en/od/330.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd2e8770-c72b-439c-8f79-3aa24646cdd5.jpg?1562936225
 value=2.617
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Flow of Maggots
-image=https://magiccards.info/scans/en/ia/13.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/6880a4d3-5cbc-4a01-9190-3565617efcc9.jpg?1587911698
 value=1.750
 rarity=R
 type=Creature

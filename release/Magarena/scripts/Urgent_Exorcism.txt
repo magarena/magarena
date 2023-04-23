@@ -1,5 +1,5 @@
 name=Urgent Exorcism
-image=https://magiccards.info/scans/en/isd/40.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/516a437c-a2ee-43c6-876c-1a63a455c97c.jpg?1562830193
 value=2.780
 removal=1
 rarity=C

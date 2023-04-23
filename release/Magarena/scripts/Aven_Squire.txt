@@ -1,5 +1,5 @@
 name=Aven Squire
-image=https://magiccards.info/scans/en/m13/6.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e60a0c43-9f47-404a-8acf-508173e7062f.jpg?1562561257
 value=3.120
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Etherium Sculptor
-image=https://magiccards.info/scans/en/c16/89.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed796f1a-683d-4ac5-af48-ca58a557a74f.jpg?1651655702
 image_updated=2017-08-17
 value=4.524
 rarity=C

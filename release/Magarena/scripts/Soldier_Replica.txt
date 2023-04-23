@@ -1,5 +1,5 @@
 name=Soldier Replica
-image=https://magiccards.info/scans/en/mi/244.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e31761a8-1146-4003-9653-881233787ac4.jpg?1562160884
 value=3.094
 rarity=C
 type=Artifact,Creature

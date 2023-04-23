@@ -1,5 +1,5 @@
 name=Myr Servitor
-image=https://magiccards.info/scans/en/5dn/139.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d53712a0-e11d-4b83-aebc-8e97244f085b.jpg?1547518480
 value=4.331
 rarity=C
 type=Artifact,Creature

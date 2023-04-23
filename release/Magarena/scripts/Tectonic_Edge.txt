@@ -1,5 +1,5 @@
 name=Tectonic Edge
-image=https://magiccards.info/scans/en/c14/313.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94b9d7af-3e6f-4227-bb7d-a17d6f250535.jpg?1561950651
 value=3.608
 rarity=U
 type=Land

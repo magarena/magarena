@@ -1,5 +1,5 @@
 name=Deathgreeter
-image=https://magiccards.info/scans/en/ala/71.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/561b8539-cb84-42f0-97f2-2c94839777e3.jpg?1562915173
 image_updated=2016-11-30
 value=3.104
 rarity=C

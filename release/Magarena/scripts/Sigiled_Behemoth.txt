@@ -1,5 +1,5 @@
 name=Sigiled Behemoth
-image=https://magiccards.info/scans/en/arb/79.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0195ee6-c5d9-402e-8339-2caa50c4e46b.jpg?1562644651
 value=2.225
 rarity=C
 type=Creature

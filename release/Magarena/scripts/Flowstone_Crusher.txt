@@ -1,5 +1,5 @@
 name=Flowstone Crusher
-image=https://magiccards.info/scans/en/9e/184.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd861b1c-8d91-4595-9fcd-b324234f2264.jpg?1562744443
 value=3.310
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Battlefield Forge
-image=https://magiccards.info/scans/en/ori/244.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/642584bb-7586-4796-9b94-f01ec5bd9e9f.jpg?1674422149
 image_updated=2015-11-05
 value=2.500
 rarity=R

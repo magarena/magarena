@@ -1,5 +1,5 @@
 name=Galvanic Bombardment
-image=https://magiccards.info/scans/en/emn/129.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc6a4367-bbee-43b8-b5dd-28498f8e2ede.jpg?1576384589
 image_updated=2016-09-05
 value=2.500
 rarity=C

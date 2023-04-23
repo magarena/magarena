@@ -1,5 +1,5 @@
 name=Presence of Gond
-image=https://magiccards.info/scans/en/a25/184.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bba661af-c4a8-4230-830e-a9ee22b25d6b.jpg?1601079928
 image_updated=2018-04-27
 value=3.773
 rarity=C

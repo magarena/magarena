@@ -1,5 +1,5 @@
 name=Benthic Infiltrator
-image=https://magiccards.info/scans/en/bfz/55.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f380ae58-08cc-42df-ac74-3c6890a62463.jpg?1562952787
 image_updated=2015-11-08
 value=2.500
 rarity=C

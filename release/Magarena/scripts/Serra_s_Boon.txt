@@ -1,5 +1,5 @@
 name=Serra's Boon
-image=https://magiccards.info/scans/en/pc/17.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/eca4d77a-0bb2-464c-a85f-a22b3d15d7cd.jpg?1561771990
 image_updated=2017-01-07
 value=2.485
 rarity=U

@@ -1,5 +1,5 @@
 name=Haunted Crossroads
-image=https://magiccards.info/scans/en/mm/138.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c065cae-1ed5-445e-ace3-e81cf4c773de.jpg?1562380374
 value=4.164
 rarity=U
 type=Enchantment

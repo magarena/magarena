@@ -1,5 +1,5 @@
 name=Razaketh's Rite
-image=https://magiccards.info/scans/en/hou/74.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd36987a-48c3-477b-b859-0268e84b7e7b.jpg?1562817470
 value=2.500
 rarity=U
 type=Sorcery

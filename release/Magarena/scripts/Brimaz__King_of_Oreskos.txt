@@ -1,5 +1,5 @@
 name=Brimaz, King of Oreskos
-image=https://magiccards.info/scans/en/bng/5.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f54eb705-6326-4bac-bf0e-68d42db7a270.jpg?1593091372
 value=3.973
 rarity=M
 type=Legendary,Creature

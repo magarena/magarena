@@ -1,5 +1,5 @@
 name=Suspicious Bookcase
-image=https://magiccards.info/scans/en/m19/246.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc574b42-e1bb-428f-a71f-bc3d7f5451da.jpg?1664414344
 value=2.500
 rarity=U
 type=Artifact,Creature

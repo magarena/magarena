@@ -1,5 +1,5 @@
 name=Llanowar Augur
-image=https://magiccards.info/scans/en/fut/129.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c8c9473-97f4-4875-8f06-d3a70d4cbe6d.jpg?1562900665
 value=3.720
 rarity=C
 type=Creature

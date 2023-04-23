@@ -1,5 +1,5 @@
 name=Tilonalli's Summoner
-image=https://magiccards.info/scans/en/rix/121.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b107726-3a44-4b0f-86ef-4dbbf4473e7e.jpg?1555040572
 value=2.500
 rarity=R
 type=Creature

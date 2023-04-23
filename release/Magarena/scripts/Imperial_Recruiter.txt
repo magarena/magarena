@@ -1,5 +1,5 @@
 name=Imperial Recruiter
-image=https://magiccards.info/scans/en/a25/136.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05bd329b-5707-42fc-af1c-084cc604e805.jpg?1626100528
 image_updated=2018-04-27
 value=4.082
 rarity=M

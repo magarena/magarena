@@ -1,5 +1,5 @@
 name=Quirion Ranger
-image=https://magiccards.info/scans/en/vi/67.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/320fdf89-e158-41c5-b0bf-fee9dec36a75.jpg?1626100621
 value=4.507
 rarity=C
 type=Creature

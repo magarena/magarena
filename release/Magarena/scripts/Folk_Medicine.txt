@@ -1,5 +1,5 @@
 name=Folk Medicine
-image=https://magiccards.info/scans/en/ju/115.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/751bd716-5352-41d7-89fb-d5f100f6646b.jpg?1562630480
 value=2.759
 rarity=C
 type=Instant

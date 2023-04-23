@@ -1,5 +1,5 @@
 name=Beacon Hawk
-image=https://magiccards.info/scans/en/di/3.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be04ea4a-087e-4a6d-9973-0778a1ed2b7e.jpg?1593272440
 value=3.362
 rarity=C
 type=Creature

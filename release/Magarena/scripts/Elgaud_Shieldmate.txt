@@ -1,5 +1,5 @@
 name=Elgaud Shieldmate
-image=https://magiccards.info/scans/en/avr/50.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7d376ef-c900-4abb-9a0b-5eb9369f5739.jpg?1592708513
 value=3.841
 rarity=C
 type=Creature

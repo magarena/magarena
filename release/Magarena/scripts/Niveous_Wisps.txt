@@ -1,5 +1,5 @@
 name=Niveous Wisps
-image=https://magiccards.info/scans/en/shm/15.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bea1e2c4-1671-4322-b8ba-e4e1a879cf37.jpg?1562835473
 value=2.967
 rarity=C
 type=Instant

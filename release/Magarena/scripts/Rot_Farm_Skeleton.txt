@@ -1,5 +1,5 @@
 name=Rot Farm Skeleton
-image=https://magiccards.info/scans/en/dgm/98.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef5af2dd-75c7-402c-be9a-3d0d4290520c.jpg?1562939977
 value=3.836
 rarity=U
 type=Creature

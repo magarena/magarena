@@ -1,5 +1,5 @@
 name=Day of Judgment
-image=https://magiccards.info/scans/en/m12/12.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1ed43ed8-9490-4433-843f-9020cd3470a1.jpg?1562635091
 value=4.105
 removal=2
 rarity=R

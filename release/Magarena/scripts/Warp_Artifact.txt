@@ -1,5 +1,5 @@
 name=Warp Artifact
-image=https://magiccards.info/scans/en/5e/66.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20f3c7e4-dfb5-410f-b017-09b8b6d76037.jpg?1562902743
 value=2.917
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Undead Gladiator
-image=https://magiccards.info/scans/en/a25/112.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bad2f48-9aa9-4f38-a22f-9b4802d0ee7f.jpg?1562434889
 image_updated=2018-04-27
 value=3.923
 rarity=U

@@ -1,5 +1,5 @@
 name=Oketra the True
-image=https://magiccards.info/scans/en/akh/21.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2cc79cf-d4db-4236-b3e2-fd12662b2a74.jpg?1543674712
 value=2.500
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Goblin Grenade
-image=https://magiccards.info/scans/en/m12/140.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0e0ef27-3db2-4976-b9db-13e3d7cd795d.jpg?1592764817
 value=4.326
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Soratami Savant
-image=https://magiccards.info/scans/en/chk/90.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43ea2db8-67c6-4bcd-8ba1-f620b8e8a8c4.jpg?1562759395
 value=3.050
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Species Gorger
-image=https://magiccards.info/scans/en/dgm/105.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0087a98-55cf-4c8b-a180-fb0d9c336eb2.jpg?1562936816
 value=3.800
 rarity=U
 type=Creature

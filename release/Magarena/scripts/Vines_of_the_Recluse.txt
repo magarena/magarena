@@ -1,5 +1,5 @@
 name=Vines of the Recluse
-image=https://magiccards.info/scans/en/ogw/146.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a59419a-9b49-4dcd-b510-6faaf355664d.jpg?1592765907
 image_updated=2016-02-29
 value=2.500
 rarity=C

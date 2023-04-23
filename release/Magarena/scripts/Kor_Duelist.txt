@@ -1,5 +1,5 @@
 name=Kor Duelist
-image=https://magiccards.info/scans/en/mm2/22.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7cd85ac-e826-4b16-b9ab-864ae2cabed1.jpg?1562267949
 value=3.902
 rarity=U
 type=Creature

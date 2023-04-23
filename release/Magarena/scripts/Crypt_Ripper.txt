@@ -1,5 +1,5 @@
 name=Crypt Ripper
-image=https://magiccards.info/scans/en/zen/85.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9920e91d-58c1-4c1a-a177-43423db96842.jpg?1562614644
 value=3.514
 rarity=C
 type=Creature

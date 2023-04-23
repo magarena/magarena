@@ -1,5 +1,5 @@
 name=Silverfur Partisan
-image=https://magiccards.info/scans/en/soi/228.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a20f5392-5cde-4326-a322-7463ec4b0515.jpg?1576385230
 value=2.500
 rarity=R
 type=Creature

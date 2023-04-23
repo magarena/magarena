@@ -1,5 +1,5 @@
 name=Bloodmark Mentor
-image=https://magiccards.info/scans/en/shm/83.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/734ad23e-7603-4625-b8e3-54466ad86736.jpg?1562919243
 value=3.770
 rarity=U
 type=Creature

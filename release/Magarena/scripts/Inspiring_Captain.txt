@@ -1,5 +1,5 @@
 name=Inspiring Captain
-image=https://magiccards.info/scans/en/soi/25.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eac9c0ee-97a1-4c31-8a42-30408ef3a49c.jpg?1600717067
 value=2.500
 rarity=C
 type=Creature

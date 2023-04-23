@@ -1,5 +1,5 @@
 name=Tandem Lookout
-image=https://magiccards.info/scans/en/mm3/53.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e44b411-ccb8-44c8-a021-2372c945f0d3.jpg?1593813158
 image_updated=2017-08-08
 value=3.810
 rarity=C

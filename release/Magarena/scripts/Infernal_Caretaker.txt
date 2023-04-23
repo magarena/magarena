@@ -1,5 +1,5 @@
 name=Infernal Caretaker
-image=https://magiccards.info/scans/en/le/76.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a028a30-6242-4d87-9501-d1826ecb69b0.jpg?1562922909
 value=3.568
 rarity=C
 type=Creature

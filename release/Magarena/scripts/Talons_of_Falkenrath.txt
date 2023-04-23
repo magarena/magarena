@@ -1,5 +1,5 @@
 name=Talons of Falkenrath
-image=https://magiccards.info/scans/en/dka/105.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8e38239-a9ec-4149-9c90-74dcd46ed95d.jpg?1562953998
 value=1.663
 rarity=C
 type=Enchantment

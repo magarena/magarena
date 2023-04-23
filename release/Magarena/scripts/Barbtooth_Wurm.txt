@@ -1,5 +1,5 @@
 name=Barbtooth Wurm
-image=https://magiccards.info/scans/en/st/125.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e85fbc25-412a-4367-8209-258ff638dcc6.jpg?1562875735
 value=2.500
 rarity=C
 type=Creature

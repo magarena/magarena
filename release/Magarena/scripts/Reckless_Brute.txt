@@ -1,5 +1,5 @@
 name=Reckless Brute
-image=https://magiccards.info/scans/en/m13/144.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fd32a9e-1d39-4792-9657-69d17e5e0134.jpg?1562554440
 value=2.306
 rarity=C
 type=Creature

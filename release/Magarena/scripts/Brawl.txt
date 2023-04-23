@@ -1,5 +1,5 @@
 name=Brawl
-image=https://magiccards.info/scans/en/mm/178.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f4e783c-0717-4127-bd7b-885ca617ca29.jpg?1562380385
 value=3.650
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Hell's Caretaker
-image=https://magiccards.info/scans/en/a25/92.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84a65ccf-37b6-48a3-9873-7a4cafef27cb.jpg?1562437592
 image_updated=2018-04-27
 value=4.376
 rarity=R

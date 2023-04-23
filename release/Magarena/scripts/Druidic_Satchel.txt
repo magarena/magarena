@@ -1,5 +1,5 @@
 name=Druidic Satchel
-image=https://magiccards.info/scans/en/m12/207.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccc796ae-360f-4a3f-83d3-610ff3162b9a.jpg?1625978529
 value=3.667
 rarity=R
 type=Artifact

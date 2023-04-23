@@ -1,5 +1,5 @@
 name=Electryte
-image=https://magiccards.info/scans/en/us/183.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85c3d04f-4010-4db3-9e4e-afa8116b263d.jpg?1562923240
 value=2.929
 rarity=R
 type=Creature

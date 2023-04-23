@@ -1,5 +1,5 @@
 name=Soltari Trooper
-image=https://magiccards.info/scans/en/tp/259.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bc2cfc0-bc62-4a36-a30b-77c6912be2e9.jpg?1562428641
 value=3.871
 rarity=C
 type=Creature

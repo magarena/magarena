@@ -1,5 +1,5 @@
 name=Dovescape
-image=https://magiccards.info/scans/en/di/143.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6e3d6e6-ac17-4d73-acac-089442de4af6.jpg?1593273866
 value=4.057
 rarity=R
 type=Enchantment

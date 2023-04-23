@@ -1,5 +1,5 @@
 name=Tranquil Path
-image=https://magiccards.info/scans/en/ap/89.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2da8c059-3309-49a5-ae97-c048aefc922f.jpg?1562905716
 value=3.080
 rarity=C
 type=Sorcery

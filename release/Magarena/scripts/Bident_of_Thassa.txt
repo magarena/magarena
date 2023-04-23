@@ -1,5 +1,5 @@
 name=Bident of Thassa
-image=https://magiccards.info/scans/en/a25/42.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5903aac6-171c-48b7-984a-f074c176d179.jpg?1562435903
 image_updated=2018-04-27
 value=3.551
 rarity=R

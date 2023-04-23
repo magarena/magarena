@@ -1,5 +1,5 @@
 name=Tetsuko Umezawa, Fugitive
-image=https://magiccards.info/scans/en/dom/69.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c70d5d1f-30e7-4a14-9bd9-2b654549f7ac.jpg?1682208932
 value=2.500
 rarity=U
 type=Legendary,Creature

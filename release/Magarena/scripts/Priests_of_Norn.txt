@@ -1,5 +1,5 @@
 name=Priests of Norn
-image=https://magiccards.info/scans/en/mbs/16.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a978c49d-483a-42fe-971c-858288d07e40.jpg?1562613743
 value=3.572
 rarity=C
 type=Creature

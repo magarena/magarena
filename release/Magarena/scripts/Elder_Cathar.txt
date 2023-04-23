@@ -1,5 +1,5 @@
 name=Elder Cathar
-image=https://magiccards.info/scans/en/isd/12.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26c38fbf-09ab-46fc-905e-ca45a85d794b.jpg?1592762595
 value=3.424
 rarity=C
 type=Creature

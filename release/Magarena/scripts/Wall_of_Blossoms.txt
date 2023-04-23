@@ -1,5 +1,5 @@
 name=Wall of Blossoms
-image=https://magiccards.info/scans/en/c16/175.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f836b155-8829-460b-91f8-4cd00b988196.jpg?1601080289
 image_updated=2017-08-17
 value=4.297
 rarity=U

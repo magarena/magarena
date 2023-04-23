@@ -1,5 +1,5 @@
 name=Burrenton Bombardier
-image=https://magiccards.info/scans/en/mt/3.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd872395-f351-4f7e-9290-c34d1c98a567.jpg?1562270497
 image_updated=2016-11-20
 value=2.860
 rarity=C

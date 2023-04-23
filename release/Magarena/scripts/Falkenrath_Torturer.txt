@@ -1,5 +1,5 @@
 name=Falkenrath Torturer
-image=https://magiccards.info/scans/en/dka/60.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e81d6ed-2141-4177-9ded-680fff65b39e.jpg?1562917243
 value=2.021
 rarity=C
 type=Creature

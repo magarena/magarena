@@ -1,5 +1,5 @@
 name=Sword of War and Peace
-image=https://magiccards.info/scans/en/nph/161.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46e6f50b-4b18-4aab-a7b0-869f25bc4c40.jpg?1599710135
 value=3.818
 rarity=M
 type=Artifact

@@ -1,5 +1,5 @@
 name=Foundry Champion
-image=https://magiccards.info/scans/en/gtc/165.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84e39703-db78-4d3d-aacd-5396848253ed.jpg?1561834632
 value=3.208
 rarity=R
 type=Creature

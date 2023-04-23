@@ -1,5 +1,5 @@
 name=Shadowborn Apostle
-image=https://magiccards.info/scans/en/m14/114.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae7ba1de-48f9-423b-867a-22bd3f6c06c2.jpg?1673147629
 value=3.598
 rarity=C
 type=Creature

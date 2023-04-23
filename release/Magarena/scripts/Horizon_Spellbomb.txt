@@ -1,5 +1,5 @@
 name=Horizon Spellbomb
-image=https://magiccards.info/scans/en/som/165.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d93378e-1de2-4954-9458-dd3306f2996e.jpg?1562820966
 value=2.840
 rarity=C
 type=Artifact

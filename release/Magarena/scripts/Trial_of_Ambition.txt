@@ -1,5 +1,5 @@
 name=Trial of Ambition
-image=https://magiccards.info/scans/en/akh/113.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db1e79b7-931d-49bf-8c2c-d42c55a93c74.jpg?1543675443
 value=2.500
 rarity=U
 type=Enchantment

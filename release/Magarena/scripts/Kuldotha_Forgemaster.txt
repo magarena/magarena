@@ -1,5 +1,5 @@
 name=Kuldotha Forgemaster
-image=https://magiccards.info/scans/en/som/169.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c768267f-5ad2-4f4d-bbc7-6639325401c7.jpg?1599709400
 value=4.413
 rarity=R
 type=Artifact,Creature

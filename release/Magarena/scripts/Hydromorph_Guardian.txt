@@ -1,5 +1,5 @@
 name=Hydromorph Guardian
-image=https://magiccards.info/scans/en/tr/39.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40e4ace0-421d-4e8e-ab85-8f74757e99c7.jpg?1562629479
 value=3.054
 rarity=C
 type=Creature

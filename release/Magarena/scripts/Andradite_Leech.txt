@@ -1,5 +1,5 @@
 name=Andradite Leech
-image=https://magiccards.info/scans/en/in/93.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6da0d4f3-9216-406c-8f3e-b9bb0a11dc75.jpg?1562916972
 value=1.190
 rarity=R
 type=Creature

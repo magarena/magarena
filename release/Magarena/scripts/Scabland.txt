@@ -1,5 +1,5 @@
 name=Scabland
-image=https://magiccards.info/scans/en/tp/331.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40642193-712a-495e-9349-6fc8e54a66f4.jpg?1562429335
 value=2.600
 rarity=R
 type=Land

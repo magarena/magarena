@@ -1,5 +1,5 @@
 name=Shore Keeper
-image=https://magiccards.info/scans/en/xln/77.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/135d1145-8640-44e1-8079-45832fa2556d.jpg?1562551024
 value=2.500
 rarity=C
 type=Creature

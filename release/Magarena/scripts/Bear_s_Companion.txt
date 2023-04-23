@@ -1,5 +1,5 @@
 name=Bear's Companion
-image=https://magiccards.info/scans/en/ktk/167.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28194ca7-3b2a-49b8-8f03-56a2c97859d9.jpg?1673148369
 value=3.833
 rarity=U
 type=Creature

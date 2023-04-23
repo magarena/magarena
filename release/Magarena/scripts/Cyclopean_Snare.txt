@@ -1,5 +1,5 @@
 name=Cyclopean Snare
-image=https://magiccards.info/scans/en/rav/259.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22ba776a-c959-4d15-aa36-9fba1fcb512d.jpg?1598917952
 value=0.875
 rarity=U
 type=Artifact

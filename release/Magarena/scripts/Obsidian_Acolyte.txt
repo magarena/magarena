@@ -1,5 +1,5 @@
 name=Obsidian Acolyte
-image=https://magiccards.info/scans/en/in/22.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/868efcee-bb13-4b6f-b81b-99408685e4c4.jpg?1562922212
 value=3.741
 rarity=C
 type=Creature

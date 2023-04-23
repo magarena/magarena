@@ -1,5 +1,5 @@
 name=Pit Spawn
-image=https://magiccards.info/scans/en/ex/70.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/669ad60b-4053-4f07-9072-52e6ff65b4e3.jpg?1562087842
 value=4.383
 rarity=R
 type=Creature

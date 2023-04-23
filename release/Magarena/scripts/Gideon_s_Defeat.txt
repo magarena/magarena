@@ -1,5 +1,5 @@
 name=Gideon's Defeat
-image=https://magiccards.info/scans/en/hou/13.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/4722eb81-1aa1-4863-8dfb-d9d6035bd6c6.jpg?1562797622
 value=2.500
 rarity=U
 type=Instant

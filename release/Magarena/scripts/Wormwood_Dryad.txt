@@ -1,5 +1,5 @@
 name=Wormwood Dryad
-image=https://magiccards.info/scans/en/ts/233.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d35ad370-1b7e-4926-9580-7acf919787f2.jpg?1562939737
 value=2.238
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Root Cage
-image=https://magiccards.info/scans/en/pr/122.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db109497-7674-4067-a12b-dfb5c317a358.jpg?1562935901
 value=1.452
 rarity=U
 type=Enchantment

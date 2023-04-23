@@ -1,5 +1,5 @@
 name=Test of Endurance
-image=https://magiccards.info/scans/en/ju/29.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf16bd6b-e99c-4da3-bd03-11f63b7ee85d.jpg?1562632070
 value=4.061
 rarity=R
 type=Enchantment

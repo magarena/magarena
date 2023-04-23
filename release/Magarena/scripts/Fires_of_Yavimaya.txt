@@ -1,5 +1,5 @@
 name=Fires of Yavimaya
-image=https://magiccards.info/scans/en/cns/188.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7294e30f-0356-4bcc-a264-4cd46d8f13a6.jpg?1562916275
 value=4.500
 rarity=U
 type=Enchantment

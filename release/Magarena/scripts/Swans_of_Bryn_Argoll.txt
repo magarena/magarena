@@ -1,5 +1,5 @@
 name=Swans of Bryn Argoll
-image=https://magiccards.info/scans/en/mm2/199.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8903e1d-e255-4eda-bb8e-c6229a88c8a7.jpg?1562265760
 value=4.154
 rarity=R
 type=Creature

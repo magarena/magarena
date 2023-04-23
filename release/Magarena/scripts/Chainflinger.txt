@@ -1,5 +1,5 @@
 name=Chainflinger
-image=https://magiccards.info/scans/en/od/181.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/670a5bba-a10f-41f6-88cd-cef1dfe4bfa9.jpg?1562914041
 value=2.071
 rarity=C
 type=Creature

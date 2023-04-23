@@ -1,5 +1,5 @@
 name=Grisly Survivor
-image=https://magiccards.info/scans/en/hou/64.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/035ee44d-63ef-45b7-b36b-38ac341a2ca7.jpg?1562787663
 value=2.500
 rarity=C
 type=Creature

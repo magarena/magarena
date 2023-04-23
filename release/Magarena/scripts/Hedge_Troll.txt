@@ -1,5 +1,5 @@
 name=Hedge Troll
-image=https://magiccards.info/scans/en/pc/151.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b2e6027-598d-4ba0-93ae-f76d031de8af.jpg?1562568583
 value=4.108
 rarity=U
 type=Creature

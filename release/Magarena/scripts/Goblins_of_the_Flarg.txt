@@ -1,5 +1,5 @@
 name=Goblins of the Flarg
-image=https://magiccards.info/scans/en/dk/69.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb91b7c0-c453-481b-9d3d-0223057291ed.jpg?1559592524
 value=2.375
 rarity=C
 type=Creature

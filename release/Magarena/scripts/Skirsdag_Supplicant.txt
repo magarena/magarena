@@ -1,5 +1,5 @@
 name=Skirsdag Supplicant
-image=https://magiccards.info/scans/en/emn/104.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3f63897-15a1-4b34-9916-d9df62f66785.jpg?1576384414
 image_updated=2016-09-05
 value=2.500
 rarity=C

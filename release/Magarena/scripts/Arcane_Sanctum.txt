@@ -1,5 +1,5 @@
 name=Arcane Sanctum
-image=https://magiccards.info/scans/en/mm3/228.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/bae03b71-7a60-4d8b-a657-d20ef0e1fe98.jpg?1682210328
 image_updated=2017-08-08
 value=3.824
 rarity=U

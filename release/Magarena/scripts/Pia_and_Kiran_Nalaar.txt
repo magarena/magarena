@@ -1,5 +1,5 @@
 name=Pia and Kiran Nalaar
-image=https://magiccards.info/scans/en/ori/157.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aab5a55-0aee-4d8e-92b7-92b057a00509.jpg?1682209408
 image_updated=2015-11-05
 value=2.500
 rarity=R

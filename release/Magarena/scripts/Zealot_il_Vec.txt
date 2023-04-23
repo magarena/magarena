@@ -1,5 +1,5 @@
 name=Zealot il-Vec
-image=https://magiccards.info/scans/en/ts/47.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a2a2740-68cb-48c9-9716-081d369075e0.jpg?1562907132
 value=2.684
 rarity=C
 type=Creature

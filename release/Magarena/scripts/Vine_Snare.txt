@@ -1,5 +1,5 @@
 name=Vine Snare
-image=https://magiccards.info/scans/en/ori/205.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2241f71-4319-49bf-905a-b6b774ffcb27.jpg?1562043467
 image_updated=2015-11-05
 value=2.500
 rarity=C

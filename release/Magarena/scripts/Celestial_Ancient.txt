@@ -1,5 +1,5 @@
 name=Celestial Ancient
-image=https://magiccards.info/scans/en/pc2/5.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b942e6ca-fd5a-4462-9413-c82483601b61.jpg?1562929535
 image_updated=2016-02-29
 value=3.643
 rarity=R

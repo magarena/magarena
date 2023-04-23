@@ -1,5 +1,5 @@
 name=Sea Gate Wreckage
-image=https://magiccards.info/scans/en/ogw/177.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd42576b-9de5-4d77-9d30-1ef5b5a4fd73.jpg?1562936234
 image_updated=2016-02-29
 value=2.500
 rarity=R

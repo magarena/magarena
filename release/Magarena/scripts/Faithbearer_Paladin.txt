@@ -1,5 +1,5 @@
 name=Faithbearer Paladin
-image=https://magiccards.info/scans/en/emn/25.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af15a774-b97f-4bc0-913d-4d2a047fed8a.jpg?1576383858
 image_updated=2016-09-05
 value=2.500
 rarity=C

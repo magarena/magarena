@@ -1,5 +1,5 @@
 name=Spellbook
-image=https://magiccards.info/scans/en/m10/220.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26f4d2b1-31d7-40d8-bd4e-cdd128076d0f.jpg?1561974160
 value=3.786
 rarity=U
 type=Artifact

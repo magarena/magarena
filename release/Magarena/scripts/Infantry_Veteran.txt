@@ -1,5 +1,5 @@
 name=Infantry Veteran
-image=https://magiccards.info/scans/en/ima/24.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec4b0fd0-045d-4a96-9a57-c7ba1548b4cd.jpg?1562855574
 image_updated=2017-04-12
 value=2.000
 rarity=C

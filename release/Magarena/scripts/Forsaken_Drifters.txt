@@ -1,5 +1,5 @@
 name=Forsaken Drifters
-image=https://magiccards.info/scans/en/bng/72.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05445d18-3590-4216-9392-9438d9f9395d.jpg?1593091984
 value=2.640
 rarity=C
 type=Creature

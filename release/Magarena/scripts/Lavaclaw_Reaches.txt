@@ -1,5 +1,5 @@
 name=Lavaclaw Reaches
-image=https://magiccards.info/scans/en/wwk/139.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/409fcd0c-8449-4623-8bf0-cd7ca0937a4a.jpg?1547518687
 value=3.462
 rarity=R
 type=Land

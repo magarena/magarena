@@ -1,5 +1,5 @@
 name=Tenacity
-image=https://magiccards.info/scans/en/soi/42.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41fbe149-3e1f-495e-be1b-efc3a6dbcb08.jpg?1576383922
 value=2.500
 rarity=U
 type=Instant

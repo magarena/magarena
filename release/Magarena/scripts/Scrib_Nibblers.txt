@@ -1,5 +1,5 @@
 name=Scrib Nibblers
-image=https://magiccards.info/scans/en/wwk/66.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4170ddd3-53bd-4ec7-82c0-4fb48f400aa5.jpg?1562285880
 value=3.173
 rarity=U
 type=Creature

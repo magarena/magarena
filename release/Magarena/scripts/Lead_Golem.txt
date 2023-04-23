@@ -1,5 +1,5 @@
 name=Lead Golem
-image=https://magiccards.info/scans/en/6e/295.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2ba3857-9bd7-434d-b77f-d697776f33e4.jpg?1562821752
 value=1.477
 rarity=U
 type=Artifact,Creature

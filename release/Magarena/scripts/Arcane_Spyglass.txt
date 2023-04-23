@@ -1,5 +1,5 @@
 name=Arcane Spyglass
-image=https://magiccards.info/scans/en/ds/93.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d10d85c9-859a-4ff5-9a41-bf20622a3ff5.jpg?1562639716
 value=1.664
 rarity=C
 type=Artifact

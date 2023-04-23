@@ -1,5 +1,5 @@
 name=Elven Palisade
-image=https://magiccards.info/scans/en/ex/109.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b990ffe5-fd2a-4646-bac3-8e52cdc328aa.jpg?1562088782
 value=2.088
 rarity=U
 type=Enchantment

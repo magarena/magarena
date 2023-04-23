@@ -1,5 +1,5 @@
 name=Nightmare
-image=https://magiccards.info/scans/en/ori/282.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/052022ff-795f-4f50-a45c-91cf8be9fbe9.jpg?1562197283
 image_updated=2010-09-10
 value=3.312
 rarity=R

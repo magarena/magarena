@@ -1,5 +1,5 @@
 name=Necromancer's Assistant
-image=https://magiccards.info/scans/en/m15/107.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b6a8b3e-2709-4036-838b-56cc82b0d917.jpg?1562790574
 value=1.571
 rarity=C
 type=Creature

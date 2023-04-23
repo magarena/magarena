@@ -1,5 +1,5 @@
 name=Battering Krasis
-image=https://magiccards.info/scans/en/dgm/41.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d9aa740-9adf-412a-b6ec-0b9bb1b4618b.jpg?1587306439
 value=3.373
 rarity=C
 type=Creature

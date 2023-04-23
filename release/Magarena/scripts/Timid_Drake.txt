@@ -1,5 +1,5 @@
 name=Timid Drake
-image=https://magiccards.info/scans/en/mm/111.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9212f685-d7af-4279-b17e-7201d8f63813.jpg?1562382057
 value=2.112
 rarity=U
 type=Creature

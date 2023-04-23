@@ -1,5 +1,5 @@
 name=Stromkirk Condemned
-image=https://magiccards.info/scans/en/emn/106.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0e0cecb-4f14-438e-a9d0-c6b19a4126c5.jpg?1641602873
 image_updated=2016-09-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Dictate of Erebos
-image=https://magiccards.info/scans/en/jou/65.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f06db70-95f9-41eb-8e5f-8bc56fd34c09.jpg?1593095668
 value=3.787
 rarity=R
 type=Enchantment

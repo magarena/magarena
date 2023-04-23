@@ -1,5 +1,5 @@
 name=Necromancer's Covenant
-image=https://magiccards.info/scans/en/arb/82.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/3559d8f2-eed2-425f-b9de-a18ad6fddcb5.jpg?1562703005
 image_updated=2016-02-29
 value=3.667
 rarity=R

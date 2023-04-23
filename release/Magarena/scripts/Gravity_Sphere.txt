@@ -1,5 +1,5 @@
 name=Gravity Sphere
-image=https://magiccards.info/scans/en/lg/149.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2749332-e99a-4a0c-b3a3-5578b552fa11.jpg?1562860175
 value=4.246
 rarity=R
 type=World,Enchantment

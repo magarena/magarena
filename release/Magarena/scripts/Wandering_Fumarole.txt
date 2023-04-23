@@ -1,5 +1,5 @@
 name=Wandering Fumarole
-image=https://magiccards.info/scans/en/ogw/182.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce3a6a8e-a01e-4d14-a6e5-c02c8205c749.jpg?1674143256
 image_updated=2016-02-29
 value=2.500
 rarity=R

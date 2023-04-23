@@ -1,5 +1,5 @@
 name=Blood Clock
-image=https://magiccards.info/scans/en/sok/153.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28328b4d-99d1-4460-9bbe-a64c6c0b6cb2.jpg?1562492993
 value=3.041
 rarity=R
 type=Artifact

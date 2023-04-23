@@ -1,5 +1,5 @@
 name=Flamekin Brawler
-image=https://magiccards.info/scans/en/lw/166.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42da4ec7-9d30-4c4e-9220-db0f4172bf9c.jpg?1562378235
 image_updated=2016-12-02
 value=3.472
 rarity=C

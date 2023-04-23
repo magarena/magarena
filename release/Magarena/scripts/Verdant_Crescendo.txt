@@ -1,5 +1,5 @@
 name=Verdant Crescendo
-image=https://magiccards.info/scans/en/kld/273.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea890019-f48f-4164-b057-773499ef273f.jpg?1562745055
 image_updated=2016-10-05
 value=2.500
 rarity=R

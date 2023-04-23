@@ -1,5 +1,5 @@
 name=Oasis
-image=https://magiccards.info/scans/en/4e/185.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/4949330d-9f12-459a-8a64-bd304fc53954.jpg?1562912163
 value=2.062
 rarity=U
 type=Land

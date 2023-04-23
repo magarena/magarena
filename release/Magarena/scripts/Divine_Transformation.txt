@@ -1,5 +1,5 @@
 name=Divine Transformation
-image=https://magiccards.info/scans/en/6e/17.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b733fb5-3ece-452c-a360-330fd202bb0f.jpg?1559592582
 value=2.574
 rarity=U
 type=Enchantment

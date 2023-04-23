@@ -1,5 +1,5 @@
 name=Retribution of the Meek
-image=https://magiccards.info/scans/en/vi/119.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/860b8633-1bfc-426a-8666-5e6a584d4525.jpg?1587857186
 value=4.271
 rarity=R
 type=Sorcery

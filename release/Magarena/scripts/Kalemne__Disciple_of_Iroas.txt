@@ -1,5 +1,5 @@
 name=Kalemne, Disciple of Iroas
-image=https://magiccards.info/scans/en/c15/45.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c718940-dc07-4449-ba35-4029f366c3eb.jpg?1562273430
 image_updated=2016-02-29
 value=2.500
 rarity=M

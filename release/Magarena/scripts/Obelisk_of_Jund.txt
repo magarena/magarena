@@ -1,5 +1,5 @@
 name=Obelisk of Jund
-image=https://magiccards.info/scans/en/ala/215.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fe43306-f48f-4812-8d40-1903cc6f19d2.jpg?1562901695
 value=2.750
 rarity=C
 type=Artifact

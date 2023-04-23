@@ -1,5 +1,5 @@
 name=Soltari Monk
-image=https://magiccards.info/scans/en/tp/257.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b65aaa5-0b1b-4298-a3c7-1808b240491f.jpg?1562430306
 value=4.267
 rarity=U
 type=Creature

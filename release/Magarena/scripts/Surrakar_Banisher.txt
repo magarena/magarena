@@ -1,5 +1,5 @@
 name=Surrakar Banisher
-image=https://magiccards.info/scans/en/wwk/39.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd577743-43af-4215-8585-52f714694c6e.jpg?1562840706
 image_updated=2016-01-09
 value=2.087
 rarity=C

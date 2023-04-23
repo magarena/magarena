@@ -1,5 +1,5 @@
 name=Flash Flood
-image=https://magiccards.info/scans/en/lg/57.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d0aa638-6e51-4fd0-90e3-685db31b2c7a.jpg?1562901119
 value=3.259
 rarity=C
 type=Instant

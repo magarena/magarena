@@ -1,5 +1,5 @@
 name=Quicksilver Amulet
-image=https://magiccards.info/scans/en/m12/214.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04c0357a-e98d-4c49-83ad-d7a8ebe7e2d1.jpg?1562630982
 value=4.295
 rarity=R
 type=Artifact

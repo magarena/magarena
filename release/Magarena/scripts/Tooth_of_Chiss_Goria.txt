@@ -1,5 +1,5 @@
 name=Tooth of Chiss-Goria
-image=https://magiccards.info/scans/en/mi/264.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db5a91db-1b86-4471-badc-884142c355ca.jpg?1562159900
 value=3.203
 rarity=C
 type=Artifact

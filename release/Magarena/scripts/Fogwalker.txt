@@ -1,5 +1,5 @@
 name=Fogwalker
-image=https://magiccards.info/scans/en/emn/60.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0894d76b-801a-4e3b-8378-bfa81fe24d59.jpg?1576384116
 image_updated=2016-09-05
 value=2.500
 rarity=C

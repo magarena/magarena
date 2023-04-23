@@ -1,5 +1,5 @@
 name=Aphotic Wisps
-image=https://magiccards.info/scans/en/shm/55.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52fd47e7-02c5-4f91-bb3b-697c4c53232a.jpg?1562830208
 value=3.298
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Sinstriker's Will
-image=https://magiccards.info/scans/en/gp/16.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6889030-f4cd-41a3-8596-b552a9539873.jpg?1593271923
 value=2.902
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Allied Strategies
-image=https://magiccards.info/scans/en/ps/20.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dea7475-af87-4cee-bfdc-804351a632b5.jpg?1562903417
 image_updated=2016-11-20
 value=3.029
 rarity=U

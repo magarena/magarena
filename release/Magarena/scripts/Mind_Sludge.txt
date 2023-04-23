@@ -1,5 +1,5 @@
 name=Mind Sludge
-image=https://magiccards.info/scans/en/zen/102.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7aaedf6d-171b-4845-8815-debbe06b5b66.jpg?1562613618
 value=3.832
 rarity=U
 type=Sorcery

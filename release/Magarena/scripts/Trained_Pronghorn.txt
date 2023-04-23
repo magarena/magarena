@@ -1,5 +1,5 @@
 name=Trained Pronghorn
-image=https://magiccards.info/scans/en/ju/30.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/720ec745-226c-4211-974f-e04a4f9e1902.jpg?1562630404
 value=2.000
 rarity=C
 type=Creature

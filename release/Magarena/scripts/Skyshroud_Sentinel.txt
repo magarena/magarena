@@ -1,5 +1,5 @@
 name=Skyshroud Sentinel
-image=https://magiccards.info/scans/en/ne/121.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a35ab55f-f677-45c8-bd32-56788a776b33.jpg?1562631344
 value=3.310
 rarity=C
 type=Creature

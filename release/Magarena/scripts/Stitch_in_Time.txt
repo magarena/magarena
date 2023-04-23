@@ -1,5 +1,5 @@
 name=Stitch in Time
-image=https://magiccards.info/scans/en/gp/132.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80ee9c0d-c0ac-4c75-b254-77329dc42366.jpg?1593272800
 value=4.083
 rarity=R
 type=Sorcery

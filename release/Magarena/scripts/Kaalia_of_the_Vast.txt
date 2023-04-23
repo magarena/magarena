@@ -1,5 +1,5 @@
 name=Kaalia of the Vast
-image=https://magiccards.info/scans/en/cmd/206.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93f6631f-f3a6-4d3c-8618-4b4ab4e82483.jpg?1673148814
 image_updated=2016-12-21
 value=4.089
 rarity=M

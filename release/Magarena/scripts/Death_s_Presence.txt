@@ -1,5 +1,5 @@
 name=Death's Presence
-image=https://magiccards.info/scans/en/rtr/121.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd24d5dc-a4c5-4821-92f6-52d1840be66a.jpg?1637631053
 value=3.243
 rarity=R
 type=Enchantment

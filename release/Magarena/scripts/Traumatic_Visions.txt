@@ -1,5 +1,5 @@
 name=Traumatic Visions
-image=https://magiccards.info/scans/en/cn2/123.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b062fbb-9eb2-4773-83aa-b2daca4fe80d.jpg?1625976550
 image_updated=2017-08-29
 value=2.647
 rarity=C

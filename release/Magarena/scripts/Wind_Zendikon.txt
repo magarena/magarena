@@ -1,5 +1,5 @@
 name=Wind Zendikon
-image=https://magiccards.info/scans/en/wwk/46.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbaae63e-6269-4aca-aa45-956f6bf4e112.jpg?1562295010
 value=3.803
 rarity=C
 type=Enchantment

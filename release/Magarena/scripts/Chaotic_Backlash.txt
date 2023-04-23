@@ -1,5 +1,5 @@
 name=Chaotic Backlash
-image=https://magiccards.info/scans/en/eve/49.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1f96c71-e585-4c99-b054-e53ab12b392c.jpg?1562936028
 value=2.667
 rarity=U
 type=Instant

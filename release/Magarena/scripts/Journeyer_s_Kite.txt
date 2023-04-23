@@ -1,5 +1,5 @@
 name=Journeyer's Kite
-image=https://magiccards.info/scans/en/chk/257.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5440121d-d3b5-4d26-a2d9-674af73d449a.jpg?1581708584
 image_updated=2016-12-20
 value=3.059
 rarity=R

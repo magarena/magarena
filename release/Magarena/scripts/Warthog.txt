@@ -1,5 +1,5 @@
 name=Warthog
-image=https://magiccards.info/scans/en/6e/267.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d65630c7-3813-404c-9919-0e46c557f7b8.jpg?1562823269
 value=3.565
 rarity=U
 type=Creature

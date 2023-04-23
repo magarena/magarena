@@ -1,5 +1,5 @@
 name=Akki Coalflinger
-image=https://magiccards.info/scans/en/chk/152.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c7067f4-8578-4e5e-886a-c9b14729c4b6.jpg?1562904064
 image_updated=2016-11-20
 value=3.122
 rarity=U

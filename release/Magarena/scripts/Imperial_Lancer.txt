@@ -1,5 +1,5 @@
 name=Imperial Lancer
-image=https://magiccards.info/scans/en/xln/15.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ed3784a-2dc0-4626-aa6a-268c1e2ac83c.jpg?1562558846
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Thorn of Amethyst
-image=https://magiccards.info/scans/en/lw/262.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e472d4f5-add4-4de3-8718-31a47a35277c.jpg?1562371865
 value=4.372
 rarity=R
 type=Artifact

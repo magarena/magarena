@@ -1,5 +1,5 @@
 name=Dune-Brood Nephilim
-image=https://magiccards.info/scans/en/gp/110.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15b4ee44-28c4-4a39-9c06-aca43787954f.jpg?1593272643
 value=4.061
 rarity=R
 type=Creature

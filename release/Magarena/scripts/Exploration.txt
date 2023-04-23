@@ -1,5 +1,5 @@
 name=Exploration
-image=https://magiccards.info/scans/en/cns/164.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce4c6535-afea-4704-b35c-badeb04c4f4c.jpg?1599707192
 value=4.568
 rarity=R
 type=Enchantment

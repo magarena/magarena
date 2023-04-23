@@ -1,5 +1,5 @@
 name=Consulate Skygate
-image=https://magiccards.info/scans/en/kld/202.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d808a30-f1b5-484e-a90e-0a9f751ef597.jpg?1562916920
 image_updated=2016-10-05
 value=2.500
 rarity=C

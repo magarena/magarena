@@ -1,5 +1,5 @@
 name=Master of the Veil
-image=https://magiccards.info/scans/en/le/43.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7ce1755-9f4a-4741-b6e5-288595ec494d.jpg?1562938335
 value=3.119
 rarity=U
 type=Creature

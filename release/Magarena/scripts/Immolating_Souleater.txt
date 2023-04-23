@@ -1,5 +1,5 @@
 name=Immolating Souleater
-image=https://magiccards.info/scans/en/nph/139.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abbaf916-067d-4834-a55c-b400fe0d8c1f.jpg?1562880643
 value=4.051
 rarity=C
 type=Artifact,Creature

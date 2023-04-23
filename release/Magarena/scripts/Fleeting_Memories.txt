@@ -1,5 +1,5 @@
 name=Fleeting Memories
-image=https://magiccards.info/scans/en/soi/62.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b9eaf90-2a9e-44a7-bdae-03c26f9d21e7.jpg?1576384069
 value=2.500
 rarity=U
 type=Enchantment

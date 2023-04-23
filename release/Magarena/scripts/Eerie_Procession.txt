@@ -1,5 +1,5 @@
 name=Eerie Procession
-image=https://magiccards.info/scans/en/chk/58.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3af326c1-fcc8-45c3-b75e-ae4dbbd59ced.jpg?1562759357
 value=3.292
 rarity=U
 type=Sorcery

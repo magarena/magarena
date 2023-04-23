@@ -1,5 +1,5 @@
 name=Fraying Omnipotence
-image=https://magiccards.info/scans/en/m19/97.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0fa0ad8-854a-4b4e-9f87-e1dfaa11253c.jpg?1562304896
 value=2.500
 rarity=R
 type=Sorcery

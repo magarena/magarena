@@ -1,5 +1,5 @@
 name=Yahenni, Undying Partisan
-image=https://magiccards.info/scans/en/aer/74.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da4f8f35-5860-4416-b7bb-9ba56540a28c.jpg?1673147708
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Oracle's Insight
-image=https://magiccards.info/scans/en/bng/47.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/533d455a-88c9-4e41-b31e-5dcf821c6f6f.jpg?1562911936
 value=3.750
 rarity=U
 type=Enchantment

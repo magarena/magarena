@@ -1,5 +1,5 @@
 name=Scrapyard Mongrel
-image=https://magiccards.info/scans/en/m15/160.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb00bd3a-833e-4226-a73e-17c9043c0994.jpg?1562796411
 value=3.167
 rarity=C
 type=Creature

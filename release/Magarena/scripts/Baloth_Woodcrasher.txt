@@ -1,5 +1,5 @@
 name=Baloth Woodcrasher
-image=https://magiccards.info/scans/en/cmd/143.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c15f211-2c59-4b02-ac91-955f695816ec.jpg?1592710805
 value=3.441
 rarity=U
 type=Creature

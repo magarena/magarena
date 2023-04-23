@@ -1,5 +1,5 @@
 name=Balduvian Barbarians
-image=https://magiccards.info/scans/en/9e/174.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/caba00ff-df58-456e-8aeb-fc8b632018a6.jpg?1562741708
 value=2.432
 rarity=C
 type=Creature

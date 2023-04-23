@@ -1,5 +1,5 @@
 name=Soramaro, First to Dream
-image=https://magiccards.info/scans/en/sok/58.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e56de23d-7281-42f9-afce-7a81438dae5d.jpg?1562496546
 value=3.522
 rarity=R
 type=Legendary,Creature

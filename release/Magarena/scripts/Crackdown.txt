@@ -1,5 +1,5 @@
 name=Crackdown
-image=https://magiccards.info/scans/en/mm/15.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7009fd8-1d80-41bb-a1b0-fea9c909c63d.jpg?1562382094
 value=4.207
 rarity=R
 type=Enchantment

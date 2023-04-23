@@ -1,5 +1,5 @@
 name=Coma Veil
-image=https://magiccards.info/scans/en/ala/36.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d5b820c-fd07-4e1f-9451-da9267347acd.jpg?1562702340
 value=0.925
 rarity=C
 type=Enchantment

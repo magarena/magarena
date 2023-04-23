@@ -1,5 +1,5 @@
 name=Go for the Throat
-image=https://magiccards.info/scans/en/c17/114.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5446e1ba-c745-45b2-ad05-b22abf04daec.jpg?1682209037
 image_updated=2017-10-03
 value=4.577
 removal=4

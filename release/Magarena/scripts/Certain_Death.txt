@@ -1,5 +1,5 @@
 name=Certain Death
-image=https://magiccards.info/scans/en/emn/84.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6f7a23a-0966-4060-8034-734df6f0f29f.jpg?1562200015
 image_updated=2016-09-05
 value=2.500
 rarity=C

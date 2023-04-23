@@ -1,5 +1,5 @@
 name=Tajuru Archer
-image=https://magiccards.info/scans/en/zen/185.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/557b2178-2778-4596-9c50-28212616c56c.jpg?1593095508
 value=2.138
 rarity=U
 type=Creature

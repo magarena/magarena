@@ -1,5 +1,5 @@
 name=Power Matrix
-image=https://magiccards.info/scans/en/mm/309.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a578599c-7d90-4881-b59a-9cf64b90d917.jpg?1562382088
 value=4.214
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Walking Ballista
-image=https://magiccards.info/scans/en/aer/181.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/5272436e-74f0-44c4-a291-ea8ebc3f1525.jpg?1599710252
 value=2.500
 rarity=R
 type=Artifact,Creature

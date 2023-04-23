@@ -1,5 +1,5 @@
 name=Jhoira, Weatherlight Captain
-image=https://magiccards.info/scans/en/dom/197.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f77d23d-6257-4dae-b585-29f45f13f2e2.jpg?1599708079
 value=2.500
 rarity=M
 type=Legendary,Creature

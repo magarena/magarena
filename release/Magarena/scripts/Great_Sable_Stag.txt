@@ -1,5 +1,5 @@
 name=Great Sable Stag
-image=https://magiccards.info/scans/en/m10/186.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/451c8a79-1e8a-437d-836f-31155914c551.jpg?1561978268
 value=4.351
 rarity=R
 type=Creature

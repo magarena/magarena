@@ -1,5 +1,5 @@
 name=Whispering Specter
-image=https://magiccards.info/scans/en/nph/77.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcb1b486-e336-4e88-b635-b6ff18cb4841.jpg?1562881107
 value=3.071
 rarity=U
 type=Creature

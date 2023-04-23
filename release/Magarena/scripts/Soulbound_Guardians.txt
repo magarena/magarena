@@ -1,5 +1,5 @@
 name=Soulbound Guardians
-image=https://magiccards.info/scans/en/roe/45.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62e8128f-9858-4c48-ab43-1beca3db70e5.jpg?1562704421
 value=2.276
 rarity=U
 type=Creature

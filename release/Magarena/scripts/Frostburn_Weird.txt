@@ -1,5 +1,5 @@
 name=Frostburn Weird
-image=https://magiccards.info/scans/en/rtr/215.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba5a68d3-6bc9-4de8-bc06-e1106cf9b3d4.jpg?1562792221
 value=3.555
 rarity=C
 type=Creature

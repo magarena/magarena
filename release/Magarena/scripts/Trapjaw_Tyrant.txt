@@ -1,5 +1,5 @@
 name=Trapjaw Tyrant
-image=https://magiccards.info/scans/en/rix/29.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2c280c8-3471-4ae1-be96-0f392b095ce2.jpg?1555039837
 value=2.500
 rarity=M
 type=Creature

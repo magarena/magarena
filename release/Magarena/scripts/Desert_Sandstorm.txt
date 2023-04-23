@@ -1,5 +1,5 @@
 name=Desert Sandstorm
-image=https://magiccards.info/scans/en/p3k/107.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/588ad2bf-405d-4c36-b485-e415c22f2703.jpg?1562256542
 value=1.257
 rarity=C
 type=Sorcery

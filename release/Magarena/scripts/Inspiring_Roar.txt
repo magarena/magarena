@@ -1,5 +1,5 @@
 name=Inspiring Roar
-image=https://magiccards.info/scans/en/aer/186.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/1287d422-d6b0-43eb-8e89-3d6a0201100d.jpg?1608908793
 value=2.500
 rarity=C
 type=Sorcery

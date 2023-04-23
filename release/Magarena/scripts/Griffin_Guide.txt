@@ -1,5 +1,5 @@
 name=Griffin Guide
-image=https://magiccards.info/scans/en/ts/21.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2d038ee-1648-49cf-8775-c191fca252aa.jpg?1619392926
 image_updated=2016-09-12
 value=3.825
 rarity=U

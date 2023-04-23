@@ -1,5 +1,5 @@
 name=Windrider Eel
-image=https://magiccards.info/scans/en/zen/78.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8781413d-82b9-44be-9d82-3aea4c804ce7.jpg?1592765532
 value=3.549
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vigor
-image=https://magiccards.info/scans/en/lw/240.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea7047d8-8d32-48a3-829b-7eb5427ed53a.jpg?1562942114
 image_updated=2017-01-11
 value=4.263
 rarity=R

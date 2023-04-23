@@ -1,5 +1,5 @@
 name=Ghostly Wings
-image=https://magiccards.info/scans/en/soi/66.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1b1848c-3160-45f5-91a0-74ab6d91c01b.jpg?1576384096
 image_updated=2010-09-10
 value=3.058
 rarity=C

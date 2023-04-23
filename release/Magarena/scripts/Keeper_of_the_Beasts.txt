@@ -1,5 +1,5 @@
 name=Keeper of the Beasts
-image=https://magiccards.info/scans/en/ex/112.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cccccf78-8b00-406b-a2b7-0e6ba76703d0.jpg?1562088804
 value=3.621
 rarity=U
 type=Creature

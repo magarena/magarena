@@ -1,5 +1,5 @@
 name=Spiteful Motives
-image=https://magiccards.info/scans/en/soi/183.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/592d7349-d066-49b0-9920-c1ec1595e00d.jpg?1576384918
 value=2.500
 rarity=U
 type=Enchantment

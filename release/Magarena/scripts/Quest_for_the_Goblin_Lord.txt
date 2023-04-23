@@ -1,5 +1,5 @@
 name=Quest for the Goblin Lord
-image=https://magiccards.info/scans/en/wwk/86.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e23adb09-d216-47f5-a7d4-cb6a2ce48ada.jpg?1562298094
 value=3.395
 rarity=U
 type=Enchantment

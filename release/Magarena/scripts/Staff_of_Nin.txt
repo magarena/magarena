@@ -1,5 +1,5 @@
 name=Staff of Nin
-image=https://magiccards.info/scans/en/m13/217.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eca883f-4e6e-4ccc-ad69-a706e24ee151.jpg?1562273878
 image_updated=2016-02-29
 value=3.875
 rarity=R

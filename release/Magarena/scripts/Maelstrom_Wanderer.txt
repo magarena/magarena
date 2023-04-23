@@ -1,5 +1,5 @@
 name=Maelstrom Wanderer
-image=https://magiccards.info/scans/en/ema/204.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98aeab2a-69b5-4b4f-9de4-5401d01c26e2.jpg?1562923340
 value=3.894
 rarity=M
 type=Legendary,Creature

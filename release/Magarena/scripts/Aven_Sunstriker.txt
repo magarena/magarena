@@ -1,5 +1,5 @@
 name=Aven Sunstriker
-image=https://magiccards.info/scans/en/dtk/5.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a54b36b-5a8d-41a1-9371-1a59d81c2733.jpg?1562785730
 value=2.500
 rarity=U
 type=Creature

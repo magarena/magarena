@@ -1,5 +1,5 @@
 name=Tiger Claws
-image=https://magiccards.info/scans/en/mm/279.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0146a689-4817-4849-a90d-4cc64566960d.jpg?1562378942
 value=3.460
 rarity=C
 type=Enchantment

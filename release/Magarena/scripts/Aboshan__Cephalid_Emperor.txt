@@ -1,5 +1,5 @@
 name=Aboshan, Cephalid Emperor
-image=https://magiccards.info/scans/en/od/58.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82db4a41-03e8-4f0c-946c-a98fc5c9f7c8.jpg?1562919289
 value=3.918
 rarity=R
 type=Legendary,Creature

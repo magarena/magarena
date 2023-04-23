@@ -1,5 +1,5 @@
 name=Lumengrid Gargoyle
-image=https://magiccards.info/scans/en/mbs/112.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c200239c-d28e-4c55-a7bc-64a1d138cc2f.jpg?1608911524
 value=2.016
 rarity=U
 type=Artifact,Creature

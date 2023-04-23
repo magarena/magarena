@@ -1,5 +1,5 @@
 name=Dispatch
-image=https://magiccards.info/scans/en/mm2/15.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06bafa7d-1915-487a-96c8-b8aeafed20d4.jpg?1651655611
 value=3.812
 rarity=U
 type=Instant

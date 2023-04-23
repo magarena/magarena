@@ -1,5 +1,5 @@
 name=Sunscape Familiar
-image=https://magiccards.info/scans/en/ps/17.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9621f341-bf85-4b77-bf19-2fb013b4c955.jpg?1562926745
 value=4.261
 rarity=C
 type=Creature

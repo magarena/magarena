@@ -1,5 +1,5 @@
 name=Blizzard Specter
-image=https://magiccards.info/scans/en/ima/194.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0167df83-3bf4-4442-897d-c4ed06fa05a6.jpg?1562845271
 image_updated=2017-04-12
 value=4.172
 rarity=U

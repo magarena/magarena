@@ -1,5 +1,5 @@
 name=Boggart Shenanigans
-image=https://magiccards.info/scans/en/lw/155.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b52534b3-5dfe-4019-a518-4e15899988f4.jpg?1562931440
 image_updated=2016-11-20
 value=3.521
 rarity=U

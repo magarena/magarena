@@ -1,5 +1,5 @@
 name=Blinding Light
-image=https://magiccards.info/scans/en/in/9.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/882c1e15-b508-4885-9626-4c8d2598a006.jpg?1562922528
 value=3.766
 rarity=U
 type=Sorcery

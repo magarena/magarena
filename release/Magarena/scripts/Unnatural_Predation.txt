@@ -1,5 +1,5 @@
 name=Unnatural Predation
-image=https://magiccards.info/scans/en/mbs/93.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2798fdff-0b39-41b6-b0ec-c4f449ca3314.jpg?1562610240
 value=2.965
 rarity=C
 type=Instant

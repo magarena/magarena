@@ -1,5 +1,5 @@
 name=Facevaulter
-image=https://magiccards.info/scans/en/mma/85.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1a25f62-0ef5-4941-b9af-1ce1a63fb5e8.jpg?1561968064
 value=2.875
 rarity=C
 type=Creature

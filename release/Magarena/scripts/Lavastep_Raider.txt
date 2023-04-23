@@ -1,5 +1,5 @@
 name=Lavastep Raider
-image=https://magiccards.info/scans/en/bfz/147.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/2428f13f-c445-4eb4-bab1-309f27cab208.jpg?1562903543
 image_updated=2015-11-08
 value=2.500
 rarity=C

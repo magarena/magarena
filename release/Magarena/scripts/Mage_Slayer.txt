@@ -1,5 +1,5 @@
 name=Mage Slayer
-image=https://magiccards.info/scans/en/arb/57.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3226808-493e-4df2-9446-cb7cb47aaf2c.jpg?1651656183
 image_updated=2016-12-23
 value=3.823
 rarity=U

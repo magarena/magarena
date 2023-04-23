@@ -1,5 +1,5 @@
 name=Roc Egg
-image=https://magiccards.info/scans/en/m12/32.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a84a12d7-ffb3-4c05-973f-e00fbc2ab6c4.jpg?1568003903
 value=3.163
 rarity=U
 type=Creature

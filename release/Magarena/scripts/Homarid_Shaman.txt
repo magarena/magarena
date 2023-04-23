@@ -1,5 +1,5 @@
 name=Homarid Shaman
-image=https://magiccards.info/scans/en/fe/42.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c17c6416-86d6-46ea-aea1-41b98a66b250.jpg?1587910868
 value=3.537
 rarity=R
 type=Creature

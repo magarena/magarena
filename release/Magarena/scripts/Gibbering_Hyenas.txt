@@ -1,5 +1,5 @@
 name=Gibbering Hyenas
-image=https://magiccards.info/scans/en/mr/117.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a252a1f5-bba5-4525-8141-57caea9624e9.jpg?1562720953
 value=2.382
 rarity=C
 type=Creature

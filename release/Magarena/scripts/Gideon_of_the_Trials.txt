@@ -1,5 +1,5 @@
 name=Gideon of the Trials
-image=https://magiccards.info/scans/en/akh/14.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/959ce13f-519f-4472-bbd1-f26a972723d7.jpg?1543674653
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

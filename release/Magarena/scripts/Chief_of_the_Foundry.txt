@@ -1,5 +1,5 @@
 name=Chief of the Foundry
-image=https://magiccards.info/scans/en/kld/200.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf306f7f-b231-4343-807c-083df8b90c87.jpg?1599708804
 image_updated=2017-09-01
 value=2.500
 rarity=U

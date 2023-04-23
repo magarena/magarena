@@ -1,5 +1,5 @@
 name=Blood Reckoning
-image=https://magiccards.info/scans/en/m13/81.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24577bb2-61b0-4675-84e6-5d675b28fc0e.jpg?1562551499
 value=2.692
 rarity=U
 type=Enchantment

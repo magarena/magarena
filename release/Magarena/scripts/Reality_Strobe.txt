@@ -1,5 +1,5 @@
 name=Reality Strobe
-image=https://magiccards.info/scans/en/fut/43.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e6d881a-f7b1-471f-bc0b-64a79bb491c9.jpg?1562923752
 value=3.518
 rarity=U
 type=Sorcery

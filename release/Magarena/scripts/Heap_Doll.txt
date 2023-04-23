@@ -1,5 +1,5 @@
 name=Heap Doll
-image=https://magiccards.info/scans/en/shm/253.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d09a887-958c-4a63-81d6-f5ec484223c2.jpg?1547518441
 value=3.647
 rarity=U
 type=Artifact,Creature

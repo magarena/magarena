@@ -1,5 +1,5 @@
 name=Combat Medic
-image=https://magiccards.info/scans/en/at/74.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97cc7e09-315f-44fd-b7ce-03d4c18d88be.jpg?1562869974
 value=2.533
 rarity=C
 type=Creature

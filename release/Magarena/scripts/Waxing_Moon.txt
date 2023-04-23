@@ -1,5 +1,5 @@
 name=Waxing Moon
-image=https://magiccards.info/scans/en/emn/177.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/617f9f3a-61a1-4c73-8efe-3d74fe362901.jpg?1576384942
 image_updated=2016-09-05
 value=2.500
 rarity=C

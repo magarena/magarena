@@ -1,5 +1,5 @@
 name=Joraga Warcaller
-image=https://magiccards.info/scans/en/c14/203.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa125071-ced8-4ccc-bbff-a2cbff13b9d2.jpg?1592673034
 value=4.166
 rarity=R
 type=Creature

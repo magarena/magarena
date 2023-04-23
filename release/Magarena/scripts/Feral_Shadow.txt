@@ -1,5 +1,5 @@
 name=Feral Shadow
-image=https://magiccards.info/scans/en/6e/131.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fea3941-ece4-4219-8ad9-cf6a97533aeb.jpg?1562874053
 value=2.783
 rarity=C
 type=Creature

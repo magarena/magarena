@@ -1,5 +1,5 @@
 name=Custody Battle
-image=https://magiccards.info/scans/en/on/197.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b72257f5-0cf9-45ca-8dc7-a1a93bd7dd1e.jpg?1562938173
 value=3.661
 rarity=U
 type=Enchantment

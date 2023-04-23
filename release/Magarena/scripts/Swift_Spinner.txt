@@ -1,5 +1,5 @@
 name=Swift Spinner
-image=https://magiccards.info/scans/en/emn/173.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/264f78d8-d554-45f3-867e-19dba38e4644.jpg?1576384898
 image_updated=2016-09-05
 value=2.500
 rarity=C

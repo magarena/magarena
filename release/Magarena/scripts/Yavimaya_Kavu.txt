@@ -1,5 +1,5 @@
 name=Yavimaya Kavu
-image=https://magiccards.info/scans/en/in/291.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/1872f104-7cf1-41e3-b1b4-ca75c678e08b.jpg?1562899872
 value=3.378
 rarity=U
 type=Creature

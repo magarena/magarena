@@ -1,5 +1,5 @@
 name=Ghastly Discovery
-image=https://magiccards.info/scans/en/shm/39.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dbd510a-d71f-4b0c-bc6c-e403f632cbdb.jpg?1562833796
 value=2.737
 rarity=C
 type=Sorcery

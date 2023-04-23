@@ -1,5 +1,5 @@
 name=Charging Griffin
-image=https://magiccards.info/scans/en/ori/9.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d86bd259-bc2f-402c-9e7a-030f9a3781e2.jpg?1562044634
 image_updated=2015-11-05
 value=2.500
 rarity=C

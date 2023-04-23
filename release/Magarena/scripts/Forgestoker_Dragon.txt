@@ -1,5 +1,5 @@
 name=Forgestoker Dragon
-image=https://magiccards.info/scans/en/bng/98.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fd44170-ded7-4895-8950-bfa9d19e471d.jpg?1593092247
 value=3.542
 rarity=R
 type=Creature

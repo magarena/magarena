@@ -1,5 +1,5 @@
 name=Golden Demise
-image=https://magiccards.info/scans/en/rix/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88bb420a-8bf1-4504-b1b5-2d929be978be.jpg?1555040232
 value=2.500
 rarity=U
 type=Sorcery

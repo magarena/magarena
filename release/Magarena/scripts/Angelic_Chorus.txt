@@ -1,5 +1,5 @@
 name=Angelic Chorus
-image=https://magiccards.info/scans/en/10e/4.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9e966cb-bb42-49d8-b351-114619b31497.jpg?1562938832
 value=4.069
 rarity=R
 type=Enchantment

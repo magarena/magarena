@@ -1,5 +1,5 @@
 name=Hinterland Harbor
-image=https://magiccards.info/scans/en/dom/240.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d631d040-51e9-4540-91e7-aeb5ade84090.jpg?1562743677
 image_updated=2018-08-07
 value=3.887
 rarity=R

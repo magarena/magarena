@@ -1,5 +1,5 @@
 name=Admonition Angel
-image=https://magiccards.info/scans/en/wwk/1.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6e7713d-6054-46a7-a8bc-f09e7a81a571.jpg?1604195494
 value=3.992
 rarity=M
 type=Creature

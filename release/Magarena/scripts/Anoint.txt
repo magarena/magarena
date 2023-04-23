@@ -1,5 +1,5 @@
 name=Anoint
-image=https://magiccards.info/scans/en/tp/215.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/193af7bd-547b-489b-bf21-6a2873311afc.jpg?1562428636
 value=1.955
 rarity=C
 type=Instant

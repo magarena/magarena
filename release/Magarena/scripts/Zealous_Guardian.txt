@@ -1,5 +1,5 @@
 name=Zealous Guardian
-image=https://magiccards.info/scans/en/shm/157.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9951214b-43a9-4c51-bbb4-05bac81b9866.jpg?1562833589
 value=3.270
 rarity=C
 type=Creature

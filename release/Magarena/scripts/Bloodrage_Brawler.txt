@@ -1,5 +1,5 @@
 name=Bloodrage Brawler
-image=https://magiccards.info/scans/en/akh/121.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3b633bf-a77e-4b78-b729-a83896abf17c.jpg?1600702025
 value=2.500
 rarity=U
 type=Creature

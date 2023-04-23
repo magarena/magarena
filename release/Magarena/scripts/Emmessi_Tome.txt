@@ -1,5 +1,5 @@
 name=Emmessi Tome
-image=https://magiccards.info/scans/en/ema/221.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/decb78dd-03d7-43a0-8ff5-1b97c6f515c9.jpg?1580015192
 value=1.595
 rarity=U
 type=Artifact

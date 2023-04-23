@@ -1,5 +1,5 @@
 name=Dragon Arch
-image=https://magiccards.info/scans/en/ap/135.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2312a56-088f-42f9-9bd2-7b0b94935236.jpg?1673149361
 value=4.425
 rarity=U
 type=Artifact

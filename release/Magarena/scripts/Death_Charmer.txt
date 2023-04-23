@@ -1,5 +1,5 @@
 name=Death Charmer
-image=https://magiccards.info/scans/en/pr/61.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e58a303a-9f7a-43e7-bcba-c58b378a53ce.jpg?1562937897
 value=3.400
 rarity=C
 type=Creature

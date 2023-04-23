@@ -1,5 +1,5 @@
 name=Stingscourger
-image=https://magiccards.info/scans/en/ema/149.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6bcc2bc-75a7-4b01-856b-4e0b8703e302.jpg?1619397667
 value=4.017
 removal=2
 rarity=C

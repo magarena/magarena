@@ -1,5 +1,5 @@
 name=Goham Djinn
-image=https://magiccards.info/scans/en/in/107.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d67796c7-4d93-4c50-8839-bb69e075bc42.jpg?1562938029
 value=2.194
 rarity=U
 type=Creature

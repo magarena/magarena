@@ -1,5 +1,5 @@
 name=Battle Squadron
-image=https://magiccards.info/scans/en/ema/118.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01c3c73d-03e8-4afc-bbfd-08fc87808012.jpg?1592764744
 value=4.044
 rarity=U
 type=Creature

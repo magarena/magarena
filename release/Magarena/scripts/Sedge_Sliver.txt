@@ -1,5 +1,5 @@
 name=Sedge Sliver
-image=https://magiccards.info/scans/en/ts/177.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0af3c6b1-9139-46a3-ad41-91aabbdda55f.jpg?1620236237
 value=4.129
 rarity=R
 type=Creature

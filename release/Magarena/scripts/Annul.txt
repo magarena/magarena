@@ -1,5 +1,5 @@
 name=Annul
-image=https://magiccards.info/scans/en/mi/29.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b1d4a59-11a0-4a55-8ac0-07377a9e6dc8.jpg?1631046631
 value=4.071
 rarity=C
 type=Instant

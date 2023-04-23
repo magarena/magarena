@@ -1,5 +1,5 @@
 name=Chameleon Colossus
-image=https://magiccards.info/scans/en/mt/116.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15401ca4-f6cd-400e-8e5e-ea47493b56a4.jpg?1631587790
 image_updated=2016-12-13
 value=3.882
 rarity=R

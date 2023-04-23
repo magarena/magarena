@@ -1,5 +1,5 @@
 name=Beacon of Immortality
-image=https://magiccards.info/scans/en/10e/10.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0b9b5da-d3fa-4d70-a71a-a2342dbfd527.jpg?1562557566
 value=4.271
 rarity=R
 type=Instant

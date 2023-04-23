@@ -1,5 +1,5 @@
 name=Flowstone Giant
-image=https://magiccards.info/scans/en/tp/174.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46e8240a-d882-4f60-8960-1856284e04a0.jpg?1562053769
 value=2.486
 rarity=C
 type=Creature

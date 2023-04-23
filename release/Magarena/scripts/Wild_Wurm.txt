@@ -1,5 +1,5 @@
 name=Wild Wurm
-image=https://magiccards.info/scans/en/tp/212.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5a1b213-cba0-4eca-b058-93f4fde717c8.jpg?1596615976
 value=2.341
 rarity=U
 type=Creature

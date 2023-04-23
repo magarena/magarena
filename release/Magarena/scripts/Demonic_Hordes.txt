@@ -1,5 +1,5 @@
 name=Demonic Hordes
-image=https://magiccards.info/scans/en/rv/12.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfd1442d-ac66-4475-8704-1eaaa76f4365.jpg?1562948301
 value=4.011
 rarity=R
 type=Creature

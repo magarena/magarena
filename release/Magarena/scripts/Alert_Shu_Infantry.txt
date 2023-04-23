@@ -1,5 +1,5 @@
 name=Alert Shu Infantry
-image=https://magiccards.info/scans/en/p3k/1.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c94a92a9-060e-42d3-a8d1-49425defc08a.jpg?1562257537
 value=2.737
 rarity=U
 type=Creature

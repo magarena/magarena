@@ -1,5 +1,5 @@
 name=Harrow
-image=https://magiccards.info/scans/en/c14/199.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8095ca6-2f5f-497f-8b78-7e530ac31d22.jpg?1604194124
 value=4.206
 rarity=C
 type=Instant

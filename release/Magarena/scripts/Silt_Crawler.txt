@@ -1,5 +1,5 @@
 name=Silt Crawler
-image=https://magiccards.info/scans/en/pr/123.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f334e864-4e62-4bc3-9470-661be3d879e2.jpg?1562940692
 value=2.875
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vile Deacon
-image=https://magiccards.info/scans/en/le/85.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2641bd5-c845-47a1-8038-bb28b06f896e.jpg?1562930921
 value=3.968
 rarity=C
 type=Creature

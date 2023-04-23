@@ -1,5 +1,5 @@
 name=Dying Wail
-image=https://magiccards.info/scans/en/ud/58.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a25a472-495e-4062-b66f-c37f148b494f.jpg?1562443739
 value=2.900
 rarity=C
 type=Enchantment

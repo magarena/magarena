@@ -1,5 +1,5 @@
 name=Starstorm
-image=https://magiccards.info/scans/en/c14/182.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/728b356a-e2ec-4c44-bd0a-bb9a5427a1ad.jpg?1651655893
 value=4.000
 rarity=R
 type=Instant

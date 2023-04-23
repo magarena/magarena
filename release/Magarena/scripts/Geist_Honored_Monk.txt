@@ -1,5 +1,5 @@
 name=Geist-Honored Monk
-image=https://magiccards.info/scans/en/c14/72.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d09ef1d-3552-43a3-91c7-0d14c0f06780.jpg?1631234027
 value=3.841
 rarity=R
 type=Creature

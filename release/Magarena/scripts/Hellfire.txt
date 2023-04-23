@@ -1,5 +1,5 @@
 name=Hellfire
-image=https://magiccards.info/scans/en/lg/18.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e66002e6-f722-429c-94a0-f571d9110fbd.jpg?1562943590
 value=4.182
 rarity=R
 type=Sorcery

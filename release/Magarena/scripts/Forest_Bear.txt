@@ -1,5 +1,5 @@
 name=Forest Bear
-image=https://magiccards.info/scans/en/p3k/135.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fae9abc7-ecd3-4042-a5b0-5f2b24491fa6.jpg?1562258009
 value=2.957
 rarity=C
 type=Creature

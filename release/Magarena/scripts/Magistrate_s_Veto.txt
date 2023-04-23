@@ -1,5 +1,5 @@
 name=Magistrate's Veto
-image=https://magiccards.info/scans/en/mm/204.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f83d39e-bf49-4968-829e-c0e9abf2fb86.jpg?1562379915
 value=3.879
 rarity=U
 type=Enchantment

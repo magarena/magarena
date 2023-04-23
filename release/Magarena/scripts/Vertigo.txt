@@ -1,5 +1,5 @@
 name=Vertigo
-image=https://magiccards.info/scans/en/6e/212.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a58ac6a-095e-47d7-ba42-56d148e3c6b9.jpg?1562814425
 value=2.362
 rarity=U
 type=Instant

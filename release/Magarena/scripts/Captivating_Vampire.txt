@@ -1,5 +1,5 @@
 name=Captivating Vampire
-image=https://magiccards.info/scans/en/c17/104.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b825bd1-9cbc-45a8-bfbe-fc3e8fdc575e.jpg?1562601552
 image_updated=2017-10-03
 value=3.794
 rarity=R

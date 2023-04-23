@@ -1,5 +1,5 @@
 name=Earth Elemental
-image=https://magiccards.info/scans/en/ima/127.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/659eeb25-b79b-4229-9d84-e28f6a636958.jpg?1562915626
 image_updated=2017-04-12
 value=2.763
 rarity=C

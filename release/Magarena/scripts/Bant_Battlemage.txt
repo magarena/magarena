@@ -1,5 +1,5 @@
 name=Bant Battlemage
-image=https://magiccards.info/scans/en/ala/5.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c597b1d-d8b5-4922-a3f2-1f173a73ea2a.jpg?1562702304
 value=3.000
 rarity=U
 type=Creature

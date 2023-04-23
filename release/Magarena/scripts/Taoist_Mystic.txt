@@ -1,5 +1,5 @@
 name=Taoist Mystic
-image=https://magiccards.info/scans/en/p3k/151.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/023ae64a-7888-4ad2-b879-0649d8e341ac.jpg?1562255815
 value=1.829
 rarity=R
 type=Creature

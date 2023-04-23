@@ -1,5 +1,5 @@
 name=Mox Emerald
-image=https://magiccards.info/scans/en/un/262.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/aced2c55-7543-4076-bcdd-36c4d649b8ae.jpg?1614638841
 value=4.875
 rarity=R
 type=Artifact

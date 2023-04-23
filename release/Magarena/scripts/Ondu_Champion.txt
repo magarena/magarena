@@ -1,5 +1,5 @@
 name=Ondu Champion
-image=https://magiccards.info/scans/en/bfz/149.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/708e1979-902b-410a-ae46-3fd1d2acc31d.jpg?1562921519
 image_updated=2015-11-08
 value=2.500
 rarity=C

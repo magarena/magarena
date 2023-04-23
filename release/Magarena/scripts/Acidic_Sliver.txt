@@ -1,5 +1,5 @@
 name=Acidic Sliver
-image=https://magiccards.info/scans/en/sh/138.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0b3ecf1-5c00-4aa0-92fd-54829495a3cf.jpg?1562431742
 value=3.976
 rarity=U
 type=Creature

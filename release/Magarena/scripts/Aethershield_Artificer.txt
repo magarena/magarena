@@ -1,5 +1,5 @@
 name=Aethershield Artificer
-image=https://magiccards.info/scans/en/m19/2.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/226f7c45-db9f-4d48-b575-4d2f1904c963.jpg?1562300805
 value=2.500
 rarity=U
 type=Creature

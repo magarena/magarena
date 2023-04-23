@@ -1,5 +1,5 @@
 name=Prophet of Distortion
-image=https://magiccards.info/scans/en/ogw/46.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03ee2d7e-50ee-4f5a-b787-cf9669a892f3.jpg?1562895775
 image_updated=2016-02-29
 value=2.500
 rarity=U

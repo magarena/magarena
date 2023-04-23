@@ -1,5 +1,5 @@
 name=To Arms!
-image=https://magiccards.info/scans/en/gp/20.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f72d4b7-3b65-411b-a072-8218a0202974.jpg?1593271955
 value=4.106
 rarity=U
 type=Instant

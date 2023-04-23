@@ -1,5 +1,5 @@
 name=Siren Song Lyre
-image=https://magiccards.info/scans/en/bng/161.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfeca720-3163-4391-b90d-5f7aa5f5987b.jpg?1593092887
 value=2.571
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Champion of the Parish
-image=https://magiccards.info/scans/en/isd/6.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec2120ff-a6d4-4192-96c0-33c139155ddf.jpg?1592762531
 value=4.014
 rarity=R
 type=Creature

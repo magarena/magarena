@@ -1,5 +1,5 @@
 name=Implement of Ferocity
-image=https://magiccards.info/scans/en/aer/157.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcdee084-0d1a-486a-8361-680d394a5e23.jpg?1576382289
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Diabolic Machine
-image=https://magiccards.info/scans/en/5e/363.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82e90d11-dde3-4aaa-b21c-79ea480447ee.jpg?1562925896
 value=2.130
 rarity=U
 type=Artifact,Creature

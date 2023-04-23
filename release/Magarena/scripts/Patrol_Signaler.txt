@@ -1,5 +1,5 @@
 name=Patrol Signaler
-image=https://magiccards.info/scans/en/eve/12.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3fd4ccb-e632-4fa0-8e36-6103806f020c.jpg?1562932980
 value=2.915
 rarity=U
 type=Creature

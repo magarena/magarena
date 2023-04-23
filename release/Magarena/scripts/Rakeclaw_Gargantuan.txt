@@ -1,5 +1,5 @@
 name=Rakeclaw Gargantuan
-image=https://magiccards.info/scans/en/ala/186.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a158bb17-d2e0-416d-840a-5e25fb5ac5c1.jpg?1562929038
 value=3.542
 rarity=C
 type=Creature

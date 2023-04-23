@@ -1,5 +1,5 @@
 name=Draco
-image=https://magiccards.info/scans/en/ps/131.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/212e3edb-62f1-4680-884f-70323547f8ad.jpg?1562902012
 value=4.235
 rarity=R
 type=Artifact,Creature

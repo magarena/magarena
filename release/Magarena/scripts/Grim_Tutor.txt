@@ -1,5 +1,5 @@
 name=Grim Tutor
-image=https://magiccards.info/scans/en/st/79.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/928558ab-e29a-44cb-ac2f-88443571f41a.jpg?1594736179
 value=4.355
 rarity=R
 type=Sorcery

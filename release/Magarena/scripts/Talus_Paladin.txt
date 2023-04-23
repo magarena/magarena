@@ -1,5 +1,5 @@
 name=Talus Paladin
-image=https://magiccards.info/scans/en/wwk/21.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f5212f4-f04c-4ca3-b254-654bb263829b.jpg?1562286841
 value=3.577
 rarity=R
 type=Creature

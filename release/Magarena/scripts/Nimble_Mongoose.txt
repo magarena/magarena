@@ -1,5 +1,5 @@
 name=Nimble Mongoose
-image=https://magiccards.info/scans/en/ema/179.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a6374ad-71be-422e-bd76-4f08fbf43048.jpg?1562202145
 value=4.476
 rarity=C
 type=Creature

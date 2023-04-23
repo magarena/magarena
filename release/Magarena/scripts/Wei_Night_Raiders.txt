@@ -1,5 +1,5 @@
 name=Wei Night Raiders
-image=https://magiccards.info/scans/en/p3k/89.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ee86c30-4828-40e4-a2c4-69b6005e1eba.jpg?1562921753
 value=3.485
 rarity=U
 type=Creature

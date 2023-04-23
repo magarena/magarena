@@ -1,5 +1,5 @@
 name=Lady Orca
-image=https://magiccards.info/scans/en/lg/281.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db766e38-5407-431c-bcf4-f33791a7e5f9.jpg?1562941368
 value=1.574
 rarity=U
 type=Legendary,Creature

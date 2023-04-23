@@ -1,5 +1,5 @@
 name=Flesh Carver
-image=https://magiccards.info/scans/en/c14/22.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf0f88d9-681c-4152-bb45-628850717430.jpg?1561959299
 value=2.500
 rarity=R
 type=Creature

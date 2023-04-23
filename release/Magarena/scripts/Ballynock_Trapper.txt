@@ -1,5 +1,5 @@
 name=Ballynock Trapper
-image=https://magiccards.info/scans/en/eve/2.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b10d37b-2cbc-4061-b25a-ad8ff3944ad3.jpg?1562917395
 value=3.268
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dream Stalker
-image=https://magiccards.info/scans/en/ts/58.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e59b4729-74c1-4aa9-937d-27cda960f157.jpg?1619394056
 value=3.778
 rarity=C
 type=Creature

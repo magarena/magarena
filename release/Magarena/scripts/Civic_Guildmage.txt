@@ -1,5 +1,5 @@
 name=Civic Guildmage
-image=https://magiccards.info/scans/en/mr/211.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9319039-db2f-47bf-9ef0-8d3a381d54fb.jpg?1562720965
 value=2.438
 rarity=C
 type=Creature

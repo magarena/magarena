@@ -1,5 +1,5 @@
 name=Arbiter of Knollridge
-image=https://magiccards.info/scans/en/cmd/6.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fc2e7c4-5dbe-49f4-8c3f-192e7544df74.jpg?1562272885
 image_updated=2016-02-29
 value=2.984
 rarity=R

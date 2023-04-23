@@ -1,5 +1,5 @@
 name=Caustic Caterpillar
-image=https://magiccards.info/scans/en/ori/170.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f03d4e0d-bddd-4835-91b8-11c2f15e54c3.jpg?1562048838
 image_updated=2015-11-05
 value=2.500
 rarity=C

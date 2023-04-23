@@ -1,5 +1,5 @@
 name=War Falcon
-image=https://magiccards.info/scans/en/m13/38.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e092a0d-c031-4a76-86c1-7f83878a06e8.jpg?1562556085
 value=3.685
 rarity=C
 type=Creature

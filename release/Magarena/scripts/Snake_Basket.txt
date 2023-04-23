@@ -1,5 +1,5 @@
 name=Snake Basket
-image=https://magiccards.info/scans/en/6e/312.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a9bc174-1d10-49bf-af4f-2f6061b1796e.jpg?1562816577
 image_updated=2015-06-04
 value=3.910
 rarity=R

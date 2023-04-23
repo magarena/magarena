@@ -1,5 +1,5 @@
 name=Cast Down
-image=https://magiccards.info/scans/en/dom/81.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/aba79021-39af-4e74-beb5-f2f508c865b2.jpg?1674136020
 value=2.500
 rarity=U
 type=Instant

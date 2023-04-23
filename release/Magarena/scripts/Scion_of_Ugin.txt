@@ -1,5 +1,5 @@
 name=Scion of Ugin
-image=https://magiccards.info/scans/en/ima/1.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2904aaaa-cd25-4c05-9d57-4c5a951ac6d9.jpg?1562846945
 image_updated=2017-04-12
 value=2.500
 rarity=C

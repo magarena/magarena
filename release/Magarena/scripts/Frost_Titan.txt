@@ -1,5 +1,5 @@
 name=Frost Titan
-image=https://magiccards.info/scans/en/c14/112.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb9eec79-1926-46eb-b9e0-6ba12a441495.jpg?1561956629
 value=4.137
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Seraph Sanctuary
-image=https://magiccards.info/scans/en/avr/228.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1c1fa29-362f-40b4-b67f-513f6592fb3b.jpg?1592762924
 value=2.920
 rarity=C
 type=Land

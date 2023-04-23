@@ -1,5 +1,5 @@
 name=Voracious Cobra
-image=https://magiccards.info/scans/en/in/288.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d8c5669-11a9-4d95-8431-7065037f1fb6.jpg?1562926724
 value=4.256
 rarity=U
 type=Creature

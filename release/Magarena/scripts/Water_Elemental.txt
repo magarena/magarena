@@ -1,5 +1,5 @@
 name=Water Elemental
-image=https://magiccards.info/scans/en/st/60.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d574bf9-f3e6-4b8e-a3bc-22706c3bb3ec.jpg?1562932139
 value=2.885
 rarity=U
 type=Creature

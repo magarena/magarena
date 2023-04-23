@@ -1,5 +1,5 @@
 name=Walking Wall
-image=https://magiccards.info/scans/en/ia/321.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a837483-ae0f-4060-910d-1aa272e679ed.jpg?1559592448
 value=2.567
 rarity=U
 type=Artifact,Creature

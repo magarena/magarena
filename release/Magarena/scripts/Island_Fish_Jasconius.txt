@@ -1,5 +1,5 @@
 name=Island Fish Jasconius
-image=https://magiccards.info/scans/en/4e/78.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84f18188-70fa-433e-a114-2f1dd49388ed.jpg?1559603739
 value=1.863
 rarity=R
 type=Creature

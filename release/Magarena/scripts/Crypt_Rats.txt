@@ -1,5 +1,5 @@
 name=Crypt Rats
-image=https://magiccards.info/scans/en/7e/125.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96916db2-5121-4ff1-880c-369744f11ecf.jpg?1562201594
 value=4.255
 rarity=U
 type=Creature

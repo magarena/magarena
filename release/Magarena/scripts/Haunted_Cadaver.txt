@@ -1,5 +1,5 @@
 name=Haunted Cadaver
-image=https://magiccards.info/scans/en/on/154.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a164420c-3619-4f5e-81cf-2aa5a4553bc3.jpg?1562933106
 value=3.329
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Transcendence
-image=https://magiccards.info/scans/en/tr/20.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84e8bee2-9e3d-493c-a937-645bf3dcf0db.jpg?1574250448
 value=3.597
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Cavalry Drillmaster
-image=https://magiccards.info/scans/en/m19/8.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62d2e929-7ae3-4560-9cfa-53b89c8a6016.jpg?1562302622
 value=2.500
 rarity=C
 type=Creature

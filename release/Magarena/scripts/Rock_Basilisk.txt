@@ -1,5 +1,5 @@
 name=Rock Basilisk
-image=https://magiccards.info/scans/en/mr/339.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79949237-dcce-4ac1-bdc6-7c6d8b5f5fde.jpg?1562720235
 value=3.203
 rarity=R
 type=Creature

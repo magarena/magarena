@@ -1,5 +1,5 @@
 name=Dwarven Scorcher
-image=https://magiccards.info/scans/en/ju/86.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/099873b1-7181-4b9d-8ce1-8ec63c814afe.jpg?1562628571
 value=2.828
 rarity=C
 type=Creature

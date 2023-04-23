@@ -1,5 +1,5 @@
 name=Banishing Knack
-image=https://magiccards.info/scans/en/eve/17.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/371a769a-ddae-47f6-b2c2-957de5c18417.jpg?1562906597
 value=3.426
 rarity=C
 type=Instant

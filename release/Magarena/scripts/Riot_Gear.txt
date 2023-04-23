@@ -1,5 +1,5 @@
 name=Riot Gear
-image=https://magiccards.info/scans/en/gtc/236.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3be1289-76f9-40b3-9387-b76a8b8d8797.jpg?1561847678
 value=1.670
 rarity=C
 type=Artifact

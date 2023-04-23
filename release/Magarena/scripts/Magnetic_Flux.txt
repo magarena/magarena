@@ -1,5 +1,5 @@
 name=Magnetic Flux
-image=https://magiccards.info/scans/en/ds/25.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03ab7022-fa0f-42da-b0ca-998cbd0c791c.jpg?1562635194
 value=1.784
 rarity=C
 type=Instant

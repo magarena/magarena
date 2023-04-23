@@ -1,5 +1,5 @@
 name=Ogre's Cleaver
-image=https://magiccards.info/scans/en/roe/220.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec319380-bede-49e8-9d0c-473688033601.jpg?1562709979
 value=2.892
 rarity=U
 type=Artifact

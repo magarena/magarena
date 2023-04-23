@@ -1,5 +1,5 @@
 name=Serra Disciple
-image=https://magiccards.info/scans/en/dom/34.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/8359c3a8-d826-4326-a899-9f60ca774308.jpg?1562738741
 value=2.500
 rarity=C
 type=Creature

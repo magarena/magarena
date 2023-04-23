@@ -1,5 +1,5 @@
 name=Sylvan Yeti
-image=https://magiccards.info/scans/en/st/146.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/096e7d5a-d998-4ef7-b34f-986aa69c526b.jpg?1562873135
 value=3.250
 rarity=R
 type=Creature

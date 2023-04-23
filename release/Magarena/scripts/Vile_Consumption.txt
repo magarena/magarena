@@ -1,5 +1,5 @@
 name=Vile Consumption
-image=https://magiccards.info/scans/en/in/285.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f7e5716-77f3-45d2-a40a-f5bf500f6ad7.jpg?1562920730
 value=4.263
 rarity=R
 type=Enchantment

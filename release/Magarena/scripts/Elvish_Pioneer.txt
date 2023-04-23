@@ -1,5 +1,5 @@
 name=Elvish Pioneer
-image=https://magiccards.info/scans/en/8e/243.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88244522-1cf3-40a6-9ff7-bb78f2151b60.jpg?1562922522
 value=3.804
 rarity=C
 type=Creature

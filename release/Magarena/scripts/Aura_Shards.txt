@@ -1,5 +1,5 @@
 name=Aura Shards
-image=https://magiccards.info/scans/en/cmd/182.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6222cc6-996e-4b73-af87-e837bf1eb921.jpg?1592713940
 value=4.326
 rarity=U
 type=Enchantment

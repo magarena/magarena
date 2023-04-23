@@ -1,5 +1,5 @@
 name=Foratog
-image=https://magiccards.info/scans/en/8e/249.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d621fad-3a50-4910-a302-23ae9e77ebde.jpg?1562913940
 value=2.181
 rarity=U
 type=Creature

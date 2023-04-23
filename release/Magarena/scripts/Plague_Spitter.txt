@@ -1,5 +1,5 @@
 name=Plague Spitter
-image=https://magiccards.info/scans/en/in/119.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a82559e5-110b-4c6a-956a-7cba83788dc8.jpg?1674141759
 value=4.246
 rarity=U
 type=Creature

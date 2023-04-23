@@ -1,5 +1,5 @@
 name=Innocence Kami
-image=https://magiccards.info/scans/en/chk/18.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df62efbb-2313-4667-82e6-3b474d998ef5.jpg?1562765144
 value=1.919
 rarity=U
 type=Creature

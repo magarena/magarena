@@ -1,5 +1,5 @@
 name=Devout Chaplain
-image=https://magiccards.info/scans/en/avr/17.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4be0f70c-6bee-4208-8111-735b2fa31b4d.jpg?1591320030
 value=3.351
 rarity=U
 type=Creature

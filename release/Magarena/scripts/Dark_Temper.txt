@@ -1,5 +1,5 @@
 name=Dark Temper
-image=https://magiccards.info/scans/en/cfx/61.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3209997-8cdc-40e9-9e95-92a0f33e7f8e.jpg?1562804279
 value=2.918
 rarity=C
 type=Instant

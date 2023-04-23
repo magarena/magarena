@@ -1,5 +1,5 @@
 name=Queen's Agent
-image=https://magiccards.info/scans/en/xln/114.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/3562f65a-bd69-47e4-9d9d-ab5c2c6ceb35.jpg?1562553265
 value=2.500
 rarity=C
 type=Creature

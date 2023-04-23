@@ -1,5 +1,5 @@
 name=Fatal Fumes
-image=https://magiccards.info/scans/en/dgm/24.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/967aa636-a11d-4c5c-ba85-648734b295c2.jpg?1562922953
 value=1.680
 removal=2
 rarity=C

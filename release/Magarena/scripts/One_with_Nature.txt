@@ -1,5 +1,5 @@
 name=One with Nature
-image=https://magiccards.info/scans/en/sc/125.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2321b01c-7eef-48cc-a86b-4074dfa5b86b.jpg?1562526569
 value=3.912
 rarity=U
 type=Enchantment

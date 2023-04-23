@@ -1,5 +1,5 @@
 name=Ulamog's Crusher
-image=https://magiccards.info/scans/en/mm2/7.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/eda0fd38-38e6-4e9b-9c17-4d855e01b1e1.jpg?1547515341
 value=4.109
 rarity=C
 type=Creature

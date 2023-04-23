@@ -1,5 +1,5 @@
 name=Invoke the Firemind
-image=https://magiccards.info/scans/en/gp/118.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df4863dc-3545-4ee7-a3c8-beed109a7f38.jpg?1592713495
 value=3.886
 rarity=R
 type=Sorcery

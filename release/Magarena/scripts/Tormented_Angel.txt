@@ -1,5 +1,5 @@
 name=Tormented Angel
-image=https://magiccards.info/scans/en/ud/22.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00d4d751-50df-4d8f-a6d9-4e76797c429a.jpg?1562443313
 value=2.350
 rarity=C
 type=Creature

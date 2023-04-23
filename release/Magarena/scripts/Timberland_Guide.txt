@@ -1,5 +1,5 @@
 name=Timberland Guide
-image=https://magiccards.info/scans/en/ima/187.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b215b6a-82e3-4ce8-b288-d7341761cad0.jpg?1636224841
 image_updated=2017-04-12
 value=2.764
 rarity=C

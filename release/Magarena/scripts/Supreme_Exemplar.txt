@@ -1,5 +1,5 @@
 name=Supreme Exemplar
-image=https://magiccards.info/scans/en/mt/53.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bea92ba-d6e3-4fba-be81-86b10852a9d1.jpg?1562877625
 value=3.577
 removal=2
 rarity=R

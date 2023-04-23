@@ -1,5 +1,5 @@
 name=Goblin Cannon
-image=https://magiccards.info/scans/en/5dn/125.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b023c0cd-7046-418b-ad31-5c91c6930d45.jpg?1562879198
 value=2.582
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Reckless Reveler
-image=https://magiccards.info/scans/en/bng/106.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf7f2954-65f6-4944-ae68-8992cb0268f4.jpg?1562936706
 value=3.884
 rarity=C
 type=Creature

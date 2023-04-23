@@ -1,5 +1,5 @@
 name=Vodalian Knights
-image=https://magiccards.info/scans/en/fe/58.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/589353ee-27e9-4460-98ce-af5708517f41.jpg?1559592426
 value=2.735
 rarity=R
 type=Creature

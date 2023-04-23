@@ -1,5 +1,5 @@
 name=Crosstown Courier
-image=https://magiccards.info/scans/en/rtr/34.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d04e6d05-5ec8-4e7d-86b8-da9549dbaa5e.jpg?1592754378
 value=2.850
 rarity=C
 type=Creature

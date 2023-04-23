@@ -1,5 +1,5 @@
 name=Bone Shredder
-image=https://magiccards.info/scans/en/ul/49.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/7165a9ac-3f44-4d14-93bb-d4d4970ab41b.jpg?1682209005
 image_updated=2016-11-20
 value=3.625
 removal=1

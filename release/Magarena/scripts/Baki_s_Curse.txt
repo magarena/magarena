@@ -1,5 +1,5 @@
 name=Baki's Curse
-image=https://magiccards.info/scans/en/hl/27.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3261b4c-7963-4ca0-875d-77b7c8571b3f.jpg?1562588703
 value=1.830
 rarity=R
 type=Sorcery

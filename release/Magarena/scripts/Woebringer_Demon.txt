@@ -1,5 +1,5 @@
 name=Woebringer Demon
-image=https://magiccards.info/scans/en/rav/113.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0c758c9-3138-49b2-bebf-cdab5dc68a3d.jpg?1598915329
 value=3.344
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Reap and Sow
-image=https://magiccards.info/scans/en/ds/81.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff6c4ae7-8509-47a2-bc28-d131b1e6676c.jpg?1562640738
 value=3.671
 rarity=C
 type=Sorcery

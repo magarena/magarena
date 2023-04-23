@@ -1,5 +1,5 @@
 name=Exemplar of Strength
-image=https://magiccards.info/scans/en/akh/165.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d30501c5-f6d9-47b3-b12b-8bd1c5ea6a9b.jpg?1543675819
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Surge of Strength
-image=https://magiccards.info/scans/en/ai/197.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96fff700-af02-4861-b7ed-be9950e69bf1.jpg?1562769667
 value=3.329
 rarity=U
 type=Instant

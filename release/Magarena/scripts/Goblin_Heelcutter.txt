@@ -1,5 +1,5 @@
 name=Goblin Heelcutter
-image=https://magiccards.info/scans/en/frf/102.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b3bfeb6-95d6-4f00-8981-c6d3c9c93f67.jpg?1562825544
 value=2.5
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=War Chariot
-image=https://magiccards.info/scans/en/ia/323.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0ea0c6c-aa76-4b16-bc99-2ff46dc56d4e.jpg?1587912182
 value=2.036
 rarity=U
 type=Artifact

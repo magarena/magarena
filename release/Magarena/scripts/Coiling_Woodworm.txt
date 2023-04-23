@@ -1,5 +1,5 @@
 name=Coiling Woodworm
-image=https://magiccards.info/scans/en/ne/103.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/341a70be-2dbf-4365-9c7a-e52cb62a74fa.jpg?1562629312
 value=3.041
 rarity=U
 type=Creature

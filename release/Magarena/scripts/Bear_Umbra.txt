@@ -1,5 +1,5 @@
 name=Bear Umbra
-image=https://magiccards.info/scans/en/roe/177.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a195fb1-f2e9-4e05-8a04-c335e1afbef6.jpg?1651655917
 value=4.212
 rarity=R
 type=Enchantment

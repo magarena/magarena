@@ -1,5 +1,5 @@
 name=Suture Spirit
-image=https://magiccards.info/scans/en/eve/16.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08520f97-e7f5-45fc-9423-fa6a3a507671.jpg?1562896798
 value=2.979
 rarity=U
 type=Creature

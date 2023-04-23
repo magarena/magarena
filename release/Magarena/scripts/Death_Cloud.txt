@@ -1,5 +1,5 @@
 name=Death Cloud
-image=https://magiccards.info/scans/en/mma/76.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0870b88-2794-4646-9f51-f3af03bc8bc8.jpg?1561968089
 value=3.882
 rarity=R
 type=Sorcery

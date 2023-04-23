@@ -1,5 +1,5 @@
 name=Starlight Invoker
-image=https://magiccards.info/scans/en/10e/47.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8d2139e-76ea-49e2-ac43-6d9cc51ca09f.jpg?1562556032
 value=2.700
 rarity=U
 type=Creature

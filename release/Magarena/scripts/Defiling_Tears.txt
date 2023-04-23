@@ -1,5 +1,5 @@
 name=Defiling Tears
-image=https://magiccards.info/scans/en/in/99.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db7cba29-9472-4874-bd54-37edf70645b2.jpg?1562939101
 value=1.797
 rarity=U
 type=Instant

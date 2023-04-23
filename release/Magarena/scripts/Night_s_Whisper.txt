@@ -1,5 +1,5 @@
 name=Night's Whisper
-image=https://magiccards.info/scans/en/ema/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/221c82a2-b558-4c3a-b7ad-4452ef8e9067.jpg?1682209141
 value=4.478
 rarity=C
 type=Sorcery

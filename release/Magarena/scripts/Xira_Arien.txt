@@ -1,5 +1,5 @@
 name=Xira Arien
-image=https://magiccards.info/scans/en/lg/310.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef40264c-c194-440d-b87c-28548329f4cf.jpg?1562945450
 value=3.598
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Ixalli's Diviner
-image=https://magiccards.info/scans/en/xln/192.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b22b55f6-681f-45da-bc57-a0cf7b8f671d.jpg?1562562416
 value=2.500
 rarity=C
 type=Creature

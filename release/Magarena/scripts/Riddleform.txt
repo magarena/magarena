@@ -1,5 +1,5 @@
 name=Riddleform
-image=https://magiccards.info/scans/en/hou/43.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5acb8ef-5a57-4d10-b59c-2dbf84635084.jpg?1594735670
 value=2.500
 rarity=U
 type=Enchantment

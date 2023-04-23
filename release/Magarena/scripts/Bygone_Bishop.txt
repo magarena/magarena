@@ -1,5 +1,5 @@
 name=Bygone Bishop
-image=https://magiccards.info/scans/en/soi/8.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf879fc7-9f84-40a7-a7be-9cc98a720af5.jpg?1674141058
 value=2.500
 rarity=R
 type=Creature

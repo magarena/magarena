@@ -1,5 +1,5 @@
 name=Wind Strider
-image=https://magiccards.info/scans/en/xln/88.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/613a8ab1-9c5e-4b56-aa51-daeb8c1983b9.jpg?1562556389
 value=2.500
 rarity=C
 type=Creature

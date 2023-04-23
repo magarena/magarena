@@ -1,5 +1,5 @@
 name=Necropouncer
-image=https://magiccards.info/scans/en/nph/147.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4ed51dbc-bbec-4c78-a71e-26322a8d2439.jpg?1562877453
 value=2.566
 rarity=U
 type=Artifact

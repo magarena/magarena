@@ -1,5 +1,5 @@
 name=Shard Volley
-image=https://magiccards.info/scans/en/mt/103.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43db4810-078e-487a-afef-57cbc1db0cc7.jpg?1562878159
 value=2.811
 removal=3
 rarity=C

@@ -1,5 +1,5 @@
 name=Lurking Nightstalker
-image=https://magiccards.info/scans/en/po2/17.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/002715a3-b84f-40ba-8fa9-6b2854626f4d.jpg?1562895018
 value=3.500
 rarity=C
 type=Creature

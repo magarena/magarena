@@ -1,5 +1,5 @@
 name=Kamahl, Pit Fighter
-image=https://magiccards.info/scans/en/10e/214.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a65dd4d-f838-4964-bd5a-a517960cc644.jpg?1592761742
 image_updated=2016-09-12
 value=4.091
 rarity=R

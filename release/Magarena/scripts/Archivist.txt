@@ -1,5 +1,5 @@
 name=Archivist
-image=https://magiccards.info/scans/en/9e/60.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f025c11-feeb-429b-9518-f24d70596601.jpg?1562733199
 value=3.875
 rarity=R
 type=Creature

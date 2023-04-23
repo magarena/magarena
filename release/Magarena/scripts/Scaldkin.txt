@@ -1,5 +1,5 @@
 name=Scaldkin
-image=https://magiccards.info/scans/en/ktk/52.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8110eb0a-63dc-43df-b55a-9241f45b1cc6.jpg?1562789336
 value=2.000
 rarity=C
 type=Creature

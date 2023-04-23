@@ -1,5 +1,5 @@
 name=Apprentice Necromancer
-image=https://magiccards.info/scans/en/c17/97.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18d86ad3-e0a1-43da-9dc1-a9028b719c99.jpg?1547516732
 image_updated=2017-10-03
 value=4.085
 rarity=R

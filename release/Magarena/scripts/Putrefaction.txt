@@ -1,5 +1,5 @@
 name=Putrefaction
-image=https://magiccards.info/scans/en/mm/153.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65104b23-58a6-41c0-b887-90a3fb959289.jpg?1562381336
 value=2.391
 rarity=U
 type=Enchantment

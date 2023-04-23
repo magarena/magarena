@@ -1,5 +1,5 @@
 name=Demonic Rising
-image=https://magiccards.info/scans/en/avr/94.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2136a82-b535-47f6-9eee-5b7585ac5cf1.jpg?1592708815
 value=3.081
 rarity=R
 type=Enchantment

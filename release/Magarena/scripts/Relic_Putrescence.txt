@@ -1,5 +1,5 @@
 name=Relic Putrescence
-image=https://magiccards.info/scans/en/som/77.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca940b4e-6f5e-4492-b6e0-dbf619eddadd.jpg?1562823021
 value=2.250
 rarity=C
 type=Enchantment

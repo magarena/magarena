@@ -1,5 +1,5 @@
 name=Headhunter
-image=https://magiccards.info/scans/en/on/156.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cbd82d5-d64f-4833-b1a9-9652fcfa1578.jpg?1562909285
 value=3.286
 rarity=U
 type=Creature

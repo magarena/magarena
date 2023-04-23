@@ -1,5 +1,5 @@
 name=Dynavolt Tower
-image=https://magiccards.info/scans/en/kld/208.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c45fd2ae-0f91-47ca-99bd-22ddf946df9f.jpg?1576383112
 image_updated=2016-10-05
 value=2.500
 rarity=R

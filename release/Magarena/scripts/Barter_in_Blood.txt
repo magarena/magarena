@@ -1,5 +1,5 @@
 name=Barter in Blood
-image=https://magiccards.info/scans/en/avr/85.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23986add-b33d-4bad-86f3-e2d0f99cf949.jpg?1600699425
 image_updated=2016-02-29
 value=3.764
 removal=4

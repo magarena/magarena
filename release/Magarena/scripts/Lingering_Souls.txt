@@ -1,5 +1,5 @@
 name=Lingering Souls
-image=https://magiccards.info/scans/en/mm3/12.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcf1288a-8e2c-4a69-afcf-af293f66d007.jpg?1593812843
 image_updated=2017-08-08
 value=3.542
 rarity=U

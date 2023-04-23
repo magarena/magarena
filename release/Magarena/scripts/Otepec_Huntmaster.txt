@@ -1,5 +1,5 @@
 name=Otepec Huntmaster
-image=https://magiccards.info/scans/en/xln/153.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c334e6f3-1378-4429-b4f1-fa8ed7ab7123.jpg?1562563501
 value=2.500
 rarity=U
 type=Creature

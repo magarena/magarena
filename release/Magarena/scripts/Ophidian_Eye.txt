@@ -1,5 +1,5 @@
 name=Ophidian Eye
-image=https://magiccards.info/scans/en/ts/70.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26836ff5-b3c3-4b10-af1e-df3658781cb2.jpg?1562903093
 value=2.955
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Run Amok
-image=https://magiccards.info/scans/en/dom/140.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44c8136f-2826-476c-a103-7094670506a6.jpg?1631049575
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Reclusive Wight
-image=https://magiccards.info/scans/en/us/153.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/384b14c6-78a0-4e82-924e-781719c8defb.jpg?1562906836
 value=1.188
 rarity=U
 type=Creature

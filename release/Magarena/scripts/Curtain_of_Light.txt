@@ -1,5 +1,5 @@
 name=Curtain of Light
-image=https://magiccards.info/scans/en/sok/6.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc382831-e338-49bd-a37f-931bf611b165.jpg?1562497038
 value=3.234
 rarity=C
 type=Instant

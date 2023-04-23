@@ -1,5 +1,5 @@
 name=Acolyte of Xathrid
-image=https://magiccards.info/scans/en/m10/83.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b0b14d4-41de-42ac-9894-77bbcebaabfc.jpg?1561978917
 value=1.256
 rarity=C
 type=Creature

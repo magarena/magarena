@@ -1,5 +1,5 @@
 name=Gurmag Drowner
-image=https://magiccards.info/scans/en/dtk/57.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/5087a664-6ed7-43a1-8851-71bbee204eb1.jpg?1562786163
 value=2.500
 rarity=C
 type=Creature

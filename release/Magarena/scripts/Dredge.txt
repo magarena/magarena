@@ -1,5 +1,5 @@
 name=Dredge
-image=https://magiccards.info/scans/en/in/103.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68bfa3d5-0f0b-4684-9567-f1478da01df7.jpg?1562916105
 value=1.920
 rarity=U
 type=Instant

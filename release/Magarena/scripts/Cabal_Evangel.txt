@@ -1,5 +1,5 @@
 name=Cabal Evangel
-image=https://magiccards.info/scans/en/dom/78.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d218d2a2-bb5d-4ea8-a131-341c574410b2.jpg?1562743442
 value=2.500
 rarity=C
 type=Creature

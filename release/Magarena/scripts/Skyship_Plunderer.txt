@@ -1,5 +1,5 @@
 name=Skyship Plunderer
-image=https://magiccards.info/scans/en/aer/46.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/113ebd1b-380d-42a1-accb-9889c40478f6.jpg?1673483998
 value=2.500
 rarity=U
 type=Creature

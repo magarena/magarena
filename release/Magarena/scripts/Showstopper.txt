@@ -1,5 +1,5 @@
 name=Showstopper
-image=https://magiccards.info/scans/en/dgm/102.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fd1f68b-3f16-484e-95c9-5cfa8da218c9.jpg?1562903803
 value=2.965
 rarity=U
 type=Instant

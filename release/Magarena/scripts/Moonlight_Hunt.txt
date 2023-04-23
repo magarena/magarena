@@ -1,5 +1,5 @@
 name=Moonlight Hunt
-image=https://magiccards.info/scans/en/soi/219.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9633603-a80f-448d-98d9-00064d379c26.jpg?1576385173
 value=2.500
 rarity=U
 type=Instant

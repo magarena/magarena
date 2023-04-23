@@ -1,5 +1,5 @@
 name=Solemn Simulacrum
-image=https://magiccards.info/scans/en/c16/273.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6a3672f-c0d3-4504-8886-e50cd30295be.jpg?1673305866
 image_updated=2017-08-17
 value=4.503
 rarity=R

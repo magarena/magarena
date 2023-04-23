@@ -1,5 +1,5 @@
 name=Rest in Peace
-image=https://magiccards.info/scans/en/a25/32.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f2b39be-0fec-4647-ade1-8e1626dc5470.jpg?1562439074
 image_updated=2018-04-27
 value=4.118
 rarity=R

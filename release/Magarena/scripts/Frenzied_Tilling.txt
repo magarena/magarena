@@ -1,5 +1,5 @@
 name=Frenzied Tilling
-image=https://magiccards.info/scans/en/gtc/166.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03bce9a7-6215-43ff-b4d0-55f96f683aba.jpg?1561814243
 value=3.302
 removal=3
 rarity=U

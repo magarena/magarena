@@ -1,5 +1,5 @@
 name=Eightfold Maze
-image=https://magiccards.info/scans/en/p3k/2.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0fb20ae-269b-452b-894b-a8a285428b15.jpg?1562939201
 value=2.976
 rarity=R
 type=Instant

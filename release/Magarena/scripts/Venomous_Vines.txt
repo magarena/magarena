@@ -1,5 +1,5 @@
 name=Venomous Vines
-image=https://magiccards.info/scans/en/ju/136.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db10359c-1ea8-4453-bc01-f638ad20a5ec.jpg?1562632255
 value=1.929
 rarity=C
 type=Sorcery

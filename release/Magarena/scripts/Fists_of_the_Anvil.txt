@@ -1,5 +1,5 @@
 name=Fists of the Anvil
-image=https://magiccards.info/scans/en/10e/201.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fab4a7e-ef8a-4f38-b659-5598a2ead833.jpg?1562548587
 value=3.367
 rarity=C
 type=Instant

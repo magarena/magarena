@@ -1,5 +1,5 @@
 name=Mark of Fury
-image=https://magiccards.info/scans/en/ud/93.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b21b2f4-a05d-477b-8a39-632f7ff7f5f5.jpg?1562443774
 value=3.682
 rarity=C
 type=Enchantment

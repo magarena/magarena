@@ -1,5 +1,5 @@
 name=Mirror Universe
-image=https://magiccards.info/scans/en/lg/232.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f9cbeaf-3456-4a87-ac75-e7658ccbd97f.jpg?1559592563
 value=4.400
 rarity=R
 type=Artifact

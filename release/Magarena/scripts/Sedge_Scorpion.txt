@@ -1,5 +1,5 @@
 name=Sedge Scorpion
-image=https://magiccards.info/scans/en/ths/177.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9864f811-db2e-4d6d-ad59-a491a790bdd4.jpg?1592517367
 value=3.550
 rarity=C
 type=Creature

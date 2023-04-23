@@ -1,5 +1,5 @@
 name=Satyr Hoplite
-image=https://magiccards.info/scans/en/jou/110.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8754d66-facb-432e-a6c2-91430a6dec94.jpg?1593096089
 value=3.200
 rarity=C
 type=Creature

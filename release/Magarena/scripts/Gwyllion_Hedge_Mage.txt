@@ -1,5 +1,5 @@
 name=Gwyllion Hedge-Mage
-image=https://magiccards.info/scans/en/cmd/202.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e77fb4ee-7595-47e9-846a-73dc0f55bd33.jpg?1592673514
 value=3.359
 rarity=U
 type=Creature

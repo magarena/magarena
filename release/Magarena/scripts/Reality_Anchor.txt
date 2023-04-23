@@ -1,5 +1,5 @@
 name=Reality Anchor
-image=https://magiccards.info/scans/en/tp/140.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a1b2918-2adc-4e0a-9cd7-9d80b3c8ce5f.jpg?1562428893
 value=1.737
 rarity=C
 type=Instant

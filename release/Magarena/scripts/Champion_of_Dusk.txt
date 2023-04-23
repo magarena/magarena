@@ -1,5 +1,5 @@
 name=Champion of Dusk
-image=https://magiccards.info/scans/en/rix/64.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24961417-0a22-4eb3-8b90-e26cd2b738ba.jpg?1641602464
 value=2.500
 rarity=R
 type=Creature

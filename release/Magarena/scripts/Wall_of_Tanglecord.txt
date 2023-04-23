@@ -1,5 +1,5 @@
 name=Wall of Tanglecord
-image=https://magiccards.info/scans/en/som/222.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/792e2aed-ce6e-4fa1-a31c-a4574e5cf1f5.jpg?1562819262
 value=3.764
 rarity=C
 type=Artifact,Creature

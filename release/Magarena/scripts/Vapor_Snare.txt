@@ -1,5 +1,5 @@
 name=Vapor Snare
-image=https://magiccards.info/scans/en/wwk/44.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf09358e-099a-4115-807e-48ceb024d186.jpg?1562295061
 value=2.964
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Voyaging Satyr
-image=https://magiccards.info/scans/en/cn2/195.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/180773da-dadc-414a-92c6-f4e13c753718.jpg?1576383133
 image_updated=2017-01-11
 value=3.531
 rarity=C

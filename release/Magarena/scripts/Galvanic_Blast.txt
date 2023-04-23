@@ -1,5 +1,5 @@
 name=Galvanic Blast
-image=https://magiccards.info/scans/en/som/91.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cf8cb1e-314a-4894-82df-f9812825f52e.jpg?1599706326
 value=4.177
 removal=3
 rarity=C

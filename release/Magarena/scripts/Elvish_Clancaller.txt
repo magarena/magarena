@@ -1,5 +1,5 @@
 name=Elvish Clancaller
-image=https://magiccards.info/scans/en/m19/179.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4da3b0bc-84da-4b85-992b-d0700c97157c.jpg?1616182131
 value=2.500
 rarity=R
 type=Creature

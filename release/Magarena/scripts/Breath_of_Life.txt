@@ -1,5 +1,5 @@
 name=Breath of Life
-image=https://magiccards.info/scans/en/7e/4.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6828916-c19e-4857-a6ba-047b81314d1f.jpg?1562938040
 value=3.500
 rarity=U
 type=Sorcery

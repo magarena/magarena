@@ -1,5 +1,5 @@
 name=Aether Vial
-image=https://magiccards.info/scans/en/ima/212.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11e8d2fd-b132-4807-9410-8edeffa519ed.jpg?1673149308
 image_updated=2017-04-12
 value=4.525
 rarity=R

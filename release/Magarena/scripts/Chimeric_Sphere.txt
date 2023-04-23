@@ -1,5 +1,5 @@
 name=Chimeric Sphere
-image=https://magiccards.info/scans/en/wl/148.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc96857c-b38e-4614-9838-cacd3700e3ee.jpg?1562803391
 value=3.207
 rarity=U
 type=Artifact

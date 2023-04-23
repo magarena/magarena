@@ -1,5 +1,5 @@
 name=Fallowsage
-image=https://magiccards.info/scans/en/lw/63.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/075b8e5e-464b-4ea6-b380-f73aa9c8e5ab.jpg?1682208769
 value=3.636
 rarity=U
 type=Creature

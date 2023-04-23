@@ -1,5 +1,5 @@
 name=Force of Savagery
-image=https://magiccards.info/scans/en/fut/126.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b344511d-631e-4f1d-9d7d-d7c89a473d1b.jpg?1562931082
 value=3.916
 rarity=R
 type=Creature

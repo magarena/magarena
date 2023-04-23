@@ -1,5 +1,5 @@
 name=Headless Skaab
-image=https://magiccards.info/scans/en/dka/40.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca63f9a2-381e-4c84-b0bb-3acd9445b4db.jpg?1562942787
 value=3.223
 rarity=C
 type=Creature

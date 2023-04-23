@@ -1,5 +1,5 @@
 name=Talons of Wildwood
-image=https://magiccards.info/scans/en/m19/202.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9ffa2e83-bc78-4bde-9692-e5165c4ef63b.jpg?1562303419
 value=2.500
 rarity=C
 type=Enchantment

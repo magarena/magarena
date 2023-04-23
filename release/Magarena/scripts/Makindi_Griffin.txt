@@ -1,5 +1,5 @@
 name=Makindi Griffin
-image=https://magiccards.info/scans/en/roe/36.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05c4a9c4-20d5-457d-9127-c27b8768255a.jpg?1593095387
 value=2.790
 rarity=C
 type=Creature

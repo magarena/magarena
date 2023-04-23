@@ -1,5 +1,5 @@
 name=Thalia's Lieutenant
-image=https://magiccards.info/scans/en/soi/43.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c2000ef-3e6b-4f44-8bd6-ed8119336d5a.jpg?1591320174
 value=2.500
 rarity=R
 type=Creature

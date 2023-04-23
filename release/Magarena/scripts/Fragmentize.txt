@@ -1,5 +1,5 @@
 name=Fragmentize
-image=https://magiccards.info/scans/en/kld/14.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bf09deb-2607-4eb0-94a7-9584e771fdfb.jpg?1576380854
 image_updated=2016-10-05
 value=2.500
 rarity=C

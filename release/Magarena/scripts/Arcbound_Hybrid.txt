@@ -1,5 +1,5 @@
 name=Arcbound Hybrid
-image=https://magiccards.info/scans/en/ds/97.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2f33f9d-dffd-4742-92c6-be7fe6463dca.jpg?1562638550
 value=2.597
 rarity=C
 type=Artifact,Creature

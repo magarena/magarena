@@ -1,5 +1,5 @@
 name=Book Burning
-image=https://magiccards.info/scans/en/ju/80.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bead678c-7b6a-4668-9919-623312e08a65.jpg?1562631756
 value=3.088
 rarity=C
 type=Sorcery

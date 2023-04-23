@@ -1,5 +1,5 @@
 name=Melira's Keepers
-image=https://magiccards.info/scans/en/mbs/83.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9a935b4-347c-46d9-a7c5-8c5079948959.jpg?1562615245
 value=3.147
 rarity=U
 type=Creature

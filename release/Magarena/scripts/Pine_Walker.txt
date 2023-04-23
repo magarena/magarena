@@ -1,5 +1,5 @@
 name=Pine Walker
-image=https://magiccards.info/scans/en/ktk/143.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93a49d9c-8fe7-494b-9a26-cf4bde71e420.jpg?1562790508
 value=3.250
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Watcher Sliver
-image=https://magiccards.info/scans/en/ts/45.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5395039-4f1d-4b16-a8b9-b80593dbde76.jpg?1619393678
 value=3.111
 rarity=C
 type=Creature

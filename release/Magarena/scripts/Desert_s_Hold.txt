@@ -1,5 +1,5 @@
 name=Desert's Hold
-image=https://magiccards.info/scans/en/hou/8.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8082298e-05c4-48b3-9367-713f59aafdc6.jpg?1562805272
 value=2.500
 rarity=U
 type=Enchantment

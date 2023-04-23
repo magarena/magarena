@@ -1,5 +1,5 @@
 name=Knight of Glory
-image=https://magiccards.info/scans/en/m13/21.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1646cb67-e0ac-4f2d-af21-618ff3613d69.jpg?1562550768
 value=3.899
 rarity=U
 type=Creature

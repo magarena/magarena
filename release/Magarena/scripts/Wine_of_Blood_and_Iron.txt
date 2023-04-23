@@ -1,5 +1,5 @@
 name=Wine of Blood and Iron
-image=https://magiccards.info/scans/en/sok/161.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f6f80dc-72a4-409b-bc92-69fa3885cd6d.jpg?1562494165
 value=2.872
 rarity=R
 type=Artifact

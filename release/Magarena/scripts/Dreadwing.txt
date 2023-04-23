@@ -1,5 +1,5 @@
 name=Dreadwing
-image=https://magiccards.info/scans/en/cfx/43.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afb997b6-d872-438f-bf8a-db976bc27a2d.jpg?1562803121
 value=2.745
 rarity=U
 type=Creature

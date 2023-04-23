@@ -1,5 +1,5 @@
 name=Ruin Raider
-image=https://magiccards.info/scans/en/xln/118.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/457ba695-3637-40de-a8a8-e3a43a71674f.jpg?1562554428
 value=2.500
 rarity=R
 type=Creature

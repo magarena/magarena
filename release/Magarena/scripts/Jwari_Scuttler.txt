@@ -1,5 +1,5 @@
 name=Jwari Scuttler
-image=https://magiccards.info/scans/en/roe/73.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04129038-3b02-418a-862a-229e9dde339b.jpg?1562700736
 value=2.056
 rarity=C
 type=Creature

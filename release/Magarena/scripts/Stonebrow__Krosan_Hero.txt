@@ -1,5 +1,5 @@
 name=Stonebrow, Krosan Hero
-image=https://magiccards.info/scans/en/ts/247.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95c62102-0562-4b09-a05d-986aa4212f44.jpg?1562926661
 value=4.033
 rarity=R
 type=Legendary,Creature

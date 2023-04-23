@@ -1,5 +1,5 @@
 name=O-Naginata
-image=https://magiccards.info/scans/en/sok/157.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08db5b31-6b5a-4b99-b103-d628afaea2ba.jpg?1599709645
 value=3.925
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Eviscerator
-image=https://magiccards.info/scans/en/ul/52.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/167e7f67-8d44-4134-b7b9-54ccdfb8675c.jpg?1562862326
 value=3.033
 rarity=R
 type=Creature

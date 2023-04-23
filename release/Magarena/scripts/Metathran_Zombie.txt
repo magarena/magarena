@@ -1,5 +1,5 @@
 name=Metathran Zombie
-image=https://magiccards.info/scans/en/in/63.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/6676a0f7-8213-4547-b2ac-b904cd418073.jpg?1562915761
 value=3.079
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Tenacious Dead
-image=https://magiccards.info/scans/en/m14/118.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d88901c-3fa8-4b73-a584-3efa118338f1.jpg?1562920333
 value=3.578
 rarity=U
 type=Creature

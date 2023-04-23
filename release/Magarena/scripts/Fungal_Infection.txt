@@ -1,5 +1,5 @@
 name=Fungal Infection
-image=https://magiccards.info/scans/en/dom/94.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3f6baa5-666d-40b0-82e8-b0df10ff3cdd.jpg?1562740631
 value=2.500
 rarity=C
 type=Instant

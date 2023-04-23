@@ -1,5 +1,5 @@
 name=Reality Acid
-image=https://magiccards.info/scans/en/pc/45.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8510381-e05c-4cc4-98aa-c9327e18ec02.jpg?1619394529
 value=3.636
 removal=1
 rarity=C

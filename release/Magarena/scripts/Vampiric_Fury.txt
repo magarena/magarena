@@ -1,5 +1,5 @@
 name=Vampiric Fury
-image=https://magiccards.info/scans/en/isd/167.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de4fd254-0ae9-498d-b9da-4fb3d6a1a55c.jpg?1562838319
 value=3.531
 rarity=C
 type=Instant

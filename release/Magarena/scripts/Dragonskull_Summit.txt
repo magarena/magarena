@@ -1,5 +1,5 @@
 name=Dragonskull Summit
-image=https://magiccards.info/scans/en/xln/252.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c5a9cb7-6c97-47fd-acd0-bc6dd11b77b4.jpg?1673306001
 image_updated=2017-10-30
 value=3.903
 rarity=R

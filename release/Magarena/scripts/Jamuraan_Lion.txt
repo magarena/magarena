@@ -1,5 +1,5 @@
 name=Jamuraan Lion
-image=https://magiccards.info/scans/en/vi/110.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfc681f5-9fff-48b6-98d9-e85c85e582a3.jpg?1562278630
 value=3.048
 rarity=C
 type=Creature

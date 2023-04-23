@@ -1,5 +1,5 @@
 name=Spike Hatcher
-image=https://magiccards.info/scans/en/ex/126.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c7d3854-c895-448e-ada9-8ebfaa689049.jpg?1562428900
 value=3.290
 rarity=R
 type=Creature

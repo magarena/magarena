@@ -1,5 +1,5 @@
 name=Golem's Heart
-image=https://magiccards.info/scans/en/som/161.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/647ecb81-2d23-40f3-8570-0b86e2ed1c5e.jpg?1562818372
 value=2.673
 rarity=U
 type=Artifact

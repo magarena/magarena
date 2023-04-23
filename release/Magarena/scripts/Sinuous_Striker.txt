@@ -1,5 +1,5 @@
 name=Sinuous Striker
-image=https://magiccards.info/scans/en/hou/45.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed2b97d1-3e69-4305-b1df-947ff64c5043.jpg?1562819172
 value=2.500
 rarity=U
 type=Creature

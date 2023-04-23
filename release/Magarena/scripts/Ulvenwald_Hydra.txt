@@ -1,5 +1,5 @@
 name=Ulvenwald Hydra
-image=https://magiccards.info/scans/en/soi/235.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0700d1c1-faab-4a1a-b55d-a2fa4582a2b4.jpg?1601080240
 value=2.500
 rarity=M
 type=Creature

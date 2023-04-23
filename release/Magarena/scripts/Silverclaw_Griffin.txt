@@ -1,5 +1,5 @@
 name=Silverclaw Griffin
-image=https://magiccards.info/scans/en/dka/21.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54528722-a6aa-4567-9cd1-e4a97adec7d0.jpg?1562914707
 value=2.344
 rarity=C
 type=Creature

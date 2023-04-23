@@ -1,5 +1,5 @@
 name=Soul Barrier
-image=https://magiccards.info/scans/en/5e/125.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfd50e68-2063-4fae-bb56-eb224d43b147.jpg?1562594484
 value=4.102
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Dowsing Shaman
-image=https://magiccards.info/scans/en/pc2/63.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31a2a6d8-52de-4796-b299-69b586fa0b92.jpg?1562904192
 value=3.000
 rarity=U
 type=Creature

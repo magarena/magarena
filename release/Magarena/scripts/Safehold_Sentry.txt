@@ -1,5 +1,5 @@
 name=Safehold Sentry
-image=https://magiccards.info/scans/en/shm/22.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/caa8bd74-9897-4515-b1a0-50d5f1bda673.jpg?1562835958
 value=2.550
 rarity=C
 type=Creature

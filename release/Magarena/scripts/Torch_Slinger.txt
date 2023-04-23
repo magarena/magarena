@@ -1,5 +1,5 @@
 name=Torch Slinger
-image=https://magiccards.info/scans/en/zen/151.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/229dec8c-ec73-4bab-8c37-517cb4a01988.jpg?1593095879
 value=2.527
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Thopter Assembly
-image=https://magiccards.info/scans/en/mbs/140.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efc9db16-53d3-4d27-ba42-c3c445f2f92f.jpg?1682210293
 value=3.804
 rarity=R
 type=Artifact,Creature

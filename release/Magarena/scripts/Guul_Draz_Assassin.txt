@@ -1,5 +1,5 @@
 name=Guul Draz Assassin
-image=https://magiccards.info/scans/en/roe/112.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72de01ef-cdf2-44ad-bf2f-a927d82a4f72.jpg?1562705055
 value=3.917
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Armada Wurm
-image=https://magiccards.info/scans/en/rtr/143.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50cb4bf3-70d1-4acc-a1fb-49f4ea74ca16.jpg?1562786220
 value=4.010
 rarity=M
 type=Creature

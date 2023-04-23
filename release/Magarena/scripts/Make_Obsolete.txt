@@ -1,5 +1,5 @@
 name=Make Obsolete
-image=https://magiccards.info/scans/en/kld/89.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0a96feb-accc-4c30-8ecd-7d9272ebd45b.jpg?1576381736
 image_updated=2016-10-05
 value=2.500
 rarity=U

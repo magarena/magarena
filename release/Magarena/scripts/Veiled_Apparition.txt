@@ -1,5 +1,5 @@
 name=Veiled Apparition
-image=https://magiccards.info/scans/en/us/107.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f9ea09f-5017-423c-84ad-c332329992b3.jpg?1562925266
 value=2.516
 rarity=U
 type=Enchantment

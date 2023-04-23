@@ -1,5 +1,5 @@
 name=Feebleness
-image=https://magiccards.info/scans/en/ts/110.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/265960a9-bea6-4111-b9a7-b6a37194b1c5.jpg?1619395493
 value=1.700
 removal=1
 rarity=C

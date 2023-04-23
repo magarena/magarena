@@ -1,5 +1,5 @@
 name=Field of Ruin
-image=https://magiccards.info/scans/en/xln/254.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/143147d2-2eec-41e7-b78a-592288b38630.jpg?1682210418
 value=2.500
 rarity=U
 type=Land

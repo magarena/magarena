@@ -1,5 +1,5 @@
 name=Gainsay
-image=https://magiccards.info/scans/en/ps/26.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e658939a-fa5a-4497-b35c-b6fbfa3f6882.jpg?1562835545
 value=2.925
 rarity=U
 type=Instant

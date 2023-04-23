@@ -1,5 +1,5 @@
 name=Slith Bloodletter
-image=https://magiccards.info/scans/en/mi/77.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22a04ccb-cb57-4548-81db-e1b77b09f5da.jpg?1562138262
 value=3.988
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wilt-Leaf Liege
-image=https://magiccards.info/scans/en/mm2/200.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/4928cb86-6971-458b-ad74-1b39c0e1c177.jpg?1673149277
 value=4.097
 rarity=R
 type=Creature

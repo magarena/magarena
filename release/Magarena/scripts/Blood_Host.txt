@@ -1,5 +1,5 @@
 name=Blood Host
-image=https://magiccards.info/scans/en/m15/87.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59d0839b-a021-4227-aa0f-1fa2ff806892.jpg?1600699572
 value=2.750
 rarity=U
 type=Creature

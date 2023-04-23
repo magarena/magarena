@@ -1,5 +1,5 @@
 name=Draining Whelk
-image=https://magiccards.info/scans/en/ts/57.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51eca246-591e-4ea8-8432-9f4c1f16a65e.jpg?1619394027
 value=4.110
 rarity=R
 type=Creature

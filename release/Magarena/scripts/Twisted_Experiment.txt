@@ -1,5 +1,5 @@
 name=Twisted Experiment
-image=https://magiccards.info/scans/en/ud/74.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64e37889-7dc0-476b-8b99-8f06881d352c.jpg?1562444222
 value=3.333
 rarity=C
 type=Enchantment

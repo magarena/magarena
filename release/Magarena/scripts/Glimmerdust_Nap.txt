@@ -1,5 +1,5 @@
 name=Glimmerdust Nap
-image=https://magiccards.info/scans/en/lw/68.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e05a4ce4-dbd5-4c47-8b40-c145c7f5d06c.jpg?1562371315
 value=2.000
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Myr Matrix
-image=https://magiccards.info/scans/en/ds/132.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a1af62e-d566-4f39-a467-244602c9240b.jpg?1562636695
 value=4.201
 rarity=R
 type=Artifact

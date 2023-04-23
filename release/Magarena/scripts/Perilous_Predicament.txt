@@ -1,5 +1,5 @@
 name=Perilous Predicament
-image=https://magiccards.info/scans/en/aer/68.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0edc708-0c76-4fcd-a175-d9c6f1ca3ac1.jpg?1576381711
 value=2.500
 rarity=U
 type=Instant

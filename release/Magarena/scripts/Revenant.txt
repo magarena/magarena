@@ -1,5 +1,5 @@
 name=Revenant
-image=https://magiccards.info/scans/en/ori/117.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/307a8465-9e33-4441-b512-a112e8524328.jpg?1608909931
 image_updated=2015-11-05
 value=2.500
 rarity=U

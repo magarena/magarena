@@ -1,5 +1,5 @@
 name=Shadow Slice
-image=https://magiccards.info/scans/en/gtc/77.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0497fbf4-cf09-4028-af16-349ed12ca360.jpg?1561814280
 value=2.472
 rarity=C
 type=Sorcery

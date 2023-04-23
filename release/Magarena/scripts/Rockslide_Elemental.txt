@@ -1,5 +1,5 @@
 name=Rockslide Elemental
-image=https://magiccards.info/scans/en/ala/112.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d698604b-86cc-4dba-a1be-7b5bb46c5c5a.jpg?1562842899
 image_updated=2017-01-06
 value=2.973
 rarity=U

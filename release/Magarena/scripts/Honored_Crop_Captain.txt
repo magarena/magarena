@@ -1,5 +1,5 @@
 name=Honored Crop-Captain
-image=https://magiccards.info/scans/en/akh/200.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1b44194-fed5-491c-a791-80b986dd66d6.jpg?1543676063
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Oboro Envoy
-image=https://magiccards.info/scans/en/sok/49.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0309dcb-6c13-4ffe-b44d-3b735c8277d2.jpg?1562495135
 value=1.793
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Moriok Replica
-image=https://magiccards.info/scans/en/som/178.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/480311ae-b9af-4fb7-881b-35566598cf07.jpg?1562817129
 value=3.330
 rarity=C
 type=Artifact,Creature

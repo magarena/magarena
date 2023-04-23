@@ -1,5 +1,5 @@
 name=Vigean Graftmage
-image=https://magiccards.info/scans/en/mm2/68.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4aa0a951-0018-41bb-8e82-c3844983a753.jpg?1562262063
 image_updated=2015-11-05
 value=3.054
 rarity=C

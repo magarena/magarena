@@ -1,5 +1,5 @@
 name=Caribou Range
-image=https://magiccards.info/scans/en/5e/290.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7a39186-8a8d-4297-ac9e-fdb8232a85df.jpg?1562870003
 value=3.265
 rarity=R
 type=Enchantment

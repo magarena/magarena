@@ -1,5 +1,5 @@
 name=Airdrop Aeronauts
-image=https://magiccards.info/scans/en/aer/5.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49827a57-cf10-4a44-a1fd-ac611da39dc9.jpg?1576381286
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Firehoof Cavalry
-image=https://magiccards.info/scans/en/ktk/11.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edb2b284-f79c-41eb-a25f-4710d4a5228f.jpg?1562795647
 value=2.000
 rarity=C
 type=Creature

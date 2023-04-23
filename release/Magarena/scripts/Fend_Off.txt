@@ -1,5 +1,5 @@
 name=Fend Off
-image=https://magiccards.info/scans/en/ud/7.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a64d7a33-986d-45ad-8662-7bca80d3628d.jpg?1562444730
 value=3.096
 rarity=C
 type=Instant

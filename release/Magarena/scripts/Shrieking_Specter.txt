@@ -1,5 +1,5 @@
 name=Shrieking Specter
-image=https://magiccards.info/scans/en/st/89.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81d3b0fd-a81e-4665-bba6-b6d085693abf.jpg?1562874568
 value=1.354
 rarity=U
 type=Creature

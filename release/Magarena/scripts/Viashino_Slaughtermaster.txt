@@ -1,5 +1,5 @@
 name=Viashino Slaughtermaster
-image=https://magiccards.info/scans/en/mm2/133.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a441fae0-a9c7-4d91-a69e-8ea1f8fa6947.jpg?1562265707
 image_updated=2015-11-05
 value=3.140
 rarity=C

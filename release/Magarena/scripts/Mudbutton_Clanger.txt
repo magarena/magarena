@@ -1,5 +1,5 @@
 name=Mudbutton Clanger
-image=https://magiccards.info/scans/en/mt/95.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc5e2771-ae35-4aff-a92d-7fc7f3ca915f.jpg?1562881041
 value=2.779
 rarity=C
 type=Creature

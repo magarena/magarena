@@ -1,5 +1,5 @@
 name=Felhide Brawler
-image=https://magiccards.info/scans/en/bng/70.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a829bb0-6a84-46de-9c2d-14176cf542e6.jpg?1593091966
 value=1.804
 rarity=C
 type=Creature

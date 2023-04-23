@@ -1,5 +1,5 @@
 name=Nissa's Defeat
-image=https://magiccards.info/scans/en/hou/123.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86326456-d188-4083-9141-a639b821b291.jpg?1562805767
 value=2.500
 rarity=U
 type=Sorcery

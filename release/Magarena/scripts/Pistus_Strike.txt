@@ -1,5 +1,5 @@
 name=Pistus Strike
-image=https://magiccards.info/scans/en/mbs/86.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a2918d6-50f7-4bc1-aef2-930a5c84be8d.jpg?1562609919
 value=2.660
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Breaking Wave
-image=https://magiccards.info/scans/en/in/48.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b39cd77-97aa-4099-8405-366f82079758.jpg?1562900378
 value=3.900
 rarity=R
 type=Sorcery

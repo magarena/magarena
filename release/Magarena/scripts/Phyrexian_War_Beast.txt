@@ -1,5 +1,5 @@
 name=Phyrexian War Beast
-image=https://magiccards.info/scans/en/ai/169.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c7576e2-1a95-453f-aab5-b08e21f28ba4.jpg?1559592288
 value=3.786
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Hieroglyphic Illumination
-image=https://magiccards.info/scans/en/akh/57.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bd05638-d621-4967-b7e3-63121c88f18b.jpg?1591320251
 value=2.500
 rarity=C
 type=Instant

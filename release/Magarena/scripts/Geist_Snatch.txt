@@ -1,5 +1,5 @@
 name=Geist Snatch
-image=https://magiccards.info/scans/en/avr/55.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6dac5db-ef96-4bd5-aabc-e5ae2b95c8c3.jpg?1592708554
 value=2.321
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Nest Robber
-image=https://magiccards.info/scans/en/xln/152.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/576d3845-f45a-4db0-9f7c-845cedb64c49.jpg?1562555717
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kobolds of Kher Keep
-image=https://magiccards.info/scans/en/lg/226.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6797542-0781-43d6-aa8e-b55e5c1e08c0.jpg?1562930079
 value=3.767
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Contaminated Ground
-image=https://magiccards.info/scans/en/gtc/59.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2384356-0a62-499a-8b28-085974331368.jpg?1561844572
 value=3.156
 rarity=C
 type=Enchantment

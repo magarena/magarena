@@ -1,5 +1,5 @@
 name=Mana Confluence
-image=https://magiccards.info/scans/en/jou/163.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/504a69eb-3c2d-4bb1-b117-252b15acf0c2.jpg?1593096534
 value=4.553
 rarity=R
 type=Land

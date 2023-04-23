@@ -1,5 +1,5 @@
 name=Burst of Speed
-image=https://magiccards.info/scans/en/m10/129.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc8c7aa0-2067-4513-a658-ed866279e671.jpg?1561997844
 value=2.196
 rarity=C
 type=Sorcery

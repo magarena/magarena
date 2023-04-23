@@ -1,5 +1,5 @@
 name=Drudge Beetle
-image=https://magiccards.info/scans/en/rtr/122.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4812e81-beca-4afc-b2f2-24d5ab27abff.jpg?1562794602
 value=2.691
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Heavy Ballista
-image=https://magiccards.info/scans/en/7e/19.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b665186-7ee5-47dd-b849-cb9c318f31e6.jpg?1562242247
 value=3.015
 rarity=U
 type=Creature

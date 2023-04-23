@@ -1,5 +1,5 @@
 name=Take Vengeance
-image=https://magiccards.info/scans/en/m19/40.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b39ac13b-f3fb-48c6-bb45-066149db371f.jpg?1576267197
 value=2.500
 rarity=C
 type=Sorcery

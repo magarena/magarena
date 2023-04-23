@@ -1,5 +1,5 @@
 name=Rogue's Gloves
-image=https://magiccards.info/scans/en/m19/243.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/794fe9d4-2af4-40b0-bbb2-8015b6206972.jpg?1601080884
 image_updated=2018-08-07
 value=2.583
 rarity=U

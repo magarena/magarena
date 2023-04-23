@@ -1,5 +1,5 @@
 name=Steel Leaf Paladin
-image=https://magiccards.info/scans/en/ps/127.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28e8697f-fdf3-4a1a-a84d-dd29b17336c2.jpg?1562903659
 value=1.798
 rarity=C
 type=Creature

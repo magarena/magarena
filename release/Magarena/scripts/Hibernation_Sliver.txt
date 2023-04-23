@@ -1,5 +1,5 @@
 name=Hibernation Sliver
-image=https://magiccards.info/scans/en/sh/140.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3422d12f-1b98-4a36-9875-b115fa2dfdb8.jpg?1562428879
 value=4.145
 rarity=U
 type=Creature

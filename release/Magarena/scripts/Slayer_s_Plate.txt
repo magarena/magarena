@@ -1,5 +1,5 @@
 name=Slayer's Plate
-image=https://magiccards.info/scans/en/soi/264.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0810651-0301-46d4-b9d7-c2283ef4031a.jpg?1576385477
 value=2.500
 rarity=R
 type=Artifact

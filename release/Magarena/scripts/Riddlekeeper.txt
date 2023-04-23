@@ -1,5 +1,5 @@
 name=Riddlekeeper
-image=https://magiccards.info/scans/en/cmd/59.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57ad1d92-0c91-4a43-a4d3-c2250b9fe23e.jpg?1562273926
 value=3.802
 rarity=R
 type=Creature

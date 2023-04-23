@@ -1,5 +1,5 @@
 name=Legion Lieutenant
-image=https://magiccards.info/scans/en/rix/163.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33f7ff99-65d6-4e97-bdfa-b6e6eac0588f.jpg?1555040877
 value=2.500
 rarity=U
 type=Creature

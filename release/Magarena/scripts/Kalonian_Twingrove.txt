@@ -1,5 +1,5 @@
 name=Kalonian Twingrove
-image=https://magiccards.info/scans/en/m15/182.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dabe0865-5420-463e-9138-ccd805be8b31.jpg?1562795241
 value=3.083
 rarity=R
 type=Creature

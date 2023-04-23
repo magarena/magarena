@@ -1,5 +1,5 @@
 name=Stone Kavu
-image=https://magiccards.info/scans/en/ps/93.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36a1cdca-d48c-4936-ad6a-4610aeb991ce.jpg?1562906498
 value=2.840
 rarity=C
 type=Creature

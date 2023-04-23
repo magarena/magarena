@@ -1,5 +1,5 @@
 name=Sarkhan Vol
-image=https://magiccards.info/scans/en/mma/183.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/181e20e9-94a2-40b6-abc4-797f588866bf.jpg?1561966396
 value=4.000
 rarity=M
 type=Legendary,Planeswalker

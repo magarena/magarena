@@ -1,5 +1,5 @@
 name=Battlewise Valor
-image=https://magiccards.info/scans/en/ths/1.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d967a4c-2323-4361-a907-5ca9140d8793.jpg?1562820440
 value=3.071
 rarity=C
 type=Instant

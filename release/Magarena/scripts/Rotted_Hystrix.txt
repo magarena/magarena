@@ -1,5 +1,5 @@
 name=Rotted Hystrix
-image=https://magiccards.info/scans/en/nph/120.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bcae97d-468a-4e16-bfed-d2946f64784c.jpg?1562879013
 value=2.018
 rarity=C
 type=Creature

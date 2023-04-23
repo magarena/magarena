@@ -1,5 +1,5 @@
 name=Tortoise Formation
-image=https://magiccards.info/scans/en/ala/61.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59ff8324-42b8-4eeb-8d0b-ea679c984933.jpg?1562704301
 value=1.348
 rarity=C
 type=Instant

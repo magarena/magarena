@@ -1,5 +1,5 @@
 name=Mortivore
-image=https://magiccards.info/scans/en/cmd/89.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/beeaaef1-5cd9-402a-982e-2cb4e69cfaca.jpg?1562275981
 value=4.183
 rarity=R
 type=Creature

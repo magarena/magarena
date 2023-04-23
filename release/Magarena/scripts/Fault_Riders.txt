@@ -1,5 +1,5 @@
 name=Fault Riders
-image=https://magiccards.info/scans/en/pr/88.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c9d3579-3fc1-434e-8f26-d5dbd6344429.jpg?1562900312
 value=3.571
 rarity=C
 type=Creature

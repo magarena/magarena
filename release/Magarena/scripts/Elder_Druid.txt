@@ -1,5 +1,5 @@
 name=Elder Druid
-image=https://magiccards.info/scans/en/7e/238.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa88ff5b-44df-40eb-b0bb-37936ae0d854.jpg?1562245345
 value=2.405
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Sunrise Sovereign
-image=https://magiccards.info/scans/en/lw/192.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ee59bd3-062b-428c-868c-d68d9009d966.jpg?1562275102
 image_updated=2016-02-29
 value=4.075
 rarity=R

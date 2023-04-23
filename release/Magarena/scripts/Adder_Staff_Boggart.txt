@@ -1,5 +1,5 @@
 name=Adder-Staff Boggart
-image=https://magiccards.info/scans/en/lw/148.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d116839f-6a3a-4a2e-a3ab-ea177c012746.jpg?1562369151
 value=2.872
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Defiant Ogre
-image=https://magiccards.info/scans/en/frf/96.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09cfd3d5-1b44-4dc7-b35d-703f3a75da88.jpg?1562822286
 value=2.500
 rarity=C
 type=Creature

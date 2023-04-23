@@ -1,5 +1,5 @@
 name=Riot Ringleader
-image=https://magiccards.info/scans/en/avr/152.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c043f30b-548f-4c31-a415-0e59c2841dcf.jpg?1592709183
 value=2.562
 rarity=C
 type=Creature

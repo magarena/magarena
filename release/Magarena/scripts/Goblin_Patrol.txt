@@ -1,5 +1,5 @@
 name=Goblin Patrol
-image=https://magiccards.info/scans/en/us/193.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b9d0b79-a55b-4bec-b7c4-4374048ba3ec.jpg?1562926399
 value=3.424
 rarity=C
 type=Creature

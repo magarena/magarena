@@ -1,5 +1,5 @@
 name=Dimir Keyrune
-image=https://magiccards.info/scans/en/gtc/228.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69d1dd6c-21d3-4fe8-af1b-7088dcceef08.jpg?1674142561
 value=3.259
 rarity=U
 type=Artifact

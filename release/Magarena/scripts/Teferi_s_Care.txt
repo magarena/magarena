@@ -1,5 +1,5 @@
 name=Teferi's Care
-image=https://magiccards.info/scans/en/in/43.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/031b1cc1-4468-4bc5-85c0-c22dce131225.jpg?1562895604
 value=2.344
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Shieldhide Dragon
-image=https://magiccards.info/scans/en/dtk/37.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcfd0af4-44e1-424b-8e55-87f84a42d40a.jpg?1562796151
 value=2.500
 rarity=U
 type=Creature

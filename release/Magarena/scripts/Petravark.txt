@@ -1,5 +1,5 @@
 name=Petravark
-image=https://magiccards.info/scans/en/tr/109.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffc98d09-439e-426b-8403-4a3e12167336.jpg?1562632920
 value=2.792
 removal=2
 rarity=C

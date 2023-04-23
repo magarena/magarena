@@ -1,5 +1,5 @@
 name=Armored Pegasus
-image=https://magiccards.info/scans/en/6e/5.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44bafa45-f26e-4c1a-be23-e0469bfa3bb5.jpg?1593864166
 value=2.579
 rarity=C
 type=Creature

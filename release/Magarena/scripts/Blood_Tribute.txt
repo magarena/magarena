@@ -1,5 +1,5 @@
 name=Blood Tribute
-image=https://magiccards.info/scans/en/c17/100.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/361912f4-5205-44a5-b21e-17402526c1fd.jpg?1562605049
 image_updated=2017-10-03
 value=3.881
 rarity=R

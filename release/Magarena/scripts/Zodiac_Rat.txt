@@ -1,5 +1,5 @@
 name=Zodiac Rat
-image=https://magiccards.info/scans/en/p3k/98.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb6e5814-e1b5-48d2-9c4f-62b5727f333f.jpg?1562258012
 value=3.037
 rarity=C
 type=Creature

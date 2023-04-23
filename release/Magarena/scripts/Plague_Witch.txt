@@ -1,5 +1,5 @@
 name=Plague Witch
-image=https://magiccards.info/scans/en/ema/103.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a1e3438-dbee-473a-8556-d4e28b939266.jpg?1580014342
 value=2.636
 rarity=C
 type=Creature

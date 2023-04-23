@@ -1,5 +1,5 @@
 name=White Shield Crusader
-image=https://magiccards.info/scans/en/cs/24.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/368322d7-d399-45e1-8d7f-8001d048071e.jpg?1593274864
 value=4.180
 rarity=U
 type=Creature

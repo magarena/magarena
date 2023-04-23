@@ -1,5 +1,5 @@
 name=Multani's Acolyte
-image=https://magiccards.info/scans/en/ul/108.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e5fdecb-bca0-48ea-b5bb-d0886c7d3316.jpg?1562862815
 value=3.697
 rarity=C
 type=Creature

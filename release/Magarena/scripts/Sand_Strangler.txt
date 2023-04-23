@@ -1,5 +1,5 @@
 name=Sand Strangler
-image=https://magiccards.info/scans/en/hou/107.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd7153be-ad6c-47ff-8f45-bc8df17973cb.jpg?1562817478
 value=2.500
 rarity=U
 type=Creature

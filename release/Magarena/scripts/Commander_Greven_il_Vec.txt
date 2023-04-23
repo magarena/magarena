@@ -1,5 +1,5 @@
 name=Commander Greven il-Vec
-image=https://magiccards.info/scans/en/tp/9.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a8ddd65-c482-426c-b4cd-9ad0206942ae.jpg?1562430341
 value=4.007
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Asceticism
-image=https://magiccards.info/scans/en/som/110.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec2b56b0-126c-411b-8c43-b690fc8c194b.jpg?1562824694
 value=4.171
 rarity=R
 type=Enchantment

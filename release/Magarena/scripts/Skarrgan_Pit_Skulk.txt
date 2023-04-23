@@ -1,5 +1,5 @@
 name=Skarrgan Pit-Skulk
-image=https://magiccards.info/scans/en/gp/96.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30991c55-f39d-41f3-b584-f535f5f70f5a.jpg?1592761812
 value=4.000
 rarity=C
 type=Creature

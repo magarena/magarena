@@ -1,5 +1,5 @@
 name=Hornet Queen
-image=https://magiccards.info/scans/en/m15/178.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ef7c1a5-eb4e-4f75-ad41-1b84741ecab1.jpg?1674142281
 value=3.812
 rarity=R
 type=Creature

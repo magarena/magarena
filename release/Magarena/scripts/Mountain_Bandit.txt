@@ -1,5 +1,5 @@
 name=Mountain Bandit
-image=https://magiccards.info/scans/en/p3k/117.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34fd541d-9956-4595-9527-a83db4c5f74f.jpg?1562256065
 value=3.809
 rarity=C
 type=Creature

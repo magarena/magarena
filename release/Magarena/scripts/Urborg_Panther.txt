@@ -1,5 +1,5 @@
 name=Urborg Panther
-image=https://magiccards.info/scans/en/mr/48.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edc9ff0f-adec-4d39-b281-98c5862f506b.jpg?1562722402
 value=3.375
 rarity=C
 type=Creature

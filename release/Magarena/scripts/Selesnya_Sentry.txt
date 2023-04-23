@@ -1,5 +1,5 @@
 name=Selesnya Sentry
-image=https://magiccards.info/scans/en/rtr/21.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c34c1f5-d509-4c66-ba41-c7958ef5ee44.jpg?1562790567
 value=2.015
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=One With the Wind
-image=https://magiccards.info/scans/en/xln/64.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c00f8bf-0088-44ad-b40b-26a2951a2428.jpg?1562552635
 value=2.500
 rarity=C
 type=Enchantment

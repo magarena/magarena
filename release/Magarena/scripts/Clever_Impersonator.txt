@@ -1,5 +1,5 @@
 name=Clever Impersonator
-image=https://magiccards.info/scans/en/ktk/34.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0516453-3e6a-4b7f-8df6-72a6e207169a.jpg?1568003965
 value=4.583
 rarity=M
 type=Creature

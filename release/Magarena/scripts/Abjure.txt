@@ -1,5 +1,5 @@
 name=Abjure
-image=https://magiccards.info/scans/en/wl/31.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbad9449-d09c-4fd0-b2ad-2aa3a29e03bf.jpg?1562804357
 value=3.057
 rarity=C
 type=Instant

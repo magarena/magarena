@@ -1,5 +1,5 @@
 name=Disarm
-image=https://magiccards.info/scans/en/mi/32.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/427c6350-af52-45f1-8024-5f31aa62a0d0.jpg?1562141887
 value=1.778
 rarity=C
 type=Instant

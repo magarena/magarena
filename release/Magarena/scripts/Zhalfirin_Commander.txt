@@ -1,5 +1,5 @@
 name=Zhalfirin Commander
-image=https://magiccards.info/scans/en/tsts/18.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e296cd1a-0508-46c1-aeda-82ecde991caa.jpg?1562942799
 value=3.682
 rarity=U
 type=Creature

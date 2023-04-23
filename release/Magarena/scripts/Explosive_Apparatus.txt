@@ -1,5 +1,5 @@
 name=Explosive Apparatus
-image=https://magiccards.info/scans/en/m19/233.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/608f431b-a05c-4610-94f7-928d87b2c056.jpg?1562302613
 image_updated=2018-08-07
 value=2.500
 rarity=C

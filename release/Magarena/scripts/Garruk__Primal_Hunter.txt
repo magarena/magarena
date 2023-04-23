@@ -1,5 +1,5 @@
 name=Garruk, Primal Hunter
-image=https://magiccards.info/scans/en/m13/174.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79cfc0d7-fccb-47fb-87b6-08dd32528be6.jpg?1625194361
 value=3.765
 rarity=M
 type=Legendary,Planeswalker

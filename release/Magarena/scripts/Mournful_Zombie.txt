@@ -1,5 +1,5 @@
 name=Mournful Zombie
-image=https://magiccards.info/scans/en/ap/43.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9ba12fb1-de8c-46c6-b33f-e0580ed2a3ee.jpg?1562931681
 value=2.081
 rarity=C
 type=Creature

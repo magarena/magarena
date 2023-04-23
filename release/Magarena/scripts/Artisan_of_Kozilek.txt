@@ -1,5 +1,5 @@
 name=Artisan of Kozilek
-image=https://magiccards.info/scans/en/mm2/2.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3fef480-ee0e-41e1-9db3-68e945e7e867.jpg?1673483600
 value=3.843
 rarity=U
 type=Creature

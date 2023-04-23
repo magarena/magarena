@@ -1,5 +1,5 @@
 name=Battle Mastery
-image=https://magiccards.info/scans/en/dtk/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/5266595d-5320-4dea-8e4a-dd6c1a032871.jpg?1562911738
 value=2.600
 rarity=U
 type=Enchantment

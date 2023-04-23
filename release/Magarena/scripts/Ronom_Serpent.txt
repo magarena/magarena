@@ -1,5 +1,5 @@
 name=Ronom Serpent
-image=https://magiccards.info/scans/en/cs/45.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bf81a39-0a6e-4253-81eb-a24f48253343.jpg?1593275002
 value=1.130
 rarity=C
 type=Snow,Creature

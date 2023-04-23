@@ -1,5 +1,5 @@
 name=Silk Net
-image=https://magiccards.info/scans/en/ul/112.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/9498a97a-0e32-4eb8-9cb4-0698ff3a7ded.jpg?1562863746
 value=2.188
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Storm Seeker
-image=https://magiccards.info/scans/en/lg/119.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/456a2fdf-e91f-4d6d-840e-562fe7f5acd3.jpg?1559592304
 value=3.764
 rarity=U
 type=Instant

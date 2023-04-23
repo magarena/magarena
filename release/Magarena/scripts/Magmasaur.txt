@@ -1,5 +1,5 @@
 name=Magmasaur
-image=https://magiccards.info/scans/en/tp/188.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc628d2f-ca19-4ef0-8b8d-d3a831579b52.jpg?1562431763
 value=3.794
 rarity=R
 type=Creature

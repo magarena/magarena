@@ -1,5 +1,5 @@
 name=Topan Freeblade
-image=https://magiccards.info/scans/en/ima/37.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5b27274-b3f0-4d94-9534-4e495ba53921.jpg?1576267204
 image_updated=2017-04-12
 value=2.500
 rarity=U

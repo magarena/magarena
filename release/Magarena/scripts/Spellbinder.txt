@@ -1,5 +1,5 @@
 name=Spellbinder
-image=https://magiccards.info/scans/en/ds/143.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d193d4f-1beb-4938-b3fb-b2e96d0c9ec4.jpg?1562636758
 value=3.133
 rarity=R
 type=Artifact

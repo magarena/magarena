@@ -1,5 +1,5 @@
 name=Zombie Apocalypse
-image=https://magiccards.info/scans/en/dka/80.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/854ae40d-ee52-434e-8fe0-1b5a0d4ea58b.jpg?1637630850
 value=3.861
 removal=2
 rarity=R

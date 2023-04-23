@@ -1,5 +1,5 @@
 name=Inspiring Call
-image=https://magiccards.info/scans/en/ima/169.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5f00ea4-a26f-49c6-b175-c3b7cb42c3ae.jpg?1682209552
 image_updated=2017-04-12
 value=2.500
 rarity=U

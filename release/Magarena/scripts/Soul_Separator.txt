@@ -1,5 +1,5 @@
 name=Soul Separator
-image=https://magiccards.info/scans/en/emn/199.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb9b1158-dfc4-4fe9-b970-338be8a99662.jpg?1576385089
 image_updated=2016-09-05
 value=2.500
 rarity=R

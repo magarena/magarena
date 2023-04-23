@@ -1,5 +1,5 @@
 name=Lotleth Troll
-image=https://magiccards.info/scans/en/rtr/177.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc138550-a797-4a57-91b3-626aac1b1edd.jpg?1673148893
 image_updated=2016-02-29
 value=4.027
 rarity=R

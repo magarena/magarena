@@ -1,5 +1,5 @@
 name=Sharding Sphinx
-image=https://magiccards.info/scans/en/ala/55.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d93d905-cc36-4a78-b07c-07f8bbf39a47.jpg?1682208884
 value=3.643
 rarity=R
 type=Artifact,Creature

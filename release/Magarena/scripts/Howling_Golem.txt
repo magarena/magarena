@@ -1,5 +1,5 @@
 name=Howling Golem
-image=https://magiccards.info/scans/en/dom/218.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05b54aaa-93e2-4f8b-8d06-2a848498d1fd.jpg?1608911481
 value=2.500
 rarity=U
 type=Artifact,Creature

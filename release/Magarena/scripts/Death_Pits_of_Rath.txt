@@ -1,5 +1,5 @@
 name=Death Pits of Rath
-image=https://magiccards.info/scans/en/9e/123.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad19107e-9b31-40c1-9b5d-22f4727d4d2a.jpg?1562431253
 value=4.160
 rarity=R
 type=Enchantment

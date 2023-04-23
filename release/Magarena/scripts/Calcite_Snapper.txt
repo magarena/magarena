@@ -1,5 +1,5 @@
 name=Calcite Snapper
-image=https://magiccards.info/scans/en/wwk/25.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aec0c914-1188-45c9-a68c-c3b915dbebf7.jpg?1562293987
 value=3.791
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Riot Piker
-image=https://magiccards.info/scans/en/dgm/37.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4daaccd2-733c-4b3b-aa3f-cc825bcc3e53.jpg?1562909244
 value=2.882
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Inspired Charge
-image=https://magiccards.info/scans/en/m19/15.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f17e624-219a-4e76-bfe0-f49c9ddd4a6d.jpg?1682202637
 image_updated=2018-08-07
 value=1.750
 rarity=C

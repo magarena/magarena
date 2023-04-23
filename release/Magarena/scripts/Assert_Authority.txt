@@ -1,5 +1,5 @@
 name=Assert Authority
-image=https://magiccards.info/scans/en/mi/30.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc339ed7-e1d4-4fe9-a4c4-b030d3e74c00.jpg?1562163986
 value=3.797
 rarity=U
 type=Instant

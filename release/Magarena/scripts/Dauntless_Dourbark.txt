@@ -1,5 +1,5 @@
 name=Dauntless Dourbark
-image=https://magiccards.info/scans/en/lw/203.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad87cb77-6b49-4e93-9151-29f53b48dd4b.jpg?1562362988
 value=4.223
 rarity=R
 type=Creature

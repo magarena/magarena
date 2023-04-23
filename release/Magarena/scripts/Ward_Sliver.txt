@@ -1,5 +1,5 @@
 name=Ward Sliver
-image=https://magiccards.info/scans/en/le/25.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e264369a-ab81-4938-9fa6-7c3e069442f4.jpg?1562940465
 value=3.984
 rarity=U
 type=Creature

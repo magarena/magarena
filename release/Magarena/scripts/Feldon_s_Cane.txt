@@ -1,5 +1,5 @@
 name=Feldon's Cane
-image=https://magiccards.info/scans/en/tsts/109.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/726ce95b-bc4d-4c34-a8e1-b4c6c28accc9.jpg?1562778128
 value=4.189
 rarity=U
 type=Artifact

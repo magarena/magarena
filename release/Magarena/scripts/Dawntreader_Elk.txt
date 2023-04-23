@@ -1,5 +1,5 @@
 name=Dawntreader Elk
-image=https://magiccards.info/scans/en/dka/111.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/524fab2b-ff28-4e02-9f25-e038c754b2cf.jpg?1601079210
 value=3.642
 rarity=C
 type=Creature

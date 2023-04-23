@@ -1,5 +1,5 @@
 name=Worry Beads
-image=https://magiccards.info/scans/en/mm/315.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/400edfe9-9efa-43f9-b713-13ad4eae2fa4.jpg?1562380392
 value=2.583
 rarity=R
 type=Artifact

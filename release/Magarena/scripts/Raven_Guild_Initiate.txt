@@ -1,5 +1,5 @@
 name=Raven Guild Initiate
-image=https://magiccards.info/scans/en/sc/46.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1e11f70-06c3-4dc5-aafe-82d65080085e.jpg?1562534262
 value=2.486
 rarity=C
 type=Creature

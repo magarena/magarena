@@ -1,5 +1,5 @@
 name=Barbarian Horde
-image=https://magiccards.info/scans/en/p3k/101.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1f930c2-e828-4566-b2df-3b054f311be5.jpg?1562257978
 value=1.714
 rarity=C
 type=Creature

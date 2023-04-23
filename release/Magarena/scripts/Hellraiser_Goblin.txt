@@ -1,5 +1,5 @@
 name=Hellraiser Goblin
-image=https://magiccards.info/scans/en/gtc/95.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6d4ab45-ab42-4144-9c57-ba046b76860c.jpg?1592754617
 image_updated=2016-12-10
 value=2.944
 rarity=U

@@ -1,5 +1,5 @@
 name=Ulrich's Kindred
-image=https://magiccards.info/scans/en/soi/187.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86d0ee03-a8c6-4f37-9885-60a26a2e2728.jpg?1576384943
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Timberline Ridge
-image=https://magiccards.info/scans/en/ia/356.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87cc2fc9-0a24-4ac1-afcc-9317b90c7178.jpg?1562920178
 value=2.140
 rarity=R
 type=Land

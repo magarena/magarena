@@ -1,5 +1,5 @@
 name=Dragonlord Ojutai
-image=https://magiccards.info/scans/en/dtk/219.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9f39d28-08eb-4eff-ae55-abd377877a27.jpg?1673485045
 value=2.500
 rarity=M
 type=Legendary,Creature

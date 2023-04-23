@@ -1,5 +1,5 @@
 name=Hillcomber Giant
-image=https://magiccards.info/scans/en/mma/18.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3d48857-2fb6-4163-8785-12436db1b37c.jpg?1561969032
 value=2.528
 rarity=C
 type=Creature

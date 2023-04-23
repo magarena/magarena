@@ -1,5 +1,5 @@
 name=Bone Splinters
-image=https://magiccards.info/scans/en/mm3/60.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/106b5c96-d1bd-433d-955e-ace0b60d3bc3.jpg?1673307007
 image_updated=2017-08-08
 value=3.012
 rarity=C

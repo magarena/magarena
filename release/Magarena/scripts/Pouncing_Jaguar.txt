@@ -1,5 +1,5 @@
 name=Pouncing Jaguar
-image=https://magiccards.info/scans/en/us/269.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d35ac6e5-3e46-4290-9683-51d6f54e4edf.jpg?1562939736
 value=4.088
 rarity=C
 type=Creature

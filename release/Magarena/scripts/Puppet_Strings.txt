@@ -1,5 +1,5 @@
 name=Puppet Strings
-image=https://magiccards.info/scans/en/tp/294.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53e0bb82-c64a-4ae6-962a-7a0c45329159.jpg?1562910395
 image_updated=2017-01-03
 value=3.828
 rarity=U

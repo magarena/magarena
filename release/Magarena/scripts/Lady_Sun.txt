@@ -1,5 +1,5 @@
 name=Lady Sun
-image=https://magiccards.info/scans/en/p3k/45.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f45e837-7b98-46ef-b21b-e3508ce999e5.jpg?1562255833
 value=3.310
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Armored Skaab
-image=https://magiccards.info/scans/en/isd/43.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce4d00f2-30e6-41d5-b997-c66350fe783c.jpg?1562837302
 value=3.006
 rarity=C
 type=Creature

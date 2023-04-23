@@ -1,5 +1,5 @@
 name=Safe Haven
-image=https://magiccards.info/scans/en/tsts/121.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d130205f-53e3-4c04-967c-4808d7945880.jpg?1562784189
 value=3.500
 rarity=R
 type=Land

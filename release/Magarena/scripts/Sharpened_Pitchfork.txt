@@ -1,5 +1,5 @@
 name=Sharpened Pitchfork
-image=https://magiccards.info/scans/en/isd/232.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36c8cdec-5ca9-40b0-ba90-48966e674546.jpg?1592762914
 value=3.176
 rarity=U
 type=Artifact

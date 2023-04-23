@@ -1,5 +1,5 @@
 name=Furystoke Giant
-image=https://magiccards.info/scans/en/shm/93.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b102dc6-d7ef-48dd-8b77-2ce43955f7fa.jpg?1562830554
 value=3.945
 rarity=R
 type=Creature

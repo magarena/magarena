@@ -1,5 +1,5 @@
 name=Cruel Edict
-image=https://magiccards.info/scans/en/10e/133.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54151d43-2e22-4e6c-a6fe-327959382dd1.jpg?1561771494
 image_updated=2016-11-28
 value=3.914
 removal=2

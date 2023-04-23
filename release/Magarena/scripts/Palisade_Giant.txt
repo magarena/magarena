@@ -1,5 +1,5 @@
 name=Palisade Giant
-image=https://magiccards.info/scans/en/rtr/15.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdfd37ca-e4c9-4674-a75f-15d8ebcce72b.jpg?1562795941
 value=3.364
 rarity=R
 type=Creature

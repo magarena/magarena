@@ -1,5 +1,5 @@
 name=Rapid Hybridization
-image=https://magiccards.info/scans/en/gtc/44.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b5c6ed5-0fb9-40d4-bdce-bcaff40ef9a6.jpg?1625976351
 image_updated=2016-02-29
 value=3.911
 rarity=U

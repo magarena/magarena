@@ -1,5 +1,5 @@
 name=Firebolt
-image=https://magiccards.info/scans/en/ema/130.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/882b8f98-ee51-4c94-a3eb-c79eb2b50d78.jpg?1562201821
 value=4.032
 rarity=C
 type=Sorcery

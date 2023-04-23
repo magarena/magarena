@@ -1,5 +1,5 @@
 name=Child of Alara
-image=https://magiccards.info/scans/en/cfx/101.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2373625-af3c-4c2a-a1d1-5288c446955d.jpg?1673148447
 value=3.321
 rarity=M
 type=Legendary,Creature

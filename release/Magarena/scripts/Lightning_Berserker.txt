@@ -1,5 +1,5 @@
 name=Lightning Berserker
-image=https://magiccards.info/scans/en/dtk/146.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3285cb6f-a9c0-4195-b6b2-3f33a16eaa01.jpg?1562784484
 value=2.500
 rarity=U
 type=Creature

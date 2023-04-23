@@ -1,5 +1,5 @@
 name=Chromanticore
-image=https://magiccards.info/scans/en/bng/144.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1182463-348b-45b3-a662-68f06ac53699.jpg?1681728973
 value=3.599
 rarity=M
 type=Enchantment,Creature

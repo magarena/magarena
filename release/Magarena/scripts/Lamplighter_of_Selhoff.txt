@@ -1,5 +1,5 @@
 name=Lamplighter of Selhoff
-image=https://magiccards.info/scans/en/soi/72.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80dadecc-f1f1-44a2-8829-6c94aade73a0.jpg?1576384134
 value=2.500
 rarity=C
 type=Creature

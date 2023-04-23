@@ -1,5 +1,5 @@
 name=Dancing Scimitar
-image=https://magiccards.info/scans/en/9e/292.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ede26e9e-95b6-4dbc-9263-59f370c4f6a3.jpg?1562743672
 value=3.089
 rarity=U
 type=Artifact,Creature

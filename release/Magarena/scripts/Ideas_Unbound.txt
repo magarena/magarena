@@ -1,5 +1,5 @@
 name=Ideas Unbound
-image=https://magiccards.info/scans/en/sok/40.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b0fe46d-08d6-48c3-be0d-650d8d3d66af.jpg?1562492548
 value=4.000
 rarity=C
 type=Sorcery

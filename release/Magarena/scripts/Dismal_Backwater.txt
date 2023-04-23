@@ -1,5 +1,5 @@
 name=Dismal Backwater
-image=https://magiccards.info/scans/en/c16/291.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33cd4f63-3484-4cee-8603-1f89cabee6c3.jpg?1682205851
 image_updated=2017-08-17
 value=3.333
 rarity=C

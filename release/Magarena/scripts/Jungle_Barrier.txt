@@ -1,5 +1,5 @@
 name=Jungle Barrier
-image=https://magiccards.info/scans/en/ima/202.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8097e6e-c04e-4266-a8f4-07e5fb0638d4.jpg?1562852517
 image_updated=2017-04-12
 value=3.694
 rarity=U

@@ -1,5 +1,5 @@
 name=Hand of Honor
-image=https://magiccards.info/scans/en/sok/12.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddef832c-b2be-4fa6-8d66-ac0d442f2d7d.jpg?1562496126
 value=3.918
 rarity=U
 type=Creature

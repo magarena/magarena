@@ -1,5 +1,5 @@
 name=Minamo, School at Water's Edge
-image=https://magiccards.info/scans/en/chk/279.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/7536292c-da25-41c8-ba28-1e35758a7f3d.jpg?1562761537
 value=4.317
 rarity=R
 type=Legendary,Land

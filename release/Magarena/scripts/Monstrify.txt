@@ -1,5 +1,5 @@
 name=Monstrify
-image=https://magiccards.info/scans/en/eve/70.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/585b52bc-aff5-4406-b55b-1b7decfd80f9.jpg?1562913442
 value=2.107
 rarity=C
 type=Sorcery

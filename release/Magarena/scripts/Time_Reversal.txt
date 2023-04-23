@@ -1,5 +1,5 @@
 name=Time Reversal
-image=https://magiccards.info/scans/en/m12/77.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d6500a1-5aea-4b83-b4dc-560fe547590d.jpg?1562637460
 value=3.186
 rarity=M
 type=Sorcery

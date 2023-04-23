@@ -1,5 +1,5 @@
 name=Pyromancer's Assault
-image=https://magiccards.info/scans/en/ogw/115.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2c8dad1-278c-4ced-8124-5593b140d361.jpg?1562931000
 image_updated=2016-02-29
 value=2.500
 rarity=U

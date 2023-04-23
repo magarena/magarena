@@ -1,5 +1,5 @@
 name=Timbermare
-image=https://magiccards.info/scans/en/pc/140.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d604bac-58b7-4479-8ab8-2e0680746e0e.jpg?1562568628
 value=4.136
 rarity=R
 type=Creature

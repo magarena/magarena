@@ -1,5 +1,5 @@
 name=Memory Erosion
-image=https://magiccards.info/scans/en/cmd/50.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2fedec9-d938-419b-91e1-b4d9ad970464.jpg?1562276518
 value=2.806
 rarity=R
 type=Enchantment

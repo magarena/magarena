@@ -1,5 +1,5 @@
 name=Wandering Champion
-image=https://magiccards.info/scans/en/frf/29.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f02599bd-c5d8-4bdc-9478-a7bad8185552.jpg?1547516041
 value=2.500
 rarity=U
 type=Creature

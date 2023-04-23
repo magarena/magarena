@@ -1,5 +1,5 @@
 name=Korozda Monitor
-image=https://magiccards.info/scans/en/rtr/129.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f319d57-7a54-4b10-86d4-58d7b3994844.jpg?1562784397
 value=2.560
 rarity=C
 type=Creature

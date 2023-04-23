@@ -1,5 +1,5 @@
 name=Razor Pendulum
-image=https://magiccards.info/scans/en/mr/282.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72562860-6097-4c63-9858-ae130805f4d6.jpg?1562720218
 value=3.041
 rarity=R
 type=Artifact

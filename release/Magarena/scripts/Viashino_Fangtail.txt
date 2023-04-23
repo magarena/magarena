@@ -1,5 +1,5 @@
 name=Viashino Fangtail
-image=https://magiccards.info/scans/en/rav/148.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2616dac9-bbcf-453a-9205-8e433a1c62aa.jpg?1598915948
 value=3.327
 rarity=C
 type=Creature

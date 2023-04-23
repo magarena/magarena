@@ -1,5 +1,5 @@
 name=Dominus of Fealty
-image=https://magiccards.info/scans/en/cmd/194.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91433559-ad01-4bde-b0c0-f9cbb3589e89.jpg?1592714018
 value=4.090
 rarity=R
 type=Creature

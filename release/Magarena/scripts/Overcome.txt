@@ -1,5 +1,5 @@
 name=Overcome
-image=https://magiccards.info/scans/en/hou/125.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/718352b9-1a68-44a1-947b-34f525f21223.jpg?1592517319
 value=2.500
 rarity=U
 type=Sorcery

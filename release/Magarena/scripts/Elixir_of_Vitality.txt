@@ -1,5 +1,5 @@
 name=Elixir of Vitality
-image=https://magiccards.info/scans/en/mr/265.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60450239-6055-4561-9f8c-565b4e4d9cb1.jpg?1562719744
 value=1.581
 rarity=U
 type=Artifact

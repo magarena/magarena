@@ -1,5 +1,5 @@
 name=Ghost-Lit Stalker
-image=https://magiccards.info/scans/en/sok/69.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd6e17a2-17f0-4d6b-b41a-3bd081b3ef63.jpg?1562947729
 image_updated=2016-12-03
 value=2.823
 rarity=U

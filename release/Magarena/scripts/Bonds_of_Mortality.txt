@@ -1,5 +1,5 @@
 name=Bonds of Mortality
-image=https://magiccards.info/scans/en/ogw/128.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff50de00-115f-41ed-892b-aac9bd13b9b9.jpg?1562946560
 image_updated=2016-02-29
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Skeletal Crocodile
-image=https://magiccards.info/scans/en/po/33.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebcbbd6f-2915-4b4c-85d3-1d9b55d36c11.jpg?1562448322
 value=2.488
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fell the Mighty
-image=https://magiccards.info/scans/en/c14/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b3e9a46-3b5a-48dc-bd39-fdba0b4a1e24.jpg?1682208416
 value=2.500
 rarity=R
 type=Sorcery

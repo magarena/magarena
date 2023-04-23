@@ -1,5 +1,5 @@
 name=Nezumi Bone-Reader
-image=https://magiccards.info/scans/en/chk/127.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0f27ff7-c7e4-4099-b3ac-6560c6ccba41.jpg?1562764173
 value=2.319
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Rishadan Footpad
-image=https://magiccards.info/scans/en/mm/94.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/493ee964-1a44-46a1-8606-90e215805483.jpg?1562380435
 value=3.033
 rarity=U
 type=Creature

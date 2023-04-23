@@ -1,5 +1,5 @@
 name=Dawn Elemental
-image=https://magiccards.info/scans/en/sc/7.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd90a303-25fb-460b-bd55-6249f61c361c.jpg?1562537377
 value=4.380
 rarity=R
 type=Creature

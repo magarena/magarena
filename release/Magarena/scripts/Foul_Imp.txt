@@ -1,5 +1,5 @@
 name=Foul Imp
-image=https://magiccards.info/scans/en/9e/132.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fe63448-1198-4a7c-948b-514fe4934add.jpg?1562229659
 image_updated=2016-12-02
 value=3.368
 rarity=C

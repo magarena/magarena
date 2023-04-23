@@ -1,5 +1,5 @@
 name=Martyred Rusalka
-image=https://magiccards.info/scans/en/gp/12.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81d7ad75-1fa9-4683-b0d0-737368de3796.jpg?1593271894
 value=2.552
 rarity=U
 type=Creature

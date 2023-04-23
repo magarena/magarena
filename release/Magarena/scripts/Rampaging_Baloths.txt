@@ -1,5 +1,5 @@
 name=Rampaging Baloths
-image=https://magiccards.info/scans/en/ima/184.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32bbe3c3-d00f-4d53-8738-e4aceb6a01ab.jpg?1625977206
 image_updated=2017-04-12
 value=3.750
 rarity=R

@@ -1,5 +1,5 @@
 name=Carbonize
-image=https://magiccards.info/scans/en/ema/122.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4b4767b-edd1-4e36-b363-52114a9afe5e.jpg?1580014480
 value=3.686
 rarity=C
 type=Instant

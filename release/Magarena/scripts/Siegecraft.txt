@@ -1,5 +1,5 @@
 name=Siegecraft
-image=https://magiccards.info/scans/en/ktk/23.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbd17ef9-9f1b-4937-a60a-d7175f04eef2.jpg?1562796498
 value=0.750
 rarity=C
 type=Enchantment

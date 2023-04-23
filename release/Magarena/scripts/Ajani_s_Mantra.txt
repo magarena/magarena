@@ -1,5 +1,5 @@
 name=Ajani's Mantra
-image=https://magiccards.info/scans/en/m11/2.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de4da30d-5c72-4323-b305-7277038b4a05.jpg?1562947893
 image_updated=2010-09-10
 value=2.871
 rarity=C

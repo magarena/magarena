@@ -1,5 +1,5 @@
 name=Novablast Wurm
-image=https://magiccards.info/scans/en/wwk/119.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64733f34-2eb4-4df5-8656-57bdb8b3a983.jpg?1562288510
 value=4.192
 rarity=M
 type=Creature

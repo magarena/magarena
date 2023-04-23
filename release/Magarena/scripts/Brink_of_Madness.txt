@@ -1,5 +1,5 @@
 name=Brink of Madness
-image=https://magiccards.info/scans/en/ul/50.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff5391d8-b546-4159-955e-16bb58052311.jpg?1562864252
 value=3.812
 rarity=R
 type=Enchantment

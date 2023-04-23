@@ -1,5 +1,5 @@
 name=Larceny
-image=https://magiccards.info/scans/en/8e/139.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cb3eddb-cd89-4cec-92b4-4006dece36a8.jpg?1562900696
 value=3.129
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Blinding Spray
-image=https://magiccards.info/scans/en/ktk/32.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b588355-c349-458d-aeb7-0e2780caa3f9.jpg?1562790980
 value=1.200
 rarity=U
 type=Instant

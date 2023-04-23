@@ -1,5 +1,5 @@
 name=Trained Cheetah
-image=https://magiccards.info/scans/en/p3k/154.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab242eab-5cab-41a0-bcf8-93a6919e4558.jpg?1634292230
 value=1.923
 rarity=U
 type=Creature

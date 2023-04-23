@@ -1,5 +1,5 @@
 name=Valiant Knight
-image=https://magiccards.info/scans/en/m19/42.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a85b8d6-36f7-4bde-a5f5-12509adac68f.jpg?1682208682
 value=2.500
 rarity=R
 type=Creature

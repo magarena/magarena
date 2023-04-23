@@ -1,5 +1,5 @@
 name=Archers' Parapet
-image=https://magiccards.info/scans/en/ktk/128.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64ac0667-8ecc-4034-89bb-dce0af531014.jpg?1562787707
 value=2.600
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Jousting Lance
-image=https://magiccards.info/scans/en/dom/221.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/446579ab-5e36-44e2-84d7-cfa537619146.jpg?1562734807
 value=2.500
 rarity=C
 type=Artifact

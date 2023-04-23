@@ -1,5 +1,5 @@
 name=Despotic Scepter
-image=https://magiccards.info/scans/en/ia/291.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0eaa8798-ee02-4799-ba33-adaa765bd760.jpg?1562867831
 value=3.738
 rarity=R
 type=Artifact

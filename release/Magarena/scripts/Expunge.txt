@@ -1,5 +1,5 @@
 name=Expunge
-image=https://magiccards.info/scans/en/us/135.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b4650f3-f3d5-48b1-9fc9-264d03442021.jpg?1562900390
 value=4.000
 removal=2
 rarity=C

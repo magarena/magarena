@@ -1,5 +1,5 @@
 name=Blightwidow
-image=https://magiccards.info/scans/en/mbs/77.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26da4278-ba44-4555-8837-e24627b46533.jpg?1562610206
 value=3.430
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Abyssal Horror
-image=https://magiccards.info/scans/en/7e/115.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccb42943-f599-4068-a364-a023e70c4ed2.jpg?1562248139
 value=2.690
 rarity=R
 type=Creature

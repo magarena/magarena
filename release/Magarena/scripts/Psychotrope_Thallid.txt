@@ -1,5 +1,5 @@
 name=Psychotrope Thallid
-image=https://magiccards.info/scans/en/pc/137.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2803fdc-2ae1-438c-b5b1-559817e85fdb.jpg?1562584242
 value=3.583
 rarity=U
 type=Creature

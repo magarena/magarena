@@ -1,5 +1,5 @@
 name=Diregraf Ghoul
-image=https://magiccards.info/scans/en/m19/92.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cf2d355-404e-4c21-9bc2-973d09a845a5.jpg?1562302248
 image_updated=2018-08-07
 value=3.842
 rarity=U

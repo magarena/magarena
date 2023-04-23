@@ -1,5 +1,5 @@
 name=Panic Spellbomb
-image=https://magiccards.info/scans/en/c14/259.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d572487-de58-4ec0-9649-0cdacff4bb48.jpg?1562274149
 value=2.722
 rarity=C
 type=Artifact

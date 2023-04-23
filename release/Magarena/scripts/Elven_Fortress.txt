@@ -1,5 +1,5 @@
 name=Elven Fortress
-image=https://magiccards.info/scans/en/fe/68.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9387105d-46d0-4db0-8980-dd0fded15eef.jpg?1562922358
 value=2.297
 rarity=C
 type=Enchantment

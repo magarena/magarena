@@ -1,5 +1,5 @@
 name=Blessing of the Nephilim
-image=https://magiccards.info/scans/en/di/4.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/689b4ba1-5bb5-458d-8900-19a330e0093c.jpg?1593272448
 value=3.307
 rarity=U
 type=Enchantment

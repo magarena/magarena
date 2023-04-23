@@ -1,5 +1,5 @@
 name=Metropolis Sprite
-image=https://magiccards.info/scans/en/gtc/42.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fce74849-2e08-4d08-b387-4693f1b9f653.jpg?1592516433
 value=2.809
 rarity=C
 type=Creature

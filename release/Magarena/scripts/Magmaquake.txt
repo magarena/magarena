@@ -1,5 +1,5 @@
 name=Magmaquake
-image=https://magiccards.info/scans/en/c14/180.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a8945b4-d2e1-4779-9c33-a8b062637fa6.jpg?1631587342
 image_updated=2016-02-29
 value=2.500
 rarity=R

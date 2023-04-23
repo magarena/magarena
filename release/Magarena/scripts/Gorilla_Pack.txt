@@ -1,5 +1,5 @@
 name=Gorilla Pack
-image=https://magiccards.info/scans/en/ia/135.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/046f6b76-5f17-4728-aa34-72b7eff1d4c9.jpg?1587912012
 value=1.875
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Pyromania
-image=https://magiccards.info/scans/en/tr/112.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a5af4e9-a2b6-43c7-8ff4-e761fbf693a7.jpg?1562630173
 value=1.457
 rarity=U
 type=Enchantment

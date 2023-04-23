@@ -1,5 +1,5 @@
 name=Bloodfire Dwarf
-image=https://magiccards.info/scans/en/ap/56.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86b5c38e-7d74-4862-8187-f5db4a3d1e0f.jpg?1562926762
 value=3.782
 rarity=C
 type=Creature

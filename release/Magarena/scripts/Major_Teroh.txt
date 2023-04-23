@@ -1,5 +1,5 @@
 name=Major Teroh
-image=https://magiccards.info/scans/en/tr/8.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3229ca5a-5340-48b8-bd46-b0b924c8faf7.jpg?1574250410
 value=3.908
 rarity=R
 type=Legendary,Creature

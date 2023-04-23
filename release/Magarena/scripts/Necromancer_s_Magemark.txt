@@ -1,5 +1,5 @@
 name=Necromancer's Magemark
-image=https://magiccards.info/scans/en/gp/53.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b045121-7742-41ee-be27-591692f42331.jpg?1593272216
 value=3.449
 rarity=C
 type=Enchantment

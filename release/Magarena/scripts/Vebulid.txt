@@ -1,5 +1,5 @@
 name=Vebulid
-image=https://magiccards.info/scans/en/us/165.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5623194-0cd9-4f3f-bab1-133d6b1e94fe.jpg?1562940156
 value=3.459
 rarity=R
 type=Creature

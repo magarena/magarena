@@ -1,5 +1,5 @@
 name=Emerald Dragonfly
-image=https://magiccards.info/scans/en/lg/98.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/931f2093-4d43-449e-82e8-beb97d25a0e8.jpg?1587912525
 image_updated=2016-12-02
 value=3.090
 rarity=C

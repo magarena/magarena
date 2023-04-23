@@ -1,5 +1,5 @@
 name=Tempest Drake
-image=https://magiccards.info/scans/en/vi/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54aa5262-d0d9-4b4a-8027-00393568b3df.jpg?1562277665
 value=3.609
 rarity=U
 type=Creature

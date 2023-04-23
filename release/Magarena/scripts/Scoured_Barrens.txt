@@ -1,5 +1,5 @@
 name=Scoured Barrens
-image=https://magiccards.info/scans/en/ema/244.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66aefbfc-3f67-443d-8ec4-cc9beafb64ee.jpg?1682205882
 value=3.333
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Jund Panorama
-image=https://magiccards.info/scans/en/ala/225.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50d8346a-e0b5-41eb-be89-7d1eb0e84f28.jpg?1673485769
 value=2.900
 rarity=C
 type=Land

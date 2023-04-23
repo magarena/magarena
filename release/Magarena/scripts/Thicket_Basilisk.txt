@@ -1,5 +1,5 @@
 name=Thicket Basilisk
-image=https://magiccards.info/scans/en/6e/256.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ac6ded0-4ff0-4827-a870-1a7851cd37b0.jpg?1559592416
 value=3.202
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Miren, the Moaning Well
-image=https://magiccards.info/scans/en/sok/163.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53d414f0-15ae-446b-a8d7-56c1b502740c.jpg?1562493732
 value=3.718
 rarity=R
 type=Legendary,Land

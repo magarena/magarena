@@ -1,5 +1,5 @@
 name=Deathrender
-image=https://magiccards.info/scans/en/cns/197.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea48de8d-edcd-414e-b630-473af2d95abe.jpg?1562867351
 value=3.571
 rarity=R
 type=Artifact

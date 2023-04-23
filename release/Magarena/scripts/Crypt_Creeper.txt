@@ -1,5 +1,5 @@
 name=Crypt Creeper
-image=https://magiccards.info/scans/en/avr/91.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/0382cb94-0836-4e23-99b7-034faa363203.jpg?1592708795
 value=3.028
 rarity=C
 type=Creature

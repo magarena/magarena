@@ -1,5 +1,5 @@
 name=Ice Over
-image=https://magiccards.info/scans/en/aer/35.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c01d2835-060c-4ac3-b586-84811878a64d.jpg?1576381494
 value=2.500
 rarity=C
 type=Enchantment

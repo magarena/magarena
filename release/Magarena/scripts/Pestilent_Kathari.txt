@@ -1,5 +1,5 @@
 name=Pestilent Kathari
-image=https://magiccards.info/scans/en/cfx/50.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dba00df7-2c8d-435a-86d1-6bd7b7413585.jpg?1562804160
 value=3.000
 rarity=C
 type=Creature

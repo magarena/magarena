@@ -1,5 +1,5 @@
 name=Gorilla Chieftain
-image=https://magiccards.info/scans/en/7e/250.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e76185a-519f-4bec-b399-989ebddbab71.jpg?1562244140
 value=3.217
 rarity=C
 type=Creature

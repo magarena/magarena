@@ -1,5 +1,5 @@
 name=Awakening
-image=https://magiccards.info/scans/en/sh/51.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59612c02-6028-4953-ac4d-aca94b0ce4b9.jpg?1562596411
 value=3.818
 rarity=R
 type=Enchantment

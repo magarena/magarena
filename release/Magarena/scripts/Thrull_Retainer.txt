@@ -1,5 +1,5 @@
 name=Thrull Retainer
-image=https://magiccards.info/scans/en/5e/60.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc830040-543e-4d19-8601-4b687ee49122.jpg?1559592357
 value=3.362
 rarity=U
 type=Enchantment

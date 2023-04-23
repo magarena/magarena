@@ -1,5 +1,5 @@
 name=Guttersnipe
-image=https://magiccards.info/scans/en/m19/145.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ed62dc1-4e78-423c-b9d3-def3b7e95c71.jpg?1568004420
 image_updated=2018-08-07
 value=4.212
 rarity=U

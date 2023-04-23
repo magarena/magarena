@@ -1,5 +1,5 @@
 name=Walker of the Grove
-image=https://magiccards.info/scans/en/mma/173.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab879034-2400-4451-9ba2-0325f61db537.jpg?1547517932
 value=3.667
 rarity=C
 type=Creature

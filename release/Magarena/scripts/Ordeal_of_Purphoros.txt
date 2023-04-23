@@ -1,5 +1,5 @@
 name=Ordeal of Purphoros
-image=https://magiccards.info/scans/en/ths/131.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efb74ccc-5ae5-4437-a0b4-c621ab4c2257.jpg?1562837203
 value=3.038
 rarity=U
 type=Enchantment

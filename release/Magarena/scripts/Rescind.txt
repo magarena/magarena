@@ -1,5 +1,5 @@
 name=Rescind
-image=https://magiccards.info/scans/en/us/92.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f138d4b-64ab-490f-a79b-94e516b1c047.jpg?1562898088
 value=4.000
 rarity=C
 type=Instant

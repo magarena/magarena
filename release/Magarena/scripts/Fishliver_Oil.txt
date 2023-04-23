@@ -1,5 +1,5 @@
 name=Fishliver Oil
-image=https://magiccards.info/scans/en/9e/77.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3c4a1f4-0a8e-4e70-a2a8-ceebbca63b6c.jpg?1562741330
 value=1.500
 rarity=C
 type=Enchantment

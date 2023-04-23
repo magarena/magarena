@@ -1,5 +1,5 @@
 name=Moonwing Moth
-image=https://magiccards.info/scans/en/sok/20.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f646ed53-c323-4f84-b8c9-39e31da1aca8.jpg?1562496627
 value=2.154
 rarity=C
 type=Creature

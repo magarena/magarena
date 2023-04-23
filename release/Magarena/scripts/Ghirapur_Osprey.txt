@@ -1,5 +1,5 @@
 name=Ghirapur Osprey
-image=https://magiccards.info/scans/en/aer/20.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2186f382-2d68-4191-b490-a072f49eaabf.jpg?1576381402
 value=2.500
 rarity=C
 type=Creature

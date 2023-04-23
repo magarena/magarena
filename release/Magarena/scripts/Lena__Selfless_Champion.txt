@@ -1,5 +1,5 @@
 name=Lena, Selfless Champion
-image=https://magiccards.info/scans/en/m19/21.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da1fb1a6-7f64-45a6-9fc0-a325b7600afa.jpg?1600696804
 value=2.500
 rarity=R
 type=Legendary,Creature

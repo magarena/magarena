@@ -1,5 +1,5 @@
 name=Void Grafter
-image=https://magiccards.info/scans/en/ogw/150.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c2e37e2-a4bd-4f90-9191-3125784a3369.jpg?1562916717
 image_updated=2016-02-29
 value=2.500
 rarity=U

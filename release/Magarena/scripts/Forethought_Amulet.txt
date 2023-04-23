@@ -1,5 +1,5 @@
 name=Forethought Amulet
-image=https://magiccards.info/scans/en/lg/221.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/700f53d3-0a84-4c55-8495-786f0f0783db.jpg?1562859221
 value=2.276
 rarity=R
 type=Artifact

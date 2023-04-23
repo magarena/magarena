@@ -1,5 +1,5 @@
 name=Reaper of Sheoldred
-image=https://magiccards.info/scans/en/nph/72.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a300a645-aec6-4cda-8c11-1e8a6af056ff.jpg?1562880361
 value=3.395
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Moonbow Illusionist
-image=https://magiccards.info/scans/en/sok/46.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4960789-1a45-4273-b2f2-34713f19d697.jpg?1562496620
 value=1.472
 rarity=C
 type=Creature

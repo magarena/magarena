@@ -1,5 +1,5 @@
 name=Deadbridge Shaman
-image=https://magiccards.info/scans/en/ema/85.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f110fa8e-3fbf-4a81-a743-e709f58e4414.jpg?1580014213
 value=2.500
 rarity=C
 type=Creature

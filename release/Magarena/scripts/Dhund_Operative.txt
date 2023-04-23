@@ -1,5 +1,5 @@
 name=Dhund Operative
-image=https://magiccards.info/scans/en/kld/74.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0efe5b1-c515-4642-aca2-3eba68fe63ff.jpg?1608909666
 image_updated=2016-10-05
 value=2.500
 rarity=C

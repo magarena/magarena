@@ -1,5 +1,5 @@
 name=Vicious Shadows
-image=https://magiccards.info/scans/en/ala/119.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d040791e-eee4-4eef-ace1-507216a5d268.jpg?1562709199
 value=2.680
 rarity=R
 type=Enchantment

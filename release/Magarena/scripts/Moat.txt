@@ -1,5 +1,5 @@
 name=Moat
-image=https://magiccards.info/scans/en/lg/197.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2dffeb3-c858-4b8c-ae1f-109721f7d2da.jpg?1559592270
 value=4.633
 rarity=R
 type=Enchantment

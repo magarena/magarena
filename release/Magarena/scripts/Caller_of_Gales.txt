@@ -1,5 +1,5 @@
 name=Caller of Gales
-image=https://magiccards.info/scans/en/cn2/103.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41bd76f3-299d-4bc0-a603-2cc7db7dac7b.jpg?1576382366
 image_updated=2017-08-29
 value=2.761
 rarity=C

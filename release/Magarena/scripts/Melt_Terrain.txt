@@ -1,5 +1,5 @@
 name=Melt Terrain
-image=https://magiccards.info/scans/en/som/97.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d94a1d1-6d24-46e1-9568-42e1a810ad31.jpg?1562815251
 value=3.000
 removal=3
 rarity=C

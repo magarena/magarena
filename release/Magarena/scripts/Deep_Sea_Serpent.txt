@@ -1,5 +1,5 @@
 name=Deep-Sea Serpent
-image=https://magiccards.info/scans/en/po/52.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2d7f8d8-30fb-47c7-8927-646c41f0b9bc.jpg?1562448336
 value=1.729
 rarity=U
 type=Creature

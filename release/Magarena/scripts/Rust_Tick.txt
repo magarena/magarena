@@ -1,5 +1,5 @@
 name=Rust Tick
-image=https://magiccards.info/scans/en/som/198.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d638741-1cfe-4496-8d7e-7849a82dcb24.jpg?1562815239
 value=2.808
 rarity=U
 type=Artifact,Creature

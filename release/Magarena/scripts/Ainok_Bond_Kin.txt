@@ -1,5 +1,5 @@
 name=Ainok Bond-Kin
-image=https://magiccards.info/scans/en/ima/4.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1778cf9a-2703-41e9-86d7-ec21af8cf61d.jpg?1673146927
 image_updated=2017-04-12
 value=3.643
 rarity=C

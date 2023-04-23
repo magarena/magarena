@@ -1,5 +1,5 @@
 name=Unified Strike
-image=https://magiccards.info/scans/en/on/58.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29906eca-0823-4cd6-890f-e5b93cc50a11.jpg?1562904834
 value=3.135
 rarity=C
 type=Instant

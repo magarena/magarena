@@ -1,5 +1,5 @@
 name=Morkrut Banshee
-image=https://magiccards.info/scans/en/c14/149.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de6fd09e-55af-41dd-a0c0-ba1064737c90.jpg?1598304842
 value=3.900
 rarity=U
 type=Creature

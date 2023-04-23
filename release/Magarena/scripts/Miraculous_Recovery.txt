@@ -1,5 +1,5 @@
 name=Miraculous Recovery
-image=https://magiccards.info/scans/en/vi/113.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b3459d9-a667-4cee-9b39-844013576d0b.jpg?1547515696
 image_updated=2016-09-12
 value=4.304
 rarity=U

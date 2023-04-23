@@ -1,5 +1,5 @@
 name=Benalish Veteran
-image=https://magiccards.info/scans/en/m12/10.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09a5603a-88c8-4b0c-b091-6d97e873859a.jpg?1562631539
 value=2.650
 rarity=C
 type=Creature

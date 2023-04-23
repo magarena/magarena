@@ -1,5 +1,5 @@
 name=Maul Splicer
-image=https://magiccards.info/scans/en/nph/114.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d2c6a6d-5b59-47d7-b290-df3640d9555f.jpg?1562876329
 value=2.993
 rarity=C
 type=Creature

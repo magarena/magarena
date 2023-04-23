@@ -1,5 +1,5 @@
 name=Hound of Griselbrand
-image=https://magiccards.info/scans/en/avr/141.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fe68bce-6207-4fd1-9e82-a18fd2d6ddca.jpg?1592709115
 value=3.891
 rarity=R
 type=Creature

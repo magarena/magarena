@@ -1,5 +1,5 @@
 name=Tempered Steel
-image=https://magiccards.info/scans/en/som/24.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/956cc7b5-b120-4a98-9509-03047d8acd4a.jpg?1599710913
 value=4.095
 rarity=R
 type=Enchantment

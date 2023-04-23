@@ -1,5 +1,5 @@
 name=Gravitational Shift
-image=https://magiccards.info/scans/en/roe/69.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/bad32b9f-0aa4-4036-90e6-c087cffd52e7.jpg?1562707941
 value=3.885
 rarity=R
 type=Enchantment

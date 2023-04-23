@@ -1,5 +1,5 @@
 name=Flesh-Eater Imp
-image=https://magiccards.info/scans/en/mbs/42.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9b1925a-d0d5-4ee6-bf80-734237a9dd31.jpg?1562935493
 value=3.446
 rarity=U
 type=Creature

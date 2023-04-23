@@ -1,5 +1,5 @@
 name=Shefet Dunes
-image=https://magiccards.info/scans/en/hou/183.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/6077f4e9-5717-4048-b798-4f8d535a4170.jpg?1562801103
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Harvest Season
-image=https://magiccards.info/scans/en/akh/170.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/326b5fad-bb8d-4019-84a8-1a319a14962e.jpg?1631234928
 value=2.500
 rarity=R
 type=Sorcery

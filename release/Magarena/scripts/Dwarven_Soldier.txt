@@ -1,5 +1,5 @@
 name=Dwarven Soldier
-image=https://magiccards.info/scans/en/5e/221.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dfb3fa6-f4d7-4ed0-b2be-661d59d95800.jpg?1559592390
 value=2.113
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Terminus
-image=https://magiccards.info/scans/en/mm3/26.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c726193f-e7bf-45b0-8eb5-2e9f62f5e7b0.jpg?1592710497
 image_updated=2017-08-08
 value=4.055
 removal=2

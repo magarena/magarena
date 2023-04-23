@@ -1,5 +1,5 @@
 name=Arctic Foxes
-image=https://magiccards.info/scans/en/ia/226.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98f99c3e-dddc-492f-aab6-1d899346a385.jpg?1587911503
 value=1.854
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Darksteel Axe
-image=https://magiccards.info/scans/en/ima/214.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d6bfe57-872d-4f69-bff5-a3f2584d6e0a.jpg?1599709024
 image_updated=2017-04-12
 value=3.495
 rarity=C

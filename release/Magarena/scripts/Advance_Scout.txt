@@ -1,5 +1,5 @@
 name=Advance Scout
-image=https://magiccards.info/scans/en/tp/213.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81ce7e1e-ffe5-4ced-8967-9a6917245240.jpg?1562054972
 image_updated=2016-11-20
 value=3.645
 rarity=C

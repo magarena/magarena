@@ -1,5 +1,5 @@
 name=Mournwhelk
-image=https://magiccards.info/scans/en/lw/127.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a62a282-5f94-444b-9095-4c36fabdad57.jpg?1562344877
 value=2.176
 rarity=C
 type=Creature

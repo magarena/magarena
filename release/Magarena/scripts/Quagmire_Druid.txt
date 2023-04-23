@@ -1,5 +1,5 @@
 name=Quagmire Druid
-image=https://magiccards.info/scans/en/ap/51.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccb57a8b-1b2e-4119-a90e-b2b3de79e791.jpg?1562938234
 value=3.000
 rarity=C
 type=Creature

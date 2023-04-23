@@ -1,5 +1,5 @@
 name=Horizon Seed
-image=https://magiccards.info/scans/en/chk/15.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e6317b9-a426-453b-a82a-e63905a77019.jpg?1562761994
 value=0.983
 rarity=U
 type=Creature

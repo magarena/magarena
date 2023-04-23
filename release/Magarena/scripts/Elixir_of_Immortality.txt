@@ -1,5 +1,5 @@
 name=Elixir of Immortality
-image=https://magiccards.info/scans/en/m13/204.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/6741ab27-9e1f-4aa5-96b9-b450eda7c5c2.jpg?1625978606
 value=3.516
 rarity=U
 type=Artifact

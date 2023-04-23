@@ -1,5 +1,5 @@
 name=Peregrine Griffin
-image=https://magiccards.info/scans/en/m12/29.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0296eaa6-f9fe-4fb8-af9c-04928d99e2e2.jpg?1562630555
 value=2.305
 rarity=C
 type=Creature

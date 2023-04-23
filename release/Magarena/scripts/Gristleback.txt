@@ -1,5 +1,5 @@
 name=Gristleback
-image=https://magiccards.info/scans/en/gp/87.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b82f763a-c960-4b59-8c77-f3bea7bd8c8b.jpg?1593272456
 value=2.929
 rarity=U
 type=Creature

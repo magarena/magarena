@@ -1,5 +1,5 @@
 name=Darkest Hour
-image=https://magiccards.info/scans/en/7e/128.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aeeb0f91-2084-448a-8226-95d7c87dd6bb.jpg?1562245787
 value=3.918
 rarity=R
 type=Enchantment

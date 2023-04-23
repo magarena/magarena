@@ -1,5 +1,5 @@
 name=Runed Servitor
-image=https://magiccards.info/scans/en/ima/226.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efedf97b-8901-4558-8bd0-3f488097f686.jpg?1601080938
 image_updated=2017-04-12
 value=2.500
 rarity=C

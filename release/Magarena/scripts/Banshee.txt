@@ -1,5 +1,5 @@
 name=Banshee
-image=https://magiccards.info/scans/en/dk/2.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12130a32-8c27-4e48-b1ae-b7991f751e7e.jpg?1562898748
 value=2.561
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Eviscerate
-image=https://magiccards.info/scans/en/dom/91.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62ba90b8-3a30-4058-b8d3-72900b1f4fe0.jpg?1562736723
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Lagac Lizard
-image=https://magiccards.info/scans/en/roe/154.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b47e9cfa-5547-4ef3-9e36-8d0f36dfa59a.jpg?1562707639
 value=1.556
 rarity=C
 type=Creature

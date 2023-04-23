@@ -1,5 +1,5 @@
 name=Throttle
-image=https://magiccards.info/scans/en/soi/138.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/953f9001-17b2-4087-8d87-5dbaa6c48b16.jpg?1576384606
 image_updated=2010-09-10
 value=2.250
 rarity=C

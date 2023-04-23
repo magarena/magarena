@@ -1,5 +1,5 @@
 name=Denizen of the Deep
-image=https://magiccards.info/scans/en/10e/80.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bf7e928-511c-4a31-b1fb-8c28bd41182a.jpg?1562546457
 image_updated=2016-12-01
 value=3.368
 rarity=R

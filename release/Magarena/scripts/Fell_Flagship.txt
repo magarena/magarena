@@ -1,5 +1,5 @@
 name=Fell Flagship
-image=https://magiccards.info/scans/en/xln/238.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2774bdb6-7a02-43c9-9e6f-75d0b09570ca.jpg?1562552332
 value=2.500
 rarity=R
 type=Artifact

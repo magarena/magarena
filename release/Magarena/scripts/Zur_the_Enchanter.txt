@@ -1,5 +1,5 @@
 name=Zur the Enchanter
-image=https://magiccards.info/scans/en/mm3/204.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aeb0160a-dfdc-4b1f-865e-ef905aee65d5.jpg?1673149301
 image_updated=2017-08-08
 value=4.186
 rarity=R

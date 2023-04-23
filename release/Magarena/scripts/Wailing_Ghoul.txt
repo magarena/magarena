@@ -1,5 +1,5 @@
 name=Wailing Ghoul
-image=https://magiccards.info/scans/en/emn/112.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e35a461-9a8e-4d08-b963-14c8b5237eec.jpg?1600826812
 image_updated=2016-09-05
 value=2.500
 rarity=C

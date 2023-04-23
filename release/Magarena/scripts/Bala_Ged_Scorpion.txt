@@ -1,5 +1,5 @@
 name=Bala Ged Scorpion
-image=https://magiccards.info/scans/en/ima/79.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6234dca-088f-4888-98d3-0d5a50eb5e61.jpg?1562853415
 image_updated=2017-04-12
 value=2.765
 rarity=C

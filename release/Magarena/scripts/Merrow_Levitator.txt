@@ -1,5 +1,5 @@
 name=Merrow Levitator
-image=https://magiccards.info/scans/en/eve/26.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2b2f122-0406-44f4-82b0-9f46b52e7d99.jpg?1562942834
 value=2.641
 rarity=C
 type=Creature

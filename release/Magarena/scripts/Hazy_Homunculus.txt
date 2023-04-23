@@ -1,5 +1,5 @@
 name=Hazy Homunculus
-image=https://magiccards.info/scans/en/pr/36.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f87489f2-82b7-4be6-80ae-3d5955d5ed92.jpg?1562941686
 value=2.411
 rarity=C
 type=Creature

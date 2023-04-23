@@ -1,5 +1,5 @@
 name=Krosan Avenger
-image=https://magiccards.info/scans/en/od/247.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0afd6911-32b5-410a-afb0-fd3d2996fe59.jpg?1562897104
 value=3.250
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shu Yun, the Silent Tempest
-image=https://magiccards.info/scans/en/frf/52.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd79e83a-a34b-472c-9317-12af4ed2ca28.jpg?1562829332
 value=2.500
 rarity=R
 type=Legendary,Creature

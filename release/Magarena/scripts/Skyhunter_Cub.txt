@@ -1,5 +1,5 @@
 name=Skyhunter Cub
-image=https://magiccards.info/scans/en/mi/21.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd46bfba-0685-4dcb-9b63-f90da8fb0ce7.jpg?1562158239
 value=2.929
 rarity=C
 type=Creature

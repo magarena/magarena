@@ -1,5 +1,5 @@
 name=Liliana's Influence
-image=https://magiccards.info/scans/en/akh/277.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28cdf48e-e0d4-45ca-b48d-74ada54ba62e.jpg?1561778286
 value=2.500
 rarity=R
 type=Sorcery

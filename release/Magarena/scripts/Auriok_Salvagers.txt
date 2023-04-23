@@ -1,5 +1,5 @@
 name=Auriok Salvagers
-image=https://magiccards.info/scans/en/mma/5.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/befb996b-1da6-41a3-8d9a-a45c2353c401.jpg?1598303109
 value=3.557
 rarity=R
 type=Creature

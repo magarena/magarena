@@ -1,5 +1,5 @@
 name=Tornado
-image=https://magiccards.info/scans/en/ai/86.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23f94cb6-1880-4c99-ba14-91807a6df92d.jpg?1559592399
 value=3.066
 rarity=R
 type=Enchantment

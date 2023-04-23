@@ -1,5 +1,5 @@
 name=Bull Hippo
-image=https://magiccards.info/scans/en/7e/233.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/044785ad-0f05-4944-aab3-49236727078d.jpg?1562231430
 value=3.347
 rarity=U
 type=Creature

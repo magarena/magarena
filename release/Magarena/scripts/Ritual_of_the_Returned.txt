@@ -1,5 +1,5 @@
 name=Ritual of the Returned
-image=https://magiccards.info/scans/en/jou/80.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20bdf00a-e7f1-42f4-997f-388f3b28bf8f.jpg?1593095819
 value=3.522
 rarity=U
 type=Instant

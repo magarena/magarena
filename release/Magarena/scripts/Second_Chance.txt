@@ -1,5 +1,5 @@
 name=Second Chance
-image=https://magiccards.info/scans/en/ul/41.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62d1a0da-40b9-4e79-bace-b93f98ae4695.jpg?1562863273
 value=4.278
 rarity=R
 type=Enchantment

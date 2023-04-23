@@ -1,5 +1,5 @@
 name=Banishing Light
-image=https://magiccards.info/scans/en/jou/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0858ab5a-930c-44f0-9621-4dd634cf39c6.jpg?1631233896
 image_updated=2016-02-29
 value=3.829
 rarity=U

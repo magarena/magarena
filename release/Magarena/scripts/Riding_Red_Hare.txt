@@ -1,5 +1,5 @@
 name=Riding Red Hare
-image=https://magiccards.info/scans/en/p3k/18.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0504a24-4b92-471a-8da4-02ec57eb43be.jpg?1562257527
 value=3.645
 rarity=C
 type=Sorcery

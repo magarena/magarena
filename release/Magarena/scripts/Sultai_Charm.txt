@@ -1,5 +1,5 @@
 name=Sultai Charm
-image=https://magiccards.info/scans/en/ktk/204.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72af6c1f-33a0-4e02-95b7-74ecaa6a6d87.jpg?1673305662
 value=4.167
 rarity=U
 type=Instant

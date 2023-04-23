@@ -1,5 +1,5 @@
 name=Spitting Gourna
-image=https://magiccards.info/scans/en/on/284.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/746b98bf-5398-4a00-b4fe-a990ea9cfd77.jpg?1562922510
 value=2.375
 rarity=C
 type=Creature

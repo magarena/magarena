@@ -1,5 +1,5 @@
 name=Dakmor Bat
-image=https://magiccards.info/scans/en/po2/8.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f45994db-776d-420e-9241-99bf3b71fa59.jpg?1562952975
 value=1.870
 rarity=C
 type=Creature

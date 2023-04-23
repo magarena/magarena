@@ -1,5 +1,5 @@
 name=Tolarian Winds
-image=https://magiccards.info/scans/en/7e/105.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fdd9981-bb5e-450d-90c3-4405a7097939.jpg?1562236403
 value=4.282
 rarity=C
 type=Instant

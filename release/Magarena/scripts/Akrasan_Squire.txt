@@ -1,5 +1,5 @@
 name=Akrasan Squire
-image=https://magiccards.info/scans/en/ala/1.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59fdc045-b938-4321-aec3-51685cbbaa52.jpg?1562704299
 value=3.646
 rarity=C
 type=Creature

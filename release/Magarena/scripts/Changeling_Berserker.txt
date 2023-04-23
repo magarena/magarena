@@ -1,5 +1,5 @@
 name=Changeling Berserker
-image=https://magiccards.info/scans/en/lw/160.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f2e8f24-2ee1-4516-bf60-7fe6a0c4baec.jpg?1562360477
 value=3.591
 removal=2
 rarity=U

@@ -1,5 +1,5 @@
 name=Cloud Sprite
-image=https://magiccards.info/scans/en/10e/75.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/feacf831-a6e4-456b-b8f2-d7ec554281a1.jpg?1562558414
 image_updated=2016-11-28
 value=2.381
 rarity=C

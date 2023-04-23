@@ -1,5 +1,5 @@
 name=Ensnare
-image=https://magiccards.info/scans/en/ne/32.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/055b344a-4eb1-4579-ac50-973b18e12fad.jpg?1562628470
 value=4.000
 rarity=U
 type=Instant

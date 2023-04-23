@@ -1,5 +1,5 @@
 name=Paragon of Gathering Mists
-image=https://magiccards.info/scans/en/m15/73.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5afc32ed-c1a9-4c37-bfe0-562818c046fc.jpg?1562787493
 value=3.167
 rarity=U
 type=Creature

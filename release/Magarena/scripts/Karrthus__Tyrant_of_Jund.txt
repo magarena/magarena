@@ -1,5 +1,5 @@
 name=Karrthus, Tyrant of Jund
-image=https://magiccards.info/scans/en/arb/117.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bfb85e8-278b-48a4-970e-e65bad1c4c47.jpg?1599708104
 value=4.101
 rarity=M
 type=Legendary,Creature

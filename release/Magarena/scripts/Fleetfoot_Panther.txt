@@ -1,5 +1,5 @@
 name=Fleetfoot Panther
-image=https://magiccards.info/scans/en/ps/108.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02db0f8e-5f87-427f-a3ff-0f261da679cd.jpg?1562895705
 value=4.250
 rarity=U
 type=Creature

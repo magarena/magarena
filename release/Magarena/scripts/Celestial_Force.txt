@@ -1,5 +1,5 @@
 name=Celestial Force
-image=https://magiccards.info/scans/en/cmd/10.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d51a3f0-2546-43c1-9a92-625997a24e9b.jpg?1592712744
 value=3.769
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Miming Slime
-image=https://magiccards.info/scans/en/gtc/126.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80d816cd-9ca6-4118-893e-5c6b167d9d81.jpg?1547517667
 value=3.093
 rarity=U
 type=Sorcery

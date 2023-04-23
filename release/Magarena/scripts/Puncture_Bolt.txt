@@ -1,5 +1,5 @@
 name=Puncture Bolt
-image=https://magiccards.info/scans/en/shm/102.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb5a0bc1-ab01-4381-8f54-7381a2213cdf.jpg?1562835984
 value=2.900
 rarity=C
 type=Instant

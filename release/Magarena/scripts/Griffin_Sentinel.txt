@@ -1,5 +1,5 @@
 name=Griffin Sentinel
-image=https://magiccards.info/scans/en/m12/21.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb13aaa4-d40a-4fb2-9fd6-62bf76db6a13.jpg?1592516077
 value=3.400
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Flourishing Defenses
-image=https://magiccards.info/scans/en/shm/114.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6223f5d6-83f1-454e-9cd5-aba157850430.jpg?1562830854
 value=3.280
 rarity=U
 type=Enchantment

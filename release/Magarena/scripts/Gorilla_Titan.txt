@@ -1,5 +1,5 @@
 name=Gorilla Titan
-image=https://magiccards.info/scans/en/od/241.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/435d9562-8f2b-43fe-ba21-8f5896378280.jpg?1562907333
 value=4.000
 rarity=U
 type=Creature

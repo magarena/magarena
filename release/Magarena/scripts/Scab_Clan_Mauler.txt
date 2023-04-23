@@ -1,5 +1,5 @@
 name=Scab-Clan Mauler
-image=https://magiccards.info/scans/en/gp/128.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93e040a6-9e10-4528-8ee1-ef3a00e93cbc.jpg?1593272770
 value=4.099
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Customs Depot
-image=https://magiccards.info/scans/en/mm/71.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/067d8c46-c334-4b00-af06-2e28b6086c58.jpg?1562378953
 value=3.161
 rarity=U
 type=Enchantment

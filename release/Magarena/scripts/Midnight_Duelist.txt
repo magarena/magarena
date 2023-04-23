@@ -1,5 +1,5 @@
 name=Midnight Duelist
-image=https://magiccards.info/scans/en/avr/27.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2371bd0c-ca38-4a62-b525-bef4d1ca0646.jpg?1592708345
 value=3.138
 rarity=C
 type=Creature

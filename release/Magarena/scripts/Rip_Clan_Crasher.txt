@@ -1,5 +1,5 @@
 name=Rip-Clan Crasher
-image=https://magiccards.info/scans/en/ala/189.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d61c4a0-054b-479e-82d9-dc60c5c708e2.jpg?1562706451
 value=2.981
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Hinterland Drake
-image=https://magiccards.info/scans/en/aer/34.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/418448d0-3e8d-4581-b598-696165775d23.jpg?1576381488
 value=2.500
 rarity=C
 type=Creature

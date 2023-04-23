@@ -1,5 +1,5 @@
 name=Goatnapper
-image=https://magiccards.info/scans/en/lw/172.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78f32852-2a18-453d-910a-829c3a2b5b1b.jpg?1562354224
 value=4.127
 rarity=U
 type=Creature

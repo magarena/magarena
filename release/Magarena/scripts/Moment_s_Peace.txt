@@ -1,5 +1,5 @@
 name=Moment's Peace
-image=https://magiccards.info/scans/en/od/251.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40ebe935-ccf9-435e-8fe8-53bcbf3526e7.jpg?1562906929
 value=4.063
 rarity=C
 type=Instant

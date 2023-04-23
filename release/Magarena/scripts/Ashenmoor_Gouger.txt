@@ -1,5 +1,5 @@
 name=Ashenmoor Gouger
-image=https://magiccards.info/scans/en/mm2/190.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89ad79a3-050a-43f0-81ea-7f8c2ae00abf.jpg?1562264747
 value=4.014
 rarity=U
 type=Creature

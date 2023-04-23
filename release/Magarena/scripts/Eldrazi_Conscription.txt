@@ -1,5 +1,5 @@
 name=Eldrazi Conscription
-image=https://magiccards.info/scans/en/roe/3.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3909816-5cc2-4712-bc7d-534ae0b9229c.jpg?1547515250
 value=4.266
 rarity=R
 type=Tribal,Enchantment

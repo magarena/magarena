@@ -1,5 +1,5 @@
 name=Riptide Laboratory
-image=https://magiccards.info/scans/en/on/322.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25a9cb87-e572-4885-8561-1d4b158ec7e4.jpg?1626101076
 value=4.134
 rarity=R
 type=Land

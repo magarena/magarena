@@ -1,5 +1,5 @@
 name=Nantuko Shaman
-image=https://magiccards.info/scans/en/ima/176.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3370c6d-a743-49b3-b869-da65b49391d9.jpg?1619398456
 image_updated=2017-04-12
 value=3.750
 rarity=C

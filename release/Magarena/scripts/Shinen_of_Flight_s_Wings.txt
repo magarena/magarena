@@ -1,5 +1,5 @@
 name=Shinen of Flight's Wings
-image=https://magiccards.info/scans/en/sok/57.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67cdad5d-5979-4bbd-90a4-00173d23707b.jpg?1562494193
 value=1.806
 rarity=C
 type=Creature

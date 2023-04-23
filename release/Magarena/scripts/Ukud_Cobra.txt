@@ -1,5 +1,5 @@
 name=Ukud Cobra
-image=https://magiccards.info/scans/en/dtk/123.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71d2f6ee-af76-48f0-898d-3a19698d2790.jpg?1562788201
 value=2.500
 rarity=U
 type=Creature

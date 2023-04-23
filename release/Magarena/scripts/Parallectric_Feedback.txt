@@ -1,5 +1,5 @@
 name=Parallectric Feedback
-image=https://magiccards.info/scans/en/gp/71.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/891f1d29-377a-4f71-917f-ff10e785caee.jpg?1593272344
 value=3.750
 rarity=R
 type=Instant

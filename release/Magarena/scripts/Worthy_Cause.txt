@@ -1,5 +1,5 @@
 name=Worthy Cause
-image=https://magiccards.info/scans/en/tp/265.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f610d8b-1782-43a4-bfb3-40887bdedba0.jpg?1562052799
 value=2.594
 rarity=U
 type=Instant

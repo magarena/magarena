@@ -1,5 +1,5 @@
 name=Ashcoat Bear
-image=https://magiccards.info/scans/en/ts/190.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b7a6ab5-8a8f-492c-8484-3089354ce8cf.jpg?1562927804
 value=4.105
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sylvok Replica
-image=https://magiccards.info/scans/en/som/210.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7caa3ce3-15a9-40ca-ad45-baff0f276483.jpg?1562819404
 value=3.442
 rarity=C
 type=Artifact,Creature

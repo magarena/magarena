@@ -1,5 +1,5 @@
 name=Bellowing Aegisaur
-image=https://magiccards.info/scans/en/xln/4.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3e3b6c5-fd30-4d45-a122-ce60d5707357.jpg?1562563552
 value=2.500
 rarity=U
 type=Creature

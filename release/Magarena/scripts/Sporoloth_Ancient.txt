@@ -1,5 +1,5 @@
 name=Sporoloth Ancient
-image=https://magiccards.info/scans/en/mma/163.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57a96041-1b20-464e-9119-93c19675ac46.jpg?1619398725
 value=3.694
 rarity=C
 type=Creature

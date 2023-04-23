@@ -1,5 +1,5 @@
 name=Palace Sentinels
-image=https://magiccards.info/scans/en/cn2/19.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fd0e9a0-f974-412a-aba1-c4fb68351149.jpg?1608908912
 image_updated=2016-09-05
 value=2.500
 rarity=C

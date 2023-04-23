@@ -1,5 +1,5 @@
 name=Summon the School
-image=https://magiccards.info/scans/en/lw/42.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13a4c124-216b-44b1-b49a-3db3f033e4cd.jpg?1562338889
 value=3.638
 rarity=U
 type=Tribal,Sorcery

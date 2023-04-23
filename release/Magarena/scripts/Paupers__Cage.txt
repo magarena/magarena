@@ -1,5 +1,5 @@
 name=Paupers' Cage
-image=https://magiccards.info/scans/en/mr/279.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3411c350-a940-4172-b558-f5dc44b4fb33.jpg?1562718779
 value=2.969
 rarity=R
 type=Artifact

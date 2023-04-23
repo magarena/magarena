@@ -1,5 +1,5 @@
 name=Marrow-Gnawer
-image=https://magiccards.info/scans/en/chk/124.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72e4548b-c171-4f10-b896-af37543dcf0f.jpg?1579203069
 value=4.033
 rarity=R
 type=Legendary,Creature

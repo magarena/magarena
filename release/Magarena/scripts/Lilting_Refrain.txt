@@ -1,5 +1,5 @@
 name=Lilting Refrain
-image=https://magiccards.info/scans/en/us/83.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef319154-c5fc-4432-a860-a05508c132d4.jpg?1562945423
 value=3.583
 rarity=U
 type=Enchantment

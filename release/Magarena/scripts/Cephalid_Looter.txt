@@ -1,5 +1,5 @@
 name=Cephalid Looter
-image=https://magiccards.info/scans/en/od/72.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb6f1c4e-4fbc-4474-8dd2-5846d417b6ab.jpg?1562933069
 value=3.162
 rarity=C
 type=Creature

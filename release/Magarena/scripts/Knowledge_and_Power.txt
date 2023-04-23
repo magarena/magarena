@@ -1,5 +1,5 @@
 name=Knowledge and Power
-image=https://magiccards.info/scans/en/jou/101.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cd48a18-df3d-4381-a7e7-a3e9ae18d4d7.jpg?1593096016
 value=2.615
 rarity=U
 type=Enchantment

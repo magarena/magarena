@@ -1,5 +1,5 @@
 name=Traitor's Roar
-image=https://magiccards.info/scans/en/shm/200.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/751e2700-6425-45b8-b026-8c78098f08b2.jpg?1562831801
 value=3.047
 rarity=C
 type=Sorcery

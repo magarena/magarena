@@ -1,5 +1,5 @@
 name=Cage of Hands
-image=https://magiccards.info/scans/en/pc2/4.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/655aefd8-8b0b-4c65-9973-376bbf05375b.jpg?1608908704
 image_updated=2016-02-29
 value=3.233
 rarity=C

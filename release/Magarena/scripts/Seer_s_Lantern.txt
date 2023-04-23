@@ -1,5 +1,5 @@
 name=Seer's Lantern
-image=https://magiccards.info/scans/en/ogw/165.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09bcfd12-6b50-4fdf-9bda-6d52bba2f897.jpg?1608911681
 image_updated=2016-02-29
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Barkhide Mauler
-image=https://magiccards.info/scans/en/on/246.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9196ce7-3ff4-4dda-a628-559ada11c9ba.jpg?1562938641
 value=2.700
 rarity=C
 type=Creature

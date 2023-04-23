@@ -1,5 +1,5 @@
 name=Ironshell Beetle
-image=https://magiccards.info/scans/en/ju/121.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d5573f8-5fdd-4050-af2a-fbdec51e4f37.jpg?1601079691
 value=3.000
 rarity=C
 type=Creature

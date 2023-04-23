@@ -1,5 +1,5 @@
 name=Gods Willing
-image=https://magiccards.info/scans/en/a25/16.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8181eee-c03b-40db-aea1-24a4b34a4785.jpg?1673146982
 image_updated=2018-04-27
 value=3.509
 rarity=C

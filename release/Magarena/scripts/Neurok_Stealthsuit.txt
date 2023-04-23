@@ -1,5 +1,5 @@
 name=Neurok Stealthsuit
-image=https://magiccards.info/scans/en/5dn/140.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5e58c74-0ba6-452a-94a6-8256c4f6aba8.jpg?1562937920
 value=3.873
 rarity=C
 type=Artifact

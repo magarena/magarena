@@ -1,5 +1,5 @@
 name=Jeskai Sage
-image=https://magiccards.info/scans/en/frf/38.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6dff4734-7b2a-4089-a78a-46199818f39d.jpg?1562826310
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Aim High
-image=https://magiccards.info/scans/en/soi/193.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7eda02d-ef3e-43e9-a557-8760221ee49a.jpg?1562944984
 value=2.500
 rarity=C
 type=Instant

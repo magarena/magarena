@@ -1,5 +1,5 @@
 name=Corpse Lunge
-image=https://magiccards.info/scans/en/isd/93.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a74b987-527a-4560-a018-19d6bdf7e8b7.jpg?1562827872
 value=2.413
 rarity=C
 type=Instant

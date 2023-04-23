@@ -1,5 +1,5 @@
 name=Lifetap
-image=https://magiccards.info/scans/en/5e/99.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af066a2d-d357-45a7-90d8-2c34b6d0ebf8.jpg?1562593280
 value=3.029
 rarity=U
 type=Enchantment

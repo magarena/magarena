@@ -1,5 +1,5 @@
 name=Onyx Mage
-image=https://magiccards.info/scans/en/m12/103.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eabd38e6-1e59-42d2-bd1a-555c77cf6747.jpg?1562664343
 value=3.922
 rarity=U
 type=Creature

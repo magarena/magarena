@@ -1,5 +1,5 @@
 name=Gobbling Ooze
-image=https://magiccards.info/scans/en/rtr/126.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/465d8a63-0ced-4aec-be34-2098b72c8af6.jpg?1562785600
 value=2.114
 rarity=U
 type=Creature

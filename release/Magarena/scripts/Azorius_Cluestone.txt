@@ -1,5 +1,5 @@
 name=Azorius Cluestone
-image=https://magiccards.info/scans/en/dgm/136.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09eeb301-bc28-4515-ad69-0b1b5164a5bc.jpg?1562896909
 value=2.595
 rarity=C
 type=Artifact

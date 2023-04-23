@@ -1,5 +1,5 @@
 name=Time of Heroes
-image=https://magiccards.info/scans/en/roe/49.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f70224d-e723-436d-8493-dcec5049f1a0.jpg?1562706804
 value=4.104
 rarity=U
 type=Enchantment

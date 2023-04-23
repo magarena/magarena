@@ -1,5 +1,5 @@
 name=Sultai Runemark
-image=https://magiccards.info/scans/en/frf/86.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98d73ae0-de01-4a70-a51c-b990687561a1.jpg?1562827948
 value=2.500
 rarity=C
 type=Enchantment

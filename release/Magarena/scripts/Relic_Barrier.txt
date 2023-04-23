@@ -1,5 +1,5 @@
 name=Relic Barrier
-image=https://magiccards.info/scans/en/5dn/147.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12d760d8-030e-47d0-a555-d88ee43d3d80.jpg?1562875553
 value=3.329
 rarity=U
 type=Artifact

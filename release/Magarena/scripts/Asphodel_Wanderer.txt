@@ -1,5 +1,5 @@
 name=Asphodel Wanderer
-image=https://magiccards.info/scans/en/ths/77.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/675112db-c477-43f4-b755-54162445fb49.jpg?1562819248
 value=2.239
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Infectious Horror
-image=https://magiccards.info/scans/en/m19/101.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d17aaa92-10ca-4f70-b45e-5a51e9192efb.jpg?1562304369
 image_updated=2018-08-07
 value=3.667
 rarity=C

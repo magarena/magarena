@@ -1,5 +1,5 @@
 name=Goblin Caves
-image=https://magiccards.info/scans/en/dk/63.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcba2255-b0ae-43b9-b9fd-62da04d5e397.jpg?1562939551
 value=3.283
 rarity=C
 type=Enchantment

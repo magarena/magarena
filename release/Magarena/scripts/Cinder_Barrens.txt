@@ -1,5 +1,5 @@
 name=Cinder Barrens
-image=https://magiccards.info/scans/en/m19/248.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08136a39-bf9f-493c-92d6-178567647fb2.jpg?1568005064
 image_updated=2018-08-07
 value=2.500
 rarity=C

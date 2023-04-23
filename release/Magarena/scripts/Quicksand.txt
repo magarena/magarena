@@ -1,5 +1,5 @@
 name=Quicksand
-image=https://magiccards.info/scans/en/a25/245.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce833a90-7c1d-4c05-ace3-57e974c0769b.jpg?1562441184
 image_updated=2018-04-27
 value=3.625
 rarity=U

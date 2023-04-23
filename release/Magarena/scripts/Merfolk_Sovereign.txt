@@ -1,5 +1,5 @@
 name=Merfolk Sovereign
-image=https://magiccards.info/scans/en/m11/65.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7810c40-7bb4-499f-8ad0-1d3118b451e7.jpg?1592764612
 value=4.151
 rarity=R
 type=Creature

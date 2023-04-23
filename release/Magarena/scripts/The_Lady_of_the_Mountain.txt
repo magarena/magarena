@@ -1,5 +1,5 @@
 name=The Lady of the Mountain
-image=https://magiccards.info/scans/en/lg/303.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70802e74-c292-446f-aa9a-dd32454a4b3d.jpg?1562918683
 value=2.400
 rarity=U
 type=Legendary,Creature

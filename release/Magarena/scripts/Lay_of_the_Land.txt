@@ -1,5 +1,5 @@
 name=Lay of the Land
-image=https://magiccards.info/scans/en/cn2/185.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42018b2d-b8db-4d37-b42f-15ee0d1a22ee.jpg?1576383053
 image_updated=2017-08-29
 value=2.439
 rarity=C

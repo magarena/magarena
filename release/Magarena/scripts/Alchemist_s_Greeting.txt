@@ -1,5 +1,5 @@
 name=Alchemist's Greeting
-image=https://magiccards.info/scans/en/emn/116.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b68c607-27f2-4a00-9876-186b5a426764.jpg?1568004329
 image_updated=2016-09-05
 value=2.500
 rarity=C

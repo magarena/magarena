@@ -1,5 +1,5 @@
 name=Scrapdiver Serpent
-image=https://magiccards.info/scans/en/som/41.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce3ba315-f4da-4022-9251-961a378b35ce.jpg?1608909442
 value=2.882
 rarity=C
 type=Creature

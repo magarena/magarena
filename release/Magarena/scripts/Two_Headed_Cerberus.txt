@@ -1,5 +1,5 @@
 name=Two-Headed Cerberus
-image=https://magiccards.info/scans/en/ths/146.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8d2f75c-ef2a-4d30-86d1-c47307fc47ac.jpg?1562838650
 value=3.292
 rarity=C
 type=Creature

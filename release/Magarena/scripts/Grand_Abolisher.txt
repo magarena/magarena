@@ -1,5 +1,5 @@
 name=Grand Abolisher
-image=https://magiccards.info/scans/en/c14/74.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4c4f694-618a-43ed-8781-2a51a234ba8e.jpg?1592765335
 value=4.565
 rarity=R
 type=Creature

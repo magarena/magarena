@@ -1,5 +1,5 @@
 name=Bower Passage
-image=https://magiccards.info/scans/en/avr/170.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9f0048f-aaa0-4597-b898-ee754d0bbe4b.jpg?1592709295
 value=3.609
 rarity=U
 type=Enchantment

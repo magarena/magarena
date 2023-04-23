@@ -1,5 +1,5 @@
 name=King Cheetah
-image=https://magiccards.info/scans/en/9e/250.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82fc34b5-7558-41b1-97e4-1ee13527dec4.jpg?1562737798
 value=3.308
 rarity=U
 type=Creature

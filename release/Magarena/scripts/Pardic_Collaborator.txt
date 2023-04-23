@@ -1,5 +1,5 @@
 name=Pardic Collaborator
-image=https://magiccards.info/scans/en/tr/106.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9a60f33-1d1a-4c7c-9eb2-d9fc0d56b127.jpg?1562631428
 value=3.074
 rarity=U
 type=Creature

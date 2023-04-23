@@ -1,5 +1,5 @@
 name=Howlpack Resurgence
-image=https://magiccards.info/scans/en/soi/211.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0063470-3728-4d7e-8f77-5e9c9c7d6a6a.jpg?1576385122
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Vampiric Touch
-image=https://magiccards.info/scans/en/po/38.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/231f7598-8c47-4828-8240-e2a545a7ac5b.jpg?1562445697
 value=2.400
 rarity=C
 type=Sorcery

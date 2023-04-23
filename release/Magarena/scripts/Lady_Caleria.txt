@@ -1,5 +1,5 @@
 name=Lady Caleria
-image=https://magiccards.info/scans/en/lg/279.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84b9a2b7-6ff7-4a81-86ae-64cc77c23030.jpg?1579814123
 value=2.843
 rarity=R
 type=Legendary,Creature

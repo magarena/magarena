@@ -1,5 +1,5 @@
 name=Dragonmaster Outcast
-image=https://magiccards.info/scans/en/bfz/144.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dfc4cfe-d1f7-43e4-a543-35c050d01a8f.jpg?1631587151
 image_updated=2015-11-08
 value=4.325
 rarity=M

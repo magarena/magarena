@@ -1,5 +1,5 @@
 name=Vestige of Emrakul
-image=https://magiccards.info/scans/en/bfz/136.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5d84986-64a1-4bd1-a4f6-3eb147aca357.jpg?1562934205
 image_updated=2015-11-08
 value=2.500
 rarity=C

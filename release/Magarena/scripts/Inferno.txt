@@ -1,5 +1,5 @@
 name=Inferno
-image=https://magiccards.info/scans/en/8e/196.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf6895de-9c74-49a0-a71c-1e55a6897dfa.jpg?1562933500
 value=4.190
 rarity=R
 type=Instant

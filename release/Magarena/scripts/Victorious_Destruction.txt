@@ -1,5 +1,5 @@
 name=Victorious Destruction
-image=https://magiccards.info/scans/en/nph/99.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b81cb30-e9f8-41f3-a10b-26e0ba2503aa.jpg?1562879001
 value=1.882
 rarity=C
 type=Sorcery

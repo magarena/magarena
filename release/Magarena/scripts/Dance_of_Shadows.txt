@@ -1,5 +1,5 @@
 name=Dance of Shadows
-image=https://magiccards.info/scans/en/chk/108.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38a1b403-776f-4fd7-a77a-b73946ab179d.jpg?1562759348
 value=1.786
 rarity=U
 type=Sorcery

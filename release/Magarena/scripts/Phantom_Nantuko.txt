@@ -1,5 +1,5 @@
 name=Phantom Nantuko
-image=https://magiccards.info/scans/en/ju/128.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fd65594-cf66-4dd4-8d7b-b565756f2f86.jpg?1592673110
 value=3.731
 rarity=R
 type=Creature

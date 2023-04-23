@@ -1,5 +1,5 @@
 name=Chorus of Might
-image=https://magiccards.info/scans/en/rtr/119.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/214dc9c1-154d-4c35-845d-dd2928f1e142.jpg?1562783633
 value=2.167
 rarity=C
 type=Instant

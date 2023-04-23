@@ -1,5 +1,5 @@
 name=Artillerize
-image=https://magiccards.info/scans/en/nph/79.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/034522ae-f531-44d9-b186-ada046ce0abc.jpg?1562875185
 value=2.800
 rarity=C
 type=Instant

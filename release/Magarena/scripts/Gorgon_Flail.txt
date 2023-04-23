@@ -1,5 +1,5 @@
 name=Gorgon Flail
-image=https://magiccards.info/scans/en/m10/211.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eefc48cb-79aa-4e28-a736-ae9e4e2bc97b.jpg?1562000546
 value=4.181
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Imperious Perfect
-image=https://magiccards.info/scans/en/ema/173.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a93e9d33-0c5d-4890-a1aa-84f59af9d4fb.jpg?1631234951
 value=4.360
 rarity=R
 type=Creature

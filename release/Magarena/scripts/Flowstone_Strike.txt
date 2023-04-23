@@ -1,5 +1,5 @@
 name=Flowstone Strike
-image=https://magiccards.info/scans/en/ne/84.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1203053-0829-4f46-a361-62cb9cd17280.jpg?1562631304
 value=2.021
 rarity=C
 type=Instant

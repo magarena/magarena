@@ -1,5 +1,5 @@
 name=Death Pulse
-image=https://magiccards.info/scans/en/on/137.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/524fd470-e535-47ea-98a0-6187e429dfe1.jpg?1562914293
 value=3.704
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Wrath of Marit Lage
-image=https://magiccards.info/scans/en/8e/115.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0111ef4-f0be-4af3-981f-aa19a17a3d7b.jpg?1562927296
 value=3.274
 rarity=U
 type=Enchantment

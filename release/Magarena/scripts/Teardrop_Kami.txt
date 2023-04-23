@@ -1,5 +1,5 @@
 name=Teardrop Kami
-image=https://magiccards.info/scans/en/bok/55.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b015ae03-c083-4e4a-b4a2-88e55aef9001.jpg?1562879145
 value=2.926
 rarity=C
 type=Creature

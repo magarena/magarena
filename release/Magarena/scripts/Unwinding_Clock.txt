@@ -1,5 +1,5 @@
 name=Unwinding Clock
-image=https://magiccards.info/scans/en/nph/164.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3fd1a59-4ade-459f-90d2-1fc67d6d1384.jpg?1592711373
 value=3.734
 rarity=R
 type=Artifact

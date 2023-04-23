@@ -1,5 +1,5 @@
 name=Steppe Glider
-image=https://magiccards.info/scans/en/ogw/36.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a23eda79-b3d2-473b-beda-ac5e983e7f21.jpg?1576267192
 image_updated=2016-02-29
 value=2.500
 rarity=U

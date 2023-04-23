@@ -1,5 +1,5 @@
 name=Throne Warden
-image=https://magiccards.info/scans/en/cn2/25.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd1408a3-ddba-4837-b930-9663c5c83007.jpg?1576381668
 image_updated=2016-09-05
 value=2.500
 rarity=C

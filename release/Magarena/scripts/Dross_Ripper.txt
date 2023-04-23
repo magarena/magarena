@@ -1,5 +1,5 @@
 name=Dross Ripper
-image=https://magiccards.info/scans/en/mbs/106.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55d54f08-53f0-41b2-8b86-8244515224eb.jpg?1562611427
 value=2.254
 rarity=C
 type=Artifact,Creature

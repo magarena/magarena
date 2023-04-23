@@ -1,5 +1,5 @@
 name=Imperial Seal
-image=https://magiccards.info/scans/en/p3k/78.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e71a6bd3-7478-4c3a-8ae0-98352ce28492.jpg?1673147544
 value=4.646
 rarity=R
 type=Sorcery

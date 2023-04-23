@@ -1,5 +1,5 @@
 name=Fettergeist
-image=https://magiccards.info/scans/en/avr/52.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e89ef0e-1bfe-4e12-90ee-38f993cd8110.jpg?1592708530
 value=3.264
 rarity=U
 type=Creature

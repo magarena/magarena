@@ -1,5 +1,5 @@
 name=Rushwood Elemental
-image=https://magiccards.info/scans/en/mm/264.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52128694-d9f5-4acb-b684-bb02a4e766b8.jpg?1562380863
 value=4.142
 rarity=R
 type=Creature

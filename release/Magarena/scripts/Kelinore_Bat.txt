@@ -1,5 +1,5 @@
 name=Kelinore Bat
-image=https://magiccards.info/scans/en/m10/101.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/542b3ec9-7800-4dea-bf39-b51a11b58339.jpg?1561980326
 value=1.904
 rarity=C
 type=Creature

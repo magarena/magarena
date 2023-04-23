@@ -1,5 +1,5 @@
 name=Lurking Skirge
-image=https://magiccards.info/scans/en/ul/55.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9063cc12-a822-4488-856e-93d70ecfe37f.jpg?1562863741
 value=3.853
 rarity=R
 type=Enchantment

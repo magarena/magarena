@@ -1,5 +1,5 @@
 name=Victual Sliver
-image=https://magiccards.info/scans/en/sh/143.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/097d513b-23e9-49a5-aa14-a381a3018cec.jpg?1562428178
 value=3.737
 rarity=U
 type=Creature

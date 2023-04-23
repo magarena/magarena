@@ -1,5 +1,5 @@
 name=Eiganjo Castle
-image=https://magiccards.info/scans/en/chk/275.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/219c1d76-40cf-4edf-8145-e6cec8ca39ad.jpg?1562758411
 value=4.047
 rarity=R
 type=Legendary,Land

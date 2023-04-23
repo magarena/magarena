@@ -1,5 +1,5 @@
 name=Dawn of the Dead
-image=https://magiccards.info/scans/en/tr/59.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baabadd3-3fc1-4c9a-ad3b-c79d60fb3390.jpg?1562631743
 value=4.000
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Accursed Horde
-image=https://magiccards.info/scans/en/hou/56.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/709bcbca-7238-4c31-8d9e-ec0d54d0b298.jpg?1576267280
 value=2.500
 rarity=U
 type=Creature

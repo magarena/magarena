@@ -1,5 +1,5 @@
 name=Riptide Entrancer
-image=https://magiccards.info/scans/en/on/108.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cd9abc9-f289-4294-bc0f-4addc8b92a4e.jpg?1562905497
 value=3.864
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Aviation Pioneer
-image=https://magiccards.info/scans/en/m19/46.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6966738-b4fc-4854-81b0-09de305854f2.jpg?1614975429
 value=2.500
 rarity=C
 type=Creature

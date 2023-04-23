@@ -1,5 +1,5 @@
 name=Goblin Guide
-image=https://magiccards.info/scans/en/mm3/96.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c0f5411-1940-410f-96ce-6f92513f753a.jpg?1599706366
 image_updated=2017-08-08
 value=4.307
 rarity=R

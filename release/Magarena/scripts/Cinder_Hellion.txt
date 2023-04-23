@@ -1,5 +1,5 @@
 name=Cinder Hellion
-image=https://magiccards.info/scans/en/ogw/105.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a069118-42e4-40e3-a2ba-593ac89b9064.jpg?1562913292
 image_updated=2016-02-29
 value=2.500
 rarity=C

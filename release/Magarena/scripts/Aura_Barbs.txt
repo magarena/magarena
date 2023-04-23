@@ -1,5 +1,5 @@
 name=Aura Barbs
-image=https://magiccards.info/scans/en/bok/94.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/132af2c2-2bae-4c05-9d61-a5777818a057.jpg?1562875555
 value=3.094
 rarity=U
 type=Instant

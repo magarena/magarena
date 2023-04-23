@@ -1,5 +1,5 @@
 name=Dakmor Ghoul
-image=https://magiccards.info/scans/en/st/70.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5caeb415-0e90-4f5b-ada4-a46241cf5dda.jpg?1562874087
 value=3.300
 rarity=U
 type=Creature

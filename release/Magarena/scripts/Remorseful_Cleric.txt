@@ -1,5 +1,5 @@
 name=Remorseful Cleric
-image=https://magiccards.info/scans/en/m19/33.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/defa1a8f-8a4d-45fc-90fb-8378b844dfdb.jpg?1641601592
 value=2.500
 rarity=R
 type=Creature

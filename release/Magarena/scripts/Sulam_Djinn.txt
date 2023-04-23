@@ -1,5 +1,5 @@
 name=Sulam Djinn
-image=https://magiccards.info/scans/en/in/212.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7aeab16f-e104-47e7-81c7-b6e0123120d7.jpg?1562919728
 value=1.909
 rarity=U
 type=Creature

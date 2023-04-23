@@ -1,5 +1,5 @@
 name=Grim Guardian
-image=https://magiccards.info/scans/en/jou/73.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/732b5444-0410-430b-87ca-cf2d9f165bd7.jpg?1593095749
 value=3.661
 rarity=C
 type=Enchantment,Creature

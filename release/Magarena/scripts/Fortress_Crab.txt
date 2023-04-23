@@ -1,5 +1,5 @@
 name=Fortress Crab
-image=https://magiccards.info/scans/en/isd/56.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/324681da-a28e-47ec-9810-5678de53e494.jpg?1592516387
 value=2.842
 rarity=C
 type=Creature

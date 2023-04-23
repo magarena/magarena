@@ -1,5 +1,5 @@
 name=Academy Rector
-image=https://magiccards.info/scans/en/ud/1.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/4367bc78-0912-4abd-8edd-bc792558d01a.jpg?1562443755
 value=4.567
 rarity=R
 type=Creature

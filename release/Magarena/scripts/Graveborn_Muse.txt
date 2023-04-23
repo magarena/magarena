@@ -1,5 +1,5 @@
 name=Graveborn Muse
-image=https://magiccards.info/scans/en/10e/145.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d460b79-f1a5-41c4-a5b3-61f703fd97df.jpg?1562546529
 value=4.157
 rarity=R
 type=Creature

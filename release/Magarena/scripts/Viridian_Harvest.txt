@@ -1,5 +1,5 @@
 name=Viridian Harvest
-image=https://magiccards.info/scans/en/nph/125.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/666eb9a5-b105-45c1-be3e-7ac5cc650338.jpg?1562878314
 value=1.777
 rarity=C
 type=Enchantment

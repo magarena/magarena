@@ -1,5 +1,5 @@
 name=Mind Sculpt
-image=https://magiccards.info/scans/en/m15/70.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/037d6277-1fc3-41a4-ade6-7cca10535b0f.jpg?1562781919
 value=2.250
 rarity=C
 type=Sorcery

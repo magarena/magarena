@@ -1,5 +1,5 @@
 name=Basalt Gargoyle
-image=https://magiccards.info/scans/en/ts/145.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d49201b-bd41-49b7-b00e-4ab8034a3a03.jpg?1619396699
 value=2.393
 rarity=U
 type=Creature

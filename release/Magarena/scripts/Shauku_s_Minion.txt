@@ -1,5 +1,5 @@
 name=Shauku's Minion
-image=https://magiccards.info/scans/en/mr/343.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e9743dc-031b-4932-80a6-1c8ec1dea069.jpg?1562719782
 value=2.077
 rarity=U
 type=Creature

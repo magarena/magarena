@@ -1,5 +1,5 @@
 name=Reap the Seagraf
-image=https://magiccards.info/scans/en/dka/72.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4defdead-19fa-4535-9f71-8808388b0332.jpg?1562913252
 value=2.260
 rarity=C
 type=Sorcery

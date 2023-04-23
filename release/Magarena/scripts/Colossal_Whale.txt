@@ -1,5 +1,5 @@
 name=Colossal Whale
-image=https://magiccards.info/scans/en/m14/48.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7f7caca-14ee-4d6a-97c3-e19898f86635.jpg?1562837405
 value=3.641
 rarity=R
 type=Creature

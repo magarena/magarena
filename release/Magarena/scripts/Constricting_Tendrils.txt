@@ -1,5 +1,5 @@
 name=Constricting Tendrils
-image=https://magiccards.info/scans/en/cfx/22.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a110be3-93ec-40ef-94a6-e4c43f1ce211.jpg?1562799744
 value=1.559
 rarity=C
 type=Instant

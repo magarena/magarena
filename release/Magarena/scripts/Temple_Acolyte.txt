@@ -1,5 +1,5 @@
 name=Temple Acolyte
-image=https://magiccards.info/scans/en/ddf/9.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e73c5d46-128d-4ab6-901a-6102686a1b22.jpg?1562950086
 value=3.531
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Surge of Zeal
-image=https://magiccards.info/scans/en/rav/146.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6c07fa6-b575-46f9-ab39-fb777d4b8acd.jpg?1598915919
 value=1.705
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Avoid Fate
-image=https://magiccards.info/scans/en/tsts/73.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04c9f48d-2213-4f95-8eac-b23bd2d95e34.jpg?1562770937
 value=4.236
 rarity=C
 type=Instant

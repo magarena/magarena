@@ -1,5 +1,5 @@
 name=Kavu Lair
-image=https://magiccards.info/scans/en/in/193.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4581b53-23a0-4ca6-a77c-97d79e7a6570.jpg?1562944142
 value=3.757
 rarity=R
 type=Enchantment

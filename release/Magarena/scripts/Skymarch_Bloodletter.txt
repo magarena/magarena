@@ -1,5 +1,5 @@
 name=Skymarch Bloodletter
-image=https://magiccards.info/scans/en/m19/119.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c7f2740-a193-4b4c-af00-2dd22d74a4ba.jpg?1562301194
 image_updated=2018-08-07
 value=2.500
 rarity=C

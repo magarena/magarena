@@ -1,5 +1,5 @@
 name=Hurricane
-image=https://magiccards.info/scans/en/10e/270.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/371d83e8-f514-433c-bc6a-e0eeef3fab2a.jpg?1562546179
 value=3.947
 removal=2
 rarity=R

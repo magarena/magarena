@@ -1,5 +1,5 @@
 name=Tranquil Expanse
-image=https://magiccards.info/scans/en/m19/259.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/123cd67f-7226-4e69-8637-382380fb213e.jpg?1592711742
 image_updated=2018-08-07
 value=2.500
 rarity=C

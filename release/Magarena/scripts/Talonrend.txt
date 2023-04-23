@@ -1,5 +1,5 @@
 name=Talonrend
-image=https://magiccards.info/scans/en/eve/30.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5f6256e-5d24-4fa0-a83b-5ff971f7e1cc.jpg?1562933425
 value=1.387
 rarity=U
 type=Creature

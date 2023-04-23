@@ -1,5 +1,5 @@
 name=Jade Leech
-image=https://magiccards.info/scans/en/in/190.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3392171d-ed25-46a1-91cc-a4f24537617d.jpg?1562905388
 value=2.492
 rarity=R
 type=Creature

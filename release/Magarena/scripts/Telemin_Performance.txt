@@ -1,5 +1,5 @@
 name=Telemin Performance
-image=https://magiccards.info/scans/en/cfx/35.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ac0f1fb-0ada-4b3c-b9bd-654ffc0a167d.jpg?1562800466
 value=4.319
 rarity=R
 type=Sorcery

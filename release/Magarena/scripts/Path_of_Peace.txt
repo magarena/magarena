@@ -1,5 +1,5 @@
 name=Path of Peace
-image=https://magiccards.info/scans/en/a25/29.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41369848-ba9a-40ef-931e-1a65bc979209.jpg?1562434966
 image_updated=2018-04-27
 value=2.545
 rarity=C

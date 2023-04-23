@@ -1,5 +1,5 @@
 name=Malevolent Awakening
-image=https://magiccards.info/scans/en/od/147.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35d94052-aae3-4ced-9309-fc4a0d1f159d.jpg?1562904960
 value=3.028
 rarity=U
 type=Enchantment

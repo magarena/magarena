@@ -1,5 +1,5 @@
 name=Sarcatog
-image=https://magiccards.info/scans/en/od/293.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/760a329c-e815-49d3-8df1-d052ce19b0c6.jpg?1562916836
 value=3.241
 rarity=U
 type=Creature

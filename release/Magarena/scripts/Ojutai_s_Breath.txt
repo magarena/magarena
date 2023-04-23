@@ -1,5 +1,5 @@
 name=Ojutai's Breath
-image=https://magiccards.info/scans/en/ima/68.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/428c4985-95de-4703-9cda-7762d7fee04f.jpg?1562848396
 image_updated=2017-04-12
 value=2.500
 rarity=C

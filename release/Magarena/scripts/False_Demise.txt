@@ -1,5 +1,5 @@
 name=False Demise
-image=https://magiccards.info/scans/en/mm/80.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48872422-895f-45f0-ba2a-7cd307285c7d.jpg?1562380432
 value=4.177
 rarity=U
 type=Enchantment

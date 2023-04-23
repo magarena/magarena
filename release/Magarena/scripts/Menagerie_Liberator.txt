@@ -1,5 +1,5 @@
 name=Menagerie Liberator
-image=https://magiccards.info/scans/en/cn2/67.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7b2b659-2689-4de0-aa07-2568b45f86a8.jpg?1576382066
 image_updated=2016-09-05
 value=2.500
 rarity=C

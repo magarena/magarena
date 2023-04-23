@@ -1,5 +1,5 @@
 name=Quiet Purity
-image=https://magiccards.info/scans/en/chk/39.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecd4d7cd-12a9-49f2-912d-2a6024112d13.jpg?1562765606
 value=3.514
 removal=1
 rarity=C

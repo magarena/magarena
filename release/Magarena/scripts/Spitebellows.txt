@@ -1,5 +1,5 @@
 name=Spitebellows
-image=https://magiccards.info/scans/en/mm2/128.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/497f8aae-fd62-4cc6-9ccc-22d5ee4f6b81.jpg?1562273846
 value=3.600
 rarity=U
 type=Creature

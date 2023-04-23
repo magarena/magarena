@@ -1,5 +1,5 @@
 name=Guardian of Cloverdell
-image=https://magiccards.info/scans/en/lw/216.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/311c5f1d-7e3b-4397-b05b-f20bde2dc164.jpg?1562343446
 value=2.200
 rarity=U
 type=Creature

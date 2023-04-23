@@ -1,5 +1,5 @@
 name=Savage Thallid
-image=https://magiccards.info/scans/en/ts/213.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a87cbbdb-3bbc-48da-b5e3-fcdbddebec81.jpg?1562930490
 value=2.897
 rarity=C
 type=Creature

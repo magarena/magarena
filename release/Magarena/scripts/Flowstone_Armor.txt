@@ -1,5 +1,5 @@
 name=Flowstone Armor
-image=https://magiccards.info/scans/en/ne/131.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1160e476-8a2b-4b90-b4db-f386a80ab067.jpg?1562628686
 value=1.823
 rarity=U
 type=Artifact

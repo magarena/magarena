@@ -1,5 +1,5 @@
 name=Scalding Salamander
-image=https://magiccards.info/scans/en/ex/100.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a0e9433-88d7-4bfc-99a0-ff47807fd594.jpg?1562087838
 value=3.922
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Withstand Death
-image=https://magiccards.info/scans/en/som/134.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b059cca0-2373-428b-a3a6-c8be5523c96f.jpg?1562821851
 value=3.284
 rarity=C
 type=Instant

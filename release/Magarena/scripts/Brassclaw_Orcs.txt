@@ -1,5 +1,5 @@
 name=Brassclaw Orcs
-image=https://magiccards.info/scans/en/5e/213.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd10b1f1-9851-456a-859a-e65293323cf6.jpg?1562870484
 value=2.414
 rarity=C
 type=Creature

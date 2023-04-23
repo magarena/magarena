@@ -1,5 +1,5 @@
 name=Silverglade Elemental
-image=https://magiccards.info/scans/en/mm/269.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef0f6574-9035-4020-90ec-22a1e3816d00.jpg?1562843363
 image_updated=2017-01-08
 value=4.095
 rarity=C

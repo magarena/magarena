@@ -1,5 +1,5 @@
 name=Hecatomb
-image=https://magiccards.info/scans/en/6e/136.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3173377-9a9c-4dd9-a638-89be0cdccaba.jpg?1559592550
 value=3.750
 rarity=R
 type=Enchantment

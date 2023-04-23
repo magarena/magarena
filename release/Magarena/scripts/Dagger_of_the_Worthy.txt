@@ -1,5 +1,5 @@
 name=Dagger of the Worthy
-image=https://magiccards.info/scans/en/hou/160.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abe9d9d7-bc4e-4367-b27c-e8d6e430467e.jpg?1562810453
 value=2.500
 rarity=U
 type=Artifact

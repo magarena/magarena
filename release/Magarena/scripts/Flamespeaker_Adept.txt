@@ -1,5 +1,5 @@
 name=Flamespeaker Adept
-image=https://magiccards.info/scans/en/ths/123.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b84b90b6-71e2-429e-9853-50bcbd6538db.jpg?1562827268
 value=3.490
 rarity=U
 type=Creature

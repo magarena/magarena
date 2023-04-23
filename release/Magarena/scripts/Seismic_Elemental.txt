@@ -1,5 +1,5 @@
 name=Seismic Elemental
-image=https://magiccards.info/scans/en/ori/161.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dcec0d7-897e-4593-bd09-460207e28c90.jpg?1601078580
 image_updated=2015-11-05
 value=2.500
 rarity=U

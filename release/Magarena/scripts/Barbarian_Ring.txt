@@ -1,5 +1,5 @@
 name=Barbarian Ring
-image=https://magiccards.info/scans/en/od/313.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/1809361e-ae1a-4c47-8464-e6496e94d962.jpg?1562899549
 value=3.648
 rarity=U
 type=Land

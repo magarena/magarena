@@ -1,5 +1,5 @@
 name=Sunspire Griffin
-image=https://magiccards.info/scans/en/rtr/25.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/1388ce6e-8199-46c1-8ee3-71266b0929bf.jpg?1562782971
 value=2.848
 rarity=C
 type=Creature

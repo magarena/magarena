@@ -1,5 +1,5 @@
 name=Deathbellow Raider
-image=https://magiccards.info/scans/en/ths/117.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b29fc64e-297e-4e10-8f4e-289dc1c3ebfd.jpg?1562825822
 value=3.567
 rarity=C
 type=Creature

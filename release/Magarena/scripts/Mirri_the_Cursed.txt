@@ -1,5 +1,5 @@
 name=Mirri the Cursed
-image=https://magiccards.info/scans/en/pc/75.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24c1706d-2faa-452b-a192-204386df29f6.jpg?1619395734
 value=4.080
 rarity=R
 type=Legendary,Creature

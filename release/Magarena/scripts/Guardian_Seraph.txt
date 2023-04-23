@@ -1,5 +1,5 @@
 name=Guardian Seraph
-image=https://magiccards.info/scans/en/m10/13.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a84613ce-9b59-4ef6-8c76-5b208ff9de88.jpg?1561991179
 value=4.300
 rarity=R
 type=Creature

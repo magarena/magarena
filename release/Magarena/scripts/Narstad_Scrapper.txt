@@ -1,5 +1,5 @@
 name=Narstad Scrapper
-image=https://magiccards.info/scans/en/avr/218.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f808ed9b-95ac-4069-bdca-b100bc816b5b.jpg?1592709584
 value=1.250
 rarity=C
 type=Artifact,Creature

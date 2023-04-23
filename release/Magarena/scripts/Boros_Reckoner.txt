@@ -1,5 +1,5 @@
 name=Boros Reckoner
-image=https://magiccards.info/scans/en/mm3/206.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdc5666c-6f27-4ae9-8f0e-17e2a44bc646.jpg?1593814781
 image_updated=2017-08-08
 value=4.043
 rarity=R

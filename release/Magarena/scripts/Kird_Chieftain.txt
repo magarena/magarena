@@ -1,5 +1,5 @@
 name=Kird Chieftain
-image=https://magiccards.info/scans/en/m15/151.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4189a909-2e20-4dc7-894c-21446da5b0cf.jpg?1562785897
 value=3.000
 rarity=U
 type=Creature

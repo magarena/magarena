@@ -1,5 +1,5 @@
 name=Spark Mage
-image=https://magiccards.info/scans/en/od/222.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cff5902e-2ca1-43bb-b636-c860b3d0b3f2.jpg?1562933871
 value=2.931
 rarity=U
 type=Creature

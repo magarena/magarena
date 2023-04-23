@@ -1,5 +1,5 @@
 name=Guardian of Solitude
-image=https://magiccards.info/scans/en/chk/64.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85d16011-956b-40ac-afb6-6c7ad774802f.jpg?1562762061
 value=2.173
 rarity=U
 type=Creature

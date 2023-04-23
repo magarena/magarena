@@ -1,5 +1,5 @@
 name=Winding Constrictor
-image=https://magiccards.info/scans/en/aer/140.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/107c8aa8-c8f8-4cbf-821b-bd2cb33354f0.jpg?1576382180
 value=2.500
 rarity=U
 type=Creature

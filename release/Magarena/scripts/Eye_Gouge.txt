@@ -1,5 +1,5 @@
 name=Eye Gouge
-image=https://magiccards.info/scans/en/bng/67.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94d4eb34-0529-48a0-ac52-b57cead7b651.jpg?1593091932
 value=3.059
 rarity=C
 type=Instant

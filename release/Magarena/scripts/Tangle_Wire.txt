@@ -1,5 +1,5 @@
 name=Tangle Wire
-image=https://magiccards.info/scans/en/ne/139.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad62f313-8a8a-4ffa-ada2-b12b76288729.jpg?1562631474
 value=4.562
 rarity=R
 type=Artifact

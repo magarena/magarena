@@ -1,5 +1,5 @@
 name=Stormfront Pegasus
-image=https://magiccards.info/scans/en/m12/38.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2e03297-3124-4f83-98ef-772fa213a422.jpg?1655075637
 value=3.078
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dogged Hunter
-image=https://magiccards.info/scans/en/od/20.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b50d4337-9b71-429b-b6bc-2d70299a6e76.jpg?1562928712
 value=3.179
 rarity=R
 type=Creature

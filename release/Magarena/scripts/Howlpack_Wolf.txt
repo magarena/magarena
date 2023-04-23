@@ -1,5 +1,5 @@
 name=Howlpack Wolf
-image=https://magiccards.info/scans/en/soi/164.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7379689-8e4f-4c23-9276-3510f70ba7ff.jpg?1576384790
 value=2.500
 rarity=C
 type=Creature

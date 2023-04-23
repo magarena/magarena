@@ -1,5 +1,5 @@
 name=Wild Mammoth
-image=https://magiccards.info/scans/en/ne/124.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d927fdb-11c0-42b6-95d4-7af051e45213.jpg?1562629811
 value=2.879
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Stalking Drone
-image=https://magiccards.info/scans/en/ogw/124.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12bc5b4c-a809-43f0-8848-38812ce865c2.jpg?1562898748
 image_updated=2016-02-29
 value=2.500
 rarity=C

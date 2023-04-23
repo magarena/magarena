@@ -1,5 +1,5 @@
 name=Azorius Arrester
-image=https://magiccards.info/scans/en/rtr/5.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/199f7563-563e-483c-8317-5380a83db955.jpg?1562783287
 value=3.135
 rarity=C
 type=Creature

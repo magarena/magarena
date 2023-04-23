@@ -1,5 +1,5 @@
 name=Sheoldred, Whispering One
-image=https://magiccards.info/scans/en/ima/108.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b207a4a-47d1-4905-81d3-455c59bfd7da.jpg?1600714694
 image_updated=2017-04-12
 value=3.917
 rarity=M

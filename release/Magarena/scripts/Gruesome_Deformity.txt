@@ -1,5 +1,5 @@
 name=Gruesome Deformity
-image=https://magiccards.info/scans/en/isd/103.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5696db03-206f-4e7e-9b65-ccef31bfd7d2.jpg?1562830494
 value=2.355
 rarity=C
 type=Enchantment

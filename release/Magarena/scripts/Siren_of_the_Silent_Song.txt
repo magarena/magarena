@@ -1,5 +1,5 @@
 name=Siren of the Silent Song
-image=https://magiccards.info/scans/en/bng/155.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/990f4438-aa74-4460-8bac-93480d0bb0dc.jpg?1593092828
 value=3.821
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Bloodbraid Elf
-image=https://magiccards.info/scans/en/c16/184.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2f12f6f-9383-47e6-a44f-2834ad130e51.jpg?1673148385
 image_updated=2017-08-17
 value=4.327
 rarity=U

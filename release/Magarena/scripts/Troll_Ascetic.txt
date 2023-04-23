@@ -1,5 +1,5 @@
 name=Troll Ascetic
-image=https://magiccards.info/scans/en/cmd/176.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/430fa067-cecd-4958-851b-5908a0765063.jpg?1562273822
 image_updated=2016-09-12
 value=4.196
 rarity=R

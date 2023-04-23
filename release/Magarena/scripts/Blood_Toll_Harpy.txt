@@ -1,5 +1,5 @@
 name=Blood-Toll Harpy
-image=https://magiccards.info/scans/en/cn2/129.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c081f3e2-e4e6-4ef5-9969-64aca9c11413.jpg?1576382588
 image_updated=2016-11-20
 value=2.274
 rarity=C

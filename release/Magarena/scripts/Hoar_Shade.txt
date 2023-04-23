@@ -1,5 +1,5 @@
 name=Hoar Shade
-image=https://magiccards.info/scans/en/ia/19.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72242dff-15ca-4da0-b3ae-9984d037b31f.jpg?1587911702
 value=2.819
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Scrubland
-image=https://magiccards.info/scans/en/rv/298.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d471e36-a3ab-4a96-ba4b-8eca921ea37a.jpg?1562926691
 value=4.500
 rarity=R
 type=Land

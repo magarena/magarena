@@ -1,5 +1,5 @@
 name=Tonic Peddler
-image=https://magiccards.info/scans/en/mm/54.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/334bbd9d-3549-4352-9635-d772aab28503.jpg?1562379919
 value=2.261
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Brion Stoutarm
-image=https://magiccards.info/scans/en/a25/200.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b097c70a-d1d6-4972-b94d-d7d8a6f443e2.jpg?1562439762
 image_updated=2018-04-27
 value=3.918
 rarity=R

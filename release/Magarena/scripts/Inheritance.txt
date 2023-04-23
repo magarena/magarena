@@ -1,5 +1,5 @@
 name=Inheritance
-image=https://magiccards.info/scans/en/ai/130.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f660a337-09f7-4ae9-b61b-f5ecbda4a4ca.jpg?1562870971
 value=3.662
 rarity=U
 type=Enchantment

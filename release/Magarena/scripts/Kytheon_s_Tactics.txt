@@ -1,5 +1,5 @@
 name=Kytheon's Tactics
-image=https://magiccards.info/scans/en/ori/25.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0521669-206e-4909-be6f-a74603203a70.jpg?1562036573
 image_updated=2015-11-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Last Word
-image=https://magiccards.info/scans/en/ds/23.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/139d2ece-f656-4cac-8d77-b0f083f76c70.jpg?1562635496
 value=4.043
 rarity=R
 type=Instant

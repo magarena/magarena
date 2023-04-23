@@ -1,5 +1,5 @@
 name=Wilt-Leaf Cavaliers
-image=https://magiccards.info/scans/en/shm/244.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c161772e-d8b1-4ca6-8971-dd46c96fb0f7.jpg?1562935893
 value=3.727
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Supreme Verdict
-image=https://magiccards.info/scans/en/ima/210.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20b5fe42-929c-406d-9377-40b49f9d2e2c.jpg?1673149167
 image_updated=2017-04-12
 value=4.052
 rarity=R

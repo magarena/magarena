@@ -1,5 +1,5 @@
 name=Satyr Grovedancer
-image=https://magiccards.info/scans/en/jou/139.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d46febca-f3c0-4467-aef4-4dfcdf3009fe.jpg?1593096315
 value=3.060
 rarity=C
 type=Creature

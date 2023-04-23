@@ -1,5 +1,5 @@
 name=Psychic Transfer
-image=https://magiccards.info/scans/en/st/46.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac6d7d5a-697b-4251-bc18-4dcfe0aa5cc6.jpg?1562875038
 value=2.000
 rarity=R
 type=Sorcery

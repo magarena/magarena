@@ -1,5 +1,5 @@
 name=Chromatic Lantern
-image=https://magiccards.info/scans/en/c16/247.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea123356-3055-4e42-b816-ac3c4e9087d1.jpg?1572894045
 image_updated=2017-08-17
 value=4.236
 rarity=R

@@ -1,5 +1,5 @@
 name=Harbinger of the Hunt
-image=https://magiccards.info/scans/en/dtk/223.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbeb21b8-8817-48c2-8ae8-25221600ce32.jpg?1562793172
 value=2.500
 rarity=R
 type=Creature

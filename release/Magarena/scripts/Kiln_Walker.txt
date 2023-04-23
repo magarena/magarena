@@ -1,5 +1,5 @@
 name=Kiln Walker
-image=https://magiccards.info/scans/en/nph/142.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91678632-ebe6-41b6-9250-cd3ffd63663b.jpg?1562879778
 value=2.473
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Mind Control
-image=https://magiccards.info/scans/en/m12/67.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec7f77af-17d7-4746-bc83-f455b9b6f9ea.jpg?1562664773
 value=3.867
 rarity=U
 type=Enchantment

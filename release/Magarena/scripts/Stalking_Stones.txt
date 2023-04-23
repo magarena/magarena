@@ -1,5 +1,5 @@
 name=Stalking Stones
-image=https://magiccards.info/scans/en/mi/284.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27856bc5-4f39-4461-baa0-700442942aff.jpg?1562428855
 value=3.500
 rarity=U
 type=Land

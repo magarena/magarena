@@ -1,5 +1,5 @@
 name=Scion of Glaciers
-image=https://magiccards.info/scans/en/ktk/53.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e370939-831b-4c42-8291-8ffb0b6c1af7.jpg?1562787263
 value=3.000
 rarity=U
 type=Creature

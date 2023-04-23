@@ -1,5 +1,5 @@
 name=Dream Prowler
-image=https://magiccards.info/scans/en/9e/74.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08d90394-22fe-42ae-83ba-9cf88cfe1d1d.jpg?1562428171
 value=2.915
 rarity=U
 type=Creature

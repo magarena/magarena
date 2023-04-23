@@ -1,5 +1,5 @@
 name=Furyblade Vampire
-image=https://magiccards.info/scans/en/emn/128.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56a957d6-fc14-453a-a250-63fc130e330d.jpg?1576384583
 image_updated=2016-09-05
 value=2.500
 rarity=U

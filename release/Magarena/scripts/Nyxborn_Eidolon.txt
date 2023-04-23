@@ -1,5 +1,5 @@
 name=Nyxborn Eidolon
-image=https://magiccards.info/scans/en/bng/78.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76f79804-cd90-472b-9d09-3c71e4c6be22.jpg?1593092056
 value=2.182
 rarity=C
 type=Enchantment,Creature

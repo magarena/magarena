@@ -1,5 +1,5 @@
 name=Ancient Den
-image=https://magiccards.info/scans/en/mi/278.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a508907-a127-45cd-898a-e936bc08391f.jpg?1625979692
 image_updated=2016-12-13
 value=4.272
 rarity=C

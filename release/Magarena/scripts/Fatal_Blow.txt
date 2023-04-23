@@ -1,5 +1,5 @@
 name=Fatal Blow
-image=https://magiccards.info/scans/en/6e/128.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/6890c3aa-9321-4c41-9b16-cff4e6364350.jpg?1562818573
 value=3.750
 rarity=C
 type=Instant

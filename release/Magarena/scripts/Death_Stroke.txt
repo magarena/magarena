@@ -1,5 +1,5 @@
 name=Death Stroke
-image=https://magiccards.info/scans/en/sh/7.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edff316e-e3a3-4d88-a124-51eab1c7953f.jpg?1562431785
 value=4.000
 removal=3
 rarity=C

@@ -1,5 +1,5 @@
 name=Naturalize
-image=https://magiccards.info/scans/en/m19/190.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/390c40ba-2464-44ae-8d67-93c72ab3c425.jpg?1562301697
 image_updated=2018-08-07
 value=4.000
 removal=1

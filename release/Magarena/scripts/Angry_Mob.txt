@@ -1,5 +1,5 @@
 name=Angry Mob
-image=https://magiccards.info/scans/en/5e/280.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dcaea36-52fb-4c71-a4f1-5c060b918ff1.jpg?1559592555
 value=2.906
 rarity=U
 type=Creature

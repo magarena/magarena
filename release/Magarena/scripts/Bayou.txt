@@ -1,5 +1,5 @@
 name=Bayou
-image=https://magiccards.info/scans/en/rv/283.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.jpg?1562933075
 value=4.500
 rarity=R
 type=Land

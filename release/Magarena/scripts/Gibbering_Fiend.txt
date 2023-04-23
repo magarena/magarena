@@ -1,5 +1,5 @@
 name=Gibbering Fiend
-image=https://magiccards.info/scans/en/soi/161.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5113c437-3276-4591-b95e-c2afb9d6329a.jpg?1576384771
 value=2.500
 rarity=U
 type=Creature

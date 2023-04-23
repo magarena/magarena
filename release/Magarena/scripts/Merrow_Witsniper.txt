@@ -1,5 +1,5 @@
 name=Merrow Witsniper
-image=https://magiccards.info/scans/en/mt/40.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5b4e77f-012f-47f4-8b44-930148250b1d.jpg?1562881669
 value=2.875
 rarity=C
 type=Creature

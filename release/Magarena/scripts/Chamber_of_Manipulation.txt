@@ -1,5 +1,5 @@
 name=Chamber of Manipulation
-image=https://magiccards.info/scans/en/od/76.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50496069-0f55-4dfe-8b1e-7fc4f649f2f1.jpg?1562909695
 value=3.481
 rarity=U
 type=Enchantment

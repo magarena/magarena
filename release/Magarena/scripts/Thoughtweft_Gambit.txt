@@ -1,5 +1,5 @@
 name=Thoughtweft Gambit
-image=https://magiccards.info/scans/en/shm/154.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7990b23-d460-46e2-bb05-396e2a653429.jpg?1562835087
 value=2.888
 rarity=U
 type=Instant

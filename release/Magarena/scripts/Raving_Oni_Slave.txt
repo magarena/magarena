@@ -1,5 +1,5 @@
 name=Raving Oni-Slave
-image=https://magiccards.info/scans/en/sok/86.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4d16271-9302-463b-938d-01dad0c3ce29.jpg?1618940455
 value=2.312
 rarity=C
 type=Creature

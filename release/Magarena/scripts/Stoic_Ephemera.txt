@@ -1,5 +1,5 @@
 name=Stoic Ephemera
-image=https://magiccards.info/scans/en/di/19.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/066bff58-e7cd-4787-a2c1-1afd6ed1b4ff.jpg?1593272586
 value=2.587
 rarity=U
 type=Creature

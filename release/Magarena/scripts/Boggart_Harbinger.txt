@@ -1,5 +1,5 @@
 name=Boggart Harbinger
-image=https://magiccards.info/scans/en/lw/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ea8d2b8-bcac-410d-aa5a-e4a74f7d5315.jpg?1562357880
 value=3.138
 rarity=U
 type=Creature

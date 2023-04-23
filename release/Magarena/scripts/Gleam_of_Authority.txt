@@ -1,5 +1,5 @@
 name=Gleam of Authority
-image=https://magiccards.info/scans/en/dtk/19.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96847438-eb09-4e3f-8ebf-f064b88f70c9.jpg?1562790224
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Chief of the Scale
-image=https://magiccards.info/scans/en/ktk/170.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a227b8cc-cbe5-4955-ad1b-a354704a82e8.jpg?1562791315
 value=3.500
 rarity=U
 type=Creature

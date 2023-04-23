@@ -1,5 +1,5 @@
 name=Abyssal Gatekeeper
-image=https://magiccards.info/scans/en/wl/1.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d2a66f0-1afe-41e6-a597-ec2e95685191.jpg?1561771503
 image_updated=2016-11-20
 value=3.938
 rarity=C

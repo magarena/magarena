@@ -1,5 +1,5 @@
 name=Krosan Cloudscraper
-image=https://magiccards.info/scans/en/tsts/82.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c5ac459-ebb7-44ec-bb6e-412c5ab04b75.jpg?1562781033
 value=3.965
 rarity=R
 type=Creature

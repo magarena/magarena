@@ -1,5 +1,5 @@
 name=Heartwood Treefolk
-image=https://magiccards.info/scans/en/tp/127.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de263f02-8e3e-4785-9c06-9adc168994f3.jpg?1562056891
 value=2.804
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Commune with Nature
-image=https://magiccards.info/scans/en/mm2/142.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a59eafb3-3ce6-4056-a7f7-8d0a8fc12294.jpg?1562265728
 value=2.500
 rarity=C
 type=Sorcery

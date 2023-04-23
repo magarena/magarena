@@ -1,5 +1,5 @@
 name=Alpha Tyrranax
-image=https://magiccards.info/scans/en/som/109.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a2e5279-f28c-4a78-9f8a-16c9f72f8d38.jpg?1562817224
 value=2.409
 rarity=C
 type=Creature

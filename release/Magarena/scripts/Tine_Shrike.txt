@@ -1,5 +1,5 @@
 name=Tine Shrike
-image=https://magiccards.info/scans/en/mbs/17.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/845b665e-8236-4ab9-bee4-414f075461d2.jpg?1562612724
 value=2.699
 rarity=C
 type=Creature

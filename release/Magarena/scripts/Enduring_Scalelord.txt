@@ -1,5 +1,5 @@
 name=Enduring Scalelord
-image=https://magiccards.info/scans/en/c16/196.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0ee001b-6ddb-478e-a407-58bcc2bf7c30.jpg?1682209736
 image_updated=2017-08-17
 value=2.500
 rarity=U

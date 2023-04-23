@@ -1,5 +1,5 @@
 name=Dragon-Scarred Bear
-image=https://magiccards.info/scans/en/dtk/183.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/689a6390-894a-4d31-87c2-f9cec3b187a7.jpg?1562787624
 value=2.500
 rarity=C
 type=Creature

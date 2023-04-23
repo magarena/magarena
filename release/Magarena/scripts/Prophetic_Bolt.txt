@@ -1,5 +1,5 @@
 name=Prophetic Bolt
-image=https://magiccards.info/scans/en/cmd/219.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94b79c31-597f-484b-a684-f1520cae314a.jpg?1673149053
 image_updated=2016-02-29
 value=4.500
 rarity=R

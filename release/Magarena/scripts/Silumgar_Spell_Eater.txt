@@ -1,5 +1,5 @@
 name=Silumgar Spell-Eater
-image=https://magiccards.info/scans/en/dtk/77.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20a99655-34b2-4756-bf12-b344eb71ad37.jpg?1562783541
 value=2.500
 rarity=U
 type=Creature

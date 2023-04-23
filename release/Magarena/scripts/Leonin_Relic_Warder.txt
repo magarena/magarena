@@ -1,5 +1,5 @@
 name=Leonin Relic-Warder
-image=https://magiccards.info/scans/en/c17/65.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c938a21a-ea74-4cc1-a175-08b9b98b2e4e.jpg?1562623339
 image_updated=2017-10-03
 value=4.309
 rarity=U

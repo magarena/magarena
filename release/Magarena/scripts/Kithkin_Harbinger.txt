@@ -1,5 +1,5 @@
 name=Kithkin Harbinger
-image=https://magiccards.info/scans/en/lw/26.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64735178-3dc5-4a95-92fa-e15bd04e5733.jpg?1562351139
 value=3.066
 rarity=U
 type=Creature

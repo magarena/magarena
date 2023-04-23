@@ -1,5 +1,5 @@
 name=Lignify
-image=https://magiccards.info/scans/en/lw/228.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23464d53-fa76-40e2-84c3-b6d6cc729be4.jpg?1598177954
 image_updated=2016-12-21
 value=3.969
 rarity=C

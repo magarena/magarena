@@ -1,5 +1,5 @@
 name=Leaden Fists
-image=https://magiccards.info/scans/en/fut/38.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be497544-bbf0-472d-adf6-ff1fd1951370.jpg?1562933269
 value=2.888
 rarity=C
 type=Enchantment

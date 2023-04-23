@@ -1,5 +1,5 @@
 name=Psionic Entity
-image=https://magiccards.info/scans/en/4e/95.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/6641a587-c066-4f0a-a951-b91d3f749eb2.jpg?1559604131
 value=1.922
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Cavern Lampad
-image=https://magiccards.info/scans/en/ths/81.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e340de29-026f-4c76-8cb5-1abfcecbb3b1.jpg?1562835057
 value=3.042
 rarity=C
 type=Enchantment,Creature

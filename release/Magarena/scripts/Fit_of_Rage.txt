@@ -1,5 +1,5 @@
 name=Fit of Rage
-image=https://magiccards.info/scans/en/6e/178.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b79c17d2-dcf1-4464-ae58-5ea5117ae531.jpg?1562822014
 value=2.950
 rarity=C
 type=Sorcery

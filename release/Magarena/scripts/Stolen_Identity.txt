@@ -1,5 +1,5 @@
 name=Stolen Identity
-image=https://magiccards.info/scans/en/gtc/53.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/2831fe77-ea98-4334-a78e-01580fb002c0.jpg?1673484009
 value=3.652
 rarity=R
 type=Sorcery

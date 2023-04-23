@@ -1,5 +1,5 @@
 name=Searing Light
-image=https://magiccards.info/scans/en/ogw/33.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76dadfd8-8492-4c55-827c-cd4e6a40ae97.jpg?1562918808
 image_updated=2016-02-29
 value=2.500
 rarity=C

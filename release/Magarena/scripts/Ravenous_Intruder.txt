@@ -1,5 +1,5 @@
 name=Ravenous Intruder
-image=https://magiccards.info/scans/en/aer/94.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/289d6da8-9cfe-4c1b-90c9-477a743f6d62.jpg?1599706663
 value=2.500
 rarity=U
 type=Creature

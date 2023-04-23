@@ -1,5 +1,5 @@
 name=Enchanted Being
-image=https://magiccards.info/scans/en/lg/181.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94c2880d-b37a-43ea-9fee-cd5a8ed75a7e.jpg?1562860138
 value=2.100
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Giant Spider
-image=https://magiccards.info/scans/en/m19/183.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80996b0d-cd44-445e-96de-677e0018255c.jpg?1562302899
 image_updated=2018-08-07
 value=3.296
 rarity=C

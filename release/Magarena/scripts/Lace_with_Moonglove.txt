@@ -1,5 +1,5 @@
 name=Lace with Moonglove
-image=https://magiccards.info/scans/en/cn2/184.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/753434b3-8a58-4b4b-94f8-1b33c0ce92bf.jpg?1576383044
 image_updated=2017-08-29
 value=3.316
 rarity=C

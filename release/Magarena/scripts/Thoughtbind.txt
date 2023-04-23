@@ -1,5 +1,5 @@
 name=Thoughtbind
-image=https://magiccards.info/scans/en/chk/96.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7919cf41-67bb-4dc4-90de-cf3fa2096c2e.jpg?1593860622
 value=1.654
 rarity=C
 type=Instant

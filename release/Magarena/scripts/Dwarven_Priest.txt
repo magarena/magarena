@@ -1,5 +1,5 @@
 name=Dwarven Priest
-image=https://magiccards.info/scans/en/m19/11.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e1e0f13-35a6-4a5e-8666-47bc5c275be7.jpg?1562302890
 value=2.500
 rarity=C
 type=Creature

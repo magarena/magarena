@@ -1,5 +1,5 @@
 name=Volcanic Island
-image=https://magiccards.info/scans/en/rv/306.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b.jpg?1562904669
 value=4.000
 rarity=R
 type=Land

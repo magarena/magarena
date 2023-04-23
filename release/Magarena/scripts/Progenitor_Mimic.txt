@@ -1,5 +1,5 @@
 name=Progenitor Mimic
-image=https://magiccards.info/scans/en/c16/216.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acba72e1-3f7f-4e5c-af3f-dfe37b5d61f9.jpg?1599708250
 image_updated=2017-08-17
 value=3.814
 rarity=M

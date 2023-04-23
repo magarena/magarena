@@ -1,5 +1,5 @@
 name=Armored Wolf-Rider
-image=https://magiccards.info/scans/en/dgm/52.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e43d959f-6055-4578-a69a-0ec93e993e21.jpg?1562937669
 value=2.821
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Costly Plunder
-image=https://magiccards.info/scans/en/xln/96.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/598405fd-02d2-4bf8-b241-7a2ae6338913.jpg?1598304489
 value=2.500
 rarity=C
 type=Instant

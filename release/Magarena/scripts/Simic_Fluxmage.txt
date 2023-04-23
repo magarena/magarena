@@ -1,5 +1,5 @@
 name=Simic Fluxmage
-image=https://magiccards.info/scans/en/gtc/49.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50633b59-6051-4f47-9e27-538fda03b5dd.jpg?1561826953
 value=2.904
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Homicidal Seclusion
-image=https://magiccards.info/scans/en/avr/108.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/022960a1-8223-4b83-aea2-85359c39f3b8.jpg?1592708902
 value=3.097
 rarity=U
 type=Enchantment

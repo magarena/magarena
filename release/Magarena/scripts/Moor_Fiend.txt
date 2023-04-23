@@ -1,5 +1,5 @@
 name=Moor Fiend
-image=https://magiccards.info/scans/en/ia/41.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57089dd4-e30d-498d-9341-43c104c6f3f9.jpg?1587911747
 value=3.024
 rarity=C
 type=Creature

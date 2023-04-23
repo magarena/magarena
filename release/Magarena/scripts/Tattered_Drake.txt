@@ -1,5 +1,5 @@
 name=Tattered Drake
-image=https://magiccards.info/scans/en/rav/68.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d28cbc8-4dbb-465b-813d-52b2b2f73b14.jpg?1598914519
 value=1.643
 rarity=C
 type=Creature

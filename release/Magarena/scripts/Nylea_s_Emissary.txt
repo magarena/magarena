@@ -1,5 +1,5 @@
 name=Nylea's Emissary
-image=https://magiccards.info/scans/en/ths/168.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f133775-09b3-4df4-a97f-0df75809b724.jpg?1562816293
 value=3.429
 rarity=U
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Gruul Guildgate
-image=https://magiccards.info/scans/en/mm3/236.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e62b42cf-abdb-4807-bb7d-4009faf92635.jpg?1604196211
 image_updated=2017-08-08
 value=3.679
 rarity=C

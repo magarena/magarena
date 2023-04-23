@@ -1,5 +1,5 @@
 name=Spitting Earth
-image=https://magiccards.info/scans/en/10e/238.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de1aa8f9-8200-4ddd-9ab5-1a8181cc1792.jpg?1601078623
 value=3.648
 rarity=C
 type=Sorcery

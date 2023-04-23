@@ -1,5 +1,5 @@
 name=Statute of Denial
-image=https://magiccards.info/scans/en/m15/79.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af13770d-dddb-4b78-9cd3-4a0dc50472f4.jpg?1562792750
 value=1.714
 rarity=C
 type=Instant

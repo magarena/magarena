@@ -1,5 +1,5 @@
 name=Planar Void
-image=https://magiccards.info/scans/en/us/149.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b035c718-ac11-4c97-a9bb-0cd88dc71904.jpg?1562932180
 value=4.173
 rarity=U
 type=Enchantment

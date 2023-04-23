@@ -1,5 +1,5 @@
 name=Dread of Night
-image=https://magiccards.info/scans/en/6e/122.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4105fb4-ab13-4a34-810b-1d294c5a6eee.jpg?1562821147
 value=4.058
 rarity=U
 type=Enchantment

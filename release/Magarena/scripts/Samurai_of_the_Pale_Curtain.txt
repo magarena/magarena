@@ -1,5 +1,5 @@
 name=Samurai of the Pale Curtain
-image=https://magiccards.info/scans/en/chk/43.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ead15cf8-f692-4cb9-ac86-0dff00236145.jpg?1562765598
 value=4.297
 rarity=U
 type=Creature

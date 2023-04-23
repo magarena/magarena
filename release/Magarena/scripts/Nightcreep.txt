@@ -1,5 +1,5 @@
 name=Nightcreep
-image=https://magiccards.info/scans/en/di/49.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55f7f7f7-c7eb-466c-bfe6-0ef586284ee9.jpg?1593272955
 value=3.308
 rarity=U
 type=Instant

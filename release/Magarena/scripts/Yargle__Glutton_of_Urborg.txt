@@ -1,5 +1,5 @@
 name=Yargle, Glutton of Urborg
-image=https://magiccards.info/scans/en/dom/113.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/645cfc1b-76f2-4823-9fb0-03cb009f8b32.jpg?1562736801
 value=2.500
 rarity=U
 type=Legendary,Creature

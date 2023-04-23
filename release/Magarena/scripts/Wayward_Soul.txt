@@ -1,5 +1,5 @@
 name=Wayward Soul
-image=https://magiccards.info/scans/en/ex/51.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a761397-3613-4d91-adbf-978a12e7ef32.jpg?1562429358
 value=3.019
 rarity=C
 type=Creature

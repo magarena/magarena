@@ -1,5 +1,5 @@
 name=Ghostly Changeling
-image=https://magiccards.info/scans/en/mm2/83.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d9f1fda-8a94-48fe-9682-5b2fdbc31bad.jpg?1562264263
 image_updated=2015-11-05
 value=2.684
 rarity=C

@@ -1,5 +1,5 @@
 name=Satyr Wayfinder
-image=https://magiccards.info/scans/en/c16/165.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84cb8203-88e4-4a3b-9334-91b70c747091.jpg?1604194502
 image_updated=2017-08-17
 value=3.083
 rarity=C

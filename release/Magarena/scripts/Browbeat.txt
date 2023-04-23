@@ -1,5 +1,5 @@
 name=Browbeat
-image=https://magiccards.info/scans/en/a25/123.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e8e9f60-f8ea-4f29-b7e2-ca87f8336fca.jpg?1562437499
 image_updated=2018-04-27
 value=3.579
 rarity=U

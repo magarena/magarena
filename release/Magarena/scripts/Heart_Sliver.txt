@@ -1,5 +1,5 @@
 name=Heart Sliver
-image=https://magiccards.info/scans/en/tp/182.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27a83ab6-0d15-49e4-90e3-b3a2a095c632.jpg?1562053260
 value=4.447
 rarity=C
 type=Creature

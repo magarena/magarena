@@ -1,5 +1,5 @@
 name=Hellion Eruption
-image=https://magiccards.info/scans/en/pc2/45.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e1649a2-adc4-4703-a453-df3cfdb423a2.jpg?1562921335
 value=3.000
 rarity=R
 type=Sorcery

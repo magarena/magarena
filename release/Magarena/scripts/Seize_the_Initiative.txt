@@ -1,5 +1,5 @@
 name=Seize the Initiative
-image=https://magiccards.info/scans/en/som/20.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d745f35-944a-4157-a351-baa06f67b725.jpg?1562818777
 value=2.511
 rarity=C
 type=Instant

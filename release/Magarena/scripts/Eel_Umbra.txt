@@ -1,5 +1,5 @@
 name=Eel Umbra
-image=https://magiccards.info/scans/en/roe/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4ab47ce-a6dd-4839-ab41-053c5c5de768.jpg?1673147283
 value=4.098
 rarity=C
 type=Enchantment

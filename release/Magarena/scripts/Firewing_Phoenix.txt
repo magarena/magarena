@@ -1,5 +1,5 @@
 name=Firewing Phoenix
-image=https://magiccards.info/scans/en/m13/131.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08d7c90a-b999-4e0b-87df-7355d6c36fb1.jpg?1547517241
 value=3.560
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Whitewater Naiads
-image=https://magiccards.info/scans/en/jou/58.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed39a719-8a4b-4749-adeb-74cd82d9b416.jpg?1592710700
 value=3.643
 rarity=U
 type=Enchantment,Creature

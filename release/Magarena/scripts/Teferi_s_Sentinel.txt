@@ -1,5 +1,5 @@
 name=Teferi's Sentinel
-image=https://magiccards.info/scans/en/dom/273.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/058304f4-f08a-4b3a-ae74-c06f4968c99a.jpg?1562730834
 value=2.500
 rarity=U
 type=Artifact,Creature

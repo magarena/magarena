@@ -1,5 +1,5 @@
 name=Volrath's Stronghold
-image=https://magiccards.info/scans/en/sh/137.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f465ae5f-61f0-42c4-978f-841ba1226f56.jpg?1562432220
 value=4.453
 rarity=R
 type=Legendary,Land

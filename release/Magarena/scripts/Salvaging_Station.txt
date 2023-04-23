@@ -1,5 +1,5 @@
 name=Salvaging Station
-image=https://magiccards.info/scans/en/5dn/148.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0336e07-8eaf-4b90-af54-4764e5ba50f2.jpg?1562880585
 value=4.080
 rarity=R
 type=Artifact

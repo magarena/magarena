@@ -1,5 +1,5 @@
 name=Shu Elite Companions
-image=https://magiccards.info/scans/en/p3k/21.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e4b456f-f4d8-412b-afac-11eaae51b0fd.jpg?1562911407
 value=3.217
 rarity=U
 type=Creature

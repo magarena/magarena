@@ -1,5 +1,5 @@
 name=Path of Discovery
-image=https://magiccards.info/scans/en/rix/142.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad9d5518-34ea-418d-b34d-74d773db8bcb.jpg?1555040716
 value=2.500
 rarity=R
 type=Enchantment

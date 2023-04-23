@@ -1,5 +1,5 @@
 name=It of the Horrid Swarm
-image=https://magiccards.info/scans/en/emn/8.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e9160cb-d3de-49ca-a97d-2cd259cd5447.jpg?1576383739
 image_updated=2016-09-05
 value=2.500
 rarity=C

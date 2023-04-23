@@ -1,5 +1,5 @@
 name=Reki, the History of Kamigawa
-image=https://magiccards.info/scans/en/sok/142.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86317339-5a39-41eb-8aee-5ea926da8cd4.jpg?1593860751
 value=3.083
 rarity=R
 type=Legendary,Creature

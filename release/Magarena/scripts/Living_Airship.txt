@@ -1,5 +1,5 @@
 name=Living Airship
-image=https://magiccards.info/scans/en/ap/28.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0441eef-392e-4af4-b189-2f1fb8bf3fca.jpg?1562936656
 value=2.588
 rarity=C
 type=Creature

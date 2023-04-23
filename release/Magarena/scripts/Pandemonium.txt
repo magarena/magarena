@@ -1,5 +1,5 @@
 name=Pandemonium
-image=https://magiccards.info/scans/en/ex/93.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45ad514e-28a6-4816-b764-69ef89e117f1.jpg?1562429343
 value=4.339
 rarity=R
 type=Enchantment

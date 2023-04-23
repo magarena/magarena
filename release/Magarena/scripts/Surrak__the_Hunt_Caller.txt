@@ -1,5 +1,5 @@
 name=Surrak, the Hunt Caller
-image=https://magiccards.info/scans/en/dtk/210.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b374446d-44bc-4ac5-9829-8c49f0cca173.jpg?1562791824
 value=2.500
 rarity=R
 type=Legendary,Creature

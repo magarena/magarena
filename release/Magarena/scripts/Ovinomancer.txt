@@ -1,5 +1,5 @@
 name=Ovinomancer
-image=https://magiccards.info/scans/en/tsts/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5573470a-7192-4f1e-aafd-517c494875a8.jpg?1562776408
 value=3.067
 rarity=U
 type=Creature

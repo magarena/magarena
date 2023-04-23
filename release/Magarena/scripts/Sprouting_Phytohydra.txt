@@ -1,5 +1,5 @@
 name=Sprouting Phytohydra
-image=https://magiccards.info/scans/en/di/95.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a478eaa-2658-49db-965f-db25fc1d720e.jpg?1593273484
 value=4.000
 rarity=R
 type=Creature

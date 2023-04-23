@@ -1,5 +1,5 @@
 name=Seismic Strike
-image=https://magiccards.info/scans/en/m15/280.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/972d0b03-8602-4ada-86b9-4262941bae67.jpg?1562791278
 value=2.400
 rarity=C
 type=Instant

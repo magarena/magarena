@@ -1,5 +1,5 @@
 name=Stromkirk Patrol
-image=https://magiccards.info/scans/en/cn2/149.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c53a55ec-0ada-4fc1-9de4-d4daa1ae4546.jpg?1576382766
 image_updated=2017-08-29
 value=2.367
 rarity=C

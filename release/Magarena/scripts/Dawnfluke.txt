@@ -1,5 +1,5 @@
 name=Dawnfluke
-image=https://magiccards.info/scans/en/lw/12.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8968bc0-518f-4c41-bf00-2bf295065e33.jpg?1562374969
 value=2.625
 rarity=C
 type=Creature

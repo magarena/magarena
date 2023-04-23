@@ -1,5 +1,5 @@
 name=Trumpet Blast
-image=https://magiccards.info/scans/en/m19/165.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c676a5b0-bd46-46b3-b71b-a50b86c9b0bd.jpg?1562304321
 image_updated=2018-08-07
 value=2.750
 rarity=C

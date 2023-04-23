@@ -1,5 +1,5 @@
 name=Jalum Tome
-image=https://magiccards.info/scans/en/c14/242.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24814552-c407-447a-a782-22c69c5b912b.jpg?1608911498
 value=2.875
 rarity=R
 type=Artifact

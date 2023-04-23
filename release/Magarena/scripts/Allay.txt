@@ -1,5 +1,5 @@
 name=Allay
-image=https://magiccards.info/scans/en/ex/1.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f20a1c6d-ec6a-4bd6-b3b2-b997f71d41fc.jpg?1562089262
 value=2.986
 removal=1
 rarity=C

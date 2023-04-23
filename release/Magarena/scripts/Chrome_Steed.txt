@@ -1,5 +1,5 @@
 name=Chrome Steed
-image=https://magiccards.info/scans/en/som/142.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce881675-690f-4d4c-a951-ab8302e904ab.jpg?1562823268
 value=2.420
 rarity=C
 type=Artifact,Creature

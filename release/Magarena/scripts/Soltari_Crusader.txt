@@ -1,5 +1,5 @@
 name=Soltari Crusader
-image=https://magiccards.info/scans/en/tp/253.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cd07471-b216-465c-9946-1eac689db32e.jpg?1562054468
 value=3.500
 rarity=U
 type=Creature

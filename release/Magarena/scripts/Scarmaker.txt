@@ -1,5 +1,5 @@
 name=Scarmaker
-image=https://magiccards.info/scans/en/bok/69b.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28f72260-c8f9-4c44-92b5-23cef6690fdd.jpg?1562876119
 value=2.500
 rarity=U
 type=Legendary,Creature

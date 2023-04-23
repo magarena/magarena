@@ -1,5 +1,5 @@
 name=Streetbreaker Wurm
-image=https://magiccards.info/scans/en/gp/133.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5313054-91a5-401c-84d1-03a2cd265060.jpg?1593272809
 value=2.952
 rarity=C
 type=Creature

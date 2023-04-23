@@ -1,5 +1,5 @@
 name=Yoke of the Damned
-image=https://magiccards.info/scans/en/cfx/57.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8786d461-0ea5-4224-82e4-bfbe4d0d8b9f.jpg?1592713766
 value=3.045
 rarity=C
 type=Enchantment

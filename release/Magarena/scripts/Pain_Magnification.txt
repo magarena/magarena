@@ -1,5 +1,5 @@
 name=Pain Magnification
-image=https://magiccards.info/scans/en/di/121.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/844801e4-cf37-4f20-9149-b58a57b9276e.jpg?1593273683
 value=3.529
 rarity=U
 type=Enchantment

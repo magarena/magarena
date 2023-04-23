@@ -1,5 +1,5 @@
 name=Feed the Pack
-image=https://magiccards.info/scans/en/dka/114.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9831e3cc-659b-4408-b5d8-a27ae2738680.jpg?1562930830
 value=3.615
 rarity=R
 type=Enchantment

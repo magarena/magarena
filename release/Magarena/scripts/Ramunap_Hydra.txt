@@ -1,5 +1,5 @@
 name=Ramunap Hydra
-image=https://magiccards.info/scans/en/hou/130.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/953f3722-2126-4eb3-a3d8-cff4b0703a9c.jpg?1562807415
 value=2.500
 rarity=R
 type=Creature

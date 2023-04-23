@@ -1,5 +1,5 @@
 name=Thundersong Trumpeter
-image=https://magiccards.info/scans/en/mm3/195.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a98e91c-9518-4dcf-90a1-610d2d977e0c.jpg?1593814680
 image_updated=2017-08-08
 value=3.790
 rarity=U

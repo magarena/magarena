@@ -1,5 +1,5 @@
 name=Kolaghan, the Storm's Fury
-image=https://magiccards.info/scans/en/frf/155.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85b6ec91-0ecc-431c-bf85-220c615e0a80.jpg?1562615351
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Hive Stirrings
-image=https://magiccards.info/scans/en/m14/21.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4399e19-d05d-4bb3-9aff-c4133ddd2850.jpg?1562836364
 value=3.281
 rarity=C
 type=Sorcery

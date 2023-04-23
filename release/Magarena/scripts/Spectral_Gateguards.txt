@@ -1,5 +1,5 @@
 name=Spectral Gateguards
-image=https://magiccards.info/scans/en/avr/37.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f658073-5d90-4dca-b867-35ab827f22fd.jpg?1592762736
 value=2.172
 rarity=C
 type=Creature

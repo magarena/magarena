@@ -1,5 +1,5 @@
 name=Vinelasher Kudzu
-image=https://magiccards.info/scans/en/rav/189.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcae0517-f7d1-4b67-9ca3-608f2d8a70f9.jpg?1665822998
 value=4.042
 rarity=R
 type=Creature

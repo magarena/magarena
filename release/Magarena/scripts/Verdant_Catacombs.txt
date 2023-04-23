@@ -1,5 +1,5 @@
 name=Verdant Catacombs
-image=https://magiccards.info/scans/en/mm3/249.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94c229ea-90da-4aa0-bfda-b162fb3b5b8b.jpg?1626099986
 image_updated=2017-08-08
 value=4.480
 rarity=R

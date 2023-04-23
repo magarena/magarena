@@ -1,5 +1,5 @@
 name=Ruby Leech
-image=https://magiccards.info/scans/en/in/161.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be621b12-4f4e-43a6-b65e-da4223e742b5.jpg?1562933305
 value=1.385
 rarity=R
 type=Creature

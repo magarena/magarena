@@ -1,5 +1,5 @@
 name=Firebrand Archer
-image=https://magiccards.info/scans/en/hou/92.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6ddc6b73-298b-4afa-990a-63706e77dd9f.jpg?1562803040
 value=2.500
 rarity=C
 type=Creature

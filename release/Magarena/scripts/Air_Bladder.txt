@@ -1,5 +1,5 @@
 name=Air Bladder
-image=https://magiccards.info/scans/en/ne/28.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7363c6f-53a3-4f41-b451-8120bc24f1ee.jpg?1562631393
 value=1.432
 rarity=C
 type=Enchantment

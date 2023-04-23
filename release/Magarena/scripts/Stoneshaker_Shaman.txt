@@ -1,5 +1,5 @@
 name=Stoneshaker Shaman
-image=https://magiccards.info/scans/en/rav/145.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17a0edb0-697a-4e0b-872b-f3c15c19cbda.jpg?1598915907
 value=2.548
 rarity=U
 type=Creature

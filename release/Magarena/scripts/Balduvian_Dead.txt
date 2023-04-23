@@ -1,5 +1,5 @@
 name=Balduvian Dead
-image=https://magiccards.info/scans/en/cstd/21.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9aee135-65f6-4abb-b0ca-ee5ceb958a24.jpg?1581799172
 value=4.033
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sentry of the Underworld
-image=https://magiccards.info/scans/en/ths/202.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/018a9c98-1cb4-4c53-a765-c15808c4ab44.jpg?1562814015
 value=3.385
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Hero of Iroas
-image=https://magiccards.info/scans/en/bng/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcc9a63b-e7cd-404a-8d5c-0c1396e16d0b.jpg?1547515580
 value=3.821
 rarity=R
 type=Creature

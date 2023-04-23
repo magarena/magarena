@@ -1,5 +1,5 @@
 name=Utter End
-image=https://magiccards.info/scans/en/c16/226.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8a702e4-0d5c-428b-b490-64fe6701f6d4.jpg?1682209879
 image_updated=2017-08-17
 value=4.167
 rarity=R

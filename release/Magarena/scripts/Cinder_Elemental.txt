@@ -1,5 +1,5 @@
 name=Cinder Elemental
-image=https://magiccards.info/scans/en/gtc/87.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78c3c616-1f95-41b1-a624-79d6362d4f16.jpg?1601077424
 value=3.430
 rarity=U
 type=Creature

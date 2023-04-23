@@ -1,5 +1,5 @@
 name=Parallax Wave
-image=https://magiccards.info/scans/en/ne/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe30c0ff-f74b-456a-a61e-3720d84d713f.jpg?1562946314
 value=4.000
 rarity=R
 type=Enchantment

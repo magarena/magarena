@@ -1,5 +1,5 @@
 name=Noxious Revival
-image=https://magiccards.info/scans/en/nph/118.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bdd1243-1d14-496a-9b7a-0c5b34461361.jpg?1562875840
 value=4.368
 rarity=U
 type=Instant

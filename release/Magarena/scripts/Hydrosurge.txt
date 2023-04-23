@@ -1,5 +1,5 @@
 name=Hydrosurge
-image=https://magiccards.info/scans/en/m15/58.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fd4dacb-912e-4e54-ab60-16a5262d0fbb.jpg?1562783653
 value=1.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Warden of the First Tree
-image=https://magiccards.info/scans/en/frf/143.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e0c6628-04f1-4800-baa8-bcaefe64f59f.jpg?1562823823
 value=2.500
 rarity=M
 type=Creature

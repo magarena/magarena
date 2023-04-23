@@ -1,5 +1,5 @@
 name=Bant Panorama
-image=https://magiccards.info/scans/en/ala/221.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc506497-4ecd-41d3-9042-f92f498251b0.jpg?1673485553
 value=3.042
 rarity=C
 type=Land

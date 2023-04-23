@@ -1,5 +1,5 @@
 name=Wings of the Guard
-image=https://magiccards.info/scans/en/cn2/26.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/4084a009-f366-416b-b82d-a762189abf43.jpg?1576381676
 image_updated=2016-09-05
 value=2.500
 rarity=C

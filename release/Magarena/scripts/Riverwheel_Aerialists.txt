@@ -1,5 +1,5 @@
 name=Riverwheel Aerialists
-image=https://magiccards.info/scans/en/ima/71.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e1d59d6-7f53-4139-b2f2-3189f24bdc84.jpg?1562847034
 image_updated=2017-04-12
 value=3.250
 rarity=C

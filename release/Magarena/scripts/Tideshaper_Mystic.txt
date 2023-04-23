@@ -1,5 +1,5 @@
 name=Tideshaper Mystic
-image=https://magiccards.info/scans/en/lw/93.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e526ebbf-2041-4c3e-9a20-73bbf6f90251.jpg?1562372233
 value=3.133
 rarity=C
 type=Creature

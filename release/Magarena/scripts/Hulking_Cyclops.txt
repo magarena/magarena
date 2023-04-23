@@ -1,5 +1,5 @@
 name=Hulking Cyclops
-image=https://magiccards.info/scans/en/8e/195.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc1a5428-9bb4-4e2b-ba94-fccd321ce537.jpg?1562939251
 value=2.469
 rarity=U
 type=Creature

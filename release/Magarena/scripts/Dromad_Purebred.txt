@@ -1,5 +1,5 @@
 name=Dromad Purebred
-image=https://magiccards.info/scans/en/rav/15.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0106caf1-2201-4661-96a5-56af02963fa6.jpg?1598913635
 value=1.436
 rarity=C
 type=Creature

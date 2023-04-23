@@ -1,5 +1,5 @@
 name=Call for Unity
-image=https://magiccards.info/scans/en/aer/9.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eeca4557-98aa-433b-a3ee-050e4a3e6d88.jpg?1576381320
 value=2.500
 rarity=R
 type=Enchantment

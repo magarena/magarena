@@ -1,5 +1,5 @@
 name=Obsessive Skinner
-image=https://magiccards.info/scans/en/soi/220.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2cc3b9d-4b32-4b2e-9027-876210ccf18e.jpg?1576385178
 value=2.500
 rarity=U
 type=Creature

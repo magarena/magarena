@@ -1,5 +1,5 @@
 name=Sorin, Solemn Visitor
-image=https://magiccards.info/scans/en/ktk/202.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da1a9643-34d6-4b4b-b896-2d4626eca40a.jpg?1562794474
 value=3.750
 rarity=M
 type=Legendary,Planeswalker

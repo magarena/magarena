@@ -1,5 +1,5 @@
 name=Welding Sparks
-image=https://magiccards.info/scans/en/kld/140.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/346cc190-6825-4226-8ea5-71abe788454d.jpg?1608910489
 image_updated=2016-10-05
 value=2.500
 rarity=C

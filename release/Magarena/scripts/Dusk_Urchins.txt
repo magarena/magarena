@@ -1,5 +1,5 @@
 name=Dusk Urchins
-image=https://magiccards.info/scans/en/shm/65.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adce41c5-3a43-4fe0-b84e-8baaad1a0777.jpg?1562834637
 value=4.000
 rarity=R
 type=Creature

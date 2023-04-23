@@ -1,5 +1,5 @@
 name=Arrogant Bloodlord
-image=https://magiccards.info/scans/en/roe/94.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ed08a7f-6682-46a4-89df-b9b418df3f1a.jpg?1562704268
 value=3.732
 rarity=U
 type=Creature

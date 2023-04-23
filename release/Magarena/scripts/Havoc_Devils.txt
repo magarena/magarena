@@ -1,5 +1,5 @@
 name=Havoc Devils
-image=https://magiccards.info/scans/en/m19/146.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f003678-0f17-4f1d-87d5-83613a82044b.jpg?1562301216
 value=2.500
 rarity=C
 type=Creature

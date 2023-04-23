@@ -1,5 +1,5 @@
 name=Gravedigger
-image=https://magiccards.info/scans/en/m19/98.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fb714a0-e61b-4ccf-8de6-3a6bf87c8315.jpg?1592516699
 image_updated=2018-08-07
 value=3.417
 rarity=U

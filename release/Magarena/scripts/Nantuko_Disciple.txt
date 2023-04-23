@@ -1,5 +1,5 @@
 name=Nantuko Disciple
-image=https://magiccards.info/scans/en/8e/268.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32bd6695-ee30-4ab1-a732-26b073c2fec6.jpg?1562905271
 value=2.783
 rarity=C
 type=Creature

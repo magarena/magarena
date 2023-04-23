@@ -1,5 +1,5 @@
 name=Bloodbriar
-image=https://magiccards.info/scans/en/emn/151.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a9281d7-9c11-4dc8-9035-902fa3a69ebf.jpg?1599706919
 image_updated=2016-09-05
 value=2.500
 rarity=C

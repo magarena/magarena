@@ -1,5 +1,5 @@
 name=Fleet-Footed Monk
-image=https://magiccards.info/scans/en/po/177.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03cd972d-1cc1-4fb1-9b4e-a88ea115cf7f.jpg?1562445662
 value=3.241
 rarity=C
 type=Creature

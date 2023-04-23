@@ -1,5 +1,5 @@
 name=Ride Down
-image=https://magiccards.info/scans/en/emn/188.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c021868f-9ab8-4a52-b12e-3cc35c9d67f0.jpg?1576385014
 image_updated=2016-09-09
 value=3.250
 rarity=U

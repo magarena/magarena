@@ -1,5 +1,5 @@
 name=Reef Pirates
-image=https://magiccards.info/scans/en/5e/116.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d712139-bf12-4f7b-bb9b-34d15fac56df.jpg?1562590151
 value=2.893
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Krenko's Enforcer
-image=https://magiccards.info/scans/en/m15/152.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce2ceeb0-03b6-48bc-a084-069176ebccb2.jpg?1562794485
 value=3.250
 rarity=C
 type=Creature

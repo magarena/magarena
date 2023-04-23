@@ -1,5 +1,5 @@
 name=Memnarch
-image=https://magiccards.info/scans/en/ds/129.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9203fde4-dbc1-449f-9618-4656f0e25e3c.jpg?1562925842
 image_updated=2016-12-23
 value=4.548
 rarity=R

@@ -1,5 +1,5 @@
 name=Wand of the Elements
-image=https://magiccards.info/scans/en/ds/158.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1131c187-8fc3-4cee-9422-355ef6622de7.jpg?1562635436
 value=3.605
 rarity=R
 type=Artifact

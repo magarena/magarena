@@ -1,5 +1,5 @@
 name=Scarwood Hag
-image=https://magiccards.info/scans/en/dk/49.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac2655e4-3a4d-4f73-820a-02fab675d42e.jpg?1562935659
 value=1.551
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Vampire Hounds
-image=https://magiccards.info/scans/en/ex/77.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59339026-3ec6-4bd9-a1c4-c80951f8c68d.jpg?1562429375
 value=4.134
 rarity=C
 type=Creature

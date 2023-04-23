@@ -1,5 +1,5 @@
 name=Bant Sojourners
-image=https://magiccards.info/scans/en/arb/125.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/eff007af-0329-4872-8621-41e90d9f06e6.jpg?1562645006
 value=2.922
 rarity=C
 type=Creature

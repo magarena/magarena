@@ -1,5 +1,5 @@
 name=Oviya Pashiri, Sage Lifecrafter
-image=https://magiccards.info/scans/en/kld/165.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27eb9d40-958b-41b8-b04b-7f45adc0a862.jpg?1576382622
 image_updated=2016-10-05
 value=2.500
 rarity=R

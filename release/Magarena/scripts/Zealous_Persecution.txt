@@ -1,5 +1,5 @@
 name=Zealous Persecution
-image=https://magiccards.info/scans/en/ema/213.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a5e69fc-9a3e-4830-a0ea-36183274325a.jpg?1580015131
 value=3.929
 removal=1
 rarity=U

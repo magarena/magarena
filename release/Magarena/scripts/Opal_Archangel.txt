@@ -1,5 +1,5 @@
 name=Opal Archangel
-image=https://magiccards.info/scans/en/us/23.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a75fca33-fa06-4385-866c-5d463ae6aaf6.jpg?1562930262
 value=3.558
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Woodlurker Mimic
-image=https://magiccards.info/scans/en/eve/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d86dd5a9-4793-4ca2-b94d-4333781b1468.jpg?1562940740
 value=3.377
 rarity=C
 type=Creature

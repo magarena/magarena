@@ -1,5 +1,5 @@
 name=Sootstoke Kindler
-image=https://magiccards.info/scans/en/shm/195.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b2260b4-c069-4f59-9bd9-35745c98c518.jpg?1562829771
 value=3.110
 rarity=C
 type=Creature

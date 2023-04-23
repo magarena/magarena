@@ -1,5 +1,5 @@
 name=Wake of Destruction
-image=https://magiccards.info/scans/en/ud/99.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c070f12-0342-48d5-ab0e-4fc4701c3669.jpg?1562443321
 value=4.325
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Gideon, Ally of Zendikar
-image=https://magiccards.info/scans/en/bfz/29.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/187e887c-c39d-4d25-a506-cdc95fc70316.jpg?1562900856
 image_updated=2015-11-08
 value=2.500
 rarity=M

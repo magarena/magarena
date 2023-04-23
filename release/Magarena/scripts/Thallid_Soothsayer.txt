@@ -1,5 +1,5 @@
 name=Thallid Soothsayer
-image=https://magiccards.info/scans/en/dom/107.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff6c08d7-9b2d-475f-9acb-f8a995e7e804.jpg?1592765010
 value=2.500
 rarity=U
 type=Creature

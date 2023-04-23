@@ -1,5 +1,5 @@
 name=Rotcrown Ghoul
-image=https://magiccards.info/scans/en/avr/72.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f13b5ba6-0de1-4f5c-867b-57e2c10bde8e.jpg?1592708674
 value=1.962
 rarity=C
 type=Creature

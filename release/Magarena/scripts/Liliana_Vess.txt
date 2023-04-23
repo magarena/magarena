@@ -1,5 +1,5 @@
 name=Liliana Vess
-image=https://magiccards.info/scans/en/m15/103.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96bb667b-7240-4072-beb7-9a803c9eabe3.jpg?1562930474
 value=4.045
 rarity=M
 type=Legendary,Planeswalker

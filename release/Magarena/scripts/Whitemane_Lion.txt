@@ -1,5 +1,5 @@
 name=Whitemane Lion
-image=https://magiccards.info/scans/en/a25/39.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d243be1-b67a-44b5-9453-a9f8583c0014.jpg?1619393707
 image_updated=2018-04-27
 value=3.062
 rarity=C

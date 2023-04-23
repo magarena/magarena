@@ -1,5 +1,5 @@
 name=Benalish Honor Guard
-image=https://magiccards.info/scans/en/dom/5.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73a5ecf1-2063-4cb3-a4ab-a0601b28256a.jpg?1562737807
 value=2.500
 rarity=C
 type=Creature

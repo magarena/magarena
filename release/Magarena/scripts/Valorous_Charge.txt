@@ -1,5 +1,5 @@
 name=Valorous Charge
-image=https://magiccards.info/scans/en/po/196.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67f61bdf-cbcd-4a63-8866-eb13ec9b351c.jpg?1562446856
 value=1.705
 rarity=U
 type=Sorcery

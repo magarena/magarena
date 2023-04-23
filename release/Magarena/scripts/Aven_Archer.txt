@@ -1,5 +1,5 @@
 name=Aven Archer
-image=https://magiccards.info/scans/en/od/6.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d174892-c192-4667-94fb-9f8dbcc6c5eb.jpg?1562909125
 value=1.742
 rarity=U
 type=Creature

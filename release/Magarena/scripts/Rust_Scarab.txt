@@ -1,5 +1,5 @@
 name=Rust Scarab
-image=https://magiccards.info/scans/en/gtc/130.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c57335b5-30e2-431f-ab50-d5f1981783c3.jpg?1561845070
 value=2.948
 rarity=U
 type=Creature

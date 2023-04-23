@@ -1,5 +1,5 @@
 name=Firewild Borderpost
-image=https://magiccards.info/scans/en/arb/54.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb37a8bd-6b6c-47f3-b7a0-5a20fa2d507c.jpg?1562644892
 value=3.032
 rarity=C
 type=Artifact

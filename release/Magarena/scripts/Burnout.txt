@@ -1,5 +1,5 @@
 name=Burnout
-image=https://magiccards.info/scans/en/ai/101.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c8d78d3-6760-4a66-adbd-d8aa2544e057.jpg?1562869524
 value=3.950
 rarity=U
 type=Instant

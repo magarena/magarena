@@ -1,5 +1,5 @@
 name=Mystic Might
-image=https://magiccards.info/scans/en/ia/86.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e35d7f08-0687-41bd-8c53-31a49adabb11.jpg?1562937512
 value=2.000
 rarity=R
 type=Enchantment

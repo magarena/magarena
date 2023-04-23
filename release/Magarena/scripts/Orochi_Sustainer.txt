@@ -1,5 +1,5 @@
 name=Orochi Sustainer
-image=https://magiccards.info/scans/en/chk/236.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fb40d7a-f2d3-4c9a-a1ab-6b08bd143fe5.jpg?1562760578
 value=2.518
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Cryptic Cruiser
-image=https://magiccards.info/scans/en/bfz/56.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff2061f7-5e51-4862-9650-0005002d04b6.jpg?1562955403
 image_updated=2015-11-08
 value=2.500
 rarity=U

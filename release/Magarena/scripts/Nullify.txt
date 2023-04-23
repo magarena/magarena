@@ -1,5 +1,5 @@
 name=Nullify
-image=https://magiccards.info/scans/en/bng/45.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a940d859-3fb1-4946-8277-b7c503605b1e.jpg?1593091715
 value=3.786
 rarity=C
 type=Instant

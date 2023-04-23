@@ -1,5 +1,5 @@
 name=Watery Grave
-image=https://magiccards.info/scans/en/gtc/249.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d4595f2-9297-40dc-b2dd-7144bbb401f7.jpg?1572894217
 value=4.122
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Hurly-Burly
-image=https://magiccards.info/scans/en/cn2/165.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0236a0a6-c1ed-4355-82a0-a513cf925382.jpg?1576382898
 image_updated=2017-08-29
 value=3.402
 rarity=C

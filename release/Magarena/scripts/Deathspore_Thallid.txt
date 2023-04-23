@@ -1,5 +1,5 @@
 name=Deathspore Thallid
-image=https://magiccards.info/scans/en/ts/102.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74c1b368-6fb0-4430-807e-d124f3077361.jpg?1619395285
 value=3.877
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mardu Hordechief
-image=https://magiccards.info/scans/en/ktk/17.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23426221-30a8-4be2-9c70-f0eb022edad7.jpg?1562783652
 value=3.250
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=High Sentinels of Arashin
-image=https://magiccards.info/scans/en/ktk/13.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d46b34ed-88a4-4868-9ce3-b91901e600d3.jpg?1682208452
 value=3.833
 rarity=R
 type=Creature

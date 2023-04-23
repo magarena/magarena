@@ -1,5 +1,5 @@
 name=Angelic Blessing
-image=https://magiccards.info/scans/en/10e/3.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/731fa8e8-2329-4e1a-9ffa-0b4b95b93274.jpg?1562430293
 value=2.727
 rarity=C
 type=Sorcery

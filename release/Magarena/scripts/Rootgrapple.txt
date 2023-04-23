@@ -1,5 +1,5 @@
 name=Rootgrapple
-image=https://magiccards.info/scans/en/lw/234.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fe6051f-6252-4ad1-90ab-d21705a708d1.jpg?1562338616
 value=3.304
 rarity=C
 type=Tribal,Instant

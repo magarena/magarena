@@ -1,5 +1,5 @@
 name=Djinn of the Lamp
-image=https://magiccards.info/scans/en/po/54.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a5e7b52-2663-4140-9758-f24b8b947876.jpg?1562446176
 value=2.143
 rarity=R
 type=Creature

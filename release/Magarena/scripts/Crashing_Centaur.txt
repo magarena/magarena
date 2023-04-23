@@ -1,5 +1,5 @@
 name=Crashing Centaur
-image=https://magiccards.info/scans/en/od/235.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1f3a32a-bfd2-4c31-a349-3e62a84c20e1.jpg?1562937245
 value=2.913
 rarity=U
 type=Creature

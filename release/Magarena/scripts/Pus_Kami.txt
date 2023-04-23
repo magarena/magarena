@@ -1,5 +1,5 @@
 name=Pus Kami
-image=https://magiccards.info/scans/en/bok/79.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f142dea-4751-453f-93a5-c8fdaba8a1b3.jpg?1562876955
 value=1.610
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Magmatic Chasm
-image=https://magiccards.info/scans/en/soi/172.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4d5de8b-0286-4fca-86fd-e983a91f4a8c.jpg?1576384847
 image_updated=2010-09-10
 value=2.500
 rarity=C

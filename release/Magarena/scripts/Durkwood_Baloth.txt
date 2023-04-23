@@ -1,5 +1,5 @@
 name=Durkwood Baloth
-image=https://magiccards.info/scans/en/ima/160.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dce39dd1-ca51-420f-a627-1511192d34c2.jpg?1619397895
 image_updated=2017-04-12
 value=3.237
 rarity=C

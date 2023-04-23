@@ -1,5 +1,5 @@
 name=Village Elder
-image=https://magiccards.info/scans/en/mr/149.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/253a1d97-ec45-41c9-ba81-bbb6ab584b2b.jpg?1587912698
 image_updated=2017-01-11
 value=2.324
 rarity=C

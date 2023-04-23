@@ -1,5 +1,5 @@
 name=Trusty Packbeast
-image=https://magiccards.info/scans/en/m19/41.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fcfe1b5-e35b-4a23-8ca8-4dee2ef94f32.jpg?1608909062
 value=2.500
 rarity=C
 type=Creature

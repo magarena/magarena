@@ -1,5 +1,5 @@
 name=Keldon Mantle
-image=https://magiccards.info/scans/en/ps/65.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35bb73df-f488-468c-a9ad-72f52c8da3dc.jpg?1562906342
 value=3.721
 rarity=C
 type=Enchantment

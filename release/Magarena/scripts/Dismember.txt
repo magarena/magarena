@@ -1,5 +1,5 @@
 name=Dismember
-image=https://magiccards.info/scans/en/mm2/79.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d286cf6-3e16-4941-9326-1818b1e06d69.jpg?1562261132
 value=4.438
 removal=5
 rarity=U

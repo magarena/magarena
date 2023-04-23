@@ -1,5 +1,5 @@
 name=Border Guard
-image=https://magiccards.info/scans/en/st/9.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43cc74c6-f0e5-443d-a2b3-4dcbf5858034.jpg?1562874059
 value=2.062
 rarity=C
 type=Creature

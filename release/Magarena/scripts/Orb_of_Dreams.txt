@@ -1,5 +1,5 @@
 name=Orb of Dreams
-image=https://magiccards.info/scans/en/bok/156.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fbe52a3-f85e-4b3a-a345-413b64d69c49.jpg?1562877355
 value=4.293
 rarity=R
 type=Artifact

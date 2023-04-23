@@ -1,5 +1,5 @@
 name=Augury Adept
-image=https://magiccards.info/scans/en/shm/137.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9cf106f-f547-4323-b8bf-0340c6308007.jpg?1562930808
 value=4.481
 rarity=R
 type=Creature

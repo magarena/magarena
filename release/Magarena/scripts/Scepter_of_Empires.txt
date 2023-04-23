@@ -1,5 +1,5 @@
 name=Scepter of Empires
-image=https://magiccards.info/scans/en/m12/216.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54f1aaef-94cc-45ab-99c9-8ffdcf331a7b.jpg?1562642802
 value=2.967
 rarity=U
 type=Artifact

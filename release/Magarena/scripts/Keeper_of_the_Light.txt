@@ -1,5 +1,5 @@
 name=Keeper of the Light
-image=https://magiccards.info/scans/en/ex/8.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06eda847-c599-4163-b48b-aa76b153ed86.jpg?1562086892
 value=3.320
 rarity=U
 type=Creature

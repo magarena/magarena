@@ -1,5 +1,5 @@
 name=Frantic Purification
-image=https://magiccards.info/scans/en/tr/6.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04f156d1-2655-42aa-a785-d8eb15cb5422.jpg?1574250403
 value=1.979
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Liberating Combustion
-image=https://magiccards.info/scans/en/kld/267.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9d2156e-2d54-440e-b0fd-7bef702afbfc.jpg?1562743003
 image_updated=2016-10-05
 value=2.500
 rarity=R

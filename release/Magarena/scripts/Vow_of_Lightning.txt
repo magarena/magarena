@@ -1,5 +1,5 @@
 name=Vow of Lightning
-image=https://magiccards.info/scans/en/cmd/138.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71218cff-7e57-40dd-83c2-d06b284a63fd.jpg?1608910481
 value=3.485
 rarity=U
 type=Enchantment

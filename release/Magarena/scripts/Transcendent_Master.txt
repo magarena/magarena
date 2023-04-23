@@ -1,5 +1,5 @@
 name=Transcendent Master
-image=https://magiccards.info/scans/en/roe/51.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b007f42-9ec2-466b-8d6b-1d55c516080b.jpg?1562704735
 value=4.263
 rarity=M
 type=Creature

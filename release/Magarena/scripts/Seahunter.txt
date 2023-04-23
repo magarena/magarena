@@ -1,5 +1,5 @@
 name=Seahunter
-image=https://magiccards.info/scans/en/ne/41.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c375f65a-6d88-4d3c-a7a7-8c7a5cc5807f.jpg?1562631875
 value=4.053
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Forerunner of the Empire
-image=https://magiccards.info/scans/en/rix/102.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/947644ab-02b3-4ebe-b62a-c087ab205ab0.jpg?1555040426
 value=2.500
 rarity=U
 type=Creature

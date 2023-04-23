@@ -1,5 +1,5 @@
 name=Flame Jab
-image=https://magiccards.info/scans/en/ema/131.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e227f18f-7260-4066-bae2-01db4fd1abdd.jpg?1580014544
 value=3.284
 rarity=U
 type=Sorcery

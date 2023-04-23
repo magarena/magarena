@@ -1,5 +1,5 @@
 name=Swords to Plowshares
-image=https://magiccards.info/scans/en/a25/35.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81c31217-7919-40fd-97e7-88431b7bd277.jpg?1682208653
 image_updated=2018-04-27
 value=4.731
 removal=4

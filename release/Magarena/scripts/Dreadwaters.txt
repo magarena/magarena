@@ -1,5 +1,5 @@
 name=Dreadwaters
-image=https://magiccards.info/scans/en/ori/56.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4c1434a-4832-4008-a091-e0703dedd0a2.jpg?1562040680
 image_updated=2015-11-05
 value=2.500
 rarity=C

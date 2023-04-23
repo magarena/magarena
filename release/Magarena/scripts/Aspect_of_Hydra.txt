@@ -1,5 +1,5 @@
 name=Aspect of Hydra
-image=https://magiccards.info/scans/en/bng/117.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19353629-07be-47e2-a7d5-3a5e5e1120c8.jpg?1593092421
 value=3.800
 rarity=C
 type=Instant

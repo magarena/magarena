@@ -1,5 +1,5 @@
 name=Engulfing Slagwurm
-image=https://magiccards.info/scans/en/som/118.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8aeabc4a-7b4f-4e3d-bcc7-423bb703563a.jpg?1562820074
 value=4.122
 rarity=R
 type=Creature

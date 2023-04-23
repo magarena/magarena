@@ -1,5 +1,5 @@
 name=Necrobite
-image=https://magiccards.info/scans/en/m15/105.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06c5bca1-b0f0-4032-b2ed-71bdbaa41993.jpg?1562782127
 value=2.600
 rarity=C
 type=Instant

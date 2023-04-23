@@ -1,5 +1,5 @@
 name=Saprazzan Heir
-image=https://magiccards.info/scans/en/mm/99.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e3d913d-2dcf-4747-8169-0c44ec895864.jpg?1562378970
 value=3.628
 rarity=R
 type=Creature

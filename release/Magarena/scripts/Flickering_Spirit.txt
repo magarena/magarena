@@ -1,5 +1,5 @@
 name=Flickering Spirit
-image=https://magiccards.info/scans/en/ts/17.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64ef9188-737e-4cc6-b3a5-95aafddcf665.jpg?1562916115
 value=2.224
 rarity=C
 type=Creature

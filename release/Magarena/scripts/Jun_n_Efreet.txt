@@ -1,5 +1,5 @@
 name=Junún Efreet
-image=https://magiccards.info/scans/en/4e/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f6529eb-79ff-4ddc-9fae-38326324f7e6.jpg?1562917476
 value=2.940
 rarity=U
 type=Creature

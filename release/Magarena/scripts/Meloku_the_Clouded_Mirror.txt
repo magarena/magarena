@@ -1,5 +1,5 @@
 name=Meloku the Clouded Mirror
-image=https://magiccards.info/scans/en/mma/52.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60b9db96-a6ab-454b-99a7-910ef77560d7.jpg?1668725069
 value=4.300
 rarity=R
 type=Legendary,Creature

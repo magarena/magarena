@@ -1,5 +1,5 @@
 name=Frozen Shade
-image=https://magiccards.info/scans/en/5e/25.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbd0b4ff-f49f-4079-991a-f66d1220235d.jpg?1562594238
 value=3.098
 rarity=C
 type=Creature

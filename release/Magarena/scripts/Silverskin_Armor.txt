@@ -1,5 +1,5 @@
 name=Silverskin Armor
-image=https://magiccards.info/scans/en/mbs/132.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1dba839-bd1e-4ce8-ab90-005eb1f0102e.jpg?1562615008
 value=2.808
 rarity=U
 type=Artifact

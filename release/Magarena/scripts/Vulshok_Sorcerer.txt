@@ -1,5 +1,5 @@
 name=Vulshok Sorcerer
-image=https://magiccards.info/scans/en/5dn/80.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7153854-c548-48de-b9e2-72b7d9397563.jpg?1581708504
 image_updated=2017-01-11
 value=3.077
 rarity=C

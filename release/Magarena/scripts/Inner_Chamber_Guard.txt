@@ -1,5 +1,5 @@
 name=Inner-Chamber Guard
-image=https://magiccards.info/scans/en/sok/13.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d34bfb9-abc7-4469-9546-aa8988da8259.jpg?1562493685
 value=3.156
 rarity=U
 type=Creature

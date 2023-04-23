@@ -1,5 +1,5 @@
 name=Vastwood Zendikon
-image=https://magiccards.info/scans/en/wwk/117.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d00cb59d-de35-45b2-a7f8-f8c1e821f6ee.jpg?1601080268
 value=2.574
 rarity=C
 type=Enchantment

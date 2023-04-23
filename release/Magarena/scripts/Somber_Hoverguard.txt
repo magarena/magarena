@@ -1,5 +1,5 @@
 name=Somber Hoverguard
-image=https://magiccards.info/scans/en/mm2/57.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13cfe45f-0b1f-489b-a0a6-679668589726.jpg?1562259443
 value=3.694
 rarity=C
 type=Creature

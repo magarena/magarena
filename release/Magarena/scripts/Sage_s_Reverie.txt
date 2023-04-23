@@ -1,5 +1,5 @@
 name=Sage's Reverie
-image=https://magiccards.info/scans/en/frf/23.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d20c3b2d-299c-4423-9091-6f8c0c1c0661.jpg?1592710467
 value=2.500
 rarity=U
 type=Enchantment

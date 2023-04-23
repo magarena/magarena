@@ -1,5 +1,5 @@
 name=Apostle's Blessing
-image=https://magiccards.info/scans/en/mm2/8.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdfbc07e-d726-4d42-9394-6aa0f5fc3a3a.jpg?1562269765
 value=3.546
 rarity=C
 type=Instant

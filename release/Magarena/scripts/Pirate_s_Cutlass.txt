@@ -1,5 +1,5 @@
 name=Pirate's Cutlass
-image=https://magiccards.info/scans/en/xln/242.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5dc0635-0cc4-419e-ab64-c07a69f34f75.jpg?1608911636
 value=2.500
 rarity=C
 type=Artifact

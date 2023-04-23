@@ -1,5 +1,5 @@
 name=Crash
-image=https://magiccards.info/scans/en/mm/186.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a26bde3-8392-4476-b347-f223d52554a6.jpg?1562381377
 value=3.954
 rarity=C
 type=Instant

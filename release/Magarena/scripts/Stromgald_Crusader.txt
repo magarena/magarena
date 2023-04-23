@@ -1,5 +1,5 @@
 name=Stromgald Crusader
-image=https://magiccards.info/scans/en/cs/71.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5baeff5-40e9-47b6-85a8-3a6548565b5f.jpg?1593275173
 value=4.357
 rarity=U
 type=Creature

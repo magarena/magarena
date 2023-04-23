@@ -1,5 +1,5 @@
 name=Guardians' Pledge
-image=https://magiccards.info/scans/en/m12/22.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7e6105c-8633-46f7-a7ca-2a5c36c6d548.jpg?1562663898
 value=3.107
 rarity=C
 type=Instant

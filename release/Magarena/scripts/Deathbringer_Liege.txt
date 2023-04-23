@@ -1,5 +1,5 @@
 name=Deathbringer Liege
-image=https://magiccards.info/scans/en/eve/85.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f72d5f2f-7e54-4538-9f0a-eed464a74016.jpg?1673148507
 value=4.195
 rarity=R
 type=Creature

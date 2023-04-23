@@ -1,5 +1,5 @@
 name=Tunneling Geopede
-image=https://magiccards.info/scans/en/bfz/158.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4071152-5e64-4133-88a2-8fa5cb0eeb6c.jpg?1562945525
 image_updated=2015-11-08
 value=2.500
 rarity=U

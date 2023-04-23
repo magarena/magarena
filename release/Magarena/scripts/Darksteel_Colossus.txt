@@ -1,5 +1,5 @@
 name=Darksteel Colossus
-image=https://magiccards.info/scans/en/m10/208.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a3aa1ce-8757-4541-8ac7-1e7e203b60fc.jpg?1561981290
 value=4.568
 rarity=M
 type=Artifact,Creature

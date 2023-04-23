@@ -1,5 +1,5 @@
 name=Ring of Evos Isle
-image=https://magiccards.info/scans/en/m13/211.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7c740a8-1bbc-4ec8-a72c-01aee9e48f3d.jpg?1562558282
 value=3.689
 rarity=U
 type=Artifact

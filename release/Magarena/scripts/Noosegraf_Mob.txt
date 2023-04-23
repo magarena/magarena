@@ -1,5 +1,5 @@
 name=Noosegraf Mob
-image=https://magiccards.info/scans/en/emn/98.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8320434-70d6-48c6-a4cd-1cecc6a21ad4.jpg?1562932075
 image_updated=2016-09-05
 value=2.500
 rarity=R

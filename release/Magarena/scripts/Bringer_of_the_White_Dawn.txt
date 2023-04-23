@@ -1,5 +1,5 @@
 name=Bringer of the White Dawn
-image=https://magiccards.info/scans/en/5dn/7.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e5a7117-b1e2-46bd-873e-baf9d9fac009.jpg?1562878783
 value=4.141
 rarity=R
 type=Creature

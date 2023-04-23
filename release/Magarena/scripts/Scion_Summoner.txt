@@ -1,5 +1,5 @@
 name=Scion Summoner
-image=https://magiccards.info/scans/en/ogw/123.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/826a882e-c4bd-4132-b797-9e1aa2d0bce4.jpg?1562921366
 image_updated=2016-02-29
 value=2.500
 rarity=C

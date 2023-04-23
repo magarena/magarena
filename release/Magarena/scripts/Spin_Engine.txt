@@ -1,5 +1,5 @@
 name=Spin Engine
-image=https://magiccards.info/scans/en/mbs/135.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc820134-ae9a-4c99-a869-cee7f1f6d79b.jpg?1562616134
 value=2.780
 rarity=C
 type=Artifact,Creature

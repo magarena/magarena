@@ -1,5 +1,5 @@
 name=Rockshard Elemental
-image=https://magiccards.info/scans/en/le/109.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d6343c0-3fb5-4bac-bea7-cba36498cd69.jpg?1562904235
 value=3.911
 rarity=R
 type=Creature

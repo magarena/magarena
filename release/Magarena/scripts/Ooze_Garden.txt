@@ -1,5 +1,5 @@
 name=Ooze Garden
-image=https://magiccards.info/scans/en/ala/143.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/623e57ed-7ed7-4283-b48f-77ecacad70b0.jpg?1562704660
 value=2.971
 rarity=R
 type=Enchantment

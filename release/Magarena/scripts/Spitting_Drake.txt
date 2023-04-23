@@ -1,5 +1,5 @@
 name=Spitting Drake
-image=https://magiccards.info/scans/en/6e/207.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9ec1676-f59b-4ab6-995c-d2525ac11370.jpg?1562822747
 value=2.117
 rarity=U
 type=Creature

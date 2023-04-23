@@ -1,5 +1,5 @@
 name=Teroh's Faithful
-image=https://magiccards.info/scans/en/tr/18.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce1de3e4-d6b5-4c91-858c-94d62e69d1c7.jpg?1562936464
 value=2.385
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Terra Ravager
-image=https://magiccards.info/scans/en/c13/126.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/124dd668-ad84-45b9-9e04-1ea7cd2d7024.jpg?1562898786
 value=3.312
 rarity=U
 type=Creature

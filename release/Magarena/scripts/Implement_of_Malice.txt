@@ -1,5 +1,5 @@
 name=Implement of Malice
-image=https://magiccards.info/scans/en/aer/159.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e45ca82-e387-4df0-890d-d53a7d0dadf7.jpg?1576382303
 value=2.500
 rarity=C
 type=Artifact

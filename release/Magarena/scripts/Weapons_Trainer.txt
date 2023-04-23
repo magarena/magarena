@@ -1,5 +1,5 @@
 name=Weapons Trainer
-image=https://magiccards.info/scans/en/ogw/160.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcaa5ed4-041d-47d6-a4e0-baf8910430ed.jpg?1599708607
 image_updated=2016-02-29
 value=2.500
 rarity=U

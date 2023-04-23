@@ -1,5 +1,5 @@
 name=Telekinetic Sliver
-image=https://magiccards.info/scans/en/ts/84.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61b934ad-4858-4680-924a-53ea4f250f9e.jpg?1562915368
 value=3.875
 rarity=U
 type=Creature

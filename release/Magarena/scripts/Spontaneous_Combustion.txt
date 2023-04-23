@@ -1,5 +1,5 @@
 name=Spontaneous Combustion
-image=https://magiccards.info/scans/en/cns/194.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55d50177-736a-44d6-a2a3-f6892d7037b3.jpg?1562865429
 value=3.857
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Longshot Squad
-image=https://magiccards.info/scans/en/ktk/140.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd9edd62-dc18-4887-a020-4464e31b79c2.jpg?1562794643
 value=3.250
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Skinshifter
-image=https://magiccards.info/scans/en/m12/195.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d56c82ad-5eb1-4653-8f02-e9bb1f6f3154.jpg?1612316407
 value=4.138
 rarity=R
 type=Creature

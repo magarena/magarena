@@ -1,5 +1,5 @@
 name=Hanweir Lancer
-image=https://magiccards.info/scans/en/mm3/97.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db88c0d5-9df8-4cb7-8951-9d41187b7fb1.jpg?1593813474
 image_updated=2017-08-08
 value=3.056
 rarity=C

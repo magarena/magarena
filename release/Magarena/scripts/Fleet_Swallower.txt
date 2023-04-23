@@ -1,5 +1,5 @@
 name=Fleet Swallower
-image=https://magiccards.info/scans/en/xln/57.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7edbde38-1653-4eb5-b196-8881375781cb.jpg?1562558856
 value=2.500
 rarity=R
 type=Creature

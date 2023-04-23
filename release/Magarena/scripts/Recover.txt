@@ -1,5 +1,5 @@
 name=Recover
-image=https://magiccards.info/scans/en/rix/84.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2f4e0a8-7af7-4422-a964-c19503692ba6.jpg?1555040307
 image_updated=2018-03-12
 value=3.534
 rarity=C

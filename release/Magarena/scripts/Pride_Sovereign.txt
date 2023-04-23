@@ -1,5 +1,5 @@
 name=Pride Sovereign
-image=https://magiccards.info/scans/en/hou/126.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd3d32b7-672f-4ceb-a1c9-17daefd2cb0c.jpg?1562817474
 value=2.500
 rarity=R
 type=Creature

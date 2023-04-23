@@ -1,5 +1,5 @@
 name=Open the Armory
-image=https://magiccards.info/scans/en/soi/32.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6db45698-9da9-4cea-b9bf-0f84ab276b51.jpg?1608908895
 value=2.500
 rarity=U
 type=Sorcery

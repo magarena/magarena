@@ -1,5 +1,5 @@
 name=Drake Familiar
-image=https://magiccards.info/scans/en/rav/44.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4583623-e367-48cc-8e86-e6c5e35f1a9c.jpg?1598914120
 value=2.810
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblin Racketeer
-image=https://magiccards.info/scans/en/cn2/53.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eac5c565-1553-4be1-a289-6189e07460a0.jpg?1576381926
 image_updated=2016-09-05
 value=2.500
 rarity=C

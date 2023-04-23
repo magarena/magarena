@@ -1,5 +1,5 @@
 name=Rejuvenate
-image=https://magiccards.info/scans/en/us/271.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe3709a3-7a1b-4644-b1d5-e1ffef549f94.jpg?1562948833
 value=2.379
 rarity=C
 type=Sorcery

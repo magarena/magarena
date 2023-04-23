@@ -1,5 +1,5 @@
 name=Freed from the Real
-image=https://magiccards.info/scans/en/a25/58.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c47ee6f6-50c1-4f56-b9ce-4c309bfb92ca.jpg?1562440713
 image_updated=2018-04-27
 value=3.984
 rarity=U

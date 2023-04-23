@@ -1,5 +1,5 @@
 name=Annihilate
-image=https://magiccards.info/scans/en/ema/79.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c46b99f7-d388-4e1b-9fbc-8a945701b6b1.jpg?1580014169
 value=3.312
 rarity=U
 type=Instant

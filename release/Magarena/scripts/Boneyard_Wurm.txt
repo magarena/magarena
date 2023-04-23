@@ -1,5 +1,5 @@
 name=Boneyard Wurm
-image=https://magiccards.info/scans/en/isd/171.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/605038e9-2840-4c2d-bd7a-1004ae210e2a.jpg?1547517517
 value=3.660
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Peace of Mind
-image=https://magiccards.info/scans/en/emn/36.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36e37aa2-d898-47f5-9679-5717bfa25688.jpg?1576383942
 image_updated=2016-09-09
 value=3.394
 rarity=U

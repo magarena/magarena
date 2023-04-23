@@ -1,5 +1,5 @@
 name=Talruum Minotaur
-image=https://magiccards.info/scans/en/6e/210.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a4f1317-5e9b-4f49-9ed8-4f97f8c4b8d0.jpg?1562817266
 value=3.688
 rarity=C
 type=Creature

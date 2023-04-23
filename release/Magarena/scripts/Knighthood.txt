@@ -1,5 +1,5 @@
 name=Knighthood
-image=https://magiccards.info/scans/en/7e/25.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1da88c0a-255d-4484-b464-bd742d66e3fe.jpg?1562233838
 value=4.011
 rarity=U
 type=Enchantment

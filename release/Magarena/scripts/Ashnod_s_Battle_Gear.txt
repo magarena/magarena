@@ -1,5 +1,5 @@
 name=Ashnod's Battle Gear
-image=https://magiccards.info/scans/en/4e/314.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bc11285-0891-4cc3-a056-b698911166c7.jpg?1559603843
 value=2.517
 rarity=U
 type=Artifact

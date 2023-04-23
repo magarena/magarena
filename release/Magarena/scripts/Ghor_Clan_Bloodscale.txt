@@ -1,5 +1,5 @@
 name=Ghor-Clan Bloodscale
-image=https://magiccards.info/scans/en/gp/66.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00cab68b-ee26-46eb-a18b-9b42bf2d10e5.jpg?1593272312
 value=1.638
 rarity=U
 type=Creature

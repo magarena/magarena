@@ -1,5 +1,5 @@
 name=Soulless One
-image=https://magiccards.info/scans/en/on/171.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/410a214b-09c4-49bd-a461-3330d0249ae5.jpg?1562841695
 image_updated=2017-01-08
 value=4.383
 rarity=U

@@ -1,5 +1,5 @@
 name=Merfolk Mesmerist
-image=https://magiccards.info/scans/en/m12/66.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/220dede5-472c-4a09-bdf0-73e722d9d4d2.jpg?1562635571
 value=3.150
 rarity=C
 type=Creature

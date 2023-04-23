@@ -1,5 +1,5 @@
 name=Incite Rebellion
-image=https://magiccards.info/scans/en/c14/37.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3633c759-f86a-436d-b54d-0d6c9ef14b63.jpg?1562273400
 value=2.500
 rarity=R
 type=Sorcery

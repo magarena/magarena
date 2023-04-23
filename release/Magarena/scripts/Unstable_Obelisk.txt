@@ -1,5 +1,5 @@
 name=Unstable Obelisk
-image=https://magiccards.info/scans/en/c14/58.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b856bf3-6328-435d-ad31-c976245aff8a.jpg?1641603961
 value=2.500
 rarity=U
 type=Artifact

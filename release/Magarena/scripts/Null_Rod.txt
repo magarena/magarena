@@ -1,5 +1,5 @@
 name=Null Rod
-image=https://magiccards.info/scans/en/wl/154.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73ac9f52-e6ff-4e6f-9733-fe24a5fb4b4e.jpg?1562918145
 value=4.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Tawnos's Weaponry
-image=https://magiccards.info/scans/en/5e/401.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b73fe4b5-142f-4b1f-b48d-7aa65782bdb5.jpg?1562938232
 value=2.750
 rarity=U
 type=Artifact

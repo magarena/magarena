@@ -1,5 +1,5 @@
 name=Lifespinner
-image=https://magiccards.info/scans/en/bok/133.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6a83083-f7c6-4ddf-aee9-538a1778697d.jpg?1562879707
 value=3.194
 rarity=U
 type=Creature

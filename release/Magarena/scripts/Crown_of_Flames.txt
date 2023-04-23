@@ -1,5 +1,5 @@
 name=Crown of Flames
-image=https://magiccards.info/scans/en/in/142.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a46239c-3de7-48ca-8f5c-b51f307fd0e5.jpg?1562913336
 value=4.167
 rarity=C
 type=Enchantment

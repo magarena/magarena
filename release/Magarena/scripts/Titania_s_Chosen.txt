@@ -1,5 +1,5 @@
 name=Titania's Chosen
-image=https://magiccards.info/scans/en/c14/221.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ace535dd-9a9c-408f-8c91-33081f14c921.jpg?1592673257
 value=4.022
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Lieutenant Kirtar
-image=https://magiccards.info/scans/en/od/29.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e518750f-492d-4575-b4ee-c80c1f8e0a58.jpg?1562937804
 value=3.952
 rarity=R
 type=Legendary,Creature

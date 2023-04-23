@@ -1,5 +1,5 @@
 name=Olivia's Bloodsworn
-image=https://magiccards.info/scans/en/soi/127.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdda34e9-f28b-4606-8298-b2d0c15033e6.jpg?1576384540
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Heartmender
-image=https://magiccards.info/scans/en/shm/228.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b8c1070-cb58-4948-99c9-febef7fef0d5.jpg?1562830586
 value=4.040
 rarity=R
 type=Creature

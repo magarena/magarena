@@ -1,5 +1,5 @@
 name=Balthor the Stout
-image=https://magiccards.info/scans/en/tr/91.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e81ecdc5-d2c7-4292-9b59-fd6bf3ba29d5.jpg?1562632492
 value=3.966
 rarity=R
 type=Legendary,Creature

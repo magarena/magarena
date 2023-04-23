@@ -1,5 +1,5 @@
 name=Balduvian Rage
-image=https://magiccards.info/scans/en/cs/76.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81848391-ed73-498a-a650-4041fb9a46bc.jpg?1599706162
 value=3.398
 rarity=U
 type=Instant

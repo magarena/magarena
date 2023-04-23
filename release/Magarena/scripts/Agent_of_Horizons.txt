@@ -1,5 +1,5 @@
 name=Agent of Horizons
-image=https://magiccards.info/scans/en/ths/148.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc08576f-1d48-4db4-9bb9-e039f75c98b8.jpg?1562830988
 value=2.968
 rarity=C
 type=Creature

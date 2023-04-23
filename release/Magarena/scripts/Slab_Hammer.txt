@@ -1,5 +1,5 @@
 name=Slab Hammer
-image=https://magiccards.info/scans/en/bfz/227.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18c64671-9bdd-475f-8def-7575775bf900.jpg?1562900920
 image_updated=2015-11-08
 value=2.500
 rarity=U

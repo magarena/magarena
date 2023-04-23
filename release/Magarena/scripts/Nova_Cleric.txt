@@ -1,5 +1,5 @@
 name=Nova Cleric
-image=https://magiccards.info/scans/en/on/45.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2048d84-b5e6-405c-9091-1997a0c4e1a5.jpg?1562936996
 value=3.988
 rarity=U
 type=Creature

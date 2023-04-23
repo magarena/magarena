@@ -1,5 +1,5 @@
 name=Underworld Dreams
-image=https://magiccards.info/scans/en/m10/115.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03919c86-1c4a-43b0-a2db-54ca6ae1ac57.jpg?1581480025
 image_updated=2017-01-11
 value=4.511
 rarity=R

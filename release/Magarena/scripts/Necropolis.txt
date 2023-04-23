@@ -1,5 +1,5 @@
 name=Necropolis
-image=https://magiccards.info/scans/en/dk/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/893e8e9c-983e-4db1-8d93-10637025a559.jpg?1562927391
 value=3.081
 rarity=U
 type=Artifact,Creature

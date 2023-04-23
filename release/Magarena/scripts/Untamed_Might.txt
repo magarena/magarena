@@ -1,5 +1,5 @@
 name=Untamed Might
-image=https://magiccards.info/scans/en/som/131.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17979f0e-bd39-449f-b4ed-9156c229223b.jpg?1562815001
 value=3.071
 rarity=C
 type=Instant

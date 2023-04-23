@@ -1,5 +1,5 @@
 name=Divine Verdict
-image=https://magiccards.info/scans/en/rix/5.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed07b708-7232-4b87-b5d9-edaa20a69293.jpg?1555039673
 image_updated=2018-03-12
 value=2.400
 rarity=C

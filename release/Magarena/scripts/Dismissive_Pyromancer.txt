@@ -1,5 +1,5 @@
 name=Dismissive Pyromancer
-image=https://magiccards.info/scans/en/m19/136.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0d0a9fa-75c9-4492-accd-bc9f79407453.jpg?1633678186
 value=2.500
 rarity=R
 type=Creature

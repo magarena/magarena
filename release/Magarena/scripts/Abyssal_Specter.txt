@@ -1,5 +1,5 @@
 name=Abyssal Specter
-image=https://magiccards.info/scans/en/mm3/59.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69a41bec-7fb0-4060-918a-38cbbb329543.jpg?1593813204
 image_updated=2017-08-08
 value=3.700
 rarity=U

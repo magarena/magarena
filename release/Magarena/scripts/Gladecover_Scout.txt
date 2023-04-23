@@ -1,5 +1,5 @@
 name=Gladecover Scout
-image=https://magiccards.info/scans/en/m12/178.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e112d77d-f019-4709-b31a-b02952df0e35.jpg?1562836199
 value=3.402
 rarity=C
 type=Creature

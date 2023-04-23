@@ -1,5 +1,5 @@
 name=Desert Twister
-image=https://magiccards.info/scans/en/c14/188.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38b6ac26-651f-4557-a993-7a65c5ddf35f.jpg?1592672907
 image_updated=2016-02-29
 value=4.000
 removal=5

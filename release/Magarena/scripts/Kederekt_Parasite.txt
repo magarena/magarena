@@ -1,5 +1,5 @@
 name=Kederekt Parasite
-image=https://magiccards.info/scans/en/cfx/48.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/878c7d8c-4df0-43ac-8197-d89c8be5e70d.jpg?1562802262
 value=3.794
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Slitherhead
-image=https://magiccards.info/scans/en/rtr/222.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9327905-a254-4885-8310-69fc153ec52f.jpg?1562793988
 value=3.953
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Evaporate
-image=https://magiccards.info/scans/en/hl/94.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3c99939-4854-4e28-a142-4cb7f89fe898.jpg?1562587778
 value=1.822
 rarity=U
 type=Sorcery

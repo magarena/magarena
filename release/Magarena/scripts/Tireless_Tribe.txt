@@ -1,5 +1,5 @@
 name=Tireless Tribe
-image=https://magiccards.info/scans/en/od/56.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d23e47a-21d5-4d7e-8aa0-3b3064da5967.jpg?1562900445
 value=3.778
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Gemstone Mine
-image=https://magiccards.info/scans/en/tsts/119.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26794aa3-7532-4611-a591-51a51e5f9189.jpg?1562773338
 value=4.573
 rarity=U
 type=Land

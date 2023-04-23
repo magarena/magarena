@@ -1,5 +1,5 @@
 name=Woolly Spider
-image=https://magiccards.info/scans/en/ia/167.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/2496a40a-1d67-44ea-900d-9c5fbd5034a7.jpg?1562867856
 value=3.667
 rarity=C
 type=Creature

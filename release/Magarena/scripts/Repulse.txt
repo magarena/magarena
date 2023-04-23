@@ -1,5 +1,5 @@
 name=Repulse
-image=https://magiccards.info/scans/en/cn2/119.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dc7777b-6e9e-4889-91da-fb5283340fa1.jpg?1576382508
 image_updated=2017-08-29
 value=3.737
 removal=2

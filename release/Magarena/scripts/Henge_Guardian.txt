@@ -1,5 +1,5 @@
 name=Henge Guardian
-image=https://magiccards.info/scans/en/mm/297.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f01d6807-8fbd-4593-9582-71d4cd720728.jpg?1562945674
 value=2.828
 rarity=U
 type=Artifact,Creature

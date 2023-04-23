@@ -1,5 +1,5 @@
 name=Spell Crumple
-image=https://magiccards.info/scans/en/cmd/63.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/522d6195-7660-42c0-848b-cc46e19fc4eb.jpg?1562273890
 value=3.881
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Brush with Death
-image=https://magiccards.info/scans/en/sh/2.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04013bc6-7774-400b-a6af-de755b4c324d.jpg?1562595903
 value=2.788
 rarity=C
 type=Sorcery

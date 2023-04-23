@@ -1,5 +1,5 @@
 name=Mons's Goblin Raiders
-image=https://magiccards.info/scans/en/st2k/9.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58b7a22b-f354-4f42-9354-d149bb9b3645.jpg?1562133668
 value=1.983
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Viridian Scout
-image=https://magiccards.info/scans/en/5dn/100.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3260a427-b67f-4908-8c56-5c0fab009598.jpg?1562876189
 value=0.871
 rarity=C
 type=Creature

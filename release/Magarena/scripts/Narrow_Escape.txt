@@ -1,5 +1,5 @@
 name=Narrow Escape
-image=https://magiccards.info/scans/en/zen/27.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c730b0c4-e8cf-4c6f-b65c-faebf508fc3c.jpg?1562932274
 image_updated=2017-01-01
 value=2.909
 rarity=C

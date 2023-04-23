@@ -1,5 +1,5 @@
 name=Sabertooth Wyvern
-image=https://magiccards.info/scans/en/ex/99.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a196fc8f-e17f-41bb-90df-d74b9c3f59c4.jpg?1562430804
 value=2.237
 rarity=U
 type=Creature

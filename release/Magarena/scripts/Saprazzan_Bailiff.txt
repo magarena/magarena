@@ -1,5 +1,5 @@
 name=Saprazzan Bailiff
-image=https://magiccards.info/scans/en/mm/97.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9f50964-1b57-426a-ac46-c90c045c7e40.jpg?1562382099
 value=2.640
 rarity=R
 type=Creature

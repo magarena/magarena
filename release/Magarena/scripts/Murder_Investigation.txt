@@ -1,5 +1,5 @@
 name=Murder Investigation
-image=https://magiccards.info/scans/en/ori/27.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07d8d6f7-ed22-4e01-9aeb-c6bc0065c89c.jpg?1562006017
 image_updated=2015-11-05
 value=2.500
 rarity=U

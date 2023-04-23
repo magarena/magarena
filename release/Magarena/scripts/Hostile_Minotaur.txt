@@ -1,5 +1,5 @@
 name=Hostile Minotaur
-image=https://magiccards.info/scans/en/m19/147.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e1263ea-adc9-442b-b13e-9afb69596372.jpg?1564022990
 value=2.500
 rarity=C
 type=Creature

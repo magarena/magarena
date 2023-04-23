@@ -1,5 +1,5 @@
 name=Blanket of Night
-image=https://magiccards.info/scans/en/vi/2.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe012fd0-9ff0-4436-a890-3ab436e42201.jpg?1562279123
 value=3.695
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Titanic Bulvox
-image=https://magiccards.info/scans/en/sc/129.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f42c4d7-b555-449c-a539-119c1ae62232.jpg?1562528017
 value=2.577
 rarity=C
 type=Creature

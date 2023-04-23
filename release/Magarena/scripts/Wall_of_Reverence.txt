@@ -1,5 +1,5 @@
 name=Wall of Reverence
-image=https://magiccards.info/scans/en/cfx/20.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1515e039-b838-40b6-b087-eb9e9d9ff008.jpg?1547516009
 value=3.778
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Lizard Warrior
-image=https://magiccards.info/scans/en/cns/146.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6da5a962-e00c-452f-b9ad-4cf6615c9dcd.jpg?1562865455
 value=2.444
 rarity=C
 type=Creature

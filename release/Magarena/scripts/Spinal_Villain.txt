@@ -1,5 +1,5 @@
 name=Spinal Villain
-image=https://magiccards.info/scans/en/lg/161.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44134b59-af94-42a0-9696-2d0181ff7887.jpg?1559592566
 value=3.737
 rarity=R
 type=Creature

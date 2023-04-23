@@ -1,5 +1,5 @@
 name=Displacement Wave
-image=https://magiccards.info/scans/en/ori/55.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad6fef1f-6cc9-4e24-a1be-fc313774f28d.jpg?1562036297
 image_updated=2015-11-05
 value=2.500
 rarity=R

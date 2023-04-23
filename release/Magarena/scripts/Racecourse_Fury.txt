@@ -1,5 +1,5 @@
 name=Racecourse Fury
-image=https://magiccards.info/scans/en/rtr/104.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15d13d35-b5f7-4d3d-a1fa-84178b28acae.jpg?1562783111
 value=2.659
 rarity=U
 type=Enchantment

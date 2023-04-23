@@ -1,5 +1,5 @@
 name=Maze of Ith
-image=https://magiccards.info/scans/en/ema/241.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78114f25-f40a-4e2e-bf89-29ea9b3500e2.jpg?1599710557
 value=4.564
 rarity=R
 type=Land

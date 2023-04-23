@@ -1,5 +1,5 @@
 name=Sword of the Chosen
-image=https://magiccards.info/scans/en/sh/135.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6de493a9-d1df-4507-b7c3-e775c4c50db9.jpg?1673305874
 value=3.176
 rarity=R
 type=Legendary,Artifact

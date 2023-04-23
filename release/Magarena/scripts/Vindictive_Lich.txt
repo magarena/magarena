@@ -1,5 +1,5 @@
 name=Vindictive Lich
-image=https://magiccards.info/scans/en/c17/21.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3227d983-e0c5-4dbd-aaff-fb9265199a82.jpg?1562604184
 image_updated=2017-10-03
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Doomed Traveler
-image=https://magiccards.info/scans/en/ima/16.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5642cdda-789f-4125-a9ff-7c445bb51950.jpg?1673146959
 image_updated=2017-04-12
 value=4.167
 rarity=C

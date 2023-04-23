@@ -1,5 +1,5 @@
 name=Last Breath
-image=https://magiccards.info/scans/en/shm/11.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12cca37a-7efd-4b01-bf96-15d0a032524d.jpg?1673147008
 value=2.682
 rarity=C
 type=Instant

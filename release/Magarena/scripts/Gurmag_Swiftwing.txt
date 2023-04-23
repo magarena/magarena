@@ -1,5 +1,5 @@
 name=Gurmag Swiftwing
-image=https://magiccards.info/scans/en/ktk/74.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7492918-b3c6-468f-9484-d73f0a27b37b.jpg?1562791583
 value=4.000
 rarity=U
 type=Creature

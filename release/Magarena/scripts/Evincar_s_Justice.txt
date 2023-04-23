@@ -1,5 +1,5 @@
 name=Evincar's Justice
-image=https://magiccards.info/scans/en/cmd/80.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e0fffc6-4395-441e-95a9-c9cf33af7907.jpg?1592672652
 value=3.571
 removal=2
 rarity=C

@@ -1,5 +1,5 @@
 name=Mortarpod
-image=https://magiccards.info/scans/en/mm2/222.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1e6b292-41e7-40f9-b9fe-34f27d4526af.jpg?1562269252
 value=3.990
 rarity=U
 type=Artifact

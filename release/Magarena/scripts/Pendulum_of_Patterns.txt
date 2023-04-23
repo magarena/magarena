@@ -1,5 +1,5 @@
 name=Pendulum of Patterns
-image=https://magiccards.info/scans/en/aer/192.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7ad452a4-be42-4d2f-a161-2b327f423b9c.jpg?1562302867
 value=2.500
 rarity=C
 type=Artifact

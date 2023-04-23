@@ -1,5 +1,5 @@
 name=Lavalanche
-image=https://magiccards.info/scans/en/c16/209.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3a3b450-d988-40cb-a1ee-8b00ccdf5071.jpg?1673305568
 image_updated=2017-08-17
 value=3.594
 rarity=R

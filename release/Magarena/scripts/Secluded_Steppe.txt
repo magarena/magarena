@@ -1,5 +1,5 @@
 name=Secluded Steppe
-image=https://magiccards.info/scans/en/c14/310.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69b876f8-4f4e-4eaa-904c-fa99f543e319.jpg?1625980946
 image_updated=2016-02-29
 value=3.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Tireless Tracker
-image=https://magiccards.info/scans/en/soi/233.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0875f4e3-d0be-41ce-870c-ee63f1af1904.jpg?1682209639
 value=2.500
 rarity=R
 type=Creature

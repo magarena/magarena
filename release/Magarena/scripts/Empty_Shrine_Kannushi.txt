@@ -1,5 +1,5 @@
 name=Empty-Shrine Kannushi
-image=https://magiccards.info/scans/en/bok/2.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86c2e405-afe2-4de2-9e45-c5f357d788ac.jpg?1562878226
 value=3.660
 rarity=U
 type=Creature

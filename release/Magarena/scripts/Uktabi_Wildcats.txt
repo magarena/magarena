@@ -1,5 +1,5 @@
 name=Uktabi Wildcats
-image=https://magiccards.info/scans/en/7e/278.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/700bb560-5a4a-4422-9158-1c2edad1913f.jpg?1562240098
 value=3.792
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Lord of Atlantis
-image=https://magiccards.info/scans/en/tsts/24.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9407b60-8921-4531-bdbe-9a82aaa38d28.jpg?1562781744
 value=4.462
 rarity=R
 type=Creature

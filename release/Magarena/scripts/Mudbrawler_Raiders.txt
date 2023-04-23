@@ -1,5 +1,5 @@
 name=Mudbrawler Raiders
-image=https://magiccards.info/scans/en/shm/213.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbe4af47-d913-4c19-a027-501e2c78758c.jpg?1562836030
 value=2.456
 rarity=C
 type=Creature

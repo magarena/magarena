@@ -1,5 +1,5 @@
 name=Lurking Evil
-image=https://magiccards.info/scans/en/us/140.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44154580-28f8-4b2f-88b7-528010816ddf.jpg?1562908736
 value=2.500
 rarity=R
 type=Enchantment

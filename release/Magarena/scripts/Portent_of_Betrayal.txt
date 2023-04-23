@@ -1,5 +1,5 @@
 name=Portent of Betrayal
-image=https://magiccards.info/scans/en/ths/133.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6288606e-182a-4260-bbe9-3f8f09c2f33c.jpg?1608910351
 value=3.056
 rarity=C
 type=Sorcery

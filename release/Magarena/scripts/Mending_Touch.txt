@@ -1,5 +1,5 @@
 name=Mending Touch
-image=https://magiccards.info/scans/en/dgm/44.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c042c7ee-0e74-4ca5-bbb9-2898b0576f0a.jpg?1562930892
 value=2.909
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Urborg
-image=https://magiccards.info/scans/en/lg/255.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5319f782-2713-43b1-9b28-0d1ec7a39203.jpg?1562912329
 value=4.250
 rarity=U
 type=Legendary,Land

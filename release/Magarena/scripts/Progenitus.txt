@@ -1,5 +1,5 @@
 name=Progenitus
-image=https://magiccards.info/scans/en/mma/182.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8a5d0ba-bcb1-41db-80dd-ad22b8408105.jpg?1561968078
 value=4.444
 rarity=M
 type=Legendary,Creature

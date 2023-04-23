@@ -1,5 +1,5 @@
 name=Treefolk Healer
-image=https://magiccards.info/scans/en/in/218.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73c6f5c0-686d-4b3a-add7-487f9fff5faa.jpg?1562918162
 value=1.750
 rarity=U
 type=Creature

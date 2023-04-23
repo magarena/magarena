@@ -1,5 +1,5 @@
 name=Redeem the Lost
-image=https://magiccards.info/scans/en/mt/21.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a0f1aa1-b5be-43f0-822d-c4fcf33270d9.jpg?1562879061
 value=2.971
 rarity=U
 type=Instant

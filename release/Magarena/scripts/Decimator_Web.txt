@@ -1,5 +1,5 @@
 name=Decimator Web
-image=https://magiccards.info/scans/en/mbs/105.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa1fe29f-cf84-45d3-b8fe-e4de1d2bebbf.jpg?1562616081
 value=3.316
 rarity=R
 type=Artifact

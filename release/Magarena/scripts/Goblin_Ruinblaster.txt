@@ -1,5 +1,5 @@
 name=Goblin Ruinblaster
-image=https://magiccards.info/scans/en/zen/127.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d95d1f3-7ec1-4279-ade7-3f339f2f33da.jpg?1562609828
 value=3.891
 rarity=U
 type=Creature

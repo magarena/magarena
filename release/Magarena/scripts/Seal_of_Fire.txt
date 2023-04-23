@@ -1,5 +1,5 @@
 name=Seal of Fire
-image=https://magiccards.info/scans/en/di/71.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/210f4f5a-4a36-4f2f-8821-d04f3f52c8db.jpg?1562378226
 image_updated=2017-01-07
 value=4.160
 removal=2

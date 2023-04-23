@@ -1,5 +1,5 @@
 name=Concordia Pegasus
-image=https://magiccards.info/scans/en/rtr/8.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/600d3517-e370-47ae-ac4f-c7ef8995a89c.jpg?1594734840
 value=2.705
 rarity=C
 type=Creature

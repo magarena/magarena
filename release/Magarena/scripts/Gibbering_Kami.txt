@@ -1,5 +1,5 @@
 name=Gibbering Kami
-image=https://magiccards.info/scans/en/chk/112.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a3e988f-314c-4e83-b279-c2a736933e64.jpg?1562762959
 value=2.083
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Holy Strength
-image=https://magiccards.info/scans/en/m11/16.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac0987b8-755e-42f1-bd6d-1401fecd4171.jpg?1562471381
 value=3.138
 rarity=C
 type=Enchantment

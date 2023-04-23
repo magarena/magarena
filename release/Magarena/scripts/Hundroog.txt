@@ -1,5 +1,5 @@
 name=Hundroog
-image=https://magiccards.info/scans/en/le/129.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f525c356-88ca-4e2e-8f06-663be101e34f.jpg?1562944359
 value=1.333
 rarity=C
 type=Creature

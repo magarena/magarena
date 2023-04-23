@@ -1,5 +1,5 @@
 name=Cursed Monstrosity
-image=https://magiccards.info/scans/en/od/126.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8de97585-3d24-4e8d-8bf9-edd75ee88443.jpg?1562921288
 value=0.944
 rarity=R
 type=Creature

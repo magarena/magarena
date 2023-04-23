@@ -1,5 +1,5 @@
 name=Biovisionary
-image=https://magiccards.info/scans/en/gtc/146.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2000b4e8-7887-454e-9d52-211516613dd0.jpg?1561818910
 value=3.332
 rarity=R
 type=Creature

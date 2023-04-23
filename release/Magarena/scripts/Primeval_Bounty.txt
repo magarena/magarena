@@ -1,5 +1,5 @@
 name=Primeval Bounty
-image=https://magiccards.info/scans/en/m14/190.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03b9e943-9650-434c-a540-35ca7c96365b.jpg?1674142326
 value=3.684
 rarity=M
 type=Enchantment

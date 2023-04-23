@@ -1,5 +1,5 @@
 name=Garruk's Packleader
-image=https://magiccards.info/scans/en/m15/283.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dafeafa0-b937-4387-8626-449a810486b4.jpg?1568004576
 value=3.400
 rarity=U
 type=Creature

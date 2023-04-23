@@ -1,5 +1,5 @@
 name=Golgari Cluestone
-image=https://magiccards.info/scans/en/dgm/139.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff77e1ee-7fa3-4370-a0c9-ec008b63302f.jpg?1562943170
 value=2.607
 rarity=C
 type=Artifact

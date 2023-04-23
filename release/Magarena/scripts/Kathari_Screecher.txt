@@ -1,5 +1,5 @@
 name=Kathari Screecher
-image=https://magiccards.info/scans/en/ala/47.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/150cf865-79e2-4f74-a872-44e1e5bc73c4.jpg?1562701354
 value=2.845
 rarity=C
 type=Creature

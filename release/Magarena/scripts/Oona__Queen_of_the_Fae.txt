@@ -1,5 +1,5 @@
 name=Oona, Queen of the Fae
-image=https://magiccards.info/scans/en/mma/193.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbea42c8-6e9f-499d-9d26-401536afd5c2.jpg?1604195177
 value=4.487
 rarity=R
 type=Legendary,Creature

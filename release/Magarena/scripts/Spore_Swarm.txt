@@ -1,5 +1,5 @@
 name=Spore Swarm
-image=https://magiccards.info/scans/en/dom/180.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2314215-23af-4c8e-860f-b029e151af36.jpg?1562741444
 value=2.500
 rarity=U
 type=Instant

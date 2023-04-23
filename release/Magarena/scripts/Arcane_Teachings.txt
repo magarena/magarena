@@ -1,5 +1,5 @@
 name=Arcane Teachings
-image=https://magiccards.info/scans/en/10e/188.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41764237-fa31-4b27-92ff-712a42d350b9.jpg?1562546788
 value=3.616
 rarity=U
 type=Enchantment

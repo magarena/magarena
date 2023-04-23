@@ -1,5 +1,5 @@
 name=Boros Guildgate
-image=https://magiccards.info/scans/en/mm3/231.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cce912e1-73fe-41f3-a86c-4c19ff3f100f.jpg?1608917952
 image_updated=2017-08-08
 value=3.636
 rarity=C

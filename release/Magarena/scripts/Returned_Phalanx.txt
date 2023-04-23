@@ -1,5 +1,5 @@
 name=Returned Phalanx
-image=https://magiccards.info/scans/en/a25/106.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aeaa1dc6-b2e7-457b-9ad4-d024f21e8888.jpg?1562439738
 image_updated=2018-04-27
 value=3.258
 rarity=C

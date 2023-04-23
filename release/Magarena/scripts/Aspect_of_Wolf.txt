@@ -1,5 +1,5 @@
 name=Aspect of Wolf
-image=https://magiccards.info/scans/en/5e/140.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38af8356-2d7f-4699-9e57-08906c1c831b.jpg?1562590614
 value=2.514
 rarity=R
 type=Enchantment

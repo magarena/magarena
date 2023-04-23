@@ -1,5 +1,5 @@
 name=Carrion Call
-image=https://magiccards.info/scans/en/som/115.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc3c1a8e-3bdb-42cf-9442-5de7e4670d66.jpg?1562822445
 value=3.093
 rarity=U
 type=Instant

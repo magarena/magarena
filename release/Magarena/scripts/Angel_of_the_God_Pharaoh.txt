@@ -1,5 +1,5 @@
 name=Angel of the God-Pharaoh
-image=https://magiccards.info/scans/en/hou/4.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad202785-a91f-4dc8-bcc0-eb1bd49f162e.jpg?1562810517
 value=2.500
 rarity=U
 type=Creature

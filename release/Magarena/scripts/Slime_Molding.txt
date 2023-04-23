@@ -1,5 +1,5 @@
 name=Slime Molding
-image=https://magiccards.info/scans/en/mm3/137.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0daf6a74-57f7-4c44-9413-a28002f3de4c.jpg?1593813923
 image_updated=2017-08-08
 value=3.330
 rarity=C

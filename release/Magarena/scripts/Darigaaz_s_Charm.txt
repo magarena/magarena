@@ -1,5 +1,5 @@
 name=Darigaaz's Charm
-image=https://magiccards.info/scans/en/ps/100.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/928af23d-1558-4d20-8841-554a327db861.jpg?1562922170
 image_updated=2016-11-30
 value=3.707
 rarity=U

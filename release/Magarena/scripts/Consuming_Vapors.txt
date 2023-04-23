@@ -1,5 +1,5 @@
 name=Consuming Vapors
-image=https://magiccards.info/scans/en/c17/105.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b6e74a3-f390-4ad2-93de-930af0e5585c.jpg?1631586529
 image_updated=2017-10-03
 value=4.276
 rarity=R

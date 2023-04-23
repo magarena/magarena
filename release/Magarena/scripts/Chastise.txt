@@ -1,5 +1,5 @@
 name=Chastise
-image=https://magiccards.info/scans/en/9e/9.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78e0d3d9-8c28-46d7-9fab-c115e6c8682f.jpg?1562737321
 value=3.810
 removal=4
 rarity=U

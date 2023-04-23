@@ -1,5 +1,5 @@
 name=Wall of Granite
-image=https://magiccards.info/scans/en/po/161.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70c5ac71-bf45-4b99-8184-36ce88dd728a.jpg?1562446863
 value=2.897
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Tower of Champions
-image=https://magiccards.info/scans/en/mi/265.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5280aef-dfd2-4d52-bc87-4a6d1f2bd173.jpg?1562163442
 value=1.500
 rarity=R
 type=Artifact

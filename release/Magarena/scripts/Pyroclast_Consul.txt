@@ -1,5 +1,5 @@
 name=Pyroclast Consul
-image=https://magiccards.info/scans/en/mt/96.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17a1c7c8-1acd-4219-a272-69e855517a74.jpg?1562877055
 value=2.519
 rarity=U
 type=Creature

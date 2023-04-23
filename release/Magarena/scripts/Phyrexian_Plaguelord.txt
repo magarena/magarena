@@ -1,5 +1,5 @@
 name=Phyrexian Plaguelord
-image=https://magiccards.info/scans/en/8e/153.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0894a99-13e0-406c-8ca3-5552c64e3154.jpg?1592672673
 image_updated=2016-02-29
 value=4.143
 rarity=R

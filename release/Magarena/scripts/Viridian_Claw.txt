@@ -1,5 +1,5 @@
 name=Viridian Claw
-image=https://magiccards.info/scans/en/mbs/143.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79650c82-2364-441c-9df3-fe9d8255374b.jpg?1562919359
 value=3.478
 rarity=U
 type=Artifact

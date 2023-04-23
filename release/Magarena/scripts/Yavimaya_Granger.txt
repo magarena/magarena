@@ -1,5 +1,5 @@
 name=Yavimaya Granger
-image=https://magiccards.info/scans/en/ul/118.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05414a41-b50c-49b6-9c27-f3170017d9b0.jpg?1562862303
 value=3.774
 rarity=C
 type=Creature

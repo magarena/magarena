@@ -1,5 +1,5 @@
 name=Hold the Gates
-image=https://magiccards.info/scans/en/gtc/16.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48fd52d0-0e41-48d5-b96f-4c6409788c18.jpg?1561825513
 value=2.948
 rarity=U
 type=Enchantment

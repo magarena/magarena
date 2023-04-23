@@ -1,5 +1,5 @@
 name=Malach of the Dawn
-image=https://magiccards.info/scans/en/pc/24.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f5df373-5dad-4e33-9e2b-351f1f4bdde4.jpg?1593874180
 value=3.179
 rarity=U
 type=Creature

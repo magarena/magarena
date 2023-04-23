@@ -1,5 +1,5 @@
 name=Phyrexian Vatmother
-image=https://magiccards.info/scans/en/mbs/52.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0024556-0317-4c28-83c3-0a6020d72a2b.jpg?1562615808
 value=3.672
 rarity=R
 type=Creature

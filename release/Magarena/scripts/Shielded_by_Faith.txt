@@ -1,5 +1,5 @@
 name=Shielded by Faith
-image=https://magiccards.info/scans/en/c15/8.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4ecbb947-2085-40ca-82a0-c2e1cbc94221.jpg?1562704111
 image_updated=2016-02-29
 value=2.500
 rarity=R

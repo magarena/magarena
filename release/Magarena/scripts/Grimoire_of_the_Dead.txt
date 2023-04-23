@@ -1,5 +1,5 @@
 name=Grimoire of the Dead
-image=https://magiccards.info/scans/en/isd/226.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d8aac24-564a-420f-bb05-c67c3b0e2187.jpg?1568004901
 value=3.860
 rarity=M
 type=Legendary,Artifact

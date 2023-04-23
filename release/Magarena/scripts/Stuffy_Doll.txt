@@ -1,5 +1,5 @@
 name=Stuffy Doll
-image=https://magiccards.info/scans/en/m13/218.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/978c2c7d-6898-4be2-aed7-e673210ce654.jpg?1674142741
 value=3.983
 rarity=R
 type=Artifact,Creature

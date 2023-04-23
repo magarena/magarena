@@ -1,5 +1,5 @@
 name=Predatory Urge
-image=https://magiccards.info/scans/en/pc2/74.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18e3e459-992c-4990-8305-fa479c7870ac.jpg?1562899695
 value=3.375
 rarity=R
 type=Enchantment

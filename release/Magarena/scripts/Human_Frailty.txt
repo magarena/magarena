@@ -1,5 +1,5 @@
 name=Human Frailty
-image=https://magiccards.info/scans/en/avr/109.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80b582e3-1e02-4c24-87be-05880b56df70.jpg?1592763277
 value=2.939
 removal=2
 rarity=U

@@ -1,5 +1,5 @@
 name=Warden of Evos Isle
-image=https://magiccards.info/scans/en/ema/76.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bfc5cef-aa9b-45d4-a9c3-4b157e4ed193.jpg?1608909550
 value=3.658
 rarity=C
 type=Creature

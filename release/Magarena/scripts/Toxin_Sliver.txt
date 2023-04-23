@@ -1,5 +1,5 @@
 name=Toxin Sliver
-image=https://magiccards.info/scans/en/le/84.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c04ab6b6-27ee-4c93-a87c-cbc3743f4faf.jpg?1562933654
 value=3.940
 rarity=R
 type=Creature

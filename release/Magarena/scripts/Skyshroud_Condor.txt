@@ -1,5 +1,5 @@
 name=Skyshroud Condor
-image=https://magiccards.info/scans/en/tp/88.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7d05ef5-c046-4929-b59d-988f0313a645.jpg?1562055910
 value=2.135
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Personal Tutor
-image=https://magiccards.info/scans/en/po/65.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55c23f66-1a81-45ac-91d9-ee9c661c33cd.jpg?1562868567
 value=4.182
 rarity=U
 type=Sorcery

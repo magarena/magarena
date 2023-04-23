@@ -1,5 +1,5 @@
 name=Cultist's Staff
-image=https://magiccards.info/scans/en/emn/194.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8da8c523-44e8-43e7-8431-28dbed1015ac.jpg?1576385059
 image_updated=2016-09-05
 value=2.500
 rarity=C

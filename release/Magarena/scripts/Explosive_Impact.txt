@@ -1,5 +1,5 @@
 name=Explosive Impact
-image=https://magiccards.info/scans/en/rtr/94.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a3e2b45-b086-4ffd-aa1a-1d03046e0d61.jpg?1562785002
 value=2.269
 rarity=C
 type=Instant

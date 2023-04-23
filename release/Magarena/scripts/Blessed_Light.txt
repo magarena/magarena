@@ -1,5 +1,5 @@
 name=Blessed Light
-image=https://magiccards.info/scans/en/dom/7.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4cf3eb65-0f52-49c1-8243-14ce05de9f3b.jpg?1562735305
 value=2.500
 rarity=C
 type=Instant

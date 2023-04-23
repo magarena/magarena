@@ -1,5 +1,5 @@
 name=Devil's Play
-image=https://magiccards.info/scans/en/isd/140.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d46473a7-69f5-492b-845d-c8862a1fec85.jpg?1568004367
 image_updated=2016-12-01
 value=3.712
 rarity=R

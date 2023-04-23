@@ -1,5 +1,5 @@
 name=Illusionary Servant
-image=https://magiccards.info/scans/en/m10/57.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2348f3e-8c08-4250-95a9-fc5ed63cd725.jpg?1561992566
 value=3.617
 rarity=C
 type=Creature

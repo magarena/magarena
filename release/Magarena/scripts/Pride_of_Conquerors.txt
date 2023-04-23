@@ -1,5 +1,5 @@
 name=Pride of Conquerors
-image=https://magiccards.info/scans/en/rix/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff0a769c-6602-4f6f-a388-f5aa15fb3c90.jpg?1555039752
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Wrath of God
-image=https://magiccards.info/scans/en/ema/38.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/664e6656-36a3-4635-9f33-9f8901afd397.jpg?1598303688
 value=4.435
 removal=2
 rarity=R

@@ -1,5 +1,5 @@
 name=Aurora Griffin
-image=https://magiccards.info/scans/en/ps/2.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfd6c695-1944-4bb0-a701-0daf47cdbcb4.jpg?1562935568
 value=2.242
 rarity=C
 type=Creature

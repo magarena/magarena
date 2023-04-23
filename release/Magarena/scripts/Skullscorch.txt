@@ -1,5 +1,5 @@
 name=Skullscorch
-image=https://magiccards.info/scans/en/tr/114.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88f1343c-77bf-4f44-8226-fdfb2c2c7015.jpg?1562630775
 value=4.070
 rarity=R
 type=Sorcery

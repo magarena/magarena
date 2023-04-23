@@ -1,5 +1,5 @@
 name=Maelstrom Pulse
-image=https://magiccards.info/scans/en/mma/180.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/676ab73f-2759-43b6-9ae8-ca33a55ebf80.jpg?1599708139
 value=4.556
 removal=5
 rarity=R

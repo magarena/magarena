@@ -1,5 +1,5 @@
 name=Conversion
-image=https://magiccards.info/scans/en/4e/269.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70bad071-f01e-4309-b37a-a3ea45dc7d3a.jpg?1562921553
 value=3.815
 rarity=R
 type=Enchantment

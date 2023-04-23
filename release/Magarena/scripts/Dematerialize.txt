@@ -1,5 +1,5 @@
 name=Dematerialize
-image=https://magiccards.info/scans/en/od/81.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04217c17-7c29-4b02-b9b6-bfa1df50d4bc.jpg?1562895816
 value=1.177
 rarity=C
 type=Sorcery

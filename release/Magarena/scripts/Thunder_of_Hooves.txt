@@ -1,5 +1,5 @@
 name=Thunder of Hooves
-image=https://magiccards.info/scans/en/on/242.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e4f796a-6831-4d83-824d-88fd2148b4c1.jpg?1562932440
 value=2.289
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Kalonian Hydra
-image=https://magiccards.info/scans/en/c16/154.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d21ae20-2ef5-4dc0-aced-97497e6a8025.jpg?1682209560
 image_updated=2016-12-21
 value=3.888
 rarity=M

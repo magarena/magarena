@@ -1,5 +1,5 @@
 name=Geralf's Mindcrusher
-image=https://magiccards.info/scans/en/dka/37.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68ac8b5f-4d95-43fc-bf23-10247986a746.jpg?1562919646
 value=3.695
 rarity=R
 type=Creature

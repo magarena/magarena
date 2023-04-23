@@ -1,5 +1,5 @@
 name=Ordeal of Thassa
-image=https://magiccards.info/scans/en/ths/58.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa764244-c5d5-4f27-9c56-866566a1404a.jpg?1562839052
 value=3.548
 rarity=U
 type=Enchantment

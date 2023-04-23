@@ -1,5 +1,5 @@
 name=Blossoming Wreath
-image=https://magiccards.info/scans/en/wl/62.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f944ad9-c9ce-47b2-80fa-d0f7fcf0fd5d.jpg?1562800074
 value=3.041
 rarity=C
 type=Instant

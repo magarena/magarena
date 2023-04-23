@@ -1,5 +1,5 @@
 name=Scourge of Valkas
-image=https://magiccards.info/scans/en/ima/145.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6bd7225-b39f-4b3b-8c36-dbc2c09f6e50.jpg?1631587429
 image_updated=2017-04-12
 value=3.652
 rarity=R

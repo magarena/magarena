@@ -1,5 +1,5 @@
 name=Dune Diviner
-image=https://magiccards.info/scans/en/hou/114.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01818188-e18e-4dc0-b7ef-34cedef64f7e.jpg?1562787266
 value=2.500
 rarity=U
 type=Creature

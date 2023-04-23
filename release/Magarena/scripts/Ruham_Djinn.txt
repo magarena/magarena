@@ -1,5 +1,5 @@
 name=Ruham Djinn
-image=https://magiccards.info/scans/en/in/35.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a46c7718-1ecc-418c-b213-13be9de5cb7f.jpg?1562928232
 value=1.959
 rarity=U
 type=Creature

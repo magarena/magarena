@@ -1,5 +1,5 @@
 name=Marsh Goblins
-image=https://magiccards.info/scans/en/dk/118.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8aabd80f-a18a-4bc1-9f05-4c3a63de77ce.jpg?1562927695
 value=1.360
 rarity=C
 type=Creature

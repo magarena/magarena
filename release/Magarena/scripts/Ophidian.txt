@@ -1,5 +1,5 @@
 name=Ophidian
-image=https://magiccards.info/scans/en/ddajvc/9.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03be605e-dddf-4a1f-a4ee-0d71ab771e47.jpg?1562378216
 value=3.698
 rarity=C
 type=Creature

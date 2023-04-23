@@ -1,5 +1,5 @@
 name=Manipulate Fate
-image=https://magiccards.info/scans/en/in/60.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bb52acb-dedb-4ed6-a6da-8c036f2b2958.jpg?1562913616
 value=2.750
 rarity=U
 type=Sorcery

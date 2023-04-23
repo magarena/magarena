@@ -1,5 +1,5 @@
 name=Disciple of Kangee
-image=https://magiccards.info/scans/en/ps/3.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e268fe16-070b-4b78-9793-59755edb2fd5.jpg?1562942736
 value=2.783
 rarity=C
 type=Creature

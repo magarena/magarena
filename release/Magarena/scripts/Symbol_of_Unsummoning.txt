@@ -1,5 +1,5 @@
 name=Symbol of Unsummoning
-image=https://magiccards.info/scans/en/po/71.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c49f9400-9359-409c-9886-ea28e24257a8.jpg?1562941458
 value=3.029
 removal=2
 rarity=C

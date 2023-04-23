@@ -1,5 +1,5 @@
 name=Dutiful Thrull
-image=https://magiccards.info/scans/en/gtc/11.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d586143-fac0-463f-96ec-c6b9fd582194.jpg?1561836293
 value=3.401
 rarity=C
 type=Creature

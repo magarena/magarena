@@ -1,5 +1,5 @@
 name=The Tabernacle at Pendrell Vale
-image=https://magiccards.info/scans/en/lg/252.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd3f7f4e-cb25-4121-96a0-a4dc530420b9.jpg?1562938371
 value=4.642
 rarity=R
 type=Legendary,Land

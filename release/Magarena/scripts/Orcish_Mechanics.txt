@@ -1,5 +1,5 @@
 name=Orcish Mechanics
-image=https://magiccards.info/scans/en/aq/92.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acfa5626-e843-495f-8716-316b63b9aaf4.jpg?1562935874
 value=3.567
 rarity=C
 type=Creature

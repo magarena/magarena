@@ -1,5 +1,5 @@
 name=Center Soul
-image=https://magiccards.info/scans/en/dtk/8.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfca3763-9823-4fa4-968d-c701434b3d28.jpg?1562792478
 value=2.500
 rarity=C
 type=Instant

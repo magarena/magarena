@@ -1,5 +1,5 @@
 name=Iizuka the Ruthless
-image=https://magiccards.info/scans/en/sok/104.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9ce461f7-385d-4379-83de-49571247c30d.jpg?1562495128
 value=3.291
 rarity=R
 type=Legendary,Creature

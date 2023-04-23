@@ -1,5 +1,5 @@
 name=Mystic of the Hidden Way
-image=https://magiccards.info/scans/en/a25/67.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45261b50-e7cc-40f6-9d0d-44b5ada45e42.jpg?1562435340
 image_updated=2018-04-27
 value=3.750
 rarity=C

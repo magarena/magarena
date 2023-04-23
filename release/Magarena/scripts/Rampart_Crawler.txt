@@ -1,5 +1,5 @@
 name=Rampart Crawler
-image=https://magiccards.info/scans/en/mm/156.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b60f86f-c78a-4dfb-bb18-e9bcf21b26c4.jpg?1562381849
 value=2.192
 rarity=C
 type=Creature

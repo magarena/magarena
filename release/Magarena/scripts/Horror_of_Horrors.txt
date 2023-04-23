@@ -1,5 +1,5 @@
 name=Horror of Horrors
-image=https://magiccards.info/scans/en/9e/140.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcae6a15-733d-44ae-ab23-a202ed071f28.jpg?1562744417
 value=2.036
 rarity=U
 type=Enchantment

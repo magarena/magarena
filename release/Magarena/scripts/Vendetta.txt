@@ -1,5 +1,5 @@
 name=Vendetta
-image=https://magiccards.info/scans/en/roe/130.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/039fc76d-3b7e-4329-a997-07c25509e421.jpg?1562700700
 value=4.081
 rarity=C
 type=Instant

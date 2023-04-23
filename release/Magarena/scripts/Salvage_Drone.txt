@@ -1,5 +1,5 @@
 name=Salvage Drone
-image=https://magiccards.info/scans/en/bfz/65.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b8ce2a9-9d8e-442b-bc12-74545ceb65bd.jpg?1562912699
 image_updated=2015-11-08
 value=2.500
 rarity=C

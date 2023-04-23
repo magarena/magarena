@@ -1,5 +1,5 @@
 name=Sword of Body and Mind
-image=https://magiccards.info/scans/en/som/208.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1ffe5f80-a2ac-41b8-8fce-fd3485643557.jpg?1599710025
 value=4.162
 rarity=M
 type=Artifact

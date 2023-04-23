@@ -1,5 +1,5 @@
 name=Impact Tremors
-image=https://magiccards.info/scans/en/dtk/140.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46db3811-db1d-4f69-8143-a93f64d0297b.jpg?1682209381
 value=2.500
 rarity=C
 type=Enchantment

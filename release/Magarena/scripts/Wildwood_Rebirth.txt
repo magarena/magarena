@@ -1,5 +1,5 @@
 name=Wildwood Rebirth
-image=https://magiccards.info/scans/en/gtc/140.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/713a93a1-4442-4d5b-ad7a-136b87b5f7ab.jpg?1561831270
 value=2.366
 rarity=C
 type=Instant

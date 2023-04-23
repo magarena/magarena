@@ -1,5 +1,5 @@
 name=Gigadrowse
-image=https://magiccards.info/scans/en/gp/26.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf9f85b3-eb8c-43de-aaac-8a887e9c58da.jpg?1593272002
 value=4.149
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Spirit Away
-image=https://magiccards.info/scans/en/avr/76.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8823bdc-0467-47f1-9bef-a281b4a7071d.jpg?1592708697
 value=2.929
 rarity=R
 type=Enchantment

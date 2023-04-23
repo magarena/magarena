@@ -1,5 +1,5 @@
 name=Hanna's Custody
-image=https://magiccards.info/scans/en/tp/234.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ea44536-ef4e-4dcf-9c1a-c1122dd00cbb.jpg?1562054962
 value=4.200
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Stinging Shot
-image=https://magiccards.info/scans/en/akh/189.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/547c4c26-1118-41fa-aec8-1b43a7792e59.jpg?1543675991
 value=2.500
 rarity=C
 type=Instant

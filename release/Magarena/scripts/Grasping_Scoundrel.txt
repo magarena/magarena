@@ -1,5 +1,5 @@
 name=Grasping Scoundrel
-image=https://magiccards.info/scans/en/rix/74.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fd574a9-2034-402c-9fd6-83c4b9db83d1.jpg?1562303415
 value=2.500
 rarity=C
 type=Creature

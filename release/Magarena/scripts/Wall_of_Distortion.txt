@@ -1,5 +1,5 @@
 name=Wall of Distortion
-image=https://magiccards.info/scans/en/mm/171.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2b2d07a-9ea1-430d-b432-ae507f4fe73b.jpg?1562383044
 value=2.632
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Tribal Flames
-image=https://magiccards.info/scans/en/mm2/132.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d22418cd-4c49-4754-aa75-17f6eaf1639a.jpg?1562267854
 value=3.694
 rarity=C
 type=Sorcery

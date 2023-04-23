@@ -1,5 +1,5 @@
 name=Energizer
-image=https://magiccards.info/scans/en/tp/275.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/914f204c-7f3d-41f2-a771-0b6227d539eb.jpg?1562055423
 value=2.625
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Execute
-image=https://magiccards.info/scans/en/9e/128.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/875500ff-bb15-4634-be05-0171cb0ac412.jpg?1562738060
 value=2.000
 rarity=U
 type=Instant

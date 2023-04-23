@@ -1,5 +1,5 @@
 name=Arashin Cleric
-image=https://magiccards.info/scans/en/frf/5.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10aeac19-6892-448e-9e5f-302051a089fc.jpg?1562822548
 value=2.500
 rarity=C
 type=Creature

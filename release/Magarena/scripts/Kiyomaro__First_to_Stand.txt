@@ -1,5 +1,5 @@
 name=Kiyomaro, First to Stand
-image=https://magiccards.info/scans/en/sok/18.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b3351bb-5c4e-498b-b6c9-94f571baffd5.jpg?1562493467
 value=3.718
 rarity=R
 type=Legendary,Creature

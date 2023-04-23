@@ -1,5 +1,5 @@
 name=Primal Forcemage
-image=https://magiccards.info/scans/en/ts/212.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/0503078a-c5a8-4292-a573-82d062870c7f.jpg?1619398552
 value=3.877
 rarity=U
 type=Creature

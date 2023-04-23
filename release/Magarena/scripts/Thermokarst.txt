@@ -1,5 +1,5 @@
 name=Thermokarst
-image=https://magiccards.info/scans/en/ia/156.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74e907ed-76f7-476c-b128-bb6bfd892e06.jpg?1562869061
 value=3.929
 rarity=U
 type=Sorcery

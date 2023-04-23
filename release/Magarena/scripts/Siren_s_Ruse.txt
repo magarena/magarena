@@ -1,5 +1,5 @@
 name=Siren's Ruse
-image=https://magiccards.info/scans/en/xln/80.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f389872-d1f4-4828-a527-e820a6f2ac21.jpg?1562559873
 value=2.500
 rarity=C
 type=Instant

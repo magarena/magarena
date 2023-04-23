@@ -1,5 +1,5 @@
 name=Frontier Guide
-image=https://magiccards.info/scans/en/zen/161.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f70f45f-aad0-47d5-9ed1-d5b1d591f775.jpg?1593095433
 value=2.953
 rarity=U
 type=Creature

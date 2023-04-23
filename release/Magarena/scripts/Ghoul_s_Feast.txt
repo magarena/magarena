@@ -1,5 +1,5 @@
 name=Ghoul's Feast
-image=https://magiccards.info/scans/en/mm/137.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2909e6e-d196-4654-9193-2c9e0cfd90ee.jpg?1592713758
 value=3.850
 rarity=U
 type=Instant

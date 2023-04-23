@@ -1,5 +1,5 @@
 name=Mystic Melting
-image=https://magiccards.info/scans/en/cs/114.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf4ff91d-acc1-4be7-a327-58fcb036b452.jpg?1593275424
 value=2.705
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Shriekmaw
-image=https://magiccards.info/scans/en/c14/160.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18e3ebe5-9350-4781-a30d-4fcad034e7a9.jpg?1631586826
 image_updated=2016-02-29
 value=4.179
 rarity=U

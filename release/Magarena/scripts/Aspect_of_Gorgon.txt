@@ -1,5 +1,5 @@
 name=Aspect of Gorgon
-image=https://magiccards.info/scans/en/jou/60.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be8956d0-5502-415d-bead-d8bbddf9871d.jpg?1593095628
 value=2.879
 rarity=C
 type=Enchantment

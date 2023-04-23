@@ -1,5 +1,5 @@
 name=Siren of the Fanged Coast
-image=https://magiccards.info/scans/en/bng/50.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5ba93d9a-94cd-4d90-860a-f567793a5be4.jpg?1593091768
 value=2.833
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Jokulhaups
-image=https://magiccards.info/scans/en/6e/192.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99d26ff7-afff-40a0-b515-7928c2428809.jpg?1559592472
 value=4.519
 rarity=R
 type=Sorcery

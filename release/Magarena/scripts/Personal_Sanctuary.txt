@@ -1,5 +1,5 @@
 name=Personal Sanctuary
-image=https://magiccards.info/scans/en/m12/30.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56f10d57-687d-4ee3-8226-bae525d56e9e.jpg?1562643201
 value=3.280
 rarity=R
 type=Enchantment

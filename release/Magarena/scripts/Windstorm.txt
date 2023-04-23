@@ -1,5 +1,5 @@
 name=Windstorm
-image=https://magiccards.info/scans/en/ktk/157.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43baa030-c455-4922-bd42-d36181dbb319.jpg?1562910880
 value=3.250
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Runehorn Hellkite
-image=https://magiccards.info/scans/en/c16/20.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5fd8668-900c-48d1-aac3-8355cfc0bb74.jpg?1562426239
 image_updated=2016-12-28
 value=2.500
 rarity=R

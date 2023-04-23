@@ -1,5 +1,5 @@
 name=Deranged Hermit
-image=https://magiccards.info/scans/en/ul/101.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c25df202-0dd4-448d-8cb3-11fd7df0d505.jpg?1562934031
 value=4.420
 rarity=R
 type=Creature

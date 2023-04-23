@@ -1,5 +1,5 @@
 name=Wheel of Fate
-image=https://magiccards.info/scans/en/c16/138.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7937e12-76d9-4030-a68c-7a93a3c852cb.jpg?1619397846
 image_updated=2017-08-17
 value=3.652
 rarity=R

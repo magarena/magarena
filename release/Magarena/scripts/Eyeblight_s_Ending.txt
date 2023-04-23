@@ -1,5 +1,5 @@
 name=Eyeblight's Ending
-image=https://magiccards.info/scans/en/ema/88.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/6738c356-734a-4930-acd3-31dead241bea.jpg?1673147510
 value=4.031
 rarity=C
 type=Tribal,Instant

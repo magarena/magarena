@@ -1,5 +1,5 @@
 name=Rakdos's Return
-image=https://magiccards.info/scans/en/rtr/188.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d72981c0-1632-4d64-9341-2a76047d9b36.jpg?1562793869
 value=4.009
 rarity=M
 type=Sorcery

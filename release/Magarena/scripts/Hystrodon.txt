@@ -1,5 +1,5 @@
 name=Hystrodon
-image=https://magiccards.info/scans/en/on/266.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c964473-7c54-4c2d-a3eb-dba01c842103.jpg?1562901719
 value=4.083
 rarity=R
 type=Creature

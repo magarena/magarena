@@ -1,5 +1,5 @@
 name=Crag Puca
-image=https://magiccards.info/scans/en/eve/101.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25c11707-1ded-4891-82b4-9827a7dfc489.jpg?1562902906
 value=3.011
 rarity=U
 type=Creature

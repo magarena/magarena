@@ -1,5 +1,5 @@
 name=Tidehollow Strix
-image=https://magiccards.info/scans/en/ala/203.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17be4a4e-5f11-4c3e-b447-9feb5ccbc448.jpg?1562900012
 value=3.676
 rarity=C
 type=Artifact,Creature

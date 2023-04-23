@@ -1,5 +1,5 @@
 name=Elvish Skysweeper
-image=https://magiccards.info/scans/en/c14/192.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a26c340e-ccfb-4e91-ab10-a8b7714a9089.jpg?1592672929
 value=3.150
 rarity=C
 type=Creature

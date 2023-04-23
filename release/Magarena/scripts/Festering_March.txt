@@ -1,5 +1,5 @@
 name=Festering March
-image=https://magiccards.info/scans/en/fut/65.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c34e6aa-0414-45ba-b6eb-1ac4255d7de8.jpg?1562903995
 value=3.149
 rarity=U
 type=Sorcery

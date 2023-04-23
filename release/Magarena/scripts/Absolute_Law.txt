@@ -1,5 +1,5 @@
 name=Absolute Law
-image=https://magiccards.info/scans/en/us/2.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59d1f05b-f165-47c7-8a78-3b60ee3298ca.jpg?1562913728
 value=3.716
 rarity=U
 type=Enchantment

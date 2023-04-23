@@ -1,5 +1,5 @@
 name=Virulent Swipe
-image=https://magiccards.info/scans/en/ima/113.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1d6ca74-70f5-44c6-82f7-dae8980bdd44.jpg?1562854211
 image_updated=2017-04-12
 value=4.160
 rarity=C

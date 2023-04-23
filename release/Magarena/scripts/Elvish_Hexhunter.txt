@@ -1,5 +1,5 @@
 name=Elvish Hexhunter
-image=https://magiccards.info/scans/en/shm/226.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2b7f4d7-278b-45fc-98aa-b7c8b9162bcd.jpg?1636491193
 value=4.051
 rarity=C
 type=Creature

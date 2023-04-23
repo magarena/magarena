@@ -1,5 +1,5 @@
 name=Stormwatch Eagle
-image=https://magiccards.info/scans/en/pr/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21c3bb62-63b4-4b53-9e4d-edfc7487494b.jpg?1562901249
 value=1.348
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Char
-image=https://magiccards.info/scans/en/rav/117.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff3a24af-e995-4d05-ac2c-e9676048675d.jpg?1598915384
 value=3.083
 removal=3
 rarity=R

@@ -1,5 +1,5 @@
 name=Downhill Charge
-image=https://magiccards.info/scans/en/ne/79.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d7ef860-f248-4b14-8080-592121983d83.jpg?1581708606
 image_updated=2016-12-01
 value=4.000
 rarity=C

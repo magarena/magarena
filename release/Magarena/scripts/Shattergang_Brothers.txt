@@ -1,5 +1,5 @@
 name=Shattergang Brothers
-image=https://magiccards.info/scans/en/c13/213.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52a30e27-4c52-4191-8541-e25732a2dd42.jpg?1673149130
 value=3.787
 rarity=M
 type=Legendary,Creature

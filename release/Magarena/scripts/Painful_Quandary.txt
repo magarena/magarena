@@ -1,5 +1,5 @@
 name=Painful Quandary
-image=https://magiccards.info/scans/en/som/73.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bed5e030-874f-4a00-8544-78ba04033f53.jpg?1674420966
 value=4.042
 rarity=R
 type=Enchantment

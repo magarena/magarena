@@ -1,5 +1,5 @@
 name=Talisman of Indulgence
-image=https://magiccards.info/scans/en/mi/255.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa6c62c7-8fd4-46f1-a7f4-fc6e74d34b35.jpg?1631589255
 value=3.019
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Dega Disciple
-image=https://magiccards.info/scans/en/ap/4.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb9cd7d9-8aad-4607-890c-9c8efe016a92.jpg?1562954625
 value=3.750
 rarity=C
 type=Creature

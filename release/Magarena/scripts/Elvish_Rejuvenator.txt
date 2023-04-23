@@ -1,5 +1,5 @@
 name=Elvish Rejuvenator
-image=https://magiccards.info/scans/en/m19/180.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db10403c-b15b-4884-9984-25b3ac976305.jpg?1673148079
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Duskwalker
-image=https://magiccards.info/scans/en/in/104.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39a4a026-f44e-40e1-9942-a3d8448aca70.jpg?1562906613
 value=2.714
 rarity=C
 type=Creature

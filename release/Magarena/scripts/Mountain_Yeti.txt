@@ -1,5 +1,5 @@
 name=Mountain Yeti
-image=https://magiccards.info/scans/en/lg/156.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc6a062c-06ff-4295-83f2-48868c664d76.jpg?1559592461
 value=3.689
 rarity=U
 type=Creature

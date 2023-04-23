@@ -1,5 +1,5 @@
 name=Windreaver
-image=https://magiccards.info/scans/en/di/138.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd5c0dd3-d210-44c7-a726-dff3c8483fe7.jpg?1581708334
 image_updated=2017-01-11
 value=3.759
 rarity=R

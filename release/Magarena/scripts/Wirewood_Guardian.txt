@@ -1,5 +1,5 @@
 name=Wirewood Guardian
-image=https://magiccards.info/scans/en/sc/132.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8676b1f-e37c-4ae1-9dbe-d000369fa422.jpg?1562536268
 value=2.731
 rarity=C
 type=Creature

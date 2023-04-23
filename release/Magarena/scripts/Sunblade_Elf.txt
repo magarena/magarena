@@ -1,5 +1,5 @@
 name=Sunblade Elf
-image=https://magiccards.info/scans/en/m15/202.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e9925c5-98d5-4eb9-8aaa-a96b63a5812d.jpg?1562787704
 value=3.950
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Marble Chalice
-image=https://magiccards.info/scans/en/ala/18.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b76e9580-9154-476b-923f-b23bf55db026.jpg?1562708194
 value=2.050
 rarity=C
 type=Artifact

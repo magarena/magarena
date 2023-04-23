@@ -1,5 +1,5 @@
 name=Despoil
-image=https://magiccards.info/scans/en/pr/62.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06bb6ff7-2cd6-430e-a618-0b83d9c1d044.jpg?1562896342
 value=3.794
 rarity=C
 type=Sorcery

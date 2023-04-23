@@ -1,5 +1,5 @@
 name=Nimble-Blade Khenra
-image=https://magiccards.info/scans/en/akh/145.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e36a17b-89d6-4de9-867b-9762afedb4f1.jpg?1543675670
 value=2.500
 rarity=C
 type=Creature

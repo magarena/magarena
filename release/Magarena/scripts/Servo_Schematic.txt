@@ -1,5 +1,5 @@
 name=Servo Schematic
-image=https://magiccards.info/scans/en/aer/176.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af2299e0-d31f-4ec4-9497-16e494ee21e6.jpg?1576382430
 value=2.500
 rarity=U
 type=Artifact

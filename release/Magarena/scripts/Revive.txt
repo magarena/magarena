@@ -1,5 +1,5 @@
 name=Revive
-image=https://magiccards.info/scans/en/mm3/133.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b365778-1678-4c1f-ae32-7671a1429a3e.jpg?1593813876
 image_updated=2017-08-08
 value=4.138
 rarity=C

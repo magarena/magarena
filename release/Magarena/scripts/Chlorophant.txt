@@ -1,5 +1,5 @@
 name=Chlorophant
-image=https://magiccards.info/scans/en/od/234.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4fd0ea3-4134-4f7d-a0c8-01c49bacfcfc.jpg?1562931871
 value=4.034
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Roc Hatchling
-image=https://magiccards.info/scans/en/wl/113.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25857884-6bb7-4a8e-a08b-fa610af8a5c3.jpg?1562799881
 value=3.561
 rarity=U
 type=Creature

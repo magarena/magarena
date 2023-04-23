@@ -1,5 +1,5 @@
 name=Zombify
-image=https://magiccards.info/scans/en/a25/116.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98a9aa95-a8d5-42e6-b92e-b25b04b9ce8a.jpg?1562438590
 image_updated=2018-04-27
 value=4.237
 rarity=U

@@ -1,5 +1,5 @@
 name=Mire Blight
-image=https://magiccards.info/scans/en/zen/104.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e63238d-a022-4ea1-a83d-0b2260d56a17.jpg?1562610410
 value=2.950
 rarity=C
 type=Enchantment

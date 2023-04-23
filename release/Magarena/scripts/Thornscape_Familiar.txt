@@ -1,5 +1,5 @@
 name=Thornscape Familiar
-image=https://magiccards.info/scans/en/ps/95.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76c6e426-6165-4f8e-8766-de768ae13452.jpg?1562920004
 value=4.098
 rarity=C
 type=Creature

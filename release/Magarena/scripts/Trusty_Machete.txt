@@ -1,5 +1,5 @@
 name=Trusty Machete
-image=https://magiccards.info/scans/en/zen/209.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86c9838e-aa72-49fc-bae2-f880bcbc9313.jpg?1562614038
 value=3.870
 rarity=U
 type=Artifact

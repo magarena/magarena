@@ -1,5 +1,5 @@
 name=Drudge Spell
-image=https://magiccards.info/scans/en/hl/6.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52b352de-e989-4ad5-963c-818092fc9f1a.jpg?1562587283
 value=3.130
 rarity=U
 type=Enchantment

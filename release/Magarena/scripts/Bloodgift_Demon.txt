@@ -1,5 +1,5 @@
 name=Bloodgift Demon
-image=https://magiccards.info/scans/en/c14/137.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a2e1d4a-8df4-472f-a98f-d6b71c1dd1c4.jpg?1561945378
 value=4.007
 rarity=R
 type=Creature

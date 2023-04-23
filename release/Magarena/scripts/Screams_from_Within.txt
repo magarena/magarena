@@ -1,5 +1,5 @@
 name=Screams from Within
-image=https://magiccards.info/scans/en/ds/52.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86c03b3c-5140-4577-a1aa-952986223a82.jpg?1562637899
 value=4.149
 rarity=U
 type=Enchantment

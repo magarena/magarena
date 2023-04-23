@@ -1,5 +1,5 @@
 name=Boldwyr Heavyweights
-image=https://magiccards.info/scans/en/mt/85.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88d90bc4-7f70-4203-b554-800c70c775ef.jpg?1562879832
 value=3.164
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Stasis Cocoon
-image=https://magiccards.info/scans/en/5dn/18.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b2ca75e-ccb0-4e5b-8dda-445fe0130732.jpg?1562877197
 value=3.044
 rarity=C
 type=Enchantment

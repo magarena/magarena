@@ -1,5 +1,5 @@
 name=Harmonic Sliver
-image=https://magiccards.info/scans/en/ts/240.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1cfc5db-3fc0-428e-8d4b-f6ea6caea36d.jpg?1619403980
 value=4.234
 rarity=U
 type=Creature

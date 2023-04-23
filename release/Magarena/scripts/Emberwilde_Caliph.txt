@@ -1,5 +1,5 @@
 name=Emberwilde Caliph
-image=https://magiccards.info/scans/en/mr/322.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9598a9b4-15bb-4645-92ed-8eedef75dc24.jpg?1562720492
 value=1.685
 rarity=R
 type=Creature

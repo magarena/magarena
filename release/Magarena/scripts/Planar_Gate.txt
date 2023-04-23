@@ -1,5 +1,5 @@
 name=Planar Gate
-image=https://magiccards.info/scans/en/lg/235.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c880c236-a9d9-4e0d-bc4b-8910c75639cd.jpg?1562942371
 value=3.143
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Wheel of Fortune
-image=https://magiccards.info/scans/en/rv/184.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2597050f-6b1b-474e-aa16-33fd154628ca.jpg?1562902580
 value=4.500
 rarity=R
 type=Sorcery

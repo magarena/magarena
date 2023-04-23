@@ -1,5 +1,5 @@
 name=Arc-Slogger
-image=https://magiccards.info/scans/en/mi/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3dd67e0-72b4-4c55-b49b-c69950feccb1.jpg?1562158892
 value=3.886
 rarity=R
 type=Creature

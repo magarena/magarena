@@ -1,5 +1,5 @@
 name=Ashnod's Transmogrant
-image=https://magiccards.info/scans/en/5e/350.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31c830a1-5b93-493f-9976-af950f6ec70a.jpg?1559592526
 value=3.444
 rarity=C
 type=Artifact

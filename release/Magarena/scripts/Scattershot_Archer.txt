@@ -1,5 +1,5 @@
 name=Scattershot Archer
-image=https://magiccards.info/scans/en/cfx/90.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d74d6cdb-a087-4b3d-bf25-509200ed6d93.jpg?1562804067
 value=3.640
 rarity=C
 type=Creature

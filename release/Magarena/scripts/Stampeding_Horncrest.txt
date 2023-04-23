@@ -1,5 +1,5 @@
 name=Stampeding Horncrest
-image=https://magiccards.info/scans/en/rix/116.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d4d4bb3-583c-4c3b-b6b7-342a78bbaec6.jpg?1555040540
 value=2.500
 rarity=C
 type=Creature

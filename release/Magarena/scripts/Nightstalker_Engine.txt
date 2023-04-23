@@ -1,5 +1,5 @@
 name=Nightstalker Engine
-image=https://magiccards.info/scans/en/po2/21.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61e440ad-462f-4c7e-a646-8c5123a9f6b2.jpg?1562918068
 value=3.700
 rarity=R
 type=Creature

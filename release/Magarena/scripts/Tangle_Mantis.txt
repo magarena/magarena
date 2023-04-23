@@ -1,5 +1,5 @@
 name=Tangle Mantis
-image=https://magiccards.info/scans/en/mbs/91.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0e4d333-78f7-4710-9b26-36e285c0d9f8.jpg?1562614486
 value=3.008
 rarity=C
 type=Creature

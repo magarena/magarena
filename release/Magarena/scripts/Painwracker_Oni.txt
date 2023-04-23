@@ -1,5 +1,5 @@
 name=Painwracker Oni
-image=https://magiccards.info/scans/en/chk/136.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b371b32-7758-4dc9-b4c5-1d1df1f1826a.jpg?1562757953
 value=2.879
 rarity=U
 type=Creature

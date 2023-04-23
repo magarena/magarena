@@ -1,5 +1,5 @@
 name=Final Revels
-image=https://magiccards.info/scans/en/lw/113.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99f3744a-71c4-4a54-9e1c-92420526b792.jpg?1562359766
 value=2.609
 rarity=U
 type=Sorcery

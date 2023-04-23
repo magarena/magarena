@@ -1,5 +1,5 @@
 name=Seeker of the Way
-image=https://magiccards.info/scans/en/ima/29.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9e3cb28-d318-4d5d-b5bf-1ea7c6249a89.jpg?1673147115
 image_updated=2017-04-12
 value=3.750
 rarity=C

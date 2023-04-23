@@ -1,5 +1,5 @@
 name=Noxious Field
-image=https://magiccards.info/scans/en/pr/70.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10c84d09-555c-472b-b445-5dd5a44cd555.jpg?1562898266
 value=3.667
 rarity=U
 type=Enchantment

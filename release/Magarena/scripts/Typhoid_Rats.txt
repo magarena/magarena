@@ -1,5 +1,5 @@
 name=Typhoid Rats
-image=https://magiccards.info/scans/en/frf/89.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d13cb90b-50c3-46ef-83f8-812dfb7ff881.jpg?1562830123
 value=3.400
 rarity=C
 type=Creature

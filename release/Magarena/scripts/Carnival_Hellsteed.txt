@@ -1,5 +1,5 @@
 name=Carnival Hellsteed
-image=https://magiccards.info/scans/en/rtr/147.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8ada7ce-c693-48f0-a6e3-766f61d93370.jpg?1562793954
 value=3.422
 rarity=R
 type=Creature

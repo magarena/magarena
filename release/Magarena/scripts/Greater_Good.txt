@@ -1,5 +1,5 @@
 name=Greater Good
-image=https://magiccards.info/scans/en/9e/245.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c73ca01-d8ea-4cd2-af60-b260030967b2.jpg?1631587954
 value=4.217
 rarity=R
 type=Enchantment

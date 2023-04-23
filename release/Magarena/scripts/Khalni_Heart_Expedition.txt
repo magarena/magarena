@@ -1,5 +1,5 @@
 name=Khalni Heart Expedition
-image=https://magiccards.info/scans/en/zen/167.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45cbbcfb-1b1b-4991-988d-17a22a08d5b0.jpg?1608917462
 value=3.860
 rarity=C
 type=Enchantment

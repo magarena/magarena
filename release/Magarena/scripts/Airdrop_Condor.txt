@@ -1,5 +1,5 @@
 name=Airdrop Condor
-image=https://magiccards.info/scans/en/on/186.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec9796ac-11e2-4295-bf00-f684d0111970.jpg?1562951282
 value=2.519
 rarity=U
 type=Creature

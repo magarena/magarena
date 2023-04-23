@@ -1,5 +1,5 @@
 name=Pouncing Kavu
-image=https://magiccards.info/scans/en/in/158.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e6e2e49-7bde-43c1-8caf-43d237dfc052.jpg?1562920517
 value=3.224
 rarity=C
 type=Creature

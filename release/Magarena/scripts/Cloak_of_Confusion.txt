@@ -1,5 +1,5 @@
 name=Cloak of Confusion
-image=https://magiccards.info/scans/en/5e/13.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5fd387e-d77f-4502-8d2e-752a53f577fc.jpg?1562870969
 value=3.241
 rarity=C
 type=Enchantment

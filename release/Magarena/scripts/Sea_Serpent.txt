@@ -1,5 +1,5 @@
 name=Sea Serpent
-image=https://magiccards.info/scans/en/5e/118.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1621438d-717a-477c-93ff-ff7415da70c5.jpg?1562900304
 value=1.485
 rarity=C
 type=Creature

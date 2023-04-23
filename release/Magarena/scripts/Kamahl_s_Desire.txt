@@ -1,5 +1,5 @@
 name=Kamahl's Desire
-image=https://magiccards.info/scans/en/od/199.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c99e1ded-7440-40a6-846b-7450a9b7d2a8.jpg?1562932710
 value=3.200
 rarity=C
 type=Enchantment

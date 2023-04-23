@@ -1,5 +1,5 @@
 name=Hunger of the Howlpack
-image=https://magiccards.info/scans/en/cns/168.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23676697-2b84-4e9f-9e38-4fd58085a698.jpg?1562864492
 value=4.125
 rarity=C
 type=Instant

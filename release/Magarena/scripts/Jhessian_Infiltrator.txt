@@ -1,5 +1,5 @@
 name=Jhessian Infiltrator
-image=https://magiccards.info/scans/en/ala/174.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1761d867-2eb0-406b-b175-97a90c457844.jpg?1562701439
 value=3.752
 rarity=U
 type=Creature

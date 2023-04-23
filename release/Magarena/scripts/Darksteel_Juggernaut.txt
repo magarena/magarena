@@ -1,5 +1,5 @@
 name=Darksteel Juggernaut
-image=https://magiccards.info/scans/en/som/150.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22c4148a-477d-419e-8d6b-5d558048e0db.jpg?1592711228
 value=3.942
 rarity=R
 type=Artifact,Creature

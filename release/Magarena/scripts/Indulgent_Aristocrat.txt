@@ -1,5 +1,5 @@
 name=Indulgent Aristocrat
-image=https://magiccards.info/scans/en/soi/118.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37f6200d-caaf-49ca-b021-48186e404ace.jpg?1641602647
 value=2.500
 rarity=U
 type=Creature

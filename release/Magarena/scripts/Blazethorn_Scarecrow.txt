@@ -1,5 +1,5 @@
 name=Blazethorn Scarecrow
-image=https://magiccards.info/scans/en/shm/246.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44793043-82b4-415b-a9ab-d564fdbcd314.jpg?1562829418
 value=2.057
 rarity=C
 type=Artifact,Creature

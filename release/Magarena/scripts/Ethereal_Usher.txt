@@ -1,5 +1,5 @@
 name=Ethereal Usher
-image=https://magiccards.info/scans/en/rav/47.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/908901b7-fb40-4358-bca5-5e71bdafcbe7.jpg?1598914166
 value=2.850
 rarity=U
 type=Creature

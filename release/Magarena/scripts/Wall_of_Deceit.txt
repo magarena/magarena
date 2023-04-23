@@ -1,5 +1,5 @@
 name=Wall of Deceit
-image=https://magiccards.info/scans/en/le/55.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6eab8bfb-6e46-44b7-8fb1-72bb1c1d04cc.jpg?1562378249
 image_updated=2011-01-11
 value=3.817
 rarity=U

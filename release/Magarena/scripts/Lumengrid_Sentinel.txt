@@ -1,5 +1,5 @@
 name=Lumengrid Sentinel
-image=https://magiccards.info/scans/en/mi/40.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48068b80-9a98-45d0-8224-ee298cbf708f.jpg?1562142818
 value=3.800
 rarity=U
 type=Creature

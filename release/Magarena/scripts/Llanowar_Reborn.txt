@@ -1,5 +1,5 @@
 name=Llanowar Reborn
-image=https://magiccards.info/scans/en/fut/171.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/992e1549-0c3e-4c0f-954f-c1061e36c276.jpg?1682210538
 image_updated=2016-12-21
 value=3.850
 rarity=U

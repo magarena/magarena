@@ -1,5 +1,5 @@
 name=Hedron-Field Purists
-image=https://magiccards.info/scans/en/roe/25.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c48e9f90-4b13-4281-943c-126be4ff1ce0.jpg?1562708426
 value=3.473
 rarity=R
 type=Creature

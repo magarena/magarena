@@ -1,5 +1,5 @@
 name=Harbor Guardian
-image=https://magiccards.info/scans/en/mr/326.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78a2359f-6586-42a6-a855-c0049b448cb9.jpg?1562720231
 value=1.596
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Bathe in Dragonfire
-image=https://magiccards.info/scans/en/frf/92.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/102740d0-ca74-460d-af30-c71bddad87c4.jpg?1600701903
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Pinpoint Avalanche
-image=https://magiccards.info/scans/en/on/221.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5cf8876-4c7d-4779-9363-d0a58bb7d851.jpg?1562945960
 value=2.121
 rarity=C
 type=Instant

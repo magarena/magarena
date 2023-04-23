@@ -1,5 +1,5 @@
 name=Drakewing Krasis
-image=https://magiccards.info/scans/en/gtc/157.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/016d1d17-ba5c-4168-9a3d-232bdcc98c80.jpg?1561813785
 value=3.301
 rarity=C
 type=Creature

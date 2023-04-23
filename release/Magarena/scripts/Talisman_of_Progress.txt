@@ -1,5 +1,5 @@
 name=Talisman of Progress
-image=https://magiccards.info/scans/en/mi/256.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57cf7b53-a427-4513-abe8-4a9195e92828.jpg?1562912855
 value=2.726
 rarity=U
 type=Artifact

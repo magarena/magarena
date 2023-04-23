@@ -1,5 +1,5 @@
 name=Hamlet Captain
-image=https://magiccards.info/scans/en/emn/161.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43435939-20cf-49c9-8e37-63681740399b.jpg?1576384807
 image_updated=2016-09-09
 value=3.816
 rarity=U

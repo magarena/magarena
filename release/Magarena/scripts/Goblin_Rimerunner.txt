@@ -1,5 +1,5 @@
 name=Goblin Rimerunner
-image=https://magiccards.info/scans/en/cs/83.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0254a437-5240-40ca-bf7b-d30b95942bf5.jpg?1593275244
 value=3.047
 rarity=C
 type=Snow,Creature

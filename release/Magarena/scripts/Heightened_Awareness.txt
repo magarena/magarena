@@ -1,5 +1,5 @@
 name=Heightened Awareness
-image=https://magiccards.info/scans/en/pr/37.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2765be4f-23bf-49c1-9546-11a7916156be.jpg?1562902287
 value=3.636
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Witness of the Ages
-image=https://magiccards.info/scans/en/ktk/228.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/763ac4c4-af2d-4b71-9fb3-244c96f93860.jpg?1562788742
 value=2.750
 rarity=U
 type=Artifact,Creature

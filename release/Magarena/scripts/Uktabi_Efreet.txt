@@ -1,5 +1,5 @@
 name=Uktabi Efreet
-image=https://magiccards.info/scans/en/wl/85.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3678a224-d314-4108-8a39-de0c1b635b5c.jpg?1562800200
 value=2.351
 rarity=C
 type=Creature

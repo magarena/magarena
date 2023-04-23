@@ -1,5 +1,5 @@
 name=Centaur's Herald
-image=https://magiccards.info/scans/en/rtr/118.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08598b2b-6fd2-4a1d-8d74-7ca6d93ad382.jpg?1562782205
 value=2.475
 rarity=C
 type=Creature

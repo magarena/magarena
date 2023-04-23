@@ -1,5 +1,5 @@
 name=Vermiculos
-image=https://magiccards.info/scans/en/mi/80.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b68e084-0760-4817-a656-32dc4b094370.jpg?1562152156
 value=3.162
 rarity=R
 type=Creature

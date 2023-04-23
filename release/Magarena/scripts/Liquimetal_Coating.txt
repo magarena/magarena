@@ -1,5 +1,5 @@
 name=Liquimetal Coating
-image=https://magiccards.info/scans/en/c14/246.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f631447c-36e3-4d82-a658-19c9767a216b.jpg?1562276535
 value=4.154
 rarity=U
 type=Artifact

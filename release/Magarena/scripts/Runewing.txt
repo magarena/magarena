@@ -1,5 +1,5 @@
 name=Runewing
-image=https://magiccards.info/scans/en/rtr/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/749961e6-b135-4629-ae9d-124de0d70db9.jpg?1562788308
 value=2.337
 rarity=C
 type=Creature

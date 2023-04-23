@@ -1,5 +1,5 @@
 name=Lumithread Field
-image=https://magiccards.info/scans/en/fut/25.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/772bf1a3-ab2d-4fe6-830b-1c5ef8f5dc07.jpg?1562918908
 value=3.152
 rarity=C
 type=Enchantment

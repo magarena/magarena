@@ -1,5 +1,5 @@
 name=Lockjaw Snapper
-image=https://magiccards.info/scans/en/shm/255.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fae1cc40-12c0-4300-b6fa-7af32167a158.jpg?1562838438
 value=2.774
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Squire's Devotion
-image=https://magiccards.info/scans/en/rix/25.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91de07da-564d-42f3-987d-a2321c3216bc.jpg?1555039810
 value=2.500
 rarity=C
 type=Enchantment

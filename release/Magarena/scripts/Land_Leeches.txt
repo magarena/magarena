@@ -1,5 +1,5 @@
 name=Land Leeches
-image=https://magiccards.info/scans/en/4e/139.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71f1d97c-5bfa-4791-9004-5f2464908c30.jpg?1559601433
 value=3.076
 rarity=C
 type=Creature

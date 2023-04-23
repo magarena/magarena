@@ -1,5 +1,5 @@
 name=Gigantosaurus
-image=https://magiccards.info/scans/en/m19/185.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1db84d8-d426-4c0d-b44e-5be7b0f5f5bf.jpg?1562303938
 value=2.500
 rarity=R
 type=Creature

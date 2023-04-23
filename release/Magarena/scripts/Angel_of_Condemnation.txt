@@ -1,5 +1,5 @@
 name=Angel of Condemnation
-image=https://magiccards.info/scans/en/hou/3.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90dad070-e41d-419b-ae27-ace82b9ab2c5.jpg?1630628666
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Salvage Titan
-image=https://magiccards.info/scans/en/ala/84.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/7175febd-ae8e-4945-91ab-b6c67c40f04b.jpg?1599705900
 value=4.202
 rarity=R
 type=Artifact,Creature

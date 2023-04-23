@@ -1,5 +1,5 @@
 name=Razor Swine
-image=https://magiccards.info/scans/en/nph/92.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fb022a3-5f9e-491e-8340-087e33f927d6.jpg?1562876407
 value=3.539
 rarity=C
 type=Creature

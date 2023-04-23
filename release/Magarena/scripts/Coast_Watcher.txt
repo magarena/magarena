@@ -1,5 +1,5 @@
 name=Coast Watcher
-image=https://magiccards.info/scans/en/sc/30.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bbbc67d-99d0-4277-a8f2-64509e59ec00.jpg?1562530192
 value=2.808
 rarity=C
 type=Creature

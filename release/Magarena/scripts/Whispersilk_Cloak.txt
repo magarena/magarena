@@ -1,5 +1,5 @@
 name=Whispersilk Cloak
-image=https://magiccards.info/scans/en/c16/280.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b49e2c5-c447-45f4-979d-68556f6cd647.jpg?1645328055
 image_updated=2017-08-17
 value=3.959
 rarity=U

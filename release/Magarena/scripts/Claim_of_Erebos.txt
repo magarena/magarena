@@ -1,5 +1,5 @@
 name=Claim of Erebos
-image=https://magiccards.info/scans/en/bng/64.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a51db556-b3e8-4628-9e39-6353023b0696.jpg?1593091901
 value=2.942
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Renegade Tactics
-image=https://magiccards.info/scans/en/kld/127.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7dfa0e65-1ce0-4f8e-a78b-2ade2d25e748.jpg?1608910360
 image_updated=2016-10-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Urza's Rage
-image=https://magiccards.info/scans/en/in/178.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c91e364-c157-494e-bb1b-f2cef004900f.jpg?1562201994
 image_updated=2016-02-29
 value=3.859
 removal=3

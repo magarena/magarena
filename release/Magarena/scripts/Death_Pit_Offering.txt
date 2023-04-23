@@ -1,5 +1,5 @@
 name=Death Pit Offering
-image=https://magiccards.info/scans/en/8e/124.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6404e26-353a-478e-81db-03499be8e24b.jpg?1562944610
 value=3.816
 rarity=R
 type=Enchantment

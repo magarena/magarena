@@ -1,5 +1,5 @@
 name=Master of Diversion
-image=https://magiccards.info/scans/en/m14/24.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bec89b3-640e-4093-a6e9-5639610769b9.jpg?1562827422
 value=3.682
 rarity=C
 type=Creature

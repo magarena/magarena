@@ -1,5 +1,5 @@
 name=Fire Bowman
-image=https://magiccards.info/scans/en/p3k/112.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18acc721-e9ae-4ba4-b435-754e41fb541e.jpg?1562255848
 value=2.868
 rarity=U
 type=Creature

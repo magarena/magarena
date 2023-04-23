@@ -1,5 +1,5 @@
 name=Triskelavus
-image=https://magiccards.info/scans/en/cmd/263.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/899eb19e-9932-4066-9de6-dfdbbab5e769.jpg?1562274625
 value=3.456
 rarity=R
 type=Artifact,Creature

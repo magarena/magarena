@@ -1,5 +1,5 @@
 name=Planar Guide
-image=https://magiccards.info/scans/en/le/18.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7087cb1e-f2e2-4b75-bacf-bc4153e398e3.jpg?1562917504
 value=4.064
 rarity=R
 type=Creature

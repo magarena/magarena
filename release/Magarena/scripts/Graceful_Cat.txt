@@ -1,5 +1,5 @@
 name=Graceful Cat
-image=https://magiccards.info/scans/en/akh/273.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b42ba8bf-9fc1-4d57-9c80-42491d18d929.jpg?1561800331
 value=2.500
 rarity=C
 type=Creature

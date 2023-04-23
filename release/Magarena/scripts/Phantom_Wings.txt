@@ -1,5 +1,5 @@
 name=Phantom Wings
-image=https://magiccards.info/scans/en/bok/46.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a96e5a18-5958-426e-892f-5c68f44c1b41.jpg?1562878991
 value=3.645
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Silkweaver Elite
-image=https://magiccards.info/scans/en/aer/125.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d10938c8-6fc4-495f-912a-1d3f12278f78.jpg?1576382088
 value=2.500
 rarity=C
 type=Creature

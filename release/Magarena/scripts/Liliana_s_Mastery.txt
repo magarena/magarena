@@ -1,5 +1,5 @@
 name=Liliana's Mastery
-image=https://magiccards.info/scans/en/akh/98.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a92ee6ec-eebf-40b4-9dd9-c0551e33f5ff.jpg?1637630606
 value=2.500
 rarity=R
 type=Enchantment

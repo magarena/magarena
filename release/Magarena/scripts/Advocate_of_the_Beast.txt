@@ -1,5 +1,5 @@
 name=Advocate of the Beast
-image=https://magiccards.info/scans/en/m14/164.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1320400-5aa8-48d6-be84-197b4559456f.jpg?1562833925
 value=3.397
 rarity=C
 type=Creature

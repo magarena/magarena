@@ -1,5 +1,5 @@
 name=Phyresis
-image=https://magiccards.info/scans/en/mbs/49.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0059d21b-0725-4806-8691-2451db36787f.jpg?1562609245
 value=3.341
 rarity=C
 type=Enchantment

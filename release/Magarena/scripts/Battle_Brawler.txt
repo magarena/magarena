@@ -1,5 +1,5 @@
 name=Battle Brawler
-image=https://magiccards.info/scans/en/frf/63.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c9b5baf-6163-48a9-b58d-195edfeb437d.jpg?1562826854
 value=2.500
 rarity=U
 type=Creature

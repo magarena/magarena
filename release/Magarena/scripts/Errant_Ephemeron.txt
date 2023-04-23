@@ -1,5 +1,5 @@
 name=Errant Ephemeron
-image=https://magiccards.info/scans/en/mma/41.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3779a76a-0171-4714-9713-a65dc173a33f.jpg?1619394144
 value=2.500
 rarity=C
 type=Creature

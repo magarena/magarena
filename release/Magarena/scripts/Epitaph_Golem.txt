@@ -1,5 +1,5 @@
 name=Epitaph Golem
-image=https://magiccards.info/scans/en/soi/254.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7988fd09-32a4-406b-8e7f-e77393d680a7.jpg?1594737486
 value=2.500
 rarity=U
 type=Artifact,Creature

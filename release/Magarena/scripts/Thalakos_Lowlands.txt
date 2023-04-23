@@ -1,5 +1,5 @@
 name=Thalakos Lowlands
-image=https://magiccards.info/scans/en/tp/338.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/8522c51f-9126-41eb-84b5-f8489c7ad7ff.jpg?1562430324
 value=2.712
 rarity=U
 type=Land

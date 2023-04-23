@@ -1,5 +1,5 @@
 name=Akroan Jailer
-image=https://magiccards.info/scans/en/ori/1.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d96bc2b-2e31-4654-b192-c3f023d9fde6.jpg?1562030815
 image_updated=2015-11-05
 value=2.500
 rarity=C

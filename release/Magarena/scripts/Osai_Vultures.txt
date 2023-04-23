@@ -1,5 +1,5 @@
 name=Osai Vultures
-image=https://magiccards.info/scans/en/4e/288.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c665c02-4010-4bc6-85f0-bc03bef38ce9.jpg?1562905393
 value=2.250
 rarity=U
 type=Creature

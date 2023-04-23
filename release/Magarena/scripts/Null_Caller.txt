@@ -1,5 +1,5 @@
 name=Null Caller
-image=https://magiccards.info/scans/en/ogw/88.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bde7ecbc-b277-437c-ac94-4c3e89f1bda6.jpg?1608909866
 image_updated=2016-02-29
 value=2.500
 rarity=U

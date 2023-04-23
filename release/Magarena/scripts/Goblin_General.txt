@@ -1,5 +1,5 @@
 name=Goblin General
-image=https://magiccards.info/scans/en/st/101.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23c9eef2-849f-4799-9829-bd845f8eaf6e.jpg?1562902175
 value=3.500
 rarity=U
 type=Creature

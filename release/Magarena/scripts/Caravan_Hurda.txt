@@ -1,5 +1,5 @@
 name=Caravan Hurda
-image=https://magiccards.info/scans/en/zen/5.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffdf3a3d-292d-40b9-b28c-34ad33a76bb4.jpg?1562618763
 value=1.191
 rarity=C
 type=Creature

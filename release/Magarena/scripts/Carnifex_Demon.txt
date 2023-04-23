@@ -1,5 +1,5 @@
 name=Carnifex Demon
-image=https://magiccards.info/scans/en/som/57.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c191dba2-659d-40e7-a558-c99ece872197.jpg?1562822640
 value=3.871
 rarity=R
 type=Creature

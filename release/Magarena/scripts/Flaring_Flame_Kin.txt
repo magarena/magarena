@@ -1,5 +1,5 @@
 name=Flaring Flame-Kin
-image=https://magiccards.info/scans/en/cns/142.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc7aa01f-c647-43d2-8c4a-b93a198d03b4.jpg?1562866879
 value=3.333
 rarity=U
 type=Creature

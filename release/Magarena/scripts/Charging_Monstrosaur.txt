@@ -1,5 +1,5 @@
 name=Charging Monstrosaur
-image=https://magiccards.info/scans/en/xln/138.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5222448-95d1-4b63-ab76-d5060febcf38.jpg?1562564658
 value=2.500
 rarity=U
 type=Creature

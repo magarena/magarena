@@ -1,5 +1,5 @@
 name=Forerunner of the Heralds
-image=https://magiccards.info/scans/en/rix/129.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30bc2bd2-adfc-490e-998a-303598e6a942.jpg?1555040630
 value=2.500
 rarity=U
 type=Creature

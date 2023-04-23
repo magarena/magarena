@@ -1,5 +1,5 @@
 name=Megatog
-image=https://magiccards.info/scans/en/mi/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e9734b1-c5fb-4b2b-bada-c45c3a725e01.jpg?1562139705
 value=4.086
 rarity=R
 type=Creature

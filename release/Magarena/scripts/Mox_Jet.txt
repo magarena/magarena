@@ -1,5 +1,5 @@
 name=Mox Jet
-image=https://magiccards.info/scans/en/un/263.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f6927e1-c580-483a-8e2a-6e2deb74800e.jpg?1614638844
 value=4.100
 rarity=R
 type=Artifact

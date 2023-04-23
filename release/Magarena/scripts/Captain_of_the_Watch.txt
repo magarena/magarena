@@ -1,5 +1,5 @@
 name=Captain of the Watch
-image=https://magiccards.info/scans/en/m13/8.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e201980-e220-44dc-beab-ad13c20332bd.jpg?1562840239
 image_updated=2016-11-28
 value=3.990
 rarity=R

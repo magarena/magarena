@@ -1,5 +1,5 @@
 name=Regal Bloodlord
-image=https://magiccards.info/scans/en/m19/222.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65a75d3a-58cb-4ee0-88d3-52099cb57ac3.jpg?1562302641
 value=2.500
 rarity=U
 type=Creature

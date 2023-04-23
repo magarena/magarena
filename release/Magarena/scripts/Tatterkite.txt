@@ -1,5 +1,5 @@
 name=Tatterkite
-image=https://magiccards.info/scans/en/shm/264.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfaf852c-b8a9-44d4-b2cd-3f1e071a8be9.jpg?1562837087
 value=3.026
 rarity=U
 type=Artifact,Creature

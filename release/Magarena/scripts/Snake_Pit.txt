@@ -1,5 +1,5 @@
 name=Snake Pit
-image=https://magiccards.info/scans/en/mm/271.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/059a70a5-d4fb-445e-af98-e81821df2c59.jpg?1562378952
 value=3.942
 rarity=U
 type=Enchantment

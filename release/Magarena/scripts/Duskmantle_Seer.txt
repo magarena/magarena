@@ -1,5 +1,5 @@
 name=Duskmantle Seer
-image=https://magiccards.info/scans/en/cn2/202.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c58a1e6-be79-4eb3-94a9-d94b40a7cb15.jpg?1592711075
 image_updated=2017-08-29
 value=3.735
 rarity=R

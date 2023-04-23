@@ -1,5 +1,5 @@
 name=Miner's Bane
-image=https://magiccards.info/scans/en/m15/157.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c52d48ac-1685-4061-9907-31248ae38cc9.jpg?1562793951
 value=2.071
 rarity=C
 type=Creature

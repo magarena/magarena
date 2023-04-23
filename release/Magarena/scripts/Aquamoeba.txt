@@ -1,5 +1,5 @@
 name=Aquamoeba
-image=https://magiccards.info/scans/en/tr/24.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bec65877-f49d-42db-b09d-8dfa458bcb1b.jpg?1562933370
 value=3.500
 rarity=C
 type=Creature

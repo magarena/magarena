@@ -1,5 +1,5 @@
 name=Zodiac Pig
-image=https://magiccards.info/scans/en/p3k/97.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52e364b5-55ca-4df5-8755-6643218b0969.jpg?1562256097
 value=3.250
 rarity=U
 type=Creature

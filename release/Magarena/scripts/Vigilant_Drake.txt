@@ -1,5 +1,5 @@
 name=Vigilant Drake
-image=https://magiccards.info/scans/en/7e/109.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bb4be1f-3e5b-4881-9fae-9ed022f8eeac.jpg?1562238541
 value=2.589
 rarity=C
 type=Creature

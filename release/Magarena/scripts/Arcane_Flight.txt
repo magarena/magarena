@@ -1,5 +1,5 @@
 name=Arcane Flight
-image=https://magiccards.info/scans/en/dom/43.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09fbb1c0-ba57-4a5a-8ad6-77fbc6aeeec9.jpg?1562731106
 value=2.500
 rarity=C
 type=Enchantment

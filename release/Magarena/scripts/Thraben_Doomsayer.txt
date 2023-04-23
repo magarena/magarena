@@ -1,5 +1,5 @@
 name=Thraben Doomsayer
-image=https://magiccards.info/scans/en/dka/25.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e0fa5ab-c4d1-4b2d-ad62-feb651e4b11c.jpg?1591320182
 value=3.864
 rarity=R
 type=Creature

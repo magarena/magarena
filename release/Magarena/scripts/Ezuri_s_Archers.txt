@@ -1,5 +1,5 @@
 name=Ezuri's Archers
-image=https://magiccards.info/scans/en/som/120.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f909f002-f419-4292-ad92-05c4fd71749d.jpg?1561759795
 value=4.092
 rarity=C
 type=Creature

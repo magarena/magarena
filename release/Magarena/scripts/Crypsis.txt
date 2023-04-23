@@ -1,5 +1,5 @@
 name=Crypsis
-image=https://magiccards.info/scans/en/bng/34.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd445b01-34af-4132-a9fe-a03858624492.jpg?1593091623
 value=3.273
 rarity=C
 type=Instant

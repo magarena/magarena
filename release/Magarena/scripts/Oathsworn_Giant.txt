@@ -1,5 +1,5 @@
 name=Oathsworn Giant
-image=https://magiccards.info/scans/en/rav/27.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c342b0f-a8a5-4991-a0a2-fd75b54e1de2.jpg?1598913840
 value=3.786
 rarity=U
 type=Creature

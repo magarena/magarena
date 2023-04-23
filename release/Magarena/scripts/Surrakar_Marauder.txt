@@ -1,5 +1,5 @@
 name=Surrakar Marauder
-image=https://magiccards.info/scans/en/zen/113.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28a7a1af-14f2-4e22-bd27-9207e837d5fb.jpg?1562610778
 value=2.646
 rarity=C
 type=Creature

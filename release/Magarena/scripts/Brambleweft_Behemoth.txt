@@ -1,5 +1,5 @@
 name=Brambleweft Behemoth
-image=https://magiccards.info/scans/en/hou/202.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c759e94-e437-4dda-af0f-6578c0a50619.jpg?1562791329
 value=2.500
 rarity=C
 type=Creature

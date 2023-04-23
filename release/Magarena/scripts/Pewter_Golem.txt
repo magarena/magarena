@@ -1,5 +1,5 @@
 name=Pewter Golem
-image=https://magiccards.info/scans/en/mi/227.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28aa6682-bf11-4959-9d07-423a55f35199.jpg?1562138795
 value=1.786
 rarity=C
 type=Artifact,Creature

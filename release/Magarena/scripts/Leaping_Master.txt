@@ -1,5 +1,5 @@
 name=Leaping Master
-image=https://magiccards.info/scans/en/ktk/114.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f786a1d-4703-4bac-abba-632506d2726c.jpg?1562782598
 value=2.000
 rarity=C
 type=Creature

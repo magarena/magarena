@@ -1,5 +1,5 @@
 name=Rhonas's Monument
-image=https://magiccards.info/scans/en/akh/236.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d24b200-5cab-406a-a0e6-71a4d33b26fb.jpg?1592765261
 value=2.500
 rarity=U
 type=Legendary,Artifact

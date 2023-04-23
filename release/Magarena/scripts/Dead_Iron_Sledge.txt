@@ -1,5 +1,5 @@
 name=Dead-Iron Sledge
-image=https://magiccards.info/scans/en/mi/162.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1dc312c0-14da-4b23-8293-6fa41bdd3167.jpg?1562137755
 value=3.230
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Barrenton Medic
-image=https://magiccards.info/scans/en/shm/4.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8888e0aa-3682-4800-9c50-fff5d5c9547d.jpg?1562832730
 value=1.689
 rarity=C
 type=Creature

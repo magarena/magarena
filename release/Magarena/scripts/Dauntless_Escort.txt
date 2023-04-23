@@ -1,5 +1,5 @@
 name=Dauntless Escort
-image=https://magiccards.info/scans/en/c16/192.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/970ccd70-4b94-4287-977e-6262731c58d1.jpg?1673148499
 image_updated=2017-08-17
 value=3.933
 rarity=R

@@ -1,5 +1,5 @@
 name=Rootwalla
-image=https://magiccards.info/scans/en/10e/293.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5177a97-cf3b-4a82-adc4-14835152880d.jpg?1681725079
 value=3.183
 rarity=C
 type=Creature

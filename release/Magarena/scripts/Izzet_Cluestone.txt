@@ -1,5 +1,5 @@
 name=Izzet Cluestone
-image=https://magiccards.info/scans/en/dgm/141.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cf63def-e2cc-48c7-8409-c08a36eddf93.jpg?1562921145
 value=3.078
 rarity=C
 type=Artifact

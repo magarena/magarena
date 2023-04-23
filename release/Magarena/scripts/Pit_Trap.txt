@@ -1,5 +1,5 @@
 name=Pit Trap
-image=https://magiccards.info/scans/en/7e/313.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6fc051a-df87-46d9-bc45-8b7b2721b374.jpg?1562246309
 value=3.672
 rarity=U
 type=Artifact

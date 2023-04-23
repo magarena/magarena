@@ -1,5 +1,5 @@
 name=Soul's Majesty
-image=https://magiccards.info/scans/en/c17/158.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fe03ee0-50e4-4893-84ed-0d099be21d4e.jpg?1651656098
 image_updated=2017-10-03
 value=3.080
 rarity=R

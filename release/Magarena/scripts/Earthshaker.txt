@@ -1,5 +1,5 @@
 name=Earthshaker
-image=https://magiccards.info/scans/en/chk/165.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/283b47a9-c21e-4c0a-9c70-38b8ebbffab3.jpg?1562758471
 value=2.821
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Concentrate
-image=https://magiccards.info/scans/en/c14/103.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aca3338-30a6-4ce4-b74c-a18144b6efc9.jpg?1592764568
 value=3.946
 rarity=U
 type=Sorcery

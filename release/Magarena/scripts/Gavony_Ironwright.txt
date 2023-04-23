@@ -1,5 +1,5 @@
 name=Gavony Ironwright
-image=https://magiccards.info/scans/en/dka/9.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05d8de75-b169-4426-94a4-b19cdfdffd89.jpg?1562896366
 value=3.031
 rarity=U
 type=Creature

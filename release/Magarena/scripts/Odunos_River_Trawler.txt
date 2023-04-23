@@ -1,5 +1,5 @@
 name=Odunos River Trawler
-image=https://magiccards.info/scans/en/bng/79.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5d1eda4-ac34-4905-9022-59f91d38dbb3.jpg?1593092065
 value=3.431
 rarity=U
 type=Creature

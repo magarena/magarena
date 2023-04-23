@@ -1,5 +1,5 @@
 name=Grazing Kelpie
-image=https://magiccards.info/scans/en/eve/153.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68ccef2d-9a1f-4011-89e1-911bcc109b9d.jpg?1562916942
 value=2.321
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Cursecatcher
-image=https://magiccards.info/scans/en/a25/53.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d257a3c9-443f-4899-badc-f075a14667c5.jpg?1562441608
 image_updated=2018-04-27
 value=4.364
 rarity=U

@@ -1,5 +1,5 @@
 name=Blessing of Leeches
-image=https://magiccards.info/scans/en/bok/62.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de0ba1cf-d913-4285-9d8b-38acf78cc45e.jpg?1562880256
 value=3.191
 rarity=C
 type=Enchantment

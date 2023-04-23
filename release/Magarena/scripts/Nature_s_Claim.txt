@@ -1,5 +1,5 @@
 name=Nature's Claim
-image=https://magiccards.info/scans/en/ima/177.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d24b6640-ef2f-4c92-beb3-afdf78f9c2d5.jpg?1562854212
 image_updated=2017-04-12
 value=4.706
 removal=1

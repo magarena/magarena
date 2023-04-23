@@ -1,5 +1,5 @@
 name=Academy Ruins
-image=https://magiccards.info/scans/en/mma/219.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/579cce0c-5afe-4104-97e8-fd303e8fcc28.jpg?1661583493
 value=4.556
 rarity=R
 type=Legendary,Land

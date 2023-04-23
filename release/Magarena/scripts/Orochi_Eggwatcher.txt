@@ -1,5 +1,5 @@
 name=Orochi Eggwatcher
-image=https://magiccards.info/scans/en/chk/233a.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4f4aa3b-c64a-4430-b1a2-a7fca87d0a22.jpg?1562763433
 value=3.235
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Lone Wolf
-image=https://magiccards.info/scans/en/8e/262.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/309d32e9-c9b0-46bb-8d99-1ddd2e34a60b.jpg?1562904912
 value=3.850
 rarity=C
 type=Creature

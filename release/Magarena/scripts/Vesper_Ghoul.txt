@@ -1,5 +1,5 @@
 name=Vesper Ghoul
-image=https://magiccards.info/scans/en/di/57.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/669efa40-be9a-4475-9bcb-3325518403b5.jpg?1593273078
 value=2.062
 rarity=C
 type=Creature

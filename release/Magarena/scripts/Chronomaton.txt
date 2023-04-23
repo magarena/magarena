@@ -1,5 +1,5 @@
 name=Chronomaton
-image=https://magiccards.info/scans/en/m13/201.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/787b6916-3fce-41dd-ab52-f17546fd04ed.jpg?1592754349
 value=3.562
 rarity=U
 type=Artifact,Creature

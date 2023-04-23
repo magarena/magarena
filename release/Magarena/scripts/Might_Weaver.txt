@@ -1,5 +1,5 @@
 name=Might Weaver
-image=https://magiccards.info/scans/en/10e/278.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbd09923-4a4b-4ac6-a487-6e00d17183cb.jpg?1562556214
 value=3.238
 rarity=U
 type=Creature

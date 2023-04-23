@@ -1,5 +1,5 @@
 name=Triad of Fates
-image=https://magiccards.info/scans/en/ths/206.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/588a8f90-4344-4882-9671-4c7295186a58.jpg?1562818431
 value=3.325
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Dormant Gomazoa
-image=https://magiccards.info/scans/en/roe/62.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/131d2925-d87c-415f-aa84-97f14030624e.jpg?1562701328
 value=2.786
 rarity=R
 type=Creature

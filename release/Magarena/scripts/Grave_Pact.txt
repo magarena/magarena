@@ -1,5 +1,5 @@
 name=Grave Pact
-image=https://magiccards.info/scans/en/cmd/85.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b88471f6-ccb3-4129-b7a4-62cee65605ef.jpg?1562275584
 value=4.396
 rarity=R
 type=Enchantment

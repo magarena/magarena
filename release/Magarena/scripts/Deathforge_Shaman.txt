@@ -1,5 +1,5 @@
 name=Deathforge Shaman
-image=https://magiccards.info/scans/en/cns/141.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1122983b-94c7-4edc-af75-deecf9bdc067.jpg?1562864465
 value=3.875
 rarity=U
 type=Creature

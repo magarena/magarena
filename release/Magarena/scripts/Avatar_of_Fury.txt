@@ -1,5 +1,5 @@
 name=Avatar of Fury
-image=https://magiccards.info/scans/en/cmd/110.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f137e17e-6856-49c5-9878-8c5c8f3c1518.jpg?1592765600
 value=4.019
 rarity=R
 type=Creature

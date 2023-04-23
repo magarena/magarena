@@ -1,5 +1,5 @@
 name=Guardian of the Great Conduit
-image=https://magiccards.info/scans/en/kld/271.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72638ac5-84fd-4688-9b81-0eea3c05e53e.jpg?1562737738
 image_updated=2016-10-05
 value=2.500
 rarity=U

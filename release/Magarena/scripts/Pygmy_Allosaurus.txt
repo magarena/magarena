@@ -1,5 +1,5 @@
 name=Pygmy Allosaurus
-image=https://magiccards.info/scans/en/ia/145.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88a68767-9822-4f15-895e-32164e2159be.jpg?1587912058
 value=2.587
 rarity=R
 type=Creature

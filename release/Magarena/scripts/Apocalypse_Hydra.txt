@@ -1,5 +1,5 @@
 name=Apocalypse Hydra
-image=https://magiccards.info/scans/en/mm2/171.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a3bae04-6da2-485d-812e-ea2f7e45a9f3.jpg?1562906780
 image_updated=2015-11-05
 value=3.901
 rarity=R

@@ -1,5 +1,5 @@
 name=Timetwister
-image=https://magiccards.info/scans/en/un/85.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbee1e10-0b8c-44ea-b0e5-44cdd0bfcd76.jpg?1614638835
 value=4.667
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Captured Sunlight
-image=https://magiccards.info/scans/en/arb/66.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcafc9eb-efa3-4f6c-a2ca-aec8692fddc1.jpg?1562645284
 value=2.815
 rarity=C
 type=Sorcery

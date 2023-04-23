@@ -1,5 +1,5 @@
 name=Awe for the Guilds
-image=https://magiccards.info/scans/en/dgm/31.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec644ac3-07a2-43de-8173-9cc18e2ea2d9.jpg?1562939324
 value=1.908
 rarity=C
 type=Sorcery

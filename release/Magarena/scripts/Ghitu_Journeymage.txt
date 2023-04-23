@@ -1,5 +1,5 @@
 name=Ghitu Journeymage
-image=https://magiccards.info/scans/en/dom/126.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4360bc9-76f0-4e82-8968-4c6c62a35ed1.jpg?1562744427
 value=2.500
 rarity=C
 type=Creature

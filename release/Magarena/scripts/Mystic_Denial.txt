@@ -1,5 +1,5 @@
 name=Mystic Denial
-image=https://magiccards.info/scans/en/p3k/49.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/1296ddc4-300d-44f6-95d8-1b392613d379.jpg?1562255840
 value=1.871
 rarity=U
 type=Instant

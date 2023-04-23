@@ -1,5 +1,5 @@
 name=Phyrexian Boon
-image=https://magiccards.info/scans/en/ai/22.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dbf0ef0-3e16-4c32-9d51-33fe23bbdc94.jpg?1559592512
 value=3.630
 rarity=C
 type=Enchantment

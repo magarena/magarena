@@ -1,5 +1,5 @@
 name=Staff of Domination
-image=https://magiccards.info/scans/en/5dn/156.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fde838c8-2f32-4e7d-a236-0bc42dd7abd9.jpg?1608911729
 value=4.414
 rarity=R
 type=Artifact

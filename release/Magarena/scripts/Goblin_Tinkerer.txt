@@ -1,5 +1,5 @@
 name=Goblin Tinkerer
-image=https://magiccards.info/scans/en/mr/180.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6529852-8b3e-4a70-a4a1-029e012231c6.jpg?1562722385
 value=3.682
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Captive Flame
-image=https://magiccards.info/scans/en/sok/96.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/147a6ab8-e49c-402c-ae6a-17231054b1fa.jpg?1562899340
 value=3.590
 rarity=U
 type=Enchantment

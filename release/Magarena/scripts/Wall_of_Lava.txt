@@ -1,5 +1,5 @@
 name=Wall of Lava
-image=https://magiccards.info/scans/en/ia/223.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b99d6d11-b3f7-4d73-967c-3049af82a9d8.jpg?1587911959
 value=3.171
 rarity=U
 type=Creature

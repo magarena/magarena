@@ -1,5 +1,5 @@
 name=Violent Outburst
-image=https://magiccards.info/scans/en/arb/63.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b58856a-f88e-4625-8636-62b5c717b956.jpg?1562639969
 value=3.038
 rarity=C
 type=Instant

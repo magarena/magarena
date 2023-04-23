@@ -1,5 +1,5 @@
 name=Dense Canopy
-image=https://magiccards.info/scans/en/sok/125.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d1480d4-51f8-4233-874c-94502726fe0d.jpg?1562495129
 value=3.317
 rarity=U
 type=Enchantment

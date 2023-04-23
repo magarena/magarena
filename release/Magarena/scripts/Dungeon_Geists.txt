@@ -1,5 +1,5 @@
 name=Dungeon Geists
-image=https://magiccards.info/scans/en/dka/36.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3c81fda-c23d-437c-85f0-62d7b492ea32.jpg?1592516361
 value=3.769
 rarity=R
 type=Creature

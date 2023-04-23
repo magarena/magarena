@@ -1,5 +1,5 @@
 name=Child of Night
-image=https://magiccards.info/scans/en/m19/89.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3887af00-a87d-4396-b82b-38b88c084e8e.jpg?1600699871
 image_updated=2018-08-07
 value=2.400
 rarity=C

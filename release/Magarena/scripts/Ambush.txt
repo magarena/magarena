@@ -1,5 +1,5 @@
 name=Ambush
-image=https://magiccards.info/scans/en/hl/78.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7dd8623-b64a-4b47-a69d-ed62d44596fb.jpg?1562588233
 value=1.817
 rarity=C
 type=Instant

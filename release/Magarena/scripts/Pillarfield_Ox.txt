@@ -1,5 +1,5 @@
 name=Pillarfield Ox
-image=https://magiccards.info/scans/en/cns/76.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53a5c7bd-7d08-421d-ad43-70bc0c2db4d4.jpg?1562865428
 value=2.750
 rarity=C
 type=Creature

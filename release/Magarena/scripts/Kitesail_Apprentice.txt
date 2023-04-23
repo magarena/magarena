@@ -1,5 +1,5 @@
 name=Kitesail Apprentice
-image=https://magiccards.info/scans/en/wwk/10.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88e2315e-41d9-4e46-bee4-c8f92e91e2a9.jpg?1562291362
 value=3.230
 rarity=C
 type=Creature

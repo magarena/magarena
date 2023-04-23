@@ -1,5 +1,5 @@
 name=Wall of Brambles
-image=https://magiccards.info/scans/en/5e/200.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8780a20-8504-406e-aea1-722f146be5f7.jpg?1562594935
 value=3.062
 rarity=U
 type=Creature

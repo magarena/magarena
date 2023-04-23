@@ -1,5 +1,5 @@
 name=Purify the Grave
-image=https://magiccards.info/scans/en/isd/27.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc396f54-8f54-4456-b473-a9bb38e88f62.jpg?1568003888
 value=3.375
 rarity=U
 type=Instant

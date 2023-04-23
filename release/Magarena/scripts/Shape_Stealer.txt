@@ -1,5 +1,5 @@
 name=Shape Stealer
-image=https://magiccards.info/scans/en/sok/55.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da2a4871-8bc3-4db0-9f9e-b2e96b90ebd5.jpg?1562496117
 value=3.808
 rarity=U
 type=Creature

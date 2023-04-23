@@ -1,5 +1,5 @@
 name=Magmaw
-image=https://magiccards.info/scans/en/roe/158.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08c571fe-54ef-4234-98c3-5d4a7b07e7d2.jpg?1547517315
 value=2.990
 rarity=R
 type=Creature

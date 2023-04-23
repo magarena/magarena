@@ -1,5 +1,5 @@
 name=Mystic Penitent
-image=https://magiccards.info/scans/en/od/34.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb37f08b-019e-4e6b-8b15-b2971a3b5ebb.jpg?1562942296
 value=3.763
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Spell Syphon
-image=https://magiccards.info/scans/en/shm/52.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b883113c-e52b-4633-b4a4-016093327b6a.jpg?1562835117
 value=3.353
 rarity=C
 type=Instant

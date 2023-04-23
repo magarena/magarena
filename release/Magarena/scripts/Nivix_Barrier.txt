@@ -1,5 +1,5 @@
 name=Nivix Barrier
-image=https://magiccards.info/scans/en/ori/66.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b9b968d-b0cc-411d-9366-8358be28aef2.jpg?1562006593
 image_updated=2015-11-05
 value=2.500
 rarity=C

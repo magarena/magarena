@@ -1,5 +1,5 @@
 name=Furyborn Hellkite
-image=https://magiccards.info/scans/en/m12/135.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5b735e5-da9d-4740-acff-aac9dd24334c.jpg?1562656626
 value=4.157
 rarity=M
 type=Creature

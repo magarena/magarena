@@ -1,5 +1,5 @@
 name=Disciple of Law
-image=https://magiccards.info/scans/en/us/11.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a5c8701-a294-4474-9747-129f972cfb18.jpg?1562920710
 value=3.486
 rarity=C
 type=Creature

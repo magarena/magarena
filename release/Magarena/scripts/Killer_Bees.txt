@@ -1,5 +1,5 @@
 name=Killer Bees
-image=https://magiccards.info/scans/en/5e/169.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/096c7da0-a341-4044-9033-95e7bf2d605a.jpg?1562896976
 value=4.153
 rarity=U
 type=Creature

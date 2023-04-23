@@ -1,5 +1,5 @@
 name=Barrenton Cragtreads
-image=https://magiccards.info/scans/en/shm/138.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/361dab9e-22f0-45e4-a793-aa6c97a96781.jpg?1562828712
 value=1.975
 rarity=C
 type=Creature

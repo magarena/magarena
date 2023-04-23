@@ -1,5 +1,5 @@
 name=Greenwheel Liberator
-image=https://magiccards.info/scans/en/aer/108.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ad9bf0f-4271-497f-8d67-3c7bf09342dc.jpg?1576381977
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Spirit Weaver
-image=https://magiccards.info/scans/en/10e/46.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/286e436d-5c46-4a39-b773-99548befb9fa.jpg?1562545340
 value=2.235
 rarity=U
 type=Creature

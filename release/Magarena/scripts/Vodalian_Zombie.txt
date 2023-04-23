@@ -1,5 +1,5 @@
 name=Vodalian Zombie
-image=https://magiccards.info/scans/en/in/286.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f30a5a06-32ce-4d71-b71f-e3e1d8d4511a.jpg?1562943854
 value=3.588
 rarity=C
 type=Creature

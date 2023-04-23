@@ -1,5 +1,5 @@
 name=Murderous Betrayal
-image=https://magiccards.info/scans/en/8e/147.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0063ed19-494b-4199-9120-d479bfcb625a.jpg?1562895062
 value=2.625
 rarity=R
 type=Enchantment

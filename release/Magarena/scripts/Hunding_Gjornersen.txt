@@ -1,5 +1,5 @@
 name=Hunding Gjornersen
-image=https://magiccards.info/scans/en/lg/271.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/4049abac-cb54-4af2-b2df-ffb8fdc22e84.jpg?1562908315
 value=2.773
 rarity=U
 type=Legendary,Creature

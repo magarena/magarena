@@ -1,5 +1,5 @@
 name=Devastation
-image=https://magiccards.info/scans/en/st/94.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d53e999-ffd4-4829-b999-384664ce5a96.jpg?1562924528
 value=3.815
 rarity=R
 type=Sorcery

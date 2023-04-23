@@ -1,5 +1,5 @@
 name=Tangle Hulk
-image=https://magiccards.info/scans/en/mbs/139.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ed3c301-8d8e-45fe-902a-af03a79525be.jpg?1562612950
 value=2.380
 rarity=C
 type=Artifact,Creature

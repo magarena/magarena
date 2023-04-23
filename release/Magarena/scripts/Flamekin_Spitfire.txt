@@ -1,5 +1,5 @@
 name=Flamekin Spitfire
-image=https://magiccards.info/scans/en/lw/168.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a7878e5-fcb0-4de5-8dda-fcdb4b138ec1.jpg?1562359814
 value=1.948
 rarity=U
 type=Creature

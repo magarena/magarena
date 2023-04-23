@@ -1,5 +1,5 @@
 name=Might of Oaks
-image=https://magiccards.info/scans/en/m10/192.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/438a324b-cf3e-4a0f-95c4-cd548586f7e5.jpg?1561978206
 value=3.958
 rarity=R
 type=Instant

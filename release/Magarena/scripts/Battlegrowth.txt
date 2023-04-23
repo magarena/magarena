@@ -1,5 +1,5 @@
 name=Battlegrowth
-image=https://magiccards.info/scans/en/mi/113.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b34e76b-86b3-464e-93e7-c3f2074028fb.jpg?1562139298
 value=1.864
 rarity=C
 type=Instant

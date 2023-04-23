@@ -1,5 +1,5 @@
 name=Gelatinous Genesis
-image=https://magiccards.info/scans/en/roe/183.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e5c2be0-76ab-4873-a1fc-9ff65a9347c7.jpg?1599707228
 value=3.670
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Joven's Tools
-image=https://magiccards.info/scans/en/5e/386.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91c7aa8e-5873-4e18-8adb-1523c01d4e86.jpg?1562592334
 value=1.180
 rarity=U
 type=Artifact

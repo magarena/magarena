@@ -1,5 +1,5 @@
 name=Order of the Sacred Torch
-image=https://magiccards.info/scans/en/6e/32.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37066fc5-4cae-46ab-83c6-d1f262c67fac.jpg?1562868080
 value=3.741
 rarity=R
 type=Creature

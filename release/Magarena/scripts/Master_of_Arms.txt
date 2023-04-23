@@ -1,5 +1,5 @@
 name=Master of Arms
-image=https://magiccards.info/scans/en/wl/136.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac97ff43-c0b6-4f67-ad09-5ba8710c681a.jpg?1562802672
 value=3.170
 rarity=U
 type=Creature

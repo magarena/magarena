@@ -1,5 +1,5 @@
 name=Kozilek's Translator
-image=https://magiccards.info/scans/en/ogw/74.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d80665ae-fcb2-48fd-95be-8768293bcef7.jpg?1562938393
 image_updated=2016-02-29
 value=2.500
 rarity=C

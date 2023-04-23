@@ -1,5 +1,5 @@
 name=Heir of the Wilds
-image=https://magiccards.info/scans/en/ktk/134.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/0995e041-fe90-4459-8c70-fd9851ecf830.jpg?1562782282
 value=3.625
 rarity=U
 type=Creature

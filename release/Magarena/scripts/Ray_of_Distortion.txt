@@ -1,5 +1,5 @@
 name=Ray of Distortion
-image=https://magiccards.info/scans/en/od/42.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba1af997-bf99-4330-b24d-368615107ebc.jpg?1568003895
 value=2.062
 rarity=C
 type=Instant

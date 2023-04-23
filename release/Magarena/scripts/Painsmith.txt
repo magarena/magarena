@@ -1,5 +1,5 @@
 name=Painsmith
-image=https://magiccards.info/scans/en/som/74.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79301fd4-2f00-4ff5-993f-a6af2440064b.jpg?1599705863
 value=3.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sanctified Charge
-image=https://magiccards.info/scans/en/m15/30.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/6481bf34-192c-4102-8336-4d2d007d9e3c.jpg?1562788078
 value=2.571
 rarity=C
 type=Instant

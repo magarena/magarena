@@ -1,5 +1,5 @@
 name=Temporal Fissure
-image=https://magiccards.info/scans/en/sc/53.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9f9ece7-ee6e-4379-9d53-209f8805a72d.jpg?1592761577
 value=2.932
 rarity=C
 type=Sorcery

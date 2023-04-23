@@ -1,5 +1,5 @@
 name=Dystopia
-image=https://magiccards.info/scans/en/ai/6.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/452c1fe9-1640-4d0e-9f54-7c673b13b091.jpg?1562868533
 value=4.391
 rarity=R
 type=Enchantment

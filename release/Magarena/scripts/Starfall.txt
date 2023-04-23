@@ -1,5 +1,5 @@
 name=Starfall
-image=https://magiccards.info/scans/en/jou/114.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13921f0d-f163-4275-b025-045c1ccd99e5.jpg?1593096122
 value=1.667
 rarity=C
 type=Instant

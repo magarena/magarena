@@ -1,5 +1,5 @@
 name=Mortician Beetle
-image=https://magiccards.info/scans/en/mm3/78.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/978f2a31-1c89-43cb-92f2-195026c9311a.jpg?1593813338
 image_updated=2017-08-08
 value=4.175
 rarity=C

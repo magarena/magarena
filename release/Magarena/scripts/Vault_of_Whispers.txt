@@ -1,5 +1,5 @@
 name=Vault of Whispers
-image=https://magiccards.info/scans/en/mi/286.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69e50871-bde7-4109-8811-a1c1bf70d3ae.jpg?1667005030
 image_updated=2017-01-11
 value=4.360
 rarity=C

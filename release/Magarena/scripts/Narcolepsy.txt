@@ -1,5 +1,5 @@
 name=Narcolepsy
-image=https://magiccards.info/scans/en/mm2/52.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95681c43-ba2e-41a5-8a51-e66db8ec6cb9.jpg?1600726164
 value=3.917
 removal=2
 rarity=C

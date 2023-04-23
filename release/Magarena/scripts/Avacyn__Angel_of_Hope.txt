@@ -1,5 +1,5 @@
 name=Avacyn, Angel of Hope
-image=https://magiccards.info/scans/en/ima/11.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0519776-3d86-4f7d-9c3b-71c1dfbf7e12.jpg?1598303166
 image_updated=2017-04-12
 value=4.067
 rarity=M

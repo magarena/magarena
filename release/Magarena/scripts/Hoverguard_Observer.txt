@@ -1,5 +1,5 @@
 name=Hoverguard Observer
-image=https://magiccards.info/scans/en/ds/22.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7ab80bf-d115-4155-82e1-9a3a70b1b67d.jpg?1562639503
 value=1.924
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Reckless Racer
-image=https://magiccards.info/scans/en/aer/95.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21c0afd6-1242-42bf-a13f-9f218c9d9dfc.jpg?1576381891
 value=2.500
 rarity=U
 type=Creature

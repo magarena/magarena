@@ -1,5 +1,5 @@
 name=Keldon Megaliths
-image=https://magiccards.info/scans/en/fut/170.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da7c4600-1dc3-4a9d-a112-1b70abcb8951.jpg?1562378489
 image_updated=2016-12-21
 value=3.645
 rarity=U

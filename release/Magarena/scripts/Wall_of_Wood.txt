@@ -1,5 +1,5 @@
 name=Wall of Wood
-image=https://magiccards.info/scans/en/10e/309.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/1864e25e-f940-47e5-9439-ab721049c690.jpg?1562544339
 image_updated=2011-01-11
 value=1.820
 rarity=C

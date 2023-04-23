@@ -1,5 +1,5 @@
 name=Settle the Score
-image=https://magiccards.info/scans/en/dom/103.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee181d58-fed1-4f6d-96a3-4bf057ddd36e.jpg?1600701458
 value=2.500
 rarity=U
 type=Sorcery

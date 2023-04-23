@@ -1,5 +1,5 @@
 name=Destructor Dragon
-image=https://magiccards.info/scans/en/frf/127.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a87cb2f2-00ed-46a3-a69d-5360e1558b03.jpg?1562828568
 value=2.500
 rarity=U
 type=Creature

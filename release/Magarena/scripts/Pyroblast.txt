@@ -1,5 +1,5 @@
 name=Pyroblast
-image=https://magiccards.info/scans/en/ema/142.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b029eb9a-dd7a-40c2-96c4-0063d9cc002c.jpg?1580014621
 value=4.530
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Nimbus Naiad
-image=https://magiccards.info/scans/en/ths/56.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19e9c9a2-4c5b-4518-a127-e4ffb23437d6.jpg?1562815277
 value=3.500
 rarity=C
 type=Enchantment,Creature

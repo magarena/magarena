@@ -1,5 +1,5 @@
 name=Ruby Medallion
-image=https://magiccards.info/scans/en/c14/265.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad5b8a3c-8c75-4af4-975b-031e39d69da3.jpg?1562275513
 value=2.500
 rarity=R
 type=Artifact

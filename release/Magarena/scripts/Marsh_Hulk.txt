@@ -1,5 +1,5 @@
 name=Marsh Hulk
-image=https://magiccards.info/scans/en/dtk/109.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff347b25-7ce9-42c4-811d-86f3e9c55d75.jpg?1562796291
 value=2.500
 rarity=C
 type=Creature

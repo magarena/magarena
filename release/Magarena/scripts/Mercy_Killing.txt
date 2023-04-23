@@ -1,5 +1,5 @@
 name=Mercy Killing
-image=https://magiccards.info/scans/en/shm/231.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f55536d-8573-42c2-9e8a-5a2ce24d1878.jpg?1562831443
 value=3.852
 rarity=U
 type=Instant

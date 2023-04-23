@@ -1,5 +1,5 @@
 name=Urborg Volcano
-image=https://magiccards.info/scans/en/c17/288.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c69f6612-c974-4723-925e-afd4211c76db.jpg?1562623115
 image_updated=2017-10-03
 value=3.671
 rarity=U

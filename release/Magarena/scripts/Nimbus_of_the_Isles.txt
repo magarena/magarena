@@ -1,5 +1,5 @@
 name=Nimbus of the Isles
-image=https://magiccards.info/scans/en/m15/72.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbb41d25-b65b-4570-8523-ffb11779708f.jpg?1562945758
 value=1.714
 rarity=C
 type=Creature

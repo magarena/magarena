@@ -1,5 +1,5 @@
 name=Shielded Passage
-image=https://magiccards.info/scans/en/gtc/24.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/6546b6c4-73b2-41b3-9ff9-316e9ce916e5.jpg?1561829616
 value=2.000
 rarity=C
 type=Instant

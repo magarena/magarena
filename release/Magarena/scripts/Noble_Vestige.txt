@@ -1,5 +1,5 @@
 name=Noble Vestige
-image=https://magiccards.info/scans/en/zen/29.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dae1e55c-bdf2-4327-9f97-032c2c3c7d0c.jpg?1562617315
 value=1.627
 rarity=C
 type=Creature

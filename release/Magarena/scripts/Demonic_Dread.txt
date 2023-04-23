@@ -1,5 +1,5 @@
 name=Demonic Dread
-image=https://magiccards.info/scans/en/arb/38.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb81132e-ab33-435f-ade4-af4416d36044.jpg?1562645255
 value=2.879
 rarity=C
 type=Sorcery

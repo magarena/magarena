@@ -1,5 +1,5 @@
 name=Elemental Bond
-image=https://magiccards.info/scans/en/ori/174.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/516ebdba-0f25-459a-a26b-f6fa928b96e6.jpg?1568004541
 image_updated=2015-11-05
 value=2.500
 rarity=U

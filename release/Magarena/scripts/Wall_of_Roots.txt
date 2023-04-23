@@ -1,5 +1,5 @@
 name=Wall of Roots
-image=https://magiccards.info/scans/en/ima/190.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d80940ad-8e36-4226-ad5f-b54487c75c76.jpg?1673484868
 image_updated=2017-04-12
 value=4.430
 rarity=C

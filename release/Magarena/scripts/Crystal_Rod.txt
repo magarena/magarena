@@ -1,5 +1,5 @@
 name=Crystal Rod
-image=https://magiccards.info/scans/en/8e/295.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbe82b91-69e2-4528-b80a-a61183c352ad.jpg?1562932774
 value=1.189
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Ceta Sanctuary
-image=https://magiccards.info/scans/en/ap/20.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32cec6f3-295a-45e3-8466-e35fb043a596.jpg?1562906910
 value=3.500
 rarity=U
 type=Enchantment

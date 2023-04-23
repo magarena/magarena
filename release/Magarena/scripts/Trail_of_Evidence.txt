@@ -1,5 +1,5 @@
 name=Trail of Evidence
-image=https://magiccards.info/scans/en/soi/93.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b150797-ee8d-42f8-adcb-2f4b1783c074.jpg?1576384288
 value=2.500
 rarity=U
 type=Enchantment

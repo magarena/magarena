@@ -1,5 +1,5 @@
 name=Eaten by Spiders
-image=https://magiccards.info/scans/en/avr/177.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0efea1b1-f212-4b97-98dd-922f85ab191f.jpg?1592709344
 value=3.095
 removal=3
 rarity=U

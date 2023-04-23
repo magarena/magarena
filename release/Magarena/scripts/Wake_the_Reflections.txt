@@ -1,5 +1,5 @@
 name=Wake the Reflections
-image=https://magiccards.info/scans/en/mm3/28.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5fad4c2-7db2-4ed2-8b86-e386311512e7.jpg?1593812970
 image_updated=2017-08-08
 value=3.510
 rarity=C

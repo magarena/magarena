@@ -1,5 +1,5 @@
 name=Kranioceros
-image=https://magiccards.info/scans/en/cfx/67.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52aece74-cc1f-4f32-ad1f-00733eb79007.jpg?1562801006
 value=2.053
 rarity=C
 type=Creature

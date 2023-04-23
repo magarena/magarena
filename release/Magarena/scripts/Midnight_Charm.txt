@@ -1,5 +1,5 @@
 name=Midnight Charm
-image=https://magiccards.info/scans/en/pc/74.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33f51f18-41af-4a2c-a353-48bebd697599.jpg?1562569142
 value=3.989
 rarity=C
 type=Instant

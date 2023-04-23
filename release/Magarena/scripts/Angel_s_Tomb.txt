@@ -1,5 +1,5 @@
 name=Angel's Tomb
-image=https://magiccards.info/scans/en/ori/222.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/fffaa737-ce46-4f35-aa8c-bd9bb77ed9f6.jpg?1562051908
 image_updated=2015-11-05
 value=2.500
 rarity=U

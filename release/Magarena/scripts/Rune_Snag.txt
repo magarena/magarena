@@ -1,5 +1,5 @@
 name=Rune Snag
-image=https://magiccards.info/scans/en/cs/46.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40d72a34-0f31-4fec-b5a5-4574199bc312.jpg?1547516481
 value=4.577
 rarity=C
 type=Instant

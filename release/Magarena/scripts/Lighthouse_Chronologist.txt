@@ -1,5 +1,5 @@
 name=Lighthouse Chronologist
-image=https://magiccards.info/scans/en/roe/75.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/3087f7e7-9163-45b5-907d-7667c1075a74.jpg?1562702553
 value=4.274
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Nefarox, Overlord of Grixis
-image=https://magiccards.info/scans/en/m13/103.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abc382f3-fdb9-4987-acf4-bf1ac4fd2ef7.jpg?1562558503
 value=3.736
 rarity=R
 type=Legendary,Creature

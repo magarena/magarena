@@ -1,5 +1,5 @@
 name=Felhide Spiritbinder
-image=https://magiccards.info/scans/en/bng/96.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbbbe4ce-d6a6-428d-aeee-1c316f358777.jpg?1593092229
 value=3.833
 rarity=R
 type=Creature

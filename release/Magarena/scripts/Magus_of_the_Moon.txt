@@ -1,5 +1,5 @@
 name=Magus of the Moon
-image=https://magiccards.info/scans/en/ima/138.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c9bd75c-9606-4607-bfa6-d6acdee12820.jpg?1619397276
 image_updated=2017-04-12
 value=4.500
 rarity=R

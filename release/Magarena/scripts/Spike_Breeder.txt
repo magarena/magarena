@@ -1,5 +1,5 @@
 name=Spike Breeder
-image=https://magiccards.info/scans/en/sh/66.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89e7d5ba-872d-4ca1-9dfb-4ce67c432a8b.jpg?1581799342
 value=3.719
 rarity=R
 type=Creature

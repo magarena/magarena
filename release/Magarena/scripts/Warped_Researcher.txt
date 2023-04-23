@@ -1,5 +1,5 @@
 name=Warped Researcher
-image=https://magiccards.info/scans/en/le/56.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5df94a4e-1371-4b75-a557-eeb83c23cf9d.jpg?1562914038
 value=2.500
 rarity=U
 type=Creature

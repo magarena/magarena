@@ -1,5 +1,5 @@
 name=Smolder Initiate
-image=https://magiccards.info/scans/en/shm/78.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16ecbed3-3a41-4823-8cd2-498daaaa0d4f.jpg?1562827214
 value=3.024
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Steamclaw
-image=https://magiccards.info/scans/en/od/310.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f84a9bf-ce64-4301-8f2c-20f1b4acd3ef.jpg?1562909600
 value=1.864
 rarity=U
 type=Artifact

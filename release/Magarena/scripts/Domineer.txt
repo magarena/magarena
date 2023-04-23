@@ -1,5 +1,5 @@
 name=Domineer
-image=https://magiccards.info/scans/en/mi/33.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0010b89-afc4-4dee-bda3-2f34e552cba5.jpg?1562156760
 value=3.256
 rarity=U
 type=Enchantment

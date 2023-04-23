@@ -1,5 +1,5 @@
 name=Spawn of Thraxes
-image=https://magiccards.info/scans/en/jou/112.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e13aa40e-c626-486d-8abc-10aa68542c5b.jpg?1593096108
 value=3.364
 rarity=R
 type=Creature

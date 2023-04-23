@@ -1,5 +1,5 @@
 name=Lumengrid Warden
-image=https://magiccards.info/scans/en/10e/89.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a03ba5a-ac27-4fce-9eaf-b029ab26f9e1.jpg?1562543481
 value=2.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Graven Abomination
-image=https://magiccards.info/scans/en/hou/162.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89880f30-aa38-4231-8d16-25c644bde6bf.jpg?1562806209
 value=2.500
 rarity=C
 type=Artifact,Creature

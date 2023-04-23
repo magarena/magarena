@@ -1,5 +1,5 @@
 name=Thalakos Mistfolk
-image=https://magiccards.info/scans/en/tp/93.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e7b5b00-9d14-4090-b8c3-28b70375571e.jpg?1562055465
 value=3.103
 rarity=C
 type=Creature

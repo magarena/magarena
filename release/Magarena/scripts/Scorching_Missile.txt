@@ -1,5 +1,5 @@
 name=Scorching Missile
-image=https://magiccards.info/scans/en/od/219.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/0672960b-4cb5-4ed6-ba3c-6b97290e0330.jpg?1562896294
 value=2.000
 rarity=C
 type=Sorcery

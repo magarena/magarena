@@ -1,5 +1,5 @@
 name=Strangleroot Geist
-image=https://magiccards.info/scans/en/dka/127.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf1fb137-205c-480f-b6dc-dfa137793ae3.jpg?1562940085
 value=4.012
 rarity=U
 type=Creature

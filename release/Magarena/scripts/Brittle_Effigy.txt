@@ -1,5 +1,5 @@
 name=Brittle Effigy
-image=https://magiccards.info/scans/en/m11/202.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d492418e-fce9-4333-85e7-004a06546b3c.jpg?1592764883
 value=4.034
 removal=4
 rarity=R

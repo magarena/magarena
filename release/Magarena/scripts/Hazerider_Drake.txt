@@ -1,5 +1,5 @@
 name=Hazerider Drake
-image=https://magiccards.info/scans/en/mr/328.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68d2ae5c-58b9-4690-8039-d50cca9ef6cf.jpg?1587912730
 value=2.759
 rarity=U
 type=Creature

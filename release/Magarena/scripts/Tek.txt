@@ -1,5 +1,5 @@
 name=Tek
-image=https://magiccards.info/scans/en/in/313.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1f38104-a699-4bb9-930a-699f7bbc338a.jpg?1562933962
 value=3.918
 rarity=R
 type=Artifact,Creature

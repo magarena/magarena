@@ -1,5 +1,5 @@
 name=Oracle of Nectars
-image=https://magiccards.info/scans/en/shm/233.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f6bb004-b8ef-45a0-b9bf-5a3d513689b9.jpg?1562833903
 value=4.000
 rarity=R
 type=Creature

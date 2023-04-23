@@ -1,5 +1,5 @@
 name=Sliver Overlord
-image=https://magiccards.info/scans/en/sc/139.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c16915b-c50d-4fb5-830f-9ca4597a9c0f.jpg?1562527622
 value=4.232
 rarity=R
 type=Legendary,Creature

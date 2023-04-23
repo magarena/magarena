@@ -1,5 +1,5 @@
 name=Flame Javelin
-image=https://magiccards.info/scans/en/shm/92.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47ff534c-a8eb-4303-95bb-00b3df0c5da6.jpg?1562378239
 image_updated=2016-12-02
 value=3.655
 rarity=U

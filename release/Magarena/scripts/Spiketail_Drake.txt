@@ -1,5 +1,5 @@
 name=Spiketail Drake
-image=https://magiccards.info/scans/en/pr/48.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4db398ca-6b0b-4225-baaa-c4b1c243b2bd.jpg?1562909252
 value=3.293
 rarity=U
 type=Creature

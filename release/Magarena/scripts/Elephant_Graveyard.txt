@@ -1,5 +1,5 @@
 name=Elephant Graveyard
-image=https://magiccards.info/scans/en/an/88.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88e7d9d5-3bca-4791-b850-5ae104706042.jpg?1562927304
 value=4.194
 rarity=R
 type=Land

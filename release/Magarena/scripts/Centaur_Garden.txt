@@ -1,5 +1,5 @@
 name=Centaur Garden
-image=https://magiccards.info/scans/en/od/316.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca041d5e-c65f-4e7e-ae4f-9c748a069aa3.jpg?1562932777
 value=2.481
 rarity=U
 type=Land

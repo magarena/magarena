@@ -1,5 +1,5 @@
 name=Lotus-Eye Mystics
-image=https://magiccards.info/scans/en/frf/17.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3170852-60a9-46bc-8183-b1a65fc3b82b.jpg?1547515647
 value=2.500
 rarity=U
 type=Creature

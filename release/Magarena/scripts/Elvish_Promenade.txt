@@ -1,5 +1,5 @@
 name=Elvish Promenade
-image=https://magiccards.info/scans/en/lw/208.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20602cb8-f925-4de0-ad4b-86d0f5514384.jpg?1631234839
 image_updated=2016-12-02
 value=4.081
 rarity=U

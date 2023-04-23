@@ -1,5 +1,5 @@
 name=Sai, Master Thopterist
-image=https://magiccards.info/scans/en/m19/69.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2beffa94-862d-4cf1-9272-7fe0425a60e7.jpg?1651655753
 value=2.500
 rarity=R
 type=Legendary,Creature

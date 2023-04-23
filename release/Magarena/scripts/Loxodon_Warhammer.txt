@@ -1,5 +1,5 @@
 name=Loxodon Warhammer
-image=https://magiccards.info/scans/en/c16/261.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13eeff85-9e4a-46c9-841f-f3b1c556ef18.jpg?1625978819
 image_updated=2017-08-17
 value=4.203
 rarity=U

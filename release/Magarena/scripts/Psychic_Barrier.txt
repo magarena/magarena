@@ -1,5 +1,5 @@
 name=Psychic Barrier
-image=https://magiccards.info/scans/en/nph/43.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cba7d67-5c6c-4738-8907-7cce503e3180.jpg?1562875859
 value=3.476
 rarity=C
 type=Instant

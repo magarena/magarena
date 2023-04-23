@@ -1,5 +1,5 @@
 name=Crimson Acolyte
-image=https://magiccards.info/scans/en/in/11.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1718028-3009-4bdd-9f6f-59c17edd1344.jpg?1562933869
 value=3.696
 rarity=C
 type=Creature

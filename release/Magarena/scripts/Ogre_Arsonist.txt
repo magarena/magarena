@@ -1,5 +1,5 @@
 name=Ogre Arsonist
-image=https://magiccards.info/scans/en/po2/110.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b67e28b2-9d25-4873-8db2-1f0853ab0c47.jpg?1562937984
 value=3.988
 removal=1
 rarity=U

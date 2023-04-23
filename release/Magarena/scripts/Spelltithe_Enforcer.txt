@@ -1,5 +1,5 @@
 name=Spelltithe Enforcer
-image=https://magiccards.info/scans/en/gp/18.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dd5682a-ca93-4b5f-af21-e1ff4439361b.jpg?1593271939
 value=3.300
 rarity=R
 type=Creature

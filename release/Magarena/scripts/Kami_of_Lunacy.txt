@@ -1,5 +1,5 @@
 name=Kami of Lunacy
-image=https://magiccards.info/scans/en/chk/119.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4baef070-d265-4c6d-9b4b-3cafbd3b34c3.jpg?1562759872
 value=1.609
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wu Admiral
-image=https://magiccards.info/scans/en/p3k/57.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/499ae191-80ac-42bf-b49d-db343803bd56.jpg?1562256082
 value=1.771
 rarity=U
 type=Creature

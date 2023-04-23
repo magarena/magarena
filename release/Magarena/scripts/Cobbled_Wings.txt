@@ -1,5 +1,5 @@
 name=Cobbled Wings
-image=https://magiccards.info/scans/en/xln/233.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b2ff4f0-0dd1-4551-826b-68e8ff1e5860.jpg?1562553698
 image_updated=2017-10-30
 value=3.023
 rarity=C

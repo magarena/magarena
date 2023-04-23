@@ -1,5 +1,5 @@
 name=Ink Dissolver
-image=https://magiccards.info/scans/en/mt/36.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e1bf0ad-f718-4118-9e9b-19041cfbb5cf.jpg?1562879148
 value=2.934
 rarity=C
 type=Creature

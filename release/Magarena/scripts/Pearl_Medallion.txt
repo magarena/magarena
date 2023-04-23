@@ -1,5 +1,5 @@
 name=Pearl Medallion
-image=https://magiccards.info/scans/en/c14/260.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/989e1802-1581-402b-a2c6-3ac14121b09a.jpg?1561951526
 value=2.500
 rarity=R
 type=Artifact

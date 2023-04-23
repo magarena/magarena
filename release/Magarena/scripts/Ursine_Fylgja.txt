@@ -1,5 +1,5 @@
 name=Ursine Fylgja
-image=https://magiccards.info/scans/en/cs/22.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ad7c141-2e20-4891-93a8-1cf309d3b979.jpg?1593274849
 value=3.110
 rarity=U
 type=Creature

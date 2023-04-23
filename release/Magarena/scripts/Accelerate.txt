@@ -1,5 +1,5 @@
 name=Accelerate
-image=https://magiccards.info/scans/en/tr/90.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a28dd88-db90-4f02-8aa9-39051d2c4763.jpg?1562630166
 value=1.768
 rarity=C
 type=Instant

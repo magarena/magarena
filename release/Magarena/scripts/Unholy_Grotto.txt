@@ -1,5 +1,5 @@
 name=Unholy Grotto
-image=https://magiccards.info/scans/en/on/327.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52f464a9-586c-4cf3-894b-b407c9f4dcb8.jpg?1562914485
 value=4.222
 rarity=R
 type=Land

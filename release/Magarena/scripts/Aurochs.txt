@@ -1,5 +1,5 @@
 name=Aurochs
-image=https://magiccards.info/scans/en/cstd/37.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfd8874e-55a8-4da1-9fbf-6aaa96800a83.jpg?1562870940
 value=3.292
 rarity=C
 type=Creature

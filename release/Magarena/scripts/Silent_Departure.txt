@@ -1,5 +1,5 @@
 name=Silent Departure
-image=https://magiccards.info/scans/en/ema/72.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9882d7be-1d58-432b-ad36-4cd13609ad90.jpg?1580014122
 value=3.412
 rarity=C
 type=Sorcery

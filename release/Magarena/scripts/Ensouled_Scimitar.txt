@@ -1,5 +1,5 @@
 name=Ensouled Scimitar
-image=https://magiccards.info/scans/en/5dn/119.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d2a16e2-ea98-4bf2-9e5c-7612d2dd039b.jpg?1562878758
 value=3.750
 rarity=U
 type=Artifact

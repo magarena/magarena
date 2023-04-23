@@ -1,5 +1,5 @@
 name=Troublesome Spirit
-image=https://magiccards.info/scans/en/pr/52.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23d7e856-6852-4b97-ae0e-a4becdfc8166.jpg?1562901633
 value=2.016
 rarity=R
 type=Creature

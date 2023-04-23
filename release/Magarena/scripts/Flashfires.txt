@@ -1,5 +1,5 @@
 name=Flashfires
-image=https://magiccards.info/scans/en/9e/183.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/277e0846-237e-4117-bdd4-d2e4ae450d43.jpg?1562732763
 value=3.825
 rarity=U
 type=Sorcery

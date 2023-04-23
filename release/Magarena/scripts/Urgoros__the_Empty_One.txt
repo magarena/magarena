@@ -1,5 +1,5 @@
 name=Urgoros, the Empty One
-image=https://magiccards.info/scans/en/dom/109.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8652fb7-1bce-44ee-b75e-4c773ff8fdb3.jpg?1562744748
 value=2.500
 rarity=U
 type=Legendary,Creature

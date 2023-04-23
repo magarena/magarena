@@ -1,5 +1,5 @@
 name=Sergeant-at-Arms
-image=https://magiccards.info/scans/en/dom/32.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f70b1ee-47b6-4904-850d-8ea8064bd27d.jpg?1562739444
 value=2.500
 rarity=C
 type=Creature

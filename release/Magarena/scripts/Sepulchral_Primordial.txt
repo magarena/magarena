@@ -1,5 +1,5 @@
 name=Sepulchral Primordial
-image=https://magiccards.info/scans/en/gtc/75.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ed2b1d9-3c23-4f2e-b816-6f2bea74b797.jpg?1604193525
 value=3.493
 rarity=R
 type=Creature

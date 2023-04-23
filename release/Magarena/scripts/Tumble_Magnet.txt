@@ -1,5 +1,5 @@
 name=Tumble Magnet
-image=https://magiccards.info/scans/en/mm2/233.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74baa632-d046-401a-9172-1ab6284240bc.jpg?1599710220
 image_updated=2015-11-05
 value=3.684
 rarity=U

@@ -1,5 +1,5 @@
 name=Hunting Cheetah
-image=https://magiccards.info/scans/en/p3k/138.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99030058-283a-4888-8bfe-1bfab946fc98.jpg?1562927351
 value=4.061
 rarity=U
 type=Creature

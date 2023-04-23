@@ -1,5 +1,5 @@
 name=Greater Stone Spirit
-image=https://magiccards.info/scans/en/cs/84.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d8755f9-9fc2-46e7-b837-315ad78a91aa.jpg?1581708563
 image_updated=2016-12-04
 value=2.433
 rarity=U

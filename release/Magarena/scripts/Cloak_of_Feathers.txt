@@ -1,5 +1,5 @@
 name=Cloak of Feathers
-image=https://magiccards.info/scans/en/po/45.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9746790c-a426-4135-8c9d-afb82a0c26b8.jpg?1562447342
 value=3.550
 rarity=C
 type=Sorcery

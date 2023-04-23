@@ -1,5 +1,5 @@
 name=Storm Crow
-image=https://magiccards.info/scans/en/9e/100.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/036ef8c9-72ac-46ce-af07-83b79d736538.jpg?1562730661
 value=4.294
 rarity=C
 type=Creature

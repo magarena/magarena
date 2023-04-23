@@ -1,5 +1,5 @@
 name=Spined Sliver
-image=https://magiccards.info/scans/en/tsts/101.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bb97644-be16-4d14-bebd-51894772b77b.jpg?1562429378
 value=4.306
 rarity=U
 type=Creature

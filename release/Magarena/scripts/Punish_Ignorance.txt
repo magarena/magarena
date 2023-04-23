@@ -1,5 +1,5 @@
 name=Punish Ignorance
-image=https://magiccards.info/scans/en/ala/183.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bc37d01-ffe5-4dfe-b59e-204df82d1d36.jpg?1562707043
 value=3.201
 rarity=R
 type=Instant

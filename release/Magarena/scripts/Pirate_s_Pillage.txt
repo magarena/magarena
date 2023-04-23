@@ -1,5 +1,5 @@
 name=Pirate's Pillage
-image=https://magiccards.info/scans/en/rix/109.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/1097e866-9d24-43b6-bafb-b6da05b47a30.jpg?1673147874
 value=2.500
 rarity=U
 type=Sorcery

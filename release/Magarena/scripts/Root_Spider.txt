@@ -1,5 +1,5 @@
 name=Root Spider
-image=https://magiccards.info/scans/en/hl/67.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/407d67b0-d496-401b-8844-8e3ea2fd2046.jpg?1562587262
 value=2.284
 rarity=U
 type=Creature

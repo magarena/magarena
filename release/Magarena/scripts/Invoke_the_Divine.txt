@@ -1,5 +1,5 @@
 name=Invoke the Divine
-image=https://magiccards.info/scans/en/m19/16.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7213d9e1-e9c6-45d8-bb7f-336c41e7b6f7.jpg?1631045864
 image_updated=2018-08-07
 value=2.500
 rarity=C

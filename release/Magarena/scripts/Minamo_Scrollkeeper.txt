@@ -1,5 +1,5 @@
 name=Minamo Scrollkeeper
-image=https://magiccards.info/scans/en/cns/101.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/821c99d3-389a-4138-99a2-0c4a4b243fe7.jpg?1562865911
 value=2.833
 rarity=C
 type=Creature

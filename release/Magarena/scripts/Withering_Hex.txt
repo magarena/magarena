@@ -1,5 +1,5 @@
 name=Withering Hex
-image=https://magiccards.info/scans/en/on/181.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9ce4be1e-97dd-45ec-89e5-2fb56145c098.jpg?1562932026
 value=1.591
 rarity=U
 type=Enchantment

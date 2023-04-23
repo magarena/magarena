@@ -1,5 +1,5 @@
 name=Trip Noose
-image=https://magiccards.info/scans/en/shm/266.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac039d9a-d248-497f-ac84-16ccc568f283.jpg?1562270251
 image_updated=2017-01-11
 value=3.732
 removal=2

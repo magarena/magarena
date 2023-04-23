@@ -1,5 +1,5 @@
 name=Bishop's Soldier
-image=https://magiccards.info/scans/en/xln/6.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d954677c-2de6-440a-90d0-bab2e0c8b4af.jpg?1562564922
 value=2.500
 rarity=C
 type=Creature

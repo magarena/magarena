@@ -1,5 +1,5 @@
 name=Sea's Claim
-image=https://magiccards.info/scans/en/9e/97.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82e836c8-4371-402f-8f90-81325a9879b8.jpg?1562737796
 value=3.162
 rarity=C
 type=Enchantment

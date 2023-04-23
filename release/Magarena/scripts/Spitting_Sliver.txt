@@ -1,5 +1,5 @@
 name=Spitting Sliver
-image=https://magiccards.info/scans/en/pc/80.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd07649e-c7fc-44f7-ab23-0fb935aff8c7.jpg?1562582105
 value=2.500
 rarity=C
 type=Creature

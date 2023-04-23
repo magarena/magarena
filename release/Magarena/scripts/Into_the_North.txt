@@ -1,5 +1,5 @@
 name=Into the North
-image=https://magiccards.info/scans/en/cs/111.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79cea55d-8ef3-44a5-894e-967f1e97fc02.jpg?1593275405
 value=3.463
 rarity=C
 type=Sorcery

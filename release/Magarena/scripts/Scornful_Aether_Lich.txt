@@ -1,5 +1,5 @@
 name=Scornful Aether-Lich
-image=https://magiccards.info/scans/en/cfx/34.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75cdb2ff-6e30-4766-9166-9036a0bdb809.jpg?1562801790
 image_updated=2016-09-27
 value=2.921
 rarity=U

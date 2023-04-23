@@ -1,5 +1,5 @@
 name=Fountain of Youth
-image=https://magiccards.info/scans/en/10e/323.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/8515a993-0f9d-4ac8-8452-889f23d9d9a9.jpg?1562550895
 value=2.303
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Volition Reins
-image=https://magiccards.info/scans/en/som/53.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa8fa025-56e6-4d24-a615-a51b6be937e9.jpg?1562821553
 value=3.725
 rarity=U
 type=Enchantment

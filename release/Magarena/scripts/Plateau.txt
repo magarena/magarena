@@ -1,5 +1,5 @@
 name=Plateau
-image=https://magiccards.info/scans/en/rv/296.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb979a96-a57d-4fb5-8ebe-0bd398272abe.jpg?1562932720
 value=4.500
 rarity=R
 type=Land

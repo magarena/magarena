@@ -1,5 +1,5 @@
 name=Catapult Squad
-image=https://magiccards.info/scans/en/on/11.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75a71d29-29eb-43c4-b0f3-457435e8f629.jpg?1562922810
 value=3.464
 rarity=U
 type=Creature

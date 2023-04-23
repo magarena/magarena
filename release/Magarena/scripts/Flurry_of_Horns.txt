@@ -1,5 +1,5 @@
 name=Flurry of Horns
-image=https://magiccards.info/scans/en/jou/96.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be522ae8-9cf4-4c63-9a1c-0010d482c00a.jpg?1601077696
 value=3.720
 rarity=C
 type=Sorcery

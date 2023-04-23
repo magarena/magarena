@@ -1,5 +1,5 @@
 name=Kinsbaile Skirmisher
-image=https://magiccards.info/scans/en/m15/16.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/257c396c-d8cc-487c-a6cb-2892c7e568a1.jpg?1562839820
 image_updated=2016-12-21
 value=3.083
 rarity=C

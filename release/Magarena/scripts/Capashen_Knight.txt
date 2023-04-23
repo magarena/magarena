@@ -1,5 +1,5 @@
 name=Capashen Knight
-image=https://magiccards.info/scans/en/ud/3.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78802af4-46b5-4bac-8cdf-5b77d0b19895.jpg?1562831232
 value=3.181
 rarity=C
 type=Creature

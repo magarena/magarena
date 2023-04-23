@@ -1,5 +1,5 @@
 name=Rush of Blood
-image=https://magiccards.info/scans/en/avr/154.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2884824-d138-47f2-913b-32cd475e9584.jpg?1592709193
 value=2.946
 rarity=U
 type=Instant

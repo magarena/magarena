@@ -1,5 +1,5 @@
 name=Migratory Route
-image=https://magiccards.info/scans/en/c16/38.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8c8f35e-faa8-4537-b320-c84ebe8e71e4.jpg?1682209835
 image_updated=2016-12-23
 value=2.500
 rarity=U

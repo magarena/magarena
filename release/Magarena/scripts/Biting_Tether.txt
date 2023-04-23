@@ -1,5 +1,5 @@
 name=Biting Tether
-image=https://magiccards.info/scans/en/shm/29.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52ed9c9f-37d1-4f33-b62f-11ed2c208763.jpg?1562830206
 value=2.520
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Ghor-Clan Rampager
-image=https://magiccards.info/scans/en/mm3/165.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4aae3f29-dde8-4880-b675-75468d53b3f4.jpg?1599707962
 image_updated=2017-08-08
 value=4.025
 rarity=U

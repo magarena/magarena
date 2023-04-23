@@ -1,5 +1,5 @@
 name=Grasslands
-image=https://magiccards.info/scans/en/c17/252.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60bef70c-ded1-4645-8c6d-3f9ad032957f.jpg?1673306061
 image_updated=2017-10-03
 value=2.500
 rarity=U

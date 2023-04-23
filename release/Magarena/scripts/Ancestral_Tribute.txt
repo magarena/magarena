@@ -1,5 +1,5 @@
 name=Ancestral Tribute
-image=https://magiccards.info/scans/en/od/2.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f28b2af-7891-49eb-a07f-5552b5fe3d15.jpg?1562906600
 value=1.802
 rarity=R
 type=Sorcery

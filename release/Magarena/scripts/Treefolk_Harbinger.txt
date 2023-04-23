@@ -1,5 +1,5 @@
 name=Treefolk Harbinger
-image=https://magiccards.info/scans/en/lw/239.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ef45cdc-2e1c-40c7-8978-b09a50f511fb.jpg?1562360475
 value=4.115
 rarity=U
 type=Creature

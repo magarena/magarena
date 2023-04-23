@@ -1,5 +1,5 @@
 name=Tel-Jilad Outrider
-image=https://magiccards.info/scans/en/ds/87.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d811d8f-437b-4c9f-8ea2-c85590a07935.jpg?1562635708
 value=1.700
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ethersworn Adjudicator
-image=https://magiccards.info/scans/en/c16/90.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/774ece27-ca6b-4e04-88ae-cfc774401bdc.jpg?1682208760
 image_updated=2017-08-17
 value=3.792
 rarity=M

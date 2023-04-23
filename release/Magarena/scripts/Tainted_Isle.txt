@@ -1,5 +1,5 @@
 name=Tainted Isle
-image=https://magiccards.info/scans/en/pc2/128.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e376192-6dd2-4af0-b129-3751c8e3a8bf.jpg?1674143124
 value=4.150
 rarity=U
 type=Land

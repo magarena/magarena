@@ -1,5 +1,5 @@
 name=Tinker
-image=https://magiccards.info/scans/en/ul/45.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7da23b15-dfb8-4267-9b33-d7a4c035c434.jpg?1562863289
 value=4.603
 rarity=U
 type=Sorcery

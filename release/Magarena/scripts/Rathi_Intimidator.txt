@@ -1,5 +1,5 @@
 name=Rathi Intimidator
-image=https://magiccards.info/scans/en/ne/69.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fc59fa5-144f-49e6-b6bd-2ba6d3f2eff2.jpg?1562630441
 value=3.364
 rarity=C
 type=Creature

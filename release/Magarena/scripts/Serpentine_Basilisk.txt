@@ -1,5 +1,5 @@
 name=Serpentine Basilisk
-image=https://magiccards.info/scans/en/on/280.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/4052a5af-20b2-4817-8c94-78d488ee220f.jpg?1562910114
 value=3.381
 rarity=U
 type=Creature

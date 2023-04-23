@@ -1,5 +1,5 @@
 name=Dispense Justice
-image=https://magiccards.info/scans/en/som/5.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b3330a1-98b6-4b09-9bca-6c7c89447ba2.jpg?1562819335
 value=3.624
 removal=4
 rarity=U

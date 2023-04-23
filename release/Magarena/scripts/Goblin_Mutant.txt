@@ -1,5 +1,5 @@
 name=Goblin Mutant
-image=https://magiccards.info/scans/en/ia/188.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/4540dbe7-5a4b-4603-93c7-5bb294d67686.jpg?1559592491
 value=2.900
 rarity=U
 type=Creature

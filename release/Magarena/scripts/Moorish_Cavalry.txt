@@ -1,5 +1,5 @@
 name=Moorish Cavalry
-image=https://magiccards.info/scans/en/tsts/11.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6ae847c-9b88-4e34-930f-2f4fd28423f7.jpg?1562783688
 value=3.244
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Scoria Elemental
-image=https://magiccards.info/scans/en/som/102.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca4d9198-52a7-4dfe-8f7f-4fa6e19a2479.jpg?1562823015
 value=1.496
 rarity=C
 type=Creature

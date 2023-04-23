@@ -1,5 +1,5 @@
 name=Vow of Duty
-image=https://magiccards.info/scans/en/cns/87.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44829e30-b51c-4cd3-8598-3e2c1e06f334.jpg?1625975835
 image_updated=2016-02-29
 value=3.500
 rarity=U

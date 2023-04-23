@@ -1,5 +1,5 @@
 name=Opal Lake Gatekeepers
-image=https://magiccards.info/scans/en/dgm/16.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f43ac38f-5cd0-46cf-8623-d82cb8fb719b.jpg?1562940896
 value=2.667
 rarity=C
 type=Creature

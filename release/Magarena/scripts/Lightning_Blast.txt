@@ -1,5 +1,5 @@
 name=Lightning Blast
-image=https://magiccards.info/scans/en/8e/200.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2ca1ead8-44d8-406f-af36-276f41a47904.jpg?1562428865
 value=3.255
 rarity=U
 type=Instant

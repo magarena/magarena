@@ -1,5 +1,5 @@
 name=Predator's Howl
-image=https://magiccards.info/scans/en/cns/37.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cae61a9d-39fc-4c25-adec-d578d57c2903.jpg?1562866876
 value=3.611
 rarity=U
 type=Instant

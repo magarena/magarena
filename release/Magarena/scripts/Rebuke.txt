@@ -1,5 +1,5 @@
 name=Rebuke
-image=https://magiccards.info/scans/en/isd/29.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9671c116-98cb-43b4-ace2-1e4f51a4a4c6.jpg?1562925315
 value=3.610
 removal=4
 rarity=C

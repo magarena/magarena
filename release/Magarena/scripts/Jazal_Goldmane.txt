@@ -1,5 +1,5 @@
 name=Jazal Goldmane
-image=https://magiccards.info/scans/en/c14/9.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9eec64e1-a9c9-4a84-bf78-1d8bc5255a04.jpg?1673305087
 value=2.500
 rarity=M
 type=Legendary,Creature

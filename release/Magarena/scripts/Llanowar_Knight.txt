@@ -1,5 +1,5 @@
 name=Llanowar Knight
-image=https://magiccards.info/scans/en/in/254.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6c75d89-e432-49aa-a407-555b223b7eff.jpg?1562941356
 value=3.750
 rarity=C
 type=Creature

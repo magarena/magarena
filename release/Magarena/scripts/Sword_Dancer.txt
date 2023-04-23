@@ -1,5 +1,5 @@
 name=Sword Dancer
-image=https://magiccards.info/scans/en/8e/53.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec270d53-042e-4b11-b0f4-6416348b8fff.jpg?1562942457
 value=2.268
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Loxodon Line Breaker
-image=https://magiccards.info/scans/en/m19/24.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/928d4250-c379-4134-a263-7811c80a8760.jpg?1562302989
 value=2.500
 rarity=C
 type=Creature

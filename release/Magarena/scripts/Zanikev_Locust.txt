@@ -1,5 +1,5 @@
 name=Zanikev Locust
-image=https://magiccards.info/scans/en/rtr/84.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adcbd7ee-8958-46fe-abb0-e899e7d2e654.jpg?1562791510
 value=1.767
 rarity=U
 type=Creature

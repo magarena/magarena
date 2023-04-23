@@ -1,5 +1,5 @@
 name=Wizard's Retort
-image=https://magiccards.info/scans/en/dom/75.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/979cd394-80ce-4559-9f3a-57cd84299182.jpg?1600699298
 value=2.500
 rarity=U
 type=Instant

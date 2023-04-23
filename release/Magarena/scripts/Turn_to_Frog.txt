@@ -1,5 +1,5 @@
 name=Turn to Frog
-image=https://magiccards.info/scans/en/ori/81.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f13c604f-b2a7-4370-b7e4-698d8e8647bb.jpg?1562049230
 image_updated=2015-11-05
 value=2.500
 rarity=U

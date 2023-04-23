@@ -1,5 +1,5 @@
 name=Anger of the Gods
-image=https://magiccards.info/scans/en/ima/116.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f92088c2-74c2-4e63-8a54-83d39f9d6ad6.jpg?1673147734
 image_updated=2017-04-12
 value=3.670
 removal=3

@@ -1,5 +1,5 @@
 name=Exava, Rakdos Blood Witch
-image=https://magiccards.info/scans/en/dgm/69.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cb72a64-89e7-4b0e-a3d3-1309829071d2.jpg?1562915205
 value=3.843
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Temur Sabertooth
-image=https://magiccards.info/scans/en/frf/141.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3a5a175-e963-42cc-a0ba-d8914bb93c00.jpg?1673484831
 value=2.500
 rarity=U
 type=Creature

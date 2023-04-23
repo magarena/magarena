@@ -1,5 +1,5 @@
 name=Battle Rampart
-image=https://magiccards.info/scans/en/roe/135.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dca8dfb9-fda0-4eb8-a337-406689ece41a.jpg?1562939356
 value=3.392
 rarity=C
 type=Creature

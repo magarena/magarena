@@ -1,5 +1,5 @@
 name=Respite
-image=https://magiccards.info/scans/en/cns/176.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9b5c747-43d6-4c5f-9ca3-feaf004a88cb.jpg?1562866894
 value=4.000
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Death Cultist
-image=https://magiccards.info/scans/en/roe/105.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd0a2fe3-45ab-4bac-aca7-a6418e28d0be.jpg?1562708093
 value=3.240
 rarity=C
 type=Creature

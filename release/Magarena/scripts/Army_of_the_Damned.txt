@@ -1,5 +1,5 @@
 name=Army of the Damned
-image=https://magiccards.info/scans/en/c16/105.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf818314-1eb4-48da-8e6f-ff7b89873b63.jpg?1673484100
 image_updated=2017-08-17
 value=3.833
 rarity=M

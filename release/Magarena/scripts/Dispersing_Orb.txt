@@ -1,5 +1,5 @@
 name=Dispersing Orb
-image=https://magiccards.info/scans/en/on/80.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69db0298-f6d5-450f-add3-a28c0a43f33f.jpg?1562919928
 value=1.458
 rarity=U
 type=Enchantment

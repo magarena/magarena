@@ -1,5 +1,5 @@
 name=Invoke Prejudice
-image=https://magiccards.info/scans/en/lg/62.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/903d9fde-d7da-4a0e-a337-b63023c6d74b.jpg?1591988938
 value=4.408
 rarity=R
 type=Enchantment

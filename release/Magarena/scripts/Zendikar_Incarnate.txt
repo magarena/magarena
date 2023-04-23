@@ -1,5 +1,5 @@
 name=Zendikar Incarnate
-image=https://magiccards.info/scans/en/ori/219.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d883c60-1512-4bcc-8a0c-3db5acce63e5.jpg?1592711186
 image_updated=2015-11-05
 value=2.500
 rarity=U

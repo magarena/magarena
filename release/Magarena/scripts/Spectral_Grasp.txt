@@ -1,5 +1,5 @@
 name=Spectral Grasp
-image=https://magiccards.info/scans/en/cn2/24.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16aebed7-3dd8-4f76-94fc-da3c0e5251ba.jpg?1576381658
 image_updated=2016-09-05
 value=2.500
 rarity=U

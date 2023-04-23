@@ -1,5 +1,5 @@
 name=Blighted Shaman
-image=https://magiccards.info/scans/en/6e/114.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d46c90a-215a-4897-94f8-52a02abf25c4.jpg?1562815307
 value=2.783
 rarity=U
 type=Creature

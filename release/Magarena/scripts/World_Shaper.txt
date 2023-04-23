@@ -1,5 +1,5 @@
 name=World Shaper
-image=https://magiccards.info/scans/en/rix/151.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db9a0b21-2e9d-4e76-ac97-d11c299d8bd6.jpg?1673484903
 value=2.500
 rarity=R
 type=Creature

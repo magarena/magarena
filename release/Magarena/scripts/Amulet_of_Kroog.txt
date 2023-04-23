@@ -1,5 +1,5 @@
 name=Amulet of Kroog
-image=https://magiccards.info/scans/en/5e/347.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55540bd5-e0aa-40aa-8b98-2dfb4762b498.jpg?1562915001
 value=1.704
 rarity=C
 type=Artifact

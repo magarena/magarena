@@ -1,5 +1,5 @@
 name=Ichor Rats
-image=https://magiccards.info/scans/en/som/67.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2013aed6-7415-4bf0-a3bb-46d6beecbaff.jpg?1562815353
 value=3.616
 rarity=U
 type=Creature

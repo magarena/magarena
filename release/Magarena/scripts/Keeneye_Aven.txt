@@ -1,5 +1,5 @@
 name=Keeneye Aven
-image=https://magiccards.info/scans/en/le/41.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d57cf7a3-76b0-4643-a80a-6b10e83642af.jpg?1562937832
 value=1.925
 rarity=C
 type=Creature

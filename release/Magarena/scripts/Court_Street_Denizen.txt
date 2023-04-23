@@ -1,5 +1,5 @@
 name=Court Street Denizen
-image=https://magiccards.info/scans/en/gtc/8.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c45b1d32-5a3a-4ec3-af11-d0ba947de175.jpg?1608908732
 image_updated=2016-11-28
 value=2.930
 rarity=C

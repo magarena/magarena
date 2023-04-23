@@ -1,5 +1,5 @@
 name=Divine Sacrament
-image=https://magiccards.info/scans/en/od/19.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f69ecef5-4f1a-4463-8908-7c0ef955b02d.jpg?1562941312
 value=4.037
 rarity=R
 type=Enchantment

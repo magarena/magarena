@@ -1,5 +1,5 @@
 name=Viridian Zealot
-image=https://magiccards.info/scans/en/ds/90.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c2052ce-0c60-4baa-8bac-4a479a7368e2.jpg?1592673287
 image_updated=2016-02-29
 value=3.940
 rarity=R

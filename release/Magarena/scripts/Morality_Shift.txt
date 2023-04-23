@@ -1,5 +1,5 @@
 name=Morality Shift
-image=https://magiccards.info/scans/en/ju/70.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5c83e4d-ccc1-4ebf-9e74-2cc1ff9a7b07.jpg?1562631600
 value=3.814
 rarity=R
 type=Sorcery

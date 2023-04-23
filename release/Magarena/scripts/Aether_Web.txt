@@ -1,5 +1,5 @@
 name=Aether Web
-image=https://magiccards.info/scans/en/ts/189.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce9a6af9-1b39-41e1-bd71-210700b7608b.jpg?1562938697
 image_updated=2016-09-27
 value=3.289
 rarity=C

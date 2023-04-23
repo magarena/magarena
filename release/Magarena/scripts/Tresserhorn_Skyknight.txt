@@ -1,5 +1,5 @@
 name=Tresserhorn Skyknight
-image=https://magiccards.info/scans/en/cs/73.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b852d9f9-069d-419a-b8d1-db30c72aaac6.jpg?1593275186
 value=2.062
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Griffin Rider
-image=https://magiccards.info/scans/en/m12/20.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f1a5517-e442-4fbc-b8c3-fea28e5e44d2.jpg?1562640095
 value=3.685
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Centaur Courser
-image=https://magiccards.info/scans/en/m19/171.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8b67ee8-3189-4426-8b1a-b540267768fd.jpg?1592517184
 image_updated=2018-08-07
 value=2.167
 rarity=C

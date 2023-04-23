@@ -1,5 +1,5 @@
 name=Evasive Action
-image=https://magiccards.info/scans/en/ap/23.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8fad630-bd1c-42df-86b5-cc00da28abfd.jpg?1562935570
 image_updated=2016-12-02
 value=3.364
 rarity=U

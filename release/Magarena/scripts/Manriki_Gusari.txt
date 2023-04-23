@@ -1,5 +1,5 @@
 name=Manriki-Gusari
-image=https://magiccards.info/scans/en/sok/156.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bc6542b-7672-4ea1-816c-33bc0c300f3c.jpg?1562495124
 value=3.833
 rarity=U
 type=Artifact

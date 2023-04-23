@@ -1,5 +1,5 @@
 name=Prowess of the Fair
-image=https://magiccards.info/scans/en/lw/136.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b870c742-e799-4276-bb3d-f2c288ce0db8.jpg?1631234711
 value=3.568
 rarity=U
 type=Tribal,Enchantment

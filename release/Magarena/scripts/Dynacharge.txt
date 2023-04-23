@@ -1,5 +1,5 @@
 name=Dynacharge
-image=https://magiccards.info/scans/en/mm3/94.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9e530cc-21b9-43c2-a6a9-f1d96e06c2cd.jpg?1593813457
 image_updated=2017-08-08
 value=2.781
 rarity=C

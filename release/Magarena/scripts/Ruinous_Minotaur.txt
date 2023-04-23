@@ -1,5 +1,5 @@
 name=Ruinous Minotaur
-image=https://magiccards.info/scans/en/zen/145.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e800a3fe-bb1a-45f1-8c81-5ec88ff8647b.jpg?1562617854
 value=3.753
 rarity=C
 type=Creature

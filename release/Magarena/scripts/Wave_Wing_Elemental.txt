@@ -1,5 +1,5 @@
 name=Wave-Wing Elemental
-image=https://magiccards.info/scans/en/bfz/88.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11b45809-87fc-409d-942a-1f31f68d27ac.jpg?1562899270
 image_updated=2015-11-08
 value=2.500
 rarity=C

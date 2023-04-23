@@ -1,5 +1,5 @@
 name=Fathom Fleet Firebrand
-image=https://magiccards.info/scans/en/xln/142.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52280963-ba5b-4735-b5cb-67866f8624c9.jpg?1562555362
 value=2.500
 rarity=C
 type=Creature

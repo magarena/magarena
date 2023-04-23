@@ -1,5 +1,5 @@
 name=Spirit of the Hunt
-image=https://magiccards.info/scans/en/emn/170.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c5f7b11-49ac-4078-aab7-efe3aff746b2.jpg?1576384878
 image_updated=2016-09-05
 value=2.500
 rarity=R

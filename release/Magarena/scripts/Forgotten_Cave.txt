@@ -1,5 +1,5 @@
 name=Forgotten Cave
-image=https://magiccards.info/scans/en/c14/296.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62b0b5f8-6b51-4fa5-85ae-290475525a9d.jpg?1625980082
 image_updated=2016-02-29
 value=2.000
 rarity=C

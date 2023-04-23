@@ -1,5 +1,5 @@
 name=Jolrael's Favor
-image=https://magiccards.info/scans/en/pr/116.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8275ecd7-f119-4cca-bef1-626a3272dd2c.jpg?1562919196
 value=2.625
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Ana Sanctuary
-image=https://magiccards.info/scans/en/ap/74.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d1599bb-4f43-4ab3-985a-8be5219f2195.jpg?1562932097
 value=3.643
 rarity=U
 type=Enchantment

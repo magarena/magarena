@@ -1,5 +1,5 @@
 name=Scryb Ranger
-image=https://magiccards.info/scans/en/ts/215.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/885c122a-d350-420f-ba7b-4523a28e48a6.jpg?1619398603
 value=4.215
 rarity=U
 type=Creature

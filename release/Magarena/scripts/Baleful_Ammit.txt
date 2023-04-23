@@ -1,5 +1,5 @@
 name=Baleful Ammit
-image=https://magiccards.info/scans/en/akh/79.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb662d58-ae50-423d-b1c5-abd45baca12b.jpg?1543675187
 value=2.500
 rarity=U
 type=Creature

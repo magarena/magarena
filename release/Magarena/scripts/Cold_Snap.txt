@@ -1,5 +1,5 @@
 name=Cold Snap
-image=https://magiccards.info/scans/en/ia/241.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81b87a58-b20c-4f38-afa3-59d398195740.jpg?1562919062
 value=2.221
 rarity=U
 type=Enchantment

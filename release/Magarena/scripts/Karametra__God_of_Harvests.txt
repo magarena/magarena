@@ -1,5 +1,5 @@
 name=Karametra, God of Harvests
-image=https://magiccards.info/scans/en/bng/148.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bd9d26e-984c-4cf8-8c46-447f9776668f.jpg?1591321337
 value=3.255
 rarity=M
 type=Legendary,Enchantment,Creature

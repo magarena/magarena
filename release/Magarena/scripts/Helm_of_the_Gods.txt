@@ -1,5 +1,5 @@
 name=Helm of the Gods
-image=https://magiccards.info/scans/en/ori/230.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1ba006c8-0ffc-4e68-9a55-c7b842d3add9.jpg?1562009618
 image_updated=2015-11-05
 value=2.500
 rarity=R

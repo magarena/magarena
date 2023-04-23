@@ -1,5 +1,5 @@
 name=Elite Javelineer
-image=https://magiccards.info/scans/en/8e/19.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba1839ea-567e-44eb-983f-c1a570ba5c82.jpg?1562932446
 value=3.000
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sunfire Balm
-image=https://magiccards.info/scans/en/on/56.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d563ebb-ecd1-406c-9d69-c101acdeced7.jpg?1562898076
 value=2.444
 rarity=U
 type=Instant

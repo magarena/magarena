@@ -1,5 +1,5 @@
 name=Patron of the Wild
-image=https://magiccards.info/scans/en/le/134.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f7a0810-3970-454f-8381-700d6c6aefdc.jpg?1562920729
 value=2.205
 rarity=C
 type=Creature

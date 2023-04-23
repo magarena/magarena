@@ -1,5 +1,5 @@
 name=Parch
-image=https://magiccards.info/scans/en/ul/86.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3ab8065-cecc-4b19-be93-7cf791a93e62.jpg?1562864229
 value=2.818
 rarity=C
 type=Instant

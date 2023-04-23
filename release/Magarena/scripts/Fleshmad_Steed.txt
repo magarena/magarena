@@ -1,5 +1,5 @@
 name=Fleshmad Steed
-image=https://magiccards.info/scans/en/ths/88.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/378c5ba0-bf4f-43d5-b371-0991db5a2e32.jpg?1562816681
 value=1.750
 rarity=C
 type=Creature

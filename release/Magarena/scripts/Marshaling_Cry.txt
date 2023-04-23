@@ -1,5 +1,5 @@
 name=Marshaling Cry
-image=https://magiccards.info/scans/en/fut/13.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/920d7f7e-8df3-4465-be07-83cb340cffc1.jpg?1562924495
 value=3.351
 rarity=C
 type=Sorcery

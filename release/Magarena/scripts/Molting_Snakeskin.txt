@@ -1,5 +1,5 @@
 name=Molting Snakeskin
-image=https://magiccards.info/scans/en/ktk/80.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b781cbcf-dbba-41c1-be02-2396b824a217.jpg?1562792454
 value=2.000
 rarity=C
 type=Enchantment

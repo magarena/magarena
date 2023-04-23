@@ -1,5 +1,5 @@
 name=Glissa's Scorn
-image=https://magiccards.info/scans/en/nph/110.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f11187c1-de35-4e85-87c3-656f978b2d7e.jpg?1562882673
 value=3.301
 removal=1
 rarity=C

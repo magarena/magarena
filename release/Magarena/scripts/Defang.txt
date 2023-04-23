@@ -1,5 +1,5 @@
 name=Defang
-image=https://magiccards.info/scans/en/avr/15.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f12fee0b-c237-4188-a718-1572f72c63ba.jpg?1592708261
 value=2.103
 rarity=C
 type=Enchantment

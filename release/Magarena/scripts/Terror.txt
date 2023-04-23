@@ -1,5 +1,5 @@
 name=Terror
-image=https://magiccards.info/scans/en/10e/182.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dd5d601-aff7-4b7a-ab6c-b89f403af076.jpg?1562905752
 image_updated=2016-10-16
 value=4.139
 removal=3

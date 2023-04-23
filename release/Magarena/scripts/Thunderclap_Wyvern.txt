@@ -1,5 +1,5 @@
 name=Thunderclap Wyvern
-image=https://magiccards.info/scans/en/ema/208.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fc3c21f-99d5-48dc-b36e-8db597da44bf.jpg?1631235589
 value=2.500
 rarity=U
 type=Creature

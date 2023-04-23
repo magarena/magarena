@@ -1,5 +1,5 @@
 name=Oversold Cemetery
-image=https://magiccards.info/scans/en/on/160.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bbfd715-0772-4516-8cd8-89495dbccf4a.jpg?1562909019
 value=4.261
 rarity=R
 type=Enchantment

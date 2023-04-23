@@ -1,5 +1,5 @@
 name=Nav Squad Commandos
-image=https://magiccards.info/scans/en/gtc/22.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d81d7f8-375f-40f5-98cd-08be08580bef.jpg?1561839018
 value=2.120
 rarity=C
 type=Creature

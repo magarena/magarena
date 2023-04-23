@@ -1,5 +1,5 @@
 name=Phyrexian Metamorph
-image=https://magiccards.info/scans/en/nph/42.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6afeb07-ed44-4e15-99b6-436f8365326f.jpg?1598304141
 value=4.525
 rarity=R
 type=Artifact,Creature

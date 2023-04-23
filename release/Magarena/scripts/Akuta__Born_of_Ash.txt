@@ -1,5 +1,5 @@
 name=Akuta, Born of Ash
-image=https://magiccards.info/scans/en/sok/61.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08730b49-e51e-4868-9cc8-4ddc4a1dce4c.jpg?1562492453
 value=3.661
 rarity=R
 type=Legendary,Creature

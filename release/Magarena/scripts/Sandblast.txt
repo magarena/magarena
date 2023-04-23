@@ -1,5 +1,5 @@
 name=Sandblast
-image=https://magiccards.info/scans/en/hou/20.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f3c501c-4e23-4e56-ad99-1803c8a877ca.jpg?1562789474
 image_updated=2017-09-29
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Arnjlot's Ascent
-image=https://magiccards.info/scans/en/ia/57.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2307fb16-8b77-45b5-8a02-51a13214791d.jpg?1616400605
 value=1.803
 rarity=C
 type=Enchantment

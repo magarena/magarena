@@ -1,5 +1,5 @@
 name=Forsaken City
-image=https://magiccards.info/scans/en/ps/139.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/676703fe-bd80-413c-8704-1da5d3248b7e.jpg?1562916623
 value=2.917
 rarity=R
 type=Land

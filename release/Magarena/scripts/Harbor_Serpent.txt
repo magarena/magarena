@@ -1,5 +1,5 @@
 name=Harbor Serpent
-image=https://magiccards.info/scans/en/m13/53.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af0f7357-08b0-403e-8913-8965662a905e.jpg?1562558706
 value=2.395
 rarity=C
 type=Creature

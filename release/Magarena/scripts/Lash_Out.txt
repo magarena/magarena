@@ -1,5 +1,5 @@
 name=Lash Out
-image=https://magiccards.info/scans/en/cmd/127.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4f04300-2a03-472f-b618-20fc9dcda988.jpg?1592713580
 value=3.012
 rarity=C
 type=Instant

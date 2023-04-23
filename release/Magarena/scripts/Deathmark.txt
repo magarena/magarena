@@ -1,5 +1,5 @@
 name=Deathmark
-image=https://magiccards.info/scans/en/mm2/77.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad3ef45f-c82c-4490-b353-b0b5b572f403.jpg?1562266163
 value=3.746
 removal=3
 rarity=U

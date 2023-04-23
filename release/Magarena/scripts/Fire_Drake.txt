@@ -1,5 +1,5 @@
 name=Fire Drake
-image=https://magiccards.info/scans/en/5e/226.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2afdb5e8-31ba-4013-93c9-36e9f755f238.jpg?1562904107
 value=2.190
 rarity=U
 type=Creature

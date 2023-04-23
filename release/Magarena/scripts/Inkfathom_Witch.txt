@@ -1,5 +1,5 @@
 name=Inkfathom Witch
-image=https://magiccards.info/scans/en/pc2/97.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe2837c6-8fb8-4ab6-97f3-3602a92374ec.jpg?1673485089
 value=2.870
 rarity=U
 type=Creature

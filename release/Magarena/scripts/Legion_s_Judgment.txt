@@ -1,5 +1,5 @@
 name=Legion's Judgment
-image=https://magiccards.info/scans/en/xln/21.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/032f6c5a-8d88-4a55-a54b-28df42d801e1.jpg?1594735024
 value=2.500
 rarity=C
 type=Sorcery

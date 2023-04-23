@@ -1,5 +1,5 @@
 name=Abzan Ascendancy
-image=https://magiccards.info/scans/en/ktk/160.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80b722d9-be9d-463c-929e-78f7156af9c6.jpg?1673148234
 value=4.167
 rarity=R
 type=Enchantment

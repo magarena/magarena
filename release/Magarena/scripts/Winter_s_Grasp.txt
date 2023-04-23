@@ -1,5 +1,5 @@
 name=Winter's Grasp
-image=https://magiccards.info/scans/en/tp/159.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7af28a5d-45dc-4e31-9009-5c0bd25a9032.jpg?1562054952
 value=3.639
 removal=3
 rarity=U

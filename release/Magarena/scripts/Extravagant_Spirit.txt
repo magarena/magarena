@@ -1,5 +1,5 @@
 name=Extravagant Spirit
-image=https://magiccards.info/scans/en/mm/79.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99243564-9dbd-420c-922d-c17854c99d2a.jpg?1562382068
 value=1.906
 rarity=R
 type=Creature

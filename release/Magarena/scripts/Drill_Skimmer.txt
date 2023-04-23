@@ -1,5 +1,5 @@
 name=Drill-Skimmer
-image=https://magiccards.info/scans/en/ds/118.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b60dc6a-3b38-4dde-9dd4-aa49a53f29ae.jpg?1562636354
 value=2.038
 rarity=C
 type=Artifact,Creature

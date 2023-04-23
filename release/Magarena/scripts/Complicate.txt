@@ -1,5 +1,5 @@
 name=Complicate
-image=https://magiccards.info/scans/en/on/76.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33f69670-e494-42b8-9148-fe105ec61aa0.jpg?1562907165
 value=4.104
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Voices from the Void
-image=https://magiccards.info/scans/en/cfx/55.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/faf285d7-c414-48ab-ad1f-1f49e586c278.jpg?1562804830
 value=1.582
 rarity=U
 type=Sorcery

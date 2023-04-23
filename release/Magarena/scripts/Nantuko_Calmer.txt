@@ -1,5 +1,5 @@
 name=Nantuko Calmer
-image=https://magiccards.info/scans/en/tr/132.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c76b1198-feff-437c-9d4c-94785144c98f.jpg?1562631971
 value=1.828
 rarity=C
 type=Creature

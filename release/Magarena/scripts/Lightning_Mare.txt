@@ -1,5 +1,5 @@
 name=Lightning Mare
-image=https://magiccards.info/scans/en/m19/151.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2ca822a3-4793-4cbc-a2f3-f43985e7ce8f.jpg?1562301199
 value=2.500
 rarity=U
 type=Creature

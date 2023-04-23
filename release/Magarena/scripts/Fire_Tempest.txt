@@ -1,5 +1,5 @@
 name=Fire Tempest
-image=https://magiccards.info/scans/en/st/97.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae311e17-ca96-4458-897f-30419a95a264.jpg?1562936136
 value=3.028
 rarity=R
 type=Sorcery

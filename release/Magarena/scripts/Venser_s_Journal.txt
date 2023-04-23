@@ -1,5 +1,5 @@
 name=Venser's Journal
-image=https://magiccards.info/scans/en/c16/279.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2877f52-b46f-4039-a72b-f1fcd024f032.jpg?1625979595
 image_updated=2017-08-17
 value=3.440
 rarity=R

@@ -1,5 +1,5 @@
 name=Leonin Iconoclast
-image=https://magiccards.info/scans/en/jou/16.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7dfaa12e-f1d9-4a39-804f-14cdaf382257.jpg?1593095271
 value=3.020
 rarity=U
 type=Creature

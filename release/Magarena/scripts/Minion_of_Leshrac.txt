@@ -1,5 +1,5 @@
 name=Minion of Leshrac
-image=https://magiccards.info/scans/en/ia/38.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4bbed56-50c9-4a57-b0f2-ddf4a94fbdb8.jpg?1562869997
 value=3.738
 rarity=R
 type=Creature

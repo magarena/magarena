@@ -1,5 +1,5 @@
 name=Rethink
-image=https://magiccards.info/scans/en/pr/42.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/915ae03f-22f3-4ecc-a875-5226d8dec384.jpg?1562921984
 value=3.734
 rarity=C
 type=Instant

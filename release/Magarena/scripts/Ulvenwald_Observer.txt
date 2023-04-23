@@ -1,5 +1,5 @@
 name=Ulvenwald Observer
-image=https://magiccards.info/scans/en/emn/176.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a9d23d5-2f94-48e6-824f-f1de8f742989.jpg?1576384935
 image_updated=2016-09-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Kiora, the Crashing Wave
-image=https://magiccards.info/scans/en/bng/149.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c5c6b15-b72d-4341-92c2-7469210452da.jpg?1562839809
 image_updated=2016-12-21
 value=2.500
 rarity=M

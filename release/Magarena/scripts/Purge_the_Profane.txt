@@ -1,5 +1,5 @@
 name=Purge the Profane
-image=https://magiccards.info/scans/en/gtc/190.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/937ee156-0105-4291-8c67-d03a59c24679.jpg?1561837290
 value=2.176
 rarity=C
 type=Sorcery

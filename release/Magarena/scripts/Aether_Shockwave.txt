@@ -1,5 +1,5 @@
 name=Aether Shockwave
-image=https://magiccards.info/scans/en/sok/1.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8214d2e9-5aa1-42a7-8f1a-f4eaa2def1b1.jpg?1593860487
 image_updated=2016-09-27
 value=2.645
 rarity=U

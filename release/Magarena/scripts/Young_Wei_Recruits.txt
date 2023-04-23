@@ -1,5 +1,5 @@
 name=Young Wei Recruits
-image=https://magiccards.info/scans/en/p3k/94.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cae2231-183a-4627-be49-f59fb1d951cf.jpg?1562928043
 value=2.326
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Loxodon Partisan
-image=https://magiccards.info/scans/en/mbs/12.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fc32454-fc44-454e-ba25-7bd0687cf99d.jpg?1562840260
 image_updated=2016-12-21
 value=2.579
 rarity=C

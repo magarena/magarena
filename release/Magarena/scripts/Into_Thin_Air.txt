@@ -1,5 +1,5 @@
 name=Into Thin Air
-image=https://magiccards.info/scans/en/5dn/33.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0f31ff9-f403-4082-88f8-65807c0af812.jpg?1562879845
 value=1.550
 rarity=C
 type=Instant

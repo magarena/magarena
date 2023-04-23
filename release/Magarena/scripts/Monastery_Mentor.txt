@@ -1,5 +1,5 @@
 name=Monastery Mentor
-image=https://magiccards.info/scans/en/frf/20.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75665c2f-a100-4e3f-be8e-b5cc3c9a090b.jpg?1682202772
 value=2.500
 rarity=M
 type=Creature

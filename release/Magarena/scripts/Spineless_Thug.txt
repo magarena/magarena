@@ -1,5 +1,5 @@
 name=Spineless Thug
-image=https://magiccards.info/scans/en/10e/180.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0221a713-2fdc-4ff0-abe3-1d340d272232.jpg?1562542969
 value=1.964
 rarity=C
 type=Creature

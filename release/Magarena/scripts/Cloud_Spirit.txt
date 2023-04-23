@@ -1,5 +1,5 @@
 name=Cloud Spirit
-image=https://magiccards.info/scans/en/sh/26.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f043c62-a15e-472d-beb7-8fea47f8e1f4.jpg?1562902273
 value=3.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Crackling Club
-image=https://magiccards.info/scans/en/tr/93.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0810f7e3-03ff-4c46-a88f-2f8144540780.jpg?1562628499
 value=2.500
 rarity=C
 type=Enchantment

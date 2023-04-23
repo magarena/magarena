@@ -1,5 +1,5 @@
 name=Mirran Crusader
-image=https://magiccards.info/scans/en/mm2/25.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7c34f5d-0430-4036-a633-1a68a0d2fc65.jpg?1562269341
 value=4.054
 rarity=R
 type=Creature

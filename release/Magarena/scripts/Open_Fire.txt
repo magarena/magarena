@@ -1,5 +1,5 @@
 name=Open Fire
-image=https://magiccards.info/scans/en/hou/105.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/448f9fb5-ffb5-4325-9f81-ce8782e5f9e9.jpg?1562797508
 value=2.500
 rarity=C
 type=Instant

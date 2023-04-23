@@ -1,5 +1,5 @@
 name=Consult the Necrosages
-image=https://magiccards.info/scans/en/rav/199.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f51484b-3bad-4332-87f8-61924e153799.jpg?1598916875
 value=4.007
 rarity=C
 type=Sorcery

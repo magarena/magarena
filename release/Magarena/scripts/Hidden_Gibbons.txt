@@ -1,5 +1,5 @@
 name=Hidden Gibbons
-image=https://magiccards.info/scans/en/ul/104.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f94da51-b4d9-4d79-9113-39f8f4a1be34.jpg?1562863740
 value=4.398
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Firecannon Blast
-image=https://magiccards.info/scans/en/xln/145.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1f083c3-d7b0-4d3d-8551-af52c7883d83.jpg?1562562389
 value=2.500
 rarity=C
 type=Sorcery

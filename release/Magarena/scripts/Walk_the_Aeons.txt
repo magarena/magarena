@@ -1,5 +1,5 @@
 name=Walk the Aeons
-image=https://magiccards.info/scans/en/ts/93.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/794d09ae-a995-482f-848e-7f99477bd6f3.jpg?1619394975
 value=4.163
 rarity=R
 type=Sorcery

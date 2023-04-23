@@ -1,5 +1,5 @@
 name=Ashiok's Adept
-image=https://magiccards.info/scans/en/bng/59.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86acd1cc-5238-4734-a324-b4cecffc0bab.jpg?1593091857
 value=3.404
 rarity=U
 type=Creature

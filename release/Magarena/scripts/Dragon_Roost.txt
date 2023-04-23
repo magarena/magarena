@@ -1,5 +1,5 @@
 name=Dragon Roost
-image=https://magiccards.info/scans/en/10e/197.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1da84a3e-a8b2-4cb4-b9c9-1b5c2dca8c67.jpg?1562544663
 value=3.927
 rarity=R
 type=Enchantment

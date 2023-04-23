@@ -1,5 +1,5 @@
 name=Galvanoth
-image=https://magiccards.info/scans/en/mbs/62.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23f2e251-1a90-433e-b63a-1a361f5dc6b3.jpg?1592713339
 value=3.156
 rarity=R
 type=Creature

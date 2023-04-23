@@ -1,5 +1,5 @@
 name=Virtue's Ruin
-image=https://magiccards.info/scans/en/po/39.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/7854928a-d467-4616-b96b-de7e5fe7303e.jpg?1562446869
 value=4.202
 rarity=U
 type=Sorcery

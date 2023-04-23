@@ -1,5 +1,5 @@
 name=Dromoka Warrior
-image=https://magiccards.info/scans/en/dtk/14.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13ae001b-556f-4576-8cf4-0b8902997bb1.jpg?1562782782
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Crow of Dark Tidings
-image=https://magiccards.info/scans/en/soi/105.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8e0654c-8c84-47a7-ba0b-de5b1268c27b.jpg?1608909628
 value=2.500
 rarity=C
 type=Creature

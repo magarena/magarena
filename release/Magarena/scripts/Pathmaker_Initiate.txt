@@ -1,5 +1,5 @@
 name=Pathmaker Initiate
-image=https://magiccards.info/scans/en/akh/146.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2cfcb26-565d-451c-9a99-00a8a84a033d.jpg?1562927896
 value=2.500
 rarity=C
 type=Creature

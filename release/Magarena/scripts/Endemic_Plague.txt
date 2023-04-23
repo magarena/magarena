@@ -1,5 +1,5 @@
 name=Endemic Plague
-image=https://magiccards.info/scans/en/on/142.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15326971-a53b-45f2-8f1d-1b82935286e1.jpg?1562900082
 value=2.816
 rarity=R
 type=Sorcery

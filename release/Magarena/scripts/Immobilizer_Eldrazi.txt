@@ -1,5 +1,5 @@
 name=Immobilizer Eldrazi
-image=https://magiccards.info/scans/en/ogw/97.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95d9c92d-8b1b-4adc-8015-d50e673b6321.jpg?1562925184
 image_updated=2016-02-29
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Sidewinder Sliver
-image=https://magiccards.info/scans/en/ts/41.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5616e0c7-1f1d-4716-95e5-773a8e3ae5e3.jpg?1619393526
 value=4.085
 rarity=C
 type=Creature

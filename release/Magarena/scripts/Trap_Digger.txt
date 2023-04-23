@@ -1,5 +1,5 @@
 name=Trap Digger
-image=https://magiccards.info/scans/en/sc/24.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05cd76bf-db08-45f8-b3ae-501bcca6df3c.jpg?1562524971
 value=1.219
 rarity=R
 type=Creature

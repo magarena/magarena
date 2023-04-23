@@ -1,5 +1,5 @@
 name=Siren Stormtamer
-image=https://magiccards.info/scans/en/xln/79.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0e5f191-0b20-4bc4-b41e-36c53a182f85.jpg?1608909458
 value=2.500
 rarity=U
 type=Creature

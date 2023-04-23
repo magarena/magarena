@@ -1,5 +1,5 @@
 name=Skyraker Giant
-image=https://magiccards.info/scans/en/ori/162.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71eed5cc-e5e8-476d-bdd7-c51233359a48.jpg?1608910391
 image_updated=2015-11-05
 value=2.500
 rarity=U

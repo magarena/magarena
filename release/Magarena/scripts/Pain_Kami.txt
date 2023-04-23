@@ -1,5 +1,5 @@
 name=Pain Kami
-image=https://magiccards.info/scans/en/chk/183.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/693317ea-0237-4b65-812f-b31a6427b2a3.jpg?1595171861
 value=3.091
 rarity=U
 type=Creature

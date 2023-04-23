@@ -1,5 +1,5 @@
 name=Unruly Mob
-image=https://magiccards.info/scans/en/soi/47.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f48622a-abf3-407f-921f-77c29d59ba8e.jpg?1634348625
 image_updated=2010-09-10
 value=3.425
 rarity=C

@@ -1,5 +1,5 @@
 name=Gloomwidow's Feast
-image=https://magiccards.info/scans/en/shm/118.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59b989b4-692c-4ccb-a290-0ff00abacba9.jpg?1562830513
 value=2.846
 rarity=C
 type=Instant

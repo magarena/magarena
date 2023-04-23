@@ -1,5 +1,5 @@
 name=Soar
-image=https://magiccards.info/scans/en/mr/93.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd3666dd-a90e-43c2-bd78-ea9c1af08a0e.jpg?1562721437
 value=2.500
 rarity=C
 type=Enchantment

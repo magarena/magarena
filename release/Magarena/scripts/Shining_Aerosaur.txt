@@ -1,5 +1,5 @@
 name=Shining Aerosaur
-image=https://magiccards.info/scans/en/xln/36.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e900d0d-6f35-4e5d-9365-6ade227d218d.jpg?1562559811
 value=2.500
 rarity=C
 type=Creature

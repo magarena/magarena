@@ -1,5 +1,5 @@
 name=Asylum Visitor
-image=https://magiccards.info/scans/en/soi/99.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7b601c3-eb95-4140-8550-4a1ec616a0fa.jpg?1568004119
 value=2.500
 rarity=R
 type=Creature

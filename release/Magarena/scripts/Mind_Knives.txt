@@ -1,5 +1,5 @@
 name=Mind Knives
-image=https://magiccards.info/scans/en/po/23.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d17e23a6-6313-416d-b826-5df5833371dc.jpg?1562447843
 value=2.744
 rarity=C
 type=Sorcery

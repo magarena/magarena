@@ -1,5 +1,5 @@
 name=Loam Dweller
-image=https://magiccards.info/scans/en/bok/134.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f635b35-48c8-43e8-9d74-c01d3c0c74e1.jpg?1562876957
 value=3.500
 rarity=U
 type=Creature

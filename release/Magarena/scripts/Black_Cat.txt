@@ -1,5 +1,5 @@
 name=Black Cat
-image=https://magiccards.info/scans/en/m15/86.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c90a12af-b453-4d83-9a14-5411b562d480.jpg?1600699446
 value=3.667
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ascendant Evincar
-image=https://magiccards.info/scans/en/10e/127.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/213ad4ba-5a36-4a90-bd0a-8f5fddca9c9b.jpg?1579814003
 image_updated=2016-12-13
 value=3.968
 rarity=R

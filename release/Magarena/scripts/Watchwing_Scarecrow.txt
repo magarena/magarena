@@ -1,5 +1,5 @@
 name=Watchwing Scarecrow
-image=https://magiccards.info/scans/en/shm/268.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c7774fd-3460-46e3-9c9c-7aa70f2ff6d8.jpg?1562830613
 value=2.536
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Oashra Cultivator
-image=https://magiccards.info/scans/en/akh/177.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d10be36-8e57-4b08-bc3b-e69769e0908a.jpg?1543675906
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kefnet's Monument
-image=https://magiccards.info/scans/en/akh/231.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5d20f0a-aa7c-4d40-acb2-2b86666afd53.jpg?1543676291
 value=2.500
 rarity=U
 type=Legendary,Artifact

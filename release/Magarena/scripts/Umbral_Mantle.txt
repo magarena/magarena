@@ -1,5 +1,5 @@
 name=Umbral Mantle
-image=https://magiccards.info/scans/en/shm/267.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10e35711-aec9-4024-a2a6-9efff8c71df2.jpg?1562826882
 value=4.024
 rarity=U
 type=Artifact

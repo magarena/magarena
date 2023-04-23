@@ -1,5 +1,5 @@
 name=Attrition
-image=https://magiccards.info/scans/en/cmd/72.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8f29b57-172e-407b-b55e-32fe96198f92.jpg?1592713196
 value=4.265
 rarity=R
 type=Enchantment

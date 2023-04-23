@@ -1,5 +1,5 @@
 name=Faerie Noble
-image=https://magiccards.info/scans/en/hl/57.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d0687f4-f2d0-4915-a797-3797377195b7.jpg?1562911181
 value=3.300
 rarity=R
 type=Creature

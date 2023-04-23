@@ -1,5 +1,5 @@
 name=Thalia's Lancers
-image=https://magiccards.info/scans/en/emn/47.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9930d08d-5965-4c16-a84d-43c8ccf2ad0b.jpg?1576384015
 image_updated=2016-09-05
 value=2.500
 rarity=R

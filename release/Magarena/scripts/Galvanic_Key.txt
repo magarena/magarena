@@ -1,5 +1,5 @@
 name=Galvanic Key
-image=https://magiccards.info/scans/en/mi/173.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/934936d1-f470-47fa-ac28-344020c9fc76.jpg?1562151443
 value=2.568
 rarity=C
 type=Artifact

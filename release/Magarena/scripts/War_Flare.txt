@@ -1,5 +1,5 @@
 name=War Flare
-image=https://magiccards.info/scans/en/frf/158.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/243f33d8-ec20-4376-99c2-a12098773dee.jpg?1562823362
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=The Wretched
-image=https://magiccards.info/scans/en/5e/59.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edf30a58-f77c-4887-a0b2-9d939243d86e.jpg?1562945114
 value=3.869
 rarity=R
 type=Creature

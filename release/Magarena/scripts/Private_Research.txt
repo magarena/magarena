@@ -1,5 +1,5 @@
 name=Private Research
-image=https://magiccards.info/scans/en/ud/41.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f7f9849-a4bd-4501-9473-79345c751701.jpg?1562444237
 value=3.957
 rarity=U
 type=Enchantment

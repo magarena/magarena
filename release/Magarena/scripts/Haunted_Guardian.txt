@@ -1,5 +1,5 @@
 name=Haunted Guardian
-image=https://magiccards.info/scans/en/avr/216.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d97f8b8-bdb0-4d4b-b077-9affe2f9cd91.jpg?1592709573
 value=3.105
 rarity=U
 type=Artifact,Creature

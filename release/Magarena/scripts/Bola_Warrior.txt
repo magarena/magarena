@@ -1,5 +1,5 @@
 name=Bola Warrior
-image=https://magiccards.info/scans/en/ne/78.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc6e1de6-e7e0-4037-896a-f80c54b8ef5c.jpg?1562632377
 value=2.100
 rarity=C
 type=Creature

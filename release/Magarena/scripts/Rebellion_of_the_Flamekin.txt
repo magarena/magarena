@@ -1,5 +1,5 @@
 name=Rebellion of the Flamekin
-image=https://magiccards.info/scans/en/lw/188.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abd2c8cb-4852-4bde-b2cf-72ceb9b0dd3e.jpg?1562362898
 value=3.206
 rarity=U
 type=Tribal,Enchantment

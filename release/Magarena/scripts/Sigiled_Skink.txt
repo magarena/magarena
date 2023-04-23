@@ -1,5 +1,5 @@
 name=Sigiled Skink
-image=https://magiccards.info/scans/en/jou/111.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37f84b4d-82db-4e3a-a099-2e438c0a6418.jpg?1593096097
 value=3.222
 rarity=C
 type=Creature

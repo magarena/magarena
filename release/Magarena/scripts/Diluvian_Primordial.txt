@@ -1,5 +1,5 @@
 name=Diluvian Primordial
-image=https://magiccards.info/scans/en/gtc/33.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb580daa-0cf3-4816-b8c5-49927682a91d.jpg?1651525805
 value=3.069
 rarity=R
 type=Creature

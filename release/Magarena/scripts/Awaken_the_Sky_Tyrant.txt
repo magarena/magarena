@@ -1,5 +1,5 @@
 name=Awaken the Sky Tyrant
-image=https://magiccards.info/scans/en/c15/24.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c3d57d1-1031-45e0-97d1-8e8e3e6ab516.jpg?1562704774
 image_updated=2016-02-29
 value=2.500
 rarity=R

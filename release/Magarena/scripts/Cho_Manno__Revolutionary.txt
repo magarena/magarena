@@ -1,5 +1,5 @@
 name=Cho-Manno, Revolutionary
-image=https://magiccards.info/scans/en/10e/12.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe04dfe7-6376-4c12-9404-0e1ae0942917.jpg?1562558376
 value=4.045
 rarity=R
 type=Legendary,Creature

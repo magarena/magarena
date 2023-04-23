@@ -1,5 +1,5 @@
 name=Fyndhorn Elves
-image=https://magiccards.info/scans/en/ia/132.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/450744cf-7eba-491b-97b0-ca80c6368bbb.jpg?1608910653
 value=4.000
 rarity=C
 type=Creature

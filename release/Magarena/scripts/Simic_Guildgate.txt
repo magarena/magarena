@@ -1,5 +1,5 @@
 name=Simic Guildgate
-image=https://magiccards.info/scans/en/mm3/248.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d93f0124-eb83-4261-8ad2-5590155274a4.jpg?1608918094
 image_updated=2017-08-08
 value=3.150
 rarity=C

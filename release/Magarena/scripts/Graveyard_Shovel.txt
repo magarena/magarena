@@ -1,5 +1,5 @@
 name=Graveyard Shovel
-image=https://magiccards.info/scans/en/isd/225.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a4b8888-a10c-48b1-ba19-c041e5667b29.jpg?1562826890
 value=1.898
 rarity=U
 type=Artifact

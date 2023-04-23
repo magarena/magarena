@@ -1,5 +1,5 @@
 name=Dromar's Charm
-image=https://magiccards.info/scans/en/ps/105.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69f752d3-3f42-4275-be09-d257c89da70d.jpg?1562917160
 value=4.208
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Quest for Renewal
-image=https://magiccards.info/scans/en/wwk/110.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41b7ad82-1115-4f80-886a-3f59f568423f.jpg?1562285887
 value=3.792
 rarity=U
 type=Enchantment

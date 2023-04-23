@@ -1,5 +1,5 @@
 name=Disciple of Malice
-image=https://magiccards.info/scans/en/on/139.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74cc7ab0-a5db-4ae9-af9a-89fd5aaaab57.jpg?1562922559
 value=3.000
 rarity=C
 type=Creature

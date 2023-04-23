@@ -1,5 +1,5 @@
 name=Thunderscape Familiar
-image=https://magiccards.info/scans/en/ps/76.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26c9c0aa-9412-4320-aaee-e05369b8bc7b.jpg?1562903166
 value=4.300
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Honored Hydra
-image=https://magiccards.info/scans/en/akh/172.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21c33902-a06a-4321-bdf4-cea5494fda63.jpg?1543675864
 value=2.500
 rarity=R
 type=Creature

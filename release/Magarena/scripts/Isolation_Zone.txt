@@ -1,5 +1,5 @@
 name=Isolation Zone
-image=https://magiccards.info/scans/en/ogw/22.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1ca698e3-1249-4a08-be04-bae3bd944e99.jpg?1562900678
 image_updated=2016-02-29
 value=2.500
 rarity=C

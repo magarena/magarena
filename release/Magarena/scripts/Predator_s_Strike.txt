@@ -1,5 +1,5 @@
 name=Predator's Strike
-image=https://magiccards.info/scans/en/mi/128.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75e5bcc2-9203-4526-a9a9-fac6fd02a854.jpg?1562147943
 value=3.964
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Mystic Compass
-image=https://magiccards.info/scans/en/6e/302.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e80bfd76-52f9-4dea-9056-8570c9b290a4.jpg?1562824094
 image_updated=2015-06-04
 value=3.393
 rarity=U

@@ -1,5 +1,5 @@
 name=Augmenting Automaton
-image=https://magiccards.info/scans/en/aer/143.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d017798-8278-4f9c-a691-912935c10c20.jpg?1576382199
 value=2.500
 rarity=C
 type=Artifact,Creature

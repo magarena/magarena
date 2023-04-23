@@ -1,5 +1,5 @@
 name=Swab Goblin
-image=https://magiccards.info/scans/en/rix/203.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0403b8e5-29c5-4a4a-b9e7-1e79a7452f14.jpg?1555041207
 value=2.500
 rarity=C
 type=Creature

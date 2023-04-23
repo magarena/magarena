@@ -1,5 +1,5 @@
 name=Ground Assault
-image=https://magiccards.info/scans/en/mm3/169.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8c61bd1-4bf5-4c38-835d-2249f8e8d5d4.jpg?1673148718
 image_updated=2017-08-08
 value=3.200
 removal=3

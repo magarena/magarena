@@ -1,5 +1,5 @@
 name=Ravages of War
-image=https://magiccards.info/scans/en/p3k/17.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdf7d5d9-d980-445e-b1e4-5af0681c6e60.jpg?1562870468
 value=4.033
 removal=2
 rarity=R

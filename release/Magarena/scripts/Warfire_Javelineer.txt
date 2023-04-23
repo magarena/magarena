@@ -1,5 +1,5 @@
 name=Warfire Javelineer
-image=https://magiccards.info/scans/en/akh/155.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2c9ea25-7a5e-4b6d-b071-e929f6b652c4.jpg?1601078783
 value=2.500
 rarity=U
 type=Creature

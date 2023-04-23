@@ -1,5 +1,5 @@
 name=Timber Protector
-image=https://magiccards.info/scans/en/lw/238.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14b93784-cbe5-437a-8235-f6864e413b41.jpg?1562338950
 value=4.112
 rarity=R
 type=Creature

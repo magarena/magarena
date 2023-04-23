@@ -1,5 +1,5 @@
 name=Lay Claim
-image=https://magiccards.info/scans/en/akh/61.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc0e741f-0448-4a95-9178-074356e50426.jpg?1543675044
 value=2.500
 rarity=U
 type=Enchantment

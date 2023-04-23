@@ -1,5 +1,5 @@
 name=Creakwood Liege
-image=https://magiccards.info/scans/en/mm2/191.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b4e9ea4-5b86-4eb1-965c-ae67be24f4ea.jpg?1673148484
 value=4.205
 rarity=R
 type=Creature

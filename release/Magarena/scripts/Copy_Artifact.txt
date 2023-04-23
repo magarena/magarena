@@ -1,5 +1,5 @@
 name=Copy Artifact
-image=https://magiccards.info/scans/en/rv/53.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd360a6c-6685-462b-8aee-b869c1e4aa89.jpg?1562943420
 value=4.540
 rarity=R
 type=Enchantment

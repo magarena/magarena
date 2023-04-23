@@ -1,5 +1,5 @@
 name=Countervailing Winds
-image=https://magiccards.info/scans/en/hou/32.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de1c0ef3-b32c-403a-93cb-29cf05795711.jpg?1562817497
 value=2.500
 rarity=C
 type=Instant

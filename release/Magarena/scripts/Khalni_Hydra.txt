@@ -1,5 +1,5 @@
 name=Khalni Hydra
-image=https://magiccards.info/scans/en/roe/192.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d27a00e-4402-4410-bab7-ccb34a0de72f.jpg?1562705505
 value=4.252
 rarity=M
 type=Creature

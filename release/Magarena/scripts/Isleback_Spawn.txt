@@ -1,5 +1,5 @@
 name=Isleback Spawn
-image=https://magiccards.info/scans/en/shm/40.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e769b1b2-c2a9-4db1-bf1f-01863aa2cd0b.jpg?1562837544
 value=3.726
 rarity=R
 type=Creature

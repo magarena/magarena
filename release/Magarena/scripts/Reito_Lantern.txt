@@ -1,5 +1,5 @@
 name=Reito Lantern
-image=https://magiccards.info/scans/en/cns/202.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc5be55e-9a90-4842-894c-2573b70ccc57.jpg?1562867373
 value=3.167
 rarity=U
 type=Artifact

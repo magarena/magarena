@@ -1,5 +1,5 @@
 name=Trusted Forcemage
-image=https://magiccards.info/scans/en/avr/199.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ee66ef9-10a7-4aab-88f7-84956811cc6c.jpg?1592709472
 value=2.986
 rarity=C
 type=Creature

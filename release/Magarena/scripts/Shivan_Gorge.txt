@@ -1,5 +1,5 @@
 name=Shivan Gorge
-image=https://magiccards.info/scans/en/us/326.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3162830-4d06-4c69-8544-876d2fa8ea10.jpg?1673306218
 value=3.606
 rarity=R
 type=Legendary,Land

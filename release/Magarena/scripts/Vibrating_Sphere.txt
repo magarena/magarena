@@ -1,5 +1,5 @@
 name=Vibrating Sphere
-image=https://magiccards.info/scans/en/ia/320.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f0da2b7-ed3b-47fd-962e-ca5dc745cfc7.jpg?1562924968
 value=1.500
 rarity=R
 type=Artifact

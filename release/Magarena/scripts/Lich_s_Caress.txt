@@ -1,5 +1,5 @@
 name=Lich's Caress
-image=https://magiccards.info/scans/en/m19/105.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32bd3acd-aa62-4708-9336-e3430fd0e541.jpg?1562301277
 value=2.500
 rarity=C
 type=Sorcery

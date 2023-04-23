@@ -1,5 +1,5 @@
 name=Clergy en-Vec
-image=https://magiccards.info/scans/en/tp/226.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcb0e068-16d0-4e1c-acad-0a6d34148c5a.jpg?1562057818
 value=3.367
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Marsh Viper
-image=https://magiccards.info/scans/en/5e/177.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba4c0606-f9af-4dee-bc36-5051395b5f44.jpg?1562593760
 value=3.902
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Livonya Silone
-image=https://magiccards.info/scans/en/lg/282.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4ef4c06-9dab-499c-a270-0ba7f0b5fd77.jpg?1562940026
 value=3.263
 rarity=R
 type=Legendary,Creature

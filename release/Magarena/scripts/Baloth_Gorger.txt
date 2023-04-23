@@ -1,5 +1,5 @@
 name=Baloth Gorger
-image=https://magiccards.info/scans/en/dom/156.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/504090bb-d183-4833-aea5-d4193b5c57a1.jpg?1562735490
 value=2.500
 rarity=C
 type=Creature

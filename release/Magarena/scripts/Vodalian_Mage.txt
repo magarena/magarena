@@ -1,5 +1,5 @@
 name=Vodalian Mage
-image=https://magiccards.info/scans/en/fe/61.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c107e82b-134a-4f2b-98c2-6537fae6a50d.jpg?1587910890
 value=3.547
 rarity=C
 type=Creature

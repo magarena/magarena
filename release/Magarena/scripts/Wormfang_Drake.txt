@@ -1,5 +1,5 @@
 name=Wormfang Drake
-image=https://magiccards.info/scans/en/ju/57.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6afd312-6448-4bd1-8539-0910cefead0d.jpg?1562631614
 value=4.070
 rarity=C
 type=Creature

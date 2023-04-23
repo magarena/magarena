@@ -1,5 +1,5 @@
 name=Spike Worker
-image=https://magiccards.info/scans/en/sh/70.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2713de6c-b754-435c-8d11-5215fd602a40.jpg?1562595936
 image_updated=2016-01-09
 value=3.283
 rarity=C

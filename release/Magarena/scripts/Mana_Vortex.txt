@@ -1,5 +1,5 @@
 name=Mana Vortex
-image=https://magiccards.info/scans/en/dk/30.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9d4d7da-f98a-4622-91b8-3460fe44551a.jpg?1562934260
 value=3.542
 rarity=R
 type=Enchantment

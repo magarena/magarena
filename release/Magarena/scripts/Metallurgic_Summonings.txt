@@ -1,5 +1,5 @@
 name=Metallurgic Summonings
-image=https://magiccards.info/scans/en/kld/56.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a769d7e-c749-4845-ba87-808f0386df80.jpg?1625976236
 image_updated=2016-10-05
 value=2.500
 rarity=M

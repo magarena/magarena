@@ -1,5 +1,5 @@
 name=Loyal Retainers
-image=https://magiccards.info/scans/en/p3k/12.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0191380-95b6-402f-9db8-df284e850c84.jpg?1562932163
 image_updated=2016-12-21
 value=4.538
 rarity=U

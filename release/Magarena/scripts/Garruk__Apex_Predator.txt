@@ -1,5 +1,5 @@
 name=Garruk, Apex Predator
-image=https://magiccards.info/scans/en/m15/210.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3957b43-4d7e-41f9-b7a1-6f57d6603ab8.jpg?1562792084
 value=4.125
 rarity=M
 type=Legendary,Planeswalker

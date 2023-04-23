@@ -1,5 +1,5 @@
 name=Huatli, Radiant Champion
-image=https://magiccards.info/scans/en/rix/159.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39bcc48a-efdb-443f-93b8-bc0b54aa0eb8.jpg?1555040837
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

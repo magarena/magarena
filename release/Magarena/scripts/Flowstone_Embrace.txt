@@ -1,5 +1,5 @@
 name=Flowstone Embrace
-image=https://magiccards.info/scans/en/fut/113.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3969cc7-92b9-45cd-9a4f-d94c2178a04d.jpg?1562943976
 value=2.535
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Dark Revenant
-image=https://magiccards.info/scans/en/rtr/61.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2167cc6d-ddb5-4f13-8905-a0c5123b852a.jpg?1562783644
 value=1.812
 rarity=U
 type=Creature

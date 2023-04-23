@@ -1,5 +1,5 @@
 name=Samurai Enforcers
-image=https://magiccards.info/scans/en/chk/42.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b2be3fe-87a2-47b2-8af1-b99a48622c7b.jpg?1562762475
 value=2.612
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Citadel of Pain
-image=https://magiccards.info/scans/en/pr/86.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66585109-77cb-42f1-9c14-3dac1d493b71.jpg?1562913917
 value=2.697
 rarity=U
 type=Enchantment

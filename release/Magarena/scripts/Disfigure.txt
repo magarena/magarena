@@ -1,5 +1,5 @@
 name=Disfigure
-image=https://magiccards.info/scans/en/a25/87.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aaa9c6f1-3938-448b-bdc3-22420c5984d3.jpg?1674420814
 image_updated=2018-04-27
 value=4.127
 removal=2

@@ -1,5 +1,5 @@
 name=Glaring Aegis
-image=https://magiccards.info/scans/en/dtk/18.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daa83dc2-4ec0-4e4f-8bfd-4f6d6df06a2d.jpg?1592516053
 value=2.500
 rarity=C
 type=Enchantment

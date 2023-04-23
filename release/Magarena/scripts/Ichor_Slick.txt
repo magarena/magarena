@@ -1,5 +1,5 @@
 name=Ichor Slick
-image=https://magiccards.info/scans/en/fut/68.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33faa287-2a12-4a94-8d42-77da2b24d86f.jpg?1619395574
 image_updated=2016-12-13
 value=3.014
 rarity=C

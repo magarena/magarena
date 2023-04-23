@@ -1,5 +1,5 @@
 name=Grave Peril
-image=https://magiccards.info/scans/en/fut/67.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c216ff3-26e1-43bc-beb5-65fc7fd1b6db.jpg?1562702548
 image_updated=2016-02-29
 value=3.024
 rarity=C

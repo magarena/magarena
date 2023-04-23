@@ -1,5 +1,5 @@
 name=Flame Wave
-image=https://magiccards.info/scans/en/9e/182.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f592d08e-db49-4cd5-bc45-aea56da3f828.jpg?1562432221
 value=4.070
 rarity=U
 type=Sorcery

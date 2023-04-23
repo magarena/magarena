@@ -1,5 +1,5 @@
 name=Wizened Cenn
-image=https://magiccards.info/scans/en/lw/49.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/585f1c8e-6898-4def-8e3f-d45cd263f776.jpg?1562349469
 value=3.793
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Exile
-image=https://magiccards.info/scans/en/6e/21.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cba8fb8d-fdde-4e4b-9dc7-feaecf8ed222.jpg?1562935922
 value=3.500
 rarity=R
 type=Instant

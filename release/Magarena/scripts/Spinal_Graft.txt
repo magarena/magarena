@@ -1,5 +1,5 @@
 name=Spinal Graft
-image=https://magiccards.info/scans/en/tp/53.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ace63a68-82cc-47fb-b403-7deaeabd6b3e.jpg?1562430822
 value=2.500
 rarity=C
 type=Enchantment

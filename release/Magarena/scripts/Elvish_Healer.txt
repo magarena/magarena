@@ -1,5 +1,5 @@
 name=Elvish Healer
-image=https://magiccards.info/scans/en/ia/246.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00bd8485-d63a-4077-a3d1-4d0f2f4d8035.jpg?1562895157
 value=2.347
 rarity=C
 type=Creature

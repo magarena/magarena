@@ -1,5 +1,5 @@
 name=Royal Herbalist
-image=https://magiccards.info/scans/en/ai/147.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/027e03e1-1a39-47ba-b206-44d022b4c346.jpg?1562767762
 value=2.184
 rarity=C
 type=Creature

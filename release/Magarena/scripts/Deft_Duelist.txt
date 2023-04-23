@@ -1,5 +1,5 @@
 name=Deft Duelist
-image=https://magiccards.info/scans/en/ala/165.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4885a83-9410-4c88-b45e-1e1626fe90ea.jpg?1562708728
 value=3.856
 rarity=C
 type=Creature

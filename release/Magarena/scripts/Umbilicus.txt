@@ -1,5 +1,5 @@
 name=Umbilicus
-image=https://magiccards.info/scans/en/us/312.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29a6db88-a11d-49b4-8692-28b24d23f3c7.jpg?1562903837
 value=3.667
 rarity=R
 type=Artifact

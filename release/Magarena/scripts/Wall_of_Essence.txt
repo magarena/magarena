@@ -1,5 +1,5 @@
 name=Wall of Essence
-image=https://magiccards.info/scans/en/m15/41.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94b05805-e2af-4048-b7c7-1dbd188ba0f6.jpg?1562430781
 value=3.000
 rarity=U
 type=Creature

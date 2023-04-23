@@ -1,5 +1,5 @@
 name=Waterspout Weavers
-image=https://magiccards.info/scans/en/mt/56.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7db5c04f-fd5e-4e4c-9146-f9e6ef20a159.jpg?1562879495
 value=2.093
 rarity=U
 type=Creature

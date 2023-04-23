@@ -1,5 +1,5 @@
 name=Domestication
-image=https://magiccards.info/scans/en/roe/61.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b5e940b-e247-4ee3-939b-679e4f8ea771.jpg?1673147275
 value=2.356
 rarity=U
 type=Enchantment

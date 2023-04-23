@@ -1,5 +1,5 @@
 name=Geyser Glider
-image=https://magiccards.info/scans/en/zen/124.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9b8128f-52b7-4287-be0e-21fa0f9cc607.jpg?1581708536
 image_updated=2016-12-03
 value=1.923
 rarity=U

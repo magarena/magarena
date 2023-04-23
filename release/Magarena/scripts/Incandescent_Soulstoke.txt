@@ -1,5 +1,5 @@
 name=Incandescent Soulstoke
-image=https://magiccards.info/scans/en/mm2/119.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/024e80e3-a36f-4c07-99d3-5dd8a2d8998f.jpg?1562258482
 image_updated=2015-11-05
 value=4.233
 rarity=U

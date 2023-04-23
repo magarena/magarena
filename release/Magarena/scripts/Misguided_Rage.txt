@@ -1,5 +1,5 @@
 name=Misguided Rage
-image=https://magiccards.info/scans/en/sc/99.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74b5e00a-fef0-4711-9112-2fd067321890.jpg?1562530657
 value=2.660
 rarity=C
 type=Sorcery

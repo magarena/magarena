@@ -1,5 +1,5 @@
 name=Skarrgan Skybreaker
-image=https://magiccards.info/scans/en/gp/130.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9767e0b-1284-4c9e-9d0c-fb0d17c35044.jpg?1592752197
 image_updated=2016-09-12
 value=3.033
 rarity=U

@@ -1,5 +1,5 @@
 name=Windscouter
-image=https://magiccards.info/scans/en/pr/53.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb70925a-4bef-4067-a1d7-79114aff5847.jpg?1562930001
 value=1.295
 rarity=U
 type=Creature

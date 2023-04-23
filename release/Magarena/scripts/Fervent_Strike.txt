@@ -1,5 +1,5 @@
 name=Fervent Strike
-image=https://magiccards.info/scans/en/dom/117.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4f76e51-a726-4a5f-ae2b-2e826e89f5f7.jpg?1591104513
 value=2.500
 rarity=C
 type=Instant

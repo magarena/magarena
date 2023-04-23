@@ -1,5 +1,5 @@
 name=Kithkin Zealot
-image=https://magiccards.info/scans/en/eve/9.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76f9a29c-9219-424f-a703-dccffbf23cdc.jpg?1562920048
 value=2.220
 rarity=C
 type=Creature

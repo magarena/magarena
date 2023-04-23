@@ -1,5 +1,5 @@
 name=Vulshok Refugee
-image=https://magiccards.info/scans/en/nph/101.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b1615ec-21b3-4575-8b02-fd2bccb930ba.jpg?1562875466
 value=3.250
 rarity=U
 type=Creature

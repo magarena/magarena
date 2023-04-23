@@ -1,5 +1,5 @@
 name=Dutiful Servants
-image=https://magiccards.info/scans/en/hou/12.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7684db4c-6eff-4da1-a410-48d707fb5bf1.jpg?1562803856
 value=2.500
 rarity=C
 type=Creature

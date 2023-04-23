@@ -1,5 +1,5 @@
 name=Divebomber Griffin
-image=https://magiccards.info/scans/en/rav/14.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8aa5a010-6253-4dfb-952e-df05ff08eb9e.jpg?1598913620
 value=2.023
 rarity=U
 type=Creature

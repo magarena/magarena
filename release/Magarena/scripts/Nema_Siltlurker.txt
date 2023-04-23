@@ -1,5 +1,5 @@
 name=Nema Siltlurker
-image=https://magiccards.info/scans/en/roe/200.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a477e081-949f-4cf0-b0d2-b9bdff6c760d.jpg?1562706933
 value=1.277
 rarity=C
 type=Creature

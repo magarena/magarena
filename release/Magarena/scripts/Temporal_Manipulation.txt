@@ -1,5 +1,5 @@
 name=Temporal Manipulation
-image=https://magiccards.info/scans/en/po2/54.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6270b93e-8cd2-4668-982a-f4c4628da9d9.jpg?1590511838
 value=3.976
 rarity=R
 type=Sorcery

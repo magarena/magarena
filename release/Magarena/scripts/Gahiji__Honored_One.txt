@@ -1,5 +1,5 @@
 name=Gahiji, Honored One
-image=https://magiccards.info/scans/en/c13/191.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c658f583-c115-43c7-9986-2c6010549313.jpg?1673485071
 value=3.768
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Unstable Frontier
-image=https://magiccards.info/scans/en/cfx/145.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d97e739f-8675-488e-be2b-4e455fbe390b.jpg?1562804124
 value=2.789
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Ob Nixilis, the Fallen
-image=https://magiccards.info/scans/en/ima/101.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5769888-78e0-4d06-b6b6-b4602f7cd462.jpg?1562855145
 image_updated=2017-04-12
 value=4.052
 rarity=M

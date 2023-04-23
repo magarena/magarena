@@ -1,5 +1,5 @@
 name=Hysterical Blindness
-image=https://magiccards.info/scans/en/isd/59.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aeaa757-e3b0-4606-a689-e8a20a686c3a.jpg?1562830713
 value=2.558
 rarity=C
 type=Instant

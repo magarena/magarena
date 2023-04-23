@@ -1,5 +1,5 @@
 name=Terminal Moraine
-image=https://magiccards.info/scans/en/ps/142.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/353a8ea8-3f1f-4f77-95bc-b09b96996285.jpg?1562906215
 value=3.347
 rarity=U
 type=Land

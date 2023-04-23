@@ -1,5 +1,5 @@
 name=Lathnu Sailback
-image=https://magiccards.info/scans/en/aer/89.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33998799-f31b-4522-93b2-0c34c570ebf7.jpg?1576381845
 value=2.500
 rarity=C
 type=Creature

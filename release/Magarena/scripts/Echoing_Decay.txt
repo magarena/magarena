@@ -1,5 +1,5 @@
 name=Echoing Decay
-image=https://magiccards.info/scans/en/ds/41.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8e688e7-8350-4b78-bd49-a6ffdedad556.jpg?1562640566
 value=3.800
 removal=3
 rarity=C

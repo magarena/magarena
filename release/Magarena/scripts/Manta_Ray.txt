@@ -1,5 +1,5 @@
 name=Manta Ray
-image=https://magiccards.info/scans/en/wl/42.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80f74884-9b82-419d-9e97-c947a6b7d09f.jpg?1562801852
 value=3.023
 rarity=C
 type=Creature

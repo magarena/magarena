@@ -1,5 +1,5 @@
 name=Hydra Broodmaster
-image=https://magiccards.info/scans/en/jou/128.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b11bb5a-66e3-4dc6-9df4-e1683c57e488.jpg?1625194477
 value=3.818
 rarity=R
 type=Creature

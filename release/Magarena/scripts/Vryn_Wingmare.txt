@@ -1,5 +1,5 @@
 name=Vryn Wingmare
-image=https://magiccards.info/scans/en/ori/40.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17b59819-4746-4c67-b6e5-4157d498a065.jpg?1594735361
 image_updated=2015-11-05
 value=2.500
 rarity=R

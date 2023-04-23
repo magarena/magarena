@@ -1,5 +1,5 @@
 name=Morale
-image=https://magiccards.info/scans/en/4e/286.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b52cdfe3-fca1-420c-b5c0-2366ea58345b.jpg?1587911071
 value=1.821
 rarity=C
 type=Instant

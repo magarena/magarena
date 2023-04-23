@@ -1,5 +1,5 @@
 name=Soul Tithe
-image=https://magiccards.info/scans/en/rtr/23.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77e546ce-f498-4136-9015-bb262c301716.jpg?1562788449
 value=3.855
 rarity=U
 type=Enchantment

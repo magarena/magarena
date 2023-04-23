@@ -1,5 +1,5 @@
 name=Metathran Elite
-image=https://magiccards.info/scans/en/ud/38.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa941f17-1b81-4017-90ae-4466eba8da2f.jpg?1562444741
 value=3.556
 rarity=U
 type=Creature

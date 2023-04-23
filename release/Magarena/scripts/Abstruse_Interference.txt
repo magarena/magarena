@@ -1,5 +1,5 @@
 name=Abstruse Interference
-image=https://magiccards.info/scans/en/ogw/40.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/249a7be3-311e-4ce6-97dc-97242463ae23.jpg?1562902357
 image_updated=2016-02-29
 value=2.500
 rarity=C

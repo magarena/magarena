@@ -1,5 +1,5 @@
 name=Pitiless Plunderer
-image=https://magiccards.info/scans/en/rix/81.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c87ebffe-5907-427b-9f9b-7c36a12b4a03.jpg?1555040284
 value=2.500
 rarity=U
 type=Creature

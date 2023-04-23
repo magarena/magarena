@@ -1,5 +1,5 @@
 name=Helm of Obedience
-image=https://magiccards.info/scans/en/ai/163.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec837c3e-a66f-43c0-adb4-4eefe7888cac.jpg?1562870953
 value=4.369
 rarity=R
 type=Artifact

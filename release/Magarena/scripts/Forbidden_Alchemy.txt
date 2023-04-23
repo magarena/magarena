@@ -1,5 +1,5 @@
 name=Forbidden Alchemy
-image=https://magiccards.info/scans/en/mm3/38.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c6f39b4-f428-483f-999a-6ebee7659c5a.jpg?1673147290
 image_updated=2017-08-08
 value=4.108
 rarity=C

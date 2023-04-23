@@ -1,5 +1,5 @@
 name=Grenzo's Cutthroat
-image=https://magiccards.info/scans/en/cns/32.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bb46638-eeb2-4bb3-bef2-bedd343722ef.jpg?1562866378
 value=3.643
 rarity=C
 type=Creature

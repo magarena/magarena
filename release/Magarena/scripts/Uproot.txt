@@ -1,5 +1,5 @@
 name=Uproot
-image=https://magiccards.info/scans/en/bok/149.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88357572-0edd-4115-93c3-49f6f5a191b4.jpg?1562878252
 value=2.222
 rarity=C
 type=Sorcery

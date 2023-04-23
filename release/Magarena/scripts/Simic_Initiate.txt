@@ -1,5 +1,5 @@
 name=Simic Initiate
-image=https://magiccards.info/scans/en/mm2/162.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68896747-bab9-4c29-9fd0-764bebde96c4.jpg?1562263275
 value=3.239
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spirit Shield
-image=https://magiccards.info/scans/en/fe/175.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/213d6e0d-5ec9-441e-a38d-50ce44583e4b.jpg?1562901153
 value=1.654
 rarity=R
 type=Artifact

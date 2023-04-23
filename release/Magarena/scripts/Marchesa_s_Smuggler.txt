@@ -1,5 +1,5 @@
 name=Marchesa's Smuggler
-image=https://magiccards.info/scans/en/cns/50.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff3a2dc1-3549-4a92-a5fa-6297cb894d22.jpg?1562867374
 value=3.857
 rarity=U
 type=Creature

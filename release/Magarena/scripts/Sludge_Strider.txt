@@ -1,5 +1,5 @@
 name=Sludge Strider
-image=https://magiccards.info/scans/en/cfx/126.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d6025a1-2da0-48d0-b7c4-65c85ba51ceb.jpg?1562842630
 image_updated=2017-01-08
 value=3.011
 rarity=U

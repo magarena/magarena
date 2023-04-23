@@ -1,5 +1,5 @@
 name=Urza's Guilt
-image=https://magiccards.info/scans/en/ps/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d429233e-1cf9-4f87-b191-894a73e7a876.jpg?1562939878
 value=3.630
 rarity=R
 type=Sorcery

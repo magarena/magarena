@@ -1,5 +1,5 @@
 name=Dimir Guildmage
-image=https://magiccards.info/scans/en/mm2/192.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/6822ef8f-ff27-410d-934f-c87baef03266.jpg?1547518180
 value=3.822
 rarity=U
 type=Creature

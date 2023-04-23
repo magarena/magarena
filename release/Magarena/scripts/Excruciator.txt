@@ -1,5 +1,5 @@
 name=Excruciator
-image=https://magiccards.info/scans/en/rav/121.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3c98460-e8b8-45d6-9bf0-7600b234964b.jpg?1598915453
 value=3.181
 rarity=R
 type=Creature

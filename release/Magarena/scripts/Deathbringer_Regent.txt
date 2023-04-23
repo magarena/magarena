@@ -1,5 +1,5 @@
 name=Deathbringer Regent
-image=https://magiccards.info/scans/en/dtk/96.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8006515a-69de-4713-8318-79c0ef78a6d1.jpg?1673484139
 value=2.500
 rarity=R
 type=Creature

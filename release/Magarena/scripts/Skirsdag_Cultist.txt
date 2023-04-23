@@ -1,5 +1,5 @@
 name=Skirsdag Cultist
-image=https://magiccards.info/scans/en/mm3/112.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8634068-0ada-4913-8246-c9ac7e9dbde3.jpg?1593813583
 image_updated=2017-08-08
 value=2.650
 rarity=U

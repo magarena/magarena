@@ -1,5 +1,5 @@
 name=Leonin Battlemage
-image=https://magiccards.info/scans/en/ds/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02c14e05-8c50-44de-8cd4-5b3a11ecdb30.jpg?1562635164
 value=2.894
 rarity=U
 type=Creature

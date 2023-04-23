@@ -1,5 +1,5 @@
 name=Moriok Rigger
-image=https://magiccards.info/scans/en/5dn/54.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47ffdeb8-52d2-4059-b9c6-0ad71b96516a.jpg?1562876746
 value=3.948
 rarity=R
 type=Creature

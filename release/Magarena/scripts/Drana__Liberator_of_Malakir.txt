@@ -1,5 +1,5 @@
 name=Drana, Liberator of Malakir
-image=https://magiccards.info/scans/en/bfz/109.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbee85f6-a880-49ce-8139-5c439a202821.jpg?1673305172
 image_updated=2015-11-08
 value=2.500
 rarity=M

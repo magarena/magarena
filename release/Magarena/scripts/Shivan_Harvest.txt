@@ -1,5 +1,5 @@
 name=Shivan Harvest
-image=https://magiccards.info/scans/en/in/167.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47dbd765-d7ea-4181-bd22-5c749ad081af.jpg?1562909648
 value=3.431
 rarity=U
 type=Enchantment

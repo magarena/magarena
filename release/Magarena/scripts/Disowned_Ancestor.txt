@@ -1,5 +1,5 @@
 name=Disowned Ancestor
-image=https://magiccards.info/scans/en/ktk/70.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d8bd496-632d-4d6d-a529-f35cf3222de7.jpg?1562784359
 value=3.300
 rarity=C
 type=Creature

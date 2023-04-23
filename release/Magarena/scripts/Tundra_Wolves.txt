@@ -1,5 +1,5 @@
 name=Tundra Wolves
-image=https://magiccards.info/scans/en/10e/54.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15f573db-f4f8-4311-ba47-234e5171da3d.jpg?1562544212
 value=3.123
 rarity=C
 type=Creature

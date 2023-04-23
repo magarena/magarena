@@ -1,5 +1,5 @@
 name=Devils' Playground
-image=https://magiccards.info/scans/en/soi/151.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/1207e6eb-15a7-4ec4-91b3-880375704bb6.jpg?1576384700
 value=2.500
 rarity=R
 type=Sorcery

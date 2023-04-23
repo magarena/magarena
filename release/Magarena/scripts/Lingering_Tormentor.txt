@@ -1,5 +1,5 @@
 name=Lingering Tormentor
-image=https://magiccards.info/scans/en/eve/36.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5165880-9727-4f52-9633-fd5cecce7f01.jpg?1562946718
 value=2.181
 rarity=U
 type=Creature

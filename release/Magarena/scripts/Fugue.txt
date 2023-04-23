@@ -1,5 +1,5 @@
 name=Fugue
-image=https://magiccards.info/scans/en/7e/137.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35d0a9ab-0ce6-44f7-9e06-0f80b9b823e4.jpg?1562428887
 value=2.649
 rarity=U
 type=Sorcery

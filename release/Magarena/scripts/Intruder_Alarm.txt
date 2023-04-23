@@ -1,5 +1,5 @@
 name=Intruder Alarm
-image=https://magiccards.info/scans/en/8e/86.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d62468e-ed9d-4932-bbbd-103b33b98b25.jpg?1562923566
 value=4.378
 rarity=R
 type=Enchantment

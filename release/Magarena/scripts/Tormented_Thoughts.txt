@@ -1,5 +1,5 @@
 name=Tormented Thoughts
-image=https://magiccards.info/scans/en/ori/122.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6be2be08-5bad-4813-b6f3-45b564e10b2f.jpg?1562024490
 image_updated=2015-11-05
 value=2.500
 rarity=U

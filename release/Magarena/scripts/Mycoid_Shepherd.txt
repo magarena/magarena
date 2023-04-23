@@ -1,5 +1,5 @@
 name=Mycoid Shepherd
-image=https://magiccards.info/scans/en/arb/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/8331079e-0193-4243-9db9-ec7762a27633.jpg?1562642503
 value=3.670
 rarity=R
 type=Creature

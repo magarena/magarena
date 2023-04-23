@@ -1,5 +1,5 @@
 name=Rain of Blades
-image=https://magiccards.info/scans/en/m13/28.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3bd6ca4-c4ed-41c3-834c-23e0c1741b72.jpg?1562561845
 value=2.824
 rarity=U
 type=Instant

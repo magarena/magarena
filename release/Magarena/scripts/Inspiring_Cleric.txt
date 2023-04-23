@@ -1,5 +1,5 @@
 name=Inspiring Cleric
-image=https://magiccards.info/scans/en/xln/16.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31b8f1da-c8ea-41d5-b1ad-b714c22d3683.jpg?1562552997
 value=2.500
 rarity=U
 type=Creature

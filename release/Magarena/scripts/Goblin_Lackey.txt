@@ -1,5 +1,5 @@
 name=Goblin Lackey
-image=https://magiccards.info/scans/en/us/190.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30104836-1e9d-4533-98f8-d5c4e6484b52.jpg?1562904811
 value=4.500
 rarity=U
 type=Creature

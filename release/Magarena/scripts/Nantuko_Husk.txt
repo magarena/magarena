@@ -1,5 +1,5 @@
 name=Nantuko Husk
-image=https://magiccards.info/scans/en/ori/109.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/3915c0be-7e9c-45bc-9c83-80beba469a81.jpg?1562014981
 image_updated=2015-11-05
 value=2.500
 rarity=C

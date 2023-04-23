@@ -1,5 +1,5 @@
 name=Slashing Tiger
-image=https://magiccards.info/scans/en/p3k/145.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4aa7846-adb7-48df-b838-ffbe9f7bfd85.jpg?1562936567
 value=3.022
 rarity=R
 type=Creature

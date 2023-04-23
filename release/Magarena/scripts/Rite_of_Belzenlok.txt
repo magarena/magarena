@@ -1,5 +1,5 @@
 name=Rite of Belzenlok
-image=https://magiccards.info/scans/en/dom/102.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1ed7cca3-79be-44ca-bf10-2ae1c0835ed1.jpg?1577142986
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Vampire Neonate
-image=https://magiccards.info/scans/en/m19/124.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7649d57-3537-45a2-b57e-98e7d32025c9.jpg?1600701711
 value=2.500
 rarity=C
 type=Creature

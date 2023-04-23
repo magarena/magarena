@@ -1,5 +1,5 @@
 name=Drover of the Mighty
-image=https://magiccards.info/scans/en/xln/187.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68f1d2e6-ffa4-4c4e-8179-671deb9f5a7f.jpg?1601082467
 value=2.500
 rarity=U
 type=Creature

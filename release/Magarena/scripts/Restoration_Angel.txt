@@ -1,5 +1,5 @@
 name=Restoration Angel
-image=https://magiccards.info/scans/en/ima/28.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b474f84-9bef-422a-8fc5-489a10aaf1ee.jpg?1682208561
 image_updated=2017-04-12
 value=4.453
 rarity=R

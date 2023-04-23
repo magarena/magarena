@@ -1,5 +1,5 @@
 name=Wasp Lancer
-image=https://magiccards.info/scans/en/shm/179.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac48a4ff-433b-4fd0-b0d1-43b188ee81b6.jpg?1562834520
 value=3.395
 rarity=U
 type=Creature

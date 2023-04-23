@@ -1,5 +1,5 @@
 name=Duergar Mine-Captain
-image=https://magiccards.info/scans/en/eve/138.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e97983b9-6c93-41ce-8deb-ac08811a0834.jpg?1562944224
 value=2.798
 rarity=U
 type=Creature

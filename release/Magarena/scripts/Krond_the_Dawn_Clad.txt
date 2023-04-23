@@ -1,5 +1,5 @@
 name=Krond the Dawn-Clad
-image=https://magiccards.info/scans/en/pc2/99.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a73cf77b-3d11-47ea-9779-586ee00bf608.jpg?1562926228
 value=3.949
 rarity=M
 type=Legendary,Creature

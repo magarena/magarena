@@ -1,5 +1,5 @@
 name=Patriarch's Desire
-image=https://magiccards.info/scans/en/od/156.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/309bc2e7-bece-493d-b7ab-0e08a9f40909.jpg?1562903998
 value=1.189
 rarity=C
 type=Enchantment

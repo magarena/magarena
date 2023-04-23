@@ -1,5 +1,5 @@
 name=Abzan Beastmaster
-image=https://magiccards.info/scans/en/frf/119.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/219c4ab2-1f7c-469b-a72a-d435213f130c.jpg?1562823232
 value=2.500
 rarity=U
 type=Creature

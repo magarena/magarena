@@ -1,5 +1,5 @@
 name=Aethersphere Harvester
-image=https://magiccards.info/scans/en/aer/142.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4160bb5f-4b49-4535-94f5-776d7abd1d1a.jpg?1576382193
 value=2.500
 rarity=R
 type=Artifact

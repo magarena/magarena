@@ -1,5 +1,5 @@
 name=Riku of Two Reflections
-image=https://magiccards.info/scans/en/cmd/220.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70dd138f-391a-4956-bc2a-fe186429c71a.jpg?1599708286
 value=4.090
 rarity=M
 type=Legendary,Creature

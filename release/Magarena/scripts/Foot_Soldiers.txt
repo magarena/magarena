@@ -1,5 +1,5 @@
 name=Foot Soldiers
-image=https://magiccards.info/scans/en/9e/14.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baff03f3-a8ca-4c35-ae71-43b5d237b519.jpg?1562740835
 value=1.345
 rarity=C
 type=Creature

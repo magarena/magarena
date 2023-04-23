@@ -1,5 +1,5 @@
 name=Knight Errant
-image=https://magiccards.info/scans/en/7e/24.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8d1d55b-6be0-4bb5-b452-ba4994b21774.jpg?1562248920
 value=2.819
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Famished Paladin
-image=https://magiccards.info/scans/en/rix/8.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d80e3bc9-7b67-4eab-916a-6d83da06f20a.jpg?1555039693
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Neurok Invisimancer
-image=https://magiccards.info/scans/en/som/37.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/558edff1-c156-4c0e-9991-ae5c8b5062ae.jpg?1581708272
 image_updated=2017-01-01
 value=3.041
 rarity=C

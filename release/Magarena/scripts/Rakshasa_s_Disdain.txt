@@ -1,5 +1,5 @@
 name=Rakshasa's Disdain
-image=https://magiccards.info/scans/en/frf/45.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd9e8a25-2e71-431b-897f-8b62520a3ce9.jpg?1562829343
 value=2.500
 rarity=C
 type=Instant

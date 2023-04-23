@@ -1,5 +1,5 @@
 name=Throwing Knife
-image=https://magiccards.info/scans/en/ori/241.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5dfce9be-67a2-4e8a-a71f-e88f64067691.jpg?1562022097
 image_updated=2015-11-05
 value=2.500
 rarity=U

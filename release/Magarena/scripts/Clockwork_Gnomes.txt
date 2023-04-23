@@ -1,5 +1,5 @@
 name=Clockwork Gnomes
-image=https://magiccards.info/scans/en/hl/127.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f74a8952-fad0-40c3-88eb-3cc05acaf590.jpg?1562953625
 value=2.474
 rarity=C
 type=Artifact,Creature

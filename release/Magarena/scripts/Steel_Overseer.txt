@@ -1,5 +1,5 @@
 name=Steel Overseer
-image=https://magiccards.info/scans/en/m11/214.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f1b0b1f-a152-4bc8-923c-1b3a7f151295.jpg?1625979399
 image_updated=2016-01-09
 value=4.369
 rarity=R

@@ -1,5 +1,5 @@
 name=Starved Rusalka
-image=https://magiccards.info/scans/en/gp/97.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25b4aec5-0a7d-4b1c-8819-ea675d415eac.jpg?1593272529
 value=1.478
 rarity=U
 type=Creature

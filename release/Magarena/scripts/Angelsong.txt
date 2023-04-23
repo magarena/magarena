@@ -1,5 +1,5 @@
 name=Angelsong
-image=https://magiccards.info/scans/en/ala/4.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfdf70c7-49e2-4f6a-99e2-075aa826de60.jpg?1561771986
 image_updated=2016-11-20
 value=3.066
 rarity=C

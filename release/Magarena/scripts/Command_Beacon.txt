@@ -1,5 +1,5 @@
 name=Command Beacon
-image=https://magiccards.info/scans/en/c15/56.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bec6181-e214-4833-8c2f-8a10d59b2879.jpg?1608911782
 image_updated=2016-02-29
 value=2.500
 rarity=R

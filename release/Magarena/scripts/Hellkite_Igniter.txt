@@ -1,5 +1,5 @@
 name=Hellkite Igniter
-image=https://magiccards.info/scans/en/c16/127.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc03ad3e-8113-432c-bff6-3ced73af8728.jpg?1682209373
 image_updated=2017-08-17
 value=3.439
 rarity=R

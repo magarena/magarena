@@ -1,5 +1,5 @@
 name=Hateflayer
-image=https://magiccards.info/scans/en/eve/55.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38c26ba3-e325-433b-b653-4e80e737b54d.jpg?1562906892
 value=3.946
 rarity=R
 type=Creature

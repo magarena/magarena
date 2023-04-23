@@ -1,5 +1,5 @@
 name=Sky Spirit
-image=https://magiccards.info/scans/en/cns/192.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62eea10f-eddf-43a1-96fe-5f6f37c42415.jpg?1562865448
 value=3.917
 rarity=U
 type=Creature

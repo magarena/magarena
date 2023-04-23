@@ -1,5 +1,5 @@
 name=Strangling Spores
-image=https://magiccards.info/scans/en/m19/122.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/300468ab-fbae-42ae-97bc-b08f795efa5c.jpg?1562301237
 value=2.500
 rarity=C
 type=Instant

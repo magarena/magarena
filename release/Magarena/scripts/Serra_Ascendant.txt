@@ -1,5 +1,5 @@
 name=Serra Ascendant
-image=https://magiccards.info/scans/en/ima/31.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a22ee47-fc56-436d-8570-88fbff421027.jpg?1562845354
 image_updated=2017-04-12
 value=4.167
 rarity=R

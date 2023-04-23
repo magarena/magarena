@@ -1,5 +1,5 @@
 name=Kavu Aggressor
-image=https://magiccards.info/scans/en/in/148.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2832ad3-ce7f-44d2-beb2-c95d982905a6.jpg?1562927844
 value=1.764
 rarity=C
 type=Creature

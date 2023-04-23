@@ -1,5 +1,5 @@
 name=Clinging Anemones
-image=https://magiccards.info/scans/en/gtc/31.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e183069-096d-4977-8154-e7b60f17a787.jpg?1561826461
 value=2.233
 rarity=C
 type=Creature

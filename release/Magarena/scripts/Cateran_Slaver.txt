@@ -1,5 +1,5 @@
 name=Cateran Slaver
-image=https://magiccards.info/scans/en/mm/125.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d293c51-714c-45b8-bfa4-fe35e8f3fbc1.jpg?1562379906
 value=3.530
 rarity=R
 type=Creature

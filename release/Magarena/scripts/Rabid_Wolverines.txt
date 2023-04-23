@@ -1,5 +1,5 @@
 name=Rabid Wolverines
-image=https://magiccards.info/scans/en/ex/119.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99121a2b-c735-47be-b01e-cdf59809e7f3.jpg?1562088324
 value=3.244
 rarity=C
 type=Creature

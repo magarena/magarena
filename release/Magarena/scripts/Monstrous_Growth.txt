@@ -1,5 +1,5 @@
 name=Monstrous Growth
-image=https://magiccards.info/scans/en/8e/266.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e5a2687-af7a-42ad-8938-f3534c7da222.jpg?1562920498
 value=1.448
 rarity=C
 type=Sorcery

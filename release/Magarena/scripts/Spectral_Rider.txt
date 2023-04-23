@@ -1,5 +1,5 @@
 name=Spectral Rider
-image=https://magiccards.info/scans/en/isd/35.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b47e4e56-8bde-480d-b59c-17a017665b19.jpg?1562835848
 value=3.833
 rarity=U
 type=Creature

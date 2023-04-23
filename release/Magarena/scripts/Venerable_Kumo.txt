@@ -1,5 +1,5 @@
 name=Venerable Kumo
-image=https://magiccards.info/scans/en/chk/248.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/308566ed-18cc-4e3b-b5ab-d5b17795f2f1.jpg?1562758912
 value=2.076
 rarity=C
 type=Creature

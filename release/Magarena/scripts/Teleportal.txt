@@ -1,5 +1,5 @@
 name=Teleportal
-image=https://magiccards.info/scans/en/mm3/193.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8322a64-f1a0-49c6-ad59-2b803598f7d1.jpg?1593814662
 image_updated=2017-08-08
 value=3.727
 rarity=U

@@ -1,5 +1,5 @@
 name=Sisay's Ingenuity
-image=https://magiccards.info/scans/en/ps/33.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbe20cc1-621a-4813-9bbb-ace006e173ff.jpg?1562934728
 value=3.880
 rarity=C
 type=Enchantment

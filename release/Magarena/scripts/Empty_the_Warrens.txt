@@ -1,5 +1,5 @@
 name=Empty the Warrens
-image=https://magiccards.info/scans/en/mma/112.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06462b57-1b0e-4c9c-9531-c14b9f2d5a3b.jpg?1619396929
 value=4.523
 rarity=C
 type=Sorcery

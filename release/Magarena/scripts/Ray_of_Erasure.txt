@@ -1,5 +1,5 @@
 name=Ray of Erasure
-image=https://magiccards.info/scans/en/ia/93.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a09fc0b-7b9c-4283-8336-f2607f5ffaf5.jpg?1587911655
 value=2.897
 rarity=C
 type=Instant

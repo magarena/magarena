@@ -1,5 +1,5 @@
 name=Tuktuk the Explorer
-image=https://magiccards.info/scans/en/c14/183.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b17f5403-7692-41ca-a3c9-b81c31bddc00.jpg?1599706805
 value=4.011
 rarity=R
 type=Legendary,Creature

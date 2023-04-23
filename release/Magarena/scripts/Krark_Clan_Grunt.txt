@@ -1,5 +1,5 @@
 name=Krark-Clan Grunt
-image=https://magiccards.info/scans/en/mi/97.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffd9e422-206e-4c25-9964-ed6592c16e12.jpg?1562164449
 value=2.680
 rarity=C
 type=Creature

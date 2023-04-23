@@ -1,5 +1,5 @@
 name=Defensive Stance
-image=https://magiccards.info/scans/en/nph/34.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0670653-d4fe-4fac-b769-d19ca4698c97.jpg?1562881710
 value=0.904
 rarity=C
 type=Enchantment

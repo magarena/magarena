@@ -1,5 +1,5 @@
 name=Ghoulsteed
-image=https://magiccards.info/scans/en/soi/113.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b8f7cfd-88db-4cc1-b65f-3462332a2873.jpg?1547516879
 value=2.500
 rarity=U
 type=Creature

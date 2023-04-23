@@ -1,5 +1,5 @@
 name=Skarrg Goliath
-image=https://magiccards.info/scans/en/gtc/133.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b2dcafd-eb72-4f3a-9c1c-ba17fe30bf0f.jpg?1561820572
 value=3.157
 rarity=R
 type=Creature

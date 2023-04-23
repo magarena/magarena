@@ -1,5 +1,5 @@
 name=Slayer of the Wicked
-image=https://magiccards.info/scans/en/isd/32.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22580e42-c164-4e9b-8210-6fa48bec7b8b.jpg?1592762724
 value=3.052
 rarity=U
 type=Creature

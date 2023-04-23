@@ -1,5 +1,5 @@
 name=Fabled Hero
-image=https://magiccards.info/scans/en/ths/12.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/642d9a5c-5697-4747-adce-5a71bcf1c086.jpg?1562819107
 value=3.690
 rarity=R
 type=Creature

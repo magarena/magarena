@@ -1,5 +1,5 @@
 name=Vedalken Dismisser
-image=https://magiccards.info/scans/en/mma/69.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8fe73a5-dba9-422b-86c1-c957d9cb0622.jpg?1561968540
 value=2.342
 rarity=C
 type=Creature

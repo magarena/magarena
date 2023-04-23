@@ -1,5 +1,5 @@
 name=Hivestone
-image=https://magiccards.info/scans/en/ts/256.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69e62171-713c-49c0-8e16-b193ff181dcd.jpg?1619404347
 value=3.948
 rarity=R
 type=Artifact

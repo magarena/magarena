@@ -1,5 +1,5 @@
 name=Sewer Nemesis
-image=https://magiccards.info/scans/en/cmd/98.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdb8d320-fecc-42c2-b9d8-a9f6dd44b36d.jpg?1674141795
 value=4.149
 rarity=R
 type=Creature

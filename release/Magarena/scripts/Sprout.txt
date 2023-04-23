@@ -1,5 +1,5 @@
 name=Sprout
-image=https://magiccards.info/scans/en/ts/221.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/6967363f-1e05-4484-8790-47f7be68455c.jpg?1562917036
 value=2.713
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Vodalian Serpent
-image=https://magiccards.info/scans/en/in/86.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92adcf6c-ab14-414c-a5cb-56feae048c84.jpg?1562924617
 value=2.536
 rarity=C
 type=Creature

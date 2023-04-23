@@ -1,5 +1,5 @@
 name=Quirion Elves
-image=https://magiccards.info/scans/en/in/203.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74a39656-769f-4540-9a30-f637a8ec302e.jpg?1562916625
 image_updated=2017-01-06
 value=4.167
 rarity=C

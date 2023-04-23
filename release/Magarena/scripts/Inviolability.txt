@@ -1,5 +1,5 @@
 name=Inviolability
-image=https://magiccards.info/scans/en/mm/23.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ece8504-389a-43e3-b178-7067722c4b75.jpg?1562382081
 value=4.075
 rarity=C
 type=Enchantment

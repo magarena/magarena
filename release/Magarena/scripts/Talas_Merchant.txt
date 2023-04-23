@@ -1,5 +1,5 @@
 name=Talas Merchant
-image=https://magiccards.info/scans/en/po2/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f779d7e-6e37-49bc-b76d-3bb490ff142b.jpg?1562906114
 value=2.550
 rarity=C
 type=Creature

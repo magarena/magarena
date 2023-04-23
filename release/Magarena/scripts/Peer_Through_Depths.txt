@@ -1,5 +1,5 @@
 name=Peer Through Depths
-image=https://magiccards.info/scans/en/mma/57.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df0994df-730c-4947-8248-0aaf97998fa1.jpg?1592761530
 value=3.654
 rarity=C
 type=Instant

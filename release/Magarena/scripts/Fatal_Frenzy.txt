@@ -1,5 +1,5 @@
 name=Fatal Frenzy
-image=https://magiccards.info/scans/en/pc/98.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e2fe87d-e886-4e30-8ff2-3886199f0461.jpg?1562571238
 value=3.707
 rarity=R
 type=Instant

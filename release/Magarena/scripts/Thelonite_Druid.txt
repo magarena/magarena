@@ -1,5 +1,5 @@
 name=Thelonite Druid
-image=https://magiccards.info/scans/en/fe/92.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/644aa4e7-9ea4-454b-abce-2a1a53c25560.jpg?1562869026
 value=3.867
 rarity=U
 type=Creature

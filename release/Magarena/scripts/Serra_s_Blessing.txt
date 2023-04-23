@@ -1,5 +1,5 @@
 name=Serra's Blessing
-image=https://magiccards.info/scans/en/9e/44.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/617547a7-087e-49b0-8c28-5aae457bec99.jpg?1562736098
 value=4.377
 rarity=U
 type=Enchantment

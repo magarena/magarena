@@ -1,5 +1,5 @@
 name=Trusted Advisor
-image=https://magiccards.info/scans/en/sok/59.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee63cba4-ab12-4adb-8463-d42edbf5794d.jpg?1562496591
 value=3.661
 rarity=U
 type=Creature

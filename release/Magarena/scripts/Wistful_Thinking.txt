@@ -1,5 +1,5 @@
 name=Wistful Thinking
-image=https://magiccards.info/scans/en/pc/53.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5031831-49ee-4c54-9200-448b8953f915.jpg?1562583035
 value=3.993
 rarity=C
 type=Sorcery

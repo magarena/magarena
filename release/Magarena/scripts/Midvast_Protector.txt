@@ -1,5 +1,5 @@
 name=Midvast Protector
-image=https://magiccards.info/scans/en/avr/28.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4f6214f-90cb-4575-b221-3c8d0ed65ffe.jpg?1592708351
 value=2.060
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblin Burrows
-image=https://magiccards.info/scans/en/on/318.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc36acc6-db4b-45b7-b526-7966ff82a44f.jpg?1562939268
 image_updated=2016-12-04
 value=4.000
 rarity=U

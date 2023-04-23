@@ -1,5 +1,5 @@
 name=Stabbing Pain
-image=https://magiccards.info/scans/en/m11/118.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89c31d9d-fd77-4275-b89c-f9b64073c54b.jpg?1562467253
 value=2.858
 rarity=C
 type=Instant

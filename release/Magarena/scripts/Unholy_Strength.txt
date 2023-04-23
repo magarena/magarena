@@ -1,5 +1,5 @@
 name=Unholy Strength
-image=https://magiccards.info/scans/en/m11/119.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f42c9574-2f09-4cb0-80cb-10fb8c592e6f.jpg?1561771993
 value=3.385
 rarity=C
 type=Enchantment

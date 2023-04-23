@@ -1,5 +1,5 @@
 name=Bloodshed Fever
-image=https://magiccards.info/scans/en/shm/84.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73b92320-6f83-4731-93c8-7eb9fd90ee83.jpg?1562831709
 value=1.930
 rarity=C
 type=Enchantment

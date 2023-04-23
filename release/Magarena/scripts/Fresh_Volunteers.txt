@@ -1,5 +1,5 @@
 name=Fresh Volunteers
-image=https://magiccards.info/scans/en/mm/20.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e070ea4a-c417-405f-b788-78fb7ca2eaa5.jpg?1562383511
 value=2.839
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Righteous Fury
-image=https://magiccards.info/scans/en/st/23.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2631d2de-05ce-4fec-afb4-47568b76b30d.jpg?1562867861
 value=3.956
 rarity=R
 type=Sorcery

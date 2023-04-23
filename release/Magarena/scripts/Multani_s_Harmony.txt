@@ -1,5 +1,5 @@
 name=Multani's Harmony
-image=https://magiccards.info/scans/en/ps/84.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c76352ea-e3d2-4221-8ebe-e953301c35ab.jpg?1562937120
 value=3.803
 rarity=U
 type=Enchantment

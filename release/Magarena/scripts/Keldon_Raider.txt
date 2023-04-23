@@ -1,5 +1,5 @@
 name=Keldon Raider
-image=https://magiccards.info/scans/en/dom/135.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/884c47fa-7060-48da-995c-e4037640a208.jpg?1592516981
 value=2.500
 rarity=C
 type=Creature

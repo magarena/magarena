@@ -1,5 +1,5 @@
 name=Magnivore
-image=https://magiccards.info/scans/en/9e/202.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab077f67-09c3-43d0-ad27-d1e6255c4d55.jpg?1562740008
 value=4.139
 rarity=R
 type=Creature

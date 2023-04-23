@@ -1,5 +1,5 @@
 name=Singing Bell Strike
-image=https://magiccards.info/scans/en/ktk/55.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/670f24e1-dec9-42e6-b762-c447366ed16c.jpg?1562787818
 value=2.833
 rarity=C
 type=Enchantment

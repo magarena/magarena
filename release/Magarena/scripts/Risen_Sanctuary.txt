@@ -1,5 +1,5 @@
 name=Risen Sanctuary
-image=https://magiccards.info/scans/en/rtr/190.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0b6c136-2bbe-48c1-ac53-2a8221b96936.jpg?1562790797
 value=3.208
 rarity=U
 type=Creature

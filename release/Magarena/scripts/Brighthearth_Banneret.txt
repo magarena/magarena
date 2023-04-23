@@ -1,5 +1,5 @@
 name=Brighthearth Banneret
-image=https://magiccards.info/scans/en/mt/88.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb44df5b-6c89-46ae-b068-5056b8c4c189.jpg?1562881406
 value=3.514
 rarity=C
 type=Creature

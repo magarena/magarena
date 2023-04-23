@@ -1,5 +1,5 @@
 name=Keldon Marauders
-image=https://magiccards.info/scans/en/ema/136.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf42524c-97e5-40b2-8a6d-d2a1f0a9eb65.jpg?1618940501
 value=3.662
 rarity=C
 type=Creature

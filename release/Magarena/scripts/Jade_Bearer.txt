@@ -1,5 +1,5 @@
 name=Jade Bearer
-image=https://magiccards.info/scans/en/rix/134.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/696bb954-353e-488b-a1e8-0df75da6339b.jpg?1555040664
 value=2.500
 rarity=C
 type=Creature

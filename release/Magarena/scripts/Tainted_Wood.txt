@@ -1,5 +1,5 @@
 name=Tainted Wood
-image=https://magiccards.info/scans/en/tr/143.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/781326c7-39f8-4996-bf50-01444a647b08.jpg?1625981135
 image_updated=2016-02-29
 value=3.950
 rarity=U

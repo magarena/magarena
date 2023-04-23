@@ -1,5 +1,5 @@
 name=Pacification Array
-image=https://magiccards.info/scans/en/aer/168.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bed742a-a12a-4728-a771-07e3d1417419.jpg?1576382370
 value=2.500
 rarity=U
 type=Artifact

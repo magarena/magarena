@@ -1,5 +1,5 @@
 name=Untamed Kavu
-image=https://magiccards.info/scans/en/dom/186.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c4cf84a-2024-45bb-9e24-8a9a6d9ad247.jpg?1562734310
 value=2.500
 rarity=U
 type=Creature

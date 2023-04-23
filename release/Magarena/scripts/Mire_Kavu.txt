@@ -1,5 +1,5 @@
 name=Mire Kavu
-image=https://magiccards.info/scans/en/ps/67.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccdd0086-eb27-48b3-91cb-a113aa1de102.jpg?1562938287
 value=2.706
 rarity=C
 type=Creature

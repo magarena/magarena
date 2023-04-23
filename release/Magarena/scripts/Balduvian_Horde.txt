@@ -1,5 +1,5 @@
 name=Balduvian Horde
-image=https://magiccards.info/scans/en/a25/120.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe32f853-4afb-4a91-8b4c-0d647ce9c216.jpg?1562443282
 image_updated=2018-04-26
 value=3.588
 rarity=C

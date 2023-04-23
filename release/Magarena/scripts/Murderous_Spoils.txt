@@ -1,5 +1,5 @@
 name=Murderous Spoils
-image=https://magiccards.info/scans/en/ds/48.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91ece344-c516-449e-ab7c-2e78d4778f02.jpg?1562638187
 value=2.089
 rarity=U
 type=Instant

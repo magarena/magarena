@@ -1,5 +1,5 @@
 name=Null Brooch
-image=https://magiccards.info/scans/en/ex/136.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5d5a0c6-916c-428a-ae66-8adc8844e56e.jpg?1562088811
 value=4.022
 rarity=R
 type=Artifact

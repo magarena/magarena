@@ -1,5 +1,5 @@
 name=Rigging Runner
-image=https://magiccards.info/scans/en/xln/157.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb9983ce-8ca6-450a-9cac-5396ba8e1690.jpg?1562566069
 value=2.500
 rarity=U
 type=Creature

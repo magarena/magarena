@@ -1,5 +1,5 @@
 name=Nef-Crop Entangler
-image=https://magiccards.info/scans/en/akh/144.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96569dc0-ea94-4a43-b002-85c5066e5386.jpg?1543675663
 value=2.500
 rarity=C
 type=Creature

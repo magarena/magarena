@@ -1,5 +1,5 @@
 name=Uktabi Drake
-image=https://magiccards.info/scans/en/pc/141.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b8c401a-8c66-4054-894f-afd866b3b95b.jpg?1619403665
 value=3.924
 rarity=C
 type=Creature

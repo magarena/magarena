@@ -1,5 +1,5 @@
 name=Ardent Soldier
-image=https://magiccards.info/scans/en/in/3.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39dce974-846f-4365-b0a5-851e38668e7d.jpg?1562906683
 value=2.640
 rarity=C
 type=Creature

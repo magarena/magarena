@@ -1,5 +1,5 @@
 name=Nantuko Monastery
-image=https://magiccards.info/scans/en/ju/142.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa0412da-ad2a-4895-bceb-c7938c2ae929.jpg?1562930868
 image_updated=2017-01-01
 value=4.257
 rarity=U

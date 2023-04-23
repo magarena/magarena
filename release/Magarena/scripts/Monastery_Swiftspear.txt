@@ -1,5 +1,5 @@
 name=Monastery Swiftspear
-image=https://magiccards.info/scans/en/ima/140.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6bfa227-4309-40ed-952c-279595eab17e.jpg?1674421204
 image_updated=2017-04-12
 value=4.250
 rarity=U

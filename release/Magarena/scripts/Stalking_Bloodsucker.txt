@@ -1,5 +1,5 @@
 name=Stalking Bloodsucker
-image=https://magiccards.info/scans/en/od/163.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16705695-1ba8-4169-974f-d8c683ab2652.jpg?1562899252
 value=3.092
 rarity=R
 type=Creature

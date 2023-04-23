@@ -1,5 +1,5 @@
 name=Wormfang Turtle
-image=https://magiccards.info/scans/en/ju/60.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48404362-7579-4896-a71a-8eb40e5ac416.jpg?1562629707
 value=3.339
 rarity=U
 type=Creature

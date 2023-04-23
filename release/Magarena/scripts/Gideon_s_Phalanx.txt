@@ -1,5 +1,5 @@
 name=Gideon's Phalanx
-image=https://magiccards.info/scans/en/ori/14.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30142729-de9a-4a0b-b060-8f68e1ef234d.jpg?1562013225
 image_updated=2015-11-05
 value=2.500
 rarity=R

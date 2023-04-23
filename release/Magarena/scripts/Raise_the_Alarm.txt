@@ -1,5 +1,5 @@
 name=Raise the Alarm
-image=https://magiccards.info/scans/en/cn2/96.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c7c8527-55f6-494d-b4f7-c427a5735053.jpg?1608908958
 image_updated=2017-08-17
 value=3.917
 rarity=C

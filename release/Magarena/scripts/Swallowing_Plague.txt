@@ -1,5 +1,5 @@
 name=Swallowing Plague
-image=https://magiccards.info/scans/en/chk/146.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac549d51-3862-4eb0-9951-f13a8ba28822.jpg?1562763498
 value=3.163
 rarity=U
 type=Sorcery

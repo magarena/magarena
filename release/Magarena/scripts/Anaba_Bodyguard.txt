@@ -1,5 +1,5 @@
 name=Anaba Bodyguard
-image=https://magiccards.info/scans/en/10e/187.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fdd01bd-ab41-4005-8807-46db0cfc4da4.jpg?1562549580
 value=2.174
 rarity=C
 type=Creature

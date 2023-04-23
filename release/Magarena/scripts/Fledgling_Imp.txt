@@ -1,5 +1,5 @@
 name=Fledgling Imp
-image=https://magiccards.info/scans/en/od/137.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d11770ee-dcf0-4dd4-ab43-b98f1133cec7.jpg?1562934069
 value=1.268
 rarity=C
 type=Creature

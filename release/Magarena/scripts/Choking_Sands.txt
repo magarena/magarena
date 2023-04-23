@@ -1,5 +1,5 @@
 name=Choking Sands
-image=https://magiccards.info/scans/en/mr/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d63b5e4c-e6be-4df5-bb22-d0610067adf6.jpg?1562937995
 value=4.000
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Gnarled Mass
-image=https://magiccards.info/scans/en/bok/127.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c28728d-4839-4cdf-91d4-b9fb4b5d0449.jpg?1562877254
 value=2.464
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Run Aground
-image=https://magiccards.info/scans/en/xln/72.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ed573c6-2b95-4052-8b43-106cbaacb721.jpg?1562561058
 value=2.500
 rarity=C
 type=Instant

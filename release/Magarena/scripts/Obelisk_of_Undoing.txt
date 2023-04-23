@@ -1,5 +1,5 @@
 name=Obelisk of Undoing
-image=https://magiccards.info/scans/en/5e/392.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/2299ef3d-a275-48e4-8a24-da88b8ab4f04.jpg?1562903154
 value=1.663
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Bastion Enforcer
-image=https://magiccards.info/scans/en/aer/8.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cbf17a0-2dbc-4e79-9cfa-ea49b1605105.jpg?1564022975
 value=2.500
 rarity=C
 type=Creature

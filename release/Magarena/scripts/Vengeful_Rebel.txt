@@ -1,5 +1,5 @@
 name=Vengeful Rebel
-image=https://magiccards.info/scans/en/aer/73.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e34edfc-77fc-43b5-bad6-1c4c2a76c8c3.jpg?1576381739
 value=2.500
 rarity=U
 type=Creature

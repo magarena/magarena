@@ -1,5 +1,5 @@
 name=Nim Shambler
-image=https://magiccards.info/scans/en/mi/72.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e59c09a0-a374-46c1-978f-ec7478dc7ab7.jpg?1562161357
 value=2.578
 rarity=U
 type=Creature

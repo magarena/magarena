@@ -1,5 +1,5 @@
 name=Twilight Prophet
-image=https://magiccards.info/scans/en/rix/88.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9da6974f-6753-48ac-98cd-86412cc93726.jpg?1555040334
 value=2.500
 rarity=M
 type=Creature

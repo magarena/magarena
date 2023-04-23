@@ -1,5 +1,5 @@
 name=Master of Waves
-image=https://magiccards.info/scans/en/ths/53.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14cd5387-c6aa-4430-8edb-05da6b4e2ff5.jpg?1592764548
 value=3.659
 rarity=M
 type=Creature

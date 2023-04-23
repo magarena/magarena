@@ -1,5 +1,5 @@
 name=Jandor's Saddlebags
-image=https://magiccards.info/scans/en/7e/304.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4f8d1ec-a55c-409f-be42-ae1c0f8c66e1.jpg?1562248695
 value=1.950
 rarity=R
 type=Artifact

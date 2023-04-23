@@ -1,5 +1,5 @@
 name=Chandra's Outrage
-image=https://magiccards.info/scans/en/a25/124.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edbfe793-6644-43ed-bbe1-e122c01c5e53.jpg?1592516870
 image_updated=2018-04-27
 value=3.519
 removal=4

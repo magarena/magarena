@@ -1,5 +1,5 @@
 name=Lyra Dawnbringer
-image=https://magiccards.info/scans/en/dom/26.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93be6799-7b9d-44d4-84dc-2961692b5a85.jpg?1562739679
 value=2.500
 rarity=M
 type=Legendary,Creature

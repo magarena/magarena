@@ -1,5 +1,5 @@
 name=Mirran Spy
-image=https://magiccards.info/scans/en/mbs/26.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50e576ad-3e03-424c-8857-88ec8898a92e.jpg?1562611251
 value=2.962
 rarity=C
 type=Creature

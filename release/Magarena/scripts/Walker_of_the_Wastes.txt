@@ -1,5 +1,5 @@
 name=Walker of the Wastes
-image=https://magiccards.info/scans/en/ogw/10.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34f635ac-ad6d-4a13-a08e-64c8e2b9779c.jpg?1562905714
 image_updated=2016-02-29
 value=2.500
 rarity=U

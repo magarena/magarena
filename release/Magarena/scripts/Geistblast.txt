@@ -1,5 +1,5 @@
 name=Geistblast
-image=https://magiccards.info/scans/en/soi/160.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19b1dfd9-b717-4c23-b8e5-a6ec835b278a.jpg?1576384765
 value=2.500
 rarity=U
 type=Instant

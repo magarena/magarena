@@ -1,5 +1,5 @@
 name=Cloak of Mists
-image=https://magiccards.info/scans/en/us/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b36f41fa-b676-475e-bc2a-7dce5f249989.jpg?1562132037
 value=4.053
 rarity=C
 type=Enchantment

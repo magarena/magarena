@@ -1,5 +1,5 @@
 name=Straw Soldiers
-image=https://magiccards.info/scans/en/p3k/54.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8ae5ba21-eb8e-4663-bfd8-3e19a0c10774.jpg?1562257041
 value=2.671
 rarity=C
 type=Creature

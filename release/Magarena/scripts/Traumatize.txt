@@ -1,5 +1,5 @@
 name=Traumatize
-image=https://magiccards.info/scans/en/m11/77.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b8784dd-83f9-41f8-aedc-f0f81073ffcb.jpg?1562832808
 value=3.856
 rarity=R
 type=Sorcery

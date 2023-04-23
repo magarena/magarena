@@ -1,5 +1,5 @@
 name=Frogtosser Banneret
-image=https://magiccards.info/scans/en/mt/64.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bec81e20-b644-421a-9c93-5a3dc52eb88b.jpg?1604193140
 value=3.713
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shadowfeed
-image=https://magiccards.info/scans/en/ala/86.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19ccd8c7-7472-47df-9d3e-1b5fb1431118.jpg?1562701564
 value=2.864
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Proven Combatant
-image=https://magiccards.info/scans/en/hou/42.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d83fd08a-c87b-4e29-bd1d-31dea3732156.jpg?1562816581
 value=2.500
 rarity=C
 type=Creature

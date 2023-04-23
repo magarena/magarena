@@ -1,5 +1,5 @@
 name=Branchsnap Lorian
-image=https://magiccards.info/scans/en/le/118.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52118ff1-ad76-4b97-9fdc-6adfe80140f8.jpg?1562911651
 value=3.567
 rarity=U
 type=Creature

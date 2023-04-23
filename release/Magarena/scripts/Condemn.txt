@@ -1,5 +1,5 @@
 name=Condemn
-image=https://magiccards.info/scans/en/c14/69.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04dab28f-d0d0-49ef-9326-34fb348a7853.jpg?1610074961
 value=4.412
 removal=3
 rarity=U

@@ -1,5 +1,5 @@
 name=Rush of Adrenaline
-image=https://magiccards.info/scans/en/soi/177.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0def54b-9f0a-4ab1-9df9-25506a06350c.jpg?1576384878
 value=2.500
 rarity=C
 type=Instant

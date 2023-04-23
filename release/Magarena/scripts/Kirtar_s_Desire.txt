@@ -1,5 +1,5 @@
 name=Kirtar's Desire
-image=https://magiccards.info/scans/en/od/27.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f1e36fe-ecbe-46aa-9ee8-2ba4daba7d31.jpg?1562918562
 value=3.659
 rarity=C
 type=Enchantment

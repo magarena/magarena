@@ -1,5 +1,5 @@
 name=Morinfen
-image=https://magiccards.info/scans/en/wl/17.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5006ad3-16ca-4be3-8d56-d4fe4e9e0a44.jpg?1562802881
 value=2.571
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Scour the Laboratory
-image=https://magiccards.info/scans/en/emn/73.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c3247a4-f99a-4fff-a3a1-c3d51ed1a754.jpg?1576384208
 image_updated=2016-09-05
 value=2.500
 rarity=U

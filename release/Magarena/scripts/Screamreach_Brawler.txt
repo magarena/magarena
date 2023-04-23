@@ -1,5 +1,5 @@
 name=Screamreach Brawler
-image=https://magiccards.info/scans/en/dtk/155.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bfab1c5-e267-43a9-ae16-f6b8ae531eef.jpg?1562787854
 value=2.500
 rarity=C
 type=Creature

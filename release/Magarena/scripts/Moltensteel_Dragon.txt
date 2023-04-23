@@ -1,5 +1,5 @@
 name=Moltensteel Dragon
-image=https://magiccards.info/scans/en/nph/88.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13b78018-bfbe-43fa-809f-9b52a155e11c.jpg?1562875632
 value=4.268
 rarity=R
 type=Artifact,Creature

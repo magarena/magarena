@@ -1,5 +1,5 @@
 name=Pirate Ship
-image=https://magiccards.info/scans/en/tsts/28.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f91724c-0e3b-4289-9af6-9de489d811eb.jpg?1562775982
 value=2.870
 rarity=R
 type=Creature

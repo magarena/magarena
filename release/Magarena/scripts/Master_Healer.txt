@@ -1,5 +1,5 @@
 name=Master Healer
-image=https://magiccards.info/scans/en/9e/28.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6a4a15d-9f16-4aa1-adc0-5d4c85991062.jpg?1562741476
 value=3.284
 rarity=R
 type=Creature

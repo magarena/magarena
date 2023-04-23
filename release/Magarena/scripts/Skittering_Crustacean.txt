@@ -1,5 +1,5 @@
 name=Skittering Crustacean
-image=https://magiccards.info/scans/en/cn2/36.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b7cf6ee-55a9-4ce0-8653-b2fd6f820753.jpg?1576381774
 image_updated=2016-09-05
 value=2.500
 rarity=C

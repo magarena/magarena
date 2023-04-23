@@ -1,5 +1,5 @@
 name=Smoldering Crater
-image=https://magiccards.info/scans/en/c14/312.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26a9d3ef-2a56-45f4-a68a-c6acac381fbc.jpg?1591322456
 image_updated=2016-02-29
 value=3.167
 rarity=C

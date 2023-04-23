@@ -1,5 +1,5 @@
 name=Jaraku the Interloper
-image=https://magiccards.info/scans/en/bok/31b.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca03131a-9bd4-4fba-b95c-90f1831e86e7.jpg?1562879774
 value=2.500
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Vedalken Infuser
-image=https://magiccards.info/scans/en/mbs/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a52b9d11-0aab-4300-90b6-c8b56de36ec3.jpg?1598304409
 value=3.017
 rarity=U
 type=Creature

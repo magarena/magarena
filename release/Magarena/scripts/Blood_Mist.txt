@@ -1,5 +1,5 @@
 name=Blood Mist
-image=https://magiccards.info/scans/en/emn/119.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6982bde-1fa3-48fa-803d-a45d6acbc2fe.jpg?1576384521
 image_updated=2016-09-05
 value=2.500
 rarity=U

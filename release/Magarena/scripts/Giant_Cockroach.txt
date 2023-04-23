@@ -1,5 +1,5 @@
 name=Giant Cockroach
-image=https://magiccards.info/scans/en/9e/133.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25ca0c01-2e9f-4f1c-9078-f7a68559296d.jpg?1562732675
 value=1.737
 rarity=C
 type=Creature

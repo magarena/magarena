@@ -1,5 +1,5 @@
 name=Crush
-image=https://magiccards.info/scans/en/mbs/61.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a29d5e01-6f83-4749-8340-774054bd2956.jpg?1562613524
 value=3.336
 rarity=C
 type=Instant

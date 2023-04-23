@@ -1,5 +1,5 @@
 name=Swarm Surge
-image=https://magiccards.info/scans/en/bfz/100.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/837287cc-f3a4-4ba7-8518-9b1e4a53acda.jpg?1562926003
 image_updated=2015-11-08
 value=2.500
 rarity=C

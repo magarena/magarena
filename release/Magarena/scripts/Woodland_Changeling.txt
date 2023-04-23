@@ -1,5 +1,5 @@
 name=Woodland Changeling
-image=https://magiccards.info/scans/en/lw/242.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa41edf8-88a1-46dd-8315-b0afe7e14b7e.jpg?1562362438
 value=3.273
 rarity=C
 type=Creature

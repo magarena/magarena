@@ -1,5 +1,5 @@
 name=Crushing Canopy
-image=https://magiccards.info/scans/en/xln/183.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eae67d98-5167-442b-8586-0b2bcb0c56eb.jpg?1643592488
 value=2.500
 rarity=C
 type=Instant

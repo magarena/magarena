@@ -1,5 +1,5 @@
 name=Walking Dream
-image=https://magiccards.info/scans/en/sh/49.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd2f906d-b127-400a-809b-449f1e7f647b.jpg?1562597368
 value=2.686
 rarity=U
 type=Creature

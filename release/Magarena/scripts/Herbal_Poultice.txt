@@ -1,5 +1,5 @@
 name=Herbal Poultice
-image=https://magiccards.info/scans/en/lw/257.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b20925a3-dd4f-477c-806a-a3ec0fd2e00d.jpg?1562363895
 value=2.150
 rarity=C
 type=Artifact

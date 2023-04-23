@@ -1,5 +1,5 @@
 name=Giant Crab
-image=https://magiccards.info/scans/en/tp/66.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11c65a35-e219-4b60-ab95-ce7eff67d646.jpg?1562052780
 value=3.118
 rarity=C
 type=Creature

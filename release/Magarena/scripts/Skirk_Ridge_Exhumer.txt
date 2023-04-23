@@ -1,5 +1,5 @@
 name=Skirk Ridge Exhumer
-image=https://magiccards.info/scans/en/fut/77.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e783332-ea4e-4330-ba91-d23e5a58a7eb.jpg?1562910879
 value=3.858
 rarity=U
 type=Creature

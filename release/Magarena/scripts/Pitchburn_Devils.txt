@@ -1,5 +1,5 @@
 name=Pitchburn Devils
-image=https://magiccards.info/scans/en/cns/149.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbd306cf-6625-4414-b9e5-4b909bb1bb13.jpg?1594736737
 value=2.900
 rarity=C
 type=Creature

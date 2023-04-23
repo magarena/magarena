@@ -1,5 +1,5 @@
 name=Sootfeather Flock
-image=https://magiccards.info/scans/en/le/82.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/216a2ccc-8847-452b-b030-27d8506675bd.jpg?1562901660
 value=1.660
 rarity=C
 type=Creature

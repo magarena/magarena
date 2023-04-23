@@ -1,5 +1,5 @@
 name=Sylvan Tutor
-image=https://magiccards.info/scans/en/po/114.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dcad208-cbea-458f-af8d-6f5e9ec32df7.jpg?1562932279
 value=4.327
 rarity=R
 type=Sorcery

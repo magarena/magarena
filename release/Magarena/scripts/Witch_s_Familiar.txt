@@ -1,5 +1,5 @@
 name=Witch's Familiar
-image=https://magiccards.info/scans/en/m15/123.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c9f3b3b-de16-4ae5-844e-1373e0f84469.jpg?1562790664
 value=1.929
 rarity=C
 type=Creature

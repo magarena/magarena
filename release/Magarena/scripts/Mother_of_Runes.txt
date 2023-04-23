@@ -1,5 +1,5 @@
 name=Mother of Runes
-image=https://magiccards.info/scans/en/ema/22.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5e19147-e459-43a6-8ef0-e37968a462e3.jpg?1674141175
 value=2.500
 rarity=R
 type=Creature

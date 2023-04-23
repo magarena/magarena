@@ -1,5 +1,5 @@
 name=Hollowsage
-image=https://magiccards.info/scans/en/shm/69.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6618713-0573-44f6-82d9-dfc16dfef052.jpg?1562835030
 value=2.882
 rarity=U
 type=Creature

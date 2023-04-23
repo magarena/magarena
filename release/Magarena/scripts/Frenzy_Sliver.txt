@@ -1,5 +1,5 @@
 name=Frenzy Sliver
-image=https://magiccards.info/scans/en/fut/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d796119a-f1eb-4de9-a9ca-d322017e9c5e.jpg?1562938286
 value=2.821
 rarity=C
 type=Creature

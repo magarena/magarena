@@ -1,5 +1,5 @@
 name=Submerge
-image=https://magiccards.info/scans/en/ne/48.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2741fe4-37fe-427f-ae85-5107991d4eee.jpg?1562632167
 value=4.263
 rarity=U
 type=Instant

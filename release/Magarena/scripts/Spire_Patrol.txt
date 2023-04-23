@@ -1,5 +1,5 @@
 name=Spire Patrol
-image=https://magiccards.info/scans/en/aer/136.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1daaf494-70af-4a8d-836f-f6a9d6c1f080.jpg?1576382156
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Warden of the Wall
-image=https://magiccards.info/scans/en/dka/153.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd1a1f48-d46b-4b8e-a642-fc70fd9ef7df.jpg?1562954951
 value=2.554
 rarity=U
 type=Artifact

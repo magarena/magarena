@@ -1,5 +1,5 @@
 name=Shuko
-image=https://magiccards.info/scans/en/bok/159.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a47456b8-cef8-4085-90b1-92788e16fd27.jpg?1562878892
 value=4.169
 rarity=U
 type=Artifact

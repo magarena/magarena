@@ -1,5 +1,5 @@
 name=Scarblade Elite
-image=https://magiccards.info/scans/en/mt/77.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bd5c2b6-fcb2-4865-a0e5-9af59d94ae5a.jpg?1562877163
 value=3.178
 rarity=R
 type=Creature

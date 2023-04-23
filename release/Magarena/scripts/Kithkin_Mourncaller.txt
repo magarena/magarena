@@ -1,5 +1,5 @@
 name=Kithkin Mourncaller
-image=https://magiccards.info/scans/en/lw/224.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a8b6f90-c609-4ffd-9136-9fd7a833ebb3.jpg?1562337722
 value=2.970
 rarity=U
 type=Creature

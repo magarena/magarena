@@ -1,5 +1,5 @@
 name=Disappear
-image=https://magiccards.info/scans/en/ud/30.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdf280f4-74a1-4e6f-aec6-1852f04204e4.jpg?1562445186
 value=2.870
 rarity=U
 type=Enchantment

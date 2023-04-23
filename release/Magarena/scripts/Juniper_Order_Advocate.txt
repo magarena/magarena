@@ -1,5 +1,5 @@
 name=Juniper Order Advocate
-image=https://magiccards.info/scans/en/ai/132.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/4552650d-242e-4f8b-9359-d4aa19207fac.jpg?1562868537
 value=3.712
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Juniper Order Ranger
-image=https://magiccards.info/scans/en/c16/207.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f299f1e-2694-44e6-aad4-1f29c2ee5553.jpg?1682209781
 image_updated=2017-08-17
 value=4.057
 rarity=U

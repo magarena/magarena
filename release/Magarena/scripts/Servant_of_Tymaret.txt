@@ -1,5 +1,5 @@
 name=Servant of Tymaret
-image=https://magiccards.info/scans/en/bng/82.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfb16d4f-ed42-4b19-9e45-330db88eea9b.jpg?1593092093
 value=3.833
 rarity=C
 type=Creature

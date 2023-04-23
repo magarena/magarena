@@ -1,5 +1,5 @@
 name=Ebonblade Reaper
-image=https://magiccards.info/scans/en/on/141.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16ebef2c-8bb2-4816-a628-0062f95e512e.jpg?1562900542
 value=3.121
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Harmonize
-image=https://magiccards.info/scans/en/mm3/128.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9390fbe8-944d-4a4f-90f3-cc7b355e1382.jpg?1673484621
 image_updated=2017-08-08
 value=3.737
 rarity=U

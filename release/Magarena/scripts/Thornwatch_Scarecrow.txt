@@ -1,5 +1,5 @@
 name=Thornwatch Scarecrow
-image=https://magiccards.info/scans/en/shm/265.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3489ac0a-cbdb-43d5-be73-6cb65ae54a20.jpg?1562828615
 value=2.068
 rarity=C
 type=Artifact,Creature

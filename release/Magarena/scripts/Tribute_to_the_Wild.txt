@@ -1,5 +1,5 @@
 name=Tribute to the Wild
-image=https://magiccards.info/scans/en/cmd/175.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54945049-b5ae-444a-bec0-0bdeb9d075a1.jpg?1591321061
 image_updated=2016-02-29
 value=3.000
 rarity=U

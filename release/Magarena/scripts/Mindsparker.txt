@@ -1,5 +1,5 @@
 name=Mindsparker
-image=https://magiccards.info/scans/en/m14/146.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a94295dc-d078-4f3f-9856-bd0a1899a9ca.jpg?1562833555
 value=3.640
 rarity=R
 type=Creature

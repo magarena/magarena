@@ -1,5 +1,5 @@
 name=Scavenger Folk
-image=https://magiccards.info/scans/en/7e/267.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/437d244a-fde1-459c-927f-52087fd9080f.jpg?1562910844
 value=3.657
 rarity=U
 type=Creature

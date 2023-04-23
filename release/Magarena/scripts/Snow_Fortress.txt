@@ -1,5 +1,5 @@
 name=Snow Fortress
-image=https://magiccards.info/scans/en/ia/312.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e283874b-a2c8-46a2-94ad-17d1fc6cc1e5.jpg?1562870943
 value=3.062
 rarity=R
 type=Artifact,Creature

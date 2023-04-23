@@ -1,5 +1,5 @@
 name=Twinblade Slasher
-image=https://magiccards.info/scans/en/eve/79.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0092d7a0-bd00-45e5-a052-c0a9d970bc2e.jpg?1562895101
 value=3.985
 rarity=U
 type=Creature

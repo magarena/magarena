@@ -1,5 +1,5 @@
 name=Returned Reveler
-image=https://magiccards.info/scans/en/jou/79.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ea61098-2c6a-48d2-b99f-f3065c67d8e3.jpg?1593095804
 value=2.816
 rarity=C
 type=Creature

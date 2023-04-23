@@ -1,5 +1,5 @@
 name=Zhang Fei, Fierce Warrior
-image=https://magiccards.info/scans/en/p3k/32.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/6364eba6-6aba-4c18-b9f0-aead17064b48.jpg?1562915758
 value=3.685
 rarity=R
 type=Legendary,Creature

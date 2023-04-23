@@ -1,5 +1,5 @@
 name=Screaming Seahawk
-image=https://magiccards.info/scans/en/cns/105.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc32c801-cc84-4d3a-a14f-67e28ccb95f2.jpg?1562867371
 value=2.571
 rarity=C
 type=Creature

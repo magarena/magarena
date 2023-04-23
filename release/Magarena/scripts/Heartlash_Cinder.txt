@@ -1,5 +1,5 @@
 name=Heartlash Cinder
-image=https://magiccards.info/scans/en/eve/56.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1c38e02-5df3-4655-a18f-a7be2c352b7b.jpg?1562946016
 value=2.939
 rarity=C
 type=Creature

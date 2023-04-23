@@ -1,5 +1,5 @@
 name=Sun-Crowned Hunters
-image=https://magiccards.info/scans/en/xln/164.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cab793e-0e17-4940-9cab-a30d62df5c20.jpg?1562553854
 value=2.500
 rarity=C
 type=Creature

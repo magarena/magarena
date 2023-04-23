@@ -1,5 +1,5 @@
 name=An-Havva Constable
-image=https://magiccards.info/scans/en/5e/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5955eb2b-31a2-4e1e-bbbe-82eb53def698.jpg?1562590880
 value=3.276
 rarity=R
 type=Creature

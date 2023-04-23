@@ -1,5 +1,5 @@
 name=Pretender's Claim
-image=https://magiccards.info/scans/en/mm/151.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cc29dab-9211-46bc-a98c-a5dbd5b0980a.jpg?1562379903
 value=2.854
 rarity=U
 type=Enchantment

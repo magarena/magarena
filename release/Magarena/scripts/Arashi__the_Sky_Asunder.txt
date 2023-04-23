@@ -1,5 +1,5 @@
 name=Arashi, the Sky Asunder
-image=https://magiccards.info/scans/en/sok/121.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95bfae4a-01fe-4309-9291-b3123395f057.jpg?1625194228
 value=3.931
 rarity=R
 type=Legendary,Creature

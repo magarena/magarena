@@ -1,5 +1,5 @@
 name=Frozen Solid
-image=https://magiccards.info/scans/en/cs/35.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72c00743-d208-4aed-939a-d70de2d759b9.jpg?1593274938
 value=2.943
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wretched Banquet
-image=https://magiccards.info/scans/en/cfx/56.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bdaf55b-2de3-4c8a-90ae-9c88c9d00fd7.jpg?1562800483
 value=2.926
 removal=4
 rarity=C

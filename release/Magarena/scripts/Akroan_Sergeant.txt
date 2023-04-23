@@ -1,5 +1,5 @@
 name=Akroan Sergeant
-image=https://magiccards.info/scans/en/ori/130.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31913547-460c-45b3-be23-89f0e3a43325.jpg?1562013673
 image_updated=2015-11-05
 value=2.500
 rarity=C

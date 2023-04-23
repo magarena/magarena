@@ -1,5 +1,5 @@
 name=Unwilling Recruit
-image=https://magiccards.info/scans/en/eve/64.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1cdd83c-50e2-4c04-a4fe-1fe2f545c7a2.jpg?1562932519
 value=3.481
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Vraska's Scorn
-image=https://magiccards.info/scans/en/rix/200.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/569ff807-365d-4f25-9fad-86617ed1c8f2.jpg?1555041181
 value=2.500
 rarity=R
 type=Sorcery

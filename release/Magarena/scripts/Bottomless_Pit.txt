@@ -1,5 +1,5 @@
 name=Bottomless Pit
-image=https://magiccards.info/scans/en/sh/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91f05fc3-da6e-45d4-8566-f4e7bdce1fe5.jpg?1562596885
 value=3.732
 rarity=U
 type=Enchantment

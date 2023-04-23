@@ -1,5 +1,5 @@
 name=Rowdy Crew
-image=https://magiccards.info/scans/en/xln/159.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdb3821a-ecc8-478d-93de-57200476868c.jpg?1562563198
 value=2.500
 rarity=M
 type=Creature

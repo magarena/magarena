@@ -1,5 +1,5 @@
 name=Raging Regisaur
-image=https://magiccards.info/scans/en/rix/168.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c1632bd-30bc-40a2-963f-44be3b42efb3.jpg?1601080507
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Demonspine Whip
-image=https://magiccards.info/scans/en/arb/39.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff5a4434-0d5e-4ba8-8d10-cba9b4db5713.jpg?1562645343
 value=3.000
 rarity=U
 type=Artifact

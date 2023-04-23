@@ -1,5 +1,5 @@
 name=Noxious Ghoul
-image=https://magiccards.info/scans/en/le/77.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d67511b-c130-44d5-8536-4278a695627c.jpg?1562842618
 image_updated=2017-01-01
 value=4.186
 rarity=U

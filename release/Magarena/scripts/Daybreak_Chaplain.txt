@@ -1,5 +1,5 @@
 name=Daybreak Chaplain
-image=https://magiccards.info/scans/en/m19/10.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0ce89a0b-d0e4-4c71-b131-0d3b0b76bc3b.jpg?1592516003
 value=2.500
 rarity=C
 type=Creature

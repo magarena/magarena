@@ -1,5 +1,5 @@
 name=Village Cannibals
-image=https://magiccards.info/scans/en/isd/125.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5400460-da9d-437b-bb81-cf382beb371e.jpg?1562835005
 value=3.250
 rarity=U
 type=Creature

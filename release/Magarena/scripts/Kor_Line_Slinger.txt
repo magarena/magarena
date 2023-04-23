@@ -1,5 +1,5 @@
 name=Kor Line-Slinger
-image=https://magiccards.info/scans/en/roe/30.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/068943d2-c456-42a3-8088-3e4923bf6d74.jpg?1562700833
 value=2.293
 rarity=C
 type=Creature

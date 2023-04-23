@@ -1,5 +1,5 @@
 name=Torment
-image=https://magiccards.info/scans/en/sh/23.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe74a415-ea8f-4f16-8889-ae649f1483b2.jpg?1562597856
 value=1.971
 rarity=C
 type=Enchantment

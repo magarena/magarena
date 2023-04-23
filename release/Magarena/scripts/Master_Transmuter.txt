@@ -1,5 +1,5 @@
 name=Master Transmuter
-image=https://magiccards.info/scans/en/cfx/31.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/480eb74f-9e62-41f7-b48a-b4249aab5752.jpg?1598304081
 image_updated=2016-12-23
 value=4.516
 rarity=R

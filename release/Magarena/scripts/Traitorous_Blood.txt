@@ -1,5 +1,5 @@
 name=Traitorous Blood
-image=https://magiccards.info/scans/en/isd/166.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8220f18a-f23f-4fe6-bb58-58b6c5f36c79.jpg?1562833116
 value=3.829
 removal=5
 rarity=C

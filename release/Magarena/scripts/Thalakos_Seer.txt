@@ -1,5 +1,5 @@
 name=Thalakos Seer
-image=https://magiccards.info/scans/en/tp/94.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50210dd8-83c6-4e64-a488-f8e7fd85d992.jpg?1562429368
 value=3.830
 rarity=C
 type=Creature

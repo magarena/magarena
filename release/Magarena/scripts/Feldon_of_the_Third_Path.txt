@@ -1,5 +1,5 @@
 name=Feldon of the Third Path
-image=https://magiccards.info/scans/en/c14/35.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.jpg?1682209311
 value=2.500
 rarity=M
 type=Legendary,Creature

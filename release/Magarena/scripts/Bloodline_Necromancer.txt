@@ -1,5 +1,5 @@
 name=Bloodline Necromancer
-image=https://magiccards.info/scans/en/c17/14.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f960d341-3b41-4b2d-a417-85a9b4cd8e4d.jpg?1641602341
 image_updated=2017-10-03
 value=2.500
 rarity=U

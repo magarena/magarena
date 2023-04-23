@@ -1,5 +1,5 @@
 name=Coastal Wizard
-image=https://magiccards.info/scans/en/po2/34.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b8c7377-1404-44a4-9689-1fc6cdc286c8.jpg?1562897614
 value=1.841
 rarity=R
 type=Creature

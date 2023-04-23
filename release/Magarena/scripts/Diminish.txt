@@ -1,5 +1,5 @@
 name=Diminish
-image=https://magiccards.info/scans/en/ima/50.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d468111-f7af-4ea2-a250-cd8c15ba60cc.jpg?1562852061
 image_updated=2017-04-12
 value=4.159
 removal=1

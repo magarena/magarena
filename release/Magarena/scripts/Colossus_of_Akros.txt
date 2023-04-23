@@ -1,5 +1,5 @@
 name=Colossus of Akros
-image=https://magiccards.info/scans/en/ths/214.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e394ffe-7460-4c59-a403-e9404b0d10c1.jpg?1562817037
 value=3.639
 rarity=R
 type=Artifact,Creature

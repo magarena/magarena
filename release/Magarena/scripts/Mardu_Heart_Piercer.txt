@@ -1,5 +1,5 @@
 name=Mardu Heart-Piercer
-image=https://magiccards.info/scans/en/ktk/116.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d17b6eee-da22-48aa-ba8a-cbd1a3389bcb.jpg?1562793937
 value=3.750
 rarity=U
 type=Creature

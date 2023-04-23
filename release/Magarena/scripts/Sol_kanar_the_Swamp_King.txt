@@ -1,5 +1,5 @@
 name=Sol'kanar the Swamp King
-image=https://magiccards.info/scans/en/tsts/100.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c56d4b5-08fb-4547-91e2-6e5f8fae408d.jpg?1562775925
 value=4.030
 rarity=R
 type=Legendary,Creature

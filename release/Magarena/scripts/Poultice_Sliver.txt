@@ -1,5 +1,5 @@
 name=Poultice Sliver
-image=https://magiccards.info/scans/en/pc/11.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc6db2cf-5171-4791-82b4-c9fac37902a3.jpg?1619393284
 value=2.198
 rarity=C
 type=Creature

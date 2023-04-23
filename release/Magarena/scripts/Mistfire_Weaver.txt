@@ -1,5 +1,5 @@
 name=Mistfire Weaver
-image=https://magiccards.info/scans/en/ktk/46.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8003a31f-7662-4e9e-8165-1ceea04fdf20.jpg?1562789282
 value=3.500
 rarity=U
 type=Creature

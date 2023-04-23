@@ -1,5 +1,5 @@
 name=Arvad the Cursed
-image=https://magiccards.info/scans/en/dom/191.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/475d3d3a-8df7-42e8-adeb-5810e48ddaa7.jpg?1682209665
 value=2.500
 rarity=U
 type=Legendary,Creature

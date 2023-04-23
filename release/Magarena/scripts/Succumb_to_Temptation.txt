@@ -1,5 +1,5 @@
 name=Succumb to Temptation
-image=https://magiccards.info/scans/en/emn/107.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2974e18b-be17-4059-9f29-7afe1d1a51eb.jpg?1576384434
 image_updated=2016-09-05
 value=2.500
 rarity=C

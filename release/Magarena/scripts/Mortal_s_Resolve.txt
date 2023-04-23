@@ -1,5 +1,5 @@
 name=Mortal's Resolve
-image=https://magiccards.info/scans/en/bng/127.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/131a96b4-393d-4e8e-9b6a-f15f3804febb.jpg?1593092513
 value=3.759
 rarity=C
 type=Instant

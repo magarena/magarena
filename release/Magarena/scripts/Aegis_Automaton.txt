@@ -1,5 +1,5 @@
 name=Aegis Automaton
-image=https://magiccards.info/scans/en/aer/141.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5f9fa2d-4bf4-4fcb-9b76-fd4a9ff5a58c.jpg?1576382187
 value=2.500
 rarity=C
 type=Artifact,Creature

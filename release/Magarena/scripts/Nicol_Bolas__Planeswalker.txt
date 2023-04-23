@@ -1,5 +1,5 @@
 name=Nicol Bolas, Planeswalker
-image=https://magiccards.info/scans/en/m13/199.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e80f2fc-06d4-4ce9-b23b-3e4af1208fa5.jpg?1592765962
 value=4.132
 rarity=M
 type=Legendary,Planeswalker

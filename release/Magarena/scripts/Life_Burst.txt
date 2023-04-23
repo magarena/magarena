@@ -1,5 +1,5 @@
 name=Life Burst
-image=https://magiccards.info/scans/en/od/30.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f8eee50-efd2-45fd-b815-051167ef4541.jpg?1562918634
 value=3.269
 rarity=C
 type=Instant

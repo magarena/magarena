@@ -1,5 +1,5 @@
 name=Fire Elemental
-image=https://magiccards.info/scans/en/m19/141.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4df16df8-3270-4a09-8167-5b6a2068edb9.jpg?1592516926
 image_updated=2018-08-07
 value=3.034
 rarity=C

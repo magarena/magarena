@@ -1,5 +1,5 @@
 name=Squee's Embrace
-image=https://magiccards.info/scans/en/ap/122.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e682a705-9341-4d1e-a9c5-d428e50b9a03.jpg?1562949897
 value=4.226
 rarity=C
 type=Enchantment

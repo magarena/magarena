@@ -1,5 +1,5 @@
 name=Benthicore
-image=https://magiccards.info/scans/en/lw/53.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f240d225-9fbf-438a-93c3-5fef325035e8.jpg?1562374180
 value=3.095
 rarity=U
 type=Creature

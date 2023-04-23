@@ -1,5 +1,5 @@
 name=Morbid Bloom
-image=https://magiccards.info/scans/en/arb/94.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/684ebc3a-e3b4-4dee-92ff-4a85556e0571.jpg?1562641819
 value=2.894
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Vulshok Heartstoker
-image=https://magiccards.info/scans/en/som/107.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d3152bc-5c59-4e98-95de-a51de05a3c98.jpg?1562820947
 value=2.339
 rarity=C
 type=Creature

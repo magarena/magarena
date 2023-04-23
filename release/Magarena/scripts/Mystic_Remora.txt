@@ -1,5 +1,5 @@
 name=Mystic Remora
-image=https://magiccards.info/scans/en/ia/87.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13a08c07-e8b8-43bf-99e6-d268c79a62bf.jpg?1559592432
 value=4.569
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Trophy Mage
-image=https://magiccards.info/scans/en/aer/48.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/5252794a-5cbe-45e3-b5c1-b27c667e9c17.jpg?1658650124
 value=2.500
 rarity=U
 type=Creature

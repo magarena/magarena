@@ -1,5 +1,5 @@
 name=Chandra's Defeat
-image=https://magiccards.info/scans/en/hou/86.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f38c6613-b1f7-4b38-b956-7860d041e593.jpg?1562820094
 value=2.500
 rarity=U
 type=Instant

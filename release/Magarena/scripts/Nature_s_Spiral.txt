@@ -1,5 +1,5 @@
 name=Nature's Spiral
-image=https://magiccards.info/scans/en/dom/175.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/6666b95e-80de-4bf7-bae6-8a7e991b38ad.jpg?1562736933
 image_updated=2018-08-07
 value=3.844
 rarity=U

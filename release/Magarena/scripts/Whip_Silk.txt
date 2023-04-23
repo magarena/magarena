@@ -1,5 +1,5 @@
 name=Whip Silk
-image=https://magiccards.info/scans/en/in/225.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10566804-fd15-4ef0-ad7d-cc979f4cc8c5.jpg?1562898296
 value=3.404
 rarity=C
 type=Enchantment

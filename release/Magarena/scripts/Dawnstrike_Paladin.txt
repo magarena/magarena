@@ -1,5 +1,5 @@
 name=Dawnstrike Paladin
-image=https://magiccards.info/scans/en/m14/15.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/549ca818-f7bf-47a8-9005-18ddabd3c360.jpg?1592751812
 image_updated=2016-09-12
 value=2.667
 rarity=C

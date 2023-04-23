@@ -1,5 +1,5 @@
 name=Elven Warhounds
-image=https://magiccards.info/scans/en/tp/119.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29138c1e-11cb-488f-8e04-f5488e08a81e.jpg?1562053265
 value=4.277
 rarity=R
 type=Creature

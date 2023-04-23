@@ -1,5 +1,5 @@
 name=Harmonic Convergence
-image=https://magiccards.info/scans/en/ul/103.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aafc380-cf4d-4843-b9c3-c389d9c5e942.jpg?1562863263
 value=3.500
 rarity=U
 type=Instant

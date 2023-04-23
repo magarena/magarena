@@ -1,5 +1,5 @@
 name=Searing Rays
-image=https://magiccards.info/scans/en/in/165.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f66ff2d-f2d2-4a6b-bf26-b510de60c0b6.jpg?1562911077
 value=3.271
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Call to Serve
-image=https://magiccards.info/scans/en/avr/9.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce4a3e80-6e95-4346-8ab8-eecc1a09ca24.jpg?1592708220
 value=2.800
 rarity=C
 type=Enchantment

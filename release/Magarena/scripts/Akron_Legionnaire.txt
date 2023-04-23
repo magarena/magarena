@@ -1,5 +1,5 @@
 name=Akron Legionnaire
-image=https://magiccards.info/scans/en/5e/278.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3e10240-8a4f-410f-a9b2-5df89d7038df.jpg?1562932965
 value=1.098
 rarity=R
 type=Creature

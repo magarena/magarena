@@ -1,5 +1,5 @@
 name=Sheltered Valley
-image=https://magiccards.info/scans/en/ai/187.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/049d7a08-1605-4ce2-b8c5-634ce2a261e0.jpg?1562767766
 value=2.511
 rarity=R
 type=Land

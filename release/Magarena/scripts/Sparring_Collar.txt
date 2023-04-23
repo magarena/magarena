@@ -1,5 +1,5 @@
 name=Sparring Collar
-image=https://magiccards.info/scans/en/5dn/154.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fc31145-19b4-4dbe-8756-f49791aa147e.jpg?1562877289
 value=2.942
 rarity=C
 type=Artifact

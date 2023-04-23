@@ -1,5 +1,5 @@
 name=Ringskipper
-image=https://magiccards.info/scans/en/lw/81.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72d3ae1f-5442-4725-a16a-502f13359a85.jpg?1562353293
 value=2.726
 rarity=C
 type=Creature

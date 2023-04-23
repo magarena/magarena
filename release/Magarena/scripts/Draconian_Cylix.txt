@@ -1,5 +1,5 @@
 name=Draconian Cylix
-image=https://magiccards.info/scans/en/fe/171.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a419c9e3-5615-44f9-9256-94a3022bb69f.jpg?1562925620
 value=2.013
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Cyclone Sire
-image=https://magiccards.info/scans/en/ogw/54.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bff62270-57ed-4706-bedf-11f60ae2da43.jpg?1562933591
 image_updated=2016-02-29
 value=2.500
 rarity=U

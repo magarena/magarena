@@ -1,5 +1,5 @@
 name=Nessian Courser
-image=https://magiccards.info/scans/en/fut/148.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4697f3aa-abde-4379-af82-f30115f59be0.jpg?1593860913
 value=3.034
 rarity=C
 type=Creature

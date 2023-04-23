@@ -1,5 +1,5 @@
 name=Piranha Marsh
-image=https://magiccards.info/scans/en/zen/222.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea077cff-b5c9-4a40-8e66-8810c37be5cb.jpg?1562617915
 value=3.509
 rarity=C
 type=Land

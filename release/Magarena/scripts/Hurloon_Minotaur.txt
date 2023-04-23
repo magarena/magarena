@@ -1,5 +1,5 @@
 name=Hurloon Minotaur
-image=https://magiccards.info/scans/en/5e/240.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb72cfc8-6235-4951-b1ba-6d9531f5eabf.jpg?1562944657
 value=3.117
 rarity=C
 type=Creature

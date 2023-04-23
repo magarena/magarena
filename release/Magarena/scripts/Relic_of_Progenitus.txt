@@ -1,5 +1,5 @@
 name=Relic of Progenitus
-image=https://magiccards.info/scans/en/ema/231.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/436cd66c-0622-43cd-8748-af4d21a2db3f.jpg?1580015265
 value=4.462
 rarity=U
 type=Artifact

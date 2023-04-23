@@ -1,5 +1,5 @@
 name=Zodiac Snake
-image=https://magiccards.info/scans/en/p3k/99.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d30d6f0-ca4c-4442-a47f-ecdf52088ecc.jpg?1562256574
 value=2.904
 rarity=C
 type=Creature

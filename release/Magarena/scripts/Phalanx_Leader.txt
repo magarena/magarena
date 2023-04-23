@@ -1,5 +1,5 @@
 name=Phalanx Leader
-image=https://magiccards.info/scans/en/ths/26.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96d22985-4354-4015-bd74-0ddf4f0cdf17.jpg?1547515719
 value=3.533
 rarity=U
 type=Creature

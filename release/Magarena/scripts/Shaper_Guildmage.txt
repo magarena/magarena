@@ -1,5 +1,5 @@
 name=Shaper Guildmage
-image=https://magiccards.info/scans/en/mr/91.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a9304e1-f403-404d-9fe9-169da75e0d62.jpg?1562719255
 value=3.014
 rarity=C
 type=Creature

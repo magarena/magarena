@@ -1,5 +1,5 @@
 name=Pride Guardian
-image=https://magiccards.info/scans/en/cns/77.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/578a583e-0bf3-4c50-be6f-ba447d21b8d1.jpg?1562865435
 value=3.200
 rarity=C
 type=Creature

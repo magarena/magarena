@@ -1,5 +1,5 @@
 name=Bloodscale Prowler
-image=https://magiccards.info/scans/en/gp/64.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8197cc43-c787-4372-81dc-759a9fe24708.jpg?1593272299
 value=2.402
 rarity=C
 type=Creature

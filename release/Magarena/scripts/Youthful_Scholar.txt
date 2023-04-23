@@ -1,5 +1,5 @@
 name=Youthful Scholar
-image=https://magiccards.info/scans/en/dtk/84.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43ae8147-bf25-44f9-b75f-837b81ebe0de.jpg?1562785431
 value=2.500
 rarity=U
 type=Creature

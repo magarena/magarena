@@ -1,5 +1,5 @@
 name=Flame Rift
-image=https://magiccards.info/scans/en/ne/80.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e63ed449-d249-4639-85d2-f8fe75496d5c.jpg?1626100460
 value=4.150
 rarity=C
 type=Sorcery

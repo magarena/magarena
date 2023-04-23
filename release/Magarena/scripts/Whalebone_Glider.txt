@@ -1,5 +1,5 @@
 name=Whalebone Glider
-image=https://magiccards.info/scans/en/cstd/47.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b75adf0-9501-4776-a213-456c2b821070.jpg?1587912188
 value=2.516
 rarity=U
 type=Artifact

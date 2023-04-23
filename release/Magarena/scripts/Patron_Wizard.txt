@@ -1,5 +1,5 @@
 name=Patron Wizard
-image=https://magiccards.info/scans/en/od/89.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10b863b8-7780-4bbe-a7f8-46bfdcb34a2b.jpg?1562898257
 value=4.039
 rarity=R
 type=Creature

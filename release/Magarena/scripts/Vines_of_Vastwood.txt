@@ -1,5 +1,5 @@
 name=Vines of Vastwood
-image=https://magiccards.info/scans/en/mm2/168.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6203e3d4-8998-41d6-9f7e-b68af0f1f8b5.jpg?1562263070
 value=4.176
 rarity=C
 type=Instant

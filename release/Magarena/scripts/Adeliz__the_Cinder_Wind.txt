@@ -1,5 +1,5 @@
 name=Adeliz, the Cinder Wind
-image=https://magiccards.info/scans/en/dom/190.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3c950e2-a43b-47f8-9ad6-1909ccc7acbf.jpg?1562741514
 value=2.500
 rarity=U
 type=Legendary,Creature

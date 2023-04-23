@@ -1,5 +1,5 @@
 name=Incurable Ogre
-image=https://magiccards.info/scans/en/ala/105.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5ad3381e-ae2f-40cf-8a7b-62375e9f453e.jpg?1562704324
 value=2.056
 rarity=C
 type=Creature

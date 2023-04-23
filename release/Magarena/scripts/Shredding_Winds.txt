@@ -1,5 +1,5 @@
 name=Shredding Winds
-image=https://magiccards.info/scans/en/ths/178.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33f36143-85b6-412c-8c79-053728b45c25.jpg?1562816513
 value=2.000
 rarity=C
 type=Instant

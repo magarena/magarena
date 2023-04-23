@@ -1,5 +1,5 @@
 name=Sunken Hope
-image=https://magiccards.info/scans/en/pc2/26.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73fe736d-9ffa-4e8b-a353-d591da749ec3.jpg?1562916522
 value=4.235
 rarity=R
 type=Enchantment

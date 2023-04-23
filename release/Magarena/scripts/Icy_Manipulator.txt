@@ -1,5 +1,5 @@
 name=Icy Manipulator
-image=https://magiccards.info/scans/en/dom/219.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fd9b205-817e-4ca4-8a29-3c2b6cbf7207.jpg?1562740411
 image_updated=2018-08-07
 value=4.260
 rarity=U

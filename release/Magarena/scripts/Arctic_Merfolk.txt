@@ -1,5 +1,5 @@
 name=Arctic Merfolk
-image=https://magiccards.info/scans/en/ps/21.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86369fe5-d86d-4f4c-8f3d-dedc174f2032.jpg?1562923309
 value=2.814
 rarity=C
 type=Creature

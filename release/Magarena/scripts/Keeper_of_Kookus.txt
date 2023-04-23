@@ -1,5 +1,5 @@
 name=Keeper of Kookus
-image=https://magiccards.info/scans/en/vi/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d11b6df4-449f-44ea-a4fa-f079bcd26a54.jpg?1562278643
 value=3.128
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Captain Sisay
-image=https://magiccards.info/scans/en/in/237.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d24d441c-f37f-44fe-8a93-f5c89df807e4.jpg?1562937244
 value=4.118
 rarity=R
 type=Legendary,Creature

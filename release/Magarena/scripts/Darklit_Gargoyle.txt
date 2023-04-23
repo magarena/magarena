@@ -1,5 +1,5 @@
 name=Darklit Gargoyle
-image=https://magiccards.info/scans/en/cfx/7.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e7162e5-8c56-457e-91eb-b8ae4d1b6adb.jpg?1562799857
 value=3.038
 rarity=C
 type=Artifact,Creature

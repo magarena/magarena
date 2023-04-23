@@ -1,5 +1,5 @@
 name=Lull
-image=https://magiccards.info/scans/en/a25/180.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bdb38b2-3eba-4b2e-b5d8-58e9ad799d1f.jpg?1562438078
 image_updated=2018-04-27
 value=4.015
 rarity=C

@@ -1,5 +1,5 @@
 name=Karplusan Giant
-image=https://magiccards.info/scans/en/ia/196.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67c031e0-7f5c-4c12-884b-d30eed5e888b.jpg?1562869037
 value=1.115
 rarity=U
 type=Creature

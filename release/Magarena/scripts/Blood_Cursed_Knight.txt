@@ -1,5 +1,5 @@
 name=Blood-Cursed Knight
-image=https://magiccards.info/scans/en/ori/211.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/644bb558-113e-4e49-a395-7e0036c3419c.jpg?1562023061
 image_updated=2015-11-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Lowland Oaf
-image=https://magiccards.info/scans/en/lw/184.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdaa7f6a-9639-4bee-aa12-20054d7975d5.jpg?1562368651
 value=2.621
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Opal Gargoyle
-image=https://magiccards.info/scans/en/us/25.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8a67943-8f07-445b-a84c-893879dae7ca.jpg?1562930556
 value=3.333
 rarity=C
 type=Enchantment

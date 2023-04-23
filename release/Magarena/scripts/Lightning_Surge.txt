@@ -1,5 +1,5 @@
 name=Lightning Surge
-image=https://magiccards.info/scans/en/ju/96.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0452d78d-eafc-4ccb-a478-d1f46bcefffe.jpg?1562628459
 value=3.314
 rarity=R
 type=Sorcery

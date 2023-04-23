@@ -1,5 +1,5 @@
 name=Shivan Emissary
-image=https://magiccards.info/scans/en/in/166.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/945c596e-492e-4cf5-857c-4ddbbdd78485.jpg?1562924931
 value=2.443
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mesa Falcon
-image=https://magiccards.info/scans/en/6e/31.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7ce1b8e-13ba-4eed-a445-435300f3101e.jpg?1562821357
 value=2.387
 rarity=C
 type=Creature

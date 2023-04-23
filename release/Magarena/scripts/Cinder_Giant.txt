@@ -1,5 +1,5 @@
 name=Cinder Giant
-image=https://magiccards.info/scans/en/wl/93.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de97c939-2c44-4c43-9d66-1087bcee692b.jpg?1562803770
 value=3.214
 rarity=U
 type=Creature

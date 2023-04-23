@@ -1,5 +1,5 @@
 name=Magma Vein
-image=https://magiccards.info/scans/en/od/203.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69ed2b52-2862-423c-8ce3-6c8232d9d92c.jpg?1562914619
 value=1.423
 rarity=U
 type=Enchantment

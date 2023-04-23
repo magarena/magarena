@@ -1,5 +1,5 @@
 name=Markov Patrician
-image=https://magiccards.info/scans/en/isd/107.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29c3d3f7-5e28-4fec-8422-87856fcd1e8e.jpg?1562827839
 value=3.096
 rarity=C
 type=Creature

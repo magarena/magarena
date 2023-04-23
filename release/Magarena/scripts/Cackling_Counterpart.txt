@@ -1,5 +1,5 @@
 name=Cackling Counterpart
-image=https://magiccards.info/scans/en/mm3/32.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02ad8a5a-9814-4fb5-90b1-95c0769be456.jpg?1593812997
 image_updated=2017-08-08
 value=3.802
 rarity=R

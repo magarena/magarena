@@ -1,5 +1,5 @@
 name=Liliana, Death's Majesty
-image=https://magiccards.info/scans/en/akh/97.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b63ae119-f91e-4d0d-8bbd-65350a4d47c4.jpg?1637633118
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

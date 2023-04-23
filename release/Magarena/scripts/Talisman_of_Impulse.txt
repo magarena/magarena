@@ -1,5 +1,5 @@
 name=Talisman of Impulse
-image=https://magiccards.info/scans/en/mi/254.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a00b65f7-70d0-4bbd-ac13-be24cc3374ee.jpg?1562152676
 value=3.143
 rarity=U
 type=Artifact

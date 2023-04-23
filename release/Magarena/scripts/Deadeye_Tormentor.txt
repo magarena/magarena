@@ -1,5 +1,5 @@
 name=Deadeye Tormentor
-image=https://magiccards.info/scans/en/xln/98.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d219fb0a-49a3-4711-9b37-a0c1b36f68d0.jpg?1562564403
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Crimson Kobolds
-image=https://magiccards.info/scans/en/lg/219.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/889f4908-42c0-46e2-a83f-394d9fcd58ba.jpg?1562923812
 value=4.047
 rarity=C
 type=Creature

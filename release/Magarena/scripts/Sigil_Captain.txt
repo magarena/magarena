@@ -1,5 +1,5 @@
 name=Sigil Captain
-image=https://magiccards.info/scans/en/cmd/225.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9be8a9e-28d5-4acc-9f7d-a05cb3607bbb.jpg?1592714269
 value=3.082
 rarity=U
 type=Creature

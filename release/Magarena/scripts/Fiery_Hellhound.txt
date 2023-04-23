@@ -1,5 +1,5 @@
 name=Fiery Hellhound
-image=https://magiccards.info/scans/en/ori/284.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8980efa5-bd21-4980-91a7-5e66528b1011.jpg?1562029844
 image_updated=2010-09-10
 value=2.864
 rarity=C

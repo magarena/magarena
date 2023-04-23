@@ -1,5 +1,5 @@
 name=Teleport
-image=https://magiccards.info/scans/en/lg/80.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39c65d23-4bc5-4f79-a0e5-0cd4b2660f96.jpg?1562906660
 image_updated=2017-01-10
 value=1.755
 rarity=R

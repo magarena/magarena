@@ -1,5 +1,5 @@
 name=Vine Mare
-image=https://magiccards.info/scans/en/m19/207.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9980835-cd32-4870-88df-c79cd5534968.jpg?1562303874
 value=2.500
 rarity=U
 type=Creature

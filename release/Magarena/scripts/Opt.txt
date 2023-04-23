@@ -1,5 +1,5 @@
 name=Opt
-image=https://magiccards.info/scans/en/dom/60.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/323db259-d35e-467d-9a46-4adcb2fc107c.jpg?1652898493
 image_updated=2018-08-07
 value=4.164
 rarity=C

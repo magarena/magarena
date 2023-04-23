@@ -1,5 +1,5 @@
 name=Jarad, Golgari Lich Lord
-image=https://magiccards.info/scans/en/rtr/174.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6717954-35d8-4d7e-95aa-f7d26d15d4b2.jpg?1592673383
 image_updated=2016-02-29
 value=3.943
 rarity=M

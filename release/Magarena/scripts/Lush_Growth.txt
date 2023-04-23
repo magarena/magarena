@@ -1,5 +1,5 @@
 name=Lush Growth
-image=https://magiccards.info/scans/en/ala/136.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d62047f2-a41f-44b5-a6bc-28e35fad093b.jpg?1562709522
 value=2.826
 rarity=C
 type=Enchantment

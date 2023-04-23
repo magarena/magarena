@@ -1,5 +1,5 @@
 name=Dragon Fodder
-image=https://magiccards.info/scans/en/mm3/93.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdb5eab0-5397-4c00-8cef-7d3baf38a171.jpg?1601077510
 image_updated=2017-08-08
 value=2.500
 rarity=C

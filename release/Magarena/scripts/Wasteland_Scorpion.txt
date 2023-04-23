@@ -1,5 +1,5 @@
 name=Wasteland Scorpion
-image=https://magiccards.info/scans/en/akh/116.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bab1782-498c-40fc-bf2e-5c991d0c3501.jpg?1543675466
 value=2.500
 rarity=C
 type=Creature

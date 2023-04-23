@@ -1,5 +1,5 @@
 name=Perplex
-image=https://magiccards.info/scans/en/rav/217.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0db57459-29f0-4ef6-b256-56955036c0ef.jpg?1598917204
 value=4.012
 rarity=C
 type=Instant

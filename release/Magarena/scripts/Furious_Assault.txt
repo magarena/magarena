@@ -1,5 +1,5 @@
 name=Furious Assault
-image=https://magiccards.info/scans/en/mm/191.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27a07fae-0f34-45e7-b22d-97eea9031022.jpg?1562379456
 value=3.064
 rarity=C
 type=Enchantment

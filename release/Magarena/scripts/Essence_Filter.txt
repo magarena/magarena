@@ -1,5 +1,5 @@
 name=Essence Filter
-image=https://magiccards.info/scans/en/ia/121.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcd5fdd0-8f33-4e98-8c21-f62c5f4c89c9.jpg?1562870938
 value=3.850
 rarity=C
 type=Sorcery

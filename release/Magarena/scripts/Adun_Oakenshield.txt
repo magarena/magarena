@@ -1,5 +1,5 @@
 name=Adun Oakenshield
-image=https://magiccards.info/scans/en/lg/256.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/184da30e-0db4-450c-8856-5c23088c35be.jpg?1559592345
 value=3.806
 rarity=R
 type=Legendary,Creature

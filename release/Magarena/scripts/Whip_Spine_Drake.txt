@@ -1,5 +1,5 @@
 name=Whip-Spine Drake
-image=https://magiccards.info/scans/en/fut/62.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a80e0723-0d0a-42df-90ac-0ba9b5c3a82d.jpg?1619394998
 value=3.110
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mind Peel
-image=https://magiccards.info/scans/en/sh/13.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92bd531c-fdd1-4a22-816e-258b2975c1a3.jpg?1562596886
 value=3.242
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Granite Grip
-image=https://magiccards.info/scans/en/7e/195.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/908c8414-5eff-4887-9007-43050058c2d0.jpg?1562243098
 value=3.086
 rarity=C
 type=Enchantment

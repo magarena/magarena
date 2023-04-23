@@ -1,5 +1,5 @@
 name=Hour of Devastation
-image=https://magiccards.info/scans/en/hou/97.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d420cc12-cfd7-4007-a0c2-b16c8f63a754.jpg?1562816057
 value=2.500
 rarity=R
 type=Sorcery

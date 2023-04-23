@@ -1,5 +1,5 @@
 name=Tranquil Domain
-image=https://magiccards.info/scans/en/mr/143.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/801f34a6-9f22-43c2-b1e5-194395cc7da1.jpg?1587912677
 value=3.267
 rarity=C
 type=Instant

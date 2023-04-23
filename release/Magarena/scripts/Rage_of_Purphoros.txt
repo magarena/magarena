@@ -1,5 +1,5 @@
 name=Rage of Purphoros
-image=https://magiccards.info/scans/en/ths/137.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e249f31-cc67-4d0c-9db5-962d10cf74ca.jpg?1562815456
 value=2.194
 rarity=C
 type=Sorcery

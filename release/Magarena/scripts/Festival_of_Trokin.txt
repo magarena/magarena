@@ -1,5 +1,5 @@
 name=Festival of Trokin
-image=https://magiccards.info/scans/en/po2/136.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5bd783b-d4cd-4a53-8fec-a5ead7c14738.jpg?1562953246
 value=3.958
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Spirit Shackle
-image=https://magiccards.info/scans/en/4e/47.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/686898fa-353b-46a6-ace3-677a1a88bb3b.jpg?1562916832
 value=2.077
 rarity=U
 type=Enchantment

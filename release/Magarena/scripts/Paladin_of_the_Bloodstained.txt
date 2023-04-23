@@ -1,5 +1,5 @@
 name=Paladin of the Bloodstained
-image=https://magiccards.info/scans/en/xln/25.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a0385d5-d0f4-40b8-af28-6557ffdfb625.jpg?1562555953
 value=2.500
 rarity=C
 type=Creature

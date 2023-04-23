@@ -1,5 +1,5 @@
 name=Liliana's Contract
-image=https://magiccards.info/scans/en/m19/107.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/750e6246-c28d-46ed-9966-26706f6d3172.jpg?1562302716
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Aetherstream Leopard
-image=https://magiccards.info/scans/en/aer/103.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f3a727a-5eca-44de-aa8f-0d2573db83eb.jpg?1576381940
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Precinct Captain
-image=https://magiccards.info/scans/en/rtr/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fef6faa4-520c-4823-bfdf-715cec7fcd4b.jpg?1592765404
 image_updated=2017-01-03
 value=3.800
 rarity=R

@@ -1,5 +1,5 @@
 name=Underworld Connections
-image=https://magiccards.info/scans/en/rtr/83.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1df71add-7bb6-4687-bb69-cf4450adb7dc.jpg?1641602908
 image_updated=2016-02-29
 value=3.921
 rarity=R

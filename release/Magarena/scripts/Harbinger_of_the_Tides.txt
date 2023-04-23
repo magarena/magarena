@@ -1,5 +1,5 @@
 name=Harbinger of the Tides
-image=https://magiccards.info/scans/en/ori/58.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90f648d2-27be-4414-9e0a-5a3e4d5067ce.jpg?1592764587
 image_updated=2015-11-05
 value=2.500
 rarity=R

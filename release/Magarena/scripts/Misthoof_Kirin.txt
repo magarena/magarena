@@ -1,5 +1,5 @@
 name=Misthoof Kirin
-image=https://magiccards.info/scans/en/dtk/25.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccef8595-96e8-4df3-aa5a-9fc8c5fa9a3d.jpg?1562793228
 value=2.500
 rarity=C
 type=Creature

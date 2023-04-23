@@ -1,5 +1,5 @@
 name=Cultivator's Caravan
-image=https://magiccards.info/scans/en/kld/203.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7630d44d-6950-40c8-bc75-d857cdb91dea.jpg?1682209996
 image_updated=2016-10-05
 value=2.500
 rarity=R

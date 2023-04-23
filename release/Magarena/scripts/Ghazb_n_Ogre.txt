@@ -1,5 +1,5 @@
 name=Ghazbán Ogre
-image=https://magiccards.info/scans/en/5e/160.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e14cf3a-3c5a-4c22-88d1-1b19660b2e2a.jpg?1559592579
 value=3.100
 rarity=C
 type=Creature

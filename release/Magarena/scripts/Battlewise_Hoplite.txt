@@ -1,5 +1,5 @@
 name=Battlewise Hoplite
-image=https://magiccards.info/scans/en/ths/189.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c929a57-2c23-4bbf-b265-666630a4fde8.jpg?1562817817
 value=3.600
 rarity=U
 type=Creature

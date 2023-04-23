@@ -1,5 +1,5 @@
 name=Dirtwater Wraith
-image=https://magiccards.info/scans/en/mr/15.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcc3fa22-a4c4-423d-969b-98c65b23e782.jpg?1562722875
 value=2.857
 rarity=C
 type=Creature

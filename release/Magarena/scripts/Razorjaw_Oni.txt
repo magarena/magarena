@@ -1,5 +1,5 @@
 name=Razorjaw Oni
-image=https://magiccards.info/scans/en/cmd/94.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc2f0652-acb6-4392-968e-7d0e9143a925.jpg?1592672686
 value=2.541
 rarity=U
 type=Creature

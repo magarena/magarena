@@ -1,5 +1,5 @@
 name=Alchor's Tomb
-image=https://magiccards.info/scans/en/lg/214.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e10ad2c6-b401-4a4e-bdce-705e2b87f492.jpg?1562948572
 value=2.904
 rarity=R
 type=Artifact

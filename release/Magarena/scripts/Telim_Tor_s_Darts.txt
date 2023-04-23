@@ -1,5 +1,5 @@
 name=Telim'Tor's Darts
-image=https://magiccards.info/scans/en/mr/286.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59733b76-3b44-4543-8bb2-a160232cee27.jpg?1562719279
 value=2.310
 rarity=U
 type=Artifact

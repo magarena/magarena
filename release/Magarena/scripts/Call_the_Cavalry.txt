@@ -1,5 +1,5 @@
 name=Call the Cavalry
-image=https://magiccards.info/scans/en/dom/9.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5ffd9de5-c0b9-4d41-ab11-c77ce6f67c60.jpg?1592764688
 value=2.500
 rarity=C
 type=Sorcery

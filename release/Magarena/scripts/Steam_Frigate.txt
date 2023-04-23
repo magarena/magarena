@@ -1,5 +1,5 @@
 name=Steam Frigate
-image=https://magiccards.info/scans/en/po2/47.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec3193cb-2c00-4ef8-bf2e-d3b1e3b875a3.jpg?1595438256
 value=2.143
 rarity=C
 type=Creature

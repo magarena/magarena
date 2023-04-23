@@ -1,5 +1,5 @@
 name=Bitter Revelation
-image=https://magiccards.info/scans/en/ktk/65.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25657da2-e7bc-4e9b-8ec2-5a5779738436.jpg?1608909577
 value=2.700
 rarity=C
 type=Sorcery

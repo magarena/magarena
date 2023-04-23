@@ -1,5 +1,5 @@
 name=Kathari Remnant
-image=https://magiccards.info/scans/en/pc2/98.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a992f9f-63f6-47fe-8f0b-976122043f4d.jpg?1562908640
 value=2.814
 rarity=U
 type=Creature

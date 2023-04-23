@@ -1,5 +1,5 @@
 name=Sage of Lat-Nam
-image=https://magiccards.info/scans/en/dom/64.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7395b77-f7f7-404b-8639-9db6dc28d558.jpg?1562745828
 image_updated=2018-08-07
 value=3.431
 rarity=U

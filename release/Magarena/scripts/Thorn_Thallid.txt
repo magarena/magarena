@@ -1,5 +1,5 @@
 name=Thorn Thallid
-image=https://magiccards.info/scans/en/fe/99.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0edfae02-5e0d-47e2-9bd5-96dbfc2eeaca.jpg?1559592414
 value=2.932
 rarity=C
 type=Creature

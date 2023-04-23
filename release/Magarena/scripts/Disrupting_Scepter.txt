@@ -1,5 +1,5 @@
 name=Disrupting Scepter
-image=https://magiccards.info/scans/en/9e/295.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55be5981-5bbc-4621-9f53-fc4edd4fde7e.jpg?1562735449
 value=3.094
 rarity=R
 type=Artifact

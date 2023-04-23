@@ -1,5 +1,5 @@
 name=Lupine Prototype
-image=https://magiccards.info/scans/en/emn/197.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd8272ca-8e3d-4980-99f2-352a1db76d74.jpg?1576385076
 image_updated=2016-09-05
 value=2.500
 rarity=R

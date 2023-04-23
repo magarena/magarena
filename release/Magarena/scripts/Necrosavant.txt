@@ -1,5 +1,5 @@
 name=Necrosavant
-image=https://magiccards.info/scans/en/6e/145.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/164a9755-f003-456d-a827-d6ef6cc29a86.jpg?1562814959
 value=3.581
 rarity=R
 type=Creature

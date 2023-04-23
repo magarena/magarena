@@ -1,5 +1,5 @@
 name=Joint Assault
-image=https://magiccards.info/scans/en/avr/183.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/6516c7c6-d49b-49c5-8968-563622c2c8c1.jpg?1592709378
 value=2.951
 rarity=C
 type=Instant

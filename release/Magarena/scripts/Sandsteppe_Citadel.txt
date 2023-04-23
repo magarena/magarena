@@ -1,5 +1,5 @@
 name=Sandsteppe Citadel
-image=https://magiccards.info/scans/en/c16/320.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5265db7-5165-469c-bdff-978a5cefc034.jpg?1673306192
 image_updated=2017-08-17
 value=3.750
 rarity=U

@@ -1,5 +1,5 @@
 name=False Defeat
-image=https://magiccards.info/scans/en/p3k/4.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e95d2fb2-66ca-4954-b9c5-074ae813e9ed.jpg?1562944211
 value=3.929
 rarity=C
 type=Sorcery

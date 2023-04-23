@@ -1,5 +1,5 @@
 name=Viashino Sandscout
-image=https://magiccards.info/scans/en/10e/246.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/102f139d-1baf-4ca6-a940-70b7efdc29f2.jpg?1562543863
 value=3.114
 rarity=C
 type=Creature

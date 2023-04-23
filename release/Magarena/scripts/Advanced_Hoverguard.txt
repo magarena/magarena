@@ -1,5 +1,5 @@
 name=Advanced Hoverguard
-image=https://magiccards.info/scans/en/5dn/22.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/7384d50a-5801-47ed-ab9f-5c7e4f1f20dd.jpg?1562877745
 value=2.326
 rarity=C
 type=Creature

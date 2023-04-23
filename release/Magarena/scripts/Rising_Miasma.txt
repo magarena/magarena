@@ -1,5 +1,5 @@
 name=Rising Miasma
-image=https://magiccards.info/scans/en/bfz/122.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f9a8e87-3b8b-4dbf-9c1e-0a3290a33a0b.jpg?1562913657
 image_updated=2015-11-08
 value=2.500
 rarity=U

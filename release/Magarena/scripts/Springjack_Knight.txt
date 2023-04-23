@@ -1,5 +1,5 @@
 name=Springjack Knight
-image=https://magiccards.info/scans/en/lw/41.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75fa0c72-427b-4797-b5b1-15f07fc5fa07.jpg?1562353783
 value=2.803
 rarity=C
 type=Creature

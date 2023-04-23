@@ -1,5 +1,5 @@
 name=Inspired Sprite
-image=https://magiccards.info/scans/en/mt/37.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/0960dc0a-907b-4e02-a0b5-dd2613be8e65.jpg?1562876712
 value=3.154
 rarity=U
 type=Creature

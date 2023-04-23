@@ -1,5 +1,5 @@
 name=Tezzeret's Ambition
-image=https://magiccards.info/scans/en/kld/65.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c3700b0-d6b5-4967-add8-3adc2bc8ca86.jpg?1576381438
 image_updated=2016-10-05
 value=2.500
 rarity=C

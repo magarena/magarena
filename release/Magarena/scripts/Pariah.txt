@@ -1,5 +1,5 @@
 name=Pariah
-image=https://magiccards.info/scans/en/cn2/95.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51b2136c-392c-436d-9263-b3236adc4a10.jpg?1576382302
 image_updated=2017-08-29
 value=4.344
 rarity=R

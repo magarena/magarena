@@ -1,5 +1,5 @@
 name=Gang of Elk
-image=https://magiccards.info/scans/en/7e/247.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd0a61c9-8b14-4255-8453-4b74d90fe0a3.jpg?1562248146
 value=3.581
 rarity=U
 type=Creature

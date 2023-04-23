@@ -1,5 +1,5 @@
 name=Afterlife
-image=https://magiccards.info/scans/en/c14/64.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/258946f2-294a-4ddf-be91-9ff4c94e4bdb.jpg?1561936266
 value=3.375
 removal=3
 rarity=U

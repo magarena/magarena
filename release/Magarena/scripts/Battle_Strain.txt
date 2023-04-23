@@ -1,5 +1,5 @@
 name=Battle Strain
-image=https://magiccards.info/scans/en/od/177.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee1be893-1287-40a3-81d6-271df3154b45.jpg?1562939683
 value=2.981
 rarity=U
 type=Enchantment

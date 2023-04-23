@@ -1,5 +1,5 @@
 name=Reckless Bushwhacker
-image=https://magiccards.info/scans/en/ogw/116.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0405b1b9-976a-4aaf-bec6-fa006decea74.jpg?1562895780
 image_updated=2016-02-29
 value=2.500
 rarity=U

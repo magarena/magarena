@@ -1,5 +1,5 @@
 name=Towering Baloth
-image=https://magiccards.info/scans/en/on/292.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a8cc948-28ff-4bbe-b8c9-71de37478023.jpg?1562905065
 value=2.344
 rarity=U
 type=Creature

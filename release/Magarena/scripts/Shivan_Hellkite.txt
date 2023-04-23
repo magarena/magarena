@@ -1,5 +1,5 @@
 name=Shivan Hellkite
-image=https://magiccards.info/scans/en/10e/231.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d33cfe2d-150d-4ab7-990a-c8b0b6ff4d37.jpg?1631587471
 value=4.030
 rarity=R
 type=Creature

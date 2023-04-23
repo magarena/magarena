@@ -1,5 +1,5 @@
 name=Captain's Claws
-image=https://magiccards.info/scans/en/ogw/162.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/521ee576-5a51-4353-af38-c461f05d66ce.jpg?1562911658
 image_updated=2016-02-29
 value=2.500
 rarity=R

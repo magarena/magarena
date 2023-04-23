@@ -1,5 +1,5 @@
 name=Hour of Revelation
-image=https://magiccards.info/scans/en/hou/15.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddb53e90-f91e-4da9-ab70-5460958c6c99.jpg?1604195708
 value=2.500
 rarity=R
 type=Sorcery

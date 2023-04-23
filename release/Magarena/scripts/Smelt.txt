@@ -1,5 +1,5 @@
 name=Smelt
-image=https://magiccards.info/scans/en/m19/158.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a13293d-89a7-400c-8309-9f62eeb4769c.jpg?1562303369
 image_updated=2018-08-07
 value=4.255
 removal=1

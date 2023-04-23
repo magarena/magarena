@@ -1,5 +1,5 @@
 name=Benalish Knight
-image=https://magiccards.info/scans/en/10e/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0ae60d0-20d3-452c-9953-e229567c06f5.jpg?1562555583
 value=4.000
 rarity=C
 type=Creature

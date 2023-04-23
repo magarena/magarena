@@ -1,5 +1,5 @@
 name=Artificer's Assistant
-image=https://magiccards.info/scans/en/dom/44.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/deadf867-b999-49b2-88d8-91da975a3cc5.jpg?1562744145
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bronze Sable
-image=https://magiccards.info/scans/en/cn2/208.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a95f8df0-3490-47ad-b452-76fe60179242.jpg?1593860898
 image_updated=2017-08-17
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Fight to the Death
-image=https://magiccards.info/scans/en/arb/97.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5552ca9b-0245-4f91-9646-a5b5443863a2.jpg?1562641354
 value=3.435
 rarity=R
 type=Instant

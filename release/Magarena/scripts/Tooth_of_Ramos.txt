@@ -1,5 +1,5 @@
 name=Tooth of Ramos
-image=https://magiccards.info/scans/en/mm/313.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a3b999d-8e63-4647-a921-15e169022096.jpg?1562382071
 value=3.196
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Heat of Battle
-image=https://magiccards.info/scans/en/sh/88.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8dbb98db-f2ee-446f-9170-dd05b1a7dbd8.jpg?1562596882
 value=3.210
 rarity=U
 type=Enchantment

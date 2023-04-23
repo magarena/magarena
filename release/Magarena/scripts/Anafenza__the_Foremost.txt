@@ -1,5 +1,5 @@
 name=Anafenza, the Foremost
-image=https://magiccards.info/scans/en/ktk/163.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8b432a7-53da-4480-b571-e6feb1364a3a.jpg?1562793427
 value=4.100
 rarity=M
 type=Legendary,Creature

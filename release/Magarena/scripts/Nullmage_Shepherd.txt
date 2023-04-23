@@ -1,5 +1,5 @@
 name=Nullmage Shepherd
-image=https://magiccards.info/scans/en/rav/174.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4a15a09-cf68-411a-a18d-aaad00d308c9.jpg?1631235082
 value=3.728
 rarity=U
 type=Creature

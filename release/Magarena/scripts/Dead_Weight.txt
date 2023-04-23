@@ -1,5 +1,5 @@
 name=Dead Weight
-image=https://magiccards.info/scans/en/soi/106.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecf18476-f67b-46e6-905c-e6808981c58a.jpg?1591226721
 image_updated=2010-09-10
 value=3.787
 rarity=C

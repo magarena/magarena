@@ -1,5 +1,5 @@
 name=Verdant Force
-image=https://magiccards.info/scans/en/dom/187.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d972f97-1945-440b-8bd3-63038db22257.jpg?1562732288
 image_updated=2018-08-07
 value=4.083
 rarity=R

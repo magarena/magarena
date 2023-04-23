@@ -1,5 +1,5 @@
 name=Mycoloth
-image=https://magiccards.info/scans/en/c16/158.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3f7faed-de6b-404f-b54f-e60d5b55485b.jpg?1592673086
 image_updated=2017-08-17
 value=3.619
 rarity=R

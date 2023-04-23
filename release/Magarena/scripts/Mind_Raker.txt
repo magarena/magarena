@@ -1,5 +1,5 @@
 name=Mind Raker
-image=https://magiccards.info/scans/en/bfz/95.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4d07fea-e16a-45e3-a172-9d726cd42769.jpg?1562933907
 image_updated=2015-11-08
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Genesis Wave
-image=https://magiccards.info/scans/en/ima/164.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/5007919b-27d3-46e7-a588-ce796709d565.jpg?1562848877
 image_updated=2017-04-12
 value=4.088
 rarity=R

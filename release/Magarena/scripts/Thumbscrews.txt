@@ -1,5 +1,5 @@
 name=Thumbscrews
-image=https://magiccards.info/scans/en/tp/302.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71025a6b-3aed-4943-a907-9584d135f6c0.jpg?1562054477
 value=2.355
 rarity=R
 type=Artifact

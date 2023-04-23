@@ -1,5 +1,5 @@
 name=Veteran's Reflexes
-image=https://magiccards.info/scans/en/wwk/23.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/783f220b-f860-4ebb-a424-22598bdd6fae.jpg?1562289979
 value=2.824
 rarity=C
 type=Instant

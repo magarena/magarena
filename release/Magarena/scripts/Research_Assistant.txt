@@ -1,5 +1,5 @@
 name=Research Assistant
-image=https://magiccards.info/scans/en/m15/77.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4ac8a7c0-d935-4a60-ac32-dde73f5c75da.jpg?1562786540
 value=2.071
 rarity=C
 type=Creature

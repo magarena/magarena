@@ -1,5 +1,5 @@
 name=Spell Contortion
-image=https://magiccards.info/scans/en/wwk/38.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b748d8b-898f-4b55-bc33-f5bbbc823c45.jpg?1562286779
 value=2.500
 rarity=U
 type=Instant

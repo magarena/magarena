@@ -1,5 +1,5 @@
 name=Phyrexian Hydra
-image=https://magiccards.info/scans/en/mbs/85.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb135aa1-9f46-4d60-a1a4-97aa0e852ced.jpg?1562614800
 value=3.615
 rarity=R
 type=Creature

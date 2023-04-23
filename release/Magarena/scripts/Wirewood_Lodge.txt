@@ -1,5 +1,5 @@
 name=Wirewood Lodge
-image=https://magiccards.info/scans/en/on/329.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15a92571-1409-40c3-84c3-da01d6f1b104.jpg?1562899378
 image_updated=2017-01-11
 value=4.361
 rarity=U

@@ -1,5 +1,5 @@
 name=Wreath of Geists
-image=https://magiccards.info/scans/en/isd/211.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7604e22e-1f29-4a8f-b887-b18f43e3745e.jpg?1562832301
 value=3.491
 rarity=U
 type=Enchantment

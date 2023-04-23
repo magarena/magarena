@@ -1,5 +1,5 @@
 name=Blasted Landscape
-image=https://magiccards.info/scans/en/us/319.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55776293-fde5-481e-a069-31721866a7d7.jpg?1562273906
 image_updated=2016-02-29
 value=3.602
 rarity=U

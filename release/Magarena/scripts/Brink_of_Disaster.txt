@@ -1,5 +1,5 @@
 name=Brink of Disaster
-image=https://magiccards.info/scans/en/m12/84.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbab78cd-a899-4c5d-86b3-0666adadba87.jpg?1562662633
 value=1.880
 removal=4
 rarity=C

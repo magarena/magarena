@@ -1,5 +1,5 @@
 name=Coerced Confession
-image=https://magiccards.info/scans/en/gtc/217.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d76102f1-b05f-472b-81cf-eae424c55638.jpg?1561848577
 value=2.200
 rarity=U
 type=Sorcery

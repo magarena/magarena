@@ -1,5 +1,5 @@
 name=Living Wall
-image=https://magiccards.info/scans/en/rv/262.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ed9efc7-65ea-425d-bd03-6f6c668db1df.jpg?1562924913
 value=3.848
 rarity=U
 type=Artifact,Creature

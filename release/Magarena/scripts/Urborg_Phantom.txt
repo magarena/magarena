@@ -1,5 +1,5 @@
 name=Urborg Phantom
-image=https://magiccards.info/scans/en/in/132.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/397355b9-5b67-4973-972e-3505c500d116.jpg?1562906570
 value=2.773
 rarity=C
 type=Creature

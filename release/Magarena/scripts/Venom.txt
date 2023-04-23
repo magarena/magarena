@@ -1,5 +1,5 @@
 name=Venom
-image=https://magiccards.info/scans/en/5e/198.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbb503ef-31a4-492d-9c7d-26b72c36904b.jpg?1595873015
 value=3.786
 rarity=C
 type=Enchantment

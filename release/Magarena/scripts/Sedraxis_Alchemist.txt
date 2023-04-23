@@ -1,5 +1,5 @@
 name=Sedraxis Alchemist
-image=https://magiccards.info/scans/en/cfx/54.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fbbc5d7-86d0-4e09-b37c-e40eb88f3f33.jpg?1562802072
 value=3.059
 rarity=C
 type=Creature

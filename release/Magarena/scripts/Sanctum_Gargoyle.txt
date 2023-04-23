@@ -1,5 +1,5 @@
 name=Sanctum Gargoyle
-image=https://magiccards.info/scans/en/c16/76.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7678e008-f054-485d-ae21-6b97f83dd824.jpg?1625975590
 image_updated=2017-08-17
 value=4.000
 rarity=C

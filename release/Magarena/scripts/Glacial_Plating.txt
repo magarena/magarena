@@ -1,5 +1,5 @@
 name=Glacial Plating
-image=https://magiccards.info/scans/en/cs/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55742f0f-a894-48c3-82b1-dfc3d8390dc3.jpg?1593274743
 value=2.976
 rarity=U
 type=Snow,Enchantment

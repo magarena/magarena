@@ -1,5 +1,5 @@
 name=Aven Trooper
-image=https://magiccards.info/scans/en/tr/2.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79c8f774-6d4f-4fd0-85c0-26ef713e6b89.jpg?1574250389
 value=0.812
 rarity=C
 type=Creature

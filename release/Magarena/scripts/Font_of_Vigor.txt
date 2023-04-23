@@ -1,5 +1,5 @@
 name=Font of Vigor
-image=https://magiccards.info/scans/en/jou/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4ef3a8e-ef8b-417a-a3a9-cb0ce88cb0c9.jpg?1593095237
 value=1.339
 rarity=C
 type=Enchantment

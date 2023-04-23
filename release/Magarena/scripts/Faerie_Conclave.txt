@@ -1,5 +1,5 @@
 name=Faerie Conclave
-image=https://magiccards.info/scans/en/10e/351.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f4ab639-b439-462e-acc3-69b5d6bb29da.jpg?1592673795
 value=4.389
 rarity=U
 type=Land

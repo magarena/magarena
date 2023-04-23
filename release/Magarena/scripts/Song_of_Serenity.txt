@@ -1,5 +1,5 @@
 name=Song of Serenity
-image=https://magiccards.info/scans/en/ex/125.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2ba85b2f-37da-4595-9880-8e9f1ddbac09.jpg?1562087373
 value=3.640
 rarity=U
 type=Enchantment

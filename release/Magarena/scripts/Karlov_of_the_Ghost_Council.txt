@@ -1,5 +1,5 @@
 name=Karlov of the Ghost Council
-image=https://magiccards.info/scans/en/c15/46.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cf01688-7046-4242-8647-d1c226ae53f7.jpg?1562706927
 image_updated=2016-02-29
 value=2.500
 rarity=M

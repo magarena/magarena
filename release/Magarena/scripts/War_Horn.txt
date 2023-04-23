@@ -1,5 +1,5 @@
 name=War Horn
-image=https://magiccards.info/scans/en/ori/243.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45c17671-7c4a-4114-b2b7-d34af4e2f8c1.jpg?1562017743
 image_updated=2015-11-05
 value=2.500
 rarity=U

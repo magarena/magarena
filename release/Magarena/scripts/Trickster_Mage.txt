@@ -1,5 +1,5 @@
 name=Trickster Mage
-image=https://magiccards.info/scans/en/ne/49.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b31b2e24-1a70-48bd-8946-ff29e12c6f3d.jpg?1593864219
 value=3.429
 rarity=C
 type=Creature

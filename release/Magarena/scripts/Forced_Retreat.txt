@@ -1,5 +1,5 @@
 name=Forced Retreat
-image=https://magiccards.info/scans/en/p3k/44.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0feac25c-23f0-415e-95d2-bae87cc68f4c.jpg?1562898317
 value=3.096
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Tranquil Thicket
-image=https://magiccards.info/scans/en/c14/316.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d213bb6c-b6e1-4603-8e01-a2e28af5a15f.jpg?1625983987
 value=3.250
 rarity=C
 type=Land

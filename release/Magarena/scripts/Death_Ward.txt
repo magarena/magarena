@@ -1,5 +1,5 @@
 name=Death Ward
-image=https://magiccards.info/scans/en/5e/301.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7e9d19c-22d9-4451-b988-9ec71793c13d.jpg?1559592277
 value=3.106
 rarity=C
 type=Instant

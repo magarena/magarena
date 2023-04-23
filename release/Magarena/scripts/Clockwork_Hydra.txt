@@ -1,5 +1,5 @@
 name=Clockwork Hydra
-image=https://magiccards.info/scans/en/ts/253.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/babba9f7-86e4-4e11-9fb8-acd50fbd8031.jpg?1619404199
 image_updated=2016-11-28
 value=3.539
 rarity=U

@@ -1,5 +1,5 @@
 name=Supply Caravan
-image=https://magiccards.info/scans/en/akh/30.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d247bd88-9593-462c-8f9e-28e29c064c10.jpg?1543674783
 value=2.500
 rarity=C
 type=Creature

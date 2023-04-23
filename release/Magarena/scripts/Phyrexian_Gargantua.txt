@@ -1,5 +1,5 @@
 name=Phyrexian Gargantua
-image=https://magiccards.info/scans/en/ema/101.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2be7576-bea6-4c20-b594-a058115f7acf.jpg?1682203919
 value=4.024
 rarity=U
 type=Creature

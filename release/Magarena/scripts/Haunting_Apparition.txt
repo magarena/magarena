@@ -1,5 +1,5 @@
 name=Haunting Apparition
-image=https://magiccards.info/scans/en/mr/327.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8ce9c58f-6470-4e0f-8f6b-457fbaac7451.jpg?1562720474
 value=2.803
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Kami of the Crescent Moon
-image=https://magiccards.info/scans/en/cn2/113.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd420010-6eaf-4853-8b7b-11de1157416b.jpg?1641601922
 image_updated=2017-08-29
 value=3.917
 rarity=R

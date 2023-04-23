@@ -1,5 +1,5 @@
 name=Bedlam
-image=https://magiccards.info/scans/en/7e/174.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/2788ec1a-930e-4a19-ad69-ea456c1390fd.jpg?1562234532
 value=4.137
 rarity=R
 type=Enchantment

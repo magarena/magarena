@@ -1,5 +1,5 @@
 name=Abundant Growth
-image=https://magiccards.info/scans/en/ema/156.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6dba2d06-13af-464d-b007-9027cade1cdf.jpg?1673305331
 value=3.796
 rarity=C
 type=Enchantment

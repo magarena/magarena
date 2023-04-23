@@ -1,5 +1,5 @@
 name=Ghirapur Aether Grid
-image=https://magiccards.info/scans/en/ori/148.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4ec852e9-bff8-4a07-8bc9-165484494c62.jpg?1682209346
 image_updated=2016-09-27
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Aven Battle Priest
-image=https://magiccards.info/scans/en/ori/6.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0060e75-a5a4-4d9a-894c-45bb7e2feffc.jpg?1562036561
 image_updated=2015-11-05
 value=2.500
 rarity=C

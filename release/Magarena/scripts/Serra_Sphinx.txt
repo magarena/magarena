@@ -1,5 +1,5 @@
 name=Serra Sphinx
-image=https://magiccards.info/scans/en/pc/62.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fb01cf8-9bca-4446-9e56-62777c6dfbe8.jpg?1598304287
 value=4.162
 rarity=R
 type=Creature

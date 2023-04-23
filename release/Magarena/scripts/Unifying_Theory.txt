@@ -1,5 +1,5 @@
 name=Unifying Theory
-image=https://magiccards.info/scans/en/od/112.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8aa4bf82-65e7-4b0c-9f96-dd84a67dcfb2.jpg?1562920695
 value=3.135
 rarity=R
 type=Enchantment

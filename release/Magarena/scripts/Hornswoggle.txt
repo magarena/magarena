@@ -1,5 +1,5 @@
 name=Hornswoggle
-image=https://magiccards.info/scans/en/rix/39.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b10b8f15-b323-44d8-85a7-ed662a40889d.jpg?1555039907
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Inside Out
-image=https://magiccards.info/scans/en/eve/103.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a51180ee-8677-4d5a-9685-3861c67a1d1f.jpg?1562929794
 value=3.317
 rarity=C
 type=Instant

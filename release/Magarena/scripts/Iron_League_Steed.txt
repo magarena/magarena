@@ -1,5 +1,5 @@
 name=Iron League Steed
-image=https://magiccards.info/scans/en/kld/219.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60370058-da94-444b-aafd-23202296070b.jpg?1599709351
 image_updated=2016-10-05
 value=2.500
 rarity=U

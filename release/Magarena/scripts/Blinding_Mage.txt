@@ -1,5 +1,5 @@
 name=Blinding Mage
-image=https://magiccards.info/scans/en/ima/13.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/173675c1-685c-4f4c-a6dc-b42a3ae69137.jpg?1562846256
 image_updated=2017-04-12
 value=3.260
 rarity=C

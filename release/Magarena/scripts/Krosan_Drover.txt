@@ -1,5 +1,5 @@
 name=Krosan Drover
-image=https://magiccards.info/scans/en/sc/122.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e92a7141-119f-4bf8-a82d-eb7c0c37185c.jpg?1562536633
 value=4.163
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fleetfeather Sandals
-image=https://magiccards.info/scans/en/ths/216.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/2222f499-09f9-45a6-8255-9de79df76f1c.jpg?1562815650
 value=3.433
 rarity=C
 type=Artifact

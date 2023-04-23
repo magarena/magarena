@@ -1,5 +1,5 @@
 name=Snorting Gahr
-image=https://magiccards.info/scans/en/mm/272.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e568503e-a886-4c8b-9d46-8520c2cdda48.jpg?1562383519
 value=3.180
 rarity=C
 type=Creature

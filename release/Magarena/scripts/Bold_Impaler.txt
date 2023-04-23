@@ -1,5 +1,5 @@
 name=Bold Impaler
-image=https://magiccards.info/scans/en/emn/120.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45bb2e6d-2ead-4ce3-8e5e-fc6900435583.jpg?1576384527
 image_updated=2016-09-05
 value=2.500
 rarity=C

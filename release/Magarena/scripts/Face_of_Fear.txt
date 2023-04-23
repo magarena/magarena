@@ -1,5 +1,5 @@
 name=Face of Fear
-image=https://magiccards.info/scans/en/od/134.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17542219-1165-4483-9cef-7abecaebb6a2.jpg?1562899421
 value=0.814
 rarity=U
 type=Creature

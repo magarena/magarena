@@ -1,5 +1,5 @@
 name=Slith Firewalker
-image=https://magiccards.info/scans/en/mi/107.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ee6c9a1-5e3c-4a3e-8f48-7054c1626bb1.jpg?1562378467
 image_updated=2017-01-08
 value=4.185
 rarity=U

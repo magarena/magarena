@@ -1,5 +1,5 @@
 name=Woodland Guidance
-image=https://magiccards.info/scans/en/lw/243.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92adead0-f8b4-4c49-b4ce-d9253980ee03.jpg?1562358351
 value=2.963
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Raid Bombardment
-image=https://magiccards.info/scans/en/roe/161.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca75d458-4947-4075-89b6-e93936c67370.jpg?1547517351
 value=4.145
 rarity=C
 type=Enchantment

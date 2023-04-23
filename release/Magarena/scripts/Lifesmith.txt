@@ -1,5 +1,5 @@
 name=Lifesmith
-image=https://magiccards.info/scans/en/som/124.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28e5dcac-0d59-4bcc-8a0e-036cc23065b5.jpg?1562815755
 value=2.936
 rarity=U
 type=Creature

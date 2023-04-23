@@ -1,5 +1,5 @@
 name=Gravestorm
-image=https://magiccards.info/scans/en/od/141.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e273b71-85ca-49d2-ba96-70cc0ae8d718.jpg?1562912365
 value=4.039
 rarity=R
 type=Enchantment

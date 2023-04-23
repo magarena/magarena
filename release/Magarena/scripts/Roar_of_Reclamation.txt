@@ -1,5 +1,5 @@
 name=Roar of Reclamation
-image=https://magiccards.info/scans/en/5dn/14.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d560e242-44ef-4162-8589-965897e4cdad.jpg?1562879951
 value=3.574
 rarity=R
 type=Sorcery

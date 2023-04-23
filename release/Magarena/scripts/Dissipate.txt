@@ -1,5 +1,5 @@
 name=Dissipate
-image=https://magiccards.info/scans/en/m15/51.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4689b3f2-e4b7-448e-b3d4-ab33194aafb2.jpg?1634348774
 value=4.000
 rarity=U
 type=Instant

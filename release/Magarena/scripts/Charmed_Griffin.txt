@@ -1,5 +1,5 @@
 name=Charmed Griffin
-image=https://magiccards.info/scans/en/mm/7.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66d36960-3c78-4032-9325-8002b2a48503.jpg?1562381338
 value=2.176
 rarity=U
 type=Creature

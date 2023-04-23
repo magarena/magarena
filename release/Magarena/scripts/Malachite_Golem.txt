@@ -1,5 +1,5 @@
 name=Malachite Golem
-image=https://magiccards.info/scans/en/mi/202.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1193164-5ee5-40ff-b244-f80d426bbf89.jpg?1562158689
 value=1.517
 rarity=C
 type=Artifact,Creature

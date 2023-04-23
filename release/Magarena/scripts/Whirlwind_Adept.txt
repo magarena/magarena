@@ -1,5 +1,5 @@
 name=Whirlwind Adept
-image=https://magiccards.info/scans/en/ktk/63.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fdbe6b5-7f67-42f1-be8f-637c35417925.jpg?1547516700
 value=2.500
 rarity=C
 type=Creature

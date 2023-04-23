@@ -1,5 +1,5 @@
 name=Enslave
-image=https://magiccards.info/scans/en/nph/58.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a00440fc-e3e1-4a1c-b32b-f7946a76cd62.jpg?1619395410
 value=3.596
 rarity=U
 type=Enchantment

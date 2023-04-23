@@ -1,5 +1,5 @@
 name=Azimaet Drake
-image=https://magiccards.info/scans/en/mr/53.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/854ba4e0-f6f3-4b6c-b6cb-ab2b93d64601.jpg?1562720461
 value=2.645
 rarity=C
 type=Creature

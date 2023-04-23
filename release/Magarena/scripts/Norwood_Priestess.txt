@@ -1,5 +1,5 @@
 name=Norwood Priestess
-image=https://magiccards.info/scans/en/po2/77.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcae1276-be3e-43ea-9912-c69d151897e3.jpg?1562939364
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Hell's Thunder
-image=https://magiccards.info/scans/en/ala/103.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3661c2d-f211-4e32-8edb-bb73617537e2.jpg?1592754636
 image_updated=2016-12-10
 value=3.627
 rarity=R

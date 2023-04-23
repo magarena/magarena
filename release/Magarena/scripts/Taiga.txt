@@ -1,5 +1,5 @@
 name=Taiga
-image=https://magiccards.info/scans/en/rv/302.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.jpg?1562897467
 value=4.500
 rarity=R
 type=Land

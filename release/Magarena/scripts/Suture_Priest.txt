@@ -1,5 +1,5 @@
 name=Suture Priest
-image=https://magiccards.info/scans/en/nph/25.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/430b96aa-7bb0-4d2b-b265-9c4987db28a2.jpg?1682208644
 value=3.788
 rarity=C
 type=Creature

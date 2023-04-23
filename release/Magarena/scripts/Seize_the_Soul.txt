@@ -1,5 +1,5 @@
 name=Seize the Soul
-image=https://magiccards.info/scans/en/gp/61.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29bf245f-e8e0-4d32-8cd7-06d832609910.jpg?1593272276
 value=3.661
 rarity=R
 type=Instant

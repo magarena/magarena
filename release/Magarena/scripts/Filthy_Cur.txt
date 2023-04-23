@@ -1,5 +1,5 @@
 name=Filthy Cur
-image=https://magiccards.info/scans/en/od/136.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/634b2b46-b213-4eb0-81d8-0e9dd161b85f.jpg?1562913371
 value=1.029
 rarity=C
 type=Creature

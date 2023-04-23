@@ -1,5 +1,5 @@
 name=Skirk Commando
-image=https://magiccards.info/scans/en/a25/150.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/259a6b6d-368a-4ee0-b0ed-b52301bfd78f.jpg?1562433557
 image_updated=2018-04-27
 value=3.297
 rarity=C

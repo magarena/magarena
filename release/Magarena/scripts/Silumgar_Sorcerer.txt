@@ -1,5 +1,5 @@
 name=Silumgar Sorcerer
-image=https://magiccards.info/scans/en/dtk/76.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a914304-e774-49fd-9ac7-09e36989b1d5.jpg?1562787763
 value=2.500
 rarity=U
 type=Creature

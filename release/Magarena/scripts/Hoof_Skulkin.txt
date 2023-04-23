@@ -1,5 +1,5 @@
 name=Hoof Skulkin
-image=https://magiccards.info/scans/en/eve/169.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea91be37-aca0-484a-ab94-0186073269d2.jpg?1562944436
 value=1.755
 rarity=C
 type=Artifact,Creature

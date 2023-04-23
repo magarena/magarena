@@ -1,5 +1,5 @@
 name=Uphill Battle
-image=https://magiccards.info/scans/en/mm/222.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73fa3455-3ba0-41ad-aefd-40f183aed2a6.jpg?1562381365
 value=3.580
 rarity=U
 type=Enchantment

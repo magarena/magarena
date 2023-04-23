@@ -1,5 +1,5 @@
 name=Reconstruction
-image=https://magiccards.info/scans/en/rv/77.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/052a63b3-4225-448f-817c-62cffca534e2.jpg?1562896230
 value=4.000
 rarity=C
 type=Sorcery

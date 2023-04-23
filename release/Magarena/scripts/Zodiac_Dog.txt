@@ -1,5 +1,5 @@
 name=Zodiac Dog
-image=https://magiccards.info/scans/en/p3k/130.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc61aa62-25ee-40a4-9b6e-d6277316b464.jpg?1562257974
 value=3.306
 rarity=C
 type=Creature

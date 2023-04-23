@@ -1,5 +1,5 @@
 name=Sacred Armory
-image=https://magiccards.info/scans/en/m15/228.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b05fde97-ab24-40c9-a1db-8844c3e62fc3.jpg?1562792809
 value=2.833
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Leechridden Swamp
-image=https://magiccards.info/scans/en/shm/273.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d64026d0-c126-4407-869e-a48c09d017c0.jpg?1562230166
 image_updated=2016-12-21
 value=3.393
 rarity=U

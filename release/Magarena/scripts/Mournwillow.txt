@@ -1,5 +1,5 @@
 name=Mournwillow
-image=https://magiccards.info/scans/en/emn/187.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45aa37d8-6765-443f-9b70-200fecf8fa1e.jpg?1576385009
 image_updated=2016-09-05
 value=2.500
 rarity=U

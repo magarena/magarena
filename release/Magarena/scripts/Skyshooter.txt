@@ -1,5 +1,5 @@
 name=Skyshooter
-image=https://magiccards.info/scans/en/od/270.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f56f195e-a80c-4447-8d3f-cc1259035d1b.jpg?1562941104
 value=2.739
 rarity=U
 type=Creature

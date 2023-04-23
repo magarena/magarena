@@ -1,5 +1,5 @@
 name=Curse of Chains
-image=https://magiccards.info/scans/en/shm/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5db21bcb-60e8-4d15-8ea7-7298c2b1607c.jpg?1562830651
 value=3.672
 removal=2
 rarity=C

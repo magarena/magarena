@@ -1,5 +1,5 @@
 name=Mistfolk
-image=https://magiccards.info/scans/en/cstd/14.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f3f4d4e-ca4a-4fba-b9fd-cd1d9457cfa1.jpg?1587911648
 value=3.838
 rarity=C
 type=Creature

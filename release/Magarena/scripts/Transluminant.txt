@@ -1,5 +1,5 @@
 name=Transluminant
-image=https://magiccards.info/scans/en/rav/186.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/318ce4ef-38bd-4360-895f-457587164197.jpg?1598916648
 value=2.949
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Temple of Plenty
-image=https://magiccards.info/scans/en/bng/165.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52f06041-0dce-45b2-bb05-833c0ebb438f.jpg?1682210733
 value=3.862
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Laboratory Brute
-image=https://magiccards.info/scans/en/emn/67.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/325f228e-46ff-43e2-bc1d-c2d2df443c51.jpg?1576384167
 image_updated=2016-09-05
 value=2.500
 rarity=C

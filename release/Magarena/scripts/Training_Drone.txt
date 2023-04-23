@@ -1,5 +1,5 @@
 name=Training Drone
-image=https://magiccards.info/scans/en/mbs/142.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b7e986f-5b28-46d2-8ec2-ee719b07dbfd.jpg?1562612880
 value=2.653
 rarity=C
 type=Artifact,Creature

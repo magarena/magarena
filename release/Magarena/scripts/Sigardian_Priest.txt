@@ -1,5 +1,5 @@
 name=Sigardian Priest
-image=https://magiccards.info/scans/en/emn/42.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8e798c7-0cbc-444e-8033-629baec7dca8.jpg?1576383982
 image_updated=2016-09-05
 value=2.500
 rarity=C

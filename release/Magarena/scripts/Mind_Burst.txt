@@ -1,5 +1,5 @@
 name=Mind Burst
-image=https://magiccards.info/scans/en/od/148.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c07889a1-1582-4f14-8925-fa21a1a5fd65.jpg?1562930930
 value=3.370
 rarity=C
 type=Sorcery

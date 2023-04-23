@@ -1,5 +1,5 @@
 name=Goblin Chirurgeon
-image=https://magiccards.info/scans/en/fe/110.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6da90318-4db4-4f03-ae2f-b1faeca46f57.jpg?1559592278
 value=3.890
 rarity=C
 type=Creature

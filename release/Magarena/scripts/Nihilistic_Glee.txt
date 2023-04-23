@@ -1,5 +1,5 @@
 name=Nihilistic Glee
-image=https://magiccards.info/scans/en/di/50.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f603486d-c8d7-4a02-bdb3-c25d2bc62ba6.jpg?1593272971
 value=1.912
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Mindcrank
-image=https://magiccards.info/scans/en/ima/220.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8858a941-8175-476d-8177-2db4ffdcb3ad.jpg?1674142661
 image_updated=2017-04-12
 value=3.521
 rarity=U

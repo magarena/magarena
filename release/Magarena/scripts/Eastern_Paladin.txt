@@ -1,5 +1,5 @@
 name=Eastern Paladin
-image=https://magiccards.info/scans/en/8e/131.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d75f7d29-9c73-4b5e-a6fd-5608bb737278.jpg?1562938234
 value=3.654
 rarity=R
 type=Creature

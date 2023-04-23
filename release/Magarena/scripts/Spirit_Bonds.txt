@@ -1,5 +1,5 @@
 name=Spirit Bonds
-image=https://magiccards.info/scans/en/m15/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa2a3aaa-e78a-48cc-b7d3-7f65e467054c.jpg?1562792489
 value=3.500
 rarity=R
 type=Enchantment

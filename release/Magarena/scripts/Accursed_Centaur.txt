@@ -1,5 +1,5 @@
 name=Accursed Centaur
-image=https://magiccards.info/scans/en/on/123.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/894556d8-6d5c-431b-a45d-26cd37c5f456.jpg?1562927409
 value=1.531
 rarity=C
 type=Creature

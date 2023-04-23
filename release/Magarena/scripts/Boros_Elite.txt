@@ -1,5 +1,5 @@
 name=Boros Elite
-image=https://magiccards.info/scans/en/gtc/7.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a03974e6-aced-4664-8c5c-3190bb1eb233.jpg?1561839470
 value=3.355
 rarity=U
 type=Creature

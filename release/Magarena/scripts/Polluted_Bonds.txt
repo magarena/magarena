@@ -1,5 +1,5 @@
 name=Polluted Bonds
-image=https://magiccards.info/scans/en/shm/74.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6439222-de30-44cd-a53f-a7de0cb00b8f.jpg?1562835783
 value=3.398
 rarity=R
 type=Enchantment

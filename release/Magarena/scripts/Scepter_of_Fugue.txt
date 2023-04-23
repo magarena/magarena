@@ -1,5 +1,5 @@
 name=Scepter of Fugue
-image=https://magiccards.info/scans/en/cfx/53.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21f7e17c-45df-45e9-8dcf-7fc90fa4d65d.jpg?1562799941
 value=3.401
 rarity=R
 type=Artifact

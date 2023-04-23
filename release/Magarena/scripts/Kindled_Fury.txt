@@ -1,5 +1,5 @@
 name=Kindled Fury
-image=https://magiccards.info/scans/en/hou/101.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58c8bdce-73a3-4266-b3d6-61dbf4534ea3.jpg?1654567722
 image_updated=2017-09-29
 value=2.286
 rarity=C

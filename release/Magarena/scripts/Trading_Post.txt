@@ -1,5 +1,5 @@
 name=Trading Post
-image=https://magiccards.info/scans/en/c16/278.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ae64bb3-115a-4c68-99c9-a45b6f788b80.jpg?1562272488
 image_updated=2017-08-17
 value=3.750
 rarity=R

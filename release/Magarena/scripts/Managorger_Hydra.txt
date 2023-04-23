@@ -1,5 +1,5 @@
 name=Managorger Hydra
-image=https://magiccards.info/scans/en/c16/157.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9c124d7-b4b1-43cf-9830-1244053cc056.jpg?1682209577
 image_updated=2017-08-17
 value=2.500
 rarity=R

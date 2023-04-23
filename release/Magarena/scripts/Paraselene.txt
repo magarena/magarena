@@ -1,5 +1,5 @@
 name=Paraselene
-image=https://magiccards.info/scans/en/isd/26.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/406380ab-2695-4084-99a5-f5560304f8cb.jpg?1562829077
 value=3.375
 removal=2
 rarity=U

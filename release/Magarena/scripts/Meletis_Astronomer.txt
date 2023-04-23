@@ -1,5 +1,5 @@
 name=Meletis Astronomer
-image=https://magiccards.info/scans/en/bng/43.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af9adca9-3e69-474f-896d-bb05b1d67252.jpg?1593091699
 value=3.692
 rarity=U
 type=Creature

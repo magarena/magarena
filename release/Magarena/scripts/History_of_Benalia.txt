@@ -1,5 +1,5 @@
 name=History of Benalia
-image=https://magiccards.info/scans/en/dom/21.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d134385d-b01c-41c7-bb2d-30722b44dc5a.jpg?1562743350
 value=2.500
 rarity=M
 type=Enchantment

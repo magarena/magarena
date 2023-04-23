@@ -1,5 +1,5 @@
 name=Alesha, Who Smiles at Death
-image=https://magiccards.info/scans/en/c16/119.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7ae9ff8c-1cc8-4b10-9641-2c79648fd6c2.jpg?1673305242
 image_updated=2017-08-17
 value=2.500
 rarity=R

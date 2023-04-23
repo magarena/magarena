@@ -1,5 +1,5 @@
 name=Foul Presence
-image=https://magiccards.info/scans/en/ap/39.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c5a6fa8-d422-4e56-9e7b-2ff2fc8aecfe.jpg?1562924300
 value=3.038
 rarity=U
 type=Enchantment

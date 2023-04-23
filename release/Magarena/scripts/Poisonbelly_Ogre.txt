@@ -1,5 +1,5 @@
 name=Poisonbelly Ogre
-image=https://magiccards.info/scans/en/gp/57.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a168b953-eac4-472e-ac74-598febb05f83.jpg?1593272248
 value=2.433
 rarity=C
 type=Creature

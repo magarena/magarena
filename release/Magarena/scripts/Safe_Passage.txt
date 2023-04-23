@@ -1,5 +1,5 @@
 name=Safe Passage
-image=https://magiccards.info/scans/en/m13/30.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fc65c3f-ad29-4368-bf45-8345a7ec6f31.jpg?1562557858
 value=3.561
 rarity=C
 type=Instant

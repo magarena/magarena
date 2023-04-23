@@ -1,5 +1,5 @@
 name=Mold Adder
-image=https://magiccards.info/scans/en/m10/194.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a216a729-6283-4c2b-90fe-ec8f3b9c570f.jpg?1561990668
 value=3.769
 rarity=U
 type=Creature

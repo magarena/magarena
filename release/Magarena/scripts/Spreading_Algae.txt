@@ -1,5 +1,5 @@
 name=Spreading Algae
-image=https://magiccards.info/scans/en/8e/281.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3abaf631-ce63-47c8-8883-04f942f2e7ba.jpg?1562906888
 value=3.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Psychic Membrane
-image=https://magiccards.info/scans/en/mi/46.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4ffd5a69-05b6-4fc4-8186-503a2e204330.jpg?1562143742
 value=2.857
 rarity=U
 type=Creature

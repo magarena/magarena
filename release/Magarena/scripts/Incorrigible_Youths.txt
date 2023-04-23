@@ -1,5 +1,5 @@
 name=Incorrigible Youths
-image=https://magiccards.info/scans/en/soi/166.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e826571-6f00-4b40-975b-d51b2b17b4a4.jpg?1576384803
 value=2.500
 rarity=U
 type=Creature

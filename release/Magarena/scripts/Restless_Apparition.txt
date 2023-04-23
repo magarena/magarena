@@ -1,5 +1,5 @@
 name=Restless Apparition
-image=https://magiccards.info/scans/en/mm2/196.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70aea782-f054-41bc-8681-7e2246e6f3fd.jpg?1562263740
 value=3.638
 rarity=U
 type=Creature

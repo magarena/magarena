@@ -1,5 +1,5 @@
 name=Orim, Samite Healer
-image=https://magiccards.info/scans/en/tp/244.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/7567daf2-343f-4d62-977e-0b3b6001d57a.jpg?1562430298
 value=3.351
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Faerie Miscreant
-image=https://magiccards.info/scans/en/ori/57.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28aa0337-94bd-4274-b2ee-6f43747c77b3.jpg?1592516372
 image_updated=2015-11-05
 value=2.500
 rarity=C

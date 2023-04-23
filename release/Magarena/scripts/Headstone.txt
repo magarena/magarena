@@ -1,5 +1,5 @@
 name=Headstone
-image=https://magiccards.info/scans/en/hl/15.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fdae7fa-1076-4ff3-b771-fc3f5d9ba89f.jpg?1562587064
 value=2.573
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Tidewalker
-image=https://magiccards.info/scans/en/pc/49.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/9464c2aa-8f12-4654-89c5-3323d7e7ab73.jpg?1562576585
 value=3.167
 rarity=U
 type=Creature

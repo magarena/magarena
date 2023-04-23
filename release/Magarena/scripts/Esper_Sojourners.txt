@@ -1,5 +1,5 @@
 name=Esper Sojourners
-image=https://magiccards.info/scans/en/arb/107.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/896d502a-d9c3-4101-92af-a8c9d945f47b.jpg?1562642689
 value=2.725
 rarity=C
 type=Artifact,Creature

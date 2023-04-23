@@ -1,5 +1,5 @@
 name=Endless Ranks of the Dead
-image=https://magiccards.info/scans/en/isd/99.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/155ae16c-f32b-421d-a92a-bf13d9f32891.jpg?1637630179
 value=3.897
 rarity=R
 type=Enchantment

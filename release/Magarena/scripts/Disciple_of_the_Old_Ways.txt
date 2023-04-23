@@ -1,5 +1,5 @@
 name=Disciple of the Old Ways
-image=https://magiccards.info/scans/en/gtc/118.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c62b3ee-db2b-45c3-87d5-5d917ea4baeb.jpg?1561823419
 value=2.977
 rarity=C
 type=Creature

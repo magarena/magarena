@@ -1,5 +1,5 @@
 name=Serra's Embrace
-image=https://magiccards.info/scans/en/10e/40.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c45c4b3-f652-4b55-a316-55a864ac2342.jpg?1561771090
 image_updated=2017-01-07
 value=3.620
 rarity=U

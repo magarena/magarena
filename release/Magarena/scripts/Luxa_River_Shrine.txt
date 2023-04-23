@@ -1,5 +1,5 @@
 name=Luxa River Shrine
-image=https://magiccards.info/scans/en/akh/232.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f43dc6f-910c-42a1-b329-038e20dfb264.jpg?1543676299
 value=2.500
 rarity=C
 type=Artifact

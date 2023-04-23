@@ -1,5 +1,5 @@
 name=Simic Charm
-image=https://magiccards.info/scans/en/gtc/195.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3384ee4e-738f-4442-bccd-4f96022b7219.jpg?1677541995
 value=3.742
 rarity=U
 type=Instant

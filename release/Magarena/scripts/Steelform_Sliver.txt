@@ -1,5 +1,5 @@
 name=Steelform Sliver
-image=https://magiccards.info/scans/en/m14/38.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c15d6329-ffb1-43fd-8558-60c8315f5b91.jpg?1562834663
 value=1.906
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ice Floe
-image=https://magiccards.info/scans/en/5e/424.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a974983-b9aa-4f12-8279-2e74089f7f31.jpg?1562869979
 value=3.900
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Heartless Summoning
-image=https://magiccards.info/scans/en/isd/104.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14f8f638-b7fc-4e38-8623-ce7d2ebc82e6.jpg?1562826605
 value=3.970
 rarity=R
 type=Enchantment

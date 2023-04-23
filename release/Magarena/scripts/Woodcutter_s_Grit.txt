@@ -1,5 +1,5 @@
 name=Woodcutter's Grit
-image=https://magiccards.info/scans/en/emn/179.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc329134-4b71-4c33-8cfb-c3867a733115.jpg?1576384953
 image_updated=2016-09-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Slippery Scoundrel
-image=https://magiccards.info/scans/en/rix/55.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/262f3c10-f29a-494f-88c6-0d44b2cbdc82.jpg?1555040043
 value=2.500
 rarity=U
 type=Creature

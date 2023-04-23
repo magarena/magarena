@@ -1,5 +1,5 @@
 name=Orim's Touch
-image=https://magiccards.info/scans/en/in/23.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/559f551e-7891-4c6d-8798-a25c0255fa3b.jpg?1562912440
 value=2.800
 rarity=C
 type=Instant

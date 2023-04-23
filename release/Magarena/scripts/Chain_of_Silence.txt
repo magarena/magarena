@@ -1,5 +1,5 @@
 name=Chain of Silence
-image=https://magiccards.info/scans/en/on/12.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a60ac8e-11eb-433f-86f9-8e593b38c617.jpg?1562931386
 value=1.607
 rarity=U
 type=Instant

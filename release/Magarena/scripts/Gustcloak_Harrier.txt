@@ -1,5 +1,5 @@
 name=Gustcloak Harrier
-image=https://magiccards.info/scans/en/on/34.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46f9c5ab-f793-4cf2-b88a-5af38a7b4616.jpg?1562840220
 image_updated=2016-12-04
 value=3.339
 rarity=C

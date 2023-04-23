@@ -1,5 +1,5 @@
 name=Bestial Menace
-image=https://magiccards.info/scans/en/mm2/141.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14003109-ec2c-40ad-b005-67218ec75cbd.jpg?1637630963
 value=3.463
 rarity=U
 type=Sorcery

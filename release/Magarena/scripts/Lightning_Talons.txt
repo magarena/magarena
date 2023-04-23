@@ -1,5 +1,5 @@
 name=Lightning Talons
-image=https://magiccards.info/scans/en/ala/107.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a7e5dd8-2c7d-4dc1-b991-ce90d8e86b43.jpg?1562913391
 value=2.979
 rarity=C
 type=Enchantment

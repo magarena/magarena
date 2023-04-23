@@ -1,5 +1,5 @@
 name=Wolfkin Bond
-image=https://magiccards.info/scans/en/emn/178.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c419a2b-4389-49bc-91f1-a613ffcbfa0b.jpg?1592517462
 image_updated=2016-09-05
 value=2.500
 rarity=C

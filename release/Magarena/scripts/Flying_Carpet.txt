@@ -1,5 +1,5 @@
 name=Flying Carpet
-image=https://magiccards.info/scans/en/8e/301.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b778a1cf-8ef9-4818-97e7-d3bfc50de3f3.jpg?1562938283
 value=2.130
 rarity=R
 type=Artifact

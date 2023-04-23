@@ -1,5 +1,5 @@
 name=Marauding Boneslasher
-image=https://magiccards.info/scans/en/hou/70.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddfb7f50-14b1-4c7d-b4c8-f50bc14f4fb7.jpg?1562817493
 value=2.500
 rarity=C
 type=Creature

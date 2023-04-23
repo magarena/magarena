@@ -1,5 +1,5 @@
 name=Walking Sponge
-image=https://magiccards.info/scans/en/ul/47.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b125d1e7-5d9b-4997-88b0-71bdfc19c6f2.jpg?1562863790
 value=3.905
 rarity=U
 type=Creature

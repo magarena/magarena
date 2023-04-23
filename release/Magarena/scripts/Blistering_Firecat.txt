@@ -1,5 +1,5 @@
 name=Blistering Firecat
-image=https://magiccards.info/scans/en/on/189.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0ddcf4a-1943-49dd-a02c-75804ce4bc3e.jpg?1562948535
 value=4.311
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Cartel Aristocrat
-image=https://magiccards.info/scans/en/gtc/150.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17906962-d89f-42ae-b019-22974490513c.jpg?1673148439
 value=3.435
 rarity=U
 type=Creature

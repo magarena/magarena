@@ -1,5 +1,5 @@
 name=Alabaster Kirin
-image=https://magiccards.info/scans/en/ktk/4.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad1ce529-06ed-4e85-9988-8c8b58401ed5.jpg?1562791877
 value=3.000
 rarity=C
 type=Creature

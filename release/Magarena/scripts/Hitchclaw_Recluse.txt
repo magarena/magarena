@@ -1,5 +1,5 @@
 name=Hitchclaw Recluse
-image=https://magiccards.info/scans/en/ori/181.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe349432-8726-49cf-ad07-6f8add8f78c8.jpg?1615300690
 image_updated=2015-11-05
 value=2.500
 rarity=C

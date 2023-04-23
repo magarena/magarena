@@ -1,5 +1,5 @@
 name=Steel Sabotage
-image=https://magiccards.info/scans/en/mbs/33.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c227437d-1fc7-4a00-ace5-80795adc51d3.jpg?1598304335
 value=4.241
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Hokori, Dust Drinker
-image=https://magiccards.info/scans/en/bok/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a03f5d5-d5c3-4a7d-8d44-e60b498b4ed5.jpg?1562877197
 value=3.406
 rarity=R
 type=Legendary,Creature

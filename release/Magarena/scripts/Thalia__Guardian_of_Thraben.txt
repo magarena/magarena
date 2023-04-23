@@ -1,5 +1,5 @@
 name=Thalia, Guardian of Thraben
-image=https://magiccards.info/scans/en/a25/36.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9f8b8fb-1cd8-450e-a1fe-892e7a323479.jpg?1643587106
 image_updated=2018-04-27
 value=4.561
 rarity=R

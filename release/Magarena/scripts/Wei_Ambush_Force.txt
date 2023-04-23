@@ -1,5 +1,5 @@
 name=Wei Ambush Force
-image=https://magiccards.info/scans/en/p3k/85.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b241ba4-cff5-48ce-83bd-d70fb5e20ff4.jpg?1562257493
 value=3.286
 rarity=C
 type=Creature

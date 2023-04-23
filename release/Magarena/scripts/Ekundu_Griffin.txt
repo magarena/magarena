@@ -1,5 +1,5 @@
 name=Ekundu Griffin
-image=https://magiccards.info/scans/en/6e/18.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1eec4ac-7d28-4f76-a1d5-a0a19c142514.jpg?1562821085
 value=2.839
 rarity=C
 type=Creature

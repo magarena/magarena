@@ -1,5 +1,5 @@
 name=Serpent Assassin
-image=https://magiccards.info/scans/en/po/31.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/1018f6ff-5eaa-4fe1-ba20-544df799f5b2.jpg?1562445670
 value=2.643
 rarity=R
 type=Creature

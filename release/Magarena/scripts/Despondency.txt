@@ -1,5 +1,5 @@
 name=Despondency
-image=https://magiccards.info/scans/en/us/129.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef400a6a-628a-40d6-80dc-feabe40d6ce1.jpg?1562945449
 value=3.679
 rarity=C
 type=Enchantment

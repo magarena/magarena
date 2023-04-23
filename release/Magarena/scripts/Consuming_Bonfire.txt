@@ -1,5 +1,5 @@
 name=Consuming Bonfire
-image=https://magiccards.info/scans/en/lw/161.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56a4ec08-5029-4f7b-a93b-a5dad4be5113.jpg?1562349028
 value=1.420
 rarity=C
 type=Tribal,Sorcery

@@ -1,5 +1,5 @@
 name=Galestrike
-image=https://magiccards.info/scans/en/akh/54.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c23cdb0e-2684-4ad1-b7dd-e355e3e9a221.jpg?1608909222
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Cabal Inquisitor
-image=https://magiccards.info/scans/en/od/119.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0530e09-5206-460e-abd2-e928eca294a5.jpg?1562930913
 value=1.763
 rarity=C
 type=Creature

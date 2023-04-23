@@ -1,5 +1,5 @@
 name=Chain of Smog
-image=https://magiccards.info/scans/en/on/132.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bfe64f9-8b03-41f6-a47b-fade397ad9d1.jpg?1562920423
 value=3.621
 rarity=U
 type=Sorcery

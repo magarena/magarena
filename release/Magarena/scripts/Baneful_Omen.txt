@@ -1,5 +1,5 @@
 name=Baneful Omen
-image=https://magiccards.info/scans/en/roe/96.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bff6e03-b6af-4f54-b365-9a6db2dbb595.jpg?1562702375
 value=3.641
 rarity=R
 type=Enchantment

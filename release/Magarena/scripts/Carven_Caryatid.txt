@@ -1,5 +1,5 @@
 name=Carven Caryatid
-image=https://magiccards.info/scans/en/ima/156.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53847a21-aded-4aaa-9bf1-8592e67763ef.jpg?1601079079
 image_updated=2017-04-12
 value=4.006
 rarity=U

@@ -1,5 +1,5 @@
 name=Shattering Spree
-image=https://magiccards.info/scans/en/gp/75.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6dcff21-5900-43c4-a38b-cdc19c704ce4.jpg?1593272374
 value=4.586
 removal=1
 rarity=U

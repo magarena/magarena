@@ -1,5 +1,5 @@
 name=Codex Shredder
-image=https://magiccards.info/scans/en/rtr/228.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f5a3293-f3e7-4f68-af6a-b478959226c1.jpg?1608911365
 value=3.205
 rarity=U
 type=Artifact

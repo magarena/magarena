@@ -1,5 +1,5 @@
 name=Forbidding Watchtower
-image=https://magiccards.info/scans/en/10e/352.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac2d2959-6d31-4547-8c04-c19009c94434.jpg?1562929704
 value=4.011
 rarity=U
 type=Land

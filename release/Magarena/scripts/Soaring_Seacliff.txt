@@ -1,5 +1,5 @@
 name=Soaring Seacliff
-image=https://magiccards.info/scans/en/zen/225.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/651a1a4f-bdaa-44d6-ac45-050894788063.jpg?1591322470
 image_updated=2017-01-08
 value=2.550
 rarity=C

@@ -1,5 +1,5 @@
 name=Furnace Brood
-image=https://magiccards.info/scans/en/ex/84.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e20197d-63e5-4938-87c4-4cbc353062b1.jpg?1562429852
 value=2.944
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ordered Migration
-image=https://magiccards.info/scans/en/in/258.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04d83a07-6054-45f1-bdf9-07f2006238d2.jpg?1562895903
 value=3.050
 rarity=U
 type=Sorcery

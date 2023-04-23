@@ -1,5 +1,5 @@
 name=Loxodon Hierarch
-image=https://magiccards.info/scans/en/rav/214.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/826f4791-d6ca-4620-bc30-6d11d8d22e81.jpg?1562925798
 value=3.882
 rarity=R
 type=Creature

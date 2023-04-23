@@ -1,5 +1,5 @@
 name=Moorland Haunt
-image=https://magiccards.info/scans/en/isd/244.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74deeeaa-95e9-42c9-89e3-e317ea63e216.jpg?1641604118
 value=3.808
 rarity=R
 type=Land

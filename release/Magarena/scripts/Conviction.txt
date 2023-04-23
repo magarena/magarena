@@ -1,5 +1,5 @@
 name=Conviction
-image=https://magiccards.info/scans/en/aer/12.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94507660-cf60-4fd8-a796-7a6e6f28396d.jpg?1547515417
 image_updated=2017-08-29
 value=3.044
 rarity=C

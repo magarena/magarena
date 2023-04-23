@@ -1,5 +1,5 @@
 name=Library of Alexandria
-image=https://magiccards.info/scans/en/an/90.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5.jpg?1562940986
 value=4.500
 rarity=U
 type=Land

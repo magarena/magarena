@@ -1,5 +1,5 @@
 name=Entropic Specter
-image=https://magiccards.info/scans/en/ex/61.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdb04d81-b0ab-4bc7-935d-c31005887240.jpg?1562088783
 value=1.706
 rarity=R
 type=Creature

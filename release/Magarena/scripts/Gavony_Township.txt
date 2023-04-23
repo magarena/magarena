@@ -1,5 +1,5 @@
 name=Gavony Township
-image=https://magiccards.info/scans/en/isd/239.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce46c4e2-a515-41d7-8d70-d20cf4925996.jpg?1682210473
 value=3.896
 rarity=R
 type=Land

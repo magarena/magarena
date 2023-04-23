@@ -1,5 +1,5 @@
 name=Whirlwind
-image=https://magiccards.info/scans/en/c14/224.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/855d40de-e9b8-4bb5-a030-a36242324abf.jpg?1592673311
 value=4.090
 rarity=R
 type=Sorcery

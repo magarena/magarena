@@ -1,5 +1,5 @@
 name=Reckless Imp
-image=https://magiccards.info/scans/en/dtk/115.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74a44e0a-5fff-4fc0-a76d-1b097f1d4d5d.jpg?1562788384
 value=2.500
 rarity=C
 type=Creature

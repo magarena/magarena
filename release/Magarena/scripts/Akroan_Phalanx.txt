@@ -1,5 +1,5 @@
 name=Akroan Phalanx
-image=https://magiccards.info/scans/en/bng/2.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe23019a-e432-4a27-8acb-b17728a1e8b0.jpg?1593091348
 value=3.419
 rarity=U
 type=Creature

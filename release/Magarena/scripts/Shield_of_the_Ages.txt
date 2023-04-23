@@ -1,5 +1,5 @@
 name=Shield of the Ages
-image=https://magiccards.info/scans/en/ia/310.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4afbc5a-9084-48be-9a33-0aa013775d34.jpg?1559592410
 value=2.571
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Coffin Purge
-image=https://magiccards.info/scans/en/od/124.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/541e06cb-5616-40b4-9d36-89471a795ac8.jpg?1562910443
 value=2.774
 rarity=C
 type=Instant

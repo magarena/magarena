@@ -1,5 +1,5 @@
 name=Soratami Mirror-Guard
-image=https://magiccards.info/scans/en/chk/87.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3ff8968b-cd96-4f44-85f8-2af20d61d7cb.jpg?1562759375
 value=2.257
 rarity=C
 type=Creature

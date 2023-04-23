@@ -1,5 +1,5 @@
 name=Leonin Vanguard
-image=https://magiccards.info/scans/en/m19/22.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/724738ad-6a9b-4ef6-b637-558645cd8151.jpg?1562302694
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Possessed Skaab
-image=https://magiccards.info/scans/en/ori/215.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ebc94e5-a595-43ab-929b-426009190669.jpg?1562025029
 image_updated=2015-11-05
 value=2.500
 rarity=U

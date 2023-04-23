@@ -1,5 +1,5 @@
 name=Bloodtallow Candle
-image=https://magiccards.info/scans/en/dom/212.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f8125b6-911e-4663-962a-d741984c927d.jpg?1562736519
 value=2.500
 rarity=C
 type=Artifact

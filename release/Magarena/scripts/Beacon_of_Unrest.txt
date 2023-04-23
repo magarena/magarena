@@ -1,5 +1,5 @@
 name=Beacon of Unrest
-image=https://magiccards.info/scans/en/c16/107.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06bd199b-1855-4208-8bf7-8930e91ab139.jpg?1598304450
 image_updated=2017-08-17
 value=4.325
 rarity=R

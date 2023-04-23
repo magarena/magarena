@@ -1,5 +1,5 @@
 name=Gruul Keyrune
-image=https://magiccards.info/scans/en/gtc/230.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cf96f1c-066e-4fde-acb8-4674842fb6c2.jpg?1561833189
 value=3.193
 rarity=U
 type=Artifact

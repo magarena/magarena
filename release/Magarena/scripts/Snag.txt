@@ -1,5 +1,5 @@
 name=Snag
-image=https://magiccards.info/scans/en/pr/124.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/7401df8b-23e7-4485-9ed4-70118a66feed.jpg?1562916529
 value=3.222
 rarity=U
 type=Instant

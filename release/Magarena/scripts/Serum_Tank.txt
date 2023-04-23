@@ -1,5 +1,5 @@
 name=Serum Tank
-image=https://magiccards.info/scans/en/mi/240.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a2ad5c8-0dca-4082-97b9-3d788f553cdf.jpg?1562841210
 image_updated=2017-01-07
 value=3.269
 rarity=U

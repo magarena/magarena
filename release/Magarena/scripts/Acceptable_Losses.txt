@@ -1,5 +1,5 @@
 name=Acceptable Losses
-image=https://magiccards.info/scans/en/od/172.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9082bfb8-0ab0-4378-976d-a2c9d3c35a5e.jpg?1562921827
 value=1.018
 rarity=C
 type=Sorcery

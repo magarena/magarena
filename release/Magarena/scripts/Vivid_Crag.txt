@@ -1,5 +1,5 @@
 name=Vivid Crag
-image=https://magiccards.info/scans/en/mma/225.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da397243-2193-4e5d-8dee-df37b70677e7.jpg?1562276066
 image_updated=2016-02-29
 value=3.591
 rarity=U

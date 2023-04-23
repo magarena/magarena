@@ -1,5 +1,5 @@
 name=Corrupt Official
-image=https://magiccards.info/scans/en/mm/128.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cb652fc-5a21-4e02-a776-a38fb41ad18c.jpg?1562380884
 value=2.632
 rarity=R
 type=Creature

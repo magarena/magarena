@@ -1,5 +1,5 @@
 name=Primordial Wurm
-image=https://magiccards.info/scans/en/dom/177.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc0e8298-adac-4922-8824-a1fafa089f72.jpg?1615415440
 value=2.500
 rarity=C
 type=Creature

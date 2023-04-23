@@ -1,5 +1,5 @@
 name=Vial of Poison
-image=https://magiccards.info/scans/en/m14/226.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/7769159b-5a6a-45e5-b69b-8db2a6ef5418.jpg?1562831166
 value=2.985
 rarity=U
 type=Artifact

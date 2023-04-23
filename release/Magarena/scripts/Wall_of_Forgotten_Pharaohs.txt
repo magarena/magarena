@@ -1,5 +1,5 @@
 name=Wall of Forgotten Pharaohs
-image=https://magiccards.info/scans/en/hou/168.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3f8f211-79f9-4d34-8e23-c0835703cd91.jpg?1562816047
 value=2.500
 rarity=C
 type=Artifact,Creature

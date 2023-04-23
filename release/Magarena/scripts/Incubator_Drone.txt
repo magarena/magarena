@@ -1,5 +1,5 @@
 name=Incubator Drone
-image=https://magiccards.info/scans/en/bfz/60.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0855762-7068-4111-a6bf-fe6d5b092c74.jpg?1562948433
 image_updated=2015-11-08
 value=2.500
 rarity=C

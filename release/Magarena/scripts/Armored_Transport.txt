@@ -1,5 +1,5 @@
 name=Armored Transport
-image=https://magiccards.info/scans/en/gtc/226.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8cf8f6c-217e-4d51-aa63-859c2d38d438.jpg?1561852976
 value=3.188
 rarity=C
 type=Artifact,Creature

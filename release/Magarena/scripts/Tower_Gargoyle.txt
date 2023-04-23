@@ -1,5 +1,5 @@
 name=Tower Gargoyle
-image=https://magiccards.info/scans/en/mm3/196.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55aef108-6aaf-465d-b3f6-5ac1499f44a3.jpg?1673149229
 image_updated=2017-08-08
 value=3.808
 rarity=U

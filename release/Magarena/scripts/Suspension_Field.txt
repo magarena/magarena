@@ -1,5 +1,5 @@
 name=Suspension Field
-image=https://magiccards.info/scans/en/ktk/25.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba5c9628-1801-43d9-8bb4-4cca168510b2.jpg?1562792611
 value=3.750
 rarity=U
 type=Enchantment

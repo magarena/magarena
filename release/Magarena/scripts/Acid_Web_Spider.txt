@@ -1,5 +1,5 @@
 name=Acid Web Spider
-image=https://magiccards.info/scans/en/som/108.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/968a25a5-9ec1-47fa-bf1f-e65eb75fdb00.jpg?1562820609
 value=2.881
 rarity=U
 type=Creature

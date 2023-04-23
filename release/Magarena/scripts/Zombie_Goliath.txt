@@ -1,5 +1,5 @@
 name=Zombie Goliath
-image=https://magiccards.info/scans/en/cns/135.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4897302-7726-4827-9fa7-66ac0c264bd4.jpg?1562866387
 value=1.312
 rarity=C
 type=Creature

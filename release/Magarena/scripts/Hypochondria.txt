@@ -1,5 +1,5 @@
 name=Hypochondria
-image=https://magiccards.info/scans/en/tr/7.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3467c940-dae4-4667-bec8-524dbce13283.jpg?1574250407
 value=2.719
 rarity=U
 type=Enchantment

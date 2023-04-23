@@ -1,5 +1,5 @@
 name=Triton Cavalry
-image=https://magiccards.info/scans/en/jou/55.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b9b6c6b-35f8-4c8a-aa29-ae71d5166121.jpg?1593095587
 value=3.619
 rarity=U
 type=Creature

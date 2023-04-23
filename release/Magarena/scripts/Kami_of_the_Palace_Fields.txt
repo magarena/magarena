@@ -1,5 +1,5 @@
 name=Kami of the Palace Fields
-image=https://magiccards.info/scans/en/chk/24.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/690980ce-bbdc-4d52-b34e-2bad11e436a1.jpg?1562761049
 value=1.721
 rarity=U
 type=Creature

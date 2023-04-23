@@ -1,5 +1,5 @@
 name=Bladetusk Boar
-image=https://magiccards.info/scans/en/jou/90.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f157fb0-81ac-4108-aafc-7ee81df965a9.jpg?1593095917
 value=3.080
 rarity=C
 type=Creature

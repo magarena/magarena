@@ -1,5 +1,5 @@
 name=Spellshock
-image=https://magiccards.info/scans/en/ex/104.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75ff468c-fdc6-49f1-bcec-1ba70fc60d5d.jpg?1562430300
 value=3.932
 rarity=U
 type=Enchantment

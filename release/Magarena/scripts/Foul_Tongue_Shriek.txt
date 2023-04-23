@@ -1,5 +1,5 @@
 name=Foul-Tongue Shriek
-image=https://magiccards.info/scans/en/dtk/103.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81d98ee0-6b32-4735-89f1-b37da766761f.jpg?1562789080
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Obelisk of Esper
-image=https://magiccards.info/scans/en/ala/213.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70b347b1-9277-4ad0-88c8-faacace08827.jpg?1562918735
 image_updated=2017-01-03
 value=2.389
 rarity=C

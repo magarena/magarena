@@ -1,5 +1,5 @@
 name=Myojin of Infinite Rage
-image=https://magiccards.info/scans/en/chk/181.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df630ae9-aa17-46e9-95e7-4980f4a76ade.jpg?1562765145
 value=3.663
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Drowned Catacomb
-image=https://magiccards.info/scans/en/xln/253.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ef728f1-5153-47d6-8f9c-dfd473ee0750.jpg?1562559858
 image_updated=2017-10-30
 value=3.811
 rarity=R

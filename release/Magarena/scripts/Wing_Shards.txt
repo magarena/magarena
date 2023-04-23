@@ -1,5 +1,5 @@
 name=Wing Shards
-image=https://magiccards.info/scans/en/ima/38.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8326bd2-83a8-4600-b12a-0bda47168f7b.jpg?1562201286
 image_updated=2017-04-12
 value=4.341
 rarity=U

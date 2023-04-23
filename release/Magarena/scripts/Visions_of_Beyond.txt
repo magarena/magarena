@@ -1,5 +1,5 @@
 name=Visions of Beyond
-image=https://magiccards.info/scans/en/m12/80.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0b97772-9490-4db3-b4dd-a87d973680a5.jpg?1547516684
 value=4.143
 rarity=R
 type=Instant

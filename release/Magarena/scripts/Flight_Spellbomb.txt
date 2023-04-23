@@ -1,5 +1,5 @@
 name=Flight Spellbomb
-image=https://magiccards.info/scans/en/som/155.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fa09e06-08fd-4ecd-83fe-f0e0856547a5.jpg?1562814653
 value=2.296
 rarity=C
 type=Artifact

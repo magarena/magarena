@@ -1,5 +1,5 @@
 name=Mass Calcify
-image=https://magiccards.info/scans/en/m15/18.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/316a2d2f-ca94-463f-ada4-2b12bce6312f.jpg?1562784781
 value=3.357
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Porcelain Legionnaire
-image=https://magiccards.info/scans/en/nph/19.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2616aa0e-8413-4e63-877c-bffd5263f552.jpg?1562876105
 value=4.459
 rarity=C
 type=Artifact,Creature

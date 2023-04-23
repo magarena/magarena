@@ -1,5 +1,5 @@
 name=Corpse Connoisseur
-image=https://magiccards.info/scans/en/mm3/61.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f4ef04b-5434-480e-82a1-118ed1ff551f.jpg?1593813217
 image_updated=2017-08-08
 value=3.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Sword of Vengeance
-image=https://magiccards.info/scans/en/c14/276.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dd53110-bb42-4c42-851f-d2688c7c17a2.jpg?1645328007
 image_updated=2016-02-29
 value=4.282
 rarity=R

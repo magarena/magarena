@@ -1,5 +1,5 @@
 name=Ancient Brontodon
-image=https://magiccards.info/scans/en/xln/175.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39421ce8-86d5-4739-b6fd-78d63c0bb258.jpg?1562553559
 value=2.500
 rarity=C
 type=Creature

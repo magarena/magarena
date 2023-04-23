@@ -1,5 +1,5 @@
 name=Map the Wastes
-image=https://magiccards.info/scans/en/frf/134.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/039b61b1-79d5-44b6-8c0f-b8e8e508e5a9.jpg?1562822018
 value=2.500
 rarity=C
 type=Sorcery

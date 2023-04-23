@@ -1,5 +1,5 @@
 name=Immolation
-image=https://magiccards.info/scans/en/4e/222.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/606b1148-4aa6-4d78-bedd-e31573282921.jpg?1636223098
 value=3.407
 rarity=C
 type=Enchantment

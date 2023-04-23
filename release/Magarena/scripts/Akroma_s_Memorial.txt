@@ -1,5 +1,5 @@
 name=Akroma's Memorial
-image=https://magiccards.info/scans/en/m13/200.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/950ee61d-0bc1-4d7b-ba68-157061aa98eb.jpg?1619404160
 value=3.915
 rarity=M
 type=Legendary,Artifact

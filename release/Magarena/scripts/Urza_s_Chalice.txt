@@ -1,5 +1,5 @@
 name=Urza's Chalice
-image=https://magiccards.info/scans/en/aq/40.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67678871-a1e4-42ef-b49d-bb646ee9595d.jpg?1562919393
 value=2.625
 rarity=C
 type=Artifact

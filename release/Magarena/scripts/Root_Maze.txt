@@ -1,5 +1,5 @@
 name=Root Maze
-image=https://magiccards.info/scans/en/10e/292.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/727c757a-2ae5-45fd-9832-646a355a5710.jpg?1562549695
 value=4.107
 rarity=R
 type=Enchantment

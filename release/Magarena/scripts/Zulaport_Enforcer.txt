@@ -1,5 +1,5 @@
 name=Zulaport Enforcer
-image=https://magiccards.info/scans/en/roe/133.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1975d18a-df3f-4c1f-8fde-d11dabbc4adc.jpg?1562701591
 value=2.173
 rarity=C
 type=Creature

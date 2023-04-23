@@ -1,5 +1,5 @@
 name=Ghostflame Sliver
-image=https://magiccards.info/scans/en/ts/239.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64eb10d1-22c6-4848-a7f4-c6ccd2c66dae.jpg?1562916109
 value=3.118
 rarity=U
 type=Creature

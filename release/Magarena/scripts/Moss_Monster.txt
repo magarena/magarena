@@ -1,5 +1,5 @@
 name=Moss Monster
-image=https://magiccards.info/scans/en/8e/267.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15511fda-92ae-4d27-8a83-37e821ec3adf.jpg?1562899294
 value=1.870
 rarity=C
 type=Creature

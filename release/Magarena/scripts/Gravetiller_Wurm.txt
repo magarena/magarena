@@ -1,5 +1,5 @@
 name=Gravetiller Wurm
-image=https://magiccards.info/scans/en/dka/116.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66d9fe36-2eac-49e3-8f89-810009ba8a4b.jpg?1562919283
 value=3.427
 rarity=U
 type=Creature

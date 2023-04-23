@@ -1,5 +1,5 @@
 name=Psychic Trance
-image=https://magiccards.info/scans/en/on/102.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5e55695-16cc-4373-8078-959f1ded4c6d.jpg?1562945989
 value=2.820
 rarity=R
 type=Instant

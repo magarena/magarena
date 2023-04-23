@@ -1,5 +1,5 @@
 name=Ancestral Recall
-image=https://magiccards.info/scans/en/un/48.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2398892d-28e9-4009-81ec-0d544af79d2b.jpg?1614638829
 value=4.000
 rarity=R
 type=Instant

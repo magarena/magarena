@@ -1,5 +1,5 @@
 name=Immaculate Magistrate
-image=https://magiccards.info/scans/en/c14/201.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9208db8-1ba5-4f9c-90a4-03e377ae6f86.jpg?1608910719
 value=4.111
 rarity=R
 type=Creature

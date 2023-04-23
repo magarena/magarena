@@ -1,5 +1,5 @@
 name=Ikiral Outrider
-image=https://magiccards.info/scans/en/roe/27.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e1532b1-6f3b-48d3-ada9-ec395e842b96.jpg?1562705550
 value=2.788
 rarity=C
 type=Creature

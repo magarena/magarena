@@ -1,5 +1,5 @@
 name=Aladdin's Ring
-image=https://magiccards.info/scans/en/9e/286.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40b7370d-8ab4-4506-b7dd-d02c1ba92032.jpg?1562734209
 value=1.500
 rarity=R
 type=Artifact

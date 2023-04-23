@@ -1,5 +1,5 @@
 name=Dross Scorpion
-image=https://magiccards.info/scans/en/mi/164.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27c5381c-2e79-41fa-b1d7-2cf0c6dc1808.jpg?1562138758
 value=4.045
 rarity=C
 type=Artifact,Creature

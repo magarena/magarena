@@ -1,5 +1,5 @@
 name=Apocalypse
-image=https://magiccards.info/scans/en/tp/162.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7ff23780-d183-4cca-ad0c-448ef325bf36.jpg?1562054968
 value=4.511
 rarity=R
 type=Sorcery

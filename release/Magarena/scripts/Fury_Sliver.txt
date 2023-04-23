@@ -1,5 +1,5 @@
 name=Fury Sliver
-image=https://magiccards.info/scans/en/ts/157.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8a64329-09fc-4e0d-b7d1-378635f2801a.jpg?1619396979
 value=4.341
 rarity=U
 type=Creature

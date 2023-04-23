@@ -1,5 +1,5 @@
 name=Planar Birth
-image=https://magiccards.info/scans/en/us/31.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7cacdff-aa83-4644-b2f0-ce8c89dddfbf.jpg?1562937193
 value=4.130
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Savage Lands
-image=https://magiccards.info/scans/en/mm3/243.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76f6cdba-ae62-4ec5-8319-739a35303b21.jpg?1673306201
 image_updated=2017-08-08
 value=3.733
 rarity=U

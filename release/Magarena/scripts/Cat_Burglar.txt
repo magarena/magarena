@@ -1,5 +1,5 @@
 name=Cat Burglar
-image=https://magiccards.info/scans/en/ex/54.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/947109f9-7035-4a2a-bbc2-a2958f8c5d01.jpg?1593864177
 value=3.057
 rarity=C
 type=Creature

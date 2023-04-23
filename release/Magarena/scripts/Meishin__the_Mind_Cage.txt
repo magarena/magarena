@@ -1,5 +1,5 @@
 name=Meishin, the Mind Cage
-image=https://magiccards.info/scans/en/sok/44.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70efc52b-7852-44c4-9825-d5e1bd796160.jpg?1562494224
 value=3.033
 rarity=R
 type=Legendary,Enchantment

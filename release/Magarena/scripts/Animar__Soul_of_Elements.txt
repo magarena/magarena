@@ -1,5 +1,5 @@
 name=Animar, Soul of Elements
-image=https://magiccards.info/scans/en/a25/196.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3da57d0-1ae3-4f05-a52d-eb76ad56cae7.jpg?1673148281
 image_updated=2018-04-26
 value=4.313
 rarity=M

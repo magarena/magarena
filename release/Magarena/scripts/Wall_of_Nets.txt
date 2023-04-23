@@ -1,5 +1,5 @@
 name=Wall of Nets
-image=https://magiccards.info/scans/en/ex/24.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1da8e79-365d-4a36-87c5-648085828f9f.jpg?1562088787
 value=4.240
 rarity=R
 type=Creature

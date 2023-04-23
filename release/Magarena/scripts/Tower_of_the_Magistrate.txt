@@ -1,5 +1,5 @@
 name=Tower of the Magistrate
-image=https://magiccards.info/scans/en/mm/330.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee0481db-15ae-46b4-89a3-01c95a9626c7.jpg?1562383977
 value=3.976
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Blustersquall
-image=https://magiccards.info/scans/en/rtr/30.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1736aaf7-b61d-426e-af5e-f70272e7b07e.jpg?1562701714
 image_updated=2016-02-29
 value=3.303
 rarity=U

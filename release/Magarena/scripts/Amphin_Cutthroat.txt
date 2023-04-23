@@ -1,5 +1,5 @@
 name=Amphin Cutthroat
-image=https://magiccards.info/scans/en/m12/43.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd169064-9c7b-40bd-8be0-a89fcb28ae2f.jpg?1593860820
 value=1.756
 rarity=C
 type=Creature

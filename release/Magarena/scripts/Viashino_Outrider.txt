@@ -1,5 +1,5 @@
 name=Viashino Outrider
-image=https://magiccards.info/scans/en/us/223.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26ba659c-7e0f-4d8b-b91c-3c0725102ba2.jpg?1562903149
 value=2.750
 rarity=C
 type=Creature

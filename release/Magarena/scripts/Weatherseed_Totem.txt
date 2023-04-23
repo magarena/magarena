@@ -1,5 +1,5 @@
 name=Weatherseed Totem
-image=https://magiccards.info/scans/en/ts/268.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3275df49-c3f1-4310-87dd-25e3e0ee7fca.jpg?1562905546
 value=3.343
 rarity=U
 type=Artifact

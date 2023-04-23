@@ -1,5 +1,5 @@
 name=Char-Rumbler
-image=https://magiccards.info/scans/en/fut/96.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13f696f9-afa2-40c4-950a-e1e01c452017.jpg?1619396834
 value=3.410
 rarity=U
 type=Creature

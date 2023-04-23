@@ -1,5 +1,5 @@
 name=Kodama of the Center Tree
-image=https://magiccards.info/scans/en/bok/131.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b9264c5-1ecd-48cc-a12d-d4bd8050cfae.jpg?1562877634
 value=3.073
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Icatian Town
-image=https://magiccards.info/scans/en/6e/25.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/582044a0-0f4e-4de4-8bea-bc64757db198.jpg?1559592515
 value=3.455
 rarity=R
 type=Sorcery

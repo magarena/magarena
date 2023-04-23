@@ -1,5 +1,5 @@
 name=Slaughter Pact
-image=https://magiccards.info/scans/en/mma/97.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81e00341-030f-433e-b22b-aca42e0a88d2.jpg?1619396090
 value=4.312
 rarity=R
 type=Instant

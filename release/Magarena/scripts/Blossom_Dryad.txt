@@ -1,5 +1,5 @@
 name=Blossom Dryad
-image=https://magiccards.info/scans/en/xln/178.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66a3645f-2b71-4816-a1f2-6cd4e987882f.jpg?1562556790
 value=2.500
 rarity=C
 type=Creature

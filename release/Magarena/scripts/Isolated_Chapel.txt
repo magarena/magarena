@@ -1,5 +1,5 @@
 name=Isolated Chapel
-image=https://magiccards.info/scans/en/dom/241.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1d95d37-5dbe-4a25-bc80-a4db08f3c63a.jpg?1562740520
 image_updated=2018-08-07
 value=3.375
 rarity=R

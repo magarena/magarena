@@ -1,5 +1,5 @@
 name=Stream Hopper
-image=https://magiccards.info/scans/en/eve/113.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55371d0e-29da-4517-ab16-075782a1326f.jpg?1562912773
 value=2.708
 rarity=C
 type=Creature

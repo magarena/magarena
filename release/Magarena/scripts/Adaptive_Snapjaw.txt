@@ -1,5 +1,5 @@
 name=Adaptive Snapjaw
-image=https://magiccards.info/scans/en/gtc/113.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d3c0c43-2d6d-49b8-a112-07611a23ae69.jpg?1561815740
 value=3.047
 rarity=C
 type=Creature

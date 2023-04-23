@@ -1,5 +1,5 @@
 name=Ephara's Enlightenment
-image=https://magiccards.info/scans/en/bng/146.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e480d04-9a35-463e-928e-8da3556629e6.jpg?1593092729
 value=3.581
 rarity=U
 type=Enchantment

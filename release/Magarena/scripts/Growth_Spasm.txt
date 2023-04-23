@@ -1,5 +1,5 @@
 name=Growth Spasm
-image=https://magiccards.info/scans/en/roe/186.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8a6849b-6391-4c2c-97bd-267a31e57b38.jpg?1637631108
 value=4.033
 rarity=C
 type=Sorcery

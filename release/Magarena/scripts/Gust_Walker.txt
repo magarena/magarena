@@ -1,5 +1,5 @@
 name=Gust Walker
-image=https://magiccards.info/scans/en/akh/17.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49307ab6-392e-4b61-ad60-e6ea53da39f7.jpg?1543674681
 value=2.500
 rarity=C
 type=Creature

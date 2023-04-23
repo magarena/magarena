@@ -1,5 +1,5 @@
 name=Hekma Sentinels
-image=https://magiccards.info/scans/en/akh/56.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9b7e690-e5f7-4d6e-b756-22aea959a612.jpg?1543674991
 value=2.500
 rarity=C
 type=Creature

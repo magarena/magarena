@@ -1,5 +1,5 @@
 name=Chorus of Woe
-image=https://magiccards.info/scans/en/st/68.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee70f692-35c4-4ea8-baad-c950725cfc30.jpg?1562875740
 value=2.587
 rarity=C
 type=Sorcery

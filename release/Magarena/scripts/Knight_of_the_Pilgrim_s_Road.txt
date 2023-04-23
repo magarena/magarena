@@ -1,5 +1,5 @@
 name=Knight of the Pilgrim's Road
-image=https://magiccards.info/scans/en/ori/20.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9de5f39-b07a-4272-8992-ed971132c9c4.jpg?1562038867
 image_updated=2015-11-05
 value=2.500
 rarity=C

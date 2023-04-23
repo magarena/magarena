@@ -1,5 +1,5 @@
 name=Tourach's Gate
-image=https://magiccards.info/scans/en/fe/33.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d77f6401-a9fb-449c-b511-6fb837055bb4.jpg?1562935294
 value=2.512
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Greatsword
-image=https://magiccards.info/scans/en/m12/209.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63b4041d-7c95-4cb9-a18b-6568db05942b.jpg?1562644915
 value=1.484
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Bog-Strider Ash
-image=https://magiccards.info/scans/en/lw/198.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/310a1b54-56d9-496a-b910-90cc55996ad4.jpg?1562343440
 value=1.878
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Soul's Might
-image=https://magiccards.info/scans/en/ala/149.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcd32c85-3cc5-4987-8156-4def6d0004d6.jpg?1608910931
 value=3.037
 rarity=C
 type=Sorcery

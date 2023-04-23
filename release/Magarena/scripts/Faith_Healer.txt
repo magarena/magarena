@@ -1,5 +1,5 @@
 name=Faith Healer
-image=https://magiccards.info/scans/en/us/14.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d51ff6a-ba1b-4015-8d0b-df1a1bb5a0c1.jpg?1562914500
 value=3.532
 rarity=R
 type=Creature

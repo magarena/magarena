@@ -1,5 +1,5 @@
 name=Arcbound Stinger
-image=https://magiccards.info/scans/en/mma/199.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db438720-5bfb-4cd9-b565-434839045f60.jpg?1561969018
 value=3.447
 rarity=C
 type=Artifact,Creature

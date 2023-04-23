@@ -1,5 +1,5 @@
 name=Cunning Sparkmage
-image=https://magiccards.info/scans/en/wwk/79.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/699842c1-6507-48ee-b98b-3774d1f07c76.jpg?1562288961
 value=3.834
 rarity=U
 type=Creature

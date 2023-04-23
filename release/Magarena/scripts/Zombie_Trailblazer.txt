@@ -1,5 +1,5 @@
 name=Zombie Trailblazer
-image=https://magiccards.info/scans/en/tr/89.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82e4675f-ebec-483f-a111-b505629760fd.jpg?1562630658
 value=3.868
 rarity=U
 type=Creature

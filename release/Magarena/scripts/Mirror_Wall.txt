@@ -1,5 +1,5 @@
 name=Mirror Wall
-image=https://magiccards.info/scans/en/ju/47.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0e52b73-ebdf-4339-8780-84327a59ca57.jpg?1562632081
 value=2.481
 rarity=C
 type=Creature

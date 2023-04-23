@@ -1,5 +1,5 @@
 name=Sigil Blessing
-image=https://magiccards.info/scans/en/mm2/187.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72b5a580-c267-43f7-be77-fbc2928ff0ab.jpg?1562263753
 image_updated=2015-11-05
 value=2.894
 rarity=U

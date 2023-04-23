@@ -1,5 +1,5 @@
 name=Gift of Tusks
-image=https://magiccards.info/scans/en/ogw/55.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3821122c-c495-42b0-b8f6-3f469967f16d.jpg?1562906309
 image_updated=2016-02-29
 value=2.500
 rarity=U

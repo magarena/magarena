@@ -1,5 +1,5 @@
 name=Auramancer's Guise
-image=https://magiccards.info/scans/en/pc/34.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c787368d-d208-4aac-936d-b0c189d1cd90.jpg?1562581619
 value=3.093
 rarity=U
 type=Enchantment

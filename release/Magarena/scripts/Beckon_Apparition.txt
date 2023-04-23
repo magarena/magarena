@@ -1,5 +1,5 @@
 name=Beckon Apparition
-image=https://magiccards.info/scans/en/gtc/212.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/396bdd5f-2aad-48ba-a4b1-f2b2365a1a53.jpg?1547518148
 value=4.027
 rarity=C
 type=Instant

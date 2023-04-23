@@ -1,5 +1,5 @@
 name=Jacques le Vert
-image=https://magiccards.info/scans/en/lg/272.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fde1e41-bb06-457e-8c61-4a41535e3a73.jpg?1559592577
 value=3.574
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Lifecraft Cavalry
-image=https://magiccards.info/scans/en/aer/113.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2a92a03-4e1d-4b79-ad75-a29db2ea5495.jpg?1576382009
 value=2.500
 rarity=C
 type=Creature

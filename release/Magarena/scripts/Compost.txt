@@ -1,5 +1,5 @@
 name=Compost
-image=https://magiccards.info/scans/en/7e/235.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91fc8eca-7549-45b5-b3db-89a58d7d2a4a.jpg?1562243125
 value=4.144
 rarity=U
 type=Enchantment

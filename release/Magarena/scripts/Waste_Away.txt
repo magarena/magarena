@@ -1,5 +1,5 @@
 name=Waste Away
-image=https://magiccards.info/scans/en/tr/88.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78e859c2-3457-4c4c-9b1c-0db647dcf259.jpg?1562630493
 value=0.973
 rarity=C
 type=Instant

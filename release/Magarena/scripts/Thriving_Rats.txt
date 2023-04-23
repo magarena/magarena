@@ -1,5 +1,5 @@
 name=Thriving Rats
-image=https://magiccards.info/scans/en/kld/102.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52ba911b-6a52-4430-8f61-63bdae25c16a.jpg?1576381887
 image_updated=2016-10-05
 value=2.500
 rarity=C

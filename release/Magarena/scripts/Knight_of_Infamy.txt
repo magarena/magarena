@@ -1,5 +1,5 @@
 name=Knight of Infamy
-image=https://magiccards.info/scans/en/m13/96.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e339853-5b6b-47b7-8d88-e9d3befb803f.jpg?1562557774
 value=3.884
 rarity=U
 type=Creature

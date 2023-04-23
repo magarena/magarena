@@ -1,5 +1,5 @@
 name=Inquisitor Exarch
-image=https://magiccards.info/scans/en/nph/12.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49e241a0-a027-494b-8187-6ecb006d1d33.jpg?1562877293
 value=3.495
 rarity=U
 type=Creature

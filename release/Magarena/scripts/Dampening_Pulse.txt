@@ -1,5 +1,5 @@
 name=Dampening Pulse
-image=https://magiccards.info/scans/en/bfz/75.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a4393f6-54d7-4963-a3c0-b3a083c2440c.jpg?1562912356
 image_updated=2015-11-08
 value=2.500
 rarity=U

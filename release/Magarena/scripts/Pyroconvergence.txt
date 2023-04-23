@@ -1,5 +1,5 @@
 name=Pyroconvergence
-image=https://magiccards.info/scans/en/rtr/103.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cff95b7-79eb-4796-9a01-31ff355681ab.jpg?1562787831
 value=1.910
 rarity=U
 type=Enchantment

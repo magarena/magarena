@@ -1,5 +1,5 @@
 name=Spider Spawning
-image=https://magiccards.info/scans/en/isd/203.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e20241b-515f-420f-9012-2f693f333187.jpg?1673148182
 image_updated=2016-02-29
 value=3.757
 rarity=U

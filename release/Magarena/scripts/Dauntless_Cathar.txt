@@ -1,5 +1,5 @@
 name=Dauntless Cathar
-image=https://magiccards.info/scans/en/a25/10.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b49b72c-16dc-45c7-ba76-545c4dec42d9.jpg?1562435954
 image_updated=2018-04-27
 value=2.500
 rarity=C

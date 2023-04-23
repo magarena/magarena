@@ -1,5 +1,5 @@
 name=Skittering Surveyor
-image=https://magiccards.info/scans/en/dom/230.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bae9f1d-e96d-444c-a0fd-5608243ee6c8.jpg?1682205797
 value=2.500
 rarity=C
 type=Artifact,Creature

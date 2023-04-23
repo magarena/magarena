@@ -1,5 +1,5 @@
 name=Phytotitan
-image=https://magiccards.info/scans/en/m15/191.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0e6eedf-8f5a-407e-b15b-48e19df20bed.jpg?1562795671
 value=3.444
 rarity=R
 type=Creature

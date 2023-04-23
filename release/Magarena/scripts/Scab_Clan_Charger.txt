@@ -1,5 +1,5 @@
 name=Scab-Clan Charger
-image=https://magiccards.info/scans/en/gtc/131.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/964c88d3-3141-44ab-8856-44a3f08331ea.jpg?1561837780
 value=2.737
 rarity=C
 type=Creature

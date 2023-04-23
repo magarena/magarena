@@ -1,5 +1,5 @@
 name=Qasali Slingers
-image=https://magiccards.info/scans/en/c17/33.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40e21394-146e-4648-b81e-63659c0c4764.jpg?1562606257
 image_updated=2017-10-03
 value=2.500
 rarity=R

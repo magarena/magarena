@@ -1,5 +1,5 @@
 name=Lava Hounds
-image=https://magiccards.info/scans/en/8e/198.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf83d5c7-a17c-4350-9432-92a01421b39a.jpg?1562936720
 value=3.000
 rarity=R
 type=Creature

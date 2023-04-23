@@ -1,5 +1,5 @@
 name=Haazda Exonerator
-image=https://magiccards.info/scans/en/di/11.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87ca97f2-cf38-4d68-80a9-f4e890271e5c.jpg?1593272509
 value=2.141
 rarity=C
 type=Creature

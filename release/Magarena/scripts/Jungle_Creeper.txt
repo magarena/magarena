@@ -1,5 +1,5 @@
 name=Jungle Creeper
-image=https://magiccards.info/scans/en/rix/161.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d71282d-021c-4028-9ab7-f10e43e92c80.jpg?1555040863
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Borborygmos Enraged
-image=https://magiccards.info/scans/en/gtc/147.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8644c60f-7d06-4026-bcf3-df054701ca0a.jpg?1561834730
 value=3.529
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Forgeborn Oreads
-image=https://magiccards.info/scans/en/jou/98.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b80038ed-4206-4e44-943e-f332e4ce2f14.jpg?1593095990
 value=3.625
 rarity=U
 type=Enchantment,Creature

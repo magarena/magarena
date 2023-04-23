@@ -1,5 +1,5 @@
 name=Savage Gorilla
-image=https://magiccards.info/scans/en/ap/85.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32ad3f87-9f25-455f-9933-3b0b0eaad467.jpg?1562906862
 value=2.436
 rarity=C
 type=Creature

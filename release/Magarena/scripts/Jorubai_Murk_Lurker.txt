@@ -1,5 +1,5 @@
 name=Jorubai Murk Lurker
-image=https://magiccards.info/scans/en/m15/65.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7af346ac-32a6-49a8-986d-834b2c8c0478.jpg?1562789629
 value=3.333
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Morningtide
-image=https://magiccards.info/scans/en/tr/10.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a62e17a7-3602-45af-bdb6-fa5f2a9f1155.jpg?1574250416
 value=3.643
 rarity=R
 type=Sorcery

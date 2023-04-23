@@ -1,5 +1,5 @@
 name=Crovax the Cursed
-image=https://magiccards.info/scans/en/sh/5.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/487e843f-b710-452c-93fe-fce3f90a4d1c.jpg?1579814033
 value=2.500
 rarity=R
 type=Legendary,Creature

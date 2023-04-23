@@ -1,5 +1,5 @@
 name=Molten Birth
-image=https://magiccards.info/scans/en/m14/147.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd7ea3f3-900e-4dc5-ad83-1d5c5320d031.jpg?1547517333
 value=3.611
 rarity=U
 type=Sorcery

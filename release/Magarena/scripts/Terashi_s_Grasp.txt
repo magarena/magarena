@@ -1,5 +1,5 @@
 name=Terashi's Grasp
-image=https://magiccards.info/scans/en/mm2/37.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44f0d818-b463-4ef7-93b4-1ae341b52e2c.jpg?1562261600
 image_updated=2015-11-05
 value=3.867
 rarity=C

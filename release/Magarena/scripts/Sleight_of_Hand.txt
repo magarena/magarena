@@ -1,5 +1,5 @@
 name=Sleight of Hand
-image=https://magiccards.info/scans/en/9e/99.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1766d117-6ee1-4103-88e8-47b932a94d65.jpg?1547516514
 value=4.345
 rarity=C
 type=Sorcery

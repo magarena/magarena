@@ -1,5 +1,5 @@
 name=Diregraf Escort
-image=https://magiccards.info/scans/en/avr/174.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/640e21ad-5064-41bc-886e-2c997f69a3f5.jpg?1592709325
 value=1.527
 rarity=C
 type=Creature

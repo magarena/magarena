@@ -1,5 +1,5 @@
 name=Flameborn Viron
-image=https://magiccards.info/scans/en/nph/83.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9601ea62-a609-4bc5-a2f0-f7615b4dd5fa.jpg?1562879922
 value=2.117
 rarity=C
 type=Creature

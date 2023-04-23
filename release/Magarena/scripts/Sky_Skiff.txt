@@ -1,5 +1,5 @@
 name=Sky Skiff
-image=https://magiccards.info/scans/en/kld/233.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf4a4939-130b-40d7-8a0f-e31eb931d2d5.jpg?1576383405
 image_updated=2016-10-05
 value=2.500
 rarity=C

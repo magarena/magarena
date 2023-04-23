@@ -1,5 +1,5 @@
 name=Kothophed, Soul Hoarder
-image=https://magiccards.info/scans/en/ori/104.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1070dd6-944f-44a0-8834-02eae93dabaa.jpg?1673305201
 image_updated=2015-11-05
 value=2.500
 rarity=R

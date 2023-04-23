@@ -1,5 +1,5 @@
 name=Faceless Devourer
-image=https://magiccards.info/scans/en/ts/108.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c49d6139-fc0c-41db-be08-dfa87c685092.jpg?1619395466
 value=2.098
 removal=2
 rarity=U

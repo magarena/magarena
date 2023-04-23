@@ -1,5 +1,5 @@
 name=Boompile
-image=https://magiccards.info/scans/en/c16/52.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86dea2dc-7e94-41e6-a0ef-81aaa10aaf8c.jpg?1661583500
 image_updated=2016-11-20
 value=2.500
 rarity=R

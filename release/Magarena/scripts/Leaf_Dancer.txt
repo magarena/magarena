@@ -1,5 +1,5 @@
 name=Leaf Dancer
-image=https://magiccards.info/scans/en/od/249.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aebab65c-7d5f-4086-8eb1-7dc445e801e9.jpg?1562927494
 value=2.400
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Warpath
-image=https://magiccards.info/scans/en/mm/226.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e031c819-1237-4911-8a1d-87d6095a5faa.jpg?1562383510
 value=2.591
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Ordruun Veteran
-image=https://magiccards.info/scans/en/gtc/184.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20fea3f6-e64a-4964-86bc-c0b8fef0ab25.jpg?1561819307
 value=2.814
 rarity=U
 type=Creature

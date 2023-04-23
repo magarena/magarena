@@ -1,5 +1,5 @@
 name=Fractured Loyalty
-image=https://magiccards.info/scans/en/mi/93.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c7ce5d5-e51a-4dbc-82f2-b79c88769a7b.jpg?1562144991
 value=3.259
 rarity=U
 type=Enchantment

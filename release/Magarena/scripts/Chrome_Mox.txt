@@ -1,5 +1,5 @@
 name=Chrome Mox
-image=https://magiccards.info/scans/en/ema/219.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f340cbf7-5bbe-45b9-a4bf-d1caa500ff93.jpg?1599708839
 value=4.590
 rarity=M
 type=Artifact

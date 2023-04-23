@@ -1,5 +1,5 @@
 name=Angel of Despair
-image=https://magiccards.info/scans/en/cmd/180.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a07809b2-dabe-4242-84c3-fd640d7d5998.jpg?1547517989
 value=4.250
 removal=4
 rarity=R

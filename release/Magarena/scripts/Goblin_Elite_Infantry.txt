@@ -1,5 +1,5 @@
 name=Goblin Elite Infantry
-image=https://magiccards.info/scans/en/10e/206.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa052041-14db-4a3f-86ad-683c1f162cd7.jpg?1562553221
 value=1.308
 rarity=C
 type=Creature

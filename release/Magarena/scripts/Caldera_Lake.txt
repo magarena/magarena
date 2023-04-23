@@ -1,5 +1,5 @@
 name=Caldera Lake
-image=https://magiccards.info/scans/en/tp/306.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f79313f8-0b79-4fe3-8eb1-db523587b714.jpg?1562432225
 value=0.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Femeref Archers
-image=https://magiccards.info/scans/en/10e/264.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61df49d2-1324-460b-8c72-6b6fe8b03c15.jpg?1595438081
 value=3.583
 rarity=U
 type=Creature

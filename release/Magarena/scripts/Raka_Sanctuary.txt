@@ -1,5 +1,5 @@
 name=Raka Sanctuary
-image=https://magiccards.info/scans/en/ap/67.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62cab0be-589c-42a0-a297-1faaec46c73f.jpg?1562918233
 value=3.446
 rarity=U
 type=Enchantment

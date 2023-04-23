@@ -1,5 +1,5 @@
 name=Ravenous Skirge
-image=https://magiccards.info/scans/en/us/152.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0b6e655-e05e-44b5-9c7f-9dbbc66e6e28.jpg?1562939161
 value=2.750
 rarity=C
 type=Creature

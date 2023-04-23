@@ -1,5 +1,5 @@
 name=Wurmweaver Coil
-image=https://magiccards.info/scans/en/gp/99.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/661580bc-b5e5-48ce-b855-c177f1c61742.jpg?1593272552
 value=3.326
 rarity=R
 type=Enchantment

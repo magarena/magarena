@@ -1,5 +1,5 @@
 name=Extinguish All Hope
-image=https://magiccards.info/scans/en/jou/68.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/6895024f-a04b-46cf-b020-df4487d0c758.jpg?1593095692
 value=3.603
 rarity=R
 type=Sorcery

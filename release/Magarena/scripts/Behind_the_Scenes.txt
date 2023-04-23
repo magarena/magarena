@@ -1,5 +1,5 @@
 name=Behind the Scenes
-image=https://magiccards.info/scans/en/soi/100.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fac171d-a8b6-4bb7-a559-473574aa02a8.jpg?1576384346
 value=2.500
 rarity=U
 type=Enchantment

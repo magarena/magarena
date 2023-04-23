@@ -1,5 +1,5 @@
 name=Ivy Dancer
-image=https://magiccards.info/scans/en/rav/171.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73597c90-a527-4338-9668-126c6cf15927.jpg?1598916369
 value=2.107
 rarity=U
 type=Creature

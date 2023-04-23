@@ -1,5 +1,5 @@
 name=Vexing Beetle
-image=https://magiccards.info/scans/en/le/143.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d599d35f-1b73-498b-9a21-831c908a95d8.jpg?1562937848
 value=2.929
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Mercenary Knight
-image=https://magiccards.info/scans/en/po/22.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec9f97a2-b04e-418b-89c7-1c019288f27a.jpg?1562448325
 value=4.076
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Pact of Negation
-image=https://magiccards.info/scans/en/a25/68.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1ed4c0bb-b710-44a1-b8bc-6bd11c27b8b8.jpg?1619394428
 image_updated=2018-04-27
 value=4.588
 rarity=R

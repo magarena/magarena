@@ -1,5 +1,5 @@
 name=Vulshok Gauntlets
-image=https://magiccards.info/scans/en/mi/273.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/7318db50-1b78-4cc0-954b-9798af26a633.jpg?1599710237
 value=3.175
 rarity=C
 type=Artifact

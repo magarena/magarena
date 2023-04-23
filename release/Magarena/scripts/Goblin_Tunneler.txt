@@ -1,5 +1,5 @@
 name=Goblin Tunneler
-image=https://magiccards.info/scans/en/cn2/160.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d1ebba6-25ed-448f-b230-7c4a0ca675fa.jpg?1592764842
 image_updated=2017-08-29
 value=3.053
 rarity=C

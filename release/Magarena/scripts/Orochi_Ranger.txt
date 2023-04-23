@@ -1,5 +1,5 @@
 name=Orochi Ranger
-image=https://magiccards.info/scans/en/chk/235.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8dc216f-4447-4370-b31a-18304507669b.jpg?1562765590
 value=2.207
 rarity=C
 type=Creature

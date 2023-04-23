@@ -1,5 +1,5 @@
 name=Dramatic Reversal
-image=https://magiccards.info/scans/en/kld/44.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30de9083-8702-471c-92e7-5cf89936a208.jpg?1576267241
 image_updated=2016-10-05
 value=2.500
 rarity=C

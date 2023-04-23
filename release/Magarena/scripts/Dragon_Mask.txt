@@ -1,5 +1,5 @@
 name=Dragon Mask
-image=https://magiccards.info/scans/en/6e/283.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5109270-b052-489c-951c-d4b21a41ff6f.jpg?1562821878
 value=2.539
 rarity=U
 type=Artifact

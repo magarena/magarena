@@ -1,5 +1,5 @@
 name=Wall of Denial
-image=https://magiccards.info/scans/en/mm3/201.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cd95bba-0c3d-4f2c-94ea-bbd3f396292c.jpg?1593814738
 image_updated=2017-08-08
 value=3.784
 rarity=U

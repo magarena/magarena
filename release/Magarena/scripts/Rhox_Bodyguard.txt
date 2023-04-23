@@ -1,5 +1,5 @@
 name=Rhox Bodyguard
-image=https://magiccards.info/scans/en/cfx/122.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e9f43c8-9df6-49df-b145-4a19bc55e8f4.jpg?1562799873
 value=2.107
 rarity=C
 type=Creature

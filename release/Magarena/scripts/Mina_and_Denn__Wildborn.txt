@@ -1,5 +1,5 @@
 name=Mina and Denn, Wildborn
-image=https://magiccards.info/scans/en/ogw/156.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/374b5d57-fd20-4062-9ec2-24ac557d9dde.jpg?1604195020
 image_updated=2016-02-29
 value=2.500
 rarity=R

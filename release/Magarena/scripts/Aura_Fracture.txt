@@ -1,5 +1,5 @@
 name=Aura Fracture
-image=https://magiccards.info/scans/en/pr/2.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de8d3e36-977f-4169-8f2a-a4057b912ccb.jpg?1562936524
 value=2.911
 rarity=C
 type=Enchantment

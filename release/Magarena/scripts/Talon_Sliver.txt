@@ -1,5 +1,5 @@
 name=Talon Sliver
-image=https://magiccards.info/scans/en/tp/262.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f186c4b1-b7ec-46eb-a961-257411b401b0.jpg?1562057366
 value=4.017
 rarity=C
 type=Creature

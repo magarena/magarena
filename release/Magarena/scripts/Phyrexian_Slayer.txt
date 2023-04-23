@@ -1,5 +1,5 @@
 name=Phyrexian Slayer
-image=https://magiccards.info/scans/en/in/118.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fa8c604-343f-4c94-ac25-439ab1845c19.jpg?1562914368
 value=2.870
 rarity=C
 type=Creature

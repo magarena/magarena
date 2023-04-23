@@ -1,5 +1,5 @@
 name=Time Sieve
-image=https://magiccards.info/scans/en/arb/31.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2e8b424-0cec-490e-a571-bd051f952adf.jpg?1599708487
 value=4.090
 rarity=R
 type=Artifact

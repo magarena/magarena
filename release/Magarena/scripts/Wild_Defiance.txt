@@ -1,5 +1,5 @@
 name=Wild Defiance
-image=https://magiccards.info/scans/en/avr/203.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7eaa6be7-2c6f-4442-85d1-ae31ad87fd98.jpg?1592709495
 value=3.775
 rarity=R
 type=Enchantment

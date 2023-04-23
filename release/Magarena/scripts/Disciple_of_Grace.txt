@@ -1,5 +1,5 @@
 name=Disciple of Grace
-image=https://magiccards.info/scans/en/on/25.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d1790cb-34e4-4f23-8a13-1906fd9a956f.jpg?1562901832
 value=3.018
 rarity=C
 type=Creature

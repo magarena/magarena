@@ -1,5 +1,5 @@
 name=Buried Alive
-image=https://magiccards.info/scans/en/cmd/74.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5f51145-aade-4955-b9e7-4a34074253d6.jpg?1547516784
 value=4.413
 rarity=U
 type=Sorcery

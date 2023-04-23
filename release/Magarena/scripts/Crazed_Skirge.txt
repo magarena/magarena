@@ -1,5 +1,5 @@
 name=Crazed Skirge
-image=https://magiccards.info/scans/en/us/125.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/816272de-f134-45fa-ac1f-70d35d30c7e1.jpg?1562922283
 image_updated=2016-11-28
 value=2.688
 rarity=U

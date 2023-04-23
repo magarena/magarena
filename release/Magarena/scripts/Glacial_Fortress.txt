@@ -1,5 +1,5 @@
 name=Glacial Fortress
-image=https://magiccards.info/scans/en/xln/255.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cef133d9-26d2-4a1e-8d6a-829f1067c169.jpg?1562564197
 image_updated=2017-10-30
 value=4.000
 rarity=R

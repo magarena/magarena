@@ -1,5 +1,5 @@
 name=Gore Swine
-image=https://magiccards.info/scans/en/frf/103.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31c36d53-1173-4a55-8fb8-63a624fde7de.jpg?1562823987
 value=2.500
 rarity=C
 type=Creature

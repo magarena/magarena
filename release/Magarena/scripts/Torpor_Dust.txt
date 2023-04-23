@@ -1,5 +1,5 @@
 name=Torpor Dust
-image=https://magiccards.info/scans/en/shm/177.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8840551f-d43a-487f-a960-9b220dec5df4.jpg?1562832713
 value=1.298
 rarity=C
 type=Enchantment

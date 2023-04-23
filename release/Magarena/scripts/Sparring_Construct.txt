@@ -1,5 +1,5 @@
 name=Sparring Construct
-image=https://magiccards.info/scans/en/dom/232.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/badc7db8-386e-4fb6-aefa-591e99747eb2.jpg?1562741935
 value=2.500
 rarity=C
 type=Artifact,Creature

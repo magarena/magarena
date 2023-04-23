@@ -1,5 +1,5 @@
 name=Sundering Growth
-image=https://magiccards.info/scans/en/mm3/211.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96feebe2-0a6b-4df8-8e7d-ee0bb82ac0c1.jpg?1568004827
 image_updated=2017-08-08
 value=3.921
 rarity=C

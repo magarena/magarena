@@ -1,5 +1,5 @@
 name=Hunted Wumpus
-image=https://magiccards.info/scans/en/10e/269.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bf7258f-83c0-4cb0-8b1c-1f0c131abcd3.jpg?1562903970
 value=2.711
 rarity=U
 type=Creature

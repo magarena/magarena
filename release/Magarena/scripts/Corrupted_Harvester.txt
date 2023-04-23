@@ -1,5 +1,5 @@
 name=Corrupted Harvester
-image=https://magiccards.info/scans/en/som/59.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b54625ac-484f-4522-8048-38e01c545ac3.jpg?1562822084
 value=1.938
 rarity=U
 type=Creature

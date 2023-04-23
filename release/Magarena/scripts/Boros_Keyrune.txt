@@ -1,5 +1,5 @@
 name=Boros Keyrune
-image=https://magiccards.info/scans/en/gtc/227.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4b65847-fee2-4e00-b598-7363059ec3ff.jpg?1561845015
 value=2.915
 rarity=U
 type=Artifact

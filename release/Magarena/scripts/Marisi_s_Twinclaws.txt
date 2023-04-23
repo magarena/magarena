@@ -1,5 +1,5 @@
 name=Marisi's Twinclaws
-image=https://magiccards.info/scans/en/arb/140.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d406058e-4d51-42bd-b7c0-664216745ff8.jpg?1595438196
 image_updated=2010-09-10
 value=3.000
 rarity=U

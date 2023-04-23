@@ -1,5 +1,5 @@
 name=Barbarian Riftcutter
-image=https://magiccards.info/scans/en/rav/114.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/152f4cfa-4f03-404d-a6f7-24c27505906f.jpg?1598915342
 value=1.791
 rarity=C
 type=Creature

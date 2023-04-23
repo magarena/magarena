@@ -1,5 +1,5 @@
 name=Trapmaker's Snare
-image=https://magiccards.info/scans/en/zen/74.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cbc98ab-9f8a-41ed-b368-22f1f4ae594b.jpg?1562614773
 value=3.490
 rarity=U
 type=Instant

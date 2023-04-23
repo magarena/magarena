@@ -1,5 +1,5 @@
 name=Pyrrhic Revival
-image=https://magiccards.info/scans/en/eve/93.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fae92d23-2028-450c-9598-6932a71f8c32.jpg?1562948177
 value=3.638
 rarity=R
 type=Sorcery

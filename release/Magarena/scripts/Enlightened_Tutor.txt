@@ -1,5 +1,5 @@
 name=Enlightened Tutor
-image=https://magiccards.info/scans/en/ema/9.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c9ebec9-3474-4062-9607-2e2a72f78299.jpg?1580013657
 value=4.570
 rarity=R
 type=Instant

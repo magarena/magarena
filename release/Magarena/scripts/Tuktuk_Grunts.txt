@@ -1,5 +1,5 @@
 name=Tuktuk Grunts
-image=https://magiccards.info/scans/en/zen/152.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6f37982-d2ae-4ff1-b5da-3936733f8108.jpg?1562617804
 value=1.927
 rarity=C
 type=Creature

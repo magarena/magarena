@@ -1,5 +1,5 @@
 name=Master Thief
-image=https://magiccards.info/scans/en/m12/64.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/703f57d5-d8bb-4fb6-9dc9-71a5b4308f04.jpg?1604192566
 value=3.898
 rarity=U
 type=Creature

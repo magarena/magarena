@@ -1,5 +1,5 @@
 name=Jin-Gitaxias, Core Augur
-image=https://magiccards.info/scans/en/ima/62.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14a360b6-c7b4-4b25-8288-b3bb8d527bda.jpg?1562846236
 image_updated=2017-04-12
 value=4.205
 rarity=M

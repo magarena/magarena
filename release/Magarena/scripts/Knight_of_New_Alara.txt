@@ -1,5 +1,5 @@
 name=Knight of New Alara
-image=https://magiccards.info/scans/en/arb/70.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10076adb-8bd2-4a65-9ee6-192ecd79cc2b.jpg?1673305560
 value=3.840
 rarity=R
 type=Creature

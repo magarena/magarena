@@ -1,5 +1,5 @@
 name=Runner's Bane
-image=https://magiccards.info/scans/en/dgm/17.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4696b5a6-edfd-445e-ac80-64c1be94fbfc.jpg?1562907888
 value=2.700
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wall of Spears
-image=https://magiccards.info/scans/en/8e/320.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4f34f06-7f89-4f2b-8979-8219ac1c4560.jpg?1562931405
 image_updated=2011-01-11
 value=3.036
 rarity=U

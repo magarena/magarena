@@ -1,5 +1,5 @@
 name=Countless Gears Renegade
-image=https://magiccards.info/scans/en/aer/13.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2d6f334-0040-42b1-9c72-362e4dcaa65e.jpg?1576381353
 value=2.500
 rarity=C
 type=Creature

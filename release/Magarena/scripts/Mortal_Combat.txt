@@ -1,5 +1,5 @@
 name=Mortal Combat
-image=https://magiccards.info/scans/en/10e/160.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1d9cfce-1507-4cdf-9d58-6ebaf44e72e3.jpg?1562557622
 value=4.000
 rarity=R
 type=Enchantment

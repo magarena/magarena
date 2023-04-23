@@ -1,5 +1,5 @@
 name=Sanguine Bond
-image=https://magiccards.info/scans/en/ima/107.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad4de9f1-7a39-45af-828e-c59234d9e9b9.jpg?1625193373
 image_updated=2017-04-12
 value=3.000
 rarity=U

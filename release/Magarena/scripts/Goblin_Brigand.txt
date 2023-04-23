@@ -1,5 +1,5 @@
 name=Goblin Brigand
-image=https://magiccards.info/scans/en/9e/190.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/862a481a-f236-4e99-b4b9-086e6cb8f4de.jpg?1562738002
 value=2.283
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Paperfin Rascal
-image=https://magiccards.info/scans/en/lw/77.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a439c0ca-0cb2-4293-825e-1a72159953b9.jpg?1562361413
 value=2.075
 rarity=C
 type=Creature

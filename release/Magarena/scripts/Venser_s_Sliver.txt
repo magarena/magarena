@@ -1,5 +1,5 @@
 name=Venser's Sliver
-image=https://magiccards.info/scans/en/ts/267.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e3c5a64-453b-4477-853a-9514ba326f16.jpg?1562901355
 value=1.563
 rarity=C
 type=Artifact,Creature

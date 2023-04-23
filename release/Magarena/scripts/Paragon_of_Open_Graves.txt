@@ -1,5 +1,5 @@
 name=Paragon of Open Graves
-image=https://magiccards.info/scans/en/m15/111.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33d7de75-b6e1-44f5-ae1c-e095b41e8d0b.jpg?1562784944
 value=3.400
 rarity=U
 type=Creature

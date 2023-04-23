@@ -1,5 +1,5 @@
 name=Ribbons of the Reikai
-image=https://magiccards.info/scans/en/bok/50.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7a3b0da-026e-4ea9-8035-38c909e5f9a4.jpg?1562880454
 value=2.197
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Act of Treason
-image=https://magiccards.info/scans/en/m19/127.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78fec7e6-5ed9-46dc-93b4-7a054d763403.jpg?1600714793
 image_updated=2018-08-07
 value=2.500
 rarity=C

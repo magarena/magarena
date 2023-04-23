@@ -1,5 +1,5 @@
 name=Careful Study
-image=https://magiccards.info/scans/en/od/70.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/dea15b53-2940-40e7-8d48-8ec11341da83.jpg?1562936545
 value=4.351
 rarity=C
 type=Sorcery

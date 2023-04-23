@@ -1,5 +1,5 @@
 name=Mask of Law and Grace
-image=https://magiccards.info/scans/en/ud/11.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bd97150-b405-4bb5-b5a8-fceda4a45ebb.jpg?1562444233
 value=3.343
 rarity=C
 type=Enchantment

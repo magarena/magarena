@@ -1,5 +1,5 @@
 name=Tezzeret's Betrayal
-image=https://magiccards.info/scans/en/aer/191.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d71efa6-5de8-476f-86ce-0790956e574f.jpg?1562932177
 value=2.500
 rarity=R
 type=Sorcery

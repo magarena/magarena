@@ -1,5 +1,5 @@
 name=Feedback Bolt
-image=https://magiccards.info/scans/en/5dn/64.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a370375c-14bf-4381-9359-f2e600867e7c.jpg?1562878892
 value=3.032
 removal=3
 rarity=U

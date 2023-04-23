@@ -1,5 +1,5 @@
 name=Zhalfirin Knight
-image=https://magiccards.info/scans/en/mr/254.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb65d104-bd50-481e-a70e-62aeb2f2c12b.jpg?1587912398
 value=3.359
 rarity=C
 type=Creature

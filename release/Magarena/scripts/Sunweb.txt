@@ -1,5 +1,5 @@
 name=Sunweb
-image=https://magiccards.info/scans/en/8e/52.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7261bcea-27e0-417f-b3bf-7089c1e8bf1e.jpg?1562917871
 value=3.140
 rarity=R
 type=Creature

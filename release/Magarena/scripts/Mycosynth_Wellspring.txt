@@ -1,5 +1,5 @@
 name=Mycosynth Wellspring
-image=https://magiccards.info/scans/en/c16/262.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c11c16ff-1786-4426-86b0-d7beb7a71798.jpg?1625978921
 image_updated=2017-08-17
 value=3.468
 rarity=C

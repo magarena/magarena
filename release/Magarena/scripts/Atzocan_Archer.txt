@@ -1,5 +1,5 @@
 name=Atzocan Archer
-image=https://magiccards.info/scans/en/xln/176.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e214e0d-bd3d-467b-83fb-d8a232e166e4.jpg?1562553980
 value=2.500
 rarity=U
 type=Creature

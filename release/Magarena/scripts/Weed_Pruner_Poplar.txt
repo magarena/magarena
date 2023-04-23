@@ -1,5 +1,5 @@
 name=Weed-Pruner Poplar
-image=https://magiccards.info/scans/en/mt/83.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d44d2eb4-e5a3-4401-86cb-311374a2de04.jpg?1562881626
 value=3.089
 rarity=C
 type=Creature

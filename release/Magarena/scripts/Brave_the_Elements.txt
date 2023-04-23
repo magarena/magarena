@@ -1,5 +1,5 @@
 name=Brave the Elements
-image=https://magiccards.info/scans/en/c14/66.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c8ff6cd-e3ac-4024-aacb-86f7e1f43ba0.jpg?1561941653
 value=3.558
 rarity=U
 type=Instant

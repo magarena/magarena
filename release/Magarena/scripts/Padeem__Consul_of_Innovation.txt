@@ -1,5 +1,5 @@
 name=Padeem, Consul of Innovation
-image=https://magiccards.info/scans/en/kld/59.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e31b30a7-13e8-408e-a758-60e6e9290808.jpg?1576381360
 image_updated=2016-10-05
 value=2.500
 rarity=R

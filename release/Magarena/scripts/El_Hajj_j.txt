@@ -1,5 +1,5 @@
 name=El-Hajjâj
-image=https://magiccards.info/scans/en/4e/18.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf371bd2-89ad-487e-8f27-37a6e75ca0f5.jpg?1559604241
 value=2.357
 rarity=R
 type=Creature

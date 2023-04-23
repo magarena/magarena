@@ -1,5 +1,5 @@
 name=Reduce in Stature
-image=https://magiccards.info/scans/en/dtk/72.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bad1d13-c4f6-4440-9988-e1db40039f02.jpg?1562789579
 value=2.500
 rarity=C
 type=Enchantment

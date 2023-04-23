@@ -1,5 +1,5 @@
 name=Take Down
-image=https://magiccards.info/scans/en/kld/170.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8e702db-8c73-4947-9c13-5dcb50f4efab.jpg?1576382690
 image_updated=2016-10-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Lightning Blow
-image=https://magiccards.info/scans/en/ia/266.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c4c1c3d-e1dc-48c1-b036-5917da1048a9.jpg?1562904276
 value=2.204
 rarity=R
 type=Instant

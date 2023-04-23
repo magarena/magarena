@@ -1,5 +1,5 @@
 name=Thraben Purebloods
-image=https://magiccards.info/scans/en/isd/37.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16db28f4-3d96-42f5-a264-592fdc2d4196.jpg?1562826738
 value=1.971
 rarity=C
 type=Creature

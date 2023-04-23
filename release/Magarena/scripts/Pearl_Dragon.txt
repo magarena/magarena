@@ -1,5 +1,5 @@
 name=Pearl Dragon
-image=https://magiccards.info/scans/en/6e/34.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3efee309-2eba-4702-9361-0f75043922bb.jpg?1562816731
 value=2.768
 rarity=R
 type=Creature

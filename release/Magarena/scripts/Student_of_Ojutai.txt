@@ -1,5 +1,5 @@
 name=Student of Ojutai
-image=https://magiccards.info/scans/en/ima/33.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df49884b-9e12-488c-8381-ec543349b97b.jpg?1562855098
 image_updated=2017-04-12
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Jukai Messenger
-image=https://magiccards.info/scans/en/chk/218.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56e1967e-5bc5-47e7-9998-7fcfdffc3bb1.jpg?1562760117
 value=1.875
 rarity=C
 type=Creature

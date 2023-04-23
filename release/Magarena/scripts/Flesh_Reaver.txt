@@ -1,5 +1,5 @@
 name=Flesh Reaver
-image=https://magiccards.info/scans/en/us/136.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3dc6a91-ca13-45da-ba65-8fbb16c159c0.jpg?1562943138
 value=3.092
 rarity=U
 type=Creature

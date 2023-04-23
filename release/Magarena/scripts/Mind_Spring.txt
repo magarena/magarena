@@ -1,5 +1,5 @@
 name=Mind Spring
-image=https://magiccards.info/scans/en/m10/64.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c5e0d02-4714-4957-97fe-9b457f8c4563.jpg?1591320286
 image_updated=2016-12-23
 value=3.719
 rarity=R

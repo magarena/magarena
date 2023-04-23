@@ -1,5 +1,5 @@
 name=Gideon's Reproach
-image=https://magiccards.info/scans/en/dom/19.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b771f44-ce32-41a2-b219-738924b7f42d.jpg?1562738270
 image_updated=2018-08-07
 value=2.500
 rarity=C

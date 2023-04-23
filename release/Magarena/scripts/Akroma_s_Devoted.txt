@@ -1,5 +1,5 @@
 name=Akroma's Devoted
-image=https://magiccards.info/scans/en/le/2.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/798893df-e720-471d-822d-50284de23efd.jpg?1562919405
 value=3.844
 rarity=U
 type=Creature

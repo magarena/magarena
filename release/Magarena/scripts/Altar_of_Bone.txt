@@ -1,5 +1,5 @@
 name=Altar of Bone
-image=https://magiccards.info/scans/en/ia/359.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75d5b014-8675-4d91-a539-ac5c31d44b35.jpg?1562916801
 value=2.700
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Spine of Ish Sah
-image=https://magiccards.info/scans/en/c14/272.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe28640d-a030-4da4-882d-87b6e1678bbd.jpg?1682210265
 value=3.667
 rarity=R
 type=Artifact

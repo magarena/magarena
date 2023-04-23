@@ -1,5 +1,5 @@
 name=Hand of the Praetors
-image=https://magiccards.info/scans/en/som/66.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94ca493e-f09b-4b11-bb47-0562dfc203ca.jpg?1591605167
 value=4.173
 rarity=R
 type=Creature

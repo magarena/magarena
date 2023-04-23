@@ -1,5 +1,5 @@
 name=Blight Keeper
-image=https://magiccards.info/scans/en/xln/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bcabe2d-82d2-4c1b-8f28-21dc29c9dbf2.jpg?1562553781
 value=2.500
 rarity=C
 type=Creature

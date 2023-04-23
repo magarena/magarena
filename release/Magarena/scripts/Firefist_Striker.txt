@@ -1,5 +1,5 @@
 name=Firefist Striker
-image=https://magiccards.info/scans/en/gtc/90.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccbc2f22-4500-4c74-a1a2-51d8238c1d16.jpg?1561846241
 value=2.992
 rarity=U
 type=Creature

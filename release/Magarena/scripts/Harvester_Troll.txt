@@ -1,5 +1,5 @@
 name=Harvester Troll
-image=https://magiccards.info/scans/en/ogw/133.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bf92744-0acc-4c7e-819c-51b0696facad.jpg?1562897407
 image_updated=2016-02-29
 value=2.500
 rarity=U

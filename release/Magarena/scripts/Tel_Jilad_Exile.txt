@@ -1,5 +1,5 @@
 name=Tel-Jilad Exile
-image=https://magiccards.info/scans/en/mi/133.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3529277-8409-45fe-9f29-64354597e918.jpg?1562161263
 value=2.125
 rarity=C
 type=Creature

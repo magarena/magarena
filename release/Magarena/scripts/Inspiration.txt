@@ -1,5 +1,5 @@
 name=Inspiration
-image=https://magiccards.info/scans/en/rtr/42.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95233b5e-9401-4d6d-8ec4-959ca22270ff.jpg?1562199546
 value=3.508
 rarity=C
 type=Instant

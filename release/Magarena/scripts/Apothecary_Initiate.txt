@@ -1,5 +1,5 @@
 name=Apothecary Initiate
-image=https://magiccards.info/scans/en/shm/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b6ae637-bdb7-4117-8539-e424159bad6f.jpg?1562833692
 value=1.933
 rarity=C
 type=Creature

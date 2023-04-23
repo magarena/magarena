@@ -1,5 +1,5 @@
 name=Umara Entangler
-image=https://magiccards.info/scans/en/ogw/65.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d4ddc45-cd67-4b2c-84d0-4604783fd8e7.jpg?1562897715
 image_updated=2016-02-29
 value=2.500
 rarity=C

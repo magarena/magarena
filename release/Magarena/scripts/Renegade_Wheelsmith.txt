@@ -1,5 +1,5 @@
 name=Renegade Wheelsmith
-image=https://magiccards.info/scans/en/aer/134.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/6956a341-10fd-48af-b382-88c2b2934a3e.jpg?1576382144
 value=2.500
 rarity=U
 type=Creature

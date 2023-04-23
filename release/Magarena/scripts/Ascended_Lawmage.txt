@@ -1,5 +1,5 @@
 name=Ascended Lawmage
-image=https://magiccards.info/scans/en/cn2/198.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e90d9cc4-9444-4610-ace5-c2981809b331.jpg?1576383155
 image_updated=2017-08-29
 value=3.820
 rarity=U

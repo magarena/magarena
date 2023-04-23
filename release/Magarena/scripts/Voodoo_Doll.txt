@@ -1,5 +1,5 @@
 name=Voodoo Doll
-image=https://magiccards.info/scans/en/lg/243.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c60ea64d-0209-4ca4-bee6-f9eb63784c9e.jpg?1562936877
 value=2.100
 rarity=R
 type=Artifact

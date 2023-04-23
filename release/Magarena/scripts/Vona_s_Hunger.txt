@@ -1,5 +1,5 @@
 name=Vona's Hunger
-image=https://magiccards.info/scans/en/rix/90.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aab958d5-9c1f-420f-b358-ec0325f22f84.jpg?1555040347
 value=2.500
 rarity=R
 type=Instant

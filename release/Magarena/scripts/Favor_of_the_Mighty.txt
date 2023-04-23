@@ -1,5 +1,5 @@
 name=Favor of the Mighty
-image=https://magiccards.info/scans/en/lw/14.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20d858be-4c03-4819-94e9-ca4ca3de9032.jpg?1562340883
 value=3.098
 rarity=R
 type=Tribal,Enchantment

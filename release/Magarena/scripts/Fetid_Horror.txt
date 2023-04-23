@@ -1,5 +1,5 @@
 name=Fetid Horror
-image=https://magiccards.info/scans/en/mr/21.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4be39d50-1e36-4dac-a923-81fc9f229b8d.jpg?1572636951
 value=3.058
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Structural Distortion
-image=https://magiccards.info/scans/en/soi/185.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7895890-a774-4c7c-9f15-78b8aadfd9ef.jpg?1576384931
 value=2.500
 rarity=C
 type=Sorcery

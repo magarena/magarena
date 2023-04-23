@@ -1,5 +1,5 @@
 name=Fiery Cannonade
-image=https://magiccards.info/scans/en/xln/143.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/396f1cdf-712b-4518-a0e8-0039303dccdc.jpg?1608910204
 value=2.500
 rarity=U
 type=Instant

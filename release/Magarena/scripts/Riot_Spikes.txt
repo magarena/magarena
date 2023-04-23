@@ -1,5 +1,5 @@
 name=Riot Spikes
-image=https://magiccards.info/scans/en/di/146.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63d0f909-9906-4ff7-9b10-9d817f20d8a9.jpg?1593273890
 value=2.541
 rarity=C
 type=Enchantment

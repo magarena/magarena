@@ -1,5 +1,5 @@
 name=Wooden Sphere
-image=https://magiccards.info/scans/en/8e/321.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5310b3a7-0a85-4469-be88-5c7ab1de4f4a.jpg?1562911886
 value=1.255
 rarity=U
 type=Artifact

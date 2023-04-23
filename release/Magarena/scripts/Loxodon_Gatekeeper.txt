@@ -1,5 +1,5 @@
 name=Loxodon Gatekeeper
-image=https://magiccards.info/scans/en/rav/25.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/781476a1-73a9-4f43-9f71-d29c97ecc69a.jpg?1598913806
 value=3.921
 rarity=R
 type=Creature

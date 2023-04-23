@@ -1,5 +1,5 @@
 name=Erdwal Ripper
-image=https://magiccards.info/scans/en/dka/86.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/769ea5e9-6d05-4bc6-8f14-00eb2532c8b5.jpg?1562923029
 value=2.689
 rarity=C
 type=Creature

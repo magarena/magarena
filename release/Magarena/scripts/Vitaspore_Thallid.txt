@@ -1,5 +1,5 @@
 name=Vitaspore Thallid
-image=https://magiccards.info/scans/en/pc/143.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cad14bc9-b90e-48e0-9e72-173874dab6bc.jpg?1562582042
 value=2.041
 rarity=C
 type=Creature

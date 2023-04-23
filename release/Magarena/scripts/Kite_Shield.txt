@@ -1,5 +1,5 @@
 name=Kite Shield
-image=https://magiccards.info/scans/en/m12/210.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a00d1e1-aaa4-4f4d-a887-1e477820d2c6.jpg?1562634163
 value=0.992
 rarity=U
 type=Artifact

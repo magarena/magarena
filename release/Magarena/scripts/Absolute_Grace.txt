@@ -1,5 +1,5 @@
 name=Absolute Grace
-image=https://magiccards.info/scans/en/us/1.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe7d1839-7180-4b4c-8ddb-7df24573f740.jpg?1562948889
 value=3.615
 rarity=U
 type=Enchantment

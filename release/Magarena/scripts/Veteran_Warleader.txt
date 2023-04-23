@@ -1,5 +1,5 @@
 name=Veteran Warleader
-image=https://magiccards.info/scans/en/bfz/221.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46c7f3e0-b23a-4786-b452-583d905113e2.jpg?1562911602
 image_updated=2015-11-08
 value=2.500
 rarity=R

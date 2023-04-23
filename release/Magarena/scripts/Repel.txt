@@ -1,5 +1,5 @@
 name=Repel
-image=https://magiccards.info/scans/en/od/98.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81cf7987-e478-4a76-8f5e-ef9c1bb3b30a.jpg?1562921180
 value=2.000
 rarity=C
 type=Instant

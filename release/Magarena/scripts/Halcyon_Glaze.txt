@@ -1,5 +1,5 @@
 name=Halcyon Glaze
-image=https://magiccards.info/scans/en/rav/54.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fafd3018-1cfe-4c41-a08c-5c2ba3528c7e.jpg?1598914276
 value=3.488
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Firefright Mage
-image=https://magiccards.info/scans/en/pc/99.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6e1f374-d5fc-4f39-ad2a-2c9dad74efd3.jpg?1562578853
 value=2.689
 rarity=C
 type=Creature

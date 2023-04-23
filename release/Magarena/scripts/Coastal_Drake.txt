@@ -1,5 +1,5 @@
 name=Coastal Drake
-image=https://magiccards.info/scans/en/ap/22.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f87aaa74-26c6-4057-84b9-a007383684a5.jpg?1562953892
 value=2.500
 rarity=C
 type=Creature

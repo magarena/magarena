@@ -1,5 +1,5 @@
 name=Blight
-image=https://magiccards.info/scans/en/6e/113.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d857076b-d130-482b-b015-37c22f0bdd43.jpg?1559592323
 value=3.780
 rarity=U
 type=Enchantment

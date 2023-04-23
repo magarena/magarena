@@ -1,5 +1,5 @@
 name=Seedcradle Witch
-image=https://magiccards.info/scans/en/shm/241.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0ae8525-ce10-40bd-8980-a05fb81a0fac.jpg?1562833973
 value=3.102
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mogg Bombers
-image=https://magiccards.info/scans/en/sh/91.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16064ad4-eec2-4c32-b66d-a2bdb1a6191f.jpg?1562595919
 value=2.667
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fire Whip
-image=https://magiccards.info/scans/en/tsts/63.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53948505-1057-4d68-aa6f-291dfa63d475.jpg?1562776384
 value=4.208
 rarity=C
 type=Enchantment

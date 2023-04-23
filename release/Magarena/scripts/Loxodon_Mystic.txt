@@ -1,5 +1,5 @@
 name=Loxodon Mystic
-image=https://magiccards.info/scans/en/10e/26.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83bf030b-4e20-49b0-837f-935f96b5d1fe.jpg?1562550804
 value=1.855
 rarity=C
 type=Creature

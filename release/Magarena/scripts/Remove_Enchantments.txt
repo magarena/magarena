@@ -1,5 +1,5 @@
 name=Remove Enchantments
-image=https://magiccards.info/scans/en/lg/202.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf2e3a8a-b386-474d-b8e9-4c2d56a2b742.jpg?1562860867
 value=2.338
 rarity=C
 type=Instant

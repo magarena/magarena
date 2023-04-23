@@ -1,5 +1,5 @@
 name=Faith of the Devoted
-image=https://magiccards.info/scans/en/akh/90.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f8c5e6a-a161-4630-842a-4c8d4071d6e6.jpg?1568004181
 value=2.500
 rarity=U
 type=Enchantment

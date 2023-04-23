@@ -1,5 +1,5 @@
 name=Vampire Outcasts
-image=https://magiccards.info/scans/en/mm2/102.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32c1d966-b3c5-4480-be58-054a88141e44.jpg?1562260638
 value=2.962
 rarity=U
 type=Creature

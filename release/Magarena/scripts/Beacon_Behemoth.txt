@@ -1,5 +1,5 @@
 name=Beacon Behemoth
-image=https://magiccards.info/scans/en/cfx/78.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cc42e33-7489-4a32-bb30-adc80ec13521.jpg?1562799353
 value=2.787
 rarity=C
 type=Creature

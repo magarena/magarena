@@ -1,5 +1,5 @@
 name=Coiling Oracle
-image=https://magiccards.info/scans/en/mm3/157.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04741224-4974-4828-b005-cfaafaef9b76.jpg?1673305494
 image_updated=2017-08-08
 value=4.300
 rarity=C

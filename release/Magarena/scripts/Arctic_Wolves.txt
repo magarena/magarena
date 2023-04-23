@@ -1,5 +1,5 @@
 name=Arctic Wolves
-image=https://magiccards.info/scans/en/wl/60.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5fb56a2-5138-4c31-aa4b-0824a1a24573.jpg?1562802905
 value=2.088
 rarity=U
 type=Creature

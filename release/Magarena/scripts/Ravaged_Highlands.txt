@@ -1,5 +1,5 @@
 name=Ravaged Highlands
-image=https://magiccards.info/scans/en/od/324.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb60ffc9-4919-40f2-bdd6-07eee6abf37c.jpg?1562929993
 value=2.658
 rarity=C
 type=Land

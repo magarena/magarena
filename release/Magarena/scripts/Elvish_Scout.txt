@@ -1,5 +1,5 @@
 name=Elvish Scout
-image=https://magiccards.info/scans/en/fe/76.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/689cd2ed-be81-4769-a8ec-287946301396.jpg?1562914384
 value=3.765
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bloodmad Vampire
-image=https://magiccards.info/scans/en/soi/146.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b64e974a-3cf7-49f1-9d5a-c74f920f0169.jpg?1576384657
 value=2.500
 rarity=C
 type=Creature

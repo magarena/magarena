@@ -1,5 +1,5 @@
 name=Flamestick Courier
-image=https://magiccards.info/scans/en/on/203.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e822161d-0434-4578-aecd-c9ef0b84bd4e.jpg?1562950280
 value=2.826
 rarity=U
 type=Creature

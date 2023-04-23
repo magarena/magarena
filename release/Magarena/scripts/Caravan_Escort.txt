@@ -1,5 +1,5 @@
 name=Caravan Escort
-image=https://magiccards.info/scans/en/roe/15.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/817602f9-0844-4ba2-bd7c-380fcd0c15ff.jpg?1593095358
 value=3.081
 rarity=C
 type=Creature

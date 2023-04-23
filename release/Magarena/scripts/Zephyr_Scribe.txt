@@ -1,5 +1,5 @@
 name=Zephyr Scribe
-image=https://magiccards.info/scans/en/dtk/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d23ae0d2-0ca1-4095-8710-be5800e389cd.jpg?1562793452
 value=2.500
 rarity=C
 type=Creature

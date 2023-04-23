@@ -1,5 +1,5 @@
 name=Beast Within
-image=https://magiccards.info/scans/en/c16/141.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/518e4f19-04c4-4829-980b-a2052e9f11b9.jpg?1673305340
 image_updated=2017-08-17
 value=4.561
 rarity=U

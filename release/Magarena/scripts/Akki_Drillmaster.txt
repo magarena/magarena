@@ -1,5 +1,5 @@
 name=Akki Drillmaster
-image=https://magiccards.info/scans/en/sok/92.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fb63254-5786-43fb-8ccd-132095a55e64.jpg?1562494689
 value=2.819
 rarity=C
 type=Creature

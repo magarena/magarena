@@ -1,5 +1,5 @@
 name=Gemini Engine
-image=https://magiccards.info/scans/en/ds/121.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e03e05b-011b-4695-950b-98dd7643b8a0.jpg?1562636055
 value=4.035
 rarity=R
 type=Artifact,Creature

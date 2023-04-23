@@ -1,5 +1,5 @@
 name=Grifter's Blade
-image=https://magiccards.info/scans/en/rav/263.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c411784-fe96-42c0-baaa-36616d2be0b3.jpg?1598918020
 value=2.378
 rarity=U
 type=Artifact

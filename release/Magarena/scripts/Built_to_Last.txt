@@ -1,5 +1,5 @@
 name=Built to Last
-image=https://magiccards.info/scans/en/kld/7.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef3e09a4-93d0-4ed7-bbee-82108672d5f8.jpg?1576380771
 image_updated=2016-10-05
 value=2.500
 rarity=C

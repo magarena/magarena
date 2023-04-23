@@ -1,5 +1,5 @@
 name=Zektar Shrine Expedition
-image=https://magiccards.info/scans/en/zen/155.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f12d2c01-0ef2-40e6-8c7d-8512e2c8c074.jpg?1562618196
 value=3.860
 rarity=C
 type=Enchantment

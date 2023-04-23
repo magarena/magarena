@@ -1,5 +1,5 @@
 name=Sea Monster
-image=https://magiccards.info/scans/en/10e/106.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a1d7d4b-721e-4946-803d-b04ddbe7b718.jpg?1562429838
 value=2.207
 rarity=C
 type=Creature

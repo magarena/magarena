@@ -1,5 +1,5 @@
 name=Plaxcaster Frogling
-image=https://magiccards.info/scans/en/mm2/184.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13a5413a-a082-4f9d-93f5-123e689b3b72.jpg?1625977957
 value=3.985
 rarity=U
 type=Creature

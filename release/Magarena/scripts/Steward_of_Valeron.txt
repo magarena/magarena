@@ -1,5 +1,5 @@
 name=Steward of Valeron
-image=https://magiccards.info/scans/en/ala/198.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/237c62b7-7c0e-44bb-b420-d41aad2792a0.jpg?1562902522
 value=3.687
 rarity=C
 type=Creature

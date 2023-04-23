@@ -1,5 +1,5 @@
 name=Temmet, Vizier of Naktamun
-image=https://magiccards.info/scans/en/akh/207.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6af12a34-52a1-4940-a8d5-9e9811fcd59f.jpg?1543676111
 value=2.500
 rarity=R
 type=Legendary,Creature

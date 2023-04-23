@@ -1,5 +1,5 @@
 name=Skyshroud Behemoth
-image=https://magiccards.info/scans/en/ne/116.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c01d17e-45a2-4b6f-aaa5-2af9c8f26181.jpg?1562628866
 value=2.007
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Yukora, the Prisoner
-image=https://magiccards.info/scans/en/bok/90.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54aeca31-1175-4d2d-adc3-e3682d7e9e07.jpg?1562877071
 value=3.285
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Elder Mastery
-image=https://magiccards.info/scans/en/cfx/104.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58cc3ec9-b4ad-4106-b5e9-66ee58e90150.jpg?1562915915
 value=2.853
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Blood Hound
-image=https://magiccards.info/scans/en/mm/176.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baa1e796-809c-49af-a84e-ec088f7f48f8.jpg?1562382564
 value=2.581
 rarity=R
 type=Creature

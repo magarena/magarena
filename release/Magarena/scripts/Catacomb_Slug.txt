@@ -1,5 +1,5 @@
 name=Catacomb Slug
-image=https://magiccards.info/scans/en/ori/86.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d30d6df7-6199-4b06-9d45-785ee1e2ed3b.jpg?1562043502
 image_updated=2015-11-05
 value=2.500
 rarity=C

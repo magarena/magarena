@@ -1,5 +1,5 @@
 name=Thermal Navigator
-image=https://magiccards.info/scans/en/5dn/162.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb86854f-c933-4b6c-bd0a-67c3615e908f.jpg?1562880500
 value=1.600
 rarity=C
 type=Artifact,Creature

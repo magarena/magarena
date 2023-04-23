@@ -1,5 +1,5 @@
 name=Aisling Leprechaun
-image=https://magiccards.info/scans/en/lg/87.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/640a161d-ad7b-4e5b-8f2d-d3753cb9daa3.jpg?1562859198
 value=2.622
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Chandra's Ignition
-image=https://magiccards.info/scans/en/ori/137.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31d0275d-1a1a-421d-a2ae-9a61697a3a74.jpg?1661583552
 image_updated=2015-11-05
 value=2.500
 rarity=R

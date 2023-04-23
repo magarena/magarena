@@ -1,5 +1,5 @@
 name=Apothecary Geist
-image=https://magiccards.info/scans/en/soi/4.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37e2358c-211e-4d79-8120-88bb9e656cba.jpg?1576383651
 value=2.500
 rarity=C
 type=Creature

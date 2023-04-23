@@ -1,5 +1,5 @@
 name=Villainous Ogre
-image=https://magiccards.info/scans/en/chk/148.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0277c1ba-eae4-442b-8b80-20869ba20568.jpg?1593860633
 value=2.425
 rarity=C
 type=Creature

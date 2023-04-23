@@ -1,5 +1,5 @@
 name=Cold Storage
-image=https://magiccards.info/scans/en/tp/270.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b26e28d4-50e1-41db-984d-c55781295012.jpg?1562055935
 value=3.618
 rarity=R
 type=Artifact

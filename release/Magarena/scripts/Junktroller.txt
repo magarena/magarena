@@ -1,5 +1,5 @@
 name=Junktroller
-image=https://magiccards.info/scans/en/rav/264.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03fd8ee5-0a2a-4c68-9b09-01945c7189ab.jpg?1584832130
 value=2.962
 rarity=U
 type=Artifact,Creature

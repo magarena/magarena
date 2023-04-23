@@ -1,5 +1,5 @@
 name=Flowstone Overseer
-image=https://magiccards.info/scans/en/ne/82.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e644ab8-3cc3-413d-a918-44fc636087ae.jpg?1562629522
 value=4.186
 rarity=R
 type=Creature

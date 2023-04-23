@@ -1,5 +1,5 @@
 name=Kalastria Highborn
-image=https://magiccards.info/scans/en/wwk/59.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1efd1dd-903c-47a0-b746-5571a3ea1755.jpg?1562299260
 value=4.048
 rarity=R
 type=Creature

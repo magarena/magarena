@@ -1,5 +1,5 @@
 name=Memory Sluice
-image=https://magiccards.info/scans/en/shm/170.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fd93980-55f6-43a0-87db-5fa1203aa7b6.jpg?1562830748
 value=3.776
 rarity=C
 type=Sorcery

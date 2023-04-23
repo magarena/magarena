@@ -1,5 +1,5 @@
 name=Sanctum of Ugin
-image=https://magiccards.info/scans/en/bfz/242.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86798d03-9f2d-46bd-a660-13c8dd5535ce.jpg?1562926694
 image_updated=2015-11-08
 value=2.500
 rarity=R

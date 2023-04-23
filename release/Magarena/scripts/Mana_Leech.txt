@@ -1,5 +1,5 @@
 name=Mana Leech
-image=https://magiccards.info/scans/en/us/141.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a288616-5350-43eb-b718-5bfeb5be4ed4.jpg?1562924220
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Rain of Embers
-image=https://magiccards.info/scans/en/rav/138.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d5391a9-6c30-4f9b-b746-a4427a3e63fc.jpg?1598915805
 value=2.797
 rarity=C
 type=Sorcery

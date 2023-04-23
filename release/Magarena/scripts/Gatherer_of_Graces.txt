@@ -1,5 +1,5 @@
 name=Gatherer of Graces
-image=https://magiccards.info/scans/en/gp/85.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68d75367-88e7-44e6-9234-590dc143fd1d.jpg?1593272439
 value=2.988
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ghoulcaller Gisa
-image=https://magiccards.info/scans/en/c14/23.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/779e3944-4342-4151-9963-87e8d41fd2ff.jpg?1680135257
 value=2.500
 rarity=M
 type=Legendary,Creature

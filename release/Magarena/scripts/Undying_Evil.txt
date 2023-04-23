@@ -1,5 +1,5 @@
 name=Undying Evil
-image=https://magiccards.info/scans/en/dka/77.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/325f2243-54fd-484b-a742-166cea7ec179.jpg?1562906805
 value=3.884
 rarity=C
 type=Instant

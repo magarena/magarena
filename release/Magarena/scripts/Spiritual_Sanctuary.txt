@@ -1,5 +1,5 @@
 name=Spiritual Sanctuary
-image=https://magiccards.info/scans/en/lg/207.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/654dd1e0-a91d-44ee-af20-c025bf360c3f.jpg?1562859205
 value=1.196
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Reaper from the Abyss
-image=https://magiccards.info/scans/en/c14/159.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0831a574-33c5-4ab2-b7f6-17db2829df51.jpg?1561931422
 value=3.891
 rarity=M
 type=Creature

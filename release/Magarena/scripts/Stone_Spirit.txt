@@ -1,5 +1,5 @@
 name=Stone Spirit
-image=https://magiccards.info/scans/en/5e/271.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be3143f6-9668-4458-b05d-525ddeaf357f.jpg?1562870470
 value=2.778
 rarity=U
 type=Creature

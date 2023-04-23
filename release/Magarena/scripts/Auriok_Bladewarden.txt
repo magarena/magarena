@@ -1,5 +1,5 @@
 name=Auriok Bladewarden
-image=https://magiccards.info/scans/en/mi/3.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51605471-1198-4296-a9b5-3bee14ac2091.jpg?1562143791
 value=3.266
 rarity=U
 type=Creature

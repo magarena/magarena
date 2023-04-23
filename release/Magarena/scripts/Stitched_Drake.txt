@@ -1,5 +1,5 @@
 name=Stitched Drake
-image=https://magiccards.info/scans/en/isd/80.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/736f293a-10b5-43bc-8aad-cb63f00601a6.jpg?1547516538
 value=3.809
 rarity=C
 type=Creature

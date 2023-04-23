@@ -1,5 +1,5 @@
 name=Kavu Recluse
-image=https://magiccards.info/scans/en/ps/64.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f04ac02-3eff-4a66-8320-ee7b4357522f.jpg?1562918322
 value=3.286
 rarity=C
 type=Creature

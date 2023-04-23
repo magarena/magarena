@@ -1,5 +1,5 @@
 name=Pit Raptor
-image=https://magiccards.info/scans/en/pr/72.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e37cd150-1064-43b7-919b-8922d8a18f21.jpg?1562937537
 value=2.367
 rarity=U
 type=Creature

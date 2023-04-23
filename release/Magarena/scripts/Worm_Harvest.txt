@@ -1,5 +1,5 @@
 name=Worm Harvest
-image=https://magiccards.info/scans/en/c16/238.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36b5c006-115f-441e-84d4-fbff390a2c00.jpg?1592711180
 image_updated=2017-08-17
 value=3.870
 rarity=R

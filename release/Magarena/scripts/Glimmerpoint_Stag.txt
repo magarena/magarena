@@ -1,5 +1,5 @@
 name=Glimmerpoint Stag
-image=https://magiccards.info/scans/en/ema/12.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63205c2a-e9d4-4354-b519-9e84be8f9eb7.jpg?1580013681
 value=3.857
 rarity=U
 type=Creature

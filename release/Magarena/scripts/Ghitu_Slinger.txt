@@ -1,5 +1,5 @@
 name=Ghitu Slinger
-image=https://magiccards.info/scans/en/ema/133.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/923de31f-0941-4df1-8939-3eed75b7eb39.jpg?1580014557
 value=3.500
 removal=2
 rarity=U

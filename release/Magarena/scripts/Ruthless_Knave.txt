@@ -1,5 +1,5 @@
 name=Ruthless Knave
-image=https://magiccards.info/scans/en/xln/119.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1ce91e38-4601-4354-ad1b-2c5c1c70da17.jpg?1562551661
 value=2.500
 rarity=U
 type=Creature

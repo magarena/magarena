@@ -1,5 +1,5 @@
 name=Serrated Biskelion
-image=https://magiccards.info/scans/en/wl/156.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc2e3173-d2d5-4c6b-8156-0d78f8b1b5d1.jpg?1562270467
 image_updated=2017-01-07
 value=3.750
 rarity=U

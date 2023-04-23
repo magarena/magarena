@@ -1,5 +1,5 @@
 name=Force Void
-image=https://magiccards.info/scans/en/ia/70.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/226555ba-22af-45f1-a3f4-d265f8685dd5.jpg?1587911634
 value=1.827
 rarity=U
 type=Instant

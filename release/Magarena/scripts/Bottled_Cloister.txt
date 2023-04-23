@@ -1,5 +1,5 @@
 name=Bottled Cloister
-image=https://magiccards.info/scans/en/rav/256.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bf42acc-d2d3-4165-b257-6885df2d1ba4.jpg?1598917909
 value=3.740
 rarity=R
 type=Artifact

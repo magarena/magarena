@@ -1,5 +1,5 @@
 name=Howl of the Night Pack
-image=https://magiccards.info/scans/en/m10/187.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20fc5ff1-b8bd-44d5-a659-17eeae06736a.jpg?1562826904
 value=3.070
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ravenous Baboons
-image=https://magiccards.info/scans/en/ex/97.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d00b68b-8b6a-48c9-8911-2a3270897091.jpg?1562087848
 value=4.000
 rarity=R
 type=Creature

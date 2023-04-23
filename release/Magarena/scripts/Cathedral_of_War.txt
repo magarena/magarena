@@ -1,5 +1,5 @@
 name=Cathedral of War
-image=https://magiccards.info/scans/en/m13/221.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd222c07-0b28-41cb-9237-ad7991ab078f.jpg?1562560901
 value=3.839
 rarity=R
 type=Land

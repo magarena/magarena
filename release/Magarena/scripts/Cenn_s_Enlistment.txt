@@ -1,5 +1,5 @@
 name=Cenn's Enlistment
-image=https://magiccards.info/scans/en/mma/9.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37bcc0fd-1eea-4eb0-8099-e0e94ffe00b6.jpg?1561966875
 value=3.062
 rarity=C
 type=Sorcery

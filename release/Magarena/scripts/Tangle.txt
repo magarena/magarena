@@ -1,5 +1,5 @@
 name=Tangle
-image=https://magiccards.info/scans/en/in/213.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/635ca3c1-d544-44fc-a178-3bfe4fe69551.jpg?1562915122
 value=4.000
 rarity=U
 type=Instant

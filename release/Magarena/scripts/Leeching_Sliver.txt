@@ -1,5 +1,5 @@
 name=Leeching Sliver
-image=https://magiccards.info/scans/en/m15/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/888ca52b-1270-4587-804d-1d08b07d7c5d.jpg?1562790394
 value=2.500
 rarity=U
 type=Creature

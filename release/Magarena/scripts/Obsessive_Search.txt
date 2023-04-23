@@ -1,5 +1,5 @@
 name=Obsessive Search
-image=https://magiccards.info/scans/en/tr/43.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62b886ae-0109-4e9a-aabc-d22b792715cb.jpg?1562914989
 value=3.500
 rarity=C
 type=Instant

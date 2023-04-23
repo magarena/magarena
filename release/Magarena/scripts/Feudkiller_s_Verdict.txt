@@ -1,5 +1,5 @@
 name=Feudkiller's Verdict
-image=https://magiccards.info/scans/en/mma/15.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2993319-5b3d-48ca-b78d-563a8b66d76d.jpg?1561969048
 value=3.652
 rarity=U
 type=Tribal,Sorcery

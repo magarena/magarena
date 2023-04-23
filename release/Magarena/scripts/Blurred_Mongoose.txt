@@ -1,5 +1,5 @@
 name=Blurred Mongoose
-image=https://magiccards.info/scans/en/in/183.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b073e3f-6a6f-495a-ab16-39d906b660f1.jpg?1562910191
 value=4.094
 rarity=R
 type=Creature

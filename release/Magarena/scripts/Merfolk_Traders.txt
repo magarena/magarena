@@ -1,5 +1,5 @@
 name=Merfolk Traders
-image=https://magiccards.info/scans/en/wl/43.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebacbf23-4b69-481c-aaf7-5de7b4a6db6f.jpg?1562804073
 value=2.818
 rarity=C
 type=Creature

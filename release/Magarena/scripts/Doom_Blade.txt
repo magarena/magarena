@@ -1,5 +1,5 @@
 name=Doom Blade
-image=https://magiccards.info/scans/en/ima/87.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90699423-2556-40f7-b8f5-c9d82f22d52e.jpg?1562851557
 image_updated=2017-04-12
 value=4.363
 removal=4

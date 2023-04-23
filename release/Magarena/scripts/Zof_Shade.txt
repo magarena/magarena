@@ -1,5 +1,5 @@
 name=Zof Shade
-image=https://magiccards.info/scans/en/m15/125.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98b39bdf-445c-40a8-8999-1e8fbbda4ae9.jpg?1562791357
 value=2.083
 rarity=C
 type=Creature

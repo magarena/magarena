@@ -1,5 +1,5 @@
 name=Courier Hawk
-image=https://magiccards.info/scans/en/cns/68.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9395663f-c7af-4d51-ba2a-3b76db8c25ec.jpg?1562865935
 value=3.571
 rarity=C
 type=Creature

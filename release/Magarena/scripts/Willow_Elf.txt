@@ -1,5 +1,5 @@
 name=Willow Elf
-image=https://magiccards.info/scans/en/st2k/20.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c063a072-0cd4-45fb-ac68-96e359bf3ef5.jpg?1562133683
 value=1.604
 rarity=C
 type=Creature

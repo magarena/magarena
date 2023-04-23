@@ -1,5 +1,5 @@
 name=Temple Bell
-image=https://magiccards.info/scans/en/c16/277.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bb63a40-2cce-439f-bd97-d25340ead6ca.jpg?1562404210
 image_updated=2017-08-17
 value=3.700
 rarity=R

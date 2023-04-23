@@ -1,5 +1,5 @@
 name=Frost Raptor
-image=https://magiccards.info/scans/en/cs/34.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4ab2f81a-fcbe-44d1-8281-04dd78bb9ea3.jpg?1593274931
 value=3.012
 rarity=C
 type=Snow,Creature

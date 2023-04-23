@@ -1,5 +1,5 @@
 name=Seed the Land
-image=https://magiccards.info/scans/en/sok/146.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec1b0a4e-e52e-4d4e-9b12-24676d8571b1.jpg?1562496583
 value=2.541
 rarity=R
 type=Enchantment

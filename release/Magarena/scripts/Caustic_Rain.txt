@@ -1,5 +1,5 @@
 name=Caustic Rain
-image=https://magiccards.info/scans/en/gp/44.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71fde21d-ce4e-41b7-97d5-c982f90b84a0.jpg?1593272149
 value=2.986
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Herald of Serra
-image=https://magiccards.info/scans/en/us/17.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22a2b882-d616-495e-99f6-196031235f93.jpg?1562902307
 value=2.220
 rarity=R
 type=Creature

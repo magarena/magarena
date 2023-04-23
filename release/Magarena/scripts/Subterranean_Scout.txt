@@ -1,5 +1,5 @@
 name=Subterranean Scout
-image=https://magiccards.info/scans/en/ori/164.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c9289dd-f1a3-4be5-8ed1-4b4dd4e97743.jpg?1562015478
 image_updated=2015-11-05
 value=2.500
 rarity=C

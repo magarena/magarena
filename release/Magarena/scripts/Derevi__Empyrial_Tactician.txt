@@ -1,5 +1,5 @@
 name=Derevi, Empyrial Tactician
-image=https://magiccards.info/scans/en/c13/186.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a1d0dad-18a8-489e-ac11-08f64b72fda4.jpg?1592673365
 value=3.774
 rarity=M
 type=Legendary,Creature

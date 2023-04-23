@@ -1,5 +1,5 @@
 name=Arbor Elf
-image=https://magiccards.info/scans/en/a25/160.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b81165e-f091-4211-8b47-5ea6868b0d4c.jpg?1562435427
 image_updated=2018-04-26
 value=3.970
 rarity=C

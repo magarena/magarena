@@ -1,5 +1,5 @@
 name=Withering Boon
-image=https://magiccards.info/scans/en/mr/50.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e6499cb-6073-4c94-8c82-47f489094df5.jpg?1562719780
 value=3.514
 rarity=U
 type=Instant

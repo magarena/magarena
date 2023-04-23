@@ -1,5 +1,5 @@
 name=Dwarven Thaumaturgist
-image=https://magiccards.info/scans/en/wl/98.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e68aa29-9f38-48a2-b00a-39aef9d91f6d.jpg?1562802106
 value=3.198
 rarity=R
 type=Creature

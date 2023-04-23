@@ -1,5 +1,5 @@
 name=Spikeshot Goblin
-image=https://magiccards.info/scans/en/a25/152.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50b2651d-6418-42c6-abf4-e8cdb977833f.jpg?1562435471
 image_updated=2018-04-27
 value=4.188
 rarity=U

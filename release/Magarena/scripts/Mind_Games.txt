@@ -1,5 +1,5 @@
 name=Mind Games
-image=https://magiccards.info/scans/en/sh/38.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4da50979-1f5d-48d1-9406-dfc785273c04.jpg?1562596405
 value=3.784
 rarity=C
 type=Instant

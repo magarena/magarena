@@ -1,5 +1,5 @@
 name=Whispers of Emrakul
-image=https://magiccards.info/scans/en/emn/114.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b7ba428-5a35-4062-8e16-39eb927cb316.jpg?1576384489
 image_updated=2016-09-05
 value=2.500
 rarity=U

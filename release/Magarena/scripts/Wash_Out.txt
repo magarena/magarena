@@ -1,5 +1,5 @@
 name=Wash Out
-image=https://magiccards.info/scans/en/in/87.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc468f97-08f7-4103-898f-b14fa61b99bc.jpg?1673147439
 value=4.294
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Natural Balance
-image=https://magiccards.info/scans/en/mr/129.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0f7c47c-416e-4f73-89ec-024a29dfb5e9.jpg?1562721414
 value=3.806
 rarity=R
 type=Sorcery

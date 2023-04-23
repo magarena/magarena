@@ -1,5 +1,5 @@
 name=Flowstone Blade
-image=https://magiccards.info/scans/en/cns/143.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8630702-f973-4c08-8f45-84a3893499ad.jpg?1562431781
 value=2.500
 rarity=C
 type=Enchantment

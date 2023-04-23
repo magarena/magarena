@@ -1,5 +1,5 @@
 name=Godo's Irregulars
-image=https://magiccards.info/scans/en/sok/101.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7a7afc5-be73-459d-8bd1-116a0bf1210f.jpg?1562497021
 value=3.430
 rarity=U
 type=Creature

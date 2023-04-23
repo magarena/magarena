@@ -1,5 +1,5 @@
 name=Molten Influence
-image=https://magiccards.info/scans/en/od/207.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c2b326b-d177-4a03-a0a3-fe2c2d4af272.jpg?1562908953
 value=3.784
 rarity=R
 type=Instant

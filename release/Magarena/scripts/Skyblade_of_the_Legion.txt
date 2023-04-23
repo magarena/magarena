@@ -1,5 +1,5 @@
 name=Skyblade of the Legion
-image=https://magiccards.info/scans/en/xln/37.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67e788e2-12e9-4041-8210-753aaef2576c.jpg?1562556870
 value=2.500
 rarity=C
 type=Creature

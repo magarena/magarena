@@ -1,5 +1,5 @@
 name=Braids, Cabal Minion
-image=https://magiccards.info/scans/en/ema/82.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27691efa-052d-4afe-b9ef-159858ca660f.jpg?1626100340
 value=4.026
 rarity=R
 type=Legendary,Creature

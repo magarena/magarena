@@ -1,5 +1,5 @@
 name=Jodah's Avenger
-image=https://magiccards.info/scans/en/pc/42.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/4707277a-f0ba-4f35-9274-7a38efbc11e8.jpg?1619394303
 value=3.720
 rarity=U
 type=Creature

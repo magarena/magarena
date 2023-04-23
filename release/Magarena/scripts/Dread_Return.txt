@@ -1,5 +1,5 @@
 name=Dread Return
-image=https://magiccards.info/scans/en/c14/142.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a548c9b-bdea-4c11-891e-e472fc63ae9b.jpg?1619395354
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Righteous Charge
-image=https://magiccards.info/scans/en/gtc/23.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f52cb325-4f16-4cf3-9999-feafe0fde8c2.jpg?1561852623
 value=2.867
 rarity=U
 type=Sorcery

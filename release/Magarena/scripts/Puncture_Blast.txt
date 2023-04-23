@@ -1,5 +1,5 @@
 name=Puncture Blast
-image=https://magiccards.info/scans/en/eve/60.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bf90b4d-98cf-4953-b6ae-c41d21ab559b.jpg?1562907480
 value=3.456
 removal=3
 rarity=C

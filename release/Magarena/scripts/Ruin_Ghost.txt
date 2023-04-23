@@ -1,5 +1,5 @@
 name=Ruin Ghost
-image=https://magiccards.info/scans/en/wwk/19.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0b60f10-0997-46ec-8914-f5cdde76cf75.jpg?1562299117
 value=3.641
 rarity=U
 type=Creature

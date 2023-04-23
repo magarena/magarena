@@ -1,5 +1,5 @@
 name=Thaumatog
-image=https://magiccards.info/scans/en/od/295.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa559342-9587-4fe3-9059-3b3a08d6637a.jpg?1562926808
 value=2.545
 rarity=U
 type=Creature

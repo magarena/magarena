@@ -1,5 +1,5 @@
 name=Ursapine
-image=https://magiccards.info/scans/en/rav/188.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba547810-c82a-498b-81eb-e81a8dcbbd42.jpg?1598916680
 value=4.031
 rarity=R
 type=Creature

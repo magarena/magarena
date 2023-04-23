@@ -1,5 +1,5 @@
 name=Subdue
-image=https://magiccards.info/scans/en/lg/120.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/123d6097-8021-46cd-a8c3-01013245e347.jpg?1562857754
 value=2.196
 rarity=C
 type=Instant

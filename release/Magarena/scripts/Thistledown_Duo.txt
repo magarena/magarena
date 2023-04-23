@@ -1,5 +1,5 @@
 name=Thistledown Duo
-image=https://magiccards.info/scans/en/shm/152.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d57ba0ce-0390-42fd-9473-2436fac53631.jpg?1562836521
 value=2.417
 rarity=C
 type=Creature

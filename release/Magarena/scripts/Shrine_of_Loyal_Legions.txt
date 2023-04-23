@@ -1,5 +1,5 @@
 name=Shrine of Loyal Legions
-image=https://magiccards.info/scans/en/nph/155.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d13563c7-abe0-4760-9b4c-841de47dbc46.jpg?1562881728
 value=3.167
 rarity=U
 type=Artifact

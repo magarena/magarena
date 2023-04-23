@@ -1,5 +1,5 @@
 name=Stone-Seeder Hierophant
-image=https://magiccards.info/scans/en/rav/184.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4e1b9f9-e58c-4474-9a31-8e5d9f96492e.jpg?1665822986
 value=2.917
 rarity=C
 type=Creature

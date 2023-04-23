@@ -1,5 +1,5 @@
 name=Plague Sliver
-image=https://magiccards.info/scans/en/ts/124.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/703d491e-b25f-44fa-8b76-b955a4e75ba5.jpg?1562918625
 value=3.737
 rarity=R
 type=Creature

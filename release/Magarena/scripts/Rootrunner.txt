@@ -1,5 +1,5 @@
 name=Rootrunner
-image=https://magiccards.info/scans/en/chk/237.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23e5502b-acae-4320-ac01-4d711cb2c49a.jpg?1562758430
 value=3.050
 rarity=U
 type=Creature

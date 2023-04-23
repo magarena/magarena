@@ -1,5 +1,5 @@
 name=Burning Palm Efreet
-image=https://magiccards.info/scans/en/mr/161.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a194488a-1d6f-4bc3-8f30-82e2c3c91389.jpg?1562720948
 value=3.677
 rarity=U
 type=Creature

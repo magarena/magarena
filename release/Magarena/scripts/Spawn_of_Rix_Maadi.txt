@@ -1,5 +1,5 @@
 name=Spawn of Rix Maadi
-image=https://magiccards.info/scans/en/rtr/199.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6196e702-7f76-49db-8ee4-bd343359d498.jpg?1562787152
 value=2.131
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Joven's Ferrets
-image=https://magiccards.info/scans/en/hl/62.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3765ab78-a645-4e4f-9f83-5a6bc762b8d0.jpg?1562868083
 value=4.010
 rarity=C
 type=Creature

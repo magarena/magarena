@@ -1,5 +1,5 @@
 name=Barkshell Blessing
-image=https://magiccards.info/scans/en/shm/224.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd273ef2-4aed-4c7e-8c97-fe8b1af9ce69.jpg?1562836071
 value=2.893
 rarity=C
 type=Instant

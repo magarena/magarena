@@ -1,5 +1,5 @@
 name=Rakdos Ringleader
-image=https://magiccards.info/scans/en/rtr/186.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b54fbe8-324a-4066-bed1-dda1dca319fc.jpg?1562787723
 value=1.351
 rarity=U
 type=Creature

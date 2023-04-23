@@ -1,5 +1,5 @@
 name=Assault Griffin
-image=https://magiccards.info/scans/en/gtc/4.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/704286a5-e3a8-4517-85e5-6447c5c2530f.jpg?1561831125
 value=2.491
 rarity=C
 type=Creature

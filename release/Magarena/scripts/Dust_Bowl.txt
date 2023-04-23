@@ -1,5 +1,5 @@
 name=Dust Bowl
-image=https://magiccards.info/scans/en/mm/316.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75b03c30-c2b8-4207-b675-26c59c40a7e5.jpg?1562381371
 value=4.318
 rarity=R
 type=Land

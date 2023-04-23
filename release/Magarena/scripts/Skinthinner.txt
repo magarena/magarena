@@ -1,5 +1,5 @@
 name=Skinthinner
-image=https://magiccards.info/scans/en/le/80.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0c9b43c-e544-47eb-98f5-45d1b57aabb4.jpg?1568004301
 value=2.259
 rarity=C
 type=Creature

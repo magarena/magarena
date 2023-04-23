@@ -1,5 +1,5 @@
 name=Grotesque Hybrid
-image=https://magiccards.info/scans/en/tr/63.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b063c3a-267f-4f22-be51-0a14880afc24.jpg?1562630179
 value=3.562
 rarity=U
 type=Creature

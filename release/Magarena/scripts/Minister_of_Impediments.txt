@@ -1,5 +1,5 @@
 name=Minister of Impediments
-image=https://magiccards.info/scans/en/di/144.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96aada87-a880-4d33-8694-9fbc74211755.jpg?1593273874
 value=3.212
 rarity=C
 type=Creature

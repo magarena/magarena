@@ -1,5 +1,5 @@
 name=Mind Over Matter
-image=https://magiccards.info/scans/en/ex/40.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e091dd6-149f-46ea-bae0-224e79e3aacb.jpg?1595438216
 value=4.505
 rarity=R
 type=Enchantment

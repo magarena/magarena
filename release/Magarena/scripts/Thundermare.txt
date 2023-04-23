@@ -1,5 +1,5 @@
 name=Thundermare
-image=https://magiccards.info/scans/en/9e/224.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7068c0c3-4ec9-4c02-84db-42b609df545f.jpg?1562736929
 value=4.123
 rarity=R
 type=Creature

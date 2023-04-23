@@ -1,5 +1,5 @@
 name=Font of Ire
-image=https://magiccards.info/scans/en/jou/97.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41509414-9faf-472d-8d38-391d9594cd56.jpg?1593095981
 value=1.889
 rarity=C
 type=Enchantment

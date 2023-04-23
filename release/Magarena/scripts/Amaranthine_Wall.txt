@@ -1,5 +1,5 @@
 name=Amaranthine Wall
-image=https://magiccards.info/scans/en/dom/210.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73b49065-0a46-4813-a721-71d718e73d18.jpg?1562737811
 value=2.500
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Septic Rats
-image=https://magiccards.info/scans/en/mbs/55.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e7915d9-b941-4675-9a1b-18e579977144.jpg?1562612949
 value=3.125
 rarity=U
 type=Creature

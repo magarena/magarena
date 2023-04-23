@@ -1,5 +1,5 @@
 name=Magefire Wings
-image=https://magiccards.info/scans/en/arb/88.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be18c2d9-60c4-454b-b6c7-7c22ed2985fb.jpg?1562644002
 value=2.610
 rarity=C
 type=Enchantment

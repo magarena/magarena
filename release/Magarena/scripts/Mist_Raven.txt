@@ -1,5 +1,5 @@
 name=Mist Raven
-image=https://magiccards.info/scans/en/mm3/43.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f868751-dd1a-4beb-b3cc-c4a88980299b.jpg?1631234380
 image_updated=2017-08-08
 value=3.750
 removal=2

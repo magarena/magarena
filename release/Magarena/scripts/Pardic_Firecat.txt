@@ -1,5 +1,5 @@
 name=Pardic Firecat
-image=https://magiccards.info/scans/en/od/211.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16858395-c742-4657-88c2-5af20c92718d.jpg?1562899265
 value=3.125
 rarity=C
 type=Creature

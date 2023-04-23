@@ -1,5 +1,5 @@
 name=Greater Werewolf
-image=https://magiccards.info/scans/en/5e/28.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34b77373-6066-436b-aa60-4cb0f8077599.jpg?1562590170
 value=3.000
 rarity=U
 type=Creature

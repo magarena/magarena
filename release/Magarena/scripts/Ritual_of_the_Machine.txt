@@ -1,5 +1,5 @@
 name=Ritual of the Machine
-image=https://magiccards.info/scans/en/ai/24.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a691f5b-df18-4fb7-bad5-fe79a0072613.jpg?1562868580
 value=4.069
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Unquestioned Authority
-image=https://magiccards.info/scans/en/cns/85.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/829710f9-6554-4391-bdb1-2ccdefc2caf5.jpg?1608912033
 value=4.125
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Sisters of the Flame
-image=https://magiccards.info/scans/en/4e/239.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a39ab53c-133a-4211-8499-aea00ed3ee1d.jpg?1559600481
 value=2.578
 rarity=C
 type=Creature

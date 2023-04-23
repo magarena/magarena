@@ -1,5 +1,5 @@
 name=Dralnu's Crusade
-image=https://magiccards.info/scans/en/ps/104.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a35d227-4489-4a0b-8f81-eb8e5949e1fc.jpg?1562917197
 value=4.043
 rarity=R
 type=Enchantment

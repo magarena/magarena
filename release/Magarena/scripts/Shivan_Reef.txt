@@ -1,5 +1,5 @@
 name=Shivan Reef
-image=https://magiccards.info/scans/en/ori/251.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a338107b-0960-4496-a9a5-f7b672e7c043.jpg?1673308366
 image_updated=2015-11-05
 value=2.500
 rarity=R

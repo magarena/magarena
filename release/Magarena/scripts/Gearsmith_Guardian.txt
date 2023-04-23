@@ -1,5 +1,5 @@
 name=Gearsmith Guardian
-image=https://magiccards.info/scans/en/m19/237.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d532b01-8bf7-4a27-a438-db03bcd00694.jpg?1562300772
 value=2.500
 rarity=C
 type=Artifact,Creature

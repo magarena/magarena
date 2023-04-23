@@ -1,5 +1,5 @@
 name=Kinjalli's Sunwing
-image=https://magiccards.info/scans/en/xln/19.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b9e0b0f-651a-44e6-8fb0-e46bfda0ada9.jpg?1562552626
 value=2.500
 rarity=R
 type=Creature

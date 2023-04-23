@@ -1,5 +1,5 @@
 name=Flowstone Slide
-image=https://magiccards.info/scans/en/10e/203.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/074121e8-aecc-469f-b181-8e6a9e918826.jpg?1562543301
 value=2.847
 rarity=R
 type=Sorcery

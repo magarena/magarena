@@ -1,5 +1,5 @@
 name=Scavenging Scarab
-image=https://magiccards.info/scans/en/ds/51.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/023603c1-3f1e-42d1-81e1-535547ef6ee0.jpg?1562635152
 value=1.035
 rarity=C
 type=Creature

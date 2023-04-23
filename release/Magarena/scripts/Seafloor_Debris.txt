@@ -1,5 +1,5 @@
 name=Seafloor Debris
-image=https://magiccards.info/scans/en/od/325.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e492399-d514-485a-8cdd-a3797a05e47a.jpg?1562924445
 value=2.381
 rarity=C
 type=Land

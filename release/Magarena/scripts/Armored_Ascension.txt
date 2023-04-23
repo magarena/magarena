@@ -1,5 +1,5 @@
 name=Armored Ascension
-image=https://magiccards.info/scans/en/m11/5.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5647c21e-5926-462c-8b01-862f8cedf777.jpg?1562460545
 value=3.812
 rarity=U
 type=Enchantment

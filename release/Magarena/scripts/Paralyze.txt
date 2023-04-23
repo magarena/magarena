@@ -1,5 +1,5 @@
 name=Paralyze
-image=https://magiccards.info/scans/en/5e/47.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe85610f-b17e-4628-8f6b-544ea7b34327.jpg?1562946393
 value=4.000
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Exotic Disease
-image=https://magiccards.info/scans/en/ps/43.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e9624e5-79a2-41de-997b-12d871d4be66.jpg?1562911470
 value=2.171
 rarity=U
 type=Sorcery

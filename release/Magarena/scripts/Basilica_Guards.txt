@@ -1,5 +1,5 @@
 name=Basilica Guards
-image=https://magiccards.info/scans/en/gtc/5.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2be39fed-4b39-4027-9c80-f2186f7dd941.jpg?1561820956
 value=2.914
 rarity=C
 type=Creature

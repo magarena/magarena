@@ -1,5 +1,5 @@
 name=Headwater Sentries
-image=https://magiccards.info/scans/en/xln/58.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2af2c338-f5e9-4596-9435-c6aa965ae541.jpg?1562552575
 value=2.500
 rarity=C
 type=Creature

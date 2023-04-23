@@ -1,5 +1,5 @@
 name=Wild Guess
-image=https://magiccards.info/scans/en/m13/157.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7c4556f-652b-4df0-a501-d413d32e7a91.jpg?1562836614
 value=3.094
 rarity=C
 type=Sorcery

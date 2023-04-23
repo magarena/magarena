@@ -1,5 +1,5 @@
 name=Mirror-Sigil Sergeant
-image=https://magiccards.info/scans/en/cfx/12.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e94b3eec-7420-45fa-8750-7f01028836d3.jpg?1562804416
 value=3.979
 rarity=M
 type=Creature

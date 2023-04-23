@@ -1,5 +1,5 @@
 name=Dragon Mage
-image=https://magiccards.info/scans/en/c16/124.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5195abc4-cfa7-45dd-aa96-2e56f818a17b.jpg?1677991284
 image_updated=2017-08-17
 value=4.305
 rarity=R

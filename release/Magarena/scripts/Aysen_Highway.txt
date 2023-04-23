@@ -1,5 +1,5 @@
 name=Aysen Highway
-image=https://magiccards.info/scans/en/hl/107.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adfa87eb-9a11-459c-bff8-87bb09b61b87.jpg?1562588221
 value=1.197
 rarity=R
 type=Enchantment

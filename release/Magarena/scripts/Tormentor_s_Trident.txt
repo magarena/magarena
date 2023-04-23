@@ -1,5 +1,5 @@
 name=Tormentor's Trident
-image=https://magiccards.info/scans/en/avr/222.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9543d454-27d6-42ba-aad8-54811d180cfb.jpg?1592709613
 value=1.671
 rarity=U
 type=Artifact

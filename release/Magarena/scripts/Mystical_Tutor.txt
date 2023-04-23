@@ -1,5 +1,5 @@
 name=Mystical Tutor
-image=https://magiccards.info/scans/en/ema/62.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9264ecb7-bfc0-495d-aaaa-829045ea858f.jpg?1580014050
 value=4.604
 rarity=R
 type=Instant

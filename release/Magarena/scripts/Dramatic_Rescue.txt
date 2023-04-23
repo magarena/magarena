@@ -1,5 +1,5 @@
 name=Dramatic Rescue
-image=https://magiccards.info/scans/en/rtr/156.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/041afd23-1ecc-4cca-9244-fe42203ad689.jpg?1562781975
 value=2.949
 rarity=C
 type=Instant

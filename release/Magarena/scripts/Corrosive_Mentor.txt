@@ -1,5 +1,5 @@
 name=Corrosive Mentor
-image=https://magiccards.info/scans/en/shm/61.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/140457ff-ee7d-48ec-8b91-ef5c2cc1ed74.jpg?1562827043
 value=3.782
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblin Ringleader
-image=https://magiccards.info/scans/en/ap/62.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/6911af4e-4abd-4cf9-8a86-ae5d680c6f12.jpg?1592516961
 value=2.500
 rarity=U
 type=Creature

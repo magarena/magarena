@@ -1,5 +1,5 @@
 name=Remote Isle
-image=https://magiccards.info/scans/en/c14/309.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/452c82dc-6388-4d60-84ee-f8961a81980c.jpg?1591322368
 value=3.692
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Structural Collapse
-image=https://magiccards.info/scans/en/gtc/107.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d10da484-db67-4afc-90ef-6caf7d2e3a75.jpg?1561847167
 value=1.375
 rarity=C
 type=Sorcery

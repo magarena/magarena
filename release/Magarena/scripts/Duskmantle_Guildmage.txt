@@ -1,5 +1,5 @@
 name=Duskmantle Guildmage
-image=https://magiccards.info/scans/en/gtc/158.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a1509ff-387e-4ccd-bda0-86e8738a98fb.jpg?1561838468
 value=3.870
 rarity=U
 type=Creature

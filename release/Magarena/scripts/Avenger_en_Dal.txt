@@ -1,5 +1,5 @@
 name=Avenger en-Dal
-image=https://magiccards.info/scans/en/ne/2.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcf6f711-c0bc-4e12-b9d0-41581924e13c.jpg?1562632893
 value=3.328
 rarity=R
 type=Creature

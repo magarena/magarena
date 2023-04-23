@@ -1,5 +1,5 @@
 name=Lu Xun, Scholar General
-image=https://magiccards.info/scans/en/p3k/48.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e16e5b7-d130-4e52-b002-5f3d986e3e82.jpg?1592672549
 value=3.735
 rarity=R
 type=Legendary,Creature

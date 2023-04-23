@@ -1,5 +1,5 @@
 name=Cateran Persuader
-image=https://magiccards.info/scans/en/mm/124.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a98bdbf1-32a6-4d9b-8e57-5d3aca6b05bc.jpg?1562382097
 value=3.431
 rarity=C
 type=Creature

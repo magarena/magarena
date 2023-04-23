@@ -1,5 +1,5 @@
 name=Mindshrieker
-image=https://magiccards.info/scans/en/isd/67.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab1e52af-6746-4ec6-afbf-008594c874f8.jpg?1562835327
 value=3.956
 rarity=R
 type=Creature

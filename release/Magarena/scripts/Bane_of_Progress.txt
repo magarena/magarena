@@ -1,5 +1,5 @@
 name=Bane of Progress
-image=https://magiccards.info/scans/en/c15/175.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ea495ff-33df-406b-98e3-5579e2158bbc.jpg?1610161688
 image_updated=2016-02-29
 value=3.776
 rarity=R

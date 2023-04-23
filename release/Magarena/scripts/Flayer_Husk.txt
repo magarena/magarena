@@ -1,5 +1,5 @@
 name=Flayer Husk
-image=https://magiccards.info/scans/en/mm2/214.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20b394f9-644d-426e-801b-110774092018.jpg?1599709210
 value=3.500
 rarity=C
 type=Artifact

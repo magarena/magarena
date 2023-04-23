@@ -1,5 +1,5 @@
 name=Vec Townships
-image=https://magiccards.info/scans/en/tp/339.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17579dbd-e8dd-49f0-83df-25dd78691c4a.jpg?1562428634
 value=2.732
 rarity=U
 type=Land

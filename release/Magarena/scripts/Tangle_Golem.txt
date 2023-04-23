@@ -1,5 +1,5 @@
 name=Tangle Golem
-image=https://magiccards.info/scans/en/ds/151.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9915977-bd6b-477a-a495-f7ddbbeb82eb.jpg?1562640292
 value=3.955
 rarity=C
 type=Artifact,Creature

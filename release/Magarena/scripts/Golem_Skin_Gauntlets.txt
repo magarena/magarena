@@ -1,5 +1,5 @@
 name=Golem-Skin Gauntlets
-image=https://magiccards.info/scans/en/mi/181.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee198804-a247-46b9-be6e-71bbb5840401.jpg?1599709255
 value=3.275
 rarity=U
 type=Artifact

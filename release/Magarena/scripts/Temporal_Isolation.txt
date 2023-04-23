@@ -1,5 +1,5 @@
 name=Temporal Isolation
-image=https://magiccards.info/scans/en/ts/43.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72380757-6344-43e6-a4ed-bd753f2431d5.jpg?1619393653
 value=3.936
 rarity=C
 type=Enchantment

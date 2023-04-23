@@ -1,5 +1,5 @@
 name=Sarkhan's Rage
-image=https://magiccards.info/scans/en/dtk/153.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47daba07-1f1e-48e1-a500-ef94d0a3b327.jpg?1601078535
 value=2.500
 rarity=C
 type=Instant

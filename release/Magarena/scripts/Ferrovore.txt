@@ -1,5 +1,5 @@
 name=Ferrovore
-image=https://magiccards.info/scans/en/som/88.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8dcc7170-38d9-4b9e-a5f9-73ac1208c439.jpg?1636491206
 value=2.857
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ocular Halo
-image=https://magiccards.info/scans/en/di/28.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c883e75-5c37-44bb-a6c8-f97aa704c739.jpg?1593272710
 value=3.474
 rarity=C
 type=Enchantment

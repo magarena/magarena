@@ -1,5 +1,5 @@
 name=Squirrel Wrangler
-image=https://magiccards.info/scans/en/pr/127.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7094be2a-454e-4e4d-a540-c5c80e37468a.jpg?1562915837
 value=3.990
 rarity=R
 type=Creature

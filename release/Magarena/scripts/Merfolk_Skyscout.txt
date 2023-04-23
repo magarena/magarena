@@ -1,5 +1,5 @@
 name=Merfolk Skyscout
-image=https://magiccards.info/scans/en/cn2/115.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92ad1471-96d2-4d61-9695-5f2daf122353.jpg?1576382474
 image_updated=2017-08-29
 value=3.278
 rarity=U

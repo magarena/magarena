@@ -1,5 +1,5 @@
 name=Second Thoughts
-image=https://magiccards.info/scans/en/ema/27.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d8b53ca-272f-44ba-a3aa-13ec0844ada9.jpg?1580013793
 value=2.909
 rarity=C
 type=Instant

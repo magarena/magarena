@@ -1,5 +1,5 @@
 name=Sighted-Caste Sorcerer
-image=https://magiccards.info/scans/en/ala/26.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d07e2d4c-a33b-42b1-9576-2269d137a868.jpg?1562709205
 value=2.700
 rarity=C
 type=Creature

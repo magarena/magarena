@@ -1,5 +1,5 @@
 name=Atog
-image=https://magiccards.info/scans/en/mi/86.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adf3bd18-d9c1-4f18-86c0-579db8ea37c7.jpg?1642716697
 image_updated=2015-11-13
 value=3.778
 rarity=U

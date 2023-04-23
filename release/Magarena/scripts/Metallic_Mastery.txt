@@ -1,5 +1,5 @@
 name=Metallic Mastery
-image=https://magiccards.info/scans/en/mbs/71.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b939ded0-7033-4fee-864c-9e235d8720bb.jpg?1562614189
 value=2.762
 rarity=U
 type=Sorcery

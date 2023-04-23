@@ -1,5 +1,5 @@
 name=Yavimaya Hollow
-image=https://magiccards.info/scans/en/ud/143.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9fdbc02-7ab7-4f77-8a89-5a9e01eb32f5.jpg?1562938841
 value=4.500
 rarity=R
 type=Legendary,Land

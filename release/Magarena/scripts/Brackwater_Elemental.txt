@@ -1,5 +1,5 @@
 name=Brackwater Elemental
-image=https://magiccards.info/scans/en/cfx/21.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a96f2106-3524-4fc0-85df-8cf9d0901ea8.jpg?1562935063
 value=2.879
 rarity=C
 type=Creature

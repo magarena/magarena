@@ -1,5 +1,5 @@
 name=Resounding Roar
-image=https://magiccards.info/scans/en/ala/144.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/217bf237-a758-4500-b221-5e88fed9d0fc.jpg?1562701871
 value=2.000
 rarity=C
 type=Instant

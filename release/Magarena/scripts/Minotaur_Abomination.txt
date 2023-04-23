@@ -1,5 +1,5 @@
 name=Minotaur Abomination
-image=https://magiccards.info/scans/en/m14/107.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dca75a1-443d-4f8e-b12b-2aada3a8e3e4.jpg?1562832893
 value=2.175
 rarity=C
 type=Creature

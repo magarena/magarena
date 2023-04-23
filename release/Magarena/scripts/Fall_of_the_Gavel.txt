@@ -1,5 +1,5 @@
 name=Fall of the Gavel
-image=https://magiccards.info/scans/en/rtr/161.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64f42848-963b-4b16-aeec-66d0f349758b.jpg?1562787318
 value=1.618
 rarity=U
 type=Instant

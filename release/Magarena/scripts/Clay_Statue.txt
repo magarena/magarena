@@ -1,5 +1,5 @@
 name=Clay Statue
-image=https://magiccards.info/scans/en/5e/355.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/176eedf6-4a8f-4994-b03b-0f482507fa03.jpg?1562900648
 value=3.341
 rarity=C
 type=Artifact,Creature

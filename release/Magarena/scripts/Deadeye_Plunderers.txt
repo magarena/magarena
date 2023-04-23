@@ -1,5 +1,5 @@
 name=Deadeye Plunderers
-image=https://magiccards.info/scans/en/xln/220.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63a7a1a4-aec2-467d-91a1-1a2605718c7c.jpg?1562556523
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Barbarian General
-image=https://magiccards.info/scans/en/p3k/100.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/060da652-03c7-45e3-ad83-f0a9fa9d1049.jpg?1562255821
 value=2.435
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sapphire Leech
-image=https://magiccards.info/scans/en/in/71.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6763ffd-9d89-4f26-871a-be24fbdef38d.jpg?1562941279
 value=1.398
 rarity=R
 type=Creature

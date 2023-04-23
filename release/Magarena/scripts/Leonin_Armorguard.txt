@@ -1,5 +1,5 @@
 name=Leonin Armorguard
-image=https://magiccards.info/scans/en/arb/72.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a57cdbd-3cd2-47c1-aec8-7f4fd7a7b804.jpg?1562642726
 value=2.825
 rarity=C
 type=Creature

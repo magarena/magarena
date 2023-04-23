@@ -1,5 +1,5 @@
 name=Piracy Charm
-image=https://magiccards.info/scans/en/pc/58.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cb19ac2-edf9-4f9a-b9ba-2a33ba96a4d8.jpg?1619394455
 value=4.087
 rarity=C
 type=Instant

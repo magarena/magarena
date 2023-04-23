@@ -1,5 +1,5 @@
 name=Krumar Bond-Kin
-image=https://magiccards.info/scans/en/ktk/77.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57f38391-ffb7-4420-9a38-f791627b12b3.jpg?1562786941
 value=2.250
 rarity=C
 type=Creature

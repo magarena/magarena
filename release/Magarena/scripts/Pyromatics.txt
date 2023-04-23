@@ -1,5 +1,5 @@
 name=Pyromatics
-image=https://magiccards.info/scans/en/gp/72.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/795a7929-2c32-4006-bdf1-def0a4400f59.jpg?1592713410
 value=2.694
 rarity=C
 type=Instant

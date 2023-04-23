@@ -1,5 +1,5 @@
 name=Cliffrunner Behemoth
-image=https://magiccards.info/scans/en/cfx/79.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/764c1a14-143f-4601-92c5-ebeabf3e375d.jpg?1562801821
 value=3.414
 rarity=R
 type=Creature

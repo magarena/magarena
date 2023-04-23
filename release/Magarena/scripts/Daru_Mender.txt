@@ -1,5 +1,5 @@
 name=Daru Mender
-image=https://magiccards.info/scans/en/le/8.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de13fba8-3fee-4ce2-b84d-b518a99eefe0.jpg?1562939683
 value=2.212
 rarity=U
 type=Creature

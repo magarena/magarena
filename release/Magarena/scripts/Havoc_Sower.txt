@@ -1,5 +1,5 @@
 name=Havoc Sower
-image=https://magiccards.info/scans/en/ogw/71.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8585871-24a2-41d7-ae12-29aabfbc9ccc.jpg?1562945068
 image_updated=2016-02-29
 value=2.500
 rarity=U

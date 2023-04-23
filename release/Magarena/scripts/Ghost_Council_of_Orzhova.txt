@@ -1,5 +1,5 @@
 name=Ghost Council of Orzhova
-image=https://magiccards.info/scans/en/mm2/176.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b551074-a9b4-45f0-a007-f07d7b2e12a8.jpg?1562262654
 value=3.929
 rarity=R
 type=Legendary,Creature

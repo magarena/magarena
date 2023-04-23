@@ -1,5 +1,5 @@
 name=Scornful Egotist
-image=https://magiccards.info/scans/en/sc/50.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fec6b189-97e7-4627-9785-a9ce2f1ad89f.jpg?1562537398
 value=3.696
 rarity=C
 type=Creature

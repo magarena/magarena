@@ -1,5 +1,5 @@
 name=Crosis's Catacombs
-image=https://magiccards.info/scans/en/ps/136.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7caad74f-c0d0-4eca-94be-b89a2c9a3980.jpg?1562921277
 value=4.122
 rarity=U
 type=Land

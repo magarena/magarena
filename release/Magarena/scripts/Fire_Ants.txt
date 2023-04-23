@@ -1,5 +1,5 @@
 name=Fire Ants
-image=https://magiccards.info/scans/en/us/187.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae2e38af-a2e5-4d52-870e-1b6e0cb33cef.jpg?1562931805
 image_updated=2016-12-02
 value=4.290
 rarity=U

@@ -1,5 +1,5 @@
 name=Claws of Wirewood
-image=https://magiccards.info/scans/en/sc/114.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a6f8a21-5946-455b-83ec-ba211c7d19bf.jpg?1562897032
 value=3.091
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Tel-Jilad Chosen
-image=https://magiccards.info/scans/en/mi/132.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eefea84f-d657-491d-b60d-63e6a61e9eb2.jpg?1562162489
 value=3.000
 rarity=C
 type=Creature

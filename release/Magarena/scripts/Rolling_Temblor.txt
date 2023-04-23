@@ -1,5 +1,5 @@
 name=Rolling Temblor
-image=https://magiccards.info/scans/en/isd/161.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a1ec927-b645-4285-8765-02c0ac104ae1.jpg?1568004457
 value=3.274
 rarity=U
 type=Sorcery

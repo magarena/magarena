@@ -1,5 +1,5 @@
 name=Tremble
-image=https://magiccards.info/scans/en/od/225.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e1dc36f-3fdd-42cf-9d3a-695f4bf60c68.jpg?1562918330
 value=2.688
 rarity=C
 type=Sorcery

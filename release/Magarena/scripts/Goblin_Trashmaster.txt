@@ -1,5 +1,5 @@
 name=Goblin Trashmaster
-image=https://magiccards.info/scans/en/m19/144.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bc69988-3c2d-4b76-a8c0-05926b9bbd08.jpg?1581391304
 value=2.500
 rarity=R
 type=Creature

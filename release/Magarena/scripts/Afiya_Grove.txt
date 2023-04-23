@@ -1,5 +1,5 @@
 name=Afiya Grove
-image=https://magiccards.info/scans/en/mr/103.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c495e1f3-0845-4556-83e6-de8b9d518d1d.jpg?1562721453
 value=3.293
 rarity=R
 type=Enchantment

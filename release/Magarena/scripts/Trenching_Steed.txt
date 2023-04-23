@@ -1,5 +1,5 @@
 name=Trenching Steed
-image=https://magiccards.info/scans/en/pr/26.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a359837-2e41-4ddc-9299-89a783d62014.jpg?1562923676
 value=1.900
 rarity=C
 type=Creature

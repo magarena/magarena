@@ -1,5 +1,5 @@
 name=Dragon Bell Monk
-image=https://magiccards.info/scans/en/ima/17.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1244c95-a066-412d-bd04-c906ea4b4dd0.jpg?1562854209
 image_updated=2017-04-12
 value=2.500
 rarity=C

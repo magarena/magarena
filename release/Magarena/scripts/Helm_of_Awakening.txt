@@ -1,5 +1,5 @@
 name=Helm of Awakening
-image=https://magiccards.info/scans/en/vi/145.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41bba882-39b8-42db-9a01-54c6712b8019.jpg?1562277455
 value=4.411
 rarity=U
 type=Artifact

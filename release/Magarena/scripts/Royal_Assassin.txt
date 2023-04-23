@@ -1,5 +1,5 @@
 name=Royal Assassin
-image=https://magiccards.info/scans/en/m12/105.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d12e8109-8215-46b5-a0af-fe7e4b6b10b0.jpg?1562660714
 value=4.304
 rarity=R
 type=Creature

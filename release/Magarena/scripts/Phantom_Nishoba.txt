@@ -1,5 +1,5 @@
 name=Phantom Nishoba
-image=https://magiccards.info/scans/en/c17/188.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8288050c-8074-4a44-803c-8ef6427ec038.jpg?1562614905
 image_updated=2017-10-03
 value=4.211
 rarity=R

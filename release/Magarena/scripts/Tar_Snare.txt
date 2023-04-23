@@ -1,5 +1,5 @@
 name=Tar Snare
-image=https://magiccards.info/scans/en/ogw/90.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06ee017c-25ae-4668-8cfe-ae3b55e851aa.jpg?1562896373
 image_updated=2016-02-29
 value=2.500
 rarity=C

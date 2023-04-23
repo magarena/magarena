@@ -1,5 +1,5 @@
 name=Megatherium
-image=https://magiccards.info/scans/en/mm/259.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c58a1e43-a173-45d6-ac55-363664bf6e1b.jpg?1562383029
 value=3.161
 rarity=R
 type=Creature

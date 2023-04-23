@@ -1,5 +1,5 @@
 name=Frightshroud Courier
-image=https://magiccards.info/scans/en/on/149.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a0fa75a-a82b-44cd-965f-07e0fe7a111a.jpg?1562912314
 value=2.833
 rarity=U
 type=Creature

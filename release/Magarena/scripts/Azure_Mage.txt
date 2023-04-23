@@ -1,5 +1,5 @@
 name=Azure Mage
-image=https://magiccards.info/scans/en/mm3/31.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5a7ed36-a552-4d46-929a-48f34ae9279a.jpg?1593812991
 image_updated=2017-08-08
 value=3.768
 rarity=U

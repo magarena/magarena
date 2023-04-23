@@ -1,5 +1,5 @@
 name=Anthroplasm
-image=https://magiccards.info/scans/en/ul/25.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/089e2bc7-0063-47bf-8f66-48bed6eb046b.jpg?1562862308
 value=3.880
 rarity=R
 type=Creature

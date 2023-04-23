@@ -1,5 +1,5 @@
 name=Avalanche Riders
-image=https://magiccards.info/scans/en/tsts/55.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abb19b6b-4142-4b93-85ca-3f2d8b23b4e1.jpg?1562781777
 value=4.211
 removal=1
 rarity=U

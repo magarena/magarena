@@ -1,5 +1,5 @@
 name=Burrowing
-image=https://magiccards.info/scans/en/6e/170.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c665180c-a69b-446e-9894-3b3be624db7f.jpg?1562822653
 value=1.634
 rarity=U
 type=Enchantment

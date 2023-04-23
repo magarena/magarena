@@ -1,5 +1,5 @@
 name=Immolating Glare
-image=https://magiccards.info/scans/en/ogw/20.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f468338-bb66-4db0-a883-69095566092b.jpg?1562904646
 image_updated=2016-02-29
 value=2.500
 rarity=U

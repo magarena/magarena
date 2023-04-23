@@ -1,5 +1,5 @@
 name=Pheres-Band Centaurs
-image=https://magiccards.info/scans/en/ths/171.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2168fcf4-cf87-4ab8-9710-6ec672750a9a.jpg?1593860938
 value=2.885
 rarity=C
 type=Creature

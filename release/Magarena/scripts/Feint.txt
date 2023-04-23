@@ -1,5 +1,5 @@
 name=Feint
-image=https://magiccards.info/scans/en/lg/144.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95b265bc-a94d-403b-8232-8fdfa0f8d9d5.jpg?1562860143
 value=2.750
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Devout Lightcaster
-image=https://magiccards.info/scans/en/zen/10.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16e31e43-84d3-429e-9e81-60b325989c93.jpg?1562610112
 value=3.886
 rarity=R
 type=Creature

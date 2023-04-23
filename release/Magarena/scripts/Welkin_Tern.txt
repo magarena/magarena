@@ -1,5 +1,5 @@
 name=Welkin Tern
-image=https://magiccards.info/scans/en/m15/84.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa9b56b7-73f1-47fd-834b-37408482cebc.jpg?1562132016
 value=3.083
 rarity=C
 type=Creature

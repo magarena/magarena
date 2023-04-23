@@ -1,5 +1,5 @@
 name=Kelsinko Ranger
-image=https://magiccards.info/scans/en/ia/257.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/8402543e-5406-404f-95c4-800a1dce35f1.jpg?1587911521
 value=2.453
 rarity=C
 type=Creature

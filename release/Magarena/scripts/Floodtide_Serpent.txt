@@ -1,5 +1,5 @@
 name=Floodtide Serpent
-image=https://magiccards.info/scans/en/bng/41.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a2a4b24-096a-4d36-a872-73fa4552bb35.jpg?1593091679
 value=2.514
 rarity=C
 type=Creature

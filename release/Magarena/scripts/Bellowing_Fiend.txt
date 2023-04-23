@@ -1,5 +1,5 @@
 name=Bellowing Fiend
-image=https://magiccards.info/scans/en/7e/119.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b0962d7-d797-4f07-bd73-9cd7a11ffad8.jpg?1562234958
 value=3.091
 rarity=R
 type=Creature

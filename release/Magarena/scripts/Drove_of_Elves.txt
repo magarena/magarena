@@ -1,5 +1,5 @@
 name=Drove of Elves
-image=https://magiccards.info/scans/en/c14/189.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d134465-8d7d-458b-99e5-e6aa6d285214.jpg?1592672912
 value=3.811
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Bravado
-image=https://magiccards.info/scans/en/us/177.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/019ba422-4837-400c-a913-b56d87b49e26.jpg?1562895314
 value=3.464
 rarity=C
 type=Enchantment

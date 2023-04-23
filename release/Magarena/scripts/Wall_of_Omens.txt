@@ -1,5 +1,5 @@
 name=Wall of Omens
-image=https://magiccards.info/scans/en/ema/34.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/6504e634-d8cd-41bc-978d-769431bd896d.jpg?1673147157
 value=3.821
 rarity=U
 type=Creature

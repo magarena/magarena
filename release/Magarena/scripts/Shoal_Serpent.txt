@@ -1,5 +1,5 @@
 name=Shoal Serpent
-image=https://magiccards.info/scans/en/zen/65.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4a98047-8e6d-416c-b11d-cc4c2a56b624.jpg?1562615139
 value=1.438
 rarity=C
 type=Creature

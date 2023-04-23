@@ -1,5 +1,5 @@
 name=Darkslick Drake
-image=https://magiccards.info/scans/en/som/30.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/234f4131-1e7f-4220-b46c-bb4a6713876e.jpg?1562815509
 value=3.364
 rarity=U
 type=Creature

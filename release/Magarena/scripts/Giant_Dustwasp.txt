@@ -1,5 +1,5 @@
 name=Giant Dustwasp
-image=https://magiccards.info/scans/en/mma/145.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8aec78a-9fd4-4cf9-a9ec-e234f6a552e4.jpg?1619398059
 value=3.265
 rarity=C
 type=Creature

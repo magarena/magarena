@@ -1,5 +1,5 @@
 name=Aphetto Runecaster
-image=https://magiccards.info/scans/en/sc/28.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c5de028-91ce-48d8-8557-ae12542adea2.jpg?1562531185
 value=3.113
 rarity=U
 type=Creature

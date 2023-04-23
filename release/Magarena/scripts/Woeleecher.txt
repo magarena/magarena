@@ -1,5 +1,5 @@
 name=Woeleecher
-image=https://magiccards.info/scans/en/shm/27.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d05c7868-e589-478e-af0c-512d0fe4f253.jpg?1562836231
 value=2.128
 rarity=C
 type=Creature

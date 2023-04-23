@@ -1,5 +1,5 @@
 name=Heckling Fiends
-image=https://magiccards.info/scans/en/cns/145.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad68539a-c7d3-46ee-ab94-ef9cc0f12dc3.jpg?1562866399
 value=2.500
 rarity=U
 type=Creature

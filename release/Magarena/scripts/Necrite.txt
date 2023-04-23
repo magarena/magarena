@@ -1,5 +1,5 @@
 name=Necrite
-image=https://magiccards.info/scans/en/5e/43.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86a99edc-22d9-4653-8a7a-825f4b443d75.jpg?1547176647
 value=3.017
 rarity=C
 type=Creature

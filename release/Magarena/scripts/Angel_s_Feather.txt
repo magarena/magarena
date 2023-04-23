@@ -1,5 +1,5 @@
 name=Angel's Feather
-image=https://magiccards.info/scans/en/m12/202.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69cf2f25-dc3e-457d-9d50-22a966a20d5e.jpg?1561771500
 value=1.750
 rarity=U
 type=Artifact

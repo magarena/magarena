@@ -1,5 +1,5 @@
 name=Adventurous Impulse
-image=https://magiccards.info/scans/en/dom/153.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30811fb2-5767-4106-9a8d-6091f61969c6.jpg?1591227489
 value=2.500
 rarity=C
 type=Sorcery

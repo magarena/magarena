@@ -1,5 +1,5 @@
 name=Fumiko the Lowblood
-image=https://magiccards.info/scans/en/bok/104.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3ee3011-3d17-435d-a483-79b0419b589b.jpg?1591320621
 image_updated=2016-02-29
 value=3.980
 rarity=R

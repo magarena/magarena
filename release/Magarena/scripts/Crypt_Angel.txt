@@ -1,5 +1,5 @@
 name=Crypt Angel
-image=https://magiccards.info/scans/en/in/97.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/522ddc6f-ec13-4a70-8f4c-b3c846b102fd.jpg?1562911661
 value=4.069
 rarity=R
 type=Creature

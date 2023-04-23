@@ -1,5 +1,5 @@
 name=Soul Swallower
-image=https://magiccards.info/scans/en/soi/230.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22fbc045-2c86-4816-8622-db56929ae94d.jpg?1576385248
 value=2.500
 rarity=R
 type=Creature

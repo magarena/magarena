@@ -1,5 +1,5 @@
 name=Water Wurm
-image=https://magiccards.info/scans/en/dk/37.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3da4a88-5225-467f-9240-f30bc1eee520.jpg?1562949238
 value=2.027
 rarity=C
 type=Creature

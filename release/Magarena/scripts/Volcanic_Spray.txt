@@ -1,5 +1,5 @@
 name=Volcanic Spray
-image=https://magiccards.info/scans/en/od/226.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97daab4b-d934-4a3f-a043-f7c9c1dd32bf.jpg?1562923217
 value=3.531
 rarity=U
 type=Sorcery

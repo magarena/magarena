@@ -1,5 +1,5 @@
 name=Esper Panorama
-image=https://magiccards.info/scans/en/ala/223.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b89070ab-4fe6-4919-b160-b32100fb4930.jpg?1673485687
 value=2.850
 rarity=C
 type=Land

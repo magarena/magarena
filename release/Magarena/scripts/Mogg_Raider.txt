@@ -1,5 +1,5 @@
 name=Mogg Raider
-image=https://magiccards.info/scans/en/tp/191.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94e9cc0a-c210-4525-8c7f-9c6306cc21b0.jpg?1562055437
 value=3.875
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Nylea, God of the Hunt
-image=https://magiccards.info/scans/en/ths/166.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f185a734-a32a-4244-88e8-dabafbfd064f.jpg?1562837629
 value=3.518
 rarity=M
 type=Legendary,Enchantment,Creature

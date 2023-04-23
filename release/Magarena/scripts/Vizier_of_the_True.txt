@@ -1,5 +1,5 @@
 name=Vizier of the True
-image=https://magiccards.info/scans/en/hou/28.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1800882-e886-48d5-ac85-0a8e5841dc9a.jpg?1562813442
 value=2.500
 rarity=U
 type=Creature

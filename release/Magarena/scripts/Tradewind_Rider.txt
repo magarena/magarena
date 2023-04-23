@@ -1,5 +1,5 @@
 name=Tradewind Rider
-image=https://magiccards.info/scans/en/tp/98.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df626c4c-75f4-4250-9057-c8c383a5a93d.jpg?1562431769
 value=2.500
 rarity=R
 type=Creature

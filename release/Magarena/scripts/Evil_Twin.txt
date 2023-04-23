@@ -1,5 +1,5 @@
 name=Evil Twin
-image=https://magiccards.info/scans/en/mm3/162.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b1969ce-3bf1-4beb-bbf8-22edfda8e3f8.jpg?1562919770
 image_updated=2017-08-08
 value=3.879
 rarity=R

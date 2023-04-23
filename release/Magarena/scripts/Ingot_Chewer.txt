@@ -1,5 +1,5 @@
 name=Ingot Chewer
-image=https://magiccards.info/scans/en/c14/179.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f84b4b61-0e92-4ca2-b4e0-ae846a2a8e37.jpg?1547517288
 value=4.457
 rarity=C
 type=Creature

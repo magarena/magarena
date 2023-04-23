@@ -1,5 +1,5 @@
 name=Totem Speaker
-image=https://magiccards.info/scans/en/le/141.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce12115b-2667-47f7-bd24-17c982a4f79a.jpg?1562936447
 value=2.068
 rarity=U
 type=Creature

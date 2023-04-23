@@ -1,5 +1,5 @@
 name=Legacy Weapon
-image=https://magiccards.info/scans/en/10e/330.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae2ef7bf-6e5b-40a0-8b25-478323b64bdc.jpg?1562553513
 value=4.153
 rarity=R
 type=Legendary,Artifact

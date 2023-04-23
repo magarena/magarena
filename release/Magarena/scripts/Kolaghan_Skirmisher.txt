@@ -1,5 +1,5 @@
 name=Kolaghan Skirmisher
-image=https://magiccards.info/scans/en/dtk/107.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ced0adca-d11c-41b6-aec4-4799946425d3.jpg?1562793316
 value=2.500
 rarity=C
 type=Creature

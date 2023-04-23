@@ -1,5 +1,5 @@
 name=Crypt Sliver
-image=https://magiccards.info/scans/en/le/63.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/507097eb-6b50-47ae-a545-df76b743b2bd.jpg?1562911300
 value=3.939
 rarity=C
 type=Creature

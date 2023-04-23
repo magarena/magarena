@@ -1,5 +1,5 @@
 name=Venomspout Brackus
-image=https://magiccards.info/scans/en/on/295.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0774771c-5373-4636-9174-d06e7d635183.jpg?1562896736
 value=3.274
 rarity=U
 type=Creature

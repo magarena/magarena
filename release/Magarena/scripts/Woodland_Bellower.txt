@@ -1,5 +1,5 @@
 name=Woodland Bellower
-image=https://magiccards.info/scans/en/ori/207.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a706d4bb-0b44-4e43-b340-7de799c086b8.jpg?1562034880
 image_updated=2015-11-05
 value=2.500
 rarity=M

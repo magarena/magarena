@@ -1,5 +1,5 @@
 name=Cognivore
-image=https://magiccards.info/scans/en/od/77.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7de76ff6-d065-4db1-b28d-4a4ccb1cc0fa.jpg?1562918268
 value=2.591
 rarity=R
 type=Creature

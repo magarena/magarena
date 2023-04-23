@@ -1,5 +1,5 @@
 name=Red Sun's Zenith
-image=https://magiccards.info/scans/en/mbs/74.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/373eb109-0e30-41c1-b2df-6bc78d968890.jpg?1562610602
 value=3.717
 rarity=R
 type=Sorcery

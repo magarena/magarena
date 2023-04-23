@@ -1,5 +1,5 @@
 name=Minions' Murmurs
-image=https://magiccards.info/scans/en/fut/71.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c42fded-49e8-4c69-8ade-ba5e76e44b45.jpg?1619395708
 value=2.821
 rarity=U
 type=Sorcery

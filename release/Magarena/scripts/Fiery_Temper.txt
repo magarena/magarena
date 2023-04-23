@@ -1,5 +1,5 @@
 name=Fiery Temper
-image=https://magiccards.info/scans/en/soi/156.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc8282aa-5347-44c7-8397-609aed82bc8c.jpg?1568004398
 image_updated=2010-09-10
 value=4.083
 rarity=C

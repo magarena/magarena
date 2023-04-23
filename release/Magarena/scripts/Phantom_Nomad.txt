@@ -1,5 +1,5 @@
 name=Phantom Nomad
-image=https://magiccards.info/scans/en/ju/17.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f43bb08-0a69-48e2-ac7a-5db92e60337b.jpg?1562901189
 value=3.513
 rarity=C
 type=Creature

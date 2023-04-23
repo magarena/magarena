@@ -1,5 +1,5 @@
 name=Genju of the Fens
-image=https://magiccards.info/scans/en/bok/66.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8e06ff3-5fdd-444d-916e-3764f795456e.jpg?1562946696
 image_updated=2016-12-03
 value=3.488
 rarity=U

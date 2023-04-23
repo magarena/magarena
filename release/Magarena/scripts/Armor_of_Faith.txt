@@ -1,5 +1,5 @@
 name=Armor of Faith
-image=https://magiccards.info/scans/en/5e/284.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b2a5df9-cec9-4f93-b0e3-d6181eb893b1.jpg?1562868544
 value=2.786
 rarity=C
 type=Enchantment

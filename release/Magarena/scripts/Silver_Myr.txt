@@ -1,5 +1,5 @@
 name=Silver Myr
-image=https://magiccards.info/scans/en/som/202.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ebcc053-21c6-4708-b9fc-532e3749962f.jpg?1651656362
 value=3.473
 rarity=C
 type=Artifact,Creature

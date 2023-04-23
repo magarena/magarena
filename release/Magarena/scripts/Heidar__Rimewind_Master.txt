@@ -1,5 +1,5 @@
 name=Heidar, Rimewind Master
-image=https://magiccards.info/scans/en/cs/36.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39916d65-60a6-4da6-8675-8a8ef9505772.jpg?1593274946
 value=3.425
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Taigam's Strike
-image=https://magiccards.info/scans/en/dtk/81.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ef5e279-14c4-4f91-b24d-c7098140efcd.jpg?1562784329
 value=2.500
 rarity=C
 type=Sorcery

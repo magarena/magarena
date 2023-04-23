@@ -1,5 +1,5 @@
 name=Frontline Medic
-image=https://magiccards.info/scans/en/gtc/12.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e9ad9ce-f862-4663-9a36-caf0844eb416.jpg?1674141094
 value=4.028
 rarity=R
 type=Creature

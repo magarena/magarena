@@ -1,5 +1,5 @@
 name=Darksteel Plate
-image=https://magiccards.info/scans/en/mbs/104.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f99fb1e-99a6-4c83-98eb-7bff23996a7f.jpg?1673149353
 value=3.850
 rarity=R
 type=Artifact

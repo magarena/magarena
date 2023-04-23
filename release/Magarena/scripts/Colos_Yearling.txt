@@ -1,5 +1,5 @@
 name=Colos Yearling
-image=https://magiccards.info/scans/en/ud/79.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d68eb62-9f86-4c85-8696-46a248c744ff.jpg?1562443334
 value=2.882
 rarity=C
 type=Creature

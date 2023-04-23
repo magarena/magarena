@@ -1,5 +1,5 @@
 name=Ravenous Chupacabra
-image=https://magiccards.info/scans/en/a25/104.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3de4804-d330-403a-9ab0-e8be78655618.jpg?1674141785
 image_updated=2018-04-27
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Murderer's Axe
-image=https://magiccards.info/scans/en/soi/259.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/696dcb79-4915-424f-ba8f-5363ae3395a6.jpg?1576385443
 value=2.500
 rarity=U
 type=Artifact

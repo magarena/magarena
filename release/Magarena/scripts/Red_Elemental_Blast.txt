@@ -1,5 +1,5 @@
 name=Red Elemental Blast
-image=https://magiccards.info/scans/en/a25/147.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70a45e9b-699e-425a-9f3d-267274830d3e.jpg?1562436618
 image_updated=2018-04-27
 value=4.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Hissing Miasma
-image=https://magiccards.info/scans/en/gp/51.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f394fd39-842f-4c98-b857-bdad3fd09758.jpg?1593272202
 value=3.930
 rarity=U
 type=Enchantment

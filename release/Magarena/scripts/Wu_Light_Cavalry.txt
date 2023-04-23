@@ -1,5 +1,5 @@
 name=Wu Light Cavalry
-image=https://magiccards.info/scans/en/p3k/60.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60e55b25-fde2-4b57-b5db-65b75262ff3d.jpg?1562256556
 value=2.855
 rarity=C
 type=Creature

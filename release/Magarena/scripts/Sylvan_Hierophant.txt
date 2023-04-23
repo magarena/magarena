@@ -1,5 +1,5 @@
 name=Sylvan Hierophant
-image=https://magiccards.info/scans/en/wl/83.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/432a6908-0ee3-45c5-9089-b7f8cf1184bb.jpg?1562800502
 value=3.485
 rarity=U
 type=Creature

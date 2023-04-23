@@ -1,5 +1,5 @@
 name=Shared Discovery
-image=https://magiccards.info/scans/en/roe/87.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec0b99f1-d706-4332-a1c2-86d789919069.jpg?1562709973
 value=3.038
 rarity=C
 type=Sorcery

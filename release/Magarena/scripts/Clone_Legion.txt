@@ -1,5 +1,5 @@
 name=Clone Legion
-image=https://magiccards.info/scans/en/dtk/48.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5ebe939-fef3-4085-808c-41ff97e83a7e.jpg?1673483841
 value=2.500
 rarity=M
 type=Sorcery

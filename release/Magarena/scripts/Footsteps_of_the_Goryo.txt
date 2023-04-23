@@ -1,5 +1,5 @@
 name=Footsteps of the Goryo
-image=https://magiccards.info/scans/en/sok/68.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca7bedbe-8b87-402f-9a0c-83e46ae10279.jpg?1562496064
 value=2.633
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Undead Warchief
-image=https://magiccards.info/scans/en/sc/78.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01482b0c-d05b-4356-9144-e044159f4dcb.jpg?1562841195
 image_updated=2017-01-11
 value=4.302
 rarity=U

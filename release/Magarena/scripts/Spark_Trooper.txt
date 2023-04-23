@@ -1,5 +1,5 @@
 name=Spark Trooper
-image=https://magiccards.info/scans/en/gtc/199.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09eb69b5-b8e2-48c6-8c27-cb0108df8dad.jpg?1561815173
 value=3.780
 rarity=R
 type=Creature

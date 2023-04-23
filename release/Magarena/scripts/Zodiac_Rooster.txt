@@ -1,5 +1,5 @@
 name=Zodiac Rooster
-image=https://magiccards.info/scans/en/p3k/163.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81dd362e-42f6-4eeb-9fe7-0d9cbeb4f21e.jpg?1618205577
 value=3.970
 rarity=C
 type=Creature

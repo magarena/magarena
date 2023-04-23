@@ -1,5 +1,5 @@
 name=Flowstone Thopter
-image=https://magiccards.info/scans/en/ne/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bf016ec-2654-4c3e-8e2e-6c70c4604d28.jpg?1562630096
 value=1.961
 rarity=U
 type=Artifact,Creature

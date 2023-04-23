@@ -1,5 +1,5 @@
 name=Smoldering Marsh
-image=https://magiccards.info/scans/en/bfz/247.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5613def4-c9fe-48e0-920d-48dd3a193ecc.jpg?1673306234
 image_updated=2015-11-08
 value=2.500
 rarity=R

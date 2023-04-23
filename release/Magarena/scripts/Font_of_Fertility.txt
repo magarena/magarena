@@ -1,5 +1,5 @@
 name=Font of Fertility
-image=https://magiccards.info/scans/en/jou/123.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac8d1ecb-de7c-4641-81da-13117820195c.jpg?1593096189
 value=3.538
 rarity=C
 type=Enchantment

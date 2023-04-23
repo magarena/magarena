@@ -1,5 +1,5 @@
 name=Worldspine Wurm
-image=https://magiccards.info/scans/en/rtr/140.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/543d55cb-3a6b-4620-af25-10ae74ed32c4.jpg?1562786456
 value=3.954
 rarity=M
 type=Creature

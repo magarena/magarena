@@ -1,5 +1,5 @@
 name=Frazzle
-image=https://magiccards.info/scans/en/gp/25.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68b7f705-4d64-4551-8d76-826d91324e9e.jpg?1593271993
 value=1.033
 rarity=U
 type=Instant

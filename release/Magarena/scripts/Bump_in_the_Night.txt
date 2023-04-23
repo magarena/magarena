@@ -1,5 +1,5 @@
 name=Bump in the Night
-image=https://magiccards.info/scans/en/isd/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/320e394c-c8b1-42ad-91a5-6d57296f85ab.jpg?1592714563
 image_updated=2016-11-20
 value=3.558
 rarity=C

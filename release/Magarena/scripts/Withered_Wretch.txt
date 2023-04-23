@@ -1,5 +1,5 @@
 name=Withered Wretch
-image=https://magiccards.info/scans/en/le/86.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/235f15f5-1a5a-4eff-b0db-262f777e2b66.jpg?1562841669
 image_updated=2017-01-11
 value=4.342
 rarity=U

@@ -1,5 +1,5 @@
 name=Zombie Mob
-image=https://magiccards.info/scans/en/mr/51.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab85551f-c9cc-409c-9fb5-a45de695e521.jpg?1562720968
 value=2.608
 rarity=U
 type=Creature

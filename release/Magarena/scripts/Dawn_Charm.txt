@@ -1,5 +1,5 @@
 name=Dawn Charm
-image=https://magiccards.info/scans/en/pc/4.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc47e26a-2ba6-4b7a-bb03-43f7ecb9012e.jpg?1623147824
 value=4.171
 rarity=C
 type=Instant

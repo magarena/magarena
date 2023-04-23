@@ -1,5 +1,5 @@
 name=Krovikan Plague
-image=https://magiccards.info/scans/en/ai/16.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b258e192-20af-4a45-981f-05181f4cd997.jpg?1562770148
 value=2.685
 rarity=U
 type=Enchantment

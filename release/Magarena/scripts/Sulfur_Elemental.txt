@@ -1,5 +1,5 @@
 name=Sulfur Elemental
-image=https://magiccards.info/scans/en/pc/108.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0aed10f9-8c52-400b-a432-a0d8c6458e87.jpg?1619397746
 value=4.060
 rarity=U
 type=Creature

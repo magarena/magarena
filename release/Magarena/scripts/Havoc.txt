@@ -1,5 +1,5 @@
 name=Havoc
-image=https://magiccards.info/scans/en/tp/181.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7b032a1-6e43-4e22-9efa-43cfbf211e1c.jpg?1562056873
 value=3.214
 rarity=U
 type=Enchantment

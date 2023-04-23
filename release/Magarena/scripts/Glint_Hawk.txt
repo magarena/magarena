@@ -1,5 +1,5 @@
 name=Glint Hawk
-image=https://magiccards.info/scans/en/som/10.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/284c4710-4183-4743-9c8b-515cc98cbbb8.jpg?1562815728
 value=3.851
 rarity=C
 type=Creature

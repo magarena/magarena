@@ -1,5 +1,5 @@
 name=Enlistment Officer
-image=https://magiccards.info/scans/en/ap/9.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38138bb4-25ea-4aaf-8b1c-e9e60678fc6b.jpg?1562908171
 value=4.261
 rarity=U
 type=Creature

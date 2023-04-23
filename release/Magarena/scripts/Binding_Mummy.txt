@@ -1,5 +1,5 @@
 name=Binding Mummy
-image=https://magiccards.info/scans/en/akh/6.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fae54072-ae27-4aae-a2b7-71f4551934f6.jpg?1543674592
 value=2.500
 rarity=C
 type=Creature

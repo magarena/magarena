@@ -1,5 +1,5 @@
 name=Swirling Sandstorm
-image=https://magiccards.info/scans/en/ju/102.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d757ec3-c15f-4d6e-8e18-36ebae985448.jpg?1562629788
 value=2.880
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Wrap in Vigor
-image=https://magiccards.info/scans/en/cns/183.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92d53533-b10e-430a-a6f6-58ecb508be77.jpg?1562865933
 value=3.800
 rarity=C
 type=Instant

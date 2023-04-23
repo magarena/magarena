@@ -1,5 +1,5 @@
 name=Southern Paladin
-image=https://magiccards.info/scans/en/7e/46.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2fa1570-3103-494c-8316-8f0bf484f22d.jpg?1562246220
 value=3.683
 rarity=R
 type=Creature

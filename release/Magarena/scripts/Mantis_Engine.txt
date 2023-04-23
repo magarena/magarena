@@ -1,5 +1,5 @@
 name=Mantis Engine
-image=https://magiccards.info/scans/en/10e/333.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86111211-b3d9-42eb-bab7-ee2cf9acda5d.jpg?1562550949
 value=2.727
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Slumbering Tora
-image=https://magiccards.info/scans/en/bok/161.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e32ac983-a909-4342-882e-f3b7e2e064d8.jpg?1562880377
 value=2.106
 rarity=R
 type=Artifact

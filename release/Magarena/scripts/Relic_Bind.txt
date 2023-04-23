@@ -1,5 +1,5 @@
 name=Relic Bind
-image=https://magiccards.info/scans/en/4e/97.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05eee3dd-e17f-4154-8f8d-29c5421cd89d.jpg?1559603758
 value=2.042
 rarity=R
 type=Enchantment

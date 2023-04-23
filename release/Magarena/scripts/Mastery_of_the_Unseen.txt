@@ -1,5 +1,5 @@
 name=Mastery of the Unseen
-image=https://magiccards.info/scans/en/frf/19.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b844764-89d4-43a2-8041-3a9a8b4f2912.jpg?1562824938
 value=2.500
 rarity=R
 type=Enchantment

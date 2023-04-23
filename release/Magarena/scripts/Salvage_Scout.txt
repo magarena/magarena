@@ -1,5 +1,5 @@
 name=Salvage Scout
-image=https://magiccards.info/scans/en/som/19.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5909e77e-a930-4713-bca4-c6b265238c17.jpg?1562817853
 value=3.010
 rarity=C
 type=Creature

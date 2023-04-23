@@ -1,5 +1,5 @@
 name=Awaken the Ancient
-image=https://magiccards.info/scans/en/m14/126.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4125304-fd68-4051-96d5-625ffa9b0d3c.jpg?1562836357
 value=3.658
 rarity=R
 type=Enchantment

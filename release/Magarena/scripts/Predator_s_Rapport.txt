@@ -1,5 +1,5 @@
 name=Predator's Rapport
-image=https://magiccards.info/scans/en/gtc/129.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47324ab7-df78-4859-be0b-2eef5d4f8082.jpg?1561825064
 value=2.895
 rarity=C
 type=Instant

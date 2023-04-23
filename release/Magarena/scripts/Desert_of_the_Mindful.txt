@@ -1,5 +1,5 @@
 name=Desert of the Mindful
-image=https://magiccards.info/scans/en/hou/173.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/517f71a7-ec5b-46a6-b5ff-8c06abf0a630.jpg?1625980016
 value=2.500
 rarity=C
 type=Land

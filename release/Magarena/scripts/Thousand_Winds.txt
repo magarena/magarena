@@ -1,5 +1,5 @@
 name=Thousand Winds
-image=https://magiccards.info/scans/en/ktk/58.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f73d6480-2ddb-465d-8d21-11163744378d.jpg?1568004099
 value=3.750
 rarity=R
 type=Creature

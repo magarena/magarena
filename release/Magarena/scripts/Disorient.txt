@@ -1,5 +1,5 @@
 name=Disorient
-image=https://magiccards.info/scans/en/m10/48.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17965a3c-92b4-4f01-b076-e40c567eed33.jpg?1561972160
 value=1.138
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Scaled Wurm
-image=https://magiccards.info/scans/en/cns/178.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd17b2c1-c3dd-4f6f-a44c-dc81c6bc1c94.jpg?1562866415
 value=2.625
 rarity=C
 type=Creature

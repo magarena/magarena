@@ -1,5 +1,5 @@
 name=Zodiac Tiger
-image=https://magiccards.info/scans/en/p3k/164.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aafd78d5-df9f-46a3-a634-ebf7634a6358.jpg?1562257517
 value=3.125
 rarity=U
 type=Creature

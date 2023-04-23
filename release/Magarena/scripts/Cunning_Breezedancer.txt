@@ -1,5 +1,5 @@
 name=Cunning Breezedancer
-image=https://magiccards.info/scans/en/dtk/215.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdbfe3b0-3b1d-4b0c-9d98-07f1cecce4b7.jpg?1562792383
 value=2.500
 rarity=U
 type=Creature

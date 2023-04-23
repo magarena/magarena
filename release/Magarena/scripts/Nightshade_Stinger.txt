@@ -1,5 +1,5 @@
 name=Nightshade Stinger
-image=https://magiccards.info/scans/en/lw/132.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c894372f-7d28-4035-b45a-384c5bf8fd1f.jpg?1600700929
 value=2.896
 rarity=C
 type=Creature

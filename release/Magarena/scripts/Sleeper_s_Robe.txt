@@ -1,5 +1,5 @@
 name=Sleeper's Robe
-image=https://magiccards.info/scans/en/in/273.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3411f0fd-8b85-4d0d-a202-701a24ffac9f.jpg?1562905482
 value=3.988
 rarity=U
 type=Enchantment

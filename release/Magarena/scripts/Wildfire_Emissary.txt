@@ -1,5 +1,5 @@
 name=Wildfire Emissary
-image=https://magiccards.info/scans/en/ema/153.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f255055-0499-400f-ae0a-c32624f0ce78.jpg?1580014694
 value=4.033
 rarity=C
 type=Creature

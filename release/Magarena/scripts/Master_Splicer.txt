@@ -1,5 +1,5 @@
 name=Master Splicer
-image=https://magiccards.info/scans/en/mm3/15.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cf185b3-2285-41cf-97a5-4226c68d044e.jpg?1682208497
 image_updated=2017-08-08
 value=3.356
 rarity=U

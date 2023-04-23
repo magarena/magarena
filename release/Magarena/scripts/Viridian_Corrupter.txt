@@ -1,5 +1,5 @@
 name=Viridian Corrupter
-image=https://magiccards.info/scans/en/mbs/94.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3178acf-9c5a-418c-bbf7-8e430534396d.jpg?1562937370
 value=3.979
 removal=1
 rarity=U

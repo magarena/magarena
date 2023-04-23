@@ -1,5 +1,5 @@
 name=Bountiful Harvest
-image=https://magiccards.info/scans/en/m13/163.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d7a4494-2ced-4405-9204-d2617961a1d6.jpg?1562556883
 value=1.193
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Primeval Titan
-image=https://magiccards.info/scans/en/ima/183.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d5537da-112e-4679-a113-b5d7ce32a66b.jpg?1562850064
 image_updated=2017-04-12
 value=4.282
 rarity=M

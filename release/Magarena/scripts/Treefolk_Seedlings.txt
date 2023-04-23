@@ -1,5 +1,5 @@
 name=Treefolk Seedlings
-image=https://magiccards.info/scans/en/7e/277.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c275bdc-e960-4b6f-a8d3-b662739113c1.jpg?1562237391
 value=3.661
 rarity=U
 type=Creature

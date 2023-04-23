@@ -1,5 +1,5 @@
 name=Strip Bare
-image=https://magiccards.info/scans/en/shm/24.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51173fa1-7cd4-4093-982a-db0d46564a8a.jpg?1562830114
 value=2.630
 rarity=C
 type=Instant

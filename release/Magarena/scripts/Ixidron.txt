@@ -1,5 +1,5 @@
 name=Ixidron
-image=https://magiccards.info/scans/en/c14/116.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c30ec372-5cf7-471c-b3fd-411095fc249a.jpg?1568004006
 value=2.500
 rarity=R
 type=Creature

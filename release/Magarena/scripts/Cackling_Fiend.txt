@@ -1,5 +1,5 @@
 name=Cackling Fiend
-image=https://magiccards.info/scans/en/us/121.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae410ae8-1e72-4727-96df-c7c195063fb5.jpg?1562931843
 image_updated=2016-11-28
 value=2.538
 rarity=C

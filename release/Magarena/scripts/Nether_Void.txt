@@ -1,5 +1,5 @@
 name=Nether Void
-image=https://magiccards.info/scans/en/lg/27.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3452173-01e1-4a4a-981e-e6b6dea61c61.jpg?1562929389
 value=4.642
 rarity=R
 type=World,Enchantment

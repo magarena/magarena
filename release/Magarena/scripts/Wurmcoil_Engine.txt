@@ -1,5 +1,5 @@
 name=Wurmcoil Engine
-image=https://magiccards.info/scans/en/c14/283.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d275f04-cc60-4e3f-95cc-3d02bc916b82.jpg?1599710280
 value=4.595
 rarity=M
 type=Artifact,Creature

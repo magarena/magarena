@@ -1,5 +1,5 @@
 name=Aven of Enduring Hope
-image=https://magiccards.info/scans/en/hou/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02c1310c-1b54-42dd-bf24-889770fa2ded.jpg?1562787311
 value=2.500
 rarity=C
 type=Creature

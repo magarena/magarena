@@ -1,5 +1,5 @@
 name=Warden of Geometries
-image=https://magiccards.info/scans/en/ogw/11.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7f517b9-ac10-4710-8ef1-ced1253d5ecf.jpg?1562935134
 image_updated=2016-02-29
 value=2.500
 rarity=C

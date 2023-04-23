@@ -1,5 +1,5 @@
 name=Krasis Incubation
-image=https://magiccards.info/scans/en/dgm/79.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8da986da-e8ee-4b53-8bbd-9285d0f7f3cb.jpg?1562921265
 value=3.654
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Den Protector
-image=https://magiccards.info/scans/en/c16/147.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6c1c367-35a9-4932-86a6-d63d3b9b326a.jpg?1568004527
 image_updated=2017-08-17
 value=2.500
 rarity=R

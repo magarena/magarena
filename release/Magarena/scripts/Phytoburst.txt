@@ -1,5 +1,5 @@
 name=Phytoburst
-image=https://magiccards.info/scans/en/dgm/46.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/7507afc4-f504-4eb2-a86d-f99bc2860838.jpg?1562916689
 value=3.629
 rarity=C
 type=Sorcery

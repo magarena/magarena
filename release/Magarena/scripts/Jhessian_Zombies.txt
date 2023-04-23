@@ -1,5 +1,5 @@
 name=Jhessian Zombies
-image=https://magiccards.info/scans/en/arb/22.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82afe98a-1b57-4fe4-8c8c-c8995c313410.jpg?1562925851
 value=2.381
 rarity=C
 type=Creature

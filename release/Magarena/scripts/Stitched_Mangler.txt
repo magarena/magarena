@@ -1,5 +1,5 @@
 name=Stitched Mangler
-image=https://magiccards.info/scans/en/soi/89.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c03c643c-8e4c-4dc9-8756-c253fa057729.jpg?1576384258
 value=2.500
 rarity=C
 type=Creature

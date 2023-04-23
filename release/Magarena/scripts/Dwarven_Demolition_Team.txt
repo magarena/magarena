@@ -1,5 +1,5 @@
 name=Dwarven Demolition Team
-image=https://magiccards.info/scans/en/8e/184.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94d17787-1f59-4e88-ba57-e69f02bb3ffe.jpg?1562925016
 value=2.100
 rarity=U
 type=Creature

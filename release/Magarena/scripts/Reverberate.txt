@@ -1,5 +1,5 @@
 name=Reverberate
-image=https://magiccards.info/scans/en/m13/145.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5996feb4-02ac-45e8-a7f2-966cf74391dc.jpg?1562554142
 value=3.553
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Suq'Ata Assassin
-image=https://magiccards.info/scans/en/vi/19.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b7178c6-f989-437d-83e3-04b9817f2c54.jpg?1562276976
 value=3.051
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Argent Sphinx
-image=https://magiccards.info/scans/en/mm2/41.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99d03f11-7448-47de-9fb4-3ceaf08dc1d4.jpg?1562265270
 value=3.786
 rarity=R
 type=Creature

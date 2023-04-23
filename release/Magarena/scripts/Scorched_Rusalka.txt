@@ -1,5 +1,5 @@
 name=Scorched Rusalka
-image=https://magiccards.info/scans/en/mm3/110.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6b9dd6d-e286-41e8-bd9d-0b42daa5c062.jpg?1593813567
 image_updated=2017-08-08
 value=4.059
 rarity=C

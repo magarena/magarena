@@ -1,5 +1,5 @@
 name=Garruk's Companion
-image=https://magiccards.info/scans/en/m12/175.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8d8806c-43c5-4c6c-9420-6210a17ec2b0.jpg?1562657112
 value=4.064
 rarity=C
 type=Creature

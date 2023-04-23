@@ -1,5 +1,5 @@
 name=Viashino Firstblade
-image=https://magiccards.info/scans/en/dgm/113.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cb0c21c-bdf1-478a-9ad8-6c6bda6ffb0f.jpg?1562900339
 value=3.746
 rarity=C
 type=Creature

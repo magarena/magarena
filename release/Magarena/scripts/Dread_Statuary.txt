@@ -1,5 +1,5 @@
 name=Dread Statuary
-image=https://magiccards.info/scans/en/cn2/217.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e54bace-7484-484e-987e-8d3a9a430ab9.jpg?1576383307
 image_updated=2017-08-29
 value=3.722
 rarity=U

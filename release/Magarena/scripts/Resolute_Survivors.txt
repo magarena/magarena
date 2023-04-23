@@ -1,5 +1,5 @@
 name=Resolute Survivors
-image=https://magiccards.info/scans/en/hou/142.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/713f469e-58c3-4db4-aa7a-77126bda13f2.jpg?1562803253
 value=2.500
 rarity=U
 type=Creature

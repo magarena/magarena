@@ -1,5 +1,5 @@
 name=Renewing Dawn
-image=https://magiccards.info/scans/en/po/185.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e56300cb-6b44-47fe-9508-c33ad5670b4b.jpg?1562448302
 value=3.208
 rarity=U
 type=Sorcery

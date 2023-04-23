@@ -1,5 +1,5 @@
 name=Indomitable Archangel
-image=https://magiccards.info/scans/en/mm2/19.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23f4b149-fad5-4ba2-a484-dd29d97d120d.jpg?1651655632
 image_updated=2015-11-05
 value=4.027
 rarity=R

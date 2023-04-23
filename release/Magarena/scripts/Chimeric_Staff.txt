@@ -1,5 +1,5 @@
 name=Chimeric Staff
-image=https://magiccards.info/scans/en/10e/313.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9ca0425d-f41c-4ba5-ac06-9ce5bab2a4b9.jpg?1562552336
 value=3.633
 rarity=R
 type=Artifact

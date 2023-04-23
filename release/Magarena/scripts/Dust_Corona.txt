@@ -1,5 +1,5 @@
 name=Dust Corona
-image=https://magiccards.info/scans/en/pc/97.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb554768-d908-474d-832d-d4e36d293712.jpg?1562580556
 value=2.893
 rarity=C
 type=Enchantment

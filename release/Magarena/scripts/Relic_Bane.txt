@@ -1,5 +1,5 @@
 name=Relic Bane
-image=https://magiccards.info/scans/en/mi/76.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cbafa51-693b-485c-807d-64020540f16a.jpg?1562152210
 value=2.906
 rarity=U
 type=Enchantment

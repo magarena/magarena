@@ -1,5 +1,5 @@
 name=Hellkite Tyrant
-image=https://magiccards.info/scans/en/c16/128.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67d15ee6-916f-4ac9-a4d2-4a9bd389d451.jpg?1625193869
 image_updated=2017-08-17
 value=4.209
 rarity=M

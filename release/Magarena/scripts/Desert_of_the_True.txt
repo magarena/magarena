@@ -1,5 +1,5 @@
 name=Desert of the True
-image=https://magiccards.info/scans/en/hou/174.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f96abac-9876-4fb6-af56-6c0c47c9d86b.jpg?1591321943
 value=2.500
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Springsage Ritual
-image=https://magiccards.info/scans/en/emn/172.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e0b23a4-5868-4dd8-ae68-846934e1bd52.jpg?1576384891
 image_updated=2016-09-05
 value=2.500
 rarity=C

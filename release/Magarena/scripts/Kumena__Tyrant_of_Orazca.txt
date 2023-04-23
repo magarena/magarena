@@ -1,5 +1,5 @@
 name=Kumena, Tyrant of Orazca
-image=https://magiccards.info/scans/en/rix/162.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3aef818-c896-46e6-aaff-56aee52a066c.jpg?1555040871
 value=2.500
 rarity=M
 type=Legendary,Creature

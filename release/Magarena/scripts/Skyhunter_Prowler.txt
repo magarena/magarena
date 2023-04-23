@@ -1,5 +1,5 @@
 name=Skyhunter Prowler
-image=https://magiccards.info/scans/en/10e/42.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52aa4af5-f0cb-4512-bef5-2e46a43aa27b.jpg?1562547740
 value=3.070
 rarity=C
 type=Creature

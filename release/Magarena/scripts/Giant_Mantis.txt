@@ -1,5 +1,5 @@
 name=Giant Mantis
-image=https://magiccards.info/scans/en/bfz/173.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98518e4a-d1d0-4e41-bae7-242c779f06a1.jpg?1562930849
 image_updated=2015-11-08
 value=3.362
 rarity=C

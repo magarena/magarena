@@ -1,5 +1,5 @@
 name=Syndic of Tithes
-image=https://magiccards.info/scans/en/gtc/26.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bafaa3b-eeaa-427f-9a73-6a1c98d257ca.jpg?1561820950
 value=3.246
 rarity=C
 type=Creature

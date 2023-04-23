@@ -1,5 +1,5 @@
 name=Siren Lookout
-image=https://magiccards.info/scans/en/xln/78.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609
 value=2.500
 rarity=C
 type=Creature

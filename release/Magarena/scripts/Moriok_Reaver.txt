@@ -1,5 +1,5 @@
 name=Moriok Reaver
-image=https://magiccards.info/scans/en/som/70.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2a0410f-95c5-49bf-856d-dea796c96e3b.jpg?1562824241
 value=2.027
 rarity=C
 type=Creature

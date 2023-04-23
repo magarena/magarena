@@ -1,5 +1,5 @@
 name=Goblin Soothsayer
-image=https://magiccards.info/scans/en/mr/179.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/686b847c-242c-4b91-9fa9-69c9c9f187a7.jpg?1562719764
 value=4.053
 rarity=U
 type=Creature

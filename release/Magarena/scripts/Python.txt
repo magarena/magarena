@@ -1,5 +1,5 @@
 name=Python
-image=https://magiccards.info/scans/en/6e/150.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84fbe194-1d9b-4d3f-b7a0-aa058945aca1.jpg?1562819773
 image_updated=2017-01-03
 value=2.438
 rarity=C

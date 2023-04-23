@@ -1,5 +1,5 @@
 name=Treetop Bracers
-image=https://magiccards.info/scans/en/10e/304.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b84185d8-c058-4fe7-b46e-f5ca90e70f12.jpg?1562554059
 value=2.970
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Stern Marshal
-image=https://magiccards.info/scans/en/po/194.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18fbfbc0-c55b-4e56-a3d2-5d09571c36c8.jpg?1562445679
 value=2.297
 rarity=R
 type=Creature

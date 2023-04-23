@@ -1,5 +1,5 @@
 name=Wings of Velis Vel
-image=https://magiccards.info/scans/en/mm2/70.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc5f287b-beaa-4b51-8db7-91982e2c0bb0.jpg?1562267396
 value=3.188
 rarity=C
 type=Tribal,Instant

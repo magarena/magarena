@@ -1,5 +1,5 @@
 name=Tyrant's Machine
-image=https://magiccards.info/scans/en/m15/238.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c697b0b-edba-491a-b40e-f88572a6e955.jpg?1562904061
 value=1.500
 rarity=C
 type=Artifact

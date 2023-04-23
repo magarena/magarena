@@ -1,5 +1,5 @@
 name=Gift of Strength
-image=https://magiccards.info/scans/en/hou/117.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75f5e144-4dd6-441f-b3e2-433aa82bdf7b.jpg?1581480614
 value=2.500
 rarity=C
 type=Instant

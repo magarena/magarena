@@ -1,5 +1,5 @@
 name=Scroll of Avacyn
-image=https://magiccards.info/scans/en/avr/220.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a2d0981-0af6-42d6-b926-16f8f2327320.jpg?1601080969
 value=2.962
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Riptide Survivor
-image=https://magiccards.info/scans/en/c14/121.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cedabc94-2ed9-4a1e-a4d3-d004da959380.jpg?1561959285
 value=2.500
 rarity=U
 type=Creature

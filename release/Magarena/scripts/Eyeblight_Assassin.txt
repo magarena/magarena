@@ -1,5 +1,5 @@
 name=Eyeblight Assassin
-image=https://magiccards.info/scans/en/ori/95.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a480da7-1b5d-41a5-b603-e63af100724a.jpg?1608909709
 image_updated=2015-11-05
 value=2.500
 rarity=C

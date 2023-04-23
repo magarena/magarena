@@ -1,5 +1,5 @@
 name=Glory Seeker
-image=https://magiccards.info/scans/en/roe/22.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bd51dd3-ce49-41cf-85ef-a5a1428bc71b.jpg?1562197821
 image_updated=2016-12-03
 value=2.449
 rarity=C

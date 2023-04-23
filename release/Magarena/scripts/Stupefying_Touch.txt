@@ -1,5 +1,5 @@
 name=Stupefying Touch
-image=https://magiccards.info/scans/en/ema/74.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/6355ae63-3072-4c6f-bf46-ee6e9c4fedba.jpg?1580014135
 value=3.017
 rarity=C
 type=Enchantment

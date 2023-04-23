@@ -1,5 +1,5 @@
 name=Persuasion
-image=https://magiccards.info/scans/en/10e/95.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e957fab3-7a79-4b8f-813a-daaabb0ccbea.jpg?1562557148
 value=3.811
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Selesnya Guildmage
-image=https://magiccards.info/scans/en/c16/235.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7209ed4c-207f-4e37-8c92-255f8b8eb3d1.jpg?1599708335
 image_updated=2017-08-17
 value=3.636
 rarity=U

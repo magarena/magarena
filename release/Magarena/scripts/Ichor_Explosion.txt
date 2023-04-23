@@ -1,5 +1,5 @@
 name=Ichor Explosion
-image=https://magiccards.info/scans/en/nph/64.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b207e2f-4604-43c5-bb35-a877e35ddd81.jpg?1562875473
 value=1.970
 rarity=U
 type=Sorcery

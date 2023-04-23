@@ -1,5 +1,5 @@
 name=Wee Dragonauts
-image=https://magiccards.info/scans/en/ema/212.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37ee17a1-76ce-4ae8-9109-ba32457cbeec.jpg?1572893911
 value=3.883
 rarity=U
 type=Creature

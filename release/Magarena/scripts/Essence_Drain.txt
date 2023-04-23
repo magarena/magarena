@@ -1,5 +1,5 @@
 name=Essence Drain
-image=https://magiccards.info/scans/en/m13/93.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58df0c6d-3fd2-4d87-81e2-6640e6e75985.jpg?1562554116
 value=1.867
 removal=3
 rarity=C

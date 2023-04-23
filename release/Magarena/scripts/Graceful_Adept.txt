@@ -1,5 +1,5 @@
 name=Graceful Adept
-image=https://magiccards.info/scans/en/chk/63.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/648430cc-80d1-479f-ae31-76687d2eb57c.jpg?1562761017
 value=3.133
 rarity=U
 type=Creature

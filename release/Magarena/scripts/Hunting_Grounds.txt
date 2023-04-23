@@ -1,5 +1,5 @@
 name=Hunting Grounds
-image=https://magiccards.info/scans/en/ju/138.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b14a736-5223-457b-9d4e-f4a2d6ed9a8d.jpg?1562630006
 value=4.182
 rarity=R
 type=Enchantment

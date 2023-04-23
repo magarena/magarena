@@ -1,5 +1,5 @@
 name=Rocket Launcher
-image=https://magiccards.info/scans/en/rv/272.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/551c2217-fdf5-465f-8522-1b88c111be7d.jpg?1559592775
 value=3.164
 rarity=R
 type=Artifact

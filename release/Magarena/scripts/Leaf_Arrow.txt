@@ -1,5 +1,5 @@
 name=Leaf Arrow
-image=https://magiccards.info/scans/en/roe/194.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d531ba4-df99-41e4-9dd3-a27a420ad63c.jpg?1562702412
 value=3.282
 rarity=C
 type=Instant

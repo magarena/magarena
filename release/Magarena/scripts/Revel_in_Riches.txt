@@ -1,5 +1,5 @@
 name=Revel in Riches
-image=https://magiccards.info/scans/en/xln/117.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79b0e035-8716-469d-99ae-a530cd96ef09.jpg?1562558471
 value=2.500
 rarity=R
 type=Enchantment

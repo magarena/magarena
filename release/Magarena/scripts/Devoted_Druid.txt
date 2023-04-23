@@ -1,5 +1,5 @@
 name=Devoted Druid
-image=https://magiccards.info/scans/en/shm/110.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ab94f16-778d-4437-a1b9-2f67cd214cc0.jpg?1673148071
 value=4.183
 rarity=C
 type=Creature

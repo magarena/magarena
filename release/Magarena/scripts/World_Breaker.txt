@@ -1,5 +1,5 @@
 name=World Breaker
-image=https://magiccards.info/scans/en/ogw/126.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0020a124-ba76-4d40-84e9-9803268d9f16.jpg?1562895014
 image_updated=2016-02-29
 value=2.500
 rarity=M

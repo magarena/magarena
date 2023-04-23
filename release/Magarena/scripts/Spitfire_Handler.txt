@@ -1,5 +1,5 @@
 name=Spitfire Handler
-image=https://magiccards.info/scans/en/on/236.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efe72820-952f-4c53-9ee7-ea7ea54fc848.jpg?1595099913
 value=2.643
 rarity=U
 type=Creature

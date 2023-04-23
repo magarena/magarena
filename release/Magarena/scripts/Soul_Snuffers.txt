@@ -1,5 +1,5 @@
 name=Soul Snuffers
-image=https://magiccards.info/scans/en/eve/45.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3a35951-6bd9-4018-85cc-f8c39c366c7a.jpg?1562943983
 value=3.296
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Kudzu
-image=https://magiccards.info/scans/en/rv/112.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3bc363a-573e-4df4-9b1b-586bf4275f3c.jpg?1562941263
 value=3.714
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Ogre Resister
-image=https://magiccards.info/scans/en/mbs/72.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60b7407d-f677-403b-893c-361df456009a.jpg?1562611702
 value=2.648
 rarity=C
 type=Creature

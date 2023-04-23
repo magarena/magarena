@@ -1,5 +1,5 @@
 name=Clockwork Beetle
-image=https://magiccards.info/scans/en/mi/153.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc3c8db7-cf58-4571-b4ad-2b68d73495b2.jpg?1562156280
 value=3.044
 rarity=C
 type=Artifact,Creature

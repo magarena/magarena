@@ -1,5 +1,5 @@
 name=Ruination
-image=https://magiccards.info/scans/en/cmd/134.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/6330d925-96a8-47e1-855d-035ddc2af709.jpg?1592713625
 value=4.128
 rarity=R
 type=Sorcery

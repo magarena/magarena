@@ -1,5 +1,5 @@
 name=Pyre Charger
-image=https://magiccards.info/scans/en/shm/103.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/4998ac4f-b461-4ab8-9680-81c396df371a.jpg?1562378241
 image_updated=2017-01-03
 value=3.012
 rarity=U

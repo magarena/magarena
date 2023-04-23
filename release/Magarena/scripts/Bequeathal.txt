@@ -1,5 +1,5 @@
 name=Bequeathal
-image=https://magiccards.info/scans/en/ex/106.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20aae577-9683-4d9b-bfd5-52702b38d3a7.jpg?1562087361
 value=4.034
 rarity=C
 type=Enchantment

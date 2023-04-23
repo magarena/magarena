@@ -1,5 +1,5 @@
 name=Coral Trickster
-image=https://magiccards.info/scans/en/ts/54.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8eacbc6-362e-4257-b29f-78682f4130c1.jpg?1619393921
 image_updated=2016-11-28
 value=2.500
 rarity=C

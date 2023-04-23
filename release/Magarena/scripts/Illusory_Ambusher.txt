@@ -1,5 +1,5 @@
 name=Illusory Ambusher
-image=https://magiccards.info/scans/en/ima/58.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50a68135-b7e1-454e-8891-11f00cb79cd2.jpg?1591320259
 image_updated=2017-04-12
 value=2.500
 rarity=U

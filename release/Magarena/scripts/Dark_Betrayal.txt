@@ -1,5 +1,5 @@
 name=Dark Betrayal
-image=https://magiccards.info/scans/en/ths/83.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56adf4ea-1b1c-4737-8574-1848ca47d4f3.jpg?1562818301
 value=3.538
 rarity=U
 type=Instant

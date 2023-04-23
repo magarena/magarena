@@ -1,5 +1,5 @@
 name=Azorius Charm
-image=https://magiccards.info/scans/en/ima/192.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9740ceaf-4ef9-48dd-ab7d-cd5eb3be8cec.jpg?1562851619
 image_updated=2017-04-12
 value=4.012
 rarity=U

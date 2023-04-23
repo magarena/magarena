@@ -1,5 +1,5 @@
 name=Cephalid Snitch
-image=https://magiccards.info/scans/en/tr/30.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33d989b2-0198-4e5b-8aad-ee939191dd28.jpg?1562629178
 value=0.985
 rarity=C
 type=Creature

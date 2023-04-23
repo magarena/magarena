@@ -1,5 +1,5 @@
 name=Mardu Runemark
-image=https://magiccards.info/scans/en/frf/107.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/333df10b-7db4-4f8a-a754-e8a630b26cac.jpg?1562824057
 value=2.500
 rarity=C
 type=Enchantment

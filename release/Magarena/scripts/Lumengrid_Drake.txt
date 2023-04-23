@@ -1,5 +1,5 @@
 name=Lumengrid Drake
-image=https://magiccards.info/scans/en/som/36.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f44e9820-2209-40a2-bc4f-46b440c05e9d.jpg?1562825114
 value=2.180
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Nylea's Presence
-image=https://magiccards.info/scans/en/ths/169.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e68f1fd4-1a2f-405b-a592-6c4af6214eae.jpg?1562835556
 value=3.062
 rarity=C
 type=Enchantment

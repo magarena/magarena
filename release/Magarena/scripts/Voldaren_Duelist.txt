@@ -1,5 +1,5 @@
 name=Voldaren Duelist
-image=https://magiccards.info/scans/en/soi/191.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f88b3d06-1925-406e-a908-6960fc38162e.jpg?1576267388
 value=2.500
 rarity=C
 type=Creature

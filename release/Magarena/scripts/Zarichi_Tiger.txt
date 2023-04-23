@@ -1,5 +1,5 @@
 name=Zarichi Tiger
-image=https://magiccards.info/scans/en/gtc/28.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bf5efe4-d9a0-4704-b5ba-3213c946df37.jpg?1561832808
 value=2.275
 rarity=C
 type=Creature

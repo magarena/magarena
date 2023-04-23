@@ -1,5 +1,5 @@
 name=Skeletal Changeling
-image=https://magiccards.info/scans/en/lw/140.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f1d8e26-304b-4571-9b33-7713265d9bbf.jpg?1562352661
 value=2.797
 rarity=C
 type=Creature

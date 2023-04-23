@@ -1,5 +1,5 @@
 name=Rhonas the Indomitable
-image=https://magiccards.info/scans/en/akh/182.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50f23c47-278c-4188-8fb4-ae20a0c423c5.jpg?1543675944
 value=2.500
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Mindslicer
-image=https://magiccards.info/scans/en/9e/146.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1d5437b-158f-4a50-9397-bbde1c4a98d5.jpg?1562741220
 value=4.051
 rarity=R
 type=Creature

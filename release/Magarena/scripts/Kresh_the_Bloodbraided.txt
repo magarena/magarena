@@ -1,5 +1,5 @@
 name=Kresh the Bloodbraided
-image=https://magiccards.info/scans/en/ala/178.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b4b3c5f-32ea-4208-86d4-bb86e3b8d7d5.jpg?1673485121
 value=3.394
 rarity=M
 type=Legendary,Creature

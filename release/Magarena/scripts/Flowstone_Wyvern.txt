@@ -1,5 +1,5 @@
 name=Flowstone Wyvern
-image=https://magiccards.info/scans/en/tp/176.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2573e7d4-6c46-44fc-bc65-fab1113d498f.jpg?1562428654
 value=2.529
 rarity=R
 type=Creature

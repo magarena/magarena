@@ -1,5 +1,5 @@
 name=Rancid Earth
-image=https://magiccards.info/scans/en/tr/78.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23d07a96-85ba-4714-94a5-4a8125954f58.jpg?1562628959
 value=4.117
 rarity=C
 type=Sorcery

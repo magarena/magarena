@@ -1,5 +1,5 @@
 name=Relic Seeker
-image=https://magiccards.info/scans/en/ori/29.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae71b0a7-90c6-48cd-808c-c6c430dcba9c.jpg?1608911965
 image_updated=2015-11-05
 value=2.500
 rarity=R

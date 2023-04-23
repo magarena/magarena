@@ -1,5 +1,5 @@
 name=Phyrexian Arena
-image=https://magiccards.info/scans/en/cn2/144.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54f69d43-de01-46a8-b102-b47e23e0e947.jpg?1675957043
 image_updated=2017-08-29
 value=4.562
 rarity=R

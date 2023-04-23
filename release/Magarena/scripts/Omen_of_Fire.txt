@@ -1,5 +1,5 @@
 name=Omen of Fire
-image=https://magiccards.info/scans/en/ai/112.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c724b46-6e17-4bee-9bc6-e9fc5a379dd7.jpg?1562769675
 value=3.612
 rarity=R
 type=Instant

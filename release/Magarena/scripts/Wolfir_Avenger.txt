@@ -1,5 +1,5 @@
 name=Wolfir Avenger
-image=https://magiccards.info/scans/en/avr/205.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88cc00e5-9683-4ccc-a914-c422b76f6014.jpg?1592709508
 value=3.921
 rarity=U
 type=Creature

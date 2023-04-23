@@ -1,5 +1,5 @@
 name=Giant Adephage
-image=https://magiccards.info/scans/en/gtc/121.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8705797-6d1f-4cec-b748-74ba402e606c.jpg?1675985473
 value=3.624
 rarity=M
 type=Creature

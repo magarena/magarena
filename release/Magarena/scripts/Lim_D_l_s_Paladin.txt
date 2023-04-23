@@ -1,5 +1,5 @@
 name=Lim-Dûl's Paladin
-image=https://magiccards.info/scans/en/ai/191.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44be2d66-359e-4cc1-9670-119cb9c7d5f5.jpg?1562768261
 value=3.887
 rarity=U
 type=Creature

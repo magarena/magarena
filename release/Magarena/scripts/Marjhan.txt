@@ -1,5 +1,5 @@
 name=Marjhan
-image=https://magiccards.info/scans/en/hl/39.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/047ac2cb-3a96-4ff6-8b5a-251399974c47.jpg?1562867816
 value=3.024
 rarity=R
 type=Creature

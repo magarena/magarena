@@ -1,5 +1,5 @@
 name=Goblin Sky Raider
-image=https://magiccards.info/scans/en/10e/210.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebbd596b-56c2-475c-93e4-c72f9f29281b.jpg?1562557243
 image_updated=2016-12-04
 value=1.364
 rarity=C

@@ -1,5 +1,5 @@
 name=Run Wild
-image=https://magiccards.info/scans/en/on/279.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/939a7354-162c-489d-955d-4df17b930e1c.jpg?1562929803
 value=3.000
 rarity=U
 type=Instant

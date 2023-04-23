@@ -1,5 +1,5 @@
 name=Gangrenous Zombies
-image=https://magiccards.info/scans/en/cstd/26.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b49b583-ed1b-44ee-8f50-be5ae3527399.jpg?1562868582
 value=3.069
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Hollow Dogs
-image=https://magiccards.info/scans/en/9e/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/520fcafe-0c4a-49ca-8138-57a60506b0cd.jpg?1562735225
 value=1.845
 rarity=C
 type=Creature

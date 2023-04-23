@@ -1,5 +1,5 @@
 name=Ice Storm
-image=https://magiccards.info/scans/en/un/110.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68cc9670-6faf-41c3-b111-358c46d8812d.jpg?1559592366
 value=4.189
 removal=3
 rarity=U

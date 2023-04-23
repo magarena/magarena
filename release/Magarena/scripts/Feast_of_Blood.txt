@@ -1,5 +1,5 @@
 name=Feast of Blood
-image=https://magiccards.info/scans/en/zen/88.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a7dd5e2-b2a5-46ab-a67c-499451706505.jpg?1562610240
 value=3.862
 rarity=U
 type=Sorcery

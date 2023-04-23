@@ -1,5 +1,5 @@
 name=Welkin Guide
-image=https://magiccards.info/scans/en/ema/36.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee5c82bd-9946-4121-94f6-70442dab9f54.jpg?1580013860
 value=1.773
 rarity=C
 type=Creature

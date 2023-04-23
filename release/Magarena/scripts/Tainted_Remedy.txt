@@ -1,5 +1,5 @@
 name=Tainted Remedy
-image=https://magiccards.info/scans/en/ori/120.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbb8edd0-4573-4b52-a3ea-83ed19dbf58d.jpg?1562042093
 image_updated=2015-11-05
 value=2.500
 rarity=R

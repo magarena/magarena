@@ -1,5 +1,5 @@
 name=Shell Skulkin
-image=https://magiccards.info/scans/en/eve/173.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0953373-66e1-4af1-a4ec-cc990e20a1de.jpg?1562935740
 value=2.406
 rarity=C
 type=Artifact,Creature

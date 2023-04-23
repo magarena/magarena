@@ -1,5 +1,5 @@
 name=Sinister Concoction
-image=https://magiccards.info/scans/en/soi/135.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/815ca911-ccc1-4466-8d12-054b8d241992.jpg?1576384588
 value=2.500
 rarity=U
 type=Enchantment

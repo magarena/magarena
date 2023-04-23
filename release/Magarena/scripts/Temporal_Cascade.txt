@@ -1,5 +1,5 @@
 name=Temporal Cascade
-image=https://magiccards.info/scans/en/mi/52.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daf180c6-7ab6-4922-9f5e-73b4f2c9488a.jpg?1562159890
 value=2.929
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Boreal Druid
-image=https://magiccards.info/scans/en/cs/105.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/473d3633-6dc7-4026-a50e-3ea76b9e8c20.jpg?1593275370
 value=3.274
 rarity=C
 type=Snow,Creature

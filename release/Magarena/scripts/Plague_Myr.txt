@@ -1,5 +1,5 @@
 name=Plague Myr
-image=https://magiccards.info/scans/en/mbs/125.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cc8b864-c6db-4e4d-b9bc-ec84a4c3aa79.jpg?1562913810
 value=3.610
 rarity=U
 type=Artifact,Creature

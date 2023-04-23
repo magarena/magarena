@@ -1,5 +1,5 @@
 name=Blue Elemental Blast
-image=https://magiccards.info/scans/en/a25/43.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f51f88f-f662-4572-a371-9a77718ed079.jpg?1562434032
 image_updated=2018-04-27
 value=4.189
 rarity=U

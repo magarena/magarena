@@ -1,5 +1,5 @@
 name=Rend Spirit
-image=https://magiccards.info/scans/en/chk/141.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/100f0235-a7fe-4e23-b154-3d30668a29a7.jpg?1562757506
 value=1.796
 rarity=C
 type=Instant

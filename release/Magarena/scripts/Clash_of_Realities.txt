@@ -1,5 +1,5 @@
 name=Clash of Realities
-image=https://magiccards.info/scans/en/bok/97.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/064dcfb2-6088-49c9-89b2-88d63c9add53.jpg?1562875301
 value=2.828
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Goblin Artillery
-image=https://magiccards.info/scans/en/m10/138.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/674bd59d-9d6d-434d-974f-3aa1cbd770b5.jpg?1561982958
 value=2.806
 rarity=U
 type=Creature

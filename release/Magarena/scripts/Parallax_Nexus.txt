@@ -1,5 +1,5 @@
 name=Parallax Nexus
-image=https://magiccards.info/scans/en/ne/63.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/862c50c7-0840-46e0-a653-5b660fdfd4bd.jpg?1562630856
 value=4.000
 rarity=R
 type=Enchantment

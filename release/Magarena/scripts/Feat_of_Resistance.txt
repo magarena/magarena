@@ -1,5 +1,5 @@
 name=Feat of Resistance
-image=https://magiccards.info/scans/en/ktk/10.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73148b3b-73d3-4f57-8b67-1e91fbe112b9.jpg?1595640319
 value=4.000
 rarity=C
 type=Instant

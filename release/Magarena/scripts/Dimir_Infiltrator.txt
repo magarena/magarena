@@ -1,5 +1,5 @@
 name=Dimir Infiltrator
-image=https://magiccards.info/scans/en/pc2/86.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b94cc636-de31-41b2-9c35-0bdfcdd0c1c1.jpg?1562929536
 value=3.712
 rarity=C
 type=Creature

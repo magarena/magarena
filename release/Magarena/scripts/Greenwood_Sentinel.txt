@@ -1,5 +1,5 @@
 name=Greenwood Sentinel
-image=https://magiccards.info/scans/en/m19/187.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9a1a70d-c146-453e-84c4-71cae4e0afaa.jpg?1592517232
 value=2.500
 rarity=C
 type=Creature

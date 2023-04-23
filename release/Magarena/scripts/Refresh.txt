@@ -1,5 +1,5 @@
 name=Refresh
-image=https://magiccards.info/scans/en/od/264.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0084ba4e-98eb-4eb4-b23e-c5ab4d7d95cb.jpg?1562895117
 value=1.893
 rarity=C
 type=Instant

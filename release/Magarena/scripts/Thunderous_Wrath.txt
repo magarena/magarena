@@ -1,5 +1,5 @@
 name=Thunderous Wrath
-image=https://magiccards.info/scans/en/mm3/113.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/804458a2-5376-462d-a2cd-fa596750c0aa.jpg?1593813589
 image_updated=2017-08-08
 value=3.899
 rarity=C

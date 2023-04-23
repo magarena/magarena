@@ -1,5 +1,5 @@
 name=Backfire
-image=https://magiccards.info/scans/en/4e/62.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad34094d-a7ec-4b04-a288-4d4f1a07fc6b.jpg?1559603813
 value=3.558
 rarity=U
 type=Enchantment

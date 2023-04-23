@@ -1,5 +1,5 @@
 name=Voyager Staff
-image=https://magiccards.info/scans/en/rav/274.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44db92d7-2c55-4587-9a49-7cc305b8fca0.jpg?1561758943
 value=2.424
 rarity=U
 type=Artifact

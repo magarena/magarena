@@ -1,5 +1,5 @@
 name=Earthbrawn
-image=https://magiccards.info/scans/en/mt/119.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/478208df-9776-4354-b8a9-8da16ae1f50a.jpg?1562878273
 value=2.662
 rarity=C
 type=Instant

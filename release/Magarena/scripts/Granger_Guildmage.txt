@@ -1,5 +1,5 @@
 name=Granger Guildmage
-image=https://magiccards.info/scans/en/mr/118.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f495b27-3eed-4962-b69a-b86f9fc6a9a7.jpg?1626727981
 value=3.422
 rarity=C
 type=Creature

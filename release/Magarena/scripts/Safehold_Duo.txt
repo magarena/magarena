@@ -1,5 +1,5 @@
 name=Safehold Duo
-image=https://magiccards.info/scans/en/shm/238.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32b70339-9918-4f7e-9cd0-d4ce36b65997.jpg?1562828537
 value=2.574
 rarity=C
 type=Creature

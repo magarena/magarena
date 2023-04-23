@@ -1,5 +1,5 @@
 name=Dauthi Ghoul
-image=https://magiccards.info/scans/en/tp/15.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a70778e-8171-4d97-b86c-d4d92b7e7f06.jpg?1562052335
 value=3.897
 rarity=U
 type=Creature

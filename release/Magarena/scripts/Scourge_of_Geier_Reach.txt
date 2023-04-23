@@ -1,5 +1,5 @@
 name=Scourge of Geier Reach
-image=https://magiccards.info/scans/en/isd/162.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0c25932-96e7-4ae5-b544-8780f92d0be7.jpg?1562838468
 value=3.511
 rarity=U
 type=Creature

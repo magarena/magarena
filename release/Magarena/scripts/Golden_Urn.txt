@@ -1,5 +1,5 @@
 name=Golden Urn
-image=https://magiccards.info/scans/en/som/158.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec7abeca-da01-4962-b107-dd7a77469753.jpg?1562824705
 value=2.659
 rarity=C
 type=Artifact

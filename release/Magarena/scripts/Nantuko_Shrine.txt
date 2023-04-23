@@ -1,5 +1,5 @@
 name=Nantuko Shrine
-image=https://magiccards.info/scans/en/od/256.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b66bab3-ee6f-4f74-bbc1-8099c9c4904b.jpg?1562908769
 value=3.000
 rarity=R
 type=Enchantment

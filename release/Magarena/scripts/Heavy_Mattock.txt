@@ -1,5 +1,5 @@
 name=Heavy Mattock
-image=https://magiccards.info/scans/en/dka/150.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b09df01-0b3e-463e-bf00-0a9f1822261a.jpg?1562927762
 value=1.174
 rarity=C
 type=Artifact

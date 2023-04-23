@@ -1,5 +1,5 @@
 name=Inner Struggle
-image=https://magiccards.info/scans/en/soi/167.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b43be50a-8624-46f6-860a-39ffbfbdaa6a.jpg?1576384809
 value=2.500
 rarity=U
 type=Instant

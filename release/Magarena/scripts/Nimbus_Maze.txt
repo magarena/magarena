@@ -1,5 +1,5 @@
 name=Nimbus Maze
-image=https://magiccards.info/scans/en/ima/242.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/711dbdb1-7ec3-4fb4-8364-d34f5e143fd1.jpg?1631589989
 image_updated=2017-04-12
 value=4.216
 rarity=R

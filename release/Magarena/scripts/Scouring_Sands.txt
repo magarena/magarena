@@ -1,5 +1,5 @@
 name=Scouring Sands
-image=https://magiccards.info/scans/en/bng/110.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/273f25fc-9c9f-4b73-a28b-1461d8fcd443.jpg?1593092358
 value=3.212
 rarity=C
 type=Sorcery

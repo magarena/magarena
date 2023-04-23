@@ -1,5 +1,5 @@
 name=Jagged Poppet
-image=https://magiccards.info/scans/en/di/115.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e796a838-3599-4769-b90b-9bbbaad76fcb.jpg?1593273638
 value=3.400
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Gallantry
-image=https://magiccards.info/scans/en/od/23.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06f2ea77-9050-47cd-8a33-b6248780325b.jpg?1562428168
 value=3.196
 rarity=U
 type=Instant

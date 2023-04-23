@@ -1,5 +1,5 @@
 name=Cathedral Sanctifier
-image=https://magiccards.info/scans/en/avr/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de3d0a45-3b3a-4718-9cb8-ff0c2464d634.jpg?1592762516
 value=3.500
 rarity=C
 type=Creature

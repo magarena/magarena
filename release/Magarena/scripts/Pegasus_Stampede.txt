@@ -1,5 +1,5 @@
 name=Pegasus Stampede
-image=https://magiccards.info/scans/en/ex/14.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/7418d65f-1017-4f98-b039-db4228769454.jpg?1562430296
 value=2.851
 rarity=U
 type=Sorcery

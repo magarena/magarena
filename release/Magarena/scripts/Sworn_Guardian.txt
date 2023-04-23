@@ -1,5 +1,5 @@
 name=Sworn Guardian
-image=https://magiccards.info/scans/en/rix/58.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/6452ba94-6bb0-409c-99f7-71e6457c3f2a.jpg?1555040076
 value=2.500
 rarity=C
 type=Creature

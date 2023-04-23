@@ -1,5 +1,5 @@
 name=Yavimaya Elder
-image=https://magiccards.info/scans/en/cmd/179.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1612bf83-c800-41de-ab06-fb1732d5b5a6.jpg?1637631349
 value=4.000
 rarity=C
 type=Creature

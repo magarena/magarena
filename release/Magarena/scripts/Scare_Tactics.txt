@@ -1,5 +1,5 @@
 name=Scare Tactics
-image=https://magiccards.info/scans/en/ex/73.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a9d4e11-ce2e-445a-9536-756a6687d6d7.jpg?1562087843
 value=3.118
 rarity=C
 type=Instant

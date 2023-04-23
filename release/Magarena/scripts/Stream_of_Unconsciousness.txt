@@ -1,5 +1,5 @@
 name=Stream of Unconsciousness
-image=https://magiccards.info/scans/en/mt/52.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54ba05db-6b09-4b6a-b7fe-13c1e1058e25.jpg?1562878558
 value=2.948
 rarity=C
 type=Tribal,Instant

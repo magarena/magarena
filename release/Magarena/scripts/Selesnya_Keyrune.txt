@@ -1,5 +1,5 @@
 name=Selesnya Keyrune
-image=https://magiccards.info/scans/en/rtr/233.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1645eafd-cd17-463a-9d7e-42f5f7b5196f.jpg?1562783138
 value=3.348
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Skeletal Kathari
-image=https://magiccards.info/scans/en/ala/88.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3e7e593-e5b0-4348-b8e5-20173d41aa39.jpg?1562707355
 value=1.787
 rarity=C
 type=Creature

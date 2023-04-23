@@ -1,5 +1,5 @@
 name=Exultant Cultist
-image=https://magiccards.info/scans/en/emn/59.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2c22e0a-81c5-485f-81f0-3e85397108e0.jpg?1576384109
 image_updated=2016-09-05
 value=2.500
 rarity=C

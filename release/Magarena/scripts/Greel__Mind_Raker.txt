@@ -1,5 +1,5 @@
 name=Greel, Mind Raker
-image=https://magiccards.info/scans/en/pr/66.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9d1f317-efd1-4595-92e2-44815a2b8147.jpg?1562938756
 value=3.931
 rarity=R
 type=Legendary,Creature

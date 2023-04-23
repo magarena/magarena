@@ -1,5 +1,5 @@
 name=Dwarven Trader
-image=https://magiccards.info/scans/en/hl/92.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4db9aa47-f42b-41e9-948c-8b012c3809fb.jpg?1562587275
 value=1.974
 rarity=C
 type=Creature

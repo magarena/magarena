@@ -1,5 +1,5 @@
 name=Infested Roothold
-image=https://magiccards.info/scans/en/ds/76.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9fc7bf3-fa3f-450a-875e-05a022794181.jpg?1562640580
 value=2.855
 rarity=U
 type=Creature

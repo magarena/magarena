@@ -1,5 +1,5 @@
 name=Zombie Master
-image=https://magiccards.info/scans/en/6e/162.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c25eb8c9-4209-4fe4-8b02-be16d7d7bdf5.jpg?1562940909
 value=4.395
 rarity=R
 type=Creature

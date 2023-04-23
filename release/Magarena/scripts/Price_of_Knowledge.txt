@@ -1,5 +1,5 @@
 name=Price of Knowledge
-image=https://magiccards.info/scans/en/c13/89.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97f536be-7836-4c9a-befc-94590e602f26.jpg?1562927186
 value=3.776
 rarity=R
 type=Enchantment

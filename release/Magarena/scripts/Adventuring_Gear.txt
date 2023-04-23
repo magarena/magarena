@@ -1,5 +1,5 @@
 name=Adventuring Gear
-image=https://magiccards.info/scans/en/zen/195.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3aa395f2-656e-4bf3-bd9b-6240bd3e2774.jpg?1562611375
 value=3.471
 rarity=C
 type=Artifact

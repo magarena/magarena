@@ -1,5 +1,5 @@
 name=Exoskeletal Armor
-image=https://magiccards.info/scans/en/ju/114.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e111fcab-17f7-4a02-b4eb-606ba18812b3.jpg?1562632336
 value=3.806
 rarity=U
 type=Enchantment

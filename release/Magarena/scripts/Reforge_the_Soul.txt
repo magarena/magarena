@@ -1,5 +1,5 @@
 name=Reforge the Soul
-image=https://magiccards.info/scans/en/c16/132.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25ab0711-a06b-4c4c-a49e-d951915d918c.jpg?1562392204
 image_updated=2017-08-17
 value=4.100
 rarity=R

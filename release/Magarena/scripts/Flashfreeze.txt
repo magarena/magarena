@@ -1,5 +1,5 @@
 name=Flashfreeze
-image=https://magiccards.info/scans/en/mm2/45.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f97aaed2-5e10-4080-b373-31f67fbac1a9.jpg?1562269358
 value=3.523
 rarity=U
 type=Instant

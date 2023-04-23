@@ -1,5 +1,5 @@
 name=Sudden Strength
-image=https://magiccards.info/scans/en/ju/132.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fa71e27-cd3a-40af-82ed-1bd716106be5.jpg?1562920742
 value=1.597
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Howling Fury
-image=https://magiccards.info/scans/en/st/82.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7107b11-308e-4eb1-b16f-1fe92ecfe903.jpg?1562875054
 value=2.000
 rarity=U
 type=Sorcery

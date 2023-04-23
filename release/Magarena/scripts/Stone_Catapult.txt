@@ -1,5 +1,5 @@
 name=Stone Catapult
-image=https://magiccards.info/scans/en/p3k/84.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60303bfe-9158-4e25-a905-6522883ab671.jpg?1562256553
 value=3.000
 rarity=R
 type=Creature

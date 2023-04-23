@@ -1,5 +1,5 @@
 name=Regress
-image=https://magiccards.info/scans/en/roe/83.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7aba8e0-34e7-43ec-bce5-b6b472daa841.jpg?1562707794
 value=2.639
 rarity=C
 type=Instant

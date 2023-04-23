@@ -1,5 +1,5 @@
 name=Soratami Cloudskater
-image=https://magiccards.info/scans/en/chk/86.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e3d3024-bef2-4b50-ab84-8ae2a23cdf27.jpg?1562760570
 value=2.667
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Blightsteel Colossus
-image=https://magiccards.info/scans/en/mbs/99.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18adbda4-8d36-47cd-afbc-c785aaa8ed80.jpg?1599708735
 value=4.118
 rarity=M
 type=Artifact,Creature

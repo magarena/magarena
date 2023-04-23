@@ -1,5 +1,5 @@
 name=Benevolent Bodyguard
-image=https://magiccards.info/scans/en/ema/4.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/241e5c4e-0f0b-4a3f-91e0-87387a11e81e.jpg?1580013621
 value=3.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Faithless Looting
-image=https://magiccards.info/scans/en/ema/128.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84c3b38c-a6f7-49a2-8c47-d91b6be0a967.jpg?1673305287
 value=4.347
 rarity=C
 type=Sorcery

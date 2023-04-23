@@ -1,5 +1,5 @@
 name=Skyshroud Ranger
-image=https://magiccards.info/scans/en/10e/297.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a2fd9e5-1986-4998-b08c-80897b9b27e7.jpg?1562552196
 value=3.851
 rarity=C
 type=Creature

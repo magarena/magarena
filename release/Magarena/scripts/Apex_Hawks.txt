@@ -1,5 +1,5 @@
 name=Apex Hawks
-image=https://magiccards.info/scans/en/cns/67.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dcbd8bc-45c8-48a9-bfb6-a2146fd26061.jpg?1562864942
 value=3.125
 rarity=C
 type=Creature

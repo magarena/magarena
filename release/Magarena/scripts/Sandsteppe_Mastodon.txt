@@ -1,5 +1,5 @@
 name=Sandsteppe Mastodon
-image=https://magiccards.info/scans/en/frf/137.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76ae01fb-12fa-444d-9d49-bfe195c2a5a6.jpg?1562826620
 value=2.500
 rarity=R
 type=Creature

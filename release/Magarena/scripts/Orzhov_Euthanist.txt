@@ -1,5 +1,5 @@
 name=Orzhov Euthanist
-image=https://magiccards.info/scans/en/gp/54.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/104adc35-69fb-4b63-9b03-a71097e15652.jpg?1593272226
 value=3.103
 rarity=C
 type=Creature

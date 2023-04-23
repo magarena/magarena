@@ -1,5 +1,5 @@
 name=Ajani's Pridemate
-image=https://magiccards.info/scans/en/m19/5.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3656310-093d-4724-a399-7f7010843b1f.jpg?1557575878
 image_updated=2018-08-07
 value=3.667
 rarity=U

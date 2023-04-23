@@ -1,5 +1,5 @@
 name=Sea Legs
-image=https://magiccards.info/scans/en/rix/50.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae48b747-b9ea-4af1-84c5-3f5835d1ba1f.jpg?1555039994
 value=2.500
 rarity=C
 type=Enchantment

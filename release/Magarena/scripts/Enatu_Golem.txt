@@ -1,5 +1,5 @@
 name=Enatu Golem
-image=https://magiccards.info/scans/en/roe/217.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74b2e63d-61c6-46e4-9a6f-56653c49b2ea.jpg?1562705173
 value=1.963
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Carapace Forger
-image=https://magiccards.info/scans/en/som/114.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9948e4c-d583-4fde-a305-df926cf00199.jpg?1562824573
 value=3.651
 rarity=C
 type=Creature

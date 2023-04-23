@@ -1,5 +1,5 @@
 name=Scavenger Drake
-image=https://magiccards.info/scans/en/mm2/93.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c5249a7-de7f-445f-a24f-9c429f45c779.jpg?1562262098
 value=2.897
 rarity=U
 type=Creature

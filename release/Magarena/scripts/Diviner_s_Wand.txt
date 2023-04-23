@@ -1,5 +1,5 @@
 name=Diviner's Wand
-image=https://magiccards.info/scans/en/mt/142.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/277eed87-6b78-456d-91fb-774c72b3ae8c.jpg?1562877497
 value=3.067
 rarity=U
 type=Tribal,Artifact

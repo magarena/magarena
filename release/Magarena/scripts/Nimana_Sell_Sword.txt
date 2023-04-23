@@ -1,5 +1,5 @@
 name=Nimana Sell-Sword
-image=https://magiccards.info/scans/en/zen/106.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c504d12-a3ef-4588-a52d-734c20f6ac58.jpg?1562614247
 value=2.189
 rarity=C
 type=Creature

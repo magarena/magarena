@@ -1,5 +1,5 @@
 name=Saprazzan Raider
-image=https://magiccards.info/scans/en/mm/102.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62493f34-cea8-4d9f-8781-005947b69c9d.jpg?1562380891
 value=1.054
 rarity=C
 type=Creature

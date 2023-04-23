@@ -1,5 +1,5 @@
 name=Soul's Grace
-image=https://magiccards.info/scans/en/ala/28.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d2e8701-f2c3-4cc1-ac81-ba1987d80fec.jpg?1562702998
 value=2.468
 rarity=C
 type=Instant

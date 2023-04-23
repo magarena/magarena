@@ -1,5 +1,5 @@
 name=Juggernaut
-image=https://magiccards.info/scans/en/dom/222.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcc90cf8-9dd6-4dac-8cbb-21677d81e4d3.jpg?1601080762
 image_updated=2018-08-07
 value=3.643
 rarity=U

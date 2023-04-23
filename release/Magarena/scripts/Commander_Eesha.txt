@@ -1,5 +1,5 @@
 name=Commander Eesha
-image=https://magiccards.info/scans/en/ju/9.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3607f6a9-b8d2-4119-9f70-95dcedc0662d.jpg?1562629336
 value=4.122
 rarity=R
 type=Legendary,Creature

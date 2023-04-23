@@ -1,5 +1,5 @@
 name=Efficient Construction
-image=https://magiccards.info/scans/en/aer/33.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abfbe1d5-beb7-49b8-a504-f1cc47ee4731.jpg?1576381482
 value=2.500
 rarity=U
 type=Enchantment

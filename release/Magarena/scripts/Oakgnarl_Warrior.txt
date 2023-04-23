@@ -1,5 +1,5 @@
 name=Oakgnarl Warrior
-image=https://magiccards.info/scans/en/lw/232.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ee2eb87-d70e-49d7-b429-5df70a71c143.jpg?1562229690
 value=3.069
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Braingeyser
-image=https://magiccards.info/scans/en/rv/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23b33d16-dbaa-4742-9317-eac745f772ac.jpg?1562903464
 value=4.328
 rarity=R
 type=Sorcery

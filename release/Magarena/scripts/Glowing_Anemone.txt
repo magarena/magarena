@@ -1,5 +1,5 @@
 name=Glowing Anemone
-image=https://magiccards.info/scans/en/mm/81.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/708593e6-787b-4f76-a86c-1d52857493ea.jpg?1562381361
 value=2.984
 rarity=U
 type=Creature

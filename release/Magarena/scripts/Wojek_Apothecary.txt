@@ -1,5 +1,5 @@
 name=Wojek Apothecary
-image=https://magiccards.info/scans/en/rav/36.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef74fea5-2345-4ffd-8951-f420e17259e6.jpg?1598914001
 value=1.438
 rarity=U
 type=Creature

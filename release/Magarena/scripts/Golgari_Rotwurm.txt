@@ -1,5 +1,5 @@
 name=Golgari Rotwurm
-image=https://magiccards.info/scans/en/mm3/168.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d482d3d5-d4ad-4e0e-ab92-3246cf684d14.jpg?1593814397
 image_updated=2017-08-08
 value=3.417
 rarity=C

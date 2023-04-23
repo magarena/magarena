@@ -1,5 +1,5 @@
 name=Ulcerate
-image=https://magiccards.info/scans/en/ima/112.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f78ab496-a19f-4c70-a56c-09a512d40c87.jpg?1562855705
 image_updated=2017-04-12
 value=4.167
 rarity=U

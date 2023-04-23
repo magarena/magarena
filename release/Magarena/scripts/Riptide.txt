@@ -1,5 +1,5 @@
 name=Riptide
-image=https://magiccards.info/scans/en/dk/34.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0f11ae4-e30e-441d-bb64-439930d9997c.jpg?1562936809
 value=2.207
 rarity=C
 type=Instant

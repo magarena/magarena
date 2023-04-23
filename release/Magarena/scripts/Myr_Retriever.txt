@@ -1,5 +1,5 @@
 name=Myr Retriever
-image=https://magiccards.info/scans/en/c16/264.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f0149d4-0731-474a-a1c3-28c25e486c14.jpg?1599709634
 image_updated=2017-08-17
 value=2.500
 rarity=U

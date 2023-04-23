@@ -1,5 +1,5 @@
 name=Skulltap
-image=https://magiccards.info/scans/en/sc/73.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48a90779-008e-401f-9877-be0a935d2ccd.jpg?1562528514
 value=3.284
 rarity=C
 type=Sorcery

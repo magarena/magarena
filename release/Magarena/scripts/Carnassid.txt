@@ -1,5 +1,5 @@
 name=Carnassid
-image=https://magiccards.info/scans/en/sh/53.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46e614ca-3ef8-44bf-b3f8-bda66c82ed6f.jpg?1562429348
 value=3.077
 rarity=R
 type=Creature

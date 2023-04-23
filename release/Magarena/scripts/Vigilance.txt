@@ -1,5 +1,5 @@
 name=Vigilance
-image=https://magiccards.info/scans/en/chk/49.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d24dc353-abc9-430a-a7f5-5da3b38cd411.jpg?1562764665
 value=2.578
 rarity=C
 type=Enchantment

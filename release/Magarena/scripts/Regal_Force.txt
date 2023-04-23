@@ -1,5 +1,5 @@
 name=Regal Force
-image=https://magiccards.info/scans/en/ema/181.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c24fe81-a8b7-4b20-b5dd-1d1c91ff057f.jpg?1561759340
 value=4.291
 rarity=R
 type=Creature

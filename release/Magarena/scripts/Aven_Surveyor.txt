@@ -1,5 +1,5 @@
 name=Aven Surveyor
-image=https://magiccards.info/scans/en/frf/31.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4981d99-c33d-4451-8f6a-28fffb3dcd1c.jpg?1608909102
 value=2.500
 rarity=C
 type=Creature

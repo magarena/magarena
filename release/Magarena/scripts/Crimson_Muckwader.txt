@@ -1,5 +1,5 @@
 name=Crimson Muckwader
-image=https://magiccards.info/scans/en/m13/127.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0811f91-ed92-4a8e-badd-ae5054e7707d.jpg?1562557889
 value=3.404
 rarity=U
 type=Creature

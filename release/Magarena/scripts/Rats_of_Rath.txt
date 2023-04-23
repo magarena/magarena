@@ -1,5 +1,5 @@
 name=Rats of Rath
-image=https://magiccards.info/scans/en/tp/44.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/318c2cf5-6246-41e6-b391-7be39368ae65.jpg?1562428874
 value=3.000
 rarity=C
 type=Creature

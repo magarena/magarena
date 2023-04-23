@@ -1,5 +1,5 @@
 name=Nature's Lore
-image=https://magiccards.info/scans/en/st/136.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/543d1e79-cac6-455c-9fda-f13c849579d6.jpg?1674137220
 value=4.000
 rarity=C
 type=Sorcery

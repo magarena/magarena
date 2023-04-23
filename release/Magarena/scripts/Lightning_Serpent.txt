@@ -1,5 +1,5 @@
 name=Lightning Serpent
-image=https://magiccards.info/scans/en/cs/88.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6b4f4b6-51cd-4ae0-9585-82ad964853ba.jpg?1593275273
 value=3.933
 rarity=R
 type=Creature

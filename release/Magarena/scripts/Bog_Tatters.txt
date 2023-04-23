@@ -1,5 +1,5 @@
 name=Bog Tatters
-image=https://magiccards.info/scans/en/zen/84.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0830c00-02fa-4fc8-907c-19d4b7f9cd6e.jpg?1562614929
 value=2.120
 rarity=C
 type=Creature

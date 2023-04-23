@@ -1,5 +1,5 @@
 name=Seed Guardian
-image=https://magiccards.info/scans/en/ogw/143.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba4736b3-d6ce-4a16-bcb7-67780caeb78c.jpg?1562932499
 image_updated=2016-02-29
 value=2.500
 rarity=U

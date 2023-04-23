@@ -1,5 +1,5 @@
 name=Cruel Bargain
-image=https://magiccards.info/scans/en/po/8.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/679aefa9-d68b-496c-8a03-bc14d7c9228b.jpg?1562915927
 value=4.500
 rarity=R
 type=Sorcery

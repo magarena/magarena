@@ -1,5 +1,5 @@
 name=Cloudchaser Kestrel
-image=https://magiccards.info/scans/en/ts/10.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87003295-fd7c-489a-b724-b76eef187b57.jpg?1562923478
 value=3.682
 rarity=C
 type=Creature

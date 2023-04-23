@@ -1,5 +1,5 @@
 name=Temur Ascendancy
-image=https://magiccards.info/scans/en/ktk/207.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11746bf1-d813-4ade-8ce4-9935cebef856.jpg?1562782711
 value=3.750
 rarity=R
 type=Enchantment

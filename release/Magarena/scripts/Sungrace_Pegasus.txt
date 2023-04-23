@@ -1,5 +1,5 @@
 name=Sungrace Pegasus
-image=https://magiccards.info/scans/en/m15/38.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52d851b9-c290-4fcc-860d-a3250923b850.jpg?1562787029
 value=3.083
 rarity=C
 type=Creature

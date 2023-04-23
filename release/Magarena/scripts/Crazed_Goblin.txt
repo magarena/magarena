@@ -1,5 +1,5 @@
 name=Crazed Goblin
-image=https://magiccards.info/scans/en/ds/56.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15fdb57b-7547-4588-9780-15e3bea0bc4c.jpg?1562635553
 value=0.860
 rarity=C
 type=Creature

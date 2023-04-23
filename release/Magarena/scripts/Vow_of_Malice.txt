@@ -1,5 +1,5 @@
 name=Vow of Malice
-image=https://magiccards.info/scans/en/cmd/107.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c58a738c-3f39-4556-ae9a-90f240e3062b.jpg?1562275997
 image_updated=2016-02-29
 value=3.467
 rarity=U

@@ -1,5 +1,5 @@
 name=Blastfire Bolt
-image=https://magiccards.info/scans/en/m15/130.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34774f01-5976-4ed1-b0f4-71dc7a679999.jpg?1562784997
 value=2.071
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Pride of Lions
-image=https://magiccards.info/scans/en/7e/261.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b521602b-d44b-4c7a-8b28-de0a7cda434b.jpg?1562937684
 value=3.962
 rarity=U
 type=Creature

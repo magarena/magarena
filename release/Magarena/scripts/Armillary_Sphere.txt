@@ -1,5 +1,5 @@
 name=Armillary Sphere
-image=https://magiccards.info/scans/en/c17/203.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af3ae93e-6094-483d-b2c0-ae117ad01293.jpg?1608911310
 image_updated=2017-10-03
 value=3.250
 rarity=C

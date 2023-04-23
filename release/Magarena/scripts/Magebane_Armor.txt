@@ -1,5 +1,5 @@
 name=Magebane Armor
-image=https://magiccards.info/scans/en/m10/214.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95b0f586-a100-4817-93f8-1ee2df39ce03.jpg?1561989064
 value=3.994
 rarity=R
 type=Artifact

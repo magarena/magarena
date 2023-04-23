@@ -1,5 +1,5 @@
 name=Steam Spitter
-image=https://magiccards.info/scans/en/cs/124.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8aa585b7-cf7e-4f04-9490-1e6c53631647.jpg?1593275495
 value=1.903
 rarity=U
 type=Creature

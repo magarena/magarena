@@ -1,5 +1,5 @@
 name=Maggot Carrier
-image=https://magiccards.info/scans/en/8e/142.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd2ee72e-68d3-46b9-abc6-08532ce412b2.jpg?1562936226
 value=3.649
 rarity=C
 type=Creature

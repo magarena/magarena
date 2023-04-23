@@ -1,5 +1,5 @@
 name=Soul Shred
-image=https://magiccards.info/scans/en/po/35.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/036d6420-ac71-47b4-869f-64381dcf3348.jpg?1562895845
 value=2.308
 rarity=C
 type=Sorcery

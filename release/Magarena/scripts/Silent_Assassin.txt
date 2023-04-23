@@ -1,5 +1,5 @@
 name=Silent Assassin
-image=https://magiccards.info/scans/en/mm/160.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba34034a-1150-41c8-a340-543f529ae07f.jpg?1562382562
 value=3.066
 rarity=R
 type=Creature

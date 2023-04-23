@@ -1,5 +1,5 @@
 name=Butcher's Glee
-image=https://magiccards.info/scans/en/ima/84.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92a00c8d-9dac-4edc-b66c-ab3245d80969.jpg?1562851578
 image_updated=2017-04-12
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Goldnight Redeemer
-image=https://magiccards.info/scans/en/avr/23.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9396d218-35e4-4457-9f3a-18bae368b526.jpg?1592762657
 value=3.044
 rarity=U
 type=Creature

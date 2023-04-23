@@ -1,5 +1,5 @@
 name=Stinkdrinker Daredevil
-image=https://magiccards.info/scans/en/mma/132.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bca9593b-764f-4fb8-80bd-91cdebc83356.jpg?1562275973
 image_updated=2016-02-29
 value=3.857
 rarity=C

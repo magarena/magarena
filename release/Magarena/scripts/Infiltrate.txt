@@ -1,5 +1,5 @@
 name=Infiltrate
-image=https://magiccards.info/scans/en/ne/33.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c549b817-8ad6-44d0-9761-5e4ff9e62c71.jpg?1562631912
 value=3.216
 rarity=C
 type=Instant

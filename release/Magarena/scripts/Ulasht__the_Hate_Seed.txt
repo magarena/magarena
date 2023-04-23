@@ -1,5 +1,5 @@
 name=Ulasht, the Hate Seed
-image=https://magiccards.info/scans/en/gp/136.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/002fe870-eae5-42cc-a44c-32906f60719e.jpg?1673149236
 value=3.929
 rarity=R
 type=Legendary,Creature

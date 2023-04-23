@@ -1,5 +1,5 @@
 name=Phyrexian Swarmlord
-image=https://magiccards.info/scans/en/nph/119.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a91dea7-9792-4714-82b0-ba2c06cef304.jpg?1562879466
 value=3.676
 rarity=R
 type=Creature

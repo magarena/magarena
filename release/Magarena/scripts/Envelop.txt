@@ -1,5 +1,5 @@
 name=Envelop
-image=https://magiccards.info/scans/en/ju/39.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7ed250e-12d0-4ebc-9410-5711e71c6d1f.jpg?1562632433
 value=3.068
 rarity=C
 type=Instant

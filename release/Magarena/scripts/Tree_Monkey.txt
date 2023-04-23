@@ -1,5 +1,5 @@
 name=Tree Monkey
-image=https://magiccards.info/scans/en/9e/275.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/4724d00a-b93b-43fd-9c86-56f127db450b.jpg?1562734569
 value=2.868
 rarity=C
 type=Creature

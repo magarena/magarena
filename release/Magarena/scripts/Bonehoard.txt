@@ -1,5 +1,5 @@
 name=Bonehoard
-image=https://magiccards.info/scans/en/c16/245.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57c0258f-f464-4f52-b234-ba44a76d932a.jpg?1651656250
 image_updated=2017-08-17
 value=3.812
 rarity=R

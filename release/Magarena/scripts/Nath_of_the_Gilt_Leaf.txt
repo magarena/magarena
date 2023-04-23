@@ -1,5 +1,5 @@
 name=Nath of the Gilt-Leaf
-image=https://magiccards.info/scans/en/c16/213.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/294ccc67-6fc9-411b-9100-ae6a9b7fadfc.jpg?1562392895
 image_updated=2017-08-17
 value=4.009
 rarity=R

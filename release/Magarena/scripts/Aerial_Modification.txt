@@ -1,5 +1,5 @@
 name=Aerial Modification
-image=https://magiccards.info/scans/en/aer/1.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b89cab47-25fb-49ea-bb43-90a0089b6b20.jpg?1576381258
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Orcish Veteran
-image=https://magiccards.info/scans/en/fe/129.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5684b92d-a545-4457-934c-b5d957150cfd.jpg?1562868570
 value=2.417
 rarity=C
 type=Creature

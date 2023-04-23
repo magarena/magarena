@@ -1,5 +1,5 @@
 name=Elspeth, Sun's Champion
-image=https://magiccards.info/scans/en/ths/9.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/047f2cc9-3073-41f5-81c3-7b6b28b374d0.jpg?1682208388
 image_updated=2016-12-02
 value=3.891
 rarity=M

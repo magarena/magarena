@@ -1,5 +1,5 @@
 name=Gerrard's Irregulars
-image=https://magiccards.info/scans/en/mm/192.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a88f507-3d78-4f7f-a91f-8489ad9250f2.jpg?1562381846
 value=2.984
 rarity=C
 type=Creature

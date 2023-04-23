@@ -1,5 +1,5 @@
 name=Quiet Disrepair
-image=https://magiccards.info/scans/en/pc2/75.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c74cf3eb-66be-455c-8e5e-8debc7f9f6fd.jpg?1562932285
 value=2.750
 rarity=C
 type=Enchantment

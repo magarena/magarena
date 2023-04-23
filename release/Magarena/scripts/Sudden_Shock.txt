@@ -1,5 +1,5 @@
 name=Sudden Shock
-image=https://magiccards.info/scans/en/mma/133.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b659a3b-0f66-40f2-8e2e-f13b694e270e.jpg?1619397715
 value=4.100
 rarity=U
 type=Instant

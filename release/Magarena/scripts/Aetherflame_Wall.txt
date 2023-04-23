@@ -1,5 +1,5 @@
 name=Aetherflame Wall
-image=https://magiccards.info/scans/en/ts/142.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93b14f08-dd93-4a9f-a616-8f8d0b26b966.jpg?1562926239
 image_updated=2016-09-27
 value=3.358
 rarity=C

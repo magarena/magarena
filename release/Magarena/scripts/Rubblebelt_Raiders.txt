@@ -1,5 +1,5 @@
 name=Rubblebelt Raiders
-image=https://magiccards.info/scans/en/gtc/224.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5f0d394-f929-40e7-adb5-ca813b312dde.jpg?1592761856
 value=3.920
 rarity=R
 type=Creature

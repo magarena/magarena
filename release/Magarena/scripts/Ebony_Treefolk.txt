@@ -1,5 +1,5 @@
 name=Ebony Treefolk
-image=https://magiccards.info/scans/en/ap/97.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b85dadb-351f-4975-a2c3-febf5e80bc85.jpg?1562905217
 value=3.856
 rarity=U
 type=Creature

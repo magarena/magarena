@@ -1,5 +1,5 @@
 name=Rabid Bloodsucker
-image=https://magiccards.info/scans/en/ori/113.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/7335da62-3b59-4c73-a19e-b1733393ed88.jpg?1562025720
 image_updated=2015-11-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Turntimber Grove
-image=https://magiccards.info/scans/en/zen/227.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0c5c07b-df81-4941-ae7e-2d38e317059d.jpg?1593095602
 value=3.089
 rarity=C
 type=Land

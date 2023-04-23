@@ -1,5 +1,5 @@
 name=Merchant Scroll
-image=https://magiccards.info/scans/en/8e/91.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb5385d2-ca5d-4fb9-934b-b7cc8b38ac89.jpg?1562932678
 value=4.341
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Helldozer
-image=https://magiccards.info/scans/en/rav/88.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dd086af-ee93-4124-a023-f3fc99457dc5.jpg?1562842149
 image_updated=2016-12-13
 value=4.219
 rarity=R

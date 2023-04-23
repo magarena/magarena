@@ -1,5 +1,5 @@
 name=Commune with the Gods
-image=https://magiccards.info/scans/en/ema/162.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67d95f6f-3ff0-483d-b98f-ccb4fb5715f4.jpg?1580014753
 value=3.183
 rarity=C
 type=Sorcery

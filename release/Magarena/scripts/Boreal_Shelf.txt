@@ -1,5 +1,5 @@
 name=Boreal Shelf
-image=https://magiccards.info/scans/en/cs/144.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f2f8396-72ab-4387-9276-987836427107.jpg?1593860370
 value=4.062
 rarity=U
 type=Snow,Land

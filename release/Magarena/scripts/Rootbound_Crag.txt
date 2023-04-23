@@ -1,5 +1,5 @@
 name=Rootbound Crag
-image=https://magiccards.info/scans/en/xln/256.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6f59e19-9ac1-4f86-893e-5b3364122fc6.jpg?1562562757
 image_updated=2017-10-30
 value=3.858
 rarity=R

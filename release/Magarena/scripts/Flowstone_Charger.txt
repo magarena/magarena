@@ -1,5 +1,5 @@
 name=Flowstone Charger
-image=https://magiccards.info/scans/en/ap/99.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c57abdab-d99c-418c-818d-b06a8722d733.jpg?1562941643
 value=2.969
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Archon of Redemption
-image=https://magiccards.info/scans/en/wwk/3.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9e8eb41-3800-4553-843b-ec27a44e8d55.jpg?1600716710
 value=3.521
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Zephyr Falcon
-image=https://magiccards.info/scans/en/5e/137.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d11923e-98c6-4041-b115-f4847fb71149.jpg?1562591371
 value=3.286
 rarity=C
 type=Creature

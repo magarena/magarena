@@ -1,5 +1,5 @@
 name=Preemptive Strike
-image=https://magiccards.info/scans/en/p3k/50.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2314bf1-b22d-48c2-860f-e1081f56296b.jpg?1562257530
 value=3.854
 rarity=C
 type=Instant

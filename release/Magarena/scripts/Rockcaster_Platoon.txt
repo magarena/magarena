@@ -1,5 +1,5 @@
 name=Rockcaster Platoon
-image=https://magiccards.info/scans/en/ala/23.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4ab62812-acc5-4b4b-97d3-106e399d69da.jpg?1562703576
 value=2.560
 rarity=U
 type=Creature

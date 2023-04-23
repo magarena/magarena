@@ -1,5 +1,5 @@
 name=Nacatl Outlander
-image=https://magiccards.info/scans/en/cfx/119.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12b5b694-46c8-4cb0-ab6b-4bc67c04cc7f.jpg?1562799554
 value=2.821
 rarity=C
 type=Creature

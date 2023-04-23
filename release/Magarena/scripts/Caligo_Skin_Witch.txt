@@ -1,5 +1,5 @@
 name=Caligo Skin-Witch
-image=https://magiccards.info/scans/en/dom/80.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e23ee25-2005-4e81-a807-f52c0dbfb192.jpg?1562733375
 value=2.500
 rarity=C
 type=Creature

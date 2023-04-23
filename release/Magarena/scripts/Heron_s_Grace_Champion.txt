@@ -1,5 +1,5 @@
 name=Heron's Grace Champion
-image=https://magiccards.info/scans/en/emn/185.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7fdd5a8-226a-4fe7-8b7f-41c5a06abaad.jpg?1637631497
 image_updated=2016-09-05
 value=2.500
 rarity=R

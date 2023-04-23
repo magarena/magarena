@@ -1,5 +1,5 @@
 name=Inundate
-image=https://magiccards.info/scans/en/eve/25.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5047c92-2885-4a7b-b51f-f3e093dca5ad.jpg?1562940048
 value=3.330
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Maniacal Rage
-image=https://magiccards.info/scans/en/cfx/68.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29a51b9b-881f-4f02-b49e-68fcca234161.jpg?1592517004
 value=2.700
 rarity=C
 type=Enchantment

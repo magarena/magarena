@@ -1,5 +1,5 @@
 name=Angelfire Crusader
-image=https://magiccards.info/scans/en/ap/1.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7af8350-9a51-437c-a55e-19f3e07acfa9.jpg?1562934732
 value=1.975
 rarity=C
 type=Creature

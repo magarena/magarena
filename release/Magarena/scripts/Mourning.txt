@@ -1,5 +1,5 @@
 name=Mourning
-image=https://magiccards.info/scans/en/in/111.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4649d881-709f-4ed0-91de-744d232a82f5.jpg?1562909240
 value=2.148
 rarity=C
 type=Enchantment

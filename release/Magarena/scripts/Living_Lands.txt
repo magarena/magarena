@@ -1,5 +1,5 @@
 name=Living Lands
-image=https://magiccards.info/scans/en/6e/238.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/797577e4-9635-4544-a024-88c8deb9588a.jpg?1562923651
 value=3.611
 rarity=R
 type=Enchantment

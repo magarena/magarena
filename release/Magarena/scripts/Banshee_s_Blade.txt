@@ -1,5 +1,5 @@
 name=Banshee's Blade
-image=https://magiccards.info/scans/en/mi/144.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b77baad4-2bd6-492a-86ca-8e0088b751d2.jpg?1562155737
 value=3.282
 rarity=U
 type=Artifact

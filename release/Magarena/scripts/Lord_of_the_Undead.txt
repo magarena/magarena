@@ -1,5 +1,5 @@
 name=Lord of the Undead
-image=https://magiccards.info/scans/en/10e/155.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/792e773b-5feb-407f-a162-f35d6e693cca.jpg?1562550141
 value=4.328
 rarity=R
 type=Creature

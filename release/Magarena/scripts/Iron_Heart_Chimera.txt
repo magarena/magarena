@@ -1,5 +1,5 @@
 name=Iron-Heart Chimera
-image=https://magiccards.info/scans/en/vi/146.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5899a575-a97d-4850-b55c-22ad6900ba20.jpg?1562277668
 value=3.391
 rarity=U
 type=Artifact,Creature

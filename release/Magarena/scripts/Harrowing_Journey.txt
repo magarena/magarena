@@ -1,5 +1,5 @@
 name=Harrowing Journey
-image=https://magiccards.info/scans/en/dka/67.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cf96a6c-8481-4954-b149-7153b80480be.jpg?1562932063
 value=2.554
 rarity=U
 type=Sorcery

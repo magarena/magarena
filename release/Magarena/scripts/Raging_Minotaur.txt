@@ -1,5 +1,5 @@
 name=Raging Minotaur
-image=https://magiccards.info/scans/en/po/152.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c52f5e44-4ab6-43d7-aecb-5b95f84d5475.jpg?1562936696
 value=3.560
 rarity=C
 type=Creature

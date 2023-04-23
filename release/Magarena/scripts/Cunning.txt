@@ -1,5 +1,5 @@
 name=Cunning
-image=https://magiccards.info/scans/en/ex/28.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52f36bb8-5a97-4596-8ca3-707665770c76.jpg?1562087835
 value=2.095
 rarity=C
 type=Enchantment

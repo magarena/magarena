@@ -1,5 +1,5 @@
 name=Wrexial, the Risen Deep
-image=https://magiccards.info/scans/en/cmd/239.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c96b11ad-67fd-4a2b-89ea-e9df9c50731e.jpg?1673485259
 value=3.855
 rarity=M
 type=Legendary,Creature

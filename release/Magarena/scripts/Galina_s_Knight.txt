@@ -1,5 +1,5 @@
 name=Galina's Knight
-image=https://magiccards.info/scans/en/in/248.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11b492d6-5e28-4f4b-942c-080d03cb0e92.jpg?1562898560
 value=3.862
 rarity=C
 type=Creature

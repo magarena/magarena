@@ -1,5 +1,5 @@
 name=Xathrid Slyblade
-image=https://magiccards.info/scans/en/m15/124.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/909a9252-1e97-4e85-9648-66050f301f8a.jpg?1562790881
 value=3.083
 rarity=U
 type=Creature

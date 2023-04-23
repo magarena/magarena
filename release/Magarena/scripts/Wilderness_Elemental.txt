@@ -1,5 +1,5 @@
 name=Wilderness Elemental
-image=https://magiccards.info/scans/en/c16/230.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25d25e02-a266-4fad-bc8c-aa45487fab90.jpg?1562392217
 image_updated=2017-08-17
 value=3.489
 rarity=U

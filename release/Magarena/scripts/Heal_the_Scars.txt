@@ -1,5 +1,5 @@
 name=Heal the Scars
-image=https://magiccards.info/scans/en/lw/217.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b802a7fe-9c8b-4bc3-95d8-4a5dafcf2c75.jpg?1562364644
 value=1.875
 rarity=C
 type=Instant

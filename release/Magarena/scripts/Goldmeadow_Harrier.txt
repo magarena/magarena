@@ -1,5 +1,5 @@
 name=Goldmeadow Harrier
-image=https://magiccards.info/scans/en/lw/17.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5fc15af-532d-4124-9dd4-2584c00c89da.jpg?1562270477
 image_updated=2016-12-04
 value=4.047
 rarity=C

@@ -1,5 +1,5 @@
 name=Aether Snap
-image=https://magiccards.info/scans/en/c14/133.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd9cade1-b077-4fb0-b55a-01b9916647e7.jpg?1673484092
 image_updated=2016-09-27
 value=2.500
 rarity=R

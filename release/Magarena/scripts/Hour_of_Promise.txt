@@ -1,5 +1,5 @@
 name=Hour of Promise
-image=https://magiccards.info/scans/en/hou/120.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5ee374f-31dc-4b2c-beba-431d5b1126d0.jpg?1562814095
 value=2.500
 rarity=R
 type=Sorcery

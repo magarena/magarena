@@ -1,5 +1,5 @@
 name=Skulking Fugitive
-image=https://magiccards.info/scans/en/mm/161.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/175ed19c-9635-45ee-bb2c-32b96270a246.jpg?1562379428
 value=2.692
 rarity=C
 type=Creature

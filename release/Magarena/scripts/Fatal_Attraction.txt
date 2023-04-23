@@ -1,5 +1,5 @@
 name=Fatal Attraction
-image=https://magiccards.info/scans/en/fut/98.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/930ff9ec-6b97-445e-b274-7c8c5fe0c0fc.jpg?1562924684
 value=2.776
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Silence
-image=https://magiccards.info/scans/en/m11/30.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c2b13b1-31f0-4676-88a7-53f3a190e9a2.jpg?1562826686
 value=4.250
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Sudden Disappearance
-image=https://magiccards.info/scans/en/dka/23.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a51b792c-b987-49b6-9cc6-80d613c7d065.jpg?1562934013
 value=3.575
 rarity=R
 type=Sorcery

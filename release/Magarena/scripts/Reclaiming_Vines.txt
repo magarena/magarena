@@ -1,5 +1,5 @@
 name=Reclaiming Vines
-image=https://magiccards.info/scans/en/bfz/185.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18be4c1a-58d7-409e-b7e0-aadb5ccf814d.jpg?1562900909
 image_updated=2015-11-08
 value=2.500
 rarity=C

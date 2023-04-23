@@ -1,5 +1,5 @@
 name=Lightning Crafter
-image=https://magiccards.info/scans/en/mt/93.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f68f5ac9-0345-4052-9f93-d9f7afc66932.jpg?1562882474
 value=3.767
 removal=2
 rarity=R

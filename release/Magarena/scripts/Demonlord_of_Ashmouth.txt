@@ -1,5 +1,5 @@
 name=Demonlord of Ashmouth
-image=https://magiccards.info/scans/en/avr/96.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/785da9a3-09af-45aa-bc04-4ab69cfb2ba4.jpg?1592708827
 value=3.815
 rarity=R
 type=Creature

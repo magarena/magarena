@@ -1,5 +1,5 @@
 name=Duty-Bound Dead
-image=https://magiccards.info/scans/en/m13/92.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5150aa90-1284-4261-8625-2528139f0015.jpg?1562553760
 value=3.905
 rarity=C
 type=Creature

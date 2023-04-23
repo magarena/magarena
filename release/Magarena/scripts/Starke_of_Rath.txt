@@ -1,5 +1,5 @@
 name=Starke of Rath
-image=https://magiccards.info/scans/en/tp/205.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0f063fc-f1c4-4f3c-a72b-5f446d0c6381.jpg?1562430802
 value=3.744
 rarity=R
 type=Legendary,Creature

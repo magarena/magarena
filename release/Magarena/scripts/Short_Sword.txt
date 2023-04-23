@@ -1,5 +1,5 @@
 name=Short Sword
-image=https://magiccards.info/scans/en/dom/229.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/973c166e-3e93-4ed5-b4c5-84dc158a8e4f.jpg?1594737540
 value=2.500
 rarity=C
 type=Artifact

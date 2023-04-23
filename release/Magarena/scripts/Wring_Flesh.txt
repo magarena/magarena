@@ -1,5 +1,5 @@
 name=Wring Flesh
-image=https://magiccards.info/scans/en/m12/118.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6b77692-08aa-40b6-b21b-c29a2dc87709.jpg?1562835668
 value=3.104
 removal=2
 rarity=C

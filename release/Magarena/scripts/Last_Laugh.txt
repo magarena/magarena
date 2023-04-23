@@ -1,5 +1,5 @@
 name=Last Laugh
-image=https://magiccards.info/scans/en/tr/68.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4c05f2a-b844-42b3-af91-65694b4211dd.jpg?1562632208
 value=3.788
 rarity=R
 type=Enchantment

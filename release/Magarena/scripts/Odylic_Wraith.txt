@@ -1,5 +1,5 @@
 name=Odylic Wraith
-image=https://magiccards.info/scans/en/wl/19.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a3b7cd1-051c-43a8-b5f0-72a9d704efbc.jpg?1562800276
 value=2.862
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Spring Cleaning
-image=https://magiccards.info/scans/en/lw/236.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc20ef13-e97f-454c-8295-7bb8a7c4e4be.jpg?1562370668
 value=3.179
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Demystify
-image=https://magiccards.info/scans/en/xln/8.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3979b88-ac58-420a-8c03-37ea5d93d0f1.jpg?1562565654
 image_updated=2017-10-30
 value=2.969
 removal=1

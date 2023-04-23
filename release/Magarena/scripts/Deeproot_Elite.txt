@@ -1,5 +1,5 @@
 name=Deeproot Elite
-image=https://magiccards.info/scans/en/rix/127.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8b738ce-a609-448f-97ea-bbf90ba833d7.jpg?1555040617
 value=2.500
 rarity=R
 type=Creature

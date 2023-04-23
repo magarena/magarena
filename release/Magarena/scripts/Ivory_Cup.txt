@@ -1,5 +1,5 @@
 name=Ivory Cup
-image=https://magiccards.info/scans/en/8e/305.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc4cd379-caba-485c-8c0f-e59804c387c6.jpg?1562945914
 value=1.358
 rarity=U
 type=Artifact

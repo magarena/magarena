@@ -1,5 +1,5 @@
 name=New Benalia
-image=https://magiccards.info/scans/en/fut/172.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a11a0f9c-2253-468f-a9c0-42e1e38aad96.jpg?1592711616
 image_updated=2016-02-29
 value=2.708
 rarity=U

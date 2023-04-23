@@ -1,5 +1,5 @@
 name=Tribal Golem
-image=https://magiccards.info/scans/en/on/311.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e208be1-8b24-4048-90b2-6389f08043d1.jpg?1562920935
 value=3.635
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Mystical Teachings
-image=https://magiccards.info/scans/en/mm3/44.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7cb51cd-8418-43ee-bf4f-6b959cc5b131.jpg?1619394406
 image_updated=2017-08-08
 value=4.269
 rarity=C

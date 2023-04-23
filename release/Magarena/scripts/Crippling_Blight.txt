@@ -1,5 +1,5 @@
 name=Crippling Blight
-image=https://magiccards.info/scans/en/m15/92.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f9c1ba3-8b7c-413b-865d-0ca4b2f55903.jpg?1562785713
 value=2.333
 rarity=C
 type=Enchantment

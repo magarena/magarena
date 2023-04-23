@@ -1,5 +1,5 @@
 name=Crossroads Consecrator
-image=https://magiccards.info/scans/en/emn/154.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1a83854-dc45-4c26-aca0-67f372236383.jpg?1576384762
 image_updated=2016-09-05
 value=2.500
 rarity=C

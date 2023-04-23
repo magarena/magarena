@@ -1,5 +1,5 @@
 name=Cairn Wanderer
-image=https://magiccards.info/scans/en/lw/105.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f84b53c7-10db-40f6-a1d4-0baab88355e5.jpg?1591320408
 value=4.078
 rarity=R
 type=Creature

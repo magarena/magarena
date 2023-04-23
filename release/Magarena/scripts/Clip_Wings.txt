@@ -1,5 +1,5 @@
 name=Clip Wings
-image=https://magiccards.info/scans/en/soi/197.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2835993-6c71-4a63-bad5-cb25aedc4a15.jpg?1576385016
 value=2.500
 rarity=C
 type=Instant

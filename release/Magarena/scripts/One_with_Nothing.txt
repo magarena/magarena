@@ -1,5 +1,5 @@
 name=One with Nothing
-image=https://magiccards.info/scans/en/sok/84.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a5841fa-4f30-495a-b840-3ef5a2af8fad.jpg?1562494149
 value=2.862
 rarity=R
 type=Instant

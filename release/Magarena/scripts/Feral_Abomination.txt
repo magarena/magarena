@@ -1,5 +1,5 @@
 name=Feral Abomination
-image=https://magiccards.info/scans/en/dom/92.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2890cb5-7899-42f4-9686-a8b5ac796c23.jpg?1592516686
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wirewood Pride
-image=https://magiccards.info/scans/en/on/303.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a559e844-06c9-4953-bc2c-a58e4170fe47.jpg?1562934080
 value=3.411
 rarity=C
 type=Instant

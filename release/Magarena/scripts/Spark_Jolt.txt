@@ -1,5 +1,5 @@
 name=Spark Jolt
-image=https://magiccards.info/scans/en/ths/140.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ee479c2-a115-450b-bc2e-b03d23b82f2d.jpg?1562819617
 value=3.610
 removal=1
 rarity=C

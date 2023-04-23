@@ -1,5 +1,5 @@
 name=Upheaval
-image=https://magiccards.info/scans/en/od/113.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/befe74b1-c487-42bb-a1a1-4d13f3a86ff7.jpg?1626100271
 value=2.500
 rarity=R
 type=Sorcery

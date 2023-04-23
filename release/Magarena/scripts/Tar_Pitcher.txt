@@ -1,5 +1,5 @@
 name=Tar Pitcher
-image=https://magiccards.info/scans/en/mma/134.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30f40e38-2fcc-4927-9ce2-2080fa2d832c.jpg?1562904956
 value=3.455
 rarity=U
 type=Creature

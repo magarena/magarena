@@ -1,5 +1,5 @@
 name=Roofstalker Wight
-image=https://magiccards.info/scans/en/rav/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f43fb78-497b-4a05-84cd-d2aca4b2db1b.jpg?1598915124
 value=2.273
 rarity=C
 type=Creature

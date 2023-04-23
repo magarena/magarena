@@ -1,5 +1,5 @@
 name=Triton Shorethief
-image=https://magiccards.info/scans/en/ths/70.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8f0fe22-dc89-4ad8-b5f6-6d91b61f1385.jpg?1593860951
 value=2.915
 rarity=C
 type=Creature

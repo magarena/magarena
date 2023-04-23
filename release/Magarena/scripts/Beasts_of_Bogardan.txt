@@ -1,5 +1,5 @@
 name=Beasts of Bogardan
-image=https://magiccards.info/scans/en/lg/133.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cec0fe2c-e7e6-42d1-8128-58d70a7f1177.jpg?1562936579
 image_updated=2016-11-20
 value=2.440
 rarity=U

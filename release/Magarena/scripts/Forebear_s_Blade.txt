@@ -1,5 +1,5 @@
 name=Forebear's Blade
-image=https://magiccards.info/scans/en/dom/214.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52212fd5-551e-4bc1-9dac-6361e27c27ad.jpg?1681500928
 value=2.500
 rarity=R
 type=Artifact

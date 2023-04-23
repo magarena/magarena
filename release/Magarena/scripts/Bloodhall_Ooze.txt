@@ -1,5 +1,5 @@
 name=Bloodhall Ooze
-image=https://magiccards.info/scans/en/cfx/59.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8b7208e-aa64-43fa-b7f8-8d40d7005358.jpg?1562804415
 value=3.739
 rarity=R
 type=Creature

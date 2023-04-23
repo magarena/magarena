@@ -1,5 +1,5 @@
 name=Bogardan Lancer
-image=https://magiccards.info/scans/en/fut/95.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44814464-e5b6-46c6-ac2e-d7234add43f4.jpg?1562908837
 value=3.176
 rarity=C
 type=Creature

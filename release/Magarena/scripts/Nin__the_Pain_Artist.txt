@@ -1,5 +1,5 @@
 name=Nin, the Pain Artist
-image=https://magiccards.info/scans/en/c17/183.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/005ad65e-cf0b-48e9-a314-2ebba5a1400c.jpg?1562598065
 image_updated=2017-10-03
 value=3.944
 rarity=R

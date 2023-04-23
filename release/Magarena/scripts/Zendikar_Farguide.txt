@@ -1,5 +1,5 @@
 name=Zendikar Farguide
-image=https://magiccards.info/scans/en/zen/194.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3aeb7fb-8618-4595-84b4-20881b824b3e.jpg?1562615681
 value=1.321
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sturdy Hatchling
-image=https://magiccards.info/scans/en/eve/163.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e41330e2-c6e8-47af-831d-b2d2bd1d06a3.jpg?1562943181
 value=3.214
 rarity=U
 type=Creature

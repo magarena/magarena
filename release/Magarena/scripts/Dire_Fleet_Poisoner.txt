@@ -1,5 +1,5 @@
 name=Dire Fleet Poisoner
-image=https://magiccards.info/scans/en/rix/68.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88273b1e-b33b-44d3-8777-4e78a04eed65.jpg?1555040192
 value=2.500
 rarity=R
 type=Creature

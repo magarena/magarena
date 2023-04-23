@@ -1,5 +1,5 @@
 name=Sliversmith
-image=https://magiccards.info/scans/en/fut/163.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83458352-9634-4cd7-bed1-6f7743c56c1f.jpg?1619399077
 value=2.643
 rarity=U
 type=Artifact,Creature

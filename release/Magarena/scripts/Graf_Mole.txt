@@ -1,5 +1,5 @@
 name=Graf Mole
-image=https://magiccards.info/scans/en/soi/207.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25a40334-65d8-46d2-9c56-389e9b32107c.jpg?1576385088
 value=2.500
 rarity=U
 type=Creature

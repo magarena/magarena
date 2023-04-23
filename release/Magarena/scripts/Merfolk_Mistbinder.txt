@@ -1,5 +1,5 @@
 name=Merfolk Mistbinder
-image=https://magiccards.info/scans/en/rix/164.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2935b829-23fb-415e-90f2-2e0016b5cde9.jpg?1555040884
 value=2.500
 rarity=U
 type=Creature

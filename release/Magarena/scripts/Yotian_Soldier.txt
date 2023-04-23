@@ -1,5 +1,5 @@
 name=Yotian Soldier
-image=https://magiccards.info/scans/en/mi/277.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e71190b-c96c-4aea-9696-780c69eff395.jpg?1562926960
 value=3.643
 rarity=C
 type=Artifact,Creature

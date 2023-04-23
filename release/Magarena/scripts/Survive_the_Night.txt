@@ -1,5 +1,5 @@
 name=Survive the Night
-image=https://magiccards.info/scans/en/soi/41.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cb4a0bc-196a-466b-a704-377f5c7eb5b7.jpg?1576383916
 value=2.500
 rarity=C
 type=Instant

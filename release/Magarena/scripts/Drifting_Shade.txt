@@ -1,5 +1,5 @@
 name=Drifting Shade
-image=https://magiccards.info/scans/en/m12/96.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00dcb25e-764b-47d6-bec4-225aaace77b0.jpg?1562630489
 value=2.917
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fairgrounds Warden
-image=https://magiccards.info/scans/en/kld/13.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49b6c8f3-76b7-4954-8608-023304cdec3e.jpg?1576380839
 image_updated=2016-10-05
 value=2.500
 rarity=U

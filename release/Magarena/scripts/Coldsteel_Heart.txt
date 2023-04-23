@@ -1,5 +1,5 @@
 name=Coldsteel Heart
-image=https://magiccards.info/scans/en/cs/136.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2548ad2-3c62-4ed1-899c-1002b46cdd8f.jpg?1676452507
 image_updated=2016-02-29
 value=3.810
 rarity=U

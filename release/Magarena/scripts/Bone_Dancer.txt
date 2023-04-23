@@ -1,5 +1,5 @@
 name=Bone Dancer
-image=https://magiccards.info/scans/en/wl/4.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/207bb4cd-4525-47e0-b412-0d0e29717d44.jpg?1562799773
 value=4.282
 rarity=R
 type=Creature

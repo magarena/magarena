@@ -1,5 +1,5 @@
 name=Savannah Lions
-image=https://magiccards.info/scans/en/a25/33.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9757246-e782-4d7a-8273-d9efe284edaf.jpg?1562439539
 image_updated=2018-04-27
 value=4.058
 rarity=C

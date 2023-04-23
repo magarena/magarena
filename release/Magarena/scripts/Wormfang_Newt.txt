@@ -1,5 +1,5 @@
 name=Wormfang Newt
-image=https://magiccards.info/scans/en/ju/59.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df8012c1-76ec-4c36-8b38-5bc41ce5e156.jpg?1562632319
 value=1.656
 rarity=C
 type=Creature

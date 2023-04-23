@@ -1,5 +1,5 @@
 name=Opal Champion
-image=https://magiccards.info/scans/en/ul/16.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2699cf3b-df54-4c77-ba19-3bc7598ae3fa.jpg?1562862337
 value=3.420
 rarity=C
 type=Enchantment

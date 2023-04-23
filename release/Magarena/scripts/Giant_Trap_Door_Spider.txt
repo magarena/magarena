@@ -1,5 +1,5 @@
 name=Giant Trap Door Spider
-image=https://magiccards.info/scans/en/cstd/42.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b72846a2-a015-486d-804b-c2a2df045444.jpg?1562870459
 value=3.822
 rarity=U
 type=Creature

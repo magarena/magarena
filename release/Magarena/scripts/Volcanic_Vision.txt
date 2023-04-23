@@ -1,5 +1,5 @@
 name=Volcanic Vision
-image=https://magiccards.info/scans/en/c16/137.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f973e1a6-c6f9-47f5-9bf0-b7fa06959bd4.jpg?1625194143
 image_updated=2017-08-17
 value=2.500
 rarity=R

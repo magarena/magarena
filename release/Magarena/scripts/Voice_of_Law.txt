@@ -1,5 +1,5 @@
 name=Voice of Law
-image=https://magiccards.info/scans/en/us/55.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daec52a4-02da-4bff-aff4-5247baed1326.jpg?1562941229
 value=3.518
 rarity=U
 type=Creature

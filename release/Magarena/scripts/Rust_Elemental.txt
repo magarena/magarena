@@ -1,5 +1,5 @@
 name=Rust Elemental
-image=https://magiccards.info/scans/en/mi/234.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/967a08cd-72b3-4b3f-9f23-15697704acb3.jpg?1562151653
 value=1.729
 rarity=U
 type=Artifact,Creature

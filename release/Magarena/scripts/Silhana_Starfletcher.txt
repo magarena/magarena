@@ -1,5 +1,5 @@
 name=Silhana Starfletcher
-image=https://magiccards.info/scans/en/gp/95.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa9c7e09-8384-4866-af92-ba56bd307d9c.jpg?1593272510
 value=3.119
 rarity=C
 type=Creature

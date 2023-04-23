@@ -1,5 +1,5 @@
 name=Breya, Etherium Shaper
-image=https://magiccards.info/scans/en/c16/29.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2143f700-7311-46a4-ad9b-4e743a345785.jpg?1599707856
 image_updated=2016-11-20
 value=2.500
 rarity=M

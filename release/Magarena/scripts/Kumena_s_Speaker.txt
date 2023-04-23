@@ -1,5 +1,5 @@
 name=Kumena's Speaker
-image=https://magiccards.info/scans/en/xln/196.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52e96ddf-ac9e-4cc5-8c9a-afee421d99a6.jpg?1562555420
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Resilient Khenra
-image=https://magiccards.info/scans/en/hou/131.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/033a69fb-2af9-426c-b1d6-3e5b18c78c9a.jpg?1562787658
 value=2.500
 rarity=R
 type=Creature

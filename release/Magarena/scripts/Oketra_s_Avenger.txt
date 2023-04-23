@@ -1,5 +1,5 @@
 name=Oketra's Avenger
-image=https://magiccards.info/scans/en/hou/17.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06a644b4-a2f7-4219-935b-237936b07948.jpg?1562788163
 value=2.500
 rarity=C
 type=Creature

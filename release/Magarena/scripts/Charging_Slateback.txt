@@ -1,5 +1,5 @@
 name=Charging Slateback
-image=https://magiccards.info/scans/en/on/194.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2cfff37-655f-4107-abf3-e6f63d0e4de2.jpg?1562945225
 value=1.648
 rarity=C
 type=Creature

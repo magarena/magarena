@@ -1,5 +1,5 @@
 name=Kjeldoran Pride
-image=https://magiccards.info/scans/en/cstd/4.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0acdf4d-6fdd-4430-9204-9c80dc8fb387.jpg?1562770179
 value=3.214
 rarity=C
 type=Enchantment

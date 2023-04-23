@@ -1,5 +1,5 @@
 name=Oblivion Crown
-image=https://magiccards.info/scans/en/fut/73.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cd5486b-c6f4-4cfc-9590-8ffc78b48b0a.jpg?1562897621
 value=2.943
 rarity=C
 type=Enchantment

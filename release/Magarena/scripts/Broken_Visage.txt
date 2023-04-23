@@ -1,5 +1,5 @@
 name=Broken Visage
-image=https://magiccards.info/scans/en/5e/11.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e934eed-d37c-4ede-b867-87bd17269b78.jpg?1562869987
 value=3.485
 rarity=R
 type=Instant

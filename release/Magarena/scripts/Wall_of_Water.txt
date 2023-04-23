@@ -1,5 +1,5 @@
 name=Wall of Water
-image=https://magiccards.info/scans/en/4e/114.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78028eda-61b0-408c-b3fc-adc968d39b47.jpg?1559600430
 value=3.074
 rarity=U
 type=Creature

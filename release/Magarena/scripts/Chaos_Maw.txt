@@ -1,5 +1,5 @@
 name=Chaos Maw
-image=https://magiccards.info/scans/en/hou/87.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8094908b-1d3a-42df-bc27-8456fbb98e65.jpg?1562805282
 value=2.500
 rarity=R
 type=Creature

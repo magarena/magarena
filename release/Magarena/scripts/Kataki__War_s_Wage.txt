@@ -1,5 +1,5 @@
 name=Kataki, War's Wage
-image=https://magiccards.info/scans/en/mma/20.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d84ac44-01d8-415e-af69-7c608ac8ae20.jpg?1561967338
 value=4.409
 rarity=R
 type=Legendary,Creature

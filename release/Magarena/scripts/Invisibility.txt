@@ -1,5 +1,5 @@
 name=Invisibility
-image=https://magiccards.info/scans/en/m15/61.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/348d6493-681a-4ea9-9154-ea09f2648e8a.jpg?1562785005
 value=2.100
 rarity=C
 type=Enchantment

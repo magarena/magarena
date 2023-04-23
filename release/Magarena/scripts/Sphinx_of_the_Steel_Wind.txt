@@ -1,5 +1,5 @@
 name=Sphinx of the Steel Wind
-image=https://magiccards.info/scans/en/ema/207.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fc9b802-3381-4318-a352-d85451aba586.jpg?1580015084
 value=4.379
 rarity=M
 type=Artifact,Creature

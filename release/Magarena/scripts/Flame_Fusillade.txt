@@ -1,5 +1,5 @@
 name=Flame Fusillade
-image=https://magiccards.info/scans/en/rav/123.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fcad5f0-53c4-4b72-ac05-ef9ca5b55611.jpg?1598915480
 value=4.319
 rarity=R
 type=Sorcery

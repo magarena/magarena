@@ -1,5 +1,5 @@
 name=Sparkspitter
-image=https://magiccards.info/scans/en/fut/109.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91e67cab-496b-4b07-a045-b332d378ae74.jpg?1552832723
 value=3.295
 rarity=U
 type=Creature

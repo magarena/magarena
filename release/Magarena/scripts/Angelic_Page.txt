@@ -1,5 +1,5 @@
 name=Angelic Page
-image=https://magiccards.info/scans/en/a25/4.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddf5db14-f2aa-4088-9894-7bd3a56dfe1e.jpg?1600715409
 image_updated=2018-04-26
 value=2.856
 rarity=U

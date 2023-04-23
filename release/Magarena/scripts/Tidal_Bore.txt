@@ -1,5 +1,5 @@
 name=Tidal Bore
-image=https://magiccards.info/scans/en/mm/109.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f68fd547-59fb-41e6-be55-1ec17fe2840b.jpg?1562383994
 value=2.897
 rarity=C
 type=Instant

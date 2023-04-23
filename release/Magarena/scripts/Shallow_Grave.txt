@@ -1,5 +1,5 @@
 name=Shallow Grave
-image=https://magiccards.info/scans/en/mr/39.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5c782cc-c951-4c6f-a93f-774ae6c1c214.jpg?1562721926
 value=4.323
 rarity=R
 type=Instant

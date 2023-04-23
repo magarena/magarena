@@ -1,5 +1,5 @@
 name=Exorcist
-image=https://magiccards.info/scans/en/dk/79.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3e37705-341e-4c13-9adf-c798e8ed490f.jpg?1562946532
 value=3.828
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Homura, Human Ascendant
-image=https://magiccards.info/scans/en/sok/103a.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84920a21-ee2a-41ac-a369-347633d10371.jpg?1562494702
 value=3.904
 rarity=R
 type=Legendary,Creature

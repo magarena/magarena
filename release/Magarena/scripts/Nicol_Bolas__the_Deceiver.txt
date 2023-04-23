@@ -1,5 +1,5 @@
 name=Nicol Bolas, the Deceiver
-image=https://magiccards.info/scans/en/hou/205.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74239d78-1608-4b27-b2fd-8c7453f6b86b.jpg?1562803398
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

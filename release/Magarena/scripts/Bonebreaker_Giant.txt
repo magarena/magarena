@@ -1,5 +1,5 @@
 name=Bonebreaker Giant
-image=https://magiccards.info/scans/en/m12/123.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc17e5c1-a6b4-401b-95eb-1c01cd1da570.jpg?1562659819
 value=2.352
 rarity=C
 type=Creature

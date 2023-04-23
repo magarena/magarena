@@ -1,5 +1,5 @@
 name=Ghastly Demise
-image=https://magiccards.info/scans/en/od/139.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fcfe11a-fcc9-41e1-91ef-755bb4e22389.jpg?1608909764
 value=4.069
 rarity=C
 type=Instant

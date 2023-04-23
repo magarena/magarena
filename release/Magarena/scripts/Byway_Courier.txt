@@ -1,5 +1,5 @@
 name=Byway Courier
-image=https://magiccards.info/scans/en/soi/196.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f243a51-bbd3-4028-a469-469ab5591aae.jpg?1576385010
 value=2.500
 rarity=C
 type=Creature

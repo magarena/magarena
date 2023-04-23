@@ -1,5 +1,5 @@
 name=Trained Armodon
-image=https://magiccards.info/scans/en/9e/274.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b55e0487-3abb-4f2b-b34c-d6ad49164e73.jpg?1562431272
 value=2.949
 rarity=C
 type=Creature

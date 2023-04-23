@@ -1,5 +1,5 @@
 name=Massacre
-image=https://magiccards.info/scans/en/ne/58.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f05f5d93-50d1-4aa6-af05-383a6808345b.jpg?1562632742
 value=4.438
 rarity=U
 type=Sorcery

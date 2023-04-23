@@ -1,5 +1,5 @@
 name=Sorin's Vengeance
-image=https://magiccards.info/scans/en/m12/111.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cb62846-c5da-4c7c-b0d7-9b677dce68d1.jpg?1562637452
 value=4.129
 rarity=R
 type=Sorcery

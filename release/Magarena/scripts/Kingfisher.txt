@@ -1,5 +1,5 @@
 name=Kingfisher
-image=https://magiccards.info/scans/en/ud/36.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/442bc3ba-00b3-4616-a5b2-55524ff8a736.jpg?1562443756
 value=3.030
 rarity=C
 type=Creature

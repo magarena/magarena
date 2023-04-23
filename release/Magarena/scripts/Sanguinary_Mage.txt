@@ -1,5 +1,5 @@
 name=Sanguinary Mage
-image=https://magiccards.info/scans/en/soi/178.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ace86fac-769c-4440-9a40-318d7172555b.jpg?1576384883
 value=2.500
 rarity=C
 type=Creature

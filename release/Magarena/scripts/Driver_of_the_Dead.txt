@@ -1,5 +1,5 @@
 name=Driver of the Dead
-image=https://magiccards.info/scans/en/cn2/133.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef46f4e7-ec58-4542-94b3-785bc46d26ea.jpg?1598304676
 image_updated=2017-08-29
 value=3.000
 rarity=C

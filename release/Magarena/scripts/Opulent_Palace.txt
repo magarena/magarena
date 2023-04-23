@@ -1,5 +1,5 @@
 name=Opulent Palace
-image=https://magiccards.info/scans/en/c16/313.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef77912d-b9f5-4785-a57c-077275605d06.jpg?1673306144
 image_updated=2017-08-17
 value=3.750
 rarity=U

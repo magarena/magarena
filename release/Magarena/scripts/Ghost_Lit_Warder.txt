@@ -1,5 +1,5 @@
 name=Ghost-Lit Warder
-image=https://magiccards.info/scans/en/sok/39.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/042b7666-8c58-48e5-8ec3-754611700e75.jpg?1562492061
 value=2.760
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Serenity
-image=https://magiccards.info/scans/en/6e/41.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b37593d-13e7-4489-84bc-7074032b6f05.jpg?1562816589
 value=4.519
 rarity=R
 type=Enchantment

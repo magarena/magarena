@@ -1,5 +1,5 @@
 name=Foundry of the Consuls
-image=https://magiccards.info/scans/en/ori/247.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09d83c1d-6916-48e7-8a0d-b5abadc34b2a.jpg?1592711488
 image_updated=2015-11-05
 value=2.500
 rarity=U

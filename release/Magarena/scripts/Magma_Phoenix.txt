@@ -1,5 +1,5 @@
 name=Magma Phoenix
-image=https://magiccards.info/scans/en/m11/150.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3857c9b-136d-4e6a-bd3b-92dab1b71947.jpg?1562472154
 value=4.034
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Deep Analysis
-image=https://magiccards.info/scans/en/ema/45.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90296536-a56d-482e-8548-132a99894bde.jpg?1673147250
 value=4.000
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Whispers of the Muse
-image=https://magiccards.info/scans/en/tsts/35.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5852a174-eef6-4c06-abcd-fd90f4b8a188.jpg?1562429373
 value=3.486
 rarity=U
 type=Instant

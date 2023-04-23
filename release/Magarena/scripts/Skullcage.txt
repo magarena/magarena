@@ -1,5 +1,5 @@
 name=Skullcage
-image=https://magiccards.info/scans/en/5dn/151.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e658a5a-8d84-4225-b595-5265a0bfd996.jpg?1562928404
 image_updated=2017-01-08
 value=3.600
 rarity=U

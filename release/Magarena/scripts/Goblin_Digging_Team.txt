@@ -1,5 +1,5 @@
 name=Goblin Digging Team
-image=https://magiccards.info/scans/en/7e/186.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8000425a-4761-4370-95eb-6fe3df628482.jpg?1595078453
 value=2.688
 rarity=C
 type=Creature

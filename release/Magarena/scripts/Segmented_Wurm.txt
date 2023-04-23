@@ -1,5 +1,5 @@
 name=Segmented Wurm
-image=https://magiccards.info/scans/en/tp/344.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18be7cfa-bf75-407d-b79f-2fec4b1aacf5.jpg?1562052789
 value=2.197
 rarity=U
 type=Creature

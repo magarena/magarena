@@ -1,5 +1,5 @@
 name=Gamble
-image=https://magiccards.info/scans/en/ema/132.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/924db286-fb3e-40dd-b5e2-f8128701685d.jpg?1661583538
 value=4.000
 rarity=R
 type=Sorcery

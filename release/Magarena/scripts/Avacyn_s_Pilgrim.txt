@@ -1,5 +1,5 @@
 name=Avacyn's Pilgrim
-image=https://magiccards.info/scans/en/mm3/119.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a390a7df-b8da-41aa-93e5-2c0db938a27e.jpg?1637630879
 image_updated=2017-08-08
 value=3.857
 rarity=C

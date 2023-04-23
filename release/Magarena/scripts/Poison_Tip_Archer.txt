@@ -1,5 +1,5 @@
 name=Poison-Tip Archer
-image=https://magiccards.info/scans/en/m19/220.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1677d49e-3d63-45bd-9849-01b1bdd95ad8.jpg?1656159779
 value=2.500
 rarity=U
 type=Creature

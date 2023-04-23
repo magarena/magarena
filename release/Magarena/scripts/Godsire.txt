@@ -1,5 +1,5 @@
 name=Godsire
-image=https://magiccards.info/scans/en/ala/170.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2539ff7-2b7d-47e3-bd77-3138a6c42d2b.jpg?1562710016
 value=4.015
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Shockmaw Dragon
-image=https://magiccards.info/scans/en/frf/114.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4810919-b379-40db-a68b-a769dd3ee32d.jpg?1562830882
 value=2.500
 rarity=U
 type=Creature

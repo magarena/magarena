@@ -1,5 +1,5 @@
 name=Chandra's Fury
-image=https://magiccards.info/scans/en/ori/136.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2b85237-98a8-4b52-9cc6-6fd14849b069.jpg?1562043495
 image_updated=2015-11-05
 value=2.500
 rarity=C

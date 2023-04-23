@@ -1,5 +1,5 @@
 name=Hellfire Mongrel
-image=https://magiccards.info/scans/en/zen/130.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27194865-1305-4fbd-8d84-c5201ad0210e.jpg?1562904276
 value=3.045
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Hardened Scales
-image=https://magiccards.info/scans/en/c16/152.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdf31b01-0836-4366-948d-879999832abe.jpg?1673148131
 image_updated=2017-08-17
 value=4.000
 rarity=R

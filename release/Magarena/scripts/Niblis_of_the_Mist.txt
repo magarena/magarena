@@ -1,5 +1,5 @@
 name=Niblis of the Mist
-image=https://magiccards.info/scans/en/dka/15.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08aea6e3-c8a8-4964-b95d-4c639da55de1.jpg?1562897001
 value=2.130
 rarity=C
 type=Creature

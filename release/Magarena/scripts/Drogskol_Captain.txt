@@ -1,5 +1,5 @@
 name=Drogskol Captain
-image=https://magiccards.info/scans/en/dka/136.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c88e7e22-6300-4871-9af8-923eedfe4b32.jpg?1641603411
 value=3.891
 rarity=U
 type=Creature

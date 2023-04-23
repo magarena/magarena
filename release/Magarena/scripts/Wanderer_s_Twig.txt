@@ -1,5 +1,5 @@
 name=Wanderer's Twig
-image=https://magiccards.info/scans/en/lw/265.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ea7b2c0-c641-478f-b8d9-17aa17fa1cbe.jpg?1562357879
 value=2.795
 rarity=C
 type=Artifact

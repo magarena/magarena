@@ -1,5 +1,5 @@
 name=Bramblecrush
-image=https://magiccards.info/scans/en/isd/172.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e1bd3ff-f3cd-4e9d-ae2e-2c51d0aaec7f.jpg?1562827527
 value=3.646
 removal=3
 rarity=U

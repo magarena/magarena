@@ -1,5 +1,5 @@
 name=Terrus Wurm
-image=https://magiccards.info/scans/en/rtr/80.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1998135c-7b7f-402b-a8a5-4f4af131b1bc.jpg?1562783285
 value=1.703
 rarity=C
 type=Creature

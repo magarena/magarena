@@ -1,5 +1,5 @@
 name=Voice of Truth
-image=https://magiccards.info/scans/en/ne/25.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40377e3d-77d9-4d86-ac8c-4e27803e48d8.jpg?1587857516
 value=3.233
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sigarda, Heron's Grace
-image=https://magiccards.info/scans/en/soi/250.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1de7031-f589-4af5-9c63-06fb7ec7a6b5.jpg?1637631578
 value=2.500
 rarity=M
 type=Legendary,Creature

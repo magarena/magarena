@@ -1,5 +1,5 @@
 name=Empress Galina
-image=https://magiccards.info/scans/en/in/54.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/6851dbc7-f072-41e7-a899-897445d99425.jpg?1562916018
 value=3.816
 rarity=R
 type=Legendary,Creature

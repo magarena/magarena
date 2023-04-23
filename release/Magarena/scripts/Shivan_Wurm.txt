@@ -1,5 +1,5 @@
 name=Shivan Wurm
-image=https://magiccards.info/scans/en/ps/124.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f03b5c7e-e830-4cfc-a43a-3e8285979aa0.jpg?1562943254
 value=4.321
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Bonded Fetch
-image=https://magiccards.info/scans/en/fut/50.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de72afaf-a4b4-431c-8831-86ddfba2403c.jpg?1619393815
 value=3.315
 rarity=U
 type=Creature

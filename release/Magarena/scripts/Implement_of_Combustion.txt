@@ -1,5 +1,5 @@
 name=Implement of Combustion
-image=https://magiccards.info/scans/en/aer/155.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15b1c8da-604a-42f0-8658-82580700dd31.jpg?1576382275
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Mystic Genesis
-image=https://magiccards.info/scans/en/mm3/174.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56b93af3-f7b9-4b66-8a66-366134ebb896.jpg?1593814476
 image_updated=2017-08-08
 value=3.388
 rarity=U

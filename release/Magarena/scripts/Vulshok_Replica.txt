@@ -1,5 +1,5 @@
 name=Vulshok Replica
-image=https://magiccards.info/scans/en/som/221.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32885a6c-b293-405f-9f2e-9e0dd7d1cb8c.jpg?1562816155
 value=2.962
 rarity=C
 type=Artifact,Creature

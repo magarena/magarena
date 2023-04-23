@@ -1,5 +1,5 @@
 name=Dragon Hatchling
-image=https://magiccards.info/scans/en/m13/128.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5d3a18c-d030-494d-b7b1-4d1d1e27fbbf.jpg?1601077526
 value=3.468
 rarity=C
 type=Creature

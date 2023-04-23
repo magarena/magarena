@@ -1,5 +1,5 @@
 name=Raging Goblin
-image=https://magiccards.info/scans/en/m10/153.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3480927c-10da-4817-9954-10aea2bc7100.jpg?1605206526
 value=3.971
 rarity=C
 type=Creature

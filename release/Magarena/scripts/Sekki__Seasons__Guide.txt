@@ -1,5 +1,5 @@
 name=Sekki, Seasons' Guide
-image=https://magiccards.info/scans/en/sok/148.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9883e973-54c3-4bec-91d8-22f2829cdfa2.jpg?1562495122
 value=3.896
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Boon of Erebos
-image=https://magiccards.info/scans/en/ths/80.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/4371083b-c300-4464-a7ea-6168db4e345c.jpg?1562817316
 value=3.280
 rarity=C
 type=Instant

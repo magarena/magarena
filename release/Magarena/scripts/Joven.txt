@@ -1,5 +1,5 @@
 name=Joven
-image=https://magiccards.info/scans/en/hl/97.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dabe3af-cd5b-461e-95a4-aad046646419.jpg?1562587046
 value=2.860
 rarity=C
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Momir Vig, Simic Visionary
-image=https://magiccards.info/scans/en/di/118.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25a8c801-df0c-402b-a41c-4703a2abfb66.jpg?1593273661
 value=4.015
 rarity=R
 type=Legendary,Creature

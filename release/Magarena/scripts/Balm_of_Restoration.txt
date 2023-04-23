@@ -1,5 +1,5 @@
 name=Balm of Restoration
-image=https://magiccards.info/scans/en/fe/167.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f95de4a-7fae-42bc-9660-39ea7685ca02.jpg?1587911024
 value=1.455
 rarity=R
 type=Artifact

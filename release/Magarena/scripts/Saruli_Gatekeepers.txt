@@ -1,5 +1,5 @@
 name=Saruli Gatekeepers
-image=https://magiccards.info/scans/en/dgm/48.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/471a5b1d-e2e5-4d90-b72a-ffae81ad6602.jpg?1562908018
 value=2.750
 rarity=C
 type=Creature

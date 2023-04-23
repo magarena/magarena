@@ -1,5 +1,5 @@
 name=Wrench Mind
-image=https://magiccards.info/scans/en/ima/115.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/360a6ada-b257-44b8-b830-aaa122474bce.jpg?1562847480
 image_updated=2017-04-12
 value=4.038
 rarity=C

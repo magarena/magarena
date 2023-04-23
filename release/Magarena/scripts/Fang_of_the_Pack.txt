@@ -1,5 +1,5 @@
 name=Fang of the Pack
-image=https://magiccards.info/scans/en/cn2/65.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27bcf935-6e35-41bc-b1eb-6ec92b1647d5.jpg?1576382451
 image_updated=2016-09-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Scute Mob
-image=https://magiccards.info/scans/en/mm2/161.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28d10cf2-c40d-4748-add0-f9cdd606030c.jpg?1592710986
 value=4.134
 rarity=R
 type=Creature

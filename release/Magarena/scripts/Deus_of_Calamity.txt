@@ -1,5 +1,5 @@
 name=Deus of Calamity
-image=https://magiccards.info/scans/en/shm/204.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3b03ce9-a0fb-4b0c-b02d-e4f93ef87445.jpg?1592752157
 image_updated=2016-09-12
 value=3.868
 rarity=R

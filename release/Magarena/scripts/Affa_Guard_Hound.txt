@@ -1,5 +1,5 @@
 name=Affa Guard Hound
-image=https://magiccards.info/scans/en/cn2/81.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f762546c-f5eb-420d-a8f7-c3566cd8f506.jpg?1600716563
 image_updated=2017-08-29
 value=2.938
 rarity=U

@@ -1,5 +1,5 @@
 name=Lava Axe
-image=https://magiccards.info/scans/en/m19/150.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3dab325-8f4f-4288-9f3f-960e52b4335b.jpg?1562304308
 image_updated=2018-08-07
 value=1.750
 rarity=C

@@ -1,5 +1,5 @@
 name=Mind Grind
-image=https://magiccards.info/scans/en/gtc/178.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/671eb9e8-1a69-4570-8972-2e7de371cef4.jpg?1561829709
 value=3.788
 removal=3
 rarity=R

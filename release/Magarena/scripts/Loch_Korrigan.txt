@@ -1,5 +1,5 @@
 name=Loch Korrigan
-image=https://magiccards.info/scans/en/shm/71.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2964b501-5b7f-4225-9dd3-e7519bf34048.jpg?1562828120
 value=1.618
 rarity=C
 type=Creature

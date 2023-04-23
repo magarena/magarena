@@ -1,5 +1,5 @@
 name=Parallel Evolution
-image=https://magiccards.info/scans/en/tr/136.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73cce010-a8e7-477b-9179-bbad38aa6438.jpg?1562630365
 value=3.565
 rarity=R
 type=Sorcery

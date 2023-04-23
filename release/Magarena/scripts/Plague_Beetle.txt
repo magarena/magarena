@@ -1,5 +1,5 @@
 name=Plague Beetle
-image=https://magiccards.info/scans/en/10e/168.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f5d3dac-98df-433f-a417-bcb9c91722fb.jpg?1562551552
 value=2.681
 rarity=C
 type=Creature

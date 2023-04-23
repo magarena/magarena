@@ -1,5 +1,5 @@
 name=Kuldotha Rebirth
-image=https://magiccards.info/scans/en/som/96.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ee07266-a95d-4cd8-9863-1664922e9490.jpg?1562819546
 value=3.947
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Raptor Companion
-image=https://magiccards.info/scans/en/rix/19.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45385c8e-fff9-46e7-97e8-f946306b5147.jpg?1562909010
 image_updated=2018-03-12
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Burrenton Shield-Bearers
-image=https://magiccards.info/scans/en/mt/4.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1afc1033-0004-43c1-9341-c5ed0b0048f2.jpg?1562877150
 value=2.051
 rarity=C
 type=Creature

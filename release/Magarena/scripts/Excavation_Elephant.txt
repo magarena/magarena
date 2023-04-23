@@ -1,5 +1,5 @@
 name=Excavation Elephant
-image=https://magiccards.info/scans/en/dom/17.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/760ce08a-49d3-4cdf-bbe2-33dd8a6a7966.jpg?1562737910
 value=2.500
 rarity=C
 type=Creature

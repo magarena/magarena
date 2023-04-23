@@ -1,5 +1,5 @@
 name=Balance of Power
-image=https://magiccards.info/scans/en/8e/62.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83f46988-c3ee-42e9-ade6-0b6302b8b952.jpg?1562921723
 value=2.086
 rarity=R
 type=Sorcery

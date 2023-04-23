@@ -1,5 +1,5 @@
 name=Sunscorch Regent
-image=https://magiccards.info/scans/en/dtk/41.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da6b530c-5a56-4dc1-8d36-6ed8d2c158a9.jpg?1682208635
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Jinxed Idol
-image=https://magiccards.info/scans/en/m11/208.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/269da2cd-0a50-4b07-a343-35371a9dcbb4.jpg?1562428657
 value=2.500
 rarity=R
 type=Artifact

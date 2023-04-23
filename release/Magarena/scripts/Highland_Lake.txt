@@ -1,5 +1,5 @@
 name=Highland Lake
-image=https://magiccards.info/scans/en/m19/252.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46bb20af-a326-4a42-94d3-cb1990300e0f.jpg?1568005179
 image_updated=2018-08-07
 value=2.500
 rarity=C

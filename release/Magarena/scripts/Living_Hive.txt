@@ -1,5 +1,5 @@
 name=Living Hive
-image=https://magiccards.info/scans/en/mi/124.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54e4017b-51b1-47b0-90a6-47d680bac963.jpg?1562842155
 image_updated=2016-12-21
 value=4.107
 rarity=R

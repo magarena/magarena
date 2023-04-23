@@ -1,5 +1,5 @@
 name=Kessig Dire Swine
-image=https://magiccards.info/scans/en/soi/214.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9235ac46-dac9-46e6-9c7f-a69caaee1a2e.jpg?1576385139
 value=2.500
 rarity=C
 type=Creature

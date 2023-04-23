@@ -1,5 +1,5 @@
 name=Canopy Vista
-image=https://magiccards.info/scans/en/bfz/234.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ebce74e-35e8-4e19-9979-01b9e2c100f7.jpg?1682210355
 image_updated=2015-11-08
 value=2.500
 rarity=R

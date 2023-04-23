@@ -1,5 +1,5 @@
 name=Eron the Relentless
-image=https://magiccards.info/scans/en/tsts/61.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcf16fb0-f60f-4b96-b5a6-2a42ae01e8cb.jpg?1562783193
 value=3.640
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Viashino Sandstalker
-image=https://magiccards.info/scans/en/9e/225.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1954d2eb-c1d0-4b99-a89c-357beb710055.jpg?1562732011
 value=3.670
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Stalwart Aven
-image=https://magiccards.info/scans/en/ima/32.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4248b993-87c6-42a8-b800-75d958805440.jpg?1562848393
 image_updated=2017-04-12
 value=2.500
 rarity=C

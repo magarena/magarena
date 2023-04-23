@@ -1,5 +1,5 @@
 name=Cave Tiger
-image=https://magiccards.info/scans/en/us/241.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c782eb28-0cdd-4c3d-9d89-8b23c29cddd4.jpg?1562937142
 value=2.758
 rarity=C
 type=Creature

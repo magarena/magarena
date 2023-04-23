@@ -1,5 +1,5 @@
 name=Firebrand Ranger
-image=https://magiccards.info/scans/en/in/143.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee05211e-cf08-4dea-9740-ed06f8682153.jpg?1562942810
 value=3.393
 rarity=U
 type=Creature

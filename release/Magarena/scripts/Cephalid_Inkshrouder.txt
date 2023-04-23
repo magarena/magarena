@@ -1,5 +1,5 @@
 name=Cephalid Inkshrouder
-image=https://magiccards.info/scans/en/ju/36.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c3e8c80-690b-4d79-9dee-99d1a3876160.jpg?1562629134
 value=3.175
 rarity=U
 type=Creature

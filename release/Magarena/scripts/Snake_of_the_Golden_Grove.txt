@@ -1,5 +1,5 @@
 name=Snake of the Golden Grove
-image=https://magiccards.info/scans/en/bng/141.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08b10bd7-3f8b-426f-acdf-5a9559b9bc7d.jpg?1593092675
 value=3.221
 rarity=C
 type=Creature

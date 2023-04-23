@@ -1,5 +1,5 @@
 name=Midsummer Revel
-image=https://magiccards.info/scans/en/us/268.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b40a7f65-10fe-4ce5-ad1c-be53a635d7a9.jpg?1562932997
 value=3.383
 rarity=R
 type=Enchantment

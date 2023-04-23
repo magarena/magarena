@@ -1,5 +1,5 @@
 name=Arcbound Lancer
-image=https://magiccards.info/scans/en/ds/98.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7ff3241b-49ba-4243-b8fc-fef600836c8c.jpg?1562637774
 value=2.654
 rarity=U
 type=Artifact,Creature

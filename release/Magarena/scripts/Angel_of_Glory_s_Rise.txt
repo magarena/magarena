@@ -1,5 +1,5 @@
 name=Angel of Glory's Rise
-image=https://magiccards.info/scans/en/avr/1.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/1865ab25-b01a-4e2c-bf19-ffcb0806358f.jpg?1637628972
 value=3.576
 removal=2
 rarity=R

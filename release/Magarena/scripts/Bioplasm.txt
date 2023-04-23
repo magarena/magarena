@@ -1,5 +1,5 @@
 name=Bioplasm
-image=https://magiccards.info/scans/en/gp/81.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/7170a1db-3502-4caf-a54b-bd0df0d93f2d.jpg?1593272411
 value=2.685
 rarity=R
 type=Creature

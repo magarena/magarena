@@ -1,5 +1,5 @@
 name=Vizkopa Guildmage
-image=https://magiccards.info/scans/en/ima/211.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfdce9d1-a163-40e1-a70a-1f09cf400a6c.jpg?1562855100
 image_updated=2017-04-12
 value=3.825
 rarity=U

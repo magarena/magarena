@@ -1,5 +1,5 @@
 name=Crumbling Ashes
-image=https://magiccards.info/scans/en/eve/35.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e73ac3c-bd5a-4993-be65-76396b7d38ad.jpg?1562907978
 value=3.310
 rarity=U
 type=Enchantment

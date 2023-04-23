@@ -1,5 +1,5 @@
 name=Orazca Raptor
-image=https://magiccards.info/scans/en/rix/108.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7080f86-0a9f-4471-a52b-0d44d19e6e59.jpg?1555040479
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Earthlore
-image=https://magiccards.info/scans/en/ia/119.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/319d252e-7c43-47d6-8873-f69b0e063256.jpg?1587911995
 value=2.115
 rarity=C
 type=Enchantment

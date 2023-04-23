@@ -1,5 +1,5 @@
 name=Kaiso, Memory of Loyalty
-image=https://magiccards.info/scans/en/bok/3b.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/758abd53-6ad2-406e-8615-8e48678405b4.jpg?1562877848
 value=3.053
 rarity=U
 type=Legendary,Creature

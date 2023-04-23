@@ -1,5 +1,5 @@
 name=Whirling Catapult
-image=https://magiccards.info/scans/en/ai/181.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a405387-3018-40c8-9836-c8f5ef7a1986.jpg?1562868579
 value=2.875
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Return to Battle
-image=https://magiccards.info/scans/en/p3k/81.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/1841e615-fdcd-4187-bd69-d07abde0e1ae.jpg?1562255847
 value=3.045
 rarity=C
 type=Sorcery

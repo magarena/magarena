@@ -1,5 +1,5 @@
 name=Shaper Parasite
-image=https://magiccards.info/scans/en/c14/125.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0bc15d7-9e3f-4293-978e-809a6a5b9aa0.jpg?1619394646
 value=2.500
 rarity=C
 type=Creature

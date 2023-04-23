@@ -1,5 +1,5 @@
 name=Desperate Castaways
-image=https://magiccards.info/scans/en/xln/101.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98a92dde-7a84-40fb-a11e-54c7d3057126.jpg?1562560554
 value=2.500
 rarity=C
 type=Creature

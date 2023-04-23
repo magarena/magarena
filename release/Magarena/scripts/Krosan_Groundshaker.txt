@@ -1,5 +1,5 @@
 name=Krosan Groundshaker
-image=https://magiccards.info/scans/en/on/271.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82105090-5f71-4690-9ade-187354311ae3.jpg?1562925715
 value=3.439
 rarity=U
 type=Creature

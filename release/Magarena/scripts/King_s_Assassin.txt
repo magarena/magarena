@@ -1,5 +1,5 @@
 name=King's Assassin
-image=https://magiccards.info/scans/en/po/21.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/670a3149-54fb-4fd2-bc66-3ee9bcc3519d.jpg?1562446854
 value=2.861
 rarity=R
 type=Creature

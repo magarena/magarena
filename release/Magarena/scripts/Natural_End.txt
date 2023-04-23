@@ -1,5 +1,5 @@
 name=Natural End
-image=https://magiccards.info/scans/en/avr/185.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84dcd314-f4d2-461e-a66e-7b1d8f141879.jpg?1592517295
 value=2.895
 removal=1
 rarity=C

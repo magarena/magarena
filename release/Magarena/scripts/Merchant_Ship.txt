@@ -1,5 +1,5 @@
 name=Merchant Ship
-image=https://magiccards.info/scans/en/an/23.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b827094-fb2c-46db-b898-02e0c308601f.jpg?1562903045
 value=2.130
 rarity=U
 type=Creature

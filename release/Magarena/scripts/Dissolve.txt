@@ -1,5 +1,5 @@
 name=Dissolve
-image=https://magiccards.info/scans/en/ima/51.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4fb87ab-8595-459a-a5f2-087296d9b120.jpg?1562853056
 image_updated=2017-04-12
 value=3.705
 rarity=C

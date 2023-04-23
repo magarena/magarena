@@ -1,5 +1,5 @@
 name=Necropede
-image=https://magiccards.info/scans/en/som/185.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d2e522b-e6f8-4fae-8c08-ce2bb8bed04f.jpg?1562820181
 value=3.610
 rarity=U
 type=Artifact,Creature

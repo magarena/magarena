@@ -1,5 +1,5 @@
 name=Treacherous Vampire
-image=https://magiccards.info/scans/en/ju/75.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a00562ae-b8b4-4f8f-8ea8-15d20568997d.jpg?1562631226
 value=2.348
 rarity=U
 type=Creature

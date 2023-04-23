@@ -1,5 +1,5 @@
 name=Goblin Medics
-image=https://magiccards.info/scans/en/ul/79.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/deda9adf-43db-481b-840d-518a12873782.jpg?1682209363
 value=3.350
 rarity=C
 type=Creature

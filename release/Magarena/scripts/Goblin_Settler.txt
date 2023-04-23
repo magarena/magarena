@@ -1,5 +1,5 @@
 name=Goblin Settler
-image=https://magiccards.info/scans/en/st/106.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/503ef4d7-2028-4363-b3af-f9fe690510f9.jpg?1562911254
 value=3.689
 removal=1
 rarity=U

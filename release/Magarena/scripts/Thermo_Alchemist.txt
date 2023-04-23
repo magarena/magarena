@@ -1,5 +1,5 @@
 name=Thermo-Alchemist
-image=https://magiccards.info/scans/en/emn/147.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4c68bad-c7ee-4dbc-ad06-8c4d9446884e.jpg?1636223711
 image_updated=2016-09-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Safewright Quest
-image=https://magiccards.info/scans/en/shm/240.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61edb39b-ff82-4568-971f-baf22e209c88.jpg?1562830841
 value=3.053
 rarity=C
 type=Sorcery

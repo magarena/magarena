@@ -1,5 +1,5 @@
 name=Search for Tomorrow
-image=https://magiccards.info/scans/en/ima/185.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a0c73a9-38a2-4a3d-938e-b81ba166f0ff.jpg?1673305408
 image_updated=2017-04-12
 value=4.088
 rarity=C

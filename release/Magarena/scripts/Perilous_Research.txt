@@ -1,5 +1,5 @@
 name=Perilous Research
-image=https://magiccards.info/scans/en/mma/58.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f425b017-8c4d-457f-919a-f2686d71bcac.jpg?1561969049
 value=3.935
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Land Cap
-image=https://magiccards.info/scans/en/ia/338.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4806c02-7a4d-42e3-affd-0338084bd3ab.jpg?1562931776
 value=1.912
 rarity=R
 type=Land

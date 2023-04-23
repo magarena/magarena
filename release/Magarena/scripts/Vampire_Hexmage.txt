@@ -1,5 +1,5 @@
 name=Vampire Hexmage
-image=https://magiccards.info/scans/en/c14/168.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97ec2e55-fa60-4ee1-b9c0-e6b84939697b.jpg?1599706094
 value=4.545
 rarity=U
 type=Creature

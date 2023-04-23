@@ -1,5 +1,5 @@
 name=Figure of Destiny
-image=https://magiccards.info/scans/en/mma/189.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d779966-4bd4-4315-8b45-d3a4492f2bb2.jpg?1673148613
 image_updated=2016-09-12
 value=4.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Wandering Ones
-image=https://magiccards.info/scans/en/chk/100.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f973d6b-4a34-4b0e-b092-ead05bf2e535.jpg?1562762506
 value=3.174
 rarity=C
 type=Creature

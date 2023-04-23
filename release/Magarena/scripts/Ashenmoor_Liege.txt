@@ -1,5 +1,5 @@
 name=Ashenmoor Liege
-image=https://magiccards.info/scans/en/shm/181.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bac7744-ba18-4fc5-8a6f-840dad28f6c0.jpg?1673148305
 value=3.822
 rarity=R
 type=Creature

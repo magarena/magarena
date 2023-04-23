@@ -1,5 +1,5 @@
 name=Zoologist
-image=https://magiccards.info/scans/en/od/285.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be645675-d263-42c4-9e71-f98cf4c2aab5.jpg?1562930551
 value=3.729
 rarity=R
 type=Creature

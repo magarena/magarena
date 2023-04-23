@@ -1,5 +1,5 @@
 name=Pongify
-image=https://magiccards.info/scans/en/c14/120.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1501dea-4e0e-49b0-86b5-e8a01f77077d.jpg?1619394479
 value=4.198
 removal=3
 rarity=U

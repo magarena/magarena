@@ -1,5 +1,5 @@
 name=Vampiric Feast
-image=https://magiccards.info/scans/en/po/37.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19500ffb-bfad-46d6-8a6e-d134405959c0.jpg?1562445680
 value=1.117
 rarity=U
 type=Sorcery

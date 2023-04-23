@@ -1,5 +1,5 @@
 name=Omega Myr
-image=https://magiccards.info/scans/en/mi/223.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddaa5c60-054f-4397-a110-21df58264caf.jpg?1562160338
 value=2.489
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Obzedat, Ghost Council
-image=https://magiccards.info/scans/en/mm3/176.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/4029c3a0-a999-453a-a838-7adb81e481ee.jpg?1593814495
 image_updated=2017-08-08
 value=4.035
 rarity=R

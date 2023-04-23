@@ -1,5 +1,5 @@
 name=Homarid
-image=https://magiccards.info/scans/en/fe/38.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6ffeab4-83b1-4414-ae72-e59a2354ea15.jpg?1562935176
 value=2.571
 rarity=C
 type=Creature

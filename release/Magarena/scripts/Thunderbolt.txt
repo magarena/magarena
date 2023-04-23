@@ -1,5 +1,5 @@
 name=Thunderbolt
-image=https://magiccards.info/scans/en/avr/159.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5845a5bc-6b7d-4bbb-80b3-a0f877b95553.jpg?1592709223
 value=3.915
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Kor Haven
-image=https://magiccards.info/scans/en/ne/141.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d5529ca-5c20-4dfd-8595-96d6dfa6debe.jpg?1562629492
 value=4.089
 rarity=R
 type=Legendary,Land

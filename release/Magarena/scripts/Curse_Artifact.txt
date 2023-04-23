@@ -1,5 +1,5 @@
 name=Curse Artifact
-image=https://magiccards.info/scans/en/dk/5.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fc0d070-8a42-4d5e-8f2b-ceb59147de6f.jpg?1562932739
 value=2.658
 rarity=U
 type=Enchantment

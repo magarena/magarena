@@ -1,5 +1,5 @@
 name=Kashi-Tribe Elite
-image=https://magiccards.info/scans/en/sok/135.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d12adf2d-ebf9-464e-9957-c8518d364a40.jpg?1562496094
 value=3.786
 rarity=U
 type=Creature

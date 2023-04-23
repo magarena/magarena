@@ -1,5 +1,5 @@
 name=Scrivener
-image=https://magiccards.info/scans/en/od/100.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac6ccaeb-353a-4e40-8fe3-a88f7b20650f.jpg?1562430819
 value=3.045
 rarity=C
 type=Creature

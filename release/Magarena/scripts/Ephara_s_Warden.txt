@@ -1,5 +1,5 @@
 name=Ephara's Warden
-image=https://magiccards.info/scans/en/ths/10.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71f7f788-2795-46a7-82ae-270f1e9415ca.jpg?1562819780
 value=2.016
 rarity=C
 type=Creature

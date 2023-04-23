@@ -1,5 +1,5 @@
 name=Fire Imp
-image=https://magiccards.info/scans/en/po/131.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1dbce3e-d88f-4fee-bf7d-8247f48d5c1a.jpg?1562936972
 value=3.671
 rarity=U
 type=Creature

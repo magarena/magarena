@@ -1,5 +1,5 @@
 name=Genju of the Falls
-image=https://magiccards.info/scans/en/a25/59.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6ba3a2f-0224-4ace-bb49-8dc41b34fb57.jpg?1562440756
 image_updated=2018-04-27
 value=4.227
 rarity=U

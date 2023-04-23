@@ -1,5 +1,5 @@
 name=Hell Swarm
-image=https://magiccards.info/scans/en/lg/17.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64164d1b-75f4-456e-a717-90ce554dc16c.jpg?1562859199
 value=1.357
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Chromescale Drake
-image=https://magiccards.info/scans/en/ds/20.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d22aa7ef-da34-49c1-9aac-67d129ffa6fe.jpg?1562639746
 value=3.265
 rarity=R
 type=Creature

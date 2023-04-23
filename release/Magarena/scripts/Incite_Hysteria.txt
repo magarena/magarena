@@ -1,5 +1,5 @@
 name=Incite Hysteria
-image=https://magiccards.info/scans/en/rav/132.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a31f5060-df9e-4665-bf60-a8e33da55c84.jpg?1598915683
 value=2.596
 rarity=C
 type=Sorcery

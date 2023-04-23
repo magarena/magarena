@@ -1,5 +1,5 @@
 name=Hieromancer's Cage
-image=https://magiccards.info/scans/en/m19/14.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/197743cd-249c-42ba-ac8d-027c088f8418.jpg?1621282615
 value=2.500
 rarity=U
 type=Enchantment

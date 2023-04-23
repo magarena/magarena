@@ -1,5 +1,5 @@
 name=Expedite
-image=https://magiccards.info/scans/en/ogw/108.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b86c0628-0b61-44f2-91cc-1c3c309631ce.jpg?1608912250
 image_updated=2016-02-29
 value=2.500
 rarity=C

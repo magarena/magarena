@@ -1,5 +1,5 @@
 name=Goblin Rally
-image=https://magiccards.info/scans/en/rtr/95.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34d6a2d0-d855-4b87-9f4c-58dda0b81c82.jpg?1601081752
 value=2.953
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Flame-Kin Zealot
-image=https://magiccards.info/scans/en/ema/201.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe7db99b-903f-43d8-bc60-cab2d914a0cb.jpg?1580015039
 value=4.000
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Old-Growth Dryads
-image=https://magiccards.info/scans/en/xln/199.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06458882-94c8-4d92-a21c-955e9d70f0d4.jpg?1562550095
 value=2.500
 rarity=R
 type=Creature

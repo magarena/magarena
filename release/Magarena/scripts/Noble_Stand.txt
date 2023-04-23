@@ -1,5 +1,5 @@
 name=Noble Stand
-image=https://magiccards.info/scans/en/ne/14.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f53ab12-7c16-43b1-b9f9-a5e523cf431b.jpg?1562630184
 value=3.019
 rarity=U
 type=Enchantment

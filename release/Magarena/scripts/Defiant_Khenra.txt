@@ -1,5 +1,5 @@
 name=Defiant Khenra
-image=https://magiccards.info/scans/en/hou/89.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67e3983d-b1ed-46a9-9ab0-96c4d0d77050.jpg?1562802117
 value=2.500
 rarity=C
 type=Creature

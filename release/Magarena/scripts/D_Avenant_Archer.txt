@@ -1,5 +1,5 @@
 name=D'Avenant Archer
-image=https://magiccards.info/scans/en/6e/14.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfc44b22-c46c-4b7e-91ff-3eff416bb357.jpg?1562942202
 value=2.423
 rarity=C
 type=Creature

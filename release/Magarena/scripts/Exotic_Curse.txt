@@ -1,5 +1,5 @@
 name=Exotic Curse
-image=https://magiccards.info/scans/en/in/105.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1eff81c4-c402-437d-aace-dfe875d9857d.jpg?1562900735
 image_updated=2016-12-02
 value=3.022
 rarity=C

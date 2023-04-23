@@ -1,5 +1,5 @@
 name=Cobblebrute
-image=https://magiccards.info/scans/en/ori/138.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffa87a70-c9fb-4ab3-ac16-367888aa775b.jpg?1562051869
 image_updated=2015-11-05
 value=2.500
 rarity=C

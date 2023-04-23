@@ -1,5 +1,5 @@
 name=Secure the Wastes
-image=https://magiccards.info/scans/en/dtk/36.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bca35012-ecfa-475f-b405-d3143ce99eef.jpg?1682208579
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Overwhelming Intellect
-image=https://magiccards.info/scans/en/sok/51.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9624bbf9-15b0-40f9-9f02-f2af3f1220f8.jpg?1592713471
 value=3.333
 rarity=U
 type=Instant

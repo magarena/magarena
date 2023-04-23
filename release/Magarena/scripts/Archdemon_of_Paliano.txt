@@ -1,5 +1,5 @@
 name=Archdemon of Paliano
-image=https://magiccards.info/scans/en/cn2/39.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/632122b0-6525-4b41-840f-4fd5bea2f0ea.jpg?1576381797
 image_updated=2016-09-05
 value=2.500
 rarity=R

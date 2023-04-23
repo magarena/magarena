@@ -1,5 +1,5 @@
 name=Hungry Lynx
-image=https://magiccards.info/scans/en/c17/31.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0ad6f84-8ede-4411-9979-cefee255fa70.jpg?1562622536
 image_updated=2017-10-03
 value=2.500
 rarity=R

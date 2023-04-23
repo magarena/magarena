@@ -1,5 +1,5 @@
 name=Forked-Branch Garami
-image=https://magiccards.info/scans/en/bok/125.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0ff39ae5-a241-4607-903e-201f56c675f9.jpg?1562875488
 value=3.500
 rarity=U
 type=Creature

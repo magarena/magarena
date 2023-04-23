@@ -1,5 +1,5 @@
 name=Frenetic Ogre
-image=https://magiccards.info/scans/en/od/195.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dc939cc-826a-4208-ba5b-a11e1cd47aa2.jpg?1562897656
 value=1.897
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Uktabi Orangutan
-image=https://magiccards.info/scans/en/6e/260.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6a944ef-dbf2-47c9-a245-dfd2533a0680.jpg?1562821973
 value=4.160
 removal=1
 rarity=U

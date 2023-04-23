@@ -1,5 +1,5 @@
 name=Dungrove Elder
-image=https://magiccards.info/scans/en/m12/171.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8b4ebbf-1613-42a0-97ff-2f36dc8d984a.jpg?1562657111
 value=4.189
 rarity=R
 type=Creature

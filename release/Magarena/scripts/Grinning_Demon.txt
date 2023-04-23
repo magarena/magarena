@@ -1,5 +1,5 @@
 name=Grinning Demon
-image=https://magiccards.info/scans/en/on/153.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72de2f66-0b86-4c21-b4c8-c2d97e3fd095.jpg?1562922147
 value=4.205
 rarity=R
 type=Creature

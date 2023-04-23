@@ -1,5 +1,5 @@
 name=Phenax, God of Deception
-image=https://magiccards.info/scans/en/bng/152.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8dfcb129-4665-40e4-b5cb-a79f3f40ae5c.jpg?1593092799
 value=3.526
 rarity=M
 type=Legendary,Enchantment,Creature

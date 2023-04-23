@@ -1,5 +1,5 @@
 name=Light of Day
-image=https://magiccards.info/scans/en/6e/29.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d5af047-7d98-4ba9-9ce1-c67563c19866.jpg?1562816668
 value=4.106
 rarity=U
 type=Enchantment

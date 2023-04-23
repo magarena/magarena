@@ -1,5 +1,5 @@
 name=Voidmage Prodigy
-image=https://magiccards.info/scans/en/tsts/34.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b26d5fc8-c148-4383-a1b9-f80da4d875aa.jpg?1562782639
 value=3.973
 rarity=R
 type=Creature

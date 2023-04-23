@@ -1,5 +1,5 @@
 name=Bane Alley Blackguard
-image=https://magiccards.info/scans/en/dgm/21.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15fcad03-4567-4f96-976e-01a07d8ab050.jpg?1562899196
 value=2.277
 rarity=C
 type=Creature

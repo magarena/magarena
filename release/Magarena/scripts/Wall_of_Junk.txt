@@ -1,5 +1,5 @@
 name=Wall of Junk
-image=https://magiccards.info/scans/en/us/315.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd3f88b3-9796-4d4d-af8b-543f0d280e77.jpg?1562938373
 value=3.962
 rarity=U
 type=Artifact,Creature

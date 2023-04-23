@@ -1,5 +1,5 @@
 name=Rushwood Herbalist
-image=https://magiccards.info/scans/en/mm/265.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9afde98f-a429-4eff-9d06-8582267ac74b.jpg?1562382072
 value=2.208
 rarity=C
 type=Creature

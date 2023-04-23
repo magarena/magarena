@@ -1,5 +1,5 @@
 name=Nezumi Graverobber
-image=https://magiccards.info/scans/en/cmd/92a.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a00a7180-49bd-4ead-852a-67b6b5e4b933.jpg?1564694995
 value=4.027
 rarity=U
 type=Creature

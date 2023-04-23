@@ -1,5 +1,5 @@
 name=Smoldering Butcher
-image=https://magiccards.info/scans/en/eve/42.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f764936-fceb-4a3d-ac32-15397d7ce664.jpg?1562921882
 value=3.167
 rarity=C
 type=Creature

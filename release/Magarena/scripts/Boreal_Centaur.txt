@@ -1,5 +1,5 @@
 name=Boreal Centaur
-image=https://magiccards.info/scans/en/cs/104.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05231fa1-47b8-49aa-9393-ec4d8384c41b.jpg?1593275363
 value=3.064
 rarity=C
 type=Snow,Creature

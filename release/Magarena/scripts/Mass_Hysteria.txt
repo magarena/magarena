@@ -1,5 +1,5 @@
 name=Mass Hysteria
-image=https://magiccards.info/scans/en/mi/99.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/1431354a-fcfa-4f67-a822-6dcc4d13ac3f.jpg?1562136604
 value=3.979
 rarity=R
 type=Enchantment

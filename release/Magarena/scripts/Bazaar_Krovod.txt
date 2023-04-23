@@ -1,5 +1,5 @@
 name=Bazaar Krovod
-image=https://magiccards.info/scans/en/rtr/7.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b07bb2fe-3a9b-47d0-864b-99a662d9544b.jpg?1562791650
 value=2.017
 rarity=U
 type=Creature

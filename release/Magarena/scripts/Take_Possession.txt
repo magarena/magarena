@@ -1,5 +1,5 @@
 name=Take Possession
-image=https://magiccards.info/scans/en/mma/66.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8632ab0-9b6d-4d32-8af9-c61e9206497f.jpg?1561968077
 value=3.947
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Supplant Form
-image=https://magiccards.info/scans/en/frf/54.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3df927c0-9aa9-450b-ab2a-ae12c5489d57.jpg?1562824437
 value=2.500
 rarity=R
 type=Instant

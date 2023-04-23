@@ -1,5 +1,5 @@
 name=Tattermunge Duo
-image=https://magiccards.info/scans/en/shm/218.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac93faba-8b40-48f4-b4eb-7c8677ed07e2.jpg?1562834531
 value=2.838
 rarity=C
 type=Creature

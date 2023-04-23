@@ -1,5 +1,5 @@
 name=Aurochs Herd
-image=https://magiccards.info/scans/en/cs/103.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d757b3ad-b808-4506-934e-727e065f66c1.jpg?1593275357
 value=3.625
 rarity=C
 type=Creature

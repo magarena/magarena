@@ -1,5 +1,5 @@
 name=Aven Tactician
-image=https://magiccards.info/scans/en/dtk/6.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9dfc3ec-ca06-40a6-b77c-c2432af9802f.jpg?1562792120
 value=2.500
 rarity=C
 type=Creature

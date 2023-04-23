@@ -1,5 +1,5 @@
 name=Dramatic Entrance
-image=https://magiccards.info/scans/en/shm/111.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/4562a300-8777-4a47-8650-8a2bc2678def.jpg?1562829489
 value=4.067
 rarity=R
 type=Instant

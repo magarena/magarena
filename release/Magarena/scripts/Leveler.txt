@@ -1,5 +1,5 @@
 name=Leveler
-image=https://magiccards.info/scans/en/mi/195.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03ffa3c3-dd29-47eb-abf2-7951fadb5c37.jpg?1562134247
 value=3.097
 rarity=R
 type=Artifact,Creature

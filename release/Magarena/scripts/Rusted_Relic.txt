@@ -1,5 +1,5 @@
 name=Rusted Relic
-image=https://magiccards.info/scans/en/mm2/227.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/797a4456-1677-49d5-bb4f-4fb062522f1e.jpg?1562263849
 image_updated=2015-11-05
 value=3.243
 rarity=C

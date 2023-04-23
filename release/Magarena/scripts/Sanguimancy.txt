@@ -1,5 +1,5 @@
 name=Sanguimancy
-image=https://magiccards.info/scans/en/bng/81.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb129def-4055-4b12-9944-39406b451553.jpg?1593092085
 value=3.395
 rarity=U
 type=Sorcery

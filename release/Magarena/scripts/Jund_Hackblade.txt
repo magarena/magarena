@@ -1,5 +1,5 @@
 name=Jund Hackblade
-image=https://magiccards.info/scans/en/arb/138.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61e3b73a-598b-4854-b811-2fd40fbce2d0.jpg?1562641629
 value=3.531
 rarity=C
 type=Creature

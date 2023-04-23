@@ -1,5 +1,5 @@
 name=Steelshaper Apprentice
-image=https://magiccards.info/scans/en/ds/15.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4793de1-4d5d-4538-b48f-db5d31757bcc.jpg?1562638605
 value=2.740
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Salvage
-image=https://magiccards.info/scans/en/po2/85.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3012e10-566b-447c-bb0a-dfc38c8e0fdf.jpg?1562952697
 value=3.360
 rarity=C
 type=Sorcery

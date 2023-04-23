@@ -1,5 +1,5 @@
 name=Aven Trailblazer
-image=https://magiccards.info/scans/en/cfx/4.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb032cd3-96a4-4cef-bb89-0843f2ed8189.jpg?1562803798
 value=2.212
 rarity=C
 type=Creature

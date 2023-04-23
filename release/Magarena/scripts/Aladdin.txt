@@ -1,5 +1,5 @@
 name=Aladdin
-image=https://magiccards.info/scans/en/ch/44.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/462094ff-5ec8-4a9b-8ab1-012c5f7d85ca.jpg?1562911462
 value=3.886
 rarity=R
 type=Creature

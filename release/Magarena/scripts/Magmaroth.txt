@@ -1,5 +1,5 @@
 name=Magmaroth
-image=https://magiccards.info/scans/en/hou/102.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76f87128-2d12-467b-895d-943f318b7c38.jpg?1562803882
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Thatcher Revolt
-image=https://magiccards.info/scans/en/avr/158.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea28bd68-47a8-47c6-be16-75ae622daf0a.jpg?1592709217
 value=3.750
 rarity=C
 type=Sorcery

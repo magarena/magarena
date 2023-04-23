@@ -1,5 +1,5 @@
 name=Into the Wilds
-image=https://magiccards.info/scans/en/m14/180.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecfa6c8d-b5b5-4b68-9ad4-c9d8169659d6.jpg?1562836865
 value=3.598
 rarity=R
 type=Enchantment

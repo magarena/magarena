@@ -1,5 +1,5 @@
 name=Cancel
-image=https://magiccards.info/scans/en/m19/48.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59e14910-ee2e-49ae-855e-46a8ab6cad82.jpg?1594735420
 image_updated=2018-08-07
 value=2.700
 rarity=C

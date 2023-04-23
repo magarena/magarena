@@ -1,5 +1,5 @@
 name=Tortured Existence
-image=https://magiccards.info/scans/en/sh/24.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1754b92b-d6f9-4503-af01-dee03f72a048.jpg?1562595922
 value=4.163
 rarity=C
 type=Enchantment

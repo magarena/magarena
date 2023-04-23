@@ -1,5 +1,5 @@
 name=Mossdog
-image=https://magiccards.info/scans/en/ne/106.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bbe0201-3df3-4d0c-8aa4-8f35f12c322c.jpg?1562629179
 value=2.429
 rarity=C
 type=Creature

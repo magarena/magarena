@@ -1,5 +1,5 @@
 name=Thalakos Drifters
-image=https://magiccards.info/scans/en/ex/47.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac7bb326-a07a-448c-a962-b9d3acc9d5b8.jpg?1562430820
 value=3.265
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Deathknell Kami
-image=https://magiccards.info/scans/en/sok/65.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09535c14-ae50-4528-b9db-7eacee14e3fa.jpg?1562492455
 value=1.892
 rarity=C
 type=Creature

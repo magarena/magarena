@@ -1,5 +1,5 @@
 name=Voidwielder
-image=https://magiccards.info/scans/en/rtr/56.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23723bc7-a68e-4810-bc87-60df916cbb8a.jpg?1562783775
 value=1.925
 rarity=C
 type=Creature

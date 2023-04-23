@@ -1,5 +1,5 @@
 name=Trained Jackal
-image=https://magiccards.info/scans/en/p3k/155.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01deb3cc-91e8-4ef3-964f-f36c6a21207c.jpg?1634292008
 value=3.423
 rarity=C
 type=Creature

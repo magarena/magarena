@@ -1,5 +1,5 @@
 name=Myth Realized
-image=https://magiccards.info/scans/en/dtk/26.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15afcabf-58a8-4650-a6cf-b7f2f01d0671.jpg?1673147065
 value=2.500
 rarity=R
 type=Enchantment

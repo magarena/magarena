@@ -1,5 +1,5 @@
 name=Kabuto Moth
-image=https://magiccards.info/scans/en/chk/20.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf3ccd16-bb1b-40d5-87a6-47a6132e0143.jpg?1593860612
 value=3.200
 rarity=C
 type=Creature

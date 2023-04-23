@@ -1,5 +1,5 @@
 name=Wind Dancer
-image=https://magiccards.info/scans/en/cns/111.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/469d217a-0f8c-48f8-bfc0-cf5e202c0ddc.jpg?1562429347
 value=3.750
 rarity=U
 type=Creature

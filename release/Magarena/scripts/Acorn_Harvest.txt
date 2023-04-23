@@ -1,5 +1,5 @@
 name=Acorn Harvest
-image=https://magiccards.info/scans/en/tr/118.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32987720-cc0c-416b-b79b-217d3b37542d.jpg?1562629169
 value=3.293
 rarity=C
 type=Sorcery

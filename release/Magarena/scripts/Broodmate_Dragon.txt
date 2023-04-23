@@ -1,5 +1,5 @@
 name=Broodmate Dragon
-image=https://magiccards.info/scans/en/mm3/153.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea62ec34-be95-4682-a3fd-9a92a89103b5.jpg?1562627824
 image_updated=2017-08-08
 value=4.070
 rarity=R

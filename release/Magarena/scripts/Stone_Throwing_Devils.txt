@@ -1,5 +1,5 @@
 name=Stone-Throwing Devils
-image=https://magiccards.info/scans/en/an/14.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1c387dd-1347-4443-91ce-b71f7ccdceba.jpg?1591989129
 value=3.886
 rarity=C
 type=Creature

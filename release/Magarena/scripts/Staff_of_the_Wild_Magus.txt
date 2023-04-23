@@ -1,5 +1,5 @@
 name=Staff of the Wild Magus
-image=https://magiccards.info/scans/en/m15/236.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e64f31e8-0b49-4510-a4df-2e0bea793d3e.jpg?1562796077
 value=0.929
 rarity=U
 type=Artifact

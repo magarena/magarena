@@ -1,5 +1,5 @@
 name=Burr Grafter
-image=https://magiccards.info/scans/en/chk/203.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/935e52a1-a651-4d88-99a8-7de074a01576.jpg?1562762519
 value=2.516
 rarity=C
 type=Creature

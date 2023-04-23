@@ -1,5 +1,5 @@
 name=Coral Helm
-image=https://magiccards.info/scans/en/5e/359.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4ac5a963-d3f3-4700-8c10-6c6974b20c24.jpg?1562912510
 value=1.625
 rarity=R
 type=Artifact

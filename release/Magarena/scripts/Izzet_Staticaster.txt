@@ -1,5 +1,5 @@
 name=Izzet Staticaster
-image=https://magiccards.info/scans/en/rtr/173.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/190ac2fe-532d-4d7e-9d74-07ae6850aac8.jpg?1562783254
 value=3.888
 rarity=U
 type=Creature

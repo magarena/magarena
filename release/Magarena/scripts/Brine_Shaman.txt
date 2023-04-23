@@ -1,5 +1,5 @@
 name=Brine Shaman
-image=https://magiccards.info/scans/en/ia/3.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b2dfbde-be23-42ea-be68-76e2c019c317.jpg?1581799176
 value=3.824
 rarity=C
 type=Creature

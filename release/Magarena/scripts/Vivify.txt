@@ -1,5 +1,5 @@
 name=Vivify
-image=https://magiccards.info/scans/en/od/281.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8b5e7ed-a0ab-48f6-8f69-56a8bd115007.jpg?1562941739
 value=2.275
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Arrogant Wurm
-image=https://magiccards.info/scans/en/tr/120.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dd6977e-269a-4cd1-99ad-37846a0647a7.jpg?1562904335
 value=4.000
 rarity=U
 type=Creature

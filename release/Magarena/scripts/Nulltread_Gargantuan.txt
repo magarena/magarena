@@ -1,5 +1,5 @@
 name=Nulltread Gargantuan
-image=https://magiccards.info/scans/en/arb/102.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a263f594-621e-46af-8561-f7eee565a19a.jpg?1562643297
 value=3.759
 rarity=U
 type=Creature

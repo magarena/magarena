@@ -1,5 +1,5 @@
 name=Soultether Golem
-image=https://magiccards.info/scans/en/fut/164.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6efa61f0-c7bd-49e2-9d66-bf15ad0e9d03.jpg?1562917178
 value=2.272
 rarity=U
 type=Artifact,Creature

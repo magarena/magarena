@@ -1,5 +1,5 @@
 name=Vengeful Firebrand
-image=https://magiccards.info/scans/en/mt/111.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5db7e33-188f-4d66-a58b-7b5c5760a773.jpg?1562882114
 value=2.969
 rarity=R
 type=Creature

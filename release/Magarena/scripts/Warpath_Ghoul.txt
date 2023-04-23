@@ -1,5 +1,5 @@
 name=Warpath Ghoul
-image=https://magiccards.info/scans/en/m12/117.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94785274-fa79-47cc-9896-0f5f695abb21.jpg?1562651882
 value=2.091
 rarity=C
 type=Creature

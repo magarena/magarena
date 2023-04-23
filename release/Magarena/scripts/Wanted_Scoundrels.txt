@@ -1,5 +1,5 @@
 name=Wanted Scoundrels
-image=https://magiccards.info/scans/en/xln/131.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/6704e4c9-3b5e-4ba5-a5bc-6d684e2983e9.jpg?1562556829
 value=2.500
 rarity=U
 type=Creature

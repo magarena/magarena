@@ -1,5 +1,5 @@
 name=Ordeal of Heliod
-image=https://magiccards.info/scans/en/a25/27.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd652c85-f8ca-4e38-a21b-f21b729bcf92.jpg?1562442078
 image_updated=2018-04-27
 value=3.535
 rarity=U

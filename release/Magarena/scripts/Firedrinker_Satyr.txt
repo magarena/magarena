@@ -1,5 +1,5 @@
 name=Firedrinker Satyr
-image=https://magiccards.info/scans/en/ths/122.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/683eaf5a-2f43-477f-b212-70ca5fe04f13.jpg?1562819273
 value=3.426
 rarity=R
 type=Creature

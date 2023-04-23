@@ -1,5 +1,5 @@
 name=Standstill
-image=https://magiccards.info/scans/en/od/102.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ede3f6f-e642-4fe4-aa37-0f01cdf4d149.jpg?1562906537
 value=4.582
 rarity=U
 type=Enchantment

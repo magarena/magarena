@@ -1,5 +1,5 @@
 name=Stronghold Assassin
-image=https://magiccards.info/scans/en/7e/166.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22f2bad4-565d-4302-a8aa-57e03f65cc84.jpg?1562428652
 value=4.346
 rarity=R
 type=Creature

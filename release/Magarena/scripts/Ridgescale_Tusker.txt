@@ -1,5 +1,5 @@
 name=Ridgescale Tusker
-image=https://magiccards.info/scans/en/aer/121.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84b689cc-35ef-4a23-bb1e-4d81b9fb8455.jpg?1579814138
 value=2.500
 rarity=U
 type=Creature

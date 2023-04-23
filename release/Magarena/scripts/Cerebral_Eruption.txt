@@ -1,5 +1,5 @@
 name=Cerebral Eruption
-image=https://magiccards.info/scans/en/som/86.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77161159-ee2c-485d-8674-d8590ccc62e1.jpg?1562819165
 value=3.487
 rarity=R
 type=Sorcery

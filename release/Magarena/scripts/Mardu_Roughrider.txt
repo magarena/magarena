@@ -1,5 +1,5 @@
 name=Mardu Roughrider
-image=https://magiccards.info/scans/en/ktk/187.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6341345-55a6-43f3-915a-c03afea92ec3.jpg?1562794206
 value=3.250
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ghost Warden
-image=https://magiccards.info/scans/en/10e/16.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cd81534-79cb-4fde-bfa5-11c510ac6e11.jpg?1562545510
 value=2.829
 rarity=C
 type=Creature

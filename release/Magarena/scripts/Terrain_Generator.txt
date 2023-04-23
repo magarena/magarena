@@ -1,5 +1,5 @@
 name=Terrain Generator
-image=https://magiccards.info/scans/en/ne/143.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f40e9f0f-8c0d-4bfd-9872-370ce3763006.jpg?1674143173
 image_updated=2017-01-10
 value=4.306
 rarity=U

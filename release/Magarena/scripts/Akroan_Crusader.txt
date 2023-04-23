@@ -1,5 +1,5 @@
 name=Akroan Crusader
-image=https://magiccards.info/scans/en/ths/111.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73d295ac-3c83-47db-a324-aa4907bcefdd.jpg?1547517140
 value=3.524
 rarity=C
 type=Creature

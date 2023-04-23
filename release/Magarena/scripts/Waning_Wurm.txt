@@ -1,5 +1,5 @@
 name=Waning Wurm
-image=https://magiccards.info/scans/en/pc/83.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b20b0048-f93a-4349-b5d1-201ab0a38d1b.jpg?1562579862
 value=3.181
 rarity=U
 type=Creature

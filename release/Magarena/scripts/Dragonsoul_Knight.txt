@@ -1,5 +1,5 @@
 name=Dragonsoul Knight
-image=https://magiccards.info/scans/en/mm2/112.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ef2daf4-45ff-4604-b572-31dfaf1e70fe.jpg?1562261164
 image_updated=2015-11-05
 value=3.014
 rarity=C

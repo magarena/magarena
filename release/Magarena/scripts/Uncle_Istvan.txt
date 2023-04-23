@@ -1,5 +1,5 @@
 name=Uncle Istvan
-image=https://magiccards.info/scans/en/tsts/51.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bf85d06-9efe-488d-9af0-fb945b346524.jpg?1562781031
 value=4.306
 rarity=U
 type=Creature

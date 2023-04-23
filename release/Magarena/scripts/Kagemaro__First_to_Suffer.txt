@@ -1,5 +1,5 @@
 name=Kagemaro, First to Suffer
-image=https://magiccards.info/scans/en/sok/73.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/752f8672-1c37-4ab2-b290-fe3147784475.jpg?1562494640
 value=3.733
 rarity=R
 type=Legendary,Creature

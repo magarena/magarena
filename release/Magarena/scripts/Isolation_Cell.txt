@@ -1,5 +1,5 @@
 name=Isolation Cell
-image=https://magiccards.info/scans/en/nph/141.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5e72c64-cb0e-4a04-97d0-3537bb0420cd.jpg?1562881408
 value=3.062
 rarity=U
 type=Artifact

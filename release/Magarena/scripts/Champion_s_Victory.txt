@@ -1,5 +1,5 @@
 name=Champion's Victory
-image=https://magiccards.info/scans/en/p3k/39.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/451ef657-8590-497a-9d98-a732d4de6165.jpg?1562256077
 value=1.662
 rarity=U
 type=Instant

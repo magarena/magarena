@@ -1,5 +1,5 @@
 name=Springjack Shepherd
-image=https://magiccards.info/scans/en/eve/15.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e25991e3-4b83-4521-ab2b-c11b1fa9d0bd.jpg?1562942728
 value=3.708
 rarity=U
 type=Creature

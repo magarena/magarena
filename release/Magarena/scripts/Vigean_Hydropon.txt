@@ -1,5 +1,5 @@
 name=Vigean Hydropon
-image=https://magiccards.info/scans/en/di/135.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/6373aedc-4385-4608-bfbc-1937d6528d28.jpg?1593273805
 value=3.348
 rarity=C
 type=Creature

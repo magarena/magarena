@@ -1,5 +1,5 @@
 name=D'Avenant Trapper
-image=https://magiccards.info/scans/en/dom/11.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5881ab3-566b-4999-997e-cd5ecb84282b.jpg?1615334479
 value=2.500
 rarity=C
 type=Creature

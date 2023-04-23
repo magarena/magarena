@@ -1,5 +1,5 @@
 name=Essence Harvest
-image=https://magiccards.info/scans/en/avr/100.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c3fac03-a019-4faa-bc1c-09e3a394fff7.jpg?1592708852
 value=3.633
 rarity=C
 type=Sorcery

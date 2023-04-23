@@ -1,5 +1,5 @@
 name=Chimeric Mass
-image=https://magiccards.info/scans/en/mm2/204.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ef3dea8-b3e5-432e-a65d-442fe06ca976.jpg?1562261165
 value=3.624
 rarity=R
 type=Artifact

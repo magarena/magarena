@@ -1,5 +1,5 @@
 name=Phantom Monster
-image=https://magiccards.info/scans/en/ima/69.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5cddd47-8c2b-47de-bf82-e810d4cf4df4.jpg?1562853413
 image_updated=2017-04-12
 value=3.733
 rarity=C

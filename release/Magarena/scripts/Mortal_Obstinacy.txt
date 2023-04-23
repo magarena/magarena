@@ -1,5 +1,5 @@
 name=Mortal Obstinacy
-image=https://magiccards.info/scans/en/jou/17.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67652df1-f2cc-44cd-ac66-9722d4cd86e9.jpg?1593095278
 value=3.000
 rarity=C
 type=Enchantment

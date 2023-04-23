@@ -1,5 +1,5 @@
 name=Rib Cage Spider
-image=https://magiccards.info/scans/en/pr/121.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d71bebea-1634-4d9a-b3ad-2e01ecacad7e.jpg?1562935202
 value=3.037
 rarity=C
 type=Creature

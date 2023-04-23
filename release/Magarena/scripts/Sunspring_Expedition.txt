@@ -1,5 +1,5 @@
 name=Sunspring Expedition
-image=https://magiccards.info/scans/en/zen/37.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0811c4c-9e91-4785-b3d2-e4221c5d92d8.jpg?1562615535
 value=3.309
 rarity=C
 type=Enchantment

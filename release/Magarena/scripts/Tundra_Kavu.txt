@@ -1,5 +1,5 @@
 name=Tundra Kavu
-image=https://magiccards.info/scans/en/ap/71.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc34e735-ac3c-4954-a4c8-3ed55d811715.jpg?1562954774
 value=3.129
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vulshok War Boar
-image=https://magiccards.info/scans/en/ds/72.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb6b232a-834c-4c9a-bf36-821d125dc318.jpg?1562639233
 value=3.054
 rarity=U
 type=Creature

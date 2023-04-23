@@ -1,5 +1,5 @@
 name=Defiant Elf
-image=https://magiccards.info/scans/en/le/123.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b7a0b8f-6942-40b0-8efc-234ae77855b4.jpg?1562907012
 value=3.276
 rarity=C
 type=Creature

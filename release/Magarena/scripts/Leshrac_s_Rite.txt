@@ -1,5 +1,5 @@
 name=Leshrac's Rite
-image=https://magiccards.info/scans/en/7e/144.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4d37d29-b667-4124-907d-5636a6db044f.jpg?1562249915
 value=2.206
 rarity=U
 type=Enchantment

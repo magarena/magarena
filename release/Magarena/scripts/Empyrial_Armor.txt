@@ -1,5 +1,5 @@
 name=Empyrial Armor
-image=https://magiccards.info/scans/en/wl/129.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/6619db75-4d32-4c7b-856c-00aa33434342.jpg?1562915700
 value=3.500
 rarity=C
 type=Enchantment

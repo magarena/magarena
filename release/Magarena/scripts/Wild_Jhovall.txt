@@ -1,5 +1,5 @@
 name=Wild Jhovall
-image=https://magiccards.info/scans/en/mm/227.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64bcc06a-de86-4387-882d-ead33e9c9e01.jpg?1562380895
 value=2.056
 rarity=C
 type=Creature

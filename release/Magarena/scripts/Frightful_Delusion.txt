@@ -1,5 +1,5 @@
 name=Frightful Delusion
-image=https://magiccards.info/scans/en/isd/57.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38c9ba98-90b4-4c28-9eef-a4fe0913b921.jpg?1562828708
 value=3.097
 rarity=C
 type=Instant

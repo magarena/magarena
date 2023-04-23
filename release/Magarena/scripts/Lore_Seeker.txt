@@ -1,5 +1,5 @@
 name=Lore Seeker
-image=https://magiccards.info/scans/en/cns/62.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b8c78c8-b3fa-4a67-bf6c-cf708dedf42e.jpg?1562866376
 value=3.923
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Gaze of Adamaro
-image=https://magiccards.info/scans/en/sok/98.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44cab92a-54d8-496c-8a97-7f3448f5b1e9.jpg?1562493493
 value=2.686
 rarity=U
 type=Instant

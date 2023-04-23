@@ -1,5 +1,5 @@
 name=Razor Golem
-image=https://magiccards.info/scans/en/ds/137.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64a86ec3-378f-4fca-b5f7-6dc02d47f7b9.jpg?1562637259
 value=4.152
 rarity=C
 type=Artifact,Creature

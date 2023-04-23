@@ -1,5 +1,5 @@
 name=Hesitation
-image=https://magiccards.info/scans/en/sh/33.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3ce5dbc-3597-42e8-859a-cac105c8102e.jpg?1562597828
 value=3.633
 rarity=U
 type=Enchantment

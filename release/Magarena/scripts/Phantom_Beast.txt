@@ -1,5 +1,5 @@
 name=Phantom Beast
-image=https://magiccards.info/scans/en/m11/69.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/572df99b-af44-4128-8b2c-e40b1cea816b.jpg?1562460582
 value=3.093
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wirewood Hivemaster
-image=https://magiccards.info/scans/en/le/145.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea55b4fc-366f-4906-9eaa-9085f6a22612.jpg?1562942070
 value=3.868
 rarity=U
 type=Creature

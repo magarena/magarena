@@ -1,5 +1,5 @@
 name=Stone Calendar
-image=https://magiccards.info/scans/en/dk/108.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e682d19b-7936-4942-b42c-c836d6741a45.jpg?1559592275
 value=3.057
 rarity=R
 type=Artifact

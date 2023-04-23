@@ -1,5 +1,5 @@
 name=Yavimaya Coast
-image=https://magiccards.info/scans/en/ori/252.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0ed6c8b0-f154-4678-89d0-9869864ead8d.jpg?1673308410
 image_updated=2015-11-05
 value=2.500
 rarity=R

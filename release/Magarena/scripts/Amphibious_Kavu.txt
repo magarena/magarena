@@ -1,5 +1,5 @@
 name=Amphibious Kavu
-image=https://magiccards.info/scans/en/ps/78.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37d94fb2-958c-487e-9f64-52d2771c6ea4.jpg?1562906731
 value=2.729
 rarity=C
 type=Creature

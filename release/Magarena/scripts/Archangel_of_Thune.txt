@@ -1,5 +1,5 @@
 name=Archangel of Thune
-image=https://magiccards.info/scans/en/ima/8.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15c34447-b0f4-4fcc-b557-23c92850b31b.jpg?1598303082
 image_updated=2017-04-12
 value=3.970
 rarity=M

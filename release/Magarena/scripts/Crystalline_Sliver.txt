@@ -1,5 +1,5 @@
 name=Crystalline Sliver
-image=https://magiccards.info/scans/en/sh/139.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d30d18c1-65a2-447a-9ebd-194e74e46015.jpg?1562431745
 value=4.421
 rarity=U
 type=Creature

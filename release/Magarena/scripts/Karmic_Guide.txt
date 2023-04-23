@@ -1,5 +1,5 @@
 name=Karmic Guide
-image=https://magiccards.info/scans/en/ema/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f550f0dd-9e20-4faf-a374-9d1c5830a52f.jpg?1641601382
 value=4.500
 rarity=R
 type=Creature

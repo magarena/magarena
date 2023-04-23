@@ -1,5 +1,5 @@
 name=Viashino Heretic
-image=https://magiccards.info/scans/en/ul/95.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/143e435e-e3a1-45b0-81c3-bd47916df8ac.jpg?1562862323
 value=4.443
 rarity=U
 type=Creature

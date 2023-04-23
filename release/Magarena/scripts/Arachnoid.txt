@@ -1,5 +1,5 @@
 name=Arachnoid
-image=https://magiccards.info/scans/en/5dn/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/836d5ce6-d5c9-4fb5-8302-53d25b5531b5.jpg?1562878168
 value=1.371
 rarity=U
 type=Artifact,Creature

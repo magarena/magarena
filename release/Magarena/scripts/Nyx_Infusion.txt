@@ -1,5 +1,5 @@
 name=Nyx Infusion
-image=https://magiccards.info/scans/en/jou/77.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1910d072-1660-4918-a338-d9f87926541d.jpg?1593095788
 value=2.971
 rarity=C
 type=Enchantment

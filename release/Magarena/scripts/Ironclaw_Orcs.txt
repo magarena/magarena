@@ -1,5 +1,5 @@
 name=Ironclaw Orcs
-image=https://magiccards.info/scans/en/5e/245.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abee9c59-48c2-4c2c-a3d6-ccb0d4652831.jpg?1562870013
 value=2.558
 rarity=C
 type=Creature

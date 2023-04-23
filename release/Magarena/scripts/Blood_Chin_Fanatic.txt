@@ -1,5 +1,5 @@
 name=Blood-Chin Fanatic
-image=https://magiccards.info/scans/en/dtk/88.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eb00d55-de56-4bbb-9545-e8cfb25a4f23.jpg?1562786071
 value=2.500
 rarity=R
 type=Creature

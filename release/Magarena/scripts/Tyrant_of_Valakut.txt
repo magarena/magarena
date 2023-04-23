@@ -1,5 +1,5 @@
 name=Tyrant of Valakut
-image=https://magiccards.info/scans/en/ogw/119.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f388be9e-332e-4199-9f30-862d631fa26b.jpg?1562943954
 image_updated=2016-02-29
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Thrash of Raptors
-image=https://magiccards.info/scans/en/xln/168.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a03b859-811c-45ff-8d8a-9e87e4bbf113.jpg?1562552519
 value=2.500
 rarity=C
 type=Creature

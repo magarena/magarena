@@ -1,5 +1,5 @@
 name=Mugging
-image=https://magiccards.info/scans/en/gtc/102.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d36724e-0669-43f9-9d10-f67562b8c6bc.jpg?1601078417
 value=2.886
 removal=2
 rarity=C

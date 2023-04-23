@@ -1,5 +1,5 @@
 name=Nivix Guildmage
-image=https://magiccards.info/scans/en/rtr/182.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3669d445-197d-41ad-9ff4-1d5895378fb6.jpg?1562605063
 value=3.900
 rarity=U
 type=Creature

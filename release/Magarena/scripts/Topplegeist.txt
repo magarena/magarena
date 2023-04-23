@@ -1,5 +1,5 @@
 name=Topplegeist
-image=https://magiccards.info/scans/en/soi/45.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec9e8653-13ae-446c-b341-85c9b3fa6ca8.jpg?1576383942
 image_updated=2016-06-04
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Venomous Fangs
-image=https://magiccards.info/scans/en/us/280.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5ae1348-c063-4ec8-9d8c-3d19a6421800.jpg?1562946825
 value=3.066
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Planar Portal
-image=https://magiccards.info/scans/en/8e/311.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8743b2ce-0e18-42c9-aee4-f13197a9c481.jpg?1562922341
 value=4.000
 rarity=R
 type=Artifact

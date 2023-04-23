@@ -1,5 +1,5 @@
 name=Vanguard of Brimaz
-image=https://magiccards.info/scans/en/bng/29.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adb38717-97d5-4763-9e6c-46251df704ed.jpg?1593091588
 value=3.764
 rarity=U
 type=Creature

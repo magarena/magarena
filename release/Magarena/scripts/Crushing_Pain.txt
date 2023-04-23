@@ -1,5 +1,5 @@
 name=Crushing Pain
-image=https://magiccards.info/scans/en/chk/162.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c58b4374-1a50-4574-8493-f5535c1020e8.jpg?1562764199
 value=3.031
 rarity=C
 type=Instant

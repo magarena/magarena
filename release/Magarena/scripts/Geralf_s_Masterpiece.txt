@@ -1,5 +1,5 @@
 name=Geralf's Masterpiece
-image=https://magiccards.info/scans/en/soi/65.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f00d28b8-2ed8-4266-a870-d308f9ebd5da.jpg?1576384088
 value=2.500
 rarity=M
 type=Creature

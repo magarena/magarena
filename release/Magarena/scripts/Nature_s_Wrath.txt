@@ -1,5 +1,5 @@
 name=Nature's Wrath
-image=https://magiccards.info/scans/en/ai/82.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91a05306-f3f7-436d-8d8c-58217f04610b.jpg?1562869537
 value=3.558
 rarity=R
 type=Enchantment

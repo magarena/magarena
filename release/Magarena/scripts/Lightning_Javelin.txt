@@ -1,5 +1,5 @@
 name=Lightning Javelin
-image=https://magiccards.info/scans/en/ori/153.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1ccaeed-9670-4432-8a45-d5c06119fa9f.jpg?1562040115
 image_updated=2015-11-05
 value=2.500
 rarity=C

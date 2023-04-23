@@ -1,5 +1,5 @@
 name=Fade from Memory
-image=https://magiccards.info/scans/en/on/144.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56b34afa-0183-49aa-aa5f-03e070020136.jpg?1562915291
 value=2.159
 rarity=U
 type=Instant

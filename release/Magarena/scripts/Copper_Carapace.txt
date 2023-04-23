@@ -1,5 +1,5 @@
 name=Copper Carapace
-image=https://magiccards.info/scans/en/mm2/205.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24eb220b-3ff1-4396-87e3-7aaaa1098691.jpg?1562259754
 value=2.234
 rarity=C
 type=Artifact

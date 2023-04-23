@@ -1,5 +1,5 @@
 name=Aven Initiate
-image=https://magiccards.info/scans/en/akh/43.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e078dfbe-ebdf-4ea8-aed7-cb2c986e7656.jpg?1673147207
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kolaghan Aspirant
-image=https://magiccards.info/scans/en/dtk/143.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa17972e-c16b-4dec-a108-1c3fb0138a4e.jpg?1562791311
 value=2.500
 rarity=C
 type=Creature

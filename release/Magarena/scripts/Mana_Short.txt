@@ -1,5 +1,5 @@
 name=Mana Short
-image=https://magiccards.info/scans/en/7e/86.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0486784-de03-47a7-949d-550fd23492bc.jpg?1562244544
 value=4.377
 rarity=R
 type=Instant

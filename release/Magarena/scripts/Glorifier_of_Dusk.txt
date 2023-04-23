@@ -1,5 +1,5 @@
 name=Glorifier of Dusk
-image=https://magiccards.info/scans/en/xln/12.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aaf87f95-1c77-455a-8feb-57bfd4d159c9.jpg?1562561870
 value=2.500
 rarity=U
 type=Creature

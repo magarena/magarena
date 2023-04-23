@@ -1,5 +1,5 @@
 name=Matsu-Tribe Sniper
-image=https://magiccards.info/scans/en/bok/136.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/143af295-040d-400e-ae23-59abd2f88e11.jpg?1562875582
 value=3.861
 rarity=C
 type=Creature

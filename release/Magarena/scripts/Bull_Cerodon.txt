@@ -1,5 +1,5 @@
 name=Bull Cerodon
-image=https://magiccards.info/scans/en/ala/161.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d375f2c-8d43-4e25-a0fb-9e936a03d5f7.jpg?1562841663
 image_updated=2016-12-13
 value=3.365
 rarity=U

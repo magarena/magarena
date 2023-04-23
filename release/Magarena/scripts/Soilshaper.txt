@@ -1,5 +1,5 @@
 name=Soilshaper
-image=https://magiccards.info/scans/en/chk/243.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae4066c3-bcb0-41c4-a4d3-a22bd186fd13.jpg?1562763666
 value=2.650
 rarity=U
 type=Creature

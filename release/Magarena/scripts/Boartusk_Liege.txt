@@ -1,5 +1,5 @@
 name=Boartusk Liege
-image=https://magiccards.info/scans/en/shm/202.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f28e081-7994-468d-8505-9981b90c001c.jpg?1673148400
 value=3.929
 rarity=R
 type=Creature

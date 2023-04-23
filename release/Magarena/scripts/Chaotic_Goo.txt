@@ -1,5 +1,5 @@
 name=Chaotic Goo
-image=https://magiccards.info/scans/en/tp/168.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e9881a4-3078-4fe0-be09-54ddad1d18a0.jpg?1562052777
 value=3.403
 rarity=R
 type=Creature

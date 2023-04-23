@@ -1,5 +1,5 @@
 name=Blinding Souleater
-image=https://magiccards.info/scans/en/mm2/202.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a0dfbd3-4b19-4f56-b6c2-7107a3cba4ec.jpg?1562263851
 value=2.831
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Veteran Cavalier
-image=https://magiccards.info/scans/en/9e/52.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31072355-0b20-4830-9d46-ca71783af84b.jpg?1562733299
 value=3.500
 rarity=C
 type=Creature

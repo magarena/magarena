@@ -1,5 +1,5 @@
 name=Shattering Pulse
-image=https://magiccards.info/scans/en/ex/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89d3b846-6071-4d65-86ba-da08c4bd0aa1.jpg?1562088309
 value=4.066
 removal=1
 rarity=C

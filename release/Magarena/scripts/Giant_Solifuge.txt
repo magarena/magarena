@@ -1,5 +1,5 @@
 name=Giant Solifuge
-image=https://magiccards.info/scans/en/ema/216.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4bb6038-e2e9-4de2-a94e-0798c80a94c6.jpg?1580015158
 value=4.051
 rarity=R
 type=Creature

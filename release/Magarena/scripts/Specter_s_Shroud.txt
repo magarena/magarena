@@ -1,5 +1,5 @@
 name=Specter's Shroud
-image=https://magiccards.info/scans/en/ds/142.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a6d2e20-3887-4996-adbe-304dff27dea6.jpg?1562638363
 value=3.632
 rarity=U
 type=Artifact

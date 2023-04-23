@@ -1,5 +1,5 @@
 name=Demon of Catastrophes
-image=https://magiccards.info/scans/en/m19/91.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d50f9563-7bf8-4c3c-ac82-327221e56551.jpg?1562304419
 value=2.500
 rarity=R
 type=Creature

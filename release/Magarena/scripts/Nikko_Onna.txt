@@ -1,5 +1,5 @@
 name=Nikko-Onna
-image=https://magiccards.info/scans/en/sok/21.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd7ecd0c-9cfb-4cf3-be62-d949b58b19a4.jpg?1562495623
 value=3.556
 rarity=U
 type=Creature

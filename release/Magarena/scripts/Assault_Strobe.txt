@@ -1,5 +1,5 @@
 name=Assault Strobe
-image=https://magiccards.info/scans/en/som/82.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b505c78-5dbd-483d-92bb-5144060e962f.jpg?1562820811
 value=3.850
 rarity=C
 type=Sorcery

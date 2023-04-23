@@ -1,5 +1,5 @@
 name=Terra Eternal
-image=https://magiccards.info/scans/en/wwk/22.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bad0759-4132-42b5-9a26-0fcf321a60e0.jpg?1562292553
 value=3.853
 rarity=R
 type=Enchantment

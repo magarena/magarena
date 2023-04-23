@@ -1,5 +1,5 @@
 name=Stalker Hag
-image=https://magiccards.info/scans/en/eve/129.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c0eed33-553a-4865-9b22-30c33fbd1c51.jpg?1562914237
 value=3.568
 rarity=U
 type=Creature

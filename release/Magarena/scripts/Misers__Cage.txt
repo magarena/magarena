@@ -1,5 +1,5 @@
 name=Misers' Cage
-image=https://magiccards.info/scans/en/mr/276.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4c00691-26b1-4e7a-bdf5-4b15f0eb45ce.jpg?1562722855
 value=2.667
 rarity=R
 type=Artifact

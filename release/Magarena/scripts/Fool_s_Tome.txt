@@ -1,5 +1,5 @@
 name=Fool's Tome
-image=https://magiccards.info/scans/en/tp/279.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83be257c-8945-46be-8b58-fb2881084026.jpg?1562054974
 value=2.632
 rarity=R
 type=Artifact

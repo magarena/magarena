@@ -1,5 +1,5 @@
 name=Dauthi Slayer
-image=https://magiccards.info/scans/en/tsts/41.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c289baab-04ee-4639-bc9b-9f032752fa69.jpg?1562431296
 value=4.187
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Phage the Untouchable
-image=https://magiccards.info/scans/en/cns/120.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d497a5a3-65fb-4c12-b3f2-8ce4cf4e0f6f.jpg?1562866889
 value=4.250
 rarity=M
 type=Legendary,Creature

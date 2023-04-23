@@ -1,5 +1,5 @@
 name=Turn to Mist
-image=https://magiccards.info/scans/en/shm/155.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/160d3bf1-5f8b-431c-bb4e-a6874c69817a.jpg?1547518338
 value=3.393
 removal=1
 rarity=C

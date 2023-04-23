@@ -1,5 +1,5 @@
 name=Evil Eye of Urborg
-image=https://magiccards.info/scans/en/ts/107.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc17fe31-11f1-48e0-9b0d-7c7dcda417a6.jpg?1562948408
 value=3.903
 rarity=U
 type=Creature

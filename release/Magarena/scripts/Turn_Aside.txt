@@ -1,5 +1,5 @@
 name=Turn Aside
-image=https://magiccards.info/scans/en/emn/78.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b7573c2-484c-4b4e-9c26-0f005bd1daee.jpg?1576384240
 image_updated=2016-09-09
 value=3.722
 rarity=C

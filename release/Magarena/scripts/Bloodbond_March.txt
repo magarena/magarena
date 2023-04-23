@@ -1,5 +1,5 @@
 name=Bloodbond March
-image=https://magiccards.info/scans/en/rav/192.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb977f5b-2202-43c1-a8c0-7fba8c093fa2.jpg?1598916754
 value=3.862
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Niall Silvain
-image=https://magiccards.info/scans/en/dk/45.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d5911b5-a54e-4ebb-9c36-d4dc8e97bb4b.jpg?1562932140
 value=1.206
 rarity=R
 type=Creature

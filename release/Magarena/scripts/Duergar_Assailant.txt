@@ -1,5 +1,5 @@
 name=Duergar Assailant
-image=https://magiccards.info/scans/en/eve/136.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6555cbb-97fc-4258-9b11-096c3eaec833.jpg?1562930048
 value=2.514
 rarity=C
 type=Creature

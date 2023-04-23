@@ -1,5 +1,5 @@
 name=Isamaru, Hound of Konda
-image=https://magiccards.info/scans/en/chk/19.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6afead32-3542-44c4-82d6-b6a81beb9f90.jpg?1600713424
 value=4.226
 rarity=R
 type=Legendary,Creature

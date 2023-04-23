@@ -1,5 +1,5 @@
 name=Treasure Hunter
-image=https://magiccards.info/scans/en/10e/52.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0282b59e-78ef-412d-bb76-fb337f32a213.jpg?1562542995
 value=3.603
 rarity=U
 type=Creature

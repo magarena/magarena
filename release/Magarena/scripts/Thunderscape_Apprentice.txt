@@ -1,5 +1,5 @@
 name=Thunderscape Apprentice
-image=https://magiccards.info/scans/en/in/174.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75a0b075-5414-48d3-a2b1-47dc20213e96.jpg?1562918595
 value=3.107
 rarity=C
 type=Creature

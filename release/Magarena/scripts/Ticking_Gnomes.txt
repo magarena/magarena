@@ -1,5 +1,5 @@
 name=Ticking Gnomes
-image=https://magiccards.info/scans/en/ema/233.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db6358cf-fcb9-42af-9755-dd1f39bfc8ff.jpg?1580015278
 value=2.656
 removal=1
 rarity=U

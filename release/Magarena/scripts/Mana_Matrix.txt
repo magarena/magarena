@@ -1,5 +1,5 @@
 name=Mana Matrix
-image=https://magiccards.info/scans/en/lg/230.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c69b20a-34f8-4c61-babe-1d3221c28a07.jpg?1562897842
 value=2.808
 rarity=R
 type=Artifact

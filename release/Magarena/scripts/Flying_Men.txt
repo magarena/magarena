@@ -1,5 +1,5 @@
 name=Flying Men
-image=https://magiccards.info/scans/en/tsts/20.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/0656ed76-4c8e-4094-8edd-9b49780cadf7.jpg?1562770968
 value=3.949
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Word of Seizing
-image=https://magiccards.info/scans/en/c14/185.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4aa93215-9848-42d4-a386-6a248c2a1742.jpg?1608912345
 image_updated=2016-02-29
 value=2.500
 rarity=R

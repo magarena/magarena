@@ -1,5 +1,5 @@
 name=Endless One
-image=https://magiccards.info/scans/en/bfz/8.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64820f4f-1f78-4338-beb8-5ed5a447cfe4.jpg?1562918655
 image_updated=2015-11-08
 value=2.500
 rarity=R

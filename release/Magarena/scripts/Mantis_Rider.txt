@@ -1,5 +1,5 @@
 name=Mantis Rider
-image=https://magiccards.info/scans/en/ktk/184.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82d5ce46-7118-4ede-ba1d-c387e7ce16e7.jpg?1562789458
 value=4.500
 rarity=R
 type=Creature

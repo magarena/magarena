@@ -1,5 +1,5 @@
 name=Touch of Invisibility
-image=https://magiccards.info/scans/en/od/109.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5a0c915-92a9-4eb0-a02a-c1571b00761b.jpg?1562925944
 value=1.383
 rarity=C
 type=Sorcery

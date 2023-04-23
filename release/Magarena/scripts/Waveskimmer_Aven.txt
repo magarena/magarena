@@ -1,5 +1,5 @@
 name=Waveskimmer Aven
-image=https://magiccards.info/scans/en/ala/207.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e75ebcb4-5db8-4c72-9f65-8ee8f2c893ea.jpg?1562710196
 value=2.042
 rarity=C
 type=Creature

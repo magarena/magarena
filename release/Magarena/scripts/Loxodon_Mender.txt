@@ -1,5 +1,5 @@
 name=Loxodon Mender
-image=https://magiccards.info/scans/en/mi/12.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c17ac7c1-6d53-40b4-921f-4e23e4026041.jpg?1562156798
 value=1.191
 rarity=C
 type=Creature

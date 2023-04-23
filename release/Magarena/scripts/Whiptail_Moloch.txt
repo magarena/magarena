@@ -1,5 +1,5 @@
 name=Whiptail Moloch
-image=https://magiccards.info/scans/en/di/79.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccd8e674-49be-47b7-910d-736c9acfa916.jpg?1593273324
 value=1.289
 rarity=C
 type=Creature

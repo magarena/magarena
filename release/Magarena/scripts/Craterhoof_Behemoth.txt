@@ -1,5 +1,5 @@
 name=Craterhoof Behemoth
-image=https://magiccards.info/scans/en/mm3/122.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44afd414-cc69-4888-ba12-7ea87e60b1f7.jpg?1601079153
 image_updated=2017-08-08
 value=3.971
 rarity=M

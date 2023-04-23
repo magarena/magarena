@@ -1,5 +1,5 @@
 name=Yew Spirit
-image=https://magiccards.info/scans/en/avr/207.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9320432-4f89-4363-91e6-2e740535cc2e.jpg?1592709520
 value=2.934
 rarity=U
 type=Creature

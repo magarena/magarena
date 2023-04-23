@@ -1,5 +1,5 @@
 name=Naru Meha, Master Wizard
-image=https://magiccards.info/scans/en/dom/59.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf44910a-4e24-4e36-a58e-ae7f463db368.jpg?1625976298
 value=2.500
 rarity=M
 type=Legendary,Creature

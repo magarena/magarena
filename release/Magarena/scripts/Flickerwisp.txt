@@ -1,5 +1,5 @@
 name=Flickerwisp
-image=https://magiccards.info/scans/en/mm3/6.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6cccf30-2025-49bb-9b1e-240bbef03f27.jpg?1673146975
 image_updated=2017-08-08
 value=3.737
 rarity=U

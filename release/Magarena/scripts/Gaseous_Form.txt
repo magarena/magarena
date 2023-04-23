@@ -1,5 +1,5 @@
 name=Gaseous Form
-image=https://magiccards.info/scans/en/ema/51.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5464250-a6a9-4399-a67f-2488073794e9.jpg?1580013968
 value=2.500
 rarity=C
 type=Enchantment

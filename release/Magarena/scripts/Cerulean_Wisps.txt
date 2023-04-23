@@ -1,5 +1,5 @@
 name=Cerulean Wisps
-image=https://magiccards.info/scans/en/shm/31.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dca4f46-0aad-484f-b4ea-ed61a4fc1a89.jpg?1562826712
 value=2.976
 rarity=C
 type=Instant

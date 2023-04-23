@@ -1,5 +1,5 @@
 name=Emissary of Sunrise
-image=https://magiccards.info/scans/en/xln/10.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/0636cd47-d2a3-4320-97bf-40db805fca51.jpg?1562550086
 value=2.500
 rarity=U
 type=Creature

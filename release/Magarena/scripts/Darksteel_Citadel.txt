@@ -1,5 +1,5 @@
 name=Darksteel Citadel
-image=https://magiccards.info/scans/en/c16/288.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2ba7597d-6d76-45b8-b172-342999e401bd.jpg?1625979955
 image_updated=2017-08-17
 value=4.056
 rarity=U

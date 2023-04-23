@@ -1,5 +1,5 @@
 name=Spark Spray
-image=https://magiccards.info/scans/en/sc/105.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0027e323-4f5a-412b-868d-6fb3a0c8050a.jpg?1562895016
 value=2.500
 rarity=C
 type=Instant

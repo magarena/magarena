@@ -1,5 +1,5 @@
 name=Barbed Foliage
-image=https://magiccards.info/scans/en/mr/105.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/1220fdd1-e4b0-4175-9b8a-178f6a84b8e6.jpg?1562717846
 value=2.942
 rarity=U
 type=Enchantment

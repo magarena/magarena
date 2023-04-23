@@ -1,5 +1,5 @@
 name=Leering Gargoyle
-image=https://magiccards.info/scans/en/mr/331.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a05d1cac-7012-4d22-82d3-0f82b168fe68.jpg?1562720944
 value=2.818
 rarity=R
 type=Creature

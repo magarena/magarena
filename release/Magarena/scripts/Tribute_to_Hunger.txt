@@ -1,5 +1,5 @@
 name=Tribute to Hunger
-image=https://magiccards.info/scans/en/isd/119.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcfc9bd3-4378-4305-b427-4e3dd4e1fba1.jpg?1592763328
 value=3.812
 removal=2
 rarity=U

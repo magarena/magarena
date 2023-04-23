@@ -1,5 +1,5 @@
 name=Scroll of Griselbrand
-image=https://magiccards.info/scans/en/avr/221.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/2263ceaf-49d2-40fe-86b8-146271b11e46.jpg?1592709605
 value=3.134
 rarity=C
 type=Artifact

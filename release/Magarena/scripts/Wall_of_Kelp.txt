@@ -1,5 +1,5 @@
 name=Wall of Kelp
-image=https://magiccards.info/scans/en/hl/50.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c13f0b9-191b-4509-9dd8-a9aa494511ad.jpg?1562869522
 value=3.290
 rarity=R
 type=Creature

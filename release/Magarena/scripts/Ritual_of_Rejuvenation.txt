@@ -1,5 +1,5 @@
 name=Ritual of Rejuvenation
-image=https://magiccards.info/scans/en/xln/32.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/691c0acb-1882-482f-9513-e7d010cc1d15.jpg?1562556922
 value=2.500
 rarity=C
 type=Instant

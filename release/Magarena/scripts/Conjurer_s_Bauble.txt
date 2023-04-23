@@ -1,5 +1,5 @@
 name=Conjurer's Bauble
-image=https://magiccards.info/scans/en/5dn/112.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d32960e-d182-455f-8e74-eb11b10050da.jpg?1562876061
 value=3.636
 rarity=C
 type=Artifact

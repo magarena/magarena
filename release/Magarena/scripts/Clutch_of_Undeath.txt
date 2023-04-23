@@ -1,5 +1,5 @@
 name=Clutch of Undeath
-image=https://magiccards.info/scans/en/sc/61.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/7301fdec-ca17-47ae-9a0a-84ea8665ece1.jpg?1562530624
 value=2.013
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Stun Sniper
-image=https://magiccards.info/scans/en/arb/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/277bdef5-4887-42f5-b7c2-8c18f03db365.jpg?1677285249
 image_updated=2016-09-12
 value=3.769
 rarity=U

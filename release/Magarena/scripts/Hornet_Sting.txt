@@ -1,5 +1,5 @@
 name=Hornet Sting
-image=https://magiccards.info/scans/en/m11/181.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af6b3bf7-bd09-4f0d-a670-2efc1c6d416f.jpg?1562471839
 value=2.993
 removal=1
 rarity=C

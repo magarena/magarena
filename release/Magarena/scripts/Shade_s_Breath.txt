@@ -1,5 +1,5 @@
 name=Shade's Breath
-image=https://magiccards.info/scans/en/on/167.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a37be9a8-ef69-4c62-8455-e129e62fe69a.jpg?1562933592
 value=2.562
 rarity=U
 type=Instant

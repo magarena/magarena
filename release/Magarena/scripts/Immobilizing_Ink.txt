@@ -1,5 +1,5 @@
 name=Immobilizing Ink
-image=https://magiccards.info/scans/en/od/87.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee6e2d96-dd9e-45f6-b412-78562f2ada40.jpg?1562939756
 value=2.662
 rarity=C
 type=Enchantment

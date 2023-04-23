@@ -1,5 +1,5 @@
 name=Mind Funeral
-image=https://magiccards.info/scans/en/mma/181.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cbd667f-c330-474e-842b-49dfd3906375.jpg?1561967359
 value=3.833
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Dwindle
-image=https://magiccards.info/scans/en/m19/53.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb38f190-30f0-49ca-99c3-d3cdf21075e8.jpg?1562304343
 value=2.500
 rarity=C
 type=Enchantment

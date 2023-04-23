@@ -1,5 +1,5 @@
 name=Ulamog's Reclaimer
-image=https://magiccards.info/scans/en/bfz/68.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29a237a6-0e72-47ce-b28d-a0260963f406.jpg?1562904845
 image_updated=2015-11-08
 value=2.500
 rarity=U

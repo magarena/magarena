@@ -1,5 +1,5 @@
 name=Dread Wanderer
-image=https://magiccards.info/scans/en/akh/88.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/343fc82d-7d10-4489-8f7e-9995322114e2.jpg?1543675258
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Fodder Launch
-image=https://magiccards.info/scans/en/lw/114.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d000670f-1151-4abf-a7ec-b35a6e587183.jpg?1562369114
 value=3.875
 rarity=U
 type=Tribal,Sorcery

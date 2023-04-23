@@ -1,5 +1,5 @@
 name=Blood Divination
-image=https://magiccards.info/scans/en/m19/86.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51278b56-5056-4a37-a1e8-daca45d8e360.jpg?1600699541
 value=2.500
 rarity=U
 type=Sorcery

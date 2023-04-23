@@ -1,5 +1,5 @@
 name=Gleam of Battle
-image=https://magiccards.info/scans/en/dgm/73.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5f0feef-1a71-4c8c-9fd1-f5cbe718a988.jpg?1562937970
 value=3.162
 rarity=U
 type=Enchantment

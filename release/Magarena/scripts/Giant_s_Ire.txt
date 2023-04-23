@@ -1,5 +1,5 @@
 name=Giant's Ire
-image=https://magiccards.info/scans/en/lw/170.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/046fa2db-4c73-401a-b9a4-b039554be625.jpg?1562336735
 value=2.648
 rarity=C
 type=Tribal,Sorcery

@@ -1,5 +1,5 @@
 name=Skywise Teachings
-image=https://magiccards.info/scans/en/ima/73.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e55ba092-abc0-49ba-b756-6cb714165fec.jpg?1562855138
 image_updated=2017-04-12
 value=2.500
 rarity=U

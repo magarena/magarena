@@ -1,5 +1,5 @@
 name=Pulse of the Fields
-image=https://magiccards.info/scans/en/ds/11.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdedff5d-4c5d-4120-9d9a-4bb5b0b2d2f2.jpg?1562639288
 value=4.186
 rarity=R
 type=Instant

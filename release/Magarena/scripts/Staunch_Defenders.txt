@@ -1,5 +1,5 @@
 name=Staunch Defenders
-image=https://magiccards.info/scans/en/8e/49.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba41211a-30b0-4064-a197-5d17472b278f.jpg?1562431278
 value=3.214
 rarity=U
 type=Creature

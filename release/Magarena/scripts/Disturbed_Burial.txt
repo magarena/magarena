@@ -1,5 +1,5 @@
 name=Disturbed Burial
-image=https://magiccards.info/scans/en/tp/23.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06254b6c-eb22-4ec9-9420-74e9ee15e072.jpg?1562052328
 value=3.405
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Bloodsoaked Champion
-image=https://magiccards.info/scans/en/ktk/66.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/275d6137-5eff-4e82-8232-64e8679bc11c.jpg?1674141505
 value=4.417
 rarity=R
 type=Creature

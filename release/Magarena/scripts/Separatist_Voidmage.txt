@@ -1,5 +1,5 @@
 name=Separatist Voidmage
-image=https://magiccards.info/scans/en/ori/72.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5634d1a-ca4b-4528-9e0e-b88f1025d434.jpg?1562047095
 image_updated=2015-11-05
 value=2.500
 rarity=C

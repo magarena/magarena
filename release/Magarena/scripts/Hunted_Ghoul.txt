@@ -1,5 +1,5 @@
 name=Hunted Ghoul
-image=https://magiccards.info/scans/en/avr/110.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb443cf7-70bd-4df7-b446-107e099c19e3.jpg?1592708913
 value=2.535
 rarity=C
 type=Creature

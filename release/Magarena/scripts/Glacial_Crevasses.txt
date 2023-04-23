@@ -1,5 +1,5 @@
 name=Glacial Crevasses
-image=https://magiccards.info/scans/en/ia/187.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f69662bd-206e-4bd7-9145-eb5c24a31d3a.jpg?1562870973
 value=3.540
 rarity=R
 type=Enchantment

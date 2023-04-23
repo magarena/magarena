@@ -1,5 +1,5 @@
 name=Vraska's Conquistador
-image=https://magiccards.info/scans/en/rix/199.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d890a17-ffd4-4bda-bef3-2c116f7bf66f.jpg?1555041175
 value=2.500
 rarity=U
 type=Creature

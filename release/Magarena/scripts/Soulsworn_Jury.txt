@@ -1,5 +1,5 @@
 name=Soulsworn Jury
-image=https://magiccards.info/scans/en/di/17.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/668c4e40-0035-44e0-8401-dd17fa11ecd4.jpg?1593272567
 value=3.510
 rarity=C
 type=Creature

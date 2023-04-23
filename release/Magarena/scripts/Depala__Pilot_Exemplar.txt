@@ -1,5 +1,5 @@
 name=Depala, Pilot Exemplar
-image=https://magiccards.info/scans/en/kld/178.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/592f3a92-787e-4180-9d0b-06c973ce8975.jpg?1576382792
 image_updated=2016-10-05
 value=2.500
 rarity=R

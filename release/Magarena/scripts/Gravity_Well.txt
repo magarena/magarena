@@ -1,5 +1,5 @@
 name=Gravity Well
-image=https://magiccards.info/scans/en/roe/185.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1feb13d0-1a62-4acd-9267-3b2df4b6a199.jpg?1562701835
 value=3.844
 rarity=U
 type=Enchantment

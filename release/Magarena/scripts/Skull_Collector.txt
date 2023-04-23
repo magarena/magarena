@@ -1,5 +1,5 @@
 name=Skull Collector
-image=https://magiccards.info/scans/en/sok/90.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0da4b1bf-eef5-4a86-a861-be448845a743.jpg?1562492477
 value=3.234
 rarity=U
 type=Creature

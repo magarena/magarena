@@ -1,5 +1,5 @@
 name=Gruul Cluestone
-image=https://magiccards.info/scans/en/dgm/140.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc47d1fe-8ab2-42f6-bcab-4bc2084ceba7.jpg?1562930185
 value=2.719
 rarity=C
 type=Artifact

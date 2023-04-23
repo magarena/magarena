@@ -1,5 +1,5 @@
 name=Skeletal Grimace
-image=https://magiccards.info/scans/en/isd/116.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9b28f37-d6b8-4d35-95e9-9533aea0a071.jpg?1562836109
 value=3.300
 rarity=C
 type=Enchantment

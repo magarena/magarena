@@ -1,5 +1,5 @@
 name=Nevermaker
-image=https://magiccards.info/scans/en/mt/44.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1fa77d1-cd61-4ef8-a71f-7c92b1f3b074.jpg?1562882017
 value=3.458
 rarity=U
 type=Creature

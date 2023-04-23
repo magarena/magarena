@@ -1,5 +1,5 @@
 name=Manacles of Decay
-image=https://magiccards.info/scans/en/ap/14.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3da5010-78b6-426f-aeb4-73c21d2af581.jpg?1562952856
 value=3.323
 rarity=C
 type=Enchantment

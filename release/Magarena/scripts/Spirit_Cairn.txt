@@ -1,5 +1,5 @@
 name=Spirit Cairn
-image=https://magiccards.info/scans/en/ju/26.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b0f860c-029c-4856-a999-05b3306c7d46.jpg?1591320149
 value=2.500
 rarity=U
 type=Enchantment

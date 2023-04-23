@@ -1,5 +1,5 @@
 name=Time Ebb
-image=https://magiccards.info/scans/en/9e/107.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0161b6f-49a4-4dcd-87be-47ec2240eba6.jpg?1562431292
 value=4.064
 removal=3
 rarity=C

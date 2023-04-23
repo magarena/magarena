@@ -1,5 +1,5 @@
 name=Zahid, Djinn of the Lamp
-image=https://magiccards.info/scans/en/dom/76.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/469e18c7-d023-4293-85e4-1aaf336f5d8c.jpg?1592764907
 value=2.500
 rarity=R
 type=Legendary,Creature

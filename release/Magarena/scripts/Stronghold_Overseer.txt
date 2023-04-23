@@ -1,5 +1,5 @@
 name=Stronghold Overseer
-image=https://magiccards.info/scans/en/ts/133.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0722fa2-53df-4217-a592-fcaf239f717a.jpg?1562942318
 value=3.884
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Toymaker
-image=https://magiccards.info/scans/en/mm/314.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76f3992a-553c-4032-b144-55aad2f909f1.jpg?1562381374
 value=3.224
 rarity=U
 type=Artifact,Creature

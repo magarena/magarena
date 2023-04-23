@@ -1,5 +1,5 @@
 name=River Serpent
-image=https://magiccards.info/scans/en/akh/66.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a89500ba-8256-4002-a9f2-62d529e9886b.jpg?1543675088
 value=2.500
 rarity=C
 type=Creature

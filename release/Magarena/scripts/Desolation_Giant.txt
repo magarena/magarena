@@ -1,5 +1,5 @@
 name=Desolation Giant
-image=https://magiccards.info/scans/en/ap/59.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b74a47b5-100d-424f-8432-7668c50458f8.jpg?1562275568
 image_updated=2016-02-29
 value=3.703
 rarity=R

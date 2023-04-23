@@ -1,5 +1,5 @@
 name=Marrow Shards
-image=https://magiccards.info/scans/en/nph/15.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53ca60ee-e54b-4a28-b6a6-7bf3503c35b4.jpg?1562877625
 value=3.412
 rarity=U
 type=Instant

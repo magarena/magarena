@@ -1,5 +1,5 @@
 name=Braidwood Sextant
-image=https://magiccards.info/scans/en/ud/127.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16dc7634-8ef5-4a03-8276-7e1dae4244c2.jpg?1562443331
 value=2.667
 rarity=U
 type=Artifact

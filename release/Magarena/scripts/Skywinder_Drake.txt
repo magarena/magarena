@@ -1,5 +1,5 @@
 name=Skywinder Drake
-image=https://magiccards.info/scans/en/m12/75.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/628213e9-bde9-43fd-a0d9-8c7fb17be879.jpg?1562644868
 value=3.070
 rarity=C
 type=Creature

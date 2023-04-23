@@ -1,5 +1,5 @@
 name=Master's Call
-image=https://magiccards.info/scans/en/mbs/13.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04f54188-2cfc-4964-add7-b452f32d57ef.jpg?1562609345
 value=3.511
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Seedguide Ash
-image=https://magiccards.info/scans/en/lw/235.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/eca605c0-6270-4238-bb77-0bbfd7568807.jpg?1562373213
 value=3.580
 rarity=U
 type=Creature

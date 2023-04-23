@@ -1,5 +1,5 @@
 name=Cephalid Pathmage
-image=https://magiccards.info/scans/en/le/31.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88528929-4953-452a-b85e-dac15786e094.jpg?1562922565
 value=2.750
 rarity=C
 type=Creature

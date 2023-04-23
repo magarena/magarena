@@ -1,5 +1,5 @@
 name=Creeperhulk
-image=https://magiccards.info/scans/en/c14/42.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e450cbd1-1d08-44ab-be87-95674dfc96cf.jpg?1592672896
 value=2.500
 rarity=R
 type=Creature

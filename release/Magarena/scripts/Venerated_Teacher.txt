@@ -1,5 +1,5 @@
 name=Venerated Teacher
-image=https://magiccards.info/scans/en/roe/93.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ec4d902-8841-4f37-9b07-9e8d0f671071.jpg?1562706796
 value=4.145
 rarity=C
 type=Creature

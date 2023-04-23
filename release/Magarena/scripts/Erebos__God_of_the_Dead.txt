@@ -1,5 +1,5 @@
 name=Erebos, God of the Dead
-image=https://magiccards.info/scans/en/ths/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0787e1f-0b75-44ab-a8fd-90358906a787.jpg?1562831894
 value=3.802
 rarity=M
 type=Legendary,Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Utopia Vow
-image=https://magiccards.info/scans/en/pc/142.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55dcec32-6ff2-4f47-b3e2-ab621f58d498.jpg?1619403713
 value=3.333
 rarity=C
 type=Enchantment

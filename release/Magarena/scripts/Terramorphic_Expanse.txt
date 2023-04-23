@@ -1,5 +1,5 @@
 name=Terramorphic Expanse
-image=https://magiccards.info/scans/en/c16/332.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66639e5d-8a74-4d58-a77d-0bb9d6d62bb1.jpg?1682210769
 image_updated=2017-08-17
 value=3.773
 rarity=C

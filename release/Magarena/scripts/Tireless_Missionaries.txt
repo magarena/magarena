@@ -1,5 +1,5 @@
 name=Tireless Missionaries
-image=https://magiccards.info/scans/en/m15/39.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c47b7386-168f-4b8e-9a26-9da6d697a501.jpg?1562793911
 value=0.571
 rarity=C
 type=Creature

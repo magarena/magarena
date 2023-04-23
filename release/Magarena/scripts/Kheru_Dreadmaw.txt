@@ -1,5 +1,5 @@
 name=Kheru Dreadmaw
-image=https://magiccards.info/scans/en/ktk/76.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8b10468-18b8-4321-a791-0cbd18ea9c4d.jpg?1562795323
 value=2.500
 rarity=C
 type=Creature

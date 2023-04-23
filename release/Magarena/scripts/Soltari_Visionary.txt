@@ -1,5 +1,5 @@
 name=Soltari Visionary
-image=https://magiccards.info/scans/en/ex/20.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a3ae384-7b60-4264-9dc1-1613917168ca.jpg?1562087352
 value=4.368
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sludge Crawler
-image=https://magiccards.info/scans/en/bfz/98.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9782b463-0677-40f4-ab2c-4c3ff19f1168.jpg?1562930662
 image_updated=2015-11-08
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Mirran Mettle
-image=https://magiccards.info/scans/en/mbs/84.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edbb5778-fa9a-4a1f-be4f-627630c3e3ca.jpg?1562615751
 value=3.081
 rarity=C
 type=Instant

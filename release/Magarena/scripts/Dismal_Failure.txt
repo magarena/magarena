@@ -1,5 +1,5 @@
 name=Dismal Failure
-image=https://magiccards.info/scans/en/pc/39.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35786a7a-faa6-457d-9b92-da560b93a43a.jpg?1562569290
 value=3.688
 rarity=U
 type=Instant

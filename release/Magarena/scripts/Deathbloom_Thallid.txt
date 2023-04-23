@@ -1,5 +1,5 @@
 name=Deathbloom Thallid
-image=https://magiccards.info/scans/en/dom/84.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc4513e1-9978-44ce-b7a5-4e2b5b63ad9e.jpg?1594736070
 value=2.500
 rarity=C
 type=Creature

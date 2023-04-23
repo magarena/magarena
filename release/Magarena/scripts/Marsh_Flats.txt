@@ -1,5 +1,5 @@
 name=Marsh Flats
-image=https://magiccards.info/scans/en/mm3/239.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9db3ba6d-eb7f-4f5b-9a3b-c6239c3baa42.jpg?1626099665
 image_updated=2017-08-08
 value=4.477
 rarity=R

@@ -1,5 +1,5 @@
 name=Stalwart Shield-Bearers
-image=https://magiccards.info/scans/en/roe/46.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/868256bb-d4e2-42eb-a43a-360148aec06f.jpg?1591605197
 value=3.439
 rarity=C
 type=Creature

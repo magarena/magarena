@@ -1,5 +1,5 @@
 name=Draconic Disciple
-image=https://magiccards.info/scans/en/m19/215.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a353510a-30de-4891-97b9-d7d556531c41.jpg?1615331253
 value=2.500
 rarity=U
 type=Creature

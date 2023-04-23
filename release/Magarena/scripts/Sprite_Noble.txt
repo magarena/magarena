@@ -1,5 +1,5 @@
 name=Sprite Noble
-image=https://magiccards.info/scans/en/ema/73.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2f1b2c9-7b37-451a-a8cc-252a47b2cded.jpg?1591605288
 value=3.926
 rarity=U
 type=Creature

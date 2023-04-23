@@ -1,5 +1,5 @@
 name=Mindstatic
-image=https://magiccards.info/scans/en/dgm/14.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55d3fad5-a12a-4b41-9c7b-c1af5e0b5ca8.jpg?1562910742
 value=1.564
 rarity=C
 type=Instant

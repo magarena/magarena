@@ -1,5 +1,5 @@
 name=Synod Sanctum
-image=https://magiccards.info/scans/en/mi/252.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4ee3b93-6a9c-4e87-b7e3-904114f7e8a1.jpg?1562929759
 image_updated=2016-01-09
 value=3.920
 rarity=U

@@ -1,5 +1,5 @@
 name=Slow Motion
-image=https://magiccards.info/scans/en/ul/42.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/2860a20d-e1bf-4e46-8c07-a858f616d5a5.jpg?1562862778
 value=3.989
 rarity=C
 type=Enchantment

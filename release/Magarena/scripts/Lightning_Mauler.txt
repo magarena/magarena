@@ -1,5 +1,5 @@
 name=Lightning Mauler
-image=https://magiccards.info/scans/en/avr/144.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/241cc968-b93e-4fe3-a66d-7776d29aa023.jpg?1592709136
 value=3.861
 rarity=U
 type=Creature

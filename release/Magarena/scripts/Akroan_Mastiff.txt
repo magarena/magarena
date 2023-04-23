@@ -1,5 +1,5 @@
 name=Akroan Mastiff
-image=https://magiccards.info/scans/en/jou/3.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e21938b-46b1-4b2f-8269-0cd0e998cddc.jpg?1593095175
 value=2.550
 rarity=C
 type=Creature

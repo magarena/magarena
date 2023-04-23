@@ -1,5 +1,5 @@
 name=Might Sliver
-image=https://magiccards.info/scans/en/ts/205.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97c72fc3-72ac-4727-9872-33dc71049894.jpg?1619398378
 value=3.990
 rarity=U
 type=Creature

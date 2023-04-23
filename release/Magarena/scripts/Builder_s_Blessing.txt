@@ -1,5 +1,5 @@
 name=Builder's Blessing
-image=https://magiccards.info/scans/en/avr/8.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ad27af1-b482-40d5-9dbb-11201ffa0410.jpg?1592708214
 value=2.229
 rarity=U
 type=Enchantment

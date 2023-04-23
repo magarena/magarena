@@ -1,5 +1,5 @@
 name=Krovikan Mist
-image=https://magiccards.info/scans/en/cs/38.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6152487a-4b9b-4c26-9430-afab60e43101.jpg?1592754391
 value=4.038
 rarity=C
 type=Creature

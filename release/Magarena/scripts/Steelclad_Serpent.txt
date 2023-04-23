@@ -1,5 +1,5 @@
 name=Steelclad Serpent
-image=https://magiccards.info/scans/en/ala/59.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71b02044-f3b4-425c-8e6c-697fff2c4ef7.jpg?1562705313
 value=1.461
 rarity=C
 type=Artifact,Creature

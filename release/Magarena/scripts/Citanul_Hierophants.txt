@@ -1,5 +1,5 @@
 name=Citanul Hierophants
-image=https://magiccards.info/scans/en/us/244.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/905506cc-f77e-4214-8eb3-6f141997336c.jpg?1562925395
 value=4.326
 rarity=R
 type=Creature

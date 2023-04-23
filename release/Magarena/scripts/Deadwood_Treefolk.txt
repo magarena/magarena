@@ -1,5 +1,5 @@
 name=Deadwood Treefolk
-image=https://magiccards.info/scans/en/cmd/150.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69983244-a9c6-4025-91c6-a4742cb1db1e.jpg?1618940492
 value=3.321
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Conch Horn
-image=https://magiccards.info/scans/en/fe/168.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/860a9ba3-e4c4-4af9-bdfe-1ada39289fd5.jpg?1562919860
 value=2.922
 rarity=R
 type=Artifact

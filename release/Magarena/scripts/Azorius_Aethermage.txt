@@ -1,5 +1,5 @@
 name=Azorius Aethermage
-image=https://magiccards.info/scans/en/di/104.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b640ff8-8baa-4069-b5a9-8a4fb22a056e.jpg?1593273554
 image_updated=2016-09-27
 value=3.188
 rarity=U

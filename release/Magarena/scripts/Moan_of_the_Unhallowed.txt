@@ -1,5 +1,5 @@
 name=Moan of the Unhallowed
-image=https://magiccards.info/scans/en/isd/109.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a1f42ee-7f4e-4b2a-b60b-750662878a5c.jpg?1547516972
 value=3.762
 rarity=U
 type=Sorcery

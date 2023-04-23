@@ -1,5 +1,5 @@
 name=Firebreathing
-image=https://magiccards.info/scans/en/m12/132.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fbcc269-aaa3-42aa-9898-3f908aaae272.jpg?1562646849
 value=2.844
 rarity=C
 type=Enchantment

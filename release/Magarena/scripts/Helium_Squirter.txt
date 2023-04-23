@@ -1,5 +1,5 @@
 name=Helium Squirter
-image=https://magiccards.info/scans/en/mm2/47.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35a9a786-8d15-4186-8030-4151bddcc0f7.jpg?1562260681
 value=2.872
 rarity=C
 type=Creature

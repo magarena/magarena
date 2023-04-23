@@ -1,5 +1,5 @@
 name=Apprentice Sorcerer
-image=https://magiccards.info/scans/en/po2/32.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e1fd317-5500-40e8-ad79-323832815f81.jpg?1562932382
 value=2.365
 rarity=U
 type=Creature

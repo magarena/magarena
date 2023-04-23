@@ -1,5 +1,5 @@
 name=Ghoulcaller's Bell
-image=https://magiccards.info/scans/en/isd/224.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/863e7c2a-698c-4dce-a10b-ca58e4affa57.jpg?1562833385
 value=2.552
 rarity=C
 type=Artifact

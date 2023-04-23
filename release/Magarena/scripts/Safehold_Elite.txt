@@ -1,5 +1,5 @@
 name=Safehold Elite
-image=https://magiccards.info/scans/en/shm/239.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d049f233-7fcb-49cb-897b-a12d57692fe0.jpg?1547518288
 value=3.831
 rarity=C
 type=Creature

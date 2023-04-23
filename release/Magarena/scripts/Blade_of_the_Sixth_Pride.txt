@@ -1,5 +1,5 @@
 name=Blade of the Sixth Pride
-image=https://magiccards.info/scans/en/fut/19.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8b1b493-2dec-4816-a427-4813a00ca3e9.jpg?1619392667
 value=3.874
 rarity=C
 type=Creature

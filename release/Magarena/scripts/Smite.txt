@@ -1,5 +1,5 @@
 name=Smite
-image=https://magiccards.info/scans/en/gtc/25.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2286067-c964-4bed-bfb8-c6280f104b63.jpg?1562431267
 value=3.976
 removal=3
 rarity=C

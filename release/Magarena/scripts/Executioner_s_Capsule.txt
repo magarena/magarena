@@ -1,5 +1,5 @@
 name=Executioner's Capsule
-image=https://magiccards.info/scans/en/c16/109.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/032ea333-96e1-4ad8-8947-21d6bc3a9f91.jpg?1598304701
 image_updated=2017-08-17
 value=4.273
 rarity=C

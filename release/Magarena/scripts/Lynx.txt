@@ -1,5 +1,5 @@
 name=Lynx
-image=https://magiccards.info/scans/en/st/131.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c962a7a-8c3b-4343-a6ef-6be1d40ac940.jpg?1562873588
 value=3.060
 rarity=U
 type=Creature

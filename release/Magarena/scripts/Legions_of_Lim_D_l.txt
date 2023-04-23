@@ -1,5 +1,5 @@
 name=Legions of Lim-Dûl
-image=https://magiccards.info/scans/en/cstd/29.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75b67eb2-b60e-46b4-9d48-11c284957bec.jpg?1591725030
 value=2.530
 rarity=C
 type=Creature

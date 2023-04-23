@@ -1,5 +1,5 @@
 name=Typhoon
-image=https://magiccards.info/scans/en/lg/123.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/254e0403-67d8-4e73-8d89-c901ebeba49f.jpg?1562858218
 value=2.828
 rarity=R
 type=Sorcery

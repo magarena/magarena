@@ -1,5 +1,5 @@
 name=Confiscate
-image=https://magiccards.info/scans/en/9e/68.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09e4a88d-670b-4332-bf36-41c2e2492424.jpg?1608909148
 value=4.246
 rarity=U
 type=Enchantment

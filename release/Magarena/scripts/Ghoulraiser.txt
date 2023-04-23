@@ -1,5 +1,5 @@
 name=Ghoulraiser
-image=https://magiccards.info/scans/en/isd/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/850ccdcb-2cd7-4f27-aa9b-917a62a5e94d.jpg?1600826696
 value=3.160
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dragon Grip
-image=https://magiccards.info/scans/en/ktk/107.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0269d5bd-d8aa-465b-bfe9-6703937f933c.jpg?1562781842
 value=3.667
 rarity=U
 type=Enchantment

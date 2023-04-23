@@ -1,5 +1,5 @@
 name=Judge's Familiar
-image=https://magiccards.info/scans/en/rtr/218.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fc51899-3970-416b-b7de-fadbc9678955.jpg?1562782718
 value=4.346
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mindwarper
-image=https://magiccards.info/scans/en/sh/14.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebe796e1-97f9-469a-a6b6-a09161058e12.jpg?1562597839
 value=2.956
 rarity=R
 type=Creature

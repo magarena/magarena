@@ -1,5 +1,5 @@
 name=Skyshroud Claim
-image=https://magiccards.info/scans/en/ne/117.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f1579c8-2ec9-49af-bc2e-f4d16a0f1221.jpg?1562911007
 value=4.123
 rarity=C
 type=Sorcery

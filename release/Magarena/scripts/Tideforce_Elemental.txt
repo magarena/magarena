@@ -1,5 +1,5 @@
 name=Tideforce Elemental
-image=https://magiccards.info/scans/en/wwk/41.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f23e758d-c9a4-4f8e-b366-634f8c451b61.jpg?1562299266
 value=3.471
 rarity=U
 type=Creature

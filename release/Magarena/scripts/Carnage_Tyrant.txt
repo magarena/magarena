@@ -1,5 +1,5 @@
 name=Carnage Tyrant
-image=https://magiccards.info/scans/en/xln/179.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bd78731-949c-464a-826a-92f86d784911.jpg?1562553791
 value=2.500
 rarity=M
 type=Creature

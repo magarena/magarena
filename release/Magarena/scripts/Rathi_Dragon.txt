@@ -1,5 +1,5 @@
 name=Rathi Dragon
-image=https://magiccards.info/scans/en/9e/210.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ec3d43c-2b3e-4b79-a61d-03efd6a689d4.jpg?1562430797
 value=3.796
 rarity=R
 type=Creature

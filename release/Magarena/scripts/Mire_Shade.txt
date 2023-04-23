@@ -1,5 +1,5 @@
 name=Mire Shade
-image=https://magiccards.info/scans/en/mr/29.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/120822b8-02ae-411f-bda5-a774c21db66c.jpg?1562717845
 value=1.896
 rarity=U
 type=Creature

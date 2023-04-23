@@ -1,5 +1,5 @@
 name=Sliver Hivelord
-image=https://magiccards.info/scans/en/m15/211.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba4106de-20c7-48cf-8a36-8c6913b46c89.jpg?1562793305
 value=3.808
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Hornet Nest
-image=https://magiccards.info/scans/en/m15/177.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8846a7d6-1fea-4fd6-bf2b-90d38651538b.jpg?1625194417
 value=3.857
 rarity=R
 type=Creature

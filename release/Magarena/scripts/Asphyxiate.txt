@@ -1,5 +1,5 @@
 name=Asphyxiate
-image=https://magiccards.info/scans/en/bng/60.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/894f3f5f-586d-45e4-9af7-4de80e44dfae.jpg?1593091866
 value=2.213
 rarity=C
 type=Sorcery

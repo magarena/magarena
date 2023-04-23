@@ -1,5 +1,5 @@
 name=Flamecast Wheel
-image=https://magiccards.info/scans/en/ths/215.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cfa31c9-5a11-4366-9063-056a659f3d0d.jpg?1562818716
 value=1.623
 rarity=U
 type=Artifact

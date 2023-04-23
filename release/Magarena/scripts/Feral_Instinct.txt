@@ -1,5 +1,5 @@
 name=Feral Instinct
-image=https://magiccards.info/scans/en/vi/57.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20dec7cf-2865-4642-9022-d3006fd7ac30.jpg?1562276983
 value=2.114
 rarity=C
 type=Instant

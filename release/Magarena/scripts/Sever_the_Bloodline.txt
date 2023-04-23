@@ -1,5 +1,5 @@
 name=Sever the Bloodline
-image=https://magiccards.info/scans/en/mm3/84.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22bfced7-8fbf-44d2-a439-7ac7c8c7e365.jpg?1673484252
 image_updated=2017-08-08
 value=3.877
 rarity=R

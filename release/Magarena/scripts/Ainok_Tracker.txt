@@ -1,5 +1,5 @@
 name=Ainok Tracker
-image=https://magiccards.info/scans/en/ktk/96.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0ff9400d-4842-471f-bf7e-3b21df352e0a.jpg?1562782629
 value=2.167
 rarity=C
 type=Creature

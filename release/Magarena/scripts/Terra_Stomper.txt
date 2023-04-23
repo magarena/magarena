@@ -1,5 +1,5 @@
 name=Terra Stomper
-image=https://magiccards.info/scans/en/ori/288.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/652db782-cf79-4626-9eb2-ad214cb39c86.jpg?1562023100
 image_updated=2010-09-10
 value=2.500
 rarity=R

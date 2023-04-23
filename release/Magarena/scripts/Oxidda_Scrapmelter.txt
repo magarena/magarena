@@ -1,5 +1,5 @@
 name=Oxidda Scrapmelter
-image=https://magiccards.info/scans/en/som/101.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c64fe85b-e471-489a-8c38-2357da1c7969.jpg?1562822847
 value=3.541
 removal=1
 rarity=U

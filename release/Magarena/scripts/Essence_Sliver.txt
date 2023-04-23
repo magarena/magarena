@@ -1,5 +1,5 @@
 name=Essence Sliver
-image=https://magiccards.info/scans/en/tsts/8.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54e01152-944b-47dc-838e-753925ac64e2.jpg?1562776390
 value=4.280
 rarity=R
 type=Creature

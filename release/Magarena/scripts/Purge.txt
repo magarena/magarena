@@ -1,5 +1,5 @@
 name=Purge
-image=https://magiccards.info/scans/en/ds/12.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7ab43926-ebc3-4077-a18a-46e348acc1e7.jpg?1562919709
 value=3.713
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=One Dozen Eyes
-image=https://magiccards.info/scans/en/mi/126.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/451f317f-f587-4187-9e02-6ac5d7ae9cd8.jpg?1562909288
 value=3.214
 rarity=U
 type=Sorcery

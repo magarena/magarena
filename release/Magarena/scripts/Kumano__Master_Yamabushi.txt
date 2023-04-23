@@ -1,5 +1,5 @@
 name=Kumano, Master Yamabushi
-image=https://magiccards.info/scans/en/chk/176.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f93870f9-343f-43e7-8ae8-e7aaa56aacca.jpg?1562766083
 value=4.234
 rarity=R
 type=Legendary,Creature

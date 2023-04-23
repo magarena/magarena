@@ -1,5 +1,5 @@
 name=Warrior's Honor
-image=https://magiccards.info/scans/en/10e/58.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09117d06-79e6-4f86-ba92-d1f8fe165147.jpg?1562543412
 value=1.186
 rarity=C
 type=Instant

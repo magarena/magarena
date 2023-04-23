@@ -1,5 +1,5 @@
 name=Waiting in the Weeds
-image=https://magiccards.info/scans/en/6e/266.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e2d5a77-6ee8-463d-9e6a-fdb1cc6d70e6.jpg?1562819463
 value=4.100
 rarity=R
 type=Sorcery

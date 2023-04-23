@@ -1,5 +1,5 @@
 name=Lashknife
-image=https://magiccards.info/scans/en/ne/9.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd7451cc-4126-4518-a103-2558fa81323f.jpg?1562632899
 value=2.185
 rarity=C
 type=Enchantment

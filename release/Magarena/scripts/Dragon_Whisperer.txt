@@ -1,5 +1,5 @@
 name=Dragon Whisperer
-image=https://magiccards.info/scans/en/dtk/137.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c75b106-349f-44e1-a737-079955cc91b2.jpg?1562786921
 value=2.500
 rarity=M
 type=Creature

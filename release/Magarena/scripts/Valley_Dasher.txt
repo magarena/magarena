@@ -1,5 +1,5 @@
 name=Valley Dasher
-image=https://magiccards.info/scans/en/ktk/125.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/8543adbd-0dd1-47d3-ac41-2ec72d6a5d35.jpg?1562789625
 value=2.750
 rarity=C
 type=Creature

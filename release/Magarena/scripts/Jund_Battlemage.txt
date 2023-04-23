@@ -1,5 +1,5 @@
 name=Jund Battlemage
-image=https://magiccards.info/scans/en/ala/106.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee8c962f-11b0-48f7-bbba-a2212e41990f.jpg?1562710488
 value=3.007
 rarity=U
 type=Creature

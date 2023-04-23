@@ -1,5 +1,5 @@
 name=Artificer's Intuition
-image=https://magiccards.info/scans/en/5dn/23.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abe37c88-afd7-45ac-9f84-f4bd881a1462.jpg?1562879087
 value=3.475
 rarity=R
 type=Enchantment

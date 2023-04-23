@@ -1,5 +1,5 @@
 name=Kyren Legate
-image=https://magiccards.info/scans/en/mm/197.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f0e9806-be8c-4b88-a4be-0111d1be81d9.jpg?1562381357
 value=3.690
 rarity=U
 type=Creature

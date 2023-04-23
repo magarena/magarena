@@ -1,5 +1,5 @@
 name=Chief of the Edge
-image=https://magiccards.info/scans/en/ktk/169.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28822a9a-97fa-4784-ad97-072fcfc7b9ed.jpg?1562784003
 value=3.625
 rarity=U
 type=Creature

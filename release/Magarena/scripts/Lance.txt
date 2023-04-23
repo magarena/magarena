@@ -1,5 +1,5 @@
 name=Lance
-image=https://magiccards.info/scans/en/rv/211.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/402eea7c-2afe-4e93-9773-3e0424cabfdd.jpg?1559592990
 value=2.256
 rarity=U
 type=Enchantment

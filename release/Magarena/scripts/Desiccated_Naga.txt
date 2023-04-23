@@ -1,5 +1,5 @@
 name=Desiccated Naga
-image=https://magiccards.info/scans/en/akh/276.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21f31e96-bb66-4b28-b14a-426d1d5839a6.jpg?1561777114
 value=2.500
 rarity=U
 type=Creature

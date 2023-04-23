@@ -1,5 +1,5 @@
 name=Amugaba
-image=https://magiccards.info/scans/en/od/61.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d73d1e7-79be-4b28-a480-b65b4f34f755.jpg?1562921230
 value=2.744
 rarity=R
 type=Creature

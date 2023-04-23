@@ -1,5 +1,5 @@
 name=Vampire Revenant
-image=https://magiccards.info/scans/en/rix/89.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bd3a6c6-33b8-4530-9d80-c488898afd6e.jpg?1555040340
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Walking Corpse
-image=https://magiccards.info/scans/en/m19/126.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/053b59b4-a22c-4228-aadc-ae9da6bb465e.jpg?1594736452
 image_updated=2018-08-07
 value=2.000
 rarity=C

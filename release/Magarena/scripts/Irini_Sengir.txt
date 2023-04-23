@@ -1,5 +1,5 @@
 name=Irini Sengir
-image=https://magiccards.info/scans/en/hl/17.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/518e3b77-d482-4b90-94c0-0b8cdd949b9f.jpg?1562587280
 value=2.350
 rarity=U
 type=Legendary,Creature

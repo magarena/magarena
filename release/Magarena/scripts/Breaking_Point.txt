@@ -1,5 +1,5 @@
 name=Breaking Point
-image=https://magiccards.info/scans/en/ju/81.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73e348dd-2d8a-4ee6-a834-2d5861566043.jpg?1592714635
 image_updated=2016-11-20
 value=3.593
 rarity=R

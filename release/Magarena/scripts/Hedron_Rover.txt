@@ -1,5 +1,5 @@
 name=Hedron Rover
-image=https://magiccards.info/scans/en/wwk/125.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0a36448-ca96-4c10-baf9-89c248c3510b.jpg?1562295447
 value=2.280
 rarity=C
 type=Artifact,Creature

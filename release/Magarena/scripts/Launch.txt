@@ -1,5 +1,5 @@
 name=Launch
-image=https://magiccards.info/scans/en/us/82.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58f78667-b3ab-44af-89df-9e9332dc5485.jpg?1562913574
 value=3.766
 rarity=C
 type=Enchantment

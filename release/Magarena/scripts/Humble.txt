@@ -1,5 +1,5 @@
 name=Humble
-image=https://magiccards.info/scans/en/ema/14.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b876e92-ec9f-4b96-9ec2-2d44f4231b14.jpg?1580013701
 value=4.384
 rarity=C
 type=Instant

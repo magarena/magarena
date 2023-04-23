@@ -1,5 +1,5 @@
 name=Diplomatic Immunity
-image=https://magiccards.info/scans/en/mm/75.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb1e610e-a4a2-460b-8e4c-13674badbce3.jpg?1562383998
 value=4.277
 rarity=C
 type=Enchantment

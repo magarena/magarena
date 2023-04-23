@@ -1,5 +1,5 @@
 name=Way of the Thief
-image=https://magiccards.info/scans/en/gtc/56.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b249ca81-bd8d-4d3d-81d6-15e8d669c416.jpg?1561842146
 value=2.012
 rarity=C
 type=Enchantment

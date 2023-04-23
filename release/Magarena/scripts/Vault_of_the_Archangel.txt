@@ -1,5 +1,5 @@
 name=Vault of the Archangel
-image=https://magiccards.info/scans/en/dka/158.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7811266-a9fd-4db6-a591-d73e4072b939.jpg?1682210805
 value=3.167
 rarity=R
 type=Land

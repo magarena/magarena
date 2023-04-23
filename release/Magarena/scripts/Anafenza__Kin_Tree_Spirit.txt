@@ -1,5 +1,5 @@
 name=Anafenza, Kin-Tree Spirit
-image=https://magiccards.info/scans/en/dtk/2.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5ba5e8b8-ce9d-450c-8804-2f8e2ef51ff0.jpg?1673305044
 value=2.500
 rarity=R
 type=Legendary,Creature

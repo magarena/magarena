@@ -1,5 +1,5 @@
 name=Woolly Loxodon
-image=https://magiccards.info/scans/en/a25/195.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18ea1434-16c4-4b1a-8728-806360131587.jpg?1562433057
 image_updated=2018-04-27
 value=3.000
 rarity=C

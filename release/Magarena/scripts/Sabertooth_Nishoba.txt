@@ -1,5 +1,5 @@
 name=Sabertooth Nishoba
-image=https://magiccards.info/scans/en/in/268.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/8338c296-cf3f-41d7-b380-3fb4237cb41c.jpg?1562921586
 value=3.981
 rarity=R
 type=Creature

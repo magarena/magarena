@@ -1,5 +1,5 @@
 name=Barbarian Bully
-image=https://magiccards.info/scans/en/ju/79.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e38f0f9f-ad7b-48da-89f3-b3e5346a3b71.jpg?1562632373
 value=2.629
 rarity=C
 type=Creature

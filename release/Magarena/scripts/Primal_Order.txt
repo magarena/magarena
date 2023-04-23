@@ -1,5 +1,5 @@
 name=Primal Order
-image=https://magiccards.info/scans/en/5e/180.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72c513dc-e884-4afc-9a20-ff21d14d61ba.jpg?1559592535
 value=3.866
 rarity=R
 type=Enchantment

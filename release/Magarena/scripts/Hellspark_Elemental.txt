@@ -1,5 +1,5 @@
 name=Hellspark Elemental
-image=https://magiccards.info/scans/en/cfx/65.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea080c34-8446-429b-a380-3a95f43089fb.jpg?1592714486
 image_updated=2016-12-10
 value=3.519
 rarity=U

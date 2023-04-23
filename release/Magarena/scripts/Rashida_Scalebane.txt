@@ -1,5 +1,5 @@
 name=Rashida Scalebane
-image=https://magiccards.info/scans/en/mr/239.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebb48053-da60-477a-b1eb-a9ab9ea682af.jpg?1562722398
 value=3.359
 rarity=R
 type=Legendary,Creature

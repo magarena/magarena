@@ -1,5 +1,5 @@
 name=Anthem of Rakdos
-image=https://magiccards.info/scans/en/di/102.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea00d757-0ea9-4123-89f6-0a437d7fd33d.jpg?1593273540
 value=3.458
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Life's Legacy
-image=https://magiccards.info/scans/en/m15/183.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf0e70d2-5f1a-441b-99b9-d003fa15b999.jpg?1673484689
 value=2.750
 rarity=R
 type=Sorcery

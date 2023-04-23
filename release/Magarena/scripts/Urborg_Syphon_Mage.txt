@@ -1,5 +1,5 @@
 name=Urborg Syphon-Mage
-image=https://magiccards.info/scans/en/ts/139.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2c7b098-82ba-4015-aaa5-df9aa0a05e40.jpg?1619396572
 image_updated=2017-01-11
 value=2.500
 rarity=C

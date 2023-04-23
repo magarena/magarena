@@ -1,5 +1,5 @@
 name=Cabal Archon
-image=https://magiccards.info/scans/en/on/129.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bdf6e2a-1bf5-4d63-a58b-883cfb1ea0fa.jpg?1562912737
 value=3.744
 rarity=U
 type=Creature

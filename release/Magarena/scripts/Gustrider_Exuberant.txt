@@ -1,5 +1,5 @@
 name=Gustrider Exuberant
-image=https://magiccards.info/scans/en/ala/13.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5343e6f2-7db7-4731-8e1b-70bf74316a79.jpg?1562703989
 value=2.021
 rarity=C
 type=Creature

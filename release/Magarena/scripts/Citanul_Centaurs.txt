@@ -1,5 +1,5 @@
 name=Citanul Centaurs
-image=https://magiccards.info/scans/en/us/243.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a3ac987-7906-4159-a007-ed409baea9d7.jpg?1562913816
 value=3.431
 rarity=R
 type=Creature

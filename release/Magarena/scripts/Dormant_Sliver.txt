@@ -1,5 +1,5 @@
 name=Dormant Sliver
-image=https://magiccards.info/scans/en/pc/156.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d646252-6d42-4000-bfc1-ad12f2386b99.jpg?1619403865
 value=3.421
 rarity=U
 type=Creature

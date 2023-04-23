@@ -1,5 +1,5 @@
 name=Scrambleverse
-image=https://magiccards.info/scans/en/m12/153.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b61fa9d-3f69-4632-be0e-09924ca88501.jpg?1562637075
 value=2.767
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Lightning Prowess
-image=https://magiccards.info/scans/en/avr/145.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5578e3e2-2460-4dfb-9016-527463f2d918.jpg?1592709142
 value=2.735
 rarity=U
 type=Enchantment

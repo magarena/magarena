@@ -1,5 +1,5 @@
 name=Galepowder Mage
-image=https://magiccards.info/scans/en/lw/15.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/222b4c5a-2cd0-4851-9f2f-8685a658ebb4.jpg?1674141103
 image_updated=2016-12-03
 value=3.550
 rarity=R

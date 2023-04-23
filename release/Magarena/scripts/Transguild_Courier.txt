@@ -1,5 +1,5 @@
 name=Transguild Courier
-image=https://magiccards.info/scans/en/di/168.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/2496ab15-2a88-43fd-8d79-74758879157b.jpg?1673305891
 value=3.965
 rarity=U
 type=Artifact,Creature

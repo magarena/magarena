@@ -1,5 +1,5 @@
 name=Mind Rot
-image=https://magiccards.info/scans/en/m19/109.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/833a8604-92d5-443b-9bc0-bd91c973ef07.jpg?1594736305
 image_updated=2018-08-07
 value=2.500
 rarity=C

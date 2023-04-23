@@ -1,5 +1,5 @@
 name=Steppe Lynx
-image=https://magiccards.info/scans/en/zen/36.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0aaec1c-8084-4468-82e7-2e4cc5ebe244.jpg?1562615536
 value=4.096
 rarity=C
 type=Creature

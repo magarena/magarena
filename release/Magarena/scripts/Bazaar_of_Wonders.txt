@@ -1,5 +1,5 @@
 name=Bazaar of Wonders
-image=https://magiccards.info/scans/en/mr/55.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78e7a165-e135-4b85-943d-8352b6e65870.jpg?1562720232
 value=3.136
 rarity=R
 type=World,Enchantment

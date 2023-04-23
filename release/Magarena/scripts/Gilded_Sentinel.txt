@@ -1,5 +1,5 @@
 name=Gilded Sentinel
-image=https://magiccards.info/scans/en/xln/239.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01cc1a59-76bf-4721-b4a7-ef746f3d3990.jpg?1562549782
 value=2.500
 rarity=C
 type=Artifact,Creature

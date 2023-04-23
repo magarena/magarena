@@ -1,5 +1,5 @@
 name=True-Faith Censer
-image=https://magiccards.info/scans/en/soi/267.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/815eb91c-06fa-4362-803e-e9bf7d374856.jpg?1576385501
 value=2.500
 rarity=C
 type=Artifact

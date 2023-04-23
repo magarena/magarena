@@ -1,5 +1,5 @@
 name=Evil Eye of Orms-by-Gore
-image=https://magiccards.info/scans/en/tsts/42.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dc4d500-a8af-452b-8d6c-200035905104.jpg?1562775948
 value=3.069
 rarity=U
 type=Creature

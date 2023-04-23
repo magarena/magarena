@@ -1,5 +1,5 @@
 name=Skyline Despot
-image=https://magiccards.info/scans/en/cn2/57.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fabdbd03-6f1e-4ada-ad90-5c72d7e305b6.jpg?1631587493
 image_updated=2016-09-05
 value=2.500
 rarity=R

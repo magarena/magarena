@@ -1,5 +1,5 @@
 name=Misty Rainforest
-image=https://magiccards.info/scans/en/mm3/240.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88231c0d-0cc8-44ec-bf95-81d1710ac141.jpg?1626099715
 image_updated=2017-08-08
 value=4.513
 rarity=R

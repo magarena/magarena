@@ -1,5 +1,5 @@
 name=Gargoyle Sentinel
-image=https://magiccards.info/scans/en/m19/236.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef5abd21-9736-4e9e-b195-813461cfcd0a.jpg?1601080651
 image_updated=2018-08-07
 value=2.800
 rarity=U

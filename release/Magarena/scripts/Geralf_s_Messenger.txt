@@ -1,5 +1,5 @@
 name=Geralf's Messenger
-image=https://magiccards.info/scans/en/dka/63.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bffaad78-97ff-431f-bfb0-e96c7558f974.jpg?1562940297
 value=3.937
 rarity=R
 type=Creature

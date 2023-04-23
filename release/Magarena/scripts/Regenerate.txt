@@ -1,5 +1,5 @@
 name=Regenerate
-image=https://magiccards.info/scans/en/m10/202.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a1026f4-b11a-48aa-9191-e0bb51c515a6.jpg?1561989691
 value=1.204
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Quagmire Lamprey
-image=https://magiccards.info/scans/en/mm/154.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c91c44e-6bfc-4595-9cdb-17d73f912c09.jpg?1562380379
 value=1.750
 rarity=U
 type=Creature

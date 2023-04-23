@@ -1,5 +1,5 @@
 name=Illusions of Grandeur
-image=https://magiccards.info/scans/en/ia/79.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44c20ed5-7064-436d-ad76-85a1d6bf0103.jpg?1559592457
 value=4.433
 rarity=R
 type=Enchantment

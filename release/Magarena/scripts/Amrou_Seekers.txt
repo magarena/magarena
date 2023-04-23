@@ -1,5 +1,5 @@
 name=Amrou Seekers
-image=https://magiccards.info/scans/en/mma/3.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/379c3c08-a91d-48cc-8837-993614b6a32e.jpg?1619392482
 value=3.294
 rarity=C
 type=Creature

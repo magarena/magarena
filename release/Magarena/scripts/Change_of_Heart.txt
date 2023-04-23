@@ -1,5 +1,5 @@
 name=Change of Heart
-image=https://magiccards.info/scans/en/sh/103.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afaf277e-b430-4c96-880c-ae654973478c.jpg?1562597354
 value=3.438
 rarity=C
 type=Instant

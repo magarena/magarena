@@ -1,5 +1,5 @@
 name=Kiss of Death
-image=https://magiccards.info/scans/en/po2/16.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf6832c1-a0a9-49ec-a787-879e510aee08.jpg?1562940179
 value=2.024
 rarity=U
 type=Sorcery

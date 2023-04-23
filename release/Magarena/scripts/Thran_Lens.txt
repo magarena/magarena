@@ -1,5 +1,5 @@
 name=Thran Lens
-image=https://magiccards.info/scans/en/ul/133.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/200c3666-5ba0-4f0a-adbe-a97af0aa28d1.jpg?1562862332
 value=3.703
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Simic Cluestone
-image=https://magiccards.info/scans/en/dgm/145.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3c47552-afed-463d-bd24-13eb1cd724fc.jpg?1562937603
 value=2.672
 rarity=C
 type=Artifact

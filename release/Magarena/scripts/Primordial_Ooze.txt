@@ -1,5 +1,5 @@
 name=Primordial Ooze
-image=https://magiccards.info/scans/en/5e/261.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a53d8d6d-b8d3-4f71-a88a-5d639ce2925f.jpg?1562593253
 value=1.891
 rarity=U
 type=Creature

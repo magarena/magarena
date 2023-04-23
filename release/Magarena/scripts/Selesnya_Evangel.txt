@@ -1,5 +1,5 @@
 name=Selesnya Evangel
-image=https://magiccards.info/scans/en/cmd/223.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32a20292-8b19-4386-95b4-85efc903146b.jpg?1592714254
 value=3.080
 rarity=C
 type=Creature

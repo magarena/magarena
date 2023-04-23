@@ -1,5 +1,5 @@
 name=Academy Journeymage
-image=https://magiccards.info/scans/en/dom/41.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a46a65e0-66a3-4896-8acc-0ad5e9927c40.jpg?1562740666
 value=2.500
 rarity=C
 type=Creature

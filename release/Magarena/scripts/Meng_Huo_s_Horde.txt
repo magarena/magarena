@@ -1,5 +1,5 @@
 name=Meng Huo's Horde
-image=https://magiccards.info/scans/en/p3k/143.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a9b3f7a-1ae9-443b-8433-ac96cdaeaed8.jpg?1562927665
 value=2.109
 rarity=C
 type=Creature

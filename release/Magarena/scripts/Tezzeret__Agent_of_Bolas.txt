@@ -1,5 +1,5 @@
 name=Tezzeret, Agent of Bolas
-image=https://magiccards.info/scans/en/mbs/97.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f3c8470-1cc8-4383-8782-c022867d46e8.jpg?1562609629
 value=3.999
 rarity=M
 type=Legendary,Planeswalker

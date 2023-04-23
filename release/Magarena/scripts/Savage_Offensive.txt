@@ -1,5 +1,5 @@
 name=Savage Offensive
-image=https://magiccards.info/scans/en/in/162.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/356744f3-e444-4f4e-bf00-80bb6b2ef76f.jpg?1562905776
 value=2.740
 rarity=C
 type=Sorcery

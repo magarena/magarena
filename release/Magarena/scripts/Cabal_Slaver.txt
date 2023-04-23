@@ -1,5 +1,5 @@
 name=Cabal Slaver
-image=https://magiccards.info/scans/en/on/131.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9c04fd3-021a-4011-be9b-0d268557aa06.jpg?1562938749
 value=3.054
 rarity=U
 type=Creature

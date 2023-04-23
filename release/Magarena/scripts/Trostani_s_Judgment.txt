@@ -1,5 +1,5 @@
 name=Trostani's Judgment
-image=https://magiccards.info/scans/en/rtr/28.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b105835-8ca3-43fc-9724-29edde02f0bb.jpg?1568003931
 value=2.545
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Rapacious One
-image=https://magiccards.info/scans/en/cmd/133.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be25bcb7-2be6-4257-8762-2a26dc8a16ff.jpg?1592713619
 value=3.707
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Merciless Javelineer
-image=https://magiccards.info/scans/en/akh/202.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee0e8c57-3046-414d-be00-39bfb2537026.jpg?1543676077
 value=2.500
 rarity=U
 type=Creature

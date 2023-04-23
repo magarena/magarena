@@ -1,5 +1,5 @@
 name=Saber Ants
-image=https://magiccards.info/scans/en/mm/267.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9269f52-1002-475d-a0f3-d652630591ca.jpg?1562383527
 value=3.924
 rarity=U
 type=Creature

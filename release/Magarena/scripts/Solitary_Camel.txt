@@ -1,5 +1,5 @@
 name=Solitary Camel
-image=https://magiccards.info/scans/en/hou/23.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8adb8dbf-c83c-4169-b822-8e32aa36cffa.jpg?1562806249
 value=2.500
 rarity=C
 type=Creature

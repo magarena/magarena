@@ -1,5 +1,5 @@
 name=Hollowhenge Spirit
-image=https://magiccards.info/scans/en/cn2/92.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a870b8ee-8ca9-42d0-96bb-b297aa989d14.jpg?1576382279
 image_updated=2017-08-29
 value=2.695
 rarity=U

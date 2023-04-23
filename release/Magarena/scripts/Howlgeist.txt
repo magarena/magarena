@@ -1,5 +1,5 @@
 name=Howlgeist
-image=https://magiccards.info/scans/en/avr/182.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dad60d45-1c99-41d1-a237-c0ee18ce5361.jpg?1592709373
 value=3.059
 rarity=U
 type=Creature

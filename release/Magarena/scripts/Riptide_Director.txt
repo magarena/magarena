@@ -1,5 +1,5 @@
 name=Riptide Director
-image=https://magiccards.info/scans/en/le/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28d07de3-b176-4ac7-aaa7-497c06c08b55.jpg?1562903326
 value=3.850
 rarity=R
 type=Creature

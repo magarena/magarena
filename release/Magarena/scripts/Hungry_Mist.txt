@@ -1,5 +1,5 @@
 name=Hungry Mist
-image=https://magiccards.info/scans/en/5e/164.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0336557-3499-4227-81b1-c37d9fc0aacb.jpg?1559592527
 value=2.872
 rarity=C
 type=Creature

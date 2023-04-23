@@ -1,5 +1,5 @@
 name=Striking Sliver
-image=https://magiccards.info/scans/en/m14/157.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4ee9254b-3d98-4477-a82e-1450cf3ee96e.jpg?1562829076
 value=3.341
 rarity=C
 type=Creature

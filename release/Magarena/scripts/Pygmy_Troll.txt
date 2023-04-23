@@ -1,5 +1,5 @@
 name=Pygmy Troll
-image=https://magiccards.info/scans/en/ex/118.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7be9714d-125f-4700-879d-b920fe9f1b68.jpg?1562088298
 value=3.694
 rarity=C
 type=Creature

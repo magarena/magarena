@@ -1,5 +1,5 @@
 name=Redwood Treefolk
-image=https://magiccards.info/scans/en/7e/264.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cc6d29d-2915-418d-856f-13b05430dfda.jpg?1562244096
 value=2.873
 rarity=C
 type=Creature

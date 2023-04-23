@@ -1,5 +1,5 @@
 name=Ruin Rat
-image=https://magiccards.info/scans/en/hou/75.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91652fe0-2064-4996-b484-a1f88e0023f7.jpg?1562806953
 value=2.500
 rarity=C
 type=Creature

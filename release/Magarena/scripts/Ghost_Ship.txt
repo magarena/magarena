@@ -1,5 +1,5 @@
 name=Ghost Ship
-image=https://magiccards.info/scans/en/a25/60.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e76d9d80-b7fb-43ed-bc9c-767dd1613d37.jpg?1562442559
 image_updated=2018-04-27
 value=3.831
 rarity=C

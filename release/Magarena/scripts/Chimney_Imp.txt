@@ -1,5 +1,5 @@
 name=Chimney Imp
-image=https://magiccards.info/scans/en/mi/59.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a426922-5e96-48f3-b696-f5dc99258943.jpg?1562135149
 value=3.312
 rarity=C
 type=Creature

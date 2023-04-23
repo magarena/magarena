@@ -1,5 +1,5 @@
 name=Wanderbrine Rootcutters
-image=https://magiccards.info/scans/en/shm/178.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab739d64-cdcd-4f07-9854-e067c37c4f41.jpg?1562834478
 value=2.128
 rarity=C
 type=Creature

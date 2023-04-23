@@ -1,5 +1,5 @@
 name=Blazing Salvo
-image=https://magiccards.info/scans/en/ddk/58.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87ce6584-0a21-43d0-a2fe-cbdea564927a.jpg?1592714570
 value=3.640
 rarity=C
 type=Instant

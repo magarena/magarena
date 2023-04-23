@@ -1,5 +1,5 @@
 name=Pernicious Deed
-image=https://magiccards.info/scans/en/a25/212.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8652e3a1-bcd4-4c0c-a085-34f19702df26.jpg?1562437624
 image_updated=2018-04-27
 value=4.571
 rarity=R

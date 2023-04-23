@@ -1,5 +1,5 @@
 name=Ebon Drake
-image=https://magiccards.info/scans/en/5dn/48.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/254ea05c-c349-4a95-8751-779b044603bb.jpg?1562875902
 value=1.913
 rarity=U
 type=Creature

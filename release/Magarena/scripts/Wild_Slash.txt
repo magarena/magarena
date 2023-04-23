@@ -1,5 +1,5 @@
 name=Wild Slash
-image=https://magiccards.info/scans/en/frf/118.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/6975490f-7679-48b3-ba34-04dec97a29c2.jpg?1562826120
 value=2.500
 rarity=U
 type=Instant

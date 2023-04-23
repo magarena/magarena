@@ -1,5 +1,5 @@
 name=Overrule
-image=https://magiccards.info/scans/en/di/120.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cef45820-34d9-448e-b38b-176774d3ae49.jpg?1581708405
 image_updated=2017-01-03
 value=3.034
 rarity=C

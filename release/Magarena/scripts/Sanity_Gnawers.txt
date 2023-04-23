@@ -1,5 +1,5 @@
 name=Sanity Gnawers
-image=https://magiccards.info/scans/en/arb/44.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c088d28d-16c2-4dd2-b036-946dfdb8ec98.jpg?1562644064
 value=2.638
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Canopy Spider
-image=https://magiccards.info/scans/en/10e/254.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0ae7fabb-dcb6-4c21-87ee-2893b63814be.jpg?1592518417
 value=3.300
 rarity=C
 type=Creature

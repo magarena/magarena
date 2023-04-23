@@ -1,5 +1,5 @@
 name=Avenging Angel
-image=https://magiccards.info/scans/en/tp/219.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1edc1be8-f1be-448a-b869-6fd81f7e21ec.jpg?1562428645
 value=3.317
 rarity=R
 type=Creature

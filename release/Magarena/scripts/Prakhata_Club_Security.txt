@@ -1,5 +1,5 @@
 name=Prakhata Club Security
-image=https://magiccards.info/scans/en/kld/98.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c46da57d-bcb9-4303-aa1c-72d08bb2b5a8.jpg?1562934392
 image_updated=2016-10-05
 value=2.500
 rarity=C

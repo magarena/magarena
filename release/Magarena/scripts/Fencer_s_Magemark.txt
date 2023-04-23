@@ -1,5 +1,5 @@
 name=Fencer's Magemark
-image=https://magiccards.info/scans/en/gp/65.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/318a33fb-8b36-4dad-9eef-e0e601723f78.jpg?1593272306
 value=3.207
 rarity=C
 type=Enchantment

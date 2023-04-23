@@ -1,5 +1,5 @@
 name=Descendant of Kiyomaro
-image=https://magiccards.info/scans/en/sok/7.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/354af7fc-fd15-4209-b3e8-8729a401b6a6.jpg?1562493452
 value=3.400
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Deepwood Wolverine
-image=https://magiccards.info/scans/en/mm/242.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db9a9a76-741a-4ba3-bd4b-0eb87d678253.jpg?1562383493
 value=3.554
 rarity=C
 type=Creature

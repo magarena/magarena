@@ -1,5 +1,5 @@
 name=Wicked Reward
-image=https://magiccards.info/scans/en/vi/25.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee32f8ba-3547-4913-a555-d43ee2978ba9.jpg?1562279109
 value=3.035
 rarity=C
 type=Instant

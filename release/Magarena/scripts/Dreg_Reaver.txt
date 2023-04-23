@@ -1,5 +1,5 @@
 name=Dreg Reaver
-image=https://magiccards.info/scans/en/ala/73.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7771eba-bc2d-40f2-bab4-5e9cc4fe8f34.jpg?1562710204
 value=1.389
 rarity=C
 type=Creature

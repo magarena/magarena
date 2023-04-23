@@ -1,5 +1,5 @@
 name=Controlled Instincts
-image=https://magiccards.info/scans/en/cfx/23.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b04e58e8-cb01-49b0-89b7-26536eb44e97.jpg?1562803123
 value=2.038
 rarity=U
 type=Enchantment

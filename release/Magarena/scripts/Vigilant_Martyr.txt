@@ -1,5 +1,5 @@
 name=Vigilant Martyr
-image=https://magiccards.info/scans/en/mr/249.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a02e3c10-cc21-4e06-a987-b03aee61bd50.jpg?1562720942
 value=3.732
 rarity=U
 type=Creature

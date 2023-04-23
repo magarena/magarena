@@ -1,5 +1,5 @@
 name=Felhide Petrifier
-image=https://magiccards.info/scans/en/jou/70.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d6cce01-a0cb-4059-a0ad-fbf7d9b998b8.jpg?1593095714
 value=3.861
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sylvan Bounty
-image=https://magiccards.info/scans/en/cn2/194.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53e467a6-810b-4caa-bc56-aec7272177b4.jpg?1592765874
 image_updated=2017-08-29
 value=1.444
 rarity=C

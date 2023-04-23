@@ -1,5 +1,5 @@
 name=Blessed Reversal
-image=https://magiccards.info/scans/en/8e/7.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/806d854b-a165-4d40-86d7-d6a0aa17ce18.jpg?1562920856
 value=3.523
 rarity=R
 type=Instant

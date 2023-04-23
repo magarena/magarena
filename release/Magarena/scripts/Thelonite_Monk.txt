@@ -1,5 +1,5 @@
 name=Thelonite Monk
-image=https://magiccards.info/scans/en/fe/93.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5400ff25-c70e-4095-a228-190601b86043.jpg?1587911014
 value=2.893
 rarity=R
 type=Creature

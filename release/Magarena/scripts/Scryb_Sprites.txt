@@ -1,5 +1,5 @@
 name=Scryb Sprites
-image=https://magiccards.info/scans/en/5e/186.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26f191de-8c59-458c-a1ab-80e2bccdb974.jpg?1562903218
 value=4.253
 rarity=C
 type=Creature

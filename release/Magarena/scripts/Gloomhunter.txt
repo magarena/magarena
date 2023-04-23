@@ -1,5 +1,5 @@
 name=Gloomhunter
-image=https://magiccards.info/scans/en/roe/111.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98db4317-9850-44c1-884b-d8d3abe1afeb.jpg?1562706606
 value=1.670
 rarity=C
 type=Creature

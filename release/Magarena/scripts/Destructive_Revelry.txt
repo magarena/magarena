@@ -1,5 +1,5 @@
 name=Destructive Revelry
-image=https://magiccards.info/scans/en/ths/192.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/798af7cb-645f-4526-8a19-6e4595b93964.jpg?1562820219
 value=3.531
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Spawnwrithe
-image=https://magiccards.info/scans/en/cmd/171.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5ba6ee29-fc77-4300-9c5e-1557cabd05e5.jpg?1592754723
 value=3.667
 rarity=R
 type=Creature

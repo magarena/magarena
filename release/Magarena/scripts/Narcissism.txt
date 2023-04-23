@@ -1,5 +1,5 @@
 name=Narcissism
-image=https://magiccards.info/scans/en/tr/134.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eea658dd-7567-4b93-88a4-08b4ffb3dad7.jpg?1562632604
 value=3.212
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Hidden Ancients
-image=https://magiccards.info/scans/en/us/260.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45f4f257-c04e-489f-8ffd-814bf075e7d1.jpg?1562909480
 value=3.470
 rarity=U
 type=Enchantment

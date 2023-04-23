@@ -1,5 +1,5 @@
 name=Genju of the Spires
-image=https://magiccards.info/scans/en/a25/132.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/777cc6bb-638c-4535-8072-f8a2a1ba5b45.jpg?1562437058
 image_updated=2018-04-27
 value=4.225
 rarity=U

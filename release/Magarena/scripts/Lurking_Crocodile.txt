@@ -1,5 +1,5 @@
 name=Lurking Crocodile
-image=https://magiccards.info/scans/en/m12/184.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4cd7d075-031e-4766-89e9-03a8a7197019.jpg?1562641764
 value=3.096
 rarity=C
 type=Creature

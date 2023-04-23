@@ -1,5 +1,5 @@
 name=Nekrataal
-image=https://magiccards.info/scans/en/ema/99.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b3a4f2a-57ea-4fa0-a76f-3e215a36d1f4.jpg?1580014312
 value=4.067
 rarity=U
 type=Creature

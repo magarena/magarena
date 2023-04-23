@@ -1,5 +1,5 @@
 name=Gray Merchant of Asphodel
-image=https://magiccards.info/scans/en/c14/146.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c1a7dd8-8034-4f59-a351-33666b26ff5a.jpg?1581479807
 value=3.809
 rarity=C
 type=Creature

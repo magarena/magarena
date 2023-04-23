@@ -1,5 +1,5 @@
 name=Warmonger's Chariot
-image=https://magiccards.info/scans/en/cns/207.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7321473-5747-4430-86b2-b5029d9f6486.jpg?1601081113
 value=3.100
 rarity=U
 type=Artifact

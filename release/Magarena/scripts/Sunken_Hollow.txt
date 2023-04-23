@@ -1,5 +1,5 @@
 name=Sunken Hollow
-image=https://magiccards.info/scans/en/bfz/249.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/213caef8-d475-452a-973a-ce3c93830f7c.jpg?1682210673
 image_updated=2015-11-08
 value=2.500
 rarity=R

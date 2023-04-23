@@ -1,5 +1,5 @@
 name=Cinder Wall
-image=https://magiccards.info/scans/en/cns/140.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dfcc240-9010-4e0c-afda-7f70c42da7d2.jpg?1562865418
 value=3.250
 rarity=C
 type=Creature

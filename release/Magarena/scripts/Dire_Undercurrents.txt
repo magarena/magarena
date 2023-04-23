@@ -1,5 +1,5 @@
 name=Dire Undercurrents
-image=https://magiccards.info/scans/en/shm/159.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d6fb3b2-eef2-4699-ab5e-ff7d8de2a1de.jpg?1562832974
 value=3.536
 rarity=R
 type=Enchantment

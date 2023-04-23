@@ -1,5 +1,5 @@
 name=Ambush Party
-image=https://magiccards.info/scans/en/5e/208.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92a1bb12-636f-426a-af13-f3be532c7845.jpg?1562869540
 value=2.194
 rarity=C
 type=Creature

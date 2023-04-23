@@ -1,5 +1,5 @@
 name=Altar of Dementia
-image=https://magiccards.info/scans/en/cns/196.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/169356e0-46dc-4096-8e66-36726454f104.jpg?1562202433
 value=4.393
 rarity=R
 type=Artifact

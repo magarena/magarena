@@ -1,5 +1,5 @@
 name=Frost Walker
-image=https://magiccards.info/scans/en/frf/35.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebb2c83d-48db-4d0b-8c3a-f4b0353eeb86.jpg?1562831236
 value=2.500
 rarity=U
 type=Creature

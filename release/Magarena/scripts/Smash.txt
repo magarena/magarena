@@ -1,5 +1,5 @@
 name=Smash
-image=https://magiccards.info/scans/en/10e/235.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40c39852-efd3-4a25-b33b-3c13dad96e7d.jpg?1562546742
 value=3.854
 removal=1
 rarity=C

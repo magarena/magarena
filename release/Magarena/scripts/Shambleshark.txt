@@ -1,5 +1,5 @@
 name=Shambleshark
-image=https://magiccards.info/scans/en/gtc/193.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07855a17-4e68-4257-af7f-275c9fb0a9b8.jpg?1561814739
 value=3.806
 rarity=C
 type=Creature

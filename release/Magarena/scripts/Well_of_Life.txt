@@ -1,5 +1,5 @@
 name=Well of Life
-image=https://magiccards.info/scans/en/pr/141.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf3f4fc3-3819-470d-92d9-98cb390f89b9.jpg?1562930716
 value=2.569
 rarity=U
 type=Artifact

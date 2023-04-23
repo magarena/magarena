@@ -1,5 +1,5 @@
 name=Sarkhan's Triumph
-image=https://magiccards.info/scans/en/dtk/154.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9a0ff4d-060e-41dc-8b79-1fa42838adf2.jpg?1562795971
 value=2.500
 rarity=U
 type=Instant

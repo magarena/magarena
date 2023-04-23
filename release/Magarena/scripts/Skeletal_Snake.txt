@@ -1,5 +1,5 @@
 name=Skeletal Snake
-image=https://magiccards.info/scans/en/po/34.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42bd4896-4191-4479-be57-070753f8725c.jpg?1562446615
 value=2.210
 rarity=C
 type=Creature

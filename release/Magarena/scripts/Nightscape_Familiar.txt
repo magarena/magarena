@@ -1,5 +1,5 @@
 name=Nightscape Familiar
-image=https://magiccards.info/scans/en/ps/48.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6ada4055-279d-411d-9316-5ecf0b8668c5.jpg?1592765568
 value=4.000
 rarity=C
 type=Creature

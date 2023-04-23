@@ -1,5 +1,5 @@
 name=Angrath's Marauders
-image=https://magiccards.info/scans/en/xln/132.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0bfc9e0-14e8-43ce-8fca-773b7f2387dc.jpg?1562566421
 value=2.500
 rarity=R
 type=Creature

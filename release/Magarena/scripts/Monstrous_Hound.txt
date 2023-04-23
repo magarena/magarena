@@ -1,5 +1,5 @@
 name=Monstrous Hound
-image=https://magiccards.info/scans/en/ex/89.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5066b1b-3910-4434-83d6-030851f20bcf.jpg?1562088810
 value=2.128
 rarity=R
 type=Creature

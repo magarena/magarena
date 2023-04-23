@@ -1,5 +1,5 @@
 name=Stern Mentor
-image=https://magiccards.info/scans/en/avr/77.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffe4d34f-68f0-4d79-9aab-58c5304224d9.jpg?1592708704
 value=2.515
 rarity=U
 type=Creature

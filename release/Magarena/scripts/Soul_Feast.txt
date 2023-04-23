@@ -1,5 +1,5 @@
 name=Soul Feast
-image=https://magiccards.info/scans/en/10e/179.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d0a8d6d-8cd0-4dfe-9894-77eb60620884.jpg?1562548374
 value=3.143
 rarity=U
 type=Sorcery

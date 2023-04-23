@@ -1,5 +1,5 @@
 name=Dromoka Captain
-image=https://magiccards.info/scans/en/dtk/12.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d11837c-613f-4e36-b5dd-99baf8b38532.jpg?1562784217
 value=2.500
 rarity=U
 type=Creature

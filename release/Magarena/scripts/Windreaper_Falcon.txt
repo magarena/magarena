@@ -1,5 +1,5 @@
 name=Windreaper Falcon
-image=https://magiccards.info/scans/en/mr/349.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65285030-0714-43bf-bb91-a79dcba1ccc5.jpg?1562719753
 value=2.458
 rarity=U
 type=Creature

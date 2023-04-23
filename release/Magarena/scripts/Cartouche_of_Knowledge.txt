@@ -1,5 +1,5 @@
 name=Cartouche of Knowledge
-image=https://magiccards.info/scans/en/akh/45.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d806458e-81cd-4413-bba0-14d957bece79.jpg?1543674901
 value=2.500
 rarity=C
 type=Enchantment

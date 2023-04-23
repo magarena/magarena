@@ -1,5 +1,5 @@
 name=Dragonlord Silumgar
-image=https://magiccards.info/scans/en/dtk/220.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ee837b8-c280-4a5b-acdf-71247ab096f5.jpg?1673148531
 value=2.500
 rarity=M
 type=Legendary,Creature

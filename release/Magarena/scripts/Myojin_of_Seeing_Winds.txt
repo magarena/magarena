@@ -1,5 +1,5 @@
 name=Myojin of Seeing Winds
-image=https://magiccards.info/scans/en/chk/75.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f5f8d3a-95e7-4dd9-8510-43517eb02693.jpg?1562762504
 value=3.663
 rarity=R
 type=Legendary,Creature

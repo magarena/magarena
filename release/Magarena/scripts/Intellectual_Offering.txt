@@ -1,5 +1,5 @@
 name=Intellectual Offering
-image=https://magiccards.info/scans/en/c14/15.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63de9e39-3c16-452f-9f06-4c1298752f57.jpg?1677285170
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Dedicated Martyr
-image=https://magiccards.info/scans/en/od/16.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1f95b64-858b-4344-84a2-3afa5c7b9ee9.jpg?1562934202
 value=1.957
 rarity=C
 type=Creature

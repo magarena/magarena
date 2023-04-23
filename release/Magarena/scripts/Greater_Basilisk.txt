@@ -1,5 +1,5 @@
 name=Greater Basilisk
-image=https://magiccards.info/scans/en/ima/165.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/886e40d7-5677-493d-9ea4-205f50d2aefe.jpg?1562851085
 image_updated=2017-04-12
 value=3.216
 rarity=C

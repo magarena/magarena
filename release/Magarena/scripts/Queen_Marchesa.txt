@@ -1,5 +1,5 @@
 name=Queen Marchesa
-image=https://magiccards.info/scans/en/cn2/78.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03f4341c-088b-4f35-b82b-3d98d8a93de4.jpg?1576382166
 image_updated=2016-09-05
 value=2.500
 rarity=M

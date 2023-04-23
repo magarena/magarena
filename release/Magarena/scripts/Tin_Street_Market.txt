@@ -1,5 +1,5 @@
 name=Tin Street Market
-image=https://magiccards.info/scans/en/gtc/108.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c1f543b-2222-4ef5-b4f7-2c3d2ea27fdc.jpg?1561818387
 value=1.167
 rarity=C
 type=Enchantment

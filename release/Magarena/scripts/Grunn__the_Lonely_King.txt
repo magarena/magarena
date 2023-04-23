@@ -1,5 +1,5 @@
 name=Grunn, the Lonely King
-image=https://magiccards.info/scans/en/dom/165.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6a9aa5c-1501-4958-872a-39c512514033.jpg?1562741677
 value=2.500
 rarity=U
 type=Legendary,Creature

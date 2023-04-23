@@ -1,5 +1,5 @@
 name=Aeronaut Admiral
-image=https://magiccards.info/scans/en/aer/2.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/943f7244-aa62-423f-aaaa-680bdfb4f47e.jpg?1651655561
 value=2.500
 rarity=U
 type=Creature

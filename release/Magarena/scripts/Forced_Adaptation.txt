@@ -1,5 +1,5 @@
 name=Forced Adaptation
-image=https://magiccards.info/scans/en/gtc/120.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6527d61-e9d3-44d0-833e-19c072309270.jpg?1561840465
 value=3.170
 rarity=C
 type=Enchantment

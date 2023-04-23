@@ -1,5 +1,5 @@
 name=Exultant Skymarcher
-image=https://magiccards.info/scans/en/rix/7.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/fffe7b2b-22c3-4e6a-9b1b-c6d7b29b9f86.jpg?1555039686
 value=2.500
 rarity=C
 type=Creature

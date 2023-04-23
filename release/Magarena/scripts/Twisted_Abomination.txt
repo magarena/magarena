@@ -1,5 +1,5 @@
 name=Twisted Abomination
-image=https://magiccards.info/scans/en/a25/111.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffae38ec-7712-4701-b072-9f962ec9c259.jpg?1599706072
 image_updated=2018-04-27
 value=3.750
 rarity=C

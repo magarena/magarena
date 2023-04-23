@@ -1,5 +1,5 @@
 name=Sidar Jabari
-image=https://magiccards.info/scans/en/mr/243.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6d7c16b-27f2-4608-bb79-c2edb86abdef.jpg?1562934883
 value=3.844
 rarity=R
 type=Legendary,Creature

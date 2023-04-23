@@ -1,5 +1,5 @@
 name=Brace for Impact
-image=https://magiccards.info/scans/en/di/5.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d1f1c57-693f-452b-951f-8c8c23f2ee99.jpg?1593272457
 value=2.351
 rarity=U
 type=Instant

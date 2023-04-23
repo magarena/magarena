@@ -1,5 +1,5 @@
 name=Sophic Centaur
-image=https://magiccards.info/scans/en/pc/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/582cefca-6c11-4df3-8b54-46309dafff4a.jpg?1562572169
 value=1.423
 rarity=U
 type=Creature

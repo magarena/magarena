@@ -1,5 +1,5 @@
 name=Psychatog
-image=https://magiccards.info/scans/en/od/292.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f60911a4-2eb6-4f20-a1c1-2fc5a29c35b5.jpg?1562944556
 value=4.167
 rarity=U
 type=Creature

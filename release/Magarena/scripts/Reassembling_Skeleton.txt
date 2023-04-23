@@ -1,5 +1,5 @@
 name=Reassembling Skeleton
-image=https://magiccards.info/scans/en/m19/116.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd82846e-f119-4b27-a795-7b1ceebab4b0.jpg?1631586805
 image_updated=2018-08-07
 value=3.576
 rarity=U

@@ -1,5 +1,5 @@
 name=Sphere of Resistance
-image=https://magiccards.info/scans/en/ex/139.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ea2ae1d-91b4-44a0-b2e6-61839d8f4468.jpg?1562926995
 value=4.500
 rarity=R
 type=Artifact

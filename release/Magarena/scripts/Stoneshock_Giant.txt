@@ -1,5 +1,5 @@
 name=Stoneshock Giant
-image=https://magiccards.info/scans/en/cn2/169.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff560915-5687-452f-983a-887929b44b65.jpg?1562276940
 image_updated=2016-01-09
 value=3.106
 rarity=U

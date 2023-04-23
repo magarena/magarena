@@ -1,5 +1,5 @@
 name=Stony Silence
-image=https://magiccards.info/scans/en/mm3/25.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e7faede-f794-4bda-9d64-21390ba19266.jpg?1593812944
 image_updated=2017-08-08
 value=4.248
 rarity=R

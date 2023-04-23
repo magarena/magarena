@@ -1,5 +1,5 @@
 name=Scarwood Treefolk
-image=https://magiccards.info/scans/en/ts/214.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed6dece3-058c-4738-a22f-8893345ddd1c.jpg?1562945011
 value=1.463
 rarity=C
 type=Creature

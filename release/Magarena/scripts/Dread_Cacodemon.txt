@@ -1,5 +1,5 @@
 name=Dread Cacodemon
-image=https://magiccards.info/scans/en/cmd/79.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25344729-19a5-496f-8e6f-ce7b69afdc68.jpg?1592672634
 value=3.620
 rarity=R
 type=Creature

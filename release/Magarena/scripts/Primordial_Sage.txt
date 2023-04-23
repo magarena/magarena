@@ -1,5 +1,5 @@
 name=Primordial Sage
-image=https://magiccards.info/scans/en/c14/211.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b0d8dec-e139-4565-9259-3c24c54c1d45.jpg?1601079960
 value=4.031
 rarity=R
 type=Creature

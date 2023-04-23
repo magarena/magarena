@@ -1,5 +1,5 @@
 name=Mudbutton Torchrunner
-image=https://magiccards.info/scans/en/mm3/104.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20c19ccf-999b-4c7d-ae5b-f93555d08a7a.jpg?1593813526
 image_updated=2017-08-08
 value=3.058
 rarity=C

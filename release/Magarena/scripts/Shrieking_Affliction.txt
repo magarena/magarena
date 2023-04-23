@@ -1,5 +1,5 @@
 name=Shrieking Affliction
-image=https://magiccards.info/scans/en/rtr/76.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfd08894-2534-4114-9365-40809ba95eb2.jpg?1562794388
 value=3.568
 rarity=U
 type=Enchantment

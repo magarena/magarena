@@ -1,5 +1,5 @@
 name=Phantasmal Abomination
-image=https://magiccards.info/scans/en/roe/80.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40d9c83f-ddd2-4929-887f-9df6155c4b82.jpg?1562703162
 value=2.552
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Glacial Stalker
-image=https://magiccards.info/scans/en/ktk/41.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8821c7b9-702b-416f-b006-941ad57f9e11.jpg?1562789833
 value=2.500
 rarity=C
 type=Creature

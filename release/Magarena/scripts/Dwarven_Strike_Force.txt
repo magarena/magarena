@@ -1,5 +1,5 @@
 name=Dwarven Strike Force
-image=https://magiccards.info/scans/en/od/188.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2bc3d85-5ba1-4f2e-a676-be989bdb04f7.jpg?1562925354
 value=2.093
 rarity=U
 type=Creature

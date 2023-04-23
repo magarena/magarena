@@ -1,5 +1,5 @@
 name=Uncontrollable Anger
-image=https://magiccards.info/scans/en/cns/155.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abd16c43-098c-4f38-b0e2-9ad84dd09eb9.jpg?1562866397
 value=2.500
 rarity=U
 type=Enchantment

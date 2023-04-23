@@ -1,5 +1,5 @@
 name=Eagle of the Watch
-image=https://magiccards.info/scans/en/ori/275.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8af7956d-f811-49d3-bef7-07f294dcea3c.jpg?1562030310
 image_updated=2010-09-10
 value=2.500
 rarity=C

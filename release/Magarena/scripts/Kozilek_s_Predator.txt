@@ -1,5 +1,5 @@
 name=Kozilek's Predator
-image=https://magiccards.info/scans/en/mm2/147.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8614f43-21c3-47cd-894a-8cc952bc561a.jpg?1599707329
 value=3.957
 rarity=C
 type=Creature

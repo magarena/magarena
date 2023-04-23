@@ -1,5 +1,5 @@
 name=Wandering Goblins
-image=https://magiccards.info/scans/en/cfx/76.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/217281d9-a8f4-4e7a-987f-7ece0ae15eba.jpg?1562799925
 value=2.082
 rarity=C
 type=Creature

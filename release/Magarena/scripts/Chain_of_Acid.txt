@@ -1,5 +1,5 @@
 name=Chain of Acid
-image=https://magiccards.info/scans/en/on/252.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d47ddca-a363-4ab7-b7f2-d0e0043c9916.jpg?1562901859
 value=3.397
 rarity=U
 type=Sorcery

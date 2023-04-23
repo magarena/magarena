@@ -1,5 +1,5 @@
 name=Mountain Goat
-image=https://magiccards.info/scans/en/6e/195.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47754124-37e2-4878-a711-a3e00ae0bc70.jpg?1562817136
 value=3.776
 rarity=C
 type=Creature

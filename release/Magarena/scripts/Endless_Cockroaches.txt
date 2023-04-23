@@ -1,5 +1,5 @@
 name=Endless Cockroaches
-image=https://magiccards.info/scans/en/po/14.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de7f26a4-da23-4508-b8b4-817a66d7852a.jpg?1562941935
 value=3.476
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Dwarven Armory
-image=https://magiccards.info/scans/en/ia/182.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d14a430-6e08-40cf-970a-cae84bba6ef7.jpg?1587911905
 value=3.000
 rarity=R
 type=Enchantment

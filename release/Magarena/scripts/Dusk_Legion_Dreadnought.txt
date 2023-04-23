@@ -1,5 +1,5 @@
 name=Dusk Legion Dreadnought
-image=https://magiccards.info/scans/en/xln/236.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aec26144-9acf-43b7-8614-1a2952df613d.jpg?1562562161
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Spiraling Embers
-image=https://magiccards.info/scans/en/sok/116.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73503423-30d8-42bc-a697-6d986e4945c8.jpg?1562494235
 value=3.085
 rarity=C
 type=Sorcery

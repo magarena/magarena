@@ -1,5 +1,5 @@
 name=Divine Offering
-image=https://magiccards.info/scans/en/mbs/5.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe7c7a65-5a96-4986-877b-b34583092bb6.jpg?1621834401
 value=3.907
 rarity=C
 type=Instant

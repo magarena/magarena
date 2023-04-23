@@ -1,5 +1,5 @@
 name=Arcbound Ravager
-image=https://magiccards.info/scans/en/mma/198.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0c33a92-5621-40b4-a3a2-b67893edbc01.jpg?1561968545
 value=4.569
 rarity=R
 type=Artifact,Creature

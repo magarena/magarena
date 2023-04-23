@@ -1,5 +1,5 @@
 name=Spiritual Asylum
-image=https://magiccards.info/scans/en/ne/23.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5eea354-2d92-4b57-aec7-25260ab7a70f.jpg?1562632575
 value=3.436
 rarity=R
 type=Enchantment

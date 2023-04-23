@@ -1,5 +1,5 @@
 name=Rogue Skycaptain
-image=https://magiccards.info/scans/en/ai/116.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d449a05-c0b9-4532-a67d-21d3d3baea59.jpg?1562868062
 value=2.882
 rarity=R
 type=Creature

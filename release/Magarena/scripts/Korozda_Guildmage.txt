@@ -1,5 +1,5 @@
 name=Korozda Guildmage
-image=https://magiccards.info/scans/en/c16/208.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42e19e30-3853-49e5-a3a3-5616e25df4ea.jpg?1592673394
 image_updated=2017-08-17
 value=3.625
 rarity=U

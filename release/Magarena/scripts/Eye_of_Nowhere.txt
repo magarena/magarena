@@ -1,5 +1,5 @@
 name=Eye of Nowhere
-image=https://magiccards.info/scans/en/chk/59.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b307af89-1890-4fac-a12e-f8a678f1101f.jpg?1562763684
 value=3.966
 rarity=C
 type=Sorcery

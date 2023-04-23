@@ -1,5 +1,5 @@
 name=Stensia Bloodhall
-image=https://magiccards.info/scans/en/isd/247.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc2741d8-2c02-4acd-8ca2-55b4bf6aef1c.jpg?1562837116
 value=2.931
 rarity=R
 type=Land

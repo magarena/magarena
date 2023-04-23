@@ -1,5 +1,5 @@
 name=Iron-Barb Hellion
-image=https://magiccards.info/scans/en/5dn/69.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cb36352-2f16-4572-b1aa-dc28b11f4229.jpg?1562875415
 value=1.871
 rarity=U
 type=Creature

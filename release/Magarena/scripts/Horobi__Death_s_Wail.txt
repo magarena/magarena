@@ -1,5 +1,5 @@
 name=Horobi, Death's Wail
-image=https://magiccards.info/scans/en/chk/117.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b41983cb-c4e4-4384-bd69-df3fc6e74cd0.jpg?1593860738
 value=3.913
 rarity=R
 type=Legendary,Creature

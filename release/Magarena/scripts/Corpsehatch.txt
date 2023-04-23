@@ -1,5 +1,5 @@
 name=Corpsehatch
-image=https://magiccards.info/scans/en/roe/103.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f8f9dc0-67c3-4ded-bf95-02452d4ee635.jpg?1593095745
 value=3.050
 removal=3
 rarity=U

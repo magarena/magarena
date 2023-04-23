@@ -1,5 +1,5 @@
 name=Kujar Seedsculptor
-image=https://magiccards.info/scans/en/kld/159.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a8a8d63-e64b-4a7a-ba95-1a68f75977d4.jpg?1561759267
 image_updated=2016-10-05
 value=2.500
 rarity=C

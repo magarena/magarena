@@ -1,5 +1,5 @@
 name=Phyrexian Monitor
-image=https://magiccards.info/scans/en/ud/64.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/571058b0-7e10-4259-8db9-5c8b78c1e13d.jpg?1562443767
 value=2.929
 rarity=C
 type=Creature

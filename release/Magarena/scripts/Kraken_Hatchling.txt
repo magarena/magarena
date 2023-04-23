@@ -1,5 +1,5 @@
 name=Kraken Hatchling
-image=https://magiccards.info/scans/en/mm3/42.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc1f65c8-4941-41ac-9340-f741725ec71c.jpg?1562936034
 image_updated=2017-08-08
 value=3.430
 rarity=C

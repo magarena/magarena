@@ -1,5 +1,5 @@
 name=Deathcult Rogue
-image=https://magiccards.info/scans/en/gtc/218.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4c186d2-e631-4811-83ea-fdb54e730a5d.jpg?1561840393
 value=3.295
 rarity=C
 type=Creature

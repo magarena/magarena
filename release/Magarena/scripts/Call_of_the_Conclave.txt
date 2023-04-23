@@ -1,5 +1,5 @@
 name=Call of the Conclave
-image=https://magiccards.info/scans/en/mm3/154.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e45a453b-bc76-4768-88ea-a5117e29a49e.jpg?1593814170
 image_updated=2017-08-08
 value=3.949
 rarity=C

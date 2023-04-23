@@ -1,5 +1,5 @@
 name=Flood
-image=https://magiccards.info/scans/en/5e/87.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2aefbeae-ac72-4a13-8898-8d1e42a633a6.jpg?1562590147
 image_updated=2016-12-02
 value=3.857
 rarity=C

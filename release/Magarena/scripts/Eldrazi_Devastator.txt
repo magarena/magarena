@@ -1,5 +1,5 @@
 name=Eldrazi Devastator
-image=https://magiccards.info/scans/en/bfz/7.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04b13e32-01b9-4a86-a3df-ca8b784c6a6c.jpg?1562896153
 image_updated=2015-11-08
 value=2.500
 rarity=C

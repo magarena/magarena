@@ -1,5 +1,5 @@
 name=Path of Anger's Flame
-image=https://magiccards.info/scans/en/sok/109.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/046fd4b1-d3a4-4859-a0d4-0e8341e6c6c7.jpg?1562492062
 value=3.203
 rarity=C
 type=Instant

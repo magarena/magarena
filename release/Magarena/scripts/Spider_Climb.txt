@@ -1,5 +1,5 @@
 name=Spider Climb
-image=https://magiccards.info/scans/en/vi/70.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1818812-4cb8-4fe1-98c0-b40086b4991c.jpg?1562278162
 value=3.578
 rarity=C
 type=Enchantment

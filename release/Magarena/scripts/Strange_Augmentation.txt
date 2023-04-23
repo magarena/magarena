@@ -1,5 +1,5 @@
 name=Strange Augmentation
-image=https://magiccards.info/scans/en/emn/105.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d9b9847-7ef7-4fcc-ba16-8f2859d53fe6.jpg?1576384420
 image_updated=2016-09-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Memory Plunder
-image=https://magiccards.info/scans/en/c17/178.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d9b3d8d-4941-44ca-b829-d53242feba1e.jpg?1674142493
 image_updated=2017-10-03
 value=3.829
 rarity=R

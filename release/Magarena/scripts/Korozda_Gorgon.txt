@@ -1,5 +1,5 @@
 name=Korozda Gorgon
-image=https://magiccards.info/scans/en/dgm/78.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7006e5b9-d6a3-43ce-904b-b2ac0fea67e5.jpg?1562915766
 value=3.639
 rarity=U
 type=Creature

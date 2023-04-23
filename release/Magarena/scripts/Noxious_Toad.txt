@@ -1,5 +1,5 @@
 name=Noxious Toad
-image=https://magiccards.info/scans/en/po/27.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5ec75ba-bae2-4ccc-b18b-ad4639cfb548.jpg?1562447373
 value=2.017
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sewers of Estark
-image=https://magiccards.info/scans/en/mbp/2.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c9b2017-2b02-44ad-96c6-b3b2a0fda005.jpg?1562545455
 value=2.781
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Reaver Drone
-image=https://magiccards.info/scans/en/ogw/76.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/162f3fb8-75b7-4cd7-9d6c-27dd76197aa5.jpg?1562899434
 image_updated=2016-02-29
 value=2.500
 rarity=U

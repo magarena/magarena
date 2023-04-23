@@ -1,5 +1,5 @@
 name=Heavy Infantry
-image=https://magiccards.info/scans/en/ori/18.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b904b1c-bf35-4bc1-8022-7f632160733d.jpg?1562012287
 image_updated=2015-11-05
 value=2.500
 rarity=C

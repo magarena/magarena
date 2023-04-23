@@ -1,5 +1,5 @@
 name=Skirsdag High Priest
-image=https://magiccards.info/scans/en/c14/163.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01dd19e9-23ff-4854-bbce-ce0a00a7b5b4.jpg?1599705938
 value=3.848
 rarity=R
 type=Creature

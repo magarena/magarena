@@ -1,5 +1,5 @@
 name=Ornery Kudu
-image=https://magiccards.info/scans/en/akh/178.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8ba1d3a1-8c1b-4b77-b149-13d5ad9f125a.jpg?1543675912
 value=2.500
 rarity=C
 type=Creature

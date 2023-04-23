@@ -1,5 +1,5 @@
 name=Affa Protector
-image=https://magiccards.info/scans/en/ogw/14.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e54ac79-fbaa-4385-869b-aaf31e33a11f.jpg?1562897950
 image_updated=2016-02-29
 value=2.500
 rarity=C

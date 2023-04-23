@@ -1,5 +1,5 @@
 name=Graverobber Spider
-image=https://magiccards.info/scans/en/bng/122.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41810472-ba24-44b6-886c-f8906ff0a7df.jpg?1593092470
 value=3.821
 rarity=U
 type=Creature

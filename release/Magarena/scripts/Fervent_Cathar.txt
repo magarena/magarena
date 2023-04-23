@@ -1,5 +1,5 @@
 name=Fervent Cathar
-image=https://magiccards.info/scans/en/ema/129.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c00c27c-7826-4d6e-9d56-2844c59c8066.jpg?1580014528
 value=2.564
 rarity=C
 type=Creature

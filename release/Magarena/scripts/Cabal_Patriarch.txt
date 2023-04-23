@@ -1,5 +1,5 @@
 name=Cabal Patriarch
-image=https://magiccards.info/scans/en/od/120.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d2f0da3-a13e-4a45-98dc-6227cf952a5e.jpg?1562897557
 value=3.649
 rarity=R
 type=Legendary,Creature

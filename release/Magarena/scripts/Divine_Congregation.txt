@@ -1,5 +1,5 @@
 name=Divine Congregation
-image=https://magiccards.info/scans/en/ts/13.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f781071-e9bc-49ee-ac94-23490134b909.jpg?1562928694
 value=2.643
 rarity=C
 type=Sorcery

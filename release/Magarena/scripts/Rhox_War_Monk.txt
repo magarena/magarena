@@ -1,5 +1,5 @@
 name=Rhox War Monk
-image=https://magiccards.info/scans/en/mm3/180.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd24e81d-d3a8-4550-bad9-b818f48cc700.jpg?1593814541
 image_updated=2017-08-08
 value=4.016
 rarity=U

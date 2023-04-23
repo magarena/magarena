@@ -1,5 +1,5 @@
 name=Crimson Roc
-image=https://magiccards.info/scans/en/mr/168.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e63836c-37af-49c1-84a1-8650ed072805.jpg?1562718332
 value=2.375
 rarity=U
 type=Creature

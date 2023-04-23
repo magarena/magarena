@@ -1,5 +1,5 @@
 name=Sacred Mesa
-image=https://magiccards.info/scans/en/c14/86.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/377b2bc1-c710-439d-96d2-beef72ae80a7.jpg?1561938614
 value=4.075
 rarity=R
 type=Enchantment

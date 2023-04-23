@@ -1,5 +1,5 @@
 name=Devastation Tide
-image=https://magiccards.info/scans/en/c16/87.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d493bd6-af71-45be-bd4c-1d8f94bca19e.jpg?1592710546
 image_updated=2017-08-17
 value=3.949
 removal=2

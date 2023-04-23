@@ -1,5 +1,5 @@
 name=Might of the Nephilim
-image=https://magiccards.info/scans/en/di/88.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca5c4a29-0650-4b9e-af6b-39bee19167ad.jpg?1593273415
 value=3.000
 rarity=U
 type=Instant

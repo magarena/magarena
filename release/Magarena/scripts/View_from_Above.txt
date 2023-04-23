@@ -1,5 +1,5 @@
 name=View from Above
-image=https://magiccards.info/scans/en/cfx/38.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dc73034-4886-4855-b6de-392fa053fe9e.jpg?1562799399
 value=2.511
 rarity=U
 type=Instant

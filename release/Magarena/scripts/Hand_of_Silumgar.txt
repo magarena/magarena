@@ -1,5 +1,5 @@
 name=Hand of Silumgar
-image=https://magiccards.info/scans/en/dtk/105.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3cbb127-6149-4d0b-ad98-1968f2ebe8e4.jpg?1562937511
 value=2.500
 rarity=C
 type=Creature

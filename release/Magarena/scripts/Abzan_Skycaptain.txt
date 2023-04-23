@@ -1,5 +1,5 @@
 name=Abzan Skycaptain
-image=https://magiccards.info/scans/en/frf/4.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4195373-e902-4fc3-aead-1f6e728dbbae.jpg?1562829610
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Archers of Qarsi
-image=https://magiccards.info/scans/en/frf/124.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fcf0074-162a-4cc0-9726-8672a0261307.jpg?1562822503
 value=2.500
 rarity=C
 type=Creature

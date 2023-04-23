@@ -1,5 +1,5 @@
 name=Nomad Stadium
-image=https://magiccards.info/scans/en/od/322.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64300b71-050f-47a3-83be-f24480bdc01d.jpg?1562913556
 value=0.989
 rarity=U
 type=Land

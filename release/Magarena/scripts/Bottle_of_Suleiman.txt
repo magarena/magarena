@@ -1,5 +1,5 @@
 name=Bottle of Suleiman
-image=https://magiccards.info/scans/en/6e/275.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab5afd8a-f689-4f5a-9c60-96f09c92e5a0.jpg?1562935410
 value=2.544
 rarity=R
 type=Artifact

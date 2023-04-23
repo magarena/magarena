@@ -1,5 +1,5 @@
 name=Warleader's Helix
-image=https://magiccards.info/scans/en/dgm/116.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/989f8049-c4d2-4729-b35f-7bd7d8cbcb06.jpg?1547518136
 value=3.785
 removal=4
 rarity=U

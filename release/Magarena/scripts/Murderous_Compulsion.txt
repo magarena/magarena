@@ -1,5 +1,5 @@
 name=Murderous Compulsion
-image=https://magiccards.info/scans/en/soi/126.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1675c1dd-e7d3-46f4-b2b5-a46c7167d8ba.jpg?1568004248
 value=2.500
 rarity=C
 type=Sorcery

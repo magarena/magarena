@@ -1,5 +1,5 @@
 name=Youthful Knight
-image=https://magiccards.info/scans/en/mm3/29.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d1a3fec-39de-4223-9da2-22749a58cd62.jpg?1572489827
 image_updated=2017-08-08
 value=3.745
 rarity=C

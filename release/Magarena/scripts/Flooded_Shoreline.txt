@@ -1,5 +1,5 @@
 name=Flooded Shoreline
-image=https://magiccards.info/scans/en/vi/32.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49db9f58-380f-496e-9d3d-6776d30fb564.jpg?1587913226
 value=3.091
 rarity=R
 type=Enchantment

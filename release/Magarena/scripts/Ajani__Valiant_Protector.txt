@@ -1,5 +1,5 @@
 name=Ajani, Valiant Protector
-image=https://magiccards.info/scans/en/aer/185.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/791fdd9a-0ab6-4db9-84f9-859d2d862518.jpg?1562923558
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

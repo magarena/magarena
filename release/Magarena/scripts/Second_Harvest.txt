@@ -1,5 +1,5 @@
 name=Second Harvest
-image=https://magiccards.info/scans/en/soi/227.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22b01c98-c24b-4255-921f-4820f3d395ea.jpg?1568004646
 value=2.500
 rarity=R
 type=Instant

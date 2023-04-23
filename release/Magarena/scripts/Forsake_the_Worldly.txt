@@ -1,5 +1,5 @@
 name=Forsake the Worldly
-image=https://magiccards.info/scans/en/akh/13.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cca4e95e-f14e-4cfa-918a-cfb15f912293.jpg?1543674646
 value=2.500
 rarity=C
 type=Instant

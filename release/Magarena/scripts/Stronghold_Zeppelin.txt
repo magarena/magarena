@@ -1,5 +1,5 @@
 name=Stronghold Zeppelin
-image=https://magiccards.info/scans/en/ne/47.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d672110d-b7c4-4233-9c46-73323be7204d.jpg?1562632218
 value=2.844
 rarity=U
 type=Creature

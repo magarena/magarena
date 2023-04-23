@@ -1,5 +1,5 @@
 name=Thassa's Devourer
-image=https://magiccards.info/scans/en/jou/53.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4ebd8c0-bb03-434d-b669-d9b35d07b2c6.jpg?1593095570
 value=2.250
 rarity=C
 type=Enchantment,Creature

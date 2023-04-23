@@ -1,5 +1,5 @@
 name=Skinrender
-image=https://magiccards.info/scans/en/som/78.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca107d96-0351-49a9-9f65-b055c1514d7b.jpg?1673147644
 value=4.185
 rarity=U
 removal=3

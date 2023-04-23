@@ -1,5 +1,5 @@
 name=Conqueror's Pledge
-image=https://magiccards.info/scans/en/zen/8.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1af1844a-601a-48c1-bf96-921d2d2e2aa1.jpg?1562610252
 value=3.887
 rarity=R
 type=Sorcery

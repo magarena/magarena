@@ -1,5 +1,5 @@
 name=Aether Swooper
-image=https://magiccards.info/scans/en/aer/26.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c34dbe3-3a66-40b3-a5c2-c2d6acb47773.jpg?1576381441
 value=2.500
 rarity=C
 type=Creature

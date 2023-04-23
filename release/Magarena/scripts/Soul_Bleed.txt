@@ -1,5 +1,5 @@
 name=Soul Bleed
-image=https://magiccards.info/scans/en/m10/113.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54800a5a-33fe-4291-a7b4-a1eb256dfa8f.jpg?1561980336
 value=1.906
 rarity=C
 type=Enchantment

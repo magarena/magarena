@@ -1,5 +1,5 @@
 name=Dinosaur Hunter
-image=https://magiccards.info/scans/en/rix/67.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93ff5a4e-9ec5-4b52-90f5-b8b6753c958d.jpg?1555040182
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Marchesa's Infiltrator
-image=https://magiccards.info/scans/en/cns/22.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9ac1e2c-1b9c-43b8-819e-9b391967e16c.jpg?1562867350
 value=3.750
 rarity=U
 type=Creature

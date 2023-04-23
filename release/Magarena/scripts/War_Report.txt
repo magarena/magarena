@@ -1,5 +1,5 @@
 name=War Report
-image=https://magiccards.info/scans/en/nph/26.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d837262-cd5d-4fc9-96dd-39ed04166883.jpg?1562878511
 value=3.106
 rarity=C
 type=Instant

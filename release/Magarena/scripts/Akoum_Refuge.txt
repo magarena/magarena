@@ -1,5 +1,5 @@
 name=Akoum Refuge
-image=https://magiccards.info/scans/en/c17/233.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51aecc57-f0cc-4e35-af38-ead25cf8a1b8.jpg?1568004997
 image_updated=2017-10-03
 value=3.059
 rarity=U

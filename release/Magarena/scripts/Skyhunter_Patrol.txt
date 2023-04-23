@@ -1,5 +1,5 @@
 name=Skyhunter Patrol
-image=https://magiccards.info/scans/en/10e/41.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/675bfd45-4b73-451c-b1d9-2fe46b5dd5aa.jpg?1562916607
 value=3.204
 rarity=C
 type=Creature

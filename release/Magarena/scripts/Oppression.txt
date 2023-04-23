@@ -1,5 +1,5 @@
 name=Oppression
-image=https://magiccards.info/scans/en/7e/152.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac327f80-983e-4e28-96e8-91ff5377f5a3.jpg?1562245368
 value=3.621
 rarity=R
 type=Enchantment

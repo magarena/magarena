@@ -1,5 +1,5 @@
 name=Kapsho Kitefins
-image=https://magiccards.info/scans/en/m15/66.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a964c5ed-b0ed-47cb-a0f0-79d28ef7f70b.jpg?1562792426
 value=2.917
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Disruptive Pitmage
-image=https://magiccards.info/scans/en/on/81.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b0d9c2f-356c-4f27-8560-8ffceadac31c.jpg?1562916467
 value=3.864
 rarity=C
 type=Creature

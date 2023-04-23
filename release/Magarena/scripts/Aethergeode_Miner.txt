@@ -1,5 +1,5 @@
 name=Aethergeode Miner
-image=https://magiccards.info/scans/en/aer/4.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80bb3abd-ebaf-4dc2-97eb-ed4a2b005177.jpg?1576381279
 value=2.500
 rarity=R
 type=Creature

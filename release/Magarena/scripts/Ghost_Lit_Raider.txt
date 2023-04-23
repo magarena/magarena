@@ -1,5 +1,5 @@
 name=Ghost-Lit Raider
-image=https://magiccards.info/scans/en/sok/99.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4280a08a-90fe-445e-b49d-1a3b13d3c6e9.jpg?1562493484
 value=3.567
 rarity=U
 type=Creature

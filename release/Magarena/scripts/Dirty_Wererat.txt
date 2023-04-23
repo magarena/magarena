@@ -1,5 +1,5 @@
 name=Dirty Wererat
-image=https://magiccards.info/scans/en/od/130.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97d15534-310f-4f9d-be0d-59b0ed8a5f53.jpg?1562923205
 value=2.823
 rarity=C
 type=Creature

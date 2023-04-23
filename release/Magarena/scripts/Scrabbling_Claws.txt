@@ -1,5 +1,5 @@
 name=Scrabbling Claws
-image=https://magiccards.info/scans/en/mi/237.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67b06cb5-5e74-456f-81b1-fced1346cc47.jpg?1584832162
 value=3.417
 rarity=U
 type=Artifact

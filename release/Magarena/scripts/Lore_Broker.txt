@@ -1,5 +1,5 @@
 name=Lore Broker
-image=https://magiccards.info/scans/en/rav/57.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7935b2b-aebe-44b3-b91b-52978bb4ded5.jpg?1599056209
 value=3.230
 rarity=U
 type=Creature

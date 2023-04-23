@@ -1,5 +1,5 @@
 name=Fervent Charge
-image=https://magiccards.info/scans/en/ap/98.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d610a9d5-c650-45ad-a9b0-b55113701e05.jpg?1562946049
 value=4.000
 rarity=R
 type=Enchantment

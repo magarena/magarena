@@ -1,5 +1,5 @@
 name=Ramses Overdark
-image=https://magiccards.info/scans/en/lg/292.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61bb42b2-327b-47d3-9fe3-76c029d91ee9.jpg?1562915369
 value=3.137
 rarity=R
 type=Legendary,Creature

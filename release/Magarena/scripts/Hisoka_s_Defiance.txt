@@ -1,5 +1,5 @@
 name=Hisoka's Defiance
-image=https://magiccards.info/scans/en/chk/67.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09fd4d01-1204-46a3-b237-45c37985acac.jpg?1562757466
 value=1.064
 rarity=C
 type=Instant

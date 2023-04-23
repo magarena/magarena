@@ -1,5 +1,5 @@
 name=Akroan Hoplite
-image=https://magiccards.info/scans/en/cn2/197.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04aa9d4f-37cc-4fc8-877a-6190f96eb509.jpg?1576383146
 image_updated=2016-11-20
 value=3.570
 rarity=U

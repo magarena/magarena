@@ -1,5 +1,5 @@
 name=Authority of the Consuls
-image=https://magiccards.info/scans/en/kld/5.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/324b2f55-1e09-490e-8f7e-bfde85a91ac4.jpg?1576380742
 image_updated=2016-10-05
 value=2.500
 rarity=R

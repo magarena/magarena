@@ -1,5 +1,5 @@
 name=Shade of Trokair
-image=https://magiccards.info/scans/en/pc/18.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4e4d9c6-416b-47fd-93a5-6c19d89b7c7f.jpg?1619393501
 value=3.614
 rarity=C
 type=Creature

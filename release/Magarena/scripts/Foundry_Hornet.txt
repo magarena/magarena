@@ -1,5 +1,5 @@
 name=Foundry Hornet
-image=https://magiccards.info/scans/en/aer/59.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6dc7865-16ed-4d12-bdb4-d40fbdd48a23.jpg?1576381654
 value=2.500
 rarity=U
 type=Creature

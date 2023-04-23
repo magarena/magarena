@@ -1,5 +1,5 @@
 name=Great Furnace
-image=https://magiccards.info/scans/en/c14/299.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a7d2d8f-4736-4c99-aba2-b14960395ad6.jpg?1645328102
 value=4.470
 rarity=C
 type=Artifact,Land

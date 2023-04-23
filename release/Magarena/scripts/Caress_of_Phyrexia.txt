@@ -1,5 +1,5 @@
 name=Caress of Phyrexia
-image=https://magiccards.info/scans/en/nph/53.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ef987ad-a3dc-4ef5-90ec-9a8cfa95965b.jpg?1562878053
 value=3.103
 rarity=U
 type=Sorcery

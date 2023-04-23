@@ -1,5 +1,5 @@
 name=Tin-Wing Chimera
-image=https://magiccards.info/scans/en/vi/157.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3375dcc6-9399-48eb-9aa4-7b40c3686cc5.jpg?1562277434
 value=3.346
 rarity=U
 type=Artifact,Creature

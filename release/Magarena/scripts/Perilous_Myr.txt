@@ -1,5 +1,5 @@
 name=Perilous Myr
-image=https://magiccards.info/scans/en/a25/227.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a15c8ef-04ad-4aab-a7f1-c7a90c10eb50.jpg?1608911609
 image_updated=2018-04-27
 value=4.110
 rarity=U

@@ -1,5 +1,5 @@
 name=Captain of the Mists
-image=https://magiccards.info/scans/en/avr/45.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa959355-ffac-442c-9c59-b2a654b4b400.jpg?1592762799
 value=3.104
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Decree of Silence
-image=https://magiccards.info/scans/en/sc/32.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2fc46e2-5e19-4999-a4cd-1e84697066c1.jpg?1562536891
 value=3.843
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Stasis Snare
-image=https://magiccards.info/scans/en/bfz/50.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff820544-f4a3-40c4-a48e-84b5e2d06caa.jpg?1562955526
 image_updated=2015-11-08
 value=2.500
 rarity=U

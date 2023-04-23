@@ -1,5 +1,5 @@
 name=Fire Snake
-image=https://magiccards.info/scans/en/po/132.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4c36e32-59e8-4e3d-903e-a264211f2a82.jpg?1562447847
 value=2.741
 rarity=C
 type=Creature

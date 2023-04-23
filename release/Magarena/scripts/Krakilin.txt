@@ -1,5 +1,5 @@
 name=Krakilin
-image=https://magiccards.info/scans/en/tp/129.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d19ce30-a33e-4d34-a73e-21ff79b010e5.jpg?1562429845
 value=4.015
 rarity=U
 type=Creature

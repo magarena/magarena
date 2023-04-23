@@ -1,5 +1,5 @@
 name=Loxodon Anchorite
-image=https://magiccards.info/scans/en/5dn/10.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a55f0113-3ced-49c7-9fa8-f1cc873bdc4c.jpg?1562878932
 value=2.486
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Blighted Woodland
-image=https://magiccards.info/scans/en/bfz/233.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94e0ad38-31b3-46ba-9999-9b6ff57906ae.jpg?1674142793
 image_updated=2015-11-08
 value=2.500
 rarity=U

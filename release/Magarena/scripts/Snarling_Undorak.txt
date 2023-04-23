@@ -1,5 +1,5 @@
 name=Snarling Undorak
-image=https://magiccards.info/scans/en/on/283.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05788d63-6210-44f2-9ae4-e55e9507a3a9.jpg?1562896264
 value=2.381
 rarity=C
 type=Creature

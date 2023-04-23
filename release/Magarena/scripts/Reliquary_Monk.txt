@@ -1,5 +1,5 @@
 name=Reliquary Monk
-image=https://magiccards.info/scans/en/ud/14.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/243e9386-2a7f-406a-9ed3-77d4bf1b50fd.jpg?1562443736
 value=3.886
 rarity=C
 type=Creature

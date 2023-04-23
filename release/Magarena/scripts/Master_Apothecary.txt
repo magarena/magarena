@@ -1,5 +1,5 @@
 name=Master Apothecary
-image=https://magiccards.info/scans/en/od/32.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9ff6624-ed0e-43d0-9519-112979b165f5.jpg?1562941995
 value=4.058
 rarity=R
 type=Creature

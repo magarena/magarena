@@ -1,5 +1,5 @@
 name=Xanthic Statue
-image=https://magiccards.info/scans/en/wl/163.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8becb285-cd91-4de0-af59-ddaa7d8c5366.jpg?1562802052
 value=3.520
 rarity=R
 type=Artifact

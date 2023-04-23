@@ -1,5 +1,5 @@
 name=Silhana Ledgewalker
-image=https://magiccards.info/scans/en/pc2/77.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8ad3bdce-c0fa-4b5f-af14-7452b683960f.jpg?1562920729
 value=4.016
 rarity=C
 type=Creature

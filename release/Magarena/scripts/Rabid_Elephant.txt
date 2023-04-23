@@ -1,5 +1,5 @@
 name=Rabid Elephant
-image=https://magiccards.info/scans/en/od/263.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe394a38-ee44-4342-adcf-8c65d14f4978.jpg?1562942949
 value=2.871
 rarity=C
 type=Creature

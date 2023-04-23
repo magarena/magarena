@@ -1,5 +1,5 @@
 name=Binding Agony
-image=https://magiccards.info/scans/en/mr/4.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b620a9f4-358d-4436-85b8-b0c16602ff57.jpg?1562721422
 value=2.770
 rarity=C
 type=Enchantment

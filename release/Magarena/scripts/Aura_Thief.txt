@@ -1,5 +1,5 @@
 name=Aura Thief
-image=https://magiccards.info/scans/en/ud/26.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8ae591d2-b9d3-4bc5-bcec-5d3d79a13b41.jpg?1562444695
 value=4.085
 rarity=R
 type=Creature

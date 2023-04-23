@@ -1,5 +1,5 @@
 name=Wildfire Cerberus
-image=https://magiccards.info/scans/en/jou/116.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7a26c23-abb9-41c3-aea1-bb241093119d.jpg?1593096142
 value=3.000
 rarity=U
 type=Creature

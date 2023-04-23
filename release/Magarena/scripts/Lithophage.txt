@@ -1,5 +1,5 @@
 name=Lithophage
-image=https://magiccards.info/scans/en/mm/202.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bff49651-3673-4670-9807-3ef3a42b8f8f.jpg?1581708541
 image_updated=2016-12-21
 value=3.139
 rarity=R

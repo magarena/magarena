@@ -1,5 +1,5 @@
 name=Subterranean Tremors
-image=https://magiccards.info/scans/en/cn2/58.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b9510b8-6601-4116-8713-ff7649c000eb.jpg?1576381980
 image_updated=2016-09-05
 value=2.500
 rarity=M

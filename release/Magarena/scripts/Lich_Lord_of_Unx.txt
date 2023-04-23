@@ -1,5 +1,5 @@
 name=Lich Lord of Unx
-image=https://magiccards.info/scans/en/arb/24.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df38c422-7830-4f25-b74b-ed90b7047f53.jpg?1562644645
 value=3.662
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Canyon Drake
-image=https://magiccards.info/scans/en/tp/166.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22f84143-5912-43ca-a274-f26ed0dbadd0.jpg?1562052811
 value=2.602
 rarity=R
 type=Creature

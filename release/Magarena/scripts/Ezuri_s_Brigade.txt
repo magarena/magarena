@@ -1,5 +1,5 @@
 name=Ezuri's Brigade
-image=https://magiccards.info/scans/en/som/121.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/079a6b44-3492-4484-aed1-5cd2449e702d.jpg?1562814306
 value=3.973
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Ethereal Champion
-image=https://magiccards.info/scans/en/6e/20.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c1733e2-bee2-4b85-b165-d4329402578b.jpg?1562819392
 value=2.095
 rarity=R
 type=Creature

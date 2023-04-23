@@ -1,5 +1,5 @@
 name=Rolling Stones
-image=https://magiccards.info/scans/en/8e/38.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dcb50bf-7e77-4b8e-a030-e575d0418a00.jpg?1562897839
 value=4.088
 rarity=R
 type=Enchantment

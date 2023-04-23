@@ -1,5 +1,5 @@
 name=Grafted Skullcap
-image=https://magiccards.info/scans/en/7e/298.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3ff78a37-c321-4f02-bd10-e73823b954cf.jpg?1562236404
 value=3.688
 rarity=R
 type=Artifact

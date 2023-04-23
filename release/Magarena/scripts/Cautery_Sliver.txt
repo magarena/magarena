@@ -1,5 +1,5 @@
 name=Cautery Sliver
-image=https://magiccards.info/scans/en/pc/154.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11df0ed7-ae08-4a95-8b79-d6be0df9e31a.jpg?1619403808
 value=2.900
 rarity=U
 type=Creature

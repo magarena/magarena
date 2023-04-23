@@ -1,5 +1,5 @@
 name=Sensation Gorger
-image=https://magiccards.info/scans/en/mt/102.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2e5eb69-dcd9-4784-bf4c-20b674f4c035.jpg?1562880826
 value=3.570
 rarity=R
 type=Creature

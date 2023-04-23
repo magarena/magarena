@@ -1,5 +1,5 @@
 name=Throne of Bone
-image=https://magiccards.info/scans/en/8e/317.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66ef3879-f708-4e2d-a1bc-6a75584fd8b1.jpg?1562915823
 value=1.398
 rarity=U
 type=Artifact

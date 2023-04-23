@@ -1,5 +1,5 @@
 name=Ravaging Horde
-image=https://magiccards.info/scans/en/p3k/118.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6278d679-fc54-4527-ab16-90735574ab9b.jpg?1562256560
 value=3.604
 removal=1
 rarity=U

@@ -1,5 +1,5 @@
 name=Pristine Talisman
-image=https://magiccards.info/scans/en/ima/225.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b6307f3-bc63-463c-8ffc-a8b8b829e5d7.jpg?1625979109
 image_updated=2017-04-12
 value=3.053
 rarity=U

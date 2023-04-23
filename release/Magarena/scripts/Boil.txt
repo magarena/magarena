@@ -1,5 +1,5 @@
 name=Boil
-image=https://magiccards.info/scans/en/8e/180.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15a0087c-4e0f-4547-b441-b5a517c00b91.jpg?1562899368
 value=4.195
 rarity=U
 type=Instant

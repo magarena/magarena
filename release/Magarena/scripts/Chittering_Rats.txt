@@ -1,5 +1,5 @@
 name=Chittering Rats
-image=https://magiccards.info/scans/en/ds/39.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/980135d5-dfaa-4beb-b4b3-1e256bb46e61.jpg?1562638311
 value=4.061
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Scalding Devil
-image=https://magiccards.info/scans/en/avr/155.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbe49a97-dac8-4273-b4dc-45cdf8f5a6e0.jpg?1592709200
 value=1.897
 rarity=C
 type=Creature

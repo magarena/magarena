@@ -1,5 +1,5 @@
 name=Maw of the Obzedat
-image=https://magiccards.info/scans/en/dgm/83.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd1131c6-04da-4c4d-ab61-874ac5be7087.jpg?1562933372
 value=3.405
 rarity=U
 type=Creature

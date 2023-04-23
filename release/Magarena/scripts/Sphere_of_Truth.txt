@@ -1,5 +1,5 @@
 name=Sphere of Truth
-image=https://magiccards.info/scans/en/od/52.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c3de9f5-a05c-4341-a2c2-a1a475d400fd.jpg?1562917942
 value=2.091
 rarity=U
 type=Enchantment

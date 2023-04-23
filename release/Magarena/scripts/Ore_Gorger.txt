@@ -1,5 +1,5 @@
 name=Ore Gorger
-image=https://magiccards.info/scans/en/chk/182.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecc8bbb9-d6a1-474b-8f34-594b5a9d4178.jpg?1562765604
 value=2.338
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Touch of Brilliance
-image=https://magiccards.info/scans/en/st/57.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bddd159a-6a42-465c-afcc-69ad6695f35a.jpg?1562875258
 value=1.588
 rarity=C
 type=Sorcery

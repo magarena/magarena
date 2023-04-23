@@ -1,5 +1,5 @@
 name=Jace's Scrutiny
-image=https://magiccards.info/scans/en/soi/70.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d0eea0d-c790-4d91-962f-f05b22d0c8fa.jpg?1576384122
 value=2.500
 rarity=C
 type=Instant

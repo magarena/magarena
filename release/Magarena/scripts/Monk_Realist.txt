@@ -1,5 +1,5 @@
 name=Monk Realist
-image=https://magiccards.info/scans/en/cmd/20.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/589d4058-a304-40a4-aa7d-0ebda2877d42.jpg?1592712823
 value=3.161
 removal=1
 rarity=C

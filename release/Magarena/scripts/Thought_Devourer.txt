@@ -1,5 +1,5 @@
 name=Thought Devourer
-image=https://magiccards.info/scans/en/od/105.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba7a96ee-e2d1-4d76-a09e-d6868ddd9282.jpg?1562929803
 value=3.272
 rarity=R
 type=Creature

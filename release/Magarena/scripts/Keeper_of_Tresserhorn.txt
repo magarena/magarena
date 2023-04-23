@@ -1,5 +1,5 @@
 name=Keeper of Tresserhorn
-image=https://magiccards.info/scans/en/ai/14.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aaf8b0ec-f81a-488c-850c-098a8a3119e5.jpg?1562770136
 value=2.479
 rarity=R
 type=Creature

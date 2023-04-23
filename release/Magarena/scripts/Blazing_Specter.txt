@@ -1,5 +1,5 @@
 name=Blazing Specter
-image=https://magiccards.info/scans/en/in/236.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/048dbfec-b1d4-4bb2-8709-21a5f0f3d8ab.jpg?1562895872
 value=4.500
 rarity=R
 type=Creature

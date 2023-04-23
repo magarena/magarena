@@ -1,5 +1,5 @@
 name=Stench of Decay
-image=https://magiccards.info/scans/en/ai/27.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9a45644-549a-4eaa-8367-b170027bd5a2.jpg?1562770859
 value=2.485
 rarity=C
 type=Instant

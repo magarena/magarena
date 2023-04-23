@@ -1,5 +1,5 @@
 name=Frontline Sage
-image=https://magiccards.info/scans/en/cfx/28.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46acbabc-9d0a-4fba-9604-7d131c22cdeb.jpg?1562800729
 value=2.120
 rarity=C
 type=Creature

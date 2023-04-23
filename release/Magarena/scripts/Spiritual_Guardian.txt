@@ -1,5 +1,5 @@
 name=Spiritual Guardian
-image=https://magiccards.info/scans/en/po/189.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70cf515c-c4c8-4e20-b990-2d4ec9345177.jpg?1605206496
 value=2.824
 rarity=R
 type=Creature

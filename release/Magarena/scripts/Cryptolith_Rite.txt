@@ -1,5 +1,5 @@
 name=Cryptolith Rite
-image=https://magiccards.info/scans/en/soi/200.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2910adcd-882a-46af-8236-ca1a9e2c19ab.jpg?1576385036
 value=2.500
 rarity=R
 type=Enchantment

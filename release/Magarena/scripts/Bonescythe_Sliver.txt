@@ -1,5 +1,5 @@
 name=Bonescythe Sliver
-image=https://magiccards.info/scans/en/m14/9.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a26bb68b-1830-470a-8cea-91edc7db0c57.jpg?1562833120
 value=3.623
 rarity=R
 type=Creature

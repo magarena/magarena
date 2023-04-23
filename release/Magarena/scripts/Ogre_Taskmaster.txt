@@ -1,5 +1,5 @@
 name=Ogre Taskmaster
-image=https://magiccards.info/scans/en/9e/205.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60b6b204-f3a2-4d58-94a7-1d132ccfc819.jpg?1562917747
 value=2.250
 rarity=U
 type=Creature

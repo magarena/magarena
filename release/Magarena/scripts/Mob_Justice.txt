@@ -1,5 +1,5 @@
 name=Mob Justice
-image=https://magiccards.info/scans/en/sh/90.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b790d789-bb21-4119-a0e3-43af9bef8acc.jpg?1562597361
 value=3.859
 removal=3
 rarity=C

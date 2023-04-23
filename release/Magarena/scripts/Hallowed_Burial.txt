@@ -1,5 +1,5 @@
 name=Hallowed Burial
-image=https://magiccards.info/scans/en/cn2/91.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94389b94-1514-44d1-b19b-7be104db9bba.jpg?1576382271
 image_updated=2017-08-29
 value=4.069
 rarity=R

@@ -1,5 +1,5 @@
 name=Yavimaya Sapherd
-image=https://magiccards.info/scans/en/dom/189.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ef6b657-7273-4abe-92f4-e1e4cda78f96.jpg?1562736504
 value=2.500
 rarity=C
 type=Creature

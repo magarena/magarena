@@ -1,5 +1,5 @@
 name=Planar Collapse
-image=https://magiccards.info/scans/en/ul/18.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee22cf3c-51b0-4790-ab13-985cbe900c3b.jpg?1562864241
 value=3.986
 rarity=R
 type=Enchantment

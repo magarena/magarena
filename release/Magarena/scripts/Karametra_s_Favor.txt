@@ -1,5 +1,5 @@
 name=Karametra's Favor
-image=https://magiccards.info/scans/en/bng/125.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77026cf6-7e89-41a6-8279-de1068569a02.jpg?1562918868
 value=3.821
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Hell-Bent Raider
-image=https://magiccards.info/scans/en/tr/101.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f41ac1c-2603-4234-8963-cd47bb894024.jpg?1562630610
 value=3.786
 rarity=R
 type=Creature

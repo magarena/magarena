@@ -1,5 +1,5 @@
 name=Cateran Summons
-image=https://magiccards.info/scans/en/mm/126.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af3de1f9-9038-4352-b4bf-2e9c5c27495a.jpg?1562382542
 value=3.788
 rarity=U
 type=Sorcery

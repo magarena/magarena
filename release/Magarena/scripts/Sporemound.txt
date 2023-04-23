@@ -1,5 +1,5 @@
 name=Sporemound
-image=https://magiccards.info/scans/en/m14/196.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/092bfc5f-8002-43da-8e70-c19fccfe54ac.jpg?1611797251
 value=3.541
 rarity=C
 type=Creature

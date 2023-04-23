@@ -1,5 +1,5 @@
 name=Haazda Snare Squad
-image=https://magiccards.info/scans/en/dgm/2.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85d3c012-f356-424d-a960-60e95f395134.jpg?1562919829
 value=3.303
 rarity=C
 type=Creature

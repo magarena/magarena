@@ -1,5 +1,5 @@
 name=Kessig Wolf Run
-image=https://magiccards.info/scans/en/isd/243.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a238f08-f7c3-46be-b999-77b1c310cb1a.jpg?1682210511
 value=3.362
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Spellweaver Eternal
-image=https://magiccards.info/scans/en/hou/46.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6bb7d1a-d606-46a8-a592-648c5d2e7382.jpg?1562809773
 value=2.500
 rarity=C
 type=Creature

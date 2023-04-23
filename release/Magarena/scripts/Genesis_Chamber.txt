@@ -1,5 +1,5 @@
 name=Genesis Chamber
-image=https://magiccards.info/scans/en/ds/122.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93bd7e73-63dc-45b2-aaa8-984be8b900ab.jpg?1562924816
 value=4.019
 rarity=U
 type=Artifact

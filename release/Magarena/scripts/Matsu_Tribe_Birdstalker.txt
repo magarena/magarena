@@ -1,5 +1,5 @@
 name=Matsu-Tribe Birdstalker
-image=https://magiccards.info/scans/en/sok/137.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1afb0c0-e138-4d2b-b3aa-fa40778f8d79.jpg?1562496617
 value=1.865
 rarity=C
 type=Creature

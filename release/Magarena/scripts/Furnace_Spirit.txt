@@ -1,5 +1,5 @@
 name=Furnace Spirit
-image=https://magiccards.info/scans/en/sh/87.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6a79dc7-ce46-41f7-9375-8d12afe6355a.jpg?1562597360
 value=2.086
 rarity=C
 type=Creature

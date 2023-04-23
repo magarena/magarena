@@ -1,5 +1,5 @@
 name=Silver Seraph
-image=https://magiccards.info/scans/en/ju/23.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/1465ca9e-a997-4b8c-9677-6c7961f67eba.jpg?1562628773
 value=3.806
 rarity=R
 type=Creature

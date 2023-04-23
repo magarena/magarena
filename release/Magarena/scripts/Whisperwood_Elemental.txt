@@ -1,5 +1,5 @@
 name=Whisperwood Elemental
-image=https://magiccards.info/scans/en/frf/145.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66c61828-98b9-4264-b3dd-e83f881f4a67.jpg?1562826030
 value=2.500
 rarity=M
 type=Creature

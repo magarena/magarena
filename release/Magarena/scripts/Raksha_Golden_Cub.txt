@@ -1,5 +1,5 @@
 name=Raksha Golden Cub
-image=https://magiccards.info/scans/en/c17/69.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8736fd50-312e-47e2-8337-997c2acf48d9.jpg?1562615429
 image_updated=2017-10-03
 value=4.043
 rarity=R

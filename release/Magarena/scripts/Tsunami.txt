@@ -1,5 +1,5 @@
 name=Tsunami
-image=https://magiccards.info/scans/en/5e/196.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f83a6709-f26d-41fc-b63a-739377ba49f9.jpg?1562953832
 value=3.957
 rarity=U
 type=Sorcery

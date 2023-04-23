@@ -1,5 +1,5 @@
 name=Grinding Station
-image=https://magiccards.info/scans/en/5dn/127.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df1df511-b52c-45cd-9503-ffce4271a802.jpg?1562880250
 value=3.375
 rarity=U
 type=Artifact

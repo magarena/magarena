@@ -1,5 +1,5 @@
 name=Call to the Grave
-image=https://magiccards.info/scans/en/m12/85.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e1324b6-dba0-4aff-a403-a45d2b405f5b.jpg?1562644226
 value=4.086
 rarity=R
 type=Enchantment

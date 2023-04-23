@@ -1,5 +1,5 @@
 name=Furtive Homunculus
-image=https://magiccards.info/scans/en/soi/64.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f376ec9b-48ac-4ed7-bfa2-60e9dca32dd7.jpg?1576384082
 value=2.500
 rarity=C
 type=Creature

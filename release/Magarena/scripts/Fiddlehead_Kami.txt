@@ -1,5 +1,5 @@
 name=Fiddlehead Kami
-image=https://magiccards.info/scans/en/sok/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db328ac4-1b7d-4310-9798-8c8dc8740062.jpg?1562496120
 value=1.179
 rarity=C
 type=Creature

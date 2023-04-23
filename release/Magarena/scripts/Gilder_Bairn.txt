@@ -1,5 +1,5 @@
 name=Gilder Bairn
-image=https://magiccards.info/scans/en/eve/152.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0ca006ff-3a95-4821-bdb2-2d80e64b4abf.jpg?1562897589
 value=4.348
 rarity=U
 type=Creature

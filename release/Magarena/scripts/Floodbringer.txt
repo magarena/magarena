@@ -1,5 +1,5 @@
 name=Floodbringer
-image=https://magiccards.info/scans/en/bok/34.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0058be07-a8a1-448e-8c3d-61718cb384ec.jpg?1562875117
 value=2.686
 rarity=C
 type=Creature

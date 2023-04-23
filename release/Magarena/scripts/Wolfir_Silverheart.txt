@@ -1,5 +1,5 @@
 name=Wolfir Silverheart
-image=https://magiccards.info/scans/en/avr/206.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8629c598-11c8-4911-acfb-0643e5feffa8.jpg?1592709514
 value=4.053
 rarity=R
 type=Creature

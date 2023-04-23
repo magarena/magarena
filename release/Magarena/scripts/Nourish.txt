@@ -1,5 +1,5 @@
 name=Nourish
-image=https://magiccards.info/scans/en/ds/78.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/0597dd97-fe6f-4e74-88e5-35528ada0140.jpg?1562635243
 value=3.587
 rarity=C
 type=Instant

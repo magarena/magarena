@@ -1,5 +1,5 @@
 name=Jungle Lion
-image=https://magiccards.info/scans/en/po/96.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71142f87-2ffd-4736-b796-e22dc410c9cd.jpg?1562918796
 value=3.688
 rarity=C
 type=Creature

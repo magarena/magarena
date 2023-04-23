@@ -1,5 +1,5 @@
 name=Scoria Cat
-image=https://magiccards.info/scans/en/pr/101.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7274f791-c9f1-49a1-9002-10e94caee96e.jpg?1562916241
 value=3.726
 rarity=U
 type=Creature

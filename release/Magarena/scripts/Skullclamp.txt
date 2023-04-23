@@ -1,5 +1,5 @@
 name=Skullclamp
-image=https://magiccards.info/scans/en/c16/271.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a36fd6d8-66a2-49d1-b9f3-b400ebc03674.jpg?1682210228
 image_updated=2017-08-17
 value=4.500
 rarity=U

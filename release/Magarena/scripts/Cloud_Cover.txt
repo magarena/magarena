@@ -1,5 +1,5 @@
 name=Cloud Cover
-image=https://magiccards.info/scans/en/ps/98.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/943b3886-5556-474f-8dc1-18219e25abc3.jpg?1562926366
 value=4.304
 rarity=R
 type=Enchantment

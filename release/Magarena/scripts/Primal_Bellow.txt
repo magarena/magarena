@@ -1,5 +1,5 @@
 name=Primal Bellow
-image=https://magiccards.info/scans/en/zen/176.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23b0c6a9-a7c0-4518-8580-653712062265.jpg?1562610601
 value=3.929
 rarity=U
 type=Instant

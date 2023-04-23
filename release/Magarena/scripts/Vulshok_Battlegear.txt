@@ -1,5 +1,5 @@
 name=Vulshok Battlegear
-image=https://magiccards.info/scans/en/mi/272.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b3b19ed-b9cb-4960-b420-9afbcd5a8c2d.jpg?1581708600
 image_updated=2017-01-11
 value=3.857
 rarity=U

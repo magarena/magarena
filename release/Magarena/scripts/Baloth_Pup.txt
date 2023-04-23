@@ -1,5 +1,5 @@
 name=Baloth Pup
-image=https://magiccards.info/scans/en/ogw/127.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f9c87f4-4fa5-4c97-9654-c4acd250f850.jpg?1562907761
 image_updated=2016-02-29
 value=2.500
 rarity=U

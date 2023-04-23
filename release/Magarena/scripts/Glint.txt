@@ -1,5 +1,5 @@
 name=Glint
-image=https://magiccards.info/scans/en/dtk/55.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35fa105f-c76b-4fd0-9b83-34b46648e0d6.jpg?1562784635
 value=2.500
 rarity=C
 type=Instant

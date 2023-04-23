@@ -1,5 +1,5 @@
 name=Gaea's Balance
-image=https://magiccards.info/scans/en/ap/77.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1ffc5f8-ff1c-4733-b046-8679fa16371b.jpg?1562952462
 value=3.244
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ancestor's Prophet
-image=https://magiccards.info/scans/en/on/3.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdee956e-76b1-4ba7-a387-2fbfb853507d.jpg?1562943650
 value=3.679
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Benthic Djinn
-image=https://magiccards.info/scans/en/mr/317.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95b03586-8d04-4114-a7ce-b8c8ab5ff857.jpg?1562720493
 value=2.851
 rarity=R
 type=Creature

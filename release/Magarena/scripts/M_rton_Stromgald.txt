@@ -1,5 +1,5 @@
 name=Márton Stromgald
-image=https://magiccards.info/scans/en/ia/199.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e76a75a-7125-4957-ab7a-8e7ead21d002.jpg?1559592440
 value=3.977
 rarity=R
 type=Legendary,Creature

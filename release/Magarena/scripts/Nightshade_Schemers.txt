@@ -1,5 +1,5 @@
 name=Nightshade Schemers
-image=https://magiccards.info/scans/en/mt/69.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af9a61cd-3a26-4142-83ce-9c41cdb16eb4.jpg?1562880749
 value=2.466
 rarity=U
 type=Creature

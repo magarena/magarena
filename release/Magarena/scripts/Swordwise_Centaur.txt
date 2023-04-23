@@ -1,5 +1,5 @@
 name=Swordwise Centaur
-image=https://magiccards.info/scans/en/bng/142.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1776ebd7-91fc-49e1-a978-f2012162d1cf.jpg?1593860945
 value=3.593
 rarity=C
 type=Creature

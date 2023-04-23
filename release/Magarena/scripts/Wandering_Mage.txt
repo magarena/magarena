@@ -1,5 +1,5 @@
 name=Wandering Mage
-image=https://magiccards.info/scans/en/ai/198.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75a5fe4d-ef72-47cd-805d-bfc90755590f.jpg?1562919760
 value=3.097
 rarity=R
 type=Creature

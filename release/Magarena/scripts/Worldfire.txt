@@ -1,5 +1,5 @@
 name=Worldfire
-image=https://magiccards.info/scans/en/m13/158.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ef3d4b5-0453-4bf0-b018-23b0c3b9ae11.jpg?1631531850
 value=3.775
 rarity=M
 type=Sorcery

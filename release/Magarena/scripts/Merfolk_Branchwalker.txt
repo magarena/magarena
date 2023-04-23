@@ -1,5 +1,5 @@
 name=Merfolk Branchwalker
-image=https://magiccards.info/scans/en/xln/197.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c6f0d4a-4827-47b6-8af6-803949c195f8.jpg?1562552655
 value=2.500
 rarity=U
 type=Creature

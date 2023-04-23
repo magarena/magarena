@@ -1,5 +1,5 @@
 name=Minotaur Explorer
-image=https://magiccards.info/scans/en/od/206.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55725e38-d60a-41a2-93b0-2eefe6d2cc59.jpg?1562910687
 value=3.300
 rarity=U
 type=Creature

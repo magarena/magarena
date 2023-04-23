@@ -1,5 +1,5 @@
 name=Juvenile Gloomwidow
-image=https://magiccards.info/scans/en/shm/121.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7f323d5-f26c-46e9-9d6a-be5c254fe8b6.jpg?1562836648
 value=3.265
 rarity=C
 type=Creature

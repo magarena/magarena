@@ -1,5 +1,5 @@
 name=Fecundity
-image=https://magiccards.info/scans/en/8e/247.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b979578b-a82f-4d5e-8871-9e45401038a8.jpg?1547517576
 value=4.472
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Dimir Cluestone
-image=https://magiccards.info/scans/en/dgm/138.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d8ac24f-3309-453a-b2d6-6363df9a1ddd.jpg?1562897619
 value=2.650
 rarity=C
 type=Artifact

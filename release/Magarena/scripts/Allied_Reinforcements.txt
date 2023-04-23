@@ -1,5 +1,5 @@
 name=Allied Reinforcements
-image=https://magiccards.info/scans/en/ogw/15.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd7d7c93-5622-45ca-9359-110685d9162c.jpg?1562946180
 image_updated=2016-02-29
 value=2.500
 rarity=U

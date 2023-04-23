@@ -1,5 +1,5 @@
 name=Wail of the Nim
-image=https://magiccards.info/scans/en/mi/81.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8c32faa-c6d1-418a-aed6-ccc5849daa1f.jpg?1562153645
 value=3.689
 rarity=C
 type=Instant

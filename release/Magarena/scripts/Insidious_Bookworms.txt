@@ -1,5 +1,5 @@
 name=Insidious Bookworms
-image=https://magiccards.info/scans/en/cstd/27.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bfb7c7e-5a0a-4d4d-be98-ffed0386592b.jpg?1562768704
 value=3.250
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Incendiary Flow
-image=https://magiccards.info/scans/en/emn/133.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf464f61-8a7f-493b-a80f-2f2b0ebd8bf6.jpg?1576384613
 image_updated=2016-09-05
 value=2.500
 rarity=U

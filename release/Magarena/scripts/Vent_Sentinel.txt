@@ -1,5 +1,5 @@
 name=Vent Sentinel
-image=https://magiccards.info/scans/en/ima/153.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b6f563e-4f94-4caf-83b9-bfc64e18bc9c.jpg?1562849931
 image_updated=2017-04-12
 value=3.500
 rarity=C

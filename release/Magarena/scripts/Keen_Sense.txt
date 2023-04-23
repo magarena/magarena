@@ -1,5 +1,5 @@
 name=Keen Sense
-image=https://magiccards.info/scans/en/pc/152.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d16e927d-0f23-4fac-9b35-3cfcb22ebc26.jpg?1619398246
 value=3.927
 rarity=U
 type=Enchantment

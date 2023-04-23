@@ -1,5 +1,5 @@
 name=Grave Betrayal
-image=https://magiccards.info/scans/en/rtr/67.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47b38c68-8e72-4afc-bb5e-0b40880fdda9.jpg?1562785660
 value=3.846
 rarity=R
 type=Enchantment

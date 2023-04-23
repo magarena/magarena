@@ -1,5 +1,5 @@
 name=Wight of Precinct Six
-image=https://magiccards.info/scans/en/ima/114.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32aec0ec-0feb-4276-ab9c-5bb18b5005a0.jpg?1600701742
 image_updated=2017-04-12
 value=3.955
 rarity=C

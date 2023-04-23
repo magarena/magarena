@@ -1,5 +1,5 @@
 name=Doubtless One
-image=https://magiccards.info/scans/en/on/27.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dedef8a-5527-40dc-9ad9-bcee4cf30a76.jpg?1562898196
 value=4.104
 rarity=U
 type=Creature

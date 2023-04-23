@@ -1,5 +1,5 @@
 name=Elvish Harbinger
-image=https://magiccards.info/scans/en/lw/207.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78db70ff-f68c-474a-9785-12a71be4f699.jpg?1562919230
 image_updated=2016-12-02
 value=3.962
 rarity=U

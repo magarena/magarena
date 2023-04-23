@@ -1,5 +1,5 @@
 name=Theft of Dreams
-image=https://magiccards.info/scans/en/ex/49.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aa9adcd-af58-4055-902c-806a2787c3bd.jpg?1562916363
 value=3.762
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Borborygmos
-image=https://magiccards.info/scans/en/gp/103.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c4a08e9-06c7-43e9-a855-4f507a35ae8b.jpg?1593272594
 value=4.021
 rarity=R
 type=Legendary,Creature

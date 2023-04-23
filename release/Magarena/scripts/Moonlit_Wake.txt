@@ -1,5 +1,5 @@
 name=Moonlit Wake
-image=https://magiccards.info/scans/en/mm/29.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1eba9595-6789-4d7a-9e46-8d1f75993b21.jpg?1562379447
 value=3.017
 rarity=U
 type=Enchantment

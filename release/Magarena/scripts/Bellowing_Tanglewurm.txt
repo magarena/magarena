@@ -1,5 +1,5 @@
 name=Bellowing Tanglewurm
-image=https://magiccards.info/scans/en/som/111.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44eb3e3a-60ee-4293-a321-daa452d4c70d.jpg?1562816966
 value=4.062
 rarity=U
 type=Creature

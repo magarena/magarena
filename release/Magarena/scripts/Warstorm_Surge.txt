@@ -1,5 +1,5 @@
 name=Warstorm Surge
-image=https://magiccards.info/scans/en/pc2/54.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbe1bfe0-0be7-496d-94db-e8028d4d9493.jpg?1674142183
 image_updated=2016-02-29
 value=3.780
 rarity=R

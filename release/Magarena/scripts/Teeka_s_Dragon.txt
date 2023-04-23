@@ -1,5 +1,5 @@
 name=Teeka's Dragon
-image=https://magiccards.info/scans/en/mr/285.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57e8971d-baeb-4e4f-8c4d-0e8109e4505e.jpg?1562719278
 value=3.934
 rarity=R
 type=Artifact,Creature

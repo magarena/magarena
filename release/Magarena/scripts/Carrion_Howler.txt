@@ -1,5 +1,5 @@
 name=Carrion Howler
-image=https://magiccards.info/scans/en/rav/79.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0ff031f4-df27-40de-8615-f3ea225f9830.jpg?1598914686
 value=1.898
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Haunted Cloak
-image=https://magiccards.info/scans/en/soi/257.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fc9a637-352a-45bd-a43a-6406f9da56af.jpg?1608911454
 value=2.500
 rarity=U
 type=Artifact

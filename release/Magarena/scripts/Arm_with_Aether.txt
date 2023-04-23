@@ -1,5 +1,5 @@
 name=Arm with Aether
-image=https://magiccards.info/scans/en/nph/28.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0878b20-315d-49fa-a4d7-232ba1ed6b0d.jpg?1562880261
 image_updated=2016-09-27
 value=2.870
 rarity=U

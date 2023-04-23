@@ -1,5 +1,5 @@
 name=Deputy of Acquittals
-image=https://magiccards.info/scans/en/mm3/159.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0e7dff8-faae-46b8-8dd9-58830e1df61e.jpg?1593814256
 image_updated=2017-08-08
 value=3.803
 rarity=C

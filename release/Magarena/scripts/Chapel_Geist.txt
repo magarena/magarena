@@ -1,5 +1,5 @@
 name=Chapel Geist
-image=https://magiccards.info/scans/en/isd/7.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36fcc018-76c2-4246-8eca-b78115d568be.jpg?1592762545
 value=3.016
 rarity=C
 type=Creature

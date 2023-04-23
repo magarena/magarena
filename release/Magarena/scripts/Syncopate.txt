@@ -1,5 +1,5 @@
 name=Syncopate
-image=https://magiccards.info/scans/en/dom/67.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08375017-4432-4296-9799-966db145ed7c.jpg?1643588741
 image_updated=2018-08-07
 value=3.883
 rarity=C

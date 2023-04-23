@@ -1,5 +1,5 @@
 name=Utvara Scalper
-image=https://magiccards.info/scans/en/di/76.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e0a5aa2-f33a-4976-88b1-f424243016da.jpg?1593273292
 value=2.171
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Levitation
-image=https://magiccards.info/scans/en/m12/61.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63e5124a-67c0-44ed-8085-28bf37816423.jpg?1562644927
 value=4.015
 rarity=U
 type=Enchantment

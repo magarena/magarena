@@ -1,5 +1,5 @@
 name=Embermaw Hellion
-image=https://magiccards.info/scans/en/ori/141.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/664f60a8-e80a-4fe0-b76c-2d76c728329e.jpg?1562023147
 image_updated=2015-11-05
 value=2.500
 rarity=R

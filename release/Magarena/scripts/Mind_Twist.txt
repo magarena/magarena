@@ -1,5 +1,5 @@
 name=Mind Twist
-image=https://magiccards.info/scans/en/4e/31.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9763ea41-55c4-4b0a-9dc2-91ad4938b343.jpg?1562927059
 value=4.615
 rarity=R
 type=Sorcery

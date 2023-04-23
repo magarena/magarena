@@ -1,5 +1,5 @@
 name=Serpent's Gift
-image=https://magiccards.info/scans/en/m13/190.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e27503e-059e-4c44-a817-678e67254111.jpg?1562550300
 value=1.522
 rarity=C
 type=Instant

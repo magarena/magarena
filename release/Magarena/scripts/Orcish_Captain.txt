@@ -1,5 +1,5 @@
 name=Orcish Captain
-image=https://magiccards.info/scans/en/5e/254.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95f3eb71-f158-44d8-ae22-bdef48e2f13b.jpg?1562869544
 value=2.726
 rarity=U
 type=Creature

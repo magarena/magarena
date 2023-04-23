@@ -1,5 +1,5 @@
 name=Coral Barrier
-image=https://magiccards.info/scans/en/m15/49.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f34cd305-d823-4996-9f8f-806386491f5d.jpg?1562796937
 value=2.600
 rarity=C
 type=Creature

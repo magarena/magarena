@@ -1,5 +1,5 @@
 name=Immortal Servitude
-image=https://magiccards.info/scans/en/gtc/220.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88366762-4be0-422a-a0ff-ed046d30afe1.jpg?1561834968
 value=3.674
 rarity=R
 type=Sorcery

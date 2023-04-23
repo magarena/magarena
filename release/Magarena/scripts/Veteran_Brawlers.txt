@@ -1,5 +1,5 @@
 name=Veteran Brawlers
-image=https://magiccards.info/scans/en/pr/106.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee4d3acb-68be-409d-beb7-92a7cbc0402f.jpg?1562939721
 value=3.240
 rarity=R
 type=Creature

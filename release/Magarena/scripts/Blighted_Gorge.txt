@@ -1,5 +1,5 @@
 name=Blighted Gorge
-image=https://magiccards.info/scans/en/bfz/231.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f133ba0a-e141-4f57-9819-bc17bbacd7b3.jpg?1592764894
 image_updated=2015-11-08
 value=2.500
 rarity=U

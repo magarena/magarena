@@ -1,5 +1,5 @@
 name=Goblin Instigator
-image=https://magiccards.info/scans/en/m19/142.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b36a1bc7-a080-4fb6-b975-c59bb33a090a.jpg?1682209355
 value=2.500
 rarity=C
 type=Creature

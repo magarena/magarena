@@ -1,5 +1,5 @@
 name=Magus of the Disk
-image=https://magiccards.info/scans/en/ts/27.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70cdad7a-f041-4bbe-87ed-876ac6d0c31b.jpg?1591320095
 value=4.188
 rarity=R
 type=Creature

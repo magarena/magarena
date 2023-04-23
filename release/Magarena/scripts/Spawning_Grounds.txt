@@ -1,5 +1,5 @@
 name=Spawning Grounds
-image=https://magiccards.info/scans/en/c13/171.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46106777-e366-47da-b8ba-b010ac96f1fe.jpg?1592710998
 value=3.921
 rarity=R
 type=Enchantment

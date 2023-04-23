@@ -1,5 +1,5 @@
 name=Grim Poppet
-image=https://magiccards.info/scans/en/shm/252.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bac9d9c-6685-465b-8933-dd6164569f4d.jpg?1562828971
 value=3.981
 rarity=R
 type=Artifact,Creature

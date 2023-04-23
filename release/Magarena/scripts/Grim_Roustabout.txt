@@ -1,5 +1,5 @@
 name=Grim Roustabout
-image=https://magiccards.info/scans/en/rtr/68.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a5ae3f5-5466-4058-a2cd-1a036cb38a8e.jpg?1562783320
 value=2.620
 rarity=C
 type=Creature

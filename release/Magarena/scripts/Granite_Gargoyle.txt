@@ -1,5 +1,5 @@
 name=Granite Gargoyle
-image=https://magiccards.info/scans/en/rv/155.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fa2963d-010f-491c-8ccc-3b4d4bc88398.jpg?1559592408
 value=3.627
 rarity=R
 type=Creature

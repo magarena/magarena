@@ -1,5 +1,5 @@
 name=Neurok Prodigy
-image=https://magiccards.info/scans/en/ds/26.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb179448-5e1f-4ef3-858c-ba7a9ea05a78.jpg?1562640601
 value=1.828
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Zada's Commando
-image=https://magiccards.info/scans/en/ogw/120.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4ad826d-c7e6-4dfd-991f-15d75b87d504.jpg?1562944232
 image_updated=2016-02-29
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Vampire Nighthawk
-image=https://magiccards.info/scans/en/mm3/87.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/301ff69c-2590-45af-893b-7ac0285e450b.jpg?1641602963
 image_updated=2017-08-08
 value=4.000
 rarity=U

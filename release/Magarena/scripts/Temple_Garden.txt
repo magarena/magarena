@@ -1,5 +1,5 @@
 name=Temple Garden
-image=https://magiccards.info/scans/en/rtr/248.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b9b0195-beda-403e-bc27-7ae3be9f318c.jpg?1572894210
 value=4.274
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Skywhaler's Shot
-image=https://magiccards.info/scans/en/kld/29.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e2c5013-523f-42b2-b947-abe304a6cb84.jpg?1608909002
 image_updated=2016-10-05
 value=2.500
 rarity=U

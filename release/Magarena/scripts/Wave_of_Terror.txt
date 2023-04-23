@@ -1,5 +1,5 @@
 name=Wave of Terror
-image=https://magiccards.info/scans/en/wl/28.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d40ab3e7-9abb-4acc-9932-de03b533722f.jpg?1562803537
 value=3.578
 rarity=R
 type=Enchantment

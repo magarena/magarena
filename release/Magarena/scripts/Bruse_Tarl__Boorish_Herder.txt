@@ -1,5 +1,5 @@
 name=Bruse Tarl, Boorish Herder
-image=https://magiccards.info/scans/en/c16/30.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/125b552b-45ea-4e0b-94a9-8131c97a04c0.jpg?1644853018
 image_updated=2016-11-20
 value=2.500
 rarity=M

@@ -1,5 +1,5 @@
 name=Scrapskin Drake
-image=https://magiccards.info/scans/en/ori/69.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/740fc68d-1f08-4e9e-a797-427dcd7733ba.jpg?1592763089
 image_updated=2015-11-05
 value=2.500
 rarity=C

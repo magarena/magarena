@@ -1,5 +1,5 @@
 name=Lim-Dûl's High Guard
-image=https://magiccards.info/scans/en/ai/18.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1777f69c-869e-414e-afe3-892714a6032a.jpg?1562867836
 value=3.595
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bayou Dragonfly
-image=https://magiccards.info/scans/en/tp/109.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93cfcca5-070b-4946-b17b-0c94b1e47fcd.jpg?1562055434
 value=3.419
 rarity=C
 type=Creature

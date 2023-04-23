@@ -1,5 +1,5 @@
 name=Gluttonous Zombie
-image=https://magiccards.info/scans/en/9e/134.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/7741c976-000d-476c-9b53-34ef1ee701e1.jpg?1562737240
 value=2.527
 rarity=U
 type=Creature

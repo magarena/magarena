@@ -1,5 +1,5 @@
 name=Savage Surge
-image=https://magiccards.info/scans/en/rtr/133.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5916d5e7-0825-4d72-82e4-1e4c86d1fafe.jpg?1595438222
 value=3.276
 rarity=U
 type=Instant

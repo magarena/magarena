@@ -1,5 +1,5 @@
 name=Shu Cavalry
-image=https://magiccards.info/scans/en/p3k/19.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8761f17-6f6d-45c3-a626-003396093142.jpg?1562933935
 value=3.545
 rarity=C
 type=Creature

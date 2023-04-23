@@ -1,5 +1,5 @@
 name=Varchild's Crusader
-image=https://magiccards.info/scans/en/ai/121.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5232322-f4e2-49cf-80ed-6876ea485b37.jpg?1562870947
 value=2.479
 rarity=C
 type=Creature

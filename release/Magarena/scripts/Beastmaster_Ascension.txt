@@ -1,5 +1,5 @@
 name=Beastmaster Ascension
-image=https://magiccards.info/scans/en/c16/142.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f404d133-fc1a-4751-ac72-554e6553e486.jpg?1673484492
 image_updated=2017-08-17
 value=4.049
 rarity=R

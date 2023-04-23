@@ -1,5 +1,5 @@
 name=Crusher Zendikon
-image=https://magiccards.info/scans/en/wwk/78.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbf140fa-a901-41a5-a10f-f97ccef72fcc.jpg?1562299822
 value=3.008
 rarity=C
 type=Enchantment

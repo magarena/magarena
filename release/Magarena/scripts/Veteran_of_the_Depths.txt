@@ -1,5 +1,5 @@
 name=Veteran of the Depths
-image=https://magiccards.info/scans/en/lw/46.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c36fe821-e9b1-453d-8e44-f8dce111a6de.jpg?1562366949
 value=3.088
 rarity=U
 type=Creature

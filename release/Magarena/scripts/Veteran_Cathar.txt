@@ -1,5 +1,5 @@
 name=Veteran Cathar
-image=https://magiccards.info/scans/en/soi/238.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a471e83e-c0e0-4af6-bfcf-7f4a39f6fccf.jpg?1576385297
 value=2.500
 rarity=U
 type=Creature

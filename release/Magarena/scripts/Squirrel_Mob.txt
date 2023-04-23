@@ -1,5 +1,5 @@
 name=Squirrel Mob
-image=https://magiccards.info/scans/en/od/273.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa6bfc95-ec7e-46dd-88fd-b0e1ba48bfbc.jpg?1626100645
 value=4.042
 rarity=R
 type=Creature

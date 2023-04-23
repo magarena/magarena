@@ -1,5 +1,5 @@
 name=Soul Link
-image=https://magiccards.info/scans/en/ap/120.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/425e0ca4-8592-4802-b7c4-6e3323edd78c.jpg?1562910609
 value=4.226
 removal=1
 rarity=C

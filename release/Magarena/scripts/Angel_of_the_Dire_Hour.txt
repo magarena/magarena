@@ -1,5 +1,5 @@
 name=Angel of the Dire Hour
-image=https://magiccards.info/scans/en/c14/1.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7ab81d4-aaf7-4c72-9651-5e1482126928.jpg?1600695858
 value=2.500
 rarity=R
 type=Creature

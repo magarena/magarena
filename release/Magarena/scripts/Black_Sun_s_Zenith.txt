@@ -1,5 +1,5 @@
 name=Black Sun's Zenith
-image=https://magiccards.info/scans/en/c14/136.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90b217bf-9a62-4239-be24-e23c106b8212.jpg?1561950157
 value=3.933
 removal=3
 rarity=R

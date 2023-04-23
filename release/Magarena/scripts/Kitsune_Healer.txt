@@ -1,5 +1,5 @@
 name=Kitsune Healer
-image=https://magiccards.info/scans/en/chk/27.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11bb6894-b56a-4a63-859a-65a0c2d160fc.jpg?1562757893
 value=2.648
 rarity=C
 type=Creature

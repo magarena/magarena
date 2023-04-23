@@ -1,5 +1,5 @@
 name=Seizures
-image=https://magiccards.info/scans/en/ia/47.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da369c86-7e17-43d8-b626-b6842e3d2d50.jpg?1587911753
 value=3.328
 rarity=C
 type=Enchantment

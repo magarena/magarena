@@ -1,5 +1,5 @@
 name=Glade Gnarr
-image=https://magiccards.info/scans/en/ap/78.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee38eeae-918b-4d19-b37a-175ac5db37a4.jpg?1562951582
 value=2.688
 rarity=C
 type=Creature

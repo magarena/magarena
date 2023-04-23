@@ -1,5 +1,5 @@
 name=Bonds of Quicksilver
-image=https://magiccards.info/scans/en/cn2/102.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f01c9fe7-35a4-4f64-b527-5311872b13fd.jpg?1576382359
 image_updated=2017-08-29
 value=2.240
 removal=3

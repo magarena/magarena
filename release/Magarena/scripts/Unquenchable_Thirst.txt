@@ -1,5 +1,5 @@
 name=Unquenchable Thirst
-image=https://magiccards.info/scans/en/hou/53.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a418b2aa-dbc2-409b-9f19-e16a0ad8cbac.jpg?1562809336
 value=2.500
 rarity=C
 type=Enchantment

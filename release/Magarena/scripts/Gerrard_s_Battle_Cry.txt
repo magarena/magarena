@@ -1,5 +1,5 @@
 name=Gerrard's Battle Cry
-image=https://magiccards.info/scans/en/tp/233.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/814c4295-5d99-45da-87cc-29bb1b774e99.jpg?1562430318
 value=4.008
 rarity=R
 type=Enchantment

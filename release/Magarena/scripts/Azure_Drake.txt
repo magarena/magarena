@@ -1,5 +1,5 @@
 name=Azure Drake
-image=https://magiccards.info/scans/en/m11/46.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/6653bce7-b0fc-49e3-8f45-f0bfcade8870.jpg?1562462334
 value=2.757
 rarity=C
 type=Creature

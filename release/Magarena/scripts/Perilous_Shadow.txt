@@ -1,5 +1,5 @@
 name=Perilous Shadow
-image=https://magiccards.info/scans/en/rtr/74.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c101171-a988-4c1d-9954-634e2f1c6f01.jpg?1562784212
 value=2.845
 rarity=C
 type=Creature

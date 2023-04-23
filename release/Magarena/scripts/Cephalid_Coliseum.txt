@@ -1,5 +1,5 @@
 name=Cephalid Coliseum
-image=https://magiccards.info/scans/en/od/317.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5d74112-7244-4c3f-a5eb-b6be671aefe8.jpg?1562934946
 value=4.012
 rarity=U
 type=Land

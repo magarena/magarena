@@ -1,5 +1,5 @@
 name=Slippery Karst
-image=https://magiccards.info/scans/en/c14/311.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8c55693-2111-4406-997e-0ad929931c8c.jpg?1592673947
 image_updated=2016-02-29
 value=2.917
 rarity=C

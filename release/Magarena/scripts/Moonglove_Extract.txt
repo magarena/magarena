@@ -1,5 +1,5 @@
 name=Moonglove Extract
-image=https://magiccards.info/scans/en/ima/222.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d016c5f-265b-4426-8dd8-87872f075f33.jpg?1562847004
 image_updated=2017-04-12
 value=2.929
 removal=2

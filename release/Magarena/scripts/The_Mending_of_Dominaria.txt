@@ -1,5 +1,5 @@
 name=The Mending of Dominaria
-image=https://magiccards.info/scans/en/dom/173.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/726feeb3-6403-4f23-8415-a4a6878faf61.jpg?1604194254
 value=2.500
 rarity=R
 type=Enchantment

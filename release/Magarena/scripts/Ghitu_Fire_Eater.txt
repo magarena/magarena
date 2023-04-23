@@ -1,5 +1,5 @@
 name=Ghitu Fire-Eater
-image=https://magiccards.info/scans/en/7e/184.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0770cc34-0f38-4773-8633-6907f44436c4.jpg?1562231864
 value=3.293
 rarity=U
 type=Creature

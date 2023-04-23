@@ -1,5 +1,5 @@
 name=Votary of the Conclave
-image=https://magiccards.info/scans/en/rav/35.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bb6f929-5a19-421b-ae88-9bbb7e64756c.jpg?1598913987
 value=1.906
 rarity=C
 type=Creature

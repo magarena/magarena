@@ -1,5 +1,5 @@
 name=Mischievous Poltergeist
-image=https://magiccards.info/scans/en/6e/144.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d11803b8-d1df-454d-93ec-b1bb276843b6.jpg?1562823060
 value=2.907
 rarity=U
 type=Creature

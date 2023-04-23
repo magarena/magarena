@@ -1,5 +1,5 @@
 name=Supreme Will
-image=https://magiccards.info/scans/en/hou/49.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcf7fd8a-adc3-4099-8e30-08375f263446.jpg?1608909511
 value=2.500
 rarity=U
 type=Instant

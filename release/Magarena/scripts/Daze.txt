@@ -1,5 +1,5 @@
 name=Daze
-image=https://magiccards.info/scans/en/ema/44.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f05e9a3e-8a35-4687-85cb-e31b3927a5e2.jpg?1580013916
 value=4.588
 rarity=U
 type=Instant

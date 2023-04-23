@@ -1,5 +1,5 @@
 name=Temple of Abandon
-image=https://magiccards.info/scans/en/ths/224.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0203d093-a060-47d7-876b-e7ce8e444bc6.jpg?1682210690
 value=3.477
 rarity=R
 type=Land

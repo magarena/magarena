@@ -1,5 +1,5 @@
 name=Dromoka Monument
-image=https://magiccards.info/scans/en/dtk/238.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4df975f-b6ef-4e8e-8be8-529c0ffd8a37.jpg?1562793611
 value=2.500
 rarity=U
 type=Artifact

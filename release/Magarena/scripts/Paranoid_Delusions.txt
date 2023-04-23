@@ -1,5 +1,5 @@
 name=Paranoid Delusions
-image=https://magiccards.info/scans/en/gtc/186.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af406038-91ce-41fe-8b6d-55408a96d0a2.jpg?1561841905
 value=2.865
 rarity=C
 type=Sorcery

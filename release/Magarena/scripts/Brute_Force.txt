@@ -1,5 +1,5 @@
 name=Brute Force
-image=https://magiccards.info/scans/en/mm2/108.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89db7256-3bd0-4c1d-9c6f-de81f7d3c1a2.jpg?1619396809
 value=4.016
 rarity=C
 type=Instant

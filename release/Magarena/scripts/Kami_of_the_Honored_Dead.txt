@@ -1,5 +1,5 @@
 name=Kami of the Honored Dead
-image=https://magiccards.info/scans/en/bok/12.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46e53299-f480-4769-bfc6-86fb19964280.jpg?1562876782
 value=2.571
 rarity=U
 type=Creature

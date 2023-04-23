@@ -1,5 +1,5 @@
 name=Shadowstorm Vizier
-image=https://magiccards.info/scans/en/akh/206.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea72b393-e47c-46de-a458-624ef0227486.jpg?1543676104
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Séance
-image=https://magiccards.info/scans/en/mm3/22.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e376bdf-076c-471a-9408-b36fc5b8405b.jpg?1593812924
 image_updated=2017-08-08
 value=3.294
 rarity=R

@@ -1,5 +1,5 @@
 name=Jwari Shapeshifter
-image=https://magiccards.info/scans/en/wwk/32.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/587f91f6-b46e-4dd5-a86d-1048054dd3c0.jpg?1562287807
 value=3.676
 rarity=R
 type=Creature

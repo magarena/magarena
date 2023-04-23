@@ -1,5 +1,5 @@
 name=Endrek Sahr, Master Breeder
-image=https://magiccards.info/scans/en/mm2/82.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a97b9d0e-e150-46d5-b6fd-59793e82dae4.jpg?1562266137
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Dross Crocodile
-image=https://magiccards.info/scans/en/10e/138.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efd5c07e-4ece-4c8b-93c8-6abd7dd3a39a.jpg?1562557520
 value=2.738
 rarity=C
 type=Creature

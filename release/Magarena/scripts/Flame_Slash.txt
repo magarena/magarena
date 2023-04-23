@@ -1,5 +1,5 @@
 name=Flame Slash
-image=https://magiccards.info/scans/en/cn2/157.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15affc1b-2ebb-4934-87a2-10e89eafe894.jpg?1576382839
 image_updated=2017-08-29
 value=3.855
 rarity=C

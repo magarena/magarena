@@ -1,5 +1,5 @@
 name=Phyrexian Digester
-image=https://magiccards.info/scans/en/mbs/120.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9112062-1a1b-462b-85d3-821ea91778b8.jpg?1562616051
 value=2.115
 rarity=C
 type=Artifact,Creature

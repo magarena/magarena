@@ -1,5 +1,5 @@
 name=Elvish Hunter
-image=https://magiccards.info/scans/en/fe/73.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baf265bf-0f83-4073-87c2-f0b9ef268592.jpg?1562870465
 value=3.042
 rarity=C
 type=Creature

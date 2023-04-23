@@ -1,5 +1,5 @@
 name=Chandra's Spitfire
-image=https://magiccards.info/scans/en/m11/129.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a857da7-5438-465b-821a-bd5bfd780c69.jpg?1592516884
 value=4.146
 rarity=U
 type=Creature

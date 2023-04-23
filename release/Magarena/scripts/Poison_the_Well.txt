@@ -1,5 +1,5 @@
 name=Poison the Well
-image=https://magiccards.info/scans/en/shm/193.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb86eeec-d50f-4823-86bd-35437926a6e4.jpg?1562835997
 value=3.141
 rarity=C
 type=Sorcery

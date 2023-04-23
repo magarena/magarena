@@ -1,5 +1,5 @@
 name=Midnight Guard
-image=https://magiccards.info/scans/en/m15/20.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87c1d85d-b2b8-4c9d-84fa-2566b14cb5ea.jpg?1562922436
 value=2.750
 rarity=C
 type=Creature

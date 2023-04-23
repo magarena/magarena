@@ -1,5 +1,5 @@
 name=Keepers of the Faith
-image=https://magiccards.info/scans/en/lg/193.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3d1ad50-c60c-46a9-b2dc-5cd2680d7263.jpg?1562928135
 image_updated=2016-12-21
 value=1.795
 rarity=C

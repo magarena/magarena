@@ -1,5 +1,5 @@
 name=Gigantoplasm
-image=https://magiccards.info/scans/en/c15/11.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27163b43-61e2-495c-b544-55c349eba99c.jpg?1562702336
 image_updated=2016-02-29
 value=2.500
 rarity=R

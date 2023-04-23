@@ -1,5 +1,5 @@
 name=Nameless One
-image=https://magiccards.info/scans/en/on/100.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79cf3535-3f80-4b76-aad3-dd851e6885a6.jpg?1562923715
 value=3.037
 rarity=U
 type=Creature

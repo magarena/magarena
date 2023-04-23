@@ -1,5 +1,5 @@
 name=Ray of Command
-image=https://magiccards.info/scans/en/cmd/56.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7ca8a427-5c20-4650-bbb5-9895e4f2c009.jpg?1592754536
 value=4.133
 removal=5
 rarity=C

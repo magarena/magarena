@@ -1,5 +1,5 @@
 name=Thunderscape Master
-image=https://magiccards.info/scans/en/in/175.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22abdc2f-bdc8-46c4-8ce2-f06befedbc32.jpg?1562901918
 value=3.750
 rarity=R
 type=Creature

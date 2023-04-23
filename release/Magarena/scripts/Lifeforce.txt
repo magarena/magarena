@@ -1,5 +1,5 @@
 name=Lifeforce
-image=https://magiccards.info/scans/en/5e/172.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/6520d992-ebb3-4711-ad91-ab1c1e29538a.jpg?1562918857
 value=3.708
 rarity=U
 type=Enchantment

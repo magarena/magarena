@@ -1,5 +1,5 @@
 name=Blade of the Bloodchief
-image=https://magiccards.info/scans/en/c17/204.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c80fbef-ad13-4ff1-92ae-f8363ed5c6ab.jpg?1562599625
 image_updated=2017-10-03
 value=4.035
 rarity=R

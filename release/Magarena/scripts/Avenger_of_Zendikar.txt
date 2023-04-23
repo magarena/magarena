@@ -1,5 +1,5 @@
 name=Avenger of Zendikar
-image=https://magiccards.info/scans/en/wwk/96.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9685faa0-46cc-4098-9ad7-cffece741baa.jpg?1673484460
 value=3.608
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Plague Wind
-image=https://magiccards.info/scans/en/a25/102.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72d21d0d-7de7-4f03-8663-002c9290512f.jpg?1562436663
 image_updated=2018-04-27
 value=4.282
 removal=2

@@ -1,5 +1,5 @@
 name=Sturmgeist
-image=https://magiccards.info/scans/en/isd/82.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c409d1d0-fc45-40bf-adac-83b680209a38.jpg?1562836695
 value=3.493
 rarity=R
 type=Creature

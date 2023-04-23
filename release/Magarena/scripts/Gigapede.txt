@@ -1,5 +1,5 @@
 name=Gigapede
-image=https://magiccards.info/scans/en/on/264.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35a12eeb-905b-4514-828c-96952b148d81.jpg?1562905835
 value=2.500
 rarity=R
 type=Creature

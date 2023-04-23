@@ -1,5 +1,5 @@
 name=Elenda, the Dusk Rose
-image=https://magiccards.info/scans/en/rix/157.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25e34147-588b-4fe5-88dd-2dfda567681d.jpg?1673148563
 value=2.500
 rarity=M
 type=Legendary,Creature

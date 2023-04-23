@@ -1,5 +1,5 @@
 name=Gigantomancer
-image=https://magiccards.info/scans/en/roe/184.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af25e35c-d1a4-4c10-8574-82babaaac4fd.jpg?1562707383
 value=3.740
 rarity=R
 type=Creature

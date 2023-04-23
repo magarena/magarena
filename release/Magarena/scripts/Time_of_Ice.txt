@@ -1,5 +1,5 @@
 name=Time of Ice
-image=https://magiccards.info/scans/en/dom/70.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edcd0674-68b9-41ca-ab46-a73dfcbe4149.jpg?1562745151
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Demonic Appetite
-image=https://magiccards.info/scans/en/roe/106.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca51786a-d58c-455f-910d-01efa5ef8470.jpg?1562708607
 value=2.688
 rarity=C
 type=Enchantment

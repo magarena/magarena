@@ -1,5 +1,5 @@
 name=Dark Favor
-image=https://magiccards.info/scans/en/m13/86.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c1591ae-07aa-4013-bc6d-4cafd09927f0.jpg?1562829758
 value=2.946
 rarity=C
 type=Enchantment

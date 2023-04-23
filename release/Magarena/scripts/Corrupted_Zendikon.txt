@@ -1,5 +1,5 @@
 name=Corrupted Zendikon
-image=https://magiccards.info/scans/en/wwk/55.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0ce7d93d-3998-4486-b277-e4f91f6e3feb.jpg?1562281816
 value=2.985
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Spell Rupture
-image=https://magiccards.info/scans/en/gtc/52.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7267fcec-0879-4743-a45f-35057ccb2596.jpg?1561831328
 value=3.303
 rarity=C
 type=Instant

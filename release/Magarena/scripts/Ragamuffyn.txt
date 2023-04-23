@@ -1,5 +1,5 @@
 name=Ragamuffyn
-image=https://magiccards.info/scans/en/di/51.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2db5cccc-e9e4-4db8-affb-93d629d67b91.jpg?1593272988
 value=2.690
 rarity=U
 type=Creature

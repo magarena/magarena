@@ -1,5 +1,5 @@
 name=Disease Carriers
-image=https://magiccards.info/scans/en/ud/57.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49125cfc-dbae-4543-9d2d-4cc78f45ce9a.jpg?1562443761
 value=3.017
 rarity=C
 type=Creature

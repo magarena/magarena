@@ -1,5 +1,5 @@
 name=Bloated Toad
-image=https://magiccards.info/scans/en/ul/97.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9686f1a8-035e-415e-9a06-933d6ce1cd5c.jpg?1562863755
 value=3.111
 rarity=U
 type=Creature

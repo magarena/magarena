@@ -1,5 +1,5 @@
 name=Void Shatter
-image=https://magiccards.info/scans/en/ogw/49.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bf13c5e-3968-48ad-ba08-99ba58873223.jpg?1562910363
 image_updated=2016-02-29
 value=2.500
 rarity=U

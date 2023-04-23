@@ -1,5 +1,5 @@
 name=Akki Underling
-image=https://magiccards.info/scans/en/sok/93.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/106382db-56aa-4061-9d1e-17821937f1de.jpg?1562492488
 value=2.244
 rarity=C
 type=Creature

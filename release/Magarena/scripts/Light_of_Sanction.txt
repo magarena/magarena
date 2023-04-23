@@ -1,5 +1,5 @@
 name=Light of Sanction
-image=https://magiccards.info/scans/en/rav/24.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daff382a-980e-4f0c-b26c-70c8a43c66f1.jpg?1598913783
 value=3.010
 rarity=R
 type=Enchantment

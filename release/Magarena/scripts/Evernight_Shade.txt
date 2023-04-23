@@ -1,5 +1,5 @@
 name=Evernight Shade
-image=https://magiccards.info/scans/en/c14/144.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96ab331f-41eb-40af-b02d-1df0c5760e85.jpg?1561951102
 value=3.087
 rarity=U
 type=Creature

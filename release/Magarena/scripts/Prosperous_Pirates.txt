@@ -1,5 +1,5 @@
 name=Prosperous Pirates
-image=https://magiccards.info/scans/en/xln/69.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d778bde-f927-419e-8052-6230562bdedd.jpg?1608909355
 value=2.500
 rarity=C
 type=Creature

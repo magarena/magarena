@@ -1,5 +1,5 @@
 name=Rhonas's Stalwart
-image=https://magiccards.info/scans/en/hou/133.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99d4f791-9084-4644-a1f5-85adbf6dc790.jpg?1562807942
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dictate of Kruphix
-image=https://magiccards.info/scans/en/jou/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa9f176b-6d33-4510-9ba2-98bdd12ba34e.jpg?1592710552
 value=3.788
 rarity=R
 type=Enchantment

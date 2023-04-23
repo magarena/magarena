@@ -1,5 +1,5 @@
 name=Smoldering Efreet
-image=https://magiccards.info/scans/en/frf/115.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af33b204-6b50-4404-b986-9f6b970a7f06.jpg?1562828832
 value=2.500
 rarity=C
 type=Creature

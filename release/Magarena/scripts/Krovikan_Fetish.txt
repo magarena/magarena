@@ -1,5 +1,5 @@
 name=Krovikan Fetish
-image=https://magiccards.info/scans/en/5e/34.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73f75891-00fa-428b-a3cb-88867ff35cd2.jpg?1562869060
 value=2.231
 rarity=C
 type=Enchantment

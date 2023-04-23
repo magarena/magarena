@@ -1,5 +1,5 @@
 name=Merciless Eviction
-image=https://magiccards.info/scans/en/c16/211.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d395707-4e6d-4e2c-b977-d9b8c0c9eb80.jpg?1673305593
 image_updated=2017-08-17
 value=4.036
 rarity=R

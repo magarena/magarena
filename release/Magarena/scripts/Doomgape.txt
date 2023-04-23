@@ -1,5 +1,5 @@
 name=Doomgape
-image=https://magiccards.info/scans/en/eve/120.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/702da51f-c4ec-4073-bee8-f8423f70b163.jpg?1592713740
 value=4.058
 rarity=R
 type=Creature

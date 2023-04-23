@@ -1,5 +1,5 @@
 name=Silumgar Butcher
-image=https://magiccards.info/scans/en/dtk/122.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40cb67f7-b4e1-423b-8f55-d44ed383e778.jpg?1562785294
 value=2.500
 rarity=C
 type=Creature

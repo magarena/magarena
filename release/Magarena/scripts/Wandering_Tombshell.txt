@@ -1,5 +1,5 @@
 name=Wandering Tombshell
-image=https://magiccards.info/scans/en/dtk/127.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e66e1d97-d676-471a-a140-deb39600a7a9.jpg?1562794736
 value=2.500
 rarity=C
 type=Creature

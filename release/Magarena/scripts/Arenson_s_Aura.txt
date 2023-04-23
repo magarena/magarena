@@ -1,5 +1,5 @@
 name=Arenson's Aura
-image=https://magiccards.info/scans/en/5e/282.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba2bf14c-f04d-4380-b0d5-25028ddd999b.jpg?1562593758
 value=2.717
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Ignoble Soldier
-image=https://magiccards.info/scans/en/mm/22.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/676a2506-17f8-4b8e-be0c-eacc0fe972f6.jpg?1562381342
 value=0.903
 rarity=U
 type=Creature

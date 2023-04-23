@@ -1,5 +1,5 @@
 name=Gloom Surgeon
-image=https://magiccards.info/scans/en/avr/104.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b00c711-007d-4c85-9dd9-dd9d52f1649d.jpg?1592708878
 value=2.973
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Bloodchief Ascension
-image=https://magiccards.info/scans/en/zen/82.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa213dbb-c52a-4084-92aa-d0b5d97a97d9.jpg?1562615322
 value=4.110
 rarity=R
 type=Enchantment

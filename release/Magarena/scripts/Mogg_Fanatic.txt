@@ -1,5 +1,5 @@
 name=Mogg Fanatic
-image=https://magiccards.info/scans/en/ema/138.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d479ca28-bdc2-4b87-abf7-5aeb229a3f1e.jpg?1580014589
 value=4.439
 rarity=C
 type=Creature

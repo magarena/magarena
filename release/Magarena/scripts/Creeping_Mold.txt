@@ -1,5 +1,5 @@
 name=Creeping Mold
-image=https://magiccards.info/scans/en/kld/150.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/277b549c-8691-42b2-9867-802b158a506c.jpg?1576382428
 image_updated=2017-08-29
 value=3.805
 removal=2

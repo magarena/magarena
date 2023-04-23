@@ -1,5 +1,5 @@
 name=Deathless Angel
-image=https://magiccards.info/scans/en/roe/17.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/049fb314-184c-4411-9035-f04215659056.jpg?1562700754
 value=4.041
 rarity=R
 type=Creature

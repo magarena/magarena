@@ -1,5 +1,5 @@
 name=Mirror Image
-image=https://magiccards.info/scans/en/m19/61.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b3ffc69-f21b-410e-8993-8c1b4669fc19.jpg?1562302230
 value=2.500
 rarity=U
 type=Creature

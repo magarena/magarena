@@ -1,5 +1,5 @@
 name=Sheltering Light
-image=https://magiccards.info/scans/en/xln/35.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0c945c7-6c31-4c4f-9203-3dc2aef50820.jpg?1562562304
 value=2.500
 rarity=U
 type=Instant

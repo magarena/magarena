@@ -1,5 +1,5 @@
 name=Ranger's Guile
-image=https://magiccards.info/scans/en/m15/193.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02392840-f0c4-462e-84ce-9a7cdd9f5efb.jpg?1594737163
 value=2.700
 rarity=C
 type=Instant

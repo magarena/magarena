@@ -1,5 +1,5 @@
 name=Sphere of Reason
-image=https://magiccards.info/scans/en/od/51.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76ef2016-b3c8-4615-a056-3000bcccb68e.jpg?1562917001
 value=2.537
 rarity=U
 type=Enchantment

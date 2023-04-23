@@ -1,5 +1,5 @@
 name=Surveilling Sprite
-image=https://magiccards.info/scans/en/rav/67.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97265692-3b45-47f4-9e9f-e78751240007.jpg?1562930591
 value=3.152
 rarity=C
 type=Creature

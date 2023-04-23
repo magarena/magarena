@@ -1,5 +1,5 @@
 name=Thought Lash
-image=https://magiccards.info/scans/en/ai/58.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/547b1405-3f4e-4c47-8600-3e92197b1dd7.jpg?1562868562
 value=2.767
 rarity=R
 type=Enchantment

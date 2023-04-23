@@ -1,5 +1,5 @@
 name=Tormenting Voice
-image=https://magiccards.info/scans/en/m19/164.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6da46103-a14c-4aa2-92fc-fd758335caf4.jpg?1604198268
 image_updated=2018-08-07
 value=3.500
 rarity=C

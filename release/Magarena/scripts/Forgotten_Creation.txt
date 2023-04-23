@@ -1,5 +1,5 @@
 name=Forgotten Creation
-image=https://magiccards.info/scans/en/soi/63.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d314354-1fb1-498c-8342-ecafac9ff37a.jpg?1674141340
 value=2.500
 rarity=R
 type=Creature

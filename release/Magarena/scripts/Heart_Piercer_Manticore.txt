@@ -1,5 +1,5 @@
 name=Heart-Piercer Manticore
-image=https://magiccards.info/scans/en/akh/138.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cd213a1-92f6-49dd-9ea9-41a00879faaa.jpg?1568004427
 value=2.500
 rarity=R
 type=Creature

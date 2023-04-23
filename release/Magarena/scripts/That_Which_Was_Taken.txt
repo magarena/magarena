@@ -1,5 +1,5 @@
 name=That Which Was Taken
-image=https://magiccards.info/scans/en/bok/162.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d80c84ad-171f-42c3-94b4-a9fe25b877e7.jpg?1562880091
 value=4.101
 rarity=R
 type=Legendary,Artifact

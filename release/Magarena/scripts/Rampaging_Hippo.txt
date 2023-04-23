@@ -1,5 +1,5 @@
 name=Rampaging Hippo
-image=https://magiccards.info/scans/en/hou/128.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c97229f-2fc8-439a-a18b-efa09b366b70.jpg?1562798495
 value=2.500
 rarity=C
 type=Creature

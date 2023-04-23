@@ -1,5 +1,5 @@
 name=Dakmor Sorceress
-image=https://magiccards.info/scans/en/st/74.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8e355d8-a142-4504-9a27-721b6140dc8a.jpg?1562875737
 value=3.128
 rarity=R
 type=Creature

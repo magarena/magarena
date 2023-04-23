@@ -1,5 +1,5 @@
 name=Second Wind
-image=https://magiccards.info/scans/en/fut/57.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/061d2f8f-1166-4579-9609-d8ba5db79172.jpg?1562896188
 value=3.404
 rarity=U
 type=Enchantment

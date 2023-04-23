@@ -1,5 +1,5 @@
 name=Cyclops Tyrant
-image=https://magiccards.info/scans/en/m14/135.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0b8e733-22a7-4696-83b3-297cbe75dadc.jpg?1562837037
 value=1.441
 rarity=C
 type=Creature

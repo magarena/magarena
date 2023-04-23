@@ -1,5 +1,5 @@
 name=Lightning Reflexes
-image=https://magiccards.info/scans/en/mr/186.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/271febe5-98ea-403d-87be-7865cf9f426d.jpg?1562718320
 value=3.000
 rarity=C
 type=Enchantment

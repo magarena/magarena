@@ -1,5 +1,5 @@
 name=Kazuul, Tyrant of the Cliffs
-image=https://magiccards.info/scans/en/c16/130.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4ce569cd-964e-44d6-a155-5a853ccc1478.jpg?1674142054
 image_updated=2017-08-17
 value=4.073
 rarity=R

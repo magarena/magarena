@@ -1,5 +1,5 @@
 name=Gempalm Strider
-image=https://magiccards.info/scans/en/le/127.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/574b1d7e-beee-4744-a266-bce9c93bf1ca.jpg?1562912731
 image_updated=2016-12-03
 value=3.397
 rarity=U

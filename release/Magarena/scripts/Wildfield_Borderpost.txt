@@ -1,5 +1,5 @@
 name=Wildfield Borderpost
-image=https://magiccards.info/scans/en/arb/80.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90a788e7-f3c8-41cc-9f1a-2e9f58aabc0e.jpg?1562642892
 value=3.045
 rarity=C
 type=Artifact

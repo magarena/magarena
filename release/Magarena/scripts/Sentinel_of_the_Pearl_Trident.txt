@@ -1,5 +1,5 @@
 name=Sentinel of the Pearl Trident
-image=https://magiccards.info/scans/en/dom/65.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a19284d8-4404-4032-8dee-3c7af2819045.jpg?1598304261
 value=2.500
 rarity=U
 type=Creature

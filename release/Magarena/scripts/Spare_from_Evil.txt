@@ -1,5 +1,5 @@
 name=Spare from Evil
-image=https://magiccards.info/scans/en/isd/34.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d01b5d97-b5ae-42a7-944a-feb12febd63c.jpg?1562837426
 value=3.702
 rarity=C
 type=Instant

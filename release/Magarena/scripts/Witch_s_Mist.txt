@@ -1,5 +1,5 @@
 name=Witch's Mist
-image=https://magiccards.info/scans/en/fut/92.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/651c7735-088d-495b-a58f-69abf4cac197.jpg?1562915520
 value=3.076
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Hellkite Overlord
-image=https://magiccards.info/scans/en/ala/172.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d99869b4-0bb6-444a-bdc4-5916371c9d29.jpg?1673148735
 value=4.484
 rarity=M
 type=Creature

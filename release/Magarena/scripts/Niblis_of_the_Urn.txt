@@ -1,5 +1,5 @@
 name=Niblis of the Urn
-image=https://magiccards.info/scans/en/dka/16.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11bf2ff7-0f8d-47ea-adfd-af299e793a37.jpg?1562899277
 value=3.569
 rarity=U
 type=Creature

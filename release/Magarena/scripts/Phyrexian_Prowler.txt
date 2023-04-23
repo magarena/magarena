@@ -1,5 +1,5 @@
 name=Phyrexian Prowler
-image=https://magiccards.info/scans/en/ne/65.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e26f79b5-780a-4cbb-b49d-01673a411d1f.jpg?1562632491
 value=2.387
 rarity=U
 type=Creature

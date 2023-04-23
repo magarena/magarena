@@ -1,5 +1,5 @@
 name=Silent Artisan
-image=https://magiccards.info/scans/en/ths/31.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dce5647d-1546-4eff-a2a2-9e9ef26db533.jpg?1593860943
 value=1.988
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spawnbinder Mage
-image=https://magiccards.info/scans/en/ogw/35.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5677bd49-69eb-41dc-8e64-2df3b7f5c45f.jpg?1562912617
 image_updated=2016-02-29
 value=2.500
 rarity=C

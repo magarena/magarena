@@ -1,5 +1,5 @@
 name=One Thousand Lashes
-image=https://magiccards.info/scans/en/gtc/183.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eef2d548-477b-4be1-b946-6df6aac2ee6e.jpg?1561851287
 value=3.068
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Ordeal of Erebos
-image=https://magiccards.info/scans/en/ths/99.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e02ddba-fdc1-4d7b-89eb-00a0417f8963.jpg?1562822328
 value=3.061
 rarity=U
 type=Enchantment

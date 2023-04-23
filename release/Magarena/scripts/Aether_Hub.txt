@@ -1,5 +1,5 @@
 name=Aether Hub
-image=https://magiccards.info/scans/en/kld/242.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25ea04d8-5d85-49d3-8d8d-7fe123d0ed6c.jpg?1576383493
 image_updated=2016-10-05
 value=2.500
 rarity=U

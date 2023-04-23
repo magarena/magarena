@@ -1,5 +1,5 @@
 name=Aether Sting
-image=https://magiccards.info/scans/en/ud/76.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66a09917-50ce-4b51-a5cf-e28e88a45762.jpg?1562444227
 image_updated=2016-09-27
 value=3.589
 rarity=U

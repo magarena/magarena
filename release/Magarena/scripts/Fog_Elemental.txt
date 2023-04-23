@@ -1,5 +1,5 @@
 name=Fog Elemental
-image=https://magiccards.info/scans/en/10e/85.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95534175-0bf8-4460-8182-117dc1487dcb.jpg?1562551914
 value=2.988
 rarity=U
 type=Creature

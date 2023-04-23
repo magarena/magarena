@@ -1,5 +1,5 @@
 name=Copperline Gorge
-image=https://magiccards.info/scans/en/som/225.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78b0f36b-7d8c-4e77-adc2-a4dad93a81d5.jpg?1675957264
 value=4.270
 rarity=R
 type=Land

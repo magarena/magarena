@@ -1,5 +1,5 @@
 name=Colossal Majesty
-image=https://magiccards.info/scans/en/m19/173.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5db24df1-580f-4ff5-91a7-9a64a8352883.jpg?1631587815
 value=2.500
 rarity=U
 type=Enchantment

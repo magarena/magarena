@@ -1,5 +1,5 @@
 name=Soratami Mirror-Mage
-image=https://magiccards.info/scans/en/chk/88.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/215209b1-1a5d-48f4-9eca-19a9848b2fed.jpg?1562758400
 value=1.226
 rarity=U
 type=Creature

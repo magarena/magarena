@@ -1,5 +1,5 @@
 name=Firefly
-image=https://magiccards.info/scans/en/tp/172.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a312f0cf-225a-4f3d-b9a7-c47dd03b25c3.jpg?1562055900
 value=2.086
 rarity=U
 type=Creature

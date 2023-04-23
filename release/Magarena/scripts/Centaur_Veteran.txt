@@ -1,5 +1,5 @@
 name=Centaur Veteran
-image=https://magiccards.info/scans/en/tr/123.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a83903c1-40fe-47a5-8bcc-2f0877c58225.jpg?1562631388
 value=1.514
 rarity=C
 type=Creature

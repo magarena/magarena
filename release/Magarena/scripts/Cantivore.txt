@@ -1,5 +1,5 @@
 name=Cantivore
-image=https://magiccards.info/scans/en/od/13.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5243fc3-176b-44a3-9f1a-ab069a08757a.jpg?1562928735
 value=3.061
 rarity=R
 type=Creature

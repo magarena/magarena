@@ -1,5 +1,5 @@
 name=Outrider of Jhess
-image=https://magiccards.info/scans/en/ala/52.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3b681c8-6d20-4e43-95f8-e83d34626145.jpg?1562709384
 value=1.855
 rarity=C
 type=Creature

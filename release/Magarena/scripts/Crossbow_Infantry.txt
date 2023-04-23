@@ -1,5 +1,5 @@
 name=Crossbow Infantry
-image=https://magiccards.info/scans/en/9e/12.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d962926a-e415-4075-b5dd-3db68526bdb9.jpg?1562742510
 value=2.924
 rarity=C
 type=Creature

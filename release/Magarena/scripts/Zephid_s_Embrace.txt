@@ -1,5 +1,5 @@
 name=Zephid's Embrace
-image=https://magiccards.info/scans/en/us/114.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb3312de-c153-4e75-8f8c-b7762b30d492.jpg?1562948223
 value=3.962
 rarity=U
 type=Enchantment

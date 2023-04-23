@@ -1,5 +1,5 @@
 name=Kolaghan Monument
-image=https://magiccards.info/scans/en/ima/217.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3efb210e-00a9-470e-ac30-4036a7befd4c.jpg?1562847964
 image_updated=2017-04-12
 value=2.500
 rarity=U

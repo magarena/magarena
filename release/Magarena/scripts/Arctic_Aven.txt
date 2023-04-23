@@ -1,5 +1,5 @@
 name=Arctic Aven
-image=https://magiccards.info/scans/en/m13/42.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06f6aab1-c400-4d87-b68e-f36552e7417f.jpg?1562549924
 value=3.453
 rarity=U
 type=Creature

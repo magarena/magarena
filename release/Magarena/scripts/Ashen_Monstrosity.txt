@@ -1,5 +1,5 @@
 name=Ashen Monstrosity
-image=https://magiccards.info/scans/en/bok/93.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de3218e3-4640-4f73-a52b-f11ea5ea23a9.jpg?1562880262
 value=2.853
 rarity=U
 type=Creature

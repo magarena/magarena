@@ -1,5 +1,5 @@
 name=Hoard-Smelter Dragon
-image=https://magiccards.info/scans/en/c14/178.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f4c5867-73c4-4e10-bbf5-6a69df879547.jpg?1631587237
 value=3.890
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Seton's Scout
-image=https://magiccards.info/scans/en/tr/138.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/732bf7bb-5326-4742-8311-96ddbfe14b38.jpg?1562630354
 value=3.717
 rarity=U
 type=Creature

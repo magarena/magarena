@@ -1,5 +1,5 @@
 name=Touch of Vitae
-image=https://magiccards.info/scans/en/ia/159.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48d2cd18-a24d-40e0-a654-777d9e623ae2.jpg?1562908300
 value=2.750
 rarity=U
 type=Instant

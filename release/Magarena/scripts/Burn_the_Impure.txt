@@ -1,5 +1,5 @@
 name=Burn the Impure
-image=https://magiccards.info/scans/en/mbs/59.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5641730-428d-4484-866e-ec1ac669537f.jpg?1562614054
 value=3.279
 removal=3
 rarity=C

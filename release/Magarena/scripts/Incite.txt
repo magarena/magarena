@@ -1,5 +1,5 @@
 name=Incite
-image=https://magiccards.info/scans/en/m11/145.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6ba4dcc6-05a5-43e9-b445-bae83180aa79.jpg?1562463218
 value=1.731
 rarity=C
 type=Instant

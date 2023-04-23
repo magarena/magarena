@@ -1,5 +1,5 @@
 name=Select for Inspection
-image=https://magiccards.info/scans/en/kld/63.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/120f0fb0-4831-4759-b58c-05c4be90a4af.jpg?1576381407
 image_updated=2016-10-05
 value=2.500
 rarity=C

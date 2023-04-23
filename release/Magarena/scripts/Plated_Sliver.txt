@@ -1,5 +1,5 @@
 name=Plated Sliver
-image=https://magiccards.info/scans/en/le/19.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82846d31-4981-4ef1-85c3-703569146a84.jpg?1562921399
 value=3.939
 rarity=C
 type=Creature

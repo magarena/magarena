@@ -1,5 +1,5 @@
 name=Part the Veil
-image=https://magiccards.info/scans/en/chk/77.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d870e607-1607-46f3-bc9f-925d0164bcf9.jpg?1562764693
 value=2.061
 rarity=R
 type=Instant

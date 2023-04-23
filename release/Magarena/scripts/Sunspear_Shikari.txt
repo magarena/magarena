@@ -1,5 +1,5 @@
 name=Sunspear Shikari
-image=https://magiccards.info/scans/en/mm2/35.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28cb4bcd-8a74-47b2-90d3-36eb4f66402d.jpg?1562603150
 value=3.377
 rarity=C
 type=Creature

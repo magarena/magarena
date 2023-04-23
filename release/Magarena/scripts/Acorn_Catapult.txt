@@ -1,5 +1,5 @@
 name=Acorn Catapult
-image=https://magiccards.info/scans/en/cmd/241.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/834354a3-f984-4882-bc71-080112107e64.jpg?1592714378
 value=3.718
 rarity=R
 type=Artifact

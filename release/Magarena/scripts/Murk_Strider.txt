@@ -1,5 +1,5 @@
 name=Murk Strider
-image=https://magiccards.info/scans/en/bfz/62.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/130849ba-3893-490d-bfb0-51c76e53cf62.jpg?1562899517
 image_updated=2015-11-08
 value=2.500
 rarity=C

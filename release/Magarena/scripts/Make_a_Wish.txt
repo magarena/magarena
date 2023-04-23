@@ -1,5 +1,5 @@
 name=Make a Wish
-image=https://magiccards.info/scans/en/isd/192.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0a8508d-25a7-4fb2-8aa3-349275f80c42.jpg?1562837460
 value=3.087
 rarity=U
 type=Sorcery

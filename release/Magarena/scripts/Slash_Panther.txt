@@ -1,5 +1,5 @@
 name=Slash Panther
-image=https://magiccards.info/scans/en/nph/96.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f510946-34de-4c12-8998-f61887d1a0e1.jpg?1562876395
 value=3.908
 rarity=C
 type=Artifact,Creature

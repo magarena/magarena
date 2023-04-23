@@ -1,5 +1,5 @@
 name=Muddle the Mixture
-image=https://magiccards.info/scans/en/rav/60.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79fc4b92-0efe-4370-a2b3-2155c458a966.jpg?1645328683
 value=4.552
 rarity=C
 type=Instant

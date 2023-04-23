@@ -1,5 +1,5 @@
 name=Howl from Beyond
-image=https://magiccards.info/scans/en/7e/142.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45db6652-c19f-42e1-b2e4-286bc3bf77d3.jpg?1562911409
 value=3.333
 rarity=C
 type=Instant

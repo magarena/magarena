@@ -1,5 +1,5 @@
 name=Blockbuster
-image=https://magiccards.info/scans/en/rav/115.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00a28b9d-1bd2-4ca4-a1e1-4138891d6739.jpg?1598915355
 value=1.761
 rarity=U
 type=Enchantment

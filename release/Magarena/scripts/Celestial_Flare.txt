@@ -1,5 +1,5 @@
 name=Celestial Flare
-image=https://magiccards.info/scans/en/ori/8.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89bb3b06-b33b-4897-882e-75b75790ea02.jpg?1562029850
 image_updated=2015-11-05
 value=2.500
 rarity=C

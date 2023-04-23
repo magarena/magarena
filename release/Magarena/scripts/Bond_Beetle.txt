@@ -1,5 +1,5 @@
 name=Bond Beetle
-image=https://magiccards.info/scans/en/m13/161.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f341ed2c-353b-49a3-b200-94ae43cb8e24.jpg?1562561830
 value=3.615
 rarity=C
 type=Creature

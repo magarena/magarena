@@ -1,5 +1,5 @@
 name=Firestorm Hellkite
-image=https://magiccards.info/scans/en/vi/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/def23574-4a41-4323-84d9-49f58b2ca322.jpg?1562278658
 value=3.038
 rarity=R
 type=Creature

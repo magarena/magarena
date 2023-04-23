@@ -1,5 +1,5 @@
 name=Trained Caracal
-image=https://magiccards.info/scans/en/rtr/27.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/797e45d1-d17d-40c0-bfdf-ec533784e676.jpg?1562788506
 value=2.711
 rarity=C
 type=Creature

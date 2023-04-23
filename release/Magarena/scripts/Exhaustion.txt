@@ -1,5 +1,5 @@
 name=Exhaustion
-image=https://magiccards.info/scans/en/9e/76.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae593a2e-42d9-47e3-b6cb-f2e2133944d5.jpg?1562740202
 value=4.137
 removal=1
 rarity=U

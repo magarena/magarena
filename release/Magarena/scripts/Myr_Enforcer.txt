@@ -1,5 +1,5 @@
 name=Myr Enforcer
-image=https://magiccards.info/scans/en/mm2/224.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dff51ae7-4b68-4770-915b-fb6bcf9ca1ed.jpg?1562268373
 value=4.080
 rarity=C
 type=Artifact,Creature

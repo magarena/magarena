@@ -1,5 +1,5 @@
 name=Star-Crowned Stag
-image=https://magiccards.info/scans/en/m19/38.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c57417c7-867b-4b64-bfe3-1744dfe9b44d.jpg?1562304312
 value=2.500
 rarity=C
 type=Creature

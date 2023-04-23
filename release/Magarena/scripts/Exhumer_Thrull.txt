@@ -1,5 +1,5 @@
 name=Exhumer Thrull
-image=https://magiccards.info/scans/en/gp/50.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8c53fda-3768-4cc5-8ca3-a60805c340ba.jpg?1593272193
 value=2.032
 rarity=U
 type=Creature

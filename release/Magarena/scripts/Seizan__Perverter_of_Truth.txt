@@ -1,5 +1,5 @@
 name=Seizan, Perverter of Truth
-image=https://magiccards.info/scans/en/chk/143.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1e61750-f7d7-4e6d-9d68-e1e357868a8d.jpg?1587857636
 value=3.958
 rarity=R
 type=Legendary,Creature

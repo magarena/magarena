@@ -1,5 +1,5 @@
 name=Trade Caravan
-image=https://magiccards.info/scans/en/hl/124.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdcc821b-8125-4585-ba44-4bf8c1873fbf.jpg?1562588730
 value=2.590
 rarity=C
 type=Creature

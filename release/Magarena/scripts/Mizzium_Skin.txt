@@ -1,5 +1,5 @@
 name=Mizzium Skin
-image=https://magiccards.info/scans/en/rtr/45.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9859344-4efc-4b87-a3fb-147e496cee68.jpg?1562794010
 value=3.283
 rarity=C
 type=Instant

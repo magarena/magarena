@@ -1,5 +1,5 @@
 name=Grave Robbers
-image=https://magiccards.info/scans/en/dk/8.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a131605a-f646-4745-a1e4-48d155a3d94f.jpg?1587910724
 value=2.206
 rarity=R
 type=Creature

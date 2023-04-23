@@ -1,5 +1,5 @@
 name=Fledgling Osprey
-image=https://magiccards.info/scans/en/ud/33.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cd46bfa-ca09-422f-9891-db9399fa2d3a.jpg?1562444696
 value=2.389
 rarity=C
 type=Creature

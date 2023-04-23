@@ -1,5 +1,5 @@
 name=Chimeric Egg
-image=https://magiccards.info/scans/en/ds/106.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d516f267-e72b-453c-bceb-4766582568d2.jpg?1562639818
 value=3.105
 rarity=U
 type=Artifact

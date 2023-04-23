@@ -1,5 +1,5 @@
 name=Angelic Shield
-image=https://magiccards.info/scans/en/in/228.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5c268cc-891b-49df-8964-736d325b9403.jpg?1581708378
 image_updated=2016-11-20
 value=3.891
 removal=1

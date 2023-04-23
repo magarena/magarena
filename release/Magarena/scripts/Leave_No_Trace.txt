@@ -1,5 +1,5 @@
 name=Leave No Trace
-image=https://magiccards.info/scans/en/rav/23.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58466d46-7225-42ff-8471-6d489be32cf3.jpg?1598913764
 value=3.364
 rarity=C
 type=Instant

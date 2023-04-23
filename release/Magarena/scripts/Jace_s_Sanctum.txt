@@ -1,5 +1,5 @@
 name=Jace's Sanctum
-image=https://magiccards.info/scans/en/ori/61.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8148adc6-7946-4abd-8601-b1f4cd6916c2.jpg?1568004013
 image_updated=2015-11-05
 value=2.500
 rarity=R

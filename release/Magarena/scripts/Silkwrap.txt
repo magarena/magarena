@@ -1,5 +1,5 @@
 name=Silkwrap
-image=https://magiccards.info/scans/en/dtk/38.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68ee9009-59a7-40e6-bf1a-1d26d4b399e8.jpg?1562787647
 value=2.500
 rarity=U
 type=Enchantment

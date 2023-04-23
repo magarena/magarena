@@ -1,5 +1,5 @@
 name=Sandstorm Charger
-image=https://magiccards.info/scans/en/dtk/34.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9757be26-4480-43b7-a38a-8e4bde4e2d50.jpg?1562790274
 value=2.500
 rarity=C
 type=Creature

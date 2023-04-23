@@ -1,5 +1,5 @@
 name=Defiant Vanguard
-image=https://magiccards.info/scans/en/tsts/5.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a37acadc-0e58-4f44-93f4-dd465b9ee06f.jpg?1562781502
 value=3.462
 rarity=U
 type=Creature

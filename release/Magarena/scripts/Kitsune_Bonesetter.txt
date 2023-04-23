@@ -1,5 +1,5 @@
 name=Kitsune Bonesetter
-image=https://magiccards.info/scans/en/sok/15.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a94c12e0-8eb1-43f9-a421-43ca9bcffb0e.jpg?1562495185
 value=1.333
 rarity=C
 type=Creature

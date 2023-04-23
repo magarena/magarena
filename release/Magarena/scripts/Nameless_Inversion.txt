@@ -1,5 +1,5 @@
 name=Nameless Inversion
-image=https://magiccards.info/scans/en/mm2/87.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/563c6f58-267a-4ae9-bf72-e0ae0be3b884.jpg?1562262589
 value=4.265
 rarity=C
 type=Tribal,Instant

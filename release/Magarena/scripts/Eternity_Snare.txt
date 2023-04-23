@@ -1,5 +1,5 @@
 name=Eternity Snare
-image=https://magiccards.info/scans/en/ts/61.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa167147-68ca-49af-98d3-538474ea1158.jpg?1593091646
 value=1.250
 removal=3
 rarity=C

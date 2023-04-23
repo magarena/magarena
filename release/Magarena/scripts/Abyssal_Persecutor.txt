@@ -1,5 +1,5 @@
 name=Abyssal Persecutor
-image=https://magiccards.info/scans/en/ima/78.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f2b9f27-459c-4585-9051-b83ffe053a74.jpg?1562852094
 image_updated=2017-04-12
 value=4.288
 rarity=R

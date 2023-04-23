@@ -1,5 +1,5 @@
 name=Vug Lizard
-image=https://magiccards.info/scans/en/us/227.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39bbb1f6-f3c4-4e11-bb71-91ea31797d1e.jpg?1562907072
 value=2.850
 rarity=U
 type=Creature

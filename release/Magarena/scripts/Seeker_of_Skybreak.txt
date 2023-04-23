@@ -1,5 +1,5 @@
 name=Seeker of Skybreak
-image=https://magiccards.info/scans/en/7e/268.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1f20175-8bfa-417a-912b-d6d472f091ab.jpg?1562248247
 value=4.169
 rarity=C
 type=Creature

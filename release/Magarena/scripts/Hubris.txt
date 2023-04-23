@@ -1,5 +1,5 @@
 name=Hubris
-image=https://magiccards.info/scans/en/jou/41.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05f5b473-edad-43a9-b4e7-b6d3fc877cf2.jpg?1593095462
 value=3.173
 rarity=C
 type=Instant

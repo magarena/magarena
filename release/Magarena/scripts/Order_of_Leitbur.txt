@@ -1,5 +1,5 @@
 name=Order of Leitbur
-image=https://magiccards.info/scans/en/fe/165.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/756c46be-7c05-4004-8a2e-d8a20c28e5cd.jpg?1559592318
 value=4.170
 rarity=C
 type=Creature

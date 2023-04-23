@@ -1,5 +1,5 @@
 name=Righteous Cause
-image=https://magiccards.info/scans/en/cmd/29.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc632184-b330-42d8-808d-17a94b08c535.jpg?1592672426
 value=3.431
 rarity=U
 type=Enchantment

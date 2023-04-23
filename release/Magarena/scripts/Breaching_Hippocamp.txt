@@ -1,5 +1,5 @@
 name=Breaching Hippocamp
-image=https://magiccards.info/scans/en/ths/43.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8841c01e-015e-4541-942a-f8859dd03fea.jpg?1562820994
 value=3.432
 rarity=C
 type=Creature

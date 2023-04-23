@@ -1,5 +1,5 @@
 name=Barrage of Expendables
-image=https://magiccards.info/scans/en/m14/127.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b94ff00-0821-4743-b693-2ba310466306.jpg?1600701880
 value=3.450
 rarity=U
 type=Enchantment

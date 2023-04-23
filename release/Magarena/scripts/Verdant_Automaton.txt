@@ -1,5 +1,5 @@
 name=Verdant Automaton
-image=https://magiccards.info/scans/en/aer/180.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52c66c5a-0b1b-4936-9e07-2d169f16c1a6.jpg?1576382462
 value=2.500
 rarity=C
 type=Artifact,Creature

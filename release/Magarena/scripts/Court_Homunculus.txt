@@ -1,5 +1,5 @@
 name=Court Homunculus
-image=https://magiccards.info/scans/en/mm2/13.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a61aded-0007-48fb-b1d6-1c69a8703400.jpg?1562262640
 value=3.467
 rarity=C
 type=Artifact,Creature

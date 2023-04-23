@@ -1,5 +1,5 @@
 name=Sedraxis Specter
-image=https://magiccards.info/scans/en/mm3/181.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89a0fe75-cfaf-483e-8412-9ffb5d96ae25.jpg?1673149115
 image_updated=2017-08-08
 value=4.117
 rarity=U

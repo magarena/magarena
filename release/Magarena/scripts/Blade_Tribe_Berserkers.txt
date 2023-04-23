@@ -1,5 +1,5 @@
 name=Blade-Tribe Berserkers
-image=https://magiccards.info/scans/en/som/84.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acd124bb-1ed1-469c-8527-d7261ea720b9.jpg?1562821639
 value=2.946
 rarity=C
 type=Creature

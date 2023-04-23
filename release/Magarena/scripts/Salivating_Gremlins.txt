@@ -1,5 +1,5 @@
 name=Salivating Gremlins
-image=https://magiccards.info/scans/en/kld/129.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cbec0d9-42b4-4aff-8d55-0721c8911de3.jpg?1599706695
 image_updated=2016-10-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Crimson Mage
-image=https://magiccards.info/scans/en/a25/127.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52f544fa-170f-4da4-bd28-72f713a045ba.jpg?1562435833
 image_updated=2018-04-27
 value=3.636
 rarity=C

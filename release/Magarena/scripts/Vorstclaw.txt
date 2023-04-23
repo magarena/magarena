@@ -1,5 +1,5 @@
 name=Vorstclaw
-image=https://magiccards.info/scans/en/avr/201.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79719ed0-468d-4946-8dfc-fb7e2b2e305e.jpg?1592517445
 value=3.339
 rarity=U
 type=Creature

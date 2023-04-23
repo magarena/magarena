@@ -1,5 +1,5 @@
 name=Warmth
-image=https://magiccards.info/scans/en/6e/52.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cebd9062-a702-4f30-bba4-c2531e5ca5cd.jpg?1562822958
 value=3.450
 rarity=U
 type=Enchantment

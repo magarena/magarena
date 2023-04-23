@@ -1,5 +1,5 @@
 name=Zodiac Goat
-image=https://magiccards.info/scans/en/p3k/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52510462-2802-4e16-87d4-da376ee2e3be.jpg?1562256096
 value=3.595
 rarity=C
 type=Creature

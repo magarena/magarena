@@ -1,5 +1,5 @@
 name=Stensia Banquet
-image=https://magiccards.info/scans/en/emn/144.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/828db19a-ca0d-4b82-a4b6-451125865093.jpg?1576384688
 image_updated=2016-09-05
 value=2.500
 rarity=C

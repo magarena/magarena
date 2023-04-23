@@ -1,5 +1,5 @@
 name=Amulet of Safekeeping
-image=https://magiccards.info/scans/en/m19/226.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d45ac8dc-281f-4257-9658-80af65a0295b.jpg?1562304406
 value=2.500
 rarity=R
 type=Artifact

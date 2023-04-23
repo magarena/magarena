@@ -1,5 +1,5 @@
 name=Talruum Champion
-image=https://magiccards.info/scans/en/vi/97.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33730a07-754c-4606-bfac-d73454af9567.jpg?1562277432
 value=3.367
 rarity=C
 type=Creature

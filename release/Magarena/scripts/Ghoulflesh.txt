@@ -1,5 +1,5 @@
 name=Ghoulflesh
-image=https://magiccards.info/scans/en/avr/103.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2eed3d1b-3142-437c-99e9-85ba76e23e6d.jpg?1592708872
 value=1.484
 removal=1
 rarity=C

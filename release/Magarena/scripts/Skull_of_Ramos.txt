@@ -1,5 +1,5 @@
 name=Skull of Ramos
-image=https://magiccards.info/scans/en/mm/312.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f071957c-9bea-4d00-9ffd-30f98d57b8d2.jpg?1562383983
 value=2.778
 rarity=R
 type=Artifact

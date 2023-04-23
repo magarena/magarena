@@ -1,5 +1,5 @@
 name=Zhalfirin Void
-image=https://magiccards.info/scans/en/dom/249.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d481d871-d1e3-439b-bfd5-5b2212f9b0c8.jpg?1631590590
 value=2.500
 rarity=U
 type=Land

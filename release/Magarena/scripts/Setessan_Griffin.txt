@@ -1,5 +1,5 @@
 name=Setessan Griffin
-image=https://magiccards.info/scans/en/ths/30.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35d2ae77-b16c-4a01-84ce-5c78be5a54d8.jpg?1562816585
 value=2.227
 rarity=C
 type=Creature

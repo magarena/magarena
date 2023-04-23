@@ -1,5 +1,5 @@
 name=Irradiate
-image=https://magiccards.info/scans/en/mi/67.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e0460cf-ff87-4cf8-89b5-a8b9fb7322e0.jpg?1562148643
 value=2.714
 rarity=C
 type=Instant

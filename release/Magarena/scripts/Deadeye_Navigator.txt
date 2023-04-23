@@ -1,5 +1,5 @@
 name=Deadeye Navigator
-image=https://magiccards.info/scans/en/mm3/36.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f26a79b9-9f09-476e-b914-cade929dd852.jpg?1593813028
 image_updated=2017-08-08
 value=4.039
 rarity=R

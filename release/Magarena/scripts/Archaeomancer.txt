@@ -1,5 +1,5 @@
 name=Archaeomancer
-image=https://magiccards.info/scans/en/m13/41.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc258713-6ce3-44e0-9b4b-8fa7d1d093a1.jpg?1547516110
 value=4.000
 rarity=C
 type=Creature

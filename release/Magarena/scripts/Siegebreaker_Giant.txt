@@ -1,5 +1,5 @@
 name=Siegebreaker Giant
-image=https://magiccards.info/scans/en/m19/157.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ede2b911-8eec-4993-ab1c-59b55dfb11b4.jpg?1562304872
 value=2.500
 rarity=U
 type=Creature

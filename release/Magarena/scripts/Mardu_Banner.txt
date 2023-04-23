@@ -1,5 +1,5 @@
 name=Mardu Banner
-image=https://magiccards.info/scans/en/ktk/224.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe10c56d-a8e1-495d-a03a-0b920b44182f.jpg?1562796606
 value=2.000
 rarity=C
 type=Artifact

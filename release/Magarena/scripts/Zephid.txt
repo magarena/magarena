@@ -1,5 +1,5 @@
 name=Zephid
-image=https://magiccards.info/scans/en/us/113.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0317fff-dbad-4c47-a191-0369d81cdda2.jpg?1562942285
 value=3.244
 rarity=R
 type=Creature

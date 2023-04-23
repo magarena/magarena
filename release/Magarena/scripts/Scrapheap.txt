@@ -1,5 +1,5 @@
 name=Scrapheap
-image=https://magiccards.info/scans/en/ul/132.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14aa4474-96a0-4c1d-a09d-73b9c1073b00.jpg?1562862324
 value=2.864
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Weakstone
-image=https://magiccards.info/scans/en/aq/43.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/5029bc71-29bf-47cf-a64b-7ab3d9af39ca.jpg?1562913804
 value=2.167
 rarity=U
 type=Artifact

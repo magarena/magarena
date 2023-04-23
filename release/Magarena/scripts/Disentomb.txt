@@ -1,5 +1,5 @@
 name=Disentomb
-image=https://magiccards.info/scans/en/m13/89.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7debd8f7-2f34-4fdd-8eb6-fa8f9d2a60e8.jpg?1592518332
 value=2.819
 rarity=C
 type=Sorcery

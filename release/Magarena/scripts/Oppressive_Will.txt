@@ -1,5 +1,5 @@
 name=Oppressive Will
-image=https://magiccards.info/scans/en/sok/50.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abcb5e75-c7a1-41de-a952-05aefb115270.jpg?1562495576
 value=2.079
 rarity=C
 type=Instant

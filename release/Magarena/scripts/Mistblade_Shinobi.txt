@@ -1,5 +1,5 @@
 name=Mistblade Shinobi
-image=https://magiccards.info/scans/en/pc2/20.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f333193b-a95a-43dc-b50a-58412a33c8b6.jpg?1562940691
 value=4.267
 rarity=C
 type=Creature

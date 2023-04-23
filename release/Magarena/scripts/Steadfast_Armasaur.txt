@@ -1,5 +1,5 @@
 name=Steadfast Armasaur
-image=https://magiccards.info/scans/en/xln/39.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/197934d5-726c-4cd3-a934-3d6449a5a56e.jpg?1562551405
 value=2.500
 rarity=U
 type=Creature

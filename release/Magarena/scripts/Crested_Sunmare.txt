@@ -1,5 +1,5 @@
 name=Crested Sunmare
-image=https://magiccards.info/scans/en/hou/6.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/732fa4c9-11da-4bdb-96af-aa37c74be25f.jpg?1562803341
 value=2.500
 rarity=M
 type=Creature

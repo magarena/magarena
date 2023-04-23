@@ -1,5 +1,5 @@
 name=Skittering Skirge
-image=https://magiccards.info/scans/en/us/158.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93aba9d5-5f96-4aba-8248-74398b8bfe9d.jpg?1562926231
 value=3.892
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Eland Umbra
-image=https://magiccards.info/scans/en/roe/19.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3a2ec16-bee4-4dfd-81cb-cb81b017170c.jpg?1562710214
 value=3.055
 rarity=C
 type=Enchantment

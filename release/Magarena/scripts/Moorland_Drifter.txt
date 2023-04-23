@@ -1,5 +1,5 @@
 name=Moorland Drifter
-image=https://magiccards.info/scans/en/soi/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5839942c-0ad1-4f77-97a0-142b8ef2266c.jpg?1576383820
 value=2.500
 rarity=C
 type=Creature

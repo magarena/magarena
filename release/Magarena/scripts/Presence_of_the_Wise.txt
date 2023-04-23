@@ -1,5 +1,5 @@
 name=Presence of the Wise
-image=https://magiccards.info/scans/en/sok/23.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6aedb5a-48f5-47db-9469-14075e2b9269.jpg?1562497013
 value=2.065
 rarity=U
 type=Sorcery

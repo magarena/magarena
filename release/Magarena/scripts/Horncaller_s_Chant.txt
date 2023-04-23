@@ -1,5 +1,5 @@
 name=Horncaller's Chant
-image=https://magiccards.info/scans/en/rtr/128.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b8d33ed-9ca2-41d1-ba35-fdeb5b88ad44.jpg?1562788622
 value=2.271
 rarity=C
 type=Sorcery

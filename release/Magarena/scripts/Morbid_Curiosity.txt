@@ -1,5 +1,5 @@
 name=Morbid Curiosity
-image=https://magiccards.info/scans/en/kld/94.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03898f46-a26c-4765-8f1e-ea976fc53d7e.jpg?1562895690
 image_updated=2016-10-05
 value=2.500
 rarity=U

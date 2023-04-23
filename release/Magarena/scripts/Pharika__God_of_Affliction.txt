@@ -1,5 +1,5 @@
 name=Pharika, God of Affliction
-image=https://magiccards.info/scans/en/jou/154.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75ec8548-5790-4eac-8780-cdd126438192.jpg?1593096444
 value=3.373
 rarity=M
 type=Legendary,Enchantment,Creature

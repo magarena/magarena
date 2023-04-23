@@ -1,5 +1,5 @@
 name=Earth Rift
-image=https://magiccards.info/scans/en/od/189.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2e10742-77c9-4f91-81b2-37b2ac910f09.jpg?1562937438
 value=1.987
 rarity=C
 type=Sorcery

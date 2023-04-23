@@ -1,5 +1,5 @@
 name=Moss Kami
-image=https://magiccards.info/scans/en/chk/228.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a437cde4-c40b-40a3-bc19-e461c98186dc.jpg?1562763424
 value=2.859
 rarity=C
 type=Creature

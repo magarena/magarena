@@ -1,5 +1,5 @@
 name=Instill Infection
-image=https://magiccards.info/scans/en/mm2/85.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7a14b58-e0d9-4203-a9da-ad8e997a7936.jpg?1562265741
 value=1.572
 removal=1
 rarity=C

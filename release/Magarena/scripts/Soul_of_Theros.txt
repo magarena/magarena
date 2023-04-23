@@ -1,5 +1,5 @@
 name=Soul of Theros
-image=https://magiccards.info/scans/en/m15/34.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63e391d3-cf19-4f73-9d39-22587e0f3c0d.jpg?1562788050
 value=4.000
 rarity=M
 type=Creature

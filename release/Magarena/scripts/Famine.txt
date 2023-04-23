@@ -1,5 +1,5 @@
 name=Famine
-image=https://magiccards.info/scans/en/p3k/75.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c489f6f-d661-4c3d-a733-0f1ce9ef0d0f.jpg?1562926521
 value=3.182
 rarity=U
 type=Sorcery

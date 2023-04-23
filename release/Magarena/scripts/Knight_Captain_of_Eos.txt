@@ -1,5 +1,5 @@
 name=Knight-Captain of Eos
-image=https://magiccards.info/scans/en/ala/17.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02ef25ce-4d6a-45ff-8b6b-fd5c29307099.jpg?1562700645
 value=3.095
 rarity=R
 type=Creature

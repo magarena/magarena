@@ -1,5 +1,5 @@
 name=Spike Feeder
-image=https://magiccards.info/scans/en/cmd/172.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/090a5f1f-9a1a-4e93-8c33-a0204c2917d5.jpg?1562428174
 value=3.323
 rarity=U
 type=Creature

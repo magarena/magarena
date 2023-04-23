@@ -1,5 +1,5 @@
 name=Nucklavee
-image=https://magiccards.info/scans/en/cmd/214.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd706176-477a-49a9-bf47-0d10c0501227.jpg?1592761663
 value=3.647
 rarity=U
 type=Creature

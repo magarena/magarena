@@ -1,5 +1,5 @@
 name=Thallid
-image=https://magiccards.info/scans/en/mma/167.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69d20d28-76e9-4e6e-95c3-f88c51dfabfd.jpg?1561967373
 value=4.014
 rarity=C
 type=Creature

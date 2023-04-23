@@ -1,5 +1,5 @@
 name=Chronic Flooding
-image=https://magiccards.info/scans/en/rtr/32.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a757425-3cf2-4aca-b415-5ec2d5f753fe.jpg?1562783330
 value=2.661
 rarity=C
 type=Enchantment

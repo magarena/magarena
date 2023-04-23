@@ -1,5 +1,5 @@
 name=Champion Lancer
-image=https://magiccards.info/scans/en/st/11.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed5dc388-bf84-46cd-a05e-1fe5fe2a666c.jpg?1562951419
 value=2.870
 rarity=R
 type=Creature

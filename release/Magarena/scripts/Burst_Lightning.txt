@@ -1,5 +1,5 @@
 name=Burst Lightning
-image=https://magiccards.info/scans/en/mm2/109.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2e6428f-5c78-45f7-9bf9-eb4de63325d5.jpg?1562269259
 value=3.923
 removal=3
 rarity=C

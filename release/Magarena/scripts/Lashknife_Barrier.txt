@@ -1,5 +1,5 @@
 name=Lashknife Barrier
-image=https://magiccards.info/scans/en/ps/9.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/2485c10d-de02-4be9-8119-afb2296e3317.jpg?1562902725
 value=3.708
 rarity=U
 type=Enchantment

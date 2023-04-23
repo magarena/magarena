@@ -1,5 +1,5 @@
 name=Pincer Spider
-image=https://magiccards.info/scans/en/in/201.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23271658-19ae-420d-beeb-4bed4fdbb891.jpg?1562902046
 value=2.631
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kaervek the Merciless
-image=https://magiccards.info/scans/en/ts/242.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9b8259d-0bfa-4327-ac91-157c0b9e7dfb.jpg?1673148822
 image_updated=2016-12-21
 value=4.000
 rarity=R

@@ -1,5 +1,5 @@
 name=Lucent Liminid
-image=https://magiccards.info/scans/en/fut/24.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd700719-2f65-4fd5-b3aa-3e9402560c79.jpg?1562936290
 value=3.123
 rarity=C
 type=Enchantment,Creature

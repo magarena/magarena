@@ -1,5 +1,5 @@
 name=Moment of Heroism
-image=https://magiccards.info/scans/en/cns/74.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b17da4d0-f9fd-43af-85fc-ede9fa3962bf.jpg?1600697027
 value=3.875
 rarity=C
 type=Instant

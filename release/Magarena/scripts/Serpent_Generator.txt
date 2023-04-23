@@ -1,5 +1,5 @@
 name=Serpent Generator
-image=https://magiccards.info/scans/en/5e/397.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e2ee41c-5592-42bd-8db2-92b3233b1d61.jpg?1559592384
 value=3.094
 rarity=R
 type=Artifact

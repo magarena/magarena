@@ -1,5 +1,5 @@
 name=Foothill Guide
-image=https://magiccards.info/scans/en/on/29.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/409adb7b-6dcb-4e7f-a5dd-c0adf12140a4.jpg?1562910177
 value=3.015
 rarity=C
 type=Creature

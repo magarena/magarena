@@ -1,5 +1,5 @@
 name=Worldslayer
-image=https://magiccards.info/scans/en/m12/222.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db6c6b15-40f3-4556-978f-878bedb13762.jpg?1562662263
 value=3.841
 rarity=R
 type=Artifact

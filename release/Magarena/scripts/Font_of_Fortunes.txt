@@ -1,5 +1,5 @@
 name=Font of Fortunes
-image=https://magiccards.info/scans/en/jou/38.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25de3481-9b0d-4747-a97b-171b6aa41073.jpg?1593095437
 value=3.674
 rarity=C
 type=Enchantment

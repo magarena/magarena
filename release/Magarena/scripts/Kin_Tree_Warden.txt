@@ -1,5 +1,5 @@
 name=Kin-Tree Warden
-image=https://magiccards.info/scans/en/ktk/139.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfddafbc-590b-4610-894a-b91335a60528.jpg?1562794779
 value=2.000
 rarity=C
 type=Creature

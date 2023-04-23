@@ -1,5 +1,5 @@
 name=River Kaijin
-image=https://magiccards.info/scans/en/chk/83.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e403cad6-84b0-4a6b-a2d8-cb572ec09932.jpg?1562765181
 value=2.000
 rarity=C
 type=Creature

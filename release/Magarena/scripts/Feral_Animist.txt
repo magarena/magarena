@@ -1,5 +1,5 @@
 name=Feral Animist
-image=https://magiccards.info/scans/en/dgm/70.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/108a9ef2-c74a-450b-8148-4fdf9f09843f.jpg?1562898235
 value=3.298
 rarity=U
 type=Creature

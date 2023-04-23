@@ -1,5 +1,5 @@
 name=Swashbuckling
-image=https://magiccards.info/scans/en/xln/167.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01ed59b1-968b-4297-9e98-42d940f9478c.jpg?1562549791
 value=2.500
 rarity=C
 type=Enchantment

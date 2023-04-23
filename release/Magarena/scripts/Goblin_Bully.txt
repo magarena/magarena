@@ -1,5 +1,5 @@
 name=Goblin Bully
-image=https://magiccards.info/scans/en/po/136.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f22a45e-7352-4f5b-b298-eca4375ea28c.jpg?1562921172
 value=2.182
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Burning Anger
-image=https://magiccards.info/scans/en/m15/133.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d5a8f92-4418-4993-9f56-0b2f5069597c.jpg?1608910099
 value=3.357
 rarity=R
 type=Enchantment

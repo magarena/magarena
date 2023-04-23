@@ -1,5 +1,5 @@
 name=Celestial Sword
-image=https://magiccards.info/scans/en/ia/289.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf8b3db8-5e90-4086-a934-cd850b49e249.jpg?1562940200
 value=2.292
 rarity=R
 type=Artifact

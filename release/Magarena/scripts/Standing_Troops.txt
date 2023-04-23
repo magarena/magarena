@@ -1,5 +1,5 @@
 name=Standing Troops
-image=https://magiccards.info/scans/en/8e/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75091277-99fe-428b-95bd-5cba9e0146ef.jpg?1562199037
 value=2.636
 rarity=C
 type=Creature

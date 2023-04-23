@@ -1,5 +1,5 @@
 name=Dauntless Aven
-image=https://magiccards.info/scans/en/hou/7.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01e6320c-6f8b-4582-ad11-9b868bff08a1.jpg?1562787286
 value=2.500
 rarity=C
 type=Creature

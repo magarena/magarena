@@ -1,5 +1,5 @@
 name=Rootwater Commando
-image=https://magiccards.info/scans/en/10e/102.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1da47bd4-58b6-4ef3-bd42-caf947e38645.jpg?1562544657
 value=3.096
 rarity=C
 type=Creature

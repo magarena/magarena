@@ -1,5 +1,5 @@
 name=Thassa, God of the Sea
-image=https://magiccards.info/scans/en/ths/66.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6876c7a-8bbe-484e-b733-70229fa336cd.jpg?1562832605
 value=3.816
 rarity=M
 type=Legendary,Enchantment,Creature

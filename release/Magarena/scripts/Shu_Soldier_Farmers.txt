@@ -1,5 +1,5 @@
 name=Shu Soldier-Farmers
-image=https://magiccards.info/scans/en/p3k/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53100324-b42f-4cd1-a5db-8a3b292d2da7.jpg?1562912313
 value=2.042
 rarity=U
 type=Creature

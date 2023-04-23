@@ -1,5 +1,5 @@
 name=Gruul War Plow
-image=https://magiccards.info/scans/en/gp/151.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92efc66e-4112-413b-ae7c-85f270abc4ff.jpg?1593272930
 value=3.880
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Pheres-Band Warchief
-image=https://magiccards.info/scans/en/jou/135.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/8456730a-607c-44c0-b18e-0df8f35b0634.jpg?1593096278
 value=3.724
 rarity=R
 type=Creature

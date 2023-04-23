@@ -1,5 +1,5 @@
 name=Vampire Warlord
-image=https://magiccards.info/scans/en/m14/120.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e07929b-450c-45b0-85e6-512ad280a122.jpg?1562831465
 value=1.694
 rarity=U
 type=Creature

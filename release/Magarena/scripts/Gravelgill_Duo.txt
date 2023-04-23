@@ -1,5 +1,5 @@
 name=Gravelgill Duo
-image=https://magiccards.info/scans/en/shm/165.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2fd4959-bfff-46dc-b568-b6d69ef8eac9.jpg?1562838094
 value=2.878
 rarity=C
 type=Creature

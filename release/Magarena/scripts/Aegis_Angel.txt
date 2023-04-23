@@ -1,5 +1,5 @@
 name=Aegis Angel
-image=https://magiccards.info/scans/en/ori/273.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d27e65f-6d55-420e-a843-16097b50f7a2.jpg?1592765218
 image_updated=2010-09-10
 value=3.438
 rarity=R

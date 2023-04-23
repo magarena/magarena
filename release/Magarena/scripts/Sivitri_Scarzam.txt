@@ -1,5 +1,5 @@
 name=Sivitri Scarzam
-image=https://magiccards.info/scans/en/lg/298.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1575410c-a525-4326-9209-917d2d712559.jpg?1562899496
 value=1.833
 rarity=U
 type=Legendary,Creature

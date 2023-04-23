@@ -1,5 +1,5 @@
 name=Stamina
-image=https://magiccards.info/scans/en/mm/277.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed8abca3-6e31-49cd-b9bf-86ad68e1cc83.jpg?1562383973
 value=2.769
 rarity=U
 type=Enchantment

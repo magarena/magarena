@@ -1,5 +1,5 @@
 name=Forced Fruition
-image=https://magiccards.info/scans/en/lw/66.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7ea1c6e-c0af-40b0-b492-8d71f496903e.jpg?1562374956
 value=4.127
 rarity=R
 type=Enchantment

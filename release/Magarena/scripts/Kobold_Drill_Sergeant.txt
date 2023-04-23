@@ -1,5 +1,5 @@
 name=Kobold Drill Sergeant
-image=https://magiccards.info/scans/en/lg/152.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e918e64-66dd-4037-ba1a-1c569a9907f7.jpg?1562904800
 value=2.892
 rarity=U
 type=Creature

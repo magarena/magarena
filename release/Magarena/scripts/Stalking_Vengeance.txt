@@ -1,5 +1,5 @@
 name=Stalking Vengeance
-image=https://magiccards.info/scans/en/c16/134.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4ab472c-22b6-473e-b7b0-df2454eb930c.jpg?1673484422
 image_updated=2017-08-17
 value=3.708
 rarity=R

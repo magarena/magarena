@@ -1,5 +1,5 @@
 name=Ghosts of the Innocent
-image=https://magiccards.info/scans/en/rav/20.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5b10c5f-261f-4301-b675-d1f52b859360.jpg?1598913718
 value=2.730
 rarity=R
 type=Creature

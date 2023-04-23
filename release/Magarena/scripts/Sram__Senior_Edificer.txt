@@ -1,5 +1,5 @@
 name=Sram, Senior Edificer
-image=https://magiccards.info/scans/en/aer/23.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93887cc3-888e-479f-9cc2-a0b908e364a5.jpg?1651655659
 value=2.500
 rarity=R
 type=Legendary,Creature

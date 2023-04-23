@@ -1,5 +1,5 @@
 name=Moonglove Changeling
-image=https://magiccards.info/scans/en/mt/67.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/6955348b-70e9-49c3-9343-9becf977abe8.jpg?1562879033
 value=2.958
 rarity=C
 type=Creature

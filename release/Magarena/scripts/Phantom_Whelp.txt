@@ -1,5 +1,5 @@
 name=Phantom Whelp
-image=https://magiccards.info/scans/en/od/93.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9216e73b-56ef-48b9-a6a1-b370fb0d97c1.jpg?1562922098
 value=1.417
 rarity=C
 type=Creature

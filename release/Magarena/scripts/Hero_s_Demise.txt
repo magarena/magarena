@@ -1,5 +1,5 @@
 name=Hero's Demise
-image=https://magiccards.info/scans/en/bok/68.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d22dd514-814f-4a62-926d-fef311896c02.jpg?1562879959
 value=2.587
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Bestial Fury
-image=https://magiccards.info/scans/en/ai/100.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4820e94-0dd8-42c1-b606-331442b76111.jpg?1559592297
 value=3.871
 rarity=C
 type=Enchantment

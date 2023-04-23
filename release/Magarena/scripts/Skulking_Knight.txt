@@ -1,5 +1,5 @@
 name=Skulking Knight
-image=https://magiccards.info/scans/en/ts/130.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7f7927b-64ae-4448-9540-8d7bbe88c9cc.jpg?1562930394
 value=2.724
 rarity=C
 type=Creature

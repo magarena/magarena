@@ -1,5 +1,5 @@
 name=Hearth Charm
-image=https://magiccards.info/scans/en/vi/82.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/caa9ac66-51b7-4aec-92dc-0f0656b0f7fe.jpg?1562278639
 value=4.214
 rarity=C
 type=Instant

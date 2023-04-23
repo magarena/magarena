@@ -1,5 +1,5 @@
 name=Thrashing Mossdog
-image=https://magiccards.info/scans/en/dgm/50.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffd0d63a-d947-4ce4-8e34-5c1521955b18.jpg?1562943251
 value=3.375
 rarity=C
 type=Creature

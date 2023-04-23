@@ -1,5 +1,5 @@
 name=Traveler's Amulet
-image=https://magiccards.info/scans/en/rix/184.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e93621a8-d0f4-436e-9e4f-cccc0447eae8.jpg?1673149445
 image_updated=2018-03-12
 value=3.109
 rarity=C

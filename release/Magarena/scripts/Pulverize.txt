@@ -1,5 +1,5 @@
 name=Pulverize
-image=https://magiccards.info/scans/en/mm/207.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afbbc44d-60fb-45fc-a588-14aab0340134.jpg?1562382545
 value=4.500
 rarity=R
 type=Sorcery

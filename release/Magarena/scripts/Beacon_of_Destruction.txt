@@ -1,5 +1,5 @@
 name=Beacon of Destruction
-image=https://magiccards.info/scans/en/10e/189.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1ece7e7d-615b-42da-8bab-80f24ad7c4d8.jpg?1592761718
 value=4.172
 removal=4
 rarity=R

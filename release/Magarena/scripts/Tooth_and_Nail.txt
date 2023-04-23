@@ -1,5 +1,5 @@
 name=Tooth and Nail
-image=https://magiccards.info/scans/en/mma/170.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/403f6e97-eb7a-470a-8673-4997256e79f0.jpg?1561966883
 value=4.198
 rarity=R
 type=Sorcery

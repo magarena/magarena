@@ -1,5 +1,5 @@
 name=Organ Grinder
-image=https://magiccards.info/scans/en/tr/75.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6233d4c3-9407-41b0-92a9-5f90dfd6a584.jpg?1562630035
 value=3.739
 rarity=C
 type=Creature

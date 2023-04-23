@@ -1,5 +1,5 @@
 name=Sea Snidd
-image=https://magiccards.info/scans/en/ps/31.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca11015e-200b-488c-8bf5-662dcc03cd2d.jpg?1562937660
 value=2.444
 rarity=C
 type=Creature

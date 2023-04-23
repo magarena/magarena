@@ -1,5 +1,5 @@
 name=Prairie Stream
-image=https://magiccards.info/scans/en/bfz/241.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f1e7a15-c067-4093-bfdb-a6b4efe7c5b9.jpg?1682210601
 image_updated=2015-11-08
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Tidal Influence
-image=https://magiccards.info/scans/en/fe/57.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2192c7b-ef6f-4ff6-9017-b1a125340517.jpg?1562928132
 value=2.552
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Rite of Replication
-image=https://magiccards.info/scans/en/c14/122.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/7935570c-f7e0-4add-864a-4c804b26555e.jpg?1625976420
 image_updated=2016-02-29
 value=4.115
 rarity=R

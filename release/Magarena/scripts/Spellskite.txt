@@ -1,5 +1,5 @@
 name=Spellskite
-image=https://magiccards.info/scans/en/mm2/230.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72204934-f5aa-4559-8f7e-7b0b223580d0.jpg?1674142724
 value=4.252
 rarity=R
 type=Artifact,Creature

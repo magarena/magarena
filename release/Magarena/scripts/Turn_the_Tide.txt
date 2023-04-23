@@ -1,5 +1,5 @@
 name=Turn the Tide
-image=https://magiccards.info/scans/en/cns/110.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8007dd67-bde8-4c61-ac8e-a25abdf99467.jpg?1562865904
 value=2.667
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=River Sneak
-image=https://magiccards.info/scans/en/xln/70.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2be32ffc-dc1d-4bb2-926f-51d110392b06.jpg?1562552630
 value=2.500
 rarity=U
 type=Creature

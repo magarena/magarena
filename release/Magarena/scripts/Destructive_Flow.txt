@@ -1,5 +1,5 @@
 name=Destructive Flow
-image=https://magiccards.info/scans/en/ps/102.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7db86e34-c3ec-4a29-8779-81350a985644.jpg?1562921466
 value=3.282
 rarity=R
 type=Enchantment

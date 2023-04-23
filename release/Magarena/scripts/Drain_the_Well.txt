@@ -1,5 +1,5 @@
 name=Drain the Well
-image=https://magiccards.info/scans/en/eve/121.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28ebd1f5-55ee-48c9-a8df-85c8c4bf3473.jpg?1562903680
 value=2.565
 rarity=C
 type=Sorcery

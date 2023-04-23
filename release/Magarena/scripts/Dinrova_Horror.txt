@@ -1,5 +1,5 @@
 name=Dinrova Horror
-image=https://magiccards.info/scans/en/mm3/160.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7da93bf0-2075-4e36-b69b-3db3d4288e7a.jpg?1601080414
 image_updated=2017-08-08
 value=3.242
 rarity=C

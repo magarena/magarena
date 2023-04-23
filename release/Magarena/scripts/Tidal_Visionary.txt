@@ -1,5 +1,5 @@
 name=Tidal Visionary
-image=https://magiccards.info/scans/en/in/80.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a72a3051-7f46-4b6b-b4fb-0f170d9687ab.jpg?1562928768
 value=3.414
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wall of Tears
-image=https://magiccards.info/scans/en/sh/50.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4638d815-fb86-490c-84d6-777a1c6131d6.jpg?1587857364
 value=4.408
 rarity=U
 type=Creature

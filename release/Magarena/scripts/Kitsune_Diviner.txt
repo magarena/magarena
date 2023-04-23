@@ -1,5 +1,5 @@
 name=Kitsune Diviner
-image=https://magiccards.info/scans/en/chk/26.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c50fb007-d1fd-4b61-91c3-4863e40472ed.jpg?1562764195
 value=1.489
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Looming Shade
-image=https://magiccards.info/scans/en/m10/103.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84a6703c-38d4-4c86-b5b0-ebfde81bb1bf.jpg?1561986648
 value=3.062
 rarity=C
 type=Creature

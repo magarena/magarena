@@ -1,5 +1,5 @@
 name=Roaring Slagwurm
-image=https://magiccards.info/scans/en/ds/83.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/0338c6fe-54f6-4be0-a70d-b15e5403d842.jpg?1562635179
 value=3.198
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Ixidor's Will
-image=https://magiccards.info/scans/en/on/90.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b713448-853a-41ee-a302-963e9c1c1c65.jpg?1562901464
 value=2.022
 rarity=C
 type=Instant

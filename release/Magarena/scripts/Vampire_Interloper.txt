@@ -1,5 +1,5 @@
 name=Vampire Interloper
-image=https://magiccards.info/scans/en/isd/123.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3e2ea59-36f1-4e95-bfe8-7008b085194f.jpg?1634350330
 value=3.142
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mad Prophet
-image=https://magiccards.info/scans/en/soi/171.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89a62145-8dad-4385-9c6d-8cf8bfdad681.jpg?1547517306
 image_updated=2010-09-10
 value=3.094
 rarity=U

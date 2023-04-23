@@ -1,5 +1,5 @@
 name=Thrashing Wumpus
-image=https://magiccards.info/scans/en/mm/166.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86bc07c6-2ba7-41f8-90ab-f9bbac86dd08.jpg?1562381841
 value=4.196
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Blood Baron of Vizkopa
-image=https://magiccards.info/scans/en/ima/195.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56955e63-db6f-4f1d-b3c4-dd268c902653.jpg?1562848962
 image_updated=2017-04-12
 value=3.854
 rarity=R

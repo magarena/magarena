@@ -1,5 +1,5 @@
 name=Kraul Warrior
-image=https://magiccards.info/scans/en/dgm/42.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e57df40-d73c-46fa-beef-014cc0df34a5.jpg?1562907515
 value=2.810
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Borderland Minotaur
-image=https://magiccards.info/scans/en/ths/114.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b8c80ea-7b29-4335-ba7b-3e51a5a104a9.jpg?1601077376
 value=2.821
 rarity=C
 type=Creature

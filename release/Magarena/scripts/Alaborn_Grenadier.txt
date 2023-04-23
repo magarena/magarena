@@ -1,5 +1,5 @@
 name=Alaborn Grenadier
-image=https://magiccards.info/scans/en/po2/122.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/153b7197-57a7-4e38-bd4a-4550b9d22dd8.jpg?1562900088
 value=3.108
 rarity=C
 type=Creature

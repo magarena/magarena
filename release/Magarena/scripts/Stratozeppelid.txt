@@ -1,5 +1,5 @@
 name=Stratozeppelid
-image=https://magiccards.info/scans/en/gp/36.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7ccfc49d-2a07-4088-a288-ba7be4da7bc2.jpg?1593272091
 value=2.015
 rarity=U
 type=Creature

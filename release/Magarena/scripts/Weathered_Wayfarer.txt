@@ -1,5 +1,5 @@
 name=Weathered Wayfarer
-image=https://magiccards.info/scans/en/9e/54.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09656d96-c366-49ec-b687-cad903de1385.jpg?1673147166
 value=4.295
 rarity=R
 type=Creature

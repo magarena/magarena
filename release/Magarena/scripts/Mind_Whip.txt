@@ -1,5 +1,5 @@
 name=Mind Whip
-image=https://magiccards.info/scans/en/ia/37.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f3ff5fb-4126-4a18-b540-2beaae382e59.jpg?1587911733
 value=2.919
 rarity=R
 type=Enchantment

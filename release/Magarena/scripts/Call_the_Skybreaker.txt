@@ -1,5 +1,5 @@
 name=Call the Skybreaker
-image=https://magiccards.info/scans/en/ema/214.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e52586f2-dcf2-4605-b354-3ab441a43638.jpg?1673485004
 value=3.056
 rarity=R
 type=Sorcery

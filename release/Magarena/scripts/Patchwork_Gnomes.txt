@@ -1,5 +1,5 @@
 name=Patchwork Gnomes
-image=https://magiccards.info/scans/en/od/306.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/3002ccef-5322-4f99-9fce-3b4303347240.jpg?1632159130
 value=2.636
 rarity=U
 type=Artifact,Creature

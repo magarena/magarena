@@ -1,5 +1,5 @@
 name=Serpentine Kavu
-image=https://magiccards.info/scans/en/in/211.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/699f1fe8-02c6-4d95-9231-3f8aefe603da.jpg?1562916212
 value=2.435
 rarity=C
 type=Creature

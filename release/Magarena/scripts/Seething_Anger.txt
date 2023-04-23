@@ -1,5 +1,5 @@
 name=Seething Anger
-image=https://magiccards.info/scans/en/sh/96.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/2294ef08-c27a-4bb4-bd59-434516717961.jpg?1562428651
 value=2.768
 rarity=C
 type=Sorcery

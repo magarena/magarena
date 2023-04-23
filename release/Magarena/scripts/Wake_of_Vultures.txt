@@ -1,5 +1,5 @@
 name=Wake of Vultures
-image=https://magiccards.info/scans/en/ema/115.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c23716e-453e-4686-a8dd-ca1d67ad577d.jpg?1580014432
 value=3.540
 rarity=C
 type=Creature

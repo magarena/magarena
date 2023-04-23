@@ -1,5 +1,5 @@
 name=Wall of Air
-image=https://magiccards.info/scans/en/10e/124.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40595366-8601-40e0-a070-fc218723270d.jpg?1562546726
 value=3.430
 rarity=U
 type=Creature

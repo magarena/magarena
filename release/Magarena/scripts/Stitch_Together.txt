@@ -1,5 +1,5 @@
 name=Stitch Together
-image=https://magiccards.info/scans/en/cmd/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/8423c98d-4cb6-4a70-8bf2-3ac24c025c4e.jpg?1592710740
 value=4.213
 rarity=U
 type=Sorcery

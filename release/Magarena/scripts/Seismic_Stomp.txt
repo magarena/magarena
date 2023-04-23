@@ -1,5 +1,5 @@
 name=Seismic Stomp
-image=https://magiccards.info/scans/en/ema/146.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7bb50b1-e65c-4d56-8705-f20f6fa1ca12.jpg?1580014647
 value=3.295
 rarity=C
 type=Sorcery

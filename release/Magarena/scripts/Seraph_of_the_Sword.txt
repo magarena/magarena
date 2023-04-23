@@ -1,5 +1,5 @@
 name=Seraph of the Sword
-image=https://magiccards.info/scans/en/m14/31.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9789cac-5774-4f72-82c3-18f11f9d4a62.jpg?1562835759
 value=3.600
 rarity=R
 type=Creature

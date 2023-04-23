@@ -1,5 +1,5 @@
 name=Seacoast Drake
-image=https://magiccards.info/scans/en/m14/70.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5333de10-a6d4-47ff-ab57-4edb49535739.jpg?1562829282
 value=3.670
 rarity=C
 type=Creature

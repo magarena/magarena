@@ -1,5 +1,5 @@
 name=Thundering Tanadon
-image=https://magiccards.info/scans/en/nph/122.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2fab443-0f4b-45ea-8a6d-435b93803409.jpg?1562882228
 value=3.344
 rarity=C
 type=Artifact,Creature

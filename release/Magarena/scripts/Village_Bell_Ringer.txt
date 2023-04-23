@@ -1,5 +1,5 @@
 name=Village Bell-Ringer
-image=https://magiccards.info/scans/en/isd/41.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b72b39fd-507d-432b-b5b0-5657e5ed0a47.jpg?1682208702
 value=3.722
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Rotlung Reanimator
-image=https://magiccards.info/scans/en/on/164.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87b29d1e-9c06-4ad1-8178-b3eaa212f6f1.jpg?1562927028
 value=4.254
 rarity=R
 type=Creature

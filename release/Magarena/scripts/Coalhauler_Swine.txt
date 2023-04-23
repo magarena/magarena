@@ -1,5 +1,5 @@
 name=Coalhauler Swine
-image=https://magiccards.info/scans/en/rav/119.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc001cef-3afd-4128-989f-ac99dc76b243.jpg?1598915417
 value=2.956
 rarity=C
 type=Creature

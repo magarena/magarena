@@ -1,5 +1,5 @@
 name=Rootwater Alligator
-image=https://magiccards.info/scans/en/ex/122.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a840bba-4725-45fd-885f-1b3d615dfa97.jpg?1562087814
 value=2.571
 rarity=C
 type=Creature

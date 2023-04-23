@@ -1,5 +1,5 @@
 name=Fortify
-image=https://magiccards.info/scans/en/mm2/17.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b47af529-6ba1-4900-a6f6-7647c9632e11.jpg?1619392902
 value=3.185
 rarity=C
 type=Instant

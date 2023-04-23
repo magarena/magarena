@@ -1,5 +1,5 @@
 name=Mindlash Sliver
-image=https://magiccards.info/scans/en/ts/118.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8c54575-dc1d-491c-a4f6-41f76eba2a2d.jpg?1562947635
 value=3.229
 rarity=C
 type=Creature

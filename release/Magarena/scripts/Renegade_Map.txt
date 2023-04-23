@@ -1,5 +1,5 @@
 name=Renegade Map
-image=https://magiccards.info/scans/en/aer/173.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac063445-d0e2-4015-96dc-97098433f30a.jpg?1576382404
 value=2.500
 rarity=C
 type=Artifact

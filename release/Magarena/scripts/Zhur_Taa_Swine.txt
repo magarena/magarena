@@ -1,5 +1,5 @@
 name=Zhur-Taa Swine
-image=https://magiccards.info/scans/en/gtc/210.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cef93050-2f24-4c85-a00b-796e53868ac1.jpg?1561846723
 value=3.167
 rarity=C
 type=Creature

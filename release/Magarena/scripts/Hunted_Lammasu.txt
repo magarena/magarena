@@ -1,5 +1,5 @@
 name=Hunted Lammasu
-image=https://magiccards.info/scans/en/rav/22.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea6daa57-1520-40a9-90c7-fa7283f4a687.jpg?1644879674
 value=3.424
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Pegasus Courser
-image=https://magiccards.info/scans/en/m19/32.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c04eafe-8be0-416e-a5b9-486a3b3b5984.jpg?1562300324
 image_updated=2018-08-07
 value=2.500
 rarity=C

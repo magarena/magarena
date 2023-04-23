@@ -1,5 +1,5 @@
 name=Honden of Cleansing Fire
-image=https://magiccards.info/scans/en/ema/13.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93c3a75d-7cae-4199-8e87-915ebb439b62.jpg?1580013689
 value=3.727
 rarity=U
 type=Legendary,Enchantment

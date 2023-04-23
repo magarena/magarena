@@ -1,5 +1,5 @@
 name=Harvestguard Alseids
-image=https://magiccards.info/scans/en/jou/13.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b9256e2-b59c-4997-91c1-4c565746d53d.jpg?1593095252
 value=3.087
 rarity=C
 type=Enchantment,Creature

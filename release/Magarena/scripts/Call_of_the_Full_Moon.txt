@@ -1,5 +1,5 @@
 name=Call of the Full Moon
-image=https://magiccards.info/scans/en/ori/134.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/369d837a-a19b-457c-8146-cc1766a63ec1.jpg?1562014726
 image_updated=2015-11-05
 value=2.500
 rarity=U

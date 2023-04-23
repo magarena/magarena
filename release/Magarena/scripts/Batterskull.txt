@@ -1,5 +1,5 @@
 name=Batterskull
-image=https://magiccards.info/scans/en/nph/130.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7f16fdf-a3f5-462d-a64a-789d893b6ef5.jpg?1599708720
 value=4.234
 rarity=M
 type=Artifact

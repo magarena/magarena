@@ -1,5 +1,5 @@
 name=Benalish Missionary
-image=https://magiccards.info/scans/en/wl/126.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9ac1992-6212-4f05-af16-c892dfc40643.jpg?1562804020
 value=3.014
 rarity=C
 type=Creature

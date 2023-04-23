@@ -1,5 +1,5 @@
 name=Herald of War
-image=https://magiccards.info/scans/en/avr/24.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18f7c44c-a21f-4b61-8f08-122a75accb00.jpg?1637629203
 value=3.792
 rarity=R
 type=Creature

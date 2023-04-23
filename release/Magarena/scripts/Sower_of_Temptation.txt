@@ -1,5 +1,5 @@
 name=Sower of Temptation
-image=https://magiccards.info/scans/en/lw/88.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d4a3eb3-8b28-49f7-a06c-eae26da6026b.jpg?1562897709
 value=4.449
 rarity=R
 type=Creature

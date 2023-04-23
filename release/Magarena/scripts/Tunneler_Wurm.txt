@@ -1,5 +1,5 @@
 name=Tunneler Wurm
-image=https://magiccards.info/scans/en/ju/135.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8e246c8-3b3f-47c4-8a1b-b5f2d36f0ca4.jpg?1562631943
 value=2.162
 rarity=U
 type=Creature

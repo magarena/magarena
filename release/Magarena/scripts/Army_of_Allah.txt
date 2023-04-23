@@ -1,5 +1,5 @@
 name=Army of Allah
-image=https://magiccards.info/scans/en/an/56.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d170015-b125-49a6-a15e-8fd116bbcb14.jpg?1562906251
 value=3.123
 rarity=C
 type=Instant

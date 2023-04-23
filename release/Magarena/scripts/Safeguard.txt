@@ -1,5 +1,5 @@
 name=Safeguard
-image=https://magiccards.info/scans/en/tp/251.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c8e174c-7abb-4a93-aa1d-8c2a2e815ba6.jpg?1562053270
 value=3.086
 rarity=R
 type=Enchantment

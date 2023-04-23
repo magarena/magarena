@@ -1,5 +1,5 @@
 name=Nirkana Cutthroat
-image=https://magiccards.info/scans/en/roe/119.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/341f4ea1-8101-4e2e-b824-4b0e88ea71f1.jpg?1562702693
 value=4.017
 rarity=U
 type=Creature

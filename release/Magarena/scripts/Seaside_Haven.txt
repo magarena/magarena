@@ -1,5 +1,5 @@
 name=Seaside Haven
-image=https://magiccards.info/scans/en/on/323.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c940a6b-3c5e-4ce2-92b6-63e2cb575c15.jpg?1562931946
 value=3.405
 rarity=U
 type=Land

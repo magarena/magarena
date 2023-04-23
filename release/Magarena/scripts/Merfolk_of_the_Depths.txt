@@ -1,5 +1,5 @@
 name=Merfolk of the Depths
-image=https://magiccards.info/scans/en/gtc/221.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bddb2e15-a53e-4647-a627-6c7032429fca.jpg?1561844048
 value=1.140
 rarity=U
 type=Creature

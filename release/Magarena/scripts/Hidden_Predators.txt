@@ -1,5 +1,5 @@
 name=Hidden Predators
-image=https://magiccards.info/scans/en/us/263.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27f8ee86-a576-4f40-b165-be5b4558507d.jpg?1562903481
 value=3.750
 rarity=R
 type=Enchantment

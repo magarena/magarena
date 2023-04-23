@@ -1,5 +1,5 @@
 name=Shock Troops
-image=https://magiccards.info/scans/en/8e/223.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49fe44af-5d8f-44ee-b767-2267917cf4bf.jpg?1562909975
 value=3.057
 rarity=C
 type=Creature

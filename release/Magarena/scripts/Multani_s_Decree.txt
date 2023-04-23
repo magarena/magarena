@@ -1,5 +1,5 @@
 name=Multani's Decree
-image=https://magiccards.info/scans/en/ud/114.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58b4d5c8-23fc-4fb8-99d6-bb64e66cc4db.jpg?1562443771
 value=3.983
 rarity=C
 type=Sorcery

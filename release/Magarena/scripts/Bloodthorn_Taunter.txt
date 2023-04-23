@@ -1,5 +1,5 @@
 name=Bloodthorn Taunter
-image=https://magiccards.info/scans/en/ala/94.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8769e8f6-15ad-4f1b-bb4d-848ae6b7549e.jpg?1562706248
 value=2.777
 rarity=C
 type=Creature

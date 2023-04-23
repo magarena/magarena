@@ -1,5 +1,5 @@
 name=Ethereal Whiskergill
-image=https://magiccards.info/scans/en/lw/60.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b9fa774-fb6d-4a2f-96d5-a449a423312e.jpg?1562349672
 value=2.288
 rarity=U
 type=Creature

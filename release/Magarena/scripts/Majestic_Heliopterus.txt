@@ -1,5 +1,5 @@
 name=Majestic Heliopterus
-image=https://magiccards.info/scans/en/rix/13.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a012af0-c54e-4658-8a3b-b81cc8835e1b.jpg?1555039726
 value=2.500
 rarity=U
 type=Creature

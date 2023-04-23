@@ -1,5 +1,5 @@
 name=Skittering Monstrosity
-image=https://magiccards.info/scans/en/ts/129.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb6f872f-adfa-4d29-87df-9d39fb06b5be.jpg?1619396066
 value=1.622
 rarity=U
 type=Creature

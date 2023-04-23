@@ -1,5 +1,5 @@
 name=Plated Slagwurm
-image=https://magiccards.info/scans/en/mi/127.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/941fa83a-cb61-47b1-83a7-7ce7e894c338.jpg?1562929912
 image_updated=2017-01-03
 value=4.260
 rarity=R

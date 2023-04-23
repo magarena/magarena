@@ -1,5 +1,5 @@
 name=Indulgent Tormentor
-image=https://magiccards.info/scans/en/m15/101.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af042ca9-c57d-4477-965e-182fc557ca6b.jpg?1562852980
 value=4.000
 rarity=R
 type=Creature

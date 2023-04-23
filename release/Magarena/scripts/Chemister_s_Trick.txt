@@ -1,5 +1,5 @@
 name=Chemister's Trick
-image=https://magiccards.info/scans/en/rtr/149.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbfc2748-351f-4b5d-8a7e-bc51851578bb.jpg?1562794144
 value=2.627
 rarity=C
 type=Instant

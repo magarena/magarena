@@ -1,5 +1,5 @@
 name=Grove of the Guardian
-image=https://magiccards.info/scans/en/rtr/240.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3cf60ca0-e01f-499c-8d04-d59050f38c33.jpg?1562785187
 value=3.909
 rarity=R
 type=Land

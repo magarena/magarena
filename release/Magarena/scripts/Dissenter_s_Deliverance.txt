@@ -1,5 +1,5 @@
 name=Dissenter's Deliverance
-image=https://magiccards.info/scans/en/akh/164.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/543eb854-bac7-468f-b3b0-d9987cfac318.jpg?1543675812
 value=2.500
 rarity=C
 type=Instant

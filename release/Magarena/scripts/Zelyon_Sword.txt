@@ -1,5 +1,5 @@
 name=Zelyon Sword
-image=https://magiccards.info/scans/en/fe/176.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4137160b-5248-4fbd-8ae8-25e9afd8fb5c.jpg?1562906976
 value=1.971
 rarity=R
 type=Artifact

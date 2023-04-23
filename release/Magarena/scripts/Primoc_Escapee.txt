@@ -1,5 +1,5 @@
 name=Primoc Escapee
-image=https://magiccards.info/scans/en/le/49.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6cb3e72-bb64-4b1e-a54b-1fe4fb4ad4c9.jpg?1562941357
 value=2.053
 rarity=U
 type=Creature

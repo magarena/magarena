@@ -1,5 +1,5 @@
 name=Torch Fiend
-image=https://magiccards.info/scans/en/m15/166.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60c3aa66-2436-40a3-a541-185f457bd55a.jpg?1601078695
 value=3.611
 rarity=C
 type=Creature

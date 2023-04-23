@@ -1,5 +1,5 @@
 name=Defend the Hearth
-image=https://magiccards.info/scans/en/ths/156.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3e4c4c3-db3c-49d4-8080-1c93470f8b4d.jpg?1562829912
 value=2.528
 rarity=C
 type=Instant

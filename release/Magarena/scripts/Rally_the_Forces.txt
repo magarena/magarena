@@ -1,5 +1,5 @@
 name=Rally the Forces
-image=https://magiccards.info/scans/en/mbs/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f251c71-0e83-424d-9e0e-85790289087c.jpg?1562612957
 value=2.846
 rarity=C
 type=Instant

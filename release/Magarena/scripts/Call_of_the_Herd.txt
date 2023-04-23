@@ -1,5 +1,5 @@
 name=Call of the Herd
-image=https://magiccards.info/scans/en/mm3/121.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7ff0c182-f9ec-41d1-beb6-97d0eb1be592.jpg?1592761775
 image_updated=2017-08-08
 value=4.045
 rarity=R

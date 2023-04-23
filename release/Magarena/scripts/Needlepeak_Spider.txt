@@ -1,5 +1,5 @@
 name=Needlepeak Spider
-image=https://magiccards.info/scans/en/pc/105.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00c7d94f-3760-4c97-b0bf-c895f4132c7f.jpg?1619397300
 value=2.703
 rarity=C
 type=Creature

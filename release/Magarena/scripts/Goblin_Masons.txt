@@ -1,5 +1,5 @@
 name=Goblin Masons
-image=https://magiccards.info/scans/en/ud/86.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/124070d9-c362-4053-a405-9438b1cfac02.jpg?1562443325
 value=2.645
 rarity=C
 type=Creature

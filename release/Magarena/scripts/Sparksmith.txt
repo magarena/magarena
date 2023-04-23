@@ -1,5 +1,5 @@
 name=Sparksmith
-image=https://magiccards.info/scans/en/on/235.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15a4460d-3fe8-4b1f-9990-0a19c3345367.jpg?1562900172
 value=3.716
 rarity=C
 type=Creature

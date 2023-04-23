@@ -1,5 +1,5 @@
 name=Cartouche of Strength
-image=https://magiccards.info/scans/en/akh/158.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6bb237c-4e39-4879-90b4-2f507a90d3d7.jpg?1543675766
 value=2.500
 rarity=C
 type=Enchantment

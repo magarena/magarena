@@ -1,5 +1,5 @@
 name=Hindering Touch
-image=https://magiccards.info/scans/en/sc/37.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db9735d9-4aac-4175-8ec8-fc9bfd8f2c5c.jpg?1562535667
 value=2.778
 rarity=C
 type=Instant

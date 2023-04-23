@@ -1,5 +1,5 @@
 name=Gideon's Avenger
-image=https://magiccards.info/scans/en/m12/17.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb0a0d33-8862-433b-a078-82472e5f9af0.jpg?1562657218
 value=4.005
 rarity=R
 type=Creature

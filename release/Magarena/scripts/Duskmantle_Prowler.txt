@@ -1,5 +1,5 @@
 name=Duskmantle Prowler
-image=https://magiccards.info/scans/en/m13/91.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcb031da-d41a-496a-b78e-0773f6504303.jpg?1562559351
 value=3.100
 rarity=U
 type=Creature

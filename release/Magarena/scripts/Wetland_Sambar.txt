@@ -1,5 +1,5 @@
 name=Wetland Sambar
-image=https://magiccards.info/scans/en/ktk/62.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f71a86e0-d15a-4fba-94f6-bfbaade8d837.jpg?1562796153
 value=1.750
 rarity=C
 type=Creature

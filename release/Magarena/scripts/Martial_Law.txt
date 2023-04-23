@@ -1,5 +1,5 @@
 name=Martial Law
-image=https://magiccards.info/scans/en/rtr/14.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21078b6f-a39d-4ec8-879e-ad10d97c3ff6.jpg?1562783620
 value=3.833
 rarity=R
 type=Enchantment

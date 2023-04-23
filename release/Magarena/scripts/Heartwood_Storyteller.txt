@@ -1,5 +1,5 @@
 name=Heartwood Storyteller
-image=https://magiccards.info/scans/en/fut/127.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a5e2f7a-8cfe-4d1b-a68d-7e6d8d10bd27.jpg?1619398147
 value=4.233
 rarity=R
 type=Creature

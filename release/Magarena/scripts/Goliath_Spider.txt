@@ -1,5 +1,5 @@
 name=Goliath Spider
-image=https://magiccards.info/scans/en/rav/168.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cecc53b1-942e-4b44-bf93-dd2d8cc92d6d.jpg?1598916322
 value=3.164
 rarity=U
 type=Creature

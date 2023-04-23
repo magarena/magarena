@@ -1,5 +1,5 @@
 name=Cliffhaven Vampire
-image=https://magiccards.info/scans/en/ogw/153.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5544247d-1f8f-443f-a4c4-d8461db28a79.jpg?1562912355
 image_updated=2016-02-29
 value=2.500
 rarity=U

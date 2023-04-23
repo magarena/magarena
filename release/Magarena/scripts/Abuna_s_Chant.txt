@@ -1,5 +1,5 @@
 name=Abuna's Chant
-image=https://magiccards.info/scans/en/5dn/1.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9e0bf63-0399-40d6-9162-4562d7bcdd0e.jpg?1562879415
 value=2.167
 rarity=C
 type=Instant

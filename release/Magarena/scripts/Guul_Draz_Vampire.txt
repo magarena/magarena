@@ -1,5 +1,5 @@
 name=Guul Draz Vampire
-image=https://magiccards.info/scans/en/zen/93.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3c92575-1c97-48bf-801b-22f34040cf9a.jpg?1562618316
 value=3.865
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Opal Guardian
-image=https://magiccards.info/scans/en/ts/30.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/905ad286-e70b-46cd-87fd-eec13ed2d43b.jpg?1562925408
 value=3.562
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Shizo, Death's Storehouse
-image=https://magiccards.info/scans/en/chk/283.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/099352e2-38c8-4fb4-a25f-6d928aa20f9e.jpg?1673306226
 value=4.064
 rarity=R
 type=Legendary,Land

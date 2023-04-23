@@ -1,5 +1,5 @@
 name=Savage Hunger
-image=https://magiccards.info/scans/en/ala/147.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/0367fac8-6990-4544-ac7d-ed363b55a9cf.jpg?1562700664
 value=1.351
 rarity=C
 type=Enchantment

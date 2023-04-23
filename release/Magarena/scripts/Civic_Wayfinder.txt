@@ -1,5 +1,5 @@
 name=Civic Wayfinder
-image=https://magiccards.info/scans/en/ema/161.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e9754ec-18d1-4c0f-abdd-49ce2d778083.jpg?1562229674
 value=3.531
 rarity=C
 type=Creature

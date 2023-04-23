@@ -1,5 +1,5 @@
 name=Nature's Ruin
-image=https://magiccards.info/scans/en/po/26.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f123d665-b3d2-4edb-9f8d-49da748f8628.jpg?1562943444
 value=4.000
 rarity=U
 type=Sorcery

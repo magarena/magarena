@@ -1,5 +1,5 @@
 name=Kaijin of the Vanishing Touch
-image=https://magiccards.info/scans/en/bok/39.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39e177ce-98bf-4fbc-83d1-1f64ca5d86c6.jpg?1562876494
 value=3.182
 rarity=U
 type=Creature

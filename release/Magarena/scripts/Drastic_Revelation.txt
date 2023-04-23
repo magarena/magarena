@@ -1,5 +1,5 @@
 name=Drastic Revelation
-image=https://magiccards.info/scans/en/arb/111.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90f1f430-d6a5-4380-95f2-9e0fc9e81597.jpg?1562642898
 value=2.951
 rarity=U
 type=Sorcery

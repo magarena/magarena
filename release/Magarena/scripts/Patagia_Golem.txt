@@ -1,5 +1,5 @@
 name=Patagia Golem
-image=https://magiccards.info/scans/en/8e/308.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c66c9c30-35c4-4813-a766-a54a418baf8b.jpg?1562934758
 value=2.085
 rarity=U
 type=Artifact,Creature

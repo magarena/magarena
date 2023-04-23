@@ -1,5 +1,5 @@
 name=Keeper of Keys
-image=https://magiccards.info/scans/en/cn2/34.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/990b343b-70a6-46d0-abae-f5faae75816a.jpg?1576381752
 image_updated=2016-09-05
 value=2.500
 rarity=R

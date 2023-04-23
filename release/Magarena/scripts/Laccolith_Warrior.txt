@@ -1,5 +1,5 @@
 name=Laccolith Warrior
-image=https://magiccards.info/scans/en/ne/90.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a13b103f-482b-47d5-84a2-3621ba23bd20.jpg?1562631306
 value=3.742
 rarity=U
 type=Creature

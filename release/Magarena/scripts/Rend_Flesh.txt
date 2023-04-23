@@ -1,5 +1,5 @@
 name=Rend Flesh
-image=https://magiccards.info/scans/en/chk/140.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92b300a3-e6a8-4ca9-bb26-03f57b5ff6ec.jpg?1562762516
 value=3.972
 rarity=C
 type=Instant

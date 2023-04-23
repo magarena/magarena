@@ -1,5 +1,5 @@
 name=Enrage
-image=https://magiccards.info/scans/en/9e/180.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f10e9f0-32c6-40cc-b16d-5590662cdb33.jpg?1562733206
 image_updated=2016-12-02
 value=3.053
 rarity=U

@@ -1,5 +1,5 @@
 name=Aura Blast
-image=https://magiccards.info/scans/en/ps/1.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/090f5ad6-e10e-49b3-8643-51a4e792517c.jpg?1562896922
 value=3.274
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Aura Mutation
-image=https://magiccards.info/scans/en/c16/180.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7240e52a-e435-46f1-ad68-96d6e12e123c.jpg?1673484955
 image_updated=2017-08-17
 value=4.271
 rarity=R

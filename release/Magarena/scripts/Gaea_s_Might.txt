@@ -1,5 +1,5 @@
 name=Gaea's Might
-image=https://magiccards.info/scans/en/ps/81.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89c46e9c-ae7c-466c-bb11-4f4d01ea7a63.jpg?1673307688
 value=3.543
 rarity=C
 type=Instant

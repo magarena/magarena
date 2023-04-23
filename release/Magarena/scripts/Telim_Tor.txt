@@ -1,5 +1,5 @@
 name=Telim'Tor
-image=https://magiccards.info/scans/en/mr/197.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33cc89c8-a3ea-469e-b499-f48acec4f538.jpg?1562718777
 value=3.076
 rarity=R
 type=Legendary,Creature

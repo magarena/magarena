@@ -1,5 +1,5 @@
 name=Mardu Ascendancy
-image=https://magiccards.info/scans/en/ktk/185.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02bc2415-b1d1-467a-9578-3948dda166cf.jpg?1562781854
 value=3.500
 rarity=R
 type=Enchantment

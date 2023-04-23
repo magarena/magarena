@@ -1,5 +1,5 @@
 name=Raving Dead
-image=https://magiccards.info/scans/en/c14/29.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d24d153-a014-4524-a496-9fe1c41cbc2b.jpg?1561943479
 value=2.500
 rarity=R
 type=Creature

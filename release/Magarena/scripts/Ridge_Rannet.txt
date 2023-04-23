@@ -1,5 +1,5 @@
 name=Ridge Rannet
-image=https://magiccards.info/scans/en/ala/111.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4275a8dd-f777-4160-b773-9a868e743218.jpg?1562703177
 value=1.991
 rarity=C
 type=Creature

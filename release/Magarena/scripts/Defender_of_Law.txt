@@ -1,5 +1,5 @@
 name=Defender of Law
-image=https://magiccards.info/scans/en/ul/5.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c8e8719-8c33-429d-8b95-b7f813888850.jpg?1562863764
 value=3.355
 rarity=C
 type=Creature

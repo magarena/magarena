@@ -1,5 +1,5 @@
 name=Horizon Canopy
-image=https://magiccards.info/scans/en/ima/240.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93f7c880-9bae-4d29-b7b6-b6be6b2ffa89.jpg?1562851585
 image_updated=2017-04-12
 value=4.226
 rarity=R

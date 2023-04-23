@@ -1,5 +1,5 @@
 name=Shielding Plax
-image=https://magiccards.info/scans/en/di/147.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81e632d8-ee9c-4635-9654-4d6405cb0bf2.jpg?1631588664
 value=4.168
 rarity=C
 type=Enchantment

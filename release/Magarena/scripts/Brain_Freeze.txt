@@ -1,5 +1,5 @@
 name=Brain Freeze
-image=https://magiccards.info/scans/en/sc/29.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a2d7cf9-dddb-4de3-b4f2-c52e3ec8fb4b.jpg?1562906772
 value=4.000
 rarity=U
 type=Instant

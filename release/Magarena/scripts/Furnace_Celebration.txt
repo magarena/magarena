@@ -1,5 +1,5 @@
 name=Furnace Celebration
-image=https://magiccards.info/scans/en/som/90.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f48f7f79-fc49-4d1e-a84f-c630ba238e83.jpg?1608910231
 value=3.318
 rarity=U
 type=Enchantment

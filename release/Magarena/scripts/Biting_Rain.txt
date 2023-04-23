@@ -1,5 +1,5 @@
 name=Biting Rain
-image=https://magiccards.info/scans/en/soi/102.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5ac62d2f-6834-4d98-b69d-bd7b5831d981.jpg?1576384359
 value=2.500
 rarity=U
 type=Sorcery

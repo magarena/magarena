@@ -1,5 +1,5 @@
 name=Righteous Avengers
-image=https://magiccards.info/scans/en/lg/203.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d5e7afd-57b9-4052-a1b9-45d324955d72.jpg?1559592373
 value=1.164
 rarity=U
 type=Creature

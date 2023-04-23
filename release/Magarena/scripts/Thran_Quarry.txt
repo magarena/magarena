@@ -1,5 +1,5 @@
 name=Thran Quarry
-image=https://magiccards.info/scans/en/us/329.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b2d6c41-7d82-4062-a783-37d88536279c.jpg?1562910753
 value=4.326
 rarity=R
 type=Land

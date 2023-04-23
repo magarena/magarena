@@ -1,5 +1,5 @@
 name=Stoic Champion
-image=https://magiccards.info/scans/en/le/21.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd693780-85df-4cea-be03-43c1d80ab740.jpg?1562936273
 value=2.500
 rarity=U
 type=Creature

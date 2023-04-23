@@ -1,5 +1,5 @@
 name=Beast Hunt
-image=https://magiccards.info/scans/en/zen/158.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46465b5f-26fa-4a07-9dc9-55486edee31a.jpg?1562611805
 value=1.851
 rarity=C
 type=Sorcery

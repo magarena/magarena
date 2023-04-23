@@ -1,5 +1,5 @@
 name=Gobhobbler Rats
-image=https://magiccards.info/scans/en/di/111.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae123ca6-2b96-4bbe-82b2-0be294edff80.jpg?1593273607
 value=3.346
 rarity=C
 type=Creature

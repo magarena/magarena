@@ -1,5 +1,5 @@
 name=Trained Condor
-image=https://magiccards.info/scans/en/m14/76.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e1eaa5a-3f9d-4166-b418-fd82fff86c73.jpg?1562830681
 value=3.426
 rarity=C
 type=Creature

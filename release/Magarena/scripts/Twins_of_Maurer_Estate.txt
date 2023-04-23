@@ -1,5 +1,5 @@
 name=Twins of Maurer Estate
-image=https://magiccards.info/scans/en/soi/142.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f689e20a-2c24-44a3-9e1b-7717df3d1948.jpg?1547517103
 value=2.500
 rarity=C
 type=Creature

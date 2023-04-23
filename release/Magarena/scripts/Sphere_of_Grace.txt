@@ -1,5 +1,5 @@
 name=Sphere of Grace
-image=https://magiccards.info/scans/en/od/49.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5b49d82-6d11-4294-a367-0b5b45c05e44.jpg?1562934908
 value=2.679
 rarity=U
 type=Enchantment

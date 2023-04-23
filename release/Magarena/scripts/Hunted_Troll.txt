@@ -1,5 +1,5 @@
 name=Hunted Troll
-image=https://magiccards.info/scans/en/rav/170.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfe19e16-33f6-4594-9dd3-2699a66ba0e8.jpg?1562938949
 value=3.694
 rarity=R
 type=Creature

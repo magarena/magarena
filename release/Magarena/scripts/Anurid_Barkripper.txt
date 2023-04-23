@@ -1,5 +1,5 @@
 name=Anurid Barkripper
-image=https://magiccards.info/scans/en/ju/104.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33255dfd-f8a9-4a15-aac5-c53dc0257859.jpg?1562629272
 value=2.870
 rarity=C
 type=Creature

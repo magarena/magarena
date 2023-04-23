@@ -1,5 +1,5 @@
 name=Kyren Glider
-image=https://magiccards.info/scans/en/mm/196.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bc55e01-342e-4856-937e-14561b8d165b.jpg?1562378966
 value=1.817
 rarity=C
 type=Creature

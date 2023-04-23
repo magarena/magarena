@@ -1,5 +1,5 @@
 name=Lonely Sandbar
-image=https://magiccards.info/scans/en/c14/304.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81992bb6-b1c0-4c3f-b745-b700d18dec9d.jpg?1625980405
 value=2.750
 rarity=C
 type=Land

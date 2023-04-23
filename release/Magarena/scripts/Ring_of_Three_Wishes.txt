@@ -1,5 +1,5 @@
 name=Ring of Three Wishes
-image=https://magiccards.info/scans/en/m14/216.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/219ab03a-2b3b-4eef-8a42-2cbe793d2f33.jpg?1562826944
 value=3.648
 rarity=M
 type=Artifact

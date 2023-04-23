@@ -1,5 +1,5 @@
 name=Deity of Scars
-image=https://magiccards.info/scans/en/eve/118.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7efc2cc8-2445-4d64-b1c5-26483efbcc30.jpg?1562921764
 value=4.081
 rarity=R
 type=Creature

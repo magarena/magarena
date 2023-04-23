@@ -1,5 +1,5 @@
 name=Grotag Thrasher
-image=https://magiccards.info/scans/en/wwk/83.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9275cb0a-e777-40f8-934a-a3f6e6071ec6.jpg?1562291939
 value=2.391
 rarity=C
 type=Creature

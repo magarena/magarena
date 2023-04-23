@@ -1,5 +1,5 @@
 name=Brass-Talon Chimera
-image=https://magiccards.info/scans/en/vi/142.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/200c9655-e51c-4b63-96cf-7f3fba3ec75c.jpg?1562276979
 value=3.471
 rarity=U
 type=Artifact,Creature

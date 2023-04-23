@@ -1,5 +1,5 @@
 name=Supply-Line Cranes
-image=https://magiccards.info/scans/en/jou/28.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/764bd86e-4156-4c58-9ce0-ca3dffbc7298.jpg?1593095366
 value=3.238
 rarity=C
 type=Creature

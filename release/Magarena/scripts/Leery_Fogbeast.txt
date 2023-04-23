@@ -1,5 +1,5 @@
 name=Leery Fogbeast
-image=https://magiccards.info/scans/en/on/273.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56125660-2307-4270-a947-f1f4ad63841c.jpg?1562915161
 value=2.738
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wu Warship
-image=https://magiccards.info/scans/en/p3k/64.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/935fc8cf-c2c5-4bfc-9dd8-0a0d52058312.jpg?1562926169
 value=1.870
 rarity=C
 type=Creature

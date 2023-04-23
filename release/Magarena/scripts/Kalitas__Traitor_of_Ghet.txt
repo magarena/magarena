@@ -1,5 +1,5 @@
 name=Kalitas, Traitor of Ghet
-image=https://magiccards.info/scans/en/ogw/86.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17a278d0-f601-4d57-bc3d-2972f8602a69.jpg?1562899733
 image_updated=2016-02-29
 value=2.500
 rarity=M

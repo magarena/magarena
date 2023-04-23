@@ -1,5 +1,5 @@
 name=Bubble Matrix
-image=https://magiccards.info/scans/en/wl/147.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0ca9c239-84ff-4527-aa23-bdb11856744c.jpg?1562799323
 value=4.297
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Five-Alarm Fire
-image=https://magiccards.info/scans/en/gtc/91.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb550d0c-2261-4f41-a2b1-d185f0bce86a.jpg?1561853434
 value=3.377
 rarity=R
 type=Enchantment

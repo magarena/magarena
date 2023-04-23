@@ -1,5 +1,5 @@
 name=Slinking Skirge
-image=https://magiccards.info/scans/en/ud/71.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00522c4b-4e64-4403-96b1-df41afbe255f.jpg?1562443312
 value=2.444
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Memorial to War
-image=https://magiccards.info/scans/en/dom/246.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3fe9351-82ad-47b0-b30c-208effbb9f3d.jpg?1608933960
 value=2.500
 rarity=U
 type=Land

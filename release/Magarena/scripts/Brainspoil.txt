@@ -1,5 +1,5 @@
 name=Brainspoil
-image=https://magiccards.info/scans/en/rav/78.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c34fa44f-274e-4914-bbd5-71193f8d2f96.jpg?1598914670
 value=2.810
 rarity=C
 type=Sorcery

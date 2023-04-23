@@ -1,5 +1,5 @@
 name=Monstrous Carabid
-image=https://magiccards.info/scans/en/arb/43.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b09e668d-02ca-4164-88ee-c7ea6c665975.jpg?1562643647
 value=2.221
 rarity=C
 type=Creature

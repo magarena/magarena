@@ -1,5 +1,5 @@
 name=Luminous Wake
-image=https://magiccards.info/scans/en/roe/35.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f8d5a36-cc29-47fc-bdf7-b753f3bc5197.jpg?1562703783
 value=3.308
 rarity=U
 type=Enchantment

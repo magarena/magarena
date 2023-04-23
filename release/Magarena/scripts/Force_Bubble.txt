@@ -1,5 +1,5 @@
 name=Force Bubble
-image=https://magiccards.info/scans/en/sc/14.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/742ac116-86ed-4ce6-9805-76f47a41c4c4.jpg?1562530652
 value=2.917
 rarity=R
 type=Enchantment

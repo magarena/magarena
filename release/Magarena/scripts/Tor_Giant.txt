@@ -1,5 +1,5 @@
 name=Tor Giant
-image=https://magiccards.info/scans/en/ia/220.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ef8f279-1a10-4685-99d6-bc971a7f922b.jpg?1587911918
 value=2.125
 rarity=C
 type=Creature

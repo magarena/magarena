@@ -1,5 +1,5 @@
 name=Ghostfire
-image=https://magiccards.info/scans/en/fut/115.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29739dd4-5775-4491-8245-ca2dc38a686e.jpg?1592764786
 value=3.649
 rarity=C
 type=Instant

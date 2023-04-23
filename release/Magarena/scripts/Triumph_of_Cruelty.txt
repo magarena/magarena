@@ -1,5 +1,5 @@
 name=Triumph of Cruelty
-image=https://magiccards.info/scans/en/avr/122.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/906618e2-2638-4017-9d6e-e6f282967a81.jpg?1592708986
 value=2.768
 rarity=U
 type=Enchantment

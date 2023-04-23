@@ -1,5 +1,5 @@
 name=Mirror Entity
-image=https://magiccards.info/scans/en/c16/70.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d9149ed-0e59-48b3-b48c-d5ea77b7239e.jpg?1674141166
 image_updated=2017-08-17
 value=4.050
 rarity=R

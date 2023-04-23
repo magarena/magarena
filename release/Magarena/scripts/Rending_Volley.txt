@@ -1,5 +1,5 @@
 name=Rending Volley
-image=https://magiccards.info/scans/en/dtk/150.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8234090e-9df1-4915-90ef-8a4bc6212655.jpg?1562789104
 value=2.500
 rarity=U
 type=Instant

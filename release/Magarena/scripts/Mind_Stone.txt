@@ -1,5 +1,5 @@
 name=Mind Stone
-image=https://magiccards.info/scans/en/ima/219.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b63418ae-2f77-4229-b921-fbce75b9daa4.jpg?1682210088
 image_updated=2017-04-12
 value=4.000
 rarity=C

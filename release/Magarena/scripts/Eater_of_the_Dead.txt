@@ -1,5 +1,5 @@
 name=Eater of the Dead
-image=https://magiccards.info/scans/en/dk/6.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23327a70-5e95-4aa4-824c-cdf3472f5422.jpg?1559592456
 value=3.400
 rarity=U
 type=Creature

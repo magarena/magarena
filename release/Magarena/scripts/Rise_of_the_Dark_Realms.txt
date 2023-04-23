@@ -1,5 +1,5 @@
 name=Rise of the Dark Realms
-image=https://magiccards.info/scans/en/m14/111.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c0e1064-47c3-4f03-a1f2-3bcb356db82b.jpg?1600701321
 value=3.625
 rarity=M
 type=Sorcery

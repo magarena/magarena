@@ -1,5 +1,5 @@
 name=Emissary of Despair
-image=https://magiccards.info/scans/en/ds/42.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fa8ae06-882b-428e-b446-1e750ffcddd1.jpg?1562638440
 value=3.455
 rarity=U
 type=Creature

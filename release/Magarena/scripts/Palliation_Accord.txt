@@ -1,5 +1,5 @@
 name=Palliation Accord
-image=https://magiccards.info/scans/en/di/122.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cda10c3b-ee16-4de5-9e54-d0187cd5cc80.jpg?1651124399
 value=3.580
 rarity=U
 type=Enchantment

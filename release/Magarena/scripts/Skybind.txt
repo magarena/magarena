@@ -1,5 +1,5 @@
 name=Skybind
-image=https://magiccards.info/scans/en/jou/25.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91e3117a-0955-47fc-81c0-7a662c8c487f.jpg?1593095343
 value=2.773
 rarity=R
 type=Enchantment

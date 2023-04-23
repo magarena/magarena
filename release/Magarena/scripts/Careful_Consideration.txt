@@ -1,5 +1,5 @@
 name=Careful Consideration
-image=https://magiccards.info/scans/en/mma/37.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08b7224b-adb9-4c31-b0bb-1c498f2922fb.jpg?1619393867
 value=3.675
 rarity=U
 type=Instant

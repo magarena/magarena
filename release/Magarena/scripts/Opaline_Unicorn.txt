@@ -1,5 +1,5 @@
 name=Opaline Unicorn
-image=https://magiccards.info/scans/en/cn2/213.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/160d39b0-76c5-4218-97e5-5903f781dafc.jpg?1576383279
 image_updated=2017-01-03
 value=3.326
 rarity=C

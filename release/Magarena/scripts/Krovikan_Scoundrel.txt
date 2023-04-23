@@ -1,5 +1,5 @@
 name=Krovikan Scoundrel
-image=https://magiccards.info/scans/en/cs/64.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd9f046c-b416-4d80-8998-047b98361352.jpg?1593275125
 value=1.531
 rarity=C
 type=Creature

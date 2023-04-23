@@ -1,5 +1,5 @@
 name=Plague Dogs
-image=https://magiccards.info/scans/en/ud/66.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b9cebd8-aa3f-4e22-8d15-d4b7bad355e4.jpg?1574948905
 value=3.443
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Grounded
-image=https://magiccards.info/scans/en/avr/181.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc4982f0-0ede-4846-82c8-bcf7ad63d099.jpg?1592709367
 value=1.028
 rarity=C
 type=Enchantment

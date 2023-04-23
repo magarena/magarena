@@ -1,5 +1,5 @@
 name=Necrogenesis
-image=https://magiccards.info/scans/en/c16/215.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32a50be8-3937-458b-a2f9-e75569016665.jpg?1562394773
 image_updated=2017-08-17
 value=3.000
 rarity=U

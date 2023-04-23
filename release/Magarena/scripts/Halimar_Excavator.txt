@@ -1,5 +1,5 @@
 name=Halimar Excavator
-image=https://magiccards.info/scans/en/wwk/29.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d147dce7-b2dd-426a-9ff7-843d50bb8b01.jpg?1562296656
 value=3.603
 rarity=C
 type=Creature

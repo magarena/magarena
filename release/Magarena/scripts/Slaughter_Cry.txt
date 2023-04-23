@@ -1,5 +1,5 @@
 name=Slaughter Cry
-image=https://magiccards.info/scans/en/m12/155.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65ec8b61-e602-41f2-ac1a-64e150b2ce18.jpg?1562645380
 value=2.182
 rarity=C
 type=Instant

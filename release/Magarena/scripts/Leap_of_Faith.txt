@@ -1,5 +1,5 @@
 name=Leap of Faith
-image=https://magiccards.info/scans/en/avr/26.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7ba52aed-440c-4b32-8f25-0c5364441712.jpg?1592708338
 value=1.315
 rarity=C
 type=Instant

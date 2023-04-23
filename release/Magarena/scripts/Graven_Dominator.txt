@@ -1,5 +1,5 @@
 name=Graven Dominator
-image=https://magiccards.info/scans/en/gp/7.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6dc44f8-ff1d-4c5a-971d-c3ce9a65f35d.jpg?1593271853
 value=3.462
 rarity=R
 type=Creature

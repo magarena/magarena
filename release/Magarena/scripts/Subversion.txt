@@ -1,5 +1,5 @@
 name=Subversion
-image=https://magiccards.info/scans/en/ul/68.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50f1bca9-5831-4e8b-8920-f28ebb3ffb27.jpg?1562862820
 image_updated=2016-01-09
 value=4.045
 rarity=R

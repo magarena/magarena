@@ -1,5 +1,5 @@
 name=Lady Zhurong, Warrior Queen
-image=https://magiccards.info/scans/en/p3k/139.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/009661e7-c704-43a1-82e3-7da0b609844e.jpg?1562255446
 value=3.851
 rarity=R
 type=Legendary,Creature

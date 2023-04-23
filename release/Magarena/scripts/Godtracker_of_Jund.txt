@@ -1,5 +1,5 @@
 name=Godtracker of Jund
-image=https://magiccards.info/scans/en/arb/55.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bd3fb7a-3eed-4b0a-9de0-ed8b7cf03533.jpg?1562642343
 value=2.264
 rarity=C
 type=Creature

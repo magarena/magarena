@@ -1,5 +1,5 @@
 name=Bloodfell Caves
-image=https://magiccards.info/scans/en/ema/236.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85930f68-6f53-4921-9556-2887ac3abfd2.jpg?1682205829
 value=3.333
 rarity=C
 type=Land

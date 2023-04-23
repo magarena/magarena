@@ -1,5 +1,5 @@
 name=Sangrite Backlash
-image=https://magiccards.info/scans/en/arb/139.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa56b15e-d02d-4306-82a6-ced778fee90f.jpg?1562645217
 value=2.889
 rarity=C
 type=Enchantment

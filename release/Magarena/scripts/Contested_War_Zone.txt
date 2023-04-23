@@ -1,5 +1,5 @@
 name=Contested War Zone
-image=https://magiccards.info/scans/en/mbs/144.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/bee9b696-5203-4235-9bdd-f2a389d69813.jpg?1562614411
 value=3.654
 rarity=R
 type=Land

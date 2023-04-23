@@ -1,5 +1,5 @@
 name=Tolarian Emissary
-image=https://magiccards.info/scans/en/in/81.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cbc55e5-b84c-4449-a288-ec26cdd3997c.jpg?1562900709
 value=2.667
 rarity=U
 type=Creature

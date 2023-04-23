@@ -1,5 +1,5 @@
 name=Angelic Armaments
-image=https://magiccards.info/scans/en/avr/212.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92824de1-23f2-44c6-b8ab-46db94b8f79e.jpg?1608911292
 value=2.352
 rarity=U
 type=Artifact

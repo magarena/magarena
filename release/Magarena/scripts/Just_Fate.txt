@@ -1,5 +1,5 @@
 name=Just Fate
-image=https://magiccards.info/scans/en/po2/137.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05012188-8c66-4001-84c7-d4a99dcd9cfa.jpg?1562896210
 value=3.250
 rarity=R
 type=Instant

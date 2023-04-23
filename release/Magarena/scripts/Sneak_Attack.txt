@@ -1,5 +1,5 @@
 name=Sneak Attack
-image=https://magiccards.info/scans/en/ema/148.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d9709ea-5962-4590-8b14-5213b14f9229.jpg?1599706719
 value=4.552
 rarity=M
 type=Enchantment

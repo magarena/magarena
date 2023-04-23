@@ -1,5 +1,5 @@
 name=Stymied Hopes
-image=https://magiccards.info/scans/en/ths/64.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/5702b757-5be5-4a48-bc73-a87ec4f3193b.jpg?1562818334
 value=2.629
 rarity=C
 type=Instant

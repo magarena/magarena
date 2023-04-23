@@ -1,5 +1,5 @@
 name=Minister of Inquiries
-image=https://magiccards.info/scans/en/kld/57.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e6c31d1-6e2a-41b3-aa4f-d30a7cd997d2.jpg?1576381327
 image_updated=2016-10-05
 value=2.500
 rarity=U

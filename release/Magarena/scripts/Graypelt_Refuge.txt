@@ -1,5 +1,5 @@
 name=Graypelt Refuge
-image=https://magiccards.info/scans/en/c17/253.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0849b6dd-0330-4b7e-b7da-98e767adb4a0.jpg?1568005160
 image_updated=2017-10-03
 value=3.000
 rarity=U

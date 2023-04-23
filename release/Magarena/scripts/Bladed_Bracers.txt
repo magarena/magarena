@@ -1,5 +1,5 @@
 name=Bladed Bracers
-image=https://magiccards.info/scans/en/avr/213.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/897a5116-043c-46aa-880e-be8dcb1618bc.jpg?1592709556
 value=2.667
 rarity=C
 type=Artifact

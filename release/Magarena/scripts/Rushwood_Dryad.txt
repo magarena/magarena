@@ -1,5 +1,5 @@
 name=Rushwood Dryad
-image=https://magiccards.info/scans/en/10e/294.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ed23582-3260-44c6-9884-904d294442ad.jpg?1562546634
 value=3.000
 rarity=C
 type=Creature

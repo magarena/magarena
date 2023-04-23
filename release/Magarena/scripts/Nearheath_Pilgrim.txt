@@ -1,5 +1,5 @@
 name=Nearheath Pilgrim
-image=https://magiccards.info/scans/en/avr/31.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d81d6fe0-c7c2-46a6-811c-f121284937ea.jpg?1592708373
 value=3.704
 rarity=U
 type=Creature

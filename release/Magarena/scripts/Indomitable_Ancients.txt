@@ -1,5 +1,5 @@
 name=Indomitable Ancients
-image=https://magiccards.info/scans/en/mt/13.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddf33cb6-d159-4af3-8403-d0ac10af9894.jpg?1562881893
 value=3.728
 rarity=R
 type=Creature

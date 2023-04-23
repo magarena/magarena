@@ -1,5 +1,5 @@
 name=Mentor of the Meek
-image=https://magiccards.info/scans/en/m19/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59c2bacd-09e5-403c-b9a2-722fe6d8062e.jpg?1682208516
 image_updated=2018-08-07
 value=3.872
 rarity=R

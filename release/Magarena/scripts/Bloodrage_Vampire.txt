@@ -1,5 +1,5 @@
 name=Bloodrage Vampire
-image=https://magiccards.info/scans/en/m12/83.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/692013da-b090-49d1-9c7a-ff5863d6ffd5.jpg?1592714238
 image_updated=2016-11-20
 value=2.778
 rarity=C

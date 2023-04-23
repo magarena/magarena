@@ -1,5 +1,5 @@
 name=Nezumi Ronin
-image=https://magiccards.info/scans/en/chk/130.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c3b8d6f-c60a-4107-b931-31b10f497237.jpg?1593860758
 value=2.821
 rarity=C
 type=Creature

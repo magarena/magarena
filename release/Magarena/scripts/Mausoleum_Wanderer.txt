@@ -1,5 +1,5 @@
 name=Mausoleum Wanderer
-image=https://magiccards.info/scans/en/emn/69.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42391fa7-6172-487c-b8aa-d41ab7c64973.jpg?1576384180
 image_updated=2016-09-05
 value=2.500
 rarity=R

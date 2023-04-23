@@ -1,5 +1,5 @@
 name=Pharagax Giant
-image=https://magiccards.info/scans/en/bng/104.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9eef1b9b-58f1-40af-a7c2-06cdaf1ec974.jpg?1593092311
 value=3.462
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Cloudchaser Eagle
-image=https://magiccards.info/scans/en/7e/11.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81cd5854-56ef-48ec-ad12-1690fa45b4a5.jpg?1562241673
 value=3.078
 rarity=C
 type=Creature

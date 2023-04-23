@@ -1,5 +1,5 @@
 name=Academy Raider
-image=https://magiccards.info/scans/en/m14/124.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/6652ed29-ee90-4abc-a6cf-6b18a6cbae86.jpg?1562830238
 value=2.354
 rarity=C
 type=Creature

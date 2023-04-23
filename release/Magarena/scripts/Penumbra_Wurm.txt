@@ -1,5 +1,5 @@
 name=Penumbra Wurm
-image=https://magiccards.info/scans/en/ap/84.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de4ce98d-0a19-42c5-9ef9-32408da1d2a1.jpg?1547517719
 value=3.333
 rarity=R
 type=Creature

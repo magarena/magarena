@@ -1,5 +1,5 @@
 name=Chainbreaker
-image=https://magiccards.info/scans/en/shm/249.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/094b023e-d5a3-4a57-adf0-898f3dcc8de2.jpg?1562826506
 value=1.846
 rarity=C
 type=Artifact,Creature

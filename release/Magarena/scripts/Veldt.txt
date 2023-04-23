@@ -1,5 +1,5 @@
 name=Veldt
-image=https://magiccards.info/scans/en/ia/358.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/987534fb-74a9-46a3-805f-fe2fe2df4a90.jpg?1562923295
 value=2.400
 rarity=R
 type=Land

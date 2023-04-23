@@ -1,5 +1,5 @@
 name=Butcher of the Horde
-image=https://magiccards.info/scans/en/ktk/168.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c76027b-9c8d-4181-9311-270fed0212e3.jpg?1562786278
 value=4.300
 rarity=R
 type=Creature

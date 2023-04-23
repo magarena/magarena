@@ -1,5 +1,5 @@
 name=Burst of Strength
-image=https://magiccards.info/scans/en/gtc/115.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1cbd617-9f2e-4882-b8f0-dfc2fced2281.jpg?1561847213
 value=2.947
 rarity=C
 type=Instant

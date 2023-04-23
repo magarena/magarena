@@ -1,5 +1,5 @@
 name=Tajuru Beastmaster
-image=https://magiccards.info/scans/en/bfz/193.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3447b4af-2eb2-48ae-a12e-2fdf83d4cb70.jpg?1562907286
 image_updated=2015-11-08
 value=2.500
 rarity=C

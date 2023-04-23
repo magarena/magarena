@@ -1,5 +1,5 @@
 name=Veldrane of Sengir
-image=https://magiccards.info/scans/en/hl/25.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe0ce7d7-d370-4ef8-b1fa-aa70b2fd5ab1.jpg?1562588732
 value=1.275
 rarity=R
 type=Legendary,Creature

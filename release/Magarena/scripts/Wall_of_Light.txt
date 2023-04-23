@@ -1,5 +1,5 @@
 name=Wall of Light
-image=https://magiccards.info/scans/en/lg/212.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/347db0be-8a88-4110-942a-d3c77cfbca52.jpg?1562906060
 value=3.021
 rarity=U
 type=Creature

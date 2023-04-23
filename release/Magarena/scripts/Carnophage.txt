@@ -1,5 +1,5 @@
 name=Carnophage
-image=https://magiccards.info/scans/en/ex/53.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/889a92ca-e198-494d-9ccb-6ae2c19ec62e.jpg?1562430333
 value=4.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Raging Gorilla
-image=https://magiccards.info/scans/en/vi/90.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07c284ce-33b8-4fb2-9dd9-4c477bedc774.jpg?1562276957
 value=2.333
 rarity=C
 type=Creature

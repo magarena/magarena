@@ -1,5 +1,5 @@
 name=Muck Rats
-image=https://magiccards.info/scans/en/st/84.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf2018ec-94e4-4e29-8b4b-ce30fb0d4a99.jpg?1562875278
 value=1.756
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Defender of the Order
-image=https://magiccards.info/scans/en/le/11.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/236b1c88-20a0-479e-91fb-16bb77f699fe.jpg?1562902106
 value=2.738
 rarity=R
 type=Creature

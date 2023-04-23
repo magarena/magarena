@@ -1,5 +1,5 @@
 name=Aura of Silence
-image=https://magiccards.info/scans/en/10e/6.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8223756e-6e63-455d-9e86-5608863b7643.jpg?1562706500
 image_updated=2016-02-29
 value=4.465
 rarity=U

@@ -1,5 +1,5 @@
 name=Ashen Firebeast
-image=https://magiccards.info/scans/en/od/174.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebaef0bd-8288-49ba-a889-d897a4aae64c.jpg?1562939159
 value=3.562
 rarity=R
 type=Creature

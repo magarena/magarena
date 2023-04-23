@@ -1,5 +1,5 @@
 name=Grindclock
-image=https://magiccards.info/scans/en/m15/217.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53498863-2e69-4b98-b0f0-7ae13dc1033e.jpg?1562787054
 value=2.500
 rarity=R
 type=Artifact

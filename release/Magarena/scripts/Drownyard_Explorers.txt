@@ -1,5 +1,5 @@
 name=Drownyard Explorers
-image=https://magiccards.info/scans/en/soi/56.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3714713f-deb4-4b1c-8764-35287293ca18.jpg?1576384031
 value=2.500
 rarity=C
 type=Creature

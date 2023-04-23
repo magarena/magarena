@@ -1,5 +1,5 @@
 name=Thran War Machine
-image=https://magiccards.info/scans/en/ul/134.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5908714a-be91-4279-b87e-e2bc09dbaaba.jpg?1562863256
 value=2.352
 rarity=U
 type=Artifact,Creature

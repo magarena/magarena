@@ -1,5 +1,5 @@
 name=Frostling
-image=https://magiccards.info/scans/en/bok/103.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53bb08f9-355d-443e-8f08-a20ef7322e78.jpg?1562877064
 value=3.447
 rarity=C
 type=Creature

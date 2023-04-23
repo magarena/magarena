@@ -1,5 +1,5 @@
 name=Makindi Shieldmate
-image=https://magiccards.info/scans/en/zen/26.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e76e9555-966c-4fc3-9ef4-a0154ccb8329.jpg?1562617828
 value=2.843
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wirefly Hive
-image=https://magiccards.info/scans/en/ds/161.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bdb7e06-748c-4fc0-adc5-f8f2ec62029a.jpg?1562637713
 value=2.372
 rarity=U
 type=Artifact

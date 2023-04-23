@@ -1,5 +1,5 @@
 name=Voice of Grace
-image=https://magiccards.info/scans/en/us/54.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72e8eb3b-3ebf-426c-8dc8-138ec9b7c671.jpg?1562919128
 value=3.257
 rarity=U
 type=Creature

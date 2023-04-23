@@ -1,5 +1,5 @@
 name=Spoils of Victory
-image=https://magiccards.info/scans/en/p3k/147.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a7ee186-b25f-4185-830d-e8e7cf23d4e5.jpg?1562924259
 value=2.967
 rarity=U
 type=Sorcery

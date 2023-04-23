@@ -1,5 +1,5 @@
 name=Hammer of Nazahn
-image=https://magiccards.info/scans/en/c17/51.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbce79af-968a-481b-8cd7-a323c083851d.jpg?1599709292
 image_updated=2017-10-03
 value=2.500
 rarity=R

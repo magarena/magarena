@@ -1,5 +1,5 @@
 name=Tolarian Sentinel
-image=https://magiccards.info/scans/en/ts/87.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da4d6572-4748-4242-98d2-62e668a59a48.jpg?1619394880
 value=1.986
 rarity=C
 type=Creature

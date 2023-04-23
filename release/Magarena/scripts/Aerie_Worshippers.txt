@@ -1,5 +1,5 @@
 name=Aerie Worshippers
-image=https://magiccards.info/scans/en/bng/30.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06c8b3b9-f0fb-4cc1-8916-82ee2c74f089.jpg?1593091596
 value=3.662
 rarity=U
 type=Creature

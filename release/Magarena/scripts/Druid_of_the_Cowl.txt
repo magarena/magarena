@@ -1,5 +1,5 @@
 name=Druid of the Cowl
-image=https://magiccards.info/scans/en/m19/177.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76ceff1d-9e83-41cc-b54b-8bf90d985da9.jpg?1562302734
 image_updated=2018-08-07
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Bringer of the Green Dawn
-image=https://magiccards.info/scans/en/5dn/83.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc208f3e-5a6a-4fae-8a7c-2bed28ad0c41.jpg?1562879470
 value=4.112
 rarity=R
 type=Creature

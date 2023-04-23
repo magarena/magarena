@@ -1,5 +1,5 @@
 name=Putrefy
-image=https://magiccards.info/scans/en/mm3/179.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36e2a569-ed40-48f5-b39c-749b491bc207.jpg?1631235530
 image_updated=2017-08-08
 value=4.305
 removal=5

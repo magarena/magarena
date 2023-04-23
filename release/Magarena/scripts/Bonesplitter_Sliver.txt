@@ -1,5 +1,5 @@
 name=Bonesplitter Sliver
-image=https://magiccards.info/scans/en/ts/149.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29672365-f059-4ff2-93c5-437b9ab01297.jpg?1619396757
 value=3.670
 rarity=C
 type=Creature

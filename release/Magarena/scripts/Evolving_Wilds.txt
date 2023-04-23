@@ -1,5 +1,5 @@
 name=Evolving Wilds
-image=https://magiccards.info/scans/en/rix/186.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c78d5616-32dc-45ca-a1b2-d6b4f7951393.jpg?1682210391
 image_updated=2018-03-12
 value=2.500
 rarity=C

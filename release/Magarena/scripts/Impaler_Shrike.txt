@@ -1,5 +1,5 @@
 name=Impaler Shrike
-image=https://magiccards.info/scans/en/nph/36.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91e1f8b5-4792-457d-b3de-1d4874ddf72e.jpg?1562879789
 value=3.104
 rarity=C
 type=Creature

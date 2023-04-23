@@ -1,5 +1,5 @@
 name=Howling Wolf
-image=https://magiccards.info/scans/en/cns/167.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09965519-274c-4082-88fe-639f77aa9cf6.jpg?1562864458
 value=2.625
 rarity=C
 type=Creature

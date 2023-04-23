@@ -1,5 +1,5 @@
 name=Araba Mothrider
-image=https://magiccards.info/scans/en/sok/2.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6e4a170-1075-47e4-abe6-996b161573c1.jpg?1562497014
 value=2.911
 rarity=C
 type=Creature

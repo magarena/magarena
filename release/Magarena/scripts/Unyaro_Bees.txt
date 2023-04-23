@@ -1,5 +1,5 @@
 name=Unyaro Bees
-image=https://magiccards.info/scans/en/ts/231.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76356bc9-2285-44a7-815e-a27ad4e07afc.jpg?1562919865
 value=4.034
 rarity=R
 type=Creature

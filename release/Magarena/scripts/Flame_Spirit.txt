@@ -1,5 +1,5 @@
 name=Flame Spirit
-image=https://magiccards.info/scans/en/6e/179.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9c5ff40-c9ce-44cf-b4e5-a51afe3c5ce6.jpg?1562870462
 value=1.857
 rarity=C
 type=Creature

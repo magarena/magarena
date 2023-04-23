@@ -1,5 +1,5 @@
 name=Angel of Finality
-image=https://magiccards.info/scans/en/c13/4.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/907d710c-c54a-4e13-b057-71e4cc73f087.jpg?1682208269
 value=3.780
 rarity=R
 type=Creature

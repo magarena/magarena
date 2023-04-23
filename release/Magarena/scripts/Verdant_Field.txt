@@ -1,5 +1,5 @@
 name=Verdant Field
-image=https://magiccards.info/scans/en/pr/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d123da53-9fd3-492b-beb7-76d1c0f5e4f6.jpg?1562934075
 value=2.479
 rarity=U
 type=Enchantment

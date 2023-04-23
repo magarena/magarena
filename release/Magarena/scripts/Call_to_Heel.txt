@@ -1,5 +1,5 @@
 name=Call to Heel
-image=https://magiccards.info/scans/en/ala/32.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdedbb84-7abe-420d-8429-c2d77ee0ae36.jpg?1562933206
 value=2.385
 rarity=C
 type=Instant

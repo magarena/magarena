@@ -1,5 +1,5 @@
 name=Ramosian Captain
-image=https://magiccards.info/scans/en/mm/35.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e9d2e2a-c608-4787-bbd9-e1871f681b58.jpg?1562378973
 value=3.950
 rarity=U
 type=Creature

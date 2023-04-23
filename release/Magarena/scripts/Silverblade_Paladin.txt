@@ -1,5 +1,5 @@
 name=Silverblade Paladin
-image=https://magiccards.info/scans/en/c14/88.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79c43502-5b82-43b6-a62d-162b49667f39.jpg?1561947443
 value=3.945
 rarity=R
 type=Creature

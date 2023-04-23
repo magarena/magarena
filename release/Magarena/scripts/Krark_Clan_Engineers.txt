@@ -1,5 +1,5 @@
 name=Krark-Clan Engineers
-image=https://magiccards.info/scans/en/5dn/70.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2110a5e2-31e1-4a63-96cd-56295f67d436.jpg?1562875814
 value=2.274
 rarity=U
 type=Creature

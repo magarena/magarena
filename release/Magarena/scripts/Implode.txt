@@ -1,5 +1,5 @@
 name=Implode
-image=https://magiccards.info/scans/en/ps/62.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a76ee318-8126-4ebf-884d-8369ae8726ac.jpg?1562930283
 value=3.338
 rarity=U
 type=Sorcery

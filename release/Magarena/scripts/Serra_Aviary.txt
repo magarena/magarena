@@ -1,5 +1,5 @@
 name=Serra Aviary
-image=https://magiccards.info/scans/en/hl/118.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/9173f55d-c4e4-4cd7-9d2f-5394216d2e35.jpg?1562929276
 value=3.389
 rarity=R
 type=World,Enchantment

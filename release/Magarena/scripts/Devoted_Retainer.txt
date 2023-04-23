@@ -1,5 +1,5 @@
 name=Devoted Retainer
-image=https://magiccards.info/scans/en/chk/7.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc41d6d6-d7e5-4874-b6e2-fa4c72454f15.jpg?1562766101
 value=3.462
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Land Equilibrium
-image=https://magiccards.info/scans/en/lg/64.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51c5df75-746c-4e4b-84f1-76b689d317d7.jpg?1562912056
 value=4.488
 rarity=R
 type=Enchantment

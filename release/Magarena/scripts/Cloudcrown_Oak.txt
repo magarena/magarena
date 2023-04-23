@@ -1,5 +1,5 @@
 name=Cloudcrown Oak
-image=https://magiccards.info/scans/en/lw/201.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/833211c0-3bec-4548-97a0-c9381660cd88.jpg?1592761781
 value=3.075
 rarity=C
 type=Creature

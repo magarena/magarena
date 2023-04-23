@@ -1,5 +1,5 @@
 name=Cruel Finality
-image=https://magiccards.info/scans/en/aer/54.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c22e911-cf40-4ed8-b075-186f2b1393db.jpg?1576381620
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Hagra Diabolist
-image=https://magiccards.info/scans/en/zen/95.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c303e7e2-cb22-4dea-889f-d03e2494ed0f.jpg?1562616316
 value=3.808
 rarity=U
 type=Creature

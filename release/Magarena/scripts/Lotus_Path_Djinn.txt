@@ -1,5 +1,5 @@
 name=Lotus Path Djinn
-image=https://magiccards.info/scans/en/frf/39.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/197ec248-70d9-47f4-a53b-99b23f021116.jpg?1562822856
 value=2.500
 rarity=C
 type=Creature

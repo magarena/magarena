@@ -1,5 +1,5 @@
 name=Gulf Squid
-image=https://magiccards.info/scans/en/pr/35.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf424982-a0ab-4db9-8889-f3cef10966c6.jpg?1562930718
 value=3.486
 rarity=C
 type=Creature

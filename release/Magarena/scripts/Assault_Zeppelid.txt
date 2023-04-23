@@ -1,5 +1,5 @@
 name=Assault Zeppelid
-image=https://magiccards.info/scans/en/di/103.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12bf6443-c941-418a-a766-05bba088a117.jpg?1593273548
 value=3.890
 rarity=C
 type=Creature

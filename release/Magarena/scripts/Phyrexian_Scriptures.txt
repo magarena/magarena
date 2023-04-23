@@ -1,5 +1,5 @@
 name=Phyrexian Scriptures
-image=https://magiccards.info/scans/en/dom/100.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09bb74d7-dd61-4cce-b88c-ee4d656a97f4.jpg?1682209213
 value=2.500
 rarity=M
 type=Enchantment

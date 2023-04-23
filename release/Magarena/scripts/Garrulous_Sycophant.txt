@@ -1,5 +1,5 @@
 name=Garrulous Sycophant
-image=https://magiccards.info/scans/en/cn2/43.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e38aafe-d89f-412d-b7b5-1060bff51c6e.jpg?1576381834
 image_updated=2016-09-05
 value=2.500
 rarity=C

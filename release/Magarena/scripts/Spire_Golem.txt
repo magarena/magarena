@@ -1,5 +1,5 @@
 name=Spire Golem
-image=https://magiccards.info/scans/en/ds/145.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b299c599-1a10-4122-ac0b-8f52a9cec7b6.jpg?1562378478
 image_updated=2016-01-09
 value=2.500
 rarity=C

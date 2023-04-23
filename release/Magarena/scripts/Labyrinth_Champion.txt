@@ -1,5 +1,5 @@
 name=Labyrinth Champion
-image=https://magiccards.info/scans/en/ths/126.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ee955ad-6eed-4d5a-bcda-94339f155555.jpg?1673147837
 value=3.337
 rarity=R
 type=Creature

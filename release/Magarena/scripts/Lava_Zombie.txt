@@ -1,5 +1,5 @@
 name=Lava Zombie
-image=https://magiccards.info/scans/en/ps/113.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd87185b-1242-4fb3-abee-44bc267ee5fb.jpg?1562948711
 value=3.757
 rarity=C
 type=Creature

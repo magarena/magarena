@@ -1,5 +1,5 @@
 name=Oracle of Bones
-image=https://magiccards.info/scans/en/bng/103.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddb1931e-c282-47a7-9382-608de6ec8efa.jpg?1593092303
 value=3.762
 rarity=R
 type=Creature

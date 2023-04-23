@@ -1,5 +1,5 @@
 name=Rime Dryad
-image=https://magiccards.info/scans/en/ia/148.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a93e6ce-1295-41f8-b454-2dfe321481a6.jpg?1587912068
 value=3.691
 rarity=C
 type=Creature

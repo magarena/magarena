@@ -1,5 +1,5 @@
 name=Flight of Fancy
-image=https://magiccards.info/scans/en/rav/49.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b770973-2061-44cb-8c02-b2251d711e92.jpg?1547516238
 value=3.745
 rarity=C
 type=Enchantment

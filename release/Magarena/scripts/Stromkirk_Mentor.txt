@@ -1,5 +1,5 @@
 name=Stromkirk Mentor
-image=https://magiccards.info/scans/en/soi/137.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa90b7dc-fb90-411e-a762-06a800bae0cf.jpg?1576384600
 value=2.500
 rarity=C
 type=Creature

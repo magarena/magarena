@@ -1,5 +1,5 @@
 name=Emeria, the Sky Ruin
-image=https://magiccards.info/scans/en/c14/293.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb89c14b-028a-4bef-ae94-703198ef0376.jpg?1561956616
 value=4.026
 rarity=R
 type=Land

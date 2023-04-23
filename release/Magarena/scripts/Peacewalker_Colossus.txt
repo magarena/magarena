@@ -1,5 +1,5 @@
 name=Peacewalker Colossus
-image=https://magiccards.info/scans/en/aer/170.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e66a27a1-f15d-46d6-8247-f098603957f1.jpg?1651656327
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Lesser Gargadon
-image=https://magiccards.info/scans/en/8e/199.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b27a1067-8dff-485a-8781-39d61585c521.jpg?1562930937
 value=2.316
 rarity=U
 type=Creature

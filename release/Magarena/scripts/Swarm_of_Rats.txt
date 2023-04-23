@@ -1,5 +1,5 @@
 name=Swarm of Rats
-image=https://magiccards.info/scans/en/9e/166.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba1a92e2-6a8f-45fe-84cc-08fde6210077.jpg?1562740794
 value=3.349
 rarity=U
 type=Creature

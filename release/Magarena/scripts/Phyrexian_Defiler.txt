@@ -1,5 +1,5 @@
 name=Phyrexian Defiler
-image=https://magiccards.info/scans/en/ul/60.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a4a7dcf-b624-4462-859f-e7b2c4ab02ce.jpg?1562916360
 value=3.500
 rarity=U
 type=Creature

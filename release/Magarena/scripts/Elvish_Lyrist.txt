@@ -1,5 +1,5 @@
 name=Elvish Lyrist
-image=https://magiccards.info/scans/en/8e/242.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a1da8da-12b2-47aa-9565-92d305061798.jpg?1562909983
 value=3.306
 rarity=U
 type=Creature

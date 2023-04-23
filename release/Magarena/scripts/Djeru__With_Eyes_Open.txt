@@ -1,5 +1,5 @@
 name=Djeru, With Eyes Open
-image=https://magiccards.info/scans/en/hou/10.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/2234df89-0835-4a17-b5d8-2334ee8f692d.jpg?1562792235
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Glen Elendra Archmage
-image=https://magiccards.info/scans/en/mma/47.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd9af767-42da-46c7-a2b8-3957b2e3063f.jpg?1547516310
 value=4.536
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Cutthroat il-Dal
-image=https://magiccards.info/scans/en/fut/64.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4123bab-d61e-4d69-b9ca-1fff3a11335a.jpg?1619395143
 value=2.675
 rarity=C
 type=Creature

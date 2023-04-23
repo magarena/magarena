@@ -1,5 +1,5 @@
 name=Stormbreath Dragon
-image=https://magiccards.info/scans/en/ths/143.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/471979de-f569-444a-8651-12d7e726949a.jpg?1562817514
 value=3.823
 rarity=M
 type=Creature

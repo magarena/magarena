@@ -1,5 +1,5 @@
 name=Cathar's Shield
-image=https://magiccards.info/scans/en/emn/192.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61c18ffa-ffff-4dc4-9db0-d5f183c35e17.jpg?1576385043
 image_updated=2016-09-05
 value=2.500
 rarity=C

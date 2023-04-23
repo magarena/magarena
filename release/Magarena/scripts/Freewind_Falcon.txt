@@ -1,5 +1,5 @@
 name=Freewind Falcon
-image=https://magiccards.info/scans/en/vi/105.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33dc0244-319c-4e15-9083-8d21ad0364d8.jpg?1562277435
 value=3.077
 rarity=C
 type=Creature

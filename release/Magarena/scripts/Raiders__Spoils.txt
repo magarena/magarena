@@ -1,5 +1,5 @@
 name=Raiders' Spoils
-image=https://magiccards.info/scans/en/ktk/83.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd3e423e-cb62-43e1-9d0c-e702f823c8e1.jpg?1562793691
 value=3.000
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Boggart Loggers
-image=https://magiccards.info/scans/en/lw/103.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ed9a638-c3f9-48dd-9633-5c52146e0dcd.jpg?1562360464
 value=2.276
 rarity=C
 type=Creature

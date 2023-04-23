@@ -1,5 +1,5 @@
 name=Ice Cage
-image=https://magiccards.info/scans/en/m12/57.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5e14b62-c050-4d43-aeee-873f46d1e295.jpg?1562654028
 value=2.570
 rarity=C
 type=Enchantment

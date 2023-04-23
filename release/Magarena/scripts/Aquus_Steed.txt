@@ -1,5 +1,5 @@
 name=Aquus Steed
-image=https://magiccards.info/scans/en/rtr/29.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af643949-7a9b-4195-8ab8-d43b1928b85a.jpg?1562791584
 value=1.392
 rarity=U
 type=Creature

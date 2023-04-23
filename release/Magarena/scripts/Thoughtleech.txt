@@ -1,5 +1,5 @@
 name=Thoughtleech
-image=https://magiccards.info/scans/en/7e/274.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95e214df-93a2-4d21-8818-cc00bff1b318.jpg?1562243573
 value=3.159
 rarity=U
 type=Enchantment

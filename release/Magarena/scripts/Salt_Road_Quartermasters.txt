@@ -1,5 +1,5 @@
 name=Salt Road Quartermasters
-image=https://magiccards.info/scans/en/dtk/199.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/4076bf6b-c8b1-49ef-8f23-afaf7a234e2d.jpg?1562785272
 value=2.500
 rarity=U
 type=Creature

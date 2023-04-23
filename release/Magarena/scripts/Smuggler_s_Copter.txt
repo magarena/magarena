@@ -1,5 +1,5 @@
 name=Smuggler's Copter
-image=https://magiccards.info/scans/en/kld/235.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2680ed41-da35-475a-9d80-ae2f4686feed.jpg?1651656383
 image_updated=2016-10-05
 value=2.500
 rarity=R

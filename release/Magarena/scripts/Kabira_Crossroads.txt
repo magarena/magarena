@@ -1,5 +1,5 @@
 name=Kabira Crossroads
-image=https://magiccards.info/scans/en/c17/259.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f6a18b8-d490-490d-83a5-227a416ccf92.jpg?1562614414
 image_updated=2017-10-03
 value=3.432
 rarity=C

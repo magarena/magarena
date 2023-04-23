@@ -1,5 +1,5 @@
 name=Glacial Wall
-image=https://magiccards.info/scans/en/ema/53.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c059330e-1aef-4d22-b3c2-cd84cab5fe38.jpg?1580013982
 value=3.011
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Deceiver Exarch
-image=https://magiccards.info/scans/en/cn2/106.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35437d86-6f92-480a-aa0c-c17c3943c00c.jpg?1623103955
 image_updated=2017-08-29
 value=3.643
 rarity=U

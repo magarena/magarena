@@ -1,5 +1,5 @@
 name=Keep Watch
-image=https://magiccards.info/scans/en/ju/43.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e98489bc-b5fd-43f2-9afb-198e34e70723.jpg?1562843349
 image_updated=2016-12-21
 value=3.774
 rarity=C

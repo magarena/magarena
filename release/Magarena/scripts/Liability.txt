@@ -1,5 +1,5 @@
 name=Liability
-image=https://magiccards.info/scans/en/mm/144.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b07c66d-5f37-4098-b7e6-03e6c684806b.jpg?1562378963
 value=3.917
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Mardu Woe-Reaper
-image=https://magiccards.info/scans/en/frf/18.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bf14a32-b97b-48c7-8395-d9c3626735c1.jpg?1562822362
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Pestilence Demon
-image=https://magiccards.info/scans/en/c14/153.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/058eb32f-2ae2-4276-ae1a-242bbb150418.jpg?1562229264
 value=4.098
 rarity=R
 type=Creature

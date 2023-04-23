@@ -1,5 +1,5 @@
 name=Steward of Solidarity
-image=https://magiccards.info/scans/en/hou/25.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/eda3cd3b-d4c5-4537-8c81-5ccf269f810e.jpg?1562819202
 value=2.500
 rarity=U
 type=Creature

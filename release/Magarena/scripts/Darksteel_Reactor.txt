@@ -1,5 +1,5 @@
 name=Darksteel Reactor
-image=https://magiccards.info/scans/en/ds/114.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b2f1e30-7b30-4853-aeac-3b0933d4ac5e.jpg?1562635655
 value=4.165
 rarity=R
 type=Artifact

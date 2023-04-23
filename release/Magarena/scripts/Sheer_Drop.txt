@@ -1,5 +1,5 @@
 name=Sheer Drop
-image=https://magiccards.info/scans/en/bfz/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75c85fa4-862d-4f94-9531-b62775838ab9.jpg?1562922839
 image_updated=2015-11-08
 value=2.500
 removal=3

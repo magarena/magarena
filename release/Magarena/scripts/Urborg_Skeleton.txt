@@ -1,5 +1,5 @@
 name=Urborg Skeleton
-image=https://magiccards.info/scans/en/in/134.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e522a62-fbca-4362-9006-d4356c525704.jpg?1562917062
 value=3.488
 rarity=C
 type=Creature

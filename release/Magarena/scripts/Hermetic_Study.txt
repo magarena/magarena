@@ -1,5 +1,5 @@
 name=Hermetic Study
-image=https://magiccards.info/scans/en/us/78.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/8321888a-a450-4c15-9461-255cfaa05367.jpg?1562922645
 value=3.698
 rarity=C
 type=Enchantment

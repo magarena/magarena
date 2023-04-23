@@ -1,5 +1,5 @@
 name=Drekavac
-image=https://magiccards.info/scans/en/di/43.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/459d8cb7-cbb8-4e73-9571-44277f1d1be2.jpg?1593272880
 value=2.625
 rarity=U
 type=Creature

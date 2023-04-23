@@ -1,5 +1,5 @@
 name=Sip of Hemlock
-image=https://magiccards.info/scans/en/ths/106.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22051427-9b2a-4571-8c9f-ee84d8d0e4d1.jpg?1562815635
 value=2.011
 rarity=C
 type=Sorcery

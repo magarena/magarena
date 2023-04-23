@@ -1,5 +1,5 @@
 name=Blinkmoth Nexus
-image=https://magiccards.info/scans/en/mm2/236.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ac535c1-9ef3-45b5-8959-7e79589d47ad.jpg?1599710351
 value=4.212
 rarity=R
 type=Land

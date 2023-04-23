@@ -1,5 +1,5 @@
 name=D'Avenant Healer
-image=https://magiccards.info/scans/en/ts/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/deac6492-ce39-4137-8418-6169d3b1b632.jpg?1562941960
 value=2.636
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ninja of the Deep Hours
-image=https://magiccards.info/scans/en/pc2/21.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fea7980-55e1-47c1-ab18-a89c976b55fc.jpg?1592710604
 image_updated=2016-02-29
 value=4.554
 rarity=C

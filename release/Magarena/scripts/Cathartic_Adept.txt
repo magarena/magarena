@@ -1,5 +1,5 @@
 name=Cathartic Adept
-image=https://magiccards.info/scans/en/ala/34.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e63626d-f55c-4155-9712-511f591c0614.jpg?1562706477
 value=2.825
 rarity=C
 type=Creature

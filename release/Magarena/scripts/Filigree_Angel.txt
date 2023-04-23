@@ -1,5 +1,5 @@
 name=Filigree Angel
-image=https://magiccards.info/scans/en/c16/199.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afee5684-e9ff-4451-b3e9-184c2e83fb36.jpg?1562415456
 image_updated=2017-08-17
 value=3.467
 rarity=R

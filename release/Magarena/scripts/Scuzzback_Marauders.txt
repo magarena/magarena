@@ -1,5 +1,5 @@
 name=Scuzzback Marauders
-image=https://magiccards.info/scans/en/shm/216.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e013b28-7a90-4b4e-a91c-7d864105d28b.jpg?1547518303
 value=3.110
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Simic Sky Swallower
-image=https://magiccards.info/scans/en/ima/208.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f791b7fa-3d12-409d-b017-cb9fd8b71af7.jpg?1608917702
 image_updated=2017-04-12
 value=4.426
 rarity=R

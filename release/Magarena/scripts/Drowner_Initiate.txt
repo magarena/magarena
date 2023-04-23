@@ -1,5 +1,5 @@
 name=Drowner Initiate
-image=https://magiccards.info/scans/en/shm/36.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28accc5f-63a5-47d0-b0e6-747aa0aa43e5.jpg?1562828075
 value=3.422
 rarity=C
 type=Creature

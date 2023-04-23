@@ -1,5 +1,5 @@
 name=Spined Fluke
-image=https://magiccards.info/scans/en/us/160.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a14524b-e690-4f77-b43e-416d5ec3cbb9.jpg?1562924194
 value=3.676
 rarity=U
 type=Creature
