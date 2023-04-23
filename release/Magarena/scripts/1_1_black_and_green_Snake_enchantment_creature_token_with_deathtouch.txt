@@ -1,6 +1,6 @@
 name=1/1 black and green Snake enchantment creature token with deathtouch
 token=Snake
-image=https://magiccards.info/extras/token/journey-into-nyx/snake.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5910a7f2-71a7-4e85-8feb-4a0da228eb15.jpg?1561757192
 value=1
 type=Enchantment,Creature
 subtype=Snake

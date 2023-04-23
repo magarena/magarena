@@ -1,6 +1,6 @@
 name=3/3 green Elephant creature token
 token=Elephant
-image=https://magiccards.info/extras/token/modern-masters-2015/elephant.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3067337-9c65-45cc-9b9f-7de6109b8c1f.jpg?1682211080
 image_updated=2015-11-12
 value=3
 type=Creature

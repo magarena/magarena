@@ -1,6 +1,6 @@
 name=1/1 colorless Eldrazi Scion creature token
 token=Eldrazi Scion
-image=https://magiccards.info/extras/token/battle-for-zendikar/eldrazi-scion-1.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/265b1462-dd9c-42af-8ba0-e840f8a651e2.jpg?1675454928
 image_updated=2015-11-01
 value=1
 type=Creature

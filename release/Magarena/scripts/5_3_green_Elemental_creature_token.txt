@@ -1,6 +1,6 @@
 name=5/3 green Elemental creature token
 token=Elemental
-image=https://magiccards.info/extras/token/commander-2014/elemental.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee793f2e-f5e0-4cdb-b620-6959ff4b6541.jpg?1675456459
 value=4
 pt=5/3
 color=g

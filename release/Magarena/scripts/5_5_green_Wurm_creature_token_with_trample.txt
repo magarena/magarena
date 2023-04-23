@@ -1,6 +1,6 @@
 name=5/5 green Wurm creature token with trample
 token=Wurm
-image=https://magiccards.info/extras/token/return-to-ravnica/wurm.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fd53493-ac85-4dd0-b1db-0ae0130ea2d4.jpg?1562841174
 value=4
 type=Creature
 subtype=Wurm

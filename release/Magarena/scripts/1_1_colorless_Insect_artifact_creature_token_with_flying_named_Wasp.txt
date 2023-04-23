@@ -1,6 +1,6 @@
 name=1/1 colorless Insect artifact creature token with flying named Wasp
 token=Wasp
-image=https://magiccards.info/extras/token/tenth-edition/wasp.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c75b81b5-5c84-45d4-832a-20c038372bc6.jpg?1561758040
 value=1
 type=Artifact,Creature
 subtype=Insect

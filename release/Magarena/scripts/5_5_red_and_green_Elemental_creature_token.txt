@@ -1,6 +1,6 @@
 name=5/5 red and green Elemental creature token
 token=Elemental
-image=https://magiccards.info/extras/token/battle-for-zendikar/elemental-2.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed666385-a2e7-4e1f-ad2c-babbfc0c50b3.jpg?1562640123
 value=5
 type=Creature
 subtype=Elemental

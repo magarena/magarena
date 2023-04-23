@@ -1,6 +1,6 @@
 name=4/4 green Elemental creature token
 token=Elemental
-image=https://magiccards.info/extras/token/lorwyn/elemental-1.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fea0857b-0f9e-4a87-83d7-85723e33f26c.jpg?1560081229
 value=4
 type=Creature
 subtype=Elemental

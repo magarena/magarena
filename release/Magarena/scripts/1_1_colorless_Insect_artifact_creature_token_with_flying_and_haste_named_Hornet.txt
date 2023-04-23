@@ -1,10 +1,10 @@
 name=1/1 colorless Insect artifact creature token with flying and haste named Hornet
 token=Hornet
-image=https://magiccards.info/extras/token/duel-decks-phyrexia-vs-the-coalition/hornet.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54ec2cd6-51f6-4e12-af90-fa254f14ad32.jpg?1561757159
 value=1
 pt=1/1
 color=
 subtype=Insect
 type=Creature
 ability=Flying, haste
-oracle=Flying, deathtouch
+oracle=Flying, haste

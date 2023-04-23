@@ -1,6 +1,6 @@
 name=1/0 blue Elemental creature token
 token=Elemental
-image=https://magiccards.info/extras/token/theros/elemental.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae196fbc-c9ee-4dba-9eb3-52209908b898.jpg?1561757813
 value=1
 type=Creature
 subtype=Elemental

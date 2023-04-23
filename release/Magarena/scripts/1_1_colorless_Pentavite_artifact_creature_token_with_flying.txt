@@ -1,6 +1,6 @@
 name=1/1 colorless Pentavite artifact creature token with flying
 token=Pentavite
-image=https://magiccards.info/extras/token/commander-2014/pentavite.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6571af0-80e2-474b-a8b1-d3d90e954d2b.jpg?1562702285
 image_updated=2015-11-12
 type=Artifact,Creature
 subtype=Pentavite
