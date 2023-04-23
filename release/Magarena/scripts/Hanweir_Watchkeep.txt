@@ -1,5 +1,5 @@
 name=Hanweir Watchkeep
-image=https://magiccards.info/scans/en/isd/145a.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b14ed17-1a35-4c49-ac46-3cad42d46c14.jpg?1562827887
 value=3.431
 rarity=U
 type=Creature

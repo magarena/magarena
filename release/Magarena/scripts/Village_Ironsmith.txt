@@ -1,5 +1,5 @@
 name=Village Ironsmith
-image=https://magiccards.info/scans/en/isd/168a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd5435d0-789f-4c42-8efc-165c072404a2.jpg?1562837238
 value=3.000
 rarity=C
 type=Creature

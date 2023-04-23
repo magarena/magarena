@@ -1,5 +1,5 @@
 name=Ulvenwald Primordials
-image=https://magiccards.info/scans/en/isd/208b.jpg
+image=https://cards.scryfall.io/border_crop/back/8/3/8325c570-4d74-4e65-891c-3e153abf4bf9.jpg?1562833164
 value=3.111
 rarity=U
 type=Creature

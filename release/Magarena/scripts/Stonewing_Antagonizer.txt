@@ -1,5 +1,5 @@
 name=Stonewing Antagonizer
-image=https://magiccards.info/scans/en/soi/266b.jpg
+image=https://cards.scryfall.io/border_crop/back/f/2/f2687683-2986-4e22-97d9-7820c870475b.jpg?1576385495
 value=2.500
 rarity=U
 type=Artifact,Creature

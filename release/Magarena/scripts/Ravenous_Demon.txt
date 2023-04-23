@@ -1,5 +1,5 @@
 name=Ravenous Demon
-image=https://magiccards.info/scans/en/dka/71a.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6aef77b3-4b38-4902-9f7a-dc18b5bb9da9.jpg?1581395237
 value=3.273
 rarity=R
 type=Creature

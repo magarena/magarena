@@ -1,5 +1,5 @@
 name=Daybreak Ranger
-image=https://magiccards.info/scans/en/isd/176a.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25b54a1d-e201-453b-9173-b04e06ee6fb7.jpg?1562827580
 value=3.837
 rarity=R
 type=Creature

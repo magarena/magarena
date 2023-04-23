@@ -1,5 +1,5 @@
 name=Thraben Militia
-image=https://magiccards.info/scans/en/isd/38b.jpg
+image=https://cards.scryfall.io/border_crop/back/5/8/58ae9cbc-d88d-42df-ab76-63ab5d05c023.jpg?1562830610
 value=3.269
 rarity=C
 type=Creature

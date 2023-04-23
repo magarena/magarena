@@ -1,5 +1,5 @@
 name=Tormented Pariah
-image=https://magiccards.info/scans/en/isd/165a.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6151cae7-92a4-4891-a952-21def412d3e4.jpg?1562831128
 value=2.581
 rarity=C
 type=Creature

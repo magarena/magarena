@@ -1,5 +1,5 @@
 name=Docent of Perfection
-image=https://magiccards.info/scans/en/emn/56a.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30c3d4c1-dc3d-4529-9d6e-8c16149cf6da.jpg?1576384090
 image_updated=2016-09-05
 value=2.500
 rarity=R

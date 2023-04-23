@@ -1,5 +1,5 @@
 name=Lone Rider
-image=https://magiccards.info/scans/en/emn/33a.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a55b60a-5d90-4f73-984e-53fdcc0366e4.jpg?1576383921
 image_updated=2016-09-05
 value=2.500
 rarity=U

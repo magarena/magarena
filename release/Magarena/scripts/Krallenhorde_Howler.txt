@@ -1,5 +1,5 @@
 name=Krallenhorde Howler
-image=https://magiccards.info/scans/en/soi/203b.jpg
+image=https://cards.scryfall.io/border_crop/back/e/1/e1915d93-c7dd-4bb7-bd5c-63a359a02b97.jpg?1576385062
 value=2.500
 rarity=U
 type=Creature

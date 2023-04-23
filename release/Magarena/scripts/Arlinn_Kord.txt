@@ -1,5 +1,5 @@
 name=Arlinn Kord
-image=https://magiccards.info/scans/en/soi/243a.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b37aa12c-a6b3-4cf8-b5a4-0a999ff12d02.jpg?1576385339
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

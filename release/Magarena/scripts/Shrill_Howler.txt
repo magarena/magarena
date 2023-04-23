@@ -1,5 +1,5 @@
 name=Shrill Howler
-image=https://magiccards.info/scans/en/emn/168a.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a63c30c0-369a-4a75-b352-edab4d263d1b.jpg?1576384864
 image_updated=2016-09-05
 value=2.500
 rarity=U

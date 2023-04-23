@@ -1,5 +1,5 @@
 name=Loyal Cathar
-image=https://magiccards.info/scans/en/dka/13a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb09041b-4d09-4cae-9e85-b859edae885b.jpg?1581718174
 value=3.595
 rarity=C
 type=Creature

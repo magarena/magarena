@@ -1,5 +1,5 @@
 name=Lone Wolf of the Natterknolls
-image=https://magiccards.info/scans/en/soi/209b.jpg
+image=https://cards.scryfall.io/border_crop/back/d/5/d5e84d80-b5a6-4cd1-9f31-f6ca46bf2c0c.jpg?1576385105
 value=2.500
 rarity=U
 type=Creature

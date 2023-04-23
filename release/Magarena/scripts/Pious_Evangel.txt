@@ -1,5 +1,5 @@
 name=Pious Evangel
-image=https://magiccards.info/scans/en/soi/34a.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7ac2a5aa-71c3-482b-9431-5f0b228cf64d.jpg?1576383871
 value=2.500
 rarity=U
 type=Creature

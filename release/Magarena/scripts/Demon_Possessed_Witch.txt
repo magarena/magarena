@@ -1,5 +1,5 @@
 name=Demon-Possessed Witch
-image=https://magiccards.info/scans/en/soi/119b.jpg
+image=https://cards.scryfall.io/border_crop/back/e/3/e326d5f4-63e1-45fa-8c48-6fdc05709c52.jpg?1576384488
 value=2.500
 rarity=U
 type=Creature

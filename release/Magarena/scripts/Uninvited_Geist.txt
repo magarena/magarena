@@ -1,5 +1,5 @@
 name=Uninvited Geist
-image=https://magiccards.info/scans/en/soi/94a.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dea7c9f-ce66-447b-9f1b-d9bca5806153.jpg?1576384303
 value=2.500
 rarity=U
 type=Creature

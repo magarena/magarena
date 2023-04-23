@@ -1,5 +1,5 @@
 name=Elbrus, the Binding Blade
-image=https://magiccards.info/scans/en/dka/147a.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/683af377-c491-4f62-900c-6b83d75c33c9.jpg?1581718186
 value=3.839
 rarity=M
 type=Legendary,Artifact

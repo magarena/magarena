@@ -1,5 +1,5 @@
 name=Conqueror's Foothold
-image=https://magiccards.info/scans/en/xln/234b.jpg
+image=https://cards.scryfall.io/border_crop/back/0/2/02bb4b2a-3c9f-48ab-b2a5-ae31f06b82d9.jpg?1562549847
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Ghastly Haunting
-image=https://magiccards.info/scans/en/dka/50b.jpg
+image=https://cards.scryfall.io/border_crop/back/f/5/f500cb95-d5ea-4cf2-920a-f1df45a9059b.jpg?1581395269
 value=2.288
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Sage of Ancient Lore
-image=https://magiccards.info/scans/en/soi/225a.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94c5f7fe-9ca6-4040-bf7c-062ab22e6a02.jpg?1576385212
 value=2.500
 rarity=R
 type=Creature

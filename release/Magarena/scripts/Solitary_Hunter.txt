@@ -1,5 +1,5 @@
 name=Solitary Hunter
-image=https://magiccards.info/scans/en/soi/229a.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c200ef1-ea08-48d4-ab50-77940a0e08c3.jpg?1576385243
 value=2.500
 rarity=C
 type=Creature

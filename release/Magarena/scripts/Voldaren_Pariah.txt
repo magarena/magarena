@@ -1,5 +1,5 @@
 name=Voldaren Pariah
-image=https://magiccards.info/scans/en/emn/111a.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25baac6c-5bb4-4ecc-b1d5-fced52087bd9.jpg?1576384469
 image_updated=2016-09-05
 value=2.500
 rarity=R

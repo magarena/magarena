@@ -1,5 +1,5 @@
 name=Dronepack Kindred
-image=https://magiccards.info/scans/en/emn/148b.jpg
+image=https://cards.scryfall.io/border_crop/back/4/6/460f7733-c0a6-4439-a313-7b26ae6ee15b.jpg?1576384721
 image_updated=2016-09-05
 value=2.500
 rarity=C

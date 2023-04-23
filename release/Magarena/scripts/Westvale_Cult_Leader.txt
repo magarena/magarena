@@ -1,5 +1,5 @@
 name=Westvale Cult Leader
-image=https://magiccards.info/scans/en/soi/21b.jpg
+image=https://cards.scryfall.io/border_crop/back/7/e/7e137566-5033-48e8-88ba-65e3821b3cec.jpg?1576383782
 value=2.500
 rarity=R
 type=Creature

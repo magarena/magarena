@@ -1,5 +1,5 @@
 name=Azcanta, the Sunken Ruin
-image=https://magiccards.info/scans/en/xln/74b.jpg
+image=https://cards.scryfall.io/border_crop/back/1/a/1a7e242e-bb48-4134-a1c2-6033713d658f.jpg?1665819797
 value=2.500
 rarity=R
 type=Legendary,Land

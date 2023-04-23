@@ -1,5 +1,5 @@
 name=Hadana's Climb
-image=https://magiccards.info/scans/en/rix/158a.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e7554bc-8583-4059-8895-c3845bc27ae3.jpg?1555428629
 value=2.500
 rarity=R
 type=Legendary,Enchantment

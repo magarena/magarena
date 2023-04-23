@@ -1,5 +1,5 @@
 name=Avacynian Missionaries
-image=https://magiccards.info/scans/en/soi/6a.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/1001e708-e4f9-456a-8b9d-3421a2a3833d.jpg?1576383680
 value=2.500
 rarity=U
 type=Creature

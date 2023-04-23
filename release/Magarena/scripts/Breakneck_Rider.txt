@@ -1,5 +1,5 @@
 name=Breakneck Rider
-image=https://magiccards.info/scans/en/soi/147a.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe9f85e8-1e4c-4478-8344-71fae357b694.jpg?1576384668
 value=2.500
 rarity=U
 type=Creature

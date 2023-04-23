@@ -1,5 +1,5 @@
 name=Wolfbitten Captive
-image=https://magiccards.info/scans/en/dka/133a.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/1303e02a-ef69-4817-bca5-02c74774b811.jpg?1581395277
 value=3.410
 rarity=R
 type=Creature

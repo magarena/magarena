@@ -1,5 +1,5 @@
 name=Awoken Horror
-image=https://magiccards.info/scans/en/soi/92b.jpg
+image=https://cards.scryfall.io/border_crop/back/3/5/359d1b13-6156-43b0-a9a7-6bfff36c1a91.jpg?1576384282
 value=2.500
 rarity=R
 type=Creature

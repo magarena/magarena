@@ -1,5 +1,5 @@
 name=Heir of Falkenrath
-image=https://magiccards.info/scans/en/soi/116a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf2ad186-4d85-4628-ae84-3c58c88d34cb.jpg?1576384463
 value=2.500
 rarity=U
 type=Creature

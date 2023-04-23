@@ -1,5 +1,5 @@
 name=Elusive Tormentor
-image=https://magiccards.info/scans/en/soi/108a.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a32ce90d-9138-4aca-aa3c-a558dd16fad8.jpg?1576384405
 value=2.500
 rarity=R
 type=Creature

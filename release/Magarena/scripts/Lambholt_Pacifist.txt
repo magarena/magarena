@@ -1,5 +1,5 @@
 name=Lambholt Pacifist
-image=https://magiccards.info/scans/en/soi/215a.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23f3fa96-6276-463e-8033-a64c8f06c933.jpg?1576385150
 value=2.500
 rarity=U
 type=Creature

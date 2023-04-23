@@ -1,5 +1,5 @@
 name=Merciless Predator
-image=https://magiccards.info/scans/en/isd/159b.jpg
+image=https://cards.scryfall.io/border_crop/back/0/2/028aeebc-4073-4595-94da-02f9f96ea148.jpg?1562825445
 value=3.845
 rarity=U
 type=Creature

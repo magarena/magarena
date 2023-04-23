@@ -1,5 +1,5 @@
 name=Lord of Lineage
-image=https://magiccards.info/scans/en/isd/90b.jpg
+image=https://cards.scryfall.io/border_crop/back/1/3/13896468-e3d0-4bcb-b09e-b5c187aecb03.jpg?1562826506
 value=3.943
 rarity=R
 type=Creature

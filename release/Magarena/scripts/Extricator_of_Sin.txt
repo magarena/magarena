@@ -1,5 +1,5 @@
 name=Extricator of Sin
-image=https://magiccards.info/scans/en/emn/23a.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6867ddd-f953-41c6-ba36-86ae2c14c908.jpg?1576383847
 image_updated=2016-09-05
 value=2.500
 rarity=U

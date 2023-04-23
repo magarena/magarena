@@ -1,5 +1,5 @@
 name=Garruk, the Veil-Cursed
-image=https://magiccards.info/scans/en/isd/181b.jpg
+image=https://cards.scryfall.io/border_crop/back/b/4/b4160322-ff40-41a4-887a-73cd6b85ae45.jpg?1562835830
 value=3.468
 rarity=M
 type=Legendary,Planeswalker

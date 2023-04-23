@@ -1,5 +1,5 @@
 name=Heir to the Night
-image=https://magiccards.info/scans/en/soi/116b.jpg
+image=https://cards.scryfall.io/border_crop/back/c/f/cf2ad186-4d85-4628-ae84-3c58c88d34cb.jpg?1576384463
 value=2.500
 rarity=U
 type=Creature

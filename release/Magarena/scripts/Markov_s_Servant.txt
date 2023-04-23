@@ -1,5 +1,5 @@
 name=Markov's Servant
-image=https://magiccards.info/scans/en/dka/55b.jpg
+image=https://cards.scryfall.io/border_crop/back/7/c/7c5a3c09-5656-4975-ba03-2d809903ed18.jpg?1581395121
 value=2.631
 rarity=C
 type=Creature

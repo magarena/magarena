@@ -1,5 +1,5 @@
 name=Grisly Anglerfish
-image=https://magiccards.info/scans/en/emn/63b.jpg
+image=https://cards.scryfall.io/border_crop/back/1/e/1eb4ddf4-f695-412d-be80-b93392432498.jpg?1576384142
 image_updated=2016-09-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Archangel Avacyn
-image=https://magiccards.info/scans/en/soi/5a.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae155ee2-008f-4dc6-82bf-476be7baa224.jpg?1576383667
 value=2.500
 rarity=M
 type=Legendary,Creature

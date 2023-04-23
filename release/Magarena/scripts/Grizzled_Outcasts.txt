@@ -1,5 +1,5 @@
 name=Grizzled Outcasts
-image=https://magiccards.info/scans/en/isd/185a.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b43b0cb-a5a3-47b4-9b6b-9d2638222bb6.jpg?1562829761
 value=2.585
 rarity=C
 type=Creature

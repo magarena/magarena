@@ -1,5 +1,5 @@
 name=Lambholt Elder
-image=https://magiccards.info/scans/en/dka/122a.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/932d753d-9584-4ad8-9a5e-a3524184f961.jpg?1581395184
 value=3.179
 rarity=U
 type=Creature

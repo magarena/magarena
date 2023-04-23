@@ -1,5 +1,5 @@
 name=Bearer of Overwhelming Truths
-image=https://magiccards.info/scans/en/soi/54b.jpg
+image=https://cards.scryfall.io/border_crop/back/4/4/440f9f10-6999-4cff-ab98-8aed77813b07.jpg?1576384019
 value=2.500
 rarity=U
 type=Creature

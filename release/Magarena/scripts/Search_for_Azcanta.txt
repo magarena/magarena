@@ -1,5 +1,5 @@
 name=Search for Azcanta
-image=https://magiccards.info/scans/en/xln/74a.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a7e242e-bb48-4134-a1c2-6033713d658f.jpg?1665819797
 value=2.500
 rarity=R
 type=Legendary,Enchantment

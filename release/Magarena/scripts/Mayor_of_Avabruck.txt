@@ -1,5 +1,5 @@
 name=Mayor of Avabruck
-image=https://magiccards.info/scans/en/isd/193a.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd8ca448-f734-4cb9-b1d5-790eed9a4b2d.jpg?1562838270
 value=4.209
 rarity=R
 type=Creature

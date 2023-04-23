@@ -1,5 +1,5 @@
 name=Antagonism
-image=https://magiccards.info/scans/en/us/173.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b9db511-089e-413f-8005-ccb05ec3b06e.jpg?1562917532
 value=3.684
 rarity=R
 type=Enchantment

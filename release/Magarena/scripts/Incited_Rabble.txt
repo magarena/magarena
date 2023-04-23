@@ -1,5 +1,5 @@
 name=Incited Rabble
-image=https://magiccards.info/scans/en/soi/46b.jpg
+image=https://cards.scryfall.io/border_crop/back/d/2/d238d324-8c88-43ca-b203-133830d29447.jpg?1576383957
 value=2.500
 rarity=U
 type=Creature

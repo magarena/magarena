@@ -1,5 +1,5 @@
 name=Branded Howler
-image=https://magiccards.info/scans/en/soi/149b.jpg
+image=https://cards.scryfall.io/border_crop/back/f/4/f43f5f02-1b29-4e75-a6af-378dcc88c3df.jpg?1576384687
 value=2.500
 rarity=C
 type=Creature

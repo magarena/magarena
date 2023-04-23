@@ -1,5 +1,5 @@
 name=Thaumatic Compass
-image=https://magiccards.info/scans/en/xln/249a.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/392af78e-34d5-4b1b-8b29-0e702271e4d7.jpg?1562553540
 value=2.500
 rarity=R
 type=Artifact

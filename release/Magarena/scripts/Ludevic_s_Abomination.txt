@@ -1,5 +1,5 @@
 name=Ludevic's Abomination
-image=https://magiccards.info/scans/en/isd/64b.jpg
+image=https://cards.scryfall.io/border_crop/back/e/b/ebf5e16f-a8bd-419f-b5ca-8c7fce09c4f1.jpg?1562839206
 value=3.806
 rarity=R
 type=Creature

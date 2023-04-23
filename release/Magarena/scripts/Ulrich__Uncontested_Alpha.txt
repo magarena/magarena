@@ -1,5 +1,5 @@
 name=Ulrich, Uncontested Alpha
-image=https://magiccards.info/scans/en/emn/191b.jpg
+image=https://cards.scryfall.io/border_crop/back/3/e/3e2011f0-a640-4579-bd67-1dfbc09b8c09.jpg?1576385037
 image_updated=2016-09-05
 value=2.500
 rarity=M

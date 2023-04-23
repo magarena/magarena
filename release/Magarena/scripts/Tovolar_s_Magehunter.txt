@@ -1,5 +1,5 @@
 name=Tovolar's Magehunter
-image=https://magiccards.info/scans/en/dka/98b.jpg
+image=https://cards.scryfall.io/border_crop/back/b/1/b150d71f-11c9-40d6-a461-4967ef437315.jpg?1581395222
 value=3.403
 rarity=R
 type=Creature

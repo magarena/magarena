@@ -1,5 +1,5 @@
 name=Gatstaf Shepherd
-image=https://magiccards.info/scans/en/isd/182a.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57f0907f-74f4-4d86-93df-f2e50c9d0b2f.jpg?1562830557
 value=3.545
 rarity=U
 type=Creature

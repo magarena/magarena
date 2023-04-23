@@ -1,5 +1,5 @@
 name=Timber Shredder
-image=https://magiccards.info/scans/en/soi/210b.jpg
+image=https://cards.scryfall.io/border_crop/back/1/4/14529bed-9632-4d58-8edc-c5a1359f6604.jpg?1576385116
 value=2.500
 rarity=C
 type=Creature

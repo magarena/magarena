@@ -1,5 +1,5 @@
 name=Wildblood Pack
-image=https://magiccards.info/scans/en/isd/149b.jpg
+image=https://cards.scryfall.io/border_crop/back/b/b/bb90a6f1-c7f2-4c2e-ab1e-59c5c7937841.jpg?1562836209
 value=3.844
 rarity=R
 type=Creature

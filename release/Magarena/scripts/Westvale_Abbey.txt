@@ -1,5 +1,5 @@
 name=Westvale Abbey
-image=https://magiccards.info/scans/en/soi/281a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1f53d7a-9dad-46e8-b686-cd1362867445.jpg?1576385590
 value=2.500
 rarity=R
 type=Land

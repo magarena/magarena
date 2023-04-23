@@ -1,5 +1,5 @@
 name=Treasure Map
-image=https://magiccards.info/scans/en/xln/250a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0f9c733-0818-4a03-8f0c-a163d09e0fff.jpg?1562563368
 value=2.500
 rarity=R
 type=Artifact

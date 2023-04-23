@@ -1,5 +1,5 @@
 name=Arguel's Blood Fast
-image=https://magiccards.info/scans/en/xln/90a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4ac7570-e74e-4081-ac53-cf41e695b7eb.jpg?1562563598
 value=2.500
 rarity=R
 type=Legendary,Enchantment
