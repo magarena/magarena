@@ -1,5 +1,5 @@
 name=Voice of the Provinces
-image=https://magiccards.info/scans/en/avr/40.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30a78066-c52e-48fd-bcf9-d0b60f00fddc.jpg?1600718494
 value=1.643
 rarity=C
 type=Creature

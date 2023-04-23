@@ -1,5 +1,5 @@
 name=Stromgald Cabal
-image=https://magiccards.info/scans/en/6e/157.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8eb95ec-f745-460a-8a3b-59e4d6deaac0.jpg?1562870007
 value=3.683
 rarity=R
 type=Creature

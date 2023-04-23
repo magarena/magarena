@@ -1,5 +1,5 @@
 name=Granulate
-image=https://magiccards.info/scans/en/5dn/67.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e13798b8-689e-4f19-af10-b72d3fe19f3c.jpg?1657014395
 value=3.327
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Retromancer
-image=https://magiccards.info/scans/en/us/209.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9fbf63d-7106-47d5-97c3-4596d8239925.jpg?1562944303
 value=3.081
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Linvala, the Preserver
-image=https://magiccards.info/scans/en/ogw/25.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef0dbb08-d124-46da-bfb1-af7ef4a18179.jpg?1562943031
 image_updated=2016-02-29
 value=2.500
 rarity=M

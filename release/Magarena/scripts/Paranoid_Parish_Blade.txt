@@ -1,5 +1,5 @@
 name=Paranoid Parish-Blade
-image=https://magiccards.info/scans/en/soi/33.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16bb6c60-1889-49ed-8767-8144cc5a9571.jpg?1576383858
 value=2.500
 rarity=U
 type=Creature

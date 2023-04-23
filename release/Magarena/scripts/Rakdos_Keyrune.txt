@@ -1,5 +1,5 @@
 name=Rakdos Keyrune
-image=https://magiccards.info/scans/en/rtr/232.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6124b4c-49a1-42e3-a6ff-62de231c7823.jpg?1562795532
 value=3.411
 rarity=U
 type=Artifact

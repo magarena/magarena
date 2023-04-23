@@ -1,5 +1,5 @@
 name=Hyena Pack
-image=https://magiccards.info/scans/en/akh/139.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9fa8351-567e-4ef4-8346-c58e50c778a6.jpg?1543675630
 value=2.500
 rarity=C
 type=Creature

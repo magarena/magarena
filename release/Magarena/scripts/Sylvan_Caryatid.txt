@@ -1,5 +1,5 @@
 name=Sylvan Caryatid
-image=https://magiccards.info/scans/en/ths/180.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d40b65c1-b24d-492d-81b9-d8474ebdc08c.jpg?1562832168
 value=3.619
 rarity=R
 type=Creature

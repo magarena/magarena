@@ -1,5 +1,5 @@
 name=Thunder Dragon
-image=https://magiccards.info/scans/en/st/119.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9ff75ff4-495f-4a0c-9d98-69eff1b3fa32.jpg?1674142140
 value=4.190
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Nekusar, the Mindrazer
-image=https://magiccards.info/scans/en/c13/201.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f7f2417-12de-4e57-9714-d878880a1208.jpg?1562908194
 value=3.724
 rarity=M
 type=Legendary,Creature

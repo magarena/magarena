@@ -1,5 +1,5 @@
 name=Rush of Knowledge
-image=https://magiccards.info/scans/en/c14/123.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccca07a9-5c24-490f-8871-b125cb337e2c.jpg?1598304240
 value=2.500
 rarity=C
 type=Sorcery

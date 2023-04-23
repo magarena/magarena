@@ -1,5 +1,5 @@
 name=Kor Cartographer
-image=https://magiccards.info/scans/en/zen/18.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6226b346-ca4c-45ea-871c-1a8fb7f9be0d.jpg?1631234089
 image_updated=2016-12-21
 value=3.037
 rarity=C

@@ -1,5 +1,5 @@
 name=Trueheart Twins
-image=https://magiccards.info/scans/en/akh/153.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac510911-1a65-4509-b6c9-ddac1950c838.jpg?1543675732
 value=2.500
 rarity=U
 type=Creature

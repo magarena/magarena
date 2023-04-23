@@ -1,5 +1,5 @@
 name=Nefarious Lich
-image=https://magiccards.info/scans/en/od/153.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d90f5a4e-8c3a-4803-bb59-d3d7c23761db.jpg?1562935579
 value=2.534
 rarity=R
 type=Enchantment

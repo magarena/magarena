@@ -1,5 +1,5 @@
 name=Quill-Slinger Boggart
-image=https://magiccards.info/scans/en/lw/137.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3a15a9d-46d7-4181-8131-50ba46a11c7b.jpg?1562366955
 value=2.294
 rarity=C
 type=Creature

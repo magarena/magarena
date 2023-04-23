@@ -1,5 +1,5 @@
 name=Elder of Laurels
-image=https://magiccards.info/scans/en/isd/177.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32b82ef0-c974-4357-b21a-4c2a28ec7279.jpg?1562828307
 value=3.509
 rarity=R
 type=Creature

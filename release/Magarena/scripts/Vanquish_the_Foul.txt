@@ -1,5 +1,5 @@
 name=Vanquish the Foul
-image=https://magiccards.info/scans/en/ths/35.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8fdcec06-e33c-4737-b81e-b156d6e3fd77.jpg?1562821391
 value=1.936
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Talas Researcher
-image=https://magiccards.info/scans/en/po2/51.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdd80205-54e2-46fe-bb11-955029a5a70a.jpg?1562955128
 value=2.690
 rarity=R
 type=Creature

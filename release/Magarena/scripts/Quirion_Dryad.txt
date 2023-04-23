@@ -1,5 +1,5 @@
 name=Quirion Dryad
-image=https://magiccards.info/scans/en/m13/184.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a20d20f7-bc4d-42fa-9f5b-5bb330eb7f38.jpg?1594737152
 value=4.335
 rarity=R
 type=Creature

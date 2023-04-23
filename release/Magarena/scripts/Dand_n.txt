@@ -1,5 +1,5 @@
 name=Dandân
-image=https://magiccards.info/scans/en/tsts/19.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac2e32d0-f172-4934-9d73-1bc2ab86586e.jpg?1562781784
 value=2.984
 rarity=C
 type=Creature

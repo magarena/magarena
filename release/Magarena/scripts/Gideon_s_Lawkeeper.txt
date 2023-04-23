@@ -1,5 +1,5 @@
 name=Gideon's Lawkeeper
-image=https://magiccards.info/scans/en/mm3/7.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/757d58fc-cf26-4095-9616-a47e9501cc0d.jpg?1592765325
 image_updated=2017-08-08
 value=4.095
 rarity=C

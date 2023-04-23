@@ -1,5 +1,5 @@
 name=Glaze Fiend
-image=https://magiccards.info/scans/en/ala/77.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07f9a946-f961-4e19-a30a-6e1a95683340.jpg?1598304774
 value=3.088
 rarity=C
 type=Artifact,Creature

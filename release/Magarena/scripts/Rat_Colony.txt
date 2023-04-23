@@ -1,5 +1,5 @@
 name=Rat Colony
-image=https://magiccards.info/scans/en/dom/101.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f618e07-f06f-45d2-8512-e6cef88c0434.jpg?1562735454
 value=2.500
 rarity=C
 type=Creature

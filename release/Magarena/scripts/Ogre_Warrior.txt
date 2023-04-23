@@ -1,5 +1,5 @@
 name=Ogre Warrior
-image=https://magiccards.info/scans/en/st2k/12.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0a6848f-7cb3-4ab0-a14a-e7fb62562861.jpg?1562133684
 value=1.774
 rarity=C
 type=Creature

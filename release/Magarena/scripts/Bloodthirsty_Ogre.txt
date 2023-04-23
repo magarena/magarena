@@ -1,5 +1,5 @@
 name=Bloodthirsty Ogre
-image=https://magiccards.info/scans/en/chk/104.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c557f035-f93b-41ce-b8de-dea79dcf15be.jpg?1562764198
 value=2.757
 rarity=U
 type=Creature

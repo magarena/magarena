@@ -1,5 +1,5 @@
 name=Cackling Flames
-image=https://magiccards.info/scans/en/di/59.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a54a371e-fb82-41f1-892c-975f932b668e.jpg?1593273099
 value=1.772
 rarity=C
 type=Instant

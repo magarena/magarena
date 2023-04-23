@@ -1,5 +1,5 @@
 name=Orcish Squatters
-image=https://magiccards.info/scans/en/5e/258.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2f1d50a-f173-4aab-8f30-2c062efd6240.jpg?1562869992
 value=3.419
 rarity=R
 type=Creature

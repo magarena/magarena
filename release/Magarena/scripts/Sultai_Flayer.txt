@@ -1,5 +1,5 @@
 name=Sultai Flayer
-image=https://magiccards.info/scans/en/ima/186.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e50d74eb-07df-48b5-8788-8b5f5fc0b22b.jpg?1562855137
 image_updated=2017-04-12
 value=3.750
 rarity=U

@@ -1,5 +1,5 @@
 name=Turn to Slag
-image=https://magiccards.info/scans/en/m13/153.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38c18541-e95e-4ae0-be18-3bfcafa24ca2.jpg?1594736842
 value=2.350
 rarity=C
 type=Sorcery

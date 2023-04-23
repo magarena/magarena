@@ -1,5 +1,5 @@
 name=Weatherseed Treefolk
-image=https://magiccards.info/scans/en/ul/116.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f42cce45-3b6a-43e2-8329-68c30135c5c1.jpg?1562864248
 value=4.399
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Fanatical Firebrand
-image=https://magiccards.info/scans/en/rix/101.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05469d01-0d2b-47b9-8a69-16cf0c3d43f8.jpg?1601077610
 value=2.500
 rarity=C
 type=Creature

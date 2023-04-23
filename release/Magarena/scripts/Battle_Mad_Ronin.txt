@@ -1,5 +1,5 @@
 name=Battle-Mad Ronin
-image=https://magiccards.info/scans/en/chk/156.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6e4394a-fa91-4cf9-99c1-dc0bc1011c5b.jpg?1562763448
 value=2.743
 rarity=C
 type=Creature

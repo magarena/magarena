@@ -1,5 +1,5 @@
 name=Panacea
-image=https://magiccards.info/scans/en/mm/308.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89414770-2a19-4baf-9b18-76104b7b0b9a.jpg?1562381843
 value=1.700
 rarity=U
 type=Artifact

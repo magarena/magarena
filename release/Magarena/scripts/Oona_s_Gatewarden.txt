@@ -1,5 +1,5 @@
 name=Oona's Gatewarden
-image=https://magiccards.info/scans/en/shm/173.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/972bb6e4-300c-49f5-8305-459a3ba67baa.jpg?1562833464
 value=3.669
 rarity=C
 type=Creature

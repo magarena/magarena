@@ -1,5 +1,5 @@
 name=Looming Hoverguard
-image=https://magiccards.info/scans/en/mi/38.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29de2f4c-81a6-42c7-94d1-f9109c3331ff.jpg?1562139242
 value=2.261
 rarity=U
 type=Creature

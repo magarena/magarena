@@ -1,5 +1,5 @@
 name=Fists of the Demigod
-image=https://magiccards.info/scans/en/shm/187.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b28e501-fbb1-443b-a296-420716e49ab0.jpg?1562833675
 value=3.960
 rarity=C
 type=Enchantment

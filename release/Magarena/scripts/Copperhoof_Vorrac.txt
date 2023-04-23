@@ -1,5 +1,5 @@
 name=Copperhoof Vorrac
-image=https://magiccards.info/scans/en/mi/116.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81fff4cc-b2ab-4a41-bede-0d807552ba46.jpg?1562149121
 value=3.080
 rarity=R
 type=Creature

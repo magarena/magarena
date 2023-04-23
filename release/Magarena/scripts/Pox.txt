@@ -1,5 +1,5 @@
 name=Pox
-image=https://magiccards.info/scans/en/5e/51.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9debe4f-c1cc-4b90-aae4-f31f737e2016.jpg?1559592327
 value=4.458
 rarity=R
 type=Sorcery

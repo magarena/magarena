@@ -1,5 +1,5 @@
 name=Marauder's Axe
-image=https://magiccards.info/scans/en/m19/240.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49d8aa8a-3e87-42ac-9c79-2baec771c1ef.jpg?1601080796
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Silumgar Monument
-image=https://magiccards.info/scans/en/dtk/243.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3243e300-1420-4e96-a3d3-610c3723a11f.jpg?1562784471
 value=2.500
 rarity=U
 type=Artifact

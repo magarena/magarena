@@ -1,5 +1,5 @@
 name=Urborg Emissary
-image=https://magiccards.info/scans/en/in/131.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6912c71-1836-4e87-9a65-d577d903d03c.jpg?1562941302
 value=2.581
 rarity=U
 type=Creature

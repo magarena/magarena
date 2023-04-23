@@ -1,5 +1,5 @@
 name=Titania, Protector of Argoth
-image=https://magiccards.info/scans/en/c14/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21f6d49f-1577-4d17-a633-0c282769728a.jpg?1626100668
 value=2.500
 rarity=M
 type=Legendary,Creature

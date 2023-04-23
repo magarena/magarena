@@ -1,5 +1,5 @@
 name=Plant Elemental
-image=https://magiccards.info/scans/en/po/107.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/892594db-1d66-4c45-bd54-608a9972ca77.jpg?1562446887
 value=3.484
 rarity=U
 type=Creature

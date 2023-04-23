@@ -1,5 +1,5 @@
 name=Mannichi, the Fevered Dream
-image=https://magiccards.info/scans/en/bok/112.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b403bdbb-13ab-43dd-a994-d45b994f6e0e.jpg?1593860740
 value=3.744
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Wall of Bone
-image=https://magiccards.info/scans/en/m10/119.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45025791-a94a-4046-8297-3b7a2019e4a3.jpg?1562911164
 image_updated=2011-01-11
 value=3.724
 rarity=U

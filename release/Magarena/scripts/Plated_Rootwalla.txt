@@ -1,5 +1,5 @@
 name=Plated Rootwalla
-image=https://magiccards.info/scans/en/ex/116.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bf4da70-c656-4e40-bb0f-68e9dda024c9.jpg?1562087830
 image_updated=2017-01-03
 value=2.203
 rarity=C

@@ -1,5 +1,5 @@
 name=Oakheart Dryads
-image=https://magiccards.info/scans/en/jou/133.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8ef63b9-c021-40fe-910e-93c06d660c20.jpg?1593096261
 value=3.020
 rarity=C
 type=Enchantment,Creature

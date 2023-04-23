@@ -1,5 +1,5 @@
 name=Spidersilk Net
-image=https://magiccards.info/scans/en/dtk/244.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9561b47c-b863-463a-8a10-56fede2cb42c.jpg?1562790111
 value=3.610
 rarity=C
 type=Artifact

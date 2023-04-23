@@ -1,5 +1,5 @@
 name=Nightshade Peddler
-image=https://magiccards.info/scans/en/avr/187.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d3de66c-2283-458f-9d0d-943027520aa2.jpg?1592709402
 value=3.549
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spire Tracer
-image=https://magiccards.info/scans/en/gtc/135.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/428b0d43-94c9-4f7f-b042-ea63f88ac697.jpg?1561824189
 value=3.186
 rarity=C
 type=Creature

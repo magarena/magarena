@@ -1,5 +1,5 @@
 name=Quirion Trailblazer
-image=https://magiccards.info/scans/en/in/205.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2b258c1-5fb4-4072-bb32-ad364df1874a.jpg?1562934099
 value=2.411
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ridgeline Rager
-image=https://magiccards.info/scans/en/8e/215.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43d9c248-2360-4fdc-9a0f-49d350c11e95.jpg?1562908680
 value=3.152
 rarity=C
 type=Creature

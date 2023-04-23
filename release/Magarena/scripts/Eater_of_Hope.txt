@@ -1,5 +1,5 @@
 name=Eater of Hope
-image=https://magiccards.info/scans/en/c15/123.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7c62113-48c1-47ae-8ede-c05c1c914c3b.jpg?1637630150
 image_updated=2016-02-29
 value=2.973
 rarity=R

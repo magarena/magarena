@@ -1,5 +1,5 @@
 name=Bad Moon
-image=https://magiccards.info/scans/en/c14/135.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f8a75da-ea3c-43e7-9d32-1c92f8ec0fd2.jpg?1562928849
 value=4.136
 rarity=R
 type=Enchantment

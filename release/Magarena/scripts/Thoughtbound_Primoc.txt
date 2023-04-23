@@ -1,5 +1,5 @@
 name=Thoughtbound Primoc
-image=https://magiccards.info/scans/en/on/240.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e89156b5-8bdb-41d1-a7aa-63f770a9b070.jpg?1562950377
 value=2.158
 rarity=U
 type=Creature

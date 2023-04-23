@@ -1,5 +1,5 @@
 name=Gnaw to the Bone
-image=https://magiccards.info/scans/en/isd/183.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/416148c8-13d3-46d3-ac93-6eb7cbab2881.jpg?1562829128
 value=3.581
 rarity=C
 type=Instant

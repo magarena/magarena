@@ -1,5 +1,5 @@
 name=Aven Redeemer
-image=https://magiccards.info/scans/en/le/3.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a2fa0a3-e40f-49e4-a4fd-427e7e808afd.jpg?1562922946
 value=2.685
 rarity=C
 type=Creature

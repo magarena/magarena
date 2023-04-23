@@ -1,5 +1,5 @@
 name=Call the Bloodline
-image=https://magiccards.info/scans/en/soi/103.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ec85cca-ac2c-4b1b-850b-6a762df72bd0.jpg?1576384367
 value=2.500
 rarity=U
 type=Enchantment

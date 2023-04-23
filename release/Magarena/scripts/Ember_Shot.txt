@@ -1,5 +1,5 @@
 name=Ember Shot
-image=https://magiccards.info/scans/en/ju/87.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a9eb72b-9ae2-4b64-bbb9-187446b5fd2f.jpg?1562630295
 value=0.889
 rarity=C
 type=Instant

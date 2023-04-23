@@ -1,5 +1,5 @@
 name=Deathpact Angel
-image=https://magiccards.info/scans/en/gtc/153.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81cfc3c5-6d69-443e-a506-76b94178979b.jpg?1561833747
 value=3.294
 rarity=M
 type=Creature

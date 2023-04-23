@@ -1,5 +1,5 @@
 name=Imaginary Threats
-image=https://magiccards.info/scans/en/hou/37.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50c3a6a5-9a50-4a38-9f5f-b8caa320909d.jpg?1562799019
 value=2.500
 rarity=U
 type=Instant

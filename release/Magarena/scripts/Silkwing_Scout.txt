@@ -1,5 +1,5 @@
 name=Silkwing Scout
-image=https://magiccards.info/scans/en/di/31.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04f165aa-2986-47d1-912d-d50490a15c0b.jpg?1593272743
 value=2.574
 rarity=C
 type=Creature

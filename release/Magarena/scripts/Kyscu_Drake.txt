@@ -1,5 +1,5 @@
 name=Kyscu Drake
-image=https://magiccards.info/scans/en/vi/61.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6f14bbe-2436-4a5a-8e2a-8066b740b715.jpg?1562278619
 value=2.576
 rarity=U
 type=Creature

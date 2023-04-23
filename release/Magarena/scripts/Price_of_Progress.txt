@@ -1,5 +1,5 @@
 name=Price of Progress
-image=https://magiccards.info/scans/en/ema/141.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1342144-7a15-438b-a848-3196238a79e8.jpg?1580014614
 value=4.570
 rarity=U
 type=Instant

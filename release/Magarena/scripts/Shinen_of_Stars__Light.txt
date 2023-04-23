@@ -1,5 +1,5 @@
 name=Shinen of Stars' Light
-image=https://magiccards.info/scans/en/sok/28.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64cd3ee0-d893-4346-98b6-7d7896ad7663.jpg?1562494189
 value=1.972
 rarity=C
 type=Creature

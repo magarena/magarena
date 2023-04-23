@@ -1,5 +1,5 @@
 name=Titanium Golem
-image=https://magiccards.info/scans/en/mi/263.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8defd53c-3792-4ed3-aee9-cffda2b8a8b6.jpg?1562150543
 value=1.343
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Plated Geopede
-image=https://magiccards.info/scans/en/zen/141.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80d5fa13-1dc3-4f10-860e-70902aca7ac9.jpg?1581708477
 image_updated=2017-01-03
 value=4.013
 rarity=C

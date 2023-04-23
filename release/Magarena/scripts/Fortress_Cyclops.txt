@@ -1,5 +1,5 @@
 name=Fortress Cyclops
-image=https://magiccards.info/scans/en/gtc/164.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39f835f0-abba-402c-bdae-be03ad3fb658.jpg?1561823363
 value=2.892
 rarity=U
 type=Creature

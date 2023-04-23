@@ -1,5 +1,5 @@
 name=Oaken Brawler
-image=https://magiccards.info/scans/en/lw/33.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9fdb060-8f4d-453a-9516-92c390fbc85a.jpg?1562372753
 value=2.278
 rarity=C
 type=Creature

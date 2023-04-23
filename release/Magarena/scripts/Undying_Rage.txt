@@ -1,5 +1,5 @@
 name=Undying Rage
-image=https://magiccards.info/scans/en/ema/152.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9db7aa92-d86a-4986-a661-f3025ca79d3d.jpg?1608910444
 value=2.917
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Funeral March
-image=https://magiccards.info/scans/en/5e/26.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/376e1f71-47a0-4a94-90c6-4fef0e9f0026.jpg?1562868084
 value=3.115
 rarity=C
 type=Enchantment

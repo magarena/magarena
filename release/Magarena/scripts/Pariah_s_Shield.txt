@@ -1,5 +1,5 @@
 name=Pariah's Shield
-image=https://magiccards.info/scans/en/rav/267.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc316f1e-84ce-4013-a150-d537f964a604.jpg?1598918089
 value=3.705
 rarity=R
 type=Artifact

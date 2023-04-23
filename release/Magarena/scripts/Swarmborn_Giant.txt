@@ -1,5 +1,5 @@
 name=Swarmborn Giant
-image=https://magiccards.info/scans/en/jou/144.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84a3ddf9-b682-4691-bb1d-abd1d3486f59.jpg?1593096360
 value=3.333
 rarity=U
 type=Creature

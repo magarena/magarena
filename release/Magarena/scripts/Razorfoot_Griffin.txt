@@ -1,5 +1,5 @@
 name=Razorfoot Griffin
-image=https://magiccards.info/scans/en/m15/27.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/662d812f-4936-48e4-acbe-abccf9ab21c7.jpg?1562788180
 value=2.250
 rarity=C
 type=Creature

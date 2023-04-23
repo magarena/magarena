@@ -1,5 +1,5 @@
 name=Arahbo, Roar of the World
-image=https://magiccards.info/scans/en/c17/35.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81dc3d00-97cd-4549-b5a4-15a1e08767f5.jpg?1567181403
 image_updated=2017-10-03
 value=2.500
 rarity=M

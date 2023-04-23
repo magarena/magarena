@@ -1,5 +1,5 @@
 name=Nephalia Smuggler
-image=https://magiccards.info/scans/en/avr/69.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e9a17b5-422c-4add-adbf-63e4492121e8.jpg?1673147385
 value=2.985
 rarity=U
 type=Creature

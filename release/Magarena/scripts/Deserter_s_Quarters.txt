@@ -1,5 +1,5 @@
 name=Deserter's Quarters
-image=https://magiccards.info/scans/en/jou/160.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f7d3b2d-e06e-4d30-9ed8-2a52aa7e31c6.jpg?1593096506
 value=1.417
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Needle Specter
-image=https://magiccards.info/scans/en/eve/39.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21af9e72-fbaf-460a-a2eb-a09b925ebd9a.jpg?1562902133
 value=3.617
 rarity=R
 type=Creature

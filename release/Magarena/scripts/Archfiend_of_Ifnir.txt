@@ -1,5 +1,5 @@
 name=Archfiend of Ifnir
-image=https://magiccards.info/scans/en/akh/78.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33176679-d571-47a1-ae05-bed9b748491d.jpg?1543675179
 value=2.500
 rarity=R
 type=Creature

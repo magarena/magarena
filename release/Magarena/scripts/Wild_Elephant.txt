@@ -1,5 +1,5 @@
 name=Wild Elephant
-image=https://magiccards.info/scans/en/mr/152.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/7809131c-747c-4c33-a3ca-13e573a92b66.jpg?1587912718
 value=2.846
 rarity=C
 type=Creature

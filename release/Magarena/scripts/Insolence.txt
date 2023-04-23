@@ -1,5 +1,5 @@
 name=Insolence
-image=https://magiccards.info/scans/en/ps/63.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8009a37-f966-4a71-9a2a-469127758dc6.jpg?1562940681
 value=2.357
 rarity=C
 type=Enchantment

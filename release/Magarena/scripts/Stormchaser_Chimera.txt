@@ -1,5 +1,5 @@
 name=Stormchaser Chimera
-image=https://magiccards.info/scans/en/cn2/207.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/994f8a79-1df9-42e0-a0b0-c9eea47771e9.jpg?1576383233
 image_updated=2017-08-29
 value=3.500
 rarity=U

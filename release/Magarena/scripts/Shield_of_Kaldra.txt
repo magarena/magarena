@@ -1,5 +1,5 @@
 name=Shield of Kaldra
-image=https://magiccards.info/scans/en/ds/139.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3e09c8a-6c55-491b-96e9-6cf05f673ac3.jpg?1562639769
 value=3.942
 rarity=R
 type=Legendary,Artifact

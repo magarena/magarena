@@ -1,5 +1,5 @@
 name=Vulshok Battlemaster
-image=https://magiccards.info/scans/en/mi/110.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/083f3b83-b7d3-472f-87b2-ed247c9c937e.jpg?1562134732
 value=3.526
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Smog Elemental
-image=https://magiccards.info/scans/en/gtc/79.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/667871d3-0d1b-496b-afbd-7504989798e4.jpg?1561829680
 value=2.880
 rarity=U
 type=Creature

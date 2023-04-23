@@ -1,5 +1,5 @@
 name=Lumberknot
-image=https://magiccards.info/scans/en/pc2/66.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f864cad-f583-48b9-aa12-8084ab746534.jpg?1562918622
 value=3.597
 rarity=U
 type=Creature

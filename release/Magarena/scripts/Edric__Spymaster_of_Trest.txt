@@ -1,5 +1,5 @@
 name=Edric, Spymaster of Trest
-image=https://magiccards.info/scans/en/c16/195.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2183cfb3-6bf5-4fbc-b535-a42ba954e8a3.jpg?1574767851
 image_updated=2017-08-17
 value=4.538
 rarity=R

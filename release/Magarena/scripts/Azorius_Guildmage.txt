@@ -1,5 +1,5 @@
 name=Azorius Guildmage
-image=https://magiccards.info/scans/en/cmd/183.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a941a46-eac3-4926-8c02-ac2785163fda.jpg?1592713948
 value=4.441
 rarity=U
 type=Creature

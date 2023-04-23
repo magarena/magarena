@@ -1,5 +1,5 @@
 name=Haunter of Nightveil
-image=https://magiccards.info/scans/en/dgm/76.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/438683f5-adfa-42ae-a6fb-c4649a8a30ab.jpg?1562907360
 value=3.625
 rarity=U
 type=Creature

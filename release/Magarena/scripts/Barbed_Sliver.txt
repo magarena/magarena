@@ -1,5 +1,5 @@
 name=Barbed Sliver
-image=https://magiccards.info/scans/en/tp/163.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/1415595e-d4cc-4572-800c-8fdfa1b0c2f1.jpg?1562428627
 value=2.393
 rarity=U
 type=Creature

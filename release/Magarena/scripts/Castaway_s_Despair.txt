@@ -1,5 +1,5 @@
 name=Castaway's Despair
-image=https://magiccards.info/scans/en/xln/281.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3a26ba9-84b8-4f54-918c-f75d4cacad0b.jpg?1562562534
 value=2.500
 rarity=C
 type=Enchantment

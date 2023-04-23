@@ -1,5 +1,5 @@
 name=Crookclaw Elder
-image=https://magiccards.info/scans/en/le/34.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8ced7275-3935-4bba-877d-81282bd171fd.jpg?1562923490
 value=3.019
 rarity=U
 type=Creature

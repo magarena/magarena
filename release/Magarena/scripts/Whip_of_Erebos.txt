@@ -1,5 +1,5 @@
 name=Whip of Erebos
-image=https://magiccards.info/scans/en/ths/110.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e5ec47c-47a2-4eda-b81a-4a07f04e5989.jpg?1562822353
 value=3.601
 rarity=R
 type=Legendary,Enchantment,Artifact

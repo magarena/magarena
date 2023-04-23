@@ -1,5 +1,5 @@
 name=Puppet Conjurer
-image=https://magiccards.info/scans/en/ala/82.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc6ee904-95ca-4ec3-ad7d-ee084aa0c00f.jpg?1562709025
 value=2.934
 rarity=U
 type=Artifact,Creature

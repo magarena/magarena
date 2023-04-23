@@ -1,5 +1,5 @@
 name=Storm Fleet Arsonist
-image=https://magiccards.info/scans/en/xln/162.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d8ecb6d-f794-468b-8399-60a50aaa13ac.jpg?1562559744
 value=2.500
 rarity=U
 type=Creature

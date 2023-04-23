@@ -1,5 +1,5 @@
 name=Disciple of the Ring
-image=https://magiccards.info/scans/en/ori/53.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a885848-005f-4387-8982-40052b924076.jpg?1673147267
 image_updated=2015-11-05
 value=2.500
 rarity=M

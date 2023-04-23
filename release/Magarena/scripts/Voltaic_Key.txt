@@ -1,5 +1,5 @@
 name=Voltaic Key
-image=https://magiccards.info/scans/en/m11/219.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6dd61957-f3a2-4976-8f15-88258f71406a.jpg?1562463293
 value=4.592
 rarity=U
 type=Artifact

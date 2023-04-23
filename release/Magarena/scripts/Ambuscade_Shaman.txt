@@ -1,5 +1,5 @@
 name=Ambuscade Shaman
-image=https://magiccards.info/scans/en/dtk/87.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b9a91f8-5f9f-46a2-bd80-1ca014591de9.jpg?1562786864
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Zoetic Cavern
-image=https://magiccards.info/scans/en/a25/249.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16964263-61fc-40f2-b206-4f69060affba.jpg?1562433029
 image_updated=2018-04-27
 value=3.244
 rarity=U

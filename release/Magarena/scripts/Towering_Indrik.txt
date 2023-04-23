@@ -1,5 +1,5 @@
 name=Towering Indrik
-image=https://magiccards.info/scans/en/rtr/137.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6049e92-6c52-44be-a3c7-aa8e8bf9c10a.jpg?1562792972
 value=2.262
 rarity=C
 type=Creature

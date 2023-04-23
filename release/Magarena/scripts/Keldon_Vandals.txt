@@ -1,5 +1,5 @@
 name=Keldon Vandals
-image=https://magiccards.info/scans/en/ud/91.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f18cdf4d-42ce-4f2d-8b8f-8cf52a1b8db4.jpg?1562445654
 value=3.943
 removal=1
 rarity=C
