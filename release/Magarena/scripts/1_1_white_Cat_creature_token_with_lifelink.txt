@@ -1,6 +1,6 @@
 name=1/1 white Cat creature token with lifelink
 token=Cat
-image=https://magiccards.info/extras/token/amonkhet/cat.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d754e09c-efc0-4536-9f2a-6bd7e2f860ab.jpg?1591225552
 value=1
 type=Creature
 subtype=Cat

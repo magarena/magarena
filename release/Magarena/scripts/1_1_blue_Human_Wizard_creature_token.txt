@@ -1,6 +1,6 @@
 name=1/1 blue Human Wizard creature token
 token=Human Wizard
-image=https://magiccards.info/extras/token/eldritch-moon/human-wizard.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4439a8b-ef98-428d-a274-53c660b23afe.jpg?1562636929
 value=1
 type=Creature
 subtype=Human,Wizard

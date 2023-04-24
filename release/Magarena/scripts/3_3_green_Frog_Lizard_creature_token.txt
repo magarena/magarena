@@ -1,6 +1,6 @@
 name=3/3 green Frog Lizard creature token
 token=Frog Lizard
-image=https://magiccards.info/extras/token/gatecrash/frog-lizard.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e54486a4-f432-4e50-8639-799e036d0657.jpg?1641306095
 value=3
 type=Creature
 subtype=Frog,Lizard

@@ -1,6 +1,6 @@
 name=2/2 blue Bird creature token with flying
 token=Bird
-image=https://magiccards.info/extras/token/theros/bird.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09ae926d-80be-42c5-8c36-658cd38d2597.jpg?1562896902
 value=2
 type=Creature
 subtype=Bird

@@ -1,6 +1,6 @@
 name=3/3 blue Fish creature token
 token=Fish
-image=https://magiccards.info/extras/token/commander-2014/fish.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3abd270d-55d0-40f8-9864-4a7d7b9310ff.jpg?1641306072
 value=3
 type=Creature
 subtype=Fish

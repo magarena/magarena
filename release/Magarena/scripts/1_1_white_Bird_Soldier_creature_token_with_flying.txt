@@ -1,6 +1,6 @@
 name=1/1 white Bird Soldier creature token with flying
 token=Bird Soldier
-image=https://magiccards.info/extras/token/alara-reborn/bird-soldier.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7b55dcf-ae63-4b84-8d39-80b5a6de3c1a.jpg?1561757893
 value=1
 type=Creature
 subtype=Bird,Soldier

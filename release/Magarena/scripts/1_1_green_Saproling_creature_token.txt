@@ -1,6 +1,6 @@
 name=1/1 green Saproling creature token
 token=Saproling
-image=https://magiccards.info/extras/token/modern-masters-2015/saproling.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5a07153-9eb6-4366-aa09-ebe9b4868e7f.jpg?1675456304
 image_updated=2015-11-12
 value=1
 type=Creature

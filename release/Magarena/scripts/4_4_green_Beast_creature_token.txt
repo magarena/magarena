@@ -1,6 +1,6 @@
 name=4/4 green Beast creature token
 token=Beast
-image=https://magiccards.info/extras/token/commander-2014/beast-2.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2bfef17-6e00-4097-b27a-4e3c7e19ca03.jpg?1682211062
 image_updated=2015-11-12
 value=3
 type=Creature

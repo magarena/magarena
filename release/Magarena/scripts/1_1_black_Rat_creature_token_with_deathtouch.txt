@@ -1,6 +1,6 @@
 name=1/1 black Rat creature token with deathtouch
 token=Rat
-image=https://magiccards.info/extras/token/commander-2017/rat.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1788d4c-31b8-4f73-8275-5470316e7ad4.jpg?1562636884
 image_updated=2017-09-03
 value=1
 type=Creature

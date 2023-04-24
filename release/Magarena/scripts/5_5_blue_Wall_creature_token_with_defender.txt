@@ -1,6 +1,6 @@
 name=5/5 blue Wall creature token with defender
 token=Wall
-image=https://magiccards.info/extras/token/eternal-masters/wall.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/353aaec9-79fb-4b83-b4f4-8c7dc2a6b1c1.jpg?1561756910
 value=3
 type=Creature
 subtype=Wall

@@ -1,6 +1,6 @@
 name=2/2 red and green Satyr creature token with haste
 token=Satyr
-image=https://magiccards.info/extras/token/theros/satyr.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/831fbc86-e328-4c26-a8b2-35feb24f6430.jpg?1675456108
 value=2
 pt=2/2
 color=RG

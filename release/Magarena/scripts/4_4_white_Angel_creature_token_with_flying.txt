@@ -1,6 +1,6 @@
 name=4/4 white Angel creature token with flying
 token=Angel
-image=https://magiccards.info/extras/token/magic-origins/angel.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/663333ab-4e92-4290-b4e2-65f3f173e53f.jpg?1682210849
 image_updated=2015-11-12
 value=4
 type=Creature

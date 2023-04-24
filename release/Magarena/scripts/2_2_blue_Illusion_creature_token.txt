@@ -1,6 +1,6 @@
 name=2/2 blue Illusion creature token
 token=Illusion
-image=https://magiccards.info/extras/token/zendikar/illusion.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5dcbf662-7263-414a-b64b-ccf9aab20faa.jpg?1562636807
 value=2
 type=Creature
 subtype=Illusion

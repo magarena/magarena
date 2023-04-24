@@ -1,6 +1,6 @@
 name=1/1 black Goblin Rogue creature token
 token=Goblin Rogue
-image=https://magiccards.info/extras/token/lorwyn/goblin-rogue.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33bd708d-dc84-44d3-a563-536ade028bd0.jpg?1562702016
 value=1
 type=Creature
 subtype=Goblin,Rogue

@@ -1,6 +1,6 @@
 name=2/2 red Gremlin creature token
 token=Gremlin
-image=https://magiccards.info/extras/token/aether-revolt/gremlin.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6071fed-39c1-4f3b-a821-1611aedd8054.jpg?1561758029
 value=2
 pt=2/2
 color=R

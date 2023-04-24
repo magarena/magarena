@@ -1,6 +1,6 @@
 name=5/5 black Demon creature token with flying
 token=Demon
-image=https://magiccards.info/extras/token/magic-origins/demon.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/548bf09e-1641-4d36-8e12-82b8708c4aae.jpg?1675457156
 image_updated=2015-11-12
 value=4
 type=Creature

@@ -1,6 +1,6 @@
 name=1/1 red Elemental creature token
 token=Elemental
-image=https://magiccards.info/extras/token/rise-of-the-eldrazi/elemental.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/462bb611-5a02-441c-ae8a-911b75436864.jpg?1675455029
 value=1
 type=Creature
 subtype=Elemental

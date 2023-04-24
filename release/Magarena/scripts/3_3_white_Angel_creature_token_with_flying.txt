@@ -1,6 +1,6 @@
 name=3/3 white Angel creature token with flying
 token=Angel
-image=https://magiccards.info/extras/token/oath-of-the-gatewatch/angel.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecba3428-716d-4dab-b2ee-baf8d9bf5ec8.jpg?1682210840
 value=3
 type=Creature
 subtype=Angel

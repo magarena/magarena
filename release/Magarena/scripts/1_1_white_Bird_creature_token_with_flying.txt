@@ -1,6 +1,6 @@
 name=1/1 white Bird creature token with flying
 token=Bird
-image=https://magiccards.info/extras/token/zendikar/bird.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38476293-627e-44e6-a83e-24aaf3de8e9a.jpg?1682210858
 value=1
 type=Creature
 subtype=Bird

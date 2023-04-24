@@ -1,6 +1,6 @@
 name=3/3 colorless Golem artifact creature token
 token=Golem
-image=https://magiccards.info/extras/token/modern-masters-2015/golem.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96d831eb-8d5f-4436-bbc6-3d1a90f3d2ed.jpg?1682211141
 image_updated=2015-11-12
 value=3
 type=Artifact,Creature

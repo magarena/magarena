@@ -1,6 +1,6 @@
 name=4/4 red Hellion creature token with haste
 token=Hellion
-image=https://magiccards.info/extras/token/duel-decks-zendikar-vs-eldrazi/hellion.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00a1209e-c4c3-4250-ad36-ef451f5e34cd.jpg?1562701871
 image_updated=2015-11-12
 value=4
 type=Creature

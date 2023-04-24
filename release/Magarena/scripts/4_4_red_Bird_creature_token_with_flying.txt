@@ -1,6 +1,6 @@
 name=4/4 red Bird creature token with flying
 token=Bird
-image=https://magiccards.info/extras/token/player-rewards-2003/rukh.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5489e26-6aec-4706-9c3e-8454878fa6c3.jpg?1626891917
 value=3
 type=Creature
 subtype=Bird

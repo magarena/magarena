@@ -1,6 +1,6 @@
 name=1/1 colorless Servo artifact creature token
 token=Servo
-image=https://magiccards.info/extras/token/kaladesh/servo-1.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11a8610e-6264-4b02-b871-8975f3d06012.jpg?1682211184
 value=1
 pt=1/1
 color=

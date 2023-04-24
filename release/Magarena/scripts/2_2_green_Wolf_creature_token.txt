@@ -1,6 +1,6 @@
 name=2/2 green Wolf creature token
 token=Wolf
-image=https://magiccards.info/extras/token/modern-masters-2015/wolf.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81605b8d-cf1d-49dc-aebb-a857d6796a77.jpg?1675456083
 image_updated=2015-11-12
 value=2
 type=Creature

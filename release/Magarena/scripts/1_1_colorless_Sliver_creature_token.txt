@@ -1,6 +1,6 @@
 name=1/1 colorless Sliver creature token
 token=Sliver
-image=https://magiccards.info/extras/token/magic-2014/sliver.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/586c179a-feda-475d-9e32-01b58e22c846.jpg?1682210831
 image_updated=2015-11-12
 value=1
 type=Creature

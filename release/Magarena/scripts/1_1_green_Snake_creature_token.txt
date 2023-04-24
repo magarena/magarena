@@ -1,6 +1,6 @@
 name=1/1 green Snake creature token
 token=Snake
-image=https://magiccards.info/extras/token/modern-masters-2015/snake.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e7de554-9d1b-4ab0-abee-1a11d105db81.jpg?1675455620
 image_updated=2015-11-12
 value=1
 type=Creature

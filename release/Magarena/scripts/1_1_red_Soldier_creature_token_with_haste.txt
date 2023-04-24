@@ -1,6 +1,6 @@
 name=1/1 red Soldier creature token with haste
 token=Soldier
-image=https://magiccards.info/extras/token/theros/soldier-3.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/039b8e44-b435-4e05-b94c-02c4dda11943.jpg?1547509318
 value=1
 type=Creature
 subtype=Soldier

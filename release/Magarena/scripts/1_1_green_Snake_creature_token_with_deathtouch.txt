@@ -1,6 +1,6 @@
 name=1/1 green Snake creature token with deathtouch
 token=Snake
-image=https://magiccards.info/extras/token/amonkhet/snake.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6aaa8539-8d21-4da1-8410-d4354078390f.jpg?1562844799
 image_updated=2018-04-12
 value=1
 type=Creature

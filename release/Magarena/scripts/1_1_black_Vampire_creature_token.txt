@@ -1,6 +1,6 @@
 name=1/1 black Vampire creature token
 token=Vampire
-image=https://magiccards.info/extras/token/commander-2017/vampire.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d328599-b5c8-4cf7-9d62-fe8492e02f48.jpg?1562636803
 value=1
 type=Creature
 subtype=Vampire

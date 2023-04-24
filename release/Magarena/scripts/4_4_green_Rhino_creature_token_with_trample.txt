@@ -1,6 +1,6 @@
 name=4/4 green Rhino creature token with trample
 token=Rhino
-image=https://magiccards.info/extras/token/return-to-ravnica/rhino.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc651dc2-9a3b-470c-b415-ecce0a725433.jpg?1641305722
 value=4
 type=Creature
 subtype=Rhino

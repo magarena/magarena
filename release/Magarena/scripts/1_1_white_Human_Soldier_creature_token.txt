@@ -1,6 +1,6 @@
 name=1/1 white Human Soldier creature token
 token=Human Soldier
-image=https://magiccards.info/extras/token/shadows-over-innistrad/human-soldier.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/493bb455-ee32-4cbe-bcaa-8df5b16e7b96.jpg?1675905861
 value=1
 type=Creature
 subtype=Human,Soldier

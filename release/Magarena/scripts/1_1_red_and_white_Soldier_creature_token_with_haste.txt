@@ -1,6 +1,6 @@
 name=1/1 red and white Soldier creature token with haste
 token=Soldier
-image=https://magiccards.info/extras/token/gatecrash/soldier.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a772cfa9-39e3-4057-bccf-4d82f49982bd.jpg?1675905875
 value=1
 type=Creature
 subtype=Soldier

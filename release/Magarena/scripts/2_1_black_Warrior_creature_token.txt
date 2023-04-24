@@ -1,6 +1,6 @@
 name=2/1 black Warrior creature token
 token=Warrior
-image=https://magiccards.info/extras/token/fate-reforged/warrior.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/883ac854-ee35-418a-9d4e-c30ba2a5ade8.jpg?1675455997
 value=1
 pt=2/1
 color=b

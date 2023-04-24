@@ -1,6 +1,6 @@
 name=1/1 white Warrior creature token with vigilance
 token=Warrior
-image=https://magiccards.info/extras/token/amonkhet/warrior.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d7b1dfa-14a2-4e4e-baf2-e06672651db1.jpg?1675455562
 value=1
 type=Creature
 subtype=Warrior

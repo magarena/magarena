@@ -1,6 +1,6 @@
 name=3/3 green Ape creature token
 token=Ape
-image=https://magiccards.info/extras/token/commander-2014/ape.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17e0924c-e4b7-482d-9076-1d3b8ff09e9b.jpg?1641306040
 image_updated=2015-11-12
 value=3
 type=Creature

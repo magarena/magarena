@@ -1,6 +1,6 @@
 name=1/1 white and black Human Cleric creature token
 token=Cleric
-image=https://magiccards.info/extras/token/shadows-over-innistrad/human-cleric.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94ed2eca-1579-411d-af6f-c7359c65de30.jpg?1562086876
 value=1
 type=Creature
 subtype=Human,Cleric

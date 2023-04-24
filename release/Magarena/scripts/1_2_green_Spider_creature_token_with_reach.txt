@@ -1,6 +1,6 @@
 name=1/2 green Spider creature token with reach
 token=Spider
-image=https://magiccards.info/extras/token/eldritch-moon/spider.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f74900ca-7f0d-460c-86b0-b515c8b44e67.jpg?1675455072
 value=2
 type=Creature
 subtype=Spider

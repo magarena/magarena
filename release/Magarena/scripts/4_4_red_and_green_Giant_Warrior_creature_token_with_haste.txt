@@ -1,6 +1,6 @@
 name=4/4 red and green Giant Warrior creature token with haste
 token=Giant Warrior
-image=https://magiccards.info/extras/token/shadowmoor/giant-warrior.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a06eea30-810b-4623-9862-ec71c4bed11a.jpg?1562841186
 value=4
 type=Creature
 subtype=Giant,Warrior

@@ -1,6 +1,6 @@
 name=1/1 green Insect creature token with infect
 token=Insect
-image=https://magiccards.info/extras/token/scars-of-mirrodin/insect.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85f9e977-f718-41b2-b30b-77a9a17e9733.jpg?1675097051
 value=1
 type=Creature
 subtype=Insect

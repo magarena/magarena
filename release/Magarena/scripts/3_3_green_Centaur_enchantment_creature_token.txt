@@ -1,6 +1,6 @@
 name=3/3 green Centaur enchantment creature token
 token=Centaur
-image=https://magiccards.info/extras/token/born-of-the-gods/centaur.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/985be507-6125-4db2-b99f-8b61149ffeeb.jpg?1562636802
 value=3
 type=Enchantment,Creature
 subtype=Centaur

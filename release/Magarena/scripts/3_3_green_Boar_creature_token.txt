@@ -1,6 +1,6 @@
 name=3/3 green Boar creature token
 token=Boar
-image=https://magiccards.info/extras/token/planechase-anthology/boar.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a911fad-7af3-4bc4-bafc-cac2d5f18f22.jpg?1675455048
 image_updated=2017-09-04
 value=3
 type=Creature

@@ -1,6 +1,6 @@
 name=5/4 green Snake creature token
 token=Snake
-image=https://magiccards.info/extras/token/hour-of-devastation/snake.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57708b3d-ddfb-4924-b5c9-123aa9e967ad.jpg?1562639813
 value=5
 type=Creature
 subtype=Snake

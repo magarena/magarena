@@ -1,6 +1,6 @@
 name=1/1 white and black Spirit creature token with flying
 token=Spirit
-image=https://magiccards.info/extras/token/gatecrash/spirit.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d02a57e-6c76-491c-85f8-8f4d825be2c2.jpg?1682207085
 value=1
 type=Creature
 subtype=Spirit

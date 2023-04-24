@@ -1,6 +1,6 @@
 name=1/1 green Squirrel creature token
 token=Squirrel
-image=https://magiccards.info/extras/token/conspiracy/squirrel.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/380330b4-2d01-4042-97ac-41d9c60c982d.jpg?1675455855
 image_updated=2015-11-12
 value=1
 type=Creature

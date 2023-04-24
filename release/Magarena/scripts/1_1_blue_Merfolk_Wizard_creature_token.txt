@@ -1,6 +1,6 @@
 name=1/1 blue Merfolk Wizard creature token
 token=Merfolk Wizard
-image=https://magiccards.info/extras/token/lorwyn/merfolk-wizard.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/526da544-23dd-42b8-8c00-c3609eea4489.jpg?1562636751
 value=1
 type=Creature
 subtype=Merfolk,Wizard

@@ -1,6 +1,6 @@
 name=1/1 red Goblin creature token
 token=Goblin
-image=https://magiccards.info/extras/token/magic-origins/goblin.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cb4069a-0ec9-415d-8a2c-82f4a9f3ea2b.jpg?1682211027
 image_updated=2015-11-12
 value=1
 type=Creature

@@ -1,6 +1,6 @@
 name=3/3 black Beast creature token with deathtouch
 token=Beast
-image=https://magiccards.info/extras/token/magic-2015/beast-1.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2daf6591-606e-4a36-b279-02aad7e1110c.jpg?1563327110
 value=3
 pt=3/3
 color=b

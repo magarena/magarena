@@ -1,7 +1,6 @@
 name=1/1 black Assassin creature token
 token=Assassin
 image=https://cards.scryfall.io/border_crop/front/4/4/4401437c-23ea-44ac-a8e7-eb033e1d61eb.jpg?1572370679
-https://magiccards.info/extras/token/return-to-ravnica/assassin.jpg
 value=4
 type=Creature
 subtype=Assassin

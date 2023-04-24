@@ -1,6 +1,6 @@
 name=1/1 colorless Spirit creature token
 token=Spirit
-image=https://magiccards.info/extras/token/player-rewards-2004/spirit.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c672ee51-0e77-463f-8586-191b413c44dd.jpg?1675454937
 value=1
 type=Creature
 subtype=Spirit

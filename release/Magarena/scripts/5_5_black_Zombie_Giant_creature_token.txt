@@ -1,6 +1,6 @@
 name=5/5 black Zombie Giant creature token
 token=Zombie Giant
-image=https://magiccards.info/extras/token/zendikar/zombie-giant.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be7e26e1-5db6-49ba-a88e-c79d889cd364.jpg?1561757964
 value=4
 type=Creature
 subtype=Zombie,Giant

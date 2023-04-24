@@ -1,5 +1,5 @@
 name=3/1 red Elemental enchantment creature token with haste
-image=https://magiccards.info/extras/token/born-of-the-gods/elemental.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97e5fee3-6dd9-4bbe-b64d-ddfa4b9d4256.jpg?1562636801
 value=3
 token=Elemental
 type=Enchantment,Creature

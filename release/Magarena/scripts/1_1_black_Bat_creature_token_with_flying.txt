@@ -1,6 +1,6 @@
 name=1/1 black Bat creature token with flying
 token=Bat
-image=https://magiccards.info/extras/token/modern-masters/bat.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55368a15-e45b-4407-9c03-1b17bf84607a.jpg?1675456515
 value=2
 type=Creature
 subtype=Bat

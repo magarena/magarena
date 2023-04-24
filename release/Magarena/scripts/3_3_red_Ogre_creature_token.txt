@@ -1,6 +1,6 @@
 name=3/3 red Ogre creature token
 token=Ogre
-image=https://magiccards.info/extras/token/worldwake/ogre.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3d725a8-daff-4458-aab0-06803ae33be3.jpg?1675456027
 value=3
 type=Creature
 subtype=Ogre

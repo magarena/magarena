@@ -1,6 +1,6 @@
 name=1/1 white Human creature token
 token=Human
-image=https://magiccards.info/extras/token/dark-ascension/human.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9abbeedd-f621-493d-bbab-acd425178c05.jpg?1682210867
 value=1
 type=Creature
 subtype=Human

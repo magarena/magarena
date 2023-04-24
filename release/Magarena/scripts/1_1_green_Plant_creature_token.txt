@@ -1,6 +1,6 @@
 name=1/1 green Plant creature token
 token=Plant
-image=https://magiccards.info/extras/token/battle-for-zendikar/plant.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10a63c10-9bf9-4e0f-831c-830d7994a62a.jpg?1562639676
 value=1
 type=Creature
 subtype=Plant

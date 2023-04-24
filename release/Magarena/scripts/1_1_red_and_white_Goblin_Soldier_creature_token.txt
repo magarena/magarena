@@ -1,6 +1,6 @@
 name=1/1 red and white Goblin Soldier creature token
 token=Goblin Soldier
-image=https://magiccards.info/extras/token/eventide/goblin-soldier.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/3022b41d-05c1-452e-a1cd-5ec5a7f4d79d.jpg?1562701996
 value=1
 type=Creature
 subtype=Goblin,Soldier

@@ -1,6 +1,6 @@
 name=1/1 red Elemental creature token with haste
 token=Elemental
-image=https://magiccards.info/extras/token/rise-of-the-eldrazi/elemental.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94c14f3d-1578-426b-b64b-07c7e88ab572.jpg?1562279135
 value=1
 type=Creature
 subtype=Elemental

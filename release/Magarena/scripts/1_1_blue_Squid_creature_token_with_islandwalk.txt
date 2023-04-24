@@ -1,6 +1,6 @@
 name=1/1 blue Squid creature token with islandwalk
 token=Squid
-image=https://magiccards.info/extras/token/magic-2015/squid.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44ea459b-b655-4106-9f24-9bdb440e04b1.jpg?1682210939
 value=1
 type=Creature
 subtype=Squid

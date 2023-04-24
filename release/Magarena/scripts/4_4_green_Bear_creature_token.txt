@@ -1,6 +1,6 @@
 name=4/4 green Bear creature token
 token=Bear
-image=https://magiccards.info/extras/token/khans-of-tarkir/bear.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8169a2e1-ed39-41cf-9a36-3c2b59499819.jpg?1675455039
 value=3
 type=Creature
 subtype=Bear

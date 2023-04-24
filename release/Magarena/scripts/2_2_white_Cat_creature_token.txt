@@ -1,6 +1,6 @@
 name=2/2 white Cat creature token
 token=Cat
-image=https://magiccards.info/extras/token/commander-2014/cat.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11011596-4aa1-48a7-90d8-36cb7b27c711.jpg?1675957554
 image_updated=2015-11-12
 value=2
 type=Creature

@@ -1,6 +1,6 @@
 name=1/1 black Skeleton creature token
 token=Skeleton
-image=https://magiccards.info/extras/token/shards-of-alara/skeleton.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1abb1ab0-f8f4-44e8-b8a7-df37a8782e76.jpg?1562701922
 value=1
 type=Creature
 subtype=Skeleton

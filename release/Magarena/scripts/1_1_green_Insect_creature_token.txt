@@ -1,6 +1,6 @@
 name=1/1 green Insect creature token
 token=Insect
-image=https://magiccards.info/extras/token/modern-masters-2015/insect.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43d7c6dc-4d0b-4a05-8b79-5dd728a74bb3.jpg?1562702029
 image_updated=2015-11-12
 value=1
 type=Creature

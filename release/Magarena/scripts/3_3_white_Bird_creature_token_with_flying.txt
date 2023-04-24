@@ -1,6 +1,6 @@
 name=3/3 white Bird creature token with flying
 token=Bird
-image=https://magiccards.info/extras/token/magic-2011/bird.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5988dc9e-724f-4645-8769-b94c5ef631b9.jpg?1568003326
 value=3
 type=Creature
 subtype=Bird

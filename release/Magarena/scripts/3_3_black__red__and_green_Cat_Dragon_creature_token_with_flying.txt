@@ -1,6 +1,6 @@
 name=3/3 black, red, and green Cat Dragon creature token with flying
 token=Cat Dragon
-image=https://magiccards.info/extras/token/commander-2017/cat-dragon.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1e883aa-5f73-4c45-9253-1350c24222e4.jpg?1675455080
 value=3
 type=Creature
 subtype=Cat,Dragon

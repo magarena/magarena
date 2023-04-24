@@ -1,6 +1,6 @@
 name=1/1 colorless Myr artifact creature token
 token=Myr
-image=https://magiccards.info/extras/token/modern-masters-2015/myr.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd511c6c-a6ec-4715-94c0-945c091d82b1.jpg?1682211150
 image_updated=2015-11-12
 value=1
 type=Artifact,Creature

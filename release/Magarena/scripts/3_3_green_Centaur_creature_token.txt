@@ -1,6 +1,6 @@
 name=3/3 green Centaur creature token
 token=Centaur
-image=https://magiccards.info/extras/token/judge/centaur.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/733268ab-9ec0-4838-9a02-5a95dab3a400.jpg?1641305716
 value=3
 type=Creature
 subtype=Centaur

@@ -1,6 +1,6 @@
 name=2/2 red Dragon creature token with flying
 token=Dragon
-image=https://magiccards.info/extras/token/magic-2014/dragon.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/6592849a-3875-42e6-bab8-f1c04b5f58bf.jpg?1675457172
 value=2
 type=Creature
 subtype=Dragon

@@ -1,6 +1,6 @@
 name=1/1 black Faerie Rogue creature token with flying
 token=Faerie Rogue
-image=https://magiccards.info/extras/token/modern-masters-2015/faerie-rogue.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55998d0d-b169-4e1b-a9e2-a2ea75b4bbf0.jpg?1675455013
 image_updated=2015-11-12
 value=2
 type=Creature

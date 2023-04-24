@@ -1,6 +1,6 @@
 name=3/3 colorless Wurm artifact creature token with lifelink
 token=Wurm
-image=https://magiccards.info/extras/token/commander-2014/wurm-2.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6ee0db9-ac89-4ab6-ac2e-8a7527d9ecbd.jpg?1598312477
 image_updated=2015-11-12
 value=3
 type=Artifact,Creature

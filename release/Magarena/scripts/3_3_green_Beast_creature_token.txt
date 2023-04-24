@@ -1,6 +1,6 @@
 name=3/3 green Beast creature token
 token=Beast
-image=https://magiccards.info/extras/token/commander-2014/beast-1.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47239704-652c-49a7-9011-30f1f7d0078f.jpg?1675905872
 image_updated=2015-11-12
 value=3
 type=Creature

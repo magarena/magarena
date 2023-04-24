@@ -1,6 +1,6 @@
 name=2/2 white Knight creature token with vigilance
 token=Knight
-image=https://magiccards.info/extras/token/magic-origins/knight.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52cf8f6b-2334-4881-8f58-4e11745c8851.jpg?1682210876
 image_updated=2015-11-12
 value=3
 type=Creature

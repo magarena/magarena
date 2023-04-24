@@ -1,6 +1,6 @@
 name=1/1 blue Illusion creature token with flying
 token=Illusion
-image=https://magiccards.info/extras/token/modern-masters/illusion.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7274e711-42fd-489e-809d-77d3bce24422.jpg?1620573789
 value=1
 type=Creature
 subtype=Illusion

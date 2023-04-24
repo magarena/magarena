@@ -1,6 +1,6 @@
 name=2/2 green Bear creature token
 token=Bear
-image=https://magiccards.info/extras/token/player-rewards-2001/bear.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/772dac39-269b-4a35-aad3-320279af833f.jpg?1675455454
 value=2
 type=Creature
 subtype=Bear

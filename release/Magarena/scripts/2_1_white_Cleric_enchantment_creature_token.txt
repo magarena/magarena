@@ -1,6 +1,6 @@
 name=2/1 white Cleric enchantment creature token
 token=Cleric
-image=https://magiccards.info/extras/token/theros/cleric.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e4c9173-e530-4237-a03b-9aeca60ab0e4.jpg?1562636828
 value=2
 type=Enchantment,Creature
 subtype=Cleric

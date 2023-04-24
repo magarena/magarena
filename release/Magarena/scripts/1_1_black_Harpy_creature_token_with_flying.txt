@@ -1,6 +1,6 @@
 name=1/1 black Harpy creature token with flying
 token=Harpy
-image=https://magiccards.info/extras/token/theros/harpy.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26b24bbe-f5bc-44d3-b716-6612d39b07bc.jpg?1562636770
 value=2
 type=Creature
 subtype=Harpy

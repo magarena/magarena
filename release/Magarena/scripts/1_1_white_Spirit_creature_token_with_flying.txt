@@ -1,6 +1,6 @@
 name=1/1 white Spirit creature token with flying
 token=Spirit
-image=https://magiccards.info/extras/token/modern-masters-2015/spirit.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/476261b8-635c-4228-b5bf-ddc27157876e.jpg?1682210894
 image_updated=2015-11-12
 value=1
 type=Creature

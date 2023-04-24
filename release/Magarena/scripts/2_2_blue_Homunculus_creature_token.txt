@@ -1,6 +1,6 @@
 name=2/2 blue Homunculus creature token
 token=Homunculus
-image=https://magiccards.info/extras/token/innistrad/homunculus.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3c6ef29-b879-4813-87b0-0e3ba2b5cb29.jpg?1547509238
 value=2
 type=Creature
 subtype=Homunculus

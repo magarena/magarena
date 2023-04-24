@@ -1,6 +1,6 @@
 name=1/1 black Rat creature token
 token=Rat
-image=https://magiccards.info/extras/token/shadowmoor/rat.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/209d3f3e-a41e-4d9b-a9bd-50d11e89b5ea.jpg?1641306327
 value=1
 type=Creature
 subtype=Rat

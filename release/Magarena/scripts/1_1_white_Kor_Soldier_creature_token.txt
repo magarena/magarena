@@ -1,6 +1,6 @@
 name=1/1 white Kor Soldier creature token
 token=Kor Soldier
-image=https://magiccards.info/extras/token/commander-2014/kor-soldier.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9c95045-e806-4933-94a4-cb52ae1a215b.jpg?1562542413
 image_updated=2015-11-12
 value=1
 type=Creature

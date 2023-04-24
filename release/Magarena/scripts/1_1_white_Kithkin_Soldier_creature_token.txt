@@ -1,6 +1,6 @@
 name=1/1 white Kithkin Soldier creature token
 token=Kithkin Soldier
-image=https://magiccards.info/extras/token/lorwyn/kithkin-soldier.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/064ce217-2a93-41ae-b26a-e80cbb2353e4.jpg?1641306442
 value=1
 type=Creature
 subtype=Kithkin,Soldier

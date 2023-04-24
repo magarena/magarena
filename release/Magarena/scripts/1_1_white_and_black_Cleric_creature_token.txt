@@ -1,6 +1,6 @@
 name=1/1 white and black Cleric creature token
 token=Cleric
-image=https://magiccards.info/extras/token/gatecrash/cleric.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88bb40e8-3057-4707-82e8-4b3d19d51e91.jpg?1552078406
 value=3
 type=Creature
 subtype=Cleric

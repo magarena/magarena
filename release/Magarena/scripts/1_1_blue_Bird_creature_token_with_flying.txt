@@ -1,6 +1,6 @@
 name=1/1 blue Bird creature token with flying
 token=Bird
-image=https://magiccards.info/extras/token/eventide/bird.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a0cb299-057d-4c39-9d73-3a3512526e4a.jpg?1615686221
 value=1
 type=Creature
 subtype=Bird

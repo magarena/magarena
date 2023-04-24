@@ -1,6 +1,6 @@
 name=3/3 colorless Wurm artifact creature token with deathtouch
 token=Wurm
-image=https://magiccards.info/extras/token/commander-2014/wurm-1.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b68e816f-f9ac-435b-ad0b-ceedbe72447a.jpg?1598312203
 image_updated=2015-11-12
 value=3
 type=Artifact,Creature

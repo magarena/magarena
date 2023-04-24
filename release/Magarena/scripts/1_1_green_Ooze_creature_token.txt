@@ -1,6 +1,6 @@
 name=1/1 green Ooze creature token
 token=Ooze
-image=https://magiccards.info/extras/token/magic-2011/ooze-2.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab430ac0-6fbc-4361-8adc-0c13b399310f.jpg?1562702254
 value=1
 type=Creature
 subtype=Ooze
