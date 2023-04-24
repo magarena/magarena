@@ -1,5 +1,5 @@
 name=Reciprocate
-image=https://magiccards.info/scans/en/chk/40.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0440701b-8df5-4125-8e06-f29f91acba2f.jpg?1562895874
 value=3.456
 rarity=U
 type=Instant

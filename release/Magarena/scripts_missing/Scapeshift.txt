@@ -1,5 +1,5 @@
 name=Scapeshift
-image=https://magiccards.info/scans/en/m19/201.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/175e21a3-00f7-4c51-8a8e-fbfd7089efda.jpg?1574767873
 image_updated=2018-08-07
 value=3.703
 rarity=M

@@ -1,5 +1,5 @@
 name=Formless Nurturing
-image=https://magiccards.info/scans/en/frf/129.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f70646e4-936a-4c2a-8d4a-a2c659733093.jpg?1562831676
 value=2.500
 rarity=C
 type=Sorcery

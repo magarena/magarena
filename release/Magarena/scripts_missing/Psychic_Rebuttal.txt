@@ -1,5 +1,5 @@
 name=Psychic Rebuttal
-image=https://magiccards.info/scans/en/ori/67.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67a105f8-0c01-4c09-a3bf-8c912b6dc741.jpg?1562023585
 image_updated=2015-11-05
 value=2.500
 rarity=U

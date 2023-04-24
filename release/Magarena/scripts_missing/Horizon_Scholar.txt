@@ -1,5 +1,5 @@
 name=Horizon Scholar
-image=https://magiccards.info/scans/en/m19/59.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84c21aa7-678e-4998-9061-a13d04d92842.jpg?1608909250
 image_updated=2018-08-07
 value=3.156
 rarity=U

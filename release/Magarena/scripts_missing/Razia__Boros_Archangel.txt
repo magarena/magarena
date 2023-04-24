@@ -1,5 +1,5 @@
 name=Razia, Boros Archangel
-image=https://magiccards.info/scans/en/rav/223.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87e80447-9572-43a7-8487-3249cd9ce596.jpg?1562842621
 image_updated=2017-01-06
 value=3.793
 rarity=R

@@ -1,5 +1,5 @@
 name=Selesnya Sagittars
-image=https://magiccards.info/scans/en/rav/229.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a72e933-d977-4be9-985f-8b8cf1267f8c.jpg?1598917460
 value=2.919
 rarity=U
 type=Creature

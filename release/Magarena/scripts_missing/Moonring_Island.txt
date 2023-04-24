@@ -1,5 +1,5 @@
 name=Moonring Island
-image=https://magiccards.info/scans/en/shm/276.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64b36993-666c-40d0-b61a-1d162bd06dcc.jpg?1562830955
 value=2.438
 rarity=U
 type=Land

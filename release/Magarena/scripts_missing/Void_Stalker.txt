@@ -1,5 +1,5 @@
 name=Void Stalker
-image=https://magiccards.info/scans/en/m13/77.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fc30e31-4796-4e98-992c-a56cd51ad3c9.jpg?1562556197
 value=3.857
 rarity=R
 type=Creature

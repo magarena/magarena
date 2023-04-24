@@ -1,5 +1,5 @@
 name=Perilous Voyage
-image=https://magiccards.info/scans/en/xln/67.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9f6623e-2784-4bc9-9d8c-3eee9c78c350.jpg?1562563911
 value=2.500
 rarity=U
 type=Instant

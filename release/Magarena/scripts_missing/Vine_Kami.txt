@@ -1,5 +1,5 @@
 name=Vine Kami
-image=https://magiccards.info/scans/en/chk/249.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa5241c8-7f50-413e-9ac0-9ab0ad5c884c.jpg?1562766088
 value=2.160
 rarity=C
 type=Creature

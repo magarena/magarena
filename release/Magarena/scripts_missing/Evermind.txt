@@ -1,5 +1,5 @@
 name=Evermind
-image=https://magiccards.info/scans/en/sok/37.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0186a93c-000a-4b8f-983d-e1471185dc1f.jpg?1562492051
 value=2.984
 rarity=U
 type=Instant

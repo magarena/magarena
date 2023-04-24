@@ -1,5 +1,5 @@
 name=Kjeldoran Skyknight
-image=https://magiccards.info/scans/en/ia/264.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f794665a-8353-482a-b065-2a0777a8acda.jpg?1587911562
 value=2.457
 rarity=C
 type=Creature

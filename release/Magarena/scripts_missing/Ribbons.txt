@@ -1,5 +1,5 @@
 name=Ribbons
-image=https://magiccards.info/scans/en/akh/223b.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6f61e2b-e93b-4dda-95cf-9d0ff198c0a6.jpg?1549941949
 value=2.500
 rarity=R
 type=Sorcery

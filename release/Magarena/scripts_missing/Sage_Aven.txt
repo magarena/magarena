@@ -1,5 +1,5 @@
 name=Sage Aven
-image=https://magiccards.info/scans/en/9e/95.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af71e998-0ce3-4533-84cd-91cc6f288986.jpg?1562740240
 value=1.827
 rarity=C
 type=Creature

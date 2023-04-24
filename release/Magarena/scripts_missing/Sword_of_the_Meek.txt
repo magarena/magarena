@@ -1,5 +1,5 @@
 name=Sword of the Meek
-image=https://magiccards.info/scans/en/fut/165.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a0c2773-3205-4ac4-b31c-c54fb06fdd7c.jpg?1599710094
 value=4.060
 rarity=U
 type=Artifact

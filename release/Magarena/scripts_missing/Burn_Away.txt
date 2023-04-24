@@ -1,5 +1,5 @@
 name=Burn Away
-image=https://magiccards.info/scans/en/cn2/151.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b09c774a-0ea0-4bb8-9195-ea2d83461e75.jpg?1576382785
 image_updated=2017-08-29
 value=3.250
 rarity=U

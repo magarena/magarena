@@ -1,5 +1,5 @@
 name=Spy Kit
-image=https://magiccards.info/scans/en/cn2/79.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0fd4069-5860-42f5-9f7f-e07f1d4ff0b3.jpg?1576382173
 image_updated=2016-09-05
 value=2.500
 rarity=U

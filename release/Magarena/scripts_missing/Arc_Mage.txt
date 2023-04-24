@@ -1,5 +1,5 @@
 name=Arc Mage
-image=https://magiccards.info/scans/en/ne/77.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62982dab-4c27-45b3-9740-38fec3df7226.jpg?1562630243
 value=2.743
 rarity=U
 type=Creature

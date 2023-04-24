@@ -1,5 +1,5 @@
 name=Orcish Conscripts
-image=https://magiccards.info/scans/en/5e/255.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58248234-caea-4d55-aedb-07d28617e35b.jpg?1562868573
 value=2.659
 rarity=C
 type=Creature

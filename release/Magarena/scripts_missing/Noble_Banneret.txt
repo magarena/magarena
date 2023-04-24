@@ -1,5 +1,5 @@
 name=Noble Banneret
-image=https://magiccards.info/scans/en/cn2/17.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a7f0d35-b91e-461a-822c-7ae2798ca51a.jpg?1576381591
 image_updated=2016-09-05
 value=2.500
 rarity=U

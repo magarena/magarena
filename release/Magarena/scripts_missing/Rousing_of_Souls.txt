@@ -1,5 +1,5 @@
 name=Rousing of Souls
-image=https://magiccards.info/scans/en/cns/19.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b7a47cc-9311-4f92-b19c-8956db5f2b5f.jpg?1562864483
 value=3.150
 rarity=C
 type=Sorcery

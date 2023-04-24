@@ -1,5 +1,5 @@
 name=Mosswort Bridge
-image=https://magiccards.info/scans/en/c16/307.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a02ddda8-703a-468c-93ec-87dc22820fd4.jpg?1682210556
 image_updated=2017-08-17
 value=3.600
 rarity=R

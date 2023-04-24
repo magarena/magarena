@@ -1,5 +1,5 @@
 name=Orc General
-image=https://magiccards.info/scans/en/dk/72.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f09114b4-f98a-4a1f-a0f3-fe2a78b58989.jpg?1562870962
 value=3.138
 rarity=U
 type=Creature

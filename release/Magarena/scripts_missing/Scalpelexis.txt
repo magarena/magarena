@@ -1,5 +1,5 @@
 name=Scalpelexis
-image=https://magiccards.info/scans/en/10e/105.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad3ca697-bdf4-41df-973d-22a0ce89ad35.jpg?1562553434
 value=4.134
 rarity=R
 type=Creature

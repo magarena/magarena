@@ -1,5 +1,5 @@
 name=Dispersal Shield
-image=https://magiccards.info/scans/en/sc/33.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c257df6-f275-40db-bfe3-a9291356cdf7.jpg?1562525399
 value=2.705
 rarity=C
 type=Instant

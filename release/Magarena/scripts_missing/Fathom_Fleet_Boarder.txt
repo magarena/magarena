@@ -1,5 +1,5 @@
 name=Fathom Fleet Boarder
-image=https://magiccards.info/scans/en/rix/71.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f447eb83-c805-4ba8-b9f2-0add092f6795.jpg?1555040217
 value=2.500
 rarity=C
 type=Creature

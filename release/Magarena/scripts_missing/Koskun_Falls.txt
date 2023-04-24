@@ -1,5 +1,5 @@
 name=Koskun Falls
-image=https://magiccards.info/scans/en/hl/18.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04292a4e-8910-4911-a76d-4f2c3e15da33.jpg?1562587031
 value=3.548
 rarity=R
 type=World,Enchantment

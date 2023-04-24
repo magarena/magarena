@@ -1,5 +1,5 @@
 name=Ornate Kanzashi
-image=https://magiccards.info/scans/en/bok/157.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baeb4c10-59cb-4bc1-b824-6ec8edd6f45e.jpg?1562879391
 value=3.103
 rarity=R
 type=Artifact

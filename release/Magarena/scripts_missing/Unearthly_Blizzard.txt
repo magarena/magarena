@@ -1,5 +1,5 @@
 name=Unearthly Blizzard
-image=https://magiccards.info/scans/en/chk/196.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d034ad87-fd28-4c23-b897-1d6343ce8282.jpg?1562764652
 value=2.812
 rarity=C
 type=Sorcery

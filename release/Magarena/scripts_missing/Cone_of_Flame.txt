@@ -1,5 +1,5 @@
 name=Cone of Flame
-image=https://magiccards.info/scans/en/m15/137.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b434a60-0875-47f4-a626-2c9bfa3c9b3b.jpg?1562927765
 value=2.500
 rarity=U
 type=Sorcery

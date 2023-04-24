@@ -1,5 +1,5 @@
 name=Temporal Extortion
-image=https://magiccards.info/scans/en/pc/81.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/883a1afb-423d-4f12-93e1-75cc336553b8.jpg?1562576262
 value=4.196
 rarity=R
 type=Sorcery

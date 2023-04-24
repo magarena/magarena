@@ -1,5 +1,5 @@
 name=Baleful Stare
-image=https://magiccards.info/scans/en/9e/64.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/118b1df0-1838-40df-af62-08a73c3d8033.jpg?1562731537
 value=3.297
 rarity=U
 type=Sorcery

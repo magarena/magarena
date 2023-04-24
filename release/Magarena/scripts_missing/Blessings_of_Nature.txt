@@ -1,5 +1,5 @@
 name=Blessings of Nature
-image=https://magiccards.info/scans/en/avr/168.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d16453f1-c6ca-4288-ab72-315ed9bb0ab0.jpg?1592709281
 value=3.681
 rarity=U
 type=Sorcery

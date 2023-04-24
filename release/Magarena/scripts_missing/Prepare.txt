@@ -1,5 +1,5 @@
 name=Prepare
-image=https://magiccards.info/scans/en/akh/220a.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f59ea6f6-2dff-4e58-9166-57cac03f1d0a.jpg?1549941875
 value=2.500
 rarity=R
 type=Instant

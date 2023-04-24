@@ -1,5 +1,5 @@
 name=Forked Lightning
-image=https://magiccards.info/scans/en/po/135.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4677a1e2-815e-446d-b426-10adf3bb032c.jpg?1562909559
 value=2.952
 rarity=R
 type=Sorcery

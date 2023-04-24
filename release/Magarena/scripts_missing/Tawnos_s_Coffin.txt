@@ -1,5 +1,5 @@
 name=Tawnos's Coffin
-image=https://magiccards.info/scans/en/aq/33.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/286fcfbe-296d-4b24-92d5-a06b3d0437d5.jpg?1559592496
 value=3.897
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Early Frost
-image=https://magiccards.info/scans/en/5dn/29.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5989d4c4-bfa4-4b07-ab64-65a3aee6144e.jpg?1562877171
 value=3.262
 rarity=C
 type=Instant

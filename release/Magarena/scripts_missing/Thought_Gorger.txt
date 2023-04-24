@@ -1,5 +1,5 @@
 name=Thought Gorger
-image=https://magiccards.info/scans/en/roe/129.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9b6b512-6252-4899-bb9c-5c304f37d10a.jpg?1562710455
 value=3.911
 rarity=R
 type=Creature

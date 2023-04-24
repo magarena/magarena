@@ -1,5 +1,5 @@
 name=Adaptive Automaton
-image=https://magiccards.info/scans/en/m12/201.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba16bfb3-dbd3-4b3a-b155-08b613268d57.jpg?1599708675
 value=4.199
 rarity=R
 type=Artifact,Creature

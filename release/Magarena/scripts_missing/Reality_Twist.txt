@@ -1,5 +1,5 @@
 name=Reality Twist
-image=https://magiccards.info/scans/en/ia/94.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b7e955c-3de2-430c-93b9-0b39ccea5420.jpg?1562900174
 value=3.622
 rarity=R
 type=Enchantment

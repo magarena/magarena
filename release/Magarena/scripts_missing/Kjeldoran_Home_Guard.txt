@@ -1,5 +1,5 @@
 name=Kjeldoran Home Guard
-image=https://magiccards.info/scans/en/cstd/3.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af8fd3bc-2244-45c7-a271-ec982fbc13ff.jpg?1562870022
 value=3.382
 rarity=U
 type=Creature

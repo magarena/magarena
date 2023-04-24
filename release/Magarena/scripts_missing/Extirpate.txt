@@ -1,5 +1,5 @@
 name=Extirpate
-image=https://magiccards.info/scans/en/mma/84.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4171dbd3-96d6-4e7a-afac-5b2882bf3872.jpg?1619395440
 value=4.500
 rarity=R
 type=Instant

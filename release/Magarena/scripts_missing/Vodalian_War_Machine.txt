@@ -1,5 +1,5 @@
 name=Vodalian War Machine
-image=https://magiccards.info/scans/en/fe/66.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd962ff0-4aa6-453e-931e-bd36fc034273.jpg?1562933491
 value=3.290
 rarity=R
 type=Creature

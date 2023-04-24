@@ -1,5 +1,5 @@
 name=First Response
-image=https://magiccards.info/scans/en/m15/12.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0270f9f2-9afe-4bbb-b14c-0e2da7f54dfc.jpg?1608908778
 value=2.583
 rarity=U
 type=Enchantment

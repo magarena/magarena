@@ -1,5 +1,5 @@
 name=Unclaimed Territory
-image=https://magiccards.info/scans/en/xln/258.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/6037414e-8fa6-48df-bcd6-f5be022bf4af.jpg?1641604546
 value=2.500
 rarity=U
 type=Land

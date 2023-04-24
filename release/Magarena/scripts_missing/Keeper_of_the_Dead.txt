@@ -1,5 +1,5 @@
 name=Keeper of the Dead
-image=https://magiccards.info/scans/en/ex/65.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b641171-35bc-4945-ada9-3ea28ea9fabf.jpg?1562087846
 value=4.236
 rarity=U
 type=Creature

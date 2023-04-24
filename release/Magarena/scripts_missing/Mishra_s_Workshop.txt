@@ -1,5 +1,5 @@
 name=Mishra's Workshop
-image=https://magiccards.info/scans/en/aq/70.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aac0c8df-f01d-4178-8d66-ee603f814d24.jpg?1562929426
 value=4.833
 rarity=R
 type=Land

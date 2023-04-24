@@ -1,5 +1,5 @@
 name=Dragonshift
-image=https://magiccards.info/scans/en/dgm/66.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c046e4e-810c-4123-bb1a-4f97e0cd43d1.jpg?1562915041
 value=3.761
 rarity=R
 type=Instant

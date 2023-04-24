@@ -1,5 +1,5 @@
 name=Frenzied Rage
-image=https://magiccards.info/scans/en/dom/124.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9ca9c16-5720-4531-88ea-48b48d189479.jpg?1591104402
 value=2.500
 rarity=C
 type=Enchantment

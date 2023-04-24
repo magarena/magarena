@@ -1,5 +1,5 @@
 name=Multani, Yavimaya's Avatar
-image=https://magiccards.info/scans/en/dom/174.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88733b6d-6d45-4318-ae49-623929231d17.jpg?1604194288
 value=2.500
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Luminous Guardian
-image=https://magiccards.info/scans/en/od/31.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5becc51-4df8-4f67-a029-42a3da598a26.jpg?1562925964
 value=2.614
 rarity=U
 type=Creature

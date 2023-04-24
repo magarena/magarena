@@ -1,5 +1,5 @@
 name=Blinding Beam
-image=https://magiccards.info/scans/en/mma/7.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0b15737-1026-407f-b2a8-4f7932b2bb18.jpg?1561968560
 value=3.458
 rarity=C
 type=Instant

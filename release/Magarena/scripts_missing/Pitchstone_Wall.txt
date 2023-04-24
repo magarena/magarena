@@ -1,5 +1,5 @@
 name=Pitchstone Wall
-image=https://magiccards.info/scans/en/tr/110.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bfea263-6ff0-41be-9755-03bcdebfb255.jpg?1562631128
 value=3.017
 rarity=U
 type=Creature

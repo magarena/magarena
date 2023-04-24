@@ -1,5 +1,5 @@
 name=Shattered Dreams
-image=https://magiccards.info/scans/en/5dn/59.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1eb957bd-99e4-431e-b163-c25e9b7850d9.jpg?1562875773
 value=2.452
 rarity=U
 type=Sorcery

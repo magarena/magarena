@@ -1,5 +1,5 @@
 name=Exquisite Firecraft
-image=https://magiccards.info/scans/en/ori/143.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42eca98e-a164-4f70-a0b0-7a604863f30b.jpg?1562016890
 image_updated=2015-11-05
 value=2.500
 rarity=R

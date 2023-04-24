@@ -1,5 +1,5 @@
 name=Lion's Eye Diamond
-image=https://magiccards.info/scans/en/mr/272.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/758f95f8-bcb0-43ae-b474-56ebd855951e.jpg?1590511899
 value=4.250
 rarity=R
 type=Artifact

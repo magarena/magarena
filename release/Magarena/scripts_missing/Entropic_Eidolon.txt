@@ -1,5 +1,5 @@
 name=Entropic Eidolon
-image=https://magiccards.info/scans/en/di/45.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5998cab0-77cd-4a22-8049-37d39928df6d.jpg?1593272905
 value=2.227
 rarity=C
 type=Creature

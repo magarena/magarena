@@ -1,5 +1,5 @@
 name=Thelon's Chant
-image=https://magiccards.info/scans/en/fe/94.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d970195-0a09-4cb4-a2c0-c16fcab5c859.jpg?1562924333
 value=2.593
 rarity=U
 type=Enchantment

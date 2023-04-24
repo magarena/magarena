@@ -1,5 +1,5 @@
 name=Crumbling Vestige
-image=https://magiccards.info/scans/en/ogw/170.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d491c13c-43e3-4ca3-b888-4edd34dfe14a.jpg?1562937635
 image_updated=2016-02-29
 value=2.500
 rarity=C

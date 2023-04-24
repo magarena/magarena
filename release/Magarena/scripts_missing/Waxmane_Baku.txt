@@ -1,5 +1,5 @@
 name=Waxmane Baku
-image=https://magiccards.info/scans/en/mm2/38.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd0c47e0-c87b-4304-b412-00496c2c289f.jpg?1562269753
 value=2.500
 rarity=C
 type=Creature

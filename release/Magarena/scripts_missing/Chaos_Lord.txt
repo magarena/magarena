@@ -1,5 +1,5 @@
 name=Chaos Lord
-image=https://magiccards.info/scans/en/ia/178.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee245922-b380-4b2e-a43f-ab1ba8078943.jpg?1562939685
 value=2.320
 rarity=R
 type=Creature

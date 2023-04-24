@@ -1,5 +1,5 @@
 name=Denying Wind
-image=https://magiccards.info/scans/en/pr/32.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15f236ce-41ad-4a49-a6f9-7853a2395a84.jpg?1562899189
 value=2.230
 rarity=R
 type=Sorcery

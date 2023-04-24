@@ -1,5 +1,5 @@
 name=Copper-Leaf Angel
-image=https://magiccards.info/scans/en/pr/137.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7be413dd-d6e0-4bd3-8c14-4dbe44e8ee41.jpg?1562917881
 value=2.310
 rarity=R
 type=Artifact,Creature

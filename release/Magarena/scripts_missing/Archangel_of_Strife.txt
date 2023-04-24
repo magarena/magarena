@@ -1,5 +1,5 @@
 name=Archangel of Strife
-image=https://magiccards.info/scans/en/cmd/7.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b15514f0-0dd8-4e49-a56e-ed829f4c9623.jpg?1592672324
 value=3.775
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Think Tank
-image=https://magiccards.info/scans/en/od/104.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c1c9d34-ea4c-4e89-a7ed-06c4469c1aca.jpg?1665819883
 value=3.833
 rarity=U
 type=Enchantment

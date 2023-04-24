@@ -1,5 +1,5 @@
 name=Courtly Provocateur
-image=https://magiccards.info/scans/en/m13/46.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba912207-a8bf-4ffb-9967-34029cb09f7f.jpg?1562559209
 value=3.272
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Insult
-image=https://magiccards.info/scans/en/akh/213a.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eeac671f-2606-43ed-ad60-a69df5c150f6.jpg?1549941631
 value=2.500
 rarity=R
 type=Sorcery

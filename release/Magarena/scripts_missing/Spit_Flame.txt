@@ -1,5 +1,5 @@
 name=Spit Flame
-image=https://magiccards.info/scans/en/m19/160.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5bf8493-2592-48e0-9c45-bb7974c30aed.jpg?1631587541
 value=2.500
 rarity=R
 type=Instant

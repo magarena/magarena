@@ -1,5 +1,5 @@
 name=Sprout Swarm
-image=https://magiccards.info/scans/en/fut/138.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b915355-4e98-44df-81bd-961a3d3c86b8.jpg?1562897338
 value=4.107
 rarity=C
 type=Instant

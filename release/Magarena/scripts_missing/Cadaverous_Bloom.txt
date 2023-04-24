@@ -1,5 +1,5 @@
 name=Cadaverous Bloom
-image=https://magiccards.info/scans/en/mr/318.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9bef70b-61c7-4df5-b4df-09cd6ab2015c.jpg?1562721897
 value=4.375
 rarity=R
 type=Enchantment

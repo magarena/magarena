@@ -1,5 +1,5 @@
 name=Prophecy
-image=https://magiccards.info/scans/en/hl/114.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f514eb63-3a4e-4410-ba3d-487cf81f7063.jpg?1562588721
 value=1.622
 rarity=C
 type=Sorcery

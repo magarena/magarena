@@ -1,5 +1,5 @@
 name=Foul Renewal
-image=https://magiccards.info/scans/en/dtk/101.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e319b7ca-d0a4-43ff-8e87-2af6ead089f5.jpg?1562794534
 value=2.500
 rarity=R
 type=Instant

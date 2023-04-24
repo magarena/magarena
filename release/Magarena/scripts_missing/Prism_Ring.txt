@@ -1,5 +1,5 @@
 name=Prism Ring
-image=https://magiccards.info/scans/en/ori/235.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/403f99de-493a-4f0f-81e4-fcd29d6e9340.jpg?1562016386
 image_updated=2015-11-05
 value=2.500
 rarity=U

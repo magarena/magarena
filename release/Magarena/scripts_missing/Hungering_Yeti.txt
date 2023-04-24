@@ -1,5 +1,5 @@
 name=Hungering Yeti
-image=https://magiccards.info/scans/en/frf/105.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02f7c596-5633-41e8-adcd-d4dc6eae5c88.jpg?1562821995
 value=2.500
 rarity=U
 type=Creature

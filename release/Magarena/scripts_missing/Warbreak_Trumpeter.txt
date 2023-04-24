@@ -1,5 +1,5 @@
 name=Warbreak Trumpeter
-image=https://magiccards.info/scans/en/le/116.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc942957-1067-428c-8ee1-01f9e260efe1.jpg?1562945961
 value=3.061
 rarity=U
 type=Creature

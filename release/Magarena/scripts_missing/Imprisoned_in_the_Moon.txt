@@ -1,5 +1,5 @@
 name=Imprisoned in the Moon
-image=https://magiccards.info/scans/en/emn/65.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8181f54d-4515-43c6-8d08-b23a9e4199cc.jpg?1682208779
 image_updated=2016-09-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Ghastbark Twins
-image=https://magiccards.info/scans/en/m19/181.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d470e441-3520-4669-aaa5-f0c57829352a.jpg?1562304411
 value=2.500
 rarity=U
 type=Creature

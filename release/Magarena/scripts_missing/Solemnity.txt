@@ -1,5 +1,5 @@
 name=Solemnity
-image=https://magiccards.info/scans/en/hou/22.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a71fb62-acbd-49f5-842f-0fc9fa48afea.jpg?1562788659
 value=2.500
 rarity=R
 type=Enchantment

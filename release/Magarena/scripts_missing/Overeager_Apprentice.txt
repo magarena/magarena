@@ -1,5 +1,5 @@
 name=Overeager Apprentice
-image=https://magiccards.info/scans/en/od/154.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8227e2fc-259d-4470-8522-d550746dbc4a.jpg?1561771517
 image_updated=2017-01-03
 value=2.500
 rarity=C

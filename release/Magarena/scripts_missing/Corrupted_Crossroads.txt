@@ -1,5 +1,5 @@
 name=Corrupted Crossroads
-image=https://magiccards.info/scans/en/ogw/169.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7043e193-8051-4f1b-9633-9c1f250d3607.jpg?1562917448
 image_updated=2016-02-29
 value=2.500
 rarity=R

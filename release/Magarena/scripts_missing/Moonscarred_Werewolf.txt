@@ -1,5 +1,5 @@
 name=Moonscarred Werewolf
-image=https://magiccards.info/scans/en/dka/125b.jpg
+image=https://cards.scryfall.io/border_crop/back/6/f/6f35e364-81d9-4888-993b-acc7a53d963c.jpg?1581395260
 value=3.315
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vaevictis Asmadi, the Dire
-image=https://magiccards.info/scans/en/m19/225.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d19fdc00-21eb-48dc-966a-6b634dc5a2c4.jpg?1562304374
 value=2.500
 rarity=M
 type=Legendary,Creature

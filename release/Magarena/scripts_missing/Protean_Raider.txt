@@ -1,5 +1,5 @@
 name=Protean Raider
-image=https://magiccards.info/scans/en/rix/167.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41ed9247-16c0-4ca4-9b46-d3da5a375e4c.jpg?1555040923
 value=2.500
 rarity=R
 type=Creature

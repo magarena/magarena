@@ -1,5 +1,5 @@
 name=Aradara Express
-image=https://magiccards.info/scans/en/kld/195.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fc0d1f7-c81c-4329-92b7-c4df227cc56c.jpg?1576382973
 image_updated=2016-10-05
 value=2.500
 rarity=C

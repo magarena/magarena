@@ -1,5 +1,5 @@
 name=Blood
-image=https://magiccards.info/scans/en/dgm/128b.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac2c781d-cbfe-4d01-be02-9f34fee5d839.jpg?1682211097
 value=3.977
 rarity=R
 type=Sorcery

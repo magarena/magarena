@@ -1,5 +1,5 @@
 name=Temper
-image=https://magiccards.info/scans/en/sh/120.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4bff910-24ab-45a0-b014-30bef6263c38.jpg?1562597830
 value=3.667
 rarity=U
 type=Instant

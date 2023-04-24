@@ -1,5 +1,5 @@
 name=Overblaze
-image=https://magiccards.info/scans/en/bok/114.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97040b82-ad9e-4c06-a9ac-74d0688279f9.jpg?1562878545
 value=3.404
 rarity=U
 type=Instant

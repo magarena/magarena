@@ -1,5 +1,5 @@
 name=Rosheen Meanderer
-image=https://magiccards.info/scans/en/ima/206.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/472efa7f-203f-4c48-b9ad-505e18f2976f.jpg?1562848454
 image_updated=2017-04-12
 value=3.983
 rarity=U

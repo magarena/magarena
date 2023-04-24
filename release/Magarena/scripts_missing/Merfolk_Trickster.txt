@@ -1,5 +1,5 @@
 name=Merfolk Trickster
-image=https://magiccards.info/scans/en/dom/56.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/359b2f2b-7b58-47b6-b00c-8616f981e3a3.jpg?1562733961
 value=2.500
 rarity=U
 type=Creature

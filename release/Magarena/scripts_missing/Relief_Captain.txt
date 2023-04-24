@@ -1,5 +1,5 @@
 name=Relief Captain
-image=https://magiccards.info/scans/en/ogw/32.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/300f4c1d-dbe7-4d9f-9974-b2d1a2989ddf.jpg?1673147082
 image_updated=2016-02-29
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Raiding Party
-image=https://magiccards.info/scans/en/fe/132.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/907a3396-706b-4ca2-9973-bca758986032.jpg?1562921822
 value=2.974
 rarity=U
 type=Enchantment

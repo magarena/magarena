@@ -1,5 +1,5 @@
 name=Refuse
-image=https://magiccards.info/scans/en/hou/156a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca4caa4e-6b8f-4be8-b177-de2ebe2c9201.jpg?1568004800
 value=2.500
 rarity=R
 type=Instant

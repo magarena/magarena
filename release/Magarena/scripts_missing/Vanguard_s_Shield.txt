@@ -1,5 +1,5 @@
 name=Vanguard's Shield
-image=https://magiccards.info/scans/en/avr/223.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce8d9db6-5737-4a1f-ae4e-75821a602784.jpg?1592709621
 value=1.939
 rarity=C
 type=Artifact

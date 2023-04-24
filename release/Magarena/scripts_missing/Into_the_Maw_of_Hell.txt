@@ -1,5 +1,5 @@
 name=Into the Maw of Hell
-image=https://magiccards.info/scans/en/isd/150.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d188d9b-7a12-4eaf-855b-af4f0204dc5a.jpg?1562830878
 value=3.858
 rarity=U
 type=Sorcery

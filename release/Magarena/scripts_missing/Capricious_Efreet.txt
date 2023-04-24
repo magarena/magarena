@@ -1,5 +1,5 @@
 name=Capricious Efreet
-image=https://magiccards.info/scans/en/m10/131.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48d3c44d-1a2f-4e2a-8d5a-592719cb92f4.jpg?1562910188
 value=3.545
 rarity=R
 type=Creature

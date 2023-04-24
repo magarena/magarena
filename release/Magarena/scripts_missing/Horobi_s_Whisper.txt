@@ -1,5 +1,5 @@
 name=Horobi's Whisper
-image=https://magiccards.info/scans/en/mma/88.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f16e029c-cf98-4c98-b394-923247579ee5.jpg?1561969045
 value=3.083
 rarity=U
 type=Instant

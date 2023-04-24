@@ -1,5 +1,5 @@
 name=Chariot of the Sun
-image=https://magiccards.info/scans/en/mr/262.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e3bc470-cfcc-4835-b46f-c08d698ee1ab.jpg?1587857034
 value=2.217
 rarity=U
 type=Artifact

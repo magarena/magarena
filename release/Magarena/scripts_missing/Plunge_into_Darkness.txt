@@ -1,5 +1,5 @@
 name=Plunge into Darkness
-image=https://magiccards.info/scans/en/5dn/57.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d21c74b4-dd9e-43d6-ad0a-06e026a8d672.jpg?1562879871
 value=3.971
 rarity=R
 type=Instant

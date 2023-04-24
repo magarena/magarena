@@ -1,5 +1,5 @@
 name=Detritivore
-image=https://magiccards.info/scans/en/pc/96.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ec01f4b-b3df-4e2b-ae93-2f2d0cc279bd.jpg?1562568653
 value=3.060
 rarity=R
 type=Creature

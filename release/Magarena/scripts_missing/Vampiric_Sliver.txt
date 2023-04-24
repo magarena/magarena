@@ -1,5 +1,5 @@
 name=Vampiric Sliver
-image=https://magiccards.info/scans/en/ts/140.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28c56db1-bb2d-4383-90aa-72d00fe476b2.jpg?1562903641
 value=3.633
 rarity=U
 type=Creature

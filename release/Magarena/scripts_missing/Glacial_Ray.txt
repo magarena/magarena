@@ -1,5 +1,5 @@
 name=Glacial Ray
-image=https://magiccards.info/scans/en/mma/115.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aa3b25c-a1e1-4eb0-9b65-3c4c6b2a8903.jpg?1561967356
 value=3.944
 rarity=C
 type=Instant

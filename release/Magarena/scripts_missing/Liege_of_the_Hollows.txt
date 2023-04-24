@@ -1,5 +1,5 @@
 name=Liege of the Hollows
-image=https://magiccards.info/scans/en/wl/73.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dff4512b-8244-4e38-bffb-0062a97d9531.jpg?1562803813
 value=3.671
 rarity=R
 type=Creature

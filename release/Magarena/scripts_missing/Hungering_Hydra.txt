@@ -1,5 +1,5 @@
 name=Hungering Hydra
-image=https://magiccards.info/scans/en/m19/189.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cce0561d-252a-499f-bfa0-9de59e4ea5ba.jpg?1591320908
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Soulless Revival
-image=https://magiccards.info/scans/en/chk/144.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b36712c-1ccb-4efe-8db8-823b9b80a99f.jpg?1562761075
 value=3.242
 rarity=C
 type=Instant

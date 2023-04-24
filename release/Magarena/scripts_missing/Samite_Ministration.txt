@@ -1,5 +1,5 @@
 name=Samite Ministration
-image=https://magiccards.info/scans/en/in/36.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1de62ed-79e6-4daf-a2ab-dc0726e1f7df.jpg?1562930810
 value=3.096
 rarity=U
 type=Instant

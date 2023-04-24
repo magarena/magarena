@@ -1,5 +1,5 @@
 name=Spelljack
-image=https://magiccards.info/scans/en/ju/51.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3eda8c7b-ce35-482a-bece-52a30cc78a9a.jpg?1562629500
 value=3.745
 rarity=R
 type=Instant

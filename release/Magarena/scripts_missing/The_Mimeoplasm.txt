@@ -1,5 +1,5 @@
 name=The Mimeoplasm
-image=https://magiccards.info/scans/en/cmd/210.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8173413-0431-4b70-a509-f1bc11a59225.jpg?1673148970
 image_updated=2017-01-11
 value=4.063
 rarity=M

@@ -1,5 +1,5 @@
 name=Chance Encounter
-image=https://magiccards.info/scans/en/od/182.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5763940-c987-4612-be87-8ec299be391a.jpg?1645328893
 value=3.952
 rarity=R
 type=Enchantment

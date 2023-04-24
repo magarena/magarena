@@ -1,5 +1,5 @@
 name=Words of Wind
-image=https://magiccards.info/scans/en/on/122.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5595a57a-a76c-467b-afaf-5affffc24f35.jpg?1562915041
 value=3.300
 rarity=R
 type=Enchantment

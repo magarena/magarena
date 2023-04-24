@@ -1,5 +1,5 @@
 name=Keranos, God of Storms
-image=https://magiccards.info/scans/en/jou/151.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab70c262-37a9-4dcd-80bb-d4422368eade.jpg?1593096418
 value=3.733
 rarity=M
 type=Legendary,Enchantment,Creature

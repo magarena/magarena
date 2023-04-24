@@ -1,5 +1,5 @@
 name=Laboratory Maniac
-image=https://magiccards.info/scans/en/isd/61.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/608567fd-9f94-4058-831a-77cb6019ef02.jpg?1547516361
 value=4.477
 rarity=R
 type=Creature

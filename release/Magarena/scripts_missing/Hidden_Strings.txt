@@ -1,5 +1,5 @@
 name=Hidden Strings
-image=https://magiccards.info/scans/en/dgm/12.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/216e8047-6f54-49ce-bf86-27dc8fc8c8f7.jpg?1562901181
 value=3.890
 rarity=C
 type=Sorcery

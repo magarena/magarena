@@ -1,5 +1,5 @@
 name=Petalmane Baku
-image=https://magiccards.info/scans/en/bok/139.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c7ba032-66d6-41bd-af4f-9853b031a474.jpg?1562878053
 value=3.100
 rarity=C
 type=Creature

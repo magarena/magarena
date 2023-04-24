@@ -1,5 +1,5 @@
 name=Muzzio, Visionary Architect
-image=https://magiccards.info/scans/en/cns/23.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4af4cc3-bd51-4161-baec-091d729ac820.jpg?1562937655
 value=4.219
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Erg Raiders
-image=https://magiccards.info/scans/en/a25/90.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b29d88ad-5074-4f37-bb6a-2a7fe75c5771.jpg?1562439783
 image_updated=2018-04-25
 value=3.480
 rarity=C

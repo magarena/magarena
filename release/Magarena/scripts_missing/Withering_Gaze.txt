@@ -1,5 +1,5 @@
 name=Withering Gaze
-image=https://magiccards.info/scans/en/9e/113.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f25580a6-e687-4da5-85f4-07d940acda95.jpg?1562743889
 value=3.061
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Repel Intruders
-image=https://magiccards.info/scans/en/shm/147.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38e64b09-1a58-4669-b7f2-baa3ccc85f2d.jpg?1568911006
 value=2.929
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Invert the Skies
-image=https://magiccards.info/scans/en/eve/155.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6d0a6f9-478f-43c7-8591-3b601c12ed01.jpg?1568910927
 value=3.229
 rarity=U
 type=Instant

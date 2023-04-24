@@ -1,5 +1,5 @@
 name=Chandra, Bold Pyromancer
-image=https://magiccards.info/scans/en/dom/275.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba9d2384-5c3f-4eb1-86b4-26ee13f1c767.jpg?1582053256
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

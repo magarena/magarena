@@ -1,5 +1,5 @@
 name=Minds Aglow
-image=https://magiccards.info/scans/en/c16/93.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01848946-b0b3-41ad-8753-98a606e25238.jpg?1562271998
 image_updated=2017-08-17
 value=3.308
 rarity=R

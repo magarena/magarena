@@ -1,5 +1,5 @@
 name=Temur War Shaman
-image=https://magiccards.info/scans/en/frf/142.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a873164f-d8eb-460e-a8cc-8b2a663dcf3a.jpg?1562828567
 value=2.500
 rarity=R
 type=Creature

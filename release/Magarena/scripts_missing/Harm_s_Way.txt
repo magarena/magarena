@@ -1,5 +1,5 @@
 name=Harm's Way
-image=https://magiccards.info/scans/en/m10/14.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c59d43e-0e07-4601-b6df-178010ea909f.jpg?1562927986
 value=3.900
 rarity=U
 type=Instant

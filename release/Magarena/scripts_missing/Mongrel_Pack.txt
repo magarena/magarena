@@ -1,5 +1,5 @@
 name=Mongrel Pack
-image=https://magiccards.info/scans/en/tp/131.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56b84315-5287-4401-a4c8-34c192423270.jpg?1562054227
 value=3.773
 rarity=R
 type=Creature

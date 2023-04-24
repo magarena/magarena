@@ -1,5 +1,5 @@
 name=Rebel Informer
-image=https://magiccards.info/scans/en/pr/75.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c98a71a8-291f-4d94-ada0-5f50f354cca7.jpg?1562932704
 value=3.697
 rarity=R
 type=Creature

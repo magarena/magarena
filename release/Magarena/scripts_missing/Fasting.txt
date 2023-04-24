@@ -1,5 +1,5 @@
 name=Fasting
-image=https://magiccards.info/scans/en/dk/80.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8da35f9f-e72c-4154-a212-7de98f84ad7d.jpg?1562928369
 value=0.949
 rarity=U
 type=Enchantment

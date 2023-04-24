@@ -1,5 +1,5 @@
 name=Peregrine Drake
-image=https://magiccards.info/scans/en/ema/64.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbe5d85f-bfd3-49e1-a943-ed1ade6bb2a2.jpg?1562945824
 value=4.400
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Celestial Convergence
-image=https://magiccards.info/scans/en/pr/5.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8e5c9ca-b453-488b-8702-fc74907a8335.jpg?1562938598
 value=3.568
 rarity=R
 type=Enchantment

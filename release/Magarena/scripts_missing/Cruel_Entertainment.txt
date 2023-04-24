@@ -1,5 +1,5 @@
 name=Cruel Entertainment
-image=https://magiccards.info/scans/en/c16/11.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e304424-4a50-43bb-aee0-e9f960583aac.jpg?1562396529
 image_updated=2016-11-28
 value=2.500
 rarity=R

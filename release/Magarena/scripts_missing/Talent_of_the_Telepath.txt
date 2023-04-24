@@ -1,5 +1,5 @@
 name=Talent of the Telepath
-image=https://magiccards.info/scans/en/ori/78.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5da13a1-8be2-4312-a660-f3e102c552b6.jpg?1562041079
 image_updated=2015-11-05
 value=2.500
 rarity=R

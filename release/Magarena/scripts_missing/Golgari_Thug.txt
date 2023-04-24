@@ -1,5 +1,5 @@
 name=Golgari Thug
-image=https://magiccards.info/scans/en/rav/87.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ecfb37f-aa3f-46ca-9bff-01a874f8cc59.jpg?1547516887
 value=4.533
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Soldevi Sentry
-image=https://magiccards.info/scans/en/ai/175.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85976b5c-4eed-4cf9-b2b0-a8421a97ab2a.jpg?1562769218
 value=2.295
 rarity=C
 type=Artifact,Creature

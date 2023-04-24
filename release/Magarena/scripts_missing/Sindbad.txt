@@ -1,5 +1,5 @@
 name=Sindbad
-image=https://magiccards.info/scans/en/tsts/31.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a6372ec-1ae2-4806-bb31-78f9ea6259df.jpg?1562777887
 value=3.050
 rarity=U
 type=Creature

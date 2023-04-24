@@ -1,5 +1,5 @@
 name=Sen Triplets
-image=https://magiccards.info/scans/en/arb/109.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13ac5292-9817-4f5d-b3fa-611f9ba44443.jpg?1599708366
 value=3.998
 rarity=M
 type=Legendary,Artifact,Creature

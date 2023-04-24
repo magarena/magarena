@@ -1,5 +1,5 @@
 name=Falling Timber
-image=https://magiccards.info/scans/en/ps/79.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e54c84d-ccc9-4c52-b02c-e0392e8fe447.jpg?1562918170
 value=1.750
 rarity=C
 type=Instant

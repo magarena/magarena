@@ -1,5 +1,5 @@
 name=Kumano's Blessing
-image=https://magiccards.info/scans/en/bok/111.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56f0d9aa-4270-41cd-8993-765354c03d03.jpg?1562877131
 value=1.046
 rarity=C
 type=Enchantment

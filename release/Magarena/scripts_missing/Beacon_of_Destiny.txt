@@ -1,5 +1,5 @@
 name=Beacon of Destiny
-image=https://magiccards.info/scans/en/le/5.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30b1cad7-4e96-4ebe-8c99-4ed9217becf3.jpg?1562904924
 value=3.788
 rarity=R
 type=Creature

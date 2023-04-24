@@ -1,5 +1,5 @@
 name=Golden Wish
-image=https://magiccards.info/scans/en/ju/12.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc409ded-41f3-4f14-8199-72a9fe98bac0.jpg?1562632261
 value=3.679
 rarity=R
 type=Sorcery

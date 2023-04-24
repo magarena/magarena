@@ -1,5 +1,5 @@
 name=Kheru Lich Lord
-image=https://magiccards.info/scans/en/ktk/182.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7fbca8d-34a3-4df1-986a-36fca142a758.jpg?1562795282
 value=3.500
 rarity=R
 type=Creature

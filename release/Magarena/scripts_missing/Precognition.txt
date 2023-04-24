@@ -1,5 +1,5 @@
 name=Precognition
-image=https://magiccards.info/scans/en/tp/79.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76a0e317-5a76-4eac-a903-b0e3f0a45873.jpg?1562054493
 value=3.269
 rarity=R
 type=Enchantment

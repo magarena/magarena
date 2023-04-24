@@ -1,5 +1,5 @@
 name=Grand Warlord Radha
-image=https://magiccards.info/scans/en/dom/195.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/986981fa-a744-45d8-81c7-68ef335c79e2.jpg?1562739940
 value=2.500
 rarity=R
 type=Legendary,Creature

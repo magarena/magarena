@@ -1,5 +1,5 @@
 name=Embalmed Brawler
-image=https://magiccards.info/scans/en/le/69.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e214da0-68c0-4cf6-ba12-e2b2394909c1.jpg?1562904398
 value=2.191
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spinning Darkness
-image=https://magiccards.info/scans/en/wl/23.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58e64a8e-84b1-416c-9fa7-8b10130dc9e9.jpg?1562800960
 value=3.915
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Jade Statue
-image=https://magiccards.info/scans/en/9e/300.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af0495f8-4f18-4860-b1b4-58fa67414c8e.jpg?1562740224
 value=3.255
 rarity=R
 type=Artifact

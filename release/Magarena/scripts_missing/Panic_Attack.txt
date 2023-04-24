@@ -1,5 +1,5 @@
 name=Panic Attack
-image=https://magiccards.info/scans/en/m10/150.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9c6cbc8-e33a-4692-aff0-4de9bb65421d.jpg?1561999832
 value=2.990
 rarity=C
 type=Sorcery

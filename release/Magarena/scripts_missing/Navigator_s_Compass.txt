@@ -1,5 +1,5 @@
 name=Navigator's Compass
-image=https://magiccards.info/scans/en/dom/225.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a283135-7a51-4cf7-82a6-7e50894e64a5.jpg?1562737167
 value=2.500
 rarity=C
 type=Artifact

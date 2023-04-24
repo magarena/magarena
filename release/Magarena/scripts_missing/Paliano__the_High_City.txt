@@ -1,5 +1,5 @@
 name=Paliano, the High City
-image=https://magiccards.info/scans/en/cns/65.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eac8649b-b892-4854-8422-fd117ccac39a.jpg?1562867353
 value=3.458
 rarity=R
 type=Legendary,Land

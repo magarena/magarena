@@ -1,5 +1,5 @@
 name=Command Tower
-image=https://magiccards.info/scans/en/c16/286.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91b73884-6850-479d-8531-e17c8531a245.jpg?1682210382
 image_updated=2017-08-17
 value=3.596
 rarity=C

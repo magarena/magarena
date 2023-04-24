@@ -1,5 +1,5 @@
 name=Blind Seer
-image=https://magiccards.info/scans/en/in/47.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c54ec26-c7f1-4258-9cc9-1709987f293c.jpg?1591291188
 value=3.550
 rarity=R
 type=Legendary,Creature

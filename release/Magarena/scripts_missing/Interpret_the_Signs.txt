@@ -1,5 +1,5 @@
 name=Interpret the Signs
-image=https://magiccards.info/scans/en/jou/43.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42dbf049-5c02-4038-86de-fa6b5110cf7e.jpg?1608909267
 value=2.857
 rarity=U
 type=Sorcery

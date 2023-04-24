@@ -1,5 +1,5 @@
 name=Cinder Seer
-image=https://magiccards.info/scans/en/ud/78.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d96e7522-e0bc-4e23-8e4b-40a0c28ea986.jpg?1562445218
 value=3.540
 rarity=U
 type=Creature

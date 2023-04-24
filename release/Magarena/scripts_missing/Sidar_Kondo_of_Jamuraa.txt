@@ -1,5 +1,5 @@
 name=Sidar Kondo of Jamuraa
-image=https://magiccards.info/scans/en/c16/42.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19d2671c-39bd-4dd7-ac97-9cdf5c2cb149.jpg?1562390224
 image_updated=2016-12-28
 value=2.500
 rarity=M

@@ -1,5 +1,5 @@
 name=Archetype of Aggression
-image=https://magiccards.info/scans/en/bng/88.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13946413-c76d-41a8-a699-404fd56b2067.jpg?1593092162
 value=3.827
 rarity=U
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Expedition Raptor
-image=https://magiccards.info/scans/en/ogw/18.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a00b9b2f-4cd8-4c36-a2b2-40673dfb9f39.jpg?1562927282
 image_updated=2016-02-29
 value=2.500
 rarity=C

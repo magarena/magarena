@@ -1,5 +1,5 @@
 name=Fated Return
-image=https://magiccards.info/scans/en/bng/69.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d168856-5568-4ee0-942d-78865d2bb1ef.jpg?1604193072
 value=3.640
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Master Warcraft
-image=https://magiccards.info/scans/en/cmd/209.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a95749cf-dd12-4bca-a74d-01301b9b76df.jpg?1608917651
 value=3.713
 rarity=R
 type=Instant

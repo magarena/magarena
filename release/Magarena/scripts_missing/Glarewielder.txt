@@ -1,5 +1,5 @@
 name=Glarewielder
-image=https://magiccards.info/scans/en/lw/171.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59fdc845-7165-40f3-a082-21a502b3f0f6.jpg?1562349503
 value=2.456
 rarity=U
 type=Creature

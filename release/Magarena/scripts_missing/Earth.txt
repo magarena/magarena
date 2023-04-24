@@ -1,5 +1,5 @@
 name=Earth
-image=https://magiccards.info/scans/en/akh/224b.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82202ac9-7281-4d12-af4e-a8147cc38296.jpg?1682209764
 value=2.500
 rarity=R
 type=Sorcery

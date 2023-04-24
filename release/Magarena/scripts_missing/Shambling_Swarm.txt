@@ -1,5 +1,5 @@
 name=Shambling Swarm
-image=https://magiccards.info/scans/en/tr/82.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5b93715-985f-4719-a3c3-044c2a150e96.jpg?1562631662
 value=3.516
 rarity=R
 type=Creature

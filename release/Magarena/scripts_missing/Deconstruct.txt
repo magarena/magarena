@@ -1,5 +1,5 @@
 name=Deconstruct
-image=https://magiccards.info/scans/en/mi/118.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53face79-d2bf-43dd-aa4e-d724c2b68c49.jpg?1562144237
 value=3.900
 rarity=C
 type=Sorcery

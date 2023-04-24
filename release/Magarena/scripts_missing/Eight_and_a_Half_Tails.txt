@@ -1,5 +1,5 @@
 name=Eight-and-a-Half-Tails
-image=https://magiccards.info/scans/en/ema/7.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef722374-0305-4c30-ab45-cb772b252faf.jpg?1674141085
 value=4.076
 rarity=R
 type=Legendary,Creature

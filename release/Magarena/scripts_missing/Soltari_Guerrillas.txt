@@ -1,5 +1,5 @@
 name=Soltari Guerrillas
-image=https://magiccards.info/scans/en/tp/347.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fabd462-15d3-4a08-bad2-edab2a142420.jpg?1562428870
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Pyrewild Shaman
-image=https://magiccards.info/scans/en/mm3/106.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f195c52-4018-4d57-9c62-5f0a10f7336c.jpg?1599706584
 image_updated=2017-08-08
 value=3.718
 rarity=U

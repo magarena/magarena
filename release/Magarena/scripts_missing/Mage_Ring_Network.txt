@@ -1,5 +1,5 @@
 name=Mage-Ring Network
-image=https://magiccards.info/scans/en/ori/249.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/873951e4-a35b-4163-9827-8d8284416165.jpg?1625980465
 image_updated=2015-11-05
 value=2.500
 rarity=U

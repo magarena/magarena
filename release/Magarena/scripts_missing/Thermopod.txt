@@ -1,5 +1,5 @@
 name=Thermopod
-image=https://magiccards.info/scans/en/cs/100.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c09475e9-d6c1-4d4b-905e-40bc30405725.jpg?1593275340
 value=3.440
 rarity=C
 type=Snow,Creature

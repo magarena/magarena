@@ -1,5 +1,5 @@
 name=Lay Bare
-image=https://magiccards.info/scans/en/roe/74.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0454c2a8-b17d-4cdf-8562-9a28bc6cf0be.jpg?1562700738
 value=2.328
 rarity=C
 type=Instant

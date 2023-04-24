@@ -1,5 +1,5 @@
 name=Avalanche
-image=https://magiccards.info/scans/en/ia/171.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3a925e5-0d0a-42ec-b1c6-9793b8e11625.jpg?1562934569
 value=1.865
 rarity=U
 type=Sorcery

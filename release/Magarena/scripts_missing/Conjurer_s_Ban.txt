@@ -1,5 +1,5 @@
 name=Conjurer's Ban
-image=https://magiccards.info/scans/en/gp/108.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39849576-b58f-45f0-ad33-a9bf2135d9b7.jpg?1593272628
 value=2.782
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Autochthon Wurm
-image=https://magiccards.info/scans/en/rav/191.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7002a87b-a55f-42ec-b247-119a3229129f.jpg?1598916741
 value=3.818
 rarity=R
 type=Creature

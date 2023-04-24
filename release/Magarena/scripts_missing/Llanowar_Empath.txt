@@ -1,5 +1,5 @@
 name=Llanowar Empath
-image=https://magiccards.info/scans/en/ori/185.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8ad19d75-b506-4d5c-bd94-40e8a1be7f27.jpg?1561759297
 image_updated=2015-11-05
 value=2.569
 rarity=C

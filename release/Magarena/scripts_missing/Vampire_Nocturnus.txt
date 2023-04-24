@@ -1,5 +1,5 @@
 name=Vampire Nocturnus
-image=https://magiccards.info/scans/en/m13/113.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8daccbbb-6600-4467-810f-277f01a11771.jpg?1562556901
 value=3.976
 rarity=M
 type=Creature

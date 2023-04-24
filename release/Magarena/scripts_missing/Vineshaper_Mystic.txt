@@ -1,5 +1,5 @@
 name=Vineshaper Mystic
-image=https://magiccards.info/scans/en/xln/214.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4a27502-f6f4-4c12-af0e-eab00d942ada.jpg?1562563582
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Cinder Cloud
-image=https://magiccards.info/scans/en/mr/165.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f044c470-50ce-4a6c-b8ab-665357c3c11e.jpg?1562722408
 value=3.100
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Spurnmage Advocate
-image=https://magiccards.info/scans/en/cmd/33.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c014b89-895c-432f-94f5-cda2dfac57e4.jpg?1592712916
 value=3.719
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Saproling Cluster
-image=https://magiccards.info/scans/en/ne/114.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f50072b-aedd-4074-b1f7-f9ce477c26c2.jpg?1562630183
 value=2.771
 rarity=R
 type=Enchantment

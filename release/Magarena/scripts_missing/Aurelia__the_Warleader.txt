@@ -1,5 +1,5 @@
 name=Aurelia, the Warleader
-image=https://magiccards.info/scans/en/gtc/143.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/7722682f-952c-4829-b4ef-e52300b7950e.jpg?1673148346
 value=4.039
 rarity=M
 type=Legendary,Creature

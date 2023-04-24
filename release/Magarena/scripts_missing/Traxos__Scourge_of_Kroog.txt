@@ -1,5 +1,5 @@
 name=Traxos, Scourge of Kroog
-image=https://magiccards.info/scans/en/dom/234.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/8566e91a-5f2c-4854-aeb3-68b3c4344582.jpg?1673305899
 value=2.500
 rarity=R
 type=Legendary,Artifact,Creature

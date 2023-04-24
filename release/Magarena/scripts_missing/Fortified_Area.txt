@@ -1,5 +1,5 @@
 name=Fortified Area
-image=https://magiccards.info/scans/en/4e/276.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f89968f-0182-4639-96fd-0dc94b6ad926.jpg?1559603754
 value=3.027
 rarity=C
 type=Enchantment

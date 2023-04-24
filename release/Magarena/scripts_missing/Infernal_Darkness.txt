@@ -1,5 +1,5 @@
 name=Infernal Darkness
-image=https://magiccards.info/scans/en/ia/23.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0230e9bf-da21-4014-a834-d4fd2f5b31df.jpg?1562867813
 value=4.058
 rarity=R
 type=Enchantment

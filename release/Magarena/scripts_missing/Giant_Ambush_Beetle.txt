@@ -1,5 +1,5 @@
 name=Giant Ambush Beetle
-image=https://magiccards.info/scans/en/arb/137.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f6782d0-5399-4853-ae6f-0d05372dbf34.jpg?1562639689
 value=3.022
 rarity=U
 type=Creature

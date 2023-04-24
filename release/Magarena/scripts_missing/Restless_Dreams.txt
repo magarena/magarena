@@ -1,5 +1,5 @@
 name=Restless Dreams
-image=https://magiccards.info/scans/en/tr/79.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63795680-5310-4c99-92c1-70e453391de9.jpg?1562630063
 value=2.741
 rarity=C
 type=Sorcery

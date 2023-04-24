@@ -1,5 +1,5 @@
 name=Outmaneuver
-image=https://magiccards.info/scans/en/us/205.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a5a69fa-71ff-4e4f-9406-7cfebccb3384.jpg?1562910507
 value=4.061
 rarity=U
 type=Instant

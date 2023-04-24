@@ -1,5 +1,5 @@
 name=Mine Layer
-image=https://magiccards.info/scans/en/od/205.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/497efda1-5013-45d2-b717-b0296218c42b.jpg?1562908415
 value=3.371
 rarity=R
 type=Creature

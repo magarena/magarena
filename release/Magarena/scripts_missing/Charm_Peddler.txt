@@ -1,5 +1,5 @@
 name=Charm Peddler
-image=https://magiccards.info/scans/en/mm/6.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/082e6ee3-cc1f-46c7-9d82-56751478b3cf.jpg?1562378957
 value=2.786
 rarity=C
 type=Creature

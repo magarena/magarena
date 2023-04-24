@@ -1,5 +1,5 @@
 name=Leovold, Emissary of Trest
-image=https://magiccards.info/scans/en/cn2/77.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cedfc5b7-9242-4680-b284-debc8b5a9bc7.jpg?1559959275
 image_updated=2016-09-05
 value=2.500
 rarity=M

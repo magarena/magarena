@@ -1,5 +1,5 @@
 name=Curse of Misfortunes
-image=https://magiccards.info/scans/en/dka/56.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c531d218-ff1c-4333-a19d-446d709b1e28.jpg?1562941569
 value=3.075
 rarity=R
 type=Enchantment

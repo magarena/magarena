@@ -1,5 +1,5 @@
 name=Tide of War
-image=https://magiccards.info/scans/en/chk/194.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43b5bd60-87ed-41d2-bbcb-bd4a40a772c9.jpg?1562759393
 value=2.500
 rarity=R
 type=Enchantment

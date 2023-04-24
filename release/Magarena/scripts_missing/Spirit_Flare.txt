@@ -1,5 +1,5 @@
 name=Spirit Flare
-image=https://magiccards.info/scans/en/tr/15.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efdbe7c6-99ad-4c73-bffe-7bbdc6965854.jpg?1574250431
 value=2.521
 rarity=C
 type=Instant

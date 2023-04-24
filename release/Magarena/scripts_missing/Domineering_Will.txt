@@ -1,5 +1,5 @@
 name=Domineering Will
-image=https://magiccards.info/scans/en/c14/13.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8c3836d-a08b-424c-aefe-e1585161edf7.jpg?1674141322
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Paradox Haze
-image=https://magiccards.info/scans/en/ts/71.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7c74def-83e5-4420-989d-2304bf4743ae.jpg?1562930370
 value=4.204
 rarity=U
 type=Enchantment

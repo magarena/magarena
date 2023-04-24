@@ -1,5 +1,5 @@
 name=Vivien's Invocation
-image=https://magiccards.info/scans/en/m19/209.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/784c4711-223d-4b95-a163-87e57f87b8db.jpg?1562302854
 value=2.500
 rarity=R
 type=Sorcery

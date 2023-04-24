@@ -1,5 +1,5 @@
 name=Iona, Shield of Emeria
-image=https://magiccards.info/scans/en/mm2/20.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6197b59e-1652-496c-a038-e2eb88ecf017.jpg?1562584407
 value=2.500
 rarity=M
 type=Legendary,Creature

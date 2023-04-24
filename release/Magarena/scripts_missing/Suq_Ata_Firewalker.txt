@@ -1,5 +1,5 @@
 name=Suq'Ata Firewalker
-image=https://magiccards.info/scans/en/mr/94.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8a7c22e-fe96-4960-96d4-ee85abec3281.jpg?1562721427
 value=3.968
 rarity=U
 type=Creature

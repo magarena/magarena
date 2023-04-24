@@ -1,5 +1,5 @@
 name=Concerted Effort
-image=https://magiccards.info/scans/en/rav/8.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4afa3367-eb7e-4c92-96a1-2b6865b24f52.jpg?1598913524
 value=3.929
 rarity=R
 type=Enchantment

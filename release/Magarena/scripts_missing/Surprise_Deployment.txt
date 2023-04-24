@@ -1,5 +1,5 @@
 name=Surprise Deployment
-image=https://magiccards.info/scans/en/ps/18.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a26148b-b981-4af5-995b-52b1426737e3.jpg?1562927558
 value=3.393
 rarity=U
 type=Instant

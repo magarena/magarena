@@ -1,5 +1,5 @@
 name=Aether Searcher
-image=https://magiccards.info/scans/en/cns/53.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94dcff94-9f25-4ca9-a1f1-5d97de4ab9df.jpg?1562865937
 image_updated=2016-09-27
 value=3.571
 rarity=R

@@ -1,5 +1,5 @@
 name=Valor Made Real
-image=https://magiccards.info/scans/en/cns/86.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb164bd0-6745-4d41-aafe-89673a785f08.jpg?1562866411
 value=3.625
 rarity=C
 type=Instant

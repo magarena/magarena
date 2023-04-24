@@ -1,5 +1,5 @@
 name=Selvala, Explorer Returned
-image=https://magiccards.info/scans/en/c16/220.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd39ebe5-2725-4cfb-8a94-54e71d55e8b3.jpg?1673305654
 image_updated=2017-08-17
 value=4.071
 rarity=R

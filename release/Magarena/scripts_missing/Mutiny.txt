@@ -1,5 +1,5 @@
 name=Mutiny
-image=https://magiccards.info/scans/en/rix/106.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/010711a0-5e95-4a8c-816f-e314f2a909ef.jpg?1555040455
 value=2.500
 rarity=C
 type=Sorcery

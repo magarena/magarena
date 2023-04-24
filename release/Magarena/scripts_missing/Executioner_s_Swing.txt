@@ -1,5 +1,5 @@
 name=Executioner's Swing
-image=https://magiccards.info/scans/en/gtc/161.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2122586d-9b23-47c2-8b00-e673aa0310f0.jpg?1561819318
 value=2.815
 rarity=C
 type=Instant

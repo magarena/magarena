@@ -1,5 +1,5 @@
 name=Soulfire Grand Master
-image=https://magiccards.info/scans/en/frf/27.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc3a4e7d-6667-4c2f-b6b4-484f401b0455.jpg?1562831870
 value=2.500
 rarity=M
 type=Creature

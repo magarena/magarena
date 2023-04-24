@@ -1,5 +1,5 @@
 name=Pilgrim of Virtue
-image=https://magiccards.info/scans/en/od/41.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be58f0dd-3856-4960-83de-06eed78ed703.jpg?1562930545
 value=2.327
 rarity=C
 type=Creature

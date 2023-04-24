@@ -1,5 +1,5 @@
 name=Gorilla Shaman
-image=https://magiccards.info/scans/en/cstd/33.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8f8ee19-3a88-40fa-85d8-386ffe06efd7.jpg?1626100506
 value=4.455
 rarity=C
 type=Creature

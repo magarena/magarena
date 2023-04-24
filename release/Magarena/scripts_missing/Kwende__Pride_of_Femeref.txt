@@ -1,5 +1,5 @@
 name=Kwende, Pride of Femeref
-image=https://magiccards.info/scans/en/dom/25.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4d3b6a8-3e4a-4e2b-900a-9a21fa0ced4c.jpg?1591605307
 value=2.500
 rarity=U
 type=Legendary,Creature

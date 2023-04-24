@@ -1,5 +1,5 @@
 name=Protean Hydra
-image=https://magiccards.info/scans/en/m11/194.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f63d54c1-1b20-48c4-871d-0bb15e608996.jpg?1562481294
 value=4.209
 rarity=R
 type=Creature

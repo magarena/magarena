@@ -1,5 +1,5 @@
 name=Lunge
-image=https://magiccards.info/scans/en/mm/203.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9e43349-429c-43f7-b808-c4bf37370a9f.jpg?1562383530
 value=3.284
 rarity=C
 type=Instant

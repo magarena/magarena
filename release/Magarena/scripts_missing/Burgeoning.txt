@@ -1,5 +1,5 @@
 name=Burgeoning
-image=https://magiccards.info/scans/en/c16/143.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6da045f8-6278-4c84-9d39-025adf0789c1.jpg?1562404626
 image_updated=2017-08-29
 value=4.435
 rarity=R

@@ -1,5 +1,5 @@
 name=Magus of the Future
-image=https://magiccards.info/scans/en/fut/40.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27ba1ea5-c861-4bb4-a681-fc0633268bd9.jpg?1619394377
 value=4.222
 rarity=R
 type=Creature

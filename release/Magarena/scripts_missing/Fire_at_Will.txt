@@ -1,5 +1,5 @@
 name=Fire at Will
-image=https://magiccards.info/scans/en/eve/140.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53617fbc-a6e9-4f06-8c4b-4699325cdcac.jpg?1562912397
 value=2.373
 rarity=C
 type=Instant

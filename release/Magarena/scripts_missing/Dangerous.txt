@@ -1,5 +1,5 @@
 name=Dangerous
-image=https://magiccards.info/scans/en/dgm/122b.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff7f4fc2-6f76-44e7-a30b-7166a0d10d2a.jpg?1562943172
 value=3.960
 rarity=U
 type=Sorcery

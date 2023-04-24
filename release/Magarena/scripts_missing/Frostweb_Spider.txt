@@ -1,5 +1,5 @@
 name=Frostweb Spider
-image=https://magiccards.info/scans/en/cs/109.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48574974-bdbb-40e8-916a-44c54b08b501.jpg?1593275391
 value=2.940
 rarity=C
 type=Snow,Creature

@@ -1,5 +1,5 @@
 name=Scourge of the Throne
-image=https://magiccards.info/scans/en/cns/35.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c594486-e4cf-4c32-8a6f-d70613c06d02.jpg?1562913780
 value=3.969
 rarity=M
 type=Creature

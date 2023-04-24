@@ -1,5 +1,5 @@
 name=Fyndhorn Elder
-image=https://magiccards.info/scans/en/8e/251.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81c125cd-ea49-4511-a78c-42c1f7ce802d.jpg?1562921174
 value=3.815
 rarity=U
 type=Creature

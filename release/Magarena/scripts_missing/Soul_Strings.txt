@@ -1,5 +1,5 @@
 name=Soul Strings
-image=https://magiccards.info/scans/en/pr/78.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e34f9d1b-a89a-439f-8aa9-b96a1bf892eb.jpg?1562937506
 value=2.796
 rarity=C
 type=Sorcery

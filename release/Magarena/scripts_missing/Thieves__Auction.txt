@@ -1,5 +1,5 @@
 name=Thieves' Auction
-image=https://magiccards.info/scans/en/8e/227.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9e8ad32-a701-4b77-bb7e-0e440e4072da.jpg?1562935558
 value=4.378
 rarity=R
 type=Sorcery

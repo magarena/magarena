@@ -1,5 +1,5 @@
 name=Celestial Dawn
-image=https://magiccards.info/scans/en/tsts/3.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/251880e9-a472-4f33-9988-4871d31aa1d9.jpg?1562773263
 value=3.830
 rarity=R
 type=Enchantment

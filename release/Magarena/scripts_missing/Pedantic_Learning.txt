@@ -1,5 +1,5 @@
 name=Pedantic Learning
-image=https://magiccards.info/scans/en/od/90.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67445332-0b56-4fec-8dcd-bb9a87194db5.jpg?1562914091
 value=2.188
 rarity=R
 type=Enchantment

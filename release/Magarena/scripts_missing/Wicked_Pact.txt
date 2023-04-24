@@ -1,5 +1,5 @@
 name=Wicked Pact
-image=https://magiccards.info/scans/en/st/92.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad6191bf-97b0-40a6-a2b0-a14e2d249ed5.jpg?1562935972
 value=3.312
 rarity=R
 type=Sorcery

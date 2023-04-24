@@ -1,5 +1,5 @@
 name=Thoughtweft Trio
-image=https://magiccards.info/scans/en/lw/44.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e48d34d-063c-4703-870b-4a22d5774c89.jpg?1562360333
 value=4.059
 rarity=R
 type=Creature

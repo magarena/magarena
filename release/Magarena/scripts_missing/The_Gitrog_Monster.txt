@@ -1,5 +1,5 @@
 name=The Gitrog Monster
-image=https://magiccards.info/scans/en/soi/245.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/5790dd89-2be5-4a77-9450-2d3c1422bfc9.jpg?1576385351
 value=2.500
 rarity=M
 type=Legendary,Creature

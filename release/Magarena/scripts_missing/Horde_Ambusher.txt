@@ -1,5 +1,5 @@
 name=Horde Ambusher
-image=https://magiccards.info/scans/en/ktk/110.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53926b92-adf0-4bb2-873f-103d9a1bdda8.jpg?1562786709
 value=3.250
 rarity=U
 type=Creature

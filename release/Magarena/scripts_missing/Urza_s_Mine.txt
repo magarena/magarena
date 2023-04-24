@@ -1,5 +1,5 @@
 name=Urza's Mine
-image=https://magiccards.info/scans/en/9e/327.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08dea8f6-bd32-44a3-bec4-93a5607819df.jpg?1599710699
 value=4.328
 rarity=U
 type=Land

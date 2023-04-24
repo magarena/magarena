@@ -1,5 +1,5 @@
 name=Triplicate Spirits
-image=https://magiccards.info/scans/en/m15/40.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d6498d3-bf1f-4bf1-a602-7c21fb44c106.jpg?1562785550
 value=3.750
 rarity=C
 type=Sorcery

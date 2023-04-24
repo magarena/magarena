@@ -1,5 +1,5 @@
 name=Phyrexian Devourer
-image=https://magiccards.info/scans/en/ai/167.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca4e27ca-a731-44f5-8e47-701c7a7e6149.jpg?1562870482
 value=3.354
 rarity=R
 type=Artifact,Creature

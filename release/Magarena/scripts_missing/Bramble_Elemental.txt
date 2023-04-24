@@ -1,5 +1,5 @@
 name=Bramble Elemental
-image=https://magiccards.info/scans/en/pc2/59.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c348fb8f-f151-4ade-8cb3-b994219340c0.jpg?1562931534
 value=2.979
 rarity=C
 type=Creature

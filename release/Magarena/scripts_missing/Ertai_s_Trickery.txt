@@ -1,5 +1,5 @@
 name=Ertai's Trickery
-image=https://magiccards.info/scans/en/ps/24.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/544e3575-9fb6-41f7-a4e6-f8460dfae344.jpg?1562912607
 value=1.725
 rarity=U
 type=Instant

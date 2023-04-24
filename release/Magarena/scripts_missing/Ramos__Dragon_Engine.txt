@@ -1,5 +1,5 @@
 name=Ramos, Dragon Engine
-image=https://magiccards.info/scans/en/c17/55.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e747ef1-a1ad-4859-a70c-3f935f017310.jpg?1562604064
 image_updated=2017-10-03
 value=2.500
 rarity=M

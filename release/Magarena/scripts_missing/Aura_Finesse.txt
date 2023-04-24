@@ -1,5 +1,5 @@
 name=Aura Finesse
-image=https://magiccards.info/scans/en/roe/54.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e398a02-1456-4fae-be75-4231c968bf47.jpg?1562701118
 value=3.008
 rarity=C
 type=Instant

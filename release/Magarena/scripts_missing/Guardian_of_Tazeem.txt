@@ -1,5 +1,5 @@
 name=Guardian of Tazeem
-image=https://magiccards.info/scans/en/bfz/78.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b55cf5e-4499-4e3a-9748-7b1568286b5a.jpg?1562916528
 image_updated=2015-11-08
 value=2.500
 rarity=R

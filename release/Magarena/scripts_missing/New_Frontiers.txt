@@ -1,5 +1,5 @@
 name=New Frontiers
-image=https://magiccards.info/scans/en/od/257.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd1f6cfa-9576-4bb8-83db-33c2b147206d.jpg?1562942709
 value=3.650
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Muraganda Petroglyphs
-image=https://magiccards.info/scans/en/fut/146.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b103cb22-93b2-4206-9f80-5f966155e07e.jpg?1658648183
 value=4.133
 rarity=R
 type=Enchantment

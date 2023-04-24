@@ -1,5 +1,5 @@
 name=Ever After
-image=https://magiccards.info/scans/en/soi/109.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4e6a08b-e0d6-4d41-b143-e09ac53b6249.jpg?1591320438
 value=2.500
 rarity=R
 type=Sorcery

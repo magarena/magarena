@@ -1,5 +1,5 @@
 name=Everglades
-image=https://magiccards.info/scans/en/c14/294.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f82ffe7-c5a2-453d-9820-3c576b6f263c.jpg?1561943901
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Sengir Nosferatu
-image=https://magiccards.info/scans/en/ts/128.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71dc9f1e-b889-402d-a5a1-fa0d7d493246.jpg?1619396036
 value=4.144
 rarity=R
 type=Creature

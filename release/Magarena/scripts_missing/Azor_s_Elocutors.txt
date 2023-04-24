@@ -1,5 +1,5 @@
 name=Azor's Elocutors
-image=https://magiccards.info/scans/en/rtr/210.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61e82934-546b-4734-a715-b22ace4c5a9b.jpg?1562787164
 value=3.591
 rarity=R
 type=Creature

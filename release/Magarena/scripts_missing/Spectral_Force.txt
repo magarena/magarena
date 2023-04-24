@@ -1,5 +1,5 @@
 name=Spectral Force
-image=https://magiccards.info/scans/en/ts/217.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7dff1c4-6297-46f6-9c70-544c67319dd0.jpg?1562940657
 value=3.641
 rarity=R
 type=Creature

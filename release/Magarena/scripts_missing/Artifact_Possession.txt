@@ -1,5 +1,5 @@
 name=Artifact Possession
-image=https://magiccards.info/scans/en/aq/45.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/587d6ac8-fad8-49e0-862e-636e06628ff9.jpg?1562913472
 value=2.121
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Cradle to Grave
-image=https://magiccards.info/scans/en/pc/67.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ec275cf-bb4e-4de0-9184-4d53dd87dad3.jpg?1562569856
 value=1.207
 rarity=C
 type=Instant

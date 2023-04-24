@@ -1,5 +1,5 @@
 name=Tribal Unity
-image=https://magiccards.info/scans/en/on/294.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1379753-0a37-4e33-ac46-8ef33cb98b06.jpg?1562843366
 image_updated=2017-01-11
 value=3.075
 rarity=U

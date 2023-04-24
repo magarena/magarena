@@ -1,5 +1,5 @@
 name=Boros Battleshaper
-image=https://magiccards.info/scans/en/dgm/58.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c43e449-acf2-4e94-b7cf-8c84d70191da.jpg?1562915094
 value=3.482
 rarity=R
 type=Creature

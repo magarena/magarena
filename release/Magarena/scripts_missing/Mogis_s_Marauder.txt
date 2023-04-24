@@ -1,5 +1,5 @@
 name=Mogis's Marauder
-image=https://magiccards.info/scans/en/ths/97.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dfd36c5-a484-4973-873c-b6a433da8e7a.jpg?1562822323
 value=3.625
 rarity=U
 type=Creature

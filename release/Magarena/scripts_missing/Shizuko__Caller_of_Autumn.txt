@@ -1,5 +1,5 @@
 name=Shizuko, Caller of Autumn
-image=https://magiccards.info/scans/en/bok/144.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dab9407d-9389-4ec9-963c-80de095a6812.jpg?1562880141
 value=3.114
 rarity=R
 type=Legendary,Creature

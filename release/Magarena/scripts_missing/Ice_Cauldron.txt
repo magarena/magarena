@@ -1,5 +1,5 @@
 name=Ice Cauldron
-image=https://magiccards.info/scans/en/ia/296.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fad0f0f-b302-4f97-9cbb-a66dbfc57bae.jpg?1562917545
 value=3.552
 rarity=R
 type=Artifact

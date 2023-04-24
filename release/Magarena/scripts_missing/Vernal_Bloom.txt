@@ -1,5 +1,5 @@
 name=Vernal Bloom
-image=https://magiccards.info/scans/en/8e/286.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baabb73c-e3d9-4ba1-9963-986e09ef49a7.jpg?1562932566
 value=4.118
 rarity=R
 type=Enchantment

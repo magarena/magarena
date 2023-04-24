@@ -1,5 +1,5 @@
 name=Sentinel
-image=https://magiccards.info/scans/en/lg/239.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffd4921f-cda5-4318-837d-a3fe4f0d9362.jpg?1562946662
 image_updated=2016-01-09
 value=4.206
 rarity=R

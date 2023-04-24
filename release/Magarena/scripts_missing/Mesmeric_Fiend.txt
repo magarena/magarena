@@ -1,5 +1,5 @@
 name=Mesmeric Fiend
-image=https://magiccards.info/scans/en/a25/97.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/864930ce-7c56-4ad2-9b90-57b10e5a0842.jpg?1562437620
 image_updated=2018-04-25
 value=4.000
 rarity=U

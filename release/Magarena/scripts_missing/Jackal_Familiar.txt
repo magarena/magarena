@@ -1,5 +1,5 @@
 name=Jackal Familiar
-image=https://magiccards.info/scans/en/m10/143.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a47a2dc-f7f2-4103-9ebe-8cd8b83915ae.jpg?1561970581
 value=3.512
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Pain Seer
-image=https://magiccards.info/scans/en/bng/80.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8ce8891f-b44c-4be4-878e-9fc45a9dc9cb.jpg?1593092076
 value=3.837
 rarity=R
 type=Creature

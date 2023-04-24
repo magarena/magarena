@@ -1,5 +1,5 @@
 name=Colossal Heroics
-image=https://magiccards.info/scans/en/jou/118.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6139443-e31c-4eea-a99e-df9498fe18a8.jpg?1593096154
 value=2.868
 rarity=U
 type=Instant

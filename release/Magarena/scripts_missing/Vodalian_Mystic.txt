@@ -1,5 +1,5 @@
 name=Vodalian Mystic
-image=https://magiccards.info/scans/en/ap/33.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81ec203a-067e-4360-9b4d-2d67db472aab.jpg?1562925678
 value=2.100
 rarity=U
 type=Creature

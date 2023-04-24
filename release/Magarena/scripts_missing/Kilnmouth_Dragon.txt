@@ -1,5 +1,5 @@
 name=Kilnmouth Dragon
-image=https://magiccards.info/scans/en/le/104.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67bbc1c3-8806-49d4-9111-a2334c66e5ec.jpg?1562916671
 image_updated=2016-12-21
 value=4.106
 rarity=R

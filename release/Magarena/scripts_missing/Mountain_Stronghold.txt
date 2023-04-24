@@ -1,5 +1,5 @@
 name=Mountain Stronghold
-image=https://magiccards.info/scans/en/lg/249.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/314fd1d7-4bd8-4d95-b7c2-1aa6660ab88a.jpg?1562858248
 value=1.290
 rarity=U
 type=Land

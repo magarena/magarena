@@ -1,5 +1,5 @@
 name=Wall of Tombstones
-image=https://magiccards.info/scans/en/lg/43.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55da1e86-fe18-486a-b510-f941e6f6e378.jpg?1562858736
 value=3.000
 rarity=U
 type=Creature

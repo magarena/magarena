@@ -1,5 +1,5 @@
 name=Noxious Gearhulk
-image=https://magiccards.info/scans/en/kld/96.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36b1e963-9b8c-4103-abbc-580866f144e7.jpg?1682209156
 image_updated=2016-10-05
 value=2.500
 rarity=M

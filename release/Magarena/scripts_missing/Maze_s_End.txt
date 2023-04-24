@@ -1,5 +1,5 @@
 name=Maze's End
-image=https://magiccards.info/scans/en/dgm/152.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/401f7042-24fd-42a0-ae7c-e6b7de1aa446.jpg?1562906764
 value=2.976
 rarity=M
 type=Land

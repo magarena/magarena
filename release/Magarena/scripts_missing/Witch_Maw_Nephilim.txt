@@ -1,5 +1,5 @@
 name=Witch-Maw Nephilim
-image=https://magiccards.info/scans/en/gp/138.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/185d56ab-b7f2-4eb2-9540-db8f2dc9b436.jpg?1593272845
 value=4.109
 rarity=R
 type=Creature

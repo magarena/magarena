@@ -1,5 +1,5 @@
 name=Jhoira of the Ghitu
-image=https://magiccards.info/scans/en/mma/177.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa6c3c8a-aa35-46b3-8769-27b4244457b0.jpg?1619404030
 value=3.922
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Sandstone Needle
-image=https://magiccards.info/scans/en/mm/326.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82bc7c6b-2e3d-42d1-b2bb-b37b6f34d33b.jpg?1562381828
 value=4.182
 rarity=C
 type=Land

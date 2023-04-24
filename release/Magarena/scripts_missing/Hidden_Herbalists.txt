@@ -1,5 +1,5 @@
 name=Hidden Herbalists
-image=https://magiccards.info/scans/en/aer/110.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ec8db01-415e-42a1-8eb2-57280d58b38e.jpg?1576381990
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Surveyor's Scope
-image=https://magiccards.info/scans/en/c13/262.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/885aaf8f-648c-4709-ae63-714113ec2c8d.jpg?1592673703
 value=3.235
 rarity=R
 type=Artifact

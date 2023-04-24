@@ -1,5 +1,5 @@
 name=Thran Turbine
-image=https://magiccards.info/scans/en/us/311.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/791c310f-b50d-4993-9add-9f585f6172af.jpg?1562920431
 value=4.312
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Surging Sentinels
-image=https://magiccards.info/scans/en/cs/20.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/264d120a-d7e2-4b9e-ac85-c66e976c577b.jpg?1593274838
 value=2.081
 rarity=C
 type=Creature

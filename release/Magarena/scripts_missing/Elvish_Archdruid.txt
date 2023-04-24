@@ -1,5 +1,5 @@
 name=Elvish Archdruid
-image=https://magiccards.info/scans/en/c14/190.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d3fffa5-50ec-4502-9f03-bd9618f1771e.jpg?1631234798
 value=2.500
 rarity=R
 type=Creature

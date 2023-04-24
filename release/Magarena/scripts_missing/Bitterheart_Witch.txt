@@ -1,5 +1,5 @@
 name=Bitterheart Witch
-image=https://magiccards.info/scans/en/isd/88.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf2ff2b4-8f40-42c0-af3c-b55bfa8839be.jpg?1562837375
 value=3.333
 rarity=U
 type=Creature

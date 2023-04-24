@@ -1,5 +1,5 @@
 name=Quicksilver Gargantuan
-image=https://magiccards.info/scans/en/som/39.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b83f5aea-80f2-4f3d-8508-9619413e0087.jpg?1562822221
 value=3.500
 rarity=M
 type=Creature

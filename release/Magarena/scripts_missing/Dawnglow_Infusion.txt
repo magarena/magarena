@@ -1,5 +1,5 @@
 name=Dawnglow Infusion
-image=https://magiccards.info/scans/en/shm/225.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/038bec82-24a0-4764-a1a0-671f597ebc35.jpg?1568910836
 value=3.614
 rarity=U
 type=Sorcery

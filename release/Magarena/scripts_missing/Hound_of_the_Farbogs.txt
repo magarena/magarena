@@ -1,5 +1,5 @@
 name=Hound of the Farbogs
-image=https://magiccards.info/scans/en/soi/117.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fc37615-ef72-4176-9e94-080e56af1d8a.jpg?1576384469
 value=2.500
 rarity=C
 type=Creature

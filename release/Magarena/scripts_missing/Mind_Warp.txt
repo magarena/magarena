@@ -1,5 +1,5 @@
 name=Mind Warp
-image=https://magiccards.info/scans/en/6e/143.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1f0d58c-24fa-498f-9531-e62144401e86.jpg?1562823754
 value=1.868
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Dawn
-image=https://magiccards.info/scans/en/akh/210b.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f295b713-1d6a-43fd-910d-fb35414bf58a.jpg?1674141076
 value=2.500
 rarity=R
 type=Sorcery

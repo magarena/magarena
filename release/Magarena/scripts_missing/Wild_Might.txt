@@ -1,5 +1,5 @@
 name=Wild Might
-image=https://magiccards.info/scans/en/pr/134.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a8c0be2-ba90-4e7a-b1a6-c68be550e33d.jpg?1562917650
 value=3.600
 rarity=C
 type=Instant

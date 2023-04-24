@@ -1,5 +1,5 @@
 name=Ricochet Trap
-image=https://magiccards.info/scans/en/wwk/87.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d782375-9192-4ed0-bd79-f3404e5a1b01.jpg?1562288259
 value=3.824
 rarity=U
 type=Instant

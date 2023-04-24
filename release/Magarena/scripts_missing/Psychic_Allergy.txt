@@ -1,5 +1,5 @@
 name=Psychic Allergy
-image=https://magiccards.info/scans/en/dk/33.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fec3275e-4491-43a8-9f23-d7b48177c103.jpg?1562955324
 value=2.972
 rarity=R
 type=Enchantment

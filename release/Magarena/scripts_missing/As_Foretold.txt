@@ -1,5 +1,5 @@
 name=As Foretold
-image=https://magiccards.info/scans/en/akh/42.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c468b523-84fc-4657-adef-acc1eec6ef2e.jpg?1673147199
 value=2.500
 rarity=M
 type=Enchantment

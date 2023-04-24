@@ -1,5 +1,5 @@
 name=Wand of Ith
-image=https://magiccards.info/scans/en/dk/111.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80c9070a-8c70-480e-a476-e00f8e2c71b9.jpg?1562925407
 value=3.722
 rarity=U
 type=Artifact

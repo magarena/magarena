@@ -1,5 +1,5 @@
 name=Fungal Plots
-image=https://magiccards.info/scans/en/dom/160.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56419f2a-63cf-4ab7-bad0-b0f773fc0570.jpg?1562735932
 value=2.500
 rarity=U
 type=Enchantment

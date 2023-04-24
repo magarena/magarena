@@ -1,5 +1,5 @@
 name=Simic Guildmage
-image=https://magiccards.info/scans/en/di/148.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d77d4ffb-a829-49ca-9c37-c60ba467852c.jpg?1593273905
 value=3.862
 rarity=U
 type=Creature

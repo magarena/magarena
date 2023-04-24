@@ -1,5 +1,5 @@
 name=Into the Core
-image=https://magiccards.info/scans/en/mbs/67.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cb91ecb-1962-4cd1-80c1-c9e2485822ae.jpg?1562613348
 value=3.463
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Flash of Insight
-image=https://magiccards.info/scans/en/ju/40.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffaab905-0b97-42c2-a1a3-1e72275caa82.jpg?1562632893
 value=3.424
 rarity=U
 type=Instant

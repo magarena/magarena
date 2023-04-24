@@ -1,5 +1,5 @@
 name=Punish the Enemy
-image=https://magiccards.info/scans/en/dgm/35.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4179a72b-8482-46ec-9815-f5d6d94b5aa5.jpg?1562907014
 value=2.948
 rarity=C
 type=Instant

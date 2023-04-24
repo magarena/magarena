@@ -1,5 +1,5 @@
 name=Surrak Dragonclaw
-image=https://magiccards.info/scans/en/ktk/206.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8efe72d-3c01-4dd6-b3dd-0382ac09dc52.jpg?1673305671
 value=4.375
 rarity=M
 type=Legendary,Creature

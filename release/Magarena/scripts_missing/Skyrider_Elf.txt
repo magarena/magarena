@@ -1,5 +1,5 @@
 name=Skyrider Elf
-image=https://magiccards.info/scans/en/bfz/220.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/477eb787-aec7-43fd-9813-184111d9dcc5.jpg?1562911739
 image_updated=2015-11-08
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Dread Summons
-image=https://magiccards.info/scans/en/c15/20.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fcac17f-8fdc-4cb2-a4c5-ea44155ce852.jpg?1673484165
 image_updated=2016-02-29
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Damping Field
-image=https://magiccards.info/scans/en/aq/98.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12ab9836-bc90-4d92-a86d-b8e1b7671aa7.jpg?1562898915
 value=2.969
 rarity=U
 type=Enchantment

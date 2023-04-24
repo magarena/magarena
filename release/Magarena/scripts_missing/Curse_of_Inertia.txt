@@ -1,5 +1,5 @@
 name=Curse of Inertia
-image=https://magiccards.info/scans/en/c13/36.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32d0c2a7-4277-43eb-bb09-5ca0c27edee4.jpg?1592672512
 value=3.567
 rarity=U
 type=Enchantment

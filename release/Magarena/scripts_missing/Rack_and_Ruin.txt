@@ -1,5 +1,5 @@
 name=Rack and Ruin
-image=https://magiccards.info/scans/en/ul/89.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a46e8f6a-3a1a-4c30-9348-4b31882267eb.jpg?1562863778
 value=4.011
 rarity=U
 type=Instant

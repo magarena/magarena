@@ -1,5 +1,5 @@
 name=Volrath's Dungeon
-image=https://magiccards.info/scans/en/ex/78.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4ab28e1-74e1-4c4e-920f-a658c6a44d75.jpg?1562088338
 value=3.167
 rarity=R
 type=Enchantment

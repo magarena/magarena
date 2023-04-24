@@ -1,5 +1,5 @@
 name=Faith's Fetters
-image=https://magiccards.info/scans/en/ema/10.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04a7da8c-a444-4deb-89b9-2fc9e5475bff.jpg?1608908758
 value=2.500
 rarity=U
 type=Enchantment

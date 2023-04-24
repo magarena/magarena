@@ -1,5 +1,5 @@
 name=Suppress
-image=https://magiccards.info/scans/en/ap/52.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/642eefde-8727-44ff-9e04-373abfcd0679.jpg?1562918597
 value=3.500
 rarity=U
 type=Sorcery

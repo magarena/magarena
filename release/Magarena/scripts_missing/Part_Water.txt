@@ -1,5 +1,5 @@
 name=Part Water
-image=https://magiccards.info/scans/en/lg/66.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b659475-c8b7-493d-af63-04f34d8cc3b1.jpg?1592364304
 value=1.606
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Clockwork Beast
-image=https://magiccards.info/scans/en/5e/356.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a3bdfda-4269-45be-931d-ecfecbb389a8.jpg?1559592300
 value=2.672
 rarity=R
 type=Artifact,Creature

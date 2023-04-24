@@ -1,5 +1,5 @@
 name=Setessan Tactics
-image=https://magiccards.info/scans/en/jou/140.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/385a1939-15e5-4f13-b01b-7cdc6835da2a.jpg?1593096325
 value=3.757
 rarity=R
 type=Instant

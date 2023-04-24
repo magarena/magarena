@@ -1,5 +1,5 @@
 name=Saffi Eriksdotter
-image=https://magiccards.info/scans/en/ts/245.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4176dda4-ec5c-4734-bb48-0876304aa219.jpg?1619404114
 value=4.051
 rarity=R
 type=Legendary,Creature

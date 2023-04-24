@@ -1,5 +1,5 @@
 name=Goblin Game
-image=https://magiccards.info/scans/en/ps/61.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbe6e7e5-ffea-4c6c-8a42-28e695029f24.jpg?1562938086
 value=4.269
 rarity=R
 type=Sorcery

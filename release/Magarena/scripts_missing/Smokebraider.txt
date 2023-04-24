@@ -1,5 +1,5 @@
 name=Smokebraider
-image=https://magiccards.info/scans/en/mm2/125.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf6090f5-dfee-4c3f-8257-7707fb6abf2c.jpg?1562266902
 value=2.500
 rarity=C
 type=Creature

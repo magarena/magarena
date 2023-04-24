@@ -1,5 +1,5 @@
 name=Burrenton Forge-Tender
-image=https://magiccards.info/scans/en/ima/14.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40dd31ae-f252-449b-9d79-749a9a255763.jpg?1562847986
 image_updated=2017-04-12
 value=2.812
 rarity=U

@@ -1,5 +1,5 @@
 name=Gather Specimens
-image=https://magiccards.info/scans/en/ala/45.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbadf982-f22e-4f4f-b5c9-ac387f25c15f.jpg?1562708387
 value=3.069
 rarity=R
 type=Instant

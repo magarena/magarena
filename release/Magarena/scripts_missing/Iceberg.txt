@@ -1,5 +1,5 @@
 name=Iceberg
-image=https://magiccards.info/scans/en/cstd/12.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcb32615-4a97-4196-8c8c-3cd2748e74ea.jpg?1562870937
 value=3.070
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Root Greevil
-image=https://magiccards.info/scans/en/ps/91.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/306e3429-b3b4-4186-935b-18cfc308d22c.jpg?1562905210
 value=3.741
 rarity=C
 type=Creature

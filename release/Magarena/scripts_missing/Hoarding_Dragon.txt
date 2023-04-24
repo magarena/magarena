@@ -1,5 +1,5 @@
 name=Hoarding Dragon
-image=https://magiccards.info/scans/en/ima/134.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c6cd59a-f184-4e8e-885e-36fbceddfc06.jpg?1562849386
 image_updated=2017-04-12
 value=3.800
 rarity=U

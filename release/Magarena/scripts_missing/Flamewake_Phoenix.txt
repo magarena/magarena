@@ -1,5 +1,5 @@
 name=Flamewake Phoenix
-image=https://magiccards.info/scans/en/frf/100.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fefd5848-9fe1-4129-a5d7-e51606bf76ef.jpg?1562831953
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Haze Frog
-image=https://magiccards.info/scans/en/roe/187.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72d8e000-5b4c-4340-ab85-7522107ab589.jpg?1562705053
 value=2.273
 rarity=C
 type=Creature

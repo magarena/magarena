@@ -1,5 +1,5 @@
 name=Martyr of Ashes
-image=https://magiccards.info/scans/en/cs/92.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/600a2cd2-166a-4fd8-838d-e513534b7cb0.jpg?1593275294
 value=4.038
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Rain of Gore
-image=https://magiccards.info/scans/en/di/126.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dd62003-e345-48b6-9f93-fc111924c318.jpg?1593273725
 value=3.938
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wrap in Flames
-image=https://magiccards.info/scans/en/mm2/136.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5f7ff4f-3fd6-4084-aaf7-9f290ecc0181.jpg?1581480532
 value=2.500
 rarity=C
 type=Sorcery

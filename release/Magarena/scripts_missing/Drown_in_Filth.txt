@@ -1,5 +1,5 @@
 name=Drown in Filth
-image=https://magiccards.info/scans/en/dgm/67.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22feacda-01e0-4f0d-a3c7-a22e3d40bf4e.jpg?1562901483
 value=3.564
 rarity=C
 type=Sorcery

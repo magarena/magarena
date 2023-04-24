@@ -1,5 +1,5 @@
 name=Aven Fateshaper
-image=https://magiccards.info/scans/en/on/69.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a4b41c4-0d14-4b9c-8e0c-a626ba6b104d.jpg?1562923863
 value=2.779
 rarity=U
 type=Creature

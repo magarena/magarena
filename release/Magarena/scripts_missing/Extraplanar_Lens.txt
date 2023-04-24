@@ -1,5 +1,5 @@
 name=Extraplanar Lens
-image=https://magiccards.info/scans/en/mi/169.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/622a6523-3b12-4657-a656-00a57a3ae59c.jpg?1562145909
 value=4.387
 rarity=R
 type=Artifact

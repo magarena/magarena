@@ -1,5 +1,5 @@
 name=Orcish Farmer
-image=https://magiccards.info/scans/en/5e/256.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2563a5b5-ea7a-4400-9e40-292623db2f96.jpg?1562867857
 value=2.770
 rarity=C
 type=Creature

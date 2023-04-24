@@ -1,5 +1,5 @@
 name=Floating-Dream Zubera
-image=https://magiccards.info/scans/en/chk/61.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63ea55a8-6c21-4cc1-a2c4-86cd60cddced.jpg?1562761015
 value=3.194
 rarity=C
 type=Creature

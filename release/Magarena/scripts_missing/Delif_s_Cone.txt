@@ -1,5 +1,5 @@
 name=Delif's Cone
-image=https://magiccards.info/scans/en/fe/169.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/262b8788-c5a0-4c8e-9d58-b769b1b0a2ff.jpg?1610195174
 value=1.877
 rarity=C
 type=Artifact

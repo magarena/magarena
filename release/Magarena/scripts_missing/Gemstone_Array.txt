@@ -1,5 +1,5 @@
 name=Gemstone Array
-image=https://magiccards.info/scans/en/5dn/124.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19ef37a3-4538-47b2-8f88-3fa0a4e32329.jpg?1562875709
 value=3.830
 rarity=U
 type=Artifact

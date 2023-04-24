@@ -1,5 +1,5 @@
 name=Phyrexian Marauder
-image=https://magiccards.info/scans/en/vi/151.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29a75dc8-1c24-4063-8944-d7e71b4a5755.jpg?1562277418
 value=1.500
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Bloodscent
-image=https://magiccards.info/scans/en/mi/114.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dca1eb7b-e964-4c36-8fc5-e1d2a98e841f.jpg?1562160306
 value=1.649
 rarity=U
 type=Instant

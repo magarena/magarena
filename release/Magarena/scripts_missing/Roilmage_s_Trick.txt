@@ -1,5 +1,5 @@
 name=Roilmage's Trick
-image=https://magiccards.info/scans/en/bfz/83.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2194713-c08c-4fba-8e31-bb67c9932173.jpg?1562945011
 image_updated=2015-11-08
 value=2.500
 rarity=C

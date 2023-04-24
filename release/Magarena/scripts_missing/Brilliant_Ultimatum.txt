@@ -1,5 +1,5 @@
 name=Brilliant Ultimatum
-image=https://magiccards.info/scans/en/ala/159.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/593409fd-26ef-463e-9101-ec5ad53dfd67.jpg?1562704267
 value=2.920
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Crown of Suspicion
-image=https://magiccards.info/scans/en/on/134.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8953e11b-cc3a-4c8d-9d7e-04bf90c77027.jpg?1562927415
 value=3.040
 rarity=C
 type=Enchantment

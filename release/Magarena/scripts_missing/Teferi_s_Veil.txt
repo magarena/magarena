@@ -1,5 +1,5 @@
 name=Teferi's Veil
-image=https://magiccards.info/scans/en/wl/53.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbf39b80-d972-4f79-902f-cc613c32e446.jpg?1562803373
 value=4.207
 rarity=U
 type=Enchantment

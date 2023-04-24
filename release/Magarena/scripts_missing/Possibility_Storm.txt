@@ -1,5 +1,5 @@
 name=Possibility Storm
-image=https://magiccards.info/scans/en/dgm/34.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/858aa831-b491-4f1e-bb56-33eeca14771d.jpg?1562919767
 value=3.672
 rarity=R
 type=Enchantment

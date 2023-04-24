@@ -1,5 +1,5 @@
 name=Armory Automaton
-image=https://magiccards.info/scans/en/c16/51.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc0be4ff-c346-4c22-8357-9a2383a53469.jpg?1562419631
 image_updated=2016-12-28
 value=2.500
 rarity=R

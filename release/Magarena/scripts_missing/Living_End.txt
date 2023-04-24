@@ -1,5 +1,5 @@
 name=Living End
-image=https://magiccards.info/scans/en/ts/115.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1eede29-17a4-437f-a5c2-e24cccbc6a33.jpg?1619395625
 value=4.000
 rarity=R
 type=Sorcery

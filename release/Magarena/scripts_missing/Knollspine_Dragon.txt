@@ -1,5 +1,5 @@
 name=Knollspine Dragon
-image=https://magiccards.info/scans/en/shm/98.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfcfec58-bfe4-4b04-80e3-ee11c44e91a7.jpg?1562835499
 value=3.720
 rarity=R
 type=Creature

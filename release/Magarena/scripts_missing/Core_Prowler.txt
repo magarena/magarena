@@ -1,5 +1,5 @@
 name=Core Prowler
-image=https://magiccards.info/scans/en/mbs/103.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05414ba7-0f59-4c73-931c-e599d149d3ba.jpg?1562609352
 value=3.192
 rarity=U
 type=Artifact,Creature

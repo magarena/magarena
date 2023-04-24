@@ -1,5 +1,5 @@
 name=Valleymaker
-image=https://magiccards.info/scans/en/shm/221.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50b4fa59-8315-4a66-b5fb-f78daa92aca7.jpg?1562830092
 value=3.015
 rarity=R
 type=Creature

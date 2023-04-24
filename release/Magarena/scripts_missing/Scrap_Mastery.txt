@@ -1,5 +1,5 @@
 name=Scrap Mastery
-image=https://magiccards.info/scans/en/c14/38.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc6d966e-fa6b-4eb4-b854-7425f5553518.jpg?1562275607
 value=2.500
 rarity=R
 type=Sorcery

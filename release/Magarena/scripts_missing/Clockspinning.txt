@@ -1,5 +1,5 @@
 name=Clockspinning
-image=https://magiccards.info/scans/en/ts/53.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/1323d548-e2fe-47c5-8df3-f181aed537c5.jpg?1562899044
 value=3.942
 rarity=C
 type=Instant

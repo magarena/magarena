@@ -1,5 +1,5 @@
 name=Food Chain
-image=https://magiccards.info/scans/en/mm/246.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb912458-e016-4ea2-a2ea-40ac1a57f8fb.jpg?1673148102
 value=4.377
 rarity=R
 type=Enchantment

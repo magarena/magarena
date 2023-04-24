@@ -1,5 +1,5 @@
 name=Pyxis of Pandemonium
-image=https://magiccards.info/scans/en/ths/220.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbc6a246-f32a-4dc0-9785-4038804f372f.jpg?1562833569
 value=3.511
 rarity=R
 type=Artifact

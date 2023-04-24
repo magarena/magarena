@@ -1,5 +1,5 @@
 name=Mana Severance
-image=https://magiccards.info/scans/en/tp/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/854dc5e6-63f7-4c8b-83e5-a364f41c9a15.jpg?1562054977
 value=4.183
 rarity=R
 type=Sorcery

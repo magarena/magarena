@@ -1,5 +1,5 @@
 name=Ashes to Ashes
-image=https://magiccards.info/scans/en/5e/3.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e61209b-0f56-4bab-9ada-700f91b18dec.jpg?1562928403
 value=4.388
 rarity=U
 type=Sorcery

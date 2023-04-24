@@ -1,5 +1,5 @@
 name=Identity Thief
-image=https://magiccards.info/scans/en/emn/64.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a32e1511-2495-454a-9a04-4f3c0d9a75d0.jpg?1673483921
 image_updated=2016-09-05
 value=2.500
 rarity=R

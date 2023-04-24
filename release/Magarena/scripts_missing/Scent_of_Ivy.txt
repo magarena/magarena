@@ -1,5 +1,5 @@
 name=Scent of Ivy
-image=https://magiccards.info/scans/en/ud/120.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a56b4894-b959-4d00-b631-95d26eb85a4e.jpg?1562444728
 value=2.952
 rarity=C
 type=Instant

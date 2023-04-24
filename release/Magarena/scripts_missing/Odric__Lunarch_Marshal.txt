@@ -1,5 +1,5 @@
 name=Odric, Lunarch Marshal
-image=https://magiccards.info/scans/en/soi/31.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2d5c9f2-8f58-40ac-a01c-f4ac4ab4d7f0.jpg?1673305096
 value=2.500
 rarity=R
 type=Legendary,Creature

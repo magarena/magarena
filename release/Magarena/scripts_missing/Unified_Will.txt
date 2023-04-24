@@ -1,5 +1,5 @@
 name=Unified Will
-image=https://magiccards.info/scans/en/roe/92.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cb50db7-f1d4-4f9d-ac60-564398af79ea.jpg?1562704807
 value=3.491
 rarity=U
 type=Instant

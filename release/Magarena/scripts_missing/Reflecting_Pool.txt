@@ -1,5 +1,5 @@
 name=Reflecting Pool
-image=https://magiccards.info/scans/en/cns/210.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18a1b3f5-473d-45ca-be0d-e67e77ba30ce.jpg?1674138220
 value=4.438
 rarity=R
 type=Land

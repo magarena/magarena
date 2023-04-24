@@ -1,5 +1,5 @@
 name=Sakura-Tribe Springcaller
-image=https://magiccards.info/scans/en/bok/142.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2ca7687-ba90-4479-8c6e-ece3f29fff12.jpg?1562879197
 value=3.056
 rarity=C
 type=Creature

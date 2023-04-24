@@ -1,5 +1,5 @@
 name=Cathedral Membrane
-image=https://magiccards.info/scans/en/nph/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07592731-68be-4218-bb2c-c2523c5a27f1.jpg?1562875353
 value=3.505
 rarity=U
 type=Artifact,Creature

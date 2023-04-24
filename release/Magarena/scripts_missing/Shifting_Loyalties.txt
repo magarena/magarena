@@ -1,5 +1,5 @@
 name=Shifting Loyalties
-image=https://magiccards.info/scans/en/frf/51.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed9ff175-2e4c-4658-813e-1bfb4b9a6ca0.jpg?1562831316
 value=2.500
 rarity=U
 type=Sorcery

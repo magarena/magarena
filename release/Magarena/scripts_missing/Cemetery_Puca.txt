@@ -1,5 +1,5 @@
 name=Cemetery Puca
-image=https://magiccards.info/scans/en/shm/158.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eec3b06b-d8c5-459c-aae5-3e51059cfdf1.jpg?1562837903
 value=3.971
 rarity=R
 type=Creature

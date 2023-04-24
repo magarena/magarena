@@ -1,5 +1,5 @@
 name=Rites of Initiation
-image=https://magiccards.info/scans/en/od/217.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f17d9c60-5f81-4b65-8af1-9c5bb757bd7d.jpg?1562943547
 value=3.000
 rarity=C
 type=Instant

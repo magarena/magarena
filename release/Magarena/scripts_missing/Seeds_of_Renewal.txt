@@ -1,5 +1,5 @@
 name=Seeds of Renewal
-image=https://magiccards.info/scans/en/c16/24.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba13b3ba-c36e-4c79-aaa6-2c2619a2d999.jpg?1562416934
 image_updated=2016-12-28
 value=2.500
 rarity=R

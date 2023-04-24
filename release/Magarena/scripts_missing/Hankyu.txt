@@ -1,5 +1,5 @@
 name=Hankyu
-image=https://magiccards.info/scans/en/chk/253.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f22a88a-4f04-4500-9e05-909b54ad43e3.jpg?1562761097
 value=2.819
 rarity=U
 type=Artifact

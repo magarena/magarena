@@ -1,5 +1,5 @@
 name=Angelic Skirmisher
-image=https://magiccards.info/scans/en/gtc/3.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/beb04702-5cb2-4590-b675-9409ba52a395.jpg?1561844079
 value=3.789
 rarity=R
 type=Creature

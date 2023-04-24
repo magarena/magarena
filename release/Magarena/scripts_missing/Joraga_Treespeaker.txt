@@ -1,5 +1,5 @@
 name=Joraga Treespeaker
-image=https://magiccards.info/scans/en/roe/190.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1132218d-56cd-441e-9006-df3c50344491.jpg?1562701264
 value=4.258
 rarity=U
 type=Creature

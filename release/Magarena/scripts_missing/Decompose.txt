@@ -1,5 +1,5 @@
 name=Decompose
-image=https://magiccards.info/scans/en/od/128.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4868145-fb8b-4624-8554-ddbab3d5a43c.jpg?1592714305
 image_updated=2016-12-01
 value=2.400
 rarity=U

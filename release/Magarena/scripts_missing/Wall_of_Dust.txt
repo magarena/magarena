@@ -1,5 +1,5 @@
 name=Wall of Dust
-image=https://magiccards.info/scans/en/4e/247.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b25b81fb-1d0f-4c0c-8d54-fbf9c1d54578.jpg?1559603806
 value=3.328
 rarity=U
 type=Creature

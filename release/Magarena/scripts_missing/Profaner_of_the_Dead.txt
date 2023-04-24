@@ -1,5 +1,5 @@
 name=Profaner of the Dead
-image=https://magiccards.info/scans/en/dtk/70.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87630910-47cc-4347-b126-fd779e7dadc0.jpg?1562789380
 value=2.500
 rarity=R
 type=Creature

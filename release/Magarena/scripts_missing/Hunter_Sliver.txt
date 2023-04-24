@@ -1,5 +1,5 @@
 name=Hunter Sliver
-image=https://magiccards.info/scans/en/le/102.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca9aea1a-6f50-4f66-9f36-2e214dce41b4.jpg?1562935688
 value=3.917
 rarity=C
 type=Creature

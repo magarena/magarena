@@ -1,5 +1,5 @@
 name=Oath of Druids
-image=https://magiccards.info/scans/en/c16/159.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dad6b50-c415-4c55-8eac-bbc9d656c2fc.jpg?1562412357
 image_updated=2017-08-17
 value=2.500
 rarity=R

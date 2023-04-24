@@ -1,5 +1,5 @@
 name=Skyreach Manta
-image=https://magiccards.info/scans/en/mm2/229.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3df1e8a0-6a54-4be9-bd0c-ac70f0ae9aa6.jpg?1562261157
 value=2.500
 rarity=C
 type=Artifact,Creature

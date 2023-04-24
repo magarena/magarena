@@ -1,5 +1,5 @@
 name=Captivating Glance
-image=https://magiccards.info/scans/en/lw/55.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/642be353-a46a-4d14-a35a-7716fd552870.jpg?1562351137
 value=2.579
 rarity=U
 type=Enchantment

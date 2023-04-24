@@ -1,5 +1,5 @@
 name=Coastline Chimera
-image=https://magiccards.info/scans/en/ths/44.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01320a31-25fa-4324-8225-d150c6aa58a1.jpg?1562813968
 value=2.983
 rarity=C
 type=Creature

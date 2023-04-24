@@ -1,5 +1,5 @@
 name=Booby Trap
-image=https://magiccards.info/scans/en/9e/289.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1af0c9a0-0dfa-4245-8b29-7bd37982b7d2.jpg?1562732088
 value=3.949
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Seething Song
-image=https://magiccards.info/scans/en/9e/216.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f493ce26-005c-4ddc-80f0-47bea4fd013a.jpg?1625194059
 image_updated=2016-01-09
 value=4.473
 rarity=C

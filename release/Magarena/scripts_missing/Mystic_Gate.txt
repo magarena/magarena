@@ -1,5 +1,5 @@
 name=Mystic Gate
-image=https://magiccards.info/scans/en/shm/277.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fe71ae5-5553-4b41-89e0-fd767f9bf430.jpg?1599710591
 value=4.273
 rarity=R
 type=Land

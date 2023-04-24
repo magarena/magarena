@@ -1,5 +1,5 @@
 name=Strongarm Tactics
-image=https://magiccards.info/scans/en/on/173.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57dcf434-5c67-440a-8b67-2df7307e92bd.jpg?1562915597
 value=3.333
 rarity=R
 type=Sorcery

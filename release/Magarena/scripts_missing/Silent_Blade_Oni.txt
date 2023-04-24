@@ -1,5 +1,5 @@
 name=Silent-Blade Oni
-image=https://magiccards.info/scans/en/pc2/105.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc4997f0-dd2e-4f68-8bc0-13d7b2455323.jpg?1673485185
 value=4.292
 rarity=R
 type=Creature

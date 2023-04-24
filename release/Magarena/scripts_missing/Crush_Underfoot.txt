@@ -1,5 +1,5 @@
 name=Crush Underfoot
-image=https://magiccards.info/scans/en/mma/109.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/756025a8-1096-4e7c-bbfe-6237e4a76216.jpg?1561967817
 value=2.688
 rarity=C
 type=Tribal,Instant

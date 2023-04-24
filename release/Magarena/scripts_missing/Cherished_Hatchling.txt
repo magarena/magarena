@@ -1,5 +1,5 @@
 name=Cherished Hatchling
-image=https://magiccards.info/scans/en/rix/124.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a14fe6c-b272-415b-974d-c60d016ab786.jpg?1555040594
 value=2.500
 rarity=U
 type=Creature

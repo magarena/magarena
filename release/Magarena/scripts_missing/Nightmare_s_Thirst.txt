@@ -1,5 +1,5 @@
 name=Nightmare's Thirst
-image=https://magiccards.info/scans/en/m19/111.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f12efbc0-ce88-4622-ad07-2808e651ac5a.jpg?1562305253
 value=2.500
 rarity=U
 type=Instant

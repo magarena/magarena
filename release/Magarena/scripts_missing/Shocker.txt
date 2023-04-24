@@ -1,5 +1,5 @@
 name=Shocker
-image=https://magiccards.info/scans/en/tp/204.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90954848-af7e-47b3-82e7-9fedde6ad606.jpg?1562055418
 value=3.895
 rarity=R
 type=Creature

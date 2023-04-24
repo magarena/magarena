@@ -1,5 +1,5 @@
 name=Deepglow Skate
-image=https://magiccards.info/scans/en/c16/7.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a8b26dc-de39-4510-9fcf-6cb43372f543.jpg?1598303851
 image_updated=2016-12-01
 value=2.500
 rarity=R

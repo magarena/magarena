@@ -1,5 +1,5 @@
 name=Shadowblood Ridge
-image=https://magiccards.info/scans/en/c16/325.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bf29166-4314-4464-a810-9c7487e98107.jpg?1673486014
 image_updated=2017-08-17
 value=4.013
 rarity=R

@@ -1,5 +1,5 @@
 name=Deflecting Palm
-image=https://magiccards.info/scans/en/ktk/173.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5580886-a402-4048-b8b6-39e19479f491.jpg?1608917621
 value=4.125
 rarity=R
 type=Instant

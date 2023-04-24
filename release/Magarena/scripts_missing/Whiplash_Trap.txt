@@ -1,5 +1,5 @@
 name=Whiplash Trap
-image=https://magiccards.info/scans/en/zen/77.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d828c7c-4e55-40be-a96f-48101e407aef.jpg?1591320382
 image_updated=2017-01-11
 value=2.500
 rarity=C

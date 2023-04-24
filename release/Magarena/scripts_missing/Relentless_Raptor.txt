@@ -1,5 +1,5 @@
 name=Relentless Raptor
-image=https://magiccards.info/scans/en/rix/169.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d0727ba-4180-4908-93be-a8abf29a8958.jpg?1555040936
 value=2.500
 rarity=U
 type=Creature

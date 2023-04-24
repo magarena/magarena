@@ -1,5 +1,5 @@
 name=Xenagos, the Reveler
-image=https://magiccards.info/scans/en/ths/209.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edfd90ee-a142-4a80-b383-802bbee2cef1.jpg?1674142531
 value=3.737
 rarity=M
 type=Legendary,Planeswalker

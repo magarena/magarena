@@ -1,5 +1,5 @@
 name=Despise
-image=https://magiccards.info/scans/en/ktk/69.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64216ce3-945e-42d8-9127-cf11c687da67.jpg?1564775472
 value=3.750
 rarity=U
 type=Sorcery

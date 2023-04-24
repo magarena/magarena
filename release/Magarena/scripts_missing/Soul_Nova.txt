@@ -1,5 +1,5 @@
 name=Soul Nova
-image=https://magiccards.info/scans/en/mi/25.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f862682d-cbf3-4c35-83d0-76883b0ac105.jpg?1562163528
 value=2.362
 rarity=U
 type=Instant

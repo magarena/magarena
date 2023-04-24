@@ -1,5 +1,5 @@
 name=Erupting Dreadwolf
-image=https://magiccards.info/scans/en/emn/142b.jpg
+image=https://cards.scryfall.io/border_crop/back/0/b/0b0eab47-af62-4ee8-99cf-a864fadade2d.jpg?1576384676
 image_updated=2016-09-05
 value=2.500
 rarity=U

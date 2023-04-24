@@ -1,5 +1,5 @@
 name=Broken Dam
-image=https://magiccards.info/scans/en/p3k/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0f7b8b1-f1dc-46a3-8f4a-c6181e8a049f.jpg?1562257502
 value=3.737
 rarity=C
 type=Sorcery

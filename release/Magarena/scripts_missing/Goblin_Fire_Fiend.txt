@@ -1,5 +1,5 @@
 name=Goblin Fire Fiend
-image=https://magiccards.info/scans/en/rav/127.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64d3b2d2-4ec2-495d-833d-7476cbfc80f6.jpg?1598915578
 value=1.543
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Boros Fury-Shield
-image=https://magiccards.info/scans/en/rav/5.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c46b2f5c-3c7a-4421-9d6f-81197e93d8d0.jpg?1598913470
 value=4.049
 rarity=C
 type=Instant

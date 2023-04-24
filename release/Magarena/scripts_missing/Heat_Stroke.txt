@@ -1,5 +1,5 @@
 name=Heat Stroke
-image=https://magiccards.info/scans/en/wl/107.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1baf2a6c-57ec-4b38-8b08-4b3f800dbe99.jpg?1562799609
 value=4.283
 rarity=R
 type=Enchantment

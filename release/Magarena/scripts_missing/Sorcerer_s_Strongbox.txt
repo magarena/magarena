@@ -1,5 +1,5 @@
 name=Sorcerer's Strongbox
-image=https://magiccards.info/scans/en/m11/213.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53757410-4183-42b2-aa7f-a3d208bedcf9.jpg?1562460082
 value=2.232
 rarity=U
 type=Artifact

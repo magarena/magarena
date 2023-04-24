@@ -1,5 +1,5 @@
 name=Goblin Psychopath
-image=https://magiccards.info/scans/en/sc/95.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52287036-00f1-4b6d-8cd8-b8cbc70c5135.jpg?1562529064
 value=1.609
 rarity=U
 type=Creature

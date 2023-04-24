@@ -1,5 +1,5 @@
 name=Essence Leak
-image=https://magiccards.info/scans/en/in/55.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9099b2e6-9ed8-4a9c-97ca-77cc47678228.jpg?1562924181
 value=3.540
 rarity=U
 type=Enchantment

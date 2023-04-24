@@ -1,5 +1,5 @@
 name=Rooftop Storm
-image=https://magiccards.info/scans/en/isd/71.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80cdee59-0ead-4b95-a348-c1e360d781ab.jpg?1637629769
 value=3.877
 rarity=R
 type=Enchantment

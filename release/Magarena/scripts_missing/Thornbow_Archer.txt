@@ -1,5 +1,5 @@
 name=Thornbow Archer
-image=https://magiccards.info/scans/en/ori/121.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/3290c60a-f9a0-464d-a15e-8473a6d50d96.jpg?1562013760
 image_updated=2015-11-05
 value=2.500
 rarity=C

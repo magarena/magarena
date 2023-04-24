@@ -1,5 +1,5 @@
 name=Holdout Settlement
-image=https://magiccards.info/scans/en/ogw/172.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf08c317-6f2d-47e3-ab5b-8af73fd3e404.jpg?1562936603
 image_updated=2016-02-29
 value=2.500
 rarity=C

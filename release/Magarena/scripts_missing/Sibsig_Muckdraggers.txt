@@ -1,5 +1,5 @@
 name=Sibsig Muckdraggers
-image=https://magiccards.info/scans/en/frf/83.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f88297c1-c612-47bf-80b7-374099b00e07.jpg?1562831710
 value=2.500
 rarity=U
 type=Creature

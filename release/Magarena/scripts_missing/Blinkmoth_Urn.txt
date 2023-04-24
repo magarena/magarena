@@ -1,5 +1,5 @@
 name=Blinkmoth Urn
-image=https://magiccards.info/scans/en/c16/244.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3879faf0-6e39-4275-82f6-7fb5c70fc6ce.jpg?1592711197
 image_updated=2017-08-17
 value=4.000
 rarity=R

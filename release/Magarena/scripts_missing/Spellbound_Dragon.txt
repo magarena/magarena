@@ -1,5 +1,5 @@
 name=Spellbound Dragon
-image=https://magiccards.info/scans/en/c17/196.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88eba680-a0d7-4356-bf74-7986a51e545f.jpg?1562615814
 image_updated=2017-10-03
 value=3.863
 rarity=R

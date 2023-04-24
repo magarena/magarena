@@ -1,5 +1,5 @@
 name=Magosi, the Waterveil
-image=https://magiccards.info/scans/en/zen/218.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c84cf70-4164-47ea-8da1-c0ca1ac132e1.jpg?1562611444
 value=3.512
 rarity=R
 type=Land

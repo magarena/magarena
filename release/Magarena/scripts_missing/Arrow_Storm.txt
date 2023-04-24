@@ -1,5 +1,5 @@
 name=Arrow Storm
-image=https://magiccards.info/scans/en/ktk/98.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c57534fb-2591-4003-aeec-6452faa4a759.jpg?1562793262
 value=2.750
 rarity=C
 type=Sorcery

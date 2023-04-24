@@ -1,5 +1,5 @@
 name=Gabriel Angelfire
-image=https://magiccards.info/scans/en/lg/266.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e349074-1402-44cf-be19-33a661cff3b6.jpg?1562904707
 value=2.123
 rarity=R
 type=Legendary,Creature

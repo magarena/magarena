@@ -1,5 +1,5 @@
 name=Khenra Scrapper
-image=https://magiccards.info/scans/en/hou/100.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5d4caac-95e8-47bb-90c4-3bf877afdc57.jpg?1562818226
 value=2.500
 rarity=C
 type=Creature

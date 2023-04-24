@@ -1,5 +1,5 @@
 name=Deft Dismissal
-image=https://magiccards.info/scans/en/aer/17.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cb26d5b-ffeb-4dac-ad61-f85e5e7b1675.jpg?1576381381
 value=2.500
 rarity=U
 type=Instant

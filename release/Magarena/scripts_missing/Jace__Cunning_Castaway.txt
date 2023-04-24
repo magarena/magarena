@@ -1,5 +1,5 @@
 name=Jace, Cunning Castaway
-image=https://magiccards.info/scans/en/xln/60.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b75f56f2-88fd-44ba-ad02-56ea3391f173.jpg?1562562793
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

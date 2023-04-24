@@ -1,5 +1,5 @@
 name=Seton, Krosan Protector
-image=https://magiccards.info/scans/en/od/267.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/641a3bae-9146-4e70-862a-86a56f7c3816.jpg?1562913548
 value=3.920
 rarity=R
 type=Legendary,Creature

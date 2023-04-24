@@ -1,5 +1,5 @@
 name=Tomb of the Dusk Rose
-image=https://magiccards.info/scans/en/rix/166b.jpg
+image=https://cards.scryfall.io/border_crop/back/1/d/1d94ff37-f04e-48ee-8253-d62ab07f0632.jpg?1555428604
 value=2.500
 rarity=R
 type=Legendary,Land

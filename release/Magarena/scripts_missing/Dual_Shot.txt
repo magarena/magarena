@@ -1,5 +1,5 @@
 name=Dual Shot
-image=https://magiccards.info/scans/en/xln/141.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bb504d2-d3de-4b09-9007-3d403fc9a216.jpg?1562550459
 image_updated=2017-10-30
 value=2.500
 rarity=C

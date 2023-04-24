@@ -1,5 +1,5 @@
 name=Purelace
-image=https://magiccards.info/scans/en/4e/293.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/5736fcc7-fa95-4ef4-b821-392ec00e03bf.jpg?1559604129
 value=1.551
 rarity=R
 type=Instant

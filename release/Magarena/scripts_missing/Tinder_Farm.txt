@@ -1,5 +1,5 @@
 name=Tinder Farm
-image=https://magiccards.info/scans/en/in/329.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/989b5901-aeb0-4a48-8c53-3b0ec0e0deba.jpg?1562925784
 value=3.143
 rarity=C
 type=Land

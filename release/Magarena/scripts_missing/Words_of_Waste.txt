@@ -1,5 +1,5 @@
 name=Words of Waste
-image=https://magiccards.info/scans/en/on/182.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2dcb8ed-23e7-4cee-9f43-042232c6035a.jpg?1562945240
 value=3.571
 rarity=R
 type=Enchantment

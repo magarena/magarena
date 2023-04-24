@@ -1,5 +1,5 @@
 name=Kavu Primarch
-image=https://magiccards.info/scans/en/mm2/146.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/475c3439-74a9-4a53-9e8b-c1c84b60ea35.jpg?1619398222
 value=2.500
 rarity=C
 type=Creature

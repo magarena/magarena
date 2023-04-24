@@ -1,5 +1,5 @@
 name=Liliana of the Veil
-image=https://magiccards.info/scans/en/mm3/76.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d12c8c97-6491-452c-811d-943441a7ef9f.jpg?1673307126
 image_updated=2017-08-08
 value=4.287
 rarity=M

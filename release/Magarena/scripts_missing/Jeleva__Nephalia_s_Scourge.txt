@@ -1,5 +1,5 @@
 name=Jeleva, Nephalia's Scourge
-image=https://magiccards.info/scans/en/c13/194.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83f9aeb8-05ba-49d9-a834-62f42fcd295b.jpg?1562922860
 value=3.571
 rarity=M
 type=Legendary,Creature

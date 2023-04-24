@@ -1,5 +1,5 @@
 name=Prohibit
-image=https://magiccards.info/scans/en/in/67.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0ae544bf-7229-4b82-99ad-32c3af36e30f.jpg?1562201457
 value=3.792
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Terraformer
-image=https://magiccards.info/scans/en/rav/70.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0b9d4f3-4570-4fe0-857f-97f5bd6ead44.jpg?1598914549
 value=2.638
 rarity=C
 type=Creature

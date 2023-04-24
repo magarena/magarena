@@ -1,5 +1,5 @@
 name=Runed Halo
-image=https://magiccards.info/scans/en/shm/21.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61296b2d-4e5c-419a-8775-4e6af902c7b1.jpg?1628800544
 value=3.820
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Arbiter of the Ideal
-image=https://magiccards.info/scans/en/bng/31.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32e58ba3-4202-4f91-b27f-7528d27c1d5c.jpg?1593091603
 value=3.783
 rarity=R
 type=Creature

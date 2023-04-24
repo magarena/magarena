@@ -1,5 +1,5 @@
 name=Opaline Bracers
-image=https://magiccards.info/scans/en/5dn/141.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ae84edd-1294-4722-89d1-84d9f336871c.jpg?1562876377
 value=3.040
 rarity=C
 type=Artifact

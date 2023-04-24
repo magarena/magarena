@@ -1,5 +1,5 @@
 name=Sosuke's Summons
-image=https://magiccards.info/scans/en/bok/145.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42359e94-9f57-45ae-ae39-d4b939813015.jpg?1562876666
 value=3.947
 rarity=U
 type=Sorcery

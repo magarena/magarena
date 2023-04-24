@@ -1,5 +1,5 @@
 name=Singe-Mind Ogre
-image=https://magiccards.info/scans/en/arb/45.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab1564d7-43fe-4072-91a6-622713848b7e.jpg?1562643514
 value=3.020
 rarity=C
 type=Creature

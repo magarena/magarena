@@ -1,5 +1,5 @@
 name=One with the Machine
-image=https://magiccards.info/scans/en/m19/66.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17f2aaf5-6c1f-4663-865f-6cdd5640485a.jpg?1562300707
 value=2.500
 rarity=R
 type=Sorcery

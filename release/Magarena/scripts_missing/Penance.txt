@@ -1,5 +1,5 @@
 name=Penance
-image=https://magiccards.info/scans/en/ex/15.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f3db848-8394-43bd-a236-264641033a6d.jpg?1562087357
 value=2.286
 rarity=U
 type=Enchantment

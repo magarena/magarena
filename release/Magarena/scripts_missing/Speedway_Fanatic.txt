@@ -1,5 +1,5 @@
 name=Speedway Fanatic
-image=https://magiccards.info/scans/en/kld/132.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/436ce901-6ac6-4f8c-8ff0-18103f2642b8.jpg?1576382229
 image_updated=2016-10-05
 value=2.500
 rarity=U

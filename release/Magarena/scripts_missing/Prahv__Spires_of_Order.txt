@@ -1,5 +1,5 @@
 name=Prahv, Spires of Order
-image=https://magiccards.info/scans/en/di/177.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a315f63-96ad-4a5f-8eb4-d81361797348.jpg?1593274115
 value=2.978
 rarity=U
 type=Land

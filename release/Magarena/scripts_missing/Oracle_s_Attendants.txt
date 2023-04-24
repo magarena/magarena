@@ -1,5 +1,5 @@
 name=Oracle's Attendants
-image=https://magiccards.info/scans/en/9e/30.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11a180a4-bffc-4f4f-ae34-3afa4a565960.jpg?1562731539
 value=3.033
 rarity=R
 type=Creature

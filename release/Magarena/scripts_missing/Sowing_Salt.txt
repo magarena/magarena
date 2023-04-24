@@ -1,5 +1,5 @@
 name=Sowing Salt
-image=https://magiccards.info/scans/en/bok/118.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd243ce5-152b-4d9c-991e-be56b6731d99.jpg?1562879461
 value=4.167
 rarity=U
 type=Sorcery

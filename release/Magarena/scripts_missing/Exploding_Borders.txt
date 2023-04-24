@@ -1,5 +1,5 @@
 name=Exploding Borders
-image=https://magiccards.info/scans/en/cfx/106.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f247aaaf-4d65-4dfc-bab2-3c1331762647.jpg?1562804623
 value=2.968
 rarity=C
 type=Sorcery

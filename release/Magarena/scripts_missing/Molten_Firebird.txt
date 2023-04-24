@@ -1,5 +1,5 @@
 name=Molten Firebird
-image=https://magiccards.info/scans/en/pc/117.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dddda66c-2df4-452e-8eca-7e100213fd98.jpg?1562583771
 value=2.288
 rarity=R
 type=Creature

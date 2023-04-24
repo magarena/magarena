@@ -1,5 +1,5 @@
 name=Dwarven Ruins
-image=https://magiccards.info/scans/en/6e/323.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b6adef9-a1c5-452d-94c7-4110f4998180.jpg?1562867826
 value=3.312
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Well of Lost Dreams
-image=https://magiccards.info/scans/en/c17/231.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8c10535-c77e-4a40-b19f-23f7cb691230.jpg?1625979661
 image_updated=2017-10-03
 value=3.795
 rarity=R

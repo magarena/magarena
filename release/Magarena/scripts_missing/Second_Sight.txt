@@ -1,5 +1,5 @@
 name=Second Sight
-image=https://magiccards.info/scans/en/ds/33.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24a07cdc-8335-45da-9ae2-3052193663ef.jpg?1562635832
 value=3.515
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Suncleanser
-image=https://magiccards.info/scans/en/m19/39.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3644df41-b690-4581-ac7d-c85cec75411f.jpg?1562301661
 value=2.500
 rarity=R
 type=Creature

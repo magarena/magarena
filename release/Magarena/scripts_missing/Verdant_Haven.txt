@@ -1,5 +1,5 @@
 name=Verdant Haven
-image=https://magiccards.info/scans/en/m15/206.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/beec869b-fe2c-4f30-ae36-9ce5bdc555e1.jpg?1562793637
 value=2.600
 rarity=C
 type=Enchantment

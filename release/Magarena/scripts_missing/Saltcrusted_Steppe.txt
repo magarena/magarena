@@ -1,5 +1,5 @@
 name=Saltcrusted Steppe
-image=https://magiccards.info/scans/en/c17/273.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4d757f1-9398-494f-9a24-b01c5c8c6db5.jpg?1619399449
 image_updated=2017-10-03
 value=3.850
 rarity=U

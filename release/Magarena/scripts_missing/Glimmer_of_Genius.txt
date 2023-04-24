@@ -1,5 +1,5 @@
 name=Glimmer of Genius
-image=https://magiccards.info/scans/en/kld/49.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19f1673d-c92c-43be-8648-af7fbc790421.jpg?1576381226
 image_updated=2016-10-05
 value=2.500
 rarity=U

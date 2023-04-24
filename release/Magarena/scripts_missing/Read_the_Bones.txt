@@ -1,5 +1,5 @@
 name=Read the Bones
-image=https://magiccards.info/scans/en/ori/114.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b40aa855-bfa9-4dc8-ab9e-b78385185b81.jpg?1682209222
 image_updated=2015-11-05
 value=2.500
 rarity=C

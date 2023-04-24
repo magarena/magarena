@@ -1,5 +1,5 @@
 name=Aerial Formation
-image=https://magiccards.info/scans/en/jou/30.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fce86785-bc03-451e-8422-8bb53082cc12.jpg?1593095380
 value=2.583
 rarity=C
 type=Instant

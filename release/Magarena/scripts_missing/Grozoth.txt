@@ -1,5 +1,5 @@
 name=Grozoth
-image=https://magiccards.info/scans/en/rav/53.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96d81c13-93de-4cf6-bb15-d387ed259c50.jpg?1598914261
 value=3.870
 rarity=R
 type=Creature

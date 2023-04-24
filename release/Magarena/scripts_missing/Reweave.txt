@@ -1,5 +1,5 @@
 name=Reweave
-image=https://magiccards.info/scans/en/chk/82.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4ff68016-80b4-4801-b796-5c5fdbc8faa1.jpg?1562760055
 value=3.113
 rarity=R
 type=Instant

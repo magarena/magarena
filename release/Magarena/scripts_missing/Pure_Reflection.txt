@@ -1,5 +1,5 @@
 name=Pure Reflection
-image=https://magiccards.info/scans/en/in/27.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbff85a6-a51b-424e-a86b-da52c9b3a9da.jpg?1562932789
 value=3.554
 rarity=R
 type=Enchantment

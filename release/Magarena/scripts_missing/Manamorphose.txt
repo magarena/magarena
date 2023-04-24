@@ -1,5 +1,5 @@
 name=Manamorphose
-image=https://magiccards.info/scans/en/mma/191.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/faf9070e-14be-4ce5-a19a-6addc79359c1.jpg?1599708170
 value=4.561
 rarity=U
 type=Instant

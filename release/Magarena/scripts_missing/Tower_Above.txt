@@ -1,5 +1,5 @@
 name=Tower Above
-image=https://magiccards.info/scans/en/shm/131.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50cc1e47-3786-4ba9-b837-bf5b43323135.jpg?1562830093
 value=3.733
 rarity=U
 type=Sorcery

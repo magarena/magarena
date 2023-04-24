@@ -1,5 +1,5 @@
 name=Infectious Curse
-image=https://magiccards.info/scans/en/soi/97b.jpg
+image=https://cards.scryfall.io/border_crop/back/8/0/8093f8b0-5d50-48ca-b616-e92535a47138.jpg?1576384328
 value=2.500
 rarity=U
 type=Enchantment

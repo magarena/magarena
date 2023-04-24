@@ -1,5 +1,5 @@
 name=Price of Glory
-image=https://magiccards.info/scans/en/od/214.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/785ccfe1-04f1-4d2e-9e30-2ae3efe7213a.jpg?1562917265
 value=4.026
 rarity=U
 type=Enchantment

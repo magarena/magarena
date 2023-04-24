@@ -1,5 +1,5 @@
 name=Guile
-image=https://magiccards.info/scans/en/mm2/46.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9021f91-0b92-44ff-9ccb-bcf1e81232c2.jpg?1562266705
 value=2.500
 rarity=R
 type=Creature

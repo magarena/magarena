@@ -1,5 +1,5 @@
 name=Clockwork Avian
-image=https://magiccards.info/scans/en/4e/324.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8013397b-55c4-4439-a320-9c9feb6864c2.jpg?1562925187
 value=3.182
 rarity=R
 type=Artifact,Creature

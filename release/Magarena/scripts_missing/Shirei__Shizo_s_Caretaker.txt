@@ -1,5 +1,5 @@
 name=Shirei, Shizo's Caretaker
-image=https://magiccards.info/scans/en/bok/81.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0757cb66-7aa2-41a2-8efc-f3f35b70ab9e.jpg?1559959257
 value=4.025
 rarity=R
 type=Legendary,Creature

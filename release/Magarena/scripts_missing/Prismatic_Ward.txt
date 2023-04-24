@@ -1,5 +1,5 @@
 name=Prismatic Ward
-image=https://magiccards.info/scans/en/5e/329.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24b8ce55-2fb1-4330-9db4-146a120aed81.jpg?1562589698
 value=3.022
 rarity=C
 type=Enchantment

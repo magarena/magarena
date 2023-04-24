@@ -1,5 +1,5 @@
 name=Wei Assassins
-image=https://magiccards.info/scans/en/p3k/86.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b448c08-140f-41d6-aed5-ce9b68efafa9.jpg?1562257495
 value=2.980
 rarity=U
 type=Creature

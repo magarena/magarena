@@ -1,5 +1,5 @@
 name=Samite Sanctuary
-image=https://magiccards.info/scans/en/pr/21.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/022ebeba-b61a-497a-a698-e75b130c468c.jpg?1562895407
 value=2.672
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Thornscape Battlemage
-image=https://magiccards.info/scans/en/mm3/142.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d286f930-28ca-4c59-8a53-99686ac6030e.jpg?1593813990
 image_updated=2017-08-08
 value=3.929
 rarity=U

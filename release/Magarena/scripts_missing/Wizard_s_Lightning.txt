@@ -1,5 +1,5 @@
 name=Wizard's Lightning
-image=https://magiccards.info/scans/en/dom/152.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59bf371a-164c-4db8-9207-197c2e7c3c10.jpg?1562736134
 value=2.500
 rarity=U
 type=Instant

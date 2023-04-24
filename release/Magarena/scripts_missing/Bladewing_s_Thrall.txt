@@ -1,5 +1,5 @@
 name=Bladewing's Thrall
-image=https://magiccards.info/scans/en/ima/81.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d63d3d8-5699-4577-a908-4415bc96b404.jpg?1562852063
 image_updated=2017-04-12
 value=3.382
 rarity=U

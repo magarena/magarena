@@ -1,5 +1,5 @@
 name=Victimize
-image=https://magiccards.info/scans/en/ema/113.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54b5c19e-f50a-4cd1-bf42-e545da7a6b0f.jpg?1682209249
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Time Elemental
-image=https://magiccards.info/scans/en/5e/129.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/720672dc-d75a-44c3-a48d-d2fe3993fbbf.jpg?1559592438
 value=3.420
 rarity=R
 type=Creature

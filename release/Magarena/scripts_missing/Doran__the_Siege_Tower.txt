@@ -1,5 +1,5 @@
 name=Doran, the Siege Tower
-image=https://magiccards.info/scans/en/lw/247.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0ad8e7f-cda0-4529-94fc-dd3709158a94.jpg?1673148514
 value=4.179
 rarity=R
 type=Legendary,Creature

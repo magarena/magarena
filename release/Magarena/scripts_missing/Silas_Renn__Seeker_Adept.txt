@@ -1,5 +1,5 @@
 name=Silas Renn, Seeker Adept
-image=https://magiccards.info/scans/en/c16/43.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e3fe912-1374-47c7-b73f-89ef55c479c1.jpg?1562399367
 image_updated=2016-12-28
 value=2.500
 rarity=M

@@ -1,5 +1,5 @@
 name=Venomous Breath
-image=https://magiccards.info/scans/en/mm/281.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/4797556c-df74-4e13-b8fb-8b0b58c92b4c.jpg?1562380428
 value=2.929
 rarity=U
 type=Instant

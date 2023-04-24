@@ -1,5 +1,5 @@
 name=Infernal Kirin
-image=https://magiccards.info/scans/en/sok/72.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c79e7a4c-e0e7-42ac-b125-1db2f3d9325c.jpg?1562495650
 value=3.750
 rarity=R
 type=Legendary,Creature

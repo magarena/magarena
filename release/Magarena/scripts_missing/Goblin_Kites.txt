@@ -1,5 +1,5 @@
 name=Goblin Kites
-image=https://magiccards.info/scans/en/fe/117.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0a27ac3-2273-469a-92ba-3f4a3d55de6f.jpg?1562924985
 value=2.481
 rarity=U
 type=Enchantment

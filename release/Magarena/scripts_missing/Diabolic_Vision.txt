@@ -1,5 +1,5 @@
 name=Diabolic Vision
-image=https://magiccards.info/scans/en/ia/362.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59e8eb10-9499-423b-ae88-9e270799bafd.jpg?1562868577
 value=3.771
 rarity=U
 type=Sorcery

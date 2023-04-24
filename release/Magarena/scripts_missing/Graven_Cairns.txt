@@ -1,5 +1,5 @@
 name=Graven Cairns
-image=https://magiccards.info/scans/en/ima/237.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0127d42f-bf40-48f4-a3a0-1a1c4039f432.jpg?1599710528
 image_updated=2017-04-12
 value=4.167
 rarity=R

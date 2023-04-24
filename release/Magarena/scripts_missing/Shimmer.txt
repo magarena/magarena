@@ -1,5 +1,5 @@
 name=Shimmer
-image=https://magiccards.info/scans/en/mr/92.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c892daa-57fe-4712-b64a-6099d531bb26.jpg?1562719290
 value=4.363
 rarity=R
 type=Enchantment

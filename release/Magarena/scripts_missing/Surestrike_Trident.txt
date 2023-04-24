@@ -1,5 +1,5 @@
 name=Surestrike Trident
-image=https://magiccards.info/scans/en/ds/147.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfcb621d-5831-4b7c-b3e1-c321a6e10392.jpg?1562639704
 value=3.851
 rarity=U
 type=Artifact

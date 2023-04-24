@@ -1,5 +1,5 @@
 name=Opal-Eye, Konda's Yojimbo
-image=https://magiccards.info/scans/en/bok/17.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e08d5618-4fe0-4ae5-af16-696467aae02d.jpg?1562880329
 value=3.791
 rarity=R
 type=Legendary,Creature

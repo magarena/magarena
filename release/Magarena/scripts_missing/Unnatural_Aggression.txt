@@ -1,5 +1,5 @@
 name=Unnatural Aggression
-image=https://magiccards.info/scans/en/bfz/168.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/8293c66d-9a9b-4817-9bc3-ffd57fda290c.jpg?1562925834
 image_updated=2015-11-08
 value=2.500
 rarity=C

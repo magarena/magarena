@@ -1,5 +1,5 @@
 name=Liliana, Untouched by Death
-image=https://magiccards.info/scans/en/m19/106.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7939170-f84e-44c6-b8bc-a180cf7f85d9.jpg?1562303461
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

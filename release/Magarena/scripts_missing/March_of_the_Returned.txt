@@ -1,5 +1,5 @@
 name=March of the Returned
-image=https://magiccards.info/scans/en/ths/96.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/983f7521-16e3-4057-a482-7d86392daa57.jpg?1562821767
 value=2.655
 rarity=C
 type=Sorcery

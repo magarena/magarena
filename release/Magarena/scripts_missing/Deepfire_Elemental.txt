@@ -1,5 +1,5 @@
 name=Deepfire Elemental
-image=https://magiccards.info/scans/en/cs/127.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d81fc89c-6eb8-4b75-bbaf-a7eb9679bab2.jpg?1562940700
 value=3.333
 rarity=U
 type=Creature

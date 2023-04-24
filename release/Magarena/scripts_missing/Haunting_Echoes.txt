@@ -1,5 +1,5 @@
 name=Haunting Echoes
-image=https://magiccards.info/scans/en/m11/99.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aa96bc7-b92f-4df5-89b5-0793b9e56509.jpg?1562461072
 value=4.101
 rarity=R
 type=Sorcery

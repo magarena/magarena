@@ -1,5 +1,5 @@
 name=Torrent of Stone
-image=https://magiccards.info/scans/en/mma/137.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18d00132-6c25-42d3-bfe5-5f893b63a292.jpg?1561966399
 value=2.292
 rarity=C
 type=Instant

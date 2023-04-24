@@ -1,5 +1,5 @@
 name=Keldon Twilight
-image=https://magiccards.info/scans/en/ps/112.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e071665e-bb72-42e0-a42d-0d0ff02abd2b.jpg?1562942316
 value=3.097
 rarity=R
 type=Enchantment

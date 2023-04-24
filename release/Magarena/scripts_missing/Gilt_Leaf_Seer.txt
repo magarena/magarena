@@ -1,5 +1,5 @@
 name=Gilt-Leaf Seer
-image=https://magiccards.info/scans/en/lw/215.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b437bab9-2279-4160-85fd-d29c7a35ca2c.jpg?1562230148
 value=3.295
 rarity=C
 type=Creature

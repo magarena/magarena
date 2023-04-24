@@ -1,5 +1,5 @@
 name=Scrying Glass
-image=https://magiccards.info/scans/en/ud/137.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7286819f-6c57-4503-898c-528786ad86e9.jpg?1562444240
 value=2.000
 rarity=R
 type=Artifact

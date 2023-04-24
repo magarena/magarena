@@ -1,5 +1,5 @@
 name=Polymorph
-image=https://magiccards.info/scans/en/m10/67.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83d274f4-452b-4ff2-b026-83667e9ba98f.jpg?1561986596
 value=4.137
 rarity=R
 type=Sorcery

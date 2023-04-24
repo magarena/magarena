@@ -1,5 +1,5 @@
 name=Illusion
-image=https://magiccards.info/scans/en/ap/129a.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2300635e-7771-4676-a5a5-29a9d8f49f1a.jpg?1604194799
 value=2.630
 rarity=U
 type=Instant

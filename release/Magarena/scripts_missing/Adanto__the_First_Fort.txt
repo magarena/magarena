@@ -1,5 +1,5 @@
 name=Adanto, the First Fort
-image=https://magiccards.info/scans/en/xln/22b.jpg
+image=https://cards.scryfall.io/border_crop/back/0/5/05e2a5e6-3aaa-4096-bdd0-fcc1afe5a36c.jpg?1562550045
 value=2.500
 rarity=R
 type=Legendary,Land

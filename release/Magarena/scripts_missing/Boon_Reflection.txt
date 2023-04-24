@@ -1,5 +1,5 @@
 name=Boon Reflection
-image=https://magiccards.info/scans/en/shm/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d4032a7-600c-4b30-a012-fe3cde1be9c9.jpg?1599705804
 value=3.833
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Skeleton Archer
-image=https://magiccards.info/scans/en/m19/118.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd8a04f1-9a7b-41d6-8447-4baa639fe183.jpg?1673147637
 value=2.500
 rarity=C
 type=Creature

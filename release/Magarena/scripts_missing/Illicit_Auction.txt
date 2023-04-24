@@ -1,5 +1,5 @@
 name=Illicit Auction
-image=https://magiccards.info/scans/en/6e/190.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97d68c39-cfdd-4883-9058-d648d073ae36.jpg?1562820663
 value=3.490
 rarity=R
 type=Sorcery

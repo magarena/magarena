@@ -1,5 +1,5 @@
 name=Sphinx of Uthuun
-image=https://magiccards.info/scans/en/ima/74.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bd5cd33-20e2-4063-b422-2bde13021888.jpg?1608912186
 image_updated=2017-04-12
 value=2.500
 rarity=R

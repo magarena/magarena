@@ -1,5 +1,5 @@
 name=New Horizons
-image=https://magiccards.info/scans/en/xln/198.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7df29a3-c40f-4cd8-a6fe-c1b95085cfed.jpg?1601079825
 value=2.500
 rarity=C
 type=Enchantment

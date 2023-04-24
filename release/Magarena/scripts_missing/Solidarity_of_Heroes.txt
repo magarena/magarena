@@ -1,5 +1,5 @@
 name=Solidarity of Heroes
-image=https://magiccards.info/scans/en/c16/168.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b782186a-79d9-4e95-9d3d-7670fefde43c.jpg?1562275572
 image_updated=2017-08-17
 value=3.662
 rarity=U

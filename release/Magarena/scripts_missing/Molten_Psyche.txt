@@ -1,5 +1,5 @@
 name=Molten Psyche
-image=https://magiccards.info/scans/en/som/98.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57e2382d-1f27-40d1-b809-c188c19ebc72.jpg?1562817796
 value=3.131
 rarity=R
 type=Sorcery

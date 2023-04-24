@@ -1,5 +1,5 @@
 name=Nether Spirit
-image=https://magiccards.info/scans/en/mm/149.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82f1f3e1-d986-4c0b-850e-5e8f2eaa0642.jpg?1562201679
 value=4.250
 rarity=R
 type=Creature

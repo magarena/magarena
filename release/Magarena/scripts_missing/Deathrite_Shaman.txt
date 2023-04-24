@@ -1,5 +1,5 @@
 name=Deathrite Shaman
-image=https://magiccards.info/scans/en/ema/215.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d14f9fc8-e48c-473f-ba6b-9cffce94bb53.jpg?1580015151
 value=4.443
 rarity=R
 type=Creature

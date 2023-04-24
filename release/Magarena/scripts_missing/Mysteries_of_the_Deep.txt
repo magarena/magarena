@@ -1,5 +1,5 @@
 name=Mysteries of the Deep
-image=https://magiccards.info/scans/en/wwk/33.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1907b1e9-ae1e-43fb-9033-3c4322277fff.jpg?1562282736
 value=2.131
 rarity=C
 type=Instant

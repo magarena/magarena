@@ -1,5 +1,5 @@
 name=Drudge Sentinel
-image=https://magiccards.info/scans/en/dom/89.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9764a718-1748-4c2a-925c-370e22003b62.jpg?1562739890
 value=2.500
 rarity=C
 type=Creature

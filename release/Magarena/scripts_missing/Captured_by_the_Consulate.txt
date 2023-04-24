@@ -1,5 +1,5 @@
 name=Captured by the Consulate
-image=https://magiccards.info/scans/en/kld/8.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0c20018-4446-4c2b-bdc5-53fcf1fbc3bf.jpg?1576380783
 image_updated=2016-10-05
 value=2.500
 rarity=R

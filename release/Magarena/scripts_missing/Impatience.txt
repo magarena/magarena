@@ -1,5 +1,5 @@
 name=Impatience
-image=https://magiccards.info/scans/en/7e/197.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11443908-358f-4886-a2da-9b98002a3a3a.jpg?1562232834
 value=2.529
 rarity=R
 type=Enchantment

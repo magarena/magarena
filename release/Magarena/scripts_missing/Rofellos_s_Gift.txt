@@ -1,5 +1,5 @@
 name=Rofellos's Gift
-image=https://magiccards.info/scans/en/ud/119.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a41347ba-b2e3-4d7e-8018-e6fd30243559.jpg?1587857501
 value=3.047
 rarity=C
 type=Sorcery

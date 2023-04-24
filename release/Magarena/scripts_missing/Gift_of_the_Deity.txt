@@ -1,5 +1,5 @@
 name=Gift of the Deity
-image=https://magiccards.info/scans/en/eve/122.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee2dba5c-2f00-4a44-9093-3b845a8bf552.jpg?1562945174
 value=3.321
 rarity=C
 type=Enchantment

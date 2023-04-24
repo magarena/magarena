@@ -1,5 +1,5 @@
 name=Tin Street Hooligan
-image=https://magiccards.info/scans/en/gp/78.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad525bb3-15fd-4887-a3e7-0a036258dcc7.jpg?1593272393
 value=4.256
 rarity=C
 type=Creature

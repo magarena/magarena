@@ -1,5 +1,5 @@
 name=Rock Hydra
-image=https://magiccards.info/scans/en/rv/172.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28ab1823-e11e-48ae-8406-e025af32f407.jpg?1562904642
 value=3.865
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Knight of the Holy Nimbus
-image=https://magiccards.info/scans/en/ts/26.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4ac76c0-54ce-41b2-9000-e21eecaf7e99.jpg?1619393032
 value=4.173
 rarity=U
 type=Creature

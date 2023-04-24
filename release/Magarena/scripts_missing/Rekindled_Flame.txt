@@ -1,5 +1,5 @@
 name=Rekindled Flame
-image=https://magiccards.info/scans/en/eve/61.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/131c6377-4ed4-4a76-a9cb-be7ad17d76fd.jpg?1562899037
 value=3.698
 rarity=R
 type=Sorcery

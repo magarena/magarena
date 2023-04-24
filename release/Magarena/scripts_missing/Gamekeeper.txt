@@ -1,5 +1,5 @@
 name=Gamekeeper
-image=https://magiccards.info/scans/en/c16/151.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4ddb801-06a5-4562-b691-ccf9b55bb064.jpg?1562415995
 image_updated=2017-08-17
 value=3.875
 rarity=U

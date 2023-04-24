@@ -1,5 +1,5 @@
 name=Violent Eruption
-image=https://magiccards.info/scans/en/tr/117.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/419e6697-89ab-49f1-a867-8f86f001c80c.jpg?1568004481
 value=4.148
 rarity=U
 type=Instant

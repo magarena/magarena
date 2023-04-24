@@ -1,5 +1,5 @@
 name=World at War
-image=https://magiccards.info/scans/en/roe/172.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a47a05ad-fe86-481e-b770-e1760be4f852.jpg?1562706935
 value=4.067
 rarity=R
 type=Sorcery

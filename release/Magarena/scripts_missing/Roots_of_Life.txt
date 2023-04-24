@@ -1,5 +1,5 @@
 name=Roots of Life
-image=https://magiccards.info/scans/en/mr/135.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26724a51-87dd-4159-b012-71598e4cf5eb.jpg?1562718319
 value=3.757
 rarity=U
 type=Enchantment

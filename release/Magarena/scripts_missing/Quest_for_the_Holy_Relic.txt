@@ -1,5 +1,5 @@
 name=Quest for the Holy Relic
-image=https://magiccards.info/scans/en/zen/33.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00d6b8bb-ec11-4ded-a7fc-fa4ea0bb96cc.jpg?1562609297
 value=3.672
 rarity=U
 type=Enchantment

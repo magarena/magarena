@@ -1,5 +1,5 @@
 name=Mind Extraction
-image=https://magiccards.info/scans/en/ap/42.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d77ddcc-e66b-4036-8a55-ec42953918d1.jpg?1562924589
 value=2.867
 rarity=C
 type=Sorcery

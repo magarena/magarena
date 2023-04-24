@@ -1,5 +1,5 @@
 name=Forgotten Lore
-image=https://magiccards.info/scans/en/ia/125.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b45aad3-bc82-46f3-8032-8bfcbd6a007a.jpg?1562868547
 value=3.433
 rarity=U
 type=Sorcery

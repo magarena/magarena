@@ -1,5 +1,5 @@
 name=Painted Bluffs
-image=https://magiccards.info/scans/en/akh/246.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b373131-2a1d-4710-8a11-c1b366a174d4.jpg?1580954475
 value=2.500
 rarity=C
 type=Land

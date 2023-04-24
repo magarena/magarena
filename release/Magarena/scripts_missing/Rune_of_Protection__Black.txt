@@ -1,5 +1,5 @@
 name=Rune of Protection: Black
-image=https://magiccards.info/scans/en/us/36.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f69050b-c54d-43f2-8348-2801c365dc4c.jpg?1562908178
 value=3.200
 rarity=C
 type=Enchantment

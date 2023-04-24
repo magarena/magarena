@@ -1,5 +1,5 @@
 name=Bludgeon Brawl
-image=https://magiccards.info/scans/en/nph/80.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a30fa96d-64d1-423e-a62e-d43453ea838d.jpg?1562880368
 value=3.191
 rarity=R
 type=Enchantment

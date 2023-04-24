@@ -1,5 +1,5 @@
 name=Garruk Wildspeaker
-image=https://magiccards.info/scans/en/cmd/157.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b56c367-7ac8-4541-9f2e-1fdc9c5aecdc.jpg?1562920293
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

@@ -1,5 +1,5 @@
 name=Chromatic Armor
-image=https://magiccards.info/scans/en/ia/361.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2657e85b-8f77-41fa-9df2-233443efef43.jpg?1562902156
 value=2.839
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Curse of Thirst
-image=https://magiccards.info/scans/en/dka/57.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a23ed5d1-44dc-4733-9e01-65fbc5dc02f2.jpg?1562933294
 value=2.173
 rarity=U
 type=Enchantment

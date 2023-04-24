@@ -1,5 +1,5 @@
 name=Heavy Fog
-image=https://magiccards.info/scans/en/p3k/136.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/3932b9a6-1e55-4651-a740-920c4177c435.jpg?1562906950
 value=1.554
 rarity=U
 type=Instant

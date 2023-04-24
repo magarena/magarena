@@ -1,5 +1,5 @@
 name=Carrion Wurm
-image=https://magiccards.info/scans/en/tr/55.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37c2b228-94c0-4e84-ad6d-80b170bb6c0c.jpg?1562629238
 value=3.178
 rarity=U
 type=Creature

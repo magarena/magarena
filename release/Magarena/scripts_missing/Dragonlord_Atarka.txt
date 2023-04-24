@@ -1,5 +1,5 @@
 name=Dragonlord Atarka
-image=https://magiccards.info/scans/en/dtk/216.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce0c3b45-cf1d-4d85-9fe3-fb26b4b15dfd.jpg?1562793278
 value=2.500
 rarity=M
 type=Legendary,Creature

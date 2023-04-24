@@ -1,5 +1,5 @@
 name=Consulate Surveillance
-image=https://magiccards.info/scans/en/kld/10.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72c92238-7765-48ee-a799-9e8b68ec118d.jpg?1576380805
 image_updated=2016-10-05
 value=2.500
 rarity=U

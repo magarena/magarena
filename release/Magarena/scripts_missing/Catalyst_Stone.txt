@@ -1,5 +1,5 @@
 name=Catalyst Stone
-image=https://magiccards.info/scans/en/od/297.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aaca85d4-b4c2-4adc-a0f9-26339bacfd92.jpg?1630772029
 value=3.902
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Awakened Amalgam
-image=https://magiccards.info/scans/en/rix/175.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d24b14ea-04f0-4d4b-970e-efc65d64945e.jpg?1555040989
 value=2.500
 rarity=R
 type=Artifact,Creature

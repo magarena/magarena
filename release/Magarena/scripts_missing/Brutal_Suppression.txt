@@ -1,5 +1,5 @@
 name=Brutal Suppression
-image=https://magiccards.info/scans/en/pr/85.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17b3725b-924d-4137-9078-1a28f06c84fa.jpg?1562899495
 value=2.200
 rarity=U
 type=Enchantment

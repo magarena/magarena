@@ -1,5 +1,5 @@
 name=Painful Memories
-image=https://magiccards.info/scans/en/6e/147.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdec2ddc-3a91-4872-b4c0-e75af6cbb184.jpg?1562822282
 value=3.000
 rarity=C
 type=Sorcery

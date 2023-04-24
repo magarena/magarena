@@ -1,5 +1,5 @@
 name=Springleaf Drum
-image=https://magiccards.info/scans/en/lw/261.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3b3869b-6da1-4b01-a2e7-2018d478b6e5.jpg?1599709959
 value=3.767
 rarity=C
 type=Artifact

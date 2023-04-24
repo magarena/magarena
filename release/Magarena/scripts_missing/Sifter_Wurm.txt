@@ -1,5 +1,5 @@
 name=Sifter Wurm
-image=https://magiccards.info/scans/en/hou/135.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/492ff217-1bf6-4942-8d2f-8ddd71da683f.jpg?1608910905
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Deep Water
-image=https://magiccards.info/scans/en/dk/22.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dd6a230-6bc0-499c-b7fd-4aaa2569f98f.jpg?1562932297
 value=1.808
 rarity=C
 type=Enchantment

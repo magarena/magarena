@@ -1,5 +1,5 @@
 name=Magma Jet
-image=https://magiccards.info/scans/en/mm3/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2975ce11-589a-4da8-a016-854bbaeb869c.jpg?1601078335
 image_updated=2017-08-08
 value=2.500
 rarity=C

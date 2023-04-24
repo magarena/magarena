@@ -1,5 +1,5 @@
 name=Warkite Marauder
-image=https://magiccards.info/scans/en/rix/60.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/802ff9cf-f739-40cb-8974-77f6850150eb.jpg?1555040094
 value=2.500
 rarity=R
 type=Creature

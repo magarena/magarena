@@ -1,5 +1,5 @@
 name=Epiphany at the Drownyard
-image=https://magiccards.info/scans/en/soi/59.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64b44364-8f83-4dcf-8458-0fd54a698524.jpg?1576384049
 value=2.500
 rarity=R
 type=Instant

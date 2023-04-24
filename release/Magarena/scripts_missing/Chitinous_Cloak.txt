@@ -1,5 +1,5 @@
 name=Chitinous Cloak
-image=https://magiccards.info/scans/en/ogw/163.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15e54603-af67-497f-afe0-88cfa4d00095.jpg?1562899405
 image_updated=2016-02-29
 value=2.500
 rarity=U

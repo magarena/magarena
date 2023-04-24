@@ -1,5 +1,5 @@
 name=Scroll Rack
-image=https://magiccards.info/scans/en/tp/298.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfaaa58d-89bb-4cb3-96a6-b480e6f6954e.jpg?1608911671
 image_updated=2016-01-09
 value=4.585
 rarity=R

@@ -1,5 +1,5 @@
 name=Convulsing Licid
-image=https://magiccards.info/scans/en/sh/77.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5e50a1d-b9f5-4a03-a1c2-ca45ace53a52.jpg?1562597381
 value=2.889
 rarity=U
 type=Creature

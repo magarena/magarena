@@ -1,5 +1,5 @@
 name=Stain the Mind
-image=https://magiccards.info/scans/en/m15/117.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7d2b046-59bc-4e39-94ce-981179307bd3.jpg?1562794132
 value=2.333
 rarity=R
 type=Sorcery

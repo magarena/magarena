@@ -1,5 +1,5 @@
 name=Dwarven Song
-image=https://magiccards.info/scans/en/lg/141.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29a50f72-9524-4440-9380-9d3e0b693351.jpg?1562858231
 value=2.240
 rarity=U
 type=Instant

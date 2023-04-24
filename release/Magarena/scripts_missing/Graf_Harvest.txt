@@ -1,5 +1,5 @@
 name=Graf Harvest
-image=https://magiccards.info/scans/en/emn/90.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbc17697-9db9-41d4-aacf-b2f2e6ff80cf.jpg?1576384322
 image_updated=2016-09-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Energy Tap
-image=https://magiccards.info/scans/en/4e/69.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f67692d-9df6-4841-a36b-26c28110b63b.jpg?1559604235
 value=4.160
 rarity=C
 type=Sorcery

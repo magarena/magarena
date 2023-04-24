@@ -1,5 +1,5 @@
 name=Eater of Days
-image=https://magiccards.info/scans/en/ds/120.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef6870db-8aca-4aee-8e4d-c56a7d8dc242.jpg?1562640398
 value=3.646
 rarity=R
 type=Artifact,Creature

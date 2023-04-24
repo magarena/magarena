@@ -1,5 +1,5 @@
 name=Marshaling the Troops
-image=https://magiccards.info/scans/en/p3k/141.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56e4df87-7908-4274-a07f-81d42be89f18.jpg?1562256539
 value=3.765
 rarity=R
 type=Sorcery

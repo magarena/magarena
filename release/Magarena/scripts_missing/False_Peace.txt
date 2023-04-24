@@ -1,5 +1,5 @@
 name=False Peace
-image=https://magiccards.info/scans/en/st/16.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a07b620-6702-4c24-a6bb-03167c64be30.jpg?1562873585
 value=3.571
 rarity=U
 type=Sorcery

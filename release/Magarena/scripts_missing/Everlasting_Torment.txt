@@ -1,5 +1,5 @@
 name=Everlasting Torment
-image=https://magiccards.info/scans/en/c16/233.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28f857d3-661b-45cd-a8d3-65b9ac0a34c8.jpg?1562392747
 image_updated=2017-08-17
 value=4.043
 rarity=R

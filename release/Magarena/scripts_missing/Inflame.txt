@@ -1,5 +1,5 @@
 name=Inflame
-image=https://magiccards.info/scans/en/ds/64.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1efad9a-2fcf-4045-8105-bf9f5e79d12c.jpg?1562640129
 value=3.271
 rarity=C
 type=Instant

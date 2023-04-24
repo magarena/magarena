@@ -1,5 +1,5 @@
 name=Stir the Pride
-image=https://magiccards.info/scans/en/mma/30.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e01c926-bd9a-4d2f-b9fc-452584d056d9.jpg?1561966860
 value=3.143
 rarity=U
 type=Instant

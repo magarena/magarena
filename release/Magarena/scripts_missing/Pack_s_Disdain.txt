@@ -1,5 +1,5 @@
 name=Pack's Disdain
-image=https://magiccards.info/scans/en/mt/73.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79713cf7-2715-44cc-9f15-4c809b82efb6.jpg?1562879411
 value=2.871
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Boros Signet
-image=https://magiccards.info/scans/en/mm3/217.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2ae6081-1876-42ea-a6f8-d18dbe55c4c4.jpg?1608917766
 image_updated=2017-08-08
 value=3.538
 rarity=U

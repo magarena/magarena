@@ -1,5 +1,5 @@
 name=Goblin Flectomancer
-image=https://magiccards.info/scans/en/gp/116.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8170c05b-826c-4879-b202-29eec6f955ea.jpg?1593272685
 value=3.837
 rarity=U
 type=Creature

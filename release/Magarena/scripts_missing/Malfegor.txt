@@ -1,5 +1,5 @@
 name=Malfegor
-image=https://magiccards.info/scans/en/ima/205.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/010a4b07-c2d5-433e-9898-6e148104e9e0.jpg?1562845263
 image_updated=2017-04-12
 value=3.263
 rarity=R

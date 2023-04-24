@@ -1,5 +1,5 @@
 name=Phyrexian Totem
-image=https://magiccards.info/scans/en/ts/261.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31593a02-d026-4108-82e0-21ad5ff8c890.jpg?1562904134
 image_updated=2017-01-03
 value=3.938
 rarity=U

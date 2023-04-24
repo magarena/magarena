@@ -1,5 +1,5 @@
 name=Academy Researchers
-image=https://magiccards.info/scans/en/10e/63.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b62ca800-ec24-476e-b56f-834eef9622a9.jpg?1562553915
 value=3.981
 rarity=U
 type=Creature

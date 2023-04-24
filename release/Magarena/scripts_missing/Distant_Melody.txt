@@ -1,5 +1,5 @@
 name=Distant Melody
-image=https://magiccards.info/scans/en/mt/32.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e64a8e02-9b2b-4f0b-a500-fe7fd947e608.jpg?1682208741
 value=3.625
 rarity=C
 type=Sorcery

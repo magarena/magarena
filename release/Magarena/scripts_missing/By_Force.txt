@@ -1,5 +1,5 @@
 name=By Force
-image=https://magiccards.info/scans/en/akh/123.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66cdfdb2-b47f-446d-9850-8581bd1d806c.jpg?1543675516
 value=2.500
 rarity=U
 type=Sorcery

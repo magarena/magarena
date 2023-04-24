@@ -1,5 +1,5 @@
 name=Feast on the Fallen
-image=https://magiccards.info/scans/en/m15/96.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d96a9227-14ce-4d35-b5e6-0d0c657207c0.jpg?1562795188
 value=2.429
 rarity=U
 type=Enchantment

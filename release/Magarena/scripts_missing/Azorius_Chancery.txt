@@ -1,5 +1,5 @@
 name=Azorius Chancery
-image=https://magiccards.info/scans/en/ima/232.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7084fc02-8941-4a4f-805d-3c1625cf1d58.jpg?1673149461
 image_updated=2017-04-12
 value=2.500
 rarity=U

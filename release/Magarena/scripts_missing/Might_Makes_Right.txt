@@ -1,5 +1,5 @@
 name=Might Makes Right
-image=https://magiccards.info/scans/en/m15/156.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75c63c02-a75b-4880-b9fa-6f4bcf90ede5.jpg?1562789243
 value=2.083
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Imperiosaur
-image=https://magiccards.info/scans/en/mma/148.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f189aaf0-474a-4701-9bda-e67dc057e347.jpg?1619398198
 value=3.812
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sulfur Vent
-image=https://magiccards.info/scans/en/in/328.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22c66ed6-55fb-4c65-aac4-26d9cc3053b8.jpg?1562901960
 value=3.192
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Reckless Spite
-image=https://magiccards.info/scans/en/cns/123.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c39aec6-5186-4329-80a1-52778f1d4fea.jpg?1625193312
 value=4.417
 rarity=U
 type=Instant

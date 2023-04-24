@@ -1,5 +1,5 @@
 name=Greenweaver Druid
-image=https://magiccards.info/scans/en/zen/164.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/747099f7-ce5b-4366-a8a4-f3d80100f66e.jpg?1562613401
 image_updated=2016-12-04
 value=3.480
 rarity=U

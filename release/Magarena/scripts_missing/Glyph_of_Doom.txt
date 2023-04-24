@@ -1,5 +1,5 @@
 name=Glyph of Doom
-image=https://magiccards.info/scans/en/lg/14.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/332bfce9-052d-42e9-a407-4a1dd59e0f2a.jpg?1587885392
 value=2.368
 rarity=C
 type=Instant

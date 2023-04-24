@@ -1,5 +1,5 @@
 name=Cenn's Tactician
-image=https://magiccards.info/scans/en/mt/5.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d998c949-4791-477f-ab8d-e625199623ad.jpg?1562881769
 value=3.753
 rarity=U
 type=Creature

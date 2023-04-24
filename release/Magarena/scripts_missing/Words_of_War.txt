@@ -1,5 +1,5 @@
 name=Words of War
-image=https://magiccards.info/scans/en/on/244.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2593a6a6-dc21-4742-acb8-f7092931b1ce.jpg?1562903864
 value=3.700
 rarity=R
 type=Enchantment

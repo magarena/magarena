@@ -1,5 +1,5 @@
 name=Metrognome
-image=https://magiccards.info/scans/en/us/301.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d71f153d-2d07-4a8a-b725-747bb96afe00.jpg?1562940479
 value=3.250
 rarity=R
 type=Artifact

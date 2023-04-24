@@ -1,5 +1,5 @@
 name=Artificial Evolution
-image=https://magiccards.info/scans/en/on/67.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f46894d1-2503-43fa-938e-7bbf19101d13.jpg?1562952988
 value=4.292
 rarity=R
 type=Instant

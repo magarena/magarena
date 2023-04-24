@@ -1,5 +1,5 @@
 name=Mindbender Spores
-image=https://magiccards.info/scans/en/mr/127.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f41066eb-be5e-4a6d-9156-64f5e56c7ab3.jpg?1562722415
 value=2.958
 rarity=R
 type=Creature

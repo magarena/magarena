@@ -1,5 +1,5 @@
 name=Mutant's Prey
-image=https://magiccards.info/scans/en/dgm/45.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9e32d47-2796-4eac-b373-a93506d8d6b7.jpg?1562935704
 value=3.359
 rarity=C
 type=Instant

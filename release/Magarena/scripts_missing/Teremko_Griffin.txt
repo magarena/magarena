@@ -1,5 +1,5 @@
 name=Teremko Griffin
-image=https://magiccards.info/scans/en/mr/247.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96267012-24da-43ae-97af-69ca3d7704f8.jpg?1596298059
 value=2.875
 rarity=C
 type=Creature

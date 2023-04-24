@@ -1,5 +1,5 @@
 name=Twin Bolt
-image=https://magiccards.info/scans/en/cn2/173.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61048f40-0e8c-44af-81a5-a34b6f1adea2.jpg?1576382956
 image_updated=2017-08-29
 value=2.500
 rarity=C

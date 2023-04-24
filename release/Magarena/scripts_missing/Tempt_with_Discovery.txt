@@ -1,5 +1,5 @@
 name=Tempt with Discovery
-image=https://magiccards.info/scans/en/c16/170.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79248b68-4fab-46da-ab15-5c71c1f68d4b.jpg?1568004683
 image_updated=2017-01-11
 value=3.860
 rarity=R

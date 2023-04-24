@@ -1,5 +1,5 @@
 name=Collective Defiance
-image=https://magiccards.info/scans/en/emn/123.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8960883f-3813-412b-9a5b-f8cf8d566fac.jpg?1576384546
 image_updated=2016-09-05
 value=2.500
 rarity=R

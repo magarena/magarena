@@ -1,5 +1,5 @@
 name=Entangler
-image=https://magiccards.info/scans/en/pr/7.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecc20785-4512-4ef6-8f62-928482cb585f.jpg?1562939390
 value=3.894
 rarity=U
 type=Enchantment

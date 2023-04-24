@@ -1,5 +1,5 @@
 name=Benefactor's Draught
-image=https://magiccards.info/scans/en/c16/21.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e40f3dfb-3c5d-468a-9e0e-610ad3e11787.jpg?1562423207
 image_updated=2016-12-28
 value=2.500
 rarity=R

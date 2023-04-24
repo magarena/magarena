@@ -1,5 +1,5 @@
 name=Firespout
-image=https://magiccards.info/scans/en/cmd/199.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02e7f54e-268d-4390-b9d7-3a815f1048b5.jpg?1592714060
 value=2.500
 rarity=U
 type=Sorcery

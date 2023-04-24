@@ -1,5 +1,5 @@
 name=Tsabo's Assassin
-image=https://magiccards.info/scans/en/in/128.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0047302d-4e3d-4327-9bb2-ecd5b00b00e3.jpg?1562895043
 value=3.471
 rarity=R
 type=Creature

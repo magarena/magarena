@@ -1,5 +1,5 @@
 name=Crashing Boars
-image=https://magiccards.info/scans/en/ex/108.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e264adbc-1c52-4207-b2e6-0dd76a58f2d6.jpg?1562431773
 value=2.500
 rarity=U
 type=Creature

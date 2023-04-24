@@ -1,5 +1,5 @@
 name=Hisoka's Guard
-image=https://magiccards.info/scans/en/chk/68.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d7aec86-7b12-4025-af06-1c1928e56c19.jpg?1562759884
 value=2.577
 rarity=C
 type=Creature

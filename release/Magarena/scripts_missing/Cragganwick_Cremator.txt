@@ -1,5 +1,5 @@
 name=Cragganwick Cremator
-image=https://magiccards.info/scans/en/shm/87.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b13d612-f5d4-4423-99bc-359c47a8aa99.jpg?1599706278
 value=3.538
 rarity=R
 type=Creature

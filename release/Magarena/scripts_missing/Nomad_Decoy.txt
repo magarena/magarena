@@ -1,5 +1,5 @@
 name=Nomad Decoy
-image=https://magiccards.info/scans/en/od/37.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9ffef7c6-e05b-4bef-84aa-8df10be110af.jpg?1562924884
 value=3.182
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Scatter the Seeds
-image=https://magiccards.info/scans/en/mm2/159.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b28c2a8-ee7d-4eea-8046-a47e81ddd28d.jpg?1562263313
 value=2.500
 rarity=C
 type=Instant

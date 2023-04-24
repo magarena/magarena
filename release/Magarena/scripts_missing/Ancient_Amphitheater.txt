@@ -1,5 +1,5 @@
 name=Ancient Amphitheater
-image=https://magiccards.info/scans/en/lw/266.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c68137c5-c2f9-4b0d-ac4b-12c519854166.jpg?1562276010
 image_updated=2016-02-29
 value=3.628
 rarity=R

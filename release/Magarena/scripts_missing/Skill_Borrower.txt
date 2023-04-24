@@ -1,5 +1,5 @@
 name=Skill Borrower
-image=https://magiccards.info/scans/en/ala/56.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac7ac7c8-8e01-4f80-a3fa-d533cb594d7c.jpg?1562707691
 value=3.861
 rarity=R
 type=Artifact,Creature

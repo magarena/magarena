@@ -1,5 +1,5 @@
 name=Sorin, Grim Nemesis
-image=https://magiccards.info/scans/en/soi/251.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2933144-c931-498a-9e91-f5165873c3b7.jpg?1576385388
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

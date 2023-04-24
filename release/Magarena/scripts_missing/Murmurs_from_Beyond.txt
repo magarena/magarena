@@ -1,5 +1,5 @@
 name=Murmurs from Beyond
-image=https://magiccards.info/scans/en/cmd/53.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9a38381-5fce-4192-a3f4-7bba3b522ea4.jpg?1592713056
 value=2.532
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Caged Sun
-image=https://magiccards.info/scans/en/c14/233.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfe6f9ec-3b7f-4c11-acd1-440e14217e5d.jpg?1562276087
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Guardian Angel
-image=https://magiccards.info/scans/en/rv/205.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/071ca80b-62b4-40e6-81c6-fc5bd9019354.jpg?1559592919
 value=2.655
 rarity=C
 type=Instant

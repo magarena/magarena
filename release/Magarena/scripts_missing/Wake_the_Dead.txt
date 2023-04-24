@@ -1,5 +1,5 @@
 name=Wake the Dead
-image=https://magiccards.info/scans/en/c14/31.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/842fb0f2-8a03-4b43-be41-dbc5b6509269.jpg?1561948856
 value=2.500
 rarity=R
 type=Instant

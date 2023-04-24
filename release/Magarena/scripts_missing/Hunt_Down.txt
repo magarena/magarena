@@ -1,5 +1,5 @@
 name=Hunt Down
-image=https://magiccards.info/scans/en/lw/218.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb783652-6450-4789-8ec1-b057b39c6a4b.jpg?1562368163
 value=2.108
 rarity=C
 type=Sorcery

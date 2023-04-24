@@ -1,5 +1,5 @@
 name=Enraging Licid
-image=https://magiccards.info/scans/en/tp/171.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb7bff44-36e1-4855-aa2d-5c7bd6bf6f10.jpg?1562057816
 value=3.062
 rarity=U
 type=Creature

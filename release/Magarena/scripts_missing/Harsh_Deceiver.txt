@@ -1,5 +1,5 @@
 name=Harsh Deceiver
-image=https://magiccards.info/scans/en/chk/11.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01e19753-b94b-458f-a51b-c8ec8fbec6c8.jpg?1562757414
 value=1.103
 rarity=C
 type=Creature

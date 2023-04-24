@@ -1,5 +1,5 @@
 name=Possessed Centaur
-image=https://magiccards.info/scans/en/tr/137.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/608e11b2-9636-48a0-8705-f5ce3bc98117.jpg?1562629992
 value=3.774
 rarity=R
 type=Creature

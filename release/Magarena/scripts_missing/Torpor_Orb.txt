@@ -1,5 +1,5 @@
 name=Torpor Orb
-image=https://magiccards.info/scans/en/nph/162.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/953610f6-ea96-4e71-969f-50ecac09c091.jpg?1562879912
 value=4.323
 rarity=R
 type=Artifact

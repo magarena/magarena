@@ -1,5 +1,5 @@
 name=Reincarnation
-image=https://magiccards.info/scans/en/lg/115.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ee379cd-b3fb-487b-846c-eab02902de79.jpg?1562921751
 value=4.111
 rarity=U
 type=Instant

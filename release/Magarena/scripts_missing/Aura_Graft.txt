@@ -1,5 +1,5 @@
 name=Aura Graft
-image=https://magiccards.info/scans/en/10e/67.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55552a2b-1861-4235-a60d-ccabb4839d54.jpg?1562547914
 value=3.304
 rarity=U
 type=Instant

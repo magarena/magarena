@@ -1,5 +1,5 @@
 name=Diabolic Revelation
-image=https://magiccards.info/scans/en/m13/87.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/145d6d7b-1e87-47b7-baf3-d201458ad996.jpg?1562550672
 value=3.750
 rarity=R
 type=Sorcery

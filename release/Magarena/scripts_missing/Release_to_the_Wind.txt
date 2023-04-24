@@ -1,5 +1,5 @@
 name=Release to the Wind
-image=https://magiccards.info/scans/en/rix/46.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b4f72ef-3939-467c-8fe4-fd1c215f2b1e.jpg?1555039954
 value=2.500
 rarity=R
 type=Instant

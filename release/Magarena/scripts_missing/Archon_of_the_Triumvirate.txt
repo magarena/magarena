@@ -1,5 +1,5 @@
 name=Archon of the Triumvirate
-image=https://magiccards.info/scans/en/rtr/142.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf91d847-4a87-4a65-8d6d-e20d538c5cec.jpg?1562792505
 value=3.408
 rarity=R
 type=Creature

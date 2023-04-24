@@ -1,5 +1,5 @@
 name=Brave the Sands
-image=https://magiccards.info/scans/en/c16/60.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09ab8b60-cdb1-43a8-b180-b562bb89b5a1.jpg?1562272394
 image_updated=2017-08-17
 value=3.375
 rarity=U

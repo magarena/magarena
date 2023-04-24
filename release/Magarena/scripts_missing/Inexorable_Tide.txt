@@ -1,5 +1,5 @@
 name=Inexorable Tide
-image=https://magiccards.info/scans/en/mm2/49.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40441345-23ca-47e4-b349-bd13d986e41e.jpg?1562261170
 value=2.500
 rarity=R
 type=Enchantment

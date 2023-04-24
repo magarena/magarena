@@ -1,5 +1,5 @@
 name=Glamerdye
-image=https://magiccards.info/scans/en/eve/21.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/829a0a1c-761f-4a7f-b59a-c889d995f446.jpg?1562922519
 value=2.980
 rarity=R
 type=Instant

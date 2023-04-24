@@ -1,5 +1,5 @@
 name=Unholy Citadel
-image=https://magiccards.info/scans/en/lg/254.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9de534ff-fb48-4692-bd0f-dd237ca28502.jpg?1562860166
 value=1.633
 rarity=U
 type=Land

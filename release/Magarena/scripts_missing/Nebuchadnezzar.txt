@@ -1,5 +1,5 @@
 name=Nebuchadnezzar
-image=https://magiccards.info/scans/en/lg/285.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e50afb3-cf9f-4ce3-91ff-84f99860c181.jpg?1562901363
 value=3.939
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Mudhole
-image=https://magiccards.info/scans/en/od/208.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/993d31bc-7355-4dfc-ac4e-ababaa0dc529.jpg?1562923469
 value=1.110
 rarity=R
 type=Instant

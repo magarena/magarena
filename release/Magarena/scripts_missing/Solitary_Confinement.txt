@@ -1,5 +1,5 @@
 name=Solitary Confinement
-image=https://magiccards.info/scans/en/ju/24.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9031a7f-8821-443c-9c9d-552fb25b2101.jpg?1626100104
 value=4.149
 rarity=R
 type=Enchantment

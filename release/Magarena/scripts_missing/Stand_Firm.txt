@@ -1,5 +1,5 @@
 name=Stand Firm
-image=https://magiccards.info/scans/en/5dn/17.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b5b719d-9527-4df1-b51f-f1827952cab4.jpg?1592751865
 image_updated=2016-09-12
 value=3.462
 rarity=C

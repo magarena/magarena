@@ -1,5 +1,5 @@
 name=Rainbow Efreet
-image=https://magiccards.info/scans/en/vi/41.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d6f03a6-3665-40e4-ae68-640913972770.jpg?1562276977
 value=3.872
 rarity=R
 type=Creature

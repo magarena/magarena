@@ -1,5 +1,5 @@
 name=Rebound
-image=https://magiccards.info/scans/en/sh/40.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb6ca66e-1116-4739-8375-87af99e9bba5.jpg?1562597363
 value=3.417
 rarity=U
 type=Instant

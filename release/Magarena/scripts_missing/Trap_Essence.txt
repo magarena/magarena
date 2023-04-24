@@ -1,5 +1,5 @@
 name=Trap Essence
-image=https://magiccards.info/scans/en/ktk/209.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bb37bd9-10a0-48d5-87f0-23a03b5c1072.jpg?1562784208
 value=3.500
 rarity=R
 type=Instant

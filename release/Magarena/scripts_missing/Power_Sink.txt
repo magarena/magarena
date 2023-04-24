@@ -1,5 +1,5 @@
 name=Power Sink
-image=https://magiccards.info/scans/en/6e/87.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a6f3ce5-d4a5-4d7b-a7f9-b249c1d88e8f.jpg?1562926179
 value=4.000
 rarity=U
 type=Instant

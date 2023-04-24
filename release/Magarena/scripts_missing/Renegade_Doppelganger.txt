@@ -1,5 +1,5 @@
 name=Renegade Doppelganger
-image=https://magiccards.info/scans/en/roe/84.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6453040-38a3-4d3a-8e4b-51b72aa80186.jpg?1562710299
 value=3.536
 rarity=R
 type=Creature

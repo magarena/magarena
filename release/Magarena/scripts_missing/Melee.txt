@@ -1,5 +1,5 @@
 name=Melee
-image=https://magiccards.info/scans/en/ia/200.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b13a064d-bff4-4a48-a158-1b61951b0ac3.jpg?1562927981
 value=3.375
 rarity=U
 type=Instant

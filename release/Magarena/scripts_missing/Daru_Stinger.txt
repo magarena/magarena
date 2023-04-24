@@ -1,5 +1,5 @@
 name=Daru Stinger
-image=https://magiccards.info/scans/en/le/10.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff5866a4-f4c0-45bc-9b33-b77387441d34.jpg?1562946568
 value=3.162
 rarity=C
 type=Creature

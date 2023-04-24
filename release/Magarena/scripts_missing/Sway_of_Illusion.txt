@@ -1,5 +1,5 @@
 name=Sway of Illusion
-image=https://magiccards.info/scans/en/in/77.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff65e386-9aec-4deb-a4ec-d9a97bd87645.jpg?1562946589
 value=3.823
 rarity=U
 type=Instant

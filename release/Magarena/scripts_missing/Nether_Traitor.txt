@@ -1,5 +1,5 @@
 name=Nether Traitor
-image=https://magiccards.info/scans/en/ts/120.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f3482ec-8466-4680-bfdc-e1029c0fbe89.jpg?1619395794
 value=4.141
 rarity=R
 type=Creature

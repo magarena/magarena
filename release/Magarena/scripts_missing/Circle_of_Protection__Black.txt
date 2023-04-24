@@ -1,5 +1,5 @@
 name=Circle of Protection: Black
-image=https://magiccards.info/scans/en/9e/10.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edab2933-5970-4a17-ac00-abcd2c048fdc.jpg?1562743653
 value=3.272
 rarity=U
 type=Enchantment

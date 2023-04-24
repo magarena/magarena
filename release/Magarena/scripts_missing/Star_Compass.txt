@@ -1,5 +1,5 @@
 name=Star Compass
-image=https://magiccards.info/scans/en/ima/229.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c010712-7f42-4c55-9a63-aca2452aac05.jpg?1562852045
 image_updated=2017-04-12
 value=3.096
 rarity=C

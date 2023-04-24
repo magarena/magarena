@@ -1,5 +1,5 @@
 name=Aether Burst
-image=https://magiccards.info/scans/en/od/60.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d09ea4a-0d3a-40b8-be0f-a31693099c4f.jpg?1562906235
 image_updated=2016-09-27
 value=3.985
 rarity=C

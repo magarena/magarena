@@ -1,5 +1,5 @@
 name=Hollow Trees
-image=https://magiccards.info/scans/en/5e/422.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d6d30a4-a24e-4537-9230-bf6f57fbcd98.jpg?1562590631
 value=3.310
 rarity=R
 type=Land

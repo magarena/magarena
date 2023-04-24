@@ -1,5 +1,5 @@
 name=Predatory Advantage
-image=https://magiccards.info/scans/en/arb/58.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/595ae3af-cc28-407a-a045-a6d71cd6be60.jpg?1562641449
 value=2.878
 rarity=R
 type=Enchantment

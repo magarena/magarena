@@ -1,5 +1,5 @@
 name=Shadowblood Egg
-image=https://magiccards.info/scans/en/od/308.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/044bbf15-e71d-4f47-bac3-bba8021118bd.jpg?1562895861
 value=2.442
 rarity=U
 type=Artifact

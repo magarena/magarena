@@ -1,5 +1,5 @@
 name=Diaochan, Artful Beauty
-image=https://magiccards.info/scans/en/p3k/108.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6180c476-dadf-4c03-ab1e-639386bd4319.jpg?1562256557
 image_updated=2016-12-01
 value=3.500
 rarity=R

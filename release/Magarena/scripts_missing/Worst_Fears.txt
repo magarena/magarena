@@ -1,5 +1,5 @@
 name=Worst Fears
-image=https://magiccards.info/scans/en/jou/87.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f4e21ac-4f3e-4a3e-83c0-0a59a1b84020.jpg?1593095890
 value=3.133
 rarity=M
 type=Sorcery

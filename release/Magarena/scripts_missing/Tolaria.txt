@@ -1,5 +1,5 @@
 name=Tolaria
-image=https://magiccards.info/scans/en/lg/253.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d43c01b7-443d-4061-a934-6863d230c9b8.jpg?1616399923
 value=3.155
 rarity=U
 type=Legendary,Land

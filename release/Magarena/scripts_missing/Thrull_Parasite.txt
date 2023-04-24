@@ -1,5 +1,5 @@
 name=Thrull Parasite
-image=https://magiccards.info/scans/en/gtc/81.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c38dfb08-ab41-4759-9967-b5a25f18518a.jpg?1561844969
 value=3.978
 rarity=U
 type=Creature

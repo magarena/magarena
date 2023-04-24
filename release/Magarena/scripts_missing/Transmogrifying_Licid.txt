@@ -1,5 +1,5 @@
 name=Transmogrifying Licid
-image=https://magiccards.info/scans/en/ex/141.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a115563-81da-42f6-95c4-22ae7bb51a0f.jpg?1562087350
 value=3.197
 rarity=U
 type=Artifact,Creature

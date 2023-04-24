@@ -1,5 +1,5 @@
 name=Grudge Keeper
-image=https://magiccards.info/scans/en/cns/28.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf00b8d3-30bb-44b8-8531-4bfd018acc0c.jpg?1562866880
 value=3.500
 rarity=C
 type=Creature

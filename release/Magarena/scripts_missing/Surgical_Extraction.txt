@@ -1,5 +1,5 @@
 name=Surgical Extraction
-image=https://magiccards.info/scans/en/mm2/99.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e15d76ac-1c23-4503-8225-375ac2bf2fb6.jpg?1673147668
 value=2.500
 rarity=R
 type=Instant

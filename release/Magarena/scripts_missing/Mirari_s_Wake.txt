@@ -1,5 +1,5 @@
 name=Mirari's Wake
-image=https://magiccards.info/scans/en/cns/189.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/329f8f3d-2fe6-44fa-802f-0c56e3f9998e.jpg?1626100762
 value=4.167
 rarity=M
 type=Enchantment

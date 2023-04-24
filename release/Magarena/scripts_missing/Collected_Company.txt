@@ -1,5 +1,5 @@
 name=Collected Company
-image=https://magiccards.info/scans/en/dtk/177.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfa7b456-7e83-4587-a875-9b35fde318c2.jpg?1582117536
 value=2.500
 rarity=R
 type=Instant

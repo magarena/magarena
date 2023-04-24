@@ -1,5 +1,5 @@
 name=Thraben Foulbloods
-image=https://magiccards.info/scans/en/emn/108.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf0f72e0-1254-4bfb-b405-d64012dc171a.jpg?1576384441
 image_updated=2016-09-05
 value=2.500
 rarity=C

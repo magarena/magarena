@@ -1,5 +1,5 @@
 name=Gauntlets of Chaos
-image=https://magiccards.info/scans/en/5e/373.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ea1b001-1eb6-4bb9-b8f3-1aaea14a9a13.jpg?1562925095
 value=2.909
 rarity=R
 type=Artifact

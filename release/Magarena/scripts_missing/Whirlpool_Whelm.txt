@@ -1,5 +1,5 @@
 name=Whirlpool Whelm
-image=https://magiccards.info/scans/en/cmd/69.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ae39210-1556-41cc-a362-209fc4c3c032.jpg?1592713166
 value=2.210
 rarity=C
 type=Instant

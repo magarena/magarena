@@ -1,5 +1,5 @@
 name=Pull from the Deep
-image=https://magiccards.info/scans/en/jou/47.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a051b622-fa1d-4694-aef7-0fcdd7bff8d2.jpg?1593095509
 value=3.087
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Artisan's Sorrow
-image=https://magiccards.info/scans/en/ths/151.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4f38f7e-2369-48c9-9121-4b13c29ea869.jpg?1562825947
 value=2.879
 rarity=U
 type=Instant

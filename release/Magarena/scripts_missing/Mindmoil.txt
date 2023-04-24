@@ -1,5 +1,5 @@
 name=Mindmoil
-image=https://magiccards.info/scans/en/rav/135.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0ccc79f7-2f35-4daf-a0c2-775f5fa6c249.jpg?1598915729
 value=3.974
 rarity=R
 type=Enchantment

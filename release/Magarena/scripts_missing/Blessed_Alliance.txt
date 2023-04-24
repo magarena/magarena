@@ -1,5 +1,5 @@
 name=Blessed Alliance
-image=https://magiccards.info/scans/en/emn/13.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5805eab-9a32-4c0c-9015-7bdb74ad7634.jpg?1576383772
 image_updated=2016-09-05
 value=2.500
 rarity=U

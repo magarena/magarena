@@ -1,5 +1,5 @@
 name=Departed Deckhand
-image=https://magiccards.info/scans/en/m19/49.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48b3c3e3-151f-4f16-bb40-167978180bbc.jpg?1600724899
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Cloak of Invisibility
-image=https://magiccards.info/scans/en/mr/58.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f6e21e6-fb3e-49c1-b5a0-499faf66d279.jpg?1562718793
 value=3.112
 rarity=C
 type=Enchantment

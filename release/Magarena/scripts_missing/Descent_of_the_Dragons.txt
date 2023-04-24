@@ -1,5 +1,5 @@
 name=Descent of the Dragons
-image=https://magiccards.info/scans/en/dtk/133.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5ab919f3-5797-406b-ae1f-7a7c27739b2d.jpg?1562786809
 value=2.500
 rarity=M
 type=Sorcery

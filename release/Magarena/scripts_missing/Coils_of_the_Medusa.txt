@@ -1,5 +1,5 @@
 name=Coils of the Medusa
-image=https://magiccards.info/scans/en/wl/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/502bfb38-4a37-4053-af20-d5606ffc67c8.jpg?1562800799
 value=3.040
 rarity=C
 type=Enchantment

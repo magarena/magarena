@@ -1,5 +1,5 @@
 name=Tangle Angler
-image=https://magiccards.info/scans/en/som/128.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b678bd68-e866-4081-95f9-2bd93a84d400.jpg?1562822150
 value=3.573
 rarity=U
 type=Creature

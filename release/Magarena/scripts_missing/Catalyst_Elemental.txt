@@ -1,5 +1,5 @@
 name=Catalyst Elemental
-image=https://magiccards.info/scans/en/m19/132.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e83a678b-19d4-47a5-aa1c-c2437e5009c0.jpg?1562304846
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Agadeem Occultist
-image=https://magiccards.info/scans/en/wwk/48.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c592ef76-d612-4cfe-b906-0e63c44d36f8.jpg?1562295659
 value=3.513
 rarity=R
 type=Creature

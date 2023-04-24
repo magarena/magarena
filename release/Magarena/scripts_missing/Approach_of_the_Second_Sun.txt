@@ -1,5 +1,5 @@
 name=Approach of the Second Sun
-image=https://magiccards.info/scans/en/akh/4.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdf59a6e-7708-45a1-884d-d12e9f7b9ed9.jpg?1543674579
 value=2.500
 rarity=R
 type=Sorcery

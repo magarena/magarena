@@ -1,5 +1,5 @@
 name=Erithizon
-image=https://magiccards.info/scans/en/mm/244.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec4ea4e2-2102-4b99-bea5-6fc4203f2b26.jpg?1562383536
 value=2.138
 rarity=R
 type=Creature

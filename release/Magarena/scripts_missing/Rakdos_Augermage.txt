@@ -1,5 +1,5 @@
 name=Rakdos Augermage
-image=https://magiccards.info/scans/en/di/127.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5507ec6-430e-41bf-8ac8-42a79f11012d.jpg?1593273732
 value=3.684
 rarity=R
 type=Creature

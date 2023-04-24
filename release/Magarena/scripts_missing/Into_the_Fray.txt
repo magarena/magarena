@@ -1,5 +1,5 @@
 name=Into the Fray
-image=https://magiccards.info/scans/en/sok/106.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c99d116c-41c0-41af-9a68-9ac995f3000b.jpg?1562496063
 value=2.081
 rarity=C
 type=Instant

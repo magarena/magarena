@@ -1,5 +1,5 @@
 name=Maralen of the Mornsong
-image=https://magiccards.info/scans/en/mt/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba98d363-194b-4bc0-b9fe-987c498ab6fa.jpg?1562880995
 value=3.765
 rarity=R
 type=Legendary,Creature

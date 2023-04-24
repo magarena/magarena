@@ -1,5 +1,5 @@
 name=Bone Mask
-image=https://magiccards.info/scans/en/mr/260.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f46aea3-ea00-46c4-b207-522ceeeae68b.jpg?1562718312
 value=2.594
 rarity=R
 type=Artifact

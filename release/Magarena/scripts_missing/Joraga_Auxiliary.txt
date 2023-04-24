@@ -1,5 +1,5 @@
 name=Joraga Auxiliary
-image=https://magiccards.info/scans/en/ogw/154.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65d920b4-81ab-45be-b763-b6114b879357.jpg?1562915655
 image_updated=2016-02-29
 value=2.500
 rarity=U

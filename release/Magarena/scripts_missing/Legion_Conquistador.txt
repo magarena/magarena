@@ -1,5 +1,5 @@
 name=Legion Conquistador
-image=https://magiccards.info/scans/en/rix/11.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba197b31-97b8-447e-b8fd-3eefd5ccdc72.jpg?1555039713
 image_updated=2018-03-12
 value=2.500
 rarity=C

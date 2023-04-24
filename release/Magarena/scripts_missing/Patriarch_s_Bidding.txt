@@ -1,5 +1,5 @@
 name=Patriarch's Bidding
-image=https://magiccards.info/scans/en/on/161.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/317686d8-b762-4598-b74a-8b1fa6b899ba.jpg?1626100387
 value=4.298
 rarity=R
 type=Sorcery

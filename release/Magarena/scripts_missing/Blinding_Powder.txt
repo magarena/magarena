@@ -1,5 +1,5 @@
 name=Blinding Powder
-image=https://magiccards.info/scans/en/bok/153.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f097fbb8-0db5-4ceb-8972-dcd21b3fb4d5.jpg?1562880616
 value=3.032
 rarity=U
 type=Artifact

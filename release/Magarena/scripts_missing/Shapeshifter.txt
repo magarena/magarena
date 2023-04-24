@@ -1,5 +1,5 @@
 name=Shapeshifter
-image=https://magiccards.info/scans/en/5e/398.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f15f2638-3895-459a-84af-fb91de06c395.jpg?1562952313
 value=2.781
 rarity=U
 type=Artifact,Creature

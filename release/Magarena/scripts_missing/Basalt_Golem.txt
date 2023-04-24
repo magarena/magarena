@@ -1,5 +1,5 @@
 name=Basalt Golem
-image=https://magiccards.info/scans/en/mr/259.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5ff538f9-10b4-4327-aea6-a86759daf488.jpg?1562719741
 value=3.841
 rarity=U
 type=Artifact,Creature

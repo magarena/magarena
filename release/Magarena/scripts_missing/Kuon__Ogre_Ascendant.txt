@@ -1,5 +1,5 @@
 name=Kuon, Ogre Ascendant
-image=https://magiccards.info/scans/en/sok/78a.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41004bdf-8e09-4b2c-9e9c-26c25eac9854.jpg?1562493483
 value=3.103
 rarity=R
 type=Legendary,Creature

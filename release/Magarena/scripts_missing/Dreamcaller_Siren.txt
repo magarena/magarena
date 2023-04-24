@@ -1,5 +1,5 @@
 name=Dreamcaller Siren
-image=https://magiccards.info/scans/en/xln/54.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/548c92c8-1ae1-48b4-8cbe-aa18f59c1efb.jpg?1562555546
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Pursuit of Knowledge
-image=https://magiccards.info/scans/en/sh/110.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eaa577b1-2604-4065-a973-166521682a86.jpg?1562597837
 value=4.175
 rarity=R
 type=Enchantment

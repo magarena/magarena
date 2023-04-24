@@ -1,5 +1,5 @@
 name=Grid Monitor
-image=https://magiccards.info/scans/en/mi/183.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4ab6c59-cd0f-4c29-8e26-6882dca61fb7.jpg?1562157249
 value=2.671
 rarity=R
 type=Artifact,Creature

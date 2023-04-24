@@ -1,5 +1,5 @@
 name=Mercenary Informer
-image=https://magiccards.info/scans/en/pr/15.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98ee3f50-09d7-4960-8214-680a7299fa20.jpg?1562923404
 value=3.161
 rarity=R
 type=Creature

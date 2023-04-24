@@ -1,5 +1,5 @@
 name=Mammoth Harness
-image=https://magiccards.info/scans/en/hl/64.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5be67121-068c-4770-bc42-c081577a442c.jpg?1562587292
 value=1.299
 rarity=R
 type=Enchantment

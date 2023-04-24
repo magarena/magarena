@@ -1,5 +1,5 @@
 name=Exile into Darkness
-image=https://magiccards.info/scans/en/sok/67.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d6ac32c-9555-4408-8b18-c3098802b7ad.jpg?1562493688
 value=2.379
 rarity=U
 type=Sorcery

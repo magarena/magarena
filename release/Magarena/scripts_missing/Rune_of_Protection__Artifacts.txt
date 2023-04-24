@@ -1,5 +1,5 @@
 name=Rune of Protection: Artifacts
-image=https://magiccards.info/scans/en/us/35.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e18cce33-92be-4189-9f99-cb47bd617fd2.jpg?1562942567
 value=3.606
 rarity=U
 type=Enchantment

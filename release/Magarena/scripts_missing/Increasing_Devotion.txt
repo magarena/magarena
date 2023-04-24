@@ -1,5 +1,5 @@
 name=Increasing Devotion
-image=https://magiccards.info/scans/en/dka/11.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c786c28-1085-4b3e-9164-5fa3adfa5010.jpg?1591320068
 value=3.780
 rarity=R
 type=Sorcery

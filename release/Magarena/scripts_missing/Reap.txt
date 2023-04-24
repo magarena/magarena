@@ -1,5 +1,5 @@
 name=Reap
-image=https://magiccards.info/scans/en/tp/141.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/229f8a3d-d1a5-46d7-9b1b-e165397e6579.jpg?1562052809
 value=3.057
 rarity=U
 type=Instant

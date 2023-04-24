@@ -1,5 +1,5 @@
 name=Somberwald Sage
-image=https://magiccards.info/scans/en/avr/194.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/6090c799-6cc3-4fc3-b5e6-8920678c67c1.jpg?1637631258
 value=3.912
 rarity=R
 type=Creature

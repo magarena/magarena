@@ -1,5 +1,5 @@
 name=Oath of Liliana
-image=https://magiccards.info/scans/en/emn/99.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2028f577-e0fb-48dd-89c6-f4a000b0a881.jpg?1576384382
 image_updated=2016-09-05
 value=2.500
 rarity=R

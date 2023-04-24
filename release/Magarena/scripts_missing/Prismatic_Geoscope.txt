@@ -1,5 +1,5 @@
 name=Prismatic Geoscope
-image=https://magiccards.info/scans/en/c16/55.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02a992ad-8f34-41c5-b66e-d4ca659d0e27.jpg?1562386205
 image_updated=2016-12-28
 value=2.500
 rarity=R

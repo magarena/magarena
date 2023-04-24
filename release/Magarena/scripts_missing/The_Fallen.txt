@@ -1,5 +1,5 @@
 name=The Fallen
-image=https://magiccards.info/scans/en/dk/15.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49058733-6fd7-456f-a47b-10ebf7fb5232.jpg?1559592574
 value=3.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Pull from Eternity
-image=https://magiccards.info/scans/en/ts/35.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d218091-d218-41ad-b666-c8ab3de7160a.jpg?1562907702
 value=3.777
 rarity=U
 type=Instant

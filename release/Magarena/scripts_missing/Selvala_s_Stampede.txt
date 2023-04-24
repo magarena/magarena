@@ -1,5 +1,5 @@
 name=Selvala's Stampede
-image=https://magiccards.info/scans/en/cn2/71.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85d6e48e-3d26-4915-9739-25edbd80bdf1.jpg?1576382109
 image_updated=2016-09-05
 value=2.500
 rarity=R

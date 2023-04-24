@@ -1,5 +1,5 @@
 name=Golgari Brownscale
-image=https://magiccards.info/scans/en/rav/166.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e41f3323-f702-46a6-92db-33ec0afd75d2.jpg?1547517583
 value=3.000
 rarity=C
 type=Creature

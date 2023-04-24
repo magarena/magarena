@@ -1,5 +1,5 @@
 name=Trickery Charm
-image=https://magiccards.info/scans/en/on/119.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32a2ee45-7f1d-40a8-82b4-ab3b705417ea.jpg?1562906840
 value=3.472
 rarity=C
 type=Instant

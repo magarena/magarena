@@ -1,5 +1,5 @@
 name=Riftstone Portal
-image=https://magiccards.info/scans/en/ju/143.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92ece630-e484-4221-911f-e32048894f23.jpg?1562630998
 value=4.136
 rarity=U
 type=Land

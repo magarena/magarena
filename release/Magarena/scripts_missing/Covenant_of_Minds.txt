@@ -1,5 +1,5 @@
 name=Covenant of Minds
-image=https://magiccards.info/scans/en/cn2/105.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0df0e2eb-753a-4dd1-8b08-f741683e089d.jpg?1576382383
 image_updated=2017-08-29
 value=2.375
 rarity=R

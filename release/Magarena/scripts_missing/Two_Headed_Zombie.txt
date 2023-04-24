@@ -1,5 +1,5 @@
 name=Two-Headed Zombie
-image=https://magiccards.info/scans/en/m19/123.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cc5760e-8b27-4d37-9772-c9eda90b1d95.jpg?1562301203
 value=2.500
 rarity=C
 type=Creature

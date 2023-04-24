@@ -1,5 +1,5 @@
 name=Heart of Bogardan
-image=https://magiccards.info/scans/en/wl/106.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e30d025-1df9-4a08-b686-037e9cbf23a6.jpg?1562800751
 value=3.986
 rarity=R
 type=Enchantment

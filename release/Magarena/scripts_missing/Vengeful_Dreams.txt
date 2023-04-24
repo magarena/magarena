@@ -1,5 +1,5 @@
 name=Vengeful Dreams
-image=https://magiccards.info/scans/en/tr/21.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48bfe8b2-cc98-4430-b576-085163bdf0b6.jpg?1574250450
 value=3.909
 rarity=R
 type=Instant

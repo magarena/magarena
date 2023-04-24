@@ -1,5 +1,5 @@
 name=Clear the Land
-image=https://magiccards.info/scans/en/mm/235.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b87f3579-f314-4207-a02c-14e9cb269b47.jpg?1562382558
 value=3.750
 rarity=R
 type=Sorcery

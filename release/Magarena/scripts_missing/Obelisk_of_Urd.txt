@@ -1,5 +1,5 @@
 name=Obelisk of Urd
-image=https://magiccards.info/scans/en/m15/222.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c610beb6-6fd5-4230-ae74-240a005d5c8c.jpg?1604195713
 value=3.167
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=War Barge
-image=https://magiccards.info/scans/en/tsts/116.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c26771c-a1ec-4055-8df4-d5b49bfe5b1e.jpg?1562774934
 value=2.944
 rarity=U
 type=Artifact

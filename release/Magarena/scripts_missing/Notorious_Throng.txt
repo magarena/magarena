@@ -1,5 +1,5 @@
 name=Notorious Throng
-image=https://magiccards.info/scans/en/mt/45.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8be7edf-807a-4a7b-ab48-78f309997210.jpg?1604192660
 value=3.612
 rarity=R
 type=Tribal,Sorcery

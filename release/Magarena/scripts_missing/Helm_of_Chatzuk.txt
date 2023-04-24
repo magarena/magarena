@@ -1,5 +1,5 @@
 name=Helm of Chatzuk
-image=https://magiccards.info/scans/en/5e/376.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/9664a59d-182a-429b-a6f7-047b8b8e5ffe.jpg?1562592786
 value=2.424
 rarity=R
 type=Artifact

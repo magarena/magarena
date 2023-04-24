@@ -1,5 +1,5 @@
 name=Goblin Test Pilot
-image=https://magiccards.info/scans/en/dgm/74.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8dbb9aa-1bf8-447d-a96c-33e2248bfb01.jpg?1562926545
 value=2.167
 rarity=U
 type=Creature

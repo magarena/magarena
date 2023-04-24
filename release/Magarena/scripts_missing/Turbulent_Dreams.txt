@@ -1,5 +1,5 @@
 name=Turbulent Dreams
-image=https://magiccards.info/scans/en/tr/49.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d879226b-8ee3-4a48-b03a-d183594dc586.jpg?1562632265
 value=3.537
 rarity=R
 type=Sorcery

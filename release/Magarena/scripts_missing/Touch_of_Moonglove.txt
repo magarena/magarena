@@ -1,5 +1,5 @@
 name=Touch of Moonglove
-image=https://magiccards.info/scans/en/ori/123.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf659f2f-983c-4a62-a969-4176e5fbe193.jpg?1562039890
 image_updated=2015-11-05
 value=2.500
 rarity=C

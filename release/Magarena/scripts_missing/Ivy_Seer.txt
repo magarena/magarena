@@ -1,5 +1,5 @@
 name=Ivy Seer
-image=https://magiccards.info/scans/en/ud/110.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/018ad11c-1351-4eff-94ac-3926037d7247.jpg?1562443315
 value=1.706
 rarity=U
 type=Creature

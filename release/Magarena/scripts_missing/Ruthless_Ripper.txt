@@ -1,5 +1,5 @@
 name=Ruthless Ripper
-image=https://magiccards.info/scans/en/a25/107.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc78993c-ca67-43b3-a64d-ce0c3bc415bc.jpg?1562440260
 image_updated=2018-04-25
 value=2.500
 rarity=C

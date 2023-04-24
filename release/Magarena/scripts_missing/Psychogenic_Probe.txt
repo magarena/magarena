@@ -1,5 +1,5 @@
 name=Psychogenic Probe
-image=https://magiccards.info/scans/en/mi/231.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e83d1ed5-3a49-4cfa-bad2-e342ef28649e.jpg?1562161799
 value=3.744
 rarity=R
 type=Artifact

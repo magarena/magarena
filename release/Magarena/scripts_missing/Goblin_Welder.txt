@@ -1,5 +1,5 @@
 name=Goblin Welder
-image=https://magiccards.info/scans/en/c14/177.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17cd920a-de09-454a-a9da-c84512e3aff1.jpg?1562272459
 value=2.500
 rarity=R
 type=Creature

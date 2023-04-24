@@ -1,5 +1,5 @@
 name=Frost Breath
-image=https://magiccards.info/scans/en/m12/54.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/393fc485-d3c1-4826-933d-89f66df769d4.jpg?1594735496
 value=3.417
 rarity=C
 type=Instant

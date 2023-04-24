@@ -1,5 +1,5 @@
 name=Phosphorescent Feast
-image=https://magiccards.info/scans/en/eve/72.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/8316eb28-9e58-4194-a0c6-cad32bddc391.jpg?1562922637
 value=2.019
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Skulduggery
-image=https://magiccards.info/scans/en/xln/123.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba30343b-1637-490f-810e-d614219789e3.jpg?1575629239
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Kiora, Master of the Depths
-image=https://magiccards.info/scans/en/bfz/213.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b63c228-3265-4029-9bc0-36b3e31dfb53.jpg?1562912680
 image_updated=2015-11-08
 value=2.500
 rarity=M

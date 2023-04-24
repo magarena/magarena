@@ -1,5 +1,5 @@
 name=Underworld Cerberus
-image=https://magiccards.info/scans/en/ths/208.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a078c3d-88db-4459-9667-ce610ae2f660.jpg?1562816806
 value=3.655
 rarity=M
 type=Creature

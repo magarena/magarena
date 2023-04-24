@@ -1,5 +1,5 @@
 name=Terashi's Cry
-image=https://magiccards.info/scans/en/chk/47.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/7176139f-8a9a-4ee4-a56d-672fd09390e4.jpg?1562761495
 value=2.012
 rarity=C
 type=Sorcery

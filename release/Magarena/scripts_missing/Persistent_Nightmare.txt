@@ -1,5 +1,5 @@
 name=Persistent Nightmare
-image=https://magiccards.info/scans/en/soi/88b.jpg
+image=https://cards.scryfall.io/border_crop/back/e/6/e630fc56-a96f-4abf-be8d-f0f40d5a9edf.jpg?1576384252
 value=2.500
 rarity=M
 type=Creature

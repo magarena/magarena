@@ -1,5 +1,5 @@
 name=Rimehorn Aurochs
-image=https://magiccards.info/scans/en/cs/118.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3844b3f8-2d42-4265-b2dd-fa888492efff.jpg?1593275450
 value=2.652
 rarity=U
 type=Snow,Creature

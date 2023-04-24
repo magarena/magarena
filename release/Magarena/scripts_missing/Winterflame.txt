@@ -1,5 +1,5 @@
 name=Winterflame
-image=https://magiccards.info/scans/en/ktk/213.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8924ab9-fa55-4348-b67d-b2b9e48a357a.jpg?1562792511
 value=2.750
 rarity=U
 type=Instant

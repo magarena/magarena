@@ -1,5 +1,5 @@
 name=Angel of Serenity
-image=https://magiccards.info/scans/en/rtr/1.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60301fbc-1bd4-4c37-ad19-660d625a090a.jpg?1625192849
 image_updated=2016-02-29
 value=3.990
 rarity=M

@@ -1,5 +1,5 @@
 name=Leshrac's Sigil
-image=https://magiccards.info/scans/en/ia/32.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad5ba7ee-d6df-4b62-a8a1-c81e6fca392a.jpg?1562927306
 value=3.632
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Crag Saurian
-image=https://magiccards.info/scans/en/mm/185.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f0907a5-938e-4ef4-aa85-e7c1ae4317a6.jpg?1562379449
 value=2.145
 rarity=R
 type=Creature

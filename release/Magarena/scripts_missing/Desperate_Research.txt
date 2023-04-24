@@ -1,5 +1,5 @@
 name=Desperate Research
-image=https://magiccards.info/scans/en/in/100.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a42ac7e-4a27-488c-a2e7-338b18103b02.jpg?1562916353
 value=3.672
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Chromium, the Mutable
-image=https://magiccards.info/scans/en/m19/214.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50c1de2c-1acc-47c8-9b5e-a9dae3da8a49.jpg?1562302164
 value=2.500
 rarity=M
 type=Legendary,Creature

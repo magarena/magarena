@@ -1,5 +1,5 @@
 name=Merfolk Observer
-image=https://magiccards.info/scans/en/roe/76.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16fa8c72-320b-4a7e-9181-bad7ec0c865c.jpg?1562701505
 value=2.274
 rarity=C
 type=Creature

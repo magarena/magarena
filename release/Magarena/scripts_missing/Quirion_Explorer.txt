@@ -1,5 +1,5 @@
 name=Quirion Explorer
-image=https://magiccards.info/scans/en/c16/160.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d56bae65-1811-4428-93f4-60c36ceee715.jpg?1562421471
 image_updated=2017-08-17
 value=3.481
 rarity=C

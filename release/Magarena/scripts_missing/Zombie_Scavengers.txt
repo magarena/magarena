@@ -1,5 +1,5 @@
 name=Zombie Scavengers
-image=https://magiccards.info/scans/en/wl/29.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ec786b1-6097-4e97-99b0-571d6e3e73e7.jpg?1562800058
 value=2.780
 rarity=C
 type=Creature

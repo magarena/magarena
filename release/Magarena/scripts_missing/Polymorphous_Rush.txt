@@ -1,5 +1,5 @@
 name=Polymorphous Rush
-image=https://magiccards.info/scans/en/jou/46.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2ff5f703-339f-430c-b342-77bcc2c63222.jpg?1593095502
 value=3.640
 rarity=R
 type=Instant

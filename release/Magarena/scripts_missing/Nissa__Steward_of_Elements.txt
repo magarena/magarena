@@ -1,5 +1,5 @@
 name=Nissa, Steward of Elements
-image=https://magiccards.info/scans/en/akh/204.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d64871b-6ee5-426b-9828-125cb9c7746d.jpg?1591321412
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

@@ -1,5 +1,5 @@
 name=False Cure
-image=https://magiccards.info/scans/en/on/146.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef397db1-2d99-4cb0-a6e9-6f72d615ebad.jpg?1562951786
 value=4.328
 rarity=R
 type=Instant

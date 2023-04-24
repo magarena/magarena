@@ -1,5 +1,5 @@
 name=Chancellor of the Dross
-image=https://magiccards.info/scans/en/nph/54.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eec6d85e-6263-44b4-a91f-d51585c561c2.jpg?1562882613
 value=3.627
 rarity=R
 type=Creature

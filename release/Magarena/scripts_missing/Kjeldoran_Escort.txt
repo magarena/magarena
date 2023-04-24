@@ -1,5 +1,5 @@
 name=Kjeldoran Escort
-image=https://magiccards.info/scans/en/ai/133.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fd7536a-5417-4de0-9a48-82a5f82d9af4.jpg?1562767775
 value=2.211
 rarity=C
 type=Creature

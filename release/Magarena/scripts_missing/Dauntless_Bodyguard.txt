@@ -1,5 +1,5 @@
 name=Dauntless Bodyguard
-image=https://magiccards.info/scans/en/dom/14.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3f82012-5c33-47bc-a3c8-56ae2eea1fb9.jpg?1562740636
 value=2.500
 rarity=U
 type=Creature

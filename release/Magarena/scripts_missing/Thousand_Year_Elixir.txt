@@ -1,5 +1,5 @@
 name=Thousand-Year Elixir
-image=https://magiccards.info/scans/en/lw/263.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95c2d832-5244-4236-81d5-2920aa2e281e.jpg?1625979536
 value=4.229
 rarity=R
 type=Artifact

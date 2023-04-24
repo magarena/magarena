@@ -1,5 +1,5 @@
 name=Mindmelter
-image=https://magiccards.info/scans/en/ogw/149.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a5bf575-6d09-4cb0-8fe0-8e49d2c39fd5.jpg?1562910026
 image_updated=2016-02-29
 value=2.500
 rarity=U

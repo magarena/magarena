@@ -1,5 +1,5 @@
 name=Sundering Vitae
-image=https://magiccards.info/scans/en/mm2/163.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a491b58f-3c54-41ea-b93b-c32fdc1e5917.jpg?1562265714
 value=2.500
 rarity=C
 type=Instant

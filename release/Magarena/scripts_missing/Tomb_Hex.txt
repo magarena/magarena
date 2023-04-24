@@ -1,5 +1,5 @@
 name=Tomb Hex
-image=https://magiccards.info/scans/en/wwk/69.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9beaaa66-0dae-4631-895d-06570834ba7c.jpg?1562292567
 value=2.600
 rarity=C
 type=Instant

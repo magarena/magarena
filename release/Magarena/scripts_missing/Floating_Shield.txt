@@ -1,5 +1,5 @@
 name=Floating Shield
-image=https://magiccards.info/scans/en/tr/5.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dbda39b-a998-4ad9-95df-72ed9556c390.jpg?1574250400
 value=2.618
 rarity=C
 type=Enchantment

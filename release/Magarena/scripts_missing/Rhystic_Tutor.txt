@@ -1,5 +1,5 @@
 name=Rhystic Tutor
-image=https://magiccards.info/scans/en/pr/77.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e02c1609-9cac-460f-8504-a84e28c340c1.jpg?1562936827
 value=3.541
 rarity=R
 type=Sorcery

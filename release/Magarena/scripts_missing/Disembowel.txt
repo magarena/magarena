@@ -1,5 +1,5 @@
 name=Disembowel
-image=https://magiccards.info/scans/en/rav/85.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1edb79d-0031-4dc6-8881-f6d1fe4acba2.jpg?1619741469
 value=2.398
 rarity=C
 type=Instant

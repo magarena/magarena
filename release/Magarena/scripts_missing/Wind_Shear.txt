@@ -1,5 +1,5 @@
 name=Wind Shear
-image=https://magiccards.info/scans/en/vi/75.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8324f44-c7f5-41ee-bc8d-16822bd8942f.jpg?1587913128
 value=3.243
 rarity=U
 type=Instant

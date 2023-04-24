@@ -1,5 +1,5 @@
 name=Messenger Jays
-image=https://magiccards.info/scans/en/cn2/35.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fe7a4f0-d677-4ae2-883c-eb46d0999584.jpg?1576381764
 image_updated=2016-09-05
 value=2.500
 rarity=C

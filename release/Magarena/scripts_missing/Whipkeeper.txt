@@ -1,5 +1,5 @@
 name=Whipkeeper
-image=https://magiccards.info/scans/en/od/228.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d86db25-3ec1-42f3-8b02-2729d50dd201.jpg?1562906337
 value=1.806
 rarity=U
 type=Creature

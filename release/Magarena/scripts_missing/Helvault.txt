@@ -1,5 +1,5 @@
 name=Helvault
-image=https://magiccards.info/scans/en/dka/151.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16d2448c-1b2e-466a-a0ab-e20ba1de6bc9.jpg?1562900508
 value=3.266
 rarity=M
 type=Legendary,Artifact

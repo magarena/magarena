@@ -1,5 +1,5 @@
 name=Synod Artificer
-image=https://magiccards.info/scans/en/ds/34.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc895eea-505d-4a12-936b-dcf9895d01a1.jpg?1562640024
 value=3.741
 rarity=R
 type=Creature

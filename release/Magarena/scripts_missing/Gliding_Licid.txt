@@ -1,5 +1,5 @@
 name=Gliding Licid
-image=https://magiccards.info/scans/en/sh/31.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0148f3ca-4dba-4408-86d0-1190c387ee69.jpg?1562595899
 value=3.175
 rarity=U
 type=Creature

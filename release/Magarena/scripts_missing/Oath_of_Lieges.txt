@@ -1,5 +1,5 @@
 name=Oath of Lieges
-image=https://magiccards.info/scans/en/ex/11.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/470a2092-eeda-4557-8cee-ac401b61a225.jpg?1562087824
 value=3.403
 rarity=R
 type=Enchantment

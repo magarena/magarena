@@ -1,5 +1,5 @@
 name=Seraph of the Masses
-image=https://magiccards.info/scans/en/m15/32.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bc2ee43-7f99-46d5-b3da-7258d83ab2c4.jpg?1682208597
 value=3.200
 rarity=U
 type=Creature

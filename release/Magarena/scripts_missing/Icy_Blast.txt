@@ -1,5 +1,5 @@
 name=Icy Blast
-image=https://magiccards.info/scans/en/ktk/42.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b098f029-6b5d-49e4-9a81-f497ebbdb5ce.jpg?1562792016
 value=3.667
 rarity=R
 type=Instant

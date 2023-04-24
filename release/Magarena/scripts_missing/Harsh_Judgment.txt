@@ -1,5 +1,5 @@
 name=Harsh Judgment
-image=https://magiccards.info/scans/en/in/19.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34c78dee-ab45-4638-b89a-10686145b19a.jpg?1562905655
 value=3.440
 rarity=R
 type=Enchantment

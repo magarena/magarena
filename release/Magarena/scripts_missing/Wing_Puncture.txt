@@ -1,5 +1,5 @@
 name=Wing Puncture
-image=https://magiccards.info/scans/en/som/133.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05a5188b-9ae3-4ca0-8289-b8a266a9073b.jpg?1562814234
 value=2.325
 rarity=C
 type=Instant

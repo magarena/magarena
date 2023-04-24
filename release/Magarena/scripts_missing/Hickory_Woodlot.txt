@@ -1,5 +1,5 @@
 name=Hickory Woodlot
-image=https://magiccards.info/scans/en/mm/319.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af7aafb7-6870-4d09-a191-70786766c459.jpg?1562382543
 value=3.562
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Sawtooth Ogre
-image=https://magiccards.info/scans/en/wl/114.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a237580-f7f6-4d6b-a342-0d11fc0b5a59.jpg?1562800674
 value=3.211
 rarity=C
 type=Creature

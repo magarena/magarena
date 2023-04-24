@@ -1,5 +1,5 @@
 name=Polukranos, World Eater
-image=https://magiccards.info/scans/en/ths/172.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/4979cc1b-9c1a-47e4-ae37-7c41798eb89a.jpg?1562817635
 value=3.547
 rarity=M
 type=Legendary,Creature

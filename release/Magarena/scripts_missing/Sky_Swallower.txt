@@ -1,5 +1,5 @@
 name=Sky Swallower
-image=https://magiccards.info/scans/en/gp/34.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05189964-5ad0-48b7-a3af-67c7f46fe89e.jpg?1593272075
 value=2.418
 rarity=R
 type=Creature

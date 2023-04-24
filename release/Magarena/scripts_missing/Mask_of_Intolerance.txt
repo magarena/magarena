@@ -1,5 +1,5 @@
 name=Mask of Intolerance
-image=https://magiccards.info/scans/en/ap/138.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f623ae51-5f15-4153-b2ed-d03b57b7db54.jpg?1562953345
 value=3.741
 rarity=R
 type=Artifact

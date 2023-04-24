@@ -1,5 +1,5 @@
 name=Barbed Sextant
-image=https://magiccards.info/scans/en/cstd/45.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55ec745d-8309-4afe-96d3-e87226661099.jpg?1562868569
 value=3.028
 rarity=C
 type=Artifact

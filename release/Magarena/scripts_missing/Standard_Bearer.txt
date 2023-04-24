@@ -1,5 +1,5 @@
 name=Standard Bearer
-image=https://magiccards.info/scans/en/ap/18.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0f8e16a-55f0-4147-a01a-dba7938f31c4.jpg?1562948563
 value=4.010
 rarity=C
 type=Creature

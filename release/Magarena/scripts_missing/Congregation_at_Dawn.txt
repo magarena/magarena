@@ -1,5 +1,5 @@
 name=Congregation at Dawn
-image=https://magiccards.info/scans/en/rav/198.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f1b950a-b2fe-4afc-bb79-c9f4c272ea36.jpg?1598916857
 value=3.991
 rarity=U
 type=Instant

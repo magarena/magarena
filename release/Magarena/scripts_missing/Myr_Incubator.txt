@@ -1,5 +1,5 @@
 name=Myr Incubator
-image=https://magiccards.info/scans/en/mi/212.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31b0f9ef-7404-4e05-b759-aaf1ebcfcb31.jpg?1562139770
 value=4.114
 rarity=R
 type=Artifact

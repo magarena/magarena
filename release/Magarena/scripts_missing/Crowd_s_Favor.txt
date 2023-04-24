@@ -1,5 +1,5 @@
 name=Crowd's Favor
-image=https://magiccards.info/scans/en/m15/138.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/536b8104-9d8d-444b-8535-62bcbe279de2.jpg?1562787063
 value=2.917
 rarity=C
 type=Instant

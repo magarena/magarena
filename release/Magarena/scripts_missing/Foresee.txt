@@ -1,5 +1,5 @@
 name=Foresee
-image=https://magiccards.info/scans/en/m11/54.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ecf2ee8-6b93-4757-89c4-f1e76509a217.jpg?1619394224
 value=4.011
 rarity=C
 type=Sorcery

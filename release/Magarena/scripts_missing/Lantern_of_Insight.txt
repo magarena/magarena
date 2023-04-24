@@ -1,5 +1,5 @@
 name=Lantern of Insight
-image=https://magiccards.info/scans/en/5dn/135.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb0e4c78-75fe-4692-b177-974b148f0614.jpg?1562879738
 value=3.977
 rarity=U
 type=Artifact

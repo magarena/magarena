@@ -1,5 +1,5 @@
 name=Astrolabe
-image=https://magiccards.info/scans/en/ai/159.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4578576-de6b-4387-aad3-0ae9d91244d1.jpg?1562929647
 value=2.778
 rarity=C
 type=Artifact

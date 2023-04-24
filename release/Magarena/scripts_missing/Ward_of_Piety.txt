@@ -1,5 +1,5 @@
 name=Ward of Piety
-image=https://magiccards.info/scans/en/bok/28.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73acef0c-34b1-4e04-8569-4f8d754585df.jpg?1562877810
 value=2.172
 rarity=U
 type=Enchantment

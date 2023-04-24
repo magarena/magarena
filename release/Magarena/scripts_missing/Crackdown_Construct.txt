@@ -1,5 +1,5 @@
 name=Crackdown Construct
-image=https://magiccards.info/scans/en/aer/148.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/993bc69a-b615-48c5-af81-252a73384e8c.jpg?1576382232
 value=2.500
 rarity=U
 type=Artifact,Creature

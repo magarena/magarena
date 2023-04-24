@@ -1,5 +1,5 @@
 name=Knollspine Invocation
-image=https://magiccards.info/scans/en/shm/99.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8157aade-9dfc-402d-8e1f-468bf2bccb9c.jpg?1562832371
 value=3.016
 rarity=R
 type=Enchantment

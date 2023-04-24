@@ -1,5 +1,5 @@
 name=Lullmage Mentor
-image=https://magiccards.info/scans/en/zen/54.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e34de3df-3236-4281-a043-7583c76d89cc.jpg?1562617643
 value=4.197
 rarity=R
 type=Creature

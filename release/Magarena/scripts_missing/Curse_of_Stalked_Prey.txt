@@ -1,5 +1,5 @@
 name=Curse of Stalked Prey
-image=https://magiccards.info/scans/en/isd/136.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11a18883-8990-40a0-bcb2-e01d0e82bfad.jpg?1562826328
 value=3.823
 rarity=R
 type=Enchantment

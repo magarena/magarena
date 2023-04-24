@@ -1,5 +1,5 @@
 name=Tempt with Immortality
-image=https://magiccards.info/scans/en/c13/95.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c87ff489-2d9c-4f04-a169-9eafb046dd7e.jpg?1562937365
 value=3.725
 rarity=R
 type=Sorcery

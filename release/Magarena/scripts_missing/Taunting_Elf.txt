@@ -1,5 +1,5 @@
 name=Taunting Elf
-image=https://magiccards.info/scans/en/on/290.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b24af94-9632-47da-9bf3-e81bb743cd43.jpg?1562920244
 value=4.321
 rarity=C
 type=Creature

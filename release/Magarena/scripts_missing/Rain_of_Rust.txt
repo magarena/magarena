@@ -1,5 +1,5 @@
 name=Rain of Rust
-image=https://magiccards.info/scans/en/5dn/76.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13a6ecc6-83c8-408b-8600-687cdb383ca9.jpg?1562875557
 value=1.000
 rarity=C
 type=Instant

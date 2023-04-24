@@ -1,5 +1,5 @@
 name=Stinging Licid
-image=https://magiccards.info/scans/en/tp/91.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/807227d7-2eb2-4d47-bb3c-9d1ec9befeb7.jpg?1562054969
 value=3.232
 rarity=U
 type=Creature

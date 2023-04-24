@@ -1,5 +1,5 @@
 name=Behold the Beyond
-image=https://magiccards.info/scans/en/soi/101.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd22350b-d48c-4ae6-b95f-63336fabe0e3.jpg?1576384353
 value=2.500
 rarity=M
 type=Sorcery

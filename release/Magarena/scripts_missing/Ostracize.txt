@@ -1,5 +1,5 @@
 name=Ostracize
-image=https://magiccards.info/scans/en/7e/153.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abdaffcc-59f6-4489-88bf-1061ad6b0512.jpg?1562245353
 value=3.885
 rarity=C
 type=Sorcery

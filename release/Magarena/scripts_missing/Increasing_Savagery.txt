@@ -1,5 +1,5 @@
 name=Increasing Savagery
-image=https://magiccards.info/scans/en/dka/120.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c59b2ab3-c5e3-4599-9af0-3fa7a9544b97.jpg?1592761793
 value=3.767
 rarity=R
 type=Sorcery

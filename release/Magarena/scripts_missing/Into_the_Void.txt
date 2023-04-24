@@ -1,5 +1,5 @@
 name=Into the Void
-image=https://magiccards.info/scans/en/cn2/112.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55e240e7-d7b3-4fce-9acd-48b6a3bf2a80.jpg?1576382441
 image_updated=2017-08-17
 value=3.100
 rarity=U

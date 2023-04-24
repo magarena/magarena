@@ -1,5 +1,5 @@
 name=Blessed Reincarnation
-image=https://magiccards.info/scans/en/dtk/47.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/401cd79d-638e-43b4-8d0c-d7af05c55a1a.jpg?1562785260
 value=2.500
 rarity=R
 type=Instant

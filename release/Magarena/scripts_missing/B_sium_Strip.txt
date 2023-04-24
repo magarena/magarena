@@ -1,5 +1,5 @@
 name=Bösium Strip
-image=https://magiccards.info/scans/en/wl/146.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3884bede-df28-42e8-9ac9-ae03118b1985.jpg?1651492718
 value=4.089
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=War Cadence
-image=https://magiccards.info/scans/en/mm/224.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/359434c4-7123-435b-890b-4e88f5bf2f49.jpg?1562906305
 value=3.818
 rarity=U
 type=Enchantment

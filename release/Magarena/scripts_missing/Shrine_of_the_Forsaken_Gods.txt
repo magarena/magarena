@@ -1,5 +1,5 @@
 name=Shrine of the Forsaken Gods
-image=https://magiccards.info/scans/en/bfz/245.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40838c37-3a23-4639-b3ff-879cf4b73d7a.jpg?1568005379
 image_updated=2015-11-08
 value=2.500
 rarity=R

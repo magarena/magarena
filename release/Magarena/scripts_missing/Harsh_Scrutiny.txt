@@ -1,5 +1,5 @@
 name=Harsh Scrutiny
-image=https://magiccards.info/scans/en/kld/85.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe68b484-cc8d-4a0b-94c2-1fec9090dfcd.jpg?1576381681
 image_updated=2016-10-05
 value=2.500
 rarity=U

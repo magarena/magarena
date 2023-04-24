@@ -1,5 +1,5 @@
 name=Horn of Greed
-image=https://magiccards.info/scans/en/cn2/211.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14026e22-391c-4a57-a305-665e6066e847.jpg?1576383262
 image_updated=2017-08-29
 value=3.823
 rarity=R

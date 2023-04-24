@@ -1,5 +1,5 @@
 name=Infinite Obliteration
-image=https://magiccards.info/scans/en/ori/103.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71a6f6a0-3670-4b72-8c8e-668f47252fa0.jpg?1562025565
 image_updated=2015-11-05
 value=2.500
 rarity=R

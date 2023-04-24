@@ -1,5 +1,5 @@
 name=Axis of Mortality
-image=https://magiccards.info/scans/en/xln/3.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b9d72a8-8acf-42c6-8adf-cbaecb4a985a.jpg?1562553762
 value=2.500
 rarity=M
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Torrent of Souls
-image=https://magiccards.info/scans/en/mm3/213.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b60c97a2-52db-4e4b-a075-0120a3ebca75.jpg?1593814842
 image_updated=2017-08-08
 value=3.425
 rarity=U

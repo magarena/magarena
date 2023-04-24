@@ -1,5 +1,5 @@
 name=Eliminate the Competition
-image=https://magiccards.info/scans/en/kld/78.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bf09460-2e54-4434-ab03-95eef77265dc.jpg?1576381596
 image_updated=2016-10-05
 value=2.500
 rarity=R

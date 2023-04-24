@@ -1,5 +1,5 @@
 name=Curse of Bounty
-image=https://magiccards.info/scans/en/c17/30.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f497641-b73a-4399-bc89-5274c42e17cc.jpg?1562604090
 image_updated=2017-10-03
 value=2.500
 rarity=U

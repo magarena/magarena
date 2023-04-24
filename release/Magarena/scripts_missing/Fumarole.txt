@@ -1,5 +1,5 @@
 name=Fumarole
-image=https://magiccards.info/scans/en/ia/369.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66ce0f61-3c5b-4490-9e9b-8e30432a346a.jpg?1562869034
 value=3.511
 rarity=U
 type=Sorcery

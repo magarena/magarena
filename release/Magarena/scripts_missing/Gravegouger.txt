@@ -1,5 +1,5 @@
 name=Gravegouger
-image=https://magiccards.info/scans/en/tr/62.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acfcd559-374e-4e6f-9333-2e5c855abff5.jpg?1562631503
 value=2.167
 rarity=C
 type=Creature

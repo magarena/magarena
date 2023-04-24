@@ -1,5 +1,5 @@
 name=Grinning Totem
-image=https://magiccards.info/scans/en/tsts/110.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d8c8ecc-7637-424a-bae2-ed3b8678f97d.jpg?1562772439
 value=4.107
 rarity=R
 type=Artifact

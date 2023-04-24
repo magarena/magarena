@@ -1,5 +1,5 @@
 name=Phantasmal Terrain
-image=https://magiccards.info/scans/en/in/65.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9640cd5-bef8-486f-b903-46ff92efe3d3.jpg?1562950595
 value=3.000
 rarity=C
 type=Enchantment

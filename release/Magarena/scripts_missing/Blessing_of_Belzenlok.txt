@@ -1,5 +1,5 @@
 name=Blessing of Belzenlok
-image=https://magiccards.info/scans/en/dom/77.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d224940c-d87c-4317-9ca3-b704ef894a7b.jpg?1562743446
 value=2.500
 rarity=C
 type=Instant

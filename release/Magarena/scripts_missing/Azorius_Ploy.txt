@@ -1,5 +1,5 @@
 name=Azorius Ploy
-image=https://magiccards.info/scans/en/di/106.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/763f2c68-77a9-43e9-8f9b-2f318afcd686.jpg?1593273568
 value=1.833
 rarity=U
 type=Instant

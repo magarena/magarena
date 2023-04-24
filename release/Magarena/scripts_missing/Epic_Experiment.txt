@@ -1,5 +1,5 @@
 name=Epic Experiment
-image=https://magiccards.info/scans/en/rtr/159.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b672f90f-c03a-4eab-b52a-5bbca3c4294c.jpg?1625977624
 image_updated=2016-02-29
 value=3.819
 rarity=M

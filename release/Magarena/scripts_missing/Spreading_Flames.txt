@@ -1,5 +1,5 @@
 name=Spreading Flames
-image=https://magiccards.info/scans/en/emn/143.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c655b1dc-8df1-44c8-a963-bd0a671ec7e5.jpg?1576384682
 image_updated=2016-09-05
 value=2.500
 rarity=U

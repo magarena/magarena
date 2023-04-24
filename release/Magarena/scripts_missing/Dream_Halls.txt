@@ -1,5 +1,5 @@
 name=Dream Halls
-image=https://magiccards.info/scans/en/sh/28.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c6606d1-619f-4cc9-8d5b-771c4b4d9615.jpg?1562428864
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Dawn's Reflection
-image=https://magiccards.info/scans/en/5dn/85.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/1366d406-4539-408f-93c1-f940327c1ba2.jpg?1592710857
 value=3.750
 rarity=C
 type=Enchantment

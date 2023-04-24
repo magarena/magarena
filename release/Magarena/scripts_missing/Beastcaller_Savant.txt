@@ -1,5 +1,5 @@
 name=Beastcaller Savant
-image=https://magiccards.info/scans/en/bfz/170.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cca9f5da-986c-43ab-a2ec-efb8b098c17c.jpg?1562943299
 image_updated=2015-11-08
 value=2.500
 rarity=R

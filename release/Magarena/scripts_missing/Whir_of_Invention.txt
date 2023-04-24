@@ -1,5 +1,5 @@
 name=Whir of Invention
-image=https://magiccards.info/scans/en/aer/49.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a679659c-7fed-4afa-9b99-fdeb8ccda964.jpg?1661583558
 value=2.500
 rarity=R
 type=Instant

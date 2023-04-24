@@ -1,5 +1,5 @@
 name=Rain of Salt
-image=https://magiccards.info/scans/en/us/206.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/4792293a-e11d-4c5e-bbd9-6f09e69ee617.jpg?1562909891
 value=2.879
 rarity=U
 type=Sorcery

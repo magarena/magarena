@@ -1,5 +1,5 @@
 name=Wormfang Crab
-image=https://magiccards.info/scans/en/ju/56.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcf56dcf-ec1a-4298-8644-1fe248443b7e.jpg?1562632263
 value=3.125
 rarity=U
 type=Creature

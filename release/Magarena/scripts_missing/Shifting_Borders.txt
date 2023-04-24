@@ -1,5 +1,5 @@
 name=Shifting Borders
-image=https://magiccards.info/scans/en/sok/56.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cbe44b0-e770-41f2-b91c-c574976e6b53.jpg?1562492469
 value=2.148
 rarity=U
 type=Instant

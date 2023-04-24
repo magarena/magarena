@@ -1,5 +1,5 @@
 name=Mizzium Transreliquat
-image=https://magiccards.info/scans/en/gp/153.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d29c3bf9-d37c-4e0a-ac44-15d47770ed44.jpg?1593272943
 value=4.200
 rarity=R
 type=Artifact

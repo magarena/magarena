@@ -1,5 +1,5 @@
 name=Kaho, Minamo Historian
-image=https://magiccards.info/scans/en/sok/41.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d85a5f54-9b79-4c3d-b983-021b4b01b122.jpg?1562496115
 value=3.927
 rarity=R
 type=Legendary,Creature

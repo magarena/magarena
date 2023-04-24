@@ -1,5 +1,5 @@
 name=Inkfathom Divers
-image=https://magiccards.info/scans/en/lw/70.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/758a8ca6-1fc1-454a-a2be-9745ac964eb7.jpg?1592764594
 value=2.450
 rarity=C
 type=Creature

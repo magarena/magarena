@@ -1,5 +1,5 @@
 name=Noble Elephant
-image=https://magiccards.info/scans/en/mr/234.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65f399cb-dddb-422a-8d36-938b82b59e10.jpg?1562719755
 value=2.667
 rarity=C
 type=Creature

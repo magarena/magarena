@@ -1,5 +1,5 @@
 name=Increasing Ambition
-image=https://magiccards.info/scans/en/dka/69.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8f508dc-7c7d-47e8-a4ef-0e8fd99cbd74.jpg?1562942476
 value=3.634
 rarity=R
 type=Sorcery

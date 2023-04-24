@@ -1,5 +1,5 @@
 name=Halfdane
-image=https://magiccards.info/scans/en/lg/269.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cac1e57a-0ef5-442b-a492-059fc6ff3dfc.jpg?1562937835
 value=3.240
 rarity=R
 type=Legendary,Creature

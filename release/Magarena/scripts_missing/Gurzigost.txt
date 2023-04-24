@@ -1,5 +1,5 @@
 name=Gurzigost
-image=https://magiccards.info/scans/en/tr/126.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4e672c6-6ddc-4dd2-b4c7-5083d7566e87.jpg?1562632734
 value=4.103
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Diamond Kaleidoscope
-image=https://magiccards.info/scans/en/vi/143.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/548ff852-274d-4068-818d-58a883e74a5f.jpg?1562277664
 value=2.968
 rarity=R
 type=Artifact

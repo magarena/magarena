@@ -1,5 +1,5 @@
 name=Darkwater Egg
-image=https://magiccards.info/scans/en/od/299.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb988572-1e1d-4b1d-8dc7-78bda966554e.jpg?1562942414
 value=2.450
 rarity=U
 type=Artifact

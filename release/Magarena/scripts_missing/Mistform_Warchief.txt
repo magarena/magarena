@@ -1,5 +1,5 @@
 name=Mistform Warchief
-image=https://magiccards.info/scans/en/sc/43.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a633d85b-4be1-44a2-8fd8-1ccec4a95ecb.jpg?1562533090
 value=3.756
 rarity=U
 type=Creature

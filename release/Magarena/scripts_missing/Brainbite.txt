@@ -1,5 +1,5 @@
 name=Brainbite
-image=https://magiccards.info/scans/en/arb/18.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/925c08bd-120d-49a5-a258-bda3859c1d4c.jpg?1562642934
 value=2.975
 rarity=C
 type=Sorcery

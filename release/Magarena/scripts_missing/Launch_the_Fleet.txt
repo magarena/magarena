@@ -1,5 +1,5 @@
 name=Launch the Fleet
-image=https://magiccards.info/scans/en/jou/15.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc3e52c0-2f79-4537-8f1c-70b68836bac0.jpg?1593095265
 value=3.756
 rarity=R
 type=Sorcery

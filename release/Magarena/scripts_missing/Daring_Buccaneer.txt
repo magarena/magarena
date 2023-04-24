@@ -1,5 +1,5 @@
 name=Daring Buccaneer
-image=https://magiccards.info/scans/en/rix/98.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d413b88-8f5d-415f-bd07-169f6c175e6b.jpg?1555040399
 value=2.500
 rarity=U
 type=Creature

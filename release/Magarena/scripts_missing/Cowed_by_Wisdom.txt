@@ -1,5 +1,5 @@
 name=Cowed by Wisdom
-image=https://magiccards.info/scans/en/sok/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b81b329-4ef5-4b55-9fe7-9ed69477e96b.jpg?1562492462
 value=2.946
 rarity=C
 type=Enchantment

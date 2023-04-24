@@ -1,5 +1,5 @@
 name=Spinal Embrace
-image=https://magiccards.info/scans/en/in/276.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b647204-715a-4f30-9ba3-f0be3410c0a0.jpg?1604195291
 value=4.147
 rarity=R
 type=Instant

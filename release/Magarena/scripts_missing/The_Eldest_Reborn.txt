@@ -1,5 +1,5 @@
 name=The Eldest Reborn
-image=https://magiccards.info/scans/en/dom/90.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a188d4c-ce2a-4ec7-8ea7-980f85f639da.jpg?1568004316
 value=2.500
 rarity=U
 type=Enchantment

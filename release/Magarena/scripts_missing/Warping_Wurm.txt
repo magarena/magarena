@@ -1,5 +1,5 @@
 name=Warping Wurm
-image=https://magiccards.info/scans/en/mr/347.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2c41d0f-f1db-4797-b245-7de12ffa3a0d.jpg?1562720954
 value=1.683
 rarity=R
 type=Creature

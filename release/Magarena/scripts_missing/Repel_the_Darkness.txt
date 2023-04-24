@@ -1,5 +1,5 @@
 name=Repel the Darkness
-image=https://magiccards.info/scans/en/roe/42.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07ced55b-27e2-4549-90e4-31c9718e1395.jpg?1547515754
 value=3.000
 rarity=C
 type=Instant

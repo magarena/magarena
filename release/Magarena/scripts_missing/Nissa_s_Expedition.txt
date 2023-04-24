@@ -1,5 +1,5 @@
 name=Nissa's Expedition
-image=https://magiccards.info/scans/en/m15/188.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/815701df-3ed1-417a-bd9a-fdb9f4802c39.jpg?1625194612
 value=3.167
 rarity=U
 type=Sorcery

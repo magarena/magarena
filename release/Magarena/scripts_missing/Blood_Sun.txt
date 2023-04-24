@@ -1,5 +1,5 @@
 name=Blood Sun
-image=https://magiccards.info/scans/en/rix/92.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/875832f4-e541-4c87-8479-731e0eab2cc6.jpg?1555040361
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Coal Stoker
-image=https://magiccards.info/scans/en/ts/150.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59871c54-7873-4fc5-8084-55918a11e6f4.jpg?1619396859
 image_updated=2016-11-28
 value=3.500
 rarity=C

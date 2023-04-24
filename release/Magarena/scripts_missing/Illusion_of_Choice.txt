@@ -1,5 +1,5 @@
 name=Illusion of Choice
-image=https://magiccards.info/scans/en/cn2/31.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab54f283-92b6-4738-b2cd-fecb43750a4d.jpg?1576381726
 image_updated=2016-09-05
 value=2.500
 rarity=U

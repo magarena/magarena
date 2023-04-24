@@ -1,5 +1,5 @@
 name=Enigma Sphinx
-image=https://magiccards.info/scans/en/pc2/89.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40b62ed0-356c-4552-b76d-48ff54410e70.jpg?1592711087
 value=3.021
 rarity=R
 type=Artifact,Creature

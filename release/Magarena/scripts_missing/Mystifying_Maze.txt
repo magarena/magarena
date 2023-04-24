@@ -1,5 +1,5 @@
 name=Mystifying Maze
-image=https://magiccards.info/scans/en/c17/264.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/faeeb2f8-0aa1-4f3e-848d-f4233996055b.jpg?1562629830
 image_updated=2017-10-03
 value=3.938
 rarity=R

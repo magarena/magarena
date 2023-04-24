@@ -1,5 +1,5 @@
 name=Deicide
-image=https://magiccards.info/scans/en/jou/7.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/6012964c-eb76-4581-82ae-aec2d36f0d56.jpg?1593095208
 value=3.278
 rarity=R
 type=Instant

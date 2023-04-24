@@ -1,5 +1,5 @@
 name=Hinder
-image=https://magiccards.info/scans/en/chk/65.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ebaedfd-3f65-4867-bb59-df548a6eb113.jpg?1598303981
 value=3.983
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Trepanation Blade
-image=https://magiccards.info/scans/en/ima/231.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b1bab36-3fb7-48f3-b3ed-90863d244641.jpg?1562849914
 image_updated=2017-04-12
 value=3.844
 rarity=U

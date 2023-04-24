@@ -1,5 +1,5 @@
 name=Shambling Attendants
-image=https://magiccards.info/scans/en/ktk/89.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/459ca25c-775f-4110-8d70-59720692ab27.jpg?1562785839
 value=2.500
 rarity=C
 type=Creature

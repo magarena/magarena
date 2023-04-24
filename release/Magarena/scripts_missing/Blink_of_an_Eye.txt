@@ -1,5 +1,5 @@
 name=Blink of an Eye
-image=https://magiccards.info/scans/en/dom/46.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab830392-4d7e-4b45-93cf-35ed1e935228.jpg?1562741100
 value=2.500
 rarity=C
 type=Instant

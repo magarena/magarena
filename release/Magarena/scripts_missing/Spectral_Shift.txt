@@ -1,5 +1,5 @@
 name=Spectral Shift
-image=https://magiccards.info/scans/en/5dn/37.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1a3f75d-9a79-4c16-8f50-43a18add4579.jpg?1562879230
 value=3.614
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Pain's Reward
-image=https://magiccards.info/scans/en/sok/85.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d16da68-85f6-4d54-9751-9cf046f5e99a.jpg?1562494206
 value=3.697
 rarity=R
 type=Sorcery

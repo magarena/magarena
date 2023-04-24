@@ -1,5 +1,5 @@
 name=Auriok Windwalker
-image=https://magiccards.info/scans/en/5dn/5.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/4315d060-9858-405c-a442-c7a278134f00.jpg?1562876615
 value=3.524
 rarity=R
 type=Creature

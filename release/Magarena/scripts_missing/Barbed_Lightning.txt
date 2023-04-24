@@ -1,5 +1,5 @@
 name=Barbed Lightning
-image=https://magiccards.info/scans/en/ds/55.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2509482a-68d8-4e94-9d1e-5b069ebdc2e4.jpg?1562635839
 value=3.455
 rarity=C
 type=Instant

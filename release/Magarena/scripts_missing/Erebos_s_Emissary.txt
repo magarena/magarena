@@ -1,5 +1,5 @@
 name=Erebos's Emissary
-image=https://magiccards.info/scans/en/ths/86.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aa96f63-d5c3-47d3-a54d-a67883406fc5.jpg?1562818582
 value=3.468
 rarity=U
 type=Enchantment,Creature

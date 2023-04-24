@@ -1,5 +1,5 @@
 name=Teferi's Honor Guard
-image=https://magiccards.info/scans/en/vi/122.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4177d5bf-db48-4bbf-bbd4-ee6313031920.jpg?1562277453
 value=3.406
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Kill-Suit Cultist
-image=https://magiccards.info/scans/en/di/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b37c96bb-6844-4c73-8b32-099bde7bd9f1.jpg?1593273169
 value=2.408
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Admiral Beckett Brass
-image=https://magiccards.info/scans/en/xln/217.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9854c2ec-0e53-4ac7-b417-554a9331c5e0.jpg?1562560523
 value=2.500
 rarity=M
 type=Legendary,Creature

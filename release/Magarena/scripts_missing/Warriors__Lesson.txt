@@ -1,5 +1,5 @@
 name=Warriors' Lesson
-image=https://magiccards.info/scans/en/ths/184.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63f7e81a-6f9e-4cad-a911-fba7a431cd55.jpg?1562819097
 value=3.500
 rarity=U
 type=Instant

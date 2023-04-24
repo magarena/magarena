@@ -1,5 +1,5 @@
 name=Put Away
-image=https://magiccards.info/scans/en/shm/48.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c17dff9e-23f7-4b12-95e7-aa1c00ab3d18.jpg?1562835533
 value=2.115
 rarity=C
 type=Instant

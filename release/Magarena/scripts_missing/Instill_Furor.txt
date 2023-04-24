@@ -1,5 +1,5 @@
 name=Instill Furor
-image=https://magiccards.info/scans/en/rav/134.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6164762-c02d-4553-9064-2b99ff6352c9.jpg?1598915710
 value=1.956
 rarity=U
 type=Enchantment

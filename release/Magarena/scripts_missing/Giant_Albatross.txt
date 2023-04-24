@@ -1,5 +1,5 @@
 name=Giant Albatross
-image=https://magiccards.info/scans/en/hl/33.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bce05870-74d3-43f1-92d0-dc1744c0138d.jpg?1562588235
 value=2.750
 rarity=C
 type=Creature

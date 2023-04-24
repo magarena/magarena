@@ -1,5 +1,5 @@
 name=Dulcet Sirens
-image=https://magiccards.info/scans/en/c14/14.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/045e15fd-6e2b-40a9-89ba-2f4c9e445416.jpg?1561930931
 value=2.500
 rarity=R
 type=Creature

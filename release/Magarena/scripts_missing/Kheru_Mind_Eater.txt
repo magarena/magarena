@@ -1,5 +1,5 @@
 name=Kheru Mind-Eater
-image=https://magiccards.info/scans/en/c17/17.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6246cf3-76bd-476b-9cd9-789b6ad48887.jpg?1562626991
 image_updated=2017-10-03
 value=2.500
 rarity=R

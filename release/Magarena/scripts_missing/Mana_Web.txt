@@ -1,5 +1,5 @@
 name=Mana Web
-image=https://magiccards.info/scans/en/wl/152.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c72ec90-dacc-496f-a7f5-f18bfce5eb3e.jpg?1562800019
 value=4.325
 rarity=R
 type=Artifact

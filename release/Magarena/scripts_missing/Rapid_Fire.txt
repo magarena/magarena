@@ -1,5 +1,5 @@
 name=Rapid Fire
-image=https://magiccards.info/scans/en/lg/201.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e26e7c9c-e6de-47f4-8394-7e853408f84c.jpg?1562861369
 value=2.297
 rarity=R
 type=Instant

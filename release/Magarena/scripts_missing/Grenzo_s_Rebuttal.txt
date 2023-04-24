@@ -1,5 +1,5 @@
 name=Grenzo's Rebuttal
-image=https://magiccards.info/scans/en/cns/33.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b798ace-18e4-45fb-98ae-69528f7b5a2f.jpg?1562864482
 value=3.889
 rarity=R
 type=Sorcery

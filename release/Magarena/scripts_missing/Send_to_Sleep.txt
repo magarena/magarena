@@ -1,5 +1,5 @@
 name=Send to Sleep
-image=https://magiccards.info/scans/en/ori/71.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa34d648-da0a-4615-8dd8-d2c8b1a1a574.jpg?1562035811
 image_updated=2015-11-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Remember the Fallen
-image=https://magiccards.info/scans/en/nph/21.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/287ca034-9cea-4b84-98ba-76c24f038edb.jpg?1599709496
 value=3.363
 rarity=C
 type=Sorcery

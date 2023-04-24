@@ -1,5 +1,5 @@
 name=Mind Bend
-image=https://magiccards.info/scans/en/10e/93.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/692a5bfa-9a50-4610-acd7-19fc0a53f798.jpg?1562549129
 value=3.885
 rarity=R
 type=Instant

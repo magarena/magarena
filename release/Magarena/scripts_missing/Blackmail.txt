@@ -1,5 +1,5 @@
 name=Blackmail
-image=https://magiccards.info/scans/en/9e/115.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/053e7c76-16b7-44eb-9612-a6800ffb35f8.jpg?1562730795
 value=3.950
 rarity=U
 type=Sorcery

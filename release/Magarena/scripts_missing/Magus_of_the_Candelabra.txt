@@ -1,5 +1,5 @@
 name=Magus of the Candelabra
-image=https://magiccards.info/scans/en/ts/203.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f50583b8-6953-4094-b420-580d545e827f.jpg?1562944330
 value=4.133
 rarity=R
 type=Creature

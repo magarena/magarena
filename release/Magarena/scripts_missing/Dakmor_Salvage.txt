@@ -1,5 +1,5 @@
 name=Dakmor Salvage
-image=https://magiccards.info/scans/en/mma/222.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58329049-2141-498a-8b73-653610c05ea6.jpg?1547518608
 value=4.387
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Scion of the Ur-Dragon
-image=https://magiccards.info/scans/en/c17/192.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/565b2a40-57b1-451f-8c2a-e02222502288.jpg?1562608891
 image_updated=2017-10-03
 value=4.047
 rarity=R

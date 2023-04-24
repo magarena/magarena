@@ -1,5 +1,5 @@
 name=Dread Defiler
-image=https://magiccards.info/scans/en/ogw/68.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2b26769-4705-4b09-94b4-1063e67041d1.jpg?1562940501
 image_updated=2016-02-29
 value=2.500
 rarity=R

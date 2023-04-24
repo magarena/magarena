@@ -1,5 +1,5 @@
 name=Patagia Viper
-image=https://magiccards.info/scans/en/di/89.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5e565b4-d5ca-4a29-8bb4-0063bae2a85c.jpg?1562710164
 image_updated=2016-02-29
 value=3.432
 rarity=U

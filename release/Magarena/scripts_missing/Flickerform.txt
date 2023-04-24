@@ -1,5 +1,5 @@
 name=Flickerform
-image=https://magiccards.info/scans/en/rav/18.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64266c41-b123-41e1-8006-07f2037bba72.jpg?1592672363
 value=3.536
 rarity=R
 type=Enchantment

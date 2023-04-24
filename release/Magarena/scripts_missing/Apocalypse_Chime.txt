@@ -1,5 +1,5 @@
 name=Apocalypse Chime
-image=https://magiccards.info/scans/en/hl/126.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cef20d8f-6e80-4fca-b6a7-541981f6a112.jpg?1615259919
 value=2.872
 rarity=R
 type=Artifact

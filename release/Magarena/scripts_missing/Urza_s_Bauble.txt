@@ -1,5 +1,5 @@
 name=Urza's Bauble
-image=https://magiccards.info/scans/en/5e/406.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29175e6b-a2ab-4373-8093-cb372aa8c7d0.jpg?1559592523
 value=3.778
 rarity=U
 type=Artifact

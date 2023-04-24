@@ -1,5 +1,5 @@
 name=Pulse of the Dross
-image=https://magiccards.info/scans/en/ds/50.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb8b1d0a-2c78-4173-b7ed-d7f3a0502fe7.jpg?1562639240
 value=3.780
 rarity=R
 type=Sorcery

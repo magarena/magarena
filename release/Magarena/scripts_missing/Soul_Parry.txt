@@ -1,5 +1,5 @@
 name=Soul Parry
-image=https://magiccards.info/scans/en/som/21.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cc10941-25b4-43cb-8689-c96659bd471d.jpg?1562839810
 image_updated=2016-01-09
 value=2.500
 rarity=C

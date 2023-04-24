@@ -1,5 +1,5 @@
 name=Ashen-Skin Zubera
-image=https://magiccards.info/scans/en/chk/101.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40cee88d-849d-4715-ad88-7cdb855a3088.jpg?1562759385
 value=3.242
 rarity=C
 type=Creature

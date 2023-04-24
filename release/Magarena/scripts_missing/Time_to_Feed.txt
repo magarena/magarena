@@ -1,5 +1,5 @@
 name=Time to Feed
-image=https://magiccards.info/scans/en/ths/181.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86e89e51-fd37-4f41-ad13-d1b8a93e5277.jpg?1601080227
 image_updated=2017-01-11
 value=2.500
 rarity=C

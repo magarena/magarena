@@ -1,5 +1,5 @@
 name=Steely Resolve
-image=https://magiccards.info/scans/en/on/286.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b88c530a-abc3-4cc4-8a48-5b76e1504a3c.jpg?1562938496
 value=3.862
 rarity=R
 type=Enchantment

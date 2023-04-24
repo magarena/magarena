@@ -1,5 +1,5 @@
 name=Great Whale
-image=https://magiccards.info/scans/en/us/77.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58a2acf1-dad8-4f93-a34e-891e5178a48f.jpg?1562913519
 value=4.488
 rarity=R
 type=Creature

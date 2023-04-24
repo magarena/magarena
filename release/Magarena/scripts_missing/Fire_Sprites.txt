@@ -1,5 +1,5 @@
 name=Fire Sprites
-image=https://magiccards.info/scans/en/lg/100.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e001344-4c5a-47de-b788-384765fc1fcd.jpg?1562921548
 value=2.357
 rarity=C
 type=Creature

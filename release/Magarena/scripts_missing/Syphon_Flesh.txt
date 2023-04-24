@@ -1,5 +1,5 @@
 name=Syphon Flesh
-image=https://magiccards.info/scans/en/cmd/103.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63124d37-d16c-48d6-b1a2-a1a3834b3dc1.jpg?1637630791
 value=3.474
 rarity=U
 type=Sorcery

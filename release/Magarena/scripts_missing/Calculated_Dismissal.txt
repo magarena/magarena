@@ -1,5 +1,5 @@
 name=Calculated Dismissal
-image=https://magiccards.info/scans/en/ori/48.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c42ab35-6050-42b2-9c3c-3252f2e69442.jpg?1562012331
 image_updated=2015-11-05
 value=2.500
 rarity=C

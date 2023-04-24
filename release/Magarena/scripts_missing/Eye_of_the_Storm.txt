@@ -1,5 +1,5 @@
 name=Eye of the Storm
-image=https://magiccards.info/scans/en/rav/48.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49967eb9-5020-4f0a-8775-5114f6d96d75.jpg?1598914184
 value=4.035
 rarity=R
 type=Enchantment

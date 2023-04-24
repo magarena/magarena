@@ -1,5 +1,5 @@
 name=Flaying Tendrils
-image=https://magiccards.info/scans/en/ogw/70.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77899cb2-4d87-4c2d-99ae-1ae75bc5dc86.jpg?1562918962
 image_updated=2016-02-29
 value=2.500
 rarity=U

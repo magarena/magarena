@@ -1,5 +1,5 @@
 name=Ad Nauseam
-image=https://magiccards.info/scans/en/ala/63.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9f2c53e-ff58-4aa8-89a6-4f45628cc571.jpg?1598306470
 value=4.146
 rarity=R
 type=Instant

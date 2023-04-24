@@ -1,5 +1,5 @@
 name=Kamahl's Druidic Vow
-image=https://magiccards.info/scans/en/dom/166.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf95ef60-e67b-466d-a6cb-d487ffa88b72.jpg?1562742183
 value=2.500
 rarity=R
 type=Legendary,Sorcery

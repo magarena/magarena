@@ -1,5 +1,5 @@
 name=Oath of Mages
-image=https://magiccards.info/scans/en/ex/90.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed8708d2-2c73-4da5-b6ff-41c083b59caa.jpg?1562089259
 value=2.625
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Fulgent Distraction
-image=https://magiccards.info/scans/en/som/7.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c33a8cf1-e413-4633-b348-2ef594a945a5.jpg?1562822726
 value=1.650
 rarity=C
 type=Instant

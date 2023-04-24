@@ -1,5 +1,5 @@
 name=Lethal Vapors
-image=https://magiccards.info/scans/en/sc/68.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f96acfea-009a-4ac9-8746-64f65199024f.jpg?1562536981
 value=4.221
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Quarum Trench Gnomes
-image=https://magiccards.info/scans/en/lg/159.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c3b33bf-3074-406e-86f3-2a9843cf4862.jpg?1587910601
 value=2.582
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Predatory Focus
-image=https://magiccards.info/scans/en/gp/92.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98fc1314-4bf2-44f2-a016-58765eb04607.jpg?1593272489
 value=3.575
 rarity=U
 type=Sorcery

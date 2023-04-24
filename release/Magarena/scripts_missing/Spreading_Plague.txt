@@ -1,5 +1,5 @@
 name=Spreading Plague
-image=https://magiccards.info/scans/en/in/125.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac86055d-ce08-4b05-a92c-45e007ca0ba4.jpg?1562929780
 value=4.105
 rarity=R
 type=Enchantment

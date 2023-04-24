@@ -1,5 +1,5 @@
 name=Death Rattle
-image=https://magiccards.info/scans/en/mma/78.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a287887a-fc19-41e3-8914-8f984c1e4f59.jpg?1561968065
 value=3.060
 rarity=U
 type=Instant

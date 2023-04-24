@@ -1,5 +1,5 @@
 name=Dimir Doppelganger
-image=https://magiccards.info/scans/en/cns/186.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61c8b201-1e40-4c52-8fe9-b7fa3562062a.jpg?1562865447
 value=4.250
 rarity=R
 type=Creature

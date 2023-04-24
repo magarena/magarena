@@ -1,5 +1,5 @@
 name=Doomsday Specter
-image=https://magiccards.info/scans/en/ps/103.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85206cc1-5484-40c6-b11d-b8d6fad4fc5c.jpg?1562923103
 value=4.044
 rarity=R
 type=Creature

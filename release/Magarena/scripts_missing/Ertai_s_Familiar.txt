@@ -1,5 +1,5 @@
 name=Ertai's Familiar
-image=https://magiccards.info/scans/en/wl/38.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/354c9de7-0cdf-4302-9d1a-ae17eca13053.jpg?1562800177
 value=2.711
 rarity=R
 type=Creature

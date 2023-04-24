@@ -1,5 +1,5 @@
 name=Killer Instinct
-image=https://magiccards.info/scans/en/gp/120.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c808a8ec-895c-4777-9e11-e83ce34eddef.jpg?1593272714
 value=3.408
 rarity=R
 type=Enchantment

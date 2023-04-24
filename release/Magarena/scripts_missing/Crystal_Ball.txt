@@ -1,5 +1,5 @@
 name=Crystal Ball
-image=https://magiccards.info/scans/en/m11/203.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d344d88f-a63b-4593-990f-af6346cad91a.jpg?1592711223
 value=4.209
 rarity=U
 type=Artifact

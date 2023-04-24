@@ -1,5 +1,5 @@
 name=Steal Strength
-image=https://magiccards.info/scans/en/pr/79.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5470b3bb-5061-4beb-9f44-b56c3b2fd816.jpg?1562910504
 value=3.016
 rarity=C
 type=Instant

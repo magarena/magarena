@@ -1,5 +1,5 @@
 name=Adverse Conditions
-image=https://magiccards.info/scans/en/bfz/54.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03d86e0b-294f-41b8-a5cd-d3144a019334.jpg?1562895970
 image_updated=2015-11-08
 value=2.500
 rarity=U

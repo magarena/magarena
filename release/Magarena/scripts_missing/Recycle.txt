@@ -1,5 +1,5 @@
 name=Recycle
-image=https://magiccards.info/scans/en/tp/142.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35698c86-4552-4c04-8f51-099bb2dbce6d.jpg?1562428885
 value=2.500
 rarity=R
 type=Enchantment

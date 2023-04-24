@@ -1,5 +1,5 @@
 name=Vectis Dominator
-image=https://magiccards.info/scans/en/arb/84.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cfb7589-a53e-4580-bd92-641fd4785934.jpg?1562640010
 value=2.292
 rarity=C
 type=Artifact,Creature

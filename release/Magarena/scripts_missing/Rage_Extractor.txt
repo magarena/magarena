@@ -1,5 +1,5 @@
 name=Rage Extractor
-image=https://magiccards.info/scans/en/nph/91.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8cebc2c-a46b-4459-b62b-7fce1a744b11.jpg?1562881930
 value=3.572
 rarity=U
 type=Artifact

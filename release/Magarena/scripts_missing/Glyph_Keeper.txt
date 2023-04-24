@@ -1,5 +1,5 @@
 name=Glyph Keeper
-image=https://magiccards.info/scans/en/akh/55.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2663738-1688-4306-be6d-6a1f94a2319c.jpg?1543674979
 value=2.500
 rarity=R
 type=Creature

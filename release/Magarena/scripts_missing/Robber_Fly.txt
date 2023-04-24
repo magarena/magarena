@@ -1,5 +1,5 @@
 name=Robber Fly
-image=https://magiccards.info/scans/en/mm/209.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d5cf073-2ba0-463e-bcd4-979ad18e28fc.jpg?1562381818
 value=2.871
 rarity=U
 type=Creature

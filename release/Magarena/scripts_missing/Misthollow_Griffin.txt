@@ -1,5 +1,5 @@
 name=Misthollow Griffin
-image=https://magiccards.info/scans/en/avr/68.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2db4fe28-e580-479b-910f-b719d69468b1.jpg?1592708649
 value=3.818
 rarity=M
 type=Creature

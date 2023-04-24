@@ -1,5 +1,5 @@
 name=Power Leak
-image=https://magiccards.info/scans/en/4e/92.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99f235d7-8f6b-4d17-bc36-6f2cb6d5deec.jpg?1559601321
 value=2.636
 rarity=C
 type=Enchantment

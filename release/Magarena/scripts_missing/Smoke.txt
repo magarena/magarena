@@ -1,5 +1,5 @@
 name=Smoke
-image=https://magiccards.info/scans/en/5e/268.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/109bea85-a991-46be-b502-0984160090a8.jpg?1562898982
 value=4.059
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Golgothian Sylex
-image=https://magiccards.info/scans/en/aq/16.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/856be1dd-a20b-49c2-be9d-7db76c7efd8b.jpg?1666943891
 value=2.312
 rarity=R
 type=Artifact

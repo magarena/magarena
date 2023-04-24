@@ -1,5 +1,5 @@
 name=Breath of Fury
-image=https://magiccards.info/scans/en/c16/121.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1fce58d-d754-4532-b4d0-4bb3cf108090.jpg?1562413284
 image_updated=2017-08-17
 value=3.990
 rarity=R

@@ -1,5 +1,5 @@
 name=Reclamation
-image=https://magiccards.info/scans/en/ia/378.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca335f4f-d345-4eb9-9bc6-74595c501078.jpg?1587912130
 value=3.423
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Leave
-image=https://magiccards.info/scans/en/hou/153a.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f928e8e8-aa20-402c-85bd-59106e9b9cc7.jpg?1562820622
 value=2.500
 rarity=R
 type=Instant

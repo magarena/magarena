@@ -1,5 +1,5 @@
 name=Worldpurge
-image=https://magiccards.info/scans/en/shm/156.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6f70fdb-264f-4545-97fa-3702168a66d4.jpg?1562836619
 value=3.145
 rarity=R
 type=Sorcery

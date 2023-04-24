@@ -1,5 +1,5 @@
 name=Jaya Ballard
-image=https://magiccards.info/scans/en/dom/132.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85169934-1033-49d7-8d42-45e982077a23.jpg?1625193945
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

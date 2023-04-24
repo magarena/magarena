@@ -1,5 +1,5 @@
 name=Rhox Faithmender
-image=https://magiccards.info/scans/en/m13/29.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62498e3c-2e9b-4444-a61c-fae3f8906010.jpg?1600697231
 value=3.944
 rarity=R
 type=Creature

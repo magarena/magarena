@@ -1,5 +1,5 @@
 name=Choking Vines
-image=https://magiccards.info/scans/en/wl/65.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cc4a7ee-f6f0-454a-9074-5988fdee1f34.jpg?1562801356
 value=3.542
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Skullmane Baku
-image=https://magiccards.info/scans/en/bok/83.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/005edd3a-238d-471a-8d5b-2df735c49f67.jpg?1562875119
 value=1.162
 rarity=C
 type=Creature

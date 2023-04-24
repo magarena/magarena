@@ -1,5 +1,5 @@
 name=Durkwood Tracker
-image=https://magiccards.info/scans/en/ts/194.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b49f5835-c933-4ba7-a3c9-34f4eb01f00d.jpg?1562933123
 value=2.500
 rarity=U
 type=Creature

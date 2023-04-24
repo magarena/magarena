@@ -1,5 +1,5 @@
 name=Icatian Store
-image=https://magiccards.info/scans/en/5e/423.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e68c45d3-0f3c-4429-a93e-4ca70ea6b1a4.jpg?1562594495
 value=2.950
 rarity=R
 type=Land

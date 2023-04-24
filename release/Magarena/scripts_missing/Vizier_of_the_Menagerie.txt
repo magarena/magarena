@@ -1,5 +1,5 @@
 name=Vizier of the Menagerie
-image=https://magiccards.info/scans/en/akh/192.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca204351-7a7e-4e4b-8c2b-f90fa0f9d724.jpg?1543676010
 value=2.500
 rarity=M
 type=Creature

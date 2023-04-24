@@ -1,5 +1,5 @@
 name=Nether Shadow
-image=https://magiccards.info/scans/en/5e/45.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11988c46-6d0c-46a8-85aa-8c6da72bfe30.jpg?1559592437
 value=4.034
 rarity=R
 type=Creature

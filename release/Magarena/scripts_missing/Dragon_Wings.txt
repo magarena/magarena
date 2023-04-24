@@ -1,5 +1,5 @@
 name=Dragon Wings
-image=https://magiccards.info/scans/en/sc/34.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7674ab4d-9bc0-45c3-88e1-3fd2c947cfaa.jpg?1562530706
 value=3.171
 rarity=C
 type=Enchantment

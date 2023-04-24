@@ -1,5 +1,5 @@
 name=Wall of Shields
-image=https://magiccards.info/scans/en/ia/322.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/6376c7c4-aaca-4625-83d4-a49f01aec535.jpg?1587912176
 value=2.462
 rarity=U
 type=Artifact,Creature

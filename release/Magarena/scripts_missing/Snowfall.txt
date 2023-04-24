@@ -1,5 +1,5 @@
 name=Snowfall
-image=https://magiccards.info/scans/en/ia/101.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/788ed793-3993-4a63-b9f9-9ac3947c3108.jpg?1562917282
 value=2.302
 rarity=C
 type=Enchantment

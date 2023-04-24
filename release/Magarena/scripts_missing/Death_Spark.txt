@@ -1,5 +1,5 @@
 name=Death Spark
-image=https://magiccards.info/scans/en/cstd/32.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/778d3497-2067-4d61-a322-5efb776dbaf1.jpg?1562869493
 value=3.368
 rarity=U
 type=Instant

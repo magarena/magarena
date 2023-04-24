@@ -1,5 +1,5 @@
 name=Assault Suit
-image=https://magiccards.info/scans/en/c16/242.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcc50d1e-fcc8-4f19-8e1a-9209725521ec.jpg?1592673555
 image_updated=2017-08-17
 value=2.500
 rarity=U

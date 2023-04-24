@@ -1,5 +1,5 @@
 name=Thoughtcutter Agent
-image=https://magiccards.info/scans/en/ala/201.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c9af048-43c2-44ff-9ca0-2a81609a4e91.jpg?1562706432
 value=2.010
 rarity=U
 type=Artifact,Creature

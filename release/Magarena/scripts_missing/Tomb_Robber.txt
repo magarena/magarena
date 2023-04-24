@@ -1,5 +1,5 @@
 name=Tomb Robber
-image=https://magiccards.info/scans/en/rix/87.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68132a28-b33b-48cb-acf8-42245312934e.jpg?1555040328
 value=2.500
 rarity=R
 type=Creature

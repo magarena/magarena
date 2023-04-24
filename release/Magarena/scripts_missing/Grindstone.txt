@@ -1,5 +1,5 @@
 name=Grindstone
-image=https://magiccards.info/scans/en/tp/280.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f15505d-b32f-4b71-8b99-f27bc964c5a8.jpg?1562428618
 value=2.500
 rarity=R
 type=Artifact

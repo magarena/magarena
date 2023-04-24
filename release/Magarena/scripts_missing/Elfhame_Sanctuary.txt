@@ -1,5 +1,5 @@
 name=Elfhame Sanctuary
-image=https://magiccards.info/scans/en/in/185.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6ab9a90c-5fd8-4f8c-b692-f98a2974810c.jpg?1562916434
 value=3.750
 rarity=U
 type=Enchantment

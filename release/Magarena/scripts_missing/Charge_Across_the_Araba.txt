@@ -1,5 +1,5 @@
 name=Charge Across the Araba
-image=https://magiccards.info/scans/en/sok/4.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe3e0bd8-d80f-4cda-b381-ed185072d83c.jpg?1562497049
 value=3.552
 rarity=U
 type=Instant

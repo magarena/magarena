@@ -1,5 +1,5 @@
 name=Barbarian Guides
-image=https://magiccards.info/scans/en/ia/174.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe65a045-dacb-4392-bcb6-843394ef98c9.jpg?1562942981
 value=2.023
 rarity=C
 type=Creature

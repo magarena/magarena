@@ -1,5 +1,5 @@
 name=Death of a Thousand Stings
-image=https://magiccards.info/scans/en/sok/64.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a31ca907-a274-436e-8433-7f11b0303f75.jpg?1562495143
 value=1.432
 rarity=C
 type=Instant

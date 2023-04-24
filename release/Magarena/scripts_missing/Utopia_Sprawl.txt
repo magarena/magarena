@@ -1,5 +1,5 @@
 name=Utopia Sprawl
-image=https://magiccards.info/scans/en/a25/192.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29b4050e-8b73-4f16-85e4-ec2a8faacf48.jpg?1631588210
 image_updated=2018-04-25
 value=3.974
 rarity=U

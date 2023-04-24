@@ -1,5 +1,5 @@
 name=Fiery Bombardment
-image=https://magiccards.info/scans/en/eve/52.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c348d137-4774-41d7-8b4d-d383c816ae2a.jpg?1589483408
 value=2.024
 rarity=R
 type=Enchantment

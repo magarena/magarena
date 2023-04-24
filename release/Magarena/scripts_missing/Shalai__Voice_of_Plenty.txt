@@ -1,5 +1,5 @@
 name=Shalai, Voice of Plenty
-image=https://magiccards.info/scans/en/dom/35.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db827ee7-6f2e-4e10-aac0-120fc2b69fbd.jpg?1562743987
 value=2.500
 rarity=R
 type=Legendary,Creature

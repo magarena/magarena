@@ -1,5 +1,5 @@
 name=Windborn Muse
-image=https://magiccards.info/scans/en/c16/80.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b098ad05-3e30-4a73-b327-da1cdc22786d.jpg?1641601741
 image_updated=2017-08-17
 value=4.171
 rarity=R

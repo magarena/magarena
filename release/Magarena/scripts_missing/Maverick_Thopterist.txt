@@ -1,5 +1,5 @@
 name=Maverick Thopterist
-image=https://magiccards.info/scans/en/aer/130.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28eb8ef1-5feb-4af1-bc39-dda5ba69546d.jpg?1592711129
 value=2.500
 rarity=U
 type=Creature

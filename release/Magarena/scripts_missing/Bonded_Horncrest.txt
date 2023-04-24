@@ -1,5 +1,5 @@
 name=Bonded Horncrest
-image=https://magiccards.info/scans/en/xln/133.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a50ad54a-73f8-4b97-b890-2be9a178bc42.jpg?1562561447
 value=2.500
 rarity=U
 type=Creature

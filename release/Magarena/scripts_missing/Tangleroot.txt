@@ -1,5 +1,5 @@
 name=Tangleroot
-image=https://magiccards.info/scans/en/mi/259.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87ff2c28-770b-49cb-be10-35429233e048.jpg?1562150008
 value=3.600
 rarity=R
 type=Artifact

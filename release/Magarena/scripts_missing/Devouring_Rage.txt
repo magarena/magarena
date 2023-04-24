@@ -1,5 +1,5 @@
 name=Devouring Rage
-image=https://magiccards.info/scans/en/chk/164.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/608a6e1e-3e95-4ce4-aaf6-5f14c0456850.jpg?1562760595
 value=1.871
 rarity=C
 type=Instant

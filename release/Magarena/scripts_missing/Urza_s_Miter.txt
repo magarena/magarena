@@ -1,5 +1,5 @@
 name=Urza's Miter
-image=https://magiccards.info/scans/en/aq/41.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23270d99-5a25-4647-95f8-64da9b8e8831.jpg?1562903304
 value=2.148
 rarity=R
 type=Artifact

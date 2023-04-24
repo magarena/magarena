@@ -1,5 +1,5 @@
 name=Ravenous Trap
-image=https://magiccards.info/scans/en/zen/109.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce0fae06-1a93-43ac-a349-f3719e60076e.jpg?1599705879
 value=4.415
 rarity=U
 type=Instant

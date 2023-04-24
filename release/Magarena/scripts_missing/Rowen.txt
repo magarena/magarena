@@ -1,5 +1,5 @@
 name=Rowen
-image=https://magiccards.info/scans/en/7e/266.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbc536ff-3e12-4e1b-b96f-b0c32dcb6734.jpg?1562246787
 value=3.948
 rarity=R
 type=Enchantment

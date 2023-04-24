@@ -1,5 +1,5 @@
 name=Mogg Infestation
-image=https://magiccards.info/scans/en/sh/93.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfeb1145-3729-481e-a314-c325ed2f2a35.jpg?1562431289
 value=2.500
 rarity=R
 type=Sorcery

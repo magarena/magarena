@@ -1,5 +1,5 @@
 name=Fork
-image=https://magiccards.info/scans/en/rv/152.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4ff994a-bddd-486d-9a7b-a8959b4cf1dd.jpg?1562949548
 value=4.520
 rarity=R
 type=Instant

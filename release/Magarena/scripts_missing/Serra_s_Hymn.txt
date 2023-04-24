@@ -1,5 +1,5 @@
 name=Serra's Hymn
-image=https://magiccards.info/scans/en/us/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74b8205a-608e-4274-a32c-802a7ce52d9c.jpg?1562919557
 value=2.097
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Pygmy Hippo
-image=https://magiccards.info/scans/en/vi/133.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e3f6220-6ead-46b4-8663-57609ef5a12e.jpg?1562277425
 value=4.125
 rarity=R
 type=Creature

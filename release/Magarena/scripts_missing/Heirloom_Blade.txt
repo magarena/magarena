@@ -1,5 +1,5 @@
 name=Heirloom Blade
-image=https://magiccards.info/scans/en/c17/52.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fcda1a2-87e0-4b9e-acb9-0bab521792fe.jpg?1631589007
 image_updated=2017-10-03
 value=2.500
 rarity=U

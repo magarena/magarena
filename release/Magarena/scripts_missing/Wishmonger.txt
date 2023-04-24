@@ -1,5 +1,5 @@
 name=Wishmonger
-image=https://magiccards.info/scans/en/mm/57.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a0d8834-109e-4235-a145-75edc43da0ec.jpg?1562380877
 value=3.089
 rarity=U
 type=Creature

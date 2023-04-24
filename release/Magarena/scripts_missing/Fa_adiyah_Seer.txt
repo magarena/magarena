@@ -1,5 +1,5 @@
 name=Fa'adiyah Seer
-image=https://magiccards.info/scans/en/pc/146.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70180e04-1453-43dc-9bbb-ab0d6291a8b5.jpg?1601079424
 value=2.873
 rarity=C
 type=Creature

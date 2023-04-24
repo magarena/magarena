@@ -1,5 +1,5 @@
 name=Heartseeker
-image=https://magiccards.info/scans/en/ds/124.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4f33c08-f3c3-4015-970d-ac0530f97c9c.jpg?1562638625
 value=3.306
 rarity=R
 type=Artifact

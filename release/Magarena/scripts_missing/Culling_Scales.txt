@@ -1,5 +1,5 @@
 name=Culling Scales
-image=https://magiccards.info/scans/en/mi/160.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db9a57d6-bba6-463d-ad12-6f93c035d16b.jpg?1562159907
 value=3.629
 rarity=R
 type=Artifact

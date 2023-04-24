@@ -1,5 +1,5 @@
 name=Demonlord Belzenlok
-image=https://magiccards.info/scans/en/dom/86.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffb4dbe8-15fa-467f-9366-66382b192113.jpg?1562746442
 value=2.500
 rarity=M
 type=Legendary,Creature

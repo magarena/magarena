@@ -1,5 +1,5 @@
 name=Nemesis Trap
-image=https://magiccards.info/scans/en/cmd/91.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a05215bb-dbf8-4b11-9dbd-dcd3caa167b4.jpg?1592713335
 value=2.640
 rarity=U
 type=Instant

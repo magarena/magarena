@@ -1,5 +1,5 @@
 name=Cover of Darkness
-image=https://magiccards.info/scans/en/on/133.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d6d7d88-d82b-40f4-bf57-ec5d7c480689.jpg?1562898088
 value=4.110
 rarity=R
 type=Enchantment

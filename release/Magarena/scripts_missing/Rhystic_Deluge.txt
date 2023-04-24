@@ -1,5 +1,5 @@
 name=Rhystic Deluge
-image=https://magiccards.info/scans/en/pr/43.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a3dd540-7f54-46fe-b1e8-7b07f57e71d0.jpg?1562896980
 value=3.135
 rarity=C
 type=Enchantment

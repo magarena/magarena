@@ -1,5 +1,5 @@
 name=Painter's Servant
-image=https://magiccards.info/scans/en/shm/257.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be407a81-b25a-4e5d-845e-be0cc0d18db8.jpg?1562835450
 value=4.583
 rarity=R
 type=Artifact,Creature

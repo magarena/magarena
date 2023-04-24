@@ -1,5 +1,5 @@
 name=Savage Beating
-image=https://magiccards.info/scans/en/ds/67.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3739d37-7865-46bf-abbc-7a5678709508.jpg?1562639405
 value=4.327
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Rewind
-image=https://magiccards.info/scans/en/mm3/47.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b832abcc-9ffd-47bf-827a-01b303c610ee.jpg?1594735655
 image_updated=2017-08-08
 value=4.248
 rarity=C

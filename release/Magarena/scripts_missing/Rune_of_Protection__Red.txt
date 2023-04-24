@@ -1,5 +1,5 @@
 name=Rune of Protection: Red
-image=https://magiccards.info/scans/en/us/40.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2916023b-cf67-443f-9ac7-f03313f9d3b7.jpg?1562903704
 value=3.855
 rarity=C
 type=Enchantment

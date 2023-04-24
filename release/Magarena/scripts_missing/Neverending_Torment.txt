@@ -1,5 +1,5 @@
 name=Neverending Torment
-image=https://magiccards.info/scans/en/sok/83.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f91f678-9d3a-4502-81a6-3e1676aa447a.jpg?1562493480
 value=3.589
 rarity=R
 type=Sorcery

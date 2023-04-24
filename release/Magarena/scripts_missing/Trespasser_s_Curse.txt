@@ -1,5 +1,5 @@
 name=Trespasser's Curse
-image=https://magiccards.info/scans/en/akh/112.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6ef4c59-ab84-4d84-b795-015b21ae3fe0.jpg?1543675434
 value=2.500
 rarity=C
 type=Enchantment

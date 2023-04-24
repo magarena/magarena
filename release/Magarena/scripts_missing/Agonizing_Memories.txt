@@ -1,5 +1,5 @@
 name=Agonizing Memories
-image=https://magiccards.info/scans/en/10e/126.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28bac7a8-d3bb-4032-b30b-db7328e4d2fc.jpg?1562545352
 value=3.390
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ulvenwald Captive
-image=https://magiccards.info/scans/en/emn/175a.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dbaef61-fa39-4ea7-bc21-445401c373e7.jpg?1576449562
 image_updated=2016-09-05
 value=2.500
 rarity=C

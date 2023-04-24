@@ -1,5 +1,5 @@
 name=Oppressive Rays
-image=https://magiccards.info/scans/en/m15/21.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53555768-edad-4441-b6a7-ea2a7cb38abd.jpg?1562787056
 value=2.714
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Umbra Mystic
-image=https://magiccards.info/scans/en/roe/52.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a55705d3-8640-478e-ace4-f4f900d617c5.jpg?1562707003
 value=3.742
 rarity=R
 type=Creature

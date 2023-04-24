@@ -1,5 +1,5 @@
 name=Glassblower's Puzzleknot
-image=https://magiccards.info/scans/en/kld/217.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d123031-6702-4d49-a788-42eb6dbc569e.jpg?1576383225
 image_updated=2016-10-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Nix
-image=https://magiccards.info/scans/en/fut/55.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3dab4f64-2a91-409a-b83b-45b22afd22ff.jpg?1562907421
 value=3.177
 rarity=R
 type=Instant

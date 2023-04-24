@@ -1,5 +1,5 @@
 name=Spinerock Knoll
-image=https://magiccards.info/scans/en/c16/327.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e5d990f-0eb4-4634-a446-7783915e8eec.jpg?1674143088
 image_updated=2017-08-17
 value=3.755
 rarity=R

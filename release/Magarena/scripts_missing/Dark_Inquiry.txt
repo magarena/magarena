@@ -1,5 +1,5 @@
 name=Dark Inquiry
-image=https://magiccards.info/scans/en/rix/65.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42eaa634-0add-4e3d-9eee-5712598dda3f.jpg?1555040160
 value=2.500
 rarity=C
 type=Sorcery

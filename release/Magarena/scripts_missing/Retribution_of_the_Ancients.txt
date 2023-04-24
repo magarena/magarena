@@ -1,5 +1,5 @@
 name=Retribution of the Ancients
-image=https://magiccards.info/scans/en/ktk/85.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d3ee29d-b374-471d-80c3-bcad7a4226e6.jpg?1562782474
 value=3.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Proteus Staff
-image=https://magiccards.info/scans/en/mi/230.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55e5c69c-43d0-4f5b-8720-40074eb122bb.jpg?1562144304
 value=4.343
 rarity=R
 type=Artifact

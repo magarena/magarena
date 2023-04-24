@@ -1,5 +1,5 @@
 name=Kusari-Gama
-image=https://magiccards.info/scans/en/chk/260.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6a700bd-6424-4a0c-b055-e8b64cf430ec.jpg?1562764208
 value=3.894
 rarity=R
 type=Artifact

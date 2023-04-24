@@ -1,5 +1,5 @@
 name=Leeches
-image=https://magiccards.info/scans/en/hl/111.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6028e2c-486b-40f8-8b74-7150eb72b9f1.jpg?1562934257
 value=3.688
 rarity=R
 type=Sorcery

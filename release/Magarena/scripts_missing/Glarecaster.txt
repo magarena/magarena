@@ -1,5 +1,5 @@
 name=Glarecaster
-image=https://magiccards.info/scans/en/on/30.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e505e8e-51aa-4415-81e6-cf022279edb0.jpg?1562924771
 value=3.518
 rarity=R
 type=Creature

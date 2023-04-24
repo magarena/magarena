@@ -1,5 +1,5 @@
 name=Icatian Infantry
-image=https://magiccards.info/scans/en/fe/147.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f95d42d8-ba75-43bf-81b8-b02374f03e83.jpg?1562941870
 value=2.988
 rarity=C
 type=Creature

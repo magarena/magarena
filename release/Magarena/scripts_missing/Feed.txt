@@ -1,5 +1,5 @@
 name=Feed
-image=https://magiccards.info/scans/en/akh/214b.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a47070a0-fd05-4ed9-a175-847a864478da.jpg?1549941630
 value=2.500
 rarity=R
 type=Sorcery

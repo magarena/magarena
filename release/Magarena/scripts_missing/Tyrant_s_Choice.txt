@@ -1,5 +1,5 @@
 name=Tyrant's Choice
-image=https://magiccards.info/scans/en/cns/30.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ed37b1c-7377-40bd-ae98-7f5ce56156b1.jpg?1562914207
 value=3.400
 rarity=C
 type=Sorcery

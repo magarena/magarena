@@ -1,5 +1,5 @@
 name=Lost in the Woods
-image=https://magiccards.info/scans/en/dka/123.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786
 value=2.415
 rarity=R
 type=Enchantment

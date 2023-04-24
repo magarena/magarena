@@ -1,5 +1,5 @@
 name=Bronze Bombshell
-image=https://magiccards.info/scans/en/di/160.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f2ec20d-b862-4f13-989c-aa88efa51cdf.jpg?1593273992
 value=3.684
 rarity=R
 type=Artifact,Creature

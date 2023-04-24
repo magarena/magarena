@@ -1,5 +1,5 @@
 name=Dunerider Outlaw
-image=https://magiccards.info/scans/en/pc/86.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42f6f584-9ed3-4e93-ac1a-31878a6b7118.jpg?1619395381
 value=3.588
 rarity=U
 type=Creature

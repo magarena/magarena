@@ -1,5 +1,5 @@
 name=Thud
-image=https://magiccards.info/scans/en/m19/163.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11bed78a-c579-424a-8fcc-322ce2630dbc.jpg?1562300357
 value=2.500
 rarity=U
 type=Sorcery

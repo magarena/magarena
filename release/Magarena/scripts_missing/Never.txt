@@ -1,5 +1,5 @@
 name=Never
-image=https://magiccards.info/scans/en/akh/212a.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4b32135-7061-4278-a01a-4fcbaadc9706.jpg?1549941342
 value=2.500
 rarity=R
 type=Sorcery

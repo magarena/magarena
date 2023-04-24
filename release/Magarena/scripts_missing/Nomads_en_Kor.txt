@@ -1,5 +1,5 @@
 name=Nomads en-Kor
-image=https://magiccards.info/scans/en/sh/109.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48ed076a-909f-4ef0-b85e-a1935b1c2827.jpg?1562429355
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kydele, Chosen of Kruphix
-image=https://magiccards.info/scans/en/c16/35.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f961cec-2f1f-4cd5-bcc3-72e1deb8779e.jpg?1562388621
 image_updated=2016-12-21
 value=2.500
 rarity=M

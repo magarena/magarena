@@ -1,5 +1,5 @@
 name=Forget
-image=https://magiccards.info/scans/en/6e/70.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cc8e367-1aa4-43b6-b17a-01bfb097f620.jpg?1562820146
 value=3.216
 rarity=R
 type=Sorcery

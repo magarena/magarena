@@ -1,5 +1,5 @@
 name=Thran Temporal Gateway
-image=https://magiccards.info/scans/en/dom/233.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72806f4f-74e8-4621-92b0-5c63bb898884.jpg?1562737720
 value=2.500
 rarity=R
 type=Legendary,Artifact

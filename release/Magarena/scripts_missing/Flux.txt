@@ -1,5 +1,5 @@
 name=Flux
-image=https://magiccards.info/scans/en/wl/39.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/368b28e4-a367-4a38-866d-c3768bd9b7ad.jpg?1562800201
 value=3.671
 rarity=C
 type=Sorcery

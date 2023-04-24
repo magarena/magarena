@@ -1,5 +1,5 @@
 name=Curse of Verbosity
-image=https://magiccards.info/scans/en/c17/9.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff611add-0b1b-4008-a78b-e793ccb38260.jpg?1674141304
 image_updated=2017-10-03
 value=2.500
 rarity=U

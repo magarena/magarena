@@ -1,5 +1,5 @@
 name=Nightmare Void
-image=https://magiccards.info/scans/en/rav/100.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1dc1d70d-c6ab-4ff7-9665-a92c0b4606fe.jpg?1592713808
 value=3.056
 rarity=U
 type=Sorcery

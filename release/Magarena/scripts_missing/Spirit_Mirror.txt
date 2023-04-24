@@ -1,5 +1,5 @@
 name=Spirit Mirror
-image=https://magiccards.info/scans/en/tp/260.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d7f0a38-6021-4f00-b486-db29997e3d06.jpg?1562429846
 value=2.500
 rarity=R
 type=Enchantment

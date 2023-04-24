@@ -1,5 +1,5 @@
 name=Aysen Abbey
-image=https://magiccards.info/scans/en/hl/137.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a2e669b-61b2-4729-b636-094796fb1d93.jpg?1562587059
 value=1.377
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Caravan Vigil
-image=https://magiccards.info/scans/en/isd/173.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a8dfb98-a975-41bf-8aac-c0001c9ddaa7.jpg?1562834425
 value=3.823
 rarity=C
 type=Sorcery

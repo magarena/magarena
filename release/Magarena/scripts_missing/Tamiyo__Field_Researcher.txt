@@ -1,5 +1,5 @@
 name=Tamiyo, Field Researcher
-image=https://magiccards.info/scans/en/emn/190.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f9aced7-9ae9-432f-b8c0-caac9cad098b.jpg?1576385026
 image_updated=2016-09-05
 value=2.500
 rarity=M

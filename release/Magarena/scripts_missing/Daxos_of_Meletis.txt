@@ -1,5 +1,5 @@
 name=Daxos of Meletis
-image=https://magiccards.info/scans/en/ths/191.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2eca63b-7fb2-4a69-84dd-aa0a038a2f8a.jpg?1673485026
 value=3.726
 rarity=R
 type=Legendary,Creature

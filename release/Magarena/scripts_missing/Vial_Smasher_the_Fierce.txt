@@ -1,5 +1,5 @@
 name=Vial Smasher the Fierce
-image=https://magiccards.info/scans/en/c16/49.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/722b1e02-2268-4e02-8d09-9b337da2a844.jpg?1562405249
 image_updated=2016-12-28
 value=2.500
 rarity=M

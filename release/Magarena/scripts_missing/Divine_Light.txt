@@ -1,5 +1,5 @@
 name=Divine Light
-image=https://magiccards.info/scans/en/ap/8.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f596ce1-b754-4e34-98e3-e1ddda2fd9b0.jpg?1562928792
 value=2.744
 rarity=C
 type=Sorcery

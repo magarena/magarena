@@ -1,5 +1,5 @@
 name=Feral Throwback
-image=https://magiccards.info/scans/en/le/126.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49e0c5e5-b293-419e-aac5-3b81af4b6498.jpg?1562909958
 value=3.986
 rarity=R
 type=Creature

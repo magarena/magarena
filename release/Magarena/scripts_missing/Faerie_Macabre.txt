@@ -1,5 +1,5 @@
 name=Faerie Macabre
-image=https://magiccards.info/scans/en/mma/86.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62103ceb-b16d-48ea-af42-d3df88d1ee4c.jpg?1562918100
 value=2.500
 rarity=C
 type=Creature

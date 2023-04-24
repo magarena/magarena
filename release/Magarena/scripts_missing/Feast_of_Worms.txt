@@ -1,5 +1,5 @@
 name=Feast of Worms
-image=https://magiccards.info/scans/en/chk/207.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33119e6a-d69b-4039-add2-97fe35a89e8e.jpg?1562758921
 value=2.023
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Skirge Familiar
-image=https://magiccards.info/scans/en/us/157.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d92fcf1-2ccd-47d2-9a24-f44b766a0b68.jpg?1626100411
 value=2.500
 rarity=U
 type=Creature

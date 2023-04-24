@@ -1,5 +1,5 @@
 name=Dawn to Dusk
-image=https://magiccards.info/scans/en/c15/66.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/605ad738-1f3e-47c2-b6cb-f79d2f6c16f1.jpg?1562704939
 image_updated=2016-02-29
 value=3.413
 rarity=U

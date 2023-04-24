@@ -1,5 +1,5 @@
 name=Reparations
-image=https://magiccards.info/scans/en/mr/338.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a9edf28-79c0-42a5-af0f-6df9c3a1f546.jpg?1562717834
 value=4.341
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wretched Confluence
-image=https://magiccards.info/scans/en/c15/23.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd9e38ad-389e-4178-9c8a-5ca89c1a2f73.jpg?1592672753
 image_updated=2016-02-29
 value=2.500
 rarity=R

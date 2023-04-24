@@ -1,5 +1,5 @@
 name=Quenchable Fire
-image=https://magiccards.info/scans/en/cfx/70.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee1c0ded-2a80-4ed4-b9fc-3a18bf5c3239.jpg?1562804519
 value=3.018
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Common Bond
-image=https://magiccards.info/scans/en/rtr/151.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59965953-1522-4103-9a6c-5534205d34d9.jpg?1562786754
 value=2.895
 rarity=C
 type=Instant

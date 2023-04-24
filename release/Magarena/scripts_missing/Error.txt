@@ -1,5 +1,5 @@
 name=Error
-image=https://magiccards.info/scans/en/c16/239b.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/383451e1-9b97-4c85-a044-7c68b61c8c65.jpg?1562395816
 image_updated=2017-08-17
 value=3.196
 rarity=U

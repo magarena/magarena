@@ -1,5 +1,5 @@
 name=Soul Echo
-image=https://magiccards.info/scans/en/mr/244.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb6f9427-ef5c-49fd-81e1-ddf130d69da0.jpg?1562721907
 value=2.857
 rarity=R
 type=Enchantment

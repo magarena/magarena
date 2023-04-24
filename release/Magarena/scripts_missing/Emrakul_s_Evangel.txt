@@ -1,5 +1,5 @@
 name=Emrakul's Evangel
-image=https://magiccards.info/scans/en/emn/156.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51c21822-972f-4c20-ac3b-80ba9af101c5.jpg?1576384776
 image_updated=2016-09-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Legion's Initiative
-image=https://magiccards.info/scans/en/dgm/81.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e41f950f-b818-4150-af71-b53a502ca0d5.jpg?1673148872
 value=3.821
 rarity=M
 type=Enchantment

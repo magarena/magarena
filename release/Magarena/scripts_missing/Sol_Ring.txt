@@ -1,5 +1,5 @@
 name=Sol Ring
-image=https://magiccards.info/scans/en/c16/272.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/eca9ae7b-a6d9-43ea-92d4-0110fd6643a7.jpg?1682210247
 image_updated=2017-08-17
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Goblin Freerunner
-image=https://magiccards.info/scans/en/ogw/111.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/5082e0a1-5c3e-4b8c-ba88-290151564133.jpg?1562911327
 image_updated=2016-02-29
 value=2.500
 rarity=C

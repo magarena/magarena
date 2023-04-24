@@ -1,5 +1,5 @@
 name=Wolf of Devil's Breach
-image=https://magiccards.info/scans/en/soi/192.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fedce04c-e7bc-4db0-94a1-66131761512c.jpg?1576384980
 value=2.500
 rarity=M
 type=Creature

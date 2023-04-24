@@ -1,5 +1,5 @@
 name=Dokai, Weaver of Life
-image=https://magiccards.info/scans/en/chk/202b.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58164521-aeec-43fc-9db9-d595432dea6f.jpg?1592710828
 value=3.154
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Conflux
-image=https://magiccards.info/scans/en/a25/202.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83777ac9-93d9-4097-96ca-a8a6a79b84e2.jpg?1562437568
 image_updated=2018-04-25
 value=3.049
 rarity=R

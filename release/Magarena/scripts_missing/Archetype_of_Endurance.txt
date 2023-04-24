@@ -1,5 +1,5 @@
 name=Archetype of Endurance
-image=https://magiccards.info/scans/en/bng/116.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/3145ca68-7a9d-4161-9456-518591251b56.jpg?1593092414
 value=3.118
 rarity=U
 type=Enchantment,Creature

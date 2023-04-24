@@ -1,5 +1,5 @@
 name=The Mirari Conjecture
-image=https://magiccards.info/scans/en/dom/57.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c68954c-4bab-4973-9819-ecd084438303.jpg?1562732195
 value=2.500
 rarity=R
 type=Enchantment

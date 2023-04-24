@@ -1,5 +1,5 @@
 name=Storm the Vault
-image=https://magiccards.info/scans/en/rix/173a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c16ba84e-a0cc-4c6c-9b80-713247b8fef9.jpg?1555040973
 value=2.500
 rarity=R
 type=Legendary,Enchantment

@@ -1,5 +1,5 @@
 name=Metamorphosis
-image=https://magiccards.info/scans/en/ch/38.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc73bd94-6e14-4798-b9ff-163ba7bdd663.jpg?1562945943
 value=2.756
 rarity=C
 type=Sorcery

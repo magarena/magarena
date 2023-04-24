@@ -1,5 +1,5 @@
 name=Tempting Wurm
-image=https://magiccards.info/scans/en/on/291.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/857c2b6c-cfdf-4c88-a334-2937cb7db603.jpg?1562926442
 value=3.610
 rarity=R
 type=Creature

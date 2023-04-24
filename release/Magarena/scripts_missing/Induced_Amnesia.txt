@@ -1,5 +1,5 @@
 name=Induced Amnesia
-image=https://magiccards.info/scans/en/rix/40.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4ee56f1-9f08-459f-8517-0fe7bc645fa3.jpg?1555039913
 value=2.500
 rarity=R
 type=Enchantment

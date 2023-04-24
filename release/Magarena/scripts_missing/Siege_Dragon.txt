@@ -1,5 +1,5 @@
 name=Siege Dragon
-image=https://magiccards.info/scans/en/m15/162.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12dc18f7-f4d4-421e-869e-c2e7598a9c77.jpg?1562782868
 value=2.917
 rarity=R
 type=Creature

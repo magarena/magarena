@@ -1,5 +1,5 @@
 name=Rift Elemental
-image=https://magiccards.info/scans/en/mma/127.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39dd1bc9-734b-41c6-941f-f9ed5eaa2337.jpg?1619397496
 value=3.867
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Jace's Mindseeker
-image=https://magiccards.info/scans/en/m14/61.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aeec1661-43e9-4e64-8798-c9aebad421e6.jpg?1592754464
 image_updated=2016-12-20
 value=3.344
 rarity=R

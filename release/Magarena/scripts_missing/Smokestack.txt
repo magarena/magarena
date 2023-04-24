@@ -1,5 +1,5 @@
 name=Smokestack
-image=https://magiccards.info/scans/en/us/309.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1af92a1-a86a-43eb-82fd-394f1168111e.jpg?1562937149
 value=4.500
 rarity=R
 type=Artifact

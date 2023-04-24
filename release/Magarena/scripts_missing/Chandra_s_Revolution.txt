@@ -1,5 +1,5 @@
 name=Chandra's Revolution
-image=https://magiccards.info/scans/en/aer/77.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fcee99c-72a0-4db1-b4c9-65c878284450.jpg?1576381766
 value=2.500
 rarity=C
 type=Sorcery

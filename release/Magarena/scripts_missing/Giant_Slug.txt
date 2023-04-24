@@ -1,5 +1,5 @@
 name=Giant Slug
-image=https://magiccards.info/scans/en/lg/13.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d78999ab-2ccc-41ec-b808-18e40702d1c3.jpg?1562938273
 image_updated=2016-12-04
 value=1.294
 rarity=C

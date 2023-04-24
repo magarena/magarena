@@ -1,5 +1,5 @@
 name=Asmira, Holy Avenger
-image=https://magiccards.info/scans/en/mr/316.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7d64600-84fc-42a5-a6a6-b26f98fac0a4.jpg?1562720964
 value=3.933
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Quillmane Baku
-image=https://magiccards.info/scans/en/bok/48.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe9140fc-9d50-4e63-aae6-1ba2974a25a3.jpg?1562880908
 value=1.518
 rarity=C
 type=Creature

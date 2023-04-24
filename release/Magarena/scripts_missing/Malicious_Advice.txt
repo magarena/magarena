@@ -1,5 +1,5 @@
 name=Malicious Advice
-image=https://magiccards.info/scans/en/ps/114.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b1547c2-ae9f-4871-a675-4026bf20e7e1.jpg?1562920903
 value=1.570
 rarity=C
 type=Instant

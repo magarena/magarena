@@ -1,5 +1,5 @@
 name=Kuldotha Flamefiend
-image=https://magiccards.info/scans/en/mbs/69.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/226e1d72-4ed0-4db6-ac0a-f4631db986a9.jpg?1599706527
 value=2.992
 rarity=U
 type=Creature

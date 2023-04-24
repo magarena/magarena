@@ -1,5 +1,5 @@
 name=Divining Witch
-image=https://magiccards.info/scans/en/ne/57.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be981eef-9dd2-4233-82c9-03f9f2e82c59.jpg?1562631792
 value=2.824
 rarity=R
 type=Creature

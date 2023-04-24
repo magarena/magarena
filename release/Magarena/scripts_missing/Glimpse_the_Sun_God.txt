@@ -1,5 +1,5 @@
 name=Glimpse the Sun God
-image=https://magiccards.info/scans/en/bng/13.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f241e5f7-3168-4bd2-b586-185aad3ae9d9.jpg?1593091455
 value=3.625
 rarity=U
 type=Instant

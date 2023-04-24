@@ -1,5 +1,5 @@
 name=Gilded Drake
-image=https://magiccards.info/scans/en/us/76.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8de3fdae-cc2c-4a14-b15b-4fe1a983dfbf.jpg?1562924943
 value=4.574
 rarity=R
 type=Creature

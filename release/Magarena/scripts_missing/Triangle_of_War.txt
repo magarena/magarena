@@ -1,5 +1,5 @@
 name=Triangle of War
-image=https://magiccards.info/scans/en/vi/158.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f59f9255-8b76-43b6-9365-d41f9618c2c3.jpg?1562944466
 value=2.500
 rarity=R
 type=Artifact

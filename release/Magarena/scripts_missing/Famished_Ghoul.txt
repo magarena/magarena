@@ -1,5 +1,5 @@
 name=Famished Ghoul
-image=https://magiccards.info/scans/en/od/135.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e413b65a-700d-44eb-a880-5a0118d2ebac.jpg?1562937645
 value=1.463
 rarity=U
 type=Creature

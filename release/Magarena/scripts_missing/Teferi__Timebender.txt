@@ -1,5 +1,5 @@
 name=Teferi, Timebender
-image=https://magiccards.info/scans/en/dom/270.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb2b7388-ac6b-45c0-a5cc-da6450724b59.jpg?1562744903
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

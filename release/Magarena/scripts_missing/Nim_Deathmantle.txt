@@ -1,5 +1,5 @@
 name=Nim Deathmantle
-image=https://magiccards.info/scans/en/som/188.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/787b1cc8-42b4-4d3e-9b8a-a252de297b1a.jpg?1673149391
 value=3.973
 rarity=R
 type=Artifact

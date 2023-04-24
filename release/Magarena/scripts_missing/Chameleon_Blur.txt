@@ -1,5 +1,5 @@
 name=Chameleon Blur
-image=https://magiccards.info/scans/en/ts/192.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d506b1c-f329-4e07-8926-a87b4abf16a7.jpg?1562917936
 value=1.583
 rarity=C
 type=Instant

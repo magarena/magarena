@@ -1,5 +1,5 @@
 name=Benalish Infantry
-image=https://magiccards.info/scans/en/wl/124.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8472303-b8ee-402b-a9ea-49abe2e01152.jpg?1562803995
 value=2.647
 rarity=C
 type=Creature

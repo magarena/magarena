@@ -1,5 +1,5 @@
 name=Bonded Construct
-image=https://magiccards.info/scans/en/ori/223.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43361897-f853-4cab-a132-5af48dad3b54.jpg?1562016910
 image_updated=2015-11-05
 value=2.500
 rarity=C

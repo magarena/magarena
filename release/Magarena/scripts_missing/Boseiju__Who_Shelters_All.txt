@@ -1,5 +1,5 @@
 name=Boseiju, Who Shelters All
-image=https://magiccards.info/scans/en/chk/273.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0180d9a8-992c-4d55-8ac4-33a587786993.jpg?1562757082
 value=4.058
 rarity=R
 type=Legendary,Land

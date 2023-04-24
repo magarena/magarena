@@ -1,5 +1,5 @@
 name=Chant of Vitu-Ghazi
-image=https://magiccards.info/scans/en/rav/7.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32e166c2-4e4f-4004-a52f-7f0085c2db88.jpg?1682208343
 value=2.500
 rarity=U
 type=Instant

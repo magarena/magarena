@@ -1,5 +1,5 @@
 name=Telekinesis
-image=https://magiccards.info/scans/en/lg/79.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d63f7944-5738-4a13-8f84-6813c188ac3a.jpg?1559592546
 value=3.816
 rarity=R
 type=Instant

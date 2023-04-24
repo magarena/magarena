@@ -1,5 +1,5 @@
 name=Oracle's Vault
-image=https://magiccards.info/scans/en/akh/234.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/0314bea5-4e04-4e74-9832-3e935eb90ee1.jpg?1673485419
 value=2.500
 rarity=R
 type=Artifact

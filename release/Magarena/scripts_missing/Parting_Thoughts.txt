@@ -1,5 +1,5 @@
 name=Parting Thoughts
-image=https://magiccards.info/scans/en/c16/15.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e60b5a1-923c-4c67-ae06-2a498dc46506.jpg?1562393855
 image_updated=2016-12-28
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Yidris, Maelstrom Wielder
-image=https://magiccards.info/scans/en/c16/50.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c219dd22-433c-4f6a-a0c4-fae12239291c.jpg?1562418099
 image_updated=2016-12-28
 value=2.500
 rarity=M

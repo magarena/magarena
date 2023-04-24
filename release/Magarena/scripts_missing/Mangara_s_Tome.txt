@@ -1,5 +1,5 @@
 name=Mangara's Tome
-image=https://magiccards.info/scans/en/mr/274.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/557ebacf-4a8f-4548-a142-533b7adfdac3.jpg?1562719274
 value=4.088
 rarity=R
 type=Artifact

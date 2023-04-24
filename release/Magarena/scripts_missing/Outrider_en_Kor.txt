@@ -1,5 +1,5 @@
 name=Outrider en-Kor
-image=https://magiccards.info/scans/en/ts/31.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de9b2506-ead4-49ff-a733-66f3f13dbe17.jpg?1619393212
 value=3.784
 rarity=U
 type=Creature

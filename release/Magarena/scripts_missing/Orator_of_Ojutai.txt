@@ -1,5 +1,5 @@
 name=Orator of Ojutai
-image=https://magiccards.info/scans/en/dtk/28.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46f90a7e-e11c-43bd-b4a2-a0970848fe1b.jpg?1562606811
 value=2.500
 rarity=U
 type=Creature

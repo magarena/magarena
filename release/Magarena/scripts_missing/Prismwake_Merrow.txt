@@ -1,5 +1,5 @@
 name=Prismwake Merrow
-image=https://magiccards.info/scans/en/shm/46.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d7ac836-07c9-469d-9ed0-4a0aab457e31.jpg?1562829915
 value=2.111
 rarity=C
 type=Creature

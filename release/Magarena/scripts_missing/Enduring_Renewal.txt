@@ -1,5 +1,5 @@
 name=Enduring Renewal
-image=https://magiccards.info/scans/en/tsts/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57a966e3-c9ba-4105-a36b-54ca70ba9b77.jpg?1562776464
 value=4.325
 rarity=R
 type=Enchantment

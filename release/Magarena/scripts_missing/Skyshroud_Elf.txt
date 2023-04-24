@@ -1,5 +1,5 @@
 name=Skyshroud Elf
-image=https://magiccards.info/scans/en/tp/149.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd47a927-3ab3-4d2e-b962-ce94eeaba4f9.jpg?1562431737
 value=2.500
 rarity=C
 type=Creature

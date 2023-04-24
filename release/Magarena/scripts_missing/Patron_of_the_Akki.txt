@@ -1,5 +1,5 @@
 name=Patron of the Akki
-image=https://magiccards.info/scans/en/bok/115.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18325283-ace8-414b-bf48-2ed36b5a9c24.jpg?1562875682
 value=3.845
 rarity=R
 type=Legendary,Creature

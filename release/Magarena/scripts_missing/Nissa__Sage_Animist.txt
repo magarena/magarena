@@ -1,5 +1,5 @@
 name=Nissa, Sage Animist
-image=https://magiccards.info/scans/en/ori/189b.jpg
+image=https://cards.scryfall.io/border_crop/back/f/f/ff0063da-ab6b-499d-8e87-8b34d46f0372.jpg?1562209457
 image_updated=2015-11-05
 value=2.500
 rarity=M

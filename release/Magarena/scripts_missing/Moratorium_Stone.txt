@@ -1,5 +1,5 @@
 name=Moratorium Stone
-image=https://magiccards.info/scans/en/gp/154.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5529edfc-22bd-43dc-878b-6ec9fba74795.jpg?1593272950
 value=3.371
 rarity=R
 type=Artifact

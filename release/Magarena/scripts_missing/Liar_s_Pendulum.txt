@@ -1,5 +1,5 @@
 name=Liar's Pendulum
-image=https://magiccards.info/scans/en/mi/196.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66372597-c182-4850-a630-231737b1482b.jpg?1562146383
 value=3.096
 rarity=R
 type=Artifact

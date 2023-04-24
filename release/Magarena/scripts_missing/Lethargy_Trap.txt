@@ -1,5 +1,5 @@
 name=Lethargy Trap
-image=https://magiccards.info/scans/en/zen/51.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/351aa3f2-864a-4921-a01c-8712560087bb.jpg?1562611200
 value=2.643
 rarity=C
 type=Instant

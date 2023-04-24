@@ -1,5 +1,5 @@
 name=Trumpeting Armodon
-image=https://magiccards.info/scans/en/tp/156.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38f94fd1-6f85-41ad-9674-f05cc893324f.jpg?1562053743
 image_updated=2017-01-11
 value=2.860
 rarity=U

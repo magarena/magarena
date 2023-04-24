@@ -1,5 +1,5 @@
 name=Nova Pentacle
-image=https://magiccards.info/scans/en/lg/234.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e627164-da4e-4860-b516-7304fc41161e.jpg?1562897936
 value=3.150
 rarity=R
 type=Artifact

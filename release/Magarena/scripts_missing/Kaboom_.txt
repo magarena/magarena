@@ -1,5 +1,5 @@
 name=Kaboom!
-image=https://magiccards.info/scans/en/on/214.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e81e5fc-0e18-4dd8-a505-aa7dba8521a8.jpg?1618650505
 value=3.679
 rarity=R
 type=Sorcery

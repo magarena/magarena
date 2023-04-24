@@ -1,5 +1,5 @@
 name=Territorial Dispute
-image=https://magiccards.info/scans/en/mm/217.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fa8a13a-f09f-4b10-8fab-3ea4fdc643d1.jpg?1562380862
 value=2.079
 rarity=R
 type=Enchantment

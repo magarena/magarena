@@ -1,5 +1,5 @@
 name=Staff of the Ages
-image=https://magiccards.info/scans/en/ia/315.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c709836-55b6-4de9-b190-b5f66dc53c87.jpg?1587856773
 value=3.102
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Essence Flux
-image=https://magiccards.info/scans/en/soi/61.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2600a51b-0dae-431e-a0a7-2b1421706a6a.jpg?1600697866
 value=2.500
 rarity=U
 type=Instant

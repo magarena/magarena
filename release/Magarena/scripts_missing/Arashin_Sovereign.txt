@@ -1,5 +1,5 @@
 name=Arashin Sovereign
-image=https://magiccards.info/scans/en/dtk/212.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db7fbf78-8cb6-4fbf-b925-5543bcb64b45.jpg?1562794043
 value=2.500
 rarity=R
 type=Creature

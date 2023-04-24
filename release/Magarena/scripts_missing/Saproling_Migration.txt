@@ -1,5 +1,5 @@
 name=Saproling Migration
-image=https://magiccards.info/scans/en/dom/178.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2578d25e-5f8d-42ff-90ce-4e7d100cbbb6.jpg?1562732840
 value=2.500
 rarity=C
 type=Sorcery

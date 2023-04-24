@@ -1,5 +1,5 @@
 name=Charging Tuskodon
-image=https://magiccards.info/scans/en/rix/97.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e49960d-4b45-4d3b-9c6e-e7b717b4feaa.jpg?1555040392
 value=2.500
 rarity=U
 type=Creature

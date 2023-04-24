@@ -1,5 +1,5 @@
 name=Reborn Hero
-image=https://magiccards.info/scans/en/tr/14.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4acbc7f-c86e-4285-a66d-d7b03fe44377.jpg?1574250428
 value=3.744
 rarity=R
 type=Creature

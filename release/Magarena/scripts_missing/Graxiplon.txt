@@ -1,5 +1,5 @@
 name=Graxiplon
-image=https://magiccards.info/scans/en/on/86.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c16e565-0b7f-46b1-a091-64c47c923a9f.jpg?1562897735
 value=1.654
 rarity=U
 type=Creature

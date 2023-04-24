@@ -1,5 +1,5 @@
 name=Plow Through Reito
-image=https://magiccards.info/scans/en/sok/22.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11e78f75-bf58-4c61-9654-c5d355b5e526.jpg?1562492504
 value=2.277
 rarity=C
 type=Instant

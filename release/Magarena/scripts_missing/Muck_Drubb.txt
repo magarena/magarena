@@ -1,5 +1,5 @@
 name=Muck Drubb
-image=https://magiccards.info/scans/en/pc/76.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb2aaec8-43a0-4639-8190-3ce1273a2711.jpg?1619395760
 value=3.300
 rarity=U
 type=Creature

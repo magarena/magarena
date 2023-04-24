@@ -1,5 +1,5 @@
 name=Liquid Fire
-image=https://magiccards.info/scans/en/od/201.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b836d4c-38f3-4661-9dc7-0c9baaa595a5.jpg?1562920887
 value=2.148
 rarity=U
 type=Sorcery

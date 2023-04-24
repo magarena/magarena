@@ -1,5 +1,5 @@
 name=Curse of the Bloody Tome
-image=https://magiccards.info/scans/en/isd/50.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7865e11-263b-4d61-af54-907c1acbb54f.jpg?1677073534
 value=3.313
 rarity=C
 type=Enchantment

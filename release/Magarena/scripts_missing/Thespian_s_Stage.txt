@@ -1,5 +1,5 @@
 name=Thespian's Stage
-image=https://magiccards.info/scans/en/gtc/248.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/269a926d-7788-4668-8bd8-7572dbf5f5eb.jpg?1599710662
 value=4.000
 rarity=R
 type=Land

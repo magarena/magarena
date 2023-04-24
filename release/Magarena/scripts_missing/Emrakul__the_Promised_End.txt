@@ -1,5 +1,5 @@
 name=Emrakul, the Promised End
-image=https://magiccards.info/scans/en/emn/6.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d74a469-c71d-4773-99d3-5456b31df424.jpg?1576383727
 image_updated=2016-09-05
 value=2.500
 rarity=M

@@ -1,5 +1,5 @@
 name=Divine Deflection
-image=https://magiccards.info/scans/en/avr/18.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec06e42f-e294-44ef-8fa8-1d1a4c2090d8.jpg?1592708282
 value=3.880
 rarity=R
 type=Instant

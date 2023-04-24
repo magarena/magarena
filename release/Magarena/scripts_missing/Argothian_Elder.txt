@@ -1,5 +1,5 @@
 name=Argothian Elder
-image=https://magiccards.info/scans/en/br/6.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/453e7cb4-bc37-4932-85b7-3a4e160b73dc.jpg?1562909315
 value=3.872
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Phyrexian Splicer
-image=https://magiccards.info/scans/en/tp/293.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1e9061a-b9e6-49ec-bc7e-c18557da9fd5.jpg?1562055933
 value=3.432
 rarity=U
 type=Artifact

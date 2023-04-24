@@ -1,5 +1,5 @@
 name=Oathkeeper, Takeno's Daisho
-image=https://magiccards.info/scans/en/chk/265.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01b7c8e4-db88-48f3-bfd5-8d990f449b1c.jpg?1562757084
 value=3.306
 rarity=R
 type=Legendary,Artifact

@@ -1,5 +1,5 @@
 name=Kiora's Dismissal
-image=https://magiccards.info/scans/en/jou/44.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21b040e5-651b-42ca-b487-66cf1d8180f9.jpg?1593095483
 value=3.238
 rarity=U
 type=Instant

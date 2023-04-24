@@ -1,5 +1,5 @@
 name=Holistic Wisdom
-image=https://magiccards.info/scans/en/od/243.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/2134a564-b089-4049-bd9c-a3f10e072263.jpg?1562901147
 value=3.447
 rarity=R
 type=Enchantment

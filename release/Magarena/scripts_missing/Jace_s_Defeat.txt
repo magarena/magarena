@@ -1,5 +1,5 @@
 name=Jace's Defeat
-image=https://magiccards.info/scans/en/hou/38.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6b103c1-9b25-4bfe-9081-570977e9fdad.jpg?1562814148
 value=2.500
 rarity=U
 type=Instant

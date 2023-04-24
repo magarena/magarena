@@ -1,5 +1,5 @@
 name=Harsh Mentor
-image=https://magiccards.info/scans/en/akh/135.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8936bf9d-c973-4bce-b5c2-2a01b7953638.jpg?1543675603
 value=2.500
 rarity=R
 type=Creature

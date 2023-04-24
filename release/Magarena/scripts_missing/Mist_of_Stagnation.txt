@@ -1,5 +1,5 @@
 name=Mist of Stagnation
-image=https://magiccards.info/scans/en/ju/48.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76d03121-9515-4101-9d60-e01225533f44.jpg?1562630507
 value=3.861
 rarity=R
 type=Enchantment

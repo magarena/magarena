@@ -1,5 +1,5 @@
 name=Mana Cylix
-image=https://magiccards.info/scans/en/cfx/138.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68e25c75-5e20-4990-9b7e-9d04c94fee9f.jpg?1562801468
 value=3.271
 rarity=C
 type=Artifact

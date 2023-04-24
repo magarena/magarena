@@ -1,5 +1,5 @@
 name=Tunnel Ignus
-image=https://magiccards.info/scans/en/som/105.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3016e6b-32b2-4fa7-91c0-ec8fbe345760.jpg?1562822715
 value=3.383
 rarity=R
 type=Creature

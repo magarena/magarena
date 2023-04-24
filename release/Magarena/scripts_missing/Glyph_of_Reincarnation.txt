@@ -1,5 +1,5 @@
 name=Glyph of Reincarnation
-image=https://magiccards.info/scans/en/lg/103.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a67e8214-a192-4143-9d5e-d0e254e1bf6e.jpg?1562860623
 value=1.620
 rarity=C
 type=Instant

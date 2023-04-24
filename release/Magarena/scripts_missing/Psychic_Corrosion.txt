@@ -1,5 +1,5 @@
 name=Psychic Corrosion
-image=https://magiccards.info/scans/en/m19/68.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/285d22fa-1623-463a-83c0-a9aa7c969ce2.jpg?1562301173
 value=2.500
 rarity=U
 type=Enchantment

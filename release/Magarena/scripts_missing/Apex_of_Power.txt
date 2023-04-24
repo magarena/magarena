@@ -1,5 +1,5 @@
 name=Apex of Power
-image=https://magiccards.info/scans/en/m19/129.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc922e89-c816-476a-82c3-3c6b9fd196a9.jpg?1631586913
 value=2.500
 rarity=M
 type=Sorcery

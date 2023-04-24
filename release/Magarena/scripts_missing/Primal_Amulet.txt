@@ -1,5 +1,5 @@
 name=Primal Amulet
-image=https://magiccards.info/scans/en/xln/243a.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4d379b5-7f56-4a7d-a4ac-131fc3d579c6.jpg?1562564625
 value=2.500
 rarity=R
 type=Artifact

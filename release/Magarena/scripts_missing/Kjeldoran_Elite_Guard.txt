@@ -1,5 +1,5 @@
 name=Kjeldoran Elite Guard
-image=https://magiccards.info/scans/en/cstd/2.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0121644b-9d5e-4f0e-bc39-6532028f7480.jpg?1562867379
 value=2.667
 rarity=U
 type=Creature

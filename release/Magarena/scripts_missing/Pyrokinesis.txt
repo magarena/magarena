@@ -1,5 +1,5 @@
 name=Pyrokinesis
-image=https://magiccards.info/scans/en/ema/143.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25f98f02-9ada-4561-93fd-9cfcb0f48b5d.jpg?1580014628
 value=4.368
 rarity=R
 type=Instant

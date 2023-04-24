@@ -1,5 +1,5 @@
 name=Tunnel Vision
-image=https://magiccards.info/scans/en/rav/72.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae3eba31-02eb-449a-8a36-899ada5664bc.jpg?1598914579
 value=3.871
 rarity=R
 type=Sorcery

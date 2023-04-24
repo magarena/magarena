@@ -1,5 +1,5 @@
 name=Rivals' Duel
-image=https://magiccards.info/scans/en/pc2/51.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/240bd440-b759-4f53-ae35-820011877a44.jpg?1562901698
 value=3.094
 rarity=U
 type=Sorcery

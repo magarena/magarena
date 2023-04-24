@@ -1,5 +1,5 @@
 name=All Suns' Dawn
-image=https://magiccards.info/scans/en/mm2/138.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15629398-bb20-4ff3-ab0e-061dcea916d5.jpg?1562259456
 value=2.500
 rarity=R
 type=Sorcery

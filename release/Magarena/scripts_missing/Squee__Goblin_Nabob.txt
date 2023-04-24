@@ -1,5 +1,5 @@
 name=Squee, Goblin Nabob
-image=https://magiccards.info/scans/en/mma/130.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bca6f8b-6e6a-43dd-b6a4-9eedfcc24281.jpg?1568004466
 value=4.521
 rarity=R
 type=Legendary,Creature

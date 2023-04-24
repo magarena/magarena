@@ -1,5 +1,5 @@
 name=Swelter
-image=https://magiccards.info/scans/en/ju/101.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f667c26-40f5-4ac5-87a4-cb03f70590a2.jpg?1562630930
 value=2.293
 rarity=U
 type=Sorcery

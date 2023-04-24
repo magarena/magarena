@@ -1,5 +1,5 @@
 name=Loafing Giant
-image=https://magiccards.info/scans/en/in/153.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fab5f738-04d0-44c9-88ec-28469b668040.jpg?1562945565
 value=1.873
 rarity=R
 type=Creature

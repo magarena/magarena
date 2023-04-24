@@ -1,5 +1,5 @@
 name=Frenetic Sliver
-image=https://magiccards.info/scans/en/pc/157.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fbd25e4-6a45-4e70-8cba-8ba5ce1ee550.jpg?1645327815
 value=3.250
 rarity=U
 type=Creature

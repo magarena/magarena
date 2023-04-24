@@ -1,5 +1,5 @@
 name=Harsh Justice
-image=https://magiccards.info/scans/en/po/180.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56bc09f5-93af-4bc1-b798-d01ece1e6864.jpg?1562915312
 value=4.133
 rarity=R
 type=Instant

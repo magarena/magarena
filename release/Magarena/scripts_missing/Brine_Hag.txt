@@ -1,5 +1,5 @@
 name=Brine Hag
-image=https://magiccards.info/scans/en/lg/49.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a1e7796-fbfb-4976-879f-bb748429d5c7.jpg?1562858234
 value=3.434
 rarity=U
 type=Creature

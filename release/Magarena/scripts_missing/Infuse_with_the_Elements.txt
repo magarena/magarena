@@ -1,5 +1,5 @@
 name=Infuse with the Elements
-image=https://magiccards.info/scans/en/bfz/175.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0ec25fe4-7967-42e2-8790-593738991eaa.jpg?1562898418
 image_updated=2015-11-08
 value=2.500
 rarity=U

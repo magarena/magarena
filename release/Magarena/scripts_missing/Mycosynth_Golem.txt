@@ -1,5 +1,5 @@
 name=Mycosynth Golem
-image=https://magiccards.info/scans/en/5dn/137.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3200fa2-182f-4515-b326-ab4fdb95c8c1.jpg?1562879547
 value=4.435
 rarity=R
 type=Artifact,Creature

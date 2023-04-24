@@ -1,5 +1,5 @@
 name=Cauldron of Souls
-image=https://magiccards.info/scans/en/c16/246.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbd4604e-c21a-42a1-b099-aad7f9263a82.jpg?1562276038
 image_updated=2017-08-17
 value=3.799
 rarity=R

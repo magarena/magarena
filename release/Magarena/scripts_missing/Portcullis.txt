@@ -1,5 +1,5 @@
 name=Portcullis
-image=https://magiccards.info/scans/en/sh/133.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4de4af2-fa75-4a87-b0e1-0117727917a5.jpg?1562597339
 value=4.413
 rarity=R
 type=Artifact

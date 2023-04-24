@@ -1,5 +1,5 @@
 name=Crime
-image=https://magiccards.info/scans/en/di/150a.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2edeab08-86eb-4fa8-ba24-23dacb32e0fd.jpg?1593273920
 value=4.217
 rarity=R
 type=Sorcery

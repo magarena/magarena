@@ -1,5 +1,5 @@
 name=Anurid Scavenger
-image=https://magiccards.info/scans/en/tr/119.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21a21190-3c05-40fe-9310-493ed0f9e42e.jpg?1562628898
 value=3.714
 rarity=U
 type=Creature

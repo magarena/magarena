@@ -1,5 +1,5 @@
 name=Overwhelm
-image=https://magiccards.info/scans/en/mm2/152.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91d7d3ca-8e0d-43ce-9cdb-310d017873ca.jpg?1562265194
 value=2.500
 rarity=U
 type=Sorcery

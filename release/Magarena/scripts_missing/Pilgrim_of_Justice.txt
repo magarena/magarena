@@ -1,5 +1,5 @@
 name=Pilgrim of Justice
-image=https://magiccards.info/scans/en/od/40.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6103a3a7-78ce-4a66-bd82-434e0bd9dea4.jpg?1562912923
 value=2.562
 rarity=C
 type=Creature

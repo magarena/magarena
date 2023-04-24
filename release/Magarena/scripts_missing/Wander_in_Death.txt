@@ -1,5 +1,5 @@
 name=Wander in Death
-image=https://magiccards.info/scans/en/akh/115.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aea7ad5c-d9b9-4b12-90dd-c02399d73b26.jpg?1543675458
 value=2.500
 rarity=C
 type=Sorcery

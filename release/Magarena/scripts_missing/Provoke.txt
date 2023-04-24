@@ -1,5 +1,5 @@
 name=Provoke
-image=https://magiccards.info/scans/en/cns/174.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d0df301-737c-417b-b924-0a6ae42c77a0.jpg?1562430794
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Necromancy
-image=https://magiccards.info/scans/en/vi/14.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/311a6257-dd77-4bb6-81cb-c8e7862350f3.jpg?1562277431
 value=4.556
 rarity=U
 type=Enchantment

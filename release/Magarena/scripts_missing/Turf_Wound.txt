@@ -1,5 +1,5 @@
 name=Turf Wound
-image=https://magiccards.info/scans/en/in/177.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91392e9f-f96a-4ac5-b1f1-c73540cf249e.jpg?1562924301
 value=2.897
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Soul Sculptor
-image=https://magiccards.info/scans/en/us/53.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe6ef073-1c83-47a4-b19d-86fb8bed5db9.jpg?1562948888
 value=3.814
 rarity=R
 type=Creature

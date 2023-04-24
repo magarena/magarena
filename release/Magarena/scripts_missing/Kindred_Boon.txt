@@ -1,5 +1,5 @@
 name=Kindred Boon
-image=https://magiccards.info/scans/en/c17/5.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b09c3dc-94ed-4d9d-8c5f-51169200de45.jpg?1562605325
 image_updated=2017-10-03
 value=2.500
 rarity=R

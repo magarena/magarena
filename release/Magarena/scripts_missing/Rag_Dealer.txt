@@ -1,5 +1,5 @@
 name=Rag Dealer
-image=https://magiccards.info/scans/en/chk/138.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18ef007a-fcf4-4293-933e-4f9f7f602002.jpg?1593860754
 value=2.903
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Curse of Vengeance
-image=https://magiccards.info/scans/en/c16/12.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22e7d0e3-a87c-414f-8f12-314083539a2a.jpg?1562391714
 image_updated=2016-11-28
 value=2.500
 rarity=R

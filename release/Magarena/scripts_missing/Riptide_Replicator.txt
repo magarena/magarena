@@ -1,5 +1,5 @@
 name=Riptide Replicator
-image=https://magiccards.info/scans/en/on/309.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41bb314f-237a-43fc-95c8-b26188dc4476.jpg?1562910457
 value=4.163
 rarity=R
 type=Artifact

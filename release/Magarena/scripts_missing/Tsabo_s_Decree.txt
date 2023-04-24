@@ -1,5 +1,5 @@
 name=Tsabo's Decree
-image=https://magiccards.info/scans/en/in/129.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c1a0ebd-1add-49e6-b5e6-5b26abb1de88.jpg?1562897461
 value=4.254
 rarity=R
 type=Instant

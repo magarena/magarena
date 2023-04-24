@@ -1,5 +1,5 @@
 name=Call
-image=https://magiccards.info/scans/en/dgm/123b.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a01d6540-9eaf-4e08-a62d-682551ee78e9.jpg?1562924895
 value=3.889
 rarity=R
 type=Sorcery

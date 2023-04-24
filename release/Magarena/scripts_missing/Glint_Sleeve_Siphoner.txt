@@ -1,5 +1,5 @@
 name=Glint-Sleeve Siphoner
-image=https://magiccards.info/scans/en/aer/62.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/315976db-4cab-4393-8386-ce3b0ae3f490.jpg?1576381673
 value=2.500
 rarity=R
 type=Creature

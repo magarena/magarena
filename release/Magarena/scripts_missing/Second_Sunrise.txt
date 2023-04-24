@@ -1,5 +1,5 @@
 name=Second Sunrise
-image=https://magiccards.info/scans/en/mi/20.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e50ee7c-f2a2-4d49-a1cc-8233fd8dd0c5.jpg?1562143349
 value=4.373
 rarity=R
 type=Instant

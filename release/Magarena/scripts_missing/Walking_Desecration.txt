@@ -1,5 +1,5 @@
 name=Walking Desecration
-image=https://magiccards.info/scans/en/on/180.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c39f3e91-571a-4990-b1e8-db2a5bac34af.jpg?1562941229
 value=3.079
 rarity=U
 type=Creature

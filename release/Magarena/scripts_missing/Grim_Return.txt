@@ -1,5 +1,5 @@
 name=Grim Return
-image=https://magiccards.info/scans/en/m14/100.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15b69f74-3b54-4db4-abf3-b71db8cc9562.jpg?1562826367
 value=3.594
 rarity=R
 type=Instant

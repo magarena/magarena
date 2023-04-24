@@ -1,5 +1,5 @@
 name=Harnessed Lightning
-image=https://magiccards.info/scans/en/kld/117.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9be9b5c-eed4-4a5d-962f-3482da5a6f1d.jpg?1576382079
 image_updated=2016-10-05
 value=2.500
 rarity=U

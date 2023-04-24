@@ -1,5 +1,5 @@
 name=Sungrass Prairie
-image=https://magiccards.info/scans/en/c16/328.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdc9ad2c-a0a9-4b38-8941-c300751ce23d.jpg?1682210664
 image_updated=2017-08-17
 value=3.810
 rarity=R

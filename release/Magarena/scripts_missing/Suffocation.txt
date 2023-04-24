@@ -1,5 +1,5 @@
 name=Suffocation
-image=https://magiccards.info/scans/en/ai/57.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d22104df-8147-45fd-897a-f99a815be062.jpg?1562770180
 value=2.821
 rarity=U
 type=Instant

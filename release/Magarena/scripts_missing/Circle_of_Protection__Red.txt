@@ -1,5 +1,5 @@
 name=Circle of Protection: Red
-image=https://magiccards.info/scans/en/9e/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7920b6d-ff71-4802-9589-e1df0c58b9ff.jpg?1562742407
 value=3.544
 rarity=U
 type=Enchantment

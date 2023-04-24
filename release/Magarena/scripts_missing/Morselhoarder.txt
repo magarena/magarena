@@ -1,5 +1,5 @@
 name=Morselhoarder
-image=https://magiccards.info/scans/en/shm/212.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/589f477e-fd69-4410-b9ba-1d45b25fec31.jpg?1562830450
 value=3.838
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Eon Hub
-image=https://magiccards.info/scans/en/5dn/120.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5d6b270-b4c9-489d-9322-7c8ddc0ca0ac.jpg?1562879962
 value=4.387
 rarity=R
 type=Artifact

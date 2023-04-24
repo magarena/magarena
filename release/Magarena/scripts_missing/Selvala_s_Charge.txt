@@ -1,5 +1,5 @@
 name=Selvala's Charge
-image=https://magiccards.info/scans/en/cns/39.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/426b63f9-5788-45d2-b934-1579320bc775.jpg?1562864963
 value=3.429
 rarity=U
 type=Sorcery

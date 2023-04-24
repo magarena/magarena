@@ -1,5 +1,5 @@
 name=Commander's Sphere
-image=https://magiccards.info/scans/en/c16/248.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8ffce25-18a5-4232-aa7c-d5c1a88e6052.jpg?1682209978
 image_updated=2017-08-17
 value=2.500
 rarity=C

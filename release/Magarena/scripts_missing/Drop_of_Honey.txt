@@ -1,5 +1,5 @@
 name=Drop of Honey
-image=https://magiccards.info/scans/en/an/31.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/588f1bc5-2230-4437-8d5e-a18f6e55b390.jpg?1562915819
 value=4.371
 rarity=R
 type=Enchantment

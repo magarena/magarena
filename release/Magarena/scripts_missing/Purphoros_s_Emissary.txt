@@ -1,5 +1,5 @@
 name=Purphoros's Emissary
-image=https://magiccards.info/scans/en/ths/136.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3dd318d3-3d84-4f3f-a48f-6a242474a4a2.jpg?1673147882
 value=3.538
 rarity=U
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Scent of Brine
-image=https://magiccards.info/scans/en/ud/45.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d117bf8d-23ec-4f9d-99d0-3a990c5f7075.jpg?1562445215
 value=3.100
 rarity=C
 type=Instant

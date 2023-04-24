@@ -1,5 +1,5 @@
 name=Woodvine Elemental
-image=https://magiccards.info/scans/en/cns/52.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8acdb147-2339-4c55-b4f6-6a79679f2040.jpg?1562865926
 value=3.778
 rarity=U
 type=Creature

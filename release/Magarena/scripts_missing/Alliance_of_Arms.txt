@@ -1,5 +1,5 @@
 name=Alliance of Arms
-image=https://magiccards.info/scans/en/cmd/4.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eeb1f8ff-c32f-4d75-8c04-f97d05ba47d6.jpg?1592712696
 value=3.048
 rarity=R
 type=Sorcery

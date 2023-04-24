@@ -1,5 +1,5 @@
 name=Crosis's Attendant
-image=https://magiccards.info/scans/en/in/300.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45edc18c-2046-4d0e-92fe-a6cf4aaf1c6f.jpg?1562909185
 value=3.944
 rarity=U
 type=Artifact,Creature

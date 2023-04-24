@@ -1,5 +1,5 @@
 name=Iona's Blessing
-image=https://magiccards.info/scans/en/ogw/21.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a30f26f7-5181-4bf1-9084-5563b4996a3c.jpg?1562927930
 image_updated=2016-02-29
 value=2.500
 rarity=U

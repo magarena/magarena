@@ -1,5 +1,5 @@
 name=Sink into Takenuma
-image=https://magiccards.info/scans/en/sok/89.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d519df1b-0c81-4d0d-85c6-2a288c6fa269.jpg?1562496108
 value=1.708
 rarity=C
 type=Sorcery

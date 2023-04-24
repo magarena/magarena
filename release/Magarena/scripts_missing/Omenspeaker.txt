@@ -1,5 +1,5 @@
 name=Omenspeaker
-image=https://magiccards.info/scans/en/m19/64.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b635abe-ad7e-44b8-b3fe-6e365db87c29.jpg?1608909336
 image_updated=2018-08-07
 value=2.500
 rarity=C

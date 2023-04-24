@@ -1,5 +1,5 @@
 name=Rock Slide
-image=https://magiccards.info/scans/en/vi/92.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e01717a-d6ed-42c1-9a9a-f3f4a3d73bca.jpg?1562278136
 value=3.556
 rarity=C
 type=Instant

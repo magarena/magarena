@@ -1,5 +1,5 @@
 name=Yisan, the Wanderer Bard
-image=https://magiccards.info/scans/en/m15/209.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65cd97cd-6d6e-4512-a050-6851b7527567.jpg?1562788157
 value=3.500
 rarity=R
 type=Legendary,Creature

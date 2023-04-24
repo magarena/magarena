@@ -1,5 +1,5 @@
 name=Primal Plasma
-image=https://magiccards.info/scans/en/pc2/23.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27064d4f-aeaf-4432-964a-97dfc1db835d.jpg?1619394502
 value=2.442
 rarity=C
 type=Creature

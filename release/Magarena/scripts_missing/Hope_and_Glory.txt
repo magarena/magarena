@@ -1,5 +1,5 @@
 name=Hope and Glory
-image=https://magiccards.info/scans/en/ul/9.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cc6478f-4ae5-4f26-baa9-b28e992f962e.jpg?1562863288
 value=3.250
 rarity=U
 type=Instant

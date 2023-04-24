@@ -1,5 +1,5 @@
 name=Goblin Cohort
-image=https://magiccards.info/scans/en/bok/106.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/faa652d7-16d3-400f-9ba4-7ba8078d4a08.jpg?1562945553
 image_updated=2016-12-04
 value=2.500
 rarity=C

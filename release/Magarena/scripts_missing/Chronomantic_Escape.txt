@@ -1,5 +1,5 @@
 name=Chronomantic Escape
-image=https://magiccards.info/scans/en/fut/4.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb6989fd-05cf-4169-96c0-37c556454b92.jpg?1562935862
 value=3.709
 rarity=U
 type=Sorcery

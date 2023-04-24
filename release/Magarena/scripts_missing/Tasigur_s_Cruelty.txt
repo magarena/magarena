@@ -1,5 +1,5 @@
 name=Tasigur's Cruelty
-image=https://magiccards.info/scans/en/frf/88.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/169748df-10ac-4db4-ba94-192345c6fad3.jpg?1562822743
 value=2.500
 rarity=C
 type=Sorcery

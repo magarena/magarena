@@ -1,5 +1,5 @@
 name=Eternal Dominion
-image=https://magiccards.info/scans/en/sok/36.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/3067a9bd-991a-462d-862a-2518ae31c382.jpg?1562493419
 value=3.918
 rarity=R
 type=Sorcery

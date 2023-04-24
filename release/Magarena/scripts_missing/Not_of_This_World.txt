@@ -1,5 +1,5 @@
 name=Not of This World
-image=https://magiccards.info/scans/en/roe/8.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/569e2c39-7a49-4a3b-afe5-1862a7da8026.jpg?1562704022
 value=3.500
 rarity=U
 type=Tribal,Instant

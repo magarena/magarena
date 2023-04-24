@@ -1,5 +1,5 @@
 name=Elemental Resonance
-image=https://magiccards.info/scans/en/di/83.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9757631a-c505-4a16-94c1-8bb609ce7bc5.jpg?1593273373
 value=3.900
 rarity=R
 type=Enchantment

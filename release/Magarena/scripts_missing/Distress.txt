@@ -1,5 +1,5 @@
 name=Distress
-image=https://magiccards.info/scans/en/m12/94.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/630d4080-8183-41fb-8091-740719083765.jpg?1562644889
 value=3.788
 rarity=C
 type=Sorcery

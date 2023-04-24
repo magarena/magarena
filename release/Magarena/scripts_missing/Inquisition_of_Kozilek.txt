@@ -1,5 +1,5 @@
 name=Inquisition of Kozilek
-image=https://magiccards.info/scans/en/mm3/75.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17f38740-20fd-4097-90f8-f0c2c2ff7281.jpg?1673147555
 image_updated=2017-08-08
 value=4.375
 rarity=U

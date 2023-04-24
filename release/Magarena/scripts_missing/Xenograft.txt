@@ -1,5 +1,5 @@
 name=Xenograft
-image=https://magiccards.info/scans/en/nph/51.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f52f08e1-b234-42e4-8f1f-485a4f6edb3b.jpg?1562882828
 value=3.038
 rarity=R
 type=Enchantment

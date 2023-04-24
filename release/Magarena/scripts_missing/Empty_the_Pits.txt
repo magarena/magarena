@@ -1,5 +1,5 @@
 name=Empty the Pits
-image=https://magiccards.info/scans/en/ktk/72.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e94b1ac7-dd7b-46a1-a74e-aa0563bab3cd.jpg?1562795355
 value=4.000
 rarity=M
 type=Instant

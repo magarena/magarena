@@ -1,5 +1,5 @@
 name=Phyrexian Portal
-image=https://magiccards.info/scans/en/ai/168.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c165b61b-3cd5-4035-a9d3-1c03289ae5ba.jpg?1562870473
 value=3.603
 rarity=R
 type=Artifact

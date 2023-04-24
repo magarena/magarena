@@ -1,5 +1,5 @@
 name=Broken Ambitions
-image=https://magiccards.info/scans/en/lw/54.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/8052d90b-bc49-4a9e-9211-159a54aa2bcd.jpg?1562355294
 value=3.538
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Demonic Consultation
-image=https://magiccards.info/scans/en/ia/9.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d779f19-3068-4976-b96b-8f93d156900b.jpg?1610146869
 value=4.588
 rarity=U
 type=Instant

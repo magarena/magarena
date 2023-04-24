@@ -1,5 +1,5 @@
 name=Ooze Flux
-image=https://magiccards.info/scans/en/gtc/128.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9554369-7961-4cea-9da0-a1235805a26a.jpg?1561850749
 value=3.316
 rarity=R
 type=Enchantment

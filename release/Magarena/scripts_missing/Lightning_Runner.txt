@@ -1,5 +1,5 @@
 name=Lightning Runner
-image=https://magiccards.info/scans/en/aer/90.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5d9c7eb-dca4-4471-a91f-a5aad3a69c2f.jpg?1576381851
 value=2.500
 rarity=M
 type=Creature

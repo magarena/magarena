@@ -1,5 +1,5 @@
 name=Goblin Grenadiers
-image=https://magiccards.info/scans/en/wl/104.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a73db23-727f-4d63-97d7-2ca542276722.jpg?1562801006
 value=3.650
 rarity=U
 type=Creature

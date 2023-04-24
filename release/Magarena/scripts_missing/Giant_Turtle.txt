@@ -1,5 +1,5 @@
 name=Giant Turtle
-image=https://magiccards.info/scans/en/lg/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87e5fc19-3b10-476f-9a73-e8bf4b5fbec0.jpg?1592364521
 value=2.268
 rarity=C
 type=Creature

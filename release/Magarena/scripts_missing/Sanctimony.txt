@@ -1,5 +1,5 @@
 name=Sanctimony
-image=https://magiccards.info/scans/en/8e/42.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74733902-f177-4551-bc39-72f58860c890.jpg?1562918336
 value=3.533
 rarity=U
 type=Enchantment

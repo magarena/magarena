@@ -1,5 +1,5 @@
 name=Retaliate
-image=https://magiccards.info/scans/en/5dn/13.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58acdda6-6754-46f2-ad68-f1580b8ab0dd.jpg?1562877159
 value=3.470
 rarity=R
 type=Instant

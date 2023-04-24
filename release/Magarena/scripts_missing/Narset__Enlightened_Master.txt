@@ -1,5 +1,5 @@
 name=Narset, Enlightened Master
-image=https://magiccards.info/scans/en/ktk/190.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f210adb7-b389-4672-a3eb-0ced9bfe190c.jpg?1562795852
 value=3.500
 rarity=M
 type=Legendary,Creature

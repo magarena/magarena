@@ -1,5 +1,5 @@
 name=Bloodcurdler
-image=https://magiccards.info/scans/en/od/116.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd1452ff-cec6-4df3-8bdc-bfb7869553a1.jpg?1562936212
 value=1.574
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Ash Zealot
-image=https://magiccards.info/scans/en/rtr/86.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f61b1a3-4b3b-4490-a9dc-17aac258cbda.jpg?1562783533
 value=4.053
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Comeuppance
-image=https://magiccards.info/scans/en/c14/4.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92d59c06-41f7-4009-9157-70ba90cc978b.jpg?1561950558
 value=2.500
 rarity=R
 type=Instant

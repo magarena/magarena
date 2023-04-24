@@ -1,5 +1,5 @@
 name=Brawl-Bash Ogre
-image=https://magiccards.info/scans/en/m19/213.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38b9f9d7-a00d-4a90-9d7a-88ece10af328.jpg?1562301693
 value=2.500
 rarity=U
 type=Creature

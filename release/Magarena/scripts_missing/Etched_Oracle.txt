@@ -1,5 +1,5 @@
 name=Etched Oracle
-image=https://magiccards.info/scans/en/c16/252.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89c98ee9-ecfb-4d02-a6fe-df153c8691ab.jpg?1562408830
 image_updated=2017-08-17
 value=2.500
 rarity=U

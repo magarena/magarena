@@ -1,5 +1,5 @@
 name=Swirling Spriggan
-image=https://magiccards.info/scans/en/eve/76.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/303d057c-c51c-46bb-b8fe-aabe7f3b07b6.jpg?1562905164
 value=2.712
 rarity=U
 type=Creature

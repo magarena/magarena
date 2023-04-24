@@ -1,5 +1,5 @@
 name=Call to the Kindred
-image=https://magiccards.info/scans/en/dka/30.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee35f96c-6060-4456-897e-27b74c8c2137.jpg?1562951578
 value=3.658
 rarity=R
 type=Enchantment

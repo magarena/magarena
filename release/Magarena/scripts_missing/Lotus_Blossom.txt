@@ -1,5 +1,5 @@
 name=Lotus Blossom
-image=https://magiccards.info/scans/en/us/300.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46d17e0a-5407-4fde-8eb0-8f580eab5565.jpg?1562909657
 value=3.982
 rarity=R
 type=Artifact

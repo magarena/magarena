@@ -1,5 +1,5 @@
 name=Zealous Inquisitor
-image=https://magiccards.info/scans/en/9e/57.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7621b1af-fdbd-4604-b37c-04fb8f68c3b6.jpg?1562737177
 value=3.066
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Damia, Sage of Stone
-image=https://magiccards.info/scans/en/cmd/191.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9f3869d-dbc1-42bb-aa43-8e4c2e79cfc1.jpg?1562276547
 value=4.024
 rarity=M
 type=Legendary,Creature

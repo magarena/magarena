@@ -1,5 +1,5 @@
 name=Reviving Melody
-image=https://magiccards.info/scans/en/jou/138.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49b152cc-d39f-470e-8b62-e4a833db7b88.jpg?1593096307
 value=3.658
 rarity=U
 type=Sorcery

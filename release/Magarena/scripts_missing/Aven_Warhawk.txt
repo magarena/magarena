@@ -1,5 +1,5 @@
 name=Aven Warhawk
-image=https://magiccards.info/scans/en/le/4.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/386a7062-6da8-4663-a218-75d894f7c0e0.jpg?1562906368
 value=2.593
 rarity=U
 type=Creature

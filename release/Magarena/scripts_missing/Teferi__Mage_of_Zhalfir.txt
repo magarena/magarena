@@ -1,5 +1,5 @@
 name=Teferi, Mage of Zhalfir
-image=https://magiccards.info/scans/en/ima/75.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8fc5e4a8-ea7b-4803-a7ed-3b915708661f.jpg?1619394801
 image_updated=2017-04-12
 value=4.123
 rarity=R

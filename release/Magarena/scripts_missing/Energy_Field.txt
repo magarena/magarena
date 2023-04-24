@@ -1,5 +1,5 @@
 name=Energy Field
-image=https://magiccards.info/scans/en/us/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81ff5770-b207-41e1-97b7-b9347c72b407.jpg?1562922391
 value=4.528
 rarity=R
 type=Enchantment

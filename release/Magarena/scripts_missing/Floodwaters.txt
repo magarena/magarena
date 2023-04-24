@@ -1,5 +1,5 @@
 name=Floodwaters
-image=https://magiccards.info/scans/en/akh/53.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a211df0-fe9e-4d2c-9e0e-c7be50e6b906.jpg?1543674959
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Cranial Extraction
-image=https://magiccards.info/scans/en/chk/105.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8cad7a3-777e-4c84-b404-5f504844ab3b.jpg?1562763464
 value=4.311
 rarity=R
 type=Sorcery

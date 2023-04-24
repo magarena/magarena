@@ -1,5 +1,5 @@
 name=Gaea's Cradle
-image=https://magiccards.info/scans/en/us/321.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25b0b816-0583-44aa-9dc5-f3ff48993a51.jpg?1562902898
 value=4.618
 rarity=R
 type=Legendary,Land

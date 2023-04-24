@@ -1,5 +1,5 @@
 name=Doubling Chant
-image=https://magiccards.info/scans/en/m12/170.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f71dc232-9b7e-4c0e-ac05-8e48b4936aa9.jpg?1562666461
 value=3.793
 rarity=R
 type=Sorcery

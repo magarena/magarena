@@ -1,5 +1,5 @@
 name=Guiding Spirit
-image=https://magiccards.info/scans/en/vi/131.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f96d184-0ef8-40f7-98bc-bd4c53c57072.jpg?1587913153
 value=3.781
 rarity=R
 type=Creature

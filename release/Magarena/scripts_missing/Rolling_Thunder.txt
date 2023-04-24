@@ -1,5 +1,5 @@
 name=Rolling Thunder
-image=https://magiccards.info/scans/en/bfz/154.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0df50703-5655-4bc4-adc9-d719c2da3bfd.jpg?1592765072
 image_updated=2015-11-08
 value=2.500
 rarity=U

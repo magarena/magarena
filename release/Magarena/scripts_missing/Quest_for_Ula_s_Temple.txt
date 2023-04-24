@@ -1,5 +1,5 @@
 name=Quest for Ula's Temple
-image=https://magiccards.info/scans/en/wwk/35.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77983bbf-6761-4126-82b4-bdcdd6b8e1dc.jpg?1562289972
 value=3.825
 rarity=R
 type=Enchantment

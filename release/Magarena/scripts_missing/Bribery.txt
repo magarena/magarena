@@ -1,5 +1,5 @@
 name=Bribery
-image=https://magiccards.info/scans/en/8e/64.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0b099ef-4b43-4b63-a7fc-cec19cf29f4e.jpg?1562940128
 value=4.437
 rarity=R
 type=Sorcery

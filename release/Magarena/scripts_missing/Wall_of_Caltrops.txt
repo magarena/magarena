@@ -1,5 +1,5 @@
 name=Wall of Caltrops
-image=https://magiccards.info/scans/en/lg/211.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/664ad588-3002-4f63-93bd-38663171018f.jpg?1562859208
 value=1.333
 rarity=C
 type=Creature

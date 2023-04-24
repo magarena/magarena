@@ -1,5 +1,5 @@
 name=Demon's Herald
-image=https://magiccards.info/scans/en/ala/72.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5aa309e-5df3-4419-9e9c-3fd928c1e360.jpg?1562710813
 value=1.848
 rarity=U
 type=Creature

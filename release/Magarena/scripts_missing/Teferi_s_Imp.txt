@@ -1,5 +1,5 @@
 name=Teferi's Imp
-image=https://magiccards.info/scans/en/mr/98.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/048f2368-0e2f-4197-b977-353d38b38ccc.jpg?1562717815
 value=3.064
 rarity=R
 type=Creature

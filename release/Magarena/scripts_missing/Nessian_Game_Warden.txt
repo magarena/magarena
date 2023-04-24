@@ -1,5 +1,5 @@
 name=Nessian Game Warden
-image=https://magiccards.info/scans/en/jou/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/5099d18d-c8b5-4706-bc93-40d1bb12988d.jpg?1593096253
 value=3.883
 rarity=U
 type=Creature

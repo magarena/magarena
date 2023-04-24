@@ -1,5 +1,5 @@
 name=Tiana, Ship's Caretaker
-image=https://magiccards.info/scans/en/dom/208.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63852ffb-22ef-4b88-9cba-254291e978cd.jpg?1608917719
 value=2.500
 rarity=U
 type=Legendary,Creature

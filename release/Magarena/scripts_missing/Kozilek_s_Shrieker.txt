@@ -1,5 +1,5 @@
 name=Kozilek's Shrieker
-image=https://magiccards.info/scans/en/ogw/73.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a384cd5b-2c6c-4969-bb62-a017e2fc9794.jpg?1562928063
 image_updated=2016-02-29
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Groundswell
-image=https://magiccards.info/scans/en/wwk/104.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/821e9cb9-f78e-4d11-9c36-42e8b84b49cd.jpg?1593095453
 value=3.522
 rarity=C
 type=Instant

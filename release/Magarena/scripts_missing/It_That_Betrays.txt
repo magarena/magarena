@@ -1,5 +1,5 @@
 name=It That Betrays
-image=https://magiccards.info/scans/en/roe/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b64cfc0-dace-4f54-b2b1-c92d8cb64c35.jpg?1593095672
 value=4.255
 rarity=R
 type=Creature

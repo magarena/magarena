@@ -1,5 +1,5 @@
 name=Crater Elemental
-image=https://magiccards.info/scans/en/dtk/132.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4ee8d1f-00e8-44e3-b125-ef98e1461263.jpg?1562792745
 value=2.500
 rarity=R
 type=Creature

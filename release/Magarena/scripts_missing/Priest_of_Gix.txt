@@ -1,5 +1,5 @@
 name=Priest of Gix
-image=https://magiccards.info/scans/en/us/150.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cbc4c4c-f1f5-4593-9894-1d8715a2f2c1.jpg?1562921109
 image_updated=2017-01-03
 value=4.430
 rarity=U

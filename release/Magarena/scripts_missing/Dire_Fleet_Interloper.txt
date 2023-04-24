@@ -1,5 +1,5 @@
 name=Dire Fleet Interloper
-image=https://magiccards.info/scans/en/xln/103.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2e3f7ee-98d0-45bd-97ae-3dc8050085a1.jpg?1562565555
 value=2.500
 rarity=C
 type=Creature

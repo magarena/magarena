@@ -1,5 +1,5 @@
 name=Engineered Plague
-image=https://magiccards.info/scans/en/7e/133.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b669e43e-3b11-42c9-8f20-0acce129e63c.jpg?1562246287
 value=4.350
 rarity=U
 type=Enchantment

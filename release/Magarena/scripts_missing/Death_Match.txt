@@ -1,5 +1,5 @@
 name=Death Match
-image=https://magiccards.info/scans/en/on/136.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/143e9057-267a-4c78-b72a-4f8018b627a8.jpg?1562899865
 value=3.463
 rarity=R
 type=Enchantment

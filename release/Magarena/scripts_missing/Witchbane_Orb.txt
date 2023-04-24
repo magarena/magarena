@@ -1,5 +1,5 @@
 name=Witchbane Orb
-image=https://magiccards.info/scans/en/isd/236.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53e0bf16-62f5-4b62-96e8-bc7e049bcf89.jpg?1562830363
 value=4.218
 rarity=R
 type=Artifact

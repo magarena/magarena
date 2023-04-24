@@ -1,5 +1,5 @@
 name=Peace and Quiet
-image=https://magiccards.info/scans/en/ul/17.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d73accc-8f19-44d4-8216-c1acdbef3856.jpg?1562863266
 value=2.968
 rarity=U
 type=Instant

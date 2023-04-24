@@ -1,5 +1,5 @@
 name=Life
-image=https://magiccards.info/scans/en/ap/130a.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/2424f2c4-366b-42cf-bf4b-a8a5bfdd2c4b.jpg?1592713837
 value=4.368
 rarity=U
 type=Sorcery

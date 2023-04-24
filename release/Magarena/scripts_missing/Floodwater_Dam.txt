@@ -1,5 +1,5 @@
 name=Floodwater Dam
-image=https://magiccards.info/scans/en/ai/161.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f1bc264-1f28-4bd4-be23-baae9734c3d9.jpg?1562898514
 value=2.400
 rarity=R
 type=Artifact

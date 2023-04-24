@@ -1,5 +1,5 @@
 name=Cultivate
-image=https://magiccards.info/scans/en/a25/165.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66a82a81-9b3e-421c-b916-15f40f359bf8.jpg?1682209470
 image_updated=2018-04-25
 value=3.583
 rarity=C

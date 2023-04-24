@@ -1,5 +1,5 @@
 name=Court Hussar
-image=https://magiccards.info/scans/en/a25/51.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3843e98-192c-44a2-be54-9ba79e51657c.jpg?1562443053
 image_updated=2018-04-25
 value=3.887
 rarity=C

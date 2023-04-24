@@ -1,5 +1,5 @@
 name=Elven Riders
-image=https://magiccards.info/scans/en/10e/259.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4bf2a88-2771-4ea8-b448-35642e034965.jpg?1562552804
 image_updated=2016-12-02
 value=2.941
 rarity=U

@@ -1,5 +1,5 @@
 name=Sheltering Prayers
-image=https://magiccards.info/scans/en/pr/22.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a30803e6-7f0e-4832-b121-b18480c6465c.jpg?1562925444
 value=1.227
 rarity=R
 type=Enchantment

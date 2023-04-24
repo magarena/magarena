@@ -1,5 +1,5 @@
 name=Harness the Storm
-image=https://magiccards.info/scans/en/soi/163.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/5294d359-c599-40ed-9e06-2a3cc8624d6a.jpg?1576384783
 value=2.500
 rarity=R
 type=Enchantment

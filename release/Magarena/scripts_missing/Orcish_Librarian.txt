@@ -1,5 +1,5 @@
 name=Orcish Librarian
-image=https://magiccards.info/scans/en/tsts/66.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31f074bb-5ff6-4ce7-a186-1782d940c4a9.jpg?1562774276
 value=3.650
 rarity=R
 type=Creature

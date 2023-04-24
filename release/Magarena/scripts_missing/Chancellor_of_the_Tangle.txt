@@ -1,5 +1,5 @@
 name=Chancellor of the Tangle
-image=https://magiccards.info/scans/en/nph/106.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d129aa8-b637-451e-8123-5221e08cc2cc.jpg?1562878494
 value=3.403
 rarity=R
 type=Creature

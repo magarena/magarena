@@ -1,5 +1,5 @@
 name=Hypergenesis
-image=https://magiccards.info/scans/en/ts/201.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65757321-2f26-44dc-a4f8-31d40fbf1681.jpg?1619398174
 value=4.263
 rarity=R
 type=Sorcery

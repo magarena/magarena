@@ -1,5 +1,5 @@
 name=Spoils of Evil
-image=https://magiccards.info/scans/en/ia/51.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd368eb6-72f0-42d4-afa5-3daa7de949ff.jpg?1562942725
 value=4.265
 rarity=R
 type=Instant

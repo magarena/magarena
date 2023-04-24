@@ -1,5 +1,5 @@
 name=Tocatli Honor Guard
-image=https://magiccards.info/scans/en/xln/42.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3fc3501-e7bd-4589-98c5-4476258842ea.jpg?1562561363
 value=2.500
 rarity=R
 type=Creature

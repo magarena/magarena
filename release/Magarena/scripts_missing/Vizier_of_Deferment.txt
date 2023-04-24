@@ -1,5 +1,5 @@
 name=Vizier of Deferment
-image=https://magiccards.info/scans/en/akh/37.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2684f2e5-e3f9-4277-94a1-aba6913ac53b.jpg?1543674846
 value=2.500
 rarity=U
 type=Creature

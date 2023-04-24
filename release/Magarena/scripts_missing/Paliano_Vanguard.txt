@@ -1,5 +1,5 @@
 name=Paliano Vanguard
-image=https://magiccards.info/scans/en/cn2/20.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b120f2d-2585-4827-a8c5-d6ecdc8108e5.jpg?1576381619
 image_updated=2016-09-05
 value=2.500
 rarity=R

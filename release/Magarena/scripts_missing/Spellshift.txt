@@ -1,5 +1,5 @@
 name=Spellshift
-image=https://magiccards.info/scans/en/pc/47.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5c897a6-5835-42ac-8cc7-e8d9fc1e7c77.jpg?1562586074
 value=2.102
 rarity=R
 type=Instant

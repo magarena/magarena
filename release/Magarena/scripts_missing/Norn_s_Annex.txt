@@ -1,5 +1,5 @@
 name=Norn's Annex
-image=https://magiccards.info/scans/en/nph/17.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a64073f2-99f5-4dc7-9403-e7cb94ce0e60.jpg?1562880453
 value=3.814
 rarity=R
 type=Artifact

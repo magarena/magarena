@@ -1,5 +1,5 @@
 name=Doubling Cube
-image=https://magiccards.info/scans/en/10e/321.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d946df5-f206-4241-bb55-97db67dc793c.jpg?1562546549
 value=3.806
 rarity=R
 type=Artifact

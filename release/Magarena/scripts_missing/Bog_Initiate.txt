@@ -1,5 +1,5 @@
 name=Bog Initiate
-image=https://magiccards.info/scans/en/in/95.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8962dc3b-24ca-4c3c-ba1d-933c29cf7b73.jpg?1562922788
 value=2.912
 rarity=C
 type=Creature

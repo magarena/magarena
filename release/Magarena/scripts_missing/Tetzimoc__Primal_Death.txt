@@ -1,5 +1,5 @@
 name=Tetzimoc, Primal Death
-image=https://magiccards.info/scans/en/rix/86.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6a0b40e-7a43-4722-b787-a5d7ec6453ac.jpg?1555040321
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Dismantle
-image=https://magiccards.info/scans/en/ds/57.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86862339-a5a5-45c4-bba5-981cff4f45f5.jpg?1599706292
 value=3.708
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Sudden Reclamation
-image=https://magiccards.info/scans/en/frf/139.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ac7645d-ea10-4ca6-92a5-ac3418c6a510.jpg?1562823631
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Lowland Tracker
-image=https://magiccards.info/scans/en/le/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8eaaded-b18a-4614-b5b5-b4bb49a2e1b1.jpg?1562945177
 value=2.542
 rarity=C
 type=Creature

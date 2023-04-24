@@ -1,5 +1,5 @@
 name=Kazarov, Sengir Pureblood
-image=https://magiccards.info/scans/en/dom/96.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2aff7077-496b-46ca-b9d7-a8c1772f9a91.jpg?1562733186
 value=2.500
 rarity=R
 type=Legendary,Creature

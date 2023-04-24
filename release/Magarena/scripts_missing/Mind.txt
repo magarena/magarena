@@ -1,5 +1,5 @@
 name=Mind
-image=https://magiccards.info/scans/en/akh/219b.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/6431d464-1f2b-42c4-ad38-67b7d0984080.jpg?1549941868
 value=2.500
 rarity=U
 type=Instant

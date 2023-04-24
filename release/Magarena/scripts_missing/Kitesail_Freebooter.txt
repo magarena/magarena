@@ -1,5 +1,5 @@
 name=Kitesail Freebooter
-image=https://magiccards.info/scans/en/xln/110.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88496096-fd9a-451a-85d9-31ccc3580623.jpg?1594736212
 value=2.500
 rarity=U
 type=Creature

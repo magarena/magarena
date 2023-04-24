@@ -1,5 +1,5 @@
 name=Infinite Authority
-image=https://magiccards.info/scans/en/lg/191.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc60077f-d577-4a6c-a78f-697317024c40.jpg?1562861359
 value=2.108
 rarity=R
 type=Enchantment

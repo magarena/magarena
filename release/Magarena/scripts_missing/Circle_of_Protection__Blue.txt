@@ -1,5 +1,5 @@
 name=Circle of Protection: Blue
-image=https://magiccards.info/scans/en/8e/11.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5ced2118-dfb3-4f29-ad6b-454c0a8a094b.jpg?1562913834
 value=2.382
 rarity=U
 type=Enchantment

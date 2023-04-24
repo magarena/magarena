@@ -1,5 +1,5 @@
 name=Crown-Hunter Hireling
-image=https://magiccards.info/scans/en/cn2/50.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0babeae3-79fe-4d04-b496-e3dc7fa2ad60.jpg?1576381895
 image_updated=2016-09-05
 value=2.500
 rarity=C

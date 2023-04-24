@@ -1,5 +1,5 @@
 name=Vesuvan Shapeshifter
-image=https://magiccards.info/scans/en/a25/77.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b1b59d2-ad4b-4dc6-a730-0d19f2774ae9.jpg?1619394946
 image_updated=2018-04-25
 value=4.261
 rarity=R

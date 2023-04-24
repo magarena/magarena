@@ -1,5 +1,5 @@
 name=Evangelize
-image=https://magiccards.info/scans/en/ts/16.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f58e1aa-587c-4f89-9552-1128c8c2da1a.jpg?1562898171
 value=2.786
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Akki Rockspeaker
-image=https://magiccards.info/scans/en/chk/154.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c8b6685-2c74-4026-aef0-73ca7bc43306.jpg?1562762984
 value=1.550
 rarity=C
 type=Creature

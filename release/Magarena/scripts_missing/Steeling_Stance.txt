@@ -1,5 +1,5 @@
 name=Steeling Stance
-image=https://magiccards.info/scans/en/di/18.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f89bd01-310e-4ec2-8d42-052c66ff8d0f.jpg?1593272576
 value=2.403
 rarity=C
 type=Instant

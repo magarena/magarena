@@ -1,5 +1,5 @@
 name=Blood Cultist
-image=https://magiccards.info/scans/en/ala/157.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb468da0-b72b-4b46-994a-20677206ffb7.jpg?1562711035
 value=2.984
 rarity=U
 type=Creature

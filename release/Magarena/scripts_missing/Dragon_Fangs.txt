@@ -1,5 +1,5 @@
 name=Dragon Fangs
-image=https://magiccards.info/scans/en/sc/117.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9754f52f-8937-4402-8956-2c18b520898a.jpg?1562532554
 value=3.368
 rarity=C
 type=Enchantment

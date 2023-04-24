@@ -1,5 +1,5 @@
 name=Ravager of the Fells
-image=https://magiccards.info/scans/en/dka/140b.jpg
+image=https://cards.scryfall.io/border_crop/back/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173
 value=3.953
 rarity=M
 type=Creature

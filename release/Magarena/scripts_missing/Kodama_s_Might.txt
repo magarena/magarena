@@ -1,5 +1,5 @@
 name=Kodama's Might
-image=https://magiccards.info/scans/en/chk/224.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0ef91bb-ec25-463f-9fc9-f0f9c0652cf5.jpg?1562764657
 value=3.581
 rarity=C
 type=Instant

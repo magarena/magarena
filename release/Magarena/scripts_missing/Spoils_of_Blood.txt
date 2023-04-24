@@ -1,5 +1,5 @@
 name=Spoils of Blood
-image=https://magiccards.info/scans/en/c14/30.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9df391c-eb76-45b1-a58d-8211538a22ac.jpg?1561960871
 value=2.500
 rarity=R
 type=Instant

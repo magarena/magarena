@@ -1,5 +1,5 @@
 name=Splinter
-image=https://magiccards.info/scans/en/bok/146.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bcc210b-e37e-463c-8fd4-83e5113429a9.jpg?1562877241
 value=4.176
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Circle of Elders
-image=https://magiccards.info/scans/en/dtk/176.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a99df522-cc97-41e3-8073-72e092afe8bb.jpg?1562791288
 value=2.500
 rarity=U
 type=Creature

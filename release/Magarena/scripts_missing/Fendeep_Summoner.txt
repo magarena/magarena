@@ -1,5 +1,5 @@
 name=Fendeep Summoner
-image=https://magiccards.info/scans/en/mt/61.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10fb2b62-eea7-469f-b237-fdce20b8bdcf.jpg?1562876919
 value=3.450
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Lifeline
-image=https://magiccards.info/scans/en/us/299.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40cee82f-36b2-48a9-930a-8e23cb2742fc.jpg?1562908426
 value=4.346
 rarity=R
 type=Artifact

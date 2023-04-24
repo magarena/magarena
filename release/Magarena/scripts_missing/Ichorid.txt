@@ -1,5 +1,5 @@
 name=Ichorid
-image=https://magiccards.info/scans/en/ema/93.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd5bc1e4-eefb-4613-aa18-2bf2b9bdf415.jpg?1580014271
 value=4.500
 rarity=R
 type=Creature

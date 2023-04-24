@@ -1,5 +1,5 @@
 name=Shared Triumph
-image=https://magiccards.info/scans/en/on/53.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d07ebe6-76cf-4345-b59b-9954496c44d0.jpg?1562898003
 value=4.280
 rarity=R
 type=Enchantment

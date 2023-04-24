@@ -1,5 +1,5 @@
 name=Deadeye Tracker
-image=https://magiccards.info/scans/en/xln/99.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/848902db-7a10-4754-b50a-57a9e845705a.jpg?1562559208
 value=2.500
 rarity=R
 type=Creature

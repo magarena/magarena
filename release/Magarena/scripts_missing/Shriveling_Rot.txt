@@ -1,5 +1,5 @@
 name=Shriveling Rot
-image=https://magiccards.info/scans/en/ds/54.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25c255d5-9246-4a93-8750-0da8871fb12d.jpg?1562635858
 value=3.577
 rarity=R
 type=Instant

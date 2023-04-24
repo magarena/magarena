@@ -1,5 +1,5 @@
 name=Living Lore
-image=https://magiccards.info/scans/en/dtk/61.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15b137fb-3f90-4a44-a225-cff5ca153190.jpg?1625976209
 value=2.500
 rarity=R
 type=Creature

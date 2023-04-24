@@ -1,5 +1,5 @@
 name=Wu Scout
-image=https://magiccards.info/scans/en/p3k/62.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d13330f-6e07-451f-b17a-4e1606a74c3f.jpg?1562257042
 value=3.379
 rarity=C
 type=Creature

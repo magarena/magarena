@@ -1,5 +1,5 @@
 name=Riptide Shapeshifter
-image=https://magiccards.info/scans/en/on/109.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85be34ac-7bc2-4da2-8d9c-2412b9946073.jpg?1562926477
 value=3.739
 rarity=U
 type=Creature

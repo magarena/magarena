@@ -1,5 +1,5 @@
 name=Displace
-image=https://magiccards.info/scans/en/emn/55.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8ab850c5-6f5e-41b7-ab52-094579caca12.jpg?1576384077
 image_updated=2016-09-05
 value=2.500
 rarity=C

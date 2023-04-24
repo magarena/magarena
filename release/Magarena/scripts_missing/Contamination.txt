@@ -1,5 +1,5 @@
 name=Contamination
-image=https://magiccards.info/scans/en/us/123.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86067dfe-65c3-4c96-bccd-b3915d6663f9.jpg?1562923280
 value=4.595
 rarity=R
 type=Enchantment

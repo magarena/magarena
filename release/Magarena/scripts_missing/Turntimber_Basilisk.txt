@@ -1,5 +1,5 @@
 name=Turntimber Basilisk
-image=https://magiccards.info/scans/en/zen/190.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f203c27-0474-449d-aa24-2125ad80fb68.jpg?1592765888
 value=3.610
 rarity=U
 type=Creature

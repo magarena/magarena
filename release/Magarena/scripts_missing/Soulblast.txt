@@ -1,5 +1,5 @@
 name=Soulblast
-image=https://magiccards.info/scans/en/10e/236.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82e4e1b9-d93e-443e-91a4-69d4c9dac517.jpg?1562550750
 value=3.940
 rarity=R
 type=Instant

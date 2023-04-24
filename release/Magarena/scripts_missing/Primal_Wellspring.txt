@@ -1,5 +1,5 @@
 name=Primal Wellspring
-image=https://magiccards.info/scans/en/xln/243b.jpg
+image=https://cards.scryfall.io/border_crop/back/d/4/d4d379b5-7f56-4a7d-a4ac-131fc3d579c6.jpg?1562564625
 value=2.500
 rarity=R
 type=Land

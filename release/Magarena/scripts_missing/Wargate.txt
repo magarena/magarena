@@ -1,5 +1,5 @@
 name=Wargate
-image=https://magiccards.info/scans/en/arb/129.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f4fe11d-c404-489a-b17f-34f33b1597e8.jpg?1562642865
 value=3.087
 rarity=R
 type=Sorcery

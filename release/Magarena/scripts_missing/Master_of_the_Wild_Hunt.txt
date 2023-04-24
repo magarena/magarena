@@ -1,5 +1,5 @@
 name=Master of the Wild Hunt
-image=https://magiccards.info/scans/en/a25/181.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c56fda1-d286-46b1-9617-4f7c430abb79.jpg?1562434903
 image_updated=2018-04-25
 value=4.282
 rarity=M

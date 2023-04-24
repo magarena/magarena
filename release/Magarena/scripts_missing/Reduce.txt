@@ -1,5 +1,5 @@
 name=Reduce
-image=https://magiccards.info/scans/en/akh/216a.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2f3035c-ca27-40f3-ad73-c4e54bb2bcd7.jpg?1549941722
 value=2.500
 rarity=U
 type=Instant

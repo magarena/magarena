@@ -1,5 +1,5 @@
 name=Purgatory
-image=https://magiccards.info/scans/en/mr/335.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ed5e58b-46f3-437c-89ac-24235a65bd1f.jpg?1562720941
 value=3.968
 rarity=R
 type=Enchantment

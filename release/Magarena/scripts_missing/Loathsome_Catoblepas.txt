@@ -1,5 +1,5 @@
 name=Loathsome Catoblepas
-image=https://magiccards.info/scans/en/ths/95.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a8cff2f-ba52-4d22-83e8-13c56368f1df.jpg?1562817730
 value=1.951
 rarity=C
 type=Creature

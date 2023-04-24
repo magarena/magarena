@@ -1,5 +1,5 @@
 name=Veiling Oddity
-image=https://magiccards.info/scans/en/pc/51.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c211958-1ee2-4dda-9ef1-c59de599ebc1.jpg?1619394903
 value=2.946
 rarity=C
 type=Creature

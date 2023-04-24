@@ -1,5 +1,5 @@
 name=Stoke the Flames
-image=https://magiccards.info/scans/en/m15/164.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04113b3c-cc8f-4b15-9091-f82ea3df2e7c.jpg?1682204515
 value=3.625
 rarity=U
 type=Instant

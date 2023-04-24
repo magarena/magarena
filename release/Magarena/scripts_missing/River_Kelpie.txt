@@ -1,5 +1,5 @@
 name=River Kelpie
-image=https://magiccards.info/scans/en/shm/49.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81efe7cf-81f0-4799-813f-73ec8d865190.jpg?1568004052
 value=4.180
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Minion of the Wastes
-image=https://magiccards.info/scans/en/tp/40.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9f120fc-c681-47b6-827e-1cc7ead47a0f.jpg?1562056880
 value=3.943
 rarity=R
 type=Creature

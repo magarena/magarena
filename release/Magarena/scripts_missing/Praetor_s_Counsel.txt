@@ -1,5 +1,5 @@
 name=Praetor's Counsel
-image=https://magiccards.info/scans/en/c14/209.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6d5bf06-f735-4e9f-9460-e6cdf501662f.jpg?1592673116
 value=2.500
 rarity=M
 type=Sorcery

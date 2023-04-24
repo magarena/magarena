@@ -1,5 +1,5 @@
 name=Coffin Queen
-image=https://magiccards.info/scans/en/tp/8.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/632b83e3-f0c5-4135-96db-0bf33e6067aa.jpg?1562429825
 value=2.500
 rarity=R
 type=Creature

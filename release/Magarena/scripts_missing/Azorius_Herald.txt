@@ -1,5 +1,5 @@
 name=Azorius Herald
-image=https://magiccards.info/scans/en/di/2.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/813cea4e-1e87-4d2f-a580-16805ff53ff0.jpg?1562922262
 value=3.846
 rarity=U
 type=Creature

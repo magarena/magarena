@@ -1,5 +1,5 @@
 name=Greater Mossdog
-image=https://magiccards.info/scans/en/mma/146.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f98318dc-8ba5-4a33-b4a6-c36add8aa80e.jpg?1561969057
 value=3.632
 rarity=C
 type=Creature

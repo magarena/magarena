@@ -1,5 +1,5 @@
 name=Violent Ultimatum
-image=https://magiccards.info/scans/en/ala/206.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e6ac9ce-e163-426f-8fbd-5ee1ec177dc1.jpg?1562705860
 value=3.379
 rarity=R
 type=Sorcery

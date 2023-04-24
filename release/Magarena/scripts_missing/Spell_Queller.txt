@@ -1,5 +1,5 @@
 name=Spell Queller
-image=https://magiccards.info/scans/en/emn/189.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b76bcd4-580a-4435-afe9-290940b1837f.jpg?1576385020
 image_updated=2016-09-05
 value=2.500
 rarity=R

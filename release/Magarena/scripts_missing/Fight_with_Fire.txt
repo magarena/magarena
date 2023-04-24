@@ -1,5 +1,5 @@
 name=Fight with Fire
-image=https://magiccards.info/scans/en/dom/119.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72c94d7a-cad7-438f-bc96-e6a7158ab0e6.jpg?1562737735
 value=2.500
 rarity=U
 type=Sorcery

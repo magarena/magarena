@@ -1,5 +1,5 @@
 name=Sakiko, Mother of Summer
-image=https://magiccards.info/scans/en/bok/141.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/774ec405-5127-4475-8c74-b8858bd84379.jpg?1562877904
 value=3.429
 rarity=R
 type=Legendary,Creature

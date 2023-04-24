@@ -1,5 +1,5 @@
 name=Vandalize
-image=https://magiccards.info/scans/en/dtk/165.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48b04f7a-4fd6-47d2-b378-99c7fb0c1809.jpg?1562785637
 value=2.500
 rarity=C
 type=Sorcery

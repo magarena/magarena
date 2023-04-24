@@ -1,5 +1,5 @@
 name=Combat Celebrant
-image=https://magiccards.info/scans/en/akh/125.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28b63c3d-2e55-4343-b49a-11fa602ec473.jpg?1543675529
 value=2.500
 rarity=M
 type=Creature

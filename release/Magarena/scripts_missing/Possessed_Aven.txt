@@ -1,5 +1,5 @@
 name=Possessed Aven
-image=https://magiccards.info/scans/en/tr/45.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/997c56c7-c625-4209-b4b6-d274dee2db48.jpg?1562631112
 value=3.839
 rarity=R
 type=Creature

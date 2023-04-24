@@ -1,5 +1,5 @@
 name=Thada Adel, Acquisitor
-image=https://magiccards.info/scans/en/wwk/40.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bfcbeab-7a1e-4dcf-99bf-98f42c2b6a6f.jpg?1562285424
 value=4.201
 rarity=R
 type=Legendary,Creature

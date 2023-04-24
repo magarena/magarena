@@ -1,5 +1,5 @@
 name=Shower of Coals
-image=https://magiccards.info/scans/en/od/221.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1e623a8-145e-4649-b2cc-d3bb8a93f0f3.jpg?1562928105
 value=3.578
 rarity=U
 type=Sorcery

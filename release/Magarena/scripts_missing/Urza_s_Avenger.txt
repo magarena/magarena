@@ -1,5 +1,5 @@
 name=Urza's Avenger
-image=https://magiccards.info/scans/en/5e/405.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60bd9559-1a8f-47d0-af6b-d0681cae4060.jpg?1562591335
 value=2.684
 rarity=R
 type=Artifact,Creature

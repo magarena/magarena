@@ -1,5 +1,5 @@
 name=Stormfront Riders
-image=https://magiccards.info/scans/en/pc/20.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3181709-42d2-4e1a-8de9-4f1d2deac232.jpg?1619393604
 image_updated=2016-01-09
 value=3.551
 rarity=U

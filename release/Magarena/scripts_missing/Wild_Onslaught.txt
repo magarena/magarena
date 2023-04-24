@@ -1,5 +1,5 @@
 name=Wild Onslaught
-image=https://magiccards.info/scans/en/dom/188.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb75cf21-08be-4b92-bdf6-014a36090738.jpg?1562744928
 value=2.500
 rarity=U
 type=Instant

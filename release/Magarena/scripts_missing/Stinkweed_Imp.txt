@@ -1,5 +1,5 @@
 name=Stinkweed Imp
-image=https://magiccards.info/scans/en/mma/98.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ab08d69-210b-4b06-88a2-45281a1a4e1e.jpg?1561771088
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Glittering Lynx
-image=https://magiccards.info/scans/en/pr/11.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3f26c7e-c525-4191-a542-b81343ae95bb.jpg?1562925565
 value=3.569
 rarity=C
 type=Creature

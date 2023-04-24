@@ -1,5 +1,5 @@
 name=Tajuru Stalwart
-image=https://magiccards.info/scans/en/bfz/194.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f916220b-a942-41af-8949-aa384fa7857d.jpg?1562954039
 image_updated=2015-11-08
 value=2.500
 rarity=C

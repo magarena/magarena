@@ -1,5 +1,5 @@
 name=Celestial Prism
-image=https://magiccards.info/scans/en/4e/322.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7ca1534-0049-4672-9677-99f1ba00fb78.jpg?1559601267
 value=0.934
 rarity=U
 type=Artifact

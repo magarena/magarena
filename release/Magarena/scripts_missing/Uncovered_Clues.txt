@@ -1,5 +1,5 @@
 name=Uncovered Clues
-image=https://magiccards.info/scans/en/dgm/19.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dd24556-994f-4480-835e-11d4443f0700.jpg?1562924369
 value=2.875
 rarity=C
 type=Sorcery

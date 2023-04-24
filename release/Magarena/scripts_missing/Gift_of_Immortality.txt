@@ -1,5 +1,5 @@
 name=Gift of Immortality
-image=https://magiccards.info/scans/en/ths/14.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2336faaa-fc6d-4fbb-bdd4-969eae565c72.jpg?1562815708
 value=3.621
 rarity=R
 type=Enchantment

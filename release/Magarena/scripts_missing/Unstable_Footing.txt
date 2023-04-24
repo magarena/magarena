@@ -1,5 +1,5 @@
 name=Unstable Footing
-image=https://magiccards.info/scans/en/zen/153.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d41c658e-68ec-4b55-bc5b-fd9fe8dbbdb3.jpg?1562617021
 value=3.836
 rarity=U
 type=Instant

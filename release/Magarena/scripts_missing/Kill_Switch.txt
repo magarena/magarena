@@ -1,5 +1,5 @@
 name=Kill Switch
-image=https://magiccards.info/scans/en/ne/133.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a94cfd63-7f2b-4c0a-8dcb-f22cf83e1e27.jpg?1562631436
 value=4.340
 rarity=R
 type=Artifact

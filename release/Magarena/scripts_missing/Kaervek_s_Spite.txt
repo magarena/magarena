@@ -1,5 +1,5 @@
 name=Kaervek's Spite
-image=https://magiccards.info/scans/en/vi/13.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d385b9e5-e13d-4098-ba74-ea55bde164d9.jpg?1562278645
 value=3.114
 rarity=R
 type=Instant

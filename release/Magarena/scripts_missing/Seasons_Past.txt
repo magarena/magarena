@@ -1,5 +1,5 @@
 name=Seasons Past
-image=https://magiccards.info/scans/en/soi/226.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/668afd78-3cf5-4daf-8dfb-fca90de0ae5a.jpg?1576385218
 value=2.500
 rarity=M
 type=Sorcery

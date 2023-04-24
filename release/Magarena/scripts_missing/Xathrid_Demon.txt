@@ -1,5 +1,5 @@
 name=Xathrid Demon
-image=https://magiccards.info/scans/en/c14/170.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e33fd08-7c23-4ea6-be98-f907defcbd30.jpg?1561932166
 value=2.500
 rarity=M
 type=Creature

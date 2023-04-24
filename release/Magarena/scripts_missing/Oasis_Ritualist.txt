@@ -1,5 +1,5 @@
 name=Oasis Ritualist
-image=https://magiccards.info/scans/en/hou/124.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a30bb49b-956e-44bc-8a32-46d4c9c13245.jpg?1562809301
 value=2.500
 rarity=C
 type=Creature

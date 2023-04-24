@@ -1,5 +1,5 @@
 name=Tomb of Urami
-image=https://magiccards.info/scans/en/sok/165.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90fedf90-825c-4814-8f0d-170f537db44c.jpg?1577853103
 value=1.600
 rarity=R
 type=Legendary,Land

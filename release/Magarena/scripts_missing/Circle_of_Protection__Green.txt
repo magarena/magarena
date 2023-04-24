@@ -1,5 +1,5 @@
 name=Circle of Protection: Green
-image=https://magiccards.info/scans/en/8e/12.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eecc0e7d-a15b-4930-93d1-832c4fed733b.jpg?1562942958
 value=3.033
 rarity=U
 type=Enchantment

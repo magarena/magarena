@@ -1,5 +1,5 @@
 name=Sacellum Godspeaker
-image=https://magiccards.info/scans/en/ala/146.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cad80819-22d4-43a8-97b2-7cf20f61bca5.jpg?1562708949
 value=2.611
 rarity=R
 type=Creature

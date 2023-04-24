@@ -1,5 +1,5 @@
 name=Wharf Infiltrator
-image=https://magiccards.info/scans/en/emn/80.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b434ba9e-528c-43b4-a463-0e697dce8d5d.jpg?1674141479
 image_updated=2016-09-05
 value=2.500
 rarity=R

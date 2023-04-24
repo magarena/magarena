@@ -1,5 +1,5 @@
 name=Narset Transcendent
-image=https://magiccards.info/scans/en/dtk/225.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/4816d092-e34b-4397-8599-43d8e85a8f39.jpg?1562785614
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

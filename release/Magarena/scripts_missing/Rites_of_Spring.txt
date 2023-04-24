@@ -1,5 +1,5 @@
 name=Rites of Spring
-image=https://magiccards.info/scans/en/od/265.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bddb0ef-fdda-491b-a0cf-48cbdd761918.jpg?1562900220
 value=3.656
 rarity=C
 type=Sorcery

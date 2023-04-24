@@ -1,5 +1,5 @@
 name=Krosan Restorer
-image=https://magiccards.info/scans/en/tr/130.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06f9f54d-b8c7-407d-bc25-dad4db833208.jpg?1562628483
 value=4.056
 rarity=C
 type=Creature

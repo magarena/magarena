@@ -1,5 +1,5 @@
 name=Shisato, Whispering Hunter
-image=https://magiccards.info/scans/en/chk/242.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cc79c9c-f776-4c55-a7d1-9fac33f14630.jpg?1562760556
 value=2.880
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Powerleech
-image=https://magiccards.info/scans/en/aq/64.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae1d7b09-3a1f-410f-b330-04ae768b0455.jpg?1562931798
 value=3.093
 rarity=U
 type=Enchantment

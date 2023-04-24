@@ -1,5 +1,5 @@
 name=Doom Cannon
-image=https://magiccards.info/scans/en/on/307.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4abde0d7-266b-41bd-ade1-c4d93507eb16.jpg?1562912492
 value=2.150
 rarity=R
 type=Artifact

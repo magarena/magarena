@@ -1,5 +1,5 @@
 name=Carnival of Souls
-image=https://magiccards.info/scans/en/ud/55.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/847340fb-9251-4439-b33b-f86bff507dcd.jpg?1562444254
 value=3.034
 rarity=R
 type=Enchantment

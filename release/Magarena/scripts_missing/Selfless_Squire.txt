@@ -1,5 +1,5 @@
 name=Selfless Squire
-image=https://magiccards.info/scans/en/c16/4.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a6ed4b6-03b4-4e61-99b2-aff00c03b2cc.jpg?1625975622
 image_updated=2016-12-28
 value=2.500
 rarity=R

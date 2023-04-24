@@ -1,5 +1,5 @@
 name=Roiling Waters
-image=https://magiccards.info/scans/en/ogw/62.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d878c10-de5e-4224-98ce-d49902b5ab8b.jpg?1562907413
 image_updated=2016-02-29
 value=2.500
 rarity=U

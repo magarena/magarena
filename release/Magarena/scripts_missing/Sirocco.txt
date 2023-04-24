@@ -1,5 +1,5 @@
 name=Sirocco
-image=https://magiccards.info/scans/en/mr/192.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce37492e-4f07-4171-97d4-84f28fb4e2be.jpg?1562721916
 value=2.788
 rarity=U
 type=Instant

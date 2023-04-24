@@ -1,5 +1,5 @@
 name=Become Immense
-image=https://magiccards.info/scans/en/ktk/130.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/573e1673-3ab5-4b28-9cf1-b0d43cad5ef3.jpg?1547517493
 value=3.100
 rarity=U
 type=Instant

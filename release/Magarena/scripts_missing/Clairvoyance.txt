@@ -1,5 +1,5 @@
 name=Clairvoyance
-image=https://magiccards.info/scans/en/ia/63.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46740353-e2ba-4d80-a97d-1368bc67bf30.jpg?1587911640
 value=3.025
 rarity=C
 type=Instant

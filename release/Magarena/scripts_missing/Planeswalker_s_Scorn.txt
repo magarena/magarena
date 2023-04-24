@@ -1,5 +1,5 @@
 name=Planeswalker's Scorn
-image=https://magiccards.info/scans/en/ps/52.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ed08376-836f-4313-83d0-481895ead9da.jpg?1603719281
 value=3.446
 rarity=R
 type=Enchantment

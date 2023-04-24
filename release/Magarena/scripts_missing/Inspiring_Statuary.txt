@@ -1,5 +1,5 @@
 name=Inspiring Statuary
-image=https://magiccards.info/scans/en/aer/160.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0df38640-e06d-4776-9c25-99d04cd3c1a6.jpg?1682210061
 value=2.500
 rarity=R
 type=Artifact

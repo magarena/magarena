@@ -1,5 +1,5 @@
 name=Maelstrom Nexus
-image=https://magiccards.info/scans/en/arb/130.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3107767-6c36-4982-8e0d-e100d5fca204.jpg?1673305585
 value=3.654
 rarity=M
 type=Enchantment

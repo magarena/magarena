@@ -1,5 +1,5 @@
 name=From Under the Floorboards
-image=https://magiccards.info/scans/en/soi/111.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf31fec2-40d6-4810-8575-c7814bb4b6b4.jpg?1568004187
 value=2.500
 rarity=R
 type=Sorcery

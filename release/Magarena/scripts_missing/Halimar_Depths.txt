@@ -1,5 +1,5 @@
 name=Halimar Depths
-image=https://magiccards.info/scans/en/wwk/137.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36a04300-764b-4faf-ad46-7516360c9516.jpg?1631589789
 value=3.972
 rarity=C
 type=Land

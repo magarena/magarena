@@ -1,5 +1,5 @@
 name=Thoughtlace
-image=https://magiccards.info/scans/en/4e/107.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/185674a4-db97-444d-b0e9-7dcfc245ce4b.jpg?1559600369
 value=1.744
 rarity=R
 type=Instant

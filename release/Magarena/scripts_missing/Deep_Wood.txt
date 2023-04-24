@@ -1,5 +1,5 @@
 name=Deep Wood
-image=https://magiccards.info/scans/en/po2/66.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfa04db1-bf4a-4824-9dc9-f5c510ba62bc.jpg?1562944420
 value=2.722
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Liliana, Heretical Healer
-image=https://magiccards.info/scans/en/ori/106a.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8b718d8-fca3-4b3e-9448-6067c8656a9a.jpg?1651951703
 image_updated=2015-11-05
 value=2.500
 rarity=M

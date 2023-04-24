@@ -1,5 +1,5 @@
 name=Knowledge Vault
-image=https://magiccards.info/scans/en/lg/225.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c416fca6-e201-4dbc-b9c7-248d70967746.jpg?1581799181
 value=2.780
 rarity=R
 type=Artifact

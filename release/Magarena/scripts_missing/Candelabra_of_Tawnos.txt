@@ -1,5 +1,5 @@
 name=Candelabra of Tawnos
-image=https://magiccards.info/scans/en/aq/8.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e8416b8-aae1-4599-9e22-650dd86aefcb.jpg?1562917248
 value=4.599
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Living Totem
-image=https://magiccards.info/scans/en/m15/184.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca21890c-68be-4929-913e-d28ace6b40a7.jpg?1562794245
 value=2.429
 rarity=C
 type=Creature

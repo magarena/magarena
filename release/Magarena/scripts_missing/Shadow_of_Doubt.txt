@@ -1,5 +1,5 @@
 name=Shadow of Doubt
-image=https://magiccards.info/scans/en/rav/253.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7dbd0e3c-b26d-4080-b7cf-1c64fce09668.jpg?1598917857
 value=4.113
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Sunken Ruins
-image=https://magiccards.info/scans/en/shm/280.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/9181d30d-4f8e-421f-89b8-149ed8000fb2.jpg?1599710647
 value=4.322
 rarity=R
 type=Land

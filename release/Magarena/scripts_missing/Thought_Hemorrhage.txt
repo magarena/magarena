@@ -1,5 +1,5 @@
 name=Thought Hemorrhage
-image=https://magiccards.info/scans/en/arb/47.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2b38a7e-d7c4-40c2-ba54-ae5649589cc9.jpg?1562643708
 value=4.211
 rarity=R
 type=Sorcery

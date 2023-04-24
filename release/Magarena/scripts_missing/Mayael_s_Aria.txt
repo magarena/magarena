@@ -1,5 +1,5 @@
 name=Mayael's Aria
-image=https://magiccards.info/scans/en/arb/121.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a53170fe-7f18-47ef-b501-1ed398306419.jpg?1673148961
 value=3.836
 rarity=R
 type=Enchantment

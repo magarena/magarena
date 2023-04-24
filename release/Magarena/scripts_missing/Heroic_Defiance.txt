@@ -1,5 +1,5 @@
 name=Heroic Defiance
-image=https://magiccards.info/scans/en/ps/6.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dc1aa36-5d3b-4d25-9d54-937cdabf72a4.jpg?1562897813
 value=2.568
 rarity=C
 type=Enchantment

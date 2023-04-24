@@ -1,5 +1,5 @@
 name=Magnetic Theft
-image=https://magiccards.info/scans/en/5dn/74.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de0c1e37-fedc-43d9-97fd-b797c6c2fbbe.jpg?1562880223
 value=3.712
 rarity=U
 type=Instant

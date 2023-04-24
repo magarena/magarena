@@ -1,5 +1,5 @@
 name=Jihad
-image=https://magiccards.info/scans/en/an/60.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6c7705a-2987-4ef1-92b1-2c55d989ec6f.jpg?1644608192
 value=3.931
 rarity=R
 type=Enchantment

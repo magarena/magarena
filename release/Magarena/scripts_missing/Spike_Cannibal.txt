@@ -1,5 +1,5 @@
 name=Spike Cannibal
-image=https://magiccards.info/scans/en/ex/75.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64003772-c62f-4728-a00c-48c78991c6ae.jpg?1562087840
 value=4.184
 rarity=U
 type=Creature

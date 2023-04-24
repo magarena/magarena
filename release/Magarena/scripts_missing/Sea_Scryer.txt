@@ -1,5 +1,5 @@
 name=Sea Scryer
-image=https://magiccards.info/scans/en/mr/90.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/124308ac-1bf6-4a79-8aaa-f3be8eeb3e78.jpg?1562717848
 value=3.243
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Whirlpool Drake
-image=https://magiccards.info/scans/en/ap/34.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e866093-89a3-458d-8ebc-de805ef7885e.jpg?1562921040
 value=3.574
 rarity=U
 type=Creature

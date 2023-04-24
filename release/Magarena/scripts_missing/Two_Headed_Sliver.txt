@@ -1,5 +1,5 @@
 name=Two-Headed Sliver
-image=https://magiccards.info/scans/en/ts/183.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/260cf43a-f3a4-48f7-9c51-5884d106ff56.jpg?1619397819
 value=3.551
 rarity=C
 type=Creature

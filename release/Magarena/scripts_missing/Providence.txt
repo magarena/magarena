@@ -1,5 +1,5 @@
 name=Providence
-image=https://magiccards.info/scans/en/emn/37.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e5edd8d-8e10-4414-a326-95a672dfcff7.jpg?1576383949
 image_updated=2016-09-05
 value=2.500
 rarity=R

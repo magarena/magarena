@@ -1,5 +1,5 @@
 name=Golgari Signet
-image=https://magiccards.info/scans/en/mm3/220.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b088a25-e837-44a7-835c-a9899f852f92.jpg?1562274133
 image_updated=2017-08-08
 value=4.273
 rarity=U

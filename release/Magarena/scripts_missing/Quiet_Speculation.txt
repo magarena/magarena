@@ -1,5 +1,5 @@
 name=Quiet Speculation
-image=https://magiccards.info/scans/en/ema/68.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd12fd06-26c5-42d8-936c-fe10b778a561.jpg?1580014091
 value=3.759
 rarity=U
 type=Sorcery

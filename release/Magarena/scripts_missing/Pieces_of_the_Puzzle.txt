@@ -1,5 +1,5 @@
 name=Pieces of the Puzzle
-image=https://magiccards.info/scans/en/soi/78.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69204c83-2e43-4ca1-a4cd-d75399a7d6dd.jpg?1576384174
 value=2.500
 rarity=C
 type=Sorcery

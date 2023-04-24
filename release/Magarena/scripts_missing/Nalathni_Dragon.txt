@@ -1,5 +1,5 @@
 name=Nalathni Dragon
-image=https://magiccards.info/scans/en/mbp/3.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59a2bba4-be5b-482f-9f55-6f1934078bd2.jpg?1562544949
 value=2.662
 rarity=R
 type=Creature

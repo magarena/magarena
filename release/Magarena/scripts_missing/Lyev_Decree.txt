@@ -1,5 +1,5 @@
 name=Lyev Decree
-image=https://magiccards.info/scans/en/dgm/3.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/773cf2aa-4337-4d14-8a8e-ff8b1fdec1b5.jpg?1562917039
 value=2.853
 rarity=C
 type=Sorcery

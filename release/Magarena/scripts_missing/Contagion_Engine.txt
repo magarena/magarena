@@ -1,5 +1,5 @@
 name=Contagion Engine
-image=https://magiccards.info/scans/en/som/145.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dce72636-08e4-484e-ad81-4d1597a31ffb.jpg?1576030799
 value=4.133
 rarity=R
 type=Artifact

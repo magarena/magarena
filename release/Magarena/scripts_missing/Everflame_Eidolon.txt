@@ -1,5 +1,5 @@
 name=Everflame Eidolon
-image=https://magiccards.info/scans/en/bng/92.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a018d5ea-5229-40ca-b7c5-31d3e8ebb894.jpg?1593092193
 value=3.640
 rarity=U
 type=Enchantment,Creature

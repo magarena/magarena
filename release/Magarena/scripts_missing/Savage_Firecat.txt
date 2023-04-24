@@ -1,5 +1,5 @@
 name=Savage Firecat
-image=https://magiccards.info/scans/en/od/218.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52e14dbe-4d33-405c-ab84-2fc6b1e000b8.jpg?1562910216
 value=3.667
 rarity=R
 type=Creature

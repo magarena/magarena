@@ -1,5 +1,5 @@
 name=Churning Eddy
-image=https://magiccards.info/scans/en/tr/32.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd28bc8e-842f-4788-92a0-3019e3c2385f.jpg?1562631777
 value=3.100
 rarity=C
 type=Sorcery

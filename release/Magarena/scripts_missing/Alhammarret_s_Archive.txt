@@ -1,5 +1,5 @@
 name=Alhammarret's Archive
-image=https://magiccards.info/scans/en/ori/221.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f4187f1-05bd-4db6-a2e7-d677eff588ee.jpg?1625978215
 image_updated=2015-11-05
 value=2.500
 rarity=M

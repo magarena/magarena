@@ -1,5 +1,5 @@
 name=Soul Burn
-image=https://magiccards.info/scans/en/cstd/31.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70515cd2-97d5-4491-a758-bc7188fdc6dc.jpg?1562917470
 value=3.129
 rarity=C
 type=Sorcery

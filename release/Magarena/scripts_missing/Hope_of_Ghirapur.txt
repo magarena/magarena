@@ -1,5 +1,5 @@
 name=Hope of Ghirapur
-image=https://magiccards.info/scans/en/aer/154.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f4bcadd-7eff-4294-94d5-52482a734d5b.jpg?1576382268
 value=2.500
 rarity=R
 type=Legendary,Artifact,Creature

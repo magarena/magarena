@@ -1,5 +1,5 @@
 name=Arcanum Wings
-image=https://magiccards.info/scans/en/fut/48.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47e6e715-abd8-4ff9-a8aa-8f4b929b0283.jpg?1562909659
 value=3.847
 rarity=U
 type=Enchantment

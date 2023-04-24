@@ -1,5 +1,5 @@
 name=Warrior's Oath
-image=https://magiccards.info/scans/en/p3k/124.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65e10759-e862-4b69-8b58-474df2cdae29.jpg?1673147960
 value=4.013
 rarity=R
 type=Sorcery

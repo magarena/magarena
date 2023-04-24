@@ -1,5 +1,5 @@
 name=Mark of Sakiko
-image=https://magiccards.info/scans/en/bok/135.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/7611a97d-6500-4311-baa1-be3ee0791f3a.jpg?1562877859
 value=3.330
 rarity=U
 type=Enchantment

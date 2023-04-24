@@ -1,5 +1,5 @@
 name=Urborg Justice
-image=https://magiccards.info/scans/en/wl/26.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39f322ff-0b04-41ce-90cd-9896f941e703.jpg?1562800263
 value=4.064
 rarity=R
 type=Instant

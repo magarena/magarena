@@ -1,5 +1,5 @@
 name=Psychic Overload
-image=https://magiccards.info/scans/en/ds/28.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b32d0779-ef2a-42be-ad67-cee9b06122de.jpg?1562639041
 value=3.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Boggart Brute
-image=https://magiccards.info/scans/en/m19/131.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d6de3a7-30a7-49d7-8e39-494355c6edae.jpg?1600714905
 image_updated=2018-08-07
 value=2.500
 rarity=C

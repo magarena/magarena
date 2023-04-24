@@ -1,5 +1,5 @@
 name=Wall of Vapor
-image=https://magiccards.info/scans/en/lg/84.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/309c1b2a-0230-4b66-84a0-32b8cd6d31eb.jpg?1587912489
 image_updated=2017-01-11
 value=2.302
 rarity=C

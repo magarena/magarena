@@ -1,5 +1,5 @@
 name=Angelic Arbiter
-image=https://magiccards.info/scans/en/cmd/5.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8637d263-5d7e-45bc-aad3-d97f57e6898e.jpg?1600715393
 value=3.837
 rarity=R
 type=Creature

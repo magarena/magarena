@@ -1,5 +1,5 @@
 name=Triumph of Gerrard
-image=https://magiccards.info/scans/en/dom/38.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3416fae7-46a0-4048-b969-9cf95bac09db.jpg?1562733829
 value=2.500
 rarity=U
 type=Enchantment

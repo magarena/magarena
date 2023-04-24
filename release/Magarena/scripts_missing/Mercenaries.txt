@@ -1,5 +1,5 @@
 name=Mercenaries
-image=https://magiccards.info/scans/en/ia/268.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b28762d-1ab7-460e-b433-27f5fa858959.jpg?1587911549
 value=1.214
 rarity=R
 type=Creature

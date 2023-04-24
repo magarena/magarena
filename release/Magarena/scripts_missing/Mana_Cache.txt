@@ -1,5 +1,5 @@
 name=Mana Cache
-image=https://magiccards.info/scans/en/ne/92.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/583a33b3-7833-48e5-88c3-849a5771ef6e.jpg?1562630035
 value=2.234
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Seismic Shift
-image=https://magiccards.info/scans/en/dom/141.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dad40a04-a026-4285-8c78-088a356652d1.jpg?1593861040
 value=2.500
 rarity=C
 type=Sorcery

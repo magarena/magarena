@@ -1,5 +1,5 @@
 name=Protect
-image=https://magiccards.info/scans/en/dgm/131a.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b8acd7d-f3e2-4358-91ab-40901b68d64c.jpg?1562923973
 value=2.565
 rarity=U
 type=Instant

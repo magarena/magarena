@@ -1,5 +1,5 @@
 name=Yasova Dragonclaw
-image=https://magiccards.info/scans/en/frf/148.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/490994c6-9fef-482b-835d-a64350bfaa8d.jpg?1562824820
 value=2.500
 rarity=R
 type=Legendary,Creature

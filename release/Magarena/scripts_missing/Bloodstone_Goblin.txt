@@ -1,5 +1,5 @@
 name=Bloodstone Goblin
-image=https://magiccards.info/scans/en/dom/115.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31adbfd4-56aa-4137-aeba-8720233260be.jpg?1562733644
 value=2.500
 rarity=C
 type=Creature

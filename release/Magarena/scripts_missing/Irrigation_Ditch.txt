@@ -1,5 +1,5 @@
 name=Irrigation Ditch
-image=https://magiccards.info/scans/en/in/324.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/977f1b44-166c-4faf-8a7b-d431707e90ce.jpg?1562925548
 value=3.182
 rarity=C
 type=Land

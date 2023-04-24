@@ -1,5 +1,5 @@
 name=Spell Burst
-image=https://magiccards.info/scans/en/ts/79.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8169929c-641f-41c8-a48e-1a7d0c57726b.jpg?1619394723
 value=3.522
 rarity=U
 type=Instant

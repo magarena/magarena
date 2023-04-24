@@ -1,5 +1,5 @@
 name=Mirror of the Forebears
-image=https://magiccards.info/scans/en/c17/54.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82e96f29-ce98-4e2d-8035-da3994ab66db.jpg?1562614915
 image_updated=2017-10-03
 value=2.500
 rarity=U

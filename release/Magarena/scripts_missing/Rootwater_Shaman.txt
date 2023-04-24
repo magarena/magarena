@@ -1,5 +1,5 @@
 name=Rootwater Shaman
-image=https://magiccards.info/scans/en/tp/84.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/caa1b84b-efda-4324-9106-0d1d00385cdc.jpg?1562056414
 value=3.768
 rarity=R
 type=Creature

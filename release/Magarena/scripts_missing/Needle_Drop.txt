@@ -1,5 +1,5 @@
 name=Needle Drop
-image=https://magiccards.info/scans/en/lw/186.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3f89bcf-46f8-4598-a949-7f10134606aa.jpg?1562369628
 value=3.117
 rarity=C
 type=Instant

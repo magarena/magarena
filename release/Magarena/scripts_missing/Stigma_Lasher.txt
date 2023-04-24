@@ -1,5 +1,5 @@
 name=Stigma Lasher
-image=https://magiccards.info/scans/en/eve/62.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce5d1fd4-0543-46ce-bcea-1695fc04e85b.jpg?1562938629
 value=4.317
 rarity=R
 type=Creature

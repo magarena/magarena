@@ -1,5 +1,5 @@
 name=Mimic Vat
-image=https://magiccards.info/scans/en/som/175.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfa8757b-ef7d-44b8-ae80-45c436e85c1e.jpg?1673485399
 value=4.304
 rarity=R
 type=Artifact

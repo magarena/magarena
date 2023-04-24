@@ -1,5 +1,5 @@
 name=Animation Module
-image=https://magiccards.info/scans/en/kld/194.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34bdc973-db45-46a6-ac48-ce88fb59920a.jpg?1576382961
 image_updated=2016-10-05
 value=2.500
 rarity=R

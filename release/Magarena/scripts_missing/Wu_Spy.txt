@@ -1,5 +1,5 @@
 name=Wu Spy
-image=https://magiccards.info/scans/en/p3k/63.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f77b8e34-e7e9-4ac6-bc21-0ef52c6696c7.jpg?1562258008
 value=3.750
 rarity=U
 type=Creature

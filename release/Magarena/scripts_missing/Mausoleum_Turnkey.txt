@@ -1,5 +1,5 @@
 name=Mausoleum Turnkey
-image=https://magiccards.info/scans/en/cn2/142.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7b6e993-1988-4b6d-970e-be71d95cf21a.jpg?1600700854
 image_updated=2017-08-29
 value=2.583
 rarity=U

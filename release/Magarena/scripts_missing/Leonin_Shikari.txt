@@ -1,5 +1,5 @@
 name=Leonin Shikari
-image=https://magiccards.info/scans/en/c17/66.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47db94ce-e9f3-4bc3-b05f-17fde1d91329.jpg?1562606847
 image_updated=2017-10-03
 value=4.435
 rarity=R

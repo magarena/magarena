@@ -1,5 +1,5 @@
 name=Common Cause
-image=https://magiccards.info/scans/en/mm/13.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eae4c25f-2005-4ac0-a5f0-2fc250520995.jpg?1562383533
 value=1.538
 rarity=R
 type=Enchantment

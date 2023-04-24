@@ -1,5 +1,5 @@
 name=Volrath's Curse
-image=https://magiccards.info/scans/en/tp/101.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c80be3e6-37da-43bd-b959-9dbfead3baa1.jpg?1562431300
 value=2.500
 rarity=C
 type=Enchantment

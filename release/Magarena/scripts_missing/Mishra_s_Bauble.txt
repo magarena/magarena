@@ -1,5 +1,5 @@
 name=Mishra's Bauble
-image=https://magiccards.info/scans/en/ima/221.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45bbbf9b-8fee-4c32-a513-02dac6ac8a39.jpg?1669300401
 image_updated=2017-04-12
 value=4.297
 rarity=U

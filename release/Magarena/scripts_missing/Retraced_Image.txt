@@ -1,5 +1,5 @@
 name=Retraced Image
-image=https://magiccards.info/scans/en/tr/46.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c62fa778-ce44-4a3e-958a-91dfe5398944.jpg?1562631940
 value=3.912
 rarity=R
 type=Sorcery

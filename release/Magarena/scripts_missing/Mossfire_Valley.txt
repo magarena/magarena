@@ -1,5 +1,5 @@
 name=Mossfire Valley
-image=https://magiccards.info/scans/en/od/321.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99b4e4f2-c37c-4bcf-a635-f01a427ffbed.jpg?1682210547
 value=4.062
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Grow from the Ashes
-image=https://magiccards.info/scans/en/dom/164.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51d4d1c2-671c-498c-a232-7d076e3dc3bb.jpg?1562735600
 value=2.500
 rarity=C
 type=Sorcery

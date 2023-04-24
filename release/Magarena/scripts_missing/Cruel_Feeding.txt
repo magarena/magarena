@@ -1,5 +1,5 @@
 name=Cruel Feeding
-image=https://magiccards.info/scans/en/jou/64.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a53624ee-2925-4a56-8706-e278db5d963d.jpg?1593095659
 value=2.475
 rarity=C
 type=Instant

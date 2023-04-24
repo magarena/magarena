@@ -1,5 +1,5 @@
 name=Lesser Werewolf
-image=https://magiccards.info/scans/en/lg/24.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dcbda60c-5a53-4232-b89c-267f7b11c192.jpg?1562941595
 value=2.638
 rarity=U
 type=Creature

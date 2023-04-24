@@ -1,5 +1,5 @@
 name=Majestic Myriarch
-image=https://magiccards.info/scans/en/hou/122.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/457d66b3-f059-4b2f-91b0-96568e1b17f5.jpg?1654667570
 value=2.500
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Fated Intervention
-image=https://magiccards.info/scans/en/bng/121.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/622e1afc-0d06-4c01-abef-3b3e93bd21c3.jpg?1593092457
 value=3.721
 rarity=R
 type=Instant

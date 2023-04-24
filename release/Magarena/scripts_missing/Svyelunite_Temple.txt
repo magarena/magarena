@@ -1,5 +1,5 @@
 name=Svyelunite Temple
-image=https://magiccards.info/scans/en/6e/329.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21fe2f1b-bfd1-4682-ae23-069300de3791.jpg?1562867851
 value=3.569
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Dragonlord's Prerogative
-image=https://magiccards.info/scans/en/dtk/52.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53f2d2b3-6e48-413e-ad8f-9ce40c7ff167.jpg?1562786359
 value=2.500
 rarity=R
 type=Instant

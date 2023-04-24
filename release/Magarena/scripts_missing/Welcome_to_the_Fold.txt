@@ -1,5 +1,5 @@
 name=Welcome to the Fold
-image=https://magiccards.info/scans/en/soi/96.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d07fbe1-e66a-4893-86ee-7752ad77b120.jpg?1576384316
 value=2.500
 rarity=R
 type=Sorcery

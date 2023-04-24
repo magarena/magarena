@@ -1,5 +1,5 @@
 name=Delirium
-image=https://magiccards.info/scans/en/mr/320.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c52981ea-1173-4f4b-a929-705a11c6e381.jpg?1562721455
 value=4.050
 rarity=U
 type=Instant

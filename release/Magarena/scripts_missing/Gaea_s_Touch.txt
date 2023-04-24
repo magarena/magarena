@@ -1,5 +1,5 @@
 name=Gaea's Touch
-image=https://magiccards.info/scans/en/dk/40.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f23950c-f583-4559-8c3b-bd28bedecf80.jpg?1562904910
 value=4.570
 rarity=C
 type=Enchantment

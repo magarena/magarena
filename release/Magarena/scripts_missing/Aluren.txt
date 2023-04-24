@@ -1,5 +1,5 @@
 name=Aluren
-image=https://magiccards.info/scans/en/tp/107.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03b69c39-52d8-4ee6-a3f5-60899c1fe6e6.jpg?1595438020
 value=2.500
 rarity=R
 type=Enchantment

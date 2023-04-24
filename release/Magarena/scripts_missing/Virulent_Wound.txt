@@ -1,5 +1,5 @@
 name=Virulent Wound
-image=https://magiccards.info/scans/en/mbs/57.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7ae09e1a-c257-45e9-88c8-7b1a7a6d714b.jpg?1562612457
 value=3.297
 rarity=C
 type=Instant

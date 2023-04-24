@@ -1,5 +1,5 @@
 name=Immerwolf
-image=https://magiccards.info/scans/en/dka/141.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9326061f-ea76-4be7-a06f-aefb63454777.jpg?1562929662
 value=3.896
 rarity=U
 type=Creature

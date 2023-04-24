@@ -1,5 +1,5 @@
 name=Double Negative
-image=https://magiccards.info/scans/en/arb/87.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c7e3c58-3cda-4891-8b3d-33bb21568cf5.jpg?1562640325
 value=3.346
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Reap What Is Sown
-image=https://magiccards.info/scans/en/bng/154.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/120babed-841f-4bf1-ac2d-3ab097c0760b.jpg?1593092818
 value=3.667
 rarity=U
 type=Instant

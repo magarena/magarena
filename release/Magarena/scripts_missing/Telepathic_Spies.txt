@@ -1,5 +1,5 @@
 name=Telepathic Spies
-image=https://magiccards.info/scans/en/7e/101.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1aeb39c9-7853-4032-882a-83d4863dcbc5.jpg?1562233775
 value=2.773
 rarity=C
 type=Creature

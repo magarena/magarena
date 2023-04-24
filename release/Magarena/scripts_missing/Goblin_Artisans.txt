@@ -1,5 +1,5 @@
 name=Goblin Artisans
-image=https://magiccards.info/scans/en/ch/48.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4e8d779-ef6f-4b09-870e-f1fdeac83e32.jpg?1562931398
 value=2.712
 rarity=U
 type=Creature

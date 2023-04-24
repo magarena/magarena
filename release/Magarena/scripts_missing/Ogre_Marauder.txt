@@ -1,5 +1,5 @@
 name=Ogre Marauder
-image=https://magiccards.info/scans/en/bok/75.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f083bd50-d171-4e49-b8e6-972802879c24.jpg?1562880609
 value=3.961
 rarity=U
 type=Creature

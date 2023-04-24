@@ -1,5 +1,5 @@
 name=Triton Tactics
-image=https://magiccards.info/scans/en/ths/71.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da8134a6-7fd7-4f41-8127-dc32400fb04b.jpg?1592764684
 value=3.627
 rarity=U
 type=Instant

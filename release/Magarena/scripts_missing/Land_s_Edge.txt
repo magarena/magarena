@@ -1,5 +1,5 @@
 name=Land's Edge
-image=https://magiccards.info/scans/en/lg/155.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41798dd9-8ce8-4642-89c2-7356ea129d4e.jpg?1562908139
 image_updated=2016-12-21
 value=3.462
 rarity=R

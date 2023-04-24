@@ -1,5 +1,5 @@
 name=Torture Chamber
-image=https://magiccards.info/scans/en/tp/303.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5648158d-38d4-4167-8af5-ee5d7d6fd7cb.jpg?1562054225
 value=1.841
 rarity=R
 type=Artifact

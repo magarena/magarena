@@ -1,5 +1,5 @@
 name=Kjeldoran Phalanx
-image=https://magiccards.info/scans/en/ia/261.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6e91ba0-b229-4ab1-84f3-2a490dfa5051.jpg?1587911536
 value=2.688
 rarity=R
 type=Creature

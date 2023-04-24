@@ -1,5 +1,5 @@
 name=Mindleech Mass
-image=https://magiccards.info/scans/en/rav/215.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cd1ace7-d4fe-4f96-9434-7ab1442bf36f.jpg?1598917172
 value=4.029
 rarity=R
 type=Creature

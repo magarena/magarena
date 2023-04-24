@@ -1,5 +1,5 @@
 name=Ambuscade
-image=https://magiccards.info/scans/en/hou/110.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4df71162-7e8f-47c5-aff4-59d82d8c674d.jpg?1673147985
 value=2.500
 rarity=C
 type=Instant

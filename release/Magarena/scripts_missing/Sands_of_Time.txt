@@ -1,5 +1,5 @@
 name=Sands of Time
-image=https://magiccards.info/scans/en/vi/153.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a782ee95-bde4-41f4-a947-b073cc4c1e7c.jpg?1587857199
 value=4.182
 rarity=R
 type=Artifact

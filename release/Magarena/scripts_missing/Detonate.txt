@@ -1,5 +1,5 @@
 name=Detonate
-image=https://magiccards.info/scans/en/mi/88.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45d14cd5-8398-481a-a190-d6c0f6263e33.jpg?1562911398
 image_updated=2015-11-13
 value=3.688
 rarity=U

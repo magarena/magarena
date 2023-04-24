@@ -1,5 +1,5 @@
 name=Disciple of Deceit
-image=https://magiccards.info/scans/en/jou/148.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbfe88fd-9bb9-42af-8134-96fd264b8405.jpg?1593096393
 value=4.203
 rarity=U
 type=Creature

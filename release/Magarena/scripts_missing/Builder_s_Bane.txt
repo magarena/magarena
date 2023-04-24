@@ -1,5 +1,5 @@
 name=Builder's Bane
-image=https://magiccards.info/scans/en/mr/160.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb398027-5a29-4c81-aab5-b1a2b82fd655.jpg?1562722867
 value=3.152
 rarity=C
 type=Sorcery

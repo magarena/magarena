@@ -1,5 +1,5 @@
 name=Martyr's Cry
-image=https://magiccards.info/scans/en/dk/85.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9fb6ef0-0a57-4521-9401-92ad6c614af2.jpg?1562942712
 value=3.413
 rarity=R
 type=Sorcery

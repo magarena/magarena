@@ -1,5 +1,5 @@
 name=Extortion
-image=https://magiccards.info/scans/en/mm/135.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a66742db-4750-49ce-ad05-b825af7222c4.jpg?1562382089
 value=2.929
 rarity=R
 type=Sorcery

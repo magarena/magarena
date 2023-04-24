@@ -1,5 +1,5 @@
 name=Bane of Bala Ged
-image=https://magiccards.info/scans/en/bfz/1.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3741e62a-4b86-46ff-a7df-a8ceaf3b9a0c.jpg?1562907961
 image_updated=2015-11-08
 value=2.500
 rarity=U

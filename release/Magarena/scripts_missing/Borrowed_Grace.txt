@@ -1,5 +1,5 @@
 name=Borrowed Grace
-image=https://magiccards.info/scans/en/emn/14.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0067567-3434-4c12-9d4d-04ffc98d012c.jpg?1576383780
 image_updated=2016-09-05
 value=2.500
 rarity=C

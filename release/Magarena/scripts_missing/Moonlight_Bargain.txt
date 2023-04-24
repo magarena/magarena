@@ -1,5 +1,5 @@
 name=Moonlight Bargain
-image=https://magiccards.info/scans/en/rav/95.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/662097e6-355f-4192-9fa7-4b8c22346a64.jpg?1592710711
 value=2.860
 rarity=R
 type=Instant

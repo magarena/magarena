@@ -1,5 +1,5 @@
 name=Bartel Runeaxe
-image=https://magiccards.info/scans/en/lg/262.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c635e33-c9f1-4508-986d-c0289921c299.jpg?1562907547
 value=3.385
 rarity=U
 type=Legendary,Creature

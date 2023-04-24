@@ -1,5 +1,5 @@
 name=War's Toll
-image=https://magiccards.info/scans/en/di/77.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a08f7fe-8ca9-4604-85c8-9050298730ea.jpg?1562906728
 value=3.778
 rarity=R
 type=Enchantment

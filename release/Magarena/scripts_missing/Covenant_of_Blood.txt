@@ -1,5 +1,5 @@
 name=Covenant of Blood
-image=https://magiccards.info/scans/en/m15/91.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/752b7d05-19d7-4765-9bf8-05a7cb539c3f.jpg?1562789193
 value=2.786
 rarity=C
 type=Sorcery

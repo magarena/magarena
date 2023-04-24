@@ -1,5 +1,5 @@
 name=Rushwood Grove
-image=https://magiccards.info/scans/en/mm/325.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c315c72c-3e2f-4aff-b7d7-2f709ccec332.jpg?1562383024
 value=3.444
 rarity=U
 type=Land

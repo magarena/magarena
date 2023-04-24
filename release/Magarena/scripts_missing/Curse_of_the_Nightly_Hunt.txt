@@ -1,5 +1,5 @@
 name=Curse of the Nightly Hunt
-image=https://magiccards.info/scans/en/isd/137.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2983c017-1697-4d45-ac58-3f3ccbaaefff.jpg?1562272943
 image_updated=2016-02-29
 value=3.106
 rarity=U

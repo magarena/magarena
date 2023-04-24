@@ -1,5 +1,5 @@
 name=Saprazzan Breaker
-image=https://magiccards.info/scans/en/mm/98.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2de7bf0f-5ad5-467b-ad80-28517951bbe1.jpg?1562379910
 value=2.548
 rarity=U
 type=Creature

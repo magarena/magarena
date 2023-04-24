@@ -1,5 +1,5 @@
 name=Reverse Engineer
-image=https://magiccards.info/scans/en/aer/42.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eaa66bd-fb8c-4591-8a57-2178a77ec8e1.jpg?1682208855
 value=2.500
 rarity=U
 type=Sorcery

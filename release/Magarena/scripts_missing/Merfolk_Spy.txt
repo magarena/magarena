@@ -1,5 +1,5 @@
 name=Merfolk Spy
-image=https://magiccards.info/scans/en/m11/66.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30c89aa2-3375-4681-ad26-b5d5c7d3d842.jpg?1562827654
 value=3.364
 rarity=C
 type=Creature

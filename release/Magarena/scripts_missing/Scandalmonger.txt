@@ -1,5 +1,5 @@
 name=Scandalmonger
-image=https://magiccards.info/scans/en/mm/158.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10c97baa-9bc0-4894-867c-ad1f56c469fd.jpg?1562378975
 value=2.750
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Lava Burst
-image=https://magiccards.info/scans/en/ia/198.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45cb4936-52e5-4353-b984-a3badac8250c.jpg?1562868539
 value=3.985
 rarity=C
 type=Sorcery

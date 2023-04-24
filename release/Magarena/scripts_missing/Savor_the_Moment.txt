@@ -1,5 +1,5 @@
 name=Savor the Moment
-image=https://magiccards.info/scans/en/shm/50.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93a0d9ad-31bf-4561-a5b2-f44a12a2c2c2.jpg?1562833273
 value=3.866
 rarity=R
 type=Sorcery

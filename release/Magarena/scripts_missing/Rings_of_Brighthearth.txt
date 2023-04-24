@@ -1,5 +1,5 @@
 name=Rings of Brighthearth
-image=https://magiccards.info/scans/en/lw/259.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/838ffc87-517a-4d94-8ce0-bc9ed01ecc52.jpg?1608911654
 value=4.355
 rarity=R
 type=Artifact

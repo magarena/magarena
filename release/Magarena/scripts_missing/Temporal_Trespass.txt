@@ -1,5 +1,5 @@
 name=Temporal Trespass
-image=https://magiccards.info/scans/en/frf/55.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a08b7a1e-b404-41ea-875f-b3468501cb4b.jpg?1562828177
 value=2.500
 rarity=M
 type=Sorcery

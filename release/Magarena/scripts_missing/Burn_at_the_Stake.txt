@@ -1,5 +1,5 @@
 name=Burn at the Stake
-image=https://magiccards.info/scans/en/avr/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d46e9902-81fb-4a3c-9f2f-d3faf031631d.jpg?1592709039
 value=3.770
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Manabond
-image=https://magiccards.info/scans/en/ex/113.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f94ab94-5a8f-4422-8927-0b7da85c3119.jpg?1562429856
 value=2.500
 rarity=R
 type=Enchantment

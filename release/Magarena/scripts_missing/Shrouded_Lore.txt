@@ -1,5 +1,5 @@
 name=Shrouded Lore
-image=https://magiccards.info/scans/en/pc/91.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a26bf956-90eb-4221-a8e0-c8414d819072.jpg?1562577988
 value=2.987
 rarity=U
 type=Sorcery

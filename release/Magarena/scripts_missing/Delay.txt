@@ -1,5 +1,5 @@
 name=Delay
-image=https://magiccards.info/scans/en/fut/35.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/3906d538-f1ca-4799-b91c-2e0d2934f241.jpg?1619393997
 value=3.954
 rarity=U
 type=Instant

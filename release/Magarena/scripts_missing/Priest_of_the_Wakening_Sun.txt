@@ -1,5 +1,5 @@
 name=Priest of the Wakening Sun
-image=https://magiccards.info/scans/en/xln/27.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/051dc73e-f04a-4901-b0ed-3b33c33ac72f.jpg?1562549997
 value=2.500
 rarity=R
 type=Creature

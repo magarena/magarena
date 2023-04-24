@@ -1,5 +1,5 @@
 name=Hall of the Bandit Lord
-image=https://magiccards.info/scans/en/chk/277.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59fa5bab-8626-4b45-a3a3-621f6d9509ab.jpg?1562760153
 value=2.265
 rarity=R
 type=Legendary,Land

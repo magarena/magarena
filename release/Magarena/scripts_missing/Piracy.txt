@@ -1,5 +1,5 @@
 name=Piracy
-image=https://magiccards.info/scans/en/st/45.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/323e3084-8d84-474f-b208-a4637b1ccb51.jpg?1562873608
 value=3.840
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Shapesharer
-image=https://magiccards.info/scans/en/lw/85.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e148481d-a969-40d9-9335-d0e06ad8245b.jpg?1562371364
 value=3.640
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Herald's Horn
-image=https://magiccards.info/scans/en/c17/53.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/171df6af-c5a4-425e-bf1b-d07650e90418.jpg?1682210052
 image_updated=2017-10-03
 value=2.500
 rarity=U

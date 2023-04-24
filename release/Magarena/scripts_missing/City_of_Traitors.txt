@@ -1,5 +1,5 @@
 name=City of Traitors
-image=https://magiccards.info/scans/en/ex/143.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71624139-a255-48be-93ca-594a4beba487.jpg?1562429861
 value=2.500
 rarity=R
 type=Land

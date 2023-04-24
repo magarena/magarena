@@ -1,5 +1,5 @@
 name=Govern the Guildless
-image=https://magiccards.info/scans/en/di/25.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23106341-9200-4eee-93d0-d6173b0b39c4.jpg?1593272675
 value=2.432
 rarity=R
 type=Sorcery

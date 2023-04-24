@@ -1,5 +1,5 @@
 name=Goblin Machinist
-image=https://magiccards.info/scans/en/on/204.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5874e312-1010-43f2-b330-82bc9fcc9f53.jpg?1562915797
 value=3.000
 rarity=U
 type=Creature

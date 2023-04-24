@@ -1,5 +1,5 @@
 name=Swooping Talon
-image=https://magiccards.info/scans/en/le/23.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34c3d19c-d4c6-4c5c-85eb-11d55959a89c.jpg?1562905654
 value=2.688
 rarity=U
 type=Creature

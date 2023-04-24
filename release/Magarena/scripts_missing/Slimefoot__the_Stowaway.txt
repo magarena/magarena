@@ -1,5 +1,5 @@
 name=Slimefoot, the Stowaway
-image=https://magiccards.info/scans/en/dom/205.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8815cd9-7032-445a-aebc-cfc19bd51ee4.jpg?1562744768
 value=2.500
 rarity=U
 type=Legendary,Creature

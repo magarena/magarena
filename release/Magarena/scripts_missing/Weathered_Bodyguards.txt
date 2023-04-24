@@ -1,5 +1,5 @@
 name=Weathered Bodyguards
-image=https://magiccards.info/scans/en/ts/46.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/991a18e5-a183-4b84-b157-5a3609b3f910.jpg?1562927368
 value=3.056
 rarity=R
 type=Creature

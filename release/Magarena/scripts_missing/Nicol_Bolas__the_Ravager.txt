@@ -1,5 +1,5 @@
 name=Nicol Bolas, the Ravager
-image=https://magiccards.info/scans/en/m19/218a.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b215968-93a6-4278-ac61-4e3e8c3c3943.jpg?1566971561
 value=2.500
 rarity=M
 type=Legendary,Creature

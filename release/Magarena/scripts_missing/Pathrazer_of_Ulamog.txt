@@ -1,5 +1,5 @@
 name=Pathrazer of Ulamog
-image=https://magiccards.info/scans/en/roe/9.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fdd84b5-fd93-483e-a131-028d04d9dea7.jpg?1562703113
 value=3.985
 rarity=U
 type=Creature

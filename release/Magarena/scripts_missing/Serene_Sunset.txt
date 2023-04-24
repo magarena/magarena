@@ -1,5 +1,5 @@
 name=Serene Sunset
-image=https://magiccards.info/scans/en/ju/131.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a6ded26-b748-406d-8740-9b8590be2bb1.jpg?1562628588
 value=3.033
 rarity=U
 type=Instant

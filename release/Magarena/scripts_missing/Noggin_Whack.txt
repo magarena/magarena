@@ -1,5 +1,5 @@
 name=Noggin Whack
-image=https://magiccards.info/scans/en/mt/70.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/932649ab-ed5e-405f-986f-855d8a7c8eb2.jpg?1562880071
 value=3.529
 rarity=U
 type=Tribal,Sorcery

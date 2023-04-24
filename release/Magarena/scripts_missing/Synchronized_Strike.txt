@@ -1,5 +1,5 @@
 name=Synchronized Strike
-image=https://magiccards.info/scans/en/akh/190.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcb09d11-5a6d-498f-9173-3539760b19fb.jpg?1543675997
 value=2.500
 rarity=U
 type=Instant

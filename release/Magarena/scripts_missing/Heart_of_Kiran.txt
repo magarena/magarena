@@ -1,5 +1,5 @@
 name=Heart of Kiran
-image=https://magiccards.info/scans/en/aer/153.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e847c44-1849-4251-9075-88ed5c7792a6.jpg?1576382262
 value=2.500
 rarity=M
 type=Legendary,Artifact

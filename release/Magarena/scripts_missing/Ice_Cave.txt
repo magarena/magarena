@@ -1,5 +1,5 @@
 name=Ice Cave
-image=https://magiccards.info/scans/en/ap/24.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc2877c2-4426-4c07-92a2-8ba5107d5e7e.jpg?1562954766
 value=3.487
 rarity=R
 type=Enchantment

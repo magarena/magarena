@@ -1,5 +1,5 @@
 name=Bruna, the Fading Light
-image=https://magiccards.info/scans/en/emn/15a.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27907985-b5f6-4098-ab43-15a0c2bf94d5.jpg?1625771736
 image_updated=2016-09-05
 value=2.500
 rarity=R

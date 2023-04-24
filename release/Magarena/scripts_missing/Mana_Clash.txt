@@ -1,5 +1,5 @@
 name=Mana Clash
-image=https://magiccards.info/scans/en/9e/203.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd41352f-617f-40f6-b612-11022180c18b.jpg?1562740934
 value=3.354
 rarity=R
 type=Sorcery

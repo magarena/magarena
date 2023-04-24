@@ -1,5 +1,5 @@
 name=Hideous Laughter
-image=https://magiccards.info/scans/en/chk/115.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/941fd135-1c5a-4650-8faf-dfa2c93ec8c9.jpg?1562762525
 value=3.616
 rarity=U
 type=Instant

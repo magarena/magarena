@@ -1,5 +1,5 @@
 name=Timecrafting
-image=https://magiccards.info/scans/en/pc/109.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd6da5ef-7e5b-4536-ad28-6fe66f3e0438.jpg?1562586624
 value=2.875
 rarity=U
 type=Instant

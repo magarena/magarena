@@ -1,5 +1,5 @@
 name=Nostalgic Dreams
-image=https://magiccards.info/scans/en/tr/135.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/299065ad-ee2e-4973-9b41-fd04c36d19a4.jpg?1562903492
 value=4.000
 rarity=R
 type=Sorcery

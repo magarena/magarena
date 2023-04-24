@@ -1,5 +1,5 @@
 name=Homing Sliver
-image=https://magiccards.info/scans/en/fut/118.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7f2073b-bc1f-4611-9bdf-73cb86892886.jpg?1619397176
 value=4.203
 rarity=C
 type=Creature

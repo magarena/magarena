@@ -1,5 +1,5 @@
 name=Multani's Presence
-image=https://magiccards.info/scans/en/ul/109.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38bfa984-5fe9-44ad-b13f-3276951f9f10.jpg?1562862791
 value=3.730
 rarity=U
 type=Enchantment

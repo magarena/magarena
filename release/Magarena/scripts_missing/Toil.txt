@@ -1,5 +1,5 @@
 name=Toil
-image=https://magiccards.info/scans/en/dgm/133a.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15bb3454-e3bb-4af9-9e93-461e210c26b7.jpg?1562899172
 value=4.026
 rarity=U
 type=Sorcery

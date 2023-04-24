@@ -1,5 +1,5 @@
 name=Permafrost Trap
-image=https://magiccards.info/scans/en/wwk/34.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03b6dc43-62d3-4572-a2e1-b0e67dcc21c7.jpg?1562281100
 value=3.008
 rarity=U
 type=Instant

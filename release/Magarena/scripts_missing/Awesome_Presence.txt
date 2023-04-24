@@ -1,5 +1,5 @@
 name=Awesome Presence
-image=https://magiccards.info/scans/en/ai/34.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80017e84-87bc-4eb8-a663-5c263d8df812.jpg?1616536884
 value=3.452
 rarity=C
 type=Enchantment

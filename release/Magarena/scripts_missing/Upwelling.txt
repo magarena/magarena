@@ -1,5 +1,5 @@
 name=Upwelling
-image=https://magiccards.info/scans/en/10e/306.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5c47cac-679f-4b48-977f-2fa149a6c3c3.jpg?1562555878
 value=4.183
 rarity=R
 type=Enchantment

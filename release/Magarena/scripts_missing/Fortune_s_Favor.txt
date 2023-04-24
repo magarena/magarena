@@ -1,5 +1,5 @@
 name=Fortune's Favor
-image=https://magiccards.info/scans/en/emn/61.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a67dd08-0064-4750-adf5-07bacb0296eb.jpg?1576384123
 image_updated=2016-09-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Swirl the Mists
-image=https://magiccards.info/scans/en/chk/94.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ea50e09-4ab3-439e-83d7-d584f8af8f16.jpg?1562758889
 value=3.240
 rarity=R
 type=Enchantment

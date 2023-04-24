@@ -1,5 +1,5 @@
 name=Soul's Fire
-image=https://magiccards.info/scans/en/ala/115.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/239a9f2e-145b-4f31-8128-4d376af1079d.jpg?1608910399
 value=4.055
 rarity=C
 type=Instant

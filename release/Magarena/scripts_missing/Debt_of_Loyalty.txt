@@ -1,5 +1,5 @@
 name=Debt of Loyalty
-image=https://magiccards.info/scans/en/wl/127.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d19ed33b-42d4-4a5d-a763-cfb43348769c.jpg?1562803495
 value=4.281
 rarity=R
 type=Instant

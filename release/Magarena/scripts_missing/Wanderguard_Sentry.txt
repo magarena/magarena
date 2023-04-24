@@ -1,5 +1,5 @@
 name=Wanderguard Sentry
-image=https://magiccards.info/scans/en/9e/111.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/562a6a76-7242-4a22-9545-e6aa2dbd5564.jpg?1562735478
 value=1.554
 rarity=C
 type=Creature

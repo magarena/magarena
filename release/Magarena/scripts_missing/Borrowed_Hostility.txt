@@ -1,5 +1,5 @@
 name=Borrowed Hostility
-image=https://magiccards.info/scans/en/emn/121.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd91a194-6043-4c2d-afc8-427c38996ef4.jpg?1576384533
 image_updated=2016-09-05
 value=2.500
 rarity=C

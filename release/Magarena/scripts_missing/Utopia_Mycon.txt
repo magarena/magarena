@@ -1,5 +1,5 @@
 name=Utopia Mycon
-image=https://magiccards.info/scans/en/fut/140.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5664e121-d3f1-4ff5-9576-ef515e22bde7.jpg?1619403694
 value=3.880
 rarity=U
 type=Creature

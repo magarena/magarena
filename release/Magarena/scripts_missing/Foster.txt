@@ -1,5 +1,5 @@
 name=Foster
-image=https://magiccards.info/scans/en/mm/247.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00f86a0b-0f46-4ce1-bbeb-7f46881e1627.jpg?1562895188
 value=4.227
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wind Spirit
-image=https://magiccards.info/scans/en/6e/107.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da614b44-a70a-454b-954b-a420e7f3d62f.jpg?1562870500
 value=2.944
 rarity=U
 type=Creature

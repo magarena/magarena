@@ -1,5 +1,5 @@
 name=Tumble
-image=https://magiccards.info/scans/en/pc/114b.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea0cdb87-030a-4696-a16f-c971cdced3ca.jpg?1666020635
 value=3.556
 rarity=U
 type=Sorcery

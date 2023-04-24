@@ -1,5 +1,5 @@
 name=Mind's Desire
-image=https://magiccards.info/scans/en/sc/41.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17ef3058-46b8-4ec4-950f-c721919c4ac1.jpg?1625976267
 value=4.500
 rarity=R
 type=Sorcery

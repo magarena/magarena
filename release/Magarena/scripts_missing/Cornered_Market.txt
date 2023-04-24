@@ -1,5 +1,5 @@
 name=Cornered Market
-image=https://magiccards.info/scans/en/mm/14.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d4f3c1d-d25e-4263-ab2b-19534c852678.jpg?1562378968
 value=4.150
 rarity=R
 type=Enchantment

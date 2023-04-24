@@ -1,5 +1,5 @@
 name=Autumn's Veil
-image=https://magiccards.info/scans/en/m12/164.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b911fee0-c30b-4d68-a9e2-61c40ece68b0.jpg?1562657125
 value=3.232
 rarity=U
 type=Instant

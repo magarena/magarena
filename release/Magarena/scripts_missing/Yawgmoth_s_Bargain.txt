@@ -1,5 +1,5 @@
 name=Yawgmoth's Bargain
-image=https://magiccards.info/scans/en/ud/75.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eef31b59-45bb-4208-8957-1564902c8507.jpg?1562943000
 value=3.200
 rarity=R
 type=Enchantment

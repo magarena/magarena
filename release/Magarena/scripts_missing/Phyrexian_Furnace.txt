@@ -1,5 +1,5 @@
 name=Phyrexian Furnace
-image=https://magiccards.info/scans/en/wl/155.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e98bca31-8c05-430b-b5d7-331bdc55710a.jpg?1562804019
 value=3.136
 rarity=U
 type=Artifact

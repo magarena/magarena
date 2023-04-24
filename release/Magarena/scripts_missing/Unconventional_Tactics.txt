@@ -1,5 +1,5 @@
 name=Unconventional Tactics
-image=https://magiccards.info/scans/en/hou/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52db5673-ecd3-4e58-8dc9-b42c76f80186.jpg?1562799424
 value=2.500
 rarity=U
 type=Sorcery

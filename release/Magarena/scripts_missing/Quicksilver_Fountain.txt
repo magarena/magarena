@@ -1,5 +1,5 @@
 name=Quicksilver Fountain
-image=https://magiccards.info/scans/en/mi/233.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4f2bf63-e3cf-4a58-86b7-f3bab3b90712.jpg?1562155263
 value=4.043
 rarity=R
 type=Artifact

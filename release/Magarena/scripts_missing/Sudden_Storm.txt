@@ -1,5 +1,5 @@
 name=Sudden Storm
-image=https://magiccards.info/scans/en/bng/53.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6beffc33-58fd-4364-b87b-d4573ecaf4bd.jpg?1593091796
 value=3.021
 rarity=C
 type=Instant

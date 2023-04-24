@@ -1,5 +1,5 @@
 name=Joraga Invocation
-image=https://magiccards.info/scans/en/ori/183.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65c89431-0881-4aa6-ac15-d4c13b075273.jpg?1562023120
 image_updated=2015-11-05
 value=2.500
 rarity=U

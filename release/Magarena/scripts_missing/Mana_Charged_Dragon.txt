@@ -1,5 +1,5 @@
 name=Mana-Charged Dragon
-image=https://magiccards.info/scans/en/cmd/129.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03245712-18b9-48d2-b95e-24a38367abb9.jpg?1592672811
 value=3.800
 rarity=R
 type=Creature

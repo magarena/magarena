@@ -1,5 +1,5 @@
 name=Consuming Ferocity
-image=https://magiccards.info/scans/en/mr/166.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05835e35-f4f8-4513-b5a1-9e31b21168f0.jpg?1562717816
 value=1.706
 rarity=U
 type=Enchantment

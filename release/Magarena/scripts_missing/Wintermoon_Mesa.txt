@@ -1,5 +1,5 @@
 name=Wintermoon Mesa
-image=https://magiccards.info/scans/en/pr/143.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f07144a6-6e47-4315-8353-f8958f014f41.jpg?1562940245
 value=1.362
 rarity=R
 type=Land

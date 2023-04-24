@@ -1,5 +1,5 @@
 name=Rune of Protection: Blue
-image=https://magiccards.info/scans/en/us/37.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85f4ed3a-1851-49b1-baac-fdc8c00b6b71.jpg?1562923262
 value=2.893
 rarity=C
 type=Enchantment

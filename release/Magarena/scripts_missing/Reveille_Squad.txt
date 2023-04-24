@@ -1,5 +1,5 @@
 name=Reveille Squad
-image=https://magiccards.info/scans/en/pr/18.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f6385bb-18f9-461b-b541-3c2a5e59189b.jpg?1562921605
 value=3.824
 rarity=U
 type=Creature

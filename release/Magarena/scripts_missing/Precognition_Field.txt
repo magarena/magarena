@@ -1,5 +1,5 @@
 name=Precognition Field
-image=https://magiccards.info/scans/en/dom/61.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf2a92ee-2b20-4299-84b2-b4963f4a42a1.jpg?1562743197
 value=2.500
 rarity=R
 type=Enchantment

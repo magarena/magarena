@@ -1,5 +1,5 @@
 name=Gisa and Geralf
-image=https://magiccards.info/scans/en/emn/183.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/377a5f75-222b-43e1-8998-18c6cfa44b24.jpg?1637631446
 image_updated=2016-09-05
 value=2.500
 rarity=M

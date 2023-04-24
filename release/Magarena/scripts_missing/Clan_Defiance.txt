@@ -1,5 +1,5 @@
 name=Clan Defiance
-image=https://magiccards.info/scans/en/c16/187.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c38fa58-d2b7-4745-80e2-8be504378f8c.jpg?1562401636
 image_updated=2017-08-17
 value=4.005
 rarity=R

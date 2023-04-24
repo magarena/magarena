@@ -1,5 +1,5 @@
 name=Nacatl Hunt-Pride
-image=https://magiccards.info/scans/en/cfx/13.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1214688-084e-4a6a-928e-9434d594725a.jpg?1562933064
 image_updated=2010-09-10
 value=2.477
 rarity=U

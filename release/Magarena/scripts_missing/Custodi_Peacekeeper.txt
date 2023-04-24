@@ -1,5 +1,5 @@
 name=Custodi Peacekeeper
-image=https://magiccards.info/scans/en/cn2/14.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/add304ab-7a45-40c4-96eb-e32a285c2a50.jpg?1576381560
 image_updated=2016-09-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Dominating Licid
-image=https://magiccards.info/scans/en/ex/30.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3e03323-43e8-4ddc-a874-211a97fd7648.jpg?1562089256
 value=4.440
 rarity=R
 type=Creature

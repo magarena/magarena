@@ -1,5 +1,5 @@
 name=Nissa's Pilgrimage
-image=https://magiccards.info/scans/en/ori/190.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccf744d0-4349-4338-99aa-db0780c7296f.jpg?1562623825
 image_updated=2015-11-05
 value=2.500
 rarity=C

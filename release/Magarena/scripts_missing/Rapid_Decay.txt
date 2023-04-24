@@ -1,5 +1,5 @@
 name=Rapid Decay
-image=https://magiccards.info/scans/en/ud/67.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1678d911-1456-4631-a2f4-d7de4906644b.jpg?1562443330
 value=3.217
 rarity=R
 type=Instant

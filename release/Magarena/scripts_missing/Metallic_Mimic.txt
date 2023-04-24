@@ -1,5 +1,5 @@
 name=Metallic Mimic
-image=https://magiccards.info/scans/en/aer/164.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1aa4eba9-9e91-4beb-9296-a18baa73a318.jpg?1576382339
 value=2.500
 rarity=R
 type=Artifact,Creature

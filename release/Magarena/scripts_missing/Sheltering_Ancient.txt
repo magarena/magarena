@@ -1,5 +1,5 @@
 name=Sheltering Ancient
-image=https://magiccards.info/scans/en/cs/121.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d16535ae-6e03-4992-9459-d31626a3222e.jpg?1593275472
 value=3.781
 rarity=U
 type=Creature

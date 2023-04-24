@@ -1,5 +1,5 @@
 name=Kari Zev, Skyship Raider
-image=https://magiccards.info/scans/en/aer/87.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52de8af2-d260-42a8-b8c2-b26b392632d1.jpg?1673305296
 value=2.500
 rarity=R
 type=Legendary,Creature

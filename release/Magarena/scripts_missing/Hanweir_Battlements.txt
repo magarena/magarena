@@ -1,5 +1,5 @@
 name=Hanweir Battlements
-image=https://magiccards.info/scans/en/emn/204a.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d743ad6-6ca2-409a-9773-581cc195dbf2.jpg?1625771763
 image_updated=2016-09-05
 value=2.500
 rarity=R

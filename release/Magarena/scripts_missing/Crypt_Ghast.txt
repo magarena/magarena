@@ -1,5 +1,5 @@
 name=Crypt Ghast
-image=https://magiccards.info/scans/en/c14/139.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/623c9804-42c4-4b69-bc39-f70d96929d07.jpg?1561944354
 value=2.500
 rarity=R
 type=Creature

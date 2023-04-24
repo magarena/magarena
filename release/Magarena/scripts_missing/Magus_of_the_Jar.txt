@@ -1,5 +1,5 @@
 name=Magus of the Jar
-image=https://magiccards.info/scans/en/ts/67.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31961041-a9e6-4d96-bd4a-5c5f88a79e74.jpg?1562905390
 value=3.900
 rarity=R
 type=Creature

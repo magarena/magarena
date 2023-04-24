@@ -1,5 +1,5 @@
 name=Bone Shaman
-image=https://magiccards.info/scans/en/ia/176.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a5e3d54-4dc4-482b-8ecc-bb819ba03d2c.jpg?1616404924
 value=2.097
 rarity=C
 type=Creature

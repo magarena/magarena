@@ -1,5 +1,5 @@
 name=Research
-image=https://magiccards.info/scans/en/di/155a.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d48ee48-aaeb-4907-b9dc-32f22e95ae4c.jpg?1593273956
 value=4.337
 rarity=R
 type=Instant

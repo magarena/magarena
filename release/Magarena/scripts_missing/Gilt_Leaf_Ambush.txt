@@ -1,5 +1,5 @@
 name=Gilt-Leaf Ambush
-image=https://magiccards.info/scans/en/lw/214.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47bf7254-4302-41a0-bc87-d7dc437ff38d.jpg?1562346619
 value=3.571
 rarity=C
 type=Tribal,Instant

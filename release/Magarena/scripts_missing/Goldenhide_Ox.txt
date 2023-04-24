@@ -1,5 +1,5 @@
 name=Goldenhide Ox
-image=https://magiccards.info/scans/en/jou/125.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d107c72f-483a-4af9-b86f-681669d99c46.jpg?1593096203
 value=2.722
 rarity=U
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Karn, Scion of Urza
-image=https://magiccards.info/scans/en/dom/1.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07a3d9e8-8597-498b-869c-cff79e0df516.jpg?1562730952
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

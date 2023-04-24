@@ -1,5 +1,5 @@
 name=Aven Soulgazer
-image=https://magiccards.info/scans/en/on/8.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5189f152-f075-4090-97dd-b7686d813865.jpg?1562914107
 value=1.815
 rarity=U
 type=Creature

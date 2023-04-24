@@ -1,5 +1,5 @@
 name=Pentarch Ward
-image=https://magiccards.info/scans/en/ima/27.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c455d6d8-f116-46b5-9e6d-615b752b8455.jpg?1562853693
 image_updated=2017-04-12
 value=3.737
 rarity=C

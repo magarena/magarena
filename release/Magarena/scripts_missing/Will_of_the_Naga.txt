@@ -1,5 +1,5 @@
 name=Will of the Naga
-image=https://magiccards.info/scans/en/frf/58.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fed1c4d-f11e-476a-bbb2-06ffc6e261f3.jpg?1562828160
 value=2.500
 rarity=C
 type=Instant

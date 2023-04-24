@@ -1,5 +1,5 @@
 name=Act on Impulse
-image=https://magiccards.info/scans/en/m15/126.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfe513d1-2509-4051-ba85-49a19479fa5c.jpg?1562793694
 value=2.857
 rarity=U
 type=Sorcery

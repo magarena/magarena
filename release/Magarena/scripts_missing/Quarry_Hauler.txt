@@ -1,5 +1,5 @@
 name=Quarry Hauler
-image=https://magiccards.info/scans/en/akh/181.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b2877c5-7680-4c2d-8e46-1d4548f0b03a.jpg?1543675936
 value=2.500
 rarity=C
 type=Creature

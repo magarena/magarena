@@ -1,5 +1,5 @@
 name=Lead the Stampede
-image=https://magiccards.info/scans/en/ima/173.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e76b676-c7a3-4de6-a78d-3059a0df83f2.jpg?1591227752
 image_updated=2017-04-12
 value=3.833
 rarity=C

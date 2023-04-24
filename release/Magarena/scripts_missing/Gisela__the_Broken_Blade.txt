@@ -1,5 +1,5 @@
 name=Gisela, the Broken Blade
-image=https://magiccards.info/scans/en/emn/28a.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c75c035a-7da9-4b36-982d-fca8220b1797.jpg?1625771749
 image_updated=2016-09-05
 value=2.500
 rarity=M

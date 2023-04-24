@@ -1,5 +1,5 @@
 name=Benevolent Offering
-image=https://magiccards.info/scans/en/c14/3.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d080c35d-f2c6-4f4e-8f7c-305b319d4cde.jpg?1641601037
 value=2.500
 rarity=R
 type=Instant

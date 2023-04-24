@@ -1,5 +1,5 @@
 name=Plaxmanta
-image=https://magiccards.info/scans/en/di/29.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f72dd5b7-0392-4299-afd5-f72af27a69bf.jpg?1562711619
 image_updated=2016-02-29
 value=4.108
 rarity=U

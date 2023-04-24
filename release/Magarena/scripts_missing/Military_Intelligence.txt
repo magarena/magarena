@@ -1,5 +1,5 @@
 name=Military Intelligence
-image=https://magiccards.info/scans/en/m15/69.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28ba3c56-94f2-4bb3-86e2-e84d5b9fb013.jpg?1604192596
 value=3.400
 rarity=U
 type=Enchantment

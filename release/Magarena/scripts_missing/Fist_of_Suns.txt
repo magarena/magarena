@@ -1,5 +1,5 @@
 name=Fist of Suns
-image=https://magiccards.info/scans/en/c17/211.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a499b65-8a7e-4fbc-a09b-826b8454d857.jpg?1562603201
 image_updated=2017-10-03
 value=4.303
 rarity=R

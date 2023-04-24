@@ -1,5 +1,5 @@
 name=Kjeldoran Warrior
-image=https://magiccards.info/scans/en/ia/265.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce76f38f-566e-49ff-b197-510cfa1cb51c.jpg?1587911557
 value=3.268
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Chord of Calling
-image=https://magiccards.info/scans/en/m15/172.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dac257a9-39bf-4185-9d2e-f80f0848a96a.jpg?1599707002
 value=3.778
 rarity=R
 type=Instant

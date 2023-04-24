@@ -1,5 +1,5 @@
 name=Ajani's Aid
-image=https://magiccards.info/scans/en/aer/188.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7026c374-0776-403b-86fd-5092677fd5c9.jpg?1562921390
 value=2.500
 rarity=R
 type=Enchantment

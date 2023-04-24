@@ -1,5 +1,5 @@
 name=Verdant Succession
-image=https://magiccards.info/scans/en/od/280.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd3c78de-0c2a-441e-8912-ff920fc563ef.jpg?1562930342
 value=4.037
 rarity=R
 type=Enchantment

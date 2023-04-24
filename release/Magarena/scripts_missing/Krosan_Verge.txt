@@ -1,5 +1,5 @@
 name=Krosan Verge
-image=https://magiccards.info/scans/en/c16/306.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dabcee54-dda3-4208-81a8-e1ae3f79acf5.jpg?1682210528
 image_updated=2017-08-17
 value=4.477
 rarity=U

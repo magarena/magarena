@@ -1,5 +1,5 @@
 name=Trickbind
-image=https://magiccards.info/scans/en/ts/88.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2e58ff2-dea3-42b3-8c22-3e6202a7d433.jpg?1562946300
 value=4.434
 rarity=R
 type=Instant

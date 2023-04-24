@@ -1,5 +1,5 @@
 name=Emergent Growth
-image=https://magiccards.info/scans/en/xln/188.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e396762-fe76-4b2d-b571-373ab2c240ad.jpg?1562559796
 value=2.500
 rarity=U
 type=Sorcery

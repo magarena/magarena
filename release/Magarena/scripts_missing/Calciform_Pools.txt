@@ -1,5 +1,5 @@
 name=Calciform Pools
-image=https://magiccards.info/scans/en/ts/270.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/297a2b09-562a-46d8-905d-0b32e854e9d2.jpg?1619399156
 value=3.477
 rarity=U
 type=Land

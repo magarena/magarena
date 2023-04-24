@@ -1,5 +1,5 @@
 name=Summit Apes
-image=https://magiccards.info/scans/en/wwk/114.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/367e7821-44f1-4064-a9a3-d9852c7c235c.jpg?1562284930
 value=2.960
 rarity=U
 type=Creature

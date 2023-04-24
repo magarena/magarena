@@ -1,5 +1,5 @@
 name=Psychic Purge
-image=https://magiccards.info/scans/en/lg/68.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f6e73a4-ad95-4c76-9aa5-94a439977204.jpg?1559592443
 value=3.662
 rarity=C
 type=Sorcery

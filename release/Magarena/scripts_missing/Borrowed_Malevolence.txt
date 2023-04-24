@@ -1,5 +1,5 @@
 name=Borrowed Malevolence
-image=https://magiccards.info/scans/en/emn/82.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a71f123e-aad9-4f3e-9f43-1d1be359affb.jpg?1576384267
 image_updated=2016-09-05
 value=2.500
 rarity=C

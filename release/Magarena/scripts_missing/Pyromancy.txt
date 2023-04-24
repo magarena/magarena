@@ -1,5 +1,5 @@
 name=Pyromancy
-image=https://magiccards.info/scans/en/ul/88.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35a91a58-cc8b-47a3-8c53-43c32753a00d.jpg?1562862788
 value=3.839
 rarity=R
 type=Enchantment

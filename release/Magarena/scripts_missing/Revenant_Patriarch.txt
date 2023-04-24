@@ -1,5 +1,5 @@
 name=Revenant Patriarch
-image=https://magiccards.info/scans/en/gp/59.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52f23f01-67f0-49d3-b907-6203976cdf4d.jpg?1592714276
 image_updated=2017-01-06
 value=2.950
 rarity=U

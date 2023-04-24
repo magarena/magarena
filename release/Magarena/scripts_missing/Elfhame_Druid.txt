@@ -1,5 +1,5 @@
 name=Elfhame Druid
-image=https://magiccards.info/scans/en/dom/159.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e62226e-3585-42d2-9b7a-2462fcd967f5.jpg?1562736480
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Hunters' Feast
-image=https://magiccards.info/scans/en/m11/182.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fc0c0d2-bae4-4bec-b85c-498db713fd4a.jpg?1562455060
 value=2.500
 rarity=C
 type=Sorcery

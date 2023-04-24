@@ -1,5 +1,5 @@
 name=Predict
-image=https://magiccards.info/scans/en/od/94.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/349ac7e6-af38-4dc3-abfe-369564c75630.jpg?1592710621
 value=3.603
 rarity=U
 type=Instant

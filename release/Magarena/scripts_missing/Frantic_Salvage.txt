@@ -1,5 +1,5 @@
 name=Frantic Salvage
-image=https://magiccards.info/scans/en/mbs/6.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/aff909bc-0bda-4e8a-b7a3-ebc963552246.jpg?1562613892
 value=2.932
 rarity=C
 type=Instant

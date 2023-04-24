@@ -1,5 +1,5 @@
 name=Viashino Bey
-image=https://magiccards.info/scans/en/ul/93.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26cc07c6-60c7-4abe-8197-7544887ec64d.jpg?1562862773
 value=2.621
 rarity=C
 type=Creature

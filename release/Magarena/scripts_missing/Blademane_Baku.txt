@@ -1,5 +1,5 @@
 name=Blademane Baku
-image=https://magiccards.info/scans/en/bok/95.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78bfd388-3648-4bc3-8c10-d6b3b79a9479.jpg?1562877975
 value=2.328
 rarity=C
 type=Creature

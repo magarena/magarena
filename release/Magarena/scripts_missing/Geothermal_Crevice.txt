@@ -1,5 +1,5 @@
 name=Geothermal Crevice
-image=https://magiccards.info/scans/en/in/323.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e744b593-13fe-4967-b492-ac02f5815e57.jpg?1562941417
 value=3.423
 rarity=C
 type=Land

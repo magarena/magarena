@@ -1,5 +1,5 @@
 name=Soulgorger Orgg
-image=https://magiccards.info/scans/en/ju/99.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8aef55b8-5813-4aff-a35d-4b3cbd4a9ffb.jpg?1562630832
 value=2.250
 rarity=U
 type=Creature

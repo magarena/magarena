@@ -1,5 +1,5 @@
 name=Karn's Temporal Sundering
-image=https://magiccards.info/scans/en/dom/55.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a64c1a4-02ce-49d2-97f2-970b8c33672d.jpg?1562738165
 value=2.500
 rarity=R
 type=Legendary,Sorcery

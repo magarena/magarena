@@ -1,5 +1,5 @@
 name=Crown of the Ages
-image=https://magiccards.info/scans/en/5e/360.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77b549e5-c25d-4688-b362-faab109ba092.jpg?1562591838
 value=3.435
 rarity=R
 type=Artifact

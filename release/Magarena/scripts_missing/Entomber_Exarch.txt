@@ -1,5 +1,5 @@
 name=Entomber Exarch
-image=https://magiccards.info/scans/en/mm3/68.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e39498cd-9b44-4563-b0fd-9258a52a85b2.jpg?1600700126
 image_updated=2017-08-08
 value=3.473
 rarity=U

@@ -1,5 +1,5 @@
 name=Lightform
-image=https://magiccards.info/scans/en/frf/16.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82b194d0-8f1c-4864-b2dd-603cbe1d9dc6.jpg?1592710443
 value=2.500
 rarity=U
 type=Enchantment

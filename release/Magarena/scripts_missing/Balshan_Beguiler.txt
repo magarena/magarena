@@ -1,5 +1,5 @@
 name=Balshan Beguiler
-image=https://magiccards.info/scans/en/od/66.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d977da2-4024-4c7b-b557-e89564f8d465.jpg?1562912266
 value=2.400
 rarity=U
 type=Creature

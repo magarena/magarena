@@ -1,5 +1,5 @@
 name=Gridlock
-image=https://magiccards.info/scans/en/gtc/36.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4f5c126-3df9-4771-9e74-4ca33161ac08.jpg?1561842593
 value=2.946
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Caller of the Untamed
-image=https://magiccards.info/scans/en/cn2/62.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c62f25d9-7eb2-491e-ba7b-b71e49ee87b4.jpg?1576382019
 image_updated=2016-09-05
 value=2.500
 rarity=R

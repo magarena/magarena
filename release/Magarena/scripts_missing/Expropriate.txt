@@ -1,5 +1,5 @@
 name=Expropriate
-image=https://magiccards.info/scans/en/cn2/30.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c8a2a5a-cb9b-4582-a453-085da78584f9.jpg?1576381719
 image_updated=2016-09-05
 value=2.500
 rarity=M

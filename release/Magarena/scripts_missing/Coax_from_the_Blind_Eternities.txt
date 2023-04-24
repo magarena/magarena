@@ -1,5 +1,5 @@
 name=Coax from the Blind Eternities
-image=https://magiccards.info/scans/en/emn/51.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/740ad768-2be0-4e5a-9d60-6c7ec4bdc107.jpg?1576384040
 image_updated=2016-09-05
 value=2.500
 rarity=R

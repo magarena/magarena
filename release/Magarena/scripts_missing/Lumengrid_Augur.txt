@@ -1,5 +1,5 @@
 name=Lumengrid Augur
-image=https://magiccards.info/scans/en/mi/39.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65704c0f-cc97-490e-a0f7-fab9a18e1e88.jpg?1562145993
 value=3.371
 rarity=R
 type=Creature

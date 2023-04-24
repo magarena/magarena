@@ -1,5 +1,5 @@
 name=Press the Advantage
-image=https://magiccards.info/scans/en/dtk/196.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abca9292-e110-4edb-b9ce-703317175b68.jpg?1592765845
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Takklemaggot
-image=https://magiccards.info/scans/en/lg/33.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1171f5b-5b92-4a65-a59d-97ac6ce1283d.jpg?1562928963
 value=3.600
 rarity=U
 type=Enchantment

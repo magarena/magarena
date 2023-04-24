@@ -1,5 +1,5 @@
 name=Ghostform
-image=https://magiccards.info/scans/en/m19/58.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/347760a1-03f5-4cc9-87ad-e08986b1ea21.jpg?1562301299
 image_updated=2018-08-07
 value=2.851
 rarity=C

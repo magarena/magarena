@@ -1,5 +1,5 @@
 name=Dewdrop Spy
-image=https://magiccards.info/scans/en/mt/30.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64b14ad2-0ac7-4ae1-8a9e-eb49c8c5cc40.jpg?1562878923
 value=3.102
 rarity=C
 type=Creature

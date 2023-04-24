@@ -1,5 +1,5 @@
 name=Planeswalker's Mirth
-image=https://magiccards.info/scans/en/ps/12.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0205d094-c846-4aa0-ade8-2a52c57b11da.jpg?1562895411
 value=2.902
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Lich's Mastery
-image=https://magiccards.info/scans/en/dom/98.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77f4c9cb-f364-4556-8673-4b19d52a2cff.jpg?1562738043
 value=2.500
 rarity=R
 type=Legendary,Enchantment

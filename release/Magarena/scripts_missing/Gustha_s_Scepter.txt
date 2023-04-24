@@ -1,5 +1,5 @@
 name=Gustha's Scepter
-image=https://magiccards.info/scans/en/ai/162.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d4f3248-2b3f-42b3-9a9f-77309bb46c34.jpg?1562869500
 value=4.107
 rarity=R
 type=Artifact

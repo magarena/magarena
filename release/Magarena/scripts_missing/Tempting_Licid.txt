@@ -1,5 +1,5 @@
 name=Tempting Licid
-image=https://magiccards.info/scans/en/sh/72.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da7f3e0b-0600-4451-b621-e40c902a16cb.jpg?1562597815
 value=3.889
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Unmask
-image=https://magiccards.info/scans/en/mm/168.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2db7a0e6-eea5-4fa6-ac14-401411b106cc.jpg?1562379909
 value=4.417
 rarity=R
 type=Sorcery

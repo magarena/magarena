@@ -1,5 +1,5 @@
 name=Distended Mindbender
-image=https://magiccards.info/scans/en/emn/3.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b5d1e41-fb0b-4866-912a-2a7d49542428.jpg?1576383709
 image_updated=2016-09-05
 value=2.500
 rarity=R

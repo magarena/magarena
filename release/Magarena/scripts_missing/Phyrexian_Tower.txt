@@ -1,5 +1,5 @@
 name=Phyrexian Tower
-image=https://magiccards.info/scans/en/us/322.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05b2cc68-1d20-421f-9800-af0996071554.jpg?1601081190
 value=4.198
 rarity=R
 type=Legendary,Land

@@ -1,5 +1,5 @@
 name=Abattoir Ghoul
-image=https://magiccards.info/scans/en/isd/85.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43297ddd-276f-4d2d-9d9c-937603d0e376.jpg?1592763119
 value=3.304
 rarity=U
 type=Creature

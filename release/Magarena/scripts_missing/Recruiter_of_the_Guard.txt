@@ -1,5 +1,5 @@
 name=Recruiter of the Guard
-image=https://magiccards.info/scans/en/cn2/22.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb9ad57f-cca2-4717-a951-cbe3c7782efe.jpg?1576381637
 image_updated=2016-09-05
 value=2.500
 rarity=R

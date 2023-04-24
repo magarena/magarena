@@ -1,5 +1,5 @@
 name=Serene Remembrance
-image=https://magiccards.info/scans/en/gtc/132.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f3da4b8-9dd6-455d-b24a-3d0207ae5ee8.jpg?1561816218
 value=3.026
 rarity=U
 type=Sorcery

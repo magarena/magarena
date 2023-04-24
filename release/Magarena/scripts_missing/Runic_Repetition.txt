@@ -1,5 +1,5 @@
 name=Runic Repetition
-image=https://magiccards.info/scans/en/isd/72.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cabd32b-187d-4a41-92b2-72c3b3216728.jpg?1568004059
 value=3.621
 rarity=U
 type=Sorcery

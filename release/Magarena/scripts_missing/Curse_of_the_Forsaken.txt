@@ -1,5 +1,5 @@
 name=Curse of the Forsaken
-image=https://magiccards.info/scans/en/c13/8.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9af69b5e-f713-4af6-9990-f99be7801f73.jpg?1592672343
 value=3.021
 rarity=U
 type=Enchantment

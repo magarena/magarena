@@ -1,5 +1,5 @@
 name=The First Eruption
-image=https://magiccards.info/scans/en/dom/122.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0efc241f-64b5-4e28-b14a-b3f19ca6e7b5.jpg?1562731396
 value=2.500
 rarity=R
 type=Enchantment

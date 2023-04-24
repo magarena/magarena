@@ -1,5 +1,5 @@
 name=Blood Funnel
-image=https://magiccards.info/scans/en/rav/77.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f4e8084-4b9e-48e0-bf59-d45543e176f8.jpg?1598914653
 value=2.235
 rarity=R
 type=Enchantment

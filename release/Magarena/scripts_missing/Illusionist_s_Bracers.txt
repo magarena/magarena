@@ -1,5 +1,5 @@
 name=Illusionist's Bracers
-image=https://magiccards.info/scans/en/gtc/231.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc06cf32-5d66-4772-845d-ff7649396092.jpg?1561846204
 value=3.722
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Bloodghast
-image=https://magiccards.info/scans/en/ima/82.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/730c521f-ba12-48fb-b18f-6bb55423a551.jpg?1562850143
 image_updated=2017-04-12
 value=4.458
 rarity=R

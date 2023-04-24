@@ -1,5 +1,5 @@
 name=Rescue from the Underworld
-image=https://magiccards.info/scans/en/ths/102.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e46aa9c-7a29-4eb4-bc44-a201c22824d2.jpg?1562816254
 value=3.595
 rarity=U
 type=Instant

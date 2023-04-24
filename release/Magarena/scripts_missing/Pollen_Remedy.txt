@@ -1,5 +1,5 @@
 name=Pollen Remedy
-image=https://magiccards.info/scans/en/ps/13.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9797c813-0cda-44ad-ae41-330e9bde9cb9.jpg?1562927108
 value=3.000
 rarity=C
 type=Instant

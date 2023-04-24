@@ -1,5 +1,5 @@
 name=Worms of the Earth
-image=https://magiccards.info/scans/en/dk/18.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65a97821-ca5b-46fb-af08-86de81d0daac.jpg?1562918985
 value=3.117
 rarity=R
 type=Enchantment

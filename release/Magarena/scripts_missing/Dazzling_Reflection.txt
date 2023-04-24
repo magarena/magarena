@@ -1,5 +1,5 @@
 name=Dazzling Reflection
-image=https://magiccards.info/scans/en/ogw/17.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f77977e8-25d8-4531-a6fc-8c46e6904670.jpg?1562944884
 image_updated=2016-02-29
 value=2.500
 rarity=C

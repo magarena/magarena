@@ -1,5 +1,5 @@
 name=Corpseweft
-image=https://magiccards.info/scans/en/dtk/92.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25cf24e7-2e6e-46e0-aedd-89e17953811c.jpg?1562783831
 value=2.500
 rarity=R
 type=Enchantment

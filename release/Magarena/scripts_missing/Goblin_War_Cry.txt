@@ -1,5 +1,5 @@
 name=Goblin War Cry
-image=https://magiccards.info/scans/en/po2/104.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3822880c-a559-409c-8390-6d57eacc3a7c.jpg?1597660508
 value=2.250
 rarity=U
 type=Sorcery

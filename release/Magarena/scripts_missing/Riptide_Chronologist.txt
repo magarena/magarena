@@ -1,5 +1,5 @@
 name=Riptide Chronologist
-image=https://magiccards.info/scans/en/on/107.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3767f568-36b1-4064-835e-4dd7576b7b8b.jpg?1562908003
 value=1.288
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Invincible Hymn
-image=https://magiccards.info/scans/en/ala/14.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/712c64bc-ba0c-4bab-9329-54805f4efa8a.jpg?1562705286
 value=2.988
 rarity=R
 type=Sorcery

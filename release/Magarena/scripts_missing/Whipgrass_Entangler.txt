@@ -1,5 +1,5 @@
 name=Whipgrass Entangler
-image=https://magiccards.info/scans/en/le/26.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0b18b09-b1ff-479d-bd1c-cb8620a34fe4.jpg?1562933704
 value=3.708
 rarity=C
 type=Creature

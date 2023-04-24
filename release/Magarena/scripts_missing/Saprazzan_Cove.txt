@@ -1,5 +1,5 @@
 name=Saprazzan Cove
-image=https://magiccards.info/scans/en/mm/327.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52a69122-19c0-47ec-8bea-478511ba88e6.jpg?1562380865
 value=3.661
 rarity=U
 type=Land

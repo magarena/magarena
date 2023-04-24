@@ -1,5 +1,5 @@
 name=Headstrong Brute
-image=https://magiccards.info/scans/en/xln/147.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66973e90-0c8b-4438-bc22-6e78930c194d.jpg?1562556781
 value=2.500
 rarity=C
 type=Creature

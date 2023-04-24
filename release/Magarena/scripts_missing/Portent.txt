@@ -1,5 +1,5 @@
 name=Portent
-image=https://magiccards.info/scans/en/cstd/15.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e01a59e7-bde1-4150-bb4f-a19d769764f2.jpg?1592710616
 value=4.344
 rarity=C
 type=Sorcery

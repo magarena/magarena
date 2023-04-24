@@ -1,5 +1,5 @@
 name=Cream of the Crop
-image=https://magiccards.info/scans/en/mt/117.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/030b0a9d-d0cf-4f3a-97b3-3e1d59226ee6.jpg?1562876540
 value=3.607
 rarity=R
 type=Enchantment

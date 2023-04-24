@@ -1,5 +1,5 @@
 name=Elder Deep-Fiend
-image=https://magiccards.info/scans/en/emn/5.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4cffed4c-4e2b-414a-9b20-90ce21b47d16.jpg?1610074944
 image_updated=2016-09-05
 value=2.500
 rarity=R

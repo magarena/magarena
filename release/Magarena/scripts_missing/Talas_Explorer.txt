@@ -1,5 +1,5 @@
 name=Talas Explorer
-image=https://magiccards.info/scans/en/po2/49.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64f184c9-a716-4ba8-8efa-495358660de5.jpg?1562918803
 value=2.804
 rarity=C
 type=Creature

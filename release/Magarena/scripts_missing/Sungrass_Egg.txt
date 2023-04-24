@@ -1,5 +1,5 @@
 name=Sungrass Egg
-image=https://magiccards.info/scans/en/od/311.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70e888f9-c583-478a-9ef0-2e89db8a8dbb.jpg?1562915915
 value=2.554
 rarity=U
 type=Artifact

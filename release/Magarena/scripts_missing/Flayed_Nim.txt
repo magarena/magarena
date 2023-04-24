@@ -1,5 +1,5 @@
 name=Flayed Nim
-image=https://magiccards.info/scans/en/mi/65.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd2381b3-ebf8-4c65-8e89-e089c2e57145.jpg?1562164012
 value=3.955
 rarity=U
 type=Creature

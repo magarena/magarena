@@ -1,5 +1,5 @@
 name=Murk Dwellers
-image=https://magiccards.info/scans/en/5e/42.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/740564ec-c473-45bc-ba94-288786bf28b9.jpg?1562591833
 value=1.654
 rarity=C
 type=Creature

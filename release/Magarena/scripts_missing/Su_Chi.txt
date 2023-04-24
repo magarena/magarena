@@ -1,5 +1,5 @@
 name=Su-Chi
-image=https://magiccards.info/scans/en/aq/31.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f27a3660-a50d-4402-97c2-8d70dcbc1782.jpg?1562943740
 value=4.000
 rarity=U
 type=Artifact,Creature

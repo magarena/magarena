@@ -1,5 +1,5 @@
 name=Necratog
-image=https://magiccards.info/scans/en/wl/18.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb19c519-c09a-44a0-8d4b-ab6c15dabdef.jpg?1562804351
 value=3.697
 rarity=U
 type=Creature

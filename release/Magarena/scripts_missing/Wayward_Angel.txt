@@ -1,5 +1,5 @@
 name=Wayward Angel
-image=https://magiccards.info/scans/en/od/57.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fb726e8-162d-4143-9778-32476c0e1ab1.jpg?1562900864
 value=3.938
 rarity=R
 type=Creature

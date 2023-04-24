@@ -1,5 +1,5 @@
 name=Dirtcowl Wurm
-image=https://magiccards.info/scans/en/tp/115.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9e2df7d-5d72-4a32-a453-6d8611f0d63c.jpg?1562055914
 image_updated=2016-12-01
 value=3.943
 rarity=R

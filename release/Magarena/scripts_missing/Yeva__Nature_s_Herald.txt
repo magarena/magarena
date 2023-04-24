@@ -1,5 +1,5 @@
 name=Yeva, Nature's Herald
-image=https://magiccards.info/scans/en/m13/197.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22ecead7-58b3-4e34-8f7d-b095abee7f24.jpg?1561758901
 value=4.010
 rarity=R
 type=Legendary,Creature

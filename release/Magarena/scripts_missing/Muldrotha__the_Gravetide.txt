@@ -1,5 +1,5 @@
 name=Muldrotha, the Gravetide
-image=https://magiccards.info/scans/en/dom/199.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4125bb0-b104-438e-a6a2-97f9d141243c.jpg?1673149000
 value=2.500
 rarity=M
 type=Legendary,Creature

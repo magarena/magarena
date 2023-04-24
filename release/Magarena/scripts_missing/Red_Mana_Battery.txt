@@ -1,5 +1,5 @@
 name=Red Mana Battery
-image=https://magiccards.info/scans/en/4e/361.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4e507bc-441d-4f44-85d4-cf93ca199d2e.jpg?1559603885
 value=2.641
 rarity=R
 type=Artifact

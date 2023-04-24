@@ -1,5 +1,5 @@
 name=Tombstalker
-image=https://magiccards.info/scans/en/mma/102.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78f02d59-0786-41c8-940b-4ef6ef01c646.jpg?1620236273
 value=4.266
 rarity=R
 type=Creature

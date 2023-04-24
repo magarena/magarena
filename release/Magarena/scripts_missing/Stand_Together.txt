@@ -1,5 +1,5 @@
 name=Stand Together
-image=https://magiccards.info/scans/en/ds/84.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d60c590-fb9d-433a-8e5f-2b1aff4efd29.jpg?1562635343
 value=2.100
 rarity=U
 type=Instant

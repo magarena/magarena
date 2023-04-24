@@ -1,5 +1,5 @@
 name=Rune of Protection: Green
-image=https://magiccards.info/scans/en/us/38.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/905712b2-3177-4935-bca1-6990439b8d78.jpg?1562925407
 value=3.077
 rarity=C
 type=Enchantment

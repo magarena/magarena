@@ -1,5 +1,5 @@
 name=Shimian Night Stalker
-image=https://magiccards.info/scans/en/lg/30.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9caf87f7-36d5-478b-9836-52043833290f.jpg?1587912497
 image_updated=2016-01-09
 value=3.155
 rarity=U

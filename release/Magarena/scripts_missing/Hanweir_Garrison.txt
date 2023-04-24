@@ -1,5 +1,5 @@
 name=Hanweir Garrison
-image=https://magiccards.info/scans/en/emn/130a.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/0900e494-962d-48c6-8e78-66a489be4bb2.jpg?1625771770
 image_updated=2016-09-05
 value=2.500
 rarity=R

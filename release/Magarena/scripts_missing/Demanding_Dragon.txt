@@ -1,5 +1,5 @@
 name=Demanding Dragon
-image=https://magiccards.info/scans/en/m19/135.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d8a5bab-813a-488a-ab65-3286582ef595.jpg?1631587038
 value=2.500
 rarity=R
 type=Creature

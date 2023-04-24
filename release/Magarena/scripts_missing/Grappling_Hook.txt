@@ -1,5 +1,5 @@
 name=Grappling Hook
-image=https://magiccards.info/scans/en/c17/212.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acfbfddd-1535-477d-8bf4-5afd2648ac81.jpg?1562620144
 image_updated=2017-10-03
 value=3.507
 rarity=R

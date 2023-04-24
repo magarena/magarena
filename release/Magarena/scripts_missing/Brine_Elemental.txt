@@ -1,5 +1,5 @@
 name=Brine Elemental
-image=https://magiccards.info/scans/en/a25/47.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb038efc-2cb2-4635-a183-42b6e0b6b5f8.jpg?1619393843
 image_updated=2018-04-25
 value=2.500
 rarity=U

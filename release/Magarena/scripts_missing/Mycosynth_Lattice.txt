@@ -1,5 +1,5 @@
 name=Mycosynth Lattice
-image=https://magiccards.info/scans/en/ds/130.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94f89714-3b26-46a2-b9a8-3e664f391cd9.jpg?1578911638
 value=4.387
 rarity=R
 type=Artifact

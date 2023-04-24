@@ -1,5 +1,5 @@
 name=Soldevi Adnate
-image=https://magiccards.info/scans/en/ai/25.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b2651b0-1ab2-4d7e-834f-7505797da474.jpg?1562769222
 value=4.062
 rarity=C
 type=Creature

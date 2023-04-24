@@ -1,5 +1,5 @@
 name=Knights of the Black Rose
-image=https://magiccards.info/scans/en/cn2/76.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffd1bf4b-3ab0-4ab3-b351-01cc2e857bb6.jpg?1682209798
 image_updated=2016-09-05
 value=2.500
 rarity=U

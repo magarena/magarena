@@ -1,5 +1,5 @@
 name=Words of Worship
-image=https://magiccards.info/scans/en/on/61.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0ea5c6e0-8361-4214-997b-32a66b19fae9.jpg?1562898374
 value=3.596
 rarity=R
 type=Enchantment

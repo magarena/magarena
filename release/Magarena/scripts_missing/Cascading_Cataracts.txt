@@ -1,5 +1,5 @@
 name=Cascading Cataracts
-image=https://magiccards.info/scans/en/akh/240.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f3fbd9b-91ab-4691-a916-e20db8ebc513.jpg?1673305958
 value=2.500
 rarity=R
 type=Land

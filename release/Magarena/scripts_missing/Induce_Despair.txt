@@ -1,5 +1,5 @@
 name=Induce Despair
-image=https://magiccards.info/scans/en/roe/114.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba9153ce-2acd-4170-a2ab-c8b660614152.jpg?1593095773
 value=3.333
 rarity=C
 type=Instant

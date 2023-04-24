@@ -1,5 +1,5 @@
 name=Undying Flames
-image=https://magiccards.info/scans/en/sok/119.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/606206c7-1a8a-46f4-b368-cf18e02f3df8.jpg?1562494171
 value=3.420
 rarity=R
 type=Sorcery

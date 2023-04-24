@@ -1,5 +1,5 @@
 name=Secluded Glen
-image=https://magiccards.info/scans/en/lw/271.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e4afa65-7933-4a64-b50f-a9a9f832b112.jpg?1562360339
 value=4.096
 rarity=R
 type=Land

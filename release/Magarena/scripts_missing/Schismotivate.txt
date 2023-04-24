@@ -1,5 +1,5 @@
 name=Schismotivate
-image=https://magiccards.info/scans/en/gp/129.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98510af3-a884-417a-8cd9-991890d42919.jpg?1593272776
 value=3.547
 rarity=U
 type=Instant

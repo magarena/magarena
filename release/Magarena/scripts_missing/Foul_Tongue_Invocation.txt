@@ -1,5 +1,5 @@
 name=Foul-Tongue Invocation
-image=https://magiccards.info/scans/en/ima/91.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b77ed75-05d4-4eb3-8c19-dada6b8bb116.jpg?1562845734
 image_updated=2017-04-12
 value=2.500
 rarity=C

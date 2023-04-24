@@ -1,5 +1,5 @@
 name=Kjeldoran Royal Guard
-image=https://magiccards.info/scans/en/10e/25.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea3d742a-52a1-45c8-961a-85b6ff120c44.jpg?1562557187
 value=3.379
 rarity=R
 type=Creature

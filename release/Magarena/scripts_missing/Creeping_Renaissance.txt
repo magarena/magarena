@@ -1,5 +1,5 @@
 name=Creeping Renaissance
-image=https://magiccards.info/scans/en/isd/174.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71569961-d56c-43f9-ae51-d86561419743.jpg?1592710845
 value=3.804
 rarity=R
 type=Sorcery

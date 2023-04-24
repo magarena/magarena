@@ -1,5 +1,5 @@
 name=True-Name Nemesis
-image=https://magiccards.info/scans/en/c13/63.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2da0b45b-0ca9-40c4-bc7f-791039bc1876.jpg?1562904268
 value=3.765
 rarity=R
 type=Creature

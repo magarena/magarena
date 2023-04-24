@@ -1,5 +1,5 @@
 name=Nissa, Genesis Mage
-image=https://magiccards.info/scans/en/hou/200.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2923c85a-4022-4cda-bcbb-bb000137f64f.jpg?1562793463
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

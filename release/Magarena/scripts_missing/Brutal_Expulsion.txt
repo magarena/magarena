@@ -1,5 +1,5 @@
 name=Brutal Expulsion
-image=https://magiccards.info/scans/en/bfz/200.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b0eb64b-a463-4f25-9278-340051139f0e.jpg?1562927765
 image_updated=2015-11-08
 value=2.500
 rarity=R

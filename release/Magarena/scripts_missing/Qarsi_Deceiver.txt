@@ -1,5 +1,5 @@
 name=Qarsi Deceiver
-image=https://magiccards.info/scans/en/dtk/71.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64d64264-895f-4d4d-8e5c-ab1d0d6e340b.jpg?1562787393
 value=2.500
 rarity=U
 type=Creature

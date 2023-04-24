@@ -1,5 +1,5 @@
 name=Eyes of the Watcher
-image=https://magiccards.info/scans/en/5dn/30.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7bb0716-e0fc-415d-8fc3-d3f5ee31e9c5.jpg?1562880780
 value=3.936
 rarity=U
 type=Enchantment

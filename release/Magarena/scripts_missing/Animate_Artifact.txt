@@ -1,5 +1,5 @@
 name=Animate Artifact
-image=https://magiccards.info/scans/en/4e/60.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63aec27b-8cda-46c2-9f4f-9ebe98dffe2e.jpg?1562918468
 value=2.903
 rarity=U
 type=Enchantment

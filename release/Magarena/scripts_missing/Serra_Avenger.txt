@@ -1,5 +1,5 @@
 name=Serra Avenger
-image=https://magiccards.info/scans/en/m13/33.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e5627de-fda7-4e39-a6ec-1e895bc353ed.jpg?1620236195
 value=4.247
 rarity=R
 type=Creature

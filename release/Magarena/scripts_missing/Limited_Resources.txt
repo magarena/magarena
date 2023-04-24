@@ -1,5 +1,5 @@
 name=Limited Resources
-image=https://magiccards.info/scans/en/ex/10.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20ae3609-a3cc-486c-94f6-b8f647adfb47.jpg?1562087362
 value=4.275
 rarity=R
 type=Enchantment

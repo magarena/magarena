@@ -1,5 +1,5 @@
 name=Magus of the Coffers
-image=https://magiccards.info/scans/en/c14/148.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/962a16bb-516c-4e74-b8dd-edd4c63c5fff.jpg?1561951074
 value=2.500
 rarity=R
 type=Creature

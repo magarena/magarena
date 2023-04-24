@@ -1,5 +1,5 @@
 name=Arena
-image=https://magiccards.info/scans/en/tsts/117.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5b7afa9-e07a-4a84-a41f-7a8bc5c1d274.jpg?1562785361
 value=3.690
 rarity=R
 type=Land

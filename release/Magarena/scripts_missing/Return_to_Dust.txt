@@ -1,5 +1,5 @@
 name=Return to Dust
-image=https://magiccards.info/scans/en/c14/85.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02dae486-d413-4731-830b-2f05921b6f59.jpg?1682208570
 value=2.500
 rarity=U
 type=Instant

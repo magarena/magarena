@@ -1,5 +1,5 @@
 name=Vaporous Djinn
-image=https://magiccards.info/scans/en/mr/101.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7ea65e2-68d8-429f-9be7-e6e5e12a2a4d.jpg?1562722388
 value=2.278
 rarity=U
 type=Creature

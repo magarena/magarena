@@ -1,5 +1,5 @@
 name=Epochrasite
-image=https://magiccards.info/scans/en/c14/238.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d4fafc8-3466-42f7-9d8d-8c6250da7bd5.jpg?1562274144
 value=2.500
 rarity=R
 type=Artifact,Creature

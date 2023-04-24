@@ -1,5 +1,5 @@
 name=Disaster Radius
-image=https://magiccards.info/scans/en/cmd/119.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba63c385-7eb8-4ddb-ae27-2b5921cd0525.jpg?1562275588
 image_updated=2016-02-29
 value=3.111
 rarity=R

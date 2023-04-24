@@ -1,5 +1,5 @@
 name=Tourach's Chant
-image=https://magiccards.info/scans/en/fe/32.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06883fd2-eccd-47c6-8c34-10d95e923685.jpg?1562896305
 value=2.914
 rarity=U
 type=Enchantment

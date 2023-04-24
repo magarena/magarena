@@ -1,5 +1,5 @@
 name=Greater Gargadon
-image=https://magiccards.info/scans/en/mma/117.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76bf6bf0-4821-41eb-bacc-32e9a2d47845.jpg?1673147806
 value=3.963
 rarity=R
 type=Creature

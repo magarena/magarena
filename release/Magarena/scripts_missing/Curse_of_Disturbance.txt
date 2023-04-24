@@ -1,5 +1,5 @@
 name=Curse of Disturbance
-image=https://magiccards.info/scans/en/c17/16.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80d42b98-62d2-4ca6-8478-36222d709048.jpg?1625976760
 image_updated=2017-10-03
 value=2.500
 rarity=U

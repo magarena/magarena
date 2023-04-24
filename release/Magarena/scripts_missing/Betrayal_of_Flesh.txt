@@ -1,5 +1,5 @@
 name=Betrayal of Flesh
-image=https://magiccards.info/scans/en/mi/58.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9e2e107-0277-4e5c-81a7-258bb2998f3e.jpg?1562153677
 value=2.298
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Dreadship Reef
-image=https://magiccards.info/scans/en/c16/293.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18642a9e-ac45-402b-bb56-08cb6336c485.jpg?1619399194
 image_updated=2017-08-17
 value=3.309
 rarity=U

@@ -1,5 +1,5 @@
 name=Dimir Aqueduct
-image=https://magiccards.info/scans/en/ima/234.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/877b7b90-80d4-4cad-af7c-a0b36c590ca0.jpg?1673149490
 image_updated=2017-04-12
 value=2.500
 rarity=U

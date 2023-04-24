@@ -1,5 +1,5 @@
 name=Tromokratis
-image=https://magiccards.info/scans/en/bng/55.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/160686f3-44fd-4f7a-81cf-d3b5b964bfba.jpg?1608912205
 value=3.819
 rarity=R
 type=Legendary,Creature

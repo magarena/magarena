@@ -1,5 +1,5 @@
 name=Leeching Licid
-image=https://magiccards.info/scans/en/tp/35.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27bffefb-23c0-4d03-b716-b1a7eff39a05.jpg?1562053262
 value=2.621
 rarity=U
 type=Creature

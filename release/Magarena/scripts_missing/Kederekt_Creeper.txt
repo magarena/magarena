@@ -1,5 +1,5 @@
 name=Kederekt Creeper
-image=https://magiccards.info/scans/en/ala/176.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/701498e5-1d4d-42f4-9dd0-5d4cf78f0e68.jpg?1562705243
 value=3.128
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vile Requiem
-image=https://magiccards.info/scans/en/us/167.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/923972d3-d838-43f8-800a-904489c5791a.jpg?1562925909
 value=3.806
 rarity=U
 type=Enchantment

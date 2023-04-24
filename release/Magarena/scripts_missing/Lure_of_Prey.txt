@@ -1,5 +1,5 @@
 name=Lure of Prey
-image=https://magiccards.info/scans/en/mr/125.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/7165f1d8-7b31-4a81-aab4-c6cd4ff2e67d.jpg?1562720214
 value=4.198
 rarity=R
 type=Instant

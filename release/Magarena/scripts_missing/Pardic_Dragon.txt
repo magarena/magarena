@@ -1,5 +1,5 @@
 name=Pardic Dragon
-image=https://magiccards.info/scans/en/mma/124.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd618eb1-0013-461c-873e-a66377fa284a.jpg?1561969498
 value=2.560
 rarity=U
 type=Creature

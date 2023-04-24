@@ -1,5 +1,5 @@
 name=Selvala's Enforcer
-image=https://magiccards.info/scans/en/cns/40.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/000ba9c3-cd88-47c1-966a-00466569a9bf.jpg?1562864254
 value=3.700
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Serene Master
-image=https://magiccards.info/scans/en/c13/20.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06223a09-a32c-4c60-86a1-f8f7bf5a7cdd.jpg?1562896299
 value=3.855
 rarity=R
 type=Creature

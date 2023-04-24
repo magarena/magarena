@@ -1,5 +1,5 @@
 name=Rumbling Crescendo
-image=https://magiccards.info/scans/en/us/210.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddf267c2-c3d5-48ba-93af-dd0af133add3.jpg?1562941775
 value=3.260
 rarity=R
 type=Enchantment

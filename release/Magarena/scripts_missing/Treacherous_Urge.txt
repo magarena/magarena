@@ -1,5 +1,5 @@
 name=Treacherous Urge
-image=https://magiccards.info/scans/en/pc/82.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22563bcd-1f29-4544-ba43-173ead61e62a.jpg?1562567669
 value=3.841
 rarity=U
 type=Instant

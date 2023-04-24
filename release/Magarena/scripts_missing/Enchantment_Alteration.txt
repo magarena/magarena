@@ -1,5 +1,5 @@
 name=Enchantment Alteration
-image=https://magiccards.info/scans/en/us/72.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/254aa8d0-f0f5-4fb2-a6ba-07453d71e229.jpg?1562902814
 value=3.743
 rarity=U
 type=Instant

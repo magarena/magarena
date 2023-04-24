@@ -1,5 +1,5 @@
 name=Illusionary Terrain
-image=https://magiccards.info/scans/en/ia/77.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/691f4a1b-4706-41aa-82da-ae920739f036.jpg?1587911805
 value=3.833
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Stomp and Howl
-image=https://magiccards.info/scans/en/di/96.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be523140-7c68-4231-a692-7b3af417d858.jpg?1593273494
 value=2.513
 rarity=U
 type=Sorcery

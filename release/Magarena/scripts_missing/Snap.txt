@@ -1,5 +1,5 @@
 name=Snap
-image=https://magiccards.info/scans/en/ul/43.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1959f078-4b7b-4df2-a256-d43b2d97e853.jpg?1592761565
 value=4.560
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Hour of Eternity
-image=https://magiccards.info/scans/en/hou/36.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca15361f-6bf7-46e7-b83c-308c55fc393f.jpg?1637629739
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Urge to Feed
-image=https://magiccards.info/scans/en/wwk/70.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/041606a6-d20b-4241-ae5a-2dd004c47487.jpg?1641602937
 image_updated=2017-01-11
 value=3.316
 rarity=U

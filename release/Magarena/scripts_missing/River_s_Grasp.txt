@@ -1,5 +1,5 @@
 name=River's Grasp
-image=https://magiccards.info/scans/en/shm/174.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/1209bb9d-8aeb-4d7c-85bb-d9e9a24e36ac.jpg?1568911069
 value=3.171
 rarity=U
 type=Sorcery

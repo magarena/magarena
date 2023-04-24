@@ -1,5 +1,5 @@
 name=Sanctum Prelate
-image=https://magiccards.info/scans/en/cn2/23.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d95a7dd-2803-4164-8979-d7e8e8085ca2.jpg?1576381648
 image_updated=2016-09-05
 value=2.500
 rarity=M

@@ -1,5 +1,5 @@
 name=Reflect Damage
-image=https://magiccards.info/scans/en/mr/337.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a2bf39b-9665-426b-b618-eb731d24a1ee.jpg?1562718783
 value=3.585
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Consume Strength
-image=https://magiccards.info/scans/en/ap/93.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49b48dd6-3311-44a1-8dbd-6fac1957a61d.jpg?1592754860
 value=4.094
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Benevolent Unicorn
-image=https://magiccards.info/scans/en/mr/208.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a243bd7-af98-4e44-af6e-3b0b71d4837b.jpg?1562718325
 value=3.436
 rarity=C
 type=Creature

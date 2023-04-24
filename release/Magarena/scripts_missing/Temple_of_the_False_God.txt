@@ -1,5 +1,5 @@
 name=Temple of the False God
-image=https://magiccards.info/scans/en/c16/331.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb218ee0-24fd-4d23-8135-468f3e4a41be.jpg?1682210751
 image_updated=2017-08-17
 value=2.500
 rarity=U

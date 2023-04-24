@@ -1,5 +1,5 @@
 name=Doubling Season
-image=https://magiccards.info/scans/en/mma/141.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8676d164-c76e-402b-a649-6ded3f549b6e.jpg?1599707144
 value=3.600
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Sutured Ghoul
-image=https://magiccards.info/scans/en/m12/112.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/8390d9b7-5adf-4039-8682-02bfba421ff9.jpg?1562649493
 value=4.091
 rarity=R
 type=Creature

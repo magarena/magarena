@@ -1,5 +1,5 @@
 name=Grim Contest
-image=https://magiccards.info/scans/en/frf/153.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24c44722-c65a-41ae-92a9-9c9d7d759a8e.jpg?1562823386
 value=2.500
 rarity=C
 type=Instant

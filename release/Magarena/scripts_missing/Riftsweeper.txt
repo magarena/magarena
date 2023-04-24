@@ -1,5 +1,5 @@
 name=Riftsweeper
-image=https://magiccards.info/scans/en/mma/159.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/785d5a98-97b2-4a9e-83ee-2a74479add7b.jpg?1561967824
 value=3.944
 rarity=U
 type=Creature

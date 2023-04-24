@@ -1,5 +1,5 @@
 name=Arcum Dagsson
-image=https://magiccards.info/scans/en/cs/27.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5ecf811-2efc-4fa6-9af8-ef09f559ec1a.jpg?1598303734
 value=4.012
 rarity=R
 type=Legendary,Creature

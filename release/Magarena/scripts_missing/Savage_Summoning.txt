@@ -1,5 +1,5 @@
 name=Savage Summoning
-image=https://magiccards.info/scans/en/m14/194.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5346ed7-2e17-4d8c-9c4b-b5efdd26380d.jpg?1612316371
 value=3.606
 rarity=R
 type=Instant

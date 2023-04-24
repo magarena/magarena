@@ -1,5 +1,5 @@
 name=Cabal Stronghold
-image=https://magiccards.info/scans/en/dom/238.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bda51ef-ee3e-48d4-92e2-c9083bbe0f80.jpg?1562731196
 value=2.500
 rarity=R
 type=Land

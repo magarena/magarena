@@ -1,5 +1,5 @@
 name=Reverberation
-image=https://magiccards.info/scans/en/lg/74.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3d1f470-058d-41b7-acaf-4f68431de9ed.jpg?1562860181
 value=3.017
 rarity=R
 type=Instant

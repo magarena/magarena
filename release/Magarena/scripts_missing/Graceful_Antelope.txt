@@ -1,5 +1,5 @@
 name=Graceful Antelope
-image=https://magiccards.info/scans/en/od/24.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/948f0d9d-4e05-48b4-8652-1f8f41d35563.jpg?1562922583
 value=2.756
 rarity=R
 type=Creature

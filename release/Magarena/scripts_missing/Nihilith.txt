@@ -1,5 +1,5 @@
 name=Nihilith
-image=https://magiccards.info/scans/en/fut/72.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/598900a0-e244-45e3-a04a-685837fb1867.jpg?1674141740
 value=3.635
 rarity=R
 type=Creature

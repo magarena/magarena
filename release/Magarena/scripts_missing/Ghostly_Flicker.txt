@@ -1,5 +1,5 @@
 name=Ghostly Flicker
-image=https://magiccards.info/scans/en/mm3/39.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/485ab561-9c2a-4f99-9317-8726bcdae364.jpg?1631234330
 image_updated=2017-08-08
 value=3.861
 rarity=C

@@ -1,5 +1,5 @@
 name=Chaoslace
-image=https://magiccards.info/scans/en/4e/200.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/476180df-8b88-4ead-b6c5-6ccb3e8a2cfd.jpg?1559601269
 value=1.649
 rarity=R
 type=Instant

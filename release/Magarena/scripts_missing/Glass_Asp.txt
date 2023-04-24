@@ -1,5 +1,5 @@
 name=Glass Asp
-image=https://magiccards.info/scans/en/ts/197.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/118253e9-f33a-455d-b785-dd9df657e7cf.jpg?1562898622
 value=2.258
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spectral Searchlight
-image=https://magiccards.info/scans/en/cns/205.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0688ff3-6752-4cd4-ada3-9918c59dad0e.jpg?1625979327
 value=3.500
 rarity=U
 type=Artifact

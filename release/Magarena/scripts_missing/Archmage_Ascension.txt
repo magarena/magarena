@@ -1,5 +1,5 @@
 name=Archmage Ascension
-image=https://magiccards.info/scans/en/zen/42.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbfe803d-88d7-4ad2-b3d8-c41c123d8bf3.jpg?1562617361
 value=3.086
 rarity=R
 type=Enchantment

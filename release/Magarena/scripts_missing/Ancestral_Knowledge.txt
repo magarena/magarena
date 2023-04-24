@@ -1,5 +1,5 @@
 name=Ancestral Knowledge
-image=https://magiccards.info/scans/en/wl/32.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05b90d72-00ac-4423-8cdf-e1471c6cd0ae.jpg?1562799164
 value=3.789
 rarity=R
 type=Enchantment

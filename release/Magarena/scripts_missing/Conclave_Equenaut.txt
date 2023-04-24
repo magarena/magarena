@@ -1,5 +1,5 @@
 name=Conclave Equenaut
-image=https://magiccards.info/scans/en/rav/9.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b49ae4dd-4a02-45bb-ae43-f62c52118003.jpg?1562270255
 image_updated=2016-11-28
 value=2.118
 rarity=C

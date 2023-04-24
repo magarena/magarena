@@ -1,5 +1,5 @@
 name=Blue Mana Battery
-image=https://magiccards.info/scans/en/4e/318.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd2cb84e-c079-486e-87ad-d188fe38bc76.jpg?1559603819
 value=2.859
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Savage Alliance
-image=https://magiccards.info/scans/en/emn/140.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5255da8-8511-48a7-98e5-ba43ca6e8681.jpg?1576384658
 image_updated=2016-09-05
 value=2.500
 rarity=U

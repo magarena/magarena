@@ -1,5 +1,5 @@
 name=Runeflare Trap
-image=https://magiccards.info/scans/en/zen/146.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2ceff22-0270-4c9d-9ae2-f40a7047335b.jpg?1562617625
 value=3.417
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Clergy of the Holy Nimbus
-image=https://magiccards.info/scans/en/lg/175.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db1f578f-fa3b-4447-953b-1490852b6c80.jpg?1617613157
 value=2.990
 rarity=C
 type=Creature

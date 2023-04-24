@@ -1,5 +1,5 @@
 name=Lifebane Zombie
-image=https://magiccards.info/scans/en/m14/101.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98370735-5303-40d4-9e80-cdb40dee18e2.jpg?1562832644
 value=3.660
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Cruel Sadist
-image=https://magiccards.info/scans/en/m15/93.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a31c94f3-c45b-4ced-b523-15e80ae1a82d.jpg?1562792055
 value=3.333
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Sorcerous Sight
-image=https://magiccards.info/scans/en/po/69.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecfd43dc-e5fd-43bc-babb-fe7ecb6ccd00.jpg?1562448328
 value=2.250
 rarity=C
 type=Sorcery

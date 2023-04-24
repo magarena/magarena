@@ -1,5 +1,5 @@
 name=Bubbling Muck
-image=https://magiccards.info/scans/en/ud/54.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6ca76614-78a1-4535-9162-70469d1e8a13.jpg?1562444234
 value=4.414
 rarity=C
 type=Sorcery

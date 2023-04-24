@@ -1,5 +1,5 @@
 name=Refraction Trap
-image=https://magiccards.info/scans/en/wwk/17.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcdceb36-fd36-4315-8ebe-9b8fc3777428.jpg?1562295033
 value=2.330
 rarity=U
 type=Instant

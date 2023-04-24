@@ -1,5 +1,5 @@
 name=Peregrination
-image=https://magiccards.info/scans/en/bng/132.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03835e3e-9fd1-47c7-86a5-a5481420f2d3.jpg?1593092579
 value=3.139
 rarity=U
 type=Sorcery

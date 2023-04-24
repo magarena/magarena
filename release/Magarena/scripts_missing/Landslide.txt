@@ -1,5 +1,5 @@
 name=Landslide
-image=https://magiccards.info/scans/en/ud/92.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0ddc0dc-8783-4659-bbbd-db6698843b47.jpg?1562445192
 value=3.865
 rarity=U
 type=Sorcery

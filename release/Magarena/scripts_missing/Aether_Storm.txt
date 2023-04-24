@@ -1,5 +1,5 @@
 name=Aether Storm
-image=https://magiccards.info/scans/en/5e/70.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/1881a6b8-f73f-4be2-b64f-751d23ead511.jpg?1562867838
 image_updated=2016-09-27
 value=3.259
 rarity=U

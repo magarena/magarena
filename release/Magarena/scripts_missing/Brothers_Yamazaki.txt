@@ -1,5 +1,5 @@
 name=Brothers Yamazaki
-image=https://magiccards.info/scans/en/chk/160a.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acef8c94-469b-4a76-b507-25b51f2501ab.jpg?1562763658
 value=3.633
 rarity=U
 type=Legendary,Creature

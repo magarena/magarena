@@ -1,5 +1,5 @@
 name=Overmaster
-image=https://magiccards.info/scans/en/tr/104.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afd2e0f0-8a8e-4021-bd24-aff1a3212345.jpg?1562631559
 value=4.230
 rarity=R
 type=Sorcery

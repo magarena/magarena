@@ -1,5 +1,5 @@
 name=Flash
-image=https://magiccards.info/scans/en/a25/57.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d31459c2-9656-4e9a-bb72-71a910e8570b.jpg?1587347037
 image_updated=2018-04-25
 value=4.590
 rarity=R

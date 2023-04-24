@@ -1,5 +1,5 @@
 name=Rooting Kavu
-image=https://magiccards.info/scans/en/in/207.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12c25a4c-d93a-402b-999f-0b9919123cc5.jpg?1562898755
 value=3.447
 rarity=U
 type=Creature

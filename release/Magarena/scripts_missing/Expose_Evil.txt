@@ -1,5 +1,5 @@
 name=Expose Evil
-image=https://magiccards.info/scans/en/soi/19.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9de0341a-cd45-439c-adc2-8d24c47c4bd5.jpg?1576383763
 value=2.500
 rarity=C
 type=Instant

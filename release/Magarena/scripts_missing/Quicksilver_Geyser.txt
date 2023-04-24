@@ -1,5 +1,5 @@
 name=Quicksilver Geyser
-image=https://magiccards.info/scans/en/mbs/30.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb209cf5-ac7b-4521-b488-ef72451e3a25.jpg?1562616091
 value=2.625
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Hindervines
-image=https://magiccards.info/scans/en/gtc/124.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/bab0c821-965c-4086-b787-f30a6da86ff8.jpg?1682209526
 value=2.191
 rarity=U
 type=Instant

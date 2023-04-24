@@ -1,5 +1,5 @@
 name=Vorrac Battlehorns
-image=https://magiccards.info/scans/en/mi/271.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1b19949-90c9-46f1-85d4-d6eda0b7977e.jpg?1562155042
 value=3.854
 rarity=C
 type=Artifact

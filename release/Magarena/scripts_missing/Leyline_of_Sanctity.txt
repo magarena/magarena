@@ -1,5 +1,5 @@
 name=Leyline of Sanctity
-image=https://magiccards.info/scans/en/mm2/23.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be8b1acf-dd87-42ca-ad19-c27d21066030.jpg?1592516120
 value=2.500
 rarity=R
 type=Enchantment

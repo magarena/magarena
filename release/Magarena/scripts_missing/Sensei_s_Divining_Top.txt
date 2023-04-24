@@ -1,5 +1,5 @@
 name=Sensei's Divining Top
-image=https://magiccards.info/scans/en/ema/232.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5142b7a-e580-4737-a4aa-2590f6610ceb.jpg?1673149430
 value=4.588
 rarity=R
 type=Artifact

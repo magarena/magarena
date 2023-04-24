@@ -1,5 +1,5 @@
 name=Choking Tethers
-image=https://magiccards.info/scans/en/a25/48.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb0d0c81-8698-41db-a687-47af028e910e.jpg?1562201330
 image_updated=2018-04-25
 value=2.500
 rarity=C

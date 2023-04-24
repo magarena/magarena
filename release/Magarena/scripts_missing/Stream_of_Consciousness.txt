@@ -1,5 +1,5 @@
 name=Stream of Consciousness
-image=https://magiccards.info/scans/en/bok/53.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4faef057-8734-442b-a213-c309c219cdee.jpg?1547516567
 value=3.518
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Psychic Symbiont
-image=https://magiccards.info/scans/en/m19/221.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1145d817-9c84-4acd-977c-fe00325568fd.jpg?1673149061
 value=2.500
 rarity=U
 type=Creature

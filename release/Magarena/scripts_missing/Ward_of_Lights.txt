@@ -1,5 +1,5 @@
 name=Ward of Lights
-image=https://magiccards.info/scans/en/mr/251.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d389daf-c7d8-4bd1-b4ea-5082f5d280c0.jpg?1562719770
 value=3.771
 rarity=C
 type=Enchantment

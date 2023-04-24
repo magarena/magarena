@@ -1,5 +1,5 @@
 name=Huang Zhong, Shu General
-image=https://magiccards.info/scans/en/p3k/8.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c079037c-f4cf-423f-ad15-ee57136d6148.jpg?1562257528
 value=2.554
 rarity=R
 type=Legendary,Creature

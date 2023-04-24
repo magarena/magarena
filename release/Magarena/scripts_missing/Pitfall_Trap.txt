@@ -1,5 +1,5 @@
 name=Pitfall Trap
-image=https://magiccards.info/scans/en/mm3/18.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/109a4596-552a-45dc-88a6-41810d078d66.jpg?1593812890
 image_updated=2017-08-08
 value=3.058
 rarity=C

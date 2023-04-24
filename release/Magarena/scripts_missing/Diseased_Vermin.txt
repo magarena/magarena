@@ -1,5 +1,5 @@
 name=Diseased Vermin
-image=https://magiccards.info/scans/en/ai/5.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39703080-524d-4aa1-8c58-d512c41ae5d4.jpg?1562768249
 value=3.303
 rarity=U
 type=Creature

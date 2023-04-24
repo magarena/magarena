@@ -1,5 +1,5 @@
 name=Restore the Peace
-image=https://magiccards.info/scans/en/dgm/97.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/105902f6-99d0-4bee-9dfd-87a92ac04d91.jpg?1562898184
 value=3.384
 rarity=U
 type=Instant

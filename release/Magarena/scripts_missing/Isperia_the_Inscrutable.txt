@@ -1,5 +1,5 @@
 name=Isperia the Inscrutable
-image=https://magiccards.info/scans/en/di/114.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2b365b0-6949-41d2-be60-eb2162b1f882.jpg?1593273629
 value=3.909
 rarity=R
 type=Legendary,Creature

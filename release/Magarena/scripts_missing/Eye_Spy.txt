@@ -1,5 +1,5 @@
 name=Eye Spy
-image=https://magiccards.info/scans/en/st/38.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74d0fa75-41dc-4fe9-af12-d9d4006b708f.jpg?1562874551
 value=2.414
 rarity=U
 type=Sorcery

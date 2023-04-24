@@ -1,5 +1,5 @@
 name=Infernal Denizen
-image=https://magiccards.info/scans/en/ia/24.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b63ac9a6-aaa5-4659-97d1-c5f6b0d5ccfe.jpg?1562928960
 value=2.133
 rarity=R
 type=Creature

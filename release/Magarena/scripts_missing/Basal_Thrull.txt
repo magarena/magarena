@@ -1,5 +1,5 @@
 name=Basal Thrull
-image=https://magiccards.info/scans/en/fe/5.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4cf027e-2021-4ce7-b156-199cf1ca25eb.jpg?1559592374
 value=3.821
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Hoverguard Sweepers
-image=https://magiccards.info/scans/en/c14/113.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e2ec92b-dab0-4c9e-af7d-0041b22e852f.jpg?1561932165
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Bloodfire Infusion
-image=https://magiccards.info/scans/en/ap/57.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2639e9b7-ed8c-48fd-a8b7-b99d8dad4bc0.jpg?1562904064
 value=3.865
 rarity=C
 type=Enchantment

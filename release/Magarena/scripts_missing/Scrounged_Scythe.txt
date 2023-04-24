@@ -1,5 +1,5 @@
 name=Scrounged Scythe
-image=https://magiccards.info/scans/en/soi/256b.jpg
+image=https://cards.scryfall.io/border_crop/back/0/d/0d200f98-3377-46a3-9197-3cbd95d03dbf.jpg?1576385426
 value=2.500
 rarity=U
 type=Artifact

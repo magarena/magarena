@@ -1,5 +1,5 @@
 name=Sideswipe
-image=https://magiccards.info/scans/en/chk/187.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bd611b7-7bd3-4a76-bd69-34a7235965ae.jpg?1562761081
 value=1.068
 rarity=U
 type=Instant

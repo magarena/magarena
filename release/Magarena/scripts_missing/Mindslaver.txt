@@ -1,5 +1,5 @@
 name=Mindslaver
-image=https://magiccards.info/scans/en/som/176.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00d03b17-75ae-40d2-8570-b219ef0dfd4a.jpg?1562813960
 value=4.441
 rarity=M
 type=Legendary,Artifact

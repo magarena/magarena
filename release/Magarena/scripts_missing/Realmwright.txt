@@ -1,5 +1,5 @@
 name=Realmwright
-image=https://magiccards.info/scans/en/gtc/45.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/989c76b2-d130-443d-8534-6525fef404c2.jpg?1561838260
 value=3.906
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Cosi's Trickster
-image=https://magiccards.info/scans/en/zen/45.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e1eb7372-481a-44a6-937d-21430ee02ff9.jpg?1562617574
 value=4.146
 rarity=R
 type=Creature

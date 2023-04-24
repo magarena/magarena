@@ -1,5 +1,5 @@
 name=Desert Nomads
-image=https://magiccards.info/scans/en/an/47.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e46d0c10-ec09-48ba-9e93-1392dca8111a.jpg?1562937684
 value=2.627
 rarity=C
 type=Creature

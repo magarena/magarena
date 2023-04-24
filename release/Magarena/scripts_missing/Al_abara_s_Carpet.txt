@@ -1,5 +1,5 @@
 name=Al-abara's Carpet
-image=https://magiccards.info/scans/en/lg/213.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9f381b3-fbfd-4bd0-87e8-5c2615f8e8e8.jpg?1562950734
 value=3.625
 rarity=R
 type=Artifact

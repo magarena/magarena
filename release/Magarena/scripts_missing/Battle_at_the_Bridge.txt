@@ -1,5 +1,5 @@
 name=Battle at the Bridge
-image=https://magiccards.info/scans/en/aer/53.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74d8b644-4cca-451e-a46c-5237c13bf373.jpg?1576381615
 value=2.500
 rarity=R
 type=Sorcery

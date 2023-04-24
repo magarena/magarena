@@ -1,5 +1,5 @@
 name=Timesifter
-image=https://magiccards.info/scans/en/mi/262.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/561cab0e-8874-4534-bf79-0c1488a9f0a5.jpg?1562144325
 value=4.011
 rarity=R
 type=Artifact

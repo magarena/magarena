@@ -1,5 +1,5 @@
 name=Dwarven Recruiter
-image=https://magiccards.info/scans/en/od/186.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a15d274-85b4-4f3c-b502-f6dfe7db4d37.jpg?1562914635
 value=3.815
 rarity=U
 type=Creature

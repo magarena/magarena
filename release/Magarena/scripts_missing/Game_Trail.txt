@@ -1,5 +1,5 @@
 name=Game Trail
-image=https://magiccards.info/scans/en/soi/276.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81c047dc-3a64-433d-ae78-9d84d1be135a.jpg?1682210464
 value=2.500
 rarity=R
 type=Land

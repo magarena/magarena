@@ -1,5 +1,5 @@
 name=Friendly Fire
-image=https://magiccards.info/scans/en/frf/101.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac4272ca-bb15-415c-a589-a472953a0dd9.jpg?1562828722
 value=2.500
 rarity=U
 type=Instant

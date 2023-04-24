@@ -1,5 +1,5 @@
 name=Meddling Mage
-image=https://magiccards.info/scans/en/arb/8.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de734753-e102-489b-9160-b3f3d10be4f1.jpg?1628801942
 value=4.604
 rarity=R
 type=Creature

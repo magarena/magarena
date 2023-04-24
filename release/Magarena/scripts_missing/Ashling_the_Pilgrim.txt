@@ -1,5 +1,5 @@
 name=Ashling the Pilgrim
-image=https://magiccards.info/scans/en/lw/149.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b60633ed-6428-4672-9497-9a17f823b981.jpg?1673305253
 value=4.019
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Lithomancer's Focus
-image=https://magiccards.info/scans/en/bfz/38.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd5a1376-88b3-4bdc-9ce9-e90617e6c55e.jpg?1562947718
 image_updated=2015-11-08
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Plague Fiend
-image=https://magiccards.info/scans/en/pr/73.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11f077f5-c0b0-4e94-8599-e2122bc87238.jpg?1562898477
 value=2.717
 rarity=C
 type=Creature

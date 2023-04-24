@@ -1,5 +1,5 @@
 name=Farrelite Priest
-image=https://magiccards.info/scans/en/fe/137.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e11bf79b-a951-4d0c-acdf-d8ba5290a648.jpg?1562937082
 value=3.288
 rarity=U
 type=Creature

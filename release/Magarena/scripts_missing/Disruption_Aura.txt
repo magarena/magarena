@@ -1,5 +1,5 @@
 name=Disruption Aura
-image=https://magiccards.info/scans/en/5dn/28.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/864b6f7e-4e08-465d-b9c7-d1a167850cf9.jpg?1562878224
 value=1.828
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Invasive Surgery
-image=https://magiccards.info/scans/en/soi/68.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e644e38-39bf-40bd-9be1-5eb80f472e81.jpg?1576384110
 value=2.500
 rarity=U
 type=Instant

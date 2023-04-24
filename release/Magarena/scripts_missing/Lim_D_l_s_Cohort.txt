@@ -1,5 +1,5 @@
 name=Lim-Dûl's Cohort
-image=https://magiccards.info/scans/en/ia/33.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/082cf845-5a24-4f00-bad2-a3d0d07f59e6.jpg?1562896910
 value=3.250
 rarity=C
 type=Creature

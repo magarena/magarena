@@ -1,5 +1,5 @@
 name=Sunastian Falconer
-image=https://magiccards.info/scans/en/lg/301.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd0eb8b1-e48d-4e83-86df-d6aa86f95ffd.jpg?1562934923
 value=2.613
 rarity=U
 type=Legendary,Creature

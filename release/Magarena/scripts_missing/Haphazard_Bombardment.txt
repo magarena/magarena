@@ -1,5 +1,5 @@
 name=Haphazard Bombardment
-image=https://magiccards.info/scans/en/dom/131.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e558a5bd-e8f9-477f-a514-1bf0708f4e9e.jpg?1562744520
 value=2.500
 rarity=R
 type=Enchantment

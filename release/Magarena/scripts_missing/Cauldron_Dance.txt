@@ -1,5 +1,5 @@
 name=Cauldron Dance
-image=https://magiccards.info/scans/en/c17/166.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50e70e67-eba0-46f4-97d8-62c249b267c8.jpg?1562608232
 image_updated=2017-10-03
 value=4.192
 rarity=U

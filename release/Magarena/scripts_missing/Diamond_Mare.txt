@@ -1,5 +1,5 @@
 name=Diamond Mare
-image=https://magiccards.info/scans/en/m19/231.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca600b3f-2c70-489b-b218-6e3245b90114.jpg?1562304339
 value=2.500
 rarity=U
 type=Artifact,Creature

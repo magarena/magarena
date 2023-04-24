@@ -1,5 +1,5 @@
 name=Tidehollow Sculler
-image=https://magiccards.info/scans/en/mma/184.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09521f23-52d6-482d-9f3b-c4d12fcc08cc.jpg?1561966375
 value=4.500
 rarity=U
 type=Artifact,Creature

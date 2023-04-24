@@ -1,5 +1,5 @@
 name=Well-Laid Plans
-image=https://magiccards.info/scans/en/in/88.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c55eb8f-925a-42c1-9e48-d7f99cab3b01.jpg?1562900616
 value=2.397
 rarity=R
 type=Enchantment

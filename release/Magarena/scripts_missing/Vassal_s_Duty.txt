@@ -1,5 +1,5 @@
 name=Vassal's Duty
-image=https://magiccards.info/scans/en/chk/48.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ef25165-2458-4c00-8b7c-0ad6fd98e3af.jpg?1562762494
 value=1.054
 rarity=R
 type=Enchantment

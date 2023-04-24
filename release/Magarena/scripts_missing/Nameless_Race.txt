@@ -1,5 +1,5 @@
 name=Nameless Race
-image=https://magiccards.info/scans/en/dk/12.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/348a467a-4661-4fdb-af1d-9171a1a930d9.jpg?1562907338
 value=2.827
 rarity=R
 type=Creature

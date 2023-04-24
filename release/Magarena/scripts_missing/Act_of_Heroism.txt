@@ -1,5 +1,5 @@
 name=Act of Heroism
-image=https://magiccards.info/scans/en/a25/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/969860ba-6923-4715-b065-81803bba3dd6.jpg?1562438567
 image_updated=2018-04-25
 value=2.500
 rarity=C

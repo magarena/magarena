@@ -1,5 +1,5 @@
 name=Magical Hack
-image=https://magiccards.info/scans/en/5e/101.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2349d53-d9f0-450f-be96-463791ee7aab.jpg?1562593776
 value=3.106
 rarity=R
 type=Instant

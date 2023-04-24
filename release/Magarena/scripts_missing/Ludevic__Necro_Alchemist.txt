@@ -1,5 +1,5 @@
 name=Ludevic, Necro-Alchemist
-image=https://magiccards.info/scans/en/c16/37.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3e7a886-2593-4e6e-b9da-d7cb417cba08.jpg?1644853036
 image_updated=2016-12-21
 value=2.500
 rarity=M

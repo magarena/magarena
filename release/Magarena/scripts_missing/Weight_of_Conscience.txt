@@ -1,5 +1,5 @@
 name=Weight of Conscience
-image=https://magiccards.info/scans/en/mt/28.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/396c8c41-70b4-4189-9160-8b7367a817a2.jpg?1562877954
 value=3.075
 rarity=C
 type=Enchantment

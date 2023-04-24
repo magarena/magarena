@@ -1,5 +1,5 @@
 name=Cryptic Gateway
-image=https://magiccards.info/scans/en/on/306.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f379966-6a0a-434c-8682-1cf528a9a4a1.jpg?1562925013
 value=4.337
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Restock
-image=https://magiccards.info/scans/en/m15/195.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/343994a6-b4f1-4ec5-997a-307b26601434.jpg?1562784973
 value=3.200
 rarity=U
 type=Sorcery

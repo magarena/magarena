@@ -1,5 +1,5 @@
 name=Kruphix's Insight
-image=https://magiccards.info/scans/en/jou/129.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5d7ab7a-fcb2-44c7-8e99-e627d3ced1ea.jpg?1592710952
 value=3.500
 rarity=C
 type=Sorcery

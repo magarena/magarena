@@ -1,5 +1,5 @@
 name=Mishra's Helix
-image=https://magiccards.info/scans/en/us/302.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c62507f-465d-45e9-96bf-06671d19e79e.jpg?1562914313
 value=4.107
 rarity=R
 type=Artifact

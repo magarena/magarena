@@ -1,5 +1,5 @@
 name=Vanish into Memory
-image=https://magiccards.info/scans/en/mm3/199.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60dd9f6e-c848-4670-8de1-06f328ea7f71.jpg?1631588749
 image_updated=2017-08-08
 value=3.355
 rarity=U

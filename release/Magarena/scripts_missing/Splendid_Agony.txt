@@ -1,5 +1,5 @@
 name=Splendid Agony
-image=https://magiccards.info/scans/en/akh/109.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58d38abd-116d-4015-91e4-3fc267ad099d.jpg?1543675411
 value=2.500
 rarity=C
 type=Instant

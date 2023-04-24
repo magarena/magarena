@@ -1,5 +1,5 @@
 name=Tomorrow, Azami's Familiar
-image=https://magiccards.info/scans/en/bok/58.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/095813f9-d559-40bd-a50f-7c1f6e494e60.jpg?1562875380
 value=3.771
 rarity=R
 type=Legendary,Creature

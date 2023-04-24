@@ -1,5 +1,5 @@
 name=Tymna the Weaver
-image=https://magiccards.info/scans/en/c16/48.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048
 image_updated=2016-12-28
 value=2.500
 rarity=R

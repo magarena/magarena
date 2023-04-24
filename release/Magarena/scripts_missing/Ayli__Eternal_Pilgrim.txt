@@ -1,5 +1,5 @@
 name=Ayli, Eternal Pilgrim
-image=https://magiccards.info/scans/en/ogw/151.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7b5893d-6df6-4cae-ae70-d02d443d1740.jpg?1562941484
 image_updated=2016-02-29
 value=2.500
 rarity=R

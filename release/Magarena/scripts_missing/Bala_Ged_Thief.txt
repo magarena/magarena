@@ -1,5 +1,5 @@
 name=Bala Ged Thief
-image=https://magiccards.info/scans/en/zen/79.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b4598ec-cf36-4a51-9f67-b91c146c3c4f.jpg?1562609730
 value=3.287
 rarity=R
 type=Creature

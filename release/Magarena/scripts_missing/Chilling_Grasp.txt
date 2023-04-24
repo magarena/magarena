@@ -1,5 +1,5 @@
 name=Chilling Grasp
-image=https://magiccards.info/scans/en/emn/50.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60d85d58-eae3-4f9d-8f54-440fa6ded95b.jpg?1576384034
 image_updated=2016-09-05
 value=2.500
 rarity=U

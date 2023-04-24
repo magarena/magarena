@@ -1,5 +1,5 @@
 name=Master of Cruelties
-image=https://magiccards.info/scans/en/dgm/82.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25266b22-3cee-4ac8-91e8-5a23fbaa457a.jpg?1673148945
 value=3.858
 rarity=M
 type=Creature

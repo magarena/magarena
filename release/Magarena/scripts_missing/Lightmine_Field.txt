@@ -1,5 +1,5 @@
 name=Lightmine Field
-image=https://magiccards.info/scans/en/roe/32.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5602b52a-5904-4780-9192-72990d07c975.jpg?1562704011
 value=4.079
 rarity=R
 type=Enchantment

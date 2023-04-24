@@ -1,5 +1,5 @@
 name=Spirespine
-image=https://magiccards.info/scans/en/jou/142.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac71491f-3027-4257-a18f-ba4de6041feb.jpg?1593096345
 value=2.360
 rarity=U
 type=Enchantment,Creature

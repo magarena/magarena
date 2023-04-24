@@ -1,5 +1,5 @@
 name=Kjeldoran Knight
-image=https://magiccards.info/scans/en/ia/260.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5b9db8f-93b5-44e3-9e2b-728c80dfbb37.jpg?1587911526
 value=3.324
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Pore Over the Pages
-image=https://magiccards.info/scans/en/soi/79.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2288f7b-05b1-4a6c-8d02-42ffcadc6f0b.jpg?1576384182
 image_updated=2010-09-10
 value=2.500
 rarity=U

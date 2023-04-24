@@ -1,5 +1,5 @@
 name=Archfiend of Depravity
-image=https://magiccards.info/scans/en/frf/62.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0ec85db7-c8ec-4730-b692-c140977436aa.jpg?1592765539
 value=2.500
 rarity=R
 type=Creature

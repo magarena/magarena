@@ -1,5 +1,5 @@
 name=Pulse of Llanowar
-image=https://magiccards.info/scans/en/in/202.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db09afe5-5f01-4f77-a239-12d7a6e59024.jpg?1562939018
 value=3.615
 rarity=U
 type=Enchantment

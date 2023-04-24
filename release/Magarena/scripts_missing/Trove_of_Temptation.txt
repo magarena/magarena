@@ -1,5 +1,5 @@
 name=Trove of Temptation
-image=https://magiccards.info/scans/en/xln/171.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb2df914-bb56-449e-9ef8-8b1012a76f64.jpg?1562567104
 value=2.500
 rarity=U
 type=Enchantment

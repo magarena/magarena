@@ -1,5 +1,5 @@
 name=Ravenous Vampire
-image=https://magiccards.info/scans/en/mr/34.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ee67033-7f0f-49b4-8472-3bc4fbb8ffe1.jpg?1562719294
 value=3.288
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Zedruu the Greathearted
-image=https://magiccards.info/scans/en/c16/231.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9ea2a6b-5aaf-4178-b945-f409fe83c41a.jpg?1562424565
 image_updated=2017-08-17
 value=3.822
 rarity=M

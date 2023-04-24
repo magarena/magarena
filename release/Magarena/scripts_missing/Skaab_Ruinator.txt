@@ -1,5 +1,5 @@
 name=Skaab Ruinator
-image=https://magiccards.info/scans/en/isd/77.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44c40cdc-a11a-47df-b902-d8fbe9014d03.jpg?1562829336
 value=3.880
 rarity=M
 type=Creature

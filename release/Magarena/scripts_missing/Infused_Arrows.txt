@@ -1,5 +1,5 @@
 name=Infused Arrows
-image=https://magiccards.info/scans/en/5dn/133.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5fd2639-3c95-435d-8e94-cd4e4d069e3e.jpg?1562880748
 value=2.778
 rarity=U
 type=Artifact

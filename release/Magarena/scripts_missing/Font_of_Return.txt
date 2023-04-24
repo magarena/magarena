@@ -1,5 +1,5 @@
 name=Font of Return
-image=https://magiccards.info/scans/en/jou/71.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c13eacff-0fd1-4e2e-8213-5bf5fff973c8.jpg?1593095724
 value=3.089
 rarity=C
 type=Enchantment

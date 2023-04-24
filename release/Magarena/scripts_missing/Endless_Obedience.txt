@@ -1,5 +1,5 @@
 name=Endless Obedience
-image=https://magiccards.info/scans/en/m15/94.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc538d95-6b0e-4cab-b42f-73b51fc1affa.jpg?1604193042
 value=3.167
 rarity=U
 type=Sorcery

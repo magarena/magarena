@@ -1,5 +1,5 @@
 name=Volunteer Reserves
-image=https://magiccards.info/scans/en/wl/145.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5344911f-25e8-45ce-87b9-607e42db0139.jpg?1562800849
 value=2.526
 rarity=U
 type=Creature

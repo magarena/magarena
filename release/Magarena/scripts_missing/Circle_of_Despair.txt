@@ -1,5 +1,5 @@
 name=Circle of Despair
-image=https://magiccards.info/scans/en/mr/319.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef9d2c05-0d2f-4d02-aef3-e1078d78e5ff.jpg?1562722405
 value=3.132
 rarity=R
 type=Enchantment

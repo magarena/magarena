@@ -1,5 +1,5 @@
 name=Volcanic Offering
-image=https://magiccards.info/scans/en/c14/40.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c30b821-09ec-4b66-9963-f97e3ef5005c.jpg?1562273862
 value=2.500
 rarity=R
 type=Instant

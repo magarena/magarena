@@ -1,5 +1,5 @@
 name=Smuggler Captain
-image=https://magiccards.info/scans/en/cn2/47.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b10ce284-c994-429c-ad61-ffe1ca88d691.jpg?1576381870
 image_updated=2016-09-05
 value=2.500
 rarity=U

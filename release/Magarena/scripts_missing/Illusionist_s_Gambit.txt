@@ -1,5 +1,5 @@
 name=Illusionist's Gambit
-image=https://magiccards.info/scans/en/c13/47.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a00cc6ab-e97c-4eba-bc7e-49d77690433b.jpg?1562928789
 value=3.829
 rarity=R
 type=Instant

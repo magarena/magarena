@@ -1,5 +1,5 @@
 name=Zhur-Taa Ancient
-image=https://magiccards.info/scans/en/dgm/119.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2076308f-0f4e-4b31-9e75-c2965942e7d1.jpg?1562900996
 value=3.814
 rarity=R
 type=Creature

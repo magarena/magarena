@@ -1,5 +1,5 @@
 name=Soldevi Sage
-image=https://magiccards.info/scans/en/6e/99.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/268c3726-0e2d-40df-811d-2cdf6b328ea3.jpg?1562815720
 value=2.200
 rarity=U
 type=Creature

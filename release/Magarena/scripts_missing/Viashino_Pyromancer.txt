@@ -1,5 +1,5 @@
 name=Viashino Pyromancer
-image=https://magiccards.info/scans/en/m19/166.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a82fdb2f-b199-44ff-9615-90fc074cb8b0.jpg?1562303465
 value=2.500
 rarity=C
 type=Creature

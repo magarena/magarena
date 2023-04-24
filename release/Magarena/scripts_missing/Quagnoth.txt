@@ -1,5 +1,5 @@
 name=Quagnoth
-image=https://magiccards.info/scans/en/fut/150.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/335c3aa3-af89-44ce-955a-69e12d83175f.jpg?1562905350
 value=3.836
 rarity=R
 type=Creature

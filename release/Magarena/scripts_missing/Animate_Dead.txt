@@ -1,5 +1,5 @@
 name=Animate Dead
-image=https://magiccards.info/scans/en/ema/78.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b83536a-efa4-41f3-9424-75b0efc0aea5.jpg?1580014163
 value=4.500
 rarity=U
 type=Enchantment

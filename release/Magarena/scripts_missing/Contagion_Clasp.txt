@@ -1,5 +1,5 @@
 name=Contagion Clasp
-image=https://magiccards.info/scans/en/som/144.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/4882ba90-2662-4bca-96c0-17bdfb484ae1.jpg?1562909792
 value=4.242
 rarity=U
 type=Artifact

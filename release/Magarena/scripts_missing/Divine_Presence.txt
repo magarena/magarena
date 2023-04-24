@@ -1,5 +1,5 @@
 name=Divine Presence
-image=https://magiccards.info/scans/en/in/15.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/28cb898d-d6ce-410a-83bf-37962cca2735.jpg?1562903314
 value=4.057
 rarity=R
 type=Enchantment

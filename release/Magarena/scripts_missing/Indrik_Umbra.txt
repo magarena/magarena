@@ -1,5 +1,5 @@
 name=Indrik Umbra
-image=https://magiccards.info/scans/en/pc2/96.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f1f1be3-8360-479b-ac87-7700275fbf0b.jpg?1562906590
 value=3.810
 rarity=R
 type=Enchantment

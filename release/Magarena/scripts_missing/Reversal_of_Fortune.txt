@@ -1,5 +1,5 @@
 name=Reversal of Fortune
-image=https://magiccards.info/scans/en/5dn/77.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19cf87c0-369e-4ec2-bb9f-e8e29d63d448.jpg?1562875708
 value=3.375
 rarity=R
 type=Sorcery

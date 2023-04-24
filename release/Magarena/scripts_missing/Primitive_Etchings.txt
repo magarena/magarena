@@ -1,5 +1,5 @@
 name=Primitive Etchings
-image=https://magiccards.info/scans/en/sc/126.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eae26b8d-c3af-42d1-94f4-56950ceac1c7.jpg?1562536644
 value=4.015
 rarity=R
 type=Enchantment

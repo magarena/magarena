@@ -1,5 +1,5 @@
 name=Warp World
-image=https://magiccards.info/scans/en/m10/163.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa6e1fb5-a06b-4e10-8cc7-785e0f0b298e.jpg?1561991614
 value=3.920
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Quickening Licid
-image=https://magiccards.info/scans/en/tp/248.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6e91f3d-5a23-4df1-a879-d18a3af92a28.jpg?1562057343
 value=2.759
 rarity=U
 type=Creature

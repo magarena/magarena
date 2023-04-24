@@ -1,5 +1,5 @@
 name=Curse of Bloodletting
-image=https://magiccards.info/scans/en/dka/85.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dc4ac6f-0005-47f8-bee9-10429cc542e4.jpg?1562932270
 value=3.682
 rarity=R
 type=Enchantment

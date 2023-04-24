@@ -1,5 +1,5 @@
 name=Dance of the Dead
-image=https://magiccards.info/scans/en/ia/6.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44de44be-db14-4932-968b-a5bc8b575716.jpg?1562868102
 value=4.465
 rarity=U
 type=Enchantment

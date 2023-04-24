@@ -1,5 +1,5 @@
 name=Saheeli Rai
-image=https://magiccards.info/scans/en/kld/186.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94b38464-39cd-4ee6-b9bf-a0bc1e128d9a.jpg?1576382877
 image_updated=2016-10-05
 value=2.500
 rarity=M

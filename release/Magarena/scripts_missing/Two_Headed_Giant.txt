@@ -1,5 +1,5 @@
 name=Two-Headed Giant
-image=https://magiccards.info/scans/en/dom/147.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f86c365-3ce5-45e5-b610-6f2587f99b42.jpg?1562737530
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Suffering
-image=https://magiccards.info/scans/en/in/294b.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d61af2e9-754d-48a6-8708-e5b54037f1bf.jpg?1562946051
 value=4.184
 rarity=U
 type=Sorcery

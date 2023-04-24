@@ -1,5 +1,5 @@
 name=Dark Ritual
-image=https://magiccards.info/scans/en/a25/82.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95f27eeb-6f14-4db3-adb9-9be5ed76b34b.jpg?1628801678
 image_updated=2018-04-25
 value=2.500
 rarity=C

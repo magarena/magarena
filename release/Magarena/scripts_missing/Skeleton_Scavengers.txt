@@ -1,5 +1,5 @@
 name=Skeleton Scavengers
-image=https://magiccards.info/scans/en/sh/20.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57af1b3f-661a-4b02-be08-0ec721d7cab8.jpg?1562596409
 value=3.514
 rarity=R
 type=Creature

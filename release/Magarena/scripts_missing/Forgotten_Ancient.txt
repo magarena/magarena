@@ -1,5 +1,5 @@
 name=Forgotten Ancient
-image=https://magiccards.info/scans/en/c16/150.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90fc94d9-b8af-4de8-a42d-ae508f8f1cd5.jpg?1682209488
 image_updated=2017-08-17
 value=4.353
 rarity=R

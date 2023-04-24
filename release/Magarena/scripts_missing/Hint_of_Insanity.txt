@@ -1,5 +1,5 @@
 name=Hint of Insanity
-image=https://magiccards.info/scans/en/od/143.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6abaca0-7ce1-4024-adf6-ef6cc0fbcb75.jpg?1562935119
 value=0.990
 rarity=R
 type=Sorcery

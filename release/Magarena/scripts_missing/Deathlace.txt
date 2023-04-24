@@ -1,5 +1,5 @@
 name=Deathlace
-image=https://magiccards.info/scans/en/4e/15.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/237e37fb-383d-432c-8ac3-1332096567db.jpg?1559603651
 value=2.010
 rarity=R
 type=Instant

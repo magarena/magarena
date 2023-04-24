@@ -1,5 +1,5 @@
 name=Awakener Druid
-image=https://magiccards.info/scans/en/m11/163.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7de98df4-9552-4ba6-a324-1669dc077d4c.jpg?1601082122
 value=3.102
 rarity=U
 type=Creature

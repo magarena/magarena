@@ -1,5 +1,5 @@
 name=Boros Garrison
-image=https://magiccards.info/scans/en/ima/233.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7cd5af5-67de-4d4d-b84f-5f2c95bee52e.jpg?1673305940
 image_updated=2017-04-12
 value=2.500
 rarity=U

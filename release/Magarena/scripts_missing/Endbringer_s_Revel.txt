@@ -1,5 +1,5 @@
 name=Endbringer's Revel
-image=https://magiccards.info/scans/en/pr/63.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b76843b0-0e71-473b-8c9b-6a8bc30255da.jpg?1562929116
 value=2.886
 rarity=U
 type=Enchantment

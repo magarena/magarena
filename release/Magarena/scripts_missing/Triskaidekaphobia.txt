@@ -1,5 +1,5 @@
 name=Triskaidekaphobia
-image=https://magiccards.info/scans/en/a25/110.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/813995f5-e49a-431d-8a3a-8ec569844e11.jpg?1562437529
 image_updated=2018-04-25
 value=2.500
 rarity=R

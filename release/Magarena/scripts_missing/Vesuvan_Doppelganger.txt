@@ -1,5 +1,5 @@
 name=Vesuvan Doppelganger
-image=https://magiccards.info/scans/en/rv/88.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/543c08bc-f8ce-4324-b78d-891c49f3a24a.jpg?1559592571
 value=4.548
 rarity=R
 type=Creature

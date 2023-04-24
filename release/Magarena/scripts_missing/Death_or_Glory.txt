@@ -1,5 +1,5 @@
 name=Death or Glory
-image=https://magiccards.info/scans/en/in/13.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81f967c9-b38d-489d-96cc-44a6b1804e10.jpg?1562921230
 value=4.028
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Atalya, Samite Master
-image=https://magiccards.info/scans/en/in/4.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90500e7a-f76d-453a-bda0-d56d3f7c7534.jpg?1562924117
 value=3.144
 rarity=R
 type=Legendary,Creature

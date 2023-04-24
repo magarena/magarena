@@ -1,5 +1,5 @@
 name=Visions
-image=https://magiccards.info/scans/en/4e/304.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0fed0e6-0e56-4987-b0dd-b294156c0233.jpg?1587911091
 value=2.444
 rarity=U
 type=Sorcery

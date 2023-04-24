@@ -1,5 +1,5 @@
 name=Liliana of the Dark Realms
-image=https://magiccards.info/scans/en/m13/97.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00cbe506-7332-4d29-9404-b7c6e1e791d8.jpg?1562825281
 value=3.663
 rarity=M
 type=Legendary,Planeswalker

@@ -1,5 +1,5 @@
 name=Vein Drinker
-image=https://magiccards.info/scans/en/c17/130.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25ad3372-51cb-4b82-a23c-81938b7c01b6.jpg?1562602686
 image_updated=2017-10-03
 value=3.313
 rarity=R

@@ -1,5 +1,5 @@
 name=Shyft
-image=https://magiccards.info/scans/en/ia/96.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7f2bbf6-65b7-41c4-a219-f8ea4aeb9bbc.jpg?1562870498
 value=2.661
 rarity=R
 type=Creature

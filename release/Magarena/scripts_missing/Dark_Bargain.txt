@@ -1,5 +1,5 @@
 name=Dark Bargain
-image=https://magiccards.info/scans/en/dom/83.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ef6f861-90ef-4e1d-9f17-1dd306e7d0af.jpg?1591226707
 value=2.500
 rarity=C
 type=Instant

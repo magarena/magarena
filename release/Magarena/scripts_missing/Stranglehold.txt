@@ -1,5 +1,5 @@
 name=Stranglehold
-image=https://magiccards.info/scans/en/cmd/136.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da81e6e9-90f2-4dad-894c-1952f05264c2.jpg?1592672829
 value=4.204
 rarity=R
 type=Enchantment

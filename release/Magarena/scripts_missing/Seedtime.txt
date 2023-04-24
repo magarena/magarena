@@ -1,5 +1,5 @@
 name=Seedtime
-image=https://magiccards.info/scans/en/ju/130.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4ffd5c52-f260-400c-b088-8792282509a5.jpg?1562629836
 value=4.014
 rarity=R
 type=Instant

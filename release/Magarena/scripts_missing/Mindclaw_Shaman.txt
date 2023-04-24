@@ -1,5 +1,5 @@
 name=Mindclaw Shaman
-image=https://magiccards.info/scans/en/m13/142.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f342fe9-aa73-4222-b908-d4035b5746be.jpg?1562550370
 value=3.819
 rarity=U
 type=Creature

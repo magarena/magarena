@@ -1,5 +1,5 @@
 name=Freejam Regent
-image=https://magiccards.info/scans/en/aer/81.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6b5147f-b422-47d3-98a0-dcc2d6f4e17a.jpg?1576382131
 value=2.500
 rarity=R
 type=Creature

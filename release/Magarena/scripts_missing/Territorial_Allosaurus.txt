@@ -1,5 +1,5 @@
 name=Territorial Allosaurus
-image=https://magiccards.info/scans/en/dom/184.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d8ac2b0-47ea-4aa3-bf24-c78227a0c913.jpg?1562734382
 value=2.500
 rarity=R
 type=Creature

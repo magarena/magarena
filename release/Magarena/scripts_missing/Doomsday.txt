@@ -1,5 +1,5 @@
 name=Doomsday
-image=https://magiccards.info/scans/en/a25/88.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68c73755-9678-467a-abd5-f8dd1556864e.jpg?1562436538
 image_updated=2018-04-25
 value=4.549
 rarity=M

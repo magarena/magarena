@@ -1,5 +1,5 @@
 name=Consuming Vortex
-image=https://magiccards.info/scans/en/chk/54.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/493ee99c-74ca-4d78-ade2-c6a93b0bd4fd.jpg?1562759855
 value=2.225
 rarity=C
 type=Instant

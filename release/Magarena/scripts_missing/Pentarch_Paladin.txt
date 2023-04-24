@@ -1,5 +1,5 @@
 name=Pentarch Paladin
-image=https://magiccards.info/scans/en/ts/32.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ced01039-e19f-466b-bbc6-9bcb8d3ae845.jpg?1562938758
 value=3.924
 rarity=R
 type=Creature

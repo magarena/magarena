@@ -1,5 +1,5 @@
 name=Alter Reality
-image=https://magiccards.info/scans/en/tr/22.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64cd68be-6e6a-4577-8465-a892463b6d6c.jpg?1562630089
 value=3.851
 rarity=R
 type=Instant

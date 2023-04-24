@@ -1,5 +1,5 @@
 name=Dromoka's Command
-image=https://magiccards.info/scans/en/dtk/221.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43571705-6d53-4ec1-9159-c9c98771b3b6.jpg?1682209719
 value=2.500
 rarity=R
 type=Instant

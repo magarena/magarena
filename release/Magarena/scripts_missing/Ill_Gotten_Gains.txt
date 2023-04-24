@@ -1,5 +1,5 @@
 name=Ill-Gotten Gains
-image=https://magiccards.info/scans/en/cns/114.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf569836-5ee7-4e5c-9ab7-f1004891ee15.jpg?1562866883
 value=4.500
 rarity=R
 type=Sorcery

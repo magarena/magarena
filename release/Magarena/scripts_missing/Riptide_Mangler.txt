@@ -1,5 +1,5 @@
 name=Riptide Mangler
-image=https://magiccards.info/scans/en/le/51.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5314a802-85d6-4d7b-ae9a-ca64eec652cf.jpg?1562911887
 value=3.981
 rarity=R
 type=Creature

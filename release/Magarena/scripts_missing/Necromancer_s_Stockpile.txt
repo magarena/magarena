@@ -1,5 +1,5 @@
 name=Necromancer's Stockpile
-image=https://magiccards.info/scans/en/m15/108.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2ba07e86-fdef-4f51-808e-7780883eefe3.jpg?1562784407
 value=2.812
 rarity=R
 type=Enchantment

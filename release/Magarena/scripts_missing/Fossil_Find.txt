@@ -1,5 +1,5 @@
 name=Fossil Find
-image=https://magiccards.info/scans/en/shm/206.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2ff61d34-f38f-440b-a234-7bb7251eb5b8.jpg?1562828390
 value=2.902
 rarity=U
 type=Sorcery

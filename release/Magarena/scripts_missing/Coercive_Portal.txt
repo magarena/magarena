@@ -1,5 +1,5 @@
 name=Coercive Portal
-image=https://magiccards.info/scans/en/cns/56.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18e8c013-1a56-4894-a4f5-6ec564bcbe9b.jpg?1562899970
 value=4.000
 rarity=M
 type=Artifact

@@ -1,5 +1,5 @@
 name=Shattered Crypt
-image=https://magiccards.info/scans/en/wl/22.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/117df45d-4500-459b-96b5-ca41952580c1.jpg?1562799429
 value=1.886
 rarity=C
 type=Sorcery

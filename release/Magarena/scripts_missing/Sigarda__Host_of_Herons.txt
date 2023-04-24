@@ -1,5 +1,5 @@
 name=Sigarda, Host of Herons
-image=https://magiccards.info/scans/en/avr/210.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcac0cff-efa6-4068-a69c-67ea4e7acea0.jpg?1559959280
 value=3.977
 rarity=M
 type=Legendary,Creature

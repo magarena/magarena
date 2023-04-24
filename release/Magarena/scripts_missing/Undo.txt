@@ -1,5 +1,5 @@
 name=Undo
-image=https://magiccards.info/scans/en/st/58.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12b944ea-add5-4806-a33e-264cc96a4a0e.jpg?1562873577
 value=3.767
 rarity=U
 type=Sorcery

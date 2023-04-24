@@ -1,5 +1,5 @@
 name=Fatigue
-image=https://magiccards.info/scans/en/ud/32.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/660fb109-dd65-4410-99b9-a2a14f8ea202.jpg?1562444225
 value=2.915
 rarity=C
 type=Sorcery

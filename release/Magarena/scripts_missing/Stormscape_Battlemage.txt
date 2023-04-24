@@ -1,5 +1,5 @@
 name=Stormscape Battlemage
-image=https://magiccards.info/scans/en/ps/35.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8bfb971-0ff4-4413-907f-047fb84dfba9.jpg?1562944091
 value=3.227
 rarity=U
 type=Creature

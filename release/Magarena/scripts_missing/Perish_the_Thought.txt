@@ -1,5 +1,5 @@
 name=Perish the Thought
-image=https://magiccards.info/scans/en/roe/123.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e1dd413-6e5a-4e36-b1b0-eca39e132e38.jpg?1562703731
 value=2.512
 rarity=C
 type=Sorcery

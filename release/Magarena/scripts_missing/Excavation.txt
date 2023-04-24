@@ -1,5 +1,5 @@
 name=Excavation
-image=https://magiccards.info/scans/en/pr/33.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a4b87ff-42a9-4ea0-a79e-1208ca35ffb2.jpg?1562899940
 value=2.844
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Nacatl War-Pride
-image=https://magiccards.info/scans/en/fut/147.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4ef863d2-1e11-41cc-90d5-008bf6234565.jpg?1562910989
 value=4.153
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Escaped Shapeshifter
-image=https://magiccards.info/scans/en/tp/62.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0171d4f-c871-4a7f-821a-82b7f401e9ca.jpg?1562056894
 value=3.236
 rarity=R
 type=Creature

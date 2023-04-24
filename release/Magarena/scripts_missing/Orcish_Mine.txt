@@ -1,5 +1,5 @@
 name=Orcish Mine
-image=https://magiccards.info/scans/en/hl/98.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a630875-b43d-4591-992c-117e1212fa34.jpg?1562587256
 value=1.838
 rarity=U
 type=Enchantment

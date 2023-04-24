@@ -1,5 +1,5 @@
 name=Saproling Burst
-image=https://magiccards.info/scans/en/ne/113.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1534b459-62eb-42ef-a3c6-2e57348b04be.jpg?1562899268
 value=2.500
 rarity=R
 type=Enchantment

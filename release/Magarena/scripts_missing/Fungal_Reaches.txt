@@ -1,5 +1,5 @@
 name=Fungal Reaches
-image=https://magiccards.info/scans/en/cmd/274.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a3580d6-345a-46ba-a327-0e924989d6b1.jpg?1619399295
 value=2.925
 rarity=U
 type=Land

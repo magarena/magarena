@@ -1,5 +1,5 @@
 name=Last-Ditch Effort
-image=https://magiccards.info/scans/en/ul/83.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/295f7fe0-0681-4b25-807f-30ed70ec78d5.jpg?1562862782
 value=3.957
 rarity=U
 type=Instant

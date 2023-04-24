@@ -1,5 +1,5 @@
 name=Liturgy of Blood
-image=https://magiccards.info/scans/en/m14/104.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbe00ed2-d316-46f8-a5cf-6aad93fe88a0.jpg?1562945815
 value=2.770
 rarity=C
 type=Sorcery

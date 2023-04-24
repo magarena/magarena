@@ -1,5 +1,5 @@
 name=Dichotomancy
-image=https://magiccards.info/scans/en/pc/38.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61583ead-bccc-44d9-bd1d-2a13511990b5.jpg?1562572855
 value=3.000
 rarity=R
 type=Sorcery

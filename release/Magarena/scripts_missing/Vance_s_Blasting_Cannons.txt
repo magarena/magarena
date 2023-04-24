@@ -1,5 +1,5 @@
 name=Vance's Blasting Cannons
-image=https://magiccards.info/scans/en/xln/173a.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e8c0009-787f-480b-84b6-bf297f1fb466.jpg?1562561009
 value=2.500
 rarity=R
 type=Legendary,Enchantment

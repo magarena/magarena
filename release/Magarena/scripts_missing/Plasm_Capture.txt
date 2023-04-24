@@ -1,5 +1,5 @@
 name=Plasm Capture
-image=https://magiccards.info/scans/en/dgm/91.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37fa090d-b756-4de3-8dcb-c20c5fcd4c6a.jpg?1562839831
 image_updated=2017-01-03
 value=2.500
 rarity=R

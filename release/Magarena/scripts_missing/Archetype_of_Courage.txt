@@ -1,5 +1,5 @@
 name=Archetype of Courage
-image=https://magiccards.info/scans/en/bng/4.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e6c4afb-6a94-4519-91c6-9824fed2892c.jpg?1593091364
 value=3.870
 rarity=U
 type=Enchantment,Creature

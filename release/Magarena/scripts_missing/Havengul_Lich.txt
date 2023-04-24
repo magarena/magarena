@@ -1,5 +1,5 @@
 name=Havengul Lich
-image=https://magiccards.info/scans/en/c17/173.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecbeb845-a7b7-4020-b28a-61f83e78dcc2.jpg?1562627953
 image_updated=2017-10-03
 value=4.092
 rarity=M

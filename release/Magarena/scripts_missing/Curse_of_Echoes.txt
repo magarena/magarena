@@ -1,5 +1,5 @@
 name=Curse of Echoes
-image=https://magiccards.info/scans/en/dka/34.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/147dbe42-665a-4e21-b405-d17554d5efcf.jpg?1562899961
 value=3.558
 rarity=R
 type=Enchantment

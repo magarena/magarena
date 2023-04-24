@@ -1,5 +1,5 @@
 name=Firestorm Phoenix
-image=https://magiccards.info/scans/en/lg/145.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12e70195-bad7-47d7-a2ca-4d727faa6883.jpg?1591725121
 value=2.952
 rarity=R
 type=Creature

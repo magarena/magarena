@@ -1,5 +1,5 @@
 name=Travel Preparations
-image=https://magiccards.info/scans/en/isd/206.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66284816-1fd8-4489-b006-a9e605d8d144.jpg?1673148212
 value=3.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Council Guardian
-image=https://magiccards.info/scans/en/cns/15.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3394ecc3-3b37-4e4a-880b-3aa62b288900.jpg?1562864951
 value=4.083
 rarity=U
 type=Creature

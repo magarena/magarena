@@ -1,5 +1,5 @@
 name=Novijen Sages
-image=https://magiccards.info/scans/en/mm2/53.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f75658e-43de-4091-acf6-5d6d571f9e99.jpg?1562261167
 image_updated=2015-11-05
 value=2.500
 rarity=U

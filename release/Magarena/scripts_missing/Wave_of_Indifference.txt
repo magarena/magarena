@@ -1,5 +1,5 @@
 name=Wave of Indifference
-image=https://magiccards.info/scans/en/on/243.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c88b942-06d5-45d8-a4d8-6ca864f65516.jpg?1593017317
 value=4.267
 rarity=C
 type=Sorcery

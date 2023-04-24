@@ -1,5 +1,5 @@
 name=Belligerent Sliver
-image=https://magiccards.info/scans/en/m15/129.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b78b8268-b090-4012-a3ba-5daab491f78d.jpg?1562793149
 value=3.400
 rarity=U
 type=Creature

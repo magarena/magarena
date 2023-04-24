@@ -1,5 +1,5 @@
 name=Leyline of Punishment
-image=https://magiccards.info/scans/en/m11/148.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51a2eec5-f892-4466-b6c6-960626ba5640.jpg?1562459627
 value=3.839
 rarity=R
 type=Enchantment

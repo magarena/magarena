@@ -1,5 +1,5 @@
 name=Auntie's Hovel
-image=https://magiccards.info/scans/en/lw/267.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/098685c9-cd85-4279-a3b5-b495485bba35.jpg?1562337683
 value=3.913
 rarity=R
 type=Land

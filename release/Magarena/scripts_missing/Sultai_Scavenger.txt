@@ -1,5 +1,5 @@
 name=Sultai Scavenger
-image=https://magiccards.info/scans/en/ktk/91.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cb8e423-f7e7-4ac3-acc2-2a3722e409e7.jpg?1562784280
 value=3.667
 rarity=C
 type=Creature

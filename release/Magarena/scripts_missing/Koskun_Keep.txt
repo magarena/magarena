@@ -1,5 +1,5 @@
 name=Koskun Keep
-image=https://magiccards.info/scans/en/hl/139.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/395fe900-ed19-438e-a658-ed7cf85818e5.jpg?1562587255
 value=1.333
 rarity=U
 type=Land

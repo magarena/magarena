@@ -1,5 +1,5 @@
 name=Daredevil Dragster
-image=https://magiccards.info/scans/en/aer/149.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19bbbc98-0806-4226-8fd1-16b812334cee.jpg?1576382238
 value=2.500
 rarity=U
 type=Artifact

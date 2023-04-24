@@ -1,5 +1,5 @@
 name=Nullstone Gargoyle
-image=https://magiccards.info/scans/en/rav/266.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1dc3aa88-2555-4862-a771-e9d5b9eab3ad.jpg?1598918074
 value=2.951
 rarity=R
 type=Artifact,Creature

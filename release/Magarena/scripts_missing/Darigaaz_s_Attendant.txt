@@ -1,5 +1,5 @@
 name=Darigaaz's Attendant
-image=https://magiccards.info/scans/en/in/301.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f22b575-443a-4c06-8e75-d4140cbd3660.jpg?1562917206
 value=2.862
 rarity=U
 type=Artifact,Creature

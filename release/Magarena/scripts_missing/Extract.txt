@@ -1,5 +1,5 @@
 name=Extract
-image=https://magiccards.info/scans/en/od/85.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97f99a3d-d811-4666-aac8-5957068157dc.jpg?1562923233
 value=4.326
 rarity=R
 type=Sorcery

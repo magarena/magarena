@@ -1,5 +1,5 @@
 name=Necroplasm
-image=https://magiccards.info/scans/en/c16/115.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f5f3202-fee4-4336-998f-f6710984f6d2.jpg?1562272881
 image_updated=2017-08-17
 value=3.915
 rarity=R

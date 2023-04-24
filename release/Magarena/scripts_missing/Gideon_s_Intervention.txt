@@ -1,5 +1,5 @@
 name=Gideon's Intervention
-image=https://magiccards.info/scans/en/akh/15.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e2524fb-ec90-4f8e-b851-f78034edef3f.jpg?1628800567
 value=2.500
 rarity=R
 type=Enchantment

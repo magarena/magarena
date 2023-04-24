@@ -1,5 +1,5 @@
 name=Avenging Druid
-image=https://magiccards.info/scans/en/ex/105.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fca9fd31-639a-4fbc-84bd-c3078df29c0a.jpg?1562089271
 value=3.231
 rarity=C
 type=Creature

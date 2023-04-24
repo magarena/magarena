@@ -1,5 +1,5 @@
 name=Chainer's Torment
-image=https://magiccards.info/scans/en/dom/82.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f42beafb-2fba-482c-a86a-7d668fa7cb4b.jpg?1562745605
 value=2.500
 rarity=U
 type=Enchantment

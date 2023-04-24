@@ -1,5 +1,5 @@
 name=Firefist Adept
-image=https://magiccards.info/scans/en/dom/121.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/0569365d-9e50-436f-a8f3-90820ef06381.jpg?1562730830
 value=2.500
 rarity=U
 type=Creature

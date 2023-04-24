@@ -1,5 +1,5 @@
 name=Hotheaded Giant
-image=https://magiccards.info/scans/en/eve/57.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74481546-debc-44df-b5a9-7fde0ada0eca.jpg?1562919467
 value=2.688
 rarity=C
 type=Creature

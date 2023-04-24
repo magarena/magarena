@@ -1,5 +1,5 @@
 name=Malicious Affliction
-image=https://magiccards.info/scans/en/ema/96.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/127f3f4d-93f4-4e52-b3c1-325c3981e0e1.jpg?1580014290
 value=2.500
 rarity=R
 type=Instant

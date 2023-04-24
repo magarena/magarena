@@ -1,5 +1,5 @@
 name=Swift Silence
-image=https://magiccards.info/scans/en/di/132.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1c5f733-e126-4c22-b528-18bdb90b509b.jpg?1593273784
 value=3.263
 rarity=R
 type=Instant

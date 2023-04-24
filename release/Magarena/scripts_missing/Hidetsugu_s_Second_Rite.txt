@@ -1,5 +1,5 @@
 name=Hidetsugu's Second Rite
-image=https://magiccards.info/scans/en/sok/102.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e48eb77-3bd7-444a-9262-799cc706c05a.jpg?1562493025
 value=3.946
 rarity=R
 type=Instant

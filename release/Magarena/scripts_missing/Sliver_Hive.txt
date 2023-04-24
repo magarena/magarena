@@ -1,5 +1,5 @@
 name=Sliver Hive
-image=https://magiccards.info/scans/en/m15/247.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91cef7ce-aa9f-4659-ac24-394c5ab9f77c.jpg?1562790969
 value=3.875
 rarity=R
 type=Land

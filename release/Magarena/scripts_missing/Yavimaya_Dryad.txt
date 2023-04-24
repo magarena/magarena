@@ -1,5 +1,5 @@
 name=Yavimaya Dryad
-image=https://magiccards.info/scans/en/ts/235.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9807f9a8-a994-4fb2-ad33-3d80d9702bfe.jpg?1620236252
 image_updated=2017-01-11
 value=4.170
 rarity=U

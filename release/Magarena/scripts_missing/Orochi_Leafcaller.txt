@@ -1,5 +1,5 @@
 name=Orochi Leafcaller
-image=https://magiccards.info/scans/en/chk/234.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6c39031-1c49-4c1e-83df-66c3795ddc72.jpg?1562766063
 value=4.000
 rarity=C
 type=Creature

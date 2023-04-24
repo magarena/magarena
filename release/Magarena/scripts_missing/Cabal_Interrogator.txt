@@ -1,5 +1,5 @@
 name=Cabal Interrogator
-image=https://magiccards.info/scans/en/sc/57.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/256a7a37-6f47-47a3-b149-5692aee8b34a.jpg?1562526599
 value=3.946
 rarity=U
 type=Creature

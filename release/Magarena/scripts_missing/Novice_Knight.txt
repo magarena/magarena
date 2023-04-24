@@ -1,5 +1,5 @@
 name=Novice Knight
-image=https://magiccards.info/scans/en/m19/30.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00101358-0e89-4bd1-b1f2-e889645b616e.jpg?1562300243
 value=2.500
 rarity=U
 type=Creature

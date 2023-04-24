@@ -1,5 +1,5 @@
 name=Vorinclex, Voice of Hunger
-image=https://magiccards.info/scans/en/ima/189.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fe3af8c-109d-486c-aa34-3f023abda5b7.jpg?1562852459
 image_updated=2017-04-12
 value=3.821
 rarity=M

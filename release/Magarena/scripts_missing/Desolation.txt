@@ -1,5 +1,5 @@
 name=Desolation
-image=https://magiccards.info/scans/en/vi/8.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b186460-d2af-4912-ba19-95b2cb5f1639.jpg?1562277446
 value=3.583
 rarity=U
 type=Enchantment

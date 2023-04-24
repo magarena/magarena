@@ -1,5 +1,5 @@
 name=Counterintelligence
-image=https://magiccards.info/scans/en/p3k/41.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eafbeafb-ef84-4a8d-9ca8-ca305b1feeea.jpg?1562257995
 value=2.242
 rarity=U
 type=Sorcery

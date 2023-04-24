@@ -1,5 +1,5 @@
 name=Shield Mare
-image=https://magiccards.info/scans/en/m19/37.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d21e0516-4430-4292-850b-f5c524d7f8f8.jpg?1562304378
 value=2.500
 rarity=U
 type=Creature

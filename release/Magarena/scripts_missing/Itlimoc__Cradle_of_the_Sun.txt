@@ -1,5 +1,5 @@
 name=Itlimoc, Cradle of the Sun
-image=https://magiccards.info/scans/en/xln/191b.jpg
+image=https://cards.scryfall.io/border_crop/back/b/3/b3b87bfc-f97f-4734-94f6-e3e2f335fc4d.jpg?1562562539
 value=2.500
 rarity=R
 type=Legendary,Land

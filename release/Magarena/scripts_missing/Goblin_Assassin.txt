@@ -1,5 +1,5 @@
 name=Goblin Assassin
-image=https://magiccards.info/scans/en/le/95.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57ec836f-6dcf-45f9-8e95-487762742a1e.jpg?1562912891
 value=3.364
 rarity=U
 type=Creature

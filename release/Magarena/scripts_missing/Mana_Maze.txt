@@ -1,5 +1,5 @@
 name=Mana Maze
-image=https://magiccards.info/scans/en/in/59.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d62cc17-8fa3-495c-a098-ffbbec89fa53.jpg?1562897736
 value=3.806
 rarity=R
 type=Enchantment

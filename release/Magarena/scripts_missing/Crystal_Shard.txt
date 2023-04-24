@@ -1,5 +1,5 @@
 name=Crystal Shard
-image=https://magiccards.info/scans/en/mi/159.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1c1d05b-92be-40d7-859f-75293a531a84.jpg?1562155044
 value=4.000
 rarity=U
 type=Artifact

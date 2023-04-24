@@ -1,5 +1,5 @@
 name=Krosan Reclamation
-image=https://magiccards.info/scans/en/ju/122.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b3c5144-7e15-46c6-b819-d729ecb30bb1.jpg?1562630008
 value=3.052
 rarity=U
 type=Instant

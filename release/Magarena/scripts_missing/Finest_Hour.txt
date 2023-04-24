@@ -1,5 +1,5 @@
 name=Finest Hour
-image=https://magiccards.info/scans/en/arb/126.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad89ace6-b872-4a56-8128-795119ceb972.jpg?1592711097
 value=4.023
 rarity=R
 type=Enchantment

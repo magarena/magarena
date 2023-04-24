@@ -1,5 +1,5 @@
 name=Divest
-image=https://magiccards.info/scans/en/dom/87.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/4494cb6d-1a99-40b6-96cc-0dc2ddec102f.jpg?1598304621
 value=2.500
 rarity=C
 type=Sorcery

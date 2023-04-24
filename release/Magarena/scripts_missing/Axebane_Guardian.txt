@@ -1,5 +1,5 @@
 name=Axebane Guardian
-image=https://magiccards.info/scans/en/rtr/115.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/725584fe-9e97-4020-89b1-5e5b45a5beb2.jpg?1562788162
 value=3.306
 rarity=C
 type=Creature

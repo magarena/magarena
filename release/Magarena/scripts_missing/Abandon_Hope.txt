@@ -1,5 +1,5 @@
 name=Abandon Hope
-image=https://magiccards.info/scans/en/tp/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/942cf220-472c-48f6-8f60-993939ea5ab8.jpg?1562055436
 value=2.823
 rarity=U
 type=Sorcery

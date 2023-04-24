@@ -1,5 +1,5 @@
 name=Teferi's Moat
-image=https://magiccards.info/scans/en/tsts/103.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37566afe-d383-4aa1-a9e4-c4bdf91a06d3.jpg?1591725019
 value=4.041
 rarity=R
 type=Enchantment

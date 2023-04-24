@@ -1,5 +1,5 @@
 name=Grafted Wargear
-image=https://magiccards.info/scans/en/5dn/126.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d023d44-482e-4f60-b9b1-eede9bfb732f.jpg?1608911444
 value=4.340
 rarity=U
 type=Artifact

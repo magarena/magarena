@@ -1,5 +1,5 @@
 name=River of Tears
-image=https://magiccards.info/scans/en/ima/246.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de8a98a9-864c-4ea5-842b-ca4ddf5571cd.jpg?1674143056
 image_updated=2017-04-12
 value=4.118
 rarity=R

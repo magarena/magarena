@@ -1,5 +1,5 @@
 name=Belbe's Portal
-image=https://magiccards.info/scans/en/ne/127.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb4eeea1-693e-475c-a209-8a0464df8081.jpg?1562632886
 value=4.027
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Hour of Reckoning
-image=https://magiccards.info/scans/en/cmd/15.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0ffb58f-459a-4965-b1d6-a25442baf9c2.jpg?1682208461
 value=3.671
 rarity=R
 type=Sorcery

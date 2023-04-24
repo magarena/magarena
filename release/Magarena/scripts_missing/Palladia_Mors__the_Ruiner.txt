@@ -1,5 +1,5 @@
 name=Palladia-Mors, the Ruiner
-image=https://magiccards.info/scans/en/m19/219.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4663bd13-243e-4b8c-9ca8-158576b58803.jpg?1562301770
 value=2.500
 rarity=M
 type=Legendary,Creature

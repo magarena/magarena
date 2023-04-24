@@ -1,5 +1,5 @@
 name=Hired Torturer
-image=https://magiccards.info/scans/en/dgm/25.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62e9f79e-6606-4c9b-838c-eda5d8cc612c.jpg?1562913284
 value=2.561
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Invasion Plans
-image=https://magiccards.info/scans/en/sh/89.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f52c2f83-9535-4ee5-9964-5cc01e617981.jpg?1562597844
 value=4.236
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Peel from Reality
-image=https://magiccards.info/scans/en/m15/74.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55aec3bd-b52f-4b23-a86a-429fa78a5a6a.jpg?1608912151
 image_updated=2017-01-03
 value=2.500
 rarity=C

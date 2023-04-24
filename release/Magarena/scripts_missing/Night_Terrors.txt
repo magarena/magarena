@@ -1,5 +1,5 @@
 name=Night Terrors
-image=https://magiccards.info/scans/en/mm3/79.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b41fe67-daf0-47ed-8f0e-db216f8394d1.jpg?1593813345
 image_updated=2017-08-08
 value=2.954
 rarity=C

@@ -1,5 +1,5 @@
 name=Coordinated Barrage
-image=https://magiccards.info/scans/en/mt/7.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d0b26b0-cc31-458b-8a92-aa3392d0ca0f.jpg?1562879927
 value=2.903
 rarity=C
 type=Instant

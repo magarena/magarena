@@ -1,5 +1,5 @@
 name=Clear Shot
-image=https://magiccards.info/scans/en/emn/152.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27476d9c-006d-4227-a5f2-49c7234b84a1.jpg?1636224065
 image_updated=2016-09-05
 value=2.500
 rarity=U

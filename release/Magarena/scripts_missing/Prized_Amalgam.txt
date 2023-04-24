@@ -1,5 +1,5 @@
 name=Prized Amalgam
-image=https://magiccards.info/scans/en/soi/249.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/844c9fa7-8751-49be-827a-7fb6986bae59.jpg?1673149045
 value=2.500
 rarity=R
 type=Creature

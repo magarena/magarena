@@ -1,5 +1,5 @@
 name=Crypt Champion
-image=https://magiccards.info/scans/en/di/40.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed424a46-8bac-4a3c-a6e6-87d02a20b292.jpg?1593272854
 value=3.922
 rarity=U
 type=Creature

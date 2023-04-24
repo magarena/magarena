@@ -1,5 +1,5 @@
 name=Oath of Chandra
-image=https://magiccards.info/scans/en/ogw/113.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f570b0cb-2f38-422d-89d6-22c85e085328.jpg?1562944439
 image_updated=2016-02-29
 value=2.500
 rarity=R

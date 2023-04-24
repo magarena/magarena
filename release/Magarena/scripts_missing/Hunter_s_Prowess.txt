@@ -1,5 +1,5 @@
 name=Hunter's Prowess
-image=https://magiccards.info/scans/en/c17/152.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64e0f9db-fd82-44d0-9d98-12275e2f05e8.jpg?1562610800
 image_updated=2017-10-03
 value=3.609
 rarity=R

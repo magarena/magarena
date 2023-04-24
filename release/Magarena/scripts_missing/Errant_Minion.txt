@@ -1,5 +1,5 @@
 name=Errant Minion
-image=https://magiccards.info/scans/en/ia/68.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61648ddb-6efb-43d0-b2b1-418cc957854c.jpg?1562913012
 value=3.050
 rarity=C
 type=Enchantment

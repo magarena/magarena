@@ -1,5 +1,5 @@
 name=Damping Sphere
-image=https://magiccards.info/scans/en/dom/213.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5c7d16b-8f4e-42b9-be24-3cb091932d7c.jpg?1562740759
 value=2.500
 rarity=U
 type=Artifact

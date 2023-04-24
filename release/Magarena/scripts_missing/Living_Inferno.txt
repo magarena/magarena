@@ -1,5 +1,5 @@
 name=Living Inferno
-image=https://magiccards.info/scans/en/gp/69.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c4b8143-2742-4262-b18f-2825bf8cea6f.jpg?1593272331
 value=3.400
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Chronostutter
-image=https://magiccards.info/scans/en/m15/48.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbef107d-c19f-4af3-9236-c66123075b41.jpg?1562793419
 value=2.000
 rarity=C
 type=Instant

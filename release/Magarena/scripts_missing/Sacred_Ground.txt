@@ -1,5 +1,5 @@
 name=Sacred Ground
-image=https://magiccards.info/scans/en/9e/37.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d72dc68a-d6f9-4a18-8282-0f104999591f.jpg?1562742396
 value=4.092
 rarity=R
 type=Enchantment

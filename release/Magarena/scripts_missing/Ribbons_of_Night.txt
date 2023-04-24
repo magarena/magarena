@@ -1,5 +1,5 @@
 name=Ribbons of Night
-image=https://magiccards.info/scans/en/rav/101.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7a2e910-5a61-4ca0-8d69-0a6d4ea12ed7.jpg?1598915108
 value=3.426
 rarity=U
 type=Sorcery

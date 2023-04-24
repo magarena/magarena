@@ -1,5 +1,5 @@
 name=Din of the Fireherd
-image=https://magiccards.info/scans/en/shm/184.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bde655f-9f49-42f8-a168-9cbca0592bb8.jpg?1562833713
 value=3.939
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Overload
-image=https://magiccards.info/scans/en/in/157.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c91fca91-7296-422e-b251-d571b710ff71.jpg?1562935385
 value=2.630
 rarity=C
 type=Instant

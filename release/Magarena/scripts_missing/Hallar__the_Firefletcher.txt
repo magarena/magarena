@@ -1,5 +1,5 @@
 name=Hallar, the Firefletcher
-image=https://magiccards.info/scans/en/dom/196.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c896643e-eeef-49a6-a1ca-2577b55af2b0.jpg?1562742764
 value=2.500
 rarity=U
 type=Legendary,Creature

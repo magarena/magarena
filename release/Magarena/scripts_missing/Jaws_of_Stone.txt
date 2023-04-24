@@ -1,5 +1,5 @@
 name=Jaws of Stone
-image=https://magiccards.info/scans/en/shm/97.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b018d93-a1c5-4729-b9c7-01d6ca5130f6.jpg?1581708623
 image_updated=2016-12-20
 value=2.804
 rarity=U

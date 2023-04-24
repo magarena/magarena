@@ -1,5 +1,5 @@
 name=Resplendent Angel
-image=https://magiccards.info/scans/en/m19/34.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/586854d1-edfd-4c66-873d-df459324dbfd.jpg?1562302213
 value=2.500
 rarity=M
 type=Creature

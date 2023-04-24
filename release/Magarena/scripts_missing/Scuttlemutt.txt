@@ -1,5 +1,5 @@
 name=Scuttlemutt
-image=https://magiccards.info/scans/en/shm/263.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fbd8e7c-13cb-4aea-a3cb-c7ed29d43163.jpg?1601080983
 value=3.897
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Jace, Ingenious Mind-Mage
-image=https://magiccards.info/scans/en/xln/280.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3b274f6-833f-430f-ac1a-d1d1d5b03e71.jpg?1562565659
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

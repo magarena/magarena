@@ -1,5 +1,5 @@
 name=Spiteful Blow
-image=https://magiccards.info/scans/en/jou/83.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fafaa798-e534-4cd0-b369-9e767a02fe3d.jpg?1593095848
 value=2.885
 rarity=U
 type=Sorcery

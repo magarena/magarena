@@ -1,5 +1,5 @@
 name=Baird, Steward of Argive
-image=https://magiccards.info/scans/en/dom/4.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1a9594e-edc9-42b2-ba8a-8298da9441fb.jpg?1562743396
 value=2.500
 rarity=U
 type=Legendary,Creature

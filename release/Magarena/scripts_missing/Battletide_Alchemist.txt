@@ -1,5 +1,5 @@
 name=Battletide Alchemist
-image=https://magiccards.info/scans/en/mt/2.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a5357e0-ff69-4bb9-9a02-b0372e0ea5e5.jpg?1562880264
 value=3.712
 rarity=R
 type=Creature

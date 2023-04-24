@@ -1,5 +1,5 @@
 name=Whirlpool Warrior
-image=https://magiccards.info/scans/en/pc2/29.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10587371-5f50-4caa-ab2e-7d57b721b5e8.jpg?1562898183
 value=4.318
 rarity=R
 type=Creature

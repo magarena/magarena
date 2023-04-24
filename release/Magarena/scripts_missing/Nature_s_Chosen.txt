@@ -1,5 +1,5 @@
 name=Nature's Chosen
-image=https://magiccards.info/scans/en/ai/81.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bd0b831-9d7e-40ce-8514-e852daee1a9e.jpg?1562769207
 value=3.846
 rarity=U
 type=Enchantment

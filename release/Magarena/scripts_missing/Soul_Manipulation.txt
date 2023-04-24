@@ -1,5 +1,5 @@
 name=Soul Manipulation
-image=https://magiccards.info/scans/en/mm3/185.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c052464-0e9c-4ac6-af50-ef81711972c8.jpg?1604195253
 image_updated=2017-08-08
 value=3.611
 rarity=U

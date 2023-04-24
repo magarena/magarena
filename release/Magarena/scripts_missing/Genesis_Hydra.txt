@@ -1,5 +1,5 @@
 name=Genesis Hydra
-image=https://magiccards.info/scans/en/ima/163.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69467d04-6c7d-44d1-88c4-9721741d6034.jpg?1682209497
 image_updated=2017-04-12
 value=3.688
 rarity=R

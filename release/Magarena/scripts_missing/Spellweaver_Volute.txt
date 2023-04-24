@@ -1,5 +1,5 @@
 name=Spellweaver Volute
-image=https://magiccards.info/scans/en/fut/59.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79cc73ea-3f07-4d11-9961-dc31ac598b73.jpg?1562919475
 value=3.406
 rarity=R
 type=Enchantment

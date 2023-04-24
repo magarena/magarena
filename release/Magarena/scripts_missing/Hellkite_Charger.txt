@@ -1,5 +1,5 @@
 name=Hellkite Charger
-image=https://magiccards.info/scans/en/mm2/118.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d069748-1969-471e-bb13-b575eb5f2616.jpg?1562614023
 value=2.500
 rarity=R
 type=Creature

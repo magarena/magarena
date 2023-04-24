@@ -1,5 +1,5 @@
 name=Tempest Owl
-image=https://magiccards.info/scans/en/zen/72.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d173dda8-de9f-4148-b5be-85d1a4c4faf6.jpg?1562616925
 value=2.812
 rarity=C
 type=Creature

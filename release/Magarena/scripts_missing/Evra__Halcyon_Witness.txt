@@ -1,5 +1,5 @@
 name=Evra, Halcyon Witness
-image=https://magiccards.info/scans/en/dom/16.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02f57a57-8ce8-4d01-9b91-99ec0623d1e9.jpg?1562730663
 value=2.500
 rarity=R
 type=Legendary,Creature

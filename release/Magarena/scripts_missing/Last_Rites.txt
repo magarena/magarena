@@ -1,5 +1,5 @@
 name=Last Rites
-image=https://magiccards.info/scans/en/od/146.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b140a36-6686-4781-a432-cb2ef58afa81.jpg?1562897111
 value=3.639
 rarity=C
 type=Sorcery

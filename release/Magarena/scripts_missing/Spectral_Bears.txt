@@ -1,5 +1,5 @@
 name=Spectral Bears
-image=https://magiccards.info/scans/en/hl/72.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e56143db-0274-4878-9d54-619e7f037a33.jpg?1559592348
 value=3.357
 rarity=U
 type=Creature

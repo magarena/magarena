@@ -1,5 +1,5 @@
 name=Blazing Shoal
-image=https://magiccards.info/scans/en/bok/96.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b915daa-d239-4460-bd6b-e1327fdf7f51.jpg?1562878306
 value=4.123
 rarity=R
 type=Instant

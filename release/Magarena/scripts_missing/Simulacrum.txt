@@ -1,5 +1,5 @@
 name=Simulacrum
-image=https://magiccards.info/scans/en/4e/45.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c23232c-a264-4df9-824b-4111a5c6524c.jpg?1559600479
 value=3.921
 rarity=U
 type=Instant

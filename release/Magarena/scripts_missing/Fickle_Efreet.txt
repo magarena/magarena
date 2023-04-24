@@ -1,5 +1,5 @@
 name=Fickle Efreet
-image=https://magiccards.info/scans/en/pr/89.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca6d047a-f3dc-4c34-9679-fb76037e4044.jpg?1562932857
 value=2.113
 rarity=R
 type=Creature

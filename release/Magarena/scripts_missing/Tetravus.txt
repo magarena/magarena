@@ -1,5 +1,5 @@
 name=Tetravus
-image=https://magiccards.info/scans/en/4e/368.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1b83a15-1d0b-4fc6-b7cb-fcd0063bfa7d.jpg?1562940716
 value=3.479
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Swift Reckoning
-image=https://magiccards.info/scans/en/ori/35.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/820096b5-0d64-47a0-88a4-17d3f24cb165.jpg?1547515964
 image_updated=2015-11-05
 value=2.500
 rarity=U

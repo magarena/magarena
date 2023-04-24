@@ -1,5 +1,5 @@
 name=Green Sun's Zenith
-image=https://magiccards.info/scans/en/ema/169.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70291c7b-a86f-4466-8502-c28765a89b2a.jpg?1673148124
 value=4.598
 rarity=R
 type=Sorcery

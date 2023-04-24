@@ -1,5 +1,5 @@
 name=Loyal Pegasus
-image=https://magiccards.info/scans/en/bng/19.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cae7971-953b-454a-84dd-ae2974946da9.jpg?1592516133
 value=3.567
 rarity=C
 type=Creature

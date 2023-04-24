@@ -1,5 +1,5 @@
 name=Suppression Field
-image=https://magiccards.info/scans/en/rav/31.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0df7883b-f744-4410-a682-7391bd697afb.jpg?1598913915
 value=4.453
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=City in a Bottle
-image=https://magiccards.info/scans/en/an/74.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfd5c243-2a40-4ba8-ad00-715f52eeda62.jpg?1615259961
 value=2.500
 rarity=R
 type=Artifact

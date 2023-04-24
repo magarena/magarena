@@ -1,5 +1,5 @@
 name=Selesnya Sanctuary
-image=https://magiccards.info/scans/en/ima/247.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8af7e5a-806b-4264-9010-f497b40a7fb4.jpg?1673149548
 image_updated=2017-04-12
 value=2.500
 rarity=U

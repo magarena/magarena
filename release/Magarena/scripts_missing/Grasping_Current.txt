@@ -1,5 +1,5 @@
 name=Grasping Current
-image=https://magiccards.info/scans/en/xln/282.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7344ffb-aada-4be1-bc82-2ed96e6cb5bf.jpg?1562565841
 value=2.500
 rarity=R
 type=Sorcery

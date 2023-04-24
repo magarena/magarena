@@ -1,5 +1,5 @@
 name=Shanna, Sisay's Legacy
-image=https://magiccards.info/scans/en/dom/204.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b90df81c-d738-46b3-8e96-9db0b3507ee0.jpg?1562741797
 value=2.500
 rarity=U
 type=Legendary,Creature

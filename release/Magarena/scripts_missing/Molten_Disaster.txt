@@ -1,5 +1,5 @@
 name=Molten Disaster
-image=https://magiccards.info/scans/en/mma/123.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17ca6865-e894-4390-ba27-b7cc8b03a424.jpg?1562900033
 value=3.500
 rarity=R
 type=Sorcery

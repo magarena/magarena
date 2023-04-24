@@ -1,5 +1,5 @@
 name=Sisters of Stone Death
-image=https://magiccards.info/scans/en/rav/231.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d214d25b-96c3-4479-88f0-3996805d6e6f.jpg?1598917488
 value=4.004
 rarity=R
 type=Legendary,Creature

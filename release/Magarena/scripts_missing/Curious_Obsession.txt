@@ -1,5 +1,5 @@
 name=Curious Obsession
-image=https://magiccards.info/scans/en/rix/35.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04cf3030-dc92-45ab-9c26-f2e6aef67e56.jpg?1616182119
 value=2.500
 rarity=U
 type=Enchantment

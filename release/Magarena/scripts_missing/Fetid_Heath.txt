@@ -1,5 +1,5 @@
 name=Fetid Heath
-image=https://magiccards.info/scans/en/a25/238.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6316d65-819c-42de-965e-8f2181f27a7f.jpg?1682210409
 image_updated=2018-04-25
 value=4.384
 rarity=R

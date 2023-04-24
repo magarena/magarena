@@ -1,5 +1,5 @@
 name=Shimmering Glasskite
-image=https://magiccards.info/scans/en/bok/51.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94bfedca-5a85-41e9-94be-67ed16bd634e.jpg?1562878484
 value=3.297
 rarity=C
 type=Creature

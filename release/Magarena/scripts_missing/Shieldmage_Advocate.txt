@@ -1,5 +1,5 @@
 name=Shieldmage Advocate
-image=https://magiccards.info/scans/en/ju/22.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ea66a41-cb2e-49d6-81fe-3f69b0dfd40e.jpg?1562629181
 value=2.650
 rarity=C
 type=Creature

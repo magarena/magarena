@@ -1,5 +1,5 @@
 name=High Ground
-image=https://magiccards.info/scans/en/10e/20.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b79b3153-8874-458d-8e7e-cf97c6c1887c.jpg?1562554030
 value=4.284
 rarity=U
 type=Enchantment

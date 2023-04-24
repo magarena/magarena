@@ -1,5 +1,5 @@
 name=Thermal Flux
-image=https://magiccards.info/scans/en/cs/49.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/523ab8a0-906a-43b3-a554-db0d3dcd62d3.jpg?1593275030
 value=1.500
 rarity=C
 type=Instant

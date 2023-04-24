@@ -1,5 +1,5 @@
 name=Survivors' Encampment
-image=https://magiccards.info/scans/en/hou/184.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7b0404e-0f42-456b-91ce-f960195c4951.jpg?1562814201
 value=2.500
 rarity=C
 type=Land

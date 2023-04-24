@@ -1,5 +1,5 @@
 name=False Memories
-image=https://magiccards.info/scans/en/tr/37.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a45ea90-03af-446e-9df3-ef64e9613f2c.jpg?1562629313
 value=1.857
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Obstinate Familiar
-image=https://magiccards.info/scans/en/od/210.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88468a76-1f64-4189-bbb8-7c333181d57c.jpg?1562920234
 value=3.758
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Opal Palace
-image=https://magiccards.info/scans/en/c16/312.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e639915-9c9c-482f-ad9b-b8158f2971e1.jpg?1651656497
 image_updated=2017-01-03
 value=3.552
 rarity=C

@@ -1,5 +1,5 @@
 name=Grim Monolith
-image=https://magiccards.info/scans/en/ul/126.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9ddc9fe1-17c8-4e1d-aeb8-c4214e881280.jpg?1562863767
 value=4.576
 rarity=R
 type=Artifact

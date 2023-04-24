@@ -1,5 +1,5 @@
 name=Psychic Intrusion
-image=https://magiccards.info/scans/en/ths/200.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b6e1d03-ad24-4bde-ab3c-28f94e776a4e.jpg?1562816113
 value=3.466
 rarity=R
 type=Sorcery

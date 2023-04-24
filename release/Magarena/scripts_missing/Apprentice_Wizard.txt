@@ -1,5 +1,5 @@
 name=Apprentice Wizard
-image=https://magiccards.info/scans/en/4e/61.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e13026a8-7e3c-45b2-9838-080f14ae4b29.jpg?1598303712
 value=3.940
 rarity=C
 type=Creature

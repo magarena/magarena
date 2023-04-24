@@ -1,5 +1,5 @@
 name=Condescend
-image=https://magiccards.info/scans/en/ima/46.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5ba16c0f-dd42-4a2a-8f08-bc8c8478952b.jpg?1562849378
 image_updated=2017-04-12
 value=2.500
 rarity=U

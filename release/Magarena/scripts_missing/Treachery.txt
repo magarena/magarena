@@ -1,5 +1,5 @@
 name=Treachery
-image=https://magiccards.info/scans/en/ud/50.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/613694aa-b169-400d-8063-2b83d8303611.jpg?1562444218
 value=4.540
 rarity=R
 type=Enchantment

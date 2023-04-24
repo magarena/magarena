@@ -1,5 +1,5 @@
 name=Ajani's Last Stand
-image=https://magiccards.info/scans/en/m19/4.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1aebbb57-31b3-4289-815e-4f529e29f3ea.jpg?1562300738
 value=2.500
 rarity=R
 type=Enchantment

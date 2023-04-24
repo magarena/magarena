@@ -1,5 +1,5 @@
 name=Scarred Puma
-image=https://magiccards.info/scans/en/in/163.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/067ff95e-c4dc-41bb-9677-67f51a09b05a.jpg?1562896303
 value=2.303
 rarity=C
 type=Creature

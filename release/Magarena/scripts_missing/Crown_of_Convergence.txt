@@ -1,5 +1,5 @@
 name=Crown of Convergence
-image=https://magiccards.info/scans/en/rav/258.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1b9f8c8-2927-4746-a540-dd3853b9a00e.jpg?1598917941
 value=3.259
 rarity=R
 type=Artifact

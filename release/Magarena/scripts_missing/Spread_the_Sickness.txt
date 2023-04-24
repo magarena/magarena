@@ -1,5 +1,5 @@
 name=Spread the Sickness
-image=https://magiccards.info/scans/en/mm2/98.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/003bc8f1-f282-491c-984d-1ce7ac027053.jpg?1562258478
 image_updated=2015-11-05
 value=2.500
 rarity=U

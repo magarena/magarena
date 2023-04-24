@@ -1,5 +1,5 @@
 name=Corrosive Ooze
-image=https://magiccards.info/scans/en/dom/158.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d13deb9c-5985-4355-8716-ee1c7b54b8e2.jpg?1562743360
 value=2.500
 rarity=C
 type=Creature

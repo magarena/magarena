@@ -1,5 +1,5 @@
 name=Wizened Snitches
-image=https://magiccards.info/scans/en/rav/75.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf35807a-a003-4a99-a883-03b8e097f1b2.jpg?1598914624
 value=2.458
 rarity=U
 type=Creature

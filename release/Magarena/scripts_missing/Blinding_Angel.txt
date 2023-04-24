@@ -1,5 +1,5 @@
 name=Blinding Angel
-image=https://magiccards.info/scans/en/9e/7.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e04256f8-c275-4a24-8a95-371d424f7a01.jpg?1562742906
 value=4.397
 rarity=R
 type=Creature

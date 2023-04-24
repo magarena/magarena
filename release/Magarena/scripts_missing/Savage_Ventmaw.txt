@@ -1,5 +1,5 @@
 name=Savage Ventmaw
-image=https://magiccards.info/scans/en/dtk/231.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1779ab27-f0fc-4dc7-9a0f-01cd70776a31.jpg?1631588643
 value=2.500
 rarity=U
 type=Creature

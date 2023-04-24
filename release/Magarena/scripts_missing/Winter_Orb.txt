@@ -1,5 +1,5 @@
 name=Winter Orb
-image=https://magiccards.info/scans/en/ema/234.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab3cec7e-513e-400d-a1a8-2c71cdde02c6.jpg?1580015285
 value=4.515
 rarity=R
 type=Artifact

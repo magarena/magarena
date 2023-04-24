@@ -1,5 +1,5 @@
 name=Fiery Gambit
-image=https://magiccards.info/scans/en/mi/90.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1540fe8c-606c-4b49-9bc5-ac36abc9487f.jpg?1645328410
 value=4.218
 rarity=R
 type=Sorcery

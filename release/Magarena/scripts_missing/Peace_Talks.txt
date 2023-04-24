@@ -1,5 +1,5 @@
 name=Peace Talks
-image=https://magiccards.info/scans/en/vi/115.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21da279d-a723-4902-bf84-dfe2c569d4c8.jpg?1562276986
 value=3.944
 rarity=U
 type=Sorcery

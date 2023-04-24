@@ -1,5 +1,5 @@
 name=Willing
-image=https://magiccards.info/scans/en/dgm/132b.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22081f95-dc8e-41ed-b609-b6a22ee5428b.jpg?1562901288
 value=3.758
 rarity=R
 type=Instant

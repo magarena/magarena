@@ -1,5 +1,5 @@
 name=Dreams of the Dead
-image=https://magiccards.info/scans/en/ia/66.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acff5d75-3d24-426d-9254-f17269aff9d3.jpg?1562870016
 value=2.861
 rarity=U
 type=Enchantment

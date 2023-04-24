@@ -1,5 +1,5 @@
 name=Bounty of the Luxa
-image=https://magiccards.info/scans/en/akh/196.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e038250-f8a9-4bce-baa6-7c2502929b59.jpg?1673148408
 value=2.500
 rarity=R
 type=Enchantment

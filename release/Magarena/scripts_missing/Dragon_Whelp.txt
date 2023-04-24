@@ -1,5 +1,5 @@
 name=Dragon Whelp
-image=https://magiccards.info/scans/en/cmd/120.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d13d40b9-319b-4630-a5cd-228ff2f24367.jpg?1673307307
 value=3.718
 rarity=U
 type=Creature

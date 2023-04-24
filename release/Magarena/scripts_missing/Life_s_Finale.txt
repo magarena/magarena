@@ -1,5 +1,5 @@
 name=Life's Finale
-image=https://magiccards.info/scans/en/nph/65.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffd3fbd2-87c7-4f08-baaa-91d61c1114da.jpg?1562883140
 value=3.750
 rarity=R
 type=Sorcery

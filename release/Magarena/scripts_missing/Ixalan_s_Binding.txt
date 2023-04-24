@@ -1,5 +1,5 @@
 name=Ixalan's Binding
-image=https://magiccards.info/scans/en/xln/17.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f3c8c31-ceb8-4a2c-beb6-0ff5f7b6ae07.jpg?1562556246
 value=2.500
 rarity=U
 type=Enchantment

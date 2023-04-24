@@ -1,5 +1,5 @@
 name=Game of Chaos
-image=https://magiccards.info/scans/en/5e/232.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95b44933-6b0b-426a-97d4-7a7cf6ad1d65.jpg?1562592782
 value=3.576
 rarity=R
 type=Sorcery

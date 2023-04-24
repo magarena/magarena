@@ -1,5 +1,5 @@
 name=Dack Fayden
-image=https://magiccards.info/scans/en/ema/199.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10158a5e-5a03-41ab-85d2-0907ccf32c9b.jpg?1580015027
 value=3.862
 rarity=M
 type=Legendary,Planeswalker

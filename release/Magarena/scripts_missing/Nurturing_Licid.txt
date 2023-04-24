@@ -1,5 +1,5 @@
 name=Nurturing Licid
-image=https://magiccards.info/scans/en/tp/136.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bf53069-44ac-49c5-83bf-9c3c1274e407.jpg?1562052341
 value=2.809
 rarity=U
 type=Creature

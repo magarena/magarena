@@ -1,5 +1,5 @@
 name=Treasonous Ogre
-image=https://magiccards.info/scans/en/cns/36.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae48c31d-6fd9-457f-adb8-37f367724ba1.jpg?1562866402
 value=3.818
 rarity=U
 type=Creature

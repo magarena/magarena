@@ -1,5 +1,5 @@
 name=Spy Network
-image=https://magiccards.info/scans/en/on/115.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a4bed3f-845c-4822-b8af-8b511dce6fe2.jpg?1562927629
 value=4.063
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Firecat Blitz
-image=https://magiccards.info/scans/en/ju/88.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4e1d485-02d5-4a07-bcc6-d2a8d95763e8.jpg?1562632155
 value=3.849
 rarity=U
 type=Sorcery

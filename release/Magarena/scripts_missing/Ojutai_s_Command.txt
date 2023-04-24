@@ -1,5 +1,5 @@
 name=Ojutai's Command
-image=https://magiccards.info/scans/en/dtk/227.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7a7f500-594d-4c7b-80e8-54ae1ada2444.jpg?1562792959
 value=2.500
 rarity=R
 type=Instant

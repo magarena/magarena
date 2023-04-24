@@ -1,5 +1,5 @@
 name=Halimar Tidecaller
-image=https://magiccards.info/scans/en/bfz/79.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc3e3b18-bf00-4f1a-9918-9a0e9d75b747.jpg?1562947421
 image_updated=2015-11-08
 value=2.500
 rarity=U

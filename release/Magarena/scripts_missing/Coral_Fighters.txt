@@ -1,5 +1,5 @@
 name=Coral Fighters
-image=https://magiccards.info/scans/en/mr/59.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f6e1cf2-1c0e-4b9b-9687-dd02ac019fbc.jpg?1581708249
 image_updated=2016-11-28
 value=3.656
 rarity=U

@@ -1,5 +1,5 @@
 name=Green Ward
-image=https://magiccards.info/scans/en/4e/277.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7548dc7-11dc-4611-85a5-71bdb48d8a62.jpg?1559604194
 value=1.609
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Petrified Wood-Kin
-image=https://magiccards.info/scans/en/gp/91.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a56fbf32-f08f-4882-b8d4-41ccb60cba63.jpg?1593272482
 value=3.728
 rarity=R
 type=Creature

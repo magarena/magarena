@@ -1,5 +1,5 @@
 name=Herald of Anafenza
-image=https://magiccards.info/scans/en/ktk/12.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8bf6ed4-48f3-419f-bafd-d1ee4d798482.jpg?1562795324
 value=4.167
 rarity=R
 type=Creature

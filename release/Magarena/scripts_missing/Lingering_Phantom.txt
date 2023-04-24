@@ -1,5 +1,5 @@
 name=Lingering Phantom
-image=https://magiccards.info/scans/en/dom/99.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2316239e-8fe6-467f-87e6-a3f4d19b860e.jpg?1562732666
 value=2.500
 rarity=U
 type=Creature

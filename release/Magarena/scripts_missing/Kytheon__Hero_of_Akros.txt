@@ -1,5 +1,5 @@
 name=Kytheon, Hero of Akros
-image=https://magiccards.info/scans/en/ori/23a.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58c39df6-b237-40d1-bdcb-2fe5d05392a9.jpg?1562021001
 image_updated=2015-11-05
 value=2.500
 rarity=M

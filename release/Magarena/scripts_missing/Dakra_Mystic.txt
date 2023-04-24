@@ -1,5 +1,5 @@
 name=Dakra Mystic
-image=https://magiccards.info/scans/en/jou/35.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e5f71ca-e7d9-4f9a-adf1-40353693deea.jpg?1593095417
 value=3.802
 rarity=U
 type=Creature

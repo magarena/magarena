@@ -1,5 +1,5 @@
 name=Zhur-Taa Druid
-image=https://magiccards.info/scans/en/c16/232.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b82d8359-4841-478c-851b-13a1a0f94737.jpg?1562416511
 image_updated=2017-08-17
 value=3.759
 rarity=C

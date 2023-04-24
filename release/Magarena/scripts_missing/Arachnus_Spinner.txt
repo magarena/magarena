@@ -1,5 +1,5 @@
 name=Arachnus Spinner
-image=https://magiccards.info/scans/en/mm3/117.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a782fbd4-36fe-4da7-a73f-20d533de8960.jpg?1673148001
 image_updated=2017-08-08
 value=4.135
 rarity=U

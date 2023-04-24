@@ -1,5 +1,5 @@
 name=Thicket Elemental
-image=https://magiccards.info/scans/en/in/214.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5a462ca-0632-410d-9999-a096b71fc3ea.jpg?1562230157
 value=4.119
 rarity=R
 type=Creature

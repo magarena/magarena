@@ -1,5 +1,5 @@
 name=Grab the Reins
-image=https://magiccards.info/scans/en/c16/126.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d74d181c-6783-4472-a3b9-2f6780e2b89b.jpg?1562421675
 image_updated=2017-08-17
 value=4.250
 rarity=U

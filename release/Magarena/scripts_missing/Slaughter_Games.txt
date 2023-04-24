@@ -1,5 +1,5 @@
 name=Slaughter Games
-image=https://magiccards.info/scans/en/rtr/197.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf37391d-db35-40a7-908a-abb53895793c.jpg?1562792492
 value=4.078
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Switcheroo
-image=https://magiccards.info/scans/en/m19/78.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d3d062c-5853-44f9-b951-a264e9e0d72d.jpg?1562303395
 image_updated=2018-08-07
 value=3.897
 rarity=U

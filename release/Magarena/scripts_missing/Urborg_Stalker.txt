@@ -1,5 +1,5 @@
 name=Urborg Stalker
-image=https://magiccards.info/scans/en/wl/27.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d33e3d5-c608-4ba8-8614-0b9d0385af64.jpg?1562800026
 value=4.171
 rarity=R
 type=Creature

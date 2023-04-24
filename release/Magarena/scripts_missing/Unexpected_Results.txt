@@ -1,5 +1,5 @@
 name=Unexpected Results
-image=https://magiccards.info/scans/en/gtc/203.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65e10a22-6070-48d7-99ab-45f770f16fd1.jpg?1561829632
 value=3.512
 rarity=R
 type=Sorcery

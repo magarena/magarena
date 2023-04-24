@@ -1,5 +1,5 @@
 name=Jeweled Torque
-image=https://magiccards.info/scans/en/mm/301.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/eab076bc-e4c3-42a1-b701-9bc49bcc3cdd.jpg?1562383531
 value=2.630
 rarity=U
 type=Artifact

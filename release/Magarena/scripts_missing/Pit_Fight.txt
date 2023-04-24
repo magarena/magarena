@@ -1,5 +1,5 @@
 name=Pit Fight
-image=https://magiccards.info/scans/en/gtc/223.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3624332e-60fc-4819-a0f1-d7ec41c6518b.jpg?1561822460
 value=3.372
 rarity=C
 type=Instant

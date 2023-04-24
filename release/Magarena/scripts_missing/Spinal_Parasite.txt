@@ -1,5 +1,5 @@
 name=Spinal Parasite
-image=https://magiccards.info/scans/en/5dn/155.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1aefaec4-741b-4a90-bf2c-e18215aac57c.jpg?1562875730
 value=1.462
 rarity=U
 type=Artifact,Creature

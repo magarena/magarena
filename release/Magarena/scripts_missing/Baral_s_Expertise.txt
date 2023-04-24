@@ -1,5 +1,5 @@
 name=Baral's Expertise
-image=https://magiccards.info/scans/en/aer/29.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d273f5b7-b3a3-485a-acc8-34e10a504646.jpg?1576381459
 value=2.500
 rarity=R
 type=Sorcery

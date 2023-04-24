@@ -1,5 +1,5 @@
 name=Blue Ward
-image=https://magiccards.info/scans/en/4e/260.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de62c833-c66b-442e-99ed-99ccd8eca024.jpg?1559601732
 value=1.939
 rarity=U
 type=Enchantment

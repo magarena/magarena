@@ -1,5 +1,5 @@
 name=Brutal Hordechief
-image=https://magiccards.info/scans/en/c16/108.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfa94402-1613-4e65-8470-a05bf4bbb8a8.jpg?1562422747
 image_updated=2017-08-17
 value=2.500
 rarity=M

@@ -1,5 +1,5 @@
 name=Chandra Nalaar
-image=https://magiccards.info/scans/en/m11/127.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44108e96-1fb5-41e0-a391-0c111e0f4f11.jpg?1562378236
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

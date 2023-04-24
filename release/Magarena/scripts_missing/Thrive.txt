@@ -1,5 +1,5 @@
 name=Thrive
-image=https://magiccards.info/scans/en/mm2/166.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43c8bdb1-fa35-462e-ac3f-6953fe7f3476.jpg?1673148205
 value=2.500
 rarity=C
 type=Sorcery

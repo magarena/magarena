@@ -1,5 +1,5 @@
 name=Djinn of Infinite Deceits
-image=https://magiccards.info/scans/en/c13/41.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f0f3643-a355-4132-bce8-c306df3cf830.jpg?1592672530
 value=3.810
 rarity=R
 type=Creature

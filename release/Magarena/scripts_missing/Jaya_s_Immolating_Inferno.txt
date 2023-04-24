@@ -1,5 +1,5 @@
 name=Jaya's Immolating Inferno
-image=https://magiccards.info/scans/en/dom/133.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/365336b4-92ee-429d-8f18-4624cba5469d.jpg?1608912272
 value=2.500
 rarity=R
 type=Legendary,Sorcery

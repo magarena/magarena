@@ -1,5 +1,5 @@
 name=Lay Bare the Heart
-image=https://magiccards.info/scans/en/akh/96.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4b76ff8-b26c-4567-9339-bb6a37713f4b.jpg?1543675319
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Kjeldoran Skycaptain
-image=https://magiccards.info/scans/en/5e/321.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc368160-aa0b-4814-8c35-00314e023963.jpg?1562870501
 value=2.550
 rarity=U
 type=Creature

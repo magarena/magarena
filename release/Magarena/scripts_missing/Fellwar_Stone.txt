@@ -1,5 +1,5 @@
 name=Fellwar Stone
-image=https://magiccards.info/scans/en/c16/254.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8d569e6-88a6-4001-8096-9e8451fee3b6.jpg?1682210014
 image_updated=2017-08-17
 value=3.924
 rarity=U

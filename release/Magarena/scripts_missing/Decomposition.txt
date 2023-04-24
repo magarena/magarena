@@ -1,5 +1,5 @@
 name=Decomposition
-image=https://magiccards.info/scans/en/mr/110.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0ea46a1-ea65-4802-812c-4f0e0f3088d2.jpg?1562721413
 value=3.326
 rarity=U
 type=Enchantment

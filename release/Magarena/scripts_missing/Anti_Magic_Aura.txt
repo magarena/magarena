@@ -1,5 +1,5 @@
 name=Anti-Magic Aura
-image=https://magiccards.info/scans/en/5e/72.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54642f0e-2d5f-49eb-8181-054c84038072.jpg?1562590863
 value=2.081
 rarity=U
 type=Enchantment

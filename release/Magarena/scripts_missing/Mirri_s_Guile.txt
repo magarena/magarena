@@ -1,5 +1,5 @@
 name=Mirri's Guile
-image=https://magiccards.info/scans/en/tp/130.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73d51a3c-95c0-4810-b847-4b8afd12fd64.jpg?1562054490
 value=4.490
 rarity=R
 type=Enchantment

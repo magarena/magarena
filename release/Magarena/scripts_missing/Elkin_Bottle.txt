@@ -1,5 +1,5 @@
 name=Elkin Bottle
-image=https://magiccards.info/scans/en/5e/367.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4bc0c01-06c4-4d84-ac4d-14ec555c9012.jpg?1562870455
 value=3.340
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Guardian of the Gateless
-image=https://magiccards.info/scans/en/cn2/89.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df091618-cef7-469b-aff5-27cad917616f.jpg?1576382256
 image_updated=2017-08-29
 value=3.551
 rarity=U

@@ -1,5 +1,5 @@
 name=Footbottom Feast
-image=https://magiccards.info/scans/en/cmd/84.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1584404b-c086-4734-89e5-8a10c3f29504.jpg?1592713287
 value=3.012
 rarity=C
 type=Instant

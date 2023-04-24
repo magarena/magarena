@@ -1,5 +1,5 @@
 name=Show and Tell
-image=https://magiccards.info/scans/en/cn2/121.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa7b7897-36e0-415a-8bb7-602886164852.jpg?1664776671
 image_updated=2017-08-29
 value=4.593
 rarity=M

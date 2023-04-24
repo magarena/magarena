@@ -1,5 +1,5 @@
 name=Prismatic Boon
-image=https://magiccards.info/scans/en/mr/334.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb774a9b-d29f-4f41-9fb8-a0189205e16f.jpg?1562722869
 value=3.065
 rarity=U
 type=Instant

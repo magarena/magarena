@@ -1,5 +1,5 @@
 name=Oona's Prowler
-image=https://magiccards.info/scans/en/lw/133.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd79780e-ddad-4ef4-a94d-ab191d118882.jpg?1673147596
 value=4.110
 rarity=R
 type=Creature

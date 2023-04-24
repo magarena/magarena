@@ -1,5 +1,5 @@
 name=Crystal Quarry
-image=https://magiccards.info/scans/en/od/318.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55999d8e-50f8-4c8b-a0c3-f3256af62491.jpg?1673305992
 value=4.074
 rarity=R
 type=Land

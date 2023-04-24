@@ -1,5 +1,5 @@
 name=Soul Salvage
-image=https://magiccards.info/scans/en/dom/104.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db574719-746a-433e-a5be-06d232a01021.jpg?1600701577
 value=2.500
 rarity=C
 type=Sorcery

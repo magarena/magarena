@@ -1,5 +1,5 @@
 name=Metalworker
-image=https://magiccards.info/scans/en/ud/135.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2050d414-71c7-4c42-a1ff-4c04068ba7f2.jpg?1562443733
 value=4.593
 rarity=R
 type=Artifact,Creature

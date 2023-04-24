@@ -1,5 +1,5 @@
 name=Eidolon of Rhetoric
-image=https://magiccards.info/scans/en/jou/10.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3bc8b9e-4d22-41ba-b593-d383fd301ef9.jpg?1593095228
 value=4.071
 rarity=U
 type=Enchantment,Creature

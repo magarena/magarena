@@ -1,5 +1,5 @@
 name=Aven Mindcensor
-image=https://magiccards.info/scans/en/akh/5.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4cf468f-4e9d-4551-a0ed-10bd6a2316ad.jpg?1674141050
 image_updated=2017-09-29
 value=4.441
 rarity=R

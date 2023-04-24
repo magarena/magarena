@@ -1,5 +1,5 @@
 name=Gosta Dirk
-image=https://magiccards.info/scans/en/lg/267.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92ef316b-dd22-40d1-82e8-8890976684c0.jpg?1562859698
 value=1.707
 rarity=R
 type=Legendary,Creature

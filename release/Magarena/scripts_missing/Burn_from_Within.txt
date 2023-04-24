@@ -1,5 +1,5 @@
 name=Burn from Within
-image=https://magiccards.info/scans/en/soi/148.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8bdc165-4c6f-47e6-8bda-877c0be3613b.jpg?1576384673
 value=2.500
 rarity=R
 type=Sorcery

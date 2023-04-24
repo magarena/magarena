@@ -1,5 +1,5 @@
 name=Mind's Dilation
-image=https://magiccards.info/scans/en/emn/70.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3d6522a-b9a0-4185-b5ba-c20fa1b772eb.jpg?1576384187
 image_updated=2016-09-05
 value=2.500
 rarity=M

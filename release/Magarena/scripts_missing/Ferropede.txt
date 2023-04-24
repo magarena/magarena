@@ -1,5 +1,5 @@
 name=Ferropede
-image=https://magiccards.info/scans/en/5dn/122.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdf8248c-ef2c-4b1e-8a0b-05def43ca2af.jpg?1562879798
 value=3.524
 rarity=U
 type=Artifact,Creature

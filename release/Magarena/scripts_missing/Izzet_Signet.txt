@@ -1,5 +1,5 @@
 name=Izzet Signet
-image=https://magiccards.info/scans/en/mm3/223.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b78586e3-abd0-41d2-ae2d-74f3d2833c3e.jpg?1682210070
 image_updated=2017-08-08
 value=4.071
 rarity=U

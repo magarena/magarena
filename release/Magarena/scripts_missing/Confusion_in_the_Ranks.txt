@@ -1,5 +1,5 @@
 name=Confusion in the Ranks
-image=https://magiccards.info/scans/en/mi/87.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d46aca2-4714-4d2c-9466-5f1c043b8726.jpg?1562152213
 value=4.026
 rarity=R
 type=Enchantment

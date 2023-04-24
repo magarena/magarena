@@ -1,5 +1,5 @@
 name=Sword of the Ages
-image=https://magiccards.info/scans/en/lg/241.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aad10ff3-6d8d-4de4-9c30-1ae1aec85e5e.jpg?1562931016
 value=3.958
 rarity=R
 type=Artifact

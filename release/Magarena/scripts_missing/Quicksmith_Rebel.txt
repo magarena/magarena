@@ -1,5 +1,5 @@
 name=Quicksmith Rebel
-image=https://magiccards.info/scans/en/aer/93.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d5f9755-b137-439c-9b54-1ad71ec1f9ec.jpg?1576381871
 value=2.500
 rarity=R
 type=Creature

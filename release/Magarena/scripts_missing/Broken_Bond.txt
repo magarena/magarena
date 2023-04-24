@@ -1,5 +1,5 @@
 name=Broken Bond
-image=https://magiccards.info/scans/en/dom/157.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4dcb59f-2a47-4461-9831-204ad15696b5.jpg?1562741565
 value=2.500
 rarity=C
 type=Sorcery

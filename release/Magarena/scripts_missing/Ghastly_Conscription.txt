@@ -1,5 +1,5 @@
 name=Ghastly Conscription
-image=https://magiccards.info/scans/en/c16/111.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/8495d903-ef30-4aaa-9fe6-239dc0e34977.jpg?1568004200
 image_updated=2017-08-17
 value=2.500
 rarity=M

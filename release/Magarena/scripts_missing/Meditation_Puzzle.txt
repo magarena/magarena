@@ -1,5 +1,5 @@
 name=Meditation Puzzle
-image=https://magiccards.info/scans/en/m15/19.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f31f5c19-9650-4fdc-a316-866eddd29c1a.jpg?1562796924
 value=1.143
 rarity=C
 type=Instant

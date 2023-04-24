@@ -1,5 +1,5 @@
 name=Dust of Moments
-image=https://magiccards.info/scans/en/fut/5.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d2c8f6f-8dcd-4b47-bc79-9657824cf1b7.jpg?1562900793
 value=2.250
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Manabarbs
-image=https://magiccards.info/scans/en/m12/150.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adf081d5-e644-4f46-8bc8-a754b089acb4.jpg?1562655472
 value=4.077
 rarity=R
 type=Enchantment

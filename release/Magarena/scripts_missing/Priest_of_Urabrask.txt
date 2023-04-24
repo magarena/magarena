@@ -1,5 +1,5 @@
 name=Priest of Urabrask
-image=https://magiccards.info/scans/en/nph/90.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0a9f49c-f15c-4b2d-b6a5-8efc3c430d87.jpg?1562881716
 value=3.712
 rarity=U
 type=Creature

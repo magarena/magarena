@@ -1,5 +1,5 @@
 name=Rattlechains
-image=https://magiccards.info/scans/en/soi/81.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/709f6376-9a33-4900-a7ae-00767fb9f9bf.jpg?1641602019
 value=2.500
 rarity=R
 type=Creature

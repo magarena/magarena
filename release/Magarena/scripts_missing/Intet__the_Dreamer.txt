@@ -1,5 +1,5 @@
 name=Intet, the Dreamer
-image=https://magiccards.info/scans/en/c17/174.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35517572-b5d4-4dbf-b090-4e4c4b040a0d.jpg?1673148766
 image_updated=2017-10-03
 value=4.106
 rarity=R

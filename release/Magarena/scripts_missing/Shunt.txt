@@ -1,5 +1,5 @@
 name=Shunt
-image=https://magiccards.info/scans/en/10e/233.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e54b10e-5307-4138-8f80-28406170f2c6.jpg?1562548483
 value=3.972
 rarity=R
 type=Instant

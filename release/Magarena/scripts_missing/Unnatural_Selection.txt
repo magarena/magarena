@@ -1,5 +1,5 @@
 name=Unnatural Selection
-image=https://magiccards.info/scans/en/ap/32.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c575e2cb-3990-4c73-b81c-e16311ec6bbb.jpg?1562941637
 value=3.809
 rarity=R
 type=Enchantment

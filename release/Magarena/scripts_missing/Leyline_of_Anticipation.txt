@@ -1,5 +1,5 @@
 name=Leyline of Anticipation
-image=https://magiccards.info/scans/en/m11/61.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f57bdaa1-ce8a-4103-8598-fee751e65a53.jpg?1674141383
 value=4.306
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Altar of Shadows
-image=https://magiccards.info/scans/en/mi/143.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebc3824c-11ee-4fec-9397-823783b682d9.jpg?1562162268
 value=3.702
 rarity=R
 type=Artifact

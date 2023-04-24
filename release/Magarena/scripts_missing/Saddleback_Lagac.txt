@@ -1,5 +1,5 @@
 name=Saddleback Lagac
-image=https://magiccards.info/scans/en/ogw/142.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/634f9544-5ac3-4566-aa73-65a3930b559b.jpg?1681725049
 image_updated=2016-02-29
 value=2.500
 rarity=C

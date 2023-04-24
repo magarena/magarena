@@ -1,5 +1,5 @@
 name=Sovereigns of Lost Alara
-image=https://magiccards.info/scans/en/arb/12.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d68ea02-66d3-4cca-ba0c-96f4340f683c.jpg?1547518109
 value=3.783
 rarity=R
 type=Creature

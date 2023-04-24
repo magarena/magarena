@@ -1,5 +1,5 @@
 name=Metallic Rebuke
-image=https://magiccards.info/scans/en/aer/39.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34785944-7b51-48a9-855c-3e656cd78251.jpg?1598304101
 value=2.500
 rarity=C
 type=Instant

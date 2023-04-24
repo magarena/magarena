@@ -1,5 +1,5 @@
 name=Saproling Infestation
-image=https://magiccards.info/scans/en/in/208.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8642e530-914c-4149-944a-c4966ee27299.jpg?1562922159
 value=2.851
 rarity=R
 type=Enchantment

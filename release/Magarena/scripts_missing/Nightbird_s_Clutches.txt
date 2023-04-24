@@ -1,5 +1,5 @@
 name=Nightbird's Clutches
-image=https://magiccards.info/scans/en/isd/154.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8952ef0-d81e-491e-a137-be08a74ed005.jpg?1547517342
 value=2.856
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Brass Herald
-image=https://magiccards.info/scans/en/8e/293.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c0380a4-225f-4a80-8c8b-d0f7e54f1626.jpg?1608911338
 value=3.413
 rarity=R
 type=Artifact,Creature

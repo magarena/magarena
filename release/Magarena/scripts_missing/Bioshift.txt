@@ -1,5 +1,5 @@
 name=Bioshift
-image=https://magiccards.info/scans/en/gtc/214.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e18f7a9-2af6-467a-8f62-5f7da83a3c92.jpg?1561831048
 value=3.174
 rarity=C
 type=Instant

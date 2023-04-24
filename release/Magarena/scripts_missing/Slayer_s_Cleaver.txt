@@ -1,5 +1,5 @@
 name=Slayer's Cleaver
-image=https://magiccards.info/scans/en/emn/198.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9de4a83a-3a0c-4174-ba65-a6e100383b32.jpg?1576385082
 image_updated=2016-09-05
 value=2.500
 rarity=U

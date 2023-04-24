@@ -1,5 +1,5 @@
 name=Psychic Theft
-image=https://magiccards.info/scans/en/pr/40.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6f86c92-c19e-4f2c-96d3-d3b05623cb00.jpg?1562941354
 value=3.273
 rarity=R
 type=Sorcery

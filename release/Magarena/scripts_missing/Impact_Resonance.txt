@@ -1,5 +1,5 @@
 name=Impact Resonance
-image=https://magiccards.info/scans/en/c14/36.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd1742a6-adbd-4fbe-82c7-fe3589623d14.jpg?1562276042
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Encroach
-image=https://magiccards.info/scans/en/ud/59.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbd48dac-0a1a-49c4-8daf-11972b990454.jpg?1595573354
 value=3.766
 rarity=U
 type=Sorcery

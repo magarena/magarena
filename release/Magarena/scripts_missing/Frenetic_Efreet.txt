@@ -1,5 +1,5 @@
 name=Frenetic Efreet
-image=https://magiccards.info/scans/en/mr/324.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50d4468b-f7de-44fe-898a-4125d26d242f.jpg?1562719267
 value=3.900
 rarity=R
 type=Creature

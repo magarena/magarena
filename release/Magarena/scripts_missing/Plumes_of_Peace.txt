@@ -1,5 +1,5 @@
 name=Plumes of Peace
-image=https://magiccards.info/scans/en/di/124.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f02dcf40-03ad-463c-a14a-5dfc886dea4c.jpg?1593273708
 value=2.889
 rarity=C
 type=Enchantment

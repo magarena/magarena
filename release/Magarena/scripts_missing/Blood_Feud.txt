@@ -1,5 +1,5 @@
 name=Blood Feud
-image=https://magiccards.info/scans/en/dka/83.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f0ec743-46ac-4ace-9c48-8573c3b7a0fe.jpg?1562927086
 value=2.698
 rarity=U
 type=Sorcery

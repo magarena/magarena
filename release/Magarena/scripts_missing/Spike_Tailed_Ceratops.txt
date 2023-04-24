@@ -1,5 +1,5 @@
 name=Spike-Tailed Ceratops
-image=https://magiccards.info/scans/en/xln/209.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41a3b5f2-0b0b-42e0-a15b-4bb2fce05927.jpg?1562554159
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ancient Spring
-image=https://magiccards.info/scans/en/in/319.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/004eefa4-947b-45fc-b45c-5263bfd763bc.jpg?1562895051
 value=3.221
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Heritage Druid
-image=https://magiccards.info/scans/en/ema/171.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57948c65-4324-42bc-97ae-7cc700eb3817.jpg?1580014812
 value=4.339
 rarity=R
 type=Creature

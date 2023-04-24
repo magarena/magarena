@@ -1,5 +1,5 @@
 name=Call to Arms
-image=https://magiccards.info/scans/en/ia/234.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a772cac-c853-4621-a61f-a9b06f2e2dec.jpg?1562900557
 value=2.288
 rarity=R
 type=Enchantment

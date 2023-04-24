@@ -1,5 +1,5 @@
 name=Balan, Wandering Knight
-image=https://magiccards.info/scans/en/c17/2.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d0b279c-9a6d-4a56-878e-0ebf3f609f65.jpg?1562609840
 image_updated=2017-10-03
 value=2.500
 rarity=R

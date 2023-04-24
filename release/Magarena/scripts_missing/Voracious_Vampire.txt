@@ -1,5 +1,5 @@
 name=Voracious Vampire
-image=https://magiccards.info/scans/en/rix/91.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d66a9f1b-31c8-4557-888b-a927922d37af.jpg?1555040354
 value=2.500
 rarity=C
 type=Creature

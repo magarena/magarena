@@ -1,5 +1,5 @@
 name=Past in Flames
-image=https://magiccards.info/scans/en/mm3/105.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b7472f4-37b0-439f-b4ac-80706d40d191.jpg?1593813533
 image_updated=2017-08-08
 value=4.183
 rarity=M

@@ -1,5 +1,5 @@
 name=Konda's Banner
-image=https://magiccards.info/scans/en/chk/259.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/759b2f39-e1b1-44aa-b49a-00ef6926a6ac.jpg?1562761545
 value=3.698
 rarity=R
 type=Legendary,Artifact

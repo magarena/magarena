@@ -1,5 +1,5 @@
 name=Shrine of Boundless Growth
-image=https://magiccards.info/scans/en/nph/152.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2ec7b95-667f-43ed-b310-b657befd55a2.jpg?1562880824
 value=2.992
 rarity=U
 type=Artifact

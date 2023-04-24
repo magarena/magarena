@@ -1,5 +1,5 @@
 name=Puca's Mischief
-image=https://magiccards.info/scans/en/shm/47.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/8380bd90-35f2-4936-995b-af6427f61752.jpg?1562832467
 value=3.856
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Dracoplasm
-image=https://magiccards.info/scans/en/tp/341.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5dc9a21b-0935-4526-a0b0-9a85d0613e44.jpg?1562429813
 value=2.500
 rarity=R
 type=Creature

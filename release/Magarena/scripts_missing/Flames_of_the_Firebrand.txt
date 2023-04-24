@@ -1,5 +1,5 @@
 name=Flames of the Firebrand
-image=https://magiccards.info/scans/en/m13/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/584cdb52-08f8-425b-8407-8192b1dc6843.jpg?1601077647
 value=3.556
 rarity=U
 type=Sorcery

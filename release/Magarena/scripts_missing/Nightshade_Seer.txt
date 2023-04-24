@@ -1,5 +1,5 @@
 name=Nightshade Seer
-image=https://magiccards.info/scans/en/ud/63.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2262467-1354-4aec-84a2-21916c44b9ef.jpg?1562445224
 value=3.518
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Redeem
-image=https://magiccards.info/scans/en/8e/37.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9ba3fde-f5ff-4e59-88a0-3c38fc5e75e0.jpg?1594065342
 value=2.983
 rarity=C
 type=Instant

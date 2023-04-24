@@ -1,5 +1,5 @@
 name=Grim Affliction
-image=https://magiccards.info/scans/en/mm2/84.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8145805-daa8-43c0-9f22-e6829f6ed390.jpg?1562267952
 value=2.500
 rarity=C
 type=Instant

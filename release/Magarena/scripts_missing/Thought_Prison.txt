@@ -1,5 +1,5 @@
 name=Thought Prison
-image=https://magiccards.info/scans/en/mi/261.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/409087ef-8232-489c-8b98-b601bb0a47a4.jpg?1562141833
 value=3.600
 rarity=U
 type=Artifact

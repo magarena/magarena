@@ -1,5 +1,5 @@
 name=Chandra, the Firebrand
-image=https://magiccards.info/scans/en/m13/123.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/beb039db-7367-4af1-8d85-4951f58e2732.jpg?1562559466
 value=4.211
 rarity=M
 type=Legendary,Planeswalker

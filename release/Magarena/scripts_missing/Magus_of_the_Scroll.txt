@@ -1,5 +1,5 @@
 name=Magus of the Scroll
-image=https://magiccards.info/scans/en/ts/169.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/6060cada-52bf-4ef2-8a26-8ba04dded458.jpg?1562915126
 value=3.585
 rarity=R
 type=Creature

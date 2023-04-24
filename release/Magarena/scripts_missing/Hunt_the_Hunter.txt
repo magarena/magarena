@@ -1,5 +1,5 @@
 name=Hunt the Hunter
-image=https://magiccards.info/scans/en/ths/159.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61d4899f-11a4-4a2c-a499-3a447b792f86.jpg?1562818942
 value=2.368
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Serum Visions
-image=https://magiccards.info/scans/en/mm3/49.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c75ec73-0f6a-4392-b058-ab40a07dcd3a.jpg?1645328799
 image_updated=2017-08-08
 value=4.194
 rarity=U

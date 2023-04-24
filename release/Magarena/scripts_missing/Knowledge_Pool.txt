@@ -1,5 +1,5 @@
 name=Knowledge Pool
-image=https://magiccards.info/scans/en/mbs/111.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/393454c2-b256-4a6e-9bc2-56a47cab5073.jpg?1562610637
 value=3.587
 rarity=R
 type=Artifact

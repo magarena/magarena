@@ -1,5 +1,5 @@
 name=Scab-Clan Giant
-image=https://magiccards.info/scans/en/dgm/101.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68aa496d-15c0-4da0-b3c9-4bb7e57d9a31.jpg?1673149107
 value=3.079
 rarity=U
 type=Creature

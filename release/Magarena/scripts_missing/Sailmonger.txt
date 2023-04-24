@@ -1,5 +1,5 @@
 name=Sailmonger
-image=https://magiccards.info/scans/en/mm/95.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/142479d8-8956-44a2-8c54-9dd6dc1774c0.jpg?1562379419
 value=3.308
 rarity=U
 type=Creature

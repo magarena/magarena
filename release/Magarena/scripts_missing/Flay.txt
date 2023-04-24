@@ -1,5 +1,5 @@
 name=Flay
-image=https://magiccards.info/scans/en/pr/65.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6fe155f-bfb2-49d8-83f0-ab1047a961d1.jpg?1562926170
 value=2.069
 rarity=C
 type=Sorcery

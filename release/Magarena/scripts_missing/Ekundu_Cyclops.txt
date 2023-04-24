@@ -1,5 +1,5 @@
 name=Ekundu Cyclops
-image=https://magiccards.info/scans/en/mr/171.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9047d292-8f5c-4a6b-b74e-c8dbf3e0ab24.jpg?1562720478
 value=3.244
 rarity=C
 type=Creature

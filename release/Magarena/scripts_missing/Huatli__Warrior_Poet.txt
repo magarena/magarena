@@ -1,5 +1,5 @@
 name=Huatli, Warrior Poet
-image=https://magiccards.info/scans/en/xln/224.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0cc61ba-e91a-4b30-841c-cae8dd288b40.jpg?1562561182
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

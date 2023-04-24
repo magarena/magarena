@@ -1,5 +1,5 @@
 name=Goblin Flotilla
-image=https://magiccards.info/scans/en/fe/113.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87024efe-4a74-49fe-a43a-480bed0a650a.jpg?1562920016
 value=2.712
 rarity=R
 type=Creature

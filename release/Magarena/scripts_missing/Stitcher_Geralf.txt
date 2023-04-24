@@ -1,5 +1,5 @@
 name=Stitcher Geralf
-image=https://magiccards.info/scans/en/c14/17.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7a1dc81-6bfd-4919-8d30-ec47ba7dd51d.jpg?1637629796
 value=2.500
 rarity=M
 type=Legendary,Creature

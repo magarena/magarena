@@ -1,5 +1,5 @@
 name=Cultivator Drone
-image=https://magiccards.info/scans/en/ogw/42.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbe4bb6f-bec6-49d2-99d7-e3750a0ea03f.jpg?1562932773
 image_updated=2016-02-29
 value=2.500
 rarity=C

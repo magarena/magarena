@@ -1,5 +1,5 @@
 name=Sacrifice
-image=https://magiccards.info/scans/en/rv/34.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/652bd781-1a48-42c1-9aff-f9050a9285d6.jpg?1559593033
 value=3.867
 rarity=U
 type=Instant

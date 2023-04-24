@@ -1,5 +1,5 @@
 name=Naban, Dean of Iteration
-image=https://magiccards.info/scans/en/dom/58.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88f41175-880f-491e-96c3-bf52f3c0db5d.jpg?1562739113
 value=2.500
 rarity=R
 type=Legendary,Creature

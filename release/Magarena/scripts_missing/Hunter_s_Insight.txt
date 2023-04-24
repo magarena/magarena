@@ -1,5 +1,5 @@
 name=Hunter's Insight
-image=https://magiccards.info/scans/en/m12/180.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c7549c2-7f66-4fdc-9852-6796292c6a85.jpg?1651655980
 value=3.862
 rarity=U
 type=Instant

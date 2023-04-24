@@ -1,5 +1,5 @@
 name=Veteran Explorer
-image=https://magiccards.info/scans/en/c16/174.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a6c19cc-6469-4958-a547-1d0fe97c70e8.jpg?1599707680
 image_updated=2017-08-17
 value=3.617
 rarity=U

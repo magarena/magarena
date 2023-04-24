@@ -1,5 +1,5 @@
 name=Samite Blessing
-image=https://magiccards.info/scans/en/sh/113.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b21aa2e-df36-4101-89b6-515858f2ab88.jpg?1562596391
 value=2.933
 rarity=C
 type=Enchantment

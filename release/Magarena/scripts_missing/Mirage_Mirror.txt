@@ -1,5 +1,5 @@
 name=Mirage Mirror
-image=https://magiccards.info/scans/en/hou/165.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eab5ee9-334d-4f0e-8217-c69dc8b2db8f.jpg?1651656315
 value=2.500
 rarity=R
 type=Artifact

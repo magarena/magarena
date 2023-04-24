@@ -1,5 +1,5 @@
 name=Descendants' Path
-image=https://magiccards.info/scans/en/avr/173.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ada93208-5cda-4e2d-b9a7-15345e30b831.jpg?1592709317
 value=3.854
 rarity=R
 type=Enchantment

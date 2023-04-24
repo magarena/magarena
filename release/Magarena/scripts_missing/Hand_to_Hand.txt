@@ -1,5 +1,5 @@
 name=Hand to Hand
-image=https://magiccards.info/scans/en/tp/180.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af4cb86a-db01-4d9a-99e9-bb50ce23507f.jpg?1562055928
 value=3.796
 rarity=R
 type=Enchantment

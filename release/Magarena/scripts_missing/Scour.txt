@@ -1,5 +1,5 @@
 name=Scour
-image=https://magiccards.info/scans/en/bok/20.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9cac762-7482-471f-b4de-e0cb6da5451c.jpg?1562878998
 value=4.012
 rarity=U
 type=Instant

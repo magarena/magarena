@@ -1,5 +1,5 @@
 name=Goblin War Drums
-image=https://magiccards.info/scans/en/a25/133.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d18b250-cbfb-4248-96c6-c1b36f8299b8.jpg?1562436565
 image_updated=2018-04-25
 value=4.082
 rarity=U

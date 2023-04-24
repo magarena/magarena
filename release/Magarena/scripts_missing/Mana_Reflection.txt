@@ -1,5 +1,5 @@
 name=Mana Reflection
-image=https://magiccards.info/scans/en/shm/122.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81e0d739-990f-4ba5-b456-165c033014cf.jpg?1599707370
 value=4.012
 rarity=R
 type=Enchantment

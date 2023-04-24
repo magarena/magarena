@@ -1,5 +1,5 @@
 name=Squeaking Pie Sneak
-image=https://magiccards.info/scans/en/lw/142.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7184715-3ed3-4f56-9bf3-ff431cca86be.jpg?1562364591
 value=3.241
 rarity=U
 type=Creature

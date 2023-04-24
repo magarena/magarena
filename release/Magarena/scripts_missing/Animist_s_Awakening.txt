@@ -1,5 +1,5 @@
 name=Animist's Awakening
-image=https://magiccards.info/scans/en/ori/169.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff681dc2-bc62-4934-b936-49af1da4af6c.jpg?1591320765
 image_updated=2015-11-05
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Kindred Discovery
-image=https://magiccards.info/scans/en/c17/11.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a5462e9-c602-4431-a845-f7c6cafbc3cf.jpg?1674135640
 image_updated=2017-10-03
 value=2.500
 rarity=R

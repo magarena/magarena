@@ -1,5 +1,5 @@
 name=Waves of Aggression
-image=https://magiccards.info/scans/en/eve/148.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83d52ba7-ffb3-4c24-85d8-8635ef1880d9.jpg?1562922793
 value=3.833
 rarity=R
 type=Sorcery

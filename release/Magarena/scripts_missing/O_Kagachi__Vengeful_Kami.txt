@@ -1,5 +1,5 @@
 name=O-Kagachi, Vengeful Kami
-image=https://magiccards.info/scans/en/c17/45.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07a42ae6-c2ca-4028-a364-70c19ce125b3.jpg?1673305628
 image_updated=2017-10-03
 value=2.500
 rarity=M

@@ -1,5 +1,5 @@
 name=Wild Ricochet
-image=https://magiccards.info/scans/en/cmd/139.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d3dddfa-9579-42d7-867b-7e37b83b3eeb.jpg?1608912335
 value=3.023
 rarity=R
 type=Instant

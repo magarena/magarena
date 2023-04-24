@@ -1,5 +1,5 @@
 name=Gorilla Berserkers
-image=https://magiccards.info/scans/en/ai/75.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/344b4613-17f8-4c8b-b5bc-f773a8f8007a.jpg?1562768241
 value=3.760
 rarity=C
 type=Creature

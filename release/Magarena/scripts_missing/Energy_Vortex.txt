@@ -1,5 +1,5 @@
 name=Energy Vortex
-image=https://magiccards.info/scans/en/mr/64.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87e060d7-42ed-49ab-bc5c-2f3210cbd0d1.jpg?1562720464
 value=3.571
 rarity=R
 type=Enchantment

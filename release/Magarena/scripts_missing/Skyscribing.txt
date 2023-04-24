@@ -1,5 +1,5 @@
 name=Skyscribing
-image=https://magiccards.info/scans/en/cmd/61.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6ef8e44-3b40-46c2-973e-8f857126a13e.jpg?1562933607
 value=3.679
 rarity=U
 type=Sorcery

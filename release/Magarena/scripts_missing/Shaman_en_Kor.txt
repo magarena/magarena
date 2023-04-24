@@ -1,5 +1,5 @@
 name=Shaman en-Kor
-image=https://magiccards.info/scans/en/sh/115.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02e48948-f4bb-443f-aa35-d59328283cfc.jpg?1562428161
 value=2.500
 rarity=R
 type=Creature

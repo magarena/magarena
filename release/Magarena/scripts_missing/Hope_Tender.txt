@@ -1,5 +1,5 @@
 name=Hope Tender
-image=https://magiccards.info/scans/en/hou/119.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9ffb676d-54b7-4d30-9c84-ff9b48030705.jpg?1562808877
 value=2.500
 rarity=U
 type=Creature

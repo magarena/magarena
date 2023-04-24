@@ -1,5 +1,5 @@
 name=Mungha Wurm
-image=https://magiccards.info/scans/en/pr/119.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6addc915-2997-4b81-a026-97d4421cf17d.jpg?1562914832
 value=2.639
 rarity=R
 type=Creature

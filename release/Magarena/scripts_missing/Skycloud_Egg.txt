@@ -1,5 +1,5 @@
 name=Skycloud Egg
-image=https://magiccards.info/scans/en/od/309.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e588cc41-4b86-4e93-94e8-dd765b27ab63.jpg?1562937893
 value=2.654
 rarity=U
 type=Artifact

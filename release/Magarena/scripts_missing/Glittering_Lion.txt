@@ -1,5 +1,5 @@
 name=Glittering Lion
-image=https://magiccards.info/scans/en/pr/10.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab4be296-33a6-46b1-9748-5b0d335f40ee.jpg?1562927003
 value=3.468
 rarity=U
 type=Creature

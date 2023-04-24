@@ -1,5 +1,5 @@
 name=Pili-Pala
-image=https://magiccards.info/scans/en/shm/258.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/4892c152-1f4a-4616-8e7f-0ca4911e621a.jpg?1562829688
 value=3.615
 rarity=C
 type=Artifact,Creature

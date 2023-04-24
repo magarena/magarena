@@ -1,5 +1,5 @@
 name=Orcish Vandal
-image=https://magiccards.info/scans/en/dom/137.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6ac010e-bcd9-4e40-91f5-3f6058dca104.jpg?1599706562
 value=2.500
 rarity=U
 type=Creature

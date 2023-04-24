@@ -1,5 +1,5 @@
 name=Lotus Bloom
-image=https://magiccards.info/scans/en/mma/208.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db89ae4d-1cc2-41d8-a4de-a54b958c4429.jpg?1619398986
 value=4.096
 rarity=R
 type=Artifact

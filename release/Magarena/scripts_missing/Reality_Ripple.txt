@@ -1,5 +1,5 @@
 name=Reality Ripple
-image=https://magiccards.info/scans/en/mr/87.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5b94eed-2a45-4a6b-a06b-a2021b174bc5.jpg?1562721456
 value=3.303
 rarity=C
 type=Instant

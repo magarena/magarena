@@ -1,5 +1,5 @@
 name=Garruk's Horde
-image=https://magiccards.info/scans/en/m12/176.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b501b60-e541-430e-b7e2-b51c287093db.jpg?1562199915
 value=3.598
 rarity=R
 type=Creature

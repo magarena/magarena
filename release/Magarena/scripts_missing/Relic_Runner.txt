@@ -1,5 +1,5 @@
 name=Relic Runner
-image=https://magiccards.info/scans/en/dom/62.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbced19d-7035-4284-93b3-cf2d4bcf9734.jpg?1598304179
 value=2.500
 rarity=C
 type=Creature

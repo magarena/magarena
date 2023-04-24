@@ -1,5 +1,5 @@
 name=Conjured Currency
-image=https://magiccards.info/scans/en/rtr/33.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7c2ea6e-7d29-4526-b135-9bbb1eed9d4a.jpg?1562791158
 value=2.768
 rarity=R
 type=Enchantment

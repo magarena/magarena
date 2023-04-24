@@ -1,5 +1,5 @@
 name=Winter's Chill
-image=https://magiccards.info/scans/en/ia/107.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a779aca7-ff2c-48d8-9484-6ad04b2c6bcb.jpg?1562926273
 value=3.342
 rarity=R
 type=Instant

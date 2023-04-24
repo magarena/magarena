@@ -1,5 +1,5 @@
 name=In Bolas's Clutches
-image=https://magiccards.info/scans/en/dom/54.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d72bf6b4-ac70-4be0-86de-cb3c47244dbc.jpg?1562743727
 value=2.500
 rarity=U
 type=Legendary,Enchantment

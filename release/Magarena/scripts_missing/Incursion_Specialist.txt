@@ -1,5 +1,5 @@
 name=Incursion Specialist
-image=https://magiccards.info/scans/en/gtc/38.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/290e56e0-e699-413a-9d6a-e740bf460b35.jpg?1561820477
 value=2.576
 rarity=U
 type=Creature

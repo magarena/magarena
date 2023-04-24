@@ -1,5 +1,5 @@
 name=Dispossess
-image=https://magiccards.info/scans/en/akh/86.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4eb88be3-f790-45d7-a6d1-c78f6ba00208.jpg?1543675241
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Rolling Earthquake
-image=https://magiccards.info/scans/en/p3k/122.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69ab37d4-6ba3-404a-8162-f207874738ea.jpg?1599706680
 value=2.500
 rarity=R
 type=Sorcery

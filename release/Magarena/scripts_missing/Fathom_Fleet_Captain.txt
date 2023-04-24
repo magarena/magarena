@@ -1,5 +1,5 @@
 name=Fathom Fleet Captain
-image=https://magiccards.info/scans/en/xln/106.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36cd7467-ff8c-4a92-ae55-6894213d6c0b.jpg?1562553381
 value=2.500
 rarity=R
 type=Creature

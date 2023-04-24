@@ -1,5 +1,5 @@
 name=Global Ruin
-image=https://magiccards.info/scans/en/in/18.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/336474b4-2cf5-44c0-b72c-f75f1a7ed928.jpg?1562905357
 value=4.208
 rarity=R
 type=Sorcery

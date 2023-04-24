@@ -1,5 +1,5 @@
 name=Brain in a Jar
-image=https://magiccards.info/scans/en/soi/252.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88ecfcbe-e8db-4f08-aa8b-5b7b3e6c6ce7.jpg?1576385394
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Shivan Fire
-image=https://magiccards.info/scans/en/dom/142.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21b9d339-99ed-4923-8f56-be37f29a0bfa.jpg?1562732568
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Aurelia's Fury
-image=https://magiccards.info/scans/en/gtc/144.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a3465b6-ee7f-4553-bbf1-85fae9734b67.jpg?1561817922
 value=4.041
 rarity=M
 type=Instant

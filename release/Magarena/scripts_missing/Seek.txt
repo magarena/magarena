@@ -1,5 +1,5 @@
 name=Seek
-image=https://magiccards.info/scans/en/di/151b.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/ac347ec8-4537-4cdf-aeff-44da1f7be01b.jpg?1593273927
 value=4.315
 rarity=R
 type=Instant

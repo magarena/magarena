@@ -1,5 +1,5 @@
 name=Horn of Plenty
-image=https://magiccards.info/scans/en/mm/298.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5e04462-1d10-47df-b456-211dd0a87891.jpg?1562383049
 value=2.518
 rarity=R
 type=Artifact

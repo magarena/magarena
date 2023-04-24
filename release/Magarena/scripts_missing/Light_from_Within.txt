@@ -1,5 +1,5 @@
 name=Light from Within
-image=https://magiccards.info/scans/en/eve/10.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6afda091-ed14-4bc5-8896-bdb7c95a499e.jpg?1562917365
 value=4.061
 rarity=R
 type=Enchantment

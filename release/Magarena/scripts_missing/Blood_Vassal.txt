@@ -1,5 +1,5 @@
 name=Blood Vassal
-image=https://magiccards.info/scans/en/us/118.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e692dea-750b-40b2-9440-8b570e67c23e.jpg?1562921630
 value=3.817
 rarity=C
 type=Creature

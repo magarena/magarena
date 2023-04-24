@@ -1,5 +1,5 @@
 name=Alpha Authority
-image=https://magiccards.info/scans/en/gtc/114.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbc42ca6-db90-41d0-8a4b-3217fb2c114c.jpg?1561853464
 value=3.058
 rarity=U
 type=Enchantment

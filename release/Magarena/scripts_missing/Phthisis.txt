@@ -1,5 +1,5 @@
 name=Phthisis
-image=https://magiccards.info/scans/en/mma/93.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98b84356-fa97-4f61-bd84-e8efd7f46e38.jpg?1631586724
 value=3.711
 rarity=U
 type=Sorcery

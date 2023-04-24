@@ -1,5 +1,5 @@
 name=Necropotence
-image=https://magiccards.info/scans/en/ima/98.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c89c6895-b0f8-444a-9c89-c6b4fd027b3e.jpg?1562853736
 image_updated=2017-04-12
 value=4.833
 rarity=M

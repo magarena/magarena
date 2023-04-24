@@ -1,5 +1,5 @@
 name=Exclusion Ritual
-image=https://magiccards.info/scans/en/nph/10.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e3b826a-7349-45ae-89bf-675fea7ce8e3.jpg?1562880207
 value=2.978
 rarity=U
 type=Enchantment

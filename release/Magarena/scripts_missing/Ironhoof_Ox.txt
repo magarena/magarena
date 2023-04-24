@@ -1,5 +1,5 @@
 name=Ironhoof Ox
-image=https://magiccards.info/scans/en/po2/70.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8a2c5ce-ec87-46b9-b474-ecf133ccd092.jpg?1562942399
 value=3.286
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Doublecast
-image=https://magiccards.info/scans/en/m19/137.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55a3153e-4259-4e03-bf79-8979d3c0db36.jpg?1601077480
 value=2.500
 rarity=U
 type=Sorcery

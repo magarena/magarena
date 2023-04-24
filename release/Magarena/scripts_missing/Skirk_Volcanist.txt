@@ -1,5 +1,5 @@
 name=Skirk Volcanist
-image=https://magiccards.info/scans/en/sc/104.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cdfb7e3-e077-400a-868d-3f3811e7a35c.jpg?1562532053
 value=2.241
 rarity=U
 type=Creature

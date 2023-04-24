@@ -1,5 +1,5 @@
 name=Gaea's Protector
-image=https://magiccards.info/scans/en/dom/162.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bc5ce71-282c-43f9-b12a-edd8f4ab6006.jpg?1562738294
 value=2.500
 rarity=C
 type=Creature

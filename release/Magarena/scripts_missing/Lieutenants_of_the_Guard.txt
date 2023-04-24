@@ -1,5 +1,5 @@
 name=Lieutenants of the Guard
-image=https://magiccards.info/scans/en/cn2/16.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71bf4f19-802d-466a-85f1-2062ae3656a1.jpg?1576381577
 image_updated=2016-09-05
 value=2.500
 rarity=C

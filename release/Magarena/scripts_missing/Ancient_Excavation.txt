@@ -1,5 +1,5 @@
 name=Ancient Excavation
-image=https://magiccards.info/scans/en/c16/27.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/442f0af0-b745-49f2-9e95-2688403fc995.jpg?1562273826
 image_updated=2016-12-28
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Superior Numbers
-image=https://magiccards.info/scans/en/mr/142.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43d90914-ddfc-49c2-8e58-fdc3693040f2.jpg?1562718801
 value=3.054
 rarity=U
 type=Sorcery

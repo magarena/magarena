@@ -1,5 +1,5 @@
 name=Quash
-image=https://magiccards.info/scans/en/bok/47.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48ca8c31-a9ea-4388-b257-951c1c68b86d.jpg?1562876834
 value=4.229
 rarity=U
 type=Instant

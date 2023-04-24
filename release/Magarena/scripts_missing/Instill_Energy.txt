@@ -1,5 +1,5 @@
 name=Instill Energy
-image=https://magiccards.info/scans/en/5e/166.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7d5d27f-759f-4e99-8ac4-e4b40865d557.jpg?1562934789
 value=4.395
 rarity=U
 type=Enchantment

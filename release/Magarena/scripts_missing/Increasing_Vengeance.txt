@@ -1,5 +1,5 @@
 name=Increasing Vengeance
-image=https://magiccards.info/scans/en/dka/95.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a362d78-76a1-4dbc-80cc-0360e98ba280.jpg?1568004432
 value=3.862
 rarity=R
 type=Instant

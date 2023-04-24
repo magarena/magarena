@@ -1,5 +1,5 @@
 name=Arcane Laboratory
-image=https://magiccards.info/scans/en/7e/60.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9e3bcd7-60f8-472a-ada0-c3147cf06588.jpg?1562251789
 value=4.438
 rarity=U
 type=Enchantment

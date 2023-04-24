@@ -1,5 +1,5 @@
 name=Metamorphose
-image=https://magiccards.info/scans/en/sc/40.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0f0c20c-184e-4d27-ae8b-933abb6fee0c.jpg?1562533013
 value=1.814
 rarity=U
 type=Instant

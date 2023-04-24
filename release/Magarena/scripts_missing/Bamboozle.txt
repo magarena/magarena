@@ -1,5 +1,5 @@
 name=Bamboozle
-image=https://magiccards.info/scans/en/od/68.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44012bb8-17b7-4b50-a796-662ef09bfc29.jpg?1562907424
 value=3.109
 rarity=U
 type=Sorcery

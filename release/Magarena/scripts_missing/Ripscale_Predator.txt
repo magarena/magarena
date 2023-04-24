@@ -1,5 +1,5 @@
 name=Ripscale Predator
-image=https://magiccards.info/scans/en/gtc/103.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00924a16-fb85-41a4-bd7a-88f51f728333.jpg?1608910367
 value=3.080
 rarity=U
 type=Creature

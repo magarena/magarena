@@ -1,5 +1,5 @@
 name=Ironclaw Curse
-image=https://magiccards.info/scans/en/5e/244.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6ed35d03-80fd-421d-a8be-6708a5570a85.jpg?1562591817
 value=2.196
 rarity=R
 type=Enchantment

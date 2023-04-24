@@ -1,5 +1,5 @@
 name=Treacherous Pit-Dweller
-image=https://magiccards.info/scans/en/avr/121.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/eec7dfd7-d7b2-44fa-b351-022a19fe81b8.jpg?1592708980
 value=3.110
 rarity=R
 type=Creature

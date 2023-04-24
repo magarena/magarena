@@ -1,5 +1,5 @@
 name=Darksteel Garrison
-image=https://magiccards.info/scans/en/fut/167.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e77eaaa0-40f9-40e4-b0ba-5a8addd764d3.jpg?1562941435
 value=3.690
 rarity=R
 type=Artifact

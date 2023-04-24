@@ -1,5 +1,5 @@
 name=Birchlore Rangers
-image=https://magiccards.info/scans/en/on/248.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8ce3a3a1-3569-4909-a604-f78d4888781e.jpg?1626726613
 value=3.658
 rarity=C
 type=Creature

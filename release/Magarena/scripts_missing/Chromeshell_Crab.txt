@@ -1,5 +1,5 @@
 name=Chromeshell Crab
-image=https://magiccards.info/scans/en/cmd/41.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c91cf95f-5007-409c-b891-00e10a3477e0.jpg?1568003959
 value=3.765
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Rune of Protection: White
-image=https://magiccards.info/scans/en/us/41.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/6408417e-aca3-43f3-9eea-fed5a402d8ab.jpg?1562915909
 value=3.521
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Prophetic Prism
-image=https://magiccards.info/scans/en/a25/229.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/3056ac38-7630-4301-88bb-a012a5b186ed.jpg?1675957247
 image_updated=2018-04-25
 value=3.865
 rarity=C

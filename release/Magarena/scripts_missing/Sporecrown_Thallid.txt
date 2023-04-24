@@ -1,5 +1,5 @@
 name=Sporecrown Thallid
-image=https://magiccards.info/scans/en/dom/181.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/658b93b5-e16a-4a1a-bd26-74a9f25caffe.jpg?1562736855
 value=2.500
 rarity=U
 type=Creature

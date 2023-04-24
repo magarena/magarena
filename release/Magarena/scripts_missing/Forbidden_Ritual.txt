@@ -1,5 +1,5 @@
 name=Forbidden Ritual
-image=https://magiccards.info/scans/en/vi/10.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5327e6d-db4e-4b44-a00e-b764e80b8946.jpg?1562279116
 value=3.397
 rarity=R
 type=Sorcery

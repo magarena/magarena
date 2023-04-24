@@ -1,5 +1,5 @@
 name=Cankerous Thirst
-image=https://magiccards.info/scans/en/eve/116.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45840408-33e7-43fa-96ab-d3bd53e3fd6b.jpg?1568910755
 value=3.100
 rarity=U
 type=Instant

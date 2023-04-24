@@ -1,5 +1,5 @@
 name=Silent Arbiter
-image=https://magiccards.info/scans/en/cns/204.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/986a7ea8-a015-4dd8-9938-36b38ccd3980.jpg?1591321705
 value=4.083
 rarity=R
 type=Artifact,Creature

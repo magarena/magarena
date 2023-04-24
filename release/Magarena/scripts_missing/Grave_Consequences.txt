@@ -1,5 +1,5 @@
 name=Grave Consequences
-image=https://magiccards.info/scans/en/ju/67.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9ad5f9f2-282a-4ee0-a259-cc24404ddf6f.jpg?1562631125
 value=2.946
 rarity=U
 type=Instant

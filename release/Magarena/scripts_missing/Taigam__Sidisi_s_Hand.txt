@@ -1,5 +1,5 @@
 name=Taigam, Sidisi's Hand
-image=https://magiccards.info/scans/en/c17/47.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bb846f1-9857-418d-abc9-03dfd3c10d32.jpg?1562609444
 image_updated=2017-10-03
 value=2.500
 rarity=R

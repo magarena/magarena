@@ -1,5 +1,5 @@
 name=Unblinking Bleb
-image=https://magiccards.info/scans/en/fut/45.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06111178-685d-4bda-8325-1db142d5801c.jpg?1562896173
 value=3.038
 rarity=C
 type=Creature

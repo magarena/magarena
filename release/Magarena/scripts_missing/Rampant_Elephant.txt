@@ -1,5 +1,5 @@
 name=Rampant Elephant
-image=https://magiccards.info/scans/en/in/28.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/752642d2-3dad-4f58-b154-beb5982141dc.jpg?1562918488
 value=2.560
 rarity=C
 type=Creature

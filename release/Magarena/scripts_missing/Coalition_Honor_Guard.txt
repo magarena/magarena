@@ -1,5 +1,5 @@
 name=Coalition Honor Guard
-image=https://magiccards.info/scans/en/ema/6.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c7c2b5c-634a-4d83-81bc-c6128e3ac339.jpg?1580013636
 value=4.028
 rarity=C
 type=Creature

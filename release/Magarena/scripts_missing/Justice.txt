@@ -1,5 +1,5 @@
 name=Justice
-image=https://magiccards.info/scans/en/5e/317.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb11e16f-edf5-4e0e-862b-b055fd800682.jpg?1562593766
 value=4.027
 rarity=U
 type=Enchantment

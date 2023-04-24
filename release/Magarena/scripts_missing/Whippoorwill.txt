@@ -1,5 +1,5 @@
 name=Whippoorwill
-image=https://magiccards.info/scans/en/dk/54.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e56146bf-5db0-4bef-83bb-efa5ebec6684.jpg?1562949642
 value=3.519
 rarity=U
 type=Creature

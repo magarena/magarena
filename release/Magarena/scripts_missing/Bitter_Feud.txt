@@ -1,5 +1,5 @@
 name=Bitter Feud
-image=https://magiccards.info/scans/en/c14/32.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26387ab4-74da-49d7-965e-352da48d6a90.jpg?1562272922
 value=2.500
 rarity=R
 type=Enchantment

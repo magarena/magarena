@@ -1,5 +1,5 @@
 name=Norwood Riders
-image=https://magiccards.info/scans/en/po2/79.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/904ba8db-853e-4f51-acfe-83e472524380.jpg?1562929018
 value=3.750
 rarity=C
 type=Creature

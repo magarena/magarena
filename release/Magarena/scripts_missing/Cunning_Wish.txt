@@ -1,5 +1,5 @@
 name=Cunning Wish
-image=https://magiccards.info/scans/en/ju/37.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca097675-5e82-493d-beab-9fc11efd7492.jpg?1562631972
 value=4.529
 rarity=R
 type=Instant

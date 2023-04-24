@@ -1,5 +1,5 @@
 name=Boulderfall
-image=https://magiccards.info/scans/en/ths/115.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66470bac-cce0-4e79-82f9-9fb77aa950eb.jpg?1562819218
 value=1.759
 rarity=C
 type=Instant

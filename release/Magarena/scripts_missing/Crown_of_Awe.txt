@@ -1,5 +1,5 @@
 name=Crown of Awe
-image=https://magiccards.info/scans/en/on/16.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aeaea4bc-dcea-4340-a039-ebc97b944673.jpg?1562936272
 value=3.026
 rarity=C
 type=Enchantment

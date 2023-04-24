@@ -1,5 +1,5 @@
 name=Ashes of the Abhorrent
-image=https://magiccards.info/scans/en/xln/2.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e8eb264-dadb-440c-af85-273e755f1db6.jpg?1562555024
 value=2.500
 rarity=R
 type=Enchantment

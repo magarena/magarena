@@ -1,5 +1,5 @@
 name=Impetuous Devils
-image=https://magiccards.info/scans/en/emn/132.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1ba7acc0-6ef0-4c34-be23-118e1872271f.jpg?1576384607
 image_updated=2016-09-05
 value=2.500
 rarity=R

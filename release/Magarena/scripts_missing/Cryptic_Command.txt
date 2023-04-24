@@ -1,5 +1,5 @@
 name=Cryptic Command
-image=https://magiccards.info/scans/en/ima/48.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30f6fca9-003b-4f6b-9d6e-1e88adda4155.jpg?1562847413
 image_updated=2017-04-12
 value=2.500
 rarity=R

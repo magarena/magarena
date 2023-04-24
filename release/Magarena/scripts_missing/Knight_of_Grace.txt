@@ -1,5 +1,5 @@
 name=Knight of Grace
-image=https://magiccards.info/scans/en/dom/23.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bbbddc0-f8b3-4255-bd82-d50f829ca009.jpg?1584675730
 value=2.500
 rarity=U
 type=Creature

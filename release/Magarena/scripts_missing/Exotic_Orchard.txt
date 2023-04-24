@@ -1,5 +1,5 @@
 name=Exotic Orchard
-image=https://magiccards.info/scans/en/c16/295.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/2448d4fb-f327-4a68-b5ce-806f63425f0a.jpg?1682210400
 image_updated=2017-08-17
 value=2.962
 rarity=R

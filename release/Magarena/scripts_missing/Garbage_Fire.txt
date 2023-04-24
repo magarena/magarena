@@ -1,5 +1,5 @@
 name=Garbage Fire
-image=https://magiccards.info/scans/en/cn2/52.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d76b91e-e79c-4c7e-ae3c-2b27b7e871ef.jpg?1576381915
 image_updated=2016-09-05
 value=2.500
 rarity=C

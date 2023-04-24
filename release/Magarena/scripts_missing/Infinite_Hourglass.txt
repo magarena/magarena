@@ -1,5 +1,5 @@
 name=Infinite Hourglass
-image=https://magiccards.info/scans/en/5e/378.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbafc838-7458-4542-86f3-594326ec0691.jpg?1562595427
 value=3.040
 rarity=R
 type=Artifact

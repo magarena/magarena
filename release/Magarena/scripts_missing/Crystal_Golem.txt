@@ -1,5 +1,5 @@
 name=Crystal Golem
-image=https://magiccards.info/scans/en/mr/263.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b1d3280-f3e1-42ea-93e1-dbab7336fb73.jpg?1587912768
 value=2.985
 rarity=U
 type=Artifact,Creature

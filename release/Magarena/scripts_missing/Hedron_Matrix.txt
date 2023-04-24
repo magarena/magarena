@@ -1,5 +1,5 @@
 name=Hedron Matrix
-image=https://magiccards.info/scans/en/cn2/209.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54fef322-b214-40b4-bed5-bc867bcf280b.jpg?1576383247
 image_updated=2017-08-29
 value=3.115
 rarity=R

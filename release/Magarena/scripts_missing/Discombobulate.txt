@@ -1,5 +1,5 @@
 name=Discombobulate
-image=https://magiccards.info/scans/en/10e/81.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bee0d51-f4a1-4a3a-9ccd-540c3afe62d0.jpg?1562551357
 value=3.474
 rarity=U
 type=Instant

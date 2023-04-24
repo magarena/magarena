@@ -1,5 +1,5 @@
 name=Karmic Justice
-image=https://magiccards.info/scans/en/od/26.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea141e39-8124-4d72-a154-eb76e71be1dc.jpg?1562711027
 image_updated=2016-02-29
 value=3.962
 rarity=R

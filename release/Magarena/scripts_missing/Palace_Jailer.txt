@@ -1,5 +1,5 @@
 name=Palace Jailer
-image=https://magiccards.info/scans/en/cn2/18.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78cef262-c753-4658-b3ec-fec8db47f944.jpg?1576381600
 image_updated=2016-09-05
 value=2.500
 rarity=U

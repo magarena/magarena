@@ -1,5 +1,5 @@
 name=Greener Pastures
-image=https://magiccards.info/scans/en/us/258.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55c3222e-ac18-4f57-9c9e-50deb0a69db3.jpg?1562912901
 value=3.683
 rarity=R
 type=Enchantment

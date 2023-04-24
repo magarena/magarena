@@ -1,5 +1,5 @@
 name=Nightmare Incursion
-image=https://magiccards.info/scans/en/eve/40.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cccd244-9fd4-4f58-85da-af6d235ef7bb.jpg?1562921295
 value=3.432
 rarity=R
 type=Sorcery

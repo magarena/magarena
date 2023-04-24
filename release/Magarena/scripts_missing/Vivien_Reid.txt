@@ -1,5 +1,5 @@
 name=Vivien Reid
-image=https://magiccards.info/scans/en/m19/208.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/681fbd66-b622-4f20-a860-f101aff21109.jpg?1562302655
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

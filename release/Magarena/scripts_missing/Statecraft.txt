@@ -1,5 +1,5 @@
 name=Statecraft
-image=https://magiccards.info/scans/en/mm/106.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76dcd19e-8daf-4d53-946b-c07d5eca3cc9.jpg?1587857505
 value=3.710
 rarity=R
 type=Enchantment

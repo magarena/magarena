@@ -1,5 +1,5 @@
 name=Watchers of the Dead
-image=https://magiccards.info/scans/en/akh/238.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30efc831-3673-4bc1-8a25-150c0349253a.jpg?1543676343
 value=2.500
 rarity=U
 type=Artifact,Creature

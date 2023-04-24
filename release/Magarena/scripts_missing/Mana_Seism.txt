@@ -1,5 +1,5 @@
 name=Mana Seism
-image=https://magiccards.info/scans/en/chk/179.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bde4cba-57b2-485f-9724-0f79d156d664.jpg?1562757963
 value=2.182
 rarity=U
 type=Sorcery

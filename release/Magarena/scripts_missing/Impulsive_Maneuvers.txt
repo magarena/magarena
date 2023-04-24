@@ -1,5 +1,5 @@
 name=Impulsive Maneuvers
-image=https://magiccards.info/scans/en/od/197.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a43acc1c-82e9-4234-aac5-bbc8e3ee42c0.jpg?1645329064
 value=2.371
 rarity=R
 type=Enchantment

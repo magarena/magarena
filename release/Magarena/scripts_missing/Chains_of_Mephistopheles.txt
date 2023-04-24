@@ -1,5 +1,5 @@
 name=Chains of Mephistopheles
-image=https://magiccards.info/scans/en/lg/5.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2edb3a6-8506-4885-b332-eca381940ce8.jpg?1612316191
 value=4.534
 rarity=R
 type=Enchantment

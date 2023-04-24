@@ -1,5 +1,5 @@
 name=Shipbreaker Kraken
-image=https://magiccards.info/scans/en/ths/63.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e558f0a-f921-4ecf-b1c9-2c93aa2d3fd9.jpg?1608912169
 value=3.583
 rarity=R
 type=Creature

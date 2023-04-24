@@ -1,5 +1,5 @@
 name=Mischief and Mayhem
-image=https://magiccards.info/scans/en/bng/126.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9daa44b4-5c30-41d8-b4d6-6219c5729a5f.jpg?1593092504
 value=2.960
 rarity=U
 type=Sorcery

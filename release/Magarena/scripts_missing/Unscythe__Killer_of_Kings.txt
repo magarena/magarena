@@ -1,5 +1,5 @@
 name=Unscythe, Killer of Kings
-image=https://magiccards.info/scans/en/arb/114.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc647ef4-1f17-4b8b-a312-60d548347d12.jpg?1562644243
 value=3.637
 rarity=R
 type=Legendary,Artifact

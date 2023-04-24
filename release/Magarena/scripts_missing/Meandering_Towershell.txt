@@ -1,5 +1,5 @@
 name=Meandering Towershell
-image=https://magiccards.info/scans/en/ktk/141.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a945b43d-39bc-4ce4-be03-0109e1a681b1.jpg?1562791660
 value=3.000
 rarity=R
 type=Creature

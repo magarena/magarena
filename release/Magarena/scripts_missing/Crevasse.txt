@@ -1,5 +1,5 @@
 name=Crevasse
-image=https://magiccards.info/scans/en/lg/138.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a432d6ae-a17f-484b-ad55-4b4b6674ba8d.jpg?1562860616
 value=1.500
 rarity=U
 type=Enchantment

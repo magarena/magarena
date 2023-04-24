@@ -1,5 +1,5 @@
 name=Dream Fighter
-image=https://magiccards.info/scans/en/mr/63.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aec06bc9-553c-4e01-8b43-a4eeaa511b4d.jpg?1562720974
 value=3.842
 rarity=C
 type=Creature

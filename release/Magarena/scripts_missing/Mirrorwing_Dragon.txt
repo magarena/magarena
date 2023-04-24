@@ -1,5 +1,5 @@
 name=Mirrorwing Dragon
-image=https://magiccards.info/scans/en/emn/136.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b7e33a8-765b-4909-a5c6-5fe8f8774a51.jpg?1576384631
 image_updated=2016-09-05
 value=2.500
 rarity=M

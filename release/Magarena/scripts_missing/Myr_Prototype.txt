@@ -1,5 +1,5 @@
 name=Myr Prototype
-image=https://magiccards.info/scans/en/mi/214.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d929b28-c184-4e77-a40b-ee43b8a37d79.jpg?1562146972
 value=1.659
 rarity=U
 type=Artifact,Creature

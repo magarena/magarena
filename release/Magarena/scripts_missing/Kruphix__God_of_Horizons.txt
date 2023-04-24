@@ -1,5 +1,5 @@
 name=Kruphix, God of Horizons
-image=https://magiccards.info/scans/en/jou/152.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27427233-da58-45af-ade8-e0727929efaa.jpg?1593096427
 value=3.678
 rarity=M
 type=Legendary,Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Feeling of Dread
-image=https://magiccards.info/scans/en/isd/14.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/846a2f9e-ad4f-4666-b152-fdeab7559d86.jpg?1562833275
 value=3.703
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Jester's Scepter
-image=https://magiccards.info/scans/en/cs/137.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/7118c2e0-04d6-4a71-8ffd-b9365b154050.jpg?1593275588
 value=3.922
 rarity=R
 type=Artifact

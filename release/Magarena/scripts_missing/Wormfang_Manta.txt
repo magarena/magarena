@@ -1,5 +1,5 @@
 name=Wormfang Manta
-image=https://magiccards.info/scans/en/ju/58.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc9bf91d-6f7c-4fb5-bbc6-c012212e62e9.jpg?1562631728
 value=2.773
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Avacyn, Guardian Angel
-image=https://magiccards.info/scans/en/m15/3.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a79662d5-3b6f-4c5a-8540-63c201027b66.jpg?1562792303
 value=3.833
 rarity=R
 type=Legendary,Creature

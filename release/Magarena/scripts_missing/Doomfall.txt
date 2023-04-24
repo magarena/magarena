@@ -1,5 +1,5 @@
 name=Doomfall
-image=https://magiccards.info/scans/en/hou/62.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17db6ef5-1aa9-4b8c-b0b7-d6668a2347a1.jpg?1562790796
 value=2.500
 rarity=U
 type=Sorcery

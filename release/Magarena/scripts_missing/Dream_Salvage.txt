@@ -1,5 +1,5 @@
 name=Dream Salvage
-image=https://magiccards.info/scans/en/shm/160.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cac999cc-c5c0-4309-a255-3eb7399af340.jpg?1562835964
 value=3.683
 rarity=U
 type=Instant

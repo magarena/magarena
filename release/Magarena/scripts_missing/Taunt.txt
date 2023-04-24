@@ -1,5 +1,5 @@
 name=Taunt
-image=https://magiccards.info/scans/en/po/72.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4d87322-aba4-4187-9655-1da1f18615f8.jpg?1562448337
 value=3.405
 rarity=R
 type=Sorcery

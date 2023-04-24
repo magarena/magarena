@@ -1,5 +1,5 @@
 name=Writ of Passage
-image=https://magiccards.info/scans/en/di/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abd58eee-1108-49be-9ae7-da179fb081c2.jpg?1593272815
 value=2.929
 rarity=C
 type=Enchantment

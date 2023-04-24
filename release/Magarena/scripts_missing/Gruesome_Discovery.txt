@@ -1,5 +1,5 @@
 name=Gruesome Discovery
-image=https://magiccards.info/scans/en/dka/66.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0a9d733-24b6-49ed-a15a-c00285eea4b2.jpg?1562944766
 value=2.817
 rarity=C
 type=Sorcery

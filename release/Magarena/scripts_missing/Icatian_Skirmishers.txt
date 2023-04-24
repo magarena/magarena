@@ -1,5 +1,5 @@
 name=Icatian Skirmishers
-image=https://magiccards.info/scans/en/fe/161.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15f6d115-c02d-45a3-aa6d-402964df47dd.jpg?1562899190
 value=2.614
 rarity=R
 type=Creature

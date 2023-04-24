@@ -1,5 +1,5 @@
 name=Guild Feud
-image=https://magiccards.info/scans/en/rtr/97.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e622878-0aea-4401-873e-d34bf05ee98d.jpg?1562789760
 value=2.846
 rarity=R
 type=Enchantment

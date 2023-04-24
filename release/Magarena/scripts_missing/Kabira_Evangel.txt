@@ -1,5 +1,5 @@
 name=Kabira Evangel
-image=https://magiccards.info/scans/en/zen/15.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57f05d96-42d5-4e1d-a9c6-229a3f42dda9.jpg?1562612427
 value=3.861
 rarity=R
 type=Creature

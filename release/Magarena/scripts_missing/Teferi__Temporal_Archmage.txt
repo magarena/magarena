@@ -1,5 +1,5 @@
 name=Teferi, Temporal Archmage
-image=https://magiccards.info/scans/en/c14/19.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80eec0bd-9eb4-4360-b97b-9c7985a63343.jpg?1643645437
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

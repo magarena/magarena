@@ -1,5 +1,5 @@
 name=Matsu-Tribe Decoy
-image=https://magiccards.info/scans/en/chk/227.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14bf9bec-9a5d-48a6-941b-95e1633b9484.jpg?1562757912
 value=1.600
 rarity=C
 type=Creature

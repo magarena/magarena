@@ -1,5 +1,5 @@
 name=Spoils of War
-image=https://magiccards.info/scans/en/ia/52.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b38af8bd-d927-46d0-a1b1-fb437ea9ea66.jpg?1562928440
 value=2.946
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Enraged Giant
-image=https://magiccards.info/scans/en/aer/80.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40dc3b59-baae-4bf0-b5ce-fa9a915af066.jpg?1576381784
 value=2.500
 rarity=U
 type=Creature

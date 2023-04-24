@@ -1,5 +1,5 @@
 name=Curator's Ward
-image=https://magiccards.info/scans/en/dom/49.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10cc417f-0ea7-47a8-b7d0-aa8d20168faf.jpg?1562731511
 value=2.500
 rarity=U
 type=Enchantment

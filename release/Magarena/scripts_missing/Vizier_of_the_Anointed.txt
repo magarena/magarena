@@ -1,5 +1,5 @@
 name=Vizier of the Anointed
-image=https://magiccards.info/scans/en/hou/55.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68ef426c-b396-4767-b360-435f67207022.jpg?1562802148
 value=2.500
 rarity=U
 type=Creature

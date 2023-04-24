@@ -1,5 +1,5 @@
 name=Painbringer
-image=https://magiccards.info/scans/en/od/155.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f993815-af2f-4fa0-8848-979fc8c72d9a.jpg?1562906703
 value=2.773
 rarity=U
 type=Creature

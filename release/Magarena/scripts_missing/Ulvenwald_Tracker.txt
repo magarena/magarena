@@ -1,5 +1,5 @@
 name=Ulvenwald Tracker
-image=https://magiccards.info/scans/en/mm3/144.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4da9e7d8-5f01-4d55-a0a8-afe5e7d5f8e4.jpg?1593815080
 image_updated=2017-08-08
 value=3.959
 rarity=R

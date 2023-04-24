@@ -1,5 +1,5 @@
 name=To the Slaughter
-image=https://magiccards.info/scans/en/soi/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a645c8d-7cfb-466b-9fd0-e1c26bf6f652.jpg?1576384612
 value=2.500
 rarity=R
 type=Instant

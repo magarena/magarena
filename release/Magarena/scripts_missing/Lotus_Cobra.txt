@@ -1,5 +1,5 @@
 name=Lotus Cobra
-image=https://magiccards.info/scans/en/ima/174.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4b759f0-901f-4be3-93fa-224609b08d48.jpg?1604199124
 image_updated=2017-04-12
 value=4.427
 rarity=R

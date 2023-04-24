@@ -1,5 +1,5 @@
 name=Moonlace
-image=https://magiccards.info/scans/en/ts/68.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c781cc80-5f57-4677-a9da-3523191cc7c6.jpg?1562937140
 value=2.218
 rarity=R
 type=Instant

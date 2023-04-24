@@ -1,5 +1,5 @@
 name=Ydwen Efreet
-image=https://magiccards.info/scans/en/an/54.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79a0dd6d-8904-467f-b63b-13dfc45232fb.jpg?1559592292
 value=3.888
 rarity=R
 type=Creature

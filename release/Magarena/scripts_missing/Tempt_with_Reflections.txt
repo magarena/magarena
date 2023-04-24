@@ -1,5 +1,5 @@
 name=Tempt with Reflections
-image=https://magiccards.info/scans/en/c13/60.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebb0070f-8686-4127-91c3-4f1488e2d995.jpg?1562944704
 value=3.600
 rarity=R
 type=Sorcery

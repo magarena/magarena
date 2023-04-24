@@ -1,5 +1,5 @@
 name=Pack Hunt
-image=https://magiccards.info/scans/en/ne/109.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c46caa8-efc0-4b72-b122-61e5d86a5b86.jpg?1562628868
 value=4.051
 rarity=R
 type=Sorcery

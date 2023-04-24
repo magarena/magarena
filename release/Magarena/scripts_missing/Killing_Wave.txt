@@ -1,5 +1,5 @@
 name=Killing Wave
-image=https://magiccards.info/scans/en/avr/111.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33de2371-175e-4f8a-9636-35f996e3cf24.jpg?1592708920
 value=3.492
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Widespread Panic
-image=https://magiccards.info/scans/en/c13/131.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9e1b37f-8168-4dc0-858f-434ee96ff748.jpg?1562941015
 value=3.477
 rarity=R
 type=Enchantment

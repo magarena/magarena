@@ -1,5 +1,5 @@
 name=Panoptic Mirror
-image=https://magiccards.info/scans/en/ds/136.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50e945b0-e919-41bb-9bc5-f71ad531e8f1.jpg?1562636846
 value=4.494
 rarity=R
 type=Artifact

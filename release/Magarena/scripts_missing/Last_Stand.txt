@@ -1,5 +1,5 @@
 name=Last Stand
-image=https://magiccards.info/scans/en/pc2/100.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7f3c92b-5a31-450e-8cff-9289d266050a.jpg?1562935399
 value=4.087
 rarity=R
 type=Sorcery

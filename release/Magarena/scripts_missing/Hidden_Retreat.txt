@@ -1,5 +1,5 @@
 name=Hidden Retreat
-image=https://magiccards.info/scans/en/sh/106.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5be86f1f-c85a-4396-aa16-a39fbf493c96.jpg?1562596414
 value=3.130
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Fungal Behemoth
-image=https://magiccards.info/scans/en/pc/128.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53c1910b-9475-4551-b9a0-4b24511a6f98.jpg?1562571709
 value=3.524
 rarity=R
 type=Creature

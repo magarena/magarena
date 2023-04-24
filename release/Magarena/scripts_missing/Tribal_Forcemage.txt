@@ -1,5 +1,5 @@
 name=Tribal Forcemage
-image=https://magiccards.info/scans/en/le/142.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/104735d7-6cea-4d4a-8cc8-e1934883da97.jpg?1562898295
 value=3.894
 rarity=R
 type=Creature

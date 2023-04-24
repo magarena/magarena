@@ -1,5 +1,5 @@
 name=Abzan Charm
-image=https://magiccards.info/scans/en/c16/177.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd5b386e-e71e-492d-8456-6cd178ef5b3d.jpg?1673305419
 image_updated=2017-08-17
 value=4.100
 rarity=U

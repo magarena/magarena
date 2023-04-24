@@ -1,5 +1,5 @@
 name=Crystal Spray
-image=https://magiccards.info/scans/en/in/50.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8798a4f1-34bb-449d-a8cc-faf8bda8e0ab.jpg?1562922403
 value=2.328
 rarity=R
 type=Instant

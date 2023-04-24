@@ -1,5 +1,5 @@
 name=Somnophore
-image=https://magiccards.info/scans/en/us/97.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c35aa7a8-5579-46b7-83ef-f5ecc2b31847.jpg?1562936285
 value=4.181
 rarity=R
 type=Creature

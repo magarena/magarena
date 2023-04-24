@@ -1,5 +1,5 @@
 name=Set Adrift
-image=https://magiccards.info/scans/en/ktk/54.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdad122d-a872-449f-9a7c-0f054b711d11.jpg?1562793718
 value=2.167
 rarity=U
 type=Sorcery

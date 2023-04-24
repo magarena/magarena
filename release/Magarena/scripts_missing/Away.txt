@@ -1,5 +1,5 @@
 name=Away
-image=https://magiccards.info/scans/en/dgm/127b.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d13cdb71-a499-41db-84e6-95f84650c524.jpg?1562934087
 value=4.197
 rarity=U
 type=Instant

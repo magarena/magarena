@@ -1,5 +1,5 @@
 name=Peer Pressure
-image=https://magiccards.info/scans/en/on/101.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be0110ba-49e4-4729-8a84-4d408b20df53.jpg?1562939869
 value=3.145
 rarity=R
 type=Sorcery

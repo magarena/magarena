@@ -1,5 +1,5 @@
 name=Null Profusion
-image=https://magiccards.info/scans/en/pc/89.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c996792c-0846-4b78-bce5-1c6ad29640f6.jpg?1562581985
 value=3.601
 rarity=R
 type=Enchantment

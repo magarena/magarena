@@ -1,5 +1,5 @@
 name=Wild Pair
-image=https://magiccards.info/scans/en/cn2/196.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3153d2c-9168-4889-9179-23faa9c48721.jpg?1576383139
 image_updated=2017-08-29
 value=4.349
 rarity=R

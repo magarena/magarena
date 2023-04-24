@@ -1,5 +1,5 @@
 name=Puresight Merrow
-image=https://magiccards.info/scans/en/shm/146.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77f25680-d1b3-4bf6-83e2-2eea0b5419ad.jpg?1562831904
 value=3.457
 rarity=U
 type=Creature

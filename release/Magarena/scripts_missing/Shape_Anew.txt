@@ -1,5 +1,5 @@
 name=Shape Anew
-image=https://magiccards.info/scans/en/som/43.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3d5462e-f60c-4550-b29e-4d9f9cd72385.jpg?1562822000
 value=3.573
 rarity=R
 type=Sorcery

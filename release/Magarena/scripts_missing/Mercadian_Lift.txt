@@ -1,5 +1,5 @@
 name=Mercadian Lift
-image=https://magiccards.info/scans/en/mm/306.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/395a1a8a-785f-442b-8e95-8b4ca44af2a3.jpg?1562379931
 value=2.538
 rarity=R
 type=Artifact

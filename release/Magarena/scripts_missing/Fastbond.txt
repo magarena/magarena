@@ -1,5 +1,5 @@
 name=Fastbond
-image=https://magiccards.info/scans/en/rv/101.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daf43523-558c-4701-9fa3-5d1ceb82a006.jpg?1566819914
 value=4.875
 rarity=R
 type=Enchantment

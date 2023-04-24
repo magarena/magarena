@@ -1,5 +1,5 @@
 name=Skirk Prospector
-image=https://magiccards.info/scans/en/dom/144.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1636d138-aa63-476f-a930-41b1be988032.jpg?1562731846
 image_updated=2018-08-07
 value=2.500
 rarity=C

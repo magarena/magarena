@@ -1,5 +1,5 @@
 name=Mindblaze
-image=https://magiccards.info/scans/en/chk/180.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59418766-5567-4ec4-af1f-1cb2db2958d0.jpg?1562760146
 value=2.703
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=On Serra's Wings
-image=https://magiccards.info/scans/en/dom/28.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0a57c65-5010-4472-b877-42daf2f15af2.jpg?1608911949
 value=2.500
 rarity=U
 type=Legendary,Enchantment

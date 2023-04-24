@@ -1,5 +1,5 @@
 name=Riches
-image=https://magiccards.info/scans/en/akh/222b.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11d84618-aca9-47dc-ae73-36a2c29f584c.jpg?1549941948
 value=2.500
 rarity=R
 type=Sorcery

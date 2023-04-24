@@ -1,5 +1,5 @@
 name=Skyshroud Cutter
-image=https://magiccards.info/scans/en/ne/118.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a558c4f5-a716-4e46-9234-5f84f1bd57aa.jpg?1562631366
 value=2.915
 rarity=C
 type=Creature

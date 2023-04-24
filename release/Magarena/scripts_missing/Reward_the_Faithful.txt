@@ -1,5 +1,5 @@
 name=Reward the Faithful
-image=https://magiccards.info/scans/en/sc/22.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df6e8844-3736-4fb1-bedb-6a6bfa6ccdc8.jpg?1562535753
 value=3.382
 rarity=U
 type=Instant

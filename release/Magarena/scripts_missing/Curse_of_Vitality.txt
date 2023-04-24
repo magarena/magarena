@@ -1,5 +1,5 @@
 name=Curse of Vitality
-image=https://magiccards.info/scans/en/c17/3.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1a80504-d991-4eef-8407-2acf444401f0.jpg?1562622597
 image_updated=2017-10-03
 value=2.500
 rarity=U

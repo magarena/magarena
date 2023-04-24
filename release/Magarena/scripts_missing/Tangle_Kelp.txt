@@ -1,5 +1,5 @@
 name=Tangle Kelp
-image=https://magiccards.info/scans/en/dk/36.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/497bc42d-ab81-4d84-bdf7-e3a05a7c984d.jpg?1562912204
 value=3.000
 rarity=U
 type=Enchantment

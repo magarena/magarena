@@ -1,5 +1,5 @@
 name=Dimir Charm
-image=https://magiccards.info/scans/en/gtc/154.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3f4cfa7-8ee4-4a85-9e6a-65a7541f62c1.jpg?1561852231
 value=4.197
 rarity=U
 type=Instant

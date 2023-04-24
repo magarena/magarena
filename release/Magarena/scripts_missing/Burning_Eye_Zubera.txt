@@ -1,5 +1,5 @@
 name=Burning-Eye Zubera
-image=https://magiccards.info/scans/en/sok/95.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae9ca5c3-8367-4e08-a318-634f9d36dbdc.jpg?1562495577
 value=3.064
 rarity=U
 type=Creature

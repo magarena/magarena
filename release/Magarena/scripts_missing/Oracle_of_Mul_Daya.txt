@@ -1,5 +1,5 @@
 name=Oracle of Mul Daya
-image=https://magiccards.info/scans/en/zen/172.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/373a4e3e-6244-43e8-80ac-f5508db9ce57.jpg?1673148154
 value=4.052
 rarity=R
 type=Creature

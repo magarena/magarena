@@ -1,5 +1,5 @@
 name=Reveillark
-image=https://magiccards.info/scans/en/c16/74.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53b4dcd6-b1b6-4f1c-9264-e58bdc87399b.jpg?1673147099
 image_updated=2017-08-17
 value=4.258
 rarity=R

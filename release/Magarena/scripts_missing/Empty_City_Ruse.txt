@@ -1,5 +1,5 @@
 name=Empty City Ruse
-image=https://magiccards.info/scans/en/p3k/3.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d37c84c-80e5-453d-bd2e-4f77ff864c89.jpg?1562256087
 value=3.696
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Vraska, Relic Seeker
-image=https://magiccards.info/scans/en/xln/232.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/967b7272-33a6-46e9-b0aa-4757aee54b3a.jpg?1562560392
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

@@ -1,5 +1,5 @@
 name=Memory Jar
-image=https://magiccards.info/scans/en/ul/129.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60b70b7f-6f24-4c00-947a-b109f302205b.jpg?1562914598
 value=4.500
 rarity=R
 type=Artifact

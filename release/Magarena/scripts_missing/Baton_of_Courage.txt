@@ -1,5 +1,5 @@
 name=Baton of Courage
-image=https://magiccards.info/scans/en/5dn/105.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d363970c-2418-42f9-8d13-0e5700161b62.jpg?1562879892
 value=1.402
 rarity=C
 type=Artifact

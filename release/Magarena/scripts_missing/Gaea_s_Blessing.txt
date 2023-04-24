@@ -1,5 +1,5 @@
 name=Gaea's Blessing
-image=https://magiccards.info/scans/en/dom/161.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23cf81ed-b86c-42b8-b796-2032b0a3654a.jpg?1562732710
 image_updated=2018-08-07
 value=4.469
 rarity=U

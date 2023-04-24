@@ -1,5 +1,5 @@
 name=Stench of Evil
-image=https://magiccards.info/scans/en/ia/53.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c7065a2-f819-4cbe-b453-a55e904f0461.jpg?1562909000
 value=3.929
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=City of Shadows
-image=https://magiccards.info/scans/en/dk/113.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/0629322b-e9e8-4cac-abe5-fff083bcc240.jpg?1562896301
 value=3.597
 rarity=R
 type=Land

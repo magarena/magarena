@@ -1,5 +1,5 @@
 name=Cloud Key
-image=https://magiccards.info/scans/en/fut/160.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f880de5-8fc5-4e4e-a4bb-cc3e61a7697b.jpg?1619404220
 value=4.153
 rarity=R
 type=Artifact

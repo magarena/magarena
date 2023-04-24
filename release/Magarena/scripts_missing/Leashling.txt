@@ -1,5 +1,5 @@
 name=Leashling
-image=https://magiccards.info/scans/en/rav/265.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/132551d3-ef8e-4ed0-a363-53db4f0621f0.jpg?1598918048
 value=1.155
 rarity=U
 type=Artifact,Creature

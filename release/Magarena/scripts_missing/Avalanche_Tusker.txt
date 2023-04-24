@@ -1,5 +1,5 @@
 name=Avalanche Tusker
-image=https://magiccards.info/scans/en/ktk/166.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/408e3f12-53d5-45f4-8ccc-6c00f8a9c6fe.jpg?1562785458
 value=3.600
 rarity=R
 type=Creature

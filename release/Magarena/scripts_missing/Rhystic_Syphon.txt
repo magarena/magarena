@@ -1,5 +1,5 @@
 name=Rhystic Syphon
-image=https://magiccards.info/scans/en/pr/76.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/750c5df2-e299-4bf3-8018-725893702314.jpg?1562916690
 value=3.094
 rarity=U
 type=Sorcery

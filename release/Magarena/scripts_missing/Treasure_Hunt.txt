@@ -1,5 +1,5 @@
 name=Treasure Hunt
-image=https://magiccards.info/scans/en/wwk/42.jpg
+image=https://cards.scryfall.io/border_crop/front/7/6/76a2cb0e-3630-4307-ac80-bd850c1c256f.jpg?1592710683
 value=3.715
 rarity=C
 type=Sorcery

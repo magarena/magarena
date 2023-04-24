@@ -1,5 +1,5 @@
 name=Detection Tower
-image=https://magiccards.info/scans/en/m19/249.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02f99756-d334-4dba-a375-ba3d91ecae62.jpg?1562300252
 value=2.500
 rarity=R
 type=Land

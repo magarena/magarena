@@ -1,5 +1,5 @@
 name=Helm of the Host
-image=https://magiccards.info/scans/en/dom/217.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d65d20c-09e5-4139-838b-7e0e48eb2b2b.jpg?1666094567
 value=2.500
 rarity=R
 type=Legendary,Artifact

@@ -1,5 +1,5 @@
 name=Spirit en-Kor
-image=https://magiccards.info/scans/en/sh/119.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c57ca87-75b0-4058-acd8-5394545d0846.jpg?1562430346
 value=2.500
 rarity=C
 type=Creature

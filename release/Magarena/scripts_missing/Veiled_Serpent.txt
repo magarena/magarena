@@ -1,5 +1,5 @@
 name=Veiled Serpent
-image=https://magiccards.info/scans/en/us/110.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/25193fd6-3156-48ff-90fa-71328ee7adf5.jpg?1562902792
 value=3.231
 rarity=C
 type=Enchantment

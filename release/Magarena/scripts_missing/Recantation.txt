@@ -1,5 +1,5 @@
 name=Recantation
-image=https://magiccards.info/scans/en/us/91.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95479839-779e-4dbe-8989-ccf26cc488fe.jpg?1562926559
 value=2.346
 rarity=R
 type=Enchantment

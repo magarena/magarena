@@ -1,5 +1,5 @@
 name=Feral Contest
-image=https://magiccards.info/scans/en/wwk/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/215115fa-50a6-42c0-b3c6-8d18e7f65174.jpg?1562283242
 value=1.946
 rarity=C
 type=Sorcery

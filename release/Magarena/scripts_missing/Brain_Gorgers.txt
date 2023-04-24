@@ -1,5 +1,5 @@
 name=Brain Gorgers
-image=https://magiccards.info/scans/en/pc/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b02161f4-505c-4c01-ae33-5c61598c71d7.jpg?1562579816
 value=2.905
 rarity=C
 type=Creature

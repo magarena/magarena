@@ -1,5 +1,5 @@
 name=Volley Veteran
-image=https://magiccards.info/scans/en/m19/168.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4c8e3b3-c8bb-415d-a19f-45ec679108ee.jpg?1601078765
 value=2.500
 rarity=U
 type=Creature

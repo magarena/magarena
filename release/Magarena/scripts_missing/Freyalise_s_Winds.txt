@@ -1,5 +1,5 @@
 name=Freyalise's Winds
-image=https://magiccards.info/scans/en/ia/129.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4a9d2fb-fdd1-4287-b48c-21ded059fd23.jpg?1562929713
 value=3.759
 rarity=R
 type=Enchantment

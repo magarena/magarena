@@ -1,5 +1,5 @@
 name=Uba Mask
-image=https://magiccards.info/scans/en/chk/272.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa3ecb4e-d08f-4fac-8842-c3e772b95bd5.jpg?1562766086
 value=3.569
 rarity=R
 type=Artifact

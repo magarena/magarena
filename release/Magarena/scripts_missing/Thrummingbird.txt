@@ -1,5 +1,5 @@
 name=Thrummingbird
-image=https://magiccards.info/scans/en/c16/100.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67f0a63e-0866-423e-b917-fc7c71063021.jpg?1675956992
 image_updated=2017-08-17
 value=2.500
 rarity=U

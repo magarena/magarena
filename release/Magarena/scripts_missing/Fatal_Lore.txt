@@ -1,5 +1,5 @@
 name=Fatal Lore
-image=https://magiccards.info/scans/en/ai/7.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24ba0b83-9671-4ee7-996d-57a3616b9c66.jpg?1562768225
 value=2.932
 rarity=R
 type=Sorcery

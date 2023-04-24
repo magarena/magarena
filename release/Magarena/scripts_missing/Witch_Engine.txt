@@ -1,5 +1,5 @@
 name=Witch Engine
-image=https://magiccards.info/scans/en/us/169.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef749290-58e2-4b40-a141-5fe294f9b995.jpg?1642038766
 value=3.321
 rarity=R
 type=Creature

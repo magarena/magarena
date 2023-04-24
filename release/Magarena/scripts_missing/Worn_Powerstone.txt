@@ -1,5 +1,5 @@
 name=Worn Powerstone
-image=https://magiccards.info/scans/en/ema/235.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05812009-d1b8-4775-8188-f05cfdb4feed.jpg?1592711384
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Yixlid Jailer
-image=https://magiccards.info/scans/en/fut/93.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f2ef91f-d113-4e8d-a164-c6e261aa9c12.jpg?1619396601
 value=4.424
 rarity=U
 type=Creature

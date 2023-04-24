@@ -1,5 +1,5 @@
 name=Long-Term Plans
-image=https://magiccards.info/scans/en/sc/38.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d236e528-2cb1-4de5-a4fd-b80516e4a1f9.jpg?1645328659
 value=3.662
 rarity=U
 type=Instant

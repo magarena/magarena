@@ -1,5 +1,5 @@
 name=Honor the Fallen
-image=https://magiccards.info/scans/en/mm/21.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70147617-10e0-413d-be0a-a888b9cb6b97.jpg?1562381359
 value=3.645
 rarity=R
 type=Instant

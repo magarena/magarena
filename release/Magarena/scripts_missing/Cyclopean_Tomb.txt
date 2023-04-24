@@ -1,5 +1,5 @@
 name=Cyclopean Tomb
-image=https://magiccards.info/scans/en/un/241.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c77c7c1-39a5-4049-8e2c-3561b046152e.jpg?1562924336
 value=2.957
 rarity=R
 type=Artifact

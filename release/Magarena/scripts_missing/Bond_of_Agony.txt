@@ -1,5 +1,5 @@
 name=Bond of Agony
-image=https://magiccards.info/scans/en/di/38.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/832acb3f-4dd4-4bf1-b990-7cc7a68a1d57.jpg?1593272829
 value=2.658
 rarity=U
 type=Sorcery

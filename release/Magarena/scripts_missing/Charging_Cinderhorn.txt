@@ -1,5 +1,5 @@
 name=Charging Cinderhorn
-image=https://magiccards.info/scans/en/c16/16.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc0b61f2-4bb7-4dfa-907c-71787930d58f.jpg?1562426836
 image_updated=2016-11-28
 value=2.500
 rarity=R

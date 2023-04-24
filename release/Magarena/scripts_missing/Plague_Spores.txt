@@ -1,5 +1,5 @@
 name=Plague Spores
-image=https://magiccards.info/scans/en/in/260.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d106d56-a688-49cc-8d5d-0279a5a7c0a7.jpg?1562897663
 value=2.909
 rarity=C
 type=Sorcery

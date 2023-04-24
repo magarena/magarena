@@ -1,5 +1,5 @@
 name=Ajani, Adversary of Tyrants
-image=https://magiccards.info/scans/en/m19/3.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c565076-5db2-47ea-8ee0-4a4fd7bb353d.jpg?1562302134
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

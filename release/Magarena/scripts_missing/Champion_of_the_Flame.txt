@@ -1,5 +1,5 @@
 name=Champion of the Flame
-image=https://magiccards.info/scans/en/dom/116.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a248363d-40a0-4dc5-a0bb-a826c3ba4499.jpg?1608910108
 value=2.500
 rarity=U
 type=Creature

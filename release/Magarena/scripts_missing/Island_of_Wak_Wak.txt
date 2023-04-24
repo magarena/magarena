@@ -1,5 +1,5 @@
 name=Island of Wak-Wak
-image=https://magiccards.info/scans/en/an/89.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17f4a1aa-395f-423c-b70c-00cf178bb84d.jpg?1559592395
 value=3.877
 rarity=R
 type=Land

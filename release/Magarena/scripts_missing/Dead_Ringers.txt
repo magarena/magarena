@@ -1,5 +1,5 @@
 name=Dead Ringers
-image=https://magiccards.info/scans/en/ap/37.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b78028c-3ebd-432d-b628-e1fa284f08f3.jpg?1562931633
 value=2.615
 rarity=C
 type=Sorcery

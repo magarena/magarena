@@ -1,5 +1,5 @@
 name=Intervention Pact
-image=https://magiccards.info/scans/en/fut/8.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bca127ef-349e-4380-875d-49c14fa03b18.jpg?1562932918
 value=3.640
 rarity=R
 type=Instant

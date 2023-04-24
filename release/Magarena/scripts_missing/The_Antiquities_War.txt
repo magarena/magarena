@@ -1,5 +1,5 @@
 name=The Antiquities War
-image=https://magiccards.info/scans/en/dom/42.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbda670a-00a7-419c-b4b5-bfdb323f006d.jpg?1562741999
 value=2.500
 rarity=R
 type=Enchantment

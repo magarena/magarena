@@ -1,5 +1,5 @@
 name=Devout Invocation
-image=https://magiccards.info/scans/en/m14/16.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8a286954-fb40-4440-9f0e-a28367c6823c.jpg?1562832011
 value=3.637
 rarity=M
 type=Sorcery

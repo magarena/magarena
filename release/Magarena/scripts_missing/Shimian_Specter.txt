@@ -1,5 +1,5 @@
 name=Shimian Specter
-image=https://magiccards.info/scans/en/m13/109.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1ca9e99b-e46c-4f7a-9c51-e2cfe8810450.jpg?1562551127
 value=3.943
 rarity=R
 type=Creature

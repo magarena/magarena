@@ -1,5 +1,5 @@
 name=Rebuking Ceremony
-image=https://magiccards.info/scans/en/ds/82.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5940ed12-5224-4aed-9edc-dd4190691ee9.jpg?1562637017
 value=1.842
 rarity=R
 type=Sorcery

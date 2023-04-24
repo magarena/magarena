@@ -1,5 +1,5 @@
 name=Dub
-image=https://magiccards.info/scans/en/dom/15.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3de35fd-425d-46b8-bc7d-c2f05d86858d.jpg?1594734896
 value=2.500
 rarity=C
 type=Enchantment

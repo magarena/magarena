@@ -1,5 +1,5 @@
 name=Balancing Act
-image=https://magiccards.info/scans/en/od/10.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d6cb368-43f7-4d06-9cd5-492df5766567.jpg?1562918177
 value=4.045
 rarity=R
 type=Sorcery

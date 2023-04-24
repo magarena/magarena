@@ -1,5 +1,5 @@
 name=Grapple with the Past
-image=https://magiccards.info/scans/en/emn/160.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c874c79e-18e5-4c33-8580-1269e6b0fc55.jpg?1673148117
 image_updated=2016-09-05
 value=2.500
 rarity=C

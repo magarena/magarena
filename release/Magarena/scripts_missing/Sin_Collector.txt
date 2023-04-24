@@ -1,5 +1,5 @@
 name=Sin Collector
-image=https://magiccards.info/scans/en/mm3/183.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cad9de8-91fc-435f-9b56-66210813aebd.jpg?1593814574
 image_updated=2017-08-08
 value=4.320
 rarity=U

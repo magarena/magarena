@@ -1,5 +1,5 @@
 name=Rhystic Circle
-image=https://magiccards.info/scans/en/pr/19.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a76711e-b508-4bb7-a87c-911a11905af3.jpg?1562908633
 value=2.333
 rarity=C
 type=Enchantment

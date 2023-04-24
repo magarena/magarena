@@ -1,5 +1,5 @@
 name=Selfless Exorcist
-image=https://magiccards.info/scans/en/ju/21.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9b1c300-aec3-4512-9902-309615e86c73.jpg?1562631965
 value=1.378
 rarity=R
 type=Creature

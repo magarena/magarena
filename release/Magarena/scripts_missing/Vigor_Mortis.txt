@@ -1,5 +1,5 @@
 name=Vigor Mortis
-image=https://magiccards.info/scans/en/rav/111.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59587fde-c3f9-48c3-b991-46abb5423314.jpg?1592713816
 value=3.750
 rarity=U
 type=Sorcery

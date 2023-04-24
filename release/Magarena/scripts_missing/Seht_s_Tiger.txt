@@ -1,5 +1,5 @@
 name=Seht's Tiger
-image=https://magiccards.info/scans/en/c17/72.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/5970a4c8-0e1f-42cc-bd8e-7ba3946c6e41.jpg?1562609339
 image_updated=2017-10-03
 value=3.600
 rarity=R

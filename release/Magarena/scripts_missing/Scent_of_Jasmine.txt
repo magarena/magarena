@@ -1,5 +1,5 @@
 name=Scent of Jasmine
-image=https://magiccards.info/scans/en/ud/17.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0dae0cf-9696-498c-8d28-dc8c239faec7.jpg?1562445190
 value=2.712
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Juju Bubble
-image=https://magiccards.info/scans/en/vi/147.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5fa8208-7d65-4f8f-b07e-f5c3a66e1143.jpg?1562278166
 value=0.914
 rarity=U
 type=Artifact

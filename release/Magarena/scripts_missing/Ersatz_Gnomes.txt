@@ -1,5 +1,5 @@
 name=Ersatz Gnomes
-image=https://magiccards.info/scans/en/mr/266.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a2747ab-00c8-4f59-b9a6-54ff4e99f6c8.jpg?1562719284
 value=3.837
 rarity=U
 type=Artifact,Creature

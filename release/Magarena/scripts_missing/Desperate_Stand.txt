@@ -1,5 +1,5 @@
 name=Desperate Stand
-image=https://magiccards.info/scans/en/jou/147.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8a4fb8d-8ddd-4d1d-92c7-2bf6b0e6c488.jpg?1593096383
 value=2.692
 rarity=U
 type=Sorcery

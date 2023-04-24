@@ -1,5 +1,5 @@
 name=Masako the Humorless
-image=https://magiccards.info/scans/en/chk/33.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6b2507f-4035-47d5-8295-0a3773f187fb.jpg?1562764679
 value=3.956
 rarity=R
 type=Legendary,Creature

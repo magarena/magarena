@@ -1,5 +1,5 @@
 name=Temporary Insanity
-image=https://magiccards.info/scans/en/tr/116.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d37747ce-d532-469b-9963-ad25c95a8361.jpg?1562939755
 value=2.288
 rarity=U
 type=Instant

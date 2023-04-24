@@ -1,5 +1,5 @@
 name=Curse of Shallow Graves
-image=https://magiccards.info/scans/en/c13/71.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/849996e2-fb62-428f-88f1-4ac419617395.jpg?1562922975
 value=3.638
 rarity=U
 type=Enchantment

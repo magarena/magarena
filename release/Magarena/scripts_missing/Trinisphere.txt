@@ -1,5 +1,5 @@
 name=Trinisphere
-image=https://magiccards.info/scans/en/ds/154.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/316caa4e-a53a-460b-978c-5f0fba7bc549.jpg?1599710205
 value=4.556
 rarity=R
 type=Artifact

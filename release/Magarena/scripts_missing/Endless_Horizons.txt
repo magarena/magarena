@@ -1,5 +1,5 @@
 name=Endless Horizons
-image=https://magiccards.info/scans/en/eve/4.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32385604-dcff-41e4-97a5-fcf230033a87.jpg?1562905505
 value=3.947
 rarity=R
 type=Enchantment

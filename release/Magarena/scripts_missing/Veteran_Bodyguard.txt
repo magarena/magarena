@@ -1,5 +1,5 @@
 name=Veteran Bodyguard
-image=https://magiccards.info/scans/en/rv/226.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1dd4615d-7828-43fb-ab89-f7c732bca01a.jpg?1562902054
 value=3.870
 rarity=R
 type=Creature

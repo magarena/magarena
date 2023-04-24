@@ -1,5 +1,5 @@
 name=Otherworldly Outburst
-image=https://magiccards.info/scans/en/emn/138.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34409e34-04e9-4279-8d21-6ef362b20b72.jpg?1576384643
 image_updated=2016-09-05
 value=2.500
 rarity=C

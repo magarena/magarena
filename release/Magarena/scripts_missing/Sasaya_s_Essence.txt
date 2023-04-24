@@ -1,5 +1,5 @@
 name=Sasaya's Essence
-image=https://magiccards.info/scans/en/sok/145b.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d224c50f-8146-4c91-9401-04e5bd306d02.jpg?1562496100
 value=3.274
 rarity=R
 type=Legendary,Enchantment

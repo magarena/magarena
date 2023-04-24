@@ -1,5 +1,5 @@
 name=Medomai the Ageless
-image=https://magiccards.info/scans/en/ths/196.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5f4b3cf-2c78-42c9-9873-3758c7f7bb7d.jpg?1562826823
 value=3.516
 rarity=M
 type=Legendary,Creature

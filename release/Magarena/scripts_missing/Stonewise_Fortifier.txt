@@ -1,5 +1,5 @@
 name=Stonewise Fortifier
-image=https://magiccards.info/scans/en/jou/27.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b1cd291-92a0-4f0f-b73a-64fc498da1ef.jpg?1593095358
 value=2.596
 rarity=C
 type=Creature

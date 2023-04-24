@@ -1,5 +1,5 @@
 name=Fortunate Few
-image=https://magiccards.info/scans/en/c17/4.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d84361bb-abc3-4b2d-9475-700fd262703b.jpg?1562625676
 image_updated=2017-10-03
 value=2.500
 rarity=R

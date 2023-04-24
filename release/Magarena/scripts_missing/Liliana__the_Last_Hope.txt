@@ -1,5 +1,5 @@
 name=Liliana, the Last Hope
-image=https://magiccards.info/scans/en/emn/93.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7ae5085-0d0d-4d7d-80a3-614315a07de5.jpg?1673147563
 image_updated=2016-09-05
 value=2.500
 rarity=M

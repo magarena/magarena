@@ -1,5 +1,5 @@
 name=Circle of Protection: White
-image=https://magiccards.info/scans/en/8e/14.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e64f2cc-67bd-482a-938b-8dca1a1c6ac1.jpg?1562904445
 value=3.066
 rarity=U
 type=Enchantment

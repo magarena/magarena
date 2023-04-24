@@ -1,5 +1,5 @@
 name=Magnetic Mountain
-image=https://magiccards.info/scans/en/4e/227.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/993a14d5-a33d-426e-ab49-c3226a6fcdca.jpg?1559604150
 value=3.227
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Savage Stomp
-image=https://magiccards.info/scans/en/xln/205.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abdf15ef-91e9-433f-a4c8-e670adef904c.jpg?1601080047
 value=2.500
 rarity=U
 type=Sorcery

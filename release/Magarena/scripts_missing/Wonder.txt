@@ -1,5 +1,5 @@
 name=Wonder
-image=https://magiccards.info/scans/en/ema/77.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/675d6729-23da-4f0b-b222-fe54fe24dd90.jpg?1631302927
 value=4.538
 rarity=U
 type=Creature

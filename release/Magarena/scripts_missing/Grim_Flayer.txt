@@ -1,5 +1,5 @@
 name=Grim Flayer
-image=https://magiccards.info/scans/en/emn/184.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1ce33033-f673-451e-bb8e-cd3e2309e4b4.jpg?1673148708
 image_updated=2016-09-05
 value=2.500
 rarity=M

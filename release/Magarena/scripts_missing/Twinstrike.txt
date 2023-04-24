@@ -1,5 +1,5 @@
 name=Twinstrike
-image=https://magiccards.info/scans/en/di/134.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dfc8ebe-58f4-450f-abdc-8d558f6f5551.jpg?1593273798
 value=2.529
 rarity=U
 type=Instant

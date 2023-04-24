@@ -1,5 +1,5 @@
 name=Xathrid Gorgon
-image=https://magiccards.info/scans/en/m13/118.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e07524e0-303d-465d-b112-ca605b9b27fc.jpg?1562561034
 value=3.803
 rarity=R
 type=Creature

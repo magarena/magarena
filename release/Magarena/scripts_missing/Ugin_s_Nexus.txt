@@ -1,5 +1,5 @@
 name=Ugin's Nexus
-image=https://magiccards.info/scans/en/ktk/227.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94002868-a48a-4ea8-bfce-17257078f5db.jpg?1562790526
 value=3.500
 rarity=M
 type=Legendary,Artifact

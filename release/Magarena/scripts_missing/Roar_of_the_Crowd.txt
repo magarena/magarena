@@ -1,5 +1,5 @@
 name=Roar of the Crowd
-image=https://magiccards.info/scans/en/mt/100.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4b0e072-c51a-4e97-a089-8e5b540355aa.jpg?1562882084
 value=2.048
 rarity=C
 type=Sorcery

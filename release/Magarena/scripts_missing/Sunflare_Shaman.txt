@@ -1,5 +1,5 @@
 name=Sunflare Shaman
-image=https://magiccards.info/scans/en/mt/108.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6db24aa7-4922-4b39-9964-f76df09cba12.jpg?1562879147
 value=2.968
 rarity=C
 type=Creature

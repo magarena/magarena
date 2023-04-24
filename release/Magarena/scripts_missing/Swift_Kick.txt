@@ -1,5 +1,5 @@
 name=Swift Kick
-image=https://magiccards.info/scans/en/ktk/122.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dc3120c-7e04-4c4a-af16-da264593a1d1.jpg?1562784372
 value=1.750
 rarity=C
 type=Instant

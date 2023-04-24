@@ -1,5 +1,5 @@
 name=Nissa Revane
-image=https://magiccards.info/scans/en/zen/170.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b4c26ab-0f7b-4163-b9e4-a415b91352a6.jpg?1562610283
 value=3.471
 rarity=M
 type=Legendary,Planeswalker

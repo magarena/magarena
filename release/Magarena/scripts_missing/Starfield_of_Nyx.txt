@@ -1,5 +1,5 @@
 name=Starfield of Nyx
-image=https://magiccards.info/scans/en/ori/33.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/861dc1a5-4e84-47bc-83a2-f289804086d8.jpg?1562029318
 image_updated=2015-11-05
 value=2.500
 rarity=M

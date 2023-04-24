@@ -1,5 +1,5 @@
 name=Subterranean Hangar
-image=https://magiccards.info/scans/en/mm/329.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edc199d1-970b-489f-b713-8285151f16ae.jpg?1562383975
 value=3.905
 rarity=U
 type=Land

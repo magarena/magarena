@@ -1,5 +1,5 @@
 name=Abandoned Sarcophagus
-image=https://magiccards.info/scans/en/hou/158.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23b587f3-5eac-45a7-a048-dd73d2a2b74f.jpg?1591321543
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Void Winnower
-image=https://magiccards.info/scans/en/bfz/17.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cbedb0a-34ca-4d42-bb43-cbea0f3c6d02.jpg?1587039576
 image_updated=2015-11-08
 value=2.500
 rarity=M

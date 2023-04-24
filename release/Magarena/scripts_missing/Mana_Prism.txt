@@ -1,5 +1,5 @@
 name=Mana Prism
-image=https://magiccards.info/scans/en/6e/296.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bdb4308-a71d-43ce-a487-534a86ce37ae.jpg?1562910346
 value=2.500
 rarity=U
 type=Artifact

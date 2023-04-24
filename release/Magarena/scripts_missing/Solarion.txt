@@ -1,5 +1,5 @@
 name=Solarion
-image=https://magiccards.info/scans/en/5dn/153.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9070dd3e-7600-493e-84b9-931ac92f44bc.jpg?1562878463
 value=4.114
 rarity=R
 type=Artifact,Creature

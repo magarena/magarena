@@ -1,5 +1,5 @@
 name=Death's Approach
-image=https://magiccards.info/scans/en/gtc/62.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f954e983-397c-4fdc-a6a1-142d03bfec7e.jpg?1600699997
 value=2.664
 rarity=C
 type=Enchantment

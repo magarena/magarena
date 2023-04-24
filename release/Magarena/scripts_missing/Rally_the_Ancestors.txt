@@ -1,5 +1,5 @@
 name=Rally the Ancestors
-image=https://magiccards.info/scans/en/frf/22.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d9efacb-9d7c-41f4-9b11-59df1be50e11.jpg?1562826291
 value=2.500
 rarity=R
 type=Instant

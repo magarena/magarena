@@ -1,5 +1,5 @@
 name=Red Ward
-image=https://magiccards.info/scans/en/4e/294.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/543e8ec0-f36a-46a6-b7b1-e983e90a091a.jpg?1559603756
 value=2.458
 rarity=U
 type=Enchantment

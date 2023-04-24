@@ -1,5 +1,5 @@
 name=Krovikan Vampire
-image=https://magiccards.info/scans/en/ia/29.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa1e779a-7075-49f0-b62e-936ad554d036.jpg?1562870978
 value=3.579
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sunglasses of Urza
-image=https://magiccards.info/scans/en/4e/365.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a225462-947c-49d7-81b2-91f875664dca.jpg?1559600488
 value=3.913
 rarity=R
 type=Artifact

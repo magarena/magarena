@@ -1,5 +1,5 @@
 name=Platinum Emperion
-image=https://magiccards.info/scans/en/som/193.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71b03143-9e85-4061-88e6-ad621f75ec3b.jpg?1547518515
 value=4.309
 rarity=M
 type=Artifact,Creature

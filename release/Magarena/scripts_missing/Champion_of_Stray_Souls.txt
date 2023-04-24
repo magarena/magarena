@@ -1,5 +1,5 @@
 name=Champion of Stray Souls
-image=https://magiccards.info/scans/en/c15/119.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0efbddb-c076-4552-b417-3608e0696a77.jpg?1568004159
 image_updated=2016-02-29
 value=3.720
 rarity=M

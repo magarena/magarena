@@ -1,5 +1,5 @@
 name=Altered Ego
-image=https://magiccards.info/scans/en/soi/241.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c05da08d-8fac-47bc-80d8-78a80d1463d2.jpg?1576385321
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Spatial Binding
-image=https://magiccards.info/scans/en/mr/344.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/176d625f-1410-4ad6-a279-9a184fac6507.jpg?1562718295
 value=1.891
 rarity=U
 type=Enchantment

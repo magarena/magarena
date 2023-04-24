@@ -1,5 +1,5 @@
 name=Ebony Charm
-image=https://magiccards.info/scans/en/mr/18.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/937c8016-43c8-418b-9057-b5d6715f71f7.jpg?1562720489
 value=4.342
 rarity=C
 type=Instant

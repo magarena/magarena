@@ -1,5 +1,5 @@
 name=Winter Blast
-image=https://magiccards.info/scans/en/5e/205.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d806c7c8-3aac-4385-b937-f66e360ffd28.jpg?1559592551
 value=3.833
 rarity=U
 type=Sorcery

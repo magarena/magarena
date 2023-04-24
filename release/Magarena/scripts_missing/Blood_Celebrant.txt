@@ -1,5 +1,5 @@
 name=Blood Celebrant
-image=https://magiccards.info/scans/en/le/61.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/805de325-6f14-4a52-bb85-f9a9545d82a4.jpg?1562920849
 value=2.333
 rarity=C
 type=Creature

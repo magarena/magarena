@@ -1,5 +1,5 @@
 name=Awe Strike
-image=https://magiccards.info/scans/en/mi/6.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5cd231b-7891-42b5-b5de-5112d1230c37.jpg?1562153206
 value=3.500
 rarity=C
 type=Instant

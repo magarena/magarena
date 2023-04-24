@@ -1,5 +1,5 @@
 name=Pulling Teeth
-image=https://magiccards.info/scans/en/mt/75.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cdce79d-c8a6-4172-8211-7cf2dcb8bf2d.jpg?1562879129
 value=2.878
 rarity=C
 type=Sorcery

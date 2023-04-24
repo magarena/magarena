@@ -1,5 +1,5 @@
 name=Scrounge
-image=https://magiccards.info/scans/en/ds/53.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a30f99a-b295-45a2-bff7-479cbe7541a5.jpg?1562635624
 value=2.636
 rarity=U
 type=Sorcery

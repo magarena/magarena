@@ -1,5 +1,5 @@
 name=Raff Capashen, Ship's Mage
-image=https://magiccards.info/scans/en/dom/202.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9250189d-357d-41cb-8dcf-45bed6599b40.jpg?1674173824
 value=2.500
 rarity=U
 type=Legendary,Creature

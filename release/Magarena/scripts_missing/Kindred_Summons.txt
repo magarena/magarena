@@ -1,5 +1,5 @@
 name=Kindred Summons
-image=https://magiccards.info/scans/en/c17/32.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54c0cc74-0a5c-40ee-961b-ade71719937a.jpg?1631588019
 image_updated=2017-10-03
 value=2.500
 rarity=R

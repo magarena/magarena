@@ -1,5 +1,5 @@
 name=Harvest Mage
-image=https://magiccards.info/scans/en/ne/105.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95b29329-b9a3-4d59-b0f8-2abc67337760.jpg?1562631121
 value=1.904
 rarity=C
 type=Creature

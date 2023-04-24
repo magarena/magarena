@@ -1,5 +1,5 @@
 name=Burning Vengeance
-image=https://magiccards.info/scans/en/ema/121.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbbfdc21-d8a0-4666-94e6-76b3fa083e76.jpg?1568004341
 value=3.623
 rarity=U
 type=Enchantment

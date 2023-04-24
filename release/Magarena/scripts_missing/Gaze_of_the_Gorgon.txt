@@ -1,5 +1,5 @@
 name=Gaze of the Gorgon
-image=https://magiccards.info/scans/en/rav/246.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16c9e772-5213-4c28-9b6c-1cfa6675ee8f.jpg?1598917749
 value=3.395
 rarity=C
 type=Instant

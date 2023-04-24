@@ -1,5 +1,5 @@
 name=Homarid Explorer
-image=https://magiccards.info/scans/en/dom/53.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93be7aa6-1897-4657-b3a6-991b05f7ea5e.jpg?1593860681
 value=2.500
 rarity=C
 type=Creature

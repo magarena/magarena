@@ -1,5 +1,5 @@
 name=Naked Singularity
-image=https://magiccards.info/scans/en/ia/305.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5edddcbb-0e01-4473-b7a8-1e59cf7ee506.jpg?1562917327
 value=4.081
 rarity=R
 type=Artifact

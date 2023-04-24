@@ -1,5 +1,5 @@
 name=Cannibalize
-image=https://magiccards.info/scans/en/sh/3.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cdf1311-1660-4ad0-a383-f3ff508ff574.jpg?1562430792
 value=2.500
 rarity=C
 type=Sorcery

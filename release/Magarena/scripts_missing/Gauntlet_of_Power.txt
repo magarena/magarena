@@ -1,5 +1,5 @@
 name=Gauntlet of Power
-image=https://magiccards.info/scans/en/ts/255.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14e870a0-5699-4f42-b67a-8dbd24e0c9c2.jpg?1619404297
 value=4.157
 rarity=R
 type=Artifact

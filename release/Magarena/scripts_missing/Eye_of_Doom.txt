@@ -1,5 +1,5 @@
 name=Eye of Doom
-image=https://magiccards.info/scans/en/c13/243.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b48d431d-3ead-417e-8f2a-0189bd1ef9f3.jpg?1562933096
 value=3.556
 rarity=R
 type=Artifact

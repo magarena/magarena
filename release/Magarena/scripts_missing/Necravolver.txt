@@ -1,5 +1,5 @@
 name=Necravolver
-image=https://magiccards.info/scans/en/ap/46.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/232c32d9-9b0c-458d-b1b3-e4219bd34c82.jpg?1562903306
 value=4.196
 rarity=R
 type=Creature

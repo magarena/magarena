@@ -1,5 +1,5 @@
 name=Eldrazi Temple
-image=https://magiccards.info/scans/en/mm2/240.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c42049e2-fe4e-4fe9-9599-faf1af50b97d.jpg?1593095918
 value=2.500
 rarity=U
 type=Land

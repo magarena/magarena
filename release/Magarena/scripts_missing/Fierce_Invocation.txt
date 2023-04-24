@@ -1,5 +1,5 @@
 name=Fierce Invocation
-image=https://magiccards.info/scans/en/frf/98.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0137de04-9fd7-41b0-b497-163e6e93432b.jpg?1562821925
 value=2.500
 rarity=C
 type=Sorcery

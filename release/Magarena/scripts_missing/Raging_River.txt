@@ -1,5 +1,5 @@
 name=Raging River
-image=https://magiccards.info/scans/en/un/169.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ee63877-056e-413d-932a-a393a4183686.jpg?1559592211
 value=4.473
 rarity=R
 type=Enchantment

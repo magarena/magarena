@@ -1,5 +1,5 @@
 name=Far Wanderings
-image=https://magiccards.info/scans/en/c16/148.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db67c59e-a9fb-4580-a8cc-ac5ef6c07440.jpg?1604193960
 image_updated=2017-08-17
 value=4.138
 rarity=C

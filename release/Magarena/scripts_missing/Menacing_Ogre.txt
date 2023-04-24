@@ -1,5 +1,5 @@
 name=Menacing Ogre
-image=https://magiccards.info/scans/en/on/219.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8de4b5cc-748c-45d1-852b-0f522b8838ba.jpg?1562842632
 image_updated=2016-12-23
 value=3.485
 rarity=R

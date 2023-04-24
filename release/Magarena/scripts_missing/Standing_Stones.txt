@@ -1,5 +1,5 @@
 name=Standing Stones
-image=https://magiccards.info/scans/en/dk/107.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d4c853e-2231-4af2-bcb0-1781c18ec3be.jpg?1562920728
 value=1.483
 rarity=U
 type=Artifact

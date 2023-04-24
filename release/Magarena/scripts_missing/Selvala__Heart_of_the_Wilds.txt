@@ -1,5 +1,5 @@
 name=Selvala, Heart of the Wilds
-image=https://magiccards.info/scans/en/cn2/70.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb87782d-e9c7-440b-bd96-aa043d18e185.jpg?1601080073
 image_updated=2016-09-05
 value=2.500
 rarity=M

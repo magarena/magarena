@@ -1,5 +1,5 @@
 name=Swerve
-image=https://magiccards.info/scans/en/ala/200.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10affb59-7c57-4b72-892b-d813f385f4a9.jpg?1562701210
 value=4.067
 rarity=U
 type=Instant

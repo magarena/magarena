@@ -1,5 +1,5 @@
 name=Viral Drake
-image=https://magiccards.info/scans/en/nph/49.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d89b312b-cc90-4f08-ae2e-043a79e51156.jpg?1562881929
 value=3.729
 rarity=U
 type=Creature

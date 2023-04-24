@@ -1,5 +1,5 @@
 name=Catastrophe
-image=https://magiccards.info/scans/en/us/6.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/294d21dc-5c76-4449-936f-9b7541d37c86.jpg?1562903769
 image_updated=2016-11-28
 value=4.222
 rarity=R

@@ -1,5 +1,5 @@
 name=North Star
-image=https://magiccards.info/scans/en/lg/233.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/daac2a6b-27c8-4567-9e0c-7b262628d331.jpg?1562861354
 value=1.571
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Primitive Justice
-image=https://magiccards.info/scans/en/ai/114.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5bfe2504-5085-4dbd-b093-f0a1536b4526.jpg?1562916670
 value=3.368
 rarity=U
 type=Sorcery

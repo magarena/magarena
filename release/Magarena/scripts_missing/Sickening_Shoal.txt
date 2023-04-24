@@ -1,5 +1,5 @@
 name=Sickening Shoal
-image=https://magiccards.info/scans/en/bok/82.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d92f4129-19fc-4ee9-9e3d-77fcf1563e4b.jpg?1562880104
 value=4.304
 rarity=R
 type=Instant

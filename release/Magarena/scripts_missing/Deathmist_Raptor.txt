@@ -1,5 +1,5 @@
 name=Deathmist Raptor
-image=https://magiccards.info/scans/en/dtk/180.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c73f83d-ee8f-48eb-9c3d-170f13062c74.jpg?1568004520
 value=2.500
 rarity=M
 type=Creature

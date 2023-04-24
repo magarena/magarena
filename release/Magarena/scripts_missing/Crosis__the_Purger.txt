@@ -1,5 +1,5 @@
 name=Crosis, the Purger
-image=https://magiccards.info/scans/en/c17/168.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be667162-cd28-403c-b65f-dadc5459e757.jpg?1562622151
 image_updated=2017-10-03
 value=4.235
 rarity=R

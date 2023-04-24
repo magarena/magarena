@@ -1,5 +1,5 @@
 name=Prismatic Lace
-image=https://magiccards.info/scans/en/mr/84.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1129585-6d59-4217-9404-747a100f1e8c.jpg?1562721925
 value=3.271
 rarity=R
 type=Instant

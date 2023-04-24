@@ -1,5 +1,5 @@
 name=Jester's Cap
-image=https://magiccards.info/scans/en/9e/301.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2ede9d6b-3c7c-4a5f-a09b-80ec471692b6.jpg?1562733193
 value=4.025
 rarity=R
 type=Artifact

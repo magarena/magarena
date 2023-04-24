@@ -1,5 +1,5 @@
 name=Valor
-image=https://magiccards.info/scans/en/tsts/16.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea65e470-4892-4b2b-b187-2296c7a8d46a.jpg?1562785796
 value=3.889
 rarity=U
 type=Creature

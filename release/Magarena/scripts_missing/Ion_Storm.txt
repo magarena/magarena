@@ -1,5 +1,5 @@
 name=Ion Storm
-image=https://magiccards.info/scans/en/5dn/68.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3871356b-a44c-4393-a69b-e5101508c5a8.jpg?1682209390
 value=4.034
 rarity=R
 type=Enchantment

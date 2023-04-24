@@ -1,5 +1,5 @@
 name=Split Decision
-image=https://magiccards.info/scans/en/cns/25.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83ed7ebe-48be-4e6e-a293-b81484f85142.jpg?1562865914
 value=3.929
 rarity=U
 type=Instant

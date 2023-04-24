@@ -1,5 +1,5 @@
 name=Tar Fiend
-image=https://magiccards.info/scans/en/ala/89.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa1903f8-2863-4203-9552-a75759fa8c94.jpg?1562711007
 value=3.053
 rarity=R
 type=Creature

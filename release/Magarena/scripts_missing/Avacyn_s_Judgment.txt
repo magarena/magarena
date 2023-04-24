@@ -1,5 +1,5 @@
 name=Avacyn's Judgment
-image=https://magiccards.info/scans/en/soi/145.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/2642eb44-becf-4e99-934f-7241fcc32dee.jpg?1641603042
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Teferi's Realm
-image=https://magiccards.info/scans/en/vi/44.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/aba3e4ea-2241-4f1e-a46b-70f512fe729e.jpg?1562278174
 value=3.912
 rarity=R
 type=World,Enchantment

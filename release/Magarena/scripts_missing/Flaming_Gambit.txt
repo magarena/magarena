@@ -1,5 +1,5 @@
 name=Flaming Gambit
-image=https://magiccards.info/scans/en/tr/98.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb7fd9b7-c394-4ab3-b945-b4aab694eb6a.jpg?1562632851
 value=1.909
 rarity=U
 type=Instant

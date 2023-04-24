@@ -1,5 +1,5 @@
 name=Arcades, the Strategist
-image=https://magiccards.info/scans/en/m19/212.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e90c638-d4b2-4243-bbc4-1cc10516c40f.jpg?1666961830
 value=2.500
 rarity=M
 type=Legendary,Creature

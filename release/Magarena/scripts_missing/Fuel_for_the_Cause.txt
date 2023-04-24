@@ -1,5 +1,5 @@
 name=Fuel for the Cause
-image=https://magiccards.info/scans/en/mbs/25.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4126e0e5-9b23-496f-8a09-7a35499f9a09.jpg?1562610827
 value=3.356
 rarity=C
 type=Instant

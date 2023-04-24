@@ -1,5 +1,5 @@
 name=Tezzeret's Gambit
-image=https://magiccards.info/scans/en/c16/99.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/421391da-7435-4364-8d48-009d2c2bdad4.jpg?1673484030
 image_updated=2017-08-17
 value=2.500
 rarity=U

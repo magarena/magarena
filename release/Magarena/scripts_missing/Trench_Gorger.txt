@@ -1,5 +1,5 @@
 name=Trench Gorger
-image=https://magiccards.info/scans/en/cmd/65.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b631b71b-78f6-41bc-a26a-c761ee1671a1.jpg?1592713140
 value=3.783
 rarity=R
 type=Creature

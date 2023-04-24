@@ -1,5 +1,5 @@
 name=Augury Owl
-image=https://magiccards.info/scans/en/pc2/14.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e5b8297-406e-4aef-ba46-867c1bf4cc8e.jpg?1562909367
 value=3.658
 rarity=C
 type=Creature

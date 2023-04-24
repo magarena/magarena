@@ -1,5 +1,5 @@
 name=Warren Pilferers
-image=https://magiccards.info/scans/en/mma/103.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2ac647ea-e81e-46d4-9a65-613d6643362b.jpg?1561966854
 value=2.893
 rarity=C
 type=Creature

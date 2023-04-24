@@ -1,5 +1,5 @@
 name=Delaying Shield
-image=https://magiccards.info/scans/en/od/17.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14e8195a-d0e4-4b11-b413-765ed1cae834.jpg?1562898960
 value=3.850
 rarity=R
 type=Enchantment

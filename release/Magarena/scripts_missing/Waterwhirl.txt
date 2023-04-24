@@ -1,5 +1,5 @@
 name=Waterwhirl
-image=https://magiccards.info/scans/en/ktk/60.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dd58503-d269-4756-a71c-a6a2bfb1658d.jpg?1562791100
 value=2.750
 rarity=U
 type=Instant

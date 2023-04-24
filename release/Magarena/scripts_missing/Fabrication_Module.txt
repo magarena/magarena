@@ -1,5 +1,5 @@
 name=Fabrication Module
-image=https://magiccards.info/scans/en/kld/211.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f93a9693-f899-47ac-8ee0-3549d9333fff.jpg?1576383161
 image_updated=2016-10-05
 value=2.500
 rarity=U

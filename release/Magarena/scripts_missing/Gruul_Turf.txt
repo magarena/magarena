@@ -1,5 +1,5 @@
 name=Gruul Turf
-image=https://magiccards.info/scans/en/ima/239.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/294b7e06-4758-4590-b1f0-b7f97537218f.jpg?1673149513
 image_updated=2017-04-12
 value=2.500
 rarity=U

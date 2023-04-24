@@ -1,5 +1,5 @@
 name=Wood Sage
-image=https://magiccards.info/scans/en/cns/195.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baed8371-815d-4c46-aca7-1d704b7a4e52.jpg?1562431284
 value=2.500
 rarity=U
 type=Creature

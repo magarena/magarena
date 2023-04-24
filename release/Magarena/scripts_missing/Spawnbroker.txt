@@ -1,5 +1,5 @@
 name=Spawnbroker
-image=https://magiccards.info/scans/en/rav/65.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce1e4aa6-b06d-4b87-9912-a4c403e8d7c6.jpg?1598914469
 value=3.553
 rarity=R
 type=Creature

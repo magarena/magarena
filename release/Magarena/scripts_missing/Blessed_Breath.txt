@@ -1,5 +1,5 @@
 name=Blessed Breath
-image=https://magiccards.info/scans/en/chk/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e2d8650-b8c3-4e89-9aa2-424a98715c38.jpg?1562762995
 value=3.202
 rarity=C
 type=Instant

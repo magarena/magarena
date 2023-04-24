@@ -1,5 +1,5 @@
 name=Qasali Ambusher
-image=https://magiccards.info/scans/en/ala/184.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be4e1284-eea2-4fc4-99e4-ed53176939ba.jpg?1562708492
 value=3.746
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Reroute
-image=https://magiccards.info/scans/en/rav/139.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42794e10-ddcd-4d2d-ab0c-a6b99b6d4662.jpg?1598915818
 value=3.911
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Drooling Groodion
-image=https://magiccards.info/scans/en/mm2/173.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afbafd6c-15cc-492f-b1e4-c5baa61e4a0b.jpg?1562266207
 value=2.500
 rarity=U
 type=Creature

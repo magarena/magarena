@@ -1,5 +1,5 @@
 name=Mages' Contest
-image=https://magiccards.info/scans/en/in/154.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c516861c-68d9-4d02-a343-689dba0526c6.jpg?1562934507
 value=3.561
 rarity=R
 type=Instant

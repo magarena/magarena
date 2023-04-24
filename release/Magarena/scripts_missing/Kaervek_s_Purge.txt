@@ -1,5 +1,5 @@
 name=Kaervek's Purge
-image=https://magiccards.info/scans/en/mr/330.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a42ef95-92ec-40fe-ab30-a476f012a525.jpg?1562720237
 value=3.402
 rarity=U
 type=Sorcery

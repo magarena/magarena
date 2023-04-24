@@ -1,5 +1,5 @@
 name=Cho-Manno's Blessing
-image=https://magiccards.info/scans/en/mm/12.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c9f33c6-5294-4584-854d-c8c0f847aba8.jpg?1562380883
 value=3.882
 rarity=C
 type=Enchantment

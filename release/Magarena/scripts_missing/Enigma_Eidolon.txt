@@ -1,5 +1,5 @@
 name=Enigma Eidolon
-image=https://magiccards.info/scans/en/di/24.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/814a1082-6e2c-46d3-9b45-12dab7006c0f.jpg?1593272660
 value=2.000
 rarity=C
 type=Creature

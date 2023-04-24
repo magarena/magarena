@@ -1,5 +1,5 @@
 name=Scrapbasket
-image=https://magiccards.info/scans/en/shm/262.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c7f0a6d-4127-4ea4-be16-2ed6b263a3f3.jpg?1562828997
 value=2.893
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Gift of the Gargantuan
-image=https://magiccards.info/scans/en/ala/132.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/1850be87-54de-49b3-a407-6fb2b278b25c.jpg?1562701477
 value=3.014
 rarity=C
 type=Sorcery

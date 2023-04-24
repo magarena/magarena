@@ -1,5 +1,5 @@
 name=Earthbind
-image=https://magiccards.info/scans/en/rv/146.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/784cc686-e5a2-4835-8ff2-820461868ffa.jpg?1559592834
 value=3.653
 rarity=C
 type=Enchantment

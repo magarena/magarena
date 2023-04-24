@@ -1,5 +1,5 @@
 name=Search the City
-image=https://magiccards.info/scans/en/rtr/49.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9cd77575-fedc-45b1-a53b-dfed0f34c875.jpg?1562790616
 value=2.123
 rarity=R
 type=Enchantment

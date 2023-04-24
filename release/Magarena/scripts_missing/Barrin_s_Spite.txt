@@ -1,5 +1,5 @@
 name=Barrin's Spite
-image=https://magiccards.info/scans/en/in/235.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d8ec4dc-c74a-4d49-856e-95703675fe9b.jpg?1562916937
 value=3.688
 rarity=R
 type=Sorcery

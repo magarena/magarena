@@ -1,5 +1,5 @@
 name=Praetor's Grasp
-image=https://magiccards.info/scans/en/nph/71.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9588be49-d9b5-4491-a5a0-10bcadc9f8b3.jpg?1562879913
 value=3.750
 rarity=R
 type=Sorcery

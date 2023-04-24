@@ -1,5 +1,5 @@
 name=Heliophial
-image=https://magiccards.info/scans/en/5dn/130.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d65fa8e-6944-4fe8-b7b4-c77dfbddf605.jpg?1562876886
 value=2.226
 rarity=C
 type=Artifact

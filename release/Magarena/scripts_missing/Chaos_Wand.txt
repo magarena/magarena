@@ -1,5 +1,5 @@
 name=Chaos Wand
-image=https://magiccards.info/scans/en/m19/228.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e065e040-80c1-47d3-a425-28381e5a29f2.jpg?1674142551
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Black Mana Battery
-image=https://magiccards.info/scans/en/4e/316.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a81f7a0f-183f-438b-b252-738d8d30c245.jpg?1559601189
 value=2.940
 rarity=R
 type=Artifact

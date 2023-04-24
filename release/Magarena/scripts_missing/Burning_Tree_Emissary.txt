@@ -1,5 +1,5 @@
 name=Burning-Tree Emissary
-image=https://magiccards.info/scans/en/mm3/207.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba327a5e-bd57-4e24-b4b4-062202df30e1.jpg?1673148423
 image_updated=2017-08-08
 value=4.044
 rarity=C

@@ -1,5 +1,5 @@
 name=See the Unwritten
-image=https://magiccards.info/scans/en/ktk/149.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/3689a7f1-9713-412e-a030-9cba463c170e.jpg?1562784794
 value=3.250
 rarity=M
 type=Sorcery

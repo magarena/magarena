@@ -1,5 +1,5 @@
 name=Dash Hopes
-image=https://magiccards.info/scans/en/pc/68.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/814bcfc0-7539-4ed9-8b51-27e6a3ab9d9a.jpg?1562575740
 value=4.011
 rarity=C
 type=Instant

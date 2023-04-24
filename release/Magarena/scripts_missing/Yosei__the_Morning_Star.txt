@@ -1,5 +1,5 @@
 name=Yosei, the Morning Star
-image=https://magiccards.info/scans/en/ima/39.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47af956c-e2ba-47c5-bc5d-ec0ab345ce57.jpg?1562848456
 image_updated=2017-04-12
 value=4.057
 rarity=R

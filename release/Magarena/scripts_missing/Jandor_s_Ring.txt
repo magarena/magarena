@@ -1,5 +1,5 @@
 name=Jandor's Ring
-image=https://magiccards.info/scans/en/rv/256.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af9988fd-72a0-42dc-9f10-85edd3133977.jpg?1559592701
 value=0.952
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=The Chain Veil
-image=https://magiccards.info/scans/en/m15/215.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0415cc0e-979e-42cc-a56d-88d13153a7de.jpg?1570587583
 value=2.500
 rarity=M
 type=Legendary,Artifact

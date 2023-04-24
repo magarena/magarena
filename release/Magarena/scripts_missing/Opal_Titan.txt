@@ -1,5 +1,5 @@
 name=Opal Titan
-image=https://magiccards.info/scans/en/us/26.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/379f1f01-88c6-4cc2-9049-078aa6980582.jpg?1562906696
 value=4.267
 rarity=R
 type=Enchantment

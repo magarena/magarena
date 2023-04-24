@@ -1,5 +1,5 @@
 name=Aegis of Honor
-image=https://magiccards.info/scans/en/od/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9561ffdb-f4dd-4b62-a2c2-933498e3a061.jpg?1562922716
 value=3.990
 rarity=R
 type=Enchantment

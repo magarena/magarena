@@ -1,5 +1,5 @@
 name=Hazduhr the Abbot
-image=https://magiccards.info/scans/en/hl/110.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adfd416a-dddf-40e4-acf0-84057edb7a58.jpg?1562588223
 value=2.076
 rarity=R
 type=Legendary,Creature

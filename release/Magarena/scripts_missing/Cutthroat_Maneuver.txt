@@ -1,5 +1,5 @@
 name=Cutthroat Maneuver
-image=https://magiccards.info/scans/en/ths/82.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62497880-64dc-4911-8513-f95b73086136.jpg?1562818977
 value=2.274
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Shield Bearer
-image=https://magiccards.info/scans/en/5e/338.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee491709-53fc-49f7-bf26-07e39f9d201f.jpg?1562870957
 value=2.617
 rarity=C
 type=Creature

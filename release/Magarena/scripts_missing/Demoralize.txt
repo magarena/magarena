@@ -1,5 +1,5 @@
 name=Demoralize
-image=https://magiccards.info/scans/en/od/184.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e2f16f9-4980-45e9-99bf-0e00e3008b1d.jpg?1562903477
 value=3.196
 rarity=C
 type=Instant

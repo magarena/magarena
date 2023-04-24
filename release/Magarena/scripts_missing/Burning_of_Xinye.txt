@@ -1,5 +1,5 @@
 name=Burning of Xinye
-image=https://magiccards.info/scans/en/p3k/104.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9aae2b96-36f5-4492-a942-cc988408b1e4.jpg?1562926238
 value=2.500
 rarity=R
 type=Sorcery

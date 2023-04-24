@@ -1,5 +1,5 @@
 name=Elvish Spirit Guide
-image=https://magiccards.info/scans/en/ai/69.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/806f8664-d447-42d5-bb52-9fe282f9a653.jpg?1562869510
 value=4.576
 rarity=U
 type=Creature

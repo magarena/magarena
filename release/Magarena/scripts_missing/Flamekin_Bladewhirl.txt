@@ -1,5 +1,5 @@
 name=Flamekin Bladewhirl
-image=https://magiccards.info/scans/en/lw/165.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b6ea1c8-ca58-4240-adb7-71cd49664414.jpg?1562339936
 value=2.933
 rarity=U
 type=Creature

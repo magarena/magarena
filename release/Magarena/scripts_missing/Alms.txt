@@ -1,5 +1,5 @@
 name=Alms
-image=https://magiccards.info/scans/en/wl/119.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97382dd8-2754-4ca3-8ba8-d655acaf22ac.jpg?1562802251
 value=2.012
 rarity=C
 type=Enchantment

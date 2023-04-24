@@ -1,5 +1,5 @@
 name=Murmuring Bosk
-image=https://magiccards.info/scans/en/c16/308.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5aca73a9-e90d-48c6-bdd9-9a3f4f552de3.jpg?1673306119
 image_updated=2017-08-17
 value=4.185
 rarity=R

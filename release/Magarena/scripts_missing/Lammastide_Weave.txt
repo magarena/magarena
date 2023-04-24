@@ -1,5 +1,5 @@
 name=Lammastide Weave
-image=https://magiccards.info/scans/en/lw/226.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/667fd7ab-de75-48e7-8d4b-a96130ae4666.jpg?1562351213
 value=2.294
 rarity=U
 type=Instant

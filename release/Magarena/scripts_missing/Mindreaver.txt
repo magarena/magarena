@@ -1,5 +1,5 @@
 name=Mindreaver
-image=https://magiccards.info/scans/en/bng/44.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87912ae7-3edc-4ea2-9b4b-caf2bc149ad1.jpg?1593091707
 value=1.566
 rarity=R
 type=Creature

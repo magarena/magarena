@@ -1,5 +1,5 @@
 name=Carrionette
-image=https://magiccards.info/scans/en/tp/5.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/884e19fb-67a4-42d8-b163-720a99cb8506.jpg?1562054983
 value=3.952
 rarity=R
 type=Creature

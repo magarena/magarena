@@ -1,5 +1,5 @@
 name=Saprazzan Outrigger
-image=https://magiccards.info/scans/en/mm/101.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b28048f1-4cf5-4389-9e69-9b5e1bc95396.jpg?1562382550
 value=2.263
 rarity=C
 type=Creature

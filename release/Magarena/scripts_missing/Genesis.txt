@@ -1,5 +1,5 @@
 name=Genesis
-image=https://magiccards.info/scans/en/ju/117.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b741d88-513a-4f47-a4fd-af42c5e44b6d.jpg?1562202086
 value=4.000
 rarity=R
 type=Creature

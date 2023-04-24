@@ -1,5 +1,5 @@
 name=Test of Faith
-image=https://magiccards.info/scans/en/mma/33.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67ba07ca-7be4-400e-a104-f7bbd527b6b4.jpg?1561967371
 value=3.940
 rarity=C
 type=Instant

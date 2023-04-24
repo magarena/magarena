@@ -1,5 +1,5 @@
 name=All Hallow's Eve
-image=https://magiccards.info/scans/en/lg/2.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af266eec-e61b-4bda-be7f-3a5a59eee864.jpg?1562931971
 value=4.441
 rarity=R
 type=Sorcery

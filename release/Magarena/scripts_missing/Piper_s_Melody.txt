@@ -1,5 +1,5 @@
 name=Piper's Melody
-image=https://magiccards.info/scans/en/od/261.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/642ea1f9-49f0-4e0d-8122-c3a305c149e9.jpg?1562913555
 value=3.553
 rarity=U
 type=Sorcery

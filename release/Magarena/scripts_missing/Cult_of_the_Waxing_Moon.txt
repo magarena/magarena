@@ -1,5 +1,5 @@
 name=Cult of the Waxing Moon
-image=https://magiccards.info/scans/en/soi/201.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2a13669-4656-476a-8984-ec3d47960907.jpg?1576385042
 value=2.500
 rarity=U
 type=Creature

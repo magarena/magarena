@@ -1,5 +1,5 @@
 name=Candles of Leng
-image=https://magiccards.info/scans/en/ts/250.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee874779-e654-48f0-8f2d-cc98ef150d75.jpg?1562945243
 value=2.743
 rarity=R
 type=Artifact

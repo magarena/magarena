@@ -1,5 +1,5 @@
 name=Defensive Maneuvers
-image=https://magiccards.info/scans/en/on/23.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58f9eb25-4140-4ecf-bcaa-1b193d884007.jpg?1562915966
 value=1.352
 rarity=C
 type=Instant

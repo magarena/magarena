@@ -1,5 +1,5 @@
 name=Feral Deceiver
-image=https://magiccards.info/scans/en/chk/208.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c49d705-9b0c-4c2e-9c27-46eec35deb92.jpg?1562761084
 value=2.703
 rarity=C
 type=Creature

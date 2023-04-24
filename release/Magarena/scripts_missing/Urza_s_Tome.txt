@@ -1,5 +1,5 @@
 name=Urza's Tome
-image=https://magiccards.info/scans/en/dom/235.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6bead8b-a67f-4451-9d44-038f8688093f.jpg?1562743701
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Jungle Wurm
-image=https://magiccards.info/scans/en/mr/122.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f646c83f-e804-4878-9160-8f2059dba496.jpg?1562944621
 value=1.500
 rarity=C
 type=Creature

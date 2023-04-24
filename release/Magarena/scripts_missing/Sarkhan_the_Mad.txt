@@ -1,5 +1,5 @@
 name=Sarkhan the Mad
-image=https://magiccards.info/scans/en/roe/214.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26c1ba92-556e-4da9-8e3a-a4a82612cb29.jpg?1562702107
 value=3.473
 rarity=M
 type=Legendary,Planeswalker

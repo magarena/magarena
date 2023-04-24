@@ -1,5 +1,5 @@
 name=Divert
-image=https://magiccards.info/scans/en/od/82.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8eb6e9f8-a508-451e-8a72-5f9834ba5352.jpg?1562921469
 value=4.241
 rarity=R
 type=Instant

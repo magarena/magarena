@@ -1,5 +1,5 @@
 name=Dimir Machinations
-image=https://magiccards.info/scans/en/rav/84.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14bfd72a-78c1-4167-89bf-ea1fccccd5b1.jpg?1598914791
 value=3.807
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Sphinx's Herald
-image=https://magiccards.info/scans/en/ala/58.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd7e2501-2d36-41eb-a77a-747b62affc09.jpg?1562708453
 value=1.712
 rarity=U
 type=Artifact,Creature

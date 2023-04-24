@@ -1,5 +1,5 @@
 name=Path of Mettle
-image=https://magiccards.info/scans/en/rix/165a.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66d9d524-3611-48d9-86c9-48e509e8ae70.jpg?1572373662
 value=2.500
 rarity=R
 type=Legendary,Enchantment

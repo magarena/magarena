@@ -1,5 +1,5 @@
 name=Stir the Grave
-image=https://magiccards.info/scans/en/bok/85.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7287f68f-f2e2-4e6f-a772-29a629bb9ccd.jpg?1562877792
 value=3.643
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Chronosavant
-image=https://magiccards.info/scans/en/ts/9.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6264d4f-adf1-4d7b-b17a-fd7122e9b2cd.jpg?1562940310
 value=1.734
 rarity=R
 type=Creature

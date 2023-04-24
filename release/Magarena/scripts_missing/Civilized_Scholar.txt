@@ -1,5 +1,5 @@
 name=Civilized Scholar
-image=https://magiccards.info/scans/en/isd/47a.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bf864db-4754-433d-9d77-6695f78f6c09.jpg?1562832669
 value=3.034
 rarity=U
 type=Creature

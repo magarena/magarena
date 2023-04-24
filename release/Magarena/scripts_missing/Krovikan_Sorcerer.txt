@@ -1,5 +1,5 @@
 name=Krovikan Sorcerer
-image=https://magiccards.info/scans/en/5e/96.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62909d11-9d2f-42a7-9b73-6b494bbe3f9e.jpg?1562914968
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Heartstone
-image=https://magiccards.info/scans/en/sh/128.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0ed17325-6d2f-404e-b13f-d2d419d522b7.jpg?1562595911
 value=3.909
 rarity=U
 type=Artifact

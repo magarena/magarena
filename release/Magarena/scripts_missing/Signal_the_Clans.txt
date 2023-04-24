@@ -1,5 +1,5 @@
 name=Signal the Clans
-image=https://magiccards.info/scans/en/gtc/194.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34261992-db62-49e3-95bc-1b2960868de4.jpg?1561822403
 value=3.277
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Insidious Dreams
-image=https://magiccards.info/scans/en/tr/66.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8a29622-23a6-42c7-8e56-690613572c94.jpg?1562632493
 value=4.041
 rarity=R
 type=Instant

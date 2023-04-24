@@ -1,5 +1,5 @@
 name=Watcher of the Roost
-image=https://magiccards.info/scans/en/ktk/30.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8684039-e4d9-4e48-9a41-7ccf4a795507.jpg?1562791631
 value=2.500
 rarity=U
 type=Creature

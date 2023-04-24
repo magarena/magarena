@@ -1,5 +1,5 @@
 name=Hollow One
-image=https://magiccards.info/scans/en/hou/163.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43fe9c6d-4fa2-4f9a-9025-1bf12fe7ed9f.jpg?1562797493
 value=2.500
 rarity=R
 type=Artifact,Creature

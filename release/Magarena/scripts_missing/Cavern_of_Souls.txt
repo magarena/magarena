@@ -1,5 +1,5 @@
 name=Cavern of Souls
-image=https://magiccards.info/scans/en/mm3/232.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e697ea72-e10e-4fed-be8f-8c6455cc3fc8.jpg?1673149476
 image_updated=2017-08-08
 value=4.305
 rarity=M

@@ -1,5 +1,5 @@
 name=Nykthos, Shrine to Nyx
-image=https://magiccards.info/scans/en/ths/223.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/834b27a0-dfd7-4f96-8cde-cacac4b24acc.jpg?1594077253
 value=3.717
 rarity=R
 type=Legendary,Land

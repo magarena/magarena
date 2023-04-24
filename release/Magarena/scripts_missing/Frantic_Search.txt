@@ -1,5 +1,5 @@
 name=Frantic Search
-image=https://magiccards.info/scans/en/ul/32.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57ab2d8f-6804-46fb-9dec-5fd230333ffd.jpg?1673483904
 value=4.500
 rarity=C
 type=Instant

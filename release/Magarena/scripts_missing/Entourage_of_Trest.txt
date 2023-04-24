@@ -1,5 +1,5 @@
 name=Entourage of Trest
-image=https://magiccards.info/scans/en/cn2/64.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87e65427-1191-4f5a-b4ca-c383eecd274e.jpg?1608910615
 image_updated=2016-09-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Shreds of Sanity
-image=https://magiccards.info/scans/en/emn/141.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/782e5600-ac63-4f90-acbe-49c04d2840ee.jpg?1576384664
 image_updated=2016-09-05
 value=2.500
 rarity=U

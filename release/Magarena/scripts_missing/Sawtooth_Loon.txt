@@ -1,5 +1,5 @@
 name=Sawtooth Loon
-image=https://magiccards.info/scans/en/ps/123.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f387d963-7404-478d-a7fa-4ad45f1ad286.jpg?1581708323
 image_updated=2016-01-09
 value=3.714
 rarity=U

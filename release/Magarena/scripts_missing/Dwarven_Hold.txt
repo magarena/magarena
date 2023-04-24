@@ -1,5 +1,5 @@
 name=Dwarven Hold
-image=https://magiccards.info/scans/en/5e/414.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79cb55f0-f0e8-4644-8c19-54efe5854973.jpg?1562591841
 value=3.109
 rarity=R
 type=Land

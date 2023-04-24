@@ -1,5 +1,5 @@
 name=Rouse the Mob
-image=https://magiccards.info/scans/en/jou/109.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64a07e7d-e203-4ecd-98bf-f8ef08c38d78.jpg?1593096082
 value=3.021
 rarity=C
 type=Instant

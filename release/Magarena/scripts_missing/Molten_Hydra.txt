@@ -1,5 +1,5 @@
 name=Molten Hydra
-image=https://magiccards.info/scans/en/ul/85.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95234b29-9ac8-4200-b42d-9653ba51b010.jpg?1562863748
 value=3.807
 rarity=R
 type=Creature

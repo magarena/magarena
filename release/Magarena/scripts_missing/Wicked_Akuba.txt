@@ -1,5 +1,5 @@
 name=Wicked Akuba
-image=https://magiccards.info/scans/en/chk/150.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3172965-6057-472f-9712-1dd23d25d1a7.jpg?1562764183
 value=3.891
 rarity=C
 type=Creature

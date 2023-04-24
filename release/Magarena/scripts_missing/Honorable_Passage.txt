@@ -1,5 +1,5 @@
 name=Honorable Passage
-image=https://magiccards.info/scans/en/tsts/9.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b07d20d7-4fdc-4104-9a9f-5fd2d3aa7b66.jpg?1562782278
 value=3.250
 rarity=U
 type=Instant

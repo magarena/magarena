@@ -1,5 +1,5 @@
 name=Glasses of Urza
-image=https://magiccards.info/scans/en/6e/287.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bd9f45f-30b3-4bff-9fd3-9a71137ac741.jpg?1562912735
 value=4.064
 rarity=U
 type=Artifact

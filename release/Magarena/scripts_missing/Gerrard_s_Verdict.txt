@@ -1,5 +1,5 @@
 name=Gerrard's Verdict
-image=https://magiccards.info/scans/en/ap/102.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/583740c0-68cf-4205-b682-2f97c0880d42.jpg?1562915736
 value=4.399
 rarity=U
 type=Sorcery

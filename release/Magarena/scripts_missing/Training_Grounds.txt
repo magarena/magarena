@@ -1,5 +1,5 @@
 name=Training Grounds
-image=https://magiccards.info/scans/en/roe/91.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2cf16f8-6e69-46b3-8453-1d1a2a5670e2.jpg?1586358076
 value=4.375
 rarity=R
 type=Enchantment

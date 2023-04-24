@@ -1,5 +1,5 @@
 name=Reverse Polarity
-image=https://magiccards.info/scans/en/rv/220.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e89856a-2496-41b2-b90c-ed42b02980cc.jpg?1559592803
 value=2.375
 rarity=U
 type=Instant

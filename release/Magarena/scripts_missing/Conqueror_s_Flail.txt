@@ -1,5 +1,5 @@
 name=Conqueror's Flail
-image=https://magiccards.info/scans/en/c16/53.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5f5399a-26c6-4ecd-9715-f6440f6958f1.jpg?1673149338
 image_updated=2016-11-28
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Silumgar's Command
-image=https://magiccards.info/scans/en/dtk/232.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c7cfb9c-58e4-4f4a-9a2c-ba5a7ba34f03.jpg?1604195199
 value=2.500
 rarity=R
 type=Instant

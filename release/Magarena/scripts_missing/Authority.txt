@@ -1,5 +1,5 @@
 name=Authority
-image=https://magiccards.info/scans/en/hou/152b.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c25b8ef-6331-49df-9457-b8b4e44da2c9.jpg?1562793920
 value=2.500
 rarity=U
 type=Sorcery

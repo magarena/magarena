@@ -1,5 +1,5 @@
 name=Singing Tree
-image=https://magiccards.info/scans/en/an/39.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78b11d04-aee6-48c8-b4e2-2949879a30c8.jpg?1559592576
 value=4.036
 rarity=R
 type=Creature

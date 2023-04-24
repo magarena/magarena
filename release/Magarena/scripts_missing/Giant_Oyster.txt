@@ -1,5 +1,5 @@
 name=Giant Oyster
-image=https://magiccards.info/scans/en/tsts/22.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dab7498-c574-4ea6-8dee-e3e0991af018.jpg?1562773865
 value=3.657
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Blatant Thievery
-image=https://magiccards.info/scans/en/on/71.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/0210b3b4-d253-464f-b533-b79bf67d47a4.jpg?1562700636
 image_updated=2016-02-29
 value=4.115
 rarity=R

@@ -1,5 +1,5 @@
 name=Whisperer of the Wilds
-image=https://magiccards.info/scans/en/frf/144.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2cf17d8a-c7ee-4909-bc80-4138dcfe7e67.jpg?1599707699
 value=2.500
 rarity=C
 type=Creature

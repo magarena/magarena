@@ -1,5 +1,5 @@
 name=Nissa's Judgment
-image=https://magiccards.info/scans/en/ogw/139.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9dcece0-13eb-4931-b39e-13de528a11a6.jpg?1561759779
 image_updated=2016-02-29
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Wall of Resistance
-image=https://magiccards.info/scans/en/mr/250.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd25787d-b90c-4b25-8259-1ac41d4dcd15.jpg?1562722876
 value=3.366
 rarity=C
 type=Creature

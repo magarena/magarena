@@ -1,5 +1,5 @@
 name=Gaze of Pain
-image=https://magiccards.info/scans/en/ia/16.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48401643-ec4b-444a-8f9a-1a5ea471ff4a.jpg?1562908221
 value=3.018
 rarity=C
 type=Sorcery

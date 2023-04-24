@@ -1,5 +1,5 @@
 name=Fame
-image=https://magiccards.info/scans/en/hou/150b.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15b0f214-8668-4921-88ba-7ccf38c9f770.jpg?1562790415
 value=2.500
 rarity=U
 type=Sorcery

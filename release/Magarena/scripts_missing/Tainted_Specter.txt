@@ -1,5 +1,5 @@
 name=Tainted Specter
-image=https://magiccards.info/scans/en/mr/46.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74feb223-784a-4540-8a8e-6007d10a9505.jpg?1562720224
 value=3.266
 rarity=R
 type=Creature

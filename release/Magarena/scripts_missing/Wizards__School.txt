@@ -1,5 +1,5 @@
 name=Wizards' School
-image=https://magiccards.info/scans/en/hl/140.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd736532-8e98-4f4a-b48f-a66c57efcbfd.jpg?1562588242
 value=1.511
 rarity=U
 type=Land

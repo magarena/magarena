@@ -1,5 +1,5 @@
 name=Stormblood Berserker
-image=https://magiccards.info/scans/en/mm2/130.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3fc6e8a2-99fc-434a-a1c4-0f425686c54a.jpg?1592765743
 value=2.500
 rarity=U
 type=Creature

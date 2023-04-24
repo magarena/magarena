@@ -1,5 +1,5 @@
 name=Cleansing Meditation
-image=https://magiccards.info/scans/en/tr/3.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd6609ef-71af-4775-affc-34153700c556.jpg?1574250393
 value=3.883
 rarity=U
 type=Sorcery

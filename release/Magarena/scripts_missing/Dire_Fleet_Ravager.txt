@@ -1,5 +1,5 @@
 name=Dire Fleet Ravager
-image=https://magiccards.info/scans/en/xln/104.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/887384de-403c-4cca-b542-ce0303100d42.jpg?1674141582
 value=2.500
 rarity=M
 type=Creature

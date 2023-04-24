@@ -1,5 +1,5 @@
 name=Ashes of the Fallen
-image=https://magiccards.info/scans/en/sok/152.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d59df09f-d8b9-4398-a705-329b768d5004.jpg?1562496109
 value=2.847
 rarity=R
 type=Artifact

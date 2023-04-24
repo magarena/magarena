@@ -1,5 +1,5 @@
 name=Noxious Vapors
-image=https://magiccards.info/scans/en/ps/49.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3cf9326-6e1c-4a05-abea-16d6b6cb2a6d.jpg?1562943129
 value=4.094
 rarity=U
 type=Sorcery

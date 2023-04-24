@@ -1,5 +1,5 @@
 name=Vengeful Rebirth
-image=https://magiccards.info/scans/en/mm2/188.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b03bb160-8113-409a-a130-2b3fdc476e6a.jpg?1547518128
 value=2.500
 rarity=U
 type=Sorcery

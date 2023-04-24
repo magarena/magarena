@@ -1,5 +1,5 @@
 name=Fated Conflagration
-image=https://magiccards.info/scans/en/bng/94.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66ea1aeb-bd42-4960-b40f-e7c2fd1efb5c.jpg?1593092210
 value=3.261
 rarity=R
 type=Instant

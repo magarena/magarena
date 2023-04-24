@@ -1,5 +1,5 @@
 name=Dominate
-image=https://magiccards.info/scans/en/ne/31.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9cfd7fc-22a5-4f21-bebf-d4823db48841.jpg?1562708891
 image_updated=2016-02-29
 value=3.598
 rarity=U

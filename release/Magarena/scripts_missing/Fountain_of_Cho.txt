@@ -1,5 +1,5 @@
 name=Fountain of Cho
-image=https://magiccards.info/scans/en/mm/317.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41f352c3-4b63-4174-b2b4-6c19fb8c06ff.jpg?1562380406
 value=3.260
 rarity=U
 type=Land

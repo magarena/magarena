@@ -1,5 +1,5 @@
 name=Echo Chamber
-image=https://magiccards.info/scans/en/tp/272.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06425615-6c10-4766-8128-a1a09a35649d.jpg?1562052329
 value=3.086
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Tatsumasa, the Dragon's Fang
-image=https://magiccards.info/scans/en/chk/270.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98d3bc63-8814-46e7-a6ee-dd5b94a8257e.jpg?1562762956
 value=3.971
 rarity=R
 type=Legendary,Artifact

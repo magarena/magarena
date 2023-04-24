@@ -1,5 +1,5 @@
 name=Cuombajj Witches
-image=https://magiccards.info/scans/en/at/22.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a26e910-275a-4981-831b-bfed936a7e3f.jpg?1608909638
 value=3.219
 rarity=C
 type=Creature

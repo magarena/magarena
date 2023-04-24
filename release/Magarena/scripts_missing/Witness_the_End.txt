@@ -1,5 +1,5 @@
 name=Witness the End
-image=https://magiccards.info/scans/en/ogw/82.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c06d8ec-55ab-4be9-a470-77c79d643d1f.jpg?1562897446
 image_updated=2016-02-29
 value=2.500
 rarity=C

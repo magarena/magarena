@@ -1,5 +1,5 @@
 name=Brago's Representative
-image=https://magiccards.info/scans/en/cns/14.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfa2b59c-eaeb-4946-80e0-f937a206aa0c.jpg?1562866856
 value=3.167
 rarity=C
 type=Creature

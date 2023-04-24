@@ -1,5 +1,5 @@
 name=Vish Kal, Blood Arbiter
-image=https://magiccards.info/scans/en/cmd/234.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba5f9d21-4cc9-4b7e-9f55-322dcf91c1b7.jpg?1599708552
 value=4.053
 rarity=R
 type=Legendary,Creature

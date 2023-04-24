@@ -1,5 +1,5 @@
 name=Goryo's Vengeance
-image=https://magiccards.info/scans/en/bok/67.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/6261205d-3506-4f0a-98ce-690f40df7a5a.jpg?1547516898
 value=3.946
 rarity=R
 type=Instant

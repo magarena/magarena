@@ -1,5 +1,5 @@
 name=Karn Liberated
-image=https://magiccards.info/scans/en/mm2/4.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b0c6662-4dde-40a2-97e0-0318478c0367.jpg?1599705787
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

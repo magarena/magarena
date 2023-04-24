@@ -1,5 +1,5 @@
 name=Tempt with Glory
-image=https://magiccards.info/scans/en/c13/24.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90e17fdd-c14f-413d-8119-d18cc8e58670.jpg?1592672460
 value=2.071
 rarity=R
 type=Sorcery

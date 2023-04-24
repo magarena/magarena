@@ -1,5 +1,5 @@
 name=Lim-Dûl's Vault
-image=https://magiccards.info/scans/en/ai/192.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cec89c38-0b72-44b0-ac6c-7eb9503e1256.jpg?1562938742
 value=4.551
 rarity=U
 type=Instant

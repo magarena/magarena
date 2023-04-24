@@ -1,5 +1,5 @@
 name=Crystalline Nautilus
-image=https://magiccards.info/scans/en/jou/34.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88a60d25-b97f-40e7-a5ac-c456cee02aeb.jpg?1593095409
 value=3.519
 rarity=U
 type=Enchantment,Creature

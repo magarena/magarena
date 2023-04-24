@@ -1,5 +1,5 @@
 name=Sigiled Sword of Valeron
-image=https://magiccards.info/scans/en/m19/244.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4ce8022a-40f7-4f9d-8d2f-057e21798114.jpg?1682210209
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Gloom
-image=https://magiccards.info/scans/en/5e/27.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d26c559-ad06-4f78-b7b6-e658be8c7bdb.jpg?1562898040
 value=3.926
 rarity=U
 type=Enchantment

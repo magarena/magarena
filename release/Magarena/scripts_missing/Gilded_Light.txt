@@ -1,5 +1,5 @@
 name=Gilded Light
-image=https://magiccards.info/scans/en/sc/16.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8ff59aa2-5e97-4e6c-b568-470ac2371bd7.jpg?1562201118
 value=3.500
 rarity=U
 type=Instant

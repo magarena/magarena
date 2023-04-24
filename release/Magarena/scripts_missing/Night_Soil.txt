@@ -1,5 +1,5 @@
 name=Night Soil
-image=https://magiccards.info/scans/en/fe/82.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52a0eca1-f936-4f5a-820b-fa12542c593d.jpg?1562912238
 value=4.050
 rarity=C
 type=Enchantment

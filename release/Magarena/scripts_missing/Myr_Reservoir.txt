@@ -1,5 +1,5 @@
 name=Myr Reservoir
-image=https://magiccards.info/scans/en/som/183.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60678391-44b2-4525-94dc-ffc5a433b79b.jpg?1562818213
 value=3.629
 rarity=R
 type=Artifact

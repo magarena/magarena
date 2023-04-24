@@ -1,5 +1,5 @@
 name=Ongoing Investigation
-image=https://magiccards.info/scans/en/soi/77.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19b8f962-8d4e-4dd8-a157-c0a55f9e152a.jpg?1576384167
 value=2.500
 rarity=U
 type=Enchantment

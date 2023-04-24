@@ -1,5 +1,5 @@
 name=Eye of Yawgmoth
-image=https://magiccards.info/scans/en/ne/129.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c258aa1-cd9f-45e9-b478-d689b78850cd.jpg?1562631234
 value=3.014
 rarity=R
 type=Artifact

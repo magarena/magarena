@@ -1,5 +1,5 @@
 name=Endless Whispers
-image=https://magiccards.info/scans/en/5dn/49.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/266323da-9528-462e-a0a8-6ef2dda5f1ee.jpg?1562875914
 value=4.071
 rarity=R
 type=Enchantment

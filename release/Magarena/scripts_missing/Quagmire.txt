@@ -1,5 +1,5 @@
 name=Quagmire
-image=https://magiccards.info/scans/en/lg/29.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94e2aa9e-af6a-41c6-99a8-ca9335730ddb.jpg?1562860140
 value=1.585
 rarity=U
 type=Enchantment

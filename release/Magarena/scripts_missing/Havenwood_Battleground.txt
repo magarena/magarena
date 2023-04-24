@@ -1,5 +1,5 @@
 name=Havenwood Battleground
-image=https://magiccards.info/scans/en/c14/301.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6aded00a-0bf3-416e-8eac-15c04554705d.jpg?1592673839
 value=2.500
 rarity=U
 type=Land

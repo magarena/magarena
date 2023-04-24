@@ -1,5 +1,5 @@
 name=Fractured Identity
-image=https://magiccards.info/scans/en/c17/37.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2f73f5d-1aad-48c2-9e74-5f7bdd87900f.jpg?1562620703
 image_updated=2017-10-03
 value=2.500
 rarity=R

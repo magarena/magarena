@@ -1,5 +1,5 @@
 name=Thelon's Curse
-image=https://magiccards.info/scans/en/fe/95.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b868846-cc3c-4756-a5dd-2335bb380567.jpg?1562923972
 value=2.883
 rarity=R
 type=Enchantment

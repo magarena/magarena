@@ -1,5 +1,5 @@
 name=Blazing Effigy
-image=https://magiccards.info/scans/en/lg/134.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/921011ff-1696-4575-9198-abe993a0ee7a.jpg?1562859697
 value=3.128
 rarity=C
 type=Creature

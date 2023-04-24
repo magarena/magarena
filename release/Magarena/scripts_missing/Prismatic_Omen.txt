@@ -1,5 +1,5 @@
 name=Prismatic Omen
-image=https://magiccards.info/scans/en/shm/126.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e75594cc-de47-49f2-9a8b-ba76c576368e.jpg?1562837542
 value=4.175
 rarity=R
 type=Enchantment

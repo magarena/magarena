@@ -1,5 +1,5 @@
 name=Balduvian Fallen
-image=https://magiccards.info/scans/en/cs/51.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a52b952-6e3b-403b-b355-2af47a282ab6.jpg?1593275042
 value=2.690
 rarity=U
 type=Creature

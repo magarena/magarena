@@ -1,5 +1,5 @@
 name=Dryad's Caress
-image=https://magiccards.info/scans/en/rav/160.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cf707f2-1a62-458e-bcc8-8b1cd081f225.jpg?1598916178
 value=2.197
 rarity=C
 type=Instant

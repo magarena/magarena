@@ -1,5 +1,5 @@
 name=Feral Incarnation
-image=https://magiccards.info/scans/en/m15/174.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8c0c7e7-81f5-4e75-8120-95488fd6ff60.jpg?1562795155
 value=3.500
 rarity=U
 type=Sorcery

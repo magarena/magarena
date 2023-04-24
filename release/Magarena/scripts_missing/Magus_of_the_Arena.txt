@@ -1,5 +1,5 @@
 name=Magus of the Arena
-image=https://magiccards.info/scans/en/pc/104.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91e1c919-58e8-4637-a030-99ae90165585.jpg?1562925815
 value=3.600
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Erhnam Djinn
-image=https://magiccards.info/scans/en/ju/113.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a1b20fb7-90f3-442c-b105-dfcaf619348d.jpg?1562927688
 value=2.500
 rarity=R
 type=Creature

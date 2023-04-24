@@ -1,5 +1,5 @@
 name=Caterwauling Boggart
-image=https://magiccards.info/scans/en/lw/157.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee8337bf-9fe8-45a0-974c-8911306b19ea.jpg?1562373311
 value=3.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Riftmarked Knight
-image=https://magiccards.info/scans/en/pc/14.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20c4cb76-c895-4862-8099-d306b1bb06e9.jpg?1669487087
 value=3.722
 rarity=U
 type=Creature

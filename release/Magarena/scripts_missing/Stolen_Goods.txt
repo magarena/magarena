@@ -1,5 +1,5 @@
 name=Stolen Goods
-image=https://magiccards.info/scans/en/avr/78.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57b6f501-a5f8-4a54-bd77-d9b11ab430ff.jpg?1562704524
 image_updated=2016-02-29
 value=3.296
 rarity=R

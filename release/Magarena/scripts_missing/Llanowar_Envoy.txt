@@ -1,5 +1,5 @@
 name=Llanowar Envoy
-image=https://magiccards.info/scans/en/dom/169.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a667bba-ecf0-4212-8ca3-75d4db6abce2.jpg?1593862645
 value=2.500
 rarity=C
 type=Creature

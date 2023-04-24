@@ -1,5 +1,5 @@
 name=Ob Nixilis, Unshackled
-image=https://magiccards.info/scans/en/m15/110.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c727f49-833a-4b79-9946-bfbc6b06999c.jpg?1673147587
 value=3.600
 rarity=R
 type=Legendary,Creature

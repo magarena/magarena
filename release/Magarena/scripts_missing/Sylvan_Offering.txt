@@ -1,5 +1,5 @@
 name=Sylvan Offering
-image=https://magiccards.info/scans/en/c14/48.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd68c02d-aa09-47ee-b989-65965e82b9f3.jpg?1673484821
 value=2.500
 rarity=R
 type=Sorcery

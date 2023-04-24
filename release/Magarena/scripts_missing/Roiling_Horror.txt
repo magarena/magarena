@@ -1,5 +1,5 @@
 name=Roiling Horror
-image=https://magiccards.info/scans/en/pc/79.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f83006a5-c42b-4083-a246-f46b25412150.jpg?1562586132
 value=2.838
 rarity=R
 type=Creature

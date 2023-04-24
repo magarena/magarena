@@ -1,5 +1,5 @@
 name=Kynaios and Tiro of Meletis
-image=https://magiccards.info/scans/en/c16/36.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97fa8615-2b6c-445a-bcaf-44a7e847bf65.jpg?1633190298
 image_updated=2016-12-21
 value=2.500
 rarity=M

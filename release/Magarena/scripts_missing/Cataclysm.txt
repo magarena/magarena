@@ -1,5 +1,5 @@
 name=Cataclysm
-image=https://magiccards.info/scans/en/ex/3.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/713160be-bcfd-4ef5-9457-c02b926ba06e.jpg?1562429859
 value=2.500
 rarity=R
 type=Sorcery

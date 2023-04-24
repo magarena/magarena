@@ -1,5 +1,5 @@
 name=Citadel Siege
-image=https://magiccards.info/scans/en/c16/62.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c13bc7c-a536-44d0-8c89-49ff33bee326.jpg?1637629045
 image_updated=2017-08-17
 value=2.500
 rarity=R

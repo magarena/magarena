@@ -1,5 +1,5 @@
 name=Channel
-image=https://magiccards.info/scans/en/ima/157.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce54c7c1-3401-4414-8da0-5846cb0ae1b4.jpg?1618695674
 image_updated=2017-04-12
 value=3.750
 rarity=M

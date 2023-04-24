@@ -1,5 +1,5 @@
 name=Vintara Elephant
-image=https://magiccards.info/scans/en/pr/131.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f99f7aef-7398-4e10-9f4e-68e7c294c101.jpg?1562941933
 value=1.643
 rarity=C
 type=Creature

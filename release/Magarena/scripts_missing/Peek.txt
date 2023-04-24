@@ -1,5 +1,5 @@
 name=Peek
-image=https://magiccards.info/scans/en/10e/94.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/869a6c06-eae5-418e-9a5c-26598a929416.jpg?1562550991
 value=3.537
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Muse Vessel
-image=https://magiccards.info/scans/en/di/163.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10482209-19b1-4941-9133-f2764eeba092.jpg?1593274015
 value=3.581
 rarity=R
 type=Artifact

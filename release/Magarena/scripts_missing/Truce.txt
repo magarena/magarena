@@ -1,5 +1,5 @@
 name=Truce
-image=https://magiccards.info/scans/en/5e/341.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de4f53fc-69d7-49fb-885b-4cc02bf5facc.jpg?1562594477
 value=3.226
 rarity=R
 type=Instant

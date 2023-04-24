@@ -1,5 +1,5 @@
 name=Cloudstone Curio
-image=https://magiccards.info/scans/en/rav/257.jpg
+image=https://cards.scryfall.io/border_crop/front/4/7/47cbda17-d368-4dc3-b41c-95b146468b44.jpg?1598917924
 value=4.000
 rarity=R
 type=Artifact

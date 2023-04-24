@@ -1,5 +1,5 @@
 name=Behemoth's Herald
-image=https://magiccards.info/scans/en/ala/124.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b51e84d7-bf9f-454f-bdcd-a2458b1b5b33.jpg?1562708096
 value=1.717
 rarity=U
 type=Creature

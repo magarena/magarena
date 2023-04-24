@@ -1,5 +1,5 @@
 name=Hatred
-image=https://magiccards.info/scans/en/ex/64.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/2383a8d9-96fd-4f9a-bcf9-eb81fdb15ead.jpg?1562087367
 value=4.500
 rarity=R
 type=Instant

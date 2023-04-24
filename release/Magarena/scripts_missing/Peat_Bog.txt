@@ -1,5 +1,5 @@
 name=Peat Bog
-image=https://magiccards.info/scans/en/mm/322.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcc9d1e0-c8f4-4bac-90d4-8167f7a1515a.jpg?1562382568
 value=3.712
 rarity=C
 type=Land

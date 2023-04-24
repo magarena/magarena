@@ -1,5 +1,5 @@
 name=Reinforcements
-image=https://magiccards.info/scans/en/cstd/5.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36f250f5-e667-458d-aed7-3ead3f3db64b.jpg?1562868078
 value=4.000
 rarity=C
 type=Instant

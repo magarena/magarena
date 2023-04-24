@@ -1,5 +1,5 @@
 name=Pyramids
-image=https://magiccards.info/scans/en/an/81.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2e9decf-47b7-44e0-b380-8055b6011021.jpg?1562934392
 value=1.978
 rarity=R
 type=Artifact

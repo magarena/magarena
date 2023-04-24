@@ -1,5 +1,5 @@
 name=Sapling of Colfenor
-image=https://magiccards.info/scans/en/eve/128.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33c19062-9e1c-4cae-bb97-7ca9e4523593.jpg?1625978030
 value=3.836
 rarity=R
 type=Legendary,Creature

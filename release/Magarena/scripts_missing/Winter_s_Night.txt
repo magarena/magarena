@@ -1,5 +1,5 @@
 name=Winter's Night
-image=https://magiccards.info/scans/en/ai/199.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/432d02e6-51b8-4b36-b551-e9e663ad2246.jpg?1562868099
 value=2.536
 rarity=R
 type=World,Enchantment

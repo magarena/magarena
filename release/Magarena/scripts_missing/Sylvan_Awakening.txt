@@ -1,5 +1,5 @@
 name=Sylvan Awakening
-image=https://magiccards.info/scans/en/dom/183.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93ac4d3d-064e-459d-b3a4-6c0872a2da8c.jpg?1591104718
 value=2.500
 rarity=R
 type=Sorcery

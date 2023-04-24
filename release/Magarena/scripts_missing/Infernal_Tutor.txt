@@ -1,5 +1,5 @@
 name=Infernal Tutor
-image=https://magiccards.info/scans/en/di/46.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a4e4be5-e057-4b50-9f86-76bc0b9987de.jpg?1593272922
 value=4.167
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Mind Swords
-image=https://magiccards.info/scans/en/ne/60.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d6d91df-008b-48f2-a84f-550702fbcdb3.jpg?1562629493
 value=3.727
 rarity=C
 type=Sorcery

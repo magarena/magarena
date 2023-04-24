@@ -1,5 +1,5 @@
 name=Ceaseless Searblades
-image=https://magiccards.info/scans/en/lw/158.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7e103a3-555c-4b68-9768-42637bfd2478.jpg?1562361967
 value=2.946
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Kamahl's Summons
-image=https://magiccards.info/scans/en/on/269.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0edc37c6-b6a8-424f-95dd-928d03c28542.jpg?1562898460
 value=2.875
 rarity=U
 type=Sorcery

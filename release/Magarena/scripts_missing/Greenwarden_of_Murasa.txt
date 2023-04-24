@@ -1,5 +1,5 @@
 name=Greenwarden of Murasa
-image=https://magiccards.info/scans/en/bfz/174.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3460149e-8511-4387-83b9-1e4365ff6ea2.jpg?1673484611
 image_updated=2015-11-08
 value=2.500
 rarity=M

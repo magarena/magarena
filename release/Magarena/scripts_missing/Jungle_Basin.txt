@@ -1,5 +1,5 @@
 name=Jungle Basin
-image=https://magiccards.info/scans/en/c14/302.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4929e39-fccc-450b-bb18-f5ad56a397bd.jpg?1608918013
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Morsel Theft
-image=https://magiccards.info/scans/en/mt/68.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cac48152-81c0-4cdc-8e3c-bfbe7b068b28.jpg?1562881395
 value=3.532
 rarity=C
 type=Tribal,Sorcery

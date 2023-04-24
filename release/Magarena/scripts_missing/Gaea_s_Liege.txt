@@ -1,5 +1,5 @@
 name=Gaea's Liege
-image=https://magiccards.info/scans/en/tsts/78.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ade8d4a-6a47-4a01-9a0f-ff866055fd49.jpg?1562774581
 value=3.442
 rarity=R
 type=Creature

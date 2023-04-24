@@ -1,5 +1,5 @@
 name=Paradise Plume
-image=https://magiccards.info/scans/en/ts/260.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a83c2b6-8734-44a8-8b10-c8a6791e0336.jpg?1625979020
 value=3.081
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Remote Farm
-image=https://magiccards.info/scans/en/mm/323.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/115cab84-60d7-4bf2-9beb-b4ed7b5ceaf4.jpg?1562379416
 value=3.574
 rarity=C
 type=Land

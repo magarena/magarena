@@ -1,5 +1,5 @@
 name=Transmute Artifact
-image=https://magiccards.info/scans/en/aq/58.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/2888553d-5ed0-4e47-8cc2-1491b5557c53.jpg?1562904620
 value=4.316
 rarity=U
 type=Sorcery

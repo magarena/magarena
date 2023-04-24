@@ -1,5 +1,5 @@
 name=Proclamation of Rebirth
-image=https://magiccards.info/scans/en/di/15.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc799c97-3df1-4194-b220-6cf862ce3810.jpg?1593272547
 value=3.990
 rarity=R
 type=Sorcery

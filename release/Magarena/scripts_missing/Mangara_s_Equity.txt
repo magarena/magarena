@@ -1,5 +1,5 @@
 name=Mangara's Equity
-image=https://magiccards.info/scans/en/mr/230.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d796153-3f7f-4d94-8ad4-5a4b2c8e09bb.jpg?1562719772
 value=2.736
 rarity=U
 type=Enchantment

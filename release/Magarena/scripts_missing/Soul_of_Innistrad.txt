@@ -1,5 +1,5 @@
 name=Soul of Innistrad
-image=https://magiccards.info/scans/en/m15/115.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31155467-5444-4a9b-a602-ec7cdad89e8b.jpg?1591320480
 value=3.688
 rarity=M
 type=Creature

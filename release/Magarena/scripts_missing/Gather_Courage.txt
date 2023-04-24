@@ -1,5 +1,5 @@
 name=Gather Courage
-image=https://magiccards.info/scans/en/m15/175.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e56b1112-ed25-46dd-85c8-58cc7a913198.jpg?1562796028
 value=3.500
 rarity=U
 type=Instant

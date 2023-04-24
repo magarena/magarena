@@ -1,5 +1,5 @@
 name=Forcemage Advocate
-image=https://magiccards.info/scans/en/ju/116.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1ad217fe-9309-4c67-8a6a-cfb8b1ce91f1.jpg?1562628846
 value=2.562
 rarity=U
 type=Creature

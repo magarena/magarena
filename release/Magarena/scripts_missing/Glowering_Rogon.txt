@@ -1,5 +1,5 @@
 name=Glowering Rogon
-image=https://magiccards.info/scans/en/le/128.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/974b0881-bd26-4074-93dd-a1e3600347c4.jpg?1562925487
 value=2.056
 rarity=C
 type=Creature

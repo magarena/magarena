@@ -1,5 +1,5 @@
 name=Iname, Life Aspect
-image=https://magiccards.info/scans/en/chk/215.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be027e3c-8891-46f0-bca7-d28a94ca281a.jpg?1562764156
 value=3.107
 rarity=R
 type=Legendary,Creature

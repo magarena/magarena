@@ -1,5 +1,5 @@
 name=Flowstone Flood
-image=https://magiccards.info/scans/en/ex/83.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bcda003-6fac-4879-87e6-ec0c115630ba.jpg?1562088311
 value=2.386
 rarity=U
 type=Sorcery

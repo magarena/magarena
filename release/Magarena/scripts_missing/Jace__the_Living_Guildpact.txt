@@ -1,5 +1,5 @@
 name=Jace, the Living Guildpact
-image=https://magiccards.info/scans/en/m15/62.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99713bb4-186f-42b6-aa66-e94ec8858e6a.jpg?1562791409
 value=2.833
 rarity=M
 type=Legendary,Planeswalker

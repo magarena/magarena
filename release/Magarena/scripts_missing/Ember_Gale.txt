@@ -1,5 +1,5 @@
 name=Ember Gale
-image=https://magiccards.info/scans/en/shm/91.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acf0cafc-ca14-4c1a-8237-565515a81dec.jpg?1562834562
 value=2.534
 rarity=C
 type=Sorcery

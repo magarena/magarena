@@ -1,5 +1,5 @@
 name=Risky Move
-image=https://magiccards.info/scans/en/on/223.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d10de061-c4f9-4550-ad97-71b69b6f5e18.jpg?1645329153
 value=2.614
 rarity=R
 type=Enchantment

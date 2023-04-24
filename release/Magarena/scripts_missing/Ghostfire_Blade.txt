@@ -1,5 +1,5 @@
 name=Ghostfire Blade
-image=https://magiccards.info/scans/en/ktk/220.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/711145d8-5178-4fdc-8494-4ab680f55b1a.jpg?1562788410
 value=2.500
 rarity=R
 type=Artifact

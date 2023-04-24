@@ -1,5 +1,5 @@
 name=Lord of the Accursed
-image=https://magiccards.info/scans/en/akh/99.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20bfecb3-2dc8-4549-9297-413131de8fdc.jpg?1637630635
 value=2.500
 rarity=U
 type=Creature

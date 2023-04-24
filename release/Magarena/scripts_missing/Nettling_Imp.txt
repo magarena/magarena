@@ -1,5 +1,5 @@
 name=Nettling Imp
-image=https://magiccards.info/scans/en/rv/27.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54039c4b-23c7-4e2c-8bd3-7a28714244b8.jpg?1559592898
 value=3.670
 rarity=U
 type=Creature

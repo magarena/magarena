@@ -1,5 +1,5 @@
 name=Pyretic Hunter
-image=https://magiccards.info/scans/en/cn2/56.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f17be2c-f8c7-41b3-b8fa-30b9e4e826c9.jpg?1576381961
 image_updated=2016-09-05
 value=2.500
 rarity=U

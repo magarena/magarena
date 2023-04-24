@@ -1,5 +1,5 @@
 name=Infernal Offering
-image=https://magiccards.info/scans/en/c14/24.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8af751fd-bfac-43cb-af3b-6116fd643703.jpg?1625977024
 value=2.500
 rarity=R
 type=Sorcery

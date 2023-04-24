@@ -1,5 +1,5 @@
 name=Premature Burial
-image=https://magiccards.info/scans/en/ts/125.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b42f83e3-631b-432e-8d2f-f62d3207e95e.jpg?1619395904
 value=1.465
 rarity=U
 type=Sorcery

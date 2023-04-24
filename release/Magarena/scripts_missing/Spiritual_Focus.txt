@@ -1,5 +1,5 @@
 name=Spiritual Focus
-image=https://magiccards.info/scans/en/mm/49.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/8521ae08-eb46-45ff-8fc4-62d8b07cfac2.jpg?1562381833
 value=3.817
 rarity=R
 type=Enchantment

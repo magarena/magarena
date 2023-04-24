@@ -1,5 +1,5 @@
 name=Llawan, Cephalid Empress
-image=https://magiccards.info/scans/en/tr/42.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9821970-a5da-4045-93d8-f58c9e5797c1.jpg?1562631417
 value=4.000
 rarity=R
 type=Legendary,Creature

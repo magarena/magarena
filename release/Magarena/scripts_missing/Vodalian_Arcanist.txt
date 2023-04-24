@@ -1,5 +1,5 @@
 name=Vodalian Arcanist
-image=https://magiccards.info/scans/en/dom/73.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a52e90c0-b012-4ce5-8462-1e33c7143de5.jpg?1594735900
 value=2.500
 rarity=C
 type=Creature

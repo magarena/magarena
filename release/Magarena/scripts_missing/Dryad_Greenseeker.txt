@@ -1,5 +1,5 @@
 name=Dryad Greenseeker
-image=https://magiccards.info/scans/en/m19/178.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30171803-1e7b-430b-a0de-2dfd2f1115ac.jpg?1562301242
 value=2.500
 rarity=U
 type=Creature

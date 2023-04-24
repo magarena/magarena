@@ -1,5 +1,5 @@
 name=Wardscale Dragon
-image=https://magiccards.info/scans/en/frf/30.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4290215-3aec-40b8-aac5-e5c39c035cfe.jpg?1562830249
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Gladehart Cavalry
-image=https://magiccards.info/scans/en/ogw/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50558302-eea7-4d60-a65b-50386e73fccd.jpg?1561758956
 image_updated=2016-02-29
 value=2.500
 rarity=R

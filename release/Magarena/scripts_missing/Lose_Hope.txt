@@ -1,5 +1,5 @@
 name=Lose Hope
-image=https://magiccards.info/scans/en/5dn/52.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/438d7bf6-00f4-4c7e-b1a4-f7fd690d4788.jpg?1562876632
 value=3.500
 rarity=C
 type=Instant

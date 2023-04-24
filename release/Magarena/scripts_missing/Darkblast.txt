@@ -1,5 +1,5 @@
 name=Darkblast
-image=https://magiccards.info/scans/en/rav/82.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dcaba91-06d3-4492-9e07-36a1b858ca47.jpg?1598914737
 value=4.191
 rarity=U
 type=Instant

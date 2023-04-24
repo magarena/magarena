@@ -1,5 +1,5 @@
 name=Channel the Suns
-image=https://magiccards.info/scans/en/5dn/84.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bf574c8-a7e0-482e-bb41-680454988097.jpg?1562877937
 value=4.179
 rarity=U
 type=Sorcery

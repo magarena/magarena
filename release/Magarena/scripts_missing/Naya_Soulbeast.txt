@@ -1,5 +1,5 @@
 name=Naya Soulbeast
-image=https://magiccards.info/scans/en/c13/157.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0e4b468-096b-4f80-9e78-022fe24a7e45.jpg?1562945827
 value=2.283
 rarity=R
 type=Creature

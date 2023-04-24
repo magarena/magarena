@@ -1,5 +1,5 @@
 name=Torchling
-image=https://magiccards.info/scans/en/pc/110.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2ba03cd-1347-46e6-9117-2b22ce62a645.jpg?1592765764
 image_updated=2017-01-11
 value=3.468
 rarity=R

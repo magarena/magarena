@@ -1,5 +1,5 @@
 name=Aether Gale
-image=https://magiccards.info/scans/en/c14/11.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd153e03-4fe1-477d-9e7f-ee5c432a4285.jpg?1674141260
 image_updated=2016-09-27
 value=2.500
 rarity=R

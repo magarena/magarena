@@ -1,5 +1,5 @@
 name=Paroxysm
-image=https://magiccards.info/scans/en/ex/94.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53320321-4f02-40ee-8171-2375b1d4ed66.jpg?1562087836
 value=1.757
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Brood Keeper
-image=https://magiccards.info/scans/en/m15/132.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a640a5b-c638-4ae6-ad02-eb5fe20f4662.jpg?1562782386
 value=3.300
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dance of the Skywise
-image=https://magiccards.info/scans/en/dtk/50.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c548d140-3d81-4b33-9985-87703d316a83.jpg?1562792779
 value=2.500
 rarity=U
 type=Instant

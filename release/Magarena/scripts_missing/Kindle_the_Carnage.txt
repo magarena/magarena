@@ -1,5 +1,5 @@
 name=Kindle the Carnage
-image=https://magiccards.info/scans/en/di/66.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b5dfa91-8f93-41b7-95e9-3374550f1617.jpg?1593273180
 value=3.878
 rarity=U
 type=Sorcery

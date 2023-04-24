@@ -1,5 +1,5 @@
 name=Stonehorn Dignitary
-image=https://magiccards.info/scans/en/m12/37.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3797f7f-489d-4735-af56-6359e0fa0a6b.jpg?1562658626
 value=3.955
 rarity=C
 type=Creature

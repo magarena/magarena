@@ -1,5 +1,5 @@
 name=Stromgald Spy
-image=https://magiccards.info/scans/en/ai/29.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0cf8cecc-449f-4cc6-ac4d-440722df0ab9.jpg?1562767773
 value=3.269
 rarity=U
 type=Creature

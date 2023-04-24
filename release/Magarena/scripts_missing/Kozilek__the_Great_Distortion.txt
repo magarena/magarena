@@ -1,5 +1,5 @@
 name=Kozilek, the Great Distortion
-image=https://magiccards.info/scans/en/ogw/4.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f06fc6e0-b22c-40d3-bb53-d5ec400d921c.jpg?1562943286
 image_updated=2016-02-29
 value=2.500
 rarity=M

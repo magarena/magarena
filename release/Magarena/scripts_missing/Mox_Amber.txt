@@ -1,5 +1,5 @@
 name=Mox Amber
-image=https://magiccards.info/scans/en/dom/224.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66024e69-ad60-4c9a-a0ca-da138d33ad80.jpg?1562736914
 value=2.500
 rarity=M
 type=Legendary,Artifact

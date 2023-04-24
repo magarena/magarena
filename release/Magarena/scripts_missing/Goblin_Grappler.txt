@@ -1,5 +1,5 @@
 name=Goblin Grappler
-image=https://magiccards.info/scans/en/le/100.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c948872-295c-41b9-8094-db7db7578b0d.jpg?1562913803
 value=3.625
 rarity=C
 type=Creature

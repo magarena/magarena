@@ -1,5 +1,5 @@
 name=Coordinated Assault
-image=https://magiccards.info/scans/en/ima/121.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a08654c6-9073-4c37-b23d-02136248cf37.jpg?1562852468
 image_updated=2017-04-12
 value=3.482
 rarity=U

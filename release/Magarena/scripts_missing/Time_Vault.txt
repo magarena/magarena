@@ -1,5 +1,5 @@
 name=Time Vault
-image=https://magiccards.info/scans/en/un/275.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c367ffc1-8084-45a1-87d5-22183604d1cb.jpg?1562934224
 value=4.833
 rarity=R
 type=Artifact

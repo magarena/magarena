@@ -1,5 +1,5 @@
 name=Tragic Arrogance
-image=https://magiccards.info/scans/en/ori/38.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/215f75ff-bcbb-45db-8393-9bce650998c2.jpg?1625975805
 image_updated=2015-11-05
 value=2.500
 rarity=R

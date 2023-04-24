@@ -1,5 +1,5 @@
 name=Nourishing Shoal
-image=https://magiccards.info/scans/en/bok/137.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/9472cd09-0b0a-49c9-ab10-ec5b73ddb74b.jpg?1547517693
 value=2.400
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Jalira, Master Polymorphist
-image=https://magiccards.info/scans/en/a25/63.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f9719c8-2dfe-4141-9ede-2ee3a282b5e9.jpg?1562433489
 image_updated=2018-04-25
 value=3.562
 rarity=U

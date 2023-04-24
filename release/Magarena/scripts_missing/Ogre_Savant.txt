@@ -1,5 +1,5 @@
 name=Ogre Savant
-image=https://magiccards.info/scans/en/gp/70.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1940a64a-51da-4509-b33e-86415aeeafad.jpg?1592713332
 value=2.333
 rarity=C
 type=Creature

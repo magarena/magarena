@@ -1,5 +1,5 @@
 name=Gibbering Descent
-image=https://magiccards.info/scans/en/fut/66.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4839a0b-47db-4464-9e9a-0e976d468106.jpg?1562937633
 value=3.750
 rarity=R
 type=Enchantment

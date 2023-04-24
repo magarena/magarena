@@ -1,5 +1,5 @@
 name=Collective Voyage
-image=https://magiccards.info/scans/en/c16/145.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f2d44f0-c71e-4061-bb7c-1f91fbce8f51.jpg?1562396584
 image_updated=2017-08-17
 value=3.656
 rarity=R

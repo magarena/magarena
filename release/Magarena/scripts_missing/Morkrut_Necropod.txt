@@ -1,5 +1,5 @@
 name=Morkrut Necropod
-image=https://magiccards.info/scans/en/soi/125.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f726f215-d0a5-4e2c-b874-9dc209479993.jpg?1576384528
 value=2.500
 rarity=U
 type=Creature

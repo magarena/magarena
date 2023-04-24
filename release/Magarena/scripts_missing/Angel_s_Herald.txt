@@ -1,5 +1,5 @@
 name=Angel's Herald
-image=https://magiccards.info/scans/en/ala/2.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36197ed0-4382-4de3-8359-73cb74edc78b.jpg?1562702758
 value=1.771
 rarity=U
 type=Creature

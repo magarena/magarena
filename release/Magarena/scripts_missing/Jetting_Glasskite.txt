@@ -1,5 +1,5 @@
 name=Jetting Glasskite
-image=https://magiccards.info/scans/en/ema/58.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24f01503-03d3-4d74-b9d0-b973f7d66094.jpg?1580014016
 value=3.429
 rarity=U
 type=Creature

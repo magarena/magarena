@@ -1,5 +1,5 @@
 name=Shifty Doppelganger
-image=https://magiccards.info/scans/en/od/101.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/538ffe1e-c312-4797-99dd-9bf5f896bdc3.jpg?1562910319
 value=3.935
 rarity=R
 type=Creature

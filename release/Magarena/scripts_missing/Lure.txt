@@ -1,5 +1,5 @@
 name=Lure
-image=https://magiccards.info/scans/en/ima/175.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72c8336d-54cf-45af-a9ef-a1428facf91b.jpg?1562850140
 image_updated=2017-04-12
 value=4.042
 rarity=U

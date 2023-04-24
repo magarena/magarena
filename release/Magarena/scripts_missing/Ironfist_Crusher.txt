@@ -1,5 +1,5 @@
 name=Ironfist Crusher
-image=https://magiccards.info/scans/en/on/42.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7284e32-de54-4c83-a7de-7b249c47319a.jpg?1562942046
 value=3.058
 rarity=U
 type=Creature

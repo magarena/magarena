@@ -1,5 +1,5 @@
 name=Lat-Nam's Legacy
-image=https://magiccards.info/scans/en/cstd/13.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce13ff7b-a03c-488f-a140-2c03b64fe218.jpg?1562870487
 value=4.035
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Dread Slaver
-image=https://magiccards.info/scans/en/avr/98.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3d8a3abd-a4a2-48e6-b709-1c0240a76c5e.jpg?1592708840
 value=3.413
 rarity=R
 type=Creature

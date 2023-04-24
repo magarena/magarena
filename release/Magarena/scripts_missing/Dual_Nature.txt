@@ -1,5 +1,5 @@
 name=Dual Nature
-image=https://magiccards.info/scans/en/pr/112.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/6890e414-d7e1-4320-924c-083e65a2ae72.jpg?1562914377
 value=3.583
 rarity=R
 type=Enchantment

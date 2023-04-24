@@ -1,5 +1,5 @@
 name=Tinder Wall
-image=https://magiccards.info/scans/en/cstd/40.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e62598f-0a91-4cfd-9a28-c3bda61c9ead.jpg?1562867846
 value=4.556
 rarity=C
 type=Creature

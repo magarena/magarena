@@ -1,5 +1,5 @@
 name=Grave Scrabbler
-image=https://magiccards.info/scans/en/fut/86.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6c53e52-8d63-4628-bfb9-8abe4c7c7f4a.jpg?1619395549
 value=3.227
 rarity=C
 type=Creature

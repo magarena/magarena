@@ -1,5 +1,5 @@
 name=Untamed Hunger
-image=https://magiccards.info/scans/en/ogw/91.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/caccbba0-80b1-461c-b548-33d7f3a48342.jpg?1562200901
 image_updated=2016-02-29
 value=2.500
 rarity=C

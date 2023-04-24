@@ -1,5 +1,5 @@
 name=Elsewhere Flask
-image=https://magiccards.info/scans/en/shm/250.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9273a17d-114b-4d54-a2a5-1047df8caa9d.jpg?1562833200
 value=3.050
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Root Sliver
-image=https://magiccards.info/scans/en/le/137.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdf5a106-5fb7-40e4-82a7-db559302a923.jpg?1562946276
 value=3.653
 rarity=U
 type=Creature

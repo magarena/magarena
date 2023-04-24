@@ -1,5 +1,5 @@
 name=Bastion Inventor
-image=https://magiccards.info/scans/en/aer/30.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/856f804d-0213-4b86-bc6a-6a0a1147c4f9.jpg?1576381465
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Misdirection
-image=https://magiccards.info/scans/en/cns/102.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c96763d6-0cea-40ed-afb2-886bfebe50a0.jpg?1592764638
 value=4.364
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Melek, Izzet Paragon
-image=https://magiccards.info/scans/en/dgm/84.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5489d43c-2034-421d-80e8-96a7377795c8.jpg?1591321364
 image_updated=2016-02-29
 value=3.821
 rarity=R

@@ -1,5 +1,5 @@
 name=Rites of Refusal
-image=https://magiccards.info/scans/en/od/99.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa88f595-1b6f-4af0-bc50-bd07c8be431f.jpg?1562942139
 value=3.135
 rarity=C
 type=Instant

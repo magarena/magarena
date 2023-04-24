@@ -1,5 +1,5 @@
 name=Auriok Replica
-image=https://magiccards.info/scans/en/som/138.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02745a0a-9872-4c30-a25d-61695c5fa9cc.jpg?1562814083
 value=2.543
 rarity=C
 type=Artifact,Creature

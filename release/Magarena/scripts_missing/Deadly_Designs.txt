@@ -1,5 +1,5 @@
 name=Deadly Designs
-image=https://magiccards.info/scans/en/a25/83.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6fbdf30e-effe-4008-ba9d-2157f6d21f55.jpg?1562436598
 image_updated=2018-04-25
 value=2.500
 rarity=U

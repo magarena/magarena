@@ -1,5 +1,5 @@
 name=Serum Powder
-image=https://magiccards.info/scans/en/ima/228.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8753b80-aa9e-4f82-9a02-6b3997169dbb.jpg?1562853734
 image_updated=2017-04-12
 value=3.882
 rarity=R

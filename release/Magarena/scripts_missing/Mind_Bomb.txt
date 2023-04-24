@@ -1,5 +1,5 @@
 name=Mind Bomb
-image=https://magiccards.info/scans/en/5e/105.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c46d040-58c2-4f7a-8b66-fea33fcb0e11.jpg?1562590625
 value=4.017
 rarity=U
 type=Sorcery

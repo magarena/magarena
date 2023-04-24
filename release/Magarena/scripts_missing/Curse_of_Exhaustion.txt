@@ -1,5 +1,5 @@
 name=Curse of Exhaustion
-image=https://magiccards.info/scans/en/dka/5.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b737a959-e974-4b2a-8dca-a257da6084b0.jpg?1562938194
 value=3.942
 rarity=U
 type=Enchantment

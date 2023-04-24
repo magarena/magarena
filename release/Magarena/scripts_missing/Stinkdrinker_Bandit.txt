@@ -1,5 +1,5 @@
 name=Stinkdrinker Bandit
-image=https://magiccards.info/scans/en/mt/80.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd75155b-a13d-4bed-8014-70f27175aa74.jpg?1604193555
 value=3.300
 rarity=U
 type=Creature

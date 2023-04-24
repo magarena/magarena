@@ -1,5 +1,5 @@
 name=Jeweled Amulet
-image=https://magiccards.info/scans/en/ia/301.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1ec4975d-3ca8-45fd-9e6c-06650c6ac2e2.jpg?1562867848
 value=3.232
 rarity=U
 type=Artifact

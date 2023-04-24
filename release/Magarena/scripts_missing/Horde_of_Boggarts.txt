@@ -1,5 +1,5 @@
 name=Horde of Boggarts
-image=https://magiccards.info/scans/en/shm/94.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/023562bf-da7d-486d-93fc-60353f55b8a7.jpg?1562826268
 value=3.408
 rarity=U
 type=Creature

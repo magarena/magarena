@@ -1,5 +1,5 @@
 name=Aggressive Mining
-image=https://magiccards.info/scans/en/m15/127.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e15a3f1a-83af-4541-8d1c-bf7844f969c9.jpg?1562795703
 value=2.636
 rarity=R
 type=Enchantment

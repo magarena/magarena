@@ -1,5 +1,5 @@
 name=Ephemeral Shields
-image=https://magiccards.info/scans/en/m15/11.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60fcd11e-9bc3-4a27-966c-42767bac3223.jpg?1682208406
 value=2.857
 rarity=C
 type=Instant

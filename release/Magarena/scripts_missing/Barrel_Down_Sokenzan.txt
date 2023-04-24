@@ -1,5 +1,5 @@
 name=Barrel Down Sokenzan
-image=https://magiccards.info/scans/en/sok/94.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02c52e00-ad17-42aa-9f5f-38fb52dad5ea.jpg?1562492053
 value=2.774
 rarity=C
 type=Instant

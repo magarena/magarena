@@ -1,5 +1,5 @@
 name=Merieke Ri Berit
-image=https://magiccards.info/scans/en/tsts/95.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63f7cf94-78f6-4f30-ab24-8b90231520f1.jpg?1562777403
 value=3.992
 rarity=R
 type=Legendary,Creature

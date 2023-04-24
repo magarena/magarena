@@ -1,5 +1,5 @@
 name=Advice from the Fae
-image=https://magiccards.info/scans/en/shm/28.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d874f345-e623-4317-9aa7-66d14a011303.jpg?1562836692
 value=2.694
 rarity=U
 type=Sorcery

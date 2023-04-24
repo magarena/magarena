@@ -1,5 +1,5 @@
 name=Final Fortune
-image=https://magiccards.info/scans/en/7e/182.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb80afc3-4887-42a0-afb2-7fa997981fb2.jpg?1562251808
 value=4.447
 rarity=R
 type=Instant

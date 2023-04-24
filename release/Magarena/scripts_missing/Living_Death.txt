@@ -1,5 +1,5 @@
 name=Living Death
-image=https://magiccards.info/scans/en/a25/96.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80e7d9a3-06a1-400d-958c-9b5302e046a6.jpg?1562274570
 image_updated=2018-04-25
 value=2.500
 rarity=R

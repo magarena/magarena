@@ -1,5 +1,5 @@
 name=Flash Conscription
-image=https://magiccards.info/scans/en/rav/124.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52361237-a653-4470-9ed5-c531c040c686.jpg?1598915490
 value=2.276
 rarity=U
 type=Instant

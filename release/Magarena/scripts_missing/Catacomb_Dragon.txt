@@ -1,5 +1,5 @@
 name=Catacomb Dragon
-image=https://magiccards.info/scans/en/mr/10.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46daebe4-199e-4580-8a52-1aebc8492d8c.jpg?1562718805
 value=3.915
 rarity=R
 type=Creature

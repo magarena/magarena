@@ -1,5 +1,5 @@
 name=River Heralds' Boon
-image=https://magiccards.info/scans/en/xln/204.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e355a98d-093d-4ab2-84f2-f560d08f1fca.jpg?1562565614
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=An-Zerrin Ruins
-image=https://magiccards.info/scans/en/hl/87.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c738baa-61c4-4b3c-9311-1e69bde0ed8a.jpg?1562869047
 value=3.761
 rarity=R
 type=Enchantment

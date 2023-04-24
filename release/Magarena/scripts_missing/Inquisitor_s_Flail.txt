@@ -1,5 +1,5 @@
 name=Inquisitor's Flail
-image=https://magiccards.info/scans/en/isd/227.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/3014f59d-9012-473a-8bb1-8085c6e91632.jpg?1562828153
 value=3.858
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Tattoo Ward
-image=https://magiccards.info/scans/en/od/54.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89920480-9b39-47dd-988a-c040067da7fb.jpg?1562920515
 value=2.325
 rarity=U
 type=Enchantment

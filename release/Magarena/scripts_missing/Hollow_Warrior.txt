@@ -1,5 +1,5 @@
 name=Hollow Warrior
-image=https://magiccards.info/scans/en/pr/138.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/163add05-9ee9-4a8f-8838-3c4143ddc2f5.jpg?1562899234
 value=2.321
 rarity=U
 type=Artifact,Creature

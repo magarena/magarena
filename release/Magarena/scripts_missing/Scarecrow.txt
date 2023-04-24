@@ -1,5 +1,5 @@
 name=Scarecrow
-image=https://magiccards.info/scans/en/dk/105.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b0dcd50-7403-48e5-b928-5d35d7304f51.jpg?1562912597
 value=2.810
 rarity=U
 type=Artifact,Creature

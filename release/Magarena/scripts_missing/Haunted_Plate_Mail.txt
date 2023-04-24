@@ -1,5 +1,5 @@
 name=Haunted Plate Mail
-image=https://magiccards.info/scans/en/m15/218.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7daae6f-fe19-4f42-b85d-75c996abe1be.jpg?1562797222
 value=3.400
 rarity=R
 type=Artifact

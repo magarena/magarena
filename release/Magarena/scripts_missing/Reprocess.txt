@@ -1,5 +1,5 @@
 name=Reprocess
-image=https://magiccards.info/scans/en/7e/159.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c041d8a-0bce-4f5b-904e-ba98bfe7c50a.jpg?1562916673
 value=4.271
 rarity=R
 type=Sorcery

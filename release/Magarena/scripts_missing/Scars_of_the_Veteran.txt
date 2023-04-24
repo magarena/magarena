@@ -1,5 +1,5 @@
 name=Scars of the Veteran
-image=https://magiccards.info/scans/en/cstd/6.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d239cae2-48c4-4ac7-a41a-7e25d852ee22.jpg?1562870493
 value=3.488
 rarity=U
 type=Instant

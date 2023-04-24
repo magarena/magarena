@@ -1,5 +1,5 @@
 name=Nature's Will
-image=https://magiccards.info/scans/en/chk/230.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75a291a0-db0d-4ccc-b7ae-240cafa41883.jpg?1562761547
 value=3.787
 rarity=R
 type=Enchantment

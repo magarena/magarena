@@ -1,5 +1,5 @@
 name=Svogthos, the Restless Tomb
-image=https://magiccards.info/scans/en/cmd/289.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffe08b0f-bb53-40b9-8057-10b60070459b.jpg?1562276944
 value=3.886
 rarity=U
 type=Land

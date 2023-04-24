@@ -1,5 +1,5 @@
 name=Goblin Trailblazer
-image=https://magiccards.info/scans/en/rix/105.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca382425-2454-4300-b903-fdefd31582d3.jpg?1608910239
 value=2.500
 rarity=C
 type=Creature

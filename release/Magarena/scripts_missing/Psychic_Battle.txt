@@ -1,5 +1,5 @@
 name=Psychic Battle
-image=https://magiccards.info/scans/en/in/68.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8758ca24-e613-43bf-be58-4cf557f82d0c.jpg?1562922363
 value=3.871
 rarity=R
 type=Enchantment

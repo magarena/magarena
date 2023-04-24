@@ -1,5 +1,5 @@
 name=Indentured Djinn
-image=https://magiccards.info/scans/en/mm/85.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dae62ce7-852b-42c6-9cbe-4807d8bf5740.jpg?1562383056
 value=2.903
 rarity=U
 type=Creature

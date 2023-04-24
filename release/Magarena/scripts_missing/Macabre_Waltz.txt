@@ -1,5 +1,5 @@
 name=Macabre Waltz
-image=https://magiccards.info/scans/en/m19/108.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5776bc9-7295-4143-a453-64e3c681f8e7.jpg?1600700792
 image_updated=2018-08-07
 value=3.314
 rarity=C

@@ -1,5 +1,5 @@
 name=Tatyova, Benthic Druid
-image=https://magiccards.info/scans/en/dom/206.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93657aaa-7a0f-49ad-b026-6f79b3bd6768.jpg?1665822988
 value=2.500
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Firemane Angel
-image=https://magiccards.info/scans/en/ima/199.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16384575-d0bc-4826-966e-a4bf6ae6ab97.jpg?1562846244
 image_updated=2017-04-12
 value=3.689
 rarity=R

@@ -1,5 +1,5 @@
 name=Wort, the Raidmother
-image=https://magiccards.info/scans/en/mm3/214.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b46b4ee-263a-4a4b-8fbc-3ea6fa9ba56b.jpg?1591321523
 image_updated=2017-08-08
 value=3.750
 rarity=R

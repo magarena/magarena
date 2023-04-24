@@ -1,5 +1,5 @@
 name=Crucible of Worlds
-image=https://magiccards.info/scans/en/m19/229.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f4893ef-f983-418b-b7a4-5f073c844545.jpg?1673149345
 image_updated=2018-08-07
 value=4.597
 rarity=M

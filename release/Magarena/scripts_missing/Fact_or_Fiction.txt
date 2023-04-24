@@ -1,5 +1,5 @@
 name=Fact or Fiction
-image=https://magiccards.info/scans/en/ema/48.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43d5a3ec-eb03-47c1-9570-98832ebf8898.jpg?1674141331
 value=2.500
 rarity=U
 type=Instant

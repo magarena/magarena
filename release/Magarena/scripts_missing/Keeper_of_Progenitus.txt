@@ -1,5 +1,5 @@
 name=Keeper of Progenitus
-image=https://magiccards.info/scans/en/ala/135.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcb023a2-e929-47e9-bd58-cbc6f241e7a4.jpg?1562708428
 value=3.095
 rarity=R
 type=Creature

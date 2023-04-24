@@ -1,5 +1,5 @@
 name=Waste Not
-image=https://magiccards.info/scans/en/c16/117.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f5500a2-c6d6-40d7-b586-59b854733160.jpg?1562393909
 image_updated=2017-08-17
 value=3.818
 rarity=R

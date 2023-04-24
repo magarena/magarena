@@ -1,5 +1,5 @@
 name=Myr Battlesphere
-image=https://magiccards.info/scans/en/c16/263.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8299d1e-84c1-4c02-a00d-6e7a662e1a7a.jpg?1682210108
 image_updated=2017-08-17
 value=2.500
 rarity=R

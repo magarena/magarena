@@ -1,5 +1,5 @@
 name=Skullsnatcher
-image=https://magiccards.info/scans/en/pc2/36.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07a48566-47cd-4214-879d-13bc76d2c1d2.jpg?1562896496
 value=3.368
 rarity=C
 type=Creature

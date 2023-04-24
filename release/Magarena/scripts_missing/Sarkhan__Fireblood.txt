@@ -1,5 +1,5 @@
 name=Sarkhan, Fireblood
-image=https://magiccards.info/scans/en/m19/154.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/3553a70e-75de-4a8c-9b20-92cd4a317101.jpg?1562301657
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

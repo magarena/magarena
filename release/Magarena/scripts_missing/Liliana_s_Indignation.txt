@@ -1,5 +1,5 @@
 name=Liliana's Indignation
-image=https://magiccards.info/scans/en/soi/120.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3817ea1a-b3d8-46f1-ac6c-69caf2466bab.jpg?1576384494
 value=2.500
 rarity=U
 type=Sorcery

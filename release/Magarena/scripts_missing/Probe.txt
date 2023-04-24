@@ -1,5 +1,5 @@
 name=Probe
-image=https://magiccards.info/scans/en/in/66.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2a58d18-3d52-4178-86b2-7590d4164e76.jpg?1562927868
 value=3.872
 rarity=C
 type=Sorcery

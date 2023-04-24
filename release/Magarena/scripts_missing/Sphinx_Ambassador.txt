@@ -1,5 +1,5 @@
 name=Sphinx Ambassador
-image=https://magiccards.info/scans/en/m10/73.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0937274-d5cb-4790-8c10-804f537c5581.jpg?1561992164
 value=4.188
 rarity=M
 type=Creature

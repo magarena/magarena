@@ -1,5 +1,5 @@
 name=Moonring Mirror
-image=https://magiccards.info/scans/en/chk/262.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d36357a-97f6-4b2f-abbf-43f84c29609d.jpg?1562762482
 value=3.038
 rarity=R
 type=Artifact

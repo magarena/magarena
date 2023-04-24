@@ -1,5 +1,5 @@
 name=Mana Flare
-image=https://magiccards.info/scans/en/5e/249.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4bb303d-b230-430a-a2c3-f91a776de34e.jpg?1559592501
 value=3.936
 rarity=R
 type=Enchantment

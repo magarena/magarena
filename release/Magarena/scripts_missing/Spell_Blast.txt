@@ -1,5 +1,5 @@
 name=Spell Blast
-image=https://magiccards.info/scans/en/6e/100.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26fb30a8-9f6b-425b-95d3-0719319dbb3f.jpg?1562428659
 value=2.500
 rarity=C
 type=Instant

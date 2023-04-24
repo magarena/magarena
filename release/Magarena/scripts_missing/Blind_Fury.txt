@@ -1,5 +1,5 @@
 name=Blind Fury
-image=https://magiccards.info/scans/en/mr/158.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0ff91a17-0a5f-456f-a431-8505ba29e679.jpg?1562717842
 value=3.530
 rarity=U
 type=Instant

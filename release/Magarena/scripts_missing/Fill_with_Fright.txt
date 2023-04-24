@@ -1,5 +1,5 @@
 name=Fill with Fright
-image=https://magiccards.info/scans/en/5dn/50.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e666ad2c-eced-4d62-8533-bb6a1e76d122.jpg?1562941252
 value=2.823
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Oreskos Explorer
-image=https://magiccards.info/scans/en/c17/68.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/086f34b4-291b-4758-b9ab-6699aad20b8a.jpg?1625193212
 image_updated=2017-10-03
 value=2.500
 rarity=U

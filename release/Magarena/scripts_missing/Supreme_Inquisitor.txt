@@ -1,5 +1,5 @@
 name=Supreme Inquisitor
-image=https://magiccards.info/scans/en/on/117.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/867de3d2-2178-4931-823e-ff439e1a45ea.jpg?1562926695
 value=4.034
 rarity=R
 type=Creature

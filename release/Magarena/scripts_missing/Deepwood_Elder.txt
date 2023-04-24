@@ -1,5 +1,5 @@
 name=Deepwood Elder
-image=https://magiccards.info/scans/en/mm/240.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2a1ed74-027e-4c8e-ac7e-e58c5fccff14.jpg?1562383043
 value=2.966
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Nature's Panoply
-image=https://magiccards.info/scans/en/jou/131.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32177b9c-eef3-4eea-b623-74bfea1afad6.jpg?1593096246
 value=2.040
 rarity=C
 type=Instant

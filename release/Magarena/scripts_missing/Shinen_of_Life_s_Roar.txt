@@ -1,5 +1,5 @@
 name=Shinen of Life's Roar
-image=https://magiccards.info/scans/en/sok/149.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dad82af4-f004-4716-a17b-66a1ee31e128.jpg?1562941206
 image_updated=2016-01-09
 value=3.486
 rarity=C

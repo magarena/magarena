@@ -1,5 +1,5 @@
 name=Acidic Dagger
-image=https://magiccards.info/scans/en/mr/256.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6dfdea79-2a7c-489d-8466-e6090c2a0919.jpg?1562719777
 value=1.434
 rarity=R
 type=Artifact

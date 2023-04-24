@@ -1,5 +1,5 @@
 name=Ashmouth Blade
-image=https://magiccards.info/scans/en/soi/260b.jpg
+image=https://cards.scryfall.io/border_crop/back/5/c/5cc2ac21-d31f-4a0d-956a-dabb6e1f3b5a.jpg?1576385455
 value=2.500
 rarity=U
 type=Artifact

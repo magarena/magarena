@@ -1,5 +1,5 @@
 name=Chain Stasis
-image=https://magiccards.info/scans/en/hl/28.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f14f0c52-67c2-4302-82bd-fbb4e3c6d4f4.jpg?1589832227
 value=3.120
 rarity=R
 type=Instant

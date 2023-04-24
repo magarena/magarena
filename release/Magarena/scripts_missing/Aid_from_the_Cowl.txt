@@ -1,5 +1,5 @@
 name=Aid from the Cowl
-image=https://magiccards.info/scans/en/aer/105.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/327dbb25-833a-4293-b397-ebe7859227a5.jpg?1682209425
 value=2.500
 rarity=R
 type=Enchantment

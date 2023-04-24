@@ -1,5 +1,5 @@
 name=Rummaging Wizard
-image=https://magiccards.info/scans/en/on/110.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad96e158-bf2b-4f3e-9692-0f79efdd94f5.jpg?1665819753
 value=2.523
 rarity=U
 type=Creature

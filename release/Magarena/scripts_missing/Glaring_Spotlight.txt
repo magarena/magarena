@@ -1,5 +1,5 @@
 name=Glaring Spotlight
-image=https://magiccards.info/scans/en/gtc/229.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6070239-54a7-49d4-bd3c-d5c4cda971db.jpg?1561840439
 value=3.888
 rarity=R
 type=Artifact

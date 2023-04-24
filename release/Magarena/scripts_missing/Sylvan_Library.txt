@@ -1,5 +1,5 @@
 name=Sylvan Library
-image=https://magiccards.info/scans/en/ema/187.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a483778-b88b-473f-9217-7583e69b3e70.jpg?1610161812
 value=4.500
 rarity=R
 type=Enchantment

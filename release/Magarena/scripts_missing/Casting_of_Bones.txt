@@ -1,5 +1,5 @@
 name=Casting of Bones
-image=https://magiccards.info/scans/en/cstd/22.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e823c295-b66e-41c3-bd77-1a13f95e69c3.jpg?1562770650
 value=3.402
 rarity=C
 type=Enchantment

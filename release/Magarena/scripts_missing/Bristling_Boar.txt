@@ -1,5 +1,5 @@
 name=Bristling Boar
-image=https://magiccards.info/scans/en/m19/170.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3c3243c-e9af-4b7d-8296-f7714436e571.jpg?1591227540
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dark Impostor
-image=https://magiccards.info/scans/en/c17/109.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd9384c2-1b55-4da3-91f1-db3d65e98a85.jpg?1641602558
 image_updated=2017-10-03
 value=3.848
 rarity=R

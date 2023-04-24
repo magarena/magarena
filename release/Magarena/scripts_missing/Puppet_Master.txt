@@ -1,5 +1,5 @@
 name=Puppet Master
-image=https://magiccards.info/scans/en/lg/69.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b401d253-4e51-42db-91cc-ac8cc3d06ae6.jpg?1562931218
 image_updated=2017-01-03
 value=2.648
 rarity=U

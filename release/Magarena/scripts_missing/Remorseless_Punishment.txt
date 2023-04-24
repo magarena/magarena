@@ -1,5 +1,5 @@
 name=Remorseless Punishment
-image=https://magiccards.info/scans/en/ogw/89.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1dde9379-b335-400f-9748-a7ca3e293ee0.jpg?1562900878
 image_updated=2016-02-29
 value=2.500
 rarity=R

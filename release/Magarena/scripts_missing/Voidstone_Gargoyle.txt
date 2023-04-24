@@ -1,5 +1,5 @@
 name=Voidstone Gargoyle
-image=https://magiccards.info/scans/en/pc/21.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/583741a1-0faf-4fb3-8536-b9b1cc8a3b6f.jpg?1562572171
 value=3.802
 rarity=R
 type=Creature

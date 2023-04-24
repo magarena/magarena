@@ -1,5 +1,5 @@
 name=Insubordination
-image=https://magiccards.info/scans/en/mm/141.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2544c9d-adc2-4d67-8850-9af38e73ea1e.jpg?1562383041
 value=2.760
 rarity=C
 type=Enchantment

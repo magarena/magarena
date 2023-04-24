@@ -1,5 +1,5 @@
 name=Bloom Tender
-image=https://magiccards.info/scans/en/eve/66.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd06fc1f-d8f6-43b0-a795-d759fcdf8272.jpg?1673148027
 value=4.411
 rarity=R
 type=Creature

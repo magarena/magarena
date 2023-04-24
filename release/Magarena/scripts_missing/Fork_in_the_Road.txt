@@ -1,5 +1,5 @@
 name=Fork in the Road
-image=https://magiccards.info/scans/en/soi/205.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a7ad701-65c3-494a-8986-b4ea1bab46bc.jpg?1576385075
 value=2.500
 rarity=C
 type=Sorcery

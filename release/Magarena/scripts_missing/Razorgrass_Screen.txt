@@ -1,5 +1,5 @@
 name=Razorgrass Screen
-image=https://magiccards.info/scans/en/5dn/145.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21e79f57-2214-414a-ab34-2b737d4bb972.jpg?1562875839
 value=1.845
 rarity=C
 type=Artifact,Creature

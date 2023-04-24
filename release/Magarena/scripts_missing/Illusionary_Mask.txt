@@ -1,5 +1,5 @@
 name=Illusionary Mask
-image=https://magiccards.info/scans/en/un/250.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/937e977f-5e97-4e00-8a5a-42982862b997.jpg?1562926181
 value=4.592
 rarity=R
 type=Artifact

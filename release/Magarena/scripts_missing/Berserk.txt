@@ -1,5 +1,5 @@
 name=Berserk
-image=https://magiccards.info/scans/en/cn2/175.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62bc9bff-89bd-4454-a876-53822cf48546.jpg?1576382971
 image_updated=2017-08-29
 value=3.750
 rarity=M

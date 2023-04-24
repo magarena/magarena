@@ -1,5 +1,5 @@
 name=Summoner's Egg
-image=https://magiccards.info/scans/en/5dn/157.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/3581ac02-5dab-423a-9cf3-275d9203f26d.jpg?1562876238
 value=4.185
 rarity=R
 type=Artifact,Creature

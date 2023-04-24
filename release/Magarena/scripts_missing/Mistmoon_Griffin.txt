@@ -1,5 +1,5 @@
 name=Mistmoon Griffin
-image=https://magiccards.info/scans/en/wl/137.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0831f747-b3e5-4e5f-9cc2-ad581a90797a.jpg?1562896631
 value=2.500
 rarity=U
 type=Creature

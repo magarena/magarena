@@ -1,5 +1,5 @@
 name=Aether Tide
-image=https://magiccards.info/scans/en/ex/27.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9aab7526-5825-4f31-92ff-be25ab5af2f5.jpg?1562088326
 image_updated=2016-09-27
 value=1.549
 rarity=C

@@ -1,5 +1,5 @@
 name=Crawling Sensation
-image=https://magiccards.info/scans/en/soi/199.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f6d5abe-22b5-4ef1-ad74-af3e75e22a07.jpg?1576385029
 value=2.500
 rarity=U
 type=Enchantment

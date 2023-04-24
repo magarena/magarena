@@ -1,5 +1,5 @@
 name=Mistform Wall
-image=https://magiccards.info/scans/en/on/99.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/ebaa7a26-8516-4d71-a524-77b2d3f030d5.jpg?1562951110
 value=2.821
 rarity=C
 type=Creature

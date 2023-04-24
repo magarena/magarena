@@ -1,5 +1,5 @@
 name=Living Destiny
-image=https://magiccards.info/scans/en/roe/195.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/361399a4-04f3-4eef-8090-2caec7d1bb66.jpg?1562702748
 value=2.171
 rarity=C
 type=Instant

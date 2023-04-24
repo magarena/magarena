@@ -1,5 +1,5 @@
 name=Bloodline Shaman
-image=https://magiccards.info/scans/en/on/249.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fdfc473-8477-4c04-a4e7-ecac1b0a5716.jpg?1562917608
 value=3.817
 rarity=U
 type=Creature

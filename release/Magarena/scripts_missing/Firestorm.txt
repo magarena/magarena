@@ -1,5 +1,5 @@
 name=Firestorm
-image=https://magiccards.info/scans/en/wl/101.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e674aa8a-668a-4345-95ee-73a0b87bbcb1.jpg?1562803937
 value=4.488
 rarity=R
 type=Instant

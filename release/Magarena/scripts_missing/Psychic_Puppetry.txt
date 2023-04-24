@@ -1,5 +1,5 @@
 name=Psychic Puppetry
-image=https://magiccards.info/scans/en/chk/80.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e341d6b-f4b0-4347-8055-f5fab756334c.jpg?1562762997
 value=3.527
 rarity=C
 type=Instant

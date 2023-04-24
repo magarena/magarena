@@ -1,5 +1,5 @@
 name=Leyline of Lightning
-image=https://magiccards.info/scans/en/gp/68.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23d09839-b41e-4aab-8913-40d63052dbf3.jpg?1593272325
 value=2.879
 rarity=R
 type=Enchantment

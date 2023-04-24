@@ -1,5 +1,5 @@
 name=Driven
-image=https://magiccards.info/scans/en/hou/157a.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/7713ba59-dd4c-4b49-93a7-292728df86b8.jpg?1562803886
 value=2.500
 rarity=R
 type=Sorcery

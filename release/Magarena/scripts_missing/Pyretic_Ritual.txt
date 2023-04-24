@@ -1,5 +1,5 @@
 name=Pyretic Ritual
-image=https://magiccards.info/scans/en/m11/153.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e577638-a7ed-4bcc-90fb-0cffe87d5a28.jpg?1562452888
 value=3.264
 rarity=C
 type=Instant

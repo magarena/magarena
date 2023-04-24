@@ -1,5 +1,5 @@
 name=Devouring Light
-image=https://magiccards.info/scans/en/m15/9.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a6676da-82d7-4690-ad83-6fda7081517c.jpg?1682208370
 value=3.875
 rarity=U
 type=Instant

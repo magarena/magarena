@@ -1,5 +1,5 @@
 name=Hipparion
-image=https://magiccards.info/scans/en/5e/310.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f26fc403-b8af-499a-8cbc-4077ff97b8b0.jpg?1562594965
 value=1.972
 rarity=C
 type=Creature

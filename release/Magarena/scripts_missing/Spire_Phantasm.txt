@@ -1,5 +1,5 @@
 name=Spire Phantasm
-image=https://magiccards.info/scans/en/cn2/37.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b6b39d3-b98f-4e52-bf67-a0782b175f55.jpg?1576381783
 image_updated=2016-09-05
 value=2.500
 rarity=U

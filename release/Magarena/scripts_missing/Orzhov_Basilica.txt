@@ -1,5 +1,5 @@
 name=Orzhov Basilica
-image=https://magiccards.info/scans/en/ima/243.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4895407-2ff7-4a68-b47e-eb9733c95451.jpg?1673306153
 image_updated=2017-04-12
 value=2.500
 rarity=U

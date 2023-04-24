@@ -1,5 +1,5 @@
 name=Glimpse of Nature
-image=https://magiccards.info/scans/en/chk/210.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1ddcd76b-a7a1-4ae6-bf4a-f929c6574bdc.jpg?1562757977
 value=4.237
 rarity=R
 type=Sorcery

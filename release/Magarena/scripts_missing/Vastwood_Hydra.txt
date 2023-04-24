@@ -1,5 +1,5 @@
 name=Vastwood Hydra
-image=https://magiccards.info/scans/en/m14/198.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfe7139a-3fd5-4574-a26b-75b1b17b2c2f.jpg?1591321069
 value=3.598
 rarity=R
 type=Creature

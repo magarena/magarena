@@ -1,5 +1,5 @@
 name=Burning-Tree Shaman
-image=https://magiccards.info/scans/en/gp/105.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/133863fc-e820-4be6-a354-a02e7fe25eae.jpg?1593272608
 value=4.066
 rarity=R
 type=Creature

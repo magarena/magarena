@@ -1,5 +1,5 @@
 name=Toils of Night and Day
-image=https://magiccards.info/scans/en/bok/57.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/0881f8bf-5c28-4f54-9080-9612790ffa83.jpg?1593860628
 value=2.828
 rarity=C
 type=Instant

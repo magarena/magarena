@@ -1,5 +1,5 @@
 name=Brightflame
-image=https://magiccards.info/scans/en/rav/194.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a3acf27-5d07-48e6-8e19-a2e6d4cd49d1.jpg?1598916793
 value=3.966
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Cobra Trap
-image=https://magiccards.info/scans/en/cmd/146.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8954f5e-9904-426f-9b66-8cdf86438f6a.jpg?1562708153
 image_updated=2016-02-29
 value=2.850
 rarity=U

@@ -1,5 +1,5 @@
 name=Guard Dogs
-image=https://magiccards.info/scans/en/ps/5.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba32eee7-10ba-4f0b-8a87-c3ecfa22ae41.jpg?1562934351
 value=2.659
 rarity=U
 type=Creature

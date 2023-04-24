@@ -1,5 +1,5 @@
 name=Recross the Paths
-image=https://magiccards.info/scans/en/mt/133.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0bfe1d8e-ae3c-4144-a44b-e13ab33da95c.jpg?1562876797
 value=3.229
 rarity=U
 type=Sorcery

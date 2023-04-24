@@ -1,5 +1,5 @@
 name=Corpse Traders
-image=https://magiccards.info/scans/en/avr/90.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4cd6d782-ce5a-4994-8310-34faf9c41de2.jpg?1600714377
 value=3.312
 rarity=U
 type=Creature

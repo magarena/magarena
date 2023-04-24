@@ -1,5 +1,5 @@
 name=Silhouette
-image=https://magiccards.info/scans/en/lg/77.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6d6fac6-9a23-465f-a813-92e1ed1cd742.jpg?1562861378
 value=1.925
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Vodalian Illusionist
-image=https://magiccards.info/scans/en/wl/58.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9ce0e28b-9fd6-4763-8d6b-952b530358ab.jpg?1562802363
 value=3.812
 rarity=U
 type=Creature

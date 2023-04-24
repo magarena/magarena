@@ -1,5 +1,5 @@
 name=Watcher in the Web
-image=https://magiccards.info/scans/en/soi/239.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be1ee2d4-5992-4081-9907-4bc26750aff0.jpg?1576385304
 value=2.500
 rarity=C
 type=Creature

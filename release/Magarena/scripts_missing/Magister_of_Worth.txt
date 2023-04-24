@@ -1,5 +1,5 @@
 name=Magister of Worth
-image=https://magiccards.info/scans/en/cns/48.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e32b7d4b-60ac-4970-9af0-8c50623f6d64.jpg?1625977856
 value=4.150
 rarity=R
 type=Creature

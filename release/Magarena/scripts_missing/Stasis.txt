@@ -1,5 +1,5 @@
 name=Stasis
-image=https://magiccards.info/scans/en/5e/127.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/62f99124-6595-45f8-bece-1775e4c55a5c.jpg?1562918295
 value=4.546
 rarity=R
 type=Enchantment

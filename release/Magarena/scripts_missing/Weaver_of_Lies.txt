@@ -1,5 +1,5 @@
 name=Weaver of Lies
-image=https://magiccards.info/scans/en/le/57.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12172d0e-0c73-4482-9f83-2c23ace9b7a0.jpg?1562898647
 value=3.409
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Nature's Way
-image=https://magiccards.info/scans/en/kld/162.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77cf9d11-936f-4e02-8595-0cbcabaafb1e.jpg?1601079780
 image_updated=2016-10-05
 value=2.500
 rarity=U

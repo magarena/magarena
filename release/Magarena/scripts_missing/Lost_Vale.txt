@@ -1,5 +1,5 @@
 name=Lost Vale
-image=https://magiccards.info/scans/en/xln/235b.jpg
+image=https://cards.scryfall.io/border_crop/back/5/1/514d53be-6ade-4f73-a844-e9ae2dafd6ce.jpg?1562555239
 value=2.500
 rarity=R
 type=Land

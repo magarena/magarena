@@ -1,5 +1,5 @@
 name=Fatal Mutation
-image=https://magiccards.info/scans/en/sc/66.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57cf9f50-8858-44a6-8bd5-0ce1e281a584.jpg?1562529447
 value=1.306
 rarity=U
 type=Enchantment

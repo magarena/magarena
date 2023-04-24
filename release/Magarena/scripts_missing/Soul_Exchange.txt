@@ -1,5 +1,5 @@
 name=Soul Exchange
-image=https://magiccards.info/scans/en/fe/28.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/6666dca1-5e33-4f5b-b449-76bcb0e15296.jpg?1562869032
 value=4.353
 rarity=U
 type=Sorcery

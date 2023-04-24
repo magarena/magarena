@@ -1,5 +1,5 @@
 name=Three Wishes
-image=https://magiccards.info/scans/en/vi/45.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/dbb2b253-7023-44d1-963b-eae98d48f498.jpg?1562278653
 value=3.529
 rarity=R
 type=Instant

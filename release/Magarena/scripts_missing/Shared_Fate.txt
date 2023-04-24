@@ -1,5 +1,5 @@
 name=Shared Fate
-image=https://magiccards.info/scans/en/mi/49.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad0d5b02-ef38-4dab-8ac6-78814ef27b55.jpg?1562154177
 value=3.787
 rarity=R
 type=Enchantment

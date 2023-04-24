@@ -1,5 +1,5 @@
 name=Endure
-image=https://magiccards.info/scans/en/eve/5.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd7904ba-0764-4dd3-9c78-35f799e99049.jpg?1562941712
 value=1.860
 rarity=U
 type=Instant

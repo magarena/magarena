@@ -1,5 +1,5 @@
 name=Sorrow's Path
-image=https://magiccards.info/scans/en/dk/116.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9347f02e-270b-44da-988c-d99a0fc5dfcb.jpg?1562926135
 value=0.906
 rarity=R
 type=Land

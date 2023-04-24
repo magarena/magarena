@@ -1,5 +1,5 @@
 name=Shelldock Isle
-image=https://magiccards.info/scans/en/lw/272.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4216656e-90e8-45fc-a0f6-0d0d79d0a021.jpg?1562345880
 value=3.436
 rarity=R
 type=Land

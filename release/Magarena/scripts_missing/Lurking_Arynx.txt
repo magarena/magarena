@@ -1,5 +1,5 @@
 name=Lurking Arynx
-image=https://magiccards.info/scans/en/dtk/192.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f59bc0b-88de-4580-bfc8-5af911d9ee99.jpg?1562788949
 value=2.500
 rarity=U
 type=Creature

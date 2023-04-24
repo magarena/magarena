@@ -1,5 +1,5 @@
 name=Ichneumon Druid
-image=https://magiccards.info/scans/en/lg/105.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf2313bb-6f9b-49d6-b069-9f3b77b6e107.jpg?1562860892
 value=2.064
 rarity=U
 type=Creature

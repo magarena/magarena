@@ -1,5 +1,5 @@
 name=Ob Nixilis of the Black Oath
-image=https://magiccards.info/scans/en/c14/27.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf472be9-f375-455e-a800-7af5258f4e59.jpg?1561957127
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

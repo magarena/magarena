@@ -1,5 +1,5 @@
 name=Mijae Djinn
-image=https://magiccards.info/scans/en/rv/165.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4eb4f9e-4c11-4563-9f9a-87ec93274695.jpg?1562937665
 value=3.562
 rarity=R
 type=Creature

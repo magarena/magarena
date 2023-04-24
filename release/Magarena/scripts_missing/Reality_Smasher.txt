@@ -1,5 +1,5 @@
 name=Reality Smasher
-image=https://magiccards.info/scans/en/ogw/7.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52d4b652-a830-4fd4-94bb-c17c227f2928.jpg?1562911843
 image_updated=2016-02-29
 value=2.500
 rarity=R

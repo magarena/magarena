@@ -1,5 +1,5 @@
 name=Preordain
-image=https://magiccards.info/scans/en/m11/70.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d10b9be3-d4ff-4e3c-b0d5-5ab2c4e6d684.jpg?1673483979
 image_updated=2016-02-29
 value=4.322
 rarity=C

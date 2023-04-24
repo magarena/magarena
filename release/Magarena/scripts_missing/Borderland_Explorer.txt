@@ -1,5 +1,5 @@
 name=Borderland Explorer
-image=https://magiccards.info/scans/en/cn2/61.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b89b4fc3-19eb-436b-9ce9-5c71d96ea9b1.jpg?1592710822
 image_updated=2016-09-05
 value=2.500
 rarity=C

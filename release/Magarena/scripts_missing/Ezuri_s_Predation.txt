@@ -1,5 +1,5 @@
 name=Ezuri's Predation
-image=https://magiccards.info/scans/en/c15/36.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39dbfc25-f06e-4b5f-848f-6dd4cb72079e.jpg?1674142273
 image_updated=2016-02-29
 value=2.500
 rarity=R

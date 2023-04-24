@@ -1,5 +1,5 @@
 name=Teferi's Isle
-image=https://magiccards.info/scans/en/mr/315.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6ed7ca8-fd91-46e3-9149-a3de23c7078e.jpg?1562721425
 value=2.627
 rarity=R
 type=Legendary,Land

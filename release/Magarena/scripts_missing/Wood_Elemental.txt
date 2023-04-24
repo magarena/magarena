@@ -1,5 +1,5 @@
 name=Wood Elemental
-image=https://magiccards.info/scans/en/lg/129.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71ced69c-921c-4a31-a213-0faf927134ef.jpg?1562921856
 value=0.911
 rarity=R
 type=Creature

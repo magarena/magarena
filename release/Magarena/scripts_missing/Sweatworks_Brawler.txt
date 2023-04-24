@@ -1,5 +1,5 @@
 name=Sweatworks Brawler
-image=https://magiccards.info/scans/en/aer/100.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b477d12a-9ba5-4302-a3f0-af0afb5d87f4.jpg?1576381921
 value=2.500
 rarity=C
 type=Creature

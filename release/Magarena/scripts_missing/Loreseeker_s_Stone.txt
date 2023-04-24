@@ -1,5 +1,5 @@
 name=Loreseeker's Stone
-image=https://magiccards.info/scans/en/c14/56.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e95365a8-514a-4212-9d65-b0cdf2cd06e5.jpg?1608911517
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Abeyance
-image=https://magiccards.info/scans/en/wl/117.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/125a355d-bfcf-4125-aa6c-35e7dea6f63e.jpg?1562799430
 value=4.466
 rarity=R
 type=Instant

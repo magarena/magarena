@@ -1,5 +1,5 @@
 name=Shield of the Realm
-image=https://magiccards.info/scans/en/dom/228.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/7207edf8-8534-4982-969f-df97febcb9fc.jpg?1562737678
 value=2.500
 rarity=U
 type=Artifact

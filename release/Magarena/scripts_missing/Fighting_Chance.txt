@@ -1,5 +1,5 @@
 name=Fighting Chance
-image=https://magiccards.info/scans/en/ex/82.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca75f6e9-5eee-4904-88c0-71ec730a0f23.jpg?1562088798
 value=2.809
 rarity=R
 type=Instant

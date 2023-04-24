@@ -1,5 +1,5 @@
 name=Lead Astray
-image=https://magiccards.info/scans/en/ju/14.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20a8fd2f-11fa-4879-be89-ea7833cf60d4.jpg?1562628952
 value=2.400
 rarity=C
 type=Instant

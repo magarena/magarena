@@ -1,5 +1,5 @@
 name=Dripping-Tongue Zubera
-image=https://magiccards.info/scans/en/chk/206.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e752b762-38b7-463c-aa09-37fecfe71a53.jpg?1562765583
 value=3.329
 rarity=C
 type=Creature

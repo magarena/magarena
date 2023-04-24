@@ -1,5 +1,5 @@
 name=Intuition
-image=https://magiccards.info/scans/en/tp/70.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b13e73a5-067d-4dbd-9c98-34a0db6140de.jpg?1562431264
 value=2.500
 rarity=R
 type=Instant

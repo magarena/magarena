@@ -1,5 +1,5 @@
 name=Dragon's Eye Savants
-image=https://magiccards.info/scans/en/a25/54.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f20656d9-cd4f-4694-8715-04c017eb6760.jpg?1562443049
 image_updated=2018-04-25
 value=3.000
 rarity=C

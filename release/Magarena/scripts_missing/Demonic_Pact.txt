@@ -1,5 +1,5 @@
 name=Demonic Pact
-image=https://magiccards.info/scans/en/ori/92.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82c04014-91f9-4197-b4b4-f62c4739a5c2.jpg?1562028673
 image_updated=2015-11-05
 value=2.500
 rarity=M

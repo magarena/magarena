@@ -1,5 +1,5 @@
 name=Wind Sail
-image=https://magiccards.info/scans/en/st/62.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f72976b-c0c5-490d-a792-9104a78b0e8a.jpg?1562873615
 value=2.214
 rarity=U
 type=Sorcery

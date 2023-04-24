@@ -1,5 +1,5 @@
 name=Precursor Golem
-image=https://magiccards.info/scans/en/mm2/225.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc90d632-fc78-4ae6-83c6-314ee5744de5.jpg?1562268361
 value=2.500
 rarity=R
 type=Artifact,Creature

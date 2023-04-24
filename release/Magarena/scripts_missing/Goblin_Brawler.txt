@@ -1,5 +1,5 @@
 name=Goblin Brawler
-image=https://magiccards.info/scans/en/5dn/66.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6586c04-f92d-4c3f-8b03-59e5ef158ed4.jpg?1562880755
 value=2.470
 rarity=C
 type=Creature

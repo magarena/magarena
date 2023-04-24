@@ -1,5 +1,5 @@
 name=Grave Birthing
-image=https://magiccards.info/scans/en/bfz/93.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e996a30-3a4d-4a26-8386-f9eb9c999dc0.jpg?1562898350
 image_updated=2015-11-08
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Dearly Departed
-image=https://magiccards.info/scans/en/isd/9.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27c38500-1eb5-4ea5-8dcd-53bf4e1ee09c.jpg?1637629133
 value=3.627
 rarity=R
 type=Creature

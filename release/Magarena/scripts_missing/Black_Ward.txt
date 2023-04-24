@@ -1,5 +1,5 @@
 name=Black Ward
-image=https://magiccards.info/scans/en/4e/258.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/218b1327-5f76-4ee2-a93d-d2ba412043c2.jpg?1559601258
 value=2.090
 rarity=U
 type=Enchantment

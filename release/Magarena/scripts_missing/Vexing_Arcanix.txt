@@ -1,5 +1,5 @@
 name=Vexing Arcanix
-image=https://magiccards.info/scans/en/8e/319.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b1e748b-c836-45f1-96af-ced0cc5aed9f.jpg?1562897202
 value=3.694
 rarity=R
 type=Artifact

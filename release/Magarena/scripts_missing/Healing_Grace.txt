@@ -1,5 +1,5 @@
 name=Healing Grace
-image=https://magiccards.info/scans/en/dom/20.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7512d31-dc35-4046-a1ba-49b74239c329.jpg?1562745837
 value=2.500
 rarity=C
 type=Instant

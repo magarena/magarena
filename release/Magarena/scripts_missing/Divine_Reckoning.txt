@@ -1,5 +1,5 @@
 name=Divine Reckoning
-image=https://magiccards.info/scans/en/c17/59.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cbb97027-d6bc-4529-960d-6b0ab2af9c50.jpg?1568003822
 image_updated=2017-10-03
 value=3.867
 rarity=R

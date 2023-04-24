@@ -1,5 +1,5 @@
 name=Ruin in Their Wake
-image=https://magiccards.info/scans/en/ogw/122.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a0ff591-e4d9-4b62-ac9c-7962fd815226.jpg?1562913304
 image_updated=2016-02-29
 value=2.500
 rarity=U

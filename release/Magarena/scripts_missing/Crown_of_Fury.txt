@@ -1,5 +1,5 @@
 name=Crown of Fury
-image=https://magiccards.info/scans/en/on/196.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6caae974-f531-469d-8c6a-2077c4f3294a.jpg?1562920593
 value=2.810
 rarity=C
 type=Enchantment

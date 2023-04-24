@@ -1,5 +1,5 @@
 name=Erratic Explosion
-image=https://magiccards.info/scans/en/pc2/41.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14c5e0aa-d491-4caf-86c7-555ee1bb637b.jpg?1562898928
 value=2.667
 rarity=C
 type=Sorcery

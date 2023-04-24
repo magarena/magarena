@@ -1,5 +1,5 @@
 name=Soul Ransom
-image=https://magiccards.info/scans/en/mm3/186.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b861e2c2-524b-4aea-b8af-fa72f00c9c4d.jpg?1617613168
 image_updated=2017-08-08
 value=3.303
 rarity=U

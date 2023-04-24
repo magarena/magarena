@@ -1,5 +1,5 @@
 name=Thieves' Fortune
-image=https://magiccards.info/scans/en/mt/54.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8175ec81-f4e2-45d2-a9d8-e8855e17ff4a.jpg?1562879642
 value=3.016
 rarity=U
 type=Tribal,Instant

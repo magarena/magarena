@@ -1,5 +1,5 @@
 name=Sawback Manticore
-image=https://magiccards.info/scans/en/mr/341.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c24e74e9-ce88-48af-a113-b4fe76f963d4.jpg?1562721451
 value=2.140
 rarity=R
 type=Creature

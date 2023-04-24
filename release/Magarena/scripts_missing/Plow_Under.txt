@@ -1,5 +1,5 @@
 name=Plow Under
-image=https://magiccards.info/scans/en/8e/272.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27128f26-0d89-4962-96e8-5fa343031a26.jpg?1562902953
 value=4.398
 rarity=R
 type=Sorcery

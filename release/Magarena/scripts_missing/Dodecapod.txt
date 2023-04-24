@@ -1,5 +1,5 @@
 name=Dodecapod
-image=https://magiccards.info/scans/en/tsts/108.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c562b66f-d661-4535-b9da-e1c35a650324.jpg?1562783664
 value=3.543
 rarity=U
 type=Artifact,Creature

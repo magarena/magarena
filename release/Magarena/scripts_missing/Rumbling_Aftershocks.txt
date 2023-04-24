@@ -1,5 +1,5 @@
 name=Rumbling Aftershocks
-image=https://magiccards.info/scans/en/wwk/89.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01fd58c6-5bca-4160-bc1e-63b9cb3996ab.jpg?1562281070
 value=1.449
 rarity=U
 type=Enchantment

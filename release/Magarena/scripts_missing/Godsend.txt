@@ -1,5 +1,5 @@
 name=Godsend
-image=https://magiccards.info/scans/en/jou/12.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dcf3975-7f81-4bdd-810d-476f46444b7a.jpg?1593095245
 value=3.903
 rarity=M
 type=Legendary,Artifact

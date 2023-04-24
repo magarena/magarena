@@ -1,5 +1,5 @@
 name=Sorcerous Spyglass
-image=https://magiccards.info/scans/en/xln/248.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e47e85d1-8c4a-43a9-92b3-7cb2a5b89219.jpg?1628801897
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Kumano's Pupils
-image=https://magiccards.info/scans/en/chk/177.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c62b233e-95fe-4cfd-ad89-86e07656bf8b.jpg?1593860615
 value=1.241
 rarity=U
 type=Creature

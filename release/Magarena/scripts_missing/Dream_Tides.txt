@@ -1,5 +1,5 @@
 name=Dream Tides
-image=https://magiccards.info/scans/en/vi/31.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bd292a0-ec08-4250-8d75-0802e985d6e6.jpg?1562277448
 value=3.952
 rarity=U
 type=Enchantment

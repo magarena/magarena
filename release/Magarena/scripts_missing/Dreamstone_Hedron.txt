@@ -1,5 +1,5 @@
 name=Dreamstone Hedron
-image=https://magiccards.info/scans/en/c14/236.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77a0b45f-d044-4d59-81fd-c2683beca401.jpg?1608911396
 image_updated=2016-02-29
 value=2.500
 rarity=U

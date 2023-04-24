@@ -1,5 +1,5 @@
 name=Firemantle Mage
-image=https://magiccards.info/scans/en/bfz/145.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/197411bf-3307-4056-a7d4-31db0d4b8f9a.jpg?1562901031
 image_updated=2015-11-08
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Reap Intellect
-image=https://magiccards.info/scans/en/dgm/95.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6297df2-c67a-4054-9617-5c6202c76de8.jpg?1562932086
 value=2.775
 rarity=M
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Reign of the Pit
-image=https://magiccards.info/scans/en/cns/29.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/3074a8e8-765c-4f32-9bc1-a3f865448ef9.jpg?1673484243
 value=4.050
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Shambling Shell
-image=https://magiccards.info/scans/en/rav/230.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/21b6b9c8-110a-41ea-815b-17253447a02e.jpg?1592713684
 value=4.393
 rarity=C
 type=Creature

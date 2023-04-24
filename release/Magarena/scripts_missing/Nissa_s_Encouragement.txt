@@ -1,5 +1,5 @@
 name=Nissa's Encouragement
-image=https://magiccards.info/scans/en/hou/203.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a489d5c7-ef57-4973-86ac-06234c308c3c.jpg?1562809356
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Sadistic Augermage
-image=https://magiccards.info/scans/en/rav/103.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db9ee363-40c4-495f-910a-4f4cd6377e84.jpg?1592754703
 value=2.714
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Crazed Firecat
-image=https://magiccards.info/scans/en/tr/94.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ef809de-ff64-4832-95dd-2ebda5942df8.jpg?1562629976
 value=2.561
 rarity=U
 type=Creature

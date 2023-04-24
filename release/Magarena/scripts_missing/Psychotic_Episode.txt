@@ -1,5 +1,5 @@
 name=Psychotic Episode
-image=https://magiccards.info/scans/en/ts/126.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa6d8c51-bff9-4eba-8c1b-2d45b7635c52.jpg?1619395932
 value=3.207
 rarity=C
 type=Sorcery

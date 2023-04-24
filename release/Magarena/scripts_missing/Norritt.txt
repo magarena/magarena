@@ -1,5 +1,5 @@
 name=Norritt
-image=https://magiccards.info/scans/en/ia/43.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35abefe6-c39b-4fe5-b2e3-d213f0c4f447.jpg?1562904940
 value=3.388
 rarity=C
 type=Creature

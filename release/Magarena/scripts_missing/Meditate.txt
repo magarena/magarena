@@ -1,5 +1,5 @@
 name=Meditate
-image=https://magiccards.info/scans/en/tp/76.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16c408cc-cb77-4cd6-814f-b26b513c1c0c.jpg?1562428633
 value=2.500
 rarity=R
 type=Instant

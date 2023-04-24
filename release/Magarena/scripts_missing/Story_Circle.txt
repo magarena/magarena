@@ -1,5 +1,5 @@
 name=Story Circle
-image=https://magiccards.info/scans/en/10e/49.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6194fab1-c185-4df5-8900-37d28ffae545.jpg?1562548740
 value=4.330
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Saprazzan Skerry
-image=https://magiccards.info/scans/en/mm/328.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/006871fd-2641-42cb-a2ac-a33d05fc5a35.jpg?1562378939
 value=3.933
 rarity=C
 type=Land

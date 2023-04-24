@@ -1,5 +1,5 @@
 name=Drafna's Restoration
-image=https://magiccards.info/scans/en/aq/52.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4be2aa3b-207b-4d21-abfb-6788520c7676.jpg?1562910905
 value=3.870
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ashnod's Altar
-image=https://magiccards.info/scans/en/ema/218.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87da5ad8-b35f-4f9c-b17a-bb2563cbc186.jpg?1580015173
 value=4.430
 rarity=U
 type=Artifact

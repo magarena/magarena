@@ -1,5 +1,5 @@
 name=Warcry Phoenix
-image=https://magiccards.info/scans/en/dom/150.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff561f01-8dbc-4988-be00-592d1e417396.jpg?1562746405
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Abandon Reason
-image=https://magiccards.info/scans/en/emn/115.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18c0b3b3-bb62-42c5-9869-386af0540a9b.jpg?1576384496
 image_updated=2016-09-05
 value=2.500
 rarity=U

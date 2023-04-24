@@ -1,5 +1,5 @@
 name=Traveler's Cloak
-image=https://magiccards.info/scans/en/cns/109.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c29e4a61-8f84-4c19-909d-6aebb3b9ab9b.jpg?1562866863
 value=3.800
 rarity=C
 type=Enchantment

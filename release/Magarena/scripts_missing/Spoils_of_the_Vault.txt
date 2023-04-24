@@ -1,5 +1,5 @@
 name=Spoils of the Vault
-image=https://magiccards.info/scans/en/mi/78.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6eb97a96-2c56-4638-b971-00cdf1eafd43.jpg?1547517076
 value=4.167
 rarity=R
 type=Instant

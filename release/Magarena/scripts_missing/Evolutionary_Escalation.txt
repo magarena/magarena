@@ -1,5 +1,5 @@
 name=Evolutionary Escalation
-image=https://magiccards.info/scans/en/c16/22.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/399d4b05-d671-4462-9d5d-4cfe3457727e.jpg?1562395858
 image_updated=2016-12-02
 value=2.500
 rarity=U

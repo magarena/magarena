@@ -1,5 +1,5 @@
 name=Brood of Cockroaches
-image=https://magiccards.info/scans/en/vi/3.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30b6150e-7d0c-4361-b99b-79de96dfc53a.jpg?1587913235
 value=3.119
 rarity=U
 type=Creature

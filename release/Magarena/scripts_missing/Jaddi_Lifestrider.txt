@@ -1,5 +1,5 @@
 name=Jaddi Lifestrider
-image=https://magiccards.info/scans/en/roe/189.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dff438a-925c-4fca-a2e3-3e9519b7afed.jpg?1562229656
 value=3.412
 rarity=U
 type=Creature

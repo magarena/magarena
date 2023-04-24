@@ -1,5 +1,5 @@
 name=Elkin Lair
-image=https://magiccards.info/scans/en/vi/78.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcb625ba-3718-4988-962c-bf2e11eb4c16.jpg?1562278626
 value=3.179
 rarity=R
 type=World,Enchantment

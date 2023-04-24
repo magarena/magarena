@@ -1,5 +1,5 @@
 name=Stitcher's Graft
-image=https://magiccards.info/scans/en/emn/200.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb6d700e-0514-41d7-9255-cedd859316fc.jpg?1576385095
 image_updated=2016-09-05
 value=2.500
 rarity=R

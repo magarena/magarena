@@ -1,5 +1,5 @@
 name=Soul Foundry
-image=https://magiccards.info/scans/en/mi/246.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c7a441b-e4af-41ba-85a4-fcb4f40534c3.jpg?1568004971
 value=4.033
 rarity=R
 type=Artifact

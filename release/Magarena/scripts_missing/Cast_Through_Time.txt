@@ -1,5 +1,5 @@
 name=Cast Through Time
-image=https://magiccards.info/scans/en/roe/55.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9850489-c056-4b17-8743-a5b514d8edf4.jpg?1562708586
 value=3.673
 rarity=M
 type=Enchantment

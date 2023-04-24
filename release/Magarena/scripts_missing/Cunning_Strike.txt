@@ -1,5 +1,5 @@
 name=Cunning Strike
-image=https://magiccards.info/scans/en/frf/150.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e4991f81-3190-4d33-bf09-9d5387cbec11.jpg?1562830894
 value=2.500
 rarity=C
 type=Instant

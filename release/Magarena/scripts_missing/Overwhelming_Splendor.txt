@@ -1,5 +1,5 @@
 name=Overwhelming Splendor
-image=https://magiccards.info/scans/en/hou/19.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/867b32d2-e396-411d-ac02-1af4106dd3d2.jpg?1562805786
 value=2.500
 rarity=M
 type=Enchantment

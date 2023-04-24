@@ -1,5 +1,5 @@
 name=Alive
-image=https://magiccards.info/scans/en/dgm/121a.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db84415e-048a-4cfc-9121-5ae17a412198.jpg?1562935990
 value=3.333
 rarity=U
 type=Sorcery

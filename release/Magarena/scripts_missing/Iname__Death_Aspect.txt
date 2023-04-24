@@ -1,5 +1,5 @@
 name=Iname, Death Aspect
-image=https://magiccards.info/scans/en/chk/118.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2dd67e11-3dad-4e59-b15d-02911e53fbbf.jpg?1562758878
 value=3.789
 rarity=R
 type=Legendary,Creature

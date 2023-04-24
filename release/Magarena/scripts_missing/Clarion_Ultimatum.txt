@@ -1,5 +1,5 @@
 name=Clarion Ultimatum
-image=https://magiccards.info/scans/en/ala/163.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39e8bf21-0baf-4ee9-b224-b9eee50df280.jpg?1562702886
 value=3.005
 rarity=R
 type=Sorcery

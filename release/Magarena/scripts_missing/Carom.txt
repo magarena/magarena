@@ -1,5 +1,5 @@
 name=Carom
-image=https://magiccards.info/scans/en/di/6.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/184e0964-1e04-49f9-bb76-0a6e682c52f5.jpg?1593272465
 value=2.236
 rarity=C
 type=Instant

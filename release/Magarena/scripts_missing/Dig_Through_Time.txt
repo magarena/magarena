@@ -1,5 +1,5 @@
 name=Dig Through Time
-image=https://magiccards.info/scans/en/ktk/36.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b0c111a-236f-449a-95b1-274a1dfa546d.jpg?1673483878
 value=2.875
 rarity=R
 type=Instant

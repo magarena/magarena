@@ -1,5 +1,5 @@
 name=Tidal Flats
-image=https://magiccards.info/scans/en/fe/54.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e820f3f-434e-4d09-91b9-0ebd6966b393.jpg?1562903557
 value=2.615
 rarity=C
 type=Enchantment

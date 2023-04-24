@@ -1,5 +1,5 @@
 name=Kheru Spellsnatcher
-image=https://magiccards.info/scans/en/ktk/45.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd8ac93b-0658-4fc5-819c-77ba0260142e.jpg?1568004022
 value=4.125
 rarity=R
 type=Creature

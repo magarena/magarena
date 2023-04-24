@@ -1,5 +1,5 @@
 name=Angel's Trumpet
-image=https://magiccards.info/scans/en/ul/121.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c7b248a-3c74-4592-b357-47989568298c.jpg?1562862313
 value=3.875
 rarity=U
 type=Artifact

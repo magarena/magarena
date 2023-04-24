@@ -1,5 +1,5 @@
 name=Gaea's Herald
-image=https://magiccards.info/scans/en/10e/265.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89a60271-edfc-4bb1-83d5-4d6fa0403b19.jpg?1562551173
 image_updated=2016-12-04
 value=4.234
 rarity=R

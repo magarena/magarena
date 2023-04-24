@@ -1,5 +1,5 @@
 name=Well of Knowledge
-image=https://magiccards.info/scans/en/wl/162.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5184b967-f474-4c9b-9a20-65ddb0d6e4f8.jpg?1562800806
 value=3.944
 rarity=R
 type=Artifact

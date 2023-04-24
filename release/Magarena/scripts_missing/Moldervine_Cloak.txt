@@ -1,5 +1,5 @@
 name=Moldervine Cloak
-image=https://magiccards.info/scans/en/mma/155.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d771cf62-b454-4c7f-918e-68335e695702.jpg?1561968575
 value=3.611
 rarity=C
 type=Enchantment

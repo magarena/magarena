@@ -1,5 +1,5 @@
 name=Izzet Chemister
-image=https://magiccards.info/scans/en/a25/138.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2970c679-562b-48ee-b631-2e3016f4f37c.jpg?1674142036
 image_updated=2018-04-25
 value=2.500
 rarity=R

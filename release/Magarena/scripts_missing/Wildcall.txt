@@ -1,5 +1,5 @@
 name=Wildcall
-image=https://magiccards.info/scans/en/frf/146.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/065fc4d8-c097-4d0e-81cf-22a0b694be9a.jpg?1562822112
 value=2.500
 rarity=R
 type=Sorcery

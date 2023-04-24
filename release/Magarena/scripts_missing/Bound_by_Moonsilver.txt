@@ -1,5 +1,5 @@
 name=Bound by Moonsilver
-image=https://magiccards.info/scans/en/soi/7.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bdf107d-eb67-421c-a7a9-b3e62e03f766.jpg?1576383687
 value=2.500
 rarity=U
 type=Enchantment

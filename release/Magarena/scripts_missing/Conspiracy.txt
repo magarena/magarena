@@ -1,5 +1,5 @@
 name=Conspiracy
-image=https://magiccards.info/scans/en/tsts/39.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bbdb402-0e22-4f83-987a-9d0268a82f10.jpg?1562779616
 value=4.241
 rarity=R
 type=Enchantment

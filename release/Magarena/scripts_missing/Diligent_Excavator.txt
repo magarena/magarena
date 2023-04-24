@@ -1,5 +1,5 @@
 name=Diligent Excavator
-image=https://magiccards.info/scans/en/dom/51.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65212970-770e-4110-aa86-c89128688867.jpg?1562736818
 value=2.500
 rarity=U
 type=Creature

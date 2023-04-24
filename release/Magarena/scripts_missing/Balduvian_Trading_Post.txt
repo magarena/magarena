@@ -1,5 +1,5 @@
 name=Balduvian Trading Post
-image=https://magiccards.info/scans/en/ai/182.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7eee4911-a654-46c3-a998-a3eac9c31791.jpg?1562869505
 value=4.167
 rarity=R
 type=Land

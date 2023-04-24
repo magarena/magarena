@@ -1,5 +1,5 @@
 name=Fortuitous Find
-image=https://magiccards.info/scans/en/kld/81.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/7706bbb1-c94a-4169-9f12-a54cfcc3a7ad.jpg?1576381634
 image_updated=2016-10-05
 value=2.500
 rarity=C

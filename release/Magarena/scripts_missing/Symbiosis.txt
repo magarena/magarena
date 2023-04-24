@@ -1,5 +1,5 @@
 name=Symbiosis
-image=https://magiccards.info/scans/en/us/275.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d35e2c5-1871-4749-aefa-4a7a69645c03.jpg?1562914473
 image_updated=2016-01-09
 value=3.446
 rarity=C

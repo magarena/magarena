@@ -1,5 +1,5 @@
 name=Izzet Boilerworks
-image=https://magiccards.info/scans/en/ima/241.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb746aeb-7595-4b45-8ffc-90f220308960.jpg?1673149520
 image_updated=2017-04-12
 value=2.500
 rarity=U

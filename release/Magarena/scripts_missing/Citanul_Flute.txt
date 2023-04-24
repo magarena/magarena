@@ -1,5 +1,5 @@
 name=Citanul Flute
-image=https://magiccards.info/scans/en/10e/315.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e3e0dff-d9f0-4222-a308-e86581c440cc.jpg?1562548477
 value=3.727
 rarity=R
 type=Artifact

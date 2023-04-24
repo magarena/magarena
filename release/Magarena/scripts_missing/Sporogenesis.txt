@@ -1,5 +1,5 @@
 name=Sporogenesis
-image=https://magiccards.info/scans/en/us/273.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/839d969b-b1f7-4978-b00c-db0766161f63.jpg?1562922749
 value=3.629
 rarity=R
 type=Enchantment

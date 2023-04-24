@@ -1,5 +1,5 @@
 name=Ferocious Charge
-image=https://magiccards.info/scans/en/5dn/88.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/3749181f-7b4e-4b9d-aaf3-94f707c306aa.jpg?1562876287
 value=3.067
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Patron of the Kitsune
-image=https://magiccards.info/scans/en/bok/19.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/102ee72e-5fb8-4059-9dfa-98004e222c27.jpg?1562875491
 value=3.510
 rarity=R
 type=Legendary,Creature

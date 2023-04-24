@@ -1,5 +1,5 @@
 name=Liege of the Tangle
-image=https://magiccards.info/scans/en/som/123.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0dea9d0-9f93-460d-bf69-ae1c1172a95e.jpg?1599707346
 value=3.989
 rarity=M
 type=Creature

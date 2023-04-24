@@ -1,5 +1,5 @@
 name=Quirion Sentinel
-image=https://magiccards.info/scans/en/in/204.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fc639ea-a925-4f1e-879f-b8fcb12bf257.jpg?1562904752
 value=3.212
 rarity=C
 type=Creature

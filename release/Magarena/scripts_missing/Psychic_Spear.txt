@@ -1,5 +1,5 @@
 name=Psychic Spear
-image=https://magiccards.info/scans/en/bok/78.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c2f024b-e77e-426b-930e-85b87e046f9b.jpg?1593860617
 value=0.949
 rarity=C
 type=Sorcery

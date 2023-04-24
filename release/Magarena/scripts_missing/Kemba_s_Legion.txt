@@ -1,5 +1,5 @@
 name=Kemba's Legion
-image=https://magiccards.info/scans/en/mbs/9.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30731756-81a8-480b-938f-48c1d0cb95d7.jpg?1562610450
 value=2.060
 rarity=U
 type=Creature

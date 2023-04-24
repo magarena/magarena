@@ -1,5 +1,5 @@
 name=Drownyard Behemoth
-image=https://magiccards.info/scans/en/emn/4.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/082690e8-07b9-4a91-b779-e0123a69ee12.jpg?1576383716
 image_updated=2016-09-05
 value=2.500
 rarity=U

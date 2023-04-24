@@ -1,5 +1,5 @@
 name=Taigam's Scheming
-image=https://magiccards.info/scans/en/ktk/57.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87f4b533-7113-4b36-9c7a-e4cf798c88a9.jpg?1665819837
 value=2.250
 rarity=C
 type=Sorcery

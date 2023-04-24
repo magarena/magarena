@@ -1,5 +1,5 @@
 name=Pulsemage Advocate
-image=https://magiccards.info/scans/en/ju/19.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0dce0e8f-9ad6-42b6-af61-c883613efc97.jpg?1562628638
 value=3.073
 rarity=R
 type=Creature

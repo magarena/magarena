@@ -1,5 +1,5 @@
 name=Errand of Duty
-image=https://magiccards.info/scans/en/ai/127.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88640e95-eda3-46c9-b8cf-f7e493c7a256.jpg?1562869519
 value=2.661
 rarity=C
 type=Instant

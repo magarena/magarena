@@ -1,5 +1,5 @@
 name=Arbor Armament
-image=https://magiccards.info/scans/en/dom/155.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71c10923-a5b3-4b50-ae51-59982e05963a.jpg?1615334431
 value=2.500
 rarity=C
 type=Instant

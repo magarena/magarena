@@ -1,5 +1,5 @@
 name=Chronatog Totem
-image=https://magiccards.info/scans/en/ts/252.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5acd482c-9815-4ff5-99ef-fb1a014251bb.jpg?1562913905
 value=2.419
 rarity=U
 type=Artifact

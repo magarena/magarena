@@ -1,5 +1,5 @@
 name=Thrull Surgeon
-image=https://magiccards.info/scans/en/10e/183.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20fffe54-4c9e-454d-bc2a-cb1fb48a6f49.jpg?1562428646
 value=2.500
 rarity=U
 type=Creature

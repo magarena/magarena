@@ -1,5 +1,5 @@
 name=Armament of Nyx
-image=https://magiccards.info/scans/en/jou/4.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4203df15-dd44-496b-889a-d7a8fe320330.jpg?1593095185
 value=2.929
 rarity=C
 type=Enchantment

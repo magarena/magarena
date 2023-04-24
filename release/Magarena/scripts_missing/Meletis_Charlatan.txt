@@ -1,5 +1,5 @@
 name=Meletis Charlatan
-image=https://magiccards.info/scans/en/ths/54.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf22da0c-5bf5-4c81-9422-671ce17c8ffa.jpg?1562828340
 value=3.510
 rarity=R
 type=Creature

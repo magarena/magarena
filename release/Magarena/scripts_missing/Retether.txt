@@ -1,5 +1,5 @@
 name=Retether
-image=https://magiccards.info/scans/en/pc/13.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0faa005e-c753-4484-bf64-349350d59094.jpg?1562566138
 value=3.925
 rarity=R
 type=Sorcery

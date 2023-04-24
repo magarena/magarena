@@ -1,5 +1,5 @@
 name=Volcano Hellion
-image=https://magiccards.info/scans/en/pc/111.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/026b1a54-ab62-431d-a23e-5890d3932c7e.jpg?1562565066
 value=4.115
 rarity=R
 type=Creature

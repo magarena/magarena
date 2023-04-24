@@ -1,5 +1,5 @@
 name=Sidisi, Brood Tyrant
-image=https://magiccards.info/scans/en/ktk/199.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32f08fd3-9c0a-476a-9894-1938179824c6.jpg?1673149137
 value=3.375
 rarity=M
 type=Legendary,Creature

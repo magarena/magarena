@@ -1,5 +1,5 @@
 name=Goblin Spy
-image=https://magiccards.info/scans/en/in/145.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a89a099-8805-4b26-babd-5d9f48ee406a.jpg?1595438179
 value=3.841
 rarity=U
 type=Creature

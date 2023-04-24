@@ -1,5 +1,5 @@
 name=Merfolk Raiders
-image=https://magiccards.info/scans/en/mr/75.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0f34166-8946-4bcc-84af-3540c42ac7f7.jpg?1562721922
 value=2.565
 rarity=C
 type=Creature

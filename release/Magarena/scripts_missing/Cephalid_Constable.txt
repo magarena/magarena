@@ -1,5 +1,5 @@
 name=Cephalid Constable
-image=https://magiccards.info/scans/en/10e/72.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82c5272d-df5b-4c21-9bff-4d6245b8d2a6.jpg?1562550743
 value=4.049
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Evershrike
-image=https://magiccards.info/scans/en/eve/88.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/499d1789-f7b0-47a1-962e-4c75b23befd5.jpg?1562910363
 value=3.938
 rarity=R
 type=Creature

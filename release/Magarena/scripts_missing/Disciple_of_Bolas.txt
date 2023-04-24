@@ -1,5 +1,5 @@
 name=Disciple of Bolas
-image=https://magiccards.info/scans/en/c14/140.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0801fd0-1f6c-45ea-94aa-80cf0c017f57.jpg?1673484148
 value=2.500
 rarity=R
 type=Creature

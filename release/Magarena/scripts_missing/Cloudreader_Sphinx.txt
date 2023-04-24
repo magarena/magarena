@@ -1,5 +1,5 @@
 name=Cloudreader Sphinx
-image=https://magiccards.info/scans/en/dom/47.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2afaeec0-9ea3-4aec-9876-8e005e787d71.jpg?1598303802
 value=2.500
 rarity=C
 type=Creature

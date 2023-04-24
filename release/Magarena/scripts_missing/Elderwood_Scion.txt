@@ -1,5 +1,5 @@
 name=Elderwood Scion
-image=https://magiccards.info/scans/en/pc2/88.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c16dabf9-6b77-44dd-8fe8-bd3e36a57d7e.jpg?1592711081
 value=4.011
 rarity=R
 type=Creature

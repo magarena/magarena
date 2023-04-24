@@ -1,5 +1,5 @@
 name=Undiscovered Paradise
-image=https://magiccards.info/scans/en/vi/167.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f6e8830-5e62-4945-8b73-60f0628d38e7.jpg?1562277673
 value=4.568
 rarity=R
 type=Land

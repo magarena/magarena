@@ -1,5 +1,5 @@
 name=Dragon Appeasement
-image=https://magiccards.info/scans/en/arb/115.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bb8fb53-000a-4a04-afdf-38f2cd052c72.jpg?1562640710
 value=2.346
 rarity=U
 type=Enchantment

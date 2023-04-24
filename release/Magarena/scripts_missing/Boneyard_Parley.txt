@@ -1,5 +1,5 @@
 name=Boneyard Parley
-image=https://magiccards.info/scans/en/xln/94.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04a82af7-309d-46f5-b3ec-ea301dfa042f.jpg?1568004146
 value=2.500
 rarity=M
 type=Sorcery

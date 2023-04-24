@@ -1,5 +1,5 @@
 name=Might Beyond Reason
-image=https://magiccards.info/scans/en/soi/217.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a274689-82f1-488a-baf8-cd8ef3477b72.jpg?1576385162
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Jester's Mask
-image=https://magiccards.info/scans/en/ia/300.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69d74d40-5642-4ffb-a65e-4a5c48ff8254.jpg?1562869041
 value=4.054
 rarity=R
 type=Artifact

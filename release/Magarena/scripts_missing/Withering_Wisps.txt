@@ -1,5 +1,5 @@
 name=Withering Wisps
-image=https://magiccards.info/scans/en/ia/56.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/595228da-39ab-4272-bcf4-afd8d229fb01.jpg?1562868575
 value=4.172
 rarity=U
 type=Enchantment

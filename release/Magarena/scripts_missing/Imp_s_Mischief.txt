@@ -1,5 +1,5 @@
 name=Imp's Mischief
-image=https://magiccards.info/scans/en/pc/72.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22ec70a6-40b7-41da-a6c0-c140cadf5509.jpg?1562567679
 value=3.092
 rarity=R
 type=Instant

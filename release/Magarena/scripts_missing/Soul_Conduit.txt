@@ -1,5 +1,5 @@
 name=Soul Conduit
-image=https://magiccards.info/scans/en/nph/158.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa7e4989-cba7-4e0c-bb9d-140af6c006c3.jpg?1562880605
 value=3.408
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Golgari Rot Farm
-image=https://magiccards.info/scans/en/ima/236.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a9b093d-a483-4c7d-81b5-9c70c866bbb1.jpg?1673149506
 image_updated=2017-04-12
 value=2.500
 rarity=U

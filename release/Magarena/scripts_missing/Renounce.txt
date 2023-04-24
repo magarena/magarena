@@ -1,5 +1,5 @@
 name=Renounce
-image=https://magiccards.info/scans/en/mm/42.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bb2bfb9-cc4a-4d33-99f9-17db4d9fc718.jpg?1562381850
 value=3.241
 rarity=U
 type=Instant

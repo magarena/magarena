@@ -1,5 +1,5 @@
 name=Flameshot
-image=https://magiccards.info/scans/en/pr/90.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f7b61a8-a1ff-4e2a-bc24-8990c61a5e5b.jpg?1562906689
 value=3.115
 rarity=U
 type=Sorcery

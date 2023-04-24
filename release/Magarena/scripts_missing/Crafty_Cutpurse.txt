@@ -1,5 +1,5 @@
 name=Crafty Cutpurse
-image=https://magiccards.info/scans/en/rix/33.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/117d84f7-45c5-4cfc-a5cd-c44416b48417.jpg?1625976076
 value=2.500
 rarity=R
 type=Creature

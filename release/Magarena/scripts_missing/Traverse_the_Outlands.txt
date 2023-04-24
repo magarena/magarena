@@ -1,5 +1,5 @@
 name=Traverse the Outlands
-image=https://magiccards.info/scans/en/c17/34.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef192364-713a-42ff-8249-69a73ae61bd8.jpg?1674137335
 image_updated=2017-10-03
 value=2.500
 rarity=R

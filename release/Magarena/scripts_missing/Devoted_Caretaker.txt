@@ -1,5 +1,5 @@
 name=Devoted Caretaker
-image=https://magiccards.info/scans/en/od/18.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d400b63-de3e-4805-a51d-c4c0dfbb7033.jpg?1562921200
 value=4.076
 rarity=R
 type=Creature

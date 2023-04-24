@@ -1,5 +1,5 @@
 name=Equipoise
-image=https://magiccards.info/scans/en/vi/103.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53783312-3551-4361-ab02-c9651ce2a926.jpg?1562277662
 value=4.155
 rarity=R
 type=Enchantment

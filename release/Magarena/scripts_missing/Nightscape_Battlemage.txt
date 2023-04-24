@@ -1,5 +1,5 @@
 name=Nightscape Battlemage
-image=https://magiccards.info/scans/en/ps/47.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5389643-4cc0-4a17-bc2d-7f9b76d30f9f.jpg?1562940108
 value=3.821
 rarity=U
 type=Creature

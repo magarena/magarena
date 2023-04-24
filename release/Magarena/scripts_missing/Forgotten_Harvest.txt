@@ -1,5 +1,5 @@
 name=Forgotten Harvest
-image=https://magiccards.info/scans/en/pr/114.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fefbace-03cb-43db-a221-0be2b8784357.jpg?1562924877
 value=2.645
 rarity=R
 type=Enchantment

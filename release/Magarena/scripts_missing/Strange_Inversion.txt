@@ -1,5 +1,5 @@
 name=Strange Inversion
-image=https://magiccards.info/scans/en/chk/192.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/316a78af-a991-4a5e-bdc2-f39947b89bb2.jpg?1562758913
 value=2.217
 rarity=U
 type=Instant

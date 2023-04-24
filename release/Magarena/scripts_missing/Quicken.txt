@@ -1,5 +1,5 @@
 name=Quicken
-image=https://magiccards.info/scans/en/gp/31.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6209bbf-5861-4755-abb6-0f04def9527e.jpg?1612316347
 value=4.148
 rarity=R
 type=Instant

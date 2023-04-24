@@ -1,5 +1,5 @@
 name=Oracle en-Vec
-image=https://magiccards.info/scans/en/tp/243.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc538730-c46c-4e5f-bc1f-0efb7765086d.jpg?1562056853
 value=3.987
 rarity=R
 type=Creature

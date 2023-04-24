@@ -1,5 +1,5 @@
 name=Transmogrifying Wand
-image=https://magiccards.info/scans/en/m19/247.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b06b670-7238-4732-85fd-ac6abebea57f.jpg?1562300746
 value=2.500
 rarity=R
 type=Artifact

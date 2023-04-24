@@ -1,5 +1,5 @@
 name=Repentant Vampire
-image=https://magiccards.info/scans/en/od/157.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c1dbad4-1105-4426-8d4d-a30f6fa95ce8.jpg?1562903155
 value=3.685
 rarity=R
 type=Creature

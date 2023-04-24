@@ -1,5 +1,5 @@
 name=Door of Destinies
-image=https://magiccards.info/scans/en/c17/208.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75fd3fea-158a-4575-84a8-879ee9404242.jpg?1562612984
 image_updated=2017-10-03
 value=3.786
 rarity=R

@@ -1,5 +1,5 @@
 name=Silvergill Adept
-image=https://magiccards.info/scans/en/rix/53.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45ea8ca1-612d-4984-8572-06710d38bfa6.jpg?1555040020
 image_updated=2018-03-12
 value=4.264
 rarity=U

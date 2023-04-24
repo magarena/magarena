@@ -1,5 +1,5 @@
 name=Renegade Krasis
-image=https://magiccards.info/scans/en/dgm/47.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23b68921-0c34-4d92-83c3-21542f62c7f6.jpg?1562901608
 value=3.792
 rarity=R
 type=Creature

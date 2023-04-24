@@ -1,5 +1,5 @@
 name=Run
-image=https://magiccards.info/scans/en/di/152b.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b44c30a9-1af4-4287-a809-d2de4e8b4070.jpg?1593273934
 value=3.500
 rarity=U
 type=Instant

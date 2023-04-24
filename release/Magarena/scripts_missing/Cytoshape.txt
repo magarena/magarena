@@ -1,5 +1,5 @@
 name=Cytoshape
-image=https://magiccards.info/scans/en/di/108.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/758023cb-548a-4a98-a355-f5c6e9eab5ff.jpg?1593273584
 value=3.988
 rarity=R
 type=Instant

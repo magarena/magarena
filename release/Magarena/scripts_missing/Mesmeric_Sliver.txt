@@ -1,5 +1,5 @@
 name=Mesmeric Sliver
-image=https://magiccards.info/scans/en/fut/53.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8bf083e-d0ec-4df9-a17a-8a28ad13d594.jpg?1562932170
 value=2.837
 rarity=C
 type=Creature

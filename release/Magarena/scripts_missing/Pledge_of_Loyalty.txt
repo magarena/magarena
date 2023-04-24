@@ -1,5 +1,5 @@
 name=Pledge of Loyalty
-image=https://magiccards.info/scans/en/in/24.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6f98c26-5b30-400c-8af1-8c6c43065f63.jpg?1562938145
 value=2.971
 rarity=U
 type=Enchantment

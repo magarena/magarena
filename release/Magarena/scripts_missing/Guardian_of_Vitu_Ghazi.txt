@@ -1,5 +1,5 @@
 name=Guardian of Vitu-Ghazi
-image=https://magiccards.info/scans/en/rav/212.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c293144-df82-481d-8d24-2bdc164a355f.jpg?1598917123
 value=2.978
 rarity=C
 type=Creature

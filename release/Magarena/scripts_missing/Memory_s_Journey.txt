@@ -1,5 +1,5 @@
 name=Memory's Journey
-image=https://magiccards.info/scans/en/isd/66.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/265aaa73-1a1e-4282-a860-f7c422f21db3.jpg?1562827632
 value=4.185
 rarity=U
 type=Instant

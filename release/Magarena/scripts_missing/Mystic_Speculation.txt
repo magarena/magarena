@@ -1,5 +1,5 @@
 name=Mystic Speculation
-image=https://magiccards.info/scans/en/fut/41.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92adfcb4-6a0a-46f9-a171-bfa9fade2156.jpg?1562924619
 value=3.865
 rarity=U
 type=Sorcery

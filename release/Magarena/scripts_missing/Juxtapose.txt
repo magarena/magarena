@@ -1,5 +1,5 @@
 name=Juxtapose
-image=https://magiccards.info/scans/en/6e/77.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b894a51-6d4e-4e0f-b42a-dbab594fb81d.jpg?1559592475
 value=3.742
 rarity=R
 type=Sorcery

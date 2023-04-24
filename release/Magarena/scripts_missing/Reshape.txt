@@ -1,5 +1,5 @@
 name=Reshape
-image=https://magiccards.info/scans/en/ds/31.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/9574f9a0-e062-47bf-b8ad-895d02852be8.jpg?1661583561
 value=3.803
 rarity=R
 type=Sorcery

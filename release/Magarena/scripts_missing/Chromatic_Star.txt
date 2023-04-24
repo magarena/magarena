@@ -1,5 +1,5 @@
 name=Chromatic Star
-image=https://magiccards.info/scans/en/10e/314.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2e8d492-2c67-410b-b556-c157a14c4cec.jpg?1681724919
 value=3.742
 rarity=U
 type=Artifact

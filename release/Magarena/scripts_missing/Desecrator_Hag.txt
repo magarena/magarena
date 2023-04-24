@@ -1,5 +1,5 @@
 name=Desecrator Hag
-image=https://magiccards.info/scans/en/cmd/193.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1de48517-5993-4d0f-99a5-55f1a4227507.jpg?1562272865
 value=2.682
 rarity=C
 type=Creature

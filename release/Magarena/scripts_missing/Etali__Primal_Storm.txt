@@ -1,5 +1,5 @@
 name=Etali, Primal Storm
-image=https://magiccards.info/scans/en/rix/100.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a03fb3a7-3ef6-4162-aad2-82610492aa72.jpg?1675182771
 value=2.500
 rarity=R
 type=Legendary,Creature

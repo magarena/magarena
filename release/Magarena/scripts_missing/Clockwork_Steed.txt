@@ -1,5 +1,5 @@
 name=Clockwork Steed
-image=https://magiccards.info/scans/en/5e/357.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d76dab5-a4cb-4799-b7a9-9eb93a5b0eba.jpg?1562869050
 value=2.764
 rarity=U
 type=Artifact,Creature

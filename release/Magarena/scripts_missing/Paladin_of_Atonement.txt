@@ -1,5 +1,5 @@
 name=Paladin of Atonement
-image=https://magiccards.info/scans/en/rix/16.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0ad263e-7ff0-459b-b04b-1d03b09c48aa.jpg?1555039745
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Shard Convergence
-image=https://magiccards.info/scans/en/cfx/91.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/285beca0-4876-426f-a4b4-ecefe79ad55d.jpg?1562800095
 value=3.074
 rarity=U
 type=Sorcery

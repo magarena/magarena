@@ -1,5 +1,5 @@
 name=Samut, the Tested
-image=https://magiccards.info/scans/en/hou/144.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09f06f55-7918-46c4-80ff-0bf39e091a4a.jpg?1562788629
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

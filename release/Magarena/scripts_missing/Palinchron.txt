@@ -1,5 +1,5 @@
 name=Palinchron
-image=https://magiccards.info/scans/en/ul/38.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef772879-44aa-428d-8c12-50d38f8bac80.jpg?1562943097
 value=4.500
 rarity=R
 type=Creature

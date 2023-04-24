@@ -1,5 +1,5 @@
 name=Rugged Prairie
-image=https://magiccards.info/scans/en/a25/247.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba25f6c3-c599-442a-89fc-6ae3ab20ad8f.jpg?1673485977
 image_updated=2018-04-25
 value=4.389
 rarity=R

@@ -1,5 +1,5 @@
 name=Reset
-image=https://magiccards.info/scans/en/lg/73.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/860aa0fe-0337-458c-b864-5ef5733fbae6.jpg?1562923286
 value=4.489
 rarity=U
 type=Instant

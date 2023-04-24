@@ -1,5 +1,5 @@
 name=Winds of Qal Sisma
-image=https://magiccards.info/scans/en/frf/147.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c45d98d-b8bd-409d-bce9-d7d73be735a9.jpg?1562822379
 value=2.500
 rarity=U
 type=Instant

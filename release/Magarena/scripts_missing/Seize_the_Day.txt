@@ -1,5 +1,5 @@
 name=Seize the Day
-image=https://magiccards.info/scans/en/od/220.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/610b3a04-76ba-4388-8808-53f7d91b1ac1.jpg?1661583505
 value=4.048
 rarity=R
 type=Sorcery

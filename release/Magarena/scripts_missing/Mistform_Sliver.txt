@@ -1,5 +1,5 @@
 name=Mistform Sliver
-image=https://magiccards.info/scans/en/le/46.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79a53c29-6753-4f6b-b4ee-00c1adf7e9c6.jpg?1562919442
 value=2.514
 rarity=C
 type=Creature

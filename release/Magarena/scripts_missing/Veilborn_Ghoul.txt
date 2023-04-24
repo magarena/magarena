@@ -1,5 +1,5 @@
 name=Veilborn Ghoul
-image=https://magiccards.info/scans/en/m13/114.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3f49232-2853-427f-8c20-322e09a3ccde.jpg?1562560524
 value=2.512
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Release the Gremlins
-image=https://magiccards.info/scans/en/aer/96.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4ba75be-2428-45aa-bf02-75c379a5dfa2.jpg?1576381897
 value=2.500
 rarity=R
 type=Sorcery

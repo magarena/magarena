@@ -1,5 +1,5 @@
 name=Children of Korlis
-image=https://magiccards.info/scans/en/ts/8.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a6cbece-f9d8-4c40-b72b-dfdb86430ff2.jpg?1619392791
 value=4.463
 rarity=C
 type=Creature

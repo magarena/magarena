@@ -1,5 +1,5 @@
 name=Krark's Thumb
-image=https://magiccards.info/scans/en/mi/190.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78a5d49a-747e-4ec8-a20a-ca917c315774.jpg?1610836017
 value=4.219
 rarity=R
 type=Legendary,Artifact

@@ -1,5 +1,5 @@
 name=Pillar of Origins
-image=https://magiccards.info/scans/en/xln/241.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f888facd-e462-4794-a774-d765d1a1edfd.jpg?1562566965
 value=2.500
 rarity=U
 type=Artifact

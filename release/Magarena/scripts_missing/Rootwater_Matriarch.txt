@@ -1,5 +1,5 @@
 name=Rootwater Matriarch
-image=https://magiccards.info/scans/en/10e/103.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09179261-aa02-4144-9028-3b8d6420a860.jpg?1562543414
 value=4.178
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Surging Flame
-image=https://magiccards.info/scans/en/cs/99.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/9974a543-7429-458b-a24f-c84cbffbb54d.jpg?1593275335
 value=3.000
 rarity=C
 type=Instant

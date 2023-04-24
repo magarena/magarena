@@ -1,5 +1,5 @@
 name=Chalice of Death
-image=https://magiccards.info/scans/en/dka/146b.jpg
+image=https://cards.scryfall.io/border_crop/back/9/d/9d9c1c46-7aa7-464c-87b0-b29b9663daef.jpg?1581395105
 value=3.659
 rarity=U
 type=Artifact

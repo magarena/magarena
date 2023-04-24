@@ -1,5 +1,5 @@
 name=Ugin's Construct
-image=https://magiccards.info/scans/en/frf/164.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7ee009a4-72d0-4828-b826-3ed7c7d87b53.jpg?1562826956
 value=2.500
 rarity=U
 type=Artifact,Creature

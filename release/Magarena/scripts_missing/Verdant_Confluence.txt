@@ -1,5 +1,5 @@
 name=Verdant Confluence
-image=https://magiccards.info/scans/en/c15/40.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dada0427-aade-437f-bfca-410347f9ebe1.jpg?1562710391
 image_updated=2016-02-29
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Infernal Genesis
-image=https://magiccards.info/scans/en/pr/68.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a63d16e-319d-46f4-a28c-895b36605ee6.jpg?1562899951
 value=3.180
 rarity=R
 type=Enchantment

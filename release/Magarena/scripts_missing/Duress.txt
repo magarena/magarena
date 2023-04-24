@@ -1,5 +1,5 @@
 name=Duress
-image=https://magiccards.info/scans/en/m19/94.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/3557e601-9b71-4ce9-9047-1a8baa72e574.jpg?1675957024
 image_updated=2018-08-07
 value=2.500
 rarity=C

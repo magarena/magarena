@@ -1,5 +1,5 @@
 name=Infectious Rage
-image=https://magiccards.info/scans/en/ju/92.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/8569cdf7-e0e9-4733-98b5-56fac216fad3.jpg?1562630754
 value=2.857
 rarity=U
 type=Enchantment

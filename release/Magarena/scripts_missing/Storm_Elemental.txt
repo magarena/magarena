@@ -1,5 +1,5 @@
 name=Storm Elemental
-image=https://magiccards.info/scans/en/cstd/17.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2903c66e-056d-4ab6-9dfe-81b18a8da454.jpg?1562868059
 value=2.014
 rarity=U
 type=Creature

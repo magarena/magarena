@@ -1,5 +1,5 @@
 name=Grim Discovery
-image=https://magiccards.info/scans/en/zen/91.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6701121-c144-4294-bbeb-66abad198f98.jpg?1562230615
 value=4.431
 rarity=C
 type=Sorcery

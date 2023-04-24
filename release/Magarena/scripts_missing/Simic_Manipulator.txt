@@ -1,5 +1,5 @@
 name=Simic Manipulator
-image=https://magiccards.info/scans/en/gtc/50.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3dff9e6-5e0c-4e5b-8184-f0ae9cf347b3.jpg?1561849835
 value=3.582
 rarity=R
 type=Creature

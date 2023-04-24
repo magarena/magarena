@@ -1,5 +1,5 @@
 name=Overgrown Battlement
-image=https://magiccards.info/scans/en/ima/180.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/137852ce-3699-4dd0-8ead-9b267e9bb900.jpg?1673484716
 image_updated=2017-04-12
 value=4.268
 rarity=U

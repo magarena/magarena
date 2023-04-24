@@ -1,5 +1,5 @@
 name=Return to the Ranks
-image=https://magiccards.info/scans/en/m15/29.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fccce64-abac-4b90-bbe5-dbba8434b3b4.jpg?1562791815
 value=3.357
 rarity=R
 type=Sorcery

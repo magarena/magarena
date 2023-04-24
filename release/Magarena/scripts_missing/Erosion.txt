@@ -1,5 +1,5 @@
 name=Erosion
-image=https://magiccards.info/scans/en/4e/70.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8dc539ff-03f5-4bec-877a-061fb5d40de9.jpg?1559603772
 value=1.644
 rarity=C
 type=Enchantment

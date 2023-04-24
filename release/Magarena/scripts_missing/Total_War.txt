@@ -1,5 +1,5 @@
 name=Total War
-image=https://magiccards.info/scans/en/ia/221.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6107388b-ec1e-401e-a407-a821c908ed8d.jpg?1562912936
 value=3.037
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Erdwal Illuminator
-image=https://magiccards.info/scans/en/soi/60.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63df99f9-4f85-4c76-8d76-9075c9ef2b86.jpg?1576384055
 value=2.500
 rarity=U
 type=Creature

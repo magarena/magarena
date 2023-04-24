@@ -1,5 +1,5 @@
 name=Rushing River
-image=https://magiccards.info/scans/en/ps/30.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52ddf7bf-de9c-4657-8d5b-79869d36fa63.jpg?1562912267
 value=3.500
 rarity=C
 type=Instant

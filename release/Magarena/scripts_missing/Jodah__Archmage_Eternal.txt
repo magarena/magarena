@@ -1,5 +1,5 @@
 name=Jodah, Archmage Eternal
-image=https://magiccards.info/scans/en/dom/198.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73c18cb4-96b1-4af2-912e-974e22877ede.jpg?1673148799
 value=2.500
 rarity=R
 type=Legendary,Creature

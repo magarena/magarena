@@ -1,5 +1,5 @@
 name=Suffocating Blast
-image=https://magiccards.info/scans/en/ap/124.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2a70297-2a7b-4a0c-ace5-cd61bfe6dafd.jpg?1562940975
 value=4.231
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Benalish Commander
-image=https://magiccards.info/scans/en/pc/2.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a8d57fb-abe1-483b-8b94-85d39a1c31e1.jpg?1619392635
 value=3.991
 rarity=R
 type=Creature

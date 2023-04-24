@@ -1,5 +1,5 @@
 name=Karplusan Hound
-image=https://magiccards.info/scans/en/dom/277.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95179b31-8cb5-4dd9-ad93-782b8774534d.jpg?1636491658
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Path of Bravery
-image=https://magiccards.info/scans/en/ima/26.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d389a05-2e1a-471d-a865-1c3b68a03e01.jpg?1600697093
 image_updated=2017-04-12
 value=3.671
 rarity=R

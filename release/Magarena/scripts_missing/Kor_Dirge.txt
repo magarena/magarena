@@ -1,5 +1,5 @@
 name=Kor Dirge
-image=https://magiccards.info/scans/en/pc/87.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e55cf5e9-b343-4307-a379-925d94a8a003.jpg?1620236321
 value=3.750
 rarity=U
 type=Instant

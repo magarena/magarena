@@ -1,5 +1,5 @@
 name=Golgari Decoy
-image=https://magiccards.info/scans/en/rtr/127.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/511a42a8-71ce-476f-98fa-fc0dc822edcf.jpg?1562786246
 value=3.074
 rarity=U
 type=Creature

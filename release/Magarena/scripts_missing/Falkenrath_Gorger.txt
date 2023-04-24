@@ -1,5 +1,5 @@
 name=Falkenrath Gorger
-image=https://magiccards.info/scans/en/soi/155.jpg
+image=https://cards.scryfall.io/border_crop/front/6/d/6d653a1d-d355-464e-82aa-92028296b7ef.jpg?1641603175
 value=2.500
 rarity=R
 type=Creature

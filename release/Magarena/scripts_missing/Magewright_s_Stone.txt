@@ -1,5 +1,5 @@
 name=Magewright's Stone
-image=https://magiccards.info/scans/en/di/162.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d27e8442-91ce-4106-bfc6-a1f6e0e34c2d.jpg?1593274008
 value=3.333
 rarity=U
 type=Artifact

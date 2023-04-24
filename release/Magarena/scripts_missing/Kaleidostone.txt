@@ -1,5 +1,5 @@
 name=Kaleidostone
-image=https://magiccards.info/scans/en/cfx/137.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79826f7f-e46b-489d-8fcb-1712d36e8f60.jpg?1562801888
 value=2.974
 rarity=C
 type=Artifact

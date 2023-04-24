@@ -1,5 +1,5 @@
 name=Timber Wolves
-image=https://magiccards.info/scans/en/4e/159.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8f84fc8-69b4-4756-9634-4d6c17ec88a1.jpg?1559600380
 value=3.295
 rarity=R
 type=Creature

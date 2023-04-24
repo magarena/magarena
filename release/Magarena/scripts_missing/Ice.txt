@@ -1,5 +1,5 @@
 name=Ice
-image=https://magiccards.info/scans/en/cmd/198b.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e09b054-4d33-4a12-bf2a-9b0009f33044.jpg?1660845942
 value=4.597
 rarity=U
 type=Instant

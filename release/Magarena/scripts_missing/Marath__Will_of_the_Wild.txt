@@ -1,5 +1,5 @@
 name=Marath, Will of the Wild
-image=https://magiccards.info/scans/en/c13/198.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57afa796-db46-45ff-91bd-f02922e5f33d.jpg?1665156235
 value=3.920
 rarity=M
 type=Legendary,Creature

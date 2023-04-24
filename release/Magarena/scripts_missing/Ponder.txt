@@ -1,5 +1,5 @@
 name=Ponder
-image=https://magiccards.info/scans/en/m12/73.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44dcfc0c-b23d-48be-bf3a-a6fc6806c5e1.jpg?1673483971
 value=4.565
 rarity=C
 type=Sorcery

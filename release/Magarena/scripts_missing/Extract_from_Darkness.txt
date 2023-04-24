@@ -1,5 +1,5 @@
 name=Extract from Darkness
-image=https://magiccards.info/scans/en/ema/200.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0769e3f-d27d-4aff-8da0-f03c10b8650b.jpg?1673148587
 value=3.885
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Jagged Lightning
-image=https://magiccards.info/scans/en/st/109.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51f724db-0427-44f9-963d-ae2356c928f4.jpg?1562874077
 value=3.250
 rarity=U
 type=Sorcery

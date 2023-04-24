@@ -1,5 +1,5 @@
 name=Generator Servant
-image=https://magiccards.info/scans/en/m15/143.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ea15262-c00f-4865-bb6a-37ccb2ef62bd.jpg?1547517270
 value=3.722
 rarity=C
 type=Creature

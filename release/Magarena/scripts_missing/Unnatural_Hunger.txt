@@ -1,5 +1,5 @@
 name=Unnatural Hunger
-image=https://magiccards.info/scans/en/mm/169.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/3985f240-4289-4d48-978c-bb2ce2b54c36.jpg?1562379932
 value=3.411
 rarity=R
 type=Enchantment

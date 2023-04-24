@@ -1,5 +1,5 @@
 name=Karoo
-image=https://magiccards.info/scans/en/c14/303.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0eeca39-6f76-488e-b3c0-99441539705f.jpg?1561952582
 value=2.500
 rarity=U
 type=Land

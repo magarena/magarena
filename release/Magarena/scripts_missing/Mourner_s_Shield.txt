@@ -1,5 +1,5 @@
 name=Mourner's Shield
-image=https://magiccards.info/scans/en/mi/209.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/783fe67f-59f7-46f0-bfa4-fa4a65c9c33c.jpg?1562148134
 value=2.857
 rarity=U
 type=Artifact

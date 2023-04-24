@@ -1,5 +1,5 @@
 name=Flickering Ward
-image=https://magiccards.info/scans/en/tp/231.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4d2b011-bb0d-463c-bf2a-04b6650771a3.jpg?1562056865
 value=4.314
 rarity=U
 type=Enchantment

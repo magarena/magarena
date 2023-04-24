@@ -1,5 +1,5 @@
 name=Goldnight Castigator
-image=https://magiccards.info/scans/en/soi/162.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca3d3c9a-d41b-4743-87a6-68d116460fe2.jpg?1576384777
 value=2.500
 rarity=M
 type=Creature

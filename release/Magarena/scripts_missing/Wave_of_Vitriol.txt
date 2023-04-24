@@ -1,5 +1,5 @@
 name=Wave of Vitriol
-image=https://magiccards.info/scans/en/c14/51.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/17328391-a510-42a0-8a00-4f61dd873c13.jpg?1592673299
 value=2.500
 rarity=R
 type=Sorcery

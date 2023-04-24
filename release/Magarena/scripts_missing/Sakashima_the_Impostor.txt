@@ -1,5 +1,5 @@
 name=Sakashima the Impostor
-image=https://magiccards.info/scans/en/sok/53.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9ab09047-f76b-4d3a-843b-73f798e8f03e.jpg?1645328779
 value=4.039
 rarity=R
 type=Legendary,Creature

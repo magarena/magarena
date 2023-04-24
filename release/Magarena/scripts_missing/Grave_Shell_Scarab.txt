@@ -1,5 +1,5 @@
 name=Grave-Shell Scarab
-image=https://magiccards.info/scans/en/rav/211.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/23f7c7d0-a48b-4153-8386-a9ab71e01dbe.jpg?1598917103
 value=3.944
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Runesword
-image=https://magiccards.info/scans/en/dk/104.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a11ec2f6-a0c7-4164-a562-fab7aab7d211.jpg?1562927570
 image_updated=2017-01-06
 value=1.254
 rarity=U

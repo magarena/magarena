@@ -1,5 +1,5 @@
 name=Djinn Illuminatus
-image=https://magiccards.info/scans/en/gp/142.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c784b00-dcef-4640-a305-5ff1baf2e6fd.jpg?1591321231
 value=4.230
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Vengeful Archon
-image=https://magiccards.info/scans/en/m11/37.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a505d07f-61cf-4b00-a1d5-028747899eaa.jpg?1562470439
 value=4.051
 rarity=R
 type=Creature

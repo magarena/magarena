@@ -1,5 +1,5 @@
 name=Glittering Wish
-image=https://magiccards.info/scans/en/fut/156.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c89645b-5e53-48c0-b4bb-9f22332c7658.jpg?1619403950
 value=4.207
 rarity=R
 type=Sorcery

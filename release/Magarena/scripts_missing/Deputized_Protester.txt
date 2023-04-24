@@ -1,5 +1,5 @@
 name=Deputized Protester
-image=https://magiccards.info/scans/en/cn2/51.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8afe85a2-1947-4dd5-98f8-d7ff8df088a1.jpg?1576381903
 image_updated=2016-09-05
 value=2.500
 rarity=C

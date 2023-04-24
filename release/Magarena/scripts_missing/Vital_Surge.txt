@@ -1,5 +1,5 @@
 name=Vital Surge
-image=https://magiccards.info/scans/en/bok/150.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba28f326-67d1-4afb-90fe-e9f036210942.jpg?1562879356
 value=1.838
 rarity=C
 type=Instant

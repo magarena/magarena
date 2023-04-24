@@ -1,5 +1,5 @@
 name=Overlaid Terrain
-image=https://magiccards.info/scans/en/ne/108.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/230c7926-9a4b-4ead-b4c8-889f84210545.jpg?1562629009
 value=2.792
 rarity=R
 type=Enchantment

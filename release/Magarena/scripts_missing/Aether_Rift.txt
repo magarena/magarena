@@ -1,5 +1,5 @@
 name=Aether Rift
-image=https://magiccards.info/scans/en/in/227.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/692c186a-997c-4f7e-a339-bf84884e1019.jpg?1562916173
 image_updated=2016-09-27
 value=3.978
 rarity=R

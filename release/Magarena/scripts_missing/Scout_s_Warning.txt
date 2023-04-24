@@ -1,5 +1,5 @@
 name=Scout's Warning
-image=https://magiccards.info/scans/en/fut/16.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6639e3d-b0c4-4c08-83d5-f3fc58fac9b2.jpg?1562941250
 value=3.912
 rarity=R
 type=Instant

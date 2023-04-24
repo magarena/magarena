@@ -1,5 +1,5 @@
 name=Barrow Ghoul
-image=https://magiccards.info/scans/en/wl/3.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7055007-83dd-40fe-b2a1-4b3132f636db.jpg?1562804254
 value=3.451
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Rakavolver
-image=https://magiccards.info/scans/en/ap/68.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43787e24-0b7d-4005-8db4-68544476bd34.jpg?1562910838
 value=4.192
 rarity=R
 type=Creature

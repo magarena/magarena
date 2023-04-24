@@ -1,5 +1,5 @@
 name=Emblazoned Golem
-image=https://magiccards.info/scans/en/ap/136.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/98527fc6-4f4c-4ded-9e72-49186b7e5bd3.jpg?1562930851
 value=2.766
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Braid of Fire
-image=https://magiccards.info/scans/en/cs/78.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41bab8de-6e0f-4ccd-a303-01e9c8c82d3f.jpg?1593275214
 value=4.514
 rarity=R
 type=Enchantment

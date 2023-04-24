@@ -1,5 +1,5 @@
 name=Skullwinder
-image=https://magiccards.info/scans/en/c15/39.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94d406ed-bf60-4adc-9721-e64d1313f6b7.jpg?1674137318
 image_updated=2016-02-29
 value=2.500
 rarity=U

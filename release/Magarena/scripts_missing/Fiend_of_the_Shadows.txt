@@ -1,5 +1,5 @@
 name=Fiend of the Shadows
-image=https://magiccards.info/scans/en/dka/62.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/373f24b1-e763-475c-9760-aefae4be3ea0.jpg?1631586593
 value=3.518
 rarity=R
 type=Creature

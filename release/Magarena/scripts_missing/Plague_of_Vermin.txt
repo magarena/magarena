@@ -1,5 +1,5 @@
 name=Plague of Vermin
-image=https://magiccards.info/scans/en/shm/73.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/231613d6-d3b8-4b41-bc93-4d5da3fec5d0.jpg?1562827857
 value=2.671
 rarity=R
 type=Sorcery

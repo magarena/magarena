@@ -1,5 +1,5 @@
 name=Resounding Wave
-image=https://magiccards.info/scans/en/ala/54.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3eca679-076d-42f0-9ec0-b8116a94e373.jpg?1562710709
 value=2.612
 rarity=C
 type=Instant

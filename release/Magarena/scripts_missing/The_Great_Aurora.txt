@@ -1,5 +1,5 @@
 name=The Great Aurora
-image=https://magiccards.info/scans/en/ori/179.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1d0eb3b-00b9-42ca-9f7d-5543bffc3480.jpg?1562037032
 image_updated=2015-11-05
 value=2.500
 rarity=M

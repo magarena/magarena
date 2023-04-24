@@ -1,5 +1,5 @@
 name=Words of Wilding
-image=https://magiccards.info/scans/en/on/305.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdb9565f-5b09-4127-b169-3146079dab84.jpg?1562955080
 value=3.606
 rarity=R
 type=Enchantment

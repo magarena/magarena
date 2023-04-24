@@ -1,5 +1,5 @@
 name=Wall of Corpses
-image=https://magiccards.info/scans/en/mr/49.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dde6d3d1-75db-445f-9f17-632ee0292211.jpg?1562721938
 value=3.280
 rarity=C
 type=Creature

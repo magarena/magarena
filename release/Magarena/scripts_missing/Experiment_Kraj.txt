@@ -1,5 +1,5 @@
 name=Experiment Kraj
-image=https://magiccards.info/scans/en/di/110.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb7f42a1-0996-4799-ad3a-9525c8e31343.jpg?1593273599
 value=4.193
 rarity=R
 type=Legendary,Creature

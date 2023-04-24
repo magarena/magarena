@@ -1,5 +1,5 @@
 name=Clearwater Goblet
-image=https://magiccards.info/scans/en/5dn/109.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5458c041-dde0-4df7-82bb-ada36a482c53.jpg?1562877054
 value=4.269
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Drain Power
-image=https://magiccards.info/scans/en/5e/82.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/380a7357-8c07-4ee5-83a0-10672d7e85d4.jpg?1562908155
 value=4.050
 rarity=R
 type=Sorcery

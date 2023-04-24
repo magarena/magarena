@@ -1,5 +1,5 @@
 name=Nivmagus Elemental
-image=https://magiccards.info/scans/en/rtr/219.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1892003-2e4c-43bd-8a37-3a97a76f113a.jpg?1562791729
 value=3.907
 rarity=R
 type=Creature

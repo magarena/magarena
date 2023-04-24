@@ -1,5 +1,5 @@
 name=Stubborn Denial
-image=https://magiccards.info/scans/en/ktk/56.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f8626c4-306f-4e9d-8840-2bb73fe87e87.jpg?1562788344
 value=2.750
 rarity=U
 type=Instant

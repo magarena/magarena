@@ -1,5 +1,5 @@
 name=Sundial of the Infinite
-image=https://magiccards.info/scans/en/m12/218.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36d3da9c-cb7a-4cea-b6e6-6722bd16c73c.jpg?1562638658
 value=4.221
 rarity=R
 type=Artifact

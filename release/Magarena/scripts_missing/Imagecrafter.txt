@@ -1,5 +1,5 @@
 name=Imagecrafter
-image=https://magiccards.info/scans/en/on/87.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91be6441-8a45-43e4-8d12-a886dcaadbd3.jpg?1562929336
 value=3.343
 rarity=C
 type=Creature

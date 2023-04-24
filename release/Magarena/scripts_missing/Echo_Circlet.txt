@@ -1,5 +1,5 @@
 name=Echo Circlet
-image=https://magiccards.info/scans/en/som/153.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49e661c6-bc3e-45b4-ae1c-5002e381faf3.jpg?1562817212
 value=2.627
 rarity=C
 type=Artifact

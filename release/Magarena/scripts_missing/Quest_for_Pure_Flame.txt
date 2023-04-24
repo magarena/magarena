@@ -1,5 +1,5 @@
 name=Quest for Pure Flame
-image=https://magiccards.info/scans/en/zen/144.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b43ac5a-21b9-4abe-b8be-86b9056ad70d.jpg?1562613647
 value=3.860
 rarity=U
 type=Enchantment

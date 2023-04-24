@@ -1,5 +1,5 @@
 name=Shah of Naar Isle
-image=https://magiccards.info/scans/en/fut/119.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cee5e9e3-e3ae-4e1b-a8fb-48c523631105.jpg?1562936595
 value=3.368
 rarity=R
 type=Creature

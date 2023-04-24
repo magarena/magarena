@@ -1,5 +1,5 @@
 name=Power Surge
-image=https://magiccards.info/scans/en/4e/234.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b5717af-a1a3-45cb-8b05-7543eed5532a.jpg?1559604134
 value=2.300
 rarity=R
 type=Enchantment

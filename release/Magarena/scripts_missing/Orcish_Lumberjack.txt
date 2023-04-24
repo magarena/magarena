@@ -1,5 +1,5 @@
 name=Orcish Lumberjack
-image=https://magiccards.info/scans/en/cstd/36.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/14fb947c-563e-4811-98de-e25bd141a6e5.jpg?1562899209
 value=4.500
 rarity=C
 type=Creature

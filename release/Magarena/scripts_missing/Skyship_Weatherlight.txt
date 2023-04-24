@@ -1,5 +1,5 @@
 name=Skyship Weatherlight
-image=https://magiccards.info/scans/en/ps/133a.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63f5498b-bb12-48ec-811b-b52e45ffddaf.jpg?1586450703
 value=3.886
 rarity=R
 type=Legendary,Artifact

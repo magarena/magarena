@@ -1,5 +1,5 @@
 name=Elemental Uprising
-image=https://magiccards.info/scans/en/ogw/130.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57b819f4-cabf-4a31-86f4-3213deb6b719.jpg?1601082381
 image_updated=2016-02-29
 value=2.500
 rarity=C

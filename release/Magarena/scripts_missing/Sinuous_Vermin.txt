@@ -1,5 +1,5 @@
 name=Sinuous Vermin
-image=https://magiccards.info/scans/en/cn2/46.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e50f5505-fcbb-4a84-bcf6-950362d83201.jpg?1576381860
 image_updated=2016-09-05
 value=2.500
 rarity=C

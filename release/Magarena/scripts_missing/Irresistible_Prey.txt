@@ -1,5 +1,5 @@
 name=Irresistible Prey
-image=https://magiccards.info/scans/en/cn2/183.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb613e46-af18-4195-883b-cdd35b2eaf50.jpg?1601079704
 image_updated=2017-08-29
 value=3.290
 rarity=U

@@ -1,5 +1,5 @@
 name=Persecute
-image=https://magiccards.info/scans/en/9e/151.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54af13f6-7a7b-431d-9dda-6492d135563f.jpg?1562735379
 value=4.246
 rarity=R
 type=Sorcery

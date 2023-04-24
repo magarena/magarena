@@ -1,5 +1,5 @@
 name=Grim Reminder
-image=https://magiccards.info/scans/en/mi/66.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35baa726-8c2f-4a0b-93d1-d7ecfae69fe4.jpg?1612316260
 value=2.962
 rarity=R
 type=Instant

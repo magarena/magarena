@@ -1,5 +1,5 @@
 name=Cryptic Annelid
-image=https://magiccards.info/scans/en/fut/34.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/5377e2d9-a846-4533-aeaf-9144ca8765da.jpg?1619393971
 image_updated=2016-11-28
 value=3.706
 rarity=U

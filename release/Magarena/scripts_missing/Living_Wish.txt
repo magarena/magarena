@@ -1,5 +1,5 @@
 name=Living Wish
-image=https://magiccards.info/scans/en/a25/179.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d505d319-093d-47af-8ee9-fafae3885aa0.jpg?1562441641
 image_updated=2018-04-25
 value=4.385
 rarity=R

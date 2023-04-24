@@ -1,5 +1,5 @@
 name=Prowling Serpopard
-image=https://magiccards.info/scans/en/akh/180.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92921fc1-11d0-41a9-b9b2-b44fd0913d31.jpg?1543675928
 value=2.500
 rarity=R
 type=Creature

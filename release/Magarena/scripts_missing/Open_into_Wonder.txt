@@ -1,5 +1,5 @@
 name=Open into Wonder
-image=https://magiccards.info/scans/en/akh/64.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a921ff16-2cd1-4080-80a9-dd73c4eda5c7.jpg?1604192743
 value=2.500
 rarity=U
 type=Sorcery

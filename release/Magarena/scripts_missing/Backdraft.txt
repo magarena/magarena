@@ -1,5 +1,5 @@
 name=Backdraft
-image=https://magiccards.info/scans/en/lg/132.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58d5b9fe-b66a-48c9-94c4-db783e605f37.jpg?1562858741
 value=1.757
 rarity=U
 type=Instant

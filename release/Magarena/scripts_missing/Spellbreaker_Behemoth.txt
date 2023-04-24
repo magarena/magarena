@@ -1,5 +1,5 @@
 name=Spellbreaker Behemoth
-image=https://magiccards.info/scans/en/arb/60.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8f73857-8bfb-400a-8c33-47c85276fb2a.jpg?1562934088
 value=3.771
 rarity=R
 type=Creature

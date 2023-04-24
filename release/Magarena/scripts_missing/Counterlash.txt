@@ -1,5 +1,5 @@
 name=Counterlash
-image=https://magiccards.info/scans/en/dka/33.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3ec2c57-8e67-472d-8f2e-0492d311f130.jpg?1562945498
 value=3.526
 rarity=R
 type=Instant

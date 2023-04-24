@@ -1,5 +1,5 @@
 name=High Tide
-image=https://magiccards.info/scans/en/fe/35.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2047963c-3761-4d21-834a-674762248b77.jpg?1590511804
 value=4.500
 rarity=C
 type=Instant

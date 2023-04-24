@@ -1,5 +1,5 @@
 name=Herald of Anguish
-image=https://magiccards.info/scans/en/aer/64.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31a69ebe-4229-4067-8414-381b123fe63c.jpg?1576381686
 value=2.500
 rarity=M
 type=Creature

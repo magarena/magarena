@@ -1,5 +1,5 @@
 name=Palace Guard
-image=https://magiccards.info/scans/en/m11/24.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51e73c28-bf82-413e-bec2-adbb52fa6993.jpg?1562459653
 value=3.445
 rarity=C
 type=Creature

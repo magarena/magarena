@@ -1,5 +1,5 @@
 name=Flailing Soldier
-image=https://magiccards.info/scans/en/mm/189.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb44b0f6-0608-40d6-9eaa-48e5a834701f.jpg?1562384000
 value=4.020
 rarity=C
 type=Creature

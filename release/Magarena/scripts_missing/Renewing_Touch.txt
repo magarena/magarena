@@ -1,5 +1,5 @@
 name=Renewing Touch
-image=https://magiccards.info/scans/en/st/140.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b038fbf-d8cc-48c2-a2b6-893c4b5c5f05.jpg?1562874544
 value=3.854
 rarity=U
 type=Sorcery

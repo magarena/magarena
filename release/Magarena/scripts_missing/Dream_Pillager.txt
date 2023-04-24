@@ -1,5 +1,5 @@
 name=Dream Pillager
-image=https://magiccards.info/scans/en/c15/25.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/68c8d00f-23f3-429a-a99a-a6f3ec21c137.jpg?1674141974
 image_updated=2016-02-29
 value=2.500
 rarity=R

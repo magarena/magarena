@@ -1,5 +1,5 @@
 name=Prismatic Lens
-image=https://magiccards.info/scans/en/ema/230.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c3be020-37a3-49ce-8604-27794175bf9d.jpg?1619399044
 value=3.618
 rarity=U
 type=Artifact

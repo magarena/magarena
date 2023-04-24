@@ -1,5 +1,5 @@
 name=Mayael the Anima
-image=https://magiccards.info/scans/en/ala/179.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/309d95ad-e46c-4407-894d-d4cfdc7017f8.jpg?1562905228
 value=3.789
 rarity=M
 type=Legendary,Creature

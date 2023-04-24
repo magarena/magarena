@@ -1,5 +1,5 @@
 name=Dark-Dweller Oracle
-image=https://magiccards.info/scans/en/m19/134.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd35664f-b99d-46b6-988e-8f2814b0a854.jpg?1673147765
 value=2.500
 rarity=R
 type=Creature

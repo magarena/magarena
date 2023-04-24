@@ -1,5 +1,5 @@
 name=Jace, Memory Adept
-image=https://magiccards.info/scans/en/m13/56.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/2801a4ad-5d44-4414-af62-458c7f90dad6.jpg?1562827243
 value=3.490
 rarity=M
 type=Legendary,Planeswalker

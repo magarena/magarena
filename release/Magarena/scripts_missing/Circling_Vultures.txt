@@ -1,5 +1,5 @@
 name=Circling Vultures
-image=https://magiccards.info/scans/en/wl/6.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8dae8e49-c2b6-4965-9249-49f93449d271.jpg?1562802083
 value=3.860
 rarity=U
 type=Creature

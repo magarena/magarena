@@ -1,5 +1,5 @@
 name=Mob Mentality
-image=https://magiccards.info/scans/en/vi/88.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e428d56a-9445-4e86-b281-656e2d251e0b.jpg?1562279096
 value=3.243
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Implements of Sacrifice
-image=https://magiccards.info/scans/en/fe/173.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aa5deb95-79a6-4398-b82a-c1df169550d9.jpg?1562926815
 value=2.819
 rarity=R
 type=Artifact

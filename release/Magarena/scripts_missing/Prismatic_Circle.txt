@@ -1,5 +1,5 @@
 name=Prismatic Circle
-image=https://magiccards.info/scans/en/mr/238.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d4e3de4-f173-4bcc-a5fb-089eee7108d3.jpg?1562720477
 value=2.250
 rarity=C
 type=Enchantment

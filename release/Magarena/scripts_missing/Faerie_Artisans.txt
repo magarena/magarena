@@ -1,5 +1,5 @@
 name=Faerie Artisans
-image=https://magiccards.info/scans/en/c16/8.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff05c503-2536-48f5-a639-480614a2e5f8.jpg?1562427705
 image_updated=2016-12-02
 value=2.500
 rarity=R

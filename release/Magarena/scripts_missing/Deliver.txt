@@ -1,5 +1,5 @@
 name=Deliver
-image=https://magiccards.info/scans/en/in/292b.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be8b338f-6f05-43c6-beeb-c5052cc0d6a9.jpg?1562933317
 value=3.219
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Karametra's Acolyte
-image=https://magiccards.info/scans/en/ths/160.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/374a1b7c-ce11-4734-aff2-b0bd00857fad.jpg?1562816653
 value=3.530
 rarity=U
 type=Creature

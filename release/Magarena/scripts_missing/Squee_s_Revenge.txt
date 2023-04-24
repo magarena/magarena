@@ -1,5 +1,5 @@
 name=Squee's Revenge
-image=https://magiccards.info/scans/en/ap/123.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/664c8130-311b-4f65-853d-02f8e57ebe5c.jpg?1645329265
 value=2.934
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Foriysian Brigade
-image=https://magiccards.info/scans/en/wl/130.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d11b6ef-3a24-4709-a62f-c5e062a6cee1.jpg?1562799325
 value=2.885
 rarity=U
 type=Creature

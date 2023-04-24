@@ -1,5 +1,5 @@
 name=Tilonalli's Skinshifter
-image=https://magiccards.info/scans/en/xln/170.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aab2765d-cfc4-4381-8cce-adce5aaf05ad.jpg?1562561848
 value=2.500
 rarity=R
 type=Creature

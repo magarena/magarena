@@ -1,5 +1,5 @@
 name=Taunting Challenge
-image=https://magiccards.info/scans/en/p3k/152.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/4620867c-a3a6-4c81-b923-24007367132e.jpg?1562256078
 value=3.059
 rarity=R
 type=Sorcery

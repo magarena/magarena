@@ -1,5 +1,5 @@
 name=Conflagrate
-image=https://magiccards.info/scans/en/ts/151.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfbbcc1a-c6cc-4671-91ab-9dcf454f62e0.jpg?1619396881
 value=3.641
 rarity=U
 type=Sorcery

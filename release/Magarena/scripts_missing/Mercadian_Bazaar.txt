@@ -1,5 +1,5 @@
 name=Mercadian Bazaar
-image=https://magiccards.info/scans/en/mm/321.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f787cb6-78cb-4baa-a9cf-cee8b7d8d6b1.jpg?1562381358
 value=3.133
 rarity=U
 type=Land

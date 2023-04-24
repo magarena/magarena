@@ -1,5 +1,5 @@
 name=Naga Oracle
-image=https://magiccards.info/scans/en/akh/62.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9060b7b5-3ef1-443e-8f8a-450cc42c43a6.jpg?1665819622
 value=2.500
 rarity=C
 type=Creature

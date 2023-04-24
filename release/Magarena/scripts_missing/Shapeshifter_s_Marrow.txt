@@ -1,5 +1,5 @@
 name=Shapeshifter's Marrow
-image=https://magiccards.info/scans/en/fut/58.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48cb3fa8-555f-4df6-994e-cf01896f7470.jpg?1562909831
 value=3.070
 rarity=R
 type=Enchantment

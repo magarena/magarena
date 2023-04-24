@@ -1,5 +1,5 @@
 name=Summary Dismissal
-image=https://magiccards.info/scans/en/emn/75.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b75794d-3334-4b4d-9446-0a251dd3bd15.jpg?1576384222
 image_updated=2016-09-05
 value=2.500
 rarity=R

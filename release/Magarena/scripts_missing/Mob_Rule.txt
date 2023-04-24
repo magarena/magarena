@@ -1,5 +1,5 @@
 name=Mob Rule
-image=https://magiccards.info/scans/en/frf/109.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b04c928-9ee5-4e39-962e-4686e25b5c33.jpg?1641603202
 value=2.500
 rarity=R
 type=Sorcery

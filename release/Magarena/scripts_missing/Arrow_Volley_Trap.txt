@@ -1,5 +1,5 @@
 name=Arrow Volley Trap
-image=https://magiccards.info/scans/en/zen/2.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8b3ea52-2338-4499-9100-c4be73cdfc32.jpg?1592754990
 image_updated=2017-01-11
 value=2.000
 rarity=U

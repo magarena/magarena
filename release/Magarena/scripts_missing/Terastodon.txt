@@ -1,5 +1,5 @@
 name=Terastodon
-image=https://magiccards.info/scans/en/c14/218.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63195796-197e-47ec-85f0-d4ec0065f6e6.jpg?1625977325
 image_updated=2016-02-29
 value=2.500
 rarity=R

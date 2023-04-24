@@ -1,5 +1,5 @@
 name=Hakim, Loreweaver
-image=https://magiccards.info/scans/en/mr/68.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/8192bca7-03e5-4ea1-ae77-8bc811c19417.jpg?1562720255
 value=3.219
 rarity=R
 type=Legendary,Creature

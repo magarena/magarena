@@ -1,5 +1,5 @@
 name=Yare
-image=https://magiccards.info/scans/en/mr/252.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a14343d-c2cd-4a67-ae54-6b6a4677ca85.jpg?1562720934
 value=2.844
 rarity=R
 type=Instant

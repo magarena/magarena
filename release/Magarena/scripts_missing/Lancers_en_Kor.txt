@@ -1,5 +1,5 @@
 name=Lancers en-Kor
-image=https://magiccards.info/scans/en/sh/108.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7cd99c2-6d4a-48e8-8848-6fdc0788525d.jpg?1562597834
 value=3.426
 rarity=U
 type=Creature

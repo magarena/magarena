@@ -1,5 +1,5 @@
 name=Blades of Velis Vel
-image=https://magiccards.info/scans/en/mm2/105.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83b17fb1-4a33-454f-9222-c6d5671c7e2f.jpg?1562264327
 value=2.500
 rarity=C
 type=Tribal,Instant

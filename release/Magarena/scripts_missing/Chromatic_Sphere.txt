@@ -1,5 +1,5 @@
 name=Chromatic Sphere
-image=https://magiccards.info/scans/en/mi/151.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/edabc8b2-4413-48e4-8d6f-521b19d839a6.jpg?1601080615
 value=3.070
 rarity=C
 type=Artifact

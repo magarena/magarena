@@ -1,5 +1,5 @@
 name=Skycloud Expanse
-image=https://magiccards.info/scans/en/od/327.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca912cfa-2fdd-4560-90a5-26a71e1f9c4c.jpg?1682210646
 value=3.838
 rarity=R
 type=Land

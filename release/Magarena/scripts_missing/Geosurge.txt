@@ -1,5 +1,5 @@
 name=Geosurge
-image=https://magiccards.info/scans/en/nph/85.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/118b7aa3-bb05-4691-978e-51486435bf05.jpg?1562875605
 value=3.708
 rarity=U
 type=Sorcery

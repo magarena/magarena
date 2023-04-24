@@ -1,5 +1,5 @@
 name=Possessed Portal
-image=https://magiccards.info/scans/en/5dn/144.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/616836e6-caf4-4398-a772-9c67f84c73c5.jpg?1562877337
 value=4.056
 rarity=R
 type=Artifact

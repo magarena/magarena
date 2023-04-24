@@ -1,5 +1,5 @@
 name=Jhoira's Timebug
-image=https://magiccards.info/scans/en/ts/257.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35d14746-3b57-4f8e-8155-e578cc84850d.jpg?1619404400
 value=3.150
 rarity=C
 type=Artifact,Creature

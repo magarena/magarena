@@ -1,5 +1,5 @@
 name=Contagion
-image=https://magiccards.info/scans/en/ai/4.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90036bbd-bb67-477b-a924-d0a2bf436d34.jpg?1559592313
 value=4.571
 rarity=U
 type=Instant

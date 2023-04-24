@@ -1,5 +1,5 @@
 name=Martial Glory
-image=https://magiccards.info/scans/en/gtc/175.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bf662e7-e63f-40c2-b163-1ebce47d8696.jpg?1673148925
 value=3.214
 rarity=C
 type=Instant

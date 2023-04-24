@@ -1,5 +1,5 @@
 name=Essence of the Wild
-image=https://magiccards.info/scans/en/isd/178.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/dec48cba-1b5d-44e7-9e25-16922dedb67d.jpg?1562838337
 value=3.807
 rarity=M
 type=Creature

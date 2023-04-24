@@ -1,5 +1,5 @@
 name=Enter the Infinite
-image=https://magiccards.info/scans/en/gtc/34.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/612beb8f-2ab1-4a8b-84c5-c47d19d400ab.jpg?1561829105
 value=3.435
 rarity=M
 type=Sorcery

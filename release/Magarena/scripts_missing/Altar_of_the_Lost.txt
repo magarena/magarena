@@ -1,5 +1,5 @@
 name=Altar of the Lost
-image=https://magiccards.info/scans/en/dka/144.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/774e5322-1b41-488d-94b1-7742fbd983d4.jpg?1562923209
 value=2.347
 rarity=U
 type=Artifact

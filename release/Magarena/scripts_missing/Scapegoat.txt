@@ -1,5 +1,5 @@
 name=Scapegoat
-image=https://magiccards.info/scans/en/sh/114.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20454d36-d98d-4421-b3aa-d2dd4b368d84.jpg?1562595929
 value=3.853
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Reverent Silence
-image=https://magiccards.info/scans/en/ne/111.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b82d3432-2167-4a65-8221-cb7b338e60d0.jpg?1562631670
 value=4.046
 rarity=C
 type=Sorcery

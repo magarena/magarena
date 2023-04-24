@@ -1,5 +1,5 @@
 name=Oath of Teferi
-image=https://magiccards.info/scans/en/dom/200.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a7fadca-0a94-4624-ab95-2c2410829824.jpg?1562736186
 value=2.500
 rarity=R
 type=Legendary,Enchantment

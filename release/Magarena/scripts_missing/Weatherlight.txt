@@ -1,5 +1,5 @@
 name=Weatherlight
-image=https://magiccards.info/scans/en/dom/237.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c86cf087-c50a-487a-bc1a-eee5410f14d9.jpg?1651656425
 value=2.500
 rarity=M
 type=Legendary,Artifact

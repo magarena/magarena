@@ -1,5 +1,5 @@
 name=Relic Crush
-image=https://magiccards.info/scans/en/cns/175.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9ba2533c-3e1a-48e0-8dc4-0c915f853c52.jpg?1562275082
 value=3.333
 rarity=U
 type=Instant

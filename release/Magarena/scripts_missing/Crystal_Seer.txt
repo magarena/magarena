@@ -1,5 +1,5 @@
 name=Crystal Seer
-image=https://magiccards.info/scans/en/gp/23.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/549ed5bd-da29-4cd4-893e-9e53e33a8557.jpg?1593271977
 value=1.195
 rarity=C
 type=Creature

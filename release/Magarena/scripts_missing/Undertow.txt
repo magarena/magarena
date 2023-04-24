@@ -1,5 +1,5 @@
 name=Undertow
-image=https://magiccards.info/scans/en/lg/82.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf05e5c9-b7e4-4bd8-ab73-b54565710527.jpg?1562860890
 value=1.734
 rarity=U
 type=Enchantment

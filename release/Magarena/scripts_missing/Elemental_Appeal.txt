@@ -1,5 +1,5 @@
 name=Elemental Appeal
-image=https://magiccards.info/scans/en/zen/123.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a583f30-a3e0-4c4f-81b3-01452edaf22c.jpg?1562611369
 value=3.847
 rarity=R
 type=Sorcery

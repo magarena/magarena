@@ -1,5 +1,5 @@
 name=Locket of Yesterdays
-image=https://magiccards.info/scans/en/ts/258.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b316f198-4465-4fb5-a7a6-a92bf8eae8c1.jpg?1562932741
 value=3.443
 rarity=U
 type=Artifact

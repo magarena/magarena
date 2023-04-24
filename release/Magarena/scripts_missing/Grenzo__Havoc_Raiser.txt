@@ -1,5 +1,5 @@
 name=Grenzo, Havoc Raiser
-image=https://magiccards.info/scans/en/cn2/54.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/075cd558-2557-409a-8244-2de65664be53.jpg?1576381934
 image_updated=2016-09-05
 value=2.500
 rarity=R

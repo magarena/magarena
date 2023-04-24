@@ -1,5 +1,5 @@
 name=Leech Bonder
-image=https://magiccards.info/scans/en/shm/43.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a86562c6-91bd-4866-a2a9-0062ffdf07ce.jpg?1562834327
 value=3.491
 rarity=U
 type=Creature

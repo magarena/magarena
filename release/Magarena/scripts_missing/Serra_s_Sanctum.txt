@@ -1,5 +1,5 @@
 name=Serra's Sanctum
-image=https://magiccards.info/scans/en/us/325.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7a18130-dbaa-4657-a885-3a96a985935a.jpg?1653966911
 value=4.454
 rarity=R
 type=Legendary,Land

@@ -1,5 +1,5 @@
 name=Oath of Nissa
-image=https://magiccards.info/scans/en/ogw/140.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/613513ea-55dd-4ae8-93b2-247e468112a6.jpg?1594656300
 image_updated=2016-02-29
 value=2.500
 rarity=R

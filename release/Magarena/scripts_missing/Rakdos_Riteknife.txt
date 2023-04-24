@@ -1,5 +1,5 @@
 name=Rakdos Riteknife
-image=https://magiccards.info/scans/en/di/164.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fb6e10a-3df1-4c6f-bf4c-d4a2a0467c60.jpg?1593274023
 value=3.467
 rarity=R
 type=Artifact

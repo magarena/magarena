@@ -1,5 +1,5 @@
 name=Preacher
-image=https://magiccards.info/scans/en/dk/89.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8e6f74c-0c69-4b83-ba4e-4470f50c1fb4.jpg?1559592268
 value=4.297
 rarity=R
 type=Creature

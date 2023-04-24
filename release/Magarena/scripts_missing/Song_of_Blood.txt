@@ -1,5 +1,5 @@
 name=Song of Blood
-image=https://magiccards.info/scans/en/vi/94.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/4497a1d7-6604-4f2d-9484-1f1d77a6228f.jpg?1562277457
 value=2.756
 rarity=C
 type=Sorcery

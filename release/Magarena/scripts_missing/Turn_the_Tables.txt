@@ -1,5 +1,5 @@
 name=Turn the Tables
-image=https://magiccards.info/scans/en/ds/18.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f79b38c5-4be1-4f33-92e8-6fe0476b5299.jpg?1562640532
 value=3.364
 rarity=R
 type=Instant

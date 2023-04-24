@@ -1,5 +1,5 @@
 name=Paladin of Prahv
-image=https://magiccards.info/scans/en/di/14.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/32412fd8-e295-4d9e-b33a-20a7e9aeb437.jpg?1562905507
 value=2.700
 rarity=U
 type=Creature

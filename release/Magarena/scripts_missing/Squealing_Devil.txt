@@ -1,5 +1,5 @@
 name=Squealing Devil
-image=https://magiccards.info/scans/en/di/72.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b445a0e-798d-4f82-88cc-04f600d38e49.jpg?1593273246
 value=3.276
 rarity=U
 type=Creature

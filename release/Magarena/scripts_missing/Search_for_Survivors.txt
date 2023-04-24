@@ -1,5 +1,5 @@
 name=Search for Survivors
-image=https://magiccards.info/scans/en/pr/102.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f19a1b5-48ba-44a9-b91f-2f628b223ffb.jpg?1562903680
 value=3.167
 rarity=R
 type=Sorcery

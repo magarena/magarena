@@ -1,5 +1,5 @@
 name=Strength of the Tajuru
-image=https://magiccards.info/scans/en/wwk/113.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f123e02-eb74-4cc1-bc06-54989aeab784.jpg?1591321050
 value=3.539
 rarity=R
 type=Instant

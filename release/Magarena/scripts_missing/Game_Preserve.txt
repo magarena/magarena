@@ -1,5 +1,5 @@
 name=Game Preserve
-image=https://magiccards.info/scans/en/mm/248.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1bb62356-72bb-4dc1-a2f9-45a3aca62e41.jpg?1562379445
 value=3.000
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Trait Doctoring
-image=https://magiccards.info/scans/en/dgm/18.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e21a7981-5940-4b75-907f-7600a742f946.jpg?1562937269
 value=1.511
 rarity=R
 type=Sorcery

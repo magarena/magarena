@@ -1,5 +1,5 @@
 name=Sivvi's Ruse
-image=https://magiccards.info/scans/en/ne/21.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/132112a0-0fb0-4a80-927d-39d34cf10159.jpg?1562628728
 value=3.466
 rarity=U
 type=Instant

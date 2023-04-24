@@ -1,5 +1,5 @@
 name=Aggravated Assault
-image=https://magiccards.info/scans/en/on/185.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c99c5707-d5f2-4675-bfca-e801e6b0f627.jpg?1562942627
 value=4.289
 rarity=R
 type=Enchantment

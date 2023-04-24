@@ -1,5 +1,5 @@
 name=Lord of the Void
-image=https://magiccards.info/scans/en/gtc/71.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75b83fe5-fd00-4532-bc67-07836abfc99c.jpg?1561831853
 value=3.828
 rarity=M
 type=Creature

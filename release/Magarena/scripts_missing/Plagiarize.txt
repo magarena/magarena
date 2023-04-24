@@ -1,5 +1,5 @@
 name=Plagiarize
-image=https://magiccards.info/scans/en/10e/97.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d59ae2f8-1e19-495a-86a9-8391e1e14ac5.jpg?1562555872
 value=3.500
 rarity=R
 type=Instant

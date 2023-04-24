@@ -1,5 +1,5 @@
 name=Flowering Lumberknot
-image=https://magiccards.info/scans/en/avr/178.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78fa2ddc-142b-4562-8812-ecb72e3bae57.jpg?1592709349
 value=1.989
 rarity=C
 type=Creature

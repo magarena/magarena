@@ -1,5 +1,5 @@
 name=Rootwater Mystic
-image=https://magiccards.info/scans/en/ex/44.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94af81f2-383c-4129-b8dc-60633c3f4ea1.jpg?1562088323
 value=2.538
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Nightveil Specter
-image=https://magiccards.info/scans/en/gtc/222.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3754b8c-16d2-41e3-b41b-4b2e70833e82.jpg?1588456579
 value=4.022
 rarity=R
 type=Creature

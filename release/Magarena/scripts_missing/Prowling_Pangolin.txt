@@ -1,5 +1,5 @@
 name=Prowling Pangolin
-image=https://magiccards.info/scans/en/ema/104.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6bf8191-3154-48d7-a49b-4d07b5e35a15.jpg?1580014350
 value=3.579
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Scythe Specter
-image=https://magiccards.info/scans/en/cmd/97.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/590bd3e6-3bef-4c2d-9d4f-4b4bd5ff06d0.jpg?1562274061
 value=3.985
 rarity=R
 type=Creature

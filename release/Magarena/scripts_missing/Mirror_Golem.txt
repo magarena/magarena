@@ -1,5 +1,5 @@
 name=Mirror Golem
-image=https://magiccards.info/scans/en/mi/208.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9467839-b2a2-4cfe-a60e-12766e2ba983.jpg?1562159459
 value=3.059
 rarity=U
 type=Artifact,Creature

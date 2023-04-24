@@ -1,5 +1,5 @@
 name=Hearth Kami
-image=https://magiccards.info/scans/en/chk/171.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7361289-5111-49c2-a786-b7181384596b.jpg?1562764681
 value=3.366
 rarity=C
 type=Creature

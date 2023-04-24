@@ -1,5 +1,5 @@
 name=Carpet of Flowers
-image=https://magiccards.info/scans/en/us/240.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93abb48a-85f2-432d-8602-0a1d17fbb409.jpg?1562926232
 value=3.716
 rarity=U
 type=Enchantment

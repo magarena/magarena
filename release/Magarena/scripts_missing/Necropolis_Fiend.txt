@@ -1,5 +1,5 @@
 name=Necropolis Fiend
-image=https://magiccards.info/scans/en/ktk/82.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/093426d2-29e0-49e4-b02a-a70cce3b25d5.jpg?1562782281
 value=3.000
 rarity=R
 type=Creature

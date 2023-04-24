@@ -1,5 +1,5 @@
 name=Power Artifact
-image=https://magiccards.info/scans/en/aq/55.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7b0c6c4-ec99-4af1-9527-41c428af7260.jpg?1562942181
 value=4.475
 rarity=U
 type=Enchantment

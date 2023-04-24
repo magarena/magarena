@@ -1,5 +1,5 @@
 name=Phyrexian Altar
-image=https://magiccards.info/scans/en/in/306.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/95d9f93c-50a8-41a9-be98-d1900bf1c12f.jpg?1673149406
 value=4.051
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Harabaz Druid
-image=https://magiccards.info/scans/en/wwk/105.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78a538cf-2291-49aa-8429-17d97d454479.jpg?1562289989
 value=3.947
 rarity=R
 type=Creature

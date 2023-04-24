@@ -1,5 +1,5 @@
 name=Crooked Scales
-image=https://magiccards.info/scans/en/mm/291.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3352ba84-22cc-40e3-ae76-ca5cef8c2dfb.jpg?1645329365
 value=2.891
 rarity=R
 type=Artifact

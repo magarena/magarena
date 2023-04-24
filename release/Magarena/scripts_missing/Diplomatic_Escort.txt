@@ -1,5 +1,5 @@
 name=Diplomatic Escort
-image=https://magiccards.info/scans/en/mm/74.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9356bdbb-d647-4f51-a7a3-18ecea898a7f.jpg?1562382058
 value=4.156
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Insolent Neonate
-image=https://magiccards.info/scans/en/soi/168.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/813104f6-e6e4-4709-8626-12fe4262a11f.jpg?1576384817
 value=2.500
 rarity=C
 type=Creature

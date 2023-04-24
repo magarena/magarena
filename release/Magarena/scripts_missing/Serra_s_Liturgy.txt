@@ -1,5 +1,5 @@
 name=Serra's Liturgy
-image=https://magiccards.info/scans/en/us/49.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b84be3ef-a820-41e3-b66a-09303dad32dd.jpg?1562933914
 value=2.864
 rarity=R
 type=Enchantment

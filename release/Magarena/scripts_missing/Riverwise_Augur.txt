@@ -1,5 +1,5 @@
 name=Riverwise Augur
-image=https://magiccards.info/scans/en/rix/48.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc1c3923-aeb0-4f53-a210-10542534b121.jpg?1631586462
 value=2.500
 rarity=U
 type=Creature

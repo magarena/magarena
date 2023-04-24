@@ -1,5 +1,5 @@
 name=Jace, Architect of Thought
-image=https://magiccards.info/scans/en/rtr/44.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2be221c-76e2-4b18-a3c1-90ced436d01f.jpg?1651655718
 value=3.500
 rarity=M
 type=Legendary,Planeswalker

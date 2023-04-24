@@ -1,5 +1,5 @@
 name=Dark Sphere
-image=https://magiccards.info/scans/en/dk/97.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72cfe9b9-677d-4ecb-83ab-67fb6481371d.jpg?1587910835
 value=3.386
 rarity=U
 type=Artifact

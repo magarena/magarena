@@ -1,5 +1,5 @@
 name=Wear Away
-image=https://magiccards.info/scans/en/chk/250.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e809799-ce47-4eaf-b2c2-2c8807182532.jpg?1562759365
 value=3.076
 rarity=C
 type=Instant

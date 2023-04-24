@@ -1,5 +1,5 @@
 name=Primal Vigor
-image=https://magiccards.info/scans/en/c13/162.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dafea0d1-6986-46b3-affc-1337ef564947.jpg?1562941253
 value=3.714
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Brine Seer
-image=https://magiccards.info/scans/en/ud/28.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f6e5575-b004-417f-9366-6ba7840a79e7.jpg?1562443745
 value=3.719
 rarity=U
 type=Creature

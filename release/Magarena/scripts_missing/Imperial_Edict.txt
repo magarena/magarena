@@ -1,5 +1,5 @@
 name=Imperial Edict
-image=https://magiccards.info/scans/en/p3k/77.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5a7f91d-b4ee-45c1-a229-bb23daf68e6b.jpg?1575874304
 value=3.817
 rarity=C
 type=Sorcery

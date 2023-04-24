@@ -1,5 +1,5 @@
 name=Anavolver
-image=https://magiccards.info/scans/en/ap/75.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e685a8c-fba6-495f-ac0f-1ff5456b22d0.jpg?1562917211
 value=3.973
 rarity=R
 type=Creature

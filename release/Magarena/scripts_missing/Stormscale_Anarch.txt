@@ -1,5 +1,5 @@
 name=Stormscale Anarch
-image=https://magiccards.info/scans/en/di/74.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00dbd0ef-9888-4489-ba4a-65128308fb11.jpg?1593273270
 value=2.843
 rarity=R
 type=Creature

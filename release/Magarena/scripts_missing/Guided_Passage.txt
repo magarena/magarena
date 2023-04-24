@@ -1,5 +1,5 @@
 name=Guided Passage
-image=https://magiccards.info/scans/en/ap/105.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b66c8ada-82a6-46d9-acd0-b4ff9e1e12bd.jpg?1673148727
 value=4.326
 rarity=R
 type=Sorcery

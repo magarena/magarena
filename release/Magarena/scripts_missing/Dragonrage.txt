@@ -1,5 +1,5 @@
 name=Dragonrage
-image=https://magiccards.info/scans/en/frf/97.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77b7bf2a-9d68-4aa8-a0b1-5df22a5a3c1b.jpg?1562826661
 value=2.500
 rarity=U
 type=Instant

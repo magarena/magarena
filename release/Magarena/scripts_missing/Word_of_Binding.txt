@@ -1,5 +1,5 @@
 name=Word of Binding
-image=https://magiccards.info/scans/en/4e/56.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/715472e1-585b-4379-b335-8f3b5e572d83.jpg?1587911170
 value=3.290
 rarity=C
 type=Sorcery

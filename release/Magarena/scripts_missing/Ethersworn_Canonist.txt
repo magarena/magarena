@@ -1,5 +1,5 @@
 name=Ethersworn Canonist
-image=https://magiccards.info/scans/en/mma/14.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abc8e0f8-fdb9-4f24-a3e3-439f6cc3ebdc.jpg?1599706625
 value=4.547
 rarity=R
 type=Artifact,Creature

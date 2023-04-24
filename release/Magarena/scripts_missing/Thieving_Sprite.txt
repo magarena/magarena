@@ -1,5 +1,5 @@
 name=Thieving Sprite
-image=https://magiccards.info/scans/en/mma/101.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/244d864d-fc74-4147-aca6-d0498691b1a9.jpg?1561966417
 value=3.077
 rarity=C
 type=Creature

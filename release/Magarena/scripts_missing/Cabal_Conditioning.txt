@@ -1,5 +1,5 @@
 name=Cabal Conditioning
-image=https://magiccards.info/scans/en/sc/56.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb81c6e6-fded-4cd3-a6fa-486419a5408a.jpg?1650357097
 value=3.052
 rarity=R
 type=Sorcery

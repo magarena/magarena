@@ -1,5 +1,5 @@
 name=Time and Tide
-image=https://magiccards.info/scans/en/vi/46.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/152b348a-0301-4d45-a2c1-d78802c445ba.jpg?1562276970
 value=2.722
 rarity=U
 type=Instant

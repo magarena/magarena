@@ -1,5 +1,5 @@
 name=Simic Signet
-image=https://magiccards.info/scans/en/mm3/227.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b166a401-6167-41d0-8761-dcc32fb09ecd.jpg?1682210218
 image_updated=2017-08-08
 value=3.636
 rarity=U

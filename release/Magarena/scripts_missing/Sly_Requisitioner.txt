@@ -1,5 +1,5 @@
 name=Sly Requisitioner
-image=https://magiccards.info/scans/en/aer/72.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2d05324-6d85-40da-a087-b5822bc8f42e.jpg?1576381733
 value=2.500
 rarity=U
 type=Creature

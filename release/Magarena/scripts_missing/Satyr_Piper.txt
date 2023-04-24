@@ -1,5 +1,5 @@
 name=Satyr Piper
-image=https://magiccards.info/scans/en/ths/175.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e244c4d0-2c30-4a56-94bb-0fff9ffe4a6a.jpg?1562835013
 value=2.857
 rarity=U
 type=Creature

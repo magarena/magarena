@@ -1,5 +1,5 @@
 name=Necrotic Ooze
-image=https://magiccards.info/scans/en/som/72.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acc3557d-49c6-49cd-a540-1b24897f4e86.jpg?1673147579
 value=4.172
 rarity=R
 type=Creature

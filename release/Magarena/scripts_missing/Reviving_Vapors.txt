@@ -1,5 +1,5 @@
 name=Reviving Vapors
-image=https://magiccards.info/scans/en/in/265.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7a6c902-4705-4210-8e5e-08d6a6f67573.jpg?1547518089
 value=3.500
 rarity=U
 type=Instant

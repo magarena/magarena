@@ -1,5 +1,5 @@
 name=Tolarian Entrancer
-image=https://magiccards.info/scans/en/wl/56.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c29dd04a-b3aa-48b6-beef-3314344b84a6.jpg?1562803184
 value=4.293
 rarity=R
 type=Creature

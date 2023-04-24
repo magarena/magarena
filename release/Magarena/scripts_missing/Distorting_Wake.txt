@@ -1,5 +1,5 @@
 name=Distorting Wake
-image=https://magiccards.info/scans/en/c14/107.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77e28743-3694-48ef-9f16-0a3a4ff7e934.jpg?1561947052
 value=2.500
 rarity=R
 type=Sorcery

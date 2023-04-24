@@ -1,5 +1,5 @@
 name=Patron of the Moon
-image=https://magiccards.info/scans/en/bok/45.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e5fcd6f-1653-44bf-a796-4c9ff9adf390.jpg?1562877337
 value=3.628
 rarity=R
 type=Legendary,Creature

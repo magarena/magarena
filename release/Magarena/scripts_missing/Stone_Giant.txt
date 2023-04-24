@@ -1,5 +1,5 @@
 name=Stone Giant
-image=https://magiccards.info/scans/en/m10/159.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbd9a10e-2bf7-4af7-bb34-52de01e03523.jpg?1581708530
 value=3.900
 rarity=U
 type=Creature

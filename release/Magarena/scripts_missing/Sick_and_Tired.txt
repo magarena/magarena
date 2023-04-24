@@ -1,5 +1,5 @@
 name=Sick and Tired
-image=https://magiccards.info/scans/en/ul/66.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/8736f8a2-ee8d-49d2-883f-b22cbe3f3645.jpg?1562863294
 value=2.865
 rarity=C
 type=Instant

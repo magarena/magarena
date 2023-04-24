@@ -1,5 +1,5 @@
 name=Harvest Pyre
-image=https://magiccards.info/scans/en/isd/146.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d6220b4-a5b8-45c8-9422-fab9eb32322c.jpg?1562829874
 value=2.856
 rarity=C
 type=Instant

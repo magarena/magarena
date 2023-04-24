@@ -1,5 +1,5 @@
 name=Phyrexian Purge
-image=https://magiccards.info/scans/en/mr/333.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/312bbc1b-4c2a-44c1-8e62-c0f94fd2ba8e.jpg?1562718334
 value=3.978
 rarity=R
 type=Sorcery

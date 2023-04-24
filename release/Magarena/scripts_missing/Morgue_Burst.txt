@@ -1,5 +1,5 @@
 name=Morgue Burst
-image=https://magiccards.info/scans/en/dgm/86.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b3c2909-87ab-4027-9b56-58a2abae3fa3.jpg?1562917758
 value=3.486
 rarity=C
 type=Sorcery

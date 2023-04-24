@@ -1,5 +1,5 @@
 name=Morbid Plunder
-image=https://magiccards.info/scans/en/mbs/47.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab414eb3-c53b-4805-85f1-2bbea321f261.jpg?1562929543
 value=3.007
 rarity=C
 type=Sorcery

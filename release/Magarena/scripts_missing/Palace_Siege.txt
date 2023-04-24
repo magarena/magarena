@@ -1,5 +1,5 @@
 name=Palace Siege
-image=https://magiccards.info/scans/en/frf/79.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/da855bb6-adc2-484c-a084-83aff2b267f1.jpg?1562625782
 value=2.500
 rarity=R
 type=Enchantment

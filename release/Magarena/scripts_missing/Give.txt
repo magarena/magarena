@@ -1,5 +1,5 @@
 name=Give
-image=https://magiccards.info/scans/en/dgm/129a.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9af07d28-45a2-45d6-b1cb-0858c609a881.jpg?1562923819
 value=3.628
 rarity=U
 type=Sorcery

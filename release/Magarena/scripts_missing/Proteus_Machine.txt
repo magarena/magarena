@@ -1,5 +1,5 @@
 name=Proteus Machine
-image=https://magiccards.info/scans/en/sc/141.jpg
+image=https://cards.scryfall.io/border_crop/front/d/1/d1c8cff1-b289-41a4-9fa3-cc5e7ba70802.jpg?1562534821
 value=3.132
 rarity=U
 type=Artifact,Creature

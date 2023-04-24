@@ -1,5 +1,5 @@
 name=Ingenious Thief
-image=https://magiccards.info/scans/en/st/40.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97c47d9a-c942-4b17-99f1-ff7a24134f7c.jpg?1562875017
 value=2.685
 rarity=C
 type=Creature

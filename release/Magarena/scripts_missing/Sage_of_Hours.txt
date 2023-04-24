@@ -1,5 +1,5 @@
 name=Sage of Hours
-image=https://magiccards.info/scans/en/jou/50.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8cb55caf-fc95-40dc-80af-5144f94333ee.jpg?1593095534
 value=3.689
 rarity=M
 type=Creature

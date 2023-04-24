@@ -1,5 +1,5 @@
 name=Ribbon Snake
-image=https://magiccards.info/scans/en/pr/46.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb5135dc-4fc1-48a1-8405-44b2f93a3c21.jpg?1562939096
 value=3.194
 rarity=C
 type=Creature

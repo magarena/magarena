@@ -1,5 +1,5 @@
 name=Mitotic Manipulation
-image=https://magiccards.info/scans/en/mbs/27.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2abd4521-62c8-4b2f-a406-a8ddfa8f475a.jpg?1562610286
 value=3.440
 rarity=R
 type=Sorcery

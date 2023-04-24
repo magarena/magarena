@@ -1,5 +1,5 @@
 name=Breaker of Armies
-image=https://magiccards.info/scans/en/bfz/3.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/784e843e-7010-466d-adbd-1dd1595aead1.jpg?1562923386
 image_updated=2015-11-08
 value=2.500
 rarity=U

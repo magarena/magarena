@@ -1,5 +1,5 @@
 name=Restoration Specialist
-image=https://magiccards.info/scans/en/aer/21.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63682db3-1a56-4d8e-a9b7-04465a577518.jpg?1576381409
 value=2.500
 rarity=U
 type=Creature

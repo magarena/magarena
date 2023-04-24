@@ -1,5 +1,5 @@
 name=Orcish Settlers
-image=https://magiccards.info/scans/en/wl/112.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d54764f6-6f65-405c-ba30-1e485ce3fe21.jpg?1562803564
 value=4.300
 rarity=U
 type=Creature

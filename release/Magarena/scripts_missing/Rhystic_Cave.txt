@@ -1,5 +1,5 @@
 name=Rhystic Cave
-image=https://magiccards.info/scans/en/pr/142.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4ae74463-4426-4ad4-b7a2-324694854245.jpg?1562908673
 value=2.288
 rarity=U
 type=Land

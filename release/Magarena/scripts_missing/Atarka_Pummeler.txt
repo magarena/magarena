@@ -1,5 +1,5 @@
 name=Atarka Pummeler
-image=https://magiccards.info/scans/en/dtk/129.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d55f2528-f37f-46b9-b95f-4d142f656723.jpg?1562793643
 value=2.500
 rarity=U
 type=Creature

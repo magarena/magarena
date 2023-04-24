@@ -1,5 +1,5 @@
 name=Cunning Giant
-image=https://magiccards.info/scans/en/po2/93.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0aa284a7-3aac-4e88-becb-548a28c77401.jpg?1562897416
 value=3.104
 rarity=R
 type=Creature

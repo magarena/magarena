@@ -1,5 +1,5 @@
 name=Silence the Believers
-image=https://magiccards.info/scans/en/jou/82.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d6dc2bd1-a980-4eab-8bb3-1ce28c3f9ef4.jpg?1593095838
 value=3.878
 rarity=R
 type=Instant

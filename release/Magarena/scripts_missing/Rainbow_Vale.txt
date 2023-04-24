@@ -1,5 +1,5 @@
 name=Rainbow Vale
-image=https://magiccards.info/scans/en/fe/184.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51f8b918-ac13-4538-a39d-6553580bf39b.jpg?1559592494
 value=2.592
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Custodi Squire
-image=https://magiccards.info/scans/en/cns/18.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a5eff5b-fee5-4077-b895-57bb12d9d752.jpg?1641601179
 value=3.786
 rarity=C
 type=Creature

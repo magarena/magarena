@@ -1,5 +1,5 @@
 name=Resolute Archangel
-image=https://magiccards.info/scans/en/m15/28.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e37b31b8-d868-4dff-9ab0-723ce41ee7e4.jpg?1562795865
 value=3.500
 rarity=R
 type=Creature

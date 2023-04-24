@@ -1,5 +1,5 @@
 name=Martyr of Sands
-image=https://magiccards.info/scans/en/cs/15.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/010d4a6b-af72-4d44-a25f-dce8e12da727.jpg?1547515682
 value=4.315
 rarity=C
 type=Creature

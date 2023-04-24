@@ -1,5 +1,5 @@
 name=Lurker
-image=https://magiccards.info/scans/en/dk/43.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b39eb671-e17e-4c5a-8913-1e3be7faedfb.jpg?1587910787
 value=2.985
 rarity=R
 type=Creature

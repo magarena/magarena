@@ -1,5 +1,5 @@
 name=Abundance
-image=https://magiccards.info/scans/en/c17/145.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73a44759-1fa4-4a96-b668-316851e8a35a.jpg?1604193670
 image_updated=2017-10-03
 value=4.263
 rarity=R

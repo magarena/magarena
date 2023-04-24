@@ -1,5 +1,5 @@
 name=Parapet
-image=https://magiccards.info/scans/en/vi/114.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7bbcaa9-edbf-48ad-bcd2-65e8fb9bb938.jpg?1562278169
 value=2.919
 rarity=C
 type=Enchantment

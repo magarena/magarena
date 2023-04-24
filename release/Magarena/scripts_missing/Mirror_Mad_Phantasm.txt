@@ -1,5 +1,5 @@
 name=Mirror-Mad Phantasm
-image=https://magiccards.info/scans/en/isd/68.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b20eea41-9daf-4ac1-8bad-bb4aa211bb53.jpg?1562835677
 value=3.773
 rarity=M
 type=Creature

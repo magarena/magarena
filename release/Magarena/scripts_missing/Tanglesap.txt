@@ -1,5 +1,5 @@
 name=Tanglesap
-image=https://magiccards.info/scans/en/zen/186.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3c4e15b-7460-4d61-a209-6de27e4df6bb.jpg?1562615093
 value=2.877
 rarity=C
 type=Instant

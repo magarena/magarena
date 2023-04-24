@@ -1,5 +1,5 @@
 name=Elvish Bard
-image=https://magiccards.info/scans/en/9e/236.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2fda362-63ee-4f0b-8faf-a9073e0d5fa0.jpg?1562743080
 value=3.276
 rarity=U
 type=Creature

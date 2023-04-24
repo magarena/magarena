@@ -1,5 +1,5 @@
 name=Kodama's Reach
-image=https://magiccards.info/scans/en/c16/155.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b0306e0-8887-451c-aad2-527b8161b0fe.jpg?1682209569
 image_updated=2017-08-17
 value=3.829
 rarity=C

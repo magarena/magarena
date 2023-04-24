@@ -1,5 +1,5 @@
 name=Searing Blood
-image=https://magiccards.info/scans/en/bng/111.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb43fd07-d281-447d-88bf-c53498c2cf20.jpg?1593092367
 value=3.830
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Ring of Ma'rûf
-image=https://magiccards.info/scans/en/an/82.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa740755-244f-4658-a9e2-aa4cf6742808.jpg?1559592290
 value=3.689
 rarity=R
 type=Artifact

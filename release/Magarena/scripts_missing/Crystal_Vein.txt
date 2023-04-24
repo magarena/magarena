@@ -1,5 +1,5 @@
 name=Crystal Vein
-image=https://magiccards.info/scans/en/c14/289.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c28ab69-1a46-45af-a331-1f52f99a9da3.jpg?1592673784
 value=2.500
 rarity=U
 type=Land

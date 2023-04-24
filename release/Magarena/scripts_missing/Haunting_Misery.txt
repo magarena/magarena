@@ -1,5 +1,5 @@
 name=Haunting Misery
-image=https://magiccards.info/scans/en/wl/13.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/939b83ba-8ba8-4b98-8a13-a037ba7805e9.jpg?1562802204
 value=3.179
 rarity=C
 type=Sorcery

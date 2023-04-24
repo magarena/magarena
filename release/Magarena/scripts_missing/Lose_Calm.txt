@@ -1,5 +1,5 @@
 name=Lose Calm
-image=https://magiccards.info/scans/en/dtk/147.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/732a4912-97d1-4640-976e-ae1ffeb70236.jpg?1562788296
 value=2.500
 rarity=C
 type=Sorcery

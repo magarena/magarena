@@ -1,5 +1,5 @@
 name=Runic Armasaur
-image=https://magiccards.info/scans/en/m19/200.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b445a0f0-2cca-4223-bd27-940d2cb6d29c.jpg?1562303848
 value=2.500
 rarity=R
 type=Creature

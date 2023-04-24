@@ -1,5 +1,5 @@
 name=Destined
-image=https://magiccards.info/scans/en/akh/217a.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cf5c549-1e2a-4c47-baf7-e608661b3088.jpg?1549941724
 value=2.500
 rarity=U
 type=Instant

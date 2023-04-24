@@ -1,5 +1,5 @@
 name=Invigorate
-image=https://magiccards.info/scans/en/a25/173.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e0899da3-7beb-4161-81a3-e2d694e5b8a5.jpg?1599707311
 image_updated=2018-04-25
 value=2.500
 rarity=U

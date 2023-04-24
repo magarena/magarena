@@ -1,5 +1,5 @@
 name=Recoup
-image=https://magiccards.info/scans/en/od/216.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77ac0e4e-71ae-4a4b-aa73-64079bd50308.jpg?1592714608
 image_updated=2017-01-06
 value=4.553
 rarity=U

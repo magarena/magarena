@@ -1,5 +1,5 @@
 name=Torrent Elemental
-image=https://magiccards.info/scans/en/frf/56.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc4850e4-acb9-458d-952f-b3952cab2a5b.jpg?1562830569
 value=2.500
 rarity=M
 type=Creature

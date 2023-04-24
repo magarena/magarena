@@ -1,5 +1,5 @@
 name=Composite Golem
-image=https://magiccards.info/scans/en/10e/318.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aafd4637-737d-4913-80e3-ab4bf3428680.jpg?1562553234
 value=4.014
 rarity=U
 type=Artifact,Creature

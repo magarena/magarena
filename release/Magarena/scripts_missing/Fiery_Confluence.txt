@@ -1,5 +1,5 @@
 name=Fiery Confluence
-image=https://magiccards.info/scans/en/c15/26.jpg
+image=https://cards.scryfall.io/border_crop/front/a/c/acfa3365-fcc7-4cd0-a144-509cad664f20.jpg?1682209320
 image_updated=2016-02-29
 value=2.500
 rarity=R

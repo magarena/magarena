@@ -1,5 +1,5 @@
 name=Maddening Imp
-image=https://magiccards.info/scans/en/tp/37.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dda08eb5-c75c-4c21-bfd1-1f04a3575241.jpg?1562056888
 value=4.088
 rarity=R
 type=Creature

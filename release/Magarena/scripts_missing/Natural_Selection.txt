@@ -1,5 +1,5 @@
 name=Natural Selection
-image=https://magiccards.info/scans/en/un/121.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/315a6bfb-5417-465f-97d9-e157f5c3cf79.jpg?1559592064
 value=3.738
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Sanctum Spirit
-image=https://magiccards.info/scans/en/dom/30.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/86322472-52e5-4af4-8a41-1ccc3ff6fd92.jpg?1599710121
 value=2.500
 rarity=U
 type=Creature

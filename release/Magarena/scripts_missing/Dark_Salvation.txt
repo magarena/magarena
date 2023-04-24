@@ -1,5 +1,5 @@
 name=Dark Salvation
-image=https://magiccards.info/scans/en/emn/87.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fc4eec7-ce6c-4b63-aca8-fa409cc5ee5a.jpg?1637629983
 image_updated=2016-09-05
 value=2.500
 rarity=R

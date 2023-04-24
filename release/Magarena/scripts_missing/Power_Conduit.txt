@@ -1,5 +1,5 @@
 name=Power Conduit
-image=https://magiccards.info/scans/en/mi/229.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4634637-ba33-4849-b647-d33018a02f39.jpg?1673485439
 value=4.416
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Voracious Dragon
-image=https://magiccards.info/scans/en/cfx/75.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbda3a22-2aff-49db-8779-38551142b860.jpg?1562948355
 value=2.929
 rarity=R
 type=Creature

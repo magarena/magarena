@@ -1,5 +1,5 @@
 name=Myr Welder
-image=https://magiccards.info/scans/en/mbs/118.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/eff75f16-413c-4618-b766-67bd8ff4d161.jpg?1562615806
 value=3.507
 rarity=R
 type=Artifact,Creature

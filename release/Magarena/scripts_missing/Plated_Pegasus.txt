@@ -1,5 +1,5 @@
 name=Plated Pegasus
-image=https://magiccards.info/scans/en/ts/34.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/873fddf3-40e7-41ee-9519-98d0a5268fd1.jpg?1562923541
 value=2.848
 rarity=U
 type=Creature

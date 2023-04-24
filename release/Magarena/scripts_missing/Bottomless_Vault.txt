@@ -1,5 +1,5 @@
 name=Bottomless Vault
-image=https://magiccards.info/scans/en/5e/411.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8913994-c3e7-4d9e-9409-a8409ce68442.jpg?1562594227
 value=3.621
 rarity=R
 type=Land

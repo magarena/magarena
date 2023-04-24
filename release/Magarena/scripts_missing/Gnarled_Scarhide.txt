@@ -1,5 +1,5 @@
 name=Gnarled Scarhide
-image=https://magiccards.info/scans/en/jou/72.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/040af9b9-1e94-4dd1-b347-b54b6b9e0275.jpg?1593095738
 value=3.720
 rarity=U
 type=Enchantment,Creature

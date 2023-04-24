@@ -1,5 +1,5 @@
 name=Metamorphic Alteration
-image=https://magiccards.info/scans/en/m19/60.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/eff03d37-d90a-4dcc-bacd-64fd71301354.jpg?1562304888
 value=2.500
 rarity=R
 type=Enchantment

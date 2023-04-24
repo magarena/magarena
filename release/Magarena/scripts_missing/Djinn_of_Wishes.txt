@@ -1,5 +1,5 @@
 name=Djinn of Wishes
-image=https://magiccards.info/scans/en/m19/52.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5491962-ad47-4919-b59c-510408bed29e.jpg?1592710557
 image_updated=2018-08-07
 value=4.044
 rarity=R

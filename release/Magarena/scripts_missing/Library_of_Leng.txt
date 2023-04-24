@@ -1,5 +1,5 @@
 name=Library of Leng
-image=https://magiccards.info/scans/en/5e/387.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2fbf45f-9599-42e2-8510-7e20731e6c68.jpg?1562941071
 value=4.179
 rarity=U
 type=Artifact

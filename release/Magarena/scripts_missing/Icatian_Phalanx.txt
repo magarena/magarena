@@ -1,5 +1,5 @@
 name=Icatian Phalanx
-image=https://magiccards.info/scans/en/5e/312.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93383078-b17f-47f5-a47a-cd6b5bfd8411.jpg?1562869543
 value=2.135
 rarity=U
 type=Creature

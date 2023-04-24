@@ -1,5 +1,5 @@
 name=Butcher Orgg
-image=https://magiccards.info/scans/en/on/192.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f2a29cf-4b2e-44c0-af73-512d6fed0dae.jpg?1562925005
 value=4.070
 rarity=R
 type=Creature

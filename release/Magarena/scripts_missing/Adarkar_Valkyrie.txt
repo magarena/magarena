@@ -1,5 +1,5 @@
 name=Adarkar Valkyrie
-image=https://magiccards.info/scans/en/c14/63.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc2a4abc-85da-46a6-a616-9aa607ce7372.jpg?1592710383
 value=2.500
 rarity=R
 type=Snow,Creature

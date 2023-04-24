@@ -1,5 +1,5 @@
 name=Remedy
-image=https://magiccards.info/scans/en/6e/36.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57cdfb23-3c62-4312-a503-e30be384e3ab.jpg?1562817847
 value=2.722
 rarity=C
 type=Instant

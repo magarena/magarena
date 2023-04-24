@@ -1,5 +1,5 @@
 name=Aryel, Knight of Windgrace
-image=https://magiccards.info/scans/en/dom/192.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfa67dd1-8a67-4b63-8a4c-07a5144afa3b.jpg?1682209674
 value=2.500
 rarity=R
 type=Legendary,Creature

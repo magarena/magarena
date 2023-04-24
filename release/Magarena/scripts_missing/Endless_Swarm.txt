@@ -1,5 +1,5 @@
 name=Endless Swarm
-image=https://magiccards.info/scans/en/sok/129.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f64d9404-9685-495d-a591-63d6164a88a9.jpg?1562496629
 value=3.417
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Psychic Possession
-image=https://magiccards.info/scans/en/di/30.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8364ce0-4c11-4af0-9f4b-e4c20d640dfc.jpg?1593272734
 value=3.949
 rarity=R
 type=Enchantment

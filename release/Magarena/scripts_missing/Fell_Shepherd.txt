@@ -1,5 +1,5 @@
 name=Fell Shepherd
-image=https://magiccards.info/scans/en/c13/78.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afd27b8d-3c1f-401b-aad1-268a7aa79f0f.jpg?1562932123
 value=3.700
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Gutter Grime
-image=https://magiccards.info/scans/en/isd/186.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9d007a2-163d-4e09-a70b-280a6fa3203b.jpg?1562835224
 value=3.688
 rarity=R
 type=Enchantment

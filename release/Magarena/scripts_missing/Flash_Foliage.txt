@@ -1,5 +1,5 @@
 name=Flash Foliage
-image=https://magiccards.info/scans/en/di/85.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b71c63da-dfe3-475f-88d9-20008c01163a.jpg?1593273388
 value=2.500
 rarity=U
 type=Instant

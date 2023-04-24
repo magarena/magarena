@@ -1,5 +1,5 @@
 name=Sengir Bats
-image=https://magiccards.info/scans/en/hl/20.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c745c2c-4311-412d-a137-02bf6d106e46.jpg?1562587258
 value=2.297
 rarity=C
 type=Creature

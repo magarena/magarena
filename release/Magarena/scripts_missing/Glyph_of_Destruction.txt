@@ -1,5 +1,5 @@
 name=Glyph of Destruction
-image=https://magiccards.info/scans/en/lg/148.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e9c153c-9224-491b-bc84-8a9f0a83ee5a.jpg?1562859692
 value=3.852
 rarity=C
 type=Instant

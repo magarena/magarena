@@ -1,5 +1,5 @@
 name=Vedalken Orrery
-image=https://magiccards.info/scans/en/cns/206.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/44067327-6fe3-4222-b591-6d14d0e360d7.jpg?1673149453
 value=4.250
 rarity=R
 type=Artifact

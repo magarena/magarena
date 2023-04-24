@@ -1,5 +1,5 @@
 name=Zurgo Helmsmasher
-image=https://magiccards.info/scans/en/ktk/214.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13f4bafe-0d21-47ba-8f16-0274107d618c.jpg?1562782879
 value=3.750
 rarity=M
 type=Legendary,Creature

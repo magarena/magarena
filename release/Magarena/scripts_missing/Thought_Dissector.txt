@@ -1,5 +1,5 @@
 name=Thought Dissector
-image=https://magiccards.info/scans/en/ds/152.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eba0e921-b81a-4803-8e1b-f7ae556c1e6f.jpg?1562640346
 value=3.652
 rarity=R
 type=Artifact

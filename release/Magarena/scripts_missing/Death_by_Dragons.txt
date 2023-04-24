@@ -1,5 +1,5 @@
 name=Death by Dragons
-image=https://magiccards.info/scans/en/cmd/118.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a43870a-ff5c-42a9-830d-3c8f2411c004.jpg?1592672787
 value=3.875
 rarity=U
 type=Sorcery

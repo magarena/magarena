@@ -1,5 +1,5 @@
 name=Fiery Justice
-image=https://magiccards.info/scans/en/mm3/164.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/144668d6-cab6-45e6-8498-ab7cd927f9df.jpg?1673148605
 image_updated=2017-08-08
 value=4.233
 rarity=R

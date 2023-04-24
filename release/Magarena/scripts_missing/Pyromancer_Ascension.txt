@@ -1,5 +1,5 @@
 name=Pyromancer Ascension
-image=https://magiccards.info/scans/en/mm3/108.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f9cea68-4390-4d73-a374-d6299cbc9271.jpg?1593813553
 image_updated=2017-08-08
 value=4.066
 rarity=R

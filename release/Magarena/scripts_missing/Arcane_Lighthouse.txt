@@ -1,5 +1,5 @@
 name=Arcane Lighthouse
-image=https://magiccards.info/scans/en/c14/59.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa90e142-15d4-461a-9e57-4a301a5df958.jpg?1562276555
 value=2.500
 rarity=U
 type=Land

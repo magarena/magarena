@@ -1,5 +1,5 @@
 name=Brightstone Ritual
-image=https://magiccards.info/scans/en/on/191.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b08b0a6-c94e-4407-8a24-c8202497b5f2.jpg?1562916460
 value=4.287
 rarity=C
 type=Instant

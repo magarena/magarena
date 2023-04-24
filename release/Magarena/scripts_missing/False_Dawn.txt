@@ -1,5 +1,5 @@
 name=False Dawn
-image=https://magiccards.info/scans/en/ap/10.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1695e0ba-005a-4652-aea7-e1d1f9ff5d66.jpg?1562900442
 value=3.375
 rarity=R
 type=Sorcery

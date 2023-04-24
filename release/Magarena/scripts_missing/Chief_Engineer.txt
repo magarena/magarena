@@ -1,5 +1,5 @@
 name=Chief Engineer
-image=https://magiccards.info/scans/en/c16/86.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c67872b-f375-42b9-b81c-3c8c52c0c24e.jpg?1562409258
 image_updated=2017-08-17
 value=3.562
 rarity=R

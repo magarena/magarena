@@ -1,5 +1,5 @@
 name=Pyromancer's Gauntlet
-image=https://magiccards.info/scans/en/m14/214.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bde6763-2102-4adb-8048-fc9fe921205b.jpg?1562832816
 value=3.633
 rarity=R
 type=Artifact

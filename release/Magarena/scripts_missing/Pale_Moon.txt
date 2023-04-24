@@ -1,5 +1,5 @@
 name=Pale Moon
-image=https://magiccards.info/scans/en/ne/36.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aeb282bb-d0b8-4822-8197-ff0523549309.jpg?1562631482
 value=1.382
 rarity=R
 type=Instant

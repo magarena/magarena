@@ -1,5 +1,5 @@
 name=Eternity Vessel
-image=https://magiccards.info/scans/en/zen/200.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9222e18-41b3-423f-8715-305a0d8fd410.jpg?1562615295
 value=3.848
 rarity=M
 type=Artifact

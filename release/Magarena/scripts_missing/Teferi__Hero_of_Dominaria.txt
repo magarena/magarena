@@ -1,5 +1,5 @@
 name=Teferi, Hero of Dominaria
-image=https://magiccards.info/scans/en/dom/207.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5d10b752-d9cb-419d-a5c4-d4ee1acb655e.jpg?1562736365
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

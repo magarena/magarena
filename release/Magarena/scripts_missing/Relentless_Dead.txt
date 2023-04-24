@@ -1,5 +1,5 @@
 name=Relentless Dead
-image=https://magiccards.info/scans/en/soi/131.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a0d7998-2f3d-43b8-a0be-6ff7e5c83223.jpg?1576384563
 value=2.500
 rarity=M
 type=Creature

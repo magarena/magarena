@@ -1,5 +1,5 @@
 name=Twilight Mire
-image=https://magiccards.info/scans/en/a25/248.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/1524face-5843-4fca-823b-0e9eaf9be96f.jpg?1673486235
 image_updated=2018-04-25
 value=4.375
 rarity=R

@@ -1,5 +1,5 @@
 name=Goblin Clearcutter
-image=https://magiccards.info/scans/en/le/96.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e07c0cae-852c-444c-8994-68a6d81b4cd4.jpg?1562940096
 value=3.241
 rarity=U
 type=Creature

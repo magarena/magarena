@@ -1,5 +1,5 @@
 name=Chancellor of the Annex
-image=https://magiccards.info/scans/en/nph/6.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be1b482a-badb-4b9a-ab63-2e7944826aa0.jpg?1562881152
 value=3.576
 rarity=R
 type=Creature

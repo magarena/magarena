@@ -1,5 +1,5 @@
 name=Enslaved Horror
-image=https://magiccards.info/scans/en/mm/134.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dffca723-360d-48de-a0a8-32288627f3df.jpg?1562383507
 value=1.893
 rarity=U
 type=Creature

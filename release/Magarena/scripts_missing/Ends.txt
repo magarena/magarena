@@ -1,5 +1,5 @@
 name=Ends
-image=https://magiccards.info/scans/en/di/153b.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bb07091-86d6-4735-82b6-6e71e26710f4.jpg?1593273942
 value=4.000
 rarity=R
 type=Instant

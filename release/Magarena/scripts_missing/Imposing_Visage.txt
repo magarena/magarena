@@ -1,5 +1,5 @@
 name=Imposing Visage
-image=https://magiccards.info/scans/en/5e/241.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24a256b0-e25b-43c6-9f7a-2ad76b268d22.jpg?1562589696
 value=2.672
 rarity=C
 type=Enchantment

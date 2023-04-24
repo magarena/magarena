@@ -1,5 +1,5 @@
 name=Myriad Landscape
-image=https://magiccards.info/scans/en/a25/243.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9242da7-aa73-4b02-aebb-910cadf94fbf.jpg?1682210565
 image_updated=2018-04-25
 value=2.500
 rarity=U

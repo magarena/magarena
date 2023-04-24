@@ -1,5 +1,5 @@
 name=Karona's Zealot
-image=https://magiccards.info/scans/en/a25/18.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/29214308-711a-490f-8e93-bf61baf1749c.jpg?1562433938
 image_updated=2018-04-25
 value=2.340
 rarity=U

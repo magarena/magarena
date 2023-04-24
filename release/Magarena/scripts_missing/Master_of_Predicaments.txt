@@ -1,5 +1,5 @@
 name=Master of Predicaments
-image=https://magiccards.info/scans/en/m15/67.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0b1720b-ab7a-4b52-a6d0-11c4fc573d17.jpg?1562796797
 value=3.583
 rarity=R
 type=Creature

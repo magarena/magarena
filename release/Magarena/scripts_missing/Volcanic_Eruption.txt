@@ -1,5 +1,5 @@
 name=Volcanic Eruption
-image=https://magiccards.info/scans/en/4e/112.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5828713a-edb3-4b11-b1f9-8f1bfc3c103f.jpg?1559600399
 value=3.290
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Hunting Wilds
-image=https://magiccards.info/scans/en/pc/130.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/0097101d-e63d-4785-8c68-5d2fca3ded78.jpg?1592710936
 value=3.512
 rarity=U
 type=Sorcery

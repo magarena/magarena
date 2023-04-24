@@ -1,5 +1,5 @@
 name=Musician
-image=https://magiccards.info/scans/en/ia/85.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66d265d0-9237-4774-bfbf-d8771a583398.jpg?1562869035
 value=2.942
 rarity=R
 type=Creature

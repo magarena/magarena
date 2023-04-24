@@ -1,5 +1,5 @@
 name=Brontotherium
-image=https://magiccards.info/scans/en/le/119.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a171f5e2-ed3d-4675-a4fc-953ebb907aa0.jpg?1562927638
 value=3.793
 rarity=U
 type=Creature

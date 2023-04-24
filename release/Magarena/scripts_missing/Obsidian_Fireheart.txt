@@ -1,5 +1,5 @@
 name=Obsidian Fireheart
-image=https://magiccards.info/scans/en/zen/140.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49ef5a91-d293-468a-8816-b16ca4ba79e0.jpg?1592765722
 value=4.095
 rarity=M
 type=Creature

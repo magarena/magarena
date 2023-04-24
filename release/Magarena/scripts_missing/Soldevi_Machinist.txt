@@ -1,5 +1,5 @@
 name=Soldevi Machinist
-image=https://magiccards.info/scans/en/ia/102.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87174f2d-bd11-4a40-b1c7-79040be04716.jpg?1562926884
 value=2.658
 rarity=U
 type=Creature

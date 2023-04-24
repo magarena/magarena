@@ -1,5 +1,5 @@
 name=Overabundance
-image=https://magiccards.info/scans/en/in/259.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/4183e73d-609a-4292-b173-e39eb51949f3.jpg?1562908150
 value=3.484
 rarity=R
 type=Enchantment

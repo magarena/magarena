@@ -1,5 +1,5 @@
 name=Agony Warp
-image=https://magiccards.info/scans/en/mm3/150.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5890a23e-1da0-432b-8dc8-85b92dee9ba1.jpg?1673148257
 image_updated=2017-08-08
 value=2.500
 rarity=C

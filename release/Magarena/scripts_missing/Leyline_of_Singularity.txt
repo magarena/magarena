@@ -1,5 +1,5 @@
 name=Leyline of Singularity
-image=https://magiccards.info/scans/en/gp/29.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d40d7e5c-3b6d-4e42-b495-b3cd7ae0d808.jpg?1593272032
 value=4.073
 rarity=R
 type=Enchantment

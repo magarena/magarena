@@ -1,5 +1,5 @@
 name=Throne of Geth
-image=https://magiccards.info/scans/en/som/211.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5719f8b-0a65-4f0c-bde0-74c5e107b64d.jpg?1599710153
 value=3.733
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Voyager Drake
-image=https://magiccards.info/scans/en/wwk/45.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f6fb960-58cb-42db-975f-fd9329e852fd.jpg?1562289494
 value=3.009
 rarity=U
 type=Creature

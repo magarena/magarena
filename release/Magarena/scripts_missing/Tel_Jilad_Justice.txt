@@ -1,5 +1,5 @@
 name=Tel-Jilad Justice
-image=https://magiccards.info/scans/en/5dn/95.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99fefa37-c876-4039-8cc4-4b2138181a1d.jpg?1562878712
 value=3.757
 rarity=U
 type=Instant

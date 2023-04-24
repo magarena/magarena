@@ -1,5 +1,5 @@
 name=Seafarer's Quay
-image=https://magiccards.info/scans/en/lg/251.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66641d88-b3f0-4bcd-8d2d-29aa2de69e30.jpg?1562859209
 value=1.297
 rarity=U
 type=Land

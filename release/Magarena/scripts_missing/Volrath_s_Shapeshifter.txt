@@ -1,5 +1,5 @@
 name=Volrath's Shapeshifter
-image=https://magiccards.info/scans/en/sh/48.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/93ed24e6-7791-4624-acf2-aa8616035f9e.jpg?1562924845
 value=2.500
 rarity=R
 type=Creature

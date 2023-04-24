@@ -1,5 +1,5 @@
 name=Candles' Glow
-image=https://magiccards.info/scans/en/chk/5.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/0758d20f-6f0f-462e-a7ec-2511c146983d.jpg?1562757443
 value=2.542
 rarity=U
 type=Instant

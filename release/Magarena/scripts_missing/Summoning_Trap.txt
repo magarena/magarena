@@ -1,5 +1,5 @@
 name=Summoning Trap
-image=https://magiccards.info/scans/en/mm3/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/55b71fb4-27ea-4846-87e4-efd2190faf36.jpg?1593813951
 image_updated=2017-08-08
 value=3.975
 rarity=R

@@ -1,5 +1,5 @@
 name=Seer's Vision
-image=https://magiccards.info/scans/en/in/270.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c94618a-808c-4b3c-8f34-45e64d0414d3.jpg?1562897588
 value=3.161
 rarity=U
 type=Enchantment

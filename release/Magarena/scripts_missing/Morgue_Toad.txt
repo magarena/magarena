@@ -1,5 +1,5 @@
 name=Morgue Toad
-image=https://magiccards.info/scans/en/ps/46.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a58ee3b2-45db-48b5-b8fd-f8b9468b17b6.jpg?1562934136
 value=4.019
 rarity=C
 type=Creature

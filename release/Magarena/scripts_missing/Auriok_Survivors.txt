@@ -1,5 +1,5 @@
 name=Auriok Survivors
-image=https://magiccards.info/scans/en/nph/3.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/deffb601-6a53-4d88-a6af-686ce97eb4f0.jpg?1562882106
 value=2.890
 rarity=U
 type=Creature

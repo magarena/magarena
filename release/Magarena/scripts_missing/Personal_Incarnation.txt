@@ -1,5 +1,5 @@
 name=Personal Incarnation
-image=https://magiccards.info/scans/en/5e/327.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/456b44ec-c299-419a-82b6-99d8609a0c04.jpg?1562911276
 value=2.357
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Castle Sengir
-image=https://magiccards.info/scans/en/hl/138.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16bfba30-4075-4bd6-9e4b-3a37641d43ce.jpg?1562587050
 value=1.735
 rarity=U
 type=Land

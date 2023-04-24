@@ -1,5 +1,5 @@
 name=Hermit Druid
-image=https://magiccards.info/scans/en/sh/58.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42ad0f12-29c6-420c-858e-c8d3cc1b5636.jpg?1562429338
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Eye for an Eye
-image=https://magiccards.info/scans/en/5e/306.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b4b8de1-a548-4398-887e-f95b4c15590c.jpg?1562924045
 value=3.750
 rarity=R
 type=Instant

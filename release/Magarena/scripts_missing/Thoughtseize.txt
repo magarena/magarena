@@ -1,5 +1,5 @@
 name=Thoughtseize
-image=https://magiccards.info/scans/en/ima/110.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b281a308-ab6b-47b6-bec7-632c9aaecede.jpg?1599706001
 image_updated=2017-04-12
 value=4.578
 rarity=R

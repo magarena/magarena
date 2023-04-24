@@ -1,5 +1,5 @@
 name=Tolarian Academy
-image=https://magiccards.info/scans/en/us/330.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd99bce1-ce39-464b-8e61-2631eb3ed6f6.jpg?1610147079
 value=5.000
 rarity=R
 type=Legendary,Land

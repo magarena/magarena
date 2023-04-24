@@ -1,5 +1,5 @@
 name=Bazaar Trader
-image=https://magiccards.info/scans/en/wwk/72.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9235ef13-a363-4cab-b69d-39093a621a5c.jpg?1562291937
 value=3.864
 rarity=R
 type=Creature

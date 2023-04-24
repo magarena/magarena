@@ -1,5 +1,5 @@
 name=Great Wall
-image=https://magiccards.info/scans/en/lg/186.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd860a1d-aa17-4579-b9b1-d101d2416387.jpg?1562860886
 value=1.068
 rarity=U
 type=Enchantment

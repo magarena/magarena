@@ -1,5 +1,5 @@
 name=Profane Command
-image=https://magiccards.info/scans/en/mm2/90.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/7005bb21-0cec-4c19-a95b-99a1bac25aa4.jpg?1673484224
 value=2.500
 rarity=R
 type=Sorcery

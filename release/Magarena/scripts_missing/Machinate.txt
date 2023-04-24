@@ -1,5 +1,5 @@
 name=Machinate
-image=https://magiccards.info/scans/en/ds/24.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/49e815b3-373c-4b2e-beb5-c894a52ffdea.jpg?1562636692
 value=3.150
 rarity=C
 type=Instant

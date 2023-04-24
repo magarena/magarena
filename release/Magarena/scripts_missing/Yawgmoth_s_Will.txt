@@ -1,5 +1,5 @@
 name=Yawgmoth's Will
-image=https://magiccards.info/scans/en/us/171.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/337239c7-73c4-4e2d-9160-ed26927dea1d.jpg?1591196147
 value=5.000
 rarity=R
 type=Sorcery

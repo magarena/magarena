@@ -1,5 +1,5 @@
 name=Avizoa
-image=https://magiccards.info/scans/en/wl/35.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a993986c-e8f1-41b1-86e6-c72021c53b87.jpg?1562802614
 value=2.011
 rarity=R
 type=Creature

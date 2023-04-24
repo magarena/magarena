@@ -1,5 +1,5 @@
 name=Mastermind's Acquisition
-image=https://magiccards.info/scans/en/rix/77.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f00f09b-a113-460e-ac2f-d3988a83179e.jpg?1555040258
 value=2.500
 rarity=R
 type=Sorcery

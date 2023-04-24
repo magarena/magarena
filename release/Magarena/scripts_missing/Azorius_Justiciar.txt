@@ -1,5 +1,5 @@
 name=Azorius Justiciar
-image=https://magiccards.info/scans/en/rtr/6.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f56272e-c05e-446b-8871-e3783dd29a8b.jpg?1562790727
 value=2.939
 rarity=U
 type=Creature

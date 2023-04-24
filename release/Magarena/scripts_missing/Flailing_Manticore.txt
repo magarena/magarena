@@ -1,5 +1,5 @@
 name=Flailing Manticore
-image=https://magiccards.info/scans/en/mm/187.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6eee8c2e-bda7-4bf9-80fe-87d96024ca8b.jpg?1562381355
 value=3.186
 rarity=R
 type=Creature

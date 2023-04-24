@@ -1,5 +1,5 @@
 name=Lens of Clarity
-image=https://magiccards.info/scans/en/ktk/223.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c82e2b8-f0f6-44da-83ee-8a671344ac62.jpg?1562785174
 value=2.000
 rarity=C
 type=Artifact

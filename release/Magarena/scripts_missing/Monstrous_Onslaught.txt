@@ -1,5 +1,5 @@
 name=Monstrous Onslaught
-image=https://magiccards.info/scans/en/aer/116.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffc27f7f-5dd4-4f1d-ba3f-a4b0400cdc72.jpg?1608910815
 value=2.500
 rarity=U
 type=Sorcery

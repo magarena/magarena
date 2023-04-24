@@ -1,5 +1,5 @@
 name=Ogre Geargrabber
-image=https://magiccards.info/scans/en/som/99.jpg
+image=https://cards.scryfall.io/border_crop/front/f/0/f0f6e2c3-0e0d-47ff-9d92-afc86a8c8aac.jpg?1562824969
 value=2.833
 rarity=U
 type=Creature

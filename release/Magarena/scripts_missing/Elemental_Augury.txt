@@ -1,5 +1,5 @@
 name=Elemental Augury
-image=https://magiccards.info/scans/en/ia/364.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22f07614-63f9-4270-9dc6-e47a7f806066.jpg?1562867852
 value=3.302
 rarity=R
 type=Enchantment

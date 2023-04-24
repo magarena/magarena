@@ -1,5 +1,5 @@
 name=Skilled Animator
-image=https://magiccards.info/scans/en/m19/73.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bc396c69-9773-4d57-a955-280742a10a91.jpg?1608909477
 value=2.500
 rarity=U
 type=Creature

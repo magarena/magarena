@@ -1,5 +1,5 @@
 name=Zada, Hedron Grinder
-image=https://magiccards.info/scans/en/a25/156.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baa36309-4bcc-4455-813a-c0243b906792.jpg?1562440241
 image_updated=2018-04-25
 value=2.500
 rarity=U

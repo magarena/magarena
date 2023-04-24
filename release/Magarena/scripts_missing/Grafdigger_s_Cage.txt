@@ -1,5 +1,5 @@
 name=Grafdigger's Cage
-image=https://magiccards.info/scans/en/mm3/221.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0a135e09-b534-4836-9a10-3a9a4a9f8c53.jpg?1592517646
 image_updated=2017-08-08
 value=4.050
 rarity=R

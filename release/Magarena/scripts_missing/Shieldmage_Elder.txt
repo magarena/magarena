@@ -1,5 +1,5 @@
 name=Shieldmage Elder
-image=https://magiccards.info/scans/en/on/54.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/efa2d660-7c93-4087-a6e5-49c2ad21eb5a.jpg?1562951939
 value=3.000
 rarity=U
 type=Creature

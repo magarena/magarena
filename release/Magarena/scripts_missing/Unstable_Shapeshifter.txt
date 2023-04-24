@@ -1,5 +1,5 @@
 name=Unstable Shapeshifter
-image=https://magiccards.info/scans/en/tp/100.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84e8cbd4-f49d-420d-a027-3be64ca58989.jpg?1593864138
 value=2.839
 rarity=R
 type=Creature

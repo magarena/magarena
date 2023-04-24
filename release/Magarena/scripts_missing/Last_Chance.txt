@@ -1,5 +1,5 @@
 name=Last Chance
-image=https://magiccards.info/scans/en/st/110.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/264bddc6-51ac-4958-8466-21aded92c66e.jpg?1562904080
 value=3.961
 rarity=R
 type=Sorcery

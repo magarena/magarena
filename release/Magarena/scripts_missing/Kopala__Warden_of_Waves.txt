@@ -1,5 +1,5 @@
 name=Kopala, Warden of Waves
-image=https://magiccards.info/scans/en/xln/61.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34561f87-09d9-4f23-8a05-907fe1303e70.jpg?1562553174
 value=2.500
 rarity=R
 type=Legendary,Creature

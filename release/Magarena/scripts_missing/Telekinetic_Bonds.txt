@@ -1,5 +1,5 @@
 name=Telekinetic Bonds
-image=https://magiccards.info/scans/en/ju/52.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d68fad1d-a517-433a-b939-d0635e8f5535.jpg?1562632176
 value=1.885
 rarity=R
 type=Enchantment

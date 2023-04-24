@@ -1,5 +1,5 @@
 name=Suncrusher
-image=https://magiccards.info/scans/en/5dn/159.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66c22071-959e-4986-aa25-ed883a20796b.jpg?1562877466
 value=3.434
 rarity=R
 type=Artifact,Creature

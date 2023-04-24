@@ -1,5 +1,5 @@
 name=Rite of Ruin
-image=https://magiccards.info/scans/en/avr/153.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89e7fec3-94b5-411e-aeb0-44a64f517986.jpg?1592709188
 value=2.969
 rarity=R
 type=Sorcery

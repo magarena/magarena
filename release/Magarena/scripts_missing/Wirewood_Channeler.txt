@@ -1,5 +1,5 @@
 name=Wirewood Channeler
-image=https://magiccards.info/scans/en/le/144.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/5670ae47-befb-4aaf-a77a-d7dbd4d8dc08.jpg?1631235277
 value=3.881
 rarity=U
 type=Creature

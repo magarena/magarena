@@ -1,5 +1,5 @@
 name=Iroas, God of Victory
-image=https://magiccards.info/scans/en/c16/205.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4036bb7-835d-4690-aca1-1ab566776e9a.jpg?1562415955
 image_updated=2017-08-17
 value=3.758
 rarity=M

@@ -1,5 +1,5 @@
 name=Legerdemain
-image=https://magiccards.info/scans/en/tp/72.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/921f5746-496d-4c73-bc43-fa8601c2f1e9.jpg?1562430778
 value=2.500
 rarity=U
 type=Sorcery

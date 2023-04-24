@@ -1,5 +1,5 @@
 name=Spiritual Visit
-image=https://magiccards.info/scans/en/sok/29.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4e4866e-13a8-4130-9895-60e762b7efea.jpg?1562495648
 value=3.894
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Timebender
-image=https://magiccards.info/scans/en/pc/50.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1ea286fe-0768-4e46-a8dd-a3522db844e1.jpg?1619394854
 value=3.150
 rarity=U
 type=Creature

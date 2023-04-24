@@ -1,5 +1,5 @@
 name=Pillar of the Paruns
-image=https://magiccards.info/scans/en/di/176.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4c66bacf-ad9a-40c3-a2b7-464be8d4dd24.jpg?1673149534
 value=4.145
 rarity=R
 type=Land

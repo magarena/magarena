@@ -1,5 +1,5 @@
 name=Deadly Allure
-image=https://magiccards.info/scans/en/dka/58.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/271bc29e-d33f-4c21-a3ee-b2c6b5c9015e.jpg?1562904279
 value=3.649
 rarity=U
 type=Sorcery

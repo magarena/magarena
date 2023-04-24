@@ -1,5 +1,5 @@
 name=Bloodcrazed Paladin
-image=https://magiccards.info/scans/en/xln/93.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e2160e9-14a0-4c75-b7b0-fb09051ddb32.jpg?1562553984
 value=2.500
 rarity=R
 type=Creature

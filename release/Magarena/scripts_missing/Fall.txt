@@ -1,5 +1,5 @@
 name=Fall
-image=https://magiccards.info/scans/en/di/156b.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37257329-5946-44df-9f5a-50bd38b6a151.jpg?1562907940
 value=3.896
 rarity=U
 type=Sorcery

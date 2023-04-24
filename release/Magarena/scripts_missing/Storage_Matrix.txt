@@ -1,5 +1,5 @@
 name=Storage Matrix
-image=https://magiccards.info/scans/en/9e/310.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2aa41221-ee75-4713-99bd-683013ba64de.jpg?1562732967
 value=4.238
 rarity=R
 type=Artifact

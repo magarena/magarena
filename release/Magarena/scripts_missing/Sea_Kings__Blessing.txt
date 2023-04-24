@@ -1,5 +1,5 @@
 name=Sea Kings' Blessing
-image=https://magiccards.info/scans/en/lg/75.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11d1f02d-533e-4b77-a72a-ff5f91ae0626.jpg?1562857752
 value=2.393
 rarity=U
 type=Instant

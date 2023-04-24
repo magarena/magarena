@@ -1,5 +1,5 @@
 name=Seismic Spike
-image=https://magiccards.info/scans/en/rav/141.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b9caddbe-1329-4ac2-9071-6fc5059d4dec.jpg?1636283728
 value=3.904
 rarity=C
 type=Sorcery

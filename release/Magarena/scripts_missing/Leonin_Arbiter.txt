@@ -1,5 +1,5 @@
 name=Leonin Arbiter
-image=https://magiccards.info/scans/en/c17/64.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d0f827b-ebc3-45a4-8d12-c71a14478038.jpg?1673147016
 image_updated=2017-10-03
 value=4.388
 rarity=R

@@ -1,5 +1,5 @@
 name=Deadshot
-image=https://magiccards.info/scans/en/tp/170.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad82258b-3856-49ee-9acd-926feb15e070.jpg?1562431257
 value=2.500
 rarity=R
 type=Sorcery

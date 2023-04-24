@@ -1,5 +1,5 @@
 name=Dissension in the Ranks
-image=https://magiccards.info/scans/en/soi/152.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c1b563a-7856-40bf-954a-a0110ed4880d.jpg?1576384706
 value=2.500
 rarity=U
 type=Instant

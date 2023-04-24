@@ -1,5 +1,5 @@
 name=Mistform Shrieker
-image=https://magiccards.info/scans/en/on/96.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/1082eea2-5e83-48d4-b02b-a22e7cbe2054.jpg?1562898958
 value=2.183
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Master of the Hunt
-image=https://magiccards.info/scans/en/lg/108.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4e6bf56e-2d74-4e4d-a667-885853979377.jpg?1562858727
 value=2.413
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Aphetto Dredging
-image=https://magiccards.info/scans/en/on/125.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4e7fadf-40f1-45ff-97ef-5830381accc9.jpg?1562941515
 value=3.719
 rarity=C
 type=Sorcery

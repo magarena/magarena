@@ -1,5 +1,5 @@
 name=Return to the Earth
-image=https://magiccards.info/scans/en/frf/135.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e7a0409-02f1-43c2-b4f1-e7ce7f371789.jpg?1562897984
 value=2.500
 rarity=C
 type=Instant

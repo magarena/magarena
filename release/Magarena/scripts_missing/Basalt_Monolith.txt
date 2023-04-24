@@ -1,5 +1,5 @@
 name=Basalt Monolith
-image=https://magiccards.info/scans/en/rv/235.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f79de5e7-1545-420c-bfe1-ee2444fca85b.jpg?1599708689
 image_updated=2016-02-29
 value=4.426
 rarity=U

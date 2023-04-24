@@ -1,5 +1,5 @@
 name=Order of Succession
-image=https://magiccards.info/scans/en/c13/52.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/11f68867-a46c-447f-9061-2bc4dbdde206.jpg?1562898700
 value=3.792
 rarity=R
 type=Sorcery

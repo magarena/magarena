@@ -1,5 +1,5 @@
 name=Nevermore
-image=https://magiccards.info/scans/en/isd/25.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/67b610fe-36ee-4d58-8ed4-04e7a12587b2.jpg?1562831484
 value=3.796
 rarity=R
 type=Enchantment

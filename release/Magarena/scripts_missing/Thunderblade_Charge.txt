@@ -1,5 +1,5 @@
 name=Thunderblade Charge
-image=https://magiccards.info/scans/en/fut/124.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88a85be1-9de5-4f96-9fd1-15f3f17c4bea.jpg?1562922621
 value=3.343
 rarity=R
 type=Sorcery

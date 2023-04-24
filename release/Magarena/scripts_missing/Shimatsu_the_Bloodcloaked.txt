@@ -1,5 +1,5 @@
 name=Shimatsu the Bloodcloaked
-image=https://magiccards.info/scans/en/chk/186.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71de0e2c-61ca-496e-8990-ed0e6f6521a6.jpg?1562761501
 value=1.825
 rarity=R
 type=Legendary,Creature

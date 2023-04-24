@@ -1,5 +1,5 @@
 name=Gatstaf Arsonists
-image=https://magiccards.info/scans/en/soi/158a.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6ab67098-d3d5-4799-ae03-c734244f370e.jpg?1576384747
 value=2.500
 rarity=C
 type=Creature

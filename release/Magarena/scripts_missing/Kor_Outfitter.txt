@@ -1,5 +1,5 @@
 name=Kor Outfitter
-image=https://magiccards.info/scans/en/zen/21.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251
 value=3.703
 rarity=C
 type=Creature

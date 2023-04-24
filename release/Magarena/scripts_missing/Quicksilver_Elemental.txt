@@ -1,5 +1,5 @@
 name=Quicksilver Elemental
-image=https://magiccards.info/scans/en/mi/47.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2905f6ac-d054-454b-8e1a-9c32db13a581.jpg?1562139220
 value=3.888
 rarity=R
 type=Creature

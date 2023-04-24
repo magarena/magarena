@@ -1,5 +1,5 @@
 name=Loss
-image=https://magiccards.info/scans/en/dgm/130b.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0eb3ce46-ddd2-43b3-9e45-019ae91df686.jpg?1562897840
 value=2.413
 rarity=U
 type=Instant

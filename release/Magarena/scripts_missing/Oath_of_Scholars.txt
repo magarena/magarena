@@ -1,5 +1,5 @@
 name=Oath of Scholars
-image=https://magiccards.info/scans/en/ex/42.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d61376ad-21c8-4d34-b37d-ed60877f5d4a.jpg?1562088814
 value=3.542
 rarity=R
 type=Enchantment

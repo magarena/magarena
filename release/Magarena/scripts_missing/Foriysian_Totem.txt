@@ -1,5 +1,5 @@
 name=Foriysian Totem
-image=https://magiccards.info/scans/en/ts/254.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45cba87d-3c8c-4f38-bdd8-51072ba6365b.jpg?1562909437
 value=3.397
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Krosan Vorine
-image=https://magiccards.info/scans/en/le/131.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31bd1b2f-6bea-4bd1-8a6e-50ab2d34bf82.jpg?1562905093
 value=2.500
 rarity=C
 type=Creature

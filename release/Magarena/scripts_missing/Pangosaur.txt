@@ -1,5 +1,5 @@
 name=Pangosaur
-image=https://magiccards.info/scans/en/mm/261.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/0335d282-cd1a-4be3-8eb2-82aaee91401a.jpg?1562378944
 value=2.441
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Curse of Wizardry
-image=https://magiccards.info/scans/en/roe/104.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/162535ea-87be-4ea7-a006-b63ae981f453.jpg?1562701453
 value=3.058
 rarity=U
 type=Enchantment

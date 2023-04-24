@@ -1,5 +1,5 @@
 name=Nightsnare
-image=https://magiccards.info/scans/en/ori/111.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/391a1023-69e7-425c-ac54-987ba366f8f4.jpg?1562014988
 image_updated=2015-11-05
 value=2.500
 rarity=C

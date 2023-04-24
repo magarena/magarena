@@ -1,5 +1,5 @@
 name=Burning-Tree Bloodscale
-image=https://magiccards.info/scans/en/gp/104.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c6492648-8115-41ff-a184-08efebae28b1.jpg?1593272602
 value=2.267
 rarity=C
 type=Creature

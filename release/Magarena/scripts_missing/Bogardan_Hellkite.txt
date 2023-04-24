@@ -1,5 +1,5 @@
 name=Bogardan Hellkite
-image=https://magiccards.info/scans/en/ima/118.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/22dd2242-2fd8-4752-886c-fc6dbabcf89a.jpg?1631586933
 image_updated=2017-04-12
 value=2.500
 rarity=R

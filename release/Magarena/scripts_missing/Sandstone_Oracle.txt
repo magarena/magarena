@@ -1,5 +1,5 @@
 name=Sandstone Oracle
-image=https://magiccards.info/scans/en/ima/227.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba2b7213-f0db-4ef9-aab7-37028f9479af.jpg?1608911663
 image_updated=2017-04-12
 value=2.500
 rarity=U

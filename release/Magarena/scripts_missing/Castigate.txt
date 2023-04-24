@@ -1,5 +1,5 @@
 name=Castigate
-image=https://magiccards.info/scans/en/gp/106.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/112c47e4-5ff8-4ea0-ac14-956e4b94119a.jpg?1593272615
 value=4.218
 rarity=C
 type=Sorcery

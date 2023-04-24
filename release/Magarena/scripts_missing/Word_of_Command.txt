@@ -1,5 +1,5 @@
 name=Word of Command
-image=https://magiccards.info/scans/en/un/45.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b1be5ba-6e5e-4801-815b-5e82b9e72b3d.jpg?1562927791
 value=4.500
 rarity=R
 type=Instant

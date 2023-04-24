@@ -1,5 +1,5 @@
 name=Conundrum Sphinx
-image=https://magiccards.info/scans/en/cmd/42.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2905cea6-77cb-4d9b-93f4-e22211af25e1.jpg?1592710540
 value=3.960
 rarity=R
 type=Creature

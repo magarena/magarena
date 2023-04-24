@@ -1,5 +1,5 @@
 name=Infernal Plunge
-image=https://magiccards.info/scans/en/isd/148.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3f50e17-c29c-4d2c-b3e7-45d1216b81ea.jpg?1562835822
 value=3.424
 rarity=C
 type=Sorcery

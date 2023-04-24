@@ -1,5 +1,5 @@
 name=Ur-Golem's Eye
-image=https://magiccards.info/scans/en/c14/280.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a2ea921-8ef9-4a31-b484-73375e828d34.jpg?1561947461
 value=2.500
 rarity=U
 type=Artifact

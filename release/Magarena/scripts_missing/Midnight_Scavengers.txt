@@ -1,5 +1,5 @@
 name=Midnight Scavengers
-image=https://magiccards.info/scans/en/emn/96a.jpg
+image=https://cards.scryfall.io/border_crop/front/5/a/5a57187c-f0ec-40de-b725-786f787b00a2.jpg?1625771784
 image_updated=2016-09-05
 value=2.500
 rarity=C

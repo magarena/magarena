@@ -1,5 +1,5 @@
 name=Warrior en-Kor
-image=https://magiccards.info/scans/en/sh/124.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afcf1e51-5e9a-4c86-8a14-97d9e919c320.jpg?1562431258
 value=2.500
 rarity=U
 type=Creature

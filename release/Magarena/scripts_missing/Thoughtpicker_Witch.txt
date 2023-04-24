@@ -1,5 +1,5 @@
 name=Thoughtpicker Witch
-image=https://magiccards.info/scans/en/rav/109.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6f8df33-a955-403c-aafc-85e5589c5041.jpg?1598915252
 value=3.833
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Yawgmoth's Vile Offering
-image=https://magiccards.info/scans/en/dom/114.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/31825ceb-d795-4ad7-81d8-77ab34c272f9.jpg?1682209258
 value=2.500
 rarity=R
 type=Legendary,Sorcery

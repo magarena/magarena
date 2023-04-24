@@ -1,5 +1,5 @@
 name=Slinn Voda, the Rising Deep
-image=https://magiccards.info/scans/en/dom/66.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cebf2c16-bd9d-4a8f-a1b6-6e0c393178bc.jpg?1608912178
 value=2.500
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Coal Golem
-image=https://magiccards.info/scans/en/dk/96.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bdc28e20-0e48-4803-a8e2-1c1e8f518d89.jpg?1562935087
 value=2.172
 rarity=U
 type=Artifact,Creature

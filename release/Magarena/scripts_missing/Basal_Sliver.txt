@@ -1,5 +1,5 @@
 name=Basal Sliver
-image=https://magiccards.info/scans/en/ts/96.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/4564e9df-bfa3-48e5-a12e-f7e96a504cb1.jpg?1562909343
 value=3.642
 rarity=C
 type=Creature

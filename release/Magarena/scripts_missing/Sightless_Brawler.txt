@@ -1,5 +1,5 @@
 name=Sightless Brawler
-image=https://magiccards.info/scans/en/jou/24.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e2fcd27-c068-468f-9825-2825c0cf217d.jpg?1593095335
 value=3.105
 rarity=U
 type=Enchantment,Creature

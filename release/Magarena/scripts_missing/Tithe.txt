@@ -1,5 +1,5 @@
 name=Tithe
-image=https://magiccards.info/scans/en/vi/123.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aae08938-e563-4322-b2eb-db81913ea730.jpg?1562278172
 value=4.476
 rarity=R
 type=Instant

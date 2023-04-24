@@ -1,5 +1,5 @@
 name=Ignorant Bliss
-image=https://magiccards.info/scans/en/di/64.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a2db886-d394-4a8b-8fe0-dc2613500adc.jpg?1593273158
 value=3.162
 rarity=U
 type=Instant

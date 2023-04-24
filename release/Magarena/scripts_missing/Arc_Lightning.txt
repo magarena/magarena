@@ -1,5 +1,5 @@
 name=Arc Lightning
-image=https://magiccards.info/scans/en/ktk/97.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35c7c392-6782-40c8-bb24-6aad24f14660.jpg?1562784760
 value=2.500
 rarity=U
 type=Sorcery

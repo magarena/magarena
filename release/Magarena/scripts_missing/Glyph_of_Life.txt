@@ -1,5 +1,5 @@
 name=Glyph of Life
-image=https://magiccards.info/scans/en/lg/184.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba1384e5-d140-4074-9548-250af09cb413.jpg?1562860858
 value=2.030
 rarity=C
 type=Instant

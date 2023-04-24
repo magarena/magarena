@@ -1,5 +1,5 @@
 name=Crimson Hellkite
-image=https://magiccards.info/scans/en/7e/178.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/5451e44f-8dd2-48c6-ba67-5c62a04819ef.jpg?1562237937
 value=3.414
 rarity=R
 type=Creature

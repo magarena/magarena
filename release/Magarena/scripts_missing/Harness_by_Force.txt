@@ -1,5 +1,5 @@
 name=Harness by Force
-image=https://magiccards.info/scans/en/jou/100.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bde89c1-aafa-43d9-adbf-671fa2b52d4f.jpg?1593096006
 value=3.704
 rarity=R
 type=Sorcery

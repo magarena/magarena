@@ -1,5 +1,5 @@
 name=Swell of Courage
-image=https://magiccards.info/scans/en/mt/26.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0fddb694-d863-4364-9bf9-650d7be3b471.jpg?1562269782
 image_updated=2016-01-09
 value=2.914
 rarity=U

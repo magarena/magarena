@@ -1,5 +1,5 @@
 name=Pride of the Clouds
-image=https://magiccards.info/scans/en/di/125.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ecc2a029-6e64-4b6d-9d82-afc319dbc57a.jpg?1593273717
 value=4.140
 rarity=R
 type=Creature

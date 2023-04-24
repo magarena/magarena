@@ -1,5 +1,5 @@
 name=Weirding Wood
-image=https://magiccards.info/scans/en/soi/240.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82e20104-117e-47de-ac0c-cca9250c1f3c.jpg?1682209648
 value=2.500
 rarity=U
 type=Enchantment

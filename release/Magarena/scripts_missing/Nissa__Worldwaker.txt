@@ -1,5 +1,5 @@
 name=Nissa, Worldwaker
-image=https://magiccards.info/scans/en/m15/187.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a37fbca-32db-40cc-9fd3-4764c7fd81e2.jpg?1592765827
 value=4.150
 rarity=M
 type=Legendary,Planeswalker

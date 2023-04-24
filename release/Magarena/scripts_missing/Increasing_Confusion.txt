@@ -1,5 +1,5 @@
 name=Increasing Confusion
-image=https://magiccards.info/scans/en/dka/41.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/13f5bcdc-70bb-4d67-99e1-282f166ee4bf.jpg?1562899773
 value=3.587
 rarity=R
 type=Sorcery

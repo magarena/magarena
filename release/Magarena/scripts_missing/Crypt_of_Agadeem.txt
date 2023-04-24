@@ -1,5 +1,5 @@
 name=Crypt of Agadeem
-image=https://magiccards.info/scans/en/c14/288.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba4c4c6b-65bf-480f-bdd5-e7acc8a512bf.jpg?1561956546
 value=2.500
 rarity=R
 type=Land

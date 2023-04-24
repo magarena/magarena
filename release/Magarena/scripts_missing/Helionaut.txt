@@ -1,5 +1,5 @@
 name=Helionaut
-image=https://magiccards.info/scans/en/ap/13.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a4d395e-d7d6-4e93-9761-b0bae63b7b1c.jpg?1562908709
 value=2.750
 rarity=C
 type=Creature

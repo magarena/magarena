@@ -1,5 +1,5 @@
 name=Alluring Scent
-image=https://magiccards.info/scans/en/st/124.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/543373fe-8623-4a2c-aa8f-57c80b2481ff.jpg?1562914683
 value=2.292
 rarity=C
 type=Sorcery

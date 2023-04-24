@@ -1,5 +1,5 @@
 name=Crop Sigil
-image=https://magiccards.info/scans/en/emn/153.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/861e8c51-0cda-497a-b289-a9f678f0e328.jpg?1576384754
 image_updated=2016-09-05
 value=2.500
 rarity=U

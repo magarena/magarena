@@ -1,5 +1,5 @@
 name=Ouphe Vandals
-image=https://magiccards.info/scans/en/5dn/90.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/896e08f8-7608-4137-9a58-f6eda8f84313.jpg?1562878318
 value=2.389
 rarity=U
 type=Creature

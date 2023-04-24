@@ -1,5 +1,5 @@
 name=Mad Dog
-image=https://magiccards.info/scans/en/od/202.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7be2da24-a0cd-4e90-bc29-4da649fa56bf.jpg?1562917875
 value=1.513
 rarity=C
 type=Creature

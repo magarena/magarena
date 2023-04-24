@@ -1,5 +1,5 @@
 name=Sand Golem
-image=https://magiccards.info/scans/en/mr/283.jpg
+image=https://cards.scryfall.io/border_crop/front/8/4/84e4a955-ce9a-4386-b6ac-c00fd25de882.jpg?1562720460
 value=2.919
 rarity=U
 type=Artifact,Creature

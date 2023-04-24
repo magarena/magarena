@@ -1,5 +1,5 @@
 name=Sky Hussar
-image=https://magiccards.info/scans/en/di/131.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a795ea0-5a8f-4dc2-863b-d3c00844d873.jpg?1593273776
 value=4.107
 rarity=U
 type=Creature

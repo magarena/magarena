@@ -1,5 +1,5 @@
 name=Rolling Spoil
-image=https://magiccards.info/scans/en/rav/179.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6c5546f-2429-4099-a9bd-eda3f52779b7.jpg?1598916497
 value=2.797
 rarity=U
 type=Sorcery

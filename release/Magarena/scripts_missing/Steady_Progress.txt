@@ -1,5 +1,5 @@
 name=Steady Progress
-image=https://magiccards.info/scans/en/mm2/58.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71106361-b5b9-403c-b3b1-afe3337e9e3d.jpg?1562263746
 value=2.500
 rarity=C
 type=Instant

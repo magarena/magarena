@@ -1,5 +1,5 @@
 name=Spiny Starfish
-image=https://magiccards.info/scans/en/ai/53.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b072ccea-816a-4176-9a77-478f207a9a1e.jpg?1562932234
 value=4.290
 rarity=U
 type=Creature

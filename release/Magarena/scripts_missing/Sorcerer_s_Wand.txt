@@ -1,5 +1,5 @@
 name=Sorcerer's Wand
-image=https://magiccards.info/scans/en/dom/231.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69ee3692-54e3-42de-85c6-0a3b5c6a2402.jpg?1562737162
 value=2.500
 rarity=U
 type=Artifact

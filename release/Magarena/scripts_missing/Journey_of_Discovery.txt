@@ -1,5 +1,5 @@
 name=Journey of Discovery
-image=https://magiccards.info/scans/en/mi/123.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3f4356f-8cfb-43ed-bdf9-6191bb563388.jpg?1562153163
 value=3.671
 rarity=C
 type=Sorcery

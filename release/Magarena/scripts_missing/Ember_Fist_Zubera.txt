@@ -1,5 +1,5 @@
 name=Ember-Fist Zubera
-image=https://magiccards.info/scans/en/chk/166.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0150e3f0-237e-4669-9401-d2cd08e86387.jpg?1562757079
 value=2.776
 rarity=C
 type=Creature

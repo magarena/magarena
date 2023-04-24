@@ -1,5 +1,5 @@
 name=Werewolf Ransacker
-image=https://magiccards.info/scans/en/dka/81b.jpg
+image=https://cards.scryfall.io/border_crop/back/a/2/a2c044c0-3625-4bdf-9445-b462394cecae.jpg?1581395071
 value=2.593
 rarity=U
 type=Creature

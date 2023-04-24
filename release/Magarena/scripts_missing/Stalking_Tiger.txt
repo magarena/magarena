@@ -1,5 +1,5 @@
 name=Stalking Tiger
-image=https://magiccards.info/scans/en/10e/299.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2048b66a-586f-49ad-bd2b-7fce1eb45ce6.jpg?1562197766
 value=3.047
 rarity=C
 type=Creature

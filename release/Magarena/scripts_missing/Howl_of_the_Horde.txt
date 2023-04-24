@@ -1,5 +1,5 @@
 name=Howl of the Horde
-image=https://magiccards.info/scans/en/ktk/112.jpg
+image=https://cards.scryfall.io/border_crop/front/5/d/5db4baf3-f0dc-4b27-8323-a76764332590.jpg?1562787225
 value=3.375
 rarity=R
 type=Sorcery

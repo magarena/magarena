@@ -1,5 +1,5 @@
 name=The Scarab God
-image=https://magiccards.info/scans/en/hou/145.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d79ee141-0ea6-45d6-a682-96a37d703394.jpg?1599708320
 value=2.500
 rarity=M
 type=Legendary,Creature

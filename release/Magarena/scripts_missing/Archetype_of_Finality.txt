@@ -1,5 +1,5 @@
 name=Archetype of Finality
-image=https://magiccards.info/scans/en/bng/58.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f326b9c5-063b-4c53-a696-11cd89fc88d8.jpg?1593091847
 value=3.466
 rarity=U
 type=Enchantment,Creature

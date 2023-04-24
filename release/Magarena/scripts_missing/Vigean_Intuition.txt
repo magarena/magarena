@@ -1,5 +1,5 @@
 name=Vigean Intuition
-image=https://magiccards.info/scans/en/di/136.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be493737-0457-447b-802b-043d7a77f389.jpg?1593273814
 value=2.000
 rarity=U
 type=Instant

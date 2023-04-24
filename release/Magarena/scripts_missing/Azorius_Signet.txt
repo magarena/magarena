@@ -1,5 +1,5 @@
 name=Azorius Signet
-image=https://magiccards.info/scans/en/mm3/215.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4f42d990-a7da-4274-a6c0-4daeb56ba480.jpg?1673485289
 image_updated=2017-08-08
 value=3.625
 rarity=U

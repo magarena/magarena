@@ -1,5 +1,5 @@
 name=Zombie Brute
-image=https://magiccards.info/scans/en/le/87.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b37db470-3aef-4fc4-98ce-63b5fb2546f6.jpg?1562931118
 value=3.442
 rarity=U
 type=Creature

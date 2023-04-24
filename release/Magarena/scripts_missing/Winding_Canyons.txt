@@ -1,5 +1,5 @@
 name=Winding Canyons
-image=https://magiccards.info/scans/en/wl/167.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f26672a8-f4ff-4c64-bb3e-f5072bbc9e3e.jpg?1562804204
 value=4.260
 rarity=R
 type=Land

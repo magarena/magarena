@@ -1,5 +1,5 @@
 name=Squandered Resources
-image=https://magiccards.info/scans/en/vi/137.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fcddbea7-3025-47b1-a597-2d2b2711fb81.jpg?1587913173
 value=4.276
 rarity=R
 type=Enchantment

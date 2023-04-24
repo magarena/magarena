@@ -1,5 +1,5 @@
 name=Consign to Dust
-image=https://magiccards.info/scans/en/jou/119.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54cb25b6-049c-46dd-88a4-f3890e018db0.jpg?1592710839
 value=2.875
 rarity=U
 type=Instant

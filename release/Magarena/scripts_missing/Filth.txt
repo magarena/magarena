@@ -1,5 +1,5 @@
 name=Filth
-image=https://magiccards.info/scans/en/ju/66.jpg
+image=https://cards.scryfall.io/border_crop/front/3/7/37de06dc-c0c1-4edb-9732-2d16dbabfb31.jpg?1562629359
 value=3.285
 rarity=U
 type=Creature

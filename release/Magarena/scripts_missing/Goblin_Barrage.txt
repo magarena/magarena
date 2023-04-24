@@ -1,5 +1,5 @@
 name=Goblin Barrage
-image=https://magiccards.info/scans/en/dom/128.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/4849db5d-cd41-49f6-acd5-697cdc8263f6.jpg?1562735067
 value=2.500
 rarity=U
 type=Sorcery

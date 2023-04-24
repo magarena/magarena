@@ -1,5 +1,5 @@
 name=Luminesce
-image=https://magiccards.info/scans/en/10e/28.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e34fc636-439f-4ce0-8189-5d00b0cf6b1a.jpg?1562556738
 value=2.359
 rarity=U
 type=Instant

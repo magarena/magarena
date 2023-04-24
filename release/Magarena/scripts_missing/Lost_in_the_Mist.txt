@@ -1,5 +1,5 @@
 name=Lost in the Mist
-image=https://magiccards.info/scans/en/isd/63.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e5fc39d-590a-436b-ab90-a1741d2ae3da.jpg?1562827161
 value=3.234
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Mirri, Weatherlight Duelist
-image=https://magiccards.info/scans/en/c17/43.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f7b6d78-4c18-4f96-9f0c-53a5c81aa6f9.jpg?1562614418
 image_updated=2017-10-03
 value=2.500
 rarity=M

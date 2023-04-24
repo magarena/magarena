@@ -1,5 +1,5 @@
 name=Inverter of Truth
-image=https://magiccards.info/scans/en/ogw/72.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88c9d8c5-333b-4281-b923-b4a060927bbc.jpg?1596451352
 image_updated=2016-02-29
 value=2.500
 rarity=M

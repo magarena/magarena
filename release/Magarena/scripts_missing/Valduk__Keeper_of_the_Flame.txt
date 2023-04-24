@@ -1,5 +1,5 @@
 name=Valduk, Keeper of the Flame
-image=https://magiccards.info/scans/en/dom/148.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/253f9e43-5bc6-4f26-a8e9-773cd0ca3d02.jpg?1562732810
 value=2.500
 rarity=U
 type=Legendary,Creature

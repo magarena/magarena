@@ -1,5 +1,5 @@
 name=Spellweaver Helix
-image=https://magiccards.info/scans/en/mi/247.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a48d44b4-1c3b-4109-aaad-8351bf8a7624.jpg?1562153179
 value=3.720
 rarity=R
 type=Artifact

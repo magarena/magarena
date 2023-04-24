@@ -1,5 +1,5 @@
 name=Initiates of the Ebon Hand
-image=https://magiccards.info/scans/en/5e/31.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c83085df-1ffb-4178-9fc0-fd347196673f.jpg?1587857225
 value=3.293
 rarity=C
 type=Creature

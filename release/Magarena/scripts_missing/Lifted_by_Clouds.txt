@@ -1,5 +1,5 @@
 name=Lifted by Clouds
-image=https://magiccards.info/scans/en/chk/73.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a5f08f3d-82ef-4c3f-af2d-a3c834e22b99.jpg?1562763446
 value=1.361
 rarity=C
 type=Instant

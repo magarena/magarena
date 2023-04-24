@@ -1,5 +1,5 @@
 name=Sunforger
-image=https://magiccards.info/scans/en/c16/275.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd3e42ee-ab13-460b-90fd-86e677abce4f.jpg?1608917905
 image_updated=2017-08-17
 value=2.500
 rarity=R

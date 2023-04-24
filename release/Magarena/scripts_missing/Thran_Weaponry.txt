@@ -1,5 +1,5 @@
 name=Thran Weaponry
-image=https://magiccards.info/scans/en/ul/135.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60f005ae-fca1-4a48-84a3-4b217ac879ce.jpg?1562863269
 value=2.907
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Mirrorweave
-image=https://magiccards.info/scans/en/c16/234.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c77925b-0944-4b2b-b389-42bf17907b34.jpg?1562272856
 image_updated=2017-08-17
 value=4.057
 rarity=R

@@ -1,5 +1,5 @@
 name=Inquisitor's Snare
-image=https://magiccards.info/scans/en/shm/8.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c607ec00-2d44-485e-ad85-24c0c7a284f9.jpg?1562835766
 value=2.786
 rarity=C
 type=Instant

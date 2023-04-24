@@ -1,5 +1,5 @@
 name=Hallow
-image=https://magiccards.info/scans/en/ds/4.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/80fe80a0-cb3d-48bc-b67e-2e2253cfee14.jpg?1562637789
 value=4.035
 rarity=C
 type=Instant

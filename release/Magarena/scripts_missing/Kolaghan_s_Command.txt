@@ -1,5 +1,5 @@
 name=Kolaghan's Command
-image=https://magiccards.info/scans/en/dtk/224.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a0dab027-a475-481b-b012-b6a76e21e494.jpg?1673148845
 value=2.500
 rarity=R
 type=Instant

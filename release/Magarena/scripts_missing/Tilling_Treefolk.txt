@@ -1,5 +1,5 @@
 name=Tilling Treefolk
-image=https://magiccards.info/scans/en/eve/78.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e4a10d0-214d-4e7b-9683-c84034f8f6b7.jpg?1562925017
 value=2.940
 rarity=C
 type=Creature

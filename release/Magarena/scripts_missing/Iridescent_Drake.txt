@@ -1,5 +1,5 @@
 name=Iridescent Drake
-image=https://magiccards.info/scans/en/ud/35.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c99c962-aa33-4e19-96b2-7a05b97d06d4.jpg?1547516332
 value=3.536
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Hour of Glory
-image=https://magiccards.info/scans/en/hou/65.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f35e66cb-af50-411a-b6f2-16fb7072eff5.jpg?1562820090
 value=2.500
 rarity=R
 type=Instant

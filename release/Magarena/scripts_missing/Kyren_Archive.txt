@@ -1,5 +1,5 @@
 name=Kyren Archive
-image=https://magiccards.info/scans/en/mm/302.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e65a06a-e7af-422a-9481-446731009935.jpg?1562380890
 value=2.724
 rarity=R
 type=Artifact

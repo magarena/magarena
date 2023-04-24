@@ -1,5 +1,5 @@
 name=Kraken of the Straits
-image=https://magiccards.info/scans/en/bng/42.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12ae69b3-afa5-4763-a0c8-c3d9d96f6ddc.jpg?1593091689
 value=3.480
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Season of the Witch
-image=https://magiccards.info/scans/en/dk/14.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/06900a71-34ca-48c6-94ac-fca744356829.jpg?1562896564
 value=3.053
 rarity=R
 type=Enchantment

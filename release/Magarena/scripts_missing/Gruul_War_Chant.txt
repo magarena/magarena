@@ -1,5 +1,5 @@
 name=Gruul War Chant
-image=https://magiccards.info/scans/en/mm3/170.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2003fb65-26ee-481f-a38d-7d3fe55878f3.jpg?1593814432
 image_updated=2017-08-08
 value=3.775
 rarity=U

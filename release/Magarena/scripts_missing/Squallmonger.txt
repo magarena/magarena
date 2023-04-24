@@ -1,5 +1,5 @@
 name=Squallmonger
-image=https://magiccards.info/scans/en/cmd/173.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0ec3f9b9-07f1-465a-9b5f-5205d5ff16e6.jpg?1592713883
 value=3.442
 rarity=U
 type=Creature

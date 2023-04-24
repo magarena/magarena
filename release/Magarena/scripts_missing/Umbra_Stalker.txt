@@ -1,5 +1,5 @@
 name=Umbra Stalker
-image=https://magiccards.info/scans/en/eve/48.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1efdd70a-5a84-48a5-82bf-ba29fda097c0.jpg?1562901499
 value=3.343
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Sinuous Predator
-image=https://magiccards.info/scans/en/emn/163b.jpg
+image=https://cards.scryfall.io/border_crop/back/f/8/f89f116a-1e8e-4ae7-be39-552e4954f229.jpg?1576384825
 image_updated=2016-09-05
 value=2.500
 rarity=U

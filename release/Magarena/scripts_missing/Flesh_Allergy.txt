@@ -1,5 +1,5 @@
 name=Flesh Allergy
-image=https://magiccards.info/scans/en/som/62.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c729525-b954-42dd-9877-f4360d99b961.jpg?1562820900
 value=2.853
 rarity=U
 type=Sorcery

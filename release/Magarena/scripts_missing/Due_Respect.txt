@@ -1,5 +1,5 @@
 name=Due Respect
-image=https://magiccards.info/scans/en/nph/8.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7159850-964b-4f12-957f-614eb0570544.jpg?1562880485
 value=3.058
 rarity=U
 type=Instant

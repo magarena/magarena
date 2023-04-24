@@ -1,5 +1,5 @@
 name=Rupture
-image=https://magiccards.info/scans/en/ne/97.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db53c1fb-3641-44a3-b0b4-b7b2ba993646.jpg?1562632349
 value=3.920
 rarity=U
 type=Sorcery

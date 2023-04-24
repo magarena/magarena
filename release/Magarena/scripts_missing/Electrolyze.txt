@@ -1,5 +1,5 @@
 name=Electrolyze
-image=https://magiccards.info/scans/en/ima/198.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/5112af09-1305-4e00-8273-403eac40786f.jpg?1562848887
 image_updated=2017-04-12
 value=2.500
 rarity=U

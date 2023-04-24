@@ -1,5 +1,5 @@
 name=Tahngarth's Glare
-image=https://magiccards.info/scans/en/ap/70.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/442a4331-99ce-405e-b261-19b7f3375ddf.jpg?1562910980
 value=2.038
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Camouflage
-image=https://magiccards.info/scans/en/un/96.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/09243dc6-c56c-42a8-969b-2ecffe89e1ca.jpg?1559592197
 value=3.756
 rarity=U
 type=Instant

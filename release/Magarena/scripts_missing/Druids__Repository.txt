@@ -1,5 +1,5 @@
 name=Druids' Repository
-image=https://magiccards.info/scans/en/avr/176.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/57e6fb62-7ee3-444d-8fd4-c1f44014a05c.jpg?1592709336
 value=3.721
 rarity=R
 type=Enchantment

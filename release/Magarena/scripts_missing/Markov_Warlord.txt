@@ -1,5 +1,5 @@
 name=Markov Warlord
-image=https://magiccards.info/scans/en/dka/97.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/5035276f-31b9-4dd3-9ec8-42a664bdbd5c.jpg?1562913811
 value=2.769
 rarity=U
 type=Creature

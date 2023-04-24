@@ -1,5 +1,5 @@
 name=Beseech the Queen
-image=https://magiccards.info/scans/en/shm/57.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7d6a020-8843-4a97-9d00-86f3928e8acd.jpg?1562843369
 image_updated=2016-12-13
 value=3.577
 rarity=U

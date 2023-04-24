@@ -1,5 +1,5 @@
 name=Fresh Meat
-image=https://magiccards.info/scans/en/c14/197.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78bbdc81-d47f-4f0a-b359-c146cc07931d.jpg?1568004562
 value=2.500
 rarity=R
 type=Instant

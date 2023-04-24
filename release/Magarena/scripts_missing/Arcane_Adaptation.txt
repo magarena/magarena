@@ -1,5 +1,5 @@
 name=Arcane Adaptation
-image=https://magiccards.info/scans/en/xln/46.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf3edaaf-cf63-4e17-94ae-9d9991d9fb5f.jpg?1562563280
 value=2.500
 rarity=R
 type=Enchantment

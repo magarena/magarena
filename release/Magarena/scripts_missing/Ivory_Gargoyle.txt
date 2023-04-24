@@ -1,5 +1,5 @@
 name=Ivory Gargoyle
-image=https://magiccards.info/scans/en/ai/131.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07d79058-2a78-4237-83b0-4715053e8267.jpg?1562867821
 value=3.333
 rarity=R
 type=Creature

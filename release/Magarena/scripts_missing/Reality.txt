@@ -1,5 +1,5 @@
 name=Reality
-image=https://magiccards.info/scans/en/ap/129b.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e7dd90a-4f93-43aa-b503-18289fdd571e.jpg?1562928558
 value=2.630
 rarity=U
 type=Instant

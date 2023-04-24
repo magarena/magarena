@@ -1,5 +1,5 @@
 name=Descent into Madness
-image=https://magiccards.info/scans/en/avr/97.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa016bb7-ad8b-40d5-90db-412a9cf19e4e.jpg?1592708833
 value=3.125
 rarity=M
 type=Enchantment

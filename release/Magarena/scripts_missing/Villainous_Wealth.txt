@@ -1,5 +1,5 @@
 name=Villainous Wealth
-image=https://magiccards.info/scans/en/ktk/211.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/782c4bd2-b84a-4dbd-9452-90c9734d78fb.jpg?1673149260
 value=4.000
 rarity=R
 type=Sorcery

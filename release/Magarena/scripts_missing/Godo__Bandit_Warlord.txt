@@ -1,5 +1,5 @@
 name=Godo, Bandit Warlord
-image=https://magiccards.info/scans/en/c16/125.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/123d1368-fbbe-48f8-9b44-d51946529322.jpg?1599706406
 image_updated=2017-08-17
 value=3.991
 rarity=R

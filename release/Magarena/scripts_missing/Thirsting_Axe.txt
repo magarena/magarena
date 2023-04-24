@@ -1,5 +1,5 @@
 name=Thirsting Axe
-image=https://magiccards.info/scans/en/emn/202.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f47e5303-c07a-4be0-a314-bf5739a856e5.jpg?1576385105
 image_updated=2016-09-05
 value=2.500
 rarity=U

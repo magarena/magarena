@@ -1,5 +1,5 @@
 name=Syphon Mind
-image=https://magiccards.info/scans/en/c14/165.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/187502d9-c751-4967-adff-09d7a300d935.jpg?1674141804
 value=2.500
 rarity=C
 type=Sorcery

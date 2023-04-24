@@ -1,5 +1,5 @@
 name=Soul of Shandalar
-image=https://magiccards.info/scans/en/m15/163.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03543d10-202b-4b07-a34b-64216a745d84.jpg?1562781911
 value=3.708
 rarity=M
 type=Creature

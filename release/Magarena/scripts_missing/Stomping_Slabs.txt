@@ -1,5 +1,5 @@
 name=Stomping Slabs
-image=https://magiccards.info/scans/en/mt/107.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/820f1acf-7f0c-4ee5-9f18-b5627aac7c81.jpg?1562879653
 value=2.739
 rarity=U
 type=Sorcery

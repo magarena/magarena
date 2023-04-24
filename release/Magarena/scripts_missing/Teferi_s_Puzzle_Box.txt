@@ -1,5 +1,5 @@
 name=Teferi's Puzzle Box
-image=https://magiccards.info/scans/en/9e/312.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/415e81e9-ca65-4bc0-8aab-d905d58fe6cc.jpg?1562734271
 value=4.448
 rarity=R
 type=Artifact

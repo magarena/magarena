@@ -1,5 +1,5 @@
 name=Whirling Dervish
-image=https://magiccards.info/scans/en/tsts/90.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f1772bc-3330-4a10-9524-5bdcbd50c871.jpg?1562781065
 value=4.028
 rarity=U
 type=Creature

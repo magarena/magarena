@@ -1,5 +1,5 @@
 name=Scrounging Bandar
-image=https://magiccards.info/scans/en/aer/124.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02c8aab5-ed0d-489d-87af-7eb3193b75db.jpg?1608910887
 value=2.500
 rarity=C
 type=Creature

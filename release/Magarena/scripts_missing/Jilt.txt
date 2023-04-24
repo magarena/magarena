@@ -1,5 +1,5 @@
 name=Jilt
-image=https://magiccards.info/scans/en/ap/27.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a010d2b1-960d-4032-a47a-61fe0998bee3.jpg?1562932798
 value=4.112
 rarity=C
 type=Instant

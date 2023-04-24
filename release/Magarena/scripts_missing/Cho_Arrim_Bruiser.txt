@@ -1,5 +1,5 @@
 name=Cho-Arrim Bruiser
-image=https://magiccards.info/scans/en/mm/9.jpg
+image=https://cards.scryfall.io/border_crop/front/2/6/26e98f06-ad8d-4a93-8ae6-3da42b63b5b5.jpg?1562379454
 value=3.556
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Eladamri's Vineyard
-image=https://magiccards.info/scans/en/tp/118.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8531643-5657-44b6-89d1-9cdf67ed09c4.jpg?1562056878
 value=4.351
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Inner Fire
-image=https://magiccards.info/scans/en/sok/105.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1d886a2-ae83-4d95-9ec0-582c563181e6.jpg?1562495591
 value=2.338
 rarity=C
 type=Sorcery

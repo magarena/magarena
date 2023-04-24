@@ -1,5 +1,5 @@
 name=Jaded Response
-image=https://magiccards.info/scans/en/ap/26.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a9ab1f0-4e75-4165-85bc-6f838c221d6a.jpg?1562920093
 value=2.766
 rarity=C
 type=Instant

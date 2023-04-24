@@ -1,5 +1,5 @@
 name=Wave Elemental
-image=https://magiccards.info/scans/en/mr/102.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/111ee762-72cb-43e3-88a1-6f1f0b9ee66e.jpg?1562717844
 value=2.571
 rarity=U
 type=Creature

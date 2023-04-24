@@ -1,5 +1,5 @@
 name=Metathran Aerostat
-image=https://magiccards.info/scans/en/in/61.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59f34850-fb6f-4ac5-8309-4d53d770e28c.jpg?1562913282
 value=3.016
 rarity=R
 type=Creature

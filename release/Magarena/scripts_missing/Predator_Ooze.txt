@@ -1,5 +1,5 @@
 name=Predator Ooze
-image=https://magiccards.info/scans/en/dka/124.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c32fb53b-7fd7-46a2-b502-93a42cf23fa5.jpg?1591320984
 value=3.873
 rarity=R
 type=Creature

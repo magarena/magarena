@@ -1,5 +1,5 @@
 name=Merseine
-image=https://magiccards.info/scans/en/fe/49.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b1e96895-ef1d-44fa-b263-bce833fc3109.jpg?1562928106
 value=2.062
 rarity=C
 type=Enchantment

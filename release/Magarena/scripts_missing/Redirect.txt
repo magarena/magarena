@@ -1,5 +1,5 @@
 name=Redirect
-image=https://magiccards.info/scans/en/m13/64.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0eef8431-f63c-44e0-940c-e1a38c338214.jpg?1562550343
 value=4.043
 rarity=R
 type=Instant

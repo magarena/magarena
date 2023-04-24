@@ -1,5 +1,5 @@
 name=Bloodlord of Vaasgoth
-image=https://magiccards.info/scans/en/c17/102.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/510c65ea-7c9f-461f-b038-ef119db1ca30.jpg?1641602372
 image_updated=2017-10-03
 value=3.950
 rarity=M

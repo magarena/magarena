@@ -1,5 +1,5 @@
 name=Torrent of Lava
-image=https://magiccards.info/scans/en/mr/199.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19528a24-4968-4742-a2d1-06f94e60f290.jpg?1562718298
 value=3.306
 rarity=R
 type=Sorcery

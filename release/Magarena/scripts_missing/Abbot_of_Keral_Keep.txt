@@ -1,5 +1,5 @@
 name=Abbot of Keral Keep
-image=https://magiccards.info/scans/en/ori/127.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd94f624-9b35-4468-829f-106366f61c1a.jpg?1673147716
 image_updated=2015-11-05
 value=2.500
 rarity=R

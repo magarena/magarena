@@ -1,5 +1,5 @@
 name=School of the Unseen
-image=https://magiccards.info/scans/en/ai/186.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/1438606d-556d-4b96-9662-fcac051af045.jpg?1562768214
 value=2.094
 rarity=U
 type=Land

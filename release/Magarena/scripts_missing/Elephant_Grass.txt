@@ -1,5 +1,5 @@
 name=Elephant Grass
-image=https://magiccards.info/scans/en/vi/54.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4c1f5a7-0d28-43ab-9b66-937e963f42cd.jpg?1587912980
 value=4.048
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Shorecrasher Elemental
-image=https://magiccards.info/scans/en/dtk/73.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8890fc6-45e9-443d-ae86-f1acb1ebd0aa.jpg?1562794860
 value=2.500
 rarity=M
 type=Creature

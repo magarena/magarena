@@ -1,5 +1,5 @@
 name=Draconic Roar
-image=https://magiccards.info/scans/en/ima/123.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8a0ec06-7c48-4334-ac50-c249e7e91dbe.jpg?1601077491
 image_updated=2017-04-12
 value=2.500
 rarity=C

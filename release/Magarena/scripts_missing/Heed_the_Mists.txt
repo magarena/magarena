@@ -1,5 +1,5 @@
 name=Heed the Mists
-image=https://magiccards.info/scans/en/bok/36.jpg
+image=https://cards.scryfall.io/border_crop/front/e/b/eb953ffc-0e73-42a2-a026-e6d3041fd8ec.jpg?1562880537
 value=2.586
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Kitsune Mystic
-image=https://magiccards.info/scans/en/chk/28a.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2ddf1a3-e6fa-4dd0-b80d-1a585b51b934.jpg?1562765664
 value=3.700
 rarity=R
 type=Creature

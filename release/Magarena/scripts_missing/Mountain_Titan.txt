@@ -1,5 +1,5 @@
 name=Mountain Titan
-image=https://magiccards.info/scans/en/ia/377.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bcc1d589-02a2-4896-a283-9d0385534667.jpg?1587912119
 value=2.125
 rarity=R
 type=Creature

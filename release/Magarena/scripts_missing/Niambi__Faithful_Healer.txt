@@ -1,5 +1,5 @@
 name=Niambi, Faithful Healer
-image=https://magiccards.info/scans/en/dom/272.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c638677c-2b92-4d0c-b61c-598b5a843844.jpg?1562742611
 value=2.500
 rarity=R
 type=Legendary,Creature

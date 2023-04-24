@@ -1,5 +1,5 @@
 name=Time to Reflect
-image=https://magiccards.info/scans/en/akh/33.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b60ec4f7-7cf1-4b97-906b-536ab89b12be.jpg?1543674816
 value=2.500
 rarity=U
 type=Instant

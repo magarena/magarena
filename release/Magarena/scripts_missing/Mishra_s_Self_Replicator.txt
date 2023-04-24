@@ -1,5 +1,5 @@
 name=Mishra's Self-Replicator
-image=https://magiccards.info/scans/en/dom/223.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6f342b2-1ba6-4b72-9f03-bc076c795b3d.jpg?1562744634
 value=2.500
 rarity=R
 type=Artifact,Creature

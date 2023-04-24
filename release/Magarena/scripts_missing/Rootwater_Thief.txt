@@ -1,5 +1,5 @@
 name=Rootwater Thief
-image=https://magiccards.info/scans/en/ne/40.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/38addef3-1dd7-41a1-9706-3be5c86a58c9.jpg?1562629419
 value=4.396
 rarity=R
 type=Creature

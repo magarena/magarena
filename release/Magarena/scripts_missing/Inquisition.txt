@@ -1,5 +1,5 @@
 name=Inquisition
-image=https://magiccards.info/scans/en/dk/9.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f133f06-6398-4db1-8577-66c16fd3e00d.jpg?1562917401
 value=2.603
 rarity=C
 type=Sorcery

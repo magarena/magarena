@@ -1,5 +1,5 @@
 name=Teferi's Response
-image=https://magiccards.info/scans/en/in/78.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3bb2df8-c559-4a34-83b0-d48fbc694cc8.jpg?1562944007
 value=4.154
 rarity=R
 type=Instant

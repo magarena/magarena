@@ -1,5 +1,5 @@
 name=Chill Haunting
-image=https://magiccards.info/scans/en/sc/60.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91035d03-2bf8-4e6b-945b-4dfbed0873ec.jpg?1562532116
 value=1.683
 rarity=U
 type=Instant

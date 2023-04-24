@@ -1,5 +1,5 @@
 name=Guerrilla Tactics
-image=https://magiccards.info/scans/en/10e/211.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9bf3bac0-6e63-4bd3-bbd6-547f46c2d126.jpg?1562552299
 value=3.670
 rarity=U
 type=Instant

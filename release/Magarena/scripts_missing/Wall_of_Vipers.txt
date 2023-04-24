@@ -1,5 +1,5 @@
 name=Wall of Vipers
-image=https://magiccards.info/scans/en/pr/80.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00042443-4d4e-4087-b4e5-5e781e7cc5fa.jpg?1562894988
 value=2.833
 rarity=U
 type=Creature

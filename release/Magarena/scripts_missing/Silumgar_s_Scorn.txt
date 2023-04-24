@@ -1,5 +1,5 @@
 name=Silumgar's Scorn
-image=https://magiccards.info/scans/en/dtk/78.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/077bee72-62f6-4d90-8557-ff9cac42ec9a.jpg?1562782102
 value=2.500
 rarity=U
 type=Instant

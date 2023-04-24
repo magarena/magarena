@@ -1,5 +1,5 @@
 name=Damping Engine
-image=https://magiccards.info/scans/en/ul/124.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87841977-75ff-49c3-b832-3f0cf48b50b2.jpg?1562863295
 value=3.750
 rarity=R
 type=Artifact

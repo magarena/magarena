@@ -1,5 +1,5 @@
 name=Fungus Elemental
-image=https://magiccards.info/scans/en/wl/70.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/4336bfd1-27a4-414d-b6fe-f186a0563dc0.jpg?1562800505
 value=2.869
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Gruul Nodorog
-image=https://magiccards.info/scans/en/gp/88.jpg
+image=https://cards.scryfall.io/border_crop/front/9/8/9855ce83-ae26-4b1d-ab7f-637cde09d679.jpg?1593272463
 value=1.600
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Final Parting
-image=https://magiccards.info/scans/en/dom/93.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de8803f6-9efa-4323-b8c5-29bdd5a48f9a.jpg?1562744124
 value=2.500
 rarity=U
 type=Sorcery

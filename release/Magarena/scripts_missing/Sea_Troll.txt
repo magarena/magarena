@@ -1,5 +1,5 @@
 name=Sea Troll
-image=https://magiccards.info/scans/en/hl/49.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b7da23d4-f9fb-40a5-8395-51b47a064600.jpg?1562588231
 value=1.200
 rarity=U
 type=Creature

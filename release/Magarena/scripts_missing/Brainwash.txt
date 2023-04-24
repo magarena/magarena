@@ -1,5 +1,5 @@
 name=Brainwash
-image=https://magiccards.info/scans/en/5e/289.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0afcbd6d-2b83-4393-9fc8-fe91f86117fe.jpg?1562589199
 value=2.796
 rarity=C
 type=Enchantment

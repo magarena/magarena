@@ -1,5 +1,5 @@
 name=Spellwild Ouphe
-image=https://magiccards.info/scans/en/fut/151.jpg
+image=https://cards.scryfall.io/border_crop/front/2/3/231eb017-2945-4915-8032-c09894e88d49.jpg?1562902029
 value=3.151
 rarity=U
 type=Creature

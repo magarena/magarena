@@ -1,5 +1,5 @@
 name=Rampaging Ferocidon
-image=https://magiccards.info/scans/en/xln/154.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39d3c658-1927-4af3-9077-88c4a669c730.jpg?1566819584
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Mudslide
-image=https://magiccards.info/scans/en/ia/204.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/01199046-ea98-4249-85a2-6258195c2be5.jpg?1562867377
 value=3.339
 rarity=R
 type=Enchantment

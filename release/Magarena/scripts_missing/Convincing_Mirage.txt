@@ -1,5 +1,5 @@
 name=Convincing Mirage
-image=https://magiccards.info/scans/en/m10/46.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb757102-4636-46ae-b202-c2095aeb187c.jpg?1562002497
 value=3.010
 rarity=C
 type=Enchantment

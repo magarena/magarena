@@ -1,5 +1,5 @@
 name=War Tax
-image=https://magiccards.info/scans/en/mm/113.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7c15159-8466-43e5-9dc5-a8cc94619931.jpg?1562383524
 value=4.097
 rarity=U
 type=Enchantment

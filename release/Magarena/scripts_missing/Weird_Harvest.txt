@@ -1,5 +1,5 @@
 name=Weird Harvest
-image=https://magiccards.info/scans/en/9e/282.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/89bd2c25-049a-4df2-bf8f-198d1b41b01e.jpg?1562738188
 value=3.741
 rarity=R
 type=Sorcery

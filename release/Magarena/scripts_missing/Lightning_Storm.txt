@@ -1,5 +1,5 @@
 name=Lightning Storm
-image=https://magiccards.info/scans/en/cs/89.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9c0388e-a04c-4757-a06d-8e8046f5a783.jpg?1593275279
 value=3.604
 rarity=U
 type=Instant

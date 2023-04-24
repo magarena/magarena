@@ -1,5 +1,5 @@
 name=Extinction
-image=https://magiccards.info/scans/en/tp/29.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a233a244-7f84-4525-b0ce-e10db0a95385.jpg?1562055894
 value=4.287
 rarity=R
 type=Sorcery

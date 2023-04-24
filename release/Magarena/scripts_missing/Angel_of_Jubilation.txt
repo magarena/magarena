@@ -1,5 +1,5 @@
 name=Angel of Jubilation
-image=https://magiccards.info/scans/en/avr/2.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/16c5dfed-4dee-4e48-a445-89f03d7794e6.jpg?1592708174
 value=3.876
 rarity=R
 type=Creature

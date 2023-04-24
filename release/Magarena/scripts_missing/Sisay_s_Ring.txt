@@ -1,5 +1,5 @@
 name=Sisay's Ring
-image=https://magiccards.info/scans/en/7e/315.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20c0e608-0208-408a-b473-1e54caa96cea.jpg?1608911699
 value=2.793
 rarity=U
 type=Artifact

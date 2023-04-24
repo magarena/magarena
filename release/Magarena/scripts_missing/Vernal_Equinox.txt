@@ -1,5 +1,5 @@
 name=Vernal Equinox
-image=https://magiccards.info/scans/en/mm/283.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3bed69d2-f5fb-4173-b939-5abdb48b82b4.jpg?1562379940
 value=3.130
 rarity=R
 type=Enchantment

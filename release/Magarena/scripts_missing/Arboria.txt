@@ -1,5 +1,5 @@
 name=Arboria
-image=https://magiccards.info/scans/en/lg/88.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b025952-ba7a-46c7-a597-e716f2475c5c.jpg?1562924378
 value=4.061
 rarity=R
 type=World,Enchantment

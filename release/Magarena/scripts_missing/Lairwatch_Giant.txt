@@ -1,5 +1,5 @@
 name=Lairwatch Giant
-image=https://magiccards.info/scans/en/lw/29.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c64ba1c8-b93a-4169-9ba0-d3fc5bf57676.jpg?1562367051
 value=3.088
 rarity=C
 type=Creature

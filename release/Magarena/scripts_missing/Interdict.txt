@@ -1,5 +1,5 @@
 name=Interdict
-image=https://magiccards.info/scans/en/tp/69.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/3442c919-73b9-4d29-a014-87293f456325.jpg?1562053290
 value=3.732
 rarity=U
 type=Instant

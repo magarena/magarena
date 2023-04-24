@@ -1,5 +1,5 @@
 name=Ajani Steadfast
-image=https://magiccards.info/scans/en/m15/1.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f9302ba8-7ff2-4eaa-a32d-eedd94f0bb79.jpg?1562797301
 value=3.950
 rarity=M
 type=Legendary,Planeswalker

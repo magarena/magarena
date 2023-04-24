@@ -1,5 +1,5 @@
 name=Reyhan, Last of the Abzan
-image=https://magiccards.info/scans/en/c16/40.jpg
+image=https://cards.scryfall.io/border_crop/front/8/a/8afad106-a49b-4910-959e-228c109ea983.jpg?1644853038
 image_updated=2016-12-28
 value=2.500
 rarity=R

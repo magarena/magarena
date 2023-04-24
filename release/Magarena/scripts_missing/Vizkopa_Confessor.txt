@@ -1,5 +1,5 @@
 name=Vizkopa Confessor
-image=https://magiccards.info/scans/en/gtc/205.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cac639b9-6c20-45ac-a61f-082bdcebdb83.jpg?1561846133
 value=2.447
 rarity=U
 type=Creature

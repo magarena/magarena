@@ -1,5 +1,5 @@
 name=Sky Terror
-image=https://magiccards.info/scans/en/xln/229.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/167ed739-2953-47af-841f-bc1a092b3aa6.jpg?1562551197
 value=2.500
 rarity=U
 type=Creature

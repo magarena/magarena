@@ -1,5 +1,5 @@
 name=Chandra's Phoenix
-image=https://magiccards.info/scans/en/m12/126.jpg
+image=https://cards.scryfall.io/border_crop/front/1/a/1a91cd9b-9a5d-4251-bd6c-41c3ebd6d991.jpg?1592765637
 value=3.709
 rarity=R
 type=Creature

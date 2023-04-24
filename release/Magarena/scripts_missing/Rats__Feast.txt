@@ -1,5 +1,5 @@
 name=Rats' Feast
-image=https://magiccards.info/scans/en/ju/71.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b243ce02-4fff-444c-acc4-e1a199621a53.jpg?1595095831
 value=2.057
 rarity=C
 type=Sorcery

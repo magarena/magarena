@@ -1,5 +1,5 @@
 name=Seeds of Strength
-image=https://magiccards.info/scans/en/rav/227.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bfa1ac13-adbd-439a-90b2-9c506aec0836.jpg?1598917401
 value=3.035
 rarity=C
 type=Instant

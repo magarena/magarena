@@ -1,5 +1,5 @@
 name=Austere Command
-image=https://magiccards.info/scans/en/ima/10.jpg
+image=https://cards.scryfall.io/border_crop/front/b/c/bce78225-9dbf-46c1-b63d-083c1858eb98.jpg?1682208296
 image_updated=2017-04-12
 value=4.006
 rarity=R

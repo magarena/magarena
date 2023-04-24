@@ -1,5 +1,5 @@
 name=Exiled Doomsayer
-image=https://magiccards.info/scans/en/sc/13.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74aaf095-143a-43fc-a858-b1e82a4b906e.jpg?1562530656
 value=1.839
 rarity=R
 type=Creature

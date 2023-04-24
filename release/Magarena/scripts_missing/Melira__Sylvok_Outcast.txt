@@ -1,5 +1,5 @@
 name=Melira, Sylvok Outcast
-image=https://magiccards.info/scans/en/nph/115.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e83851a1-e4e8-49ec-af5c-4efe86fa51ad.jpg?1562882406
 value=4.018
 rarity=R
 type=Legendary,Creature

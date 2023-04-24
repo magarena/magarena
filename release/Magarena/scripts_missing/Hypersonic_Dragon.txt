@@ -1,5 +1,5 @@
 name=Hypersonic Dragon
-image=https://magiccards.info/scans/en/ima/201.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99dc07bf-7c55-442b-9260-5ea74a42af41.jpg?1562851998
 image_updated=2017-04-12
 value=3.938
 rarity=R

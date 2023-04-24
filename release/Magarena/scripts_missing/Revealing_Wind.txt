@@ -1,5 +1,5 @@
 name=Revealing Wind
-image=https://magiccards.info/scans/en/dtk/197.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36bdd624-e412-4ec8-9929-e1f6b4720e82.jpg?1562784679
 value=2.500
 rarity=C
 type=Instant

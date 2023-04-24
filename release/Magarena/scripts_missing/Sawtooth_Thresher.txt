@@ -1,5 +1,5 @@
 name=Sawtooth Thresher
-image=https://magiccards.info/scans/en/5dn/149.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c36de4a-807d-471d-ba59-0462d7bb028a.jpg?1562876418
 value=2.640
 rarity=C
 type=Artifact,Creature

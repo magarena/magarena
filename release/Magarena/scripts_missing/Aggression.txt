@@ -1,5 +1,5 @@
 name=Aggression
-image=https://magiccards.info/scans/en/ia/169.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3f26060-0c24-496c-b8e2-4dac7ea6166b.jpg?1562940829
 value=2.961
 rarity=U
 type=Enchantment

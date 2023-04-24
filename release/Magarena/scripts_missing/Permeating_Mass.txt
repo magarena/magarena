@@ -1,5 +1,5 @@
 name=Permeating Mass
-image=https://magiccards.info/scans/en/emn/165.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b71290eb-b529-4fc3-ab94-fee0ab9e2169.jpg?1576384837
 image_updated=2016-09-05
 value=2.500
 rarity=R

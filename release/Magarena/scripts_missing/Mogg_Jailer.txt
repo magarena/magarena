@@ -1,5 +1,5 @@
 name=Mogg Jailer
-image=https://magiccards.info/scans/en/ps/68.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52513235-0e6c-40ea-8ead-a050e6da676e.jpg?1595076297
 value=2.640
 rarity=U
 type=Creature

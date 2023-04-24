@@ -1,5 +1,5 @@
 name=Callous Deceiver
-image=https://magiccards.info/scans/en/chk/53.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/628d3058-d32e-438c-9a86-3e9c2be73c4a.jpg?1562760615
 value=1.265
 rarity=C
 type=Creature

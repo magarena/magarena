@@ -1,5 +1,5 @@
 name=Talon of Pain
-image=https://magiccards.info/scans/en/ds/150.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb4ab5e0-5f6b-422d-8ba7-9e0ce1450af8.jpg?1562639590
 value=3.986
 rarity=U
 type=Artifact

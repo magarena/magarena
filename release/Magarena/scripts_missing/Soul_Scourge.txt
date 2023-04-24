@@ -1,5 +1,5 @@
 name=Soul Scourge
-image=https://magiccards.info/scans/en/tr/85.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4aa7d91b-cfbb-4da0-97fa-3c0a15f1dbb9.jpg?1562629621
 value=2.257
 rarity=C
 type=Creature

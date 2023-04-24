@@ -1,5 +1,5 @@
 name=Tajuru Preserver
-image=https://magiccards.info/scans/en/roe/211.jpg
+image=https://cards.scryfall.io/border_crop/front/c/8/c8d03346-0802-4058-b89e-1b6076963c8e.jpg?1562708549
 value=4.383
 rarity=R
 type=Creature

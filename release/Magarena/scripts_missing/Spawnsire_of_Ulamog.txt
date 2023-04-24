@@ -1,5 +1,5 @@
 name=Spawnsire of Ulamog
-image=https://magiccards.info/scans/en/roe/11.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1562706825
 value=4.113
 rarity=R
 type=Creature

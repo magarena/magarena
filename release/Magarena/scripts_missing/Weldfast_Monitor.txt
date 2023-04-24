@@ -1,5 +1,5 @@
 name=Weldfast Monitor
-image=https://magiccards.info/scans/en/kld/238.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75720c1b-8b04-4e45-ab47-018c04576e83.jpg?1576383453
 image_updated=2016-10-05
 value=2.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Animal Magnetism
-image=https://magiccards.info/scans/en/on/245.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c33db646-b30d-4a15-9f8a-63bda74e2d81.jpg?1562941108
 value=2.160
 rarity=R
 type=Sorcery

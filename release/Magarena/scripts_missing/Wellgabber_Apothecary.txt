@@ -1,5 +1,5 @@
 name=Wellgabber Apothecary
-image=https://magiccards.info/scans/en/lw/47.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/129933ba-60a0-4764-a705-28fa7bb10bd3.jpg?1562338707
 value=2.000
 rarity=C
 type=Creature

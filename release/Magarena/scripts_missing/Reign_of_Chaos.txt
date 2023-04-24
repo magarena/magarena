@@ -1,5 +1,5 @@
 name=Reign of Chaos
-image=https://magiccards.info/scans/en/mr/190.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/9285b14a-fc8e-457a-b803-202e05be41e5.jpg?1562720487
 value=3.636
 rarity=U
 type=Sorcery

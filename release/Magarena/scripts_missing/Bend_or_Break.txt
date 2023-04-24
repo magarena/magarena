@@ -1,5 +1,5 @@
 name=Bend or Break
-image=https://magiccards.info/scans/en/in/137.jpg
+image=https://cards.scryfall.io/border_crop/front/b/7/b76b6660-d4b2-44de-a1a7-8d00811f90f6.jpg?1562931926
 value=4.027
 rarity=R
 type=Sorcery

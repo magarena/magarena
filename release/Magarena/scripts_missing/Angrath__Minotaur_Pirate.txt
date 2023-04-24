@@ -1,5 +1,5 @@
 name=Angrath, Minotaur Pirate
-image=https://magiccards.info/scans/en/rix/201.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f17103dd-f31b-4f6e-b2ea-4ea91815bdd6.jpg?1555041190
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

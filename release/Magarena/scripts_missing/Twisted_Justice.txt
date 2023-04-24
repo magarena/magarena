@@ -1,5 +1,5 @@
 name=Twisted Justice
-image=https://magiccards.info/scans/en/rav/237.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d8efa02d-c301-47e1-8cdf-26ff9e97a243.jpg?1598917592
 value=3.343
 rarity=U
 type=Sorcery

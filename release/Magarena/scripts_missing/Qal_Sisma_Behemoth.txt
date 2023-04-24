@@ -1,5 +1,5 @@
 name=Qal Sisma Behemoth
-image=https://magiccards.info/scans/en/dtk/149.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea70e96a-bebd-4ca4-aa24-e5fd0df38b8a.jpg?1562795011
 value=3.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Alley Strangler
-image=https://magiccards.info/scans/en/aer/52.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a131d558-5f6b-448b-a378-1882e2d02bd2.jpg?1576381609
 value=2.500
 rarity=C
 type=Creature

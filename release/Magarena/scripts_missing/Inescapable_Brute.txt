@@ -1,5 +1,5 @@
 name=Inescapable Brute
-image=https://magiccards.info/scans/en/shm/95.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab4a1d42-eaf8-424a-9649-5f3b4602bf0d.jpg?1562834457
 value=2.483
 rarity=C
 type=Creature

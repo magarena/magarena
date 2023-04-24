@@ -1,5 +1,5 @@
 name=Roar of Jukai
-image=https://magiccards.info/scans/en/bok/140.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66b70649-12f8-47b9-9959-40323684a777.jpg?1562877542
 value=2.097
 rarity=C
 type=Instant

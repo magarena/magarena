@@ -1,5 +1,5 @@
 name=Dwarven Sea Clan
-image=https://magiccards.info/scans/en/hl/90.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4cb722d9-1998-4912-a6f2-4ffa8d21311a.jpg?1562587274
 value=1.343
 rarity=R
 type=Creature

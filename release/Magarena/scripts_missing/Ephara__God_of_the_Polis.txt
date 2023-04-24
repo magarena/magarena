@@ -1,5 +1,5 @@
 name=Ephara, God of the Polis
-image=https://magiccards.info/scans/en/bng/145.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/6832e495-7ee9-43e0-94ea-03c88344080e.jpg?1593092720
 value=3.595
 rarity=M
 type=Legendary,Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Spellbane Centaur
-image=https://magiccards.info/scans/en/od/271.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72194a6e-481d-4b07-922b-53f919bfa316.jpg?1562916168
 value=4.000
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Barricade Breaker
-image=https://magiccards.info/scans/en/aer/144.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cc81a94-955d-4734-b056-9b9a86cae60b.jpg?1576382207
 value=2.500
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Hazezon Tamar
-image=https://magiccards.info/scans/en/lg/270.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4cd43773-2a6f-4f03-bcee-de32049561e5.jpg?1562911124
 value=4.014
 rarity=R
 type=Legendary,Creature

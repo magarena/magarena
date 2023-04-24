@@ -1,5 +1,5 @@
 name=Daghatar the Adamant
-image=https://magiccards.info/scans/en/frf/9.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b7eed1e-7b28-4900-a6ac-67f167476c11.jpg?1562823671
 value=2.500
 rarity=R
 type=Legendary,Creature

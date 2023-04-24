@@ -1,5 +1,5 @@
 name=Heretic's Punishment
-image=https://magiccards.info/scans/en/isd/147.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2c9e963-bb0c-4490-8238-9476b924abf7.jpg?1562837592
 value=2.955
 rarity=R
 type=Enchantment

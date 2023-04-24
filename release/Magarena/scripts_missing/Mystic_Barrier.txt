@@ -1,5 +1,5 @@
 name=Mystic Barrier
-image=https://magiccards.info/scans/en/c13/18.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ffb70bd4-e876-4242-b5b4-bb7493710f0f.jpg?1562949148
 value=3.615
 rarity=R
 type=Enchantment

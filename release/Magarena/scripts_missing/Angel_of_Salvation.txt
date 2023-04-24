@@ -1,5 +1,5 @@
 name=Angel of Salvation
-image=https://magiccards.info/scans/en/ddf/20.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e71046b-1284-4d7f-93dd-a632c74d9cca.jpg?1682208278
 value=3.375
 rarity=R
 type=Creature

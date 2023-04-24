@@ -1,5 +1,5 @@
 name=Curse of Chaos
-image=https://magiccards.info/scans/en/c13/105.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fd95b9aa-1abb-4a10-a622-51a2bb578d17.jpg?1562948723
 value=3.118
 rarity=U
 type=Enchantment

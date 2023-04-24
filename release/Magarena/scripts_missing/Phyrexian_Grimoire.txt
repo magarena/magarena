@@ -1,5 +1,5 @@
 name=Phyrexian Grimoire
-image=https://magiccards.info/scans/en/tp/291.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fcf5b8a-563b-48d7-a874-e9c226192320.jpg?1562053278
 value=2.672
 rarity=R
 type=Artifact

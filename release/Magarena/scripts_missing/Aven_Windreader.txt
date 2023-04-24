@@ -1,5 +1,5 @@
 name=Aven Windreader
-image=https://magiccards.info/scans/en/10e/69.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3a67d7ae-3117-433f-ad82-44a4f015fecf.jpg?1562546342
 value=2.221
 rarity=C
 type=Creature

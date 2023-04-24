@@ -1,5 +1,5 @@
 name=Omen Machine
-image=https://magiccards.info/scans/en/nph/148.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0ff4e35f-2a82-4d3c-86c5-ae05a5abc4d7.jpg?1562875579
 value=3.082
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Lavaball Trap
-image=https://magiccards.info/scans/en/zen/135.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0d411e1-5488-4818-95a4-9f637efb9be6.jpg?1562616217
 value=3.198
 rarity=R
 type=Instant

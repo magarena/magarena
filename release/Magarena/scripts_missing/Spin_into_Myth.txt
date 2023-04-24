@@ -1,5 +1,5 @@
 name=Spin into Myth
-image=https://magiccards.info/scans/en/fut/60.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8997e542-bcce-4fd3-af78-4b520b64c026.jpg?1562924095
 image_updated=2016-01-09
 value=3.667
 rarity=U

@@ -1,5 +1,5 @@
 name=Mairsil, the Pretender
-image=https://magiccards.info/scans/en/c17/41.jpg
+image=https://cards.scryfall.io/border_crop/front/8/7/87b71b08-668c-4b32-8243-8def1a9acf26.jpg?1562615456
 image_updated=2017-10-03
 value=2.500
 rarity=M

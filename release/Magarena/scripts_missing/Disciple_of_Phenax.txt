@@ -1,5 +1,5 @@
 name=Disciple of Phenax
-image=https://magiccards.info/scans/en/ths/84.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/81c1137c-1cbd-4918-9d1c-a9d2bd88562e.jpg?1562820646
 value=2.868
 rarity=C
 type=Creature

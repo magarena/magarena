@@ -1,5 +1,5 @@
 name=Funeral Pyre
-image=https://magiccards.info/scans/en/ju/10.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d8542f6-ee34-42c6-acd5-07b0c7cc2f63.jpg?1562629789
 value=2.220
 rarity=C
 type=Instant

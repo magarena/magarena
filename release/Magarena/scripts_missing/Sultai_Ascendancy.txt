@@ -1,5 +1,5 @@
 name=Sultai Ascendancy
-image=https://magiccards.info/scans/en/ktk/203.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/3314d77a-039f-43e4-a457-6ceba20c0ffe.jpg?1665819808
 value=3.000
 rarity=R
 type=Enchantment

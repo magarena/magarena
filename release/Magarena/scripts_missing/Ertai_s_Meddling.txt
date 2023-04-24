@@ -1,5 +1,5 @@
 name=Ertai's Meddling
-image=https://magiccards.info/scans/en/tp/61.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/35c7e7fa-1493-4ef8-9cdb-b02b07a1ad85.jpg?1562053736
 value=4.410
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Deflection
-image=https://magiccards.info/scans/en/8e/74.jpg
+image=https://cards.scryfall.io/border_crop/front/2/1/217c899e-f624-4791-af64-b1b1e2ac53cd.jpg?1562901682
 value=3.367
 rarity=R
 type=Instant

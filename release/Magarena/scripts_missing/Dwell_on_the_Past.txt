@@ -1,5 +1,5 @@
 name=Dwell on the Past
-image=https://magiccards.info/scans/en/tr/124.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/77ac905a-839b-4fb5-8c17-7fd6c2c0c492.jpg?1562630446
 value=3.183
 rarity=U
 type=Sorcery

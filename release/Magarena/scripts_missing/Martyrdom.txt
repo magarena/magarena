@@ -1,5 +1,5 @@
 name=Martyrdom
-image=https://magiccards.info/scans/en/ai/139.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6ab5775a-7138-4526-83fe-350127695224.jpg?1562769178
 value=3.706
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Gorilla War Cry
-image=https://magiccards.info/scans/en/ai/108.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f738b12-8664-4f27-a006-c4574a71885a.jpg?1562925045
 value=3.450
 rarity=C
 type=Instant

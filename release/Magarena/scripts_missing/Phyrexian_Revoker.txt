@@ -1,5 +1,5 @@
 name=Phyrexian Revoker
-image=https://magiccards.info/scans/en/m15/225.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5ef9f3b-d6f8-4795-ba96-2f92b8792360.jpg?1674142679
 value=4.333
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Songs of the Damned
-image=https://magiccards.info/scans/en/ia/48.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/9133b267-295d-4987-b1d6-f32a85b66081.jpg?1547517061
 value=4.448
 rarity=C
 type=Instant

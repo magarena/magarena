@@ -1,5 +1,5 @@
 name=Hour of Need
-image=https://magiccards.info/scans/en/jou/40.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/737b859d-d81e-4da3-a8bf-9a8f23c75a50.jpg?1593095453
 value=3.764
 rarity=U
 type=Instant

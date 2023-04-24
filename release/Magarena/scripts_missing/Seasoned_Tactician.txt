@@ -1,5 +1,5 @@
 name=Seasoned Tactician
-image=https://magiccards.info/scans/en/ai/150.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8be4b6b-23a2-42d2-911d-fa14f7f5a95b.jpg?1562770857
 value=1.986
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Phantasmagorian
-image=https://magiccards.info/scans/en/pc/77.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19bcd780-70a6-4c25-8611-8b750a50aa3d.jpg?1562566719
 value=2.781
 rarity=U
 type=Creature

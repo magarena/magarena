@@ -1,5 +1,5 @@
 name=Avid Reclaimer
-image=https://magiccards.info/scans/en/hou/201.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0468e488-94ce-4ae3-abe4-7782673a7e62.jpg?1562787748
 value=2.500
 rarity=U
 type=Creature

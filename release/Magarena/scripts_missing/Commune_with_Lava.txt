@@ -1,5 +1,5 @@
 name=Commune with Lava
-image=https://magiccards.info/scans/en/dtk/131.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/862771b6-8e82-45b7-922f-4f40322a607e.jpg?1631586995
 value=2.500
 rarity=R
 type=Instant

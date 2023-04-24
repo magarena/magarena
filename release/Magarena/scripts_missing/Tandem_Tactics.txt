@@ -1,5 +1,5 @@
 name=Tandem Tactics
-image=https://magiccards.info/scans/en/bfz/52.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7acd58e4-7dc7-4ca0-8750-2558ff97b5da.jpg?1600697393
 image_updated=2015-11-08
 value=2.500
 rarity=C

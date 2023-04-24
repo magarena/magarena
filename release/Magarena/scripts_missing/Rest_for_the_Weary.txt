@@ -1,5 +1,5 @@
 name=Rest for the Weary
-image=https://magiccards.info/scans/en/wwk/18.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75eb8537-42c9-41d5-be0a-1186bc8dee0b.jpg?1562289946
 value=3.636
 rarity=C
 type=Instant

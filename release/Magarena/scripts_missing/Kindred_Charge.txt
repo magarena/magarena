@@ -1,5 +1,5 @@
 name=Kindred Charge
-image=https://magiccards.info/scans/en/c17/27.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e7dc7f0-ba05-4a13-b8e0-7f536fbf0f34.jpg?1562605798
 image_updated=2017-10-03
 value=2.500
 rarity=R

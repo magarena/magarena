@@ -1,5 +1,5 @@
 name=Urza's Ruinous Blast
-image=https://magiccards.info/scans/en/dom/39.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b918993f-2a6c-490d-b639-224f15303630.jpg?1673305130
 value=2.500
 rarity=R
 type=Legendary,Sorcery

@@ -1,5 +1,5 @@
 name=Curse of Death's Hold
-image=https://magiccards.info/scans/en/isd/94.jpg
+image=https://cards.scryfall.io/border_crop/front/1/7/1774d0a8-1cd3-4582-ace0-1caff92af0e7.jpg?1562826771
 value=3.827
 rarity=R
 type=Enchantment

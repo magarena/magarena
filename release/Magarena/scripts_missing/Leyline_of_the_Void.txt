@@ -1,5 +1,5 @@
 name=Leyline of the Void
-image=https://magiccards.info/scans/en/m11/101.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04d5d429-e0c6-42cc-a477-da7dabb1c295.jpg?1592516724
 value=4.445
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Darkwater Catacombs
-image=https://magiccards.info/scans/en/c16/289.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43dbc012-8b38-4089-947a-c309d02ad1b1.jpg?1674142865
 image_updated=2017-08-17
 value=3.982
 rarity=R

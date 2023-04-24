@@ -1,5 +1,5 @@
 name=Primal Command
-image=https://magiccards.info/scans/en/mm3/132.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/92144021-7425-44e1-a32b-13252f1b7036.jpg?1593813861
 image_updated=2017-08-08
 value=4.133
 rarity=R

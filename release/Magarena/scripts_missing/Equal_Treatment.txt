@@ -1,5 +1,5 @@
 name=Equal Treatment
-image=https://magiccards.info/scans/en/tr/4.jpg
+image=https://cards.scryfall.io/border_crop/front/3/1/310cb525-9299-471e-b310-392353b25472.jpg?1574250397
 value=3.667
 rarity=U
 type=Instant

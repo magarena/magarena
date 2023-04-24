@@ -1,5 +1,5 @@
 name=Sealed Fate
-image=https://magiccards.info/scans/en/mr/342.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36cf9da8-f078-4f6e-8077-bb24a7ed487f.jpg?1562718780
 value=3.312
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Sulfuric Vapors
-image=https://magiccards.info/scans/en/us/220.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e133997f-1620-4fe9-8275-057edc998fba.jpg?1562942481
 value=3.500
 rarity=R
 type=Enchantment

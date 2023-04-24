@@ -1,5 +1,5 @@
 name=Circle of Solace
-image=https://magiccards.info/scans/en/on/13.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07f567dc-8a60-40e1-b947-199872d8df08.jpg?1562896849
 value=2.938
 rarity=R
 type=Enchantment

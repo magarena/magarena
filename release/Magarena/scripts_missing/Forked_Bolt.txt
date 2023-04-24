@@ -1,5 +1,5 @@
 name=Forked Bolt
-image=https://magiccards.info/scans/en/roe/146.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/364ed745-0dff-477a-a2c5-987639936337.jpg?1593095847
 value=3.984
 rarity=U
 type=Sorcery

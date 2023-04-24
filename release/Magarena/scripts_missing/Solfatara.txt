@@ -1,5 +1,5 @@
 name=Solfatara
-image=https://magiccards.info/scans/en/vi/93.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c5d4bd6f-b019-4594-aa41-138fa58ba529.jpg?1587913286
 value=3.153
 rarity=C
 type=Instant

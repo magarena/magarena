@@ -1,5 +1,5 @@
 name=Wild Swing
-image=https://magiccards.info/scans/en/shm/108.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/320ade77-30be-4930-80ca-86028c010b1b.jpg?1562828520
 value=2.513
 rarity=U
 type=Sorcery

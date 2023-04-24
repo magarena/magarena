@@ -1,5 +1,5 @@
 name=Knight of Malice
-image=https://magiccards.info/scans/en/dom/97.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b45266f0-eb4f-4a06-bc64-8c2d774b4cc5.jpg?1562741546
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblin Glory Chaser
-image=https://magiccards.info/scans/en/ori/150.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07679f88-4bbe-46e1-9b24-3b9f5670860f.jpg?1592764805
 image_updated=2015-11-05
 value=2.500
 rarity=U

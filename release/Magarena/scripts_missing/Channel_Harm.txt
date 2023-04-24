@@ -1,5 +1,5 @@
 name=Channel Harm
-image=https://magiccards.info/scans/en/frf/7.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/8801465e-295f-4b6b-a321-120f1b1edd0b.jpg?1562827336
 value=2.500
 rarity=U
 type=Instant

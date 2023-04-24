@@ -1,5 +1,5 @@
 name=Resounding Silence
-image=https://magiccards.info/scans/en/ala/22.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b3b0908-5408-41fd-8e69-2bc785e19304.jpg?1562704325
 value=2.452
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Stronghold Gambit
-image=https://magiccards.info/scans/en/ne/100.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d18050e-9aad-471e-a6ae-66e5fa2bbb6f.jpg?1562628634
 value=3.750
 rarity=R
 type=Sorcery

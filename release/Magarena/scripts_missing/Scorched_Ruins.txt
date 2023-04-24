@@ -1,5 +1,5 @@
 name=Scorched Ruins
-image=https://magiccards.info/scans/en/wl/166.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75a4e843-937c-47fb-8768-0f42c5cb4e4f.jpg?1562801558
 value=4.333
 rarity=R
 type=Land

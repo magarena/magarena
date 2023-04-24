@@ -1,5 +1,5 @@
 name=Urza's Power Plant
-image=https://magiccards.info/scans/en/9e/328.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54445d1f-5426-47e9-9e02-0274cea7174f.jpg?1599710725
 value=4.485
 rarity=U
 type=Land

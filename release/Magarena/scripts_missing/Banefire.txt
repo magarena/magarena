@@ -1,5 +1,5 @@
 name=Banefire
-image=https://magiccards.info/scans/en/m19/130.jpg
+image=https://cards.scryfall.io/border_crop/front/5/b/5b012532-1186-4dc8-9d42-867e418b0280.jpg?1562302226
 image_updated=2018-08-07
 value=2.500
 rarity=R

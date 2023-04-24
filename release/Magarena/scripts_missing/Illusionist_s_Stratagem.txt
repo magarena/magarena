@@ -1,5 +1,5 @@
 name=Illusionist's Stratagem
-image=https://magiccards.info/scans/en/aer/36.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7eede83-6f1b-4054-b01c-0da17b197bad.jpg?1576381501
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Eradicate
-image=https://magiccards.info/scans/en/bok/65.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02d6e0e5-798c-4791-85fe-24d0838df8f4.jpg?1562875181
 value=4.212
 rarity=U
 type=Sorcery

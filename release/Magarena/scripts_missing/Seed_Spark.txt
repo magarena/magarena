@@ -1,5 +1,5 @@
 name=Seed Spark
-image=https://magiccards.info/scans/en/rav/30.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33af31cf-d730-4f54-a0be-3229cdccf60c.jpg?1598913899
 value=3.206
 rarity=U
 type=Instant

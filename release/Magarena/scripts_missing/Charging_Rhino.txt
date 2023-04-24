@@ -1,5 +1,5 @@
 name=Charging Rhino
-image=https://magiccards.info/scans/en/m15/171.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f12724b4-3c73-4b16-b5f8-482dc3f56a3c.jpg?1562943446
 value=3.000
 rarity=C
 type=Creature

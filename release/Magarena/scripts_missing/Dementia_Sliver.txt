@@ -1,5 +1,5 @@
 name=Dementia Sliver
-image=https://magiccards.info/scans/en/ts/236.jpg
+image=https://cards.scryfall.io/border_crop/front/9/5/955028d2-33df-4295-8ee3-572e5979b04c.jpg?1562926570
 value=2.510
 rarity=U
 type=Creature

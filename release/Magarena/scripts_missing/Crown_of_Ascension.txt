@@ -1,5 +1,5 @@
 name=Crown of Ascension
-image=https://magiccards.info/scans/en/on/78.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fe86733-7851-4c2a-8d94-dba6f071b94d.jpg?1562906205
 value=2.614
 rarity=C
 type=Enchantment

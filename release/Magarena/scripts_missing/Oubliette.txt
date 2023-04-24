@@ -1,5 +1,5 @@
 name=Oubliette
-image=https://magiccards.info/scans/en/an/11.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4800a7d-c229-4ced-97ff-0e58645d58d6.jpg?1599705817
 value=3.941
 rarity=C
 type=Enchantment

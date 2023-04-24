@@ -1,5 +1,5 @@
 name=Quickchange
-image=https://magiccards.info/scans/en/rav/62.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f90c1a1-679d-45c5-a1d4-53dad05e45fa.jpg?1598914417
 value=2.069
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Fatespinner
-image=https://magiccards.info/scans/en/mi/36.jpg
+image=https://cards.scryfall.io/border_crop/front/5/7/5780f4e0-dcfb-4d1f-8ae1-762b98970abb.jpg?1562144468
 value=4.357
 rarity=R
 type=Creature

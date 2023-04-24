@@ -1,5 +1,5 @@
 name=Temur Charm
-image=https://magiccards.info/scans/en/ktk/208.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/009c5aac-194f-4b95-8f69-cc74aa15c3a5.jpg?1591321473
 value=3.500
 rarity=U
 type=Instant

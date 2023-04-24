@@ -1,5 +1,5 @@
 name=Karplusan Strider
-image=https://magiccards.info/scans/en/mm2/145.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5eef91c5-3861-40de-9bb7-67f44431428a.jpg?1562263031
 value=2.500
 rarity=U
 type=Creature

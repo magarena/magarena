@@ -1,5 +1,5 @@
 name=Barreling Attack
-image=https://magiccards.info/scans/en/mr/157.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3a2955e-e714-419e-9e3d-7ae3d7fae041.jpg?1562720958
 value=2.267
 rarity=R
 type=Instant

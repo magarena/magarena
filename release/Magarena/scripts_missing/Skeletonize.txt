@@ -1,5 +1,5 @@
 name=Skeletonize
-image=https://magiccards.info/scans/en/a25/149.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b47ce40e-23e3-47e7-a900-c77c12f122a5.jpg?1562440148
 image_updated=2018-04-25
 value=2.731
 rarity=C

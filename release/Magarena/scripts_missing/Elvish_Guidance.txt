@@ -1,5 +1,5 @@
 name=Elvish Guidance
-image=https://magiccards.info/scans/en/on/255.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/8698c46b-2628-4482-88f9-e37a01ade274.jpg?1562926724
 value=3.881
 rarity=C
 type=Enchantment

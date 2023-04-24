@@ -1,5 +1,5 @@
 name=Spelltwine
-image=https://magiccards.info/scans/en/c16/97.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab3332a9-cbed-4ebd-8aac-eb87325221fa.jpg?1562619741
 image_updated=2017-08-17
 value=3.778
 rarity=R

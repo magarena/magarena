@@ -1,5 +1,5 @@
 name=Sacred Boon
-image=https://magiccards.info/scans/en/5e/333.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8086253-5a66-4161-bdef-f460851368ed.jpg?1562870975
 value=3.167
 rarity=U
 type=Instant

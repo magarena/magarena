@@ -1,5 +1,5 @@
 name=General Jarkeld
-image=https://magiccards.info/scans/en/ia/251.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a4f5a28-0bd2-4cc4-b67f-324e89193caa.jpg?1562914700
 value=3.020
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Patient Rebuilding
-image=https://magiccards.info/scans/en/m19/67.jpg
+image=https://cards.scryfall.io/border_crop/front/2/2/2256e07f-a35a-4393-9744-045564d5770b.jpg?1562300801
 value=2.500
 rarity=R
 type=Enchantment

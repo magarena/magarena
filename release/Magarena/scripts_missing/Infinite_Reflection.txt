@@ -1,5 +1,5 @@
 name=Infinite Reflection
-image=https://magiccards.info/scans/en/c14/114.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb6c9287-7af5-4741-9555-c256b82c5b76.jpg?1561956610
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Dust Elemental
-image=https://magiccards.info/scans/en/pc/5.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/144e9391-f417-464b-8c04-c952193997c7.jpg?1562566245
 value=4.128
 rarity=R
 type=Creature

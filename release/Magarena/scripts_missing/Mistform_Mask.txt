@@ -1,5 +1,5 @@
 name=Mistform Mask
-image=https://magiccards.info/scans/en/on/94.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fbbb075-5795-425f-9e33-70cb922eea16.jpg?1562925133
 value=1.900
 rarity=C
 type=Enchantment

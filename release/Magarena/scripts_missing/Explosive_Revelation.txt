@@ -1,5 +1,5 @@
 name=Explosive Revelation
-image=https://magiccards.info/scans/en/roe/143.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7a38cd0-2cd3-436d-bb44-79778d5808ad.jpg?1562709141
 value=3.116
 rarity=U
 type=Sorcery

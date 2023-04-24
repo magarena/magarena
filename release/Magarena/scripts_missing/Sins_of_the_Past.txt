@@ -1,5 +1,5 @@
 name=Sins of the Past
-image=https://magiccards.info/scans/en/rav/106.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c518792-a50f-40b1-b6fb-674432093b6a.jpg?1598915195
 value=3.338
 rarity=R
 type=Sorcery

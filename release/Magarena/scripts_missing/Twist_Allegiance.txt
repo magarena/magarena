@@ -1,5 +1,5 @@
 name=Twist Allegiance
-image=https://magiccards.info/scans/en/bok/120.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24b6607c-0c34-4ffc-b1b7-154417492766.jpg?1562876044
 value=3.257
 rarity=R
 type=Sorcery

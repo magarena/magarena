@@ -1,5 +1,5 @@
 name=Talara's Battalion
-image=https://magiccards.info/scans/en/eve/77.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/366c5992-e97f-4f15-bea9-8a62675e46a5.jpg?1561758927
 image_updated=2017-01-11
 value=4.160
 rarity=R

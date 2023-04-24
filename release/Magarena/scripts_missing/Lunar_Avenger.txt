@@ -1,5 +1,5 @@
 name=Lunar Avenger
-image=https://magiccards.info/scans/en/5dn/136.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3f2348e5-6bf9-4a7e-91a4-ba93bb108897.jpg?1562876517
 value=2.842
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Tyrant of Discord
-image=https://magiccards.info/scans/en/avr/162.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e8f7c8ea-e9c1-4d78-972c-15c4014915a0.jpg?1592709241
 value=3.688
 rarity=R
 type=Creature

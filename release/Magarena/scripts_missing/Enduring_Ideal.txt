@@ -1,5 +1,5 @@
 name=Enduring Ideal
-image=https://magiccards.info/scans/en/sok/9.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7dc7091e-0c98-434d-9190-dcab813d3e14.jpg?1562494671
 value=3.800
 rarity=R
 type=Sorcery

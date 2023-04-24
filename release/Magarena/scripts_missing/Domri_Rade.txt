@@ -1,5 +1,5 @@
 name=Domri Rade
-image=https://magiccards.info/scans/en/mm3/161.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9d57a9dc-424e-4088-9df8-c9b9c8c688a3.jpg?1593814294
 image_updated=2017-08-08
 value=3.672
 rarity=M

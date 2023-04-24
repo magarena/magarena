@@ -1,5 +1,5 @@
 name=Self-Inflicted Wound
-image=https://magiccards.info/scans/en/dtk/117.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f69b1a5d-fb17-43f0-bf29-4ade853e0e6e.jpg?1562795780
 value=2.500
 rarity=U
 type=Sorcery

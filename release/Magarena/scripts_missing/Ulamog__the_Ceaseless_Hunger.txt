@@ -1,5 +1,5 @@
 name=Ulamog, the Ceaseless Hunger
-image=https://magiccards.info/scans/en/bfz/15.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1192f7a9-102e-4b3a-b154-18c8eb332217.jpg?1562899233
 image_updated=2015-11-08
 value=2.500
 rarity=M

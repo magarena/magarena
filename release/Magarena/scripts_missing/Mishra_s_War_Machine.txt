@@ -1,5 +1,5 @@
 name=Mishra's War Machine
-image=https://magiccards.info/scans/en/4e/355.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f7b5921-3e10-47e7-98a7-8411a18313bf.jpg?1559604144
 value=1.907
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Fate Transfer
-image=https://magiccards.info/scans/en/shm/161.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e052cde-985a-401f-828a-2d98511bbcd5.jpg?1562829074
 value=3.845
 rarity=C
 type=Instant

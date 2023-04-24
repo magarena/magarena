@@ -1,5 +1,5 @@
 name=Urborg Uprising
-image=https://magiccards.info/scans/en/ema/111.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f4f0fdb-fb1a-41e0-b7af-a2dc25cf116e.jpg?1580014403
 value=2.500
 rarity=C
 type=Sorcery

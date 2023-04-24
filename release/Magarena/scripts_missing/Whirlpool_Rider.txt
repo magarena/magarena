@@ -1,5 +1,5 @@
 name=Whirlpool Rider
-image=https://magiccards.info/scans/en/ap/35.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0de47f44-8c5e-4114-9064-145d2d8813c6.jpg?1562898184
 value=3.518
 rarity=C
 type=Creature

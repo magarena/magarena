@@ -1,5 +1,5 @@
 name=Petra Sphinx
-image=https://magiccards.info/scans/en/lg/199.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e799b225-7bd7-40dd-b555-37ea500e12fe.jpg?1559592561
 value=3.333
 rarity=R
 type=Creature

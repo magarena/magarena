@@ -1,5 +1,5 @@
 name=Warmonger
-image=https://magiccards.info/scans/en/mm/225.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/5577ac30-ee84-4d3c-b407-82578779dc90.jpg?1562380870
 value=3.423
 rarity=U
 type=Creature

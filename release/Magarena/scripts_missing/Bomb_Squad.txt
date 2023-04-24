@@ -1,5 +1,5 @@
 name=Bomb Squad
-image=https://magiccards.info/scans/en/od/179.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8e9535a5-29ea-4085-a36b-4905d85e97ac.jpg?1562921431
 value=3.469
 rarity=R
 type=Creature

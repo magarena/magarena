@@ -1,5 +1,5 @@
 name=Stronghold Confessor
-image=https://magiccards.info/scans/en/dom/105.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab3fcc43-839b-48c1-91e3-7cc80d8c7f9a.jpg?1562741080
 value=2.500
 rarity=C
 type=Creature

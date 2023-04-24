@@ -1,5 +1,5 @@
 name=Cocoon
-image=https://magiccards.info/scans/en/lg/92.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/897de61e-440f-4eaf-aef8-0dd1c6117288.jpg?1562922809
 image_updated=2016-11-28
 value=2.015
 rarity=U

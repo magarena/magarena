@@ -1,5 +1,5 @@
 name=Whim of Volrath
-image=https://magiccards.info/scans/en/tp/102.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e259da60-c8bc-4a77-98ed-e529dc067732.jpg?1562056896
 value=3.600
 rarity=R
 type=Instant

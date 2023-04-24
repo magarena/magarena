@@ -1,5 +1,5 @@
 name=Ugin's Insight
-image=https://magiccards.info/scans/en/bfz/87.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f37d5938-9c8f-4203-8f3f-d6e89ced28ef.jpg?1562952785
 image_updated=2015-11-08
 value=2.500
 rarity=R

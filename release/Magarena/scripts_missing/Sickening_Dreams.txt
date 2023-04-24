@@ -1,5 +1,5 @@
 name=Sickening Dreams
-image=https://magiccards.info/scans/en/tr/83.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/9396ac77-9f53-46bd-b126-02441a0f5594.jpg?1562630974
 value=3.545
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Haazda Shield Mate
-image=https://magiccards.info/scans/en/di/12.jpg
+image=https://cards.scryfall.io/border_crop/front/8/9/8940e8c6-1423-4dbf-89c8-9055bf15d4ec.jpg?1593272520
 value=2.660
 rarity=R
 type=Creature

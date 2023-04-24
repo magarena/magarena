@@ -1,5 +1,5 @@
 name=Dromar's Attendant
-image=https://magiccards.info/scans/en/in/303.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/24936fa9-41a3-4da5-91cf-c28fa45f47c9.jpg?1562902350
 value=2.558
 rarity=U
 type=Artifact,Creature

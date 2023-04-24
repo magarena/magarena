@@ -1,5 +1,5 @@
 name=Purging Scythe
-image=https://magiccards.info/scans/en/us/308.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0ef8128a-e0f5-43d6-b7bd-3f2003d83eab.jpg?1562898065
 value=3.888
 rarity=R
 type=Artifact

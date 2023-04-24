@@ -1,5 +1,5 @@
 name=Shrieking Grotesque
-image=https://magiccards.info/scans/en/gp/15.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c221f01-b094-41c7-bb5f-eef97cbf584e.jpg?1593271915
 value=3.321
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Masked Admirers
-image=https://magiccards.info/scans/en/c14/206.jpg
+image=https://cards.scryfall.io/border_crop/front/b/8/b8cc3361-046c-4908-8b8d-a0502bfc173a.jpg?1631235061
 value=2.500
 rarity=R
 type=Creature

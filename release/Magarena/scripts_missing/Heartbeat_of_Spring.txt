@@ -1,5 +1,5 @@
 name=Heartbeat of Spring
-image=https://magiccards.info/scans/en/chk/212.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8ccb1e59-b858-42cf-93f8-8a3badb3eaad.jpg?1599707297
 value=3.933
 rarity=R
 type=Enchantment

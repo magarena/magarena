@@ -1,5 +1,5 @@
 name=Night Market Guard
-image=https://magiccards.info/scans/en/aer/166.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2098bb0f-6ab5-407c-93f7-fee3b385926e.jpg?1562901472
 value=2.500
 rarity=C
 type=Artifact,Creature

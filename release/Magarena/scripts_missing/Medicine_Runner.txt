@@ -1,5 +1,5 @@
 name=Medicine Runner
-image=https://magiccards.info/scans/en/shm/230.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97638795-0771-4862-9afc-dbbbfd39515c.jpg?1562833501
 value=2.792
 rarity=C
 type=Creature

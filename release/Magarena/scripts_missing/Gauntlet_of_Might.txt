@@ -1,5 +1,5 @@
 name=Gauntlet of Might
-image=https://magiccards.info/scans/en/un/245.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df3bc33f-23f8-4eb4-a70e-b8b7af5b40f6.jpg?1562948147
 value=4.543
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Sin Prodder
-image=https://magiccards.info/scans/en/soi/181.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db89172e-0542-4858-9e65-38b1bac8cdeb.jpg?1601078601
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Prototype Portal
-image=https://magiccards.info/scans/en/som/195.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2ccdd3b-9c39-4785-99b9-64b5de1177be.jpg?1592711307
 value=4.151
 rarity=R
 type=Artifact

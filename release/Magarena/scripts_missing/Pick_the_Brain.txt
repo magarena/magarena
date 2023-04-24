@@ -1,5 +1,5 @@
 name=Pick the Brain
-image=https://magiccards.info/scans/en/soi/129.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/53503e59-6b6c-4de1-8528-458ab94f4e9a.jpg?1576384552
 value=2.500
 rarity=U
 type=Sorcery

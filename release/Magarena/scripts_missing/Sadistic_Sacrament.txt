@@ -1,5 +1,5 @@
 name=Sadistic Sacrament
-image=https://magiccards.info/scans/en/zen/110.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3d82fd7-6af1-4a97-9d51-486a41224b35.jpg?1562618318
 value=4.471
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Wall of Glare
-image=https://magiccards.info/scans/en/ud/25.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f159193-fcf8-437c-b14a-06718a446a5c.jpg?1562444215
 value=4.127
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kyren Toy
-image=https://magiccards.info/scans/en/mm/303.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a8318bb-bc3c-45e9-bd57-60ae72b6f8b0.jpg?1562381378
 value=3.207
 rarity=R
 type=Artifact

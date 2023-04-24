@@ -1,5 +1,5 @@
 name=Nomadic Elf
-image=https://magiccards.info/scans/en/in/200.jpg
+image=https://cards.scryfall.io/border_crop/front/f/c/fc4a26f7-36df-4018-8dab-a1294c36b0f0.jpg?1562942563
 image_updated=2017-01-01
 value=3.000
 rarity=C

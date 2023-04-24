@@ -1,5 +1,5 @@
 name=Shadow of the Grave
-image=https://magiccards.info/scans/en/akh/107.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b0205cb-c163-4332-9624-394e1024bf6a.jpg?1543675397
 value=2.500
 rarity=R
 type=Instant

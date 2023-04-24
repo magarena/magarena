@@ -1,5 +1,5 @@
 name=Quicksmith Spy
-image=https://magiccards.info/scans/en/aer/41.jpg
+image=https://cards.scryfall.io/border_crop/front/0/f/0f922e87-1744-4966-9e3a-54917f7f3d9e.jpg?1576381538
 value=2.500
 rarity=R
 type=Creature

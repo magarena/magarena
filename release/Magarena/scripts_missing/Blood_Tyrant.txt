@@ -1,5 +1,5 @@
 name=Blood Tyrant
-image=https://magiccards.info/scans/en/c16/183.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/719abc71-dda9-49bf-b050-4fc28ad8b9b7.jpg?1592765929
 image_updated=2017-08-17
 value=3.737
 rarity=R

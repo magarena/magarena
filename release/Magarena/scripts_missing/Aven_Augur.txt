@@ -1,5 +1,5 @@
 name=Aven Augur
-image=https://magiccards.info/scans/en/fut/32.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c7599618-cbd9-4013-b0a5-4ba77fd52ab4.jpg?1562934982
 value=2.663
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Simic Growth Chamber
-image=https://magiccards.info/scans/en/ima/249.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a49fb7a-81f5-4d68-ac16-5a7703809db4.jpg?1682210637
 image_updated=2017-04-12
 value=2.500
 rarity=U

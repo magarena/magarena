@@ -1,5 +1,5 @@
 name=Thallid Omnivore
-image=https://magiccards.info/scans/en/dom/106.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99b35391-f1dc-434b-b581-ca6cb6f3439f.jpg?1562740048
 value=2.500
 rarity=C
 type=Creature

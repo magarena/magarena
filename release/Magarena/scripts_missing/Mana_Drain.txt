@@ -1,5 +1,5 @@
 name=Mana Drain
-image=https://magiccards.info/scans/en/ima/65.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c429c40-2389-41e5-8681-4bb274e25eba.jpg?1673147353
 image_updated=2017-04-12
 value=3.750
 rarity=M

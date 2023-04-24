@@ -1,5 +1,5 @@
 name=Veiled Sentry
-image=https://magiccards.info/scans/en/us/109.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de458a9d-6c09-42bb-b470-c2691e95345a.jpg?1562941880
 value=4.021
 rarity=U
 type=Enchantment

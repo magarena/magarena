@@ -1,5 +1,5 @@
 name=Rattleclaw Mystic
-image=https://magiccards.info/scans/en/ktk/144.jpg
+image=https://cards.scryfall.io/border_crop/front/4/f/4fb6c2e0-eeaa-4d60-aab7-2b8c739a9278.jpg?1562786444
 value=3.833
 rarity=R
 type=Creature

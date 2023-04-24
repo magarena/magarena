@@ -1,5 +1,5 @@
 name=Imprison
-image=https://magiccards.info/scans/en/lg/21.jpg
+image=https://cards.scryfall.io/border_crop/front/1/2/12671381-beb7-41b8-9484-97f8aca5c981.jpg?1644608203
 value=2.513
 rarity=R
 type=Enchantment

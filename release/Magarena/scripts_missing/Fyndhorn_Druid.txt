@@ -1,5 +1,5 @@
 name=Fyndhorn Druid
-image=https://magiccards.info/scans/en/ai/70.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/778b028f-fa4e-4638-82b4-fb287223ea20.jpg?1562769199
 value=2.883
 rarity=C
 type=Creature

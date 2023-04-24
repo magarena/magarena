@@ -1,5 +1,5 @@
 name=Curse of Oblivion
-image=https://magiccards.info/scans/en/isd/95.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c15cbd2f-8bbf-423a-81fe-521fd99bc8bf.jpg?1562836502
 value=2.308
 rarity=C
 type=Enchantment

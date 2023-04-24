@@ -1,5 +1,5 @@
 name=Chorus of the Conclave
-image=https://magiccards.info/scans/en/cmd/189.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6cde2c4-f53d-4b44-b83b-37b12e00c835.jpg?1592713989
 value=3.288
 rarity=R
 type=Legendary,Creature

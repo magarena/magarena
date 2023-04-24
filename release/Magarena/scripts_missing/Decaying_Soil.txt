@@ -1,5 +1,5 @@
 name=Decaying Soil
-image=https://magiccards.info/scans/en/od/127.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2bea0ec-52e0-4f45-a445-8805dc6ed596.jpg?1562940611
 value=2.904
 rarity=R
 type=Enchantment

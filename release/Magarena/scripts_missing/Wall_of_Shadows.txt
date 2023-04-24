@@ -1,5 +1,5 @@
 name=Wall of Shadows
-image=https://magiccards.info/scans/en/lg/42.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69c6e076-d7bf-435b-ba79-84aa9f073130.jpg?1562916267
 image_updated=2017-01-11
 value=3.367
 rarity=C

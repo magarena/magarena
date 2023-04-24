@@ -1,5 +1,5 @@
 name=Flameblade Adept
-image=https://magiccards.info/scans/en/akh/131.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f974d05a-3b31-4661-af18-58d87b76f19e.jpg?1543675570
 value=2.500
 rarity=U
 type=Creature

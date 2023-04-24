@@ -1,5 +1,5 @@
 name=Sages of the Anima
-image=https://magiccards.info/scans/en/arb/103.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f98a21af-cd1a-4438-a4c2-0c92ad92efef.jpg?1562645201
 value=2.968
 rarity=R
 type=Creature

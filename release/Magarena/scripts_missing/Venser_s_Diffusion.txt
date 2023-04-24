@@ -1,5 +1,5 @@
 name=Venser's Diffusion
-image=https://magiccards.info/scans/en/fut/47.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fbedfc40-7c2f-4a6e-8157-219cafca3548.jpg?1562945838
 value=3.663
 rarity=C
 type=Instant

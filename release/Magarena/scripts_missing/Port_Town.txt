@@ -1,5 +1,5 @@
 name=Port Town
-image=https://magiccards.info/scans/en/soi/278.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2bfe2f34-6c9e-4013-9e61-6eb758083f74.jpg?1682210592
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Declaration of Naught
-image=https://magiccards.info/scans/en/mt/29.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e67d62f-9629-463b-a445-4181f6fafd0f.jpg?1562877683
 value=3.543
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Haven of the Spirit Dragon
-image=https://magiccards.info/scans/en/dtk/249.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/637ea3f0-d3ec-4cd4-8725-b845c50a6b96.jpg?1631589809
 value=2.500
 rarity=R
 type=Land

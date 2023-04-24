@@ -1,5 +1,5 @@
 name=Pyreheart Wolf
-image=https://magiccards.info/scans/en/dka/101.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9722f20c-e0d9-4165-8cd5-4abadc5378eb.jpg?1562930582
 value=3.704
 rarity=U
 type=Creature

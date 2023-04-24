@@ -1,5 +1,5 @@
 name=Skullbriar, the Walking Grave
-image=https://magiccards.info/scans/en/cmd/227.jpg
+image=https://cards.scryfall.io/border_crop/front/3/d/3dd0bf11-4e43-43f1-82e3-755beed0ede0.jpg?1673149145
 value=4.166
 rarity=R
 type=Legendary,Creature

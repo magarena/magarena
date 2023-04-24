@@ -1,5 +1,5 @@
 name=Sphinx of Jwar Isle
-image=https://magiccards.info/scans/en/c14/126.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a38387c9-cee0-4ec1-800a-877d6a7edc2d.jpg?1592710649
 value=2.500
 rarity=R
 type=Creature

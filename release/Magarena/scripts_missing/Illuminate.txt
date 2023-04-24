@@ -1,5 +1,5 @@
 name=Illuminate
-image=https://magiccards.info/scans/en/ap/63.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ceef2761-7301-42de-8f54-49b8cd1e457b.jpg?1562943833
 value=3.181
 rarity=U
 type=Sorcery

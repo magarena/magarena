@@ -1,5 +1,5 @@
 name=Hunt the Weak
-image=https://magiccards.info/scans/en/rix/133.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05d6cab6-b0f9-4631-a4bd-5ff1d6d53880.jpg?1555040658
 image_updated=2018-03-12
 value=2.500
 rarity=C

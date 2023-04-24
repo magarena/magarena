@@ -1,5 +1,5 @@
 name=Pardic Miner
-image=https://magiccards.info/scans/en/od/212.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a734abe-7bfd-4153-be2d-1c289fb60996.jpg?1562908632
 value=2.783
 rarity=R
 type=Creature

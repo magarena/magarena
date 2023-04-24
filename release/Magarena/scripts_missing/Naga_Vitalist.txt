@@ -1,5 +1,5 @@
 name=Naga Vitalist
-image=https://magiccards.info/scans/en/akh/176.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce9a8551-8788-47ea-b774-477f0f3ff22a.jpg?1543675898
 value=2.500
 rarity=C
 type=Creature

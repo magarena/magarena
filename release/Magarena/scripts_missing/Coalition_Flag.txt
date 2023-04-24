@@ -1,5 +1,5 @@
 name=Coalition Flag
-image=https://magiccards.info/scans/en/ap/2.jpg
+image=https://cards.scryfall.io/border_crop/front/0/e/0e417461-a230-4548-bcc1-71377487f21b.jpg?1562898275
 value=4.088
 rarity=U
 type=Enchantment

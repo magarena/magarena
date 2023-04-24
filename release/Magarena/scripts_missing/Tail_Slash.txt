@@ -1,5 +1,5 @@
 name=Tail Slash
-image=https://magiccards.info/scans/en/dtk/161.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91a59f12-8d1b-4378-abb8-e266d9b6cdba.jpg?1562789925
 value=2.500
 rarity=C
 type=Instant

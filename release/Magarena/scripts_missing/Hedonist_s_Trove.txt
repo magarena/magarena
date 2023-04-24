@@ -1,5 +1,5 @@
 name=Hedonist's Trove
-image=https://magiccards.info/scans/en/dtk/106.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f323fb2f-f637-4b87-8a5e-8cb7da606658.jpg?1591196190
 value=2.500
 rarity=R
 type=Enchantment

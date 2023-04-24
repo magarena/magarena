@@ -1,5 +1,5 @@
 name=Dark Intimations
-image=https://magiccards.info/scans/en/aer/128.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd8f103c-a688-4f22-ae59-2bce1db9d44a.jpg?1576382106
 value=2.500
 rarity=R
 type=Sorcery

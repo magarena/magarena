@@ -1,5 +1,5 @@
 name=Viridian Acolyte
-image=https://magiccards.info/scans/en/ds/89.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64448241-978c-43e0-b0ea-b4bb3e25b715.jpg?1562637247
 value=2.367
 rarity=C
 type=Creature

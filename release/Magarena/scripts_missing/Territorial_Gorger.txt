@@ -1,5 +1,5 @@
 name=Territorial Gorger
-image=https://magiccards.info/scans/en/kld/136.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3525ad1-3c17-4959-ab61-ae0e784c526a.jpg?1576382276
 image_updated=2016-10-05
 value=2.500
 rarity=R

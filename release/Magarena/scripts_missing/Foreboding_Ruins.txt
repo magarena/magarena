@@ -1,5 +1,5 @@
 name=Foreboding Ruins
-image=https://magiccards.info/scans/en/soi/272.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be7a14d1-5846-492e-a41a-d5c2045c3cc7.jpg?1673306035
 value=2.500
 rarity=R
 type=Land

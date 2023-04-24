@@ -1,5 +1,5 @@
 name=Desperate Gambit
-image=https://magiccards.info/scans/en/wl/96.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4245160-274e-4c39-9bcd-c64e9a44dfdb.jpg?1562804221
 value=2.533
 rarity=U
 type=Instant

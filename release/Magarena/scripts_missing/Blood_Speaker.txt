@@ -1,5 +1,5 @@
 name=Blood Speaker
-image=https://magiccards.info/scans/en/chk/103.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f218bb94-d5a2-41f6-8bca-b689dcd09a43.jpg?1562765663
 value=3.806
 rarity=U
 type=Creature

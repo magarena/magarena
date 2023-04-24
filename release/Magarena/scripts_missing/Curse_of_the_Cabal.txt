@@ -1,5 +1,5 @@
 name=Curse of the Cabal
-image=https://magiccards.info/scans/en/ts/99.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4323aa6-a1fb-42ee-9634-3747129fde3b.jpg?1562939881
 value=3.815
 rarity=R
 type=Sorcery

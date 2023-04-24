@@ -1,5 +1,5 @@
 name=Elite Arcanist
-image=https://magiccards.info/scans/en/m14/54.jpg
+image=https://cards.scryfall.io/border_crop/front/9/9/99b225fe-c07d-4d8a-bf2b-c1777bd29061.jpg?1562832740
 value=3.645
 rarity=R
 type=Creature

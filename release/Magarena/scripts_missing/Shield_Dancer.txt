@@ -1,5 +1,5 @@
 name=Shield Dancer
-image=https://magiccards.info/scans/en/pr/23.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d885360-1ce1-4b80-8928-29437731993f.jpg?1562900513
 value=3.862
 rarity=U
 type=Creature

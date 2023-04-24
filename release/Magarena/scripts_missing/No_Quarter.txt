@@ -1,5 +1,5 @@
 name=No Quarter
-image=https://magiccards.info/scans/en/tp/193.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c317ee7-ed92-4e3e-92bb-502099caccf8.jpg?1562054955
 value=3.300
 rarity=R
 type=Enchantment

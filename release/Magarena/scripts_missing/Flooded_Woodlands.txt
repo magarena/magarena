@@ -1,5 +1,5 @@
 name=Flooded Woodlands
-image=https://magiccards.info/scans/en/ia/368.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de89e9e1-485b-42e5-9728-5d6f948999e1.jpg?1562936522
 value=3.209
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Rayne, Academy Chancellor
-image=https://magiccards.info/scans/en/ud/43.jpg
+image=https://cards.scryfall.io/border_crop/front/8/e/8ee6480c-7697-47e2-893b-ca88c0ab3376.jpg?1562444698
 value=4.057
 rarity=R
 type=Legendary,Creature

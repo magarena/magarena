@@ -1,5 +1,5 @@
 name=Will-Forged Golem
-image=https://magiccards.info/scans/en/m15/239.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/0175bafa-dc9f-464c-8f9e-dd4131732652.jpg?1562781782
 value=2.500
 rarity=C
 type=Artifact,Creature

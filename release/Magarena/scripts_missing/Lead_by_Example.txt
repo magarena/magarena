@@ -1,5 +1,5 @@
 name=Lead by Example
-image=https://magiccards.info/scans/en/ogw/134.jpg
+image=https://cards.scryfall.io/border_crop/front/3/5/3525b8f3-8b5b-4f1e-9b18-8e925cf45413.jpg?1562905740
 image_updated=2016-02-29
 value=2.500
 rarity=C

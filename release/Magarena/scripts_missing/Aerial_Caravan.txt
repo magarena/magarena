@@ -1,5 +1,5 @@
 name=Aerial Caravan
-image=https://magiccards.info/scans/en/mm/58.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/adac91af-5165-4779-99f7-e75c83fa5d5d.jpg?1562382540
 value=2.943
 rarity=R
 type=Creature

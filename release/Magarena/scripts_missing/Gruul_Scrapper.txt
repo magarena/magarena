@@ -1,5 +1,5 @@
 name=Gruul Scrapper
-image=https://magiccards.info/scans/en/gp/89.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f7f3fdc0-3fd1-47da-b3ed-e4a462179e75.jpg?1593272469
 value=1.804
 rarity=C
 type=Creature

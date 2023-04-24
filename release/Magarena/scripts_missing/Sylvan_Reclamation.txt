@@ -1,5 +1,5 @@
 name=Sylvan Reclamation
-image=https://magiccards.info/scans/en/c16/44.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f51c70bf-cae2-49e1-988e-c9fb3ea5f370.jpg?1673305679
 image_updated=2016-12-28
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Cauldron Haze
-image=https://magiccards.info/scans/en/eve/84.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8d0def7-42dd-46f4-8499-d79876783a39.jpg?1562930581
 value=3.602
 rarity=U
 type=Instant

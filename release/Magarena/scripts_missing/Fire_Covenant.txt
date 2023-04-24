@@ -1,5 +1,5 @@
 name=Fire Covenant
-image=https://magiccards.info/scans/en/ia/367.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5ac3712-6bcd-4d93-a944-520a2092bee4.jpg?1559592388
 value=3.708
 rarity=U
 type=Instant

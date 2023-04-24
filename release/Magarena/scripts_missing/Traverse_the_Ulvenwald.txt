@@ -1,5 +1,5 @@
 name=Traverse the Ulvenwald
-image=https://magiccards.info/scans/en/soi/234.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bbc69a17-db08-4b4a-bc37-98a12ea108dc.jpg?1576385271
 value=2.500
 rarity=R
 type=Sorcery

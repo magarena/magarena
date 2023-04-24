@@ -1,5 +1,5 @@
 name=Portal Mage
-image=https://magiccards.info/scans/en/c17/13.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9f6cb64-07e3-44ca-986c-fd10ab74cc8a.jpg?1591320339
 image_updated=2017-10-03
 value=2.500
 rarity=R

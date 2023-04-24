@@ -1,5 +1,5 @@
 name=Unknown Shores
-image=https://magiccards.info/scans/en/xln/259.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/492181e4-5825-45d4-b8a1-37f29c32a845.jpg?1581481287
 image_updated=2017-10-30
 value=2.865
 rarity=C

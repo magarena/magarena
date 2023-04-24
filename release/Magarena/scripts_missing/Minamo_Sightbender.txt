@@ -1,5 +1,5 @@
 name=Minamo Sightbender
-image=https://magiccards.info/scans/en/bok/41.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a598d08d-c9d4-4de5-bef5-998dd115b8b6.jpg?1581708254
 image_updated=2016-12-23
 value=2.542
 rarity=U

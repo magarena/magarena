@@ -1,5 +1,5 @@
 name=Nantuko Elder
-image=https://magiccards.info/scans/en/od/254.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c0a4e6e-cc4e-43d5-aece-f009e117366a.jpg?1562911994
 value=3.167
 rarity=U
 type=Creature

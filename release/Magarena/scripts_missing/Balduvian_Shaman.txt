@@ -1,5 +1,5 @@
 name=Balduvian Shaman
-image=https://magiccards.info/scans/en/ia/59.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74859723-8ddf-4ee6-a0a7-87192c84e8ad.jpg?1562916593
 value=1.961
 rarity=C
 type=Creature

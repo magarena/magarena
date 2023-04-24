@@ -1,5 +1,5 @@
 name=Amoeboid Changeling
-image=https://magiccards.info/scans/en/lw/51.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/068518d2-f061-4061-b208-158e991156b6.jpg?1562337184
 value=3.804
 rarity=C
 type=Creature

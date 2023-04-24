@@ -1,5 +1,5 @@
 name=Ember Beast
-image=https://magiccards.info/scans/en/cn2/155.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5d53c2b-32fe-4b92-bff1-e7416c0acd7c.jpg?1562931604
 image_updated=2017-08-29
 value=3.100
 rarity=C

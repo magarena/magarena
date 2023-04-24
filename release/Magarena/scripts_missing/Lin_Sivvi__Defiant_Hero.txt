@@ -1,5 +1,5 @@
 name=Lin Sivvi, Defiant Hero
-image=https://magiccards.info/scans/en/ne/12.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e574e522-2632-4cd4-8545-c582ac3b641f.jpg?1562632572
 value=4.158
 rarity=R
 type=Legendary,Creature

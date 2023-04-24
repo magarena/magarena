@@ -1,5 +1,5 @@
 name=Bane of the Living
-image=https://magiccards.info/scans/en/c16/106.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/946a0fb7-0e36-47d5-8083-09f48725dff1.jpg?1568004128
 image_updated=2017-08-17
 value=4.000
 rarity=R

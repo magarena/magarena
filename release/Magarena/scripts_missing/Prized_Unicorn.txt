@@ -1,5 +1,5 @@
 name=Prized Unicorn
-image=https://magiccards.info/scans/en/ori/287.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/baac1604-379f-4f03-97ae-9ec10921167c.jpg?1592518436
 image_updated=2010-09-10
 value=3.034
 rarity=U

@@ -1,5 +1,5 @@
 name=Aurora Eidolon
-image=https://magiccards.info/scans/en/di/1.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51bb3d0b-8630-4373-b863-bc831cf08098.jpg?1593272419
 value=1.887
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fluctuator
-image=https://magiccards.info/scans/en/us/295.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c06a2fb3-d933-461f-bcf8-5c614bb75d0b.jpg?1591634264
 value=4.418
 rarity=R
 type=Artifact

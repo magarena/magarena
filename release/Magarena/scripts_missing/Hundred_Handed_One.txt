@@ -1,5 +1,5 @@
 name=Hundred-Handed One
-image=https://magiccards.info/scans/en/cn2/93.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/489f192f-0d8a-468b-94f5-67a937e5028e.jpg?1576382286
 image_updated=2016-12-10
 value=3.561
 rarity=R

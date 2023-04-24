@@ -1,5 +1,5 @@
 name=Scent of Cinder
-image=https://magiccards.info/scans/en/ud/96.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c030eca0-bc5f-403b-8600-1f295fc85fee.jpg?1562445189
 value=3.766
 rarity=C
 type=Sorcery

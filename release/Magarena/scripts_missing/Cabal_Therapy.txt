@@ -1,5 +1,5 @@
 name=Cabal Therapy
-image=https://magiccards.info/scans/en/ema/83.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f5b12f0-986f-43d0-a81b-64111e7f17e6.jpg?1580014199
 value=4.542
 rarity=U
 type=Sorcery

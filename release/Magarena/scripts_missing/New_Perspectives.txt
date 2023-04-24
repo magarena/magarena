@@ -1,5 +1,5 @@
 name=New Perspectives
-image=https://magiccards.info/scans/en/akh/63.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/286be1fb-8ed2-4228-9df8-0ea413714778.jpg?1591320313
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Aeon Chronicler
-image=https://magiccards.info/scans/en/c16/82.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cec8dcc-8ebb-4640-a5f3-90e6e62c27e5.jpg?1619393737
 image_updated=2017-08-17
 value=3.833
 rarity=R

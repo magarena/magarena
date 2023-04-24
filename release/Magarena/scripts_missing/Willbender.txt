@@ -1,5 +1,5 @@
 name=Willbender
-image=https://magiccards.info/scans/en/a25/78.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e6a3551-250c-4563-8c30-6d8f49e6429f.jpg?1568004112
 image_updated=2018-04-25
 value=2.500
 rarity=U

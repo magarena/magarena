@@ -1,5 +1,5 @@
 name=Declare Dominance
-image=https://magiccards.info/scans/en/m19/175.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78271f34-f62e-4771-b430-b121097b8fb6.jpg?1562302743
 value=2.500
 rarity=U
 type=Sorcery

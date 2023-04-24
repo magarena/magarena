@@ -1,5 +1,5 @@
 name=Gore Vassal
-image=https://magiccards.info/scans/en/mbs/7.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c2889bba-58a8-46e1-959c-0fd38c1732f9.jpg?1562614527
 value=2.854
 rarity=U
 type=Creature

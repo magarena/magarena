@@ -1,5 +1,5 @@
 name=Hypnotic Siren
-image=https://magiccards.info/scans/en/jou/42.jpg
+image=https://cards.scryfall.io/border_crop/front/3/b/3b2f562f-00d1-41da-a6ac-bc019cce7fe7.jpg?1593095469
 value=3.704
 rarity=R
 type=Enchantment,Creature

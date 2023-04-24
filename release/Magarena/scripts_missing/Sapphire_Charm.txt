@@ -1,5 +1,5 @@
 name=Sapphire Charm
-image=https://magiccards.info/scans/en/mr/89.jpg
+image=https://cards.scryfall.io/border_crop/front/2/9/2944e5df-eef9-42be-a591-5ac15e306ad8.jpg?1562718322
 value=3.812
 rarity=C
 type=Instant

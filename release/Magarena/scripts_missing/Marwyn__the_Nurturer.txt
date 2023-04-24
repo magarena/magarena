@@ -1,5 +1,5 @@
 name=Marwyn, the Nurturer
-image=https://magiccards.info/scans/en/dom/172.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aad61d99-5c8e-47b7-ab1a-e70905f59205.jpg?1631235039
 value=2.500
 rarity=R
 type=Legendary,Creature

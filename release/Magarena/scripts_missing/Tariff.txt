@@ -1,5 +1,5 @@
 name=Tariff
-image=https://magiccards.info/scans/en/6e/47.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61094858-b8a8-425f-9c96-fac4fc6ecae8.jpg?1562818225
 value=3.766
 rarity=R
 type=Sorcery

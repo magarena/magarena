@@ -1,5 +1,5 @@
 name=Brain Pry
-image=https://magiccards.info/scans/en/di/39.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca65692f-fabc-4b56-a0f6-d623ed069cb8.jpg?1593272842
 value=3.212
 rarity=U
 type=Sorcery

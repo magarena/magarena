@@ -1,5 +1,5 @@
 name=Cloud of Faeries
-image=https://magiccards.info/scans/en/ul/29.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/03aff125-8962-4a0a-a2b4-e5d693b75400.jpg?1682208732
 value=2.500
 rarity=C
 type=Creature

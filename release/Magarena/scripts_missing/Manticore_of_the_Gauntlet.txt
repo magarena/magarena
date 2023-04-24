@@ -1,5 +1,5 @@
 name=Manticore of the Gauntlet
-image=https://magiccards.info/scans/en/akh/142.jpg
+image=https://cards.scryfall.io/border_crop/front/8/2/82b6ece3-1574-4634-b940-829e54c4f78d.jpg?1543675651
 value=2.500
 rarity=C
 type=Creature

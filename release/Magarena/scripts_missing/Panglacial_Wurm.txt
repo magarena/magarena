@@ -1,5 +1,5 @@
 name=Panglacial Wurm
-image=https://magiccards.info/scans/en/cs/116.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/063bb28b-5e32-4f31-a208-16b653edf413.jpg?1593275437
 value=4.198
 rarity=R
 type=Creature

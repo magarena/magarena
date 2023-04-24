@@ -1,5 +1,5 @@
 name=Cyclone
-image=https://magiccards.info/scans/en/ch/34.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5b304be-916f-46bc-8b09-cf1bbeb1872b.jpg?1562949730
 value=2.775
 rarity=U
 type=Enchantment

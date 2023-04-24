@@ -1,5 +1,5 @@
 name=Haunting Wind
-image=https://magiccards.info/scans/en/aq/47.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2f6ef2f-a3a2-4e1f-b7eb-59abc8414114.jpg?1562929345
 value=2.809
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Battlefront Krushok
-image=https://magiccards.info/scans/en/frf/125.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3b425cd-c5a5-48e9-b697-3860dfa6d5d3.jpg?1562830855
 value=2.500
 rarity=U
 type=Creature

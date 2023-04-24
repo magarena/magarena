@@ -1,5 +1,5 @@
 name=Spire Owl
-image=https://magiccards.info/scans/en/us/98.jpg
+image=https://cards.scryfall.io/border_crop/front/c/6/c66b2aa6-e891-4ae5-b6c9-1537b797c3ab.jpg?1562936947
 value=3.987
 rarity=C
 type=Creature

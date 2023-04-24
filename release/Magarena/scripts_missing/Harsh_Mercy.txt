@@ -1,5 +1,5 @@
 name=Harsh Mercy
-image=https://magiccards.info/scans/en/on/39.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6473b4d-1f59-4216-ace9-f3e5306266fb.jpg?1562937932
 value=3.759
 rarity=R
 type=Sorcery

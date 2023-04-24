@@ -1,5 +1,5 @@
 name=Monomania
-image=https://magiccards.info/scans/en/m12/102.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6af53d7f-7f02-4c35-b6f4-7365d121ba54.jpg?1562645943
 value=2.782
 rarity=R
 type=Sorcery

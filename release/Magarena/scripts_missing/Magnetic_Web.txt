@@ -1,5 +1,5 @@
 name=Magnetic Web
-image=https://magiccards.info/scans/en/tp/285.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9f3c7309-4efb-49ce-a9cc-a8f7b04c1a15.jpg?1562055466
 value=3.047
 rarity=R
 type=Artifact

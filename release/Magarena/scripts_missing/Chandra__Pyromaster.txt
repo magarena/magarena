@@ -1,5 +1,5 @@
 name=Chandra, Pyromaster
-image=https://magiccards.info/scans/en/m15/134.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7ab164f6-bfea-4519-bb44-80a716630f4f.jpg?1592765622
 value=4.667
 rarity=M
 type=Legendary,Planeswalker

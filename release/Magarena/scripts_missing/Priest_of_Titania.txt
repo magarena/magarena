@@ -1,5 +1,5 @@
 name=Priest of Titania
-image=https://magiccards.info/scans/en/c14/210.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/19fc5956-286c-4e1d-bc4a-2974fc0f4dbc.jpg?1592673130
 value=2.500
 rarity=C
 type=Creature

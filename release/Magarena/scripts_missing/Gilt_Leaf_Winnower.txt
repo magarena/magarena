@@ -1,5 +1,5 @@
 name=Gilt-Leaf Winnower
-image=https://magiccards.info/scans/en/ori/99.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fea7fbfc-c17d-4a5b-863e-842d4040200a.jpg?1608933831
 image_updated=2015-11-05
 value=2.500
 rarity=R

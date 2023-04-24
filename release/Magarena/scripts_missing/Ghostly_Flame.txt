@@ -1,5 +1,5 @@
 name=Ghostly Flame
-image=https://magiccards.info/scans/en/ia/370.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/6314344b-6493-4142-9c76-da9b90b8d3e1.jpg?1587912097
 value=3.188
 rarity=R
 type=Enchantment

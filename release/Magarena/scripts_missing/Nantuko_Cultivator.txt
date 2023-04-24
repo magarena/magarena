@@ -1,5 +1,5 @@
 name=Nantuko Cultivator
-image=https://magiccards.info/scans/en/tr/133.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33a7e43a-4028-41e5-b5dd-be8ef6a1b510.jpg?1562202138
 value=4.000
 rarity=R
 type=Creature

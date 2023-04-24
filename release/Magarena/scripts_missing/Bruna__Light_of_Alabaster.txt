@@ -1,5 +1,5 @@
 name=Bruna, Light of Alabaster
-image=https://magiccards.info/scans/en/avr/208.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58c56bad-68ed-4328-a7ea-c528b58dc2fd.jpg?1592711039
 value=3.967
 rarity=M
 type=Legendary,Creature

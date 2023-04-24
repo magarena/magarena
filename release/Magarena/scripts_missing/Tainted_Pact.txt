@@ -1,5 +1,5 @@
 name=Tainted Pact
-image=https://magiccards.info/scans/en/od/164.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c513f51b-a0db-4c08-8acc-1e91060b93b7.jpg?1628801908
 value=4.116
 rarity=R
 type=Instant

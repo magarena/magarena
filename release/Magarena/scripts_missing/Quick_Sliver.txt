@@ -1,5 +1,5 @@
 name=Quick Sliver
-image=https://magiccards.info/scans/en/le/136.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30a60b2d-aeeb-4dbf-bf1a-20a274fe323f.jpg?1562904913
 value=3.988
 rarity=C
 type=Creature

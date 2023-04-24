@@ -1,5 +1,5 @@
 name=Fen Hauler
-image=https://magiccards.info/scans/en/aer/58.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5ef4616-e3c2-4448-83b1-f7d439705eaf.jpg?1576381648
 value=2.500
 rarity=C
 type=Creature

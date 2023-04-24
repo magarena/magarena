@@ -1,5 +1,5 @@
 name=Tezzeret, Artifice Master
-image=https://magiccards.info/scans/en/m19/79.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5e12371-f05c-41cf-92ca-7cb17c2f7f1a.jpg?1562304834
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

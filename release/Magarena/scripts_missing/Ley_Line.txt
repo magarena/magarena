@@ -1,5 +1,5 @@
 name=Ley Line
-image=https://magiccards.info/scans/en/mm/256.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8990efd-708a-4019-bce0-2d6409ecc004.jpg?1562383997
 value=2.161
 rarity=U
 type=Enchantment

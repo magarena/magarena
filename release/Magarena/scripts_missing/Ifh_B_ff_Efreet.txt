@@ -1,5 +1,5 @@
 name=Ifh-Bíff Efreet
-image=https://magiccards.info/scans/en/an/34.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f4c21c0d-91ee-4c2c-bfa4-81bb07106842.jpg?1559592507
 value=3.868
 rarity=R
 type=Creature

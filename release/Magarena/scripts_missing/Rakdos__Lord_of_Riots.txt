@@ -1,5 +1,5 @@
 name=Rakdos, Lord of Riots
-image=https://magiccards.info/scans/en/rtr/187.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04f3db71-802f-488c-b40d-ac90df2d660a.jpg?1562782015
 value=4.163
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Impelled Giant
-image=https://magiccards.info/scans/en/eve/58.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4b768940-409a-4876-809f-ef311002b944.jpg?1562910819
 value=3.013
 rarity=U
 type=Creature

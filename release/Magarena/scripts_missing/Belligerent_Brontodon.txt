@@ -1,5 +1,5 @@
 name=Belligerent Brontodon
-image=https://magiccards.info/scans/en/xln/218.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39bab75a-2c1f-4ff1-a26e-134e52f61d39.jpg?1562553604
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Savage Punch
-image=https://magiccards.info/scans/en/ktk/147.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c6b50dc-244a-4df5-a9a9-5a2b8f30d40c.jpg?1562788166
 value=3.000
 rarity=C
 type=Sorcery

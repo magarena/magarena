@@ -1,5 +1,5 @@
 name=Reverse the Sands
-image=https://magiccards.info/scans/en/c16/75.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6d56ce1-fb5d-47c6-961d-65b544a48b32.jpg?1562416450
 image_updated=2017-08-17
 value=3.245
 rarity=R

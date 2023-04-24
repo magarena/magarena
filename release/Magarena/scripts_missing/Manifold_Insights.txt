@@ -1,5 +1,5 @@
 name=Manifold Insights
-image=https://magiccards.info/scans/en/c16/10.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e9c67dc7-dee8-4e62-bf4e-a371f1688975.jpg?1562276486
 image_updated=2016-12-23
 value=2.500
 rarity=R

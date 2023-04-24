@@ -1,5 +1,5 @@
 name=Mire's Toll
-image=https://magiccards.info/scans/en/wwk/60.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7e80be6-bc3b-4331-a5f2-1407a0a5dfe7.jpg?1562230142
 value=3.065
 rarity=C
 type=Sorcery

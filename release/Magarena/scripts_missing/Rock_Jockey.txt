@@ -1,5 +1,5 @@
 name=Rock Jockey
-image=https://magiccards.info/scans/en/sc/101.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f836e90-3255-48bd-a174-6a127528551e.jpg?1562532100
 value=2.182
 rarity=C
 type=Creature

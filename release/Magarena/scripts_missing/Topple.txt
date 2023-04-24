@@ -1,5 +1,5 @@
 name=Topple
-image=https://magiccards.info/scans/en/ne/24.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7c25c67-4214-4318-a718-7d351e713f80.jpg?1562631404
 value=3.654
 rarity=C
 type=Sorcery

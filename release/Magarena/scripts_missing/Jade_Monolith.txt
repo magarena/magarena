@@ -1,5 +1,5 @@
 name=Jade Monolith
-image=https://magiccards.info/scans/en/6e/292.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/482d9aab-7ff1-47ee-9862-8a8c687f14bf.jpg?1562911871
 value=3.037
 rarity=R
 type=Artifact

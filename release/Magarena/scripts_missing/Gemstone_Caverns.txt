@@ -1,5 +1,5 @@
 name=Gemstone Caverns
-image=https://magiccards.info/scans/en/ts/274.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7f273641-c5f3-48bc-b89e-3cff52d26a0b.jpg?1619399338
 value=4.029
 rarity=R
 type=Legendary,Land

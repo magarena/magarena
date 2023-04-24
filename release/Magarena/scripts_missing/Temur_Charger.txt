@@ -1,5 +1,5 @@
 name=Temur Charger
-image=https://magiccards.info/scans/en/ktk/153.jpg
+image=https://cards.scryfall.io/border_crop/front/f/7/f77258fc-8683-4656-84a3-4df4ea2a8435.jpg?1562796176
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sabertooth Cobra
-image=https://magiccards.info/scans/en/mr/136.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48ead72b-f3f5-4065-a33c-0992cf1fdb34.jpg?1562718811
 value=3.756
 rarity=C
 type=Creature

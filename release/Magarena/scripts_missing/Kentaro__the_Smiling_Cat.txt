@@ -1,5 +1,5 @@
 name=Kentaro, the Smiling Cat
-image=https://magiccards.info/scans/en/bok/13.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddcea3b3-5852-4ae1-a952-7b392564cb9d.jpg?1562880249
 value=3.518
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Alhammarret, High Arbiter
-image=https://magiccards.info/scans/en/ori/43.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4200b101-19d3-4442-bddd-3eb77d5f99a9.jpg?1562016850
 image_updated=2015-11-05
 value=2.500
 rarity=R

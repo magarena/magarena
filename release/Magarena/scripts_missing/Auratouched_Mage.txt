@@ -1,5 +1,5 @@
 name=Auratouched Mage
-image=https://magiccards.info/scans/en/pc2/3.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58b6a101-a6b0-4277-932d-a89eb2741f7c.jpg?1562911369
 value=3.000
 rarity=U
 type=Creature

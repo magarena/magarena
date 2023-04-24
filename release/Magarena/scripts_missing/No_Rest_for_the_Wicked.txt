@@ -1,5 +1,5 @@
 name=No Rest for the Wicked
-image=https://magiccards.info/scans/en/10e/165.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65cfd454-5bc3-456c-9ca2-151af99f69ce.jpg?1562548933
 value=4.100
 rarity=U
 type=Enchantment

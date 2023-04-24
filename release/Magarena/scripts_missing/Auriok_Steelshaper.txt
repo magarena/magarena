@@ -1,5 +1,5 @@
 name=Auriok Steelshaper
-image=https://magiccards.info/scans/en/mi/4.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4dd09c01-5a77-4992-96ae-c395a5966a92.jpg?1626162174
 value=4.404
 rarity=R
 type=Creature

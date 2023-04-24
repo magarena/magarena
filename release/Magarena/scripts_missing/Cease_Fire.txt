@@ -1,5 +1,5 @@
 name=Cease-Fire
-image=https://magiccards.info/scans/en/od/14.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1646c998-aee5-497f-bd75-24ced1dabef9.jpg?1562899240
 value=2.776
 rarity=C
 type=Instant

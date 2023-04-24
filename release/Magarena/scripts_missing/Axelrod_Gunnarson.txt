@@ -1,5 +1,5 @@
 name=Axelrod Gunnarson
-image=https://magiccards.info/scans/en/lg/259.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97f2b387-661e-435f-96c9-d3d5a601caa9.jpg?1562927184
 value=2.674
 rarity=U
 type=Legendary,Creature

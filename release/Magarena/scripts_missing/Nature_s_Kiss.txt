@@ -1,5 +1,5 @@
 name=Nature's Kiss
-image=https://magiccards.info/scans/en/wl/78.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64b09c44-d463-45a9-9fa2-89407c21200b.jpg?1562801200
 value=2.467
 rarity=C
 type=Enchantment

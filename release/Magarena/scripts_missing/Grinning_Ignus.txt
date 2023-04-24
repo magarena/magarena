@@ -1,5 +1,5 @@
 name=Grinning Ignus
-image=https://magiccards.info/scans/en/mma/118.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cfa04897-6438-45e5-a10b-2e8afaf2b9eb.jpg?1657064689
 value=3.765
 rarity=U
 type=Creature

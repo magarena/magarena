@@ -1,5 +1,5 @@
 name=Duneblast
-image=https://magiccards.info/scans/en/c16/194.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a38e37b-d458-402a-8b36-13a0e0a115ce.jpg?1673305503
 image_updated=2017-08-17
 value=3.833
 rarity=R

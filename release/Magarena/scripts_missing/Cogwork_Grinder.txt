@@ -1,5 +1,5 @@
 name=Cogwork Grinder
-image=https://magiccards.info/scans/en/cns/57.jpg
+image=https://cards.scryfall.io/border_crop/front/8/0/807b1ac7-a495-4d67-a6c6-480d1b0522d8.jpg?1562865907
 value=3.278
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Inalla, Archmage Ritualist
-image=https://magiccards.info/scans/en/c17/38.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7c6e803a-451c-4aa6-97a2-400077f32c47.jpg?1627406462
 image_updated=2017-10-03
 value=2.500
 rarity=M

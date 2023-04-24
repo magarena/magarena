@@ -1,5 +1,5 @@
 name=Supply
-image=https://magiccards.info/scans/en/di/157a.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4628887-bda4-47e4-84d1-d31a8298f9e5.jpg?1593273970
 value=4.020
 rarity=U
 type=Sorcery

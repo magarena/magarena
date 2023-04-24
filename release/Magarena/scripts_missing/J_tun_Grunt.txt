@@ -1,5 +1,5 @@
 name=Jötun Grunt
-image=https://magiccards.info/scans/en/cmd/16.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91a2217c-8478-479b-a146-2d78f407a36f.jpg?1592712790
 value=3.956
 rarity=U
 type=Creature

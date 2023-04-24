@@ -1,5 +1,5 @@
 name=Essence Fracture
-image=https://magiccards.info/scans/en/on/82.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/df0b6c7a-0891-492d-8e07-6a198bf2ccc4.jpg?1562948076
 value=1.979
 rarity=U
 type=Sorcery

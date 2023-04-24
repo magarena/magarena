@@ -1,5 +1,5 @@
 name=Ugin, the Spirit Dragon
-image=https://magiccards.info/scans/en/frf/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c017fa9-7021-417a-9c2e-3df409644fcf.jpg?1639052473
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

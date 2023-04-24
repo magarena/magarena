@@ -1,5 +1,5 @@
 name=Crumble to Dust
-image=https://magiccards.info/scans/en/bfz/128.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63352c11-807d-4878-a975-02ef451c3184.jpg?1562918343
 image_updated=2015-11-08
 value=2.500
 rarity=U

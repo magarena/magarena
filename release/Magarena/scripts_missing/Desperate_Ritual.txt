@@ -1,5 +1,5 @@
 name=Desperate Ritual
-image=https://magiccards.info/scans/en/mma/110.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3825b85d-07df-43b9-a8d8-930863262d83.jpg?1547517210
 value=4.325
 rarity=U
 type=Instant

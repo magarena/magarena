@@ -1,5 +1,5 @@
 name=Marble Priest
-image=https://magiccards.info/scans/en/lg/231.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/459b71d7-34c1-43b9-93ff-364f95aa4789.jpg?1562858713
 value=1.919
 rarity=U
 type=Artifact,Creature

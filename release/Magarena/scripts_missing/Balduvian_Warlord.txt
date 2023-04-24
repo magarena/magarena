@@ -1,5 +1,5 @@
 name=Balduvian Warlord
-image=https://magiccards.info/scans/en/cs/77.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3286dbd-c8b8-45cb-98e4-d572289f2c14.jpg?1593275209
 value=2.956
 rarity=U
 type=Creature

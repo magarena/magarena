@@ -1,5 +1,5 @@
 name=Circle of Protection: Artifacts
-image=https://magiccards.info/scans/en/5dn/8.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b09e7267-3d71-4724-b3e7-ae5a6a1f002a.jpg?1562879213
 value=2.840
 rarity=U
 type=Enchantment

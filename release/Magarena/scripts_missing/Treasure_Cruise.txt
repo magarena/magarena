@@ -1,5 +1,5 @@
 name=Treasure Cruise
-image=https://magiccards.info/scans/en/c16/101.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/64edb748-497d-4737-9d7f-37105fb20cb9.jpg?1673484053
 image_updated=2017-08-17
 value=3.333
 rarity=C

@@ -1,5 +1,5 @@
 name=Benefaction of Rhonas
-image=https://magiccards.info/scans/en/akh/156.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc98fcdd-8482-4462-ab71-935cea48e409.jpg?1543675752
 value=2.500
 rarity=C
 type=Sorcery

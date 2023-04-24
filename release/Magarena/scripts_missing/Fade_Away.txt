@@ -1,5 +1,5 @@
 name=Fade Away
-image=https://magiccards.info/scans/en/ex/34.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a6f9103e-dcc2-4f7a-a8ca-eaa831f5f83b.jpg?1562088339
 value=4.195
 rarity=C
 type=Sorcery

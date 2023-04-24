@@ -1,5 +1,5 @@
 name=Johtull Wurm
-image=https://magiccards.info/scans/en/5e/168.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff4f2361-2f99-41f5-b295-ca26c9eee27c.jpg?1562870983
 value=2.039
 rarity=U
 type=Creature

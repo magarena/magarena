@@ -1,5 +1,5 @@
 name=Nettlevine Blight
-image=https://magiccards.info/scans/en/lw/131.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd6b1240-0bc3-401a-9cc3-3acaea871a3d.jpg?1562371054
 value=3.785
 rarity=R
 type=Enchantment

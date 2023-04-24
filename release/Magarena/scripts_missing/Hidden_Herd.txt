@@ -1,5 +1,5 @@
 name=Hidden Herd
-image=https://magiccards.info/scans/en/us/262.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20f07992-1f81-440a-a80a-164c44d0a471.jpg?1562901941
 value=3.750
 rarity=R
 type=Enchantment

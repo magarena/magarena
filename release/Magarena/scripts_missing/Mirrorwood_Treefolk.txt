@@ -1,5 +1,5 @@
 name=Mirrorwood Treefolk
-image=https://magiccards.info/scans/en/ps/83.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba9a1c94-2b7f-4df7-8517-a122616d9ae4.jpg?1562934450
 value=3.359
 rarity=U
 type=Creature

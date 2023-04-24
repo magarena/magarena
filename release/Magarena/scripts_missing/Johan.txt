@@ -1,5 +1,5 @@
 name=Johan
-image=https://magiccards.info/scans/en/lg/276.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f2f3b3e-63f3-4cab-aa95-030990157ed5.jpg?1562904625
 image_updated=2016-12-20
 value=3.284
 rarity=R

@@ -1,5 +1,5 @@
 name=Do or Die
-image=https://magiccards.info/scans/en/in/102.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05f63cd9-e82b-4cf8-b8ce-f0aa0157692b.jpg?1562896148
 value=4.263
 rarity=R
 type=Sorcery

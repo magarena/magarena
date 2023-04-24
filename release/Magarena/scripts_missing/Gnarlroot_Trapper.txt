@@ -1,5 +1,5 @@
 name=Gnarlroot Trapper
-image=https://magiccards.info/scans/en/ori/100.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e05572ba-3a26-41f5-96c1-960ec9367178.jpg?1562046118
 image_updated=2015-11-05
 value=2.500
 rarity=U

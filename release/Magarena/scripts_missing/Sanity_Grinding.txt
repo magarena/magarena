@@ -1,5 +1,5 @@
 name=Sanity Grinding
-image=https://magiccards.info/scans/en/eve/29.jpg
+image=https://cards.scryfall.io/border_crop/front/7/d/7d3e377f-6bb7-4fa1-b58b-7e2af06ca4b7.jpg?1562921379
 value=3.517
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Jugan, the Rising Star
-image=https://magiccards.info/scans/en/ima/172.jpg
+image=https://cards.scryfall.io/border_crop/front/d/8/d897caab-3720-4f1a-bf38-4ba266352567.jpg?1562854641
 image_updated=2017-04-12
 value=3.717
 rarity=R

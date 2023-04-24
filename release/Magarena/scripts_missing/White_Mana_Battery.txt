@@ -1,5 +1,5 @@
 name=White Mana Battery
-image=https://magiccards.info/scans/en/4e/375.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b622e694-858d-482f-a67d-0e52d268708c.jpg?1559603877
 value=2.304
 rarity=R
 type=Artifact

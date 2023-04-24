@@ -1,5 +1,5 @@
 name=Radiate
-image=https://magiccards.info/scans/en/tr/113.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/2562c25a-999e-4fb5-a595-f376c8abf1ff.jpg?1562628967
 value=4.091
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Regal Behemoth
-image=https://magiccards.info/scans/en/cn2/69.jpg
+image=https://cards.scryfall.io/border_crop/front/6/4/644e5b24-394a-43f1-8384-186d6108f540.jpg?1576382089
 image_updated=2016-09-05
 value=2.500
 rarity=R

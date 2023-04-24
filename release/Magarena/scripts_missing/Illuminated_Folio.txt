@@ -1,5 +1,5 @@
 name=Illuminated Folio
-image=https://magiccards.info/scans/en/shm/254.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73d473d9-f52e-4357-b25a-e8bdcc833f09.jpg?1562831711
 value=2.284
 rarity=U
 type=Artifact

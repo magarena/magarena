@@ -1,5 +1,5 @@
 name=Fertile Imagination
-image=https://magiccards.info/scans/en/di/84.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5c879af-a092-4cc4-a53d-760553d94864.jpg?1593273381
 value=2.097
 rarity=U
 type=Sorcery

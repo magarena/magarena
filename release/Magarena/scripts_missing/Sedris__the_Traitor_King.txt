@@ -1,5 +1,5 @@
 name=Sedris, the Traitor King
-image=https://magiccards.info/scans/en/ala/193.jpg
+image=https://cards.scryfall.io/border_crop/front/a/4/a4e787a7-3721-4ba7-b643-a103488cfc8a.jpg?1673149122
 value=3.579
 rarity=M
 type=Legendary,Creature

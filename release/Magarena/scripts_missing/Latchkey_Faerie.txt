@@ -1,5 +1,5 @@
 name=Latchkey Faerie
-image=https://magiccards.info/scans/en/mma/50.jpg
+image=https://cards.scryfall.io/border_crop/front/e/5/e5cada19-bf8a-47a7-b259-8dd0e1de215e.jpg?1604192486
 value=3.107
 rarity=C
 type=Creature

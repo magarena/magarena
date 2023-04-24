@@ -1,5 +1,5 @@
 name=Untaidake, the Cloud Keeper
-image=https://magiccards.info/scans/en/chk/285.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c571f66-7a00-4cb0-9da9-8271083f49d3.jpg?1562759358
 value=0.893
 rarity=R
 type=Legendary,Land

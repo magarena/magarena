@@ -1,5 +1,5 @@
 name=Kor Chant
-image=https://magiccards.info/scans/en/cns/73.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/27e20ee1-ab61-463b-b516-0a883d9c7c39.jpg?1562428857
 value=2.500
 rarity=C
 type=Instant

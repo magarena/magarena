@@ -1,5 +1,5 @@
 name=Harvester Druid
-image=https://magiccards.info/scans/en/ju/120.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97337e6e-1b3f-43a2-91f2-ca8f6c5dea88.jpg?1562631049
 value=2.984
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lotus Vale
-image=https://magiccards.info/scans/en/wl/165.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e5cd12a-2a07-44a8-8eac-de00d26fe9e3.jpg?1562800046
 value=4.326
 rarity=R
 type=Land

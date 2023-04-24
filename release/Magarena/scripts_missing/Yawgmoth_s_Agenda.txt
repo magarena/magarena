@@ -1,5 +1,5 @@
 name=Yawgmoth's Agenda
-image=https://magiccards.info/scans/en/in/135.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50f7ea7f-4f17-4f78-b68e-693e265ca829.jpg?1591196215
 value=4.000
 rarity=R
 type=Enchantment

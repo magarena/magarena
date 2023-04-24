@@ -1,5 +1,5 @@
 name=Arc Trail
-image=https://magiccards.info/scans/en/ddn/23.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56306d90-7f58-4559-954c-f8ca43d04be8.jpg?1562910835
 value=2.500
 rarity=U
 type=Sorcery

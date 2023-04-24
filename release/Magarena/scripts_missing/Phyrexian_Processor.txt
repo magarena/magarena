@@ -1,5 +1,5 @@
 name=Phyrexian Processor
-image=https://magiccards.info/scans/en/us/306.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04789161-f0a8-4ba5-832f-4d585c5117a6.jpg?1562895906
 image_updated=2017-01-03
 value=4.562
 rarity=R

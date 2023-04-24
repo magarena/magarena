@@ -1,5 +1,5 @@
 name=Dragonlord Kolaghan
-image=https://magiccards.info/scans/en/dtk/218.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1cbf8933-32a1-4892-9bdc-89464ed9ce1b.jpg?1562783323
 value=2.500
 rarity=M
 type=Legendary,Creature

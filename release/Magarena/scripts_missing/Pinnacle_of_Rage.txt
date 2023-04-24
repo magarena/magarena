@@ -1,5 +1,5 @@
 name=Pinnacle of Rage
-image=https://magiccards.info/scans/en/bng/105.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b26ff2fa-82de-4831-9341-a446abf9ed03.jpg?1593092319
 value=2.077
 rarity=U
 type=Sorcery

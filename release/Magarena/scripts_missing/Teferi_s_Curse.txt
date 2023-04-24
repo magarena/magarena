@@ -1,5 +1,5 @@
 name=Teferi's Curse
-image=https://magiccards.info/scans/en/mr/96.jpg
+image=https://cards.scryfall.io/border_crop/front/f/b/fb813ef5-8441-4024-a585-1ea24145e1bd.jpg?1562722870
 value=3.050
 rarity=C
 type=Enchantment

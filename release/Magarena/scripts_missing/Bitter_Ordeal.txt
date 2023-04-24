@@ -1,5 +1,5 @@
 name=Bitter Ordeal
-image=https://magiccards.info/scans/en/fut/80.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/2879e7a1-0256-4116-be22-7c9972e4ce0b.jpg?1562903258
 value=4.350
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Huatli, Dinosaur Knight
-image=https://magiccards.info/scans/en/xln/285.jpg
+image=https://cards.scryfall.io/border_crop/front/6/a/6a5a6f7b-149d-46d3-9814-d38a302db17c.jpg?1562556991
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

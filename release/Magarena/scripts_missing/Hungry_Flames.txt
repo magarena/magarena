@@ -1,5 +1,5 @@
 name=Hungry Flames
-image=https://magiccards.info/scans/en/aer/84.jpg
+image=https://cards.scryfall.io/border_crop/front/0/7/07392a36-e63a-4648-b8df-1172403922eb.jpg?1601078134
 value=2.500
 rarity=U
 type=Instant

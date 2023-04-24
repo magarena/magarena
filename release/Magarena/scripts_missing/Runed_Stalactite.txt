@@ -1,5 +1,5 @@
 name=Runed Stalactite
-image=https://magiccards.info/scans/en/mma/214.jpg
+image=https://cards.scryfall.io/border_crop/front/a/5/a54f50fe-d4c0-49ba-9063-853c76ae3e19.jpg?1561968070
 value=3.667
 rarity=C
 type=Artifact

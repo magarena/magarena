@@ -1,5 +1,5 @@
 name=Patrician's Scorn
-image=https://magiccards.info/scans/en/fut/29.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4edfd70c-2923-4813-bf14-04194518163c.jpg?1562910969
 value=3.423
 rarity=C
 type=Instant

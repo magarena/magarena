@@ -1,5 +1,5 @@
 name=Scythe of the Wretched
-image=https://magiccards.info/scans/en/mi/239.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/143e7a81-fb3d-4bad-854a-b24138ca7415.jpg?1562136611
 value=4.380
 rarity=R
 type=Artifact

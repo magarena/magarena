@@ -1,5 +1,5 @@
 name=Martyr's Bond
-image=https://magiccards.info/scans/en/cmd/19.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2ff99e85-bfb7-4c8c-a8e1-3b0618ffe479.jpg?1592712816
 value=4.127
 rarity=R
 type=Enchantment

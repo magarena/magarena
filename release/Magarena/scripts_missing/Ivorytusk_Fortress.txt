@@ -1,5 +1,5 @@
 name=Ivorytusk Fortress
-image=https://magiccards.info/scans/en/ktk/179.jpg
+image=https://cards.scryfall.io/border_crop/front/7/5/75a8df73-0141-4c07-87d8-b1f34a4b374b.jpg?1562788730
 value=4.167
 rarity=R
 type=Creature

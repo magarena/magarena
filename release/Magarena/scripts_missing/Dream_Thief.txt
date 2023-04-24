@@ -1,5 +1,5 @@
 name=Dream Thief
-image=https://magiccards.info/scans/en/eve/20.jpg
+image=https://cards.scryfall.io/border_crop/front/8/1/811026ed-1bae-4464-bdfe-dcec76259152.jpg?1562922224
 value=2.256
 rarity=C
 type=Creature

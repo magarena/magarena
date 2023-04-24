@@ -1,5 +1,5 @@
 name=Vampiric Dragon
-image=https://magiccards.info/scans/en/od/296.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bf8eff8-6b39-4e5e-b8a9-1da53e837809.jpg?1641603546
 image_updated=2017-01-11
 value=4.070
 rarity=R

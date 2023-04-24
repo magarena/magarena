@@ -1,5 +1,5 @@
 name=Ancient Animus
-image=https://magiccards.info/scans/en/dom/154.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5ee76006-5272-400d-b6b2-e1548bca9dbf.jpg?1608910534
 value=2.500
 rarity=C
 type=Instant

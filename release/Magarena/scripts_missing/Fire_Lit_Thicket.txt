@@ -1,5 +1,5 @@
 name=Fire-Lit Thicket
-image=https://magiccards.info/scans/en/shm/271.jpg
+image=https://cards.scryfall.io/border_crop/front/1/9/1927d645-ca43-4b8e-9932-7e70acca7aa6.jpg?1599710453
 value=4.275
 rarity=R
 type=Land

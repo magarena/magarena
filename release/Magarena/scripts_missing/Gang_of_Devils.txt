@@ -1,5 +1,5 @@
 name=Gang of Devils
-image=https://magiccards.info/scans/en/cn2/158.jpg
+image=https://cards.scryfall.io/border_crop/front/4/4/4478151a-5c4e-49dc-9405-2481395ed28f.jpg?1576382847
 image_updated=2017-08-29
 value=2.875
 rarity=U

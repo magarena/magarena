@@ -1,5 +1,5 @@
 name=Tezzeret the Seeker
-image=https://magiccards.info/scans/en/mm2/62.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf339735-eb1a-46f0-8c3e-eae06f278eca.jpg?1562267436
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

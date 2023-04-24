@@ -1,5 +1,5 @@
 name=Bold Defense
-image=https://magiccards.info/scans/en/zen/3.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f657723-dd5d-4786-9d9b-ac7ed279615a.jpg?1562612676
 value=1.569
 rarity=C
 type=Instant

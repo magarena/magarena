@@ -1,5 +1,5 @@
 name=Thought Harvester
-image=https://magiccards.info/scans/en/ogw/48.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/46f9eeb2-22f6-4bdb-bbf8-f53774cc6226.jpg?1562909433
 image_updated=2016-02-29
 value=2.500
 rarity=U

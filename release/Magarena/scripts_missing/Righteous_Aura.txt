@@ -1,5 +1,5 @@
 name=Righteous Aura
-image=https://magiccards.info/scans/en/mm/45.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/66d3bcb4-6cbd-4144-a95d-f61e68c10296.jpg?1562381339
 value=3.483
 rarity=U
 type=Enchantment

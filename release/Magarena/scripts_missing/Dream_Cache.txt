@@ -1,5 +1,5 @@
 name=Dream Cache
-image=https://magiccards.info/scans/en/6e/66.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d7da182c-cde3-40d8-976e-a88427a1edb8.jpg?1592710563
 value=3.514
 rarity=C
 type=Sorcery

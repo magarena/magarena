@@ -1,5 +1,5 @@
 name=Display of Dominance
-image=https://magiccards.info/scans/en/dtk/182.jpg
+image=https://cards.scryfall.io/border_crop/front/6/5/65572ff2-281f-431d-b776-e8231f24d2c6.jpg?1562787433
 value=2.500
 rarity=U
 type=Instant

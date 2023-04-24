@@ -1,5 +1,5 @@
 name=Overgrowth
-image=https://magiccards.info/scans/en/10e/283.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e2e1694b-4d69-4961-b189-a7ba25a11836.jpg?1592710963
 value=3.854
 rarity=C
 type=Enchantment

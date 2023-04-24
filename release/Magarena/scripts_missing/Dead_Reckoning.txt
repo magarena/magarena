@@ -1,5 +1,5 @@
 name=Dead Reckoning
-image=https://magiccards.info/scans/en/wwk/56.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad16a3b8-e99e-47ed-92ce-ef42310f9f46.jpg?1562293613
 value=3.194
 rarity=C
 type=Sorcery

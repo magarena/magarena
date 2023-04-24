@@ -1,5 +1,5 @@
 name=Mistform Dreamer
-image=https://magiccards.info/scans/en/on/93.jpg
+image=https://cards.scryfall.io/border_crop/front/f/f/ff34e303-c94a-4f5f-b9f6-8d48e6aac383.jpg?1562955425
 value=1.975
 rarity=C
 type=Creature

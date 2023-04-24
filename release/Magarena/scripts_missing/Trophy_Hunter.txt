@@ -1,5 +1,5 @@
 name=Trophy Hunter
-image=https://magiccards.info/scans/en/rav/187.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f18d1047-9010-437c-94ab-7a8ad3a0250f.jpg?1598916666
 value=3.375
 rarity=U
 type=Creature

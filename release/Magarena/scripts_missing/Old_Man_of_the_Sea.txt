@@ -1,5 +1,5 @@
 name=Old Man of the Sea
-image=https://magiccards.info/scans/en/an/24.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/9029ff19-753d-4031-a192-d36b165ebfe5.jpg?1562925370
 value=4.430
 rarity=R
 type=Creature

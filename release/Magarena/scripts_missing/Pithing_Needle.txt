@@ -1,5 +1,5 @@
 name=Pithing Needle
-image=https://magiccards.info/scans/en/rtr/231.jpg
+image=https://cards.scryfall.io/border_crop/front/7/7/776899f8-e977-42b7-8b54-6f726a349e3c.jpg?1673149414
 value=4.304
 rarity=R
 type=Artifact

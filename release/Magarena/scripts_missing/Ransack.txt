@@ -1,5 +1,5 @@
 name=Ransack
-image=https://magiccards.info/scans/en/st/47.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/97b8db82-4632-40fd-b1e2-7172ddf8d6de.jpg?1562875015
 value=3.452
 rarity=R
 type=Sorcery

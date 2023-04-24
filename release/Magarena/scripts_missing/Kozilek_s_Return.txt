@@ -1,5 +1,5 @@
 name=Kozilek's Return
-image=https://magiccards.info/scans/en/ogw/98.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72765559-0a78-4aa3-827e-cb4612720991.jpg?1618608556
 image_updated=2016-02-29
 value=2.500
 rarity=M

@@ -1,5 +1,5 @@
 name=Weed Strangle
-image=https://magiccards.info/scans/en/lw/147.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1f7fb79-19a8-483a-bf91-e687f7da4e9c.jpg?1562366513
 value=2.520
 rarity=C
 type=Sorcery

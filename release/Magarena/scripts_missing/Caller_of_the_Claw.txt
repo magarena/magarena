@@ -1,5 +1,5 @@
 name=Caller of the Claw
-image=https://magiccards.info/scans/en/le/121.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/917c5e37-c15e-4260-b380-f1c73df2bf41.jpg?1562707134
 image_updated=2016-02-29
 value=3.955
 rarity=R

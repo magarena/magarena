@@ -1,5 +1,5 @@
 name=Alms Collector
-image=https://magiccards.info/scans/en/c17/1.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fe88f96-fd3a-44e5-aa05-3bc63581e33d.jpg?1562618485
 image_updated=2017-10-03
 value=2.500
 rarity=R

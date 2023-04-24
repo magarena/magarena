@@ -1,5 +1,5 @@
 name=Lord Magnus
-image=https://magiccards.info/scans/en/lg/283.jpg
+image=https://cards.scryfall.io/border_crop/front/2/a/2a02aabb-c464-4672-b37b-d5d713ef8939.jpg?1562858232
 value=2.429
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Overwhelming Instinct
-image=https://magiccards.info/scans/en/on/276.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d9e3793-7ddc-45c5-b25d-acd5cb96026f.jpg?1562905696
 value=3.644
 rarity=U
 type=Enchantment

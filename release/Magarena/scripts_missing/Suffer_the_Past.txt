@@ -1,5 +1,5 @@
 name=Suffer the Past
-image=https://magiccards.info/scans/en/roe/128.jpg
+image=https://cards.scryfall.io/border_crop/front/4/0/40696611-b5eb-4d69-9614-c694f3422523.jpg?1625193427
 value=4.047
 rarity=U
 type=Instant

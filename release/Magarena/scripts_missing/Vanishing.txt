@@ -1,5 +1,5 @@
 name=Vanishing
-image=https://magiccards.info/scans/en/vi/48.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d1fb805-1382-458c-b98d-4491f13833b6.jpg?1562278150
 value=3.333
 rarity=C
 type=Enchantment

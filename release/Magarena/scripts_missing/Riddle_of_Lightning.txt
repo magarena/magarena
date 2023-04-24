@@ -1,5 +1,5 @@
 name=Riddle of Lightning
-image=https://magiccards.info/scans/en/jou/107.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e380151-abb6-457c-bac9-39f1a3744ed0.jpg?1619397446
 value=3.528
 rarity=U
 type=Instant

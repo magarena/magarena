@@ -1,5 +1,5 @@
 name=Charmed Pendant
-image=https://magiccards.info/scans/en/od/298.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/701942dd-7777-436f-8076-194584be8285.jpg?1562915770
 value=2.855
 rarity=R
 type=Artifact

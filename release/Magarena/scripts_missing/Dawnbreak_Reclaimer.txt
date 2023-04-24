@@ -1,5 +1,5 @@
 name=Dawnbreak Reclaimer
-image=https://magiccards.info/scans/en/c15/2.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6d097f4-4831-4611-81d9-3a09b7926d1a.jpg?1562275564
 image_updated=2016-02-29
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Soothsaying
-image=https://magiccards.info/scans/en/mm/104.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/def384ff-1b6f-4c4f-8151-3c72c29b63ce.jpg?1562383502
 value=4.303
 rarity=U
 type=Enchantment

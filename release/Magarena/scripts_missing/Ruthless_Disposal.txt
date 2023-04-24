@@ -1,5 +1,5 @@
 name=Ruthless Disposal
-image=https://magiccards.info/scans/en/emn/103.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/fe81c78f-e3e2-4513-9711-896e6a1e6aba.jpg?1576384407
 image_updated=2016-09-05
 value=2.500
 rarity=U

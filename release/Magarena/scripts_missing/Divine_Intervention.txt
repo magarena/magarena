@@ -1,5 +1,5 @@
 name=Divine Intervention
-image=https://magiccards.info/scans/en/lg/177.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e250897e-a875-4c3c-bfec-4a09143dd587.jpg?1562942721
 value=3.623
 rarity=R
 type=Enchantment

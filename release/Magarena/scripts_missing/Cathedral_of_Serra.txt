@@ -1,5 +1,5 @@
 name=Cathedral of Serra
-image=https://magiccards.info/scans/en/lg/246.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e65356e6-0ead-49fd-b069-be1ea9b1c105.jpg?1562861376
 value=1.506
 rarity=U
 type=Land

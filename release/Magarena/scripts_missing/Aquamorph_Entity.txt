@@ -1,5 +1,5 @@
 name=Aquamorph Entity
-image=https://magiccards.info/scans/en/ddn/54.jpg
+image=https://cards.scryfall.io/border_crop/front/6/9/69402ba7-5dac-43f6-bba4-429fac35a96b.jpg?1592754892
 value=2.500
 rarity=C
 type=Creature

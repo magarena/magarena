@@ -1,5 +1,5 @@
 name=Familiar Ground
-image=https://magiccards.info/scans/en/7e/243.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a26e990d-726c-4b3b-84b4-9c15a5c4be8c.jpg?1562244577
 value=3.360
 rarity=U
 type=Enchantment

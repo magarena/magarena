@@ -1,5 +1,5 @@
 name=Bushi Tenderfoot
-image=https://magiccards.info/scans/en/chk/2a.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/864ad989-19a6-4930-8efc-bbc077a18c32.jpg?1562762069
 value=3.827
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Worldly Counsel
-image=https://magiccards.info/scans/en/cfx/39.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b454cbdc-b2ff-4b6a-acaf-b7cf52359f0b.jpg?1562803244
 value=2.934
 rarity=C
 type=Instant

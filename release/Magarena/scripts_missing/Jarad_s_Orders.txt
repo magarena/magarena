@@ -1,5 +1,5 @@
 name=Jarad's Orders
-image=https://magiccards.info/scans/en/rtr/175.jpg
+image=https://cards.scryfall.io/border_crop/front/c/5/c59171ce-7dc6-4dd9-a124-3c2c3028d93d.jpg?1562792935
 value=3.785
 rarity=R
 type=Sorcery

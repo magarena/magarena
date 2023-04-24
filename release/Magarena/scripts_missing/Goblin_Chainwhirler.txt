@@ -1,5 +1,5 @@
 name=Goblin Chainwhirler
-image=https://magiccards.info/scans/en/dom/129.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bdb2883-3cfd-4fb0-9f99-6a57277f7fe4.jpg?1562739277
 value=2.500
 rarity=R
 type=Creature

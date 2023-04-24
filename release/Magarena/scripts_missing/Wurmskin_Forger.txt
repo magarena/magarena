@@ -1,5 +1,5 @@
 name=Wurmskin Forger
-image=https://magiccards.info/scans/en/mi/140.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f14f303e-371b-47dd-bbb8-7f3e44ef9af0.jpg?1562162934
 value=1.264
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ghastly Remains
-image=https://magiccards.info/scans/en/le/71.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/63e67323-df54-4043-a6b6-18bb89ef1f62.jpg?1562915232
 value=3.000
 rarity=R
 type=Creature

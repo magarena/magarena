@@ -1,5 +1,5 @@
 name=Death's Duet
-image=https://magiccards.info/scans/en/ex/60.jpg
+image=https://cards.scryfall.io/border_crop/front/6/6/666647e9-afc3-4b04-bad9-b4ce11438ee4.jpg?1562429831
 value=2.500
 rarity=C
 type=Sorcery

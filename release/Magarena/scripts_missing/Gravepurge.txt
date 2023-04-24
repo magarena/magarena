@@ -1,5 +1,5 @@
 name=Gravepurge
-image=https://magiccards.info/scans/en/dtk/104.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b5bf549c-799f-456f-85d5-8a7302bc729d.jpg?1562791933
 value=2.500
 rarity=C
 type=Instant

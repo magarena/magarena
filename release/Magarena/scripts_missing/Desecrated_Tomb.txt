@@ -1,5 +1,5 @@
 name=Desecrated Tomb
-image=https://magiccards.info/scans/en/m19/230.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/458ce930-c100-4ef5-b75a-a18051282f8c.jpg?1562301761
 value=2.500
 rarity=R
 type=Artifact

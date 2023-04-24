@@ -1,5 +1,5 @@
 name=Thick-Skinned Goblin
-image=https://magiccards.info/scans/en/ts/182.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96f6dfd2-f4b1-41bc-b848-5afa30b13e36.jpg?1619402690
 value=4.131
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Heaven's Gate
-image=https://magiccards.info/scans/en/lg/188.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/461d7c11-3a7d-42c2-bb6b-0a43779e6842.jpg?1562858716
 value=1.955
 rarity=U
 type=Instant

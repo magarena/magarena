@@ -1,5 +1,5 @@
 name=Riding the Dilu Horse
-image=https://magiccards.info/scans/en/p3k/144.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/56fe32f2-8967-4814-b43b-bdccd2019bdf.jpg?1562913167
 value=4.070
 rarity=R
 type=Sorcery

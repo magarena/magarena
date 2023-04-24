@@ -1,5 +1,5 @@
 name=Anointed Procession
-image=https://magiccards.info/scans/en/akh/2.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a52c265-6920-4929-ba0a-70da08df01f1.jpg?1543674565
 value=2.500
 rarity=R
 type=Enchantment

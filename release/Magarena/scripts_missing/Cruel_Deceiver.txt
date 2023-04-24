@@ -1,5 +1,5 @@
 name=Cruel Deceiver
-image=https://magiccards.info/scans/en/chk/106.jpg
+image=https://cards.scryfall.io/border_crop/front/7/c/7cc6972a-5305-423f-a936-16ee0fbf9200.jpg?1562761990
 value=2.243
 rarity=C
 type=Creature

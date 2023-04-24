@@ -1,5 +1,5 @@
 name=Dwarven Landslide
-image=https://magiccards.info/scans/en/ap/60.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48ab243e-d08d-4ece-9725-4bb5f67b1c92.jpg?1562911973
 value=2.057
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Tainted Sigil
-image=https://magiccards.info/scans/en/arb/83.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/abcf3694-d6b0-459d-8c3a-1532237b487a.jpg?1562643530
 value=3.236
 rarity=U
 type=Artifact

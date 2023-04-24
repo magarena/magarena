@@ -1,5 +1,5 @@
 name=Mirror of Fate
-image=https://magiccards.info/scans/en/m10/215.jpg
+image=https://cards.scryfall.io/border_crop/front/0/8/08b480c8-d899-4e63-b0e2-f4bec3a3ca4f.jpg?1561970534
 value=2.822
 rarity=R
 type=Artifact

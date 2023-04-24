@@ -1,5 +1,5 @@
 name=Callous Oppressor
-image=https://magiccards.info/scans/en/on/72.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3dd3ce7-e0e3-4412-9983-ff933584f59b.jpg?1562937464
 value=3.514
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Meteor Crater
-image=https://magiccards.info/scans/en/ps/140.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/043a2299-1cfc-4732-a10a-58c773b9992c.jpg?1562895865
 value=4.105
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Aquitect's Will
-image=https://magiccards.info/scans/en/lw/52.jpg
+image=https://cards.scryfall.io/border_crop/front/3/c/3c4273f6-bcce-4761-80ef-14cd4fc4bb19.jpg?1592764555
 value=3.611
 rarity=C
 type=Tribal,Sorcery

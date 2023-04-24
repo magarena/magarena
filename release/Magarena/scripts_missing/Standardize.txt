@@ -1,5 +1,5 @@
 name=Standardize
-image=https://magiccards.info/scans/en/on/116.jpg
+image=https://cards.scryfall.io/border_crop/front/f/2/f2c79e64-91bf-4e87-a4fd-3136ea67c5bb.jpg?1562952624
 value=3.350
 rarity=R
 type=Instant

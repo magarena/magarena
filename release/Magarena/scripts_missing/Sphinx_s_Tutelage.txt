@@ -1,5 +1,5 @@
 name=Sphinx's Tutelage
-image=https://magiccards.info/scans/en/ori/76.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d90c3b0-f958-4a15-94a1-9bf1b0a9ac2a.jpg?1562018976
 image_updated=2015-11-05
 value=2.500
 rarity=U

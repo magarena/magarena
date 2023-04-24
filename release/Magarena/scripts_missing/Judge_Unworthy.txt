@@ -1,5 +1,5 @@
 name=Judge Unworthy
-image=https://magiccards.info/scans/en/fut/9.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ce06e910-e130-4975-92db-1399ff3d44b7.jpg?1619392978
 value=3.429
 rarity=C
 type=Instant

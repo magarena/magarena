@@ -1,5 +1,5 @@
 name=Taigam, Ojutai Master
-image=https://magiccards.info/scans/en/c17/46.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b47e2781-544f-442c-98d0-43b9d91bab03.jpg?1562621099
 image_updated=2017-10-03
 value=2.500
 rarity=R

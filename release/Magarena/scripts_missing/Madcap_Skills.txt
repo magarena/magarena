@@ -1,5 +1,5 @@
 name=Madcap Skills
-image=https://magiccards.info/scans/en/mm3/99.jpg
+image=https://cards.scryfall.io/border_crop/front/b/a/ba77b1ff-e73d-4181-9564-d71df348b2fe.jpg?1593813488
 image_updated=2017-08-08
 value=3.667
 rarity=C

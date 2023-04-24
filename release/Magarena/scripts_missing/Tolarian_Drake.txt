@@ -1,5 +1,5 @@
 name=Tolarian Drake
-image=https://magiccards.info/scans/en/wl/55.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e04bba8a-48ee-4981-adc2-4f82c0f2c1bd.jpg?1562803819
 value=2.379
 rarity=C
 type=Creature

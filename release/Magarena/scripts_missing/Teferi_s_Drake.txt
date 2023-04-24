@@ -1,5 +1,5 @@
 name=Teferi's Drake
-image=https://magiccards.info/scans/en/mr/97.jpg
+image=https://cards.scryfall.io/border_crop/front/c/2/c24823df-5651-4578-a0c8-f9f52f66abe4.jpg?1587912469
 value=2.823
 rarity=C
 type=Creature

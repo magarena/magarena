@@ -1,5 +1,5 @@
 name=Sparktongue Dragon
-image=https://magiccards.info/scans/en/m19/159.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/289a3c60-c740-4e2e-a622-a749ed230c5b.jpg?1608910420
 value=2.500
 rarity=C
 type=Creature

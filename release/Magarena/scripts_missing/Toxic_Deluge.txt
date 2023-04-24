@@ -1,5 +1,5 @@
 name=Toxic Deluge
-image=https://magiccards.info/scans/en/ema/108.jpg
+image=https://cards.scryfall.io/border_crop/front/d/b/db34617f-b04f-4b65-84cf-5c5be1eb7226.jpg?1651951814
 value=4.576
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Omen
-image=https://magiccards.info/scans/en/po/63.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6be1956e-c43e-4a6c-950a-5be6e6ca013f.jpg?1562446859
 value=2.314
 rarity=C
 type=Sorcery

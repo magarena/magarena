@@ -1,5 +1,5 @@
 name=Crown of Vigor
-image=https://magiccards.info/scans/en/on/253.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e7e320a6-88e2-4be1-97e2-30e0f3c2e450.jpg?1562950225
 value=2.276
 rarity=C
 type=Enchantment

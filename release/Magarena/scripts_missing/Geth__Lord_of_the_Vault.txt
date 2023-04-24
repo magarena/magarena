@@ -1,5 +1,5 @@
 name=Geth, Lord of the Vault
-image=https://magiccards.info/scans/en/som/64.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/920d56a4-fc94-43d8-9d65-361b66172a5f.jpg?1598304744
 value=4.034
 rarity=M
 type=Legendary,Creature

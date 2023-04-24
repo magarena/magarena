@@ -1,5 +1,5 @@
 name=Decimate
-image=https://magiccards.info/scans/en/c16/193.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a99f8c13-c4bd-4e6c-8059-ef5e6ad30331.jpg?1651656163
 image_updated=2017-08-17
 value=4.357
 rarity=R

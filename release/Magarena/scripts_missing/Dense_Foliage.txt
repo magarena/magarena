@@ -1,5 +1,5 @@
 name=Dense Foliage
-image=https://magiccards.info/scans/en/6e/221.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6232f04-cd4c-4889-97dc-cccc4a09f9c4.jpg?1562824730
 value=4.216
 rarity=R
 type=Enchantment

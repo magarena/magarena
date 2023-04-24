@@ -1,5 +1,5 @@
 name=Brand of Ill Omen
-image=https://magiccards.info/scans/en/ia/177.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/ceeb7bbc-2d41-4709-95be-1ceb952ed1fb.jpg?1587911895
 value=3.630
 rarity=R
 type=Enchantment

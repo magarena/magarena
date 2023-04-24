@@ -1,5 +1,5 @@
 name=Gomazoa
-image=https://magiccards.info/scans/en/cmd/48.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4d2c0c7e-a486-45c5-92fa-f36087714ad3.jpg?1592713019
 value=3.671
 rarity=U
 type=Creature

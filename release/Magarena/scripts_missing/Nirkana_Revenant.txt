@@ -1,5 +1,5 @@
 name=Nirkana Revenant
-image=https://magiccards.info/scans/en/roe/120.jpg
+image=https://cards.scryfall.io/border_crop/front/9/6/96da0a4c-2865-4383-875a-9f5d6503baee.jpg?1641602776
 value=4.251
 rarity=M
 type=Creature

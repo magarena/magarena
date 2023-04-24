@@ -1,5 +1,5 @@
 name=Deadly Tempest
-image=https://magiccards.info/scans/en/c15/19.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f673d4a-76fa-4e9d-b7f6-299d80c55cb5.jpg?1625976828
 image_updated=2016-02-29
 value=2.500
 rarity=R

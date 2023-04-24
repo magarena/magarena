@@ -1,5 +1,5 @@
 name=Wild Evocation
-image=https://magiccards.info/scans/en/m11/160.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b39aea56-5c56-4241-81c9-928c3253d7c9.jpg?1562472155
 value=3.826
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Stone-Tongue Basilisk
-image=https://magiccards.info/scans/en/od/276.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/938d5157-154c-4300-82d4-0e23d934d436.jpg?1562922364
 value=3.600
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Militia Bugler
-image=https://magiccards.info/scans/en/m19/29.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5fe9413b-5702-4998-aed7-d3a1102a8d7e.jpg?1673147040
 value=2.500
 rarity=U
 type=Creature

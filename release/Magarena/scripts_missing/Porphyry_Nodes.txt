@@ -1,5 +1,5 @@
 name=Porphyry Nodes
-image=https://magiccards.info/scans/en/pc/28.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfe6f333-ccb4-44ea-be59-bba6335acf99.jpg?1619393260
 value=4.198
 rarity=R
 type=Enchantment

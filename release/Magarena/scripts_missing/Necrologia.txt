@@ -1,5 +1,5 @@
 name=Necrologia
-image=https://magiccards.info/scans/en/7e/149.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3e1f268-9861-40bf-85a7-2d33f0972e23.jpg?1562431747
 value=2.500
 rarity=U
 type=Instant

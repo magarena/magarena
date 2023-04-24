@@ -1,5 +1,5 @@
 name=Arcum's Whistle
-image=https://magiccards.info/scans/en/ia/286.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73c07c87-0e44-4a5a-92b7-728350cd02de.jpg?1562916476
 value=2.161
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=The Ur-Dragon
-image=https://magiccards.info/scans/en/c17/48.jpg
+image=https://cards.scryfall.io/border_crop/front/1/0/10d42b35-844f-4a64-9981-c6118d45e826.jpg?1676994966
 image_updated=2017-10-03
 value=2.500
 rarity=M

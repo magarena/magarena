@@ -1,5 +1,5 @@
 name=Murderous Cut
-image=https://magiccards.info/scans/en/ktk/81.jpg
+image=https://cards.scryfall.io/border_crop/front/b/2/b2dadff2-883f-4134-a881-be145cdcbd84.jpg?1562792142
 value=3.900
 rarity=U
 type=Instant

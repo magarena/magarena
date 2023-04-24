@@ -1,5 +1,5 @@
 name=Daring Thief
-image=https://magiccards.info/scans/en/jou/36.jpg
+image=https://cards.scryfall.io/border_crop/front/c/9/c9d9378d-e553-48b5-8a23-59a35329eda2.jpg?1593095424
 value=3.778
 rarity=R
 type=Creature

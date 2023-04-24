@@ -1,5 +1,5 @@
 name=Hall of Gemstone
-image=https://magiccards.info/scans/en/mr/119.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/18e4551f-9f6c-4421-ad66-a270df6d3463.jpg?1562718296
 value=4.010
 rarity=R
 type=World,Enchantment

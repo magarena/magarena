@@ -1,5 +1,5 @@
 name=Dreamstealer
-image=https://magiccards.info/scans/en/hou/63.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c4fcde3-03c9-43e6-a34b-29f6ce44e7c4.jpg?1562800279
 value=2.500
 rarity=R
 type=Creature

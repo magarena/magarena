@@ -1,5 +1,5 @@
 name=Sorin, Lord of Innistrad
-image=https://magiccards.info/scans/en/dka/142.jpg
+image=https://cards.scryfall.io/border_crop/front/3/2/329b9f70-2c35-4fec-813a-5b7f26d34c8e.jpg?1592714178
 image_updated=2016-01-09
 value=3.788
 rarity=M

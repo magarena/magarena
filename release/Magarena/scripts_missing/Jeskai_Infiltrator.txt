@@ -1,5 +1,5 @@
 name=Jeskai Infiltrator
-image=https://magiccards.info/scans/en/frf/36.jpg
+image=https://cards.scryfall.io/border_crop/front/4/e/4efcf6ba-e466-4947-94b2-725cc77b6e05.jpg?1592710590
 value=2.500
 rarity=R
 type=Creature

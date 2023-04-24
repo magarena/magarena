@@ -1,5 +1,5 @@
 name=Astral Cornucopia
-image=https://magiccards.info/scans/en/c16/243.jpg
+image=https://cards.scryfall.io/border_crop/front/1/8/182864e2-81ef-41bc-94cd-b0ea67f60bda.jpg?1562272467
 image_updated=2017-08-17
 value=3.435
 rarity=R

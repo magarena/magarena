@@ -1,5 +1,5 @@
 name=Hidden Stag
-image=https://magiccards.info/scans/en/us/265.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/0501e115-ef61-4db5-bdb3-36dc4334431c.jpg?1562896029
 value=3.845
 rarity=R
 type=Enchantment

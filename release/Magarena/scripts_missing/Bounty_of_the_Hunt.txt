@@ -1,5 +1,5 @@
 name=Bounty of the Hunt
-image=https://magiccards.info/scans/en/cstd/38.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/412161bf-52b9-4e43-8866-aafd28dc2189.jpg?1562868094
 value=3.031
 rarity=U
 type=Instant

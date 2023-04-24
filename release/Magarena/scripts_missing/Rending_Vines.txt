@@ -1,5 +1,5 @@
 name=Rending Vines
-image=https://magiccards.info/scans/en/sok/143.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34cf7931-d086-496e-98dc-5daa60e01f5b.jpg?1562493444
 value=2.303
 rarity=C
 type=Instant

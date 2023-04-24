@@ -1,5 +1,5 @@
 name=Lightning Dart
-image=https://magiccards.info/scans/en/in/152.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54d05157-d154-4203-bf3e-add110cb1cee.jpg?1562912254
 value=3.083
 rarity=U
 type=Instant

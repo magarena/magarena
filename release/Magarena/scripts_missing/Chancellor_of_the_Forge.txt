@@ -1,5 +1,5 @@
 name=Chancellor of the Forge
-image=https://magiccards.info/scans/en/nph/81.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd3520a7-a55f-4c00-b4f1-c1c154adfc8f.jpg?1627006822
 value=3.477
 rarity=R
 type=Creature

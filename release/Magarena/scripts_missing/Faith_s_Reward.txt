@@ -1,5 +1,5 @@
 name=Faith's Reward
-image=https://magiccards.info/scans/en/cn2/84.jpg
+image=https://cards.scryfall.io/border_crop/front/f/a/fa19fe94-0302-4d08-9821-fa0db722048a.jpg?1576382216
 image_updated=2017-08-29
 value=3.977
 rarity=R

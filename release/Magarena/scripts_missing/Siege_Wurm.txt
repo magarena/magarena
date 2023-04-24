@@ -1,5 +1,5 @@
 name=Siege Wurm
-image=https://magiccards.info/scans/en/m15/200.jpg
+image=https://cards.scryfall.io/border_crop/front/2/d/2d1dfd96-8e17-4ba8-b786-a5cc0ae2ff2d.jpg?1572893446
 value=3.333
 rarity=C
 type=Creature

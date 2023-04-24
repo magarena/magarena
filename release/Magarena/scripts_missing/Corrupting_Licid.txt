@@ -1,5 +1,5 @@
 name=Corrupting Licid
-image=https://magiccards.info/scans/en/sh/4.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c12c6548-20e6-4697-ba26-e711590f9e28.jpg?1562597372
 value=3.074
 rarity=U
 type=Creature

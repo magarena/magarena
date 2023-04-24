@@ -1,5 +1,5 @@
 name=Scattering Stroke
-image=https://magiccards.info/scans/en/cmd/60.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/20652385-465f-408b-adea-13a14fb05642.jpg?1592713100
 value=2.757
 rarity=U
 type=Instant

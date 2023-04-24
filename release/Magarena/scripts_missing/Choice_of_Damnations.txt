@@ -1,5 +1,5 @@
 name=Choice of Damnations
-image=https://magiccards.info/scans/en/sok/62.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/05939f15-2d95-47df-b66f-131c3e7ea95f.jpg?1562492064
 value=4.027
 rarity=R
 type=Sorcery

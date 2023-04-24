@@ -1,5 +1,5 @@
 name=Boonweaver Giant
-image=https://magiccards.info/scans/en/m15/5.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85003365-7c5f-4283-995d-e466deef444b.jpg?1562790179
 value=3.000
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Cultural Exchange
-image=https://magiccards.info/scans/en/od/79.jpg
+image=https://cards.scryfall.io/border_crop/front/d/4/d4f38d07-829c-4311-a61b-2785cf2266ef.jpg?1562934779
 value=3.915
 rarity=R
 type=Sorcery

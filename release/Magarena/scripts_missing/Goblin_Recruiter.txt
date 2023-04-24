@@ -1,5 +1,5 @@
 name=Goblin Recruiter
-image=https://magiccards.info/scans/en/6e/186.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/61bd1548-2ffa-4705-ba88-913f37d4ce92.jpg?1562818262
 value=4.569
 rarity=U
 type=Creature

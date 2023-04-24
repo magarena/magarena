@@ -1,5 +1,5 @@
 name=Rampaging Cyclops
-image=https://magiccards.info/scans/en/dom/139.jpg
+image=https://cards.scryfall.io/border_crop/front/7/f/7fdac0c6-bf72-4a9b-9fad-ae7bc2632a4a.jpg?1562738510
 value=2.500
 rarity=C
 type=Creature

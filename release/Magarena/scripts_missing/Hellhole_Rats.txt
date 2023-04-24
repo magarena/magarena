@@ -1,5 +1,5 @@
 name=Hellhole Rats
-image=https://magiccards.info/scans/en/di/113.jpg
+image=https://cards.scryfall.io/border_crop/front/6/e/6e1eb937-21d4-44b1-85e7-b95995865f44.jpg?1593273622
 value=3.963
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Eureka
-image=https://magiccards.info/scans/en/lg/99.jpg
+image=https://cards.scryfall.io/border_crop/front/7/1/71725234-14fa-4a29-9efc-6dd2366d9798.jpg?1562917654
 value=4.500
 rarity=R
 type=Sorcery

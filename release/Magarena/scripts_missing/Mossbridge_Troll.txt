@@ -1,5 +1,5 @@
 name=Mossbridge Troll
-image=https://magiccards.info/scans/en/shm/123.jpg
+image=https://cards.scryfall.io/border_crop/front/5/3/537c39cc-44d3-4869-9e76-dd9c2c68ee90.jpg?1562830226
 value=4.075
 rarity=R
 type=Creature

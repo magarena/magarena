@@ -1,5 +1,5 @@
 name=Weight of Memory
-image=https://magiccards.info/scans/en/dom/74.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f2359aa-9230-4519-b12e-ec395a8dd2a0.jpg?1562733453
 value=2.500
 rarity=U
 type=Sorcery

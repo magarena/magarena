@@ -1,5 +1,5 @@
 name=Harmony of Nature
-image=https://magiccards.info/scans/en/po2/68.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3fa08d9-d41b-4696-b81a-42c8eebdeb49.jpg?1562949264
 value=3.674
 rarity=U
 type=Sorcery

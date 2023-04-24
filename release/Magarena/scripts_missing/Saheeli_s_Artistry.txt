@@ -1,5 +1,5 @@
 name=Saheeli's Artistry
-image=https://magiccards.info/scans/en/kld/62.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4cdfb468-e475-47e6-80f5-190c9b206e70.jpg?1682208874
 image_updated=2016-10-05
 value=2.500
 rarity=R

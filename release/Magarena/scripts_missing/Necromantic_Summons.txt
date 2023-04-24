@@ -1,5 +1,5 @@
 name=Necromantic Summons
-image=https://magiccards.info/scans/en/ori/110.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3afe7891-09d5-470e-aa41-71d89249875b.jpg?1562015402
 image_updated=2015-11-05
 value=2.500
 rarity=U

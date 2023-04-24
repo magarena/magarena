@@ -1,5 +1,5 @@
 name=Canopy Crawler
-image=https://magiccards.info/scans/en/le/122.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0ccdc9d7-71b5-4304-8d19-a63952e17a6b.jpg?1562897615
 value=3.574
 rarity=U
 type=Creature

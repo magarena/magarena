@@ -1,5 +1,5 @@
 name=Mistmeadow Skulk
-image=https://magiccards.info/scans/en/shm/14.jpg
+image=https://cards.scryfall.io/border_crop/front/b/1/b18ff12f-3b0e-404a-8e35-3f7d05d0c0a7.jpg?1562834802
 value=3.797
 rarity=U
 type=Creature

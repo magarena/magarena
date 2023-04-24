@@ -1,5 +1,5 @@
 name=Kithkin Armor
-image=https://magiccards.info/scans/en/wl/135.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/395e7882-0429-46aa-8e38-be707067c588.jpg?1562800256
 value=3.345
 rarity=C
 type=Enchantment

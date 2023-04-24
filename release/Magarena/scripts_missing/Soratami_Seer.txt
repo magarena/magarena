@@ -1,5 +1,5 @@
 name=Soratami Seer
-image=https://magiccards.info/scans/en/chk/91.jpg
+image=https://cards.scryfall.io/border_crop/front/4/6/462a861d-e5c5-48b1-95c0-3ef04b690eac.jpg?1562759813
 value=1.933
 rarity=U
 type=Creature

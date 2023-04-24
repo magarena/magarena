@@ -1,5 +1,5 @@
 name=Gishath, Sun's Avatar
-image=https://magiccards.info/scans/en/xln/222.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/7335e500-342d-476d-975c-817512e6e3d6.jpg?1562558022
 value=2.500
 rarity=M
 type=Legendary,Creature

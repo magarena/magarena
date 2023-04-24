@@ -1,5 +1,5 @@
 name=Minamo's Meddling
-image=https://magiccards.info/scans/en/bok/42.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/502c4aca-98f8-4c7d-89fd-ee42c938fac7.jpg?1562876978
 value=2.382
 rarity=C
 type=Instant

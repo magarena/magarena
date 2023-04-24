@@ -1,5 +1,5 @@
 name=Foundry Assembler
-image=https://magiccards.info/scans/en/aer/151.jpg
+image=https://cards.scryfall.io/border_crop/front/e/8/e83a2862-a2d7-4d87-a4b8-def9f441f5fa.jpg?1576382251
 value=2.500
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Bontu the Glorified
-image=https://magiccards.info/scans/en/akh/82.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bc07386-909f-4946-9120-3acb58622e2f.jpg?1543675209
 value=2.500
 rarity=M
 type=Legendary,Creature

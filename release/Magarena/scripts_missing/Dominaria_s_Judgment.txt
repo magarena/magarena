@@ -1,5 +1,5 @@
 name=Dominaria's Judgment
-image=https://magiccards.info/scans/en/ps/4.jpg
+image=https://cards.scryfall.io/border_crop/front/9/7/9703d090-b415-48e2-8158-dd8fc57ecc50.jpg?1562926981
 value=3.516
 rarity=R
 type=Instant

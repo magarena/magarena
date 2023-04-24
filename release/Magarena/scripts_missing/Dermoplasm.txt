@@ -1,5 +1,5 @@
 name=Dermoplasm
-image=https://magiccards.info/scans/en/le/35.jpg
+image=https://cards.scryfall.io/border_crop/front/c/f/cf2f5dca-e01f-41e3-bb6f-a60162118c6d.jpg?1562936638
 value=3.900
 rarity=R
 type=Creature

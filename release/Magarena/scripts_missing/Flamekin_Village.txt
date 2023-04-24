@@ -1,5 +1,5 @@
 name=Flamekin Village
-image=https://magiccards.info/scans/en/c14/60.jpg
+image=https://cards.scryfall.io/border_crop/front/9/3/930e6064-3d4b-40f1-850d-daa15cea756b.jpg?1661583454
 value=2.500
 rarity=R
 type=Land

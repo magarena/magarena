@@ -1,5 +1,5 @@
 name=Reign of Terror
-image=https://magiccards.info/scans/en/mr/35.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7bd83049-aec1-4911-bc70-39adba04b174.jpg?1587856923
 value=2.750
 rarity=U
 type=Sorcery

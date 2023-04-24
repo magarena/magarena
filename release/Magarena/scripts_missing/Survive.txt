@@ -1,5 +1,5 @@
 name=Survive
-image=https://magiccards.info/scans/en/hou/151b.jpg
+image=https://cards.scryfall.io/border_crop/front/b/f/bf909dbb-6e49-4556-a37a-2738889915d1.jpg?1682209861
 value=2.500
 rarity=U
 type=Sorcery

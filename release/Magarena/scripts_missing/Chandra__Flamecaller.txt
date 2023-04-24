@@ -1,5 +1,5 @@
 name=Chandra, Flamecaller
-image=https://magiccards.info/scans/en/ogw/104.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a83ca3a1-82a9-4f47-b0b8-21687afd705b.jpg?1591320552
 image_updated=2016-02-29
 value=2.500
 rarity=M

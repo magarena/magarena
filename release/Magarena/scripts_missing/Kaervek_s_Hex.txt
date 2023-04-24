@@ -1,5 +1,5 @@
 name=Kaervek's Hex
-image=https://magiccards.info/scans/en/mr/28.jpg
+image=https://cards.scryfall.io/border_crop/front/0/9/097910fb-7c48-4535-8ffc-b521d08294b0.jpg?1562717830
 value=2.233
 rarity=U
 type=Sorcery

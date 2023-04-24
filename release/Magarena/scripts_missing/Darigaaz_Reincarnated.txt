@@ -1,5 +1,5 @@
 name=Darigaaz Reincarnated
-image=https://magiccards.info/scans/en/dom/193.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/9459ffca-5a1f-4641-88d4-8a499b261faa.jpg?1562739719
 value=2.500
 rarity=M
 type=Legendary,Creature

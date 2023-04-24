@@ -1,5 +1,5 @@
 name=Tetsuo Umezawa
-image=https://magiccards.info/scans/en/lg/302.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec22ddf8-cb5e-4ca0-8f2f-c5d48f2cbd26.jpg?1562944815
 value=3.952
 rarity=R
 type=Legendary,Creature

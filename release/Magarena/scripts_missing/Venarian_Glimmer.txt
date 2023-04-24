@@ -1,5 +1,5 @@
 name=Venarian Glimmer
-image=https://magiccards.info/scans/en/pc/52.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cfab012-f57a-4018-bfe3-8eac073f6ee8.jpg?1562572643
 value=2.843
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Radiant Purge
-image=https://magiccards.info/scans/en/dtk/31.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c34d94f4-c504-4cf1-9bc7-d318fbee54d7.jpg?1562792688
 value=2.500
 rarity=R
 type=Instant

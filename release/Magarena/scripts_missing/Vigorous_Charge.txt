@@ -1,5 +1,5 @@
 name=Vigorous Charge
-image=https://magiccards.info/scans/en/in/222.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/af6f57ad-d370-4c81-8da0-c15d87725ab1.jpg?1562930306
 value=3.431
 rarity=C
 type=Instant

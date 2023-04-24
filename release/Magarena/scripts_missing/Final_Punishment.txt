@@ -1,5 +1,5 @@
 name=Final Punishment
-image=https://magiccards.info/scans/en/9e/131.jpg
+image=https://cards.scryfall.io/border_crop/front/7/2/72df60bb-3309-43e0-ab4a-cec1390fc7cf.jpg?1562737013
 value=2.984
 rarity=R
 type=Sorcery

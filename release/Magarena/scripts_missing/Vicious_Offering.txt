@@ -1,5 +1,5 @@
 name=Vicious Offering
-image=https://magiccards.info/scans/en/dom/110.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aaed7828-57c1-4ad3-a91b-209c66f0876b.jpg?1562741039
 value=2.500
 rarity=C
 type=Instant

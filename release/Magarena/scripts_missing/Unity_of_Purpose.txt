@@ -1,5 +1,5 @@
 name=Unity of Purpose
-image=https://magiccards.info/scans/en/ogw/66.jpg
+image=https://cards.scryfall.io/border_crop/front/6/f/6f87292c-0140-44d7-881e-2e8c9ff737a1.jpg?1562917281
 image_updated=2016-02-29
 value=2.500
 rarity=U

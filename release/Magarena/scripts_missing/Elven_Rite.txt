@@ -1,5 +1,5 @@
 name=Elven Rite
-image=https://magiccards.info/scans/en/sh/56.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74165827-f9fc-4994-b396-c6633536ed0c.jpg?1562430295
 value=2.500
 rarity=U
 type=Sorcery

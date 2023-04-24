@@ -1,5 +1,5 @@
 name=Taj-Nar Swordsmith
-image=https://magiccards.info/scans/en/mm2/36.jpg
+image=https://cards.scryfall.io/border_crop/front/4/b/4bcbd8bb-997a-4be0-966d-b472c31b4c73.jpg?1562607724
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mortipede
-image=https://magiccards.info/scans/en/rav/96.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/94a8ae6e-51b1-4985-9d09-f9c3818df911.jpg?1598915002
 value=2.636
 rarity=C
 type=Creature

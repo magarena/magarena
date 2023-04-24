@@ -1,5 +1,5 @@
 name=Erratic Mutation
-image=https://magiccards.info/scans/en/mma/42.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ac93762-9377-49c3-9593-6d02bfb66903.jpg?1619394175
 value=2.357
 rarity=C
 type=Instant

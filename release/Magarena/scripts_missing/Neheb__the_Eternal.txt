@@ -1,5 +1,5 @@
 name=Neheb, the Eternal
-image=https://magiccards.info/scans/en/hou/104.jpg
+image=https://cards.scryfall.io/border_crop/front/5/4/54231832-d492-4812-b658-4ab9a30fefe2.jpg?1562799464
 value=2.500
 rarity=M
 type=Legendary,Creature

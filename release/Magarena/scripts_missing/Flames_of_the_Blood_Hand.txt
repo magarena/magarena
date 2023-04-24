@@ -1,5 +1,5 @@
 name=Flames of the Blood Hand
-image=https://magiccards.info/scans/en/bok/101.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a79701b4-d220-4c3e-b96c-7a77a22ba899.jpg?1651124386
 value=3.230
 rarity=U
 type=Instant

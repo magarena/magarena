@@ -1,5 +1,5 @@
 name=Lodestone Bauble
-image=https://magiccards.info/scans/en/ai/164.jpg
+image=https://cards.scryfall.io/border_crop/front/9/1/91e9021d-57fb-4d07-a7d3-45c435e8b3ef.jpg?1562869538
 value=3.764
 rarity=R
 type=Artifact

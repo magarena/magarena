@@ -1,5 +1,5 @@
 name=Lurking Automaton
-image=https://magiccards.info/scans/en/cns/63.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e052a306-2bcd-4dcd-b41d-fa886227dab6.jpg?1562867339
 value=3.625
 rarity=C
 type=Artifact,Creature

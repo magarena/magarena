@@ -1,5 +1,5 @@
 name=Keldon Battlewagon
-image=https://magiccards.info/scans/en/pr/139.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5c810aa1-e367-4102-a5bd-6dc02d3023e8.jpg?1562912059
 value=2.811
 rarity=R
 type=Artifact,Creature

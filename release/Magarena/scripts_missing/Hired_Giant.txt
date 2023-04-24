@@ -1,5 +1,5 @@
 name=Hired Giant
-image=https://magiccards.info/scans/en/mm/194.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dc33920a-f05c-46fa-b94b-278af0022b78.jpg?1562383496
 value=2.278
 rarity=U
 type=Creature

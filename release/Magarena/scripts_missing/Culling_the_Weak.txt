@@ -1,5 +1,5 @@
 name=Culling the Weak
-image=https://magiccards.info/scans/en/ex/55.jpg
+image=https://cards.scryfall.io/border_crop/front/5/0/50c33f18-0a5c-4e46-ab0d-6e450915594f.jpg?1562087832
 value=4.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Prophetic Flamespeaker
-image=https://magiccards.info/scans/en/jou/106.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73326c79-f884-42d5-8546-3db46ce4fe52.jpg?1593096059
 value=4.262
 rarity=M
 type=Creature

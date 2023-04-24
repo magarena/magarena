@@ -1,5 +1,5 @@
 name=Powerstone Shard
-image=https://magiccards.info/scans/en/dom/227.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d62fd366-c287-48c3-9ded-5dc63a34518c.jpg?1562743673
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Wiitigo
-image=https://magiccards.info/scans/en/ia/164.jpg
+image=https://cards.scryfall.io/border_crop/front/e/e/ee3c3de0-5568-4113-8481-7203fa7faef1.jpg?1562870955
 value=3.483
 rarity=R
 type=Creature

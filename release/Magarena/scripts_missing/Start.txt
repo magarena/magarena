@@ -1,5 +1,5 @@
 name=Start
-image=https://magiccards.info/scans/en/akh/215a.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c6f5433-57cc-4cb3-8621-2575fcbff392.jpg?1549941629
 value=2.500
 rarity=U
 type=Instant

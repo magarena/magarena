@@ -1,5 +1,5 @@
 name=Ajani, Mentor of Heroes
-image=https://magiccards.info/scans/en/jou/145.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a30bcfa-6f95-450f-aea7-885983d7c6a5.jpg?1593096367
 value=3.500
 rarity=M
 type=Legendary,Planeswalker

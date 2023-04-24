@@ -1,5 +1,5 @@
 name=Mass Mutiny
-image=https://magiccards.info/scans/en/pc2/48.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/556e20b1-573c-42eb-88ad-b17bf0f07980.jpg?1562910686
 value=3.750
 rarity=R
 type=Sorcery

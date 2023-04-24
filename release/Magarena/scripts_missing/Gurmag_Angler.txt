@@ -1,5 +1,5 @@
 name=Gurmag Angler
-image=https://magiccards.info/scans/en/frf/72.jpg
+image=https://cards.scryfall.io/border_crop/front/c/e/cedd44eb-f381-46e1-bcb0-88416b4ce33d.jpg?1547516928
 value=2.500
 rarity=C
 type=Creature

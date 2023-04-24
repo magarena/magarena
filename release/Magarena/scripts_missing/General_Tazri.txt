@@ -1,5 +1,5 @@
 name=General Tazri
-image=https://magiccards.info/scans/en/ogw/19.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34e9aa86-1a31-4c0f-928d-923f066286b6.jpg?1562905706
 image_updated=2016-02-29
 value=2.500
 rarity=M

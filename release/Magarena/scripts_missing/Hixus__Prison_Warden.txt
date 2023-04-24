@@ -1,5 +1,5 @@
 name=Hixus, Prison Warden
-image=https://magiccards.info/scans/en/ori/19.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d0c21a35-4b70-4de4-93ff-c0ccabdc39e0.jpg?1562043057
 image_updated=2015-11-05
 value=2.500
 rarity=R

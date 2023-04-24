@@ -1,5 +1,5 @@
 name=Soulbright Flamekin
-image=https://magiccards.info/scans/en/a25/151.jpg
+image=https://cards.scryfall.io/border_crop/front/9/4/945c52c8-a2c3-4f48-a5c3-2db92011e0cc.jpg?1562438550
 image_updated=2018-04-25
 value=2.500
 rarity=C

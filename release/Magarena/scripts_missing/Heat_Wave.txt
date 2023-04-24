@@ -1,5 +1,5 @@
 name=Heat Wave
-image=https://magiccards.info/scans/en/vi/83.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/42dd0810-4528-4a88-add8-923bb2057821.jpg?1562277456
 value=3.278
 rarity=U
 type=Enchantment

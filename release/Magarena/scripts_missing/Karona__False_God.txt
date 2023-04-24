@@ -1,5 +1,5 @@
 name=Karona, False God
-image=https://magiccards.info/scans/en/sc/138.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/de53d083-251e-42a4-9e2e-c2978c80615b.jpg?1562535715
 value=2.624
 rarity=R
 type=Legendary,Creature

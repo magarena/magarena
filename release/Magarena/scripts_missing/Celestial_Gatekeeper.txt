@@ -1,5 +1,5 @@
 name=Celestial Gatekeeper
-image=https://magiccards.info/scans/en/le/6.jpg
+image=https://cards.scryfall.io/border_crop/front/0/b/0b4dc1d3-53a1-411b-abf9-f5e4e80edc63.jpg?1562897265
 value=3.709
 rarity=R
 type=Creature

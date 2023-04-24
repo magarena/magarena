@@ -1,5 +1,5 @@
 name=Slaughter the Strong
-image=https://magiccards.info/scans/en/rix/22.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6c9f8aea-0c9a-4686-b551-35e2a72ef701.jpg?1674135270
 value=2.500
 rarity=R
 type=Sorcery

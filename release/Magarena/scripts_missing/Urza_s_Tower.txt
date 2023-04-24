@@ -1,5 +1,5 @@
 name=Urza's Tower
-image=https://magiccards.info/scans/en/9e/329.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9e369f3f-354b-42bf-9b2f-286912730c6c.jpg?1599710735
 value=4.329
 rarity=U
 type=Land

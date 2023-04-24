@@ -1,5 +1,5 @@
 name=Serra Bestiary
-image=https://magiccards.info/scans/en/5e/336.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdc856b2-c84a-41a1-835e-b8261f0a3fe8.jpg?1562955112
 value=2.339
 rarity=U
 type=Enchantment

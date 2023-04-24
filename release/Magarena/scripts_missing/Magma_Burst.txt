@@ -1,5 +1,5 @@
 name=Magma Burst
-image=https://magiccards.info/scans/en/ps/66.jpg
+image=https://cards.scryfall.io/border_crop/front/d/9/d9752bc3-0bdf-4657-8750-73c8cbc8e83f.jpg?1562940942
 value=2.828
 rarity=C
 type=Instant

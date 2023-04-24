@@ -1,5 +1,5 @@
 name=Vex
-image=https://magiccards.info/scans/en/ds/36.jpg
+image=https://cards.scryfall.io/border_crop/front/e/2/e28a9f15-5469-4dc2-8a73-646f854fec7e.jpg?1562640140
 value=1.536
 rarity=C
 type=Instant

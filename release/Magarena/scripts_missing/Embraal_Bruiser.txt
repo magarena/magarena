@@ -1,5 +1,5 @@
 name=Embraal Bruiser
-image=https://magiccards.info/scans/en/kld/79.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f90f877-4033-4892-a6e7-22d2b393c65d.jpg?1576381612
 image_updated=2016-10-05
 value=2.500
 rarity=U

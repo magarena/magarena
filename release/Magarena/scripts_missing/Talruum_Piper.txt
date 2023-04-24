@@ -1,5 +1,5 @@
 name=Talruum Piper
-image=https://magiccards.info/scans/en/vi/98.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca2cb9a7-5063-4b31-9782-8bfd784bca0a.jpg?1562278637
 value=3.403
 rarity=U
 type=Creature

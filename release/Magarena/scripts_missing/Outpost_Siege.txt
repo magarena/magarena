@@ -1,5 +1,5 @@
 name=Outpost Siege
-image=https://magiccards.info/scans/en/frf/110.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9f75fce-f0a1-4dec-982d-a86925c6e9d4.jpg?1674142089
 value=2.500
 rarity=R
 type=Enchantment

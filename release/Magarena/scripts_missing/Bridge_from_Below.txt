@@ -1,5 +1,5 @@
 name=Bridge from Below
-image=https://magiccards.info/scans/en/mma/74.jpg
+image=https://cards.scryfall.io/border_crop/front/3/f/3faaa657-8b02-41a9-8a99-31a223d2caa5.jpg?1564535783
 value=4.470
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Shimmering Grotto
-image=https://magiccards.info/scans/en/ima/248.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e03f2594-c6e8-4758-86b4-885d1dba3a91.jpg?1562855108
 image_updated=2017-04-12
 value=3.069
 rarity=C

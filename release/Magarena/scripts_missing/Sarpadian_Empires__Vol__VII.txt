@@ -1,5 +1,5 @@
 name=Sarpadian Empires, Vol. VII
-image=https://magiccards.info/scans/en/ts/263.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b37a6cf7-f239-4bca-b4c3-a48932ef56b5.jpg?1653984963
 value=3.608
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Sanctum of the Sun
-image=https://magiccards.info/scans/en/rix/176b.jpg
+image=https://cards.scryfall.io/border_crop/back/3/0/303d51ab-b9c4-4647-950f-291daabe7b81.jpg?1555041001
 value=2.500
 rarity=M
 type=Legendary,Land

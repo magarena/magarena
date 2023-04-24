@@ -1,5 +1,5 @@
 name=Ghastlord of Fugue
-image=https://magiccards.info/scans/en/shm/162.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b118200-55e0-4d06-9e7e-ecde2814d24e.jpg?1562832851
 value=4.115
 rarity=R
 type=Creature

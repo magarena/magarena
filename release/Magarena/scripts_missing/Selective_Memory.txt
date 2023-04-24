@@ -1,5 +1,5 @@
 name=Selective Memory
-image=https://magiccards.info/scans/en/wwk/37.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/555063cc-99ad-4014-b17b-c4c6b40d2e81.jpg?1562287365
 value=2.679
 rarity=R
 type=Sorcery

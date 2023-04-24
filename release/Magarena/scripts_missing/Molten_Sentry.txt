@@ -1,5 +1,5 @@
 name=Molten Sentry
-image=https://magiccards.info/scans/en/rav/136.jpg
+image=https://cards.scryfall.io/border_crop/front/a/9/a9eb6c92-b385-4ef4-83ac-65a1a23e3d22.jpg?1598915774
 value=1.793
 rarity=R
 type=Creature

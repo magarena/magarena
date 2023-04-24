@@ -1,5 +1,5 @@
 name=Brutal Deceiver
-image=https://magiccards.info/scans/en/chk/161.jpg
+image=https://cards.scryfall.io/border_crop/front/e/3/e3d532b3-4bd6-4c1d-974d-789976117497.jpg?1562765180
 value=2.323
 rarity=C
 type=Creature

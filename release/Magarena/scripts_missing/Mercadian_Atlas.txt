@@ -1,5 +1,5 @@
 name=Mercadian Atlas
-image=https://magiccards.info/scans/en/mm/305.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00ad3531-399c-4897-b0ee-ad2a26445a17.jpg?1562378940
 value=4.065
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Vedalken Plotter
-image=https://magiccards.info/scans/en/cmd/66.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85bba39e-73bd-48e5-97ce-4b4661bab71b.jpg?1592713147
 value=2.889
 rarity=U
 type=Creature

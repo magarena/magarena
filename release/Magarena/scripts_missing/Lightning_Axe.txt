@@ -1,5 +1,5 @@
 name=Lightning Axe
-image=https://magiccards.info/scans/en/soi/170.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/ca33c171-ab9e-4908-8f97-82cd83b173c0.jpg?1619397252
 image_updated=2010-09-10
 value=4.119
 rarity=U

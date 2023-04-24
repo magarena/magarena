@@ -1,5 +1,5 @@
 name=Anger
-image=https://magiccards.info/scans/en/ddi/51.jpg
+image=https://cards.scryfall.io/border_crop/front/0/c/0c7ce363-3f57-49ed-b89a-f12bb5227ab4.jpg?1631586892
 value=4.279
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Plague Belcher
-image=https://magiccards.info/scans/en/akh/104.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/280ae211-f025-4971-83e6-118ca08a1911.jpg?1543675375
 value=2.500
 rarity=R
 type=Creature

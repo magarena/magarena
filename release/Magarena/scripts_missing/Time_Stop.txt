@@ -1,5 +1,5 @@
 name=Time Stop
-image=https://magiccards.info/scans/en/10e/117.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/521d1b29-c25b-443b-ae5f-07c11786947e.jpg?1562547698
 value=3.996
 rarity=R
 type=Instant

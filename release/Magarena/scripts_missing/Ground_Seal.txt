@@ -1,5 +1,5 @@
 name=Ground Seal
-image=https://magiccards.info/scans/en/m13/176.jpg
+image=https://cards.scryfall.io/border_crop/front/c/4/c4e9995e-f26b-4638-b69d-a310f58f0331.jpg?1592710917
 value=4.277
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Hundred-Talon Strike
-image=https://magiccards.info/scans/en/bok/8.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3ed548e0-9196-4bfc-9cfd-149abb945574.jpg?1562876610
 value=3.059
 rarity=C
 type=Instant

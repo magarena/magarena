@@ -1,5 +1,5 @@
 name=Deadfall
-image=https://magiccards.info/scans/en/lg/95.jpg
+image=https://cards.scryfall.io/border_crop/front/0/d/0d78f0fc-3ab2-46ee-b5a9-55ae97d08c1a.jpg?1562857746
 value=1.545
 rarity=U
 type=Enchantment

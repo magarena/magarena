@@ -1,5 +1,5 @@
 name=Volley of Boulders
-image=https://magiccards.info/scans/en/od/227.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/aecab75c-25e5-4465-9c0a-28c2f6dc2ce5.jpg?1581708629
 image_updated=2017-01-11
 value=2.433
 rarity=R

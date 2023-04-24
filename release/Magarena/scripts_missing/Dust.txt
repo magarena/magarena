@@ -1,5 +1,5 @@
 name=Dust
-image=https://magiccards.info/scans/en/hou/155b.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/0383401f-d453-4e8f-82d2-5c016acc2591.jpg?1562787667
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Seton's Desire
-image=https://magiccards.info/scans/en/od/268.jpg
+image=https://cards.scryfall.io/border_crop/front/7/0/70d05b6a-5c7e-4e08-88d3-98f2b5b054bc.jpg?1562915880
 value=2.300
 rarity=C
 type=Enchantment

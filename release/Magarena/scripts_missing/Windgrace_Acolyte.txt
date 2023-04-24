@@ -1,5 +1,5 @@
 name=Windgrace Acolyte
-image=https://magiccards.info/scans/en/dom/112.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f835285e-96d9-4574-a497-3b612cae8e22.jpg?1562745894
 value=2.500
 rarity=C
 type=Creature

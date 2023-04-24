@@ -1,5 +1,5 @@
 name=Postmortem Lunge
-image=https://magiccards.info/scans/en/nph/70.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d5f8b46e-1ad3-4c6e-aa63-376f2d222d46.jpg?1562881873
 value=3.243
 rarity=U
 type=Sorcery

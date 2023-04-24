@@ -1,5 +1,5 @@
 name=Giltspire Avenger
-image=https://magiccards.info/scans/en/cfx/108.jpg
+image=https://cards.scryfall.io/border_crop/front/5/f/5f1a67fd-6736-4f2b-8ed3-57a0a6afb98f.jpg?1562801271
 value=3.342
 rarity=R
 type=Creature

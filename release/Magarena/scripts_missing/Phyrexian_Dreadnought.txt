@@ -1,5 +1,5 @@
 name=Phyrexian Dreadnought
-image=https://magiccards.info/scans/en/mr/280.jpg
+image=https://cards.scryfall.io/border_crop/front/7/b/7b8197b9-0cd1-4fa1-9668-d1b5f1759151.jpg?1562720243
 value=4.593
 rarity=R
 type=Artifact,Creature

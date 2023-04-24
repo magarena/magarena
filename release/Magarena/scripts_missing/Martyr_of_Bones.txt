@@ -1,5 +1,5 @@
 name=Martyr of Bones
-image=https://magiccards.info/scans/en/cs/65.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8bba602e-5a81-4da2-99c0-6082f8a981e1.jpg?1593275131
 value=2.033
 rarity=C
 type=Creature

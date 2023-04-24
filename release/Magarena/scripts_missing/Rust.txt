@@ -1,5 +1,5 @@
 name=Rust
-image=https://magiccards.info/scans/en/lg/117.jpg
+image=https://cards.scryfall.io/border_crop/front/a/d/ad4974c8-34c5-4290-b325-7586a67f6d56.jpg?1592364545
 value=3.302
 rarity=C
 type=Instant

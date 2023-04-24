@@ -1,5 +1,5 @@
 name=Thought Reflection
-image=https://magiccards.info/scans/en/shm/53.jpg
+image=https://cards.scryfall.io/border_crop/front/e/1/e169e197-5ef4-454d-a31f-fcadedb74cfc.jpg?1598304368
 image_updated=2016-02-29
 value=3.317
 rarity=R

@@ -1,5 +1,5 @@
 name=Satyr Hedonist
-image=https://magiccards.info/scans/en/ths/174.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/88c67e15-833c-406a-b75f-8de97fbacf5a.jpg?1562821024
 value=3.435
 rarity=C
 type=Creature

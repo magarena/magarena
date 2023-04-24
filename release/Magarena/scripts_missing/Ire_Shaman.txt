@@ -1,5 +1,5 @@
 name=Ire Shaman
-image=https://magiccards.info/scans/en/a25/137.jpg
+image=https://cards.scryfall.io/border_crop/front/e/a/ea54760c-2cd3-43eb-bc45-adc0997b34b0.jpg?1562442605
 image_updated=2018-04-25
 value=2.500
 rarity=U

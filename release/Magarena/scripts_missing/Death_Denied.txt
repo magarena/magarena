@@ -1,5 +1,5 @@
 name=Death Denied
-image=https://magiccards.info/scans/en/mm2/76.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73d0a239-4d45-4762-968a-d4b9479346d9.jpg?1547516831
 value=2.500
 rarity=C
 type=Instant

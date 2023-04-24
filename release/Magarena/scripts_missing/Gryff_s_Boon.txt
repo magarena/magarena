@@ -1,5 +1,5 @@
 name=Gryff's Boon
-image=https://magiccards.info/scans/en/soi/20.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e66702a8-b48d-4c80-9998-a14b094dcf88.jpg?1631585904
 value=2.500
 rarity=U
 type=Enchantment

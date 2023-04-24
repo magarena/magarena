@@ -1,5 +1,5 @@
 name=Fold into Aether
-image=https://magiccards.info/scans/en/5dn/31.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/615157d6-0160-417b-b06c-0e253b306c37.jpg?1562877336
 image_updated=2016-09-27
 value=2.300
 rarity=U

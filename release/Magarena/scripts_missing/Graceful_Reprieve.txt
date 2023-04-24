@@ -1,5 +1,5 @@
 name=Graceful Reprieve
-image=https://magiccards.info/scans/en/mm3/8.jpg
+image=https://cards.scryfall.io/border_crop/front/d/a/dad31171-ad46-4654-91f0-8027e00dedfc.jpg?1593812814
 image_updated=2017-08-08
 value=3.569
 rarity=C

@@ -1,5 +1,5 @@
 name=Numot, the Devastator
-image=https://magiccards.info/scans/en/cmd/215.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb098692-d584-4cbe-a8b9-67bdbf7514bc.jpg?1592714186
 value=4.020
 rarity=R
 type=Legendary,Creature

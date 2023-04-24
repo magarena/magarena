@@ -1,5 +1,5 @@
 name=Spiritualize
-image=https://magiccards.info/scans/en/od/53.jpg
+image=https://cards.scryfall.io/border_crop/front/f/6/f6780ded-86df-419d-b63b-6b67d2960b28.jpg?1562941288
 value=2.632
 rarity=U
 type=Instant

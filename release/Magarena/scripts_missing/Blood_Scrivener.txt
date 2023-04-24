@@ -1,5 +1,5 @@
 name=Blood Scrivener
-image=https://magiccards.info/scans/en/dgm/22.jpg
+image=https://cards.scryfall.io/border_crop/front/9/e/9ea8179a-d3c9-4cdc-a5b5-68cc73279050.jpg?1562924533
 value=3.833
 rarity=R
 type=Creature

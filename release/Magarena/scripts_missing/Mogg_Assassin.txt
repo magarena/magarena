@@ -1,5 +1,5 @@
 name=Mogg Assassin
-image=https://magiccards.info/scans/en/ex/88.jpg
+image=https://cards.scryfall.io/border_crop/front/3/a/3ac8843e-6d9a-4db8-aa08-f83127cab355.jpg?1645329109
 value=3.036
 rarity=U
 type=Creature

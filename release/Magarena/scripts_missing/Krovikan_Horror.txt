@@ -1,5 +1,5 @@
 name=Krovikan Horror
-image=https://magiccards.info/scans/en/ai/15.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/8321977d-69bf-4e10-a776-8d714b0b9d46.jpg?1562869514
 value=3.654
 rarity=R
 type=Creature

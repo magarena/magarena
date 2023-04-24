@@ -1,5 +1,5 @@
 name=Bargaining Table
-image=https://magiccards.info/scans/en/mm/288.jpg
+image=https://cards.scryfall.io/border_crop/front/8/5/85da9395-42e9-4408-832d-74ea4b01256b.jpg?1562381837
 value=3.815
 rarity=R
 type=Artifact

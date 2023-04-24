@@ -1,5 +1,5 @@
 name=Simple
-image=https://magiccards.info/scans/en/di/154b.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b3a5d913-0b78-4918-87cf-0bb33b9d120e.jpg?1593273949
 value=3.788
 rarity=U
 type=Sorcery

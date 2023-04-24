@@ -1,5 +1,5 @@
 name=Mark for Death
-image=https://magiccards.info/scans/en/gtc/99.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45498dbd-a512-4299-800b-06c15a4fd94e.jpg?1561824628
 value=2.607
 rarity=U
 type=Sorcery

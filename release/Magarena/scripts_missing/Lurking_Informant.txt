@@ -1,5 +1,5 @@
 name=Lurking Informant
-image=https://magiccards.info/scans/en/rav/249.jpg
+image=https://cards.scryfall.io/border_crop/front/0/1/012a7f5d-f798-4030-86e3-05956487a383.jpg?1598917787
 value=3.500
 rarity=C
 type=Creature

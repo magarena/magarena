@@ -1,5 +1,5 @@
 name=Koth of the Hammer
-image=https://magiccards.info/scans/en/som/94.jpg
+image=https://cards.scryfall.io/border_crop/front/d/c/dccb325a-6fba-4a6f-af35-dc9e9de996a9.jpg?1581708471
 image_updated=2016-12-21
 value=4.041
 rarity=M

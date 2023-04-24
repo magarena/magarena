@@ -1,5 +1,5 @@
 name=Primal Beyond
-image=https://magiccards.info/scans/en/mt/149.jpg
+image=https://cards.scryfall.io/border_crop/front/b/4/b4c28c1d-0ebf-4e95-8d0a-56be10cc0ef2.jpg?1562880878
 value=3.750
 rarity=R
 type=Land

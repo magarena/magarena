@@ -1,5 +1,5 @@
 name=Artisan of Forms
-image=https://magiccards.info/scans/en/ths/40.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7f10198-1eef-4577-b375-b900b15060e1.jpg?1562823794
 value=3.542
 rarity=R
 type=Creature

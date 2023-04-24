@@ -1,5 +1,5 @@
 name=Shrine of Piercing Vision
-image=https://magiccards.info/scans/en/nph/156.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b150924-f83c-410e-aaab-ff2d06c9d356.jpg?1562880090
 value=2.679
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Insist
-image=https://magiccards.info/scans/en/tr/127.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48e1f72d-ef5e-4cea-a0ee-645570a36104.jpg?1562629595
 value=4.102
 rarity=R
 type=Sorcery

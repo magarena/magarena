@@ -1,5 +1,5 @@
 name=Scorched Earth
-image=https://magiccards.info/scans/en/tp/200.jpg
+image=https://cards.scryfall.io/border_crop/front/e/6/e6a97817-d1fd-4ba4-9ced-c2702b081523.jpg?1562057341
 value=3.222
 rarity=R
 type=Sorcery

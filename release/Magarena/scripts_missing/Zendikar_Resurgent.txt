@@ -1,5 +1,5 @@
 name=Zendikar Resurgent
-image=https://magiccards.info/scans/en/ogw/147.jpg
+image=https://cards.scryfall.io/border_crop/front/3/3/33f64032-1e87-4d22-a211-c37e11ffa247.jpg?1562604623
 image_updated=2016-02-29
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Lava Blister
-image=https://magiccards.info/scans/en/od/200.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd0e9e53-2710-4c2a-a8e4-48f25375ebc7.jpg?1562933365
 value=3.642
 rarity=U
 type=Sorcery

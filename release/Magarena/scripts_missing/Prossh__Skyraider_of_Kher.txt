@@ -1,5 +1,5 @@
 name=Prossh, Skyraider of Kher
-image=https://magiccards.info/scans/en/a25/214.jpg
+image=https://cards.scryfall.io/border_crop/front/8/8/889c1a0f-7df2-4497-8058-04358173d7e8.jpg?1562438016
 image_updated=2018-04-25
 value=3.802
 rarity=M

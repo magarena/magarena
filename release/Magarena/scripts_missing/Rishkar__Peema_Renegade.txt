@@ -1,5 +1,5 @@
 name=Rishkar, Peema Renegade
-image=https://magiccards.info/scans/en/aer/122.jpg
+image=https://cards.scryfall.io/border_crop/front/6/3/6310af34-e671-4974-b291-279b91585459.jpg?1682209604
 value=2.500
 rarity=R
 type=Legendary,Creature

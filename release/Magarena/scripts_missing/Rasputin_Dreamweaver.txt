@@ -1,5 +1,5 @@
 name=Rasputin Dreamweaver
-image=https://magiccards.info/scans/en/lg/293.jpg
+image=https://cards.scryfall.io/border_crop/front/7/8/78418809-f048-4611-88cb-369f427d9c44.jpg?1562920261
 value=4.017
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Overburden
-image=https://magiccards.info/scans/en/pr/39.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e6cf6b6-b4c1-4742-9be4-b3b15fbb0202.jpg?1562918387
 value=3.977
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Assault Formation
-image=https://magiccards.info/scans/en/ima/155.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6bf261c8-98e4-491e-9e51-a9058ff2c03a.jpg?1601078969
 image_updated=2017-04-12
 value=2.500
 rarity=U

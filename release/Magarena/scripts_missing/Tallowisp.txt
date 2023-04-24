@@ -1,5 +1,5 @@
 name=Tallowisp
-image=https://magiccards.info/scans/en/bok/25.jpg
+image=https://cards.scryfall.io/border_crop/front/a/0/a018aa51-d75e-4d94-b4b3-0cd14fc87d44.jpg?1617371976
 value=3.885
 rarity=U
 type=Creature

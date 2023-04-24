@@ -1,5 +1,5 @@
 name=Trueheart Duelist
-image=https://magiccards.info/scans/en/akh/35.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/628f5230-6c0d-4f24-b89a-7f3d443511f3.jpg?1543674833
 value=2.500
 rarity=U
 type=Creature

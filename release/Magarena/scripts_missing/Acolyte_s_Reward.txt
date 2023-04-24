@@ -1,5 +1,5 @@
 name=Acolyte's Reward
-image=https://magiccards.info/scans/en/bng/1.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd8980af-c3fa-4027-917a-4a3d441c0a75.jpg?1593091337
 value=3.378
 rarity=U
 type=Instant

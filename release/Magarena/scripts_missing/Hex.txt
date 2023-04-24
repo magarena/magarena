@@ -1,5 +1,5 @@
 name=Hex
-image=https://magiccards.info/scans/en/cmd/87.jpg
+image=https://cards.scryfall.io/border_crop/front/0/6/067c38f3-4b5c-4e7f-af66-e410dea19314.jpg?1674141662
 value=3.795
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Neurok Familiar
-image=https://magiccards.info/scans/en/mi/43.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/52fd15b0-4ada-41c7-81e0-4f8956798685.jpg?1562143856
 value=2.750
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Distant Memories
-image=https://magiccards.info/scans/en/mbs/24.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/158da0aa-8317-498b-89ed-2f84317fe256.jpg?1562609799
 value=2.448
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Flailing Ogre
-image=https://magiccards.info/scans/en/mm/188.jpg
+image=https://cards.scryfall.io/border_crop/front/e/4/e400e520-b2b8-4c13-a4ea-f8810c927bf7.jpg?1562383515
 value=2.672
 rarity=U
 type=Creature

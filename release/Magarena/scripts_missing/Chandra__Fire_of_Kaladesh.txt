@@ -1,5 +1,5 @@
 name=Chandra, Fire of Kaladesh
-image=https://magiccards.info/scans/en/ori/135a.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0d6caf0-4fa8-4ec5-b7f4-1307474d1b13.jpg?1562036951
 image_updated=2015-11-05
 value=2.500
 rarity=M

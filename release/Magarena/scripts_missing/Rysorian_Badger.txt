@@ -1,5 +1,5 @@
 name=Rysorian Badger
-image=https://magiccards.info/scans/en/hl/69.jpg
+image=https://cards.scryfall.io/border_crop/front/a/b/ab87a387-678b-4913-a0c7-85f0238cee26.jpg?1562588218
 value=3.235
 rarity=R
 type=Creature

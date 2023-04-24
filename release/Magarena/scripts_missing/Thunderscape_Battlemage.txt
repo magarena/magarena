@@ -1,5 +1,5 @@
 name=Thunderscape Battlemage
-image=https://magiccards.info/scans/en/ps/75.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/ddb1475d-abee-4eec-8615-bf5e286afb4a.jpg?1562936350
 image_updated=2017-01-11
 value=3.783
 rarity=U

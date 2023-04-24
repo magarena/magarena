@@ -1,5 +1,5 @@
 name=Dimensional Breach
-image=https://magiccards.info/scans/en/sc/9.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f18f2832-07c5-47be-8966-b250fb997f78.jpg?1562536853
 value=3.714
 rarity=R
 type=Sorcery

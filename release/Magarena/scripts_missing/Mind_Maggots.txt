@@ -1,5 +1,5 @@
 name=Mind Maggots
-image=https://magiccards.info/scans/en/ex/66.jpg
+image=https://cards.scryfall.io/border_crop/front/c/3/c3c92a7f-a250-4497-aa7a-0394e94ef13d.jpg?1562088792
 value=3.425
 rarity=U
 type=Creature

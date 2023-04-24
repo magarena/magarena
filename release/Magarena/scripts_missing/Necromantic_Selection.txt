@@ -1,5 +1,5 @@
 name=Necromantic Selection
-image=https://magiccards.info/scans/en/c14/26.jpg
+image=https://cards.scryfall.io/border_crop/front/d/3/d3cec373-0a3f-4628-8706-b7c9c205f150.jpg?1631586678
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Temporal Distortion
-image=https://magiccards.info/scans/en/in/79.jpg
+image=https://cards.scryfall.io/border_crop/front/7/4/74bd0d14-8d26-403f-9405-d0dcdecd1a49.jpg?1562918372
 value=3.652
 rarity=R
 type=Enchantment

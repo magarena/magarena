@@ -1,5 +1,5 @@
 name=Sundering Titan
-image=https://magiccards.info/scans/en/a25/233.jpg
+image=https://cards.scryfall.io/border_crop/front/a/2/a2ebb5d3-72b1-411d-8c90-83dac5b37898.jpg?1618940470
 image_updated=2018-04-25
 value=4.454
 rarity=R

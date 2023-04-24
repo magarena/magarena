@@ -1,5 +1,5 @@
 name=Squee, the Immortal
-image=https://magiccards.info/scans/en/dom/146.jpg
+image=https://cards.scryfall.io/border_crop/front/a/8/a8232acd-4645-489c-8cf1-4efdc75d9322.jpg?1673484412
 value=2.500
 rarity=R
 type=Legendary,Creature

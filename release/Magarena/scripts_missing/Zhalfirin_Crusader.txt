@@ -1,5 +1,5 @@
 name=Zhalfirin Crusader
-image=https://magiccards.info/scans/en/vi/125.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f566f52d-0eba-4b36-936f-002dab3354b3.jpg?1562944437
 value=2.500
 rarity=R
 type=Creature

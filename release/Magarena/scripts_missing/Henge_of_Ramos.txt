@@ -1,5 +1,5 @@
 name=Henge of Ramos
-image=https://magiccards.info/scans/en/mm/318.jpg
+image=https://cards.scryfall.io/border_crop/front/0/5/0582b42f-5ae5-4be2-ba2d-ed62b3cb20c5.jpg?1562378947
 value=1.670
 rarity=U
 type=Land

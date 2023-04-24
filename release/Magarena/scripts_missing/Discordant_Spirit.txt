@@ -1,5 +1,5 @@
 name=Discordant Spirit
-image=https://magiccards.info/scans/en/mr/321.jpg
+image=https://cards.scryfall.io/border_crop/front/b/e/be67b950-dfe3-4159-aa53-63df25d2a926.jpg?1562721442
 value=2.894
 rarity=R
 type=Creature

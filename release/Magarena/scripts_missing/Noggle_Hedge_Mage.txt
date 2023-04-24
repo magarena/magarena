@@ -1,5 +1,5 @@
 name=Noggle Hedge-Mage
-image=https://magiccards.info/scans/en/eve/108.jpg
+image=https://cards.scryfall.io/border_crop/front/4/9/497e1713-dd2d-4f25-8c8c-0c515eec7040.jpg?1562910323
 value=3.293
 rarity=U
 type=Creature

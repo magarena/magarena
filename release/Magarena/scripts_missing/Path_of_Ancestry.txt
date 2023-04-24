@@ -1,5 +1,5 @@
 name=Path of Ancestry
-image=https://magiccards.info/scans/en/c17/56.jpg
+image=https://cards.scryfall.io/border_crop/front/f/9/f975779d-60d4-4838-ac01-74b958b955a1.jpg?1682210583
 image_updated=2017-10-03
 value=2.500
 rarity=C

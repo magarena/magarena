@@ -1,5 +1,5 @@
 name=Thran Dynamo
-image=https://magiccards.info/scans/en/ima/230.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/907801dd-179c-4669-b608-d810a7f608fd.jpg?1568004988
 image_updated=2017-04-12
 value=2.500
 rarity=U

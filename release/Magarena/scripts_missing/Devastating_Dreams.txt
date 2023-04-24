@@ -1,5 +1,5 @@
 name=Devastating Dreams
-image=https://magiccards.info/scans/en/tr/95.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fffeed0-a5ea-47ac-a7a4-0cc3bb1d408a.jpg?1562631212
 value=3.743
 rarity=R
 type=Sorcery

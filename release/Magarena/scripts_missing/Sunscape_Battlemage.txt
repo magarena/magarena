@@ -1,5 +1,5 @@
 name=Sunscape Battlemage
-image=https://magiccards.info/scans/en/ps/16.jpg
+image=https://cards.scryfall.io/border_crop/front/6/7/679e3d63-8902-458e-a9a3-cefe14f6b415.jpg?1562914168
 image_updated=2016-01-09
 value=3.635
 rarity=U

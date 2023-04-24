@@ -1,5 +1,5 @@
 name=Splintering Wind
-image=https://magiccards.info/scans/en/ai/83.jpg
+image=https://cards.scryfall.io/border_crop/front/0/a/0afa94e5-fef6-4f3a-9196-d7aa6dd841c2.jpg?1562767772
 value=2.085
 rarity=R
 type=Enchantment

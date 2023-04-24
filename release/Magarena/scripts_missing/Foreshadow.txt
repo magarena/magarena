@@ -1,5 +1,5 @@
 name=Foreshadow
-image=https://magiccards.info/scans/en/vi/33.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d54c51de-bfac-4198-a7c4-37b4db74e525.jpg?1562278646
 value=3.351
 rarity=U
 type=Instant

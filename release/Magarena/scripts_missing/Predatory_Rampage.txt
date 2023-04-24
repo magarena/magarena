@@ -1,5 +1,5 @@
 name=Predatory Rampage
-image=https://magiccards.info/scans/en/m13/180.jpg
+image=https://cards.scryfall.io/border_crop/front/3/e/3e054ea5-3657-4198-9715-6acc0e362da3.jpg?1562552765
 value=3.048
 rarity=R
 type=Sorcery

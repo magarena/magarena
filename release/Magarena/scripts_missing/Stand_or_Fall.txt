@@ -1,5 +1,5 @@
 name=Stand or Fall
-image=https://magiccards.info/scans/en/in/171.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60c34970-a106-490c-ac37-6156eb7f34ce.jpg?1562914611
 value=3.250
 rarity=R
 type=Enchantment

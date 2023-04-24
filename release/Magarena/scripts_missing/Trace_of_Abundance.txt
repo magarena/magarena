@@ -1,5 +1,5 @@
 name=Trace of Abundance
-image=https://magiccards.info/scans/en/arb/142.jpg
+image=https://cards.scryfall.io/border_crop/front/6/1/6151001a-cf4b-4f95-a986-7181313e2224.jpg?1562641622
 value=3.545
 rarity=C
 type=Enchantment

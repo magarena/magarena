@@ -1,5 +1,5 @@
 name=Roar of Challenge
-image=https://magiccards.info/scans/en/ktk/145.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/83456f8f-8a1a-403c-816b-25e454ba1edf.jpg?1562789481
 value=2.833
 rarity=U
 type=Sorcery

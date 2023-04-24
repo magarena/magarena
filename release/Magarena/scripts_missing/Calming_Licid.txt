@@ -1,5 +1,5 @@
 name=Calming Licid
-image=https://magiccards.info/scans/en/sh/102.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/155fc239-c2eb-41cc-9a0a-2414da3c3d7b.jpg?1562595917
 value=3.267
 rarity=U
 type=Creature

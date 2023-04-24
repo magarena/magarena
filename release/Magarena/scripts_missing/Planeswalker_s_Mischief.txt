@@ -1,5 +1,5 @@
 name=Planeswalker's Mischief
-image=https://magiccards.info/scans/en/ps/29.jpg
+image=https://cards.scryfall.io/border_crop/front/7/9/79aa232c-3f16-4c68-99dc-09a7aeef477b.jpg?1562920574
 value=3.794
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Conclave Phalanx
-image=https://magiccards.info/scans/en/mm2/12.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/04435b25-1a44-493f-810e-23d260f363a6.jpg?1562258512
 image_updated=2015-11-05
 value=2.500
 rarity=C

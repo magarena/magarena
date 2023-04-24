@@ -1,5 +1,5 @@
 name=Dralnu's Pet
-image=https://magiccards.info/scans/en/ps/23.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cd5f4daf-7b54-4425-a93a-19532dfb83ca.jpg?1562938400
 value=3.786
 rarity=R
 type=Creature

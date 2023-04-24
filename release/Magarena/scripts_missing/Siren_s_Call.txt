@@ -1,5 +1,5 @@
 name=Siren's Call
-image=https://magiccards.info/scans/en/4e/101.jpg
+image=https://cards.scryfall.io/border_crop/front/5/1/51832cfb-0a2e-4674-bb36-38027a71ac6d.jpg?1559603887
 value=4.071
 rarity=U
 type=Instant

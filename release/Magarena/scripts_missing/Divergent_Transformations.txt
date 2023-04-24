@@ -1,5 +1,5 @@
 name=Divergent Transformations
-image=https://magiccards.info/scans/en/c16/17.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2fb220db-604d-4779-9f57-fbcaf5c92cbf.jpg?1562393933
 image_updated=2016-12-01
 value=2.500
 rarity=R

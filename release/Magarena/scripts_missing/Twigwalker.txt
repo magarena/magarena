@@ -1,5 +1,5 @@
 name=Twigwalker
-image=https://magiccards.info/scans/en/od/279.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/90b8ba27-c3bb-48cf-b831-518f5d255c2e.jpg?1562921868
 value=2.808
 rarity=U
 type=Creature

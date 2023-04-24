@@ -1,5 +1,5 @@
 name=Zombie Boa
-image=https://magiccards.info/scans/en/ap/54.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1fb8c277-3154-47c9-835f-327cac297a5e.jpg?1562902465
 value=2.565
 rarity=C
 type=Creature

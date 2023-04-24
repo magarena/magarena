@@ -1,5 +1,5 @@
 name=Infernal Harvest
-image=https://magiccards.info/scans/en/vi/12.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccf85ac9-f5d8-4a36-aa6c-3a31427a0348.jpg?1562278642
 value=2.958
 rarity=C
 type=Sorcery

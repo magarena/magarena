@@ -1,5 +1,5 @@
 name=Necrotic Plague
-image=https://magiccards.info/scans/en/m11/107.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2e7573a8-be2b-46a5-8862-db0980968088.jpg?1562455018
 value=2.854
 rarity=R
 type=Enchantment

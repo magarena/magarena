@@ -1,5 +1,5 @@
 name=Razor Boomerang
-image=https://magiccards.info/scans/en/wwk/129.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41526ad7-730d-44ad-bd19-e1b8a2717cf7.jpg?1562285873
 value=0.795
 rarity=U
 type=Artifact

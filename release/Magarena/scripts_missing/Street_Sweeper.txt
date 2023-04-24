@@ -1,5 +1,5 @@
 name=Street Sweeper
-image=https://magiccards.info/scans/en/rtr/234.jpg
+image=https://cards.scryfall.io/border_crop/front/4/a/4a62827a-183f-4bef-b6ce-20a4577f6d30.jpg?1562785813
 value=1.828
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Ajani's Presence
-image=https://magiccards.info/scans/en/jou/2.jpg
+image=https://cards.scryfall.io/border_crop/front/e/7/e77e2fd5-5c46-4f6b-ac43-ec23fab57a1a.jpg?1593095164
 value=3.603
 rarity=C
 type=Instant

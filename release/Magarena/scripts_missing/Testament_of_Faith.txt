@@ -1,5 +1,5 @@
 name=Testament of Faith
-image=https://magiccards.info/scans/en/od/55.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f399b371-fed0-42b8-8f95-5d76fdbe193d.jpg?1562940776
 value=2.679
 rarity=U
 type=Enchantment

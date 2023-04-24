@@ -1,5 +1,5 @@
 name=Viridian Joiner
-image=https://magiccards.info/scans/en/mi/138.jpg
+image=https://cards.scryfall.io/border_crop/front/b/5/b50679df-bf82-4bb2-9fe3-8ebd7a9decde.jpg?1562155271
 value=3.655
 rarity=C
 type=Creature

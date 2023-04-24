@@ -1,5 +1,5 @@
 name=Burn
-image=https://magiccards.info/scans/en/dgm/134b.jpg
+image=https://cards.scryfall.io/border_crop/front/8/d/8d7fdd59-6d76-4a0c-ac75-816345ef4a39.jpg?1562921231
 value=4.101
 rarity=U
 type=Instant

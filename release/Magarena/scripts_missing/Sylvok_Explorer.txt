@@ -1,5 +1,5 @@
 name=Sylvok Explorer
-image=https://magiccards.info/scans/en/c16/169.jpg
+image=https://cards.scryfall.io/border_crop/front/3/8/3881e40f-5d10-4461-aa88-11ba33e5d510.jpg?1562395823
 image_updated=2017-08-17
 value=2.862
 rarity=C

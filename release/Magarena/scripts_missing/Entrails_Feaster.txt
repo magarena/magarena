@@ -1,5 +1,5 @@
 name=Entrails Feaster
-image=https://magiccards.info/scans/en/on/143.jpg
+image=https://cards.scryfall.io/border_crop/front/c/d/cdddab92-3e1f-49dc-afd0-8c84d0d952c2.jpg?1562943619
 value=3.789
 rarity=R
 type=Creature

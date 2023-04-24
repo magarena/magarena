@@ -1,5 +1,5 @@
 name=Devastating Summons
-image=https://magiccards.info/scans/en/roe/140.jpg
+image=https://cards.scryfall.io/border_crop/front/1/5/15b09784-8e89-4013-975d-57e4d26cc926.jpg?1562701435
 value=3.909
 rarity=R
 type=Sorcery

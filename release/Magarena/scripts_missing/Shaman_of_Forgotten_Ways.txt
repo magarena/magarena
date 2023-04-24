@@ -1,5 +1,5 @@
 name=Shaman of Forgotten Ways
-image=https://magiccards.info/scans/en/dtk/204.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3e9c8f7-2232-4a2a-8a00-0a2908bc7543.jpg?1562790967
 value=2.500
 rarity=M
 type=Creature

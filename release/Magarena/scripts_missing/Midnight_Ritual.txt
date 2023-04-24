@@ -1,5 +1,5 @@
 name=Midnight Ritual
-image=https://magiccards.info/scans/en/10e/158.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4239c4e8-41f3-47fd-bd01-fa0b28976e29.jpg?1562546843
 value=3.556
 rarity=R
 type=Sorcery

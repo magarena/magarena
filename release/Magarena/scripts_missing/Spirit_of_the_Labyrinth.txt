@@ -1,5 +1,5 @@
 name=Spirit of the Labyrinth
-image=https://magiccards.info/scans/en/bng/27.jpg
+image=https://cards.scryfall.io/border_crop/front/f/4/f44e5128-e146-4e46-b313-a40d82719d1d.jpg?1593091571
 value=4.491
 rarity=R
 type=Enchantment,Creature

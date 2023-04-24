@@ -1,5 +1,5 @@
 name=Dead Man's Chest
-image=https://magiccards.info/scans/en/rix/66.jpg
+image=https://cards.scryfall.io/border_crop/front/7/a/7a0b60a2-50de-4328-85dc-040bf8a4dac9.jpg?1631586548
 value=2.500
 rarity=R
 type=Enchantment

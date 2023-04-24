@@ -1,5 +1,5 @@
 name=Soul Stair Expedition
-image=https://magiccards.info/scans/en/zen/112.jpg
+image=https://cards.scryfall.io/border_crop/front/9/0/902d03cd-2df7-4f87-ab99-fd52f0df6339.jpg?1562614359
 value=3.402
 rarity=C
 type=Enchantment

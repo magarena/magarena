@@ -1,5 +1,5 @@
 name=Shaman's Trance
-image=https://magiccards.info/scans/en/ju/98.jpg
+image=https://cards.scryfall.io/border_crop/front/d/f/dfc33a4f-9ec2-4324-82a1-a4b9700572f2.jpg?1591196235
 value=2.500
 rarity=R
 type=Instant

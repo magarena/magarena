@@ -1,5 +1,5 @@
 name=Brown Ouphe
-image=https://magiccards.info/scans/en/mi/115.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1d8779ec-0ebd-45a1-96c9-4b1146871ab7.jpg?1562137734
 value=3.610
 rarity=U
 type=Creature

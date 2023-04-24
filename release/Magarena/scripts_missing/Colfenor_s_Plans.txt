@@ -1,5 +1,5 @@
 name=Colfenor's Plans
-image=https://magiccards.info/scans/en/lw/106.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f8d06368-d226-4089-84d4-950a3ebdfb15.jpg?1562374978
 value=1.838
 rarity=R
 type=Enchantment

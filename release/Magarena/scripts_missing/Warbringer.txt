@@ -1,5 +1,5 @@
 name=Warbringer
-image=https://magiccards.info/scans/en/dtk/168.jpg
+image=https://cards.scryfall.io/border_crop/front/e/d/ed4951ef-2519-4511-b952-c835cd81def7.jpg?1562795206
 value=2.500
 rarity=U
 type=Creature

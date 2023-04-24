@@ -1,5 +1,5 @@
 name=Tombfire
-image=https://magiccards.info/scans/en/od/165.jpg
+image=https://cards.scryfall.io/border_crop/front/b/b/bb08a4a7-941b-4b54-a89b-a4145a6fc14e.jpg?1562929901
 value=1.270
 rarity=R
 type=Sorcery

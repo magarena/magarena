@@ -1,5 +1,5 @@
 name=Meddle
-image=https://magiccards.info/scans/en/on/92.jpg
+image=https://cards.scryfall.io/border_crop/front/6/8/685edfe8-9770-47c6-95fb-0816f3126f04.jpg?1562919580
 value=3.482
 rarity=U
 type=Instant

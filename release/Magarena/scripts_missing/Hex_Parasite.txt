@@ -1,5 +1,5 @@
 name=Hex Parasite
-image=https://magiccards.info/scans/en/nph/137.jpg
+image=https://cards.scryfall.io/border_crop/front/4/3/43502078-5349-4e29-8e7d-277654a9a71e.jpg?1562877073
 value=4.327
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Board the Weatherlight
-image=https://magiccards.info/scans/en/dom/8.jpg
+image=https://cards.scryfall.io/border_crop/front/a/1/a11d10fa-d42d-4867-9e2f-fc8de582d5e7.jpg?1562740473
 value=2.500
 rarity=U
 type=Sorcery

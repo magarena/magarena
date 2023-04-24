@@ -1,5 +1,5 @@
 name=Demonfire
-image=https://magiccards.info/scans/en/di/60.jpg
+image=https://cards.scryfall.io/border_crop/front/4/d/4de10b65-2079-46a4-9966-fdb30359810a.jpg?1562378244
 image_updated=2016-12-01
 value=2.500
 rarity=R

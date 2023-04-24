@@ -1,5 +1,5 @@
 name=Ancient Ziggurat
-image=https://magiccards.info/scans/en/cfx/141.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/0348247d-0a70-4961-8590-9de41386c69b.jpg?1562799113
 value=4.165
 rarity=U
 type=Land

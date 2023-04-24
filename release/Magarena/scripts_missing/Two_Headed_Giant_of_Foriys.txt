@@ -1,5 +1,5 @@
 name=Two-Headed Giant of Foriys
-image=https://magiccards.info/scans/en/un/180.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/203186e6-843d-4296-ab27-10ac444e651c.jpg?1562902561
 value=4.307
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Planar Overlay
-image=https://magiccards.info/scans/en/ps/28.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/1315fef0-234e-44f5-a7a3-bf3db78943c3.jpg?1562899021
 value=3.023
 rarity=R
 type=Sorcery

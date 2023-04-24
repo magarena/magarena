@@ -1,5 +1,5 @@
 name=Alchemist's Refuge
-image=https://magiccards.info/scans/en/avr/225.jpg
+image=https://cards.scryfall.io/border_crop/front/c/7/c767a897-52e3-4401-8104-930157bb2b02.jpg?1592709633
 value=4.038
 rarity=R
 type=Land

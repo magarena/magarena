@@ -1,5 +1,5 @@
 name=Foriysian Interceptor
-image=https://magiccards.info/scans/en/ts/18.jpg
+image=https://cards.scryfall.io/border_crop/front/8/3/833a3622-9f24-47a3-816f-1732c0e077d0.jpg?1562922673
 value=2.528
 rarity=C
 type=Creature

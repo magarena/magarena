@@ -1,5 +1,5 @@
 name=Volt Charge
-image=https://magiccards.info/scans/en/nph/100.jpg
+image=https://cards.scryfall.io/border_crop/front/7/3/73d74045-cc9b-4b01-bc5f-0f2eb4b01580.jpg?1675957122
 image_updated=2016-09-12
 value=3.750
 rarity=C

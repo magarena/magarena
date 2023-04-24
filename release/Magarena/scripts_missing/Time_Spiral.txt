@@ -1,5 +1,5 @@
 name=Time Spiral
-image=https://magiccards.info/scans/en/us/103.jpg
+image=https://cards.scryfall.io/border_crop/front/f/3/f3d62dbd-63db-4ac9-950f-9852627f23f2.jpg?1562946525
 value=4.613
 rarity=R
 type=Sorcery

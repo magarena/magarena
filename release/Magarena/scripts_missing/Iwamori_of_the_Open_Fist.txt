@@ -1,5 +1,5 @@
 name=Iwamori of the Open Fist
-image=https://magiccards.info/scans/en/a25/174.jpg
+image=https://cards.scryfall.io/border_crop/front/9/c/9c05f3bf-5785-4a53-9c34-cffd7783d107.jpg?1562438997
 image_updated=2018-04-25
 value=3.917
 rarity=U

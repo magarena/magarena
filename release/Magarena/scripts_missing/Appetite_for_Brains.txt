@@ -1,5 +1,5 @@
 name=Appetite for Brains
-image=https://magiccards.info/scans/en/avr/84.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/58f20b88-7b48-4d3b-b836-c7aef71cd337.jpg?1547516714
 value=3.250
 rarity=U
 type=Sorcery

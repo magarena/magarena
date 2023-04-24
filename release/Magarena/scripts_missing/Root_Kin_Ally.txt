@@ -1,5 +1,5 @@
 name=Root-Kin Ally
-image=https://magiccards.info/scans/en/mm2/158.jpg
+image=https://cards.scryfall.io/border_crop/front/5/8/5840c324-4dd4-41fe-9af2-593314ab685e.jpg?1562262612
 value=2.500
 rarity=U
 type=Creature

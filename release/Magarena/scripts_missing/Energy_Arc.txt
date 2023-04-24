@@ -1,5 +1,5 @@
 name=Energy Arc
-image=https://magiccards.info/scans/en/ai/190.jpg
+image=https://cards.scryfall.io/border_crop/front/e/f/ef7aae6c-199f-486f-9de6-a41dd8b847a3.jpg?1559592309
 value=3.750
 rarity=U
 type=Instant

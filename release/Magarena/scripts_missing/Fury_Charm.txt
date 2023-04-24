@@ -1,5 +1,5 @@
 name=Fury Charm
-image=https://magiccards.info/scans/en/ima/130.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d585cf04-b823-49c1-a33a-9cd8f3116eda.jpg?1562854618
 image_updated=2017-04-12
 value=3.706
 rarity=C

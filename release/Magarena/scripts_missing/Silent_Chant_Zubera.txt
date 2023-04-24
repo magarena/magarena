@@ -1,5 +1,5 @@
 name=Silent-Chant Zubera
-image=https://magiccards.info/scans/en/chk/45.jpg
+image=https://cards.scryfall.io/border_crop/front/2/7/272dfee6-9c90-4409-9289-f451261909e7.jpg?1562758456
 value=2.446
 rarity=C
 type=Creature

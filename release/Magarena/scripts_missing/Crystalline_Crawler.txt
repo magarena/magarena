@@ -1,5 +1,5 @@
 name=Crystalline Crawler
-image=https://magiccards.info/scans/en/c16/54.jpg
+image=https://cards.scryfall.io/border_crop/front/0/2/02b90a7c-288d-420a-91b2-bd9ced5767e4.jpg?1562272022
 image_updated=2016-11-28
 value=2.500
 rarity=R

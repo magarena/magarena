@@ -1,5 +1,5 @@
 name=Council's Judgment
-image=https://magiccards.info/scans/en/cns/16.jpg
+image=https://cards.scryfall.io/border_crop/front/a/a/aaa187c9-90b3-4770-963a-8a9f932430ef.jpg?1599706018
 value=4.520
 rarity=R
 type=Sorcery

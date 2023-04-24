@@ -1,5 +1,5 @@
 name=Choked Estuary
-image=https://magiccards.info/scans/en/soi/270.jpg
+image=https://cards.scryfall.io/border_crop/front/3/0/30be21c4-3580-4460-9a49-bd5ac6441103.jpg?1682210364
 value=2.500
 rarity=R
 type=Land

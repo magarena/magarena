@@ -1,5 +1,5 @@
 name=Spirit en-Dal
-image=https://magiccards.info/scans/en/fut/17.jpg
+image=https://cards.scryfall.io/border_crop/front/e/c/ec0d6477-9c50-4196-a04f-da73b5a07e01.jpg?1562942439
 value=3.892
 rarity=U
 type=Creature

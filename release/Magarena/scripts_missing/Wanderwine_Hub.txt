@@ -1,5 +1,5 @@
 name=Wanderwine Hub
-image=https://magiccards.info/scans/en/lw/280.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccec69de-7203-4810-a8ec-8748705ee3a2.jpg?1562368257
 value=3.988
 rarity=R
 type=Land

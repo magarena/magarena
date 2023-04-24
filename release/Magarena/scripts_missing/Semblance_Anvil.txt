@@ -1,5 +1,5 @@
 name=Semblance Anvil
-image=https://magiccards.info/scans/en/som/201.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/0380b46d-1660-404d-9d11-705d8809ea46.jpg?1562814119
 value=4.083
 rarity=R
 type=Artifact

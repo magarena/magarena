@@ -1,5 +1,5 @@
 name=Sift Through Sands
-image=https://magiccards.info/scans/en/chk/84.jpg
+image=https://cards.scryfall.io/border_crop/front/c/1/c1fd8a97-1c97-45fe-8c06-013a1f528919.jpg?1592761558
 value=3.026
 rarity=C
 type=Instant

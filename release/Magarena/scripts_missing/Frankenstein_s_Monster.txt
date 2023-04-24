@@ -1,5 +1,5 @@
 name=Frankenstein's Monster
-image=https://magiccards.info/scans/en/dk/7.jpg
+image=https://cards.scryfall.io/border_crop/front/8/f/8f99894d-5ece-44f1-acce-474494ae2084.jpg?1562928856
 value=3.870
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Windbrisk Heights
-image=https://magiccards.info/scans/en/c16/336.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc4aa7d1-e168-4fa0-baf0-1102086dc717.jpg?1674143217
 image_updated=2017-08-17
 value=2.857
 rarity=R

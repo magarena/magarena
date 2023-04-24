@@ -1,5 +1,5 @@
 name=Primal Surge
-image=https://magiccards.info/scans/en/avr/189.jpg
+image=https://cards.scryfall.io/border_crop/front/4/2/4278f7bd-afff-4a1d-a0bb-bf9ce3ad5a2e.jpg?1592709414
 value=3.658
 rarity=M
 type=Sorcery

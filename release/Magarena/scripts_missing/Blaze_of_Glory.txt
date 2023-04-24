@@ -1,5 +1,5 @@
 name=Blaze of Glory
-image=https://magiccards.info/scans/en/un/190.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f6ed7bd-2186-4e92-9fbc-e2abbfd3bc23.jpg?1562906107
 value=3.422
 rarity=R
 type=Instant

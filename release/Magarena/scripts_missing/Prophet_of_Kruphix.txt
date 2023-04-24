@@ -1,5 +1,5 @@
 name=Prophet of Kruphix
-image=https://magiccards.info/scans/en/ths/199.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45de923f-fdab-460c-96f4-f62aefa9ad73.jpg?1562817436
 value=3.942
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Ruins of Oran-Rief
-image=https://magiccards.info/scans/en/ogw/176.jpg
+image=https://cards.scryfall.io/border_crop/front/9/f/9fed86e5-5631-401b-8820-9685f8296134.jpg?1562927257
 image_updated=2016-02-29
 value=2.500
 rarity=R

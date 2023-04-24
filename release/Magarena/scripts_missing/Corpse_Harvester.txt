@@ -1,5 +1,5 @@
 name=Corpse Harvester
-image=https://magiccards.info/scans/en/le/62.jpg
+image=https://cards.scryfall.io/border_crop/front/3/9/39cc7fbb-010f-4e7c-b3bf-8853e54bc1b1.jpg?1562841686
 image_updated=2016-12-13
 value=3.851
 rarity=U

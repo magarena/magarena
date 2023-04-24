@@ -1,5 +1,5 @@
 name=Phalanx Formation
-image=https://magiccards.info/scans/en/jou/21.jpg
+image=https://cards.scryfall.io/border_crop/front/7/e/7e9aaba1-e480-4667-b3c9-d5665a3b4806.jpg?1593095308
 value=3.312
 rarity=U
 type=Instant

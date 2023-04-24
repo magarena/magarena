@@ -1,5 +1,5 @@
 name=Lost in Thought
-image=https://magiccards.info/scans/en/ju/45.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5fb391a-2687-461d-b5ef-a494287ddb5d.jpg?1562632720
 value=3.056
 rarity=C
 type=Enchantment

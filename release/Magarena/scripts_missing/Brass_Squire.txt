@@ -1,5 +1,5 @@
 name=Brass Squire
-image=https://magiccards.info/scans/en/mbs/101.jpg
+image=https://cards.scryfall.io/border_crop/front/4/8/48010648-6f68-41aa-93ae-e02a7de6abb8.jpg?1608917777
 value=3.658
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Bifurcate
-image=https://magiccards.info/scans/en/mm/230.jpg
+image=https://cards.scryfall.io/border_crop/front/d/e/dedb483e-b2c6-46c6-b02b-a49599d33521.jpg?1562383500
 value=4.174
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Spite
-image=https://magiccards.info/scans/en/in/293a.jpg
+image=https://cards.scryfall.io/border_crop/front/5/e/5e50dd95-0f65-4150-9f22-0cabcabe2c30.jpg?1562917198
 value=3.333
 rarity=U
 type=Instant

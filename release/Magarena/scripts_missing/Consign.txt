@@ -1,5 +1,5 @@
 name=Consign
-image=https://magiccards.info/scans/en/hou/149a.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1c1ead90-10d8-4217-80e4-6f40320c5569.jpg?1562791309
 value=2.500
 rarity=U
 type=Instant

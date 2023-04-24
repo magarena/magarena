@@ -1,5 +1,5 @@
 name=Pounce
-image=https://magiccards.info/scans/en/xln/200.jpg
+image=https://cards.scryfall.io/border_crop/front/2/b/2b96cba6-33d7-4e1d-88f7-da3da681540d.jpg?1562552622
 value=2.500
 rarity=C
 type=Instant

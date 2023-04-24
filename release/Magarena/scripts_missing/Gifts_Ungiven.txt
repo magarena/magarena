@@ -1,5 +1,5 @@
 name=Gifts Ungiven
-image=https://magiccards.info/scans/en/mm3/40.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/cc950b6c-0346-4939-b36b-9f10a75f7a32.jpg?1673147306
 image_updated=2017-08-08
 value=4.599
 rarity=R

@@ -1,5 +1,5 @@
 name=Springjack Pasture
-image=https://magiccards.info/scans/en/eve/179.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/035438b1-f794-41e5-9e2b-bc5136766cd5.jpg?1562895661
 value=3.864
 rarity=R
 type=Land

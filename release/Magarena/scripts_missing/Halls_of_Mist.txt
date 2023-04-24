@@ -1,5 +1,5 @@
 name=Halls of Mist
-image=https://magiccards.info/scans/en/ia/332.jpg
+image=https://cards.scryfall.io/border_crop/front/b/9/b926a189-90b6-47bb-b5d6-b033e57007b4.jpg?1562929498
 value=3.188
 rarity=R
 type=Land

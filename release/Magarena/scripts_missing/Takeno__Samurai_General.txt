@@ -1,5 +1,5 @@
 name=Takeno, Samurai General
-image=https://magiccards.info/scans/en/chk/46.jpg
+image=https://cards.scryfall.io/border_crop/front/d/0/d038df46-4a30-4125-be0e-8781b16b523e.jpg?1562764653
 value=3.860
 rarity=R
 type=Legendary,Creature

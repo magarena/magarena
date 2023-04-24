@@ -1,5 +1,5 @@
 name=Assembly Hall
-image=https://magiccards.info/scans/en/mm/286.jpg
+image=https://cards.scryfall.io/border_crop/front/1/6/1676ccbb-91d2-4f26-b3a5-ccb1a21bdebf.jpg?1562379426
 value=3.086
 rarity=R
 type=Artifact

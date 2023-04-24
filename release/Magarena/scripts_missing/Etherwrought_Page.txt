@@ -1,5 +1,5 @@
 name=Etherwrought Page
-image=https://magiccards.info/scans/en/arb/108.jpg
+image=https://cards.scryfall.io/border_crop/front/5/6/568785f1-47c7-4011-926f-44693f7e0233.jpg?1665819482
 value=2.950
 rarity=U
 type=Artifact

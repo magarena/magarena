@@ -1,5 +1,5 @@
 name=Logic Knot
-image=https://magiccards.info/scans/en/mma/51.jpg
+image=https://cards.scryfall.io/border_crop/front/6/2/624feb0e-f683-4eb6-a63b-7872d0e28f1f.jpg?1619394325
 value=3.794
 rarity=C
 type=Instant

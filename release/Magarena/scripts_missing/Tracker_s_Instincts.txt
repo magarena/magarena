@@ -1,5 +1,5 @@
 name=Tracker's Instincts
-image=https://magiccards.info/scans/en/dka/128.jpg
+image=https://cards.scryfall.io/border_crop/front/5/9/59960387-3adf-4b9a-b0e6-c441579f7388.jpg?1562916070
 value=3.392
 rarity=U
 type=Sorcery

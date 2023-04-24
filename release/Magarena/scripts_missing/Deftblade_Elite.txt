@@ -1,5 +1,5 @@
 name=Deftblade Elite
-image=https://magiccards.info/scans/en/le/12.jpg
+image=https://cards.scryfall.io/border_crop/front/d/5/d576b8f2-9b5b-47c0-8f9f-faa209d59595.jpg?1562937823
 value=3.250
 rarity=C
 type=Creature

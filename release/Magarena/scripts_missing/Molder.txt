@@ -1,5 +1,5 @@
 name=Molder
-image=https://magiccards.info/scans/en/ts/206.jpg
+image=https://cards.scryfall.io/border_crop/front/8/c/8c0eb32c-89b1-40be-a77c-62c114a73ccc.jpg?1562924615
 value=3.128
 rarity=C
 type=Instant

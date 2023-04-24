@@ -1,5 +1,5 @@
 name=Invigorated Rampage
-image=https://magiccards.info/scans/en/aer/86.jpg
+image=https://cards.scryfall.io/border_crop/front/2/c/2c1d1727-99d4-4aee-b6f5-8399ac1d0184.jpg?1576381826
 value=2.500
 rarity=U
 type=Instant

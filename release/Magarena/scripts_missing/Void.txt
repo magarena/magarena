@@ -1,5 +1,5 @@
 name=Void
-image=https://magiccards.info/scans/en/ema/211.jpg
+image=https://cards.scryfall.io/border_crop/front/c/0/c0b3e320-a85c-4d92-944e-0a5e78a066a5.jpg?1580015114
 value=4.327
 rarity=R
 type=Sorcery

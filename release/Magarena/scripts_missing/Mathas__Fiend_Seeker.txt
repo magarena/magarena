@@ -1,5 +1,5 @@
 name=Mathas, Fiend Seeker
-image=https://magiccards.info/scans/en/c17/42.jpg
+image=https://cards.scryfall.io/border_crop/front/9/2/921b65b1-18bf-4b02-a35d-7eaee1846611.jpg?1673148953
 image_updated=2017-10-03
 value=2.500
 rarity=M

@@ -1,5 +1,5 @@
 name=Wandering Eye
-image=https://magiccards.info/scans/en/ne/50.jpg
+image=https://cards.scryfall.io/border_crop/front/2/8/2869efd2-060f-4af3-b0dc-b7dc5e1143b8.jpg?1562629119
 value=3.204
 rarity=C
 type=Creature

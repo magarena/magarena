@@ -1,5 +1,5 @@
 name=Black Lotus
-image=https://magiccards.info/scans/en/un/233.jpg
+image=https://cards.scryfall.io/border_crop/front/b/d/bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd.jpg?1614638838
 value=4.357
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Gruul Signet
-image=https://magiccards.info/scans/en/mm3/222.jpg
+image=https://cards.scryfall.io/border_crop/front/d/6/d60a752a-2c3c-4896-9ab8-3aa3b1a96d2f.jpg?1682210033
 image_updated=2017-08-08
 value=3.482
 rarity=U

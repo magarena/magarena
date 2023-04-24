@@ -1,5 +1,5 @@
 name=Barbed-Back Wurm
-image=https://magiccards.info/scans/en/mr/3.jpg
+image=https://cards.scryfall.io/border_crop/front/1/b/1b96810d-72d3-4dee-a29f-cdf85ea5ce6f.jpg?1562718303
 value=2.530
 rarity=U
 type=Creature

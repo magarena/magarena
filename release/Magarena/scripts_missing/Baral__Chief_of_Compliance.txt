@@ -1,5 +1,5 @@
 name=Baral, Chief of Compliance
-image=https://magiccards.info/scans/en/aer/28.jpg
+image=https://cards.scryfall.io/border_crop/front/6/0/60e16d94-1166-4050-8554-686e153a7f80.jpg?1576381454
 value=2.500
 rarity=R
 type=Legendary,Creature

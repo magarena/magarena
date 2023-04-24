@@ -1,5 +1,5 @@
 name=Recall
-image=https://magiccards.info/scans/en/6e/92.jpg
+image=https://cards.scryfall.io/border_crop/front/d/d/dd82d1f8-12bb-4b71-9a25-76a9dcb68345.jpg?1562941724
 value=3.564
 rarity=R
 type=Sorcery

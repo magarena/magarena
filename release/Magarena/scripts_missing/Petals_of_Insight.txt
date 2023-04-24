@@ -1,5 +1,5 @@
 name=Petals of Insight
-image=https://magiccards.info/scans/en/mma/60.jpg
+image=https://cards.scryfall.io/border_crop/front/1/3/134c8764-028e-4f7f-988d-ffd4d3827eb6.jpg?1561966386
 value=3.679
 rarity=C
 type=Sorcery

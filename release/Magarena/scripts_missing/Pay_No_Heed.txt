@@ -1,5 +1,5 @@
 name=Pay No Heed
-image=https://magiccards.info/scans/en/tr/12.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/457ea1f3-890c-4bff-9938-cd46252477f4.jpg?1592751848
 image_updated=2016-09-12
 value=2.909
 rarity=C

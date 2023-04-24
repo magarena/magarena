@@ -1,5 +1,5 @@
 name=Sheltered Aerie
-image=https://magiccards.info/scans/en/dtk/206.jpg
+image=https://cards.scryfall.io/border_crop/front/a/f/afecf5a8-3c9e-48e0-8818-e2e3183e958c.jpg?1562791647
 value=2.500
 rarity=C
 type=Enchantment

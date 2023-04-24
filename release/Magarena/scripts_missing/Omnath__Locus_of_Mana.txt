@@ -1,5 +1,5 @@
 name=Omnath, Locus of Mana
-image=https://magiccards.info/scans/en/wwk/109.jpg
+image=https://cards.scryfall.io/border_crop/front/4/c/4ce5b167-df7a-499e-8dcc-7aec2e28b382.jpg?1610161645
 value=3.929
 rarity=M
 type=Legendary,Creature

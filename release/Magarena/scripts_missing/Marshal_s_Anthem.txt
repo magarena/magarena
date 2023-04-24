@@ -1,5 +1,5 @@
 name=Marshal's Anthem
-image=https://magiccards.info/scans/en/c14/77.jpg
+image=https://cards.scryfall.io/border_crop/front/2/0/2077d11c-22b6-43ff-a894-4f8c2c2acafc.jpg?1631234110
 image_updated=2016-02-29
 value=2.500
 rarity=R

@@ -1,5 +1,5 @@
 name=Burning Earth
-image=https://magiccards.info/scans/en/m14/130.jpg
+image=https://cards.scryfall.io/border_crop/front/1/d/1df3a7c9-5c8d-438c-a5ad-3c9754c6ea5d.jpg?1562826771
 value=3.393
 rarity=R
 type=Enchantment

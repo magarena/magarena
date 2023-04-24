@@ -1,5 +1,5 @@
 name=Archetype of Imagination
-image=https://magiccards.info/scans/en/bng/32.jpg
+image=https://cards.scryfall.io/border_crop/front/0/3/037b396c-2146-4d86-9d13-757685c850c7.jpg?1592710522
 value=3.837
 rarity=U
 type=Enchantment,Creature

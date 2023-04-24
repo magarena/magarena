@@ -1,5 +1,5 @@
 name=Hinterland Hermit
-image=https://magiccards.info/scans/en/dka/94a.jpg
+image=https://cards.scryfall.io/border_crop/front/b/6/b6edac85-78e7-4e90-b538-b67c88bb5c62.jpg?1581395155
 value=2.349
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ogre Enforcer
-image=https://magiccards.info/scans/en/vi/89.jpg
+image=https://cards.scryfall.io/border_crop/front/b/0/b0f072d6-7489-4eb0-8c53-1fa42ad806a4.jpg?1562278177
 value=3.562
 rarity=R
 type=Creature

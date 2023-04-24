@@ -1,5 +1,5 @@
 name=Oath of Ghouls
-image=https://magiccards.info/scans/en/ex/69.jpg
+image=https://cards.scryfall.io/border_crop/front/1/1/1102f35a-ae62-479d-b61c-31a82978aedd.jpg?1562087335
 value=3.886
 rarity=R
 type=Enchantment

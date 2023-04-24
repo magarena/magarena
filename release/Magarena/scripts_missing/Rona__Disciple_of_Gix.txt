@@ -1,5 +1,5 @@
 name=Rona, Disciple of Gix
-image=https://magiccards.info/scans/en/dom/203.jpg
+image=https://cards.scryfall.io/border_crop/front/4/5/45420f5e-f7f8-4db7-9b54-e2fa1be22094.jpg?1562734878
 value=2.500
 rarity=U
 type=Legendary,Creature

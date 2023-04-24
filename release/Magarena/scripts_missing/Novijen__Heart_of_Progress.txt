@@ -1,5 +1,5 @@
 name=Novijen, Heart of Progress
-image=https://magiccards.info/scans/en/di/175.jpg
+image=https://cards.scryfall.io/border_crop/front/9/a/9a1e15e7-4ba6-41ad-b27b-aee2d037b6a7.jpg?1625980611
 image_updated=2016-02-29
 value=3.500
 rarity=U

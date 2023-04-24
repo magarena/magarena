@@ -1,5 +1,5 @@
 name=Tephraderm
-image=https://magiccards.info/scans/en/on/239.jpg
+image=https://cards.scryfall.io/border_crop/front/4/1/41b65eba-140b-4c1d-b796-8134b7c1ede8.jpg?1562910455
 value=4.172
 rarity=R
 type=Creature

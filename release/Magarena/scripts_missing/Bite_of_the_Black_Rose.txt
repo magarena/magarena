@@ -1,5 +1,5 @@
 name=Bite of the Black Rose
-image=https://magiccards.info/scans/en/cns/26.jpg
+image=https://cards.scryfall.io/border_crop/front/2/5/254d1363-1204-41d2-9799-34484a3eb211.jpg?1562864493
 value=3.083
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Tear
-image=https://magiccards.info/scans/en/dgm/135b.jpg
+image=https://cards.scryfall.io/border_crop/front/e/0/e01cc65a-0e38-4f41-b9ed-796ef0355d0b.jpg?1682209896
 value=4.315
 rarity=U
 type=Instant

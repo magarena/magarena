@@ -1,5 +1,5 @@
 name=Nomad Mythmaker
-image=https://magiccards.info/scans/en/10e/30.jpg
+image=https://cards.scryfall.io/border_crop/front/0/4/0468f109-8020-4a74-8ffd-bba771362f76.jpg?1562543139
 value=4.016
 rarity=R
 type=Creature

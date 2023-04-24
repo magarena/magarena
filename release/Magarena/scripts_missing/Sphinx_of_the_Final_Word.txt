@@ -1,5 +1,5 @@
 name=Sphinx of the Final Word
-image=https://magiccards.info/scans/en/ogw/63.jpg
+image=https://cards.scryfall.io/border_crop/front/8/6/866f92a3-2738-4e0f-adda-3ff9227dc17a.jpg?1562922189
 image_updated=2016-02-29
 value=2.500
 rarity=M

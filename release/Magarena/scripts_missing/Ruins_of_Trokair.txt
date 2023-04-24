@@ -1,5 +1,5 @@
 name=Ruins of Trokair
-image=https://magiccards.info/scans/en/6e/327.jpg
+image=https://cards.scryfall.io/border_crop/front/5/2/525b4319-461a-499f-9986-857cba8f2e27.jpg?1562868555
 value=2.977
 rarity=U
 type=Land

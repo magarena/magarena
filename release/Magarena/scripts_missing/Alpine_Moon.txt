@@ -1,5 +1,5 @@
 name=Alpine Moon
-image=https://magiccards.info/scans/en/m19/128.jpg
+image=https://cards.scryfall.io/border_crop/front/2/4/2435c810-2baf-4e3b-80ce-542b94694901.jpg?1584675370
 value=2.500
 rarity=R
 type=Enchantment

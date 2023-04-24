@@ -1,5 +1,5 @@
 name=Creeping Dread
-image=https://magiccards.info/scans/en/soi/104.jpg
+image=https://cards.scryfall.io/border_crop/front/8/b/8b3376c4-369a-4d63-bd48-966bcfb0c9b9.jpg?1576384374
 value=2.500
 rarity=U
 type=Enchantment

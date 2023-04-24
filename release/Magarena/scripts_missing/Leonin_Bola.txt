@@ -1,5 +1,5 @@
 name=Leonin Bola
-image=https://magiccards.info/scans/en/ds/127.jpg
+image=https://cards.scryfall.io/border_crop/front/a/7/a7eab112-20a6-414f-84c9-678580485420.jpg?1562638705
 value=3.306
 rarity=C
 type=Artifact

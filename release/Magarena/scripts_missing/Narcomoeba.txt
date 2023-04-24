@@ -1,5 +1,5 @@
 name=Narcomoeba
-image=https://magiccards.info/scans/en/mma/55.jpg
+image=https://cards.scryfall.io/border_crop/front/a/3/a3e23275-2261-4d6d-88d8-124342334391.jpg?1572892791
 value=4.535
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dragon Hunter
-image=https://magiccards.info/scans/en/dtk/10.jpg
+image=https://cards.scryfall.io/border_crop/front/a/e/ae8a0362-b973-445a-a355-5a2f3dc67f16.jpg?1562791558
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Tablet of the Guilds
-image=https://magiccards.info/scans/en/rtr/235.jpg
+image=https://cards.scryfall.io/border_crop/front/6/b/6b006384-6fb6-4129-b1d2-7674d1141f8f.jpg?1562787711
 value=2.773
 rarity=U
 type=Artifact

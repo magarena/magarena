@@ -1,5 +1,5 @@
 name=Erebos's Titan
-image=https://magiccards.info/scans/en/ori/94.jpg
+image=https://cards.scryfall.io/border_crop/front/f/5/f5972911-2d41-4a0c-8a8f-b3d35a6594d8.jpg?1562050251
 image_updated=2015-11-05
 value=2.500
 rarity=M

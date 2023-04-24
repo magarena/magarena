@@ -1,5 +1,5 @@
 name=Circle of Affliction
-image=https://magiccards.info/scans/en/pc/66.jpg
+image=https://cards.scryfall.io/border_crop/front/1/f/1f059cd0-7924-495e-bac4-021f0e46bb87.jpg?1562567207
 value=3.375
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Vortex Elemental
-image=https://magiccards.info/scans/en/bng/56.jpg
+image=https://cards.scryfall.io/border_crop/front/5/c/5cb7ca2b-c5de-4c8a-91cb-8dd8ab5387d8.jpg?1593091827
 value=3.843
 rarity=U
 type=Creature

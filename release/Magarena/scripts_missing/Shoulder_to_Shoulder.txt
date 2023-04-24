@@ -1,5 +1,5 @@
 name=Shoulder to Shoulder
-image=https://magiccards.info/scans/en/ogw/34.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f18c12df-cbd4-41c3-9b0f-bd8dcdfea490.jpg?1562943568
 image_updated=2016-02-29
 value=2.500
 rarity=C

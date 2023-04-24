@@ -1,5 +1,5 @@
 name=Embolden
-image=https://magiccards.info/scans/en/od/22.jpg
+image=https://cards.scryfall.io/border_crop/front/3/6/36848fb0-4070-40cf-b24a-2e8f47c5ebc3.jpg?1562905109
 value=3.077
 rarity=C
 type=Instant

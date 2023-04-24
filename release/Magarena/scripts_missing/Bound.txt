@@ -1,5 +1,5 @@
 name=Bound
-image=https://magiccards.info/scans/en/di/149a.jpg
+image=https://cards.scryfall.io/border_crop/front/9/d/9dc20e14-e304-4c14-a87b-322a76e214d5.jpg?1593273912
 value=3.971
 rarity=R
 type=Instant

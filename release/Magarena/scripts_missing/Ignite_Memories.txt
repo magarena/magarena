@@ -1,5 +1,5 @@
 name=Ignite Memories
-image=https://magiccards.info/scans/en/ts/164.jpg
+image=https://cards.scryfall.io/border_crop/front/2/f/2f7b7831-27a1-4c0a-8ed1-6dddf2754d65.jpg?1562904991
 value=4.074
 rarity=U
 type=Sorcery

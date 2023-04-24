@@ -1,5 +1,5 @@
 name=Carrion Rats
-image=https://magiccards.info/scans/en/tr/54.jpg
+image=https://cards.scryfall.io/border_crop/front/2/e/2efa2579-c048-4506-babc-ec1c29bb99a8.jpg?1562629090
 value=2.839
 rarity=C
 type=Creature

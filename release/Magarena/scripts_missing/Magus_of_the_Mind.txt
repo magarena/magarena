@@ -1,5 +1,5 @@
 name=Magus of the Mind
-image=https://magiccards.info/scans/en/c17/12.jpg
+image=https://cards.scryfall.io/border_crop/front/3/4/34a0d8a1-8564-4d4a-9390-06a06312e668.jpg?1562604646
 image_updated=2017-10-03
 value=2.500
 rarity=R

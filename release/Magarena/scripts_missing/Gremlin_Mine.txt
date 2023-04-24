@@ -1,5 +1,5 @@
 name=Gremlin Mine
-image=https://magiccards.info/scans/en/nph/136.jpg
+image=https://cards.scryfall.io/border_crop/front/c/c/ccde7ebb-90de-4174-a1c5-75fc9384deaa.jpg?1562881598
 value=2.881
 rarity=C
 type=Artifact

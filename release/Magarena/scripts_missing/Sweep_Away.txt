@@ -1,5 +1,5 @@
 name=Sweep Away
-image=https://magiccards.info/scans/en/ogw/64.jpg
+image=https://cards.scryfall.io/border_crop/front/c/a/cad50269-6e80-47ea-a027-fa274f904e86.jpg?1600698755
 image_updated=2016-02-29
 value=2.500
 rarity=C

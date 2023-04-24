@@ -1,5 +1,5 @@
 name=Grafted Exoskeleton
-image=https://magiccards.info/scans/en/som/162.jpg
+image=https://cards.scryfall.io/border_crop/front/f/8/f86a9d3f-43a8-4da3-9eed-353582986140.jpg?1562945084
 value=3.766
 rarity=U
 type=Artifact

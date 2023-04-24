@@ -1,5 +1,5 @@
 name=Desertion
-image=https://magiccards.info/scans/en/cn2/107.jpg
+image=https://cards.scryfall.io/border_crop/front/b/3/b362151e-4ad6-4ae9-91e5-0e4a69d53ca5.jpg?1618294831
 image_updated=2017-08-29
 value=4.250
 rarity=R

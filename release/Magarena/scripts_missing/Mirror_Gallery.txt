@@ -1,5 +1,5 @@
 name=Mirror Gallery
-image=https://magiccards.info/scans/en/bok/154.jpg
+image=https://cards.scryfall.io/border_crop/front/0/0/00beba34-54cc-4a30-8424-71a1215647a6.jpg?1562875125
 value=4.232
 rarity=R
 type=Artifact

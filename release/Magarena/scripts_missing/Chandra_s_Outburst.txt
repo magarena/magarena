@@ -1,5 +1,5 @@
 name=Chandra's Outburst
-image=https://magiccards.info/scans/en/dom/276.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1e849c3-f357-4e81-a580-be5056bed51b.jpg?1562745440
 value=2.500
 rarity=R
 type=Sorcery

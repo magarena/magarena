@@ -1,5 +1,5 @@
 name=Blood Oath
-image=https://magiccards.info/scans/en/mm/177.jpg
+image=https://cards.scryfall.io/border_crop/front/f/1/f1556a12-ff45-4a12-988a-63615b3799a9.jpg?1562383986
 value=3.859
 rarity=R
 type=Instant

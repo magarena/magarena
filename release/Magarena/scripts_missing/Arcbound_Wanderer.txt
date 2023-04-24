@@ -1,5 +1,5 @@
 name=Arcbound Wanderer
-image=https://magiccards.info/scans/en/mma/200.jpg
+image=https://cards.scryfall.io/border_crop/front/f/d/fdb48b77-9d25-47b0-8d3b-bf52b8db23e8.jpg?1561969499
 value=2.844
 rarity=C
 type=Artifact,Creature

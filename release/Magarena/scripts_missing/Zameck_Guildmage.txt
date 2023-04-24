@@ -1,5 +1,5 @@
 name=Zameck Guildmage
-image=https://magiccards.info/scans/en/gtc/209.jpg
+image=https://cards.scryfall.io/border_crop/front/f/e/feeaf99b-7720-42e3-8cb1-23218b646458.jpg?1561854344
 value=3.772
 rarity=U
 type=Creature

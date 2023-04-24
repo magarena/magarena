@@ -1,5 +1,5 @@
 name=Burning Sun's Avatar
-image=https://magiccards.info/scans/en/xln/135.jpg
+image=https://cards.scryfall.io/border_crop/front/1/4/146c0cab-5f6b-425d-9f50-33d8da266235.jpg?1562551077
 value=2.500
 rarity=R
 type=Creature

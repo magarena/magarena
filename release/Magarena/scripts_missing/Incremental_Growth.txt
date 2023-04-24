@@ -1,5 +1,5 @@
 name=Incremental Growth
-image=https://magiccards.info/scans/en/ktk/138.jpg
+image=https://cards.scryfall.io/border_crop/front/e/9/e90aaa61-3281-4e8f-9eb3-548896d0c14d.jpg?1562944139
 value=3.333
 rarity=U
 type=Sorcery

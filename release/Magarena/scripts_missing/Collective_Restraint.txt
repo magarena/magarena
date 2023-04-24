@@ -1,5 +1,5 @@
 name=Collective Restraint
-image=https://magiccards.info/scans/en/in/49.jpg
+image=https://cards.scryfall.io/border_crop/front/d/7/d71daa57-ac02-4dd9-8c90-d38bdd45fb51.jpg?1562938175
 value=4.222
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Nahiri's Wrath
-image=https://magiccards.info/scans/en/emn/137.jpg
+image=https://cards.scryfall.io/border_crop/front/1/e/1e6cb8b0-e3a5-4a94-845d-3b286aa392ac.jpg?1576384637
 image_updated=2016-09-05
 value=2.500
 rarity=M

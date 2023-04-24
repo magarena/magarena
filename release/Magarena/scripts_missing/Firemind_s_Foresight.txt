@@ -1,5 +1,5 @@
 name=Firemind's Foresight
-image=https://magiccards.info/scans/en/rtr/162.jpg
+image=https://cards.scryfall.io/border_crop/front/5/5/555778df-8ed9-4eb3-859b-4246d9e05ee5.jpg?1605275421
 image_updated=2016-02-29
 value=2.492
 rarity=R

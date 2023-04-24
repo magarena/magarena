@@ -1,5 +1,5 @@
 name=Windborne Charge
-image=https://magiccards.info/scans/en/cn2/100.jpg
+image=https://cards.scryfall.io/border_crop/front/6/c/6cbfac9f-1935-4526-8dfa-9a535ff14950.jpg?1576382344
 image_updated=2017-08-29
 value=2.849
 rarity=U

@@ -1,5 +1,5 @@
 name=He Who Hungers
-image=https://magiccards.info/scans/en/chk/114.jpg
+image=https://cards.scryfall.io/border_crop/front/1/c/1ccf0f8d-f988-45ec-b75b-d97206326cfb.jpg?1562757975
 value=3.762
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Dire Wolves
-image=https://magiccards.info/scans/en/ia/118.jpg
+image=https://cards.scryfall.io/border_crop/front/a/6/a602c93d-e00f-4b4f-a7ff-95316b7e7641.jpg?1587911989
 value=2.341
 rarity=C
 type=Creature

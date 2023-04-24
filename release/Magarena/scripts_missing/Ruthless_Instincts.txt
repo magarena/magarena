@@ -1,5 +1,5 @@
 name=Ruthless Instincts
-image=https://magiccards.info/scans/en/frf/136.jpg
+image=https://cards.scryfall.io/border_crop/front/d/2/d2c8bfde-c4c5-40de-83de-ff236999d79b.jpg?1562830188
 value=2.500
 rarity=U
 type=Instant

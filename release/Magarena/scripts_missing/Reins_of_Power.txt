@@ -1,5 +1,5 @@
 name=Reins of Power
-image=https://magiccards.info/scans/en/c16/96.jpg
+image=https://cards.scryfall.io/border_crop/front/9/b/9b5730aa-c74a-4c74-bb1b-a133a3c353ec.jpg?1674141454
 image_updated=2017-08-17
 value=4.402
 rarity=R

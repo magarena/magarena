@@ -1,5 +1,5 @@
 name=Rakshasa Vizier
-image=https://magiccards.info/scans/en/ktk/193.jpg
+image=https://cards.scryfall.io/border_crop/front/c/b/cb39e674-919d-4db6-9ac1-cfa1cca02207.jpg?1562793567
 value=3.250
 rarity=R
 type=Creature
